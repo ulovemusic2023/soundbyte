@@ -1,17 +1,132 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-17T18:20:00+08:00",
+  "updatedAt": "2026-02-17T20:53:00+08:00",
   "entries": [
     {
-      "id": "20260217-sw-001",
+      "id": "20260217-sw-010",
       "radar": "software-dev",
       "date": "2026-02-17",
-      "cycle": "morning",
-      "priority": "paradigm-shift",
-      "title": "Claude Opus 4.6 Agent Teams — 多 AI 平行協作開發",
-      "summary": "多個 AI 實例共享 codebase 平行工作，自主分工、build、測試。Anthropic 推出 Agent Teams 功能，讓多個 Claude 實例可以在同一個專案中協作，每個 agent 負責不同模組，自動 merge 與 resolve conflicts。支援 1M token context window，可以完整理解大型 codebase。",
-      "tags": ["multi-agent", "agent teams", "tool use", "Claude"],
-      "url": "https://anthropic.com/agent-teams",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Showboat & Rodney — Coding Agent 的展示和測試工具",
+      "summary": "Simon Willison 發布 Showboat 和 Rodney 兩個新工具，讓 coding agents 能展示和測試所建構的軟體，超越純自動化測試。新增 Chartroom 和 datasette-showboat 插件。解決 agent 開發中「如何讓 supervisor 真正看到成果」的問題。",
+      "tags": [
+        "ai agent",
+        "ai coding",
+        "developer tools"
+      ],
+      "url": "https://simonw.substack.com/p/introducing-showboat-and-rodney-so",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-sw-009",
+      "radar": "software-dev",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Next.js 16 Cache Components + Partial Prerendering (PPR)",
+      "summary": "Next.js 16 引入 `use cache` directive 和 Partial Prerendering (PPR) 作為預設行為。開發者可精細控制頁面/元件/函式層級的快取，PPR 將頁面分為靜態 shell（即時載入）和動態串流區段。配置只需 `cacheComponents: true`。",
+      "tags": [
+        "next.js",
+        "server components",
+        "partial prerendering"
+      ],
+      "url": "https://nextjs.org/docs/app/getting-started/cache-components",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Claude Code 隱藏檔名引發開發者批評",
+      "summary": "Anthropic 修改 Claude Code 進度輸出，隱藏正在編輯的檔案名稱。開發者批評此舉降低透明度，不利於 agent 工作的可監督性。反映了 agentic coding 工具中「人類監督 vs 自主性」的持續張力。",
+      "tags": [
+        "ai coding",
+        "ai agent",
+        "transparency"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-sw-012",
+      "radar": "software-dev",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Vercel AI Gateway 整合 GLM-5 + Logs CLI for Agents",
+      "summary": "Vercel AI Gateway 新增 GLM-5 支援（model id: zai/glm-5），具多種 thinking modes，長程規劃和 multi-step agent 任務表現優異。同步更新 vercel logs CLI，針對 agent 工作流最佳化歷史 log 查詢。",
+      "tags": [
+        "ai agent",
+        "AI Gateway",
+        "model routing"
+      ],
+      "url": "https://vercel.com/changelog/glm-5-is-live-on-ai-gateway",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-sw-011",
+      "radar": "software-dev",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Z.AI GLM-5 — 754B 開源模型主打 Agentic Coding",
+      "summary": "Z.AI 發布 754B 參數開源模型 GLM-5（MIT），SWE-Bench Verified 超 70%，coding Elo 超越 GPT-5.2（+144）和 Opus 4.5（+190）。Hybrid attention + MoE 架構，1M token context，128k 輸出，支援 adaptive thinking。帶動「agentic engineering」概念普及。",
+      "tags": [
+        "agentic engineering",
+        "ai agent",
+        "open source",
+        "MoE"
+      ],
+      "url": "https://github.com/THUDM/GLM-5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Transformers.js v4 Preview — WebGPU 加速瀏覽器端 AI 推論",
+      "summary": "Hugging Face 釋出 Transformers.js v4 preview，完整改寫 WebGPU runtime（C++ + ONNX Runtime），BERT embedding 提速 4 倍，支援 8B+ 模型（GPT-OSS 20B 在 M4 Pro Max 達 ~60 tok/s）。跨瀏覽器/Node.js/Deno/Bun 單一 codebase，離線優先，bundle 縮小 53%。",
+      "tags": [
+        "WebGPU",
+        "edge AI",
+        "embedding",
+        "browser inference"
+      ],
+      "url": "https://github.com/huggingface/transformers.js",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Latent Space: Jeff Dean 談 Pareto Frontier — Pro vs Flash 蒸餾策略",
+      "summary": "swyx 的 Latent Space podcast 訪談 Google 首席科學家 Jeff Dean，探討 frontier「Pro」模型與低延遲「Flash」模型的平衡。透過 ensemble logits 做 distillation，延遲降低 10-50 倍。涵蓋 coding agents、retrieval systems、長 context reasoning。",
+      "tags": [
+        "distillation",
+        "reasoning",
+        "scaling law",
+        "ai models"
+      ],
+      "url": null,
       "price": null,
       "vram": null,
       "license": null
@@ -24,67 +139,187 @@
       "priority": "high",
       "title": "Rust 2024 Edition 正式發布 — async trait 終於穩定",
       "summary": "Rust 2024 Edition 帶來 async trait、gen blocks、let chains 等重大語言改進。async trait 終於不再需要 async-trait crate，原生支援 dynamic dispatch。生態系全面升級，tokio 2.0 同步發布。",
-      "tags": ["Rust", "async", "programming language"],
+      "tags": [
+        "Rust",
+        "async",
+        "programming language"
+      ],
       "url": "https://blog.rust-lang.org/2026/02/17/Rust-2024.html",
       "price": null,
       "vram": null,
-      "license": "MIT/Apache-2.0"
-    },
-    {
-      "id": "20260217-sw-003",
-      "radar": "software-dev",
-      "date": "2026-02-16",
-      "cycle": "evening",
-      "priority": "high",
-      "title": "Deno 3.0 — Node 完全相容 + 內建 SQLite",
-      "summary": "Deno 3.0 達成與 Node.js 的完全相容性，所有 npm 套件無需配置即可使用。內建 SQLite 作為本地資料庫，支援 edge deploy。新的權限模型更細緻，workspace 功能對標 pnpm。",
-      "tags": ["Deno", "JavaScript", "runtime", "SQLite"],
-      "url": "https://deno.com/blog/v3",
-      "price": null,
-      "vram": null,
-      "license": "MIT"
-    },
-    {
-      "id": "20260217-sw-004",
-      "radar": "software-dev",
-      "date": "2026-02-15",
-      "cycle": "morning",
-      "priority": "medium",
-      "title": "TanStack Start 1.0 — Full-stack React Framework",
-      "summary": "TanStack Start 正式發布 1.0，基於 TanStack Router 打造的 full-stack React 框架。支援 SSR、streaming、server functions，對標 Next.js 但更輕量。type-safe 從 route 到 API 全覆蓋。",
-      "tags": ["React", "framework", "TanStack", "full-stack"],
-      "url": "https://tanstack.com/start/latest",
-      "price": null,
-      "vram": null,
-      "license": "MIT"
+      "license": null
     },
     {
       "id": "20260217-sw-005",
       "radar": "software-dev",
-      "date": "2026-02-14",
+      "date": "2026-02-17",
       "cycle": "evening",
-      "priority": "medium",
-      "title": "Effect 4.0 — TypeScript 函數式程式設計新標準",
-      "summary": "Effect 4.0 發布，帶來更好的錯誤處理、依賴注入和併發控制。新的 Stream API 大幅簡化，Schema validation 效能提升 3x。越來越多企業級專案採用 Effect 作為核心架構。",
-      "tags": ["TypeScript", "functional programming", "Effect"],
-      "url": "https://effect.website/blog/release-4.0",
+      "priority": "paradigm-shift",
+      "title": "Fujitsu AI 驅動軟體開發平台 — 全自動 SDLC",
+      "summary": "Fujitsu 今日（2/17）發布 AI 驅動開發平台，使用多個協作式 AI agent（基於 Takane LLM）全面自動化從需求定義、設計、實作到整合測試的完整 SDLC。在醫療費用修訂 PoC 中，三人月的工作量縮短至 4 小時，效率提升 100 倍。包含 Guardian 層進行 meta-cognitive 檢查。",
+      "tags": [
+        "multi-agent",
+        "agentic engineering",
+        "SDLC automation"
+      ],
+      "url": "https://global.fujitsu/en-global/pr/news/2026/02/17-01",
       "price": null,
       "vram": null,
-      "license": "MIT"
+      "license": null
     },
     {
-      "id": "20260217-mt-001",
-      "radar": "music-tech",
+      "id": "20260217-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cursor Long-Running Agents — 自主完成大型開發任務",
+      "summary": "Cursor 推出 long-running agents，能自主規劃並長時間持續執行複雜開發任務，無需人工介入。內測顯示能完成原本 Agent Mode 做不到的工作，產生更完整的 PR。目前 Ultra/Teams/Enterprise 方案可用。Box 報告 85% 工程師每日使用，效率提升 30-50%。",
+      "tags": [
+        "ai agent",
+        "ai coding",
+        "agentic engineering"
+      ],
+      "url": "https://cursor.com/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Simon Willison: Cognitive Debt — AI 加速開發的認知負債危機",
+      "summary": "Willison 今日討論 cognitive debt（認知負債）：AI 自動化了簡單工作，留下的全是困難的決策和 debug。開發者用 AI 產出更多程式碼，但深度理解卻在下降。他建議讓 LLM 生成兩版方案來對沖理解盲區，並警告 agent fatigue 和 burnout 風險。",
+      "tags": [
+        "cognitive debt",
+        "ai coding",
+        "ai-assisted development"
+      ],
+      "url": "https://simonwillison.net",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-sw-001",
+      "radar": "software-dev",
       "date": "2026-02-17",
       "cycle": "morning",
       "priority": "paradigm-shift",
-      "title": "Suno v5 — AI 音樂生成跨入專業製作級別",
-      "summary": "Suno v5 支援多軌分離輸出（stems）、44.1kHz/24bit 音質、最長 10 分鐘生成。新增 Style Transfer 功能，可以上傳參考曲目風格。產出品質已達到 Spotify 發行標準，音樂產業面臨重大轉變。",
-      "tags": ["AI music", "Suno", "music generation", "stems"],
-      "url": "https://suno.com/blog/v5",
-      "price": "$30/mo Pro",
+      "title": "Claude Opus 4.6 Agent Teams — 多 AI 平行協作開發",
+      "summary": "多個 AI 實例共享 codebase 平行工作，自主分工、build、測試。Anthropic 推出 Agent Teams 功能，讓多個 Claude 實例可以在同一個專案中協作，每個 agent 負責不同模組，自動 merge 與 resolve conflicts。支援 1M token context window，可以完整理解大型 codebase。",
+      "tags": [
+        "multi-agent",
+        "agent teams",
+        "tool use",
+        "Claude"
+      ],
+      "url": "https://anthropic.com/agent-teams",
+      "price": null,
       "vram": null,
-      "license": "proprietary"
+      "license": null
+    },
+    {
+      "id": "20260217-mt-006",
+      "radar": "music-tech",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Luxora Audio — Titan Tube Compressor（免費）",
+      "summary": "Luxora Audio 發布免費 vari-mu 壓縮器插件，模擬價值 $7,000 的硬體真空管壓縮器。提供三種模式：Normal（乾淨）、HD（中等閥管諧波）、Hyper（濃厚飽和感）。支援 VST3/AAX/AU，適用於人聲、鼓組、混音匯流排和母帶處理。",
+      "tags": [
+        "compressor",
+        "plugin",
+        "free plugin",
+        "vst3",
+        "aax",
+        "au"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-mt-007",
+      "radar": "music-tech",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Suno AI Persona v5 更新",
+      "summary": "Suno 於 2/14 推出 Persona v5，大幅提升人聲一致性，讓創作者能在多首歌曲和專輯中保持統一的 vocal identity。可從現有歌曲自動分離人聲來建立 Persona，舊版也能升級至 v5。隱私政策同步更新以支援新的 chat-based 創作工具。",
+      "tags": [
+        "suno",
+        "music ai",
+        "voice clone",
+        "music generation"
+      ],
+      "url": "https://suno.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-mt-005",
+      "radar": "music-tech",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "EMPIRE ENGINE — 音頻 AI 防護系統",
+      "summary": "獨立開發者推出 Stem Safe Solutions，這是一套五層防禦管線，專門保護音樂創作者的作品不被 AI 未授權訓練。系統包含 AI 數據毒化（注入不可聞的對抗噪音）、FSK 動態浮水印、AES-256 加密、頻譜隱寫術嵌入所有權資訊，以及主動威脅偵測。目前有 live demo 可供測試。",
+      "tags": [
+        "stems separation",
+        "neural audio",
+        "audio ai",
+        "audio tech"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Fractal Audio ICONS: Fullerton Collection",
+      "summary": "amp modeling 巨頭 Fractal Audio 首次進軍 guitar plugin 市場！Fullerton Collection 包含 36 個 Fender 經典音箱模型（Deluxe、Princeton、Twin 等），搭配 13 個 DynaCab HD 虛擬箱體、11 種麥克風選擇及即時定位調整。支援 VST/AU/AAX 及 standalone，入門價 $299。",
+      "tags": [
+        "guitar plugin",
+        "guitar amp",
+        "guitar modeling",
+        "axe fx",
+        "vst"
+      ],
+      "url": "https://www.fractalaudio.com/icons/",
+      "price": "$299",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Woodstock Audio Waveform Compressor（免費）",
+      "summary": "免費的 feedforward peak-detecting compressor，支援 VST3/AU/AAX。亮點是高解析度波形視覺化介面，能即時看到壓縮前後的訊號變化、gain reduction 與 threshold。含 Optical 模式和 Delta Solo 功能，對初學者理解壓縮原理特別有幫助。",
+      "tags": [
+        "compressor",
+        "plugin",
+        "vst3",
+        "free plugin",
+        "mixing"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
     },
     {
       "id": "20260217-mt-002",
@@ -94,66 +329,367 @@
       "priority": "high",
       "title": "Ableton Live 13 公佈 — AI Arrange 與 Smart Mixing",
       "summary": "Ableton 宣布 Live 13，內建 AI Arrangement 建議、自動 gain staging、Smart EQ。新增 Granular Synth 和 Spectral FX rack。支援 ARA 3 深度整合，MPE 控制器支援大幅改善。",
-      "tags": ["Ableton", "DAW", "AI mixing", "plugin"],
+      "tags": [
+        "Ableton",
+        "DAW",
+        "AI mixing",
+        "plugin"
+      ],
       "url": "https://ableton.com/live-13",
       "price": "$449 Standard",
-      "vram": null,
-      "license": "proprietary"
-    },
-    {
-      "id": "20260217-mt-003",
-      "radar": "music-tech",
-      "date": "2026-02-16",
-      "cycle": "morning",
-      "priority": "medium",
-      "title": "FabFilter Pro-Q 4 — AI-Powered 動態 EQ",
-      "summary": "FabFilter Pro-Q 4 加入 AI 頻率分析建議、自動共振偵測與衰減、跨 instance 頻譜碰撞偵測。新的 Surround/Atmos 模式支援高達 9.1.6 聲道。CPU 效率提升 40%。",
-      "tags": ["plugin", "EQ", "FabFilter", "mixing"],
-      "url": "https://fabfilter.com/products/pro-q-4",
-      "price": "$199",
-      "vram": null,
-      "license": "proprietary"
-    },
-    {
-      "id": "20260217-mt-004",
-      "radar": "music-tech",
-      "date": "2026-02-15",
-      "cycle": "evening",
-      "priority": "low",
-      "title": "Vital 2.0 — 開源合成器大更新",
-      "summary": "Vital 合成器發布 2.0，新增 FM synthesis engine、granular oscillator、改進的 modulation matrix。效能優化讓 CPU 使用降低 50%。社群預設庫超過 10,000 個。完全免費開源。",
-      "tags": ["synth", "open source", "Vital", "sound design"],
-      "url": "https://vital.audio",
-      "price": "Free",
-      "vram": null,
-      "license": "GPL-3.0"
-    },
-    {
-      "id": "20260217-mt-005",
-      "radar": "music-tech",
-      "date": "2026-02-14",
-      "cycle": "morning",
-      "priority": "low",
-      "title": "MIDI 2.0 控制器生態成熟 — Arturia KeyStep Pro 2",
-      "summary": "Arturia 發布支援完整 MIDI 2.0 的 KeyStep Pro 2，包含 per-note expression、高解析度 CC、Profile Configuration。MIDI 2.0 生態終於有足夠的硬體與軟體支援。",
-      "tags": ["MIDI 2.0", "controller", "Arturia", "hardware"],
-      "url": "https://arturia.com/keystep-pro-2",
-      "price": "$499",
       "vram": null,
       "license": null
     },
     {
-      "id": "20260217-ai-001",
-      "radar": "ai-infra",
+      "id": "20260217-mt-001",
+      "radar": "music-tech",
       "date": "2026-02-17",
       "cycle": "morning",
       "priority": "paradigm-shift",
-      "title": "DeepSeek R2 開源 — 推理模型完全本地化",
-      "summary": "DeepSeek 發布 R2 系列推理模型，從 7B 到 671B MoE 全面開源（MIT license）。R2-70B 在 MATH 和 GPQA 上超越 GPT-4o，可在消費級 GPU 上運行。GGUF 量化版 32B 僅需 24GB VRAM，推理速度達 40 tok/s。",
-      "tags": ["DeepSeek", "open source", "reasoning", "local LLM"],
-      "url": "https://github.com/deepseek-ai/DeepSeek-R2",
-      "price": "Free",
-      "vram": "24GB (32B Q4)",
+      "title": "Suno v5 — AI 音樂生成跨入專業製作級別",
+      "summary": "Suno v5 支援多軌分離輸出（stems）、44.1kHz/24bit 音質、最長 10 分鐘生成。新增 Style Transfer 功能，可以上傳參考曲目風格。產出品質已達到 Spotify 發行標準，音樂產業面臨重大轉變。",
+      "tags": [
+        "AI music",
+        "Suno",
+        "music generation",
+        "stems"
+      ],
+      "url": "https://suno.com/blog/v5",
+      "price": "$30/mo Pro",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260217-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Transformers.js v4 — WebGPU 重寫，瀏覽器端 AI 推論",
+      "summary": "HuggingFace 全新 WebGPU 重寫，C++ 核心帶來 4x 效能提升，支援 8B+ 模型在瀏覽器跑。ONNX Runtime WebGPU 底層，離線優先。Edge inference 方向值得關注。",
+      "tags": [
+        "pytorch",
+        "onnx runtime",
+        "flash attention",
+        "webgpu"
+      ],
+      "url": "https://github.com/huggingface/transformers.js",
+      "price": null,
+      "vram": "N/A (WebGPU)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260217-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GLM-5 (Zhipu AI / Z.ai)",
+      "summary": "智譜 AI 最新開源巨獸：744B 參數 / 40B 活躍（MoE），28.5T tokens 訓練，198K context。DeepSeek Sparse Attention、function calling、agentic 任務。SWE-bench 77.8 分，接近 Claude Opus 4.5/4.6 水準。Q4_K_M 量化可嘗試用 llama.cpp 跑，但 40B active 仍需 >24GB。",
+      "tags": [
+        "llm_inference",
+        "deepseek",
+        "quantization",
+        "speculative decoding"
+      ],
+      "url": "https://github.com/THUDM/GLM-5",
+      "price": null,
+      "vram": "Q4 ~28-32GB (40B active)",
+      "license": "Open Weights"
+    },
+    {
+      "id": "20260217-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Hunyuan-DiT (Tencent)",
+      "summary": "騰訊開源 DiT 架構圖像生成模型，社群稱「Flux 殺手」。亞洲面孔/人體結構優於 Flux，速度比 SDXL 快 1.5 倍，ComfyUI workflow 已就緒。",
+      "tags": [
+        "image generation",
+        "stable diffusion",
+        "ComfyUI",
+        "controlnet"
+      ],
+      "url": "https://github.com/Tencent/HunyuanDiT",
+      "price": null,
+      "vram": "~20-24GB (full) / 量化中",
+      "license": "Open Weights"
+    },
+    {
+      "id": "20260217-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "RVC v3.12.0-beta ⚡",
+      "summary": "RVC 新增 crepe-full/harvest pitch 演算法（高音+顫音優化）、diffusion timbre 控制、消費級 GPU 訓練加速。48kHz 推理延遲 <10ms。",
+      "tags": [
+        "RVC",
+        "singing voice conversion",
+        "pitch extraction",
+        "voice conversion"
+      ],
+      "url": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
+      "price": null,
+      "vram": "8GB+",
+      "license": "MIT"
+    },
+    {
+      "id": "20260217-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "RAG-API (BukeLy)",
+      "summary": "多模態 RAG API，支援文件解析與知識圖譜建構，WebGPU 加速。整合向量資料庫，適合建構本地知識庫系統。",
+      "tags": [
+        "rag",
+        "knowledge graph",
+        "document parsing"
+      ],
+      "url": "https://github.com/BukeLy/rag-api",
+      "price": null,
+      "vram": "依嵌入模型，通常需 >24GB 完整部署",
+      "license": "開源"
+    },
+    {
+      "id": "20260217-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ming-Flash-Omni-2.0 (Ant Group/inclusionAI)",
+      "summary": "業界首個統一語音+音效+音樂生成的多模態模型。基於 Ling-2.0 架構（MoE 100B-A6B），支援零樣本語音克隆、情緒/方言控制、即時生成分鐘級音頻。部分 benchmark 超越 Gemini 2.5 Pro。",
+      "tags": [
+        "speech synthesis",
+        "voice cloning",
+        "music generation",
+        "audio generation"
+      ],
+      "url": "https://huggingface.co/inclusionAI",
+      "price": null,
+      "vram": "~12-16GB (A6B active, 量化後可能塞進 16GB)",
+      "license": null
+    },
+    {
+      "id": "20260217-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwen3.5-397B-A17B (Alibaba/QwenLM)",
+      "summary": "阿里巴巴最新旗艦 MoE 模型！397B 總參數 / 17B 活躍參數，原生 262K context（YaRN 可擴展至 1M）。Gated DeltaNet + MoE 混合架構，解碼速度比 Qwen3-Max 快 8.6-19 倍，VRAM 降低 60%。支援文字+圖片+影片多模態，201 種語言。Apache 2.0 開源。",
+      "tags": [
+        "llama",
+        "qwen",
+        "MoE",
+        "quantization",
+        "local inference"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3.5",
+      "price": null,
+      "vram": "Q4 量化 ~12-14GB (17B active)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260217-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AuraFlow (Fal.ai)",
+      "summary": "Apache 2.0 開源圖像生成模型，支援 xformers + torch.compile 加速。社群回報 8GB VRAM 即可運行，搭配 ComfyUI 工作流效果優秀。",
+      "tags": [
+        "image generation",
+        "diffusers",
+        "ComfyUI"
+      ],
+      "url": "https://fal.ai/models",
+      "price": null,
+      "vram": "8-12GB (量化後更低)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260217-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "VerseCrafter",
+      "summary": "騰訊 ARC Lab 的 4D 可控影片世界模型，基於 Wan2.1 backbone 加 GeoAdapter，支援鏡頭運動和多物件軌跡控制。影片生成品質與空間一致性極高。",
+      "tags": [
+        "video generation",
+        "diffusers",
+        "4D control"
+      ],
+      "url": "https://github.com/TencentARC/VerseCrafter",
+      "price": null,
+      "vram": "~24GB+ (14B backbone) → 量化可降至 16GB",
+      "license": "開源"
+    },
+    {
+      "id": "20260217-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "FLUX.2 [klein]",
+      "summary": "Black Forest Labs 1/15 發布，專為消費級硬體設計的秒級圖片生成模型。搭配 ComfyUI 工作流，速度比 SDXL Turbo 更快。",
+      "tags": [
+        "flux",
+        "image generation",
+        "stable diffusion"
+      ],
+      "url": "https://blackforestlabs.ai",
+      "price": null,
+      "vram": "~12-16GB (原生)",
+      "license": "開源"
+    },
+    {
+      "id": "20260217-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Voicebox (jamiepine/voicebox)",
+      "summary": "開源本地語音合成工作站，基於 Qwen3-TTS 引擎。支援幾秒鐘音頻就能克隆任何聲音，內建多軌 timeline 編輯器（類似 DAW）、Whisper 轉錄、系統音頻捕捉。Tauri (Rust) 打造，Mac 上有 MLX 加速，比 Electron 快 10 倍。完全離線運行，零雲端依賴。",
+      "tags": [
+        "voice cloning",
+        "TTS",
+        "speech synthesis",
+        "whisper"
+      ],
+      "url": "https://github.com/jamiepine/voicebox",
+      "price": null,
+      "vram": "~4GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260217-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ClawTime (youngkent/clawtime)",
+      "summary": "自架式 AI 語音對話介面，支援本地 AI agent 的即時視覺+語音互動。適合打造個人語音助手，完全 self-hosted，不需要雲端 API。",
+      "tags": [
+        "voice synthesis",
+        "real-time voice",
+        "speech",
+        "AI agent"
+      ],
+      "url": "https://github.com/youngkent/clawtime",
+      "price": null,
+      "vram": "~4-6GB",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260217-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LocalReader-Pro (revisionhiep)",
+      "summary": "跨平台 PDF/EPUB 閱讀器，內建本地 TTS 語音朗讀。支援系統語音引擎（SAPI/AVSpeech/eSpeak），完全離線。Rust 打造，~2.8k ⭐。",
+      "tags": [
+        "text to speech",
+        "speech synthesis",
+        "local inference"
+      ],
+      "url": "https://github.com/revisionhiep/create-LocalReader-Pro",
+      "price": null,
+      "vram": "CPU only",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260217-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "DeepSeek-OCR-2",
+      "summary": "DeepSeek 發布的 OCR 模型第二代，採用 Visual Causal Flow 架構，支援複雜文件理解與 Markdown 轉換。使用 vLLM 或 Transformers 推理，動態解析度最高支援 6×768×768。",
+      "tags": [
+        "ocr",
+        "document ai",
+        "deepseek"
+      ],
+      "url": "https://github.com/deepseek-ai/DeepSeek-OCR-2",
+      "price": null,
+      "vram": "~8-12GB (FP16)",
+      "license": "開源"
+    },
+    {
+      "id": "20260217-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Vocalinux v0.6.1-beta",
+      "summary": "Linux 上終於有好用的語音聽寫工具！支援 whisper.cpp 離線轉錄，可選 GPU (Vulkan/CUDA) 或 CPU 後端，內建語音指令（句號、逗號、換行、刪除）。",
+      "tags": [
+        "speech recognition",
+        "whisper",
+        "asr"
+      ],
+      "url": "https://github.com/jatinkrmalik/vocalinux",
+      "price": null,
+      "vram": "~1-2GB (whisper.cpp)",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260217-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ollama v0.16.2",
+      "summary": "最新版本新增 GLM-5（744B MoE/40B active）和 MiniMax-M2.5 模型，`ollama launch` 指令可一鍵啟動 Claude Code 等工具。新增 OLLAMA_NO_CLOUD=1 設定阻擋雲端模型，保護隱私。",
+      "tags": [
+        "ollama",
+        "local inference",
+        "llm"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.16.2",
+      "price": null,
+      "vram": "依模型而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20260217-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "youtube-live-tts",
+      "summary": "YouTube 直播聊天室即時 TTS 工具，串接 ElevenLabs AI 語音。支援自訂模板、防刷保護、多語系，前端 Next.js + shadcn/ui。適合直播主互動場景。",
+      "tags": [
+        "text to speech",
+        "elevenlabs",
+        "tts"
+      ],
+      "url": "https://github.com/emiliioaguirre/youtube-live-tts",
+      "price": null,
+      "vram": "0 (雲端 API)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260217-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Amica",
+      "summary": "開源 3D 角色對話介面，整合語音與視覺互動。透過 voice + vision 與 3D 虛擬角色溝通，適合虛擬助理、VTuber 或互動展示場景。",
+      "tags": [
+        "voice synthesis",
+        "3d avatar",
+        "speech"
+      ],
+      "url": "https://github.com/semperai/amica",
+      "price": null,
+      "vram": "~2-4GB",
       "license": "MIT"
     },
     {
@@ -164,49 +700,1098 @@
       "priority": "high",
       "title": "ElevenLabs Voice Engine 3 — 即時語音克隆零延遲",
       "summary": "ElevenLabs V3 引擎實現 <100ms 延遲的即時語音生成，僅需 10 秒音檔即可克隆。新增情感控制 API、多語言即時切換、歌唱模式。WebSocket streaming 支援即時對話應用。",
-      "tags": ["voice cloning", "TTS", "ElevenLabs", "real-time"],
+      "tags": [
+        "voice cloning",
+        "TTS",
+        "ElevenLabs",
+        "real-time"
+      ],
       "url": "https://elevenlabs.io/blog/v3",
       "price": "$5/mo Starter",
       "vram": null,
       "license": "proprietary"
     },
     {
-      "id": "20260217-ai-003",
+      "id": "20260217-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "DeepSeek R2 開源 — 推理模型完全本地化",
+      "summary": "DeepSeek 發布 R2 系列推理模型，從 7B 到 671B MoE 全面開源（MIT license）。R2-70B 在 MATH 和 GPQA 上超越 GPT-4o，可在消費級 GPU 上運行。GGUF 量化版 32B 僅需 24GB VRAM，推理速度達 40 tok/s。",
+      "tags": [
+        "DeepSeek",
+        "open source",
+        "reasoning",
+        "local LLM"
+      ],
+      "url": "https://github.com/deepseek-ai/DeepSeek-R2",
+      "price": "Free",
+      "vram": "24GB (32B Q4)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260216-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Deno 3.0 — Node 完全相容 + 內建 SQLite",
+      "summary": "Deno 3.0 達成與 Node.js 的完全相容性，所有 npm 套件無需配置即可使用。內建 SQLite 作為本地資料庫，支援 edge deploy。新的權限模型更細緻，workspace 功能對標 pnpm。",
+      "tags": [
+        "Deno",
+        "JavaScript",
+        "runtime",
+        "SQLite"
+      ],
+      "url": "https://deno.com/blog/v3",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-040",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Sound Magic Supreme Drums Blue — 混合建模鼓組虛擬樂器",
+      "summary": "專為音樂製作、影視與遊戲音訊設計的混合建模（hybrid modeling）鼓組 plugin。",
+      "tags": [
+        "virtual instrument",
+        "drum machine"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-042",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "2026 二月免費 Plugin 大彙整",
+      "summary": "本月釋出多款免費效果器與虛擬樂器：NIVIEM Phase One（相位處理）、Busboy（bus 處理）、Echo1（開源 delay）、ÆLAPSE（開源效果器）、Waveform Compressor、Krystal Dynamics 套件、AliasSynth、Space Organ 等。",
+      "tags": [
+        "free plugin",
+        "delay",
+        "compressor",
+        "audio effect"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-041",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Music Mogul AI — AI 演唱會訂票代理人",
+      "summary": "資深 booking agent Brad Stewart 打造，自動化場地搜尋、promoter 聯繫、費用談判與行銷。支持者認為可為獨立音樂人降低門檻，但業界擔憂過度自動化。",
+      "tags": [
+        "music ai",
+        "music industry"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-039",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Waves Voice ReGen — AI 語音降噪工具",
+      "summary": "Waves V16 同步推出 Voice ReGen，利用 AI 去除音訊/影片中的背景噪音，適用於 podcast、配音及混音場景。",
+      "tags": [
+        "ai_audio",
+        "audio_effects"
+      ],
+      "url": "https://www.waves.com/v16",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-038",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "SSL Digicrush — Lo-Fi 數位失真效果器 40% 折扣",
+      "summary": "SSL 推出的 Digicrush 模擬早期數位取樣器的粗糙質感，具備 jitter 控制、bit depth 和 sample rate 調整功能。適合 Electronica、Hip-Hop、Jungle 等風格。支援 VST/VST3/AU/AAX（Win/Mac），原價 $49 現特價 $29，優惠至 2/17。",
+      "tags": [
+        "plugin",
+        "distortion",
+        "audio effect",
+        "plugin sale"
+      ],
+      "url": null,
+      "price": "$29",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-037",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "YouTube Music 推出 AI Playlist 生成器",
+      "summary": "YouTube Music 面向 Premium 用戶推出 AI 播放清單功能，由 Gemini 驅動。用戶可用文字或語音描述心情、風格，AI 即時生成個人化播放清單。與 Spotify Prompted Playlists、Deezer Flow Tuner 形成三方競爭。",
+      "tags": [
+        "music ai",
+        "music tech",
+        "audio innovation"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-036",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Echoe — 專為音訊工作流設計的檔案分享平台",
+      "summary": "解決 stems/混音檔分享的痛點：WAV/AIFF 串流播放、波形與頻譜即時預覽、時間標記留言回饋、版本控制、密碼保護分享連結。免費方案 1GB，付費 €10/月起 500GB。",
+      "tags": [
+        "audio tool",
+        "production tool",
+        "audio tech"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-035",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Behringer UB-Xa MINI 專屬 Patch Editor",
+      "summary": "Behringer 為 UB-Xa MINI 合成器推出自訂 patch editor，可直接操作合成器參數並整合到 DAW 中使用。",
+      "tags": [
+        "synthesizer",
+        "DAW",
+        "patch editor"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-034",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ableton Move 2.0 — 加入 Audio Tracks",
+      "summary": "Move 韌體 2.0 大更新，新增 Audio Tracks 支援 clip warping 和即時音訊處理，讓這台口袋設備變成真正的小型 DAW。目前 public beta 可用。",
+      "tags": [
+        "Ableton",
+        "DAW",
+        "music production"
+      ],
+      "url": "https://www.ableton.com/en/products/move/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-033",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FFAB — ffmpeg 免費圖形介面音訊工具",
+      "summary": "Mac/Linux 上的 ffmpeg GUI 前端，支援即時預覽、拖放 filters、平行處理和視覺化。批次音訊轉檔和處理的好幫手。",
+      "tags": [
+        "audio tool",
+        "audio software",
+        "free"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-032",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Softube/Weiss DS5 五段多頻壓縮器發佈",
+      "summary": "Softube 與 Weiss 合作推出 DS5 Multiband Compressor plugin，改編自 DS1-MK3 硬體版本的五段壓縮器，適合精細的 mastering 工作流程。",
+      "tags": [
+        "compressor",
+        "plugin",
+        "mastering"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-031",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Google NotebookLM 語音克隆爭議",
+      "summary": "Google NotebookLM 生成的 podcast 語音被指與電台主持人 David Greene 極為相似，引發 voice cloning 討論。有人認為是刻意模仿，也有人認為只是「通用 podcast 語調」的巧合。",
+      "tags": [
+        "voice clone",
+        "audio ai"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-030",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Deezer 推出 Flow Tuner",
+      "summary": "2/13 發布，用戶可直接控制推薦演算法。值得注意：Deezer 的 Flow 功能明確排除 AI 生成音樂，業界獨一的政策立場。",
+      "tags": [
+        "music tech",
+        "music industry"
+      ],
+      "url": "https://www.deezer.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-029",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HN 討論：AI 音樂服務品質劣化",
+      "summary": "Hacker News 社群反映 AI 音樂生成服務的舊作品出現嚴重音質退化（爆音、crackling），可能與儲存壓縮或模型限制有關。引發 AI 音樂工具成熟度的懷疑。",
+      "tags": [
+        "music ai",
+        "audio ai"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-028",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Waveform Free — 2026 年最佳免費 DAW 評選",
+      "summary": "Bedroom Producers Blog 評選 Waveform Free 為目前最佳免費 DAW，支援無限軌道、跨平台（Win/Mac/Linux）、VST2/VST3/AU 外掛格式。適合預算有限的新手製作人入門。",
+      "tags": [
+        "daw",
+        "music production",
+        "free plugin"
+      ],
+      "url": "https://www.tracktion.com/products/waveform-free",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-027",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Spotify 全面擁抱 AI — 頂尖工程師自 12 月起未寫一行程式碼",
+      "summary": "Spotify Q4 財報揭示其 AI 戰略：最優秀的開發者已全面轉向 AI 開發，不再手寫程式碼。公司正推動 agentic media platform 概念，探索 AI 衍生作品作為藝人新收入來源。",
+      "tags": [
+        "music ai",
+        "music industry",
+        "music tech"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-026",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cherry Audio 新品連發：Synth Stack 6 / Mercury-8 / Filtomika / Voltage Modular 2",
+      "summary": "Cherry Audio 發佈 Synth Stack 6（36 款虛擬樂器套裝，含新增 Mercury-8 合成器）。另外 Filtomika 是模擬 Polivoks 合成器濾波器的效果 plugin，支持多模式、同步調變器。Voltage Modular 2 則新增無限接線及 Bus 無線連接功能。",
+      "tags": [
+        "synthesizer",
+        "virtual instrument",
+        "plugin"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-025",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Leapwing Audio UltraVox 2 — 史低價 $39",
+      "summary": "專業人聲處理 plugin UltraVox 2 正在 Plugin Boutique 以接近歷史最低價 $39 出售。適合取代混音鏈中多個人聲處理工具，一站式處理 vocal chain。",
+      "tags": [
+        "plugin",
+        "vocal processing"
+      ],
+      "url": null,
+      "price": "$39",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FabFilter Pro-Q 4 — AI-Powered 動態 EQ",
+      "summary": "FabFilter Pro-Q 4 加入 AI 頻率分析建議、自動共振偵測與衰減、跨 instance 頻譜碰撞偵測。新的 Surround/Atmos 模式支援高達 9.1.6 聲道。CPU 效率提升 40%。",
+      "tags": [
+        "plugin",
+        "EQ",
+        "FabFilter",
+        "mixing"
+      ],
+      "url": "https://fabfilter.com/products/pro-q-4",
+      "price": "$199",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-024",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Amorph — AI 文字轉 DSP 插件引擎（免費 Beta）",
+      "summary": "Artists in DSP 推出的免費開源插件，可以用自然語言描述想要的效果，即時在 DAW 內生成 delay、reverb、synth 等 DSP 演算法。使用 Cmajor 語言編譯，毫秒級切換效果，不中斷播放。支援自選 AI 模型，無需訂閱。",
+      "tags": [
+        "ai_audio",
+        "music_software",
+        "daw_production"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-023",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Waves V16 — ILLUGEN AI 文字生成音色引擎",
+      "summary": "Waves 最新 V16 更新帶來 ILLUGEN：一款 AI text-to-sample 引擎，輸入文字描述即可生成音色樣本。同時新增 COSMOS Sample Finder 插件，可在 DAW 內依調性/BPM 搜尋並同步樣本。",
+      "tags": [
+        "ai_audio",
+        "music_software",
+        "audio_effects"
+      ],
+      "url": "https://www.waves.com/v16",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-022",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "音訊 AI 是小型團隊的「藍海」機會",
+      "summary": "Hacker News 討論指出，音訊 AI（語音、音樂）目前是小型實驗室的最佳切入點。四名研究員用六個月就打造出 Moshi 語音 AI 模型，表現超越大型實驗室。關鍵優勢在於訊號處理和 codec 的專業知識，而非算力規模。Suno 也被提及為小團隊成功典範，大公司因版權訴訟風險迴避音樂 AI 領域。",
+      "tags": [
+        "music ai",
+        "audio ai",
+        "voice synthesis",
+        "audio innovation"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-021",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "AI 音樂 = \"Vibe Coding\"？社群熱議創作本質",
+      "summary": "HN 社群將 AI 音樂創作比喻為「vibe coding」——降低門檻的同時，可能讓演奏技巧變成小眾。討論類比早期合成器（如 Korg M1）歷史：當年只有工程師能駕馭，後來 UI 改善讓更多人創作。AI 可能重演這段歷程，讓音樂創作更民主化，但專業音樂人的定位也將改變。",
+      "tags": [
+        "music ai",
+        "music production",
+        "daw",
+        "music tech"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-020",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Filter Delays — Robert Henke 免費 Max for Live 效果器",
+      "summary": "Ableton 共同創辦人 Robert Henke 突發釋出免費 Max for Live stereo delay 效果器。三組 filtered delay 搭配 time multiplier、panned inputs、多種 feedback routing 選項及 channel swap。使用 gen~ 開發，設計精簡而優雅，適用 Ableton Live Suite 12+。",
+      "tags": [
+        "ableton",
+        "delay",
+        "free plugin",
+        "audio effect"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-019",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GPU Audio 發表 Soundcore 專業音訊部門 & GPU 即時音源分離",
+      "summary": "GPU Audio 推出全新 Pro Audio 品牌「Soundcore」，並發表基於 GPU 加速的即時音源分離工具。利用深度學習進行 demixing，可將混音即時拆分為個別音軌，延遲極低。SDK 免費下載評估。",
+      "tags": [
+        "stems separation",
+        "neural audio",
+        "audio ai",
+        "plugin"
+      ],
+      "url": "https://gpu.audio",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-018",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Audio Plugin Coder — AI「Vibe Coding」自製 Plugin 不用寫程式",
+      "summary": "Noizefield 推出免費開源工具 APC，讓音樂製作人用自然語言描述需求，AI 自動產生 C++ audio plugin 程式碼。支援 JUCE 8，五階段工作流程（Dream → Ship），可搭配 Claude Code、Cursor 等 coding agent 使用。",
+      "tags": [
+        "audio ai",
+        "audio plugin",
+        "open source audio",
+        "music production"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-017",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ableton Live 12.4 進入 Public Beta",
+      "summary": "重點更新：Link Audio 可透過區網串流音訊直接進 Live；Stem Separation 改進為更彈性的 clip-based 處理；Erosion、Chorus-Ensemble、Delay 等效果器更新；全新 Learn View 取代 Help View。Push、Note、Move 同步更新。",
+      "tags": [
+        "ableton",
+        "daw update",
+        "stems separation"
+      ],
+      "url": "https://www.ableton.com/en/live/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-016",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Novagrid — 序列式多效果器插件",
+      "summary": "Mario Nieto 推出 Novagrid 插件，整合 volume/pan/filter/bitcrusher 的序列式控制，能自動化各種音效運動。對喜歡 sound design 動態效果的製作人來說值得一看。",
+      "tags": [
+        "plugin",
+        "multi-effect",
+        "bitcrusher",
+        "audio effect"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-015",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "TechAudioTools — 免費 Unreal MetaSounds 編輯工具",
+      "summary": "Epic Games 靜悄悄釋出 TechAudioTools Content，為 Unreal Engine 的 MetaSounds 提供一系列免費的 editor tools 和 widgets，補足原本缺少的功能。對遊戲音效和 procedural audio 開發者是必備工具。",
+      "tags": [
+        "sound design",
+        "audio tool",
+        "free"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-014",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Behringer BM-17 Freq Box 開放預購",
+      "summary": "Behringer 推出 BM-17 Freq Box「Boogerfooger」效果器踏板，致敬 Moog MF107 Moogerfooger FreqBox。又一款平價版經典 Moog 踏板選擇。",
+      "tags": [
+        "guitar pedal",
+        "guitar effect"
+      ],
+      "url": "https://www.behringer.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-013",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SonicSketch — 瀏覽器上的 Xenakis 風格音畫樂器",
+      "summary": "JeongHo Park 開發的免費瀏覽器樂器，讓你在畫布上繪製路徑並即時轉化為聲音，靈感來自 Xenakis 的 UPIC 系統。介於 synthesizer 和 score 之間的奇妙體驗。",
+      "tags": [
+        "synthesizer",
+        "music generation",
+        "free"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-012",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Sony 開發 AI 歌曲版權偵測技術",
+      "summary": "Sony Group 於 2/16 發表新技術，可偵測 AI 生成音樂中是否含有受版權保護的原創音樂，透過模型分析或輸出比對來實現，目標是為原創作者建立分潤機制。Universal Music 的 SoundPatrol neural fingerprinting 也在同步推進。",
+      "tags": [
+        "music ai",
+        "music industry",
+        "audio ai"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-011",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ACE-Step 1.5 — 開源 Text-to-Music 模型",
+      "summary": "ACE Studio 發布的完全開源文字轉音樂模型，可在消費級顯卡（＜4GB VRAM）本地運行。支援超過 50 種語言、最長 10 分鐘曲目生成，品質媲美 Suno 等閉源方案。採用 language model + diffusion transformer 混合架構，支援 LoRA 微調、inpainting、stem separation 及 audio-to-audio workflow，透過 ComfyUI 操作。",
+      "tags": [
+        "text-to-music",
+        "music generation",
+        "open source",
+        "audio model"
+      ],
+      "url": "https://github.com/ACE-Step/ACE-Step",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-010",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "TuneTaxi — AI 製作音樂平台上線",
+      "summary": "荷蘭/紐約新創 TuneTaxi 於 2/11 正式推出 AI 驅動的 production music 平台，提供超過 10 萬首免版稅曲目。可上傳腳本或影片自動生成配樂，支援 stem editing（替換樂器、調整長度），涵蓋管弦、電子、世界音樂等風格。免費與付費方案並行。",
+      "tags": [
+        "music ai",
+        "audio generation",
+        "production tool",
+        "royalty-free"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-009",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Waldorf Attack 3 — 經典鼓合成器大改版",
+      "summary": "Waldorf 推出 Attack 3 percussion synthesizer plugin，為 2001 年經典鼓合成器的第三代。新增 sample import、擴充合成引擎（新濾波器與調變選項）、ADBDSR envelope、全新 UI 設計。限時優惠 €49 至 2/22。",
+      "tags": [
+        "plugin",
+        "synthesizer",
+        "drum machine",
+        "virtual instrument"
+      ],
+      "url": "https://waldorfmusic.com/attack-3/",
+      "price": "€49",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-008",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mozart AI 獲 $6M 種子輪融資",
+      "summary": "由 Balderton Capital 領投，Mozart AI 打造 Generative Audio Workstation，支援全曲 AI 輔助創作與 prompt 驅動音樂生成。上線兩個月已超過 10 萬用戶、創建 100 萬首歌曲，部分作品在 Spotify 累計破千萬播放。",
+      "tags": [
+        "music generation",
+        "music ai",
+        "generative audio"
+      ],
+      "url": "https://mozart.ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-007",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ElevenLabs Music 登場",
+      "summary": "利用其語音克隆技術，產出帶有呼吸感、情感與沙啞質感的 AI 歌聲，解決其他生成器「機器人聲」問題。搭配 text-to-music 功能，可直接從 prompt 生成完整歌曲。",
+      "tags": [
+        "voice clone",
+        "voice synthesis",
+        "music generation"
+      ],
+      "url": "https://elevenlabs.io",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-006",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tad AI / Skymusic 大模型",
+      "summary": "支援生成最長 6 分鐘歌曲（不需拼接片段），提供「深度推理」歌詞引擎與圖片轉音樂功能。整合式平台涵蓋作曲、歌詞、演唱全流程。",
+      "tags": [
+        "text to music",
+        "music generation",
+        "music ai"
+      ],
+      "url": "https://tad.ai/hub/best-ai-music-generators-from-text",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-005",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "PipeWire + REAPER + Windows VSTs on Linux 完整教學",
+      "summary": "一篇深度教學文章介紹如何在 Linux 上透過 PipeWire 實現專業級低延遲音訊，搭配 REAPER DAW 並使用 yabridge 橋接 Windows VST 外掛。對於想擺脫 Windows/macOS 的音樂製作人來說是實用的參考指南。",
+      "tags": [
+        "reaper",
+        "daw",
+        "vst",
+        "audio production",
+        "linux"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 推出「Sample」模式 — 上傳音訊片段即可生成完整曲目",
+      "summary": "Suno 新增 Sample 模式，用戶可上傳鋼琴和弦、人聲片段等素材，AI 自動擴展為完整歌曲。測試品質大幅提升，生成時長可達 3-4 分鐘，有人推測 Suno 正秘密測試 V6。",
+      "tags": [
+        "suno",
+        "music generation",
+        "audio generation",
+        "music ai"
+      ],
+      "url": "https://suno.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 新下載規則 + Warner 合作 + Personas 功能",
+      "summary": "Suno 推出免費/付費下載分級新規則，並與 Warner 達成合作。同時公佈 2026 路線圖，包含「Personas」功能——可建立持續一致的 AI 聲線角色，讓創作者保持一致的人聲風格。前 Spotify 高管加入擔任藝術家合作資深總監，顯示 Suno 正積極佈局主流市場。",
+      "tags": [
+        "suno",
+        "music ai",
+        "voice synthesis"
+      ],
+      "url": "https://suno.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FERRO 倡議：停止未授權 AI 音樂訓練",
+      "summary": "加拿大 SOCAN 支持的 FERRO 倡議呼籲停止在未經授權的情況下使用音樂作品訓練 AI 模型，強調保護人類創意的重要性。這場運動在版權法規爭論白熱化的背景下格外關鍵，可能影響未來 AI 音樂工具的訓練資料合規要求。",
+      "tags": [
+        "music industry",
+        "AI",
+        "版權"
+      ],
+      "url": null,
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260216-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Ollama v0.15.5 — 影像生成 + Anthropic API 相容",
+      "summary": "新增 GLM-OCR 多模態 OCR 模型、實驗性影像生成 (Z-Image Turbo 6B, Flux.2 Klein)、新 ollama launch 命令可啟動 Claude Code 等應用、Anthropic /v1/messages API 相容、動態 context window (依 VRAM 自動調整)。",
+      "tags": [
+        "ollama",
+        "local inference",
+        "image generation",
+        "ocr"
+      ],
+      "url": "https://github.com/ollama/ollama/releases",
+      "price": null,
+      "vram": "depends on model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260216-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GLM-5 — 745B/44B MoE 開源最強 LLM (MIT 授權)",
+      "summary": "智譜 AI 發佈，全球首個純國產晶片 (華為昇騰) 訓練的頂級開源 LLM。256 experts / 8 active per token，200K context。SWE-bench 77.8。MIT 授權可商用。GGUF 量化版可跑在 16GB VRAM。",
+      "tags": [
+        "llm inference",
+        "quantization",
+        "gguf",
+        "self-hosted llm"
+      ],
+      "url": "https://github.com/THUDM/GLM-5",
+      "price": null,
+      "vram": "~14-16GB (GGUF Q4)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260216-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Qwen3.5 — 397B-A17B MoE (2026-02-16 發佈)",
+      "summary": "阿里雲通義千問最新旗艦。MoE 架構 (17B active params)，統一視覺-語言基礎模型，支援 201 種語言。Gated Delta Networks + sparse MoE 實現高吞吐低延遲。支援 vLLM、SGLang、llama.cpp 推理。",
+      "tags": [
+        "qwen",
+        "llm inference",
+        "quantization",
+        "context length"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3.5",
+      "price": null,
+      "vram": "~12-16GB (Q4 量化)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260216-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "MOSS-TTS Family — 完整 TTS 模型家族 (2026-02-10 發佈)",
+      "summary": "OpenMOSS + MOSI.AI 發佈的 5 模型家族：旗艦 MOSS-TTS (8B) 做高保真 zero-shot voice cloning + 長語音生成；MOSS-TTSD (8B) 做多人對話；MOSS-VoiceGenerator (1.7B) 純文字描述生成聲音；MOSS-TTS-Realtime (1.7B) 做即時串流 TTS；MOSS-SoundEffect (8B) 做音效生成。支援 20 種語言含中英日韓。",
+      "tags": [
+        "tts",
+        "speech synthesis",
+        "voice cloning",
+        "zero-shot tts",
+        "multilingual tts"
+      ],
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "price": null,
+      "vram": "1.7B 模型 ~4GB / 8B 模型 ~16GB (FP16) 或 ~10GB (INT8)",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260216-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "GraphRAG-rs — Rust 高效能 GraphRAG + WebGPU",
+      "summary": "從文件建立知識圖譜並自然語言查詢。三種部署：Server (Qdrant)、WASM (100% 瀏覽器端)、Hybrid。整合 5 篇 SOTA 論文 (LightRAG、Leiden 社群偵測、HippoRAG)，宣稱 +20% 準確率 + 99% 成本降低。",
+      "tags": [
+        "graphrag",
+        "knowledge graph",
+        "rag",
+        "semantic search",
+        "ollama"
+      ],
+      "url": "https://github.com/automataIA/graphrag-rs",
+      "price": null,
+      "vram": "~2-4GB (embeddings)",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260216-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Voice-Clone-Studio v1.4 — 多模型語音克隆 Web UI",
+      "summary": "Gradio 介面整合 Qwen3-TTS、VibeVoice、LuxTTS、Chatterbox 四大引擎。支援 voice cloning、voice conversion、voice design (文字描述生成聲音)、多人對話、Fine-tune 訓練自訂聲音。內建 40+ 情緒 preset。",
+      "tags": [
+        "voice cloning",
+        "voice conversion",
+        "voice changer",
+        "tts",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/FranckyB/Voice-Clone-Studio",
+      "price": null,
+      "vram": "~4-8GB (依模型大小)",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260216-ai-003",
       "radar": "ai-infra",
       "date": "2026-02-16",
       "cycle": "morning",
       "priority": "high",
       "title": "Flux 2.0 Ultra — 開源圖像生成新王者",
       "summary": "Black Forest Labs 發布 Flux 2.0 Ultra，原生 4K 輸出、精準文字渲染、人物一致性控制。LoRA 訓練僅需 20 張圖片。ComfyUI 社群第一時間支援，本地部署需 12GB VRAM。",
-      "tags": ["image generation", "Flux", "open source", "ComfyUI"],
+      "tags": [
+        "image generation",
+        "Flux",
+        "open source",
+        "ComfyUI"
+      ],
       "url": "https://blackforestlabs.ai/flux-2-ultra",
       "price": "Free",
       "vram": "12GB",
       "license": "Apache-2.0"
     },
     {
-      "id": "20260217-ai-004",
+      "id": "20260216-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "BeatFlow — LLM 驅動的全編曲 MIDI 生成器",
+      "summary": "不是 MP3 生成器！用 LLM 做「音樂總監」，理解音樂理論後架構完整編曲：和弦、Bass、鼓組、段落結構 (Intro/Groove/Breakdown)。內建瀏覽器 Piano Roll 編輯器，可直接匯出 MIDI 到 Ableton/FL Studio/Logic Pro。",
+      "tags": [
+        "music generation",
+        "audio generation"
+      ],
+      "url": "https://github.com/the0cp/beatflow",
+      "price": null,
+      "vram": "~0GB (LLM API call)",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260216-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "StenoAI — 隱私優先的本地會議筆記 AI",
+      "summary": "用 whisper.cpp 轉錄 + Ollama 模型摘要，100% 本地處理。支援自然語言查詢會議內容、Google Calendar 整合、多種 AI 模型選擇 (llama3.2:3b / qwen3:8b / deepseek-r1:8b)。macOS 桌面 app。",
+      "tags": [
+        "whisper",
+        "speech recognition",
+        "speech to text",
+        "ollama"
+      ],
+      "url": "https://github.com/ruzin/stenoai",
+      "price": null,
+      "vram": "~2-5GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260215-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "TanStack Start 1.0 — Full-stack React Framework",
+      "summary": "TanStack Start 正式發布 1.0，基於 TanStack Router 打造的 full-stack React 框架。支援 SSR、streaming、server functions，對標 Next.js 但更輕量。type-safe 從 route 到 API 全覆蓋。",
+      "tags": [
+        "React",
+        "framework",
+        "TanStack",
+        "full-stack"
+      ],
+      "url": "https://tanstack.com/start/latest",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260215-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-15",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Vital 2.0 — 開源合成器大更新",
+      "summary": "Vital 合成器發布 2.0，新增 FM synthesis engine、granular oscillator、改進的 modulation matrix。效能優化讓 CPU 使用降低 50%。社群預設庫超過 10,000 個。完全免費開源。",
+      "tags": [
+        "synth",
+        "open source",
+        "Vital",
+        "sound design"
+      ],
+      "url": "https://vital.audio",
+      "price": "Free",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260215-ai-004",
       "radar": "ai-infra",
       "date": "2026-02-15",
       "cycle": "evening",
       "priority": "medium",
       "title": "Ollama 1.0 — 本地 LLM 管理標準化",
       "summary": "Ollama 正式發布 1.0，穩定 API、支援 GPU 叢集、模型版本管理。新增 Modelfile v2 格式，支援 tool use 定義。與 Docker 深度整合，企業部署更簡單。效能提升讓 70B 模型在 Mac Studio 上達到 20 tok/s。",
-      "tags": ["Ollama", "local LLM", "deployment", "GPU"],
+      "tags": [
+        "Ollama",
+        "local LLM",
+        "deployment",
+        "GPU"
+      ],
       "url": "https://ollama.ai/blog/v1",
       "price": "Free",
       "vram": "Varies",
       "license": "MIT"
     },
     {
-      "id": "20260217-ai-005",
+      "id": "20260214-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-14",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Effect 4.0 — TypeScript 函數式程式設計新標準",
+      "summary": "Effect 4.0 發布，帶來更好的錯誤處理、依賴注入和併發控制。新的 Stream API 大幅簡化，Schema validation 效能提升 3x。越來越多企業級專案採用 Effect 作為核心架構。",
+      "tags": [
+        "TypeScript",
+        "functional programming",
+        "Effect"
+      ],
+      "url": "https://effect.website/blog/release-4.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260214-mt-005",
+      "radar": "music-tech",
+      "date": "2026-02-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "MIDI 2.0 控制器生態成熟 — Arturia KeyStep Pro 2",
+      "summary": "Arturia 發布支援完整 MIDI 2.0 的 KeyStep Pro 2，包含 per-note expression、高解析度 CC、Profile Configuration。MIDI 2.0 生態終於有足夠的硬體與軟體支援。",
+      "tags": [
+        "MIDI 2.0",
+        "controller",
+        "Arturia",
+        "hardware"
+      ],
+      "url": "https://arturia.com/keystep-pro-2",
+      "price": "$499",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260214-ai-005",
       "radar": "ai-infra",
       "date": "2026-02-14",
       "cycle": "morning",
       "priority": "low",
       "title": "LangGraph Studio — Visual AI Agent Builder",
       "summary": "LangChain 推出 LangGraph Studio，視覺化拖拽建立 AI agent workflow。支援 human-in-the-loop、branching、state persistence。免費版支援 3 個 graph，Pro 版無限制。降低 agent 開發門檻。",
-      "tags": ["LangGraph", "agent", "visual builder", "workflow"],
+      "tags": [
+        "LangGraph",
+        "agent",
+        "visual builder",
+        "workflow"
+      ],
       "url": "https://blog.langchain.dev/langgraph-studio",
       "price": "Free / $49 Pro",
       "vram": null,
