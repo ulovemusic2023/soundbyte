@@ -18,7 +18,9 @@
       "url": "https://simonw.substack.com/p/introducing-showboat-and-rodney-so",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonw.substack.com/p/introducing-showboat-and-rodney-so"
     },
     {
       "id": "20260217-sw-009",
@@ -36,7 +38,9 @@
       "url": "https://nextjs.org/docs/app/getting-started/cache-components",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Vercel / Next.js",
+      "sourceUrl": "https://nextjs.org/docs/app/getting-started/cache-components"
     },
     {
       "id": "20260217-sw-008",
@@ -54,7 +58,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Anthropic / Community",
+      "sourceUrl": "https://www.redpacketsecurity.com/anthropic-tries-to-hide-claude-s-ai-actions-devs-hate-it/"
     },
     {
       "id": "20260217-sw-012",
@@ -72,7 +78,9 @@
       "url": "https://vercel.com/changelog/glm-5-is-live-on-ai-gateway",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Vercel",
+      "sourceUrl": "https://vercel.com/changelog/glm-5-is-live-on-ai-gateway"
     },
     {
       "id": "20260217-sw-011",
@@ -91,7 +99,9 @@
       "url": "https://github.com/THUDM/GLM-5",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Z.AI / Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/11/glm-5/"
     },
     {
       "id": "20260217-sw-007",
@@ -110,7 +120,9 @@
       "url": "https://github.com/huggingface/transformers.js",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Hugging Face",
+      "sourceUrl": "https://roboaidigest.com/posts/2026-02-11-transformers-js-v4-webgpu/"
     },
     {
       "id": "20260217-sw-006",
@@ -129,7 +141,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "swyx / Latent Space",
+      "sourceUrl": "https://www.latent.space/p/jeffdean"
     },
     {
       "id": "20260217-sw-002",
@@ -147,7 +161,9 @@
       "url": "https://blog.rust-lang.org/2026/02/17/Rust-2024.html",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Rust Blog",
+      "sourceUrl": "https://blog.rust-lang.org/2026/02/17/Rust-2024.html"
     },
     {
       "id": "20260217-sw-005",
@@ -165,7 +181,9 @@
       "url": "https://global.fujitsu/en-global/pr/news/2026/02/17-01",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Fujitsu",
+      "sourceUrl": "https://global.fujitsu/en-global/pr/news/2026/02/17-01"
     },
     {
       "id": "20260217-sw-004",
@@ -183,7 +201,9 @@
       "url": "https://cursor.com/changelog",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Cursor",
+      "sourceUrl": "https://cursor.com/changelog"
     },
     {
       "id": "20260217-sw-003",
@@ -201,7 +221,9 @@
       "url": "https://simonwillison.net",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net"
     },
     {
       "id": "20260217-sw-001",
@@ -220,7 +242,9 @@
       "url": "https://anthropic.com/agent-teams",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Anthropic",
+      "sourceUrl": "https://anthropic.com/agent-teams"
     },
     {
       "id": "20260217-mt-006",
@@ -241,7 +265,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/12/luxora-audio-titan-tube-compressor/"
     },
     {
       "id": "20260217-mt-007",
@@ -260,7 +286,9 @@
       "url": "https://suno.com",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Suno AI",
+      "sourceUrl": "https://ai.suno.jp/sunoai_news/"
     },
     {
       "id": "20260217-mt-005",
@@ -279,7 +307,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47029958"
     },
     {
       "id": "20260217-mt-004",
@@ -299,7 +329,9 @@
       "url": "https://www.fractalaudio.com/icons/",
       "price": "$299",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "MusicRadar",
+      "sourceUrl": "https://www.musicradar.com/guitars/fractal-audio-systems-icons-fullerton-collection-guitar-plugins"
     },
     {
       "id": "20260217-mt-003",
@@ -319,7 +351,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/10/woodstock-audio-waveform-compressor/"
     },
     {
       "id": "20260217-mt-002",
@@ -338,7 +372,9 @@
       "url": "https://ableton.com/live-13",
       "price": "$449 Standard",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Ableton",
+      "sourceUrl": "https://ableton.com/live-13"
     },
     {
       "id": "20260217-mt-001",
@@ -357,7 +393,9 @@
       "url": "https://suno.com/blog/v5",
       "price": "$30/mo Pro",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Suno Blog",
+      "sourceUrl": "https://suno.com/blog/v5"
     },
     {
       "id": "20260217-ai-020",
@@ -376,7 +414,9 @@
       "url": "https://github.com/huggingface/transformers.js",
       "price": null,
       "vram": "N/A (WebGPU)",
-      "license": "Apache-2.0"
+      "license": "Apache-2.0",
+      "source": "Hugging Face",
+      "sourceUrl": "https://roboaidigest.com/posts/2026-02-11-transformers-js-v4-webgpu/"
     },
     {
       "id": "20260217-ai-019",
@@ -395,7 +435,9 @@
       "url": "https://github.com/THUDM/GLM-5",
       "price": null,
       "vram": "Q4 ~28-32GB (40B active)",
-      "license": "Open Weights"
+      "license": "Open Weights",
+      "source": "Ollama / Together AI",
+      "sourceUrl": "https://github.com/THUDM/GLM-5"
     },
     {
       "id": "20260217-ai-018",
@@ -414,7 +456,9 @@
       "url": "https://github.com/Tencent/HunyuanDiT",
       "price": null,
       "vram": "~20-24GB (full) / 量化中",
-      "license": "Open Weights"
+      "license": "Open Weights",
+      "source": "Reddit r/StableDiffusion",
+      "sourceUrl": "https://github.com/Tencent/HunyuanDiT"
     },
     {
       "id": "20260217-ai-017",
@@ -433,7 +477,9 @@
       "url": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
       "price": null,
       "vram": "8GB+",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI"
     },
     {
       "id": "20260217-ai-016",
@@ -451,7 +497,9 @@
       "url": "https://github.com/BukeLy/rag-api",
       "price": null,
       "vram": "依嵌入模型，通常需 >24GB 完整部署",
-      "license": "開源"
+      "license": "開源",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/BukeLy/rag-api"
     },
     {
       "id": "20260217-ai-015",
@@ -470,7 +518,9 @@
       "url": "https://huggingface.co/inclusionAI",
       "price": null,
       "vram": "~12-16GB (A6B active, 量化後可能塞進 16GB)",
-      "license": null
+      "license": null,
+      "source": "HuggingFace / ModelScope",
+      "sourceUrl": "https://huggingface.co/inclusionAI"
     },
     {
       "id": "20260217-ai-014",
@@ -490,7 +540,9 @@
       "url": "https://github.com/QwenLM/Qwen3.5",
       "price": null,
       "vram": "Q4 量化 ~12-14GB (17B active)",
-      "license": "Apache 2.0"
+      "license": "Apache 2.0",
+      "source": "GitHub / HuggingFace",
+      "sourceUrl": "https://github.com/QwenLM/Qwen3.5"
     },
     {
       "id": "20260217-ai-013",
@@ -508,7 +560,9 @@
       "url": "https://fal.ai/models",
       "price": null,
       "vram": "8-12GB (量化後更低)",
-      "license": "Apache 2.0"
+      "license": "Apache 2.0",
+      "source": "Reddit r/StableDiffusion",
+      "sourceUrl": "https://fal.ai/models"
     },
     {
       "id": "20260217-ai-012",
@@ -526,7 +580,9 @@
       "url": "https://github.com/TencentARC/VerseCrafter",
       "price": null,
       "vram": "~24GB+ (14B backbone) → 量化可降至 16GB",
-      "license": "開源"
+      "license": "開源",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/TencentARC/VerseCrafter"
     },
     {
       "id": "20260217-ai-011",
@@ -544,7 +600,9 @@
       "url": "https://blackforestlabs.ai",
       "price": null,
       "vram": "~12-16GB (原生)",
-      "license": "開源"
+      "license": "開源",
+      "source": "Web Search",
+      "sourceUrl": "https://blackforestlabs.ai"
     },
     {
       "id": "20260217-ai-010",
@@ -563,7 +621,9 @@
       "url": "https://github.com/jamiepine/voicebox",
       "price": null,
       "vram": "~4GB",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/jamiepine/voicebox"
     },
     {
       "id": "20260217-ai-009",
@@ -582,7 +642,9 @@
       "url": "https://github.com/youngkent/clawtime",
       "price": null,
       "vram": "~4-6GB",
-      "license": "Open Source"
+      "license": "Open Source",
+      "source": "MAGI//ARCHIVE / Hacker News",
+      "sourceUrl": "https://github.com/youngkent/clawtime"
     },
     {
       "id": "20260217-ai-008",
@@ -600,7 +662,9 @@
       "url": "https://github.com/revisionhiep/create-LocalReader-Pro",
       "price": null,
       "vram": "CPU only",
-      "license": "Open Source"
+      "license": "Open Source",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/revisionhiep/create-LocalReader-Pro"
     },
     {
       "id": "20260217-ai-007",
@@ -618,7 +682,9 @@
       "url": "https://github.com/deepseek-ai/DeepSeek-OCR-2",
       "price": null,
       "vram": "~8-12GB (FP16)",
-      "license": "開源"
+      "license": "開源",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-OCR-2"
     },
     {
       "id": "20260217-ai-006",
@@ -636,7 +702,9 @@
       "url": "https://github.com/jatinkrmalik/vocalinux",
       "price": null,
       "vram": "~1-2GB (whisper.cpp)",
-      "license": "GPL-3.0"
+      "license": "GPL-3.0",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/jatinkrmalik/vocalinux"
     },
     {
       "id": "20260217-ai-005",
@@ -654,7 +722,9 @@
       "url": "https://github.com/ollama/ollama/releases/tag/v0.16.2",
       "price": null,
       "vram": "依模型而定",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.16.2"
     },
     {
       "id": "20260217-ai-004",
@@ -672,7 +742,9 @@
       "url": "https://github.com/emiliioaguirre/youtube-live-tts",
       "price": null,
       "vram": "0 (雲端 API)",
-      "license": "Apache-2.0"
+      "license": "Apache-2.0",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/emiliioaguirre/youtube-live-tts"
     },
     {
       "id": "20260217-ai-003",
@@ -690,7 +762,9 @@
       "url": "https://github.com/semperai/amica",
       "price": null,
       "vram": "~2-4GB",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/semperai/amica"
     },
     {
       "id": "20260217-ai-002",
@@ -709,7 +783,9 @@
       "url": "https://elevenlabs.io/blog/v3",
       "price": "$5/mo Starter",
       "vram": null,
-      "license": "proprietary"
+      "license": "proprietary",
+      "source": "ElevenLabs",
+      "sourceUrl": "https://elevenlabs.io/blog/v3"
     },
     {
       "id": "20260217-ai-001",
@@ -728,7 +804,9 @@
       "url": "https://github.com/deepseek-ai/DeepSeek-R2",
       "price": "Free",
       "vram": "24GB (32B Q4)",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "DeepSeek",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-R2"
     },
     {
       "id": "20260216-sw-003",
@@ -747,7 +825,9 @@
       "url": "https://deno.com/blog/v3",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Deno Blog",
+      "sourceUrl": "https://deno.com/blog/v3"
     },
     {
       "id": "20260216-mt-040",
@@ -764,7 +844,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/02/12/sound-magic-releases-supreme-drums-blue-a-hybrid-modeled-acoustic-drum-virtual-instrument/"
     },
     {
       "id": "20260216-mt-042",
@@ -783,7 +865,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://audiodealfinder.com/p/free-plugins-february-2026"
     },
     {
       "id": "20260216-mt-041",
@@ -800,7 +884,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "LA Times",
+      "sourceUrl": "https://www.latimes.com/entertainment-arts/music/story/2026-02-13/can-artificial-intelligence-book-concert-tour-inside-music-mogul-ai"
     },
     {
       "id": "20260216-mt-039",
@@ -817,7 +903,9 @@
       "url": "https://www.waves.com/v16",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Waves",
+      "sourceUrl": "https://www.waves.com/v16"
     },
     {
       "id": "20260216-mt-038",
@@ -836,7 +924,9 @@
       "url": null,
       "price": "$29",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/ssl-digicrush-lo-fi-digital-effect-plugin-on-sale/"
     },
     {
       "id": "20260216-mt-037",
@@ -854,7 +944,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/10/youtube-rolls-out-an-ai-playlist-generator-for-premium-users/"
     },
     {
       "id": "20260216-mt-036",
@@ -872,7 +964,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/02/09/new-tool-echoe-promises-to-take-the-hassles-out-of-sharing-audio-files/"
     },
     {
       "id": "20260216-mt-035",
@@ -890,7 +984,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/02/11/behringer-ub-xa-mini-synth-gets-custom-patch-editor/"
     },
     {
       "id": "20260216-mt-034",
@@ -908,7 +1004,9 @@
       "url": "https://www.ableton.com/en/products/move/",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/move-2-0-adds-audio-tracks-with-clip-warping-live-processing-more/"
     },
     {
       "id": "20260216-mt-033",
@@ -926,7 +1024,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/free-ffmpeg-gui-audio/"
     },
     {
       "id": "20260216-mt-032",
@@ -944,7 +1044,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Production Expert",
+      "sourceUrl": "https://production-expert.com"
     },
     {
       "id": "20260216-mt-031",
@@ -961,7 +1063,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47025864"
     },
     {
       "id": "20260216-mt-030",
@@ -978,7 +1082,9 @@
       "url": "https://www.deezer.com",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Deezer Newsroom",
+      "sourceUrl": "https://newsroom-deezer.com/2026/02/deezer-launches-flow-tuner-personalized-recommendations/"
     },
     {
       "id": "20260216-mt-029",
@@ -995,7 +1101,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47018817"
     },
     {
       "id": "20260216-mt-028",
@@ -1013,7 +1121,9 @@
       "url": "https://www.tracktion.com/products/waveform-free",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/12/waveform-free-2025/"
     },
     {
       "id": "20260216-mt-027",
@@ -1031,7 +1141,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/"
     },
     {
       "id": "20260216-mt-026",
@@ -1049,7 +1161,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Cherry Audio",
+      "sourceUrl": null
     },
     {
       "id": "20260216-mt-025",
@@ -1066,7 +1180,9 @@
       "url": null,
       "price": "$39",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Plugin Boutique",
+      "sourceUrl": "https://plugindeals.net/audio-plugins-at-record-low-prices/"
     },
     {
       "id": "20260216-mt-003",
@@ -1085,7 +1201,9 @@
       "url": "https://fabfilter.com/products/pro-q-4",
       "price": "$199",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "FabFilter",
+      "sourceUrl": "https://fabfilter.com/products/pro-q-4"
     },
     {
       "id": "20260216-mt-024",
@@ -1103,7 +1221,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/11/artists-in-dsp-amorph/"
     },
     {
       "id": "20260216-mt-023",
@@ -1121,7 +1241,9 @@
       "url": "https://www.waves.com/v16",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Waves",
+      "sourceUrl": "https://www.waves.com/v16"
     },
     {
       "id": "20260216-mt-022",
@@ -1140,7 +1262,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=46999285"
     },
     {
       "id": "20260216-mt-021",
@@ -1159,7 +1283,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47006615"
     },
     {
       "id": "20260216-mt-020",
@@ -1178,7 +1304,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/filter-delays/"
     },
     {
       "id": "20260216-mt-019",
@@ -1197,7 +1325,9 @@
       "url": "https://gpu.audio",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/02/10/gpu-audio-announces-pro-audio-division-soundcore-gpu-powered-real-time-source-separation-solution/"
     },
     {
       "id": "20260216-mt-018",
@@ -1216,7 +1346,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/02/08/audio-plugin-coder-lets-you-create-custom-plugins-without-programming/"
     },
     {
       "id": "20260216-mt-017",
@@ -1234,7 +1366,9 @@
       "url": "https://www.ableton.com/en/live/",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/02/10/ableton-live-12-4-now-entering-public-beta-heres-whats-new/"
     },
     {
       "id": "20260216-mt-016",
@@ -1253,7 +1387,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/novagrid-sequenced-multi-effect-with-bitcrusher-sonic-motion-plug-in/"
     },
     {
       "id": "20260216-mt-015",
@@ -1271,7 +1407,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/free-techaudiotools-unreal-engine/"
     },
     {
       "id": "20260216-mt-014",
@@ -1288,7 +1426,9 @@
       "url": "https://www.behringer.com",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/02/12/behringer-bm-17-freq-box-boogerfooger-now-available-to-pre-order/"
     },
     {
       "id": "20260216-mt-013",
@@ -1306,7 +1446,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/sonicsketch/"
     },
     {
       "id": "20260216-mt-012",
@@ -1324,7 +1466,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Music Business Worldwide",
+      "sourceUrl": "https://www.musicbusinessworldwide.com"
     },
     {
       "id": "20260216-mt-011",
@@ -1343,7 +1487,9 @@
       "url": "https://github.com/ACE-Step/ACE-Step",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "GitHub / Community",
+      "sourceUrl": "https://github.com/ACE-Step/ACE-Step"
     },
     {
       "id": "20260216-mt-010",
@@ -1362,7 +1508,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "BusinessWire",
+      "sourceUrl": "https://www.businesswire.com/news/home/20260206774335/en/TuneTaxi-Launches-AI-Powered-Production-Music-Platform-for-Creators"
     },
     {
       "id": "20260216-mt-009",
@@ -1381,7 +1529,9 @@
       "url": "https://waldorfmusic.com/attack-3/",
       "price": "€49",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Synthanatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/02/waldorf-attack-3-review-classic-drum-synthesizer-plugin-taken-to-2026.html"
     },
     {
       "id": "20260216-mt-008",
@@ -1399,7 +1549,9 @@
       "url": "https://mozart.ai",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/02/11/mozart-ai-raises-6m-bring-generative-ai-music-creation-masses/"
     },
     {
       "id": "20260216-mt-007",
@@ -1417,7 +1569,9 @@
       "url": "https://elevenlabs.io",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Geek Vibes Nation",
+      "sourceUrl": "https://geekvibesnation.com/best-ai-music-generators-of-2026-shaping-the-future-of-music-creation/"
     },
     {
       "id": "20260216-mt-006",
@@ -1435,7 +1589,9 @@
       "url": "https://tad.ai/hub/best-ai-music-generators-from-text",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Tad AI",
+      "sourceUrl": "https://tad.ai/hub/best-ai-music-generators-from-text"
     },
     {
       "id": "20260216-mt-005",
@@ -1455,7 +1611,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Interfacing Linux",
+      "sourceUrl": "https://interfacinglinux.com/2026/02/13/silent-pro-audio-pipewire-reaper-and-windows-vsts-on-linux/"
     },
     {
       "id": "20260216-mt-004",
@@ -1474,7 +1632,9 @@
       "url": "https://suno.com",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Lilys AI Blog",
+      "sourceUrl": "https://lilys.ai/en/notes/suno-ai-20260210/suno-mind-blowing-update"
     },
     {
       "id": "20260216-mt-002",
@@ -1492,7 +1652,9 @@
       "url": "https://suno.com",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "JackRighteous Blog",
+      "sourceUrl": "https://jackrighteous.com/blogs/news/ai-music-news-february-2026-suno-spotify-copyright"
     },
     {
       "id": "20260216-mt-001",
@@ -1510,7 +1672,9 @@
       "url": null,
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "SOCAN Magazine",
+      "sourceUrl": "https://socanmagazine.ca/socan-academy/socan-academy-ferro-on-ai-in-music-why-human-creativity-matters-more-than-ever/"
     },
     {
       "id": "20260216-ai-009",
@@ -1529,7 +1693,9 @@
       "url": "https://github.com/ollama/ollama/releases",
       "price": null,
       "vram": "depends on model",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "GitHub / Ollama",
+      "sourceUrl": "https://github.com/ollama/ollama/releases"
     },
     {
       "id": "20260216-ai-008",
@@ -1548,7 +1714,9 @@
       "url": "https://github.com/THUDM/GLM-5",
       "price": null,
       "vram": "~14-16GB (GGUF Q4)",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "HuggingFace / GitHub",
+      "sourceUrl": "https://github.com/THUDM/GLM-5"
     },
     {
       "id": "20260216-ai-007",
@@ -1567,7 +1735,9 @@
       "url": "https://github.com/QwenLM/Qwen3.5",
       "price": null,
       "vram": "~12-16GB (Q4 量化)",
-      "license": "Apache 2.0"
+      "license": "Apache 2.0",
+      "source": "GitHub / HuggingFace",
+      "sourceUrl": "https://github.com/QwenLM/Qwen3.5"
     },
     {
       "id": "20260216-ai-006",
@@ -1587,7 +1757,9 @@
       "url": "https://github.com/OpenMOSS/MOSS-TTS",
       "price": null,
       "vram": "1.7B 模型 ~4GB / 8B 模型 ~16GB (FP16) 或 ~10GB (INT8)",
-      "license": "Open Source"
+      "license": "Open Source",
+      "source": "GitHub / HuggingFace",
+      "sourceUrl": "https://github.com/OpenMOSS/MOSS-TTS"
     },
     {
       "id": "20260216-ai-005",
@@ -1607,7 +1779,9 @@
       "url": "https://github.com/automataIA/graphrag-rs",
       "price": null,
       "vram": "~2-4GB (embeddings)",
-      "license": "Open Source"
+      "license": "Open Source",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/automataIA/graphrag-rs"
     },
     {
       "id": "20260216-ai-004",
@@ -1627,7 +1801,9 @@
       "url": "https://github.com/FranckyB/Voice-Clone-Studio",
       "price": null,
       "vram": "~4-8GB (依模型大小)",
-      "license": "Open Source"
+      "license": "Open Source",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/FranckyB/Voice-Clone-Studio"
     },
     {
       "id": "20260216-ai-003",
@@ -1646,7 +1822,9 @@
       "url": "https://blackforestlabs.ai/flux-2-ultra",
       "price": "Free",
       "vram": "12GB",
-      "license": "Apache-2.0"
+      "license": "Apache-2.0",
+      "source": "Black Forest Labs",
+      "sourceUrl": "https://blackforestlabs.ai/flux-2-ultra"
     },
     {
       "id": "20260216-ai-002",
@@ -1663,7 +1841,9 @@
       "url": "https://github.com/the0cp/beatflow",
       "price": null,
       "vram": "~0GB (LLM API call)",
-      "license": "Open Source"
+      "license": "Open Source",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/the0cp/beatflow"
     },
     {
       "id": "20260216-ai-001",
@@ -1682,7 +1862,9 @@
       "url": "https://github.com/ruzin/stenoai",
       "price": null,
       "vram": "~2-5GB",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/ruzin/stenoai"
     },
     {
       "id": "20260215-sw-004",
@@ -1701,7 +1883,9 @@
       "url": "https://tanstack.com/start/latest",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "TanStack",
+      "sourceUrl": null
     },
     {
       "id": "20260215-mt-004",
@@ -1720,7 +1904,9 @@
       "url": "https://vital.audio",
       "price": "Free",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Vital Audio",
+      "sourceUrl": null
     },
     {
       "id": "20260215-ai-004",
@@ -1739,7 +1925,9 @@
       "url": "https://ollama.ai/blog/v1",
       "price": "Free",
       "vram": "Varies",
-      "license": "MIT"
+      "license": "MIT",
+      "source": "Ollama Blog",
+      "sourceUrl": null
     },
     {
       "id": "20260214-sw-005",
@@ -1757,7 +1945,9 @@
       "url": "https://effect.website/blog/release-4.0",
       "price": null,
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Effect Blog",
+      "sourceUrl": null
     },
     {
       "id": "20260214-mt-005",
@@ -1776,7 +1966,9 @@
       "url": "https://arturia.com/keystep-pro-2",
       "price": "$499",
       "vram": null,
-      "license": null
+      "license": null,
+      "source": "Arturia",
+      "sourceUrl": null
     },
     {
       "id": "20260214-ai-005",
@@ -1795,7 +1987,9 @@
       "url": "https://blog.langchain.dev/langgraph-studio",
       "price": "Free / $49 Pro",
       "vram": null,
-      "license": "proprietary"
+      "license": "proprietary",
+      "source": "LangChain Blog",
+      "sourceUrl": null
     }
   ]
 }
