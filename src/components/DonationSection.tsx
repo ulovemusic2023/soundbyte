@@ -27,12 +27,14 @@ export default function DonationSection({ t }: DonationSectionProps) {
           {t('supportDesc')}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#kofi" className="btn-accent">
-            {t('kofi')}
-          </a>
-          <a href="#ecpay" className="btn-secondary">
-            {t('ecpay')}
+        <div className="flex justify-center">
+          <a
+            href="https://ko-fi.com/ulovemusic2023"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-accent"
+          >
+            ☕ {t('kofi')}
           </a>
         </div>
       </div>
