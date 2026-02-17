@@ -7,7 +7,9 @@ export interface Entry {
   title: string
   summary: string
   tags: string[]
-  url: string
+  url: string | null
+  source: string | null
+  sourceUrl: string | null
   price: string | null
   vram: string | null
   license: string | null

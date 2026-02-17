@@ -137,20 +137,35 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
                 {entry.license && <span>📜 {entry.license}</span>}
                 <span>⏰ {entry.cycle}</span>
               </div>
-              {/* Link */}
-              {entry.url && (
-                <a
-                  href={entry.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="inline-flex items-center gap-1.5 text-sm font-medium
-                             transition-colors duration-200 hover:underline"
-                  style={{ color: 'var(--accent)' }}
-                >
-                  Open source →
-                </a>
-              )}
+              {/* Links */}
+              <div className="flex flex-wrap gap-x-4 gap-y-2">
+                {entry.url && (
+                  <a
+                    href={entry.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium
+                               transition-colors duration-200 hover:underline"
+                    style={{ color: 'var(--accent)' }}
+                  >
+                    🔗 Official →
+                  </a>
+                )}
+                {entry.sourceUrl && (
+                  <a
+                    href={entry.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium
+                               transition-colors duration-200 hover:underline"
+                    style={{ color: 'var(--text-secondary)' }}
+                  >
+                    📰 {entry.source || 'Source'} →
+                  </a>
+                )}
+              </div>
             </div>
           </motion.div>
         )}

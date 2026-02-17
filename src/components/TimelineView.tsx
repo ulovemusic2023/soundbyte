@@ -182,7 +182,18 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
                             className="text-xs font-medium px-3 py-1 rounded-full transition-colors duration-200 hover:underline"
                             style={{ color: 'var(--accent)' }}
                           >
-                            Open →
+                            🔗 Official →
+                          </a>
+                        )}
+                        {entry.sourceUrl && (
+                          <a
+                            href={entry.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs font-medium px-3 py-1 rounded-full transition-colors duration-200 hover:underline"
+                            style={{ color: 'var(--text-muted)' }}
+                          >
+                            📰 {entry.source || 'Source'} →
                           </a>
                         )}
                       </div>
