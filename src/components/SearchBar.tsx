@@ -33,7 +33,6 @@ export default function SearchBar({
   const dropdownRef = useRef<HTMLDivElement>(null)
   const isFiltered = query.length > 0
 
-  // Compute suggestions based on current query
   const suggestions = query.trim().length > 0
     ? allTags
         .filter((t) => t.tag.toLowerCase().includes(query.toLowerCase().trim()))
@@ -42,12 +41,10 @@ export default function SearchBar({
 
   const showDropdown = focused && suggestions.length > 0
 
-  // Reset highlight when suggestions change
   useEffect(() => {
     setHighlightIndex(-1)
   }, [query])
 
-  // Close dropdown on outside click
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (
@@ -61,6 +58,18 @@ export default function SearchBar({
     }
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)
+  }, [])
+
+  // ⌘K shortcut to focus search
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault()
+        inputRef.current?.focus()
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
   }, [])
 
   const selectSuggestion = useCallback(
@@ -99,7 +108,7 @@ export default function SearchBar({
       <div className="relative">
         {/* Search icon */}
         <div className="absolute left-5 top-1/2 -translate-y-1/2 pointer-events-none">
-          <Search size={18} style={{ color: 'var(--text-muted)' }} />
+          <Search size={18} style={{ color: focused ? 'var(--accent)' : 'var(--text-muted)' }} />
         </div>
 
         <input
@@ -110,36 +119,31 @@ export default function SearchBar({
           onFocus={() => setFocused(true)}
           onKeyDown={handleKeyDown}
           placeholder={t('searchPlaceholder')}
-          className="w-full h-12 rounded-xl pl-12 pr-24 text-base font-sans outline-none
-                     transition-all duration-200"
-          style={{
-            background: 'var(--bg-secondary)',
-            border: `1px solid ${focused ? 'var(--accent)' : 'var(--border)'}`,
-            color: 'var(--text-primary)',
-            boxShadow: focused ? '0 0 0 3px rgba(59,130,246,0.15)' : 'none',
-          }}
+          className="search-bar"
           autoComplete="off"
           spellCheck={false}
         />
 
-        {/* Result count badge */}
-        {isFiltered && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="absolute right-4 top-1/2 -translate-y-1/2"
-          >
-            <span
+        {/* ⌘K badge + Result count */}
+        <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-2">
+          {isFiltered ? (
+            <motion.span
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
               className="text-xs font-mono font-medium px-3 py-1.5 rounded-full"
               style={{
                 color: 'var(--accent)',
-                background: 'var(--tag-bg)',
+                background: 'var(--accent-subtle)',
               }}
             >
               {resultCount} / {totalCount}
-            </span>
-          </motion.div>
-        )}
+            </motion.span>
+          ) : (
+            !focused && (
+              <span className="kbd-badge hidden sm:flex">⌘K</span>
+            )
+          )}
+        </div>
       </div>
 
       {/* Autocomplete dropdown */}
@@ -147,15 +151,15 @@ export default function SearchBar({
         {showDropdown && (
           <motion.div
             ref={dropdownRef}
-            initial={{ opacity: 0, y: -4 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -4 }}
+            initial={{ opacity: 0, y: -6, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -6, scale: 0.98 }}
             transition={{ duration: 0.15 }}
             className="absolute left-6 right-6 mt-2 rounded-xl overflow-hidden z-50"
             style={{
-              background: 'var(--bg-card)',
+              background: 'var(--bg-surface)',
               border: '1px solid var(--border-hover)',
-              boxShadow: 'var(--shadow-card-hover)',
+              boxShadow: 'var(--shadow-lg)',
             }}
           >
             <div className="py-1.5">
@@ -171,7 +175,7 @@ export default function SearchBar({
                              transition-colors duration-100 cursor-pointer"
                   style={{
                     background:
-                      i === highlightIndex ? 'var(--bg-card-hover)' : 'transparent',
+                      i === highlightIndex ? 'var(--bg-hover)' : 'transparent',
                     color: 'var(--text-primary)',
                   }}
                 >

@@ -27,9 +27,9 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
 
   const total = entries.length || 1
   const radarItems = [
-    { label: t('musicTech'), count: radarCount['music-tech'], color: '#3B82F6' },
-    { label: t('aiInfra'), count: radarCount['ai-infra'], color: '#8B5CF6' },
-    { label: t('softwareDev'), count: radarCount['software-dev'], color: '#A855F7' },
+    { label: t('musicTech'), count: radarCount['music-tech'], color: 'var(--radar-music)' },
+    { label: t('aiInfra'), count: radarCount['ai-infra'], color: 'var(--radar-ai)' },
+    { label: t('softwareDev'), count: radarCount['software-dev'], color: 'var(--radar-dev)' },
   ]
 
   return (
@@ -40,17 +40,9 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
       transition={{ duration: 0.6 }}
       className="max-w-4xl mx-auto px-6 py-16 sm:py-20 lg:py-24"
     >
-      <div
-        className="rounded-xl p-8 md:p-10"
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--border)',
-          boxShadow: 'var(--shadow-card)',
-        }}
-      >
+      <div className="card-hover rounded-xl p-8 md:p-10">
         <h2
-          className="text-xl md:text-2xl font-bold mb-8 text-center"
-          style={{ color: 'var(--text-primary)' }}
+          className="text-xl md:text-2xl font-bold mb-8 text-center gradient-text"
         >
           {t('insightLandscape')}
         </h2>
@@ -75,12 +67,8 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.03, duration: 0.3 }}
-                    className="px-3 py-1.5 rounded-lg text-xs font-mono font-medium"
-                    style={{
-                      background: 'var(--tag-bg)',
-                      color: 'var(--text-secondary)',
-                      opacity,
-                    }}
+                    className="tag-chip !cursor-default"
+                    style={{ opacity }}
                   >
                     {tag}
                     <span className="ml-1.5" style={{ color: 'var(--text-muted)' }}>
@@ -110,11 +98,11 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
                     >
                       {item.label}
                     </span>
-                    <span style={{ color: 'var(--text-muted)' }}>{item.count}</span>
+                    <span className="font-mono text-xs" style={{ color: 'var(--text-muted)' }}>{item.count}</span>
                   </div>
                   <div
                     className="h-2 rounded-full overflow-hidden"
-                    style={{ background: 'var(--bg-secondary)' }}
+                    style={{ background: 'var(--bg-elevated)' }}
                   >
                     <motion.div
                       className="h-full rounded-full"

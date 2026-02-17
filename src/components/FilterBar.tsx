@@ -1,5 +1,6 @@
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowUpDown } from 'lucide-react'
+import { LayoutGrid, Clock } from 'lucide-react'
 import type { RadarFilter, PriorityFilter, TimeFilter, SortOption } from '../types'
 import type { TranslationKeys } from '../i18n/zh-TW'
 
@@ -30,13 +31,7 @@ function Pill({ label, active, onClick }: PillProps) {
   return (
     <button
       onClick={onClick}
-      className="px-3.5 py-1.5 rounded-full text-sm font-medium
-                 transition-all duration-200 cursor-pointer whitespace-nowrap"
-      style={{
-        background: active ? 'var(--accent)' : 'transparent',
-        color: active ? '#FFFFFF' : 'var(--text-secondary)',
-        border: active ? '1px solid var(--accent)' : '1px solid var(--border)',
-      }}
+      className={`pill ${active ? 'pill-active' : ''}`}
     >
       {label}
     </button>
@@ -57,6 +52,16 @@ export default function FilterBar({
   onViewModeChange,
   t,
 }: FilterBarProps) {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 200)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const radarOptions: { value: RadarFilter; labelKey: TranslationKeys }[] = [
     { value: 'all', labelKey: 'all' },
     { value: 'music-tech', labelKey: 'musicTech' },
@@ -86,89 +91,81 @@ export default function FilterBar({
 
   return (
     <motion.div
-      className="max-w-4xl mx-auto px-6 mb-12 space-y-4"
+      className={`filter-bar-sticky ${isScrolled ? 'filter-bar-scrolled' : ''}`}
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: 0.2 }}
     >
-      {/* Radar filters */}
-      <div className="flex flex-wrap gap-2.5 justify-center items-center">
-        <span
-          className="text-xs font-medium uppercase tracking-wider mr-1"
-          style={{ color: 'var(--text-muted)' }}
-        >
-          {t('radar')}
-        </span>
-        {radarOptions.map((opt) => (
-          <Pill
-            key={opt.value}
-            label={t(opt.labelKey)}
-            active={radarFilter === opt.value}
-            onClick={() => onRadarChange(opt.value)}
-          />
-        ))}
-      </div>
+      <div className="max-w-5xl mx-auto px-6 space-y-3">
+        {/* Row 1: Radar filters */}
+        <div className="flex flex-wrap gap-2 justify-center items-center">
+          <span
+            className="text-xs font-semibold uppercase tracking-wider mr-1"
+            style={{ color: 'var(--text-muted)' }}
+          >
+            {t('radar')}
+          </span>
+          {radarOptions.map((opt) => (
+            <Pill
+              key={opt.value}
+              label={t(opt.labelKey)}
+              active={radarFilter === opt.value}
+              onClick={() => onRadarChange(opt.value)}
+            />
+          ))}
+        </div>
 
-      {/* Priority + Time + Sort + View toggle */}
-      <div className="flex flex-wrap gap-2.5 justify-center items-center">
-        <span
-          className="text-xs font-medium uppercase tracking-wider mr-1"
-          style={{ color: 'var(--text-muted)' }}
-        >
-          {t('priority')}
-        </span>
-        {priorityOptions.map((opt) => (
-          <Pill
-            key={opt.value}
-            label={t(opt.labelKey)}
-            active={priorityFilter === opt.value}
-            onClick={() => onPriorityChange(opt.value)}
-          />
-        ))}
+        {/* Row 2: Priority + Time + Sort + View toggle */}
+        <div className="flex flex-wrap gap-2 justify-center items-center">
+          <span
+            className="text-xs font-semibold uppercase tracking-wider mr-1"
+            style={{ color: 'var(--text-muted)' }}
+          >
+            {t('priority')}
+          </span>
+          {priorityOptions.map((opt) => (
+            <Pill
+              key={opt.value}
+              label={t(opt.labelKey)}
+              active={priorityFilter === opt.value}
+              onClick={() => onPriorityChange(opt.value)}
+            />
+          ))}
 
-        <span
-          className="mx-1 hidden md:inline"
-          style={{ color: 'var(--border-hover)' }}
-        >
-          |
-        </span>
+          <span
+            className="mx-1 hidden md:inline text-sm"
+            style={{ color: 'var(--border-hover)' }}
+          >
+            |
+          </span>
 
-        <span
-          className="text-xs font-medium uppercase tracking-wider mr-1"
-          style={{ color: 'var(--text-muted)' }}
-        >
-          {t('time')}
-        </span>
-        {timeOptions.map((opt) => (
-          <Pill
-            key={opt.value}
-            label={t(opt.labelKey)}
-            active={timeFilter === opt.value}
-            onClick={() => onTimeChange(opt.value)}
-          />
-        ))}
+          <span
+            className="text-xs font-semibold uppercase tracking-wider mr-1"
+            style={{ color: 'var(--text-muted)' }}
+          >
+            {t('time')}
+          </span>
+          {timeOptions.map((opt) => (
+            <Pill
+              key={opt.value}
+              label={t(opt.labelKey)}
+              active={timeFilter === opt.value}
+              onClick={() => onTimeChange(opt.value)}
+            />
+          ))}
 
-        <span
-          className="mx-1 hidden md:inline"
-          style={{ color: 'var(--border-hover)' }}
-        >
-          |
-        </span>
+          <span
+            className="mx-1 hidden md:inline text-sm"
+            style={{ color: 'var(--border-hover)' }}
+          >
+            |
+          </span>
 
-        {/* Sort dropdown */}
-        <div className="flex items-center gap-1.5">
-          <ArrowUpDown size={14} style={{ color: 'var(--text-muted)' }} />
+          {/* Sort dropdown */}
           <select
             value={sortOption}
             onChange={(e) => onSortChange(e.target.value as SortOption)}
-            className="text-sm font-medium rounded-lg px-2.5 py-1.5
-                       outline-none cursor-pointer transition-all duration-200
-                       appearance-none"
-            style={{
-              background: 'var(--bg-secondary)',
-              color: 'var(--text-secondary)',
-              border: '1px solid var(--border)',
-            }}
+            className="styled-select"
           >
             {sortOptions.map((opt) => (
               <option
@@ -180,41 +177,31 @@ export default function FilterBar({
               </option>
             ))}
           </select>
-        </div>
 
-        <span
-          className="mx-1 hidden md:inline"
-          style={{ color: 'var(--border-hover)' }}
-        >
-          |
-        </span>
+          <span
+            className="mx-1 hidden md:inline text-sm"
+            style={{ color: 'var(--border-hover)' }}
+          >
+            |
+          </span>
 
-        {/* View toggle */}
-        <div className="flex items-center gap-1.5">
-          <button
-            onClick={() => onViewModeChange('grid')}
-            className="px-3 py-1.5 rounded-lg text-sm font-medium cursor-pointer
-                       transition-all duration-200"
-            style={{
-              background: viewMode === 'grid' ? 'var(--accent)' : 'transparent',
-              color: viewMode === 'grid' ? '#fff' : 'var(--text-secondary)',
-              border: viewMode === 'grid' ? '1px solid var(--accent)' : '1px solid var(--border)',
-            }}
-          >
-            {t('gridView')}
-          </button>
-          <button
-            onClick={() => onViewModeChange('timeline')}
-            className="px-3 py-1.5 rounded-lg text-sm font-medium cursor-pointer
-                       transition-all duration-200"
-            style={{
-              background: viewMode === 'timeline' ? 'var(--accent)' : 'transparent',
-              color: viewMode === 'timeline' ? '#fff' : 'var(--text-secondary)',
-              border: viewMode === 'timeline' ? '1px solid var(--accent)' : '1px solid var(--border)',
-            }}
-          >
-            {t('timelineView')}
-          </button>
+          {/* View toggle as icon buttons */}
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => onViewModeChange('grid')}
+              className={`icon-btn ${viewMode === 'grid' ? 'icon-btn-active' : ''}`}
+              aria-label="Grid view"
+            >
+              <LayoutGrid size={15} />
+            </button>
+            <button
+              onClick={() => onViewModeChange('timeline')}
+              className={`icon-btn ${viewMode === 'timeline' ? 'icon-btn-active' : ''}`}
+              aria-label="Timeline view"
+            >
+              <Clock size={15} />
+            </button>
+          </div>
         </div>
       </div>
     </motion.div>

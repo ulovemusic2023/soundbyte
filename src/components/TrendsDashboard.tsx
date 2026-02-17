@@ -43,9 +43,8 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
 
   const maxDailyCount = Math.max(...dailyCounts.map((d) => d.count), 1)
 
-  // Hot tags ranking — top 10, with "new" indicator
+  // Hot tags ranking — top 10
   const hotTags = useMemo(() => {
-    // Check which tags only appear in the last 3 days
     const now = new Date()
     const threeDaysAgo = new Date(now)
     threeDaysAgo.setDate(threeDaysAgo.getDate() - 3)
@@ -80,12 +79,11 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      className="max-w-5xl mx-auto px-6 pb-16"
+      className="max-w-5xl mx-auto px-6 pb-16 pt-8"
     >
       {/* Title */}
       <motion.h2
-        className="text-2xl md:text-3xl font-bold text-center mb-12"
-        style={{ color: 'var(--text-primary)' }}
+        className="text-2xl md:text-3xl font-bold text-center mb-12 gradient-text"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.1 }}
@@ -95,18 +93,13 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
 
       {/* Keyword Frequency Chart */}
       <motion.section
-        className="rounded-xl p-6 md:p-8 mb-8"
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--border)',
-          boxShadow: 'var(--shadow-card)',
-        }}
+        className="card-hover rounded-xl p-6 md:p-8 mb-8"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15 }}
       >
         <h3
-          className="text-sm font-semibold uppercase tracking-wider mb-6"
+          className="text-xs font-semibold uppercase tracking-wider mb-6"
           style={{ color: 'var(--text-muted)' }}
         >
           {t('keywordFrequency')}
@@ -123,13 +116,13 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
             >
               <span
                 className="text-xs font-mono w-28 sm:w-36 truncate shrink-0 text-right
-                           transition-colors duration-150 group-hover:underline"
+                           transition-colors duration-150 group-hover:!text-[var(--accent)]"
                 style={{ color: 'var(--text-secondary)' }}
               >
                 {item.tag}
               </span>
               <div className="flex-1 h-6 rounded-md overflow-hidden relative"
-                style={{ background: 'var(--bg-secondary)' }}
+                style={{ background: 'var(--bg-elevated)' }}
               >
                 <motion.div
                   className="h-full rounded-md"
@@ -158,23 +151,17 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
 
       {/* Weekly Item Count */}
       <motion.section
-        className="rounded-xl p-6 md:p-8 mb-8"
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--border)',
-          boxShadow: 'var(--shadow-card)',
-        }}
+        className="card-hover rounded-xl p-6 md:p-8 mb-8"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25 }}
       >
         <h3
-          className="text-sm font-semibold uppercase tracking-wider mb-6"
+          className="text-xs font-semibold uppercase tracking-wider mb-6"
           style={{ color: 'var(--text-muted)' }}
         >
           {t('weeklyItemCount')}
         </h3>
-        {/* SVG chart */}
         <div className="w-full overflow-x-auto">
           <svg viewBox="0 0 700 200" className="w-full min-w-[400px]" preserveAspectRatio="xMidYMid meet">
             {/* Grid lines */}
@@ -225,15 +212,15 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
                       ease: [0.22, 1, 0.36, 1],
                     }}
                   />
-                  {/* Count label above bar */}
                   {day.count > 0 && (
                     <motion.text
                       x={x + 15}
                       y={170 - barHeight - 6}
                       textAnchor="middle"
-                      fill="var(--text-secondary)"
+                      fill="var(--accent)"
                       fontSize="10"
                       fontFamily="var(--font-mono)"
+                      fontWeight="600"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.6 + i * 0.04 }}
@@ -241,7 +228,6 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
                       {day.count}
                     </motion.text>
                   )}
-                  {/* X-axis label */}
                   <text
                     x={x + 15}
                     y={188}
@@ -261,18 +247,13 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
 
       {/* Hot Tags Ranking */}
       <motion.section
-        className="rounded-xl p-6 md:p-8"
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--border)',
-          boxShadow: 'var(--shadow-card)',
-        }}
+        className="card-hover rounded-xl p-6 md:p-8"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35 }}
       >
         <h3
-          className="text-sm font-semibold uppercase tracking-wider mb-6"
+          className="text-xs font-semibold uppercase tracking-wider mb-6"
           style={{ color: 'var(--text-muted)' }}
         >
           {t('hotTagsRanking')}
@@ -291,11 +272,11 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
             <motion.div
               key={item.tag}
               className="flex items-center gap-3 px-3 py-3 rounded-lg cursor-pointer
-                         transition-colors duration-150"
+                         transition-all duration-150"
               onClick={() => onTagClick(item.tag)}
               style={{ color: 'var(--text-primary)' }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'var(--bg-card-hover)'
+                e.currentTarget.style.background = 'var(--bg-hover)'
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'transparent'
@@ -305,24 +286,21 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
               transition={{ delay: 0.4 + i * 0.05 }}
             >
               <span
-                className="w-8 text-center font-bold text-base"
-                style={{
-                  color:
-                    i === 0
-                      ? '#FFD700'
-                      : i === 1
-                        ? '#C0C0C0'
-                        : i === 2
-                          ? '#CD7F32'
-                          : 'var(--text-muted)',
-                }}
+                className={`w-8 text-center font-bold text-base ${
+                  i === 0 ? 'rank-gold' : i === 1 ? 'rank-silver' : i === 2 ? 'rank-bronze' : ''
+                }`}
+                style={i > 2 ? { color: 'var(--text-muted)' } : undefined}
               >
                 {i + 1}
               </span>
               <span className="flex-1 font-mono text-sm font-medium flex items-center gap-2">
                 {item.tag}
                 {item.isNew && (
-                  <span className="text-xs">🆕</span>
+                  <span className="text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded-full"
+                    style={{ background: 'var(--accent-subtle)', color: 'var(--accent)' }}
+                  >
+                    NEW
+                  </span>
                 )}
               </span>
               <span

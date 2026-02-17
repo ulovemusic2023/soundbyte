@@ -16,20 +16,20 @@ interface EntryCardProps {
 
 const priorityConfig = {
   'paradigm-shift': {
-    label: 'Paradigm Shift',
-    dot: '#FF375F',
+    label: 'PARADIGM SHIFT',
+    dotClass: 'priority-dot-paradigm',
   },
   high: {
-    label: 'High',
-    dot: '#FF9F0A',
+    label: 'HIGH',
+    dotClass: 'priority-dot-high',
   },
   medium: {
-    label: 'Medium',
-    dot: '#30D158',
+    label: 'MEDIUM',
+    dotClass: 'priority-dot-medium',
   },
   low: {
-    label: 'Low',
-    dot: '#71717A',
+    label: 'LOW',
+    dotClass: 'priority-dot-low',
   },
 }
 
@@ -46,39 +46,25 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
   return (
     <motion.article
       layout
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10, scale: 0.98 }}
       transition={{
-        duration: 0.4,
-        delay: index * 0.05,
+        duration: 0.45,
+        delay: index * 0.06,
         ease: [0.22, 1, 0.36, 1],
       }}
       onClick={() => setExpanded(!expanded)}
-      className="group rounded-xl p-5 sm:p-6 cursor-pointer
-                 transition-all duration-200"
-      style={{
-        background: 'var(--bg-card)',
-        border: '1px solid var(--border)',
-        boxShadow: 'var(--shadow-card)',
-      }}
-      whileHover={{
-        y: -1,
-        scale: 1.005,
-        transition: { duration: 0.2 },
-      }}
+      className="card-hover rounded-xl p-5 sm:p-6 cursor-pointer group"
     >
       {/* Top row: priority + radar + actions + date */}
       <div className="flex items-center justify-between mb-3 gap-2">
         <div className="flex items-center gap-2 flex-wrap">
-          {/* Priority badge — dot + text */}
-          <span className="inline-flex items-center gap-1.5 text-xs font-medium"
+          {/* Priority badge — dot + uppercase text */}
+          <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider"
             style={{ color: 'var(--text-secondary)' }}
           >
-            <span
-              className="w-2 h-2 rounded-full shrink-0"
-              style={{ background: priority.dot }}
-            />
+            <span className={`priority-dot ${priority.dotClass}`} />
             {priority.label}
           </span>
           {/* Radar */}
@@ -97,10 +83,12 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
             />
           )}
           {/* Share */}
-          <ShareButton entry={entry} t={t} />
+          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <ShareButton entry={entry} t={t} />
+          </div>
           {/* Date */}
           <span
-            className="text-xs font-medium shrink-0 ml-1"
+            className="text-xs font-mono shrink-0 ml-1"
             style={{ color: 'var(--text-muted)' }}
           >
             {entry.date}
@@ -110,7 +98,8 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
 
       {/* Title */}
       <h3
-        className="text-base font-semibold mb-2 leading-snug truncate transition-colors duration-200"
+        className="text-base font-semibold mb-2 leading-snug truncate transition-colors duration-200
+                    group-hover:!text-[var(--accent)]"
         style={{ color: 'var(--text-primary)' }}
       >
         {entry.title}
@@ -140,7 +129,7 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
             >
               {/* Meta info */}
               <div
-                className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs"
+                className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs font-mono"
                 style={{ color: 'var(--text-muted)' }}
               >
                 {entry.price && <span>💰 {entry.price}</span>}
@@ -156,7 +145,7 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
                   className="inline-flex items-center gap-1.5 text-sm font-medium
-                             transition-colors"
+                             transition-colors duration-200 hover:underline"
                   style={{ color: 'var(--accent)' }}
                 >
                   Open source →
@@ -176,20 +165,7 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
               e.stopPropagation()
               onTagClick(tag)
             }}
-            className="px-2.5 py-1 text-xs rounded-md font-mono font-medium
-                       transition-all duration-150 cursor-pointer"
-            style={{
-              color: 'var(--text-muted)',
-              background: 'var(--tag-bg)',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'var(--tag-bg-hover)'
-              e.currentTarget.style.color = 'var(--text-secondary)'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'var(--tag-bg)'
-              e.currentTarget.style.color = 'var(--text-muted)'
-            }}
+            className="tag-chip"
           >
             {tag}
           </button>
@@ -233,21 +209,21 @@ function AddToCollectionButton({
       <button
         onClick={(e) => {
           e.stopPropagation()
-          // If only one collection, add directly
           if (collections.length === 1) {
             onAddToCollection(collections[0].id, entry.id)
             return
           }
           setOpen(!open)
         }}
-        className="p-1.5 rounded-lg transition-all duration-150 cursor-pointer text-sm"
+        className="opacity-0 group-hover:opacity-100 transition-opacity duration-200
+                   p-1.5 rounded-lg text-sm cursor-pointer"
         style={{
           color: 'var(--text-muted)',
           background: 'transparent',
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.background = 'var(--tag-bg-hover)'
-          e.currentTarget.style.color = 'var(--text-secondary)'
+          e.currentTarget.style.color = 'var(--accent)'
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.background = 'transparent'
@@ -267,14 +243,14 @@ function AddToCollectionButton({
             transition={{ duration: 0.12 }}
             className="absolute right-0 bottom-full mb-2 z-50 rounded-xl overflow-hidden min-w-[160px]"
             style={{
-              background: 'var(--bg-card)',
+              background: 'var(--bg-surface)',
               border: '1px solid var(--border-hover)',
-              boxShadow: 'var(--shadow-card-hover)',
+              boxShadow: 'var(--shadow-lg)',
             }}
           >
             <div className="py-1 px-1">
               <div
-                className="px-3 py-1.5 text-xs font-semibold"
+                className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wider"
                 style={{ color: 'var(--text-muted)' }}
               >
                 {t('addToCollection')}
@@ -297,7 +273,7 @@ function AddToCollectionButton({
                       color: alreadyIn ? 'var(--text-muted)' : 'var(--text-primary)',
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = 'var(--bg-card-hover)'
+                      e.currentTarget.style.background = 'var(--bg-hover)'
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.background = 'transparent'
@@ -306,7 +282,7 @@ function AddToCollectionButton({
                   >
                     <span>📁</span>
                     <span className="truncate">{col.name}</span>
-                    {alreadyIn && <span className="text-xs ml-auto">✓</span>}
+                    {alreadyIn && <span className="text-xs ml-auto" style={{ color: 'var(--accent)' }}>✓</span>}
                   </button>
                 )
               })}

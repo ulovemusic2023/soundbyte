@@ -13,11 +13,11 @@ interface TimelineViewProps {
   onAddToCollection: (collectionId: string, entryId: string) => void
 }
 
-const priorityConfig: Record<string, { label: string; dot: string }> = {
-  'paradigm-shift': { label: 'Paradigm Shift', dot: '#FF375F' },
-  high: { label: 'High', dot: '#FF9F0A' },
-  medium: { label: 'Medium', dot: '#30D158' },
-  low: { label: 'Low', dot: '#71717A' },
+const priorityConfig: Record<string, { label: string; dotClass: string }> = {
+  'paradigm-shift': { label: 'PARADIGM SHIFT', dotClass: 'priority-dot-paradigm' },
+  high: { label: 'HIGH', dotClass: 'priority-dot-high' },
+  medium: { label: 'MEDIUM', dotClass: 'priority-dot-medium' },
+  low: { label: 'LOW', dotClass: 'priority-dot-low' },
 }
 
 const radarEmoji: Record<string, string> = {
@@ -27,7 +27,6 @@ const radarEmoji: Record<string, string> = {
 }
 
 export default function TimelineView({ entries, onTagClick, t, collections, onAddToCollection }: TimelineViewProps) {
-  // Group by date
   const grouped = useMemo(() => {
     const groups: { date: string; entries: Entry[] }[] = []
     const dateMap = new Map<string, Entry[]>()
@@ -51,7 +50,9 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
         animate={{ opacity: 1 }}
         className="text-center py-24 px-6"
       >
-        <div className="text-5xl mb-5">🔍</div>
+        <div className="empty-state-icon">
+          🔍
+        </div>
         <p className="text-base font-medium" style={{ color: 'var(--text-secondary)' }}>
           {t('noResults')}
         </p>
@@ -63,7 +64,7 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-6 mb-16">
+    <div className="max-w-4xl mx-auto px-6 mb-16 mt-8">
       <AnimatePresence mode="popLayout">
         {grouped.map((group, gi) => (
           <motion.div
@@ -74,11 +75,11 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
             transition={{ duration: 0.4, delay: gi * 0.05 }}
             className="relative"
           >
-            {/* Date header */}
-            <div className="flex items-center gap-4 mb-4 mt-8 first:mt-0">
+            {/* Date header — sticky */}
+            <div className="flex items-center gap-4 mb-4 mt-8 first:mt-0 timeline-date-label">
               <div
                 className="w-3 h-3 rounded-full shrink-0 relative z-10"
-                style={{ background: 'var(--accent)', boxShadow: '0 0 8px var(--accent)' }}
+                style={{ background: 'var(--accent)', boxShadow: '0 0 12px var(--accent-glow)' }}
               />
               <h3
                 className="text-lg font-bold font-mono"
@@ -87,15 +88,18 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
                 {group.date}
               </h3>
               <span
-                className="text-xs font-mono"
-                style={{ color: 'var(--text-muted)' }}
+                className="text-xs font-mono px-2.5 py-1 rounded-full"
+                style={{ color: 'var(--accent)', background: 'var(--accent-subtle)' }}
               >
                 {group.entries.length} {t('items')}
               </span>
             </div>
 
             {/* Timeline line + entries */}
-            <div className="relative ml-1.5 pl-8 border-l-2" style={{ borderColor: 'var(--border)' }}>
+            <div className="relative ml-1.5 pl-8">
+              {/* Timeline line with gradient fade */}
+              <div className="timeline-line" />
+
               {group.entries.map((entry, i) => {
                 const priority = priorityConfig[entry.priority] ?? priorityConfig.low
                 return (
@@ -108,42 +112,20 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
                   >
                     {/* Dot on timeline */}
                     <div
-                      className="absolute -left-[calc(2rem+5px)] w-2.5 h-2.5 rounded-full
-                                 top-5 z-10"
-                      style={{
-                        background: priority.dot,
-                        border: '2px solid var(--bg-primary)',
-                      }}
+                      className={`absolute -left-[calc(2rem+5px)] top-5 z-10 priority-dot ${priority.dotClass}`}
+                      style={{ border: '2px solid var(--bg-base)' }}
                     />
 
                     {/* Card */}
-                    <div
-                      className="rounded-xl p-5 transition-all duration-200"
-                      style={{
-                        background: 'var(--bg-card)',
-                        border: '1px solid var(--border)',
-                        boxShadow: 'var(--shadow-card)',
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.borderColor = 'var(--border-hover)'
-                        e.currentTarget.style.boxShadow = 'var(--shadow-card-hover)'
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.borderColor = 'var(--border)'
-                        e.currentTarget.style.boxShadow = 'var(--shadow-card)'
-                      }}
-                    >
+                    <div className="card-hover rounded-xl p-5 group">
                       {/* Top row */}
                       <div className="flex items-center justify-between mb-2 gap-2">
                         <div className="flex items-center gap-2 flex-wrap">
                           <span
-                            className="inline-flex items-center gap-1.5 text-xs font-medium"
+                            className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider"
                             style={{ color: 'var(--text-secondary)' }}
                           >
-                            <span
-                              className="w-2 h-2 rounded-full shrink-0"
-                              style={{ background: priority.dot }}
-                            />
+                            <span className={`priority-dot ${priority.dotClass}`} />
                             {priority.label}
                           </span>
                           <span className="text-sm" style={{ color: 'var(--text-muted)' }}>
@@ -151,7 +133,6 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
                           </span>
                         </div>
                         <div className="flex items-center gap-1.5">
-                          {/* Add to collection */}
                           {collections.length > 0 && (
                             <CollectionAddButton
                               entry={entry}
@@ -160,13 +141,15 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
                               t={t}
                             />
                           )}
-                          <ShareButton entry={entry} t={t} />
+                          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <ShareButton entry={entry} t={t} />
+                          </div>
                         </div>
                       </div>
 
                       {/* Title */}
                       <h4
-                        className="text-base font-semibold mb-2 leading-snug"
+                        className="text-base font-semibold mb-2 leading-snug group-hover:!text-[var(--accent)] transition-colors duration-200"
                         style={{ color: 'var(--text-primary)' }}
                       >
                         {entry.title}
@@ -186,20 +169,7 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
                           <button
                             key={tag}
                             onClick={() => onTagClick(tag)}
-                            className="px-2.5 py-1 text-xs rounded-md font-mono font-medium
-                                       transition-all duration-150 cursor-pointer"
-                            style={{
-                              color: 'var(--text-muted)',
-                              background: 'var(--tag-bg)',
-                            }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.background = 'var(--tag-bg-hover)'
-                              e.currentTarget.style.color = 'var(--text-secondary)'
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.background = 'var(--tag-bg)'
-                              e.currentTarget.style.color = 'var(--text-muted)'
-                            }}
+                            className="tag-chip"
                           >
                             {tag}
                           </button>
@@ -209,8 +179,7 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
                             href={entry.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-2.5 py-1 text-xs rounded-md font-medium
-                                       transition-all duration-150"
+                            className="text-xs font-medium px-3 py-1 rounded-full transition-colors duration-200 hover:underline"
                             style={{ color: 'var(--accent)' }}
                           >
                             Open →
@@ -243,11 +212,6 @@ function CollectionAddButton({
 }) {
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation()
-    if (collections.length === 1) {
-      onAddToCollection(collections[0].id, entry.id)
-    }
-    // For multiple collections, we use EntryCard's approach - just add to first
-    // Or could show a picker. For simplicity, just add to first.
     if (collections.length > 0) {
       onAddToCollection(collections[0].id, entry.id)
     }
@@ -256,14 +220,15 @@ function CollectionAddButton({
   return (
     <button
       onClick={handleClick}
-      className="p-1.5 rounded-lg transition-all duration-150 cursor-pointer text-xs"
+      className="opacity-0 group-hover:opacity-100 transition-opacity duration-200
+                 p-1.5 rounded-lg text-xs cursor-pointer"
       style={{
         color: 'var(--text-muted)',
         background: 'transparent',
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.background = 'var(--tag-bg-hover)'
-        e.currentTarget.style.color = 'var(--text-secondary)'
+        e.currentTarget.style.color = 'var(--accent)'
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.background = 'transparent'

@@ -92,14 +92,14 @@ export default function ShareButton({ entry, t }: ShareButtonProps) {
           e.stopPropagation()
           setOpen(!open)
         }}
-        className="p-1.5 rounded-lg transition-all duration-150 cursor-pointer"
+        className="p-1.5 rounded-lg cursor-pointer transition-all duration-200"
         style={{
           color: 'var(--text-muted)',
           background: 'transparent',
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.background = 'var(--tag-bg-hover)'
-          e.currentTarget.style.color = 'var(--text-secondary)'
+          e.currentTarget.style.color = 'var(--accent)'
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.background = 'transparent'
@@ -119,9 +119,9 @@ export default function ShareButton({ entry, t }: ShareButtonProps) {
             transition={{ duration: 0.12 }}
             className="absolute right-0 bottom-full mb-2 z-50 rounded-xl overflow-hidden min-w-[180px]"
             style={{
-              background: 'var(--bg-card)',
+              background: 'var(--bg-surface)',
               border: '1px solid var(--border-hover)',
-              boxShadow: 'var(--shadow-card-hover)',
+              boxShadow: 'var(--shadow-lg)',
             }}
           >
             {menuItems.map((item) => (
@@ -135,7 +135,7 @@ export default function ShareButton({ entry, t }: ShareButtonProps) {
                            transition-colors duration-100 cursor-pointer"
                 style={{ color: 'var(--text-primary)' }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'var(--bg-card-hover)'
+                  e.currentTarget.style.background = 'var(--bg-hover)'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.background = 'transparent'
@@ -160,7 +160,7 @@ export default function ShareButton({ entry, t }: ShareButtonProps) {
             style={{
               background: 'var(--accent)',
               color: '#fff',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+              boxShadow: 'var(--shadow-glow), 0 8px 32px rgba(0,0,0,0.3)',
             }}
           >
             {toast}

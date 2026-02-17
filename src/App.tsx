@@ -87,7 +87,6 @@ function App() {
     [entries]
   )
 
-  // Search results with scores for relevance sorting
   const searchResultsWithScores = useMemo(() => {
     if (!query.trim()) return entries.map((item) => ({ item, score: 1 }))
     return fuse.search(query).map((r) => ({ item: r.item, score: r.score ?? 1 }))
@@ -129,7 +128,6 @@ function App() {
       })
     }
 
-    // Sort
     const effectiveSort =
       sortOption === 'relevance' && !query.trim() ? 'date' : sortOption
 
@@ -150,7 +148,6 @@ function App() {
     return results.map((r) => r.item)
   }, [searchResultsWithScores, radarFilter, priorityFilter, timeFilter, sortOption, query])
 
-  // Tag click-to-filter: set as search query and switch to insights page
   const handleTagClick = useCallback((tag: string) => {
     setQuery(tag)
     setSortOption('relevance')
@@ -161,17 +158,11 @@ function App() {
     return (
       <div
         className="min-h-screen flex items-center justify-center"
-        style={{ background: 'var(--bg-primary)' }}
+        style={{ background: 'var(--bg-base)' }}
       >
         <div className="text-center">
-          <div
-            className="inline-block w-8 h-8 rounded-full animate-spin mb-4"
-            style={{
-              border: '2px solid var(--border)',
-              borderTopColor: 'var(--accent)',
-            }}
-          />
-          <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+          <div className="spinner mx-auto mb-4" />
+          <p className="text-sm font-mono" style={{ color: 'var(--text-secondary)' }}>
             Loading insights...
           </p>
         </div>
@@ -182,7 +173,7 @@ function App() {
   return (
     <div
       className="min-h-screen relative transition-colors duration-300"
-      style={{ background: 'var(--bg-primary)' }}
+      style={{ background: 'var(--bg-base)' }}
     >
       <Header
         entryCount={entries.length}
