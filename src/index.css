@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-primary: #0A0A0B;
-  --color-bg-secondary: #141415;
-  --color-bg-tertiary: #1A1A1C;
-  --color-bg-card: #141415;
-  --color-bg-card-hover: #1A1A1C;
-  --color-border-subtle: #222224;
-  --color-border-medium: #2A2A2D;
-  --color-text-primary: #F5F5F7;
-  --color-text-secondary: #8E8E93;
-  --color-text-tertiary: #636366;
-  --color-accent-cyan: #06B6D4;
-  --color-accent-blue: #3B82F6;
-  --color-accent-cyan-dim: rgba(6, 182, 212, 0.15);
-  --color-accent-blue-dim: rgba(59, 130, 246, 0.1);
-  --color-priority-paradigm: #EF4444;
-  --color-priority-high: #F59E0B;
-  --color-priority-medium: #22C55E;
-  --color-priority-low: #6B7280;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-bg-primary: #FAFAFA;
+  --color-bg-secondary: #F5F5F7;
+  --color-bg-tertiary: #EBEBED;
+  --color-bg-card: #FFFFFF;
+  --color-bg-card-hover: #FBFBFD;
+  --color-border-subtle: #E5E5EA;
+  --color-border-medium: #D2D2D7;
+  --color-text-primary: #1D1D1F;
+  --color-text-secondary: #6E6E73;
+  --color-text-tertiary: #86868B;
+  --color-accent-cyan: #0071E3;
+  --color-accent-blue: #0077ED;
+  --color-accent-cyan-dim: rgba(0, 113, 227, 0.08);
+  --color-accent-blue-dim: rgba(0, 119, 237, 0.06);
+  --color-priority-paradigm: #FF375F;
+  --color-priority-high: #FF9F0A;
+  --color-priority-medium: #30D158;
+  --color-priority-low: #86868B;
+  --color-tag-bg: #F5F5F7;
+  --font-mono: 'SF Mono', 'JetBrains Mono', ui-monospace, monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', ui-sans-serif, system-ui, sans-serif;
 }
 
 * {
@@ -48,7 +49,7 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-bg-primary);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-border-medium);
@@ -56,46 +57,6 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-tertiary);
-}
-
-/* Glowing search input */
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(6, 182, 212, 0.15), 0 0 60px rgba(6, 182, 212, 0.05);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(6, 182, 212, 0.25), 0 0 80px rgba(6, 182, 212, 0.1);
-  }
-}
-
-.search-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
-}
-
-.search-glow:focus-within {
-  animation: none;
-  box-shadow: 0 0 40px rgba(6, 182, 212, 0.3), 0 0 100px rgba(6, 182, 212, 0.15);
-}
-
-/* Grain overlay */
-.grain::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.015;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-/* Radar sweep animation for the logo */
-@keyframes radar-sweep {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.radar-sweep {
-  animation: radar-sweep 4s linear infinite;
 }
 
 /* Reduced motion */

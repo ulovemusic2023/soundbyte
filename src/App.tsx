@@ -10,7 +10,6 @@ import DonationSection from './components/DonationSection'
 import Footer from './components/Footer'
 
 function getBaseUrl() {
-  // In dev, base is '/', in production it's '/soundbyte/'
   return import.meta.env.BASE_URL
 }
 
@@ -22,7 +21,6 @@ function App() {
   const [priorityFilter, setPriorityFilter] = useState<PriorityFilter>('all')
   const [timeFilter, setTimeFilter] = useState<TimeFilter>('all')
 
-  // Fetch data at runtime
   useEffect(() => {
     fetch(`${getBaseUrl()}index.json`)
       .then((res) => res.json())
@@ -36,7 +34,6 @@ function App() {
       })
   }, [])
 
-  // Fuse.js instance
   const fuse = useMemo(
     () =>
       new Fuse(entries, {
@@ -52,27 +49,22 @@ function App() {
     [entries]
   )
 
-  // Apply search
   const searchResults = useMemo(() => {
     if (!query.trim()) return entries
     return fuse.search(query).map((r) => r.item)
   }, [query, entries, fuse])
 
-  // Apply filters
   const filteredEntries = useMemo(() => {
     let results = searchResults
 
-    // Radar filter
     if (radarFilter !== 'all') {
       results = results.filter((e) => e.radar === radarFilter)
     }
 
-    // Priority filter
     if (priorityFilter !== 'all') {
       results = results.filter((e) => e.priority === priorityFilter)
     }
 
-    // Time filter
     if (timeFilter !== 'all') {
       const now = new Date()
       const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
@@ -103,26 +95,17 @@ function App() {
 
   if (loading) {
     return (
-      <div className="grain min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-bg-primary">
         <div className="text-center">
           <div className="inline-block w-8 h-8 border-2 border-accent-cyan/30 border-t-accent-cyan rounded-full animate-spin mb-4" />
-          <p className="font-mono text-sm text-text-secondary">Loading radar data...</p>
+          <p className="text-sm text-text-secondary">Loading insights...</p>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="grain min-h-screen relative">
-      {/* Ambient background glow */}
-      <div
-        className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none -z-10"
-        style={{
-          background:
-            'radial-gradient(ellipse at center, rgba(6,182,212,0.04) 0%, rgba(6,182,212,0.01) 40%, transparent 70%)',
-        }}
-      />
-
+    <div className="min-h-screen relative bg-bg-primary">
       <Header entryCount={entries.length} />
       <SearchBar
         query={query}

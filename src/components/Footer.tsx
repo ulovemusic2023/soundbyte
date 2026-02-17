@@ -7,13 +7,13 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="border-t border-border-subtle py-8 px-4"
+      className="border-t border-border-subtle py-8 px-6"
     >
       <div className="max-w-4xl mx-auto text-center space-y-2">
-        <p className="text-xs text-text-tertiary font-mono">
+        <p className="text-sm text-text-tertiary">
           Built by{' '}
-          <span className="text-text-secondary">uLove Music</span>
-          {' '}•{' '}
+          <span className="text-text-secondary font-medium">uLove Music</span>
+          {' '}·{' '}
           Powered by AI
         </p>
         <p className="text-xs text-text-tertiary">

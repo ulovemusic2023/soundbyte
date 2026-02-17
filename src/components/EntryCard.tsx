@@ -10,27 +10,27 @@ interface EntryCardProps {
 const priorityConfig = {
   'paradigm-shift': {
     label: 'Paradigm Shift',
-    color: 'var(--color-priority-paradigm)',
-    bg: 'rgba(239, 68, 68, 0.1)',
-    border: 'rgba(239, 68, 68, 0.2)',
+    color: '#FF375F',
+    bg: 'rgba(255, 55, 95, 0.08)',
+    border: 'rgba(255, 55, 95, 0.15)',
   },
   high: {
     label: 'High',
-    color: 'var(--color-priority-high)',
-    bg: 'rgba(245, 158, 11, 0.1)',
-    border: 'rgba(245, 158, 11, 0.2)',
+    color: '#FF9F0A',
+    bg: 'rgba(255, 159, 10, 0.08)',
+    border: 'rgba(255, 159, 10, 0.15)',
   },
   medium: {
     label: 'Medium',
-    color: 'var(--color-priority-medium)',
-    bg: 'rgba(34, 197, 94, 0.1)',
-    border: 'rgba(34, 197, 94, 0.2)',
+    color: '#30D158',
+    bg: 'rgba(48, 209, 88, 0.08)',
+    border: 'rgba(48, 209, 88, 0.15)',
   },
   low: {
     label: 'Low',
-    color: 'var(--color-priority-low)',
-    bg: 'rgba(107, 114, 128, 0.1)',
-    border: 'rgba(107, 114, 128, 0.2)',
+    color: '#86868B',
+    bg: 'rgba(134, 134, 139, 0.08)',
+    border: 'rgba(134, 134, 139, 0.15)',
   },
 }
 
@@ -47,31 +47,28 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
   return (
     <motion.article
       layout
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10, scale: 0.98 }}
       transition={{
         duration: 0.4,
-        delay: index * 0.05,
+        delay: index * 0.04,
         ease: [0.22, 1, 0.36, 1],
       }}
       onClick={() => setExpanded(!expanded)}
-      className="group relative bg-bg-card border border-border-subtle rounded-xl p-4 md:p-5
-                 cursor-pointer transition-all duration-300
-                 hover:border-border-medium hover:bg-bg-card-hover"
+      className="group bg-bg-card border border-border-subtle rounded-2xl p-6 sm:p-8
+                 cursor-pointer transition-all duration-200
+                 hover:border-border-medium hover:shadow-lg"
       style={{
-        boxShadow: '0 1px 2px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.1)',
-      }}
-      whileHover={{
-        boxShadow: '0 2px 8px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.15), 0 0 40px rgba(6,182,212,0.03)',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03)',
       }}
     >
       {/* Top row: priority badge + radar + date */}
-      <div className="flex items-center justify-between mb-2.5 gap-2">
+      <div className="flex items-center justify-between mb-3 gap-2">
         <div className="flex items-center gap-2 flex-wrap">
           {/* Priority badge */}
           <span
-            className="inline-flex items-center px-2 py-0.5 rounded-md text-[10px] md:text-xs font-mono font-medium"
+            className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium"
             style={{
               color: priority.color,
               background: priority.bg,
@@ -81,24 +78,24 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
             {priority.label}
           </span>
           {/* Radar */}
-          <span className="text-xs text-text-tertiary">
+          <span className="text-sm text-text-tertiary">
             {radarEmoji[entry.radar]}
           </span>
         </div>
         {/* Date */}
-        <span className="text-[10px] md:text-xs text-text-tertiary font-mono shrink-0">
+        <span className="text-xs text-text-tertiary font-medium shrink-0">
           {entry.date}
         </span>
       </div>
 
       {/* Title */}
-      <h3 className="font-mono text-sm md:text-base font-semibold text-text-primary mb-2 leading-snug
+      <h3 className="text-lg font-semibold text-text-primary mb-3 leading-snug
                       group-hover:text-accent-cyan transition-colors duration-200">
         {entry.title}
       </h3>
 
       {/* Summary */}
-      <p className={`text-xs md:text-sm text-text-secondary leading-relaxed mb-3 ${
+      <p className={`text-base text-text-secondary leading-relaxed mb-4 ${
         expanded ? '' : 'line-clamp-2'
       }`}>
         {entry.summary}
@@ -114,9 +111,9 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="overflow-hidden"
           >
-            <div className="pt-2 pb-1 border-t border-border-subtle mt-1 space-y-2">
+            <div className="pt-3 pb-2 border-t border-border-subtle mt-1 space-y-3">
               {/* Meta info */}
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] md:text-xs text-text-tertiary font-mono">
+              <div className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-text-tertiary">
                 {entry.price && (
                   <span>💰 {entry.price}</span>
                 )}
@@ -134,8 +131,8 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="inline-flex items-center gap-1 text-xs text-accent-cyan hover:text-accent-blue
-                           transition-colors font-mono"
+                className="inline-flex items-center gap-1.5 text-sm text-accent-cyan hover:text-accent-blue
+                           transition-colors font-medium"
               >
                 Open source →
               </a>
@@ -145,13 +142,13 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
       </AnimatePresence>
 
       {/* Tags */}
-      <div className="flex flex-wrap gap-1.5">
+      <div className="flex flex-wrap gap-2">
         {entry.tags.map((tag) => (
           <span
             key={tag}
-            className="px-2 py-0.5 text-[10px] md:text-xs rounded-md font-mono
-                       text-text-tertiary bg-bg-secondary border border-border-subtle
-                       group-hover:border-border-medium transition-colors"
+            className="px-3 py-1 text-xs rounded-lg font-medium
+                       text-text-tertiary bg-tag-bg
+                       transition-colors"
           >
             {tag}
           </span>
