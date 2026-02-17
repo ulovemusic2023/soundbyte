@@ -22,3 +22,4 @@ export interface IndexData {
 export type RadarFilter = 'all' | 'software-dev' | 'ai-infra' | 'music-tech'
 export type PriorityFilter = 'all' | 'paradigm-shift' | 'high' | 'medium'
 export type TimeFilter = 'all' | 'today' | 'week' | 'month'
+export type SortOption = 'date' | 'priority' | 'relevance'

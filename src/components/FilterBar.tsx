@@ -1,13 +1,17 @@
 import { motion } from 'framer-motion'
-import type { RadarFilter, PriorityFilter, TimeFilter } from '../types'
+import { ArrowUpDown } from 'lucide-react'
+import type { RadarFilter, PriorityFilter, TimeFilter, SortOption } from '../types'
 
 interface FilterBarProps {
   radarFilter: RadarFilter
   priorityFilter: PriorityFilter
   timeFilter: TimeFilter
+  sortOption: SortOption
+  hasQuery: boolean
   onRadarChange: (f: RadarFilter) => void
   onPriorityChange: (f: PriorityFilter) => void
   onTimeChange: (f: TimeFilter) => void
+  onSortChange: (s: SortOption) => void
 }
 
 interface PillProps {
@@ -20,14 +24,13 @@ function Pill({ label, active, onClick }: PillProps) {
   return (
     <button
       onClick={onClick}
-      className={`
-        px-4 py-2 rounded-full text-sm font-medium
-        transition-all duration-200 cursor-pointer whitespace-nowrap
-        ${active
-          ? 'text-white bg-accent-cyan shadow-sm'
-          : 'text-text-secondary bg-white border border-border-subtle hover:border-border-medium hover:text-text-primary'
-        }
-      `}
+      className="px-3.5 py-1.5 rounded-full text-sm font-medium
+                 transition-all duration-200 cursor-pointer whitespace-nowrap"
+      style={{
+        background: active ? 'var(--accent)' : 'transparent',
+        color: active ? '#FFFFFF' : 'var(--text-secondary)',
+        border: active ? '1px solid var(--accent)' : '1px solid var(--border)',
+      }}
     >
       {label}
     </button>
@@ -55,24 +58,36 @@ const timeOptions: { value: TimeFilter; label: string }[] = [
   { value: 'month', label: 'This Month' },
 ]
 
+const sortOptions: { value: SortOption; label: string }[] = [
+  { value: 'date', label: 'Newest' },
+  { value: 'priority', label: 'Priority' },
+  { value: 'relevance', label: 'Relevance' },
+]
+
 export default function FilterBar({
   radarFilter,
   priorityFilter,
   timeFilter,
+  sortOption,
+  hasQuery,
   onRadarChange,
   onPriorityChange,
   onTimeChange,
+  onSortChange,
 }: FilterBarProps) {
   return (
     <motion.div
       className="max-w-4xl mx-auto px-6 mb-12 space-y-4"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.6 }}
+      transition={{ duration: 0.3, delay: 0.2 }}
     >
       {/* Radar filters */}
-      <div className="flex flex-wrap gap-3 justify-center items-center">
-        <span className="text-xs text-text-tertiary font-medium uppercase tracking-wider mr-1">
+      <div className="flex flex-wrap gap-2.5 justify-center items-center">
+        <span
+          className="text-xs font-medium uppercase tracking-wider mr-1"
+          style={{ color: 'var(--text-muted)' }}
+        >
           Radar
         </span>
         {radarOptions.map((opt) => (
@@ -85,9 +100,12 @@ export default function FilterBar({
         ))}
       </div>
 
-      {/* Priority + Time filters */}
-      <div className="flex flex-wrap gap-3 justify-center items-center">
-        <span className="text-xs text-text-tertiary font-medium uppercase tracking-wider mr-1">
+      {/* Priority + Time + Sort */}
+      <div className="flex flex-wrap gap-2.5 justify-center items-center">
+        <span
+          className="text-xs font-medium uppercase tracking-wider mr-1"
+          style={{ color: 'var(--text-muted)' }}
+        >
           Priority
         </span>
         {priorityOptions.map((opt) => (
@@ -98,8 +116,18 @@ export default function FilterBar({
             onClick={() => onPriorityChange(opt.value)}
           />
         ))}
-        <span className="text-border-medium mx-1 hidden md:inline">|</span>
-        <span className="text-xs text-text-tertiary font-medium uppercase tracking-wider mr-1">
+
+        <span
+          className="mx-1 hidden md:inline"
+          style={{ color: 'var(--border-hover)' }}
+        >
+          |
+        </span>
+
+        <span
+          className="text-xs font-medium uppercase tracking-wider mr-1"
+          style={{ color: 'var(--text-muted)' }}
+        >
           Time
         </span>
         {timeOptions.map((opt) => (
@@ -110,6 +138,40 @@ export default function FilterBar({
             onClick={() => onTimeChange(opt.value)}
           />
         ))}
+
+        <span
+          className="mx-1 hidden md:inline"
+          style={{ color: 'var(--border-hover)' }}
+        >
+          |
+        </span>
+
+        {/* Sort dropdown */}
+        <div className="flex items-center gap-1.5">
+          <ArrowUpDown size={14} style={{ color: 'var(--text-muted)' }} />
+          <select
+            value={sortOption}
+            onChange={(e) => onSortChange(e.target.value as SortOption)}
+            className="text-sm font-medium rounded-lg px-2.5 py-1.5
+                       outline-none cursor-pointer transition-all duration-200
+                       appearance-none"
+            style={{
+              background: 'var(--bg-secondary)',
+              color: 'var(--text-secondary)',
+              border: '1px solid var(--border)',
+            }}
+          >
+            {sortOptions.map((opt) => (
+              <option
+                key={opt.value}
+                value={opt.value}
+                disabled={opt.value === 'relevance' && !hasQuery}
+              >
+                {opt.label}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
     </motion.div>
   )

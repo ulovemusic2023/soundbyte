@@ -7,17 +7,26 @@ export default function DonationSection() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.6 }}
-      className="max-w-2xl mx-auto px-6 py-16"
+      className="max-w-2xl mx-auto px-6 py-16 sm:py-20 lg:py-24"
     >
-      <div className="text-center bg-white border border-border-subtle rounded-2xl p-8 md:p-10"
+      <div
+        className="text-center rounded-xl p-8 md:p-10"
         style={{
-          boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03)',
+          background: 'var(--bg-card)',
+          border: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-card)',
         }}
       >
-        <h2 className="text-xl md:text-2xl font-bold text-text-primary mb-3">
+        <h2
+          className="text-xl md:text-2xl font-bold mb-3"
+          style={{ color: 'var(--text-primary)' }}
+        >
           ☕ Support SoundByte
         </h2>
-        <p className="text-base text-text-secondary mb-8 leading-relaxed">
+        <p
+          className="text-base mb-8 leading-relaxed"
+          style={{ color: 'var(--text-secondary)' }}
+        >
           SoundByte is free. Your support keeps the radar running.
         </p>
 
@@ -25,21 +34,28 @@ export default function DonationSection() {
           <a
             href="#kofi"
             className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl
-                       bg-accent-cyan text-white
-                       text-sm font-semibold
-                       hover:bg-accent-blue
-                       transition-colors duration-200
-                       shadow-sm"
+                       text-sm font-semibold text-white
+                       transition-colors duration-200 shadow-sm"
+            style={{ background: 'var(--accent)' }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'var(--accent-hover)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'var(--accent)'
+            }}
           >
             🌏 Ko-fi (International)
           </a>
           <a
             href="#ecpay"
             className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl
-                       bg-white border border-border-medium
-                       text-sm font-semibold text-text-primary
-                       hover:bg-bg-secondary hover:border-border-medium
+                       text-sm font-semibold
                        transition-colors duration-200"
+            style={{
+              background: 'var(--bg-secondary)',
+              border: '1px solid var(--border-hover)',
+              color: 'var(--text-primary)',
+            }}
           >
             🇹🇼 綠界 ECPay (台灣)
           </a>

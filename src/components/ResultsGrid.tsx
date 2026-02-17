@@ -4,9 +4,10 @@ import EntryCard from './EntryCard'
 
 interface ResultsGridProps {
   entries: Entry[]
+  onTagClick: (tag: string) => void
 }
 
-export default function ResultsGrid({ entries }: ResultsGridProps) {
+export default function ResultsGrid({ entries, onTagClick }: ResultsGridProps) {
   if (entries.length === 0) {
     return (
       <motion.div
@@ -15,8 +16,18 @@ export default function ResultsGrid({ entries }: ResultsGridProps) {
         className="text-center py-24 px-6"
       >
         <div className="text-5xl mb-5">🔍</div>
-        <p className="text-text-secondary text-base font-medium">No insights found</p>
-        <p className="text-text-tertiary text-sm mt-2">Try adjusting your search or filters</p>
+        <p
+          className="text-base font-medium"
+          style={{ color: 'var(--text-secondary)' }}
+        >
+          No insights found
+        </p>
+        <p
+          className="text-sm mt-2"
+          style={{ color: 'var(--text-muted)' }}
+        >
+          Try adjusting your search or filters
+        </p>
       </motion.div>
     )
   }
@@ -25,11 +36,16 @@ export default function ResultsGrid({ entries }: ResultsGridProps) {
     <div className="max-w-5xl mx-auto px-6 mb-16">
       <motion.div
         layout
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5"
       >
         <AnimatePresence mode="popLayout">
           {entries.map((entry, i) => (
-            <EntryCard key={entry.id} entry={entry} index={i} />
+            <EntryCard
+              key={entry.id}
+              entry={entry}
+              index={i}
+              onTagClick={onTagClick}
+            />
           ))}
         </AnimatePresence>
       </motion.div>

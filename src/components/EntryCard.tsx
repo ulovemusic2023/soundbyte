@@ -5,42 +5,35 @@ import type { Entry } from '../types'
 interface EntryCardProps {
   entry: Entry
   index: number
+  onTagClick: (tag: string) => void
 }
 
 const priorityConfig = {
   'paradigm-shift': {
     label: 'Paradigm Shift',
-    color: '#FF375F',
-    bg: 'rgba(255, 55, 95, 0.08)',
-    border: 'rgba(255, 55, 95, 0.15)',
+    dot: '#FF375F',
   },
   high: {
     label: 'High',
-    color: '#FF9F0A',
-    bg: 'rgba(255, 159, 10, 0.08)',
-    border: 'rgba(255, 159, 10, 0.15)',
+    dot: '#FF9F0A',
   },
   medium: {
     label: 'Medium',
-    color: '#30D158',
-    bg: 'rgba(48, 209, 88, 0.08)',
-    border: 'rgba(48, 209, 88, 0.15)',
+    dot: '#30D158',
   },
   low: {
     label: 'Low',
-    color: '#86868B',
-    bg: 'rgba(134, 134, 139, 0.08)',
-    border: 'rgba(134, 134, 139, 0.15)',
+    dot: '#71717A',
   },
 }
 
-const radarEmoji = {
+const radarEmoji: Record<string, string> = {
   'software-dev': '💻',
   'ai-infra': '🤖',
   'music-tech': '🎵',
 }
 
-export default function EntryCard({ entry, index }: EntryCardProps) {
+export default function EntryCard({ entry, index, onTagClick }: EntryCardProps) {
   const [expanded, setExpanded] = useState(false)
   const priority = priorityConfig[entry.priority]
 
@@ -52,52 +45,63 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
       exit={{ opacity: 0, y: -10, scale: 0.98 }}
       transition={{
         duration: 0.4,
-        delay: index * 0.04,
+        delay: index * 0.05,
         ease: [0.22, 1, 0.36, 1],
       }}
       onClick={() => setExpanded(!expanded)}
-      className="group bg-bg-card border border-border-subtle rounded-2xl p-6 sm:p-8
-                 cursor-pointer transition-all duration-200
-                 hover:border-border-medium hover:shadow-lg"
+      className="group rounded-xl p-5 sm:p-6 cursor-pointer
+                 transition-all duration-200"
       style={{
-        boxShadow: '0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03)',
+        background: 'var(--bg-card)',
+        border: '1px solid var(--border)',
+        boxShadow: 'var(--shadow-card)',
+      }}
+      whileHover={{
+        y: -1,
+        scale: 1.005,
+        transition: { duration: 0.2 },
       }}
     >
-      {/* Top row: priority badge + radar + date */}
+      {/* Top row: priority + radar + date */}
       <div className="flex items-center justify-between mb-3 gap-2">
         <div className="flex items-center gap-2 flex-wrap">
-          {/* Priority badge */}
-          <span
-            className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium"
-            style={{
-              color: priority.color,
-              background: priority.bg,
-              border: `1px solid ${priority.border}`,
-            }}
+          {/* Priority badge — dot + text */}
+          <span className="inline-flex items-center gap-1.5 text-xs font-medium"
+            style={{ color: 'var(--text-secondary)' }}
           >
+            <span
+              className="w-2 h-2 rounded-full shrink-0"
+              style={{ background: priority.dot }}
+            />
             {priority.label}
           </span>
           {/* Radar */}
-          <span className="text-sm text-text-tertiary">
+          <span className="text-sm" style={{ color: 'var(--text-muted)' }}>
             {radarEmoji[entry.radar]}
           </span>
         </div>
         {/* Date */}
-        <span className="text-xs text-text-tertiary font-medium shrink-0">
+        <span
+          className="text-xs font-medium shrink-0"
+          style={{ color: 'var(--text-muted)' }}
+        >
           {entry.date}
         </span>
       </div>
 
       {/* Title */}
-      <h3 className="text-lg font-semibold text-text-primary mb-3 leading-snug
-                      group-hover:text-accent-cyan transition-colors duration-200">
+      <h3
+        className="text-base font-semibold mb-2 leading-snug truncate transition-colors duration-200"
+        style={{ color: 'var(--text-primary)' }}
+      >
         {entry.title}
       </h3>
 
       {/* Summary */}
-      <p className={`text-base text-text-secondary leading-relaxed mb-4 ${
-        expanded ? '' : 'line-clamp-2'
-      }`}>
+      <p
+        className={`text-sm leading-relaxed mb-4 ${expanded ? '' : 'line-clamp-2'}`}
+        style={{ color: 'var(--text-secondary)' }}
+      >
         {entry.summary}
       </p>
 
@@ -111,18 +115,18 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="overflow-hidden"
           >
-            <div className="pt-3 pb-2 border-t border-border-subtle mt-1 space-y-3">
+            <div
+              className="pt-3 pb-2 mt-1 space-y-3"
+              style={{ borderTop: '1px solid var(--border)' }}
+            >
               {/* Meta info */}
-              <div className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-text-tertiary">
-                {entry.price && (
-                  <span>💰 {entry.price}</span>
-                )}
-                {entry.vram && (
-                  <span>🖥️ {entry.vram}</span>
-                )}
-                {entry.license && (
-                  <span>📜 {entry.license}</span>
-                )}
+              <div
+                className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs"
+                style={{ color: 'var(--text-muted)' }}
+              >
+                {entry.price && <span>💰 {entry.price}</span>}
+                {entry.vram && <span>🖥️ {entry.vram}</span>}
+                {entry.license && <span>📜 {entry.license}</span>}
                 <span>⏰ {entry.cycle}</span>
               </div>
               {/* Link */}
@@ -131,8 +135,9 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="inline-flex items-center gap-1.5 text-sm text-accent-cyan hover:text-accent-blue
-                           transition-colors font-medium"
+                className="inline-flex items-center gap-1.5 text-sm font-medium
+                           transition-colors"
+                style={{ color: 'var(--accent)' }}
               >
                 Open source →
               </a>
@@ -141,17 +146,32 @@ export default function EntryCard({ entry, index }: EntryCardProps) {
         )}
       </AnimatePresence>
 
-      {/* Tags */}
+      {/* Tags — clickable */}
       <div className="flex flex-wrap gap-2">
         {entry.tags.map((tag) => (
-          <span
+          <button
             key={tag}
-            className="px-3 py-1 text-xs rounded-lg font-medium
-                       text-text-tertiary bg-tag-bg
-                       transition-colors"
+            onClick={(e) => {
+              e.stopPropagation()
+              onTagClick(tag)
+            }}
+            className="px-2.5 py-1 text-xs rounded-md font-mono font-medium
+                       transition-all duration-150 cursor-pointer"
+            style={{
+              color: 'var(--text-muted)',
+              background: 'var(--tag-bg)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'var(--tag-bg-hover)'
+              e.currentTarget.style.color = 'var(--text-secondary)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'var(--tag-bg)'
+              e.currentTarget.style.color = 'var(--text-muted)'
+            }}
           >
             {tag}
-          </span>
+          </button>
         ))}
       </div>
     </motion.article>
