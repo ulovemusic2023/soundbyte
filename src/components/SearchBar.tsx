@@ -100,15 +100,15 @@ export default function SearchBar({
 
   return (
     <motion.div
-      className="max-w-2xl mx-auto px-6 mb-10 relative"
-      initial={{ opacity: 0, y: 20 }}
+      className="max-w-xl mx-auto px-4 sm:px-6 mb-6 mt-6 relative"
+      initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.3, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="relative">
         {/* Search icon */}
-        <div className="absolute left-5 top-1/2 -translate-y-1/2 pointer-events-none">
-          <Search size={18} style={{ color: focused ? 'var(--accent)' : 'var(--text-muted)' }} />
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none">
+          <Search size={16} style={{ color: focused ? 'var(--accent)' : 'var(--text-muted)' }} />
         </div>
 
         <input
@@ -119,24 +119,24 @@ export default function SearchBar({
           onFocus={() => setFocused(true)}
           onKeyDown={handleKeyDown}
           placeholder={t('searchPlaceholder')}
-          className="search-bar"
+          className="search-bar !h-11 !text-sm !pl-10 !pr-20 !rounded-xl"
           autoComplete="off"
           spellCheck={false}
         />
 
         {/* ⌘K badge + Result count */}
-        <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-2">
+        <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
           {isFiltered ? (
             <motion.span
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="text-xs font-mono font-medium px-3 py-1.5 rounded-full"
+              className="text-[11px] font-mono font-medium px-2 py-1 rounded-md"
               style={{
                 color: 'var(--accent)',
                 background: 'var(--accent-subtle)',
               }}
             >
-              {resultCount} / {totalCount}
+              {resultCount}/{totalCount}
             </motion.span>
           ) : (
             !focused && (
@@ -151,18 +151,18 @@ export default function SearchBar({
         {showDropdown && (
           <motion.div
             ref={dropdownRef}
-            initial={{ opacity: 0, y: -6, scale: 0.98 }}
+            initial={{ opacity: 0, y: -4, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -6, scale: 0.98 }}
-            transition={{ duration: 0.15 }}
-            className="absolute left-6 right-6 mt-2 rounded-xl overflow-hidden z-50"
+            exit={{ opacity: 0, y: -4, scale: 0.98 }}
+            transition={{ duration: 0.12 }}
+            className="absolute left-4 right-4 sm:left-6 sm:right-6 mt-1.5 rounded-xl overflow-hidden z-50"
             style={{
               background: 'var(--bg-surface)',
               border: '1px solid var(--border-hover)',
               boxShadow: 'var(--shadow-lg)',
             }}
           >
-            <div className="py-1.5">
+            <div className="py-1">
               {suggestions.map((s, i) => (
                 <button
                   key={s.tag}
@@ -171,7 +171,7 @@ export default function SearchBar({
                     selectSuggestion(s.tag)
                   }}
                   onMouseEnter={() => setHighlightIndex(i)}
-                  className="w-full text-left px-4 py-2.5 flex items-center justify-between
+                  className="w-full text-left px-4 py-2 flex items-center justify-between
                              transition-colors duration-100 cursor-pointer"
                   style={{
                     background:
@@ -179,9 +179,9 @@ export default function SearchBar({
                     color: 'var(--text-primary)',
                   }}
                 >
-                  <span className="font-mono text-sm">{s.tag}</span>
+                  <span className="font-mono text-[13px]">{s.tag}</span>
                   <span
-                    className="text-xs font-mono"
+                    className="text-[11px] font-mono"
                     style={{ color: 'var(--text-muted)' }}
                   >
                     {s.count}

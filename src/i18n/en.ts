@@ -8,9 +8,9 @@ export const en: Record<TranslationKeys, string> = {
   updatedDaily: 'updated daily',
 
   // Navigation
-  navInsights: '📡 Insights',
-  navTrends: '📊 Trends',
-  navCollections: '📁 Collections',
+  navInsights: 'Insights',
+  navTrends: 'Trends',
+  navCollections: 'Collections',
 
   // Search
   searchPlaceholder: "Search insights... (e.g. 'multi-agent', 'plugin', 'Rust')",

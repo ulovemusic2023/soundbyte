@@ -77,7 +77,7 @@ export default function CollectionManager({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        className="max-w-5xl mx-auto px-6 pb-16 pt-8"
+        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 pb-16 pt-6"
       >
         {/* Back button */}
         <div className="flex items-center gap-4 mb-8">
@@ -107,7 +107,7 @@ export default function CollectionManager({
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
             <AnimatePresence mode="popLayout">
               {collectionEntries.map((entry, i) => {
                 const priority = priorityConfig[entry.priority] ?? priorityConfig.low
@@ -119,7 +119,7 @@ export default function CollectionManager({
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.95 }}
                     transition={{ delay: i * 0.06, duration: 0.35 }}
-                    className="card-hover rounded-xl p-5 sm:p-6 relative group"
+                    className="card-hover rounded-2xl p-6 sm:p-8 relative group"
                   >
                     {/* Remove button */}
                     <button
@@ -205,7 +205,7 @@ export default function CollectionManager({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="max-w-3xl mx-auto px-6 pb-16 pt-8"
+      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-10 pb-16 pt-6"
     >
       <h2
         className="text-2xl md:text-3xl font-bold text-center mb-8 gradient-text"
@@ -296,7 +296,7 @@ export default function CollectionManager({
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ delay: i * 0.04, duration: 0.3 }}
-                className="card-hover rounded-xl p-5 flex items-center justify-between gap-4 cursor-pointer"
+                className="card-hover rounded-2xl p-6 sm:p-7 flex items-center justify-between gap-4 cursor-pointer"
                 onClick={() => setViewingCollectionId(col.id)}
               >
                 <div className="flex-1 min-w-0">

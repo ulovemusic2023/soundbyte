@@ -17,7 +17,7 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
 
   const sortedTags = Object.entries(tagCount)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 15)
+    .slice(0, 12)
 
   const radarCount = {
     'music-tech': entries.filter((e) => e.radar === 'music-tech').length,
@@ -33,75 +33,42 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
   ]
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
-      transition={{ duration: 0.6 }}
-      className="max-w-4xl mx-auto px-6 py-16 sm:py-20 lg:py-24"
+    <section
+      className="mt-8"
+      style={{
+        background: 'var(--bg-surface)',
+        borderTop: '1px solid var(--border)',
+      }}
     >
-      <div className="card-hover rounded-xl p-8 md:p-10">
-        <h2
-          className="text-xl md:text-2xl font-bold mb-8 text-center gradient-text"
-        >
-          {t('insightLandscape')}
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Tag cloud */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 md:py-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          {/* Radar distribution - compact inline bars */}
           <div>
             <h3
-              className="text-xs font-semibold uppercase tracking-wider mb-4"
-              style={{ color: 'var(--text-muted)' }}
-            >
-              {t('topTags')}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {sortedTags.map(([tag, count], i) => {
-                const maxCount = sortedTags[0][1]
-                const opacity = 0.5 + (count / maxCount) * 0.5
-                return (
-                  <motion.span
-                    key={tag}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.03, duration: 0.3 }}
-                    className="tag-chip !cursor-default"
-                    style={{ opacity }}
-                  >
-                    {tag}
-                    <span className="ml-1.5" style={{ color: 'var(--text-muted)' }}>
-                      {count}
-                    </span>
-                  </motion.span>
-                )
-              })}
-            </div>
-          </div>
-
-          {/* Radar distribution bars */}
-          <div>
-            <h3
-              className="text-xs font-semibold uppercase tracking-wider mb-4"
+              className="text-[11px] font-semibold uppercase tracking-wider mb-4"
               style={{ color: 'var(--text-muted)' }}
             >
               {t('radarDistribution')}
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {radarItems.map((item) => (
                 <div key={item.label}>
-                  <div className="flex justify-between text-sm mb-1.5">
+                  <div className="flex justify-between mb-1">
                     <span
-                      className="font-medium"
+                      className="text-[13px] font-medium"
                       style={{ color: 'var(--text-secondary)' }}
                     >
                       {item.label}
                     </span>
-                    <span className="font-mono text-xs" style={{ color: 'var(--text-muted)' }}>{item.count}</span>
+                    <span
+                      className="text-[11px] font-mono"
+                      style={{ color: 'var(--text-muted)' }}
+                    >
+                      {item.count}
+                    </span>
                   </div>
                   <div
-                    className="h-2 rounded-full overflow-hidden"
+                    className="h-1.5 rounded-full overflow-hidden"
                     style={{ background: 'var(--bg-elevated)' }}
                   >
                     <motion.div
@@ -121,8 +88,36 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
               ))}
             </div>
           </div>
+
+          {/* Top tags - compact cloud */}
+          <div className="md:col-span-2">
+            <h3
+              className="text-[11px] font-semibold uppercase tracking-wider mb-4"
+              style={{ color: 'var(--text-muted)' }}
+            >
+              {t('topTags')}
+            </h3>
+            <div className="flex flex-wrap gap-1.5">
+              {sortedTags.map(([tag, count]) => {
+                const maxCount = sortedTags[0][1]
+                const opacity = 0.5 + (count / maxCount) * 0.5
+                return (
+                  <span
+                    key={tag}
+                    className="tag-chip !cursor-default"
+                    style={{ opacity }}
+                  >
+                    {tag}
+                    <span className="ml-1" style={{ color: 'var(--text-muted)' }}>
+                      {count}
+                    </span>
+                  </span>
+                )
+              })}
+            </div>
+          </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   )
 }

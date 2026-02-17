@@ -64,7 +64,7 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-6 mb-16 mt-8">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 mb-16 mt-6">
       <AnimatePresence mode="popLayout">
         {grouped.map((group, gi) => (
           <motion.div
@@ -117,7 +117,7 @@ export default function TimelineView({ entries, onTagClick, t, collections, onAd
                     />
 
                     {/* Card */}
-                    <div className="card-hover rounded-xl p-5 group">
+                    <div className={`card-hover card-priority-${entry.priority === 'paradigm-shift' ? 'paradigm' : entry.priority} rounded-xl p-5 sm:p-6 group`}>
                       {/* Top row */}
                       <div className="flex items-center justify-between mb-2 gap-2">
                         <div className="flex items-center gap-2 flex-wrap">

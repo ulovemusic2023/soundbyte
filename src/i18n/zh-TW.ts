@@ -6,9 +6,9 @@ export const zhTW = {
   updatedDaily: 'updated daily',
 
   // Navigation
-  navInsights: '📡 Insights',
-  navTrends: '📊 Trends',
-  navCollections: '📁 Collections',
+  navInsights: 'Insights',
+  navTrends: 'Trends',
+  navCollections: 'Collections',
 
   // Search
   searchPlaceholder: "搜尋 insights... (e.g. 'multi-agent', 'plugin', 'Rust')",

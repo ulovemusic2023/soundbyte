@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import type { TranslationKeys } from '../i18n/zh-TW'
 
 interface FooterProps {
@@ -7,16 +6,15 @@ interface FooterProps {
 
 export default function Footer({ t }: FooterProps) {
   return (
-    <motion.footer
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="py-10 px-6"
-      style={{ borderTop: '1px solid var(--border)' }}
+    <footer
+      className="py-6 px-4"
+      style={{
+        background: 'var(--bg-surface)',
+        borderTop: '1px solid var(--border)',
+      }}
     >
-      <div className="max-w-4xl mx-auto text-center space-y-3">
-        <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+      <div className="max-w-5xl mx-auto text-center space-y-1">
+        <p className="text-[11px]" style={{ color: 'var(--text-muted)' }}>
           {t('builtBy')}{' '}
           <span
             className="font-medium transition-colors duration-200 cursor-pointer"
@@ -26,13 +24,11 @@ export default function Footer({ t }: FooterProps) {
           >
             uLove Music
           </span>
-          {' '}·{' '}
-          {t('poweredBy')}
         </p>
-        <p className="text-xs font-mono" style={{ color: 'var(--text-muted)' }}>
+        <p className="text-[10px] font-mono" style={{ color: 'var(--text-muted)' }}>
           {t('dataRefreshed')}
         </p>
       </div>
-    </motion.footer>
+    </footer>
   )
 }

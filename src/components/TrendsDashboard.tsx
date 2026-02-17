@@ -79,7 +79,7 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      className="max-w-5xl mx-auto px-6 pb-16 pt-8"
+      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 pb-16 pt-6"
     >
       {/* Title */}
       <motion.h2
@@ -93,7 +93,7 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
 
       {/* Keyword Frequency Chart */}
       <motion.section
-        className="card-hover rounded-xl p-6 md:p-8 mb-8"
+        className="card-hover rounded-2xl p-7 md:p-10 mb-8"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15 }}
@@ -151,7 +151,7 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
 
       {/* Weekly Item Count */}
       <motion.section
-        className="card-hover rounded-xl p-6 md:p-8 mb-8"
+        className="card-hover rounded-2xl p-7 md:p-10 mb-8"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25 }}
@@ -247,7 +247,7 @@ export default function TrendsDashboard({ entries, onTagClick, t }: TrendsDashbo
 
       {/* Hot Tags Ranking */}
       <motion.section
-        className="card-hover rounded-xl p-6 md:p-8"
+        className="card-hover rounded-2xl p-7 md:p-10"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35 }}

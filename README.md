@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# SoundByte
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tech intelligence, distilled.
 
-Currently, two official plugins are available:
+SoundByte is a curated dashboard that aggregates and displays tech insights across three radars: **Music Tech**, **AI Infrastructure**, and **Software Development**. Data is refreshed 6x daily from 30+ sources.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live site:** [ulovemusic2023.github.io/soundbyte](https://ulovemusic2023.github.io/soundbyte/)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Fuzzy search** with autocomplete tag suggestions and `⌘K` shortcut
+- **Multi-axis filtering** by radar, priority level, and time range
+- **Grid & Timeline views** with animated transitions
+- **Trends dashboard** — keyword frequency charts, daily activity, hot tags ranking
+- **Collections** — save and organize entries into custom groups (persisted to localStorage)
+- **Share** — export entries to X, Threads, Facebook, or clipboard
+- **Dark / Light mode** with system-preference-aware toggle
+- **i18n** — Traditional Chinese (zh-TW) and English
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19, TypeScript, Vite 7
+- Tailwind CSS v4
+- Framer Motion (page transitions, staggered entrances, layout animations)
+- Fuse.js (fuzzy search)
+- Lucide React (icons)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Development
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev       # Start dev server
+npm run build     # Type-check + production build
+npm run lint      # ESLint
+npm run preview   # Preview production build locally
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Data
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+All entries are served from `public/index.json` at runtime. See `src/types.ts` for the `Entry` and `IndexData` schema.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+
+Built by [uLove Music](https://github.com/ulovemusic2023).
