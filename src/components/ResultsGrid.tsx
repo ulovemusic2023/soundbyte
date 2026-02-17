@@ -1,13 +1,18 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import type { Entry } from '../types'
+import type { TranslationKeys } from '../i18n/zh-TW'
+import type { Collection } from '../hooks/useCollections'
 import EntryCard from './EntryCard'
 
 interface ResultsGridProps {
   entries: Entry[]
   onTagClick: (tag: string) => void
+  t: (key: TranslationKeys) => string
+  collections: Collection[]
+  onAddToCollection: (collectionId: string, entryId: string) => void
 }
 
-export default function ResultsGrid({ entries, onTagClick }: ResultsGridProps) {
+export default function ResultsGrid({ entries, onTagClick, t, collections, onAddToCollection }: ResultsGridProps) {
   if (entries.length === 0) {
     return (
       <motion.div
@@ -20,13 +25,13 @@ export default function ResultsGrid({ entries, onTagClick }: ResultsGridProps) {
           className="text-base font-medium"
           style={{ color: 'var(--text-secondary)' }}
         >
-          No insights found
+          {t('noResults')}
         </p>
         <p
           className="text-sm mt-2"
           style={{ color: 'var(--text-muted)' }}
         >
-          Try adjusting your search or filters
+          {t('noResultsHint')}
         </p>
       </motion.div>
     )
@@ -45,6 +50,9 @@ export default function ResultsGrid({ entries, onTagClick }: ResultsGridProps) {
               entry={entry}
               index={i}
               onTagClick={onTagClick}
+              t={t}
+              collections={collections}
+              onAddToCollection={onAddToCollection}
             />
           ))}
         </AnimatePresence>

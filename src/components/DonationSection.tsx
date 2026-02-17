@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion'
+import type { TranslationKeys } from '../i18n/zh-TW'
 
-export default function DonationSection() {
+interface DonationSectionProps {
+  t: (key: TranslationKeys) => string
+}
+
+export default function DonationSection({ t }: DonationSectionProps) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -21,13 +26,13 @@ export default function DonationSection() {
           className="text-xl md:text-2xl font-bold mb-3"
           style={{ color: 'var(--text-primary)' }}
         >
-          ☕ Support SoundByte
+          {t('supportTitle')}
         </h2>
         <p
           className="text-base mb-8 leading-relaxed"
           style={{ color: 'var(--text-secondary)' }}
         >
-          SoundByte is free. Your support keeps the radar running.
+          {t('supportDesc')}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -44,7 +49,7 @@ export default function DonationSection() {
               e.currentTarget.style.background = 'var(--accent)'
             }}
           >
-            🌏 Ko-fi (International)
+            {t('kofi')}
           </a>
           <a
             href="#ecpay"
@@ -57,7 +62,7 @@ export default function DonationSection() {
               color: 'var(--text-primary)',
             }}
           >
-            🇹🇼 綠界 ECPay (台灣)
+            {t('ecpay')}
           </a>
         </div>
       </div>

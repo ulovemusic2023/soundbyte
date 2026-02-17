@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion'
+import type { TranslationKeys } from '../i18n/zh-TW'
 
-export default function Footer() {
+interface FooterProps {
+  t: (key: TranslationKeys) => string
+}
+
+export default function Footer({ t }: FooterProps) {
   return (
     <motion.footer
       initial={{ opacity: 0 }}
@@ -12,15 +17,15 @@ export default function Footer() {
     >
       <div className="max-w-4xl mx-auto text-center space-y-2">
         <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
-          Built by{' '}
+          {t('builtBy')}{' '}
           <span className="font-medium" style={{ color: 'var(--text-secondary)' }}>
             uLove Music
           </span>
           {' '}·{' '}
-          Powered by AI
+          {t('poweredBy')}
         </p>
         <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-          Data refreshed 6× daily from 30+ sources
+          {t('dataRefreshed')}
         </p>
       </div>
     </motion.footer>

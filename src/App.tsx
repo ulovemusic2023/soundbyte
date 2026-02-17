@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import Fuse from 'fuse.js'
 import type {
   Entry,
@@ -9,11 +10,16 @@ import type {
   SortOption,
 } from './types'
 import { useTheme } from './hooks/useTheme'
+import { useI18n } from './hooks/useI18n'
 import { useAllTags } from './hooks/useAllTags'
-import Header from './components/Header'
+import { useCollections } from './hooks/useCollections'
+import Header, { type NavPage } from './components/Header'
 import SearchBar from './components/SearchBar'
-import FilterBar from './components/FilterBar'
+import FilterBar, { type ViewMode } from './components/FilterBar'
 import ResultsGrid from './components/ResultsGrid'
+import TimelineView from './components/TimelineView'
+import TrendsDashboard from './components/TrendsDashboard'
+import CollectionManager from './components/CollectionManager'
 import StatsFooter from './components/StatsFooter'
 import DonationSection from './components/DonationSection'
 import Footer from './components/Footer'
@@ -31,6 +37,16 @@ const priorityOrder: Record<string, number> = {
 
 function App() {
   const { theme, toggleTheme } = useTheme()
+  const { lang, toggleLang, t } = useI18n()
+  const {
+    collections,
+    createCollection,
+    renameCollection,
+    deleteCollection,
+    addToCollection,
+    removeFromCollection,
+  } = useCollections()
+
   const [entries, setEntries] = useState<Entry[]>([])
   const [loading, setLoading] = useState(true)
   const [query, setQuery] = useState('')
@@ -38,6 +54,8 @@ function App() {
   const [priorityFilter, setPriorityFilter] = useState<PriorityFilter>('all')
   const [timeFilter, setTimeFilter] = useState<TimeFilter>('all')
   const [sortOption, setSortOption] = useState<SortOption>('date')
+  const [currentPage, setCurrentPage] = useState<NavPage>('insights')
+  const [viewMode, setViewMode] = useState<ViewMode>('grid')
 
   const allTags = useAllTags(entries)
 
@@ -132,10 +150,11 @@ function App() {
     return results.map((r) => r.item)
   }, [searchResultsWithScores, radarFilter, priorityFilter, timeFilter, sortOption, query])
 
-  // Tag click-to-filter: set as search query
+  // Tag click-to-filter: set as search query and switch to insights page
   const handleTagClick = useCallback((tag: string) => {
     setQuery(tag)
     setSortOption('relevance')
+    setCurrentPage('insights')
   }, [])
 
   if (loading) {
@@ -169,33 +188,128 @@ function App() {
         entryCount={entries.length}
         theme={theme}
         onToggleTheme={toggleTheme}
+        lang={lang}
+        onToggleLang={toggleLang}
+        t={t}
+        currentPage={currentPage}
+        onNavigate={setCurrentPage}
       />
-      <SearchBar
-        query={query}
-        onQueryChange={setQuery}
-        resultCount={filteredAndSorted.length}
-        totalCount={entries.length}
-        allTags={allTags}
-        onTagClick={handleTagClick}
-      />
-      <FilterBar
-        radarFilter={radarFilter}
-        priorityFilter={priorityFilter}
-        timeFilter={timeFilter}
-        sortOption={sortOption}
-        hasQuery={query.trim().length > 0}
-        onRadarChange={setRadarFilter}
-        onPriorityChange={setPriorityFilter}
-        onTimeChange={setTimeFilter}
-        onSortChange={setSortOption}
-      />
-      <ResultsGrid
-        entries={filteredAndSorted}
-        onTagClick={handleTagClick}
-      />
-      <StatsFooter entries={entries} />
-      <DonationSection />
-      <Footer />
+
+      <AnimatePresence mode="wait">
+        {currentPage === 'insights' && (
+          <motion.div
+            key="insights"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.25 }}
+          >
+            <SearchBar
+              query={query}
+              onQueryChange={setQuery}
+              resultCount={filteredAndSorted.length}
+              totalCount={entries.length}
+              allTags={allTags}
+              onTagClick={handleTagClick}
+              t={t}
+            />
+            <FilterBar
+              radarFilter={radarFilter}
+              priorityFilter={priorityFilter}
+              timeFilter={timeFilter}
+              sortOption={sortOption}
+              hasQuery={query.trim().length > 0}
+              viewMode={viewMode}
+              onRadarChange={setRadarFilter}
+              onPriorityChange={setPriorityFilter}
+              onTimeChange={setTimeFilter}
+              onSortChange={setSortOption}
+              onViewModeChange={setViewMode}
+              t={t}
+            />
+
+            <AnimatePresence mode="wait">
+              {viewMode === 'grid' ? (
+                <motion.div
+                  key="grid"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <ResultsGrid
+                    entries={filteredAndSorted}
+                    onTagClick={handleTagClick}
+                    t={t}
+                    collections={collections}
+                    onAddToCollection={addToCollection}
+                  />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="timeline"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <TimelineView
+                    entries={filteredAndSorted}
+                    onTagClick={handleTagClick}
+                    t={t}
+                    collections={collections}
+                    onAddToCollection={addToCollection}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            <StatsFooter entries={entries} t={t} />
+            <DonationSection t={t} />
+          </motion.div>
+        )}
+
+        {currentPage === 'trends' && (
+          <motion.div
+            key="trends"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.25 }}
+          >
+            <TrendsDashboard
+              entries={entries}
+              onTagClick={handleTagClick}
+              t={t}
+            />
+            <DonationSection t={t} />
+          </motion.div>
+        )}
+
+        {currentPage === 'collections' && (
+          <motion.div
+            key="collections"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.25 }}
+          >
+            <CollectionManager
+              entries={entries}
+              collections={collections}
+              onCreateCollection={createCollection}
+              onRenameCollection={renameCollection}
+              onDeleteCollection={deleteCollection}
+              onRemoveFromCollection={removeFromCollection}
+              onTagClick={handleTagClick}
+              t={t}
+            />
+            <DonationSection t={t} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <Footer t={t} />
     </div>
   )
 }

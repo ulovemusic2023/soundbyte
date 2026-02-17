@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion'
 import type { Entry } from '../types'
+import type { TranslationKeys } from '../i18n/zh-TW'
 
 interface StatsFooterProps {
   entries: Entry[]
+  t: (key: TranslationKeys) => string
 }
 
-export default function StatsFooter({ entries }: StatsFooterProps) {
+export default function StatsFooter({ entries, t }: StatsFooterProps) {
   const tagCount: Record<string, number> = {}
   entries.forEach((e) => {
     e.tags.forEach((t) => {
@@ -25,9 +27,9 @@ export default function StatsFooter({ entries }: StatsFooterProps) {
 
   const total = entries.length || 1
   const radarItems = [
-    { label: '🎵 Music Tech', count: radarCount['music-tech'], color: '#3B82F6' },
-    { label: '🤖 AI Infra', count: radarCount['ai-infra'], color: '#8B5CF6' },
-    { label: '💻 Software Dev', count: radarCount['software-dev'], color: '#A855F7' },
+    { label: t('musicTech'), count: radarCount['music-tech'], color: '#3B82F6' },
+    { label: t('aiInfra'), count: radarCount['ai-infra'], color: '#8B5CF6' },
+    { label: t('softwareDev'), count: radarCount['software-dev'], color: '#A855F7' },
   ]
 
   return (
@@ -50,7 +52,7 @@ export default function StatsFooter({ entries }: StatsFooterProps) {
           className="text-xl md:text-2xl font-bold mb-8 text-center"
           style={{ color: 'var(--text-primary)' }}
         >
-          📊 Insight Landscape
+          {t('insightLandscape')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -60,7 +62,7 @@ export default function StatsFooter({ entries }: StatsFooterProps) {
               className="text-xs font-semibold uppercase tracking-wider mb-4"
               style={{ color: 'var(--text-muted)' }}
             >
-              Top Tags
+              {t('topTags')}
             </h3>
             <div className="flex flex-wrap gap-2">
               {sortedTags.map(([tag, count], i) => {
@@ -96,7 +98,7 @@ export default function StatsFooter({ entries }: StatsFooterProps) {
               className="text-xs font-semibold uppercase tracking-wider mb-4"
               style={{ color: 'var(--text-muted)' }}
             >
-              Radar Distribution
+              {t('radarDistribution')}
             </h3>
             <div className="space-y-4">
               {radarItems.map((item) => (

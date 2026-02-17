@@ -1,11 +1,17 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { Entry } from '../types'
+import type { TranslationKeys } from '../i18n/zh-TW'
+import type { Collection } from '../hooks/useCollections'
+import ShareButton from './ShareButton'
 
 interface EntryCardProps {
   entry: Entry
   index: number
   onTagClick: (tag: string) => void
+  t: (key: TranslationKeys) => string
+  collections: Collection[]
+  onAddToCollection: (collectionId: string, entryId: string) => void
 }
 
 const priorityConfig = {
@@ -33,7 +39,7 @@ const radarEmoji: Record<string, string> = {
   'music-tech': '🎵',
 }
 
-export default function EntryCard({ entry, index, onTagClick }: EntryCardProps) {
+export default function EntryCard({ entry, index, onTagClick, t, collections, onAddToCollection }: EntryCardProps) {
   const [expanded, setExpanded] = useState(false)
   const priority = priorityConfig[entry.priority]
 
@@ -62,7 +68,7 @@ export default function EntryCard({ entry, index, onTagClick }: EntryCardProps) 
         transition: { duration: 0.2 },
       }}
     >
-      {/* Top row: priority + radar + date */}
+      {/* Top row: priority + radar + actions + date */}
       <div className="flex items-center justify-between mb-3 gap-2">
         <div className="flex items-center gap-2 flex-wrap">
           {/* Priority badge — dot + text */}
@@ -80,13 +86,26 @@ export default function EntryCard({ entry, index, onTagClick }: EntryCardProps) 
             {radarEmoji[entry.radar]}
           </span>
         </div>
-        {/* Date */}
-        <span
-          className="text-xs font-medium shrink-0"
-          style={{ color: 'var(--text-muted)' }}
-        >
-          {entry.date}
-        </span>
+        <div className="flex items-center gap-1.5">
+          {/* Add to collection */}
+          {collections.length > 0 && (
+            <AddToCollectionButton
+              entry={entry}
+              collections={collections}
+              onAddToCollection={onAddToCollection}
+              t={t}
+            />
+          )}
+          {/* Share */}
+          <ShareButton entry={entry} t={t} />
+          {/* Date */}
+          <span
+            className="text-xs font-medium shrink-0 ml-1"
+            style={{ color: 'var(--text-muted)' }}
+          >
+            {entry.date}
+          </span>
+        </div>
       </div>
 
       {/* Title */}
@@ -130,17 +149,19 @@ export default function EntryCard({ entry, index, onTagClick }: EntryCardProps) 
                 <span>⏰ {entry.cycle}</span>
               </div>
               {/* Link */}
-              <a
-                href={entry.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                className="inline-flex items-center gap-1.5 text-sm font-medium
-                           transition-colors"
-                style={{ color: 'var(--accent)' }}
-              >
-                Open source →
-              </a>
+              {entry.url && (
+                <a
+                  href={entry.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium
+                             transition-colors"
+                  style={{ color: 'var(--accent)' }}
+                >
+                  Open source →
+                </a>
+              )}
             </div>
           </motion.div>
         )}
@@ -175,5 +196,124 @@ export default function EntryCard({ entry, index, onTagClick }: EntryCardProps) 
         ))}
       </div>
     </motion.article>
+  )
+}
+
+/* Add to collection dropdown button */
+function AddToCollectionButton({
+  entry,
+  collections,
+  onAddToCollection,
+  t,
+}: {
+  entry: Entry
+  collections: Collection[]
+  onAddToCollection: (collectionId: string, entryId: string) => void
+  t: (key: TranslationKeys) => string
+}) {
+  const [open, setOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setOpen(false)
+      }
+    }
+    if (open) {
+      document.addEventListener('mousedown', handleClick)
+      return () => document.removeEventListener('mousedown', handleClick)
+    }
+  }, [open])
+
+  if (collections.length === 0) return null
+
+  return (
+    <div className="relative" ref={menuRef}>
+      <button
+        onClick={(e) => {
+          e.stopPropagation()
+          // If only one collection, add directly
+          if (collections.length === 1) {
+            onAddToCollection(collections[0].id, entry.id)
+            return
+          }
+          setOpen(!open)
+        }}
+        className="p-1.5 rounded-lg transition-all duration-150 cursor-pointer text-sm"
+        style={{
+          color: 'var(--text-muted)',
+          background: 'transparent',
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.background = 'var(--tag-bg-hover)'
+          e.currentTarget.style.color = 'var(--text-secondary)'
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.background = 'transparent'
+          e.currentTarget.style.color = 'var(--text-muted)'
+        }}
+        title={t('addToCollection')}
+      >
+        +
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: -4 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: -4 }}
+            transition={{ duration: 0.12 }}
+            className="absolute right-0 bottom-full mb-2 z-50 rounded-xl overflow-hidden min-w-[160px]"
+            style={{
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border-hover)',
+              boxShadow: 'var(--shadow-card-hover)',
+            }}
+          >
+            <div className="py-1 px-1">
+              <div
+                className="px-3 py-1.5 text-xs font-semibold"
+                style={{ color: 'var(--text-muted)' }}
+              >
+                {t('addToCollection')}
+              </div>
+              {collections.map((col) => {
+                const alreadyIn = col.entryIds.includes(entry.id)
+                return (
+                  <button
+                    key={col.id}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      if (!alreadyIn) {
+                        onAddToCollection(col.id, entry.id)
+                      }
+                      setOpen(false)
+                    }}
+                    className="w-full text-left px-3 py-2 text-sm rounded-lg
+                               transition-colors duration-100 cursor-pointer flex items-center gap-2"
+                    style={{
+                      color: alreadyIn ? 'var(--text-muted)' : 'var(--text-primary)',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = 'var(--bg-card-hover)'
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = 'transparent'
+                    }}
+                    disabled={alreadyIn}
+                  >
+                    <span>📁</span>
+                    <span className="truncate">{col.name}</span>
+                    {alreadyIn && <span className="text-xs ml-auto">✓</span>}
+                  </button>
+                )
+              })}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   )
 }

@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Search } from 'lucide-react'
+import type { TranslationKeys } from '../i18n/zh-TW'
 
 interface TagSuggestion {
   tag: string
@@ -14,6 +15,7 @@ interface SearchBarProps {
   totalCount: number
   allTags: TagSuggestion[]
   onTagClick: (tag: string) => void
+  t: (key: TranslationKeys) => string
 }
 
 export default function SearchBar({
@@ -23,6 +25,7 @@ export default function SearchBar({
   totalCount,
   allTags,
   onTagClick,
+  t,
 }: SearchBarProps) {
   const [focused, setFocused] = useState(false)
   const [highlightIndex, setHighlightIndex] = useState(-1)
@@ -106,7 +109,7 @@ export default function SearchBar({
           onChange={(e) => onQueryChange(e.target.value)}
           onFocus={() => setFocused(true)}
           onKeyDown={handleKeyDown}
-          placeholder="Search insights... (e.g. 'multi-agent', 'plugin', 'Rust')"
+          placeholder={t('searchPlaceholder')}
           className="w-full h-12 rounded-xl pl-12 pr-24 text-base font-sans outline-none
                      transition-all duration-200"
           style={{
