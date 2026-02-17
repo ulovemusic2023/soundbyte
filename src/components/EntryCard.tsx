@@ -55,10 +55,10 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
         ease: [0.22, 1, 0.36, 1],
       }}
       onClick={() => setExpanded(!expanded)}
-      className="card-hover rounded-xl p-5 sm:p-6 cursor-pointer group"
+      className="card-hover rounded-xl p-6 sm:p-8 cursor-pointer group"
     >
       {/* Top row: priority + radar + actions + date */}
-      <div className="flex items-center justify-between mb-3 gap-2">
+      <div className="flex items-center justify-between mb-4 gap-3">
         <div className="flex items-center gap-2 flex-wrap">
           {/* Priority badge — dot + uppercase text */}
           <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider"
@@ -98,7 +98,7 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
 
       {/* Title */}
       <h3
-        className="text-base font-semibold mb-2 leading-snug truncate transition-colors duration-200
+        className="text-base sm:text-lg font-semibold mb-3 leading-snug transition-colors duration-200
                     group-hover:!text-[var(--accent)]"
         style={{ color: 'var(--text-primary)' }}
       >
@@ -107,47 +107,65 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
 
       {/* Summary */}
       <p
-        className={`text-sm leading-relaxed mb-4 ${expanded ? '' : 'line-clamp-2'}`}
+        className={`text-sm leading-relaxed mb-5 ${expanded ? '' : 'line-clamp-2'}`}
         style={{ color: 'var(--text-secondary)' }}
       >
         {entry.summary}
       </p>
 
       {/* Expanded details */}
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {expanded && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            key="expanded-content"
+            initial={{ opacity: 0, height: 0, marginTop: 0 }}
+            animate={{ 
+              opacity: 1, 
+              height: 'auto', 
+              marginTop: 16,
+              transition: {
+                height: { type: 'spring', stiffness: 300, damping: 30, mass: 0.8 },
+                opacity: { duration: 0.25, delay: 0.1 },
+                marginTop: { duration: 0.2 }
+              }
+            }}
+            exit={{ 
+              opacity: 0, 
+              height: 0, 
+              marginTop: 0,
+              transition: {
+                height: { type: 'spring', stiffness: 400, damping: 35 },
+                opacity: { duration: 0.15 },
+                marginTop: { duration: 0.15 }
+              }
+            }}
             className="overflow-hidden"
           >
             <div
-              className="pt-3 pb-2 mt-1 space-y-3"
+              className="pt-5 pb-3 space-y-4"
               style={{ borderTop: '1px solid var(--border)' }}
             >
               {/* Meta info */}
               <div
-                className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs font-mono"
+                className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-mono"
                 style={{ color: 'var(--text-muted)' }}
               >
-                {entry.price && <span>💰 {entry.price}</span>}
-                {entry.vram && <span>🖥️ {entry.vram}</span>}
-                {entry.license && <span>📜 {entry.license}</span>}
-                <span>⏰ {entry.cycle}</span>
+                {entry.price && <span className="py-1">💰 {entry.price}</span>}
+                {entry.vram && <span className="py-1">🖥️ {entry.vram}</span>}
+                {entry.license && <span className="py-1">📜 {entry.license}</span>}
+                <span className="py-1">⏰ {entry.cycle}</span>
               </div>
               {/* Links */}
-              <div className="flex flex-wrap gap-x-4 gap-y-2">
+              <div className="flex flex-wrap gap-x-5 gap-y-3">
                 {entry.url && (
                   <a
                     href={entry.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center gap-1.5 text-sm font-medium
-                               transition-colors duration-200 hover:underline"
-                    style={{ color: 'var(--accent)' }}
+                    className="inline-flex items-center gap-2 text-sm font-medium py-1.5 px-3 rounded-lg
+                               transition-all duration-200 hover:underline"
+                    style={{ color: 'var(--accent)', background: 'var(--accent-subtle)' }}
                   >
                     🔗 Official →
                   </a>
@@ -158,9 +176,9 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center gap-1.5 text-sm font-medium
-                               transition-colors duration-200 hover:underline"
-                    style={{ color: 'var(--text-secondary)' }}
+                    className="inline-flex items-center gap-2 text-sm font-medium py-1.5 px-3 rounded-lg
+                               transition-all duration-200 hover:underline"
+                    style={{ color: 'var(--text-secondary)', background: 'var(--bg-hover)' }}
                   >
                     📰 {entry.source || 'Source'} →
                   </a>
@@ -172,7 +190,7 @@ export default function EntryCard({ entry, index, onTagClick, t, collections, on
       </AnimatePresence>
 
       {/* Tags — clickable */}
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2.5 mt-1">
         {entry.tags.map((tag) => (
           <button
             key={tag}

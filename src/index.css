@@ -320,9 +320,10 @@ body {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-card);
-  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
-              border-color 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, box-shadow;
 }
 
 .card-hover:hover {
@@ -338,7 +339,7 @@ body {
 .pill {
   display: inline-flex;
   align-items: center;
-  padding: 6px 16px;
+  padding: 8px 18px;
   border-radius: var(--radius-full);
   font-size: 13px;
   font-weight: 500;
@@ -349,6 +350,7 @@ body {
   color: var(--text-secondary);
   background: transparent;
   user-select: none;
+  gap: 6px;
 }
 
 .pill:hover {
@@ -566,7 +568,7 @@ body {
 .tag-chip {
   display: inline-flex;
   align-items: center;
-  padding: 4px 12px;
+  padding: 6px 14px;
   border-radius: var(--radius-full);
   font-size: 12px;
   font-family: var(--font-mono);
@@ -576,11 +578,13 @@ body {
   cursor: pointer;
   transition: var(--transition-fast);
   border: none;
+  line-height: 1.2;
 }
 
 .tag-chip:hover {
   background: var(--tag-bg-hover);
   color: var(--accent);
+  transform: translateY(-1px);
 }
 
 /* ═══════════════════════════════════════════════════════════════════
