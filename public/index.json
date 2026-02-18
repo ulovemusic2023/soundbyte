@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-18T18:10:00+08:00",
+  "updatedAt": "2026-02-18T18:20:00+08:00",
   "entries": [
     {
       "id": "20260218-sw-001",
@@ -2520,6 +2520,198 @@
       "price": null,
       "vram": "依搭配 LLM 而定",
       "license": "MIT"
+    },
+    {
+      "id": "20260218-sw-013",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Moonwell DeFi Hack：Claude Opus 4.6 Vibe-Coded Oracle Bug 造成 $1.78M 損失",
+      "summary": "Moonwell 協議因 Claude Opus 4.6 協作產生的 oracle 程式碼錯誤，將 cbETH 定價為 $1.12（實際 ~$2,200），觸發自動清算機器人造成 $1.78M 壞帳。首個大規模 vibe-coding DeFi 事故，業界呼籲「Proof of Human Review」機制。",
+      "tags": [
+        "vibe coding",
+        "ai-assisted development",
+        "safety",
+        "smart contract",
+        "Proof of Human Review"
+      ],
+      "url": "https://www.cryptotimes.io/2026/02/18/moonwell-loses-1-78m-following-claude-opus-4-6-code-bug/",
+      "source": "CryptoTimes",
+      "sourceUrl": "https://www.cryptotimes.io/2026/02/18/moonwell-loses-1-78m-following-claude-opus-4-6-code-bug/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260218-sw-014",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Codex App Server：開源雙向 JSON-RPC Agent 協議",
+      "summary": "OpenAI 公開 Codex App Server 協議 — JSONL over stdio 雙向 JSON-RPC。三層語意：Item/Turn/Thread。明確拒絕 MCP，因無法處理 streaming diff、approval flow 等複雜 IDE 互動。全部開源。",
+      "tags": [
+        "ai agent",
+        "function calling",
+        "tool use",
+        "agent framework",
+        "Codex App Server protocol"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/opanai-codex-app-server/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/opanai-codex-app-server/",
+      "price": null,
+      "vram": null,
+      "license": "Open Source"
+    },
+    {
+      "id": "20260218-sw-015",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Pragmatic Engineer：How Codex is Built — Harness Engineering 深度解析",
+      "summary": "Gergely Orosz 拆解 OpenAI Codex 團隊架構：CLI vs Web 雙軌並行、harness engineering 機械式規則強制架構一致性（Types→Config→Repo→Service→Runtime→UI 單向依賴）。",
+      "tags": [
+        "architecture",
+        "ai coding",
+        "agentic engineering",
+        "harness engineering"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/how-codex-is-built",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/how-codex-is-built",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260218-sw-016",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "SemiAnalysis：Claude Code 佔 GitHub 4% Commits，年底預估 20%",
+      "summary": "SemiAnalysis 報告揭示 Claude Code 已佔公開 GitHub commits 約 4%，預計年底超過 20%。使用場景擴展至 GTM 團隊。早期採用代理公司生產力達 3-5 倍。",
+      "tags": [
+        "ai coding",
+        "copilot",
+        "ai-assisted development",
+        "agentic engineering"
+      ],
+      "url": "https://databar.ai/blog/article/claude-code-for-gtm-teams-the-2026-guide",
+      "source": "SemiAnalysis / DataBar",
+      "sourceUrl": "https://databar.ai/blog/article/claude-code-for-gtm-teams-the-2026-guide",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260218-sw-017",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "InfoQ：From Prompts to Production — Agentic SDLC Playbook",
+      "summary": "提出 Agentic Software Development Life Cycle (ASDLC)，區分 deterministic 與 agentic 元件。核心 pattern：ReAct Agent、Supervisor、Blackboard、Market-Based。實戰 checklist 導向。",
+      "tags": [
+        "ai agent",
+        "agent framework",
+        "agentic engineering",
+        "architecture",
+        "ASDLC"
+      ],
+      "url": "https://www.infoq.com/articles/prompts-to-production-playbook-for-agentic-development/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/prompts-to-production-playbook-for-agentic-development/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260218-sw-018",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OWASP Top 10 for Agentic Apps：Agent 安全第一份業界標準",
+      "summary": "100+ 專家 peer review 的 AI agent 安全框架（ASI01-ASI10）。關鍵風險：Goal Hijacking、Supply Chain 漏洞、Inter-Agent 通信偽造、Cascading Failures、Rogue Agents。",
+      "tags": [
+        "safety",
+        "zero trust",
+        "ai agent",
+        "guardrails",
+        "red teaming"
+      ],
+      "url": "https://www.startupdefense.io/blog/owasp-top-10-agentic-ai-security-risks-2026",
+      "source": "StartupDefense / OWASP",
+      "sourceUrl": "https://www.startupdefense.io/blog/owasp-top-10-agentic-ai-security-risks-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260218-sw-019",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison：Chartroom + datasette-showboat — Showboat 生態系擴展",
+      "summary": "Chartroom（matplotlib 封裝讓 agent 產圖表）和 datasette-showboat（增量推送至 Datasette）。加上 Rodney，Showboat 生態成形 — agent 不只寫 code 還能展示成果。",
+      "tags": [
+        "ai coding",
+        "ai agent",
+        "Showboat",
+        "developer experience"
+      ],
+      "url": "https://simonwillison.net/2026/Feb/17/chartroom-and-datasette-showboat/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/17/chartroom-and-datasette-showboat/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260218-sw-020",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Ollama v0.15.5：VRAM 自適應 Context Length",
+      "summary": "根據 GPU VRAM 自動調整 context：<24GB→4K、24-48GB→32K、≥48GB→262K。新增 MLX 引擎 GLM-4.7-Flash 支援。",
+      "tags": [
+        "quantization",
+        "local inference",
+        "ai agent"
+      ],
+      "url": "https://github.com/ollama/ollama/releases",
+      "source": "Ollama GitHub",
+      "sourceUrl": "https://github.com/ollama/ollama/releases",
+      "price": null,
+      "vram": null,
+      "license": "Open Source"
+    },
+    {
+      "id": "20260218-sw-021",
+      "radar": "software-dev",
+      "date": "2026-02-18",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Vercel Flags 進入 Public Beta",
+      "summary": "內建 feature flag 服務，支援 targeting/segments、per-environment 設定、A/B testing、毫秒級全球同步。SDK 支援 Next.js/SvelteKit/OpenFeature。",
+      "tags": [
+        "feature flag",
+        "next.js",
+        "developer experience",
+        "canary deployment"
+      ],
+      "url": "https://vercel.com/docs/flags/vercel-flags",
+      "source": "Vercel",
+      "sourceUrl": "https://vercel.com/docs/flags/vercel-flags",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
