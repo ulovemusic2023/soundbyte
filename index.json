@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-18T08:00:00+08:00",
+  "updatedAt": "2026-02-18T08:10:00+08:00",
   "entries": [
     {
       "id": "20260218-mt-001",
@@ -10,7 +10,12 @@
       "priority": "high",
       "title": "Dumumub Orbit — 免費重力粒子合成器",
       "summary": "全新免費 granular synth，以重力模型驅動粒子合成。可放置多個 emitter 和 mass，粒子被重力吸入軌道產生複雜運動。支援 ADSR、頻率與 grain size 調整。支援 AU/VST3/CLAP/Standalone，跨平台（macOS/Windows/Linux）。",
-      "tags": ["synthesizer", "plugin", "free plugin", "granular"],
+      "tags": [
+        "synthesizer",
+        "plugin",
+        "free plugin",
+        "granular"
+      ],
       "url": "https://dumumub.com",
       "source": "Bedroom Producers Blog",
       "sourceUrl": "https://bedroomproducersblog.com/2026/02/17/dumumub-orbit/",
@@ -26,7 +31,12 @@
       "priority": "high",
       "title": "Reecer Synthesizer — Kreuzberg Audio 首款電子音樂合成器（公測）",
       "summary": "柏林 Kreuzberg Audio 首款軟體合成器，專為 DnB/House/Trance/Dubstep/Techno 設計。三振盪器架構、29 種濾波器（含 Moog Ladder、MS-20、Oberheim SEM 模擬）、16-slot 調變矩陣搭配 5 個 LFO、15 種失真算法。公測版免費，提交 preset 被收錄可獲完整版。截止 3/1。",
-      "tags": ["synthesizer", "plugin", "electronic music", "beta"],
+      "tags": [
+        "synthesizer",
+        "plugin",
+        "electronic music",
+        "beta"
+      ],
       "url": "https://kreuzbergaudio.com",
       "source": "Bedroom Producers Blog",
       "sourceUrl": "https://bedroomproducersblog.com/2026/02/17/kreuzberg-audio-reecer/",
@@ -42,7 +52,12 @@
       "priority": "high",
       "title": "Sony 開發 AI 生成音樂版權追蹤技術",
       "summary": "Sony AI 研發兩種方法辨識 AI 生成歌曲中的受版權保護音樂：直接連接 AI 模型提取訓練資料，或將 AI 輸出與現有曲庫比對。尚未商用化，但為詞曲作者索賠開闢新路徑。背景：Sony Music 已聯合起訴 Suno/Udio 大規模侵權。",
-      "tags": ["music ai", "copyright", "music industry", "audio ai"],
+      "tags": [
+        "music ai",
+        "copyright",
+        "music industry",
+        "audio ai"
+      ],
       "url": null,
       "source": "Music Business Worldwide",
       "sourceUrl": "https://www.musicbusinessworldwide.com/sony-group-develops-tech-to-track-original-music-in-ai-generated-songs-report/",
@@ -58,7 +73,13 @@
       "priority": "medium",
       "title": "AAS Multiphonics CV-3 更新 3.1 — 免費 FM 合成擴充",
       "summary": "加拿大 AAS 為模組化合成器 Multiphonics CV-3 推出免費 3.1 更新：新增 FM Core 單運算元模組（4 FM + 6 調變輸入）、Rez 振盪器（相位失真+硬同步+FM）、8 段包絡產生器、頻譜分析儀。同步推出 FM Core 音色包（100 patch，靈感來自 synthwave 與 80s pop）。",
-      "tags": ["synthesizer", "plugin", "FM synthesis", "modular", "update"],
+      "tags": [
+        "synthesizer",
+        "plugin",
+        "FM synthesis",
+        "modular",
+        "update"
+      ],
       "url": "https://www.applied-acoustics.com/multiphonics-cv-3/",
       "source": "Synthanatomy",
       "sourceUrl": "https://synthanatomy.com/2026/02/aas-multiphonics-cv-3-modular-synth-gets-new-synthesis-power-mpe-and-more.html",
@@ -74,7 +95,12 @@
       "priority": "medium",
       "title": "FRCTL SWRL Lite — 免費單旋鈕調變效果器",
       "summary": "結合 6 種調變效果（Drift/Wash/Orbit/Flutter/Pulse/Heat）於單一介面，只用 Amount + Mix 兩個旋鈕控制。零延遲、極低 CPU 佔用、自動增益補償。支援 VST3/AU/CLAP，全平台（macOS/Windows/Linux）。",
-      "tags": ["plugin", "free plugin", "modulation", "audio effect"],
+      "tags": [
+        "plugin",
+        "free plugin",
+        "modulation",
+        "audio effect"
+      ],
       "url": "https://frctl.audio",
       "source": "Bedroom Producers Blog",
       "sourceUrl": "https://bedroomproducersblog.com/2026/02/12/frctl-swrl-lite/",
@@ -2070,6 +2096,110 @@
       "license": "proprietary",
       "source": "LangChain Blog",
       "sourceUrl": null
+    },
+    {
+      "id": "20260218-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Heretic — 全自動 LLM 去審查工具",
+      "summary": "用 directional ablation + Optuna 自動優化參數，無需理解 transformer 內部結構就能解鎖語言模型的安全對齊限制。實測 Gemma-3-12B 去審查後 KL divergence 僅 0.16，幾乎不損害原始模型能力。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "abliteration",
+        "uncensored"
+      ],
+      "url": "https://github.com/p-e-w/heretic",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "~8-12GB (處理 12B 模型)",
+      "license": "待確認"
+    },
+    {
+      "id": "20260218-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "pytgcalls — WebRTC 音訊串流到 Telegram 通話",
+      "summary": "Python 套件，可將音訊透過 WebRTC 串流到 Telegram 群組通話。適合做 AI 語音機器人、即時 TTS 播放、音樂串流等場景。",
+      "tags": [
+        "audio_music_ai",
+        "tts_speech",
+        "telegram",
+        "webrtc"
+      ],
+      "url": "https://github.com/pytgcalls/pytgcalls",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/17/pytgcalls-pytgcalls.html",
+      "price": null,
+      "vram": "0 (CPU only)",
+      "license": "LGPL-3.0"
+    },
+    {
+      "id": "20260218-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "off-grid-mobile — 離線行動裝置 AI 推論",
+      "summary": "在手機上跑 AI 模型完全不需網路。支援離線推論，適合隱私需求高或網路不穩的場景。",
+      "tags": [
+        "llm_inference",
+        "edge_inference",
+        "mobile",
+        "offline"
+      ],
+      "url": "https://github.com/alichherawalla/off-grid-mobile",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/17/alichherawalla-off-grid-mobile.html",
+      "price": null,
+      "vram": "0 (mobile NPU/CPU)",
+      "license": "待確認"
+    },
+    {
+      "id": "20260218-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hitem3D — AI 圖片轉 3D 列印模型",
+      "summary": "HuggingFace Spaces 連續三週 Top 3 的 3D 生成工具。從單張或多視角照片生成 production-ready 3D 模型，特別針對 3D 列印優化。",
+      "tags": [
+        "image_gen",
+        "cv_ocr",
+        "3d_generation",
+        "3d_printing"
+      ],
+      "url": "https://huggingface.co/spaces/Hitem3D",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://www.barchart.com/story/news/170022/hitem3d-emerges-as-leading-ai-tool-for-creating-3d-printable-models-from-images-in-2026",
+      "price": null,
+      "vram": "~6-10GB (估計，需量化)",
+      "license": "待確認"
+    },
+    {
+      "id": "20260218-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Memori — AI Agent 記憶層框架",
+      "summary": "為 AI agent 和 multi-agent 系統提供持久化記憶管理。讓 agent 能跨 session 記住上下文，支援記憶檢索、更新和淘汰。",
+      "tags": [
+        "rag_knowledge",
+        "agent",
+        "memory"
+      ],
+      "url": "https://github.com/GibsonAI/Memori",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/17/GibsonAI-Memori.html",
+      "price": null,
+      "vram": ">24GB (視搭配的 LLM)",
+      "license": "待確認"
     }
   ]
 }
