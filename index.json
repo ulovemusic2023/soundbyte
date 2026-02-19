@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-19T08:10:00+08:00",
+  "updatedAt": "2026-02-19T08:20:00+08:00",
   "entries": [
     {
       "id": "20260219-ai-001",
@@ -2885,6 +2885,254 @@
       "price": "Free",
       "vram": null,
       "license": "Open Source"
+    },
+    {
+      "id": "20260219-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler — ThoughtWorks 軟體開發未來退修會：Risk Tiering + TDD as Prompt Engineering",
+      "summary": "八大主題出爐：Risk Tiering 成為核心工程紀律、TDD 被重新定義為最強 prompt engineering、Supervisory Engineering 中間迴路是管理 AI 開發的新工種。為人類建的實踐與組織結構正在 AI 重量下崩解。",
+      "tags": [
+        "risk tiering",
+        "supervisory engineering",
+        "platform engineering",
+        "cognitive debt",
+        "TDD"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-02-18.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-02-18.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GitHub Agentic Workflows — Technical Preview",
+      "summary": "Markdown 定義 AI agent 工作流透過 gh aw CLI 編譯成 GitHub Actions。預設 read-only + safe outputs、整合 GitHub MCP Server。支援 triage/PR review/CI 故障分析。",
+      "tags": [
+        "agentic workflows",
+        "MCP",
+        "GitHub Actions",
+        "agent framework"
+      ],
+      "url": "https://github.blog/changelog/2026-02-13-github-agentic-workflows-are-now-in-technical-preview/",
+      "source": "GitHub Blog",
+      "sourceUrl": "https://github.blog/changelog/2026-02-13-github-agentic-workflows-are-now-in-technical-preview/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI GPT-5.2 發現全新膠子散射公式 — AI 首次獨立推進理論物理",
+      "summary": "GPT-5.2 在 half-collinear regime 推翻數十年假設，scaffolded 版本 12 小時完成形式化數學證明。結果已擴展到 graviton。",
+      "tags": [
+        "reasoning",
+        "AI-assisted science",
+        "scaling law",
+        "GPT-5.2"
+      ],
+      "url": "https://openai.com/index/new-result-theoretical-physics/",
+      "source": "OpenAI Research",
+      "sourceUrl": "https://openai.com/index/new-result-theoretical-physics/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain: Harness Engineering 讓 Deep Agent 從 Top 30 進到 Top 5",
+      "summary": "只改 harness 不改 model，透過 PreCompletionChecklist 攔截驗證 + Trace Analyzer 自動分析失敗。Terminal Bench 52.8→66.5（+13.7）。",
+      "tags": [
+        "harness engineering",
+        "context engineering",
+        "deep agents",
+        "LangChain"
+      ],
+      "url": "https://blog.langchain.com/improving-deep-agents-with-harness-engineering/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/improving-deep-agents-with-harness-engineering/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 單 PostgreSQL Primary 撐 8 億用戶",
+      "summary": "近 50 read replicas、p99 低雙位數 ms。寫入密集 workload 分流 Cosmos DB。實驗 cascading replication 支援 100+ replicas。過去一年僅一次 SEV-0。",
+      "tags": [
+        "PostgreSQL",
+        "distributed systems",
+        "sharding",
+        "horizontal scaling"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/openai-runs-chatgpt-postgres/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/openai-runs-chatgpt-postgres/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Uber + OpenAI：自適應速率限制取代硬性 Rate Limit",
+      "summary": "Uber GRL 三層架構 8000 萬 req/s，軟控制取代硬上限。OpenAI credit-based waterfall 讓用戶超限後繼續，非同步結算防雙重扣費。",
+      "tags": [
+        "rate limiting",
+        "adaptive infrastructure",
+        "distributed systems"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/uber-openai-rate-limiting/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/uber-openai-rate-limiting/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "K8s Ingress NGINX 三月退役 → Gateway API 遷移",
+      "summary": "Ingress NGINX 停止安全更新，snippet 注入漏洞 + 維護者不足。Gateway API 原生 TCP/UDP/gRPC、角色分離。推薦 Envoy 系，ingress2gateway 自動轉換。",
+      "tags": [
+        "kubernetes",
+        "gateway api",
+        "envoy",
+        "migration"
+      ],
+      "url": "https://www.kubernetes.dev/blog/2026/02/12/sig-architecture-api/",
+      "source": "Kubernetes Blog",
+      "sourceUrl": "https://www.kubernetes.dev/blog/2026/02/12/sig-architecture-api/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pragmatic Summit 錄影 + AI Coding 最新採用數據",
+      "summary": "AI production code 比例上升、onboarding 最強用例。Codex data agent 兩月開發、新人當天 ship production code、30/70 法則。",
+      "tags": [
+        "ai coding",
+        "agentic engineering",
+        "developer experience"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-recordings",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-recordings",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-009",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Context Engineering 大規模實驗：9,649 次測試比較 YAML/MD/JSON/TOON",
+      "summary": "跨 11 模型比較四種格式在 SQL schema（10K 表）表現。Frontier 模型大幅勝開源。Simon Willison 評選為重要參考。",
+      "tags": [
+        "context engineering",
+        "benchmark",
+        "structured data"
+      ],
+      "url": "https://simonwillison.net/tags/ai/",
+      "source": "Simon Willison / Damon McMillan",
+      "sourceUrl": "https://simonwillison.net/tags/ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-010",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Learn MCP Server 架構揭秘",
+      "summary": "Azure 上遠端 MCP Server，C# SDK + 向量庫 RAG。三工具 search/fetch/code_sample。教訓：為 agent workflow 設計工具而非內部 API。",
+      "tags": [
+        "MCP",
+        "model context protocol",
+        "RAG",
+        "developer experience"
+      ],
+      "url": "https://devblogs.microsoft.com/engineering-at-microsoft/how-we-built-the-microsoft-learn-mcp-server/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/engineering-at-microsoft/how-we-built-the-microsoft-learn-mcp-server/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-011",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor Composer 1.5：RL 20x Scaling + Agent 用量增加",
+      "summary": "困難 coding 推理透過 20x RL scaling 大幅改善。個人方案 agent 用量增加。Box 85% 工程師日用。",
+      "tags": [
+        "ai coding",
+        "reinforcement learning",
+        "copilot"
+      ],
+      "url": "https://cursor.com/blog",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-012",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DeepMind: AlphaGenome + AI Co-scientist + EarthAI",
+      "summary": "AlphaGenome 預測癌症突變、AI Co-scientist 多 agent 科學協作、EarthAI 跨模態地理監測。洪水預測覆蓋 150+ 國 20 億人。",
+      "tags": [
+        "multimodal",
+        "multi-agent",
+        "AI-assisted science"
+      ],
+      "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "source": "DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
