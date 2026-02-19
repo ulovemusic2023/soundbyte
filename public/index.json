@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-19T08:20:00+08:00",
+  "updatedAt": "2026-02-19T18:20:00+08:00",
   "entries": [
     {
       "id": "20260219-ai-001",
@@ -3130,6 +3130,200 @@
       "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
       "source": "DeepMind Blog",
       "sourceUrl": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-013",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Teleport 推出 Agentic Identity Framework",
+      "summary": "Teleport 發布全新安全框架，將 AI agent 視為受信任身份而非傳統憑證管理。調查顯示 69% 基礎設施主管認為 AI 採用需大幅改革身份管理，過度授權的 AI 系統安全事件率高達 76%。",
+      "tags": [
+        "zero trust",
+        "ai agent",
+        "agentic",
+        "MCP",
+        "security",
+        "SPIFFE"
+      ],
+      "url": "https://goteleport.com/docs/agentic-identity-framework/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/teleport-secure-ai-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-014",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "HN 熱門：AI 遇上 Solow 生產力悖論",
+      "summary": "NBER 調查近 6,000 位高管，近 90% 企業表示 AI 在過去三年對就業或生產力零影響。高管平均每週只用 AI 1.5 小時。歷史重演 Solow 1987 年觀察。HN 775 點。",
+      "tags": [
+        "ai adoption",
+        "productivity",
+        "Solow paradox",
+        "NBER"
+      ],
+      "url": "https://tech.slashdot.org/story/26/02/18/0419214/thousands-of-ceos-just-admitted-ai-had-no-impact-on-employment-or-productivity",
+      "source": "Hacker News / NBER",
+      "sourceUrl": "https://tech.slashdot.org/story/26/02/18/0419214/thousands-of-ceos-just-admitted-ai-had-no-impact-on-employment-or-productivity",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-015",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "StrongDM Dark Factory：全自動無人 code review 開發模式",
+      "summary": "三名工程師搭配 AI agent 處理完整的程式碼生成、測試和部署，人類只審批最終成果而非逐行 review。系統用 markdown 規格書 + 場景測試架構。瓶頸從寫 code 轉移到描述需求。",
+      "tags": [
+        "ai agent",
+        "agentic engineering",
+        "supervisory programming",
+        "cognitive debt",
+        "Dark Factory"
+      ],
+      "url": "https://natesnewsletter.substack.com/p/the-5-level-framework-that-explains",
+      "source": "Nate's Newsletter",
+      "sourceUrl": "https://natesnewsletter.substack.com/p/the-5-level-framework-that-explains",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-016",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Agoda 開源 API Agent：零程式碼轉換任何 API 為 MCP Server",
+      "summary": "Agoda 推出開源工具，單一 MCP server 即可連接任意內部 REST 或 GraphQL API。自動 schema introspection + DuckDB in-memory SQL 後處理。技術棧：FastMCP + OpenAI Agents SDK。",
+      "tags": [
+        "MCP",
+        "model context protocol",
+        "tool use",
+        "api gateway",
+        "DuckDB",
+        "open source"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/agoda-api-agent/",
+      "source": "InfoQ / Agoda Engineering",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/agoda-api-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-017",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Emergent 達 $100M ARR + 推出行動 App",
+      "summary": "印度 vibe coding 平台 Emergent 上線八個月 ARR 突破 1 億美元，600 萬用戶、15 萬付費客戶。推出行動 App 可語音/文字 prompt 直接建 App 並上架。70% 用戶無程式背景。估值 $300M。",
+      "tags": [
+        "vibe coding",
+        "ai coding",
+        "code generation",
+        "mobile",
+        "startup"
+      ],
+      "url": "https://techcrunch.com/2026/02/17/emergent-hits-100m-arr-eight-months-after-launch-rolls-out-mobile-app/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/17/emergent-hits-100m-arr-eight-months-after-launch-rolls-out-mobile-app/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-018",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ollama Remote AI：雲端大模型 API 服務",
+      "summary": "Ollama 推出雲端託管服務，可透過 API 使用 Mistral-large-4:675b 等超大模型（675B 參數），解決本地硬體限制。標準 HTTP API 端點，支援混合本地/雲端 workflow。",
+      "tags": [
+        "ai agent",
+        "local inference",
+        "cloud API",
+        "Ollama",
+        "Mistral"
+      ],
+      "url": "https://www.devontechnologies.com/blog/202617-ollama-remote-ai-devonthink",
+      "source": "DEVONtechnologies Blog",
+      "sourceUrl": "https://www.devontechnologies.com/blog/202617-ollama-remote-ai-devonthink",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-019",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Chrome 零日漏洞 CVE-2026-2441（CSS UAF）",
+      "summary": "Chrome CSS 字型處理的 use-after-free 漏洞已在野外被利用，CVSS 8.8。攻擊者可透過惡意 HTML 頁面在沙箱內執行任意程式碼。請立即更新至 145.0.7632.75+。",
+      "tags": [
+        "security",
+        "zero-day",
+        "Chrome",
+        "CVE"
+      ],
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-014",
+      "source": "CIS",
+      "sourceUrl": "https://www.cisecurity.org/advisory/a-vulnerability-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-014",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-020",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Local-first AI 成為 2026 新主流架構模式",
+      "summary": "Reddit r/systemdesign 和多個社群熱議：AI 推論從雲端轉向邊緣/本地裝置已是必然趨勢。驅動力包括推論需求波動、資料主權法規、成本控制。",
+      "tags": [
+        "edge runtime",
+        "local inference",
+        "architecture",
+        "data sovereignty"
+      ],
+      "url": "https://cloudai.pt/local-first-ai-in-2026-what-reddit-operators-got-right-and-what-most-teams-still-miss/",
+      "source": "cloudai.pt / Reddit",
+      "sourceUrl": "https://cloudai.pt/local-first-ai-in-2026-what-reddit-operators-got-right-and-what-most-teams-still-miss/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-sw-021",
+      "radar": "software-dev",
+      "date": "2026-02-19",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Simon Willison 部落格開始接受贊助",
+      "summary": "長期獨立維護的 Simon Willison 部落格開始接受贊助（純文字 banner，無 JS/cookie），以支撐離開全職工作後的獨立寫作。承諾不寫業配內容。",
+      "tags": [
+        "developer experience",
+        "independent writing"
+      ],
+      "url": "https://simonwillison.net/2026/Feb/19/sponsorship/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/19/sponsorship/",
       "price": null,
       "vram": null,
       "license": null
