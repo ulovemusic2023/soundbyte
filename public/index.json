@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-18T18:20:00+08:00",
+  "updatedAt": "2026-02-19T08:00:00+08:00",
   "entries": [
     {
       "id": "20260218-sw-001",
@@ -2712,6 +2712,73 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260219-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google Lyria 3 — Gemini App 音樂生成正式上線",
+      "summary": "Google DeepMind 發布 Lyria 3，整合進 Gemini App，可從文字/照片/影片 prompt 生成 30 秒音樂。支援自訂風格、人聲、速度與自動歌詞生成，內建 SynthID 浮水印。18+ 全球用戶可用，支援 8 種語言，同步擴展至 YouTube Dream Track。",
+      "tags": [
+        "music generation",
+        "audio ai",
+        "text to music",
+        "music model",
+        "Google",
+        "DeepMind"
+      ],
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/18/google-adds-music-generation-capabilities-to-the-gemini-app/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Harrison Tape Saturator — 經典類比磁帶飽和 Plugin",
+      "summary": "Harrison Audio 發布磁帶飽和插件，模擬 70 年代 2-track reel-to-reel。7 個控制參數（Fidelity/Speed/Drive/Flutter/Dropouts/Hiss/I-O Gain），增加偶次/奇次諧波。AAX/VST/VST3/AU，定價 （限時 ），14 天免費試用。",
+      "tags": [
+        "plugin",
+        "saturator",
+        "audio effect",
+        "mixing",
+        "tape emulation"
+      ],
+      "url": "https://store.solidstatelogic.com/plug-ins/harrison-tape-saturator",
+      "source": "Mix Online",
+      "sourceUrl": "https://www.mixonline.com/the-wire/introducing-the-harrison-tape-saturator-plug-in-classic-tape-sound-from-the-golden-era-of-recording",
+      "price": " ( intro)",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260219-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ZL Equalizer 2 — 開源 Parametric EQ（Pro-Q 替代）",
+      "summary": "免費開源 parametric EQ，支援 24 頻段、動態/靜態模式、per-band M/S 處理、Collision Detection 與 EQ Matching。多種相位模式，BPB 評測認為搭配 TDR Nova 可涵蓋大部分付費 EQ 場景。",
+      "tags": [
+        "plugin",
+        "eq",
+        "open source audio",
+        "free plugin",
+        "mastering"
+      ],
+      "url": "https://github.com/ZL-Audio/ZLEqualizer",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/18/free-equalizers-2026/",
+      "price": "Free",
+      "vram": null,
+      "license": "Open Source"
     }
   ]
 }
