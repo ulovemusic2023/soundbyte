@@ -1,7 +1,113 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-19T08:00:00+08:00",
+  "updatedAt": "2026-02-19T08:10:00+08:00",
   "entries": [
+    {
+      "id": "20260219-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "WhisperCrabs — 全平台浮動語音轉文字工具",
+      "summary": "Rust 寫的浮動語音轉文字工具，支援本地 whisper.cpp 離線模式及多家 API provider。一鍵錄音自動轉寫到剪貼簿，D-Bus 控制讓 AI agent 直接操作。",
+      "tags": [
+        "whisper",
+        "speech recognition",
+        "asr",
+        "voice-to-text",
+        "rust"
+      ],
+      "url": "https://github.com/adolfousier/whispercrabs",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/18/adolfousier-whisperclip.html",
+      "price": null,
+      "vram": "<2GB (whisper small local)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260219-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VoxPaste — 多 Provider 語音轉剪貼簿 CLI",
+      "summary": "輕量 CLI 語音轉文字工具，支援 Mistral/OpenAI/Groq/Deepgram/OpenRouter。Raw 模式超低延遲，Clean 模式 AI 清理口語雜訊。專為 AI 工作流設計。",
+      "tags": [
+        "speech to text",
+        "whisper",
+        "cli",
+        "voice-to-text"
+      ],
+      "url": "https://github.com/felixbrock/voxpaste",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/18/felixbrock-voxpaste.html",
+      "price": null,
+      "vram": "0 (API-based)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260219-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "T-one — 俄語電話場景串流 ASR Pipeline",
+      "summary": "基於 CTC 架構的俄語即時語音辨識，300ms chunk 串流處理，支援 KenLM beam search。Docker 一行啟動，CPU-only 4 核 8GB RAM 即可運行。",
+      "tags": [
+        "speech recognition",
+        "asr",
+        "streaming",
+        "ctc"
+      ],
+      "url": "https://github.com/voicekit-team/T-one",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/18/voicekit-team-T-one.html",
+      "price": null,
+      "vram": "0 (CPU-only)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260219-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Kimi K2.5 — 1T MoE 開源多模態 Agent 模型",
+      "summary": "Moonshot AI 的 1T MoE（32B active）開源模型，Agent Swarm 可調度 100 子 agent。SWE-Bench 76.8%、AIME 92.5%。需 8x A100 級 GPU。",
+      "tags": [
+        "llm inference",
+        "MoE",
+        "agentic AI",
+        "multimodal"
+      ],
+      "url": "https://huggingface.co/moonshotai",
+      "source": "InfoQ / DigitalOcean",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/kimi-k25-swarm/",
+      "price": null,
+      "vram": "~600GB FP16 (8x A100/H100)",
+      "license": "Modified MIT"
+    },
+    {
+      "id": "20260219-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Supavec — 開源 RAG-as-a-Service 平台",
+      "summary": "Carbon.ai 替代方案，5 分鐘建起 vector search + chat API。支援 PDF/網頁自動 ingest、hybrid search + reranking。基於 Supabase + pgvector。",
+      "tags": [
+        "rag",
+        "vector database",
+        "semantic search",
+        "retrieval augmented generation"
+      ],
+      "url": "https://github.com/supavec/supavec",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/18/supavec-supavec.html",
+      "price": null,
+      "vram": ">24GB (本地 embedding + LLM)",
+      "license": "Open Source"
+    },
     {
       "id": "20260218-sw-001",
       "radar": "software-dev",
