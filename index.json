@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-19T18:20:00+08:00",
+  "updatedAt": "2026-02-20T08:00:00+08:00",
   "entries": [
     {
       "id": "20260219-ai-001",
@@ -3324,6 +3324,90 @@
       "url": "https://simonwillison.net/2026/Feb/19/sponsorship/",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/19/sponsorship/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Sony 開發 AI 音樂版權偵測工具",
+      "summary": "Sony AI 發表技術可分析 AI 生成歌曲中包含多少比例的原始版權音樂，未來可用於 AI 模型訓練的授權談判與版稅分配。",
+      "tags": [
+        "music ai",
+        "copyright",
+        "music industry",
+        "sony"
+      ],
+      "url": null,
+      "source": "Stereogum",
+      "sourceUrl": "https://stereogum.com/2489677/sony-develops-tool-to-identify-copyrighted-music-in-ai-songs-but-hasnt-solved-its-toilet-paper-problem/news",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LatentScore — 文字驅動程序化環境音樂生成器",
+      "summary": "輸入文字描述場景即可即時生成無限不重複的環境音樂串流，完全程序化，無循環。Show HN 新亮相。",
+      "tags": [
+        "music generation",
+        "text to music",
+        "ambient",
+        "procedural audio"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47072930",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47072930",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "sonible puffer:fish — 免費 Saturation Plugin",
+      "summary": "sonible 推出免費 saturation plugin，三種角色（溫暖/不可預測/粗獷），河豚動畫介面。支援 VST/VST3/AU/AAX。",
+      "tags": [
+        "free plugin",
+        "saturation",
+        "sonible",
+        "VST"
+      ],
+      "url": "https://www.sonible.com/pufferfish/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/18/sonible-pufferfish/",
+      "price": "Free",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Klevgrand Parrot — Creative Audio Repeater",
+      "summary": "Klevgrand 新推出的 audio repeater 效果器，可產生不可預測的聲音旅程。支援 macOS/Windows/iPadOS。",
+      "tags": [
+        "plugin",
+        "audio effect",
+        "sound design",
+        "Klevgrand"
+      ],
+      "url": null,
+      "source": "Synthanatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/02/klevgrand-parrot-a-creative-audio-repeater-for-unpredictable-sound-journeys.html",
       "price": null,
       "vram": null,
       "license": null
