@@ -1,7 +1,221 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-20T18:10:00+08:00",
+  "updatedAt": "2026-02-20T18:20:00+08:00",
   "entries": [
+    {
+      "id": "20260220-sw-011",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Google Gemini 3.1 Pro 發布 — ARC-AGI-2 77.1%，1M Context",
+      "summary": "Google 釋出 Gemini 3.1 Pro，ARC-AGI-2 分數達 77.1%（是 3.0 Pro 的兩倍多），1M token context window，強化 agentic workflows 與多步驟執行。首次採用 .1 增量命名，已同步上線 GitHub Copilot、Vertex AI、Gemini CLI。",
+      "tags": [
+        "ai_models",
+        "reasoning",
+        "multimodal",
+        "agentic",
+        "gemini"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "source": "Google AI Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-sw-012",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 實測 Agent 自主性：百萬級 Tool Calls 分析",
+      "summary": "Anthropic 分析近百萬 API tool calls + 150 萬 Claude Code sessions。最長自主運行時間從 25 分鐘倍增至 45+ 分鐘；老手 auto-approve 率達 40%+；Claude 主動暫停尋求澄清的頻率是人類中斷的兩倍。業界首次大規模實證量測 agent autonomy。",
+      "tags": [
+        "ai_agent",
+        "agentic",
+        "tool_use",
+        "evaluation",
+        "claude"
+      ],
+      "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/measuring-agent-autonomy",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-sw-013",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic 禁止訂閱 OAuth 用於第三方 — Wrapper 時代終結",
+      "summary": "Anthropic 更新 ToS，禁止 Free/Pro/Max 訂閱的 OAuth token 用於第三方工具或 Agent SDK。開發者必須改用 API key。影響所有透過消費級帳號轉接 Claude API 的工具，被稱為 wrapper 時代終結。",
+      "tags": [
+        "ai_agent",
+        "security",
+        "api",
+        "anthropic"
+      ],
+      "url": "https://www.sitepoint.com/end-wrapper-era-anthropic-api-terms-saas/",
+      "source": "SitePoint",
+      "sourceUrl": "https://www.sitepoint.com/end-wrapper-era-anthropic-api-terms-saas/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-sw-014",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "StepFun Step 3.5 Flash — 196B MoE 開源，只跑 11B",
+      "summary": "StepFun 釋出 Step 3.5 Flash，196B 參數 sparse MoE 架構但每 token 只活躍 11B。SWE-bench 74.4%，256K context，100-300 tok/s。4-bit 量化可跑在 Mac Studio M4 Max。MIT 授權。",
+      "tags": [
+        "ai_models",
+        "moe",
+        "open_source",
+        "quantization",
+        "stepfun"
+      ],
+      "url": "https://hackernoon.com/a-196b-model-that-runs-like-11b-the-step-35-flash-bet",
+      "source": "HackerNoon",
+      "sourceUrl": "https://hackernoon.com/a-196b-model-that-runs-like-11b-the-step-35-flash-bet",
+      "price": "/usr/bin/zsh.75/.55 per M tokens",
+      "vram": "128GB (4-bit)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260220-sw-015",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Vercel AI SDK 6 — 程式化影片生成 experimental_generateVideo",
+      "summary": "AI SDK 新增 experimental_generateVideo，支援 text-to-video、image-to-video、首尾幀插值。整合 xAI Grok Imagine Video、Google Veo 3.1、Kling、Wan 等模型。Pro/Enterprise 限定。",
+      "tags": [
+        "ai_agent",
+        "multimodal",
+        "video",
+        "vercel",
+        "sdk"
+      ],
+      "url": "https://vercel.com/blog/video-generation-with-ai-gateway",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/video-generation-with-ai-gateway",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-sw-016",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "LangChain Agent Builder 大更新：Chat + 檔案上傳 + Tool Registry",
+      "summary": "Agent Builder 新增 Chat agent（永遠在線存取所有 workspace 工具）、檔案上傳分析、統一 Tool Registry（含 MCP server 支援）。任何對話一鍵轉成可重用 agent。",
+      "tags": [
+        "ai_agent",
+        "tool_use",
+        "mcp",
+        "langchain"
+      ],
+      "url": "https://blog.langchain.com/new-in-agent-builder-all-new-agent-chat-file-uploads-tool-registry/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/new-in-agent-builder-all-new-agent-chat-file-uploads-tool-registry/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-sw-017",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cursor CLI — Plan Mode + Mermaid ASCII 圖表渲染",
+      "summary": "2/18 更新：CLI plan mode 新增持久決策選單，Mermaid code block 直接在終端渲染成 ASCII 圖表（flowchart、sequence、ER 等），Ctrl+O 切換原始碼。",
+      "tags": [
+        "ai_coding",
+        "copilot",
+        "cursor",
+        "cli"
+      ],
+      "url": "https://cursor.com/changelog/cli-feb-18-2026",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog/cli-feb-18-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-sw-018",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "GitHub Copilot × Zed — 正式 GA",
+      "summary": "GitHub Copilot 在 Rust 高效能編輯器 Zed 中正式 GA，支援 Pro/Pro+/Business/Enterprise 訂閱直接登入使用。",
+      "tags": [
+        "ai_coding",
+        "copilot",
+        "zed",
+        "github"
+      ],
+      "url": "https://github.blog/changelog/2026-02-19-github-copilot-support-in-zed-generally-available/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-02-19-github-copilot-support-in-zed-generally-available/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-sw-019",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Latent Space × a16z：Capital-Compute 飛輪與 AI 霸權",
+      "summary": "Martin Casado + Sarah Wang 談 AI 資本-算力飛輪：10B+ 級融資直接換 GPU、數週內產出能力躍進再融資。兩種未來：無限碎片化 vs. 寡頭壟斷。",
+      "tags": [
+        "scaling_law",
+        "ai_models",
+        "venture_capital",
+        "a16z"
+      ],
+      "url": "https://www.latent.space/p/a16z",
+      "source": "Latent Space Podcast",
+      "sourceUrl": "https://www.latent.space/p/a16z",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260220-sw-020",
+      "radar": "software-dev",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "LangChain Deep Agents Memory — 跨 Session 自動學習",
+      "summary": "Agent Builder 的 Memory 基於 Deep Agents 開源框架，自動從使用者回饋更新 instructions 與設定檔，並能建立 topic-specific skills。不需手動 prompt engineering。",
+      "tags": [
+        "ai_agent",
+        "rag",
+        "harness_engineering",
+        "langchain"
+      ],
+      "url": "https://blog.langchain.com/how-to-use-memory-in-agent-builder/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-to-use-memory-in-agent-builder/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260219-ai-001",
       "radar": "ai-infra",
