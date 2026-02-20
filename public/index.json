@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-20T08:10:00+08:00",
+  "updatedAt": "2026-02-20T18:10:00+08:00",
   "entries": [
     {
       "id": "20260219-ai-001",
@@ -3530,7 +3530,12 @@
       "priority": "paradigm-shift",
       "title": "SaaSocalypse：AI Agent 正在摧毀 SaaS 商業模式",
       "summary": "AI agent 帶來的「seat compression」效應正在瓦解 SaaS 按人頭收費的核心模式。MSCI 軟體指數跌 21%，Salesforce 跌 30%、Adobe 跌 27%。分析師追蹤新指標「Agentic Revenue Transition」，預測產業將從 per-seat 轉向 outcome-based 定價。",
-      "tags": ["agentic", "seat compression", "SaaS disruption", "outcome-based pricing"],
+      "tags": [
+        "agentic",
+        "seat compression",
+        "SaaS disruption",
+        "outcome-based pricing"
+      ],
       "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-2-19-the-great-2026-software-shakeout-ai-disruption-triggers-massive-sector-rotation-into-value-and-industrials",
       "source": "Market Minute / ainvest",
       "sourceUrl": "https://markets.financialcontent.com/stocks/article/marketminute-2026-2-19-the-great-2026-software-shakeout-ai-disruption-triggers-massive-sector-rotation-into-value-and-industrials",
@@ -3546,7 +3551,12 @@
       "priority": "paradigm-shift",
       "title": "OpenClaw 創辦人加入 OpenAI — Agent 取代 Chatbot 時代來臨",
       "summary": "Peter Steinberger 帶著 14.5 萬 GitHub stars、200 萬週活用戶的 OpenClaw 開源 agent 框架加入 OpenAI。OpenClaw 將轉為獨立開源基金會。這標誌著業界從 chatbot 到自主 agent 的轉折點。",
-      "tags": ["ai agent", "open source", "multi-agent", "local-first AI"],
+      "tags": [
+        "ai agent",
+        "open source",
+        "multi-agent",
+        "local-first AI"
+      ],
       "url": "https://fortune.com/2026/02/19/openclaw-who-is-peter-steinberger-openai-sam-altman-anthropic-moltbook/",
       "source": "Fortune",
       "sourceUrl": "https://fortune.com/2026/02/19/openclaw-who-is-peter-steinberger-openai-sam-altman-anthropic-moltbook/",
@@ -3562,7 +3572,12 @@
       "priority": "paradigm-shift",
       "title": "Bruce Schneier: Promptware Kill Chain — Prompt Injection 是完整攻擊鏈",
       "summary": "Schneier 在 Lawfare 發表論文，將 prompt injection 重新定義為七階段 kill chain：Initial Access → Privilege Escalation → Recon → Persistence → C2 → Lateral Movement → Actions on Objective。LLM 是「第一個會被社交工程攻擊的技術」。",
-      "tags": ["prompt injection", "security", "guardrails", "kill chain"],
+      "tags": [
+        "prompt injection",
+        "security",
+        "guardrails",
+        "kill chain"
+      ],
       "url": "https://www.lawfaremedia.org/article/the-promptware-kill-chain",
       "source": "Bruce Schneier / Lawfare",
       "sourceUrl": "https://www.lawfaremedia.org/article/the-promptware-kill-chain",
@@ -3578,7 +3593,12 @@
       "priority": "medium",
       "title": "Hugging Face 推出 Community Evals — 去中心化模型評測",
       "summary": "HF 推出 beta 版 Community Evals，讓 benchmark dataset 在 Hub 上自建 leaderboard。使用 Inspect AI 格式的 eval.yaml，結果以 YAML 存在 .eval_results/。初始支援 MMLU-Pro、GPQA、HLE。",
-      "tags": ["benchmark", "evals", "llm evaluation", "Community Evals"],
+      "tags": [
+        "benchmark",
+        "evals",
+        "llm evaluation",
+        "Community Evals"
+      ],
       "url": "https://huggingface.co/blog/community-evals",
       "source": "InfoQ / Hugging Face",
       "sourceUrl": "https://www.infoq.com/news/2026/02/hugging-face-evals/",
@@ -3594,7 +3614,12 @@
       "priority": "medium",
       "title": "GitHub Copilot 正式進駐 Zed Editor",
       "summary": "GitHub 宣布 Copilot 在 Zed（Rust 高效能編輯器）正式 GA。用現有 Copilot Pro/Business/Enterprise 訂閱即可使用。Zed 同時支援 Ollama、agentic editing、multibuffer 等功能。",
-      "tags": ["ai coding", "copilot", "Zed", "ai pair programming"],
+      "tags": [
+        "ai coding",
+        "copilot",
+        "Zed",
+        "ai pair programming"
+      ],
       "url": "https://github.blog/changelog/2026-02-19-github-copilot-support-in-zed-generally-available",
       "source": "GitHub Blog",
       "sourceUrl": "https://github.blog/changelog/2026-02-19-github-copilot-support-in-zed-generally-available",
@@ -3610,7 +3635,13 @@
       "priority": "medium",
       "title": "Amazon Key EventBridge 架構：Onboarding 從 48 小時降到 4 小時",
       "summary": "Amazon Key 用 single bus multi-account pattern 重構 event-driven 架構。中央 EventBridge bus + schema repository + CDK 自動化。2,000 events/sec、99.99% 成功率、p90 延遲 80ms。",
-      "tags": ["event-driven", "EventBridge", "pub/sub", "cdk", "distributed systems"],
+      "tags": [
+        "event-driven",
+        "EventBridge",
+        "pub/sub",
+        "cdk",
+        "distributed systems"
+      ],
       "url": "https://aws.amazon.com/blogs/architecture/mastering-millisecond-latency-and-millions-of-events-the-event-driven-architecture-behind-the-amazon-key-suite/",
       "source": "InfoQ / AWS Blog",
       "sourceUrl": "https://www.infoq.com/news/2026/02/amazon-key-event-driven-platform/",
@@ -3626,7 +3657,12 @@
       "priority": "medium",
       "title": "India AI Impact Summit：Hassabis 預測 AGI 五年內到來",
       "summary": "DeepMind CEO Demis Hassabis 稱 AGI 可能在 2031 年前到來，影響力「10 倍於工業革命、10 倍速」。Google 宣布 $150 億印度 AI 投資（含 Vizag AI hub）。Altman 和 Amodei 同台。",
-      "tags": ["agi", "ai infrastructure", "scaling law", "India AI"],
+      "tags": [
+        "agi",
+        "ai infrastructure",
+        "scaling law",
+        "India AI"
+      ],
       "url": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-collection/",
       "source": "Google Blog / Economic Times",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-collection/",
@@ -3642,7 +3678,11 @@
       "priority": "low",
       "title": "Steve Yegge: The AI Vampire — 新的工作日應該只有 3-4 小時",
       "summary": "Yegge 比喻 AI 如吸血鬼：AI 把簡單工作自動化後，剩下的全是高認知負荷決策，人類一天只能承受 3-4 小時。Martin Fowler 引用並深表認同。",
-      "tags": ["cognitive debt", "ai fatigue", "supervisory programming"],
+      "tags": [
+        "cognitive debt",
+        "ai fatigue",
+        "supervisory programming"
+      ],
       "url": "https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163",
       "source": "Steve Yegge / Medium",
       "sourceUrl": "https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163",
@@ -3658,13 +3698,104 @@
       "priority": "low",
       "title": "Siddhant Khare: AI Fatigue Is Real",
       "summary": "「以前 3 小時的工作現在 45 分鐘就完成。但每一天變得更難。」AI 移除了生產力的天然限速器，唯一剩下的極限是認知耐力。大多數人直到崩潰才知道極限在哪。",
-      "tags": ["cognitive debt", "developer experience", "ai fatigue"],
+      "tags": [
+        "cognitive debt",
+        "developer experience",
+        "ai fatigue"
+      ],
       "url": "https://siddhantkhare.com/writing/ai-fatigue-is-real",
       "source": "Siddhant Khare",
       "sourceUrl": "https://siddhantkhare.com/writing/ai-fatigue-is-real",
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260220-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "karpathy/llm-council — 多 LLM 委員會投票框架",
+      "summary": "Karpathy 的新專案：把多個 LLM 組成「委員會」，每個問題同時丟給 GPT-5.1、Gemini 3.0 Pro、Claude Sonnet 4.5、Grok 4，再互相匿名評分排名，最後由 Chairman LLM 彙整最佳答案。用 OpenRouter API，本地跑 web app。",
+      "tags": [
+        "llm_inference",
+        "local inference",
+        "evaluation",
+        "openrouter"
+      ],
+      "url": "https://github.com/karpathy/llm-council",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/20/karpathy-llm-council.html",
+      "price": null,
+      "vram": "0GB (API-based)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260220-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "getzep/graphiti — AI Agent 即時知識圖譜框架",
+      "summary": "為 AI agent 打造的即時知識圖譜框架。支援 Neo4j/FalkorDB/Kuzu，混合 semantic + keyword + graph traversal 搜尋，bi-temporal 資料模型可追蹤歷史變化。比傳統 GraphRAG 快很多（sub-second latency），還有 MCP server。",
+      "tags": [
+        "knowledge graph",
+        "graphrag",
+        "semantic search",
+        "vector database",
+        "rag"
+      ],
+      "url": "https://github.com/getzep/graphiti",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "~2-4GB (embedding model)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260220-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "morphik-org/morphik-core — 多模態文件搜尋引擎",
+      "summary": "專攻多模態文件搜尋的 AI 工具：用 ColPali 技術理解 PDF/圖片/影片的視覺內容，metadata 自動擷取（bounding box、分類等），整合 Google Suite/Slack/Confluence。可 self-host。",
+      "tags": [
+        "rag",
+        "document parsing",
+        "semantic search",
+        "embedding",
+        "ColPali"
+      ],
+      "url": "https://github.com/morphik-org/morphik-core",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/19/morphik-org-morphik-core.html",
+      "price": null,
+      "vram": "~4-6GB (ColPali model)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260220-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "microsoft/agent-lightning — Agent RL 訓練框架",
+      "summary": "微軟的 agent RL 訓練框架：幾乎不用改 code 就能把任何 AI agent 變成可訓練的。支援 LangChain/AutoGen/CrewAI 等任何框架，內建 RL、Automatic Prompt Optimization、SFT 等算法。騰訊 Youtu-Agent 已驗證到 128 GPU 穩定收斂。",
+      "tags": [
+        "fine-tuning",
+        "rlhf",
+        "alignment",
+        "agent training",
+        "reinforcement learning"
+      ],
+      "url": "https://github.com/microsoft/agent-lightning",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "24GB+ (multi-GPU for RL)",
+      "license": "MIT"
     }
   ]
 }
