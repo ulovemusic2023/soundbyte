@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-20T08:00:00+08:00",
+  "updatedAt": "2026-02-20T08:10:00+08:00",
   "entries": [
     {
       "id": "20260219-ai-001",
@@ -3411,6 +3411,116 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260220-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "TTS-Audio-Suite v4.21.6 — ComfyUI 多引擎 TTS + RVC 整合",
+      "summary": "ComfyUI 多引擎 TTS + Voice Conversion 擴充包。支援 RVC、Qwen3-TTS、CosyVoice3、Step Audio EditX、IndexTTS-2、Chatterbox（23 語言）、F5-TTS、Higgs Audio 2、VibeVoice 等 10+ 引擎。無限文字長度、SRT 時間碼、角色切換、情緒控制。",
+      "tags": [
+        "tts",
+        "voice conversion",
+        "rvc",
+        "comfyui",
+        "f5-tts",
+        "cosyvoice",
+        "chatterbox"
+      ],
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/19/diodiogod-TTS-Audio-Suite.html",
+      "price": null,
+      "vram": "4-9GB (視引擎而定)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260220-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "irelate-ai/voice-chat — 100% 瀏覽器端 AI 語音對話",
+      "summary": "100% 瀏覽器端語音助手，整合 Whisper STT + Silero VAD + WebLLM (Qwen 1.5B) + Supertonic TTS。零 API key、零伺服器、所有資料留在本機。可替換後端 LLM。",
+      "tags": [
+        "tts",
+        "whisper",
+        "webgpu",
+        "local inference",
+        "voice chat"
+      ],
+      "url": "https://github.com/irelate-ai/voice-chat",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/19/irelate-ai-voice-chat.html",
+      "price": null,
+      "vram": "~4GB RAM (WebGPU)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260220-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SmolDocling-OCR-App — 256M 輕量文件 OCR",
+      "summary": "基於 SmolDocling 256M 的文件 OCR 應用。支援表格擷取 (OTSL)、程式碼、LaTeX 公式、圖表數據、章節標題。輸出 DocTags + Markdown，Streamlit 介面。",
+      "tags": [
+        "ocr",
+        "document ai",
+        "table extraction",
+        "streamlit"
+      ],
+      "url": "https://github.com/AIAnytime/SmolDocling-OCR-App",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/19/AIAnytime-SmolDocling-OCR-App.html",
+      "price": null,
+      "vram": "<2GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260220-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Omnilingual ASR — Meta 開源 1600+ 語言語音辨識",
+      "summary": "Meta 開源 1600+ 語言 ASR 系統，78% 語言 CER < 10%。模型家族 300M~7B，支援 zero-shot 新語言。7B LLM-ASR v2 支援無限音訊長度。",
+      "tags": [
+        "asr",
+        "speech recognition",
+        "multilingual",
+        "zero-shot"
+      ],
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/19/facebookresearch-omnilingual-asr.html",
+      "price": null,
+      "vram": "1.2GB (300M) ~ 14GB (7B FP16)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260220-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "exo — 分散式本地 AI 推理叢集",
+      "summary": "把所有裝置組成 AI cluster 跑大模型。Thunderbolt 5 RDMA 延遲降 99%、Tensor Parallelism 2 台 1.8x / 4 台 3.2x 加速。自動裝置發現、拓撲感知切分。Linux 目前僅 CPU。",
+      "tags": [
+        "llm inference",
+        "distributed",
+        "local inference",
+        "tensor parallelism",
+        "rdma"
+      ],
+      "url": "https://github.com/exo-explore/exo",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "取決於模型（叢集共享）",
+      "license": "Apache 2.0"
     }
   ]
 }
