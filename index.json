@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-20T18:20:00+08:00",
+  "updatedAt": "2026-02-21T08:00:00+08:00",
   "entries": [
     {
       "id": "20260220-sw-011",
@@ -4010,6 +4010,153 @@
       "price": null,
       "vram": "24GB+ (multi-GPU for RL)",
       "license": "MIT"
+    },
+    {
+      "id": "20260221-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SoundBreak — 藝人授權的 AI 共寫平台正式上線",
+      "summary": "Better Than Ezra 主唱 Kevin Griffin 與 Soundverse 合作推出 SoundBreak，用戶可跟 Jaren Johnston、Fitz and the Tantrums 等藝人的官方授權 AI 寫歌模型共同創作。重點是寫歌風格而非 voice clone，royalty 透明分配（創作者 50%、AI 藝人 25%、平台 25%）。",
+      "tags": [
+        "music ai",
+        "music generation",
+        "music industry",
+        "songwriting"
+      ],
+      "url": "https://soundbreak.ai",
+      "source": "MusicRow",
+      "sourceUrl": "https://musicrow.com/2026/02/kevin-griffin-launches-ai-music-platform-soundbreak/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno AI — Persona 功能升級 + Chat 音樂創作工具",
+      "summary": "Suno 2/14 更新 Persona 功能，改善跨歌曲人聲一致性。同時上線 chat-based 音樂創作工具，用對話方式 prompt 生成音樂。隱私政策也更新，所有對話與上傳都會用於訓練。⚠️ 未驗證",
+      "tags": [
+        "suno",
+        "music ai",
+        "voice synthesis",
+        "music generation"
+      ],
+      "url": "https://suno.com",
+      "source": "⚠️ YouTube 影片摘要",
+      "sourceUrl": "https://www.youtube.com/watch?v=lckcyb3Src8",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ewan Bristow ANINA — 免費 Spectral Shaping Plugin",
+      "summary": "Florah Lite 進化版，不再需要 Plugdata。最高 1024 band 壓縮 + sidechain + gate，可做 Trackspacer 式頻率空間處理與 sound design。AU/VST3/CLAP 三平台支援。",
+      "tags": [
+        "free plugin",
+        "audio effect",
+        "spectral",
+        "compressor",
+        "sound design"
+      ],
+      "url": "https://github.com/ewanbristow",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/20/ewan-bristow-anina/",
+      "price": "free",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Laureano Studios AURA — 免費 Master Bus 增強 Plugin",
+      "summary": "紐約混音師 Justin Laureano 的 one-knob 工具，DSP 由 Ablaze 操刀。SURGE 控制 spectral EQ 重塑音色平衡，FURY 加 harmonic saturation。適合 master bus、drum bus。",
+      "tags": [
+        "free plugin",
+        "mastering",
+        "saturation",
+        "eq"
+      ],
+      "url": "https://laureanostudios.gumroad.com",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/20/laureano-studios-aura/",
+      "price": "free",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-005",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Eventide Music Mouse 2.0 — 1986 年 Laurie Spiegel 傳奇工具復活",
+      "summary": "Eventide 重新打造 Laurie Spiegel 的 Music Mouse，用滑鼠位置控制和弦、旋律與琶音的智慧樂器。新版加入 MIDI sync、DAW 整合與擴充 preset。",
+      "tags": [
+        "midi",
+        "composition",
+        "music software",
+        "virtual instrument"
+      ],
+      "url": "https://www.eventideaudio.com/software/music-mouse/",
+      "source": "Attack Magazine",
+      "sourceUrl": "https://www.attackmagazine.com/news/eventide-revives-laurie-spiegels-music-mouse-for-modern-daws/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-006",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DAWJunkie Padness 2 Jr — 免費 Pad Synth Plugin",
+      "summary": "免費 pad 合成器，VST/AU/AAX 全格式支援，適合快速疊 ambient pad 層。",
+      "tags": [
+        "free plugin",
+        "synthesizer",
+        "pad"
+      ],
+      "url": null,
+      "source": "KVR Audio",
+      "sourceUrl": "https://www.kvraudio.com/news/dawjunkie-releases-padness-2-jr---free-pad-synth-plugin-vst-au-and-aax-66219",
+      "price": "free",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-007",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hawaii HB2357 — 擬立法禁止串流平台上架 AI 生成音樂",
+      "summary": "夏威夷眾議院提出 HB2357，禁止音樂串流平台在該州上架或散布 AI 生成音樂，違者視為不公平商業行為。2/18 被司法委員會暫緩，但這是美國州層級最直接的 AI 音樂立法嘗試。",
+      "tags": [
+        "music industry",
+        "music ai",
+        "regulation",
+        "streaming"
+      ],
+      "url": null,
+      "source": "Aloha State Daily",
+      "sourceUrl": "https://alohastatedaily.com/2026/02/19/8-hawaii-bills-to-watch-for-arts-and-entertainment/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
