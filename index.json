@@ -1,7 +1,153 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-21T18:00:00+08:00",
+  "updatedAt": "2026-02-21T18:10:00+08:00",
   "entries": [
+    {
+      "id": "20260221-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Promptomatix — Salesforce 自動 Prompt 優化框架",
+      "summary": "Salesforce 出品的自動 prompt 優化框架，基於 DSPy，自動生成合成資料、迭代改善 prompt，支援 human feedback loop。",
+      "tags": [
+        "ai_devtools",
+        "prompt_optimization",
+        "dspy"
+      ],
+      "url": "https://github.com/SalesforceAIResearch/promptomatix",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/21/SalesforceAIResearch-promptomatix.html",
+      "price": null,
+      "vram": "~8-12GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260221-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "agenticSeek — 完全本地的 Manus AI 替代方案",
+      "summary": "完全本地自主 AI agent，瀏覽網頁、寫程式、規劃任務，零雲端依賴。支援 Ollama/LM Studio，建議 14B+ 推理模型。",
+      "tags": [
+        "local_inference",
+        "coding_agent",
+        "self_hosted_llm",
+        "autonomous_agent"
+      ],
+      "url": "https://github.com/Fosowl/agenticSeek",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/20/Fosowl-agenticSeek.html",
+      "price": null,
+      "vram": "~10-14GB (14B Q4)",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260221-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "freemocap — 免費開源動作捕捉系統",
+      "summary": "免費開源動作捕捉，用一般攝影機做到研究級 motion capture。pip 安裝 + GUI 操作，pose estimation + 3D 重建。",
+      "tags": [
+        "pose_estimation",
+        "motion_capture",
+        "computer_vision"
+      ],
+      "url": "https://github.com/freemocap/freemocap",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "~2-4GB",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260221-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "txtai — All-in-one AI 框架 (RAG + Search + Agents)",
+      "summary": "All-in-one AI 框架：semantic search + RAG + LLM orchestration + agents。整合向量索引、知識圖譜、關聯式 DB，支援 llama.cpp，Apache 2.0 授權。",
+      "tags": [
+        "rag",
+        "semantic_search",
+        "embedding",
+        "knowledge_graph",
+        "llm_orchestration"
+      ],
+      "url": "https://github.com/neuml/txtai",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/20/neuml-txtai.html",
+      "price": null,
+      "vram": "~2-8GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260221-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenWhispr — 跨平台桌面語音聽寫 App",
+      "summary": "跨平台桌面語音聽寫 app，本地用 Whisper 或 Parakeet 轉錄。全域快捷鍵控制，自動貼到游標位置，支援自訂詞典。",
+      "tags": [
+        "speech_recognition",
+        "whisper",
+        "asr",
+        "cross_platform"
+      ],
+      "url": "https://github.com/OpenWhispr/openwhispr",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/OpenWhispr/openwhispr",
+      "price": null,
+      "vram": "~1-4GB (local mode)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260221-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "hyprwhspr — Linux 原生系統級語音轉文字",
+      "summary": "Linux 原生 STT，支援 Whisper Turbo-v3 / Parakeet TDT V3 / ONNX-ASR。本地即時轉錄，快捷鍵控制，自動貼上文字。無 GPU 也能跑。",
+      "tags": [
+        "speech_recognition",
+        "whisper",
+        "asr",
+        "linux"
+      ],
+      "url": "https://github.com/goodroot/hyprwhspr",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/21/goodroot-hyprwhspr.html",
+      "price": null,
+      "vram": "~1-4GB",
+      "license": null
+    },
+    {
+      "id": "20260221-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "alexandria-audiobook — 多角色 AI 有聲書生成器",
+      "summary": "把任何書/小說轉成多角色 AI 有聲書。內建 Qwen3-TTS 引擎，支援 voice cloning、per-line 語氣控制、LoRA 自訂聲音訓練，匯出 MP3 或 Audacity 多軌。",
+      "tags": [
+        "tts_speech",
+        "voice_cloning",
+        "audio_music_ai",
+        "qwen3-tts"
+      ],
+      "url": "https://github.com/Finrandojin/alexandria-audiobook",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/Finrandojin/alexandria-audiobook",
+      "price": null,
+      "vram": "~6-8GB (Qwen3-TTS)",
+      "license": null
+    },
     {
       "id": "20260221-mt-001",
       "radar": "music-tech",
