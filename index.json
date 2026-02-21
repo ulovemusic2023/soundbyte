@@ -1,7 +1,193 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-21T08:00:00+08:00",
+  "updatedAt": "2026-02-21T08:20:00+08:00",
   "entries": [
+    {
+      "id": "20260221-sw-009",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Agile Manifesto 的 AI 危機 — Intent Design 取代 Sprint Planning？",
+      "summary": "Capgemini 的 Steve Jones 認為 AI agent 幾小時就能建 app，挑戰以人為核心的 Agile 宣言。提出 architecture as scaffolding with guardrails，用 Intent Design 取代傳統 sprint planning。",
+      "tags": [
+        "agentic_engineering",
+        "ai_agent",
+        "architecture",
+        "Intent Design"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/ai-agile-manifesto-debate/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/ai-agile-manifesto-debate/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "JDK 26 RC1 — HTTP/3 + Structured Concurrency 第六預覽",
+      "summary": "10 個 JEPs，含 Structured Concurrency (JEP 525)、Lazy Constants、Vector API 第 11 次 incubator。正式版預計 2026/3/17。",
+      "tags": [
+        "new_languages",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/java-26-so-far/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/java-26-so-far/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 投 $7.5M 給 UK AI Alignment Project",
+      "summary": "資金注入 UK AISI 獨立 alignment 研究，首輪資助 60 個項目橫跨 8 國。研究涵蓋計算複雜度、博弈論、認知科學、密碼學。Anthropic、Microsoft、AWS 也有出資。",
+      "tags": [
+        "alignment",
+        "safety",
+        "ai_models"
+      ],
+      "url": "https://openai.com/index/advancing-independent-research-ai-alignment/",
+      "source": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/index/advancing-independent-research-ai-alignment/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 2.5 推出 Marketplace — Agent Plugin 生態系",
+      "summary": "Cursor 開放 plugin marketplace，支援 MCP servers、skills、subagents、rules、hooks。Stripe、Vercel、Supabase、Figma、AWS 等已有 partner plugins。AI coding assistant 進化成可擴展平台。",
+      "tags": [
+        "ai_coding",
+        "mcp",
+        "ai_agent",
+        "tool_use"
+      ],
+      "url": "https://cursor.com/blog/marketplace",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/marketplace",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Chrome 144 正式 ship Temporal API",
+      "summary": "JavaScript 終於有不可變、time zone-safe 的日期時間 API。Temporal.PlainDate、ZonedDateTime、nanosecond 精度，ES2026 Stage 3。Firefox 139 已支援，Safari 尚未。",
+      "tags": [
+        "typescript",
+        "frontend_dx",
+        "new_languages",
+        "Temporal API"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/chrome-temporal-date-api/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/chrome-temporal-date-api/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Stack Overflow × Cloudflare 推 pay-per-crawl 模式",
+      "summary": "用 HTTP 402 Payment Required 回應特定 bot，讓內容發布者控制 AI 爬蟲付費存取。WAF rules 分類 bot，實現內容貨幣化。Web 經濟 vs AI 訓練資料的新戰場。",
+      "tags": [
+        "architecture",
+        "edge_function",
+        "pay-per-crawl"
+      ],
+      "url": "https://stackoverflow.blog/2026/02/19/stack-overflow-cloudflare-pay-per-crawl/",
+      "source": "Stack Overflow Blog",
+      "sourceUrl": "https://stackoverflow.blog/2026/02/19/stack-overflow-cloudflare-pay-per-crawl/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Frontier — 企業級 Agent 部署平台",
+      "summary": "OpenAI 發布 Frontier 企業 AI agent 平台，主打 shared business context、identity governance、open standards 整合。定位 agent 為 AI coworker，不需換掉現有系統。對標 Anthropic Claude Coworker。",
+      "tags": [
+        "ai_agent",
+        "agentic",
+        "agent_framework",
+        "Frontier platform"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/openai-frontier-agent-platform/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/openai-frontier-agent-platform/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "ggml/llama.cpp 團隊正式加入 Hugging Face",
+      "summary": "Georgi Gerganov 帶著 ggml.ai 全隊加入 HF，llama.cpp 保持完全開源和社群自治。目標是跟 Transformers library 無縫整合、one-click 模型相容、全面提升 local inference 體驗。",
+      "tags": [
+        "local-first AI",
+        "quantization",
+        "ai_models",
+        "open_source"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/discussions/19759",
+      "source": "ggml.ai / Hugging Face",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/discussions/19759",
+      "price": null,
+      "vram": null,
+      "license": "MIT"
+    },
+    {
+      "id": "20260221-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Code Mode — 用 ~1,000 tokens 操控整個 API",
+      "summary": "Cloudflare 推出 Code Mode for Workers AI，透過 MCP server 讓 LLM agent 只需 search() + execute() 兩個 tool 就能操作 2,500+ API endpoints。Agent 寫 TypeScript 在隔離 V8 sandbox 執行，重新定義 agent-API 互動效率。",
+      "tags": [
+        "mcp",
+        "tool_use",
+        "ai_agent",
+        "edge_function",
+        "Code Mode"
+      ],
+      "url": "https://blog.cloudflare.com/code-mode-mcp/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/code-mode-mcp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260220-sw-011",
       "radar": "software-dev",
@@ -4166,7 +4352,13 @@
       "priority": "high",
       "title": "Qwen3-TTS — 阿里 10 語言 TTS + 3 秒 Voice Clone",
       "summary": "Qwen 團隊釋出 Qwen3-TTS 系列（0.6B/1.7B），支援 10 種語言、3 秒快速 voice clone、streaming 生成延遲低至 97ms。自然語言指令控制語氣和情感，Apache 2.0 開源。",
-      "tags": ["tts_speech", "voice_cloning", "multilingual", "streaming", "qwen"],
+      "tags": [
+        "tts_speech",
+        "voice_cloning",
+        "multilingual",
+        "streaming",
+        "qwen"
+      ],
       "url": "https://github.com/QwenLM/Qwen3-TTS",
       "source": "MAGI//ARCHIVE + GitHub",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/20/QwenLM-Qwen3-TTS.html",
@@ -4182,7 +4374,12 @@
       "priority": "high",
       "title": "Spark-TTS — 0.5B LLM-Based TTS + Zero-Shot Voice Clone",
       "summary": "基於 Qwen2.5 的單流 TTS，0.5B 超輕量，支援中英雙語 zero-shot voice clone。RTF 0.07（4 並發），不需要額外 flow matching 模型。",
-      "tags": ["tts_speech", "voice_cloning", "zero_shot", "llm_based"],
+      "tags": [
+        "tts_speech",
+        "voice_cloning",
+        "zero_shot",
+        "llm_based"
+      ],
       "url": "https://github.com/SparkAudio/Spark-TTS",
       "source": "MAGI//ARCHIVE + GitHub",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/20/SparkAudio-Spark-TTS.html",
@@ -4198,7 +4395,12 @@
       "priority": "high",
       "title": "MeloTTS — CPU 即時推理多語言 TTS（MIT 授權）",
       "summary": "MIT + MyShell 開源的多語言 TTS，⭐7.2k。CPU 即可跑即時推理，支援英/中/日/韓/法/西 6 語，中文 speaker 支援中英混合。",
-      "tags": ["tts_speech", "multilingual", "cpu_inference", "lightweight"],
+      "tags": [
+        "tts_speech",
+        "multilingual",
+        "cpu_inference",
+        "lightweight"
+      ],
       "url": "https://github.com/myshell-ai/MeloTTS",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/20/myshell-ai-MeloTTS.html",
@@ -4214,7 +4416,12 @@
       "priority": "high",
       "title": "AirLLM — 405B Llama3.1 on 8GB VRAM",
       "summary": "逐層從硬碟載入 GPU 的推理庫，讓 405B 模型在 8GB VRAM 上運行。支援 4-bit/8-bit 壓縮 3x 加速。速度慢但能跑超大模型。",
-      "tags": ["llm_inference", "quantization", "local_inference", "memory_optimization"],
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "local_inference",
+        "memory_optimization"
+      ],
       "url": "https://github.com/lyogavin/airllm",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/20/lyogavin-airllm.html",
@@ -4230,7 +4437,12 @@
       "priority": "high",
       "title": "ggml.ai 加入 Hugging Face — Local Inference 生態里程碑",
       "summary": "llama.cpp 創造者 Georgi Gerganov 宣佈 ggml.ai 正式加入 Hugging Face，確保 GGML/llama.cpp 生態長期資源與開發。所有項目維持開源和技術獨立。",
-      "tags": ["llm_inference", "gguf", "local_ai", "ecosystem"],
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "local_ai",
+        "ecosystem"
+      ],
       "url": "https://github.com/ggml-org/llama.cpp/discussions/19759",
       "source": "GitHub Discussions + Adafruit Blog",
       "sourceUrl": "https://blog.adafruit.com/2026/02/20/open-source-ai-ggml-joins-hugging-face-llama-cpp-stays-open-local-ais-long-term-home/",
@@ -4246,7 +4458,12 @@
       "priority": "medium",
       "title": "roboflow/trackers — 模組化多目標追蹤框架",
       "summary": "乾淨的多目標追蹤實作（ByteTrack/SORT/OC-SORT/BoT-SORT），CLI 一行指令跑影片追蹤，Python API 可插入任何偵測模型。Apache 2.0。",
-      "tags": ["object_detection", "tracking", "cv_ocr", "modular"],
+      "tags": [
+        "object_detection",
+        "tracking",
+        "cv_ocr",
+        "modular"
+      ],
       "url": "https://github.com/roboflow/trackers",
       "source": "GitHub Trending",
       "sourceUrl": "https://github.com/trending?since=daily",
@@ -4262,7 +4479,12 @@
       "priority": "low",
       "title": "NVIDIA CUTLASS 4.4.0 — CUDA 高效能矩陣乘法模板",
       "summary": "NVIDIA CUTLASS 更新至 4.4.0，加入 Python DSL 支援 GEMM 操作。面向 datacenter GPU 的 kernel 開發工具。",
-      "tags": ["infra_runtime", "cuda", "deep_learning", "nvidia"],
+      "tags": [
+        "infra_runtime",
+        "cuda",
+        "deep_learning",
+        "nvidia"
+      ],
       "url": "https://github.com/NVIDIA/cutlass",
       "source": "Web Search",
       "sourceUrl": "https://github.com/NVIDIA/cutlass",
