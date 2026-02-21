@@ -1,7 +1,137 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-21T08:20:00+08:00",
+  "updatedAt": "2026-02-21T18:00:00+08:00",
   "entries": [
+    {
+      "id": "20260221-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenVINO AI Tools — Audacity 免費 AI 插件套件",
+      "summary": "Muse Group 為 Audacity 3.7.4+ 推出 OpenVINO AI Tools，包含降噪、音樂分軌（stems separation）、Whisper 語音轉文字、音訊超解析度、音樂生成等功能。降噪效果被比擬 Adobe Premiere 等級，完全免費。",
+      "tags": [
+        "ai_audio",
+        "whisper",
+        "stems_separation",
+        "audacity",
+        "free_plugin"
+      ],
+      "url": "https://www.musehub.com/plugin/openvino-ai-tools",
+      "source": "MuseHub",
+      "sourceUrl": "https://www.musehub.com/plugin/openvino-ai-tools",
+      "price": "free",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Just 4 Noise 完成 $1M 募資 — AI Sample 生成器",
+      "summary": "柏林新創 Just 4 Noise 關閉 100 萬美元融資，主打 prompt-based AI one-shot sample 生成，模型標榜倫理訓練、免版稅。用戶包含 Pan-Pot、Jamie XX，合作方有 Native Instruments、UJAM。終身買斷 €99。",
+      "tags": [
+        "ai_audio",
+        "audio_generation",
+        "sample_generator",
+        "funding"
+      ],
+      "url": "https://www.just4noise.com",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/02/20/just-4-noise-funding/",
+      "price": "€99 lifetime",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Nomad Factory Blue Tubes v4 — 19 款經典類比效果器翻新",
+      "summary": "Nomad Factory 推出 Blue Tubes v4，全面重製 19 款 vintage 風格插件，涵蓋 EQ、壓縮、調變、飽和、Delay、立體聲成像。新增可縮放向量介面、64-bit 相容、改良類比建模。",
+      "tags": [
+        "audio_effects",
+        "plugin",
+        "vintage",
+        "eq",
+        "compressor",
+        "delay"
+      ],
+      "url": "https://www.nomadfactory.com/products/blue-tubes-v4/",
+      "source": "Pro Sound Web",
+      "sourceUrl": "https://www.prosoundweb.com/nomad-factory-releases-blue-tubes-v4-plugin-suite/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Softube Flow Mixing Suite — 78 款插件訂閱制套裝",
+      "summary": "Softube 推出 Flow Mixing Suite，包含 78 款插件（EQ、壓縮、Channel Strip、Reverb、Delay、吉他 Amp 等），核心是 Flow 母艦插件可載入預設 signal chain。採訂閱轉擁有模式。",
+      "tags": [
+        "audio_effects",
+        "mixing",
+        "plugin_bundle",
+        "subscription"
+      ],
+      "url": "https://www.softube.com",
+      "source": "Sound On Sound",
+      "sourceUrl": "https://www.soundonsound.com/reviews/softube-flow-mixing-suite",
+      "price": "subscription",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-005",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Sunbunny Panoramatone — 免費 Vintage 立體聲 Vibrato",
+      "summary": "免費 VST3 插件，真立體聲 vibrato 效果，含 Rate、Depth、Width、Drive、Warmth、Smear 控制。適合吉他和 synth 加入 vintage shimmer 質感。支援 Windows/macOS/Linux。",
+      "tags": [
+        "audio_effects",
+        "modulation",
+        "vibrato",
+        "free_plugin",
+        "guitar"
+      ],
+      "url": "https://pilcaki.github.io/sunbunny/plugins/panoramatone/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/20/sunbunny-panoramatone/",
+      "price": "free",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260221-mt-006",
+      "radar": "music-tech",
+      "date": "2026-02-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Acon Digital Limit — 免費透明 Limiter（3/1 截止）",
+      "summary": "Acon Digital 旗艦級透明限幅器 Limit 限時免費至 3 月 1 日。雙階段處理（pre-compressor + peak limiting），支援 4x oversampling true peak limiting、0-30ms 智慧 look-ahead。極低 CPU 佔用。",
+      "tags": [
+        "audio_effects",
+        "limiter",
+        "mastering",
+        "free_plugin"
+      ],
+      "url": "https://acondigital.com/products/limit/",
+      "source": "Plugin Boutique",
+      "sourceUrl": "https://www.pluginboutique.com/product/2-Effects/9-Limiter/16857-Limit",
+      "price": "free (until Mar 1)",
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260221-sw-009",
       "radar": "software-dev",
