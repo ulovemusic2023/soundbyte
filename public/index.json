@@ -1,7 +1,198 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-22T08:10:00+08:00",
+  "updatedAt": "2026-02-22T08:20:00+08:00",
   "entries": [
+    {
+      "id": "20260222-sw-009",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "OpenAI Signals: AI 採用度量測平台",
+      "summary": "OpenAI 推出 Signals 研究頁面，用隱私保護方式量測 AI 採用率。在 Solow paradox 背景下，嘗試提供更好的 AI 影響力數據。",
+      "tags": [
+        "AI adoption",
+        "measurement",
+        "enterprise"
+      ],
+      "url": "https://openai.com/signals/research",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/signals/research",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Google 2026 Responsible AI Progress Report",
+      "summary": "Google 公開 AI 治理報告，涵蓋風險評估框架和開發 guardrails。隨著 Gemini 3.1 Pro 快速迭代，responsible AI 治理成為必要配套。",
+      "tags": [
+        "AI safety",
+        "governance",
+        "guardrails"
+      ],
+      "url": "https://blog.google/innovation-and-ai/products/responsible-ai-2026-report-ongoing-work/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/responsible-ai-2026-report-ongoing-work/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Julia Evans: Notes on clarifying man pages",
+      "summary": "b0rk 研究讓 man pages 更易讀：嵌入 ASCII cheat sheets、per-option 範例、語法表。繼 Git 文件改善後，推動 dev tooling 文件品質整體提升。",
+      "tags": [
+        "developer experience",
+        "documentation",
+        "CLI"
+      ],
+      "url": "https://jvns.ca/blog/2026/02/18/man-pages/",
+      "source": "Julia Evans",
+      "sourceUrl": "https://jvns.ca/blog/2026/02/18/man-pages/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Visual Studio 2026: AI Profiler Agent 深度整合",
+      "summary": "VS 2026 把 Copilot 嵌進 Profiler — debug 時即時抓 CPU/記憶體數據，點 Perf Tips 給優化建議。新增 Test Explorer 一鍵 profiling。IDE 正在變 AI-native。",
+      "tags": [
+        "AI coding",
+        "developer experience",
+        "profiler",
+        "IDE",
+        "Visual Studio"
+      ],
+      "url": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes",
+      "source": "Microsoft",
+      "sourceUrl": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI First Proof: AI 挑戰研究級數學證明",
+      "summary": "OpenAI 用內部模型嘗試 10 道未發表研究級數學問題，5 道被專家認為很可能正確。超越 IMO 等級，進入真正研究前線。驗證仍是挑戰（~90% 錯誤率）。",
+      "tags": [
+        "reasoning",
+        "AI math",
+        "frontier benchmark",
+        "proof"
+      ],
+      "url": "https://openai.com/index/first-proof-submissions/",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/first-proof-submissions/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gentoo Linux 棄 GitHub 遷移到 Codeberg",
+      "summary": "Gentoo 2/16 正式把 ebuild repo 搬到 Codeberg，主因是 Microsoft 持續推送 Copilot、AI 生成 PR 品質低落。繼 Zig 後開源去中心化託管趨勢加速。",
+      "tags": [
+        "open source",
+        "Codeberg",
+        "anti-AI-slop",
+        "decentralized hosting"
+      ],
+      "url": "https://codeberg.org/gentoo/gentoo",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/02/17/gentoo_dumps_github_for_codeberg_over_copilot_nagware/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Jeff Geerling: AI is destroying Open Source",
+      "summary": "管理 300+ 開源專案的 Jeff Geerling 痛批 AI slop 摧毀開源生態。curl 因 AI 垃圾報告砍 bug bounty（有效率 15%→5%），GitHub 被迫加關閉 PR 功能。20 萬觀看。",
+      "tags": [
+        "open source",
+        "AI slop",
+        "agentic",
+        "maintainer burnout"
+      ],
+      "url": "https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/",
+      "source": "Jeff Geerling",
+      "sourceUrl": "https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GitHub Agentic Workflows 進入 Technical Preview",
+      "summary": "GitHub 正式開放 agentic workflows：用 Markdown 寫 goal，AI agent 在沙箱裡自動執行 repo 維護任務（issue triage、文件更新、CI 修復）。整合 Copilot / Claude Code / Codex，CI/CD → Continuous AI 的第一步。",
+      "tags": [
+        "agentic",
+        "GitHub Actions",
+        "sandbox",
+        "MCP",
+        "ci/cd",
+        "Continuous AI"
+      ],
+      "url": "https://github.blog/changelog/2026-02-13-github-agentic-workflows-are-now-in-technical-preview/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/github-agentic-workflows/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Architecting Agentic MLOps: A2A + MCP 分層協議架構",
+      "summary": "InfoQ 深度文章提出用 A2A（Agent-to-Agent）做通訊匯流、MCP 做能力語言的分層架構，讓 multi-agent 系統像微服務一樣模組化。核心概念：orchestration 和 execution 解耦，新 agent 隨插即用不動核心邏輯。",
+      "tags": [
+        "multi-agent",
+        "A2A",
+        "MCP",
+        "architecture",
+        "orchestration",
+        "MLOps"
+      ],
+      "url": "https://www.infoq.com/articles/architecting-agentic-mlops-a2a-mcp/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/architecting-agentic-mlops-a2a-mcp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260222-ai-001",
       "radar": "ai-infra",
