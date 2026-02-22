@@ -1,7 +1,132 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-22T08:00:00+08:00",
+  "updatedAt": "2026-02-22T08:10:00+08:00",
   "entries": [
+    {
+      "id": "20260222-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Kani TTS 2 — 400M 開源 TTS，3GB VRAM 跑 40 秒連續語音",
+      "summary": "400M 參數開源 TTS 模型，單次生成 40 秒連續語音，RTF 0.2。支援 zero-shot voice cloning，Apache 2.0 全開放含 pretraining code。",
+      "tags": [
+        "tts_speech",
+        "voice_cloning",
+        "zero-shot",
+        "open-source"
+      ],
+      "url": "https://huggingface.co/nineninesix/kani-tts-2",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://tynmagazine.com/40-second-open-source-speech-model-now-trending-on-hugging-face/",
+      "price": null,
+      "vram": "~3GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260222-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "torvalds/AudioNoise — Linus Torvalds 的數位音效實驗",
+      "summary": "Linus Torvalds 延續吉他踏板硬體專案的軟體端，IIR filter + delay loop 模擬類比效果器，single-sample-in/out 零延遲設計。",
+      "tags": [
+        "audio_effects",
+        "iir_filter",
+        "guitar_pedal",
+        "dsp"
+      ],
+      "url": "https://github.com/torvalds/AudioNoise",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/21/torvalds-AudioNoise.html",
+      "price": null,
+      "vram": "0 (CPU only)",
+      "license": "GPL-2.0"
+    },
+    {
+      "id": "20260222-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ollama v0.16.1 — Claude Code 整合 + 雲端模型 Fallback",
+      "summary": "新增 Claude Code 整合可直接用本地模型跑 agentic coding workflow，雲端模型自動 offload 超過 VRAM 的模型。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "local_inference",
+        "claude_code"
+      ],
+      "url": "https://github.com/ollama/ollama",
+      "source": "Web Search",
+      "sourceUrl": "https://piotrminkowski.com/2026/02/17/create-apps-with-claude-code-on-ollama/",
+      "price": null,
+      "vram": "varies",
+      "license": "MIT"
+    },
+    {
+      "id": "20260222-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenBMB/UltraRAG 3.0 — MCP 架構 RAG 開發框架",
+      "summary": "清華+東北大學出品，首個 MCP 架構 RAG 框架。YAML 寫 pipeline、視覺 IDE、即時除錯。3.0 版推理邏輯完全可視化。",
+      "tags": [
+        "rag",
+        "mcp",
+        "knowledge_base",
+        "retrieval"
+      ],
+      "url": "https://github.com/OpenBMB/UltraRAG",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/21/OpenBMB-UltraRAG.html",
+      "price": null,
+      "vram": "~8-16GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260222-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Qwen3-Coder-Next — 80B MoE (3B Active) Agentic Coding Model",
+      "summary": "Qwen 最新 agentic coding model，80B 總參數 3B active（超稀疏 MoE），256K context，SWE-Bench 66.2%。Q4 GGUF 需 ~46GB。",
+      "tags": [
+        "llm_inference",
+        "coding_agent",
+        "quantization",
+        "moe"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/21/QwenLM-Qwen3-Coder.html",
+      "price": null,
+      "vram": "~46GB (Q4)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260222-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LongCat-Video — 美團 13.6B Video Generation Model",
+      "summary": "統一 Text/Image/Video-to-Video + Video Continuation，可生分鐘級長影片不掉色。Block Sparse Attention 加速，附語音驅動人物動畫。",
+      "tags": [
+        "video_generation",
+        "text_to_video",
+        "image_to_video"
+      ],
+      "url": "https://github.com/meituan-longcat/LongCat-Video",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/21/meituan-longcat-LongCat-Video.html",
+      "price": null,
+      "vram": "~30-40GB (FP16)",
+      "license": "Apache 2.0"
+    },
     {
       "id": "20260221-sw-001",
       "radar": "software-dev",
