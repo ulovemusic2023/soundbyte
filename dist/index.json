@@ -1,7 +1,137 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-22T18:10:00+08:00",
+  "updatedAt": "2026-02-22T18:20:00+08:00",
   "entries": [
+    {
+      "id": "20260222-sw-010",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Vercel Skills Night — Agent 的 npm，69,000+ Skills 生態系成形",
+      "summary": "Vercel 在 SF 辦了 Skills Night，宣布 skills.sh 已累積 69,000+ skills、200 萬次 CLI 安裝。skills = agent 的 package manager，用 npx skills add 一鍵裝進 Claude Code / Cursor / Codex 等 18+ coding agent。安全方面跟 Gen 合作做 Agent Trust Hub。",
+      "tags": [
+        "ai agent",
+        "tool use",
+        "ai coding",
+        "copilot",
+        "skills ecosystem"
+      ],
+      "url": "https://vercel.com/blog/skills-night-69000-ways-agents-are-getting-smarter",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/skills-night-69000-ways-agents-are-getting-smarter",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-011",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "LangChain Agent Builder Memory — 用虛擬檔案系統做 Agent 記憶",
+      "summary": "LangChain 發佈 Agent Builder 的 memory 架構，核心設計是把 agent 記憶表示為 virtual filesystem（存在 Postgres），AGENTS.md 管 procedural memory，tools.json 管工具，skill files 管 semantic memory。COALA 框架，越用越聰明。",
+      "tags": [
+        "ai agent",
+        "agent framework",
+        "langchain",
+        "rag",
+        "memory",
+        "virtual filesystem memory"
+      ],
+      "url": "https://blog.langchain.com/how-we-built-agent-builders-memory-system/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-we-built-agent-builders-memory-system/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-012",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Spec-Driven Development 企業級實踐指南",
+      "summary": "InfoQ 長文探討 SDD 從 vibe coding → plan mode → 完整規格驅動的演進。隨著 agent 走向 uninterrupted execution，意圖表達變成最關鍵技能。企業需解決 brownfield 整合、context 管理、協作流程等缺口。",
+      "tags": [
+        "ai coding",
+        "ai-assisted development",
+        "agentic engineering",
+        "spec-driven development"
+      ],
+      "url": "https://www.infoq.com/articles/enterprise-spec-driven-development/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/enterprise-spec-driven-development/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-013",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "SuperClaw — 開源 AI Agent 紅隊測試框架",
+      "summary": "Superagentic AI 開源的 red-teaming 框架，內建 5 種攻擊技術：prompt injection、encoding obfuscation、jailbreak、tool-policy bypass、multi-turn escalation。Bloom scenario engine 產生對抗性輸入，報告輸出 SARIF 串進 CI/CD。",
+      "tags": [
+        "ai agent",
+        "red teaming",
+        "prompt injection",
+        "guardrails",
+        "safety",
+        "agent red-teaming"
+      ],
+      "url": "https://www.cryptika.com/superclaw-open-source-framework-to-red-team-ai-agents-for-security-testing/",
+      "source": "Cryptika",
+      "sourceUrl": "https://www.cryptika.com/superclaw-open-source-framework-to-red-team-ai-agents-for-security-testing/",
+      "price": null,
+      "vram": null,
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260222-sw-014",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "InfoQ: Micro-Frontends 平台架構 — Luca Mezzalira 演講",
+      "summary": "Luca Mezzalira 分享理想的 micro-frontends 平台：application shell 做 routing/composition、SSR islands 讓各團隊獨立更新、用 Backstage 做 discovery。從 microservices → micro-frontends → data mesh 的演化。",
+      "tags": [
+        "micro frontend",
+        "architecture",
+        "module federation"
+      ],
+      "url": "https://www.infoq.com/presentations/distributed-micro-frontends/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/presentations/distributed-micro-frontends/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-sw-015",
+      "radar": "software-dev",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "InfoQ Podcast: 金融系統的 Resilient Event-Driven Microservices",
+      "summary": "Muzeeb Mohammad 分享把 monolith 拆成 event-driven microservices 的經驗，用 Kafka 做異步處理。從季度部署變成 on-demand，平行化工作流大幅提升 time-to-market。",
+      "tags": [
+        "microservices",
+        "event-driven",
+        "kafka",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/podcasts/building-resilient-event-driven-microservices/",
+      "source": "InfoQ Podcast",
+      "sourceUrl": "https://www.infoq.com/podcasts/building-resilient-event-driven-microservices/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260222-ai-011",
       "radar": "ai-infra",
