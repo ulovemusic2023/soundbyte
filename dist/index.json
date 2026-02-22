@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-21T18:20:00+08:00",
+  "updatedAt": "2026-02-22T08:00:00+08:00",
   "entries": [
     {
       "id": "20260221-sw-001",
@@ -10,7 +10,12 @@
       "priority": "paradigm-shift",
       "title": "ggml.ai 加入 Hugging Face — Local AI 生態系統的歷史性合併",
       "summary": "Georgi Gerganov 將 ggml.ai 和 llama.cpp 帶入 Hugging Face，GGML 量化格式將與 Transformers library 做一鍵整合，本地 AI 推理正式從社群 hack 升級為一等公民。",
-      "tags": ["local-first AI", "quantization", "llama.cpp", "Hugging Face"],
+      "tags": [
+        "local-first AI",
+        "quantization",
+        "llama.cpp",
+        "Hugging Face"
+      ],
       "url": "https://github.com/ggml-org/llama.cpp/discussions/19759",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/",
@@ -26,7 +31,12 @@
       "priority": "paradigm-shift",
       "title": "Karpathy 命名新 AI Stack 層級：Claws 🦞",
       "summary": "Karpathy 將 OpenClaw 類 agent 系統定義為 AI stack 新層——Claws：跑在個人硬體、透過 messaging protocol 溝通、負責 orchestration/scheduling/context/persistence。NanoClaw（~4000 行核心）為代表。",
-      "tags": ["ai agent", "agentic engineering", "orchestration", "local-first AI"],
+      "tags": [
+        "ai agent",
+        "agentic engineering",
+        "orchestration",
+        "local-first AI"
+      ],
       "url": "https://twitter.com/karpathy/status/2024987174077432126",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/21/claws/",
@@ -42,7 +52,12 @@
       "priority": "paradigm-shift",
       "title": "Anthropic 發佈 Claude Code Security — 網安股集體崩盤",
       "summary": "Anthropic 推出基於 Opus 4.6 的 AI 安全掃描工具，能理解 codebase data flow 找出傳統 scanner 無法偵測的漏洞。內測發現 500+ 個高嚴重度 zero-day。CrowdStrike -8%、Okta -9.2%、JFrog -24%。",
-      "tags": ["ai agent", "red teaming", "security", "guardrails"],
+      "tags": [
+        "ai agent",
+        "red teaming",
+        "security",
+        "guardrails"
+      ],
       "url": "https://fortune.com/2026/02/20/exclusive-anthropic-rolls-out-ai-tool-that-can-hunt-software-bugs-on-its-own-including-the-most-dangerous-ones-humans-miss/",
       "source": "Fortune",
       "sourceUrl": "https://fortune.com/2026/02/20/exclusive-anthropic-rolls-out-ai-tool-that-can-hunt-software-bugs-on-its-own-including-the-most-dangerous-ones-humans-miss/",
@@ -58,7 +73,12 @@
       "priority": "high",
       "title": "Gemini 3.1 Pro 發佈 — ARC-AGI-2 分數翻倍",
       "summary": "Google 發佈 Gemini 3.1 Pro，ARC-AGI-2 邏輯推理 77.1%（2倍以上）、SWE-Bench 80.6%。推出 Customtools 變體針對 function calling 和 agentic workflow 優化。",
-      "tags": ["ai_models", "reasoning", "benchmark", "function calling"],
+      "tags": [
+        "ai_models",
+        "reasoning",
+        "benchmark",
+        "function calling"
+      ],
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
       "source": "Google",
       "sourceUrl": "https://case.edu/utech/about/utech-news/google-releases-gemini-31-pro-and-lyria-3",
@@ -74,7 +94,11 @@
       "priority": "high",
       "title": "Demis Hassabis 警告：記憶晶片短缺是 AI 的窒息點",
       "summary": "DeepMind CEO 指出 HBM 供應短缺是 AI 發展最大瓶頸。Google 2026 AI 基建預算 $175-185B 仍面臨實驗規模受限。需要 continual learning、long-term reasoning 突破。",
-      "tags": ["scaling law", "infrastructure", "ai_models"],
+      "tags": [
+        "scaling law",
+        "infrastructure",
+        "ai_models"
+      ],
       "url": "https://www.indiatoday.in/technology/news/story/google-deepmind-chief-says-ai-development-could-reach-a-choke-point-here-is-why-2871968-2026-02-21",
       "source": "India Today / Business Insider",
       "sourceUrl": "https://www.indiatoday.in/technology/news/story/google-deepmind-chief-says-ai-development-could-reach-a-choke-point-here-is-why-2871968-2026-02-21",
@@ -90,7 +114,11 @@
       "priority": "high",
       "title": "Andrew Ng：AI Agent 不會取代開發者，反而增加需求",
       "summary": "Ng 分享 Agentic Reviewer 經驗：web search API 調用量暴增數十倍。AI agent 不減少工程師需求，而是產生更多 digital service 需求，催生 X Engineer 新角色。",
-      "tags": ["ai agent", "ai coding", "agentic engineering"],
+      "tags": [
+        "ai agent",
+        "ai coding",
+        "agentic engineering"
+      ],
       "url": "https://www.deeplearning.ai/the-batch/issue-341/",
       "source": "DeepLearning.AI",
       "sourceUrl": "https://www.deeplearning.ai/the-batch/issue-341/",
@@ -106,7 +134,12 @@
       "priority": "low",
       "title": "InfoQ：OpenTelemetry Observability 實戰指南",
       "summary": "OpenTelemetry 在 microservices、serverless、edge 的 observability 最佳實踐。重點：semantic conventions、golden signals、dynamic sampling、SLO-aligned telemetry。MTTR 可降 40-60%。",
-      "tags": ["observability", "opentelemetry", "microservices", "devops_infra"],
+      "tags": [
+        "observability",
+        "opentelemetry",
+        "microservices",
+        "devops_infra"
+      ],
       "url": "https://www.infoq.com/news/2026/02/opentelemetry-observability/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/02/opentelemetry-observability/",
@@ -122,7 +155,12 @@
       "priority": "low",
       "title": "HN 熱議：ggml + HF 合併引發 Local AI 生態討論",
       "summary": "HN 社群把 HF 比作比 OpenAI 更 Open AI 的公司。Unsloth 團隊現身回覆。多數社群認為這是 local inference 對抗 cloud inference 的重要里程碑。",
-      "tags": ["local-first AI", "quantization", "fine-tuning", "community"],
+      "tags": [
+        "local-first AI",
+        "quantization",
+        "fine-tuning",
+        "community"
+      ],
       "url": "https://news.ycombinator.com/item?id=47088037",
       "source": "Hacker News",
       "sourceUrl": "https://news.ycombinator.com/item?id=47088037",
@@ -4895,6 +4933,112 @@
       "price": null,
       "vram": "N/A (kernel library)",
       "license": "BSD"
+    },
+    {
+      "id": "20260222-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Lyria 3 登上 Product Hunt — Launch of the Day",
+      "summary": "Google DeepMind 的 AI 音樂生成模型 Lyria 3 在 2/21 登上 Product Hunt 並拿下 Launch of the Day。可從文字、圖片、影片生成 30 秒完整歌曲含人聲＋歌詞＋封面，支援多語言，SynthID 浮水印內建。",
+      "tags": [
+        "music generation",
+        "audio ai",
+        "text to music",
+        "Google DeepMind"
+      ],
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/lyria-3-by-google-deepmind",
+      "price": "Free (limits apply)",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ardour 9.1 釋出 — 開源 DAW 重要更新",
+      "summary": "開源 DAW Ardour 釋出 9.1，修正 9.0 的 editor bottom pane bug，新增 MIDI Note Chasing 和 MIDI Note Duplication 功能。對 MIDI 重度使用者是實用升級。",
+      "tags": [
+        "daw",
+        "midi",
+        "open source music",
+        "Ardour"
+      ],
+      "url": "https://ardour.org/whatsnew.html",
+      "source": "Ardour",
+      "sourceUrl": "https://ardour.org/whatsnew.html",
+      "price": "Free / Donation",
+      "vram": null,
+      "license": "GPL"
+    },
+    {
+      "id": "20260222-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 推 Growth Ambassador 計畫 + Voice Change 功能",
+      "summary": "Suno 開放創作者申請 Growth Ambassador 換報酬，並上線 Voice Change 功能可不重新生成整首歌就換人聲。Private Mode 也做了澄清。",
+      "tags": [
+        "suno",
+        "music ai",
+        "voice conversion",
+        "monetization"
+      ],
+      "url": "https://suno.com",
+      "source": "jackrighteous.com",
+      "sourceUrl": "https://jackrighteous.com/blogs/guides-using-suno-ai-music-creation",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Apple Music Playlist Playground 進入 Public Beta",
+      "summary": "iOS 26.4 public beta 上線，Apple Music AI playlist 生成功能 Playlist Playground 正式開放測試。輸入文字描述產 25 首歌 playlist 含封面和描述。",
+      "tags": [
+        "music ai",
+        "music app",
+        "Apple Music",
+        "AI playlist"
+      ],
+      "url": "https://www.apple.com/apple-music/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/20/apples-ios-26-4-arrives-in-public-beta-with-ai-music-playlists-video-podcasts-and-more/",
+      "price": "Apple Music subscription",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260222-mt-005",
+      "radar": "music-tech",
+      "date": "2026-02-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Safari Audio SuperKeys Cubby — Lo-fi 復古鍵盤合成器",
+      "summary": "Safari Audio 首支虛擬樂器 plugin，模擬二手店 Casio 風格 lo-fi 數位鍵盤音色，四種聲音引擎加內建 arpeggiator 和 speaker emulation。VST3/AU/AAX。",
+      "tags": [
+        "plugin",
+        "vst3",
+        "synthesizer",
+        "virtual instrument",
+        "lo-fi"
+      ],
+      "url": "https://www.gearnews.com/safari-audio-superkeys-cubby-synth/",
+      "source": "Gearnews",
+      "sourceUrl": "https://www.gearnews.com/safari-audio-superkeys-cubby-synth/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
