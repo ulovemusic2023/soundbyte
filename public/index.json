@@ -1,7 +1,116 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-22T18:00:00+08:00",
+  "updatedAt": "2026-02-22T18:10:00+08:00",
   "entries": [
+    {
+      "id": "20260222-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenViking — ByteDance AI Agent Context Database",
+      "summary": "ByteDance 火山引擎開源的 AI Agent Context Database，用檔案系統概念統一管理記憶/資源/技能，三層式 context loading（L0/L1/L2）省 token，支援目錄遞迴 + 語意搜尋。",
+      "tags": [
+        "rag",
+        "knowledge graph",
+        "vector database",
+        "ai_devtools",
+        "agent"
+      ],
+      "url": "https://github.com/volcengine/OpenViking",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "N/A（需搭配外部 VLM + Embedding）",
+      "license": "Apache 2.0 (推測)"
+    },
+    {
+      "id": "20260222-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MiniMax-M2.5 — 230B MoE 開源旗艦模型",
+      "summary": "MiniMax 旗艦模型，230B MoE 架構但只有 ~10B active。SWE-Bench 80.2%（SOTA），Ollama v0.16.0 原生支援。FP4 量化後估計 ~12-14GB VRAM 可跑。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "quantization",
+        "agentic coding"
+      ],
+      "url": "https://github.com/MiniMax-AI/MiniMax-M2.5",
+      "source": "Ollama / GitHub",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.16.0",
+      "price": null,
+      "vram": "~12-14GB（Q4 量化，10B active）",
+      "license": "Open Weights (Permissive)"
+    },
+    {
+      "id": "20260222-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ocrbase — 自架式 PDF→Markdown/JSON 抽取平台",
+      "summary": "PDF 結構化抽取平台，底層 PaddleOCR-VL 1.5（0.9B），支援 schema 定義做結構化抽取，WebSocket 即時進度，BullMQ 佇列。跑 RAG 前先過一層省 token。",
+      "tags": [
+        "ocr",
+        "paddleocr",
+        "document ai",
+        "rag",
+        "self-hosted"
+      ],
+      "url": "https://github.com/ocrbase-hq/ocrbase",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~2-3GB（PaddleOCR-VL 0.9B）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260222-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ShayneP/local-voice-ai — 全本地語音 AI 助手",
+      "summary": "完整 Docker 化本地語音 AI 助手，整合 LiveKit WebRTC + Nemotron STT + llama.cpp LLM + Kokoro TTS。預設 Qwen3-4B，12GB RAM 即可跑，無需雲端 API。",
+      "tags": [
+        "voice synthesis",
+        "tts",
+        "whisper",
+        "local inference",
+        "kokoro",
+        "LiveKit"
+      ],
+      "url": "https://github.com/ShayneP/local-voice-ai",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~4-6GB（Qwen3-4B + Nemotron + Kokoro）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260222-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-02-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ollama v0.17.0 — OpenClaw Onboarding 改善",
+      "summary": "最新版 Ollama v0.17.0 釋出，改善 OpenClaw onboarding 流程。v0.16.x 系列加入 ollama launch 指令、MLX runner 支援 Gemma 3/Llama/Qwen 3、OLLAMA_NO_CLOUD 隱私模式。",
+      "tags": [
+        "ollama",
+        "local inference",
+        "llm_inference",
+        "MLX"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.17.0",
+      "price": null,
+      "vram": "依模型而定（4B~70B）",
+      "license": "MIT"
+    },
     {
       "id": "20260222-mt-003",
       "radar": "music-tech",
@@ -10,7 +119,14 @@
       "priority": "high",
       "title": "Move Everything — Ableton Move 開源平台 Hack",
       "summary": "開源專案 Move Everything 用 Shadow Mode 把 Ableton Move 變成可擴充平台，加入 Surge XT、Dexed、Braids 等合成器，Neural Amp Modeler 等效果，還有 screen reader 無障礙支援。",
-      "tags": ["Ableton", "Move", "open source", "synthesizer", "groovebox", "accessibility"],
+      "tags": [
+        "Ableton",
+        "Move",
+        "open source",
+        "synthesizer",
+        "groovebox",
+        "accessibility"
+      ],
       "url": "https://synthanatomy.com/2026/02/move-everything-turns-ableton-move-into-an-open-platform-with-more-synths-fx-and-more.html",
       "source": "Synth Anatomy",
       "sourceUrl": "https://synthanatomy.com/2026/02/move-everything-turns-ableton-move-into-an-open-platform-with-more-synths-fx-and-more.html",
@@ -26,7 +142,14 @@
       "priority": "high",
       "title": "Dusk Audio — 全免費開源 Plugin 套件",
       "summary": "Dusk Audio 推出四款免費開源 plugin：4K-EQ、Multi-Comp（8 模式）、TapeMachine、Multi-Q（SSL/Pultec/Dynamic EQ 三合一）。VST3/AU/LV2 全格式，Linux 優先。",
-      "tags": ["free plugin", "open source", "EQ", "compressor", "tape emulation", "Linux"],
+      "tags": [
+        "free plugin",
+        "open source",
+        "EQ",
+        "compressor",
+        "tape emulation",
+        "Linux"
+      ],
       "url": "https://dusk-audio.github.io",
       "source": "Dusk Audio",
       "sourceUrl": "https://dusk-audio.github.io",
@@ -42,7 +165,13 @@
       "priority": "medium",
       "title": "Resemble AI 獲 $13M 融資 — Deepfake 偵測",
       "summary": "語音 AI 公司 Resemble AI 獲 Sony Innovation Fund、Google AI Futures Fund 等 $13M 融資，主打即時 deepfake 偵測（DETECT-3B Omni，98% 準確率、38+ 語言），對音樂產業 voice clone 真偽辨識意義重大。",
-      "tags": ["voice clone", "deepfake detection", "AI funding", "Sony", "Google"],
+      "tags": [
+        "voice clone",
+        "deepfake detection",
+        "AI funding",
+        "Sony",
+        "Google"
+      ],
       "url": "https://www.resemble.ai",
       "source": "LA Times",
       "sourceUrl": "https://www.latimes.com/b2b/ai-technology/story/2026-02-22/resemble-ai-funding-deepfake-threats",
