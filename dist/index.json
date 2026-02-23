@@ -6399,6 +6399,177 @@
       "price": null,
       "vram": ">24GB (full pipeline)",
       "license": "Apache 2.0"
+    },
+    {
+      "id": "20260223-sw-010",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "DeepMind RL2F — AI 終於能從對話中自我修正",
+      "summary": "Google DeepMind 發表 RL2F，把 In-Context Learning 和 RL 統一成單一訓練目標。用雙重 reward signal 重塑 attention weight，讓模型能從修正中學習，推論時不需人類介入。",
+      "tags": [
+        "reinforcement learning",
+        "reasoning",
+        "self-reflection",
+        "attention mechanism",
+        "RL2F"
+      ],
+      "url": "https://deepmind.google/research/",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://atalupadhyay.wordpress.com/2026/02/23/googles-rl2f-building-self-learning-ai-with-reinforcement-learning-and-language-feedback/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-011",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Rivet Sandbox Agent SDK — Coding Agent 碎片化的解藥",
+      "summary": "Rivet 推出 15MB Rust binary 統一 API，讓一套 code 接 Claude Code、Codex、OpenCode、Amp。解決 API 碎片化、session state 不持久、部署平台各有各 API 三大痛點。",
+      "tags": [
+        "agent framework",
+        "tool use",
+        "ai coding",
+        "function calling",
+        "sandbox agent sdk"
+      ],
+      "url": "https://www.rivet.dev/changelog/2026-01-28-sandbox-agent-sdk/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/rivet-agent-sandbox-sdk/",
+      "price": null,
+      "vram": null,
+      "license": "Open Source"
+    },
+    {
+      "id": "20260223-sw-012",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic 正式發布 Claude Code Security",
+      "summary": "用 Opus 4.6 掃 codebase 找安全漏洞，追蹤 data flow + 元件互動，多階段 self-verification 過濾 false positive。Enterprise/Team + 開源維護者優先。網安股暴跌 ~10%。",
+      "tags": [
+        "ai agent",
+        "security",
+        "red team",
+        "guardrails",
+        "claude code security"
+      ],
+      "url": "https://www.anthropic.com/news/claude-code-security",
+      "source": "Security Affairs",
+      "sourceUrl": "https://securityaffairs.com/188358/ai/anthropic-unveils-claude-code-security-to-detect-and-fix-code-bugs.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-013",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison 分析 Claude C Compiler",
+      "summary": "Chris Lattner 深入 review 多個 Claude Opus 4.6 平行建構的 C compiler。結論：教科書級實作，但離 production 很遠。AI 擅長組裝已知技術，缺乏 open-ended generalization。",
+      "tags": [
+        "ai coding",
+        "code generation",
+        "agentic engineering"
+      ],
+      "url": "https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/22/ccc/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-014",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "WebMCP + Chrome DevTools Protocol Demo",
+      "summary": "Simon Willison 展示用 Python client 透過 CDP 發現和呼叫 WebMCP tools。瀏覽器 app 可暴露結構化 callable tools 給 AI agent，取代不可靠的 UI automation。",
+      "tags": [
+        "mcp",
+        "model context protocol",
+        "tool use",
+        "ai agent",
+        "webmcp"
+      ],
+      "url": "https://github.com/simonw/research/tree/main/webmcp-chrome-demo",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/22/webmcp-chrome-demo/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-015",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic 研究：AI 輔助寫 code 讓理解力降 17%",
+      "summary": "52 名 junior 工程師 RCT：AI 組測驗 50% vs 手動組 67%。關鍵不是用不用 AI，是怎麼用——全委託 AI < 40%，用 AI 問概念自己寫 > 65%。Cognitive debt 再添實證。",
+      "tags": [
+        "ai coding",
+        "cognitive debt",
+        "benchmark",
+        "human feedback"
+      ],
+      "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/ai-coding-skill-formation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-016",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "AI 駭客用 ARXON MCP Server 攻破 600 台 FortiGate",
+      "summary": "Amazon 揭露俄語駭客用自建 ARXON MCP server 把偷到的 config 餵給 Claude/DeepSeek 生成攻擊計劃，5 週攻破 55 國 600+ FortiGate。MCP 協定首次被用於攻擊端。",
+      "tags": [
+        "mcp",
+        "security",
+        "zero trust",
+        "supply chain security",
+        "ARXON"
+      ],
+      "url": "https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/",
+      "source": "Computing.co.uk",
+      "sourceUrl": "https://www.computing.co.uk/news/2026/security/ai-powered-hacker-breaches-600-fortigate-firewalls",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-017",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Cursor Plugin Marketplace + Mermaid ASCII 圖表",
+      "summary": "Cursor 新增 plugin marketplace 接 Databricks、Snowflake 等，CLI 支援 Mermaid 圖表 terminal 渲染，Plan mode 可交給 cloud build 執行。",
+      "tags": [
+        "ai coding",
+        "copilot",
+        "ai-assisted development"
+      ],
+      "url": "https://cursor.com/blog/marketplace",
+      "source": "Cursor",
+      "sourceUrl": "https://cursor.com/blog/marketplace",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
