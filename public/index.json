@@ -1,7 +1,153 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-23T08:20:00+08:00",
+  "updatedAt": "2026-02-23T18:33:00+08:00",
   "entries": [
+    {
+      "id": "20260223-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "FRCTL Audio GRN 2 — Granular Plugin 大更新，加入 Multi-FX Rack 與 LFO",
+      "summary": "免費升級！GRN 2 加入 multi-FX rack、LFO、saturator（三種模式）、pitch quantization（九種音階）、feedback engine。Granular 引擎走「少即是多」路線，六個主要參數就能出好聲音。macOS/Linux/Windows 都支援，終身免費更新。",
+      "tags": [
+        "plugin",
+        "granular",
+        "sound design",
+        "effect",
+        "free update"
+      ],
+      "url": "https://frctl.audio",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/02/frctl-audio-grn-2-granular-plugin-now-with-multi-fx-rack-lfos-and-more.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Robert Henke Filter Delays — 免費 Max for Live Device",
+      "summary": "Ableton 共同創辦人 Robert Henke 重新打造 Live 1 時代經典 Filter Delay 效果器。三組立體聲 delay line + band-pass filter + 靈活 feedback routing。免費下載，需 Max for Live。",
+      "tags": [
+        "ableton",
+        "delay",
+        "filter",
+        "free plugin",
+        "max for live"
+      ],
+      "url": "https://roberthenke.com",
+      "source": "MusicRadar",
+      "sourceUrl": "https://www.musicradar.com/music-tech/ableton-live-co-creator-robert-henke-updates-a-classic-live-effect-with-free-m4l-device-filter-delays",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ShadowTune GammaWave — VA + Granular 混合合成器（Donationware）",
+      "summary": "新開發者 ShadowTune 推出 donationware 合成器。核心是雙 oscillator VA 引擎 + granular synthesis，加上 multimode filter、7 種 distortion 演算法、bit-crusher、3 組 ADSR + 2 組 LFO。macOS/Windows。",
+      "tags": [
+        "synthesizer",
+        "granular",
+        "virtual instrument",
+        "donationware"
+      ],
+      "url": null,
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/02/shadowtune-gammawave-a-hybrid-va-and-granular-synth-plugin-donationware.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Tokyo Dawn Labs × Ohlhorst Digital — OD Ancora Stereo Image Processor",
+      "summary": "專業 stereo image processor，頻率感知式立體聲校正。雙處理模式（L/R 或 M/S），含 phase compensation。定位是 mix/mastering 工具。",
+      "tags": [
+        "mastering",
+        "mixing",
+        "stereo",
+        "plugin"
+      ],
+      "url": "https://www.tokyodawn.net/od-ancora/",
+      "source": "Happy Mag",
+      "sourceUrl": "https://happymag.tv/tokyo-dawn-labs-ohlhorst-digital-release-od-ancora/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-mt-005",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Rast Sound ColorLab 2 — Multiband Coloring Plugin",
+      "summary": "17 種效果器、per-band motion modulation、built-in finish stage。多頻段染色工具，適合混音時為素材增添質感與動態變化。",
+      "tags": [
+        "plugin",
+        "effects",
+        "multiband"
+      ],
+      "url": null,
+      "source": "KVR Audio",
+      "sourceUrl": "https://www.kvraudio.com/news/rast-sound-releases-colorlab-2-multiband-coloring-plugin-66222",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-mt-006",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Red Rock Sound 11FF — 1176 風格 FET Compressor",
+      "summary": "與 NICHOLAY MIX 合作開發的 1176 模擬壓縮器。支援 mid/side、stereo、immersive objects。VST/VST3/AAX，Windows 64-bit。",
+      "tags": [
+        "compressor",
+        "plugin",
+        "mixing",
+        "1176"
+      ],
+      "url": "https://redrocksound.pro",
+      "source": "Audiofanzine",
+      "sourceUrl": "https://fr.audiofanzine.com/compresseur-logiciel/red-rock-sound/11ff-compressor-limiter/news/a.play,n.80432.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-mt-007",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Sender Spike qb (Kyubi) — 免費 Multimode Distortion",
+      "summary": "九種 distortion 模式（soft clipping、hard distortion 等）。Windows 64-bit VST2 格式，完全免費。",
+      "tags": [
+        "distortion",
+        "free plugin"
+      ],
+      "url": null,
+      "source": "KVR Audio",
+      "sourceUrl": "https://www.kvraudio.com/news/sender-spike-releases-free-qb-kyubi-multimode-distortion-windows-vst2-66228",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260223-sw-009",
       "radar": "software-dev",
