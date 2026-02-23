@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-22T18:20:00+08:00",
+  "updatedAt": "2026-02-23T08:00:00+08:00",
   "entries": [
     {
       "id": "20260222-sw-010",
@@ -5659,6 +5659,49 @@
       "url": "https://www.gearnews.com/safari-audio-superkeys-cubby-synth/",
       "source": "Gearnews",
       "sourceUrl": "https://www.gearnews.com/safari-audio-superkeys-cubby-synth/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Airwindows FatEQ — 免費空間感 EQ plugin",
+      "summary": "Chris Johnson 最新作品，用 Density 函數做 softclip 的 EQ，boost 時壓縮峰值、cut 時加深衰減，效果是調整樂器在空間中的距離感。小調整 = 空間定位，大調整 = multiband distortion。免費開源 MIT，CLAP/AU/VST3/LV2。",
+      "tags": [
+        "plugin",
+        "eq",
+        "free plugin",
+        "open source audio",
+        "audio effect"
+      ],
+      "url": "https://www.airwindows.com/fateq/",
+      "source": "Airwindows",
+      "sourceUrl": "https://www.airwindows.com/fateq/",
+      "price": "free",
+      "vram": null,
+      "license": "MIT"
+    },
+    {
+      "id": "20260223-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Apple Music 5.2 Android Beta — Playlist Playground AI 登陸 Android",
+      "summary": "Apple Music 的 AI 播放清單功能 Playlist Playground 從 iOS 26.4 beta 延伸到 Android 5.2 beta，輸入文字 prompt 產生 25 首歌播放清單附自訂封面，另加全頁面專輯封面 UI 和附近演唱會資訊。",
+      "tags": [
+        "music ai",
+        "music app",
+        "audio ai",
+        "music technology"
+      ],
+      "url": "https://music.apple.com",
+      "source": "9to5Google",
+      "sourceUrl": "https://9to5google.com/2026/02/22/apple-music-5-2-android/",
       "price": null,
       "vram": null,
       "license": null
