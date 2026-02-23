@@ -1,7 +1,188 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-23T08:10:00+08:00",
+  "updatedAt": "2026-02-23T08:20:00+08:00",
   "entries": [
+    {
+      "id": "20260223-sw-009",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Martin Fowler：Host Leadership — 取代 Servant Leadership",
+      "summary": "Fowler 和 Kent Beck 對談後提出 host leadership 取代 servant leadership（因為後者是 gaslighting）。Host 準備空間、邀請團隊、退後讓他們做，但保留介入權。",
+      "tags": [
+        "supervisory programming",
+        "developer experience"
+      ],
+      "url": "https://martinfowler.com/bliki/HostLeadership.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/bliki/HostLeadership.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Meta × NVIDIA 多年 AI 基礎建設合作",
+      "summary": "Meta 和 NVIDIA 簽多年合約部署數百萬顆 Blackwell + Rubin GPU。首次大規模 Grace-only 生產環境，整合 Confidential Computing 保護 WhatsApp AI。Meta capex -135B。",
+      "tags": [
+        "infrastructure",
+        "GPU",
+        "horizontal scaling"
+      ],
+      "url": "https://about.fb.com/news/2026/02/meta-nvidia-announce-long-term-infrastructure-partnership/",
+      "source": "Meta",
+      "sourceUrl": "https://about.fb.com/news/2026/02/meta-nvidia-announce-long-term-infrastructure-partnership/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI Cookbook：Building Governed AI Agents",
+      "summary": "2/23 新上架的 cookbook recipe，講 governed agent scaffolding：evals、guardrails、approval gates、confidence thresholds、HITL review loops。搭配 Skills/Shell/Compaction 使用。",
+      "tags": [
+        "guardrails",
+        "alignment",
+        "safety",
+        "harness engineering"
+      ],
+      "url": "https://developers.openai.com/cookbook/topic/agents/",
+      "source": "OpenAI",
+      "sourceUrl": "https://developers.openai.com/cookbook/topic/agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": ".NET 11 Preview 1：Runtime Async + BFloat16 + CoreCLR WASM",
+      "summary": ".NET 11 把 async/await 從 C# compiler state machine 移到 CoreCLR runtime 層級。新增 BFloat16 給 AI/ML，CoreCLR 開始接手 WASM 瀏覽器端取代 Mono。預計 2026/11 GA。",
+      "tags": [
+        "runtime",
+        "webassembly",
+        "ai models"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/dotnet-11-preview1/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/dotnet-11-preview1/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Amazon Bedrock：Reinforcement Fine-Tuning + OpenAI 相容 API",
+      "summary": "AWS Bedrock 支援開放權重模型的 RFT，微調後直接用 OpenAI-compatible Responses API 推論。支援 qwen3-32b 和 gpt-oss-20b，可用 rule-based grader / AI judge / Lambda 當 reward function。",
+      "tags": [
+        "fine-tuning",
+        "ai models",
+        "reinforcement learning"
+      ],
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-reinforcement-fine-tuning-openai/",
+      "source": "AWS",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-reinforcement-fine-tuning-openai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare BYOIP 事故報告：BGP 路由意外撤回 ~1,100 prefix",
+      "summary": "2/20 Address API 部署 bug 將 pending_delete flag 當 string 誤讀，導致撤回所有 BYOIP 客戶 prefix。Code Orange 計畫反而造成事故，暴露 staging mock data 不足的風險。",
+      "tags": [
+        "incident management",
+        "postmortem",
+        "BGP"
+      ],
+      "url": "https://blog.cloudflare.com/cloudflare-outage-february-20-2026/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/cloudflare-outage-february-20-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler：Harness Engineering — AI Agent 的未來 Service Template",
+      "summary": "Fowler 回應 OpenAI harness engineering，定義三層框架：Context Engineering、Architectural Constraints（deterministic linter + structural test）、Garbage Collection（定期抓架構違規）。預測 harness 會變成標準 service template。",
+      "tags": [
+        "harness engineering",
+        "supervisory programming",
+        "agentic engineering"
+      ],
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Stripe Minions Part 2：每週 1,300+ PR 的 One-Shot Coding Agent",
+      "summary": "Stripe 公開 Minions 架構——完全無人值守的 coding agent，在獨立 devbox 裡跑完 write → test → fix → PR 全流程。用 blueprints 標準化步驟，失敗 retry 1-2 次就回交人類。人類只做 code review。",
+      "tags": [
+        "ai coding",
+        "agentic engineering",
+        "code generation"
+      ],
+      "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "source": "Stripe Engineering",
+      "sourceUrl": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260223-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Responses API：Skills + Shell + Compaction — Agent 基礎設施 production 化",
+      "summary": "OpenAI 把 Skills（versioned 行為模組）、Shell（hosted/local 執行環境）、Compaction（server-side context 壓縮）整合進 Responses API，讓長時間運行 agent 有正式的 state management。從 toy demo 到 production-grade agent platform。",
+      "tags": [
+        "ai agent",
+        "function calling",
+        "tool use",
+        "skills ecosystem"
+      ],
+      "url": "https://popularai.substack.com/p/ai-agents-become-platforms-in-2026",
+      "source": "Popular AI Substack",
+      "sourceUrl": "https://popularai.substack.com/p/ai-agents-become-platforms-in-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260222-sw-010",
       "radar": "software-dev",
@@ -5714,7 +5895,13 @@
       "priority": "high",
       "title": "ggml.ai joins Hugging Face — llama.cpp 團隊併入 HF 推進 Local AI",
       "summary": "llama.cpp 創始人 Georgi Gerganov 帶團隊加入 Hugging Face，目標打通 transformers ↔ GGUF 生態，未來模型發布直接支援 local inference 格式。對所有跑本地模型的人都是超大利多。",
-      "tags": ["llm_inference", "gguf", "quantization", "llama.cpp", "local inference"],
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization",
+        "llama.cpp",
+        "local inference"
+      ],
       "url": "https://github.com/ggml-org/llama.cpp/discussions/19759",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/",
@@ -5730,7 +5917,11 @@
       "priority": "high",
       "title": "Open WebUI Desktop — 本地 LLM 桌面介面一鍵啟動",
       "summary": "Open WebUI 出桌面版，Electron 包裝、跨平台支援，搭配 Ollama 直接用，不用手動 docker/CLI。Alpha 階段但已有 856 stars。",
-      "tags": ["ollama", "local inference", "self-hosted llm"],
+      "tags": [
+        "ollama",
+        "local inference",
+        "self-hosted llm"
+      ],
       "url": "https://github.com/open-webui/desktop",
       "source": "GitHub Trending",
       "sourceUrl": "https://github.com/open-webui/desktop",
@@ -5746,7 +5937,11 @@
       "priority": "medium",
       "title": "QuivrHQ/MegaParse — 零資訊損失文件解析器",
       "summary": "PDF/Word/PPT 零資訊損失解析器，專為 LLM ingestion 設計。Benchmark 贏 LlamaParse 和 Unstructured，支援表格、圖片、TOC 全提取。",
-      "tags": ["document parsing", "rag", "llm_inference"],
+      "tags": [
+        "document parsing",
+        "rag",
+        "llm_inference"
+      ],
       "url": "https://github.com/QuivrHQ/MegaParse",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/22/QuivrHQ-MegaParse.html",
@@ -5762,7 +5957,12 @@
       "priority": "medium",
       "title": "mixedbread-ai/mgrep — 語意版 grep CLI",
       "summary": "對整個 repo 做 semantic search，支援 code/PDF/圖片。專為 coding agent 設計，比 grep workflow 省 2x tokens。CLI-native，背景 index。",
-      "tags": ["semantic search", "embedding", "rag", "ai_devtools"],
+      "tags": [
+        "semantic search",
+        "embedding",
+        "rag",
+        "ai_devtools"
+      ],
       "url": "https://github.com/mixedbread-ai/mgrep",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/22/mixedbread-ai-mgrep.html",
@@ -5778,7 +5978,12 @@
       "priority": "low",
       "title": "Netron — 神經網路模型視覺化 (GGUF 支援)",
       "summary": "神經網路模型視覺化神器，現在實驗性支援 GGUF 格式。能直接看量化模型結構，跑本地模型的人拿來 debug 超方便。",
-      "tags": ["onnx", "pytorch", "gguf", "quantization"],
+      "tags": [
+        "onnx",
+        "pytorch",
+        "gguf",
+        "quantization"
+      ],
       "url": "https://github.com/lutzroeder/netron",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/22/lutzroeder-netron.html",
@@ -5794,7 +5999,12 @@
       "priority": "high",
       "title": "Qwen3.5-397B-A17B — Alibaba 最新 MoE 多模態大模型",
       "summary": "397B 總參數但每 token 只啟用 17B，原生多模態（文字+圖片+UI 操作）。262K context、201 語言。Apache 2.0 開源。Q4 量化後約 12-14GB VRAM 可跑。",
-      "tags": ["qwen", "llm_inference", "quantization", "multimodal"],
+      "tags": [
+        "qwen",
+        "llm_inference",
+        "quantization",
+        "multimodal"
+      ],
       "url": "https://qwen.ai/blog?id=qwen3.5",
       "source": "Datacamp / Artificial Analysis",
       "sourceUrl": "https://artificialanalysis.ai/articles/qwen3-5-397b-a17b-everything-you-need-to-know",
@@ -5810,7 +6020,13 @@
       "priority": "medium",
       "title": "Oumi — 端到端 LLM Fine-tune/Eval/Deploy 平台",
       "summary": "直接支援 Qwen3/DeepSeek-R1/gpt-oss。2月剛出 Lambda 合作 + 4B 模型 intent classification demo。支援 GRPO/LoRA/QLoRA/DPO。",
-      "tags": ["fine-tuning", "lora", "qlora", "peft", "deployment"],
+      "tags": [
+        "fine-tuning",
+        "lora",
+        "qlora",
+        "peft",
+        "deployment"
+      ],
       "url": "https://github.com/oumi-ai/oumi",
       "source": "MAGI//ARCHIVE + GitHub Trending",
       "sourceUrl": "https://github.com/oumi-ai/oumi",
@@ -5826,7 +6042,12 @@
       "priority": "medium",
       "title": "GitNexus — Code Knowledge Graph + Graph RAG Agent",
       "summary": "把 repo 變成 knowledge graph + Graph RAG Agent。瀏覽器或 CLI 都能跑，接 MCP 給 Claude Code/Cursor 用。今天 +424 stars。",
-      "tags": ["graphrag", "knowledge graph", "semantic search", "rag"],
+      "tags": [
+        "graphrag",
+        "knowledge graph",
+        "semantic search",
+        "rag"
+      ],
       "url": "https://github.com/abhigyanpatwari/GitNexus",
       "source": "GitHub Trending",
       "sourceUrl": "https://github.com/abhigyanpatwari/GitNexus",
@@ -5842,7 +6063,13 @@
       "priority": "medium",
       "title": "AnyLabeling — YOLO + SAM3 一站式資料標註",
       "summary": "剛加入 SAM 3 支援，可以用文字 prompt 做 open-vocabulary segmentation。本地跑 inference，標資料速度飛快。",
-      "tags": ["yolo", "segment anything", "object detection", "sam", "data labeling"],
+      "tags": [
+        "yolo",
+        "segment anything",
+        "object detection",
+        "sam",
+        "data labeling"
+      ],
       "url": "https://github.com/vietanhdev/anylabeling",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/22/vietanhdev-anylabeling.html",
@@ -5858,7 +6085,12 @@
       "priority": "medium",
       "title": "UltraRAG — Low-Code MCP Framework for Complex RAG Pipelines",
       "summary": "OpenBMB 出品的 Low-Code MCP Framework 做複雜 RAG pipeline，支援 multi-hop retrieval、hybrid search、streaming generation。Python trending。",
-      "tags": ["rag", "retrieval augmented generation", "mcp", "langchain"],
+      "tags": [
+        "rag",
+        "retrieval augmented generation",
+        "mcp",
+        "langchain"
+      ],
       "url": "https://github.com/OpenBMB/UltraRAG",
       "source": "GitHub Trending Python",
       "sourceUrl": "https://github.com/OpenBMB/UltraRAG",
