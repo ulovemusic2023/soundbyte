@@ -2,7 +2,7 @@ export const zhTW = {
   // Header
   tagline: 'Tech intelligence, distilled.',
   insights: 'insights',
-  radars: '3 radars',
+  radars: '4 radars',
   updatedDaily: 'updated daily',
 
   // Navigation
@@ -21,6 +21,8 @@ export const zhTW = {
   musicTech: '🎵 音樂科技',
   aiInfra: '🤖 AI 基礎建設',
   softwareDev: '💻 軟體開發',
+  founderMind: '🧠 創辦人思維',
+  mentalModel: '🟠 Mental Model',
   priority: '優先級',
   paradigmShift: '🔴 Paradigm Shift',
   high: '🟡 High',

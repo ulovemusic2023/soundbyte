@@ -18,12 +18,14 @@ const priorityConfig: Record<string, { label: string; dotClass: string }> = {
   high: { label: 'HIGH', dotClass: 'priority-dot-high' },
   medium: { label: 'MEDIUM', dotClass: 'priority-dot-medium' },
   low: { label: 'LOW', dotClass: 'priority-dot-low' },
+  'mental-model': { label: 'MENTAL MODEL', dotClass: 'priority-dot-mental-model' },
 }
 
 const radarEmoji: Record<string, string> = {
   'software-dev': '💻',
   'ai-infra': '🤖',
   'music-tech': '🎵',
+  'founder-mind': '🧠',
 }
 
 export default function TimelineView({ entries, onTagClick, t, collections, onAddToCollection }: TimelineViewProps) {

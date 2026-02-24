@@ -13,7 +13,7 @@ interface EntryCardProps {
   onAddToCollection: (collectionId: string, entryId: string) => void
 }
 
-const priorityConfig = {
+const priorityConfig: Record<string, { label: string; dotClass: string; cardClass: string }> = {
   'paradigm-shift': {
     label: 'PARADIGM SHIFT',
     dotClass: 'priority-dot-paradigm',
@@ -34,17 +34,23 @@ const priorityConfig = {
     dotClass: 'priority-dot-low',
     cardClass: 'card-priority-low',
   },
+  'mental-model': {
+    label: 'MENTAL MODEL',
+    dotClass: 'priority-dot-mental-model',
+    cardClass: 'card-priority-mental-model',
+  },
 }
 
 const radarLabel: Record<string, string> = {
   'software-dev': 'DEV',
   'ai-infra': 'AI',
   'music-tech': 'MUSIC',
+  'founder-mind': 'FOUNDER',
 }
 
 export default function EntryCard({ entry, onTagClick, t, collections, onAddToCollection }: EntryCardProps) {
   const [expanded, setExpanded] = useState(false)
-  const priority = priorityConfig[entry.priority]
+  const priority = priorityConfig[entry.priority] ?? priorityConfig.low
 
   return (
     <article

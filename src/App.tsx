@@ -31,8 +31,9 @@ function getBaseUrl() {
 const priorityOrder: Record<string, number> = {
   'paradigm-shift': 0,
   high: 1,
-  medium: 2,
-  low: 3,
+  'mental-model': 2,
+  medium: 3,
+  low: 4,
 }
 
 function App() {

@@ -4,7 +4,7 @@ export const en: Record<TranslationKeys, string> = {
   // Header
   tagline: 'Tech intelligence, distilled.',
   insights: 'insights',
-  radars: '3 radars',
+  radars: '4 radars',
   updatedDaily: 'updated daily',
 
   // Navigation
@@ -23,6 +23,8 @@ export const en: Record<TranslationKeys, string> = {
   musicTech: '🎵 Music Tech',
   aiInfra: '🤖 AI Infra',
   softwareDev: '💻 Software Dev',
+  founderMind: '🧠 Founder Mind',
+  mentalModel: '🟠 Mental Model',
   priority: 'Priority',
   paradigmShift: '🔴 Paradigm Shift',
   high: '🟡 High',

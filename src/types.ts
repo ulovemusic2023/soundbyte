@@ -1,9 +1,9 @@
 export interface Entry {
   id: string
-  radar: 'software-dev' | 'ai-infra' | 'music-tech'
+  radar: 'software-dev' | 'ai-infra' | 'music-tech' | 'founder-mind'
   date: string
-  cycle: 'morning' | 'afternoon' | 'evening'
-  priority: 'paradigm-shift' | 'high' | 'medium' | 'low'
+  cycle: 'morning' | 'afternoon' | 'evening' | 'tuesday' | string
+  priority: 'paradigm-shift' | 'high' | 'medium' | 'low' | 'mental-model'
   title: string
   summary: string
   tags: string[]
@@ -21,7 +21,7 @@ export interface IndexData {
   entries: Entry[]
 }
 
-export type RadarFilter = 'all' | 'software-dev' | 'ai-infra' | 'music-tech'
-export type PriorityFilter = 'all' | 'paradigm-shift' | 'high' | 'medium'
+export type RadarFilter = 'all' | 'software-dev' | 'ai-infra' | 'music-tech' | 'founder-mind'
+export type PriorityFilter = 'all' | 'paradigm-shift' | 'high' | 'medium' | 'mental-model'
 export type TimeFilter = 'all' | 'today' | 'week' | 'month'
 export type SortOption = 'date' | 'priority' | 'relevance'

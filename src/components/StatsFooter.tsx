@@ -23,6 +23,7 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
     'music-tech': entries.filter((e) => e.radar === 'music-tech').length,
     'ai-infra': entries.filter((e) => e.radar === 'ai-infra').length,
     'software-dev': entries.filter((e) => e.radar === 'software-dev').length,
+    'founder-mind': entries.filter((e) => e.radar === 'founder-mind').length,
   }
 
   const total = entries.length || 1
@@ -30,6 +31,7 @@ export default function StatsFooter({ entries, t }: StatsFooterProps) {
     { label: t('musicTech'), count: radarCount['music-tech'], color: 'var(--radar-music)' },
     { label: t('aiInfra'), count: radarCount['ai-infra'], color: 'var(--radar-ai)' },
     { label: t('softwareDev'), count: radarCount['software-dev'], color: 'var(--radar-dev)' },
+    { label: t('founderMind'), count: radarCount['founder-mind'], color: 'var(--radar-founder)' },
   ]
 
   return (

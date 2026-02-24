@@ -38,6 +38,10 @@
   --radar-music: #EC4899;
   --radar-ai: #06B6D4;
   --radar-dev: #8B5CF6;
+  --radar-founder: #F59E0B;
+
+  /* Priority Colors — extended */
+  --priority-mental-model: #F59E0B;
 
   /* Tag */
   --tag-bg: rgba(99, 102, 241, 0.1);
@@ -338,6 +342,7 @@ body {
 .card-priority-high { border-left-color: var(--priority-high) !important; }
 .card-priority-medium { border-left-color: var(--priority-medium) !important; }
 .card-priority-low { border-left-color: var(--priority-low) !important; }
+.card-priority-mental-model { border-left-color: var(--priority-mental-model) !important; }
 
 .card-priority-paradigm:hover { box-shadow: var(--shadow-card-hover), 0 0 20px rgba(244, 63, 94, 0.1); }
 .card-priority-high:hover { box-shadow: var(--shadow-card-hover), 0 0 20px rgba(245, 158, 11, 0.1); }
@@ -615,6 +620,7 @@ body {
 .priority-dot-high { background: var(--priority-high); }
 .priority-dot-medium { background: var(--priority-medium); }
 .priority-dot-low { background: var(--priority-low); }
+.priority-dot-mental-model { background: var(--priority-mental-model); }
 
 /* ═══════════════════════════════════════════════════════════════════
    Dropdown / Select Style

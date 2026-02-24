@@ -74,6 +74,7 @@ export default function FilterBar({
     { value: 'music-tech', labelKey: 'musicTech' },
     { value: 'ai-infra', labelKey: 'aiInfra' },
     { value: 'software-dev', labelKey: 'softwareDev' },
+    { value: 'founder-mind', labelKey: 'founderMind' },
   ]
 
   const priorityOptions: { value: PriorityFilter; labelKey: TranslationKeys; color?: string }[] = [
@@ -81,6 +82,7 @@ export default function FilterBar({
     { value: 'paradigm-shift', labelKey: 'paradigmShift', color: 'var(--priority-paradigm)' },
     { value: 'high', labelKey: 'high', color: 'var(--priority-high)' },
     { value: 'medium', labelKey: 'medium', color: 'var(--priority-medium)' },
+    { value: 'mental-model', labelKey: 'mentalModel', color: 'var(--priority-mental-model)' },
   ]
 
   const timeOptions: { value: TimeFilter; labelKey: TranslationKeys }[] = [
