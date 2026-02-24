@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-24T09:00:00+08:00",
+  "updatedAt": "2026-02-24T18:00:00+08:00",
   "entries": [
     {
       "id": "20260224-ai-001",
@@ -7169,6 +7169,90 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260224-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Spotify Prompted Playlists 擴展至英國、愛爾蘭、澳洲、瑞典",
+      "summary": "Spotify AI 歌單功能擴大測試市場，Premium 用戶可用自然語言描述氛圍/場景，AI 根據聽歌紀錄生成客製歌單，每首歌附選曲理由。可設每日/每週自動更新。",
+      "tags": [
+        "music ai",
+        "spotify",
+        "ai playlist",
+        "music industry"
+      ],
+      "url": "https://newsroom.spotify.com/2026-02-23/prompted-playlist-prompts-to-try/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ardour 9.2 釋出——MIDI Note Chasing + Note Duplication",
+      "summary": "開源 DAW Ardour 9.2 新增 MIDI note chasing（播放中途進入也能聽到持續音符）、MIDI 音符複製、改善 pitchbend 顯示精度。跨三大平台，支援 VST3/AU/LV2/LADSPA。",
+      "tags": [
+        "daw",
+        "midi",
+        "open source",
+        "music production"
+      ],
+      "url": "https://ardour.org/whatsnew.html",
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/ardour-9-2-free-and-open-daw/",
+      "price": "Free (open source)",
+      "vram": null,
+      "license": "GPL"
+    },
+    {
+      "id": "20260224-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "MixWave D.W. Fearn VT-5 真空管 EQ Plugin",
+      "summary": "D.W. Fearn VT-5 經典真空管 EQ 的 plugin 版本，component-level 建模變壓器+管級。支援 wet/dry 混合 + 最高 8x oversampling。首發價 。",
+      "tags": [
+        "plugin",
+        "eq",
+        "tube",
+        "mixing"
+      ],
+      "url": "https://mixwave.com/products/dw-fearn-vt-5",
+      "source": "MixWave",
+      "sourceUrl": "https://mixwave.com/blogs/news/mixwave-d-w-fearn-vt-5-is-available-now",
+      "price": "$139 (intro) / $189",
+      "vram": null,
+      "license": "Commercial"
+    },
+    {
+      "id": "20260224-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Beatsurfing LØW v1.1.0 Bass Synth 大更新",
+      "summary": "Bass 合成器 LØW 更新至 1.1.0，加入 6 個新引擎 + 自訂 keytracking envelope + 拖放匯出 one-shot。新用戶特價 $49.50（原 $149，到 2/28）。",
+      "tags": [
+        "synthesizer",
+        "bass",
+        "plugin",
+        "vst"
+      ],
+      "url": "https://beatsurfing.com/audio-plugins/low-bass-synth-audio-plugin/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/beatsurfing-updates-low-bass-focused-synthesizer-to-v1-1-0/",
+      "price": "$49.50 (promo) / $149",
+      "vram": null,
+      "license": "Commercial"
     }
   ]
 }
