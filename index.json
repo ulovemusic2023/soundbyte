@@ -1,7 +1,132 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-24T08:00:00+08:00",
+  "updatedAt": "2026-02-24T08:10:00+08:00",
   "entries": [
+    {
+      "id": "20260224-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VectifyAI/PageIndex — Vectorless Reasoning-based RAG",
+      "summary": "不用 vector DB 的 RAG 新架構，用 LLM 在文件的樹狀索引上做推理式檢索。FinanceBench 98.7% 準確率，支援 self-host/API/MCP 整合。",
+      "tags": [
+        "rag",
+        "document_parsing",
+        "semantic_search",
+        "llm_inference"
+      ],
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "取決於後端 LLM（配 7B 約 6-8GB）",
+      "license": null
+    },
+    {
+      "id": "20260224-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "wisupai/e2m — Everything to Markdown for RAG",
+      "summary": "把 doc/pdf/ppt/epub/html/mp3 等十幾種格式轉成 Markdown，專為 RAG 和 fine-tuning 提供高品質資料。支援 Whisper 語音轉文字、Surya/Marker PDF 解析。",
+      "tags": [
+        "rag",
+        "document_parsing",
+        "whisper",
+        "fine_tuning"
+      ],
+      "url": "https://github.com/wisupai/e2m",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~2GB（CPU 也可跑）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260224-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "TabbyML/tabby — Self-hosted AI Coding Assistant",
+      "summary": "Consumer GPU 就能跑的 GitHub Copilot 替代品。內建 Answer Engine、code browser、GitLab MR indexing。最新版整合 Agent 功能。",
+      "tags": [
+        "ai_devtools",
+        "coding_agent",
+        "local_inference",
+        "model_serving"
+      ],
+      "url": "https://github.com/TabbyML/tabby",
+      "source": "MAGI//ARCHIVE + GitHub Trending",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "4-8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260224-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "janhq/jan ⭐40k+ — 100% 離線 LLM 桌面 App",
+      "summary": "一鍵從 HuggingFace 下載模型，內建 OpenAI-compatible API server。跨 Windows/macOS/Linux，適合不想碰 CLI 的人。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "local_inference",
+        "gguf"
+      ],
+      "url": "https://github.com/janhq/jan",
+      "source": "MAGI//ARCHIVE + GitHub Trending",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依模型（7B GGUF 約 4-6GB）",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260224-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "sansan0/TrendRadar ⭐46k+ — AI 輿情監控 + 趨勢追蹤",
+      "summary": "聚合 35+ 平台資訊，MCP 接入做 NL 分析，Docker self-host，RSS 訂閱 + 關鍵字篩選。整合 Telegram/Slack/飛書推送。",
+      "tags": [
+        "ai_devtools",
+        "semantic_search",
+        "docker"
+      ],
+      "url": "https://github.com/sansan0/TrendRadar",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "0（純 API 呼叫）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260224-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Lightricks/LTX-2 — 19B DiT Audio+Video 一體生成模型",
+      "summary": "第一個 DiT-based 音頻+影片一體生成 foundation model。支援 T2V、I2V、lipsync、LoRA、camera control。FP8 版本可降記憶體但仍需 20GB+。",
+      "tags": [
+        "audio_music_ai",
+        "video_generation",
+        "image_gen",
+        "lora"
+      ],
+      "url": "https://github.com/Lightricks/LTX-2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "FP8 ~20GB+ / FP16 ~40GB+",
+      "license": "開源（HuggingFace）"
+    },
     {
       "id": "20260224-mt-005",
       "radar": "music-tech",
