@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-24T08:10:00+08:00",
+  "updatedAt": "2026-02-24T08:20:00+08:00",
   "entries": [
     {
       "id": "20260224-ai-001",
@@ -6798,6 +6798,214 @@
       "url": "https://cursor.com/blog/marketplace",
       "source": "Cursor",
       "sourceUrl": "https://cursor.com/blog/marketplace",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 成為首個全面支援 Post-Quantum 加密的 SASE 平台",
+      "summary": "Cloudflare One 在 IPsec、TLS、MASQUE、Zero Trust 全面導入 hybrid ML-KEM，防禦量子威脅。60%+ TLS 流量已使用 PQ，無需硬體升級。",
+      "tags": [
+        "zero trust",
+        "post-quantum",
+        "SASE",
+        "encryption"
+      ],
+      "url": "https://blog.cloudflare.com/post-quantum-sase/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/post-quantum-sase/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 2.5 Plugin Marketplace + 非同步 Subagent 樹狀架構",
+      "summary": "Cursor 推出 plugin marketplace，subagent 可非同步 spawn 自己的 subagent，形成樹狀平行執行結構。AI coding 從單 agent 進化到自主分工並行。",
+      "tags": [
+        "ai coding",
+        "multi-agent",
+        "plugin",
+        "agentic engineering"
+      ],
+      "url": "https://cursor.com/changelog",
+      "source": "Cursor Forum",
+      "sourceUrl": "https://forum.cursor.com/t/cursor-2-5-plugins-sandbox-access-controls-and-async-subagents/152123",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Clinejection 供應鏈攻擊：AI Agent 成為新攻擊向量",
+      "summary": "Cline CLI v2.3.0 遭供應鏈攻擊，利用 GitHub Actions 中 Claude 自動 triage 的 prompt injection + cache poisoning 竊取 npm token，影響 ~4,000 台開發機。",
+      "tags": [
+        "supply chain security",
+        "prompt injection",
+        "ai agent",
+        "CI/CD"
+      ],
+      "url": "https://thehackernews.com/2026/02/cline-cli-230-supply-chain-attack.html",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/02/cline-cli-230-supply-chain-attack.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gemini 3.1 Pro：ARC-AGI-2 達 77.1%，推理能力翻倍",
+      "summary": "Google DeepMind 發布 Gemini 3.1 Pro，1M token context，原生多模態，ARC-AGI-2 分數比前代翻倍。已在 AI Studio、Vertex AI 開放。",
+      "tags": [
+        "reasoning",
+        "multimodal",
+        "benchmark",
+        "Google DeepMind"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic Self-Serve Enterprise + Cowork 知識工作模式",
+      "summary": "企業可自助購買 Enterprise plan，單一 seat 含 Claude + Claude Code + Cowork。Cowork 把 agent 能力延伸到非工程領域，搭配 Analytics API 做組織級用量追蹤。",
+      "tags": [
+        "ai agent",
+        "enterprise",
+        "agentic engineering",
+        "Anthropic"
+      ],
+      "url": "https://www.anthropic.com",
+      "source": "Anthropic Release Notes",
+      "sourceUrl": "https://releasebot.io/updates/anthropic/claude",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LangChain × monday Service：Eval-Driven Development 實戰",
+      "summary": "monday 用 LangSmith Vitest 整合做 agent 品質管控，評估時間從 162 秒降到 18 秒（8.7x），結合 offline + online eval 雙軌制。",
+      "tags": [
+        "llm evaluation",
+        "evals",
+        "harness engineering",
+        "CI/CD"
+      ],
+      "url": "https://blog.langchain.com/customers-monday/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/customers-monday/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "StepSecurity：AI Coding Agent 全生命週期治理",
+      "summary": "追蹤 Claude Code、Cursor、Codex、Copilot 的 IDE 擴充、MCP server、credential 使用。三階段防護：開發機 allowlist → repo 套件掃描 → CI/CD runtime 監控。",
+      "tags": [
+        "supply chain security",
+        "ai agent",
+        "governance",
+        "DevSecOps"
+      ],
+      "url": "https://www.stepsecurity.io",
+      "source": "StepSecurity Blog",
+      "sourceUrl": "https://www.stepsecurity.io/blog/securing-vibe-coding-and-ai-coding-agents-an-end-to-end-approach-with-stepsecurity",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenAI for India + Tata Stargate：100MW→1GW 主權 AI 基建",
+      "summary": "OpenAI 與 Tata 合作建 sovereign AI data center，TCS 數十萬員工部署 ChatGPT Enterprise + Codex。印度 1 億+ 週活用戶，AI infra 地緣競爭白熱化。",
+      "tags": [
+        "ai infrastructure",
+        "enterprise",
+        "sovereign AI",
+        "OpenAI"
+      ],
+      "url": "https://openai.com/index/openai-for-india/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-009",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Ollama 0.17：改善 OpenClaw Onboarding 體驗",
+      "summary": "簡化本地 LLM + OpenClaw 設定流程，搭配 Oracle Cloud Always Free Tier 可零成本跑 agent + 7B model。",
+      "tags": [
+        "local-first AI",
+        "ollama",
+        "OpenClaw"
+      ],
+      "url": "https://github.com/ollama/ollama/releases",
+      "source": "Phoronix",
+      "sourceUrl": "https://www.linux.org/threads/phoronix-ollama-0-17-released-with-improved-openclaw-onboarding.62903/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-010",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Martin Fowler：Harness 作為未來的 Service Template",
+      "summary": "Fowler 推測 harness engineering 會演化成 service template — 強制 module boundary、限制 tech stack topology、對 AI 最佳化。",
+      "tags": [
+        "harness engineering",
+        "architecture",
+        "supervisory programming"
+      ],
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
       "price": null,
       "vram": null,
       "license": null
