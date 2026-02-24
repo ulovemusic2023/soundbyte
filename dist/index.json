@@ -1,7 +1,174 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-24T18:10:00+08:00",
+  "updatedAt": "2026-02-24T18:20:00+08:00",
   "entries": [
+    {
+      "id": "20260224-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "AWS + Hugging Face smolagents 多模型醫療 AI Agent 架構",
+      "summary": "用 HF smolagents 建構多後端醫療 agent（SageMaker + Bedrock + Container），統一 Messages API 讓 agent 在不同模型後端間無縫切換。",
+      "tags": [
+        "ai agent",
+        "smolagents",
+        "aws",
+        "healthcare"
+      ],
+      "url": "https://aws.amazon.com/blogs/machine-learning/agentic-ai-with-multi-model-framework-using-hugging-face-smolagents-on-aws/",
+      "source": "AWS Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/agentic-ai-with-multi-model-framework-using-hugging-face-smolagents-on-aws/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "OpenAI IRS 申報移除 safely — 使命宣言第 6 次改寫",
+      "summary": "轉型營利後的 IRS 990 表格中，使命宣言從「safely benefits humanity」改為「benefits all of humanity」。9 年內第 6 次修改，首次完全移除 safety 語言。",
+      "tags": [
+        "openai",
+        "ai safety",
+        "governance"
+      ],
+      "url": "https://fortune.com/2026/02/23/openai-mission-statement-changed-restructuring-forprofit-business/",
+      "source": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/02/23/openai-mission-statement-changed-restructuring-forprofit-business/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ladybird 瀏覽器用 AI 輔助從 C++ 轉向 Rust",
+      "summary": "用 Claude Code + Codex 兩週完成 LibJS 引擎 25K 行 Rust 移植，byte-for-byte 一致、零 regression。AI 讓語言遷移從痛苦投資變成可行漸進策略。",
+      "tags": [
+        "rust",
+        "ai coding",
+        "ladybird",
+        "code generation"
+      ],
+      "url": "https://ladybird.org/news/",
+      "source": "Hacker News / Ladybird",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47120899",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Vercel Next.js WebStreams 重寫達 10x 性能提升",
+      "summary": "瓶頸在 WebStreams 本身而非 app code。重寫消除 Promise chain 和 microtask queue overhead 達成 10x 加速。同時新增 AI Gateway 影片生成 + Blob private storage。",
+      "tags": [
+        "next.js",
+        "vercel",
+        "performance",
+        "webstreams"
+      ],
+      "url": "https://community.vercel.com/t/news-cache-2026-02-23/34198",
+      "source": "Vercel",
+      "sourceUrl": "https://community.vercel.com/t/news-cache-2026-02-23/34198",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI Frontier Alliance 聯手四大顧問公司",
+      "summary": "OpenAI 與 BCG/McKinsey/Accenture/Capgemini 結盟推 Frontier AI agent 平台進企業。Frontier 作為企業語義層讓 agent 橫跨 CRM、HR、ticketing 執行工作流程。",
+      "tags": [
+        "openai",
+        "frontier platform",
+        "agentic enterprise"
+      ],
+      "url": "https://fortune.com/2026/02/23/openai-partners-with-mckinsey-bcg-accenture-and-capgemini-to-push-its-frontier-ai-agent-platform/",
+      "source": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/02/23/openai-partners-with-mckinsey-bcg-accenture-and-capgemini-to-push-its-frontier-ai-agent-platform/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "InfoQ：MCP + OPA + Ephemeral Runners 最小權限 AI Agent Gateway",
+      "summary": "三層架構讓 AI agent 不直接碰基礎設施。MCP 做 tool discovery，OPA 做 policy as code 授權，短命 runner 限縮爆炸半徑。CI/CD、infra automation 通用安全模式。",
+      "tags": [
+        "mcp",
+        "ai agent",
+        "zero trust",
+        "architecture",
+        "opa"
+      ],
+      "url": "https://www.infoq.com/articles/building-ai-agent-gateway-mcp/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/building-ai-agent-gateway-mcp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 公開指控三家中國 AI 實驗室大規模蒸餾竊取",
+      "summary": "DeepSeek、Moonshot、MiniMax 用 24K+ 假帳號對 Claude 發起 1600 萬次對話，系統性蒸餾 agentic reasoning、tool use、coding 能力。Anthropic 視為國安威脅。",
+      "tags": [
+        "distillation",
+        "ai safety",
+        "anthropic",
+        "deepseek"
+      ],
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Simon Willison 啟動 Agentic Engineering Patterns 指南",
+      "summary": "Simon Willison 開始系統性記錄 coding agent 時代的工程實踐模式。核心觀點：寫 code 成本趨近於零，軟體工程習慣需全面重建。首兩章：code is cheap now + Red/Green TDD for agents。",
+      "tags": [
+        "agentic engineering",
+        "ai coding",
+        "TDD",
+        "simon willison"
+      ],
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260224-ai-007",
       "radar": "ai-infra",
