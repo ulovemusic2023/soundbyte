@@ -1,9 +1,7 @@
-import { useState, useEffect, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Fuse from 'fuse.js'
 import type {
-  Entry,
-  IndexData,
   RadarFilter,
   PriorityFilter,
   TimeFilter,
@@ -13,6 +11,7 @@ import { useTheme } from './hooks/useTheme'
 import { useI18n } from './hooks/useI18n'
 import { useAllTags } from './hooks/useAllTags'
 import { useCollections } from './hooks/useCollections'
+import { useApi } from './hooks/useApi'
 import Header, { type NavPage } from './components/Header'
 import SearchBar from './components/SearchBar'
 import FilterBar, { type ViewMode } from './components/FilterBar'
@@ -23,10 +22,6 @@ import CollectionManager from './components/CollectionManager'
 import StatsFooter from './components/StatsFooter'
 import DonationSection from './components/DonationSection'
 import Footer from './components/Footer'
-
-function getBaseUrl() {
-  return import.meta.env.BASE_URL
-}
 
 const priorityOrder: Record<string, number> = {
   'paradigm-shift': 0,
@@ -48,8 +43,7 @@ function App() {
     removeFromCollection,
   } = useCollections()
 
-  const [entries, setEntries] = useState<Entry[]>([])
-  const [loading, setLoading] = useState(true)
+  const { entries, loading, apiOnline } = useApi()
   const [query, setQuery] = useState('')
   const [radarFilter, setRadarFilter] = useState<RadarFilter>('all')
   const [priorityFilter, setPriorityFilter] = useState<PriorityFilter>('all')
@@ -59,19 +53,6 @@ function App() {
   const [viewMode, setViewMode] = useState<ViewMode>('grid')
 
   const allTags = useAllTags(entries)
-
-  useEffect(() => {
-    fetch(`${getBaseUrl()}index.json`)
-      .then((res) => res.json())
-      .then((data: IndexData) => {
-        setEntries(data.entries)
-        setLoading(false)
-      })
-      .catch((err) => {
-        console.error('Failed to load index.json:', err)
-        setLoading(false)
-      })
-  }, [])
 
   const fuse = useMemo(
     () =>
@@ -176,6 +157,16 @@ function App() {
       className="min-h-screen relative transition-colors duration-300"
       style={{ background: 'var(--bg-base)' }}
     >
+      {/* API offline banner */}
+      {apiOnline === false && (
+        <div
+          className="text-center text-xs py-2 font-mono"
+          style={{ background: 'var(--priority-paradigm)', color: '#fff' }}
+        >
+          ⚡ Backend offline — showing cached static data
+        </div>
+      )}
+
       <Header
         entryCount={entries.length}
         theme={theme}
