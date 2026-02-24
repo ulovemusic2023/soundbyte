@@ -15,12 +15,6 @@ export interface Entry {
   license: string | null
 }
 
-export interface IndexData {
-  version: number
-  updatedAt: string
-  entries: Entry[]
-}
-
 export type RadarFilter = 'all' | 'software-dev' | 'ai-infra' | 'music-tech' | 'founder-mind'
 export type PriorityFilter = 'all' | 'paradigm-shift' | 'high' | 'medium' | 'mental-model'
 export type TimeFilter = 'all' | 'today' | 'week' | 'month'

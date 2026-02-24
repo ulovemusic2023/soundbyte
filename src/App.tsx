@@ -163,7 +163,7 @@ function App() {
           className="text-center text-xs py-2 font-mono"
           style={{ background: 'var(--priority-paradigm)', color: '#fff' }}
         >
-          ⚡ Backend offline — showing cached static data
+          ⚡ Backend offline — data unavailable. Please check the server.
         </div>
       )}
 

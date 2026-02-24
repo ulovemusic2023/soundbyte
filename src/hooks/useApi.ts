@@ -1,10 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { healthCheck, fetchEntries, type ApiEntry } from '../api/client'
-import type { Entry, IndexData } from '../types'
-
-function getBaseUrl() {
-  return import.meta.env.BASE_URL
-}
+import type { Entry } from '../types'
 
 // Map API entry → frontend Entry format
 function apiToEntry(e: ApiEntry): Entry {
@@ -42,14 +38,6 @@ async function loadAllFromApi(): Promise<Entry[]> {
   return all
 }
 
-// Fallback: load from static index.json
-async function loadFromStatic(): Promise<Entry[]> {
-  const res = await fetch(`${getBaseUrl()}index.json`)
-  if (!res.ok) throw new Error(`Static fetch failed: ${res.status}`)
-  const data: IndexData = await res.json()
-  return data.entries
-}
-
 export function useApi() {
   const [entries, setEntries] = useState<Entry[]>([])
   const [loading, setLoading] = useState(true)
@@ -61,29 +49,22 @@ export function useApi() {
     checkedRef.current = true
     setLoading(true)
 
-    // Try API first
     const online = await healthCheck()
     setApiOnline(online)
 
+    if (!online) {
+      console.error('[useApi] Backend is offline — no data available')
+      setLoading(false)
+      return
+    }
+
     try {
-      if (online) {
-        console.log('[useApi] Loading from backend API')
-        const entries = await loadAllFromApi()
-        setEntries(entries)
-      } else {
-        console.log('[useApi] API offline, falling back to static index.json')
-        const entries = await loadFromStatic()
-        setEntries(entries)
-      }
+      console.log('[useApi] Loading from backend API')
+      const entries = await loadAllFromApi()
+      setEntries(entries)
     } catch (err) {
-      console.error('[useApi] Load failed, trying fallback:', err)
-      try {
-        const entries = await loadFromStatic()
-        setEntries(entries)
-        setApiOnline(false)
-      } catch (err2) {
-        console.error('[useApi] All sources failed:', err2)
-      }
+      console.error('[useApi] Failed to load from API:', err)
+      setApiOnline(false)
     }
 
     setLoading(false)
