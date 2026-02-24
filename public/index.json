@@ -1,7 +1,196 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-24T18:00:00+08:00",
+  "updatedAt": "2026-02-24T18:10:00+08:00",
   "entries": [
+    {
+      "id": "20260224-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "deepseek-ai/Engram — Conditional N-gram Memory for LLMs",
+      "summary": "DeepSeek 用 N-gram embedding 做條件記憶模組，O(1) lookup，把靜態知識查表卸載到 CPU RAM。27B 模型 iso-FLOPs 下全面打贏 MoE baseline，省 ~30% VRAM。",
+      "tags": [
+        "deepseek",
+        "llm_inference",
+        "quantization",
+        "moe"
+      ],
+      "url": "https://github.com/deepseek-ai/Engram",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/deepseek-ai-Engram.html",
+      "price": null,
+      "vram": "~10-12GB (27B with offload)",
+      "license": "DeepSeek Model License"
+    },
+    {
+      "id": "20260224-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OHF-Voice/piper1-gpl — Fast Local Neural TTS Engine",
+      "summary": "Piper TTS 的 GPL 版，基於 espeak-ng 的輕量 neural TTS。CPU 就飛快，多語系支援，Open Home Foundation 維護。",
+      "tags": [
+        "piper",
+        "tts",
+        "neural_tts",
+        "speech_synthesis"
+      ],
+      "url": "https://github.com/OHF-Voice/piper1-gpl",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/OHF-Voice-piper1-gpl.html",
+      "price": null,
+      "vram": "0GB (CPU only)",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260224-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ollama v0.17.0 — Auto Context Length + OpenClaw Integration",
+      "summary": "macOS/Windows 自動根據 VRAM 設定 context length，tokenizer 效能改善。新增 ollama launch openclaw 一鍵部署。",
+      "tags": [
+        "ollama",
+        "local_inference",
+        "self-hosted_llm"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.17.0",
+      "price": null,
+      "vram": "depends on model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260224-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TTSLab — Browser-based TTS/STT via WebGPU",
+      "summary": "完全在瀏覽器跑的 TTS + STT 實驗室，WebGPU + WASM，零後端。支援 Kokoro 82M、SpeechT5、Whisper，還有 Voice Agent 全程不出裝置。",
+      "tags": [
+        "tts",
+        "whisper",
+        "speech_synthesis",
+        "webgpu"
+      ],
+      "url": "https://ttslab.dev",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47123980",
+      "price": null,
+      "vram": "0GB (browser WebGPU)",
+      "license": null
+    },
+    {
+      "id": "20260224-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "KrillinAI ⭐12k+ — Video Translation + Voice Cloning",
+      "summary": "影片翻譯+配音+voice cloning 一站式工具。100 種語言、Whisper ASR + LLM 翻譯 + CosyVoice 語音合成，一鍵跑完整流程。",
+      "tags": [
+        "voice_cloning",
+        "tts",
+        "whisper",
+        "cosyvoice",
+        "video_translation"
+      ],
+      "url": "https://github.com/krillinai/KrillinAI",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/krillinai-KrillinAI.html",
+      "price": null,
+      "vram": "~4-8GB (Whisper + CosyVoice)",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260224-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "livekit/agents ⭐5k+ — Realtime Voice AI Agent Framework",
+      "summary": "即時 voice AI agent 框架。WebRTC 抽象、多 LLM provider、自動 failover、SIP 電話整合、多人語音 session。",
+      "tags": [
+        "real-time_voice",
+        "voice_synthesis",
+        "speech_recognition",
+        "webrtc"
+      ],
+      "url": "https://github.com/livekit/agents",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/livekit-agents.html",
+      "price": null,
+      "vram": "depends on models used",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260224-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Wan-Video/Wan2.1 ⭐20k+ — Open Video Generation Models",
+      "summary": "阿里開源影片生成模型，1.3B (8.2GB VRAM) / 14B 兩版本。支援 T2V、I2V、影片編輯、V2A。已整合 ComfyUI + Diffusers。",
+      "tags": [
+        "video_generation",
+        "text_to_video",
+        "image_generation",
+        "diffusers"
+      ],
+      "url": "https://github.com/Wan-Video/Wan2.1",
+      "source": "MAGI//ARCHIVE + GitHub Trending",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/Wan-Video-Wan2.1.html",
+      "price": null,
+      "vram": "8.2GB (1.3B) / 24GB+ (14B)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260224-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Intellindust-AI-Lab/DEIMv2 — Real-Time Object Detection + DINOv3",
+      "summary": "即時物件偵測新 SOTA。S 版 50.9 AP (COCO) 只有 9.7M params / 5.78ms。從 Atto (0.5M) 到 X (57.8 AP) 全線覆蓋。",
+      "tags": [
+        "object_detection",
+        "dinov3",
+        "computer_vision",
+        "tensorrt"
+      ],
+      "url": "https://github.com/Intellindust-AI-Lab/DEIMv2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/Intellindust-AI-Lab-DEIMv2.html",
+      "price": null,
+      "vram": "2-8GB (S-X variants)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260224-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-02-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "CherryHQ/cherry-studio ⭐30k+ — Desktop Multi-LLM Client",
+      "summary": "桌面版多 LLM 聊天客戶端，300+ 預設 AI 助手、自主 agent、知識庫 RAG。支援 OpenAI/Gemini/Anthropic/Ollama。",
+      "tags": [
+        "ai_devtools",
+        "self-hosted_llm",
+        "rag",
+        "desktop_app"
+      ],
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/CherryHQ-cherry-studio.html",
+      "price": null,
+      "vram": "N/A (client app)",
+      "license": "AGPL-3.0"
+    },
     {
       "id": "20260224-ai-001",
       "radar": "ai-infra",
