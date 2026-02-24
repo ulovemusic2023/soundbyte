@@ -1,7 +1,113 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-23T18:39:00+08:00",
+  "updatedAt": "2026-02-24T08:00:00+08:00",
   "entries": [
+    {
+      "id": "20260224-mt-005",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Sync Audio MegaMod — 免費 Modulation Host Plugin（Beta）",
+      "summary": "MegaMod 讓任何現有 plugin 變成 modulation host，內建 LFO（可自繪曲線）、Macro、XY Pad、Blender（四組狀態混合）。Beta 期間免費，之後可能收費。",
+      "tags": [
+        "free_plugin",
+        "audio_effects",
+        "modulation",
+        "plugin"
+      ],
+      "url": "https://syncaudio.net",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/23/sync-audio-megamod/",
+      "price": "Free (Beta)",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-mt-004",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Monkwind DSP Complete Effect Bundle — 13 免費 Plugins",
+      "summary": "Monkwind DSP 釋出 13 個免費效果器 plugin，包含 CRUNCHer（壓縮+飽和）、DrumWizard（六模組鼓處理）、GimmeSpace（32-band compressor）等。支援 AU + VST3，macOS/Windows。",
+      "tags": [
+        "free_plugin",
+        "audio_effects",
+        "compressor",
+        "plugin"
+      ],
+      "url": "https://monkwinddsp.gumroad.com",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/23/monkwind-bundle/",
+      "price": "Free",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-mt-003",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Just 4 Noise 獲 $1M 種子輪融資 — AI Sample Generator",
+      "summary": "柏林 AI sample 生成平台 Just 4 Noise 完成 $1M 融資，用文字描述產出 royalty-free 音色。約 4,000 名創作者使用中，Native Instruments、Orchestral Tools 等 10 家音訊公司已整合其模型。",
+      "tags": [
+        "ai_audio",
+        "audio_generation",
+        "music_software",
+        "funding"
+      ],
+      "url": "https://just4noise.com",
+      "source": "Music Business Worldwide",
+      "sourceUrl": "https://www.musicbusinessworldwide.com/ai-sample-generator-just-4-noise-raises-1m-from-badideas-fund-sound-hub-denmark-and-more/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-mt-002",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Aqua Node Plugin Suite — 20 個免費開源 VST3",
+      "summary": "Aqua Node 釋出 20 個免費開源 VST3 plugin（含 JUCE 原始碼），包括 FM12（12-op FM synth）、Granulate（granular sampler）、Springer（spring reverb）等。Windows binary，macOS/Linux 可自行 compile。",
+      "tags": [
+        "free_plugin",
+        "open_source_audio",
+        "synthesizer",
+        "audio_effects",
+        "vst3"
+      ],
+      "url": "https://aquanode.gumroad.com",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/02/23/aqua-node/",
+      "price": "Free",
+      "vram": null,
+      "license": "Open Source"
+    },
+    {
+      "id": "20260224-mt-001",
+      "radar": "music-tech",
+      "date": "2026-02-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 聘前 Merlin CEO Jeremy Sirota 為 CCO",
+      "summary": "Suno 找來前獨立音樂授權巨頭 Merlin CEO Jeremy Sirota 擔任 Chief Commercial Officer，負責商業策略和產業合作。Sirota 在 Merlin 把年收從 $900M 翻倍到 $1.8B，Suno 正全力推進主流音樂產業合作佈局。",
+      "tags": [
+        "ai_audio",
+        "music_ai",
+        "industry_trends",
+        "suno"
+      ],
+      "url": "https://www.suno.com",
+      "source": "Music Business Worldwide",
+      "sourceUrl": "https://www.musicbusinessworldwide.com/suno-hires-ex-merlin-ceo-jeremy-sirota-as-chief-commercial-officer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
     {
       "id": "20260223-ai-007",
       "radar": "ai-infra",
