@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-24T08:20:00+08:00",
+  "updatedAt": "2026-02-24T09:00:00+08:00",
   "entries": [
     {
       "id": "20260224-ai-001",
@@ -7006,6 +7006,166 @@
       "url": "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
       "source": "Martin Fowler",
       "sourceUrl": "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-02-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Vibe Coding 是新的 PM，訓練模型是新的 Coding",
+      "summary": "Naval 在最新 podcast 裡講了一個框架：傳統軟體工程沒死，但角色在位移。頂尖工程師靠 AI 放大到 5-10 倍產出，用 vibe coding 快速填滿市場 niche。最慘的是中型公司（5-20 人）。",
+      "tags": [
+        "leverage",
+        "vibe_coding",
+        "AI_workforce"
+      ],
+      "url": "https://www.youtube.com/watch?v=sXCKgEl9hBo",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://www.youtube.com/watch?v=sXCKgEl9hBo",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-02-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Taste 是 AI 時代的終極稀缺資源",
+      "summary": "Paul Graham 重貼 2002 舊文，說 When anyone can make anything, the big differentiator is what you choose to make。執行力被 AI 抹平後，品味決定方向。",
+      "tags": [
+        "taste",
+        "differentiation",
+        "AI_commoditization"
+      ],
+      "url": "https://www.businessinsider.com/taste-new-core-skill-ai-debate-memes-2026-2",
+      "source": "Paul Graham",
+      "sourceUrl": "https://www.businessinsider.com/taste-new-core-skill-ai-debate-memes-2026-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-02-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "AI Model 人人能用，Context 才是護城河",
+      "summary": "HBR 比較兩家幾乎一樣的 B2B 公司——同 CRM、同流程、同 AI model，結果天差地遠。差別在組織的 context：獨有數據、流程和文化。",
+      "tags": [
+        "competitive_moat",
+        "context",
+        "AI_strategy"
+      ],
+      "url": "https://hbr.org/2026/02/when-every-company-can-use-the-same-ai-models-context-becomes-a-competitive-advantage",
+      "source": "Harvard Business Review",
+      "sourceUrl": "https://hbr.org/2026/02/when-every-company-can-use-the-same-ai-models-context-becomes-a-competitive-advantage",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-02-24",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Gumroad 用 AI 把團隊從 32 砍到 14 人，營收照長",
+      "summary": "Sahil Lavingia 退任 CEO 轉 Chairman。工程師 21→5 人，靠 AI 維持產出。2025 年 $17.8M 營收、$5.9M EBITDA，還發股利和回購。",
+      "tags": [
+        "lean_ops",
+        "AI_efficiency",
+        "bootstrapping"
+      ],
+      "url": "https://www.youtube.com/watch?v=ffkECKX-WgU",
+      "source": "Sahil Lavingia",
+      "sourceUrl": "https://www.youtube.com/watch?v=ffkECKX-WgU",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-02-24",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Thin Is In — AI 時代 Thin Client 回歸",
+      "summary": "Ben Thompson 論述 PC/Mobile 時代是 thick client 天下，AI 時代翻轉——thin client 重新崛起。中國手機廠在砍 2026 出貨目標，供應鏈方向從消費電子轉向 data center。",
+      "tags": [
+        "thin_client",
+        "hardware_shift",
+        "supply_chain"
+      ],
+      "url": "https://stratechery.com/2026/thin-is-in/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/thin-is-in/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-02-24",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Sam Altman 承認 AI Washing：企業把裁員甩鍋給 AI",
+      "summary": "Altman 在印度 AI Impact Summit 公開點名：有些公司搞 AI Washing——明明要裁的人包裝成被 AI 取代。真正被 AI 影響的是重複性、規則導向的工作。",
+      "tags": [
+        "AI_washing",
+        "layoffs",
+        "honest_narrative"
+      ],
+      "url": "https://fortune.com/2026/02/19/sam-altman-confirms-ai-washing-job-displacement-layoffs/",
+      "source": "Sam Altman",
+      "sourceUrl": "https://fortune.com/2026/02/19/sam-altman-confirms-ai-washing-job-displacement-layoffs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-02-24",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Amazon 前高管：文化原則不是聖經，是減少摩擦的 OS",
+      "summary": "Doug Herrington 進 Amazon 時覺得 Leadership Principles 像邪教，20 年後說這是最有力的工具——用文化讓所有人在同一頁，減少摩擦。重點是它們是活的、迭代的。",
+      "tags": [
+        "culture_as_OS",
+        "leadership_principles",
+        "friction"
+      ],
+      "url": "https://fortune.com/2026/02/18/jeff-bezos-16-leadership-principles-amazon-exec-once-thought-was-a-cult/",
+      "source": "Doug Herrington / Jeff Bezos",
+      "sourceUrl": "https://fortune.com/2026/02/18/jeff-bezos-16-leadership-principles-amazon-exec-once-thought-was-a-cult/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260224-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-02-24",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Marginal cost of arguing is going to zero",
+      "summary": "Marc Andreessen 點出 AI 讓產出文字的成本趨近於零，workplace 和社群被低成本的爭論淹沒。當吵架免費，真正稀缺的是果斷行動。",
+      "tags": [
+        "AI_noise",
+        "action_bias",
+        "attention"
+      ],
+      "url": "https://www.dailyvibecasting.com/p/episode-316-19-february-2026",
+      "source": "Marc Andreessen",
+      "sourceUrl": "https://www.dailyvibecasting.com/p/episode-316-19-february-2026",
       "price": null,
       "vram": null,
       "license": null
