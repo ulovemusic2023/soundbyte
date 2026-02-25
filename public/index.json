@@ -424,6 +424,97 @@
       "url": "https://martinfowler.com/bliki/HostLeadership.html",
       "source": "Martin Fowler",
       "sourceUrl": "https://martinfowler.com/bliki/HostLeadership.html"
+    },
+    {
+      "id": "20260225-sw-009",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Agentic AI Foundation 成員突破 146 家 — MCP 標準化進入產業階段",
+      "summary": "Linux Foundation 旗下 AAIF 新增 97 成員（JPMorgan Chase、Red Hat、Autodesk、Huawei、Mistral AI、UiPath），治理 MCP、goose、AGENTS.md。MCP Dev Summit 4/2-3 紐約舉行。",
+      "tags": [
+        "MCP",
+        "model context protocol",
+        "open standards",
+        "agent framework"
+      ],
+      "url": "https://www.linuxfoundation.org/press/agentic-ai-foundation-welcomes-97-new-members",
+      "source": "Linux Foundation",
+      "sourceUrl": "https://www.linuxfoundation.org/press/agentic-ai-foundation-welcomes-97-new-members"
+    },
+    {
+      "id": "20260225-sw-010",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic Enterprise Agents — Claude Cowork 插件生態啟動",
+      "summary": "Claude Cowork 發布企業插件：AI Native Finance（流動性預測）、HCLS（照護協調、藥物開發）、通用 Gmail/DocuSign connector。PwC 合作嵌入 governed agents。",
+      "tags": [
+        "ai agent",
+        "enterprise",
+        "governed agents",
+        "tool use"
+      ],
+      "url": "https://www.anthropic.com/events/the-briefing-enterprise-agents-virtual-event",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-finance-engineering-and-design/"
+    },
+    {
+      "id": "20260225-sw-011",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "New Relic Agentic Platform — No-Code 建構 AI Agent + 觀測基礎設施",
+      "summary": "拖拉式設計 SRE/DevOps agent workflow，支援 MCP、RBAC、audit logging。附帶 agent-to-agent service map、延遲/錯誤追蹤。定位 AI agent 的 observability infra。",
+      "tags": [
+        "observability",
+        "opentelemetry",
+        "MCP",
+        "platform engineering",
+        "ai agent"
+      ],
+      "url": "https://newrelic.com/press-release/20260224-1",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/24/new-relic-launches-new-ai-agent-platform-and-opentelemetry-tools/"
+    },
+    {
+      "id": "20260225-sw-012",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison: Linear Walkthroughs — Agentic Engineering 新模式",
+      "summary": "讓 coding agent 產生結構化 codebase 導覽，解決 vibe coding 後「不知道自己寫了什麼」的問題。配合 Showboat 工具讓 agent 向 supervisor 展示成果。",
+      "tags": [
+        "agentic engineering",
+        "coding agents",
+        "vibe coding",
+        "ai-assisted development"
+      ],
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/"
+    },
+    {
+      "id": "20260225-sw-013",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Latent Space: Claude Code for Finance + 全球記憶體短缺",
+      "summary": "Claude Code 一週年特集。Finance 領域 AI 做 Junior Analyst、agent swarms 現實考驗、Kimi Swarm benchmarks。同時討論 HBM 全球供應危機。",
+      "tags": [
+        "ai agent",
+        "ai coding",
+        "HBM chokepoint",
+        "agent swarms"
+      ],
+      "url": "https://www.latent.space/p/claude-code-for-finance-the-global",
+      "source": "Latent Space (swyx)",
+      "sourceUrl": "https://www.latent.space/p/claude-code-for-finance-the-global"
     }
   ]
 }
