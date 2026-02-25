@@ -1,0 +1,79 @@
+{
+  "entries": [
+    {
+      "id": "20260225-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Zyphra/Zonos — TTS + Voice Cloning + Emotion Control at 44kHz",
+      "summary": "開源 TTS 模型，訓練超過 200k 小時多語言語音資料。支援 zero-shot voice cloning、情緒控制、語速和音高微調。原生 44.1kHz 輸出，6GB+ VRAM 即可運行。",
+      "tags": ["tts", "voice cloning", "zero-shot voice", "emotional speech", "44kHz"],
+      "url": "https://github.com/Zyphra/Zonos",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/Zyphra-Zonos.html",
+      "vram": "6GB+",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260225-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Parakeet TDT V3 — NVIDIA CPU-only ASR (25 Languages)",
+      "summary": "NVIDIA 開源 ASR 模型，680MB，支援 25 種語言。CPU 就能跑，速度約 5x realtime。企業電話會議 WER 4.9%。",
+      "tags": ["asr", "speech recognition", "speech to text", "on-device", "CPU"],
+      "url": "https://github.com/OpenWhispr/openwhispr",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47143755",
+      "vram": "0GB (CPU-only)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260225-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-25",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "biniou — Self-hosted GenAI WebUI (30+ Models, No GPU Required)",
+      "summary": "Self-hosted GenAI WebUI，整合 30+ 種 AI 模型（image gen、chatbot、TTS、video），8GB RAM 起跑，不需專用 GPU。",
+      "tags": ["image generation", "tts", "chatbot", "self-hosted", "no GPU"],
+      "url": "https://github.com/Woolverine94/biniou",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/Woolverine94-biniou.html",
+      "vram": "0GB (CPU mode)",
+      "license": "GNU AGPL v3"
+    },
+    {
+      "id": "20260225-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ComfyUI-TRELLIS2 — 3D Mesh Generation from Images",
+      "summary": "ComfyUI TRELLIS 2 節點更新，從單張圖片生成防水 3D mesh。新增自動補洞、batch 批次處理、Quad remesh，支援 AMD ROCm。",
+      "tags": ["comfyui", "3D generation", "mesh", "image to 3D"],
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-TRELLIS2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/PozzettiAndrea-ComfyUI-TRELLIS2.html",
+      "vram": "8-12GB+",
+      "license": null
+    },
+    {
+      "id": "20260225-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Mercury 2 — Diffusion-based LLM Reasoning (1009 tok/s)",
+      "summary": "Inception Labs 推出 diffusion-based LLM，不是 autoregressive 而是整段文字同時去噪。速度 1,009 tok/s，比 Claude 4.5 Haiku 快 5x+。目前 API-only 閉源。",
+      "tags": ["llm inference", "diffusion", "reasoning", "paradigm shift"],
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2",
+      "source": "The Decoder / BusinessWire",
+      "sourceUrl": "https://the-decoder.com/inception-launches-mercury-2-the-first-diffusion-based-language-reasoning-model/",
+      "vram": "Cloud-only (API)",
+      "license": "Proprietary"
+    }
+  ]
+}
