@@ -8,7 +8,13 @@
       "priority": "high",
       "title": "Google 收購 Riffusion → ProducerAI 加入 Google Labs",
       "summary": "Google 把 AI 音樂新創 Riffusion 收購重整為 ProducerAI，搭載 Lyria 3 引擎 + Gemini 對話界面 + Veo 影片生成。可生成 3 分鐘完整歌曲，全球 250+ 國可用。",
-      "tags": ["music generation", "text to music", "music ai", "google", "lyria 3"],
+      "tags": [
+        "music generation",
+        "text to music",
+        "music ai",
+        "google",
+        "lyria 3"
+      ],
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/producerai/",
       "source": "Digital Music News",
       "sourceUrl": "https://www.digitalmusicnews.com/2026/02/24/google-ai-music-producerai/",
@@ -24,7 +30,12 @@
       "priority": "high",
       "title": "前 Merlin CEO Jeremy Sirota 跳槽 Suno 任 CCO",
       "summary": "在 Merlin 六年帶營收翻倍、曾批評 AI 未授權訓練的 Sirota，轉任 Suno CCO。Suno 估值 $24.5 億但仍面臨版權訴訟。",
-      "tags": ["suno", "music industry", "music ai", "executive hire"],
+      "tags": [
+        "suno",
+        "music industry",
+        "music ai",
+        "executive hire"
+      ],
       "url": null,
       "source": "Complete Music Update",
       "sourceUrl": "https://completemusicupdate.com/merlin-ceo-jeremy-sirota-said-independent-music-is-not-raw-material-for-tech-companies-to-exploit-without-consent-before-quitting-to-join-ai-music-scraper-in-chief-suno/",
@@ -40,7 +51,12 @@
       "priority": "high",
       "title": "藝人聯盟發起「Say No to Suno」公開信",
       "summary": "Music Artist Coalition 等聯合發公開信抵制 Suno，指控未授權訓練千萬首版權歌曲、日產 700 萬首 AI 曲目、85% AI 串流為假流量。",
-      "tags": ["suno", "music industry", "copyright", "artist rights"],
+      "tags": [
+        "suno",
+        "music industry",
+        "copyright",
+        "artist rights"
+      ],
       "url": null,
       "source": "Music Business Worldwide",
       "sourceUrl": "https://www.musicbusinessworldwide.com/artist-representatives-launch-say-no-to-suno-campaign-ai-slop-dilutes-the-royalty-pools-of-legitimate-artists-from-whose-music-this-slop-is-derived/",
@@ -56,7 +72,11 @@
       "priority": "medium",
       "title": "Hook — AI 音樂 remix 平台完成 $10M Series A",
       "summary": "artist-first 社群平台，讓粉絲用 AI 做授權衍生音樂內容。Khosla Ventures 領投，定位 authorized derivative。",
-      "tags": ["music ai", "funding", "remix"],
+      "tags": [
+        "music ai",
+        "funding",
+        "remix"
+      ],
       "url": "https://www.hookmusic.com",
       "source": "Post Round",
       "sourceUrl": "https://postround.substack.com/p/series-a-activity-week-of-february-b52",
@@ -72,7 +92,12 @@
       "priority": "medium",
       "title": "Inear Display 全系列 11 個實驗性 plugin 轉 PWYW（可免費）",
       "summary": "含 Ephemere FM 鼓機、Amalgame multi-FX、Lancinantes drone 合成器等 11 個 plugin。VST3/AU。",
-      "tags": ["free plugin", "audio effect", "sound design", "drum synth"],
+      "tags": [
+        "free plugin",
+        "audio effect",
+        "sound design",
+        "drum synth"
+      ],
       "url": null,
       "source": "Bedroom Producers Blog",
       "sourceUrl": "https://bedroomproducersblog.com/2026/02/24/inear-display-pwyw/",
@@ -88,7 +113,11 @@
       "priority": "medium",
       "title": "maniFold Omega v1.1 — granular micro-looper 大更新",
       "summary": "新增 Butterfly/PRISMA 演算法、playhead-to-buffer feedback、拖放音檔、LFO spread。$29 USD。",
-      "tags": ["plugin", "audio effect", "granular"],
+      "tags": [
+        "plugin",
+        "audio effect",
+        "granular"
+      ],
       "url": null,
       "source": "Rekkerd",
       "sourceUrl": "https://rekkerd.org/strange-audio-dsp-updates-manifold-omega-effect-plugin-to-v1-1/",
@@ -104,7 +133,11 @@
       "priority": "medium",
       "title": "Sender Spike qb (Kyubi) — 免費 multimode distortion",
       "summary": "9 種失真模式 + pre/post EQ，Drive ±30 dB。Windows only，VST2。",
-      "tags": ["free plugin", "distortion", "plugin"],
+      "tags": [
+        "free plugin",
+        "distortion",
+        "plugin"
+      ],
       "url": null,
       "source": "Bedroom Producers Blog",
       "sourceUrl": "https://bedroomproducersblog.com/2026/02/24/sender-spike-qb-distortion/",
@@ -120,7 +153,12 @@
       "priority": "high",
       "title": "NeuTTS — On-device TTS with instant voice cloning",
       "summary": "Neuphonic 開源 on-device TTS，360M (Air) / 120M (Nano) params，GGUF 量化在 Raspberry Pi 都能跑。3 秒音檔即可 voice clone，多語系支援。",
-      "tags": ["tts", "voice cloning", "on-device", "GGUF"],
+      "tags": [
+        "tts",
+        "voice cloning",
+        "on-device",
+        "GGUF"
+      ],
       "url": "https://github.com/neuphonic/neutts",
       "source": "MAGI//ARCHIVE + Hacker News",
       "sourceUrl": "https://news.ycombinator.com/item?id=47138571",
@@ -135,7 +173,12 @@
       "priority": "medium",
       "title": "llmfit — 一行指令找出你硬體能跑的 LLM",
       "summary": "CLI/TUI 工具，掃描硬體後從 206 模型 × 57 providers 推薦最適合的 LLM。支援多 GPU、MoE、動態量化，可直接透過 Ollama 下載。",
-      "tags": ["llm inference", "local inference", "quantization", "CLI tool"],
+      "tags": [
+        "llm inference",
+        "local inference",
+        "quantization",
+        "CLI tool"
+      ],
       "url": "https://github.com/AlexsJones/llmfit",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/AlexsJones-llmfit.html",
@@ -150,7 +193,11 @@
       "priority": "medium",
       "title": "OpenOCR / OpenDoc-0.1B — 0.1B 文件解析打趴大模型",
       "summary": "復旦 FVL Lab 通用 OCR 工具包，OpenDoc-0.1B 在 OmniDocBench v1.5 拿 90.57%，支援中英文文字 + 公式 + 表格解析。",
-      "tags": ["ocr", "document parsing", "table extraction"],
+      "tags": [
+        "ocr",
+        "document parsing",
+        "table extraction"
+      ],
       "url": "https://github.com/Topdu/OpenOCR",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/Topdu-OpenOCR.html",
@@ -165,7 +212,12 @@
       "priority": "medium",
       "title": "RuVector — 自學習 vector + graph 資料庫 (Rust)",
       "summary": "結合 HNSW search、GNN 學習、local LLM (GGUF)、46 種 attention。搜尋越多越準，單檔 .rvf 125ms 開機成 microservice。711 stars。",
-      "tags": ["rag", "vector database", "graph database", "local LLM"],
+      "tags": [
+        "rag",
+        "vector database",
+        "graph database",
+        "local LLM"
+      ],
       "url": "https://github.com/ruvnet/ruvector",
       "source": "GitHub Trending",
       "sourceUrl": "https://github.com/trending?since=daily",
@@ -180,7 +232,12 @@
       "priority": "high",
       "title": "GGML.ai 團隊正式加入 Hugging Face",
       "summary": "llama.cpp 創始人 Georgi Gerganov 帶核心團隊全職加入 HF。llama.cpp 維持 MIT 開源不搬家，重點整合 HF Transformers，降低 training → local deployment 摩擦。",
-      "tags": ["llama.cpp", "hugging face", "local inference", "open source"],
+      "tags": [
+        "llama.cpp",
+        "hugging face",
+        "local inference",
+        "open source"
+      ],
       "url": "https://github.com/ggml-org/llama.cpp/discussions/19759",
       "source": "Adafruit / Hacker News",
       "sourceUrl": "https://blog.adafruit.com/2026/02/20/open-source-ai-ggml-joins-hugging-face-llama-cpp-stays-open-local-ais-long-term-home/",
@@ -195,7 +252,12 @@
       "priority": "medium",
       "title": "Pixelle-Video — AI 全自動短影片引擎",
       "summary": "輸入主題自動產文案 → TTS 配音 → AI 圖片 → 合成影片。支援 ComfyUI + Ollama 本地跑，完全免費方案。",
-      "tags": ["video generation", "tts", "ComfyUI", "content creation"],
+      "tags": [
+        "video generation",
+        "tts",
+        "ComfyUI",
+        "content creation"
+      ],
       "url": "https://github.com/AIDC-AI/Pixelle-Video",
       "source": "GitHub Trending Python",
       "sourceUrl": "https://github.com/trending/python?since=daily",
@@ -210,12 +272,158 @@
       "priority": "high",
       "title": "StyleStream — Real-time zero-shot voice style conversion",
       "summary": "Berkeley 論文，不只轉 timbre 還轉 accent 和 emotion，端到端延遲 ~1 秒。Destylizer + DiT Stylizer 架構。⚠️ 尚無開源 code。",
-      "tags": ["voice conversion", "voice style", "zero-shot", "real-time"],
+      "tags": [
+        "voice conversion",
+        "voice style",
+        "zero-shot",
+        "real-time"
+      ],
       "url": "https://berkeley-speech-group.github.io/StyleStream/",
       "source": "arXiv",
       "sourceUrl": "https://arxiv.org/html/2602.20113v1",
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260225-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 正式棄用 SWE-bench Verified — Benchmark 時代走向終結",
+      "summary": "OpenAI 審計發現 59.4% 剩餘失敗任務是測試缺陷而非模型限制，加上訓練資料污染，宣布不再用 SWE-bench Verified 衡量 frontier coding 能力。推薦轉向 SWE-bench Pro。",
+      "tags": [
+        "llm evaluation",
+        "benchmark",
+        "evals",
+        "ai coding"
+      ],
+      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
+    },
+    {
+      "id": "20260225-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "ggml.ai 加入 Hugging Face — llama.cpp 的永久開源歸宿",
+      "summary": "Georgi Gerganov 宣布 ggml.ai 加入 Hugging Face，llama.cpp 保持完全開源。GGUF-v3 原生支援、更好打包品管，local-first AI 正式有長期可持續據點。",
+      "tags": [
+        "local-first AI",
+        "quantization",
+        "hugging face",
+        "llama.cpp"
+      ],
+      "url": "https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/"
+    },
+    {
+      "id": "20260225-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Pragmatic Summit: 軟體工程 × AI 的六大預測",
+      "summary": "92% 開發者每月使用 AI coding 工具。Atlassian 部分團隊零手寫程式碼，完全靠 agent orchestration 運作，產出 2-5x。Kent Beck + Martin Fowler 表示 50+ 年職涯中從未見如此快速變化。",
+      "tags": [
+        "agentic engineering",
+        "ai coding",
+        "supervisory programming"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai"
+    },
+    {
+      "id": "20260225-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler: Knowledge Priming — AI 協作的 5 種摩擦消除模式",
+      "summary": "把專案慣例、架構決策策展成文件灌入 AI context window。未 primed 需 45 分鐘修正，primed 後只需 5 分鐘 review。系列五篇，這是第一篇。",
+      "tags": [
+        "knowledge priming",
+        "ai coding",
+        "prompt engineering",
+        "cognitive debt"
+      ],
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html"
+    },
+    {
+      "id": "20260225-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netflix Research: MediaFM 基礎模型整合進個人化推薦",
+      "summary": "Netflix 揭示 MediaFM 基礎模型如何嵌入推薦引擎，驅動 80% 觀看行為、2.3% 超低流失率，處理數千億筆微互動。大規模 foundation model 走向 production personalization。",
+      "tags": [
+        "foundation model",
+        "multimodal",
+        "data pipeline",
+        "personalization"
+      ],
+      "url": "https://research.netflix.com/publication/integrating-netflixs-foundation-model-into-personalization-applications",
+      "source": "Netflix Research",
+      "sourceUrl": "https://research.netflix.com/publication/integrating-netflixs-foundation-model-into-personalization-applications"
+    },
+    {
+      "id": "20260225-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Foundry: Memory Store + Computer Use Preview",
+      "summary": "Memory Store 讓 agent 跨 session 記住使用者偏好，免自建 embedding DB。Computer Use 讓 agent 截圖操作桌面與瀏覽器。預覽期間 Memory Store 免費。",
+      "tags": [
+        "ai agent",
+        "function calling",
+        "tool use",
+        "agent framework"
+      ],
+      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-dec-2025-jan-2026/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-dec-2025-jan-2026/"
+    },
+    {
+      "id": "20260225-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Latent Space: SWE-Bench 已死 — Benchmark 時代的終結",
+      "summary": "Swyx 深度分析 SWE-bench 飽和：frontier model 卡在 ~80%，60%+ 失敗是題目不可解。Coding agent 評測需轉向更長期任務、多 repo 跨語言、品質審查。",
+      "tags": [
+        "benchmark",
+        "llm evaluation",
+        "evals",
+        "ai coding"
+      ],
+      "url": "https://www.latent.space/p/swe-bench-dead",
+      "source": "Latent Space (swyx)",
+      "sourceUrl": "https://www.latent.space/p/swe-bench-dead"
+    },
+    {
+      "id": "20260225-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Martin Fowler: Host Leadership — 重新思考 Agile 領導模型",
+      "summary": "Fowler 基於與 Kent Beck 的對話，批評 servant leadership 虛偽性，提出 Host Leadership 替代模型。Agile 25 周年背景下重新定義領導者角色。",
+      "tags": [
+        "architecture",
+        "agile"
+      ],
+      "url": "https://martinfowler.com/bliki/HostLeadership.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/bliki/HostLeadership.html"
     }
   ]
 }
