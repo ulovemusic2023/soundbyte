@@ -1,4 +1,27 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'
+// API URL resolution:
+// 1. Build-time env (VITE_API_URL) — set by start.sh --rebuild
+// 2. Runtime: check /api/config.json (served by backend via tunnel)
+// 3. Fallback: same-origin /api (works if served behind tunnel/proxy)
+// 4. Last resort: localhost
+const FALLBACK_API = 'http://localhost:3000/api'
+
+function resolveApiUrl(): string {
+  // Build-time override
+  const buildTime = import.meta.env.VITE_API_URL
+  if (buildTime) return buildTime
+
+  // If page is served from trycloudflare.com or custom domain with /api, use same origin
+  if (typeof window !== 'undefined') {
+    const origin = window.location.origin
+    if (!origin.includes('github.io')) {
+      return `${origin}/api`
+    }
+  }
+
+  return FALLBACK_API
+}
+
+const API_URL = resolveApiUrl()
 
 export interface ApiEntryResponse {
   ok: boolean
