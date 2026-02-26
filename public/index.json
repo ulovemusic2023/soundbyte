@@ -283,6 +283,97 @@
       "url": "https://docs.formae.io/en/latest/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/02/formae-multi-cloud/"
+    },
+    {
+      "id": "20260226-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Vinext：AI 一週重建 Next.js on Vite",
+      "summary": "一個工程師用 Claude Code 在一週內從零重建 Next.js，改用 Vite 底層。Build 快 4.4 倍、bundle 小 57%，整個專案花 $1,100 token 費。用 AI 讀 test suite 和 API surface 全部重寫，不是 fork。",
+      "tags": ["ai coding", "vite", "edge runtime", "serverless", "code generation"],
+      "url": "https://github.com/cloudflare/vinext",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/vinext/"
+    },
+    {
+      "id": "20260226-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "tldraw 把 test suite 搬進 private repo — AI 複製威脅",
+      "summary": "tldraw 宣布把 327 個 test 從 public GitHub 搬到 private repo，因為完整的 test suite 足以讓 AI agent 從零重建整個 library。開源商業模式面臨 AI 時代最直接的挑戰。",
+      "tags": ["ai coding", "open source", "code generation", "cognitive debt"],
+      "url": "https://github.com/tldraw/tldraw/issues/8082",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/25/closed-tests/"
+    },
+    {
+      "id": "20260226-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Meta × AMD $60B / 6 GW AI 基礎設施大單",
+      "summary": "五年 $60B 合約，AMD 供應客製 MI450 GPU（CDNA 5、2nm、432 GB HBM4）。Helios 架構每 rack 72 GPU 提供 1.4 EFLOPS。Meta 擺脫 Nvidia 單一依賴的關鍵一步。",
+      "tags": ["AI infrastructure", "HBM", "horizontal scaling", "GPU"],
+      "url": "https://www.amd.com/en/newsroom/press-releases/2026-2-24-amd-and-meta-announce-expanded-strategic-partnersh.html",
+      "source": "Meta Newsroom",
+      "sourceUrl": "https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/"
+    },
+    {
+      "id": "20260226-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison：Agentic Engineering Patterns 持續更新",
+      "summary": "新增 Closed Tests 分析、Claude Code Remote Control、State of LLMs Feb 2026 演講預告。Red/Green TDD for Agents 和 Fine-Scoped Agent Architecture 成為系列核心 pattern。",
+      "tags": ["agentic engineering", "TDD", "ai agent", "security"],
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/25/present/"
+    },
+    {
+      "id": "20260226-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 威脅報告：AI 浪漫詐騙、假律師、影響力操作",
+      "summary": "OpenAI 2/25 發佈威脅報告，揭露柬埔寨浪漫詐騙用 AI 生成假照片、冒牌律師偽造會員卡、中國執法單位企圖策劃宣傳攻擊等案例。",
+      "tags": ["safety", "red team", "prompt injection", "alignment"],
+      "url": "https://openai.com/index/disrupting-malicious-ai-uses/",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/disrupting-malicious-ai-uses/"
+    },
+    {
+      "id": "20260226-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Foundry：Agent Memory + Computer Use + MCP Server",
+      "summary": "Agent Memory 四階段系統進入 preview，Computer Use 讓 agent 操作桌面，Foundry MCP Server 上線 mcp.ai.azure.com。GPT-5.2 和 Codex Max 正式 GA。",
+      "tags": ["ai agent", "function calling", "tool use", "mcp", "computer use"],
+      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-dec-2025-jan-2026/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-dec-2025-jan-2026/"
+    },
+    {
+      "id": "20260226-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer：AI 時代軟體工程六大預測",
+      "summary": "92% 開發者每月用 AI coding tool，健康團隊事故率降 50%，Atlassian 描述 zero-code teams 靠 agent 達 2-5x 產出。Kent Beck + Yegge 警告 AI 期望過高。",
+      "tags": ["agentic engineering", "supervisory programming", "zero-code teams"],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai"
     }
   ]
 }
