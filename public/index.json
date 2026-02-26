@@ -538,6 +538,97 @@
       "url": "https://www.youtube.com/watch?v=IEAH4u6nMbY",
       "source": "Pieter Levels",
       "sourceUrl": "https://www.youtube.com/watch?v=IEAH4u6nMbY"
+    },
+    {
+      "id": "20260226-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenSwarm — Multi-Agent Claude CLI Orchestrator",
+      "summary": "HN Show HN 熱門專案：用多個 Claude Code CLI 實例組成 Worker/Reviewer/Test/Documenter pipeline，自動從 Linear 拉 issue。用 LanceDB + multilingual-e5 embeddings 做長期記憶和 code knowledge graph 做 impact analysis。",
+      "tags": ["multi-agent", "agentic engineering", "function calling", "knowledge base", "claude code"],
+      "url": "https://github.com/Intrect-io/OpenSwarm",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47160980"
+    },
+    {
+      "id": "20260226-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cursor Cloud Agents — 35% PR 已由 AI 產出",
+      "summary": "Cursor 宣布 cloud-based parallel agents：每個 agent 在獨立 VM 跑完整 dev environment，可同時 10-20 個 agent 並行。agent 自己跑測試、產出影片/截圖/log 作為 review 證據。Cursor 內部 35% merged PR 由 agent 產生。",
+      "tags": ["ai coding", "demos-not-diffs", "parallel agents", "vibe coding"],
+      "url": "https://cursor.com/changelog",
+      "source": "TechStartups",
+      "sourceUrl": "https://cursor.com/changelog/02-25-26"
+    },
+    {
+      "id": "20260226-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Microsoft Agent Framework RC — .NET + Python agent 統一 SDK",
+      "summary": "Microsoft Agent Framework 達到 RC，整合 Semantic Kernel + AutoGen，支援 MCP、A2A、multi-agent orchestration、human-in-the-loop，graph-based workflow 支援 sequential 和 concurrent 執行。",
+      "tags": ["agent framework", "mcp", "multi-agent", "semantic kernel", ".NET", "python"],
+      "url": "https://devblogs.microsoft.com/foundry/microsoft-agent-framework-reaches-release-candidate/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/ms-agent-framework-rc/"
+    },
+    {
+      "id": "20260226-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Claude Code Remote Control — 手機遙控本機 coding session",
+      "summary": "Anthropic 推出 Remote Control：本機 terminal 跑 Claude Code，用 QR code 或 URL 從手機/平板/瀏覽器接管。所有執行留在本機，remote 端只是控制介面。只需 outbound HTTPS。",
+      "tags": ["ai coding", "copilot", "ai-assisted development", "claude code"],
+      "url": "https://www.helpnetsecurity.com/2026/02/25/anthropic-remote-control-claude-code-feature/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/"
+    },
+    {
+      "id": "20260226-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google API Keys × Gemini 特權升級漏洞",
+      "summary": "Truffle Security 揭露：Google Maps API key 啟用 Gemini API 後自動獲得存取 /files/ 和 /cachedContents/ 的權限。Common Crawl 找到 2,863 把受影響 key。Google 正在撤銷。",
+      "tags": ["zero trust", "supply chain security", "privilege escalation", "google", "gemini"],
+      "url": "https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/26/google-api-keys/"
+    },
+    {
+      "id": "20260226-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "LangChain：Agent 上 Production 的觀測難題",
+      "summary": "Agent observability 跟傳統 monitoring 完全不同：infinite input space + LLM prompt 敏感性 = 開發時行為不等於 production 行為。LangSmith trajectory evaluation 追蹤 tool call 順序。",
+      "tags": ["llm evaluation", "evals", "ai agent", "observability", "langsmith"],
+      "url": "https://blog.langchain.com/you-dont-know-what-your-agent-will-do-until-its-in-production/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/you-dont-know-what-your-agent-will-do-until-its-in-production/"
+    },
+    {
+      "id": "20260226-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-26",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Benedict Evans 論 OpenAI 的 capability gap",
+      "summary": "多數用戶一週只用 ChatGPT 幾次，OpenAI 承認 capability gap。Evans 認為這等於沒有 clear product-market fit，廣告策略是為了讓免費用戶也能用最強模型來加深黏性。",
+      "tags": ["product-market fit", "capability gap", "AI business model", "openai"],
+      "url": "https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Feb/26/benedict-evans/"
     }
   ]
 }
