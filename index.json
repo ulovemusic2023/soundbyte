@@ -1,6 +1,91 @@
 {
   "entries": [
     {
+      "id": "20260227-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "HeartMuLa heartlib — 開源音樂生成 3B",
+      "summary": "號稱 2026 最強開源音樂生成模型。3B 版本用歌詞 + 風格 tags 生成帶人聲歌曲，支援幾乎所有語言。含 HeartCodec、HeartTranscriptor、HeartCLAP。RL 強化版提升歌詞控制力。Apache 2.0。",
+      "tags": [
+        "music generation",
+        "audio generation",
+        "lyrics",
+        "codec",
+        "open-source"
+      ],
+      "url": "https://github.com/HeartMuLa/heartlib",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/27/HeartMuLa-heartlib.html",
+      "vram": "~8GB BF16 (lazy load 可單卡)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260227-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "aTrain — 離線語音轉錄 + 講者辨識",
+      "summary": "基於 Whisper 的離線 ASR 工具，自動講者辨識（diarization）。完全不上傳雲端，有 GUI 界面。目標是研究人員訪談轉錄。",
+      "tags": [
+        "speech recognition",
+        "whisper",
+        "speech to text",
+        "offline",
+        "diarization"
+      ],
+      "url": "https://github.com/JuergenFleiss/aTrain",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/27/JuergenFleiss-aTrain.html",
+      "vram": "~2-4GB (Whisper)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260227-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Supertonic — 極速 On-Device TTS (66M, ONNX)",
+      "summary": "Supertone 開源 on-device TTS：66M 參數，ONNX Runtime 跨平台。M4 Pro 上 167x real-time。支援全平台（Python/Node/Rust/Go/C++/Swift/Flutter/瀏覽器），連 Raspberry Pi 都能跑。Supertonic 2 支援英韓西葡法。",
+      "tags": [
+        "text-to-speech",
+        "onnx",
+        "on-device",
+        "edge inference",
+        "multilingual tts"
+      ],
+      "url": "https://github.com/supertone-inc/supertonic",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/27/supertone-inc-supertonic.html",
+      "vram": "0GB (CPU-only)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260227-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Qwen3-ASR — 52 語言 ASR + 唱歌辨識 + 強制對齊",
+      "summary": "Alibaba 通義開源 ASR 系列（0.6B/1.7B），支援 52 種語言 + 22 種中國方言，可辨識語音、唱歌、帶 BGM 歌曲。ForcedAligner-0.6B 做 11 語言強制對齊。支援 vLLM batch inference + streaming。",
+      "tags": [
+        "asr",
+        "speech recognition",
+        "qwen",
+        "forced alignment",
+        "singing voice",
+        "multilingual"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/27/QwenLM-Qwen3-ASR.html",
+      "vram": "0.6B ~1GB / 1.7B ~4GB FP16",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260226-ai-001",
       "radar": "ai-infra",
       "date": "2026-02-26",
@@ -8,7 +93,13 @@
       "priority": "high",
       "title": "LEANN — 最小 vector index，RAG on Everything",
       "summary": "MLSys 2026 論文。用 graph-based selective recomputation 取代傳統 embedding 儲存，6000 萬筆 chunk index 從 201GB 壓到 6GB（97% 節省）。支援 MCP 整合 Claude Code，全部跑在筆電上。",
-      "tags": ["rag", "vector database", "semantic search", "embedding", "MCP"],
+      "tags": [
+        "rag",
+        "vector database",
+        "semantic search",
+        "embedding",
+        "MCP"
+      ],
       "url": "https://github.com/yichuan-w/LEANN",
       "source": "GitHub Trending",
       "sourceUrl": "https://github.com/trending/python?since=daily",
@@ -23,7 +114,12 @@
       "priority": "high",
       "title": "Dolphin-v2 — 文件圖片解析全能王 (3B)",
       "summary": "ByteDance 出品 3B VLM，支援 21 種版面元素偵測、PDF/照片文件解析。兩階段架構：先判文件類型+版面分析，再平行解析。OmniDocBench 89.78 分，支援 vLLM/TensorRT-LLM。",
-      "tags": ["ocr", "document ai", "table extraction", "layout analysis"],
+      "tags": [
+        "ocr",
+        "document ai",
+        "table extraction",
+        "layout analysis"
+      ],
       "url": "https://github.com/bytedance/Dolphin",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/bytedance-Dolphin.html",
@@ -38,7 +134,12 @@
       "priority": "medium",
       "title": "DeepSearcher — 私有資料 Deep Research",
       "summary": "Zilliz 出品，結合 LLM + Milvus 向量資料庫在私有資料上做搜尋+推理+報告生成。支援 Ollama 跑本地模型，適合企業知識管理和智慧 QA。",
-      "tags": ["rag", "retrieval augmented generation", "vector database", "deep research"],
+      "tags": [
+        "rag",
+        "retrieval augmented generation",
+        "vector database",
+        "deep research"
+      ],
       "url": "https://github.com/zilliztech/deep-searcher",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/zilliztech-deep-searcher.html",
@@ -53,7 +154,13 @@
       "priority": "high",
       "title": "Rapida Voice AI — 語音 Agent 編排平台",
       "summary": "開源端對端語音 AI 平台，Go + gRPC 即時雙向語音串流。整合 STT/TTS/VAD/LLM，Docker 一鍵部署，有 React UI 和完整可觀測性。",
-      "tags": ["voice synthesis", "speech recognition", "tts", "voice agents", "gRPC"],
+      "tags": [
+        "voice synthesis",
+        "speech recognition",
+        "tts",
+        "voice agents",
+        "gRPC"
+      ],
       "url": "https://github.com/rapidaai/voice-ai",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/rapidaai-voice-ai.html",
@@ -68,7 +175,13 @@
       "priority": "medium",
       "title": "Surya v3 — OCR 90+ 語言 + LaTeX",
       "summary": "文件 OCR 工具包 v3：90+ 語言 OCR、行級文字偵測、版面分析、表格辨識、閱讀順序、LaTeX OCR。中文表現顯著提升，GPU 上 >10K tokens/sec。",
-      "tags": ["ocr", "document ai", "table extraction", "surya", "LaTeX"],
+      "tags": [
+        "ocr",
+        "document ai",
+        "table extraction",
+        "surya",
+        "LaTeX"
+      ],
       "url": "https://github.com/datalab-to/surya",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/datalab-to-surya.html",
@@ -83,7 +196,13 @@
       "priority": "medium",
       "title": "GLM-Image — 混合 AR + Diffusion 圖片生成",
       "summary": "智譜 AI 開源 9B AR + 7B diffusion decoder。文字渲染和知識密集場景強，支援 T2I/I2I（編輯、風格轉換、多主體一致性）。已整合 transformers + diffusers。",
-      "tags": ["image generation", "txt2img", "img2img", "diffusers", "autoregressive"],
+      "tags": [
+        "image generation",
+        "txt2img",
+        "img2img",
+        "diffusers",
+        "autoregressive"
+      ],
       "url": "https://github.com/zai-org/GLM-Image",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/zai-org-GLM-Image.html",
@@ -98,7 +217,13 @@
       "priority": "low",
       "title": "VibeTensor — 第一個完全 AI 生成的 DL 系統",
       "summary": "NVIDIA NVlabs 出品，PyTorch 風格 runtime 從 Python/Node.js 到 PTX assembly 全由 AI agents 生成。60k 行 C++/CUDA，research prototype。",
-      "tags": ["pytorch", "cuda", "deep learning", "ai devtools", "research"],
+      "tags": [
+        "pytorch",
+        "cuda",
+        "deep learning",
+        "ai devtools",
+        "research"
+      ],
       "url": "https://github.com/NVlabs/vibetensor",
       "source": "MAGI//ARCHIVE + GitHub Trending",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/NVlabs-vibetensor.html",
@@ -113,7 +238,15 @@
       "priority": "high",
       "title": "Microsoft VibeVoice — Frontier Voice AI 全家桶",
       "summary": "微軟開源 Voice AI 三件套：ASR-7B 單次處理 60 分鐘音訊（rich transcription: 誰+何時+內容），支援 50+ 語言和自定義 hotwords。TTS-1.5B 可生成 90 分鐘四人對話。Realtime-0.5B 串流 TTS 300ms 首音延遲。底層用 7.5Hz continuous speech tokenizer + next-token diffusion。",
-      "tags": ["tts", "asr", "speech synthesis", "speech recognition", "voice synthesis", "zero-shot voice", "streaming"],
+      "tags": [
+        "tts",
+        "asr",
+        "speech synthesis",
+        "speech recognition",
+        "voice synthesis",
+        "zero-shot voice",
+        "streaming"
+      ],
       "url": "https://github.com/microsoft/VibeVoice",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/26/microsoft-VibeVoice.html",
@@ -128,7 +261,13 @@
       "priority": "medium",
       "title": "chonkie-inc/chunk — 1 TB/s 文字分段引擎",
       "summary": "Rust SIMD 加速的文字切段庫，120ms 分完整個 Wikipedia。支援語義邊界、SentencePiece metaspace pattern，Python/JS/Rust 三平台。RAG pipeline 前處理瓶頸殺手。",
-      "tags": ["rag", "chunking", "semantic search", "text processing", "rust"],
+      "tags": [
+        "rag",
+        "chunking",
+        "semantic search",
+        "text processing",
+        "rust"
+      ],
       "url": "https://github.com/chonkie-inc/chunk",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/26/chonkie-inc-chunk.html",
@@ -143,7 +282,13 @@
       "priority": "medium",
       "title": "RLinf — Embodied + Agentic AI 的 RL 訓練框架",
       "summary": "2026/02 大更新：world-model RL（WoVR）、sim-real co-training for π₀/π₀.₅、上 PyPI 可 pip install。支援 PPO/GRPO/DAPO/SAC，hybrid pipelining 120%+ throughput boost。",
-      "tags": ["reinforcement learning", "fine-tuning", "training", "embodied AI", "VLA"],
+      "tags": [
+        "reinforcement learning",
+        "fine-tuning",
+        "training",
+        "embodied AI",
+        "VLA"
+      ],
       "url": "https://github.com/RLinf/RLinf",
       "source": "GitHub Search",
       "sourceUrl": "https://github.com/RLinf/RLinf",
@@ -158,7 +303,12 @@
       "priority": "medium",
       "title": "NVIDIA Megatron-LM — Feb 2026 活躍更新",
       "summary": "大規模 transformer 訓練框架持續進化：heterogeneous sharded checkpoints、NeMo 2 整合測試、Qwen3-Coder + DeepSeek R1 tokenizer parsers、混合精度 checkpoint 修復。",
-      "tags": ["megatron", "training", "large-scale", "pytorch"],
+      "tags": [
+        "megatron",
+        "training",
+        "large-scale",
+        "pytorch"
+      ],
       "url": "https://github.com/NVIDIA/Megatron-LM",
       "source": "GitHub Trending",
       "sourceUrl": "https://github.com/trending?since=daily",
@@ -173,7 +323,13 @@
       "priority": "high",
       "title": "Zyphra/Zonos — TTS + Voice Cloning + Emotion Control at 44kHz",
       "summary": "開源 TTS 模型，訓練超過 200k 小時多語言語音資料。支援 zero-shot voice cloning、情緒控制、語速和音高微調。原生 44.1kHz 輸出，6GB+ VRAM 即可運行。",
-      "tags": ["tts", "voice cloning", "zero-shot voice", "emotional speech", "44kHz"],
+      "tags": [
+        "tts",
+        "voice cloning",
+        "zero-shot voice",
+        "emotional speech",
+        "44kHz"
+      ],
       "url": "https://github.com/Zyphra/Zonos",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/Zyphra-Zonos.html",
@@ -188,7 +344,13 @@
       "priority": "medium",
       "title": "Parakeet TDT V3 — NVIDIA CPU-only ASR (25 Languages)",
       "summary": "NVIDIA 開源 ASR 模型，680MB，支援 25 種語言。CPU 就能跑，速度約 5x realtime。企業電話會議 WER 4.9%。",
-      "tags": ["asr", "speech recognition", "speech to text", "on-device", "CPU"],
+      "tags": [
+        "asr",
+        "speech recognition",
+        "speech to text",
+        "on-device",
+        "CPU"
+      ],
       "url": "https://github.com/OpenWhispr/openwhispr",
       "source": "Hacker News",
       "sourceUrl": "https://news.ycombinator.com/item?id=47143755",
@@ -203,7 +365,13 @@
       "priority": "low",
       "title": "biniou — Self-hosted GenAI WebUI (30+ Models, No GPU Required)",
       "summary": "Self-hosted GenAI WebUI，整合 30+ 種 AI 模型（image gen、chatbot、TTS、video），8GB RAM 起跑，不需專用 GPU。",
-      "tags": ["image generation", "tts", "chatbot", "self-hosted", "no GPU"],
+      "tags": [
+        "image generation",
+        "tts",
+        "chatbot",
+        "self-hosted",
+        "no GPU"
+      ],
       "url": "https://github.com/Woolverine94/biniou",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/24/Woolverine94-biniou.html",
@@ -218,7 +386,12 @@
       "priority": "medium",
       "title": "ComfyUI-TRELLIS2 — 3D Mesh Generation from Images",
       "summary": "ComfyUI TRELLIS 2 節點更新，從單張圖片生成防水 3D mesh。新增自動補洞、batch 批次處理、Quad remesh，支援 AMD ROCm。",
-      "tags": ["comfyui", "3D generation", "mesh", "image to 3D"],
+      "tags": [
+        "comfyui",
+        "3D generation",
+        "mesh",
+        "image to 3D"
+      ],
       "url": "https://github.com/PozzettiAndrea/ComfyUI-TRELLIS2",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/25/PozzettiAndrea-ComfyUI-TRELLIS2.html",
@@ -233,7 +406,12 @@
       "priority": "high",
       "title": "Mercury 2 — Diffusion-based LLM Reasoning (1009 tok/s)",
       "summary": "Inception Labs 推出 diffusion-based LLM，不是 autoregressive 而是整段文字同時去噪。速度 1,009 tok/s，比 Claude 4.5 Haiku 快 5x+。目前 API-only 閉源。",
-      "tags": ["llm inference", "diffusion", "reasoning", "paradigm shift"],
+      "tags": [
+        "llm inference",
+        "diffusion",
+        "reasoning",
+        "paradigm shift"
+      ],
       "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2",
       "source": "The Decoder / BusinessWire",
       "sourceUrl": "https://the-decoder.com/inception-launches-mercury-2-the-first-diffusion-based-language-reasoning-model/",
@@ -248,7 +426,13 @@
       "priority": "paradigm-shift",
       "title": "Pentagon vs Anthropic：國防部威脅動用國防生產法接管 Claude",
       "summary": "國防部長 Hegseth 要求 Anthropic 週五前拆除 Claude 的倫理護欄，否則列為供應鏈風險並動用國防生產法。Anthropic 堅守不做大規模監控和自主致命武器兩條底線。",
-      "tags": ["alignment", "safety", "guardrails", "governed agents", "military AI"],
+      "tags": [
+        "alignment",
+        "safety",
+        "guardrails",
+        "governed agents",
+        "military AI"
+      ],
       "url": "https://www.politico.com/news/2026/02/24/hegseth-sets-friday-deadline-for-anthropic-to-drop-its-ai-red-lines-00795641",
       "source": "Politico / CBS News",
       "sourceUrl": "https://www.politico.com/news/2026/02/24/hegseth-sets-friday-deadline-for-anthropic-to-drop-its-ai-red-lines-00795641"
@@ -261,7 +445,12 @@
       "priority": "paradigm-shift",
       "title": "Cursor Cloud Agents：用影片 Demo 取代 Code Diff",
       "summary": "Cursor 雲端 agent 跑在獨立 VM，能操作瀏覽器、測試自己寫的軟體、錄製 demo 影片取代傳統 diff review。支援 Web/Desktop/Mobile/Slack/GitHub。",
-      "tags": ["ai coding", "ai agent", "demos not diffs", "vibe coding"],
+      "tags": [
+        "ai coding",
+        "ai agent",
+        "demos not diffs",
+        "vibe coding"
+      ],
       "url": "https://cursor.com/changelog/02-24-26",
       "source": "Cursor",
       "sourceUrl": "https://cursor.com/blog/agent-computer-use"
@@ -274,7 +463,12 @@
       "priority": "paradigm-shift",
       "title": "OpenAI GPT-5.3 Codex 全球上線 — 400K context + mid-task steering",
       "summary": "合併 GPT-5.2-Codex 寫碼能力和 GPT-5.2 推理深度。400K token context、mid-task 中途介入、比前代快 25%。25 小時壓測從空 repo 寫出 3 萬行。",
-      "tags": ["code generation", "ai agent", "agentic engineering", "function calling"],
+      "tags": [
+        "code generation",
+        "ai agent",
+        "agentic engineering",
+        "function calling"
+      ],
       "url": "https://openrouter.ai/openai/gpt-5.3-codex",
       "source": "OpenAI / OpenRouter",
       "sourceUrl": "https://openrouter.ai/openai/gpt-5.3-codex"
@@ -287,7 +481,12 @@
       "priority": "high",
       "title": "HyperNova 60B 2602 — 量子壓縮 120B 模型砍半免費上 HF",
       "summary": "Multiverse Computing 用 CompactifAI 量子數學壓縮 gpt-oss-120B（61GB→32GB），精度損失僅 2-3%。tool calling 5x、agentic coding 2x 提升。",
-      "tags": ["quantization", "distillation", "local-first AI", "tool calling"],
+      "tags": [
+        "quantization",
+        "distillation",
+        "local-first AI",
+        "tool calling"
+      ],
       "url": "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602",
       "source": "TechCrunch / GlobeNewsWire",
       "sourceUrl": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/"
@@ -300,7 +499,12 @@
       "priority": "high",
       "title": "Apple Ferret-UI Lite — 3B On-Device GUI Agent",
       "summary": "Apple 釋出 3B 輕量 GUI 操作模型，不靠雲端辨識 UI 元素、點擊按鈕、讀取畫面。ScreenSpot-V2 grounding 91.6%，比 7B UI-TARS 還強。",
-      "tags": ["ai agent", "multimodal", "local-first AI", "on-device"],
+      "tags": [
+        "ai agent",
+        "multimodal",
+        "local-first AI",
+        "on-device"
+      ],
       "url": "https://www.infoq.com/news/2026/02/apple-ferret-ui-lite-on-device/",
       "source": "InfoQ / 9to5Mac",
       "sourceUrl": "https://www.infoq.com/news/2026/02/apple-ferret-ui-lite-on-device/"
@@ -313,7 +517,12 @@
       "priority": "high",
       "title": "Google Developer Knowledge API — AI Agent 即時查官方文件",
       "summary": "REST + MCP Server 讓 coding agent 搜尋 Firebase/GCP/Android/Maps 最新文件。可串 Claude Code、Gemini CLI，不再靠舊版訓練資料幻覺。",
-      "tags": ["mcp", "model context protocol", "ai agent", "knowledge base"],
+      "tags": [
+        "mcp",
+        "model context protocol",
+        "ai agent",
+        "knowledge base"
+      ],
       "url": "https://developers.google.com/knowledge/mcp",
       "source": "InfoQ / Google Developers",
       "sourceUrl": "https://www.infoq.com/news/2026/02/google-documentation-ai-agents/"
@@ -326,7 +535,11 @@
       "priority": "medium",
       "title": "Kellan Elliott-McCrea：Code has always been the easy part",
       "summary": "Flickr 前 CTO 觀點：早期進入科技業的人是被 agency 感吸引，不是因為 Perl 好寫。對 AI 時代感受到失落 vs 興奮的人，動機本來就不同。",
-      "tags": ["cognitive debt", "AI fatigue", "agentic engineering"],
+      "tags": [
+        "cognitive debt",
+        "AI fatigue",
+        "agentic engineering"
+      ],
       "url": "https://laughingmeme.org/2026/02/09/code-has-always-been-the-easy-part.html",
       "source": "Simon Willison (引用 Kellan Elliott-McCrea)",
       "sourceUrl": "https://simonwillison.net/2026/Feb/25/kellan-elliott-mccrea/"
@@ -339,7 +552,11 @@
       "priority": "low",
       "title": "formae IaC 多雲支援 + AI-friendly Plugin SDK",
       "summary": "開源 IaC 工具新增 GCP/Azure/OCI/OVHcloud 支援。Plugin SDK 專門優化給 AI agent 用，schema 約束確保 agent 生成的 plugin 可靠。",
-      "tags": ["infrastructure as code", "platform engineering", "ai agent"],
+      "tags": [
+        "infrastructure as code",
+        "platform engineering",
+        "ai agent"
+      ],
       "url": "https://docs.formae.io/en/latest/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/02/formae-multi-cloud/"
@@ -352,7 +569,13 @@
       "priority": "paradigm-shift",
       "title": "Cloudflare Vinext：AI 一週重建 Next.js on Vite",
       "summary": "一個工程師用 Claude Code 在一週內從零重建 Next.js，改用 Vite 底層。Build 快 4.4 倍、bundle 小 57%，整個專案花 $1,100 token 費。用 AI 讀 test suite 和 API surface 全部重寫，不是 fork。",
-      "tags": ["ai coding", "vite", "edge runtime", "serverless", "code generation"],
+      "tags": [
+        "ai coding",
+        "vite",
+        "edge runtime",
+        "serverless",
+        "code generation"
+      ],
       "url": "https://github.com/cloudflare/vinext",
       "source": "Cloudflare Blog",
       "sourceUrl": "https://blog.cloudflare.com/vinext/"
@@ -365,7 +588,12 @@
       "priority": "paradigm-shift",
       "title": "tldraw 把 test suite 搬進 private repo — AI 複製威脅",
       "summary": "tldraw 宣布把 327 個 test 從 public GitHub 搬到 private repo，因為完整的 test suite 足以讓 AI agent 從零重建整個 library。開源商業模式面臨 AI 時代最直接的挑戰。",
-      "tags": ["ai coding", "open source", "code generation", "cognitive debt"],
+      "tags": [
+        "ai coding",
+        "open source",
+        "code generation",
+        "cognitive debt"
+      ],
       "url": "https://github.com/tldraw/tldraw/issues/8082",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/25/closed-tests/"
@@ -378,7 +606,12 @@
       "priority": "paradigm-shift",
       "title": "Meta × AMD $60B / 6 GW AI 基礎設施大單",
       "summary": "五年 $60B 合約，AMD 供應客製 MI450 GPU（CDNA 5、2nm、432 GB HBM4）。Helios 架構每 rack 72 GPU 提供 1.4 EFLOPS。Meta 擺脫 Nvidia 單一依賴的關鍵一步。",
-      "tags": ["AI infrastructure", "HBM", "horizontal scaling", "GPU"],
+      "tags": [
+        "AI infrastructure",
+        "HBM",
+        "horizontal scaling",
+        "GPU"
+      ],
       "url": "https://www.amd.com/en/newsroom/press-releases/2026-2-24-amd-and-meta-announce-expanded-strategic-partnersh.html",
       "source": "Meta Newsroom",
       "sourceUrl": "https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/"
@@ -391,7 +624,12 @@
       "priority": "high",
       "title": "Simon Willison：Agentic Engineering Patterns 持續更新",
       "summary": "新增 Closed Tests 分析、Claude Code Remote Control、State of LLMs Feb 2026 演講預告。Red/Green TDD for Agents 和 Fine-Scoped Agent Architecture 成為系列核心 pattern。",
-      "tags": ["agentic engineering", "TDD", "ai agent", "security"],
+      "tags": [
+        "agentic engineering",
+        "TDD",
+        "ai agent",
+        "security"
+      ],
       "url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/25/present/"
@@ -404,7 +642,12 @@
       "priority": "high",
       "title": "OpenAI 威脅報告：AI 浪漫詐騙、假律師、影響力操作",
       "summary": "OpenAI 2/25 發佈威脅報告，揭露柬埔寨浪漫詐騙用 AI 生成假照片、冒牌律師偽造會員卡、中國執法單位企圖策劃宣傳攻擊等案例。",
-      "tags": ["safety", "red team", "prompt injection", "alignment"],
+      "tags": [
+        "safety",
+        "red team",
+        "prompt injection",
+        "alignment"
+      ],
       "url": "https://openai.com/index/disrupting-malicious-ai-uses/",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/index/disrupting-malicious-ai-uses/"
@@ -417,7 +660,13 @@
       "priority": "high",
       "title": "Microsoft Foundry：Agent Memory + Computer Use + MCP Server",
       "summary": "Agent Memory 四階段系統進入 preview，Computer Use 讓 agent 操作桌面，Foundry MCP Server 上線 mcp.ai.azure.com。GPT-5.2 和 Codex Max 正式 GA。",
-      "tags": ["ai agent", "function calling", "tool use", "mcp", "computer use"],
+      "tags": [
+        "ai agent",
+        "function calling",
+        "tool use",
+        "mcp",
+        "computer use"
+      ],
       "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-dec-2025-jan-2026/",
       "source": "Microsoft DevBlogs",
       "sourceUrl": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-dec-2025-jan-2026/"
@@ -430,7 +679,11 @@
       "priority": "medium",
       "title": "Pragmatic Engineer：AI 時代軟體工程六大預測",
       "summary": "92% 開發者每月用 AI coding tool，健康團隊事故率降 50%，Atlassian 描述 zero-code teams 靠 agent 達 2-5x 產出。Kent Beck + Yegge 警告 AI 期望過高。",
-      "tags": ["agentic engineering", "supervisory programming", "zero-code teams"],
+      "tags": [
+        "agentic engineering",
+        "supervisory programming",
+        "zero-code teams"
+      ],
       "url": "https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai",
       "source": "Pragmatic Engineer",
       "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai"
@@ -443,7 +696,11 @@
       "priority": "mental-model",
       "title": "Productize Yourself — AI 時代的終極驗證",
       "summary": "Naval 的核心框架「productize yourself」在 2026 被 AI 徹底驗證。一人公司用 AI 做設計、寫 code、跑分析，挑戰傳統 VC「燒錢擴團隊」的邏輯。",
-      "tags": ["leverage", "solo-founder", "specific-knowledge"],
+      "tags": [
+        "leverage",
+        "solo-founder",
+        "specific-knowledge"
+      ],
       "url": "https://linas.substack.com/p/productizeyourself",
       "source": "Naval Ravikant",
       "sourceUrl": "https://linas.substack.com/p/productizeyourself"
@@ -456,7 +713,11 @@
       "priority": "mental-model",
       "title": "Bezos 的焦慮解方：行動即解藥",
       "summary": "壓力來自你什麼都沒做。踏出第一步的那一秒，壓力就消失了。把焦慮重新定義為身體告訴你該動了的訊號。",
-      "tags": ["stress-management", "action-bias", "problem-solving"],
+      "tags": [
+        "stress-management",
+        "action-bias",
+        "problem-solving"
+      ],
       "url": "https://fortune.com/2026/02/25/jeff-bezos-leadership-advice-handling-anxiety-stress-working-harder/",
       "source": "Jeff Bezos",
       "sourceUrl": "https://fortune.com/2026/02/25/jeff-bezos-leadership-advice-handling-anxiety-stress-working-harder/"
@@ -469,7 +730,11 @@
       "priority": "mental-model",
       "title": "AI Doomer 文章的根本謬誤",
       "summary": "Ben Thompson 拆解 AI 末日論爆文，指出核心錯誤：忽略市場的動態性。AI 讓已有規模優勢的公司更強，不是讓它們消失。",
-      "tags": ["dynamism", "market-analysis", "ai-doomer"],
+      "tags": [
+        "dynamism",
+        "market-analysis",
+        "ai-doomer"
+      ],
       "url": "https://stratechery.com/2026/another-viral-ai-doomer-article-the-fundamental-error-doordashs-ai-advantages/",
       "source": "Ben Thompson (Stratechery)",
       "sourceUrl": "https://stratechery.com/2026/another-viral-ai-doomer-article-the-fundamental-error-doordashs-ai-advantages/"
@@ -482,7 +747,11 @@
       "priority": "operational",
       "title": "Stripe 年度信：$1.9T 支付量 + Stablecoin 佈局",
       "summary": "Collison 兄弟公布 2025 成績單：支付總量 $1.9 兆（+34%）、估值 $159B、350+ 產品更新。收購 Bridge + 合資 Tempo 區塊鏈，專攻穩定幣支付。",
-      "tags": ["stripe", "stablecoin", "agentic-commerce"],
+      "tags": [
+        "stripe",
+        "stablecoin",
+        "agentic-commerce"
+      ],
       "url": "https://www.siliconrepublic.com/business/collison-brothers-stripe-valued-at-159bn-as-annual-letter-published-stablecoin",
       "source": "Patrick & John Collison",
       "sourceUrl": "https://www.siliconrepublic.com/business/collison-brothers-stripe-valued-at-159bn-as-annual-letter-published-stablecoin"
@@ -495,7 +764,11 @@
       "priority": "operational",
       "title": "AI 取代 Junior 的數據實錘",
       "summary": "Harvard + Stanford 研究：GPT-3.5 後 AI 採用企業 junior 職位大幅下降，22-25 歲在 AI 高曝露職業就業率相對下降 13%。",
-      "tags": ["talent", "junior-crisis", "ai-workforce"],
+      "tags": [
+        "talent",
+        "junior-crisis",
+        "ai-workforce"
+      ],
       "url": "https://corpgov.law.harvard.edu/2026/02/19/how-boards-can-lead-in-a-world-remade-by-ai/",
       "source": "Harvard Law / HBR",
       "sourceUrl": "https://corpgov.law.harvard.edu/2026/02/19/how-boards-can-lead-in-a-world-remade-by-ai/"
@@ -508,7 +781,11 @@
       "priority": "operational",
       "title": "Altman 在印度 AI 峰會的資源防衛戰",
       "summary": "Sam Altman 回應 AI 耗水耗電質疑，承認部分公司 AI washing，指出 2026/1 月美國裁員中只有 ~7% 明確歸因 AI。",
-      "tags": ["ai-resources", "ai-washing", "energy"],
+      "tags": [
+        "ai-resources",
+        "ai-washing",
+        "energy"
+      ],
       "url": "https://fortune.com/2026/02/24/sam-altman-open-ai-electricity-usage-water-usage-data-centers-ceo-tech/",
       "source": "Sam Altman",
       "sourceUrl": "https://fortune.com/2026/02/24/sam-altman-open-ai-electricity-usage-water-usage-data-centers-ceo-tech/"
@@ -521,7 +798,11 @@
       "priority": "playbook",
       "title": "Notion 設計團隊的 Claude Code 原型工廠",
       "summary": "Notion 設計師建了共享 Next.js prototype playground，用 Claude Code 把 Figma 設計直接變成可互動 code。核心原則：當 Claude 叫你做某件事，教它自己做那件事。",
-      "tags": ["claude-code", "design-prototyping", "ai-workflow"],
+      "tags": [
+        "claude-code",
+        "design-prototyping",
+        "ai-workflow"
+      ],
       "url": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-notions",
       "source": "Brian Lovin (Notion) via Lenny's Newsletter",
       "sourceUrl": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-notions"
@@ -534,7 +815,11 @@
       "priority": "quotable",
       "title": "AI is my personal army of programmers",
       "summary": "Pieter Levels 一人公司月營收 $266K，40+ 個產品同時跑，全靠 AI 描述功能就能生成網站。",
-      "tags": ["solo-founder", "ai-leverage", "execution"],
+      "tags": [
+        "solo-founder",
+        "ai-leverage",
+        "execution"
+      ],
       "url": "https://www.youtube.com/watch?v=IEAH4u6nMbY",
       "source": "Pieter Levels",
       "sourceUrl": "https://www.youtube.com/watch?v=IEAH4u6nMbY"
@@ -547,7 +832,13 @@
       "priority": "paradigm-shift",
       "title": "OpenSwarm — Multi-Agent Claude CLI Orchestrator",
       "summary": "HN Show HN 熱門專案：用多個 Claude Code CLI 實例組成 Worker/Reviewer/Test/Documenter pipeline，自動從 Linear 拉 issue。用 LanceDB + multilingual-e5 embeddings 做長期記憶和 code knowledge graph 做 impact analysis。",
-      "tags": ["multi-agent", "agentic engineering", "function calling", "knowledge base", "claude code"],
+      "tags": [
+        "multi-agent",
+        "agentic engineering",
+        "function calling",
+        "knowledge base",
+        "claude code"
+      ],
       "url": "https://github.com/Intrect-io/OpenSwarm",
       "source": "Hacker News",
       "sourceUrl": "https://news.ycombinator.com/item?id=47160980"
@@ -560,7 +851,12 @@
       "priority": "paradigm-shift",
       "title": "Cursor Cloud Agents — 35% PR 已由 AI 產出",
       "summary": "Cursor 宣布 cloud-based parallel agents：每個 agent 在獨立 VM 跑完整 dev environment，可同時 10-20 個 agent 並行。agent 自己跑測試、產出影片/截圖/log 作為 review 證據。Cursor 內部 35% merged PR 由 agent 產生。",
-      "tags": ["ai coding", "demos-not-diffs", "parallel agents", "vibe coding"],
+      "tags": [
+        "ai coding",
+        "demos-not-diffs",
+        "parallel agents",
+        "vibe coding"
+      ],
       "url": "https://cursor.com/changelog",
       "source": "TechStartups",
       "sourceUrl": "https://cursor.com/changelog/02-25-26"
@@ -573,7 +869,14 @@
       "priority": "high",
       "title": "Microsoft Agent Framework RC — .NET + Python agent 統一 SDK",
       "summary": "Microsoft Agent Framework 達到 RC，整合 Semantic Kernel + AutoGen，支援 MCP、A2A、multi-agent orchestration、human-in-the-loop，graph-based workflow 支援 sequential 和 concurrent 執行。",
-      "tags": ["agent framework", "mcp", "multi-agent", "semantic kernel", ".NET", "python"],
+      "tags": [
+        "agent framework",
+        "mcp",
+        "multi-agent",
+        "semantic kernel",
+        ".NET",
+        "python"
+      ],
       "url": "https://devblogs.microsoft.com/foundry/microsoft-agent-framework-reaches-release-candidate/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/02/ms-agent-framework-rc/"
@@ -586,7 +889,12 @@
       "priority": "high",
       "title": "Claude Code Remote Control — 手機遙控本機 coding session",
       "summary": "Anthropic 推出 Remote Control：本機 terminal 跑 Claude Code，用 QR code 或 URL 從手機/平板/瀏覽器接管。所有執行留在本機，remote 端只是控制介面。只需 outbound HTTPS。",
-      "tags": ["ai coding", "copilot", "ai-assisted development", "claude code"],
+      "tags": [
+        "ai coding",
+        "copilot",
+        "ai-assisted development",
+        "claude code"
+      ],
       "url": "https://www.helpnetsecurity.com/2026/02/25/anthropic-remote-control-claude-code-feature/",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/"
@@ -599,7 +907,13 @@
       "priority": "high",
       "title": "Google API Keys × Gemini 特權升級漏洞",
       "summary": "Truffle Security 揭露：Google Maps API key 啟用 Gemini API 後自動獲得存取 /files/ 和 /cachedContents/ 的權限。Common Crawl 找到 2,863 把受影響 key。Google 正在撤銷。",
-      "tags": ["zero trust", "supply chain security", "privilege escalation", "google", "gemini"],
+      "tags": [
+        "zero trust",
+        "supply chain security",
+        "privilege escalation",
+        "google",
+        "gemini"
+      ],
       "url": "https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/26/google-api-keys/"
@@ -612,7 +926,13 @@
       "priority": "medium",
       "title": "LangChain：Agent 上 Production 的觀測難題",
       "summary": "Agent observability 跟傳統 monitoring 完全不同：infinite input space + LLM prompt 敏感性 = 開發時行為不等於 production 行為。LangSmith trajectory evaluation 追蹤 tool call 順序。",
-      "tags": ["llm evaluation", "evals", "ai agent", "observability", "langsmith"],
+      "tags": [
+        "llm evaluation",
+        "evals",
+        "ai agent",
+        "observability",
+        "langsmith"
+      ],
       "url": "https://blog.langchain.com/you-dont-know-what-your-agent-will-do-until-its-in-production/",
       "source": "LangChain Blog",
       "sourceUrl": "https://blog.langchain.com/you-dont-know-what-your-agent-will-do-until-its-in-production/"
@@ -625,7 +945,12 @@
       "priority": "low",
       "title": "Benedict Evans 論 OpenAI 的 capability gap",
       "summary": "多數用戶一週只用 ChatGPT 幾次，OpenAI 承認 capability gap。Evans 認為這等於沒有 clear product-market fit，廣告策略是為了讓免費用戶也能用最強模型來加深黏性。",
-      "tags": ["product-market fit", "capability gap", "AI business model", "openai"],
+      "tags": [
+        "product-market fit",
+        "capability gap",
+        "AI business model",
+        "openai"
+      ],
       "url": "https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Feb/26/benedict-evans/"
@@ -638,7 +963,12 @@
       "priority": "high",
       "title": "RLM — Recursive Language Models 無限 context 推理引擎",
       "summary": "MIT OASYS lab 做的推理 paradigm，讓 LLM 能遞迴呼叫自己處理近乎無限長度 context。把 context 丟進 REPL 環境，LM 可以拆解、遞迴呼叫子 LM。pip install rlms 即用，支援 OpenAI/Anthropic/vLLM。",
-      "tags": ["context length", "local inference", "llm_inference", "infinite context"],
+      "tags": [
+        "context length",
+        "local inference",
+        "llm_inference",
+        "infinite context"
+      ],
       "url": "https://github.com/alexzhang13/rlm",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/26/alexzhang13-rlm.html",
@@ -653,7 +983,12 @@
       "priority": "medium",
       "title": "OpenDataLoader PDF — CPU-only PDF→Markdown 100頁/秒",
       "summary": "RAG 前處理神器。純 CPU rule-based 解析 PDF 轉 Markdown/JSON，100+ 頁/秒。支援多欄排版正確閱讀順序、表格結構保留、bounding box、prompt injection 防禦。Python/Node.js/Java/Docker。",
-      "tags": ["document parsing", "RAG", "PDF", "markdown"],
+      "tags": [
+        "document parsing",
+        "RAG",
+        "PDF",
+        "markdown"
+      ],
       "url": "https://github.com/opendataloader-project/opendataloader-pdf",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/26/opendataloader-project-opendataloader-pdf.html",
@@ -668,7 +1003,12 @@
       "priority": "medium",
       "title": "Kreuzberg — Rust core 75+ 格式文件萃取框架",
       "summary": "多語言文件 intelligence 框架。Rust core 支援 75+ 格式（PDF/Office/圖片/HTML/email），Python/Node/Go/Java/C# 全有 binding。OCR 支援 Tesseract/PaddleOCR/EasyOCR。可跑 MCP server 或 REST API。",
-      "tags": ["OCR", "document AI", "document parsing", "Rust"],
+      "tags": [
+        "OCR",
+        "document AI",
+        "document parsing",
+        "Rust"
+      ],
       "url": "https://github.com/kreuzberg-dev/kreuzberg",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/26/kreuzberg-dev-kreuzberg.html",
@@ -683,7 +1023,13 @@
       "priority": "medium",
       "title": "MIE — 跨 AI Agent 持久化 Knowledge Graph",
       "summary": "讓 Claude/ChatGPT/Cursor/Gemini 共享同一份記憶的 knowledge graph。存 facts/decisions/entities/events，MCP server 連接，支援語義搜尋和 graph traversal。Go 寫的，brew install 即可。",
-      "tags": ["knowledge graph", "graphrag", "semantic search", "MCP", "agent memory"],
+      "tags": [
+        "knowledge graph",
+        "graphrag",
+        "semantic search",
+        "MCP",
+        "agent memory"
+      ],
       "url": "https://github.com/kraklabs/mie",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/26/kraklabs-mie.html",
@@ -698,7 +1044,12 @@
       "priority": "medium",
       "title": "GutenOCR — VLM-based OCR 訓練工具包 (3B/7B)",
       "summary": "Roots Automation 出品的 VLM OCR toolkit，release 3B 和 7B SOTA 模型（基於 Qwen2.5-VL）。支援全頁讀取、區域偵測、定位閱讀、LaTeX 辨識。6 種資料源 pipeline + DeepSpeed ZeRO-3 訓練。",
-      "tags": ["OCR", "document AI", "VLM", "fine-tuning"],
+      "tags": [
+        "OCR",
+        "document AI",
+        "VLM",
+        "fine-tuning"
+      ],
       "url": "https://github.com/Roots-Automation/GutenOCR",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/26/Roots-Automation-GutenOCR.html",
@@ -713,7 +1064,13 @@
       "priority": "paradigm-shift",
       "title": "Solo.io AgentGateway — CNCF 開源 AI Agent 流量閘道",
       "summary": "Solo.io 推出 AgentGateway，CNCF 孵化的開源專案，專為 Kubernetes 環境打造的 AI agent 流量控制層。同時處理 LLM API 呼叫和 MCP tool call，內建 JWT auth、RBAC、PII redaction、token budget。",
-      "tags": ["agent gateway", "MCP", "service mesh", "Kubernetes", "zero trust"],
+      "tags": [
+        "agent gateway",
+        "MCP",
+        "service mesh",
+        "Kubernetes",
+        "zero trust"
+      ],
       "url": "https://agentgateway.dev",
       "source": "Virtualization Review",
       "sourceUrl": "https://virtualizationreview.com/articles/2026/02/26/a-conversation-with-solo-io-about-agentic-agents-and-skills-in-enterprise-it.aspx"
@@ -726,7 +1083,13 @@
       "priority": "paradigm-shift",
       "title": "MindsDB v26.0.0 — 完全棄用 LangChain，改用 Pydantic Agent Framework",
       "summary": "MindsDB 大版本直接把 LangChain 拔掉，換成 Pydantic-based agentic framework。同時定位自己為 universal MCP server，讓 AI agent 透過 SQL 直接查詢/寫入企業資料。",
-      "tags": ["agent framework", "MCP", "LangChain", "federated data", "knowledge base"],
+      "tags": [
+        "agent framework",
+        "MCP",
+        "LangChain",
+        "federated data",
+        "knowledge base"
+      ],
       "url": "https://github.com/mindsdb/mindsdb/releases/tag/v26.0.0",
       "source": "MindsDB Blog",
       "sourceUrl": "https://mindsdb.com/blog/introducing-mindsdb-v26.0.0-with-improved-agents-and-knowledge-bases"
@@ -739,7 +1102,12 @@
       "priority": "medium",
       "title": "Cloudflare R2 Local Uploads — 全球寫入延遲降 75%",
       "summary": "R2 Local Uploads 功能進入 open beta：上傳直接寫到最近的 PoP 節點，metadata 即時同步，object data 背景非同步複製。TTLB 最多降 75%，免費啟用。",
-      "tags": ["edge", "CDN", "object storage", "latency optimization"],
+      "tags": [
+        "edge",
+        "CDN",
+        "object storage",
+        "latency optimization"
+      ],
       "url": "https://developers.cloudflare.com/r2/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/02/cloudflare-local-uploads/"
@@ -752,7 +1120,12 @@
       "priority": "medium",
       "title": "Google Nano Banana 2 (Gemini 3.1 Flash Image) — 高速 + 高品質圖像生成",
       "summary": "Google 推出 Nano Banana 2，結合 Pro 等級品質和 Flash 速度。支援 512px 到 4K、精確文字渲染/翻譯、最多 5 角色一致性。佈署到 Gemini app、AI Studio、Vertex AI。",
-      "tags": ["image generation", "multimodal", "diffusion", "Gemini"],
+      "tags": [
+        "image generation",
+        "multimodal",
+        "diffusion",
+        "Gemini"
+      ],
       "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
       "source": "Google Blog",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"
@@ -765,7 +1138,12 @@
       "priority": "medium",
       "title": "Miro MCP 整合 — 規格圖 → Cursor/Claude Code/Copilot 直出程式碼",
       "summary": "Miro 推出 MCP server Beta，把 board 上的 spec、PRD、架構圖直接餵給 AI coding tool。反向也支援：codebase → 自動更新的架構圖。",
-      "tags": ["MCP", "AI coding", "developer experience", "design-to-code"],
+      "tags": [
+        "MCP",
+        "AI coding",
+        "developer experience",
+        "design-to-code"
+      ],
       "url": "https://miro.com/blog/whats-new-february-2026/",
       "source": "Miro Blog",
       "sourceUrl": "https://miro.com/blog/whats-new-february-2026/"
@@ -778,7 +1156,12 @@
       "priority": "medium",
       "title": "Langfuse：系統化評估 AI Agent Skills",
       "summary": "Langfuse 發表完整的 agent skill 評估流程：Dataset → Agent experiment → Tracing → Scoring → Iteration。把 skill 品質做成可量化指標，跟 OpenAI Codex 的 JSONL trace + grader 思路一致。",
-      "tags": ["llm evaluation", "evals", "agent framework", "observability"],
+      "tags": [
+        "llm evaluation",
+        "evals",
+        "agent framework",
+        "observability"
+      ],
       "url": "https://langfuse.com/blog/2026-02-26-evaluate-ai-agent-skills",
       "source": "Langfuse Blog",
       "sourceUrl": "https://langfuse.com/blog/2026-02-26-evaluate-ai-agent-skills"
@@ -791,7 +1174,12 @@
       "priority": "low",
       "title": "Cursor Cloud Agents 正式啟動 — Agent 有自己的 VM",
       "summary": "Cursor cloud agent 跑在獨立 VM 裡，自動 onboard codebase、build feature、跑測試、產出 merge-ready PR。內部 30-35% merged PR 由 agent 產出。",
-      "tags": ["AI coding", "agent framework", "autonomous development", "demos-not-diffs"],
+      "tags": [
+        "AI coding",
+        "agent framework",
+        "autonomous development",
+        "demos-not-diffs"
+      ],
       "url": "https://cursor.com/blog/agent-computer-use",
       "source": "DevOps.com / Cursor",
       "sourceUrl": "https://devops.com/cursor-cloud-agents-get-their-own-computers-and-35-of-internal-prs-to-prove-it/"
