@@ -1,5 +1,148 @@
+Added 8 entries, total 70
 {
   "entries": [
+    {
+      "id": "20260227-sw-015",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Microsoft CTO 警告 AI 正在消滅 Junior Dev 職缺",
+      "summary": "Russinovich 和 Hanselman 警告 junior 職缺斷崖式下降，提出 preceptor-based model 保留人才培育管線。",
+      "tags": [
+        "AI coding",
+        "supervisory programming",
+        "cognitive debt"
+      ],
+      "url": "https://www.devclass.com/development/2026/02/26/top-microsoft-execs-fret-about-impact-of-ai-on-software-engineering-profession/4091789",
+      "source": "DevClass",
+      "sourceUrl": "https://www.devclass.com/development/2026/02/26/top-microsoft-execs-fret-about-impact-of-ai-on-software-engineering-profession/4091789"
+    },
+    {
+      "id": "20260227-sw-014",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Kali Linux × Claude MCP — AI 輔助滲透測試",
+      "summary": "Kali 官方整合 Claude via MCP，自然語言下達 Nmap 等滲透測試命令。三層架構。",
+      "tags": [
+        "MCP",
+        "tool use",
+        "security",
+        "red teaming"
+      ],
+      "url": "https://www.kali.org/blog/kali-llm-claude-desktop/",
+      "source": "Kali.org",
+      "sourceUrl": "https://www.kali.org/blog/kali-llm-claude-desktop/"
+    },
+    {
+      "id": "20260227-sw-013",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google AI 使用納入績效考核 — 擴大到非技術員工",
+      "summary": "Google 把 AI 使用從工程師擴展到銷售/策略角色，納入 GRAD 績效評估。Meta、Microsoft、Block 跟進。Google 50% 程式碼已由 AI 生成。",
+      "tags": [
+        "developer experience",
+        "AI coding",
+        "agentic engineering"
+      ],
+      "url": "https://www.businessinsider.com/google-employee-ai-adoption-non-technical-software-engineer-performance-review-2026-2",
+      "source": "Business Insider",
+      "sourceUrl": "https://www.businessinsider.com/google-employee-ai-adoption-non-technical-software-engineer-performance-review-2026-2"
+    },
+    {
+      "id": "20260227-sw-012",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic 拒絕五角大廈 — AI 安全護欄不妥協",
+      "summary": "Dario Amodei 拒絕 Pentagon 億合約最終報價，堅持不移除大規模監控和自主武器禁令。國防部威脅列為供應鏈風險。",
+      "tags": [
+        "alignment",
+        "safety",
+        "guardrails",
+        "constitutional AI"
+      ],
+      "url": "https://www.anthropic.com",
+      "source": "CBS News / CityNews Halifax",
+      "sourceUrl": "https://halifax.citynews.ca/2026/02/27/anthropic-refuses-to-bend-to-pentagon-on-ai-safeguards-as-dispute-nears-deadline/"
+    },
+    {
+      "id": "20260227-sw-011",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Perplexity pplx-embed — Qwen3 改造的 SOTA 雙向 Embedding 模型",
+      "summary": "Bidirectional attention + diffusion denoising 預訓練。0.6B 和 4B，INT8 量化，MTEB 69.66% nDCG@10。MIT License。",
+      "tags": [
+        "embedding",
+        "RAG",
+        "vector search",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/collections/perplexity-ai/pplx-embed",
+      "source": "Perplexity Research",
+      "sourceUrl": "https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval-tasks"
+    },
+    {
+      "id": "20260227-sw-010",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Figma × OpenAI Codex — MCP 串接 Design ↔ Code 雙向工作流",
+      "summary": "Figma MCP server 整合 Codex，設計師和工程師雙向作業，原型準確率 80-90%。Codex 百萬週活。",
+      "tags": [
+        "MCP",
+        "design-to-code",
+        "AI coding",
+        "developer experience"
+      ],
+      "url": "https://www.figma.com/blog/introducing-codex-to-figma/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/26/figma-partners-with-openai-to-bake-in-support-for-codex/"
+    },
+    {
+      "id": "20260227-sw-009",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Microsoft Evals for Agent Interop — 企業 Agent 互操作性基準",
+      "summary": "Microsoft 開源 agent 評測套件，templated JSON eval specs + tool call correctness + AI judge 評分 + leaderboard 跨模型比較。Docker Compose 部署。",
+      "tags": [
+        "llm evaluation",
+        "evals",
+        "agent framework",
+        "enterprise"
+      ],
+      "url": "https://github.com/microsoft/EvalsforAgentsInterop",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/evals-agent-interop/"
+    },
+    {
+      "id": "20260227-sw-008",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Microsoft CORPGEN — Multi-Agent 真實辦公環境框架",
+      "summary": "Microsoft Research 的 CORPGEN 框架，第一個針對同時處理幾十個相互依賴任務的 multi-agent 系統。Hierarchical planning + memory isolation + experiential learning，3.5x 完成率。",
+      "tags": [
+        "multi-agent",
+        "hierarchical planning",
+        "memory isolation",
+        "experiential learning"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/",
+      "source": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/"
+    },
     {
       "id": "20260227-ai-004",
       "radar": "ai-infra",
