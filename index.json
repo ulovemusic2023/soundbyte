@@ -704,6 +704,97 @@
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/26/Roots-Automation-GutenOCR.html",
       "vram": "3B→~6GB / 7B→~14GB FP16",
       "license": "Apache 2.0 (code) / CC-BY-NC (weights)"
+    },
+    {
+      "id": "20260227-sw-001",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Solo.io AgentGateway — CNCF 開源 AI Agent 流量閘道",
+      "summary": "Solo.io 推出 AgentGateway，CNCF 孵化的開源專案，專為 Kubernetes 環境打造的 AI agent 流量控制層。同時處理 LLM API 呼叫和 MCP tool call，內建 JWT auth、RBAC、PII redaction、token budget。",
+      "tags": ["agent gateway", "MCP", "service mesh", "Kubernetes", "zero trust"],
+      "url": "https://agentgateway.dev",
+      "source": "Virtualization Review",
+      "sourceUrl": "https://virtualizationreview.com/articles/2026/02/26/a-conversation-with-solo-io-about-agentic-agents-and-skills-in-enterprise-it.aspx"
+    },
+    {
+      "id": "20260227-sw-002",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "MindsDB v26.0.0 — 完全棄用 LangChain，改用 Pydantic Agent Framework",
+      "summary": "MindsDB 大版本直接把 LangChain 拔掉，換成 Pydantic-based agentic framework。同時定位自己為 universal MCP server，讓 AI agent 透過 SQL 直接查詢/寫入企業資料。",
+      "tags": ["agent framework", "MCP", "LangChain", "federated data", "knowledge base"],
+      "url": "https://github.com/mindsdb/mindsdb/releases/tag/v26.0.0",
+      "source": "MindsDB Blog",
+      "sourceUrl": "https://mindsdb.com/blog/introducing-mindsdb-v26.0.0-with-improved-agents-and-knowledge-bases"
+    },
+    {
+      "id": "20260227-sw-003",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare R2 Local Uploads — 全球寫入延遲降 75%",
+      "summary": "R2 Local Uploads 功能進入 open beta：上傳直接寫到最近的 PoP 節點，metadata 即時同步，object data 背景非同步複製。TTLB 最多降 75%，免費啟用。",
+      "tags": ["edge", "CDN", "object storage", "latency optimization"],
+      "url": "https://developers.cloudflare.com/r2/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/cloudflare-local-uploads/"
+    },
+    {
+      "id": "20260227-sw-004",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google Nano Banana 2 (Gemini 3.1 Flash Image) — 高速 + 高品質圖像生成",
+      "summary": "Google 推出 Nano Banana 2，結合 Pro 等級品質和 Flash 速度。支援 512px 到 4K、精確文字渲染/翻譯、最多 5 角色一致性。佈署到 Gemini app、AI Studio、Vertex AI。",
+      "tags": ["image generation", "multimodal", "diffusion", "Gemini"],
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/"
+    },
+    {
+      "id": "20260227-sw-005",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Miro MCP 整合 — 規格圖 → Cursor/Claude Code/Copilot 直出程式碼",
+      "summary": "Miro 推出 MCP server Beta，把 board 上的 spec、PRD、架構圖直接餵給 AI coding tool。反向也支援：codebase → 自動更新的架構圖。",
+      "tags": ["MCP", "AI coding", "developer experience", "design-to-code"],
+      "url": "https://miro.com/blog/whats-new-february-2026/",
+      "source": "Miro Blog",
+      "sourceUrl": "https://miro.com/blog/whats-new-february-2026/"
+    },
+    {
+      "id": "20260227-sw-006",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Langfuse：系統化評估 AI Agent Skills",
+      "summary": "Langfuse 發表完整的 agent skill 評估流程：Dataset → Agent experiment → Tracing → Scoring → Iteration。把 skill 品質做成可量化指標，跟 OpenAI Codex 的 JSONL trace + grader 思路一致。",
+      "tags": ["llm evaluation", "evals", "agent framework", "observability"],
+      "url": "https://langfuse.com/blog/2026-02-26-evaluate-ai-agent-skills",
+      "source": "Langfuse Blog",
+      "sourceUrl": "https://langfuse.com/blog/2026-02-26-evaluate-ai-agent-skills"
+    },
+    {
+      "id": "20260227-sw-007",
+      "radar": "software-dev",
+      "date": "2026-02-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cursor Cloud Agents 正式啟動 — Agent 有自己的 VM",
+      "summary": "Cursor cloud agent 跑在獨立 VM 裡，自動 onboard codebase、build feature、跑測試、產出 merge-ready PR。內部 30-35% merged PR 由 agent 產出。",
+      "tags": ["AI coding", "agent framework", "autonomous development", "demos-not-diffs"],
+      "url": "https://cursor.com/blog/agent-computer-use",
+      "source": "DevOps.com / Cursor",
+      "sourceUrl": "https://devops.com/cursor-cloud-agents-get-their-own-computers-and-35-of-internal-prs-to-prove-it/"
     }
   ]
 }
