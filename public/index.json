@@ -1,6 +1,246 @@
 {
   "entries": [
     {
+      "id": "20260228-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "llmfit",
+      "summary": "一條指令掃描硬體，從 497 個模型中找出能跑的 LLM。互動式 TUI + CLI，支援多 GPU、MoE，自動選最佳量化",
+      "tags": [
+        "local-llm",
+        "cli-tool",
+        "developer-tool"
+      ],
+      "url": "https://github.com/AlexsJones/llmfit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/AlexsJones/llmfit",
+      "stars": 6404,
+      "createdDate": "2026-02-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "openfang",
+      "summary": "Rust 寫的 Agent OS — 自主排程 agent 的作業系統。單一 32MB binary，內建 7 個 Hand",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "automation"
+      ],
+      "url": "https://github.com/RightNow-AI/openfang",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/RightNow-AI/openfang",
+      "stars": 3804,
+      "createdDate": "2026-02-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "Agent-Reach",
+      "summary": "給 AI agent 一鍵裝上讀網路能力 — Twitter、Reddit、YouTube、GitHub、小紅書、B站",
+      "tags": [
+        "ai-agent",
+        "scraper",
+        "cli-tool"
+      ],
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Panniantong/Agent-Reach",
+      "stars": 2358,
+      "createdDate": "2026-02-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "BarraCUDA",
+      "summary": "C99 從頭寫的 CUDA 編譯器，直接把 .cu 編成 AMD GPU machine code（RDNA 2/3/4）",
+      "tags": [
+        "local-ai",
+        "gpu",
+        "compiler"
+      ],
+      "url": "https://github.com/Zaneham/BarraCUDA",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Zaneham/BarraCUDA",
+      "stars": 1451,
+      "createdDate": "2026-02-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "tadpole-studio",
+      "summary": "本地 AI 音樂生成 UI — ACE-Step 前端，Text-to-Music / Remix / Stem Extract / LoRA 微調",
+      "tags": [
+        "music-generation",
+        "audio",
+        "daw",
+        "local-ai"
+      ],
+      "url": "https://github.com/proximasan/tadpole-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/proximasan/tadpole-studio",
+      "stars": 55,
+      "createdDate": "2026-02-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "picolm",
+      "summary": "純 C 零依賴 LLM inference — $10 開發板（256MB RAM）跑 1B 模型，mmap 只吃 45MB RAM",
+      "tags": [
+        "local-llm",
+        "edge-ai",
+        "cli-tool"
+      ],
+      "url": "https://github.com/RightNow-AI/picolm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/RightNow-AI/picolm",
+      "stars": 1049,
+      "createdDate": "2026-02-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "freeflow",
+      "summary": "開源 Wispr Flow — macOS 語音轉文字，按住 Fn 講話自動貼到輸入框",
+      "tags": [
+        "tts",
+        "productivity",
+        "developer-tool"
+      ],
+      "url": "https://github.com/zachlatta/freeflow",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/zachlatta/freeflow",
+      "stars": 865,
+      "createdDate": "2026-02-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "python-apple-fm-sdk",
+      "summary": "Apple 官方 Python SDK — 直接呼叫 macOS on-device Foundation Model",
+      "tags": [
+        "local-llm",
+        "on-device",
+        "apple"
+      ],
+      "url": "https://github.com/apple/python-apple-fm-sdk",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/apple/python-apple-fm-sdk",
+      "stars": 676,
+      "createdDate": "2026-02-25",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260228-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "Overture",
+      "summary": "MCP server 把 coding agent 執行計劃畫成互動式 flowchart",
+      "tags": [
+        "mcp",
+        "coding-agent",
+        "developer-tool"
+      ],
+      "url": "https://github.com/SixHq/Overture",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/SixHq/Overture",
+      "stars": 572,
+      "createdDate": "2026-02-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "axon",
+      "summary": "Codebase → knowledge graph，透過 MCP 讓 AI agent 做 impact analysis",
+      "tags": [
+        "mcp",
+        "code-intelligence",
+        "developer-tool"
+      ],
+      "url": "https://github.com/harshkedia177/axon",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/harshkedia177/axon",
+      "stars": 378,
+      "createdDate": "2026-02-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "emdash",
+      "summary": "開源 ADE (YC W26) — 多個 coding agent 平行跑在各自 git worktree，支援 21 種 CLI agent",
+      "tags": [
+        "coding-agent",
+        "developer-tool",
+        "ide"
+      ],
+      "url": "https://github.com/generalaction/emdash",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47140322",
+      "stars": null,
+      "createdDate": "2026-02-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-02-28",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "parallel-code",
+      "summary": "Claude Code、Codex、Gemini CLI 三個 coding agent 並排跑在獨立 git worktree",
+      "tags": [
+        "coding-agent",
+        "cli-tool"
+      ],
+      "url": "https://github.com/johannesjo/parallel-code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/johannesjo/parallel-code",
+      "stars": 279,
+      "createdDate": "2026-02-18",
+      "license": "MIT"
+    },
+    {
       "id": "20260228-fm-007",
       "radar": "founder-mind",
       "date": "2026-02-28",
