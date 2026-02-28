@@ -1,6 +1,102 @@
-Added 8 entries, total 70
 {
   "entries": [
+    {
+      "id": "20260228-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HyperNova 60B 2602 — 量子壓縮 gpt-oss-120B",
+      "summary": "Multiverse Computing 用 CompactifAI 把 120B 模型壓到 60B (32GB)，精度只掉 2-3%，tool calling benchmark 反而更強。",
+      "tags": [
+        "quantization",
+        "llm-inference",
+        "model-compression"
+      ],
+      "url": "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2602",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+      "vram": "32GB (原始) / ~16GB (INT4)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260228-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "PageIndex — Vectorless Reasoning-based RAG",
+      "summary": "不需要 vector database 的 RAG 方案，用 reasoning-based 方法直接從文件索引做檢索。",
+      "tags": [
+        "rag",
+        "document-parsing",
+        "semantic-search"
+      ],
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260228-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Char — AI 離線會議轉錄 + 摘要",
+      "summary": "開源 AI 筆記 app，監聽電腦音訊即時轉錄，支援 Ollama/LM Studio 完全離線，資料存本地 SQLite。",
+      "tags": [
+        "speech-recognition",
+        "whisper",
+        "ollama",
+        "local-inference"
+      ],
+      "url": "https://github.com/fastrepl/char",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/27/fastrepl-char.html",
+      "vram": "取決於 local LLM",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260228-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cactus Engine — 手機/穿戴裝置 AI 推論引擎",
+      "summary": "ARM SIMD 最佳化的 AI engine，支援 LLM chat、STT、RAG、vision、tool calling，iPhone 13 Mini 跑 1.2B 有 34 tok/s。",
+      "tags": [
+        "edge-inference",
+        "on-device",
+        "speech-recognition",
+        "mobile-ai"
+      ],
+      "url": "https://github.com/cactus-compute/cactus",
+      "source": "MAGI//ARCHIVE + GitHub Trending",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/27/cactus-compute-cactus.html",
+      "vram": "70MB-1.5GB (mobile)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260228-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "oLLM — 8GB VRAM 跑 100k context LLM",
+      "summary": "用 SSD offload + FlashAttention-2 在 8GB VRAM 上跑 Qwen3-Next-80B 等大模型的 100k context 推論，純 fp16 不量化。",
+      "tags": [
+        "llm-inference",
+        "local-inference",
+        "kv-cache",
+        "fp16"
+      ],
+      "url": "https://github.com/Mega4alik/ollm",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/27/Mega4alik-ollm.html",
+      "vram": "~7.5GB (offload to SSD)",
+      "license": "MIT"
+    },
     {
       "id": "20260227-sw-015",
       "radar": "software-dev",
