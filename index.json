@@ -1,6 +1,129 @@
 {
   "entries": [
     {
+      "id": "20260228-sw-016",
+      "radar": "software-dev",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Show HN: RetroTick — Claude Code 一小時造瀏覽器 Win32 模擬器",
+      "summary": "瀏覽器用 x86 CPU 模擬 + 原生 JS Win32 API stubs 跑 Windows 經典程式，上一代花好幾天，Claude Code 一小時搞定。",
+      "tags": [
+        "ai-coding",
+        "agentic-engineering",
+        "emulation"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47180083",
+      "source": "Hacker News Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47180083"
+    },
+    {
+      "id": "20260228-sw-015",
+      "radar": "software-dev",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Vercel Chat SDK 新增 Telegram Adapter",
+      "summary": "單一 codebase 支援 Slack/Discord/GitHub/Teams/Telegram，mentions、reactions、DM 全支援。",
+      "tags": [
+        "chatbot",
+        "multi-platform",
+        "developer-experience",
+        "telegram"
+      ],
+      "url": "https://vercel.com/changelog/chat-sdk-adds-telegram-adapter-support",
+      "source": "Vercel",
+      "sourceUrl": "https://vercel.com/changelog/chat-sdk-adds-telegram-adapter-support"
+    },
+    {
+      "id": "20260228-sw-014",
+      "radar": "software-dev",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Vercel Queues Public Beta — Serverless 原生佇列",
+      "summary": "Durable event streaming，at-least-once delivery + fan-out consumer groups + 自動 retry，/usr/bin/zsh.60/1M ops。",
+      "tags": [
+        "message-queue",
+        "serverless",
+        "event-driven",
+        "vercel"
+      ],
+      "url": "https://vercel.com/changelog/vercel-queues-now-in-public-beta",
+      "source": "Vercel",
+      "sourceUrl": "https://vercel.com/changelog/vercel-queues-now-in-public-beta"
+    },
+    {
+      "id": "20260228-sw-013",
+      "radar": "software-dev",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Microsoft × OpenAI 聯合聲明：核心合作不變",
+      "summary": "OpenAI 拿到 ,100 億融資後 Microsoft 發聯合聲明：Azure stateless API 獨家、IP 授權、分潤全部不動。",
+      "tags": [
+        "cloud-infrastructure",
+        "partnership",
+        "azure"
+      ],
+      "url": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/",
+      "source": "Microsoft Blog",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/02/27/microsoft-and-openai-joint-statement-on-continuing-partnership/"
+    },
+    {
+      "id": "20260228-sw-012",
+      "radar": "software-dev",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Block 裁員 40% — Jack Dorsey 直言 AI 改變經營",
+      "summary": "Block 從 10,000+ 裁至 6,000 人，CEO 直接以 AI 為裁員主因，股價暴漲 20%+。首家 CEO 公開以 AI 能力為裁員理由的上市公司。",
+      "tags": [
+        "seat-compression",
+        "ai-fatigue",
+        "workforce"
+      ],
+      "url": "https://fortune.com/2026/02/27/jack-dorsey-block-40-percent-layoff-ai-intelligence-tools-smaller-team/",
+      "source": "Fortune / Fox Business",
+      "sourceUrl": "https://fortune.com/2026/02/27/jack-dorsey-block-40-percent-layoff-ai-intelligence-tools-smaller-team/"
+    },
+    {
+      "id": "20260228-sw-011",
+      "radar": "software-dev",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 閃電接手 Pentagon — 帶 safeguards 上軍方機密網路",
+      "summary": "Anthropic 被封殺數小時後 OpenAI 宣布與 Pentagon 達成協議部署到機密網路，保留 safeguards（禁大規模監控、自主武器需人類負責）。",
+      "tags": [
+        "alignment",
+        "safety",
+        "ai-agent",
+        "defense"
+      ],
+      "url": "https://www.politico.com/news/2026/02/28/openai-announces-new-deal-with-pentagon-including-ethical-safeguards-00805546",
+      "source": "Politico / Business Insider",
+      "sourceUrl": "https://www.politico.com/news/2026/02/28/openai-announces-new-deal-with-pentagon-including-ethical-safeguards-00805546"
+    },
+    {
+      "id": "20260228-sw-010",
+      "radar": "software-dev",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Trump 下令全聯邦禁用 Anthropic — Claude 被列國安風險",
+      "summary": "Anthropic 拒絕撤除 Claude 在自主武器 & 大規模監控上的 safeguards，遭 Pentagon 終止合約並列為 supply-chain risk，所有聯邦機構即刻停用。",
+      "tags": [
+        "alignment",
+        "safety",
+        "guardrails",
+        "federal-ban"
+      ],
+      "url": "https://www.politico.com/news/2026/02/27/trump-orders-all-federal-agencies-to-stop-using-anthropic-00804517",
+      "source": "Politico / CBS News / Axios",
+      "sourceUrl": "https://www.politico.com/news/2026/02/27/trump-orders-all-federal-agencies-to-stop-using-anthropic-00804517"
+    },
+    {
       "id": "20260228-ai-010",
       "radar": "ai-infra",
       "date": "2026-02-28",
