@@ -1,6 +1,105 @@
 {
   "entries": [
     {
+      "id": "20260228-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "FunAudioLLM/Fun-Audio-Chat",
+      "summary": "阿里通義 8B Audio Language Model — Dual-Resolution Speech Representations，spoken QA / audio understanding / speech function calling 同級模型第一",
+      "tags": [
+        "tts",
+        "speech-recognition",
+        "audio-ai",
+        "voice-interaction"
+      ],
+      "url": "https://github.com/FunAudioLLM/Fun-Audio-Chat",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/27/FunAudioLLM-Fun-Audio-Chat.html",
+      "vram": "~24GB FP16, ~14GB INT4 est.",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260228-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Ollama v0.17.4",
+      "summary": "正式支援 Qwen3.5 全系列模型，修復 model loading 和 tool calling bug",
+      "tags": [
+        "llm-inference",
+        "ollama",
+        "local-inference"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.4",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases",
+      "vram": "depends on model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "aurelio-labs/semantic-router",
+      "summary": "用 semantic vector space 做超快 LLM 路由決策，支援全本地運行，整合 Pinecone / Qdrant / Cohere / OpenAI",
+      "tags": [
+        "rag",
+        "semantic-search",
+        "ai-devtools",
+        "local-inference"
+      ],
+      "url": "https://github.com/aurelio-labs/semantic-router",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/02/28/aurelio-labs-semantic-router.html",
+      "vram": "<1GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "llama.cpp b6869",
+      "summary": "CUDA SET 操作支援、KV cache 取消 size padding 省 VRAM、raw 格式 embedding 輸出、SYCL 後端 SSM_CONV 支援",
+      "tags": [
+        "llm-inference",
+        "cuda",
+        "quantization",
+        "infra-runtime"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b6869",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases",
+      "vram": "N/A (runtime)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260228-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-02-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "GGML joins Hugging Face",
+      "summary": "llama.cpp / GGML 團隊正式併入 Hugging Face，所有專案維持 100% open source，將深度整合 Transformers 生態系",
+      "tags": [
+        "llm-inference",
+        "infra-runtime",
+        "open-source",
+        "huggingface"
+      ],
+      "url": "https://huggingface.co/blog",
+      "source": "Hacker News / AI Newsletters",
+      "sourceUrl": "https://www.cosmicjs.com/blog/cosmic-rundown-ggml-hugging-face-tariffs-local-ai",
+      "vram": "N/A (infrastructure news)",
+      "license": "MIT"
+    },
+    {
       "id": "20260228-ts-001",
       "radar": "tool-scout",
       "date": "2026-02-28",
