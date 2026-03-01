@@ -1,6 +1,145 @@
 {
   "entries": [
     {
+      "id": "20260301-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Entire — 前 GitHub CEO Nat Friedman 推出 AI-Native 版本控制平台",
+      "summary": "前 GitHub CEO Nat Friedman 發布 Entire，$60M 種子輪資助的開源 CLI，把 Git 從程式碼版本控制擴展成 AI 互動紀錄資料庫。每次 AI agent commit 自動把 prompt/session/token 用量存成 Checkpoints。",
+      "tags": [
+        "ai coding",
+        "git",
+        "tool use",
+        "agentic engineering"
+      ],
+      "url": "https://entire.io/blog/hello-entire-world",
+      "source": "Quasa.io ⚠️ 未驗證",
+      "sourceUrl": "https://quasa.io/media/former-github-ceo-nat-friedman-unveils-entire-revolutionizing-ai-development-with-git-integration"
+    },
+    {
+      "id": "20260301-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "SkillFortify v0.3 — AI Agent 技能的 Formal Verification",
+      "summary": "ClawHavoc 攻擊催生的形式化驗證工具，用數學證明 skill 不能超出宣告能力。支援 22 框架、F1=96.95%、precision 100%。附帶 CycloneDX 1.6 Agent SBOM。",
+      "tags": [
+        "agent framework",
+        "supply chain security",
+        "formal verification",
+        "sbom"
+      ],
+      "url": "https://github.com/skillfortify/skillfortify",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47204082"
+    },
+    {
+      "id": "20260301-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Claude 衝上美國 App Store 第一名（Pentagon 爭議效應）",
+      "summary": "Anthropic 拒絕讓 Claude 用於大規模國內監控和全自主武器，被列供應鏈風險。結果 Claude app 衝到 App Store 第一名，超越 ChatGPT。",
+      "tags": [
+        "alignment",
+        "safety",
+        "guardrails"
+      ],
+      "url": "https://www.anthropic.com",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/"
+    },
+    {
+      "id": "20260301-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI 開除員工 — Prediction Market 內線交易",
+      "summary": "OpenAI 解僱員工因利用內部資訊在 Polymarket 上押注產品發布。60 個錢包地址的 77 筆交易被追蹤。AI 公司 insider trading 風險浮出。",
+      "tags": [
+        "security",
+        "incident management"
+      ],
+      "url": "https://openai.com",
+      "source": "Times of India / Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47195317"
+    },
+    {
+      "id": "20260301-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Martin Fowler Frustration Loop 系列 — AI Coding 真實摩擦成本",
+      "summary": "Fowler 新系列文解剖 AI coding 的 Speed Trap：AI 幾秒產 200 行 code 但花 30 分鐘 review。提出 Knowledge Priming、Context Anchoring、Feedback Flywheel 三個 pattern。",
+      "tags": [
+        "context engineering",
+        "knowledge priming",
+        "cognitive debt",
+        "ai-assisted development"
+      ],
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/reduce-friction-ai/"
+    },
+    {
+      "id": "20260301-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "HN 熱議：AI Coding 的真實代價",
+      "summary": "AI 開發者速度 +55% 但概念理解 -17%，debugging 能力下降最大。社群從「用越多越好」轉向 sustainable pace 討論。",
+      "tags": [
+        "cognitive debt",
+        "ai-assisted development",
+        "developer experience"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47194847",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47194847"
+    },
+    {
+      "id": "20260301-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Verified Spec-Driven Development (VSDD)",
+      "summary": "SDD 加上 formal verification，用 AI agent 做 callgraph tracking 和 spec conformance 驗證。五階段流程，Augment Code 宣稱 +26% 生產力。",
+      "tags": [
+        "spec-driven development",
+        "agent framework",
+        "ai software engineering"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47197595",
+      "source": "Hacker News / Augment Code",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47197595"
+    },
+    {
+      "id": "20260301-sw-016",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "2026 Connectivity Benchmark：88% 企業推 Agentic AI",
+      "summary": "88% 組織追求 agentic AI 轉型，40% 用 A2A、39% 用 MCP。但 82% 被 data silo 卡住，只有 27% app 有 API 連接。",
+      "tags": [
+        "a2a protocol",
+        "mcp",
+        "agent framework",
+        "api gateway"
+      ],
+      "url": "https://erp.today/agentic-transformation-reaches-new-heights-2026-connectivity-benchmark-report-insights/",
+      "source": "ERP Today",
+      "sourceUrl": "https://erp.today/agentic-transformation-reaches-new-heights-2026-connectivity-benchmark-report-insights/"
+    },
+    {
       "id": "20260301-ai-014",
       "radar": "ai-infra",
       "date": "2026-03-01",
