@@ -2184,6 +2184,166 @@
       "url": "https://minimaxir.com/2026/02/ai-agent-coding/",
       "source": "Andrej Karpathy (via Today in Tabs)",
       "sourceUrl": "https://minimaxir.com/2026/02/ai-agent-coding/"
+    },
+    {
+      "id": "20260301-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Moonshine Voice — Edge ASR faster than Whisper",
+      "summary": "邊緣裝置 ASR 王者。比 Whisper Large v3 更準、快 60 倍以上。支援 streaming 即時轉錄，跨平台，26MB 小模型也能跑。",
+      "tags": [
+        "speech recognition",
+        "ASR",
+        "edge inference",
+        "whisper"
+      ],
+      "url": "https://github.com/moonshine-ai/moonshine",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "~0.5-2GB (CPU also works)",
+      "license": "Custom (MIT core)"
+    },
+    {
+      "id": "20260301-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FireRedChat — Self-hosted full-duplex voice AI agent",
+      "summary": "全棧自架 voice AI agent 方案。整合 TTS + ASR + VAD + Turn Detection，基於 LiveKit 做全雙工語音互動。",
+      "tags": [
+        "voice synthesis",
+        "TTS",
+        "ASR",
+        "real-time voice",
+        "self-hosted"
+      ],
+      "url": "https://github.com/FireRedTeam/FireRedChat",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~4-8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260301-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FunASR — End-to-End Speech Recognition Toolkit",
+      "summary": "阿里達摩院出品語音辨識全家桶。支援 ASR、VAD、標點恢復、情緒辨識、說話人分離。Fun-ASR-Nano 支援 31 語言。",
+      "tags": [
+        "speech recognition",
+        "ASR",
+        "VAD",
+        "speaker diarization"
+      ],
+      "url": "https://github.com/modelscope/FunASR",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "vram": "2-6GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260301-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Say — Whisper AI browser transcription app",
+      "summary": "Addy Osmani 做的瀏覽器語音筆記 app。用 Whisper + Transformers.js 在瀏覽器內跑 ML 轉錄。",
+      "tags": [
+        "whisper",
+        "speech to text",
+        "transformers.js",
+        "browser"
+      ],
+      "url": "https://github.com/addyosmani/say",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0 (WebAssembly)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260301-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SeeWav — Audio waveform animation generator",
+      "summary": "adefossez（Demucs/EnCodec 作者）做的音頻波形動畫產生器。丟音檔就能生成漂亮 waveform 影片。",
+      "tags": [
+        "audio",
+        "waveform",
+        "visualization"
+      ],
+      "url": "https://github.com/adefossez/seewav",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0 (CPU only)",
+      "license": "Unlicense"
+    },
+    {
+      "id": "20260301-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "AutoRedact — Client-side OCR image redaction",
+      "summary": "隱私優先的圖片自動遮蔽工具。Tesseract.js 本地 OCR 偵測 PII，自動打馬賽克。100% 瀏覽器端。",
+      "tags": [
+        "OCR",
+        "privacy",
+        "tesseract",
+        "redaction"
+      ],
+      "url": "https://github.com/karant-dev/AutoRedact",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0 (browser)",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260301-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FastFlowLM — LLM on AMD Ryzen AI NPU",
+      "summary": "在 AMD Ryzen AI NPU 上跑 LLM 不需 GPU。Ollama 式 CLI，支援 Vision/Audio/MoE，context 最長 256k tokens。",
+      "tags": [
+        "local inference",
+        "on-device",
+        "NPU",
+        "llm inference"
+      ],
+      "url": "https://github.com/FastFlowLM/FastFlowLM",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0 GPU (uses NPU)",
+      "license": "MIT + commercial limits"
+    },
+    {
+      "id": "20260301-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "EdgeQuake — High-performance GraphRAG in Rust",
+      "summary": "Rust 寫的 GraphRAG 框架。把文件拆成 knowledge graph 做多跳推理，比純 vector search 快 5 倍。6 種查詢模式。",
+      "tags": [
+        "graphrag",
+        "knowledge graph",
+        "RAG",
+        "Rust"
+      ],
+      "url": "https://github.com/raphaelmansuy/edgequake",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "4-8GB (depends on LLM)",
+      "license": "Apache-2.0"
     }
   ]
 }
