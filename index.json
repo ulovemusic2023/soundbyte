@@ -1,6 +1,143 @@
 {
   "entries": [
     {
+      "id": "20260301-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Upstage Solar Pro 3 — 102B MoE（12B active）上線",
+      "summary": "韓國 Upstage 發布 102B 總參數、12B active MoE 架構模型，走效率路線。",
+      "tags": [
+        "mixture-of-experts",
+        "efficient-inference"
+      ],
+      "url": "https://openrouter.ai/models",
+      "source": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models"
+    },
+    {
+      "id": "20260301-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Microsoft 365 Copilot 支援 multi-agent 互呼工作流",
+      "summary": "Copilot agent 可互相呼叫當工具，跨 Teams/Outlook 做多 agent 協作。三月全面 rollout。",
+      "tags": [
+        "multi-agent",
+        "microsoft-copilot"
+      ],
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/release-notes",
+      "source": "Microsoft Learn",
+      "sourceUrl": "https://learn.microsoft.com/en-us/copilot/microsoft-365/release-notes"
+    },
+    {
+      "id": "20260301-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic vs 五角大廈：Claude 衝上 App Store 第二名",
+      "summary": "Anthropic 拒絕移除安全紅線遭聯邦禁令，反而讓 Claude 衝上 App Store 第二。AI 公司 vs 政府的 values 碰撞。",
+      "tags": [
+        "ai-policy",
+        "safety",
+        "anthropic"
+      ],
+      "url": "https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/",
+      "source": "TechCrunch / Axios",
+      "sourceUrl": "https://www.axios.com/2026/02/28/anthropic-trump-pentagon-lawsuit-ai-dispute"
+    },
+    {
+      "id": "20260301-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ouroboros Desktop — 自我修改的 AI agent（MIT 開源）",
+      "summary": "joi-lab 開源 self-modifying AI agent，能自寫 code 改認知流程。HN 引發安全討論，NIST 徵集 AI agent 安全意見。",
+      "tags": [
+        "ai-agent",
+        "self-modification",
+        "agent-security"
+      ],
+      "url": "https://github.com/joi-lab/ouroboros",
+      "source": "GitHub / Hacker News",
+      "sourceUrl": "https://dev.to/bobrenze/when-ai-agents-go-wrong-security-lessons-from-running-autonomous-agents-in-production-bp3"
+    },
+    {
+      "id": "20260301-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Vercel react-best-practices — 40+ 效能規則直接餵 AI agent",
+      "summary": "Vercel 十年 React/Next.js 效能經驗打包成 AGENTS.md 供 AI coding agent 引用。21k+ stars、150k+ 週安裝。",
+      "tags": [
+        "skills-ecosystem",
+        "harness-engineering",
+        "react",
+        "context-engineering"
+      ],
+      "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/vercel-react-best-practices/"
+    },
+    {
+      "id": "20260301-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "React Foundation 成立 — Meta 捐出 React 給 Linux Foundation",
+      "summary": "Meta 把 React、React Native、JSX 移交 Linux Foundation 新成立的 React Foundation。Platinum members 包括 Amazon、Microsoft、Vercel。",
+      "tags": [
+        "react",
+        "open-source-governance",
+        "linux-foundation"
+      ],
+      "url": "https://react.dev/blog/2026/02/24/the-react-foundation",
+      "source": "Linux Foundation",
+      "sourceUrl": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-react-foundation"
+    },
+    {
+      "id": "20260301-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Confluent Streaming Agents + A2A 協定：AI agent 吃即時 Kafka 資料互相協作",
+      "summary": "Confluent Intelligence 接上 Google A2A 協定，讓 AI agent 跨 LangChain/Salesforce/BigQuery 互相觸發協作，配合 MCP 吃 Kafka/Flink 即時串流。",
+      "tags": [
+        "A2A-protocol",
+        "multi-agent",
+        "stream-processing",
+        "MCP",
+        "kafka"
+      ],
+      "url": "https://www.confluent.io/press-release/2026-q1-confluent-intelligence-launch/",
+      "source": "SiliconAngle",
+      "sourceUrl": "https://siliconangle.com/2026/02/26/confluent-intelligence-adds-streaming-agents-mix-enable-agent-agent-collaboration/"
+    },
+    {
+      "id": "20260301-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-01",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Mitchell Hashimoto 的 AI 工作術：永遠讓 agent 跑在背景",
+      "summary": "HashiCorp 創辦人分享新開發模式 — agent 永遠在背景跑任務，harness engineering 讓 agent 自然變可靠。預測 Git 和開源將被迫演化。",
+      "tags": [
+        "agentic-engineering",
+        "harness-engineering",
+        "supervisory-programming"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/mitchell-hashimoto",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/mitchell-hashimoto"
+    },
+    {
       "id": "20260228-sw-016",
       "radar": "software-dev",
       "date": "2026-02-28",
