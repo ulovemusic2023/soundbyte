@@ -1,6 +1,130 @@
 {
   "entries": [
     {
+      "id": "20260301-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp b6869 — ARM Neon +20% 加速",
+      "summary": "ARM Neon 向量化 q4_1/q8_0 反量化，Apple Silicon 推論 +20%。新增 RISC-V Vector 初始支持。修 q6_K overflow。",
+      "tags": [
+        "llama.cpp",
+        "ARM",
+        "RISC-V",
+        "quantization",
+        "inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b6869",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b6869",
+      "vram": "N/A (runtime update)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260301-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ARahim3/unsloth-mlx — Apple Silicon LLM Fine-tuning",
+      "summary": "把 Unsloth 高效 fine-tuning 搬到 Apple Silicon MLX。LoRA/QLoRA 在 M3 Max 可達 45 tok/s 訓練速度，比 PyTorch 快 2-5x。",
+      "tags": [
+        "unsloth",
+        "fine-tuning",
+        "LoRA",
+        "MLX",
+        "Apple-Silicon"
+      ],
+      "url": "https://github.com/ARahim3/unsloth-mlx",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "12-45GB (unified memory)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260301-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Qwen3-ASR — 阿里巴巴開源 ASR 模型",
+      "summary": "阿里 Qwen 團隊推出的多語言 ASR，含 ForcedAligner 時間戳對齊。已有 Rust、Swift、Open-UI 等社群移植版。",
+      "tags": [
+        "ASR",
+        "speech-recognition",
+        "multilingual",
+        "Qwen"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "source": "web_search",
+      "sourceUrl": "https://github.com/QwenLM/Qwen3-ASR",
+      "vram": "2-6GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260301-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "itsfabioroma/transcribee — 影片轉錄 + 知識庫",
+      "summary": "自動把影片/YouTube 轉錄成文字，建成 vector knowledge base 做語意搜尋。Whisper STT + Chroma/FAISS embedding。",
+      "tags": [
+        "whisper",
+        "RAG",
+        "vector-database",
+        "semantic-search",
+        "knowledge-base"
+      ],
+      "url": "https://github.com/itsfabioroma/transcribee",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "2-4GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260301-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "DevEmperor/Dictate — 手機 Whisper 語音鍵盤",
+      "summary": "Android 鍵盤 app，內建 Whisper 離線語音辨識 + 可選 GPT-4o-mini 後處理。支援 99+ 語言，隱私優先。",
+      "tags": [
+        "whisper",
+        "speech-to-text",
+        "mobile",
+        "on-device"
+      ],
+      "url": "https://github.com/DevEmperor/Dictate",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0 (mobile)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260301-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-03-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "kitlangton/Hex — macOS 即時語音轉文字",
+      "summary": "macOS 專屬語音轉文字工具，按住 hotkey 即時轉錄並貼上。用 Parakeet TDT v3 或 WhisperKit，Apple Silicon 原生加速。",
+      "tags": [
+        "speech-to-text",
+        "whisper",
+        "ASR",
+        "macOS",
+        "on-device"
+      ],
+      "url": "https://github.com/kitlangton/Hex",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0 (Apple Neural Engine)",
+      "license": "MIT"
+    },
+    {
       "id": "20260301-sw-008",
       "radar": "software-dev",
       "date": "2026-03-01",
