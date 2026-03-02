@@ -1,6 +1,176 @@
 {
   "entries": [
     {
+      "id": "20260302-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 2026 Agentic Coding Trends Report — Multi-Agent Dev Teams",
+      "summary": "Anthropic 正式報告指出軟體開發已從寫 code 轉為 orchestrate AI agent 團隊。預測 AI 可能生成 99% code，工程師轉向架構設計和 multi-agent orchestration。",
+      "tags": [
+        "multi-agent",
+        "agentic engineering",
+        "supervisory programming"
+      ],
+      "url": null,
+      "source": "Anthropic",
+      "sourceUrl": "https://news.bitcoin.com/anthropics-2026-agentic-coding-report-maps-the-rise-of-multi-agent-dev-teams/"
+    },
+    {
+      "id": "20260302-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "ClawJacked — OpenClaw WebSocket 漏洞劫持本地 AI Agent",
+      "summary": "惡意網站透過瀏覽器 JS 連線本地 OpenClaw gateway 暴力破解密碼，可 dump credentials、執行 shell、竊取檔案。v2026.2.26 已修復。",
+      "tags": [
+        "agent security",
+        "zero trust",
+        "supply chain security"
+      ],
+      "url": null,
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/"
+    },
+    {
+      "id": "20260302-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "The Claude Exit Tax — Enterprise AI Vendor Lock-in",
+      "summary": "企業遷離 Claude 的隱藏成本：專有資料格式不相容、prompt tax、SaaS white-label 依賴。解法：abstraction layer。",
+      "tags": [
+        "architecture",
+        "vendor risk",
+        "abstraction layer"
+      ],
+      "url": null,
+      "source": "Shelly Palmer",
+      "sourceUrl": "https://shellypalmer.com/2026/03/the-claude-exit-tax/"
+    },
+    {
+      "id": "20260302-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 提案全新 JS Streams API — 快 8-90x",
+      "summary": "James Snell 提出替代 Web Streams API：async iterable + pull-through transform，Workers 實測 throughput 快 8x、chained transforms 快 80-90x。",
+      "tags": [
+        "javascript",
+        "edge runtime",
+        "architecture"
+      ],
+      "url": "https://blog.cloudflare.com/a-better-web-streams-api/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/a-better-web-streams-api/"
+    },
+    {
+      "id": "20260302-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI Pentagon Deal — Three Red Lines + Cloud-Only",
+      "summary": "禁 mass surveillance、autonomous weapons、social credit。限 cloud API 部署，保留 safety stack 控制權。EO 12333 引發質疑。",
+      "tags": [
+        "ai safety",
+        "governed agents",
+        "safety-first contracting"
+      ],
+      "url": null,
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon/"
+    },
+    {
+      "id": "20260302-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DeepMind Unified Latents (UL) — Multimodal Diffusion Framework",
+      "summary": "Diffusion prior + decoder 統一 regularize latents。ImageNet-512 FID 1.4，影片 FVD 1.3 SOTA。兩階段訓練更少 compute 更好品質。",
+      "tags": [
+        "diffusion",
+        "multimodal",
+        "scaling law"
+      ],
+      "url": null,
+      "source": "Google DeepMind",
+      "sourceUrl": "https://www.marktechpost.com/2026/02/27/google-deepmind-introduces-unified-latents-ul-a-machine-learning-framework-that-jointly-regularizes-latents-using-a-diffusion-prior-and-decoder/"
+    },
+    {
+      "id": "20260302-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison: Claude Import Memory Is Just a Prompt",
+      "summary": "claude.com/import-memory 的記憶匯入功能本質上是一段精心設計的 prompt。所謂記憶遷移 = prompt engineering。",
+      "tags": [
+        "prompt engineering",
+        "ai agent",
+        "memory"
+      ],
+      "url": null,
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/1/claude-import-memory/"
+    },
+    {
+      "id": "20260302-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare: Toxic Combinations Security Detection",
+      "summary": "攻擊者把多個無害小信號組合成完整攻擊鏈。用跨信號關聯分析取代逐 request WAF 偵測。",
+      "tags": [
+        "security",
+        "observability",
+        "zero trust"
+      ],
+      "url": "https://blog.cloudflare.com/toxic-combinations-security/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/toxic-combinations-security/"
+    },
+    {
+      "id": "20260302-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "HN #1: AI Made Writing Code Easier, Being an Engineer Harder",
+      "summary": "AI 加速 code 產出但增加複雜度。工程師需更強 filter/review 能力。Simon Willison：不讓 LLM 代替自己表達觀點。",
+      "tags": [
+        "cognitive debt",
+        "ai coding"
+      ],
+      "url": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47206824"
+    },
+    {
+      "id": "20260302-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GitHub Copilot SDK + Skill Server Dual Sidecar Pod on K8s",
+      "summary": "Dual sidecar 模式：Copilot SDK sidecar 處理 AI session、Skill Server 透過 ConfigMap 同步 skill。12-Factor 原則，K8s 1.33 native sidecar GA。",
+      "tags": [
+        "kubernetes",
+        "sidecar pattern",
+        "ai agent",
+        "skills ecosystem"
+      ],
+      "url": null,
+      "source": "Microsoft",
+      "sourceUrl": "https://techcommunity.microsoft.com/tag/agents"
+    },
+    {
       "id": "20260302-ai-003",
       "radar": "ai-infra",
       "date": "2026-03-02",
