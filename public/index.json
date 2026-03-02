@@ -1,6 +1,67 @@
 {
   "entries": [
     {
+      "id": "20260302-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "KaraokeEternal — 自架卡拉 OK 派對系統",
+      "summary": "全 browser-based 自架卡拉 OK 系統。手機掃 QR code 點歌，支援 MP3+G/MP4，多房間動態排隊，Raspberry Pi 也能跑。",
+      "tags": [
+        "karaoke",
+        "audio",
+        "self-hosted",
+        "music"
+      ],
+      "url": "https://github.com/bhj/KaraokeEternal",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/01/bhj-KaraokeEternal.html",
+      "license": "ISC"
+    },
+    {
+      "id": "20260302-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ComfyUI-Qwen-TTS — Qwen3-TTS ComfyUI 整合",
+      "summary": "Qwen3-TTS 在 ComfyUI 的完整整合，支援語音合成、零 shot 語音克隆、自然語言語音設計、多角色對話生成（最多 8 角色）。",
+      "tags": [
+        "tts",
+        "voice cloning",
+        "voice design",
+        "qwen3-tts",
+        "comfyui"
+      ],
+      "url": "https://github.com/flybirdxx/ComfyUI-Qwen-TTS",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/01/flybirdxx-ComfyUI-Qwen-TTS.html",
+      "vram": "0.6B ~2GB / 1.7B ~4GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260302-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SAM-Audio — Meta Segment Anything for Audio",
+      "summary": "Meta 把 Segment Anything 搬到音訊領域。用文字、影片或時間區間就能隔離混音中的特定聲音。large 模型在 MUSDB18 上 SDRi 12.4 dB，大幅超越 Demucs。",
+      "tags": [
+        "audio source separation",
+        "stem separation",
+        "meta",
+        "sam",
+        "demucs alternative"
+      ],
+      "url": "https://github.com/facebookresearch/sam-audio",
+      "source": "MAGI//ARCHIVE + GitHub",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/01/facebookresearch-sam-audio.html",
+      "vram": "large ~5GB / base ~2GB",
+      "license": "SAM License"
+    },
+    {
       "id": "20260301-sw-009",
       "radar": "software-dev",
       "date": "2026-03-01",
