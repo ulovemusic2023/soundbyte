@@ -3035,6 +3035,178 @@
       "sourceUrl": "https://news.ycombinator.com/item?id=47202708",
       "vram": "0GB (CPU only, 360KB-5.4MB models)",
       "license": "MIT"
+    },
+    {
+      "id": "20260302-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Claude 登頂美國 App Store #1 + QuitGPT 運動爆發",
+      "summary": "Anthropic 拒絕 Pentagon 放寬 AI 安全護欄後遭 Trump 禁令，反而觸發 70 萬用戶離開 ChatGPT 的 QuitGPT 運動。Claude 靠 Memory Transfer 一鍵搬家衝上 App Store 第一",
+      "tags": [
+        "alignment",
+        "safety",
+        "ai agent",
+        "QuitGPT movement"
+      ],
+      "url": "https://www.anthropic.com",
+      "source": "9to5Mac / Axios / TechCrunch",
+      "sourceUrl": "https://9to5mac.com/2026/03/01/claude-hits-1-on-the-app-store-as-users-rally-behind-anthropics-government-standoff/"
+    },
+    {
+      "id": "20260302-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Intelligence is a Commodity, Context is the Real Moat — HN 1.2K+ 點爆文",
+      "summary": "levelsio 觀點引爆 HN 辯論：基礎模型智能已被開源稀釋，真正護城河是 context — 用戶資料、工作流整合、即時知識圖。定義 2026 AI 產品分水嶺",
+      "tags": [
+        "context engineering",
+        "ai agent",
+        "harness engineering"
+      ],
+      "url": "https://news.ycombinator.com/front?day=2026-03-02",
+      "source": "Hacker News / @levelsio",
+      "sourceUrl": "https://news.ycombinator.com/front?day=2026-03-02"
+    },
+    {
+      "id": "20260302-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "git-memento：把 AI coding session 綁進 git commit",
+      "summary": "Git 擴充套件，每次 commit 自動把 AI 對話紀錄存成 git notes。支援 Codex、Claude，可 push/share/audit。AI 代碼 provenance 追蹤的起點",
+      "tags": [
+        "ai coding",
+        "vibe coding",
+        "code generation",
+        "git-memento"
+      ],
+      "url": "https://github.com/mandel-macaque/memento",
+      "source": "GitHub / Hacker News",
+      "sourceUrl": "https://github.com/mandel-macaque/memento"
+    },
+    {
+      "id": "20260302-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cursor ,225 帳單事件 — AI 工具定價危機",
+      "summary": "用戶收到 ,225 真實帳單暴露 AI SaaS 用 flat-rate 掩蓋 variable token cost 的問題。產品設計失敗，重度用戶跟輕度用戶成本差 100x",
+      "tags": [
+        "ai coding",
+        "copilot",
+        "AI pricing crisis"
+      ],
+      "url": "https://cursor.com",
+      "source": "Cursor Forum / MyPMInterview",
+      "sourceUrl": "https://www.mypminterview.com/p/what-cursors-7225-invoice-teaches-every-ai-pm"
+    },
+    {
+      "id": "20260302-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Clay 用 LangSmith 管理月 3 億次 Agent Runs",
+      "summary": "Clay AI 銷售 agent 每月跑 3 億次靠 LangSmith 做 tracing、eval、成本對帳。free-form NL input 的生產環境品質完全無法從 offline benchmark 預測",
+      "tags": [
+        "agent trajectory evaluation",
+        "llm evaluation",
+        "ai agent"
+      ],
+      "url": "https://clay.com",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/customers-clay/"
+    },
+    {
+      "id": "20260302-sw-016",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "llmfit：一行指令找出你的硬體能跑哪些 LLM",
+      "summary": "Rust CLI/TUI 工具，自動偵測硬體後多維度評分推薦最適合的 LLM。支援 MoE、dynamic quantization、expert offloading",
+      "tags": [
+        "local-first AI",
+        "quantization",
+        "ollama",
+        "llmfit"
+      ],
+      "url": "https://github.com/AlexsJones/llmfit",
+      "source": "GitHub / Hacker News",
+      "sourceUrl": "https://github.com/AlexsJones/llmfit"
+    },
+    {
+      "id": "20260302-sw-017",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Jeff Geerling：Expert Beginners + Lone Wolves 主宰 LLM 初期",
+      "summary": "AI 懷疑論者 Geerling 用 Hugo 遷移經驗分享：本地 LLM 生產力相當於中低階 dev team，但 LLM 時代由快速適應者和獨立作戰者獲利最大",
+      "tags": [
+        "ai coding",
+        "cognitive debt",
+        "agentic engineering",
+        "expert beginners"
+      ],
+      "url": "https://www.jeffgeerling.com",
+      "source": "Jeff Geerling",
+      "sourceUrl": "https://www.jeffgeerling.com/blog/2026/expert-beginners-and-lone-wolves-dominate-llm-era/"
+    },
+    {
+      "id": "20260302-sw-018",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Vercel Queues 進入 Public Beta — Serverless Durable Event Streaming",
+      "summary": "Vercel 推出原生 message queue：append-only topics + consumer groups + fan-out + 自動 retry + 冪等 key。Serverless 生態補上最後一塊拼圖",
+      "tags": [
+        "serverless",
+        "event-driven",
+        "message queue"
+      ],
+      "url": "https://vercel.com/docs/queues",
+      "source": "Vercel",
+      "sourceUrl": "https://vercel.com/docs/queues"
+    },
+    {
+      "id": "20260302-sw-019",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Timber — Classical ML 的 Ollama，比 Python 快 336x",
+      "summary": "把 classical ML 模型打包成像 Ollama 一樣的本地推理服務，宣稱比 scikit-learn 快 336 倍",
+      "tags": [
+        "local-first AI"
+      ],
+      "url": "https://github.com/kossisoroyce/timber",
+      "source": "GitHub / Hacker News",
+      "sourceUrl": "https://github.com/kossisoroyce/timber"
+    },
+    {
+      "id": "20260302-sw-020",
+      "radar": "software-dev",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "AMD Ryzen AI Max+ 叢集跑 1 兆參數 LLM",
+      "summary": "4 台 Ryzen AI Max+ 395 桌機透過 llama.cpp RPC 分片跑 Kimi K2.5 1T 模型，共 480GB GPU-addressable 記憶體",
+      "tags": [
+        "local-first AI",
+        "quantization",
+        "distributed systems"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47199781",
+      "source": "AMD / Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47199781"
     }
   ]
 }
