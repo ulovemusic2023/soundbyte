@@ -2975,6 +2975,66 @@
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
       "vram": "4-8GB (depends on LLM)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260302-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Scriberr — Self-hosted Offline Audio Transcription",
+      "summary": "完全離線的自架轉錄工具，支援 Whisper / NVIDIA Parakeet / Canary 模型。自動 speaker diarization，可透過 Ollama 對轉錄稿提問/摘要。PWA 跨平台",
+      "tags": [
+        "speech recognition",
+        "whisper",
+        "audio transcription",
+        "self-hosted"
+      ],
+      "url": "https://github.com/rishikanthc/Scriberr",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/02/rishikanthc-Scriberr.html",
+      "vram": "~2-6GB (depends on Whisper model size)",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260302-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Timber — Ollama for Classical ML Models",
+      "summary": "AOT 編譯器把 XGBoost / LightGBM / scikit-learn / CatBoost / ONNX tree 模型編成原生 C99 推論碼。比 Python 快 336 倍，~2µs 單次推論",
+      "tags": [
+        "model serving",
+        "onnx",
+        "local inference",
+        "classical ML"
+      ],
+      "url": "https://github.com/kossisoroyce/timber",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47212576",
+      "vram": "0GB (CPU only, ~48KB binary)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260302-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-02",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "MicroGPT-C — Zero-dep C99 GPT-2 Edge AI Engine",
+      "summary": "零依賴 C99 GPT-2 引擎，sub-1M 參數模型秒級訓練。Organelle Pipeline Architecture 讓多個微型專家模型協作，Connect-4 達 88% 勝率用 460K 參數",
+      "tags": [
+        "edge inference",
+        "local inference",
+        "on-device",
+        "composable AI"
+      ],
+      "url": "https://github.com/enjector/microgpt-c",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47202708",
+      "vram": "0GB (CPU only, 360KB-5.4MB models)",
+      "license": "MIT"
     }
   ]
 }
