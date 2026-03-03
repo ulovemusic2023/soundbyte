@@ -3340,7 +3340,12 @@
       "priority": "paradigm-shift",
       "title": "Cloudflare「Agile SASE」Blog Takeover — 可程式化安全平台",
       "summary": "Cloudflare 啟動一週 blog 系列，把 Workers 嵌入 Gateway 安全策略實現動態可程式化 SASE。五天主題涵蓋可程式化網路、身份演進、AI 安全訊號、自主邊緣效能、企業標準化",
-      "tags": ["platform engineering", "edge function", "zero trust", "Workers"],
+      "tags": [
+        "platform engineering",
+        "edge function",
+        "zero trust",
+        "Workers"
+      ],
       "url": "https://blog.cloudflare.com/cloudflare-one-onboarding-project-helix/",
       "source": "Cloudflare Blog",
       "sourceUrl": "https://blog.cloudflare.com/cloudflare-one-onboarding-project-helix/"
@@ -3353,7 +3358,11 @@
       "priority": "paradigm-shift",
       "title": "OpenAI 史上最大融資 $1,100 億，估值 $7,300 億",
       "summary": "Amazon $500 億 + Nvidia $300 億 + SoftBank $300 億。含 $1,000 億 AWS 算力擴充、Stateful Runtime Environment on Bedrock、3GW Nvidia 推論算力",
-      "tags": ["capital-compute flywheel", "sovereign AI infra", "scaling law"],
+      "tags": [
+        "capital-compute flywheel",
+        "sovereign AI infra",
+        "scaling law"
+      ],
       "url": "https://openai.com/index/scaling-ai-for-everyone/",
       "source": "OpenAI Blog",
       "sourceUrl": "https://openai.com/index/scaling-ai-for-everyone/"
@@ -3366,7 +3375,11 @@
       "priority": "paradigm-shift",
       "title": "OpenAI Codex-Spark 推論大提速",
       "summary": "Responses API WebSocket 持久連線 + 推論堆疊重寫：每 token -30%、TTFT -50%、roundtrip -80%，agentic workflow 長鏈提速 40%",
-      "tags": ["ai coding", "function calling", "agentic engineering"],
+      "tags": [
+        "ai coding",
+        "function calling",
+        "agentic engineering"
+      ],
       "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/index/introducing-gpt-5-3-codex-spark/"
@@ -3379,7 +3392,11 @@
       "priority": "medium",
       "title": "Cloudflare Project Helix — Zero Trust 自動化佈署",
       "summary": "Terraform 模板 + Workers 介面幾分鐘佈好完整 Zero Trust baseline，省 2-3 週設定時間",
-      "tags": ["zero trust", "infrastructure as code", "platform engineering"],
+      "tags": [
+        "zero trust",
+        "infrastructure as code",
+        "platform engineering"
+      ],
       "url": "https://blog.cloudflare.com/cloudflare-one-onboarding-project-helix/",
       "source": "Cloudflare Blog",
       "sourceUrl": "https://blog.cloudflare.com/cloudflare-one-onboarding-project-helix/"
@@ -3392,7 +3409,11 @@
       "priority": "medium",
       "title": "Gergely Orosz：The Grief When AI Writes All the Code",
       "summary": "探討工程師面對 AI 寫完所有 code 的哀悼感。資深工程師已把 90%+ production code 交給 AI，但情緒失落是真實的",
-      "tags": ["cognitive debt", "AI fatigue", "agentic engineering"],
+      "tags": [
+        "cognitive debt",
+        "AI fatigue",
+        "agentic engineering"
+      ],
       "url": "https://newsletter.pragmaticengineer.com/p/the-grief-when-ai-writes-all-the-code",
       "source": "Pragmatic Engineer",
       "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-grief-when-ai-writes-all-the-code"
@@ -3405,7 +3426,11 @@
       "priority": "medium",
       "title": "Qwen3.5 Medium VLM 系列 — Gated Delta Networks + MoE",
       "summary": "三款視覺語言模型（27B/35B-A3B/122B-A10B），線性注意力 + sparse MoE，262K context，Apache 2.0，MMMU 85%",
-      "tags": ["mixture of experts", "multimodal", "Gated Delta Networks"],
+      "tags": [
+        "mixture of experts",
+        "multimodal",
+        "Gated Delta Networks"
+      ],
       "url": "https://qwen.ai/blog?id=qwen3.5-medium",
       "source": "Qwen / Microsoft Tech Community",
       "sourceUrl": "https://qwen.ai/blog?id=qwen3.5-medium"
@@ -3418,7 +3443,11 @@
       "priority": "medium",
       "title": "Forrester「AI Washing」報告揭穿裁員真相",
       "summary": "60% 的裁員是預期 AI 效率，實際因 AI 裁員僅 2%。30,000+ 科技業裁員中 Amazon 佔一半。Stanford：AI 曝險職業早期就業率下降 16%",
-      "tags": ["AI fatigue", "seat compression", "AI washing"],
+      "tags": [
+        "AI fatigue",
+        "seat compression",
+        "AI washing"
+      ],
       "url": "https://fortune.com/2026/03/02/ai-washing-layoffs-forrester-research/",
       "source": "Forrester Research / Fortune",
       "sourceUrl": "https://fortune.com/2026/03/02/ai-washing-layoffs-forrester-research/"
@@ -3431,7 +3460,11 @@
       "priority": "medium",
       "title": "Simon Willison：Hoard Things You Know How to Do",
       "summary": "Agentic Engineering Patterns 新章節。維護個人可執行 code 收藏，agent 能取用 hoarded assets 重組成新方案",
-      "tags": ["agentic engineering", "context engineering", "harness engineering"],
+      "tags": [
+        "agentic engineering",
+        "context engineering",
+        "harness engineering"
+      ],
       "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things/",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things/"
@@ -3444,7 +3477,12 @@
       "priority": "low",
       "title": "Microsoft Agent Framework RC — 統一 SDK",
       "summary": "整合 Semantic Kernel + AutoGen，.NET/Python 雙語支援，multi-agent graph-based orchestration、MCP 互通",
-      "tags": ["ai agent", "multi-agent", "mcp", "semantic kernel"],
+      "tags": [
+        "ai agent",
+        "multi-agent",
+        "mcp",
+        "semantic kernel"
+      ],
       "url": "https://www.infoq.com/news/2026/02/ms-agent-framework-rc/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/02/ms-agent-framework-rc/"
@@ -3457,10 +3495,159 @@
       "priority": "low",
       "title": "OpenAI × Jony Ive「io」AI 硬體曝光",
       "summary": "$65 億收購 io 工作室，首款帶鏡頭智慧音箱 $200-300，智慧眼鏡原型中，約 200 人團隊",
-      "tags": ["multimodal", "ai agent"],
+      "tags": [
+        "multimodal",
+        "ai agent"
+      ],
       "url": "https://techcrunch.com/2026/02/28/openai-jony-ive-io-ai-device/",
       "source": "The Information / TechCrunch",
       "sourceUrl": "https://techcrunch.com/2026/02/28/openai-jony-ive-io-ai-device/"
+    },
+    {
+      "id": "20260303-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-03",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Programming Is Delegation, Not Magic",
+      "summary": "Karpathy 說 AI coding agents 從 2025/12 突然能用，工作模式從寫 code 變成 delegate + 驗收。深度技術知識變成更大的 multiplier。",
+      "tags": [
+        "agentic engineering",
+        "delegation",
+        "vibe coding",
+        "software 3.0"
+      ],
+      "url": "https://x.com/karpathy",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260303-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-03",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Five Levels of Agentic Commerce",
+      "summary": "Stripe 年度信提出 AI agent 商務五階段框架。Collison 兄弟認為 blockchain 未來需每秒處理 10 億筆交易撐住 AI agent 活動量。",
+      "tags": [
+        "agentic commerce",
+        "stablecoin",
+        "platform shift",
+        "framework"
+      ],
+      "url": "https://stripe.com/annual-updates/2025",
+      "source": "Patrick & John Collison (Stripe)",
+      "sourceUrl": "https://stripe.com/annual-updates/2025",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260303-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-03",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Thin Is In — AI 時代回歸 Thin Client",
+      "summary": "Ben Thompson 論述 AI 時代 thick client 邏輯不成立，推理算力太大、HBM 太貴，回歸 thin client 是 AI 經濟學必然。",
+      "tags": [
+        "thin client",
+        "AI infrastructure",
+        "memory crowd-out",
+        "platform shift"
+      ],
+      "url": "https://stratechery.com/2026/thin-is-in/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/thin-is-in/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260303-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-03",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Dario Amodei 花 40% 時間在文化",
+      "summary": "Anthropic CEO 把 30-40% 時間花在公司文化，每兩週一次 DVQ 全員會議。刻意避免 corpo speak，認為文化比 code 重要。",
+      "tags": [
+        "leadership",
+        "radical transparency",
+        "culture",
+        "founder mode"
+      ],
+      "url": "https://www.youtube.com/watch?v=fxKTU9u4U18",
+      "source": "Dario Amodei (Anthropic)",
+      "sourceUrl": "https://www.youtube.com/watch?v=fxKTU9u4U18",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260303-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-03",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Jensen Huang: 能源是 AI 唯一的瓶頸",
+      "summary": "Jensen 直言需要的算力遠大於能上線的產能，限制不是技術是電力。AI 會催生美國再工業化。",
+      "tags": [
+        "energy constraint",
+        "AI infrastructure",
+        "reindustrialization"
+      ],
+      "url": "https://www.foxbusiness.com",
+      "source": "Jensen Huang (NVIDIA)",
+      "sourceUrl": "https://www.foxbusiness.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260303-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-03",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "純寫 Code 的工作很快會被顛覆",
+      "summary": "Amodei 預測純 coding 工作 very soon 被衝擊，角色轉成 AI conductor。未來十年最值錢的是 critical thinking。",
+      "tags": [
+        "AI displacement",
+        "AI conductor",
+        "critical thinking",
+        "future of work"
+      ],
+      "url": "https://www.youtube.com/watch?v=fxKTU9u4U18",
+      "source": "Dario Amodei (Anthropic)",
+      "sourceUrl": "https://www.youtube.com/watch?v=fxKTU9u4U18",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260303-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-03-03",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "MicroGPT — 200 行純 Python 的完整 GPT",
+      "summary": "Karpathy 用 200 行純 Python、零依賴寫出完整 GPT。十年簡化 LLM 的執念結晶。",
+      "tags": [
+        "education",
+        "LLM",
+        "simplification",
+        "first principles"
+      ],
+      "url": "https://karpathy.github.io/2026/02/12/microgpt/",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://karpathy.github.io/2026/02/12/microgpt/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
