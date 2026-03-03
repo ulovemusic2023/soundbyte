@@ -1,6 +1,70 @@
 {
   "entries": [
     {
+      "id": "20260303-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Arcee Trinity Large Preview (398B MoE / 13B active)",
+      "summary": "Trinity 旗艦，398B 總參數每次啟動 13B，17T tokens 訓練，MMLU 87.2 打贏 Llama 4 Maverick。512k context，256 expert。需 CPU offload。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "frontier model",
+        "multilingual"
+      ],
+      "url": "https://huggingface.co/arcee-ai/Trinity-Large-Preview",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Preview",
+      "price": null,
+      "vram": "~50-60GB (Q4)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260303-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Arcee Trinity Mini (26B MoE / 3B active)",
+      "summary": "Arcee AI Trinity 家族中型成員，128 個 expert 只啟動 8 個（3B active），10T tokens 訓練，128k context。Q4 GGUF 約 3-4GB VRAM，多語言強、推理導向。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "quantization",
+        "multilingual"
+      ],
+      "url": "https://huggingface.co/arcee-ai/Trinity-Mini",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/arcee-ai/Trinity-Mini",
+      "price": null,
+      "vram": "~3-4GB (Q4 GGUF)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260303-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Qwen3.5 Small Series (9B/4B/2B/0.8B)",
+      "summary": "Alibaba 3/2 發布 Qwen3.5 小型系列。9B 用 Scaled RL 訓練推理能力直逼 80B+ 模型，4B 支援原生多模態圖片理解。全系列 Apache 2.0，9B Q4 約 6-7GB VRAM。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "on-device",
+        "multimodal",
+        "qwen"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3.5",
+      "source": "Qwen Official",
+      "sourceUrl": "https://github.com/QwenLM/Qwen3.5",
+      "price": null,
+      "vram": "~6-7GB (9B Q4)",
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260303-ai-001",
       "radar": "ai-infra",
       "date": "2026-03-03",
