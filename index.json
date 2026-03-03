@@ -1,6 +1,130 @@
 {
   "entries": [
     {
+      "id": "20260303-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SongGeneration 2 (LeVo 2)",
+      "summary": "Tencent AI Lab 3/1 開源的音樂生成基礎模型，4B 參數，能生成最長 4 分半的完整歌曲。PER 8.55% 打贏 Suno v5。支援多語歌詞、風格遷移、六維度控制。",
+      "tags": [
+        "music generation",
+        "audio generation",
+        "vocal",
+        "tencent"
+      ],
+      "url": "https://github.com/tencent-ailab/SongGeneration",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tencent-ailab/SongGeneration",
+      "price": null,
+      "vram": "10GB 起",
+      "license": "開源"
+    },
+    {
+      "id": "20260303-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LFM2-24B-A2B (Liquid Foundation Model 2)",
+      "summary": "Liquid AI 混合架構 MoE 模型，24B/2.3B active。Ollama 170 萬下載，Q4 量化 14GB VRAM，32K context。",
+      "tags": [
+        "local inference",
+        "MoE",
+        "on-device",
+        "ollama"
+      ],
+      "url": "https://ollama.com/library/lfm2",
+      "source": "Ollama Library",
+      "sourceUrl": "https://ollama.com/library/lfm2",
+      "price": null,
+      "vram": "14GB (Q4)",
+      "license": "開源"
+    },
+    {
+      "id": "20260303-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Arcee Trinity Nano",
+      "summary": "Arcee AI 的 6B/1B active MoE 模型。Q4 量化約 3-4GB VRAM，極適合嵌入式低資源推理。",
+      "tags": [
+        "MoE",
+        "local inference",
+        "small model",
+        "edge"
+      ],
+      "url": "https://huggingface.co/arcee-ai",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/arcee-ai",
+      "price": null,
+      "vram": "~4GB (Q4)",
+      "license": "Open-weight"
+    },
+    {
+      "id": "20260303-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LFM2-VL-3B",
+      "summary": "Liquid AI 3B 視覺語言模型，專為邊緣設備。可理解圖片+文字，適合本地 OCR、圖片理解。",
+      "tags": [
+        "vision-language",
+        "edge inference",
+        "VLM"
+      ],
+      "url": "https://github.com/Liquid4All/leap-finetune",
+      "source": "Liquid AI",
+      "sourceUrl": "https://github.com/Liquid4All/leap-finetune",
+      "price": null,
+      "vram": "~3-4GB",
+      "license": "開源"
+    },
+    {
+      "id": "20260303-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Qwen3-Coder-Next",
+      "summary": "80B MoE/3B active 編碼模型，262K context。SWE-Bench 70.6%，打平比它大 10-20 倍的模型。需 offload 到 RAM。",
+      "tags": [
+        "coding",
+        "MoE",
+        "llm_inference",
+        "agentic"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+      "price": null,
+      "vram": "46GB (Q4)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260303-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "llama.cpp b8189",
+      "summary": "3/2 更新，加入 AMD MI300X CDNA3 MFMA flash attention，pp4096 +39%。",
+      "tags": [
+        "llama.cpp",
+        "flash attention",
+        "inference engine"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8189",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8189",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
+    },
+    {
       "id": "20260302-sw-001",
       "radar": "software-dev",
       "date": "2026-03-02",
