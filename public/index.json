@@ -1,6 +1,116 @@
 {
   "entries": [
     {
+      "id": "20260304-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "HippocampAI — Memory Engine for LLM Agents",
+      "summary": "LLM agent 記憶引擎 — knowledge graph + semantic search + BM25 混合檢索 + 行為模式偵測。v0.5.0 新增 graph-aware retrieval + sleep phase memory consolidation。可接 Ollama。",
+      "tags": [
+        "rag",
+        "knowledge-graph",
+        "embedding",
+        "semantic-search",
+        "agent-memory"
+      ],
+      "url": "https://github.com/rexdivakar/HippocampAI",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/04/rexdivakar-HippocampAI.html",
+      "price": null,
+      "vram": "depends on embedding model",
+      "license": null
+    },
+    {
+      "id": "20260304-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "sqliteai/sqlite-vector",
+      "summary": "SQLite 向量搜尋 extension — 30MB 記憶體、不需 virtual table、支援 Float32/Float16/Int8/1Bit + SIMD 加速。跨平台含 WASM。做 edge AI 或 on-device RAG 的超輕量選擇。",
+      "tags": [
+        "vector-database",
+        "embedding",
+        "semantic-search",
+        "edge-inference",
+        "SQLite"
+      ],
+      "url": "https://github.com/sqliteai/sqlite-vector",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/04/sqliteai-sqlite-vector.html",
+      "price": null,
+      "vram": "0 (CPU only)",
+      "license": null
+    },
+    {
+      "id": "20260304-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "LMCache — KV Cache Layer for vLLM",
+      "summary": "vLLM 的 KV Cache 加速層，把可重用文本的 KV cache 存到 GPU/CPU/Disk/S3 跨 instance 共享。長 context 場景 TTFT 降 3-10 倍。支援 disaggregated prefill、P2P cache sharing。",
+      "tags": [
+        "llm-inference",
+        "kv-cache",
+        "vllm",
+        "local-inference"
+      ],
+      "url": "https://github.com/LMCache/LMCache",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "配合 vLLM 使用",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260304-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "SaynaAI/sayna — Voice Layer for AI Agents",
+      "summary": "Rust 寫的即時語音處理 server，統一 STT + TTS API。支援 WebSocket 雙向音頻串流 + LiveKit WebRTC + Silero-VAD + DeepFilterNet 降噪。可插 Deepgram / ElevenLabs / Google / Azure。",
+      "tags": [
+        "voice-synthesis",
+        "TTS",
+        "STT",
+        "real-time-voice",
+        "WebRTC",
+        "Rust"
+      ],
+      "url": "https://github.com/SaynaAI/sayna",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/04/SaynaAI-sayna.html",
+      "price": null,
+      "vram": "~1-2GB (VAD + local TTS)",
+      "license": null
+    },
+    {
+      "id": "20260304-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "NVIDIA Audio2Face-3D SDK",
+      "summary": "音頻驅動 3D 臉部動畫完整工具鏈開源 — SDK (C++/CUDA) + 訓練框架 + Maya/UE5 插件。支援即時串流和預錄音頻，產生嘴型同步 + 情緒表情。HuggingFace 有 pre-trained weights。",
+      "tags": [
+        "audio",
+        "facial-animation",
+        "CUDA",
+        "open-source",
+        "NVIDIA"
+      ],
+      "url": "https://github.com/NVIDIA/Audio2Face-3D",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/04/NVIDIA-Audio2Face-3D.html",
+      "price": null,
+      "vram": "~4GB inference",
+      "license": "MIT (SDK), Apache (Training)"
+    },
+    {
       "id": "20260304-sw-001",
       "radar": "software-dev",
       "date": "2026-03-04",
