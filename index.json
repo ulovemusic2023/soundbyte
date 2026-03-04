@@ -4084,6 +4084,228 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260304-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "maderix/ANE — Apple Neural Engine Training",
+      "summary": "在 Apple Neural Engine 上跑 backpropagation training。逆向工程 _ANEClient private API，繞過 CoreML inference-only 限制。",
+      "tags": [
+        "local-ai",
+        "edge-ai",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/maderix/ANE",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/maderix/ANE",
+      "stars": 4585,
+      "createdDate": "2026-02-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "ForLoopCodes/contextplus — Codebase MCP Intelligence",
+      "summary": "MCP server 把 codebase 變成 searchable feature graph。RAG + Tree-sitter AST + Spectral Clustering。",
+      "tags": [
+        "mcp",
+        "coding-tools",
+        "rag"
+      ],
+      "url": "https://github.com/ForLoopCodes/contextplus",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ForLoopCodes/contextplus",
+      "stars": 1298,
+      "createdDate": "2026-02-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "open-pencil/open-pencil — AI-native Figma Alternative",
+      "summary": "開源 AI-native 設計編輯器。支援 .fig 格式、MCP server、AI chat + 75 tools。Tauri v2 ~7MB。",
+      "tags": [
+        "design-tool",
+        "mcp",
+        "ai-native"
+      ],
+      "url": "https://github.com/open-pencil/open-pencil",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/open-pencil/open-pencil",
+      "stars": 992,
+      "createdDate": "2026-02-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "bytedance/deer-flow 2.0 — SuperAgent Harness",
+      "summary": "字節跳動開源 SuperAgent harness。2.0 完全重寫，調度 sub-agents + sandbox + memory + skills。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "sandbox"
+      ],
+      "url": "https://github.com/bytedance/deer-flow",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 24051,
+      "createdDate": "2025-05-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260304-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "obra/superpowers — Agentic Skills Framework",
+      "summary": "完整 software dev workflow：設計優先、subagent-driven development、強制 TDD。支援多平台 coding agent。",
+      "tags": [
+        "agent-skills",
+        "coding-agent",
+        "tdd"
+      ],
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 69348,
+      "createdDate": "2025-10-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "SaynaAI/sayna — Unified Voice Layer for AI Agents",
+      "summary": "Rust 統一 Voice API。WebSocket 即時雙向音頻，支援多家 TTS+STT provider。內建 VAD + DeepFilterNet。",
+      "tags": [
+        "voice",
+        "tts",
+        "stt",
+        "rust",
+        "audio"
+      ],
+      "url": "https://github.com/SaynaAI/sayna",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 137,
+      "createdDate": "2025-07-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "DeusData/codebase-memory-mcp — Knowledge Graph MCP",
+      "summary": "Go 寫的 MCP server，codebase → persistent knowledge graph。35 語言、sub-ms 查詢。單一 binary。",
+      "tags": [
+        "mcp",
+        "knowledge-graph",
+        "coding-tools"
+      ],
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 137,
+      "createdDate": "2026-02-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Aratako/Irodori-TTS — Emoji-driven Style TTS",
+      "summary": "Flow Matching TTS，用 emoji 控制語音風格。對 expressive TTS 方向有參考價值。",
+      "tags": [
+        "tts",
+        "flow-matching",
+        "audio"
+      ],
+      "url": "https://github.com/Aratako/Irodori-TTS",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 24,
+      "createdDate": "2026-02-25",
+      "license": null
+    },
+    {
+      "id": "20260304-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "superset-sh/superset — IDE for AI Agents Era",
+      "summary": "在本機同時跑一群 Claude Code / Codex agent 的 IDE。TypeScript。",
+      "tags": [
+        "coding-agent",
+        "ide",
+        "multi-agent"
+      ],
+      "url": "https://github.com/superset-sh/superset",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript",
+      "stars": 4182,
+      "createdDate": "2025-10-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "badlogic/pi-mono — AI Agent Toolkit",
+      "summary": "AI agent 全家桶：coding agent CLI + unified LLM API + TUI & web UI + Slack bot + vLLM pods。",
+      "tags": [
+        "agent-toolkit",
+        "coding-agent",
+        "tui"
+      ],
+      "url": "https://github.com/badlogic/pi-mono",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript",
+      "stars": 19432,
+      "createdDate": "2025-08-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-03-04",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "automazeio/vibeproxy — Subscription Proxy for AI Coding",
+      "summary": "macOS menu bar app，用 Claude Code / ChatGPT subscription 串 AI coding tools，不用 API key。",
+      "tags": [
+        "proxy",
+        "coding-tools",
+        "macos"
+      ],
+      "url": "https://github.com/automazeio/vibeproxy",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 1519,
+      "createdDate": "2025-10-04",
+      "license": null
     }
   ]
 }
