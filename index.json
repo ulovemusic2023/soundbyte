@@ -1,6 +1,252 @@
 {
   "entries": [
     {
+      "id": "20260304-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Design-First Collaboration — AI 不准先寫 code",
+      "summary": "Martin Fowler 系列新篇。5 層漸進式設計對齊，核心規則：design 沒共識前不准生 code。搭配 Knowledge Priming 效果更強。",
+      "tags": [
+        "agentic engineering",
+        "cognitive debt",
+        "supervisory programming",
+        "design-first"
+      ],
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 2.6：MCP Apps 讓 IDE 變 Agent 操作台",
+      "summary": "MCP server 直接在 Cursor 聊天窗內 render 互動 UI。Team Marketplace 讓企業自建 private plugin 生態。",
+      "tags": [
+        "mcp",
+        "ai agent",
+        "skills ecosystem",
+        "cursor"
+      ],
+      "url": "https://cursor.com/changelog/03-03-26",
+      "source": "Cursor",
+      "sourceUrl": "https://cursor.com/changelog/03-03-26",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google × MIT：Multi-Agent Scaling 預測框架",
+      "summary": "9 個變數預測最佳 multi-agent 架構，87% 準確率。三個核心發現：tool-coordination trade-off、capability saturation、topology-dependent error amplification。",
+      "tags": [
+        "multi-agent",
+        "architecture",
+        "ai agent",
+        "scaling"
+      ],
+      "url": "https://www.infoq.com/news/2026/02/google-agent-scaling-principles/",
+      "source": "InfoQ / Google",
+      "sourceUrl": "https://www.infoq.com/news/2026/02/google-agent-scaling-principles/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Code Voice Mode 上線",
+      "summary": "/voice 啟動，按住空白鍵說話。轉錄 token 免費不算 rate limit。目前先給 5% 用戶。",
+      "tags": [
+        "ai coding",
+        "claude code",
+        "voice"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/claude-code",
+      "source": "Anthropic",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GPT-5.3 Instant：少 26.8% 幻覺，不再說教",
+      "summary": "高風險領域搜尋幻覺率降 26.8%，砍掉防禦性廢話。API 用 gpt-5.3-chat-latest。",
+      "tags": [
+        "ai_models",
+        "hallucination",
+        "grounding"
+      ],
+      "url": "https://openai.com/index/gpt-5-3-instant/",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/gpt-5-3-instant/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pragmatic Engineer 2026 AI 工具大調查",
+      "summary": "900+ 工程師問卷：95% 每週用 AI 工具，55% 常態用 agent，Claude Code 八個月內衝上第一。",
+      "tags": [
+        "ai coding",
+        "agentic engineering",
+        "survey"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/ai-tooling-for-software-engineers-2026",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/ai-tooling-for-software-engineers-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AWS Agent Plugins：AI agent 一句話部署上雲",
+      "summary": "開源 MCP plugin 讓 Claude Code/Cursor 用自然語言完成 AWS 部署全流程，原本數小時壓到 10 分鐘。",
+      "tags": [
+        "mcp",
+        "tool use",
+        "infrastructure as code",
+        "aws"
+      ],
+      "url": "https://github.com/awslabs/agent-plugins",
+      "source": "AWS",
+      "sourceUrl": "https://github.com/awslabs/agent-plugins",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Vercel CLI Agent-First：discover + guide 指令",
+      "summary": "新 CLI 指令讓 AI agent 自主探索、安裝、取得 Marketplace 整合設定指南。JSON 輸出適合 CI/CD。",
+      "tags": [
+        "ai agent",
+        "developer experience",
+        "context engineering",
+        "vercel"
+      ],
+      "url": "https://vercel.com/changelog",
+      "source": "Vercel",
+      "sourceUrl": "https://vercel.com/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google ADK 變 Agent 執行框架",
+      "summary": "Agent Development Kit 大擴充：整合 GitHub/Jira/MongoDB/Pinecone/OpenTelemetry 等 20+ 第三方工具。",
+      "tags": [
+        "ai agent",
+        "agent framework",
+        "mcp",
+        "google adk"
+      ],
+      "url": "https://developers.googleblog.com/en/agent-development-kit-tools-ecosystem/",
+      "source": "Google",
+      "sourceUrl": "https://developers.googleblog.com/en/agent-development-kit-tools-ecosystem/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 2026 威脅報告：31.4 Tbps DDoS 新紀錄",
+      "summary": "2025 年 DDoS 攻擊翻倍到 4710 萬次。63% 登入用被盜憑證，94% 來自 bot。AI 自動化攻擊成主流。",
+      "tags": [
+        "zero trust",
+        "security",
+        "ddos"
+      ],
+      "url": "https://blog.cloudflare.com/2026-cyber-threat-report/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/2026-cyber-threat-report/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Gemini 3.1 Flash-Lite：$0.25/M tokens 推理模型",
+      "summary": "Google 最便宜 Gemini 3 系列。TTFT 快 2.5 倍、輸出快 45%，GPQA Diamond 86.9%。",
+      "tags": [
+        "ai_models",
+        "cost optimization"
+      ],
+      "url": "https://blog.google/technology/google-deepmind/gemini-3-1-flash-lite/",
+      "source": "Google",
+      "sourceUrl": "https://blog.google/technology/google-deepmind/gemini-3-1-flash-lite/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260304-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Netflix：用 JDK Vector API 加速推薦系統",
+      "summary": "Ranker 服務用 Vector API SIMD 加速 dot product/cosine similarity，搭配 Java 21 virtual threads 處理 450K RPS。",
+      "tags": [
+        "architecture",
+        "stream processing",
+        "jvm",
+        "performance"
+      ],
+      "url": "https://netflixtechblog.com/optimizing-recommendation-systems-with-jdks-vector-api",
+      "source": "Netflix Engineering",
+      "sourceUrl": "https://netflixtechblog.com/optimizing-recommendation-systems-with-jdks-vector-api",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260304-ai-006",
       "radar": "ai-infra",
       "date": "2026-03-04",
