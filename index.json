@@ -1,6 +1,132 @@
 {
   "entries": [
     {
+      "id": "20260304-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ReMe — Memory Management for AI Agents",
+      "summary": "Agent 記憶管理框架，支援 file-based 和 vector-based 兩種模式。自動壓縮歷史、語意搜尋、向量 + BM25 混合檢索。",
+      "tags": [
+        "rag",
+        "semantic search",
+        "embedding",
+        "agent memory"
+      ],
+      "url": "https://github.com/agentscope-ai/ReMe",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/agentscope-ai/ReMe",
+      "price": null,
+      "vram": "Depends on embedding model",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260304-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Voxt — macOS Voice Input with Local MLX",
+      "summary": "macOS menu bar 語音輸入 + 翻譯工具，使用本地 MLX 模型或 Apple Intelligence。支援 Whisper 本地辨識，完全離線。",
+      "tags": [
+        "speech recognition",
+        "whisper",
+        "mlx",
+        "macOS"
+      ],
+      "url": "https://github.com/hehehai/voxt",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/03/hehehai-voxt.html",
+      "price": null,
+      "vram": "N/A (Apple Silicon)",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260304-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Qwen3.5 Medium VLM Series (27B/35B-A3B/122B-A10B)",
+      "summary": "Qwen3.5 中型 VLM 系列。Gated Delta Networks 混合注意力機制，201 語言、262K context。35B-A3B 只啟動 3B 參數推論超快。",
+      "tags": [
+        "qwen",
+        "llm_inference",
+        "VLM",
+        "quantization",
+        "MoE"
+      ],
+      "url": "https://huggingface.co/Qwen",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/Qwen",
+      "price": null,
+      "vram": "35B-A3B ~6-8GB (Q4) / 27B ~14-16GB (Q4)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260304-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ollama v0.17.5",
+      "summary": "修復 Qwen3.5 GPU+CPU split crash，解決 presence penalty 重複問題。MLX engine 新增 peak memory 顯示。CUDA 12.8 Blackwell 原生支援。",
+      "tags": [
+        "ollama",
+        "llm_inference",
+        "local inference"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.5",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.17.5",
+      "price": null,
+      "vram": "Depends on model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260304-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LMCache — KV Cache Layer for LLM Serving",
+      "summary": "LLM 推論加速的 KV Cache 共享層，整合 vLLM 可達 3-10x TTFT 降低。支援 GPU/CPU/Disk/S3 跨節點 cache 共享。",
+      "tags": [
+        "llm_inference",
+        "kv-cache",
+        "vllm",
+        "performance"
+      ],
+      "url": "https://github.com/LMCache/LMCache",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/LMCache/LMCache",
+      "price": null,
+      "vram": "Depends on model",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260304-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Dia2 — Streaming Dialogue TTS",
+      "summary": "Nari Labs 推出 Dia2，streaming 對話 TTS 模型，1B/2B 參數。不需要整段文字就能開始生成語音，支援即時串流、voice cloning、非語言音效。VRAM ~4.4GB。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "streaming",
+        "dialogue"
+      ],
+      "url": "https://github.com/nari-labs/dia2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/03/nari-labs-dia2.html",
+      "price": null,
+      "vram": "~4.4GB (bfloat16)",
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260303-ai-010",
       "radar": "ai-infra",
       "date": "2026-03-03",
