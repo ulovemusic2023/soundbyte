@@ -1,6 +1,108 @@
 {
   "entries": [
     {
+      "id": "20260305-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Julia Evans：Why do computers have so many clocks?",
+      "summary": "深入拆解 Linux 硬體時鐘、CLOCK_MONOTONIC、RTC 和 drift 問題。",
+      "tags": [
+        "distributed systems",
+        "linux"
+      ],
+      "url": "https://jvns.ca/blog/2026/02/28/why-computers-have-so-many-clocks/",
+      "source": "Julia Evans",
+      "sourceUrl": "https://jvns.ca/blog/2026/02/28/why-computers-have-so-many-clocks/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ollama Pi Agent Toolkit",
+      "summary": "極簡 AI 程式設計 agent，能自己幫自己寫 plugin。ollama launch pi 一鍵啟動。",
+      "tags": [
+        "ai coding",
+        "ai agent",
+        "local-first AI",
+        "ollama"
+      ],
+      "url": "https://github.com/ollama/ollama",
+      "source": "Ollama",
+      "sourceUrl": "https://github.com/ollama/ollama",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Shopify AI-First Code Mandate",
+      "summary": "Tobi Lütke 要求所有新 code 必須 AI 生成，PR 自動檢測合規性。",
+      "tags": [
+        "ai coding",
+        "ai-assisted development"
+      ],
+      "url": "https://x.com/tobi",
+      "source": "Tobi Lütke (X)",
+      "sourceUrl": "https://x.com/tobi",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain Skills Framework：29%→95% 任務完成率",
+      "summary": "模組化動態指令集讓 Claude Code pass rate 從 29% 飆到 95%。Skills 正在變成 agent 生態的 package manager。",
+      "tags": [
+        "ai agent",
+        "langchain",
+        "skills ecosystem",
+        "evals"
+      ],
+      "url": "https://blog.langchain.com/langchain-skills/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/langchain-skills/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 2.6：JetBrains ACP 整合",
+      "summary": "Cursor 進入 JetBrains IDE 透過 Agent Client Protocol (ACP) 開放協定。MCP Apps + team plugin marketplace。",
+      "tags": [
+        "ai coding",
+        "agent framework",
+        "mcp",
+        "JetBrains",
+        "ACP"
+      ],
+      "url": "https://cursor.com/blog/jetbrains-acp",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/jetbrains-acp",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260305-ai-005",
       "radar": "ai-infra",
       "date": "2026-03-05",
