@@ -1,6 +1,147 @@
 {
   "entries": [
     {
+      "id": "20260305-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-03-05",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Writing code is cheap now. Show me the thinking.",
+      "summary": "Simon Willison 直接反轉 Linus Torvalds 的經典名言。AI 把寫 code 的成本壓到趨近零，真正值錢的是背後的 reasoning。",
+      "tags": [
+        "ai-future",
+        "paradigm-shift",
+        "mental-model"
+      ],
+      "url": "https://simonwillison.net",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-05",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Daniel Vassallo：52 個 Small Bets → 年副收入 $14K",
+      "summary": "每個投入 $100-1K 或幾小時，不追 home run，堆疊 base hit 就能 compound。2026 年加上 Claude，一個週末出一個產品。",
+      "tags": [
+        "small-bets",
+        "solo-founder",
+        "portfolio-of-bets"
+      ],
+      "url": "https://x.com/dvassallo",
+      "source": "Daniel Vassallo",
+      "sourceUrl": "https://x.com/dvassallo",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-05",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Jensen Huang：Agentic AI 的拐點已經到了",
+      "summary": "NVIDIA 從晶片公司變成智慧工廠設備供應商。AI factory 概念：1GW 工廠產出 AI token，到 2027 年全球將消耗 135GW。",
+      "tags": [
+        "ai-factory",
+        "operational",
+        "infrastructure"
+      ],
+      "url": "https://www.youtube.com/results?search_query=jensen+huang+earnings+2026",
+      "source": "Jensen Huang",
+      "sourceUrl": "https://www.youtube.com/results?search_query=jensen+huang+earnings+2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-05",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Nadella：SaaS 將被 Agent 層消融",
+      "summary": "未來 app 不是 app，是 agent tier 蓋在 CRUD database 上。傳統 SaaS 邏輯層被 AI agent 取代，每週 10-20% 效率提升已在發生。",
+      "tags": [
+        "ai-future",
+        "saas-disruption",
+        "operational"
+      ],
+      "url": "https://www.youtube.com/results?search_query=nadella+AI+agents+saas+2026",
+      "source": "Satya Nadella",
+      "sourceUrl": "https://www.youtube.com/results?search_query=nadella+AI+agents+saas+2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-05",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Dario Amodei：Safety 不是反進步，Safety 是 moat",
+      "summary": "Amodei 把 AI safety 重新框架成商業策略——Constitutional AI 演化成 AI legislatures，jailbreak 率降低 40%，safety-first 成為差異化武器。",
+      "tags": [
+        "mental-model",
+        "ai-safety",
+        "competitive-advantage"
+      ],
+      "url": "https://anthropic.com",
+      "source": "Dario Amodei",
+      "sourceUrl": "https://anthropic.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-05",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Karpathy 的 Claws：從 AI agent 到完整 orchestration 系統",
+      "summary": "Software 2.0 再進化——Claws 是架在 AI agent 之上的 orchestration 層，處理 context、tool invocation，跑在本地硬體上。人類從寫 code 變成描述意圖。",
+      "tags": [
+        "software-3.0",
+        "vibe-coding",
+        "ai-future",
+        "mental-model"
+      ],
+      "url": "https://x.com/karpathy",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-05",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly：創作者最大的敵人不是被模仿，是被忽略",
+      "summary": "未來作者會主動付錢讓 AI 訓練自己的作品——因為在 AI agent 的世界裡，不存在模型裡的人等於不存在。",
+      "tags": [
+        "creator-leverage",
+        "mental-model",
+        "ai-future"
+      ],
+      "url": "https://kk.org/thetechnium/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260305-sw-005",
       "radar": "software-dev",
       "date": "2026-03-05",
