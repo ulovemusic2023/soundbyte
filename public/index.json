@@ -1,6 +1,108 @@
 {
   "entries": [
     {
+      "id": "20260305-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Meta SAM 3D Objects — 3D Reconstruction from Single Image",
+      "summary": "SAM 系列新作 — 從單張圖片重建完整 3D 物件幾何 + 材質 + 場景佈局。輸出 Gaussian Splat。",
+      "tags": [
+        "segment-anything",
+        "3d-reconstruction",
+        "computer-vision"
+      ],
+      "url": "https://github.com/facebookresearch/sam-3d-objects",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/facebookresearch-sam-3d-objects.html",
+      "price": null,
+      "vram": "~24GB+",
+      "license": null
+    },
+    {
+      "id": "20260305-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Yuan3.0 Ultra — 1T MoE Multimodal Foundation Model",
+      "summary": "浪潮 Yuan Lab 發布 trillion-parameter flagship — active 68.8B。LAEP 剪枝 + LFA attention + RIRM fast-thinking RL。",
+      "tags": [
+        "llm-inference",
+        "moe",
+        "multimodal"
+      ],
+      "url": "https://github.com/Yuan-lab-LLM/Yuan3.0-Ultra",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/Yuan-lab-LLM/Yuan3.0-Ultra",
+      "price": null,
+      "vram": "~16-48GB (quantized)",
+      "license": null
+    },
+    {
+      "id": "20260305-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TEN Framework — Conversational Voice AI Framework",
+      "summary": "開源 real-time multimodal conversational voice AI 框架 — 低延遲 voice assistant 架構，支援 RTC + WebSocket + VAD + Turn Detection。",
+      "tags": [
+        "real-time-voice",
+        "voice-ai",
+        "tts",
+        "voice-assistant"
+      ],
+      "url": "https://github.com/TEN-framework/ten-framework",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/TEN-framework/ten-framework",
+      "price": null,
+      "vram": null,
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260305-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI gpt-oss — First Open-Weight Models (20B + 120B)",
+      "summary": "OpenAI 首款 open-weight 模型（Apache 2.0）。gpt-oss-20b（21B/3.6B active MoE）可跑在 16GB VRAM 內。支援 reasoning、function calling、code execution。",
+      "tags": [
+        "llm-inference",
+        "quantization",
+        "moe",
+        "open-weight"
+      ],
+      "url": "https://github.com/openai/gpt-oss",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/openai/gpt-oss",
+      "price": null,
+      "vram": "~16GB (gpt-oss-20b MXFP4)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260305-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "PicoLM — 1B LLM on $10 Board with 256MB RAM",
+      "summary": "純 C 寫成的極致 edge inference engine — binary 只有 ~80KB，記憶體只吃 45MB，零依賴。搭配 PicoClaw agent 框架做完全離線 AI 助手。",
+      "tags": [
+        "local-inference",
+        "edge-inference",
+        "on-device"
+      ],
+      "url": "https://github.com/RightNow-AI/picolm",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/RightNow-AI-picolm.html",
+      "price": null,
+      "vram": "0 (CPU only, 45MB RAM)",
+      "license": "MIT"
+    },
+    {
       "id": "20260305-fm-007",
       "radar": "founder-mind",
       "date": "2026-03-05",
