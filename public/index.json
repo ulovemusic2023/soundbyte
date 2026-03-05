@@ -1,6 +1,146 @@
 {
   "entries": [
     {
+      "id": "20260305-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Gartner 預測 2026 年底 40% 企業應用內建 AI Agent",
+      "summary": "Gartner 預測 40% 企業應用將內建自主 agent（去年僅 5%）。競爭焦點轉向 tooling 和 agent orchestration。",
+      "tags": [
+        "ai agent",
+        "enterprise",
+        "platform engineering"
+      ],
+      "url": "https://www.gartner.com",
+      "source": "Gartner",
+      "sourceUrl": "https://www.gartner.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Knuth Claude Cycles 論文持續發酵",
+      "summary": "Donald Knuth 公開承認 Claude Opus 4.6 解出他研究數週的開放數學問題。CS 奠基人首次公開認可 LLM 推理。",
+      "tags": [
+        "LLM reasoning",
+        "mathematical proof"
+      ],
+      "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf",
+      "source": "Donald Knuth / Stanford",
+      "sourceUrl": "https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Apple MacBook Neo — $599 入門機搭 A18 Pro",
+      "summary": "Apple 發布 $599 入門筆電，A18 Pro + 16 核 Neural Engine，AI 工作負載比同價位 Intel 快 3x。",
+      "tags": [
+        "local-first AI",
+        "edge inference",
+        "Apple Silicon"
+      ],
+      "url": "https://apple.com",
+      "source": "Apple",
+      "sourceUrl": "https://apple.com",
+      "price": "$599",
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cloudflare 2026 威脅報告 — 攻擊從破門轉向登入",
+      "summary": "首份年度威脅報告：session token 竊取、AI 社交工程取代暴力破解。31.4 Tbps DDoS 紀錄。",
+      "tags": [
+        "zero trust",
+        "security",
+        "threat intelligence"
+      ],
+      "url": "https://blog.cloudflare.com/2026-threat-report/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/2026-threat-report/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenAI VP Research Max Schwarzer 跳槽 Anthropic",
+      "summary": "OpenAI 研究副總 Max Schwarzer 宣布離開 OpenAI 加入 Anthropic。AI 人才戰持續升溫。",
+      "tags": [
+        "talent war",
+        "alignment",
+        "safety"
+      ],
+      "url": "https://anthropic.com",
+      "source": "X (@maxschwarzer)",
+      "sourceUrl": "https://x.com/maxschwarzer",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "EY 部署 Factory Droids 給 5,000+ 工程師",
+      "summary": "EY 與 Factory 合作，將 Droids AI coding agent 嵌入 GitHub/Jira/Slack/DevOps 工作流。史上最大企業 AI coding agent 部署。",
+      "tags": [
+        "ai agent",
+        "agent-native development",
+        "enterprise"
+      ],
+      "url": "https://factory.ai",
+      "source": "Factory / EY",
+      "sourceUrl": "https://factory.ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260305-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-05",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Qwen 核心團隊集體出走 — 開源 AI 地震",
+      "summary": "Qwen 技術負責人林俊揚宣布離職，隨後代碼負責人 Binyuan Hui、後訓練負責人 Bowen Yu 等多人同日辭職。導火線疑似阿里內部重組。Qwen 3.5 累計下載超 7 億次。",
+      "tags": [
+        "open-source AI",
+        "talent exodus",
+        "Qwen",
+        "Alibaba"
+      ],
+      "url": "https://qwen.ai",
+      "source": "Simon Willison / 36Kr",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/4/qwen/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260305-ai-010",
       "radar": "ai-infra",
       "date": "2026-03-05",
