@@ -1,6 +1,87 @@
 {
   "entries": [
     {
+      "id": "20260305-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVIDIA Megatron-Bridge — HF ↔ Megatron Training Library",
+      "summary": "NeMo 團隊 PyTorch-native training library — HF ↔ Megatron 雙向 checkpoint 轉換 + TP/PP/EP/FP8 訓練。AutoBridge API。",
+      "tags": [
+        "megatron",
+        "fine-tuning",
+        "llm-training",
+        "nvidia"
+      ],
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/NVIDIA-NeMo/Megatron-Bridge",
+      "price": null,
+      "vram": "multi-GPU cluster",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260305-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VoxClaw — macOS TTS for AI Agents",
+      "summary": "macOS menu bar TTS 工具 — Apple TTS / OpenAI / ElevenLabs 三引擎，LAN HTTP API，teleprompter overlay + iPhone companion。",
+      "tags": [
+        "text-to-speech",
+        "voice-synthesis",
+        "agent-tooling"
+      ],
+      "url": "https://github.com/malpern/VoxClaw",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/04/malpern-VoxClaw.html",
+      "price": null,
+      "vram": "0",
+      "license": null
+    },
+    {
+      "id": "20260305-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "dLLM — Simple Diffusion Language Modeling",
+      "summary": "UC Berkeley 開源 Diffusion LM 統一框架 — AR model 轉 diffusion model 完整 pipeline。支援 LLaDA、Dream、BERT-Chat，Fast-dLLM 加速推論。",
+      "tags": [
+        "diffusion-lm",
+        "llm-training",
+        "speculative-decoding"
+      ],
+      "url": "https://github.com/ZHZisZZ/dllm",
+      "source": "GitHub Trending + HuggingFace",
+      "sourceUrl": "https://github.com/ZHZisZZ/dllm",
+      "price": null,
+      "vram": "~4-12GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260305-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NotaGen — Symbolic Music Generation with LLM Training Paradigms",
+      "summary": "用 LLM 三階段訓練（pretrain 1.6M 曲 → finetune 9K 古典 → RL CLaMP-DPO）產出古典樂譜的 symbolic music model。支援 period-composer-instrumentation prompt 控制風格。",
+      "tags": [
+        "music-generation",
+        "sheet-music",
+        "reinforcement-learning"
+      ],
+      "url": "https://github.com/ElectricAlexis/NotaGen",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/04/ElectricAlexis-NotaGen.html",
+      "price": null,
+      "vram": "~2-8GB",
+      "license": null
+    },
+    {
       "id": "20260304-ai-011",
       "radar": "ai-infra",
       "date": "2026-03-04",
