@@ -1,6 +1,166 @@
 {
   "entries": [
     {
+      "id": "20260306-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Lightricks/LTX-2.3 (22B)",
+      "summary": "DiT 架構音訊+影片同步生成，22B 參數。T2V/I2V/V2V/A2V，最高 4K 50FPS。ComfyUI 整合。",
+      "tags": [
+        "video-generation",
+        "dit",
+        "audio-video",
+        "comfyui"
+      ],
+      "url": "https://github.com/Lightricks/LTX-2",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://github.com/Lightricks/LTX-2",
+      "vram": "~24-40GB+",
+      "license": "待確認"
+    },
+    {
+      "id": "20260306-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Helios-Base 14B",
+      "summary": "自回歸式 video gen，單 H100 跑 19.5 FPS 生成 60 秒影片。基於 Wan2.1-T2V-14B。",
+      "tags": [
+        "video-generation",
+        "autoregressive",
+        "diffusion"
+      ],
+      "url": "https://huggingface.co/BestWishYsh/Helios-Base",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/BestWishYsh/Helios-Base",
+      "vram": "~20GB+ (推論) / 80GB (完整)",
+      "license": "待確認"
+    },
+    {
+      "id": "20260306-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "langchain-ai/local-deep-researcher",
+      "summary": "用本地 LLM + DuckDuckGo/SearxNG 做深度研究。全程本地，免費。",
+      "tags": [
+        "rag",
+        "langchain",
+        "local-llm",
+        "research"
+      ],
+      "url": "https://github.com/langchain-ai/local-deep-researcher",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/06/langchain-ai-local-deep-researcher.html",
+      "vram": "~4-8GB (依 LLM)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260306-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Qwen 3.5 系列持續發威",
+      "summary": "9B MoE 88% MMLU、27B coding ELO 1375。VL 2B 跑手機 22 tok/s。",
+      "tags": [
+        "qwen",
+        "llm",
+        "moe",
+        "local-inference"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "source": "r/LocalLLaMA + HuggingFace",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "vram": "9B ~6-8GB (Q4) / 27B ~14-16GB (Q4)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260306-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "MiniMax-AI/MiniMax-M2.5",
+      "summary": "Coding 能力對標 Claude Opus，成本 1/20。SWE-Bench Verified 80.2%。MoE 架構。",
+      "tags": [
+        "llm",
+        "moe",
+        "coding",
+        "swe-bench"
+      ],
+      "url": "https://github.com/MiniMax-AI/MiniMax-M2.5",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://reddit.com/r/LocalLLaMA",
+      "vram": "~14-20GB (量化後)",
+      "license": "待確認"
+    },
+    {
+      "id": "20260306-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "llama.cpp b8212",
+      "summary": "持續高速迭代，3/6 最新 build。硬體支援和模型相容性持續增強。",
+      "tags": [
+        "llama.cpp",
+        "local-inference",
+        "gguf",
+        "quantization"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8212",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8212",
+      "vram": "依模型而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20260306-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenPipe/ART (Agent Reinforcement Trainer)",
+      "summary": "用 GRPO 訓練 multi-step agent，支援 Qwen3/Llama。Serverless 跟 local 都能跑。",
+      "tags": [
+        "grpo",
+        "reinforcement-learning",
+        "agent-training",
+        "qwen",
+        "llama"
+      ],
+      "url": "https://github.com/OpenPipe/ART",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/OpenPipe-ART.html",
+      "vram": "~10-14GB (Qwen2.5-7B local)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260306-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "denizsafak/abogen",
+      "summary": "EPUB/PDF 轉有聲書，用 Kokoro-82M TTS + 自動字幕同步。5 秒生成 1 分鐘音訊。",
+      "tags": [
+        "tts",
+        "audiobook",
+        "kokoro",
+        "text-to-speech"
+      ],
+      "url": "https://github.com/denizsafak/abogen",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/denizsafak-abogen.html",
+      "vram": "~2GB (Kokoro-82M)",
+      "license": "MIT"
+    },
+    {
       "id": "20260306-sw-008",
       "radar": "software-dev",
       "date": "2026-03-06",
