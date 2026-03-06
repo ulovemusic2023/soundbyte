@@ -1,6 +1,153 @@
 {
   "entries": [
     {
+      "id": "20260306-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "inclusionAI/AReaL",
+      "summary": "螞蟻集團 + 清華開源的全異步 RL 訓練框架，給大型推理模型和 Agent 用。2.77× 加速比。",
+      "tags": [
+        "RLHF",
+        "fine-tuning",
+        "LLM training",
+        "alignment"
+      ],
+      "url": "https://github.com/inclusionAI/AReaL",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "multi-GPU cluster",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260306-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DocLayout-YOLO",
+      "summary": "基於 YOLOv10 的文件版面偵測，DocSynth-300K 預訓練。整合 MinerU / PDF-Extract-Kit。",
+      "tags": [
+        "YOLO",
+        "document AI",
+        "OCR",
+        "layout detection"
+      ],
+      "url": "https://github.com/opendatalab/DocLayout-YOLO",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/opendatalab-DocLayout-YOLO.html",
+      "price": null,
+      "vram": "~2-4GB",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260306-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MeiGen-AI-Design-MCP",
+      "summary": "MCP Server 讓 AI agent 呼叫本地 ComfyUI 產圖，1,500+ prompt template + 多方向平行生圖。",
+      "tags": [
+        "ComfyUI",
+        "image generation",
+        "MCP",
+        "stable diffusion"
+      ],
+      "url": "https://github.com/jau123/MeiGen-AI-Design-MCP",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/jau123-MeiGen-AI-Design-MCP.html",
+      "price": null,
+      "vram": "depends on model (8-12GB)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260306-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "sift-kg",
+      "summary": "CLI 把文件集合轉成互動式知識圖譜。支援 Ollama 本地 LLM + 75+ 文件格式 + human-in-the-loop 去重。",
+      "tags": [
+        "knowledge graph",
+        "RAG",
+        "document parsing",
+        "Ollama"
+      ],
+      "url": "https://github.com/juanceresa/sift-kg",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/juanceresa-sift-kg.html",
+      "price": null,
+      "vram": "~4-8GB (Ollama)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260306-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "flycut-caption",
+      "summary": "瀏覽器端影片字幕編輯，用 Transformers.js 本地跑 Whisper ASR。完全離線可用。",
+      "tags": [
+        "whisper",
+        "subtitle",
+        "browser-based",
+        "speech to text"
+      ],
+      "url": "https://github.com/x007xyz/flycut-caption",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/x007xyz-flycut-caption.html",
+      "price": null,
+      "vram": "0 (browser)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260306-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "insanely-fast-whisper-api",
+      "summary": "Whisper Large v3 可部署 API，內建 speaker diarization + webhook + 非同步任務。150 分鐘音檔 ~2 分鐘轉錄。",
+      "tags": [
+        "whisper",
+        "ASR",
+        "speech recognition",
+        "diarization"
+      ],
+      "url": "https://github.com/JigsawStack/insanely-fast-whisper-api",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/JigsawStack-insanely-fast-whisper-api.html",
+      "price": null,
+      "vram": "~6-8GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260306-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SoulX-Singer",
+      "summary": "Zero-shot 歌聲合成模型，只需 5-30 秒參考音檔就能 clone 任何歌手的聲音。支援 F0 + MIDI 控制，中英粵三語。",
+      "tags": [
+        "singing voice conversion",
+        "zero-shot",
+        "voice cloning",
+        "TTS"
+      ],
+      "url": "https://github.com/Soul-AILab/SoulX-Singer",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/05/Soul-AILab-SoulX-Singer.html",
+      "price": null,
+      "vram": "~8-12GB inference",
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260305-sw-015",
       "radar": "software-dev",
       "date": "2026-03-05",
