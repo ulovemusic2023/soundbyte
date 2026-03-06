@@ -5651,6 +5651,109 @@
       "url": "https://www.ddmckinnon.com/2026/02/11/my-%f0%9f%8c%b6-take-on-vibe-coding-for-pms/",
       "source": "ddmckinnon.com",
       "sourceUrl": "https://www.ddmckinnon.com/2026/02/11/my-%f0%9f%8c%b6-take-on-vibe-coding-for-pms/"
+    },
+    {
+      "id": "20260306-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Clinejection — AI Issue Triage 觸發第一起 Agent 供應鏈攻擊",
+      "summary": "Cline 的 AI issue triage 被 prompt injection 攻擊，攻擊者透過 GitHub Actions cache 投毒竊取 NPM 發佈 token，推送含 OpenClaw 後門的 cline@2.3.0，8 小時內 4,000 台開發者機器中招。",
+      "tags": [
+        "prompt injection",
+        "supply chain security",
+        "ai agent",
+        "CI/CD"
+      ],
+      "url": "https://adnanthekhan.com/posts/clinejection/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/6/clinejection/"
+    },
+    {
+      "id": "20260306-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Wikipedia Wikiworm — 休眠 18 個月的惡意 JS 被意外觸發",
+      "summary": "WMF 安全工程師意外 import 2024 年上傳的 Wikiworm 腳本，透過 MediaWiki:Common.js 傳播到 admin 帳號 mass delete，全站 read-only 2 小時。",
+      "tags": [
+        "supply chain security",
+        "zero trust",
+        "dormant malware"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47263595",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47263595"
+    },
+    {
+      "id": "20260306-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cloudflare SASE Client 重構：QUIC 取代 WireGuard",
+      "summary": "Proxy Mode 改用 L4 QUIC stream，拿掉使用者空間 TCP stack，下載上傳 2x 提升。",
+      "tags": [
+        "SASE",
+        "QUIC",
+        "edge runtime"
+      ],
+      "url": "https://blog.cloudflare.com/quicker-sase-client-proxy-mode/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/quicker-sase-client-proxy-mode/"
+    },
+    {
+      "id": "20260306-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cloudflare Dynamic Path MTU Discovery",
+      "summary": "實作 RFC 8899 DPMTUD，主動探測路徑 MTU 解決多層隧道靜默丟包。",
+      "tags": [
+        "network",
+        "SASE",
+        "DPMTUD"
+      ],
+      "url": "https://blog.cloudflare.com/dynamic-path-mtu-discovery/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/dynamic-path-mtu-discovery/"
+    },
+    {
+      "id": "20260306-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Dario Amodei 痛批 OpenAI Pentagon 合約 — 備忘錄外洩",
+      "summary": "Anthropic 拒絕 DoD「任何合法用途」條款，Amodei 內部信稱 OpenAI 安全條款是表演，Hegseth 準備列 Anthropic 為供應鏈風險。",
+      "tags": [
+        "AI safety",
+        "alignment",
+        "federal AI ban"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47263800",
+      "source": "Hacker News / Politico",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47263800"
+    },
+    {
+      "id": "20260306-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Vercel 支援 MCP Apps 部署",
+      "summary": "MCP Apps 為 provider-agnostic 嵌入式 UI 標準，Vercel 提供 Next.js SSR + RSC 模板驅動 agent 介面。",
+      "tags": [
+        "MCP",
+        "server components",
+        "agent UI"
+      ],
+      "url": "https://vercel.com/changelog",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog"
     }
   ]
 }
