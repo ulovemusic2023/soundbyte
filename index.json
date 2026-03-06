@@ -1,6 +1,169 @@
 {
   "entries": [
     {
+      "id": "20260306-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "2026 Engineering 生產力報告：AI 對弱隊幫助最大",
+      "summary": "2,000+ 團隊分析，底部 25% 用 AI 後 Lead Time 減半。Code review 成新瓶頸。",
+      "tags": [
+        "developer experience",
+        "ai-assisted development"
+      ],
+      "url": "https://linearb.io/resources/engineering-benchmarks-2026",
+      "source": "LinearB",
+      "sourceUrl": "https://linearb.io/resources/engineering-benchmarks-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260306-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Claude Code 2.1.69 + Voice Mode 開始推送",
+      "summary": "新增 API skill、session 命名、多語言語音 STT。Voice Mode 5% 用戶先行。",
+      "tags": [
+        "ai coding",
+        "ai pair programming",
+        "Voice Mode"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/claude-code/changelog",
+      "source": "Anthropic",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260306-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic：入門級軟體工程師角色 2026 底前消失",
+      "summary": "Claude 寫 99% code，但公司雇更多工程師。全轉向 AI 監督、架構、review 等高階工作。",
+      "tags": [
+        "supervisory programming",
+        "cognitive debt",
+        "engineering grief"
+      ],
+      "url": "https://www.anthropic.com/news/ai-workforce-impact",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/ai-workforce-impact",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260306-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Europol + Microsoft 拆除 Tycoon 2FA 釣魚平台",
+      "summary": "查封 330 domain，2,000 用戶、近 10 萬組織受影響。能繞 MFA 攔截 session cookie。",
+      "tags": [
+        "zero trust",
+        "supply chain security",
+        "phishing"
+      ],
+      "url": "https://www.europol.europa.eu/media-press/newsroom/news/tycoon-2fa-disrupted",
+      "source": "Europol",
+      "sourceUrl": "https://www.europol.europa.eu/media-press/newsroom/news/tycoon-2fa-disrupted",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260306-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain Skills Framework — coding agent 完成率 29% → 95%",
+      "summary": "11 個 modular skills 按需載入，搭配 LangSmith Skills 完成率從 17% 到 92%。所有 coding agent 通用。",
+      "tags": [
+        "skills ecosystem",
+        "ai agent",
+        "harness engineering",
+        "context engineering"
+      ],
+      "url": "https://blog.langchain.com/langchain-skills/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/langchain-skills/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260306-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Pragmatic Engineer: Cloudflare 用 AI 重寫 Next.js 動搖商業開源",
+      "summary": "一個工程師用 Claude Code 一週重寫 94% Next.js API，花 $1,100 token。AI 重寫速度 100x，挑戰 Vercel 商業模式。",
+      "tags": [
+        "ai-assisted porting",
+        "AI replication threat",
+        "migration agent"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-cloudflare-rewrites-nextjs",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-cloudflare-rewrites-nextjs",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260306-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 推出 Automations — event-driven AI coding agents",
+      "summary": "事件觸發 AI agent：commit、Slack、PagerDuty、timer 自動啟動 code review、security audit、bug 偵測。每小時跑數百個 automation。",
+      "tags": [
+        "ai agent",
+        "agentic engineering",
+        "ci/cd",
+        "Cursor Automations"
+      ],
+      "url": "https://cursor.com/blog/automations",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/automations",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260306-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 發佈 GPT-5.4 — 統一型前沿 coding + agent 模型",
+      "summary": "GPT-5.4 整合推理、coding 和 agentic workflows，1M token context window，原生 computer use，Tool Search。OSWorld-Verified 75%，GDPval 83%。",
+      "tags": [
+        "ai agent",
+        "function calling",
+        "reasoning",
+        "computer use",
+        "GPT-5.4"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "source": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-5-4/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260306-ai-007",
       "radar": "ai-infra",
       "date": "2026-03-06",
