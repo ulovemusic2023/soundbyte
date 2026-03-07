@@ -1,6 +1,132 @@
 {
   "entries": [
     {
+      "id": "20260307-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-07",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "HBR × Tsedal Neeley — 用 Agentic AI 打造數位幕僚團",
+      "summary": "HBS 教授提出三個 agent 角色：competitive intelligence analyst、chief of staff、executive coach。一人公司可擁有 C-suite 支援。",
+      "tags": [
+        "agentic AI",
+        "one-person company",
+        "digital support team",
+        "10x productivity"
+      ],
+      "url": "https://hbr.org/",
+      "source": "Tsedal Neeley (Harvard Business School)",
+      "sourceUrl": "https://hbr.org/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260307-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-07",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Karpathy — Software 4.0: 從寫 code 到編排 agent",
+      "summary": "Software 演化到 4.0 Agentware：agent 是可程式化單位，開發者 KPI 是設計和運營 AI agent，不是寫 code。",
+      "tags": [
+        "Software 4.0",
+        "agentware",
+        "agent orchestration",
+        "vibe coding"
+      ],
+      "url": "https://x.com/karpathy",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260307-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-07",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Dario Amodei — 紅線不是軟弱，是產品可靠度判斷",
+      "summary": "Anthropic CEO 在 CBS 專訪解釋：拒絕五角大廈不是反軍事，是知道自己的 model 邊界在哪。創辦人最重要的判斷力。",
+      "tags": [
+        "red lines",
+        "product reliability",
+        "founder judgment",
+        "AI safety"
+      ],
+      "url": "https://www.cbsnews.com/",
+      "source": "Dario Amodei (Anthropic)",
+      "sourceUrl": "https://www.cbsnews.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260307-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-07",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Satya Nadella — AI Token 是新電力，Context Engineering 是新管理學",
+      "summary": "Nadella 定義 AI 時代競爭力：token 是電力單位，管理者工作是 context engineering — 把公司知識結構化餵進 AI。",
+      "tags": [
+        "context engineering",
+        "token efficiency",
+        "data sovereignty",
+        "AI utility"
+      ],
+      "url": "https://www.constellationr.com/",
+      "source": "Satya Nadella (Microsoft)",
+      "sourceUrl": "https://www.constellationr.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260307-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-07",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Patrick Collison — Software Should Be Like Pizza",
+      "summary": "Stripe CEO 在 TBPN podcast 提出：軟體應該像 pizza 現點現做。Inference cost + 客製化生成改變 SaaS 根本經濟模型。",
+      "tags": [
+        "software economics",
+        "AI era",
+        "SaaS disruption",
+        "on-demand"
+      ],
+      "url": "https://www.businessinsider.com/stripe-patrick-collison-software-pizza-tbpn-podcast-2026",
+      "source": "Patrick Collison (Stripe)",
+      "sourceUrl": "https://www.businessinsider.com/stripe-patrick-collison-software-pizza-tbpn-podcast-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260307-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-07",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Paul Graham — The Brand Age",
+      "summary": "當技術讓產品之間的實質差異消失，剩下的就是品牌。PG 用瑞士鐘錶業演化論證品牌是產品趨同後的殘留力量，暗示軟體業正進入類似的品牌時代。",
+      "tags": [
+        "brand",
+        "moat",
+        "commoditization",
+        "golden age"
+      ],
+      "url": "https://paulgraham.com/brandage.html",
+      "source": "Paul Graham",
+      "sourceUrl": "https://paulgraham.com/brandage.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260307-sw-010",
       "radar": "software-dev",
       "date": "2026-03-07",
