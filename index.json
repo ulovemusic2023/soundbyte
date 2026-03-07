@@ -1,6 +1,68 @@
 {
   "entries": [
     {
+      "id": "20260307-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "dLLM-RL / TraDo (Gen-Verse)",
+      "summary": "ICLR 2026 — 首個完整 Diffusion LLM RL 框架，支援幾乎所有開源 discrete diffusion LM 的 SFT+RL 訓練，TraDo-8B-Thinking 是首個 long-CoT diffusion LM",
+      "tags": [
+        "diffusion llm",
+        "reinforcement learning",
+        "iclr 2026",
+        "training"
+      ],
+      "url": "https://github.com/Gen-Verse/dLLM-RL",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~16GB (8B FP16)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260307-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "EB-JEPA (Meta FAIR)",
+      "summary": "Yann LeCun 團隊開源 JEPA 教學庫，Image/Video/AC-Video JEPA 三範例，單 GPU 幾小時跑完，JEPA 架構入門教材",
+      "tags": [
+        "jepa",
+        "meta",
+        "self-supervised",
+        "world model",
+        "planning"
+      ],
+      "url": "https://github.com/facebookresearch/eb_jepa",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "單張 GPU",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260307-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "WanGP v10.98",
+      "summary": "GPU Poor 救星，一站式 AI 影片+TTS 生成器，支援 Wan 2.1/2.2、Hunyuan Video、LTX-2.3、Flux，整合 Qwen3 TTS、IndexTTS 2 雙人對話，6GB VRAM 即可",
+      "tags": [
+        "video generation",
+        "tts",
+        "gpu poor",
+        "comfyui",
+        "audio"
+      ],
+      "url": "https://github.com/deepbeepmeep/Wan2GP",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "6GB+",
+      "license": "Custom"
+    },
+    {
       "id": "20260307-ts-011",
       "radar": "tool-scout",
       "date": "2026-03-07",
