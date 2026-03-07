@@ -1,6 +1,208 @@
 {
   "entries": [
     {
+      "id": "20260307-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "imbue-ai/vet",
+      "summary": "本地 code review 工具，驗證 AI coding agent output，對照 conversation history 抓錯誤",
+      "tags": [
+        "code review",
+        "ai coding",
+        "developer tool"
+      ],
+      "url": "https://github.com/imbue-ai/vet",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com",
+      "stars": 107,
+      "createdDate": "2026-01-28",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "YishenTu/claudian",
+      "summary": "Obsidian plugin 嵌入 Claude Code，在 vault 裡面跟 AI 協作寫 code",
+      "tags": [
+        "coding agent",
+        "productivity"
+      ],
+      "url": "https://github.com/YishenTu/claudian",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 3376,
+      "createdDate": "2025-12-05",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "mierak/rmpc",
+      "summary": "Terminal MPD 音樂播放器，支援 album art 顯示，Rust 寫的",
+      "tags": [
+        "audio",
+        "terminal",
+        "music",
+        "rust"
+      ],
+      "url": "https://github.com/mierak/rmpc",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 2435,
+      "createdDate": "2024-03-12",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "Ashish-Patnaik/kokoclone",
+      "summary": "Kokoro TTS 架構加入 voice cloning 功能，餵入目標語音即可 clone",
+      "tags": [
+        "voice cloning",
+        "tts",
+        "audio"
+      ],
+      "url": "https://github.com/Ashish-Patnaik/kokoclone",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Ashish-Patnaik/kokoclone",
+      "stars": 37,
+      "createdDate": "2026-03-03",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "jnsahaj/lumen",
+      "summary": "美觀 git diff viewer + AI 自動生成 commit message + 變更摘要 CLI",
+      "tags": [
+        "cli tool",
+        "developer tool",
+        "ai coding"
+      ],
+      "url": "https://github.com/jnsahaj/lumen",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 1926,
+      "createdDate": "2024-10-28",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "max-sixty/worktrunk",
+      "summary": "Rust Git worktree 管理 CLI — 專門為平行跑多個 AI agent 設計",
+      "tags": [
+        "cli tool",
+        "coding agent",
+        "git",
+        "rust"
+      ],
+      "url": "https://github.com/max-sixty/worktrunk",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 2845,
+      "createdDate": "2025-10-17",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "paperclipai/paperclip",
+      "summary": "開源的 zero-human company 框架，AI agent 團隊完整處理工作流程",
+      "tags": [
+        "ai agent",
+        "automation",
+        "agent framework"
+      ],
+      "url": "https://github.com/paperclipai/paperclip",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 5982,
+      "createdDate": "2026-03-02",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "openai/symphony",
+      "summary": "OpenAI agent 工作編排工具 — 把專案工作拆成獨立的 autonomous implementation run",
+      "tags": [
+        "coding agent",
+        "agent framework",
+        "automation"
+      ],
+      "url": "https://github.com/openai/symphony",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 7631,
+      "createdDate": "2026-02-26",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "agentscope-ai/CoPaw",
+      "summary": "個人 AI 助理，一鍵部署在自己的機器或雲端。支援多個 chat app",
+      "tags": [
+        "ai agent",
+        "automation",
+        "self-hosted"
+      ],
+      "url": "https://github.com/agentscope-ai/CoPaw",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 9032,
+      "createdDate": "2026-02-24",
+      "license": ""
+    },
+    {
+      "id": "20260307-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-03-07",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "googleworkspace/cli",
+      "summary": "Google 官方 Workspace CLI — 一行指令操作 Drive、Gmail、Calendar、Sheets、Docs、Chat、Admin。內建 AI agent skills",
+      "tags": [
+        "cli tool",
+        "developer tool",
+        "ai agent",
+        "google"
+      ],
+      "url": "https://github.com/googleworkspace/cli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 14253,
+      "createdDate": "2026-03-02",
+      "license": ""
+    },
+    {
       "id": "20260307-fm-006",
       "radar": "founder-mind",
       "date": "2026-03-07",
