@@ -1,6 +1,126 @@
 {
   "entries": [
     {
+      "id": "20260307-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "meta-pytorch/OpenEnv",
+      "summary": "Meta RL 訓練執行環境框架，專為 world model 預測與規劃設計。",
+      "tags": [
+        "llm-training",
+        "reinforcement-learning",
+        "world-model"
+      ],
+      "url": "https://github.com/meta-pytorch/OpenEnv",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "訓練框架，依配置",
+      "license": "未確認"
+    },
+    {
+      "id": "20260307-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenMOSS/MOVA",
+      "summary": "復旦 MOSS 團隊影片+音訊同步生成模型，一次 inference 產出有聲影片。完全開源。",
+      "tags": [
+        "audio-music-ai",
+        "video-generation",
+        "lip-sync",
+        "multimodal"
+      ],
+      "url": "https://github.com/OpenMOSS/MOVA",
+      "source": "MAGI Archive + GitHub",
+      "sourceUrl": "https://github.com/OpenMOSS/MOVA",
+      "vram": "48GB (component offload) / 12GB (group offload, 需 77GB RAM)",
+      "license": "開源"
+    },
+    {
+      "id": "20260307-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "WavSLM (arXiv 2603.05299)",
+      "summary": "單串流語音語言模型，307M 參數，不需要文字預訓練就能做語音生成。支援 streaming 推理。",
+      "tags": [
+        "tts",
+        "speech-synthesis",
+        "speech-tokenizer",
+        "wavlm"
+      ],
+      "url": "https://arxiv.org/abs/2603.05299",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.05299",
+      "vram": "~1GB (307M params)",
+      "license": "未確認"
+    },
+    {
+      "id": "20260307-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "QwenLM/Qwen-Agent",
+      "summary": "Qwen 官方 agent 框架大更新，支援 MCP、Function Calling、RAG、Code Interpreter、Chrome extension。整合 Qwen3.5。",
+      "tags": [
+        "rag",
+        "llm-inference",
+        "function-calling",
+        "mcp",
+        "agent"
+      ],
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/QwenLM/Qwen-Agent",
+      "vram": "框架本身無需 VRAM，搭配 Qwen3.5-4B 約 4GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260307-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft BitNet (CPU 推理優化更新)",
+      "summary": "1-bit LLM 推理框架 1 月更新平行 kernel + embedding 量化，x86 CPU 加速 2.37-6.17x。100B 模型單顆 CPU 跑到人類閱讀速度。",
+      "tags": [
+        "llm-inference",
+        "quantization",
+        "1-bit",
+        "cpu-inference"
+      ],
+      "url": "https://github.com/microsoft/BitNet",
+      "source": "MAGI Archive + GitHub",
+      "sourceUrl": "https://github.com/microsoft/BitNet",
+      "vram": "70B → ~18GB (1.58-bit)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260307-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Foundry Local",
+      "summary": "微軟把 Azure AI Foundry 搬到本機跑，不需要 Azure 帳號。用 ONNX Runtime 做硬體加速，OpenAI-compatible API。",
+      "tags": [
+        "llm-inference",
+        "local-inference",
+        "onnx",
+        "microsoft"
+      ],
+      "url": "https://github.com/microsoft/Foundry-Local",
+      "source": "MAGI Archive + GitHub",
+      "sourceUrl": "https://github.com/microsoft/Foundry-Local",
+      "vram": "依模型，小模型 4GB 起",
+      "license": "MIT"
+    },
+    {
       "id": "20260306-ai-015",
       "radar": "ai-infra",
       "date": "2026-03-06",
