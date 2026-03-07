@@ -1,6 +1,176 @@
 {
   "entries": [
     {
+      "id": "20260307-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Threat Intelligence Platform 架構升級",
+      "summary": "使用 Workers + Durable Objects + 分片 SQLite 打造即時威脅情報平台。GraphQL + STIX2 匯出 + Firewall API 整合。",
+      "tags": [
+        "cloudflare",
+        "threat-intelligence",
+        "workers"
+      ],
+      "url": "https://blog.cloudflare.com/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/"
+    },
+    {
+      "id": "20260307-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenRAG: 生產級 Agentic RAG on Langflow",
+      "summary": "開源框架整合 Langflow + LangChain，從零到 production RAG 幾分鐘。支援 hybrid search、multi-agent routing。",
+      "tags": [
+        "rag",
+        "langflow",
+        "langchain"
+      ],
+      "url": "https://blog.langchain.com/",
+      "source": "LangChain Community",
+      "sourceUrl": "https://blog.langchain.com/"
+    },
+    {
+      "id": "20260307-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Netflix: 全球在地化分析現代化",
+      "summary": "Netflix Localization 團隊整合碎片化 analytics pipeline，為 300M+ 會員的多語言市場提供一致衡量標準。",
+      "tags": [
+        "data-pipeline",
+        "netflix",
+        "localization"
+      ],
+      "url": "https://netflixtechblog.com/",
+      "source": "Netflix Tech Blog",
+      "sourceUrl": "https://netflixtechblog.com/"
+    },
+    {
+      "id": "20260307-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "TypeScript 6.0 RC — JavaScript 版本最後一版",
+      "summary": "TypeScript 6.0 RC 是舊 JS codebase 最終版，後續 TS 7.0 遷移到 Go-based compiler，帶來平行 type checking。",
+      "tags": [
+        "typescript",
+        "compiler",
+        "go"
+      ],
+      "url": "https://devblogs.microsoft.com/typescript/",
+      "source": "TypeScript Team",
+      "sourceUrl": "https://devblogs.microsoft.com/typescript/"
+    },
+    {
+      "id": "20260307-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft: Platform Engineering 進入 Agentic AI 時代",
+      "summary": "Azure 平台工程從 IaC 轉向 AI agent 動態生成合規基礎設施。Copilot Spaces + 三層驗證 + Azure SRE Agent。",
+      "tags": [
+        "platform-engineering",
+        "azure",
+        "agentic-ai"
+      ],
+      "url": "https://devblogs.microsoft.com/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/"
+    },
+    {
+      "id": "20260307-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare: Endpoint to Prompt 統一資料安全架構",
+      "summary": "Cloudflare One 統一 endpoint → network → SaaS → AI prompt 資料安全模型：RDP clipboard 控制、DLP、Copilot CASB。",
+      "tags": [
+        "zero-trust",
+        "data-security",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/unified-data-security/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/unified-data-security/"
+    },
+    {
+      "id": "20260307-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Hugging Face: Modular Diffusers — 可組合式 Diffusion Pipeline",
+      "summary": "Diffusion pipeline 積木式 block 組裝，支援自定義 block 上傳 Hub、ComponentsManager、Mellon 視覺化編輯器。",
+      "tags": [
+        "diffusion",
+        "hugging-face",
+        "modular-diffusers"
+      ],
+      "url": "https://huggingface.co/blog/modular-diffusers",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/modular-diffusers"
+    },
+    {
+      "id": "20260307-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison: Agentic Manual Testing pattern",
+      "summary": "Agentic Engineering Patterns 指南新增 Agentic Manual Testing：coding agent 必須執行 code 來驗證，不能假設 LLM 輸出正確。",
+      "tags": [
+        "agentic-engineering",
+        "testing",
+        "ai-coding"
+      ],
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/"
+    },
+    {
+      "id": "20260307-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google GKE Inference Gateway + llm-d 推論排程",
+      "summary": "Google Cloud 在 GKE 推出 Inference Gateway，整合 llm-d 推論排程器，可針對不同工作負載調整 latency/throughput。",
+      "tags": [
+        "kubernetes",
+        "inference",
+        "llm-scheduling"
+      ],
+      "url": "https://cloud.google.com/kubernetes-engine/docs/release-notes",
+      "source": "Google Cloud",
+      "sourceUrl": "https://cloud.google.com/kubernetes-engine/docs/release-notes"
+    },
+    {
+      "id": "20260307-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler: Humans and Agents in Software Engineering Loops",
+      "summary": "Fowler 提出 on the loop 概念：人類負責 why loop，AI agent 跑 how loop，建造 harness 讓 agent 自我改進的 agentic flywheel。",
+      "tags": [
+        "supervisory-programming",
+        "harness-engineering",
+        "agentic-engineering"
+      ],
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/reduce-friction-ai/"
+    },
+    {
       "id": "20260307-ai-007",
       "radar": "ai-infra",
       "date": "2026-03-07",
