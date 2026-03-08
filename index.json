@@ -1,6 +1,92 @@
 {
   "entries": [
     {
+      "id": "20260308-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ichigo",
+      "summary": "Jan 團隊出的 realtime voice AI package。包含 ASR（22M 參數 Whisper-medium tokenizer）、實驗性 speech LLM（early fusion 技術，像開源版 Siri）、TTS（開發中）。ASR 可跑本地 batch/streaming inference，支援 FastAPI、multi-lang（EN/VI）。",
+      "tags": [
+        "speech-to-text",
+        "TTS",
+        "speech LLM",
+        "local inference",
+        "whisper"
+      ],
+      "url": "https://github.com/janhq/ichigo",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "< 2GB（ASR）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260308-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "SAM 3 (Segment Anything Model 3)",
+      "summary": "Meta 的 SAM 3 — 統一 image/video segmentation foundation model，新增 open-vocabulary text prompt（可用短句或 exemplar 圈出所有符合的物件）。848M 參數，detector + tracker 共用 vision encoder。支援 text/point/box/mask prompt，SA-Co benchmark 達 75-80% 人類水準（270K 概念）。",
+      "tags": [
+        "computer vision",
+        "segmentation",
+        "SAM",
+        "open-vocabulary",
+        "video tracking"
+      ],
+      "url": "https://github.com/facebookresearch/sam3",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~8GB（推測）",
+      "license": "SAM License"
+    },
+    {
+      "id": "20260308-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "voxtral.c",
+      "summary": "antirez（Redis 作者）寫的 Mistral Voxtral Realtime 4B pure C inference engine。zero dependency（除了 C stdlib），支援 MPS（Apple Silicon）+ BLAS 加速。chunked encoder + rolling KV cache = 無限長音訊。可 pipe ffmpeg、從 mic 即時轉錄、streaming C API。M3 Max 上 encoder 284ms、decoder 23.5ms/step，real-time 2.5x 速度。",
+      "tags": [
+        "speech-to-text",
+        "ASR",
+        "C",
+        "local inference",
+        "streaming",
+        "whisper",
+        "voxtral"
+      ],
+      "url": "https://github.com/antirez/voxtral.c",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "< 2GB（CPU/MPS）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260308-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-08",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "SubZeroClaw",
+      "summary": "超輕量 agentic daemon（380 行 C、54KB binary、2MB RAM）。skill.md + LLM + shell loop = autonomous agent。只有一個 tool（shell popen），透過系統指令操作一切（git/curl/ffmpeg/jq）。適合邊緣硬體（Pi 編譯 0.5s）。內建 watchdog + context compaction。反框架設計理念 — \"one agent, one skill, one device\"。",
+      "tags": [
+        "agentic framework",
+        "edge AI",
+        "C",
+        "autonomous agent",
+        "skill-based"
+      ],
+      "url": "https://github.com/jmlago/subzeroclaw",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0（LLM 跑 API）",
+      "license": "MIT"
+    },
+    {
       "id": "20260307-ai-010",
       "radar": "ai-infra",
       "date": "2026-03-07",
