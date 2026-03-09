@@ -1,6 +1,48 @@
 {
   "entries": [
     {
+      "id": "20260309-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Lightricks/ComfyUI-LTXVideo",
+      "summary": "ComfyUI LTX-2 video generation 擴展 — LTX-2 已內建 ComfyUI core,此 repo 提供額外 nodes + workflows。支援 T2V/I2V,distilled model 快速生成,IC-LoRA 支援 depth/pose/edge control + motion tracking。Two-stage pipeline 支援 spatial/temporal upscaling(x1.5/x2)。",
+      "tags": [
+        "image generation",
+        "video generation",
+        "comfyui",
+        "stable diffusion",
+        "controlnet"
+      ],
+      "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "32GB+",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260309-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "p-e-w/heretic",
+      "summary": "LLM 自動去審查工具 — 結合 directional ablation + TPE 參數優化(Optuna),全自動移除模型 safety alignment,無需昂貴 post-training。對 Gemma-3-12B 測試:refusal rate 97%→3%,KL divergence 僅 0.16(人工調參版本 0.45-1.04)。支援大部分 dense model + MoE,量化支援 bitsandbytes。",
+      "tags": [
+        "llm",
+        "alignment",
+        "quantization",
+        "optuna",
+        "abliteration"
+      ],
+      "url": "https://github.com/p-e-w/heretic",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "16GB+ (4-bit 量化)",
+      "license": "AGPL-3.0"
+    },
+    {
       "id": "20260308-ai-004",
       "radar": "ai-infra",
       "date": "2026-03-08",
