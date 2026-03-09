@@ -1,6 +1,132 @@
 {
   "entries": [
     {
+      "id": "20260309-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor Automations — 事件驅動 AI 編碼代理",
+      "summary": "Cursor 在 3/8 推出 Automations,把 AI coding 從被動對話變成主動背景任務。可以用 PR commits、Slack 訊息、PagerDuty 警報或定時器觸發 agent 執行 security review、bug triage、測試生成、dependency 更新。基於 Model Context Protocol (MCP) 提供安全的 tool integration,用「Trigger-Action」模型讓開發者監督結果,避免 agent sprawl。",
+      "tags": [
+        "agentic engineering",
+        "event-driven",
+        "MCP",
+        "cursor"
+      ],
+      "url": "https://cursor.com/blog/automations",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/automations"
+    },
+    {
+      "id": "20260309-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler — Knowledge Priming Pattern",
+      "summary": "Fowler 提出 Knowledge Priming 模式:把 project-specific context 整理成 versioned infrastructure files (像 .cursorrules, .clinerules)來 prime AI coding assistants。這是 context engineering 的實務化,直接處理 cognitive debt 問題。讓 AI agent 能預先載入專案規範、架構決策、程式碼風格,減少不必要的來回確認。屬於 harness engineering 類別。",
+      "tags": [
+        "knowledge priming",
+        "context engineering",
+        "harness engineering",
+        "cognitive debt"
+      ],
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html"
+    },
+    {
+      "id": "20260309-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google GKE Inference Gateway — LLM-D 排程",
+      "summary": "GKE 1.30+ 推出 LLM-D (LLM Distributed) scheduler,針對 inference-heavy 的 pod 做 device-aware bin packing,把推理請求 co-locate 在 H100/A100 GPU 或 TPU 上,減少 latency。支援 continuous batching + PagedAttention,提供四種 policy。Autopilot mode 讓管理完全自動化,benchmark 顯示在 8x H100 上 throughput 比標準 scheduler 高 3 倍。",
+      "tags": [
+        "kubernetes",
+        "llm-d inference scheduling",
+        "edge runtime",
+        "google cloud"
+      ],
+      "url": "https://cloud.google.com/kubernetes-engine/docs/release-notes",
+      "source": "Google Cloud",
+      "sourceUrl": "https://cloud.google.com/kubernetes-engine/docs/release-notes"
+    },
+    {
+      "id": "20260309-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Hugging Face Modular Diffusers",
+      "summary": "3/5-6 推出的 composable building blocks library,讓開發者可以模組化組裝 custom diffusion model pipelines,取代原本 monolithic 的固定 pipeline。方便實驗和客製化 image generation workflow。適合 local diffusion model 社群。",
+      "tags": [
+        "diffusion",
+        "ai_models",
+        "modular architecture",
+        "huggingface"
+      ],
+      "url": "https://huggingface.co/blog/modular-diffusers",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/modular-diffusers"
+    },
+    {
+      "id": "20260309-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Foundry — Durable Agent Orchestration",
+      "summary": "Microsoft Foundry 推出 Durable Functions + Agent Framework + SignalR 整合模式,用來做 long-running HITL (human-in-the-loop) workflows。適合 stateful、fault-tolerant 的 agent 工作流程,特別是企業級 AI 部署場景。提供內建 observability 跟 governance。",
+      "tags": [
+        "durable agent orchestration",
+        "microsoft foundry",
+        "ai_agent",
+        "HITL"
+      ],
+      "url": "https://devblags.microsoft.com/foundry/whats-new-in-microsoft-foundry-dec-2025-jan-2026/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-dec-2025-jan-2026/"
+    },
+    {
+      "id": "20260309-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare One — Unified Data Security",
+      "summary": "Cloudflare 推出 endpoint-to-prompt 資料安全模型,從使用者端點一路到 AI prompt 的完整防護。整合 Zero Trust、WAF、Cloudflare Tunnels,提供短期 key rotation、traffic moderation,保護 LLM inference endpoints。適合部署 edge AI 的企業。",
+      "tags": [
+        "unified data security",
+        "zero trust",
+        "edge runtime",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/unified-data-security/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/unified-data-security/"
+    },
+    {
+      "id": "20260309-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain × Langfuse — Skill Evaluation Pipeline",
+      "summary": "LangChain 透過 LangGraph stateful graph workflows + Langfuse observability,建立系統化的 AI agent skill evaluation pipeline。支援 checkpointing、conditional routing、multi-step process,可以追蹤 LLM calls、latency、custom metrics,適合 production-scale 的 agent 評估。",
+      "tags": [
+        "skill evaluation pipeline",
+        "langgraph",
+        "langfuse",
+        "ai_agent"
+      ],
+      "url": "https://langfuse.com/blog/2026-02-26-evaluate-ai-agent-skills",
+      "source": "LangChain Blog + Langfuse",
+      "sourceUrl": "https://langfuse.com/blog/2026-02-26-evaluate-ai-agent-skills"
+    },
+    {
       "id": "20260309-ai-002",
       "radar": "ai-infra",
       "date": "2026-03-09",
