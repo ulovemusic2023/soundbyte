@@ -6688,6 +6688,83 @@
       "url": "https://vercel.com/changelog",
       "source": "Vercel Changelog",
       "sourceUrl": "https://vercel.com/changelog"
+    },
+    {
+      "id": "20260309-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Yuan3.0 Ultra — 1T params 中文多模態 LLM",
+      "summary": "中文多模態 LLM,1515B 訓練後透過 LAEP (Layer-Adaptive Expert Pruning) 裁剪至 1010B,active params 68.8B。MoE 架構 103 層 Transformer,支援 RAG、複雜表格理解、摘要生成、tool invocation、Text-to-SQL,專為企業場景優化。提供 int4 量化版本 (約 250GB),預訓練效率提升 49%,fast-thinking RL 訓練準確率提升 16.33%。",
+      "tags": [
+        "llm inference",
+        "multimodal",
+        "mixtral",
+        "quantization",
+        "int4",
+        "rag",
+        "table understanding",
+        "text-to-sql",
+        "moe"
+      ],
+      "url": "https://github.com/Yuan-lab-LLM/Yuan3.0-Ultra",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "int4 量化約 250GB → 16GB 無法跑,需 cloud 或多卡",
+      "vramTier": "cloud-only",
+      "license": "Yuan 3.0 Model License"
+    },
+    {
+      "id": "20260309-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Helios — 14B 實時長視訊生成",
+      "summary": "實時長視訊生成模型,14B params,單 H100 跑 19.5 FPS 生成分鐘級視訊 (Ascend NPU 約 10 FPS),無需傳統 anti-drifting 策略 (self-forcing, keyframe sampling) 或加速技術 (KV-cache, quantization)。autoregressive 每 chunk 生成 33 幀,支援 T2V/I2V/V2V,day-0 支援 Diffusers/vLLM-Omni/SGLang/Ascend NPU,group offloading 可降至 ~6GB VRAM。",
+      "tags": [
+        "video generation",
+        "stable diffusion",
+        "diffusers",
+        "image generation",
+        "autoregressive",
+        "real-time",
+        "long video"
+      ],
+      "url": "https://github.com/PKU-YuanGroup/Helios",
+      "source": "Perplexity web search",
+      "sourceUrl": "https://github.com/PKU-YuanGroup/Helios",
+      "vram": "14B FP16 約 28GB → 16GB 需 int8/int4 量化或 group offloading (~6GB with offload)",
+      "vramTier": "quantize-ok",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260309-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Engram — AI Memory Engine",
+      "summary": "高性能 knowledge graph engine,單一 binary + 單一 .brain 檔案,整合 graph storage、BM25 full-text、HNSW vector search、bitmap filtering、inference engine (forward/backward chaining)、confidence lifecycle、peer-to-peer sync。內建 web UI,支援 HTTP REST、MCP (stdio)、gRPC、LLM tool-calling。無需 Docker、無需外部資料庫,支援 ONNX local embedder (multilingual-e5-small ~120MB)。",
+      "tags": [
+        "knowledge graph",
+        "vector database",
+        "semantic search",
+        "embedding",
+        "graphrag",
+        "rag",
+        "inference",
+        "mcp",
+        "bm25",
+        "hnsw"
+      ],
+      "url": "https://github.com/dx111ge/engram",
+      "source": "Perplexity web search",
+      "sourceUrl": "https://github.com/dx111ge/engram",
+      "vram": "CPU-based, 可選 GPU acceleration (wgpu/SIMD)",
+      "vramTier": "local-ready",
+      "license": "Free for personal/research, commercial requires paid license"
     }
   ]
 }
