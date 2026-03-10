@@ -6765,6 +6765,181 @@
       "vram": "CPU-based, 可選 GPU acceleration (wgpu/SIMD)",
       "vramTier": "local-ready",
       "license": "Free for personal/research, commercial requires paid license"
+    },
+    {
+      "id": "20260310-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-10",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Karpathy Autoresearch — 從 meat computer 到自主研究迴圈",
+      "summary": "AI agent 自己改 code、跑實驗、評估、保留改進，一晚跑 100 次，不問人類。Karpathy 說那個靠人工迭代的時代已經結束了。這是 agentic engineering 的具體實作：不是生成 code 就完事，而是 agent 自己執行、測試、修正到收斂。",
+      "tags": [
+        "agentic engineering",
+        "software 3.0",
+        "self-improving AI",
+        "singularity"
+      ],
+      "url": "https://github.com/karpathy/autoresearch",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://github.com/karpathy/autoresearch"
+    },
+    {
+      "id": "20260310-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-10",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Naval Asymmetric Upside — 2026 唯一決策濾鏡",
+      "summary": "「只下小輸大贏的賭注」— 下限有底、上限無頂的 convex bets。Vikas Kulkarni 回顧 5 年人生決策（COVID 抄底、自學演算法交易、關鍵 meeting、做 YouTube）發現全都符合這條規則。2026 他宣布只做通過這個濾鏡的事。",
+      "tags": [
+        "asymmetric upside",
+        "convex bets",
+        "mental model",
+        "risk-reward"
+      ],
+      "url": "https://www.youtube.com/watch?v=RqcKsR_mq14",
+      "source": "Naval Ravikant / Vikas Kulkarni",
+      "sourceUrl": "https://www.youtube.com/watch?v=RqcKsR_mq14"
+    },
+    {
+      "id": "20260310-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-10",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Dario Amodei — Disagreeing with the government is the most American thing",
+      "summary": "Anthropic CEO 拒絕 Pentagon 要求無限制使用 Claude 的合約，堅持兩條紅線：禁止用於國內大規模監控、禁止全自主武器。結果被列為「供應鏈風險」、合約取消。Amodei 回應：AI 技術進步比法律快，不能只靠「現行法規允許」就放行一切。OpenAI 同時簽下「任何合法用途」合約。",
+      "tags": [
+        "AI safety",
+        "red lines",
+        "leadership",
+        "integrity over growth"
+      ],
+      "url": "https://www.cbsnews.com/news/pentagon-anthropic-dario-amodei-cbs-news-interview-exclusive/",
+      "source": "Dario Amodei (Anthropic)",
+      "sourceUrl": "https://www.cbsnews.com/news/pentagon-anthropic-dario-amodei-cbs-news-interview-exclusive/"
+    },
+    {
+      "id": "20260310-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-10",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Sam Altman 承認 Pentagon 合約發布 sloppy",
+      "summary": "OpenAI 簽下 Pentagon 合約後遭用戶大規模出走（ChatGPT uninstall +300%），Altman 內部信承認「genuinely trying to de-escalate... but looked opportunistic and sloppy」。隨後修改合約條款，新增禁止用於商業購買資料、排除 NSA 使用 GPT。這是 operational integrity 的教訓：rushed announcement 會毀掉 trust。",
+      "tags": [
+        "crisis",
+        "trust",
+        "operational",
+        "integrity"
+      ],
+      "url": "https://www.cbsnews.com/news/pentagon-anthropic-dario-amodei-cbs-news-interview-exclusive/",
+      "source": "Sam Altman (OpenAI)",
+      "sourceUrl": "https://www.cbsnews.com/news/pentagon-anthropic-dario-amodei-cbs-news-interview-exclusive/"
+    },
+    {
+      "id": "20260310-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "FireRedVAD — SOTA 語音活動檢測",
+      "summary": "100+ 語言的語音活動檢測（VAD）與音訊事件檢測（AED）。在 FLEURS-VAD-102 達到 97.57% F1，超越 Silero-VAD、TEN-VAD、FunASR-VAD 和 WebRTC-VAD。支援 non-streaming/streaming VAD 以及 speech/singing/music 檢測。",
+      "tags": [
+        "speech recognition",
+        "voice activity detection",
+        "audio event detection",
+        "pytorch"
+      ],
+      "url": "https://github.com/FireRedTeam/FireRedVAD",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "<2GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260310-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "krasis — 16GB GPU 跑 80B MoE LLM",
+      "summary": "MoE LLM runtime，專為 VRAM 有限的消費級硬體優化。用 16GB GPU 跑 80B 參數模型（Qwen3-Coder-Next Q4），prefill 3324 tok/s、decode 14.93 tok/s（Ryzen 5900X + RTX 5080）。GPU 做 prefill、CPU 做 decode 的 hybrid 架構。",
+      "tags": [
+        "llm inference",
+        "moe",
+        "quantization",
+        "rust",
+        "pytorch"
+      ],
+      "url": "https://github.com/brontoguana/krasis",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260310-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "nanochat — Karpathy 的極簡 LLM 訓練框架",
+      "summary": "從 tokenization、pretraining、finetuning 到 inference 一條龍的極簡 LLM 訓練框架。設計給單 GPU node，程式碼簡潔可 hack。可用 8x H100 兩小時（$48）訓練出 GPT-2 級別模型，然後在 ChatGPT-like UI 裡聊天。",
+      "tags": [
+        "llm training",
+        "pytorch",
+        "gpt",
+        "fine-tuning",
+        "chatgpt"
+      ],
+      "url": "https://github.com/karpathy/nanochat",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "<8GB (inference)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260310-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-10",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ssd — 並行推測解碼引擎",
+      "summary": "LLM 並行推測解碼（Speculative Speculative Decoding）inference engine。在不同硬體上同時做 drafting 和 verification，消除 drafting overhead。支援 Qwen3/Llama3、Tensor Parallelism、PagedAttention、prefix caching。需 H100 級別硬體。",
+      "tags": [
+        "llm inference",
+        "speculative decoding",
+        "cuda",
+        "h100"
+      ],
+      "url": "https://github.com/tanishqkumar/ssd",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "需量化",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260310-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-10",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "MiroFish — 群體智能預測引擎",
+      "summary": "基於多智能體的 AI 預測引擎。提取現實世界種子資訊（新聞、政策、金融信號），構建高保真平行數字世界，讓成千上萬個具備獨立人格和長期記憶的智能體自由互動與演化，推演未來走向。適用於決策預演、政策模擬、創意沙盤。",
+      "tags": [
+        "multi-agent",
+        "prediction",
+        "simulation",
+        "rag",
+        "llm"
+      ],
+      "url": "https://github.com/666ghj/MiroFish",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "視 LLM 選擇",
+      "license": "Apache-2.0"
     }
   ]
 }
