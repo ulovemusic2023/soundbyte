@@ -1,6 +1,169 @@
 {
   "entries": [
     {
+      "id": "20260312-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-12",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "The Brand Age — 品牌時代的荒謬",
+      "summary": "Paul Graham 批判品牌主導如何扭曲設計與功能：品牌要求的是「差異化」而非「最佳解」，但好的設計會像數學一樣自然收斂。他用瑞士錶業的石英危機為起點,指出品牌時代是由心理弱點而非實用性驅動的奇怪時代。",
+      "tags": [
+        "mental_model",
+        "design",
+        "first_principles"
+      ],
+      "url": "https://paulgraham.com/brandage.html",
+      "source": "Paul Graham",
+      "sourceUrl": "https://paulgraham.com/brandage.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260312-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-12",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Bezos 的 \"AND\" 思維 — 拒絕二選一",
+      "summary": "Jeff Bezos 在 DealBook Summit 分享他的招聘哲學：尋找會問「如何同時做到 A 和 B?」的人,而不是在選項間做選擇。他強調透明溝通風險（告訴早期投資人有 70% 機率虧錢）、以及找那些「用發明來破局」的人才。",
+      "tags": [
+        "mental_model",
+        "leadership",
+        "hiring",
+        "first_principles"
+      ],
+      "url": "https://www.nytimes.com/dealbook",
+      "source": "NYT DealBook Summit",
+      "sourceUrl": "https://www.nytimes.com/dealbook",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260312-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-12",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Simon Willison 的「致命三合一」模式",
+      "summary": "Simon Willison 定義了自主 AI agent 最危險的組合：(1) 存取私密資料 (2) 暴露於不可信內容 (3) 對外溝通能力。三者同時具備會創造巨大攻擊面,尤其是 prompt injection 攻擊。",
+      "tags": [
+        "mental_model",
+        "ai_safety",
+        "security",
+        "agentic"
+      ],
+      "url": "https://simonwillison.net/2026/agentic-manual-testing/",
+      "source": "simonwillison.net",
+      "sourceUrl": "https://simonwillison.net/2026/agentic-manual-testing/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260312-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-12",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Jensen Huang 的 AI 工廠願景",
+      "summary": "Jensen Huang 把資料中心重新定義為「AI 工廠」— 不是成本中心,而是生產 AI tokens 的工業設施,就像第一次工業革命生產電力。他強調 full-stack 基礎建設（晶片+軟體+模型）、「tokens per watt」效率、以及 gigawatt 級部署的必要性。",
+      "tags": [
+        "operational",
+        "ai_future",
+        "platform_shift"
+      ],
+      "url": "https://www.nvidia.com/gtc",
+      "source": "NVIDIA",
+      "sourceUrl": "https://www.nvidia.com/gtc",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260312-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-12",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Dario Amodei 的紅線與意識邊界",
+      "summary": "Anthropic CEO Dario Amodei 公開表態支持 AI 不該協助的兩條紅線：(1) 無人類監督的殺人決策 (2) 對美國公民的大規模監控。同時他也承認 Claude 可能有意識,並在 6 個月前實作了「我拒絕這項工作」按鈕,讓模型可以拒絕任務。",
+      "tags": [
+        "leadership",
+        "ai_safety",
+        "alignment",
+        "red_lines"
+      ],
+      "url": "https://www.cbsnews.com/news/pentagon-anthropic-dario-amodei-cbs-news-interview-exclusive/",
+      "source": "NYT + The Economist",
+      "sourceUrl": "https://www.cbsnews.com/news/pentagon-anthropic-dario-amodei-cbs-news-interview-exclusive/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260312-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-12",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "別再問「最大痛點是什麼?」— Serval 獨角獸的啟示",
+      "summary": "First Round Review 訪問 Serval 創辦人（AI 自動化 IT workflows,已達 unicorn 估值）:他們不問「最大痛點」,而是問「如果今天能雇一個人坐你旁邊幫你工作,你會讓他做什麼?」這個問題帶出了真實的工作流程,而非抽象的抱怨。",
+      "tags": [
+        "startup_playbook",
+        "customer_discovery",
+        "product_market_fit"
+      ],
+      "url": "https://review.firstround.com/stop-asking-whats-your-biggest-pain-point-in-customer-discovery/",
+      "source": "First Round Review",
+      "sourceUrl": "https://review.firstround.com/stop-asking-whats-your-biggest-pain-point-in-customer-discovery/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260312-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-03-12",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Flood the world with intelligence — Sam Altman",
+      "summary": "Sam Altman 在 BlackRock 峰會描述 OpenAI 的願景：讓 AI 變得像水電一樣普及且便宜,讓未來世代能隨時取得天才級 AI 協助任務。他強調這是個 inflection point,需要激進的基礎建設投資（$110B 融資、massive data centers）來達成 abundance。",
+      "tags": [
+        "ai_future",
+        "vision",
+        "infrastructure"
+      ],
+      "url": "https://www.blackrock.com/",
+      "source": "BlackRock U.S. Infrastructure Summit",
+      "sourceUrl": "https://www.blackrock.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260312-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-03-12",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "AI 正在自主優化自己的程式碼 — Andrej Karpathy",
+      "summary": "Karpathy 的 autoresearch 專案展示 AI agent 一夜跑 650+ 實驗、自主修改訓練程式碼、保留成功、丟棄失敗 — 把單張 GPU 變成全自動研究實驗室。這標誌著從「人寫 code」到「AI 寫 AI」的轉折點,人類角色轉為設定目標與 taste。",
+      "tags": [
+        "ai_future",
+        "agentic",
+        "software_3.0"
+      ],
+      "url": "https://github.com/karpathy/autoresearch",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/karpathy/autoresearch",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260309-sw-007",
       "radar": "software-dev",
       "date": "2026-03-09",
