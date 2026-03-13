@@ -1,6 +1,148 @@
 {
   "entries": [
     {
+      "id": "20260313-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenRAG — 一站式 RAG 平台",
+      "summary": "Langflow 團隊推出的一站式 RAG 平台，整合 Langflow + Docling + OpenSearch。支援 Agentic RAG workflow、MCP 整合。",
+      "tags": [
+        "RAG",
+        "langchain",
+        "semantic_search",
+        "vector_database"
+      ],
+      "url": "https://github.com/langflow-ai/openrag",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "依 LLM 後端而定",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260313-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "comfyui-sg-llama-cpp — ComfyUI llama.cpp 整合節點",
+      "summary": "ComfyUI 節點整合 llama.cpp，支援 GGUF 模型推論、視覺模型、影片分析、PDF OCR。支援 Qwen3/Gemma3 等 vision model。",
+      "tags": [
+        "llm_inference",
+        "comfyui",
+        "vision",
+        "OCR",
+        "gguf"
+      ],
+      "url": "https://github.com/yipeeka/comfyui-sg-llama-cpp",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "依模型大小，7B 約 4-6GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260313-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DreamServer — 一鍵本地 AI 全堆疊",
+      "summary": "一鍵部署完整本地 AI 堆疊：LLM 推論、聊天、語音、Agent、工作流、RAG、圖片生成。自動偵測 GPU 選模型，13 個整合服務。",
+      "tags": [
+        "local_inference",
+        "self_hosted",
+        "all_in_one",
+        "voice",
+        "RAG"
+      ],
+      "url": "https://github.com/Light-Heart-Labs/DreamServer",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "依模型而定",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260313-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Habibi-TTS — 阿拉伯語方言統一 TTS",
+      "summary": "上海交大+中科院開發的阿拉伯語方言 TTS，統一模型支援 12 種方言。基於 F5-TTS 架構，zero-shot 語音合成。",
+      "tags": [
+        "text_to_speech",
+        "multilingual",
+        "zero_shot",
+        "arabic"
+      ],
+      "url": "https://github.com/SWivid/Habibi-TTS",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://arxiv.org/abs/2601.13802",
+      "vram": "~6-8GB",
+      "license": "MIT / CC-BY-NC-SA"
+    },
+    {
+      "id": "20260313-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ComfyUI-AudioX — 影片→音效/配樂生成節點",
+      "summary": "ComfyUI 自訂節點，用 AudioX 模型從影片生成音效和背景音樂。支援 V2A/V2M/TV2A/TV2M 四種模式，16GB VRAM 可跑。",
+      "tags": [
+        "audio_generation",
+        "comfyui",
+        "video_to_audio",
+        "music_generation"
+      ],
+      "url": "https://github.com/jinxishe/ComfyUI-AudioX",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~16GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260313-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FireRedASR2S — 工業級全家桶 ASR 系統",
+      "summary": "騰訊火紅團隊的 SOTA ASR 系統，支援語音辨識+VAD+語種辨識+標點預測。支援中文普通話+20 方言、英文、中英混搭，也能辨識唱歌歌詞。",
+      "tags": [
+        "speech_recognition",
+        "singing_asr",
+        "VAD",
+        "multilingual"
+      ],
+      "url": "https://github.com/FireRedTeam/FireRedASR2S",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.10420",
+      "vram": "~8-12GB (AED 版)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260313-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BitNet — 微軟 1-bit LLM 推論框架",
+      "summary": "微軟官方 1-bit LLM 推論框架，讓 1.58-bit 量化模型在 CPU 和 GPU 都能跑。x86 CPU 加速 2.37x-6.17x，省電 71-82%。100B 模型在單顆 CPU 跑到人類閱讀速度。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "1-bit",
+        "local_inference"
+      ],
+      "url": "https://github.com/microsoft/BitNet",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "極低（1-bit 量化，CPU 可跑）",
+      "license": "MIT"
+    },
+    {
       "id": "20260312-fm-001",
       "radar": "founder-mind",
       "date": "2026-03-12",
