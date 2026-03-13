@@ -1,6 +1,180 @@
 {
   "entries": [
     {
+      "id": "20260313-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "MALUS — Clean Room as a Service（諷刺 but 值得思考）",
+      "summary": "malus.sh 聲稱用 AI 做 clean-room 重新實作來繞過開源授權。雖是諷刺，但戳中真議題：coding agent 能否合法繞過 GPL/AGPL？",
+      "tags": [
+        "ai coding",
+        "code generation",
+        "clean-room reimplementation"
+      ],
+      "url": "https://malus.sh",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/12/malus/"
+    },
+    {
+      "id": "20260313-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Browser Rendering /crawl — 一個 API 抓整站",
+      "summary": "/crawl endpoint 一個 API call 爬完整個網站：HTML/Markdown/JSON 輸出，遵守 robots.txt，最大 100K 頁，支援 incremental crawling。",
+      "tags": [
+        "edge runtime",
+        "serverless",
+        "markdown for agents"
+      ],
+      "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
+      "source": "Cloudflare Changelog",
+      "sourceUrl": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/"
+    },
+    {
+      "id": "20260313-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Stateful API Vulnerability Scanner",
+      "summary": "AI 驅動有狀態 API 漏洞掃描器：Workers AI 從 OpenAPI schema 建構 call graph，模擬找 BOLA。Temporal + Rust + HashiCorp Vault。",
+      "tags": [
+        "api gateway",
+        "security",
+        "ai agent"
+      ],
+      "url": "https://blog.cloudflare.com/vulnerability-scanner/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/vulnerability-scanner/"
+    },
+    {
+      "id": "20260313-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pragmatic Engineer × Steve Yegge：From IDEs to AI Agents",
+      "summary": "Yegge 提出 AI 採用八級框架。新概念 Dracula Effect：AI 自動化簡單任務後人類只剩高強度工作 ~3 hrs/day。Anthropic prototype-as-product 10 天上線。",
+      "tags": [
+        "agentic engineering",
+        "supervisory programming",
+        "Dracula Effect"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/from-ides-to-ai-agents-with-steve",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/from-ides-to-ai-agents-with-steve"
+    },
+    {
+      "id": "20260313-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison：Coding After Coders",
+      "summary": "Willison 評析 NYT Magazine AI coding 深度報導（訪問 70+ 位工程師）。核心觀點：AI code 可被 test 驗證，程式設計師比其他行業幸運。Jevons paradox 樂觀論。",
+      "tags": [
+        "ai coding",
+        "agentic engineering",
+        "vibe coding"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/12/coding-after-coders/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/12/coding-after-coders/"
+    },
+    {
+      "id": "20260313-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Opus 4.6 Context Compaction — 對抗 Context Rot",
+      "summary": "Opus 4.6 新增 adaptive context compaction：長時間 agent 自動壓縮摘要過往 context，1M-token MRCR v2 達 76%。搭配 adaptive reasoning controls 省成本。",
+      "tags": [
+        "long-running agents",
+        "context engineering",
+        "context compaction"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/opus-4-6-context-compaction/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/opus-4-6-context-compaction/"
+    },
+    {
+      "id": "20260313-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic Code Review — 多 Agent 並行審查程式碼",
+      "summary": "Anthropic 為 Claude Code 推出 Code Review：多個 AI agent 同時分析不同面向，交叉驗證合併報告。比單 agent 少 20-30% escaped bugs。",
+      "tags": [
+        "ai agent",
+        "multi-agent",
+        "code generation",
+        "evals"
+      ],
+      "url": "https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/"
+    },
+    {
+      "id": "20260313-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "AWS Strands Labs — Agent Framework + Robotics 開源生態",
+      "summary": "AWS 推出 Strands Labs，包含 Strands Agents SDK 和三個實驗專案：Robots、Robots Sim、AI Functions。支援 Bedrock + multi-agent orchestration。",
+      "tags": [
+        "agent framework",
+        "multi-agent",
+        "function calling",
+        "AWS"
+      ],
+      "url": "https://strandsagents.com/docs/examples/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/aws-strands-agents/"
+    },
+    {
+      "id": "20260313-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare RFC 9457 Agent Error Pages — 省 98% Token 成本",
+      "summary": "Cloudflare 針對 AI agent 推出 RFC 9457 結構化錯誤回應：1xxx 錯誤改回傳 Markdown/JSON。比 HTML 少 64.5 倍 token。Web 基礎設施正式為 agent 時代做適配。",
+      "tags": [
+        "ai agent",
+        "markdown for agents",
+        "edge runtime",
+        "RFC 9457"
+      ],
+      "url": "https://blog.cloudflare.com/rfc-9457-agent-error-pages/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/rfc-9457-agent-error-pages/"
+    },
+    {
+      "id": "20260313-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-13",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "JetBrains Air — Agentic Development Environment 公開預覽",
+      "summary": "JetBrains 推出 Air（ADE），圍繞 AI agent 打造的開發環境。支援同時掛載多個 agent，用 ACP 做 vendor-neutral 整合。Fleet IDE 已死，Air 是 JetBrains 對 agentic coding 的全面押注。",
+      "tags": [
+        "agentic engineering",
+        "agent framework",
+        "ACP",
+        "ADE"
+      ],
+      "url": "https://blog.jetbrains.com/air/2026/03/air-launches-as-public-preview-a-new-wave-of-dev-tooling-built-on-26-years-of-experience/",
+      "source": "JetBrains Blog",
+      "sourceUrl": "https://blog.jetbrains.com/air/2026/03/air-launches-as-public-preview-a-new-wave-of-dev-tooling-built-on-26-years-of-experience/"
+    },
+    {
       "id": "20260313-ai-007",
       "radar": "ai-infra",
       "date": "2026-03-13",
