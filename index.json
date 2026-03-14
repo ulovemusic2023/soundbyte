@@ -1,6 +1,88 @@
 {
   "entries": [
     {
+      "id": "20260314-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp b8300 — Vigilant Mode",
+      "summary": "llama.cpp 三月新 release，引入 vigilant mode，持續優化 GGUF 推理效能。",
+      "tags": [
+        "llama.cpp",
+        "gguf",
+        "local inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8300",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8300",
+      "price": null,
+      "vram": "依模型",
+      "license": "MIT"
+    },
+    {
+      "id": "20260314-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Kandinsky 5.0 — Video+Image Diffusion",
+      "summary": "LMArena T2V 排行第一的開源模型。Lite 版 2B 可跑在 12GB GPU。",
+      "tags": [
+        "video generation",
+        "text to video",
+        "diffusion"
+      ],
+      "url": "https://github.com/kandinskylab/kandinsky-5",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "12GB+ (Lite NF4)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260314-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "FireRedASR2S — 工業級全方位 ASR",
+      "summary": "整合 ASR+VAD+LID+Punc，支持語音和歌聲辨識、中文 20+ 方言、100+ 語言。vLLM 加速已支援。",
+      "tags": [
+        "asr",
+        "speech recognition",
+        "singing",
+        "chinese"
+      ],
+      "url": "https://github.com/FireRedTeam/FireRedASR2S",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.10420",
+      "price": null,
+      "vram": "~8-16GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260314-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "microsoft/BitNet — 1-bit LLM Inference",
+      "summary": "微軟官方 1-bit LLM inference 框架，GitHub Trending #1。支持 CPU+GPU，100B 模型可在單顆 CPU 達人類閱讀速度。",
+      "tags": [
+        "1-bit",
+        "quantization",
+        "llm inference",
+        "local inference"
+      ],
+      "url": "https://github.com/microsoft/BitNet",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "極低 — CPU-first",
+      "license": "MIT"
+    },
+    {
       "id": "20260314-sw-010",
       "radar": "software-dev",
       "date": "2026-03-14",
