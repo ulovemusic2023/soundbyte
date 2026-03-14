@@ -8124,6 +8124,257 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260314-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "garrytan/gstack",
+      "summary": "YC 掌門人 Garry Tan 公開的 Claude Code workflow setup — 8 個 skill 把 AI 變成團隊",
+      "tags": [
+        "claude-code",
+        "coding-agent",
+        "vibe-coding"
+      ],
+      "url": "https://github.com/garrytan/gstack",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 6189,
+      "createdDate": "2026-03-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260314-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "tanweai/pua",
+      "summary": "爭議性 PUA 式 agent skill — star 速度驚人",
+      "tags": [
+        "ai-agent",
+        "prompt-engineering"
+      ],
+      "url": "https://github.com/tanweai/pua",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 6619,
+      "createdDate": "2026-03-08",
+      "license": null
+    },
+    {
+      "id": "20260314-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "aiming-lab/MetaClaw",
+      "summary": "讓 AI agent 從對話自我進化 — proxy + skill injection + idle RL",
+      "tags": [
+        "ai-agent",
+        "meta-learning"
+      ],
+      "url": "https://github.com/aiming-lab/MetaClaw",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 980,
+      "createdDate": "2026-03-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260314-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "gsd-build/gsd-2",
+      "summary": "Get Shit Done v2 — 完整 CLI agent with context management & crash recovery",
+      "tags": [
+        "coding-agent",
+        "context-engineering"
+      ],
+      "url": "https://github.com/gsd-build/gsd-2",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 990,
+      "createdDate": "2026-03-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260314-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "f/agentlytics",
+      "summary": "統一分析 16 種 AI coding editor 的 session/token/cost dashboard",
+      "tags": [
+        "analytics",
+        "productivity"
+      ],
+      "url": "https://github.com/f/agentlytics",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 324,
+      "createdDate": "2026-03-07",
+      "license": null
+    },
+    {
+      "id": "20260314-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "samuelfaj/distill",
+      "summary": "CLI 輸出壓縮器，省 token 99%，支援多種 local LLM provider",
+      "tags": [
+        "cli-tool",
+        "token-saving"
+      ],
+      "url": "https://github.com/samuelfaj/distill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 276,
+      "createdDate": "2026-03-06",
+      "license": null
+    },
+    {
+      "id": "20260314-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "huseyinstif/oculos",
+      "summary": "OS accessibility tree → JSON API + MCP server，Rust single binary",
+      "tags": [
+        "mcp",
+        "desktop-automation",
+        "rust"
+      ],
+      "url": "https://github.com/huseyinstif/oculos",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 94,
+      "createdDate": "2026-03-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260314-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "sentrux/sentrux",
+      "summary": "AI agent 即時架構圖 + 品質分數，Pure Rust + MCP",
+      "tags": [
+        "code-quality",
+        "architecture",
+        "rust"
+      ],
+      "url": "https://github.com/sentrux/sentrux",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 106,
+      "createdDate": "2026-03-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260314-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "wanshuiyin/ARIS",
+      "summary": "Auto-Research-In-Sleep — Claude Code skills 自動跑 ML research",
+      "tags": [
+        "claude-code",
+        "ml-research"
+      ],
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 484,
+      "createdDate": "2026-03-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260314-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "duoan/TorchCode",
+      "summary": "PyTorch 版 LeetCode — 核心模組實作練習 + auto-grading",
+      "tags": [
+        "pytorch",
+        "deep-learning",
+        "education"
+      ],
+      "url": "https://github.com/duoan/TorchCode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 1652,
+      "createdDate": "2026-03-04",
+      "license": null
+    },
+    {
+      "id": "20260314-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "jackwener/twitter-cli",
+      "summary": "Terminal 版 Twitter/X，不需 API key，可接 AI agent",
+      "tags": [
+        "cli-tool",
+        "social-media"
+      ],
+      "url": "https://github.com/jackwener/twitter-cli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 1753,
+      "createdDate": "2026-03-05",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260314-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "Justin0504/Aegis",
+      "summary": "AI agent runtime policy enforcement + cryptographic audit trail",
+      "tags": [
+        "agent-security",
+        "policy"
+      ],
+      "url": "https://github.com/Justin0504/Aegis",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 209,
+      "createdDate": "2026-03-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260314-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-03-14",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "flightlesstux/prompt-caching",
+      "summary": "Claude Code 自動 prompt caching，省 token 90%，zero config",
+      "tags": [
+        "claude-code",
+        "token-saving"
+      ],
+      "url": "https://github.com/flightlesstux/prompt-caching",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 62,
+      "createdDate": "2026-03-12",
+      "license": null
     }
   ]
 }
