@@ -1,6 +1,146 @@
 {
   "entries": [
     {
+      "id": "20260314-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MCTS-RAG — Yale NLP",
+      "summary": "Monte Carlo Tree Search integrated with RAG for multi-step reasoning, surpassing single-hop RAG limitations.",
+      "tags": [
+        "rag",
+        "mcts",
+        "reasoning"
+      ],
+      "url": "https://github.com/yale-nlp/MCTS-RAG",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": ">24GB",
+      "license": "Research"
+    },
+    {
+      "id": "20260314-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVIDIA NeMo Gym",
+      "summary": "RL environment framework for LLM training and alignment. Supports reward modeling and RLHF pipelines.",
+      "tags": [
+        "rlhf",
+        "llm training",
+        "reinforcement learning"
+      ],
+      "url": "https://github.com/NVIDIA-NeMo/Gym",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "Multi-GPU",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260314-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ALARM — Audio-Language Reasoning Model",
+      "summary": "4B audio-language model integrating Whisper + W2V-BERT + MuQ. Open-source SOTA on MMAU-speech benchmark.",
+      "tags": [
+        "audio language model",
+        "music understanding",
+        "reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2603.09556",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.09556",
+      "price": null,
+      "vram": "~10-16GB (FP16) / ~6GB (INT4)",
+      "license": null
+    },
+    {
+      "id": "20260314-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "BeatSync",
+      "summary": "Millisecond-accurate audio sync across devices. Useful for music playback, rehearsal, and multi-device monitoring.",
+      "tags": [
+        "audio sync",
+        "music playback",
+        "real-time"
+      ],
+      "url": "https://github.com/freeman-jiang/beatsync",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "N/A (CPU)",
+      "license": null
+    },
+    {
+      "id": "20260314-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Moshi — Kyutai Labs",
+      "summary": "Open-source speech dialogue foundation model with full-duplex interaction. Local-deployment friendly at ~7B params.",
+      "tags": [
+        "speech synthesis",
+        "voice dialogue",
+        "foundation model"
+      ],
+      "url": "https://github.com/kyutai-labs/moshi",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~6-8GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260314-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RIFT-SVC",
+      "summary": "Singing voice conversion using Rectified Flow Transformer. Faster inference than diffusion-based SVC with comparable quality.",
+      "tags": [
+        "singing voice conversion",
+        "rectified flow",
+        "transformer"
+      ],
+      "url": "https://github.com/Pur1zumu/RIFT-SVC",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "~4-8GB",
+      "license": null
+    },
+    {
+      "id": "20260314-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HQ-SVC (AAAI 2026)",
+      "summary": "Zero-shot singing voice conversion for low-resource scenarios. AAAI 2026 paper with open code using SSL features + pitch augmentation.",
+      "tags": [
+        "singing voice conversion",
+        "zero-shot",
+        "ssl"
+      ],
+      "url": "https://github.com/ShawnPi233/HQ-SVC",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "~4-6GB",
+      "license": "Research"
+    },
+    {
       "id": "20260313-sw-020",
       "radar": "software-dev",
       "date": "2026-03-13",
@@ -8,7 +148,12 @@
       "priority": "paradigm-shift",
       "title": "Shopify Liquid +53% 效能 — Autoresearch 重新定義 AI 輔助優化",
       "summary": "Shopify CEO Tobi Lütke 用 Karpathy Autoresearch 跑 120 次自動實驗，Liquid parse+render 快 53%、allocation 少 61%。完整 test suite 是 agent 自動優化的 unlock。",
-      "tags": ["autoresearch", "agentic engineering", "ai coding", "TDD as prompt engineering"],
+      "tags": [
+        "autoresearch",
+        "agentic engineering",
+        "ai coding",
+        "TDD as prompt engineering"
+      ],
       "url": "https://github.com/Shopify/liquid/pull/2056",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Mar/13/liquid/",
@@ -24,7 +169,11 @@
       "priority": "paradigm-shift",
       "title": "The Oil and Water Moment — AI 架構的根本矛盾",
       "summary": "deterministic + non-deterministic AI 共存的架構挑戰。傳統 guardrails 不適用動態 agent。需從 tool-centric 轉向 intent-centric thinking。",
-      "tags": ["architecture", "ai agent", "intent-centric design"],
+      "tags": [
+        "architecture",
+        "ai agent",
+        "intent-centric design"
+      ],
       "url": "https://www.infoq.com/articles/oil-water-moment-ai-architecture/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/articles/oil-water-moment-ai-architecture/",
@@ -40,7 +189,11 @@
       "priority": "medium",
       "title": "Axe — 12MB Go Binary 取代 AI Framework",
       "summary": "Unix 哲學 AI agent：TOML config、stdin/stdout pipe、cron/git hooks/CI。12MB、支援 Anthropic/OpenAI/Ollama + MCP。",
-      "tags": ["ai agent", "agent framework", "composable"],
+      "tags": [
+        "ai agent",
+        "agent framework",
+        "composable"
+      ],
       "url": "https://github.com/jrswab/axe",
       "source": "Hacker News",
       "sourceUrl": "https://news.ycombinator.com/item?id=47350516",
@@ -56,7 +209,12 @@
       "priority": "high",
       "title": "METR: LLM 通過 SWE-bench 但 Merge Rate 沒進步",
       "summary": "通過測試的 PR 只有 ~50% 被 maintainer 接受。Merge rate 改善速度比 benchmark 慢 ~9.6 pp/yr。",
-      "tags": ["llm evaluation", "benchmark", "evals", "ai coding"],
+      "tags": [
+        "llm evaluation",
+        "benchmark",
+        "evals",
+        "ai coding"
+      ],
       "url": "https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/",
       "source": "METR",
       "sourceUrl": "https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/",
@@ -72,7 +230,11 @@
       "priority": "medium",
       "title": "PagerDuty × LangChain — Agent Responder + MCP 整合",
       "summary": "30+ AI 合作夥伴生態，LangSmith 做 agent 可觀測性，Agent Responder template 自動分析 alert。",
-      "tags": ["ai agent", "observability", "mcp"],
+      "tags": [
+        "ai agent",
+        "observability",
+        "mcp"
+      ],
       "url": "https://www.pagerduty.com/newsroom/pagerduty-expands-ai-ecosystem-to-supercharge-ai-agents/",
       "source": "PagerDuty",
       "sourceUrl": "https://www.pagerduty.com/newsroom/pagerduty-expands-ai-ecosystem-to-supercharge-ai-agents/",
@@ -88,7 +250,11 @@
       "priority": "medium",
       "title": "Cursor 估值衝 $50B",
       "summary": "從 $29B 到 $50B。Replit $9B、Lovable $400M ARR。v2.6.18 Composer 1.5 有 bug。AI coding 估值超越傳統 SaaS。",
-      "tags": ["ai coding", "ai-assisted development", "vibe coding"],
+      "tags": [
+        "ai coding",
+        "ai-assisted development",
+        "vibe coding"
+      ],
       "url": "https://techfundingnews.com/cursor-ai-50b-valuation-talks-2b-arr/",
       "source": "TechFundingNews",
       "sourceUrl": "https://techfundingnews.com/cursor-ai-50b-valuation-talks-2b-arr/",
@@ -104,7 +270,11 @@
       "priority": "medium",
       "title": "NVIDIA AI-Q 拿下 DeepResearch Bench 冠軍",
       "summary": "Nemotron 3 Super 120B multi-agent system 奪冠。1M token context、Latent MoE、Multi-Token Prediction。",
-      "tags": ["multi-agent", "ai models", "mixture of experts"],
+      "tags": [
+        "multi-agent",
+        "ai models",
+        "mixture of experts"
+      ],
       "url": "https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench",
       "source": "NVIDIA × Hugging Face",
       "sourceUrl": "https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench",
@@ -120,7 +290,11 @@
       "priority": "medium",
       "title": "Meta × Hugging Face: OpenEnv 0.1 — Agent 環境標準化",
       "summary": "Secure sandbox 定義 agent tools/APIs/permissions。OpenEnv 0.1 RFC + Hub，整合 TorchForge/verl/TRL/SkyRL。",
-      "tags": ["ai agent", "sandbox", "reinforcement learning"],
+      "tags": [
+        "ai agent",
+        "sandbox",
+        "reinforcement learning"
+      ],
       "url": "https://www.infoq.com/jp/news/2026/03/hugging-face-openenv/",
       "source": "Meta × Hugging Face",
       "sourceUrl": "https://www.infoq.com/jp/news/2026/03/hugging-face-openenv/",
@@ -136,7 +310,10 @@
       "priority": "low",
       "title": "GreyNoise: Ollama 掃描量暴增 374%",
       "summary": "/api/tags 掃描暴增 374%。攻擊者掃描 Cline/Aider/Cursor config 偷 API key。AI infra 成攻擊面。",
-      "tags": ["security", "supply chain security"],
+      "tags": [
+        "security",
+        "supply chain security"
+      ],
       "url": "https://www.greynoise.io/resources/at-the-edge-clear-030926",
       "source": "GreyNoise",
       "sourceUrl": "https://www.greynoise.io/resources/at-the-edge-clear-030926",
@@ -152,7 +329,11 @@
       "priority": "low",
       "title": "ICLR 2026: Frontier Models Plateau at 25% Discovery-to-Application",
       "summary": "GPT-5.2、Gemini-3-Pro、Claude Opus 4.5 全 plateau ~25%。瓶頸是 knowledge gap identification。Agent 架構比 scale 關鍵。",
-      "tags": ["ai models", "reasoning", "benchmark"],
+      "tags": [
+        "ai models",
+        "reasoning",
+        "benchmark"
+      ],
       "url": "https://openreview.net/pdf/9c66740ac538279be627f4dc3695a084b430370b.pdf",
       "source": "ICLR 2026",
       "sourceUrl": "https://openreview.net/pdf/9c66740ac538279be627f4dc3695a084b430370b.pdf",
