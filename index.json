@@ -1,6 +1,211 @@
 {
   "entries": [
     {
+      "id": "20260314-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare Legacy → SASE 遷移策略指南",
+      "summary": "分級遷移指南：用 Cloudflare Access 包裹舊系統，SaaS 1-3 小時。",
+      "tags": [
+        "zero trust",
+        "platform engineering"
+      ],
+      "url": "https://blog.cloudflare.com/legacy-to-agile-sase/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/legacy-to-agile-sase/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVIDIA NeMo Agent Toolkit — DABStep #1",
+      "summary": "可重用工具生成拿下資料科學 agent benchmark 第一。",
+      "tags": [
+        "ai agent",
+        "benchmark",
+        "tool use"
+      ],
+      "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "QChunker：多 Agent 辯論式 RAG Chunking",
+      "summary": "Question-aware multi-agent debate 改善 RAG text chunking。",
+      "tags": [
+        "rag",
+        "multi-agent",
+        "chunking"
+      ],
+      "url": "https://arxiv.org/abs/2603.11650",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.11650",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Forrester 解析 Cloudflare Next.js Agentic Rewrite",
+      "summary": "Agent 高峰凌晨 3 點作業；會複製已知 CVE，需明確指示檢閱歷史漏洞。",
+      "tags": [
+        "agentic engineering",
+        "harness engineering",
+        "security"
+      ],
+      "url": "https://www.forrester.com/blogs/when-the-agents-take-the-keyboard-inside-cloudflares-next-js-rewrite/",
+      "source": "Forrester",
+      "sourceUrl": "https://www.forrester.com/blogs/when-the-agents-take-the-keyboard-inside-cloudflares-next-js-rewrite/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Monzo AI Agent × 3000+ Microservices",
+      "summary": "QCon London：AI agent 在 monorepo guardrails 上安全工作於 3000+ 微服務。",
+      "tags": [
+        "microservices",
+        "ai agent",
+        "ci/cd",
+        "monorepo"
+      ],
+      "url": "https://qconlondon.com/presentation/mar2026/move-fast-dont-break-trust-shipping-constantly-humans-and-beyond",
+      "source": "QCon London",
+      "sourceUrl": "https://qconlondon.com/presentation/mar2026/move-fast-dont-break-trust-shipping-constantly-humans-and-beyond",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DoorDash LLM 對話模擬器",
+      "summary": "LLM-powered 模擬器測試客服 chatbot，hallucination 降 ~90%。",
+      "tags": [
+        "llm evaluation",
+        "evals",
+        "ai agent",
+        "hallucination"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/doordash-llm-chatbot-simulator/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/doordash-llm-chatbot-simulator/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netflix Container Scaling Kernel 瓶頸：O(n)→O(1)",
+      "summary": "Linux kernel VFS global mount lock 瓶頸。Netflix 將 overlay mount O(n)→O(1)。",
+      "tags": [
+        "distributed systems",
+        "kubernetes",
+        "container",
+        "kernel"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/netflix-kernel-scaling-container/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/netflix-kernel-scaling-container/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic Imagine with Claude — 對話中生成互動圖表",
+      "summary": "Claude inline 互動視覺化 beta：對話中自動生成圖表、時間軸、模擬器。",
+      "tags": [
+        "multimodal",
+        "ai agent",
+        "visualization"
+      ],
+      "url": "https://the-decoder.com/claude-can-now-create-interactive-charts-and-visualizations-directly-in-chat/",
+      "source": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/claude-can-now-create-interactive-charts-and-visualizations-directly-in-chat/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Responses API 進化為 Agent 執行環境",
+      "summary": "Responses API 升級為完整 agent runtime：Shell、多語言、加密 context 壓縮、Agent Skills。",
+      "tags": [
+        "ai agent",
+        "function calling",
+        "tool use",
+        "agentic engineering"
+      ],
+      "url": "https://developers.openai.com/blog/skills-agents-sdk/",
+      "source": "OpenAI Developer Blog",
+      "sourceUrl": "https://developers.openai.com/blog/skills-agents-sdk/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "NanoClaw × Docker：AI Agent 安全隔離進入企業級時代",
+      "summary": "NanoClaw 與 Docker 整合，用 MicroVM Sandboxes 為 AI agent 提供企業級安全隔離。",
+      "tags": [
+        "ai agent",
+        "sandbox",
+        "container",
+        "security",
+        "MicroVM"
+      ],
+      "url": "https://www.docker.com/press-release/nanoclaw-partners-with-docker-to-run-ai-agents-safely/",
+      "source": "TechCrunch / Docker",
+      "sourceUrl": "https://techcrunch.com/2026/03/13/the-wild-six-weeks-for-nanoclaws-creator-that-led-to-a-deal-with-docker/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260314-ai-007",
       "radar": "ai-infra",
       "date": "2026-03-14",
