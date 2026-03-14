@@ -7965,6 +7965,165 @@
       "sourceUrl": "https://github.com/trending?since=daily",
       "vram": "視 LLM 選擇",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260314-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-14",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "CEO 也能當 coder：Tobi Lütke 用 AI agent 跑 120 次實驗，Liquid 引擎快 53%",
+      "summary": "Shopify CEO 用 pi-autoresearch 讓 AI agent 自動跑 120 輪實驗優化 Liquid 模板引擎。founder mode + AI agent = 超級個體。",
+      "tags": [
+        "founder-mode",
+        "recursive-self-improvement",
+        "ai-agent"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/13/liquid/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/13/liquid/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-14",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Dario Amodei 畫下紅線：Safety 是護城河，不是包袱",
+      "summary": "Anthropic CEO 拒絕五角大樓全面使用要求。AI 正處於技術的青春期，設紅線反而是長期競爭優勢。",
+      "tags": [
+        "ai-safety",
+        "red-lines",
+        "leadership"
+      ],
+      "url": "https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/",
+      "source": "TIME",
+      "sourceUrl": "https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-14",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Nadella 重組 Microsoft：壓縮 AI model → product 的組織距離",
+      "summary": "Satya Nadella 組織重整壓縮 AI model 到使用者體驗的距離，加速 agentic OS 策略。",
+      "tags": [
+        "organizational-design",
+        "platform-shift",
+        "agentic"
+      ],
+      "url": "https://blogs.microsoft.com/blog/2026/03/12/microsoft-announces-experiences-devices-leadership-changes/",
+      "source": "Microsoft Blog",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/03/12/microsoft-announces-experiences-devices-leadership-changes/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-14",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Sam Altman：用 intelligence 淹沒市場 — Infrastructure-first 的豪賭",
+      "summary": "Altman 在 BlackRock 峰會闡述：先砸基礎建設讓 intelligence 便宜到像水電。未來 CEO 角色是 supervising AI agents。",
+      "tags": [
+        "scaling",
+        "infrastructure-first",
+        "ai-leverage"
+      ],
+      "url": "https://www.youtube.com/watch?v=sTnl8O_BuuE",
+      "source": "YouTube (BlackRock Summit)",
+      "sourceUrl": "https://www.youtube.com/watch?v=sTnl8O_BuuE",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-14",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Karpathy autoresearch：630 行 Python + 一張 GPU = 一夜跑 100 次 ML 實驗",
+      "summary": "Karpathy 開源 autoresearch，AI agent 自動跑實驗。Agentic Engineering = 編排 agents，你是 oversight。",
+      "tags": [
+        "agentic-engineering",
+        "autoresearch",
+        "solo-founder"
+      ],
+      "url": "https://github.com/karpathy/autoresearch",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/karpathy/autoresearch",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-14",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Anthropic 成立 The Anthropic Institute",
+      "summary": "Jack Clark 領導研究 AI 經濟社會衝擊。用 insider data 做自我審視式研究。",
+      "tags": [
+        "ai-displacement",
+        "institutional-research",
+        "responsible-ai"
+      ],
+      "url": "https://www.anthropic.com/news/the-anthropic-institute",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/the-anthropic-institute",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-03-14",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Marc Andreessen 的激進資訊飲食",
+      "summary": "只看 X、practitioners podcast、AI 對話、舊書。其他全捨。",
+      "tags": [
+        "information-diet",
+        "opportunity-cost"
+      ],
+      "url": "https://www.benzinga.com/news/social-media/26/03/51156035/marc-andreessen-just-revealed-his-radical-daily-information-diet-and-it-doesnt-include-news",
+      "source": "Benzinga",
+      "sourceUrl": "https://www.benzinga.com/news/social-media/26/03/51156035/marc-andreessen-just-revealed-his-radical-daily-information-diet-and-it-doesnt-include-news",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260314-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-03-14",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Lenny Rachitsky：九個月堅持就過 Lindy Effect 門檻",
+      "summary": "前九個月不管數據週週發，過了 Lindy Effect 臨界點後 growth 自動 compound。",
+      "tags": [
+        "lindy-effect",
+        "newsletter",
+        "creator-leverage"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-i-built-a-1m-subscriber-newsletter",
+      "source": "Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-i-built-a-1m-subscriber-newsletter",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
