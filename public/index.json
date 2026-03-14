@@ -8457,6 +8457,142 @@
       "stars": 62,
       "createdDate": "2026-03-12",
       "license": null
+    },
+    {
+      "id": "20260314-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "xAI Macrohard 砍掉重練 — 挖角 Cursor 高層重建 AI Coding Tool",
+      "summary": "Musk 承認 xAI coding tool 第一次沒做對，從零重建。挖角 Cursor 前主管 Andrew Milich 和 Jason Ginsberg 領軍。11 位共同創辦人走了 9 位。",
+      "tags": [
+        "ai coding",
+        "agentic engineering",
+        "agent framework",
+        "xAI"
+      ],
+      "url": "https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/"
+    },
+    {
+      "id": "20260314-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 1M Token Context Window GA — 標準定價不再加價",
+      "summary": "Claude Opus 4.6 / Sonnet 4.6 的 1M token context window 正式 GA，取消超過 200K token 的加價。媒體上限提升至 600 張圖片/PDF。",
+      "tags": [
+        "context engineering",
+        "ai agent",
+        "long-running agents"
+      ],
+      "url": "https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/",
+      "source": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/anthropic-drops-the-surcharge-for-million-token-context-windows-making-opus-4-6-and-sonnet-4-6-far-cheaper/"
+    },
+    {
+      "id": "20260314-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "NVIDIA NemoClaw — 開源 AI Agent 企業平台 GTC 前夕曝光",
+      "summary": "NVIDIA 據報打造硬體無關的開源 AI agent 平台 NemoClaw，已向 Salesforce、Cisco 等展示早期版本。預計 GTC 2026 keynote 發表。",
+      "tags": [
+        "ai agent",
+        "agent framework",
+        "platform engineering"
+      ],
+      "url": "https://thenextweb.com/news/nvidia-is-reportedly-building-an-enterprise-ai-agent-platform",
+      "source": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/nvidia-is-reportedly-building-an-enterprise-ai-agent-platform"
+    },
+    {
+      "id": "20260314-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Perplexity Personal Computer — Mac Mini 變身 24/7 AI Agent",
+      "summary": "Perplexity 開發者大會發表 Personal Computer，Mac mini 變常駐 AI agent。連接 Gmail、Slack、GitHub 等，$200/月。",
+      "tags": [
+        "ai agent",
+        "local-first AI",
+        "agentic engineering"
+      ],
+      "url": "https://www.cultofmac.com/news/perplexity-personal-computer",
+      "source": "Cult of Mac",
+      "sourceUrl": "https://www.cultofmac.com/news/perplexity-personal-computer"
+    },
+    {
+      "id": "20260314-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Uber 內部 AI 開發揭密 — 84% 工程師用 Agentic Coding",
+      "summary": "Pragmatic Engineer 揭露 Uber AI 工具：Minion、Shepherd、uReview。84% 工程師用 agentic coding，Claude Code 3 個月翻倍（32%→63%）。",
+      "tags": [
+        "agentic engineering",
+        "ai coding",
+        "ai-assisted development"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/how-uber-uses-ai-for-development",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/how-uber-uses-ai-for-development"
+    },
+    {
+      "id": "20260314-sw-016",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anil Dash 回應 Coding After Coders — LLM 去除苦工留下靈魂",
+      "summary": "Anil Dash 回應 NYT 長篇報導：coding 是唯一 LLM 拿走 drudgery 留下 soulful parts 的領域，但科技業缺勞工團結文化。",
+      "tags": [
+        "supervisory programming",
+        "cognitive debt",
+        "ai coding"
+      ],
+      "url": "https://www.anildash.com/2026/03/13/coders-after-ai/",
+      "source": "Anil Dash",
+      "sourceUrl": "https://www.anildash.com/2026/03/13/coders-after-ai/"
+    },
+    {
+      "id": "20260314-sw-017",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Cursor 2.6.19 多重嚴重 Bug — Auto-Accept 無法關閉",
+      "summary": "Cursor 2.6.19 爆出 auto-accept 設定被移除、多 repo diff 消失、Agent 模式 Undo/Keep 消失等 bug，官方尚無修復時程。",
+      "tags": [
+        "ai coding",
+        "developer experience"
+      ],
+      "url": "https://forum.cursor.com/t/cursor-auto-accepted-changes-without-my-review-on-2-6-19/154713",
+      "source": "Cursor Forum",
+      "sourceUrl": "https://forum.cursor.com/t/cursor-auto-accepted-changes-without-my-review-on-2-6-19/154713"
+    },
+    {
+      "id": "20260314-sw-018",
+      "radar": "software-dev",
+      "date": "2026-03-14",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Cloudflare 支援 ASPA — BGP 路由安全新標準",
+      "summary": "Cloudflare 支援 ASPA 密碼學驗證 BGP AS_PATH 鏈，Radar 追蹤採用率。ARIN/RIPE NCC 已支援 ASPA 物件建立。",
+      "tags": [
+        "zero trust",
+        "supply chain security",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/cloudflare-aspa-standard/",
+      "source": "InfoQ / Cloudflare",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/cloudflare-aspa-standard/"
     }
   ]
 }
