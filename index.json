@@ -1,6 +1,115 @@
 {
   "entries": [
     {
+      "id": "20260315-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Taskade Manifesto：從 Code Generation 到 Runtime Generation",
+      "summary": "AI 的下一步不是產生 code 檔案，而是直接產生活的 runtime 系統。Workspace DNA 架構讓應用即時部署、自我演化。",
+      "tags": [
+        "runtime generation",
+        "vibe coding",
+        "Taskade",
+        "manifesto"
+      ],
+      "url": "https://www.taskade.com/blog/code-vs-runtime",
+      "source": "Taskade Blog",
+      "sourceUrl": "https://www.taskade.com/blog/code-vs-runtime"
+    },
+    {
+      "id": "20260315-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "NVIDIA Dynamo：Datacenter-Scale Agent Inference",
+      "summary": "NVIDIA 的 datacenter-scale inference framework，支援 SGLang/TRT-LLM/vLLM，專為 agent inference 的 planetary scale 設計。",
+      "tags": [
+        "NVIDIA",
+        "inference",
+        "Dynamo",
+        "scale out",
+        "vLLM"
+      ],
+      "url": "https://www.latent.space/p/nvidia-brev-dynamo",
+      "source": "Latent Space Podcast",
+      "sourceUrl": "https://www.latent.space/p/nvidia-brev-dynamo"
+    },
+    {
+      "id": "20260315-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google Research：Bayesian Teaching 讓 LLM 學會逐步更新信念",
+      "summary": "Bayesian Teaching 訓練法讓 LLM 學習最佳 Bayesian 系統的預測行為，在多回合互動中逐步推斷用戶偏好。",
+      "tags": [
+        "Bayesian",
+        "reasoning",
+        "Google Research",
+        "multi-step"
+      ],
+      "url": "https://research.google/blog/teaching-llms-to-reason-like-bayesians/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/google-bayesian-llm/"
+    },
+    {
+      "id": "20260315-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic Claude 離峰 2 倍用量促銷",
+      "summary": "3/13-3/27 所有用戶在離峰時段（ET 14:00-次日 08:00）獲得 2 倍 rolling usage limit，額外用量不計入每週上限。",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "usage limits",
+        "promotion"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47380647",
+      "source": "XDA Developers",
+      "sourceUrl": "https://www.xda-developers.com/claude-doubled-every-users-usage-limits-for-two-weeks/"
+    },
+    {
+      "id": "20260315-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Zvi 深度評測：GPT-5.4 是實質性升級",
+      "summary": "五段式 reasoning_effort 讓開發者按需調整推理深度；事實準確度降低 33% 錯誤率；coding 和寫作大幅提升。把 OpenAI 拉回競爭，但成本升至 $2951。",
+      "tags": [
+        "GPT-5.4",
+        "reasoning effort",
+        "benchmark",
+        "model review"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "source": "Zvi Mowshowitz",
+      "sourceUrl": "https://thezvi.substack.com/p/gpt-54-is-a-substantial-upgrade"
+    },
+    {
+      "id": "20260315-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "GitAgent：Git-Native AI Agent 開放標準",
+      "summary": "HN Show HN 熱門項目。用三個核心檔案（agent.yaml/SOUL.md/SKILL.md）定義 AI agent，放在 git repo 裡就是一個可攜式 agent。支援匯出到 Claude Code、OpenAI Agents SDK、CrewAI、Google ADK、LangChain。",
+      "tags": [
+        "ai agent",
+        "git-native",
+        "open standard",
+        "portable agent"
+      ],
+      "url": "https://www.gitagent.sh/",
+      "source": "Hacker News Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47376584"
+    },
+    {
       "id": "20260315-ai-015",
       "radar": "ai-infra",
       "date": "2026-03-15",
