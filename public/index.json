@@ -8,7 +8,13 @@
       "priority": "high",
       "title": "Voxtral Mini 4B Realtime — Streaming ASR",
       "summary": "Mistral 開源的即時語音轉文字模型，4B 參數，支援 13 語言，延遲低於 500ms，Apache-2.0 授權。",
-      "tags": ["speech recognition", "ASR", "real-time", "streaming", "multilingual"],
+      "tags": [
+        "speech recognition",
+        "ASR",
+        "real-time",
+        "streaming",
+        "multilingual"
+      ],
       "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
       "source": "Mistral AI",
       "sourceUrl": "https://docs.mistral.ai/capabilities/audio_transcription",
@@ -24,7 +30,12 @@
       "priority": "medium",
       "title": "Penguin-VL — Compact Vision-Language Model",
       "summary": "Tencent AI Lab 的 VLM（2B/8B），用 LLM 初始化 vision encoder，在 OCR 和文件理解大幅超越同級對手。",
-      "tags": ["vision-language", "OCR", "document AI", "video understanding"],
+      "tags": [
+        "vision-language",
+        "OCR",
+        "document AI",
+        "video understanding"
+      ],
       "url": "https://github.com/tencent-ailab/Penguin-VL",
       "source": "GitHub",
       "sourceUrl": "https://huggingface.co/papers/2603.06569",
@@ -40,7 +51,12 @@
       "priority": "high",
       "title": "The Infinite Crate — AI Music DAW Plugin",
       "summary": "Google Magenta 開源 DAW plugin，用 Lyria RealTime 模型即時生成音樂素材。VST3/AU 格式，需 Gemini API。",
-      "tags": ["music generation", "DAW plugin", "Lyria", "real-time audio"],
+      "tags": [
+        "music generation",
+        "DAW plugin",
+        "Lyria",
+        "real-time audio"
+      ],
       "url": "https://github.com/magenta/the-infinite-crate",
       "source": "MAGI//ARCHIVE",
       "sourceUrl": "https://audionewsroom.net/2026/03/googles-infinite-crate-now-open-source-a-never-ending-ai-sample-source-for-your-daw.html",
@@ -56,7 +72,12 @@
       "priority": "medium",
       "title": "ComfyUI-FLOAT — Audio-driven Talking Portrait",
       "summary": "ComfyUI 的 audio-driven talking portrait 節點，基於 FLOAT Flow Matching，支援情緒控制。",
-      "tags": ["talking portrait", "audio-driven", "ComfyUI", "flow matching"],
+      "tags": [
+        "talking portrait",
+        "audio-driven",
+        "ComfyUI",
+        "flow matching"
+      ],
       "url": "https://github.com/yuvraj108c/ComfyUI-FLOAT",
       "source": "GitHub Topics",
       "sourceUrl": "https://github.com/yuvraj108c/ComfyUI-FLOAT",
@@ -8657,6 +8678,147 @@
       "url": "https://www.infoq.com/news/2026/03/cloudflare-aspa-standard/",
       "source": "InfoQ / Cloudflare",
       "sourceUrl": "https://www.infoq.com/news/2026/03/cloudflare-aspa-standard/"
+    },
+    {
+      "id": "20260315-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GPT-5.4：Computer Use API + 可調式推理 + Tool Search",
+      "summary": "OpenAI 發布 GPT-5.4，加入 Computer Use API、五段式 reasoning_effort、Tool Search。272K context，SWE-bench ~80%。",
+      "tags": [
+        "ai agent",
+        "computer use",
+        "reasoning",
+        "GPT-5.4"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "source": "EM360Tech",
+      "sourceUrl": "https://em360tech.com/tech-articles/openai-gpt-5-4-update-professional-workflows"
+    },
+    {
+      "id": "20260315-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Microsoft Copilot Cowork：Anthropic Claude 進入 M365",
+      "summary": "Microsoft Copilot Cowork 整合 Anthropic Claude agentic harness，讓 AI agent 在 M365 內執行多步驟企業任務。",
+      "tags": [
+        "ai agent",
+        "enterprise",
+        "Copilot Cowork",
+        "Microsoft"
+      ],
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
+      "source": "Microsoft 365 Blog",
+      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/"
+    },
+    {
+      "id": "20260315-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison Pragmatic Summit：Agentic Engineering 的階段論",
+      "summary": "Willison 提出 AI 採用三階段、conformance-driven development、Lethal Trifecta 安全警示。",
+      "tags": [
+        "agentic engineering",
+        "conformance-driven development",
+        "prompt injection"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/14/pragmatic-summit/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/14/pragmatic-summit/"
+    },
+    {
+      "id": "20260315-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GlassWorm 供應鏈攻擊：72 個 Open VSX 擴展 + 151 GitHub repos",
+      "summary": "GlassWorm 利用 transitive extensionPack 在 72 個 VSX 擴展暗藏惡意 loader，擴散到 GitHub 和 npm。",
+      "tags": [
+        "supply chain security",
+        "VSX extensions",
+        "GlassWorm"
+      ],
+      "url": "https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html"
+    },
+    {
+      "id": "20260315-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Emacs & Vim in the Age of AI",
+      "summary": "Batsov 分析經典編輯器在 AI 時代的定位：AI 降低學習門檻，Org-mode/Magit 等獨特 workflow 維持價值。",
+      "tags": [
+        "Emacs",
+        "Vim",
+        "developer experience",
+        "AI coding"
+      ],
+      "url": "https://batsov.com/articles/2026/03/09/emacs-and-vim-in-the-age-of-ai/",
+      "source": "Bozhidar Batsov",
+      "sourceUrl": "https://batsov.com/articles/2026/03/09/emacs-and-vim-in-the-age-of-ai/"
+    },
+    {
+      "id": "20260315-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HuggingFace Ulysses Sequence Parallelism：百萬 token 訓練",
+      "summary": "HuggingFace 整合 Ulysses SP 到 Transformers/TRL，實現多 GPU 百萬 token context 訓練。",
+      "tags": [
+        "Hugging Face",
+        "sequence parallelism",
+        "long context",
+        "distributed training"
+      ],
+      "url": "https://huggingface.co/blog/ulysses-sp",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/ulysses-sp"
+    },
+    {
+      "id": "20260315-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LeRobot v0.5.0：機器人學習框架全面擴展",
+      "summary": "HuggingFace LeRobot v0.5.0：200+ PR、PI0 policy、EnvHub 整合，開源 robotics 生態核心。",
+      "tags": [
+        "Hugging Face",
+        "robotics",
+        "LeRobot"
+      ],
+      "url": "https://huggingface.co/blog/lerobot-release-v050",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/lerobot-release-v050"
+    },
+    {
+      "id": "20260315-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Vercel next-forge 6：內建 Agent Skill + Bun 預設",
+      "summary": "next-forge 6 內建 agent skill 讓 AI 理解專案架構、Bun 預設、graceful degradation。",
+      "tags": [
+        "Vercel",
+        "Next.js",
+        "Turborepo",
+        "agent skills framework"
+      ],
+      "url": "https://vercel.com/changelog/next-forge-6",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/next-forge-6"
     }
   ]
 }
