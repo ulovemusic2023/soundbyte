@@ -9064,6 +9064,151 @@
       "url": "https://www.infoq.com/news/2026/03/ai-bot-github-actions-exploit/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/03/ai-bot-github-actions-exploit/"
+    },
+    {
+      "id": "20260316-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "NVIDIA GTC 2026：Vera Rubin GPU 平台正式亮相",
+      "summary": "Jensen Huang 發表 GTC 2026 主題演講，揭曉 Vera Rubin GPU — 推理性能 5x、token 成本降 10x、VR200 NVL144 144 GPU 機架。發表 AI Layer Cake 五層框架，宣告全端 AI 基礎設施轉型。",
+      "tags": [
+        "nvidia",
+        "vera-rubin",
+        "ai-infrastructure",
+        "gtc",
+        "gpu"
+      ],
+      "url": "https://www.nvidia.com/gtc/",
+      "source": "Oplexa Insights",
+      "sourceUrl": "https://oplexa.com/jensen-huang-gtc-2026-keynote-nvidia-announcements/"
+    },
+    {
+      "id": "20260316-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Karpathy 對全美 342 種職業做 AI 曝險評分",
+      "summary": "用 BLS 資料打 0-10 AI 自動化曝險度。42% 職位（5990 萬人、$3.7 兆年薪）在 7 分以上。螢幕工作最危險，體力勞動最安全。後來刪了 repo 稱被過度解讀。",
+      "tags": [
+        "karpathy",
+        "ai-exposure",
+        "labor-market",
+        "automation"
+      ],
+      "url": "https://awesomeagents.ai/news/karpathy-ai-job-exposure-us-economy/",
+      "source": "AwesomeAgents",
+      "sourceUrl": "https://awesomeagents.ai/news/karpathy-ai-job-exposure-us-economy/"
+    },
+    {
+      "id": "20260316-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "How I write software with LLMs — 架構力 > 寫 code 力",
+      "summary": "Stavros 分享完整 LLM 開發 workflow，核心：工程技能從寫 code 轉移到設計架構。熟悉技術棧可維持數萬行品質，附完整 annotated session。HN 216 分。",
+      "tags": [
+        "llm-workflow",
+        "ai-coding",
+        "architecture",
+        "best-practices"
+      ],
+      "url": "https://stavros.io/posts/how-i-write-software-with-llms/",
+      "source": "Stavros Korokithakis",
+      "sourceUrl": "https://stavros.io/posts/how-i-write-software-with-llms/"
+    },
+    {
+      "id": "20260316-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Agentfile：單一 contract.yaml 統管多 AI agent 設定",
+      "summary": "用一份 YAML 定義指令，自動為 Claude/Cursor/Copilot 生成原生格式。支援 AGENTS.md、monorepo override，解決多 agent 設定碎片化。",
+      "tags": [
+        "agentfile",
+        "ai-agent-config",
+        "developer-tools",
+        "yaml"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47389966",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47389966"
+    },
+    {
+      "id": "20260316-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison：What is Agentic Engineering?",
+      "summary": "Agentic engineering patterns 指南入口文章上 HN 首頁（137 分）。定義人類設計 harness + AI 處理 implementation 的模式，強調 TDD-first 和 context engineering。",
+      "tags": [
+        "agentic-engineering",
+        "simon-willison",
+        "harness",
+        "tdd"
+      ],
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/"
+    },
+    {
+      "id": "20260316-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "HN 大討論：AI 輔助 coding 在 2026.3 的真實狀態",
+      "summary": "Ask HN（308 分 / 500 留言）收集真實 AI coding 經驗。共識：incremental + plan mode 有效，cross-system bug 仍弱，90% 可行但最後 10% 需人類。",
+      "tags": [
+        "ai-coding",
+        "developer-experience",
+        "hacker-news",
+        "survey"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47388646",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47388646"
+    },
+    {
+      "id": "20260316-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Stop Sloppypasta — 反 raw LLM 輸出貼上運動",
+      "summary": "HN 342 分熱文。貼原始 LLM 輸出等同 filibuster，寫作即思考，外包 LLM 造成認知債務。引用 MIT 和 Anthropic 研究。",
+      "tags": [
+        "sloppypasta",
+        "cognitive-debt",
+        "ai-communication",
+        "best-practices"
+      ],
+      "url": "https://stopsloppypasta.ai",
+      "source": "stopsloppypasta.ai",
+      "sourceUrl": "https://stopsloppypasta.ai"
+    },
+    {
+      "id": "20260316-sw-016",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Quillx：AI 參與軟體開發的開放披露標準",
+      "summary": "GitHub 新 open standard，用 authorship language 標註 AI 參與程度，透明但不帶批判。",
+      "tags": [
+        "quillx",
+        "ai-disclosure",
+        "open-standard",
+        "transparency"
+      ],
+      "url": "https://github.com/QAInsights/Quillx",
+      "source": "QAInsights",
+      "sourceUrl": "https://github.com/QAInsights/Quillx"
     }
   ]
 }
