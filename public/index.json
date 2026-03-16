@@ -8928,6 +8928,142 @@
       "url": "https://vercel.com/changelog/next-forge-6",
       "source": "Vercel Changelog",
       "sourceUrl": "https://vercel.com/changelog/next-forge-6"
+    },
+    {
+      "id": "20260316-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 2.6: Automations Marketplace + JetBrains ACP",
+      "summary": "Cursor 2.6 帶來 Cursor Automations、30+ Marketplace 插件、JetBrains ACP 整合",
+      "tags": [
+        "ai agent",
+        "event-driven agent triggers",
+        "ai coding",
+        "mcp"
+      ],
+      "url": "https://cursor.com/changelog",
+      "source": "Cursor",
+      "sourceUrl": "https://releasebot.io/updates/cursor"
+    },
+    {
+      "id": "20260316-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "SPD-RAG: Sub-agent Per Document RAG Architecture",
+      "summary": "每份文件一個 sub-agent 的 RAG 架構，比標準 RAG 高 76%，僅需 38% API 成本",
+      "tags": [
+        "rag",
+        "multi-agent",
+        "agentic",
+        "langchain"
+      ],
+      "url": "https://arxiv.org/abs/2603.08329",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.08329"
+    },
+    {
+      "id": "20260316-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gemini CLI Plan Mode + codebase_investigator",
+      "summary": "Google Gemini CLI v0.33.1 新增 Plan Mode 和 codebase_investigator 子 agent",
+      "tags": [
+        "ai coding",
+        "context engineering",
+        "ai agent"
+      ],
+      "url": "https://developers.googleblog.com/plan-mode-now-available-in-gemini-cli/",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/plan-mode-now-available-in-gemini-cli/"
+    },
+    {
+      "id": "20260316-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Agent Framework + Aspire + MCP Multi-Agent Example",
+      "summary": "Microsoft 發布 Agent Framework + Aspire + MCP 完整 multi-agent 範例",
+      "tags": [
+        "multi-agent",
+        "agent framework",
+        "mcp"
+      ],
+      "url": "https://developer.microsoft.com/blog/build-a-real-world-example-with-microsoft-agent-framework-microsoft-foundry-mcp-and-aspire",
+      "source": "Microsoft Developer Blog",
+      "sourceUrl": "https://developer.microsoft.com/blog/build-a-real-world-example-with-microsoft-agent-framework-microsoft-foundry-mcp-and-aspire"
+    },
+    {
+      "id": "20260316-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MCP C# SDK v1.0 Released",
+      "summary": "Microsoft MCP C# SDK v1.0，完整支援 MCP Specification",
+      "tags": [
+        "mcp",
+        "model context protocol"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/mcp-csharp-v1/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/mcp-csharp-v1/"
+    },
+    {
+      "id": "20260316-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AWS Strands Labs: Agentic Robotics + AI Functions",
+      "summary": "AWS 推出 Strands Labs，agentic robotics + specification-driven AI Functions",
+      "tags": [
+        "ai agent",
+        "agentic",
+        "agent framework"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/aws-strands-agents/",
+      "source": "InfoQ / AWS",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/aws-strands-agents/"
+    },
+    {
+      "id": "20260316-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "HuggingFace Storage Buckets for ML Artifacts",
+      "summary": "Hugging Face Hub 推出 mutable S3-like Storage Buckets",
+      "tags": [
+        "ai models",
+        "devops_infra"
+      ],
+      "url": "https://huggingface.co/blog/storage-buckets",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/storage-buckets"
+    },
+    {
+      "id": "20260316-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "hackerbot-claw AI Bot Attacks GitHub Actions CI/CD",
+      "summary": "AI bot 大規模攻擊 DataDog、Microsoft 等 repo 的 GitHub Actions",
+      "tags": [
+        "supply chain security",
+        "ci/cd",
+        "github actions"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/ai-bot-github-actions-exploit/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/ai-bot-github-actions-exploit/"
     }
   ]
 }
