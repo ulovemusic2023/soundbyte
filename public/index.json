@@ -9312,6 +9312,198 @@
       "url": "https://github.com/QAInsights/Quillx",
       "source": "QAInsights",
       "sourceUrl": "https://github.com/QAInsights/Quillx"
+    },
+    {
+      "id": "20260317-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler: Regenerative Software + Supervisory Engineering",
+      "summary": "Chad Fowler 提出「再生式軟體」概念——AI 時代的挑戰不再是產出 code，而是安全替換。搭配 Annie Vella 的研究，軟體工程師正從寫 code 轉向「監督式工程」——指揮 AI、評估輸出、修正錯誤的 middle loop。",
+      "tags": [
+        "regenerative-software",
+        "supervisory-engineering",
+        "middle-loop",
+        "ai-coding",
+        "architecture"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-03-16.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-03-16.html"
+    },
+    {
+      "id": "20260317-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain: The Anatomy of an Agent Harness",
+      "summary": "LangChain 定義 Agent = Model + Harness 公式。Harness 包含 system prompts、filesystem persistence（AGENTS.md）、sandbox、subagent spawning 和 Ralph Loop（防止 agent 提前停止的續航機制）。",
+      "tags": [
+        "agent-harness",
+        "langchain",
+        "ralph-loop",
+        "multi-agent",
+        "filesystem-persistence"
+      ],
+      "url": "https://blog.langchain.com/the-anatomy-of-an-agent-harness/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/the-anatomy-of-an-agent-harness/"
+    },
+    {
+      "id": "20260317-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google Gemini Embedding 2: 首個原生多模態 Embedding 模型",
+      "summary": "將文字、圖片、影片、音訊、文件映射到同一向量空間。支援 100+ 語言、8192 token、120 秒影片。3072 維向量可壓縮至 128 維（Matryoshka），RAG 和跨模態搜尋的 game changer。",
+      "tags": [
+        "gemini-embedding-2",
+        "multimodal-embedding",
+        "rag",
+        "vector-search",
+        "google"
+      ],
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-embedding-2-preview",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/"
+    },
+    {
+      "id": "20260317-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NVIDIA Vera CPU: 專為 Agentic AI 打造的 88 核處理器",
+      "summary": "GTC 2026 發表的 Arm 架構 CPU，88 個 Olympus 核心支援 176 執行緒、1.5TB LPDDR5X、1.8TB/s NVLink-C2C。Vera CPU Rack 整合 256 顆 CPU 提供 22,500 個並行環境，專攻 agent sandbox 執行。",
+      "tags": [
+        "nvidia",
+        "vera-cpu",
+        "olympus-core",
+        "agentic-ai",
+        "arm",
+        "gtc-2026"
+      ],
+      "url": "https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai",
+      "source": "NVIDIA Newsroom",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai"
+    },
+    {
+      "id": "20260317-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NVIDIA 擴展開放模型家族覆蓋 Agentic + Healthcare AI",
+      "summary": "Nemotron 系列開放模型新增 agentic、物理 AI 和醫療健康應用支援。CrowdStrike 用 Nemotron + NeMo Data Designer 做 agentic MDR，5 倍調查速度。",
+      "tags": [
+        "nvidia",
+        "nemotron",
+        "open-models",
+        "agentic-ai",
+        "healthcare-ai"
+      ],
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-open-model-families-to-power-the-next-wave-of-agentic-physical-and-healthcare-ai",
+      "source": "NVIDIA Newsroom",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-expands-open-model-families-to-power-the-next-wave-of-agentic-physical-and-healthcare-ai"
+    },
+    {
+      "id": "20260317-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Attack Surface Intelligence + Mastercard 整合",
+      "summary": "自動發現影子網域和風險態勢，AI 輔助修復建議。與 Mastercard 合作整合威脅情報，預計 Q3 2026 開放 preview。",
+      "tags": [
+        "cloudflare",
+        "attack-surface",
+        "mastercard",
+        "security",
+        "shadow-domains"
+      ],
+      "url": "https://blog.cloudflare.com/attack-surface-intelligence/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/attack-surface-intelligence/"
+    },
+    {
+      "id": "20260317-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain Deep Agents: 多步驟 Agent 的結構化 Runtime",
+      "summary": "基於 LangGraph 的 agent harness runtime，內建 planning（write_todos）、filesystem 工具、subagent spawning、sandbox 執行和 Memory Store。支援 streaming 和 human-in-the-loop。",
+      "tags": [
+        "langchain",
+        "deep-agents",
+        "langgraph",
+        "agent-runtime",
+        "planning",
+        "subagent"
+      ],
+      "url": "https://www.marktechpost.com/2026/03/15/langchain-releases-deep-agents-a-structured-runtime-for-planning-memory-and-context-isolation-in-multi-step-ai-agents/",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/03/15/langchain-releases-deep-agents-a-structured-runtime-for-planning-memory-and-context-isolation-in-multi-step-ai-agents/"
+    },
+    {
+      "id": "20260317-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Security Overview Dashboard 全新推出",
+      "summary": "統一安全狀態面板，Detection Tools 模組、Contextual DNS Insights（偵測 dead server、dangling records）。即將支援帳號級全局視圖。",
+      "tags": [
+        "cloudflare",
+        "security-dashboard",
+        "dns",
+        "detection-tools"
+      ],
+      "url": "https://blog.cloudflare.com/security-overview-dashboard/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/security-overview-dashboard/"
+    },
+    {
+      "id": "20260317-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HuggingFace: 16 個開源 RL 訓練庫的經驗教訓",
+      "summary": "深入比較 16 個開源 RL 訓練庫的 token throughput、記憶體效率和可擴展性。為 RLHF/DPO 選型提供實測數據參考。",
+      "tags": [
+        "huggingface",
+        "reinforcement-learning",
+        "rlhf",
+        "open-source",
+        "training"
+      ],
+      "url": "https://huggingface.co/blog/async-rl-training-landscape",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/async-rl-training-landscape"
+    },
+    {
+      "id": "20260317-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 緊急 WAF 規則：Ivanti Endpoint Manager Mobile RCE",
+      "summary": "針對 CVE-2026-1281 和 CVE-2026-1340 的緊急 WAF 規則，阻擋未經認證的遠端程式碼執行。另新增 CSP header XSS 注入攔截規則。",
+      "tags": [
+        "cloudflare",
+        "waf",
+        "ivanti",
+        "cve",
+        "xss",
+        "emergency-patch"
+      ],
+      "url": "https://developers.cloudflare.com/changelog/post/2026-03-12-emergency-waf-release/",
+      "source": "Cloudflare Changelog",
+      "sourceUrl": "https://developers.cloudflare.com/changelog/post/2026-03-12-emergency-waf-release/"
     }
   ]
 }
