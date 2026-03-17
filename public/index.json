@@ -1,6 +1,127 @@
 {
   "entries": [
     {
+      "id": "20260317-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-17",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Karpathy Autoresearch — 一個 GPU、一晚、100 次實驗",
+      "summary": "AI agent 一張 GPU 自動跑 ML 實驗。700 次實驗 20 個改進 11% 提速。一個 GPU + 一晚 = 一個研究團隊一週的實驗量。",
+      "tags": [
+        "ship-fast",
+        "ai-leverage",
+        "solo-founder"
+      ],
+      "url": "https://github.com/karpathy/autoresearch",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://datasciencedojo.com/blog/karpathy-autoresearch-explained/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260317-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-17",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Nadella: Tools Use = 讓 AI Token 更有效率",
+      "summary": "Nadella 提出 tools use 概念：軟體就是讓 AI token 更有效率的工具。Agentic AI 會變成 universal interface。",
+      "tags": [
+        "ai-first",
+        "platform-shift",
+        "operational"
+      ],
+      "url": "https://www.constellationr.com/insights/news/microsoft-ceo-nadella-ai-efficiency-drive-deck",
+      "source": "Satya Nadella",
+      "sourceUrl": "https://www.constellationr.com/insights/news/microsoft-ceo-nadella-ai-efficiency-drive-deck",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260317-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-17",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Jensen Huang: Physical AI Data Factory Blueprint",
+      "summary": "GTC 2026 開源 Physical AI Data Factory Blueprint，agent 編排全自動 data pipeline。Compute is data。",
+      "tags": [
+        "ai-factory",
+        "platform-shift",
+        "flywheel"
+      ],
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development",
+      "source": "Jensen Huang",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260317-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-17",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Amodei：停止粉飾 AI 對工作的衝擊",
+      "summary": "Dario Amodei 直言 AI 1-5 年取代半數初階白領工作，拒絕五角大廈全自主武器要求，有些紅線不能跨。",
+      "tags": [
+        "ai-displacement",
+        "leadership",
+        "first-principles"
+      ],
+      "url": "https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/",
+      "source": "Dario Amodei",
+      "sourceUrl": "https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260317-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-17",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Karpathy AI Exposure Map — 342 種職業的 AI 曝險評分",
+      "summary": "Karpathy 互動工具把 342 種職業 0-10 評分 AI 曝險度。高曝險不代表被取代，而是 productivity 爆炸性提升。",
+      "tags": [
+        "ai-displacement",
+        "future-of-work",
+        "mental-model"
+      ],
+      "url": "https://deeperinsights.com/ai-blog/karpathy-on-ai-exposed-jobs/",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://deeperinsights.com/ai-blog/karpathy-on-ai-exposed-jobs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260317-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-17",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Agents Over Bubbles — Why AI Investment Isn't a Bubble",
+      "summary": "Ben Thompson 翻轉立場：AI agents 讓少數人的 leverage 爆炸性放大，hyperscaler capex 合理因為 agent 同時拉動營收和成本兩端。",
+      "tags": [
+        "leverage",
+        "agents",
+        "power-law",
+        "enterprise"
+      ],
+      "url": "https://stratechery.com/2026/agents-over-bubbles/",
+      "source": "Ben Thompson",
+      "sourceUrl": "https://stratechery.com/2026/agents-over-bubbles/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260317-ai-005",
       "radar": "ai-infra",
       "date": "2026-03-17",
