@@ -1,6 +1,109 @@
 {
   "entries": [
     {
+      "id": "20260317-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Karpathy autoresearch — 自主 AI 研究 Agent",
+      "summary": "Andrej Karpathy 新作，自主 AI agent 進行研究設計與模型訓練的 autonomous research framework。",
+      "tags": [
+        "autonomous-agent",
+        "llm-training",
+        "karpathy"
+      ],
+      "url": "https://github.com/karpathy/autoresearch",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/16/karpathy-autoresearch.html",
+      "price": null,
+      "vram": "Varies",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260317-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "hf-mem — HF 模型 VRAM 需求估算 CLI",
+      "summary": "輕量 CLI 工具，透過 HTTP Range Request 讀 Safetensors/GGUF metadata，一行指令估算任何 HF 模型 VRAM 需求。",
+      "tags": [
+        "vram-estimation",
+        "huggingface",
+        "cli-tool",
+        "inference"
+      ],
+      "url": "https://github.com/alvarobartt/hf-mem",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/16/alvarobartt-hf-mem.html",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
+    },
+    {
+      "id": "20260317-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Suno Song Remaster — AI 音樂 Mastering 桌面 App",
+      "summary": "針對 AI 生成音樂的跨平台 mastering 工具，批次處理+5 Band EQ+LUFS+True Peak Limiting，純 JS 不用 FFmpeg。",
+      "tags": [
+        "audio-mastering",
+        "music-generation",
+        "electron"
+      ],
+      "url": "https://github.com/SUP3RMASS1VE/Suno-Song-Remaster",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/16/SUP3RMASS1VE-Suno-Song-Remaster.html",
+      "price": null,
+      "vram": "N/A",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260317-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Side-Step — ACE-Step 1.5 音樂模型訓練工具包",
+      "summary": "ACE-Step 1.5 獨立訓練工具，支援 LoRA/DoRA/LoKR 等 5 種 adapter，8GB VRAM 可訓練，附 Electron GUI。",
+      "tags": [
+        "music-generation",
+        "ace-step",
+        "fine-tuning",
+        "lora"
+      ],
+      "url": "https://github.com/koda-dernet/Side-Step",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/koda-dernet/Side-Step",
+      "price": null,
+      "vram": "~8-10 GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260317-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Kyutai Hibiki-Zero — 即時多語言語音翻譯 + 語音轉換",
+      "summary": "Kyutai 推出 3B 參數即時語音翻譯模型，法/西/葡/德→英翻譯帶 voice transfer，8GB VRAM 即可跑。",
+      "tags": [
+        "voice-conversion",
+        "speech-translation",
+        "real-time",
+        "multilingual"
+      ],
+      "url": "https://github.com/kyutai-labs/hibiki-zero",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/16/kyutai-labs-hibiki-zero.html",
+      "price": null,
+      "vram": "~8 GB",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260315-sw-014",
       "radar": "software-dev",
       "date": "2026-03-15",
