@@ -10473,6 +10473,185 @@
       "url": "https://developers.cloudflare.com/changelog/post/2026-03-12-emergency-waf-release/",
       "source": "Cloudflare Changelog",
       "sourceUrl": "https://developers.cloudflare.com/changelog/post/2026-03-12-emergency-waf-release/"
+    },
+    {
+      "id": "20260318-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "LangChain Open SWE — 企業內部 Coding Agent 的開源框架",
+      "summary": "Stripe/Coinbase/Ramp 各自建了 coding agent 卻收斂到相同架構。LangChain 把這些 pattern 提煉成 Open SWE 開源框架，建立在 Deep Agents + LangGraph 之上。",
+      "tags": [
+        "ai agent",
+        "multi-agent",
+        "subagent",
+        "langchain",
+        "open source"
+      ],
+      "url": "https://github.com/langchain-ai/open-swe",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/open-swe-an-open-source-framework-for-internal-coding-agents/"
+    },
+    {
+      "id": "20260318-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Pragmatic Engineer: AI Agents 真的在拖慢我們嗎？",
+      "summary": "Gergely Orosz 深度調查 AI agent 的品質問題：Uber 追求 PR 數量不看品質、Anthropic 自家 bug 沒人抓、Amazon 因 AI agent 導致 outage 激增。",
+      "tags": [
+        "ai coding",
+        "cognitive debt",
+        "supervisory programming",
+        "agentic engineering"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/are-ai-agents-actually-slowing-us",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/are-ai-agents-actually-slowing-us"
+    },
+    {
+      "id": "20260318-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cursor 開源 4 套自主安全 Agent",
+      "summary": "Cursor 公開安全 agent prompts：每週掃 3,000+ PR 抓 200+ 漏洞。Snyk 分析指出真正成就是底下 MCP server + Terraform 基礎設施。",
+      "tags": [
+        "ai agent",
+        "Cursor Automations",
+        "security",
+        "MCP"
+      ],
+      "url": "https://cursor.com/marketplace/automations/find-vulnerabilities",
+      "source": "Snyk Blog",
+      "sourceUrl": "https://snyk.io/blog/cursor-security-agent-prompts/"
+    },
+    {
+      "id": "20260318-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Claude Cowork Persistent Agent Thread",
+      "summary": "Claude Pro/Max 用戶可從手機持續控制 Cowork 任務，支援 mid-task 導向和平行 sub-agent。",
+      "tags": [
+        "ai agent",
+        "long-running agents",
+        "Anthropic"
+      ],
+      "url": "https://support.claude.com/en/articles/13345190-get-started-with-cowork",
+      "source": "Anthropic",
+      "sourceUrl": "https://support.claude.com/en/articles/13345190-get-started-with-cowork"
+    },
+    {
+      "id": "20260318-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Holotron-12B — 開源高吞吐 Computer Use Agent 模型",
+      "summary": "H Company x NVIDIA 的 12B hybrid SSM+attention 模型，針對 computer-use agent 優化，WebVoyager 80.5%。",
+      "tags": [
+        "ai agent",
+        "multimodal",
+        "SSM",
+        "computer use",
+        "open source"
+      ],
+      "url": "https://huggingface.co/Hcompany/Holotron-12B",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/Hcompany/holotron-12b"
+    },
+    {
+      "id": "20260318-sw-016",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "LangSmith Sandboxes — Agent 安全執行 code 的隔離環境",
+      "summary": "LangChain 推出 ephemeral microVM 硬體虛擬化隔離，一行 SDK 設定，支援 persistent state 和 Auth Proxy。",
+      "tags": [
+        "ai agent",
+        "microVM",
+        "sandbox",
+        "LangSmith"
+      ],
+      "url": "https://blog.langchain.com/introducing-langsmith-sandboxes-secure-code-execution-for-agents/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/introducing-langsmith-sandboxes-secure-code-execution-for-agents/"
+    },
+    {
+      "id": "20260318-sw-017",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "LangGraph Deploy CLI — 一行部署 Agent",
+      "summary": "langgraph deploy 一行指令自動建 Docker image、配 Postgres + Redis，直接部署到 LangSmith Deployment。",
+      "tags": [
+        "ai agent",
+        "DevOps",
+        "langchain",
+        "CLI"
+      ],
+      "url": "https://blog.langchain.com/introducing-deploy-cli/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/introducing-deploy-cli/"
+    },
+    {
+      "id": "20260318-sw-018",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison — Pragmatic Summit Fireside Chat",
+      "summary": "Willison 分享 agentic engineering 心得：2025/11 後 AI 可靠度大增，可用兩句話 oneshot 任務。信任 AI code 類似信任其他 team 的 service。",
+      "tags": [
+        "agentic engineering",
+        "ai coding",
+        "context engineering"
+      ],
+      "url": "https://simonw.substack.com/p/fireside-chat-about-agentic-engineering",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonw.substack.com/p/fireside-chat-about-agentic-engineering"
+    },
+    {
+      "id": "20260318-sw-019",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Hugging Face State of Open Source Spring 2026",
+      "summary": "1100 萬用戶、200 萬+ models。Robotics datasets 暴增 23 倍。DeepSeek-R1 成 likes 最高模型。",
+      "tags": [
+        "ai models",
+        "open source",
+        "Hugging Face"
+      ],
+      "url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026"
+    },
+    {
+      "id": "20260318-sw-020",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "QVAC Fabric — Edge GPU 上 LoRA Fine-tune BitNet",
+      "summary": "QVAC 框架讓 1-bit LLM 在異質 edge GPU 做 LoRA fine-tuning，降低本地微調門檻。",
+      "tags": [
+        "fine-tuning",
+        "quantization",
+        "local-first AI",
+        "edge"
+      ],
+      "url": "https://huggingface.co/blog/qvac/fabric-llm-finetune-bitnet",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/qvac/fabric-llm-finetune-bitnet"
     }
   ]
 }
