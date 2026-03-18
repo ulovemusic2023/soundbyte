@@ -1,6 +1,166 @@
 {
   "entries": [
     {
+      "id": "20260318-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Mistral Small 4",
+      "summary": "119B MoE（6.5B active），統一 instruct/reasoning/coding，256k context，Apache 2.0。NVFP4 需 ~70GB VRAM。",
+      "tags": [
+        "mistral",
+        "moe",
+        "reasoning",
+        "agentic"
+      ],
+      "url": "https://mistral.ai/news/mistral-small-4",
+      "source": "Mistral AI Blog",
+      "sourceUrl": "https://mistral.ai/news/mistral-small-4",
+      "vram": "~70GB (NVFP4)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260318-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Qwen3-VL-Embedding",
+      "summary": "Qwen 多模態 embedding + reranker，支援文字/圖片/影片混合模態，2B/8B，有 MRL 可調維度。",
+      "tags": [
+        "embedding",
+        "reranker",
+        "multimodal",
+        "rag"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3-VL-Embedding",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/17/QwenLM-Qwen3-VL-Embedding.html",
+      "vram": "~5GB (2B) / ~16GB (8B 量化)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260318-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "NoiseCraft",
+      "summary": "瀏覽器端視覺化音訊合成語言，node-based 方式設計聲音，純前端 WebAudio。",
+      "tags": [
+        "audio",
+        "sound-synthesis",
+        "web-audio",
+        "visual-programming"
+      ],
+      "url": "https://github.com/maximecb/noisecraft",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/17/maximecb-noisecraft.html",
+      "vram": "0",
+      "license": "GPL-2.0"
+    },
+    {
+      "id": "20260318-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GPUStack",
+      "summary": "開源 GPU 叢集管理器，自動選最佳推理引擎（vLLM/SGLang/TensorRT-LLM），含效能調優和監控。",
+      "tags": [
+        "model-serving",
+        "gpu-management",
+        "vllm",
+        "sglang"
+      ],
+      "url": "https://github.com/gpustack/gpustack",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/17/gpustack-gpustack.html",
+      "vram": "管理工具不吃 VRAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260318-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Intel Auto-Round",
+      "summary": "精確量化工具 2-4 bit（INT4/NVFP4/MXFP4/GGUF），3 月新增 FP8 block 和 MTP layer 量化，整合 vLLM/SGLang。",
+      "tags": [
+        "quantization",
+        "gguf",
+        "nvfp4",
+        "vllm"
+      ],
+      "url": "https://github.com/intel/auto-round",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/17/intel-auto-round.html",
+      "vram": "工具本身極低",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260318-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "HuggingFace speech-to-speech",
+      "summary": "完整語音代理 pipeline：VAD → STT → LLM → TTS，模組化設計，支援本地部署 + Docker。",
+      "tags": [
+        "speech-to-speech",
+        "whisper",
+        "tts",
+        "voice-agent"
+      ],
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/18/huggingface-speech-to-speech.html",
+      "vram": "~8-12GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260318-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "VoXtream2",
+      "summary": "Zero-shot 全串流 TTS，可動態控制語速，Llama-3.2 backbone + Mimi codec，74ms first-packet latency，4x 即時速度。",
+      "tags": [
+        "tts",
+        "zero-shot",
+        "voice-cloning",
+        "streaming"
+      ],
+      "url": "https://arxiv.org/abs/2603.13518",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.13518",
+      "vram": "~6-8GB (估計)",
+      "license": "待確認"
+    },
+    {
+      "id": "20260318-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Polyglot-Lion",
+      "summary": "多語 ASR 模型（0.6B/1.7B），基於 Qwen3-ASR fine-tune，支援英/中/馬來/淡米爾語。消費級 GPU 上 $81 完成訓練，推理 ~0.1s/sample。",
+      "tags": [
+        "asr",
+        "speech-recognition",
+        "multilingual",
+        "qwen"
+      ],
+      "url": "https://github.com/knoveleng/polyglot-lion",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.16184",
+      "vram": "~2-4GB",
+      "license": "MIT"
+    },
+    {
       "id": "20260318-ts-013",
       "radar": "tool-scout",
       "date": "2026-03-18",
