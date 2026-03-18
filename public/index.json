@@ -1,6 +1,272 @@
 {
   "entries": [
     {
+      "id": "20260318-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "backnotprop/plannotator",
+      "summary": "Coding agent 的 plan / code review 視覺化工具。標註、approve/deny、團隊分享。",
+      "tags": [
+        "code-review",
+        "agent-plans",
+        "visualization"
+      ],
+      "url": "https://github.com/backnotprop/plannotator",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 3263,
+      "createdDate": "2025-12-28",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260318-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "vectorize-io/hindsight",
+      "summary": "Agent memory 系統強調「學習」。LongMemEval benchmark SOTA，2 行 code 就能整合。",
+      "tags": [
+        "memory",
+        "AI-agent",
+        "benchmark",
+        "SOTA"
+      ],
+      "url": "https://github.com/vectorize-io/hindsight",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 4614,
+      "createdDate": "2025-10-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260318-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "volcengine/OpenViking",
+      "summary": "字節跳動出品的 Agent Context Database。用檔案系統概念統一管理 agent 的 memory / resources / skills。",
+      "tags": [
+        "ByteDance",
+        "context-database",
+        "AI-agent",
+        "memory"
+      ],
+      "url": "https://github.com/volcengine/OpenViking",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 15239,
+      "createdDate": "2026-01-05",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260318-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Narcooo/inkos",
+      "summary": "自動小說寫作 CLI agent。多個 AI agent 分工寫作、審稿、修改，有人工 review gate。",
+      "tags": [
+        "writing",
+        "AI-agent",
+        "creative-tools"
+      ],
+      "url": "https://github.com/Narcooo/inkos",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Narcooo/inkos",
+      "stars": 1445,
+      "createdDate": "2026-03-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Lum1104/Understand-Anything",
+      "summary": "Claude Code skill，把 codebase 變成互動式 knowledge graph。視覺化探索架構。",
+      "tags": [
+        "Claude-Code",
+        "knowledge-graph",
+        "codebase-visualization"
+      ],
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Lum1104/Understand-Anything",
+      "stars": 722,
+      "createdDate": "2026-03-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "onecli/onecli",
+      "summary": "AI agent 的 secret vault。存一次 credentials，agent 呼叫 API 時自動注入。Rust gateway + AES-256-GCM。",
+      "tags": [
+        "security",
+        "credentials",
+        "AI-agent",
+        "Rust"
+      ],
+      "url": "https://github.com/onecli/onecli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/onecli/onecli",
+      "stars": 794,
+      "createdDate": "2026-03-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "jackwener/opencli",
+      "summary": "讓任何網站變成 CLI。AI-native browser automation runtime。",
+      "tags": [
+        "CLI",
+        "browser-automation",
+        "web-scraping"
+      ],
+      "url": "https://github.com/jackwener/opencli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/jackwener/opencli",
+      "stars": 1364,
+      "createdDate": "2026-03-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "knowsuchagency/mcp2cli",
+      "summary": "把任何 MCP server / OpenAPI / GraphQL 瞬間變成 CLI。零 codegen，省 96-99% tool schema tokens。",
+      "tags": [
+        "MCP",
+        "CLI",
+        "OpenAPI",
+        "GraphQL",
+        "token-saving"
+      ],
+      "url": "https://github.com/knowsuchagency/mcp2cli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/knowsuchagency/mcp2cli",
+      "stars": 1314,
+      "createdDate": "2026-03-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "webadderall/Recordly",
+      "summary": "Screen Studio 的免費開源替代品。自動 zoom、cursor 動畫、螢幕錄影後製。",
+      "tags": [
+        "screen-recording",
+        "video",
+        "open-source"
+      ],
+      "url": "https://github.com/webadderall/Recordly",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/webadderall/Recordly",
+      "stars": 2350,
+      "createdDate": "2026-03-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "calesthio/Crucix",
+      "summary": "個人情報 agent。監控多個資料源，有變動時主動通知你。",
+      "tags": [
+        "intelligence-agent",
+        "monitoring",
+        "notifications"
+      ],
+      "url": "https://github.com/calesthio/Crucix",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/calesthio/Crucix",
+      "stars": 3081,
+      "createdDate": "2026-03-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "aiming-lab/AutoResearchClaw",
+      "summary": "全自動、可自我進化的研究系統——丟 idea 進去，從文獻到論文全部自動完成。",
+      "tags": [
+        "autonomous-research",
+        "OpenClaw",
+        "AI-agent"
+      ],
+      "url": "https://github.com/aiming-lab/AutoResearchClaw",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/aiming-lab/AutoResearchClaw",
+      "stars": 4182,
+      "createdDate": "2026-03-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "THU-MAIC/OpenMAIC",
+      "summary": "清華大學的多 Agent 互動教室。一鍵建立沉浸式多 Agent 學習環境。",
+      "tags": [
+        "multi-agent",
+        "education",
+        "interactive"
+      ],
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/THU-MAIC/OpenMAIC",
+      "stars": 4649,
+      "createdDate": "2026-03-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260318-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-03-18",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "NVIDIA/NemoClaw",
+      "summary": "NVIDIA 官方出的 OpenClaw 安全安裝插件。讓 OpenClaw 部署符合企業級安全標準。",
+      "tags": [
+        "NVIDIA",
+        "OpenClaw",
+        "security",
+        "enterprise"
+      ],
+      "url": "https://github.com/NVIDIA/NemoClaw",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/NVIDIA/NemoClaw",
+      "stars": 4279,
+      "createdDate": "2026-03-15",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260318-sw-010",
       "radar": "software-dev",
       "date": "2026-03-18",
