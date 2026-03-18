@@ -1,6 +1,218 @@
 {
   "entries": [
     {
+      "id": "20260318-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Netflix QCon London：從 DVD 到全球串流的商務架構演進",
+      "summary": "130+ 國串流的演進：非同步付款、法規適應、多帳戶訂閱、直播高峰 graceful degradation。",
+      "tags": [
+        "Netflix",
+        "commerce architecture",
+        "QCon",
+        "scaling"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/netflix-dvds-to-global-streaming/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/netflix-dvds-to-global-streaming/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Jepsen 測試 MariaDB Galera Cluster：嚴重一致性問題",
+      "summary": "健康叢集也有 stale reads、committed transaction 遺失。isolation 低於文件宣稱，「無遺失交易」承諾被打破。",
+      "tags": [
+        "Jepsen",
+        "MariaDB",
+        "Galera",
+        "distributed systems",
+        "consistency"
+      ],
+      "url": "https://jepsen.io/analyses/mariadb-galera-cluster-12.1.2",
+      "source": "Jepsen",
+      "sourceUrl": "https://jepsen.io/analyses/mariadb-galera-cluster-12.1.2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "CursorJack — MCP Deeplink 供應鏈攻擊路徑",
+      "summary": "利用 Cursor IDE 的 MCP deeplink 機制偽裝合法連結，誘導安裝惡意組件，開發者 API keys 和原始碼面臨風險。",
+      "tags": [
+        "security",
+        "MCP",
+        "supply chain",
+        "Cursor"
+      ],
+      "url": "https://www.infosecurity-magazine.com/news/cursor-jack-attack-path-ai/",
+      "source": "Infosecurity Magazine",
+      "sourceUrl": "https://www.infosecurity-magazine.com/news/cursor-jack-attack-path-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Custom Regions — 精準資料主權控制",
+      "summary": "用表達式定義資料處理地理邊界，TLS 終止和 L7 處理只在指定區域內執行。",
+      "tags": [
+        "Cloudflare",
+        "data sovereignty",
+        "custom regions",
+        "compliance"
+      ],
+      "url": "https://blog.cloudflare.com/custom-regions/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/custom-regions/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Agent 365 — AI Agent 企業級治理平台",
+      "summary": "Agent Registry、Entra Agent ID、MCP 互通性、Defender/Purview 安全整合，解決企業 agent sprawl 問題。",
+      "tags": [
+        "Microsoft",
+        "agent governance",
+        "Entra Agent ID",
+        "enterprise"
+      ],
+      "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/overview",
+      "source": "AI Certs",
+      "sourceUrl": "https://www.aicerts.ai/news/microsoft-agent-365-elevates-ai-agent-governance-for-enterprises/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mistral Forge — 企業從零訓練自有 AI 模型的新平台",
+      "summary": "Mistral AI 在 GTC 發佈 Forge 平台，讓企業用自有數據從頭訓練模型，搭配合成數據管線和駐點工程師。",
+      "tags": [
+        "Mistral AI",
+        "enterprise AI",
+        "custom training",
+        "GTC 2026"
+      ],
+      "url": "https://techcrunch.com/2026/03/17/mistral-forge-nvidia-gtc-build-your-own-ai-enterprise/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/17/mistral-forge-nvidia-gtc-build-your-own-ai-enterprise/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 發佈 GPT-5.4 mini + nano",
+      "summary": "GPT-5.4 mini 速度 2x+，SWE-Bench Pro 54.4%，支援分層架構：大模型規劃 → mini/nano 執行子任務。",
+      "tags": [
+        "GPT-5.4",
+        "small language model",
+        "OpenAI",
+        "tiered architecture"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+      "source": "9to5Mac",
+      "sourceUrl": "https://9to5mac.com/2026/03/17/openai-releases-gpt-5-4-mini-and-nano-its-most-capable-small-models-yet/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Meta REA: 自主 AI Agent 管理廣告排序 ML 全生命週期",
+      "summary": "Meta 的 Ranking Engineer Agent 用 hibernate-and-wake 機制處理長時間 ML 任務，實現模型精度 2x + 工程產出 5x 提升。",
+      "tags": [
+        "autonomous agent",
+        "ML lifecycle",
+        "Meta",
+        "agentic engineering"
+      ],
+      "url": "https://engineering.fb.com/2026/03/17/developer-tools/ranking-engineer-agent-rea-autonomous-ai-system-accelerating-meta-ads-ranking-innovation/",
+      "source": "Meta Engineering",
+      "sourceUrl": "https://engineering.fb.com/2026/03/17/developer-tools/ranking-engineer-agent-rea-autonomous-ai-system-accelerating-meta-ads-ranking-innovation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler: Context Anchoring — AI 協作的持久記憶層",
+      "summary": "Fowler 提出 context anchoring：將設計決策寫進精簡 living document，解決 AI 對話的 Lost in the Middle 問題，形成三層 context engineering 框架。",
+      "tags": [
+        "context engineering",
+        "context anchoring",
+        "AI coding",
+        "Martin Fowler"
+      ],
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/context-anchoring.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/reduce-friction-ai/context-anchoring.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260318-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google DeepMind 發佈 AGI 認知分類框架 + Kaggle $200K 黑客松",
+      "summary": "DeepMind 提出 10 項認知能力作為衡量 AGI 進展的標準化框架，同步推出 Kaggle 黑客松聚焦現有 AI 最弱的五項能力。",
+      "tags": [
+        "AGI",
+        "cognitive taxonomy",
+        "evaluation",
+        "benchmark",
+        "Kaggle"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260317-sw-012",
       "radar": "software-dev",
       "date": "2026-03-17",
