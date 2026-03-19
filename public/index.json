@@ -10813,6 +10813,181 @@
       "url": "https://huggingface.co/blog/qvac/fabric-llm-finetune-bitnet",
       "source": "Hugging Face Blog",
       "sourceUrl": "https://huggingface.co/blog/qvac/fabric-llm-finetune-bitnet"
+    },
+    {
+      "id": "20260319-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Mamba-3: SSM Architecture Challenges Transformer Dominance",
+      "summary": "Albert Gu + Tri Dao 釋出 Mamba-3，引入 exponential-trapezoidal discretization、complex-valued states、MIMO formulation。1.5B 參數打贏 Gated DeltaNet，用一半 state size 達 Mamba-2 perplexity。",
+      "tags": [
+        "state space model",
+        "inference efficiency",
+        "mamba",
+        "attention mechanism"
+      ],
+      "url": "https://arxiv.org/abs/2603.15569",
+      "source": "Tri Dao Blog",
+      "sourceUrl": "https://tridao.me/blog/2026/mamba3-part1/"
+    },
+    {
+      "id": "20260319-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Spotify Honk: AI Agent Continuously Rewrites Entire Codebase",
+      "summary": "Spotify 內部 AI coding agent Honk，10 天 merge 1000 PRs。用 LLM 取代 deterministic scripts 處理複雜 migration。bottleneck 已從寫 code 轉到 review PR。",
+      "tags": [
+        "ai coding",
+        "agentic engineering",
+        "code generation",
+        "ci/cd"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/spotify-honk-rewrite/",
+      "source": "InfoQ / QCon London 2026",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/spotify-honk-rewrite/"
+    },
+    {
+      "id": "20260319-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Dispatch: Phone Controls Desktop AI Agent via Persistent Thread",
+      "summary": "Anthropic 推出 Claude Dispatch，Max 用戶從手機指派任務給桌面 Claude Cowork，全程保持同一對話 context。手機下令、桌面執行、結果回傳。",
+      "tags": [
+        "ai agent",
+        "personal computer agent",
+        "tool use",
+        "agentic"
+      ],
+      "url": "https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork",
+      "source": "Anthropic",
+      "sourceUrl": "https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork"
+    },
+    {
+      "id": "20260319-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HubSpot Sidekick: Multi-Model AI Code Review with Judge Agent",
+      "summary": "HubSpot 從 K8s LLM containers 遷移到 Java-based Aviator framework。Judge agent 過濾低品質回饋。90% 更快 first-feedback、80% 工程師認可率。",
+      "tags": [
+        "ai agent",
+        "code generation",
+        "ai-assisted development"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/hubspot-ai-code-review-agent/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/hubspot-ai-code-review-agent/"
+    },
+    {
+      "id": "20260319-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netflix Ontology-Driven Observability: Knowledge Graph for Incidents",
+      "summary": "Netflix 在 QCon London 分享用 ontology triples + MELT Layer 建 E2E 知識圖譜。12 operational namespaces 統一散落資料。Knowledge Flywheel 整合 Claude 做 auto-remediation。",
+      "tags": [
+        "observability",
+        "distributed tracing",
+        "knowledge base",
+        "structured logging"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/ontology-at-netflix/",
+      "source": "InfoQ / QCon London 2026",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/ontology-at-netflix/"
+    },
+    {
+      "id": "20260319-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Snowflake Cortex AI Sandbox Escape via Prompt Injection",
+      "summary": "Snowflake Cortex Code CLI 漏洞：prompt injection 操縱 unsandboxed execution flag，繞過 human-in-the-loop 核准。安全邊界在 agent loop 內部是根本問題。",
+      "tags": [
+        "prompt injection",
+        "ai agent",
+        "guardrails",
+        "security"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/18/snowflake-cortex-ai/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/18/snowflake-cortex-ai/"
+    },
+    {
+      "id": "20260319-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft 2026 Release Wave 1: Enterprise Agentic Workflows",
+      "summary": "Copilot Studio 支援 multi-agent orchestration、CUA、Agent Academy。Power Automate 加入 self-healing desktop flows。Role-based agents 進化為 command center。",
+      "tags": [
+        "ai agent",
+        "multi-agent",
+        "function calling",
+        "platform engineering"
+      ],
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/03/18/2026-release-wave-1-plans-for-microsoft-dynamics-365-microsoft-power-platform-and-copilot-studio-offerings/",
+      "source": "Microsoft",
+      "sourceUrl": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/03/18/2026-release-wave-1-plans-for-microsoft-dynamics-365-microsoft-power-platform-and-copilot-studio-offerings/"
+    },
+    {
+      "id": "20260319-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "JDK 26 Released: Java Embraces AI Era",
+      "summary": "10 個 JEP：Vector API（第 11 次 incubation）、AoT Object Caching、Primitive Patterns、HTTP/3 Client、Structured Concurrency。Vector API 瞄準 AI 運算效能。",
+      "tags": [
+        "java",
+        "ai_models",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/java26-released/",
+      "source": "InfoQ / Oracle",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/java26-released/"
+    },
+    {
+      "id": "20260319-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Rust Polonius Borrow Checker: Loans Mental Model at QCon",
+      "summary": "TrueLayer 工程師用 loans 重新詮釋 Rust lifetimes。Polonius 將接受更多記憶體安全的正確程式（如 lending iterators），尚未成為預設。",
+      "tags": [
+        "rust",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/rust-lifetimes-loans-polonius/",
+      "source": "InfoQ / QCon London 2026",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/rust-lifetimes-loans-polonius/"
+    },
+    {
+      "id": "20260319-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "fastokens: 22x Faster Tokenization for Production LLM Serving",
+      "summary": "Crusoe 釋出 fastokens，100K tokens 從 149ms 降到 6ms。一行 patch_transformers() 即可全域替換 HuggingFace tokenizer，直接改善 TTFT。",
+      "tags": [
+        "ai_models",
+        "quantization",
+        "embedding"
+      ],
+      "url": "https://www.crusoe.ai/resources/blog/reducing-ttft-by-cpumaxxing-tokenization",
+      "source": "Crusoe",
+      "sourceUrl": "https://www.crusoe.ai/resources/blog/reducing-ttft-by-cpumaxxing-tokenization"
     }
   ]
 }
