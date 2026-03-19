@@ -1,6 +1,147 @@
 {
   "entries": [
     {
+      "id": "20260319-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-03-19",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Whether you like Amodei or not, at least he's a leader.",
+      "summary": "Andrew Keen 指出 Amodei 是唯一像人類一樣公開表態的 AI CEO。有原則、說出來、承擔後果。",
+      "tags": [
+        "leadership",
+        "ai-safety",
+        "quotable"
+      ],
+      "url": "https://keenon.substack.com/p/why-dario-amodei-might-be-the-21st",
+      "source": "Andrew Keen",
+      "sourceUrl": "https://keenon.substack.com/p/why-dario-amodei-might-be-the-21st",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260319-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-19",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "DHH：手寫 code 變成奢侈品工藝",
+      "summary": "DHH 把手寫程式比喻成手工馬鞍。不需抗拒 AI coding，也不用放棄 craftsmanship。",
+      "tags": [
+        "solo-founder",
+        "vibe-coding",
+        "craftsmanship"
+      ],
+      "url": "https://www.businessinsider.com/openai-bret-taylor-coding-by-hand-ai-tools-2026-3",
+      "source": "DHH (37signals)",
+      "sourceUrl": "https://www.businessinsider.com/openai-bret-taylor-coding-by-hand-ai-tools-2026-3",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260319-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-19",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Sam Altman：AI 將像水電一樣計量供應",
+      "summary": "BlackRock 峰會：用智能淹沒世界。自己用 AI agent 做策略思考，營收前大量投入 infra。",
+      "tags": [
+        "startup-playbook",
+        "ai-infra",
+        "abundance"
+      ],
+      "url": "https://www.youtube.com/watch?v=8EdjHwEO8QA",
+      "source": "Sam Altman (OpenAI)",
+      "sourceUrl": "https://www.youtube.com/watch?v=8EdjHwEO8QA",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260319-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-19",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Ben Thompson：Agent 時代不是泡沫",
+      "summary": "Stratechery 改口：AI 從使用者操作轉向 Agent 自主運作後，compute 需求經濟邏輯完全改變，預測結構性裁員。",
+      "tags": [
+        "operational",
+        "agentic-ai",
+        "market-analysis"
+      ],
+      "url": "https://stratechery.com/2026/agents-over-bubbles/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/agents-over-bubbles/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260319-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-19",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Anthropic 拒絕 Pentagon 拆除 AI 安全護欄",
+      "summary": "Amodei 拒讓 Claude 用於自主武器，被列供應鏈風險。選擇訴訟而非妥協，用原則當護城河。",
+      "tags": [
+        "leadership",
+        "ai-safety",
+        "founder-mode"
+      ],
+      "url": "https://www.politico.com/newsletters/national-security-daily/2026/03/17/trumps-other-war-on-anthropic-00833018",
+      "source": "Dario Amodei (Anthropic)",
+      "sourceUrl": "https://www.politico.com/newsletters/national-security-daily/2026/03/17/trumps-other-war-on-anthropic-00833018",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260319-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-19",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Jensen Huang 的統一加速計算理論",
+      "summary": "GTC 2026: Moore's Law 失效，未來靠 accelerated computing。Nvidia 是演算法公司不是晶片公司。",
+      "tags": [
+        "mental-model",
+        "platform-shift",
+        "accelerated-computing"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-nvidia-ceo-jensen-huang-about-accelerated-computing/",
+      "source": "Jensen Huang (Nvidia)",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-nvidia-ceo-jensen-huang-about-accelerated-computing/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260319-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-19",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Karpathy Loop — 讓 AI Agent 自動跑實驗的框架",
+      "summary": "Karpathy 公開 autoresearch：AI agent 2 天跑 700 次實驗、20 個優化、11% 訓練加速。核心框架：codebase + metric + timebox。",
+      "tags": [
+        "mental-model",
+        "ai-future",
+        "leverage",
+        "autoresearch"
+      ],
+      "url": "https://fortune.com/2026/03/17/andrej-karpathy-loop-autonomous-ai-agents-future/",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://fortune.com/2026/03/17/andrej-karpathy-loop-autonomous-ai-agents-future/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260319-ai-008",
       "radar": "ai-infra",
       "date": "2026-03-19",
