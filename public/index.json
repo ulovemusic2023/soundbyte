@@ -11129,6 +11129,126 @@
       "url": "https://www.crusoe.ai/resources/blog/reducing-ttft-by-cpumaxxing-tokenization",
       "source": "Crusoe",
       "sourceUrl": "https://www.crusoe.ai/resources/blog/reducing-ttft-by-cpumaxxing-tokenization"
+    },
+    {
+      "id": "20260319-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Machine Payments Protocol (MPP) — AI Agent 原生支付標準",
+      "summary": "Stripe + Tempo + Visa 聯合發布 MPP 開放標準，AI agent 可自主付款、session-based streaming payments",
+      "tags": [
+        "ai agent",
+        "payments",
+        "agentic",
+        "tool use"
+      ],
+      "url": "https://corporate.visa.com/en/sites/visa-perspectives/innovation/visa-card-specification-sdk-for-machine-payments-protocol.html",
+      "source": "Stripe × Tempo × Visa",
+      "sourceUrl": "https://tempo.xyz/blog/mainnet"
+    },
+    {
+      "id": "20260319-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Next.js 16.2 Agent-Ready 開發工具",
+      "summary": "AGENTS.md + next-browser CLI + Browser Log Forwarding，evals 100% 通過率",
+      "tags": [
+        "next.js",
+        "ai coding",
+        "agent framework"
+      ],
+      "url": "https://nextjs.org/blog/next-16-2-ai",
+      "source": "Vercel",
+      "sourceUrl": "https://nextjs.org/blog/next-16-2-ai"
+    },
+    {
+      "id": "20260319-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic Claude 企業份額升至 24.4%",
+      "summary": "Ramp 數據：70% 首次選 AI 企業選 Anthropic，OpenAI 單月降 1.5%",
+      "tags": [
+        "anthropic",
+        "enterprise",
+        "ai agent"
+      ],
+      "url": "https://www.theregister.com/2026/03/19/anthropic_claude_market_share/",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/03/19/anthropic_claude_market_share/"
+    },
+    {
+      "id": "20260319-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI 全押 Enterprise + Coding",
+      "summary": "Fidji Simo Code Red：砍 Sora/Atlas/機器人，集中 Codex 200萬+週活 + 企業 API",
+      "tags": [
+        "ai coding",
+        "enterprise",
+        "copilot"
+      ],
+      "url": "https://www.techbrew.com/stories/2026/03/18/openais-new-main-quest-is-an-old-one",
+      "source": "Tech Brew",
+      "sourceUrl": "https://www.techbrew.com/stories/2026/03/18/openais-new-main-quest-is-an-old-one"
+    },
+    {
+      "id": "20260319-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Unsloth Studio 免費本地 AI 訓練 UI Beta",
+      "summary": "500+ 模型、VRAM 減 80%、No-code fine-tune、CPU-only GGUF 推理",
+      "tags": [
+        "fine-tuning",
+        "quantization",
+        "local-first AI"
+      ],
+      "url": "https://unsloth.ai/docs/new/studio",
+      "source": "Unsloth AI",
+      "sourceUrl": "https://unsloth.ai/docs/new/studio"
+    },
+    {
+      "id": "20260319-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "HN: AI Coding is Gambling (314 pts)",
+      "summary": "社群激辯 vibe coding 是否賭博，有團隊禁手寫 code 全用 Cursor+Speckit",
+      "tags": [
+        "vibe coding",
+        "ai coding",
+        "harness engineering"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47428541",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47428541"
+    },
+    {
+      "id": "20260319-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-19",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Cursor 0.45 Reasoning Mode 多模型路由",
+      "summary": "自動在 Claude/GPT-5/Gemini 間路由，SWE-bench +34%",
+      "tags": [
+        "ai coding",
+        "copilot",
+        "multi-agent"
+      ],
+      "url": "https://skillsllm.com/news/ai-news-2026-03-18",
+      "source": "SkillsLLM",
+      "sourceUrl": "https://skillsllm.com/news/ai-news-2026-03-18"
     }
   ]
 }
