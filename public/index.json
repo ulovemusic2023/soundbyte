@@ -1,6 +1,132 @@
 {
   "entries": [
     {
+      "id": "20260320-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Martin Fowler：Supervisory Engineering 與 Regenerative Software",
+      "summary": "工程師從創造轉向監督（middle loop），Chad Fowler 提出 regenerative software architecture。",
+      "tags": [
+        "supervisory engineering",
+        "regenerative software",
+        "architecture"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-03-16.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-03-16.html"
+    },
+    {
+      "id": "20260320-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 2.6.19 安全事故：Agent 注入他人程式碼",
+      "summary": "Agent session isolation 漏洞導致其他用戶程式碼被注入 workspace，已修復但暴露信任邊界問題。",
+      "tags": [
+        "security",
+        "agent isolation",
+        "Cursor",
+        "trust boundary"
+      ],
+      "url": "https://forum.cursor.com/t/cursor-shared-the-code-of-another-user-into-my-workspace/154883",
+      "source": "Cursor Forum",
+      "sourceUrl": "https://forum.cursor.com/t/cursor-shared-the-code-of-another-user-into-my-workspace/154883"
+    },
+    {
+      "id": "20260320-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 2.6：Security Automations + 30+ Plugins + JetBrains ACP",
+      "summary": "Cursor 進化成 agentic platform：安全自動化掃 3K+ PRs/week、30+ plugins、JetBrains 整合。",
+      "tags": [
+        "ai coding",
+        "security",
+        "plugins",
+        "Cursor"
+      ],
+      "url": "https://cursor.com/changelog",
+      "source": "Cursor",
+      "sourceUrl": "https://cursor.com/changelog"
+    },
+    {
+      "id": "20260320-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LLM in a Flash：48GB MacBook 上跑 Qwen 397B",
+      "summary": "Dan Woods 用 Apple LLM in a Flash 技術 + autoresearch，在 M3 Max 上 5.5 tok/s 跑 Qwen 397B MoE。",
+      "tags": [
+        "local-first AI",
+        "MoE",
+        "quantization",
+        "inference"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/18/llm-in-a-flash/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/18/llm-in-a-flash/"
+    },
+    {
+      "id": "20260320-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Workers AI 支援大型模型，首發 Kimi K2.5",
+      "summary": "Workers AI 支援大型模型推理，新增 prefix caching、session affinity、非同步 API。",
+      "tags": [
+        "edge computing",
+        "inference",
+        "cloudflare",
+        "agentic"
+      ],
+      "url": "https://blog.cloudflare.com/workers-ai-large-models/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workers-ai-large-models/"
+    },
+    {
+      "id": "20260320-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 公開內部 coding agent 錯位行為監控系統",
+      "summary": "OpenAI 揭露即時監控系統：GPT-5.4 Thinking 審查 chain-of-thought，五個月標記約 1,000 個中度嚴重案例。",
+      "tags": [
+        "ai safety",
+        "agent monitoring",
+        "misalignment",
+        "coding agents"
+      ],
+      "url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/"
+    },
+    {
+      "id": "20260320-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 收購 Astral — uv/ruff/ty 加入 Codex 團隊",
+      "summary": "OpenAI 宣布收購 Python 工具鏈公司 Astral，uv/ruff/ty 三大開源工具併入 Codex 團隊。AI 公司開始直接收購開發者基礎工具鏈。",
+      "tags": [
+        "ai coding",
+        "open source",
+        "python",
+        "developer tools",
+        "acquisition"
+      ],
+      "url": "https://openai.com/index/openai-to-acquire-astral/",
+      "source": "Astral Blog",
+      "sourceUrl": "https://astral.sh/blog/openai"
+    },
+    {
       "id": "20260319-fm-007",
       "radar": "founder-mind",
       "date": "2026-03-19",
