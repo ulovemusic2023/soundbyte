@@ -1,6 +1,141 @@
 {
   "entries": [
     {
+      "id": "20260320-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Audio LLM Knowledge Localization",
+      "summary": "研究 Qwen2-Audio-7B 知識分布，audio layers 是事實檢索關鍵，cross-modal editing 比 fine-tuning 高效。",
+      "tags": [
+        "audio-llm",
+        "knowledge-editing",
+        "interpretability"
+      ],
+      "url": "https://arxiv.org/abs/2603.14343",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.14343",
+      "vram": "~24GB"
+    },
+    {
+      "id": "20260320-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cross-Attention Timbre Control TTS",
+      "summary": "統一 timbre control 的 cross-attention 框架，從短語音 prompt 模仿音色，zero-shot TTS speaker similarity 大幅提升。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "zero-shot",
+        "timbre"
+      ],
+      "url": "https://arxiv.org/abs/2603.16280",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.16280",
+      "vram": "24GB+"
+    },
+    {
+      "id": "20260320-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ApeRAG — Production-ready GraphRAG",
+      "summary": "Production-ready GraphRAG 系統，multi-modal indexing、AI agents、MCP 整合、K8s 部署。",
+      "tags": [
+        "graphrag",
+        "vector-search",
+        "knowledge-graph",
+        "production"
+      ],
+      "url": "https://github.com/apecloud/ApeRAG",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260320-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "StepAudioR1 + Qwen3-Omni — 音頻推理新標竿",
+      "summary": "Interspeech 2026 Audio Reasoning Challenge 最高分系統，用 open-weights 音頻語言模型做 multi-source fusion。",
+      "tags": [
+        "audio-language-model",
+        "audio-reasoning",
+        "qwen",
+        "open-weights"
+      ],
+      "url": "https://arxiv.org/abs/2603.17822",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.17822",
+      "vram": "~20GB+"
+    },
+    {
+      "id": "20260320-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenDataLoader PDF v2.0 — 開源 PDF 解析新標竿",
+      "summary": "Hancom 開源 PDF parser，reading order/表格/標題推斷 benchmark 0.90 準確率（最高），Apache 2.0 授權，GitHub trending #1。",
+      "tags": [
+        "pdf-parser",
+        "document-ai",
+        "rag",
+        "open-source"
+      ],
+      "url": "https://github.com/opendataloader-project/opendataloader-pdf",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "0 (CPU)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260320-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "sqlite-vec — SQLite 原生向量搜尋",
+      "summary": "純 C 寫的 SQLite 向量搜尋擴充，支援 float/int8/binary 向量，零外部依賴，適合邊緣裝置 RAG。",
+      "tags": [
+        "vector-search",
+        "sqlite",
+        "rag",
+        "embedding"
+      ],
+      "url": "https://github.com/asg017/sqlite-vec",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0 (CPU)",
+      "license": "MIT/Apache 2.0"
+    },
+    {
+      "id": "20260320-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Kyutai Unmute — 讓文字 LLM 聽說自如",
+      "summary": "Kyutai 推出 STT+TTS wrapper，把任何文字 LLM 包一層低延遲語音介面，Docker Compose 一鍵部署，16GB VRAM 可跑。",
+      "tags": [
+        "tts",
+        "stt",
+        "voice-interface",
+        "local-inference"
+      ],
+      "url": "https://github.com/kyutai-labs/unmute",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~16GB",
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260320-sw-007",
       "radar": "software-dev",
       "date": "2026-03-20",
