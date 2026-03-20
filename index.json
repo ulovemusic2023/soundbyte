@@ -11510,6 +11510,152 @@
       "url": "https://skillsllm.com/news/ai-news-2026-03-18",
       "source": "SkillsLLM",
       "sourceUrl": "https://skillsllm.com/news/ai-news-2026-03-18"
+    },
+    {
+      "id": "20260320-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Microsoft Zero Trust for AI — agent security reference architecture",
+      "summary": "Microsoft ZT4AI extends Zero Trust to AI agents with reference architecture, threat modeling, observability, and 700+ security controls workshop.",
+      "tags": [
+        "zero trust",
+        "ai agent",
+        "security",
+        "microsoft"
+      ],
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/03/19/new-tools-and-guidance-announcing-zero-trust-for-ai/",
+      "source": "Microsoft Security Blog",
+      "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/03/19/new-tools-and-guidance-announcing-zero-trust-for-ai/"
+    },
+    {
+      "id": "20260320-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Forrester: Agent Control Plane standards gaps",
+      "summary": "Three-plane model with three standards barriers: instrumentation, identity propagation, cross-plane integration schemas.",
+      "tags": [
+        "agent control plane",
+        "governance",
+        "standards",
+        "forrester"
+      ],
+      "url": "https://www.forrester.com/blogs/agent-control-planes-still-need-a-robust-standards-stack/",
+      "source": "Forrester",
+      "sourceUrl": "https://www.forrester.com/blogs/agent-control-planes-still-need-a-robust-standards-stack/"
+    },
+    {
+      "id": "20260320-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Beyond Identity Ceros — AI Trust Layer for Claude Code",
+      "summary": "Runtime policy enforcement, cryptographic audit trails, MCP server monitoring for Claude Code on developer machines.",
+      "tags": [
+        "claude code",
+        "security",
+        "ai trust layer",
+        "mcp"
+      ],
+      "url": "https://thehackernews.com/2026/03/how-ceros-gives-security-teams.html",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/03/how-ceros-gives-security-teams.html"
+    },
+    {
+      "id": "20260320-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "CrowdStrike x NVIDIA Secure-by-Design AI Blueprint at GTC",
+      "summary": "Falcon + OpenShell runtime for continuous governance of autonomous AI agents across DGX/cloud/datacenter.",
+      "tags": [
+        "crowdstrike",
+        "nvidia",
+        "ai security",
+        "agent",
+        "gtc"
+      ],
+      "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-nvidia-unveil-secure-by-design-ai-blueprint-for-ai-agents/",
+      "source": "CrowdStrike",
+      "sourceUrl": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-nvidia-unveil-secure-by-design-ai-blueprint-for-ai-agents/"
+    },
+    {
+      "id": "20260320-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MiniMax M2.7 — self-evolving coding model, SWE-Pro 56.2%",
+      "summary": "Approaches Opus 4.6 on SWE-Pro at 50x cheaper input tokens. Self-iteration through agent harnesses yields 30% boost.",
+      "tags": [
+        "minimax",
+        "coding model",
+        "self-evolution",
+        "agent"
+      ],
+      "url": "https://www.minimax.io/news/minimax-m27-en",
+      "source": "MiniMax",
+      "sourceUrl": "https://www.minimax.io/news/minimax-m27-en"
+    },
+    {
+      "id": "20260320-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llamafile 0.10.0 — Mozilla AI rebuild with Qwen3.5 + GPU acceleration",
+      "summary": "Major rebuild with CUDA/Metal GPU support, TUI, multimodal, Whisper. Qwen3.5 0.8B runs ~8 tok/s on Raspberry Pi 5.",
+      "tags": [
+        "llamafile",
+        "mozilla",
+        "local-first",
+        "gpu",
+        "qwen3.5"
+      ],
+      "url": "https://www.helpnetsecurity.com/2026/03/20/llamafile-0-10-0-released/",
+      "source": "Help Net Security",
+      "sourceUrl": "https://www.helpnetsecurity.com/2026/03/20/llamafile-0-10-0-released/"
+    },
+    {
+      "id": "20260320-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "HN: Anthropic cease-and-desist against OpenCode over Claude Code API",
+      "summary": "Anthropic threatens legal action against OpenCode for using internal Claude Code APIs instead of public API.",
+      "tags": [
+        "anthropic",
+        "claude code",
+        "api",
+        "legal"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47444748",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47444748"
+    },
+    {
+      "id": "20260320-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Meta open-sources Lifeguard — Rust static analysis for Python lazy imports",
+      "summary": "Fast Rust-based static analysis tool for Python lazy imports, continuing Rust rewrite trend in Python tooling.",
+      "tags": [
+        "rust",
+        "python",
+        "static analysis",
+        "meta"
+      ],
+      "url": "https://github.com/facebook/lifeguard",
+      "source": "GitHub / Meta",
+      "sourceUrl": "https://github.com/facebook/lifeguard"
     }
   ]
 }
