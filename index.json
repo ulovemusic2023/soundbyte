@@ -1,6 +1,129 @@
 {
   "entries": [
     {
+      "id": "20260321-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "KubeCon + CloudNativeCon EU 2026 下週開幕（3/23-26 阿姆斯特丹）",
+      "summary": "重點議程：AI inference on K8s、Gateway API、Cilium 10 年演進、Airbnb 千服務零停機遷移。98% 組織使用 cloud-native，66% 在 K8s 跑 GenAI inference。",
+      "tags": [
+        "kubernetes",
+        "platform engineering",
+        "observability",
+        "ai agent"
+      ],
+      "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/",
+      "source": "CNCF Blog",
+      "sourceUrl": "https://www.cncf.io/blog/2026/03/20/your-merge-forward-guide-to-kubecon-cloudnativecon-amsterdam/"
+    },
+    {
+      "id": "20260321-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Moonshot AI 治理崩潰事件分析：開源模型商業化的授權執行挑戰",
+      "summary": "深度分析 Cursor/Kimi K2.5 事件的治理面向：Modified MIT License attribution 如何被繞過、open-weight 模型缺乏 provenance 追蹤。",
+      "tags": [
+        "open-source license",
+        "ai models",
+        "supply chain security"
+      ],
+      "url": "https://securityboulevard.com/2026/03/moonshot-ai-governance-breakdown-lessons-from-the-cursor-kimi-k2-5-incident/",
+      "source": "Security Boulevard",
+      "sourceUrl": "https://securityboulevard.com/2026/03/moonshot-ai-governance-breakdown-lessons-from-the-cursor-kimi-k2-5-incident/"
+    },
+    {
+      "id": "20260321-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cerebras 開源 Autoresearch Harness：解決 AI 自動研究的「作弊」問題",
+      "summary": "基於 Karpathy autoresearch 跑 71 次實驗，發現 agent 放任過夜會脫軌。開源 harness 內建 A/B testing，核心結論：瓶頸是 scope 控制不是 AI 智商。",
+      "tags": [
+        "autoresearch",
+        "agentic engineering",
+        "reinforcement learning"
+      ],
+      "url": "https://github.com/SarahXC/codex-autoresearch-harness",
+      "source": "Cerebras Blog",
+      "sourceUrl": "https://www.cerebras.ai/blog/how-to-stop-your-autoresearch-loop-from-cheating"
+    },
+    {
+      "id": "20260321-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google 重組 Project Mariner 團隊，browser agent 路線退場",
+      "summary": "Google DeepMind 的 Project Mariner 團隊成員被調往 Gemini Agent，業界共識形成：CLI-based coding agent 勝出，browser agent 難以規模化。",
+      "tags": [
+        "ai agent",
+        "multi-agent",
+        "agentic engineering"
+      ],
+      "url": "https://www.mediapost.com/publications/article/413645/google-browser-teams-ai-pivot-chases-openclaw-tre.html",
+      "source": "MediaPost / WIRED",
+      "sourceUrl": "https://www.mediapost.com/publications/article/413645/google-browser-teams-ai-pivot-chases-openclaw-tre.html"
+    },
+    {
+      "id": "20260321-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare CEO 預測：2027 年 AI bot 流量將超越人類網路流量",
+      "summary": "Matthew Prince 在 SXSW 指出 AI agent 造訪網站數量是人類千倍，需數百萬個 sandbox 動態生成與銷毀，SEO 和廣告模式將根本改變。",
+      "tags": [
+        "edge runtime",
+        "serverless",
+        "ai agent",
+        "infrastructure"
+      ],
+      "url": "https://searchengineland.com/bots-overtake-human-web-usage-2027-472109",
+      "source": "Search Engine Land",
+      "sourceUrl": "https://searchengineland.com/bots-overtake-human-web-usage-2027-472109"
+    },
+    {
+      "id": "20260321-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google 發布 Antigravity — AI Studio 升級為 production-ready app builder",
+      "summary": "Google 在 AI Studio 中整合 Antigravity agent，讓使用者透過自然語言提示建構完整的 production-ready web app，直接對標 Claude Code。",
+      "tags": [
+        "vibe coding",
+        "ai agent",
+        "code generation",
+        "Google"
+      ],
+      "url": "https://aistudio.google.com",
+      "source": "India Today Tech",
+      "sourceUrl": "https://www.indiatoday.in/technology/news/story/google-takes-on-anthropic-new-ai-studio-update-lets-you-make-full-web-apps-from-simple-prompts-2884614-2026-03-20"
+    },
+    {
+      "id": "20260321-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor Composer 2 被揭露為 Kimi K2.5 微調版本，引爆開源授權爭議",
+      "summary": "Cursor 號稱自研的 Composer 2 實為 Moonshot AI 的 Kimi K2.5 加上 RL 微調。API 洩漏的 model ID 揭露真相，Moonshot AI 確認 tokenizer 完全相同。事件衝擊 open-weight 模型信任鏈。",
+      "tags": [
+        "ai coding",
+        "open-source license",
+        "reinforcement learning",
+        "distillation"
+      ],
+      "url": "https://cursor.com/blog/composer-2",
+      "source": "AwesomeAgents / HN",
+      "sourceUrl": "https://awesomeagents.ai/news/cursor-composer-2-kimi-k25-license-violation/"
+    },
+    {
       "id": "20260321-ai-006",
       "radar": "ai-infra",
       "date": "2026-03-21",
