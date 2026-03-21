@@ -12054,6 +12054,205 @@
       "url": "https://github.com/facebook/lifeguard",
       "source": "GitHub / Meta",
       "sourceUrl": "https://github.com/facebook/lifeguard"
+    },
+    {
+      "id": "20260321-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "HKUDS/ClawTeam — Agent Swarm Intelligence",
+      "summary": "港大 HKUDS 團隊出品，一行指令啟動多 agent 協作，支援 swarm intelligence 模式自動拆解任務。",
+      "tags": [
+        "ai-agent",
+        "swarm",
+        "multi-agent"
+      ],
+      "url": "https://github.com/HKUDS/ClawTeam",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/HKUDS/ClawTeam",
+      "stars": 2091,
+      "createdDate": "2026-03-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260321-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "MoonshotAI/Attention-Residuals — New attention mechanism",
+      "summary": "Moonshot AI 新 attention mechanism 研究，結合 residual connections 改善 transformer 推理品質。",
+      "tags": [
+        "ai-research",
+        "transformer",
+        "attention"
+      ],
+      "url": "https://github.com/MoonshotAI/Attention-Residuals",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/MoonshotAI/Attention-Residuals",
+      "stars": 2247,
+      "createdDate": "2026-03-15"
+    },
+    {
+      "id": "20260321-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "davebcn87/pi-autoresearch — Autonomous experiment loop",
+      "summary": "Pi coding agent 自動實驗擴充，讓 agent 無人值守反覆跑 ML 實驗、分析結果、調整方向。",
+      "tags": [
+        "coding-agent",
+        "autonomous-research",
+        "pi"
+      ],
+      "url": "https://github.com/davebcn87/pi-autoresearch",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/davebcn87/pi-autoresearch",
+      "stars": 2509,
+      "createdDate": "2026-03-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260321-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "pasky/chrome-cdp-skill — Live Chrome for AI agents",
+      "summary": "讓 AI agent 直接透過 CDP 操作正在使用的 Chrome 分頁，不需另開 headless browser。",
+      "tags": [
+        "browser-automation",
+        "chrome-cdp",
+        "skill"
+      ],
+      "url": "https://github.com/pasky/chrome-cdp-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/pasky/chrome-cdp-skill",
+      "stars": 2429,
+      "createdDate": "2026-03-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260321-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "TianyiDataScience/openclaw-control-center — Visual dashboard",
+      "summary": "把 OpenClaw 從黑箱變成可視化控制台，即時顯示 agent 狀態、memory、任務進度。",
+      "tags": [
+        "openclaw",
+        "dashboard",
+        "monitoring"
+      ],
+      "url": "https://github.com/TianyiDataScience/openclaw-control-center",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/TianyiDataScience/openclaw-control-center",
+      "stars": 2330,
+      "createdDate": "2026-03-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260321-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "VoltAgent/awesome-codex-subagents — 130+ Codex subagents",
+      "summary": "收集 130+ 個 Codex 專用 subagent，涵蓋前後端、測試、文件、DevOps 各種場景。",
+      "tags": [
+        "codex",
+        "subagents",
+        "awesome-list"
+      ],
+      "url": "https://github.com/VoltAgent/awesome-codex-subagents",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/VoltAgent/awesome-codex-subagents",
+      "stars": 1841,
+      "createdDate": "2026-03-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260321-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "zerobootdev/zeroboot — Sub-ms VM sandboxes",
+      "summary": "CoW forking + KVM/Firecracker，不到 1ms 啟動 Python VM sandbox，每 instance 只用 258KB RAM。",
+      "tags": [
+        "vm-sandbox",
+        "security",
+        "firecracker",
+        "rust"
+      ],
+      "url": "https://github.com/zerobootdev/zeroboot",
+      "source": "GitHub API + Show HN",
+      "sourceUrl": "https://github.com/zerobootdev/zeroboot",
+      "stars": 1414,
+      "createdDate": "2026-03-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260321-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "nidhinjs/prompt-master — AI prompt writing skill",
+      "summary": "Claude skill，針對不同 AI 工具寫精確 prompt，保留完整 context，減少 token 浪費。",
+      "tags": [
+        "prompt-engineering",
+        "skill",
+        "claude-code"
+      ],
+      "url": "https://github.com/nidhinjs/prompt-master",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/nidhinjs/prompt-master",
+      "stars": 1725,
+      "createdDate": "2026-03-11"
+    },
+    {
+      "id": "20260321-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "my-claude-utils/clsh — Remote terminal for AI agents",
+      "summary": "從手機、平板任意裝置遠端操作 terminal 和 AI agent，等於隨身帶著 coding agent。",
+      "tags": [
+        "remote-terminal",
+        "mobile",
+        "cli"
+      ],
+      "url": "https://github.com/my-claude-utils/clsh",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/my-claude-utils/clsh",
+      "stars": 325,
+      "createdDate": "2026-03-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260321-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-03-21",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "pbakaus/impeccable — Design language for AI agents",
+      "summary": "專為 AI coding agent 設計的 design language，解決 vibe coding 「功能對但醜到爆」的痛點。",
+      "tags": [
+        "design-system",
+        "ui-design",
+        "vibe-coding"
+      ],
+      "url": "https://github.com/pbakaus/impeccable",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 11347,
+      "createdDate": "2025-11-16",
+      "license": "Apache-2.0"
     }
   ]
 }
