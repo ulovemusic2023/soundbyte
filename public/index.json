@@ -1,6 +1,164 @@
 {
   "entries": [
     {
+      "id": "20260321-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-03-21",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Karpathy 的 autoresearch：agent 團隊模擬研究社群",
+      "summary": "Karpathy 的 autoresearch 系統讓 AI agent 在 2 天跑 700 個實驗，發現 20 個優化。Programming is now supervisory。",
+      "tags": [
+        "agentic",
+        "ai coding",
+        "supervisory programming"
+      ],
+      "url": "https://www.nextbigfuture.com/2026/03/andrej-karpathy-on-code-agents-autoresearch-and-the-self-improvement-loopy-era-of-ai.html",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://www.nextbigfuture.com/2026/03/andrej-karpathy-on-code-agents-autoresearch-and-the-self-improvement-loopy-era-of-ai.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260321-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-03-21",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Sam Altman 的 Token 經濟學：Universal Basic Compute",
+      "summary": "OpenAI 的商業模式就是賣 token。Altman 提出 Universal Basic Compute 概念：每個人獲得 AI 算力配額，可以自用、轉賣或捐贈。",
+      "tags": [
+        "monetization",
+        "pricing",
+        "ai future"
+      ],
+      "url": "https://www.businessinsider.com/sam-altman-tokens-ai-ubi-universalbasic-income-2026-3",
+      "source": "Sam Altman (OpenAI)",
+      "sourceUrl": "https://www.businessinsider.com/sam-altman-tokens-ai-ubi-universalbasic-income-2026-3",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260321-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-21",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Tobi Lütke 的 MRI 故事：reflexively reaching for AI",
+      "summary": "Shopify CEO 用 Claude 在 USB 上生成 HTML MRI viewer。Reflexively reaching for AI — 當 AI 成為預設反射，整個工作流都會重構。",
+      "tags": [
+        "ai native",
+        "founder mode"
+      ],
+      "url": "https://www.thenews.com.pk/latest/1395717-shopify-ceo-uses-ai-to-build-mri-viewer-skips-windows-software",
+      "source": "Tobi Lütke (Shopify)",
+      "sourceUrl": "https://www.thenews.com.pk/latest/1395717-shopify-ceo-uses-ai-to-build-mri-viewer-skips-windows-software",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260321-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-21",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Microsoft 統一 Copilot 組織：從混亂到聚焦",
+      "summary": "Microsoft 合併消費者和企業 Copilot 團隊（原本超過 12 個版本），收斂到四個支柱。產品線膨脹到連客戶都搞混時的 founder mode 操作。",
+      "tags": [
+        "organizational design",
+        "founder mode"
+      ],
+      "url": "https://blogs.microsoft.com/blog/2026/03/17/announcing-copilot-leadership-update/",
+      "source": "Satya Nadella (Microsoft)",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/03/17/announcing-copilot-leadership-update/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260321-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-21",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Nadella 在 Morgan Stanley 的 AI capex 辯護",
+      "summary": "Nadella 把當前 AI 基礎設施投資比喻為 2014 年的雲端擴張。AI is not yet fully cracked — 未來會是異質化生態系。",
+      "tags": [
+        "ai capex",
+        "platform shift",
+        "growth mindset"
+      ],
+      "url": "https://www.morganstanley.com/insights/articles/microsoft-ceo-satya-nadella-ai-capex-tmt-conference",
+      "source": "Satya Nadella (Microsoft)",
+      "sourceUrl": "https://www.morganstanley.com/insights/articles/microsoft-ceo-satya-nadella-ai-capex-tmt-conference",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260321-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-21",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Jensen Huang GTC 2026：AI 推論到達 inflection point",
+      "summary": "AI 產業正從訓練階段轉向推論階段。Huang 預測到 2027 年底將帶來至少 1 兆美元營收。衡量效率的指標從 FLOPS 轉為每瓦 token 成本。",
+      "tags": [
+        "ai factory",
+        "inference",
+        "platform shift"
+      ],
+      "url": "https://siliconangle.com/2026/03/16/ai-inflection-point-nvidias-jensen-huang-outlines-vision-agents-ai-factory-forecasts-big-jump-revenue/",
+      "source": "Jensen Huang (NVIDIA)",
+      "sourceUrl": "https://siliconangle.com/2026/03/16/ai-inflection-point-nvidias-jensen-huang-outlines-vision-agents-ai-factory-forecasts-big-jump-revenue/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260321-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-21",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Amodei 的安全護城河：原則即品牌差異化",
+      "summary": "Dario Amodei 拒絕 Pentagon 對 Claude 的無限制軍事存取，把安全立場從成本變成品牌資產。Trust 比 compliance 更值錢。",
+      "tags": [
+        "ai safety",
+        "leadership",
+        "skin in the game"
+      ],
+      "url": "https://www.latimes.com/business/story/2026-03-20/pentagons-attempt-to-strong-arm-anthropic-rouses-resistance-reflection-in-silicon-valley",
+      "source": "Dario Amodei (Anthropic)",
+      "sourceUrl": "https://www.latimes.com/business/story/2026-03-20/pentagons-attempt-to-strong-arm-anthropic-rouses-resistance-reflection-in-silicon-valley",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260321-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-21",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Karpathy 的 AI 職業曝險地圖：數位工作 9/10 分",
+      "summary": "Karpathy 用 Gemini Flash 分析 342 種美國職業的 AI 曝險程度，核心框架是：工作越純數位、螢幕化，AI 替代率越高。軟體工程師、資料科學家、金融分析師都拿到 9/10。",
+      "tags": [
+        "ai exposure",
+        "mental model",
+        "future of work"
+      ],
+      "url": "https://deeperinsights.com/ai-blog/karpathy-on-ai-exposed-jobs/",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://deeperinsights.com/ai-blog/karpathy-on-ai-exposed-jobs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260321-sw-007",
       "radar": "software-dev",
       "date": "2026-03-21",
