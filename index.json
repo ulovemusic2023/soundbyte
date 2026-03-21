@@ -1,6 +1,107 @@
 {
   "entries": [
     {
+      "id": "20260321-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "WhispSynth + CosyWhisper: Whisper Speech Synthesis",
+      "summary": "用 DDSP pitch-free 方法 + CosyVoice3 建構 118 小時耳語語料庫。Fine-tune 出 CosyWhisper，naturalness 接近真人水準。",
+      "tags": [
+        "tts",
+        "whisper-speech",
+        "voice-conversion",
+        "cosyvoice",
+        "research"
+      ],
+      "url": "https://arxiv.org/abs/2603.14853",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.14853",
+      "license": "Research"
+    },
+    {
+      "id": "20260321-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "NV-Bench: Nonverbal Vocalization TTS Benchmark",
+      "summary": "首個針對 TTS 系統非語言發聲的標準化評測框架。1,651 筆多語言標註資料，涵蓋 14 類 NV，測試 Orpheus-TTS 等模型。",
+      "tags": [
+        "tts",
+        "benchmark",
+        "nonverbal",
+        "research"
+      ],
+      "url": "https://arxiv.org/abs/2603.15352",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.15352",
+      "license": "Research"
+    },
+    {
+      "id": "20260321-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "NVIDIA Nemotron 3 Super: 120B MoE Open Model",
+      "summary": "NVIDIA GTC 2026 發布的 120.6B MoE 開源模型，推理時啟用 12.7B 參數。1M token context window、470 tok/s 輸出。Apache 2.0 授權。",
+      "tags": [
+        "nvidia",
+        "llm",
+        "moe",
+        "open-source",
+        "1m-context"
+      ],
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-super",
+      "source": "NVIDIA",
+      "sourceUrl": "https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/",
+      "vram": "~40GB+ (MoE full weights)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260321-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Ultralytics v8.4.24: Modular Inference Backend",
+      "summary": "YOLO26 更新：全新模組化推理後端架構，支援多格式模型統一部署。改進多 GPU 訓練與驗證流程。",
+      "tags": [
+        "yolo",
+        "object-detection",
+        "inference",
+        "computer-vision"
+      ],
+      "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.24",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.24",
+      "vram": "~2-4GB",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260321-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Orpheus-TTS: Llama-based TTS with Nonverbal Control",
+      "summary": "基於 Llama-3B 的開源 TTS 系統，支援 zero-shot voice cloning、情緒控制與非語言發聲。延遲約 200ms 串流，搭配 vLLM 推理引擎。多語言研究模型家族涵蓋 7 種語言。",
+      "tags": [
+        "tts",
+        "llama",
+        "voice-cloning",
+        "open-source",
+        "apache-2.0"
+      ],
+      "url": "https://github.com/canopyai/Orpheus-TTS",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/canopyai/Orpheus-TTS",
+      "vram": "~6GB (3B model)",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260321-fm-008",
       "radar": "founder-mind",
       "date": "2026-03-21",
