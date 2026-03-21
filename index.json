@@ -1,6 +1,123 @@
 {
   "entries": [
     {
+      "id": "20260321-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tencent WeKnora — LLM-powered RAG 框架",
+      "summary": "騰訊出品的 LLM 文件理解 + RAG 框架，深度語意檢索 + 結構化 chunking + context-aware QA。完整 document parsing → retrieval pipeline。",
+      "tags": [
+        "rag",
+        "semantic-search",
+        "document-parsing"
+      ],
+      "url": "https://github.com/Tencent/WeKnora",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/20/Tencent-WeKnora.html",
+      "vram": "LLM dependent",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260321-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SGLang — 高效能 LLM Serving 框架",
+      "summary": "高效能 LLM serving：tensor parallelism + CUDA Graphs + FlashAttention + chunked prefill。SpecForge 整合 6.8x 加速，已支援 Qwen 3.5-122B。",
+      "tags": [
+        "llm-inference",
+        "model-serving",
+        "speculative-decoding"
+      ],
+      "url": "https://github.com/sgl-project/sglang",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/20/sgl-project-sglang.html",
+      "vram": "Model dependent",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260321-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vLLM-Omni — Omni-modality 推理框架",
+      "summary": "vLLM 團隊的 omni-modality 推理框架，統一處理 vision+text+audio。OpenAI-compatible API、分散式部署，可接 NVIDIA Dynamo。",
+      "tags": [
+        "llm-inference",
+        "vllm",
+        "multimodal",
+        "model-serving"
+      ],
+      "url": "https://github.com/vllm-project/vllm-omni",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "vram": "4-16+ GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260321-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Chandra OCR 2 — 複雜文件 OCR 模型",
+      "summary": "Datalab 出品 SOTA OCR 模型，專攻複雜表格、手寫、多欄排版，輸出 Markdown/HTML/JSON。olmOCR benchmark 表格 90.7%，支援 29 語言。",
+      "tags": [
+        "ocr",
+        "document-ai",
+        "table-extraction"
+      ],
+      "url": "https://github.com/datalab-to/chandra",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "vram": "4-6 GB",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260321-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llamafile 0.10.0 — Portable LLM Runner 大更新",
+      "summary": "Mozilla portable LLM runner 大更新：core 用最新 llama.cpp 重建，CUDA 回歸 Linux，加 TUI、server mode、multimodal API、Whisper 語音辨識。",
+      "tags": [
+        "llm-inference",
+        "llama.cpp",
+        "whisper",
+        "portable"
+      ],
+      "url": "https://github.com/Mozilla-Ocho/llamafile/releases/tag/0.10.0",
+      "source": "Help Net Security",
+      "sourceUrl": "https://www.helpnetsecurity.com/2026/03/20/llamafile-0-10-0-released/",
+      "vram": "Model dependent",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260321-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GSV-TTS-Lite v0.3.3 — GPT-SoVITS 高效推理引擎",
+      "summary": "GPT-SoVITS V2Pro 的高效推理引擎，速度提升 3.3x、VRAM 砍半到 0.8GB，TTFT 133ms。支援 Flash Attention、批次推理、streaming mode。",
+      "tags": [
+        "tts",
+        "gpt-sovits",
+        "inference",
+        "voice-cloning"
+      ],
+      "url": "https://pypi.org/project/gsv-tts-lite/",
+      "source": "Web Search",
+      "sourceUrl": "https://libraries.io/pypi/gsv-tts-lite",
+      "vram": "0.8 GB",
+      "license": "Unknown"
+    },
+    {
       "id": "20260320-ai-007",
       "radar": "ai-infra",
       "date": "2026-03-20",
