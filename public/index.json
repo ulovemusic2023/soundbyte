@@ -1,6 +1,146 @@
 {
   "entries": [
     {
+      "id": "20260322-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "V-JEPA 2.1: Meta Self-Supervised Video Learning",
+      "summary": "Meta 最新自監督視頻學習模型，ViT-G 規模。Dense predictive loss + deep self-supervision，在多個視頻理解 benchmark 全面領先。",
+      "tags": [
+        "self-supervised",
+        "video-understanding",
+        "pytorch",
+        "meta"
+      ],
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.14482",
+      "vram": "24GB+",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260322-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Fun-CineForge: Zero-Shot Movie Dubbing System",
+      "summary": "阿里通義實驗室 zero-shot 影視配音系統。完整 dataset pipeline + MLLM-based dubbing model，在獨白、對話、多人場景優於 SOTA。3/16 剛開源。",
+      "tags": [
+        "voice-synthesis",
+        "dubbing",
+        "tts",
+        "multimodal"
+      ],
+      "url": "https://github.com/FunAudioLLM/FunCineForge",
+      "source": "FunAudioLLM",
+      "sourceUrl": "https://github.com/FunAudioLLM/FunCineForge",
+      "vram": "~12-16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260322-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "llama.cpp b8469: Grammar Parsing Stability Fix",
+      "summary": "修復 GBNF grammar parsing 的 stack overflow 和無限 hang。引入 cycle detection、迭代式處理、repetition threshold 上限。",
+      "tags": [
+        "llama.cpp",
+        "local-inference",
+        "gguf",
+        "structured-output"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8469",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8469",
+      "vram": "依模型",
+      "license": "MIT"
+    },
+    {
+      "id": "20260322-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Ollama v0.18.0: Nemotron-3-Super + ROCm 7",
+      "summary": "Ollama 重大更新：Nemotron-3-Super cloud、Kimi-K2.5 2x 加速、tool calling 改善、ROCm 7 支援、non-interactive --yes flag。",
+      "tags": [
+        "ollama",
+        "local-inference",
+        "llm-serving"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.18.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.18.0",
+      "vram": "依模型",
+      "license": "MIT"
+    },
+    {
+      "id": "20260322-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "WhisperS2T: 2.3X Faster Whisper ASR Pipeline",
+      "summary": "優化版 Whisper ASR pipeline，比 WhisperX 快 2.3 倍。支援 CTranslate2、TensorRT-LLM 等多種 backend，純 pipeline 設計優化。",
+      "tags": [
+        "whisper",
+        "asr",
+        "speech-to-text",
+        "inference-optimization"
+      ],
+      "url": "https://github.com/shashikg/WhisperS2T",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/22/shashikg-WhisperS2T.html",
+      "vram": "~1-4GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260322-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Irodori-TTS-500M: Japanese Zero-Shot TTS with Emoji Control",
+      "summary": "日語 zero-shot TTS，基於 Rectified Flow DiT + DACVAE。獨特的 emoji 風格控制，可控制說話風格、情緒和音效。500M params，輸出 48kHz。",
+      "tags": [
+        "tts",
+        "zero-shot",
+        "voice-cloning",
+        "japanese",
+        "flow-matching"
+      ],
+      "url": "https://github.com/Aratako/Irodori-TTS",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/Aratako/Irodori-TTS-500M",
+      "vram": "~2GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260322-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Foundation-1: Structured Text-to-Sample Music Diffusion",
+      "summary": "結構化 text-to-sample 音樂 diffusion 模型，可指定樂器、音色、FX、BPM、bar count、key 來生成 loop。ComfyUI 原生整合，~7GB VRAM。",
+      "tags": [
+        "music-generation",
+        "diffusion",
+        "comfyui",
+        "audio-generation"
+      ],
+      "url": "https://huggingface.co/RoyalCities/Foundation-1",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/Saganaki22/ComfyUI-Foundation-1",
+      "vram": "~7GB",
+      "license": "未標示"
+    },
+    {
       "id": "20260321-ai-005",
       "radar": "ai-infra",
       "date": "2026-03-21",
