@@ -12354,6 +12354,128 @@
       "stars": 11347,
       "createdDate": "2025-11-16",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260322-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain 將 Agent Builder 重塑為 LangSmith Fleet",
+      "summary": "企業級 AI agent 管理平台，新增分級權限、Slack 整合、稽核追蹤，解決 agent sprawl 治理難題",
+      "tags": [
+        "ai agent",
+        "agent framework",
+        "enterprise",
+        "langchain"
+      ],
+      "url": "https://blog.langchain.com/introducing-langsmith-fleet/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/introducing-langsmith-fleet/"
+    },
+    {
+      "id": "20260322-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Morgan Stanley 用 CALM + MCP 將 API 上線從兩年縮到兩週",
+      "summary": "以 FINOS CALM JSON schema 定義架構意圖搭配 MCP，自動驗證合規性，Architecture-as-code 大型企業實戰",
+      "tags": [
+        "architecture",
+        "mcp",
+        "api gateway",
+        "enterprise"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/morgan-stanley-apis-mcp-calm/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/morgan-stanley-apis-mcp-calm/"
+    },
+    {
+      "id": "20260322-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Foundry Agent Service 正式 GA",
+      "summary": "基於 OpenAI Responses API 的企業級 agent runtime，支援多語言 SDK、開放模型、BYO VNet、MCP 整合",
+      "tags": [
+        "ai agent",
+        "microsoft",
+        "cloud",
+        "agent framework"
+      ],
+      "url": "https://devblogs.microsoft.com/foundry/foundry-agent-service-ga/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/foundry/foundry-agent-service-ga/"
+    },
+    {
+      "id": "20260322-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Stripe Minions 自主 coding agent 整合 CI/CD",
+      "summary": "Blueprint 模式結合確定性程式碼與靈活 agent 迴圈，直接整合版本控制和自動化測試",
+      "tags": [
+        "ai coding",
+        "agent framework",
+        "ci/cd"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/stripe-autonomous-coding-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/stripe-autonomous-coding-agents/"
+    },
+    {
+      "id": "20260322-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft 用 4 個 AI 模型串聯做 .NET MAUI PR Review",
+      "summary": "Multi-model QA pipeline：4 模型依序提出修復、測試、學習、選擇最佳方案，省 50-70% 時間",
+      "tags": [
+        "ai coding",
+        "code generation",
+        "devops"
+      ],
+      "url": "https://devblogs.microsoft.com/dotnet/accelerating-dotnet-maui-with-ai-agents/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/dotnet/accelerating-dotnet-maui-with-ai-agents/"
+    },
+    {
+      "id": "20260322-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic 81,000 人大規模 Claude 使用者訪談",
+      "summary": "159 國 70 語言最大規模多語言 AI 質化研究，發現依賴性恐懼是使用價值的 3 倍",
+      "tags": [
+        "ai_models",
+        "alignment",
+        "safety"
+      ],
+      "url": "https://www.anthropic.com/features/81k-interviews",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/features/81k-interviews"
+    },
+    {
+      "id": "20260322-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Martin Fowler AI 輔助開發最新觀點整理",
+      "summary": "Middle loop 監督式程式設計、regenerative software 架構、精確程式碼 vs 模糊自然語言規格的反思",
+      "tags": [
+        "agentic engineering",
+        "supervisory programming",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/mf-aiassisted-dev/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/mf-aiassisted-dev/"
     }
   ]
 }
