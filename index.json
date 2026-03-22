@@ -1,6 +1,159 @@
 {
   "entries": [
     {
+      "id": "20260322-sw-016",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Ghostling：Ghostty Zig Library 兩週蓋 macOS Terminal",
+      "summary": "Swift/AppKit 包裝 Ghostty 的 Zig terminal library，兩週打造 macOS terminal。展現 Zig embeddability。",
+      "tags": [
+        "zig",
+        "terminal",
+        "new-languages"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47461378",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47461378"
+    },
+    {
+      "id": "20260322-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "DORA AI Capabilities Model",
+      "summary": "成功導入 AI agent 靠五大組織能力（策略、資料生態、知識可及性、平台工程、小批次工作流程），不靠工具。",
+      "tags": [
+        "platform-engineering",
+        "developer-experience",
+        "dora"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/ai-dora-report/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/ai-dora-report/"
+    },
+    {
+      "id": "20260322-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Martin Fowler Fragments 03-19：Code Review 是判斷力",
+      "summary": "Code review 的價值不在抓 bug 而在引導方向。Charity Majors：observability 對理解 AI 系統行為至關重要。",
+      "tags": [
+        "code-review",
+        "observability",
+        "supervisory-programming"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-03-19.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-03-19.html"
+    },
+    {
+      "id": "20260322-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare Compliant Crawler API",
+      "summary": "Browser Rendering API /crawl endpoint，宣告 crawlPurposes、尊重 Content Signals。AI scraping 走向標準化的重要步驟。",
+      "tags": [
+        "compliant-crawler",
+        "edge-function",
+        "cloudflare"
+      ],
+      "url": "https://developers.cloudflare.com/browser-rendering/rest-api/crawl-endpoint/",
+      "source": "Digiday / Cloudflare",
+      "sourceUrl": "https://digiday.com/media/cloudflares-compliant-crawler-highlights-tension-and-opportunity-in-the-emerging-ai-content-market/"
+    },
+    {
+      "id": "20260322-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Vercel Plugin for Coding Agents：47+ 技能注入",
+      "summary": "Vercel coding agent plugin 透過 knowledge graph 將 47+ 技能注入 Claude Code 和 Cursor。內建專業 agent 和即時 validation。",
+      "tags": [
+        "ai-coding",
+        "vercel",
+        "knowledge-graph-plugin"
+      ],
+      "url": "https://vercel.com/changelog/introducing-vercel-plugin-for-coding-agents",
+      "source": "Vercel",
+      "sourceUrl": "https://vercel.com/changelog/introducing-vercel-plugin-for-coding-agents"
+    },
+    {
+      "id": "20260322-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "InfoQ：AI Coding Agent 現況——Swarm 到 Harness-First",
+      "summary": "QCon London 2026：autonomous coding swarms、OpenAI Codex agent loop、Datadog harness-first 驗證。agent 靠 context engineering 成功。",
+      "tags": [
+        "agentic-engineering",
+        "harness-engineering",
+        "coding-swarm"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/ai-coding-state/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/ai-coding-state/"
+    },
+    {
+      "id": "20260322-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison：用 Claude 分析 HN 評論精準 profiling 用戶",
+      "summary": "用 Algolia API 抓取 HN 用戶 1000 則留言，Claude Opus 4.6 產出精準用戶畫像。揭示 LLM + 公開數據的隱私風險。",
+      "tags": [
+        "ai-profiling",
+        "privacy",
+        "prompt-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/21/profiling-hacker-news-users/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/21/profiling-hacker-news-users/"
+    },
+    {
+      "id": "20260322-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Dreamer：Consumer-First Personal Agent OS",
+      "summary": "David Singleton 的 Dreamer 平台以 Sidekick 為核心的 consumer agent OS。Sidekick 是會造 agent 的 agent，平台提供全套基建，所有 agent 可互相協作。",
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "agent-os"
+      ],
+      "url": "https://www.latent.space/p/dreamer",
+      "source": "Latent Space",
+      "sourceUrl": "https://www.latent.space/p/dreamer"
+    },
+    {
+      "id": "20260322-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-22",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Karpathy：自 12 月起沒寫過一行 code，全面轉向 Agent 導演模式",
+      "summary": "Karpathy 在 No Priors podcast 坦言自 2025 年 12 月起完全不寫 code，改為指揮 AI agent。從 80% 手寫變成 80% agent 完成，用 OpenClaw 打造 Dobby 家庭自動化 agent。",
+      "tags": [
+        "agentic-engineering",
+        "supervisory-programming",
+        "ai-coding"
+      ],
+      "url": "https://www.benzinga.com/markets/tech/26/03/51396403/andrej-karpathy-says-ai-agents-are-rewriting-how-software-gets-built-adds-he-hasnt-typed-a-line-of-c",
+      "source": "Benzinga",
+      "sourceUrl": "https://www.benzinga.com/markets/tech/26/03/51396403/andrej-karpathy-says-ai-agents-are-rewriting-how-software-gets-built-adds-he-hasnt-typed-a-line-of-c"
+    },
+    {
       "id": "20260322-ai-007",
       "radar": "ai-infra",
       "date": "2026-03-22",
