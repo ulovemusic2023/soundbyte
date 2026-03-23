@@ -1,6 +1,71 @@
 {
   "entries": [
     {
+      "id": "20260323-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Design Conductor：AI Agent 12 小時從 Prompt 到晶片 Tape-Out",
+      "summary": "自主 AI agent Design Conductor 從一段需求描述出發，12 小時內完成 VerCore RISC-V CPU（1.5GHz）的完整設計到 GDSII layout，多 agent 架構分工協作。",
+      "tags": ["ai-agent", "multi-agent", "agentic-engineering", "risc-v", "chip-design"],
+      "url": "https://hardforum.com/threads/prompt-to-tape-out-1-5-ghz-risc-v-cpu.2047044/",
+      "source": "Adafruit / HardForum",
+      "sourceUrl": "https://hardforum.com/threads/prompt-to-tape-out-1-5-ghz-risc-v-cpu.2047044/"
+    },
+    {
+      "id": "20260323-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Red Hat Eval-Driven Development：AI Agent 的 8 階段測試框架",
+      "summary": "Red Hat 發布 agentic 系統 8 階段 evaluation 框架：non-deterministic 測試、evaluator model、CI/CD 整合、OpenTelemetry 觀測到 production 持續監控。",
+      "tags": ["llm-evaluation", "evals", "ci-cd", "observability", "opentelemetry"],
+      "url": "https://developers.redhat.com/articles/2026/03/23/eval-driven-development-build-evaluate-ai-agents",
+      "source": "Red Hat Developer",
+      "sourceUrl": "https://developers.redhat.com/articles/2026/03/23/eval-driven-development-build-evaluate-ai-agents"
+    },
+    {
+      "id": "20260323-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cursor Composer 2 透明度風波：Kimi K2.5 底座揭露",
+      "summary": "Cursor Composer 2 未標明底座為 Moonshot AI 的 Kimi K2.5（1 兆參數 MoE），被社群發現後承認。凸顯 open-weight model provenance 執法真空。",
+      "tags": ["open-weight-license", "model-provenance", "ai-coding", "cursor"],
+      "url": "https://cursor.com/blog/composer-2",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/22/cursor-admits-its-new-coding-model-was-built-on-top-of-moonshot-ais-kimi/"
+    },
+    {
+      "id": "20260323-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GitAgent：AI Agent 的 Docker — 跨框架 agent 定義標準",
+      "summary": "GitAgent 提出 framework-agnostic agent 定義格式（agent.yaml + SOUL.md + DUTIES.md + skills/tools），一次定義可 export 到 LangChain/AutoGen/Claude Code。",
+      "tags": ["agent-framework", "git-native-agent-standard", "agentfile"],
+      "url": "https://www.gitagent.sh/",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/03/22/meet-gitagent-the-docker-for-ai-agents-that-is-finally-solving-the-fragmentation-between-langchain-autogen-and-claude-code/"
+    },
+    {
+      "id": "20260323-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Simon Willison：用 Claude Skill 讓 LLM 即時學會 Starlette 1.0",
+      "summary": "Starlette 1.0 發布帶來 breaking changes，Willison 示範用 Claude Skill 注入 API 變更讓 LLM 即刻生成正確 code，實證 context engineering > retraining。",
+      "tags": ["context-engineering", "agent-skills", "ai-coding", "starlette", "python"],
+      "url": "https://simonwillison.net/2026/Mar/22/starlette/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/22/starlette/"
+    },
+    {
       "id": "20260323-sw-005",
       "radar": "software-dev",
       "date": "2026-03-23",
