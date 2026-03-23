@@ -12769,6 +12769,127 @@
       "url": "https://www.infoq.com/news/2026/03/mf-aiassisted-dev/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/03/mf-aiassisted-dev/"
+    },
+    {
+      "id": "20260323-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ollama v0.18.1",
+      "summary": "Ollama 新版加入 Web Search & Fetch 插件，支援 headless 非互動模式，適用 CI/CD。",
+      "tags": [
+        "ollama",
+        "local-inference",
+        "self-hosted-llm"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.18.1",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.18.1",
+      "price": null,
+      "vram": "取決於模型",
+      "license": "MIT"
+    },
+    {
+      "id": "20260323-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp b8475",
+      "summary": "llama.cpp 最新 b8475 修正 server router 和 grammar 解析，SYCL CUDA backend 修復。",
+      "tags": [
+        "llama.cpp",
+        "gguf",
+        "local-inference",
+        "quantization"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8475",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8475",
+      "price": null,
+      "vram": "取決於模型",
+      "license": "MIT"
+    },
+    {
+      "id": "20260323-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Modly — Local AI Image-to-3D",
+      "summary": "本地 AI 圖片轉 3D mesh 桌面應用，完全在 GPU 上跑。",
+      "tags": [
+        "image-generation",
+        "3d-mesh",
+        "local-inference"
+      ],
+      "url": "https://github.com/lightningpixel/modly",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/22/lightningpixel-modly.html",
+      "price": null,
+      "vram": "~4-8GB",
+      "license": "未標明"
+    },
+    {
+      "id": "20260323-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "nvitop — Interactive NVIDIA GPU Viewer",
+      "summary": "互動式 NVIDIA GPU 程序檢視器，一站式 GPU 管理方案。",
+      "tags": [
+        "gpu-monitoring",
+        "cuda",
+        "nvidia"
+      ],
+      "url": "https://github.com/XuehaiPan/nvitop",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/22/XuehaiPan-nvitop.html",
+      "price": null,
+      "vram": "N/A",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260323-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Octopus — LLM API Aggregation",
+      "summary": "個人用 LLM API 聚合服務，統一管理多個 provider 並自動 load balancing。",
+      "tags": [
+        "self-hosted-llm",
+        "model-serving",
+        "api-gateway"
+      ],
+      "url": "https://github.com/bestruirui/octopus",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/22/bestruirui-octopus.html",
+      "price": null,
+      "vram": "N/A",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260323-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "autovoiceevals — Voice AI Self-Improvement",
+      "summary": "Voice AI agent 的自我改進迴圈系統，基於 Karpathy autoresearch 架構。",
+      "tags": [
+        "voice-synthesis",
+        "tts",
+        "ai-devtools"
+      ],
+      "url": "https://github.com/ArchishmanSengupta/autovoiceevals",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/22/ArchishmanSengupta-autovoiceevals.html",
+      "price": null,
+      "vram": "~2-4GB",
+      "license": "MIT"
     }
   ]
 }
