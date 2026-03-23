@@ -1,6 +1,95 @@
 {
   "entries": [
     {
+      "id": "20260323-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Flash-MoE：48GB MacBook 跑 397B 參數模型",
+      "summary": "SSD streaming + MoE 優化，在 48GB MacBook Pro 上以 5.5 tok/s 跑 Qwen3.5-397B。",
+      "tags": [
+        "local-first-ai",
+        "flash-moe",
+        "mixture-of-experts",
+        "apple-silicon"
+      ],
+      "url": "https://www.cultofmac.com/news/data-center-ai-model-on-macbook",
+      "source": "Cult of Mac",
+      "sourceUrl": "https://www.cultofmac.com/news/data-center-ai-model-on-macbook"
+    },
+    {
+      "id": "20260323-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LangChain Textual：RAG Pipeline 的 PII 防護層",
+      "summary": "LangChain × Tonic.ai 推出 langchain-textual，在 RAG pipeline 中自動偵測並處理 PII。",
+      "tags": [
+        "rag",
+        "pii-redaction",
+        "data-security",
+        "langchain"
+      ],
+      "url": "https://securityboulevard.com/2026/03/announcing-langchain-textual-pii-redaction-and-synthesis-for-langchain-on-tonic-textual/",
+      "source": "SecurityBoulevard",
+      "sourceUrl": "https://securityboulevard.com/2026/03/announcing-langchain-textual-pii-redaction-and-synthesis-for-langchain-on-tonic-textual/"
+    },
+    {
+      "id": "20260323-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Booking.com：從 ML Stack 到 Agentic Systems 的進化",
+      "summary": "Booking.com 分享從傳統 ML 推薦系統進化到 agentic systems 的實戰經驗。",
+      "tags": [
+        "agentic-engineering",
+        "machine-learning",
+        "microservices"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/booking-evolution-ai-manuel/",
+      "source": "InfoQ / QCon London 2026",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/booking-evolution-ai-manuel/"
+    },
+    {
+      "id": "20260323-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Stale Code Intelligence：AI Coding 的真正瓶頸是知識管理",
+      "summary": "Jeff Smith 提出 AI model 訓練在過時 repo 上，缺少未文件化架構規則。解法：repository fingerprinting。",
+      "tags": [
+        "context-engineering",
+        "repository-fingerprinting",
+        "ai-coding",
+        "knowledge-management"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/stale-code-intelligence/",
+      "source": "InfoQ / QCon London 2026",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/stale-code-intelligence/"
+    },
+    {
+      "id": "20260323-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Monzo 3000+ Microservices × LLM Agent：非工程師也能修 Bug",
+      "summary": "Monzo 在 QCon London 2026 揭露 3000+ 微服務架構與 LLM 整合。工程慣例編碼為 LLM Skills，PM/設計師可直接處理小 bug。",
+      "tags": [
+        "microservices",
+        "ai-coding",
+        "llm-skills",
+        "agentic-engineering"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/shipping-monzo/",
+      "source": "InfoQ / QCon London 2026",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/shipping-monzo/"
+    },
+    {
       "id": "20260322-sw-016",
       "radar": "software-dev",
       "date": "2026-03-22",
