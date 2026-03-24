@@ -1,6 +1,169 @@
 {
   "entries": [
     {
+      "id": "20260324-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Karpathy: Agentic Engineering 與 Loopy Era — 人類不再打字，而是指揮 Agent 軍團",
+      "summary": "Karpathy 在 No Priors podcast 描述他自 2025 年 12 月起就沒手動寫過一行 code，全面轉向 agentic engineering。提出 loopy era 概念：AI agent 自主設計實驗、訓練模型並自我改進。",
+      "tags": [
+        "agentic engineering",
+        "software 3.0",
+        "loopy era",
+        "ai coding"
+      ],
+      "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260324-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Dario Amodei: AI 到 2030 年達數兆美元營收，80% 瑣事交給 AI",
+      "summary": "Amodei 預測 AI 營收 2030 年達數兆美元規模。AI 先處理 80% schleework，讓人類專注高價值任務。最興奮的是 AI 驅動超越人類能力的前沿科學突破。",
+      "tags": [
+        "ai future",
+        "leverage",
+        "drop-in workers"
+      ],
+      "url": "https://www.youtube.com/watch?v=7GgrldqEXJA",
+      "source": "Dario Amodei",
+      "sourceUrl": "https://www.youtube.com/watch?v=7GgrldqEXJA",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260324-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Ben Thompson: Agents Over Bubbles — 不是泡沫，是需求結構轉型",
+      "summary": "Thompson 推翻自己的 AI 泡沫論。Agent 把 AI 從工具變成執行基礎設施，三階段演進：訓練 → inference → agentic workload。裁員是週期修正，不是 AI 取代。",
+      "tags": [
+        "mental model",
+        "ai future",
+        "compute demand"
+      ],
+      "url": "https://stratechery.com/2026/agents-over-bubbles/",
+      "source": "Ben Thompson / Stratechery",
+      "sourceUrl": "https://weightythoughts.com/p/ai-agents-and-jobs-the-human-bottleneck",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260324-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-24",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Nadella 大改組：Copilot 統一平台 + Suleyman 專注超級智能",
+      "summary": "Nadella 將 Copilot 團隊合併為統一平台，Suleyman 調去專攻超級智能前沿模型。從十幾個散裝版本收束為統一 intelligence platform。",
+      "tags": [
+        "leadership",
+        "platform shift",
+        "organizational design"
+      ],
+      "url": "https://fortune.com/2026/03/18/microsoft-satya-nadella-bet-big-openai-copilot-reshuffling-ai-deck/",
+      "source": "Satya Nadella / Microsoft",
+      "sourceUrl": "https://fortune.com/2026/03/18/microsoft-satya-nadella-bet-big-openai-copilot-reshuffling-ai-deck/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260324-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-24",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "OpenAI Code Red：90% 用戶不付費，企業市場被 Anthropic 搶走",
+      "summary": "Altman 發布 Code Red 警報。ChatGPT 9 億用戶 90% 免費，Anthropic 企業首購贏 3:1。砍 side quest、擴編到 8000 人，集中火力打企業。",
+      "tags": [
+        "enterprise",
+        "monetization",
+        "focus",
+        "go to market"
+      ],
+      "url": "https://www.entrepreneur.com/business-news/openai-issued-a-code-red",
+      "source": "Sam Altman / OpenAI",
+      "sourceUrl": "https://www.entrepreneur.com/business-news/openai-issued-a-code-red",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260324-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-24",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Sahil Lavingia: $10M ARR、1 個員工、10 分鐘部署",
+      "summary": "Gumroad 用 V0 + Cursor/Claude Code + Vercel 達成從想法到上線 10 分鐘。一人維運 $10M ARR、90% 毛利。AI 工具月費 $20-60 替代整個 dev team。",
+      "tags": [
+        "solo founder",
+        "one person company",
+        "ai leverage",
+        "ship fast"
+      ],
+      "url": "https://www.youtube.com/watch?v=T5bSX7vkV2I",
+      "source": "Sahil Lavingia",
+      "sourceUrl": "https://www.youtube.com/watch?v=T5bSX7vkV2I",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260324-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-03-24",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Lenny's Podcast: 影響力是 AI 無法取代的最重要技能",
+      "summary": "Jessica Fain 分享：高管行事曆像閃光燈，會議前 30 秒決勝負。AI 時代反而放大人際影響力的價值。進會議要學習而非說服。",
+      "tags": [
+        "leadership",
+        "decision making",
+        "influence"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain",
+      "source": "Lenny Rachitsky / Jessica Fain",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260324-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-03-24",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "「我大概從 12 月就沒打過一行 code 了」— Karpathy",
+      "summary": "Karpathy 坦言完全停止手動寫 code，進入 AI psychosis 狀態——焦躁驅動、總想最大化 token 使用量，在 Codex 和 Claude 間切換榨乾額度。",
+      "tags": [
+        "ai coding",
+        "agentic engineering",
+        "future of programming"
+      ],
+      "url": "https://www.benzinga.com/markets/tech/26/03/51396403/andrej-karpathy-says-ai-agents-are-rewriting-how-software-gets-built-adds-he-hasnt-typed-a-line-of-code-probably-since-december",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://www.benzinga.com/markets/tech/26/03/51396403/andrej-karpathy-says-ai-agents-are-rewriting-how-software-gets-built-adds-he-hasnt-typed-a-line-of-code-probably-since-december",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260323-sw-010",
       "radar": "software-dev",
       "date": "2026-03-23",
