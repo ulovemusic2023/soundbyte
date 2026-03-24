@@ -8,7 +8,13 @@
       "priority": "paradigm-shift",
       "title": "Design Conductor：AI Agent 12 小時從 Prompt 到晶片 Tape-Out",
       "summary": "自主 AI agent Design Conductor 從一段需求描述出發，12 小時內完成 VerCore RISC-V CPU（1.5GHz）的完整設計到 GDSII layout，多 agent 架構分工協作。",
-      "tags": ["ai-agent", "multi-agent", "agentic-engineering", "risc-v", "chip-design"],
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "agentic-engineering",
+        "risc-v",
+        "chip-design"
+      ],
       "url": "https://hardforum.com/threads/prompt-to-tape-out-1-5-ghz-risc-v-cpu.2047044/",
       "source": "Adafruit / HardForum",
       "sourceUrl": "https://hardforum.com/threads/prompt-to-tape-out-1-5-ghz-risc-v-cpu.2047044/"
@@ -21,7 +27,13 @@
       "priority": "paradigm-shift",
       "title": "Red Hat Eval-Driven Development：AI Agent 的 8 階段測試框架",
       "summary": "Red Hat 發布 agentic 系統 8 階段 evaluation 框架：non-deterministic 測試、evaluator model、CI/CD 整合、OpenTelemetry 觀測到 production 持續監控。",
-      "tags": ["llm-evaluation", "evals", "ci-cd", "observability", "opentelemetry"],
+      "tags": [
+        "llm-evaluation",
+        "evals",
+        "ci-cd",
+        "observability",
+        "opentelemetry"
+      ],
       "url": "https://developers.redhat.com/articles/2026/03/23/eval-driven-development-build-evaluate-ai-agents",
       "source": "Red Hat Developer",
       "sourceUrl": "https://developers.redhat.com/articles/2026/03/23/eval-driven-development-build-evaluate-ai-agents"
@@ -34,7 +46,12 @@
       "priority": "high",
       "title": "Cursor Composer 2 透明度風波：Kimi K2.5 底座揭露",
       "summary": "Cursor Composer 2 未標明底座為 Moonshot AI 的 Kimi K2.5（1 兆參數 MoE），被社群發現後承認。凸顯 open-weight model provenance 執法真空。",
-      "tags": ["open-weight-license", "model-provenance", "ai-coding", "cursor"],
+      "tags": [
+        "open-weight-license",
+        "model-provenance",
+        "ai-coding",
+        "cursor"
+      ],
       "url": "https://cursor.com/blog/composer-2",
       "source": "TechCrunch",
       "sourceUrl": "https://techcrunch.com/2026/03/22/cursor-admits-its-new-coding-model-was-built-on-top-of-moonshot-ais-kimi/"
@@ -47,7 +64,11 @@
       "priority": "medium",
       "title": "GitAgent：AI Agent 的 Docker — 跨框架 agent 定義標準",
       "summary": "GitAgent 提出 framework-agnostic agent 定義格式（agent.yaml + SOUL.md + DUTIES.md + skills/tools），一次定義可 export 到 LangChain/AutoGen/Claude Code。",
-      "tags": ["agent-framework", "git-native-agent-standard", "agentfile"],
+      "tags": [
+        "agent-framework",
+        "git-native-agent-standard",
+        "agentfile"
+      ],
       "url": "https://www.gitagent.sh/",
       "source": "MarkTechPost",
       "sourceUrl": "https://www.marktechpost.com/2026/03/22/meet-gitagent-the-docker-for-ai-agents-that-is-finally-solving-the-fragmentation-between-langchain-autogen-and-claude-code/"
@@ -60,7 +81,13 @@
       "priority": "low",
       "title": "Simon Willison：用 Claude Skill 讓 LLM 即時學會 Starlette 1.0",
       "summary": "Starlette 1.0 發布帶來 breaking changes，Willison 示範用 Claude Skill 注入 API 變更讓 LLM 即刻生成正確 code，實證 context engineering > retraining。",
-      "tags": ["context-engineering", "agent-skills", "ai-coding", "starlette", "python"],
+      "tags": [
+        "context-engineering",
+        "agent-skills",
+        "ai-coding",
+        "starlette",
+        "python"
+      ],
       "url": "https://simonwillison.net/2026/Mar/22/starlette/",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Mar/22/starlette/"
@@ -13044,6 +13071,157 @@
       "price": null,
       "vram": "~2-4GB",
       "license": "MIT"
+    },
+    {
+      "id": "20260324-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic: Claude Mac Computer Use + Dispatch 行動端代理",
+      "summary": "Claude 可直接控制 Mac 桌面操作，Dispatch 讓你從 iPhone 遠端指揮 AI 執行桌面任務。本地執行、沙箱隔離、訂閱制定價，顛覆個人電腦 agent 互動模式。",
+      "tags": [
+        "ai agent",
+        "computer use",
+        "anthropic",
+        "Claude",
+        "personal agent",
+        "paradigm-shift"
+      ],
+      "url": "https://claude.com/product/cowork",
+      "source": "9to5Mac",
+      "sourceUrl": "https://9to5mac.com/2026/03/23/anthropic-is-giving-claude-the-ability-to-use-your-mac-for-you/"
+    },
+    {
+      "id": "20260324-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic Science Blog: 多日 Long-Running Agent 做科學研究",
+      "summary": "Anthropic 發表 Science Blog，展示 Claude Opus 4.6 執行多日自主科學研究：實作微分宇宙學 Boltzmann solver 達到 <1% 誤差。使用 CLAUDE.md + git + Ralph loop 維持長期 agent 記憶。",
+      "tags": [
+        "long-running agents",
+        "scientific computing",
+        "anthropic",
+        "agentic engineering"
+      ],
+      "url": "https://www.anthropic.com/research/introducing-anthropic-science",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/long-running-Claude"
+    },
+    {
+      "id": "20260324-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Gen 13 伺服器：FL2 Rust 重寫，效能翻倍",
+      "summary": "Gen 13 採 AMD EPYC Turin 192 核心，FL2 以 Rust 取代 NGINX+LuaJIT，吞吐量 +50%、延遲 -70%。每瓦效能提升 50%，全球 330+ 城市部署中。",
+      "tags": [
+        "cloudflare",
+        "rust",
+        "edge computing",
+        "infrastructure",
+        "performance"
+      ],
+      "url": "https://blog.cloudflare.com/gen13-launch/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/gen13-launch/"
+    },
+    {
+      "id": "20260324-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "XM Cyber: AWS Bedrock Agent 八大攻擊向量",
+      "summary": "研究揭露 Bedrock agent 的 8 種攻擊路徑：prompt hijacking、Lambda injection、guardrail 弱化、知識庫竊取等。攻擊者利用過度授權身份將 AI agent 變成基礎設施攻擊節點。",
+      "tags": [
+        "security",
+        "aws bedrock",
+        "ai agent",
+        "attack vectors",
+        "prompt injection"
+      ],
+      "url": "https://thehackernews.com/2026/03/we-found-eight-attack-vectors-inside.html",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/03/we-found-eight-attack-vectors-inside.html"
+    },
+    {
+      "id": "20260324-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain: Assistants vs. Claws 雙軌授權模型",
+      "summary": "LangSmith Fleet 將 agent 分為 Assistants（per-user OAuth 繼承用戶權限）和 Claws（固定 org service account）。解決企業多用戶 agent 的資料隔離與授權問題。",
+      "tags": [
+        "langchain",
+        "langsmith",
+        "agent security",
+        "authorization",
+        "enterprise"
+      ],
+      "url": "https://blog.langchain.com/introducing-langsmith-fleet/",
+      "source": "Blockchain News",
+      "sourceUrl": "https://blockchain.news/news/langchain-ai-agents-authorization-assistants-claws-fleet"
+    },
+    {
+      "id": "20260324-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor Glass Alpha: 統一 Agent 工作區 + Cloud Handoff",
+      "summary": "Cursor 推出 Glass alpha — 統一管理 AI coding agents、repos、雲端任務的工作區。Cloud Handoff 支援任務執行中無縫切換本地/雲端環境，搭配 Composer 2 模型。",
+      "tags": [
+        "cursor",
+        "ai coding",
+        "agent workspace",
+        "cloud handoff",
+        "IDE"
+      ],
+      "url": "https://cursor.com/blog/composer-2",
+      "source": "Cursor Forum / Substack",
+      "sourceUrl": "https://forum.cursor.com/t/what-is-cursor-glass/155327"
+    },
+    {
+      "id": "20260324-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HN 熱議：AGENTS.md 三檔案架構成 agent 記憶共識",
+      "summary": "HN 社群形成共識：AGENTS.md + KNOWLEDGE.md + git log 是 stateful agent 的最佳記憶方案。避免 context window 膨脹，用 git commit 提供 agent 近期活動摘要。",
+      "tags": [
+        "hacker news",
+        "agent memory",
+        "AGENTS.md",
+        "context engineering",
+        "git"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47486287",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47486287"
+    },
+    {
+      "id": "20260324-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic: Vibe Physics — AI 研究生 2 週寫出高能物理論文",
+      "summary": "Claude Opus 4.5 用 270 sessions、36M tokens、50-60 小時人類監督，在兩週內完成一篇高能物理論文。揭示 AI 作為「快速但需要監督的博士後」的定位。",
+      "tags": [
+        "anthropic",
+        "scientific computing",
+        "ai research",
+        "long-running agents"
+      ],
+      "url": "https://www.anthropic.com/research/vibe-physics",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/vibe-physics"
     }
   ]
 }
