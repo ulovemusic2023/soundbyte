@@ -13385,6 +13385,179 @@
       "url": "https://www.anthropic.com/research/vibe-physics",
       "source": "Anthropic Research",
       "sourceUrl": "https://www.anthropic.com/research/vibe-physics"
+    },
+    {
+      "id": "20260324-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "GPT-5.4 Pro 解出 FrontierMath 開放數學問題",
+      "summary": "Epoch AI 確認 GPT-5.4 Pro 解出 2019 年懸而未決的 Ramsey 超圖猜想，數學家 Will Brian 評價為完全可用。AI 從做題跨入做研究的里程碑。",
+      "tags": [
+        "reasoning",
+        "ai_models",
+        "benchmark",
+        "mathematics"
+      ],
+      "url": "https://epochai.substack.com/p/first-ai-solution-on-frontiermath",
+      "source": "Epoch AI",
+      "sourceUrl": "https://epochai.substack.com/p/first-ai-solution-on-frontiermath"
+    },
+    {
+      "id": "20260324-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Mozilla AI Cq — Coding Agent 的 Stack Overflow",
+      "summary": "開源專案讓 coding agent 共享已驗證解法。Agent 遇問題先查 Cq，找到就用（附信心分數），找不到就實驗後回報。已有 Claude Code、OpenCode plugin 和 MCP server PoC。",
+      "tags": [
+        "ai_agent",
+        "agent framework",
+        "knowledge base",
+        "mcp"
+      ],
+      "url": "https://blog.mozilla.ai/cq-stack-overflow-for-agents/",
+      "source": "Mozilla AI",
+      "sourceUrl": "https://blog.mozilla.ai/cq-stack-overflow-for-agents/"
+    },
+    {
+      "id": "20260324-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Black Duck Signal — AI 生成 code 的專屬 AppSec",
+      "summary": "RSA 2026 發表。用 ContextAI 掃描 AI 生成 code，透過 MCP 整合 Copilot/Claude Code/Cursor，即時驗證漏洞可利用性並自動修復。",
+      "tags": [
+        "security",
+        "ai coding",
+        "supply chain security",
+        "mcp"
+      ],
+      "url": "https://www.blackduck.com/blog/black-duck-signal-security-that-moves-at-the-speed-of-ai.html",
+      "source": "Black Duck",
+      "sourceUrl": "https://www.blackduck.com/blog/black-duck-signal-security-that-moves-at-the-speed-of-ai.html"
+    },
+    {
+      "id": "20260324-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cycode Agentic Development Security Platform",
+      "summary": "專為 ADLC 設計。Context Intelligence Graph 映射人寫+AI code 關係，Exploitability Agent 降 94% false positive。支援 Cursor/Windsurf/Copilot MCP 整合。",
+      "tags": [
+        "security",
+        "ai_agent",
+        "devops_infra"
+      ],
+      "url": "https://cycode.com/blog/securing-adlc/",
+      "source": "Cycode",
+      "sourceUrl": "https://cycode.com/blog/securing-adlc/"
+    },
+    {
+      "id": "20260324-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Operant AI Agent ScopeGuard — Agent 行為即時防護",
+      "summary": "GPU 加速即時監控 agent 行為：定義 scope、逐動作驗證、違規直接阻擋。支援 LangChain/LlamaIndex/CrewAI。",
+      "tags": [
+        "ai_agent",
+        "guardrails",
+        "safety"
+      ],
+      "url": "https://www.globenewswire.com/news-release/2026/03/23/3260444/0/en/Operant-AI-Launches-Agent-ScopeGuard-to-Stop-Rogue-AI-Agents-Before-They-Cause-Real-World-Damage.html",
+      "source": "Operant AI",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/03/23/3260444/0/en/Operant-AI-Launches-Agent-ScopeGuard-to-Stop-Rogue-AI-Agents-Before-They-Cause-Real-World-Damage.html"
+    },
+    {
+      "id": "20260324-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Geordie AI BEAM — Context Engineering 驅動的 Agent 治理",
+      "summary": "用 context engineering 即時評估 agent 風險並回饋自適應控制策略，取代傳統 proxy/gateway 靜態規則。RSAC Innovation Sandbox 展示中。",
+      "tags": [
+        "ai_agent",
+        "context engineering",
+        "guardrails"
+      ],
+      "url": "https://www.globenewswire.com/news-release/2026/03/23/3260439/0/en/Geordie-AI-Introduces-Beam-The-First-AI-Agent-Remediation-Suite-with-Context-Engineering.html",
+      "source": "Geordie AI",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/03/23/3260439/0/en/Geordie-AI-Introduces-Beam-The-First-AI-Agent-Remediation-Suite-with-Context-Engineering.html"
+    },
+    {
+      "id": "20260324-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "QCon London: 瀏覽器內跑 AI — Edge Inference 實戰",
+      "summary": "Transformers.js v4 + WebGPU 在瀏覽器跑 20B model（60 tok/s）、Chrome Prompt API 搭 Gemini Nano 零下載推理。量化壓縮 7GB→2GB。",
+      "tags": [
+        "edge runtime",
+        "local-first AI",
+        "webassembly"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/qcon-ai-at-the-edge/",
+      "source": "InfoQ / QCon London 2026",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/qcon-ai-at-the-edge/"
+    },
+    {
+      "id": "20260324-sw-016",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "HuggingFace EVA — Voice Agent 端對端評估框架",
+      "summary": "ServiceNow × HuggingFace。Bot-to-bot 架構評估多輪語音對話，產出 EVA-A（任務成功率）+ EVA-X（對話體驗）雙分數。",
+      "tags": [
+        "llm evaluation",
+        "evals",
+        "multimodal"
+      ],
+      "url": "https://huggingface.co/blog/ServiceNow-AI/eva",
+      "source": "ServiceNow AI / HuggingFace",
+      "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/eva"
+    },
+    {
+      "id": "20260324-sw-017",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Claude Code Cheat Sheet（HN 355 pts）",
+      "summary": "社群製作 Claude Code 完整速查表：快捷鍵、slash commands、skills system、MCP 設定一頁涵蓋。每日 cron 自動更新 changelog。",
+      "tags": [
+        "ai coding",
+        "copilot",
+        "developer experience"
+      ],
+      "url": "https://cc.storyfox.cz",
+      "source": "HN 社群",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47495527"
+    },
+    {
+      "id": "20260324-sw-018",
+      "radar": "software-dev",
+      "date": "2026-03-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "ProofShot — 給 AI Coding Agent 眼睛驗 UI",
+      "summary": "讓 coding agent 截圖驗證自己蓋的 UI 是否符合設計稿，解決 agent 只看 code 不看畫面的盲區。",
+      "tags": [
+        "ai coding",
+        "ai_agent",
+        "evals"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47487584",
+      "source": "Argil / HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47487584"
     }
   ]
 }
