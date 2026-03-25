@@ -13729,6 +13729,209 @@
       "url": "https://martinfowler.com/fragments/2026-03-19.html",
       "source": "Martin Fowler",
       "sourceUrl": "https://martinfowler.com/fragments/2026-03-19.html"
+    },
+    {
+      "id": "20260325-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "flash-moe — 在 MacBook 48GB 上跑 397B MoE 模型 4.4 tok/s",
+      "summary": "純 C/Metal inference engine，在 MacBook Pro 48GB RAM 上跑 Qwen3.5-397B-A17B MoE 模型。209GB 模型從 SSD 串流，手寫 Metal shader。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "moe",
+        "metal",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/danveloper/flash-moe",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1864,
+      "createdDate": "2026-03-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "claude-peers-mcp — Claude Code 多 session 即時通訊",
+      "summary": "MCP server 讓多個 Claude Code session 互相發現、即時對話。透過 localhost broker + SQLite。",
+      "tags": [
+        "mcp",
+        "claude-code",
+        "multi-agent"
+      ],
+      "url": "https://github.com/louislva/claude-peers-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1118,
+      "createdDate": "2026-03-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "OpenSquirrel — Rust/GPUI 多 agent 控制中心",
+      "summary": "Rust/GPUI 打造的 coding agent 控制中心，同時管理 Claude Code、Codex、Cursor、OpenCode 多個 session。",
+      "tags": [
+        "coding-agent",
+        "rust",
+        "gpui",
+        "multi-agent"
+      ],
+      "url": "https://github.com/Infatoshi/OpenSquirrel",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1312,
+      "createdDate": "2026-03-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "MiniMax-AI/skills — MiniMax 官方 Agent Skill 開源",
+      "summary": "MiniMax 官方開源的 agent skill 集合，3900+ stars 一週內。大模型公司開始推自己的 skill library。",
+      "tags": [
+        "agent-skill",
+        "minimax",
+        "ai-agent"
+      ],
+      "url": "https://github.com/MiniMax-AI/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 3962,
+      "createdDate": "2026-03-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260325-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "codebase-to-course — 一鍵把 codebase 變互動教學",
+      "summary": "Claude Code skill：把任何 codebase 轉成漂亮的互動式單頁 HTML 教學課程。",
+      "tags": [
+        "claude-code",
+        "skill",
+        "education"
+      ],
+      "url": "https://github.com/zarazhangrui/codebase-to-course",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1094,
+      "createdDate": "2026-03-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "mozilla-ai/cq — Agent 共享知識的開放標準",
+      "summary": "Mozilla.ai 的 agent 共享學習標準。Agent 碰到問題產生 KU，其他 agent 查詢避免重蹈覆轍。",
+      "tags": [
+        "agent-learning",
+        "mcp",
+        "mozilla"
+      ],
+      "url": "https://github.com/mozilla-ai/cq",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47491466",
+      "stars": 369,
+      "createdDate": "2026-03-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260325-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "agent-kernel — 最小化 Agent 持久狀態核心",
+      "summary": "最小化 agent 狀態核心，clone 後指向 coding agent 就能讓它有持久狀態。",
+      "tags": [
+        "agent-state",
+        "coding-agent"
+      ],
+      "url": "https://github.com/oguzbilgic/agent-kernel",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 203,
+      "createdDate": "2026-03-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "hunk — Agent 專用 Terminal Diff Viewer",
+      "summary": "為 agentic coder 設計的 terminal diff viewer，review-first 設計處理 AI agent changeset。",
+      "tags": [
+        "diff-viewer",
+        "code-review",
+        "terminal"
+      ],
+      "url": "https://github.com/modem-dev/hunk",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 236,
+      "createdDate": "2026-03-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "jarvis-v3 — 全本地語音介面 for Claude Code",
+      "summary": "Apple Silicon 全本地語音介面。Parakeet STT + Kokoro TTS + 雙 VAD，完全離線。",
+      "tags": [
+        "voice-interface",
+        "stt",
+        "tts",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/mp-web3/jarvis-v3",
+      "source": "GitHub API (topic: text-to-speech)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "stars": 24,
+      "createdDate": "2026-03-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-03-25",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "slavingia/skills — Gumroad 創辦人的 Minimalist Entrepreneur Skills",
+      "summary": "Gumroad 創辦人 Sahil Lavingia 根據《The Minimalist Entrepreneur》做的 Claude Code skills。",
+      "tags": [
+        "agent-skill",
+        "entrepreneurship",
+        "claude-code"
+      ],
+      "url": "https://github.com/slavingia/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1074,
+      "createdDate": "2026-03-23",
+      "license": "MIT"
     }
   ]
 }
