@@ -1,6 +1,145 @@
 {
   "entries": [
     {
+      "id": "20260325-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "SAGE-GRPO — Video Generation Post-Training 用 GRPO",
+      "summary": "Tencent Hunyuan 開源的 video generation post-training 框架，用 GRPO 做 reward-guided alignment。提出 Manifold-Aware SDE，在 HunyuanVideo-1.5 上實作。",
+      "tags": [
+        "video-generation",
+        "grpo",
+        "post-training",
+        "hunyuan"
+      ],
+      "url": "https://github.com/Tencent-Hunyuan/SAGE-GRPO",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/Tencent-Hunyuan/SAGE-GRPO",
+      "vram": ">48GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260325-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "InSpatio-World — 圖片+深度生成 camera trajectory 影片",
+      "summary": "從單張圖片+深度估計+文字生成 camera 控制影片。1.3B 版本可跑在 16GB 卡，基於 Wan2.1 架構，附帶完整 pipeline。",
+      "tags": [
+        "video-generation",
+        "depth",
+        "camera-control",
+        "wan2.1"
+      ],
+      "url": "https://github.com/inspatio/inspatio-world",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/25/inspatio-inspatio-world.html",
+      "vram": "~12-16GB (1.3B)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260325-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Nanonets docext + OCR-s 3B — OCR-free 文件抽取工具包",
+      "summary": "OCR-free 文件資訊抽取工具包，新推出 3B VLM 模型。支援 PDF/圖片轉 Markdown，辨識 LaTeX、簽名、浮水印、表格。",
+      "tags": [
+        "ocr",
+        "document-ai",
+        "vlm",
+        "markdown"
+      ],
+      "url": "https://github.com/NanoNets/docext",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/24/NanoNets-docext.html",
+      "vram": "~8GB（3B VLM）",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260325-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "SqueezeComposer — 時間加速技巧生成長篇音樂",
+      "summary": "用 temporal speed-up trick 解決長篇音樂生成的記憶瓶頸：先生成 2x-8x 加速版，再還原原速。支援續寫、補全、從零生成，以及歌曲伴奏生成。",
+      "tags": [
+        "music-generation",
+        "diffusion",
+        "long-form",
+        "accompaniment"
+      ],
+      "url": "https://arxiv.org/abs/2603.21073",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.21073",
+      "vram": "~10-14GB（估計）",
+      "license": "未明"
+    },
+    {
+      "id": "20260325-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp b8500 — Metal FA HSK=512 + CUDA 13 支援",
+      "summary": "新增 Metal Flash Attention 支援 HSK=512/HSV=512，提升 Apple Silicon 大 context 效能。加入 CUDA 13.1 DLL 建構。",
+      "tags": [
+        "llama.cpp",
+        "flash-attention",
+        "metal",
+        "cuda"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8500",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8500",
+      "vram": "N/A (inference engine)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ollama v0.18.2 — OpenClaw 整合修正",
+      "summary": "修正 OpenClaw 整合問題，確保 npm/git 安裝檢查、websearch package 註冊正確。建議 Ollama + OpenClaw 用戶升級。",
+      "tags": [
+        "ollama",
+        "llm-inference",
+        "openclaw"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.18.2",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.18.2",
+      "vram": "依模型而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20260325-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Chatterbox TTS Server — OpenAI 相容的 TTS 伺服器，支援 voice cloning 與 23 語言",
+      "summary": "Self-host Resemble AI Chatterbox 系列（Original + Multilingual + Turbo 350M）。OpenAI API 相容，支援 voice cloning、大文本智慧分段、有聲書生成，還有 paralinguistic tags。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "openai-compatible",
+        "multilingual"
+      ],
+      "url": "https://github.com/devnen/Chatterbox-TTS-Server",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/03/25/devnen-Chatterbox-TTS-Server.html",
+      "vram": "~4GB (Turbo) / ~6GB (Original)",
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260324-fm-001",
       "radar": "founder-mind",
       "date": "2026-03-24",
