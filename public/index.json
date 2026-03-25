@@ -13558,6 +13558,177 @@
       "url": "https://news.ycombinator.com/item?id=47487584",
       "source": "Argil / HN",
       "sourceUrl": "https://news.ycombinator.com/item?id=47487584"
+    },
+    {
+      "id": "20260325-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Code Auto Mode — AI-guarded autonomous coding permissions",
+      "summary": "Anthropic launches Auto Mode research preview for Claude Code, letting AI autonomously assess and approve each action with built-in safety layer. Claude Cowork gains Mac computer control + Dispatch for iPhone-to-Mac delegation.",
+      "tags": [
+        "ai agent",
+        "agentic",
+        "computer use",
+        "supervisory programming"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/claude-code",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/"
+    },
+    {
+      "id": "20260325-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LiteLLM PyPI Supply Chain Attack — TeamPCP compromises 3.4M daily download package",
+      "summary": "LiteLLM 1.82.7/1.82.8 backdoored via stolen PyPI creds from compromised Trivy scanner. Three-stage malware harvests SSH keys, cloud creds, K8s secrets. Detected in ~2 hours.",
+      "tags": [
+        "supply chain security",
+        "dependency confusion",
+        "zero trust"
+      ],
+      "url": "https://github.com/BerriAI/litellm",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/security/popular-litellm-pypi-package-compromised-in-teampcp-supply-chain-attack/"
+    },
+    {
+      "id": "20260325-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "llm-d joins CNCF Sandbox + GKE Inference Gateway at KubeCon EU 2026",
+      "summary": "Distributed LLM inference framework llm-d officially enters CNCF Sandbox. GKE Inference Gateway with KV-cache aware routing achieves 35%+ TTFT improvement and 52% P95 latency reduction.",
+      "tags": [
+        "kubernetes",
+        "distributed systems",
+        "llm-d inference scheduling",
+        "load balancing"
+      ],
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/llm-d-officially-a-cncf-sandbox-project",
+      "source": "CNCF",
+      "sourceUrl": "https://www.cncf.io/blog/2026/03/24/welcome-llm-d-to-the-cncf-evolving-kubernetes-into-sota-ai-infrastructure/"
+    },
+    {
+      "id": "20260325-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic Economic Index March 2026 — Learning Curves",
+      "summary": "Analysis of 2M conversations: Claude.ai usage diversifying (top-10 tasks drop from 24% to 19%), personal use rises to 42%. API traffic shifts toward directive/automatable workflows.",
+      "tags": [
+        "observed exposure",
+        "agentic engineering",
+        "ai agent"
+      ],
+      "url": "https://www.anthropic.com/economic-index",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/economic-index-march-2026-report"
+    },
+    {
+      "id": "20260325-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netflix Graph Abstraction — 650TB graph data platform with ms latency",
+      "summary": "Netflix internal graph platform managing 650TB with single-digit ms latency. Built on KV Store + EVCache + TimeSeries, gRPC Gremlin-inspired API, global async replication.",
+      "tags": [
+        "distributed systems",
+        "grpc",
+        "sharding",
+        "replication"
+      ],
+      "url": "https://netflixtechblog.com",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/netflix-graph-abstraction/"
+    },
+    {
+      "id": "20260325-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor Fast Regex Search — Trigram indexing for agent code search",
+      "summary": "Cursor builds custom trigram + sparse n-gram index replacing ripgrep, achieving 59x speedup on Linux kernel-scale repos. Inspired by Google CodeSearch and Zoekt.",
+      "tags": [
+        "ai coding",
+        "code generation",
+        "agent-ready devtools"
+      ],
+      "url": "https://cursor.com/blog/fast-regex-search",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/fast-regex-search"
+    },
+    {
+      "id": "20260325-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison: Package Managers Need to Cool Down",
+      "summary": "Post-LiteLLM analysis on pip 26.0 and npm 11.10.0 dependency cooldown mechanisms to reduce supply chain attack windows.",
+      "tags": [
+        "supply chain security",
+        "sbom"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/24/package-managers-need-to-cool-down/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/24/package-managers-need-to-cool-down/"
+    },
+    {
+      "id": "20260325-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cisco AI Defense — Security middleware for LangChain agents",
+      "summary": "Cisco releases runtime security middleware for LangChain with LLM/MCP/Middleware modes. Detects prompt injection and PII leaks with monitor and enforce modes.",
+      "tags": [
+        "guardrails",
+        "prompt injection",
+        "ai agent",
+        "mcp"
+      ],
+      "url": "https://blogs.cisco.com/ai/secure-langchain-agent-cisco-ai-defense",
+      "source": "Cisco AI Blog",
+      "sourceUrl": "https://blogs.cisco.com/ai/secure-langchain-agent-cisco-ai-defense"
+    },
+    {
+      "id": "20260325-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer: How to be a 10x Engineer — interview",
+      "summary": "Gergely Orosz interviews a standout dev on ownership, cross-stack curiosity, stakeholder communication, and framing delays as tradeoffs.",
+      "tags": [
+        "developer experience"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/how-to-be-a-10x-engineer-interview",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/how-to-be-a-10x-engineer-interview"
+    },
+    {
+      "id": "20260325-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Martin Fowler Fragments 3/19 — Code Review in the AI era",
+      "summary": "Fowler on code review as product judgment (not bug-finding), observability importance with AI-generated code, cognitive atrophy from passive AI use.",
+      "tags": [
+        "observability",
+        "supervisory programming",
+        "cognitive debt"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-03-19.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-03-19.html"
     }
   ]
 }
