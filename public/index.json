@@ -14071,6 +14071,156 @@
       "stars": 1074,
       "createdDate": "2026-03-23",
       "license": "MIT"
+    },
+    {
+      "id": "20260325-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Arm AGI CPU — Arm 首顆自研晶片瞄準 Agentic AI",
+      "summary": "Arm 發布 35 年來第一顆自製 data center 晶片 AGI CPU，136 核 Neoverse V3、3nm 製程，Meta 為首發客戶。每機架效能是 x86 的 2 倍以上，專為 AI agent inference 優化。",
+      "tags": [
+        "arm",
+        "agentic ai",
+        "data center",
+        "cpu",
+        "inference"
+      ],
+      "url": "https://newsroom.arm.com/news/arm-agi-cpu-launch",
+      "source": "Arm Newsroom / TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/24/arm-is-releasing-its-first-in-house-chip-in-its-35-year-history/"
+    },
+    {
+      "id": "20260325-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Claude Code Auto Mode — AI 自主判斷權限的安全中間路線",
+      "summary": "Anthropic 推出 Claude Code auto mode：AI classifier 自動評估指令風險，安全操作直接執行、危險操作攔截詢問。比 dangerously-skip-permissions 安全，比逐步確認高效。",
+      "tags": [
+        "anthropic",
+        "claude code",
+        "auto mode",
+        "ai agent",
+        "security"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/claude-code",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/"
+    },
+    {
+      "id": "20260325-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Trivy → CanisterWorm：從安全掃描器到 npm 自我複製蠕蟲",
+      "summary": "Trivy 供應鏈攻擊衍生 CanisterWorm 蠕蟲，利用竊取的 npm token 自動感染 66+ packages。使用 ICP canister 做 C2、systemd 持久化，AI 生成的 code 特徵明顯。",
+      "tags": [
+        "supply chain",
+        "npm",
+        "security",
+        "trivy",
+        "worm"
+      ],
+      "url": "https://thehackernews.com/2026/03/trivy-supply-chain-attack-triggers-self.html",
+      "source": "The Hacker News / Socket",
+      "sourceUrl": "https://socket.dev/blog/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages"
+    },
+    {
+      "id": "20260325-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Hypura — Apple Silicon 上跑超過記憶體大小的 LLM",
+      "summary": "Storage-tier-aware scheduler，自動在 GPU/RAM/NVMe 間分配 tensor。75% I/O 減少、99.5% cache hit rate。Mixtral 8x7B 在 32GB Mac Mini 上跑 2.2 tok/s。",
+      "tags": [
+        "apple silicon",
+        "local inference",
+        "llm",
+        "scheduler",
+        "open source"
+      ],
+      "url": "https://github.com/t8/hypura",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47504695"
+    },
+    {
+      "id": "20260325-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "LiteLLM PyPI 被植入惡意程式碼",
+      "summary": "LiteLLM v1.82.7/1.82.8 在 PyPI 被植入 credential-stealing 後門，源自 Trivy 供應鏈攻擊的連鎖效應。36% 的 cloud 環境使用 LiteLLM。",
+      "tags": [
+        "supply chain",
+        "pypi",
+        "security",
+        "litellm"
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/popular-litellm-pypi-package-compromised-in-teampcp-supply-chain-attack/",
+      "source": "BleepingComputer / Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/24/malicious-litellm/"
+    },
+    {
+      "id": "20260325-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Gartner：Multi-Agent Systems 需要 Event-Driven Architecture",
+      "summary": "Gartner/IDC 共識：MAS 需要即時資料存取和 EDA。內建架構（runtime/memory/tools）+ 外部架構（IAM/observability/guardrails），標準化 MCP/A2A 協定推動跨廠 agent 互通。",
+      "tags": [
+        "multi-agent",
+        "event-driven",
+        "architecture",
+        "gartner",
+        "enterprise"
+      ],
+      "url": "https://solace.com/blog/analysts-say-mas-needs-real-time-context-eda/",
+      "source": "Solace Blog",
+      "sourceUrl": "https://solace.com/blog/analysts-say-mas-needs-real-time-context-eda/"
+    },
+    {
+      "id": "20260325-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Simon Willison：Package Manager 需要冷卻機制",
+      "summary": "pip 26.0 和 npm 11.10.0 引入 dependency age 驗證功能，新版本需等待冷卻期才能安裝。在 Trivy/CanisterWorm 攻擊下，這類防禦愈發重要。",
+      "tags": [
+        "supply chain",
+        "pip",
+        "npm",
+        "security",
+        "package manager"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/24/package-managers-need-to-cool-down/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/24/package-managers-need-to-cool-down/"
+    },
+    {
+      "id": "20260325-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Flash-MoE Streaming Experts：48GB MacBook 跑 397B 模型",
+      "summary": "Dan Woods + Claude Code autoresearch：從 SSD on-demand 串流 MoE expert weights 到 RAM，Qwen 397B 在 48GB MacBook 上跑 5.5 tok/s。local-first AI 的又一突破。",
+      "tags": [
+        "moe",
+        "local inference",
+        "apple silicon",
+        "autoresearch"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/24/streaming-experts/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/24/streaming-experts/"
     }
   ]
 }
