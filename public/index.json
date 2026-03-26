@@ -14221,6 +14221,111 @@
       "url": "https://simonwillison.net/2026/Mar/24/streaming-experts/",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Mar/24/streaming-experts/"
+    },
+    {
+      "id": "20260326-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llamafile v0.10.0 — Mozilla AI 大改版",
+      "summary": "全新 build system 對齊最新 llama.cpp，恢復 GPU 支援（CUDA + Metal）、新增 TUI 終端介面、server mode、multimodal 能力、Whisper 語音辨識，支援 Qwen3.5 模型。",
+      "tags": [
+        "llm-inference",
+        "local-deployment",
+        "llamafile",
+        "multimodal"
+      ],
+      "url": "https://github.com/mozilla-ai/llamafile/releases/tag/0.10.0",
+      "source": "GitHub Release",
+      "sourceUrl": "https://github.com/mozilla-ai/llamafile/releases/tag/0.10.0",
+      "price": null,
+      "vram": "依模型，7B ~4GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260326-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vLLM v0.18.0 — gRPC + GPU-less Render",
+      "summary": "445 commits、213 contributors。新增 gRPC serving、GPU-less Render Serving（多模態前處理與 GPU 推論分離）、NGram GPU Speculative Decoding。",
+      "tags": [
+        "llm-inference",
+        "model-serving",
+        "speculative-decoding",
+        "vllm"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.18.0",
+      "source": "GitHub Release",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.18.0",
+      "price": null,
+      "vram": "依模型，7B ~8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260326-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "transcribe-md — 本地即時語音轉 Markdown",
+      "summary": "用 whisper.cpp + Metal GPU 加速，在 Claude Code 或 Cursor 裡啟動，雙軌錄製（麥克風+系統音訊），自動去重回音。",
+      "tags": [
+        "speech-recognition",
+        "transcription",
+        "whisper",
+        "local"
+      ],
+      "url": "https://github.com/hrescak/transcribe-md",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~150MB model (CPU/Metal)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260326-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ID-LoRA — 影片生成保持人物外貌與聲音",
+      "summary": "基於 LTX-2/LTX-2.3 的 Identity In-Context LoRA，一張參考圖 + 音訊生成高解析度說話影片。",
+      "tags": [
+        "video-generation",
+        "voice-cloning",
+        "lora",
+        "avatar"
+      ],
+      "url": "https://github.com/ID-LoRA/ID-LoRA",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/ID-LoRA/ID-LoRA",
+      "price": null,
+      "vram": "LTX-2 base ~10-12GB",
+      "license": "未標示"
+    },
+    {
+      "id": "20260326-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "BerriAI/litellm — 統一 100+ LLM API Gateway",
+      "summary": "GitHub 全站 trending！統一 100+ LLM API 的 proxy gateway，支援 cost tracking、guardrails、load balancing。",
+      "tags": [
+        "llm-gateway",
+        "api-proxy",
+        "cost-tracking",
+        "infra"
+      ],
+      "url": "https://github.com/BerriAI/litellm",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "0 (proxy only)",
+      "license": "MIT 變體"
     }
   ]
 }
