@@ -14491,6 +14491,142 @@
       "price": null,
       "vram": "0 (proxy only)",
       "license": "MIT 變體"
+    },
+    {
+      "id": "20260326-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-26",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "ARC-AGI-3：首個互動式 AGI 推理 benchmark",
+      "summary": "ARC Prize 2026 發布全新互動式推理 benchmark，AI agent 必須在動態環境中主動探索、建模、設定目標並規劃行動。目前 frontier model <1%，人類 100%。$850K 獎金。",
+      "tags": [
+        "benchmark",
+        "reasoning",
+        "ai agent",
+        "planning",
+        "AGI"
+      ],
+      "url": "https://arcprize.org/competitions/2026/arc-agi-3",
+      "source": "ARC Prize Foundation",
+      "sourceUrl": "https://arcprize.org/competitions/2026/arc-agi-3"
+    },
+    {
+      "id": "20260326-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-26",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Google TurboQuant：KV Cache 壓縮至 3-bit 不掉精度",
+      "summary": "Google Research TurboQuant 用 PolarQuant + QJL 將 KV cache 記憶體縮小 6x，H100 上 8x attention 加速。ICLR 2026 發表。",
+      "tags": [
+        "quantization",
+        "inference",
+        "attention mechanism"
+      ],
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/googles-turboquant-compresses-llm-kv-caches-to-3-bits-with-no-accuracy-loss",
+      "source": "Tom's Hardware",
+      "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/googles-turboquant-compresses-llm-kv-caches-to-3-bits-with-no-accuracy-loss"
+    },
+    {
+      "id": "20260326-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "GitHub Copilot 將用個人方案使用者資料訓練 AI",
+      "summary": "4/24 起 Free/Pro/Pro+ 互動資料預設用於 AI 訓練。Business/Enterprise 不受影響。",
+      "tags": [
+        "copilot",
+        "ai coding",
+        "privacy"
+      ],
+      "url": "https://www.theregister.com/2026/03/26/github_ai_training_policy_changes/",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/03/26/github_ai_training_policy_changes/"
+    },
+    {
+      "id": "20260326-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "CrowdStrike Charlotte AI AgentWorks：no-code 安全 agent 生態系",
+      "summary": "RSA 2026 CrowdStrike 發布 AgentWorks，no-code 建構 security agent，整合多家 frontier model。",
+      "tags": [
+        "ai agent",
+        "security",
+        "zero trust"
+      ],
+      "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/",
+      "source": "CrowdStrike",
+      "sourceUrl": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-charlotte-ai-agentworks-ecosystem-for-building-secure-agents/"
+    },
+    {
+      "id": "20260326-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Context Hub 文件投毒：AI Agent 供應鏈攻擊新手法",
+      "summary": "Andrew Ng 的 Context Hub MCP server 被示範 PoC 攻擊：透過 PR 投毒文件，Haiku 100% 中招。",
+      "tags": [
+        "prompt injection",
+        "supply chain security",
+        "mcp"
+      ],
+      "url": "https://www.theregister.com/2026/03/25/ai_agents_supply_chain_attack_context_hub/",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/03/25/ai_agents_supply_chain_attack_context_hub/"
+    },
+    {
+      "id": "20260326-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison：Slow the Fuck Down — Agent 複雜性爆炸",
+      "summary": "OpenClaw Pi agent 作者 Mario Zechner：agent 讓 bug 以前所未有的速度堆積，cognitive debt 是真實的。",
+      "tags": [
+        "agentic engineering",
+        "cognitive debt"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/25/thoughts-on-slowing-the-fuck-down/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/25/thoughts-on-slowing-the-fuck-down/"
+    },
+    {
+      "id": "20260326-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-26",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenAI 停止 Sora 影片生成服務",
+      "summary": "OpenAI 關閉 Sora，終止 Disney 合作。資源全面轉向 agent 和生產力工具。",
+      "tags": [
+        "ai models",
+        "multimodal"
+      ],
+      "url": "https://www.theregister.com/2026/03/25/openai_kills_sora_product_assassin/",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/03/25/openai_kills_sora_product_assassin/"
+    },
+    {
+      "id": "20260326-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-26",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Ensu：Ente 推出跨平台 Local LLM Chat App",
+      "summary": "Ente 推出 Ensu，完全離線 local LLM 聊天 app，全平台，Rust + Tauri。",
+      "tags": [
+        "local-first AI",
+        "rust",
+        "privacy"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47516650",
+      "source": "Ente / Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47516650"
     }
   ]
 }
