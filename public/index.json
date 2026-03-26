@@ -1,6 +1,171 @@
 {
   "entries": [
     {
+      "id": "20260326-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-03-26",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Dario Amodei 拒絕五角大廈：AI 護欄就是價值底線",
+      "summary": "Anthropic 拒絕移除 Claude 在自主武器和大規模監控的限制，被五角大廈列為供應鏈風險。法官稱政府行為令人不安。AI 護欄就是策略護城河。",
+      "tags": [
+        "AI安全",
+        "價值觀護城河",
+        "領導力",
+        "OneWayDoor"
+      ],
+      "url": "https://www.cbsnews.com/news/pentagon-anthropic-hearing-judge-troubling/",
+      "source": "Dario Amodei",
+      "sourceUrl": "https://www.cbsnews.com/news/pentagon-anthropic-hearing-judge-troubling/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260326-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-03-26",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Jensen Huang：Token 是新原子，AI Factory 是新工廠",
+      "summary": "GTC 2026 核心：資料中心從存資料變成 24/7 生產 token 的工廠。三平台框架，inference 取代 training 成為經濟引擎。",
+      "tags": [
+        "TokenEconomics",
+        "AIFactory",
+        "FullStack",
+        "InferenceInflection"
+      ],
+      "url": "https://www.globaldatacenterhub.com/p/19-key-takeaways-from-jensen-huangs-f2c",
+      "source": "Jensen Huang",
+      "sourceUrl": "https://www.globaldatacenterhub.com/p/19-key-takeaways-from-jensen-huangs-f2c",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260326-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-03-26",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Karpathy：Supply Chain Attack 是軟體恐怖片",
+      "summary": "LiteLLM 遭 supply chain 攻擊，Karpathy 建議用 LLM 複製簡單功能取代 import 整個 library，縮小攻擊面。",
+      "tags": [
+        "SupplyChainSecurity",
+        "VibeCoding",
+        "DependencyMinimalism"
+      ],
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/teslas-former-vp-andrej-karpathy-shares-ai-coding-horror-python-supply-chain-attack-that-could-have-wiped-millions-of-ssl-private-keys-database-passwords-more-and-elon-musk-agrees-says-/articleshow/129802671.cms",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://timesofindia.indiatimes.com/technology/tech-news/teslas-former-vp-andrej-karpathy-shares-ai-coding-horror-python-supply-chain-attack-that-could-have-wiped-millions-of-ssl-private-keys-database-passwords-more-and-elon-musk-agrees-says-/articleshow/129802671.cms",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260326-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-03-26",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Sam Altman：$10 億 OpenAI Foundation——AI 威脅與機會雙重框架",
+      "summary": "OpenAI Foundation 投入 $10 億聚焦生命科學、經濟衝擊、AI 韌性。AI 同時加速疾病解方與創造新型威脅。",
+      "tags": [
+        "AIResilience",
+        "DualUse",
+        "SystemicRisk",
+        "Philanthropy"
+      ],
+      "url": "https://www.moneycontrol.com/technology/sam-altman-announces-openai-healthcare-push-with-ai-driven-drug-development-for-personalised-treatments-across-diseases-article-13869971.html",
+      "source": "Sam Altman",
+      "sourceUrl": "https://www.moneycontrol.com/technology/sam-altman-announces-openai-healthcare-push-with-ai-driven-drug-development-for-personalised-treatments-across-diseases-article-13869971.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260326-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-03-26",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Microsoft 品質重置：承認 AI Bloat 走過頭了",
+      "summary": "Windows 主管承認 Copilot 入侵太多地方，減少 AI 入口點、恢復可移動工作列、Copilot 可選安裝。變好優先於變新。",
+      "tags": [
+        "QualityOverFeatures",
+        "UserTrust",
+        "ProductDiscipline"
+      ],
+      "url": "https://blogs.windows.com/windows-insider/2026/03/20/our-commitment-to-windows-quality/",
+      "source": "Pavan Davuluri",
+      "sourceUrl": "https://blogs.windows.com/windows-insider/2026/03/20/our-commitment-to-windows-quality/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260326-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-03-26",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Stripe Machine Payments Protocol：AI Agent 自主付款標準",
+      "summary": "Stripe 與 Tempo 聯合發布 MPP，讓 AI agent 透過 HTTP endpoint 自主付款。Visa、OpenAI、Anthropic、Mastercard 等為早期採用者。",
+      "tags": [
+        "AgenticCommerce",
+        "Micropayments",
+        "MPP",
+        "PaymentInfra"
+      ],
+      "url": "https://markmancapitalinsight.substack.com/p/payments-without-people-stripes-new",
+      "source": "Stripe + Tempo",
+      "sourceUrl": "https://markmancapitalinsight.substack.com/p/payments-without-people-stripes-new",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260326-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-03-26",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Sahil Lavingia：把整本書變成 9 個 Claude Code Skills",
+      "summary": "Gumroad 創辦人把《The Minimalist Entrepreneur》拆成 9 個 Claude Code slash command 開源釋出。一人公司 $10M ARR、productize yourself 終極示範。",
+      "tags": [
+        "ProductizeYourself",
+        "OnePersonCompany",
+        "AISkills",
+        "CreatorLeverage"
+      ],
+      "url": "https://dontpaniclabs.com/blog/post/2026/03/25/dont-panic-adapt/",
+      "source": "Sahil Lavingia",
+      "sourceUrl": "https://dontpaniclabs.com/blog/post/2026/03/25/dont-panic-adapt/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260326-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-03-26",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Marc Andreessen：Zero Introspection",
+      "summary": "Top entrepreneurs exhibit zero introspection. They treat setbacks as mere data points, not emotional narratives they carry.",
+      "tags": [
+        "MentalModel",
+        "FounderMindset",
+        "Momentum"
+      ],
+      "url": "https://www.impactlab.com/2026/03/19/are-you-actually-wired-to-build-a-startup-heres-how-to-find-out/",
+      "source": "Marc Andreessen",
+      "sourceUrl": "https://www.impactlab.com/2026/03/19/are-you-actually-wired-to-build-a-startup-heres-how-to-find-out/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260325-ai-007",
       "radar": "ai-infra",
       "date": "2026-03-25",
