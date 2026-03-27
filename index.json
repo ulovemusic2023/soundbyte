@@ -14710,6 +14710,145 @@
       "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8533",
       "vram": "依模型大小",
       "license": "MIT"
+    },
+    {
+      "id": "20260327-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Georgia Tech Vibe Security Radar: AI 生成程式碼漏洞爆發式成長",
+      "summary": "Georgia Tech SSLab 追蹤到 2026 年 3 月單月 35 個 CVE 來自 AI coding tools，Claude Code 佔 49 個。",
+      "tags": [
+        "ai coding",
+        "security",
+        "supply chain security",
+        "code generation"
+      ],
+      "url": "https://www.theregister.com/2026/03/26/ai_coding_assistant_not_more_secure/",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/03/26/ai_coding_assistant_not_more_secure/"
+    },
+    {
+      "id": "20260327-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Langflow CVE-2026-33017: AI Agent 框架未認證 RCE",
+      "summary": "Langflow ≤1.8.1 public flow endpoint 被 RCE 攻擊，CVSS 9.3，CISA 列入必修清單。",
+      "tags": [
+        "agent framework",
+        "security",
+        "zero trust"
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-new-langflow-flaw-actively-exploited-to-hijack-ai-workflows/",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-new-langflow-flaw-actively-exploited-to-hijack-ai-workflows/"
+    },
+    {
+      "id": "20260327-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Next.js 16.2 Deployment Adapter API 正式穩定",
+      "summary": "Next.js 16.2 Deployment Adapter API 升為 stable，終結 Vercel lock-in，9000+ e2e 測試作為正式合約。",
+      "tags": [
+        "next.js",
+        "serverless",
+        "edge function",
+        "architecture"
+      ],
+      "url": "https://nextjs.org/docs/app/guides/deploying-to-platforms",
+      "source": "Netlify Blog",
+      "sourceUrl": "https://www.netlify.com/blog/the-next-js-adapter-api-just-shipped-here-s-what-comes-next/"
+    },
+    {
+      "id": "20260327-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DeepMind 發布首個 AI 操縱行為量測工具包",
+      "summary": "DeepMind 以 10,000+ 受試者跨 3 國研究推出量測 AI harmful manipulation 標準化工具。",
+      "tags": [
+        "alignment",
+        "safety",
+        "guardrails",
+        "evaluation"
+      ],
+      "url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "source": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/"
+    },
+    {
+      "id": "20260327-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Karpathy: AI Psychosis 與 Loopy Era",
+      "summary": "Karpathy 描述 AI psychosis：停止手寫 code，每天 16 小時指揮 agents，AutoResearch 自主跑 700 實驗。",
+      "tags": [
+        "agentic engineering",
+        "ai agent",
+        "autoresearch"
+      ],
+      "url": "https://podscripts.co/podcasts/no-priors-artificial-intelligence-technology-startups/andrej-karpathy-on-code-agents-autoresearch-and-the-loopy-era-of-ai",
+      "source": "No Priors Podcast",
+      "sourceUrl": "https://podscripts.co/podcasts/no-priors-artificial-intelligence-technology-startups/andrej-karpathy-on-code-agents-autoresearch-and-the-loopy-era-of-ai"
+    },
+    {
+      "id": "20260327-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pragmatic Engineer: GitHub 還適合 AI-native 開發嗎？",
+      "summary": "GitHub 可用性降到 ~90%，AI coding agent 流量暴增，Gergely Orosz 質疑其 AI-native 領導地位。",
+      "tags": [
+        "developer experience",
+        "ci/cd",
+        "ai coding"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-is-github-still-best-for",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-is-github-still-best-for"
+    },
+    {
+      "id": "20260327-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison: LLM Quantization 視覺化入門",
+      "summary": "Simon 推薦 Sam Rose 的互動式 essay，解釋 LLM quantization 基礎與品質影響。",
+      "tags": [
+        "quantization",
+        "ai models",
+        "local-first AI"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/26/quantization-from-the-ground-up/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/26/quantization-from-the-ground-up/"
+    },
+    {
+      "id": "20260327-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Spring AI CVE-2026-22738: SpEL Injection 攻擊 vector store",
+      "summary": "Spring AI SimpleVectorStore 未 escape filter key，可被 SpEL injection 攻擊。",
+      "tags": [
+        "vector database",
+        "security",
+        "ai agent"
+      ],
+      "url": "https://spring.io/security/cve-2026-22738",
+      "source": "Spring Security",
+      "sourceUrl": "https://spring.io/security/cve-2026-22738"
     }
   ]
 }
