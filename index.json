@@ -14849,6 +14849,92 @@
       "url": "https://spring.io/security/cve-2026-22738",
       "source": "Spring Security",
       "sourceUrl": "https://spring.io/security/cve-2026-22738"
+    },
+    {
+      "id": "20260327-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Voxtral TTS 4B — Mistral 開源 3B TTS 零樣本 Voice Cloning",
+      "summary": "Mistral 發佈 open-weight TTS 模型，3B 參數支援 9 語言零樣本 voice cloning（3 秒參考音訊），TTFA 90ms，單卡 16GB 即可跑。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "zero-shot",
+        "mistral",
+        "open-weight"
+      ],
+      "url": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
+      "source": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/voxtral-tts",
+      "price": null,
+      "vram": "~8GB (BF16)",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "id": "20260327-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cohere Transcribe — 2B ASR 開源霸榜 WER 5.42%",
+      "summary": "Cohere Labs 開源 2B ASR 模型，Open ASR Leaderboard 第一名，打趴 Whisper large-v3，14 語言，Apache 2.0。",
+      "tags": [
+        "asr",
+        "speech-recognition",
+        "open-source",
+        "cohere",
+        "conformer"
+      ],
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+      "source": "Cohere Labs",
+      "sourceUrl": "https://cohere.com/blog/transcribe",
+      "price": null,
+      "vram": "~4GB (FP16)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260327-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "YingMusic-Singer — Diffusion 歌聲合成 + 歌詞編輯",
+      "summary": "ASLP Lab 全 diffusion 歌聲合成模型（727M 參數），三輸入免對齊改歌詞重唱，44.1kHz 立體聲，附 LyricEditBench benchmark。",
+      "tags": [
+        "singing-voice-synthesis",
+        "diffusion",
+        "lyric-editing",
+        "f5-tts"
+      ],
+      "url": "https://github.com/ASLP-lab/YingMusic-Singer",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.24589",
+      "price": null,
+      "vram": "~3GB",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "20260327-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "llama.cpp b8530 — DeepSeek-OCR 多模態支援",
+      "summary": "llama.cpp 新增 DeepSeek-OCR 完整支援，SAM + CLIP-ViT + 動態解析度，llama-cli 直接跑圖片 OCR。",
+      "tags": [
+        "llama-cpp",
+        "ocr",
+        "multimodal",
+        "deepseek"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8530",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8530",
+      "price": null,
+      "vram": "依模型大小",
+      "license": "MIT"
     }
   ]
 }
