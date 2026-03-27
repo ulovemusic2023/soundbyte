@@ -14627,6 +14627,89 @@
       "url": "https://news.ycombinator.com/item?id=47516650",
       "source": "Ente / Hacker News",
       "sourceUrl": "https://news.ycombinator.com/item?id=47516650"
+    },
+    {
+      "id": "20260327-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ace-step/acestep.vst3 — ACE-Step 1.5 原生 VST3 插件",
+      "summary": "ACE-Step 1.5 音樂生成模型的原生 VST3 插件，基於 acestep.cpp（C++17/GGML），可在 Reaper、Ableton 等 DAW 直接生成 AI 音樂。支援 CPU/CUDA/Metal/Vulkan，Q8_0 模型約 7.7GB，輸出 48kHz 立體聲。",
+      "tags": [
+        "music-generation",
+        "vst3",
+        "ggml",
+        "daw-integration",
+        "ace-step"
+      ],
+      "url": "https://github.com/ace-step/acestep.vst3",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/music-generation?o=desc&s=updated",
+      "vram": "~6GB (Q8_0)",
+      "license": "待確認"
+    },
+    {
+      "id": "20260327-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "yazinsai/OpenOats — 本地即時會議筆記＋知識庫搜尋",
+      "summary": "macOS 原生的本地會議筆記工具，即時轉錄雙方對話並自動搜尋你的筆記庫提示回應。支援 Ollama 本地 LLM + embedding，完全離線，對方看不到視窗。",
+      "tags": [
+        "whisper",
+        "ollama",
+        "meeting-notes",
+        "local-first",
+        "rag"
+      ],
+      "url": "https://github.com/yazinsai/OpenOats",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~2GB",
+      "license": "待確認"
+    },
+    {
+      "id": "20260327-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tencent/Covo-Audio — 7B 端到端語音大模型",
+      "summary": "騰訊 AI Lab 開源 7B 端到端語音大模型，直接處理音訊輸入輸出，免去 ASR→LLM→TTS 串接。基於 Qwen2.5-7B + Whisper-large-v3 + WavLM，支援 full-duplex 即時對話，MMAU 75.3% 勝 Qwen2.5-Omni。",
+      "tags": [
+        "speech-llm",
+        "tts",
+        "full-duplex",
+        "tencent",
+        "qwen"
+      ],
+      "url": "https://github.com/Tencent/Covo-Audio",
+      "source": "GitHub",
+      "sourceUrl": "https://www.marktechpost.com/2026/03/26/tencent-ai-open-sources-covo-audio-a-7b-speech-language-model-and-inference-pipeline-for-real-time-audio-conversations-and-reasoning/",
+      "vram": "~10-14GB (量化後預估)",
+      "license": "Tencent Research License"
+    },
+    {
+      "id": "20260327-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "llama.cpp b8533 — 新增 DeepSeek-OCR 支援",
+      "summary": "llama.cpp 新增 DeepSeek-OCR 完整支援，包含 SAM 視覺模型 + CLIP-ViT + 動態解析度處理。另修復 imatrix crash bug。",
+      "tags": [
+        "llama-cpp",
+        "ocr",
+        "deepseek",
+        "inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8533",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8533",
+      "vram": "依模型大小",
+      "license": "MIT"
     }
   ]
 }
