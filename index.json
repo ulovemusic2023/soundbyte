@@ -14935,6 +14935,141 @@
       "price": null,
       "vram": "依模型大小",
       "license": "MIT"
+    },
+    {
+      "id": "20260327-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Claude Mythos 意外曝光：Anthropic 史上最強模型確認測試中",
+      "summary": "Anthropic CMS 資料外洩揭露 Claude Mythos，coding/推理/cybersecurity 大幅超越 Opus 4.6，初期僅開放 cybersecurity defense 客戶。",
+      "tags": [
+        "ai_models",
+        "safety",
+        "alignment"
+      ],
+      "url": "https://www.anthropic.com",
+      "source": "India Today / Fortune",
+      "sourceUrl": "https://www.indiatoday.in/technology/news/story/anthropic-confirms-testing-most-powerful-ai-yet-after-data-leak-2887746-2026-03-27"
+    },
+    {
+      "id": "20260327-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cursor Composer 1.5 啟用 Real-time RL",
+      "summary": "Cursor 將 RL 擴展到 Composer agent 工作流，每 5 小時部署新 checkpoint，首次實現 production-scale 即時 RL。",
+      "tags": [
+        "ai coding",
+        "reinforcement learning",
+        "agentic engineering"
+      ],
+      "url": "https://cursor.com/blog/composer-1-5",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/composer-1-5"
+    },
+    {
+      "id": "20260327-sw-011",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Linear Agent：Issue Tracking is Dead",
+      "summary": "Linear 推出 AI Agent beta，整合 Slack/Teams/Zendesk 自動建立 issues。75% 企業已用 coding agent。",
+      "tags": [
+        "ai agent",
+        "developer experience"
+      ],
+      "url": "https://linear.app",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/03/26/linear_agent/"
+    },
+    {
+      "id": "20260327-sw-012",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Stanford 研究：AI 諂媚問題登上 Science",
+      "summary": "11 個 AI 模型同意使用者的頻率比人類高 49%，sycophantic 建議讓人更堅持己見，更不願道歉。",
+      "tags": [
+        "alignment",
+        "safety",
+        "evaluation"
+      ],
+      "url": "https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research",
+      "source": "Euronews / Stanford",
+      "sourceUrl": "https://www.euronews.com/next/2026/03/27/ai-tools-risk-distorting-users-judgment-by-agreeing-too-often-with-them-researchers-say"
+    },
+    {
+      "id": "20260327-sw-013",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison: Vibe-porting JSONata — 7hr  跨語言移植",
+      "summary": "Reco 用 AI 在 7 小時 $400 將 JSONata 從 Node 移植到 Go，年省 $500K。關鍵：完整 test suite。",
+      "tags": [
+        "ai coding",
+        "vibe coding",
+        "go"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/27/vine-porting-jsonata/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/27/vine-porting-jsonata/"
+    },
+    {
+      "id": "20260327-sw-014",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic Auto Dream：Claude Code REM 睡眠記憶清理",
+      "summary": "Auto Dream 定期掃描 memory 檔案，修剪過期筆記、合併重疊、解決矛盾。長期記憶管理持續成形。",
+      "tags": [
+        "context engineering",
+        "long-running agents",
+        "ai agent"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/claude-code",
+      "source": "Tessl.io",
+      "sourceUrl": "https://tessl.io/blog/anthropic-tests-auto-dream-to-clean-up-claudes-memory/"
+    },
+    {
+      "id": "20260327-sw-015",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "AI 推理能耗已追平訓練，Green IT 刻不容緩",
+      "summary": "AI 推理能耗接近訓練階段，GPU 壽命僅 3-5 年。需 model compression 和監控工具。",
+      "tags": [
+        "devops_infra",
+        "quantization",
+        "observability"
+      ],
+      "url": "https://www.infoq.com/news/2026/03/green-IT-AI-impact/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/03/green-IT-AI-impact/"
+    },
+    {
+      "id": "20260327-sw-016",
+      "radar": "software-dev",
+      "date": "2026-03-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Architecting Autonomy at Scale — AI 驅動去中心化治理",
+      "summary": "AI 用於 drift detection、design review、組織記憶。CI/CD 中執行 fitness functions 和 ADR 檢查。",
+      "tags": [
+        "architecture",
+        "ai agent",
+        "platform engineering"
+      ],
+      "url": "https://www.infoq.com/articles/architecting-autonomy-scale/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/architecting-autonomy-scale/"
     }
   ]
 }
