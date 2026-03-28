@@ -15070,6 +15070,103 @@
       "url": "https://www.infoq.com/articles/architecting-autonomy-scale/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/articles/architecting-autonomy-scale/"
+    },
+    {
+      "id": "20260328-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp b8557 — Hexagon IQ4_NL/MXFP4, SYCL SSM_CONV",
+      "summary": "Hexagon 後端新增 IQ4_NL 和 MXFP4 HMX matmul，SYCL 加入 SSM_CONV，CUDA 加入 SET op。KV cache 優化、新 embedding 輸出格式。",
+      "tags": [
+        "llm-inference",
+        "quantization",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8557",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8557",
+      "vram": "N/A (推理引擎)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260328-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ollama v0.18.0 — ROCm 7, Nemotron-3-Super",
+      "summary": "ROCm 7 支援、Nemotron-3-Super 122B cloud model、OpenClaw 整合性能 2x 提升、non-interactive --yes flag。",
+      "tags": [
+        "llm-inference",
+        "ollama",
+        "rocm"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.18.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.18.0",
+      "vram": "依模型而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20260328-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "TranscriptionSuite — 全本地語音轉文字套件",
+      "summary": "支援 WhisperX/NeMo/VibeVoice-ASR 三大模型，speaker diarization、平行處理、Audio Notebook 筆記模式。Docker 部署跨平台。",
+      "tags": [
+        "speech-to-text",
+        "whisper",
+        "diarization",
+        "local-first"
+      ],
+      "url": "https://github.com/homelab-00/TranscriptionSuite",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~2-4GB (WhisperX large-v3)",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260328-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI-Scientist-v2 (SakanaAI) — 自主 AI 科學研究系統",
+      "summary": "完全自主產生假說→跑實驗→寫論文。已有 AI 獨立撰寫的 workshop paper 被 ICLR 2025 peer review 接受。v2 用 agentic tree search。",
+      "tags": [
+        "ai-devtools",
+        "agentic",
+        "scientific-research"
+      ],
+      "url": "https://github.com/SakanaAI/AI-Scientist-v2",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "vram": "8-16GB (實驗) + API",
+      "license": "Custom"
+    },
+    {
+      "id": "20260328-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "InfiniteTalk (MeiGen-AI) — 無限長度 talking video 生成",
+      "summary": "音訊驅動的 video dubbing：嘴型+頭部動作+表情配合音訊。基於 Wan2.1-I2V-14B，有 ComfyUI 和 Wan2GP 低 VRAM 優化。",
+      "tags": [
+        "audio-video",
+        "talking-head",
+        "dubbing",
+        "wan2.1"
+      ],
+      "url": "https://github.com/MeiGen-AI/InfiniteTalk",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~28GB+ (FP16) / ~12GB (Wan2GP)",
+      "license": "Apache-2.0"
     }
   ]
 }
