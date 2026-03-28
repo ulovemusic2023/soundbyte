@@ -1,6 +1,173 @@
 {
   "entries": [
     {
+      "id": "20260328-sw-010",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 用 AST 將 Workflows 轉成視覺化圖表",
+      "summary": "用 Abstract Syntax Trees 自動將 Workflows 程式碼轉成 dashboard 互動式流程圖。",
+      "tags": [
+        "observability",
+        "developer experience"
+      ],
+      "url": "https://blog.cloudflare.com/workflow-diagrams/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workflow-diagrams/"
+    },
+    {
+      "id": "20260328-sw-009",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LangSmith Fleet 加入 Skills 共享機制",
+      "summary": "LangSmith Fleet 新增 Skills 功能，團隊可建立可共享的 skill 並同步至所有 agent。",
+      "tags": [
+        "agent skills framework",
+        "agent sprawl governance"
+      ],
+      "url": "https://blog.langchain.com/skills-in-langsmith-fleet/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/skills-in-langsmith-fleet/"
+    },
+    {
+      "id": "20260328-sw-008",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison — LiteLLM 供應鏈攻擊即時回應紀錄",
+      "summary": "LiteLLM PyPI 攻擊逐分鐘回應記錄，強調套件依賴鏈是最脆弱攻擊面。",
+      "tags": [
+        "supply chain security",
+        "dependency cooldown"
+      ],
+      "url": "https://simonwillison.net/2026/Mar/26/response-to-the-litellm-malware-attack/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Mar/26/response-to-the-litellm-malware-attack/"
+    },
+    {
+      "id": "20260328-sw-007",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain/LangGraph 三個高危 CVE",
+      "summary": "CVE-2026-34070（path traversal）、CVE-2025-68664（CVSS 9.3）、CVE-2025-67644（SQL injection）。升級 langchain-core ≥1.2.22。",
+      "tags": [
+        "supply chain security",
+        "prompt injection"
+      ],
+      "url": "https://www.techradar.com/pro/security/each-vulnerability-exposes-a-different-class-of-enterprise-data-langchain-framework-hit-by-several-worrying-security-issues-heres-what-we-know",
+      "source": "TechRadar",
+      "sourceUrl": "https://www.techradar.com/pro/security/each-vulnerability-exposes-a-different-class-of-enterprise-data-langchain-framework-hit-by-several-worrying-security-issues-heres-what-we-know"
+    },
+    {
+      "id": "20260328-sw-006",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor Self-Hosted Cloud Agents + 30+ Plugin",
+      "summary": "Cursor 開放 self-hosted cloud agents，code 和 secrets 留在自有網路。30+ plugin 和 Composer 2 即時 RL。",
+      "tags": [
+        "ai coding",
+        "agent-ready devtools"
+      ],
+      "url": "https://cursor.com/blog/self-hosted-cloud-agents",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/self-hosted-cloud-agents"
+    },
+    {
+      "id": "20260328-sw-005",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain Agent Middleware — 六個 Hook 自訂 Agent Harness",
+      "summary": "AgentMiddleware 抽象提供六個 hook 注入 PII 遮罩、動態工具選擇、重試邏輯。Deep Agents 基於此架構。",
+      "tags": [
+        "harness engineering",
+        "agent framework",
+        "langchain"
+      ],
+      "url": "https://blog.langchain.com/how-middleware-lets-you-customize-your-agent-harness/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/how-middleware-lets-you-customize-your-agent-harness/"
+    },
+    {
+      "id": "20260328-sw-004",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Symbolica Agentica SDK ARC-AGI-3 第一天 36%",
+      "summary": "ARC-AGI-3 互動式推理基準 frontier model 全低於 1%，Symbolica 拿 36.08%/,005。突破來自 scaffolding 設計。",
+      "tags": [
+        "interactive reasoning benchmark",
+        "agentic engineering"
+      ],
+      "url": "https://arcprize.org/competitions/2026/arc-agi-3",
+      "source": "ARC Prize / Symbolica",
+      "sourceUrl": "https://arcprize.org/competitions/2026/arc-agi-3"
+    },
+    {
+      "id": "20260328-sw-003",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Chroma Context-1 — 20B 開源自我編輯搜尋 Agent",
+      "summary": "Chroma 20B 開源搜尋 agent（Apache 2.0），自主分解查詢並修剪段落防止 context rot，成本為 frontier model 十分之一。",
+      "tags": [
+        "rag",
+        "self-editing context",
+        "context engineering",
+        "ai agent"
+      ],
+      "url": "https://www.trychroma.com/research/context-1",
+      "source": "Chroma Research",
+      "sourceUrl": "https://www.trychroma.com/research/context-1"
+    },
+    {
+      "id": "20260328-sw-002",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Dynamic Workers — V8 isolate AI agent 沙箱快 100 倍",
+      "summary": "Cloudflare 發布 Dynamic Workers open beta，用 V8 isolate 取代容器，毫秒級啟動，內建細粒度存取控制。",
+      "tags": [
+        "agent sandbox scaling",
+        "edge runtime",
+        "serverless",
+        "V8 isolate sandbox"
+      ],
+      "url": "https://blog.cloudflare.com/dynamic-workers/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/dynamic-workers/"
+    },
+    {
+      "id": "20260328-sw-001",
+      "radar": "software-dev",
+      "date": "2026-03-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 洩漏揭露 Claude Mythos — 全新 Capybara 層級模型",
+      "summary": "Anthropic 內部資料外洩確認正在測試代號 Mythos（Capybara）的新模型，Opus 之上全新最高層級，coding/推理/網安基準戲劇性超越 Opus 4.6。",
+      "tags": [
+        "ai_models",
+        "alignment",
+        "safety",
+        "Capybara tier"
+      ],
+      "url": "https://the-decoder.com/anthropic-leak-reveals-new-model-claude-mythos-with-dramatically-higher-scores-on-tests-than-any-previous-model/",
+      "source": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/anthropic-leak-reveals-new-model-claude-mythos-with-dramatically-higher-scores-on-tests-than-any-previous-model/"
+    },
+    {
       "id": "20260326-fm-001",
       "radar": "founder-mind",
       "date": "2026-03-26",
