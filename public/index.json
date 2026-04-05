@@ -1,6 +1,263 @@
 {
   "entries": [
     {
+      "id": "20260405-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "flipoff — 免費 Split-Flap Display Emulator",
+      "summary": "把任何電視變成經典翻牌顯示器，省掉 $3,500 硬體。開源。",
+      "tags": [
+        "display",
+        "emulator"
+      ],
+      "url": "https://github.com/magnum6actual/flipoff",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/magnum6actual/flipoff",
+      "stars": 2663,
+      "createdDate": "2026-03-26",
+      "license": "unknown"
+    },
+    {
+      "id": "20260405-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "larksuite/cli — 飛書官方 CLI + 19 AI Skills",
+      "summary": "飛書/Lark 官方 CLI。200+ 指令、19 個 AI Agent Skills，同時服務人類和 AI Agent。",
+      "tags": [
+        "cli",
+        "productivity",
+        "enterprise"
+      ],
+      "url": "https://github.com/larksuite/cli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/larksuite/cli",
+      "stars": 6659,
+      "createdDate": "2026-03-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260405-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "tokscale — Token 用量追蹤 Dashboard",
+      "summary": "Token 用量追蹤 CLI + 視覺化 dashboard。支援 15+ AI coding 工具。Rust native TUI。",
+      "tags": [
+        "token-tracking",
+        "cli"
+      ],
+      "url": "https://github.com/junhoyeo/tokscale",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 1593,
+      "createdDate": "2025-12-01",
+      "license": "unknown"
+    },
+    {
+      "id": "20260405-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "oh-my-codex — Codex CLI Workflow Layer",
+      "summary": "Codex CLI 的 workflow layer。加上 agent teams、HUD、hooks、structured skills。",
+      "tags": [
+        "codex",
+        "agent-orchestration"
+      ],
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 15966,
+      "createdDate": "2026-03-22",
+      "license": "unknown"
+    },
+    {
+      "id": "20260405-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "spool — 搜尋你的 AI Session 歷史",
+      "summary": "搜尋 Claude Code session、Codex 歷史等 50+ 來源。全本地 macOS app + CLI。有 /spool skill 讓 agent 搜歷史。",
+      "tags": [
+        "search",
+        "ai-sessions",
+        "local-first"
+      ],
+      "url": "https://github.com/spool-lab/spool",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/spool-lab/spool",
+      "stars": 261,
+      "createdDate": "2026-03-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260405-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "OpenMontage — 開源 Agentic Video Production",
+      "summary": "11 pipeline、49 工具、400+ agent skills。自然語言描述影片，agent 全流程處理。成本 $0.15-$1.33。",
+      "tags": [
+        "video-production",
+        "agentic",
+        "creative-tools"
+      ],
+      "url": "https://github.com/calesthio/OpenMontage",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/calesthio/OpenMontage",
+      "stars": 253,
+      "createdDate": "2026-03-29",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260405-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "phantom — AI Co-worker 有自己的電腦",
+      "summary": "基於 Claude Agent SDK 的 AI co-worker，有自己的 VM、persistent memory、MCP server。自建工具並註冊給其他 agent。",
+      "tags": [
+        "ai-agent",
+        "autonomous",
+        "mcp"
+      ],
+      "url": "https://github.com/ghostwright/phantom",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ghostwright/phantom",
+      "stars": 1190,
+      "createdDate": "2026-03-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260405-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "NanoCoder — 950 行 Python 復刻 Claude Code 核心",
+      "summary": "nanoGPT for coding agents，把 Claude Code 51.2 萬行蒸餾成 950 行 Python。教學向但可跑。",
+      "tags": [
+        "coding-agent",
+        "educational"
+      ],
+      "url": "https://github.com/he-yufeng/NanoCoder",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/he-yufeng/NanoCoder",
+      "stars": 224,
+      "createdDate": "2026-04-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260405-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "voxtral-voice-clone — Voxtral 缺失的 Voice Cloning Encoder",
+      "summary": "從零訓練 Mistral Voxtral-4B-TTS 缺失的 codec encoder，讓開源模型能做 zero-shot voice cloning。",
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "voxtral"
+      ],
+      "url": "https://github.com/Al0olo/voxtral-voice-clone",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Al0olo/voxtral-voice-clone",
+      "stars": 92,
+      "createdDate": "2026-03-29",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260405-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "ComfyUI-OmniVoice-TTS — Zero-shot 多語言 TTS",
+      "summary": "OmniVoice TTS ComfyUI 節點。Zero-shot voice clone、voice design、multi-speaker 對話。600+ 語言。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "comfyui",
+        "audio"
+      ],
+      "url": "https://github.com/Saganaki22/ComfyUI-OmniVoice-TTS",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Saganaki22/ComfyUI-OmniVoice-TTS",
+      "stars": 119,
+      "createdDate": "2026-04-02",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260405-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "headroom — LLM Context Compression Layer",
+      "summary": "Context compression proxy，tool output / RAG / file read 壓 70-95%。headroom wrap claude 一行搞定。",
+      "tags": [
+        "context-compression",
+        "proxy",
+        "coding-tools"
+      ],
+      "url": "https://github.com/chopratejas/headroom",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 1151,
+      "createdDate": "2026-01-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260405-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "lean-ctx — Token 壓縮 MCP Server",
+      "summary": "Shell hook + MCP Server 壓縮 CLI output 和檔案讀取，減少 89-99% token 消耗。單一 Rust binary。",
+      "tags": [
+        "context-optimization",
+        "mcp",
+        "rust"
+      ],
+      "url": "https://github.com/yvgude/lean-ctx",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/yvgude/lean-ctx",
+      "stars": 458,
+      "createdDate": "2026-03-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260405-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-04-05",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "CutClaw — Agentic 音樂同步影片剪輯",
+      "summary": "Agentic 影片剪輯系統，用音樂 beat 做節奏同步剪接。丟入素材 + 歌曲，multi-agent pipeline 自動渲染。",
+      "tags": [
+        "music-sync",
+        "video-editing",
+        "multi-agent"
+      ],
+      "url": "https://github.com/GVCLab/CutClaw",
+      "source": "MAGI / GitHub",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 109,
+      "createdDate": "2026-03-18",
+      "license": "unknown"
+    },
+    {
       "id": "20260405-fm-007",
       "radar": "founder-mind",
       "date": "2026-04-05",
