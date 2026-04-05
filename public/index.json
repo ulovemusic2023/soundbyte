@@ -1,6 +1,146 @@
 {
   "entries": [
     {
+      "id": "20260405-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Foreign Policy：AI safety 的核武教訓——留住唱反調的人",
+      "summary": "Anthropic vs 五角大廈衝突引出 AI 安全專家離職危機。核武歷史：讓異議者離開導致專家階層分裂。留住唱反調的人是 survival 關鍵。",
+      "tags": [
+        "AI safety",
+        "dissenter retention",
+        "organizational design"
+      ],
+      "url": "https://foreignpolicy.com/2026/04/02/ai-artifical-intelligence-claude-anthropic-nuclear-weapons-apololypse/",
+      "source": "Foreign Policy",
+      "sourceUrl": "https://foreignpolicy.com/2026/04/02/ai-artifical-intelligence-claude-anthropic-nuclear-weapons-apololypse/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Ben Thompson：AI 短期讓資安更差，長期更好",
+      "summary": "Stratechery 分析 Axios supply chain attack 和 Claude Code 外洩。AI 降低攻擊門檻但長期 pattern recognition 超越人類。J-curve mental model。",
+      "tags": [
+        "AI security",
+        "J-curve",
+        "supply chain attack"
+      ],
+      "url": "https://stratechery.com/2026/axios-supply-chain-attack-claude-code-code-leaked-ai-and-security/",
+      "source": "Ben Thompson / Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/axios-supply-chain-attack-claude-code-code-leaked-ai-and-security/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Stripe Minions：Slack emoji 觸發 1,300 PR/週",
+      "summary": "Stripe 公開 AI coding agent Minions，Slack emoji → sandbox VM → fix code → run tests → open PR。每週 1,300 PR 零人工 code。用限制換無限平行化。",
+      "tags": [
+        "agentic engineering",
+        "constraints as freedom",
+        "sandbox pattern"
+      ],
+      "url": "https://jangwook.net/en/blog/en/stripe-minions-autonomous-coding-agents-1300-prs/",
+      "source": "Stripe Engineering",
+      "sourceUrl": "https://jangwook.net/en/blog/en/stripe-minions-autonomous-coding-agents-1300-prs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Jensen Huang GTC 2026：每個工程師都要有 Token Budget",
+      "summary": "未來公司發筆電也發 token budget。Token 是製造業原料，年薪 30 萬工程師不消耗 token 要質疑生產力。2026 是 inference 之年。",
+      "tags": [
+        "token budget",
+        "agentic AI",
+        "inference economy"
+      ],
+      "url": "https://www.constellationr.com/insights/news/nvidia-gtc-2026-8-takeaways-huangs-analyst-meetings",
+      "source": "Jensen Huang / NVIDIA",
+      "sourceUrl": "https://www.constellationr.com/insights/news/nvidia-gtc-2026-8-takeaways-huangs-analyst-meetings",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Vanity Fair 用 Claude 寫 Dario Amodei 專訪——因為他爽約了",
+      "summary": "VF 記者約 Amodei 三個月未果，用 Anthropic 自家 AI 寫 profile。Meta 級思考實驗：AI 替代受訪者產出內容時，原創性邊界在哪？",
+      "tags": [
+        "authenticity",
+        "AI-generated content",
+        "meta insight"
+      ],
+      "url": "https://vanityfair.azurewebsites.net/article/2026/4/1/dario-amodei-has-a-cold",
+      "source": "Vanity Fair / Joe Hagan",
+      "sourceUrl": "https://vanityfair.azurewebsites.net/article/2026/4/1/dario-amodei-has-a-cold",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Simon Willison × Lenny Podcast：2025 年 11 月是 AI 的拐點",
+      "summary": "GPT-5.1 和 Claude Opus 4.5 讓 AI coding agent 從「大致能用」→「真的能用」。提出 Dark Factory 概念。software estimation 能力被打破。",
+      "tags": [
+        "inflection point",
+        "dark factory",
+        "agentic engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/2/lennys-podcast/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sam Altman 砍掉 Sora：資源集中的殘酷取捨",
+      "summary": "OpenAI 關閉 Sora（4/26 下線），每天燒 $1M、用戶跌到 50 萬以下。compute 轉向 coding tools 和企業客戶。核心 mental model：砍掉還不錯但不夠好的產品。",
+      "tags": [
+        "resource allocation",
+        "ruthless prioritization",
+        "opportunity cost"
+      ],
+      "url": "https://dataconomy.com/2026/04/02/altman-reveals-why-sora-is-coming-to-an-end/",
+      "source": "Sam Altman / OpenAI",
+      "sourceUrl": "https://dataconomy.com/2026/04/02/altman-reveals-why-sora-is-coming-to-an-end/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260405-sw-010",
       "radar": "software-dev",
       "date": "2026-04-05",
