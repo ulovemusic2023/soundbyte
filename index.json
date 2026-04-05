@@ -1,6 +1,314 @@
 {
   "entries": [
     {
+      "id": "20260405-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Foreign Policy：AI safety 的核武教訓——留住唱反調的人",
+      "summary": "Anthropic vs 五角大廈衝突引出 AI 安全專家離職危機。核武歷史：讓異議者離開導致專家階層分裂。留住唱反調的人是 survival 關鍵。",
+      "tags": [
+        "AI safety",
+        "dissenter retention",
+        "organizational design"
+      ],
+      "url": "https://foreignpolicy.com/2026/04/02/ai-artifical-intelligence-claude-anthropic-nuclear-weapons-apololypse/",
+      "source": "Foreign Policy",
+      "sourceUrl": "https://foreignpolicy.com/2026/04/02/ai-artifical-intelligence-claude-anthropic-nuclear-weapons-apololypse/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Ben Thompson：AI 短期讓資安更差，長期更好",
+      "summary": "Stratechery 分析 Axios supply chain attack 和 Claude Code 外洩。AI 降低攻擊門檻但長期 pattern recognition 超越人類。J-curve mental model。",
+      "tags": [
+        "AI security",
+        "J-curve",
+        "supply chain attack"
+      ],
+      "url": "https://stratechery.com/2026/axios-supply-chain-attack-claude-code-code-leaked-ai-and-security/",
+      "source": "Ben Thompson / Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/axios-supply-chain-attack-claude-code-code-leaked-ai-and-security/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Stripe Minions：Slack emoji 觸發 1,300 PR/週",
+      "summary": "Stripe 公開 AI coding agent Minions，Slack emoji → sandbox VM → fix code → run tests → open PR。每週 1,300 PR 零人工 code。用限制換無限平行化。",
+      "tags": [
+        "agentic engineering",
+        "constraints as freedom",
+        "sandbox pattern"
+      ],
+      "url": "https://jangwook.net/en/blog/en/stripe-minions-autonomous-coding-agents-1300-prs/",
+      "source": "Stripe Engineering",
+      "sourceUrl": "https://jangwook.net/en/blog/en/stripe-minions-autonomous-coding-agents-1300-prs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Jensen Huang GTC 2026：每個工程師都要有 Token Budget",
+      "summary": "未來公司發筆電也發 token budget。Token 是製造業原料，年薪 30 萬工程師不消耗 token 要質疑生產力。2026 是 inference 之年。",
+      "tags": [
+        "token budget",
+        "agentic AI",
+        "inference economy"
+      ],
+      "url": "https://www.constellationr.com/insights/news/nvidia-gtc-2026-8-takeaways-huangs-analyst-meetings",
+      "source": "Jensen Huang / NVIDIA",
+      "sourceUrl": "https://www.constellationr.com/insights/news/nvidia-gtc-2026-8-takeaways-huangs-analyst-meetings",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Vanity Fair 用 Claude 寫 Dario Amodei 專訪——因為他爽約了",
+      "summary": "VF 記者約 Amodei 三個月未果，用 Anthropic 自家 AI 寫 profile。Meta 級思考實驗：AI 替代受訪者產出內容時，原創性邊界在哪？",
+      "tags": [
+        "authenticity",
+        "AI-generated content",
+        "meta insight"
+      ],
+      "url": "https://vanityfair.azurewebsites.net/article/2026/4/1/dario-amodei-has-a-cold",
+      "source": "Vanity Fair / Joe Hagan",
+      "sourceUrl": "https://vanityfair.azurewebsites.net/article/2026/4/1/dario-amodei-has-a-cold",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Simon Willison × Lenny Podcast：2025 年 11 月是 AI 的拐點",
+      "summary": "GPT-5.1 和 Claude Opus 4.5 讓 AI coding agent 從「大致能用」→「真的能用」。提出 Dark Factory 概念。software estimation 能力被打破。",
+      "tags": [
+        "inflection point",
+        "dark factory",
+        "agentic engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/2/lennys-podcast/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-05",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sam Altman 砍掉 Sora：資源集中的殘酷取捨",
+      "summary": "OpenAI 關閉 Sora（4/26 下線），每天燒 $1M、用戶跌到 50 萬以下。compute 轉向 coding tools 和企業客戶。核心 mental model：砍掉還不錯但不夠好的產品。",
+      "tags": [
+        "resource allocation",
+        "ruthless prioritization",
+        "opportunity cost"
+      ],
+      "url": "https://dataconomy.com/2026/04/02/altman-reveals-why-sora-is-coming-to-an-end/",
+      "source": "Sam Altman / OpenAI",
+      "sourceUrl": "https://dataconomy.com/2026/04/02/altman-reveals-why-sora-is-coming-to-an-end/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260405-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Thomas Ptacek：AI 將在 2026 年中自動化 zero-day 發現",
+      "summary": "Ptacek 預測 frontier model 將自動化 zero-day 發現，Anthropic 紅隊已用 Claude Code 找到 500 個高危漏洞。Step function 式改變。",
+      "tags": [
+        "security",
+        "ai agent",
+        "red teaming"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/"
+    },
+    {
+      "id": "20260405-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "OpenAI 完成 $1,220 億融資 + ChatGPT Super App",
+      "summary": "史上最大融資輪估值 $8,520 億。ChatGPT 整合聊天/Codex/搜尋/agent 成 agent-first 平台。9 億 WAU。",
+      "tags": [
+        "ai agent",
+        "agentic engineering"
+      ],
+      "url": "https://the-decoder.com/openai-officially-confirms-mega-funding-round-and-chatgpt-super-app/",
+      "source": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/openai-officially-confirms-mega-funding-round-and-chatgpt-super-app/"
+    },
+    {
+      "id": "20260405-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Claude Code 架構外洩：三層記憶體系統曝光",
+      "summary": "46,000 行 Query Engine + 三層記憶架構（MEMORY.md 指標 → Topic Files → Raw Transcripts）。autoDream 背景整理，agent 視記憶為 hint。",
+      "tags": [
+        "context compaction",
+        "agent framework",
+        "ai coding"
+      ],
+      "url": "https://read.engineerscodex.com/p/diving-into-claude-codes-source-code",
+      "source": "Engineer's Codex",
+      "sourceUrl": "https://read.engineerscodex.com/p/diving-into-claude-codes-source-code"
+    },
+    {
+      "id": "20260405-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler：Harness Engineering for Coding Agent Users",
+      "summary": "完整版文章結合 context engineering + harness engineering 建構 AI 程式碼信任框架：guides、sensors、computational/inferential elements、harness templates。",
+      "tags": [
+        "harness engineering",
+        "context engineering",
+        "supervisory programming"
+      ],
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/harness-engineering.html"
+    },
+    {
+      "id": "20260405-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 封鎖第三方工具使用 Claude 訂閱額度",
+      "summary": "4/4 起 Claude Pro/Max 訂閱不再涵蓋 OpenClaw 等第三方框架，需另付 pay-as-you-go。agentic 使用量超人類 6-8 倍。",
+      "tags": [
+        "ai agent",
+        "agentic engineering"
+      ],
+      "url": "https://thenextweb.com/news/anthropic-openclaw-claude-subscription-ban-cost",
+      "source": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/anthropic-openclaw-claude-subscription-ban-cost"
+    },
+    {
+      "id": "20260405-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Axios npm 供應鏈攻擊：北韓駭客社交工程入侵",
+      "summary": "攻擊者社交工程入侵 Axios maintainer，發布含 RAT 的惡意版本存活 3 小時，影響每週 1 億次下載。多個 Node.js 核心維護者被同樣手法鎖定。",
+      "tags": [
+        "supply chain security",
+        "dependency confusion"
+      ],
+      "url": "https://socket.dev/blog/axios-maintainer-confirms-social-engineering-behind-npm-compromise",
+      "source": "Socket.dev",
+      "sourceUrl": "https://socket.dev/blog/axios-maintainer-confirms-social-engineering-behind-npm-compromise"
+    },
+    {
+      "id": "20260405-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google Gemma 4：最強開源多模態模型",
+      "summary": "Apache 2.0，四種尺寸。31B Arena AI 1452 分開源第三，支援圖片/影片/音訊/140+ 語言/function calling/agentic workflow。",
+      "tags": [
+        "multimodal",
+        "ai models",
+        "on-device"
+      ],
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+    },
+    {
+      "id": "20260405-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Microsoft Agent Governance Toolkit 開源",
+      "summary": "七個獨立套件（Python/TS/.NET/Rust/Go），涵蓋 Agent OS、Mesh、Runtime、SRE、Compliance、Marketplace、Lightning。MIT 授權。",
+      "tags": [
+        "agent framework",
+        "zero trust",
+        "platform engineering"
+      ],
+      "url": "https://github.com/microsoft/agent-governance-toolkit",
+      "source": "Microsoft Open Source Blog",
+      "sourceUrl": "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/"
+    },
+    {
+      "id": "20260405-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare EmDash：AI-Native CMS 取代 WordPress",
+      "summary": "TypeScript + Astro 的開源 CMS，AI agent 是一等公民，內建 MCP server、Agent Skills、CLI。Plugin 用 V8 isolate sandbox。MIT 授權 v0.1。",
+      "tags": [
+        "edge function",
+        "serverless",
+        "ai agent",
+        "mcp"
+      ],
+      "url": "https://blog.cloudflare.com/emdash-wordpress/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/emdash-wordpress/"
+    },
+    {
+      "id": "20260405-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 3.0：Agent-First 工作空間",
+      "summary": "Cursor 從 IDE 轉型為 agent-first 平台，引入 Agents Window 可同時跑多個 agent，支援 local/cloud/worktree/SSH 即時切換，Composer 2 每 5 小時 real-time RL 更新模型。",
+      "tags": [
+        "ai coding",
+        "agent framework",
+        "vibe coding"
+      ],
+      "url": "https://cursor.com/blog/cursor-3",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/cursor-3"
+    },
+    {
       "id": "20260328-sw-010",
       "radar": "software-dev",
       "date": "2026-03-28",
