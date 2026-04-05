@@ -1,6 +1,187 @@
 {
   "entries": [
     {
+      "id": "20260405-sw-011",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Simon Willison 上 Lenny Podcast 談 Agentic Engineering",
+      "summary": "討論 AI 現況、dark factory 概念、自動化時間軸。認為 AI 會因經濟誘因寫出好 code。",
+      "tags": [
+        "agentic engineering",
+        "podcast"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/",
+      "source": "Simon Willison / Lenny Podcast",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/2/lennys-podcast/"
+    },
+    {
+      "id": "20260405-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Cloudflare Client-Side Security Advanced 開放自助使用",
+      "summary": "原 Page Shield 改名，新增 AI 驅動惡意 JS 偵測、PCI DSS v4 合規監控。免費提供 domain threat intelligence。",
+      "tags": [
+        "security",
+        "cloudflare",
+        "client-side security"
+      ],
+      "url": "https://blog.cloudflare.com/client-side-security-open-to-everyone/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/client-side-security-open-to-everyone/"
+    },
+    {
+      "id": "20260405-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Simon Willison 發布 scan-for-secrets 0.2",
+      "summary": "CLI 工具掃描檔案中的 secrets。v0.2 新增串流輸出、多目錄掃描、Python API。",
+      "tags": [
+        "security",
+        "developer tools"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/5/scan-for-secrets/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/5/scan-for-secrets/"
+    },
+    {
+      "id": "20260405-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GitHub Commits 暴增 — 275M/週，年化 14B",
+      "summary": "GitHub COO 透露每週 2.75 億 commits、Actions 21 億分鐘/週。AI coding 工具是主要驅動力。",
+      "tags": [
+        "ai coding",
+        "github",
+        "developer productivity"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/4/kyle-daigle/",
+      "source": "Simon Willison (引用 Kyle Daigle)",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/4/kyle-daigle/"
+    },
+    {
+      "id": "20260405-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Anthropic 要求 Claude Code 用戶額外付費使用 OpenClaw",
+      "summary": "Claude Code 訂閱不再包含 OpenClaw 等第三方工具費用，需轉 pay-as-you-go。AI coding tool 商業模式正在重新定義。",
+      "tags": [
+        "ai coding",
+        "pricing"
+      ],
+      "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/"
+    },
+    {
+      "id": "20260405-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GPT-4o 正式全面退役",
+      "summary": "4/3 起從所有 ChatGPT 方案移除。Custom GPT 自動遷移至 GPT-5.x。API 暫不受影響。",
+      "tags": [
+        "ai models",
+        "GPT-4o retirement"
+      ],
+      "url": "https://evermx.com/case/gpt-4o-final-retirement-april-3-enterprise-custom-gpts-migration",
+      "source": "EverMX",
+      "sourceUrl": "https://evermx.com/case/gpt-4o-final-retirement-april-3-enterprise-custom-gpts-migration"
+    },
+    {
+      "id": "20260405-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare 重新設計 Cache — AI 時代的 CDN 架構",
+      "summary": "AI bot 每週 100 億+ 請求佔流量 32%。Cloudflare 與 ETH Zurich 提出 AI-aware caching，將人類/AI 流量分層處理。",
+      "tags": [
+        "AI-aware caching",
+        "architecture",
+        "CDN"
+      ],
+      "url": "https://blog.cloudflare.com/rethinking-cache-ai-humans/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/rethinking-cache-ai-humans/"
+    },
+    {
+      "id": "20260405-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Axios npm 遭 NK 駭客社工攻擊",
+      "summary": "北韓 UNC1069 透過社工入侵 Axios 維護者帳號，發布含 RAT 的惡意版本。Axios 每週 1 億次下載，影響 17.4 萬 npm 套件。",
+      "tags": [
+        "supply chain security",
+        "social engineering"
+      ],
+      "url": "https://socket.dev/blog/axios-maintainer-confirms-social-engineering-behind-npm-compromise",
+      "source": "Socket.dev",
+      "sourceUrl": "https://socket.dev/blog/axios-maintainer-confirms-social-engineering-behind-npm-compromise"
+    },
+    {
+      "id": "20260405-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Claude Code 原始碼外洩 — 512K 行 TypeScript 暴露",
+      "summary": "Anthropic 因 npm 打包失誤在 claude-code 2.1.88 中暴露完整原始碼。發現 self-healing memory 架構、44 個隱藏 feature flag、multi-agent swarm 工具。",
+      "tags": [
+        "supply chain security",
+        "source map leak"
+      ],
+      "url": "https://read.engineerscodex.com/p/diving-into-claude-codes-source-code",
+      "source": "Engineers Codex",
+      "sourceUrl": "https://read.engineerscodex.com/p/diving-into-claude-codes-source-code"
+    },
+    {
+      "id": "20260405-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Karpathy 展示 Dobby Agent — 單一 Agent 取代六個 App",
+      "summary": "Karpathy 用 OpenClaw 打造 Dobby agent，自動掃描區網、逆向工程 API、用自然語言控制所有裝置。預示 agent 取代 app 的 paradigm shift。",
+      "tags": [
+        "ai agent",
+        "personal computer agent",
+        "local-first AI"
+      ],
+      "url": "https://www.businessinsider.com/andrej-karpathy-dobby-ai-apps-disappear-2026-4",
+      "source": "Business Insider",
+      "sourceUrl": "https://www.businessinsider.com/andrej-karpathy-dobby-ai-apps-disappear-2026-4"
+    },
+    {
+      "id": "20260405-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-05",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler 定義 Harness Engineering — AI 時代的新工程學科",
+      "summary": "Fowler 發布完整長文定義 harness engineering：AI coding agent 的外部控制系統。2026 年演進路徑：prompt engineering → context engineering → harness engineering。模型已商品化，真正決定成敗的是 harness。",
+      "tags": [
+        "harness engineering",
+        "context engineering",
+        "agentic engineering"
+      ],
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/harness-engineering.html"
+    },
+    {
       "id": "20260405-ts-013",
       "radar": "tool-scout",
       "date": "2026-04-05",
