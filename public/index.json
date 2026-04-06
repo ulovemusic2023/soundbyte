@@ -8,7 +8,12 @@
       "priority": "paradigm-shift",
       "title": "Karpathy 提出 LLM Knowledge Bases：用 agentic wiki 取代 RAG",
       "summary": "Karpathy 發表全新知識管理架構，讓 LLM 主動把原始文件編譯成結構化 Markdown wiki，持續維護交叉引用。跟傳統 RAG 不同，這套系統在 ingest 時編譯知識、持續累積。",
-      "tags": ["rag", "knowledge base", "agentic", "context engineering"],
+      "tags": [
+        "rag",
+        "knowledge base",
+        "agentic",
+        "context engineering"
+      ],
       "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
       "source": "Andrej Karpathy",
       "sourceUrl": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
@@ -24,7 +29,11 @@
       "priority": "paradigm-shift",
       "title": "Cursor 3：從 IDE 轉型為 Agent 管理平台",
       "summary": "Cursor 3 大改版把預設介面切換成 Agents Window，支援多 agent 平行運作、跨環境無縫切換，搭配 Composer 2 和 real-time RL。",
-      "tags": ["ai coding", "agent framework", "agentic engineering"],
+      "tags": [
+        "ai coding",
+        "agent framework",
+        "agentic engineering"
+      ],
       "url": "https://cursor.com/blog/cursor-3",
       "source": "Cursor Blog",
       "sourceUrl": "https://cursor.com/blog/cursor-3",
@@ -40,7 +49,12 @@
       "priority": "high",
       "title": "Google ADK Java 1.0 + Go 1.0：多語言 Agent 開發框架",
       "summary": "Google Agent Development Kit 從 Python 擴展到 Java/Go/TypeScript，支援 A2A protocol、Plugin 架構，搭配 Gemma 4 可完全 open-source 運作。",
-      "tags": ["agent framework", "multi-agent", "tool use", "A2A protocol"],
+      "tags": [
+        "agent framework",
+        "multi-agent",
+        "tool use",
+        "A2A protocol"
+      ],
       "url": "https://developers.googleblog.com/announcing-adk-for-java-100-building-the-future-of-ai-agents-in-java/",
       "source": "Google Developers Blog",
       "sourceUrl": "https://developers.googleblog.com/announcing-adk-for-java-100-building-the-future-of-ai-agents-in-java/",
@@ -56,7 +70,11 @@
       "priority": "high",
       "title": "AutoAgent：AI 自行工程化自己的 Agent Harness",
       "summary": "開源 library 讓 AI agent 自行設計、建構、優化自己的 harness infrastructure，一夜之間自動迭代改進。",
-      "tags": ["harness engineering", "agentic engineering", "agent framework"],
+      "tags": [
+        "harness engineering",
+        "agentic engineering",
+        "agent framework"
+      ],
       "url": "https://www.marktechpost.com/2026/04/05/meet-autoagent-the-open-source-library-that-lets-an-ai-engineer-and-optimize-its-own-agent-harness-overnight/",
       "source": "MarkTechPost",
       "sourceUrl": "https://www.marktechpost.com/2026/04/05/meet-autoagent-the-open-source-library-that-lets-an-ai-engineer-and-optimize-its-own-agent-harness-overnight/",
@@ -72,7 +90,11 @@
       "priority": "high",
       "title": "Simon Willison：AI 工程 State of the Union",
       "summary": "預測 2026 年底 50% 工程師用 95% AI 生成 code，testing 成為瓶頸。警告 vulnerability research 即將被 AI agent 自動化。",
-      "tags": ["agentic engineering", "ai coding", "vibe coding"],
+      "tags": [
+        "agentic engineering",
+        "ai coding",
+        "vibe coding"
+      ],
       "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Apr/2/lennys-podcast/",
@@ -88,7 +110,11 @@
       "priority": "medium",
       "title": "科技領袖重返寫 code — Zuckerberg 用 Claude Code",
       "summary": "Zuckerberg 用 Claude Code CLI 向 Meta monorepo 提交 3 個 diff（20 年來首次），Meta 目標 65% 工程師 75%+ code 由 AI 生成。",
-      "tags": ["ai coding", "ai-assisted development", "copilot"],
+      "tags": [
+        "ai coding",
+        "ai-assisted development",
+        "copilot"
+      ],
       "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-industry-leaders-return",
       "source": "Pragmatic Engineer",
       "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-industry-leaders-return",
@@ -104,7 +130,11 @@
       "priority": "medium",
       "title": "Martin Fowler：Cognitive Surrender 與三層系統健康模型",
       "summary": "引用 Tri-System 認知理論將 LLM 定義為 System 3，帶來 cognitive surrender 風險。三層債務框架：Technical / Cognitive / Intent Debt。",
-      "tags": ["cognitive debt", "harness engineering", "supervisory programming"],
+      "tags": [
+        "cognitive debt",
+        "harness engineering",
+        "supervisory programming"
+      ],
       "url": "https://martinfowler.com/fragments/2026-04-02.html",
       "source": "Martin Fowler",
       "sourceUrl": "https://martinfowler.com/fragments/2026-04-02.html",
@@ -16192,6 +16222,128 @@
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
       "vram": "~28GB+ (FP16) / ~12GB (Wan2GP)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260406-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google Gemma 4 — 開源最強模型家族",
+      "summary": "Google 基於 Gemini 3 研究發布 Gemma 4 (E2B/E4B/26B/31B)，Apache 2.0 授權。E2B 僅 1.5GB RAM，支援多模態與 128K context。Arena 排行 #3/#6。",
+      "tags": [
+        "llm_inference",
+        "multimodal",
+        "on-device",
+        "gemma",
+        "google"
+      ],
+      "url": "https://github.com/google-deepmind/gemma",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "price": null,
+      "vram": "E2B ~1.5GB / E4B ~3.2GB / 26B ~12-16GB / 31B ~16-20GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260406-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "GLM-OCR — 0.9B OCR 模型 OmniDocBench #1",
+      "summary": "智譜 AI 的 0.9B 參數 OCR 模型，OmniDocBench V1.5 第一名 (94.62)。支援 vLLM/SGLang/Ollama 部署，pip install 一行即用。",
+      "tags": [
+        "cv_ocr",
+        "document_ai",
+        "edge_inference"
+      ],
+      "url": "https://github.com/zai-org/GLM-OCR",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/zai-org/GLM-OCR",
+      "price": null,
+      "vram": "~2GB (BF16)",
+      "license": "開源"
+    },
+    {
+      "id": "20260406-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google LiteRT-LM — Edge LLM 推理框架",
+      "summary": "Google production-ready edge inference 框架。跨平台支援 Android/iOS/RPi，Gemma 4 E2B 在 RPi 5 跑 7.6 tok/s，支援 function calling。",
+      "tags": [
+        "llm_inference",
+        "edge_inference",
+        "on-device"
+      ],
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/bring-state-of-the-art-agentic-skills-to-the-edge-with-gemma-4/",
+      "price": null,
+      "vram": "依模型，E2B 低至 1.5GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260406-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ollama v0.19 + v0.20 — MLX backend + Gemma 4",
+      "summary": "v0.19 MLX backend preview 加速 Apple Silicon (prefill +57%, decode +93%)。v0.20 支援 Gemma 4 全系列。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "mlx"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.20.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.20.0",
+      "price": null,
+      "vram": "依模型而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20260406-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "llama.cpp b8600 — RTX 50 系列優化",
+      "summary": "4/5 發布，RTX 50 CUDA kernel 提速 15%、ROCm 7 AMD RX 9000 支援、Gemma 4 相容。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "cuda"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8600",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8600",
+      "price": null,
+      "vram": "依模型而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20260406-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Netflix VOID — 物理感知影片物件移除",
+      "summary": "Netflix + INSAIT 開源。移除物件後模擬物理因果（吉他掉落等）。基於 CogVideoX，quadmask 系統。人類評估 64.8% 偏好度。需 40GB+ VRAM。",
+      "tags": [
+        "video_generation",
+        "inpainting",
+        "diffusion"
+      ],
+      "url": "https://github.com/Netflix/void-model",
+      "source": "MarktechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/04/04/netflix-ai-team-just-open-sourced-void-an-ai-model-that-erases-objects-from-videos-physics-and-all/",
+      "price": null,
+      "vram": "40GB+ (A100)",
+      "license": "開源"
     }
   ]
 }
