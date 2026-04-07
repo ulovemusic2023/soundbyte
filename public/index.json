@@ -1,6 +1,151 @@
 {
   "entries": [
     {
+      "id": "20260407-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-07",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "便宜的重構不等於免費的技術債",
+      "summary": "AI 讓我拖延關鍵設計決策。便宜的重構≠免費的技術債。",
+      "tags": [
+        "ai coding",
+        "architecture",
+        "technical debt"
+      ],
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "source": "Lalit Maganti",
+      "sourceUrl": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260407-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-07",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Dario Amodei：最安全的職涯是成為能跟 AI 協作的人",
+      "summary": "未來最安全職涯不是特定職業而是能力 — 引導 AI、控制 AI、超越 AI 思考。",
+      "tags": [
+        "career",
+        "ai leverage",
+        "creator leverage",
+        "solo founder"
+      ],
+      "url": "https://economictimes.indiatimes.com/news/international/us/career-advice-of-the-day-by-anthropic-ceo-dario-amodei-dont-just-learn-skills-that-ai-can-replace-focus-on-becoming-someone-who-can-work-why-amodei-says-the-safest-career-path-today-isnt-doctor-engineer-coder-its-person-who-can-/articleshow/129952949.cms",
+      "source": "Dario Amodei / Anthropic",
+      "sourceUrl": "https://economictimes.indiatimes.com/news/international/us/career-advice-of-the-day-by-anthropic-ceo-dario-amodei-dont-just-learn-skills-that-ai-can-replace-focus-on-becoming-someone-who-can-work-why-amodei-says-the-safest-career-path-today-isnt-doctor-engineer-coder-its-person-who-can-/articleshow/129952949.cms",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260407-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-07",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "AI 是拖延症剋星，但也是架構毒藥",
+      "summary": "用 Claude Code 三個月做出拖延八年的工具，但第一版因架構問題全部重寫。",
+      "tags": [
+        "agentic engineering",
+        "ai coding",
+        "architecture",
+        "technical debt"
+      ],
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "source": "Simon Willison / Lalit Maganti",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/5/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260407-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-07",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Anthropic 從 $1B 到 $19B ARR 只花 14 個月",
+      "summary": "Activation 是 AI 產品最高槓桿問題、大注小注比 70/30、PM 工程師比例可能翻轉。",
+      "tags": [
+        "growth",
+        "activation",
+        "ai product",
+        "operational"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run",
+      "source": "Amol Avasare / Anthropic",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260407-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-07",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "HBR：別讓 AI 摧毀你公司的核心競爭力",
+      "summary": "AI 會讓組織趨向通用標準，磨掉公司獨有 DNA。導入 AI 前先辨識哪些能力是護城河。",
+      "tags": [
+        "mental model",
+        "competitive advantage",
+        "organizational DNA"
+      ],
+      "url": "https://hbr.org/2026/04/dont-let-ai-destroy-the-skills-that-make-your-company-competitive",
+      "source": "HBR",
+      "sourceUrl": "https://hbr.org/2026/04/dont-let-ai-destroy-the-skills-that-make-your-company-competitive",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260407-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-07",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Jensen Huang 的「Token Budget」思維 — AI 工廠時代的資源分配",
+      "summary": "GTC 2026 上 Jensen Huang 提出工程師未來會收到 token 預算，電腦從工具進化成生產設備。",
+      "tags": [
+        "mental model",
+        "ai factory",
+        "token budget",
+        "inference"
+      ],
+      "url": "https://www.constellationr.com/insights/news/nvidia-gtc-2026-8-takeaways-huangs-analyst-meetings",
+      "source": "Jensen Huang / NVIDIA",
+      "sourceUrl": "https://www.constellationr.com/insights/news/nvidia-gtc-2026-8-takeaways-huangs-analyst-meetings",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260407-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-07",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sam Altman 的「超級智慧新政」— 用 Public Wealth Fund 分配 AI 紅利",
+      "summary": "OpenAI 發布 13 頁政策白皮書，提出國家財富基金讓公民分享 AI 經濟成長、四天工作制、機器人稅。框架思維：當 AI 把餅做大，分配機制要先設計好。",
+      "tags": [
+        "mental model",
+        "public wealth fund",
+        "superintelligence",
+        "new deal"
+      ],
+      "url": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/",
+      "source": "Sam Altman / OpenAI",
+      "sourceUrl": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260406-sw-001",
       "radar": "software-dev",
       "date": "2026-04-06",
