@@ -1,6 +1,147 @@
 {
   "entries": [
     {
+      "id": "20260407-sw-017",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Ollama 0.19：MLX backend 原生整合，Apple Silicon 推理速度翻倍",
+      "summary": "Ollama 0.19 新增 Apple MLX 原生支援（decode 58→112 tok/s），NVFP4 格式支援，智慧跨對話快取。",
+      "tags": [
+        "Ollama",
+        "MLX",
+        "Apple Silicon",
+        "local inference"
+      ],
+      "url": "https://gigazine.net/gsc_news/en/20260402-ollama-0-19-support-apple-mlx/",
+      "source": "Gigazine",
+      "sourceUrl": "https://gigazine.net/gsc_news/en/20260402-ollama-0-19-support-apple-mlx/"
+    },
+    {
+      "id": "20260407-sw-016",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "GitHub Copilot 隱私政策爭議：4/24 起用戶資料預設用於 AI 訓練",
+      "summary": "GitHub 4/24 起 Free/Pro/Pro+ 用戶互動資料預設用於 AI 訓練。開發者強烈反彈：未通知、opt-out 非 opt-in、private repo session 資料外洩疑慮。",
+      "tags": [
+        "GitHub Copilot",
+        "privacy",
+        "training data",
+        "opt-out"
+      ],
+      "url": "https://www.devpik.com/blog/github-copilot-training-data-opt-out",
+      "source": "DevPik",
+      "sourceUrl": "https://www.devpik.com/blog/github-copilot-training-data-opt-out"
+    },
+    {
+      "id": "20260407-sw-015",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "vLLM 0.19.0：zero-bubble async scheduling + Gemma 4 支援",
+      "summary": "vLLM 0.19.0 新增 zero-bubble async scheduling、HuggingFace 整合、Gemma 4 架構支援，多平台推理引擎升級。",
+      "tags": [
+        "vLLM",
+        "inference",
+        "zero-bubble scheduling",
+        "Gemma 4"
+      ],
+      "url": "https://af.net/realtime/vllm-0-19-0-released-with-hugging-face-integration/",
+      "source": "AF.net",
+      "sourceUrl": "https://af.net/realtime/vllm-0-19-0-released-with-hugging-face-integration/"
+    },
+    {
+      "id": "20260407-sw-014",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "FastMCP 3.0：Prefect 開源 MCP server 框架",
+      "summary": "Prefect 推出 FastMCP 3.0 為 MCP server 提供 Pythonic 高階抽象：OAuth、middleware、即時串流、hot reload。免費 tier 透過 Prefect Horizon 託管。",
+      "tags": [
+        "MCP",
+        "FastMCP",
+        "Prefect",
+        "Python"
+      ],
+      "url": "https://softwareengineeringdaily.com/2026/04/07/fastmcp-with-adam-azzam-and-jeremiah-lowin/",
+      "source": "SE Daily",
+      "sourceUrl": "https://softwareengineeringdaily.com/2026/04/07/fastmcp-with-adam-azzam-and-jeremiah-lowin/"
+    },
+    {
+      "id": "20260407-sw-013",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic Economic Index：coding 理論 AI 曝險 94% 但實際僅 30%",
+      "summary": "LLM 理論可處理 94% coding 任務，實際採用僅 30%。52% 對話屬 augmentation，45% 屬 automation。早期職涯工作者受衝擊最大。",
+      "tags": [
+        "AI exposure",
+        "labor market",
+        "economic impact"
+      ],
+      "url": "https://fortune.com/2026/04/07/anthropic-peter-mccrory-ai-automation-white-collar-jobs-claude-recession/",
+      "source": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/04/07/anthropic-peter-mccrory-ai-automation-white-collar-jobs-claude-recession/"
+    },
+    {
+      "id": "20260407-sw-012",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "AI Brain Fry：平行 agent 導致開發者認知過載，BCG 研究確認 3 工具即上限",
+      "summary": "Willison 警告同時操作 4 個 AI agent 上午 11 點就精力耗盡。BCG 研究：生產力在 3 個 AI 工具見頂，4+ 直線下降。",
+      "tags": [
+        "AI burnout",
+        "developer productivity",
+        "cognitive overload"
+      ],
+      "url": "https://zenvanriel.com/ai-engineer-blog/ai-brain-fry-developer-burnout-productivity-paradox/",
+      "source": "Zen Van Riel / Axios",
+      "sourceUrl": "https://zenvanriel.com/ai-engineer-blog/ai-brain-fry-developer-burnout-productivity-paradox/"
+    },
+    {
+      "id": "20260407-sw-011",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 三 Agent Harness：planning/generation/evaluation 分離實現多小時自主 coding",
+      "summary": "Anthropic 三 agent 架構將 planning、generation、evaluation 分離，透過 JSON spec handoff 維持長時間 coding 的 state，比 context compaction 更適合多小時任務。",
+      "tags": [
+        "multi-agent",
+        "harness engineering",
+        "long-running agents"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/"
+    },
+    {
+      "id": "20260407-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Agentic Search 的 grep moment：AI agent 回歸 Unix 基本功取代 RAG",
+      "summary": "AI 編碼 agent 越來越依賴 grep/find/cat 等 Unix 工具而非 RAG pipeline。Mintlify 已用 grep over virtual filesystem 取代 RAG。重點在 search harness 的 constraints、hooks、inner/outer loop。",
+      "tags": [
+        "agentic search",
+        "grep",
+        "RAG alternative",
+        "search harness"
+      ],
+      "url": "https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment",
+      "source": "Software Doug",
+      "sourceUrl": "https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment"
+    },
+    {
       "id": "20260407-fm-007",
       "radar": "founder-mind",
       "date": "2026-04-07",
