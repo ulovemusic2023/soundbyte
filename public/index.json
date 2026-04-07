@@ -16344,6 +16344,163 @@
       "price": null,
       "vram": "40GB+ (A100)",
       "license": "開源"
+    },
+    {
+      "id": "20260407-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 發布 Intelligence Age 產業政策藍圖",
+      "summary": "OpenAI 13 頁政策文件提議 robot tax、國家公共財富基金、32 小時工作週、跨國 AI 安全框架",
+      "tags": [
+        "ai policy",
+        "robot tax",
+        "superintelligence"
+      ],
+      "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age/",
+      "source": "OpenAI",
+      "sourceUrl": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/"
+    },
+    {
+      "id": "20260407-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "DeepMind AlphaEvolve 用 LLM 演化博弈演算法超越人類設計",
+      "summary": "用 Gemini 2.5 Pro 演化 Python source code 發現 VAD-CFR 等新 MARL 演算法",
+      "tags": [
+        "AlphaEvolve",
+        "MARL",
+        "game theory",
+        "DeepMind"
+      ],
+      "url": "https://deepmind.google/blog/",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/04/03/google-deepminds-research-lets-an-llm-rewrite-its-own-game-theory-algorithms-and-it-outperformed-the-experts/"
+    },
+    {
+      "id": "20260407-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain: Open Models 跨越 Agent 能力門檻",
+      "summary": "GLM-5 agent 正確率 0.64 接近 Opus 4.6 的 0.68，成本僅 1/80",
+      "tags": [
+        "open models",
+        "GLM-5",
+        "agent evaluation",
+        "LangChain"
+      ],
+      "url": "https://blog.langchain.com/open-models-have-crossed-a-threshold/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/open-models-have-crossed-a-threshold/"
+    },
+    {
+      "id": "20260407-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison 預測 50% 工程師年底前寫 95% AI code",
+      "summary": "Lenny's Podcast 專訪：AI inflection point 已過，dark factory 模式即將到來",
+      "tags": [
+        "agentic engineering",
+        "dark factory",
+        "Simon Willison"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/2/lennys-podcast/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/2/lennys-podcast/"
+    },
+    {
+      "id": "20260407-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler 發布 Harness Engineering 完整指南",
+      "summary": "為 AI coding agent 使用者設計：guides、sensors、harness templates 建立對 AI code 的信任",
+      "tags": [
+        "harness engineering",
+        "context engineering",
+        "Martin Fowler"
+      ],
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/harness-engineering.html"
+    },
+    {
+      "id": "20260407-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pragmatic Engineer: GitHub 可用性降至 90% 因 AI agent 暴增",
+      "summary": "GitHub 無 CEO、可用性降至 one nine、面臨 Pierre Computer 等 AI-native 平台挑戰",
+      "tags": [
+        "GitHub",
+        "platform engineering",
+        "Gergely Orosz"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/does-github-still-merit-top-git-platform",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/does-github-still-merit-top-git-platform"
+    },
+    {
+      "id": "20260407-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Thomas Ptacek: AI 將徹底顛覆漏洞研究經濟學",
+      "summary": "Frontier model 結合 agent 無限耐心將使 zero-day 研究變成「指著 source tree 搜索」",
+      "tags": [
+        "AI zero-day",
+        "vulnerability research",
+        "security"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/"
+    },
+    {
+      "id": "20260407-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 終止 Claude Code 訂閱對 OpenClaw 第三方工具支援",
+      "summary": "訂閱者需另付 pay-as-you-go 費用，OpenClaw 創辦人批評先抄功能再封鎖開源",
+      "tags": [
+        "Anthropic",
+        "Claude Code",
+        "OpenClaw",
+        "pricing"
+      ],
+      "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/"
+    },
+    {
+      "id": "20260407-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain Self-Healing Agent Pipeline: Poisson 偵測 + 自動修 PR",
+      "summary": "部署後 Poisson 分佈偵測 error rate 異常，triage agent 判斷因果，Open SWE 自動修復",
+      "tags": [
+        "self-healing",
+        "Poisson regression",
+        "Open SWE",
+        "CI/CD"
+      ],
+      "url": "https://blog.langchain.com/production-agents-self-heal/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/production-agents-self-heal/"
     }
   ]
 }
