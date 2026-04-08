@@ -17407,6 +17407,147 @@
       "url": "https://blog.langchain.com/production-agents-self-heal/",
       "source": "LangChain Blog",
       "sourceUrl": "https://blog.langchain.com/production-agents-self-heal/"
+    },
+    {
+      "id": "20260408-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "NVIDIA/personaplex",
+      "summary": "NVIDIA 開源即時全雙工語音對話模型，支援角色控制和 voice conditioning。基於 Moshi 架構。",
+      "tags": [
+        "voice-ai",
+        "speech-to-speech",
+        "conversational-ai"
+      ],
+      "url": "https://github.com/NVIDIA/personaplex",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 8128,
+      "createdDate": "2026-01-05",
+      "license": "CC-BY-NC-4.0"
+    },
+    {
+      "id": "20260408-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "NousResearch/hermes-agent",
+      "summary": "Nous Research 的自我學習 AI agent，內建 learning loop、跨 session 記憶、多平台支援。直接競爭 OpenClaw。",
+      "tags": [
+        "ai-agent",
+        "self-improving",
+        "multi-platform"
+      ],
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 34028,
+      "createdDate": "2025-07-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260408-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "Yeachan-Heo/oh-my-claudecode",
+      "summary": "Claude Code 的 multi-agent orchestration 層，支援 autopilot、team 協作、deep interview。",
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "orchestration"
+      ],
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 25931,
+      "createdDate": "2026-01-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "farion1231/cc-switch",
+      "summary": "跨平台桌面 All-in-One 工具，在 Claude Code、Codex、OpenCode、OpenClaw、Gemini CLI 間一鍵切換。Rust 實作。",
+      "tags": [
+        "coding-agent",
+        "desktop-app",
+        "rust"
+      ],
+      "url": "https://github.com/farion1231/cc-switch",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 40762,
+      "createdDate": "2025-08-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "EveryInc/compound-engineering-plugin",
+      "summary": "Compound Engineering 官方 plugin for Claude Code/Codex，把工程任務拆成可組合的原子操作。",
+      "tags": [
+        "claude-code",
+        "engineering-methodology",
+        "plugin"
+      ],
+      "url": "https://github.com/EveryInc/compound-engineering-plugin",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 13609,
+      "createdDate": "2025-10-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "rynfar/meridian",
+      "summary": "Claude Max → 第三方工具的合法 proxy，透過 Claude Code SDK 橋接。支援 OpenCode、Aider、Cline 等。",
+      "tags": [
+        "claude-max",
+        "proxy",
+        "api-bridge"
+      ],
+      "url": "https://github.com/rynfar/meridian",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 646,
+      "createdDate": "2026-01-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "rasteri/SC1000",
+      "summary": "開源數位刮碟樂器，全套 firmware + 硬體設計檔開源。USB 載入 beats/samples，磁性旋轉感測器偵測 scratch。",
+      "tags": [
+        "music-hardware",
+        "dsp",
+        "turntablism",
+        "open-hardware"
+      ],
+      "url": "https://github.com/rasteri/SC1000",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 487,
+      "createdDate": "2018-11-04",
+      "license": "GPL-3.0"
     }
   ]
 }
