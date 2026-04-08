@@ -1,6 +1,202 @@
 {
   "entries": [
     {
+      "id": "20260408-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "openscreen",
+      "summary": "Screen Studio 免費開源替代品，錄螢幕 + zoom/pan + annotation，本週 +15,921 stars",
+      "tags": [
+        "coding_tools",
+        "productivity"
+      ],
+      "url": "https://github.com/siddharthvaddem/openscreen",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 25199,
+      "createdDate": "2025-10-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "fff.nvim",
+      "summary": "超快 fuzzy file finder，Rust 引擎 + MCP + frecency memory，本週 +2,419 stars",
+      "tags": [
+        "coding_tools",
+        "ai_agent",
+        "mcp"
+      ],
+      "url": "https://github.com/dmtrKovalenko/fff.nvim",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 3837,
+      "createdDate": "2025-07-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "cersei",
+      "summary": "Rust coding agent SDK：tool execution / graph memory / sub-agent / MCP，附帶 Abstract CLI",
+      "tags": [
+        "ai_agent",
+        "coding_tools",
+        "mcp"
+      ],
+      "url": "https://github.com/pacifio/cersei",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/pacifio/cersei",
+      "stars": 234,
+      "createdDate": "2026-04-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "PokeClaw",
+      "summary": "On-device Android AI 控制器，Gemma 4 本地執行，不需 cloud / API key",
+      "tags": [
+        "ai_agent",
+        "local_ai"
+      ],
+      "url": "https://github.com/agents-io/PokeClaw",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/agents-io/PokeClaw",
+      "stars": 253,
+      "createdDate": "2026-04-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260408-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "parlor",
+      "summary": "全本地端 multimodal AI：Gemma 4 E2B + Kokoro TTS，M3 Pro 上 ~2.5-3 秒",
+      "tags": [
+        "local_ai",
+        "audio_voice"
+      ],
+      "url": "https://github.com/fikrikarim/parlor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/fikrikarim/parlor",
+      "stars": 908,
+      "createdDate": "2026-04-05",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260408-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "caveman",
+      "summary": "Claude Code skill，用精簡語言回覆省 65% output token",
+      "tags": [
+        "ai_agent",
+        "coding_tools"
+      ],
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 5954,
+      "createdDate": "2026-04-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "graphify",
+      "summary": "用 AST + Claude subagent 建 knowledge graph，支援主流 coding agent，省 71.5x token",
+      "tags": [
+        "ai_agent",
+        "coding_tools",
+        "data_content"
+      ],
+      "url": "https://github.com/safishamsi/graphify",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 7053,
+      "createdDate": "2026-04-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "OpenHarness",
+      "summary": "HKUDS open-source agent harness 框架，tool-use / skills / memory / multi-agent",
+      "tags": [
+        "ai_agent",
+        "coding_tools",
+        "mcp"
+      ],
+      "url": "https://github.com/HKUDS/OpenHarness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 7140,
+      "createdDate": "2026-04-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "emdash",
+      "summary": "Astro + Cloudflare TypeScript CMS，WordPress 精神繼承者，Plugin sandbox isolate",
+      "tags": [
+        "web_fullstack",
+        "coding_tools",
+        "mcp"
+      ],
+      "url": "https://github.com/emdash-cms/emdash",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 8180,
+      "createdDate": "2026-04-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-04-08",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "mempalace",
+      "summary": "AI 記憶系統，30x context compression，graph-based memory consolidation",
+      "tags": [
+        "ai_agent",
+        "memory",
+        "coding_tools"
+      ],
+      "url": "https://github.com/milla-jovovich/mempalace",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 17248,
+      "createdDate": "2026-04-05",
+      "license": "MIT"
+    },
+    {
       "id": "20260408-sw-009",
       "radar": "software-dev",
       "date": "2026-04-08",
