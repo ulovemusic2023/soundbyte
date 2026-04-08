@@ -1,6 +1,172 @@
 {
   "entries": [
     {
+      "id": "20260408-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Build an AI Agent 是錯誤起點",
+      "summary": "Trillo AI 主張不該從建 agent 開始。應先 Capture System Context → Requirements Discovery 再設計 agent。Agent-first 導致 production 失敗。",
+      "tags": [
+        "architecture",
+        "ai agent",
+        "production",
+        "system design"
+      ],
+      "url": "https://hackernoon.com/why-build-an-ai-agent-is-the-wrong-starting-point-for-ai-systems",
+      "source": "Hackernoon / Trillo AI",
+      "sourceUrl": "https://hackernoon.com/why-build-an-ai-agent-is-the-wrong-starting-point-for-ai-systems"
+    },
+    {
+      "id": "20260408-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GLM-5.1 — 754B MIT 開源長程任務模型",
+      "summary": "Z.ai GLM-5.1，754B 參數 MIT 授權，專為 long-horizon autonomous tasks 設計。已上線 Vercel AI Gateway。",
+      "tags": [
+        "GLM-5.1",
+        "open model",
+        "MIT license",
+        "Z.ai"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/7/glm-51/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/7/glm-51/"
+    },
+    {
+      "id": "20260408-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Latent Space × OpenAI：Harness Engineering 專題",
+      "summary": "swyx 訪問 OpenAI Ryan Lopopolo 談 Harness Engineering。瓶頸從 token 轉移到人類注意力。Agent 透過 fast build loops/observability/specs/skills 達成自主。",
+      "tags": [
+        "swyx",
+        "Latent Space",
+        "harness engineering",
+        "OpenAI"
+      ],
+      "url": "https://www.latent.space/p/harness-eng",
+      "source": "Latent Space",
+      "sourceUrl": "https://www.latent.space/p/harness-eng"
+    },
+    {
+      "id": "20260408-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 加速 Post-Quantum 路線圖 — 2029 全面量子安全",
+      "summary": "Cloudflare 宣布 2029 年全平台 post-quantum 安全。2026中 ML-DSA → 2027中 Merkle Tree Certs → 2028初 SASE。Q-Day 可能提前到 2029-2030。",
+      "tags": [
+        "Cloudflare",
+        "post-quantum",
+        "security",
+        "cryptography"
+      ],
+      "url": "https://blog.cloudflare.com/post-quantum-roadmap/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/post-quantum-roadmap/"
+    },
+    {
+      "id": "20260408-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Karpathy Autoresearch：Red Hat OpenShift AI 198 實驗零人類介入",
+      "summary": "Red Hat 部署 autoresearch 到 OpenShift AI + H100，24h 跑 198 次 GPT 訓練實驗，Claude Opus 連續 20 小時不重啟，val loss 改善 2.3%。",
+      "tags": [
+        "Karpathy",
+        "autoresearch",
+        "Red Hat",
+        "OpenShift AI",
+        "MLOps"
+      ],
+      "url": "https://developers.redhat.com/articles/2026/04/07/autoresearch-on-red-hat-openshift-ai-198-experiments-zero-intervention",
+      "source": "Red Hat Developer",
+      "sourceUrl": "https://developers.redhat.com/articles/2026/04/07/autoresearch-on-red-hat-openshift-ai-198-experiments-zero-intervention"
+    },
+    {
+      "id": "20260408-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mechanical Sympathy 原則 — 高效能系統的硬體思維",
+      "summary": "martinfowler.com 新文：predictable memory access、cache line awareness、single-writer principle、natural batching。從 LMAX 到 AI inference server 皆適用。",
+      "tags": [
+        "Martin Fowler",
+        "performance",
+        "mechanical sympathy",
+        "architecture"
+      ],
+      "url": "https://martinfowler.com/articles/mechanical-sympathy-principles.html",
+      "source": "Martin Fowler site",
+      "sourceUrl": "https://martinfowler.com/articles/mechanical-sympathy-principles.html"
+    },
+    {
+      "id": "20260408-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Istio AI-Aware Service Mesh — agentgateway 實驗登場",
+      "summary": "KubeCon EU 2026 Istio 發布 ambient multicluster beta、Gateway API Inference Extension、實驗性 agentgateway。Service mesh 升級為 AI inference 路由基礎層。",
+      "tags": [
+        "Istio",
+        "service mesh",
+        "agentgateway",
+        "KubeCon",
+        "cloud-native"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/istio-ai-multicluster/",
+      "source": "InfoQ / CNCF",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/istio-ai-multicluster/"
+    },
+    {
+      "id": "20260408-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google 開源 Scion — Multi-Agent Orchestration Hypervisor",
+      "summary": "Google 開源 Scion，管理多 AI agent 的 orchestration testbed。Isolation over constraints 設計，支援 Claude Code/Gemini CLI/Codex，可跑 local/remote/K8s。",
+      "tags": [
+        "Google",
+        "multi-agent",
+        "orchestration",
+        "Scion",
+        "Kubernetes"
+      ],
+      "url": "https://googlecloudplatform.github.io/scion/overview/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/"
+    },
+    {
+      "id": "20260408-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic Project Glasswing — Claude Mythos Preview 為網路安全帶來範式轉移",
+      "summary": "Anthropic 聯合 AWS/Apple/Google/MS/NVIDIA/CrowdStrike 發布 Project Glasswing，Claude Mythos Preview 已找出數千個高危 zero-day 漏洞。投入 $100M credits + $4M 開源安全捐助。",
+      "tags": [
+        "Anthropic",
+        "zero-day",
+        "cybersecurity",
+        "Project Glasswing",
+        "Claude Mythos"
+      ],
+      "url": "https://red.anthropic.com/2026/mythos-preview/",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/glasswing"
+    },
+    {
       "id": "20260408-ai-006",
       "radar": "ai-infra",
       "date": "2026-04-08",
