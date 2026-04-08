@@ -1,6 +1,129 @@
 {
   "entries": [
     {
+      "id": "20260408-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenAI Parameter Golf：16MB 內訓最強 LM 挑戰賽",
+      "summary": "OpenAI 發起競賽：16MB 以內訓出最強 LM，限時 10 分鐘 8xH100。推動 extreme compression（BitNet、QAT、depth recurrence）。$1M 算力贊助。",
+      "tags": [
+        "OpenAI",
+        "compression",
+        "quantization",
+        "competition",
+        "small model"
+      ],
+      "url": "https://github.com/openai/parameter-golf",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "16MB model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "4DPocket：自架 AI 知識庫，17+ 平台內容 auto-tag + 語意搜尋",
+      "summary": "貼 URL 自動擷取全文、auto-tag、摘要、語意搜尋。支援 YouTube/Twitter/Reddit 等 17+ 平台，Docker 部署，local-first。",
+      "tags": [
+        "knowledge base",
+        "semantic search",
+        "self-hosted",
+        "RAG"
+      ],
+      "url": "https://github.com/onllm-dev/4DPocket",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0 (CPU/embedding)",
+      "license": "GPLv3"
+    },
+    {
+      "id": "20260408-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GLiNER2：205M 參數四合一 NER/分類/結構化萃取，CPU-first",
+      "summary": "統一 NER、文本分類、結構化資料萃取、關係抽取的 205M 模型。CPU-first 設計不需 GPU，支援 fp16 + torch.compile 加速。",
+      "tags": [
+        "NER",
+        "information extraction",
+        "CPU inference",
+        "lightweight"
+      ],
+      "url": "https://github.com/fastino-ai/GLiNER2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "<1GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260408-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LongCat-AudioDiT：3.5B 參數 zero-shot TTS，waveform latent 直出",
+      "summary": "非自迴歸 diffusion TTS，直接在 waveform latent space 生成語音。100 萬小時中英語訓練，zero-shot voice cloning SIM 0.818 超越 Seed-TTS。",
+      "tags": [
+        "TTS",
+        "zero-shot",
+        "voice cloning",
+        "diffusion",
+        "waveform latent"
+      ],
+      "url": "https://arxiv.org/abs/2603.29339",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2603.29339",
+      "vram": "~7GB FP16 / ~4GB INT8",
+      "license": "未確認"
+    },
+    {
+      "id": "20260408-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp b8690：Vulkan FA dequant 擴充 + CUDA 13 支援",
+      "summary": "新增 Vulkan flash attention dequant 支援 Q4_1/Q5_0/Q5_1/IQ4_NL，正式支援 CUDA 13.1 和 OpenVINO 2026.0。非 NVIDIA GPU 的 FA 效能大幅提升。",
+      "tags": [
+        "llama.cpp",
+        "Vulkan",
+        "flash attention",
+        "quantization",
+        "CUDA 13"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8690",
+      "source": "GitHub Release",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8690",
+      "vram": "N/A (inference engine)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260408-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ollama v0.20.1：Gemma 4 flash attention + tool call 修復",
+      "summary": "Ollama 快速跟進 Gemma 4，啟用 flash attention、修正 tool call parsing 引號 bug、解決 ROCm build 問題。26B MoE（4B active）用 Q4 約 8GB VRAM。",
+      "tags": [
+        "Ollama",
+        "Gemma 4",
+        "flash attention",
+        "local inference"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.20.1",
+      "source": "GitHub Release",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.20.1",
+      "vram": "26B MoE ~8GB Q4",
+      "license": "MIT"
+    },
+    {
       "id": "20260407-sw-017",
       "radar": "software-dev",
       "date": "2026-04-07",
