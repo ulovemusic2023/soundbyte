@@ -1,6 +1,141 @@
 {
   "entries": [
     {
+      "id": "20260408-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-04-08",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "You're not going to lose your job to AI, but to someone who uses AI",
+      "summary": "Jensen Huang 在 Lex Fridman podcast 用放射科醫師案例證明 AI 創造更多需求。恐慌論述反而造成人才短缺。",
+      "tags": [
+        "ai future",
+        "job evolution"
+      ],
+      "url": "https://www.thenews.com.pk/latest/1397527-ai-wont-replace-jobs-it-will-evolve-them-says-nvidia-ceo",
+      "source": "Jensen Huang",
+      "sourceUrl": "https://www.thenews.com.pk/latest/1397527-ai-wont-replace-jobs-it-will-evolve-them-says-nvidia-ceo"
+    },
+    {
+      "id": "20260408-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-08",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "DHH：18 個月 AI 實驗全部沒 ship",
+      "summary": "37signals 花 18 個月嘗試各種 AI feature，挑戰在於創造用戶歡迎的工具，全部沒上線。用戶體驗 > 技術能力。",
+      "tags": [
+        "product market fit",
+        "calm company",
+        "via negativa"
+      ],
+      "url": "https://world.hey.com/dhh/panther-lake-is-the-real-deal-4bd731f1",
+      "source": "DHH / 37signals",
+      "sourceUrl": "https://world.hey.com/dhh/panther-lake-is-the-real-deal-4bd731f1"
+    },
+    {
+      "id": "20260408-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-08",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Shopify Agentic Storefronts：預設 agent-ready",
+      "summary": "所有 Shopify 商店自動上架到 ChatGPT、Copilot 等 AI 平台。AI 導流量成長 7 倍、訂單 11 倍。AI agent 成為新分銷通路。",
+      "tags": [
+        "distribution",
+        "agentic",
+        "go to market"
+      ],
+      "url": "https://www.pravinkumar.co/blog/shopify-b2b-agentic-storefronts-chatgpt-2026",
+      "source": "Tobi Lütke / Shopify",
+      "sourceUrl": "https://www.pravinkumar.co/blog/shopify-b2b-agentic-storefronts-chatgpt-2026"
+    },
+    {
+      "id": "20260408-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-08",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Anthropic 文化：Just argue with Dario",
+      "summary": "員工被鼓勵在 Slack 公開挑戰 CEO。高度透明文化支撐 14 個月從 $1B 到 $19B ARR 爆發成長。AI 產品最高槓桿是 activation。",
+      "tags": [
+        "leadership",
+        "culture",
+        "growth loop"
+      ],
+      "url": "https://www.benzinga.com/markets/tech/26/04/51653555/just-argue-with-dario-inside-anthropics-ai-culture-where-employees-publicly-challenge-ceo-on-slack",
+      "source": "Benzinga",
+      "sourceUrl": "https://www.benzinga.com/markets/tech/26/04/51653555/just-argue-with-dario-inside-anthropics-ai-culture-where-employees-publicly-challenge-ceo-on-slack"
+    },
+    {
+      "id": "20260408-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-08",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Jensen Huang：別把工作和工具搞混",
+      "summary": "Huang 用放射科醫師案例拆解：AI 增加需求而非取代。區分工作的 purpose 和 tool。你不會被 AI 取代，會被用 AI 的人取代。",
+      "tags": [
+        "mental model",
+        "ai future",
+        "leadership"
+      ],
+      "url": "https://www.thenews.com.pk/latest/1397527-ai-wont-replace-jobs-it-will-evolve-them-says-nvidia-ceo",
+      "source": "Jensen Huang / Lex Fridman",
+      "sourceUrl": "https://www.thenews.com.pk/latest/1397527-ai-wont-replace-jobs-it-will-evolve-them-says-nvidia-ceo"
+    },
+    {
+      "id": "20260408-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-08",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "OpenAI 政策白皮書：超級智慧時代的新社會契約",
+      "summary": "Sam Altman 提出機器人課稅、公共財富基金、32 小時四天工作週。$852B 公司主動警告自家技術可能打破現行經濟體系。",
+      "tags": [
+        "ai future",
+        "second-order thinking",
+        "policy"
+      ],
+      "url": "https://www.businessinsider.com/openai-superintelligence-ai-upheaval-tax-shorter-workweek-public-wealth-fund-2026-4",
+      "source": "Business Insider",
+      "sourceUrl": "https://www.businessinsider.com/openai-superintelligence-ai-upheaval-tax-shorter-workweek-public-wealth-fund-2026-4"
+    },
+    {
+      "id": "20260408-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-08",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Marc Andreessen：AI 是 80 年的一夜成功",
+      "summary": "Andreessen 上 Latent Space 闡述 AI 為何這次不一樣。真正瓶頸不在模型而在制度和社會系統。Scaling law 會持續。",
+      "tags": [
+        "mental model",
+        "compounding",
+        "platform shift"
+      ],
+      "url": "https://www.latent.space/p/pmarca",
+      "source": "Latent Space Podcast",
+      "sourceUrl": "https://www.latent.space/p/pmarca"
+    },
+    {
+      "id": "20260408-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-08",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Karpathy LLM Knowledge Bases — 知識即編譯",
+      "summary": "Karpathy 分享 LLM 知識庫工作流：把原始素材丟進目錄讓 LLM 像 compiler 編譯成結構化 wiki。從 vibe coding 到 vibe research。",
+      "tags": [
+        "mental model",
+        "ai native",
+        "knowledge leverage"
+      ],
+      "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://antigravity.codes/blog/karpathy-llm-knowledge-bases"
+    },
+    {
       "id": "20260408-ts-010",
       "radar": "tool-scout",
       "date": "2026-04-08",
