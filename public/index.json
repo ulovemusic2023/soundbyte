@@ -1,6 +1,129 @@
 {
   "entries": [
     {
+      "id": "20260408-sw-016",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "GLM-5.1 社群早期使用回饋 — 量化失真與可靠性疑慮",
+      "summary": "Z.ai 754B MIT 模型被報告有 quantization artifacts、circular reasoning、中文字符 glitch。Verbosity 極高。",
+      "tags": [
+        "open model",
+        "quantization",
+        "reliability"
+      ],
+      "url": "https://agent-wars.com/news/2026-04-07-glm-5-1-towards-long-horizon-tasks",
+      "source": "Agent Wars / Artificial Analysis",
+      "sourceUrl": "https://agent-wars.com/news/2026-04-07-glm-5-1-towards-long-horizon-tasks"
+    },
+    {
+      "id": "20260408-sw-015",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cursor 3.0 Composer 2 社群穩定性回報",
+      "summary": "Cursor Forum 用戶回報 Composer 2 存在反覆 revert/reapply code 的迴圈 bug。Agent Window 整合也有 chat 歷史遺失問題。",
+      "tags": [
+        "ai coding",
+        "Cursor",
+        "stability"
+      ],
+      "url": "https://forum.cursor.com/t/composer-2-keeps-reverting-and-reapplying-code-changes-repeatedly/157012",
+      "source": "Cursor Forum",
+      "sourceUrl": "https://forum.cursor.com/t/composer-2-keeps-reverting-and-reapplying-code-changes-repeatedly/157012"
+    },
+    {
+      "id": "20260408-sw-014",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Coware — Multi-Agent Team 的 Shared Living Specs",
+      "summary": "Self-hostable spec server 讓多個 AI agent 共享 API/schema/type 合約。解決多 agent 併行開發時產生不相容 code 的痛點。",
+      "tags": [
+        "multi-agent",
+        "specification-driven programming",
+        "agent coordination"
+      ],
+      "url": "https://forum.cursor.com/t/coware-shared-living-specs-for-multi-agent-teams/157000",
+      "source": "Cursor Forum / Coware",
+      "sourceUrl": "https://forum.cursor.com/t/coware-shared-living-specs-for-multi-agent-teams/157000"
+    },
+    {
+      "id": "20260408-sw-013",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "AutoBE — 第三代 Backend Coding Agent（42 agents + compiler 驗證）",
+      "summary": "開源 AutoBE 用 form + compiler 架構讓 AI 從自然語言生成完整 NestJS 後端。42 個專門 agent，4 個 AST compiler 做結構驗證，100% 編譯成功率。",
+      "tags": [
+        "ai coding",
+        "code generation",
+        "agent framework",
+        "compiler"
+      ],
+      "url": "https://dev.to/samchon/autobe-vs-claude-code-3rd-gen-coding-agent-developers-review-of-the-leaked-source-code-313b",
+      "source": "dev.to / samchon",
+      "sourceUrl": "https://dev.to/samchon/autobe-vs-claude-code-3rd-gen-coding-agent-developers-review-of-the-leaked-source-code-313b"
+    },
+    {
+      "id": "20260408-sw-012",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Safetensors 正式加入 PyTorch Foundation",
+      "summary": "Hugging Face 將 Safetensors 貢獻給 PyTorch Foundation。防止 pickle 任意程式碼執行漏洞，已成為 open-source ML 的事實標準 tensor 格式。",
+      "tags": [
+        "security",
+        "model distribution",
+        "PyTorch",
+        "Hugging Face"
+      ],
+      "url": "https://pytorch.org/blog/pytorch-foundation-announces-safetensors-as-newest-contributed-project-to-secure-ai-model-execution/",
+      "source": "PyTorch Foundation",
+      "sourceUrl": "https://pytorch.org/blog/pytorch-foundation-announces-safetensors-as-newest-contributed-project-to-secure-ai-model-execution/"
+    },
+    {
+      "id": "20260408-sw-011",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI Codex 達 3M 週活用戶，Altman 重置 rate limit",
+      "summary": "Sam Altman 宣布 Codex 達到 300 萬週活用戶里程碑，即時重置所有用戶的用量限制。並承諾每增加 100 萬用戶就再重置一次直到 1000 萬。",
+      "tags": [
+        "ai coding",
+        "OpenAI",
+        "Codex"
+      ],
+      "url": "https://www.indiatoday.in/technology/news/story/sam-altman-resets-codex-after-anthropic-announces-terrifying-claude-mythos-update-2893069-2026-04-08",
+      "source": "India Today",
+      "sourceUrl": "https://www.indiatoday.in/technology/news/story/sam-altman-resets-codex-after-anthropic-announces-terrifying-claude-mythos-update-2893069-2026-04-08"
+    },
+    {
+      "id": "20260408-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-08",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare × GoDaddy 聯手建立 Agentic Web 身份標準",
+      "summary": "Cloudflare 與 GoDaddy 推進 Agent Name Service (ANS) 和 Web Bot Auth 兩大開放標準。ANS 透過 DNS + PKI 為 AI agent 提供可驗證身份；Web Bot Auth 用 HTTP 簽章驗證 bot 意圖。",
+      "tags": [
+        "ai agent",
+        "agentic web",
+        "identity",
+        "DNS",
+        "cryptography"
+      ],
+      "url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-and-godaddy-partner-to-help-enable-an-open-agentic-web/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-and-godaddy-partner-to-help-enable-an-open-agentic-web/"
+    },
+    {
       "id": "20260408-fm-008",
       "radar": "founder-mind",
       "date": "2026-04-08",
