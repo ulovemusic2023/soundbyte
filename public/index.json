@@ -1,6 +1,146 @@
 {
   "entries": [
     {
+      "id": "20260409-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "InfoQ AI Agent Transport Layer — 有狀態續傳減 80% 上下文重傳",
+      "summary": "OpenAI WebSocket mode 實現 stateful continuation，多輪 agent loop 減少 80%+ context 重傳，延遲降 15-29%。",
+      "tags": [
+        "ai agent",
+        "architecture",
+        "distributed systems"
+      ],
+      "url": "https://www.infoq.com/articles/ai-agent-transport-layer/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/ai-agent-transport-layer/"
+    },
+    {
+      "id": "20260409-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare BPF 符號執行自動生成惡意封包觸發條件",
+      "summary": "用 Z3 定理證明器對 BPF bytecode 做符號執行，自動生成 BPFDoor 後門 magic packet，分析時間從數小時壓到數秒。",
+      "tags": [
+        "security",
+        "reverse engineering",
+        "ebpf"
+      ],
+      "url": "https://blog.cloudflare.com/from-bpf-to-packet/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/from-bpf-to-packet/"
+    },
+    {
+      "id": "20260409-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude × Microsoft 365 MCP Connector — AI 打通 Office 生態",
+      "summary": "Anthropic 推出 M365 MCP connector，所有方案可唯讀存取 Outlook/SharePoint/OneDrive/Teams。MCP 從開發工具走向企業 SaaS 整合。",
+      "tags": [
+        "mcp",
+        "model context protocol",
+        "enterprise",
+        "microsoft"
+      ],
+      "url": "https://office365itpros.com/2026/04/08/microsoft-365-connector-for-claude/",
+      "source": "Office 365 IT Pros",
+      "sourceUrl": "https://office365itpros.com/2026/04/08/microsoft-365-connector-for-claude/"
+    },
+    {
+      "id": "20260409-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "JetBrains × LangChain Deep Agents — ACP 原生整合自訂 Coding Agent",
+      "summary": "Deep Agents + ACP 建構自訂 coding agent，ACP adapter 映射 write_todos → agent plans、interrupts → 權限請求。IntelliJ 2026.1 內建 ACP Registry。",
+      "tags": [
+        "ai agent",
+        "agent framework",
+        "tool use",
+        "ACP"
+      ],
+      "url": "https://blog.jetbrains.com/ai/2026/04/using-acp-deep-agents-to-demystify-modern-software-engineering/",
+      "source": "JetBrains AI Blog",
+      "sourceUrl": "https://blog.jetbrains.com/ai/2026/04/using-acp-deep-agents-to-demystify-modern-software-engineering/"
+    },
+    {
+      "id": "20260409-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler Feedback Flywheel — AI 協作持續進化飛輪",
+      "summary": "Fowler 提出 Feedback Flywheel：收集 prompt/context/workflow/failure signal 回灌到共享 priming 文件，四節奏確保團隊 AI 效能持續提升。",
+      "tags": [
+        "harness engineering",
+        "context engineering",
+        "feedback loop"
+      ],
+      "url": "https://martinfowler.com/articles/reduce-friction-ai/feedback-flywheel.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/articles/reduce-friction-ai/feedback-flywheel.html"
+    },
+    {
+      "id": "20260409-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DHH 的 Agent-First 工作流 — Ruby on Rails AI 文藝復興",
+      "summary": "DHH 分享多模型 tmux 工作流，Ruby on Rails 因 token 效率高成為 agent-first 開發絕佳框架。",
+      "tags": [
+        "ai coding",
+        "agentic engineering",
+        "harness engineering"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/dhhs-new-way-of-writing-code",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/dhhs-new-way-of-writing-code"
+    },
+    {
+      "id": "20260409-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic Managed Agents — 有狀態 Sandbox Agent 平台",
+      "summary": "Anthropic 推出 Managed Agents 託管運行時，agent_toolset_20260401 提供全套工具，容器化環境支援完全自主執行。",
+      "tags": [
+        "ai agent",
+        "agentic",
+        "tool use",
+        "sandbox"
+      ],
+      "url": "https://platform.claude.com/cookbook/managed-agents-data-analyst-agent",
+      "source": "Anthropic",
+      "sourceUrl": "https://platform.claude.com/cookbook/managed-agents-data-analyst-agent"
+    },
+    {
+      "id": "20260409-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Meta Muse Spark — 後 Llama 時代的推理型多模態模型",
+      "summary": "Meta 超智實驗室發表 Muse Spark，首個推理導向多模態模型。Contemplating Mode 啟動子代理平行推理，用不到 Llama 4 十分之一算力達 frontier 水準。",
+      "tags": [
+        "multimodal",
+        "reasoning",
+        "multi-agent",
+        "ai_models"
+      ],
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+      "source": "Meta Superintelligence Labs",
+      "sourceUrl": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/"
+    },
+    {
       "id": "20260408-sw-016",
       "radar": "software-dev",
       "date": "2026-04-08",
