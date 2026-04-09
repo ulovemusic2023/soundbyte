@@ -1,6 +1,146 @@
 {
   "entries": [
     {
+      "id": "20260409-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-09",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "要讓 AI 成功，先把基本功做好",
+      "summary": "AI 不會隱藏爛數據，它會放大。在追逐 AI 之前，先整理數據品質、流程邏輯和組織文化。",
+      "tags": [
+        "fundamentals",
+        "data-quality",
+        "ai-readiness"
+      ],
+      "url": "https://hbr.org/2026/04/to-succeed-with-ai-youve-got-to-nail-the-basics",
+      "source": "HBR",
+      "sourceUrl": "https://hbr.org/2026/04/to-succeed-with-ai-youve-got-to-nail-the-basics",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260409-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-09",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "AI 沒有取代你的員工，它釋放了他們",
+      "summary": "Solo-founded 公司佔新創 33%。AI 消除 coordination overhead，solo founder 靠 Conviction Velocity、Speed of Control、Retention of Context 三能力勝出。",
+      "tags": [
+        "solo-founder",
+        "ai-leverage",
+        "conviction-velocity"
+      ],
+      "url": "https://thefundablefounder.substack.com/p/ai-didnt-replace-your-employees-it",
+      "source": "The Fundable Founder",
+      "sourceUrl": "https://thefundablefounder.substack.com/p/ai-didnt-replace-your-employees-it",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260409-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-09",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "AI Is Really Weird — 泡沫觀察者的清醒分析",
+      "summary": "Hyperscaler 砸 $600B+ 但沒人公開 AI 實際賺多少，Copilot 標注僅供娛樂，Anthropic 用非標準方式算獲利。AI 財務數字可能比技術更幻覺。",
+      "tags": [
+        "ai-bubble",
+        "financial-transparency",
+        "critical-thinking"
+      ],
+      "url": "https://www.wheresyoured.at/ai-is-really-weird/",
+      "source": "Where's Your Ed At",
+      "sourceUrl": "https://www.wheresyoured.at/ai-is-really-weird/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260409-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-09",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Manager 和 Executive 對 AI 看法嚴重分歧",
+      "summary": "高層和中階主管對 AI 何時產生成果的認知落差巨大，perception gap 導致策略與執行脫節。",
+      "tags": [
+        "organizational-alignment",
+        "ai-adoption",
+        "leadership-gap"
+      ],
+      "url": "https://hbr.org/2026/04/managers-and-executives-disagree-on-ai-and-its-costing-companies",
+      "source": "HBR",
+      "sourceUrl": "https://hbr.org/2026/04/managers-and-executives-disagree-on-ai-and-its-costing-companies",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260409-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-09",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Bezos 悄悄組建 AI 夢之隊 — Project Prometheus",
+      "summary": "Bezos 回歸操盤，擔任 Project Prometheus 共同 CEO。瞄準物理經濟，已募 $6.2B，從 OpenAI、xAI、DeepMind 挖角頂尖人才。",
+      "tags": [
+        "physical-AI",
+        "talent-acquisition",
+        "long-term-thinking"
+      ],
+      "url": "https://observer.com/2026/04/jeff-bezos-project-prometheus-new-hires/",
+      "source": "Observer",
+      "sourceUrl": "https://observer.com/2026/04/jeff-bezos-project-prometheus-new-hires/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260409-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-09",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "\"Nobody Knows Anything\" — AI 時代領導者該怎麼辦",
+      "summary": "MIT Andrew McAfee 提出框架：全組織 commit、加速 learning by doing、散播 power user 做法。砍 entry-level hiring 是長期大錯。",
+      "tags": [
+        "decision-framework",
+        "leadership",
+        "ai-adoption"
+      ],
+      "url": "https://hbr.org/podcast/2026/04/strategy-summit-2026-whos-going-to-succeed-with-ai",
+      "source": "Andrew McAfee / MIT × HBR",
+      "sourceUrl": "https://hbr.org/podcast/2026/04/strategy-summit-2026-whos-going-to-succeed-with-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260409-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-09",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Apple, Acceleration, and AI",
+      "summary": "Apple 50 年來靠硬體＋軟體整合稱霸，但 AI 可能重新定義整合的意義。過去的護城河在 paradigm shift 時可能變成包袱。",
+      "tags": [
+        "platform-shift",
+        "integration",
+        "paradigm-shift"
+      ],
+      "url": "https://stratechery.com/2026/apple-acceleration-and-ai/",
+      "source": "Ben Thompson / Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/apple-acceleration-and-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260409-sw-008",
       "radar": "software-dev",
       "date": "2026-04-09",
