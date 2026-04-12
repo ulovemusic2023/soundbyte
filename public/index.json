@@ -17951,6 +17951,124 @@
       "stars": 487,
       "createdDate": "2018-11-04",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20260412-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-12",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 收購 Cirrus Labs 打造 Agent Infrastructure",
+      "summary": "OpenAI 收購虛擬化工具公司 Cirrus Labs，加入 Agent Infrastructure 團隊。Tart/Vetu/Orchard 將開源釋出，Cirrus CI 6/1 關閉。",
+      "tags": [
+        "ai agent",
+        "agent sandbox scaling",
+        "dev toolchain acquisition"
+      ],
+      "url": "https://cirruslabs.org",
+      "source": "Cirrus Labs / HN",
+      "sourceUrl": "https://cirruslabs.org"
+    },
+    {
+      "id": "20260412-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-12",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "LangChain Deep Agents v0.5：Async Subagents",
+      "summary": "非同步子代理支援並行執行、stateful threads、5 個內建管理工具。",
+      "tags": [
+        "multi-agent",
+        "langchain",
+        "async subagents"
+      ],
+      "url": "https://blog.langchain.com/deep-agents-v0-5/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/deep-agents-v0-5/"
+    },
+    {
+      "id": "20260412-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-12",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "LangChain Better-Harness：Eval 驅動 Agent 自動優化",
+      "summary": "Eval 數據當 gradient signal，Claude Sonnet 4.6 holdout 2/6→6/6，GLM-5 1/6→6/6。",
+      "tags": [
+        "harness engineering",
+        "eval-driven development",
+        "langchain"
+      ],
+      "url": "https://www.mexc.com/news/1013910",
+      "source": "LangChain",
+      "sourceUrl": "https://www.mexc.com/news/1013910"
+    },
+    {
+      "id": "20260412-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-12",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "SQLite 3.53.0：WAL Bug Fix + QRF 格式化引擎",
+      "summary": "修復長期 WAL corruption bug，新增 ALTER TABLE NOT NULL/CHECK、json_array_insert()、QRF CLI 格式化。",
+      "tags": [
+        "sqlite",
+        "database"
+      ],
+      "url": "https://sqlite.org/releaselog/3_53_0.html",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/11/sqlite/"
+    },
+    {
+      "id": "20260412-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-12",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Hierarchical Agentic RAG：84.5% 企業準確率",
+      "summary": "Supervisor-worker 拓撲解決 SQL + 非結構化文件 modality gap，勝過 flat-agent 22 個百分點。",
+      "tags": [
+        "rag",
+        "multi-agent",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/articles/building-hierarchical-agentic-rag-systems/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/building-hierarchical-agentic-rag-systems/"
+    },
+    {
+      "id": "20260412-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-12",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "HuggingFace Waypoint-1.5 互動式世界模型",
+      "summary": "消費級 GPU 上 60FPS 高保真世界模型，100x 訓練數據。",
+      "tags": [
+        "world model",
+        "huggingface",
+        "multimodal"
+      ],
+      "url": "https://huggingface.co/blog/waypoint-1-5",
+      "source": "HuggingFace Blog",
+      "sourceUrl": "https://huggingface.co/blog/waypoint-1-5"
+    },
+    {
+      "id": "20260412-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-12",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Sentence Transformers v5.4 多模態 Embedding",
+      "summary": "統一 text/images/audio/video encoding，新增 Qwen3-Reranker 系列。",
+      "tags": [
+        "embedding",
+        "multimodal",
+        "reranking"
+      ],
+      "url": "https://huggingface.co/blog/multimodal-sentence-transformers",
+      "source": "HuggingFace Blog",
+      "sourceUrl": "https://huggingface.co/blog/multimodal-sentence-transformers"
     }
   ]
 }
