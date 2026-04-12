@@ -18069,6 +18069,23 @@
       "url": "https://huggingface.co/blog/multimodal-sentence-transformers",
       "source": "HuggingFace Blog",
       "sourceUrl": "https://huggingface.co/blog/multimodal-sentence-transformers"
+    },
+    {
+      "id": "20260412-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "DHH 的 Agent-First 多模型寫 code 工作流",
+      "summary": "Gemini + Opus + NeoVim tmux 並行，AI 是主要 code producer 人類是 reviewer",
+      "tags": [
+        "ai coding",
+        "agent-first workflow",
+        "developer experience"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/dhhs-new-way-of-writing-code",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/dhhs-new-way-of-writing-code"
     }
   ]
 }
