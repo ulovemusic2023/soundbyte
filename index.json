@@ -1,6 +1,250 @@
 {
   "entries": [
     {
+      "id": "20260414-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "call-translator",
+      "summary": "即時語音翻譯器，Google Meet / Zoom speech-to-speech，29 語言",
+      "tags": [
+        "voice",
+        "tts",
+        "translation",
+        "real-time"
+      ],
+      "url": "https://github.com/LetovKai/call-translator",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/LetovKai/call-translator",
+      "stars": 25,
+      "createdDate": "2026-04-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260414-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "rowboat",
+      "summary": "開源 AI coworker，從 email / 會議記錄建 knowledge graph，YC 出品",
+      "tags": [
+        "knowledge-graph",
+        "ai-coworker",
+        "productivity"
+      ],
+      "url": "https://github.com/rowboatlabs/rowboat",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 12311,
+      "createdDate": "2025-01-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260414-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "executor",
+      "summary": "AI agent 統一工具整合層，一個 catalog 管 OpenAPI / MCP / GraphQL",
+      "tags": [
+        "mcp",
+        "agent-tools",
+        "integration"
+      ],
+      "url": "https://github.com/RhysSullivan/executor",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 1088,
+      "createdDate": "2026-02-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260414-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "sem",
+      "summary": "語義版本控制 CLI，tree-sitter 23 語言 entity-level diff / blame / impact",
+      "tags": [
+        "developer-tool",
+        "cli",
+        "tree-sitter"
+      ],
+      "url": "https://github.com/Ataraxy-Labs/sem",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 1600,
+      "createdDate": "2026-02-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260414-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "agent-os",
+      "summary": "Agent 輕量 OS，WebAssembly + V8 isolates，冷啟動 ~6ms",
+      "tags": [
+        "ai-agent",
+        "infra",
+        "wasm",
+        "sandbox"
+      ],
+      "url": "https://github.com/rivet-dev/agent-os",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 2682,
+      "createdDate": "2024-02-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260414-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "qwen-tts-studio",
+      "summary": "Qwen3-TTS 桌面 GUI，C++ 後端本地 TTS + voice cloning + CUDA",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "local-inference"
+      ],
+      "url": "https://github.com/Danmoreng/qwen-tts-studio",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 30,
+      "createdDate": "2026-02-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260414-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "OmniVoice-Studio",
+      "summary": "本地全端語音生成 + 影片配音工作室，zero-shot voice cloning",
+      "tags": [
+        "voice-cloning",
+        "dubbing",
+        "audio",
+        "tts"
+      ],
+      "url": "https://github.com/debpalash/OmniVoice-Studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/debpalash/OmniVoice-Studio",
+      "stars": 103,
+      "createdDate": "2026-04-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260414-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "personalized-podcast",
+      "summary": "把任何內容變成雙主持人 AI Podcast，NotebookLM 風格但完全可控",
+      "tags": [
+        "audio",
+        "tts",
+        "podcast",
+        "content-creation"
+      ],
+      "url": "https://github.com/zarazhangrui/personalized-podcast",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/zarazhangrui/personalized-podcast",
+      "stars": 281,
+      "createdDate": "2026-04-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260414-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "openclaude",
+      "summary": "開源 coding agent CLI，支援 200+ model，Claude Code 的開源替代品",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "multi-model"
+      ],
+      "url": "https://github.com/Gitlawb/openclaude",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Gitlawb/openclaude",
+      "stars": 21273,
+      "createdDate": "2026-04-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260414-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "qmd",
+      "summary": "Tobi Lütke 寫的本地搜尋引擎，BM25 + vector search + LLM re-ranking，支援 MCP",
+      "tags": [
+        "local-ai",
+        "rag",
+        "developer-tool"
+      ],
+      "url": "https://github.com/tobi/qmd",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 21417,
+      "createdDate": "2025-12-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260414-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "multica",
+      "summary": "開源 managed agents 平台，把 coding agent 當隊友管理",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "multi-agent"
+      ],
+      "url": "https://github.com/multica-ai/multica",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 11255,
+      "createdDate": "2026-01-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260414-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-04-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "claude-mem",
+      "summary": "Claude Code 的自動記憶插件，用 agent-sdk 壓縮 session 觀察並自動注入未來 session",
+      "tags": [
+        "ai-agent",
+        "coding-tools",
+        "memory"
+      ],
+      "url": "https://github.com/thedotmack/claude-mem",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 53509,
+      "createdDate": "2025-08-31",
+      "license": "MIT"
+    },
+    {
       "id": "20260414-fm-008",
       "radar": "founder-mind",
       "date": "2026-04-14",
