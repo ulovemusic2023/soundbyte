@@ -1,6 +1,168 @@
 {
   "entries": [
     {
+      "id": "20260414-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-04-14",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "OpenAI 的「AI 新社會契約」：機器人稅、財富基金、四天工作制",
+      "summary": "13 頁政策文件提出機器人稅、國家財富基金、四天工作制。AI 公司不只是產品公司，也必須是政策倡議者。",
+      "tags": [
+        "ai_future",
+        "gtm",
+        "policy",
+        "future_of_work"
+      ],
+      "url": "https://www.techradar.com/ai-platforms-assistants/openai/openai-says-ai-could-mean-a-4-day-week-with-no-loss-in-pay-but-warns-jobs-and-wealth-are-at-risk",
+      "source": "OpenAI / TechRadar",
+      "sourceUrl": "https://www.techradar.com/ai-platforms-assistants/openai/openai-says-ai-could-mean-a-4-day-week-with-no-loss-in-pay-but-warns-jobs-and-wealth-are-at-risk",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260414-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-14",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "NYT CEO：在 AI 時代，押注「有專業的人」",
+      "summary": "紐約時報 CEO 把 humans with expertise 定位為對抗 AI 生成內容的核心護城河，在遊戲、體育、垂直影片上擴展 bundle。",
+      "tags": [
+        "competitive_advantage",
+        "moat",
+        "ai_augmentation"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-new-york-times-ceo-meredith-kopit-levien-about-betting-on-humans-with-expertise/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-new-york-times-ceo-meredith-kopit-levien-about-betting-on-humans-with-expertise/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260414-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-14",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Forrester：Glasswing 的 10 個二階效應——發現漏洞不值錢了，修復才是",
+      "summary": "Penetration testing 定價模型崩塌，開源維護者成為瓶頸，安全人才核心技能從 finding 轉向 deciding。",
+      "tags": [
+        "operational",
+        "second_order_thinking",
+        "competitive_advantage"
+      ],
+      "url": "https://www.forrester.com/blogs/project-glasswing-the-10-consequences-nobodys-writing-about-yet/",
+      "source": "Forrester",
+      "sourceUrl": "https://www.forrester.com/blogs/project-glasswing-the-10-consequences-nobodys-writing-about-yet/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260414-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-14",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Anthropic Project Glasswing：用最強 AI 守護網路安全",
+      "summary": "Claude Mythos Preview 能自主發現軟體漏洞。不公開發佈，組建 40+ 組織的防禦聯盟。Controlled deployment 比快速上市更有價值。",
+      "tags": [
+        "ai_safety",
+        "operational",
+        "moat"
+      ],
+      "url": "https://www.anthropic.com/glasswing",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/glasswing",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260414-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-14",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Ferrari 的稀缺性策略：每年只賣 14,000 台，市值打敗福特",
+      "summary": "80% 產量留給現有車主，新客戶每年不到 3,000 人。金字塔策略：頂端是極致奢侈品牌、底端是 F1 賽車帶來的大眾認知。",
+      "tags": [
+        "scarcity",
+        "power_law",
+        "creator_leverage",
+        "moat"
+      ],
+      "url": "https://www.acquired.fm/episodes/ferrari",
+      "source": "Acquired Podcast",
+      "sourceUrl": "https://www.acquired.fm/episodes/ferrari",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260414-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-14",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Jensen Huang 給 Founder 的課：Platform > Specialization",
+      "summary": "CUDA 押注幾乎毀掉 NVIDIA，但十年後成為不可複製的護城河。電腦從倉庫變成工廠，compute 直接與營收掛鉤。",
+      "tags": [
+        "platform_shift",
+        "compounding",
+        "moat"
+      ],
+      "url": "https://www.thevccorner.com/p/jensen-huang-nvidia-lessons-founders-investors-2026",
+      "source": "The VC Corner",
+      "sourceUrl": "https://www.thevccorner.com/p/jensen-huang-nvidia-lessons-founders-investors-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260414-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-14",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Ben Thompson 的「狼來了」框架：Anthropic Mythos 是真威脅還是行銷？",
+      "summary": "即使你懷疑每一次 AI 安全警報，你也必須為「這次是真的」做準備。信任赤字本身就是風險。",
+      "tags": [
+        "mental_model",
+        "ai_safety",
+        "second_order_thinking"
+      ],
+      "url": "https://stratechery.com/2026/anthropics-new-model-the-mythos-wolf-glasswing-and-alignment/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/anthropics-new-model-the-mythos-wolf-glasswing-and-alignment/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260414-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-14",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sam Altman 的自省：AI 民主化是道德義務",
+      "summary": "Altman 在住家遭燃燒瓶攻擊後發文，罕見自我檢討。框架：追求繁榮與科學進步是道德義務，AI 必須民主化以避免權力集中。",
+      "tags": [
+        "AI民主化",
+        "leadership",
+        "decision_making"
+      ],
+      "url": "https://blog.samaltman.com/2279512",
+      "source": "Sam Altman",
+      "sourceUrl": "https://blog.samaltman.com/2279512",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260409-fm-007",
       "radar": "founder-mind",
       "date": "2026-04-09",
