@@ -1,6 +1,152 @@
 {
   "entries": [
     {
+      "id": "20260414-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-14",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Simon Willison 探索 Servo v0.1.0 Rust 可嵌入瀏覽器引擎 crate",
+      "summary": "Servo 瀏覽器引擎首次以 Rust embeddable library 發布，含 ServoBuilder/WebView API 和 servo-shot headless CLI。",
+      "tags": [
+        "servo",
+        "rust",
+        "browser-engine",
+        "headless"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/13/servo-crate-exploration/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/13/servo-crate-exploration/"
+    },
+    {
+      "id": "20260414-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-14",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cloudflare Durable Object Facets：Dynamic Workers 內建 SQLite 持久化",
+      "summary": "Dynamic Workers 可建立帶 isolated SQLite DB 的 Durable Objects，AI 生成程式碼擁有持久化 stateful 資料層。",
+      "tags": [
+        "cloudflare",
+        "durable-objects",
+        "SQLite",
+        "stateful"
+      ],
+      "url": "https://blog.cloudflare.com/durable-object-facets-dynamic-workers/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/durable-object-facets-dynamic-workers/"
+    },
+    {
+      "id": "20260414-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Georgia Tech Vibe Security Radar：AI 生成程式碼 74 漏洞案例",
+      "summary": "掃描 43K+ 漏洞報告辨識 74 例 AI code 弱點（14 critical），AI 工具重複特定 pattern 使攻擊者可利用行為分析識別。",
+      "tags": [
+        "security",
+        "vibe-coding",
+        "vulnerability",
+        "Georgia-Tech"
+      ],
+      "url": "https://news.research.gatech.edu/2026/04/13/bad-vibes-ai-generated-code-vulnerable-researchers-warn",
+      "source": "Georgia Tech Research News",
+      "sourceUrl": "https://news.research.gatech.edu/2026/04/13/bad-vibes-ai-generated-code-vulnerable-researchers-warn"
+    },
+    {
+      "id": "20260414-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Stanford HAI 2026：美國初階開發者職缺下降近 20%",
+      "summary": "Stanford HAI 報告：22-25 歲開發者就業自 2022 以來下降近 20%，AI 同時帶來 14-26% 生產力提升。弔詭現象加劇。",
+      "tags": [
+        "stanford-hai",
+        "ai-index",
+        "job-market",
+        "entry-level"
+      ],
+      "url": "https://www.kqed.org/news/12079472/stanford-study-ai-experts-are-optimistic-about-ai-the-rest-of-us-not-so-much",
+      "source": "KQED / Stanford HAI",
+      "sourceUrl": "https://www.kqed.org/news/12079472/stanford-study-ai-experts-are-optimistic-about-ai-the-rest-of-us-not-so-much"
+    },
+    {
+      "id": "20260414-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI 推出 $100/月 Pro Tier 主打 Codex 5x 用量",
+      "summary": "OpenAI 新增 $100/月方案，Codex 用量為 Plus 的 5 倍（限時 10 倍），介於 Plus 與 Pro 之間。",
+      "tags": [
+        "openai",
+        "chatgpt",
+        "codex",
+        "pricing"
+      ],
+      "url": "https://pureai.com/articles/2026/04/13/openai-launches-100-chatgpt-tier-with-expanded-coding-access.aspx",
+      "source": "PureAI",
+      "sourceUrl": "https://pureai.com/articles/2026/04/13/openai-launches-100-chatgpt-tier-with-expanded-coding-access.aspx"
+    },
+    {
+      "id": "20260414-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-14",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic Claude Managed Agents Public Beta",
+      "summary": "Claude Managed Agents 提供 sandboxed 執行、checkpointing、multi-agent coordination。$0.08/session-hour。Notion、Sentry 已使用。",
+      "tags": [
+        "anthropic",
+        "managed-agents",
+        "sandbox",
+        "multi-agent"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/agents/managed-agents",
+      "source": "InfoWorld",
+      "sourceUrl": "https://www.infoworld.com/article/4156852/anthropic-rolls-out-claude-managed-agents.html"
+    },
+    {
+      "id": "20260414-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-14",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "AWS Kiro Agent 摧毀生產環境：13 小時 outage 觸發強制 senior 審核",
+      "summary": "AWS AI coding agent Kiro 修小 bug 時刪除整個生產環境，13 小時中斷。Amazon 強制 junior/mid AI 程式碼須 senior 簽核。",
+      "tags": [
+        "AWS",
+        "Kiro",
+        "production-outage",
+        "AI-safety",
+        "agent-governance"
+      ],
+      "url": "https://newsletter.techworld-with-milan.com/p/the-trends-10-amazon-now-requires",
+      "source": "Tech World with Milan",
+      "sourceUrl": "https://newsletter.techworld-with-milan.com/p/the-trends-10-amazon-now-requires"
+    },
+    {
+      "id": "20260414-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-14",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Agent Cloud 大擴展：Dynamic Workers + Artifacts + Think SDK",
+      "summary": "Cloudflare 發布 Agent Cloud 重大更新：Dynamic Workers（isolate 沙箱，百倍容器效能）、Artifacts（Git-compatible agent 儲存）、Think SDK（long-running agent persistence）。支援 GPT-5.4/Codex。",
+      "tags": [
+        "cloudflare",
+        "agent-cloud",
+        "dynamic-workers",
+        "sandbox",
+        "edge"
+      ],
+      "url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-expands-its-agent-cloud-to-power-the-next-generation-of-agents/",
+      "source": "SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/04/13/cloudflare-expands-agent-cloud-new-tools-build-scale-ai-agents/"
+    },
+    {
       "id": "20260414-ts-015",
       "radar": "tool-scout",
       "date": "2026-04-14",
