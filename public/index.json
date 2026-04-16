@@ -19459,6 +19459,211 @@
       "url": "https://newsletter.pragmaticengineer.com/p/dhhs-new-way-of-writing-code",
       "source": "Pragmatic Engineer",
       "sourceUrl": "https://newsletter.pragmaticengineer.com/p/dhhs-new-way-of-writing-code"
+    },
+    {
+      "id": "20260417-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "gemma-tuner-multimodal",
+      "summary": "Mac 上 fine-tune Gemma 4 音訊+圖片+文字，PyTorch MPS",
+      "tags": [
+        "local-ai",
+        "audio",
+        "fine-tuning",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1293,
+      "createdDate": "2026-04-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260417-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "codeburn",
+      "summary": "AI coding 成本追蹤 TUI dashboard，支援 Claude Code/Codex/Cursor/OpenCode/Pi",
+      "tags": [
+        "coding-tools",
+        "ai-coding",
+        "cost-observability"
+      ],
+      "url": "https://github.com/AgentSeal/codeburn",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 2045,
+      "createdDate": "2026-04-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260417-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "ACE-Step-Studio",
+      "summary": "Suno at home — 本地 AI 音樂生成工作站，ACE-Step 1.5 XL 4B DiT",
+      "tags": [
+        "music-generation",
+        "audio",
+        "local-ai",
+        "creative-tools"
+      ],
+      "url": "https://github.com/timoncool/ACE-Step-Studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 36,
+      "createdDate": "2026-04-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260417-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "llm_wiki",
+      "summary": "Karpathy LLM Wiki pattern 桌面 app，文件自動建 wiki + knowledge graph",
+      "tags": [
+        "knowledge-base",
+        "rag",
+        "productivity",
+        "llm"
+      ],
+      "url": "https://github.com/nashsu/llm_wiki",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1463,
+      "createdDate": "2026-04-08",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260417-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "claude-usage",
+      "summary": "Claude Code token 用量追蹤 dashboard，本地跑",
+      "tags": [
+        "claude-code",
+        "cost-tracking",
+        "coding-tools"
+      ],
+      "url": "https://github.com/phuryn/claude-usage",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 952,
+      "createdDate": "2026-04-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260417-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "feros",
+      "summary": "開源 voice agent OS，Rust runtime，sub-second latency",
+      "tags": [
+        "voice-agent",
+        "rust",
+        "audio",
+        "self-hosted"
+      ],
+      "url": "https://github.com/ferosai/feros",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 40,
+      "createdDate": "2026-04-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260417-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "hermes-web-ui",
+      "summary": "Hermes Agent Web dashboard，多平台 chat、session 管理",
+      "tags": [
+        "ai-agent",
+        "hermes",
+        "dashboard",
+        "multi-channel"
+      ],
+      "url": "https://github.com/EKKOLearnAI/hermes-web-ui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 417,
+      "createdDate": "2026-04-11",
+      "license": "none"
+    },
+    {
+      "id": "20260417-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "VoxCPM",
+      "summary": "VoxCPM2 tokenizer-free TTS，多語音+創意語音設計+voice cloning",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "multilingual"
+      ],
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 13702,
+      "createdDate": "2025-09-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260417-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "voicebox",
+      "summary": "開源 voice synthesis studio（TypeScript），本週 trending",
+      "tags": [
+        "voice-synthesis",
+        "audio",
+        "creative-tools"
+      ],
+      "url": "https://github.com/jamiepine/voicebox",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 18909,
+      "createdDate": "2026-01-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260417-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-04-17",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "anything-analyzer",
+      "summary": "browser CDP capture + AI 分析，傻瓜式產出協議分析文檔",
+      "tags": [
+        "browser-automation",
+        "reverse-engineering",
+        "ai-analysis"
+      ],
+      "url": "https://github.com/Mouseww/anything-analyzer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 992,
+      "createdDate": "2026-04-12",
+      "license": "none"
     }
   ]
 }
