@@ -1,6 +1,146 @@
 {
   "entries": [
     {
+      "id": "20260417-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "AGI 的魔戒效應",
+      "summary": "一旦你看見 AGI 的可能性，就再也無法假裝沒看到。這不只是在講 AI 產業，也是在講每個 founder 面對 paradigm shift 時的心理狀態。",
+      "tags": [
+        "AGI",
+        "ring of power",
+        "paradigm shift"
+      ],
+      "url": "https://officechai.com/ai/achieving-agi-has-lord-of-the-rings-ring-of-power-dynamic-sam-altman/",
+      "source": "Sam Altman",
+      "sourceUrl": "https://officechai.com/ai/achieving-agi-has-lord-of-the-rings-ring-of-power-dynamic-sam-altman/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "不是所有 AI Agent 都一樣——三層分類決定你該怎麼做",
+      "summary": "Agent 三層分類法：確定性自動化、推理型 ReAct agent、多 agent 網路。60-70% 屬於 Category 1。",
+      "tags": [
+        "agent hierarchy",
+        "prioritization framework",
+        "build vs buy"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/not-all-ai-agents-are-created-equal",
+      "source": "Lenny Rachitsky",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/not-all-ai-agents-are-created-equal",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Jensen Huang 在 Stanford：AI 是五層 stack，使用者才是取代工作的人",
+      "summary": "Huang 把 AI 拆成五層（能源→晶片→雲端→AI 工廠→模型），強調應用層才是關鍵。",
+      "tags": [
+        "AI stack",
+        "adoption barriers",
+        "workforce displacement"
+      ],
+      "url": "https://stanforddaily.com/2026/04/10/nvidia-founder-jensen-huang-and-congressman-ro-khanna-examine-role-of-ai-in-the-u-s/",
+      "source": "Jensen Huang",
+      "sourceUrl": "https://stanforddaily.com/2026/04/10/nvidia-founder-jensen-huang-and-congressman-ro-khanna-examine-role-of-ai-in-the-u-s/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Nadella：「傳統 App 層正在坍塌成 Agent」",
+      "summary": "Nadella 闡述 Microsoft 的 agentic vision——應用不再是獨立軟體，而是 agent 的底層骨架。",
+      "tags": [
+        "agentic AI",
+        "platform shift",
+        "app collapse"
+      ],
+      "url": "https://glitchwire.com/news/collapse-of-apps-satya-nadellas-agentic-vision/",
+      "source": "Satya Nadella",
+      "sourceUrl": "https://glitchwire.com/news/collapse-of-apps-satya-nadellas-agentic-vision/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sam Altman 的「魔戒」框架：AGI 控制權是真正的毒藥",
+      "summary": "Altman 把 AGI 競爭比作魔戒——毒的不是技術本身，而是「成為唯一掌控 AGI 的人」這個執念。",
+      "tags": [
+        "ring of power",
+        "AGI control",
+        "power distribution"
+      ],
+      "url": "https://officechai.com/ai/achieving-agi-has-lord-of-the-rings-ring-of-power-dynamic-sam-altman/",
+      "source": "Sam Altman",
+      "sourceUrl": "https://officechai.com/ai/achieving-agi-has-lord-of-the-rings-ring-of-power-dynamic-sam-altman/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "LLM 在 code 跟 math 碾壓一切，但日常問題照樣翻車——這不是矛盾",
+      "summary": "Karpathy 解釋為何 AI 在「可驗證領域」進步飛快，在模糊領域卻停滯：RL 只能在有 pass/fail 信號的地方有效訓練。",
+      "tags": [
+        "verifiable rewards",
+        "reinforcement learning",
+        "Software 2.0"
+      ],
+      "url": "https://the-decoder.com/llms-crush-coding-and-math-but-choke-on-casual-questions-and-thats-not-a-contradiction/",
+      "source": "Andrej Karpathy / The Decoder",
+      "sourceUrl": "https://the-decoder.com/llms-crush-coding-and-math-but-choke-on-casual-questions-and-thats-not-a-contradiction/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Karpathy 的「AI Psychosis」：認知落差正在撕裂使用者群體",
+      "summary": "免費版 ChatGPT 使用者跟付費 frontier model 使用者看到的是完全不同的 AI。Karpathy 指出這個「理解力落差」正在加劇——兩個群體彼此說不上話。",
+      "tags": [
+        "AI perception gap",
+        "growing divide",
+        "frontier vs free"
+      ],
+      "url": "https://www.businessinsider.com/andrej-karpathy-growing-gap-ai-understanding-2026-4",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://www.businessinsider.com/andrej-karpathy-growing-gap-ai-understanding-2026-4",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260416-sw-001",
       "radar": "software-dev",
       "date": "2026-04-16",
