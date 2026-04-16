@@ -1,6 +1,125 @@
 {
   "entries": [
     {
+      "id": "20260416-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Claude Opus 4.7 — Anthropic 首款帶自動化網安護欄的旗艦模型",
+      "summary": "SWE-bench Pro 從 53.4% 跳到 64.3%，訓練時刻意降低高危網安能力，上線自動偵測/阻擋危險請求機制。",
+      "tags": [
+        "ai_models",
+        "alignment",
+        "safety",
+        "Claude Cyber Verification Program"
+      ],
+      "url": "https://www.helpnetsecurity.com/2026/04/16/claude-opus-4-7-released/",
+      "source": "HelpNetSecurity",
+      "sourceUrl": "https://www.helpnetsecurity.com/2026/04/16/claude-opus-4-7-released/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260416-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Agents SDK — 原生 Sandbox + In-Distribution Harness",
+      "summary": "SandboxAgent 原語隔離環境跑 shell/檔案，Manifest 定義工作空間初始狀態，in-distribution harness 讓 GPT-5.4 協調工具/記憶/審批。",
+      "tags": [
+        "ai_agent",
+        "agent sandbox scaling",
+        "harness engineering"
+      ],
+      "url": "https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260416-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Agents Week — Email / AI Search / Artifacts / Workflows v2 / AI Platform",
+      "summary": "Email Service（agent 異步寄信）、AI Search、Artifacts（Git 版本化儲存）、Workflows v2（高並發）、AI Platform（70+ 模型單一 API）。",
+      "tags": [
+        "architecture",
+        "agent sandbox scaling",
+        "Cloudflare Artifacts"
+      ],
+      "url": "https://blog.cloudflare.com/welcome-to-agents-week/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/welcome-to-agents-week/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260416-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Thoughtworks Technology Radar Vol 34 — AI 加速複雜度，回歸工程基本功",
+      "summary": "四大主題：保留原則放下模式、agent 上 zero trust、feedforward+feedback 控制 coding agent、在工具海嘯中辨識永續技術。",
+      "tags": [
+        "cognitive debt",
+        "harness engineering",
+        "feedforward agent control"
+      ],
+      "url": "https://www.thoughtworks.com/en-us/radar",
+      "source": "Thoughtworks",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/as-ai-accelerates-software-complexity-thoughtworks-technology-radar-urges-a-return-to-engineering-fundamentals-to-combat-cognitive-debt-302737210.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260416-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Google Gemini 3.1 Flash TTS — prompt 控制語音 TTS 模型",
+      "summary": "200+ audio tags、70+ 語言、Elo 1211 超越 ElevenLabs v3。SynthID watermark。",
+      "tags": [
+        "ai_models",
+        "multimodal"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/15/gemini-31-flash-tts/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/15/gemini-31-flash-tts/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260416-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Claude Code Desktop 大改版 — Routines + 多 session + 內建終端",
+      "summary": "Routines 排程任務跑 Anthropic 雲端、多 session 側邊欄、整合 terminal、prompt caching。",
+      "tags": [
+        "ai_agent",
+        "long-running agents"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/claude-code/changelog",
+      "source": "Anthropic",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260414-sw-008",
       "radar": "software-dev",
       "date": "2026-04-14",
