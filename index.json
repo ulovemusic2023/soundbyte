@@ -1,6 +1,115 @@
 {
   "entries": [
     {
+      "id": "20260417-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MinerU",
+      "summary": "高精度文件解析器，針對 LLM 設計，支援 PDF 和掃描文件，搭配 RAG pipeline 效果佳",
+      "tags": [
+        "document-parsing",
+        "ocr",
+        "rag",
+        "pdf-extraction"
+      ],
+      "url": "https://github.com/opendatalab/MinerU",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/16/opendatalab-MinerU.html",
+      "price": null,
+      "vram": "~4-8GB",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260417-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MimicLM",
+      "summary": "Zero-shot 語音模仿：用 TTS 合成語音當 source、真實錄音當 target，打破合成品質天花板。含 DPO preference alignment",
+      "tags": [
+        "voice-cloning",
+        "zero-shot-voice",
+        "voice-imitation",
+        "tts",
+        "dpo"
+      ],
+      "url": "https://arxiv.org/abs/2604.11552",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2604.11552",
+      "price": null,
+      "vram": "~8-12GB (估計)",
+      "license": "研究用"
+    },
+    {
+      "id": "20260417-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "oobabooga/textgen",
+      "summary": "text-generation-webui 改名 textgen，支援 ExLlamaV3、MCP server、tool-calling、LoRA 訓練、影像生成。Portable builds 零設定部署",
+      "tags": [
+        "text-generation-webui",
+        "llm-inference",
+        "exllamav3",
+        "tool-calling",
+        "mcp"
+      ],
+      "url": "https://github.com/oobabooga/textgen",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "~4-16GB (視模型)",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260417-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "funasr-api",
+      "summary": "基於 FunASR + Qwen3-ASR 的語音辨識 API，支援 52 種語言，相容 OpenAI API，含 speaker diarization 和 WebSocket streaming",
+      "tags": [
+        "asr",
+        "speech-recognition",
+        "qwen-asr",
+        "docker",
+        "openai-api"
+      ],
+      "url": "https://github.com/Quantatirsk/funasr-api",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/15/Quantatirsk-funasr-api.html",
+      "price": null,
+      "vram": "~2-4GB (Qwen3-ASR 1.7B)",
+      "license": "Open Source"
+    },
+    {
+      "id": "20260417-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Qwen3.6-35B-A3B",
+      "summary": "MoE 模型 35B 總參數只啟動 3B，Gated DeltaNet + Sparse MoE 架構，Agentic Coding 和 Thinking Preservation 升級，context 262K 可擴到 1M",
+      "tags": [
+        "llm-inference",
+        "qwen",
+        "moe",
+        "quantization",
+        "agentic-coding"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "source": "Qwen Team",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "price": null,
+      "vram": "~4-6GB (GGUF Q4)",
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260416-ai-008",
       "radar": "ai-infra",
       "date": "2026-04-16",
