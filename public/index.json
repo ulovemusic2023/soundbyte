@@ -1,6 +1,172 @@
 {
   "entries": [
     {
+      "id": "20260416-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MOSS-TTS Family",
+      "summary": "完整 TTS 生態系：8B flagship + dialogue + sound effect + 1.7B realtime，llama.cpp GGUF + SGLang",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "llama-cpp",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/OpenMOSS/MOSS-TTS",
+      "price": null,
+      "vram": "8GB+ (GGUF), FP16 ~24GB+",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260416-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "daVinci-MagiHuman",
+      "summary": "15B audio-video foundation model，self-attention 處理 text+video+audio，6 語言，完全開源",
+      "tags": [
+        "video-generation",
+        "audio-ai",
+        "multimodal",
+        "open-source"
+      ],
+      "url": "https://github.com/GAIR-NLP/daVinci-MagiHuman",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/16/GAIR-NLP-daVinci-MagiHuman.html",
+      "price": null,
+      "vram": "H100 80GB",
+      "license": "Open Source (TBD)"
+    },
+    {
+      "id": "20260416-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "X-VC",
+      "summary": "Zero-shot streaming voice conversion，codec latent space one-step conversion，英中 WER 最佳",
+      "tags": [
+        "voice-conversion",
+        "zero-shot",
+        "streaming",
+        "codec"
+      ],
+      "url": "https://arxiv.org/abs/2604.12456",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2604.12456",
+      "price": null,
+      "vram": "~8-12GB (estimated)",
+      "license": "TBD"
+    },
+    {
+      "id": "20260416-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Audio Flamingo Next (NVIDIA)",
+      "summary": "NVIDIA audio-language model，speech/sound/music 理解，30 分鐘音訊，multilingual ASR",
+      "tags": [
+        "audio-ai",
+        "music-understanding",
+        "asr",
+        "nvidia"
+      ],
+      "url": "https://huggingface.co/nvidia/audio-flamingo-next-hf",
+      "source": "HuggingFace + arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2604.10905",
+      "price": null,
+      "vram": "~12-14GB",
+      "license": "Non-commercial research"
+    },
+    {
+      "id": "20260416-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "VoxCPM2",
+      "summary": "Tokenizer-free TTS，2B，30 語言，Voice Design + Controllable Cloning，48kHz，Apache 2.0",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "multilingual",
+        "tokenizer-free"
+      ],
+      "url": "https://huggingface.co/openbmb/VoxCPM2",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "~8-10GB (2B), quantize ~6GB",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260416-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MOSS-VoiceGenerator",
+      "summary": "文字描述設計 speaker timbre，1.7B，zero-shot voice creation，不需參考音訊",
+      "tags": [
+        "tts",
+        "voice-design",
+        "zero-shot"
+      ],
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VoiceGenerator",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-VoiceGenerator",
+      "price": null,
+      "vram": "~6GB (1.7B FP16)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260416-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "DFlash",
+      "summary": "Block Diffusion speculative decoding，支援 Qwen3.5/Llama/Kimi-K2.5，四種 backend",
+      "tags": [
+        "speculative-decoding",
+        "llm-inference",
+        "acceleration"
+      ],
+      "url": "https://github.com/z-lab/dflash",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "Draft ~2-4GB + target model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260416-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-16",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MOSS-TTS-Nano",
+      "summary": "OpenMOSS 超輕量 TTS (~100M)，CPU-only 多語言 voice cloning，48kHz stereo streaming",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "edge",
+        "cpu"
+      ],
+      "url": "https://github.com/OpenMOSS/MOSS-TTS-Nano",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "0 (CPU ~1GB RAM)",
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260417-fm-007",
       "radar": "founder-mind",
       "date": "2026-04-17",
