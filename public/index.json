@@ -1,6 +1,146 @@
 {
   "entries": [
     {
+      "id": "20260417-fm-014",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Farrow 調查：Altman 跟真相的關係不受約束——信任是最大負債",
+      "summary": "18 個月調查揭露 OpenAI 的信任危機，Founder 必讀的「信任如何成為負債」教科書",
+      "tags": [
+        "trust",
+        "leadership",
+        "corporate governance"
+      ],
+      "url": "https://www.techbuzz.ai/articles/openai-s-altman-unconstrained-by-truth-says-farrow",
+      "source": "TechBuzz / New Yorker",
+      "sourceUrl": "https://www.techbuzz.ai/articles/openai-s-altman-unconstrained-by-truth-says-farrow",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-013",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Andy Jassy AI 六真理：不是泡沫，是一生一次的機會",
+      "summary": "AWS AI 年營收 run rate $15B，Trainium 晶片省數百億 capex，$200B 投資背後有實際客戶承諾",
+      "tags": [
+        "AI economics",
+        "not a bubble",
+        "custom silicon"
+      ],
+      "url": "https://www.aboutamazon.com/news/aws/amazon-ceo-andy-jassy-aws-ai",
+      "source": "Amazon",
+      "sourceUrl": "https://www.aboutamazon.com/news/aws/amazon-ceo-andy-jassy-aws-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-012",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "HBR：76% 主管認為員工愛 AI，實際只有 31%——2.5 倍認知落差",
+      "summary": "85% 企業 AI 工具閒置，問題出在領導層忽略員工心理需求而非技術",
+      "tags": [
+        "employee perception",
+        "AI adoption",
+        "leadership blind spot"
+      ],
+      "url": "https://hbr.org/2026/04/when-creating-an-ai-strategy-dont-overlook-employee-perception",
+      "source": "Harvard Business Review",
+      "sourceUrl": "https://hbr.org/2026/04/when-creating-an-ai-strategy-dont-overlook-employee-perception",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-011",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "DHH：AI 讓 Open Source 自由終於成真——Malleable Computer",
+      "summary": "AI 壓縮了修改開源軟體的複雜度，讓任何人都能 fork 和客製化，系統不再是固定黑箱",
+      "tags": [
+        "malleable software",
+        "open source",
+        "AI leverage"
+      ],
+      "url": "https://world.hey.com/dhh/the-malleable-computer-7c187a9b",
+      "source": "DHH",
+      "sourceUrl": "https://world.hey.com/dhh/the-malleable-computer-7c187a9b",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-010",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Keith Rabois：PM 角色正在坍塌，AI 時代只剩 Barrels 有價值",
+      "summary": "Rabois 斷言傳統 PM 正在消失，只有能獨力推動 10x 成果的 barrel 型人才有價值",
+      "tags": [
+        "barrels vs ammunition",
+        "PM obsolescence",
+        "talent density"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/hard-truths-about-building-in-the-ai-era",
+      "source": "Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/hard-truths-about-building-in-the-ai-era",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-009",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "資安變成 Proof of Work——花越多 token 找漏洞，防禦越強",
+      "summary": "AI 資安經濟模型：防禦 = 花比攻擊者更多的 token，資安支出從人力密集轉向 compute 密集",
+      "tags": [
+        "cybersecurity",
+        "proof of work",
+        "token economics"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/14/cybersecurity-proof-of-work/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/14/cybersecurity-proof-of-work/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-04-17",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Aggregation Theory 已死——Compute 的機會成本取代了零邊際成本",
+      "summary": "Ben Thompson 指出 AI 時代翻轉了網路經濟學核心假設：算力是稀缺資源，Hyperscaler 優先分配 compute 給自家高毛利產品",
+      "tags": [
+        "aggregation theory",
+        "opportunity cost",
+        "compute scarcity"
+      ],
+      "url": "https://stratechery.com/2026/mythos-muse-and-the-opportunity-cost-of-compute/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/mythos-muse-and-the-opportunity-cost-of-compute/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260417-sw-007",
       "radar": "software-dev",
       "date": "2026-04-17",
