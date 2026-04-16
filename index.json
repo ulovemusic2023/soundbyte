@@ -1,6 +1,153 @@
 {
   "entries": [
     {
+      "id": "20260417-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HoloTab Browser AI Companion",
+      "summary": "HCompany 推出瀏覽器 AI 伴侶做 computer-use，降低 agent 進入桌面操作門檻",
+      "tags": [
+        "computer-use",
+        "browser agent",
+        "HuggingFace"
+      ],
+      "url": "https://huggingface.co/blog/Hcompany/holotab",
+      "source": "HuggingFace Blog",
+      "sourceUrl": "https://huggingface.co/blog/Hcompany/holotab",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Code Routines",
+      "summary": "伺服器端自動化任務：Mac 睡眠也能跑，搭配 desktop app 重設計和 prompt caching",
+      "tags": [
+        "Claude Code",
+        "Routines",
+        "autonomous agent",
+        "Anthropic"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/claude-code/routines",
+      "source": "Anthropic",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/routines",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gemini Robotics-ER 1.6",
+      "summary": "DeepMind 機器人空間推理大升級：指向、計數、多視角理解，與 Boston Dynamics 合作儀表讀取",
+      "tags": [
+        "robotics",
+        "spatial reasoning",
+        "DeepMind",
+        "Gemini"
+      ],
+      "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "source": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 3.0 Agents Window",
+      "summary": "平行 Agent 介面重建：/worktree 隔離 git 分支、/best-of-n 多模型競賽、Await 等待子 agent",
+      "tags": [
+        "Cursor",
+        "AI coding",
+        "parallel agents",
+        "git worktree"
+      ],
+      "url": "https://cursor.com/changelog",
+      "source": "Cursor",
+      "sourceUrl": "https://cursor.com/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pragmatic Engineer AI Impact Survey 2026",
+      "summary": "900+ 工程師調查：95% 每週使用 AI，Claude Code 工作場景 #2（NPS 最高），30% 撞用量上限",
+      "tags": [
+        "AI adoption",
+        "developer survey",
+        "Claude Code",
+        "productivity"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Darkbloom Decentralized Inference",
+      "summary": "用閒置 Apple Silicon Mac 組成去中心化 AI 推論網路，Secure Enclave 保隱私，OpenAI 相容 API，成本降 70%",
+      "tags": [
+        "decentralized inference",
+        "Apple Silicon",
+        "local-first AI",
+        "privacy"
+      ],
+      "url": "https://darkbloom.ai",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47788542",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain Deep Agents Deploy",
+      "summary": "Claude Managed Agents 的開源替代方案。一行指令部署 model-agnostic AI agent，支援 MCP/A2A/Agent Protocol，可自架不鎖定供應商",
+      "tags": [
+        "ai agent",
+        "open-source",
+        "LangChain",
+        "managed agents",
+        "MCP"
+      ],
+      "url": "https://blog.langchain.com/deep-agents-deploy-an-open-alternative-to-claude-managed-agents/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/deep-agents-deploy-an-open-alternative-to-claude-managed-agents/",
+      "price": null,
+      "vram": null,
+      "license": "MIT"
+    },
+    {
       "id": "20260417-ai-005",
       "radar": "ai-infra",
       "date": "2026-04-17",
