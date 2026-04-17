@@ -19772,6 +19772,185 @@
       "stars": 992,
       "createdDate": "2026-04-12",
       "license": "none"
+    },
+    {
+      "id": "20260417-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Project Think — 次世代 Agents SDK",
+      "summary": "Cloudflare 發布 Project Think 預覽版，核心 primitive：durable execution with fibers、sub-agents、persistent sessions、sandboxed code execution、self-authored extensions。Python 先行。",
+      "tags": [
+        "ai-agent",
+        "durable-execution",
+        "agent-framework",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/project-think/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/project-think/"
+    },
+    {
+      "id": "20260417-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 3.1 — Tiled Layout 多 Agent 並行管理",
+      "summary": "Cursor 3.1 在 Agents Window 加入 tiled layout 並行跑多個 agent，搭配升級 voice input、branch selection、Plan tabs。agent-first IDE 方向確立。",
+      "tags": [
+        "ai-coding",
+        "agent-first",
+        "ide",
+        "cursor"
+      ],
+      "url": "https://cursor.com/changelog/3-1",
+      "source": "Cursor",
+      "sourceUrl": "https://cursor.com/changelog/3-1"
+    },
+    {
+      "id": "20260417-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain Async Subagents — Fire-and-Steer 模式",
+      "summary": "LangChain 在 Agent Protocol 上推出 async subagents，supervisor 發任務後不阻塞。從 fire-and-forget 進化到 fire-and-steer。",
+      "tags": [
+        "multi-agent",
+        "async",
+        "langchain",
+        "agent-protocol"
+      ],
+      "url": "https://www.langchain.com/blog/running-subagents-in-the-background",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/running-subagents-in-the-background"
+    },
+    {
+      "id": "20260417-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Agent Lee — Write Ops + Generative UI",
+      "summary": "Cloudflare in-dashboard AI 助手升級：執行寫入操作需用戶確認，Generative UI 用真實帳號數據畫圖表。日活 18K、25 萬 tool calls/day。",
+      "tags": [
+        "ai-agent",
+        "developer-experience",
+        "cloudflare",
+        "generative-ui"
+      ],
+      "url": "https://blog.cloudflare.com/introducing-agent-lee/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/introducing-agent-lee/"
+    },
+    {
+      "id": "20260417-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Managed OAuth for Access — Agent 認證",
+      "summary": "Cloudflare Access Managed OAuth open beta，讓 AI agent 用 OAuth 2.0 認證內部 app。相容 Codex、Claude Code、Goose。Free plan 可用。",
+      "tags": [
+        "zero-trust",
+        "oauth",
+        "agent-auth",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/managed-oauth-for-access/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/managed-oauth-for-access/"
+    },
+    {
+      "id": "20260417-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain + Cisco AI Defense — Agent 安全中介層",
+      "summary": "LangChain 與 Cisco AI Defense 整合 middleware 做 agent 運行時安全。Monitor/Enforce 兩種模式，覆蓋 LLM calls、MCP tool calls、multi-agent 系統。",
+      "tags": [
+        "agent-security",
+        "middleware",
+        "langchain",
+        "cisco"
+      ],
+      "url": "https://www.langchain.com/blog/secure-agents-cisco-ai-defense",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/secure-agents-cisco-ai-defense"
+    },
+    {
+      "id": "20260417-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Sandboxes GA — Agent 隔離運算上線",
+      "summary": "Container-based sandbox 環境正式 GA，搭配 Dynamic Workers 和 Artifacts 支援企業級 agent workloads。",
+      "tags": [
+        "sandbox",
+        "container",
+        "cloudflare",
+        "agent-infra"
+      ],
+      "url": "https://blog.cloudflare.com/sandbox-ga/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/sandbox-ga/"
+    },
+    {
+      "id": "20260417-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison: Qwen3.6-35B 本地跑贏 Opus 4.7",
+      "summary": "Simon Willison 用 Qwen3.6-35B-A3B 在 MacBook Pro M5 本地跑，SVG 創意生成比 Claude Opus 4.7 好。open-weight 小模型在特定任務已能一戰。",
+      "tags": [
+        "local-first-ai",
+        "open-weight",
+        "quantization",
+        "simon-willison"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/16/qwen-beats-opus/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/16/qwen-beats-opus/"
+    },
+    {
+      "id": "20260417-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LangChain Reusable Evaluator Templates",
+      "summary": "LangSmith 推出 30+ evaluator templates + 集中式 Evaluators tab，agent 評估標準化。",
+      "tags": [
+        "evaluation",
+        "langsmith",
+        "langchain"
+      ],
+      "url": "https://www.langchain.com/blog/reusable-langsmith-evaluator-templates",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/reusable-langsmith-evaluator-templates"
+    },
+    {
+      "id": "20260417-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 開發者安全強化 — Resource-Scoped RBAC",
+      "summary": "Resource-scoped RBAC、新增 MCP Portals 角色、Organizations beta 跨帳號 IdP bridging。",
+      "tags": [
+        "zero-trust",
+        "rbac",
+        "cloudflare",
+        "platform-engineering"
+      ],
+      "url": "https://blog.cloudflare.com/improved-developer-security/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/improved-developer-security/"
     }
   ]
 }
