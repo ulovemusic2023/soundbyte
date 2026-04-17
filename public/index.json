@@ -1,6 +1,114 @@
 {
   "entries": [
     {
+      "id": "20260417-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "cognee — Knowledge Engine for AI Agent Memory",
+      "summary": "AI agent memory 知識引擎，結合 vector search + graph DB，6 行 code 整合，有 Claude Code / OpenClaw plugin",
+      "tags": [
+        "knowledge-graph",
+        "rag",
+        "agent-memory",
+        "semantic-search"
+      ],
+      "url": "https://github.com/topoteretes/cognee",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "N/A (framework)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260417-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google Gemma 4 — 31B Dense (Quantize-OK)",
+      "summary": "Gemma 4 最強 dense model，GPQA Diamond 84.3%，Arena AI #3，INT4 量化後可塞 16GB VRAM",
+      "tags": [
+        "gemma",
+        "local-inference",
+        "quantization",
+        "reasoning",
+        "google"
+      ],
+      "url": "https://huggingface.co/google/gemma-4-31b-it",
+      "source": "Google 官方",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/google-gemm4/",
+      "price": null,
+      "vram": "~18GB FP16 → INT4 ~10GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260417-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "pyannote-audio — Speaker Diarization Toolkit",
+      "summary": "業界標竿 speaker diarization 工具包，community-1 pipeline 大幅超越 3.1 版本，適合 podcast/會議/對話切割",
+      "tags": [
+        "speaker-diarization",
+        "audio-processing",
+        "speaker-embedding",
+        "pytorch"
+      ],
+      "url": "https://github.com/pyannote/pyannote-audio",
+      "source": "pyannote / MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~2-3GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260417-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google Gemma 4 — 26B MoE (4B active) Open Multimodal",
+      "summary": "Google 開源 multimodal 模型，Apache 2.0，4B active params，支援文字/圖片/影片/音訊，256K context，Ollama 可用",
+      "tags": [
+        "gemma",
+        "multimodal",
+        "local-inference",
+        "moe",
+        "google"
+      ],
+      "url": "https://huggingface.co/google/gemma-4-26b-a4b-it",
+      "source": "Google 官方",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/google-gemm4/",
+      "price": null,
+      "vram": "~8-10GB (MoE)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260417-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OmniVoice TTS — 600+ 語言 Zero-Shot TTS",
+      "summary": "支援 600+ 語言的 zero-shot TTS，3-15 秒 voice cloning，40x real-time 推理速度，已有 ComfyUI 整合",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "zero-shot",
+        "multilingual",
+        "comfyui"
+      ],
+      "url": "https://github.com/k2-fsa/OmniVoice",
+      "source": "k2-fsa / MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~4GB",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260417-fm-014",
       "radar": "founder-mind",
       "date": "2026-04-17",
