@@ -20013,6 +20013,157 @@
       "url": "https://blog.cloudflare.com/improved-developer-security/",
       "source": "Cloudflare Blog",
       "sourceUrl": "https://blog.cloudflare.com/improved-developer-security/"
+    },
+    {
+      "id": "20260417-sw-018",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Codex「For Almost Everything」— 桌面 Computer Use + Memory + 自動化",
+      "summary": "Codex 大改版：AI 用獨立游標操控 Mac 桌面 app、跨 session Memory、排程自動化、90+ 外掛。全方位 agent workspace",
+      "tags": [
+        "computer-use",
+        "ai agent",
+        "automation",
+        "memory",
+        "plugin ecosystem"
+      ],
+      "url": "https://openai.com/index/codex-for-almost-everything/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/16/openai-takes-aim-at-anthropic-with-beefed-up-codex-that-gives-it-more-power-over-your-desktop/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-019",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Agents SDK — Sandbox Execution 企業級 Agent 隔離",
+      "summary": "Agents SDK sandbox execution：Unix/Docker/microVM 隔離、Manifest 預載、RunState 暫停恢復、100+ LLM 路由",
+      "tags": [
+        "ai agent",
+        "sandbox",
+        "enterprise",
+        "agent framework",
+        "isolation"
+      ],
+      "url": "https://developers.openai.com/api/docs/guides/agents/sandboxes",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-020",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI GPT-Rosalind — 首個 Domain-Specific 生命科學 AI 模型",
+      "summary": "專用模型系列給生化、基因體、藥物發現。BixBench 0.751，50+ 科學工具整合",
+      "tags": [
+        "domain-specific model",
+        "life sciences",
+        "drug discovery",
+        "fine-tuning"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-rosalind/",
+      "source": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/openai-gpt-rosalind-life-sciences-drug-discovery-ai-model",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-021",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare AI Search — Agent 專用 RAG Primitive",
+      "summary": "Hybrid search（語意+BM25）、多實例查詢、recency boosting、一行 code 整合 Agents SDK",
+      "tags": [
+        "RAG",
+        "vector search",
+        "hybrid search",
+        "agent framework",
+        "Cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/ai-search-agent-primitive/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/ai-search-agent-primitive/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-022",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare Workflows v2 — 50K 並行實例撐 Agent 負載",
+      "summary": "控制平面重建，並行 4,500→50K，建立速率 300/秒，佇列 200 萬",
+      "tags": [
+        "workflow orchestration",
+        "agent infrastructure",
+        "scalability",
+        "Cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/workflows-v2/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workflows-v2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-023",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Meta Unified AI Agents — Hyperscale 容量優化",
+      "summary": "Meta 統一 AI agent 平台：FBDetect 每週抓數千 regression，回收數百 MW 電力",
+      "tags": [
+        "ai agent",
+        "hyperscale",
+        "capacity optimization",
+        "Meta",
+        "performance engineering"
+      ],
+      "url": "https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/",
+      "source": "Meta Engineering",
+      "sourceUrl": "https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260417-sw-024",
+      "radar": "software-dev",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cloudflare Browser Run 升級 — Live View + Human-in-the-Loop",
+      "summary": "Agent 瀏覽器：Live View、HITL 人工介入、4x 並行容量",
+      "tags": [
+        "browser agent",
+        "computer-use",
+        "HITL",
+        "Cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/browser-run-for-ai-agents/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/browser-run-for-ai-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
