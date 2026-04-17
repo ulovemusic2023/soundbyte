@@ -1,6 +1,68 @@
 {
   "entries": [
     {
+      "id": "20260417-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Thunderbolt — Mozilla 開源 AI Client",
+      "summary": "Mozilla 開源 self-hostable AI client，支援 Ollama/llama.cpp 本地推理，跨平台，MCP/ACP/Haystack 整合，MPL-2.0 授權",
+      "tags": [
+        "ai-client",
+        "self-hosted",
+        "ollama",
+        "mozilla"
+      ],
+      "url": "https://github.com/thunderbird/thunderbolt",
+      "source": "Hacker News",
+      "sourceUrl": "https://gigazine.net/gsc_news/en/20260417-mozilla-thunderbolt/",
+      "price": null,
+      "vram": "N/A",
+      "license": "MPL-2.0"
+    },
+    {
+      "id": "20260417-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Audio-Cogito — 開源 Audio Language Model",
+      "summary": "完全開源 LALM，Chain-of-Thought 音訊推理，545k 樣本訓練，MMAR benchmark SOTA（超 Qwen3-Omni-Thinking 5.44%）",
+      "tags": [
+        "audio-language-model",
+        "music-understanding",
+        "audio-reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2604.12527",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2604.12527",
+      "price": null,
+      "vram": "~8-12GB",
+      "license": "研究用"
+    },
+    {
+      "id": "20260417-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-17",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "luce-megakernel — 單 CUDA Kernel 跑完整 LLM",
+      "summary": "首個 hybrid DeltaNet/Attention 架構的 megakernel。Qwen 3.5-0.8B 全 24 層單一 CUDA dispatch，RTX 3090 decode 413 tok/s（llama.cpp 1.55x），energy 1.87 tok/J 打平 M5 Max",
+      "tags": [
+        "llm-inference",
+        "cuda",
+        "megakernel",
+        "consumer-gpu"
+      ],
+      "url": "https://github.com/Luce-Org/luce-megakernel",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/17/Luce-Org-luce-megakernel.html",
+      "price": null,
+      "vram": "~1.5GB BF16",
+      "license": "Open Source"
+    },
+    {
       "id": "20260417-ai-010",
       "radar": "ai-infra",
       "date": "2026-04-17",
