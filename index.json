@@ -1,6 +1,67 @@
 {
   "entries": [
     {
+      "id": "20260418-sw-013",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "The LangChain Exit — 生產團隊改寫回 Raw SDK",
+      "summary": "LangChain 核心價值已被 vendor SDK 吸收。改寫案例：代碼量減少 40-60%、latency 改善 8-22%、月維護時間砍 70-90%。",
+      "tags": [
+        "langchain",
+        "agent-framework",
+        "SDK-migration"
+      ],
+      "url": null,
+      "source": "Framesta Fernando / Ravoid",
+      "sourceUrl": "https://ravoid.com/blog/langchain-exit-raw-sdk-migration-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260418-sw-012",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare Unweight — 無損壓縮 LLM 權重 22%",
+      "summary": "用 Huffman coding 對 BF16 exponent 欄位壓縮，MLP 權重縮小約 30%，整體模型小 22%。Decompression 在 GPU shared memory 完成。",
+      "tags": [
+        "quantization",
+        "inference",
+        "compression"
+      ],
+      "url": "https://blog.cloudflare.com/unweight-tensor-compression/",
+      "source": "Cloudflare Research",
+      "sourceUrl": "https://blog.cloudflare.com/unweight-tensor-compression/",
+      "price": null,
+      "vram": null,
+      "license": "Open Source"
+    },
+    {
+      "id": "20260418-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Qwen3.6-35B-A3B — 開源 MoE 模型顛覆 agentic coding 門檻",
+      "summary": "Alibaba Qwen 團隊發布 35B 參數但僅激活 3B 的 MoE 模型，專為 agentic coding 優化。量化後 17.7GB 即可在筆電運行。",
+      "tags": [
+        "open-weight",
+        "agentic-coding",
+        "MoE",
+        "local-first-AI"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "source": "Qwen Team",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "price": null,
+      "vram": "17.7GB (Q4)",
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260418-ai-008",
       "radar": "ai-infra",
       "date": "2026-04-18",
