@@ -1,6 +1,107 @@
 {
   "entries": [
     {
+      "id": "20260418-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-18",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "NVIDIA Lyra — Generative 3D World Models",
+      "summary": "NVIDIA 開源生成式 3D 世界模型，從文字/圖片生成 3D 場景",
+      "tags": [
+        "3d-generation",
+        "world-model",
+        "nvidia"
+      ],
+      "url": "https://github.com/nv-tlabs/lyra",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/nv-tlabs/lyra",
+      "price": null,
+      "vram": ">24GB",
+      "license": "NVIDIA"
+    },
+    {
+      "id": "20260418-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "NVIDIA Gemma-4-31B-IT-NVFP4",
+      "summary": "Gemma 4 的 31B multimodal 模型 NVFP4 量化，256K context、140+ 語言，GPQA Diamond 84.3%",
+      "tags": [
+        "llm-inference",
+        "quantization",
+        "multimodal",
+        "nvidia"
+      ],
+      "url": "https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4",
+      "price": null,
+      "vram": "~14-16GB (NVFP4)",
+      "license": "Gemma"
+    },
+    {
+      "id": "20260418-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-18",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "personalized-podcast — 內容轉對話式 Podcast",
+      "summary": "將任意內容自動轉成對話式 podcast 音訊，整合 TTS 合成",
+      "tags": [
+        "tts",
+        "podcast",
+        "audio-generation"
+      ],
+      "url": "https://github.com/zarazhangrui/personalized-podcast",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~4-8GB",
+      "license": "待確認"
+    },
+    {
+      "id": "20260418-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MOSS-Audio — 統一音訊理解基礎模型",
+      "summary": "OpenMOSS 開源 audio foundation model，統一涵蓋語音、音效、音樂理解，支援 captioning、QA、reasoning",
+      "tags": [
+        "audio-language-model",
+        "music-understanding",
+        "open-source"
+      ],
+      "url": "https://github.com/OpenMOSS/MOSS-Audio",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/OpenMOSS/MOSS-Audio",
+      "price": null,
+      "vram": "~8-12GB",
+      "license": "待確認"
+    },
+    {
+      "id": "20260418-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-18",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "LaDA-Band — Vocal-to-Accompaniment Diffusion Model",
+      "summary": "以 discrete masked diffusion 從人聲直接生成完整伴奏，LLaMA-based Mask Predictor 非自回歸去噪，RTF 0.12，250M 參數",
+      "tags": [
+        "audio-music-ai",
+        "music-generation",
+        "diffusion"
+      ],
+      "url": "https://github.com/Duoluoluos/TME-LaDA-Band",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2604.11052",
+      "price": null,
+      "vram": "~4GB",
+      "license": "未明確"
+    },
+    {
       "id": "20260418-ts-001",
       "title": "MemPalace/mempalace",
       "summary": "開源 AI 記憶系統，benchmark 最強。支援多 agent 共享記憶層，解決 coding agent「失憶」問題。Agent 用越久越聰明。",
