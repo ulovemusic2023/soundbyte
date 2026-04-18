@@ -1,6 +1,247 @@
 {
   "entries": [
     {
+      "id": "20260418-ts-001",
+      "title": "MemPalace/mempalace",
+      "summary": "開源 AI 記憶系統，benchmark 最強。支援多 agent 共享記憶層，解決 coding agent「失憶」問題。Agent 用越久越聰明。",
+      "priority": "rising-fast",
+      "tags": [
+        "ai-agent",
+        "memory",
+        "coding-tools"
+      ],
+      "url": "https://github.com/MemPalace/mempalace",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-002",
+      "title": "alchaincyf/darwin-skill",
+      "summary": "讓 Agent Skill 自動進化——評估→改進→測試→保留或回滾。Autoresearch 啟發。",
+      "priority": "rising-fast",
+      "tags": [
+        "claude-code",
+        "ai-agent",
+        "skill-evolution"
+      ],
+      "url": "https://github.com/alchaincyf/darwin-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-003",
+      "title": "nesaminua/claude-code-lsp-enforcement-kit",
+      "summary": "Hooks 強制 Claude Code 走 LSP 導航，實測省 ~80% tokens。",
+      "priority": "rising-fast",
+      "tags": [
+        "claude-code",
+        "token-savings",
+        "developer-tool"
+      ],
+      "url": "https://github.com/nesaminua/claude-code-lsp-enforcement-kit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/nesaminua/claude-code-lsp-enforcement-kit",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-004",
+      "title": "NickCirv/engram",
+      "summary": "AI coding agent 的 context 中樞，攔截 file read 換成預組裝 context packet，88% token 省量。v2.0 附帶 web dashboard。",
+      "priority": "rising-fast",
+      "tags": [
+        "claude-code",
+        "context-engineering",
+        "token-savings"
+      ],
+      "url": "https://github.com/NickCirv/engram",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/NickCirv/engram",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-005",
+      "title": "evo-hq/evo",
+      "summary": "Claude Code / Codex 插件，把 codebase 變成 autoresearch 迴圈。Karpathy 路線的結構化實作。",
+      "priority": "worth-trying",
+      "tags": [
+        "autoresearch",
+        "claude-code",
+        "optimization"
+      ],
+      "url": "https://github.com/evo-hq/evo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/evo-hq/evo",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-006",
+      "title": "momenbasel/PureMac",
+      "summary": "開源免費 macOS 清理工具，CleanMyMac 替代品。零 telemetry、原生 SwiftUI。MIT 授權。",
+      "priority": "worth-trying",
+      "tags": [
+        "macos",
+        "productivity",
+        "open-source"
+      ],
+      "url": "https://github.com/momenbasel/PureMac",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/momenbasel/PureMac",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-007",
+      "title": "vercel-labs/wterm",
+      "summary": "Vercel 出品的 web 端 terminal emulator。開發 web-based coding tool 或線上 IDE 用得上。",
+      "priority": "worth-trying",
+      "tags": [
+        "web",
+        "terminal",
+        "developer-tool"
+      ],
+      "url": "https://github.com/vercel-labs/wterm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/vercel-labs/wterm",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-008",
+      "title": "mohi-devhub/antivibe",
+      "summary": "Claude Code skill，把 AI 產出的 code 轉成深度教學。反 vibe coding。",
+      "priority": "worth-trying",
+      "tags": [
+        "claude-code",
+        "education",
+        "anti-vibe"
+      ],
+      "url": "https://github.com/mohi-devhub/antivibe",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/mohi-devhub/antivibe",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-009",
+      "title": "AMAP-ML/SkillClaw",
+      "summary": "讓 Skills 集體進化的框架，Agentic Evolver 自動演化 skill 群。阿里出品。",
+      "priority": "worth-trying",
+      "tags": [
+        "ai-agent",
+        "skill-evolution",
+        "agent-framework"
+      ],
+      "url": "https://github.com/AMAP-ML/SkillClaw",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/AMAP-ML/SkillClaw",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-010",
+      "title": "kontext-security/kontext-cli",
+      "summary": "讓 coding agent 安全存取外部服務但不暴露 API key。",
+      "priority": "worth-trying",
+      "tags": [
+        "security",
+        "coding-agent",
+        "api-keys"
+      ],
+      "url": "https://github.com/kontext-security/kontext-cli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kontext-security/kontext-cli",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-011",
+      "title": "yantrikos/yantrikdb-server",
+      "summary": "AI agent 認知記憶資料庫，Rust 寫，可當 MCP server / HTTP cluster。",
+      "priority": "worth-trying",
+      "tags": [
+        "memory",
+        "mcp",
+        "rust",
+        "ai-agent"
+      ],
+      "url": "https://github.com/yantrikos/yantrikdb-server",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/yantrikos/yantrikdb-server",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-012",
+      "title": "lsdefine/GenericAgent",
+      "summary": "自我進化 agent 框架，3K 行核心，每次任務自動結晶成 skill。本週 2.3K star。",
+      "priority": "on-the-radar",
+      "tags": [
+        "ai-agent",
+        "self-evolving",
+        "skill-tree"
+      ],
+      "url": "https://github.com/lsdefine/GenericAgent",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-013",
+      "title": "superradcompany/microsandbox",
+      "summary": "Rust 寫的 AI agent sandbox，毫秒級啟動輕量 VM。YC backed。",
+      "priority": "on-the-radar",
+      "tags": [
+        "sandbox",
+        "ai-agent",
+        "rust",
+        "security"
+      ],
+      "url": "https://github.com/superradcompany/microsandbox",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
+      "id": "20260418-ts-014",
+      "title": "qufei1993/skills-hub",
+      "summary": "跨平台桌面 app，統一管理 Agent Skills 並同步到多個 AI coding tool。Rust + Tauri。",
+      "priority": "on-the-radar",
+      "tags": [
+        "skills",
+        "desktop-app",
+        "rust",
+        "developer-tool"
+      ],
+      "url": "https://github.com/qufei1993/skills-hub",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "radar": "tool-scout",
+      "date": "2026-04-18",
+      "cycle": "sat"
+    },
+    {
       "id": "20260418-fm-006",
       "radar": "founder-mind",
       "date": "2026-04-18",
