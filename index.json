@@ -1,6 +1,156 @@
 {
   "entries": [
     {
+      "id": "20260418-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare Shared Dictionaries — 為 agentic web 優化壓縮",
+      "summary": "即將 open beta 的 dcb/dcz dictionary-compressed responses，主要受益者為 AI agent 爬蟲。",
+      "tags": [
+        "edge function",
+        "ai-aware caching"
+      ],
+      "url": "https://blog.cloudflare.com/shared-dictionaries/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/shared-dictionaries/"
+    },
+    {
+      "id": "20260418-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor 估值飆至 $50B，洽談 $2B 融資",
+      "summary": "Cursor 正與 a16z、Thrive Capital 洽談 $2B 融資，估值 $50B，年化營收 $2B。",
+      "tags": [
+        "ai coding",
+        "vibe coding"
+      ],
+      "url": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/"
+    },
+    {
+      "id": "20260418-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Netflix：Live at Scale 背後的 Human Infrastructure",
+      "summary": "Netflix 剖析大型直播活動的人類基礎建設，event tiering 系統確保資源按營運需求分配。",
+      "tags": [
+        "site reliability",
+        "incident management",
+        "distributed systems"
+      ],
+      "url": "https://netflixtechblog.com/the-human-infrastructure-how-netflix-built-the-operations-layer-behind-live-at-scale-33e2a311c597",
+      "source": "Netflix Tech Blog",
+      "sourceUrl": "https://netflixtechblog.com/the-human-infrastructure-how-netflix-built-the-operations-layer-behind-live-at-scale-33e2a311c597"
+    },
+    {
+      "id": "20260418-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Agent Readiness Score — 衡量網站 agent 準備度",
+      "summary": "推出 isitagentready.com 評估網站的 agent 準備度，數據整合進 Cloudflare Radar。",
+      "tags": [
+        "agent-ready devtools",
+        "agentic web"
+      ],
+      "url": "https://blog.cloudflare.com/agent-readiness/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/agent-readiness/"
+    },
+    {
+      "id": "20260418-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Redirects for AI Training — canonical 導正 AI 爬蟲",
+      "summary": "一鍵啟用，自動將 AI training 爬蟲從過時頁面 301 導向 canonical URL。",
+      "tags": [
+        "compliant crawler",
+        "ai-aware caching"
+      ],
+      "url": "https://blog.cloudflare.com/ai-redirects/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/ai-redirects/"
+    },
+    {
+      "id": "20260418-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Flagship — 原生 feature flag 服務",
+      "summary": "基於 Workers + KV + Durable Objects 的 edge-native feature flag 系統，sub-millisecond 全球評估。",
+      "tags": [
+        "feature flag",
+        "edge function",
+        "serverless"
+      ],
+      "url": "https://blog.cloudflare.com/flagship/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/flagship/"
+    },
+    {
+      "id": "20260418-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Thoughtworks Radar Vol 34：Cognitive Debt 成為 AI 時代的核心風險",
+      "summary": "Thoughtworks 指出 codebase cognitive debt 是 AI coding 最大隱患，強調回歸工程基本功。",
+      "tags": [
+        "cognitive debt",
+        "harness engineering",
+        "ai coding"
+      ],
+      "url": "https://www.thoughtworks.com/radar/techniques/codebase-cognitive-debt",
+      "source": "Thoughtworks",
+      "sourceUrl": "https://www.thoughtworks.com/radar/techniques/codebase-cognitive-debt"
+    },
+    {
+      "id": "20260418-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Agent Memory — AI agent 的持久記憶層",
+      "summary": "Cloudflare 推出 Agent Memory managed service，整合 Durable Objects + Vectorize + Workers AI，讓 AI agent 跨 session 保留記憶。",
+      "tags": [
+        "ai agent",
+        "agentic",
+        "distributed systems"
+      ],
+      "url": "https://blog.cloudflare.com/introducing-agent-memory/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/introducing-agent-memory/"
+    },
+    {
+      "id": "20260418-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 推出 Claude Design — AI 進入設計工具領域",
+      "summary": "Anthropic Labs 發布 Claude Design，以 Opus 4.7 驅動，讓非設計師用自然語言生成 prototype、slides、UI mockup、marketing 素材。由 Mike Krieger 主導。",
+      "tags": [
+        "ai agent",
+        "ai coding",
+        "ai-assisted development",
+        "Claude Design"
+      ],
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+    },
+    {
       "id": "20260418-ai-003",
       "radar": "ai-infra",
       "date": "2026-04-18",
