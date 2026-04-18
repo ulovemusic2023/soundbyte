@@ -1,6 +1,112 @@
 {
   "entries": [
     {
+      "id": "20260418-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-18",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Keith Rabois：The #1 consumer of tokens is the CMO",
+      "summary": "AI 時代最大的 token 使用者不是工程師，是 CMO。真正受益的是有 business judgment + 知識好奇心的人。",
+      "tags": [
+        "AI-leverage",
+        "barrels-vs-ammunition",
+        "business-judgment"
+      ],
+      "url": "https://www.teamday.ai/ai/rabois-hard-truths-building-ai-era",
+      "source": "Keith Rabois",
+      "sourceUrl": "https://www.teamday.ai/ai/rabois-hard-truths-building-ai-era"
+    },
+    {
+      "id": "20260418-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-18",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Dario Amodei：個人急迫感驅動 AI 速度",
+      "summary": "Amodei 的領導哲學：AI 進步越快能拯救越多生命。他的框架是 safety 不是煞車，而是讓你可以踩油門的安全帶。",
+      "tags": [
+        "leadership",
+        "urgency",
+        "ai-safety",
+        "operational"
+      ],
+      "url": "https://economictimes.com/news/international/us/the-emotional-story-behind-an-ai-pioneers-rise-how-a-personal-loss-shaped-anthropic-ceo-dario-amodeis-path-to-ai/articleshow/130340771.cms",
+      "source": "Dario Amodei (Anthropic CEO)",
+      "sourceUrl": "https://economictimes.com/news/international/us/the-emotional-story-behind-an-ai-pioneers-rise-how-a-personal-loss-shaped-anthropic-ceo-dario-amodeis-path-to-ai/articleshow/130340771.cms"
+    },
+    {
+      "id": "20260418-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-18",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "OpenAI Frontier 備忘錄：從模型供應商到平台公司",
+      "summary": "OpenAI CRO 的內部備忘錄揭示 Amazon 取代 Microsoft 成為企業成長引擎。核心思維：Multi-product adoption makes us harder to replace。",
+      "tags": [
+        "platform-shift",
+        "distribution",
+        "moat",
+        "operational"
+      ],
+      "url": "https://stratechery.com/2026/openais-memos-frontier-amazon-and-anthropic/",
+      "source": "Denise Dresser / OpenAI",
+      "sourceUrl": "https://stratechery.com/2026/openais-memos-frontier-amazon-and-anthropic/"
+    },
+    {
+      "id": "20260418-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-18",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Karpathy LLM Wiki：知識複利 > RAG",
+      "summary": "LLM Wiki pattern 翻轉知識管理邏輯：LLM 幫你建造並持續維護整個 wiki，是 compounding knowledge。Obsidian 是 IDE，LLM 是 programmer，wiki 是 codebase。",
+      "tags": [
+        "mental-model",
+        "compounding",
+        "AI-leverage",
+        "knowledge-management"
+      ],
+      "url": "https://aimaker.substack.com/p/llm-wiki-obsidian-knowledge-base-andrej-karphaty",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://aimaker.substack.com/p/llm-wiki-obsidian-knowledge-base-andrej-karphaty"
+    },
+    {
+      "id": "20260418-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-18",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Bounded Distrust：如何聽 CEO 說話",
+      "summary": "CEO 講話一定 talk their book，好的 CEO 會用激進的 framing 但不做可證偽的虛假聲明。bounded distrust 框架幫你判斷 CEO 的誠實邊界。",
+      "tags": [
+        "mental-model",
+        "decision-framework",
+        "bounded-distrust"
+      ],
+      "url": "https://thezvi.substack.com/p/on-dwarkesh-patels-podcast-with-nvidia",
+      "source": "Zvi Mowshowitz",
+      "sourceUrl": "https://thezvi.substack.com/p/on-dwarkesh-patels-podcast-with-nvidia"
+    },
+    {
+      "id": "20260418-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-18",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Jensen Huang — 供應鏈流量才是真正的 AI 護城河",
+      "summary": "AI 競爭的真正瓶頸不是軟體（CUDA），而是先進半導體製造產能。Nvidia 透過近 $1000 億的供應鏈承諾鎖定 TSMC、Samsung、ASML 的產能，建立物理世界的 moat。",
+      "tags": [
+        "supply-chain",
+        "moat",
+        "leverage",
+        "first-principles"
+      ],
+      "url": "https://www.dwarkesh.com/p/jensen-huang",
+      "source": "Jensen Huang (NVIDIA CEO)",
+      "sourceUrl": "https://www.dwarkesh.com/p/jensen-huang"
+    },
+    {
       "id": "20260418-sw-009",
       "radar": "software-dev",
       "date": "2026-04-18",
