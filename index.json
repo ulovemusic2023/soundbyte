@@ -1,6 +1,69 @@
 {
   "entries": [
     {
+      "id": "20260418-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Audio Flamingo Next (AF-Next) — 最強開源 Audio Language Model",
+      "summary": "NVIDIA + UMD 發布 AF-Next，20 個 benchmark 超越同級 open model，LongAudioBench 打贏 Gemini 2.5 Pro，三版本：Instruct/Think/Captioner",
+      "tags": [
+        "audio-language-model",
+        "music-understanding",
+        "speech-recognition",
+        "nvidia"
+      ],
+      "url": "https://arxiv.org/abs/2604.10905",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2604.10905",
+      "price": null,
+      "vram": ">24GB",
+      "license": "待確認"
+    },
+    {
+      "id": "20260418-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Chandra OCR 2 — SOTA Document Intelligence",
+      "summary": "Datalab 推出 Chandra 2，支援複雜表格、手寫、數學公式、表單 OCR，90+ 語言，保留完整 layout，vLLM/HF 雙推理模式",
+      "tags": [
+        "ocr",
+        "document-ai",
+        "table-extraction",
+        "multilingual"
+      ],
+      "url": "https://github.com/datalab-to/chandra",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/datalab-to/chandra",
+      "price": null,
+      "vram": "~4-8GB (vLLM mode)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260418-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ollama v0.21.0 — Hermes Agent 整合",
+      "summary": "Ollama v0.21.0 整合 Hermes Agent，用 ollama launch hermes 就能跑自我進化 AI agent，還加入 Copilot CLI、OpenCode inline config 支援",
+      "tags": [
+        "ollama",
+        "local-inference",
+        "hermes-agent",
+        "self-hosted-llm"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.21.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.21.0",
+      "price": null,
+      "vram": "取決於模型",
+      "license": "MIT"
+    },
+    {
       "id": "20260417-ai-013",
       "radar": "ai-infra",
       "date": "2026-04-17",
