@@ -20886,6 +20886,135 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260419-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HQ-SVC",
+      "summary": "零資源場景下的高品質 zero-shot 歌聲轉換框架（AAAI 2026）。透過統一解耦 codec 實現內容與說話者特徵分離，單張消費級 GPU 即可訓練。",
+      "tags": [
+        "singing voice conversion",
+        "zero-shot",
+        "AAAI 2026"
+      ],
+      "url": "https://github.com/ShawnPi233/HQ-SVC",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "vram": "~8GB"
+    },
+    {
+      "id": "20260419-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "IndexTTS-2",
+      "summary": "Bilibili 推出的工業級 zero-shot TTS 第二代。支援精確語音時長控制與情緒解耦，整合 Qwen3 用自然語言控制情緒。",
+      "tags": [
+        "text-to-speech",
+        "zero-shot tts",
+        "emotional speech"
+      ],
+      "url": "https://github.com/index-tts/index-tts",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "vram": "~6-8GB"
+    },
+    {
+      "id": "20260419-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenKB",
+      "summary": "基於 Karpathy 概念的 vectorless LLM 知識庫系統。用 LLM 編譯文件成 wiki 式結構化知識庫。",
+      "tags": [
+        "knowledge base",
+        "RAG",
+        "vectorless"
+      ],
+      "url": "https://github.com/VectifyAI/OpenKB",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0GB"
+    },
+    {
+      "id": "20260419-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "TurboVec",
+      "summary": "基於 TurboQuant (ICLR 2026) 的 Rust 向量索引庫，免訓練 2-4 bit 壓縮，比 FAISS 快 12-20%。",
+      "tags": [
+        "vector search",
+        "quantization",
+        "ICLR 2026"
+      ],
+      "url": "https://github.com/RyanCodrai/turbovec",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "0GB"
+    },
+    {
+      "id": "20260419-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ComfyUI-Trellis2",
+      "summary": "Microsoft Trellis 2 的 ComfyUI wrapper，圖片轉 3D mesh 生成，支援 FP8。",
+      "tags": [
+        "comfyui",
+        "3D mesh",
+        "image generation"
+      ],
+      "url": "https://github.com/visualbruno/ComfyUI-Trellis2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "~10-14GB"
+    },
+    {
+      "id": "20260419-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DeepGEMM v2",
+      "summary": "DeepSeek 開源高效能 GEMM kernel library，4/16 大更新加入 Mega MoE、FP8×FP4。",
+      "tags": [
+        "deepseek",
+        "CUDA",
+        "FP8",
+        "MoE"
+      ],
+      "url": "https://github.com/deepseek-ai/DeepGEMM",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "vram": "SM90/SM100 only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260419-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "vllm-mlx",
+      "summary": "vLLM Apple Silicon 版，整合 MLX 生態系 LLM+VLM+TTS+Embeddings，支援 OpenAI/Anthropic API。",
+      "tags": [
+        "vllm",
+        "mlx",
+        "Apple Silicon",
+        "TTS"
+      ],
+      "url": "https://github.com/waybarrios/vllm-mlx",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "vram": "Apple Silicon only"
     }
   ]
 }
