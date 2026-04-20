@@ -1,6 +1,107 @@
 {
   "entries": [
     {
+      "id": "20260420-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cactus — 手機/穿戴裝置低延遲 AI 推理引擎",
+      "summary": "針對行動裝置優化的 C 語言 AI 推理引擎，強調低延遲輕量部署。",
+      "tags": [
+        "edge inference",
+        "on-device",
+        "mobile",
+        "llm inference"
+      ],
+      "url": "https://github.com/cactus-compute/cactus",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/llm-inference",
+      "vram": "N/A",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260420-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MiniMind 3 — 2 小時從零訓練 64M 參數 GPT",
+      "summary": "完整 LLM 訓練教學，從零 PyTorch 原生實現全流程，v3 對齊 Qwen3 生態。",
+      "tags": [
+        "llm training",
+        "fine-tuning",
+        "pytorch",
+        "education"
+      ],
+      "url": "https://github.com/jingyaogong/minimind",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "vram": "~4-8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260420-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AutoSubs — 本地 AI 字幕產生器（Whisper + 說話者辨識）",
+      "summary": "Tauri 桌面應用，整合 Whisper + Pyannote 完全本地運行，支援 DaVinci Resolve 整合。",
+      "tags": [
+        "whisper",
+        "speech recognition",
+        "subtitle",
+        "diarization"
+      ],
+      "url": "https://github.com/tmoroney/auto-subs",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/19/tmoroney-auto-subs.html",
+      "vram": "~2-6GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260420-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "TTS-Audio-Suite v4.25 — ComfyUI 多引擎 TTS + RVC 訓練",
+      "summary": "ComfyUI 全能語音工具包，整合 11 個 TTS/VC 引擎，新增 RVC 模型訓練工作流。",
+      "tags": [
+        "comfyui",
+        "tts",
+        "rvc",
+        "voice conversion",
+        "multi-engine"
+      ],
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/voice-conversion",
+      "vram": "3-18GB",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260420-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MeanVC — 輕量級串流 Zero-Shot Voice Conversion",
+      "summary": "西北工業大學 ASLP 實驗室推出的輕量串流語音轉換系統，採用 Diffusion Transformer + mean flows 實現單步推理即時 timbre transfer。",
+      "tags": [
+        "voice conversion",
+        "zero-shot",
+        "streaming",
+        "diffusion transformer"
+      ],
+      "url": "https://github.com/ASLP-lab/MeanVC",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/19/ASLP-lab-MeanVC.html",
+      "vram": "~2-4GB",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260419-sw-001",
       "radar": "software-dev",
       "date": "2026-04-19",
@@ -8,7 +109,12 @@
       "priority": "paradigm-shift",
       "title": "OpenAI Codex 大更新：背景電腦控制 + 記憶 + 自排程",
       "summary": "Codex 現在能在背景操控你的 Mac，擁有跨 session 記憶功能，還能自己排程未來任務。新增 90+ plugins，automations 可複用對話 thread，agent 能跨天/跨週自動醒來繼續工作。",
-      "tags": ["ai agent", "copilot", "tool use", "agent-first workflow"],
+      "tags": [
+        "ai agent",
+        "copilot",
+        "tool use",
+        "agent-first workflow"
+      ],
       "url": null,
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/index/codex-for-almost-everything/",
@@ -24,7 +130,11 @@
       "priority": "medium",
       "title": "Simon Willison 深度分析 Claude Opus 4.6 → 4.7 系統提示差異",
       "summary": "把 Anthropic 公開的 system prompt 歷史轉成 git repo 用 diff 追蹤變化。4.7 新增 tool_search 機制、Chrome/Excel/PowerPoint 工具、要求回應更簡潔。",
-      "tags": ["system prompt", "context engineering", "agentic engineering"],
+      "tags": [
+        "system prompt",
+        "context engineering",
+        "agentic engineering"
+      ],
       "url": null,
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
@@ -40,7 +150,12 @@
       "priority": "medium",
       "title": "Zero-Copy GPU Inference：WebAssembly 直通 Apple Silicon GPU",
       "summary": "Driftwood 專案展示 mmap → Metal → Wasmtime 三環鏈路，在 Apple Silicon 統一記憶體上實現 WASM sandbox 與 GPU 之間零拷貝資料傳遞。",
-      "tags": ["webassembly", "wasm", "local-first AI", "apple silicon"],
+      "tags": [
+        "webassembly",
+        "wasm",
+        "local-first AI",
+        "apple silicon"
+      ],
       "url": null,
       "source": "Abacus Noir",
       "sourceUrl": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/",
@@ -56,7 +171,10 @@
       "priority": "medium",
       "title": "MDV：Markdown 超集，內嵌數據視覺化做報告/Dashboard/簡報",
       "summary": "在 CommonMark 上加四個擴充，渲染成純 HTML（圖表 inline SVG 無 JS），支援 PDF 和 VS Code 即時預覽。",
-      "tags": ["developer experience", "design system"],
+      "tags": [
+        "developer experience",
+        "design system"
+      ],
       "url": null,
       "source": "drasimwagan (GitHub)",
       "sourceUrl": "https://github.com/drasimwagan/mdv",
@@ -72,7 +190,11 @@
       "priority": "low",
       "title": "Opus 4.6 vs 4.7 匿名 Token 用量比較排行榜",
       "summary": "Bill Chambers 建立排行榜讓使用者匿名提交 Opus 4.6/4.7 token 用量對比，HN 428 分熱議。",
-      "tags": ["ai models", "benchmark", "evals"],
+      "tags": [
+        "ai models",
+        "benchmark",
+        "evals"
+      ],
       "url": null,
       "source": "Bill Chambers / HN",
       "sourceUrl": "https://tokens.billchambers.me/leaderboard",
@@ -21104,7 +21226,13 @@
       "priority": "high",
       "title": "Genie-TTS — GPT-SoVITS ONNX 推論引擎",
       "summary": "專為 CPU 優化的 GPT-SoVITS ONNX 推論引擎。Runtime 僅 200MB，模型約 230MB，首次推論延遲 1.13 秒。支援日英中韓四語，pip install genie-tts 即裝即用。",
-      "tags": ["gpt-sovits", "onnx", "tts", "voice cloning", "CPU inference"],
+      "tags": [
+        "gpt-sovits",
+        "onnx",
+        "tts",
+        "voice cloning",
+        "CPU inference"
+      ],
       "url": "https://github.com/High-Logic/Genie-TTS",
       "source": "GitHub Topics",
       "sourceUrl": "https://github.com/topics/voice-cloning",
@@ -21120,7 +21248,13 @@
       "priority": "high",
       "title": "Chatterbox-TTS-Server — 自架 Chatterbox TTS 全家桶",
       "summary": "Resemble AI Chatterbox TTS 自架伺服器：Original + Multilingual (23語) + Turbo。OpenAI 相容 API、WebUI、voice cloning、audiobook 批量處理。",
-      "tags": ["voice cloning", "tts", "speech synthesis", "OpenAI API", "self-hosted"],
+      "tags": [
+        "voice cloning",
+        "tts",
+        "speech synthesis",
+        "OpenAI API",
+        "self-hosted"
+      ],
       "url": "https://github.com/devnen/Chatterbox-TTS-Server",
       "source": "GitHub Topics",
       "sourceUrl": "https://github.com/topics/voice-cloning",
@@ -21136,7 +21270,11 @@
       "priority": "high",
       "title": "RIFT-SVC V3.0 — Rectified Flow Transformer 歌聲轉換",
       "summary": "V3.0 移除 whisper encoder 改用 multiple classifier-free guidance，音色和咬字提升。提供三種模型大小，支援 fine-tuning。",
-      "tags": ["singing voice conversion", "rectified flow", "classifier-free guidance"],
+      "tags": [
+        "singing voice conversion",
+        "rectified flow",
+        "classifier-free guidance"
+      ],
       "url": "https://github.com/Pur1zumu/RIFT-SVC",
       "source": "GitHub Topics",
       "sourceUrl": "https://github.com/topics/singing-voice-conversion",
@@ -21152,7 +21290,12 @@
       "priority": "high",
       "title": "ACE-Step UI — 開源 Suno 替代品介面",
       "summary": "ACE-Step 1.5 音樂生成的 Spotify 風格前端。完整歌曲生成（含人聲，4分鐘+）、Reference Audio、Audio Cover、Repainting，完全本地免費。",
-      "tags": ["ace-step", "music generation", "audio generation", "open source Suno"],
+      "tags": [
+        "ace-step",
+        "music generation",
+        "audio generation",
+        "open source Suno"
+      ],
       "url": "https://github.com/fspecii/ace-step-ui",
       "source": "GitHub Topics",
       "sourceUrl": "https://github.com/topics/music-generation",
@@ -21168,7 +21311,12 @@
       "priority": "medium",
       "title": "FlashInfer — LLM Serving Kernel Library",
       "summary": "支援 Turing 到 Blackwell 全架構的 LLM kernel 函式庫。FlashAttention-2/3、FP8/FP4、MLA、MoE。vLLM/SGLang 底層加速。",
-      "tags": ["flash attention", "quantization", "local inference", "kernel library"],
+      "tags": [
+        "flash attention",
+        "quantization",
+        "local inference",
+        "kernel library"
+      ],
       "url": "https://github.com/flashinfer-ai/flashinfer",
       "source": "GitHub Topics",
       "sourceUrl": "https://github.com/topics/llm-inference",
@@ -21184,7 +21332,12 @@
       "priority": "medium",
       "title": "GPUStack — GPU 叢集管理器",
       "summary": "開源 GPU 叢集管理器，自動配置 vLLM/SGLang/TensorRT-LLM。KV cache 優化、speculative decoding、負載平衡、監控，單機也能用。",
-      "tags": ["vllm", "model serving", "gpu monitoring", "GPU cluster"],
+      "tags": [
+        "vllm",
+        "model serving",
+        "gpu monitoring",
+        "GPU cluster"
+      ],
       "url": "https://github.com/gpustack/gpustack",
       "source": "GitHub Topics",
       "sourceUrl": "https://github.com/topics/llm-inference",
