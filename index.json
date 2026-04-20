@@ -1,6 +1,75 @@
 {
   "entries": [
     {
+      "id": "20260420-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-20",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Headless Everything：AI Agent 時代的 API-First 第二波���潮",
+      "summary": "Matt Webb 提出所有 SaaS 服務必須走向 headless 模式，Salesforce/Google Workspace/Obsidian 紛紛推出 CLI。Brandur Leach 預測 API 成為 SaaS 競爭決定���因素。",
+      "tags": [
+        "headless SaaS",
+        "CLI-first agent",
+        "API-first economy"
+      ],
+      "url": "https://interconnected.org/home/2026/04/18/headless",
+      "source": "Matt Webb / Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/19/headless-everything/"
+    },
+    {
+      "id": "20260420-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-20",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Agents SDK 大進化：Sandbox-Native Agent 執行環境",
+      "summary": "Agents SDK 加入 sandbox 原生支援、Manifest abstraction、durable execution。內建 MCP/AGENTS.md/shell 等 agentic primitives。",
+      "tags": [
+        "agent sandbox",
+        "durable execution",
+        "manifest abstraction",
+        "harness engineering"
+      ],
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/"
+    },
+    {
+      "id": "20260420-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Vercel 重大安全事件：第三方 AI 工具 OAuth 被攻破",
+      "summary": "Context.ai OAuth 被 compromise，攻擊者存取 Vercel 未標記 sensitive 的環境變數。ShinyHunters 聲稱出售竊取資料。",
+      "tags": [
+        "supply chain security",
+        "OAuth compromise",
+        "AI tool attack surface"
+      ],
+      "url": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident",
+      "source": "Vercel / BleepingComputer",
+      "sourceUrl": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident"
+    },
+    {
+      "id": "20260420-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Claude Opus 4.7 Tokenizer 通膨 ~40%",
+      "summary": "Opus 4.7 新 tokenizer 對相同文字產生約 1.46x token 數，實際成本上升約 40%。",
+      "tags": [
+        "tokenization",
+        "LLM pricing",
+        "Opus 4.7"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/"
+    },
+    {
       "id": "20260420-ai-009",
       "radar": "ai-infra",
       "date": "2026-04-20",
