@@ -1,6 +1,87 @@
 {
   "entries": [
     {
+      "id": "20260420-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "VRAG — 阿里多模態 RAG + 強化學習框架",
+      "summary": "通義實驗室的多模態 RAG 框架，結合 RL 做 agentic retrieval，支援文字/圖片/影片。",
+      "tags": [
+        "rag",
+        "multimodal",
+        "reinforcement learning",
+        "embedding"
+      ],
+      "url": "https://github.com/Alibaba-NLP/VRAG",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/19/Alibaba-NLP-VRAG.html",
+      "vram": ">80GB",
+      "license": "未標示"
+    },
+    {
+      "id": "20260420-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "gemma-gem — 瀏覽器跑 Gemma 4 的 Chrome 擴充",
+      "summary": "透過 WebGPU 在瀏覽器完全離線運行 Gemma 4，可讀網頁、填表、執行 JS。",
+      "tags": [
+        "gemma",
+        "webgpu",
+        "on-device",
+        "chrome extension"
+      ],
+      "url": "https://github.com/kessler/gemma-gem",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/kessler-gemma-gem.html",
+      "vram": "~500MB-1.5GB (WebGPU)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260420-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "VibeVoice-ComfyUI — Microsoft VibeVoice TTS 的 ComfyUI 整合",
+      "summary": "ComfyUI 節點整合 Microsoft VibeVoice TTS，支援 voice cloning、LoRA 微調、多人對話，量化版可本地跑。",
+      "tags": [
+        "tts",
+        "voice cloning",
+        "comfyui",
+        "vibevoice"
+      ],
+      "url": "https://github.com/Enemyx-net/VibeVoice-ComfyUI",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/voice-cloning",
+      "vram": "~3-12GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260420-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-20",
+      "cycle": "morning+evening",
+      "priority": "high",
+      "title": "sherpa-onnx — 全方位離線語音處理工具包",
+      "summary": "基於 ONNX Runtime 的語音工具包，涵蓋 ASR、TTS、語者辨識、人聲分離，支援 12 種語言和幾乎所有平台。",
+      "tags": [
+        "tts",
+        "asr",
+        "onnx",
+        "speech recognition",
+        "cross-platform"
+      ],
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "vram": "極低（CPU 即可）",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260420-ai-005",
       "radar": "ai-infra",
       "date": "2026-04-20",
