@@ -1,6 +1,152 @@
 {
   "entries": [
     {
+      "id": "20260421-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-21",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Dario Amodei：科技的青春期（The Adolescence of Technology）",
+      "summary": "人類正進入「科技青春期」。提出「天才國家」思維框架，五大風險類別可用防禦策略逐一拆解。",
+      "tags": [
+        "mental model",
+        "AI safety",
+        "first principles",
+        "risk framework"
+      ],
+      "url": "https://darioamodei.com/essay/the-adolescence-of-technology",
+      "source": "Dario Amodei",
+      "sourceUrl": "https://darioamodei.com/essay/the-adolescence-of-technology",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260421-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-21",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Vibe Everything：從 Vibe Coding 到 AI 時代的核心能力",
+      "summary": "Vibe coding 揭示 AI 時代人類價值遷移：從理解 code 到 imagine-articulate-evaluate 迴圈。語言表達成為新瓶頸。",
+      "tags": [
+        "mental model",
+        "vibe coding",
+        "future of work",
+        "AI leverage"
+      ],
+      "url": "https://news.harvard.edu/gazette/story/2026/04/vibe-coding-may-offer-insight-into-our-ai-future/",
+      "source": "Harvard Gazette",
+      "sourceUrl": "https://news.harvard.edu/gazette/story/2026/04/vibe-coding-may-offer-insight-into-our-ai-future/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260421-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-21",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Tobi Lütke 的 QMD：AI Agent 的記憶基礎設施",
+      "summary": "Shopify CEO 自建 QMD 本地端語義搜尋引擎，讓 AI agent 跨 session 保有記憶。記憶是 AI-first workflow 的基礎設施。",
+      "tags": [
+        "AI memory",
+        "local-first",
+        "founder mode",
+        "operational"
+      ],
+      "url": "https://gamgee.ai/blogs/tobi-lutke-qmd-local-semantic-search/",
+      "source": "Tobi Lütke",
+      "sourceUrl": "https://gamgee.ai/blogs/tobi-lutke-qmd-local-semantic-search/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260421-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-21",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Jeff Bezos 的 6-Page Memo：Amazon 最聰明的會議改革",
+      "summary": "取消 PowerPoint，改為 30 分鐘靜默閱讀敘事備忘錄。主管永遠最後發言，避免 anchoring bias。",
+      "tags": [
+        "leadership",
+        "decision making",
+        "operational"
+      ],
+      "url": "https://www.benzinga.com/personal-finance/entrepreneurship/26/04/51646968/jeff-bezos-said-this-meeting-change-at-amazon-was-the-smartest-thing-we-ever-did",
+      "source": "Jeff Bezos",
+      "sourceUrl": "https://www.benzinga.com/personal-finance/entrepreneurship/26/04/51646968/jeff-bezos-said-this-meeting-change-at-amazon-was-the-smartest-thing-we-ever-did",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260421-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-21",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Collison Installation：信任先於規模",
+      "summary": "Collison 兄弟早期親自幫客戶安裝 Stripe，消除意圖與行動的落差，獲得不可取代的第一手用戶 insight。",
+      "tags": [
+        "PMF",
+        "founder mode",
+        "distribution",
+        "cold start"
+      ],
+      "url": "https://winwithflynn.com/2026/04/13/collison-installation/",
+      "source": "Patrick Collison",
+      "sourceUrl": "https://winwithflynn.com/2026/04/13/collison-installation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260421-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-21",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Dan Koe：2026 一人公司的三根柱子",
+      "summary": "AI 降低門檻但拉高技能上限。三柱模型：Brand + Content + Offer。Content Waterfall 系統一篇週報展開多平台。",
+      "tags": [
+        "one person business",
+        "creator economy",
+        "content leverage",
+        "digital product"
+      ],
+      "url": "https://letters.thedankoe.com/p/how-to-start-a-one-person-business",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/how-to-start-a-one-person-business",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260421-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-21",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Karpathy 的 AI 工作流轉型：在系統層級約束 Agent",
+      "summary": "80% agent-driven 開發後發現 AI agent「有自信卻不承認困惑」最危險。在系統層級設定行為約束比期待更好 output 有效。",
+      "tags": [
+        "AI coding",
+        "agentic",
+        "supervisory programming",
+        "mental model"
+      ],
+      "url": "https://www.the-ai-corner.com/p/andrej-karpathy-ai-workflow-shift-agentic-era-2026",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://www.the-ai-corner.com/p/andrej-karpathy-ai-workflow-shift-agentic-era-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260420-sw-001",
       "radar": "software-dev",
       "date": "2026-04-20",
