@@ -21557,6 +21557,26 @@
       "license": "MIT"
     },
     {
+      "id": "20260421-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RLM — Recursive Language Models 推論框架",
+      "summary": "MIT 研究的遞迴語言模型推論引擎，讓 LLM 能程式化地分解和遞迴呼叫自身，處理近乎無限長度的 context。支援 OpenAI/Anthropic API 和本地 vLLM，多種 sandbox 環境隔離。",
+      "tags": [
+        "recursive-lm",
+        "infinite-context",
+        "inference-library",
+        "sandbox"
+      ],
+      "url": "https://github.com/alexzhang13/rlm",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "vram": "取決於底層 LLM",
+      "license": "MIT"
+    },
+    {
       "id": "20260421-ai-005",
       "radar": "ai-infra",
       "date": "2026-04-21",
