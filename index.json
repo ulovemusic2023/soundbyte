@@ -21494,6 +21494,126 @@
       "price": null,
       "vram": "N/A (management layer)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260421-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiteRT-LM — Google Edge 裝置 LLM 推論框架",
+      "summary": "Google 開源 production-ready 推論框架，專為 edge 裝置部署 LLM。支援 Gemma 4/Llama/Phi-4/Qwen，跨平台 Android/iOS/Web/Desktop/IoT。",
+      "tags": [
+        "edge inference",
+        "on-device",
+        "gemma",
+        "llama"
+      ],
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/google-ai-edge-LiteRT-LM.html",
+      "vram": "極低 — 設計用於 edge 裝置",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260421-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "kvcached — GPU KV Cache 虛擬記憶體管理",
+      "summary": "將 OS 虛擬記憶體概念帶入 LLM serving，解耦 GPU 虛擬位址和實體記憶體。支援 SGLang/vLLM，Red Hat 已採用。",
+      "tags": [
+        "kv-cache",
+        "vllm",
+        "sglang",
+        "gpu-memory"
+      ],
+      "url": "https://github.com/ovg-project/kvcached",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/ovg-project-kvcached.html",
+      "vram": "工具層 — 優化 VRAM 使用",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260421-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ZINC — Zig 寫的 AMD/Apple Silicon 推論引擎",
+      "summary": "Zig + Vulkan/Metal LLM 推論引擎，專門優化 AMD RDNA3/4 和 Apple Silicon。不需 ROCm，單一執行檔，支援 GGUF。",
+      "tags": [
+        "local-inference",
+        "amd-gpu",
+        "vulkan",
+        "metal",
+        "gguf"
+      ],
+      "url": "https://github.com/zolotukhin/zinc",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/zolotukhin-zinc.html",
+      "vram": "支援 Q4_K 量化",
+      "license": "MIT"
+    },
+    {
+      "id": "20260421-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RLM — Recursive Language Models 推論框架",
+      "summary": "MIT 研究的遞迴語言模型推論引擎，讓 LLM 能程式化地分解和遞迴呼叫自身，處理近乎無限長度的 context。支援 OpenAI/Anthropic API 和本地 vLLM，多種 sandbox 環境隔離。",
+      "tags": [
+        "recursive-lm",
+        "infinite-context",
+        "inference-library",
+        "sandbox"
+      ],
+      "url": "https://github.com/alexzhang13/rlm",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "vram": "取決於底層 LLM",
+      "license": "MIT"
+    },
+    {
+      "id": "20260421-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RAG-Anything — 全能多模態 RAG 框架",
+      "summary": "基於 LightRAG 的 All-in-One 多模態 RAG 系統，統一處理文字/圖片/表格/公式。自動建立多模態知識圖譜。",
+      "tags": [
+        "rag",
+        "multimodal",
+        "knowledge-graph"
+      ],
+      "url": "https://github.com/HKUDS/RAG-Anything",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "vram": "取決於底層 LLM + VLM",
+      "license": "MIT"
+    },
+    {
+      "id": "20260421-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Omni-Diffusion — Any-to-Any 多模態離散擴散模型",
+      "summary": "首個基於 masked discrete diffusion 的 any-to-any 多模態模型。統一文字/圖片/語音生成與理解。",
+      "tags": [
+        "multimodal",
+        "discrete-diffusion",
+        "tts",
+        "asr"
+      ],
+      "url": "https://github.com/VITA-MLLM/Omni-Diffusion",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/VITA-MLLM-Omni-Diffusion.html",
+      "vram": "需要多 GPU",
+      "license": "Apache-2.0"
     }
   ]
 }
