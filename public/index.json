@@ -22354,6 +22354,305 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260422-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "browser-use/browser-harness",
+      "summary": "browser-use 團隊推出的 self-healing browser harness，讓 LLM 能自動修復網頁操作錯誤完成任務。",
+      "tags": [
+        "ai-agent",
+        "browser-automation"
+      ],
+      "url": "https://github.com/browser-use/browser-harness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 4542,
+      "createdDate": "2026-04-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260422-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "alchaincyf/huashu-design",
+      "summary": "「华术」HTML-native design skill for Claude Code，高保真原型/幻灯片/动画 + 20 設計哲學。Agent-agnostic。",
+      "tags": [
+        "claude-code",
+        "design-skill",
+        "agent-skill"
+      ],
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 3471,
+      "createdDate": "2026-04-19",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260422-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "lewislulu/html-ppt-skill",
+      "summary": "HTML PPT Studio — AgentSkill 24 themes / 31 layouts / 20+ animations。",
+      "tags": [
+        "claude-code",
+        "skill",
+        "presentation"
+      ],
+      "url": "https://github.com/lewislulu/html-ppt-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1774,
+      "createdDate": "2026-04-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260422-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "tw93/Kami",
+      "summary": "Good content deserves good paper — tw93（Pake 作者）新作，把內容轉成可列印的優雅版面。",
+      "tags": [
+        "content",
+        "typography",
+        "dev-tool"
+      ],
+      "url": "https://github.com/tw93/Kami",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1769,
+      "createdDate": "2026-04-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260422-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "cathrynlavery/diagram-design",
+      "summary": "13 種編輯級 diagram 模板給 Claude Code，純 HTML + SVG。",
+      "tags": [
+        "claude-code",
+        "diagram",
+        "design"
+      ],
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1392,
+      "createdDate": "2026-04-16",
+      "license": "no-lic"
+    },
+    {
+      "id": "20260422-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "codejunkie99/agentic-stack",
+      "summary": "One brain, many harnesses — 可攜式 .agent/ folder，能插進 Claude Code / Cursor / Windsurf / OpenCode / OpenClaw / Hermes 共用記憶。",
+      "tags": [
+        "agent-stack",
+        "openclaw",
+        "portable-memory"
+      ],
+      "url": "https://github.com/codejunkie99/agentic-stack",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1310,
+      "createdDate": "2026-04-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260422-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "Manavarya09/design-extract",
+      "summary": "一個指令抽出任何網站的完整 design system：DTCG tokens + MCP server + 多平台輸出。",
+      "tags": [
+        "mcp",
+        "design-system",
+        "token-extraction"
+      ],
+      "url": "https://github.com/Manavarya09/design-extract",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1287,
+      "createdDate": "2026-04-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260422-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "cloudflare/agentic-inbox",
+      "summary": "Cloudflare 官方開源：完全跑在 Workers 上的 self-hosted email client + AI agent。",
+      "tags": [
+        "cloudflare-workers",
+        "ai-agent",
+        "email"
+      ],
+      "url": "https://github.com/cloudflare/agentic-inbox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1135,
+      "createdDate": "2026-04-10",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260422-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "anthropics/claude-desktop-buddy",
+      "summary": "Anthropic 官方：Bluetooth API reference + example for makers in Claude Cowork & Claude Code Desktop。",
+      "tags": [
+        "anthropic",
+        "bluetooth",
+        "desktop"
+      ],
+      "url": "https://github.com/anthropics/claude-desktop-buddy",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1096,
+      "createdDate": "2026-04-09",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260422-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "VoltAgent/awesome-claude-design",
+      "summary": "68 個 ready-to-use DESIGN.md 設計系統範例。",
+      "tags": [
+        "claude-code",
+        "design-md",
+        "ui"
+      ],
+      "url": "https://github.com/VoltAgent/awesome-claude-design",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1046,
+      "createdDate": "2026-04-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260422-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "google-labs-code/design.md",
+      "summary": "Google Labs 的 DESIGN.md 格式規範，給 coding agent 一個持久、結構化的設計系統語言。",
+      "tags": [
+        "google",
+        "design-spec",
+        "agent-native"
+      ],
+      "url": "https://github.com/google-labs-code/design.md",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1036,
+      "createdDate": "2026-04-10",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260422-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "bergside/design-md-chrome",
+      "summary": "Chrome extension 從任何網站抽 style → 生成 DESIGN.md + AI design skill。",
+      "tags": [
+        "chrome-extension",
+        "design-md",
+        "tool-scout"
+      ],
+      "url": "https://github.com/bergside/design-md-chrome",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 955,
+      "createdDate": "2026-04-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260422-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "OpenCoworkAI/open-codesign",
+      "summary": "Open-source Claude Design 替代品，多模型 BYOK，local-first。",
+      "tags": [
+        "claude-design-alt",
+        "multi-model",
+        "byok"
+      ],
+      "url": "https://github.com/OpenCoworkAI/open-codesign",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 537,
+      "createdDate": "2026-04-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260422-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "cablate/banini-tracker",
+      "summary": "巴逆逆反指標追蹤器 — FB + 影片轉錄 + AI + 多平台推送。台灣本土案例。",
+      "tags": [
+        "taiwan",
+        "fb-scraping",
+        "radar-arch"
+      ],
+      "url": "https://github.com/cablate/banini-tracker",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 247,
+      "createdDate": "2026-04-09",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260422-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-04-22",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "ovoment/ovo-local-llm",
+      "summary": "Private Claude-Code-style coding agent for Apple Silicon — MLX-native。",
+      "tags": [
+        "local-llm",
+        "mlx",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/ovoment/ovo-local-llm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 87,
+      "createdDate": "2026-04-20",
+      "license": "MIT"
     }
   ]
 }
