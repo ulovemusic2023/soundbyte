@@ -22653,6 +22653,235 @@
       "stars": 87,
       "createdDate": "2026-04-20",
       "license": "MIT"
+    },
+    {
+      "id": "20260422-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "tencent-ailab/SongGeneration (LeVo 2)",
+      "summary": "Tencent 開源的 4B song foundation model，Phoneme Error Rate 壓到 8.55%，幹掉 Suno v5 (12.4%) 和 Mureka v8 (9.96%)。multi-preference alignment，商用級歌曲生成開源方案。",
+      "tags": [
+        "audio_music_ai",
+        "music generation"
+      ],
+      "url": "https://github.com/tencent-ailab/SongGeneration",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tencent-ailab/SongGeneration",
+      "price": null,
+      "vram": "~10–12GB (4B, quantize-ok)",
+      "license": "見 repo"
+    },
+    {
+      "id": "20260422-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "nvidia/music-flamingo-hf",
+      "summary": "NVIDIA 音樂理解 LALM，8B 參數，基於 Audio Flamingo 3，加 Rotary Time Embeddings 吃 20 分鐘 audio。chord/structure/timbre/lyrics 都能 QA，10+ MIR benchmarks 新 SOTA。",
+      "tags": [
+        "music_understanding",
+        "audio language model"
+      ],
+      "url": "https://huggingface.co/nvidia/music-flamingo-hf",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/nvidia/music-flamingo-hf",
+      "price": null,
+      "vram": "~10–14GB (8B, local-ready)",
+      "license": "見 HF card"
+    },
+    {
+      "id": "20260422-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "mistralai/Voxtral-4B-TTS-2603",
+      "summary": "Mistral open-weights TTS，4B 參數，voice agent 用。快、adaptable、lifelike。和 VoxtralRealtime（streaming ASR）搭檔，Mistral 正式進入語音 stack。",
+      "tags": [
+        "tts_speech",
+        "text-to-speech"
+      ],
+      "url": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
+      "price": null,
+      "vram": "~8–10GB (local-ready)",
+      "license": "見 HF card"
+    },
+    {
+      "id": "20260422-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "microsoft/VibeVoice-ASR",
+      "summary": "微軟 ASR：一次吃 60 分鐘連續音訊、50+ 語言 code-switching、joint diarization + timestamp + hotwords。長 podcast / 會議轉錄強力選項。",
+      "tags": [
+        "tts_speech",
+        "asr"
+      ],
+      "url": "https://huggingface.co/microsoft/VibeVoice-ASR",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/microsoft/VibeVoice-ASR",
+      "price": null,
+      "vram": "~8–12GB (quantize-ok)",
+      "license": "見 HF card"
+    },
+    {
+      "id": "20260422-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Aratako/MioTTS-2.6B",
+      "summary": "輕量 LLM-based TTS，支援英文 + 日文，強調低延遲 + 低資源。對做日系 content 或需要 embedded TTS 的場景合適。",
+      "tags": [
+        "tts_speech",
+        "neural tts"
+      ],
+      "url": "https://huggingface.co/Aratako/MioTTS-2.6B",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/Aratako/MioTTS-2.6B",
+      "price": null,
+      "vram": "~5–6GB (local-ready)",
+      "license": "見 HF card"
+    },
+    {
+      "id": "20260422-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "0xSero/turboquant",
+      "summary": "Google TurboQuant 社群實作：3-bit keys / 2-bit values KV cache quantization，附 Triton kernels + vLLM integration。5-7× KV 壓縮，quality 近乎無損，解鎖超長 context。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "kv-cache"
+      ],
+      "url": "https://github.com/0xSero/turboquant",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/0xSero/turboquant",
+      "price": null,
+      "vram": "infra 層",
+      "license": "見 repo"
+    },
+    {
+      "id": "20260422-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "z-lab/paroquant",
+      "summary": "ICLR 2026 paper 實作：pairwise rotation quantization 壓 reasoning LLM，用學來的 pairwise rotation 抑制 weight outlier。支援 vLLM + Transformers + Apple MLX。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://github.com/z-lab/paroquant",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/z-lab/paroquant",
+      "price": null,
+      "vram": "infra 層",
+      "license": "見 repo"
+    },
+    {
+      "id": "20260422-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "meta-llama/llama-stack",
+      "summary": "Meta 官方 Llama 4 家族部署 stack，統一 inference + agent + safety API。⭐6.4k+。要跑 Llama 4 直接用比自己接 server 省事。",
+      "tags": [
+        "llm_inference",
+        "llama"
+      ],
+      "url": "https://github.com/meta-llama/llama-stack",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/meta-llama/llama-stack",
+      "price": null,
+      "vram": "依模型",
+      "license": "見 repo"
+    },
+    {
+      "id": "20260422-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ruvnet/RuView",
+      "summary": "⚠️ 未驗證：WiFi-based 即時人體 pose estimation + vital sign monitoring，不用 camera。Rust 寫的，今日 trending +824 stars。隱私 use-case 有想像空間。",
+      "tags": [
+        "cv_ocr",
+        "pose estimation"
+      ],
+      "url": "https://github.com/ruvnet/RuView",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "<2GB",
+      "license": "見 repo"
+    },
+    {
+      "id": "20260422-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "block/goose (v1.2)",
+      "summary": "Linux Foundation 旗下 open-source AI agent，1.2 版新增自動發現 MCP server + local-first 執行改善。⭐4.9k+。不想綁 vendor 的 agent runtime 可追。",
+      "tags": [
+        "ai_devtools",
+        "mcp"
+      ],
+      "url": "https://github.com/block/goose",
+      "source": "Fazm Blog + GitHub",
+      "sourceUrl": "https://github.com/block/goose",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260422-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "openai/openai-agents-python",
+      "summary": "OpenAI 官方 multi-agent 框架，+550 stars today。輕量、Pythonic。想切換 framework 或新建 agent workflow 可比較。",
+      "tags": [
+        "ai_devtools",
+        "coding agent"
+      ],
+      "url": "https://github.com/openai/openai-agents-python",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "N/A (SDK)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260422-ai-021",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "CohereLabs/cohere-transcribe",
+      "summary": "Cohere 推的 SOTA ASR blog post，聲稱超越 Whisper。hosted API，細節讀 blog。",
+      "tags": [
+        "tts_speech",
+        "speech recognition"
+      ],
+      "url": "https://huggingface.co/blog/CohereLabs/cohere-transcribe-03-2026-release",
+      "source": "HuggingFace Blog",
+      "sourceUrl": "https://huggingface.co/blog/CohereLabs/cohere-transcribe-03-2026-release",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "商用"
     }
   ]
 }
