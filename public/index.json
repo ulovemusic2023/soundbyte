@@ -21760,6 +21760,82 @@
       "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/VITA-MLLM-Omni-Diffusion.html",
       "vram": "需要多 GPU",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260422-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Amphion Vevo2",
+      "summary": "統一語音+歌聲生成框架，一包通吃 Zero-shot TTS / SVS / VC / Singing Style Conversion / 旋律控制。核心約 1.1B 參數 (Qwen2.5-0.5B AR + 350M Flow + 250M Vocos)，16GB VRAM 綽綽有餘。IEEE/ACM TASLP 2026。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/open-mmlab/Amphion/tree/main/models/svc/vevo2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~6–8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260422-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Fish Audio S2 (fish-speech)",
+      "summary": "開源多語者 TTS，支援多輪生成與自然語言描述的 instruction-following 控制。HuggingFace 近期 trending，適合角色語音或 podcast 製作。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/fishaudio/fish-speech",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/spaces?sort=trending&search=voice",
+      "price": null,
+      "vram": "~4–6GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260422-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Kimi CLI",
+      "summary": "Moonshot 做的終端 AI agent，Claude Code / Codex CLI 的直接對手。Shell 模式、VS Code extension、ACP/MCP、Zsh 整合齊全。v1.37.0 於 2026-04-20 釋出。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/MoonshotAI/kimi-cli",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "0 (API-based)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260422-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Claude Context",
+      "summary": "把整個 codebase 變成 Claude Code 的 context — MCP server + 向量索引做語意搜尋，不靠 grep。適合 repo 塞不進 context window 的情境。",
+      "tags": [
+        "ai_devtools",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/zilliztech/claude-context",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "~1–2GB (embedding)",
+      "license": null
     }
   ]
 }
