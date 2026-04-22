@@ -21836,6 +21836,186 @@
       "price": null,
       "vram": "~1–2GB (embedding)",
       "license": null
+    },
+    {
+      "id": "20260422-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "MCP 協定底層漏洞:150M+ 下載全體暴露,Anthropic 拒絕修",
+      "summary": "OX Security 揭露 Anthropic 官方 MCP SDK (Python/TS/Java/Rust) 的 STDIO 本地執行模型是設計上的 RCE 通道,影響 150M+ 下載、7000+ 曝露 server、200+ OSS 專案。Cursor/VS Code/Windsurf/Claude Code/Gemini-CLI 全中招,10+ 高危 CVE。Anthropic 回覆:這是 secure default。",
+      "tags": [
+        "mcp",
+        "supply-chain",
+        "agentic-rce",
+        "security"
+      ],
+      "url": "https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-critical-systemic-vulnerability-at-the-core-of-the-mcp/",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/04/16/anthropic_mcp_design_flaw/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cursor 3.1 Canvas:agent 不再輸出 code,而是輸出 UI",
+      "summary": "Agent 結束任務不再吐 markdown 或程式碼,直接在 Agents Window 產出互動式 React 介面(圖表、表格、diff),作為持久 artifact。Coding agent 推往 UI-generating agent。",
+      "tags": [
+        "cursor",
+        "agent-ui",
+        "agent-rendered-canvas"
+      ],
+      "url": "https://cursor.com/blog/canvas",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/canvas",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Pinterest 上線 production 級 MCP 生態系",
+      "summary": "Pinterest 工程團隊佈署 production MCP 體系:domain-specific MCP servers + 中央 registry + HITL 審批,每月省下數千小時。",
+      "tags": [
+        "mcp",
+        "platform-engineering",
+        "enterprise-agent"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "AWS Agent Registry preview:應對 agent sprawl",
+      "summary": "Amazon Bedrock AgentCore 推 Agent Registry 公開預覽,集中索引 agent、tools、MCP servers、skills 跨多雲治理。",
+      "tags": [
+        "aws",
+        "agent-governance",
+        "agent-registry"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/aws-agent-registry-preview/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/aws-agent-registry-preview/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare 用 OpenCode 做 CI-native code reviewer,30 天 131k 次 review",
+      "summary": "Cloudflare dogfood OpenCode 建 CI-native AI code reviewer,30 天完成 131,246 次 review、48,095 個 MR、5,169 個 repo。",
+      "tags": [
+        "ai-code-review",
+        "opencode",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/ai-code-review/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/ai-code-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare 內部 AI 工程棧公開:241B tokens、3,683 員工用自家平台",
+      "summary": "Cloudflare 用自家 Workers AI + AI Gateway 建內部 AI 棧,20M 次 AI Gateway 請求、241B tokens、3,683 內部使用者。",
+      "tags": [
+        "dogfooding",
+        "ai-gateway",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/internal-ai-engineering-stack/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/internal-ai-engineering-stack/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison:Opus 4.7 tokenizer 膨脹 ~1.46x 有憑有據",
+      "summary": "Simon 升級 Claude Token Counter,加入跨模型比較。實測 Opus 4.7 新 tokenizer 比 4.6 多吃 1.46x tokens,價格沒漲但同文字成本 +40%。",
+      "tags": [
+        "tokenizer",
+        "claude-opus-4.7",
+        "cost"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/20/claude-token-counts/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/20/claude-token-counts/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Anthropic Managed Agents:把 agent harness 整包托管",
+      "summary": "Anthropic 推 Managed Agents 公開測試,切開 agent 邏輯與 runtime(orchestration/sandbox/state/credentials),支援長時程多步驟與 session 延續。",
+      "tags": [
+        "anthropic",
+        "managed-agents",
+        "meta-harness"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/anthropic-managed-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/anthropic-managed-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "MCP 治理更新:Anthropic 工程師升任 Lead Maintainer",
+      "summary": "MCP 官方 blog 公告 Den Delimarsky(Anthropic MTS)從 Core 升 Lead Maintainer,Core 再加一人。漏洞揭露同週發生。",
+      "tags": [
+        "mcp",
+        "governance"
+      ],
+      "url": "https://blog.modelcontextprotocol.io/posts/2026-04-08-maintainer-update/",
+      "source": "MCP Blog",
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/2026-04-08-maintainer-update/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
