@@ -22016,6 +22016,105 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260422-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "huggingface/hf-agents — HF CLI local coding agent",
+      "summary": "HF CLI 擴充用 llmfit 偵測硬體、推薦能跑的模型，自動起 llama.cpp server 加上 Pi coding agent。一鍵從「我這台能跑什麼」變成「本地 coding agent 跑起來了」。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools",
+        "llama.cpp",
+        "local"
+      ],
+      "url": "https://github.com/huggingface/hf-agents",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/huggingface-hf-agents.html",
+      "vram": "依模型（7B Q4 ≈ 6GB）",
+      "license": "見 repo"
+    },
+    {
+      "id": "20260422-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "psyray/oasis — Ollama 自動化安全掃描器",
+      "summary": "用本地 Ollama 模型掃 code 漏洞：兩階段掃描（小模型初掃 → 大模型深挖）、LangGraph pipeline、RAG over 本地 embedding、JSON/HTML/PDF 報告。適合把 code security 丟回本地跑。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference",
+        "ollama",
+        "security"
+      ],
+      "url": "https://github.com/psyray/oasis",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/psyray-oasis.html",
+      "vram": "依選用模型（7B~14B）",
+      "license": "見 repo"
+    },
+    {
+      "id": "20260422-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "supermemoryai/supermemory — AI 記憶引擎",
+      "summary": "LongMemEval / LoCoMo / ConvoMem 三大 memory benchmark 拿第一。自動從對話抽 fact、維護 user profile、處理時間/衝突/遺忘；Hybrid RAG + Memory 單一查詢，connectors（Drive/Gmail/Notion/GitHub）+ multi-modal 抽取。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools",
+        "memory",
+        "infra"
+      ],
+      "url": "https://github.com/supermemoryai/supermemory",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/20/supermemoryai-supermemory.html",
+      "vram": "N/A（infra 層）",
+      "license": "開源（見 repo）"
+    },
+    {
+      "id": "20260422-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MiniMaxAI/MiniMax-M2.7 — 自我演化的 agentic LLM",
+      "summary": "4/11 發表，號稱「第一個深度參與自己演化的模型」。內部版本自動優化 coding scaffold 100+ 輪、拿 30% 效能提升。SWE-Pro 56.22% 持平 GPT-5.3-Codex、VIBE-Pro 55.6% 逼近 Opus 4.6、MLE Bench Lite 66.6% 銀牌率第二。Model self-evolution 是新的 paradigm。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools",
+        "agentic",
+        "cloud"
+      ],
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "source": "Perplexity + HuggingFace",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "vram": "大 MoE，需多卡",
+      "license": "開源權重"
+    },
+    {
+      "id": "20260422-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MoonshotAI/kimi-cli — Kimi Code CLI coding agent",
+      "summary": "Terminal coding agent + shell 模式（Ctrl-X 切換）。支援 MCP tools、Agent Client Protocol（Zed/JetBrains 直接接）、VSCode 擴充、zsh 整合。用 Kimi API 雲端模型，不在本地跑。",
+      "tags": [
+        "ai_devtools",
+        "agent",
+        "cloud"
+      ],
+      "url": "https://github.com/MoonshotAI/kimi-cli",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/MoonshotAI/kimi-cli",
+      "vram": "N/A（cloud API）",
+      "license": "開源客戶端"
     }
   ]
 }
