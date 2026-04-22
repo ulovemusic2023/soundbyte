@@ -22115,6 +22115,245 @@
       "sourceUrl": "https://github.com/MoonshotAI/kimi-cli",
       "vram": "N/A（cloud API）",
       "license": "開源客戶端"
+    },
+    {
+      "id": "20260422-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Agents Week 2026 in Review:compute/network/inference 都被 platform 吃掉",
+      "summary": "Dynamic Workers (V8 isolate、ms 級啟動,比 container 快 100x) + Sandboxes GA (持久 Linux 環境) + Cloudflare Mesh (zero-trust agent networking) + 14 provider 統一推論層。Durable Object Facets 讓 stateful agent 變 first-class primitive。",
+      "tags": [
+        "dynamic-workers",
+        "durable-object-facets",
+        "sandboxes",
+        "cloudflare-mesh",
+        "agent-infra"
+      ],
+      "url": "https://blog.cloudflare.com/agents-week-in-review/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/agents-week-in-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-011",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Zendesk:AI 讓 code 變 abundant,新瓶頸是 Absorption Capacity",
+      "summary": "Zendesk 主張:AI 把 code 變便宜後,組織能消化、驗證、部署變更而不讓架構腐化的能力才是真瓶頸。CTO 議程從 velocity 拉回 assimilation rate。",
+      "tags": [
+        "absorption-capacity",
+        "ai-delivery-bottleneck",
+        "architectural-degradation"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/zendesk-absorption-capacity/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/zendesk-absorption-capacity/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-012",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LinkedIn Cognitive Memory Agent:memory 變平台 primitive",
+      "summary": "LinkedIn CMA 把 agent memory 從「每個 agent 自己存」抽成 shared stateful service,Hiring Assistant 跨 session 記得使用者。2026 共識:stateless LLM 是瑕疵,memory 要像 storage 一樣當基建做。",
+      "tags": [
+        "cognitive-memory-agent",
+        "stateful-ai",
+        "memory-as-platform"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/linkedin-cognitive-memory-agent/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/linkedin-cognitive-memory-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-013",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain:Agentic Engineering — swarm 正在重新定義軟體工程",
+      "summary": "LangChain 4/17 長文:multi-agent swarm 不是玩具,是新 software engineering 範式。LangGraph+LangSmith+LangMem 在生產跑 agent 群,工程師從寫 code 變設計 harness + 讀 traces。",
+      "tags": [
+        "agentic-engineering",
+        "agent-swarm",
+        "langgraph"
+      ],
+      "url": "https://www.langchain.com/blog/agentic-engineering-redefining-software-engineering",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/agentic-engineering-redefining-software-engineering",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-014",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Meta JiT Testing:AI 改的 code 用 Just-in-Time 生測試,bug 偵測 4x",
+      "summary": "Meta 發表 Just-in-Time testing:code review 當下針對 diff 動態生成測試,對 AI 產 code 的偵測率比靜態 suite 高 4 倍。AI 寫 code 的 edit distribution 跟人不一樣,要讓測試跟著 diff 走。",
+      "tags": [
+        "jit-testing",
+        "ai-code-review",
+        "diff-driven-tests"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/meta-jit-testing-ai-detection/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/meta-jit-testing-ai-detection/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-015",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google ADK for Java 1.0:Docker/Vertex code executor + HITL",
+      "summary": "Google ADK Java 版 1.0 GA:新 app/plugin 架構、GoogleMapsTool、Docker 與 Vertex AI code executor、human-in-the-loop。企業 Java shop 終於不必先改 Python。",
+      "tags": [
+        "adk-java",
+        "code-executor",
+        "human-in-the-loop"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/google-adk-1-0-new-architecture/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/google-adk-1-0-new-architecture/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-016",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GitHub 連環 outage:AI-accelerated dev load 超過原本 capacity",
+      "summary": "InfoQ 分析:GitHub 最近 outage 不是單純 bug,是 AI coding agent 把 CI pipeline / code assist API 推到原容量數倍。「每個 dev 被加速 10x」攤到共享平台的代價。",
+      "tags": [
+        "ai-load",
+        "platform-scaling",
+        "github-outages"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/github-outages-scaling/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/github-outages-scaling/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-017",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison:llm-anthropic 0.25 加 Opus 4.7 thinking 細緻控制",
+      "summary": "新版 plugin 支援 thinking_effort:xhigh、thinking_display、thinking_adaptive 三旋鈕 + max_tokens 拉高。thinking budget 開始變 first-class 產品變數。",
+      "tags": [
+        "llm-cli",
+        "thinking-budget",
+        "opus-4.7"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/16/llm-anthropic/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/16/llm-anthropic/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-018",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison:headless everything — SaaS 走向 agent-friendly CLI",
+      "summary": "Matt Webb 的 headless SaaS 論點 + Simon 補述:所有 service 要出 CLI/API 當主介面,per-seat 訂閱會被 per-token / per-workflow 定價吃掉。",
+      "tags": [
+        "headless-saas",
+        "cli-first",
+        "pricing-shift"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/19/headless-everything/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/19/headless-everything/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-019",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison:llm-openrouter 0.6 加 refresh command",
+      "summary": "`llm openrouter refresh` 一行同步 OpenRouter 最新模型 (Kimi 2.6 等)。模型更新速度太快,plugin 開始做 self-refresh 機制。",
+      "tags": [
+        "openrouter",
+        "llm-plugin"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/20/llm-openrouter/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/20/llm-openrouter/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-020",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor app stability (4/21):agentic coding 龍頭自己也踩 bug",
+      "summary": "Cursor 公開承認近期 agentic mode 穩定性問題 + 修復路徑。自己陷入「agent 寫爛 code → 爛 code 讓 agent 更不穩」的 feedback loop。",
+      "tags": [
+        "cursor",
+        "agentic-stability"
+      ],
+      "url": "https://cursor.com/blog/app-stability",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/app-stability",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260422-sw-021",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "InfoQ:Platform Engineering 要走 product mindset",
+      "summary": "API-first + event-driven 當 platform 設計起點,因為 AI agent 當客戶,對 tooling 期待變 intelligent feedback loop。「ticket driven」內部平台會被淘汰。",
+      "tags": [
+        "platform-engineering",
+        "product-mindset"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/platform-product-deliver-value/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/platform-product-deliver-value/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
