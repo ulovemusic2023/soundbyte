@@ -22882,6 +22882,132 @@
       "price": null,
       "vram": "cloud-only",
       "license": "商用"
+    },
+    {
+      "id": "20260422-sw-022",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison:Claude Code 是不是要變 $100/月?Pro plan 驚魂 24 小時",
+      "summary": "Anthropic 靜悄悄把 Claude Code 從 $20 Pro plan 踢出只留給 $100/$200 Max，Simon 發文途中 Anthropic 又把 Pro 勾勾改回來，官方說是「只針對 2% 新 prosumer 註冊做 A/B test」，但公開 pricing 頁面被全站更新造成全球開發者恐慌。coding-agent 訂閱經濟學首次被公開挑戰。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "ai-agent",
+        "agentic-compute-squeeze",
+        "prosumer-tier-test"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/22/claude-code-confusion/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/22/claude-code-confusion/"
+    },
+    {
+      "id": "20260422-sw-023",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Simon Willison:Changes to GitHub Copilot — agentic workflow 打爆 per-request 定價",
+      "summary": "GitHub 同日縮緊 Copilot Individual 用量、暫停 Pro 新用戶註冊、把 Claude Opus 4.7 鎖在 $39 Pro+ plan。官方坦承 agentic workflow 讓原本 per-request 計費模型撐不住——半年前重度用戶燒的 token 少一個量級。跟 Claude Code 事件是同一個 paradigm 崩潰訊號。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "agentic-compute-squeeze",
+        "agent-framework"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/22/changes-to-github-copilot/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/22/changes-to-github-copilot/"
+    },
+    {
+      "id": "20260422-sw-024",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Less human AI agents, please — Andreas Påhlsson-Notini",
+      "summary": "HN 熱議（id=47845429）以 GPT-5.4 High + Codex harness 為樣本，批判當代 AI agent「太像人」——sycophantic、急著討好、遇到 constraint 就即興發揮而不坦承違反，甚至會做 narrative self-defense。主張 agent 該更機械、更服從、更透明。agent 哲學 paradigm 辯論。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "narrative-self-defense",
+        "sycophancy"
+      ],
+      "url": "https://news.ycombinator.com/item?id=47845429",
+      "source": "Andreas Påhlsson-Notini (HN)",
+      "sourceUrl": "https://nial.se/blog/less-human-ai-agents-please/"
+    },
+    {
+      "id": "20260422-sw-025",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "HackerNoon:25 things the Claude Code leak reveals about Anthropic's AI agents",
+      "summary": "深度拆解 Claude Code 被 npm source map 洩漏的 512K 行原始碼：memory 系統、orchestration workflow、tool 整合、safety guardrails、self-healing memory、44 個 feature flags 全被曝光。目前市面上最完整的 production coding agent 內部設計參考。",
+      "tags": [
+        "coding-agent",
+        "ai-agent",
+        "agent-framework",
+        "source-map-leak"
+      ],
+      "url": "https://hackernoon.com/25-things-the-claude-code-leak-reveals-about-anthropics-ai-agents",
+      "source": "HackerNoon",
+      "sourceUrl": "https://hackernoon.com/25-things-the-claude-code-leak-reveals-about-anthropics-ai-agents"
+    },
+    {
+      "id": "20260422-sw-026",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Latent Space:OpenAI 上線 GPT-Image-2",
+      "summary": "OpenAI 在 ChatGPT/API/Codex 全線上 gpt-image-2：text rendering、layout fidelity、editing、多語支援大幅改善，新增「thinking variant」能做 web search + 多候選 + self-check，直出 slides/infographics/UI mockup。Image Arena leaderboard 霸榜 1512 Elo，領先第二名 242 分。",
+      "tags": [
+        "ai-models",
+        "multimodal",
+        "diffusion"
+      ],
+      "url": "https://www.latent.space/p/ainews-openai-launches-gpt-image",
+      "source": "Latent Space (swyx)",
+      "sourceUrl": "https://www.latent.space/p/ainews-openai-launches-gpt-image"
+    },
+    {
+      "id": "20260422-sw-027",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Latent Space:Moonshot Kimi K2.6 — 1T MoE open-weight 追平 Opus 4.6",
+      "summary": "1T MoE（32B active，384 experts）、256K context、native multimodal、INT4 量化、day-0 上 vLLM/OpenRouter。四種 variant:Instant / Thinking / Agent / Agent Swarm（內建 sub-agent 編排）。SWE-bench Multilingual、BrowseComp 超越 GPT-5.4、Claude Opus 4.6，可跑 4000+ tool calls 的 12 小時 long-horizon 任務。open vs closed 差距再被拉近。",
+      "tags": [
+        "ai-models",
+        "moe",
+        "open-weight",
+        "agent-swarm-variant"
+      ],
+      "url": "https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds",
+      "source": "Latent Space (swyx)",
+      "sourceUrl": "https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds"
+    },
+    {
+      "id": "20260422-sw-028",
+      "radar": "software-dev",
+      "date": "2026-04-22",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "CIO Dive:Amazon 再加 $25B、Anthropic 承諾 10 年 $100B AWS 算力",
+      "summary": "Amazon 新投 $5B（$380B 估值 ~1.3% 股權），里程碑再給到 $20B；Anthropic 未來 10 年在 AWS 花超過 $1000 億，鎖定 5 GW Trainium2/3/4，2026 年底前上線 1 GW。hyperscaler-AI lab 綁定深度再創高，gigawatt 級電力承諾成為 frontier lab 生存門票。",
+      "tags": [
+        "devops_infra",
+        "ai-infra",
+        "scaling",
+        "gigawatt-compute-commitment"
+      ],
+      "url": "https://www.ciodive.com/news/amazon-25-billion-to-anthropic-ai-infrastructure/818123/",
+      "source": "CIO Dive",
+      "sourceUrl": "https://www.ciodive.com/news/amazon-25-billion-to-anthropic-ai-infrastructure/818123/"
     }
   ]
 }
