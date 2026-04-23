@@ -23229,6 +23229,136 @@
       "price": null,
       "vram": "quantize-ok",
       "license": "未確認"
+    },
+    {
+      "id": "20260423-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic — Harness Design for Long-Running Application Development",
+      "summary": "Anthropic 公開 long-running coding agent 的 harness 架構：拆成 Planner (spec expansion) / Generator (React+Vite+FastAPI sprint impl) / Evaluator (Playwright MCP critique) 三個專職 agent。迭代 5–15 次最長 4 小時，論證『做事的 agent ≠ 評分的 agent』是 multi-agent 核心槓桿。",
+      "tags": [
+        "paradigm-shift",
+        "multi-agent",
+        "harness-engineering",
+        "planner-generator-evaluator"
+      ],
+      "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare — Introducing Agent Memory",
+      "summary": "Cloudflare Agent Memory private beta：把 agent 對話的 facts / events / instructions / tasks 抽出去重存下，之後只把需要的條目注入 context。支援 ingest/recall/forget/list REST API，一整個 team 可共享同一個 memory profile — memory 正式變成平台 primitive。",
+      "tags": [
+        "paradigm-shift",
+        "agent-memory",
+        "memory-platform",
+        "ai-agent"
+      ],
+      "url": "https://blog.cloudflare.com/introducing-agent-memory/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/introducing-agent-memory/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Project Think — durable AI agent runtime",
+      "summary": "Agents SDK 下一代：durable execution、sub-agents、sandboxed code execution、persistent sessions 四個新 primitive。把 agent 從 stateless orchestration 拉進 actor-based 持久化架構；Cloudflare 把『agent 是長跑 actor』寫進平台定義。",
+      "tags": [
+        "paradigm-shift",
+        "durable-execution",
+        "actor-model",
+        "ai-agent",
+        "architecture"
+      ],
+      "url": "https://blog.cloudflare.com/project-think/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/project-think/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Gergely Orosz — The Impact of AI on Software Engineers in 2026",
+      "summary": "Pragmatic Engineer 調查：95% 工程師每週用 AI、55% 規律用 agent、staff+ 63.5%。AI 加速效果不均 —『Shippers』最受益，同時累積 tech debt 最快。Claude Code 8 個月從零到第一；大公司仍偏好 GitHub Copilot。新議題：usage cap + 成本焦慮。",
+      "tags": [
+        "ai-adoption",
+        "cost-anxiety",
+        "shipper-advantage",
+        "ai-coding",
+        "copilot"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler Fragments — Thoughtworks Radar Vol 34",
+      "summary": "Vol 34 共 118 blips，主題被 AI 全面覆蓋。反直覺的反作用力：AI 迫使團隊回去重看基本功 — pair programming、zero trust、mutation testing、DORA metrics 全部被重新點名。AI 加速度愈高，工程紀律要求愈嚴不是愈鬆。",
+      "tags": [
+        "foundations-revival",
+        "mutation-testing",
+        "pair-programming",
+        "dora",
+        "architecture"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-04-21.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-04-21.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Dynamic Workers — V8 isolate sandboxing 比 container 快 100×",
+      "summary": "Dynamic Workers open beta：V8 isolate sandbox，ms 級啟動、幾 MB 記憶體，比 container 快 100× 省 100×。搭 MPK 硬體隔離 + Spectre mitigation + Cloudflare 第二層 sandbox，為 AI 生成不可信 code 設計。Sandboxes (完整 Linux) 同日 GA，兩套形成 agent 雙軌執行架構。",
+      "tags": [
+        "paradigm-shift",
+        "v8-isolate",
+        "sandboxing",
+        "edge-runtime",
+        "devops-infra"
+      ],
+      "url": "https://blog.cloudflare.com/dynamic-workers/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/dynamic-workers/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
