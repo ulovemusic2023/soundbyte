@@ -23359,6 +23359,107 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260423-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-23",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly — AI 不是「一個」物種，是一群外星智慧",
+      "summary": "未來不會只有一個通用 AI，而是多種「外星」物種——LLM、自駕車模型、3D 模擬模型，各有各的怪癖與強項。Kelly 認為 AI 真正的力量不在回答問題，而在 spatial intelligence——模擬、生成、管理 3D 世界的能力。LLM 還缺兩個關鍵能力才能取代人類：對真實世界的扎實掌握，以及在工作中持續學習。",
+      "tags": [
+        "ai-future",
+        "alien-intelligence",
+        "mental-model"
+      ],
+      "url": "https://kk.org/thetechnium/artificial-intelligences-so-far/",
+      "source": "Kevin Kelly • The Technium",
+      "sourceUrl": "https://kk.org/thetechnium/artificial-intelligences-so-far/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-23",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Ben Thompson — Apple 50 年的整合，正是它的下一個生死關",
+      "summary": "Apple 50 年來唯一的 moat 是 hardware + software 的深度整合。Ben Thompson 的核心觀點：如果 Apple 因為 AI 而輸，不會是因為它沒做模型，而是因為「整合的接點」改變了——可能轉移到雲端、agent、或新的人機介面。Apple 用每年 10 億美元授權 Gemini，比自建 1000 億美元 AI 工廠划算太多——但風險是把未來定義權交給別人。",
+      "tags": [
+        "integration",
+        "moat",
+        "apple",
+        "strategy"
+      ],
+      "url": "https://stratechery.com/2026/apples-50-years-of-integration/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/apples-50-years-of-integration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-23",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Reason — Sam Altman 的「新 New Deal」可能只是 regulatory nihilism",
+      "summary": "OpenAI 4 月發 13 頁政策白皮書〈Industrial Policy for the Intelligence Age〉，提出 public wealth fund、robot tax、4 天工作週。Reason 的批判性分析指出：這些「進步派」政策實際上是 OpenAI 為自己鋪路——藉「超級智能太大太重要」之名，要求政府不要管 AI 的細節。值得提防：當 AI CEO 開始講社會契約，通常代表他要的是不被監管的自由。",
+      "tags": [
+        "ai-policy",
+        "industrial-policy",
+        "regulation"
+      ],
+      "url": "https://reason.com/2026/04/08/sam-altmans-not-so-new-deal-for-superintelligent-ai/",
+      "source": "Reason / Sam Altman",
+      "sourceUrl": "https://reason.com/2026/04/08/sam-altmans-not-so-new-deal-for-superintelligent-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-23",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Dan Koe — 2026 真的不一樣了：找到「不會被 AI 取代的組合」",
+      "summary": "Koe 指出 2026 的核心轉變：工具變強之後，能找到實際應用的人開始拉開差距。對 solo founder/creator 的 playbook：不要再問「AI 會不會取代我」，而是找出你的 taste + judgment + 看問題的方式 —— 那個獨特組合就是你的護城河。AI 加速所有可被定義的工作，但無法替代「你怎麼選擇做什麼」。",
+      "tags": [
+        "ai-leverage",
+        "creator-economy",
+        "solo-founder"
+      ],
+      "url": "https://letters.thedankoe.com/p/something-is-different-about-2026",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/something-is-different-about-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-23",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Andrej Karpathy — 從 80% 手動到 80% agent 寫 code",
+      "summary": "「Given the latest lift in LLM coding capability, I rapidly went from about 80% manual+autocomplete coding and 20% agents in November to 80% agent coding and 20% edits+touchups.」從 80% 手動寫到 80% agent 寫，只花了幾個月——這個切換速度本身就是訊號。",
+      "tags": [
+        "agentic-coding",
+        "vibe-coding",
+        "ai-leverage"
+      ],
+      "url": "https://x.com/karpathy/status/2015883857489522876",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2015883857489522876",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
