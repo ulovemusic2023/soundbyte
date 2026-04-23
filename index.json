@@ -23570,6 +23570,175 @@
       "price": null,
       "vram": "local-ready",
       "license": "未確認"
+    },
+    {
+      "id": "20260423-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Google 推 Gemini Enterprise Agent Platform，把整個 agent control plane 一次端出",
+      "summary": "Cloud Next 2026 Day 1：Vertex AI 之上的整合層，把 Agent Studio + Agent Registry + A2A v1.2 (signed agent cards) + Agent Identity + Agent Gateway + Agent Observability 全綁在一起。A2A 已有 150 家組織 production。OpenAI/Anthropic 之外第三條 agent stack 路線。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agent-control-plane",
+        "a2a",
+        "mcp"
+      ],
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "source": "Google Cloud Blog",
+      "sourceUrl": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI GPT-5.2-Codex — 為 agentic coding 重新優化的 frontier model",
+      "summary": "4/22 釋出，在 SWE-Bench Pro 與 Terminal-Bench 2.0 拿下 SOTA。重點是 long-horizon work 的 native context compaction、reliable tool calling、Windows 環境改善、cybersecurity 能力大躍進。已在 Codex 全 surface 上線給 paid ChatGPT。Anthropic Claude Code 直接的對手出招。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "ai-software-engineering",
+        "swe-bench"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-2-codex/",
+      "source": "SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/04/22/openai-subscribers-get-new-workspace-agents-automate-complex-tasks-across-teams/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Workspace Agents in ChatGPT — Codex 動力的「永遠在線」團隊 agent",
+      "summary": "4/22 推出，給 Business / Enterprise / Edu / Teachers。團隊可建共享 agent，由 Codex 驅動跑長時段 workflow（產報表、寫 code、回訊息），跑在 cloud 即使你下線也繼續。免費到 5/6 後改 credit-based。從 chatbot → team automation platform。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agentic",
+        "always-on-agent"
+      ],
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "source": "9to5Mac",
+      "sourceUrl": "https://9to5mac.com/2026/04/22/openai-updates-chatgpt-with-codex-powered-workspace-agents-for-teams/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Google 第八代 TPU：第一次把 training / inference 拆兩顆晶片",
+      "summary": "TPU 8t (training): 9,600 chips/superpod、2 PB shared HBM、3x Ironwood 算力、+2x perf/Watt。TPU 8i (inference): Boardfly topology 直連 1,152 chips/pod、3x on-chip SRAM 把 KV cache 整個塞進 silicon。兩顆都跑在 Google 自家 Axion ARM CPU host 上。agentic 時代硬體分工成形。",
+      "tags": [
+        "paradigm-shift",
+        "ai-models",
+        "devops-infra",
+        "training-inference-split"
+      ],
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google Deep Research Max 上 Gemini 3.1 Pro，研究 agent 進入 long-horizon 階段",
+      "summary": "4/21 推出兩個版本：Deep Research 重速度與成本，Deep Research Max 用 extended test-time compute 跑非同步背景研究。第一次在 Gemini API 內 native 產 HTML chart / Nano Banana 視覺化、支援 MCP 接外部 source。research agent 變成可丟到背景跑一整天的東西。",
+      "tags": [
+        "ai-agent",
+        "research-agent",
+        "mcp",
+        "multimodal"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Microsoft 365 E7 Frontier Suite：第一個內建 Agent 365 control plane 的企業套餐",
+      "summary": "4/21 預告、5/1 出貨。把 Microsoft 365 E5 + Microsoft Entra Suite + Microsoft 365 Copilot + Microsoft Agent 365 (agent governance / scaling control plane) 打包。Agent 365 跟 Google Agent Registry、AWS Agent Registry 對標，企業 agent 治理戰開打。",
+      "tags": [
+        "ai-agent",
+        "agent-365",
+        "agent-governance",
+        "devops-infra"
+      ],
+      "url": "https://blogs.microsoft.com/blog/2026/04/21/accelerating-frontier-transformation-with-microsoft-partners/",
+      "source": "Microsoft Blog",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/04/21/accelerating-frontier-transformation-with-microsoft-partners/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Simon Willison: Qwen3.6-27B 把 flagship-level coding 塞進 27B dense model",
+      "summary": "4/22 評測：Qwen3.6-27B（不是 MoE！是 dense）在 coding benchmark 直追 Claude/GPT 系列。對 local-first AI 與 Apple Silicon 上跑 frontier-class coding agent 是大利多 — 不需要 H100 cluster，一台 Mac Studio 就能 self-host。",
+      "tags": [
+        "ai-models",
+        "local-first-ai",
+        "coding-agent",
+        "dense-model"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/22/qwen36-27b/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/22/qwen36-27b/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260423-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "ServiceNow + Google Cloud：跨平台 AI agent 互通跑企業營運",
+      "summary": "4/22 公告：用 A2A 協定讓 ServiceNow Now Assist agent 跟 Gemini Enterprise agent 互相發現、委派任務。ITSM / HR / customer service 領域開始出現「跨廠 agent fabric」實作 — 不再被單一 vendor 鎖死。",
+      "tags": [
+        "ai-agent",
+        "a2a",
+        "agent-fabric",
+        "enterprise-agent"
+      ],
+      "url": "https://www.googlecloudpresscorner.com/2026-04-22-ServiceNow-and-Google-Cloud-Unite-AI-Agents-for-Autonomous-Enterprise-Operations",
+      "source": "Google Cloud Press",
+      "sourceUrl": "https://www.googlecloudpresscorner.com/2026-04-22-ServiceNow-and-Google-Cloud-Unite-AI-Agents-for-Autonomous-Enterprise-Operations",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
