@@ -23008,6 +23008,227 @@
       "url": "https://www.ciodive.com/news/amazon-25-billion-to-anthropic-ai-infrastructure/818123/",
       "source": "CIO Dive",
       "sourceUrl": "https://www.ciodive.com/news/amazon-25-billion-to-anthropic-ai-infrastructure/818123/"
+    },
+    {
+      "id": "20260423-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FranckyB/Voice-Clone-Studio v1.12.5",
+      "summary": "模組化 Gradio 平台（2026-04-08 更新），整合 Qwen3-TTS、VibeVoice、Fish Speech S2 Pro 4B、Chatterbox、LuxTTS。支援 voice cloning、多人對話（最長 90 分鐘）、speech-to-speech VC、VibeVoice LoRA 訓練、MMAudio 音效生成。一個 UI 打通 SVC/TTS 全流程。",
+      "tags": [
+        "svc_voice",
+        "tts_speech"
+      ],
+      "url": "https://github.com/FranckyB/Voice-Clone-Studio",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260423-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "JackismyShephard/ultimate-rvc",
+      "summary": "RVC 系全家桶（2026-04-01 更新）：AICoverGen 升級版，加 FCPE pitch extraction、多種 embedder、TTS via RVC、train 自己的 voice model、Gradio 5 介面、PyPI 包可 pip install。做歌手 cover 直接上手。",
+      "tags": [
+        "svc_voice",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/JackismyShephard/ultimate-rvc",
+      "source": "GitHub Topics (SVC)",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260423-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "abus-aikorea/voice-pro",
+      "summary": "Gradio WebUI 給 creator 用：核心是 zero-shot voice cloning + multi-engine TTS。輕量好部署，做 demo / 內部工具直接拿。",
+      "tags": [
+        "tts_speech",
+        "svc_voice"
+      ],
+      "url": "https://github.com/abus-aikorea/voice-pro",
+      "source": "GitHub Topics (voice-cloning)",
+      "sourceUrl": "https://github.com/topics/voice-cloning",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260423-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "KoljaB/RealtimeTTS v0.6.0",
+      "summary": "2026-03-28 釋出。支援 20+ TTS engine（Coqui / Piper / StyleTTS2 / Kokoro / Parler 本地 + OpenAI/ElevenLabs/MiniMax 雲端），streaming 輸入，文字還沒送完就開始播。LLM chatbot / voice agent 的 TTS 層標配。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://github.com/KoljaB/RealtimeTTS",
+      "source": "GitHub Topics (TTS)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260423-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ollama/ollama v0.21.1",
+      "summary": "2026-04-22 釋出。整合 Kimi CLI（K2.6 model）、MLX 透過 fused sampling 優化效能、修 model picker 跟 structured outputs。Apple Silicon 跟 K2 系列玩家直接吃。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.21.1",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260423-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8892",
+      "summary": "2026-04-22 釋出。WebGPU async tensor + event API，GPU compute 可以非同步；前一版加 fused RMS norm + multiplication kernel。WebGPU 後端正在補齊到 production。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8892",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260423-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Soul-AILab/SoulX-Singer",
+      "summary": "2026-02-06 釋出推論代碼。Zero-shot SVS：未見過的歌手也能合成歌聲，支援 F0（旋律）+ MIDI（樂譜）控制。AAAI 2026 同期還有 HQ-SVC，zero-shot SVC 賽道正在 ramp up。",
+      "tags": [
+        "svc_voice"
+      ],
+      "url": "https://github.com/Soul-AILab/SoulX-Singer",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/Soul-AILab/SoulX-Singer",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260423-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DrewThomasson/ebook2audiobook",
+      "summary": "電子書直接轉有聲書，1158+ 語言、可 voice clone。後端整合多家 TTS，2026-04-22 剛更新。做 podcast / audiobook 流量內容直接用。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://github.com/DrewThomasson/ebook2audiobook",
+      "source": "GitHub Topics (voice-cloning)",
+      "sourceUrl": "https://github.com/topics/voice-cloning",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260423-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Mintplex-Labs/anything-llm v1.7.4",
+      "summary": "no-code agent skill builder 釋出：使用者可以拖拉介面組 agent skill，不用寫 code。RAG + agent 的 self-hosted 一站式平台。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.7.4",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/Mintplex-Labs/anything-llm/releases",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260423-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ayanami0730/arag",
+      "summary": "A-RAG：把 hierarchical retrieval 當工具暴露給 LLM——keyword_search / semantic_search / chunk_read 三件套，給 frontier LLM 自己決定怎麼查。multi-hop QA SOTA。Qwen3-Embedding-0.6B 為預設 embedder。",
+      "tags": [
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/Ayanami0730/arag",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/Ayanami0730/arag",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260423-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NirDiamant/Controllable-RAG-Agent",
+      "summary": "複雜 QA 用的 graph-based RAG 架構，把檢索流程做成 controllable graph，可細部 debug 哪一步壞掉。RAG agent 想升級到「可控」這級可以參考。",
+      "tags": [
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/NirDiamant/Controllable-RAG-Agent",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/NirDiamant/Controllable-RAG-Agent",
+      "price": null,
+      "vram": "local-ready",
+      "license": "未確認"
+    },
+    {
+      "id": "20260423-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "NanoNets/docstrange",
+      "summary": "LLM-powered 文件結構化抽取（PDF / image / table → structured JSON），給 RAG 當 ingestion 前處理用。MAGI 今天精選之一。",
+      "tags": [
+        "ai_devtools",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/NanoNets/docstrange",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "未確認"
     }
   ]
 }
