@@ -23460,6 +23460,116 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260423-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "huggingface/transformers v5.3.0",
+      "summary": "2026-04-22 釋出：EuroBERT（多語 encoder）、VibeVoice ASR（60 分鐘連續、50+ 語言 code-switch）、TimesFM2.5、PP-DocLayoutV2、OlmoHybrid、ModernVBert、Higgs Audio V2（Boson AI 音訊基礎模型）一次打包進 transformers 主線。",
+      "tags": [
+        "tts_speech",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.3.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/transformers/releases/tag/v5.3.0",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260423-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "QwenLM/Qwen3-TTS",
+      "summary": "Alibaba 開源 TTS 系列：0.6B 輕量 + 1.7B 旗艦，支援中英日韓德法俄葡西義 10 種語言，streaming + voice cloning + free-form voice design。本地 1.7B 直接跑。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "source": "GitHub / Qwen",
+      "sourceUrl": "https://github.com/QwenLM/Qwen3-TTS",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260423-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TIGER-AI-Lab/OpenResearcher",
+      "summary": "30B-A3B MoE 深度研究 agent，全離線管線（no search/scrape API、no rate limits）。BrowseComp-Plus 54.8% 壓過 GPT-4.1 / Claude-Opus-4 / Gemini-2.5-Pro / DeepSeek-R1。NVIDIA Nemotron 已採用。",
+      "tags": [
+        "llm_inference",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/TIGER-AI-Lab/OpenResearcher",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260423-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "aiptimizer/TurboOCR",
+      "summary": "2026-04-23 MAGI 收錄：快速 GPU-accelerated OCR server，PDF / 圖片批次結構化抽取的 ingestion 層。License / 模型細節待補。",
+      "tags": [
+        "cv_ocr"
+      ],
+      "url": "https://github.com/aiptimizer/TurboOCR",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "未確認"
+    },
+    {
+      "id": "20260423-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "ThinkInAIXYZ/deepchat",
+      "summary": "開源 multi-LLM chat platform：30+ provider 統一抽象、MCP tool calling + ACP agent integration。多視窗多 tab 像瀏覽器，parallel session。Apache 2.0。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/ThinkInAIXYZ/deepchat",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260423-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-04-23",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "seojoonkim/memkraft",
+      "summary": "MAGI 收錄：bitemporal memory ledger for self-improving AI agents。「事實發生」vs「系統知道」雙時間軸，可追溯「我何時知道這件事」。long-running agent memory 層參考。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/seojoonkim/memkraft",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "未確認"
     }
   ]
 }
