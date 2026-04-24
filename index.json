@@ -23832,6 +23832,107 @@
       "price": null,
       "vram": "agent harness，model-agnostic",
       "license": "未確認"
+    },
+    {
+      "id": "20260424-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "DeepMind Aletheia 解 6/10 題 FirstProof 研究級數學難題",
+      "summary": "Google DeepMind 推出基於 Gemini 3 Deep Think 的 Aletheia，多 agent 框架拆成 Generator / Verifier / Reviser 三角色，能自動用 Google Search 驗證概念、拒絕 hallucination 直接輸出「No solution found」。IMO-ProofBench 達 91.9%，6 題解答獲人類專家評為「可發表（小幅修訂）」。",
+      "tags": [
+        "ai_agent",
+        "ai_models",
+        "multi-agent",
+        "paradigm-shift"
+      ],
+      "url": "https://deepmind.google/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/deepmind-aletheia-agentic-math/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Mesh：專為 AI agent 設計的私有網路 fabric",
+      "summary": "2026/4/14 發表。把 laptop、辦公硬體、multi-cloud（AWS/GCP）接成單一加密網格，跳過傳統 VPN 的複雜度。每個 agent 一個 identity，security team 可對 agent 能存取的資源做細粒度 policy。與 Workers / Workers VPC / Agents SDK 整合。",
+      "tags": [
+        "ai_agent",
+        "architecture",
+        "devops_infra",
+        "identity"
+      ],
+      "url": "https://www.cloudflare.com/agent-mesh/",
+      "source": "Cloudflare Press",
+      "sourceUrl": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-launches-mesh-to-secure-the-ai-agent-lifecycle/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft Foundry Agent Service 推出 Hosted Agents（public preview）",
+      "summary": "每個 agent session 一個獨立 sandbox，帶 persistent filesystem、Entra Agent ID（OBO 代表使用者）、連續 audit trail。計費 2026/4/22 開始：vCPU $0.0994/hr、記憶體 $0.0118/GiB-hr，scale-to-zero。M365/Agent 365 整合讓 agent 直接部署到 Microsoft productivity apps。",
+      "tags": [
+        "ai_agent",
+        "devops_infra",
+        "enterprise"
+      ],
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agents",
+      "source": "Microsoft Foundry Blog",
+      "sourceUrl": "https://devblogs.microsoft.com/foundry/introducing-the-new-hosted-agents-in-foundry-agent-service-secure-scalable-compute-built-for-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SUSE 把 MCP 整進 Linux / Kubernetes 管理",
+      "summary": "2026/4/22 發表，SUSE 整合 Model Context Protocol，讓 agent 能自主管理資料中心與 cloud 裡的 Linux/K8s 環境。產業鏈上游（OS + K8s 發行商）開始把 MCP 當成 agent 和 infra 對話的預設介面，不只工具商在用。",
+      "tags": [
+        "ai_agent",
+        "devops_infra",
+        "mcp"
+      ],
+      "url": "https://www.suse.com/",
+      "source": "SUSE / GlobeNewswire",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/04/22/3278662/0/en/SUSE-and-Industry-Leaders-Deliver-Secure-Agentic-AI-for-Infrastructure-Management.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Photon Spectrum：把 AI agent 一鍵部署到 iMessage / WhatsApp / Telegram",
+      "summary": "2026/4/22，Photon 開源 TypeScript 框架 Spectrum，讓開發者把 AI agent 直接跑在消費端 messaging app，不必每個平台各寫一套 bot。messaging 是 agent 的下一個 surface，不是 web chat。",
+      "tags": [
+        "ai_agent",
+        "typescript"
+      ],
+      "url": "https://photon.dev/",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/04/22/photon-releases-spectrum-an-open-source-typescript-framework-that-deploys-ai-agents-directly-to-imessage-whatsapp-and-telegram/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
