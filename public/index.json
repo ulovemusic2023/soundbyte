@@ -23933,6 +23933,157 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260424-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ResembleAI/chatterbox-turbo",
+      "summary": "350M distilled TTS，diffusion decoder 從 10 步壓到 1 步，GPU 6× realtime。新增 paralinguistic tags（[cough]/[laugh]/[chuckle]），零樣本 voice cloning + Perth watermark 保留。",
+      "tags": [
+        "tts_speech",
+        "svc_voice"
+      ],
+      "url": "https://huggingface.co/ResembleAI/chatterbox-turbo",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/ResembleAI/chatterbox-turbo",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260424-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ollama v0.21.2",
+      "summary": "04-23 新版：整合 Ollama web search plugin、改善 OpenClaw onboarding 穩定度。v0.21.1 併入 Kimi CLI（kimi-k2.6:cloud）與 MLX logprobs，整個 0.21 線對本地 agentic workflow 升級顯著。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.21.2",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.21.2",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260424-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "unsloth/LTX-2.3-GGUF",
+      "summary": "Lightricks LTX-2.3（22B, 3/5 釋出 Apache-2.0）的 Unsloth Dynamic 2.0 量化版，一次生成 4K@50fps video + 同步 audio。Q4_K_M 約 14.3GB 塞進 5070 Ti 16GB。開源 video 模型 Artificial Analysis 排行第一。",
+      "tags": [
+        "image_gen",
+        "audio_music_ai"
+      ],
+      "url": "https://huggingface.co/unsloth/LTX-2.3-GGUF",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/unsloth/LTX-2.3-GGUF",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "LTX-2 Community License"
+    },
+    {
+      "id": "20260424-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8914",
+      "summary": "今日多 commit：b8911 Hexagon profiling、b8912 清理 sampling、b8913 修 rms-fuse shader buffer aliasing、b8914 新增 SOLVE_TRI op + HVX f32。延續昨天修好的 CVE-2026-21869。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8914",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8914",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260424-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ID-LoRA/ID-LoRA-LTX2.3-ComfyUI",
+      "summary": "LTX-2.3 的 ComfyUI 身份轉移 node，支援 reference audio 作為 speaker identity → 影片+同步語音一次輸出。3/24 已併入 upstream ComfyUI（LTXVReferenceAudio node）。",
+      "tags": [
+        "image_gen",
+        "tts_speech"
+      ],
+      "url": "https://github.com/ID-LoRA/ID-LoRA-LTX2.3-ComfyUI",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/ID-LoRA/ID-LoRA-LTX2.3-ComfyUI",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260424-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "aiimagestudio/ComfyUI-AudioX",
+      "summary": "HKUSTAudio/AudioX 的 ComfyUI 封裝，從影片生成 SFX 與 BGM，支援 text-guided audio。v1.0.4 於 2026-03-11 釋出。官方建議 ~16GB VRAM。Foley / music bed 工作流候選。",
+      "tags": [
+        "audio_music_ai",
+        "image_gen"
+      ],
+      "url": "https://github.com/aiimagestudio/ComfyUI-AudioX",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/aiimagestudio/ComfyUI-AudioX",
+      "price": null,
+      "vram": "local-ready",
+      "license": "依原 AudioX (Apache-2.0)"
+    },
+    {
+      "id": "20260424-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "mksglu/context-mode",
+      "summary": "Coding agent 的 context 窗口優化：tool output 在 sandbox subprocess 處理，315KB raw → 5.4KB；SQLite FTS5 紀錄 event，compaction 後靠索引恢復。支援 Claude Code / Cursor / OpenCode / Codex CLI 等 12 平台，session time 從 ~30 分拉到 ~3 小時。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/mksglu/context-mode",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/mksglu/context-mode",
+      "price": null,
+      "vram": "n/a",
+      "license": "MIT"
+    },
+    {
+      "id": "20260424-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Anil-matcha/Open-Generative-AI",
+      "summary": "200+ 模型的 uncensored AI image/video studio（Higgsfield/Freepik/Krea 的開源替代）。50+ txt2img / 55+ img2img / 40+ txt2vid / 60+ img2vid + lip-sync + cinema studio 鏡頭控制，desktop app 走 Muapi.ai gateway。",
+      "tags": [
+        "image_gen",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT"
     }
   ]
 }
