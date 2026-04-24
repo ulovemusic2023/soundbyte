@@ -23739,6 +23739,99 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260424-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tencent-Hunyuan/Hy3-preview",
+      "summary": "騰訊 Hy 團隊昨天直接 open-source Hy3-preview：295B MoE / 21B active，256K context，BF16，192 experts top-8。SWE-bench Verified 74.4%（接近 Claude Opus 4.6 的 80.8%，贏 GLM-5 與 Kimi-K2.5）。從冷啟到開源不到三個月。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/Tencent-Hunyuan/Hy3-preview",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/Tencent-Hunyuan/Hy3-preview",
+      "price": null,
+      "vram": "295B MoE，需要 cloud / multi-GPU",
+      "license": "Tencent Hy Community License"
+    },
+    {
+      "id": "20260424-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8908",
+      "summary": "昨天一連串 build：b8902 加上 LFM2-Audio 的 transcriptions API 支援（本地端到端 ASR 直接在 llama.cpp 跑），b8906 修 Anthropic prefix caching、b8908 補 CVE-2026-21869 heap-overflow。本地推理 stack 又往前一步把音訊吞進來。",
+      "tags": [
+        "llm_inference",
+        "tts_speech"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8908",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8908",
+      "price": null,
+      "vram": "runtime；視 model 而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20260424-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Liquid4All/liquid-audio (LFM2.5-Audio-1.5B)",
+      "summary": "Liquid AI 端到端 audio foundation model，1.5B 跑 LFM2 backbone：interleaved 模式做 real-time speech-to-speech，sequential 模式做 ASR/TTS（4 種預設聲音 US/UK 男女）。Mimi codec 24kHz 輸出，吃 1.5B 在 16GB 上完全 local-ready。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/Liquid4All/liquid-audio",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://github.com/Liquid4All/liquid-audio",
+      "price": null,
+      "vram": "1.5B params，<2GB",
+      "license": "LFM Open License v1.0"
+    },
+    {
+      "id": "20260424-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "freds0/free-svc",
+      "summary": "ICASSP 2025 — zero-shot 跨語言 SVC，用 ECAPA2 speaker encoder + RMVPE pitch + 改良 VITS 架構（SPIN clustering），訓練涵蓋 7+ 語言（en/zh/jp）。preliminary release 主要在 speech 上微調，singing-only 版規劃中，給跨語言 SVC 實驗一個新基線。",
+      "tags": [
+        "svc_voice"
+      ],
+      "url": "https://github.com/freds0/free-svc",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/freds0/free-svc",
+      "price": null,
+      "vram": "VITS-class，<8GB",
+      "license": "MIT (code) / CC BY-NC-SA (weights)"
+    },
+    {
+      "id": "20260424-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "huggingface/ml-intern",
+      "summary": "HF 官方丟出『open-source ML engineer』：能讀 paper、train model、ship 到 HF。最高 300 iterations 的 agent loop，整合 HF docs/repos/datasets/GitHub code search/sandbox，自動 context compaction at 170k token，還有 doom-loop 偵測。litellm + Anthropic models。",
+      "tags": [
+        "ai_devtools",
+        "llm_training"
+      ],
+      "url": "https://github.com/huggingface/ml-intern",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/huggingface/ml-intern",
+      "price": null,
+      "vram": "agent harness，model-agnostic",
+      "license": "未確認"
     }
   ]
 }
