@@ -23935,6 +23935,134 @@
       "license": null
     },
     {
+      "id": "20260424-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI GPT-5.5 發佈：自 GPT-4.5 以來首個完整重訓的 base model",
+      "summary": "OpenAI 於 2026/4/23 放出 GPT-5.5（代號 Spud），Terminal-Bench 2.0 82.7%、GDPval 44 個職業 84.9%、Pro 版 BrowseComp 90.1% 擊敗 Gemini 3.1 Pro。1M context、$5/$30 per Mtok，已同步進入 ChatGPT 與 Codex，跑在 NVIDIA GB200 NVL72 rack-scale 上；agentic coding 和 computer use 是主打。首次 fully-retrained base = frontier lab 用 scaling 再打一輪的宣示。",
+      "tags": [
+        "ai_models",
+        "ai_agent",
+        "agentic",
+        "terminal-bench",
+        "paradigm-shift"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Google Gemini Enterprise Agent Platform：Vertex AI 改造成 agent OS",
+      "summary": "Google Cloud Next 2026（4/22-24），Vertex AI 被重新定位為 Gemini Enterprise Agent Platform，一口氣吃下 Agent Studio / Registry / Identity / Gateway / Observability + A2A v1.2 簽名 agent cards。Model Garden 納入 200+ 模型（Gemini 3.1 Pro/Flash Image、Gemma 4、Claude Opus/Sonnet/Haiku、Lyria 3）。Google 同步開 $750M partner fund 和 Microsoft Agent 365、AWS AgentCore 三強 agent control plane 正面對決。",
+      "tags": [
+        "ai_agent",
+        "enterprise",
+        "architecture",
+        "agent-control-plane",
+        "paradigm-shift"
+      ],
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "source": "Google Cloud Blog",
+      "sourceUrl": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI Workspace Agents：Codex 驅動的企業 agent，接手 custom GPTs 棒子",
+      "summary": "ChatGPT 新增 Workspace Agents（2026/4/23 research preview），Codex-powered、cloud-resident、離線也會繼續跑。可接 Slack、Salesforce、Google Drive、Microsoft 365、Notion、Atlassian Rovo；team 共建一個 agent，memory 跨 session 累積。定價 credit-based，2026/5/6 前免費。不是 chatbot 副本，是把 enterprise workflow 整包搬進 agent。",
+      "tags": [
+        "ai_agent",
+        "enterprise",
+        "agent-first-workflow"
+      ],
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "source": "Techstrong.ai",
+      "sourceUrl": "https://techstrong.ai/articles/openai-debuts-workspace-agents-to-extend-chatgpt-into-enterprise-workflows/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Thoughtworks Technology Radar Vol 34：「把 coding agent 綁上 leash」",
+      "summary": "四大主題：(1) agentic 世界怎麼評估技術 (2) 保留原則、放棄 pattern (3) 幫 permission-hungry agent 設防 (4) 把 coding agent 綁緊。核心訊息：AI 讓 code 暴增但累積 cognitive debt 和 semantic diffusion（spec-driven、harness engineering 還沒穩定就被搞亂）；呼籲回歸 pair programming、zero trust、DORA、mutation testing 這些基本功。context engineering 從調參技巧升級為架構議題。",
+      "tags": [
+        "cognitive-debt",
+        "context-engineering",
+        "coding-agent",
+        "playbook",
+        "architecture"
+      ],
+      "url": "https://www.thoughtworks.com/radar",
+      "source": "Thoughtworks",
+      "sourceUrl": "https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "TrendMicro 解剖 Vercel × Context.ai：AI 工具 OAuth 是新 supply-chain 入口",
+      "summary": "TrendMicro 完整 post-mortem：Lumma Stealer 2 月進 Context.ai → 偷 Google Workspace OAuth token → 透過 Vercel 員工個人帳號 pivot 進企業 Google Workspace → 讀到非 sensitive env vars（沒加密）→ 外洩。核心洞察：傳統 perimeter 看不到 3rd-party AI 工具 OAuth 的橫向信任；env var 分級策略沒跟上 agent 時代。AI tool OAuth 從便利變成 attack surface。",
+      "tags": [
+        "security",
+        "oauth-lateral-movement",
+        "ai-supply-chain",
+        "paradigm-shift"
+      ],
+      "url": "https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html",
+      "source": "Trend Micro Research",
+      "sourceUrl": "https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260424-sw-011",
+      "radar": "software-dev",
+      "date": "2026-04-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "LangChain Polly GA：第一個「會做 agent engineer 工作」的平台級 AI agent",
+      "summary": "Polly 原本只在 LangSmith traces 分析用，現在 GA 到整個 LangSmith（chat / Deep Agents / sessions / deployments），會主動排查失敗 traces、改 prompt、寫 code、建 eval、部署 agent。Harrison Chase 定位：不是 copilot 也不是 chatbot，是 agent-engineer-as-platform-primitive。把『建 agent 的 agent』從 demo 變成產品。",
+      "tags": [
+        "ai_agent",
+        "agent-framework",
+        "langsmith",
+        "meta-agent"
+      ],
+      "url": "https://blog.langchain.com/polly-langsmith-ga/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/polly-langsmith-ga/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260424-ai-006",
       "radar": "ai-infra",
       "date": "2026-04-24",
