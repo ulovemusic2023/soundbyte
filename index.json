@@ -24212,6 +24212,136 @@
       "price": null,
       "vram": "cloud-only",
       "license": "MIT"
+    },
+    {
+      "id": "20260425-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp Gemma 4 audio conformer encoder (PR #21421)",
+      "summary": "把 Gemma 4 e2b/e4b 的 audio conformer encoder 接進 mtmd 多模態管線。配合早就 merge 的 Qwen3-Omni / Qwen3-ASR audio 支援，本地 multimodal inference 從『實驗性』正式變『預設可用』──同一支 llama-cli / llama-server 就能餵語音、最長 30 秒，跑在 5070 Ti 上完全沒問題。",
+      "tags": [
+        "llm_inference",
+        "tts_speech"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/21421",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/21421",
+      "price": null,
+      "vram": "Gemma 4 e2b/e4b 走 GGUF 量化後 <8GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260425-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "microsoft/markitdown",
+      "summary": "微軟官方的 PDF / Office / HTML / images / audio → Markdown 轉換器，專門喂進 LLM pipeline。本週衝到 114k 星（+7k），跟 Skills/RAG ecosystem 一起爆。LLM 文件預處理的事實標準正在成形，而且是微軟自己背書 — 取代雜七雜八的 langchain unstructured loader。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/microsoft/markitdown",
+      "source": "GitHub Trending Weekly",
+      "sourceUrl": "https://github.com/microsoft/markitdown",
+      "price": null,
+      "vram": "n/a",
+      "license": "MIT"
+    },
+    {
+      "id": "20260425-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "forrestchang/andrej-karpathy-skills",
+      "summary": "本週 +44k 星的瘋狂上漲，一個 CLAUDE.md 檔講 Karpathy 觀察到的 LLM coding 四大壞習慣（先想再寫、選簡單、外科式 edit、有驗證迴圈的 goal-driven）。社群整理、不是 Karpathy 本人，但已成 Claude Code / Cursor 用戶的 base prompt 標配。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "source": "GitHub Trending Weekly",
+      "sourceUrl": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "price": null,
+      "vram": "n/a",
+      "license": "MIT"
+    },
+    {
+      "id": "20260425-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "thedotmack/claude-mem",
+      "summary": "Claude Code 的跨 session 記憶 plugin：5 個 lifecycle hooks 攔下對話與工具操作，AI 壓縮成語意摘要存進 SQLite + vector embedding，新 session 開起來自動把相關 context 注回。Hybrid full-text + semantic 搜尋走 Chroma，progressive disclosure 省 token。npx claude-mem install 就裝好。",
+      "tags": [
+        "ai_devtools",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/thedotmack/claude-mem",
+      "source": "GitHub Trending Weekly",
+      "sourceUrl": "https://github.com/thedotmack/claude-mem",
+      "price": null,
+      "vram": "n/a",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260425-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "multica-ai/multica",
+      "summary": "把 coding agent 當 teammate 在管：task 派發、技能累積、跨 agent 溝通的 framework。本週 +7k 星衝到 18.4k，搭配 Skills 生態 / claude-mem 一起紅。對小團隊用 Claude Code + Codex + Cursor 多 agent 並行的工作流是新基礎設施。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/multica-ai/multica",
+      "source": "GitHub Trending Weekly",
+      "sourceUrl": "https://github.com/multica-ai/multica",
+      "price": null,
+      "vram": "n/a",
+      "license": "未確認"
+    },
+    {
+      "id": "20260425-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "EvoMap/evolver (GEP)",
+      "summary": "Genome Evolution Protocol — 把 agent 的 skills / strategies 視為可變 genome，用演化壓力選最有效組合。掃 runtime log 找錯誤 pattern → 選 Genes/Capsules → 發出 GEP prompt 引導下一輪演化。重點：不會自動改 code，只生 protocol-bound prompt 給 host runtime / 人類執行。本週 +4k 星。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/EvoMap/evolver",
+      "source": "GitHub Trending Weekly",
+      "sourceUrl": "https://github.com/EvoMap/evolver",
+      "price": null,
+      "vram": "n/a",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260425-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "algorithmicsuperintelligence/openevolve",
+      "summary": "DeepMind AlphaEvolve 的開源實作 — 用 LLM 當演化引擎自動發現演算法。給定問題 + evaluator，跑 LLM-driven evolutionary loop 找解。對 algorithm discovery / 數學問題 / kernel optimization 是新一條 research vector。AlphaEvolve 原 paper 的開源復現派系正在成形。",
+      "tags": [
+        "ai_devtools",
+        "llm_training"
+      ],
+      "url": "https://github.com/algorithmicsuperintelligence/openevolve",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/algorithmicsuperintelligence/openevolve",
+      "price": null,
+      "vram": "視 LLM backend",
+      "license": "Apache-2.0"
     }
   ]
 }
