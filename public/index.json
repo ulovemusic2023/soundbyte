@@ -24342,6 +24342,131 @@
       "price": null,
       "vram": "視 LLM backend",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260425-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale",
+      "summary": "DeepMind 推出 Decoupled DiLoCo，把 LLM 訓練拆成多座『compute islands』非同步連接。在 internet-scale 頻寬下訓練、能容忍晶片故障、還能混用 TPU v5p 與 v6e 等不同世代硬體。frontier scaling 的 distributed training 範式轉移。",
+      "tags": [
+        "paradigm-shift",
+        "distributed-systems",
+        "ai-training",
+        "scaling-law"
+      ],
+      "url": "https://deepmind.google/blog/decoupled-diloco/",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/decoupled-diloco/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Microsoft Agent Framework v1.0 — Semantic Kernel + AutoGen 統一",
+      "summary": "Microsoft Agent Framework v1.0 GA（Python + .NET），把 enterprise-grade Semantic Kernel 與 multi-agent orchestration AutoGen 合併成單一開源 SDK + runtime。MS enterprise agent stack 收攏成一個一級開源框架。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agent-framework",
+        "autogen"
+      ],
+      "url": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain & LangGraph Agent Frameworks 抵達 v1.0 里程碑",
+      "summary": "LangGraph v1.0 是 durable agent framework 領域第一個 stable major release。被 Uber/LinkedIn/Klarna 等 production 採用，向後完全相容（langgraph.prebuilt 搬到 langchain.agents）。production-ready agent infra 從此有 1.0 標尺。",
+      "tags": [
+        "ai-agent",
+        "langchain",
+        "langgraph",
+        "agent-framework"
+      ],
+      "url": "https://blog.langchain.com/langchain-langgraph-1dot0/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/langchain-langgraph-1dot0/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison: llm-openai-via-codex — 把 Codex CLI 認證接到 LLM CLI",
+      "summary": "Simon Willison 釋出新 plugin，hijack Codex CLI 的 OAuth credentials 來呼叫 OpenAI API，省掉 API key 管理。同時上週發布 llm-openrouter 0.6 與 Qwen3.6-27B 評測。個人 AI tooling 走向 hijack-existing-auth + composable CLI。",
+      "tags": [
+        "ai-agent",
+        "llm-cli",
+        "developer-experience",
+        "tooling"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/23/llm-openai-via-codex/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/23/llm-openai-via-codex/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison Weekly: 'It's a big one' — GPT-5.5 + AIE 一週重整",
+      "summary": "Simon 04/24 newsletter 重整本週重點：GPT-5.5 上線、Claude Opus 4.7 完整 SWE-bench、Cursor 3 Agents Window、Cloudflare Agents Week 收尾，多家 lab 進入 'agents-do-everything-else' 階段。比讀十條新聞快。",
+      "tags": [
+        "ai-agent",
+        "weekly-recap",
+        "ai-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/24/weekly/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/24/weekly/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "PyTorch Conference Europe 2026 — Meta 公開 Helion DSL",
+      "summary": "首屆 PyTorch Conference Europe 在巴黎開，超過 600 人。Meta 公布 Helion，Python-embedded DSL 寫快又能 scale 的 ML kernel。Monarch（API to Your Supercomputer）與 CuTeDSL backend for PyTorch Inductor 也公開技術細節。",
+      "tags": [
+        "ai-models",
+        "pytorch",
+        "ml-kernel",
+        "helion-dsl"
+      ],
+      "url": "https://pytorch.org/blog/pytorch-conference-europe-2026-a-landmark-moment-for-open-source-ai-in-paris/",
+      "source": "PyTorch Foundation",
+      "sourceUrl": "https://pytorch.org/blog/pytorch-conference-europe-2026-a-landmark-moment-for-open-source-ai-in-paris/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
