@@ -24344,6 +24344,139 @@
       "license": "Apache-2.0"
     },
     {
+      "id": "20260425-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "boson-ai/higgs-audio (V2.5)",
+      "summary": "Boson AI 的 text-audio foundation model 推到 V2.5：1B params 直接超車自家 V2 (3B)，用 Group Relative Policy Optimization 對齊 + curated Voice Bank dataset 訓練。Llama 3.2 為底，原生支援 zero-shot voice cloning、多語多人對話、emotional prosody、speech + 背景音樂同步生成。8k 星、Apache-2.0，做歌手 demo / podcast / 對白 prototype 都可商用直接拿。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai",
+        "svc_voice"
+      ],
+      "url": "https://github.com/boson-ai/higgs-audio",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/boson-ai/higgs-audio",
+      "price": null,
+      "vram": "1B FP16 ~3GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260425-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "neuphonic/neutts (NeuTTS Air)",
+      "summary": "號稱『世界第一個 super-realistic on-device TTS』的 0.5B Qwen-base 模型：3 秒音檔即時 voice cloning、GGUF 量化過直接跑手機 / 樹莓派、輸出帶 watermark。支援 EN/ES/DE/FR，5.2k 星。對 SoundByte 這種要做即時試聽 / 個人化 voice agent / 邊緣裝置部署的場景是直接可用的選項。",
+      "tags": [
+        "tts_speech",
+        "svc_voice"
+      ],
+      "url": "https://github.com/neuphonic/neutts",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/neuphonic/neutts",
+      "price": null,
+      "vram": "0.5B GGUF <1GB；CPU 都能跑",
+      "license": "Apache-2.0 / NeuTTS Open License 1.0"
+    },
+    {
+      "id": "20260425-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ModelCloud/GPTQModel v6.0.3",
+      "summary": "4/2 釋出 v6.0.3：一次塞進 ParoQuant、GGUF、FP8、EXL3、FOEM (First-Order Error Matters) 五種新量化方法 + PrismML/Bonsai 1-bit 推理支援，ParoQuant/AWQ kernel 也加速。模型支援也擴展到 Gemma4、MiniCPM-O、MiniCPM-V、GLM4 MoE Lite。對自己壓 4-bit/3-bit/1-bit 跑在 5070 Ti 上的人，這是現在 vLLM/SGLang 之外最積極往新格式整合的 toolkit。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/ModelCloud/GPTQModel",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ModelCloud/GPTQModel/releases",
+      "price": null,
+      "vram": "依目標模型",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260425-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "summary": "Qwen3-TTS 系列再下一城：1.7B 參數、12Hz token rate 的 CustomVoice 變體。原 Qwen3-TTS 已支援中英日韓德法俄葡西義 + 多方言；CustomVoice 版針對小資料集 fine-tune 自有 voice 設計，配合先前的 Qwen3-TTS repo 一起組成完整的中文向 TTS 棧。Apache-2.0 路線，比 ElevenLabs API 自由太多。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "price": null,
+      "vram": "1.7B FP16 ~4GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260425-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Kimi K2.6 進入 Ollama library",
+      "summary": "Moonshot Kimi K2.6 Preview（4/13 釋出的 code-focused early access）已 publish 到 Ollama library，`ollama run kimi-k2.6` 即可拉。配合 ollama 0.21 系列開始穩定支援大型 MoE，對想在本地跑 K2.6 做 coding agent / 長 context 任務的人，下載門檻直接降到一行指令。模型本體 >100GB，本地需要 quantize 版本才裝得下 5070 Ti + 64GB RAM 混合 offload。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://ollama.com/library/kimi-k2.6",
+      "source": "Ollama",
+      "sourceUrl": "https://ollama.com/library/kimi-k2.6",
+      "price": null,
+      "vram": "Q4_K_M 約 60GB（GPU+CPU offload）",
+      "license": "Modified MIT (Moonshot)"
+    },
+    {
+      "id": "20260425-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TEN-framework/ten-framework",
+      "summary": "開源 conversational voice AI agent framework：把 ASR / LLM / TTS / 內建 turn-detection / interrupt handling 做成模組化 graph，目標是丟到生產環境跑客服 / 助手 / 即時翻譯。比起單純 Pipecat / LiveKit Agents 多了內建的 transcription tool 和 voice agent template。對想用本地模型（Qwen3-ASR + Higgs Audio V2 + GPT-SoVITS）拼一台 SoundByte 即時對話 demo 的人是不錯的骨架。",
+      "tags": [
+        "tts_speech",
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/TEN-framework/ten-framework",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/TEN-framework/ten-framework",
+      "price": null,
+      "vram": "依模型 backend",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260425-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Tracer-Cloud/opensre",
+      "summary": "今天爬 Trending Python 衝出來的 AI SRE toolkit：runbook-aware reasoning、相關性根因分析、predictive failure detection，evidence 都連回 Grafana / Datadog / Honeycomb。本機 Docker self-host 或 Railway 託管二選一，LLM provider 自由（Claude / OpenAI / Ollama 都接）。對沒專職 SRE 的小團隊，把 incident triage 變成『LLM + 自家 runbook』組合拳，今天 +247 星，總數 3k。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/Tracer-Cloud/opensre",
+      "price": null,
+      "vram": "n/a",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260425-sw-001",
       "radar": "software-dev",
       "date": "2026-04-25",
