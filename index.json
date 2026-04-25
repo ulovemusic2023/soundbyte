@@ -24887,6 +24887,152 @@
       "stars": 266,
       "createdDate": "2026-04-14",
       "license": "MIT"
+    },
+    {
+      "id": "20260425-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "DeepSeek V4 — 1.6T/284B MoE，1M context，frontier-class 但價格腰斬",
+      "summary": "DeepSeek 4/24 開源 V4-Pro (1.6T) + V4-Flash (284B) MoE，1M token context 標配。V4-Flash $0.14/$0.28 per M tokens、V4-Pro $0.145/$3.48，比所有 frontier 模型便宜一個數量級，與 Huawei 晶片緊密整合。reasoning/coding 已逼近 frontier 上界。",
+      "tags": [
+        "paradigm-shift",
+        "mixture-of-experts",
+        "open-weights",
+        "frontier-model",
+        "ai_models"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/24/deepseek-v4/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Tencent Hunyuan Hy3 preview — fast-slow fused MoE，295B/21B，SWE-bench 74.4%",
+      "summary": "騰訊 Hy3 preview 4/24 上線，295B/21B-active + 3.8B MTP，256K context，業界首見「快慢思考融合」MoE。SWE-bench Verified 從 53% → 74.4%，訓練週期 < 3 個月由前 OpenAI 研究員姚順雨主導；CodeBuddy 整合 first-token latency -54%。",
+      "tags": [
+        "paradigm-shift",
+        "mixture-of-experts",
+        "agentic-coding",
+        "fused-fast-slow-MoE",
+        "ai_models"
+      ],
+      "url": "https://huggingface.co/tencent/Hy3-preview",
+      "source": "HuggingFace (Tencent Hy Team)",
+      "sourceUrl": "https://huggingface.co/tencent/Hy3-preview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic April 23 Postmortem — 三個產品 bug 把 Claude Code 智力打掉，全部回滾",
+      "summary": "Anthropic 公開 Claude Code 後驗：3/4 reasoning effort 從 high 降 medium 4/7 回滾；3/26 caching bug 每輪都觸發 thinking 清空 4/10 v2.1.101 修掉；4/16 verbosity 指令砍 coding eval 3% 4/20 v2.1.116 撤。教訓：影響智力變更要更廣 eval + 更長 soak。",
+      "tags": [
+        "harness-engineering",
+        "ai-coding",
+        "post-mortem",
+        "eval-driven-development"
+      ],
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Apple at ICLR 2026 — RNN 大規模訓練 + SSM 改進 + M5 MLX 在地端跑前緣 coding model",
+      "summary": "Apple 在里約 ICLR (4/23-27) 公開：large-scale RNN training、SSM 改進、單張照片生 3D 場景、protein folding。現場在 M5 Max MacBook Pro 用 MLX 在 Xcode 內以 quantized frontier coding model 做 100% 在地端推論。",
+      "tags": [
+        "ai_models",
+        "state-space-model",
+        "mlx",
+        "local-first-ai",
+        "recurrent"
+      ],
+      "url": "https://machinelearning.apple.com/updates/apple-at-iclr-2026",
+      "source": "Apple Machine Learning Research",
+      "sourceUrl": "https://machinelearning.apple.com/updates/apple-at-iclr-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-011",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "DHH — Promoting AI agents：從懷疑到「自網際網路以來最令人興奮」",
+      "summary": "DHH 寫文承認：coding agents 已可控制終端、跑測試、查文件，自主程度足以讓寫 code 變成「跟團隊協作」而不是「被動接受 autocomplete」。Rails 創辦人對 agent-first workflow 的正式背書。",
+      "tags": [
+        "agent-first-workflow",
+        "ai-coding",
+        "paradigm-shift"
+      ],
+      "url": "https://world.hey.com/dhh/promoting-ai-agents-3ee04945",
+      "source": "Hey World (DHH)",
+      "sourceUrl": "https://world.hey.com/dhh/promoting-ai-agents-3ee04945",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-012",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Simon Willison: llm 0.31 release",
+      "summary": "Simon 的 llm CLI 0.31 同步收進 DeepSeek V4 / GPT-5.5 / Hy3 等近期主要 model release。terminal vibe-porting 工作流低成本升級。",
+      "tags": [
+        "llm-tooling",
+        "ai-coding",
+        "cli"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/24/llm/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/24/llm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-sw-013",
+      "radar": "software-dev",
+      "date": "2026-04-25",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Simon Willison — \"The people do not yearn for automation\"",
+      "summary": "連結 Nilay Patel 文章+影片：為什麼大眾對 AI 反感（52% 美國人對 AI 比一年前更焦慮）但 ChatGPT 用量同時破歷史新高。Simon 摘要：公眾不想要被 automate 掉的世界，卻在實際使用上選了 ChatGPT — 兩個現實同時為真。",
+      "tags": [
+        "ai-adoption",
+        "ai-public-perception"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/",
+      "source": "Simon Willison (link blog)",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
