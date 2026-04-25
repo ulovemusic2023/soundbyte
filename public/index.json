@@ -24467,6 +24467,153 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260425-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-25",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Arthur C. Brooks：AI 解決 complicated 問題，leadership 處理 complex 問題",
+      "summary": "Brooks 切兩種問題：complicated（線性、可拆解、可建模）和 complex（人、意義、不可預測）。AI 吃掉 complicated 工作後，leader 真正剩下的工作是「理解人 + 創造意義」——不是後備技能，是新的核心。",
+      "tags": [
+        "leadership",
+        "ai-augmentation",
+        "complex-vs-complicated",
+        "mental-model"
+      ],
+      "url": "https://hbr.org/2026/04/what-ai-cant-do-the-new-job-of-leadership",
+      "source": "Arthur C. Brooks • Harvard Business Review",
+      "sourceUrl": "https://hbr.org/2026/04/what-ai-cant-do-the-new-job-of-leadership",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-25",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "共識決策在 AI 時代是負債，不是美德",
+      "summary": "HBR：多數 leader 同意 AI 會逼組織重整，但很少人願意放棄共識決策。共識慢、會稀釋資訊、把決策推向最不冒險的選項——在資訊比人快、機會視窗以週計的 AI 時代是致命。Bezos 的 disagree-and-commit 不是文化裝飾，是速度設計。",
+      "tags": [
+        "decision-making",
+        "speed",
+        "ai-era",
+        "mental-model"
+      ],
+      "url": "https://hbr.org/2026/04/decision-making-by-consensus-doesnt-work-in-the-ai-era",
+      "source": "Harvard Business Review",
+      "sourceUrl": "https://hbr.org/2026/04/decision-making-by-consensus-doesnt-work-in-the-ai-era",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-25",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Augmentation > Automation：底線 vs 頂線的策略選擇",
+      "summary": "HBR 把 AI 策略拆兩條路：(1) automation = 砍人改善底線；(2) augmentation = 放大每個人能力長頂線。短期 (1) 數字漂亮，長期贏家是 (2)——當對手都把成本壓到地板，唯一差異化剩「你的人能做出別人做不到的」。對小團隊特別重要。",
+      "tags": [
+        "ai-strategy",
+        "augmentation",
+        "competitive-advantage",
+        "operational"
+      ],
+      "url": "https://hbr.org/2026/04/why-companies-that-choose-ai-augmentation-over-automation-may-win-in-the-long-run",
+      "source": "Harvard Business Review",
+      "sourceUrl": "https://hbr.org/2026/04/why-companies-that-choose-ai-augmentation-over-automation-may-win-in-the-long-run",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-25",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Anthropic × Google TPU 大單：算力即護城河",
+      "summary": "Stratechery：Anthropic 跟 Google 簽 TPU 大單背後不是省錢，是 Dario 在解 compute crunch——當 Claude 收入跑得比算力快，下一個瓶頸不是模型品質，是「能不能拿到夠多 chip」。AI 時代的 moat 從演算法回到供應鏈和資本。",
+      "tags": [
+        "compute-moat",
+        "ai-infrastructure",
+        "anthropic",
+        "operational"
+      ],
+      "url": "https://stratechery.com/2026/anthropics-new-tpu-deal-anthropics-computing-crunch-the-anthropic-google-alliance/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/anthropics-new-tpu-deal-anthropics-computing-crunch-the-anthropic-google-alliance/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-25",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Satya Nadella 在澳洲砸 A$25B：AI 投資的「在地基建 + 技能」雙引擎",
+      "summary": "4/22-23 訪澳，宣布 A$25B 到 2029 投基建+資安+技能（三百萬人 AI 技能訓練到 2028）。比起單純蓋資料中心，更值得抄的是「陪當地練人」這招——把 AI 平台變成「你不能不選我」的政策同盟，這是新版 platform play。",
+      "tags": [
+        "platform-strategy",
+        "ai-infrastructure",
+        "distribution",
+        "operational"
+      ],
+      "url": "https://news.microsoft.com/satya-nadella-australia-visit-2026/",
+      "source": "Satya Nadella • Microsoft",
+      "sourceUrl": "https://news.microsoft.com/satya-nadella-australia-visit-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-25",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Lovable 一年衝到 $200M ARR，100 人團隊：新版 AI growth playbook",
+      "summary": "Elena Verna（Lovable Head of Growth）拆解打法：產品本身就是 distribution（每個 user build 出來的東西可分享）、freemium 不收信用卡、每一條 funnel 步驟都讓 LLM 幫使用者降阻力。重點不是「加 AI 進產品」，是「重構 growth loop 讓 AI 來消除每個摩擦點」。",
+      "tags": [
+        "ai-native-growth",
+        "product-led",
+        "freemium",
+        "playbook"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/the-new-ai-growth-playbook-for-2026-elena-verna",
+      "source": "Elena Verna • Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/the-new-ai-growth-playbook-for-2026-elena-verna",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260425-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-04-25",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Naval Ravikant：每個人現在都是 wizard",
+      "summary": "\"Everyone is now a wizard. AI is a magic wand handed to every person—now they can just talk in any language and become a wizard too.\" — Naval 在 Periscope Sessions 給 AI 一個最乾淨的隱喻：AI 不是讓某些人失業，是讓每個人從「凡人」變成「會法術的人」。Founder 的問題不再是「我會什麼」，而是「我願不願意成為 wizard」。",
+      "tags": [
+        "quotable",
+        "ai-leverage",
+        "naval",
+        "mental-model"
+      ],
+      "url": "https://thewizdomproject.com/naval-ravikant-ai",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://thewizdomproject.com/naval-ravikant-ai",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
