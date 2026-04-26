@@ -25167,6 +25167,177 @@
       "price": null,
       "vram": "本身為 compiler；運行時依 kernel",
       "license": "未標明"
+    },
+    {
+      "id": "20260426-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 3.2: Async Subagents + Multi-root Workspaces",
+      "summary": "Cursor 3.2 把 async subagents 推進 main IDE：/multitask 自動把 request 拆成多個 sub-agent 並行跑；worktrees 升級為 background isolated branches，一鍵 promote 到 foreground；multi-root workspaces 讓單一 agent session 跨 frontend / backend / shared repo 做改動。等於把『platform agent harness』功能搬進每個工程師的 IDE。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "multi-agent",
+        "ai-coding",
+        "agent-harness"
+      ],
+      "url": "https://cursor.com/changelog/04-24-26",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog/04-24-26",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic Agent Skills: open standard + 組織級管理 + 合作夥伴目錄",
+      "summary": "Anthropic 把 Agent Skills 公布為 open standard（agentskills.io），同時推出組織級 admin 管理、partner-built skills 目錄（Atlassian / Figma / Canva / Stripe / Notion / Cloudflare / Zapier / Vercel）。延續 MCP 的『建 industry infra 不建 moat』策略；Microsoft / OpenAI / GitHub / Cursor 已採用。",
+      "tags": [
+        "paradigm-shift",
+        "agent-skills",
+        "ai-agent",
+        "open-standard",
+        "mcp"
+      ],
+      "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Vercel AI SDK 6: ToolLoopAgent + Human-in-the-loop + DevTools",
+      "summary": "AI SDK 6 把 agent loop 升為一級 class：ToolLoopAgent 處理 LLM call → tool execution → result feedback 完整循環（預設 20 步）；新加 human-in-the-loop tool approval、stable structured output、full MCP 支援、DevTools debugger。從『SDK』正式進化為『agent runtime』。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "tool-use",
+        "ai-sdk",
+        "mcp"
+      ],
+      "url": "https://vercel.com/blog/ai-sdk-6",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/ai-sdk-6",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison: GPT-5.5 prompting guide 解讀",
+      "summary": "OpenAI GPT-5.5（Spud）官方 prompting guide 釋出，Simon Willison 整理重點：context engineering 比 prompt wording 更重要、tool description 對 agent 行為影響大、Thinking 模式適合 long-horizon coding。是 GPT-5.5 進入 production agent loop 的實戰參考。",
+      "tags": [
+        "prompt-engineering",
+        "ai-coding",
+        "context-engineering",
+        "gpt-5.5"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Sundar Pichai: Google 75% 新 code 由 AI 生成",
+      "summary": "Cloud Next 2026 keynote：Pichai 宣布 Google 內部 75% 新 code 是 AI 生成、由工程師審核 approve（半年前還是 50%）；複雜 migration 比一年前快 6 倍。AI-coded share 正式成為 frontier tech company 的 productivity KPI；對『dark factory pattern』的時程預測再加碼。",
+      "tags": [
+        "ai-coding",
+        "agentic",
+        "observed-exposure-gap",
+        "dark-factory-pattern"
+      ],
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 提出企業級 MCP 參考架構",
+      "summary": "InfoQ 整理 Cloudflare 對企業級 MCP 部署的 reference architecture：centralized governance、remote MCP server infra、cost control 三個層次；明確把 MCP STDIO RCE 風險推向『不該在企業環境直接跑 local STDIO』，改用 remote + sandbox。MCP 從 protocol 進入 platform engineering 階段。",
+      "tags": [
+        "mcp",
+        "architecture",
+        "governance",
+        "platform-engineering"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/cloudflare-mcp/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/cloudflare-mcp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Meta KernelEvolve：ranking engineer agent 自動優化 GPU kernel",
+      "summary": "Meta engineering 公開 KernelEvolve：agent-driven kernel 優化系統，KernelBench 250 題 100% 過、所有產出 kernel 都比 PyTorch reference 快；驗證 160 個 PyTorch ATen operator 在 3 種硬體上 100% 正確。把 senior infra engineer 的 domain expertise encode 成 agent skill — 是 Meta capacity agent 的延伸落地。",
+      "tags": [
+        "ai-agent",
+        "ai-coding",
+        "evals",
+        "infrastructure"
+      ],
+      "url": "https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/",
+      "source": "Engineering at Meta",
+      "sourceUrl": "https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison: WHY ARE YOU LIKE THIS（AI slop 觀察）",
+      "summary": "Simon 整理近期 generative AI slop 的觀察：image gen 模型不論 prompt 怎麼下都長得越來越像（pelican-on-bicycle 系列已被 model 訓出 stylistic bias），是 RLHF / preference data 過度收斂的副作用之一。對 prompt-based 創作者是個 watch-out。",
+      "tags": [
+        "generative-ai",
+        "slop",
+        "rlhf",
+        "image-gen"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/25/why-are-you-like-this/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/25/why-are-you-like-this/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
