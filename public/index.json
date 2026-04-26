@@ -25033,6 +25033,140 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260426-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "deepseek-ai/DeepEP",
+      "summary": "DeepSeek 自家的 MoE / expert-parallelism GPU 通訊庫：all-to-all kernels 同時吃 NVLink + RDMA、支援 FP8。training 走 NVLink 153–158 GB/s，pure RDMA 低延遲 inference decoding 77–194µs。要自己部署 DeepSeek V3/V4 級 MoE 必看；單卡跑不動。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime",
+        "moe"
+      ],
+      "url": "https://github.com/deepseek-ai/DeepEP",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepEP",
+      "price": null,
+      "vram": "多卡 / NVLink / RDMA 集群",
+      "license": "MIT"
+    },
+    {
+      "id": "20260426-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "InternLM/lmdeploy v0.12.3",
+      "summary": "LMDeploy 0.12.3 (4/8 釋出)：新增 video input、TurboMind 支援 compressed-tensors GS32、Qwen3.5 推理優化。「壓縮 + 部署 + serving」三合一，跟 vLLM/SGLang 不同走向，特別適合自己量化 + 想要 video/multimodal endpoint 的場景。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/InternLM/lmdeploy",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/InternLM/lmdeploy/releases/tag/v0.12.3",
+      "price": null,
+      "vram": "依模型；toolkit 本身輕量",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260426-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "bentoml/OpenLLM",
+      "summary": "把任何開源 LLM 包成 OpenAI 相容 API endpoint 的 framework，DeepSeek/Llama/Qwen 都支援。BentoCloud 整合提供 autoscaling、orchestration、observability。本地 prototype → cloud production 一條龍。12.3k 星、Apache-2.0。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/bentoml/OpenLLM",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/bentoml/OpenLLM",
+      "price": null,
+      "vram": "依模型",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260426-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MemoriLabs/Memori v3.3.0",
+      "summary": "Agent-native 記憶基礎設施：「記住 agent 做了什麼，不只記它說了什麼」。LLM-agnostic 中間層，OpenAI/Anthropic/Gemini/DeepSeek 都接，框架支援 LangChain、Pydantic AI、Agno。號稱 81.95% 記憶 benchmark 準確率。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools",
+        "agent_memory"
+      ],
+      "url": "https://github.com/MemoriLabs/Memori",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/MemoriLabs/Memori/releases/tag/v3.3.0",
+      "price": null,
+      "vram": "n/a (memory layer)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260426-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "roboflow/rf-detr v1.6.5",
+      "summary": "Roboflow 出的 real-time object detection + instance segmentation，DINOv2 ViT backbone，COCO 上 SOTA、RF100-VL 競爭力強。Nano 到 2XL 多尺寸。4/22 釋出 1.6.5 修 EMA 與 positional encoding。ICLR 2026 paper。",
+      "tags": [
+        "cv_ocr",
+        "object_detection"
+      ],
+      "url": "https://github.com/roboflow/rf-detr",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/roboflow/rf-detr/releases/tag/v1.6.5",
+      "price": null,
+      "vram": "Nano/Small <4GB；XL 8–12GB",
+      "license": "Apache-2.0 (base) / PML 1.0 (XL)"
+    },
+    {
+      "id": "20260426-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "run-llama/ParseBench",
+      "summary": "LlamaIndex 釋出的 PDF parsing benchmark：~2000 頁人工驗證的 enterprise 文件，五維評估（tables、charts、content faithfulness、semantic formatting、visual grounding）90+ parsing pipeline。選型 docling / unstructured / Marker / Mistral OCR 的新客觀基準。",
+      "tags": [
+        "rag_knowledge",
+        "document_parsing"
+      ],
+      "url": "https://github.com/run-llama/ParseBench",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/run-llama/ParseBench",
+      "price": null,
+      "vram": "n/a (benchmark)",
+      "license": "未標明"
+    },
+    {
+      "id": "20260426-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "tile-ai/tilelang v0.1.9",
+      "summary": "高效能 GPU/CPU/Accelerator kernel 的 DSL：Python-like 語法跑在 TVM 上，支援 GEMM、FlashAttention、quantization。已驗證 H100/A100/V100、MI250/MI300X，多後端（CUDA/HIP/Metal/WebGPU/AscendC）。寫高效 kernel 不想下到 CUDA 的人值得一看。",
+      "tags": [
+        "infra_runtime",
+        "gpu_kernels"
+      ],
+      "url": "https://github.com/tile-ai/tilelang",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/tile-ai/tilelang/releases/tag/v0.1.9",
+      "price": null,
+      "vram": "本身為 compiler；運行時依 kernel",
+      "license": "未標明"
     }
   ]
 }
