@@ -25338,6 +25338,184 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260426-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "deepseek-ai/DeepSeek-V4 (Pro + Flash)",
+      "summary": "DeepSeek 4/24 同時釋出 V4-Pro（1.6T MoE / 49B active）和 V4-Flash（284B / 13B active），兩款都支援 1M context、MIT 授權、HF 開放下載。Pro 在 math/coding 上贏所有開源模型，僅落後 Gemini 3.1-Pro。仍標記 preview。",
+      "tags": [
+        "llm_inference",
+        "deepseek",
+        "moe"
+      ],
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "source": "DeepSeek API Docs",
+      "sourceUrl": "https://api-docs.deepseek.com/news/news260424",
+      "price": null,
+      "vram": "1.6T total / 49B active — 多卡集群",
+      "license": "MIT"
+    },
+    {
+      "id": "20260426-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Qwen/Qwen3.6-27B",
+      "summary": "Qwen 4/16 釋出的 dense 27B 旗艦 coding model，Apache 2.0。對應 35B-A3B MoE 那批，這支是純 dense，量化後可塞進 16GB，本地跑 agentic coding 的甜蜜點。",
+      "tags": [
+        "llm_inference",
+        "qwen"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "source": "Qwen Blog",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.6",
+      "price": null,
+      "vram": "Q4 ~14–16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260426-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "unsloth/Qwen3.6-35B-A3B-GGUF",
+      "summary": "社群為 Qwen3.6-35B-A3B（MoE，3B active）做的 GGUF 量化版，可直接餵進 llama.cpp / Ollama 跑。35B 總參數 + Q4 約 18–22GB，配 offload 在 16GB 跑得動。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "gguf",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+      "price": null,
+      "vram": "Q4 18–22GB（含 offload）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260426-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "nari-labs/dia",
+      "summary": "從 transcript 直接生成 ultra-realistic 對話的 TTS 模型，可用 audio conditioning 控制情緒和語氣，連笑聲、咳嗽等 nonverbal 都能生成。19.3k stars、Apache 2.0，本地可跑。",
+      "tags": [
+        "tts_speech",
+        "neural-tts",
+        "dialogue"
+      ],
+      "url": "https://github.com/nari-labs/dia",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "<8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260426-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "voicepaw/so-vits-svc-fork",
+      "summary": "so-vits-svc 的 fork，加上 realtime 支援、改進 UI 與更多功能。4/20 才更新，仍是社群最活躍的 SVC 工具之一。9.3k stars。",
+      "tags": [
+        "svc_voice",
+        "so-vits-svc",
+        "real-time-voice"
+      ],
+      "url": "https://github.com/voicepaw/so-vits-svc-fork",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/voice-conversion",
+      "price": null,
+      "vram": "<8GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260426-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Lightning-AI/litgpt",
+      "summary": "20+ 高效能 LLM 配上 pretrain / finetune / deploy 的 recipe，4/25 持續更新。Apache 2.0，從研究到 production 一條龍。13.3k stars。",
+      "tags": [
+        "llm_training",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/Lightning-AI/litgpt",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/llm-inference",
+      "price": null,
+      "vram": "依模型",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260426-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "zilliztech/memsearch",
+      "summary": "Markdown-first 語義記憶系統，明確標榜 inspired by OpenClaw。Markdown 為 source of truth，用 Milvus 做 shadow index 跑 hybrid search（dense + BM25）。支援 Claude Code / OpenClaw / OpenCode / Codex CLI。1.4k stars、MIT。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools",
+        "agent_memory",
+        "openclaw"
+      ],
+      "url": "https://github.com/zilliztech/memsearch",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "n/a",
+      "license": "MIT"
+    },
+    {
+      "id": "20260426-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Dicklesworthstone/cass_memory_system",
+      "summary": "Persistent procedural memory for AI coding agents。MAGI//ARCHIVE 4/26 推的 memory 工具，記憶「過程」而非僅「對話」。",
+      "tags": [
+        "ai_devtools",
+        "agent_memory"
+      ],
+      "url": "https://github.com/Dicklesworthstone/cass_memory_system",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "n/a",
+      "license": "未確認"
+    },
+    {
+      "id": "20260426-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "RooCodeInc/Roo-Code",
+      "summary": "「整支 AI agent 開發團隊在你的 code editor 裡」。VSCode-based 多 agent 編輯器，今日 GitHub Trending 上熱度高。23.6k stars、TypeScript。",
+      "tags": [
+        "ai_devtools",
+        "coding-agent"
+      ],
+      "url": "https://github.com/RooCodeInc/Roo-Code",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "n/a",
+      "license": "Apache-2.0"
     }
   ]
 }
