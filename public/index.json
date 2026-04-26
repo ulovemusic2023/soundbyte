@@ -25516,6 +25516,111 @@
       "price": null,
       "vram": "n/a",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260426-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "title": "Anthropic 公開 Claude Code monthlong 退化的完整 postmortem",
+      "summary": "Anthropic 4/23 公開承認過去一個月 Claude Code 品質下滑由 3 個獨立改動造成（reasoning effort medium / caching bug / verbosity prompt），全部於 4/20 修復。重置所有訂閱用戶 usage limit。AI lab 首次完整公開 harness/prompt 改動如何造成 model 智力 regression — harness change postmortem 成為 ops 新標配。",
+      "priority": "paradigm-shift",
+      "tags": [
+        "paradigm-shift",
+        "harness-engineering",
+        "ai-coding",
+        "postmortem"
+      ],
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "title": "DeepSeek V4 Pro / V4 Flash：接近 frontier、價格只要零頭",
+      "summary": "DeepSeek 4/24 釋出 V4 Pro（1.6T MoE / 49B active）與 V4 Flash（284B），1M context；Pro 取代 Kimi K2.6 成最大 open-weight。Flash $0.14/$0.28、Pro $0.145/$3.48 per M tokens。Simon Willison 評：reasoning benchmark 落後 GPT-5.4 約 3-6 個月，但成本 1/100，open-weight 進入新區段。",
+      "priority": "paradigm-shift",
+      "tags": [
+        "paradigm-shift",
+        "ai-models",
+        "open-weights",
+        "moe"
+      ],
+      "url": "https://simonwillison.net/2026/apr/24/deepseek-v4/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/apr/24/deepseek-v4/",
+      "price": "$0.14/$0.28 (Flash), $0.145/$3.48 (Pro) per M tokens",
+      "vram": "cloud-only (1.6T)",
+      "license": "open-weight"
+    },
+    {
+      "id": "20260426-sw-011",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "title": "Cline × Vercel AI Gateway：Kimi K2.6 免費跑 Cline 三天",
+      "summary": "Cline 4/22 透過 Vercel AI Gateway 讓 Kimi K2.6（open-weight 1T MoE、256K context）在 Cline 上免費 3 天。重點：在 Terminal-Bench 上打敗 Opus 4.6 與 GPT-5.4，成本約 1/6。Open-weight 模型首次在 coding-agent 級 benchmark 對 closed frontier 具實質威脅。",
+      "priority": "high",
+      "tags": [
+        "ai-coding",
+        "open-weights",
+        "agent-framework",
+        "terminal-bench"
+      ],
+      "url": "https://x.com/cline/status/2047038658470142148",
+      "source": "Cline / Vercel",
+      "sourceUrl": "https://x.com/cline/status/2047038658470142148",
+      "price": "free for 3 days; ~1/6 of Opus 4.6 normally",
+      "vram": "cloud-only (1T MoE)",
+      "license": "open-weight"
+    },
+    {
+      "id": "20260426-sw-012",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "title": "Pragmatic Engineer：3,000 名工程師 AI tooling 調查",
+      "summary": "Gergely Orosz 釋出 2026 大型 AI tooling survey 結果（n=3,000）：95% 每週用 AI、75% 用於 50%+ 工作量、56% 用於 70%+；30% 已撞到 usage limit；公司方多付 $100-200/m max plan。Claude Code 因 terminal-native、不換 IDE 是成長最快的 outlier。usage limit 撞牆與 prototype-as-product 是真正訊號。",
+      "priority": "medium",
+      "tags": [
+        "ai-coding",
+        "dx",
+        "observed-exposure-gap",
+        "productivity"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-impact-of-ai-on-software-engineers-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260426-sw-013",
+      "radar": "software-dev",
+      "date": "2026-04-26",
+      "cycle": "evening",
+      "title": "swyx × Gergely Orosz：tokenmaxxing、AI productivity 與工程師角色變化",
+      "summary": "AI Engineer Conf 對談：延伸 Meta tokenmaxxing 主題，討論企業內部 AI platform 怎麼建、AI productivity 是否真實、software engineer 在 agent loop 時代的角色重新定位。對『AI 用得多 = 產能高』的內部 KPI 文化提出質疑，是 tokenmaxxing 從 meme 變 management 議題的轉折點。",
+      "priority": "medium",
+      "tags": [
+        "ai-engineering",
+        "tokenmaxxing",
+        "dx",
+        "platform-engineering"
+      ],
+      "url": "https://x.com/aiDotEngineer/status/2046670378546966686",
+      "source": "AI Engineer / Latent Space",
+      "sourceUrl": "https://x.com/aiDotEngineer/status/2046670378546966686",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
