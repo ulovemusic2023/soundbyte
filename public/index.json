@@ -25621,6 +25621,171 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260427-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8941",
+      "summary": "新增 performance-portable matmul tuning（register-tile + subgroup），同批修了 recurrent state serialization partial read/write bug。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8941",
+      "price": null,
+      "vram": "GGUF 量化後可上 16GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260427-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "abhigyanpatwari/GitNexus",
+      "summary": "Client-side codebase 知識圖譜，把 repo 結構轉成可被 LLM 一次查的 Graph RAG。MCP 暴露 16 個工具給 Claude Code/Cursor，14 種程式語言。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/abhigyanpatwari/GitNexus",
+      "price": null,
+      "vram": "Local 瀏覽器/CPU",
+      "license": "PolyForm Noncommercial"
+    },
+    {
+      "id": "20260427-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "trycua/cua",
+      "summary": "跨 macOS/Linux/Windows/Android 的 Computer-Use Agent 基礎設施，sandbox + SDK + benchmark。cua-driver-v0.0.11 (4/26) 才剛發。",
+      "tags": [
+        "cv_ocr",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/trycua/cua",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trycua/cua",
+      "price": null,
+      "vram": "Cloud sandbox + 可接 local LLM",
+      "license": "MIT"
+    },
+    {
+      "id": "20260427-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VAST-AI-Research/AniGen",
+      "summary": "單張圖生成可動畫的 3D 角色資產附 rig。對遊戲/MV/虛擬偶像 pipeline 省手動 rigging 的工。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://github.com/VAST-AI-Research/AniGen",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/VAST-AI-Research/AniGen",
+      "price": null,
+      "vram": "需量化才能上 16GB",
+      "license": "TBD"
+    },
+    {
+      "id": "20260427-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "robert-mcdermott/ai-knowledge-graph",
+      "summary": "LLM 驅動的 KG 生成器，附互動視覺化，把非結構化文本轉成可瀏覽的知識圖譜。RAG 前置或 research 工具用得上。",
+      "tags": [
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/robert-mcdermott/ai-knowledge-graph",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/robert-mcdermott/ai-knowledge-graph",
+      "price": null,
+      "vram": "Local CPU/LLM",
+      "license": "TBD"
+    },
+    {
+      "id": "20260427-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "mattpocock/skills",
+      "summary": "Matt Pocock 每天用的 Agent Skills 集合：PRD 撰寫、spec 拆 issue、TDD、bug investigation、git safety hooks。23.5k stars 一日 +2.5k。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/mattpocock/skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/mattpocock/skills",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
+    },
+    {
+      "id": "20260427-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "steveyegge/beads",
+      "summary": "Steve Yegge 寫的 coding-agent 記憶升級：Git 為 persistence layer 的依賴感知圖狀任務 DB。Hash-based ID 防 multi-agent 衝突，semantic memory decay 自動壓縮舊任務。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/steveyegge/beads",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/steveyegge/beads",
+      "price": null,
+      "vram": "N/A — Go CLI",
+      "license": "MIT"
+    },
+    {
+      "id": "20260427-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "n8n-io/self-hosted-ai-starter-kit",
+      "summary": "n8n 官方 self-hosted AI workflow 起手包：Ollama + Qdrant + Postgres + n8n，docker-compose 一鍵起。",
+      "tags": [
+        "infra_runtime",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/n8n-io/self-hosted-ai-starter-kit",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/n8n-io/self-hosted-ai-starter-kit",
+      "price": null,
+      "vram": "Local",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260427-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "d-kimuson/claude-code-viewer",
+      "summary": "Claude Code project 的 web 客戶端，瀏覽多 project 對話、artefacts、session history。重度 CC 用戶管理多 repo 工作流方便。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/d-kimuson/claude-code-viewer",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/d-kimuson/claude-code-viewer",
+      "price": null,
+      "vram": "N/A — web UI",
+      "license": "TBD"
     }
   ]
 }
