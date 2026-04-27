@@ -411,7 +411,6 @@
         "tool use",
         "agent-first workflow"
       ],
-      "url": null,
       "source": "OpenAI",
       "sourceUrl": "https://openai.com/index/codex-for-almost-everything/",
       "price": null,
@@ -431,7 +430,6 @@
         "context engineering",
         "agentic engineering"
       ],
-      "url": null,
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
       "price": null,
@@ -452,7 +450,6 @@
         "local-first AI",
         "apple silicon"
       ],
-      "url": null,
       "source": "Abacus Noir",
       "sourceUrl": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/",
       "price": null,
@@ -471,7 +468,6 @@
         "developer experience",
         "design system"
       ],
-      "url": null,
       "source": "drasimwagan (GitHub)",
       "sourceUrl": "https://github.com/drasimwagan/mdv",
       "price": null,
@@ -491,7 +487,6 @@
         "benchmark",
         "evals"
       ],
-      "url": null,
       "source": "Bill Chambers / HN",
       "sourceUrl": "https://tokens.billchambers.me/leaderboard",
       "price": null,
@@ -511,7 +506,6 @@
         "agent-framework",
         "SDK-migration"
       ],
-      "url": null,
       "source": "Framesta Fernando / Ravoid",
       "sourceUrl": "https://ravoid.com/blog/langchain-exit-raw-sdk-migration-2026",
       "price": null,
@@ -12156,7 +12150,6 @@
         "agentic engineering",
         "supervisory programming"
       ],
-      "url": null,
       "source": "Anthropic",
       "sourceUrl": "https://news.bitcoin.com/anthropics-2026-agentic-coding-report-maps-the-rise-of-multi-agent-dev-teams/"
     },
@@ -12173,7 +12166,6 @@
         "zero trust",
         "supply chain security"
       ],
-      "url": null,
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/"
     },
@@ -12190,7 +12182,6 @@
         "vendor risk",
         "abstraction layer"
       ],
-      "url": null,
       "source": "Shelly Palmer",
       "sourceUrl": "https://shellypalmer.com/2026/03/the-claude-exit-tax/"
     },
@@ -12224,7 +12215,6 @@
         "governed agents",
         "safety-first contracting"
       ],
-      "url": null,
       "source": "TechCrunch",
       "sourceUrl": "https://techcrunch.com/2026/03/01/openai-shares-more-details-about-its-agreement-with-the-pentagon/"
     },
@@ -12241,7 +12231,6 @@
         "multimodal",
         "scaling law"
       ],
-      "url": null,
       "source": "Google DeepMind",
       "sourceUrl": "https://www.marktechpost.com/2026/02/27/google-deepmind-introduces-unified-latents-ul-a-machine-learning-framework-that-jointly-regularizes-latents-using-a-diffusion-prior-and-decoder/"
     },
@@ -12258,7 +12247,6 @@
         "ai agent",
         "memory"
       ],
-      "url": null,
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Mar/1/claude-import-memory/"
     },
@@ -12291,7 +12279,6 @@
         "cognitive debt",
         "ai coding"
       ],
-      "url": null,
       "source": "Hacker News",
       "sourceUrl": "https://news.ycombinator.com/item?id=47206824"
     },
@@ -12309,7 +12296,6 @@
         "ai agent",
         "skills ecosystem"
       ],
-      "url": null,
       "source": "Microsoft",
       "sourceUrl": "https://techcommunity.microsoft.com/tag/agents"
     },
@@ -26004,6 +25990,76 @@
       "price": null,
       "vram": "N/A",
       "license": "per-skill"
+    },
+    {
+      "id": "20260427-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Roo Code 整個產品線 5/15 收掉，team pivot 出 cloud agent Roomote",
+      "summary": "Roo Code（VS Code AI coding extension/Cloud/Router）2026-05-15 全停服，team 直接說 IDE 不是 AI coding 的未來。Pivot 到 Roomote — cloud-based coding agent，吃 prompt 直接跨 Slack/GitHub/Linear 跑到 PR/fix 才回來給人 review。Roo Code merge 回 Cline 收留使用者。IDE wrapper 這層被 Cursor / Codex 等 vibe coding 平台 + Roomote / Devin 等 cloud agent 兩邊夾殺，再加上 Anthropic 4/4 對 3rd-party 工具額外按 token 收費，把外圍商業模型也斷頭。",
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "ai_agent",
+        "vibe coding",
+        "IDE wrapper sunset"
+      ],
+      "url": "https://thenewstack.io/roo-code-cloud-ides-ai-coding/",
+      "source": "Roo Code Blog",
+      "sourceUrl": "https://roocode.com/blog/sunsetting-roo-code-extension-cloud-and-router"
+    },
+    {
+      "id": "20260427-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Hermes Agent v0.10 — 自學 skill 的開源 agent，60 天衝 100K stars",
+      "summary": "Nous Research 開源 Hermes Agent（MIT, Python），2/25 上線後 6 週從 0 衝到 ~57K stars，4 月破 100K，速度比早期 OpenClaw 還快。賣點是 built-in learning loop：每次跑完任務寫 reusable skill 文件、使用中持續修、跨 session 累積使用者 mental model。把 Anthropic 今早開出的 Skills 標準變成『agent 自己生 skill』的開源版本。v0.10『Tool Gateway』於 4/16 出貨。",
+      "tags": [
+        "ai_agent",
+        "agent-skills",
+        "open-source",
+        "self-improving"
+      ],
+      "url": "https://github.com/nousresearch/hermes-agent",
+      "source": "Nous Research",
+      "sourceUrl": "https://hermes-agent.nousresearch.com/"
+    },
+    {
+      "id": "20260427-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Google 4/25 更新 Gemini Enterprise Agent Platform：unified Inbox + Agent Designer",
+      "summary": "Google Cloud Next '26 之後持續迭代 Gemini Enterprise Agent Platform：強化 Agent Designer（low-code agent builder）、推出統一 Inbox 監控所有 agent、新增 native Data Insights Agent、Deep Research 升級到 Gemini 3.1 Pro。整套對接 ADK / A2A / MCP / 200+ Model Garden。Agent 平台選型已從 framework 比較變成 control plane 戰爭。",
+      "tags": [
+        "Agent Control Plane",
+        "agent-infrastructure",
+        "devops_infra"
+      ],
+      "source": "Google Cloud Blog",
+      "sourceUrl": "https://cloud.google.com/blog/products/ai-machine-learning/whats-new-in-gemini-enterprise"
+    },
+    {
+      "id": "20260427-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Salesforce Headless 360：把整個 Salesforce 變成 agent 的 infra",
+      "summary": "TDX 2026（4/15）公佈 Headless 360：Salesforce 平台所有功能都開成 API / MCP tool / CLI command，搭配 60+ 全新 MCP tools + 30+ 預設 coding skills，讓 Claude Code / Cursor / Codex / Windsurf 不開瀏覽器就能操作整個 Salesforce org。Developer Edition 直接送 Agentforce Vibes IDE + Hosted MCP Servers 全免費。SaaS 廠對 agent 的標準答案：與其被取代，不如變成 agent 的 infra。",
+      "tags": [
+        "mcp",
+        "headless SaaS",
+        "agent-infrastructure",
+        "ai_agent"
+      ],
+      "source": "Salesforce News",
+      "sourceUrl": "https://www.salesforce.com/news/stories/salesforce-headless-360-announcement/"
     }
   ]
 }
