@@ -25786,6 +25786,92 @@
       "price": null,
       "vram": "N/A — web UI",
       "license": "TBD"
+    },
+    {
+      "id": "20260427-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 把 Agent Skills 開源成跨廠標準",
+      "summary": "Anthropic 公開 Agent Skills spec 到 agentskills.io，並拉到 Microsoft、OpenAI、Atlassian、Figma、Cursor、GitHub、Stripe、Notion、Cloudflare、Vercel、Zapier 一起背書。把 MCP 那一招複製到 agent 能力層 — agent 的 procedural knowledge 變成跨平台、可版本控、composable 的開源 artifact。Progressive disclosure 是核心設計。",
+      "tags": [
+        "paradigm-shift",
+        "agent-skills",
+        "ai_agent",
+        "mcp",
+        "open-standard"
+      ],
+      "url": "https://agentskills.io/home",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260427-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Project Think — agent 自己寫工具給自己用",
+      "summary": "Project Think preview 核心是 self-authored extensions：agent 在 runtime 寫 TypeScript、丟給 ExtensionManager 打包、載進 Dynamic Worker isolate、註冊成新 tool。下一次 user 要查 PR 時，agent 已經有 30 秒前還不存在的 github_create_pr。Sandboxed、auditable、revocable，extension 存在 DO storage、survive hibernation。",
+      "tags": [
+        "paradigm-shift",
+        "agentic",
+        "durable-runtime",
+        "agent-infrastructure"
+      ],
+      "url": "https://blog.cloudflare.com/project-think/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/cloudflare-project-think/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260427-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hugging Face ml-intern：開源 ML engineer agent，GPQA 上幹掉 Claude Code",
+      "summary": "HF 開源 ml-intern：建在自家 smolagents 上、會自己讀 arXiv + HF Papers、抓資料集、跑 training script、迭代 eval。Demo 把 Qwen3-1.7B 從 ~10% GPQA 推到 32%，10 小時內、3 小時就過 27.5%；同題 Claude Code 卡在 22.99%。HF 還免費送 $1,000 GPU + Anthropic credits 給早期使用者。",
+      "tags": [
+        "ai_agent",
+        "post-training",
+        "open-source",
+        "evals"
+      ],
+      "url": "https://github.com/huggingface/ml-intern",
+      "source": "MarkTechPost / Hugging Face",
+      "sourceUrl": "https://www.marktechpost.com/2026/04/21/hugging-face-releases-ml-intern-an-open-source-ai-agent-that-automates-the-llm-post-training-workflow/",
+      "price": null,
+      "vram": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260427-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Apple ICLR 2026 demo：MacBook Pro M5 Max 在 Xcode 跑 quantized frontier coding model",
+      "summary": "Apple 在 ICLR 2026（Rio de Janeiro，4/23–27）booth #204 直接 demo：Xcode 內、MLX 全程在 device 上、跑 quantized frontier 級 coding model。重點是 M5 的 Neural Accelerators — 專門做 matrix-mul 的硬體單元被 MLX 直接吃進去，配 unified memory 把 inference 速度拉起來。Apple ML Research 同步出論文。",
+      "tags": [
+        "local-first AI",
+        "mlx",
+        "on-device",
+        "ai-coding",
+        "apple-silicon"
+      ],
+      "url": "https://machinelearning.apple.com/research/exploring-llms-mlx-m5",
+      "source": "Apple Machine Learning Research",
+      "sourceUrl": "https://machinelearning.apple.com/research/exploring-llms-mlx-m5",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
