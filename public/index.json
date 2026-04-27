@@ -25872,6 +25872,138 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260427-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "NVIDIA Audio Flamingo Next",
+      "summary": "NVIDIA 18 人團隊發表的下一代 audio-language model，支援語音/環境音/音樂統一推理，可吃 30 分鐘長 audio 輸入，導入 Temporal Audio Chain-of-Thought 用 timestamp 做時序推理。20 個 benchmark 全面打過同級開源 audio LM。",
+      "tags": [
+        "music_understanding",
+        "audio_music_ai",
+        "llm_inference"
+      ],
+      "url": "https://arxiv.org/abs/2604.10905",
+      "source": "arXiv (NVIDIA)",
+      "sourceUrl": "https://arxiv.org/abs/2604.10905",
+      "price": null,
+      "vram": "Cloud-only（7B+，需量化或多卡）",
+      "license": "NVIDIA Open"
+    },
+    {
+      "id": "20260427-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TinyMU: Compact Music-Language Model",
+      "summary": "Télécom Paris 端出 229M 參數的小型音樂理解模型，靠 MusicSkills-3.5M（350 萬筆音樂 QA）訓練出 SOTA 82% 的表現，但模型小 35×。音樂理解這條線終於可以本地跑。",
+      "tags": [
+        "music_understanding",
+        "audio_music_ai"
+      ],
+      "url": "https://arxiv.org/abs/2604.15849",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2604.15849",
+      "price": null,
+      "vram": "Local-ready (229M)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260427-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8946",
+      "summary": "今天連發三版（b8943→b8946）：Qwen3/LLaMA wo_s scale 重複計算修掉、tile buffer 改 64-byte 對齊（多數 quant 拿到 1.00–1.03× 加速）、llama-common export 修復。100k star 後迭代節奏更穩。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8946",
+      "price": null,
+      "vram": "Local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260427-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "google/langextract v1.2.1",
+      "summary": "Google 結構化抽取 library——餵 unstructured text + schema 回 structured JSON，每個 field 對回原文 character offset。支援 Gemini/OpenAI/Ollama。4/8 釋出 v1.2.1，35.9k stars。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/google/langextract",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/google/langextract",
+      "price": null,
+      "vram": "Local-ready (tool)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260427-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Alishahryar1/free-claude-code",
+      "summary": "今日 Trending #2，Python 第一名。Claude Code 免費 proxy，把 request 轉到 NVIDIA NIM/DeepSeek/OpenRouter/LM Studio/llama.cpp/Ollama。兩個環境變數即可換掉 Anthropic API。15k stars。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/Alishahryar1/free-claude-code",
+      "price": null,
+      "vram": "Local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260427-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "ComposioHQ/awesome-codex-skills",
+      "summary": "Codex CLI/API 的實用 skill 清單，60+ 個分類涵蓋 codebase migration、CI/CD 修復、Notion 整合、meeting notes、ticket triage、email 潤稿、resume 生成、Datadog 查詢。+517 stars 今日。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "price": null,
+      "vram": "N/A",
+      "license": "未標"
+    },
+    {
+      "id": "20260427-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-04-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "openai/skills",
+      "summary": "OpenAI 官方 Codex Skills Catalog，三層分類：.system（自動裝）、.curated（指令安裝）、.experimental（選用）。每個 skill 自帶 LICENSE.txt。OpenAI 把 skill 當一級 primitive。17.6k stars。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/openai/skills",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/openai/skills",
+      "price": null,
+      "vram": "N/A",
+      "license": "per-skill"
     }
   ]
 }
