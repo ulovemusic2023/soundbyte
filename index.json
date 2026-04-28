@@ -26375,6 +26375,154 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260428-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8953",
+      "summary": "WebGPU 後端正式加上 Q1_0 1-bit 量化 kernel（fast matmul matvec），瀏覽器內推理跨入極致壓縮時代。對 edge/web 部署 16GB VRAM 以下情境特別有意義。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "infra_runtime",
+        "webgpu"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8953",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8953",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "TencentARC/MotionCrafter",
+      "summary": "CVPR 2026 Highlight。Video diffusion 框架做 monocular video → 4D 場景重建（dense geometry + scene flow），不需 post-optimization。3-stage 訓練：Geometry VAE → Unified 4D VAE → Diffusion UNet。",
+      "tags": [
+        "image_gen",
+        "video_generation",
+        "depth_estimation",
+        "cv_ocr",
+        "cvpr2026"
+      ],
+      "url": "https://github.com/TencentARC/MotionCrafter",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/28/TencentARC-MotionCrafter.html",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Tencent Custom"
+    },
+    {
+      "id": "20260428-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "MIT-SPARK/DAAAM",
+      "summary": "CVPR 2026。「Describe Anything, Anywhere, at Any Moment」——把 SAM segmentation + BotSort tracking + VLM grounding 串成 real-time 機器人地圖系統，建構 dynamic 4D scene graph。foundation-model-first robot mapping。",
+      "tags": [
+        "cv_ocr",
+        "segment_anything",
+        "scene_understanding",
+        "robotics",
+        "cvpr2026"
+      ],
+      "url": "https://github.com/MIT-SPARK/DAAAM",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/28/MIT-SPARK-DAAAM.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20260428-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "angelnicolasc/graymatter",
+      "summary": "Go 寫的 stateful memory layer for AI agents：bbolt + chromem-go vector index，hybrid retrieval（vector + keyword + recency），async consolidation 自動 summarize/decay/prune。MCP server 接 Claude Code/Cursor，token 用量 -97%。",
+      "tags": [
+        "rag_knowledge",
+        "vector_store",
+        "semantic_search",
+        "mcp",
+        "memory"
+      ],
+      "url": "https://github.com/angelnicolasc/graymatter",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/28/angelnicolasc-graymatter.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "davila7/claude-code-templates",
+      "summary": "Claude Code 配置 + 監控 CLI。100+ 個可裝模組（agents、slash commands、hooks、MCP integrations），加 web dashboard（aitmpl.com）瀏覽安裝。把 Claude Code setup 體驗從手刻變成 npm install。",
+      "tags": [
+        "ai_devtools",
+        "coding_agent",
+        "claude_code"
+      ],
+      "url": "https://github.com/davila7/claude-code-templates",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "tripleyak/SkillForge",
+      "summary": "把 AI skill 創作從藝術變工程：4-phase pipeline（Triage → Analysis → Spec/Generation → Multi-agent Synthesis），需要 unanimous approval。v5.0 把 SKILL.md 縮 64%（872→313 行），重邏輯移到 references on-demand 載入。",
+      "tags": [
+        "ai_devtools",
+        "skill_engineering",
+        "claude_code"
+      ],
+      "url": "https://github.com/tripleyak/SkillForge",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/28/tripleyak-SkillForge.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "hydropix/TranslateBooksWithLLMs",
+      "summary": "全書翻譯工具：EPUB/SRT/DOCX/TXT 無 size limit，保留格式，斷點續傳，intelligent chunking 維持上下文。接 7 種 LLM provider（Ollama 本地、OpenRouter、OpenAI、DeepSeek、Mistral、Gemini、Poe），加 Edge-TTS 直接出語音書。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference",
+        "translation",
+        "tts_speech"
+      ],
+      "url": "https://github.com/hydropix/TranslateBooksWithLLMs",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "AGPL-3.0"
     }
   ]
 }
