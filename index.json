@@ -26255,6 +26255,126 @@
       "price": null,
       "vram": "Depends on backend LLM",
       "license": "MIT"
+    },
+    {
+      "id": "20260428-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-28",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Tobi Lütke 把 Trust Battery 套用在 AI Agent 管理上",
+      "summary": "Shopify 用 Trust Battery 框架治理 AI PM「Claudie」：人類預設 50%、AI 從 20% 起跳；好表現一天 +1%、搞砸一天 -5%。AI 不是工具是同事，要用非對稱方式建立可究責關係。",
+      "tags": [
+        "trust-battery",
+        "ai-agents",
+        "leadership"
+      ],
+      "url": "https://every.to/context-window/you-re-the-bread-in-the-ai-sandwich",
+      "source": "Tobi Lütke • Every (Context Window)",
+      "sourceUrl": "https://every.to/context-window/you-re-the-bread-in-the-ai-sandwich",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260428-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-28",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sam Altman 公布 OpenAI 五大新原則：自 2018 以來首次重寫",
+      "summary": "4/26 OpenAI 官網更新：民主化、賦能、普惠繁榮、韌性、適應性。從 AGI-centric 改成 AI 基礎設施論述，並刪除「對手先到 AGI 就要協助」承諾。Altman 已把公司定位從實驗室推到基礎建設供應商。",
+      "tags": [
+        "strategy",
+        "ai-infrastructure",
+        "mission"
+      ],
+      "url": "https://stackfutures.com/blog/openai-altman-five-principles-power-concentration-manifesto/",
+      "source": "Sam Altman • OpenAI / Stackfutures",
+      "sourceUrl": "https://stackfutures.com/blog/openai-altman-five-principles-power-concentration-manifesto/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260428-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-28",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Anthropic 把 ship cadence 從月壓到天：3 個月 ship 45 個 feature",
+      "summary": "Cat Wu (Head of Product, Claude Code) 在 Lenny Podcast 拆解：刻意 build ahead of model — 先做 70%，等下一代 model 補齊；PM 核心技能變成 prompt model 自我反省、用快指標對齊團隊。代價是使用者 FOMO。",
+      "tags": [
+        "shipping-cadence",
+        "ai-pm",
+        "anthropic"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-anthropics-product-team-moves",
+      "source": "Cat Wu (Anthropic) • Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-anthropics-product-team-moves",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260428-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-28",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Satya Nadella：AI 不是「指尖上的資訊」是「指尖上的 agent」",
+      "summary": "Nadella 在雪梨/奧克蘭把 AI 框成 cognitive scaffold——像當年 Excel/Word 把試算與文書能力下放給白領，現在 Copilot Studio 把組 agent 下放給普通使用者。別追 raw model，要追組織能不能把 agent 內化成 capability。",
+      "tags": [
+        "platform-shift",
+        "copilot",
+        "agentic"
+      ],
+      "url": "https://eftm.com/2026/04/microsoft-satya-nadella-australia-25-billion-ai-investment-exclusive-interview-274901",
+      "source": "Satya Nadella • EFTM Australia / Microsoft AI Tour",
+      "sourceUrl": "https://eftm.com/2026/04/microsoft-satya-nadella-australia-25-billion-ai-investment-exclusive-interview-274901",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260428-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-28",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Evan Spiegel：純軟體已經不是護城河，distribution 才是",
+      "summary": "Snap CEO 在 Lenny Podcast 認帳：Stories、滑動導航、相機 UX、AR Lens、Pixy 都在 12 個月內被複製。15 年只有 Snap 跟 TikTok 真正突圍，TikTok 強的是 ByteDance 80 億 DAU 母體不是演算法。資源該押在 distribution-shaped 的東西。",
+      "tags": [
+        "moat",
+        "distribution",
+        "consumer-tech"
+      ],
+      "url": "https://getcoai.com/news-letter/oh-snap-spiegel-said-the-quiet-part-out-loud-distribution-is-the-only-moat-left/",
+      "source": "Evan Spiegel • Lenny's Podcast",
+      "sourceUrl": "https://getcoai.com/news-letter/oh-snap-spiegel-said-the-quiet-part-out-loud-distribution-is-the-only-moat-left/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260428-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-28",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Jensen Huang 在 Stanford 重新定義 AI 取代論",
+      "summary": "Huang 在 Stanford GSB：「大多數人不會被 AI 取代，但會被那個用 AI 的人取代。」每個白領未來指揮 100 個 agent，AI 反而把 4000 萬人拉回勞動市場。優勢不在有沒有用 AI，而在能不能 tokenmaxx——把幾小時壓進幾分鐘。",
+      "tags": [
+        "ai-augmentation",
+        "productivity",
+        "future-of-work"
+      ],
+      "url": "https://fortune.com/2026/04/22/jensen-huang-nvidia-ai-replace-workers-not-jobs/",
+      "source": "Jensen Huang • Fortune",
+      "sourceUrl": "https://fortune.com/2026/04/22/jensen-huang-nvidia-ai-replace-workers-not-jobs/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ]
 }
