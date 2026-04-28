@@ -26060,6 +26060,201 @@
       ],
       "source": "Salesforce News",
       "sourceUrl": "https://www.salesforce.com/news/stories/salesforce-headless-360-announcement/"
+    },
+    {
+      "id": "20260428-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "microsoft/VibeVoice",
+      "summary": "微軟把整套 frontier voice AI 全開源：VibeVoice-TTS-1.5B、Realtime-0.5B 串流 TTS、ASR-7B（已併入 HF Transformers）。用 7.5Hz continuous tokenizer，支援 90 分鐘長文 + 4 人對話、ASR 撐 60 分鐘長 audio + 50 種語言。",
+      "tags": [
+        "tts_speech",
+        "voice synthesis",
+        "asr"
+      ],
+      "url": "https://github.com/microsoft/VibeVoice",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "TTS-1.5B / Realtime-0.5B local-ready, ASR-7B quantize-ok",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8952",
+      "summary": "Server router 現在會把 form-data 轉發給 model server，等於 router mode 下也能跑 audio transcription endpoints。對自架語音轉文字 pipeline 是直接打通最後一哩。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "asr"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8952",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases",
+      "price": null,
+      "vram": "16GB OK",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8951",
+      "summary": "新增 fast mat-vec kernels for i-quants，量化模型的矩陣-向量乘法效能直接提升。i-quant（IQ2/IQ3/IQ4）使用者直接受惠。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8951",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases",
+      "price": null,
+      "vram": "16GB OK",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SkyworkAI/Matrix-3D",
+      "summary": "從單張圖或 text prompt 直接生大尺度可探索 3D 場景：panoramic video generation + panoramic 3D reconstruction 兩段式 pipeline。Text2PanoImage ~16GB 剛好卡 5070 Ti，PanoVideoGen-720p-5B 開 low-VRAM 可降到 12GB。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "text to video"
+      ],
+      "url": "https://github.com/SkyworkAI/Matrix-3D",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "Text2PanoImage ~16GB; PanoVideoGen-720p-5B 12GB low-VRAM mode",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "kyutai-labs/ovie",
+      "summary": "Kyutai 新作 OVIE（One View Is Enough）：用 unpaired internet images 訓練 monocular novel view synthesis，不需要 multi-view 配對資料就能從單張照片合成新視角。基於 DINOv2/v3 + MoGe depth。",
+      "tags": [
+        "image_gen",
+        "novel view synthesis"
+      ],
+      "url": "https://github.com/kyutai-labs/ovie",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "16GB OK (DINO-based)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "HKUDS/OpenHarness",
+      "summary": "v0.1.7 (Apr 18)。43 個內建 tools、MCP 整合、on-demand skill loading（Markdown）、多層 permission、streaming tool-call、persistent memory。底下還包了 ohmo personal assistant，串 Feishu/Slack/Telegram/Discord。等於另一套輕量 OpenClaw alternative。",
+      "tags": [
+        "ai_devtools",
+        "agent framework"
+      ],
+      "url": "https://github.com/HKUDS/OpenHarness",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/HKUDS/OpenHarness",
+      "price": null,
+      "vram": "Depends on backend LLM",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Ar9av/obsidian-wiki",
+      "summary": "v2026.04 (Apr 24)。實作 Karpathy 的「LLM Wiki」概念：讓 coding agent 把知識編譯到 Obsidian markdown 互連檔，而不是每次 query LLM。支援 Claude Code/Cursor/Windsurf/Codex/Gemini CLI 等 10+ agents，四階段 ingest pipeline + delta 追蹤。",
+      "tags": [
+        "ai_devtools",
+        "rag_knowledge",
+        "knowledge graph"
+      ],
+      "url": "https://github.com/Ar9av/obsidian-wiki",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/Ar9av/obsidian-wiki",
+      "price": null,
+      "vram": "N/A (uses agent's LLM)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "eugeniughelbur/obsidian-second-brain",
+      "summary": "v0.6.0 (Apr 26)。Claude Code skill 把 Obsidian vault 變成 AI 知識系統：31 個 commands（21 ops + thinking tools + research toolkit）、自動 nightly consolidation、weekly review。賣點是「One URL in, vault rewrites itself」自動更新 5-15 個既有頁。",
+      "tags": [
+        "ai_devtools",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "Claude API (cloud)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "LeoYeAI/openclaw-auto-dream",
+      "summary": "v4.0.0 (Mar 30)。給 OpenClaw agents 的「sleep + dreaming」cognitive memory consolidation：跑 dream cycles 掃 logs、抽 insights、五層記憶（Working/Episodic/Long-term/Procedural/Index）、importance scoring、漸進式 archival 而不是 delete。Cron 排程 + dashboard。",
+      "tags": [
+        "ai_devtools",
+        "memory"
+      ],
+      "url": "https://github.com/LeoYeAI/openclaw-auto-dream",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "Depends on agent LLM",
+      "license": "MIT"
+    },
+    {
+      "id": "20260428-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "TauricResearch/TradingAgents",
+      "summary": "Multi-Agents LLM Financial Trading Framework — 用多 agent 模擬交易室分工（分析、研究、執行）。架構可參考但要套自家 LLM/data。Trending +248 stars 今天。",
+      "tags": [
+        "ai_devtools",
+        "multi-agent"
+      ],
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "Depends on backend LLM",
+      "license": "MIT"
     }
   ]
 }
