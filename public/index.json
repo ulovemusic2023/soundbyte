@@ -26925,6 +26925,111 @@
       "license": null
     },
     {
+      "id": "20260429-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "AWS + OpenAI 上 Bedrock：Managed Agents、GPT-5.5、Codex 全進 AWS",
+      "summary": "OpenAI 解除 Microsoft 雲端獨家後，4/28 與 AWS 宣布合作：Amazon Bedrock 即日 limited preview 提供 OpenAI 最新模型、Codex coding agent，以及 Bedrock Managed Agents（OpenAI agent harness 託管在 AWS）。Sam Altman 上 Stratechery 親自談這件事，象徵 frontier lab 開始把 agent runtime 直接賣進現有雲廠商，不再綁定單一 hyperscaler。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "openai",
+        "aws",
+        "managed-agents"
+      ],
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/",
+      "source": "AWS What's New",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260429-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "NetSuite SuiteCloud Agent Skills — 首個 ERP 上 agentskills.io 開放標準",
+      "summary": "4/28 SuiteConnect San Francisco：Oracle NetSuite 是首個採用 agentskills.io open standard 的 ERP 平台，推出 6 套 SuiteCloud Agent Skills，把 ERP 客製的 best practices（含 60+ UIF 元件規格）包進 25+ AI coding 平台（Claude Code / Cursor / Codex / Copilot）。Anthropic 的 Skills 標準從 dev tool 跨進 enterprise SaaS。",
+      "tags": [
+        "paradigm-shift",
+        "agent-skills-framework",
+        "open-standard",
+        "erp"
+      ],
+      "url": "https://www.prnewswire.com/news-releases/netsuite-brings-ai-powered-speed-and-precision-to-suitecloud-development-302754790.html",
+      "source": "NetSuite via PRNewswire",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/netsuite-brings-ai-powered-speed-and-precision-to-suitecloud-development-302754790.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260429-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "NVIDIA Nemotron 3 Nano Omni — 開源多模態 + 9x 吞吐量",
+      "summary": "4/28 NVIDIA 釋出 Nemotron 3 Nano Omni：30B-A3B hybrid MoE，整合 vision/speech/language，256K context、Conv3D + EVS，宣稱 9x throughput vs 其他 open omni models。Hugging Face / OpenRouter / build.nvidia.com 同步上架，Aible / ASI / Foxconn / H Company / Palantir / Pyler 已採用。",
+      "tags": [
+        "ai-models",
+        "multimodal",
+        "moe",
+        "open-weight"
+      ],
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
+      "source": "NVIDIA Blog",
+      "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260429-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Poolside 首個開源模型 Laguna XS.2 — 36GB Mac 跑 SWE-bench 68.2%",
+      "summary": "4/28 美國 AI 新創 Poolside 發布首個 open-weight coding model Laguna XS.2（33B total / 3B activated MoE，Apache 2.0），SWE-bench Verified 68.2%、SWE-bench Pro 44.5%。可在 36GB RAM Mac 透過 Ollama 跑 local agentic coding；更大的 M.1（225B/23B-A，72.5% SWE-bench Verified）暫時透過 API 免費開放。",
+      "tags": [
+        "ai-models",
+        "open-weight",
+        "ai-agent",
+        "local-first-AI"
+      ],
+      "url": "https://huggingface.co/poolside/Laguna-XS.2",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/04/28/poolside-ai-introduces-laguna-xs-2-and-m-1-agentic-coding-models-reaching-68-2-and-72-5-on-swe-bench-verified/",
+      "price": null,
+      "vram": "36GB unified memory (Mac, via Ollama)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260429-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GitHub Copilot Code Review 開始吃 Actions minutes",
+      "summary": "4/27 GitHub Changelog 公告：6/1 起 Copilot Code Review 除了消耗 AI Credits，還會以一般 Actions per-minute 費率扣 GitHub Actions minutes。Copilot 6/1 全面切換 usage-based billing 後，連 review 都變雙重計費；per-seat 模型已死的證據再加一筆。",
+      "tags": [
+        "ai-coding",
+        "billing",
+        "github-actions"
+      ],
+      "url": "https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260429-ts-003",
       "radar": "tool-scout",
       "date": "2026-04-29",
