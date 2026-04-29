@@ -27081,7 +27081,132 @@
       "stars": 7366,
       "createdDate": "2025-11-07",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260429-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "PowerBeef/QwenVoice (Vocello)",
+      "summary": "macOS 原生 Apple Silicon 離線 TTS app，跑 Qwen3-TTS-12Hz-1.7B（4-bit Speed / 8-bit Quality 兩版）。內建 Custom Voice / Voice Design / Voice Cloning（短 reference clip 即可），UI 用 SwiftUI + MLX shared core + XPC 隔離。模型本身 1.7B 在 RTX 5070 Ti 上跑得動，但 app 本體只支援 macOS 26+ / iOS 26+。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "voice-cloning",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/PowerBeef/QwenVoice",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/29/PowerBeef-QwenVoice.html",
+      "price": null,
+      "vram": "local-ready (Qwen3-TTS-12Hz-1.7B 4-bit/8-bit)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp b8967",
+      "summary": "Blackwell native NVFP4 support（PR #22196，原 #21896 重貼）。RTX 5070 Ti 是 Blackwell 架構，這個 commit 解鎖 native FP4 推理路徑，理論上可以再壓 VRAM、提速度。和 b8966 的 CUDA flash-attn DKQ=320/DV=256（Mistral Small 4 用）連動。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime",
+        "blackwell",
+        "nvfp4"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8967",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8967",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ollama v0.22.1",
+      "summary": "mlxrunner sampler batch across multiple sequences；新增 NVIDIA TensorRT Model Optimizer import 支援；tokenizer 修 multi-regex BPE offset bug；Model batching 支援。修復 desktop app 啟動 kill 掉 active ollama launch session 的 bug。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "mlx",
+        "tensorrt"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.22.1-rc0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.22.1-rc0",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "AgibotTech/Genie-Envisioner",
+      "summary": "機器人操作的 unified world foundation platform — GE-Sim 用 NVIDIA Cosmos2-2B 當底，從指令生成 robot manipulation video。「指令→影片」的 world model 架構值得追，雖然對音樂無直接關係。",
+      "tags": [
+        "image_gen",
+        "video-generation",
+        "world-model",
+        "robotics"
+      ],
+      "url": "https://github.com/AgibotTech/Genie-Envisioner",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/28/AgibotTech-Genie-Envisioner.html",
+      "price": null,
+      "vram": "quantize-ok (Cosmos2-2B 估 16-24GB)",
+      "license": "未標"
+    },
+    {
+      "id": "20260429-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Nutlope/open-deep-research",
+      "summary": "AI 研究報告產生器 — 問問題給你完整 sourced report。Next.js 16 + Together.ai (LLM 規劃/摘要) + Exa (爬網) + Clerk + Drizzle/Neon + S3。流程：規劃 → 迭代搜尋 → 評估是否補搜 → 生成完整報告。Together.ai 是雲端，不是 local-only。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools",
+        "deep-research"
+      ],
+      "url": "https://github.com/Nutlope/open-deep-research",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/29/Nutlope-open-deep-research.html",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "未標"
+    },
+    {
+      "id": "20260429-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "CJackHwang/ds2api",
+      "summary": "把 DeepSeek Web 對話介面包成 OpenAI / Claude / Gemini 三種 API 格式 — 純 Go 後端 + React 管理 WebUI，支援多帳號輪詢、Vercel Serverless / Docker、PoW 純 Go 實作。⚠️ AGPL + 違反 ToS 風險，純研究/個人用。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference",
+        "deepseek",
+        "api-converter"
+      ],
+      "url": "https://github.com/CJackHwang/ds2api",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "AGPL-3.0"
     }
   ],
-  "lastUpdated": "2026-04-29T09:30:00+08:00"
+  "lastUpdated": "2026-04-29T18:10:00+08:00"
 }
