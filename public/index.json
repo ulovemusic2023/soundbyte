@@ -26523,6 +26523,323 @@
       "price": null,
       "vram": "local-ready",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260428-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "GitHub Copilot 全面轉向 usage-based billing",
+      "summary": "GitHub 宣布 6/1 起所有 Copilot 方案改為按用量計費，每方案每月含 AI Credits 額度；Individual 方案拆成 essential 與 professional 兩層，multi-file reasoning 模型升級為高階付費；flat-fee AI coding 訂閱模式正式進入終局。",
+      "tags": [
+        "paradigm-shift",
+        "copilot",
+        "ai-coding",
+        "pricing-model"
+      ],
+      "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "source": "GitHub Blog",
+      "sourceUrl": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+    },
+    {
+      "id": "20260428-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "pip 26.1 推出 PEP 751 lockfiles + dependency cooldowns",
+      "summary": "Python 套件管理在 4/26 拿到兩個遲到很久的關鍵能力：實驗性 PEP 751 pylock.toml lockfile 支援、以及給新版本套件強制的冷卻期間，正面回應 npm/PyPI 供應鏈攻擊潮。Resolver 也離淘汰 legacy 又近一步。",
+      "tags": [
+        "paradigm-shift",
+        "supply-chain-security",
+        "python",
+        "dependency-cooldown",
+        "pylock"
+      ],
+      "url": "https://ichard26.github.io/blog/2026/04/whats-new-in-pip-26.1/",
+      "source": "Richard Si Blog",
+      "sourceUrl": "https://ichard26.github.io/blog/2026/04/whats-new-in-pip-26.1/"
+    },
+    {
+      "id": "20260428-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Show HN: dirac 開源 coding agent 在 Gemini 3 flash preview 上拿下 TerminalBench 第一",
+      "summary": "輕量 OSS agent harness 配 Gemini 3 flash preview，在 TerminalBench 上對 closed frontier setup 反殺；意味 harness 設計 + 小快模型已能挑戰巨型代理棧，open coding agent benchmark 戰局正式打開。",
+      "tags": [
+        "ai-coding",
+        "coding-agent",
+        "terminal-bench",
+        "open-source",
+        "harness-engineering"
+      ],
+      "url": "https://github.com/dirac-run/dirac",
+      "source": "Hacker News (Show HN)",
+      "sourceUrl": "https://news.ycombinator.com/best"
+    },
+    {
+      "id": "20260428-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Microsoft VibeVoice：把 speaker diarization 內建進 Whisper-style 模型",
+      "summary": "Simon Willison 4/27 試了 Microsoft 開源的 VibeVoice，speaker diarization 不再是下游 pipeline，而是直接寫進語音識別模型本體；多人對話轉錄的工程鏈路被壓縮一截。",
+      "tags": [
+        "ai-models",
+        "speech-to-text",
+        "speaker-diarization",
+        "multimodal"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/27/vibevoice/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/27/vibevoice/"
+    },
+    {
+      "id": "20260428-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenAI–Microsoft 的 AGI 條款正式作古，Simon Willison 還原全程",
+      "summary": "原本若 OpenAI 宣告 AGI、Microsoft 對其技術的存取將被限制 — 這個關鍵契約條款已死。Willison 串起 2024–2026 兩家如何透過後續協議把它拆掉，影響 frontier lab 與 hyperscaler 的長期分工。",
+      "tags": [
+        "agi",
+        "openai",
+        "microsoft",
+        "ai-policy",
+        "AGI-clause-sunset"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/"
+    },
+    {
+      "id": "20260428-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Lawrence Paulson：『為什麼不直接用 Lean？』Isabelle 老兵反問",
+      "summary": "劍橋 Paulson 4/23 發文回應 'Why not just use Lean?'：dependent type theory 不是萬靈丹，Isabelle/HOL 仍有自己優勢；formal verification 圈在 AI agent + Lean 熱潮下出現方法論再校準。HN 熱帖。",
+      "tags": [
+        "formal-verification",
+        "lean",
+        "isabelle",
+        "academic"
+      ],
+      "url": "https://lawrencecpaulson.github.io//2026/04/23/Why_not_Lean.html",
+      "source": "Lawrence C. Paulson",
+      "sourceUrl": "https://lawrencecpaulson.github.io//2026/04/23/Why_not_Lean.html"
+    },
+    {
+      "id": "20260428-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Talkie：用 1931 年前文本訓練的 13B vintage LLM",
+      "summary": "純 pre-1931 英文 corpus 訓練的 13B 模型；既是 historical-perspective AI 實驗，也提供乾淨基準研究現代 LLM 帶入了哪些 concept drift / value drift。",
+      "tags": [
+        "ai-models",
+        "historical-corpus",
+        "research",
+        "llm"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/28/talkie/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/28/talkie/"
+    },
+    {
+      "id": "20260428-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Statecharts.dev：階層式狀態機完整參考",
+      "summary": "HN 上又熱起來的 statecharts.dev：David Harel statechart 的完整教學 + 設計指南。Agent loop / UI flow / orchestration 設計越來越像狀態機，這份 reference 在 LLM 時代被重新挖出來。",
+      "tags": [
+        "state-machine",
+        "architecture",
+        "reference",
+        "ui-design"
+      ],
+      "url": "https://statecharts.dev/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/best"
+    },
+    {
+      "id": "20260429-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NVIDIA/personaplex",
+      "summary": "Real-time full-duplex speech-to-speech 對話模型，支援用文字 prompt 控制 persona、用 audio sample 條件化 voice。8 個自然語音 + 10 個變化版，可離線評估。直接做語音替身、客服 bot 都行。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "llm_inference"
+      ],
+      "url": "https://github.com/NVIDIA/personaplex",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/NVIDIA/personaplex",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT (code) / NVIDIA Open Model"
+    },
+    {
+      "id": "20260429-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "akdeb/open-toys",
+      "summary": "全本地語音 AI 平台，給玩具/陪伴機器人用，跑在 Apple Silicon Mac。Whisper ASR + Qwen3-TTS + MLX LLM，少量 sample 就能 voice clone，支援 ESP32-S3 over WebSocket。隱私導向，沒有訂閱費。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "llm_inference"
+      ],
+      "url": "https://github.com/akdeb/open-toys",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/27/akdeb-open-toys.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp b8966",
+      "summary": "CUDA flash-attention 新增 DKQ=320/DV=256, ncols2=32 的 MMA-f16 與 tile kernel —— 直接服務 Mistral Small 4 的 GQA=32。修了 single sinks 配置下 output mismatch 的 bug。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8966",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8966",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ollama v0.22.0",
+      "summary": "新增 NVIDIA Nemotron 3 Omni 和 Poolside Laguna XS.2（號稱第一個 open-weight coding model）。MLX runner 加 logprobs，sampler 變快。Desktop app 防 session 中斷。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.22.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.22.0",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "arc53/DocsGPT",
+      "summary": "v0.17.1 release（4/28）。私有 AI 平台，支援 PDF/Office/audio/網頁，主打 hallucination-free 帶 source citation。可接 cloud LLM 也可全本地，做企業 RAG 搜尋很順手。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/arc53/DocsGPT",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/27/arc53-DocsGPT.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "adoresever/graph-memory",
+      "summary": "OpenClaw 的 knowledge graph memory plugin，從對話自動抽 typed triples，宣稱 75% 上下文壓縮。雙路 recall（entity + community）+ Personalized PageRank，把跨 session 的學習接起來。Sub 自己也能用。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/adoresever/graph-memory",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/28/adoresever-graph-memory.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Agenta-AI/agenta",
+      "summary": "v0.96.10 (4/28)。Open-source LLMOps：prompt playground + version control + evaluation + observability 一站式，支援 50+ LLM。OpenTelemetry-native tracing，要做 prod LLM app 監控的可以看。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/Agenta-AI/agenta",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/28/Agenta-AI-agenta.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "comet-ml/opik-openclaw",
+      "summary": "Comet 官方 OpenClaw plugin，把 agent traces export 到 Opik 觀察平台 —— LLM spans, tool calls, sub-agent requests, run metadata 全部進儀表板。要追 OpenClaw 多 agent 的成本/錯誤就裝這個。v0.2.14 (4/23)。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/comet-ml/opik-openclaw",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/26/comet-ml-opik-openclaw.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260429-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "nateherkai/token-dashboard",
+      "summary": "本地 Claude Code 成本分析儀表板，把 JSONL transcript 轉成 per-prompt 成本、file/tool heatmap、session-level usage。完全本地跑（127.0.0.1:8080），沒有外部 API call。Python 3.8+，零依賴。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/nateherkai/token-dashboard",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/28/nateherkai-token-dashboard.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
     }
-  ]
+  ],
+  "lastUpdated": "2026-04-28"
 }
