@@ -26848,7 +26848,12 @@
       "priority": "paradigm-shift",
       "title": "GitHub Copilot moves all plans to usage-based billing (June 1)",
       "summary": "GitHub 4/28 公告 Copilot 6/1 起全面改 token-based billing — 所有方案吃 monthly AI Credits 額度，超過按 model API rate 計價（input/output/cached tokens 都算）。Per-seat pricing 模型撐不住每日 agent loop 用量，per-request limit 退場、metered billing 成 AI coding 新預設。",
-      "tags": ["paradigm-shift", "ai-coding", "pricing", "copilot-usage-based-billing"],
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "pricing",
+        "copilot-usage-based-billing"
+      ],
       "url": "https://www.theregister.com/2026/04/28/microsofts_github_shifts_to_metered/",
       "source": "The Register",
       "sourceUrl": "https://www.theregister.com/2026/04/28/microsofts_github_shifts_to_metered/",
@@ -26864,7 +26869,12 @@
       "priority": "paradigm-shift",
       "title": "Microsoft 修補 Entra Agent ID Administrator 權限提升漏洞",
       "summary": "Silverfort 揭露：Entra ID 為 AI agent 設的 Agent ID Administrator role 可被濫用 — 只要有這個 role 就能變成任何 service principal 的 owner、加 credential 接管，包括非 agent 類的高權限 SP。99% 的 tenant 至少有 1 個 privileged SP；Microsoft 4/9 全雲端 patch 完成。Agent identity 成新攻擊面。",
-      "tags": ["paradigm-shift", "agent-identity", "security", "entra-id"],
+      "tags": [
+        "paradigm-shift",
+        "agent-identity",
+        "security",
+        "entra-id"
+      ],
       "url": "https://hackread.com/microsoft-entra-agent-id-flaw-tenant-takeover/",
       "source": "Hackread",
       "sourceUrl": "https://hackread.com/microsoft-entra-agent-id-flaw-tenant-takeover/",
@@ -26880,7 +26890,12 @@
       "priority": "paradigm-shift",
       "title": "Salesforce Agent Fabric 升級成 multi-vendor agent control plane",
       "summary": "TDX 2026：Agent Fabric 從 Salesforce 內部 orchestrator 擴成跨 Agentforce / Bedrock / Foundry 的統一控制平面。Agent Broker beta 4 月開放 deterministic orchestration，搭 Agent Script「guided determinism」— LLM 負責 reasoning，hard rule 鎖 critical handoff。MCP Bridge 把既有 API 變 agent-ready 不用改 code。Salesforce 承認 fully autonomous multi-agent 還沒企業 ready。",
-      "tags": ["paradigm-shift", "agent-control-plane", "guided-determinism", "multi-agent"],
+      "tags": [
+        "paradigm-shift",
+        "agent-control-plane",
+        "guided-determinism",
+        "multi-agent"
+      ],
       "url": "https://www.salesforce.com/news/stories/agent-fabric-control-plane-announcement/",
       "source": "Salesforce Newsroom",
       "sourceUrl": "https://www.salesforce.com/news/stories/agent-fabric-control-plane-announcement/",
@@ -26896,14 +26911,177 @@
       "priority": "medium",
       "title": "Visual Studio 4 月更新：Cloud Agent 內建 IDE",
       "summary": "Microsoft devblogs 4/28：VS 2026 內建 GitHub Copilot Cloud Agent — 從 Chat 視窗的 agent picker 選 Cloud，agent 在 remote infra 跑、自動開 issue/PR，你可關掉 IDE 之後回來收 review。Copilot coding agent powered，需 GitHub repo + 開 issue 權限。Local IDE → cloud agent handoff 走進主流 IDE。",
-      "tags": ["ai-coding", "cloud-agent", "copilot", "visual-studio"],
+      "tags": [
+        "ai-coding",
+        "cloud-agent",
+        "copilot",
+        "visual-studio"
+      ],
       "url": "https://devblogs.microsoft.com/visualstudio/visual-studio-april-update-cloud-agent-integration/",
       "source": "Microsoft Visual Studio Blog",
       "sourceUrl": "https://devblogs.microsoft.com/visualstudio/visual-studio-april-update-cloud-agent-integration/",
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260429-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-04-29",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "ConardLi/garden-skills",
+      "summary": "ConardLi 的 open-source Skills 包：web design、knowledge retrieval、image generation 全部一次到位，可以直接 drop 進 Claude Code 用。",
+      "tags": [
+        "claude-code",
+        "agent-skills",
+        "web-design"
+      ],
+      "url": "https://github.com/ConardLi/garden-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-15+stars:>50&s=stars&o=desc",
+      "stars": 1690,
+      "createdDate": "2026-04-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-04-29",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "nexu-io/open-design",
+      "summary": "昨天才開的 repo，已破千星。Local-first Claude Design：19 Skills + 71 brand-grade Design Systems + sandboxed preview + HTML/PDF/PPTX 匯出。多 agent 通用，Apache-2.0。",
+      "tags": [
+        "claude-design",
+        "design-skill",
+        "local-first"
+      ],
+      "url": "https://github.com/nexu-io/open-design",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-04-15",
+      "stars": 1286,
+      "createdDate": "2026-04-28",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260429-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-04-29",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "earthtojake/text-to-cad",
+      "summary": "Open-source CAD harness：用 prompt 直接生成 CAD model，之後接 3D print/engineering pipeline。MIT。",
+      "tags": [
+        "cad",
+        "ai-tool"
+      ],
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-15+stars:>50&s=stars&o=desc",
+      "stars": 1094,
+      "createdDate": "2026-04-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-04-29",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "0x0funky/agent-sprite-forge",
+      "summary": "Agent Skill：從 prompt 生成 2D sprite sheet、透明 PNG frames、animated GIF。給 game dev / 創作者做動態素材，Skill 寫法可以參考。",
+      "tags": [
+        "agent-skill",
+        "sprite",
+        "content-creation"
+      ],
+      "url": "https://github.com/0x0funky/agent-sprite-forge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-15+stars:>50&s=stars&o=desc",
+      "stars": 1042,
+      "createdDate": "2026-04-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-04-29",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "akseolabs-seo/AK-Threads-booster",
+      "summary": "中文 Threads 寫文決策系統：用過去貼文、演算法、社媒心理學做選題、起草、發文前診斷、表現預估、復盤。對應 Vox/brand-strategy 在做的事。",
+      "tags": [
+        "threads",
+        "social-post",
+        "content-strategy"
+      ],
+      "url": "https://github.com/akseolabs-seo/AK-Threads-booster",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-04-15",
+      "stars": 191,
+      "createdDate": "2026-04-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-04-29",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Hao0321/claude-skill-social-post",
+      "summary": "台灣 Hao 做的 Claude Code skill：學 FB 語氣、自動排 14 天內容曆、發 FB/IG/Threads/X。第一篇就 72K 觸及/358 讚/443 留言，附 Day 2 失敗復盤。",
+      "tags": [
+        "claude-skill",
+        "social-post",
+        "threads"
+      ],
+      "url": "https://github.com/Hao0321/claude-skill-social-post",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-04-15",
+      "stars": 38,
+      "createdDate": "2026-04-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-04-29",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "addyosmani/agent-skills",
+      "summary": "Addy Osmani（Google Chrome）整理的 production-grade engineering skills。本週 +6K，跟另外兩套 skill 包互補。",
+      "tags": [
+        "claude-code",
+        "agent-skills"
+      ],
+      "url": "https://github.com/addyosmani/agent-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 25343,
+      "createdDate": "2026-02-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260429-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-04-29",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "AIDC-AI/Pixelle-Video",
+      "summary": "全自動短影片引擎：腳本 → 素材 → 剪輯 → 配音 → 上字幕一條龍。最近重新爆發 +2.3K，做內容/音樂宣傳影片可以參考它的 pipeline。",
+      "tags": [
+        "video-generation",
+        "short-video",
+        "content-pipeline"
+      ],
+      "url": "https://github.com/AIDC-AI/Pixelle-Video",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 7366,
+      "createdDate": "2025-11-07",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-04-29"
+  "lastUpdated": "2026-04-29T09:30:00+08:00"
 }
