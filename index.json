@@ -26839,7 +26839,71 @@
       "price": null,
       "vram": "local-ready",
       "license": "MIT"
+    },
+    {
+      "id": "20260429-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GitHub Copilot moves all plans to usage-based billing (June 1)",
+      "summary": "GitHub 4/28 公告 Copilot 6/1 起全面改 token-based billing — 所有方案吃 monthly AI Credits 額度，超過按 model API rate 計價（input/output/cached tokens 都算）。Per-seat pricing 模型撐不住每日 agent loop 用量，per-request limit 退場、metered billing 成 AI coding 新預設。",
+      "tags": ["paradigm-shift", "ai-coding", "pricing", "copilot-usage-based-billing"],
+      "url": "https://www.theregister.com/2026/04/28/microsofts_github_shifts_to_metered/",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/2026/04/28/microsofts_github_shifts_to_metered/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260429-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Microsoft 修補 Entra Agent ID Administrator 權限提升漏洞",
+      "summary": "Silverfort 揭露：Entra ID 為 AI agent 設的 Agent ID Administrator role 可被濫用 — 只要有這個 role 就能變成任何 service principal 的 owner、加 credential 接管，包括非 agent 類的高權限 SP。99% 的 tenant 至少有 1 個 privileged SP；Microsoft 4/9 全雲端 patch 完成。Agent identity 成新攻擊面。",
+      "tags": ["paradigm-shift", "agent-identity", "security", "entra-id"],
+      "url": "https://hackread.com/microsoft-entra-agent-id-flaw-tenant-takeover/",
+      "source": "Hackread",
+      "sourceUrl": "https://hackread.com/microsoft-entra-agent-id-flaw-tenant-takeover/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260429-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Salesforce Agent Fabric 升級成 multi-vendor agent control plane",
+      "summary": "TDX 2026：Agent Fabric 從 Salesforce 內部 orchestrator 擴成跨 Agentforce / Bedrock / Foundry 的統一控制平面。Agent Broker beta 4 月開放 deterministic orchestration，搭 Agent Script「guided determinism」— LLM 負責 reasoning，hard rule 鎖 critical handoff。MCP Bridge 把既有 API 變 agent-ready 不用改 code。Salesforce 承認 fully autonomous multi-agent 還沒企業 ready。",
+      "tags": ["paradigm-shift", "agent-control-plane", "guided-determinism", "multi-agent"],
+      "url": "https://www.salesforce.com/news/stories/agent-fabric-control-plane-announcement/",
+      "source": "Salesforce Newsroom",
+      "sourceUrl": "https://www.salesforce.com/news/stories/agent-fabric-control-plane-announcement/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260429-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Visual Studio 4 月更新：Cloud Agent 內建 IDE",
+      "summary": "Microsoft devblogs 4/28：VS 2026 內建 GitHub Copilot Cloud Agent — 從 Chat 視窗的 agent picker 選 Cloud，agent 在 remote infra 跑、自動開 issue/PR，你可關掉 IDE 之後回來收 review。Copilot coding agent powered，需 GitHub repo + 開 issue 權限。Local IDE → cloud agent handoff 走進主流 IDE。",
+      "tags": ["ai-coding", "cloud-agent", "copilot", "visual-studio"],
+      "url": "https://devblogs.microsoft.com/visualstudio/visual-studio-april-update-cloud-agent-integration/",
+      "source": "Microsoft Visual Studio Blog",
+      "sourceUrl": "https://devblogs.microsoft.com/visualstudio/visual-studio-april-update-cloud-agent-integration/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-04-28"
+  "lastUpdated": "2026-04-29"
 }
