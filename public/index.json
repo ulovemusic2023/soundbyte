@@ -27851,6 +27851,113 @@
       "price": null,
       "vram": "depends on LLM",
       "license": "未確認"
+    },
+    {
+      "id": "20260430-sw-009",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 把 AI agent 升格為自家『付費客戶』",
+      "summary": "Cloudflare 4/30 發 Agents+Stripe+Projects：AI agent 可代使用者自動 sign-up 帳號、買 domain、訂閱付費方案、拿 API token 部署 code，全程只需人類點頭同意 ToS。同步推 payment token 讓 agent 用 usage-based 被 billed。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agent-as-customer",
+        "agent-payments",
+        "headless-saas"
+      ],
+      "url": "https://blog.cloudflare.com/agents-stripe-projects/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/agents-stripe-projects/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-010",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Bun's Zig fork 跑出 4x 編譯加速，因 Zig 禁 LLM PR 永遠不會 upstream",
+      "summary": "Bun 在自家 Zig fork 加上 parallel semantic analysis + multiple codegen units，編譯快 4 倍；這層改動大量倚賴 Anthropic Claude Code。Zig 維持 LLM-authored PR 全面禁止，雙方決裂——AI policy 第一次造成 OSS 硬分叉。",
+      "tags": [
+        "paradigm-shift",
+        "ai-policy",
+        "fork-divergence",
+        "zig",
+        "bun"
+      ],
+      "url": "https://ziggit.dev/t/bun-s-zig-fork-got-4x-faster-compilation-times/15183",
+      "source": "Ziggit",
+      "sourceUrl": "https://ziggit.dev/t/bun-s-zig-fork-got-4x-faster-compilation-times/15183",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-011",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Loris Cro：Zig 為什麼禁 LLM 貢獻——Contributor Poker",
+      "summary": "Zig VP of Community 寫長文解釋反 AI PR 立場：押的是 contributor 這個人，不是這次 PR 的內容（『play the person, not the cards』）。LLM PR 多半是 hallucinated 噪音與 10K-line 巨無霸；繞過 contributor onboarding = 摧毀社群長期 ROI。",
+      "tags": [
+        "open-source-governance",
+        "ai-contribution-policy",
+        "contributor-poker"
+      ],
+      "url": "https://kristoff.it/blog/contributor-poker-and-ai/",
+      "source": "Loris Cro's Blog",
+      "sourceUrl": "https://kristoff.it/blog/contributor-poker-and-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-012",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenAI 開放 GPT-5.5-Cyber 給 critical defenders",
+      "summary": "Sam Altman 宣布 GPT-5.5-Cyber 即將 rollout 給 approved cyber defender，著重 vulnerability 偵測、threat 分析、incident response。frontier lab 把 cyber 能力做成獨立 SKU，與 Anthropic Mythos 形成 dual-use AI 雙寡頭軌道。",
+      "tags": [
+        "ai-models",
+        "cyber-permissive",
+        "gated-access",
+        "frontier-safety"
+      ],
+      "url": "https://www.helpnetsecurity.com/2026/04/24/openai-gpt-5-5-cybersecurity-safeguards/",
+      "source": "Help Net Security",
+      "sourceUrl": "https://www.helpnetsecurity.com/2026/04/24/openai-gpt-5-5-cybersecurity-safeguards/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-013",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "LiteLLM CVE-2026-42208：AI Gateway pre-auth SQLi 36 小時內被野外攻擊",
+      "summary": "LiteLLM 1.83.7 修了 CVSS 9.3 pre-auth SQL injection，unauth 攻擊者可寫入 / 讀取存著 OpenAI / Anthropic / AWS 上游 key 的 litellm_credentials 表。Sysdig 4/26 16:17 UTC 觀測到野外 exploit，距 GitHub Advisory 約 26 小時。",
+      "tags": [
+        "security",
+        "supply-chain",
+        "ai-gateway",
+        "litellm",
+        "cve"
+      ],
+      "url": "https://www.sysdig.com/blog/cve-2026-42208-targeted-sql-injection-against-litellms-authentication-path-discovered-36-hours-following-vulnerability-disclosure",
+      "source": "Sysdig",
+      "sourceUrl": "https://www.sysdig.com/blog/cve-2026-42208-targeted-sql-injection-against-litellms-authentication-path-discovered-36-hours-following-vulnerability-disclosure",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-04-30T09:13:16.894358"
