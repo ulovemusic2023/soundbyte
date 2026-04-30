@@ -27398,6 +27398,169 @@
       "price": null,
       "vram": "quantize-ok",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260430-sw-001",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor SDK — programmatic agents as a TypeScript primitive",
+      "summary": "Cursor 4/29 開放 Cursor SDK public beta：用幾行 TypeScript 跑同一套 Cursor desktop / CLI / web 的 agent runtime，可 local 執行也可在 Cursor cloud VM 跑。CI/CD pipeline、產品內 embed、end-to-end automation 直接用 npm install @cursor/sdk 開幹。Coding agent 不再只是 IDE 功能，而是被當成可被別的程式呼叫的 SDK。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agent-framework",
+        "agent-sdk"
+      ],
+      "url": "https://cursor.com/blog/typescript-sdk",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/typescript-sdk",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-002",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain — The Runtime Behind Production Deep Agents",
+      "summary": "LangChain 4/29 公開 Deep Agents production runtime 設計：MIT licensed、走 MCP / A2A 等 open protocol、memory 放使用者自己的 Postgres。明確主張 production agent infra 必須 model-agnostic + open + 自己掌控 state，反向逼 vendor lock-in 模型。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "mcp",
+        "architecture"
+      ],
+      "url": "https://www.langchain.com/blog/runtime-behind-production-deep-agents",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/runtime-behind-production-deep-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-003",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google Cloud Agents CLI — agent dev lifecycle 從 prototype 到 prod",
+      "summary": "Google Cloud 4/28 在 Agent Platform 加了 Agents CLI，把 agent 從 local prototype 到 production deployment 整套生命週期工具化。和 Gemini Enterprise Agent Platform / A2A 協同，Agent Control Plane 從 console 延伸到 CLI。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "devops-infra"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/agents-cli-google-cloud/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/agents-cli-google-cloud/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-004",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison — LLM 0.32a0 backwards-compatible refactor",
+      "summary": "Simon 4/29 釋出 llm 0.32a0：input 從單字串改成 message sequence、output 改成 stream of typed parts。意義在於把 CLI 工具的 model interface 直接對齊現代 multimodal / tool-use API 的形狀，plugin 可逐步升級。",
+      "tags": [
+        "ai-agent",
+        "prompt-engineering",
+        "tool-use"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/29/llm/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/29/llm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-005",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Matt Pocock Skills — .claude directory as open repo",
+      "summary": "TS 圈知名 Matt Pocock 4/28 把自己的 .claude/ 整個倒到 GitHub mattpocock/skills，21 個 Markdown skill 涵蓋 PRD writing / TDD loop / pre-commit guard / Obsidian vault；24h 內 22K stars 衝上 GitHub Trending #1。Agent skill 開始像 dotfiles 一樣被個人化打包公開，標誌『個人 skill 倉庫』成為新 dev artifact。",
+      "tags": [
+        "ai-agent",
+        "ai-coding",
+        "agent-skills-framework"
+      ],
+      "url": "https://github.com/mattpocock/skills",
+      "source": "Matt Pocock",
+      "sourceUrl": "https://github.com/mattpocock/skills",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-006",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AWS DevOps Agent — GA for automated incident investigation",
+      "summary": "AWS 4/28 把 DevOps Agent 推上 GA：generative AI assistant 跨 AWS 環境做 troubleshooting / deployment 分析 / 自動化 ops，把 SRE incident response 流程往 autonomous 推一階。",
+      "tags": [
+        "ai-agent",
+        "devops-infra",
+        "sre",
+        "observability"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/aws-devops-agent-ga/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/aws-devops-agent-ga/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-007",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic 4/30 retire 1M context beta on Sonnet 4 / 4.5",
+      "summary": "今天起 Anthropic 關掉 Sonnet 4 / 4.5 的 context-1m-2025-08-07 beta header，超過 200K token 直接 reject。要繼續用 1M 必須遷移到 Sonnet 4.6 或 Opus 4.6（已 GA、無 surcharge、$3/$15 per M）。長 prompt agent loop 需要立刻檢查 model 設定。",
+      "tags": [
+        "ai-models",
+        "agent-framework",
+        "breaking-change"
+      ],
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "source": "Anthropic API Docs",
+      "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-sw-008",
+      "radar": "software-dev",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare Q1 2026 Internet Disruption Summary",
+      "summary": "4/29 Q1 報告盤點全球 Internet 中斷：Iran 持續封鎖至四月底，是近年觀測到最長持續中斷之一；含 cable cuts / 電力 / 政策 shutdown 全景。對跨國 service availability 設計與 DR 規劃有用。",
+      "tags": [
+        "infrastructure",
+        "observability",
+        "distributed-systems"
+      ],
+      "url": "https://blog.cloudflare.com/q1-2026-internet-disruption-summary/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/q1-2026-internet-disruption-summary/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-04-30T00:19:44Z"
