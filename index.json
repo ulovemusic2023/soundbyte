@@ -27681,6 +27681,176 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260430-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ollama/ollama v0.22.0",
+      "summary": "4/28 release。新增兩個重量級模型支援：NVIDIA Nemotron 3 Omni（多模態）和 Poolside Laguna XS.2（號稱第一個 open-weight coding model）。MLX 性能與 tokenizer 處理也有改進。",
+      "tags": [
+        "ollama",
+        "llm_inference",
+        "nemotron",
+        "poolside",
+        "mlx"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.22.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.22.0",
+      "price": null,
+      "vram": "Nemotron 3 Omni 多模態 / Poolside Laguna XS.2 coding",
+      "license": "MIT"
+    },
+    {
+      "id": "20260430-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ollama/ollama v0.21.2 (OpenClaw integration)",
+      "summary": "4/23 release。直接整合 OpenClaw onboarding workflow + Ollama web search plugin 進 OpenClaw。對 Gary 來說最有感——不用再自己接 MCP 或寫 wrapper。",
+      "tags": [
+        "ollama",
+        "llm_inference",
+        "openclaw",
+        "integration"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.21.2",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.21.2",
+      "price": null,
+      "vram": "depends on local model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260430-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8983",
+      "summary": "4/30 build。speculative decoding 大幅優化（自動 discard 低機率 draft token、修正 vocab 相容性檢查），Hexagon memory/buffer 改成可設定（autodetect），CUDA SSM convolution + bias + activation kernel fused。",
+      "tags": [
+        "llama.cpp",
+        "llm_inference",
+        "speculative_decoding",
+        "cuda"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8983",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8983",
+      "price": null,
+      "vram": "depends on quantized model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260430-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "skyiron/ComfyUI-TTS-Audio-Suite",
+      "summary": "ComfyUI 多引擎 TTS + Voice Conversion 套件。支援 RVC、Chatterbox（含 23 語多語版）、F5-TTS、Higgs Audio 2、Microsoft VibeVoice，VibeVoice 模式可生成最長 90 分鐘音檔、雙模式多人對話。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "vibevoice",
+        "comfyui",
+        "rvc"
+      ],
+      "url": "https://github.com/skyiron/ComfyUI-TTS-Audio-Suite",
+      "source": "Web Search (TTS releases)",
+      "sourceUrl": "https://github.com/skyiron/ComfyUI-TTS-Audio-Suite",
+      "price": null,
+      "vram": "depends on engine",
+      "license": "MIT"
+    },
+    {
+      "id": "20260430-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "jianchang512/pyvideotrans v3.99",
+      "summary": "4/14 release。完整影片翻譯+配音 pipeline：speech recognition + 字幕翻譯 + 多角色 dubbing + 音畫同步。整合 Edge-TTS / F5-TTS / CosyVoice / GPT-SoVITS / ChatTTS / OpenAI / Azure。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai",
+        "cosyvoice",
+        "gpt-sovits",
+        "video_translation"
+      ],
+      "url": "https://github.com/jianchang512/pyvideotrans",
+      "source": "GitHub Topics (text-to-speech)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "depends on TTS engine",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260430-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GabrielMartinMoran/mind",
+      "summary": "AI agent 用的 persistent memory layer——讓 agent 跨 session 維持 contextual memory。OpenClaw 的 memory 機制類似但只在自家生態，這個是通用層。",
+      "tags": [
+        "rag_knowledge",
+        "memory",
+        "agent",
+        "embedding"
+      ],
+      "url": "https://github.com/GabrielMartinMoran/mind",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "depends on embedding model",
+      "license": "未確認"
+    },
+    {
+      "id": "20260430-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "espressif/esp-claw",
+      "summary": "Espressif 官方：在 ESP32 chip 上跑 conversational AI agent。VRAM 不適用（ESP32 沒有 GPU），但 edge AI / IoT 應用值得追。",
+      "tags": [
+        "ai_devtools",
+        "edge_inference",
+        "esp32",
+        "iot"
+      ],
+      "url": "https://github.com/espressif/esp-claw",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "ESP32 (microcontroller)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260430-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "obra/superpowers",
+      "summary": "Agentic skills framework + 軟體開發方法論。今天 GitHub Trending 衝很高（+1.6k），跟 mattpocock/skills 同類但更完整的方法論派。",
+      "tags": [
+        "ai_devtools",
+        "coding_agent",
+        "skills_framework"
+      ],
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "depends on LLM",
+      "license": "未確認"
     }
   ],
   "lastUpdated": "2026-04-30T09:13:16.894358"
