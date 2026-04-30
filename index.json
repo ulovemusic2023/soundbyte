@@ -27561,7 +27561,127 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260430-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-04-30",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Anthropic 的「危險到不能釋出」悖論",
+      "summary": "Ben Thompson 拆解 Anthropic 宣稱新模型太強而不發佈的敘事張力。表面是「狼來了」續集（Anthropic 的安全警告史），但寓言的真結局是狼最後還是來了。框架：當能力宣稱與市場行為脫鉤時，外界要用什麼角度解讀——這是 AI 公司 narrative strategy 的核心題目。",
+      "tags": [
+        "ai-safety",
+        "narrative-strategy",
+        "anthropic"
+      ],
+      "url": "https://stratechery.com/2026/myth-and-mythos/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/myth-and-mythos/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-04-30",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "把 AI 當「道德繼承者」而非工具",
+      "summary": "KK 寫給機器人的 catechism（問答錄），提出反直覺的核心價值——humility（謙遜）。理由：AI 最大的能力是「給答案」，最大的風險也是「給答案」；humility 是唯一能把優勢從危險中分離的內建安全閥。重新框架：AI 不是奴隸也不是主人，是文明價值的下一代繼承者。",
+      "tags": [
+        "ai-philosophy",
+        "ethics-framework",
+        "mental-model"
+      ],
+      "url": "https://kk.org/thetechnium/a-catechism-for-robots/",
+      "source": "Kevin Kelly • The Technium",
+      "sourceUrl": "https://kk.org/thetechnium/a-catechism-for-robots/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-04-30",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "不要在產品裡塞 AI——讓 agent 能用你的產品",
+      "summary": "37signals 過去 18 個月做了一堆 AI feature，全部沒上線——做不到「真的有用且使用者想用」。新策略：讓 Basecamp 全面 agent-accessible（API + CLI + skills），讓 ChatGPT、Gemini 的 agent 直接操作。Distribution 邏輯翻轉：agent 變主流入口後，API 才是門面，原生 AI feature 是徒勞。",
+      "tags": [
+        "agent-strategy",
+        "ai-distribution",
+        "product-strategy"
+      ],
+      "url": "https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949",
+      "source": "DHH • world.hey.com",
+      "sourceUrl": "https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-04-30",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "員工偷用 ChatGPT 不是違規，是訊號",
+      "summary": "HBR 翻轉企業 AI 採用視角：員工繞過 IT 偷用消費級 AI（個人 ChatGPT、Claude）不是合規問題，是「企業 AI 工具不夠好」的需求訊號。框架：Shadow AI 是市場研究不是 risk。把那股能量導入正式 enterprise strategy，比 ban 更有效。",
+      "tags": [
+        "enterprise-ai",
+        "organizational-design",
+        "demand-signal"
+      ],
+      "url": "https://hbr.org/2026/04/the-hidden-demand-for-ai-inside-your-company",
+      "source": "HBR",
+      "sourceUrl": "https://hbr.org/2026/04/the-hidden-demand-for-ai-inside-your-company",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-04-30",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "The most AI proof job in the world is entrepreneurship",
+      "summary": "Tobi Lütke 的 AI 時代生存指南：不是學新技能、不是進大公司，是自己當老闆。AI 替代任務，不替代「決定要做什麼」。\"The most AI proof job in the world is entrepreneurship. Use it to make products and services. Build more companies. On Shopify or otherwise.\"",
+      "tags": [
+        "entrepreneurship",
+        "ai-future",
+        "quotable"
+      ],
+      "url": "https://x.com/tobi/status/2039335171913076791",
+      "source": "Tobi Lütke",
+      "sourceUrl": "https://x.com/tobi/status/2039335171913076791",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260430-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-04-30",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Good with AI vs not good with AI",
+      "summary": "Naval 重新切割人才市場——年資邏輯被 AI-leverage 邏輯取代，這是新版的 specific knowledge。\"It's not about junior vs senior, it's about 'good with AI' vs 'not good with AI.'\"",
+      "tags": [
+        "talent",
+        "ai-leverage",
+        "quotable"
+      ],
+      "url": "https://x.com/naval/status/2029142431405392034",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://x.com/naval/status/2029142431405392034",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-04-30T00:19:44Z"
+  "lastUpdated": "2026-04-30T09:13:16.894358"
 }
