@@ -27311,7 +27311,94 @@
       "price": null,
       "vram": "local-ready",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260430-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "deepseek-ai/DeepSeek-V4-Flash",
+      "summary": "DeepSeek 把 V4 Preview 開源 weights：Flash 版 284B / 13B active，1M context，FP4+FP8 mixed，pre-train 32T tokens。MIT 授權，HF 上一個月就 96k 下載。對在地團隊最現實的選項是 Flash（Pro 是 1.6T，工作站才有戲）。",
+      "tags": [
+        "llm_inference",
+        "deepseek",
+        "quantization",
+        "context_length",
+        "moe"
+      ],
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260430-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "open-mmlab/Amphion (Vevo2 release)",
+      "summary": "Amphion 上了 Vevo2：unified prosody learning，一套框架同時做 TTS / SVS / VC / SVC / Singing Voice Editing / Singing Style Conversion / Melody Control。對我們做歌聲轉換 + 編輯的場景剛好對位。Paper: arXiv:2508.16332。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "audio_music_ai",
+        "singing_voice_conversion",
+        "vevo2"
+      ],
+      "url": "https://github.com/open-mmlab/Amphion",
+      "source": "GitHub Topics (singing-voice-conversion)",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "MIT"
+    },
+    {
+      "id": "20260430-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "neuphonic/neutts",
+      "summary": "On-device TTS：NeuTTS-Air 360M / NeuTTS-Nano 120M，Q4 量化在手機 CPU 跑 20-45 tok/s、RTX 4090 上 16k+ tok/s。支援 EN / ES / DE / FR。Air 是 Apache 2.0；Nano 是 NeuTTS Open License 1.0。即時 voice cloning。",
+      "tags": [
+        "tts_speech",
+        "on_device",
+        "voice_cloning",
+        "edge_inference"
+      ],
+      "url": "https://github.com/neuphonic/neutts",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0 / NeuTTS Open License 1.0"
+    },
+    {
+      "id": "20260430-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-04-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Unsloth Dynamic 2.0 GGUFs + QAT",
+      "summary": "Unsloth 把 Dynamic 2.0 升級到所有模型（含 dense + MoE，以前只支援 MoE），1.5M tokens hand-curated calibration。同時和 PyTorch 合作做 QAT，能救回 4-bit 量化掉的 70% 精度，benchmark +1-3%。直接影響我們 Qwen3.6 / Gemma 4 的本地部署品質。",
+      "tags": [
+        "llm_training",
+        "quantization",
+        "gguf",
+        "qat",
+        "unsloth"
+      ],
+      "url": "https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs",
+      "source": "Unsloth Docs",
+      "sourceUrl": "https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-04-29T18:10:00+08:00"
+  "lastUpdated": "2026-04-30T00:19:44Z"
 }
