@@ -27958,7 +27958,191 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260501-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "mudler/apex-quant",
+      "summary": "LocalAI 團隊出手：MoE-aware 混合精度量化策略，逐 tensor / 逐 layer 配 bit-width，靠 MoE 結構性稀疏性壓更狠。在 Qwen3.5-35B-A3B 上 APEX I-Quality (21.3 GB) 直接打贏 Unsloth UD-Q8_K_XL (45.3 GB) — perplexity、HellaSwag 全勝，體積一半。免改 llama.cpp 程式，純 GGUF。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "llama.cpp",
+        "moe"
+      ],
+      "url": "https://github.com/mudler/apex-quant",
+      "source": "GitHub Search (LocalAI team)",
+      "sourceUrl": "https://github.com/mudler/apex-quant",
+      "price": null,
+      "vram": "Quantize-ok (21.3GB I-Quality, 12.2GB Mini fits 16GB)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260501-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "quantumaikr/quant.cpp",
+      "summary": "LLM 推理新玩法：純 C、零依賴、單一 header library，6.4x KV cache 壓縮 + +3% PPL，128K context 跑在 16GB Mac 上。Ollama 風格 CLI（pip install quantcpp）支援 OpenAI 相容 server。標語「Beyond RAG: load the whole document」直接挑戰 chunking 必要性。",
+      "tags": [
+        "llm_inference",
+        "kv-cache",
+        "quantization",
+        "on-device"
+      ],
+      "url": "https://github.com/quantumaikr/quant.cpp",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/quantumaikr/quant.cpp",
+      "price": null,
+      "vram": "Local-ready (Qwen3-4B Q4 ~2.5GB)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260501-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "codename0og/codename-rvc-fork-4",
+      "summary": "Applio-based RVC fork v4，內建多種自訂 vocoder 架構（HiFi-GAN / RefineGAN / RingFormer / PCPH-GAN）+ MPD/MSD/MRD discriminators。針對 dataset preprocessing（loudness normalization、LUFS auto-finder）有更嚴格的要求。對玩 RVC 想試新架構的人有料。",
+      "tags": [
+        "rvc",
+        "voice conversion",
+        "svc_voice"
+      ],
+      "url": "https://github.com/codename0og/codename-rvc-fork-4",
+      "source": "GitHub Topics (singing-voice-conversion)",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "Local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260501-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ByteDance-Seed/In-Place-TTT",
+      "summary": "ICLR 2026 Oral：drop-in test-time training for Transformer LLMs。在 inference 時就地做 TTT，不需改架構。Paper code 釋出（VeOmni），附 Qwen3-8B / LLaMA-3.1-8B 推薦 config，可訓練 + 轉檔 + 推理 + eval 完整 stack。",
+      "tags": [
+        "llm_training",
+        "test-time training",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/ByteDance-Seed/In-Place-TTT",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/30/ByteDance-Seed-In-Place-TTT.html",
+      "price": null,
+      "vram": "Cloud-only (8B+ TTT 訓練 >24GB)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260501-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "abdelfattah-lab/NVFP4-RaZeR",
+      "summary": "Cornell 出品：擴展 NVFP4 格式，把冗餘的 FP4 zero 重新映射成額外特殊量化值，靠 block scale 編碼 metadata。同樣記憶體 footprint、更高精度。支援 Llama / Qwen3，已加 HiFloat4 fake quantizer 模擬。",
+      "tags": [
+        "quantization",
+        "nvfp4",
+        "llm_inference"
+      ],
+      "url": "https://github.com/abdelfattah-lab/NVFP4-RaZeR",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/abdelfattah-lab/NVFP4-RaZeR",
+      "price": null,
+      "vram": "Quantize-ok",
+      "license": "MIT"
+    },
+    {
+      "id": "20260501-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "verygoodplugins/automem",
+      "summary": "Graph + vector 雙層記憶服務，給 AI assistant 持久關聯式記憶。問「為什麼選 PostgreSQL」會帶回原因 + 替代方案 + 後續決策。LoCoMo benchmark 89.27%。後端用 FalkorDB，可 self-host (Docker / Railway)，跨 Claude/Cursor/ChatGPT/Codex 共用。",
+      "tags": [
+        "rag",
+        "memory",
+        "knowledge_graph",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/verygoodplugins/automem",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/30/verygoodplugins-automem.html",
+      "price": null,
+      "vram": "Local-ready (embedding + graph)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260501-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "rdumasia303/deepseek_ocr_app",
+      "summary": "把 DeepSeek-OCR 包成可用的 app，處理多頁掃描 PDF。對掃過的紙本歌譜 / 合約 / 發票直接 OCR 出結構化文字。",
+      "tags": [
+        "ocr",
+        "cv_ocr",
+        "deepseek"
+      ],
+      "url": "https://github.com/rdumasia303/deepseek_ocr_app",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/30/rdumasia303-deepseek_ocr_app.html",
+      "price": null,
+      "vram": "Local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260501-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "IDEA-Research/SceneMaker",
+      "summary": "從單張影像生成 3D 場景，支援 de-occlusion（推測被遮擋部分）。給 MV / 視覺化專案做 2D→3D 場景重建。",
+      "tags": [
+        "image_gen",
+        "3d_scene",
+        "image-to-3d"
+      ],
+      "url": "https://github.com/IDEA-Research/SceneMaker",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/29/IDEA-Research-SceneMaker.html",
+      "price": null,
+      "vram": "Quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260501-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "googleapis/genai-toolbox",
+      "summary": "Google 出品：開源 MCP toolbox，把 AI agent 接到資料庫（MySQL、Postgres、BigQuery 等）。MCP protocol 標準化，等於幫 agent 補上「直接查 DB」的能力。",
+      "tags": [
+        "ai_devtools",
+        "mcp",
+        "database"
+      ],
+      "url": "https://github.com/googleapis/genai-toolbox",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/30/googleapis-mcp-toolbox.html",
+      "price": null,
+      "vram": "Local-ready",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-04-30T09:13:16.894358"
+  "lastUpdated": "2026-05-01T08:17:13.237370+08:00"
 }
