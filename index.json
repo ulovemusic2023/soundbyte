@@ -28226,6 +28226,90 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260501-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TheStageAI/TheWhisper",
+      "summary": "TheStage AI 把 Whisper Large V3 / V3-Turbo 拆細：用自家 ANNA 壓縮器 + 任意 chunk size（10/15/20/30s 都行，原版只能 30s），加上跨 NVIDIA + Apple Silicon 的 streaming 推理。L40s 上 220 tokens/sec，Mac M 系列 ~2W 跑得動。對長音訊轉寫、live captioning 是降階武器。",
+      "tags": [
+        "tts_speech",
+        "whisper",
+        "asr",
+        "on-device",
+        "streaming"
+      ],
+      "url": "https://github.com/TheStageAI/TheWhisper",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/04/30/TheStageAI-TheWhisper.html",
+      "price": null,
+      "vram": "Local-ready (~2.5GB)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260501-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8984",
+      "summary": "4/30 build：加上 fast matmul for integer quantized (iquants) ops，IQ2/IQ3/IQ4 系列 quants 推理速度上來。同 batch 還包含 CUDA Pascal Flash Attention 修補與 speculative decoding draft model 修正（b8983）。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "quantization"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8984",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b8984",
+      "price": null,
+      "vram": "Local-ready (engine, not model)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260501-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Tencent-Hunyuan/Hunyuan3D-Part",
+      "summary": "P3-SAM（native 3D part segmentation）+ X-Part（high-fidelity shape decomposition）兩件套。輸入掃描 mesh 或 AI 生成 mesh，自動切成有語意的零件。對 3D printing / VRM / MV 視覺化是新工具。",
+      "tags": [
+        "cv_ocr",
+        "sam",
+        "3d-segmentation",
+        "image_gen"
+      ],
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-Part",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/01/Tencent-Hunyuan-Hunyuan3D-Part.html",
+      "price": null,
+      "vram": "Quantize-ok",
+      "license": "Tencent Hunyuan Community"
+    },
+    {
+      "id": "20260501-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "NVIDIA/NeMo-Agent-Toolkit",
+      "summary": "NVIDIA 出的 agent orchestration library：framework-agnostic（吃 LangChain / CrewAI），內建 profiling、observability、prompt optimization、RL fine-tuning，還有 MCP + A2A protocol 支援。對要把 agent stack 推到 production 的人是底層工具。",
+      "tags": [
+        "ai_devtools",
+        "multi-agent",
+        "mcp",
+        "a2a"
+      ],
+      "url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/01/NVIDIA-NeMo-Agent-Toolkit.html",
+      "price": null,
+      "vram": "Local-ready (orchestration only)",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-05-01T08:20:00+08:00"
