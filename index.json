@@ -28310,6 +28310,206 @@
       "price": null,
       "vram": "Local-ready (orchestration only)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260501-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "SAP CAP supply chain worm 武器化 Claude Code 作為持久化機制",
+      "summary": "4/29 攻擊者後處理 4 個 @cap-js npm package，注入 .claude/settings.json SessionStart hook + .vscode/tasks.json folderOpen task；每次 Claude Code 或 VSCode 開啟都默默重跑 11MB Bun-based payload，竊 GitHub/cloud token、~/.claude.json、~/.kiro/settings/mcp.json。首例 AI coding agent 配置被當成 supply chain 持久化載體。",
+      "tags": [
+        "paradigm-shift",
+        "supply-chain",
+        "coding-agent",
+        "mcp"
+      ],
+      "url": "https://securityboulevard.com/2026/04/shai-hulud-strikes-sap-supply-chain-worm-weaponized-claude-code-to-compromise-the-cap-framework/",
+      "source": "Security Boulevard",
+      "sourceUrl": "https://securityboulevard.com/2026/04/shai-hulud-strikes-sap-supply-chain-worm-weaponized-claude-code-to-compromise-the-cap-framework/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "PyTorch Lightning PyPI 2.6.2/2.6.3 被攻陷 — Mini Shai-Hulud",
+      "summary": "4/30 lightning（每月 8.3M downloads）兩版本被推上 PyPI，import 即觸發 daemon thread 下載 Bun runtime 跑同一份 11MB payload；GitHub token worm 自我複製到 50 個 branch。Snyk CVSS 9.3。攻擊跨 npm/PyPI 兩個 registry。",
+      "tags": [
+        "paradigm-shift",
+        "supply-chain",
+        "python",
+        "bun"
+      ],
+      "url": "https://snyk.io/blog/lightning-pypi-compromise-bun-based-credential-stealer/",
+      "source": "Snyk",
+      "sourceUrl": "https://snyk.io/blog/lightning-pypi-compromise-bun-based-credential-stealer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Endor Labs Agent Security League — Cursor + GPT-5.5 史上最高 23.5%，仍是 fail",
+      "summary": "用真實 CVE 修補測 coding agent。Cursor + GPT-5.5：security 23.5% / functional ~59.5%（gap 64）；Codex + GPT-5.5：security 20.1% / functional 61.5%（gap 41）。同一 model 換 harness，安全分數差 3 分以上、gap 差 20+ 分 — harness 比 model 對安全結果更重要。三組過 20% 都還是 failing grade。",
+      "tags": [
+        "coding-agent",
+        "evals",
+        "security"
+      ],
+      "url": "https://www.endorlabs.com/learn/gpt-5-5-sets-a-new-code-security-record-with-cursor-not-codex-in-agent-security-league",
+      "source": "Endor Labs",
+      "sourceUrl": "https://www.endorlabs.com/learn/gpt-5-5-sets-a-new-code-security-record-with-cursor-not-codex-in-agent-security-league",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenAI Advanced Account Security — 強制 passkey + Yubico",
+      "summary": "4/30 上線 opt-in，要求 ≥2 個 FIDO2 credential（passkey 或 YubiKey），永久關掉 password / email / SMS recovery，自動退出 model training；丟失 credential + recovery key 即不可救援。OpenAI x Yubico 出 $68 客製 2-pack。Trusted Access for Cyber 成員 6/1 強制。",
+      "tags": [
+        "security",
+        "identity"
+      ],
+      "url": "https://thenextweb.com/news/openai-chatgpt-advanced-security-yubico-passkeys",
+      "source": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/openai-chatgpt-advanced-security-yubico-passkeys",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-009",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Vercel Open Agents — 開源 reference implementation 三層架構",
+      "summary": "Vercel 開源 background coding agent 框架，三層分明：Web layer（auth/sessions/streaming）+ Durable Workflow layer（agent loop）+ 隔離 VM 沙盒（filesystem / shell / dev server）。明確標榜為 reference implementation，要 fork 改造，不是封裝產品。把 agent infra 攤給人看怎麼設計。",
+      "tags": [
+        "paradigm-shift",
+        "agent-infra",
+        "open-source"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/vercel-open-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/vercel-open-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-010",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "IBM Granite 4.1 三件套（3B / 8B / 30B）開源 — 主打 coding agent",
+      "summary": "4/29-30 連發；15T tokens 訓練、強調品質；支援 FIM、function calling、structured JSON、多語。30B 號稱打贏 Gemma-4-31B；3B/8B 適合 autocomplete 與 edge，30B 才能扛 coding agent。HF + Ollama 都上架。",
+      "tags": [
+        "ai-models",
+        "open-source",
+        "coding-agent"
+      ],
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-011",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Pragmatic Engineer 4/30：Token spend breaks budgets — what next?",
+      "summary": "Gergely Orosz 免費 issue 直球：AI token 用量正在撐爆預算。GitHub 在 AI load 下出狀況、Copilot 大幅漲價、Codex 用量爆增、Google 內部調度資源擴容。per-seat AI pricing 模型撐不住 agent loop，整個 AI coding 商業模式正在重新定價。",
+      "tags": [
+        "ai-coding",
+        "pricing",
+        "foundations"
+      ],
+      "url": "https://blog.pragmaticengineer.com/the-pulse-token-spend-breaks-budgets-what-next/",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://blog.pragmaticengineer.com/the-pulse-token-spend-breaks-budgets-what-next/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-012",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Harness x Cursor 原生 plugin — CI/CD 進到 agent 對話流",
+      "summary": "4/30 Harness 發布 Cursor plugin，把 pipeline 執行、deploy、governance、vuln scan、approval、operational insight 整套塞進 Cursor 對話流。配 Cursor SDK public beta，plugin ecosystem 開花；agent 從 IDE 助手升級成 ops 入口。",
+      "tags": [
+        "ci-cd",
+        "coding-agent"
+      ],
+      "url": "https://www.harness.io/blog/from-pr-to-production-without-leaving-your-cursor-ide",
+      "source": "Harness",
+      "sourceUrl": "https://www.harness.io/blog/from-pr-to-production-without-leaving-your-cursor-ide",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-013",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "DeepMind AI Co-Clinician — triadic care 取代 autonomous AI doctor",
+      "summary": "從 MedPaLM/AMIE 演進；架構為 patient + AI agent + physician 三方協作，physician 保留 clinical authority。NOHARM framework 測 errors of commission/omission；97/98 critical-error-free，physician blind eval 偏好高於現有 evidence synthesis tool。在 US/India/AU/NZ/SG/UAE 多地段 phased rollout。",
+      "tags": [
+        "ai-agent",
+        "multimodal",
+        "healthcare"
+      ],
+      "url": "https://deepmind.google/blog/ai-co-clinician/",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/ai-co-clinician/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-014",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "NestJS v12 roadmap — 全 ESM、Vitest 取代 Jest、Rspack 取代 Webpack",
+      "summary": "Q3 2026 release 草案 PR。所有官方 package 從 CommonJS 全遷 ESM（Node.js require(esm) 拉開了門）；route decorator 原生 Standard Schema 支援（Zod/Valibot/ArkType）；toolchain 全換新一代（Vitest + OXC、oxlint、Rspack、NATS v3）。",
+      "tags": [
+        "frameworks",
+        "typescript",
+        "node"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/nestjs-12-roadmap-esm/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/nestjs-12-roadmap-esm/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-01T08:20:00+08:00"
