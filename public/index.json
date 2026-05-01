@@ -28142,7 +28142,91 @@
       "price": null,
       "vram": "Local-ready",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260501-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison 引 Loris Cro：Zig 的 contributor poker",
+      "summary": "Simon 4/30 引 Zig 創辦人/VP Loris Cro 寫的反 LLM PR 立場長文：reviewing PR 是『投資 contributor 這個人』，不是只看這次 patch（『play the person, not the cards』）。LLM 寫的 PR 短路了 onboarding 投資、把長期 trusted contributor pipeline 砸掉。Apr 30 Zig vs Bun fork 議題的影響者放大器，把『AI policy → community shape』這條線拉得更硬。",
+      "tags": [
+        "contributor-poker",
+        "llm-pr",
+        "AI-policy-fork-divergence",
+        "foundations-revival"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/30/andrew-kelley/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/30/andrew-kelley/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GitHub Copilot in Visual Studio 4 月更新 — Cloud Agent + Debugger Agent 進駐 IDE",
+      "summary": "Copilot 4/30 在 Visual Studio 把 Cloud Agent session 變成 IDE 內 first-class option：人關 IDE 後 agent 在 remote infra 繼續跑、跑完自動開 PR；Custom Agents 升 user-level；新出 Debugger Agent 用 live runtime 行為驗證 fix（不是只比 diff）。VS 從 IDE 變成 cloud agent 的 front door，IDE 邊界正式融進 cloud agent loop。",
+      "tags": [
+        "paradigm-shift",
+        "cloud-agent-IDE-handoff",
+        "debugger-agent",
+        "copilot"
+      ],
+      "url": "https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Datadog State of AI Engineering 2026 — bottleneck 從『模型聰不聰明』搬到 ops",
+      "summary": "Datadog 從千家客戶生產環境抓資料：5% LLM 請求失敗（其中 60% 來自 rate limit）、69% 公司同時用 3+ 個模型、token 量 median 翻倍 / heavy users 翻 4 倍。報告核心結論：production AI 的限制不是模型品質，而是 fragmented workflows、excessive retries、inefficient routing。給 Zendesk 提的 absorption capacity 一個量化版本。",
+      "tags": [
+        "ai-engineering",
+        "observability",
+        "operational-AI-ceiling",
+        "multi-model"
+      ],
+      "url": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-state-of-ai-engineering-report-2026/",
+      "source": "Datadog",
+      "sourceUrl": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-state-of-ai-engineering-report-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260501-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LangChain April 2026 Newsletter — Cisco 用 LangSmith + LangGraph 砍掉 93% 事故 root-cause 時間",
+      "summary": "LangChain 4 月電子報 highlight：Cisco 工程團隊建多 agent harness 做事故 triage，time-to-root-cause 砍 93%、單月省 200+ 工時。同期 LangGraph 1.0 GA 已被 Uber / LinkedIn / Klarna 用作 production agent runtime。「agentic engineering」從 buzzword 變 measurable case study，開始真的有可比較的 ops 數字。",
+      "tags": [
+        "agentic-engineering",
+        "langchain",
+        "langgraph",
+        "agent-ops"
+      ],
+      "url": "https://www.langchain.com/blog/april-2026-langchain-newsletter",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/april-2026-langchain-newsletter",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-01T08:17:13.237370+08:00"
+  "lastUpdated": "2026-05-01T08:20:00+08:00"
 }
