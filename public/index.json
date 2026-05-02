@@ -28510,6 +28510,106 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260502-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MoonshotAI/Kimi-Linear",
+      "summary": "48B-A3B（3B active）hybrid linear attention 模型，用 Kimi Delta Attention + global MLA 3:1 比例混合，KV cache 砍 75%，1M context decoding 速度 6x、128k RULER 3.98x speedup。3B active 量化後 16GB 可玩，長 context 場景值得測。",
+      "tags": [
+        "llm_inference",
+        "llm_training",
+        "linear_attention"
+      ],
+      "url": "https://github.com/MoonshotAI/Kimi-Linear",
+      "source": "Moonshot AI Org",
+      "sourceUrl": "https://github.com/MoonshotAI",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "MIT"
+    },
+    {
+      "id": "20260502-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MoonshotAI/Kimi-K2.5",
+      "summary": "1T 總參數 / 32B active 多模態 agentic 模型，搭 400M 視覺編碼器。Modified MIT license，weights 開放。1T 在家裡是不可能跑了，但 K2.5 在 agentic coding / 12-hour autonomous session 上的 K2.6 路線圖底牌就是它。",
+      "tags": [
+        "llm_inference",
+        "agentic",
+        "multimodal"
+      ],
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "source": "Moonshot AI Org",
+      "sourceUrl": "https://github.com/MoonshotAI",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "Modified MIT"
+    },
+    {
+      "id": "20260502-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b8995-b8999 (May 1)",
+      "summary": "連發 5 個 build：Vulkan 支援 asymmetric FA in coopmat2 path（混合量化 flash attention）、WebGPU 加 upscale shader（nearest/bilinear/bicubic）、Hexagon backend 非連續 row tensor unary ops、WebGPU mul-mat vectorized handling、quantize CLI fix --tensor-type override。底層持續打磨。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime",
+        "vulkan",
+        "webgpu"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8999",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260502-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DLYuanGod/MegaTrain",
+      "summary": "RAM-centric 訓練架構：參數放 host memory、GPU 當 transient compute engine、layer-by-layer streaming，每次只一層在 GPU 上。號稱 single GPU 訓練 100B+ 模型（Qwen2.5-7B 用 ~62GB H100、Qwen3.5-27B 用 ~50GB），CPU RAM 約 12GB/1B 參數。Apr 17 公布 multi-GPU data parallel 拿到 4.7x super-linear speedup。本地 16GB VRAM 跑不動，但概念值得追。",
+      "tags": [
+        "llm_training",
+        "single_gpu",
+        "ram_offload"
+      ],
+      "url": "https://github.com/DLYuanGod/MegaTrain",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260502-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "firecrawl/open-researcher",
+      "summary": "Claude + Firecrawl 開源 deep research agent。Visual AI assistant 即時顯示推理過程、split-view 同時看 chat 和 search 結果、自動引用 source。Next.js 15 + TypeScript + Anthropic API。MIT。對標 OpenAI Deep Research 的開源版，Firecrawl 自家做的。",
+      "tags": [
+        "ai_devtools",
+        "research_agent"
+      ],
+      "url": "https://github.com/firecrawl/open-researcher",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-01T08:20:00+08:00"
