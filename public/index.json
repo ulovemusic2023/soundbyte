@@ -28610,6 +28610,109 @@
       "price": null,
       "vram": "local-ready",
       "license": "MIT"
+    },
+    {
+      "id": "20260502-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 推出 Security Review beta — 兩個常駐安全 agent",
+      "summary": "Cursor 在 Teams/Enterprise 方案開放 Security Review beta：Security Reviewer 自動審查每個 PR（auth regression、prompt injection、data handling、tool auto-approval），inline 留評；Vulnerability Scanner 排程掃整個 codebase，把結果丟到 Slack。可串自家 SAST/SCA 透過 MCP server。「coding agent 自帶安全 agent」開始普及。",
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "security",
+        "mcp"
+      ],
+      "url": "https://cursor.com/changelog/04-30-26",
+      "source": "Cursor",
+      "sourceUrl": "https://cursor.com/changelog/04-30-26",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Karpathy 在 Sequoia AI Ascent 2026：From Vibe Coding to Agentic Engineering",
+      "summary": "Karpathy 把當下分成兩條軸線：vibe coding（非工程師描述需求就能蓋 app，把 floor 拉高）vs agentic engineering（專業工程師用 agent 但維持品質）。他自陳「身為 programmer 越來越覺得跟不上」，對這波 agentic tool 進化的 ground truth 觀察。",
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "vibe-coding",
+        "agentic-engineering"
+      ],
+      "url": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+      "source": "Sequoia AI Ascent 2026",
+      "sourceUrl": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison 在帳篷裡用手機 + Claude Code 蓋 iNaturalist 觀察工具",
+      "summary": "露營時用手機操作 Claude Code（web 版）整套蓋出來：Python CLI（按時間+地理 5km/2hr 聚類）+ git scraping repo 產 JSON + JS 前端從 GitHub 拉資料。整個流程證明 LLM-assisted dev 已經完全脫離「需要桌機 + IDE」的傳統姿勢。",
+      "tags": [
+        "ai-coding",
+        "vibe-coding",
+        "claude-code",
+        "phone-first"
+      ],
+      "url": "https://simonwillison.net/2026/May/1/inat-sightings/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/1/inat-sightings/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic 推 Claude for Creative Work — 一卡接 50+ 創作軟體",
+      "summary": "4/28 釋出一組創作向 connectors，讓 Claude 直接連 Adobe Creative Cloud（Photoshop/Premiere）、Blender、Autodesk Fusion、SketchUp、Ableton、Resolume Arena/Wire、Affinity by Canva、Splice 等。對音樂製作人特別值得看 Ableton 整合；同時跟 RISD、Ringling、Goldsmiths 做課程合作。",
+      "tags": [
+        "ai-agent",
+        "mcp",
+        "creative-tools"
+      ],
+      "url": "https://www.anthropic.com/news/claude-for-creative-work",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/claude-for-creative-work",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft .NET Composable AI Stack — 一套 demo 串 model + vector DB + agent",
+      "summary": "微軟用一個 conference app 範例，展示怎麼把 model、vector database、ingestion pipeline、agent framework 用 .NET 一條龍接起來，避免從不同 ecosystem 拼湊。Microsoft Agent Framework 1.0 + Foundry 加持。",
+      "tags": [
+        "ai-agent",
+        "dotnet",
+        "composable-ai"
+      ],
+      "url": "https://devblogs.microsoft.com/dotnet/building-ai-conference-app-dotnet-composable-stack/",
+      "source": ".NET Blog",
+      "sourceUrl": "https://devblogs.microsoft.com/dotnet/building-ai-conference-app-dotnet-composable-stack/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-01T08:20:00+08:00"
