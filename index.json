@@ -28612,6 +28612,174 @@
       "license": "MIT"
     },
     {
+      "id": "20260502-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "SparkAudio/Spark-TTS",
+      "summary": "完全建立在 Qwen2.5 上的 zero-shot voice cloning TTS，直接從 LLM 預測的 code 重建 audio，省掉額外 acoustic model。中英雙語、可控 gender / pitch / speaking rate，附 Triton serving。單一模型設計，部署簡單。",
+      "tags": [
+        "tts_speech",
+        "llm_inference"
+      ],
+      "url": "https://github.com/SparkAudio/Spark-TTS",
+      "source": "GitHub Topics (text-to-speech)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260502-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "canopyai/Orpheus-TTS",
+      "summary": "Llama-3B backbone TTS，zero-shot voice cloning + 情緒 tag (<laugh>, <sigh>, <cough>)，stream 延遲 200ms（可壓到 100ms）。8 種英文聲線、10 萬+ 小時訓練，附多語言研究 release（7 種語言）。Baseten 提供 fp8/fp16 優化推理。",
+      "tags": [
+        "tts_speech",
+        "llm_inference"
+      ],
+      "url": "https://github.com/canopyai/Orpheus-TTS",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/canopyai/Orpheus-TTS",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260502-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "fixie-ai/ultravox",
+      "summary": "Multimodal LLM 直接吃語音，省掉 ASR 那一段：frozen LLM + audio encoder + adapter，audio 直接投影到 embedding space。預設 Llama 3.3 70B、有 8B 變體可本地跑。streaming text 輸出、real-time 對話延遲低。",
+      "tags": [
+        "tts_speech",
+        "llm_inference"
+      ],
+      "url": "https://github.com/fixie-ai/ultravox",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/fixie-ai/ultravox",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "MIT"
+    },
+    {
+      "id": "20260502-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "mbzuai-oryx/LLMVoX",
+      "summary": "30M 參數的 streaming TTS，LLM-agnostic — 不用 fine-tune 任何 LLM 直接 plug，與 vision-language model 也相容。300ms end-to-end latency，多 queue 架構支援連續對話。dataset 換掉就支援多語言。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://github.com/mbzuai-oryx/LLMVoX",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/mbzuai-oryx/LLMVoX",
+      "price": null,
+      "vram": "local-ready",
+      "license": "CC-BY-NC-SA 4.0"
+    },
+    {
+      "id": "20260502-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Lex-au/Vocalis",
+      "summary": "Speech-to-speech assistant 完整 stack：Faster-Whisper STT + 自製 VAD、OpenAI-compatible TTS（Orpheus-FASTAPI / Kokoro-FASTAPI）、SmolVLM-256M 視覺、LM Studio LLM。React + FastAPI 前後端，支援中途打斷、AI 主動 follow-up、image upload 討論。",
+      "tags": [
+        "tts_speech",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/Lex-au/Vocalis",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/Lex-au/Vocalis",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260502-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "HKUDS/LightRAG",
+      "summary": "Knowledge graph + 雙層 retrieval RAG 框架，跨 domain 全面領先 NaiveRAG / GraphRAG / HyDE。v1.4.15 (Apr 19) 加 OpenSearch 統一 storage backend、setup wizard、RAGAS evaluation、Langfuse tracing 支援、多模態 (RAG-Anything 整合)。70+ release、極活躍。",
+      "tags": [
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/HKUDS/LightRAG",
+      "source": "GitHub Topics (large-language-models)",
+      "sourceUrl": "https://github.com/topics/large-language-models",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260502-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "microsoft/TRELLIS",
+      "summary": "Text/image → 3D 資產生成模型，Structured LATent (SLAT) representation + Rectified Flow Transformer，輸出 Radiance Fields / 3D Gaussians / mesh 三種格式。1.2B image / 342M text-base / 1.1B text-large / 2B text-xlarge 四種規模。支援 local editing（之前的模型沒有）。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://github.com/microsoft/TRELLIS",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260502-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "nunchaku-ai/nunchaku v1.2.1",
+      "summary": "SVDQuant 4-bit diffusion inference engine — outliers 從 activation 搬到 weight 再用 low-rank component（16-bit）吸收，殘差再做 4-bit 量化。支援 FLUX.1 / FLUX.1-Tools / Qwen-Image / SANA、整合 ComfyUI + LoRA。v1.2.1 (Jan 25 2026) 加 INT4 給 20-series GPU、Z-Image +20-30%。ICLR2025 Spotlight。",
+      "tags": [
+        "image_gen",
+        "llm_inference"
+      ],
+      "url": "https://github.com/nunchaku-ai/nunchaku",
+      "source": "GitHub Topics (quantization)",
+      "sourceUrl": "https://github.com/topics/quantization",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260502-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-05-02",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Tencent/AngelSlim v0.3.0",
+      "summary": "一鍵模型壓縮工具包：quantization + speculative decoding + token pruning，cover LLM / VLM / diffusion / audio model。v0.3.0 (Jan 13 2026) 加 FP8-Static (Hunyuan3-preview) 和 DAQ post-training quant 演算法（保留訓練知識同時小參數更新）。Tencent 內部用後開源。",
+      "tags": [
+        "infra_runtime",
+        "llm_inference"
+      ],
+      "url": "https://github.com/Tencent/AngelSlim",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Open Source"
+    },
+    {
       "id": "20260502-sw-001",
       "radar": "software-dev",
       "date": "2026-05-02",
