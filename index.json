@@ -28713,6 +28713,146 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260502-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-02",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Karpathy: Vibe Coding 已過時，新時代叫 Agentic Engineering",
+      "summary": "Sequoia AI Ascent 2026 演講：vibe coding 規模化的失敗模式（技術債、靜默安全漏洞）。Agentic Engineering = 協調 stochastic agents 加速但不犧牲品質的紀律。12 月成分水嶺，Karpathy 從寫 80% code 翻轉成委派 80% 給 agent。",
+      "tags": [
+        "software-3.0",
+        "agentic-engineering",
+        "ai-coding"
+      ],
+      "url": "https://thenewstack.io/vibe-coding-is-passe/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/vibe-coding-is-passe/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-02",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Naval：Pure software 正在變成 uninvestable",
+      "summary": "Naval Podcast「A Return to Code」(4/28)：AI agents 一句話交付客製 app 到手機，App Store 不必要。「如果你的全部優勢只是會寫別人不會的軟體，這已經 uninvestable。」軟體不再是護城河，分發、品味、整合才是。",
+      "tags": [
+        "moats",
+        "ai-coding",
+        "distribution"
+      ],
+      "url": "https://www.businesstoday.in/technology/story/pure-software-is-rapidly-becoming-uninvestable-naval-ravikant-on-why-vibe-coding-changes-everything-528256-2026-04-30",
+      "source": "Naval Ravikant • Business Today",
+      "sourceUrl": "https://www.businesstoday.in/technology/story/pure-software-is-rapidly-becoming-uninvestable-naval-ravikant-on-why-vibe-coding-changes-everything-528256-2026-04-30",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-02",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Ben Thompson：Tim Cook 完美的退場時機",
+      "summary": "Cook 宣布 9/1 轉任 Executive Chairman。任內 Apple 收入成長 303%、市值從 2970 億到 4 兆。Thompson 的框架：CEO 接班最難的不是「能不能做」而是「何時放手」— Cook 在 AI/Vision Pro 戰略尚未證明前轉手，反而保住了傳承的 narrative。",
+      "tags": [
+        "leadership",
+        "succession",
+        "timing"
+      ],
+      "url": "https://stratechery.com/2026/tim-cooks-impeccable-timing/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/tim-cooks-impeccable-timing/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-02",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Patrick Collison：新公司註冊出現「拋物線式」上升",
+      "summary": "Stripe Sessions 2026 keynote：Collison 秀出 hockey stick 圖表，過去幾個月新公司形成速度 parabolic rise。「就我們所見，過去幾個月真的有東西改變了。」AI agents 正在催生新型態企業，Stripe 是最早看到 raw signal 的地方。",
+      "tags": [
+        "company-formation",
+        "ai-agents",
+        "stripe"
+      ],
+      "url": "https://siliconangle.com/2026/04/30/agentic-opportunity-openai-stripe-build-rising-tide-new-entrepreneurial-firms/",
+      "source": "Patrick Collison • SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/04/30/agentic-opportunity-openai-stripe-build-rising-tide-new-entrepreneurial-firms/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-02",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Satya Nadella：AI 不是取代工作，是取代「工作裡的 task」",
+      "summary": "Microsoft FY26 Q3 財報 + 澳洲訪談：「AI 的真實狀態，可預見的未來，是工作內的 task-level automation。」醫療 startup scribe tool 砍掉醫生文書、讓他們有更多時間陪病人。Microsoft AI 業務年化營收 370 億，YoY +123%。",
+      "tags": [
+        "ai-augmentation",
+        "future-of-work",
+        "microsoft"
+      ],
+      "url": "https://techcrunch.com/2026/04/29/satya-nadella-says-hes-ready-to-exploit-the-new-openai-deal/",
+      "source": "Satya Nadella • TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/29/satya-nadella-says-hes-ready-to-exploit-the-new-openai-deal/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-02",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Dan Koe：如果 2026 重新開始，我會這樣 build 一人公司",
+      "summary": "核心拆解：personal brand = 數位店面 + offer = 你賣的 + content = 把人引進來。一個人能同時是行銷、銷售、產品、設計部門 — agentic AI 讓這個更可行。借用分發（podcast 上人家節目、被 influencer 提及）比自己從 0 累積快十倍。",
+      "tags": [
+        "one-person-business",
+        "personal-brand",
+        "distribution"
+      ],
+      "url": "https://letters.thedankoe.com/p/how-id-build-a-one-person-business",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/how-id-build-a-one-person-business",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260502-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-02",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Karpathy 金句：你可以外包思考，但無法外包理解",
+      "summary": "「You can outsource your thinking but you can't outsource your understanding.」— Karpathy 在 Sequoia 演講中引用這句他自己「腦袋被打到」的 tweet。AI 可以代替你 type、prototype、debug，但無法代替你「真的懂這件事在做什麼」。",
+      "tags": [
+        "quote",
+        "ai-future",
+        "understanding"
+      ],
+      "url": "https://thenewstack.io/vibe-coding-is-passe/",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://thenewstack.io/vibe-coding-is-passe/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-01T08:20:00+08:00"
