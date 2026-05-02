@@ -28853,6 +28853,308 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260502-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "freestylefly/awesome-gpt-image-2",
+      "summary": "GPT-Image 2 工業級提示詞引擎與模板庫，370+ 案例逆向工程、20+ 套工業模板。對做封面、海報、社群素材的創作者來說是 prompt engineering 的速查表。",
+      "tags": [
+        "image-gen",
+        "prompt-engineering",
+        "creator-tools"
+      ],
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-18+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 2986,
+      "createdDate": "2026-04-25",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "cursor/cookbook",
+      "summary": "Cursor 官方 cookbook，整理 AI 編碼最佳實踐、agent 模式、prompt patterns。Cursor 突然開源 playbook，意味著 vibe coding 世代的 best practice 開始有共識。",
+      "tags": [
+        "ai-coding",
+        "cursor",
+        "agent-pattern"
+      ],
+      "url": "https://github.com/cursor/cookbook",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-18+stars%3A%3E50",
+      "stars": 2964,
+      "createdDate": "2026-04-27",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "leigest519/OpenGame",
+      "summary": "Open Agentic Coding for Games — 用 AI agent 開發遊戲的 framework。把 game dev 流程拆成 agent 可執行的 task，蠻新穎的 application layer。",
+      "tags": [
+        "ai-agent",
+        "game-dev",
+        "agentic"
+      ],
+      "url": "https://github.com/leigest519/OpenGame",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-18+stars%3A%3E50",
+      "stars": 1782,
+      "createdDate": "2026-04-20",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "openclaw/clawsweeper",
+      "summary": "OpenClaw 自家工具：每週掃所有 issues 和 PRs，自動建議哪些可以關閉並給原因。對 Gary 在用 OpenClaw 管理多 repo 來說很實用。",
+      "tags": [
+        "openclaw",
+        "github-automation",
+        "agent-skill"
+      ],
+      "url": "https://github.com/openclaw/clawsweeper",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-18+stars%3A%3E50",
+      "stars": 1393,
+      "createdDate": "2026-04-23",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "wuyoscar/gpt_image_2_skill",
+      "summary": "GPT Image 2 的 prompt gallery + image prompt library + agentic skill + CLI。配合 awesome-gpt-image-2 做完整工作流。",
+      "tags": [
+        "image-gen",
+        "agent-skill",
+        "cli"
+      ],
+      "url": "https://github.com/wuyoscar/gpt_image_2_skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-18+stars%3A%3E50",
+      "stars": 1147,
+      "createdDate": "2026-04-22",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "willchen96/mike",
+      "summary": "OSS AI Legal Platform — 開源的 AI 法務平台。對 indie/小公司處理合約、條款很實用。",
+      "tags": [
+        "ai-agent",
+        "legal-tech",
+        "oss"
+      ],
+      "url": "https://github.com/willchen96/mike",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-18+stars%3A%3E50",
+      "stars": 1082,
+      "createdDate": "2026-04-29",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "thClaws/thClaws",
+      "summary": "Open-source agent harness platform，原生 Rust 寫的，支援多 LLM provider，可在自己機器上跑。Sovereign by design — 對在意 self-host 的人是個選擇。",
+      "tags": [
+        "ai-agent",
+        "harness",
+        "rust",
+        "self-hosted"
+      ],
+      "url": "https://github.com/thClaws/thClaws",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent",
+      "stars": 690,
+      "createdDate": "2026-04-20",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "worldwonderer/oh-story-claudecode",
+      "summary": "網文寫作 skill 包，覆蓋長短篇網路小說的掃榜、拆文、寫作、去 AI 味、封面圖。對中文創作者是完整 pipeline。",
+      "tags": [
+        "claude-skill",
+        "writing",
+        "chinese-content"
+      ],
+      "url": "https://github.com/worldwonderer/oh-story-claudecode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent",
+      "stars": 686,
+      "createdDate": "2026-04-22",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "rohitg00/awesome-claude-design",
+      "summary": "Claude Design 的 DESIGN.md prompts 集合，依美學家族分類，附 remix recipes、skills、video teardowns。社群已開始系統化整理 design 提示詞。",
+      "tags": [
+        "claude-design",
+        "design-system",
+        "prompt"
+      ],
+      "url": "https://github.com/rohitg00/awesome-claude-design",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code",
+      "stars": 443,
+      "createdDate": "2026-04-19",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "seulee26/mckinsey-pptx",
+      "summary": "McKinsey 風格 PPTX 生成器 — Claude Code plugin 含 40 種投影片模板 + subagent 會挑模板並解釋為什麼選它。對做募資 deck 是現成 baseline。",
+      "tags": [
+        "claude-skill",
+        "pptx",
+        "presentation"
+      ],
+      "url": "https://github.com/seulee26/mckinsey-pptx",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code",
+      "stars": 355,
+      "createdDate": "2026-04-23",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "helloianneo/ian-handdrawn-ppt",
+      "summary": "中文手繪技術 PPT 整頁圖像生成 skill，21:9 封面 + 16:9 正文配圖、PNG 輸出。和 mckinsey-pptx 是兩端。",
+      "tags": [
+        "claude-skill",
+        "ppt",
+        "illustration"
+      ],
+      "url": "https://github.com/helloianneo/ian-handdrawn-ppt",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent",
+      "stars": 235,
+      "createdDate": "2026-04-25",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "leopiney/linus-torvalds-skills",
+      "summary": "單一 CLAUDE.md，提煉 Linus Torvalds 對 LLM coding 常見坑的觀察。和 mattpocock/skills、andrej-karpathy-skills 是同一波 — 把大牛的 taste 寫成 instruction。",
+      "tags": [
+        "claude-skill",
+        "claude-md",
+        "coding-quality"
+      ],
+      "url": "https://github.com/leopiney/linus-torvalds-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code",
+      "stars": 199,
+      "createdDate": "2026-04-22",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "heider-x/vela",
+      "summary": "AI 寫作 IDE，本地 LLM + RAG，privacy-first，BYOK。專為網路小說作者和創意寫作設計。對 Gary 寫長文/歌詞/方案的工作流，本地化是賣點。",
+      "tags": [
+        "local-llm",
+        "writing-ide",
+        "rag",
+        "byok"
+      ],
+      "url": "https://github.com/heider-x/vela",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Alocal-llm",
+      "stars": 129,
+      "createdDate": "2026-04-21",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "wxtsky/byob",
+      "summary": "Bring Your Own Browser — 讓 AI agent 直接用你已經開的 Chrome（含 cookies、登入狀態）。比起 headless puppeteer，可避開反爬蟲、用真實 session。",
+      "tags": [
+        "ai-agent",
+        "browser-automation",
+        "mcp"
+      ],
+      "url": "https://github.com/wxtsky/byob",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent",
+      "stars": 108,
+      "createdDate": "2026-04-25",
+      "license": "?"
+    },
+    {
+      "id": "20260502-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-05-02",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "yangshun/teenycode",
+      "summary": "200 行內的迷你 coding agent，用來理解 agent loop 的最小核心。教學/拆解 agent 內部很實用。",
+      "tags": [
+        "coding-agent",
+        "education",
+        "minimal"
+      ],
+      "url": "https://github.com/yangshun/teenycode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Acoding-agent",
+      "stars": 75,
+      "createdDate": "2026-04-23",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-01T08:20:00+08:00"
