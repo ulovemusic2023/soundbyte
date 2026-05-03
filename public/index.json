@@ -29628,7 +29628,111 @@
       "price": null,
       "vram": "local-ready",
       "license": "未標註"
+    },
+    {
+      "id": "20260503-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "The Pulse #146 — AI 怎麼重塑科技面試",
+      "summary": "Gergely Orosz 訪談 63 位 interviewing.io 工程師：startup 開始砍掉 algorithmic 題、加入「邊用 AI 邊面試」的 screen-share round；Big Tech 反而幾乎沒動。AI 強迫面試流程重新設計。",
+      "tags": [
+        "ai-coding",
+        "hiring",
+        "interview",
+        "agentic"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-146",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-146",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "What's new in Astro — April 2026（Astro 7 alpha preview）",
+      "summary": "Astro 在 4 月 Astro Together London 公開 Astro 7 alpha preview。被 Cloudflare 收購後第一輪整合期更新，content-first 路線在 SSR / island architecture 持續推進，仍維持 MIT 開源。",
+      "tags": [
+        "astro",
+        "frontend",
+        "islands-architecture",
+        "edge-runtime"
+      ],
+      "url": "https://astro.build/blog/whats-new-april-2026/",
+      "source": "Astro Blog",
+      "sourceUrl": "https://astro.build/blog/whats-new-april-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "What's new in Svelte — April 2026（MCP in OpenCode）",
+      "summary": "Svelte 4 月 update：把 MCP 整合進 OpenCode、config 支援 functions、server-side error boundaries 上線。Svelte 把 MCP 當成 frontend devtool 的一級公民——不是 wrapper，是內建。",
+      "tags": [
+        "svelte",
+        "mcp",
+        "frontend",
+        "ai-coding"
+      ],
+      "url": "https://svelte.dev/blog/whats-new-in-svelte-april-2026",
+      "source": "Svelte Blog",
+      "sourceUrl": "https://svelte.dev/blog/whats-new-in-svelte-april-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 1/22 BGP route leak incident 完整 RCA",
+      "summary": "Cloudflare 公開 1/22 BGP route leak 根因：upstream 過度寬鬆的 route filtering 把私有路徑廣播出去，影響數十個 region。報告含 control-plane / data-plane 分離前後的 mitigation timeline，distributed systems 教科書級案例。",
+      "tags": [
+        "distributed-systems",
+        "bgp",
+        "postmortem",
+        "observability"
+      ],
+      "url": "https://blog.cloudflare.com/route-leak-incident-january-22-2026/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/route-leak-incident-january-22-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 宣布 2026 招 1,111 個 intern",
+      "summary": "Cloudflare 宣布 2026 年招 1,111 個 intern。在 big tech 普遍縮編、AI 取代 junior 的氛圍下逆勢加碼校招——把 agent-native infra 當長期戰場，要養大量「跟 AI 一起長大」的 junior。",
+      "tags": [
+        "hiring",
+        "dx",
+        "platform-engineering"
+      ],
+      "url": "https://blog.cloudflare.com/cloudflare-1111-intern-program/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/cloudflare-1111-intern-program/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-03T08:10:00+08:00"
+  "lastUpdated": "2026-05-03T08:20:00+08:00"
 }
