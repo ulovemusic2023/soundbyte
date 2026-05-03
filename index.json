@@ -29811,6 +29811,133 @@
       "price": null,
       "vram": "cloud-only (DeepSeek V4 671B)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260503-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Dynamic Workflows — durable execution that follows the tenant",
+      "summary": "Cloudflare 把 Workflows 重新切開：tenant 自帶程式碼，平台只負責路由 + 持久化執行。底層是 Dynamic Workers，能讓平台在 near-zero idle cost 下跑數百萬個獨立 workflow。對 multi-tenant agent infra 是新的執行模型。",
+      "tags": [
+        "paradigm-shift",
+        "durable-execution",
+        "dynamic-workflows",
+        "agent-infra",
+        "edge"
+      ],
+      "url": "https://blog.cloudflare.com/dynamic-workflows/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/dynamic-workflows/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Anthropic — Advanced tool use on Claude Developer Platform",
+      "summary": "三個 beta 一起放：Tool Search Tool（讓 Claude 動態搜尋上千個 tool 而不吃 context）、Programmatic Tool Calling（在 code execution sandbox 裡 orchestrate 工具，多輪 tool call 不再回主 context）、Tool Use Examples（標準化教 model 怎麼用工具）。把 agent 的 context engineering 拉到平台層級。",
+      "tags": [
+        "paradigm-shift",
+        "programmatic-tool-calling",
+        "tool-search",
+        "context-engineering",
+        "agent"
+      ],
+      "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/advanced-tool-use",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cursor 2.6 — Team Marketplaces for Plugins",
+      "summary": "Admin 可以建 team marketplace，把 MCP servers / skills / subagents / rules / hooks 打包成 plugin 分發給整個團隊，可設 Default Off / Default On / Required。Agent IDE 開始走 distribution + governance 的方向。",
+      "tags": [
+        "team-marketplace",
+        "plugin-distribution",
+        "mcp",
+        "agent-ide"
+      ],
+      "url": "https://cursor.com/changelog/2-6",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog/2-6",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-009",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenAI Codex CLI — /goal workflows + plugin marketplace + GPT-5.5",
+      "summary": "本月 Codex CLI 更新：新增 persistent /goal workflows（agent 真的會記住目標跨 session 推進），plugin marketplace 安裝 + remote bundle cache，external agent session import；composer 可以直接選 GPT-5.5。Codex 跟 Cursor、Claude Code 三邊正面對撞 AI coding harness。",
+      "tags": [
+        "coding-agent",
+        "goal-workflows",
+        "plugin-marketplace",
+        "gpt-5-5"
+      ],
+      "url": "https://developers.openai.com/codex/changelog",
+      "source": "OpenAI Developers",
+      "sourceUrl": "https://developers.openai.com/codex/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-010",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Simon Willison — Sightings (vibe-coded iNaturalist tool on phone)",
+      "summary": "Simon 露營時用 Claude Code for web 在手機上寫了一個顯示自己 iNaturalist 觀察記錄的工具 — 跨兩個帳號合併、依時間分組。一個很實在的範例：沒帶筆電，只用 phone + AI agent 就完成從零到部署。",
+      "tags": [
+        "vibe-coding",
+        "claude-code",
+        "agent-personalization"
+      ],
+      "url": "https://simonwillison.net/2026/May/2/sightings/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/2/sightings/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260503-sw-011",
+      "radar": "software-dev",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "LangGraph 1.2.0a5 — Node Caching, Deferred Nodes, Pre/Post Model Hooks",
+      "summary": "新 alpha 加了 Node Caching（跳過重算）、Deferred Nodes（等所有上游完成才執行）、Pre/Post Model Hooks（注入 guardrails / human-in-the-loop）。LangGraph 從 framework 走向 workflow runtime。",
+      "tags": [
+        "langgraph",
+        "node-caching",
+        "deferred-nodes",
+        "agent-framework"
+      ],
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a5",
+      "source": "LangChain GitHub",
+      "sourceUrl": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.0a5",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-03T08:20:00+08:00"
