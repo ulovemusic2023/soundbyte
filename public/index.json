@@ -29732,6 +29732,85 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260503-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ServeurpersoCom/acestep.cpp",
+      "summary": "ACE-Step 1.5 純 C++17 重寫（吃 GGML 後端），CPU/CUDA/ROCm/Metal/Vulkan 全部都跑得起來。輸入文字描述+歌詞，直接出 48kHz stereo MP3 或 WAV。模型總共 ~5GB（LM 0.6-4B + DiT 2.4GB + TextEnc 748MB + VAE 322MB），16GB VRAM 綽綽有餘。把原本 Python+PyTorch 的 ACE-Step 拉成原生 binary，部署門檻直接砍半。",
+      "tags": [
+        "audio_music_ai",
+        "music generation"
+      ],
+      "url": "https://github.com/ServeurpersoCom/acestep.cpp",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~5GB models, 16GB VRAM OK",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ollama/ollama v0.23.0",
+      "summary": "今天剛發。Ollama 加 Claude Desktop 整合 — 一句 ollama launch claude-desktop 直接把 Anthropic 桌面版（含 Claude Cowork + Claude Code）起起來。同步加入 server-driven 推薦模型功能（不用更新 Ollama 就能拉新模型清單），修了 Metal GPU 初始化問題。Ollama 從 model serving 朝 AI desktop hub 收口的訊號很明顯。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.23.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.23.0",
+      "price": null,
+      "vram": "framework only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b9006-b9010",
+      "summary": "5/2 連發。b9006 OpenCL 加 Adreno（高通行動 GPU）的 MoE MxFP4 加速 kernel — Mixtral / DeepSeek 這類 MoE 模型在 Snapdragon X / 手機上推理會明顯提升。後續 b9008 修 ggml-virtgpu header 循環依賴、b9009 server 省掉 checkpoint host copies、b9010 修 CUDA 多卡 PCI bus ID dedup OOM。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "quantization"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b9006",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b9006",
+      "price": null,
+      "vram": "depends on model",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "vllm-project/vllm v0.20.0",
+      "summary": "752 commits 的大版（4/27）。預設 CUDA 13.0 + PyTorch 2.11，FlashAttention 4 變成 MLA prefill 預設 backend（加 head-dim 512 + paged-KV on SM90+）。主線整進 TurboQuant 2-bit KV cache compression，長 context 推理 KV 記憶體再砍一刀。DeepSeek V4 初步支援已 land。給 server 端跑大模型用，桌機 16GB 跑不太動。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "quantization"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.20.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.20.0",
+      "price": null,
+      "vram": "cloud-only (DeepSeek V4 671B)",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-05-03T08:20:00+08:00"
