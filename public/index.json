@@ -29332,7 +29332,13 @@
       "priority": "paradigm-shift",
       "title": "Cursor 5/1 update：Security Review GA + multi-root workspace + async subagents",
       "summary": "Cursor Security Review 從 beta 升 GA：兩種 always-on agent — Security Reviewer 每個 PR 留 inline 評論、Vulnerability Scanner 排程掃整個 codebase 推到 Slack。同日 ship multi-root workspaces 和 /multitask async subagents。always-on AI 安全代理變成 Teams/Enterprise 付費功能標配。",
-      "tags": ["paradigm-shift", "coding-agent", "security", "async-subagents", "multi-root-workspace"],
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "security",
+        "async-subagents",
+        "multi-root-workspace"
+      ],
       "url": "https://cursor.com/changelog/05-01-26",
       "source": "Cursor Changelog",
       "sourceUrl": "https://cursor.com/changelog/05-01-26",
@@ -29348,7 +29354,13 @@
       "priority": "high",
       "title": "Mini Shai-Hulud：SAP CAP npm 供應鏈攻擊把 Claude Code/.vscode 變成持久化通道",
       "summary": "Wiz 揭露 4/30 SAP CAP npm 套件遭植入 11MB Bun-stealer payload，首次把 .claude/settings.json 的 SessionStart hook + .vscode/tasks.json 的 folderOpen task 當成 persistence 機制。攻擊者 24 小時內把同一段 payload 套到 PyTorch Lightning PyPI。AI coding agent 設定檔正式進入 supply chain 攻擊面。",
-      "tags": ["paradigm-shift", "supply-chain", "claude-code", "security", "persistence"],
+      "tags": [
+        "paradigm-shift",
+        "supply-chain",
+        "claude-code",
+        "security",
+        "persistence"
+      ],
       "url": "https://www.wiz.io/blog/mini-shai-hulud-supply-chain-sap-npm",
       "source": "Wiz Research",
       "sourceUrl": "https://www.wiz.io/blog/mini-shai-hulud-supply-chain-sap-npm",
@@ -29364,7 +29376,13 @@
       "priority": "high",
       "title": "npm + PyPI + Docker Hub 48 小時內三起 supply chain 戰役",
       "summary": "GitGuardian 整理 4/21–23 連環攻擊：Mini Shai-Hulud（npm）、Bun stealer 變種（PyPI / SAP CAP）、PostgreSQL container 後門（Docker Hub）— 三條獨立攻擊鏈但目標一致：偷 API key / cloud credential / SSH key / CI/CD token。registry 越多、AI agent 安裝速度越快，takedown 永遠追不上。",
-      "tags": ["supply-chain", "security", "npm", "pypi", "docker"],
+      "tags": [
+        "supply-chain",
+        "security",
+        "npm",
+        "pypi",
+        "docker"
+      ],
       "url": "https://blog.gitguardian.com/three-supply-chain-campaigns-hit-npm-pypi-and-docker-hub-in-48-hours/",
       "source": "GitGuardian",
       "sourceUrl": "https://blog.gitguardian.com/three-supply-chain-campaigns-hit-npm-pypi-and-docker-hub-in-48-hours/",
@@ -29380,7 +29398,12 @@
       "priority": "medium",
       "title": "GitHub Copilot CLI v1.0.40：MCP 支援 client_credentials OAuth、subagent 修 model 繼承",
       "summary": "5/1 release：MCP server 支援 client_credentials OAuth grant — 跑 headless / CI 環境不用瀏覽器登入；subagent 不再繼承 parent session 的 tool search 設定，改正確讀自己 model 的能力。Opus 4.6 預設 medium reasoning。Copilot CLI 邁向真 agent runtime 該有的 OAuth + subagent 行為。",
-      "tags": ["coding-agent", "mcp", "oauth", "copilot"],
+      "tags": [
+        "coding-agent",
+        "mcp",
+        "oauth",
+        "copilot"
+      ],
       "url": "https://github.com/github/copilot-cli/releases/tag/v1.0.40",
       "source": "GitHub",
       "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v1.0.40",
@@ -29396,7 +29419,11 @@
       "priority": "medium",
       "title": "Cursor open-source 釋出 security agent 範本",
       "summary": "TheNewStack 報導 Cursor 把內部 Security Reviewer / Vulnerability Scanner 的核心 prompt + tool schema 開源，給其他 dev tool 廠商當 always-on AI 安全代理的起點 — 把『安全代理該怎麼長』這個 vertical 開放成共享 spec。",
-      "tags": ["coding-agent", "security", "open-source"],
+      "tags": [
+        "coding-agent",
+        "security",
+        "open-source"
+      ],
       "url": "https://thenewstack.io/cursor-open-sources-security-agents/",
       "source": "The New Stack",
       "sourceUrl": "https://thenewstack.io/cursor-open-sources-security-agents/",
@@ -29412,14 +29439,196 @@
       "priority": "low",
       "title": "LangGraph 1.2.0a5（Python alpha，5/1）",
       "summary": "1.2 系列 alpha 持續 iterate，主要在 durable execution / streaming API 細修。Polly + LangChain v1 之後 LangGraph 的核心定位轉向 multi-agent durable runtime — 這條 alpha 線值得追。",
-      "tags": ["ai-agent", "langchain", "runtime"],
+      "tags": [
+        "ai-agent",
+        "langchain",
+        "runtime"
+      ],
       "url": "https://github.com/langchain-ai/langgraph/releases",
       "source": "LangChain",
       "sourceUrl": "https://github.com/langchain-ai/langgraph/releases",
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260503-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "xiquan-li/TinyMU",
+      "summary": "ICASSP 2026 compact music-language model：229M 參數，MATPAC encoder，配 MusicSkills-3.5M 資料集。MuChoMusic benchmark 達到 SOTA LALM 的 82% 但體積小 35x。captioning / tagging / QA / reasoning 都能跑。",
+      "tags": [
+        "music_understanding",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/xiquan-li/TinyMU",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/xiquan-li/TinyMU",
+      "price": null,
+      "vram": "local-ready",
+      "license": "未標註"
+    },
+    {
+      "id": "20260503-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "moona3k/macparakeet",
+      "summary": "Mac 原生語音轉文字 app：Parakeet TDT 0.6B-v3 跑在 Apple Neural Engine，~155x realtime（60min 音檔 23 秒），單 inference slot 66MB。系統級熱鍵 dictation、檔案/影片/YouTube 轉錄、SRT/VTT/DOCX 多格式輸出。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "parakeet"
+      ],
+      "url": "https://github.com/moona3k/macparakeet",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/moona3k/macparakeet",
+      "price": null,
+      "vram": "local-ready (Apple Silicon NPU)",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260503-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "tirth8205/code-review-graph",
+      "summary": "本地 knowledge graph：Tree-sitter parse repo 成 AST、存 SQLite，算 blast radius 找出受改動影響的檔案。Claude Code 不用每次掃整包 repo。23 種語言 + Jupyter，git hook 增量更新 <2 秒，28 個 MCP tools。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools",
+        "knowledge_graph"
+      ],
+      "url": "https://github.com/tirth8205/code-review-graph",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/tirth8205/code-review-graph",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "james-see/ltx-video-mac",
+      "summary": "原生 macOS 的 LTX-2 影片生成 app，MLX 跑 Apple Silicon。LTX-2 Unified (~42GB) 與 LTX-2.3 Distilled Q4 (~19.4GB)，影像音訊同步生成（內建 TTS 旁白 + AI 配樂）。需 32GB+ RAM，64GB 建議。",
+      "tags": [
+        "image_gen",
+        "text-to-video",
+        "mlx"
+      ],
+      "url": "https://github.com/james-see/ltx-video-mac",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/james-see/ltx-video-mac",
+      "price": null,
+      "vram": "cloud-only (16GB VRAM 不夠)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "whyhow-ai/knowledge-graph-studio",
+      "summary": "RAG-native knowledge graph studio：rule-based entity resolution、模組化 graph 構建、彈性 ingestion。建在 NoSQL，API-first，schema-constrained 跟 exploratory graph 都支援。適合做有結構的知識管理。",
+      "tags": [
+        "rag_knowledge",
+        "graphrag",
+        "knowledge_graph"
+      ],
+      "url": "https://github.com/whyhow-ai/knowledge-graph-studio",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/whyhow-ai/knowledge-graph-studio",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "nvk/llm-wiki",
+      "summary": "LLM-compiled knowledge base：5-10 個平行 agent（academic / technical / news / contrarian 等視角）做 thesis-driven 研究，內建 anti-confirmation-bias 機制。吃 URL / PDF / Git repo / MediaWiki dump / Wayback。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools",
+        "multi_agent"
+      ],
+      "url": "https://github.com/nvk/llm-wiki",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/nvk/llm-wiki",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ruvnet/ruflo",
+      "summary": "Claude Code 的 multi-agent orchestration platform：100+ 專業 agent、HNSW vector memory（sub-ms 檢索）、SONA 神經 pattern 自學習、agent federation 跨組織協作。整合 Claude/GPT/Gemini/Ollama，含 prompt injection / PII 防護。今日 +1.3k stars。",
+      "tags": [
+        "ai_devtools",
+        "multi_agent",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/ruvnet/ruflo",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/ruvnet/ruflo",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "1jehuang/jcode",
+      "summary": "Rust 寫的 coding agent harness：14ms 啟動（比競品快 245x）、27.8MB RAM、custom terminal 1000+ fps。semantic memory + 多 agent swarm + Firefox bridge + self-modify 模式。支援 Claude/OpenAI/Gemini + Ollama/vLLM/LM Studio。今日 +482 stars。",
+      "tags": [
+        "ai_devtools",
+        "coding_agent",
+        "mcp"
+      ],
+      "url": "https://github.com/1jehuang/jcode",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/1jehuang/jcode",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260503-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "browserbase/skills",
+      "summary": "Claude Code 的瀏覽器自動化 skills 包：anti-bot stealth、CAPTCHA solving、DevTools 協議追蹤、AI 對抗式 UI 測試（吃 git diff）。能把本地 Chrome cookie 同步到 Browserbase 持久 context。今日 +346 stars。",
+      "tags": [
+        "ai_devtools",
+        "browser_automation"
+      ],
+      "url": "https://github.com/browserbase/skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/browserbase/skills",
+      "price": null,
+      "vram": "local-ready",
+      "license": "未標註"
     }
   ],
-  "lastUpdated": "2026-05-02T18:25:00+08:00"
+  "lastUpdated": "2026-05-03T08:10:00+08:00"
 }
