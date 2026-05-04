@@ -30336,6 +30336,91 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260504-sw-evening-001",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Multi-Agentic Software Development 是分散式系統問題（HN 熱議）",
+      "summary": "Kiran Tomlinson 的雄文：multi-agent 開發本質就是分散式系統，FLP theorem 等不可能性結果不會因為模型變聰明而失效。實作建議：把工作拆成 plan/design/code 階段，每個 gate 配 deterministic 檢查 + agentic reviewer。AGI 救不了你。",
+      "tags": [
+        "paradigm-shift",
+        "agentic-engineering",
+        "distributed-systems",
+        "FLP-theorem"
+      ],
+      "url": "https://kirancodes.me/posts/log-distributed-llms.html",
+      "source": "Kiran Tomlinson Blog (HN 熱榜)",
+      "sourceUrl": "https://kirancodes.me/posts/log-distributed-llms.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-evening-002",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Codex CLI /goal — agent 能 ReAct 迴圈跑到目標達成",
+      "summary": "Codex CLI 加入 /goal 指令，agent 會跨 turn 持續推進直到達成、暫停、被擋住或吃完 budget。長時程任務從「使用者每步指引」變「設定 success criteria 後放手」。是 coding agent 從 step-wise 到 goal-oriented 的範式轉換。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "coding-agent",
+        "long-horizon",
+        "react-loop"
+      ],
+      "url": "https://developers.openai.com/blog/run-long-horizon-tasks-with-codex",
+      "source": "OpenAI Developers Blog",
+      "sourceUrl": "https://developers.openai.com/blog/run-long-horizon-tasks-with-codex",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-evening-003",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Anthropic 推 Claude Managed Agents（4/8 公測）",
+      "summary": "Anthropic 把 agent 基礎設施代管化：API 開呼叫，按 model 用量 + $0.08/agent runtime hour 計費。需帶 managed-agents-2026-04-01 header。直接對打 OpenAI Workspace Agents。",
+      "tags": [
+        "ai-agent",
+        "managed-agents",
+        "anthropic",
+        "agent-infrastructure"
+      ],
+      "url": "https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/",
+      "source": "SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-evening-005",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Simon Willison: Claude Code 會漲到 $100/月嗎？",
+      "summary": "Simon 整理 Anthropic 對 Claude Code 定價的混亂訊息。對 indie dev / 中小團隊評估 coding agent 成本必讀。",
+      "tags": [
+        "coding-agent",
+        "claude-code",
+        "pricing",
+        "ai-tooling-cost"
+      ],
+      "url": "https://simonwillison.net/2026/apr/22/claude-code-confusion/",
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/apr/22/claude-code-confusion/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-04T08:30:00+08:00"
