@@ -30060,7 +30060,158 @@
       "price": null,
       "vram": "CLI tool only",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260504-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 開源 Symphony — Codex agent 編排規格",
+      "summary": "把 Linear/GitHub Issues 當成 control plane，每張 task 自動分派 agent 跑到完成、CI 過、PR 進 review。crash 自動重啟、衝突自動 rebase。OpenAI 內部 PR landed 數成長 500%。Apache 2.0、GitHub 15K+ stars。從 vibe coding → agentic engineering 的關鍵基礎設施。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agent-orchestration",
+        "agentic-engineering",
+        "codex"
+      ],
+      "url": "https://github.com/openai/symphony",
+      "source": "OpenAI / GitHub",
+      "sourceUrl": "https://github.com/openai/symphony",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Karpathy: Sequoia Ascent 2026 摘要 — Vibe Coding 已過時，進入 Agentic Engineering",
+      "summary": "Karpathy 把 12 月 2025 標記為 inflection point：11 月還自己寫 80% code，12 月起 80% 委派給 agent。當場宣布 vibe coding 已死，下個典範是 agentic engineering。框架：「傳統 software 自動化你能 specify 的，AI 自動化你能 verify 的」。人類仍是 understanding/taste/judgment 的 bottleneck。",
+      "tags": [
+        "paradigm-shift",
+        "agentic-engineering",
+        "vibe-coding",
+        "software-3-0"
+      ],
+      "url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+      "source": "Andrej Karpathy (bearblog)",
+      "sourceUrl": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Alignment: Auto-review of agent actions",
+      "summary": "Codex 推出 auto-review：用另一個 agent 來 approve/deny 跨界行為（檔案存取、外部 API），不再每步等使用者點同意。內部評估 acceptance rate vs 使用者批准 baseline；紅隊測試也找到被誤導的 case，官方明確說「不是安全保證」。Open source 在 Codex repo。為「parallel agent fleet」開了一條可工程化 oversight 路徑。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "alignment",
+        "safety",
+        "guardrails",
+        "auto-review"
+      ],
+      "url": "https://alignment.openai.com/auto-review/",
+      "source": "OpenAI Alignment Research",
+      "sourceUrl": "https://alignment.openai.com/auto-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison: LLM 0.32a0 — Python LLM 套件主要重構",
+      "summary": "舊抽象「text prompt → text response」撐不住 reasoning + tool use + multimodal。0.32a0 兩個關鍵改動：(1) input 變 sequence of messages、(2) response 變 stream of differently-typed parts。為新一代 frontier model 重畫 abstraction。當天又補 0.32a1 修 SQLite 對話 reinflate bug。",
+      "tags": [
+        "ai-agent",
+        "tool-use",
+        "multimodal",
+        "llm-cli"
+      ],
+      "url": "https://simonwillison.net/2026/Apr/29/llm/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Apr/29/llm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft Agent Framework: A2A Protocol v1.0 釋出",
+      "summary": "A2A（Agent-to-Agent）v1 變成 production-ready 標準，支援跨平台 agent 互通。Microsoft Agent Framework 1.0 已合併 Semantic Kernel + AutoGen，並支援 GitHub Copilot SDK / Claude Agent SDK 當 harness。Foundry REST SDK Python/JS/Java/.NET 都上 2.0 stable。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "A2A",
+        "interoperability",
+        "mcp"
+      ],
+      "url": "https://devblogs.microsoft.com/agent-framework/a2a-v1-is-here-cross-platform-agent-communication-in-microsoft-agent-framework-for-net/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/agent-framework/a2a-v1-is-here-cross-platform-agent-communication-in-microsoft-agent-framework-for-net/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer Pulse: AI token spend 失控，企業在做什麼",
+      "summary": "Gergely 訪談 15 家公司：過去 2-3 個月 agent token 花費爆炸，部分團隊半年 10x。Meta 一個月 60.2 兆 token（Anthropic 牌價約 $900M）。應對：內部工具 default 切到 Sonnet、heavy user 監控但不硬限。GitHub Copilot 與 Anthropic 已開始限制低利潤個人戶以保 enterprise 容量。",
+      "tags": [
+        "industry-trends",
+        "ai-cost",
+        "agent-budgets",
+        "tokenmaxxing"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-ai-token-spending-out-of",
+      "source": "Gergely Orosz / Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-ai-token-spending-out-of",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260504-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LangChain Interrupt 2026 大會預告 — Agents at Enterprise Scale (5/13-14 SF)",
+      "summary": "焦點是「Agents at Enterprise Scale」，會有 LangSmith/Deep Agents/LangGraph/LangChain 工程師 AMA。Deep Agents v0.5 已上 async (non-blocking) subagents — 主 agent 不再被子 agent 卡住，子 agent 在遠端跑、回傳 task ID。對「parallel agent fleet」生態的標誌性 milestone。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "langchain",
+        "deep-agents"
+      ],
+      "url": "https://blog.langchain.com/previewing-interrupt-2026-agents-at-enterprise-scale/",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://blog.langchain.com/previewing-interrupt-2026-agents-at-enterprise-scale/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-03T08:20:00+08:00"
+  "lastUpdated": "2026-05-04T08:30:00+08:00"
 }
