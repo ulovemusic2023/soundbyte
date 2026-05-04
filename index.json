@@ -30062,6 +30062,131 @@
       "license": "Apache-2.0"
     },
     {
+      "id": "20260504-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Luce-Org/lucebox-hub",
+      "summary": "為消費級 GPU 手調的 LLM 推理優化套件三件套：Megakernel（Qwen 3.5-0.8B 全 24 層單一 CUDA dispatch）、DFlash（Qwen 3.5/3.6-27B speculative decoding 衝到 207 tok/s，比 autoregressive 快 3.43×）、PFlash（128K context TTFT 砍 ~10×）。明確支援 RTX 3090 / 40xx / 50xx Blackwell + DGX Spark + Jetson Thor，RTX 5070 Ti 直接吃。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "speculative decoding",
+        "consumer GPU"
+      ],
+      "url": "https://github.com/Luce-Org/lucebox-hub",
+      "source": "GitHub Topics (llm-inference)",
+      "sourceUrl": "https://github.com/topics/llm-inference",
+      "price": null,
+      "vram": "DFlash 24GB（RTX 3090 baseline），16GB 可量化適配",
+      "license": "MIT"
+    },
+    {
+      "id": "20260504-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "algorithmicsuperintelligence/optillm",
+      "summary": "推理時優化代理：實作 20+ 技巧（MARS、CePO、MOA、MCTS）強化任何 LLM 的 reasoning，不需 training/fine-tune。號稱 AIME 2025 +30 分、IMO 2025 / LiveCodeBench 也有提升。OpenAI API 兼容（drop-in 代理），底層走 LiteLLM 接 100+ 模型。三種 Docker 變體（full / proxy / offline）。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools",
+        "reasoning",
+        "OpenAI proxy"
+      ],
+      "url": "https://github.com/algorithmicsuperintelligence/optillm",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "proxy 本身輕量；後端 LLM 自選",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260504-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ogkalu2/comic-translate v2.7.1",
+      "summary": "漫畫/manga/manhwa 全自動翻譯 pipeline：RT-DETR-v2（11k 漫畫圖訓練）偵測對話框 → Manga-OCR / Pororo / PPOCRv5 多語 OCR → Lama / AOT-GAN inpainting 擦掉原文 → GPT-4.1 / Claude-4.5 / Gemini-2.5 帶整頁 context 翻譯 → 重排版回對話框。支援 PDF / EPUB / CBR / CBZ。",
+      "tags": [
+        "cv_ocr",
+        "ocr",
+        "image_gen",
+        "inpainting"
+      ],
+      "url": "https://github.com/ogkalu2/comic-translate",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "OCR / inpainting 本地跑可在 16GB 內",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260504-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "dev-diaries41/smartscan",
+      "summary": "Android 端離線 AI 照片/影片搜尋：用 ONNX Runtime 跑 vector embedding，純文字描述或反向以圖搜圖。自動分群、tag autocomplete、跨 app 分享意圖。完全 on-device，不送雲端。Kotlin + Jetpack Compose。",
+      "tags": [
+        "cv_ocr",
+        "image recognition",
+        "on-device",
+        "android"
+      ],
+      "url": "https://github.com/dev-diaries41/smartscan",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "手機 NPU，無 dGPU",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260504-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "cocoindex-io/cocoindex v1.0.2",
+      "summary": "為 AI agent / LLM app 設計的增量資料 pipeline 引擎：source（codebase / PDF / API / DB）→ transform → vector store / KG，只重算 delta，不全量跑。Rust 底（25%）+ Python（75%），帶 retry / no-data-loss。打 RAG ingestion + KG 抽取 + 程式碼語意索引 全套。Apr 29 釋出 v1.0.2。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools",
+        "vector database",
+        "incremental pipeline"
+      ],
+      "url": "https://github.com/cocoindex-io/cocoindex",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "pipeline 本身輕量；embedding 模型自選",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260504-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "EvolvingLMMs-Lab/lmms-lab-writer",
+      "summary": "Local-first 學術 LaTeX 編輯器（Tauri + TypeScript + Rust）。內建 OpenCode AI 面板可接 Claude / GPT / Gemini / DeepSeek 或本地 LLM 直接改 .tex；自動裝 lightweight TeX 發行版省掉 TeX Live；XeLaTeX / LuaLaTeX 全 Unicode 支援中日韓阿拉伯；內建 Git + AI commit message。",
+      "tags": [
+        "ai_devtools",
+        "local-first",
+        "latex"
+      ],
+      "url": "https://github.com/EvolvingLMMs-Lab/lmms-lab-writer",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "編輯器 only；後端 LLM 自選",
+      "license": "MIT"
+    },
+    {
       "id": "20260504-sw-001",
       "radar": "software-dev",
       "date": "2026-05-04",
