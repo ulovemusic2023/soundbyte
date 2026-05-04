@@ -29938,6 +29938,128 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260504-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HeartMuLa/heartlib (HeartMuLa-oss-3B)",
+      "summary": "開源 LLM-based 歌曲生成模型族群：HeartMuLa（lyrics + tag conditioning 的 song LM）、HeartCodec（12.5Hz 高保真音樂 codec）、HeartCLAP（audio-text alignment）、HeartTranscriptor（whisper-tuned 歌詞轉錄）。多語言支援，內部 7B 號稱對標 Suno；3B 公開版（happy-new-year 變體 2026-02-13）為目前歌詞可控性 + 音質最佳的開源音樂模型。",
+      "tags": [
+        "music_understanding",
+        "audio_music_ai",
+        "music foundation model",
+        "song generation"
+      ],
+      "url": "https://github.com/HeartMuLa/heartlib",
+      "source": "GitHub Topics (music-generation)",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "price": null,
+      "vram": "~12-16GB（3B FP16），quantize 後可舒適跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260504-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vLLM v0.20.1（DeepSeek V4 stabilization patch）",
+      "summary": "2026-05-03 patch：DeepSeek V4 multi-stream pre-attention GEMM、BF16/MXFP8 all-to-all FlashInfer 通訊、整合 tile kernel for head computation；修 persistent topk cooperative deadlock + RoPE cache init bug、CUDA graph capture with max_num_batched_token、ROCm Quark W4A8 GPT-OSS 相容性。15 contributors / 176 commits since v0.20.0。",
+      "tags": [
+        "llm_inference",
+        "deepseek",
+        "vllm"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.20.1",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.20.1",
+      "price": null,
+      "vram": "本地引擎本身輕量；DeepSeek V4 全模型仍需 cloud-tier",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260504-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp b9009（server checkpoint optimization）",
+      "summary": "2026-05-02：server 端避免不必要的 checkpoint copy 到 host memory（context switch 更快）；refactor llama_io_read_i 提升 read 效率。配合 b9006（OpenCL Adreno MoE MxFP4）+ b9010（CUDA multi-GPU device 偵測修復避 OOM）+ b9012（Mistral yarn apply_scale）連發數版。",
+      "tags": [
+        "llm_inference",
+        "server",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b9009",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b9009",
+      "price": null,
+      "vram": "16GB 完全跑得動",
+      "license": "MIT"
+    },
+    {
+      "id": "20260504-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LearningCircuit/local-deep-research",
+      "summary": "本地隱私優先 deep-research agent：跨 arXiv / PubMed / Wikipedia / GitHub 等 10+ 來源，LangGraph autonomous mode 自動選 search 策略，~95% SimpleQA 準確率（GPT-4.1-mini）。SQLCipher AES-256 加密、零 telemetry、可串 Ollama / LM Studio / llama.cpp 完全離線。",
+      "tags": [
+        "rag_knowledge",
+        "deep research",
+        "local-first"
+      ],
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "依後端 LLM 而定；orchestrator 本身輕",
+      "license": "MIT"
+    },
+    {
+      "id": "20260504-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Q00/ouroboros v0.32.0（Agent OS for spec-first dev）",
+      "summary": "「Stop prompting. Start specifying.」Spec-first agent OS：Interview → Seed → Execute → Evaluate → Evolve 循環，用數學門檻（ambiguity score ≤0.2 才能 code、ontology similarity ≥0.95 才能停 iterate）做 ready/done 判斷。串 Claude Code / Codex / OpenCode / Hermes，把 agent 工作變成 replayable + observable + policy-bound contract。",
+      "tags": [
+        "ai_devtools",
+        "agent OS",
+        "spec-driven"
+      ],
+      "url": "https://github.com/Q00/ouroboros",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "orchestration only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260504-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "google/agents-cli v0.1.2",
+      "summary": "Google 官方 CLI + skill set：給 coding agent（Claude Code / Gemini CLI / Codex）安裝「會做 agent 的能力」。scaffold 新 agent 專案、跑 evaluation framework、部署到 GCP Agent Runtime / Cloud Run、註冊 Gemini Enterprise，整合 Cloud Trace observability。工具給 agent 用，不是 agent 本身。",
+      "tags": [
+        "ai_devtools",
+        "agent skills",
+        "GCP",
+        "ADK"
+      ],
+      "url": "https://github.com/google/agents-cli",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "CLI tool only",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-05-03T08:20:00+08:00"
