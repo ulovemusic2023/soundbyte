@@ -30582,7 +30582,173 @@
       "price": null,
       "vram": "純 indexing tool，不吃 VRAM",
       "license": "MIT"
+    },
+    {
+      "id": "20260505-sw-morning-001",
+      "radar": "software-dev",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Cowork — Anthropic 把 Claude Code 架構搬到桌面知識工作",
+      "summary": "Claude Cowork 用跟 Claude Code 相同的 agent loop，但作用範圍變成本機檔案 / 應用程式：把 request 拆成 subtasks、跑 shell + code、產出直接寫到 file system，全部跑在 sandboxed VM。MCP 提供連接層、Plugins (Skills + connectors + sub-agents) 是擴充層。從 chatbot → coworker 的 paradigm shift。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "claude",
+        "desktop-agent",
+        "mcp"
+      ],
+      "url": "https://www.anthropic.com/product/claude-cowork",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/product/claude-cowork",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-sw-morning-002",
+      "radar": "software-dev",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Karpathy LLM Wiki pattern 開始長出 OSS 生態",
+      "summary": "Karpathy 提出的 'agent 自己維護 markdown 知識庫' pattern，被社群在一週內做出多個實作：lucasastorian/llmwiki（透過 MCP 接 Claude）、Astro-Han/karpathy-llm-wiki（包成 Agent Skill）。三層架構：raw/（不可變來源）、wiki/（LLM 寫的頁面）、CLAUDE.md（schema）。Context compounds across sessions，不再每天從零貼上。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "knowledge-base",
+        "agent-skills"
+      ],
+      "url": "https://github.com/lucasastorian/llmwiki",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=47899844",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-sw-morning-003",
+      "radar": "software-dev",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 推 GPT-5.5：六週後又一次升級，主打 agentic coding",
+      "summary": "GPT-5.5 在 4/24 發布，距離 GPT-5.4 只有六週；同步進 API、Codex、ChatGPT。比 5.4 更貴但 token 更省（同樣任務用更少 tokens 完成），Codex 預設模型，主打 implementation / refactor / debugging / 研究 workflow。NVIDIA H200 推論基礎設施。",
+      "tags": [
+        "ai-models",
+        "ai-agent",
+        "agentic-coding",
+        "codex"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "source": "NVIDIA Blog",
+      "sourceUrl": "https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-sw-morning-004",
+      "radar": "software-dev",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 揭祕跑超大 LLM 的 infra：拆 prefill / decode",
+      "summary": "Cloudflare 公開新的 LLM 推論架構：把 input processing（prefill）跟 output generation（decode）拆到不同最佳化的機器跑、自製 inference engine 管 GPU。同時 Workers AI 開始跑 large models（Kimi K2.5 起）。disaggregated inference 是 hyperscaler 級玩家在做的標準作法，現在 edge 也開始進場。",
+      "tags": [
+        "paradigm-shift",
+        "devops_infra",
+        "ai-models",
+        "inference",
+        "edge"
+      ],
+      "url": "https://blog.cloudflare.com/high-performance-llms/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/cloudflare-llm-infrastructure/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-sw-morning-005",
+      "radar": "software-dev",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Toasty 上 crates.io：Rust async ORM 走出 preview",
+      "summary": "Tokio team 4/3 把 Toasty 推上 crates.io。賣點：application schema 跟 database schema 完全解耦——你寫的是 application graph 上的 statement，query engine 再翻成各 DB 操作。支援 PostgreSQL / SQLite / MySQL / DynamoDB（同時 SQL + NoSQL）。狀態仍是 Preview，API 可能會 break。",
+      "tags": [
+        "rust",
+        "async",
+        "orm",
+        "new-frameworks"
+      ],
+      "url": "https://github.com/tokio-rs/toasty",
+      "source": "Tokio Blog",
+      "sourceUrl": "https://tokio.rs/blog/2026-04-03-toasty-released",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-sw-morning-006",
+      "radar": "software-dev",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Karpathy: 我從沒覺得身為 programmer 這麼落後過",
+      "summary": "Karpathy 在 X 上的一篇 post 在 dev 社群引發地震：他自承覺得能力沒跟上 AI 工具的演化，'我可以強 10X，只要把已經存在的東西串對'。配合他在 Sequoia AI Ascent 的 Software 3.0 主題（vibe coding 只是熱身），這條訊息對 AI 之後 senior eng 怎麼定位自己 是個值得記住的錨點。",
+      "tags": [
+        "ai-coding",
+        "software-3.0",
+        "mental-model"
+      ],
+      "url": "https://x.com/karpathy/status/2004607146781278521",
+      "source": "Andrej Karpathy on X",
+      "sourceUrl": "https://x.com/karpathy/status/2004607146781278521",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-sw-morning-007",
+      "radar": "software-dev",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison 引 Anthropic：Claude 在「靈性」對話中 38% sycophantic",
+      "summary": "Anthropic 內部 essay 用 classifier 量 Claude 的諂媚行為（不挑戰使用者、過度讚美）：整體只有 9%，但「靈性」話題飆到 38%、「人際關係」25%。這是少見的可量測 alignment 數據，對做 LLM eval 的人很有參考價值。",
+      "tags": [
+        "alignment",
+        "llm-evaluation",
+        "hallucination"
+      ],
+      "url": "https://simonwillison.net/2026/May/3/anthropic/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/3/anthropic/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-sw-morning-008",
+      "radar": "software-dev",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison — April 2026 monthly newsletter 出刊",
+      "summary": "Simon 的 sponsors-only 月報出爐，整理了 4 月 LLM 圈最值得注意的事件。雖然全文只給 sponsor 看，但他公開的標題清單本身就是不錯的 4 月時間軸。",
+      "tags": [
+        "llm-news",
+        "weekly-roundup"
+      ],
+      "url": "https://simonwillison.net/2026/May/4/april-newsletter/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/4/april-newsletter/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-04T08:30:00+08:00"
+  "lastUpdated": "2026-05-05T08:20:00+08:00"
 }
