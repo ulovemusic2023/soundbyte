@@ -30852,7 +30852,153 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260505-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ModelsLab/omnivoice-singing",
+      "summary": "建立在 k2-fsa/OmniVoice 上的 0.6B 唱腔合成模型，支援 [singing] / [happy] / [whisper] 等 emotion tag，11 種語言可唱可說。基底是 Qwen3-0.6B + HiggsAudioV2 audio tokenizer。對 uLove 的 singing voice 流程是直接命中。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "singing-voice-synthesis",
+        "emotion-control"
+      ],
+      "url": "https://huggingface.co/ModelsLab/omnivoice-singing",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/ModelsLab/omnivoice-singing",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0 (training data partially NC)"
+    },
+    {
+      "id": "20260505-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "lucasjinreal/Crane（Pure Rust LLM/VLM/TTS 推理引擎）",
+      "summary": "純 Rust 寫的 LLM/VLM/VLA/TTS/OCR 推理引擎，基於 Candle，定位是 llama.cpp 的精簡乾淨替代。支援 Gemma 4 / Qwen3 / Hunyuan Dense / Qwen3-VL / PaddleOCR-VL / Moonshine ASR / Silero VAD / Qwen3-TTS（含 voice cloning + OpenAI-compatible API）。CPU/CUDA/Metal 全平台。",
+      "tags": [
+        "llm_inference",
+        "tts_speech",
+        "rust",
+        "candle"
+      ],
+      "url": "https://github.com/lucasjinreal/Crane",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/lucasjinreal/Crane",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Unspecified"
+    },
+    {
+      "id": "20260505-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "kyutai-labs/pocket-tts v2.1.0",
+      "summary": "2026-05-04 釋出 v2.1.0。100M 參數的 CPU-only TTS — MacBook Air M4 上 6× realtime，首段 ~200ms 延遲，支援任意長文本 + 6 種語言 + voice cloning。可在瀏覽器 WebAssembly 跑（社群實作）。",
+      "tags": [
+        "tts_speech",
+        "cpu-only",
+        "voice-cloning",
+        "edge"
+      ],
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/kyutai-labs/pocket-tts",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260505-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Aratako/T5Gemma-TTS",
+      "summary": "基於 Google T5Gemma-2b-2b-ul2 encoder-decoder 的多語 TTS：EN/ZH/JA + zero-shot voice cloning + duration control + batch generation。4-bit 量化只吃 7.6GB VRAM，FP 10.6GB。Apr 2026 paper（arXiv 2604.01760）。⚠️ 不適合 real-time。",
+      "tags": [
+        "tts_speech",
+        "voice-cloning",
+        "t5gemma",
+        "multilingual"
+      ],
+      "url": "https://github.com/Aratako/T5Gemma-TTS",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/Aratako/T5Gemma-TTS",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260505-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp b9028（device buffer memory savings + Walsh-Hadamard KV rotation）",
+      "summary": "2026-05-05 釋出。device buffer memory 節省選項 + 強化 llama-save-load-state 測試；同日 b9026 加入 fast Walsh-Hadamard transform 給 KV rotation。過去一週還補了 /models?reload=1 server endpoint、KleidiAI v1.24.0、get_datetime server tool。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "kv-cache",
+        "memory-optimization"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b9028",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b9028",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260505-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "sbintuitions/sarashina2.2-tts",
+      "summary": "SB Intuitions 釋出的 0.8B 日文中心 TTS，基於 sarashina2.2-0.5b LLM。Zero-shot 聲線複製、JP/EN code-switching、敘事/廣播/對話/客服/落語多風格切換。⚠️ Sarashina NonCommercial License — 商用得找 SBI 簽約。",
+      "tags": [
+        "tts_speech",
+        "japanese",
+        "voice-cloning",
+        "code-switching"
+      ],
+      "url": "https://huggingface.co/sbintuitions/sarashina2.2-tts",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/sbintuitions/sarashina2.2-tts",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Sarashina NonCommercial"
+    },
+    {
+      "id": "20260505-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "alexgreensh/token-optimizer",
+      "summary": "Trending Python repo。掃 prompt / context window 找「ghost tokens」（重複、無意義、低訊息密度的 token），回傳優化建議避免長 context 的 quality decay。Agent / RAG pipeline 維護工具。",
+      "tags": [
+        "ai_devtools",
+        "prompt-optimization",
+        "context-window"
+      ],
+      "url": "https://github.com/alexgreensh/token-optimizer",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/alexgreensh/token-optimizer",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Unspecified"
     }
   ],
-  "lastUpdated": "2026-05-05T01:08:31.339Z"
+  "lastUpdated": "2026-05-05T10:20:27.142Z"
 }
