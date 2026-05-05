@@ -30421,6 +30421,167 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260505-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp b9023（server /models?reload=1 endpoint）",
+      "summary": "server 加上 /models?reload=1 動態 reload model 不用重啟整個服務；同期 b9019 把 load_hparams + load_tensors 拆到 per-model 定義（架構大重構）、b9018 多了 get_datetime server tool、b9020 修 forced tool calls newline 處理、b9025 升 KleidiAI v1.24.0。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "server"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b9023",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b9023",
+      "price": null,
+      "vram": "本地引擎本身輕量；端看 model 大小",
+      "license": "MIT"
+    },
+    {
+      "id": "20260505-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "0xSero/vllm-studio v1.18.7",
+      "summary": "本地 AI workstation control panel：一個 UI 同時管 VLLM / SGLang / llama.cpp / exllamav3 四種 inference engine 的 model lifecycle、chat / agent workflow、observability、remote deploy。OpenAI proxy 內建 activation policy。Bun + Hono + Next.js stack，Docker Compose 一鍵起。",
+      "tags": [
+        "llm_inference",
+        "model serving",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/0xSero/vllm-studio",
+      "source": "Web Search (vLLM/SGLang)",
+      "sourceUrl": "https://github.com/0xSero/vllm-studio",
+      "price": null,
+      "vram": "Studio UI 不吃 VRAM；底層 engine 視 model 而定",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260505-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "noonghunna/club-3090（Qwen3.6-27B 部署 recipe）",
+      "summary": "在 RTX 3090 上 serve LLM 的 production-ready Docker Compose 配方，雙引擎並行——vLLM 雙卡走吞吐（127 t/s）、llama.cpp 單卡走 robustness（262K context）。目前主打 Qwen3.6-27B，OpenAI-compatible endpoint。RTX 5070 Ti 16GB 可參考 llama.cpp Q4 配置（partial offload）。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "llama.cpp",
+        "deployment"
+      ],
+      "url": "https://github.com/noonghunna/club-3090",
+      "source": "Web Search (vLLM/SGLang)",
+      "sourceUrl": "https://github.com/noonghunna/club-3090",
+      "price": null,
+      "vram": "目標 24GB；16GB 須 Q4 + partial offload",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260505-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "declare-lab/TangoFlux（ICLR 2026 text-to-audio）",
+      "summary": "Stability AI + Singapore 團隊的 ICLR 2026 收錄作品：515M flow-matching text-to-audio model，44.1kHz stereo / 30 秒音檔在 A40 上約 3.7 秒生完。三階段訓練（pre-train + fine-tune + CRPO preference optimization）讓 FD/KL/CLAP 全面領先同 size 競品。Stability AI Community License（非商業）。",
+      "tags": [
+        "audio_music_ai",
+        "text-to-audio",
+        "audiocraft"
+      ],
+      "url": "https://github.com/declare-lab/TangoFlux",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "515M 模型，16GB VRAM 充足",
+      "license": "Stability AI Community License (NC)"
+    },
+    {
+      "id": "20260505-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "murtaza-nasir/speakr v0.8.19-alpha",
+      "summary": "Self-hosted 轉錄 + 智能筆記平台：本地跑 ASR，speaker identification 用 voice profile embedding 自動分流。Inquire Mode（語意搜尋 + 對話介面）、REST API v1 + Swagger、OIDC SSO、6 國語言介面。Flask + SQLAlchemy + SQLite/PostgreSQL，docker compose 一鍵起。AGPLv3（含商業 license 選項）。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "whisper",
+        "speaker embedding"
+      ],
+      "url": "https://github.com/murtaza-nasir/speakr",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依後端 ASR model（whisper-large 約 6-10GB）",
+      "license": "AGPLv3"
+    },
+    {
+      "id": "20260505-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "aayoawoyemi/Ori-Mnemos v0.5.0（RMH 框架）",
+      "summary": "Local-first persistent memory infrastructure for AI agents，TypeScript 實作 Recursive Memory Harness：ACT-R-based 遺忘曲線取代固定 TTL、四訊號融合檢索（semantic + BM25 + PageRank + associative warmth）、三層記憶區各自獨立衰減。HotpotQA Recall@5 90% vs Mem0 29%（3.1×）。16 個 MCP tools，可接 Claude Code / Cursor。",
+      "tags": [
+        "rag_knowledge",
+        "memory",
+        "knowledge graph",
+        "mcp"
+      ],
+      "url": "https://github.com/aayoawoyemi/Ori-Mnemos",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "embedding 走 all-MiniLM-L6-v2 + SQLite，幾乎不吃 VRAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260505-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "gastownhall/beads v1.0.3",
+      "summary": "Distributed graph issue tracker for AI agents，Dolt（version-controlled SQL with cell-level merging）為底。multi-agent workflow 的 hash-based ID 防 merge collision、ready-task 自動偵測、closed task 語意壓縮保留 context、threading messaging 系統。bd CLI：bd ready / bd create / bd update --claim。",
+      "tags": [
+        "ai_devtools",
+        "agent infra"
+      ],
+      "url": "https://github.com/gastownhall/beads",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "純 CLI tool，不吃 VRAM",
+      "license": "MIT"
+    },
+    {
+      "id": "20260505-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-05",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "colbymchenry/codegraph",
+      "summary": "Pre-indexed code knowledge graph for Claude Code：本地 SQLite + tree-sitter AST + FTS5，支援 19+ 語言，宣稱可減 94% tool calls、77% 探索速度提升、100% local。File watcher 用 OS native event 自動同步。npm 全域安裝後跑 interactive installer 自動配置 Claude Code 整合。",
+      "tags": [
+        "ai_devtools",
+        "code generation"
+      ],
+      "url": "https://github.com/colbymchenry/codegraph",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "純 indexing tool，不吃 VRAM",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-04T08:30:00+08:00"
