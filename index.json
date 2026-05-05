@@ -1,6 +1,110 @@
 {
   "entries": [
     {
+      "id": "20260505-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-05",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Stratechery：北京不是在「下長棋」，是在反應",
+      "summary": "Andrew Sharp 拆解中國卡掉 Meta 收購 Manus 的事件。框架：當「對手在下棋」這敘事內建到你的策略，你就會把對手的混亂錯讀成深謀遠慮。",
+      "tags": [
+        "mental-model",
+        "narrative",
+        "geopolitics",
+        "strategy"
+      ],
+      "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+      "source": "Andrew Sharp / Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-05",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Brockman @ Sequoia AI Ascent：80% code 由 AI 寫，未來 100k agents per org",
+      "summary": "12 月還是 20%，現在已經 80%。願景是組織未來會運行 10 萬個 agents。但壓軸框架在後面——當 compute 不再稀缺、code 不再稀缺，「人類的注意力」變成新的瓶頸資源。",
+      "tags": [
+        "ai-coding",
+        "agentic",
+        "attention-economy",
+        "future-of-work"
+      ],
+      "url": "https://www.youtube.com/watch?v=bBS93A0BeNI",
+      "source": "TheNextWeb",
+      "sourceUrl": "https://thenextweb.com/news/openai-brockman-80-percent-code-ai-productivity-claim",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-05",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "HBR Duhigg：AI 時代為什麼要「獎勵異議」",
+      "summary": "AI 把「快速產出方案」的成本壓到接近零，反而讓「敢公開挑戰方案」的人更稀缺、更有價值。事前停 3 分鐘評估後果、ostentatious listening、disagree-and-commit。",
+      "tags": [
+        "leadership",
+        "decision-making",
+        "psychological-safety",
+        "disagree-and-commit"
+      ],
+      "url": "https://hbr.org/podcast/2026/04/why-your-team-wont-speak-up-and-how-to-fix-it",
+      "source": "HBR",
+      "sourceUrl": "https://hbr.org/podcast/2026/04/why-your-team-wont-speak-up-and-how-to-fix-it",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-05",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Max Schoening (Notion)：Agency > Skills，加上 Tiny Core 理論",
+      "summary": "AI 時代 agency（自己做決定推進事情的能力）比技能更重要。Tiny Core 理論——iPhone multitouch、GitHub PR、Notion block、Dropbox menu bar icon——偉大產品都繞著一個極小核心長出來。每個專案的前 10% 現在是免費的，勝負在 90% 之後的 craft。",
+      "tags": [
+        "product-framework",
+        "agency",
+        "tiny-core",
+        "ai-era"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/why-cultivating-agency-matters-more",
+      "source": "Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/why-cultivating-agency-matters-more",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260505-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-05",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Patrick Collison 金句：AI 能解 Nobel 物理，卻不能自己買網域",
+      "summary": "Stripe Sessions 2026 keynote。一句話框出 agentic commerce 的荒謬與機會——智能已經跨過某個門檻，但經濟主體性的基礎設施沒跟上。哪裡 agent「想做但做不到」，那裡就是下一波創業缺口。",
+      "tags": [
+        "quote",
+        "agentic-commerce",
+        "infrastructure-gap"
+      ],
+      "url": "https://siliconangle.com/2026/04/30/agentic-opportunity-openai-stripe-build-rising-tide-new-entrepreneurial-firms/",
+      "source": "Patrick Collison / Stripe Sessions",
+      "sourceUrl": "https://siliconangle.com/2026/04/30/agentic-opportunity-openai-stripe-build-rising-tide-new-entrepreneurial-firms/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260421-fm-001",
       "radar": "founder-mind",
       "date": "2026-04-21",
@@ -30750,5 +30854,5 @@
       "license": null
     }
   ],
-  "lastUpdated": "2026-05-05T08:20:00+08:00"
+  "lastUpdated": "2026-05-05T01:08:31.339Z"
 }
