@@ -31554,7 +31554,117 @@
       "cycle": "wed",
       "source": "GitHub API",
       "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260507-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ace-step/ACE-Step-1.5",
+      "summary": "本地音樂生成新王者，4GB VRAM 就能跑 turbo 版（A100 < 2 秒一首歌、3090 < 10 秒），SongEval benchmark 直接超越 Suno v5。支援 Mac/AMD/Intel/CUDA，XL 版 4B 模型只要 ≥12GB VRAM 配 vLLM。對音樂人來說這是「免訂閱、可商用、全本地」的轉折點。",
+      "tags": [
+        "ace-step",
+        "music generation",
+        "audio generation",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "4GB+ (turbo on consumer GPU; XL needs ≥12GB)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "maya-research/maya1",
+      "summary": "建在 Llama 3B backbone 的開源 expressive TTS：用自然語言描述音色，文字裡直接插 20+ emotion tag（<laugh>、<whisper>、<angry>...）。SNAC neural codec 做到 sub-100ms streaming，24kHz 輸出，single GPU 部署。直接挑戰 ElevenLabs 的閉源 moat。",
+      "tags": [
+        "text-to-speech",
+        "voice cloning",
+        "zero-shot tts",
+        "prosody",
+        "tts_speech"
+      ],
+      "url": "https://huggingface.co/maya-research/maya1",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?pipeline_tag=text-to-speech&sort=trending",
+      "price": null,
+      "vram": "single GPU (3B params)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260507-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ASLP-lab/VoiceSculptor-VD",
+      "summary": "Instruct TTS 新範式：4B 參數，從 Llama-3.2-3B + Llasa-3B fine-tune，主打用自然語言指令設計聲音。中文 instruct TTS eval 平均 67.6%，打贏 VoxInstruct (47.5%) 和 ElevenLabs (50.9%)，離 Gemini 2.5-Flash (85.4%) 還有差距。",
+      "tags": [
+        "voice synthesis",
+        "neural tts",
+        "text-to-speech",
+        "tts_speech",
+        "svc_voice"
+      ],
+      "url": "https://huggingface.co/ASLP-lab/VoiceSculptor-VD",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/models?other=voice",
+      "price": null,
+      "vram": "4B BF16 ≈ 8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260507-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "krillinai/KlicStudio",
+      "summary": "Go 寫的影片翻譯+配音工具，整合 LLM 翻譯、voice cloning、自動字幕，100+ 語言。對做跨語系內容的人來說是 one-stop solution，從輸入影片到輸出多語版本一次搞定。GPL-3.0（注意：商用要小心 license 傳染）。",
+      "tags": [
+        "voice cloning",
+        "voice changer",
+        "audio",
+        "svc_voice",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/krillinai/KlicStudio",
+      "source": "GitHub Topics (text-to-speech)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "varies by model",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260507-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Hmbown/DeepSeek-TUI",
+      "summary": "Rust 寫的 terminal coding agent，原生支援 DeepSeek V4 Pro/Flash + auto mode（自動選 model 和 thinking level）。streaming reasoning blocks、file editing 帶 approval gate。也能接 SGLang/vLLM 自架後端。Claude Code / Codex 的 Rust 替代品，今天 trending #1。",
+      "tags": [
+        "deepseek",
+        "coding agent",
+        "ai coding",
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/Hmbown/DeepSeek-TUI",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "API-based (or self-host via SGLang/vLLM)",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-05-05T10:20:27.142Z"
+  "lastUpdated": "2026-05-05T10:20:27.142Z",
+  "updatedAt": "2026-05-07T05:10:00+08:00"
 }
