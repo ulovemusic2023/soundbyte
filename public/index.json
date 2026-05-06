@@ -31150,6 +31150,130 @@
       "price": null,
       "vram": "local-ready",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20260506-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 為 Claude Managed Agents 加上 persistent memory（public beta）",
+      "summary": "Managed Agents 現在能跨 session 記住偏好、任務脈絡、學到的 pattern；底層用 filesystem-based memory layer，agent 不再每次從零開始。把「agent 是無狀態 worker」這個假設徹底翻過來。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "managed-agents",
+        "persistent-memory"
+      ],
+      "url": "https://platform.claude.com/docs/en/managed-agents/overview",
+      "source": "EdTech Innovation Hub",
+      "sourceUrl": "https://www.edtechinnovationhub.com/news/anthropic-brings-persistent-memory-to-claude-managed-agents-in-public-beta",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260506-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain 推 Deep Agents Deploy — 開源版的 Claude Managed Agents",
+      "summary": "beta 上線：用 deepagents harness（MIT）+ AGENTS.md + Agent Skills 三個開放標準，agent 暴露 MCP / A2A / Agent Protocol，model-agnostic（OpenAI、Google、Anthropic、Bedrock、Ollama 都接得上）。明擺著針對 Anthropic 的 walled garden。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agent-harness",
+        "deep-agents"
+      ],
+      "url": "https://github.com/langchain-ai/deepagents",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260506-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Karpathy at Sequoia Ascent 2026：vibe coding 結束，agentic engineering 開始",
+      "summary": "他親自整理的 fireside 重點：12 月 2025 是 inflection point — 自己從 80% 寫 code 變成 80% 委派給 agent。Software 3.0 = 用 LLM interpreter 做 prompting；vibe coding 抬升地板，agentic engineering 抬升天花板（保留專業品質）。",
+      "tags": [
+        "paradigm-shift",
+        "agentic-engineering",
+        "software-3.0",
+        "vibe-coding"
+      ],
+      "url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+      "source": "Andrej Karpathy (X)",
+      "sourceUrl": "https://x.com/karpathy/status/2049903821095354523",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260506-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 把 ChatGPT 預設模型換成 GPT-5.5 Instant",
+      "summary": "5/5 推出，內部評估顯示對「高風險 prompt」的 hallucination 比上一代少 52.5%、用戶標註的事實錯誤少 37.3%；AIME 2025 從 65.4 衝到 81.2、GPQA 從 78.5 → 85.6。Plus/Pro 先吃到完整 personalization（chat / files / Gmail）。",
+      "tags": [
+        "ai-models",
+        "hallucination",
+        "gpt-5.5-instant"
+      ],
+      "url": null,
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260506-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft 把 Agent Framework 開源（Python + .NET）",
+      "summary": "GitHub 上 microsoft/agent-framework — 用來 build / orchestrate / deploy AI agents 與 multi-agent workflow，雙語言 SDK，定位明顯是想搶 LangChain / AutoGen / CrewAI 的 enterprise dev 那塊。",
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "microsoft-agent-framework"
+      ],
+      "url": null,
+      "source": "Microsoft (GitHub)",
+      "sourceUrl": "https://github.com/microsoft/agent-framework",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260506-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVIDIA × LangChain：用 AI-Q + Deep Agents 做 enterprise search",
+      "summary": "NVIDIA 開發者 blog 示範把 AI-Q（NVIDIA 的 enterprise data toolkit）接到 LangChain 的 Deep Agents harness 上，做跨 SaaS / 內部資料的 long-horizon retrieval；給 enterprise RAG 一個新的參考架構。",
+      "tags": [
+        "rag",
+        "ai-agent",
+        "deep-agents",
+        "enterprise-search"
+      ],
+      "url": null,
+      "source": "NVIDIA Developer Blog",
+      "sourceUrl": "https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-05T10:20:27.142Z"
