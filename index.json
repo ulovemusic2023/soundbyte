@@ -30998,6 +30998,158 @@
       "price": null,
       "vram": "local-ready",
       "license": "Unspecified"
+    },
+    {
+      "id": "20260506-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ollama v0.23.1 — Gemma 4 MTP speculative decoding on Mac",
+      "summary": "Mac 用戶有福：Gemma 4 MTP speculative decoding 終於支援 Apple Silicon，跑 Gemma 4 31B coding 任務速度直接翻 2 倍。也修了 MLX threading bug、升級到 Go 1.26。RTX 不吃這套，但代表 ollama 開始把每張卡的硬體加速吃乾抹淨。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "gemma4",
+        "mac",
+        "speculative-decoding"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.23.1",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.23.1",
+      "price": null,
+      "vram": "local-ready (Mac only)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260506-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ibm-granite/granite-4.1-8b — Apache-2.0, 131k context, multilingual",
+      "summary": "IBM Granite 4.1 釋出 8B instruction model，Apache-2.0、131k context、tool calling、12 種語言支援（含繁中）。GSM8K 92.5、HumanEval 85.4、MBPP 87.3——8B 級的 coding benchmark 跟 Gemma 3 12B 同檔。RTX 5070 Ti 16GB 可直接跑 BF16，也已經有人在做 GGUF。",
+      "tags": [
+        "llm_inference",
+        "granite",
+        "long-context",
+        "multilingual",
+        "tool-calling"
+      ],
+      "url": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/ibm-granite/granite-4.1-8b",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260506-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning — video/audio/image/text omni MoE",
+      "summary": "NVIDIA 端出企業級 omni-modal：影像/音訊/圖片/文字 → 文字，Mamba2-Transformer hybrid MoE，31B 總參、3B 激活、256k context。支援 ASR + word-level timestamps + tool calling，原生支援 vLLM/TRT-LLM/SGLang/llama.cpp/Ollama。BF16 要 H100，FP8 跑 L40S 48GB，NVFP4 量化版 21GB 可上 RTX 5090；對 5070 Ti 16GB 還是吃緊。",
+      "tags": [
+        "llm_inference",
+        "multimodal",
+        "moe",
+        "asr",
+        "nvidia"
+      ],
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+      "price": null,
+      "vram": "quantize-ok (NVFP4 needs 24GB+)",
+      "license": "NVIDIA Open Model"
+    },
+    {
+      "id": "20260506-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ModelCloud/GPTQModel v7.0.0 — JIT kernels + Huawei Ascend NPU",
+      "summary": "量化工具大版本：所有 CUDA/ROCm kernel 改 JIT 編譯，pip install 不再需要 --no-build-isolation。新增 Huawei Ascend NPU 量化支援 + 新模型線（GLM 5/5.1、GLM-OCR、GLM-ASR、Gemma 3n、Falcon Mamba、InternVL Chat），AWQ/FP8/FP4 CPU dequantization 也補齊。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gptq",
+        "awq",
+        "ascend"
+      ],
+      "url": "https://github.com/ModelCloud/GPTQModel/releases/tag/v7.0.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ModelCloud/GPTQModel/releases/tag/v7.0.0",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260506-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "bytedance/deer-flow — open-source SuperAgent harness",
+      "summary": "ByteDance 把整套 SuperAgent harness 開源：sub-agents 平行分解任務、Docker sandbox 隔離 code execution、long-term memory 跨 session 持久化、原生支援 Telegram/Slack/Feishu/WeChat/DingTalk。今天 Trending +328，建議用 100k+ context 模型搭配。Feb 底發 v2.0 完全重寫。65.2k stars。",
+      "tags": [
+        "ai_devtools",
+        "agents",
+        "rag_knowledge",
+        "bytedance"
+      ],
+      "url": "https://github.com/bytedance/deer-flow",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/bytedance/deer-flow",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260506-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "google-research/reasoning-bank — agent memory 從成功與失敗都學",
+      "summary": "Google 把 agent memory 寫成「正反兩面都學」的機制——不只記成功軌跡，連失敗也歸納 lesson。論文主張這是「memory-aware test-time scaling」，把記憶當作 scaling 維度。涵蓋 SWE-Bench + WebArena 實作，支援 GPT/Gemini/Claude。值得讀，特別是在做 agent 平台的時候。",
+      "tags": [
+        "ai_devtools",
+        "agent-memory",
+        "research",
+        "test-time-scaling"
+      ],
+      "url": "https://github.com/google-research/reasoning-bank",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/google-research/reasoning-bank",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260506-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-06",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "nirholas/PAI v0.1.0 — bootable Debian + Ollama on USB",
+      "summary": "有趣的 side project：把 Debian 12 + Ollama 打包成可開機 USB，整個系統跑在 RAM 裡（amnesic），關機就清空。內建 Sway/Wayland 桌面 + Firefox + 本地 AI，MAC spoofing/firewall/Tor 整套硬到位。隱私場景或 demo 隨身碟值得試。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime",
+        "ollama",
+        "privacy",
+        "amnesic"
+      ],
+      "url": "https://github.com/nirholas/PAI",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/nirholas/PAI",
+      "price": null,
+      "vram": "local-ready",
+      "license": "GPL-3.0"
     }
   ],
   "lastUpdated": "2026-05-05T10:20:27.142Z"
