@@ -31663,8 +31663,163 @@
       "price": null,
       "vram": "API-based (or self-host via SGLang/vLLM)",
       "license": "MIT"
+    },
+    {
+      "id": "20260507-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Code w/ Claude 2026 SF — Anthropic 開發者大會：Opus 4.7 GA、Code Review、Remote Agents、Claude Agent SDK",
+      "summary": "5/6 在 SF 開的 Code w/ Claude，Anthropic 把 IDE 跟 Desktop app 都建在自家公開的 Claude Agent SDK 上。新功能：Code Review、Remote Agents（從手機操控筆電）、Pro/Max/Enterprise 五小時 rate limit double。Opus 4.7 升為 Max/Team Premium 預設，加 xhigh effort 模式。客戶喊 '90% autonomous coding by Q3'。從 'AI 輔助 coding' 跳到 'AI 主導 coding，人類審查'。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "claude-code",
+        "agent-sdk",
+        "code-review",
+        "remote-agents"
+      ],
+      "url": "https://claude.com/code-with-claude/san-francisco",
+      "source": "Simon Willison Live Blog",
+      "sourceUrl": "https://simonwillison.net/2026/May/6/code-w-claude-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 推 10 個金融服務 Agent Templates + Microsoft 365 擴大整合",
+      "summary": "Research/Client coverage 五個（pitch builder、meeting preparer、earnings reviewer、model builder、market researcher）+ Finance/Ops 五個（valuation reviewer、ledger reconciler、month-end closer、statement auditor、KYC screener）。每個都同時是 Claude Cowork plugin、Claude Code plugin、Managed Agents cookbook。Excel/PowerPoint/Word/Outlook add-ins 鋪上去，context 在四個 app 自動帶。垂直 SaaS 警報。",
+      "tags": [
+        "ai-agent",
+        "anthropic",
+        "agent-templates",
+        "vertical-ai",
+        "managed-agents"
+      ],
+      "url": "https://www.anthropic.com/news/finance-agents",
+      "source": "Anthropic News",
+      "sourceUrl": "https://www.anthropic.com/news/finance-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GitHub Blog：從 2,500+ repos 學怎麼寫一份好的 AGENTS.md",
+      "summary": "AGENTS.md 已被 20,000+ repo 採用，現在由 Linux Foundation 旗下的 Agentic AI Foundation 維護，跨 Codex / Cursor / Aider / RooCode / Zed / Jules 通吃。GitHub 從 2,500+ repo 整理最佳實踐：build/test/run、coding convention、domain vocabulary，可放子目錄做巢狀。'agent-native repo' 已是事實標準，README 給人讀、AGENTS.md 給 agent 讀。",
+      "tags": [
+        "ai-agent",
+        "agents-md",
+        "agent-native-repo",
+        "open-standard",
+        "developer-experience"
+      ],
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/",
+      "source": "GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hugging Face Transformers v5 — PyTorch-first、三類別模型定義、每天 300 萬次 pip install",
+      "summary": "v5.0.0rc-0 發佈：每個 model 只剩 config / model / preprocessor 三個 class，attention 機制標準化。架構數從 v4 的 40 個爆到 400+，社群 75 萬個 checkpoint。TF / Flax 正式 sunset，押注 PyTorch。日均 pip install 從 v4 的 2 萬→現在 300 萬。",
+      "tags": [
+        "ai-models",
+        "transformers",
+        "pytorch",
+        "huggingface",
+        "model-definitions"
+      ],
+      "url": "https://huggingface.co/blog/transformers-v5",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/transformers-v5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hugging Face AnyLanguageModel — Apple 平台一個 Swift API 串本地+雲端 LLM",
+      "summary": "API 直接 drop-in 取代 Apple Foundation Models framework，換 import 不換邏輯。後端支援 Core ML、MLX、llama.cpp、Ollama、OpenAI、Anthropic、Gemini、Hugging Face。Swift package traits 讓你只裝用得到的 backend。已支援 vision-language prompt（Foundation Models 還沒）。蘋果開發者的 LLM 抽象層終於統一。",
+      "tags": [
+        "ai-agent",
+        "local-first-ai",
+        "apple-platforms",
+        "swift",
+        "llm-abstraction"
+      ],
+      "url": "https://huggingface.co/blog/anylanguagemodel",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/anylanguagemodel",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor：Model Controls + Spend Management + Usage Analytics（Enterprise 補強）",
+      "summary": "5/4 changelog：Enterprise admin 拿到全新 model 控制系統，能在 model 跟 provider 層級設 allow/blocklist；spend management 升級；usage analytics 可拆 user 看，也能按產品面（client、Cloud Agents、automation、Bugbot、Security Review）切。Cursor 把 enterprise governance 補齊，跟 Anthropic Managed Agents 競爭企業客戶。",
+      "tags": [
+        "ai-coding",
+        "cursor",
+        "enterprise",
+        "governance",
+        "model-controls"
+      ],
+      "url": "https://cursor.com/changelog/05-04-26",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog/05-04-26",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google DeepMind 投資 Eve Online 開發商 CCP Games — 用 MMO 訓 AI",
+      "summary": "5/6 Bloomberg 報導：DeepMind 拿少數股權，準備在 Eve Online 這款超複雜 MMO 上訓 AI。長 horizon、多 agent、市場/外交/戰爭混合的環境，比現有 RL benchmark 更接近現實多 agent 場景。回到 AlphaStar / OpenAI Five 那條 game-as-research-environment 的路。",
+      "tags": [
+        "ai-models",
+        "reinforcement-learning",
+        "multi-agent",
+        "deepmind",
+        "research"
+      ],
+      "url": "https://www.bloomberg.com/news/articles/2026-05-06/google-deepmind-takes-minority-stake-in-maker-of-eve-online",
+      "source": "Bloomberg",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-06/google-deepmind-takes-minority-stake-in-maker-of-eve-online",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-05T10:20:27.142Z",
+  "lastUpdated": "2026-05-07",
   "updatedAt": "2026-05-07T05:10:00+08:00"
 }
