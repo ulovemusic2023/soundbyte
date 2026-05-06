@@ -31958,6 +31958,266 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260507-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "bradautomates/claude-video",
+      "summary": "給 Claude 看影片的 skill。/watch 自動下載影片 + 抽 frames + 轉錄字幕，全部丟給 Claude 分析。",
+      "tags": [
+        "video",
+        "claude-code",
+        "agent-skill"
+      ],
+      "url": "https://github.com/bradautomates/claude-video",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 822,
+      "createdDate": "2026-04-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "deepseek-ai/awesome-deepseek-agent",
+      "summary": "DeepSeek 官方整理的 agent 生態 awesome list。用 V4 跑 agent loop 的人值得追。",
+      "tags": [
+        "deepseek",
+        "ai-agent",
+        "awesome"
+      ],
+      "url": "https://github.com/deepseek-ai/awesome-deepseek-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 766,
+      "createdDate": "2026-04-27",
+      "license": "no-license"
+    },
+    {
+      "id": "20260507-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "waybarrios/opencode-power-pack",
+      "summary": "11 個 Claude Code skills 移植到 OpenCode：code-review / security-review / feature-dev / frontend-design 等。",
+      "tags": [
+        "opencode",
+        "claude-code",
+        "agent-skill"
+      ],
+      "url": "https://github.com/waybarrios/opencode-power-pack",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 225,
+      "createdDate": "2026-04-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "KSroido/Kagi-Session2API-MCP",
+      "summary": "免 API key 的 Kagi Search MCP server，靠 session token 走 search + summarizer。",
+      "tags": [
+        "mcp",
+        "search",
+        "kagi"
+      ],
+      "url": "https://github.com/KSroido/Kagi-Session2API-MCP",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 132,
+      "createdDate": "2026-05-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "eight-acres-lab/skillplus",
+      "summary": "可編譯 skill package 標準。把 skill 封裝成有 schema 驗證、能被 runtime 載入的格式。",
+      "tags": [
+        "agent-skill",
+        "standard",
+        "content"
+      ],
+      "url": "https://github.com/eight-acres-lab/skillplus",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 132,
+      "createdDate": "2026-04-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "rampstackco/claude-skills",
+      "summary": "Stack-agnostic 的網站全週期 skill 集：brand / design / content / SEO / dev / ops / growth / research。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "web"
+      ],
+      "url": "https://github.com/rampstackco/claude-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 131,
+      "createdDate": "2026-04-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "FrankHui/paragents",
+      "summary": "在同一個 panel 跑多個並行 ai-agent session。內建 permission-aware tools + preflight 衝突檢查。",
+      "tags": [
+        "ai-agent",
+        "parallel",
+        "orchestration"
+      ],
+      "url": "https://github.com/FrankHui/paragents",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 110,
+      "createdDate": "2026-04-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "elara-labs/code-context-engine",
+      "summary": "省 94% Claude Code token 的本地 MCP server。把 codebase index 起來，AI 用語意搜尋取代 read 整個檔案。",
+      "tags": [
+        "mcp",
+        "claude-code",
+        "indexing"
+      ],
+      "url": "https://github.com/elara-labs/code-context-engine",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 80,
+      "createdDate": "2026-04-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "kostyay/pi-k-excalidraw",
+      "summary": "給 OpenClaw Pi 的原生 Excalidraw 預覽 tool。Agent 可以直接畫圖 + 存圖 + live webview。",
+      "tags": [
+        "openclaw",
+        "excalidraw",
+        "diagram"
+      ],
+      "url": "https://github.com/kostyay/pi-k-excalidraw",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 60,
+      "createdDate": "2026-05-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "markifact/markifact-mcp",
+      "summary": "Google Ads / Meta Ads / GA4 / TikTok Ads / LinkedIn Ads 的 MCP server，300+ 廣告操作。",
+      "tags": [
+        "mcp",
+        "ads",
+        "marketing"
+      ],
+      "url": "https://github.com/markifact/markifact-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 52,
+      "createdDate": "2026-05-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260507-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "rtk-ai/rtk",
+      "summary": "單一 Rust binary 的 LLM CLI proxy，宣稱常見 dev command 能省 60-90% token。零相依。",
+      "tags": [
+        "cli",
+        "llm",
+        "token-saving"
+      ],
+      "url": "https://github.com/rtk-ai/rtk",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 42969,
+      "createdDate": "2026-01-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260507-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "iOfficeAI/AionUi",
+      "summary": "免費、本地、open-source 的 24/7 Cowork app，整合 OpenClaw / Hermes / Claude Code / Codex / OpenCode / Gemini 等 20+ CLI。",
+      "tags": [
+        "multi-cli",
+        "desktop",
+        "agent-ui"
+      ],
+      "url": "https://github.com/iOfficeAI/AionUi",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 23892,
+      "createdDate": "2025-08-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260507-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-07",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "vercel-labs/portless",
+      "summary": "把 localhost:3000 換成穩定有意義的命名 URL。Vercel labs 出品，給人類也給 agent 用。",
+      "tags": [
+        "devtool",
+        "dns",
+        "vercel"
+      ],
+      "url": "https://github.com/vercel-labs/portless",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 9021,
+      "createdDate": "2026-02-15",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-05-07",
