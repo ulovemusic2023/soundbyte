@@ -31274,6 +31274,286 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260506-ts-001",
+      "priority": "rising-fast",
+      "title": "darrylmorley/whatcable",
+      "summary": "macOS menu bar app，插上 USB-C cable 後直接告訴你這條線到底跑得多快、能不能傳 video、PD 多少 W。",
+      "tags": [
+        "macos",
+        "hardware-utility",
+        "dx-tool"
+      ],
+      "url": "https://github.com/darrylmorley/whatcable",
+      "stars": 1947,
+      "createdDate": "2026-05-01",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-002",
+      "priority": "rising-fast",
+      "title": "aattaran/deepclaude",
+      "summary": "把 Claude Code 的 autonomous agent loop 接到 DeepSeek V4 Pro / OpenRouter / 任何 Anthropic-compatible backend。同樣的 UX 但便宜 17x。",
+      "tags": [
+        "claude-code",
+        "coding-agent",
+        "cost-optimization"
+      ],
+      "url": "https://github.com/aattaran/deepclaude",
+      "stars": 1329,
+      "createdDate": "2026-05-03",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-003",
+      "priority": "rising-fast",
+      "title": "mattpocock/dictionary-of-ai-coding",
+      "summary": "Matt Pocock 寫的 AI coding 黑話字典，把 vibe coding / context engineering / agent harness 用白話解釋。",
+      "tags": [
+        "ai-coding",
+        "reference",
+        "learning"
+      ],
+      "url": "https://github.com/mattpocock/dictionary-of-ai-coding",
+      "stars": 1069,
+      "createdDate": "2026-05-01",
+      "license": "no-license",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-004",
+      "priority": "rising-fast",
+      "title": "vercel-labs/deepsec",
+      "summary": "Vercel Labs 的 security harness — 餵 codebase 進去，coding agent 自動找漏洞。可接自己的 model。",
+      "tags": [
+        "security",
+        "coding-agent",
+        "vercel"
+      ],
+      "url": "https://github.com/vercel-labs/deepsec",
+      "stars": 1068,
+      "createdDate": "2026-04-30",
+      "license": "Apache-2.0",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-005",
+      "priority": "rising-fast",
+      "title": "b-nnett/codex-plusplus",
+      "summary": "給 OpenAI Codex 桌面 app 用的 tweak system，加 hooks / 自訂 keybinding / workflow 客製。",
+      "tags": [
+        "codex",
+        "tweak-system",
+        "productivity"
+      ],
+      "url": "https://github.com/b-nnett/codex-plusplus",
+      "stars": 966,
+      "createdDate": "2026-04-28",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-006",
+      "priority": "rising-fast",
+      "title": "t8y2/dbx",
+      "summary": "15MB 跨平台 DB client，支援 MySQL / Postgres / SQLite / Redis / Mongo / DuckDB / ClickHouse / SQL Server。",
+      "tags": [
+        "database",
+        "gui-client",
+        "lightweight"
+      ],
+      "url": "https://github.com/t8y2/dbx",
+      "stars": 916,
+      "createdDate": "2026-04-29",
+      "license": "AGPL-3.0",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-007",
+      "priority": "rising-fast",
+      "title": "appergb/openless",
+      "summary": "按住快捷鍵說話、放開後 AI 潤過的文字直接出現在 cursor 位置。macOS + Windows。Wispr Flow 的免費替代。",
+      "tags": [
+        "voice-input",
+        "productivity",
+        "creator-tool"
+      ],
+      "url": "https://github.com/appergb/openless",
+      "stars": 846,
+      "createdDate": "2026-04-27",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-008",
+      "priority": "rising-fast",
+      "title": "GENEXIS-AI/chromex",
+      "summary": "Codex 驅動的 Chrome side-panel，會抓當前 page context、tab、語音、圖片整合進 agent workflow。",
+      "tags": [
+        "chrome-extension",
+        "codex",
+        "side-panel"
+      ],
+      "url": "https://github.com/GENEXIS-AI/chromex",
+      "stars": 838,
+      "createdDate": "2026-04-28",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-009",
+      "priority": "rising-fast",
+      "title": "future-agi/future-agi",
+      "summary": "Open-source self-hostable 的 LLM/agent 平台 — tracing、evals、simulations、datasets、gateway、guardrails 一條龍。",
+      "tags": [
+        "llm-ops",
+        "evals",
+        "observability"
+      ],
+      "url": "https://github.com/future-agi/future-agi",
+      "stars": 836,
+      "createdDate": "2026-04-23",
+      "license": "Apache-2.0",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-010",
+      "priority": "worth-trying",
+      "title": "1weiho/open-slide",
+      "summary": "專門給 agent 用的 slide framework — 給 Claude/Codex 直接生 deck 的格式。",
+      "tags": [
+        "slides",
+        "agent-output",
+        "presentation"
+      ],
+      "url": "https://github.com/1weiho/open-slide",
+      "stars": 1422,
+      "createdDate": "2026-04-26",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-011",
+      "priority": "worth-trying",
+      "title": "machinepulse-ai/world2agent",
+      "summary": "Open protocol 標準化「AI agent 怎麼感知真實世界」— camera、sensor、IoT 訊號統一介面。",
+      "tags": [
+        "protocol",
+        "agent-perception",
+        "mcp-adjacent"
+      ],
+      "url": "https://github.com/machinepulse-ai/world2agent",
+      "stars": 1299,
+      "createdDate": "2026-04-23",
+      "license": "Apache-2.0",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-012",
+      "priority": "worth-trying",
+      "title": "GammaLabTechnologies/harmonist",
+      "summary": "Portable AI agent orchestration，內建 186 個 agents、零 runtime dependency、protocol-level 強制執行。",
+      "tags": [
+        "agent-orchestration",
+        "multi-agent",
+        "protocol"
+      ],
+      "url": "https://github.com/GammaLabTechnologies/harmonist",
+      "stars": 1298,
+      "createdDate": "2026-04-23",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-013",
+      "priority": "worth-trying",
+      "title": "warpdot-dev/composio",
+      "summary": "TS + Python SDK 的 agent integrations 集合 — Anthropic / OpenAI / LangChain / Mastra / Vercel AI / MCP 全包。",
+      "tags": [
+        "agent-sdk",
+        "integrations",
+        "oauth"
+      ],
+      "url": "https://github.com/warpdot-dev/composio",
+      "stars": 236,
+      "createdDate": "2026-05-01",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
+    },
+    {
+      "id": "20260506-ts-014",
+      "priority": "worth-trying",
+      "title": "warpdot-dev/craft-agents-oss",
+      "summary": "Electron + Bun 桌面端 thin client，跑 Claude Agent SDK / MCP / 多 LLM，跨 macOS/Linux/Windows。",
+      "tags": [
+        "desktop-agent",
+        "electron",
+        "multi-llm"
+      ],
+      "url": "https://github.com/warpdot-dev/craft-agents-oss",
+      "stars": 211,
+      "createdDate": "2026-05-01",
+      "license": "Apache-2.0",
+      "radar": "tool-scout",
+      "date": "2026-05-06",
+      "cycle": "wed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-22+stars%3A%3E50&sort=stars"
     }
   ],
   "lastUpdated": "2026-05-05T10:20:27.142Z"
