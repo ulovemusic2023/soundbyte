@@ -31818,6 +31818,146 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260507-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-07",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Simon Willison: Vibe coding 與 Agentic Engineering 的界線正在崩塌",
+      "summary": "Simon 原本堅持 vibe coding（不看 code、信任輸出）跟 agentic engineering（負責任、結構化）是兩個世界。但他在 podcast 上意識到兩者在自己工作中已經開始重疊。框架：vibe coding 適合自己用、bug 只傷自己的工具；只要程式碼牽涉到別人，就必須升級到 agentic engineering 的紀律。",
+      "tags": [
+        "ai-coding",
+        "vibe-coding",
+        "agentic-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-07",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "HBR：AI 時代的領導者該當「配角」，而不是 Founder Mode",
+      "summary": "HBR 直接打臉 Paul Graham 2024 的 founder mode 論述。新論點：當 AI 越強，組織內的人需要 meaning 而不是 direction；最好的領導者要當 supporting character——支援、創造意義、讓他人發揮，而不是當主角。對應「員工不被信任 / 客戶要求變高」的雙向擠壓。",
+      "tags": [
+        "leadership",
+        "founder-mode",
+        "ai-management"
+      ],
+      "url": "https://hbr.org/2026/05/the-best-leaders-embrace-the-role-of-supporting-character",
+      "source": "Harvard Business Review",
+      "sourceUrl": "https://hbr.org/2026/05/the-best-leaders-embrace-the-role-of-supporting-character",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-07",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Tobi Lütke (20VC)：AI 不是裁員真兇，疫情期間過度招聘才是",
+      "summary": "Shopify CEO 在 20VC 主張 2023-2026 大規模裁員潮被歸因到 AI，但真正原因是疫情期間 over-hired，AI 只是拿來當公開的解釋。同集 Shopify 揭露 AI 已產出公司 50%+ 程式碼、最強工程師「不再寫 code」。意義：不要把 AI 當作 narrative 工具，要看公司真實成本結構。",
+      "tags": [
+        "ai-layoffs",
+        "shopify",
+        "founder-mode"
+      ],
+      "url": "https://www.thetwentyminutevc.com/tobias-lutke-2",
+      "source": "Tobi Lütke / 20VC",
+      "sourceUrl": "https://www.thetwentyminutevc.com/tobias-lutke-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-07",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Microsoft Q3 + Work Trend Index：Transformation Paradox 卡住企業 AI 採用",
+      "summary": "Nadella 在 Q3 法說定調 agents 將成主導 workload、定價從 per-seat 轉到 outcome-based（GitHub Copilot 6/1 起改用量計費）。但同步公布的 Work Trend Index 揭露 paradox：65% 員工怕跟不上 AI、卻只有 13% 因實驗 AI 被獎勵；45% 覺得守舊比創新安全。瓶頸不是技術，是 metrics 和 incentives。",
+      "tags": [
+        "ai-agents",
+        "transformation-paradox",
+        "pricing"
+      ],
+      "url": "https://www.crn.com/news/ai/2026/microsoft-q3-earnings-nadella-says-ai-agents-change-how-customers-pay",
+      "source": "Satya Nadella / CRN",
+      "sourceUrl": "https://www.crn.com/news/ai/2026/microsoft-q3-earnings-nadella-says-ai-agents-change-how-customers-pay",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-07",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Ben Thompson：Amazon 的 Primitives 策略十年預言再驗證",
+      "summary": "Stratechery 指出 Amazon Supply Chain Services（ASCS）的推出，正是 Ben Thompson 2016 年在《The Amazon Tax》預測的劇本：Amazon 把內部需要的能力（物流、AWS、Marketplace）拆成 primitives，自己當 first/best customer，再對外賣給其他公司。FedEx/UPS 應聲下跌。Playbook 套用到 AWS、廣告、現在物流，變成 Amazon 真正的 durability。",
+      "tags": [
+        "amazon",
+        "primitives",
+        "aggregation-theory"
+      ],
+      "url": "https://stratechery.com/2026/amazons-durability/",
+      "source": "Ben Thompson / Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/amazons-durability/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-07",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Stripe Sessions 2026：Agents 是新的 Long Tail",
+      "summary": "Patrick Collison 在 Stripe Sessions 重述 2010 年代的核心 bet——Stripe 的優勢來自服務被忽略的 long tail（小型 internet-native 開發者）。2026 版升級：AI agents 把 long tail 指數放大，新公司以 100% YoY 速度成立、cohorts 成長快 2-3x。Stripe 的回應是 288 個新產品（含 Agentic Commerce Protocol、Tempo blockchain、Link AI wallet），把 agents 當下一個 new business form。",
+      "tags": [
+        "stripe",
+        "agentic-commerce",
+        "long-tail"
+      ],
+      "url": "https://thereservist.substack.com/p/stripe-and-the-agentic-long-tail",
+      "source": "Patrick Collison / The Reservist",
+      "sourceUrl": "https://thereservist.substack.com/p/stripe-and-the-agentic-long-tail",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260507-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-07",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Patrick Collison: agents will be responsible for most transactions",
+      "summary": "Stripe Sessions 2026 keynote 一句話定調：agents 不是新功能、是新使用者。Stripe 把整個 stack 從 human-first 重構為 agent-first DX。\"It is increasingly clear that agents will be responsible for most transactions in the not overly distant future.\"",
+      "tags": [
+        "stripe",
+        "agentic-commerce",
+        "quotable"
+      ],
+      "url": "https://thereservist.substack.com/p/stripe-and-the-agentic-long-tail",
+      "source": "Patrick Collison / Stripe Sessions 2026",
+      "sourceUrl": "https://thereservist.substack.com/p/stripe-and-the-agentic-long-tail",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-07",
