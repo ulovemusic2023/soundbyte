@@ -32453,6 +32453,113 @@
       "price": null,
       "vram": "N/A",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260508-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Managed Agents 加入 Dreaming + Multi-agent Orchestration + Outcomes",
+      "summary": "Anthropic 為 Managed Agents 推出三件套：Dreaming（agent 在 idle 時 review session/memory，自動萃取 pattern 更新長期記憶）、Multi-agent orchestration（lead agent 拆任務、最多 20 specialists / 25 threads 並行 + 共享 filesystem）、Outcomes（成功標準量化 + webhook 通知）。Harvey 用 Dreaming 後 completion rate 提升約 6×。Agent 開始有「離線學習」是 paradigm shift。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "multi-agent",
+        "agent-memory",
+        "dreaming"
+      ],
+      "url": "https://platform.claude.com/docs/en/managed-agents/dreams",
+      "source": "Anthropic Blog",
+      "sourceUrl": "https://claude.com/blog/new-in-claude-managed-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison: xAI/Anthropic 資料中心交易筆記",
+      "summary": "Simon 整理 Code w/ Claude 2026 的兩個關鍵宣布：Anthropic 用上 SpaceX/xAI Colossus 資料中心全部容量；Pro/Max/Team rate limit 翻倍、Opus API limit 同步上調。重度 agent workload 終於有底氣推，背後是 compute supply 結構性鬆綁。",
+      "tags": [
+        "ai-infra",
+        "compute-capacity",
+        "anthropic",
+        "rate-limit"
+      ],
+      "url": "https://simonwillison.net/2026/May/7/xai-anthropic/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/7/xai-anthropic/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot CLI: Rubber Duck 跨家族 code review",
+      "summary": "GitHub Copilot CLI 的 reviewer agent Rubber Duck 現支援 cross-family 互審：GPT-5.5 主 session 可接 Claude critic，反之亦然。把「主 agent 寫程式 + 另一家 agent 挑毛病」做成內建 workflow，是對單模型偏見的具體緩解。",
+      "tags": [
+        "coding-agent",
+        "copilot",
+        "multi-model",
+        "code-review"
+      ],
+      "url": "https://github.blog/changelog/2026-05-07-rubber-duck-in-github-copilot-cli-now-supports-more-models/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-07-rubber-duck-in-github-copilot-cli-now-supports-more-models/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot CLI: Enterprise-Managed Plugins 公測",
+      "summary": "5/6 上線：管理員可以集中發佈 CLI extension、hook、MCP server，內部開發者不用各自設定。把 agent 工作流從個人實驗推到企業治理層 — skill / hook / MCP 的 supply chain 終於有正式入口。",
+      "tags": [
+        "copilot",
+        "enterprise",
+        "mcp",
+        "platform-engineering",
+        "dx"
+      ],
+      "url": "https://github.com/features/copilot/whats-new",
+      "source": "SmartScope",
+      "sourceUrl": "https://smartscope.blog/en/generative-ai/github-copilot/copilot-cli-enterprise-managed-plugins/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Vercel Flags 支援 JSON values",
+      "summary": "Vercel Flags 從 boolean/string/number 擴充到 JSON。一個 model flag 可以同時帶 model id、temperature、max tokens — A/B test AI configs 不用再拆三個 flag。對寫 AI 產品的人很實用的小升級。",
+      "tags": [
+        "feature-flag",
+        "dx",
+        "vercel",
+        "ai-config"
+      ],
+      "url": "https://vercel.com/changelog/vercel-flags-now-supports-json-values",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/vercel-flags-now-supports-json-values",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-08T05:10:00+08:00",
