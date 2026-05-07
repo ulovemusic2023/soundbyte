@@ -32218,8 +32218,243 @@
       "stars": 9021,
       "createdDate": "2026-02-15",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260508-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "rishiskhare/parrot",
+      "summary": "離線 TTS 支援 9 種語言。完全本地推理不靠雲，適合 privacy-first 的語音應用或邊緣部署。",
+      "tags": [
+        "tts_speech",
+        "offline",
+        "multilingual"
+      ],
+      "url": "https://github.com/rishiskhare/parrot",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "<1GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "sgl-project/mini-sglang",
+      "summary": "用 5000 行 code 跑 LLM 推理。SGLang 教學版，把 serving 框架核心壓到能讀完，想搞懂 paged attention 就讀這個。",
+      "tags": [
+        "llm_inference",
+        "education",
+        "sglang"
+      ],
+      "url": "https://github.com/sgl-project/mini-sglang",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依模型而定",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260508-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Open-LLM-VTuber/Open-LLM-VTuber",
+      "summary": "本地 LLM + Live2D 語音互動平台，整合 STT/LLM/TTS 串成 voice agent。⭐ 7.5k，是 voice-first agent infra 的起點。",
+      "tags": [
+        "tts_speech",
+        "llm_inference",
+        "voice_agent"
+      ],
+      "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "7B 量化 OK",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "microsoft/VibeVoice-Realtime-0.5B",
+      "summary": "微軟 realtime streaming TTS，文字串流輸入、長文穩定、首音延遲 ~300ms。0.5B 參數能 16GB VRAM 即時跑。",
+      "tags": [
+        "tts_speech",
+        "realtime",
+        "streaming"
+      ],
+      "url": "https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "price": null,
+      "vram": "<2GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VectifyAI/PageIndex",
+      "summary": "Vectorless RAG — 不靠向量，用 reasoning-based 文件索引。長文件、結構化內容檢索有優勢，跳過 embedding 成本。⭐ 29k。",
+      "tags": [
+        "rag_knowledge",
+        "vectorless"
+      ],
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "PacktPublishing/LLM-Engineers-Handbook",
+      "summary": "從資料清理、訓練、RAG 到部署的端到端 LLM pipeline 範例。書搭程式碼，系統性建立 LLM 工程能力。",
+      "tags": [
+        "llm_training",
+        "rag_knowledge",
+        "education"
+      ],
+      "url": "https://github.com/PacktPublishing/LLM-Engineers-Handbook",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "fine-tune 24GB+",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Blaizzy/mlx-vlm",
+      "summary": "Apple MLX 上的 VLM 推理 / fine-tune。Mac 用戶本地跑 VLM 首選；對 RTX 不直接用，但是 VLM ecosystem 進展指標。",
+      "tags": [
+        "llm_inference",
+        "vlm",
+        "apple_silicon"
+      ],
+      "url": "https://github.com/Blaizzy/mlx-vlm",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "Mac only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Nixtla/neuralforecast",
+      "summary": "30+ 神經預測模型集合，NHITS、TFT、NBEATS 全收。要做時序預測（流量、營收、播放數）不用自己 paper-by-paper 重寫。",
+      "tags": [
+        "ai_devtools",
+        "forecasting",
+        "time_series"
+      ],
+      "url": "https://github.com/Nixtla/neuralforecast",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "CPU 可跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260508-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "cheahjs/free-llm-api-resources",
+      "summary": "免費 LLM 推理 API 資源整理清單。⭐ 21k，社群維護，找 free tier 試模型、做原型不花錢的好起點。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/cheahjs/free-llm-api-resources",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "decolua/9router",
+      "summary": "把 coding tools 接到 40+ 免費 Claude / GPT / Gemini provider。一條 router 把多家 free tier 串起來，coding agent 開銷壓到極低。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/decolua/9router",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "InsForge/InsForge",
+      "summary": "Postgres 為核心的全棧 backend：auth、storage、compute、hosting 加 AI gateway。想 self-host supabase + AI 整合的人可以看。",
+      "tags": [
+        "infra_runtime",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/InsForge/InsForge",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
+    },
+    {
+      "id": "20260508-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "vercel-labs/open-agents",
+      "summary": "Vercel 出的 cloud agent template — 用來當起點 build production-grade agent app。TS 為主，整合 Vercel AI SDK。",
+      "tags": [
+        "ai_devtools",
+        "agents"
+      ],
+      "url": "https://github.com/vercel-labs/open-agents",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "N/A",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-05-07",
-  "updatedAt": "2026-05-07T05:10:00+08:00"
+  "lastUpdated": "2026-05-08T05:10:00+08:00",
+  "updatedAt": "2026-05-08T05:10:00+08:00"
 }
