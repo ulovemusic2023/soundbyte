@@ -32560,6 +32560,173 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260508-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-08",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Dario Amodei 改口：用 Jevons Paradox 重塑 AI 取代白領論述",
+      "summary": "去年 Amodei 警告 AI 會造成 white-collar bloodbath，這週在 JPMorgan 場合改用 Jevons Paradox 框架：當某項工作被 90% 自動化，所有人會聚焦在剩下 10%，總體用量反而擴張。同一個現象、不同的敘事——焦點從「替代論」轉到「擴張論」。",
+      "tags": [
+        "mental-model",
+        "jevons-paradox",
+        "ai-future",
+        "white-collar"
+      ],
+      "url": "https://fortune.com/2026/05/05/dario-amodei-jevons-paradox-will-ai-wipe-out-white-collar-jobs/",
+      "source": "Dario Amodei",
+      "sourceUrl": "https://fortune.com/2026/05/05/dario-amodei-jevons-paradox-will-ai-wipe-out-white-collar-jobs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-08",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Naval：純軟體正在變成 uninvestable，Hardware Renaissance 來了",
+      "summary": "5/4 Naval podcast 的框架反轉：vibe coding 把寫軟體民主化後，純軟體優勢不再是護城河。VC 該轉向 hardware、network effect、AI model。Impossible 用 flat / interconnected 結構 + AI 跨團隊溝通。",
+      "tags": [
+        "mental-model",
+        "hardware",
+        "vibe-coding",
+        "vc-thesis"
+      ],
+      "url": "https://nav.al/over",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://nav.al/over",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-08",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Patrick Collison：1/6 AI 註冊是 token 賊，免費試用模式正在崩潰",
+      "summary": "Stripe 揭露新 attack surface — AI 公司送的 tokens 變可變現資產，1/6 signups 是賊。Free trial abuse 半年內翻倍，AI startup 漸漸養不起免費試用。AI 時代 GTM 假設要重寫。",
+      "tags": [
+        "operational",
+        "ai-economy",
+        "fraud",
+        "pricing"
+      ],
+      "url": "https://fortune.com/2026/05/07/stripe/",
+      "source": "Patrick Collison",
+      "sourceUrl": "https://fortune.com/2026/05/07/stripe/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-08",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Anthropic Q1 成長 80x：「我們本來計劃 10x」",
+      "summary": "Amodei 承認 Q1 annualized 成長 80 倍，是內部計劃 10x 的八倍。教訓不是「成長很猛」，而是 hyper-growth 的 capacity planning 本質上不可能準確。配套：跟 SpaceX Colossus 簽 300MW 算力協議。",
+      "tags": [
+        "operational",
+        "hyper-growth",
+        "capacity-planning"
+      ],
+      "url": "https://www.cnbc.com/2026/05/06/anthropic-ceo-dario-amodei-says-company-crew-80-fold-in-first-quarter.html",
+      "source": "Dario Amodei",
+      "sourceUrl": "https://www.cnbc.com/2026/05/06/anthropic-ceo-dario-amodei-says-company-crew-80-fold-in-first-quarter.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-08",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Anthropic 進攻華爾街的雙軌 GTM 設計",
+      "summary": "與 JPMorgan 同台發布金融 agents，策略分兩軌：(1) 大行 self-serve、自己 configure；(2) 中型市場 → PE-backed JV 把 Claude 埋進營運。同一個 product 兩種商業模型，垂直行業 GTM 教科書案例。",
+      "tags": [
+        "operational",
+        "gtm",
+        "vertical-strategy",
+        "two-track"
+      ],
+      "url": "https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/",
+      "source": "Anthropic",
+      "sourceUrl": "https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-08",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Ben Thompson：Microsoft 揭幕 agentic 商業模式，從 per-seat 轉到 outcome",
+      "summary": "Stratechery 解讀 MSFT Q3：Nadella 明說 AI agents 改變客戶付費方式 — 從每席每月授權轉向用量/結果計費。所有 SaaS 都要重畫 pricing 模型，因為 per-seat 建立在「人在執行」假設，agent 跑工作時假設失效。",
+      "tags": [
+        "operational",
+        "pricing",
+        "agentic-business-model",
+        "saas"
+      ],
+      "url": "https://stratechery.com/2026/microsoft-earnings-apple-earnings/",
+      "source": "Ben Thompson",
+      "sourceUrl": "https://stratechery.com/2026/microsoft-earnings-apple-earnings/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-08",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "Lenny's Newsletter：傳統 SaaS freemium 在 AI 不適用，該怎麼做",
+      "summary": "Google AI Vikas Kansal 解釋：SaaS 邊際成本接近零，freemium 是免費獲客；但 AI 每次推理都是真錢，免費用戶在燒毛利。替代 playbook：限 token / 限 model tier / 限 throughput，讓「免費」跟成本結構脫鉤。",
+      "tags": [
+        "playbook",
+        "pricing",
+        "freemium",
+        "ai-saas"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont",
+      "source": "Vikas Kansal",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260508-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-05-08",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "Sam Altman × Patrick Collison：兩年 product roadmap + 多十年基礎設施承諾",
+      "summary": "Stripe Sessions 火爐邊談話揭示 OpenAI 的計劃悖論：產品 roadmap 只敢規劃兩年（高信心），但同時簽多十年電力 + 土地承諾。OpenAI 重新定位為「全球軟體的 token 生產 utility」。",
+      "tags": [
+        "playbook",
+        "strategy",
+        "infrastructure",
+        "roadmap"
+      ],
+      "url": "https://nodemerge.com/blog/sam-altman-patrick-collison-stripe-conversation-2026",
+      "source": "Sam Altman & Patrick Collison",
+      "sourceUrl": "https://nodemerge.com/blog/sam-altman-patrick-collison-stripe-conversation-2026",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-08T05:10:00+08:00",
