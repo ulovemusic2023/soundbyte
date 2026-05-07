@@ -32727,6 +32727,203 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260508-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "strukto-ai/mirage",
+      "summary": "Unified Virtual Filesystem for AI Agents — 讓多個 coding agent 共享一致的虛擬檔案系統視角。",
+      "tags": [
+        "ai-agent",
+        "mcp",
+        "coding-tools"
+      ],
+      "url": "https://github.com/strukto-ai/mirage",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 918,
+      "createdDate": "2026-05-06",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "HarimxChoi/google-surf-mcp",
+      "summary": "Anti-bot Google Search MCP，免 API key、免付費，給 Claude/Cursor/Hermes 當免費搜尋後端。",
+      "tags": [
+        "mcp",
+        "search"
+      ],
+      "url": "https://github.com/HarimxChoi/google-surf-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 149,
+      "createdDate": "2026-04-30",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "alvinunreal/claude-pets",
+      "summary": "Claude Code 整合 OpenPets，桌面跑寵物即時顯示 coding agent 狀態，一行指令安裝。",
+      "tags": [
+        "claude-code",
+        "mcp",
+        "coding-tools"
+      ],
+      "url": "https://github.com/alvinunreal/claude-pets",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 131,
+      "createdDate": "2026-05-04",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "ericjypark/codex-island",
+      "summary": "把 OpenAI Codex 的 usage limit 顯示在 MacBook 瀏海（notch）裡。Swift。",
+      "tags": [
+        "codex",
+        "mac"
+      ],
+      "url": "https://github.com/ericjypark/codex-island",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 114,
+      "createdDate": "2026-04-29",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "GanyuanRan/Aegis",
+      "summary": "讓 AI coding agent 變得 architecture-aware：baseline-first、evidence-verified、drift-checked。",
+      "tags": [
+        "claude-code",
+        "coding-agent",
+        "ai-agent"
+      ],
+      "url": "https://github.com/GanyuanRan/Aegis",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 105,
+      "createdDate": "2026-04-30",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "chorus-codes/chorus",
+      "summary": "Multi-LLM peer review for code — BYO CLI，召集 2-4 個其他 LLM review 才放行。",
+      "tags": [
+        "claude-code",
+        "code-review"
+      ],
+      "url": "https://github.com/chorus-codes/chorus",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 109,
+      "createdDate": "2026-04-30",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Dsadd4/AgentFigureGallery",
+      "summary": "Drop-in 科學繪圖 skill，給 Claude Code / Codex / Cursor 用。論文 + data viz 必備。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "dev-tool"
+      ],
+      "url": "https://github.com/Dsadd4/AgentFigureGallery",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 100,
+      "createdDate": "2026-05-01",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "czlonkowski/n8n-mcp",
+      "summary": "MCP server 讓 Claude Desktop / coding agent 直接用自然語言建 n8n workflow。",
+      "tags": [
+        "mcp",
+        "automation",
+        "n8n"
+      ],
+      "url": "https://github.com/czlonkowski/n8n-mcp",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript",
+      "stars": 20322,
+      "createdDate": "",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "WenyuChiou/awesome-agentic-ai-zh",
+      "summary": "AI Agent 中文學習地圖，繁中 / 简中 / English 三語對照，每階段有必做練習。",
+      "tags": [
+        "ai-agent",
+        "learning",
+        "zh-tw"
+      ],
+      "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 95,
+      "createdDate": "2026-05-04",
+      "license": "Unknown"
+    },
+    {
+      "id": "20260508-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-05-08",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "pguso/voice-agents-from-scratch",
+      "summary": "從零開始的 voice agent pipeline（Python）— end-to-end speech、本地 model、explicit streaming。",
+      "tags": [
+        "voice",
+        "tts",
+        "audio"
+      ],
+      "url": "https://github.com/pguso/voice-agents-from-scratch",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "stars": 23,
+      "createdDate": "2026-05-02",
+      "license": "Unknown"
     }
   ],
   "lastUpdated": "2026-05-08T05:10:00+08:00",
