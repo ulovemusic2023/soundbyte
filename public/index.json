@@ -33312,8 +33312,88 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260509-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-09",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "antirez/ds4",
+      "summary": "Redis 之父 antirez 親手寫的 DeepSeek 4 Flash local Metal inference engine — Apple Silicon 跑 DeepSeek 不用透過 Ollama/llama.cpp 包裝層。",
+      "tags": [
+        "local-llm",
+        "metal",
+        "inference"
+      ],
+      "url": "https://github.com/antirez/ds4",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 2303,
+      "createdDate": "2026-05-06",
+      "license": "unknown"
+    },
+    {
+      "id": "20260509-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-09",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "EvanBacon/serve-sim",
+      "summary": "The npx serve of Apple Simulators — 一條指令啟動 iOS Simulator 並 serve build。",
+      "tags": [
+        "ios",
+        "expo",
+        "dev-tool"
+      ],
+      "url": "https://github.com/EvanBacon/serve-sim",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 807,
+      "createdDate": "2026-04-29",
+      "license": "unknown"
+    },
+    {
+      "id": "20260509-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-09",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "horang-labs/tessera",
+      "summary": "Web + desktop workspace for multi-agent coding workflows — 把多個 coding agent 同框 orchestrate。",
+      "tags": [
+        "multi-agent",
+        "workspace",
+        "coding-agent"
+      ],
+      "url": "https://github.com/horang-labs/tessera",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 126,
+      "createdDate": "2026-04-29",
+      "license": "unknown"
+    },
+    {
+      "id": "20260509-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-05-09",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "funaudiollm/Fun-ASR",
+      "summary": "阿里 FunAudioLLM 團隊出的多語言 ASR — 31 種語言＋區域口音，包含中文/粵語/日語/韓語。",
+      "tags": [
+        "asr",
+        "multilingual",
+        "audio"
+      ],
+      "url": "https://github.com/funaudiollm/Fun-ASR",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": null,
+      "createdDate": "2026-05",
+      "license": "unknown"
     }
   ],
-  "lastUpdated": "2026-05-09T05:30:00+08:00",
+  "lastUpdated": "2026-05-09",
   "updatedAt": "2026-05-09T05:10:00+08:00"
 }
