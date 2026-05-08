@@ -33171,8 +33171,149 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260509-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-09",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "xAI 把 alignment 寫進 compute 合約：對齊變成商業槓桿",
+      "summary": "Anthropic 拿下 SpaceX/Colossus 全部算力（300+MW），但 Musk 公開保留「若 AI 危害人類就抽回算力」的條款。對齊不再只是內部 PR，而是上游基礎設施供應商手裡的可執行 leverage。",
+      "tags": [
+        "alignment",
+        "compute",
+        "leverage",
+        "geopolitics"
+      ],
+      "url": "https://simonwillison.net/2026/May/7/xai-anthropic/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/7/xai-anthropic/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-09",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Andreessen Don't-Hallucinate prompt：表面 patch 修不了架構問題",
+      "summary": "Andreessen 公開的 system prompt 寫「不要 hallucinate」被批 category error——hallucination 是 LLM 架構性質，不是行為偏好。分清「行為層 vs. 架構層」是 AI fluency 基本功。",
+      "tags": [
+        "ai-fluency",
+        "prompt-engineering",
+        "category-error"
+      ],
+      "url": "https://dnyuz.com/2026/05/05/how-marc-andreessen-says-he-sets-up-his-ai-chatbot-and-why-critics-are-skeptical-it-works/",
+      "source": "DNyuz / Business Insider",
+      "sourceUrl": "https://dnyuz.com/2026/05/05/how-marc-andreessen-says-he-sets-up-his-ai-chatbot-and-why-critics-are-skeptical-it-works/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-09",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "HBR：別把 AI agents 當員工，擬人化會拉低品質",
+      "summary": "大型實驗：把 agent 當「同事」會降低個人 accountability、增加 escalation、惡化 review 品質。Deploy agent 時刻意去人格化（叫 pipeline 不叫 team member），把 outcome 責任明確留給人。",
+      "tags": [
+        "ai-management",
+        "anthropomorphism",
+        "accountability"
+      ],
+      "url": "https://hbr.org/2026/05/research-why-you-shouldnt-treat-ai-agents-like-employees",
+      "source": "HBR",
+      "sourceUrl": "https://hbr.org/2026/05/research-why-you-shouldnt-treat-ai-agents-like-employees",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-09",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "HBR：AI 採用成敗在於 empathetic leadership，不是 mandate",
+      "summary": "高管樂觀指數遠高於員工焦慮指數。Mandate 拉低採用率；先 acknowledge 員工擔心被取代、再 demonstrate 自己也在學，才會推得動。AI rollout 是 change management。",
+      "tags": [
+        "leadership",
+        "ai-adoption",
+        "change-management"
+      ],
+      "url": "https://hbr.org/2026/04/empathetic-leadership-can-make-or-break-ai-adoption",
+      "source": "HBR",
+      "sourceUrl": "https://hbr.org/2026/04/empathetic-leadership-can-make-or-break-ai-adoption",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-09",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Code with Claude 2026：Anthropic 把 agent 工程化的五個新原語",
+      "summary": "5/6 大會無新模型，全部火力放在 agent infra：routines（排程）、outcomes（rubric grading）、multi-agent orchestration、Code Review、Dreams（長期記憶）。Agent 從 toy 進入企業 standard primitives。",
+      "tags": [
+        "agent-infra",
+        "claude-code",
+        "agentic-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/May/6/code-w-claude-2026/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/6/code-w-claude-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-09",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Lenny's：Code with Claude 五大更新如何改寫 AI dev playbook",
+      "summary": "拆解 Anthropic 大會 5 大產品更新：routines 取代部分 cron、rubric grading 讓 agent QA 規模化、多 agent orchestration、memory 解掉 context 硬約束。產品團隊現在能跑 always-on / 可評估 / 可組隊的後台流程。",
+      "tags": [
+        "playbook",
+        "claude-code",
+        "agent-orchestration"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/code-with-claude-the-5-biggest-updates",
+      "source": "Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/code-with-claude-the-5-biggest-updates",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-09",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Andreessen：80% 美國 startup 跑在中國 OSS 模型上",
+      "summary": "a16z Show 2026 outlook 數字：來 pitch 的 US startup 約八成已在用 Qwen / DeepSeek / Kimi 等中國 OSS。選 model 是商業決策也是政治決策，frontier closed model 不再是預設答案。",
+      "tags": [
+        "china-oss",
+        "vc-thesis",
+        "open-source"
+      ],
+      "url": "https://a16z.com/podcast/marc-andreessens-2026-outlook-ai-timelines-us-vs-china-and-the-price-of-ai/",
+      "source": "a16z",
+      "sourceUrl": "https://a16z.com/podcast/marc-andreessens-2026-outlook-ai-timelines-us-vs-china-and-the-price-of-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-08T05:10:00+08:00",
+  "lastUpdated": "2026-05-09T05:30:00+08:00",
   "updatedAt": "2026-05-09T05:10:00+08:00"
 }
