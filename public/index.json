@@ -32924,8 +32924,125 @@
       "stars": 23,
       "createdDate": "2026-05-02",
       "license": "Unknown"
+    },
+    {
+      "id": "20260509-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FunAudioLLM/FunMusic (InspireMusic)",
+      "summary": "阿里 FunAudioLLM 的開源音樂生成 toolkit，1.5B 參數做 text-to-music + continuation + super resolution，autoregressive transformer 配 flow-matching，24/48kHz 雙取樣率。",
+      "tags": [
+        "audio_music_ai",
+        "music_generation"
+      ],
+      "url": "https://github.com/FunAudioLLM/FunMusic",
+      "source": "GitHub Topics: music-generation",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "price": null,
+      "vram": "~3GB FP16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260509-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GAIR-NLP/LiveTalk",
+      "summary": "上海交大 GAIR Lab 的即時 talking avatar：4-step causal AR 蒸餾把 diffusion 從 83 秒推到 24.82 FPS、首幀 0.33s（20× speedup）。可惜 ≥24GB VRAM。",
+      "tags": [
+        "image_gen",
+        "tts_speech",
+        "talking_avatar"
+      ],
+      "url": "https://github.com/GAIR-NLP/LiveTalk",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "≥24GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260509-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "PaddlePaddle/PaddleOCR",
+      "summary": "百度 OCR 套件上 Trending（+154 stars/day），主打「PDF/圖片直接 → AI 可用結構化資料」，document parsing 走 vision-language 路線。",
+      "tags": [
+        "cv_ocr",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "source": "GitHub Trending (Daily)",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "<4GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260509-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "muvon/octocode",
+      "summary": "把 codebase 變成 navigable knowledge graph 給 AI agent 用，tree-sitter AST + 語意檢索 + BM25 + reranking。內建 MCP server，Claude/Cursor/Windsurf 都能接。",
+      "tags": [
+        "ai_devtools",
+        "rag_knowledge",
+        "mcp"
+      ],
+      "url": "https://github.com/muvon/octocode",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~1-2GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260509-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ikamensh/kodo",
+      "summary": "睡前丟 task、起床收成果的 multi-agent coding 編排器。Gemini Flash orchestrator + Architect + Worker Smart (Claude Code) + Worker Fast (Cursor/Codex) + Tester。",
+      "tags": [
+        "ai_devtools",
+        "agent_orchestration"
+      ],
+      "url": "https://github.com/ikamensh/kodo",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": null,
+      "license": "MIT"
+    },
+    {
+      "id": "20260509-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "maorcc/gimp-mcp",
+      "summary": "GIMP × MCP 橋接，描述要改什麼 AI 幫你動 GIMP 並即時看到變化。支援 Claude Desktop/Code、Gemini CLI、PydanticAI。",
+      "tags": [
+        "ai_devtools",
+        "image_gen",
+        "mcp"
+      ],
+      "url": "https://github.com/maorcc/gimp-mcp",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": null,
+      "license": "GPL-3.0"
     }
   ],
   "lastUpdated": "2026-05-08T05:10:00+08:00",
-  "updatedAt": "2026-05-08T05:10:00+08:00"
+  "updatedAt": "2026-05-09T05:10:00+08:00"
 }
