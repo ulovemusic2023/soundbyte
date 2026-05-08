@@ -33041,6 +33041,136 @@
       "price": null,
       "vram": null,
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20260509-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic Managed Agents 三大新功能：Dreaming / Outcomes / Multiagent Orchestration",
+      "summary": "Code w/ Claude 2026 推出：Dreaming 讓 agent idle 時 review 過去 sessions 自我更新 memory；Outcomes 定義可量化成功標準 + webhook；Multiagent Orchestration 讓 lead agent 拆任務派給 specialist sub-agents 在共享 filesystem 平行作業。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "multi-agent",
+        "managed-agents",
+        "dreaming",
+        "outcomes"
+      ],
+      "url": "https://www.anthropic.com/news",
+      "source": "9to5Mac",
+      "sourceUrl": "https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "AWS MCP Server 正式 GA — 企業級 MCP 進入主流",
+      "summary": "AWS 5/6 宣布 AWS MCP Server GA，AI coding agents 透過單一 MCP tool 即可呼叫所有 AWS API（含長 task 與檔案上傳），內建 sandboxed Python 執行 multi-step 操作。MCP 從 dev tool 跨進雲服務基礎設施層。",
+      "tags": [
+        "paradigm-shift",
+        "mcp",
+        "ai-agent",
+        "devops",
+        "enterprise-mcp"
+      ],
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+      "source": "AWS What's New",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Agents Week 2026 — 為 agents 重建整個 stack",
+      "summary": "Workers AI 變 unified inference layer（接 14+ providers）；Project Think 讓 agent 直接成為 Cloudflare 客戶的 SDK；Sandboxes 提供 millisecond-start 持久化 agent shell + filesystem；Git-compatible agent workspace。同步裁撤 ~1,100 員工轉向 agentic-AI-first。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "edge-runtime",
+        "agent-sandbox",
+        "architecture"
+      ],
+      "url": "https://blog.cloudflare.com/agents-week-in-review/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/agents-week-in-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison — Vibe coding 跟 agentic engineering 越來越像",
+      "summary": "Simon 直球指出 vibe coding（隨手讓 AI 寫不細看）跟 agentic engineering（紀律化人 AI 工作流）邊界因 agent 自動寫/跑/改 code 而模糊化，擔心 verification 失守、技能退化、跑得起來就 ship 變預設。",
+      "tags": [
+        "ai-coding",
+        "agentic-engineering",
+        "vibe-coding",
+        "verifiability-gap"
+      ],
+      "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MCP 2026 Roadmap — 從 dev toy 到 production protocol",
+      "summary": "官方 MCP roadmap 2026 公布四大主軸：Streamable HTTP transport scalability、Tasks primitive 進入 production（async lifecycle / retry / expiry）、Agent-to-agent 通訊規範、enterprise 治理（audit / SSO / gateway）。",
+      "tags": [
+        "mcp",
+        "ai-agent",
+        "architecture",
+        "streamable-http",
+        "enterprise-readiness"
+      ],
+      "url": "https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/",
+      "source": "Model Context Protocol Blog",
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260509-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "llm-gemini 0.31 釋出 — Simon Willison CLI 工具更新",
+      "summary": "Simon 的 llm CLI Gemini plugin 更新到 0.31，加入新 Gemini model 支援。給混合 provider workflow 的人參考。",
+      "tags": [
+        "ai-coding",
+        "llm-tooling",
+        "gemini"
+      ],
+      "url": "https://simonwillison.net/2026/May/7/llm-gemini/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/7/llm-gemini/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-08T05:10:00+08:00",
