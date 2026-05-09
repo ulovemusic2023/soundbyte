@@ -33392,8 +33392,129 @@
       "stars": null,
       "createdDate": "2026-05",
       "license": "unknown"
+    },
+    {
+      "id": "20260510-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FunAudioLLM/Fun-ASR",
+      "summary": "阿里 FunAudioLLM 團隊開源的 800M 端對端 ASR 模型。支援 31 種語言（含中文 7 大方言、26 個地區口音、英、日、韓、越、泰），對遠場、背景噪音、唱歌歌詞、rap 都有特別優化。對音樂製作的人聲轉譯、歌詞校對特別實用。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai",
+        "asr",
+        "multilingual"
+      ],
+      "url": "https://github.com/FunAudioLLM/Fun-ASR",
+      "source": "Tom Dörr MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~3-6GB（800M FP16）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260510-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "PolarSeeker/OpenSeeker v2",
+      "summary": "把 frontier search agent 完全開源——包含 30B 訓練資料（基於 Qwen3-30B-A3B-Thinking-2507 微調，11.7K 軌跡）。v2 五月剛推出，BrowseComp 46%、HLE 34.6%、xbench 78%。對想自己訓練本地 search/research agent 的人是稀有的乾淨 dataset。",
+      "tags": [
+        "llm_training",
+        "rag_knowledge",
+        "open-data"
+      ],
+      "url": "https://github.com/PolarSeeker/OpenSeeker",
+      "source": "Tom Dörr MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "30B → 量化後 ~18-20GB",
+      "license": "未明示"
+    },
+    {
+      "id": "20260510-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HKUDS/ViMax",
+      "summary": "把「點子→劇本→分鏡→影片」整條 pipeline agentic 化的開源框架。四個模組：Idea2Video / Novel2Video / Script2Video / AutoCameo。底層接 Google Veo + Gemini + Nanobanana API。MV pre-vis 或者 SoundByte 的影片素材生成可以直接拿來用。",
+      "tags": [
+        "image_gen",
+        "video_generation",
+        "agent"
+      ],
+      "url": "https://github.com/HKUDS/ViMax",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "依賴雲端 API（Veo/Gemini）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260510-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "rohitg00/agentmemory v0.9.5",
+      "summary": "給 Claude Code / Cursor / Gemini CLI 共用的長期記憶層。靠 MCP server 跨 agent 抓 tool use、壓縮成可搜尋記憶，再注入 context。v0.9.5 昨天（5/9）才發。號稱比 manual context injection 省 92% token、語意檢索準確率 95.2%。SQLite + in-memory 索引，不用外部 DB。",
+      "tags": [
+        "ai_devtools",
+        "agent_memory",
+        "mcp"
+      ],
+      "url": "https://github.com/rohitg00/agentmemory",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "n/a (CPU/SQLite)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260510-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ChromeDevTools/chrome-devtools-mcp v0.25.0",
+      "summary": "Chrome 官方推的 MCP server，把 DevTools 整套包成 40+ 個 tool 給 AI agent 用：自動化測試、效能分析、live browser inspection 都能做。v0.25.0 是 5/6 剛發，專案累積 38.8k 星。要 vibe coding 包一個 web app 然後讓 agent 自己 QA 的話這顆是必裝。",
+      "tags": [
+        "ai_devtools",
+        "mcp",
+        "browser_automation"
+      ],
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "n/a (Node.js)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260510-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "bytedance/UI-TARS-desktop",
+      "summary": "ByteDance 自家的 multimodal AI agent stack——Agent TARS（CLI/Web UI 控 terminal & browser）+ UI-TARS Desktop（native GUI agent 控本機 app）。Apache-2.0、31k 星，今天又跳 549 顆。有想本地跑 GUI 自動化的可以來看。",
+      "tags": [
+        "ai_devtools",
+        "agent",
+        "multimodal"
+      ],
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "視底層模型而定",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-05-09",
-  "updatedAt": "2026-05-09T05:10:00+08:00"
+  "lastUpdated": "2026-05-09T21:18:34.133189Z",
+  "updatedAt": "2026-05-09T21:18:34.133189Z"
 }
