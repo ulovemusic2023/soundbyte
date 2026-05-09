@@ -33681,8 +33681,91 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260510-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-10",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "Karpathy @ Sequoia AI Ascent 2026：從 Vibe Coding 到 Agentic Engineering",
+      "summary": "Karpathy 釐清「vibe coding」一年後的演進：vibe coding 抬高地板，但 production 要靠 agentic engineering——把 agent 當半自治執行者、配上人類審核閘門、評估迴路、權限邊界。Software 3.0 = prompt + context window 是程式，LLM 是 interpreter。重點不在模型，在工作流。",
+      "tags": [
+        "software-3.0",
+        "agentic-engineering",
+        "vibe-coding",
+        "ai-coding"
+      ],
+      "url": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+      "source": "Andrej Karpathy / Sequoia Capital",
+      "sourceUrl": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-10",
+      "cycle": "sunday",
+      "priority": "playbook",
+      "title": "Clay 的「Spiky Talent」迴路：把角色 fit 在人身上，不是把人塞進角色",
+      "summary": "Clay 從 10 人/$1M ARR 長到 400 人/$100M ARR/$5B 估值的核心：圍著人才尖點塑造職位的迴路。員工順自己尖點走 → 公司把職稱/薪資/責任設計來放大尖點 → 產出無法複製的工作（如 GTM Engineering 概念被造出來變成業界職缺類別）→ 吸引更多 spiky talent。Founder mode：別 benchmark 同業職稱，benchmark 你想留住的人。",
+      "tags": [
+        "talent",
+        "culture",
+        "spiky-talent",
+        "scaling",
+        "founder-mode"
+      ],
+      "url": "https://review.firstround.com/firsthand-clay/",
+      "source": "First Round Review",
+      "sourceUrl": "https://review.firstround.com/firsthand-clay/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-10",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Agentic Commerce：權力從賣家移到買家，新競爭是「能不能被叫到」",
+      "summary": "Stripe Sessions 2026 後的結構性讀法：funnel 時代是賣家控制買家發現的場域；agent 時代不是。決策在 ChatGPT/Gemini/coding agent/procurement workflow 內部就完成了。新提問：不是「怎麼把客戶帶到我家店」，而是「客戶的 agent 要做事時，我能不能被叫到」。Brand 不再是賣家每次表演，而是 agent 替買家記住的記憶。",
+      "tags": [
+        "agentic-commerce",
+        "stripe",
+        "buyer-power",
+        "distribution"
+      ],
+      "url": "https://natesnewsletter.substack.com/p/agentic-commerce-buyers-power",
+      "source": "Nate's Newsletter",
+      "sourceUrl": "https://natesnewsletter.substack.com/p/agentic-commerce-buyers-power",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-10",
+      "cycle": "sunday",
+      "priority": "quotable",
+      "title": "Karpathy：Vibe coding raises the floor. Agentic engineering keeps the ceiling.",
+      "summary": "AI coding 的兩個維度：vibe coding 降低入場門檻；天花板要靠 agentic engineering 守住——這層是專業工程師的責任。一句話劃清「玩具」與「production」的界線。",
+      "tags": [
+        "vibe-coding",
+        "agentic-engineering"
+      ],
+      "url": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-09T21:18:34.133189Z",
-  "updatedAt": "2026-05-09T21:18:34.133189Z"
+  "lastUpdated": "2026-05-09T21:41:14.319347Z",
+  "updatedAt": "2026-05-09T21:41:14.319347Z"
 }
