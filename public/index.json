@@ -33764,6 +33764,142 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260510-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-10",
+      "cycle": "sun-daily",
+      "priority": "rising-fast",
+      "title": "vercel-labs/zero-native",
+      "summary": "Vercel Labs cross-platform app framework：Zig 寫 native runtime，UI 用 web stack。瞄準 Tauri/Electron 但更輕。",
+      "tags": [
+        "developer-tool",
+        "cross-platform",
+        "framework"
+      ],
+      "url": "https://github.com/vercel-labs/zero-native",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 1531,
+      "createdDate": "2026-05-08",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260510-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-10",
+      "cycle": "sun-daily",
+      "priority": "rising-fast",
+      "title": "regent-vcs/re_gent",
+      "summary": "Version-control 專為 AI coding agents 設計：結構化 agent commit、多 agent 並行 worktree。",
+      "tags": [
+        "ai-agent",
+        "version-control",
+        "coding-agent"
+      ],
+      "url": "https://github.com/regent-vcs/re_gent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 264,
+      "createdDate": "2026-04-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260510-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-10",
+      "cycle": "sun-daily",
+      "priority": "worth-trying",
+      "title": "lightseekorg/tokenspeed",
+      "summary": "Speed-of-light LLM inference engine，宣稱比 vllm/llama.cpp 更快的本地推論。",
+      "tags": [
+        "local-llm",
+        "llm-inference"
+      ],
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 854,
+      "createdDate": "2026-05-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260510-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-10",
+      "cycle": "sun-daily",
+      "priority": "worth-trying",
+      "title": "usewhale/whale",
+      "summary": "DeepSeek 版 Claude Code：terminal coding agent，支援 MCP/Skills/shell tools，內建 prefix-cache 優化。",
+      "tags": [
+        "coding-agent",
+        "mcp",
+        "deepseek"
+      ],
+      "url": "https://github.com/usewhale/whale",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 66,
+      "createdDate": "2026-05-06",
+      "license": "unknown"
+    },
+    {
+      "id": "20260510-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-10",
+      "cycle": "sun-daily",
+      "priority": "worth-trying",
+      "title": "OpenSquilla/opensquilla",
+      "summary": "Token-efficient AI agent — 同樣 budget 塞更多 intelligence，靠 context pruning + skill routing。",
+      "tags": [
+        "ai-agent",
+        "context-optimization"
+      ],
+      "url": "https://github.com/OpenSquilla/opensquilla",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 148,
+      "createdDate": "2026-05-06",
+      "license": "unknown"
+    },
+    {
+      "id": "20260510-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-10",
+      "cycle": "sun-daily",
+      "priority": "on-the-radar",
+      "title": "virattt/dexter",
+      "summary": "Autonomous deep financial research agent — 結構化財報抓取 + 多步驟分析。",
+      "tags": [
+        "ai-agent",
+        "financial-research"
+      ],
+      "url": "https://github.com/virattt/dexter",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 25023,
+      "createdDate": "2025-10-14",
+      "license": "unknown"
+    },
+    {
+      "id": "20260510-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-05-10",
+      "cycle": "sun-daily",
+      "priority": "product-hunt",
+      "title": "Postiz",
+      "summary": "Agentic social media scheduler for agents like OpenClaw — 讓 agent 排程社群貼文。",
+      "tags": [
+        "social-media",
+        "agentic"
+      ],
+      "url": "https://www.producthunt.com/products/postiz",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/18",
+      "stars": null,
+      "createdDate": "2026-05-04",
+      "license": "unknown"
     }
   ],
   "lastUpdated": "2026-05-09T21:41:14.319347Z",
