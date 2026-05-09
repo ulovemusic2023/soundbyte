@@ -33513,6 +33513,174 @@
       "price": null,
       "vram": "視底層模型而定",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260510-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 雙倍 Claude Code 額度 + 簽下 SpaceX Colossus 算力",
+      "summary": "Anthropic 5/6 同步宣布把 Claude Code 五小時 limit 給 Pro/Max/Team/Enterprise 翻倍、移除 Pro/Max 尖峰時段降速，Opus API Tier 1 input limit 直接 +1500%。背後是跟 SpaceX 簽下 Colossus 1 全部 300MW（22 萬顆 H100/B200 等級 GPU），一個月內上線。再加上 AWS 5GW、Google/Broadcom 5GW、Microsoft+NVIDIA 30B Azure，整個 AI 供給端從『拼模型』變成『拼供電/合約』。",
+      "tags": [
+        "paradigm-shift",
+        "ai-compute-supply",
+        "claude",
+        "anthropic"
+      ],
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "source": "Anthropic Blog",
+      "sourceUrl": "https://www.anthropic.com/news/higher-limits-spacex",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 推出 GPT-Realtime-2：把 GPT-5 推理塞進語音 agent",
+      "summary": "5/7 OpenAI 在 Realtime API 推三個新模型：GPT-Realtime-2（128K context、GPT-5 級推理，$32/$64 per 1M audio tokens）、GPT-Realtime-Translate（70 種語言→13 種，$0.034/min）、GPT-Realtime-Whisper streaming STT（$0.017/min）。語音 agent 從『會講』進到『會推理 + 即時翻譯』，跟 voice-first product 的設計空間一次拉開。",
+      "tags": [
+        "openai",
+        "voice-agent",
+        "realtime-api",
+        "reasoning"
+      ],
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison — Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "summary": "Simon 5/8 寫了一篇——他把 Claude Code 的輸出大量改用 HTML（不是 markdown 也不是 PDF），反而最好 review 跟 ship。一頁 HTML 自帶連結、結構、可印刷、可貼進 issue。對 coding agent 的 deliverable format 是一個小但關鍵的反直覺觀察。",
+      "tags": [
+        "paradigm-shift",
+        "claude-code",
+        "agent-output-format",
+        "html"
+      ],
+      "url": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mozilla 用 Claude Mythos Preview 找到上百個 Firefox 漏洞",
+      "summary": "5/7 Simon 整理 Mozilla 的故事：他們拿到 Anthropic 還沒公開的 Claude Mythos preview，跑 always-on security agent 掃 Firefox codebase，找出並修掉『上百個』漏洞。Mythos 是 Anthropic 沒對外發但有部分客戶 preview 的下一代模型，這是 model preview pipeline 第一次有公開戰績。",
+      "tags": [
+        "paradigm-shift",
+        "claude-mythos",
+        "security-agent",
+        "firefox"
+      ],
+      "url": "https://simonwillison.net/2026/May/7/firefox-claude-mythos/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/7/firefox-claude-mythos/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "swyx (Latent Space) — Scaling without Slop / 2026 是 War on Slop",
+      "summary": "swyx 在 AIE Code keynote 把 2026 定調為『War on Slop』——AI engineer 不再只追量，要追品質。Latent Space 同步丟出 Agent Labs Thesis：2025 是 coding agent 年，2026 是 coding agent 突破 containment 做別的事（science、ops、design...）。對『我們現在在 AI 的哪個 phase』是很乾淨的 mental model。",
+      "tags": [
+        "ai-engineering",
+        "war-on-slop",
+        "agent-labs",
+        "mental-model"
+      ],
+      "url": "https://www.latent.space/p/2026",
+      "source": "Latent.Space",
+      "sourceUrl": "https://www.latent.space/p/2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Meta — HSM-based Backup Key Vault 強化端對端加密備份",
+      "summary": "5/1 Meta 公布 WhatsApp + Messenger 的備份金鑰系統：用 tamper-resistant HSM 存 recovery code，Meta 自己、雲端 provider、第三方都拿不到。是大規模 e2ee + 雲備份的工程教材，也對『平台級隱私 by hardware』是清楚的 reference。",
+      "tags": [
+        "e2ee",
+        "hsm",
+        "security",
+        "meta"
+      ],
+      "url": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
+      "source": "Engineering at Meta",
+      "sourceUrl": "https://engineering.fb.com/2026/05/01/security/meta-strengthening-end-to-end-encrypted-backups/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison — Agentic Engineering Patterns: How Coding Agents Work",
+      "summary": "Simon 整理一份 guide 系列——把『coding agent 是什麼』『為什麼是 harness 而不是模型』拆開講：coding agent = 模型 + 工具迴圈 + 不可見 prompt + sandbox。這份是想跟 PM/老闆解釋 Claude Code/Codex 為何不是『AI 寫 code』的最佳資料。",
+      "tags": [
+        "coding-agent",
+        "agentic-engineering",
+        "harness",
+        "primer"
+      ],
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260510-sw-009",
+      "radar": "software-dev",
+      "date": "2026-05-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Netflix — Real-Time Distributed Graph，KVDAL on Cassandra",
+      "summary": "Netflix 跑了一張橫跨 80 億 nodes / 1500 億 edges 的 real-time graph，撐 200 萬 reads/sec + 600 萬 writes/sec。底層 KVDAL（Key-Value Data Abstraction Layer）建在 27 個 namespace × 12 個 Cassandra cluster × 2400 個 EC2 instance 上。namespace 可以各自選底層（純 Cassandra / Cassandra+EVCache / dedicated cluster），是 abstraction layer 解 multi-tenancy 的好範例。",
+      "tags": [
+        "distributed-systems",
+        "graph",
+        "cassandra",
+        "abstraction-layer"
+      ],
+      "url": "https://blog.bytebytego.com/p/how-netflix-built-a-real-time-distributed",
+      "source": "ByteByteGo (Netflix Tech Blog)",
+      "sourceUrl": "https://blog.bytebytego.com/p/how-netflix-built-a-real-time-distributed",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-09T21:18:34.133189Z",
