@@ -34042,6 +34042,148 @@
       "price": null,
       "vram": "local-ready (skills, not a model)",
       "license": "MIT"
+    },
+    {
+      "id": "20260511-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare cuts 1,100 jobs — pivots to 'agentic AI-first operating model'",
+      "summary": "Cloudflare 5/7 宣布裁掉 ~20% 員工（1,100 人，史上最大），同時 Q1 營收年增 25% 達 $640M。共同創辦人 Matthew Prince/Michelle Zatlyn 把這定調為轉向 'agentic AI-first operating model'。內部 AI 用量過去 3 個月暴增 600%。第一家把 agentic AI 直接寫進組織重組敘事的大型 infra 公司。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "devops_infra",
+        "agentic-restructuring"
+      ],
+      "url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 3.3 — PR Review, Build in Parallel, Split PRs",
+      "summary": "Cursor 5/7 推 3.3：完整 PR review 介面直接在 IDE 處理 GitHub PR；Build in Parallel — agent 自動切出 plan 中互相獨立的步驟用 async subagents 同時跑；Split PRs — agent 把大 diff 拆成多個邏輯 PR。Canvases (interactive React UIs) 也納入 Agents Window。",
+      "tags": [
+        "ai-agent",
+        "ai-coding",
+        "parallel-agents",
+        "agent-harness"
+      ],
+      "url": "https://forum.cursor.com/t/pr-review-build-plan-in-parallel-and-split-prs/160035",
+      "source": "Cursor Forum",
+      "sourceUrl": "https://forum.cursor.com/t/pr-review-build-plan-in-parallel-and-split-prs/160035",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic signs $1.8B / 7-year compute deal with Akamai",
+      "summary": "Anthropic 5/8 跟 Akamai 簽 7 年、$18 億雲端運算合約。緊接 5/6 SpaceX Colossus 1（300MW / 220K NVIDIA GPU）後 — frontier lab 的 gigawatt-級 compute supply contract 已成常態，不是亮點。",
+      "tags": [
+        "ai-models",
+        "compute-supply",
+        "infra"
+      ],
+      "url": "https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai",
+      "source": "Bloomberg",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot Cloud Agent — dedicated Agents secrets & variables",
+      "summary": "GitHub 5/8 changelog：Copilot cloud agent 拿到自己獨立的 secrets/variables，不再跟 GitHub Actions secrets 共用。可在 org 層級控管哪些 repo 能用哪些 secret。Agent fleet 在 production 跑時需要跟 CI 不同的權限邊界，這是把那條線正式畫出來。",
+      "tags": [
+        "ai-agent",
+        "devops_infra",
+        "agent-ops"
+      ],
+      "url": "https://github.blog/changelog/2026-05-08-more-flexible-secrets-and-variables-for-copilot-cloud-agent/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-08-more-flexible-secrets-and-variables-for-copilot-cloud-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Vercel — Next.js coordinated security release (13 advisories)",
+      "summary": "Vercel 5/9 推 Next.js 協調式安全更新，一次處理 13 個 advisories：RSC DoS、App Router segment-prefetch URL 繞過 proxy 認證、cache poisoning、XSS、SSRF 等。含上游 React Server Components CVE-2026-23870。修補版本：Next.js 15.5.16 / 16.2.5。Patching 是唯一完整 mitigation。",
+      "tags": [
+        "security",
+        "frontend_dx",
+        "next.js"
+      ],
+      "url": "https://vercel.com/changelog/next-js-may-2026-security-release",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/next-js-may-2026-security-release",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic Claude Security — public beta for Enterprise",
+      "summary": "Claude Security 進入 public beta：用 Opus 4.7 掃 codebase 找漏洞 + 自動產生 fix。不靠 pattern matching，而是讀 source、追跨檔 data flow、理解 component interaction。支援 scheduled scans、targeted scans、CSV/Markdown 匯出、Slack/Jira webhook。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "ai-coding"
+      ],
+      "url": "https://claude.com/blog/claude-security-public-beta",
+      "source": "Anthropic Blog",
+      "sourceUrl": "https://claude.com/blog/claude-security-public-beta",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Coder Agents beta — self-hosted enterprise agent runtime",
+      "summary": "Coder 5/8 推 Coder Agents beta：native agent architecture，企業可在自家 self-hosted infra 上跑 AI-driven dev workflow，並讓開發者選擇任意模型。",
+      "tags": [
+        "ai-agent",
+        "devops_infra",
+        "self-hosted"
+      ],
+      "url": "https://sdtimes.com/ai/may-8-2026-ai-updates-from-the-past-week-coder-agents-launch-snyk-claude-partnership-opsera-cursor-partnership-and-more/",
+      "source": "SD Times",
+      "sourceUrl": "https://sdtimes.com/ai/may-8-2026-ai-updates-from-the-past-week-coder-agents-launch-snyk-claude-partnership-opsera-cursor-partnership-and-more/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-11",
