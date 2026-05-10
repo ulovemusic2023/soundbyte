@@ -34184,6 +34184,86 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260511-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-11",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "SaaSpocalypse 敘事斷裂：軟體股反而漲",
+      "summary": "Anthropic Code Developer Conference 端出 multiagent orchestration、outcomes、dreaming 三大新原語，按過往劇本應該再砸一輪「AI 吃掉 SaaS」的恐慌，結果軟體股反而集體上漲。投資人開始分辨「會被吃掉的 SaaS」和「會吸 AI 紅利的 SaaS」——別繼續用 2024 的恐慌模型看 2026 的市場。",
+      "tags": [
+        "ai-saas-narrative",
+        "market-thesis",
+        "second-order-thinking"
+      ],
+      "url": "https://amritaroy.substack.com/p/softwares-done-with-saaspocalypse",
+      "source": "The Pragmatic Optimist (Uttam Dey & Amrita Roy)",
+      "sourceUrl": "https://amritaroy.substack.com/p/softwares-done-with-saaspocalypse",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-11",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Stripe Sessions 2026：2026 年創立的公司營收已經是 2025 同期的 5 倍",
+      "summary": "Patrick Collison Day 1 keynote 拋出兩條曲線：透過 Stripe Atlas 在 2025 年成立的公司，同生命週期營收是 2024 年的 2 倍；2026 年才剛成立、多數還只有幾個月的公司，已經做到 2025 同期的 5 倍營收。Vibe coding 把建構成本砍到接近零，新公司不只更多，而是更快達 PMF。",
+      "tags": [
+        "ai-economy",
+        "stripe-atlas",
+        "time-to-pmf"
+      ],
+      "url": "https://www.techflowpost.com/en-US/article/31472",
+      "source": "Patrick Collison @ Stripe Sessions 2026 (TechFlowPost)",
+      "sourceUrl": "https://www.techflowpost.com/en-US/article/31472",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-11",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "Agentic Commerce 商家三步準備清單",
+      "summary": "John Collison 在 Stripe Sessions 預測 agent 將在 12-18 個月成為主流買家。要被機器看見，merchant 要做三件事：(1) 把 product data 弄成 machine-readable、(2) 重新設計微交易的 pricing、(3) 強化能分辨合法 agent 與惡意 bot 的防詐欺。Messy data 等於 invisible to machines。",
+      "tags": [
+        "agentic-commerce",
+        "merchant-playbook",
+        "product-data"
+      ],
+      "url": "https://www.siliconrepublic.com/machines/opinion-agentic-commerce-europe-cant-afford-to-watch-from-the-sidelines-stripe-sessions",
+      "source": "Elaine Burke (Silicon Republic)",
+      "sourceUrl": "https://www.siliconrepublic.com/machines/opinion-agentic-commerce-europe-cant-afford-to-watch-from-the-sidelines-stripe-sessions",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260511-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-11",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Andrew Quinn：別怕重新發明輪子",
+      "summary": "Simon Willison 在 5/10 引用 Andrew Quinn 的框架：「在多數領域重發明 4-5 個輪子是甜蜜點，CS 領域是 20-30 個；對沒讀過既有解的罪惡感是個陷阱。」自己動手做一次比研究現有方案學得快——在 LLM 時代的 builder 尤其成立。",
+      "tags": [
+        "mental-model",
+        "builder-mindset",
+        "learning"
+      ],
+      "url": "https://simonwillison.net/2026/May/10/andrew-quinn/",
+      "source": "Andrew Quinn (via simonwillison.net)",
+      "sourceUrl": "https://simonwillison.net/2026/May/10/andrew-quinn/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-11",
