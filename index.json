@@ -34264,8 +34264,170 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260511-ts-001",
+      "priority": "rising-fast",
+      "title": "jingyaogong/minimind-o",
+      "summary": "從 0 訓練 0.1B 全模態 Omni 模型，「能聽、能說、能看」。MiniMind 系列再加一棒，輕量到單卡可玩，對任何想 hack 多模態 audio/visual pipeline 的人是極佳教材。",
+      "tags": [
+        "multimodal",
+        "audio",
+        "speech",
+        "local-llm"
+      ],
+      "url": "https://github.com/jingyaogong/minimind-o",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-27+stars%3A%3E50&type=repositories",
+      "stars": 910,
+      "createdDate": "2026-05-01",
+      "license": "Apache-2.0",
+      "radar": "tool-scout",
+      "date": "2026-05-11",
+      "cycle": "monday"
+    },
+    {
+      "id": "20260511-ts-002",
+      "priority": "rising-fast",
+      "title": "StartupHakk/OpenMonoAgent.ai",
+      "summary": "Terminal-native coding agent，跑在本地 LLM 上，宣稱 \"unlimited tokens forever\"。.NET / C# 寫的單檔安裝，主打「AI 不該按 token 收費」這個信仰。",
+      "tags": [
+        "local-llm",
+        "coding-agent",
+        "cli"
+      ],
+      "url": "https://github.com/StartupHakk/OpenMonoAgent.ai",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-27+stars%3A%3E50&type=repositories",
+      "stars": 759,
+      "createdDate": "2026-04-30",
+      "license": "NOASSERTION",
+      "radar": "tool-scout",
+      "date": "2026-05-11",
+      "cycle": "monday"
+    },
+    {
+      "id": "20260511-ts-003",
+      "priority": "rising-fast",
+      "title": "raiyanyahya/how-to-train-your-gpt",
+      "summary": "從零造 modern LLM，每行都註解、像對 5 歲小孩解釋。給想搞懂 transformer 架構但被論文勸退的人。",
+      "tags": [
+        "llm",
+        "education",
+        "from-scratch"
+      ],
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-04-27+stars%3A%3E50&type=repositories",
+      "stars": 918,
+      "createdDate": "2026-05-03",
+      "license": null,
+      "radar": "tool-scout",
+      "date": "2026-05-11",
+      "cycle": "monday"
+    },
+    {
+      "id": "20260511-ts-004",
+      "priority": "worth-trying",
+      "title": "dmae97/oh-my-kimi",
+      "summary": "Kimi Code CLI (K2.6) 的 production-ready multi-agent harness：worktree 平行團隊、DAG 規劃、MCP / Skills hooks、本地 graph memory。Claude Code 那套玩法在 Kimi 上的實作。",
+      "tags": [
+        "kimi-code",
+        "mcp",
+        "skills",
+        "multi-agent"
+      ],
+      "url": "https://github.com/dmae97/oh-my-kimi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 64,
+      "createdDate": "2026-04-30",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-11",
+      "cycle": "monday"
+    },
+    {
+      "id": "20260511-ts-005",
+      "priority": "worth-trying",
+      "title": "CodeAbra/iai-mcp",
+      "summary": "號稱 best-benchmarked open-source memory system for AI coding assistants 的 MCP server。要驗證的話可拿來跟 mem0 / agentmemory 直接比。",
+      "tags": [
+        "mcp",
+        "memory",
+        "coding-agent"
+      ],
+      "url": "https://github.com/CodeAbra/iai-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 91,
+      "createdDate": "2026-05-06",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-11",
+      "cycle": "monday"
+    },
+    {
+      "id": "20260511-ts-006",
+      "priority": "worth-trying",
+      "title": "skydoves/compose-performance-skills",
+      "summary": "專注 Jetpack Compose 效能的 Agent Skills 套件，由 skydoves 出品。Android 開發者直接拿去裝，AI 寫的 Compose code 立刻變高效。Skills 格式跨 agent 通用。",
+      "tags": [
+        "agent-skills",
+        "jetpack-compose",
+        "performance"
+      ],
+      "url": "https://github.com/skydoves/compose-performance-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 357,
+      "createdDate": "2026-04-29",
+      "license": "Apache-2.0",
+      "radar": "tool-scout",
+      "date": "2026-05-11",
+      "cycle": "monday"
+    },
+    {
+      "id": "20260511-ts-010",
+      "priority": "on-the-radar",
+      "title": "njbrake/agent-of-empires",
+      "summary": "TUI 或 Web 介面同時管理多個 Claude Code / OpenCode / Codex / Gemini / Pi.dev / Copilot CLI agent；用 tmux + git worktrees 做 isolation，手機上也能監控。",
+      "tags": [
+        "multi-agent",
+        "tmux",
+        "worktree"
+      ],
+      "url": "https://github.com/njbrake/agent-of-empires",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 2147,
+      "createdDate": "2026-01-09",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-11",
+      "cycle": "monday"
+    },
+    {
+      "id": "20260511-ts-012",
+      "priority": "on-the-radar",
+      "title": "xingkongliang/skills-manager",
+      "summary": "桌面 app，跨 15+ coding tool（Cursor、Claude Code、Codex、Copilot…）統一管理、同步、組織 agent skills。Skills 多到爆炸的人應該會需要。",
+      "tags": [
+        "skills",
+        "manager",
+        "multi-tool"
+      ],
+      "url": "https://github.com/xingkongliang/skills-manager",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 1294,
+      "createdDate": "2026-03-02",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-05-11",
+      "cycle": "monday"
     }
   ],
-  "lastUpdated": "2026-05-11",
-  "updatedAt": "2026-05-11T05:10:00+08:00"
+  "lastUpdated": "2026-05-11T05:54:21+08:00",
+  "updatedAt": "2026-05-11T05:54:21+08:00"
 }
