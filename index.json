@@ -33900,8 +33900,150 @@
       "stars": null,
       "createdDate": "2026-05-04",
       "license": "unknown"
+    },
+    {
+      "id": "20260511-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MoonshotAI/kimi-audio",
+      "summary": "Moonshot 開源 7B audio foundation model，13M 小時訓練資料；統一 ASR/audio QA/captioning/emotion/speech conversation。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai",
+        "llm_inference",
+        "audio-foundation-model"
+      ],
+      "url": "https://github.com/MoonshotAI/kimi-audio",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0 + MIT"
+    },
+    {
+      "id": "20260511-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FireRedTeam/FireRedASR",
+      "summary": "工業級 ASR，普通話/方言/英文，特別強調 singing lyrics recognition；FireRedASR-LLM 8.3B + AED 1.1B 兩變體。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "asr",
+        "singing-lyrics"
+      ],
+      "url": "https://github.com/FireRedTeam/FireRedASR",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready (1.1B) / quantize-ok (8.3B)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260511-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "X-PLUG/mPLUG-DocOwl",
+      "summary": "阿里 OCR-free 多模態文件理解模型；DocOwl2 (ACL 2025) 每張圖壓到 324 tokens，多頁文件 SOTA。",
+      "tags": [
+        "cv_ocr",
+        "rag_knowledge",
+        "multimodal",
+        "document-ai"
+      ],
+      "url": "https://github.com/X-PLUG/mPLUG-DocOwl",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260511-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "facebookresearch/fast3r",
+      "summary": "CVPR 2025；1000+ 張影像 single forward pass 重建 3D 場景，同時做 multi-view 重建 + camera pose。⚠️ FAIR NC 非商用授權。",
+      "tags": [
+        "cv_ocr",
+        "3d-reconstruction"
+      ],
+      "url": "https://github.com/facebookresearch/fast3r",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "FAIR NC (Non-Commercial)"
+    },
+    {
+      "id": "20260511-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GibsonAI/memori",
+      "summary": "Agent-native memory infrastructure — 把 LLM/agent execution 轉結構化持久化 state；LLM-agnostic。v3.3.3 (2026-05-05)。",
+      "tags": [
+        "ai_devtools",
+        "rag_knowledge",
+        "agent-memory"
+      ],
+      "url": "https://github.com/GibsonAI/memori",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260511-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "yvgude/lean-ctx",
+      "summary": "Local-first context runtime；壓縮 file reads + shell output 60-95% 再送 LLM。MCP server，整合 Claude Code/Cursor/Copilot。v3.5.14 today。",
+      "tags": [
+        "ai_devtools",
+        "token-optimization",
+        "mcp"
+      ],
+      "url": "https://github.com/yvgude/lean-ctx",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready (CPU only)",
+      "license": "Apache-2.0 / MIT"
+    },
+    {
+      "id": "20260511-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "addyosmani/agent-skills",
+      "summary": "Addy Osmani 出的 22 個 SDLC structured workflows（Define→Plan→Build→Verify→Review→Ship），含驗證 gate；今日 GitHub Trending +1k。",
+      "tags": [
+        "ai_devtools",
+        "agent-workflow",
+        "sdlc"
+      ],
+      "url": "https://github.com/addyosmani/agent-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready (skills, not a model)",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-05-09T21:41:14.319347Z",
-  "updatedAt": "2026-05-09T21:41:14.319347Z"
+  "lastUpdated": "2026-05-11",
+  "updatedAt": "2026-05-11T05:10:00+08:00"
 }
