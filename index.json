@@ -34528,6 +34528,158 @@
       "price": null,
       "vram": "Framework, no model bundled",
       "license": "MIT"
+    },
+    {
+      "id": "20260512-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google GKE Agent Sandbox + Hypercluster — Kubernetes 重新定位為 AI agent runtime",
+      "summary": "Google Cloud Next '26 推 GKE Agent Sandbox：用 gVisor 做 kernel isolation、每秒 300 個 sandboxes 同時跑 agent 生成的 code；同步發 Hypercluster 為大規模 agent workload 提供 cross-region GPU pool。整套以開源 K8s SIG Apps 子專案釋出。把 K8s 從 microservice orchestrator 重新框成 agent runtime fabric — 跟 Cloudflare V8 isolate sandbox 形成兩種對打路線。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "kubernetes",
+        "devops_infra",
+        "agent-sandbox"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/gke-agent-sandbox-hypercluster/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/gke-agent-sandbox-hypercluster/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 3.4 — Bugbot Effort Levels + Custom 自然語言策略",
+      "summary": "Cursor 5/11 推 Bugbot 可調 effort：Default（速度為主，0.7 bugs/run）/ High（多花時間推理，0.95 bugs/run，但 review 更貴更慢）/ Custom（用自然語言描述何時跑 high、何時跑 default，Cursor 動態決定）。需 usage-based billing 才能開。把 PR review agent 從『跑了什麼就什麼』升成『按 PR 性質彈性配火力』。",
+      "tags": [
+        "ai-agent",
+        "ai-coding",
+        "pr-review",
+        "effort-level",
+        "bugbot"
+      ],
+      "url": "https://cursor.com/blog/may-2026-bugbot-changes",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/may-2026-bugbot-changes",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "JobRunr 推 ClawRunr — open-source Java AI agent",
+      "summary": "JobRunr 把原 JavaClaw 改名 ClawRunr 開源釋出：在你自己機器上跑、對話式互動 + 持久 task 執行、內建 MCP tools、browser automation、Web/Telegram/Discord 三條 channel。Java 生態第一個 self-hosted、full-loop 的 AI agent 框架。Java 圈 Spring/Quarkus 之外，agent runtime 開始成形。",
+      "tags": [
+        "ai-agent",
+        "java",
+        "self-hosted",
+        "open-source",
+        "mcp"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/clawrunr/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/clawrunr/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Meta Labyrinth 1.1 — 強化 E2EE 備份可靠性",
+      "summary": "Meta 5/11 推 Labyrinth 1.1：新子協定讓使用者在裝置遺失 / 換機 / 長期未登入後仍能 recover 端對端加密訊息備份。針對 e2ee 在裝置狀態變動時容易斷裂的痛點，是大規模 e2ee 備份的工程示範。延續 5/1 HSM Backup Key Vault 主線。",
+      "tags": [
+        "e2ee",
+        "security",
+        "meta",
+        "backup"
+      ],
+      "url": "https://engineering.fb.com/2026/05/11/security/labyrinth-1-1-end-to-end-encrypted-e2ee-backups-more-reliable/",
+      "source": "Engineering at Meta",
+      "sourceUrl": "https://engineering.fb.com/2026/05/11/security/labyrinth-1-1-end-to-end-encrypted-e2ee-backups-more-reliable/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot CLI — Enterprise-managed plugins 進入 public preview",
+      "summary": "5/6 上線：Enterprise admin 可在 org 層級配置/分發 Copilot CLI plugins（MCP servers / skills），不再各工程師自己安裝。Agent 工具的 governance 從個人裝置層往組織層推 — 跟 AWS Agent Registry、Cloudflare Agent Memory profile 共享同一條主線。",
+      "tags": [
+        "ai-agent",
+        "devops_infra",
+        "enterprise",
+        "copilot",
+        "agent-governance"
+      ],
+      "url": "https://github.blog/changelog/2026-05-06-enterprise-managed-plugins-in-github-copilot-cli-are-now-in-public-preview/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-06-enterprise-managed-plugins-in-github-copilot-cli-are-now-in-public-preview/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot in VS Code (v1.116–v1.119) — search by meaning + BYO API key",
+      "summary": "5/6 changelog：Copilot 可在任意 workspace 做語意搜尋，並跨 GitHub repos/orgs 跑 grep-style query；UX 加 incremental chat rendering、可排序 agent sessions、CLI 同步 session titles。Business/Enterprise 用戶可在 VS Code chat 直接綁自己的 API key 用其他 provider。",
+      "tags": [
+        "ai-coding",
+        "copilot",
+        "semantic-search",
+        "byo-api",
+        "vscode"
+      ],
+      "url": "https://github.blog/changelog/2026-05-06-github-copilot-in-visual-studio-code-april-releases/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-06-github-copilot-in-visual-studio-code-april-releases/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GitHub Copilot 全面下架 Claude Sonnet 4",
+      "summary": "5/7 GitHub Copilot 在所有 experiences 下架 Claude Sonnet 4，由 Sonnet 4.6 接手。是 frontier model 替換週期變快的指標 — 舊模型不留長尾相容期，使用者必須跟著 model lifecycle 走。Grok Code Fast 1 也排定 5/15 下架。",
+      "tags": [
+        "ai-coding",
+        "copilot",
+        "model-deprecation",
+        "model-lifecycle"
+      ],
+      "url": "https://github.blog/changelog/2026-05-07-claude-sonnet-4-deprecated/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-07-claude-sonnet-4-deprecated/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-12T05:10:00+08:00",
