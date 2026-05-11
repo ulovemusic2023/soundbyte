@@ -34426,8 +34426,110 @@
       "radar": "tool-scout",
       "date": "2026-05-11",
       "cycle": "monday"
+    },
+    {
+      "id": "20260512-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BazedFrog/SongGeneration-Studio",
+      "summary": "Tencent SongGeneration v2 (LeVo 2, 4B) 的乾淨桌面介面。文字 prompt 或 reference audio 生成完整歌曲（vocals + 伴奏），支援 stem 分離、batch processing、結構控制。Pinokio 一鍵安裝。10GB VRAM min，RTX 5070 Ti local-ready。",
+      "tags": [
+        "audio_music_ai",
+        "music_generation",
+        "song-generation"
+      ],
+      "url": "https://github.com/BazedFrog/SongGeneration-Studio",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/BazedFrog/SongGeneration-Studio",
+      "price": null,
+      "vram": "10GB min, 24GB+ recommended",
+      "license": "Personal/Educational/Research"
+    },
+    {
+      "id": "20260512-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "smthemex/ComfyUI_SongGeneration",
+      "summary": "ComfyUI 節點封裝 Tencent SongGeneration v2（4B）。支援 v2/new/large/full 多版本；GGUF 量化；v2 model 有 transformer layer offloading 適配 12GB VRAM。BGM、vocals、mixed 三軌獨立輸出。",
+      "tags": [
+        "audio_music_ai",
+        "music_generation",
+        "comfyui",
+        "gguf"
+      ],
+      "url": "https://github.com/smthemex/ComfyUI_SongGeneration",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/smthemex/ComfyUI_SongGeneration",
+      "price": null,
+      "vram": "12GB min with layer offloading + GGUF",
+      "license": "View license file"
+    },
+    {
+      "id": "20260512-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "lglg666/SongGeneration-v2-large (HF weights)",
+      "summary": "Tencent SongGeneration v2-large（LeVo 2，4B params）HF 權重。PER 8.55%（vs Suno v5 12.4%、Mureka v8 9.96%），多語言歌詞、最長 4:30 完整歌曲。配合 Studio 介面或 ComfyUI 節點使用。",
+      "tags": [
+        "audio_music_ai",
+        "music_generation",
+        "huggingface-weights"
+      ],
+      "url": "https://huggingface.co/lglg666/SongGeneration-v2-large",
+      "source": "Web Search",
+      "sourceUrl": "https://huggingface.co/lglg666/SongGeneration-v2-large",
+      "price": null,
+      "vram": "4B params — quantize-ok on 16GB",
+      "license": "Tencent SongGeneration license"
+    },
+    {
+      "id": "20260512-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "HKUDS/nanobot",
+      "summary": "港大 HKUDS 的 ultra-lightweight personal AI agent framework（42.2k stars）。小而可讀的 core，model-agnostic — Claude / GPT / DeepSeek / Qwen / Kimi / 本地 vLLM/Ollama 全吃；內建 Telegram/Discord/Slack/WeChat chat 整合、memory、MCP。v0.1.5.post3 (Apr 29)。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference",
+        "agent-framework",
+        "mcp"
+      ],
+      "url": "https://github.com/HKUDS/nanobot",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/HKUDS/nanobot",
+      "price": null,
+      "vram": "Framework, model-agnostic",
+      "license": "MIT"
+    },
+    {
+      "id": "20260512-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ECNU-ICALK/AutoSkill",
+      "summary": "Experience-driven lifelong learning — 從 user 對話 + agent trajectory 自動萃取 reusable skills，版本化演進。Local Skill Manager + Web UI 可審閱編輯，offline 從 archive 抽 skill。OpenClaw trajectory 直接 supported。May 9 2026 更新。",
+      "tags": [
+        "ai_devtools",
+        "agent-skills",
+        "lifelong-learning"
+      ],
+      "url": "https://github.com/ECNU-ICALK/AutoSkill",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "Framework, no model bundled",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-05-11T05:54:21+08:00",
-  "updatedAt": "2026-05-11T05:54:21+08:00"
+  "lastUpdated": "2026-05-12T05:10:00+08:00",
+  "updatedAt": "2026-05-12T05:10:00+08:00"
 }
