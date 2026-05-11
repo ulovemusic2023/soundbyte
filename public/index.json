@@ -34680,6 +34680,106 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260512-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-12",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "DHH：There are no secrets left",
+      "summary": "所有有價值的商業知識早就公開了 — 書、podcast、blog 全查得到。真正稀缺的不是 information，是 confidence。Founder 最需要的是相信自己對自己 business 的判斷，因為沒有任何 advisor 比你更懂你在做的事。Bezos：『做新事情時，沒人比你更懂你的事業。』",
+      "tags": [
+        "founder-mode",
+        "confidence",
+        "novel-business"
+      ],
+      "url": "https://world.hey.com/dhh/there-are-no-secrets-left-c8c95de0",
+      "source": "DHH",
+      "sourceUrl": "https://world.hey.com/dhh/there-are-no-secrets-left-c8c95de0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-12",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Karpathy：AI 翻轉「誰讓誰可被看見」",
+      "summary": "歷史上是政府把社會 legible 化(《Seeing Like a State》)，AI 把方向反過來 — 公民被 AI 賦能後，可以把政府變得 visible、legible、accountable。Government accountability 的瓶頸過去是處理 raw data + domain expertise 的能力，這道牆現在被 AI 推倒。",
+      "tags": [
+        "ai-leverage",
+        "accountability",
+        "paradigm-shift"
+      ],
+      "url": "https://x.com/karpathy/status/2040549459193704852",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2040549459193704852",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-12",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Stratechery：The Inference Shift",
+      "summary": "Agentic inference 的硬體架構會跟現在不一樣。沒有人在迴圈裡時，latency 不再首要 — 容量和成本接管。便宜的 DRAM、舊製程晶片重新有競爭力。NVIDIA 的護城河是建在「縮短人類等待時間」，但機器替機器做事(最大的未來市場)並不需要那條護城河。",
+      "tags": [
+        "compute-moat",
+        "agentic-inference",
+        "nvidia"
+      ],
+      "url": "https://stratechery.com/2026/the-inference-shift/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/the-inference-shift/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-12",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Amodei + Dimon：用「具體時程」建立 leadership credibility",
+      "summary": "JPMorgan × Anthropic 對談中，Dimon：『Cyber is our biggest risk』，patch 從週縮到分鐘。Amodei 沒給安撫，給時間表：6 個月前測到中國國家級攻擊、Mythos 找出 Firefox 近 300 漏洞、絕大多數未修。Founder 啟發：承認 + 具體時程，比樂觀敘事更建立信任。",
+      "tags": [
+        "ai-safety",
+        "leadership-credibility",
+        "transparency"
+      ],
+      "url": "https://fortune.com/2026/05/05/jamie-dimon-dario-amodei-jpmorgan-anthropic-ai-cyber-mythos-freakout-sidestep-question/",
+      "source": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/05/05/jamie-dimon-dario-amodei-jpmorgan-anthropic-ai-cyber-mythos-freakout-sidestep-question/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260512-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-12",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Stripe Atlas 創業潮：Q1 2026 +130% Y/Y",
+      "summary": "Patrick Collison：Stripe Atlas 累計突破 10 萬家公司註冊，Q1 2026 年增 130%。對照 2025 回顧 — 42% 是 AI 公司、20% 在 30 天內拿到首位付費客戶(2020 兩倍)、169 國家代表新高、歐洲 +48%。創業門檻和 time-to-revenue 都在崩塌。",
+      "tags": [
+        "founder-boom",
+        "time-to-revenue",
+        "ai-startups"
+      ],
+      "url": "https://x.com/patrickc/status/2050206647793144098",
+      "source": "Patrick Collison",
+      "sourceUrl": "https://x.com/patrickc/status/2050206647793144098",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-12T05:10:00+08:00",
