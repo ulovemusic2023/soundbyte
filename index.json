@@ -34780,6 +34780,204 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260512-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "rising-fast",
+      "title": "crafter-station/petdex",
+      "summary": "為 Codex / Claude Code / OpenCode / Gemini CLI 等 AI coding agent 做的「桌面寵物」公開畫廊。CLI 跑 build 時看寵物動畫，純粹的 creator joy 工具。",
+      "tags": [
+        "coding-agent",
+        "claude-code",
+        "creator-tools"
+      ],
+      "url": "https://github.com/crafter-station/petdex",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 1439,
+      "createdDate": "2026-05-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260512-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "rising-fast",
+      "title": "zarazhangrui/beautiful-html-templates",
+      "summary": "一套 HTML slide 模板庫，設計成讓 AI coding agent 看了會自動挑對的版面、產出漂亮的 deck。",
+      "tags": [
+        "slides",
+        "html",
+        "ai-agent"
+      ],
+      "url": "https://github.com/zarazhangrui/beautiful-html-templates",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 855,
+      "createdDate": "2026-05-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260512-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "rising-fast",
+      "title": "opensquilla/opensquilla",
+      "summary": "主打「同樣 token budget、更高 intelligence density」的 AI agent。Python + Apache-2.0，標榜 token-efficient。",
+      "tags": [
+        "ai-agent",
+        "token-optimization"
+      ],
+      "url": "https://github.com/opensquilla/opensquilla",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 216,
+      "createdDate": "2026-05-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260512-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "worth-trying",
+      "title": "enmanuelmag/agent-harness-kit",
+      "summary": "provider-agnostic 的多 agent scaffolding kit，TypeScript。想自己組 multi-agent workflow 可以直接 fork 起步。",
+      "tags": [
+        "multi-agent",
+        "harness",
+        "typescript"
+      ],
+      "url": "https://github.com/enmanuelmag/agent-harness-kit",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 139,
+      "createdDate": "2026-05-04",
+      "license": "no-lic"
+    },
+    {
+      "id": "20260512-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "worth-trying",
+      "title": "prasenjeet-symon/ogcode",
+      "summary": "Go 寫的 web UI coding agent：理解 codebase、討論計畫、開 isolated branch agents 平行寫 code、出 PR。Claude Code + worktree + web UI 的開源版。",
+      "tags": [
+        "coding-agent",
+        "go",
+        "parallel"
+      ],
+      "url": "https://github.com/prasenjeet-symon/ogcode",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 77,
+      "createdDate": "2026-05-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260512-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "worth-trying",
+      "title": "omermaksutii/mnemo",
+      "summary": "Claude Code 的 persistent memory layer，「AI 不再每次從零開始」。Claude Code memory 不爽的人值得試的替代。",
+      "tags": [
+        "claude-code",
+        "memory"
+      ],
+      "url": "https://github.com/omermaksutii/mnemo",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 57,
+      "createdDate": "2026-05-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260512-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "worth-trying",
+      "title": "voidborne-d/master-skill",
+      "summary": "輸入行業 → 自動調研 6 軌（大佬/工具/工作流/正典/信源/術語）→ 提煉成可跑的 Master OS skill。能裝載到 Claude Code / OpenClaw / Codex / Hermes。",
+      "tags": [
+        "skill",
+        "agentic",
+        "research"
+      ],
+      "url": "https://github.com/voidborne-d/master-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 58,
+      "createdDate": "2026-05-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260512-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "worth-trying",
+      "title": "tianji-qingtian/AI-Native",
+      "summary": "AI-Native 通用開發工作流方法論：4-Phase 框架 + 空專案 / 已有 codebase 兩種劇本 + 反模式速查。中文文件。",
+      "tags": [
+        "methodology",
+        "ai-coding",
+        "agentic"
+      ],
+      "url": "https://github.com/tianji-qingtian/AI-Native",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 53,
+      "createdDate": "2026-05-06",
+      "license": "no-lic"
+    },
+    {
+      "id": "20260512-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "worth-trying",
+      "title": "stormzhang/token-tracker",
+      "summary": "本地 AI agent 的 token usage tracker（Claude Code、Codex），CLI dashboard 有 cost analysis、rate limit 監控、session tracking。",
+      "tags": [
+        "observability",
+        "claude-code",
+        "codex"
+      ],
+      "url": "https://github.com/stormzhang/token-tracker",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 45,
+      "createdDate": "2026-05-08",
+      "license": "no-lic"
+    },
+    {
+      "id": "20260512-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-12",
+      "cycle": "tue-daily",
+      "priority": "on-the-radar",
+      "title": "anthropics/financial-services",
+      "summary": "Anthropic 官方的 financial services 工具集，本週 +10k 星暴衝。官方背書，金融/合規場景值得開來看。",
+      "tags": [
+        "anthropic",
+        "finance",
+        "official"
+      ],
+      "url": "https://github.com/anthropics/financial-services",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 20212,
+      "createdDate": "2026-02-23",
+      "license": "unknown"
     }
   ],
   "lastUpdated": "2026-05-12T05:10:00+08:00",
