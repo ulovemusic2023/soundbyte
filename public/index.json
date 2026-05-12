@@ -8,7 +8,12 @@
       "priority": "high",
       "title": "Aratako/Irodori-TTS",
       "summary": "Flow Matching TTS，用 emoji 控制語氣／風格。500M 參數，RF-DiT 在連續 DACVAE latent 上運作，支援 zero-shot voice cloning 和 caption-conditioned voice design。v3 內建 duration prediction。LoRA fine-tune 也支援。",
-      "tags": ["tts_speech", "svc_voice", "voice-cloning", "flow-matching"],
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "voice-cloning",
+        "flow-matching"
+      ],
       "url": "https://github.com/Aratako/Irodori-TTS",
       "source": "GitHub Search",
       "sourceUrl": "https://github.com/Aratako/Irodori-TTS",
@@ -24,7 +29,11 @@
       "priority": "high",
       "title": "ggml-org/llama.cpp b9124",
       "summary": "5/12 daily build：/v1/models endpoint 開始暴露 modality 資訊，WebGPU backend 跑得動 gpt-oss-20b，multimodal WebGPU 改用 float32 避免 NaN。在 browser 內跑本地 LLM 更近一步。",
-      "tags": ["llm_inference", "webgpu", "multimodal"],
+      "tags": [
+        "llm_inference",
+        "webgpu",
+        "multimodal"
+      ],
       "url": "https://github.com/ggml-org/llama.cpp",
       "source": "GitHub Releases",
       "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b9124",
@@ -40,7 +49,11 @@
       "priority": "high",
       "title": "ollama/ollama v0.23.3-rc1",
       "summary": "5/12 rc：/api/show 改為 cached，median latency 約快 6.7×；MLX runner image-gen 修了 thread affinity 跟 macOS 26 metallib leak。v0.23.2 已正式移除 Claude Desktop launch 整合。",
-      "tags": ["llm_inference", "ollama", "release"],
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "release"
+      ],
       "url": "https://github.com/ollama/ollama",
       "source": "GitHub Releases",
       "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.23.3-rc1",
@@ -56,7 +69,12 @@
       "priority": "high",
       "title": "k2-fsa/sherpa-onnx v1.13.1",
       "summary": "5/8 patch：Sense-Voice 加 per-stream `use_itn` override，speaker diarization bounds check 修 SIGSEGV，NeMo transducer modified beam search 修 bug。本地 ASR + diarization 上 Pi/Jetson 穩定度提升。",
-      "tags": ["tts_speech", "asr", "speaker-diarization", "edge"],
+      "tags": [
+        "tts_speech",
+        "asr",
+        "speaker-diarization",
+        "edge"
+      ],
       "url": "https://github.com/k2-fsa/sherpa-onnx",
       "source": "GitHub Releases",
       "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v1.13.1",
@@ -72,7 +90,12 @@
       "priority": "high",
       "title": "unslothai/unsloth v0.1.39-beta",
       "summary": "5/5：新的 Unsloth API Inference Endpoint，本地跑 Qwen/Gemma，同一個 port 同時暴露 Anthropic-compatible + OpenAI-compatible API，self-healing tool calling + code execution + web search 內建。加 Nemotron 3 Nano Omni / IBM Granite 4.1 / Mistral 3.5。",
-      "tags": ["llm_inference", "llm_training", "api", "tool-calling"],
+      "tags": [
+        "llm_inference",
+        "llm_training",
+        "api",
+        "tool-calling"
+      ],
       "url": "https://github.com/unslothai/unsloth",
       "source": "GitHub Releases",
       "sourceUrl": "https://github.com/unslothai/unsloth/releases",
@@ -88,7 +111,12 @@
       "priority": "high",
       "title": "ikawrakow/ik_llama.cpp",
       "summary": "llama.cpp 的 SOTA 量化分支：新 Trellis quants（IQ1_KT/IQ2_KT/IQ3_KT/IQ4_KT）+ MXFP4、FlashMLA for DeepSeek、fused MoE、tensor override GPU/CPU 分流。CPU + hybrid GPU/CPU 在 Qwen3 / GLM-4 / DeepSeek-V3 比主線快。",
-      "tags": ["llm_inference", "quantization", "gguf", "fork"],
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "fork"
+      ],
       "url": "https://github.com/ikawrakow/ik_llama.cpp",
       "source": "Web Search",
       "sourceUrl": "https://github.com/ikawrakow/ik_llama.cpp",
@@ -104,7 +132,11 @@
       "priority": "medium",
       "title": "taishikato/supavec",
       "summary": "開源版 Carbon.ai：5 分鐘把 vector search + chat API 開起來，宣稱 batch embeddings 省 OpenAI 65%，row-level security 撐多租戶。Next.js + Supabase + Bun + Upstash。Hybrid filtering P95 約 210ms。",
-      "tags": ["rag_knowledge", "vector-database", "embedding"],
+      "tags": [
+        "rag_knowledge",
+        "vector-database",
+        "embedding"
+      ],
       "url": "https://github.com/taishikato/supavec",
       "source": "MAGI Archive",
       "sourceUrl": "https://github.com/taishikato/supavec",
@@ -120,7 +152,11 @@
       "priority": "low",
       "title": "sagekit/magnitude",
       "summary": "Vision-first 瀏覽器自動化框架：不靠 DOM selector，直接讓 vision model 讀 screenshot 的像素座標下指令。內建 test runner + visual assertion。和 Playwright 思路完全不同——agent 不會因為 selector 改變就壞掉。",
-      "tags": ["ai_devtools", "browser-agent", "vision"],
+      "tags": [
+        "ai_devtools",
+        "browser-agent",
+        "vision"
+      ],
       "url": "https://github.com/sagekit/magnitude",
       "source": "MAGI Archive",
       "sourceUrl": "https://github.com/sagekit/magnitude",
@@ -35115,7 +35151,12 @@
       "priority": "paradigm-shift",
       "title": "Simon Willison — 『agent』終於有共識定義",
       "summary": "Willison 採用『An LLM agent runs tools in a loop to achieve a goal』作為定義，宣布在對話裡正式啟用『agent』一詞。詞彙穩定化是 agentic engineering 討論可堆疊的前提。",
-      "tags": ["paradigm-shift", "ai-agent", "agent-definition-convergence", "agentic-engineering"],
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agent-definition-convergence",
+        "agentic-engineering"
+      ],
       "url": "https://simonw.substack.com/p/i-think-agent-may-finally-have-a",
       "source": "Simon Willison's Newsletter",
       "sourceUrl": "https://simonw.substack.com/p/i-think-agent-may-finally-have-a",
@@ -35131,7 +35172,13 @@
       "priority": "paradigm-shift",
       "title": "Cloudflare Flagship — OpenFeature 邊緣 feature flag",
       "summary": "Closed beta：用 KV + Durable Objects 在 Worker 內做 sub-ms flag eval，無需 round-trip 外部 SaaS。把 LaunchDarkly / Statsig 的戰場拉到 edge，第一個量產級 edge-native feature flag。",
-      "tags": ["paradigm-shift", "edge-native-feature-flag", "feature-flag", "cloudflare", "openfeature"],
+      "tags": [
+        "paradigm-shift",
+        "edge-native-feature-flag",
+        "feature-flag",
+        "cloudflare",
+        "openfeature"
+      ],
       "url": "https://blog.cloudflare.com/flagship/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/05/cloudflare-flagship-openfeature/",
@@ -35147,7 +35194,12 @@
       "priority": "high",
       "title": "Cursor / Claude Code / Codex 正在融合成同一個 AI coding stack",
       "summary": "The New Stack 觀察：最快出貨的工程師在三個 terminal 平行跑 Claude Code、Codex CLI、DeepSeek TUI，用同一把 API key 按任務切換。沒人規劃，但 polyglot coding stack 正在事實上成形。",
-      "tags": ["paradigm-shift", "ai-coding", "coding-agent", "polyglot-coding-stack"],
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "coding-agent",
+        "polyglot-coding-stack"
+      ],
       "url": "https://thenewstack.io/ai-coding-tool-stack/",
       "source": "The New Stack",
       "sourceUrl": "https://thenewstack.io/ai-coding-tool-stack/",
@@ -35163,7 +35215,12 @@
       "priority": "high",
       "title": "Simon Willison — 對 GitLab 大裁員 + 'agentic era' 的看法",
       "summary": "GitLab 5/11 把裁員 + 重組對外定位為『進入 agentic era』所需調整。第一家主流 DevOps 廠商把 AI agent 對組織結構的衝擊寫進 narrative，所有 SaaS 工具廠商的樣本。",
-      "tags": ["ai-agent", "industry-analysis", "agentic-era", "gitlab"],
+      "tags": [
+        "ai-agent",
+        "industry-analysis",
+        "agentic-era",
+        "gitlab"
+      ],
       "url": "https://simonwillison.net/2026/May/11/gitlab-act-2/",
       "source": "Simon Willison's Weblog",
       "sourceUrl": "https://simonwillison.net/2026/May/11/gitlab-act-2/",
@@ -35179,7 +35236,13 @@
       "priority": "high",
       "title": "Pragmatic Engineer — Anthropic 容量短缺正在把社群關係玩壞",
       "summary": "Gergely 整理：Anthropic 因 GPU 緊張悄悄砍部分付費 Claude Code 額度、推『更笨的』模型分流，引發開發者反彈；同時靠 SpaceX 補運算、Amazon 解除 Claude Code / Codex 內部禁用以強化 Kiro。",
-      "tags": ["industry-analysis", "ai-infra", "anthropic", "claude-code", "capacity"],
+      "tags": [
+        "industry-analysis",
+        "ai-infra",
+        "anthropic",
+        "claude-code",
+        "capacity"
+      ],
       "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-did-capacity-shortages",
       "source": "The Pragmatic Engineer",
       "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-did-capacity-shortages",
@@ -35195,7 +35258,12 @@
       "priority": "medium",
       "title": "Cloudflare — Vertical Microfrontends：route-level 切分 + edge 組裝",
       "summary": "改用業務 route 切分（而非 widget-level / module federation），團隊獨立部署、共享 design system、避開版本地獄。對 micro-frontend 派典的再校正。",
-      "tags": ["frontend_dx", "micro-frontend", "vertical-microfrontends", "cloudflare-workers"],
+      "tags": [
+        "frontend_dx",
+        "micro-frontend",
+        "vertical-microfrontends",
+        "cloudflare-workers"
+      ],
       "url": "https://blog.cloudflare.com/vertical-microfrontends/",
       "source": "Cloudflare Blog",
       "sourceUrl": "https://blog.cloudflare.com/vertical-microfrontends/",
@@ -35211,7 +35279,13 @@
       "priority": "medium",
       "title": "Cloudflare 用 Workers 自己跑內部 maintenance scheduler",
       "summary": "Cloudflare 把內部維護排程 pipeline 全部搬上 Workers + Durable Objects：跨資料中心一致性、有狀態 workflows、零閒置成本。對任何要在 edge 跑 stateful 系統的 team 是高品質參考。",
-      "tags": ["architecture", "cloudflare-workers", "durable-objects", "scheduling", "stateful-edge"],
+      "tags": [
+        "architecture",
+        "cloudflare-workers",
+        "durable-objects",
+        "scheduling",
+        "stateful-edge"
+      ],
       "url": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
       "source": "Cloudflare Blog",
       "sourceUrl": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
@@ -35227,7 +35301,12 @@
       "priority": "medium",
       "title": "Simon Willison — 用 LLM 當 script 的 shebang",
       "summary": "示範 `#!/usr/bin/env llm` 寫進 shell script shebang，整檔即 LLM 提示 + 函數定義，執行時跑 prompt。LLM 直接接進 Unix pipeline 的小型實踐。",
-      "tags": ["ai-coding", "llm-tooling", "shell", "developer-experience"],
+      "tags": [
+        "ai-coding",
+        "llm-tooling",
+        "shell",
+        "developer-experience"
+      ],
       "url": "https://simonwillison.net/2026/May/11/llm-shebang/",
       "source": "Simon Willison's Weblog",
       "sourceUrl": "https://simonwillison.net/2026/May/11/llm-shebang/",
@@ -35243,10 +35322,115 @@
       "priority": "low",
       "title": "Simon Willison 引 James Shore — agile 老派視角看 AI coding",
       "summary": "James Shore（Extreme Programming 老作者）：『AI 不會取代寫程式的責任感，只會把責任感推到更稀缺的人身上。』agile 圈開始消化 vibe coding 的後果。",
-      "tags": ["ai-coding", "agile", "quote", "engineering-culture"],
+      "tags": [
+        "ai-coding",
+        "agile",
+        "quote",
+        "engineering-culture"
+      ],
       "url": "https://simonwillison.net/2026/May/11/james-shore/",
       "source": "Simon Willison's Weblog",
       "sourceUrl": "https://simonwillison.net/2026/May/11/james-shore/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260513-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-13",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Eric Ries — Financial Gravity 把成功公司腐蝕成 mediocrity",
+      "summary": "80% VC-backed founder IPO 後 3 年內被踢出。Ries 在新書 Incorruptible 提出 financial gravity 框架：成功本身會把公司朝平庸方向拉，文化口號擋不住。對策是治理結構 — Anthropic、Costco、Novo Nordisk 用兩頁法律文件把 mission 鎖進公司結構裡。框架：成功不會保護你，它讓你成為更大的目標。",
+      "tags": [
+        "governance",
+        "mission-lock",
+        "long-termism"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-to-build-a-company-that-withstands",
+      "source": "Eric Ries (Lenny's Podcast)",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-build-a-company-that-withstands",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260513-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-13",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Tobi Lütke — Make the Work Visible 是企業 AI adoption 最大的 lever",
+      "summary": "Shopify 的 River AI agent 只在公開 Slack channel 工作，拒絕 DM。30 天內 5,938 員工跨 4,450 channel 與它互動；一週開 1,870 個 PR；merge rate 兩個月從 36% → 77%。沒換模型、沒做訓練計畫，純粹因為「被看到」。洞察：企業 AI 卡關不是技術問題，是 adoption 問題；多數工具預設讓 AI 在私訊裡跑，這就是 friction 的結構性根源。",
+      "tags": [
+        "ai-adoption",
+        "transparency",
+        "ai-leverage"
+      ],
+      "url": "https://airealizednow.substack.com/p/make-the-work-visible-a-lever-for",
+      "source": "Tobi Lütke (Shopify CEO) • AI Realized",
+      "sourceUrl": "https://airealizednow.substack.com/p/make-the-work-visible-a-lever-for",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260513-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-13",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Ben Thompson — Big Tech Q1 AI CapEx 超過曼哈頓計畫 3 倍",
+      "summary": "Apple/Amazon/Meta/Google/Microsoft 五大 Q1 AI CapEx 加總超過曼哈頓計畫 3 倍以上，沒在減速。市場對「同樣亮眼的數字」用兩種劇本評估：Google 加分（AI 變現故事強）、Meta 扣分（核心更強但 AI 故事弱）。Amazon 過去看似「無聊」的 infra 紀律（Trainium、長期 datacenter 投資）正在成為 inference 時代的不對稱優勢。數字看似瘋狂，策略反而比數字理性。",
+      "tags": [
+        "ai-capex",
+        "inference-era",
+        "big-tech-strategy"
+      ],
+      "url": "https://stratechery.com/2026/earning-spending/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/earning-spending/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260513-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-13",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Dario Amodei — Mythos 找到「數萬個」未公開漏洞，喊 6-12 月修補窗口",
+      "summary": "與 JPMorgan CEO Jamie Dimon 同場的金融業活動上，Amodei 揭露 Claude Mythos 在 Firefox 找到近 300 個漏洞、其他系統「上萬個」未公開。他評估其他前沿實驗室落後 1-3 個月、中國模型落後 6-12 個月 —「我們大概只有這麼多時間修完。」Anthropic 把 capability frontier 直接接到金融業合規焦慮，做出「safety lab as growth strategy」的定位。Playbook：高 capability 本身不是賣點，capability × 信任場景 才是。",
+      "tags": [
+        "ai-safety",
+        "positioning",
+        "anthropic"
+      ],
+      "url": "https://www.bankinfosecurity.com/anthropic-sounds-cyber-alarm-amid-financial-ai-push-a-31617",
+      "source": "Dario Amodei (Anthropic CEO) • BankInfoSecurity",
+      "sourceUrl": "https://www.bankinfosecurity.com/anthropic-sounds-cyber-alarm-amid-financial-ai-push-a-31617",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260513-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-13",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Tobi Lütke — \"She only works in the open.\"",
+      "summary": "Shopify 的 River AI agent 拒絕私訊；所有對話都在公開 channel。River 的 merge rate 兩個月從 36% 跳到 77%，憑的不是更好的模型，是「被看見」。AI 採用最大的 lever，是 visibility。",
+      "tags": [
+        "ai-adoption",
+        "transparency",
+        "quotable"
+      ],
+      "url": "https://airealizednow.substack.com/p/make-the-work-visible-a-lever-for",
+      "source": "Tobi Lütke (Shopify CEO)",
+      "sourceUrl": "https://airealizednow.substack.com/p/make-the-work-visible-a-lever-for",
       "price": null,
       "vram": null,
       "license": null
