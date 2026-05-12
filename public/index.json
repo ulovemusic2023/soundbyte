@@ -35434,6 +35434,246 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260513-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "yaojingang/yao-open-prompts",
+      "summary": "Yao Open Prompts — 中文 AI 提示詞庫，116 個結構化 prompts 涵蓋工作／學習／內容／行銷／生活情境。也有 prompts-en/ 鏡像版（英文）。社群維護，CC-licensed。Gary 寫中文 prompt 可以挖題庫。",
+      "tags": [
+        "chinese-prompts",
+        "creator-tool",
+        "prompt-library"
+      ],
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-29+stars:>50&sort=stars",
+      "stars": 1822,
+      "createdDate": "2026-05-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "XBuilderLAB/cheat-on-content",
+      "summary": "把內容創作變成科學實驗：每篇貼文先 score + 盲預測表現 → 發文 → 等 3 天看數據 → retro → 升級 rubric。系統記住你頻道的特有模式，不是套通用建議。對 Threads creator 特別有用。",
+      "tags": [
+        "creator-tool",
+        "threads",
+        "content-engineering"
+      ],
+      "url": "https://github.com/XBuilderLAB/cheat-on-content",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-29+stars:>50&sort=stars",
+      "stars": 1800,
+      "createdDate": "2026-05-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "BigPizzaV3/CodexPlusPlus",
+      "summary": "Codex App 外掛增強器，透過 Chromium DevTools Protocol 注入腳本，不改原始檔案。兩大功能：解鎖 API Key 登入模式（原本只能 ChatGPT login）、session 刪除系統（hover 刪除＋undo）。中國作者，繁／簡介紹齊全。",
+      "tags": [
+        "codex",
+        "coding-agent",
+        "browser-injection"
+      ],
+      "url": "https://github.com/BigPizzaV3/CodexPlusPlus",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-29+stars:>50&sort=stars",
+      "stars": 1496,
+      "createdDate": "2026-05-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "vibeforge1111/keep-codex-fast",
+      "summary": "Codex 用久變慢的解法：backup-first 維護 skill。歸檔舊 sessions、移走 stale worktrees、rotate logs、trim 過大的 metadata，不刪原檔。哲學：「先 handoff、再封存、不刪除、確認再 apply」。",
+      "tags": [
+        "codex",
+        "coding-agent",
+        "maintenance"
+      ],
+      "url": "https://github.com/vibeforge1111/keep-codex-fast",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-29+stars:>50&sort=stars",
+      "stars": 957,
+      "createdDate": "2026-05-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "techjarves/OpenClaude-Portable",
+      "summary": "Claude Code 從 USB 隨身碟跑，免安裝，任何 PC 插上就能用。對在不同機器之間切換、不想每次裝環境的工程師很實用。Windows 為主。",
+      "tags": [
+        "claude-code",
+        "portable",
+        "coding-agent"
+      ],
+      "url": "https://github.com/techjarves/OpenClaude-Portable",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-29+stars:>50&sort=stars",
+      "stars": 654,
+      "createdDate": "2026-04-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "nduckmink/arkon",
+      "summary": "團隊版的 AI Client 中央控管：把組織文件編譯成 wiki，透過 MCP token 給 Claude 用。員工不用手動複製 context，admin 集中管理權限／policy／workspace。Self-hosted，企業 AI 治理的雛形。",
+      "tags": [
+        "mcp",
+        "team-tool",
+        "ai-governance"
+      ],
+      "url": "https://github.com/nduckmink/arkon",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-04-29+stars:>50&sort=stars",
+      "stars": 648,
+      "createdDate": "2026-04-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "TomSolid/myPKA",
+      "summary": "Personal Knowledge Assistance — 內建 9 人 AI 團隊的個人知識庫，純 markdown + 任何 LLM。基於 ICOR® 方法論，session 之間記憶連續。給愛做 PKM 但想要 agent 協作的人。",
+      "tags": [
+        "personal-knowledge",
+        "claude-code",
+        "icor"
+      ],
+      "url": "https://github.com/TomSolid/myPKA",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-04-29",
+      "stars": 125,
+      "createdDate": "2026-05-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "joshica41/claude-code-design-toolkit",
+      "summary": "免費 Claude Code 設計用 skills + subagents 集合，2026 年版本。覆蓋從 design system 到 UI polish 的各種 design 工作流程。Claude Code 用戶可以直接掛上。",
+      "tags": [
+        "claude-code",
+        "design-toolkit",
+        "skills"
+      ],
+      "url": "https://github.com/joshica41/claude-code-design-toolkit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-04-29",
+      "stars": 100,
+      "createdDate": "2026-05-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "ybuild-ai/ai-game-art-pipeline-skill",
+      "summary": "把 AI 生圖／生影片變成可玩 game art 資產的 agent skill。對遊戲開發者實用，順手對 SoundByte 之類視覺化專案也有參考價值。",
+      "tags": [
+        "game-art",
+        "ai-skill",
+        "pipeline"
+      ],
+      "url": "https://github.com/ybuild-ai/ai-game-art-pipeline-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-04-29",
+      "stars": 86,
+      "createdDate": "2026-05-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "egroup-labs/kept",
+      "summary": "搜尋／封存／召回 ChatGPT、Claude、Gemini、Grok、Kimi 等 AI 對話。Local-first、MIT。給多 client 用戶的對話 archive，跨平台搜舊聊天記錄。",
+      "tags": [
+        "conversation-archive",
+        "local-first",
+        "multi-llm"
+      ],
+      "url": "https://github.com/egroup-labs/kept",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-04-29",
+      "stars": 83,
+      "createdDate": "2026-05-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "CloakHQ/CloakBrowser",
+      "summary": "Playwright 的 drop-in 替代品 — Stealth Chromium，source-level fingerprint patch，可通過所有 bot 偵測測試。給做爬蟲／QA／自動化的開發者。本週爆紅 +5,449⭐。",
+      "tags": [
+        "browser-automation",
+        "scraping",
+        "playwright"
+      ],
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 7678,
+      "createdDate": "2026-02-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260513-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-13",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "raullenchai/Rapid-MLX",
+      "summary": "Apple Silicon 上的快速 local AI engine，支援 tool calling 跟 cloud routing。M 系列 Mac 跑 LLM／音訊推論的選項之一。",
+      "tags": [
+        "apple-silicon",
+        "local-ai",
+        "mlx"
+      ],
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 2206,
+      "createdDate": "2026-02-25",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-05-13T05:20:00+08:00",
