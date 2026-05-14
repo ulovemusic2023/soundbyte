@@ -36317,8 +36317,169 @@
       "stars": 93,
       "createdDate": "2026-05-12",
       "license": "MIT"
+    },
+    {
+      "id": "20260515-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Huanshere/VideoLingo",
+      "summary": "影片在地化一條龍：WhisperX 切字級字幕 + Translate-Reflect-Adapt 三步翻譯 + GPT-SoVITS/Edge/OpenAI TTS 配音。Netflix-grade 單行字幕、支援 voice cloning。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai",
+        "asr",
+        "voice-cloning"
+      ],
+      "url": "https://github.com/Huanshere/VideoLingo",
+      "source": "GitHub Topics: voice-cloning",
+      "sourceUrl": "https://github.com/topics/voice-cloning",
+      "price": null,
+      "vram": "WhisperX large ~10GB；GPT-SoVITS ~6GB (local-ready)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260515-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "2noise/ChatTTS",
+      "summary": "對話導向 TTS，專為 LLM assistant 場景設計，中英雙語。v0.2.5 (2026-04-10) 最新發布，4GB VRAM 可跑 30s 語音。模型 CC-BY-NC（商用受限），程式碼 AGPL-3.0。",
+      "tags": [
+        "tts_speech",
+        "neural-tts"
+      ],
+      "url": "https://github.com/2noise/ChatTTS",
+      "source": "GitHub Topics: text-to-speech",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "4GB (local-ready)",
+      "license": "AGPL-3.0 + CC-BY-NC 4.0"
+    },
+    {
+      "id": "20260515-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "nowledge-co/nowledge-mem",
+      "summary": "本地優先的 AI 對話知識圖譜：透過 MCP 把 Claude / Cursor / Copilot / Gemini / Qwen 的對話整合到一個 graph-augmented memory。瀏覽器擴充一鍵匯入。",
+      "tags": [
+        "rag_knowledge",
+        "knowledge-graph",
+        "mcp"
+      ],
+      "url": "https://github.com/nowledge-co/nowledge-mem",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依外部 LLM 而定 (local-ready)",
+      "license": "未標示"
+    },
+    {
+      "id": "20260515-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVIDIA-AI-Blueprints/video-search-and-summarization",
+      "summary": "NVIDIA 官方 reference architecture：GPU 加速的 vision agent，整合 Cosmos-Reason2-8B + Nemotron-Nano-9B-v2 + NIM。需 2× RTX PRO 6000 SE 或 DGX-SPARK 等級硬體。",
+      "tags": [
+        "cv_ocr",
+        "image_gen",
+        "vision-agent",
+        "nvidia"
+      ],
+      "url": "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": ">48GB (cloud-only)",
+      "license": "多重 License"
+    },
+    {
+      "id": "20260515-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "harvard-lil/olaw",
+      "summary": "Harvard 法學院出品的 tool-based RAG workbench：LLM 先分析 query → 產生搜尋建議 → 接 API。tool-based RAG pattern 值得學。",
+      "tags": [
+        "rag_knowledge",
+        "tool-use",
+        "ollama"
+      ],
+      "url": "https://github.com/harvard-lil/olaw",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "Mixtral 量化版 ~16GB (quantize-ok)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260515-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Adrida/Tracer",
+      "summary": "用 logistic regression / GBT / 小 NN 替代 90% 的 LLM 分類呼叫。Banking77 上 92% coverage、96% agreement，年省 $300k+。Cost-down 神器。",
+      "tags": [
+        "ai_devtools",
+        "cost-optimization",
+        "classification"
+      ],
+      "url": "https://github.com/Adrida/Tracer",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "幾乎不需要 GPU (local-ready)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260515-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "cmu-l3/gym-anything",
+      "summary": "把真實軟體（瀏覽器、IDE、CAD、Moodle、醫療系統）包成 standard agent environment API。要測 agent 在 real-world software 表現的人值得收。",
+      "tags": [
+        "ai_devtools",
+        "agent-eval",
+        "benchmark"
+      ],
+      "url": "https://github.com/cmu-l3/gym-anything",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依測試 agent 而定 (local-ready)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260515-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "opengeos/GeoAgent",
+      "summary": "把地理空間（GIS）工具暴露給 LLM，讓模型能查地圖、做空間分析、處理 raster/vector。Niche 但對 LLM × GIS 應用是現成起點。",
+      "tags": [
+        "ai_devtools",
+        "agent",
+        "geospatial"
+      ],
+      "url": "https://github.com/opengeos/GeoAgent",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依外部 LLM 而定 (local-ready)",
+      "license": "未確認"
     }
   ],
-  "lastUpdated": "2026-05-14",
+  "lastUpdated": "2026-05-15T05:10:00+08:00",
   "updatedAt": "2026-05-14T09:39:40.585116+08:00"
 }
