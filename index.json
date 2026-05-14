@@ -36018,8 +36018,167 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260514-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-14",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Beware the Agentic Convergence Trap",
+      "summary": "當每家公司都把同一批 AI agents 接到同一批數據、餵同一個目標函數，策略會自動 converge——技術跑得通，但差異化默默被侵蝕。作者指出這不是技術 failure，是治理 failure：要主動設計 strategic divergence（非通用目標、獨家數據、divergence audit）。",
+      "tags": [
+        "ai-strategy",
+        "moat",
+        "governance"
+      ],
+      "url": "https://hbr.org/2026/05/beware-the-agentic-convergence-trap",
+      "source": "HBR",
+      "sourceUrl": "https://hbr.org/2026/05/beware-the-agentic-convergence-trap",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-14",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Redefining What Efficiency Means in the Age of AI",
+      "summary": "Mithu Storoni 主張公司生產力不再 proportional to 人類產出量。改 metric：從 throughput 轉到決策品質、新奇度、錯誤減少；深度任務排 peak attention 視窗，雜事留低谷，AI 補注意力廉價的縫隙。",
+      "tags": [
+        "deep-work",
+        "attention",
+        "efficiency-redefined"
+      ],
+      "url": "https://hbr.org/podcast/2026/05/redefining-what-efficiency-means-in-the-age-of-ai",
+      "source": "HBR On Leadership Podcast",
+      "sourceUrl": "https://hbr.org/podcast/2026/05/redefining-what-efficiency-means-in-the-age-of-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-14",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Tobi Lütke's River: The Coding Agent That Refuses DMs",
+      "summary": "Shopify 內部 coding agent River 故意只在公開 Slack 頻道工作，拒絕私訊。Tobi 設計成 Lehrwerkstatt（教學工作坊）：把所有工作攤在陽光下，組織知識靠 osmosis 自然擴散，不需要 curriculum、訓練計畫、或 manager。",
+      "tags": [
+        "founder-mode",
+        "ai-org-design",
+        "transparency"
+      ],
+      "url": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-14",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "How Anthropic's Mythos Rewrote Firefox's Approach to Cybersecurity",
+      "summary": "Anthropic 把內部模型 Mythos 指向 Firefox codebase，挖出上千個高嚴重度漏洞（含潛伏 10+ 年的）。Firefox 4 月修了 423 個 bug，去年同期只有 31 個。策略寓意：頂級模型先當內部防禦工具用，補完低垂果實再外放。",
+      "tags": [
+        "ai-safety",
+        "offense-defense",
+        "internal-tooling"
+      ],
+      "url": "https://techcrunch.com/2026/05/07/how-anthropics-mythos-has-rewritten-firefoxs-approach-to-cybersecurity/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/07/how-anthropics-mythos-has-rewritten-firefoxs-approach-to-cybersecurity/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-14",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Anthropic × SpaceX/xAI Colossus 1: 300MW & 220K GPUs",
+      "summary": "Anthropic Q1 2026 成長 80x（內部 plan 是 10x）。為了當壓力閥，跟 SpaceX/xAI 簽下 Colossus 1 的 300MW、22 萬張 GPU，估值 $3-5B/年。等 Amazon、Google、Microsoft 長期 capacity 後續才接。承認在 hyper-growth 階段 capacity 比品牌更重要。",
+      "tags": [
+        "hyper-growth",
+        "infrastructure",
+        "compute-economics"
+      ],
+      "url": "https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr",
+      "source": "Latent Space AI News",
+      "sourceUrl": "https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-14",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Stripe Sessions 2026: The Bot Is the Customer",
+      "summary": "Collison 兄弟公布 Stripe 內部數據：新公司開店曲線 2026 初垂直拉升，AI coding 把創業門檻砍到剩幾天。John Collison 預測 12-18 個月內 agents 變主流買家。Catalog 要 machine-readable、APIs 要乾淨，因為下一個顧客可能不是人。",
+      "tags": [
+        "agentic-commerce",
+        "pmf",
+        "ai-economy"
+      ],
+      "url": "https://stripe.com/blog/vertical-saas-insights-sessions-2026",
+      "source": "Stripe Blog",
+      "sourceUrl": "https://stripe.com/blog/vertical-saas-insights-sessions-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-14",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Simon Willison: LLM Shebang — English as Executable Code",
+      "summary": "Simon 示範 #!/usr/bin/env -S llm -f 把純英文意圖檔案當 script 跑——LLM 解讀、呼叫工具、產出結果。打掉文件 / 程式碼邊界：寫 script 不再是寫語法，是寫意圖。對 one-person company 的意義：SOP 本身就是 executable。",
+      "tags": [
+        "software-3.0",
+        "llm-cli",
+        "agentic-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/May/11/llm-shebang/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/11/llm-shebang/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-05-14",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Dario Amodei on the Offense/Defense Balance (Quote)",
+      "summary": "「If we handle this right, we could be in a better position than we started, because we fixed all these bugs. There are only so many bugs to find.」— Amodei 對 AI × 資安的賭注：bug 不是無窮的，誰先用頂級模型補完，誰就贏在防禦面。",
+      "tags": [
+        "ai-safety",
+        "offense-defense"
+      ],
+      "url": "https://techcrunch.com/2026/05/07/how-anthropics-mythos-has-rewritten-firefoxs-approach-to-cybersecurity/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/07/how-anthropics-mythos-has-rewritten-firefoxs-approach-to-cybersecurity/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-14T09:09:00+08:00",
-  "updatedAt": "2026-05-14T09:09:00+08:00"
+  "lastUpdated": "2026-05-14",
+  "updatedAt": "2026-05-14T09:39:40.585116+08:00"
 }
