@@ -35852,6 +35852,172 @@
       "price": null,
       "vram": "local-ready",
       "license": "MIT"
+    },
+    {
+      "id": "20260514-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GitLab 宣告「agentic era」重組：裁 7%、砍 30% 國家辦公室、R&D 拆成 60 個自主團隊",
+      "summary": "GitLab CEO Bill Staples 公告 workforce reduction + 結構性翻新——把管理層級壓平、R&D 重組成 ~60 個小型 autonomous teams、把內部流程交給 AI agents 自動化、把國家辦公室 footprint 砍掉約 30%。Staples 強調「這不是 AI 成本優化」，但市場普遍解讀為大廠用「agentic era」框架啟動裁員週期。",
+      "tags": [
+        "paradigm-shift",
+        "agentic-era",
+        "devops",
+        "restructure"
+      ],
+      "url": "https://about.gitlab.com/blog/",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/devops/2026/05/12/gitlab-promises-a-different-kind-of-layoff-as-biz-pivots-toward-ai/5238422",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Shopify River — 強制公開 Slack 的內部 AI coding agent",
+      "summary": "Shopify 內部 coding agent River 拒絕私訊，刻意打造 Lehrwerkstatt（教學工坊）：30 天內 5,938 名員工在 4,450 個 channel 用過，~1/8 合併 PR 由 River 寫；merge rate 從 36%→77%。",
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "organizational-learning",
+        "lehrwerkstatt"
+      ],
+      "url": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "SAP AI Agent Hub 在 Sapphire 2026 GA — vendor-agnostic 治理 100,000+ agents",
+      "summary": "SAP AI Agent Hub 跨廠商自動發現並 inventory 所有 AI agents / LLMs / MCP servers，已被 150 家企業用於管理 10 萬+ agents。Q3 將加上 agent identity + observability。",
+      "tags": [
+        "paradigm-shift",
+        "agent-governance",
+        "mcp",
+        "agent-sprawl"
+      ],
+      "url": "https://thenewstack.io/sap-ai-agent-hub/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/sap-ai-agent-hub/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler：為「非確定性運算」設計軟體架構",
+      "summary": "Fowler 提出 AI agents 架構需要 Guides（feedforward）+ Sensors（feedback loops）兩層，並對映 Feedback Flywheel pattern。傳統把 AI wrap 成可預測模組的做法會反噬。",
+      "tags": [
+        "architecture",
+        "ai-agent",
+        "non-deterministic-computing"
+      ],
+      "url": "https://thenewstack.io/martin-fowler-on-preparing-for-ais-nondeterministic-computing/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/martin-fowler-on-preparing-for-ais-nondeterministic-computing/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Yugabyte Meko：給 multi-agent 用的 agent-native data infrastructure（OSS）",
+      "summary": "Yugabyte 開源 Meko，把 multi-agent system 共享 state / memory / context 的層獨立成資料庫產品。「agent state 是新一層 infra」的具體實作。",
+      "tags": [
+        "multi-agent",
+        "agent-native-data-layer",
+        "database",
+        "vector-database"
+      ],
+      "url": "https://thenewstack.io/yugabyte-meko-ai-agent-state/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/yugabyte-meko-ai-agent-state/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SAP × Anthropic：Claude 進入 SAP Business AI Platform",
+      "summary": "SAP 與 Anthropic 結盟，把 Claude 模型整進 SAP Business AI Platform，搭配 SAP 自有的 Joule agents 與 AI Agent Hub。Anthropic 在 enterprise 通路又一勝。",
+      "tags": [
+        "ai-agent",
+        "enterprise",
+        "claude",
+        "model-context-protocol"
+      ],
+      "url": "https://news.sap.com/2026/05/sap-anthropic-to-bring-claude-sap-business-ai-platform/",
+      "source": "SAP News Center",
+      "sourceUrl": "https://news.sap.com/2026/05/sap-anthropic-to-bring-claude-sap-business-ai-platform/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "2026 agentic development 五大趨勢（The New Stack）",
+      "summary": "TNS 整理 2026 agent 開發五大主軸：vendor agent sprawl 治理、agentic metadata 成新基礎層、multi-agent state management、agent observability、AI-native data layer。",
+      "tags": [
+        "ai-agent",
+        "trends",
+        "observability",
+        "agent-sprawl"
+      ],
+      "url": "https://thenewstack.io/5-key-trends-shaping-agentic-development-in-2026/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/5-key-trends-shaping-agentic-development-in-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260514-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison：llm 0.32a2 + datasette 1.0a29 同日釋出",
+      "summary": "Simon 同一天連發兩個 alpha：llm 0.32a2 + datasette 1.0a29，datasette 1.0 stable 看起來快到了。",
+      "tags": [
+        "python",
+        "tooling",
+        "llm"
+      ],
+      "url": "https://simonwillison.net/2026/May/12/llm/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/12/llm/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-14T09:09:00+08:00",
