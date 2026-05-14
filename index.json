@@ -36177,6 +36177,146 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260514-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-14",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "jmerelnyc/Photo-agents",
+      "summary": "Vision-grounded autonomous agent framework — agents 看著螢幕、推理、行動，用 self-written skills 操作電腦。Layered memory + 本地 data/keys ownership，主打 LLM agent 看得到螢幕才能真的 act。",
+      "tags": [
+        "ai-agent",
+        "vision",
+        "agent-framework"
+      ],
+      "url": "https://github.com/jmerelnyc/Photo-agents",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-04-30+stars:%3E50&type=repositories",
+      "stars": 776,
+      "createdDate": "2026-05-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260514-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-14",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "HermannBjorgvin/Clawdmeter",
+      "summary": "ESP32 桌上小儀表板，即時顯示 Claude Code 使用量。Maker 風格的 dev productivity 玩具，硬體+軟體都開源。",
+      "tags": [
+        "claude-code",
+        "maker",
+        "esp32"
+      ],
+      "url": "https://github.com/HermannBjorgvin/Clawdmeter",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-04-30+stars:%3E50&type=repositories",
+      "stars": 683,
+      "createdDate": "2026-05-11",
+      "license": "none"
+    },
+    {
+      "id": "20260514-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-14",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "Zackriya-Solutions/meetily",
+      "summary": "Privacy-first AI meeting assistant，全本地處理：Whisper/Parakeet 轉錄 + Ollama 摘要。Rust + Tauri + Next.js 跨平台，也支援接 Claude/Groq/OpenAI。會議錄音不上雲。",
+      "tags": [
+        "audio",
+        "speech",
+        "local-ai",
+        "ollama"
+      ],
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 394,
+      "createdDate": "weekly-trending",
+      "license": "unknown"
+    },
+    {
+      "id": "20260514-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-14",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "eduwass/tmux-palette",
+      "summary": "Raycast 風格的 tmux command palette — 快速、可寫腳本、易擴展。tmux 重度使用者的 productivity 升級。",
+      "tags": [
+        "tmux",
+        "cli",
+        "productivity"
+      ],
+      "url": "https://github.com/eduwass/tmux-palette",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-11+stars:%3E30&type=repositories",
+      "stars": 195,
+      "createdDate": "2026-05-12",
+      "license": "none"
+    },
+    {
+      "id": "20260514-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-14",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "agentara/skills",
+      "summary": "另一份 AI builder 的 skills 倉庫，跟 mattpocock/skills 和 addyosmani/agent-skills 同期爆紅。\"skills as code\" 這個 pattern 已經形成 ecosystem。",
+      "tags": [
+        "agent-skill",
+        "claude-code"
+      ],
+      "url": "https://github.com/agentara/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-11+stars:%3E30&type=repositories",
+      "stars": 177,
+      "createdDate": "2026-05-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260514-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-14",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "rahilp/second-brain-cloudflare",
+      "summary": "One memory layer for every AI tool — 存一次，在 Claude/ChatGPT/Cursor/任何 MCP client 都能 recall。Self-host 在 Cloudflare 免費 tier 上，MIT 授權。",
+      "tags": [
+        "mcp",
+        "memory",
+        "self-hosted"
+      ],
+      "url": "https://github.com/rahilp/second-brain-cloudflare",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-04-30+topic:mcp&type=repositories",
+      "stars": 55,
+      "createdDate": "2026-05-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260514-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-14",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "Isoform/yansu-skill",
+      "summary": "\"Bespoke context, delivered to your AI agent\" — Yansu 觀察你怎麼工作然後結晶成知識，再透過 skill 注入到任何 agent。Prompt once, never re-introduce yourself。",
+      "tags": [
+        "agent-skill",
+        "context",
+        "memory"
+      ],
+      "url": "https://github.com/Isoform/yansu-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-11+stars:%3E30&type=repositories",
+      "stars": 93,
+      "createdDate": "2026-05-12",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-14",
