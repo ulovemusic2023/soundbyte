@@ -36478,8 +36478,257 @@
       "price": null,
       "vram": "依外部 LLM 而定 (local-ready)",
       "license": "未確認"
+    },
+    {
+      "id": "20260515-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 6/15 起把 Agent SDK / claude -p 拆出訂閱、改吃 programmatic credit",
+      "summary": "Anthropic 宣布 6/15 起把 programmatic usage（Agent SDK、claude -p、GitHub Actions、第三方 framework）從 Claude Pro/Max 訂閱拆出，改用獨立 monthly programmatic credit 按 API rate 計費：Pro $20 / Max 5x $100 / Max 20x $200。互動式 Claude Code/Cowork 留在訂閱池。AI subscription 正式進入 chat 與 agent 分離計價時代。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agent-credits-split",
+        "pricing"
+      ],
+      "url": "https://www.theregister.com/ai-ml/2026/05/14/anthropic-tosses-agents-into-the-api-billing-pool/5240748",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/ai-ml/2026/05/14/anthropic-tosses-agents-into-the-api-billing-pool/5240748",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Chrome Extension 0-permission agent hijack",
+      "summary": "IANS Research 揭露：任何 Chrome 擴充功能不需任何權限即可注入指令給 Claude agent，挾持其資料外洩、操控輸入介面、操弄 password label、外送檔案，且能命令 agent 抹除痕跡。新威脅模型：browser agent 是 privileged identity 攻擊面，CISO 需重新審視 trust boundary。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "security",
+        "browser-agent"
+      ],
+      "url": "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/05/14/flaw-in-claude-s-chrome-extension-allows-threat-actors-to-hijack-ai-agents",
+      "source": "IANS Research",
+      "sourceUrl": "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/05/14/flaw-in-claude-s-chrome-extension-allows-threat-actors-to-hijack-ai-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic Claude Code 6 週品質下滑 postmortem",
+      "summary": "Anthropic v2.1.116 修復記：三個獨立 product-layer bug 疊加——reasoning effort 預設從 high 降到 medium、caching bug 每輪清掉思考、main agent 偷偷 delegate 給 Haiku（只在 verbose log 看得到）。模型沒變，全是 harness/orchestration 層。對自動化 pipeline 警訊：silent sub-agent delegation 你可能要好幾步後才發現品質下降。",
+      "tags": [
+        "ai-agent",
+        "agent-harness",
+        "postmortem",
+        "silent-sub-agent-delegation"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/anthropic-claude-code-postmortem/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/anthropic-claude-code-postmortem/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Zoox Cortex：把 agent 當 REST API 平台 service",
+      "summary": "Zoox 內部 AI 平台 Cortex 把 agent = LLM + tools 迴圈當第一公民——團隊不自己跑 agent stack，而是打 REST API 指定 model/prompt/tools，平台 spin up lightweight agent。中央 tool registry 一次定義全公司 agent 共用。Agent-as-microservice 的具體範例，從『各團隊自建』翻成『平台層 service』的典範轉移。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "architecture",
+        "agent-microservices"
+      ],
+      "url": "https://www.infoq.com/presentations/ai-software-development/",
+      "source": "Zoox @ InfoQ",
+      "sourceUrl": "https://www.infoq.com/presentations/ai-software-development/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google DeepMind Gemini AI Cursor：點哪、講哪",
+      "summary": "DeepMind 發表實驗性 AI pointer：滑鼠指向螢幕任何內容（表格/PDF/影片/地圖）+ 一句語音，Gemini 用 cursor 位置 + 螢幕理解 + 語音指令推論意圖。『把這表格變圓餅圖』『總結這 PDF 成 email』直接在原 app 內完成。AI Studio 已開放 demo，未來進 Chrome / Gemini laptop。長 prompt 模式可能被『指 + 講』取代。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "AI-enabled-pointer",
+        "ui"
+      ],
+      "url": "https://www.moneycontrol.com/world/google-s-gemini-ai-now-understands-your-mouse-cursor-movements-article-13919109.html",
+      "source": "Moneycontrol / Google DeepMind",
+      "sourceUrl": "https://www.moneycontrol.com/world/google-s-gemini-ai-now-understands-your-mouse-cursor-movements-article-13919109.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI + Accenture Federal：Codex 進 FedRAMP IL6+",
+      "summary": "AFS 成 OpenAI 美國聯邦市場 implementation partner，把 Codex agent 跑到所有 FedRAMP impact levels 含 IL6+。3,000 名 AFS 工程師拿最新 Codex models 跑全生命週期開發、15,000 人 governed access、1,500 人 ChatGPT Enterprise。Codex 從 IDE 工具升級為聯邦級 agent runtime。",
+      "tags": [
+        "ai-agent",
+        "enterprise",
+        "codex",
+        "fedramp"
+      ],
+      "url": "https://newsroom.accenture.com/news/2026/accenture-federal-services-and-openai-partner-to-accelerate-secure-ai-adoption-across-the-federal-government",
+      "source": "Accenture Newsroom",
+      "sourceUrl": "https://newsroom.accenture.com/news/2026/accenture-federal-services-and-openai-partner-to-accelerate-secure-ai-adoption-across-the-federal-government",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "PwC × Anthropic：30,000 人受訓 Claude，推 agentic operating model",
+      "summary": "PwC 與 Anthropic 擴大同盟：Claude Code 做 agentic build、Claude Cowork 嵌進 Office productivity、推 Claude-native CFO 辦公室。30,000 名 PwC 美國員工受訓認證、全 PwC 員工開通 Claude、聯合 CoE。Agentic operating model 首次有四大級顧問背書，agent 進企業 SOP 不只是 demo。",
+      "tags": [
+        "ai-agent",
+        "enterprise",
+        "agentic-operating-model"
+      ],
+      "url": "https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html",
+      "source": "PwC Press Release",
+      "sourceUrl": "https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude for Small Business：15 個現成 agentic workflow + 15 個 skill",
+      "summary": "Anthropic 推 SMB 版 Claude：connectors 接 QuickBooks / Google Workspace，內建 15 個 ready-to-run agentic workflow（Finance / Ops / Sales / Marketing / HR / Customer service）+ 15 個 SMB 痛點 skill。SMB 不用工程師團隊就能跑 agentic automation。Agent 從 enterprise 下沉到中小企業 SaaS 形態。",
+      "tags": [
+        "ai-agent",
+        "agentic-workflows",
+        "smb"
+      ],
+      "url": "https://www.techradar.com/pro/we-are-committed-to-helping-business-owners-harness-ai-more-fully-and-effectively-anthropic-reveals-claude-for-small-business-to-help-close-the-gap-using-ai",
+      "source": "TechRadar Pro",
+      "sourceUrl": "https://www.techradar.com/pro/we-are-committed-to-helping-business-owners-harness-ai-more-fully-and-effectively-anthropic-reveals-claude-for-small-business-to-help-close-the-gap-using-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-009",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pinterest CPU zombie：閒置 ECS agent 把 kubelet 拖垮",
+      "summary": "Pinterest PinCompute（K8s）出現 ML training job 隨機 crash。Root cause：AWS Deep Learning AMI 內建一個未用的 ECS agent 一直 crashloop，每次重啟漏一組 memory cgroup，累積至 ~70,000 zombie memcg（vs 240 active）。kubelet 每次 cgroup stats sync 要遍歷整串，單核被霸佔造成 CPU starvation。教訓：base image 預設 agent 要審查，infra agent × cgroup 互動是隱藏 footgun。",
+      "tags": [
+        "devops",
+        "kubernetes",
+        "sre",
+        "observability"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/pinterest-cpu-zombies-bottleneck/",
+      "source": "Pinterest @ InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/pinterest-cpu-zombies-bottleneck/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-010",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Moonrepo v2.0 Phobos：toolchain 改 WASM plugin 架構",
+      "summary": "Rust 寫的 monorepo 工具 Moon 釋出 v2.0，最大改動是從寫死的 platform 系統改成 WASM plugin-based toolchain，新增多 config 格式、CLI 重構、task inheritance、Docker 整合提升。WASM 作為 build tool 擴充層的新範例。",
+      "tags": [
+        "new-languages",
+        "wasm",
+        "monorepo",
+        "plugins"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/moonrepo-2-release/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/moonrepo-2-release/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-011",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare billing 變慢：ClickHouse query plan contention",
+      "summary": "Cloudflare 公開 ClickHouse 隱藏瓶頸 debug 筆記：billing pipeline 突然變慢，最終定位到 query plan 階段的 contention（不是查詢本身）。對任何用 ClickHouse / OLAP 的團隊是好的 distributed system debugging 案例。",
+      "tags": [
+        "architecture",
+        "devops",
+        "observability",
+        "olap"
+      ],
+      "url": "https://blog.cloudflare.com/clickhouse-query-plan-contention/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/clickhouse-query-plan-contention/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-sw-012",
+      "radar": "software-dev",
+      "date": "2026-05-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anders Hejlsberg 上 Pragmatic Engineer：Turbo Pascal → C# → TypeScript → AI 時代語言設計",
+      "summary": "Gergely Orosz 訪談 Anders Hejlsberg（Turbo Pascal / C# / TypeScript 設計者），談語言演化、編譯器設計、以及『AI 進入 loop 後我們怎麼設計語言與工具』。對長期想 AI-assisted coding 怎麼 reshape 語言層的人是必聽。",
+      "tags": [
+        "language-design",
+        "ai-coding",
+        "podcast"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/typescript-c-and-turbo-pascal-with",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/typescript-c-and-turbo-pascal-with",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-15T05:10:00+08:00",
+  "lastUpdated": "2026-05-14T21:28:32.875090+00:00",
   "updatedAt": "2026-05-14T09:39:40.585116+08:00"
 }
