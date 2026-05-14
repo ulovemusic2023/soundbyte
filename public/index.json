@@ -36887,6 +36887,149 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260515-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-15",
+      "cycle": "fri",
+      "title": "pixel-point/media-downloader",
+      "summary": "Pixel Point 團隊釋出的原生 macOS 影片下載器，Swift 寫的、能下載也能 trim，UI 漂亮。對做音樂內容/教學影片素材抓取很實用。",
+      "priority": "rising-fast",
+      "tags": [
+        "macos",
+        "video",
+        "swift",
+        "creator-tool"
+      ],
+      "url": "https://github.com/pixel-point/media-downloader",
+      "stars": 788,
+      "createdDate": "2026-05-06",
+      "license": "no-license",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-01+stars%3A%3E50&type=repositories"
+    },
+    {
+      "id": "20260515-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-15",
+      "cycle": "fri",
+      "title": "haydenbleasel/files-sdk",
+      "summary": "Hayden Bleasel 寫的統一儲存 SDK，把 object/blob 後端（S3、R2、本地）包成一個 web-standards I/O 的小 API。寫全端工具要切儲存後端時不用各寫一遍。",
+      "priority": "rising-fast",
+      "tags": [
+        "storage",
+        "sdk",
+        "web-fullstack"
+      ],
+      "url": "https://github.com/haydenbleasel/files-sdk",
+      "stars": 667,
+      "createdDate": "2026-05-08",
+      "license": "MIT",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-01+stars%3A%3E50&type=repositories"
+    },
+    {
+      "id": "20260515-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-15",
+      "cycle": "fri",
+      "title": "TencentARC/Pixal3D",
+      "summary": "SIGGRAPH 2026 paper，從單張圖做 pixel-aligned 3D generation。雖然不是音樂，但對做 MV 視覺、3D 封面素材、VJ 場景的創作者是新工具。",
+      "priority": "rising-fast",
+      "tags": [
+        "3d",
+        "image-to-3d",
+        "generative",
+        "creator-tool"
+      ],
+      "url": "https://github.com/TencentARC/Pixal3D",
+      "stars": 627,
+      "createdDate": "2026-05-10",
+      "license": "NOASSERTION",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-01+stars%3A%3E50&type=repositories"
+    },
+    {
+      "id": "20260515-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-15",
+      "cycle": "fri",
+      "title": "alvinunreal/openpets",
+      "summary": "給 AI coding agent 的桌面寵物，透過 MCP 接 Claude Code 就能看到寵物根據編碼狀態反應。純樂趣但開發者文化很濃，做 dev tools 可以參考這種互動設計。",
+      "priority": "rising-fast",
+      "tags": [
+        "mcp",
+        "claude-code",
+        "desktop",
+        "dev-culture"
+      ],
+      "url": "https://github.com/alvinunreal/openpets",
+      "stars": 563,
+      "createdDate": "2026-05-04",
+      "license": "MIT",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-05-01"
+    },
+    {
+      "id": "20260515-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-15",
+      "cycle": "fri",
+      "title": "ozgurcd/gograph",
+      "summary": "Local-only 的 Go 專案結構掃描 CLI，產出 repo 結構讓 IDE/agent 有 context awareness。比直接讓 agent ls/grep 省 token。",
+      "priority": "worth-trying",
+      "tags": [
+        "golang",
+        "cli",
+        "agent-context"
+      ],
+      "url": "https://github.com/ozgurcd/gograph",
+      "stars": 102,
+      "createdDate": "2026-05-08",
+      "license": "MIT",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-01"
+    },
+    {
+      "id": "20260515-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-15",
+      "cycle": "fri",
+      "title": "vitalops/opendesk",
+      "summary": "用 computer-use 工具同時操控 1 台或多台機器，給 agent 跨機操作。Python 寫的，MCP 客戶端可用。",
+      "priority": "on-the-radar",
+      "tags": [
+        "computer-use",
+        "mcp",
+        "multi-machine"
+      ],
+      "url": "https://github.com/vitalops/opendesk",
+      "stars": 47,
+      "createdDate": "2026-05-07",
+      "license": "MIT",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-05-01"
+    },
+    {
+      "id": "20260515-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-15",
+      "cycle": "fri",
+      "title": "vercel-labs/nitro-imessage-agent-template",
+      "summary": "Vercel Labs 官方範本：耐用型 iMessage AI agent，傳訊息給它就能跑可重試的 LLM + tool calls，附完整 observability。部署在 Vercel 上。",
+      "priority": "on-the-radar",
+      "tags": [
+        "vercel",
+        "agent-template",
+        "imessage"
+      ],
+      "url": "https://github.com/vercel-labs/nitro-imessage-agent-template",
+      "stars": 39,
+      "createdDate": "2026-05-05",
+      "license": "Apache-2.0",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-01"
     }
   ],
   "lastUpdated": "2026-05-14T21:28:32.875090+00:00",
