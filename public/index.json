@@ -35674,8 +35674,186 @@
       "stars": 2206,
       "createdDate": "2026-02-25",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260514-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "neuphonic/neutts-air",
+      "summary": "On-device TTS + 即時 voice cloning，0.5B LLM backbone（360M active / 552M w/ embeddings），手機到 Raspberry Pi 都能跑。對 SVC pipeline 來說是新的小型零樣本 voice cloning 候選。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "on-device"
+      ],
+      "url": "https://github.com/neuphonic/neutts-air",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260514-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "pipecat-ai/pipecat",
+      "summary": "Open-source Python framework，組裝 real-time voice + multimodal AI agent，audio/video/AI service 一條 pipeline 串起來。配 neutts-air 或 Whisper + LLM 就能做本地語音 agent。",
+      "tags": [
+        "tts_speech",
+        "voice agent",
+        "framework"
+      ],
+      "url": "https://github.com/pipecat-ai/pipecat",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "id": "20260514-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VectorSpaceLab/OmniGen2",
+      "summary": "多模態生圖 + 編輯模型，visual understanding、text-to-image、instruction-guided image editing、in-context generation 一個 model 全做。專案頁有完整 weights + 推論 code。",
+      "tags": [
+        "image_gen",
+        "multimodal"
+      ],
+      "url": "https://github.com/VectorSpaceLab/OmniGen2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260514-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Open-Sciencelab/GraphGen",
+      "summary": "用 knowledge graph 合成 LLM fine-tuning 資料：抽取知識圖譜，鎖定知識缺口，自動產 QA pair。要做領域微調又苦於沒資料時值得試。",
+      "tags": [
+        "llm_training",
+        "synthetic data",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/Open-Sciencelab/GraphGen",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260514-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "rasbt/LLMs-from-scratch",
+      "summary": "Sebastian Raschka 的書「Build a Large Language Model From Scratch」配套 repo，PyTorch 從零實作 GPT-like model。今天 GitHub Trending Python 第 16 名，補基礎用。",
+      "tags": [
+        "llm_training",
+        "educational",
+        "pytorch"
+      ],
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260514-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "sourcebot-dev/sourcebot",
+      "summary": "Self-hosted code search + AI 問答工具，給人和 agent 都能用的 codebase 理解層。多 repo grep + 接地（grounded）QA，做大型專案探勘時可選。",
+      "tags": [
+        "rag_knowledge",
+        "code search",
+        "self-hosted"
+      ],
+      "url": "https://github.com/sourcebot-dev/sourcebot",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "custom"
+    },
+    {
+      "id": "20260514-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "MervinPraison/PraisonAI",
+      "summary": "5 行 code 部署 autonomous self-improving agent，支援 100+ LLM、內建 memory 和 RAG。今天 GitHub Trending Python 第 12 名（+411）。CrewAI/AutoGen 系的後進。",
+      "tags": [
+        "ai_devtools",
+        "agent framework",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/MervinPraison/PraisonAI",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260514-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "K-Dense-AI/scientific-agent-skills",
+      "summary": "135 個現成 agent skill 包，涵蓋生資、藥物發現、臨床研究、資料分析。Agent skill 生態 hot — 可參考結構（之後 Sub 想做 music research skill pack 可借鏡）。",
+      "tags": [
+        "ai_devtools",
+        "agent skills"
+      ],
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260514-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Lyellr88/MARM-Systems",
+      "summary": "Universal MCP server 提供跨 LLM agent 的持久 memory + 語意搜尋，支援 HTTP / STDIO / WebSocket transport。Sub/Luv/Zen 跨 agent 共享記憶的可參考實作。",
+      "tags": [
+        "ai_devtools",
+        "mcp",
+        "memory"
+      ],
+      "url": "https://github.com/Lyellr88/MARM-Systems",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-05-13T05:20:00+08:00",
-  "updatedAt": "2026-05-13T05:20:00+08:00"
+  "lastUpdated": "2026-05-14T09:09:00+08:00",
+  "updatedAt": "2026-05-14T09:09:00+08:00"
 }
