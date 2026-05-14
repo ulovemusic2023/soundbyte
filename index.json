@@ -36727,6 +36727,166 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260515-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-15",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Naval：AI 是新一代的 leverage，工程師是受益最多的人",
+      "summary": "Naval 在 X 上重申他的核心框架：AI 是一種 leverage，會放大使用者的回報。軟體工程師正在相對所有人取得 leverage，而 AI 的創造者是 leverage 最大化的人。",
+      "tags": [
+        "leverage",
+        "specific-knowledge",
+        "ai-future"
+      ],
+      "url": "https://x.com/naval/status/1942102738265161834",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://x.com/naval/status/1942102738265161834",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-15",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Karpathy 改名 vibe coding 為 agentic engineering：地板與天花板的差別",
+      "summary": "Karpathy 提出新框架：vibe coding 把所有人寫程式的地板抬高；agentic engineering 是工程師用會破題、跑測試、自我迭代的 AI 系統把天花板拉高，需要更好的 spec、tests、judgment。",
+      "tags": [
+        "vibe-coding",
+        "agentic-engineering",
+        "ai-coding"
+      ],
+      "url": "https://sdtimes.com/ai/andrej-karpathy-has-renamed-vibe-coding-heres-what-engineering-leaders-need-to-do-about-it/",
+      "source": "SD Times",
+      "sourceUrl": "https://sdtimes.com/ai/andrej-karpathy-has-renamed-vibe-coding-heres-what-engineering-leaders-need-to-do-about-it/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-15",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "HBR：AI 落地的瓶頸不是策略，是同理心領導",
+      "summary": "HBR 5 月最新短評：AI 採用在團隊中失敗，多半敗在人們怎麼體驗它。需要 empathetic leadership 理解焦慮、建立信任、把人拉進過程。AI 轉型本質是組織心理戰，不是工具部署戰。",
+      "tags": [
+        "ai-adoption",
+        "leadership",
+        "empathy"
+      ],
+      "url": "https://hbr.org/tip/2026/05/lead-ai-adoption-with-empathy",
+      "source": "Harvard Business Review",
+      "sourceUrl": "https://hbr.org/tip/2026/05/lead-ai-adoption-with-empathy",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-15",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Sahil Lavingia 把 Gumroad CEO 換成 AI agent Gumclaw",
+      "summary": "Gumroad 創辦人公開宣布：新 CEO 是 AI agent Gumclaw，負責站點運作、修 bug、回客服票（單日關掉 251 張）。當 AI tokens 可涵蓋整個 codebase，人類角色從執行者變方向決策者。",
+      "tags": [
+        "ai-ceo",
+        "automation",
+        "one-person-company"
+      ],
+      "url": "https://x.com/shl/status/2039401205311398027",
+      "source": "Sahil Lavingia",
+      "sourceUrl": "https://x.com/shl/status/2039401205311398027",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-15",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "Bezos 親自下海：Project Prometheus 估值衝到 $38B，physical AI 新賽道",
+      "summary": "Bezos 自 2021 卸任 Amazon CEO 後第一次重回 operational role，主攻把 AI 帶進工廠：航太、汽車、製藥的製程自動化。BlackRock、JPMorgan 領投 $10B 至 $38B 估值。Physical AI 是下一波 trillion-dollar 機會。",
+      "tags": [
+        "physical-ai",
+        "manufacturing",
+        "founder-mode"
+      ],
+      "url": "https://www.bloomberg.com/news/articles/2026-04-23/bezos-s-physical-ai-lab-has-closed-round-at-38-billion-value",
+      "source": "Bloomberg",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-04-23/bezos-s-physical-ai-lab-has-closed-round-at-38-billion-value",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-15",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "Marc Andreessen：真正的 AI 熱潮根本還沒開始",
+      "summary": "Andreessen 在 Lenny's Podcast 上講：現在大家覺得 AI 已經很熱，他認為真正的 AI boom 還沒開始——基礎建設、應用層、商業模式都還在早期。對 builder 的啟示：現在還是 day 1。",
+      "tags": [
+        "ai-cycle",
+        "market-timing",
+        "techno-optimism"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/marc-andreessen-the-real-ai-boom",
+      "source": "Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/marc-andreessen-the-real-ai-boom",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-15",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "Stratechery：當 AI 讓寫軟體無限便宜，傳統 SaaS 護城河會崩",
+      "summary": "Ben Thompson 論點：AI 讓任何公司都能寫無限軟體，buy software 需求會被內部 AI agents 取代。SaaS 護城河從功能轉到資料 + 整合 + 經銷。對創業者：別賣工具，賣 workflow 與 distribution。",
+      "tags": [
+        "saas-disruption",
+        "moat",
+        "distribution"
+      ],
+      "url": "https://stratechery.com/2026/microsoft-and-software-survival/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/microsoft-and-software-survival/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260515-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-05-15",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Jensen Huang CMU 畢業演說：你們的職涯從 AI 革命的起點開始",
+      "summary": "NVIDIA CEO 在 5/10 CMU 畢業典禮上講：AI 不只是新軟體類別，是新工業時代的起點，整個世代的職涯都站在這個 inflection point 上。Quote: Your career starts at the beginning of the AI revolution — this is a once-in-a-generation opportunity to reindustrialise America.",
+      "tags": [
+        "ai-revolution",
+        "industrial-era",
+        "career"
+      ],
+      "url": "https://blogs.nvidia.com/blog/nvidia-ceo-carnegie-mellon-commencement-address/",
+      "source": "NVIDIA Blog",
+      "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-ceo-carnegie-mellon-commencement-address/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-14T21:28:32.875090+00:00",
