@@ -37197,8 +37197,223 @@
       "price": null,
       "vram": "純 pipeline，不需要本地 GPU",
       "license": "待確認"
+    },
+    {
+      "id": "20260516-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 推 Claude for Legal：20+ MCP connectors + 12 practice-area plugins",
+      "summary": "Anthropic 把 Claude 切成法務專業垂直版：12 個 practice plugin（M&A、IP、Litigation、Privacy、AI Governance 等），加上 20+ MCP connectors 串接 Harvey、Ironclad、Thomson Reuters、DocuSign、Solve Intelligence。每個 plugin 從 setup interview 學各家 playbook / 風險刻度 / house style。LLM 從通用走向垂直產品化的明確訊號。",
+      "tags": [
+        "paradigm-shift",
+        "vertical AI agents",
+        "mcp",
+        "claude",
+        "legal-tech"
+      ],
+      "url": "https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html",
+      "source": "LawSites",
+      "sourceUrl": "https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Dynamic Workflows：per-tenant durable execution 上線",
+      "summary": "Cloudflare 把 durable execution（Workflows）和 dynamic deployment（Dynamic Workers）綁在一起：workflow 程式碼可以 per-tenant / per-agent / per-request 在 runtime 動態切換，每個 step 都 survive failures、可 sleep 數小時 / 數天、可等外部事件再 resume。Headline use case：CI/CD 跟 agent plan execution。MIT-licensed。讓 platform 能用「同一個引擎跑幾百萬個獨立 workflow，閒置近乎零成本」。",
+      "tags": [
+        "paradigm-shift",
+        "durable execution per-tenant",
+        "cloudflare",
+        "agents",
+        "distributed-systems"
+      ],
+      "url": "https://blog.cloudflare.com/dynamic-workflows/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/cloudflare-dynamic-workflows/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DeepMind 推「Magic Pointer」：用滑鼠指就是 prompt",
+      "summary": "Google DeepMind 揭露 AI-enabled pointer 系統：游標不只看你「點哪個」，還理解你「想幹嘛」。指著螢幕上的東西+語音/文字，Gemini agent 直接代執行動作，整合 cursor awareness、voice、contextual reasoning。聊天視窗以外的另一條 agent 互動主軸——把指向變成 context+intent signal。Chrome / Googlebook 都會上。",
+      "tags": [
+        "paradigm-shift",
+        "pointing-as-prompt",
+        "gemini",
+        "multimodal",
+        "agent"
+      ],
+      "url": "https://9to5google.com/2026/05/12/deepmind-googlebook-magic-pointer/",
+      "source": "9to5Google",
+      "sourceUrl": "https://9to5google.com/2026/05/12/deepmind-googlebook-magic-pointer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic engineering：Enabling Claude Code to work more autonomously",
+      "summary": "Anthropic 工程 blog 整理 Claude Code 朝「自主作業」轉型的設計：subagents 分工、hooks 自動觸發、background tasks 不阻塞主進程、checkpoints 容錯。Developer 定義目標+審核結果，不再 step-by-step 引導。配合 agent view + /goal 指令使用。Coding agent 從「對話夥伴」變「長時間自走任務工人」的設計典範。",
+      "tags": [
+        "paradigm-shift",
+        "claude-code",
+        "autonomous-agent",
+        "ai-coding"
+      ],
+      "url": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Code with Claude SF 2026 大會重點：Dreaming + Outcomes + Multi-agent orchestration",
+      "summary": "Anthropic SF 大會推出三個 Managed Agents 新特性：(1) Multi-agent orchestration——成隊 agent 解複雜任務；(2) Outcomes——只設成功條件，Claude 自己 iterate 到達成；(3) Dreaming——agent 會回顧之前 session 找出漏掉的事自我改進。另外宣告 Code Review 已是 Anthropic 內部全公司使用，並推「advisor strategy」（小模型遇難題叫 Opus 當顧問），同效更便宜。",
+      "tags": [
+        "paradigm-shift",
+        "dreaming",
+        "outcomes",
+        "multi-agent",
+        "managed-agents"
+      ],
+      "url": "https://blakecrosley.com/blog/code-with-claude-sf-2026-recap",
+      "source": "Blake Crosley",
+      "sourceUrl": "https://blakecrosley.com/blog/code-with-claude-sf-2026-recap",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code 2.x 加入 Agent View + /goal 自走指令",
+      "summary": "Anthropic 5/7 上線 Claude Code agent view（Research Preview）——一張列表看所有跑中 / 阻塞 / 完成的 session，加上 /goal 指令：設定完成條件，Claude 自動跨多輪繼續直到達成，在 interactive、-p、Remote Control 模式都通。從「每輪都要你按 Enter」變「自己往目標跑」。",
+      "tags": [
+        "claude-code",
+        "autonomous",
+        "ai-agent",
+        "developer-tools"
+      ],
+      "url": "https://explainx.ai/blog/anthropic-claude-code-agent-view-goal-command",
+      "source": "ExplainX",
+      "sourceUrl": "https://explainx.ai/blog/anthropic-claude-code-agent-view-goal-command",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "InfoQ：Cursor 3 改 Agent-First 介面，IDE 模型開始鬆動",
+      "summary": "Cursor 3 把 IDE 改成 agent-first：主視窗預設是 agent task 列表+對話，而不是檔案樹+程式碼。Editor 還在但變次要 UI。配合 Cursor SDK 把 coding agent 變成可部署的 infrastructure（CI / 自動化）。IDE 的 50 年典範第一次出現替代結構——「人類專注閱讀+審核，agent 專注寫」。",
+      "tags": [
+        "paradigm-shift",
+        "agent-first",
+        "cursor",
+        "ide",
+        "ai-coding"
+      ],
+      "url": "https://www.infoq.com/news/2026/04/cursor-3-agent-first-interface/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/04/cursor-3-agent-first-interface/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft Agent Framework — Building Blocks Part 3",
+      "summary": ".NET DevBlogs 第三篇 Agent Framework 系列：拆解 Workflows、Memory、Tools 三個 building block 的設計，示範怎麼組合 multi-agent system。Microsoft Agent Framework 1.0 已正式釋出，整合 Semantic Kernel + AutoGen 的後繼方案，瞄準企業級 .NET agent stack。",
+      "tags": [
+        "agent-framework",
+        "microsoft",
+        "dotnet",
+        "multi-agent"
+      ],
+      "url": "https://devblogs.microsoft.com/dotnet/microsoft-agent-framework-building-blocks-for-ai-part-3/",
+      "source": "Microsoft .NET DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/dotnet/microsoft-agent-framework-building-blocks-for-ai-part-3/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-009",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Every.to《The Culture of AI Engineering》：人 + agent 怎麼對齊同一個願景",
+      "summary": "Noah Brier（AI 顧問公司 Alephic）寫的 framework，講怎麼讓人類 engineer 和 coding agent 對齊在同一個 vision 上工作。把 Claude Code 當「第二大腦」用的實戰心得：culture > tool，文件+norm+review 流程的重要性遠超模型選擇。發 5/8、5/15 更新。",
+      "tags": [
+        "agentic-engineering",
+        "culture",
+        "mental-model",
+        "ai-coding"
+      ],
+      "url": "https://every.to/thesis/the-culture-of-ai-engineering",
+      "source": "Every",
+      "sourceUrl": "https://every.to/thesis/the-culture-of-ai-engineering",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260516-sw-010",
+      "radar": "software-dev",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Google Developers：Production-Ready AI Agents 的 5 個 monolith 重構教訓",
+      "summary": "Google Developers Blog 整理把 AI agent monolith 拆成 production-ready 架構的 5 個教訓：模組化 prompt、可觀測性、結構化錯誤處理、版本化 tool schema、評估流程內建。實戰向，從工程角度看 agent 真上線會踩什麼。",
+      "tags": [
+        "ai-agent",
+        "architecture",
+        "production",
+        "monolith-refactor"
+      ],
+      "url": "https://developers.googleblog.com/production-ready-ai-agents-5-lessons-from-refactoring-a-monolith/",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/production-ready-ai-agents-5-lessons-from-refactoring-a-monolith/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-15T21:16:30.000Z",
-  "updatedAt": "2026-05-15T21:16:30.000Z"
+  "lastUpdated": "2026-05-15T21:25:37.776294+00:00",
+  "updatedAt": "2026-05-15T21:25:37.776294+00:00"
 }
