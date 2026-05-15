@@ -37030,8 +37030,175 @@
       "license": "Apache-2.0",
       "source": "GitHub API",
       "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-01"
+    },
+    {
+      "id": "20260516-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "YingMusic-SVC (arXiv 2512.04793)",
+      "summary": "Real-World Robust Zero-Shot SVC。整合連續預訓練 + 監督微調 + Flow-GRPO RL 三段式。導入 singing-trained RVC timbre shifter 做 timbre/content disentangle、F0-aware timbre adaptor、energy-balanced rectified flow matching loss 提升高頻保真。專門對 real-world 雜訊環境 robust。",
+      "tags": [
+        "svc_voice"
+      ],
+      "url": "https://arxiv.org/abs/2512.04793",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2512.04793",
+      "price": null,
+      "vram": "research scale，~小型 SVC",
+      "license": "research paper"
+    },
+    {
+      "id": "20260516-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Poly-SVC (arXiv 2605.12310)",
+      "summary": "2026-05 新作。針對 vocal/伴奏分離後殘留和聲造成 pitch prediction 失準的問題，提出 polyphonic-aware pitch extractor (用 CQT 特徵) + random sampler + Conditional Flow Matching diffusion decoder。Zero-shot SVC 對「殘留伴奏」更 robust。",
+      "tags": [
+        "svc_voice"
+      ],
+      "url": "https://arxiv.org/abs/2605.12310",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2605.12310",
+      "price": null,
+      "vram": "research scale",
+      "license": "research paper"
+    },
+    {
+      "id": "20260516-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Monkiia/HaloVoice",
+      "summary": "Real-time voice translation，<200ms latency，30+ 語言、含 voice cloning（30 秒 sample）。內建 Halo Voice Virtual Audio Driver 直接路由到 OBS/Discord/Zoom/Teams/80+ apps 當成真的麥克風 — 對遊戲實況、直播、跨國會議的場景很適用。",
+      "tags": [
+        "svc_voice",
+        "tts_speech"
+      ],
+      "url": "https://github.com/Monkiia/HaloVoice",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "real-time，輕量",
+      "license": "待確認"
+    },
+    {
+      "id": "20260516-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "vllm-project/llm-compressor",
+      "summary": "vLLM 官方出品的 LLM 壓縮工具，把大模型壓成適合 vLLM 部署的格式（GPTQ、AWQ、FP8、W8A8 等量化方案）。配合 vLLM v0.17 的 FlashAttention 4 + Pipeline Parallel 用，可以把 7B-13B 模型在 5070 Ti 16GB 上跑高吞吐。",
+      "tags": [
+        "llm_inference",
+        "llm_training"
+      ],
+      "url": "https://github.com/vllm-project/llm-compressor",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "壓縮工具本身，產物決定 VRAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260516-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "vLLM v0.17.0",
+      "summary": "2026-03 釋出，升級到 PyTorch 2.10、加入 FlashAttention 4、Model Runner V2 成熟（pipeline parallel + decode context parallel）、加 Anthropic API 相容（同樣 SDK 可以 swap）。對自架 LLM 服務的吞吐與兼容性都是大躍進。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.17.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.17.0",
+      "price": null,
+      "vram": "推理引擎本身，模型決定 VRAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260516-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tiiny-AI/PowerInfer",
+      "summary": "High-speed Large Language Model Serving for Local Deployment，主打單卡消費級 GPU 跑 LLM 高吞吐。利用 hot/cold neuron 預測把熱層放 GPU、冷層放 CPU，13B-70B 模型在單張 16-24GB 卡上仍可 interactive。5/11 剛更新。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/Tiiny-AI/PowerInfer",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/llm-inference",
+      "price": null,
+      "vram": "16GB 可跑 13B+",
+      "license": "MIT"
+    },
+    {
+      "id": "20260516-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "alexpinel/Dot",
+      "summary": "Standalone 桌面 app，用 local LLM 跑 RAG 對你的文件做問答。無需 cloud，open file → ask question。對企業內部知識管理、敏感文件不能上雲的場景現成可用。",
+      "tags": [
+        "rag_knowledge",
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/alexpinel/Dot",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依後端 LLM 而定，預設 7B 級",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260516-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "agentica-project/rllm",
+      "summary": "Build custom AI agents with reinforcement learning。框架專注「用 RL 訓練 agent 學會工具使用 + 多步決策」，不是只做 prompt engineering。對自動化 workflow agent 想往「自己學會做事」方向走的，這是 starting kit。",
+      "tags": [
+        "ai_devtools",
+        "llm_training"
+      ],
+      "url": "https://github.com/agentica-project/rllm",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "訓練視模型大小，inference local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260516-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "joeseesun/qiaomu-anything-to-notebooklm",
+      "summary": "一個 Claude Skill，把多來源內容（微信、網頁、YouTube、PDF）直接轉成 NotebookLM 能用的格式，再生成 podcast/PPT。是「內容彙整 + AI 二次加工」的範例工作流，思路可借鏡來做 SoundByte 的 podcast 化。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "純 pipeline，不需要本地 GPU",
+      "license": "待確認"
     }
   ],
-  "lastUpdated": "2026-05-14T21:28:32.875090+00:00",
-  "updatedAt": "2026-05-14T09:39:40.585116+08:00"
+  "lastUpdated": "2026-05-15T21:16:30.000Z",
+  "updatedAt": "2026-05-15T21:16:30.000Z"
 }
