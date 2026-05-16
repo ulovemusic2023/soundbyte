@@ -37870,6 +37870,127 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260517-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-17",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Ben Thompson: 「Deployment Company」可能成為 AI 公司新分裂模式",
+      "summary": "OpenAI 切出獨立的「deployment company」做商業部署，研究和產品落地分家。Ben Thompson 類比 1970s Apple/Intel：模型像晶片，部署像整機商。其他 lab 可能跟進——對 founder 的轉移是：你做模型壁壘，還是做落地壁壘？兩者商業模式與肌肉都不同，硬塞在一家會兩邊都做不好。",
+      "tags": [
+        "ai-strategy",
+        "company-structure",
+        "stratechery"
+      ],
+      "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-17",
+      "cycle": "sunday",
+      "priority": "playbook",
+      "title": "Anthropic Code w/ Claude 2026：Dreaming + Outcomes + Multi-agent — agent 自我改進的三層 primitive",
+      "summary": "Anthropic 把 managed agents 拆成三個 primitive：Dreaming（session 之間自動 review，把錯誤與偏好寫進 memory，不動權重）、Outcomes（rubric + 獨立 grader agent，agent 重做直到過關）、Multi-agent orchestration（lead agent 指派 sub-agent，共享 filesystem）。Dario 說這條路通往「一人 + agent 團隊就能做出十億美元公司」。",
+      "tags": [
+        "agents",
+        "anthropic",
+        "self-improvement",
+        "architecture"
+      ],
+      "url": "https://claude.com/blog/code-w-claude-sf-2026-sf",
+      "source": "Anthropic Blog",
+      "sourceUrl": "https://claude.com/blog/code-w-claude-sf-2026-sf",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-17",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "HBR：不要把 AI 當「隊友」——會把責任線弄糊",
+      "summary": "Gretchen Gavett 警告：把 AI 擬人化成 teammate 會稀釋人類 accountability，鼓勵過度委派、出問題時沒人擔。建議：AI 是強大工具與系統，要明確定義它的角色與邊界，最後對結果負責的永遠是人。",
+      "tags": [
+        "ai-management",
+        "accountability",
+        "leadership"
+      ],
+      "url": "https://hbr.org/2026/05/should-you-treat-ai-like-a-teammate",
+      "source": "Gretchen Gavett • Harvard Business Review",
+      "sourceUrl": "https://hbr.org/2026/05/should-you-treat-ai-like-a-teammate",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-17",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "HBR：AI 進入會議的時代，但不是給了 ChatGPT 帳號就會自己長出來",
+      "summary": "Capgemini 調查 500 位 exec：團隊會議中 AI 使用率 3 年會超過 3 倍。但研究發現 AI 自然丟進會議反而會收窄發言、切碎討論、抽走 ownership。建議：把一場會明確設計成「AI-enabled 實驗」，定角色與 process，會後 debrief。AI 在會議中是新會議格式，不是新增功能。",
+      "tags": [
+        "meetings",
+        "team-ai",
+        "operational-design"
+      ],
+      "url": "https://hbr.org/2026/05/its-hard-to-use-ai-as-a-team-these-3-practices-can-help",
+      "source": "Harvard Business Review",
+      "sourceUrl": "https://hbr.org/2026/05/its-hard-to-use-ai-as-a-team-these-3-practices-can-help",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-17",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "HBR Podcast：AI 時代的「效率」要重新定義——別再線性堆任務",
+      "summary": "神經科學家 Mithu Storoni 說：知識工作越來越靠 AI 工具產出無形產品，舊的 assembly-line 效率（時間 × 速度）失效。你要像 manager 一樣管理自己的認知狀態——什麼時段做 deep work、什麼時段交給 AI 加速。leader 的新工作是幫團隊設計 cognitive workflow，不是壓速度。",
+      "tags": [
+        "productivity",
+        "cognitive-states",
+        "leadership"
+      ],
+      "url": "https://hbr.org/podcast/2026/05/redefining-what-efficiency-means-in-the-age-of-ai",
+      "source": "Mithu Storoni • HBR On Leadership Podcast",
+      "sourceUrl": "https://hbr.org/podcast/2026/05/redefining-what-efficiency-means-in-the-age-of-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-17",
+      "cycle": "sunday",
+      "priority": "quotable",
+      "title": "Jensen Huang 給 CMU 畢業生：AI 不會取代你，但會用 AI 的人會",
+      "summary": "Nvidia CEO 5/10 在 Carnegie Mellon 畢業典禮的演講。最重要的一句金句適合直接拿來貼 Threads——AI 不是替你的 boss，是把同事的生產力推到你跟不上。",
+      "tags": [
+        "jensen-huang",
+        "ai-career",
+        "commencement"
+      ],
+      "url": "https://observer.com/2026/05/nvidia-ceo-jensen-huang-ai-advice-college-graduates/",
+      "source": "Observer / Jensen Huang CMU Keynote",
+      "sourceUrl": "https://observer.com/2026/05/nvidia-ceo-jensen-huang-ai-advice-college-graduates/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-17T05:10:00+08:00",
