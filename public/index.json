@@ -37991,6 +37991,216 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260517-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "DenisSergeevitch/agents-best-practices",
+      "summary": "Provider-neutral Agent Skill，把 Codex / Claude Code / agentic harness 的設計實踐統一成一份可重用的 skill。剛上線兩天就破 500 星，主打 cross-tool portability。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "codex",
+        "best-practices"
+      ],
+      "url": "https://github.com/DenisSergeevitch/agents-best-practices",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-03+stars%3A%3E20+topic%3Aclaude-code&type=repositories",
+      "stars": 564,
+      "createdDate": "2026-05-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "ComposioHQ/trustclaw",
+      "summary": "Composio 出品的 self-hostable personal AI agent，內建 vector memory、Composio tools 和 Telegram 介面。等於把 \"私人 Luv-bot\" 的 stack 一次給你 — Gary 在做的 agent 團隊架構參考。",
+      "tags": [
+        "personal-ai",
+        "self-hosted",
+        "memory",
+        "telegram",
+        "composio"
+      ],
+      "url": "https://github.com/ComposioHQ/trustclaw",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-03+stars%3A%3E50&type=repositories",
+      "stars": 658,
+      "createdDate": "2026-05-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "usewhale/DeepSeek-Code-Whale",
+      "summary": "專為 DeepSeek 模型優化的終端 AI coding 助手，原生支援 MCP、Skills、快取優化。同團隊也維護 usewhale/whale（May 13 已收錄），這是 DeepSeek-only 變體。",
+      "tags": [
+        "coding-agent",
+        "deepseek",
+        "mcp",
+        "skills",
+        "cli"
+      ],
+      "url": "https://github.com/usewhale/DeepSeek-Code-Whale",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-03+stars%3A%3E20+topic%3Acoding-agent&type=repositories",
+      "stars": 135,
+      "createdDate": "2026-05-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "mdowis/anansi",
+      "summary": "Self-healing web scraper：selectors 壞了會自己修、需要 JS 渲染才會啟動瀏覽器、Chrome TLS fingerprinting 繞過反爬蟲。內建 MCP server，任何 LLM 都能用對話跑完整 crawl。",
+      "tags": [
+        "scraping",
+        "mcp",
+        "self-healing",
+        "bot-detection"
+      ],
+      "url": "https://github.com/mdowis/anansi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-03+stars%3A%3E20+topic%3Aai-agent&type=repositories",
+      "stars": 49,
+      "createdDate": "2026-05-14",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260517-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "finewood2008/centaur-loop",
+      "summary": "半人馬環：面向 AI agent 的 feedback 閉環、human governance、記憶複盤工作台。中文社群作品，定位剛好補上 \"人在迴圈裡治理 agent\" 這塊。",
+      "tags": [
+        "agent-feedback",
+        "human-in-loop",
+        "memory-review"
+      ],
+      "url": "https://github.com/finewood2008/centaur-loop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-03+stars%3A%3E20+topic%3Aai-agent&type=repositories",
+      "stars": 50,
+      "createdDate": "2026-05-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "millionco/react-doctor",
+      "summary": "\"Your agent writes bad React. This catches it\" — 專門檢查 AI 生成的 React code，本週狂衝近 1 萬星。Cursor / Claude Code 寫前端的痛點被精準命中。",
+      "tags": [
+        "react",
+        "code-review",
+        "ai-coding",
+        "linter"
+      ],
+      "url": "https://github.com/millionco/react-doctor",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 9763,
+      "createdDate": "2026-02-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "danielmiessler/Personal_AI_Infrastructure",
+      "summary": "Daniel Miessler 的個人 AI 基礎設施，主張 \"Agentic AI Infrastructure for magnifying HUMAN capabilities\"。Gary 在做的 agent 團隊 + 私人助理架構同路人。",
+      "tags": [
+        "personal-ai",
+        "agentic",
+        "infrastructure"
+      ],
+      "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 13896,
+      "createdDate": "2025-09-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "Imbad0202/academic-research-skills",
+      "summary": "為 Claude Code 設計的學術研究 workflow：research → write → review → revise → finalize 五階段 skills。寫長文／做嚴肅研究時可直接套，不用每次重發 prompt。",
+      "tags": [
+        "claude-code",
+        "research",
+        "skills",
+        "writing"
+      ],
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 8055,
+      "createdDate": "2026-02-26",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260517-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "thesysdev/openui",
+      "summary": "\"The Open Standard for Generative UI\" — 想把 LLM 動態生成 UI 標準化的開源規範與 runtime。如果你信 chat-as-UI 之後會走到 generative-UI，這是其中一條主賽道。",
+      "tags": [
+        "generative-ui",
+        "standard",
+        "llm-ui"
+      ],
+      "url": "https://github.com/thesysdev/openui",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 5782,
+      "createdDate": "2024-12-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-17",
+      "cycle": "sun",
+      "priority": "product-hunt",
+      "title": "Comie.dev",
+      "summary": "Production context layer：把 Postgres / Redis / Sentry / PostHog 接給 Claude Code / Cursor / Codex，讓 AI agent debug 時看得到 production logs、queries、errors。設定 < 60 秒。",
+      "tags": [
+        "production-context",
+        "observability",
+        "claude-code",
+        "cursor"
+      ],
+      "url": "https://www.producthunt.com/products/comie-dev",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/products/comie-dev",
+      "stars": null,
+      "createdDate": "2026-05-17",
+      "license": null,
+      "upvotes": 74
     }
   ],
   "lastUpdated": "2026-05-17T05:10:00+08:00",
