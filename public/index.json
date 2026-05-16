@@ -37616,8 +37616,155 @@
       "stars": 71,
       "createdDate": "2026-05-13",
       "license": "MIT"
+    },
+    {
+      "id": "20260517-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "antirez/llama.cpp-deepseek-v4-flash",
+      "summary": "Salvatore Sanfilippo (antirez) 釋出 llama.cpp 實驗 fork，把 DeepSeek v4 Flash 用 2-bit quantization 壓進 routed experts，目標 128GB RAM 的 MacBook。CPU/Metal backend 都跑得動，GGUF 上 HF 可直接下載；作者註明「chat 表現很好但未廣泛測試」。前沿大模型在本地端能跑的路徑示範。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/antirez/llama.cpp-deepseek-v4-flash",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/antirez/llama.cpp-deepseek-v4-flash",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FireRedTeam/FireRedASR2-LLM",
+      "summary": "小米 FireRed 團隊 2026/3 釋出的 8B 參數 ASR 模型，Encoder-Adapter-LLM 架構，國語 + 多種中文方言 + 英文，Mandarin benchmark CER 2.89% SOTA，最長吃 40 秒 16kHz 音訊。Apache 2.0、RTF ~0.068，量化後 16GB VRAM 可跑。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://huggingface.co/FireRedTeam/FireRedASR2-LLM",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/FireRedTeam/FireRedASR2-LLM",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260517-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "zeropointnine/tts-audiobook-tool",
+      "summary": "把 11+ 個 TTS 模型（Qwen3-TTS, Fish Speech, VibeVoice, Higgs Audio, OmniVoice…）統一包成有聲書產生工具：voice cloning、STT 回驗 + retry、loudness normalize、48kHz upsampling、瀏覽器同步閱讀器（word-level timing）、可選 REST server。2025-2026 新增 EPUB 支援與 streaming output。多 TTS 在本地端 orchestrate 的範本。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/zeropointnine/tts-audiobook-tool",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/zeropointnine/tts-audiobook-tool",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "dograh-hq/dograh",
+      "summary": "開源、可自架的 voice agent 平台，定位是 Vapi / Retell 的替代品。Twilio / Vonage / Telnyx 電話整合、real-time voice 處理、drag-and-drop workflow builder、QA nodes、轉接真人；TTS/STT/LLM 都可換。BSD-2-Clause，v1.30.0 於 2026/5 推出，跑在 Pipecat 之上。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://github.com/dograh-hq/dograh",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/dograh-hq/dograh",
+      "price": null,
+      "vram": "local-ready",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "id": "20260517-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "huridocs/pdf-document-layout-analysis",
+      "summary": "Docker 化的 PDF 版面分析微服務：用 Vision Grid Transformer（VGT，~1.75s/page GPU）做高精度，或 LightGBM ensemble（~0.42s/page CPU）做快速版，能分文字 / 標題 / 圖 / 表 / 公式並判定閱讀順序，含 Gradio UI、REST API、150+ 語言 OCR、可透過 Ollama 翻譯。Apache-2.0，v0.0.35 於 2026/5/6 釋出。",
+      "tags": [
+        "cv_ocr",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/huridocs/pdf-document-layout-analysis",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/huridocs/pdf-document-layout-analysis",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260517-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HuangYuChuh/ComfyUI_Skills_OpenClaw",
+      "summary": "把 ComfyUI workflow 變成 agent skill 的橋接器：CLI-first interface（給 OpenClaw / Hermes / Codex / Claude Code 調用），schema-based 參數 mapping 只暴露需要的欄位，可管多台 ComfyUI server（本地 + 遠端），含 dep check 與可選 web UI 做設定。MIT、Python 為主。圖像 pipeline 接 agent 的乾淨做法。",
+      "tags": [
+        "image_gen",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/HuangYuChuh/ComfyUI_Skills_OpenClaw",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/HuangYuChuh/ComfyUI_Skills_OpenClaw",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "anthropics/skills",
+      "summary": "Anthropic 官方 agent skill repo，今天 GitHub trending +923 stars（累計 135k）。當 Claude Code / Codex 的 skill ecosystem 開始有「官方藏經閣」，第三方 skill registry（mattpocock/skills, K-Dense-AI, obra/superpowers）的定位會被重新洗牌。值得追蹤 spec 變動。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/anthropics/skills",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/anthropics/skills",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260517-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "HKUDS/CLI-Anything",
+      "summary": "港大 Data Intelligence Lab 釋出，主打「Making ALL Software Agent-Native」，把任意 CLI 包成 agent 可直接用的介面。今日 trending +371（35k stars）。配合 LightRAG、ViMax 一路下來，HKUDS 已經建出一整套 agent infra portfolio，值得整體追蹤。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/HKUDS/CLI-Anything",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-05-16T05:30:00+08:00",
-  "updatedAt": "2026-05-16T05:30:00+08:00"
+  "lastUpdated": "2026-05-17T05:10:00+08:00",
+  "updatedAt": "2026-05-17T05:10:00+08:00"
 }
