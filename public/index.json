@@ -37763,6 +37763,113 @@
       "price": null,
       "vram": "local-ready",
       "license": "MIT"
+    },
+    {
+      "id": "20260517-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain ships Deep Agents v0.6 with harness profiles + delta channels",
+      "summary": "DeepAgents v0.6 focuses on production performance: harness profiles run agents on open-weight models (Kimi/Qwen/DeepSeek) at 20x+ lower cost than closed frontier APIs; delta channels reduce long-running agent checkpoint storage 100x; unified streaming event stream + LangSmith Context Hub for versioned context.",
+      "tags": [
+        "ai_agent",
+        "paradigm-shift",
+        "deep-agents",
+        "open-weight",
+        "harness-profiles"
+      ],
+      "url": "https://www.langchain.com/blog/deep-agents-0-6",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/deep-agents-0-6",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor: Development environments for cloud agents",
+      "summary": "Cursor makes cloud-agent dev environments first-class, versioned, audited config objects: multi-repo, Dockerfile + build secrets, per-env egress/secret scoping, admin-only rollback, base-image fallback. Agent runtime as governed config — closing the enterprise governance gap.",
+      "tags": [
+        "ai_agent",
+        "paradigm-shift",
+        "cloud-agent",
+        "dev-environment",
+        "governance"
+      ],
+      "url": "https://cursor.com/blog/cloud-agent-development-environments",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/cloud-agent-development-environments",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netflix builds Model Lifecycle Graph to democratize ML",
+      "summary": "Netflix uses its Metadata Service to build a real-time graph indexing all ML entities (models, features, pipelines, experiments, datasets) — enables lineage queries, impact analysis, A/B usage discovery, and deprecation planning at org scale.",
+      "tags": [
+        "architecture",
+        "ml-platform",
+        "data-lineage",
+        "graph",
+        "mlops"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/netflix-ml-graph/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/netflix-ml-graph/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor 5/13 changelog: Teams + Bugbot effort + dev envs",
+      "summary": "Cursor in Microsoft Teams (@Cursor in channels to delegate to cloud agent); Bugbot PR review gains Default / Optimized / High effort levels admins can tune.",
+      "tags": [
+        "ai_agent",
+        "developer-experience",
+        "code-review"
+      ],
+      "url": "https://cursor.com/changelog/05-13-26",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog/05-13-26",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260517-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer: Forward Deployed Engineering heats up again",
+      "summary": "FDE roles surging at Google/OpenAI/Anthropic. Engineers embed into customer ops to translate model capability into landed outcomes — AI labs realizing capability != outcome.",
+      "tags": [
+        "engineering-management",
+        "fde",
+        "ai-companies",
+        "career"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-forward-deployed-engineering",
+      "source": "Pragmatic Engineer Newsletter",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-forward-deployed-engineering",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-17T05:10:00+08:00",
