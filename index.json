@@ -38592,8 +38592,231 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260518-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "vercel-labs/zero",
+      "summary": "Vercel Labs 推出『agent 專用程式語言』 — 不是又一個 SDK 而是新語言設計，第一週飆 1.5k stars。值得追蹤 Vercel 對 agent paradigm 的下注。",
+      "tags": [
+        "ai-agent",
+        "programming-language",
+        "vercel"
+      ],
+      "url": "https://github.com/vercel-labs/zero",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-03+stars:>50&sort=stars",
+      "stars": 1594,
+      "createdDate": "2026-05-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260518-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "BerriAI/litellm-agent-platform",
+      "summary": "LiteLLM 團隊出自架的 coding agent 平台 — Claude Code、Codex、Hermes 跑在 isolated sandboxes，搭 vault proxy 管 secret。team 場景值得參考。",
+      "tags": [
+        "coding-agent",
+        "sandbox",
+        "claude-code"
+      ],
+      "url": "https://github.com/BerriAI/litellm-agent-platform",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-03+stars:>50&sort=stars",
+      "stars": 268,
+      "createdDate": "2026-05-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260518-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "mikesheehan54/Claude-Code-Design-AI",
+      "summary": "Claude Code 上的 UI/UX 設計師 skill — 截圖轉 React、Figma component、Tailwind generator、shadcn 整合。前端 prototyping 加速器。",
+      "tags": [
+        "claude-code",
+        "design",
+        "ui"
+      ],
+      "url": "https://github.com/mikesheehan54/Claude-Code-Design-AI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-03+topic:claude-code",
+      "stars": 387,
+      "createdDate": "2026-05-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260518-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "github/spec-kit",
+      "summary": "GitHub 出的 Spec-Driven Development toolkit，10 萬 stars 級。AI coding 從 vibe 轉向 spec-first 的代表作 — 寫規格再讓 agent 寫 code。",
+      "tags": [
+        "workflow",
+        "spec-driven",
+        "ai-coding"
+      ],
+      "url": "https://github.com/github/spec-kit",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 101471,
+      "createdDate": "2025-08-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260518-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "product-hunt",
+      "title": "OpenHuman",
+      "summary": "Local-first AI agent 帶 persistent memory，宣稱『個人 super intelligence』。和 Luv 路線類似，可拿來比較記憶層架構。本週 PH 榜首 547 upvotes。",
+      "tags": [
+        "ai-agent",
+        "local-llm",
+        "memory"
+      ],
+      "url": "https://tinyhumans.ai/openhuman",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/20",
+      "createdDate": "2026-05-11",
+      "extra": {
+        "upvotes": 547
+      }
+    },
+    {
+      "id": "20260518-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "product-hunt",
+      "title": "HasData",
+      "summary": "AI agent 專用的 web scraping service — 為 Radar 之類的爬蟲任務省事。Radar 自架 vs 接 API 的取捨點。",
+      "tags": [
+        "scraping",
+        "ai-agent",
+        "api"
+      ],
+      "url": "https://hasdata.com",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/20",
+      "createdDate": "2026-05-11",
+      "extra": {
+        "upvotes": 426
+      }
+    },
+    {
+      "id": "20260518-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "product-hunt",
+      "title": "Graphbit PRFlow",
+      "summary": "High-performance AI agent framework（Rust/Python）。Graph-based 流程編排，效能掛帥。多 agent 編排另一個選項。",
+      "tags": [
+        "agent-framework",
+        "rust",
+        "python"
+      ],
+      "url": "https://graphbit.ai",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/20",
+      "createdDate": "2026-05-11",
+      "extra": {
+        "upvotes": 384
+      }
+    },
+    {
+      "id": "20260518-ts-016",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "pnegahdar/nano",
+      "summary": "一個檔案，不到 200 行，零依賴的 coding agent。教學 / 拆解 vibe coding 內部運作的好教材，看完馬上懂 agent loop 怎麼跑。",
+      "tags": [
+        "coding-agent",
+        "minimal",
+        "education"
+      ],
+      "url": "https://github.com/pnegahdar/nano",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-03+topic:coding-agent",
+      "stars": 75,
+      "createdDate": "2026-05-04",
+      "license": "none"
+    },
+    {
+      "id": "20260518-ts-017",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "LichAmnesia/openseek",
+      "summary": "廣度求索 — 開源 TUI coding agent，多 provider routing、MCP、LSP，三模式 Plan / Agent / YOLO。DeepSeek 圈最新玩法。",
+      "tags": [
+        "coding-agent",
+        "tui",
+        "mcp"
+      ],
+      "url": "https://github.com/LichAmnesia/openseek",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-03+topic:coding-agent",
+      "stars": 68,
+      "createdDate": "2026-05-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260518-ts-018",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "HelixDB/helix-db",
+      "summary": "Rust 從零寫的 open-source graph-vector database，本週 trending Rust top 10。AI agent memory 層的另一個選項，比通用 vector DB 多了 graph 關係。",
+      "tags": [
+        "database",
+        "rust",
+        "vector-graph"
+      ],
+      "url": "https://github.com/HelixDB/helix-db",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 4530,
+      "createdDate": "2024-11-23",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260518-ts-019",
+      "radar": "tool-scout",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "MuhammadUsmanGM/code-stick",
+      "summary": "插上 USB、任何筆電（Win/Mac/Linux）就有離線 AI coding agent — opencode + Ollama 預先打包，宿主機零安裝。出差或機密環境救星。",
+      "tags": [
+        "offline",
+        "local-llm",
+        "coding-agent"
+      ],
+      "url": "https://github.com/MuhammadUsmanGM/code-stick",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-03+topic:local-llm",
+      "stars": 47,
+      "createdDate": "2026-05-05",
+      "license": "none"
     }
   ],
-  "lastUpdated": "2026-05-17T05:10:00+08:00",
-  "updatedAt": "2026-05-18"
+  "lastUpdated": "2026-05-18T05:40:00+08:00",
+  "updatedAt": "2026-05-18T05:40:00+08:00"
 }
