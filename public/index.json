@@ -38510,6 +38510,88 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260518-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "mental-model",
+      "title": "Naval — Sell the Truth：建造與銷售是人生兩大技能",
+      "summary": "Naval 5/11 podcast 把銷售拆成框架：Charisma = Confidence + Love、Don't Manage Lead、Selfish Honesty。在非線性報酬時代，能誠實把真相賣出去比技術本身更稀缺。",
+      "tags": [
+        "naval",
+        "selling",
+        "mental-model"
+      ],
+      "url": "https://nav.al/sell",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://nav.al/sell",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "operational",
+      "title": "Shopify 的「Reflexive AI」文化變革：從 memo 到 movement",
+      "summary": "Tobi Lütke 把「先證明 AI 做不了再請資源」變成 baseline，並納入績效考核。關鍵不是發 memo，而是把工具、學習資源、即時支援同時鋪開。",
+      "tags": [
+        "shopify",
+        "tobi-lutke",
+        "ai-adoption",
+        "culture"
+      ],
+      "url": "https://www.firstround.com/ai/shopify",
+      "source": "First Round Review",
+      "sourceUrl": "https://www.firstround.com/ai/shopify",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "operational",
+      "title": "Acquired — Vanguard：把「不賺錢」做成最強護城河",
+      "summary": "沒股東、沒利潤、由基金持有人共同擁有——讓 Vanguard 把成本壓到對手做不到的低點。moat 不一定來自更好的產品，有時來自一個別人不敢複製的結構。",
+      "tags": [
+        "acquired",
+        "vanguard",
+        "moat",
+        "business-model"
+      ],
+      "url": "https://www.acquired.fm/episodes/vanguard",
+      "source": "Acquired Podcast",
+      "sourceUrl": "https://www.acquired.fm/episodes/vanguard",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-18",
+      "cycle": "daily",
+      "priority": "quotable",
+      "title": "Sam Altman：以為想要更便宜更快，結果還是「更聰明」最重要",
+      "summary": "Altman X 貼文承認：自己以為想要便宜/快的模型，但事實證明「更聰明」仍是最重要的事。對押注 AI 的產品來說：別過早 lock 進夠用就好的便宜模型。",
+      "tags": [
+        "sam-altman",
+        "openai",
+        "model-strategy"
+      ],
+      "url": "https://x.com/sama/status/2050671161915371998",
+      "source": "Sam Altman (X)",
+      "sourceUrl": "https://x.com/sama/status/2050671161915371998",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-17T05:10:00+08:00",
