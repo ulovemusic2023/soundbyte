@@ -38201,6 +38201,142 @@
       "createdDate": "2026-05-17",
       "license": null,
       "upvotes": 74
+    },
+    {
+      "id": "20260518-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Andyyyy64/whichllm",
+      "summary": "CLI 工具：自動偵測 GPU/CPU/RAM，從 HuggingFace 排出能在這台機器上跑、且 benchmark 真的能打的 LLM。Score 合併 LiveBench、Artificial Analysis、Aider、Chatbot Arena ELO。支援 GGUF / AWQ / GPTQ / FP16，v0.5.6。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://github.com/Andyyyy64/whichllm",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/Andyyyy64/whichllm",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260518-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Light-Heart-Labs/DreamServer",
+      "summary": "本地 AI 全家桶 v2.0.0：Open WebUI + Whisper + Kokoro TTS + 自主 agents + n8n + Qdrant RAG + ComfyUI/FLUX.1 + SearXNG。Bootstrap mode 2 分鐘可聊，硬體自動偵測。Tier 2 (12–20GB) 跑 9B 模型，剛好 fit RTX 5070 Ti。",
+      "tags": [
+        "llm_inference",
+        "tts_speech",
+        "image_gen",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/Light-Heart-Labs/DreamServer",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/Light-Heart-Labs/DreamServer",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260518-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "yichuan-w/LEANN",
+      "summary": "世界最小的 vector index：graph-based selective recomputation + high-degree preserving pruning，embeddings 按需重算，比傳統 vector DB 省 91–97% 儲存（Berkeley 研究）。支援 HuggingFace / OpenAI / Ollama / Anthropic 等。",
+      "tags": [
+        "rag_knowledge",
+        "embedding"
+      ],
+      "url": "https://github.com/yichuan-w/LEANN",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/yichuan-w/LEANN",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260518-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVlabs/Sana",
+      "summary": "NVIDIA Linear Diffusion Transformer：DC-AE 32× compression + linear attention + decoder-only LLM text encoder。4-bit 後 8GB VRAM 可跑，4K 約 18–22GB。0.6B/1.6B/4.8B，影片版 SANA-Video/WM。",
+      "tags": [
+        "image_gen",
+        "video generation"
+      ],
+      "url": "https://github.com/NVlabs/Sana",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/NVlabs/Sana",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260518-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "bytedance/lynx",
+      "summary": "ByteDance 個性化影片生成（CVPR 2026）：單張人像 → 影片，DiT + ID-adapters + Ref-adapters 保 identity。基底 Wan2.1-T2V-14B，Full / Lite 兩版（Lite 24fps, 121-frame）。需 flash attention + CUDA 12.4。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "text to video"
+      ],
+      "url": "https://github.com/bytedance/lynx",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/bytedance/lynx",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260518-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Prismer-AI/PrismerCloud",
+      "summary": "AI Agent Evolution 的 harness：跨 agent 共享錯誤回復策略（Thompson Sampling）、四類 memory + LLM recall、WebSocket agent-to-agent 訊息、Ed25519 DID 身分、120+ skill endpoints。SDK: TS/Python/Go/Rust。",
+      "tags": [
+        "ai_devtools",
+        "agents"
+      ],
+      "url": "https://github.com/Prismer-AI/PrismerCloud",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://github.com/Prismer-AI/PrismerCloud",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260518-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "tech-leads-club/agent-skills",
+      "summary": "策展型 agent skill registry：每個 skill 進來都跑 Snyk Agent Scan 靜態掃描、無 binary、content hashing + lockfile。背景：開放市場 13% skills 含 critical CVE。支援 Claude Code / Cursor / Cline / Copilot / Windsurf。",
+      "tags": [
+        "ai_devtools",
+        "security"
+      ],
+      "url": "https://github.com/tech-leads-club/agent-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/tech-leads-club/agent-skills",
+      "price": null,
+      "vram": null,
+      "license": "MIT + CC-BY-4.0"
     }
   ],
   "lastUpdated": "2026-05-17T05:10:00+08:00",
