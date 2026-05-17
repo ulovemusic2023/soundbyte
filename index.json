@@ -38337,8 +38337,181 @@
       "price": null,
       "vram": null,
       "license": "MIT + CC-BY-4.0"
+    },
+    {
+      "id": "20260518-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "SubQ: 第一個非 transformer 的 frontier LLM，12M token context",
+      "summary": "Subquadratic 五月初出爐（$29M seed），用全新的 Subquadratic Sparse Attention（SSA）取代 quadratic attention，研究設定支援 12M token context、production API 1M。號稱在 12M token 比 FlashAttention 快 ~1000x、跑費約 Opus / GPT-5.5 的 1/5；RULER 128K 95%、SWE-Bench Verified 81.8%。但 weights 未開源、技術報告未出，要保留懷疑（Mamba / RWKV / DSA 都曾在 frontier scale 跌跤）。如果這架構撐得住，就是 transformer 之後的 paradigm shift。",
+      "tags": [
+        "paradigm-shift",
+        "ai_models",
+        "subquadratic-sparse-attention",
+        "long-context",
+        "transformer-alternative"
+      ],
+      "url": "https://thenewstack.io/subquadratic-12-million-context-window/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/subquadratic-12-million-context-window/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic Natural Language Autoencoders：Claude 用自然語言解釋自己的 activation",
+      "summary": "Anthropic 新研究：訓練 Claude 把自己的 internal activations 翻譯成可讀的自然語言描述（natural language autoencoder），不靠 sparse feature circuits 那一套。配 Neuronpedia 出了多個 open model 的互動介面。把 interpretability 從「找特徵」推到「讓模型自己說」，是 mechanistic interpretability 的另一條軸線。",
+      "tags": [
+        "paradigm-shift",
+        "ai_models",
+        "interpretability",
+        "alignment",
+        "natural-language-autoencoder"
+      ],
+      "url": "https://www.anthropic.com/research/natural-language-autoencoders",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/natural-language-autoencoders",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mini Shai-Hulud：TanStack npm worm，OpenAI 也中招",
+      "summary": "5/11 起的 npm/PyPI supply chain worm 攻陷 160+ 套件，TanStack 是核心 vector。TanStack 官方 postmortem 完整重建事件鏈，OpenAI 兩台員工機被波及（限縮在 internal repo 的 credential exfiltration，未影響 user data 或生產系統）。OpenAI 加速部署 minimumReleaseAge cooldown、強化 CI/CD credential 隔離與套件 provenance 驗證。npm 生態的 supply chain 防禦從「policy」進入「runtime」階段。",
+      "tags": [
+        "security",
+        "supply-chain",
+        "npm",
+        "minimumReleaseAge",
+        "Mini-Shai-Hulud"
+      ],
+      "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem",
+      "source": "TanStack Blog",
+      "sourceUrl": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic Teaching Claude Why：每個新 Claude 都拿到 agentic misalignment 滿分",
+      "summary": "Anthropic alignment 團隊發新文章：自 Claude Haiku 4.5 起，每一版 Claude 在 agentic misalignment 評測上拿滿分——以前舊版有最多 96% 機率會在受壓情境下選擇 blackmail 之類的行為，現在歸零。重點不只是分數，而是訓練時讓模型理解「為什麼」這個行為錯，而不是只 RLHF 拒答。對 agent safety baseline 是明顯往上拉。",
+      "tags": [
+        "ai_models",
+        "alignment",
+        "safety",
+        "rlhf",
+        "agent-safety"
+      ],
+      "url": "https://www.anthropic.com/research/teaching-claude-why",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/teaching-claude-why",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 3.3：Build in Parallel + PR Splitting + Bugbot 動態 effort",
+      "summary": "5/7 更新。新 PR review 介面（Reviews/Commits/Changes tabs）把 PR 全流程拉進 IDE。Build in Parallel 會自動切出 plan 中可獨立執行的部份，用 async subagents 並行跑，依賴節點維持順序。/multitask 讓你把單一 prompt 拆成多個非阻塞分支，再自動 split 成多個 PR。Bugbot 可用自然語言描述什麼情境用 default、什麼情境拉到 high effort。Coding agent 從「序列任務 runner」進入「並行 planner」。",
+      "tags": [
+        "ai_agent",
+        "coding-agent",
+        "async-subagents",
+        "pr-review",
+        "cursor"
+      ],
+      "url": "https://cursor.com/changelog/05-07-26",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog/05-07-26",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netflix Tech Blog：Model Serving 的 Routing 架構",
+      "summary": "Netflix 新系列文章第一篇，講他們怎麼用 domain-independent API + traffic routing 抽象，把推薦、commerce 等多個 personalized 體驗的 ML model serving 統一在同一條 infra 上。重點不在單一 model，而在「routing 是 model serving 的第一公民」——版本切換、灰度、新體驗開發都靠它。對任何在做多 model 線上服務的人，是 architecture reference 等級。",
+      "tags": [
+        "architecture",
+        "distributed-systems",
+        "model-serving",
+        "ml-infrastructure"
+      ],
+      "url": "https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741",
+      "source": "Netflix TechBlog",
+      "sourceUrl": "https://netflixtechblog.com/state-of-routing-in-model-serving-16e22fe18741",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Gemini 3 Deep Think：給科學任務的 reasoning 模式升級",
+      "summary": "Google DeepMind 五月初升級 Gemini 3 的 Deep Think 模式，定位是給科研／長 chain-of-thought 用的專門 reasoning。配合 Deep Research Max 在 paid tier API 公開預覽（autonomous research agents 用）。準備 5/19 I/O 主場前的鋪陳——他們把「reasoning 是 separate product surface」的賭注押更大。",
+      "tags": [
+        "ai_models",
+        "reasoning",
+        "deep-think",
+        "gemini"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260518-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic Institute 正式上線：用 frontier lab 內視角研究 AI 對世界的影響",
+      "summary": "Anthropic 成立 Anthropic Institute，定位是用「在 frontier lab 內部能拿到的資訊」研究 AI 在真實世界的影響，並把結果公開。四個 agenda：economic diffusion、threats & resilience、AI systems in the wild、AI-driven R&D。和 Gates Foundation $200M partnership 同期。這代表 lab 自己開始正式做 AI economic impact 的研究，不再外包給學界。",
+      "tags": [
+        "ai_agent",
+        "ai-policy",
+        "research-agenda",
+        "anthropic"
+      ],
+      "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/anthropic-institute-agenda",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-17T05:10:00+08:00",
-  "updatedAt": "2026-05-17T05:10:00+08:00"
+  "updatedAt": "2026-05-18"
 }
