@@ -38815,8 +38815,149 @@
       "stars": 47,
       "createdDate": "2026-05-05",
       "license": "none"
+    },
+    {
+      "id": "20260519-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Plachtaa/seed-vc",
+      "summary": "零訓練 zero-shot voice conversion + singing voice conversion，1-30 秒 reference audio 就能 clone。4 個 model variants（25M–200M params），最小 model 在 RTX 3060 上 real-time latency ~430ms。直接對標 RVC / so-vits-svc 的免訓練流派。",
+      "tags": [
+        "svc_voice",
+        "voice conversion",
+        "singing voice conversion",
+        "zero-shot voice"
+      ],
+      "url": "https://github.com/Plachtaa/seed-vc",
+      "source": "GitHub Topics (voice-conversion)",
+      "sourceUrl": "https://github.com/topics/voice-conversion",
+      "price": null,
+      "vram": "~4-6GB（local-ready）",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260519-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OHF-Voice/piper1-gpl",
+      "summary": "rhasspy/piper 已 archive（2025/10），新 fork 由 Open Home Foundation 接手維護，2026/4/2 推出 v1.4.2。embed espeak-ng 做 phonemization，提供 CLI / web server / Python+C/C++/HTTP APIs，已被 Home Assistant 和 NVDA 採用。",
+      "tags": [
+        "tts_speech",
+        "piper",
+        "neural tts",
+        "text-to-speech"
+      ],
+      "url": "https://github.com/OHF-Voice/piper1-gpl",
+      "source": "GitHub Topics (text-to-speech)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "CPU-friendly（local-ready）",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260519-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "alphacep/vosk-api",
+      "summary": "Apache-2.0 的 offline speech recognition toolkit，支援 20+ 語言（含 zh / ja / ko / vi），每個 language model 只有 ~50MB，能跑在 Raspberry Pi / Android / iOS。streaming API，多語言 bindings（Python/Java/Node/C#/C++/Rust/Go）。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "speech recognition",
+        "speech to text"
+      ],
+      "url": "https://github.com/alphacep/vosk-api",
+      "source": "MAGI Archive (tom-doerr)",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "CPU-only（local-ready）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260519-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SakiRinn/LiveCaptions-Translator",
+      "summary": "C# 寫的 Windows 11 即時翻譯工具，借 Windows LiveCaptions 當 ASR，再接 LLM 做翻譯。支援 self-hosted Ollama / MTranServer（local），也能用 OpenAI / Google Translate。需要 Win11 22H2+ / .NET 8.0+。",
+      "tags": [
+        "tts_speech",
+        "speech recognition",
+        "translation"
+      ],
+      "url": "https://github.com/SakiRinn/LiveCaptions-Translator",
+      "source": "MAGI Archive (tom-doerr)",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依賴外部 LLM endpoint（local-ready）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260519-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "jbilcke-hf/clapper",
+      "summary": "HuggingFace 工程師做的 open-source AI 電影合成器，把 video 編輯抽象成 characters / locations / style 的故事 iteration，prompt-driven scene 拼接而不是直接編 video file。alpha 階段，TypeScript 99%，類似 ComfyUI / Blender 的 GPL-3.0 模式。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/jbilcke-hf/clapper",
+      "source": "MAGI Archive (tom-doerr)",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "前端工具（cloud-only）",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260519-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "learning-at-home/hivemind",
+      "summary": "把 large model training 分散到全世界 volunteer GPU 上跑，靠 DHT 同步 parameter shards，用 8-bit / fp16 + decentralized async optimizer。Pretrain Petals / BLOOM 那類群眾共訓的底層 library。",
+      "tags": [
+        "llm_training",
+        "distributed training"
+      ],
+      "url": "https://github.com/learning-at-home/hivemind",
+      "source": "MAGI Archive (tom-doerr)",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "看 shard 大小（quantize-ok）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260519-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "humanlayer/12-factor-agents",
+      "summary": "不是 framework，是 12 個 design principles，講「production-ready AI agent」該怎麼做。核心立場：「mostly just software with LLM at strategic points」，反對 monolithic agent loop。文件 CC BY-SA 4.0、code Apache-2.0。",
+      "tags": [
+        "ai_devtools",
+        "llm production"
+      ],
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "source": "GitHub Trending (daily)",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "N/A（概念文件）",
+      "license": "Apache-2.0 / CC BY-SA 4.0"
     }
   ],
-  "lastUpdated": "2026-05-18T05:40:00+08:00",
-  "updatedAt": "2026-05-18T05:40:00+08:00"
+  "lastUpdated": "2026-05-19T05:10:00+08:00",
+  "updatedAt": "2026-05-19T05:10:00+08:00"
 }
