@@ -39101,8 +39101,108 @@
       "url": "https://github.blog/changelog/2026-05-13-introducing-copilot-cli-agent-and-unified-sessions-view-in-github-copilot-for-jetbrains-ides/",
       "source": "GitHub Changelog",
       "sourceUrl": "https://github.blog/changelog/2026-05-13-introducing-copilot-cli-agent-and-unified-sessions-view-in-github-copilot-for-jetbrains-ides/"
+    },
+    {
+      "id": "20260519-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-19",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "The Inference Shift — answer vs agentic inference",
+      "summary": "Ben Thompson 拆解：今天的 inference 是 answer inference（人在 loop、latency 重要）；未來主流會是 agentic inference（背景跑、throughput 跟成本壓倒一切）。GPU 不再一統江湖，異質運算（如 Cerebras IPO）才是該下注的方向。",
+      "tags": [
+        "ai-compute",
+        "agentic",
+        "infrastructure"
+      ],
+      "url": "https://stratechery.com/2026/the-inference-shift/",
+      "source": "Ben Thompson / Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/the-inference-shift/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260519-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-19",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Run towards controversy — Khosla 押 Synthetic 的反向思維",
+      "summary": "Khosla 合夥人 Jon Chu 解釋為何押 $10M 在剛把 Bench 開掛的 Ian Crosby：在爭議裡，groupthink 會壓過真相本身。舉 Parker Conrad 被 Zenefits 趕出後做出 $17B 的 Rippling 為例。Founder mind 的反向 mental model — 別人逃的時候，往那裡跑。",
+      "tags": [
+        "second-chance",
+        "contrarian",
+        "vc-thesis"
+      ],
+      "url": "https://techcrunch.com/2026/05/14/khosla-ventures-is-betting-10m-on-ian-crosby-whose-last-startup-bench-imploded/",
+      "source": "TechCrunch (Jon Chu, Khosla Ventures)",
+      "sourceUrl": "https://techcrunch.com/2026/05/14/khosla-ventures-is-betting-10m-on-ian-crosby-whose-last-startup-bench-imploded/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260519-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-19",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "工程師正在變成 compute allocators",
+      "summary": "Anthropic 工程師 Thariq Shihipar 在 Lenny How I AI：當 Claude 可以跑 8 小時做一件事，你其實是在決定怎麼花 $500 的 compute。關鍵技能不是寫 code，而是定義邊界、跟 agent 對齊。順帶提出 HTML 取代 Markdown 當 agent 規劃格式。",
+      "tags": [
+        "ai-native-workflow",
+        "compute-allocation",
+        "claude-code"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-i-ai-html-is-the-new-markdown",
+      "source": "Thariq Shihipar (Anthropic) / Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-i-ai-html-is-the-new-markdown",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260519-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-19",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Vanguard — 共產資本主義最有效的載體",
+      "summary": "Acquired 新 S26E3：Vanguard 沒有股東、不賺利潤，超額利潤回饋成低費率，自 1975 年累計把 $500B 從華爾街轉回散戶口袋。Jack Bogle 被合夥人開除後的「報復計畫」變成全球最大被動投資機器。把組織結構本身設計成 alignment 工具。",
+      "tags": [
+        "org-design",
+        "mutual-ownership",
+        "durable-business"
+      ],
+      "url": "https://www.acquired.fm/episodes/vanguard",
+      "source": "Acquired Podcast (Ben Gilbert, David Rosenthal)",
+      "sourceUrl": "https://www.acquired.fm/episodes/vanguard",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260519-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-19",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Build for the user, then build for the model — Boris Cherny",
+      "summary": "Anthropic Claude Code 創造者 Boris Cherny 在 Sequoia AI Ascent 2026：model 可以寫 code，但它不知道你要建什麼、為什麼、哪些 trade-off 重要 — 那部分還是你的。AI 時代的設計順序：先設計給人用的產品，再設計給 agent 跑的 workflow。",
+      "tags": [
+        "ai-philosophy",
+        "product-thinking",
+        "agentic-engineering"
+      ],
+      "url": "https://pureai.com/articles/2026/05/15/the-human-in-the-loop-clear-path-to-vibe-coding.aspx",
+      "source": "Boris Cherny (Anthropic) / Pure AI write-up",
+      "sourceUrl": "https://pureai.com/articles/2026/05/15/the-human-in-the-loop-clear-path-to-vibe-coding.aspx",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-18T21:26:54.879290+00:00",
-  "updatedAt": "2026-05-18T21:26:54.879290+00:00"
+  "lastUpdated": "2026-05-19",
+  "updatedAt": "2026-05-18T21:43:10Z"
 }
