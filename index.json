@@ -38956,8 +38956,153 @@
       "price": null,
       "vram": "N/A（概念文件）",
       "license": "Apache-2.0 / CC BY-SA 4.0"
+    },
+    {
+      "id": "20260519-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GitHub Copilot App — 第一個 agent-native desktop IDE (technical preview)",
+      "summary": "GitHub 5/14 釋出獨立 desktop app 專門跑 agentic coding，跟 VS Code 解綁。每個 session 自己一條 branch、自己的 files / conversation / task state，多任務並進不互相污染；可以從 issue / PR / prompt / 舊 session 起跑，最後走 PR review 收尾。把 cloud-agent IDE handoff 直接做進 GitHub 自家殼，是 IDE wrapper sunset 後第一個 agent-first 旗艦級工具。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "copilot",
+        "agent-native-IDE",
+        "coding-agent"
+      ],
+      "url": "https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/"
+    },
+    {
+      "id": "20260519-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Codex 上手機 — 不是在手機跑 code，是手機遙控你的 Mac",
+      "summary": "OpenAI 5/14 把 Codex 塞進 ChatGPT iOS/Android app（preview）。重點：phone 不執行 code，它遙控你 Mac/laptop/server 上的 Codex desktop app — approve commands、review threads、switch models、開新 task 全在手機完成。Mac 先支援、Windows 之後。Codex 每週 4M 用戶，supervised remote control 成為新基本面。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "coding-agent",
+        "mobile-remote-controlled-agent"
+      ],
+      "url": "https://openai.com/index/work-with-codex-from-anywhere/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/"
+    },
+    {
+      "id": "20260519-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "DeepMind AlphaEvolve 登 Science — verifiable algorithmic discovery 的第一個工業實證",
+      "summary": "5/7 Science 論文：Gemini 驅動的 AlphaEvolve coding agent 不是 demo，是已部署在 Google infra。DeepConsensus DNA 變異辨識誤差 −30%、Willow quantum processor circuit error −10x、跟 Terence Tao 合解 Erdős 問題。verifiability gap 框架（Karpathy）落到實證：能驗證的領域 AI 全速接管。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "code-generation",
+        "verifiable-algorithmic-discovery"
+      ],
+      "url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "source": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/alphaevolve-impact/"
+    },
+    {
+      "id": "20260519-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Stripe — You can't whisper at an AI agent（12 個 LLM steering 實驗）",
+      "summary": "James Beswick + Peter Epsteen 5/14 把 LLM agent 在野外行為的『一打 steering 實驗』整理成方法論：哪些 prompt 提示真的會改變 agent 行為、哪些只是錯覺，agent 不是 service，是 stochastic 同事。Stripe 開始把 prompt steering 當 ops discipline，不是 prompt engineering 玄學。",
+      "tags": [
+        "ai-agent",
+        "prompt-engineering",
+        "llm-evaluation",
+        "agent-steering-experiments"
+      ],
+      "url": "https://stripe.dev/blog/ai-steering-experiments",
+      "source": "Stripe Dot Dev Blog",
+      "sourceUrl": "https://stripe.dev/blog/ai-steering-experiments"
+    },
+    {
+      "id": "20260519-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Martin Fowler Fragments 5/14 — 軟體業未來 retreat 共識",
+      "summary": "Chatham House Rule 閉門會議重點：(1) agentic 重寫 GNU Cobol→Rust 3 天 70K 行（code porting 是 agent 強項）；(2) junior dev 焦慮真實存在，pair programming 是把 agentic taste 傳承下去的工具；(3) 把人從 review 拿掉會切斷『從 AI 看到沒想過的 trade-off』的學習迴路 — review 不是品管，是培育。",
+      "tags": [
+        "ai-pair-programming",
+        "agentic",
+        "code-porting",
+        "pair-programming"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-05-14.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-05-14.html"
+    },
+    {
+      "id": "20260519-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Vercel AI Gateway — Opus 4.7 Fast Mode（2.5x 快，6x 貴）",
+      "summary": "5/12 research preview：Opus 4.7 走 speed:'fast' 旗標可輸出 ~2.5x 倍速，price 6x standard rate（prompt caching multiplier 照常疊加）。Claude Code 可透過 AI Gateway 接 fast mode（CLAUDE_CODE_ENABLE_OPUS_4_7_FAST_MODE 環境變數）。AI infra 開始把 latency 當第一階定價維度。",
+      "tags": [
+        "ai-agent",
+        "edge-runtime",
+        "ai-gateway",
+        "claude-code"
+      ],
+      "url": "https://vercel.com/changelog/fast-mode-for-opus-4-7-available-on-ai-gateway",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/fast-mode-for-opus-4-7-available-on-ai-gateway",
+      "price": "6x standard Opus rate"
+    },
+    {
+      "id": "20260519-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot Cloud Agent — REST API 啟動任務（5/13）+ 配置稽核（5/18）",
+      "summary": "Copilot Business/Enterprise 可用新 REST API 程式化開 cloud agent task（public preview），把 agent 接進自家 CI/CD pipeline；5/18 再上稽核 endpoint，可拉 repo 的 MCP server 設定、enabled tools、Actions workflow policy、firewall config。agent 從 IDE 按鈕升成 first-class API primitive。",
+      "tags": [
+        "ai-agent",
+        "rest-api",
+        "cloud-agent-task-API",
+        "governance"
+      ],
+      "url": "https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api/"
+    },
+    {
+      "id": "20260519-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GitHub Copilot CLI agent 進 JetBrains IDE",
+      "summary": "5/13 IntelliJ / PyCharm / WebStorm 等 JetBrains 全家族支援 Copilot CLI agent + unified sessions view（顯示 running / queued session live status）。Copilot 在 IDE 戰場補齊缺口，JetBrains 不再只是 VS Code 的替代品。",
+      "tags": [
+        "ai-agent",
+        "copilot",
+        "jetbrains"
+      ],
+      "url": "https://github.blog/changelog/2026-05-13-introducing-copilot-cli-agent-and-unified-sessions-view-in-github-copilot-for-jetbrains-ides/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-13-introducing-copilot-cli-agent-and-unified-sessions-view-in-github-copilot-for-jetbrains-ides/"
     }
   ],
-  "lastUpdated": "2026-05-19T05:10:00+08:00",
-  "updatedAt": "2026-05-19T05:10:00+08:00"
+  "lastUpdated": "2026-05-18T21:26:54.879290+00:00",
+  "updatedAt": "2026-05-18T21:26:54.879290+00:00"
 }
