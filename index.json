@@ -39483,8 +39483,178 @@
       "vram": "CLI proxy（不吃 GPU）",
       "license": "未確認",
       "createdDate": "2026-05-20T05:20:36.824568"
+    },
+    {
+      "id": "20260520-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Simon Willison — The last six months in LLMs in five minutes (PyCon US 2026)",
+      "summary": "PyCon US 2026 五分鐘閃電演講摘要：Simon 把過去半年 LLM 發展濃縮成幾張投影片，點名 2025/11 是「inflection point」，vibe coding 與 agentic engineering 兩條路線開始合流，Claude Code / Codex / Cursor 內部架構同質化。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "agentic-engineering",
+        "llm-trends"
+      ],
+      "url": "https://simonwillison.net/2026/May/19/5-minute-llms/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/19/5-minute-llms/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor Composer 2.5 — frontier-level coding agent shipped",
+      "summary": "Cursor 5/18 釋出 Composer 2.5：long-running tasks 明顯升級，訓練上強化 RL 環境 + 新 learning method + textual feedback 做 credit assignment。底層仍是 Moonshot Kimi K2.5 fine-tune；下一代要用 10x compute 從頭訓練。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "ai-coding",
+        "agent-framework"
+      ],
+      "url": "https://cursor.com/changelog/composer-2-5",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/composer-2-5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NVIDIA Nemotron 3 Nano Omni — long-context multimodal agent model",
+      "summary": "NVIDIA 在 Hugging Face 釋出 Nemotron 3 Nano Omni：long-context、文件 + 音訊 + 影片三模態的 agent 用模型，本地端可部署。",
+      "tags": [
+        "ai-models",
+        "multimodal",
+        "agents",
+        "open-weight"
+      ],
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "xAI Grok Build — 第三個進場的 coding agent CLI",
+      "summary": "xAI 5/15 推出 Grok Build：plan mode 先 review / edit / approve 才執行；只開放 SuperGrok Heavy ($300/mo) 訂閱者。正式進入 Claude Code vs Codex CLI 的三方戰局。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "ai-coding",
+        "agent-framework"
+      ],
+      "url": "https://www.engadget.com/2173482/xai-coding-agent-grok-build/",
+      "source": "Engadget",
+      "sourceUrl": "https://www.engadget.com/2173482/xai-coding-agent-grok-build/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic — Code execution with MCP: building more efficient AI agents",
+      "summary": "Anthropic engineering 探討用 MCP 的 code execution tool 跑 code 取代 raw tool loop：token 用量大幅下降、agent 可做更複雜 orchestration（loop / parse / branch）。新一代 agent design 主流。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "mcp",
+        "code-execution",
+        "agent-framework"
+      ],
+      "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic — Remote MCP support in Claude Code",
+      "summary": "Claude Code 支援 Remote MCP servers，不需本地端跑 server，搭配 plugins 系統（slash commands / agents / MCP servers / hooks 一鍵安裝），朝「agent-native IDE」邁進。",
+      "tags": [
+        "ai-agent",
+        "mcp",
+        "claude-code",
+        "agent-framework"
+      ],
+      "url": "https://www.anthropic.com/news/claude-code-remote-mcp",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/claude-code-remote-mcp",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot Individual plans — 暫停新註冊 + 收緊用量上限",
+      "summary": "GitHub 暫停 Copilot Pro / Pro+ / Student 新用戶註冊（為服務既有客戶），調整退款政策 + 收緊 individual plans 用量上限。AI coding 進入「用量緊縮 + 商業化壓力」階段。",
+      "tags": [
+        "copilot",
+        "ai-pricing",
+        "usage-limit",
+        "ai-coding"
+      ],
+      "url": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/",
+      "source": "GitHub Blog",
+      "sourceUrl": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Mini Shai-Hulud 再臨 — 600+ npm packages 二度感染、首例帶 SLSA Level 3 證明",
+      "summary": "TeamPCP 的 Mini Shai-Hulud worm 5/11 再爆發：Microsoft 追蹤 170+ npm + 2 PyPI，Socket / Endor Labs 統計 639 versions / 323 packages。首例帶有效 SLSA Build Level 3 provenance attestation 的惡意 npm — provenance 也擋不住。",
+      "tags": [
+        "paradigm-shift",
+        "supply-chain",
+        "security",
+        "npm",
+        "sbom"
+      ],
+      "url": "https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem",
+      "source": "StepSecurity",
+      "sourceUrl": "https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-20",
-  "updatedAt": "2026-05-20T05:20:36.824721"
+  "updatedAt": "2026-05-20T05:22:00+08:00"
 }
