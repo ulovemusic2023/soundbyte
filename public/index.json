@@ -39201,8 +39201,290 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260519-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-19",
+      "cycle": "tue-daily",
+      "priority": "worth-trying",
+      "title": "luoling8192/technical-writing",
+      "summary": "中文內部技術寫作的 agent skill — 約束設計文件 / 評審稿 / postmortem 的語氣。",
+      "tags": [
+        "agent-skill",
+        "writing",
+        "chinese"
+      ],
+      "url": "https://github.com/luoling8192/technical-writing",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 141,
+      "createdDate": "2026-05-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260519-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-05-19",
+      "cycle": "tue-daily",
+      "priority": "on-the-radar",
+      "title": "bladedevoff/studiomi300",
+      "summary": "Director Agent + vision critic + image / video / music / voice models，全跑在單張 MI300X 上。",
+      "tags": [
+        "music-generation",
+        "multimodal",
+        "local-ai"
+      ],
+      "url": "https://github.com/bladedevoff/studiomi300",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "stars": 32,
+      "createdDate": "2026-05-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260520-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "shang-zhu/violin",
+      "summary": "開源影片翻譯+配音 pipeline：Whisper Large v3 轉錄 → DeepSeek V4 Pro 翻譯 → Cartesia Sonic 3 TTS 配音 → remux 回影片並附字幕。支援 33 種語言、6 種風格 profile（standard/kids/academic/casual/storyteller/news），TTS 後端可切換 Together AI / OpenAI / ElevenLabs。",
+      "tags": [
+        "tts_speech",
+        "asr"
+      ],
+      "url": "https://github.com/shang-zhu/violin",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "cloud APIs（本地只跑 orchestration）",
+      "license": "MIT",
+      "createdDate": "2026-05-20T05:20:36.824537"
+    },
+    {
+      "id": "20260520-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "microsoft/VibeVoice-1.5B",
+      "summary": "Microsoft 開源 TTS：Qwen2.5-1.5B 底座 + acoustic/semantic tokenizer + diffusion head，總共 ~3B 參數。一次能生 90 分鐘多人對話（最多 4 個 speaker），適合做 podcast。只支援英文和中文，65k token context length。",
+      "tags": [
+        "tts_speech",
+        "voice_synthesis"
+      ],
+      "url": "https://huggingface.co/microsoft/VibeVoice-1.5B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/microsoft/VibeVoice-1.5B",
+      "price": null,
+      "vram": "~6-8GB（3B BF16）",
+      "license": "MIT",
+      "createdDate": "2026-05-20T05:20:36.824553"
+    },
+    {
+      "id": "20260520-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "mudler/voxtral-tts.c",
+      "summary": "純 C 實作的 Voxtral-4B-TTS 推理引擎，single-file mmap 載入 safetensors，BF16 weights + 可選 BLAS/CUDA/ARM NEON 加速。20 個 preset voice、9 種語言、24kHz WAV 輸出。實驗性質但很 cool — 把 Mistral 的 voice agent 模型抽離 Python 依賴。",
+      "tags": [
+        "tts_speech",
+        "voxtral"
+      ],
+      "url": "https://github.com/mudler/voxtral-tts.c",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/mudler/voxtral-tts.c",
+      "price": null,
+      "vram": "~8GB（4B BF16）",
+      "license": "MIT（model 是 CC BY-NC 4.0）",
+      "createdDate": "2026-05-20T05:20:36.824555"
+    },
+    {
+      "id": "20260520-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Finrandojin/alexandria-audiobook",
+      "summary": "用 Qwen3-TTS 把書轉成全人聲 audiobook：LLM 自動 annotate 劇本、分配角色聲音、支援 voice cloning + LoRA 訓練固定聲音 identity，輸出 MP3 / 章節化 M4B / Audacity 多軌。全部本地跑、11 種語言。",
+      "tags": [
+        "tts_speech",
+        "voice_cloning"
+      ],
+      "url": "https://github.com/Finrandojin/alexandria-audiobook",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依 Qwen3-TTS 規格（~8GB）",
+      "license": "MIT",
+      "createdDate": "2026-05-20T05:20:36.824557"
+    },
+    {
+      "id": "20260520-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "XimilalaXiang/DeLive",
+      "summary": "桌面即時轉錄工作站：抓 system audio、12 個 ASR backend 可選（whisper.cpp 本地 + Soniox/Volcengine/ElevenLabs/Deepgram/Groq 等雲端）、浮動字幕 overlay、AI Review Desk（校對/摘要/Q&A/mind map）、開放 MCP server。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "whisper"
+      ],
+      "url": "https://github.com/XimilalaXiang/DeLive",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "whisper.cpp 本地（~2-4GB）",
+      "license": "Apache-2.0",
+      "createdDate": "2026-05-20T05:20:36.824558"
+    },
+    {
+      "id": "20260520-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NVIDIA/Model-Optimizer",
+      "summary": "NVIDIA 官方推理加速 library：post-training & QAT quantization（壓 2-4x）、pruning、distillation、speculative decoding、sparsity。直接 export 到 TensorRT-LLM / vLLM / SGLang，支援 LLM/VLM/diffusion/ONNX。把 NVIDIA 推理優化的 know-how 集中成一個 SDK。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "tensorrt"
+      ],
+      "url": "https://github.com/NVIDIA/Model-Optimizer",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "library（不吃 VRAM）",
+      "license": "Apache-2.0",
+      "createdDate": "2026-05-20T05:20:36.824560"
+    },
+    {
+      "id": "20260520-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vllm-project/vllm v0.18.0",
+      "summary": "vLLM 大版本更新：新增 --grpc serving（比 HTTP 更快的 RPC 介面）、GPU 上的 NGram speculative decoding（stable）、KV cache CPU offloading + FlexKV backend、elastic expert parallelism（MoE 動態 scale）、OpenAI Responses API 支援 streaming tool calls。Ray 不再是 default 依賴。",
+      "tags": [
+        "llm_inference",
+        "vllm"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.18.0",
+      "source": "Web Search",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.18.0",
+      "price": null,
+      "vram": "runtime（依模型）",
+      "license": "Apache-2.0",
+      "createdDate": "2026-05-20T05:20:36.824561"
+    },
+    {
+      "id": "20260520-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tencent/TencentDB-Agent-Memory",
+      "summary": "騰訊開源 agent 長期記憶系統：用 Mermaid diagram 壓縮 tool log（省 61% token）、四層 pipeline（raw → atomic facts → scenario blocks → personas）、BM25 + vector hybrid retrieval、SQLite + sqlite-vec 本地存。掛在 OpenClaw 上 WideSearch success rate +51.52%。",
+      "tags": [
+        "rag_knowledge",
+        "agent_memory"
+      ],
+      "url": "https://github.com/Tencent/TencentDB-Agent-Memory",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "SQLite + embeddings（不吃 VRAM）",
+      "license": "MIT",
+      "createdDate": "2026-05-20T05:20:36.824562"
+    },
+    {
+      "id": "20260520-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NirDiamant/Agent_Memory_Techniques",
+      "summary": "30 個 runnable Jupyter notebook 涵蓋 LLM agent memory 所有技術：short-term buffer、long-term vector/KG/episodic、cognitive architecture（working memory、consolidation、self-reflection）、Mem0/Letta/Zep/Graphiti 生產級框架、retrieval + multi-agent + 評估。學 agent memory 一站到位。",
+      "tags": [
+        "rag_knowledge",
+        "education"
+      ],
+      "url": "https://github.com/NirDiamant/Agent_Memory_Techniques",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "notebook（依範例）",
+      "license": "Apache-2.0",
+      "createdDate": "2026-05-20T05:20:36.824564"
+    },
+    {
+      "id": "20260520-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "chatdoc-com/OCRFlux",
+      "summary": "OCRFlux-3B（VLM）把 PDF/image 轉乾淨 Markdown：自動 reading order、跨頁 table/paragraph merge、headers/footers 自動移除、equation 支援。3B 參數 RTX 3090 跑得動，benchmark Edit Distance Similarity 0.967 屌打 0.78-0.88 的競品。",
+      "tags": [
+        "cv_ocr",
+        "document_ai"
+      ],
+      "url": "https://github.com/chatdoc-com/OCRFlux",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~8GB（3B VLM）",
+      "license": "Apache-2.0",
+      "createdDate": "2026-05-20T05:20:36.824566"
+    },
+    {
+      "id": "20260520-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "TencentARC/CustomNet",
+      "summary": "把自訂物件塞進 AI 生成圖且保留物件 identity：encoder-based（不用 test-time optimization）、3D novel view synthesis 可調視角和位置、用 text 或 user input 控制背景。比一般的 inpainting/IP-Adapter 多了 3D 視角控制這層。",
+      "tags": [
+        "image_gen",
+        "controlnet"
+      ],
+      "url": "https://github.com/TencentARC/CustomNet",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "SD-base（~8-12GB）",
+      "license": "Apache-2.0",
+      "createdDate": "2026-05-20T05:20:36.824567"
+    },
+    {
+      "id": "20260520-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-20",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "rtk-ai/rtk",
+      "summary": "CLI proxy 號稱可降 60-90% LLM token 用量，介在 coding agent 和 API 之間做 prompt 壓縮 + cache。Rust 寫的、跑 daily +667 stars 衝到 50k。如果真有效，在你跑 Claude Code / Codex 時可以省一大筆 token cost。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/rtk-ai/rtk",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "CLI proxy（不吃 GPU）",
+      "license": "未確認",
+      "createdDate": "2026-05-20T05:20:36.824568"
     }
   ],
-  "lastUpdated": "2026-05-19",
-  "updatedAt": "2026-05-18T21:43:10Z"
+  "lastUpdated": "2026-05-20",
+  "updatedAt": "2026-05-20T05:20:36.824721"
 }
