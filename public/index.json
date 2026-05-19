@@ -39653,6 +39653,166 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260520-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-20",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Karpathy 加入 Anthropic — 為什麼是這裡，而不是別處",
+      "summary": "Andrej Karpathy 公開宣布加入 Anthropic，理由是「LLM 前沿的未來幾年特別 formative」。他選擇的不是錢最多、也不是模型最大的，而是賭 Software 3.0 paradigm 最徹底的那家。Mental model：當 paradigm shift 真的發生時，押注「最相信新典範」的玩家，而不是「市值最大」的玩家。",
+      "tags": [
+        "software-3.0",
+        "career-bet",
+        "paradigm-shift"
+      ],
+      "url": "https://x.com/karpathy/status/2056753169888334312",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2056753169888334312",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-20",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Marc Andreessen — AI prompt 是新的 leverage",
+      "summary": "他公開分享自己 ChatGPT custom prompt：「你是所有領域的世界級專家。智力火力、知識廣度、思考精準度、博學程度都跟世上最聰明的人相當。給我完整、詳細、具體的答案。」Mental model：在 AI 時代，prompt engineering 不是工程師的事——而是每個人重新定義「我能調動多少智能」的 leverage 工具。提示詞品質 = 你能從 AI 拿到的天花板。",
+      "tags": [
+        "prompt-engineering",
+        "ai-leverage",
+        "personal-os"
+      ],
+      "url": "https://x.com/pmarca/status/2051374498994364529",
+      "source": "Marc Andreessen",
+      "sourceUrl": "https://x.com/pmarca/status/2051374498994364529",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-20",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Karpathy 的「把回答結構化成 HTML」小技巧",
+      "summary": "Karpathy 分享一個 LLM 使用 hack：在 query 結尾加上「structure your response as HTML」，然後在瀏覽器打開 — 視覺化效果遠勝純文字。延伸玩法：要求 LLM 輸出 slideshow、PDF、audio。Operational insight：未來 LLM 的「output format」會是另一個重要 prompt 維度，不只是「生成什麼」，還有「怎麼呈現」。",
+      "tags": [
+        "llm-output",
+        "prompt-trick",
+        "workflow"
+      ],
+      "url": "https://x.com/karpathy/status/2053872850101285137",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2053872850101285137",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-20",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Simon Willison — 「不再被鎖死了」",
+      "summary": "Willison 觀察：過去半年模型供應商之間的切換成本急劇下降。同一份 prompt、同一個 agent harness，可以在 Claude / GPT / Gemini / open source 模型之間幾乎無痛遷移。Operational insight：對 builder 而言，這代表「賭單一模型」變成壞策略；對採購方而言，這代表 lock-in moat 正在消失，價格戰是必然。",
+      "tags": [
+        "model-switching",
+        "vendor-lock-in",
+        "ai-procurement"
+      ],
+      "url": "https://simonwillison.net/2026/May/14/not-so-locked-in/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/14/not-so-locked-in/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-20",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Stratechery — Data Center 反彈與「付錢買社會許可」",
+      "summary": "Ben Thompson 拆解美國 data center 在地方上越來越大的反對聲音：噪音、用水、電網壓力都是合理擔憂。他的結論很直接：解法就是「付錢給他們」 — 不是道德勸說，而是 transfer payment。Operational insight：AI infra 的 bottleneck 從來不是技術或資本，而是「社會許可」(social permission) — 你要把它當成一條真實的 cost line item。",
+      "tags": [
+        "ai-infrastructure",
+        "social-permission",
+        "policy"
+      ],
+      "url": "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-20",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Stratechery — Answer Inference vs Agentic Inference",
+      "summary": "Ben Thompson 在 MoffettNathanson conference 提出新框架：未來會有兩種推論 — answer inference（人類在 loop 內、即時回應）和 agentic inference（人類不在 loop 內、可以慢慢跑）。後者對延遲不敏感，對能源價格敏感 → 對中國、太空、邊陲資料中心都是好消息。Playbook：建 AI 產品時先問「我屬於哪一種 inference」，因為架構選擇完全不同。",
+      "tags": [
+        "agentic-inference",
+        "architecture",
+        "aggregation-theory"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-20",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Lenny — AI Hardware 才剛開始",
+      "summary": "Caitlin Kalinowski（ex-OpenAI 機器人、Meta Quest/Orion、Apple）在 Lenny 節目談：模型已經夠用了，瓶頸現在在硬體 — sensor、actuator、edge inference、power。她認為 AI hardware boom 才剛開始，2026 才是「機器人版的 2020 ChatGPT moment」前夜。Playbook：純 software AI 賽道擁擠，但 AI × hardware 還是 wide open，工程師背景的 founder 應該認真看。",
+      "tags": [
+        "ai-hardware",
+        "robotics",
+        "founder-opportunity"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/why-were-at-the-beginning-of-the",
+      "source": "Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/why-were-at-the-beginning-of-the",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260520-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-05-20",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Naval — 「這週你 build 了什麼？」",
+      "summary": "Naval：「『這週你 build 了什麼？』就是新的『這週你完成了什麼？』」一句話切換 manager schedule → maker schedule。在 AI 時代，會議、文件、ticket 都不再是工作的證明 — 你真正 ship 出來、跑起來、有人用的東西才是。",
+      "tags": [
+        "maker-mindset",
+        "ai-leverage",
+        "shipping"
+      ],
+      "url": "https://x.com/naval/status/2050072434943144398",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://x.com/naval/status/2050072434943144398",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-20",
