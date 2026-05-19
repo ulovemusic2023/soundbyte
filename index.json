@@ -39813,8 +39813,188 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260520-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "Doorman11991/smallcode",
+      "summary": "為小模型優化的 AI coding agent，用 4B-active 參數的 model 也能跑出 87% benchmark。挑戰「coding agent 一定要大 LLM」的假設，本地跑得起。",
+      "tags": [
+        "coding-agent",
+        "small-llm",
+        "local-ai"
+      ],
+      "url": "https://github.com/Doorman11991/smallcode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-06+stars%3A%3E50&type=repositories",
+      "stars": 703,
+      "createdDate": "2026-05-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260520-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "gi-dellav/zerostack",
+      "summary": "Rust 寫的極簡 coding agent，主打 memory footprint 跟 performance。沒有多餘依賴，適合想看 coding agent 核心架構長什麼樣的人。",
+      "tags": [
+        "coding-agent",
+        "rust",
+        "minimalist"
+      ],
+      "url": "https://github.com/gi-dellav/zerostack",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-06+stars%3A%3E50&type=repositories",
+      "stars": 802,
+      "createdDate": "2026-05-12",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260520-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "WyattLee-nanami/weft",
+      "summary": "原生 macOS app，index 並管理你的 ~/.claude/skills，提供 fuzzy search + token usage 統計（從 session history 掃出來）。skill 多到自己找不到的時候用得上。",
+      "tags": [
+        "claude-code",
+        "skill-manager",
+        "macos"
+      ],
+      "url": "https://github.com/WyattLee-nanami/weft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-05-06&type=repositories",
+      "stars": 85,
+      "createdDate": "2026-05-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260520-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "byaan-ai/byaan",
+      "summary": "開源 data analyst，可從 Slack / Mac app / MCP 三種介面查公司 DB，read-only 設計避免誤寫。三種部署模式（Mac app / community Docker / team server）+ scheduled reports。",
+      "tags": [
+        "mcp",
+        "data-analyst",
+        "slack"
+      ],
+      "url": "https://github.com/byaan-ai/byaan",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-05-06&type=repositories",
+      "stars": 85,
+      "createdDate": "2026-05-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260520-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "DomDemetz/claude-soul",
+      "summary": "給 Claude Code 加 cross-session memory + behavioral pattern tracking，本地跑、無 API key、自我修正錯誤決策。對長期專案有用。",
+      "tags": [
+        "claude-code",
+        "memory",
+        "self-correcting"
+      ],
+      "url": "https://github.com/DomDemetz/claude-soul",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-06&type=repositories",
+      "stars": 75,
+      "createdDate": "2026-05-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260520-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "1Utkarsh1/mcp-stdio-guard",
+      "summary": "catches MCP stdio server 的 stdout pollution + handshake failures，在 client 抓到之前先抓。寫 MCP server 的 debug 神器。",
+      "tags": [
+        "mcp",
+        "debugging",
+        "stdio"
+      ],
+      "url": "https://github.com/1Utkarsh1/mcp-stdio-guard",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-05-06&type=repositories",
+      "stars": 62,
+      "createdDate": "2026-05-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260520-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "secureagentics/Adrian",
+      "summary": "runtime security monitoring for AI agents，real-time 攔截 malicious tool use、prompt injection、policy drift。Apache 2.0，給 production agent 用。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "runtime"
+      ],
+      "url": "https://github.com/secureagentics/Adrian",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-05-06&type=repositories",
+      "stars": 56,
+      "createdDate": "2026-05-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260520-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "coasty-ai/open-computer-use",
+      "summary": "讓 AI 系統操作 browser、terminal、desktop 環境，類似 Anthropic Computer Use 的開源版。Apache 2.0。",
+      "tags": [
+        "ai-agent",
+        "computer-use",
+        "automation"
+      ],
+      "url": "https://github.com/coasty-ai/open-computer-use",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 615,
+      "createdDate": "2025-10-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260520-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-20",
+      "cycle": "wed",
+      "priority": "product-hunt",
+      "title": "PollyReach",
+      "summary": "給 AI agent 一個真實電話號碼 + voice，可以打電話。用 agent 處理電話應答、預約、cold call 的場景。118 upvotes。",
+      "tags": [
+        "ai-agent",
+        "voice",
+        "phone"
+      ],
+      "url": "https://www.producthunt.com/products/pollyreach",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/5/19",
+      "stars": null,
+      "createdDate": "2026-05-19",
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-20",
-  "updatedAt": "2026-05-20T05:22:00+08:00"
+  "lastUpdated": "2026-05-20T05:52:57.195458",
+  "updatedAt": "2026-05-20T05:52:57.195475"
 }
