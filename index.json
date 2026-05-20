@@ -40179,8 +40179,175 @@
       "price": null,
       "vram": "orchestration",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260521-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google I/O 2026: Welcome to the agentic Gemini era",
+      "summary": "Sundar Pichai 在 I/O 主題演講把 Gemini 定位為 agent-first 平台 — 從 chat 模式轉成 autonomous executor。同步公布 Gemini 3.5 系列、Antigravity 2.0、Managed Agents in Gemini API；對標 Anthropic Code w/ Claude 與 OpenAI Agents SDK，agent stack 進入三強鼎立。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "gemini",
+        "agentic"
+      ],
+      "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+      "source": "Google Blog (Sundar Pichai)",
+      "sourceUrl": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Antigravity 2.0 + Managed Agents in Gemini API",
+      "summary": "Google 把 Antigravity 從 IDE 擴成完整 agent 平台：desktop app + CLI + SDK + Managed Agents tier（單一 API call 提供 fully provisioned agent + remote sandbox）+ Enterprise Agent Platform。Gemini 3.5 Flash 號稱比其他 frontier model 快 4 倍。Agent harness 與 sandbox 成為 cloud 巨頭新戰場。",
+      "tags": [
+        "paradigm-shift",
+        "agent-platform",
+        "gemini",
+        "antigravity",
+        "managed-agents"
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 收購 Stainless（SDK + MCP 工具鏈）",
+      "summary": "Anthropic 以傳聞 $300M+ 收下 Stainless — OpenAI、Google、Cloudflare 都在用的 SDK / CLI / MCP server 生成工具。同時宣布 wind down 所有 hosted Stainless 服務。把對手共用的 dev tooling infra 直接拔掉，AI agent 經濟的供應鏈控制權之戰浮上檯面。",
+      "tags": [
+        "paradigm-shift",
+        "mcp",
+        "sdk",
+        "ai-agent",
+        "dev-tools-acquisition"
+      ],
+      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "source": "Anthropic Blog",
+      "sourceUrl": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pragmatic Engineer：AI 對軟體工程師 2026 影響調查（Part 2）",
+      "summary": "Gergely Orosz 整理 900+ subscriber 問卷：① AI tooling tradeoff — 工程師覺得少做雜事但 management 期望也跟著膨脹；② scale 採用困難 — 收穫高度依賴既有工程文化；③ codebase 品質下降但管理層不在意；④ 出現「AI tooling addiction」— 用 agent 像吃老虎機。",
+      "tags": [
+        "ai-coding",
+        "evaluation",
+        "ai-tooling-addiction"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/ai-impact-on-software-engineers-part-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison：Gemini 3.5 Flash — 變貴了，但 Google 打算用它跑所有東西",
+      "summary": "Simon 分析 I/O 2026 推出的 Gemini 3.5 Flash 漲價邏輯 — 雖然 token 成本變高，Google 似乎想把它當 default model 用在所有產品。對比 Sonnet/Haiku 4.5 的價位，Google 走「夠快 + 強到能 fallback」的路線。",
+      "tags": [
+        "ai-models",
+        "gemini",
+        "pricing"
+      ],
+      "url": "https://simonwillison.net/2026/May/19/gemini-35-flash/",
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/May/19/gemini-35-flash/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "InfoQ：Code with Claude — Managed Agents、Proactive Workflows、Capability Curve",
+      "summary": "InfoQ 回顧 Anthropic Code w/ Claude 2026 重點：multi-agent orchestration、Dreaming（agent 自我反省）、Routines（async 自動產 PR）。提出「Capability Curve」框架 — agent 能力曲線正在從『會 chat』往『會交付』陡升。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "claude-code",
+        "capability-curve"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/code-with-claude/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/code-with-claude/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google I/O 2026 Developer Keynote — 全公告整理",
+      "summary": "Google Developers Blog 一頁式整理本次 keynote：Gemini 3.5 系列、Antigravity 2.0、ADK 2.0、Managed Agents in Gemini API、Android vibe coding in AI Studio、Enterprise Agent Platform。",
+      "tags": [
+        "ai-agent",
+        "devops_infra",
+        "gemini",
+        "adk"
+      ],
+      "url": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "PyCon US 2026：Beyond the Hype — 開發者怎麼真的在用 AI tools",
+      "summary": "五位實戰派（open-source、data science、DevRel、production eng）討論 AI tooling evolution 超過團隊評估速度時，到底什麼 workflow 真的有效。對「不只看 hype」的工程主管很有用。",
+      "tags": [
+        "ai-coding",
+        "dx",
+        "evaluation"
+      ],
+      "url": "https://us.pycon.org/2026/schedule/presentation/172/",
+      "source": "PyCon US 2026",
+      "sourceUrl": "https://us.pycon.org/2026/schedule/presentation/105/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-20T05:52:57.195458",
-  "updatedAt": "2026-05-20T05:52:57.195475"
+  "updatedAt": "2026-05-21"
 }
