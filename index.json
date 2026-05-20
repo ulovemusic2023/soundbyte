@@ -40346,8 +40346,148 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260521-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-21",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Tobi Lütke 的「Credibility Bank」框架",
+      "summary": "Tobi 在 Uncapped Ep.50 提出 founder 的「credibility bank」概念：做對方向是存款，做錯是提款；存夠了才有資格在公司還沒共識時強推大轉向（像 Shopify 把 token 用量推到年 10x、GPU 三倍）。Founder-led 公司在 AI 高變異週期跑更快，是因為敢花這份信用額度。",
+      "tags": [
+        "founder-mode",
+        "credibility-bank",
+        "ai-adoption"
+      ],
+      "url": "https://www.youtube.com/watch?v=tH95ZCciOqk",
+      "source": "Jack Altman / Uncapped Podcast Ep. 50",
+      "sourceUrl": "https://www.youtube.com/watch?v=tH95ZCciOqk",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-21",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Jensen 的新生產力指標：tokens per second per megawatt",
+      "summary": "Jensen 在 Dell Technologies World 把 2026 定為 the year of inference，宣告新的數據中心 KPI 不是 FLOPS，是每 MW 每秒能產出多少 token。AI Factory 不是機房，是工廠；產品是 token。對台灣硬體鏈和雲端策略是個關鍵的 mental model 切換 — 從算力商品換到 token 產出單位成本。",
+      "tags": [
+        "ai-factory",
+        "inference-economics",
+        "nvidia"
+      ],
+      "url": "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/",
+      "source": "NVIDIA Blog",
+      "sourceUrl": "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-21",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Tobi × Ilya Grigorik：Universal Commerce Protocol（UCP）",
+      "summary": "Shopify 推開放的 UCP 協議，讓 AI agents 能用同一套介面跟所有商家對話、下單、退貨。Tobi 不是把 AI 當功能塞進 Shopify，是把整個 commerce 架構改成 agent-native。給 founders 的訊號：agentic 時代來，product 不夠 — 要建讓 agent 能讀的機器可讀層。",
+      "tags": [
+        "agentic-commerce",
+        "ucp",
+        "platform-strategy"
+      ],
+      "url": "https://www.youtube.com/watch?v=uNOFaCq8RZQ",
+      "source": "YouTube (Shopify / Ilya Grigorik)",
+      "sourceUrl": "https://www.youtube.com/watch?v=uNOFaCq8RZQ",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-21",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Patrick Collison 警告「Token Pilfering」",
+      "summary": "Stripe 觀察到 CEOs 把 AI token 額度當薪水發給員工，但沒治理就會被「token pilfering」— 員工燒在低價值實驗或私人專案上。Patrick 把 AI usage 視為雲端開支等級的營運成本，需要 metering、observability、ROI metric。AI 不是免費的水，是要記帳的。",
+      "tags": [
+        "ai-governance",
+        "token-economics",
+        "ops"
+      ],
+      "url": "https://fortune.com/2026/05/20/ceos-ai-tokens-paychecks-justify-spend/",
+      "source": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/05/20/ceos-ai-tokens-paychecks-justify-spend/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-21",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Simon Willison：The last six months in LLMs in five minutes",
+      "summary": "Simon 的 PyCon lightning talk 文字版，把 2025/11 到 2026/05 的 LLM paradigm 收成一篇。重點是「Lethal Trifecta」開始被產業大規模引用，vibe coding 在嚴肅工程裡正被 agentic engineering 取代 — bottleneck 從寫 code 變成 verify code。",
+      "tags": [
+        "agentic-engineering",
+        "llm-state",
+        "vibe-coding"
+      ],
+      "url": "https://simonw.substack.com/p/the-last-six-months-in-llms-in-five",
+      "source": "simonw.substack.com",
+      "sourceUrl": "https://simonw.substack.com/p/the-last-six-months-in-llms-in-five",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-21",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "John Collison：Agentic Commerce 的 90 天工作者 playbook",
+      "summary": "Stripe 押注 12–18 個月內 AI buyer agents 進主流。對個人：停止只會用 chat，開始學怎麼指揮 agent，並在 90 天內做出可量化的 productivity delta。對 founder：商品要設計成 machine-readable 的，agent 才看得到你。",
+      "tags": [
+        "agentic-commerce",
+        "career-strategy",
+        "stripe"
+      ],
+      "url": "https://www.metaintro.com/blog/stripe-collison-agentic-commerce-2026-retail-jobs",
+      "source": "Metaintro",
+      "sourceUrl": "https://www.metaintro.com/blog/stripe-collison-agentic-commerce-2026-retail-jobs",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260521-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-21",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Jeff Bezos：「Blaming a villain isn't a solution」",
+      "summary": "Bezos 回應紐約富人稅 / Ken Griffin 議題時，把 leadership 邏輯翻成一句話：找出反派不算解法，解問題才算。對 founder 是純粹的執行哲學 — 把能量放在問題本體，不要花在敘事裡找替罪羔羊。",
+      "tags": [
+        "leadership",
+        "problem-solving",
+        "bezos"
+      ],
+      "url": "https://fortune.com/2026/05/20/jeff-bezos-zohran-mamdani-ken-griffin-billionaires-wealth-tax-villain-mistake/",
+      "source": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/05/20/jeff-bezos-zohran-mamdani-ken-griffin-billionaires-wealth-tax-villain-mistake/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-20T05:52:57.195458",
+  "lastUpdated": "2026-05-20T21:39:25.152576+00:00",
   "updatedAt": "2026-05-21"
 }
