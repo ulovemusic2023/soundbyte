@@ -40486,8 +40486,248 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260521-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "vercel-labs/zerolang",
+      "summary": "Vercel Labs 推的「agent 原生程式語言」，把 tool call / plan / 結構化輸出寫進語法層，主打 LLM 寫 LLM 跑。6 天衝近 4k 星。",
+      "tags": [
+        "ai-agent",
+        "programming-language",
+        "agent-framework"
+      ],
+      "url": "https://github.com/vercel-labs/zerolang",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 3945,
+      "createdDate": "2026-05-15",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "hugohe3/ppt-master",
+      "summary": "AI 直接生成「可編輯的原生 PPTX」— 不是輸出圖片，是有真正的 shape / 動畫的 PowerPoint。",
+      "tags": [
+        "creator-tools",
+        "productivity",
+        "automation"
+      ],
+      "url": "https://github.com/hugohe3/ppt-master",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 18996,
+      "createdDate": "2026-05-10",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "stablyai/orca",
+      "summary": "下一代 IDE，給平行 agent 用 — 用自己的 Claude / Codex 訂閱跑 N 個 agent。",
+      "tags": [
+        "ai-agent",
+        "ide",
+        "coding-agent"
+      ],
+      "url": "https://github.com/stablyai/orca",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 2906,
+      "createdDate": "2026-05-12",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "Kappaemme-git/codex-complexity-optimizer",
+      "summary": "Codex skill — 用 AST / 圖分析做 codebase complexity audit，產出可執行的 perf report。",
+      "tags": [
+        "coding-agent",
+        "codex",
+        "performance"
+      ],
+      "url": "https://github.com/Kappaemme-git/codex-complexity-optimizer",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 803,
+      "createdDate": "2026-05-15",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "feder-cr/invisible_playwright",
+      "summary": "Stealth Firefox，宣稱通過所有 bot detection。Drop-in Playwright 替代品。",
+      "tags": [
+        "scraping",
+        "automation",
+        "browser"
+      ],
+      "url": "https://github.com/feder-cr/invisible_playwright",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 696,
+      "createdDate": "2026-05-13",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "EliasOulkadi/shokunin",
+      "summary": "職人 Shokunin：62 個 AI agent skill 給 OpenCode / Claude Code / Cursor / Windsurf 共用。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "mcp"
+      ],
+      "url": "https://github.com/EliasOulkadi/shokunin",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 84,
+      "createdDate": "2026-05-12",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "danielalves96/claude-code-provider-gateway",
+      "summary": "「最簡單的方式讓 Claude Code 跑任意 LLM」— 裝 app、選 provider 即可。",
+      "tags": [
+        "claude-code",
+        "gateway",
+        "multi-provider"
+      ],
+      "url": "https://github.com/danielalves96/claude-code-provider-gateway",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 98,
+      "createdDate": "2026-05-09",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "JSingletonAI/dejavu",
+      "summary": "跨 AI 工具的 memory 層 — 沒有 cloud、沒有帳號，本機跑。MCP-compatible。",
+      "tags": [
+        "mcp",
+        "memory",
+        "ai-agent"
+      ],
+      "url": "https://github.com/JSingletonAI/dejavu",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 83,
+      "createdDate": "2026-05-18",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "jianshuo/claude-skills",
+      "summary": "王建碩做的 13 個 Claude Code skills，全是影音製作流程。podcast / video 製作可直接抄。",
+      "tags": [
+        "claude-code",
+        "audio-video",
+        "creator-tools"
+      ],
+      "url": "https://github.com/jianshuo/claude-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 47,
+      "createdDate": "2026-05-11",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "Patdolitse/engram",
+      "summary": "AI identity layer — 記住「你是誰」而不是「你做了什麼」。跨 Claude Code / Codex / Cursor 同步。",
+      "tags": [
+        "mcp",
+        "identity",
+        "cross-tool"
+      ],
+      "url": "https://github.com/Patdolitse/engram",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 44,
+      "createdDate": "2026-05-18",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "sisyphusse1-ops/claude-code-pro-pack",
+      "summary": "CLAUDE.md + AGENTS.md 的 12 條行為規則 drop-in pack，~700 tokens，宣稱錯誤率從 40% → 3%。",
+      "tags": [
+        "claude-code",
+        "agents-md",
+        "prompt-engineering"
+      ],
+      "url": "https://github.com/sisyphusse1-ops/claude-code-pro-pack",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 23,
+      "createdDate": "2026-05-10",
+      "license": "unknown"
+    },
+    {
+      "id": "20260521-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-21",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "outsourc-e/bench-loop",
+      "summary": "本地 LLM benchmark CLI — 在真實硬體上量 quality / speed / reliability + multi-turn agent loop。",
+      "tags": [
+        "local-llm",
+        "benchmark",
+        "devtool"
+      ],
+      "url": "https://github.com/outsourc-e/bench-loop",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 23,
+      "createdDate": "2026-05-12",
+      "license": "unknown"
     }
   ],
-  "lastUpdated": "2026-05-20T21:39:25.152576+00:00",
-  "updatedAt": "2026-05-21"
+  "lastUpdated": "2026-05-21",
+  "updatedAt": "2026-05-20T21:50:00.414666Z"
 }
