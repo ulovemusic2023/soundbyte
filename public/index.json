@@ -39993,6 +39993,192 @@
       "stars": null,
       "createdDate": "2026-05-19",
       "license": null
+    },
+    {
+      "id": "20260521-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "supertone-inc/supertonic-py",
+      "summary": "Supertone 釋出 Python binding：CPU 跑 expressive TTS、支援 31 種語言，完全不用 GPU。對筆電/邊緣裝置部署 TTS 來說很有意義，搭配 RVC 之後可以全鏈路本地化。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://github.com/supertone-inc/supertonic-py",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/20/supertone-inc-supertonic-py.html",
+      "price": null,
+      "vram": "CPU only",
+      "license": "TBD"
+    },
+    {
+      "id": "20260521-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp PR #22105 (DFlash speculative)",
+      "summary": "llama.cpp 五月新增 DFlash speculative decoding（5/3 合併），同時推進 Gemma 4 MTP drafter 支援，實測 acceptance 70–87%、throughput +60%。本地推理對 5070 Ti 的單卡使用者直接受益。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/22105",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/22105",
+      "price": null,
+      "vram": "16GB local",
+      "license": "MIT"
+    },
+    {
+      "id": "20260521-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "karpathy/autoresearch",
+      "summary": "Karpathy 把 nanochat 簡化成 630 行單 GPU 訓練腳本，讓 agent 自己改 code → 5 分鐘訓練 → 看 metric → 留 or 丟 → 循環。Tobi Lütke 用同框架在 Shopify 拿到 +19% validation。單卡也能做自動化 ML 研究。",
+      "tags": [
+        "llm_training",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/karpathy/autoresearch",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/karpathy/autoresearch",
+      "price": null,
+      "vram": "single GPU",
+      "license": "MIT"
+    },
+    {
+      "id": "20260521-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "WZH0120/SAM3-UNet",
+      "summary": "把 Segment Anything Model 3 塞進 6GB VRAM 跑起來，給只有入門卡的人用 SAM3 做分割。雖然 5070 Ti 16GB 不缺 VRAM，但這種降階適配的思路對部署到客戶端設備有參考價值。",
+      "tags": [
+        "cv_ocr",
+        "segment anything"
+      ],
+      "url": "https://github.com/WZH0120/SAM3-UNet",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/20/WZH0120-SAM3-UNet.html",
+      "price": null,
+      "vram": "6GB min",
+      "license": "TBD"
+    },
+    {
+      "id": "20260521-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenGVLab/InternVL",
+      "summary": "OpenGVLab 的 open-source VLM：segmentation、video classification、retrieval 全包。多模態研究線上又一個可本地部署的選項，VLM 生態正在加速開源化。",
+      "tags": [
+        "cv_ocr",
+        "image_gen",
+        "llm_inference"
+      ],
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/20/OpenGVLab-InternVL.html",
+      "price": null,
+      "vram": "中大型 VLM",
+      "license": "MIT"
+    },
+    {
+      "id": "20260521-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "caiyuanhao1998/Open-DiffusionGS",
+      "summary": "另一條單張圖→3D 路線，走 Gaussian Splatting + diffusion。跟 Pixal3D 可以對照比較，看誰品質好、誰好部署。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://github.com/caiyuanhao1998/Open-DiffusionGS",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/20/caiyuanhao1998-Open-DiffusionGS.html",
+      "price": null,
+      "vram": "未知",
+      "license": "TBD"
+    },
+    {
+      "id": "20260521-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "jrcruciani/obsidian-memory-for-ai",
+      "summary": "把 Obsidian vault 變成 AI 的持續記憶。對已經在用 Obsidian 寫筆記的人來說，這條路把「個人知識庫 → agent memory」直接打通。",
+      "tags": [
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/jrcruciani/obsidian-memory-for-ai",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/20/jrcruciani-obsidian-memory-for-ai.html",
+      "price": null,
+      "vram": "text only",
+      "license": "TBD"
+    },
+    {
+      "id": "20260521-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "tmdgusya/roach-pi",
+      "summary": "給 pi coding agent 做多 agent orchestration + memory。Pi 生態這幾天 MAGI 上一直冒新框架，先收進視線。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/tmdgusya/roach-pi",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/20/tmdgusya-roach-pi.html",
+      "price": null,
+      "vram": "orchestration",
+      "license": "TBD"
+    },
+    {
+      "id": "20260521-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "yologdev/yoagent",
+      "summary": "Rust 寫的極簡 agent loop，full event streaming。對想自己 fork agent harness、又不想吃 Python 包袱的人來說值得看 reference 實作。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/yologdev/yoagent",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/20/yologdev-yoagent.html",
+      "price": null,
+      "vram": "agent loop",
+      "license": "TBD"
+    },
+    {
+      "id": "20260521-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "e2b-dev/E2B",
+      "summary": "開源沙箱環境，給 enterprise agent 用，可以安全執行任意工具。要做給其他人用的 agent 平台時，這層 isolation 是繞不過的。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/e2b-dev/E2B",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/e2b-dev/E2B",
+      "price": null,
+      "vram": "orchestration",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-05-20T05:52:57.195458",
