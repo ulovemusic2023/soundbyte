@@ -41213,6 +41213,149 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260522-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-22",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "asdsa321as/grok-animus",
+      "summary": "Python library 做 persistent AI companion：人格特質、episodic memory、情緒、idle 生成 dream sequence、16 種 archetype。可接 OpenAI/Anthropic/xAI/local。對 character agent 設計可參考。",
+      "tags": [
+        "ai-agent",
+        "persistent-memory",
+        "character"
+      ],
+      "url": "https://github.com/asdsa321as/grok-animus",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-08+stars%3A%3E50&type=repositories",
+      "stars": 713,
+      "createdDate": "2026-05-09",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260522-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-22",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "AnttiHero/lavern",
+      "summary": "67 個專科 AI agent 組成的「律師事務所」：document review 透過 evidence-backed debate + 三層 verification + 10-pass loop + 強制 human gate。Multi-agent verification pattern 值得借鏡。",
+      "tags": [
+        "multi-agent",
+        "agent-framework",
+        "verification",
+        "mcp"
+      ],
+      "url": "https://github.com/AnttiHero/lavern",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-05-08+stars%3A%3E20&type=repositories",
+      "stars": 121,
+      "createdDate": "2026-05-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260522-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-22",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "8bit64k/cronalytics",
+      "summary": "Hermes Agent 的 cron observability plugin —— 把躲在背景的自動化任務的成本、執行狀況做成 dashboard。多 Radar cron 場景想看每個 job 的 token / 時間 / 失敗率時派得上用場。",
+      "tags": [
+        "observability",
+        "cron",
+        "ai-agent",
+        "devops"
+      ],
+      "url": "https://github.com/8bit64k/cronalytics",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-08+stars%3A%3E20&type=repositories",
+      "stars": 72,
+      "createdDate": "2026-05-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260522-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-22",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Tartarus-AI/tartarusai-cli",
+      "summary": "Uncensored AI coding agent，賣點 256K context + 純加密貨幣付費（不留卡）、不拒絕 security research / pentest。作者強調不接 malware / 駭你不擁有的系統。Red team / CTF 工作流的另類選項。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "uncensored",
+        "security"
+      ],
+      "url": "https://github.com/Tartarus-AI/tartarusai-cli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Acoding-agent+created%3A%3E2026-05-08+stars%3A%3E20&type=repositories",
+      "stars": 67,
+      "createdDate": "2026-05-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260522-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-22",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "texsellix/polymarket-trading-bot",
+      "summary": "Polymarket CLI-only trading bot —— 終端機跟單鯨魚、跑自動策略、一行下單，沒有 dashboard、沒有 setup。看政治/事件型預測市場時可玩。",
+      "tags": [
+        "cli",
+        "trading",
+        "automation"
+      ],
+      "url": "https://github.com/texsellix/polymarket-trading-bot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-08+stars%3A%3E20&type=repositories",
+      "stars": 245,
+      "createdDate": "2026-05-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260522-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-22",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "archestra-ai/archestra",
+      "summary": "Enterprise AI Platform：guardrails + MCP registry + gateway + orchestrator 一條龍。AGPL-3.0。組 team-scale agent infra 的開源底盤候選。",
+      "tags": [
+        "mcp",
+        "agent-framework",
+        "enterprise"
+      ],
+      "url": "https://github.com/archestra-ai/archestra",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 3722,
+      "createdDate": "2025-07-15",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260522-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-22",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "datawhalechina/easy-vibe",
+      "summary": "Datawhale 中文「vibe coding 2026」入門課，從零教初學者用 AI coding agent。社群推廣素材或要找新人快速入門 AI coding 時的中文資源。",
+      "tags": [
+        "vibe-coding",
+        "ai-coding",
+        "learning"
+      ],
+      "url": "https://github.com/datawhalechina/easy-vibe",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 13764,
+      "createdDate": "2025-12-28",
+      "license": "none"
     }
   ],
   "lastUpdated": "2026-05-22",
