@@ -40957,8 +40957,184 @@
       "price": null,
       "vram": "docs",
       "license": "MIT"
+    },
+    {
+      "id": "20260522-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Karpathy 跳槽 Anthropic pre-training — 用 Claude 訓練下一代 Claude",
+      "summary": "5/19 Karpathy 在 X 宣布加入 Anthropic Nick Joseph 的 pre-training team。新組任務：用 Claude 加速 pre-training research 本身，目標是 recursive self-improvement。離 OpenAI、Tesla、收掉 Eureka Labs 後回 frontier R&D。OpenAI/xAI 元老 talent 三年內外流殆盡。",
+      "tags": [
+        "paradigm-shift",
+        "ai-talent",
+        "pre-training",
+        "recursive-self-improvement",
+        "anthropic",
+        "karpathy"
+      ],
+      "url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic Managed Agents 加 MCP tunnels + self-hosted sandboxes",
+      "summary": "5/19 Code with Claude London 補丁：MCP tunnels 讓 agent 走私網路打企業內部 MCP server；sandbox 可整段搬到客戶自己的雲，orchestration loop 留在 Anthropic、檔案不出企業 perimeter。把 Managed Agents 從 SaaS 拉進 zero-trust 邊界。",
+      "tags": [
+        "paradigm-shift",
+        "managed-agents",
+        "mcp",
+        "mcp-tunnels",
+        "enterprise-security",
+        "anthropic"
+      ],
+      "url": "https://www.testingcatalog.com/anthropic-launches-new-secure-tools-for-claude-managed-agents/",
+      "source": "9to5Mac",
+      "sourceUrl": "https://9to5mac.com/2026/05/19/anthropic-enhances-claude-managed-agents-with-two-new-privacy-and-security-features/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler 把 Vibe Coding 收進 bliki",
+      "summary": "5/21 Fowler 接受窄定義：vibe coding = prompt LLM 蓋 app、不看 code，跟 agentic engineering 切清楚。對 throwaway prototype/個人 utility OK，對 production code 是 hazardous。Fowler 收 bliki 等於正式認證這術語是 vocabulary 不是 meme。",
+      "tags": [
+        "paradigm-shift",
+        "vibe-coding",
+        "agentic-engineering",
+        "terminology"
+      ],
+      "url": "https://martinfowler.com/bliki/VibeCoding.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/bliki/VibeCoding.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain Interrupt 2026 全推 GA：Managed Deep Agents / LangSmith Engine / SmithDB",
+      "summary": "Managed Deep Agents = API-first hosted runtime（plan/tool/subagent/檔案/long-horizon）；LangSmith Engine public beta 跟 production traces、聚類錯誤、開 PR 修；SmithDB 為 agent observability 量身打造，LangSmith 核心 workload 快 15x（P50 trace tree 92ms）。LangChain 從 SDK 廠變 agent ops 平台。",
+      "tags": [
+        "paradigm-shift",
+        "managed-deep-agents",
+        "langsmith-engine",
+        "smithdb",
+        "agent-observability",
+        "langchain"
+      ],
+      "url": "https://www.langchain.com/blog/interrupt-2026-overview",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/interrupt-2026-overview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Birgitta Böckeler — Maintainability sensors for coding agents",
+      "summary": "5/20 Fowler 站發表 Böckeler（Thoughtworks Distinguished Engineer）實戰文：怎麼設計 sensor 讓 coding agent 不只顧 functional correctness、也顧 architectural fitness 跟 maintainability。harness engineering 從理論落到 codebase 級 metric。",
+      "tags": [
+        "harness-engineering",
+        "maintainability-sensors",
+        "coding-agent",
+        "thoughtworks"
+      ],
+      "url": "https://martinfowler.com/articles/sensors-for-coding-agents.html",
+      "source": "martinfowler.com",
+      "sourceUrl": "https://martinfowler.com/articles/sensors-for-coding-agents.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DeepMind Co-Scientist 登 Nature — 多 agent Gemini 跑科學假設",
+      "summary": "5/19 DeepMind 發表，跑在 Gemini 上的 multi-agent 系統：generator/reflection/ranking/evolution/proximity/meta-review 六 agent 互相辯論演化新假設。Stanford/Imperial 已在新藥重定位、抗藥性、肝纖維化拿到驗證結果。Aletheia 之後又一個 verifiable 科研框架。",
+      "tags": [
+        "multi-agent",
+        "ai-science",
+        "deepmind",
+        "gemini",
+        "co-scientist"
+      ],
+      "url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MIT Tech Review — Code with Claude 展示 coding 的未來（不想看也會來）",
+      "summary": "5/21 MTR 收 Code with Claude SF 紀要：Anthropic 在台上把 Claude Code 操到自治寫 PR、自己 review、自己跑 Playwright；現場觀眾分兩半，一半亢奮、一半臉色凝重。MTR 結論：軟體工程行業正被重寫，CTO 早晚要對員工怎麼跟 agent 分工攤牌。",
+      "tags": [
+        "coding-agent",
+        "future-of-work",
+        "anthropic",
+        "claude-code"
+      ],
+      "url": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
+      "source": "MIT Technology Review",
+      "sourceUrl": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft Purview 出 Anthropic Claude connector — Claude 進企業治理面板",
+      "summary": "5/21 Microsoft 安全月報：Purview 新出 Anthropic Claude connector，把 Claude Enterprise / Platform 的 feed 活動 + chat 對話拉進 Microsoft 既有的 DLP / insider risk / compliance 平面。意義不在 feature，是 Microsoft 默認 Claude 在企業內跟 Copilot 並存——多模型治理時代正式上工。",
+      "tags": [
+        "enterprise-governance",
+        "ai-compliance",
+        "microsoft-purview",
+        "anthropic",
+        "multi-model"
+      ],
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/21/whats-new-in-microsoft-security-may-2026/",
+      "source": "Microsoft Security Blog",
+      "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/05/21/whats-new-in-microsoft-security-may-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-21",
-  "updatedAt": "2026-05-20T21:50:00.414666Z"
+  "lastUpdated": "2026-05-22",
+  "updatedAt": "2026-05-21T21:32:52.486271+00:00"
 }
