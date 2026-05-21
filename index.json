@@ -40726,6 +40726,237 @@
       "stars": 23,
       "createdDate": "2026-05-12",
       "license": "unknown"
+    },
+    {
+      "id": "20260522-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Supertone/supertonic-3",
+      "summary": "韓國 Supertone 釋出 Supertonic 3 TTS 模型：99M 參數、純 ONNX on-device 推理，語言支援從 5 → 31，朗讀穩定度大幅提升（少 repeat/skip），講者相似度也比 v2 強。CPU 就跑得動，速度比 A100 上的大模型還快。",
+      "tags": [
+        "tts_speech",
+        "on-device",
+        "multilingual"
+      ],
+      "url": "https://huggingface.co/Supertone/supertonic-3",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "<2GB",
+      "license": "open-weights"
+    },
+    {
+      "id": "20260522-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenBMB/VoxCPM (VoxCPM2)",
+      "summary": "2B 參數的 tokenizer-free TTS，端到端 diffusion autoregressive 架構；30 語言、Voice Design（純文字描述生新音色）、Controllable Cloning、48kHz studio-quality 輸出。RTX 4090 上 RTF 0.3，nano-vLLM/vLLM-Omni 可到 0.13。Apache-2.0、商用可。",
+      "tags": [
+        "tts_speech",
+        "voice_cloning",
+        "vllm"
+      ],
+      "url": "https://github.com/OpenBMB/VoxCPM",
+      "source": "GitHub Topics: text-to-speech",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "~6-8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260522-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ResembleAI/Dramabox",
+      "summary": "ResembleAI 新出的 TTS 模型（HF trending 8 天）。從 ResembleAI 的調性看通常是表情豐富、適合戲劇與長對白的合成路線。可作為 F5-TTS / CosyVoice 之外的另一個 zero-shot 選項評估。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://huggingface.co/ResembleAI/Dramabox",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "TBD",
+      "license": "see model card"
+    },
+    {
+      "id": "20260522-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "unsloth/Qwen3.6-27B-MTP-GGUF",
+      "summary": "Unsloth 對 Qwen3.6-27B 做 MTP（multi-token prediction）+ GGUF 量化版，搭 llama.cpp 跑 speculative decoding 提速。27B Q4 量化約 16-18GB，5070 Ti 16GB 邊緣可行（Q3 / 部分 offload 較穩）。478k 下載。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "~16-18GB Q4",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260522-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "tashfeenahmed/freellmapi",
+      "summary": "把 11 個 LLM 供應商整合成單一 OpenAI-compatible endpoint，前端只要一個 base URL 就能切換。對多 model 開發、cost routing、降低 vendor lock 很實用。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "proxy-only",
+      "license": "see repo"
+    },
+    {
+      "id": "20260522-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "IDEA-Research/Rex-Omni",
+      "summary": "CVPR 2026 論文：把 object detection 重新定義成「next-point prediction」的 3B MLLM。提供 transformers / vLLM 雙 backend，已釋出 AWQ 量化版（存儲省 50%）、fine-tuning 與 SFT+GRPO pointing task 訓練腳本。3B AWQ 可在 5070 Ti 流暢跑。",
+      "tags": [
+        "cv_ocr",
+        "multimodal",
+        "vlm"
+      ],
+      "url": "https://github.com/IDEA-Research/Rex-Omni",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~6GB AWQ",
+      "license": "see repo"
+    },
+    {
+      "id": "20260522-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "microsoft/Fara-7B",
+      "summary": "Microsoft 出的 7B（實際 8B）image-text-to-text VLM，HF trending（591 likes）。屬於可在地化部署的中型 VLM，適合做 screen understanding / 工具叫用 agent 的視覺輸入端，量化後可在 16GB 跑。",
+      "tags": [
+        "image_gen",
+        "cv_ocr",
+        "vlm"
+      ],
+      "url": "https://huggingface.co/microsoft/Fara-7B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "~6-10GB",
+      "license": "see model card"
+    },
+    {
+      "id": "20260522-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HiDream-ai/HiDream-O1-Image",
+      "summary": "9B 的 image-text-to-image 模型（HiDream O1 系列），HF trending（417 likes，21.6k 下載）。新一代 image gen 模型，量化後在 5070 Ti 應可跑單張，做 cover art / 視覺素材的 SD/Flux 替代品評估標的。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "~10-14GB",
+      "license": "see model card"
+    },
+    {
+      "id": "20260522-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "bytedance-research/Lance",
+      "summary": "字節跳動研究院的 Any-to-Any 模型，HF trending 第一名（556 likes，1 天前更新）。Any-to-Any 通常意指跨模態（文/圖/音/視）統一輸入輸出，方向上跟 OmniGen / Janus 一類。細節需看 model card。",
+      "tags": [
+        "image_gen",
+        "multimodal"
+      ],
+      "url": "https://huggingface.co/bytedance-research/Lance",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "TBD",
+      "license": "see model card"
+    },
+    {
+      "id": "20260522-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "can1357/oh-my-pi",
+      "summary": "終端機裡的 AI coding agent：hash-anchored edits、優化過的 tool harness、內建 LSP / Python / browser / sub-agents。GitHub trending 一日 +483 stars，定位類似 Codex / Claude Code 的 CLI agent 但更注重 token 效率。",
+      "tags": [
+        "ai_devtools",
+        "coding_agent"
+      ],
+      "url": "https://github.com/can1357/oh-my-pi",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "CLI",
+      "license": "see repo"
+    },
+    {
+      "id": "20260522-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "antoinezambelli/forge",
+      "summary": "Python framework 做 self-hosted LLM tool-calling 與 multi-step agentic workflow。GitHub trending +449 stars，主打把 LLM agent 變成「可組合的 Python 物件」，適合不想吃 LangChain / LlamaIndex 抽象層的人。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/antoinezambelli/forge",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "framework",
+      "license": "see repo"
+    },
+    {
+      "id": "20260522-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "microsoft/edgeai-for-beginners",
+      "summary": "微軟出的 Edge AI 入門課程：講 fundamentals、intelligent agents、邊緣推理部署。對想把 5070 Ti / Jetson / Mac 當「本地 inference box」做 productize 的人是不錯的系統性參考材料。",
+      "tags": [
+        "infra_runtime",
+        "edge_ai"
+      ],
+      "url": "https://github.com/microsoft/edgeai-for-beginners",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "docs",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-21",
