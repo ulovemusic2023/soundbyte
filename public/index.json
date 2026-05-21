@@ -41133,6 +41133,86 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260522-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-22",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Karpathy 加入 Anthropic，用 Claude 加速 Claude 的 pre-training",
+      "summary": "OpenAI 原始 11 人共同創辦人 Karpathy 加入 Anthropic 的 pre-training 團隊，任務是用 Claude 自己來加速 pre-training 研究。Pre-training 是 frontier model 最貴的階段，若能用 AI 加速 AI 自己的訓練，整個產業的單位經濟學會被重寫。",
+      "tags": [
+        "recursive-rd",
+        "frontier-models",
+        "talent-moves"
+      ],
+      "url": "https://thenextweb.com/news/andrej-karpathy-joins-anthropic-openai-cofounder-pretraining",
+      "source": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/andrej-karpathy-joins-anthropic-openai-cofounder-pretraining",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-22",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "Prisma：從 vibe coding 升級到 agentic engineering",
+      "summary": "Prisma 內部 AI agent workflow：難的不是 model 能力，是周邊的 process、role、跨 repo context。Drive 流程把 unit of work 從 task 換成 project，由單一 Maker 端到端負責；跨 repo doc monorepo 給 agent 共同 context；流程實作為 agent skills。原則：Engineers direct, agents execute, engineers validate.",
+      "tags": [
+        "agentic-engineering",
+        "dev-process",
+        "ai-workflow"
+      ],
+      "url": "https://www.prisma.io/blog/agentic-engineering-at-prisma",
+      "source": "Prisma Engineering",
+      "sourceUrl": "https://www.prisma.io/blog/agentic-engineering-at-prisma",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-22",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Marc Andreessen：AI 不是自動化，是 universal cognitive leverage",
+      "summary": "Andreessen 把 AI 框架從「取代人類」翻成「通用認知槓桿」——個人被工具放大的程度前所未有。預測未來幾年會出現 ChatGPT-moment for robots，AI 同時做家務又能解量子物理。重點：別問 AI 能不能取代你，問你能不能用它把自己放大 10 倍。",
+      "tags": [
+        "ai-leverage",
+        "mental-model",
+        "physical-ai"
+      ],
+      "url": "https://podscripts.co/podcasts/a16z-podcast/marc-andreessen-on-ai-california-and-the-future-of-america-joe-rogan",
+      "source": "a16z Podcast / Joe Rogan Experience",
+      "sourceUrl": "https://podscripts.co/podcasts/a16z-podcast/marc-andreessen-on-ai-california-and-the-future-of-america-joe-rogan",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260522-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-22",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "No niche is too niche. — Shopify Commerce Current",
+      "summary": "Shopify 2026 數據：成長最快的不是衣服、電子、美妝那些大類，而是上千個新利基——交易卡、馬匹乾草網、皮革手作。痴迷可以變生意，前提是平台讓你直接觸達 true fans。",
+      "tags": [
+        "niche-economy",
+        "creator-economy",
+        "shopify-data"
+      ],
+      "url": "https://shopify.substack.com/p/commerce-current-vol-4",
+      "source": "Shopify Commerce Current",
+      "sourceUrl": "https://shopify.substack.com/p/commerce-current-vol-4",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-22",
