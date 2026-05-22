@@ -41356,8 +41356,228 @@
       "stars": 13764,
       "createdDate": "2025-12-28",
       "license": "none"
+    },
+    {
+      "id": "20260523-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "k2-fsa/OmniVoice",
+      "summary": "600+ 語言 zero-shot TTS，diffusion language model 架構，voice cloning + voice design 可控。RTF 0.025，NVIDIA + Apple Silicon + Intel Arc XPU 全支援。",
+      "tags": [
+        "tts_speech",
+        "zero-shot tts",
+        "voice cloning",
+        "multilingual tts"
+      ],
+      "url": "https://github.com/k2-fsa/OmniVoice",
+      "source": "GitHub k2-fsa",
+      "sourceUrl": "https://github.com/k2-fsa/OmniVoice",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260523-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ollama v0.24.0",
+      "summary": "2026-05-14 釋出。Gemma 4 26B GPU 推論跳到 60 tok/s，整體 GPU utilization 大幅改善。仍是 llama.cpp + Apple Silicon MLX 的最簡單包裝。",
+      "tags": [
+        "ollama",
+        "llm_inference",
+        "local inference"
+      ],
+      "url": "https://github.com/ollama/ollama",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.24.0",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "MIT"
+    },
+    {
+      "id": "20260523-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp build b9222",
+      "summary": "2026-05-19 build。新增 MTP speculative decoding 對 GGUF 模型 1.4–2x 加速。CUDA/ROCm/Metal/Vulkan/SYCL/RISC-V 全支援，量化從 1.5-bit 到 8-bit。",
+      "tags": [
+        "llama.cpp",
+        "gguf",
+        "quantization",
+        "speculative decoding"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260523-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vllm-project/vllm v0.21.0",
+      "summary": "2026-05-15 釋出。高吞吐量 Python 推論引擎，continuous batching + prefix caching + CUDA graphs。多用戶服務端首選。",
+      "tags": [
+        "vllm",
+        "llm_inference",
+        "model serving"
+      ],
+      "url": "https://github.com/vllm-project/vllm",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.21.0",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260523-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Michael-A-Kuykendall/shimmy",
+      "summary": "Rust 寫的 single-binary OpenAI 兼容 inference server，零 Python。支援 GGUF + SafeTensors，熱換模型、auto-discovery。v1.9.0 一個下載含所有 GPU backend。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "model serving"
+      ],
+      "url": "https://github.com/Michael-A-Kuykendall/shimmy",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/Michael-A-Kuykendall/shimmy",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260523-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "cactus-compute/cactus",
+      "summary": "行動裝置 / wearable 的低延遲 AI 引擎。ARM SIMD kernels 自寫，zero-copy memory mapping，RAM 用量 10x 低，NPU-accelerated prefill。speech+vision+language 單一 SDK。",
+      "tags": [
+        "llm_inference",
+        "on-device",
+        "edge inference"
+      ],
+      "url": "https://github.com/cactus-compute/cactus",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/cactus-compute/cactus",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260523-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "tronghieuit/tiny-tts",
+      "summary": "1.6M 參數的英文 TTS，極輕量。對嵌入式或想在 Pi/手機上跑 TTS 的人是研究材料。",
+      "tags": [
+        "tts_speech",
+        "neural tts"
+      ],
+      "url": "https://github.com/tronghieuit/tiny-tts",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "待確認"
+    },
+    {
+      "id": "20260523-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "prakharsr/audiobook-creator",
+      "summary": "把書轉成多角色配音 audiobook 的 pipeline。可分配不同角色不同聲音，自動化生成完整音檔。podcast / audiobook 工作流即用模版。",
+      "tags": [
+        "tts_speech",
+        "voice cloning"
+      ],
+      "url": "https://github.com/prakharsr/audiobook-creator",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "待確認"
+    },
+    {
+      "id": "20260523-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "facebookresearch/sam3",
+      "summary": "Meta Segment Anything Model 3 官方 repo，提供 inference + finetuning code、模型 checkpoints、example notebooks。視覺基礎模型重要更新。",
+      "tags": [
+        "segment anything",
+        "sam",
+        "image recognition"
+      ],
+      "url": "https://github.com/facebookresearch/sam3",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260523-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "gpustack/gpustack",
+      "summary": "GPU cluster manager，自動配置與調度 vLLM/SGLang/TensorRT-LLM。支援 LMCache/HiCache 擴展 KV cache 降 TTFT，內建 EAGLE3/MTP/N-grams speculative decoding。",
+      "tags": [
+        "infra_runtime",
+        "model serving",
+        "gpu monitoring"
+      ],
+      "url": "https://github.com/gpustack/gpustack",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/llm-inference",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260523-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-05-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "plastic-labs/honcho",
+      "summary": "stateful agent 用的 memory library。做長期記憶建模（user state、preference、relationship），不只是把 conversation history 丟 LLM context。",
+      "tags": [
+        "ai_devtools",
+        "memory",
+        "agent"
+      ],
+      "url": "https://github.com/plastic-labs/honcho",
+      "source": "GitHub Trending Python",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "AGPL-3.0"
     }
   ],
   "lastUpdated": "2026-05-22",
-  "updatedAt": "2026-05-21T21:32:52.486271+00:00"
+  "updatedAt": "2026-05-23T05:10:00+08:00"
 }
