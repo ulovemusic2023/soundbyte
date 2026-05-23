@@ -41874,6 +41874,123 @@
       "stars": 6438,
       "createdDate": "2025-02-19",
       "license": "MIT"
+    },
+    {
+      "id": "20260524-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "snakers4/silero-vad v6.2.1",
+      "summary": "Enterprise 級 voice activity detector：30ms chunk 在 CPU <1ms，2MB JIT 模型，6000+ 語言訓練、8k/16k Hz 雙採樣率。最新版 ONNX runtime 改 optional，部署更彈性。對 SVC pipeline 切片很合用。",
+      "tags": [
+        "asr",
+        "tts_speech",
+        "speaker_encoder"
+      ],
+      "url": "https://github.com/snakers4/silero-vad",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/23/snakers4-silero-vad.html",
+      "price": null,
+      "vram": "<2MB model, CPU-friendly",
+      "license": "MIT"
+    },
+    {
+      "id": "20260524-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Natooz/MidiTok v3.0.6",
+      "summary": "MIDI / ABC 樂譜檔轉成 token sequence 給 ML 模型。支援 10+ tokenization 方法（REMI、Compound Word…），內建 BPE/Unigram/WordPiece 訓練、HF Hub 整合、data augmentation，可直出 PyTorch/TF/NumPy。音樂生成/轉錄/分析的 pipeline 基礎。",
+      "tags": [
+        "audio_music_ai",
+        "music_understanding",
+        "music_transcription"
+      ],
+      "url": "https://github.com/Natooz/MidiTok",
+      "source": "GitHub Topics (music-generation)",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "price": null,
+      "vram": "tokenizer only, CPU",
+      "license": "MIT"
+    },
+    {
+      "id": "20260524-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVlabs/LongLive 2.0",
+      "summary": "NVIDIA 的 long-video generation infra：NVFP4 (4-bit) 量化 training+inference、balanced sequence parallelism、multi-shot 影片、2-step distillation 達 45.7 FPS。5B 主力 + 1.3B 小版本。RTX 5070 Ti 16GB 走 NVFP4 應能塞推論。",
+      "tags": [
+        "image_gen",
+        "video_generation"
+      ],
+      "url": "https://github.com/NVlabs/LongLive",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "5B model, NVFP4 fits 16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260524-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "sapientinc/HRM-Text",
+      "summary": "從零 pretrain 1B 文字模型，宣稱比傳統作法少 130-600x compute、150-900x data。架構：hierarchical recurrent + task completion + latent space reasoning。實測：0.6B 8×H100 ~50hr (~$800)；1B 16×H100 ~46hr (~$1,472)。Tech：PrefixLM packing + FlashAttention 3 + FSDP2。",
+      "tags": [
+        "llm_training",
+        "pretraining"
+      ],
+      "url": "https://github.com/sapientinc/HRM-Text",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/23/sapientinc-HRM-Text.html",
+      "price": null,
+      "vram": "training cloud-only; 1B inference local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260524-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenPipe/ART",
+      "summary": "Agent Reinforcement Trainer：用 GRPO 訓練 multi-step agents（email search、2048、Tic Tac Toe、LangGraph）。相容 vLLM/HF transformers 模型（Qwen 3.6/2.5、Llama 等 Unsloth 支援的）。本地 GPU 或 W&B serverless 都行（號稱 cost -40%、速度 +28%）。",
+      "tags": [
+        "llm_training",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/OpenPipe/ART",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "depends on base model",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260524-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "chenfengxu714/StreamDiffusionV2",
+      "summary": "Real-time streaming video diffusion pipeline，支援 single + multi-GPU、動態 denoising step、彈性 FPS、Blackwell GPU 支援。MLSys 2026 Best Research Paper Award。Linux + NVIDIA only。",
+      "tags": [
+        "image_gen",
+        "video_generation",
+        "real_time"
+      ],
+      "url": "https://github.com/chenfengxu714/StreamDiffusionV2",
+      "source": "MAGI Archive",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/23/chenfengxu714-StreamDiffusionV2.html",
+      "price": null,
+      "vram": "fits 16GB with smaller models",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-05-23",
