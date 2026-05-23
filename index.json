@@ -41991,6 +41991,135 @@
       "price": null,
       "vram": "fits 16GB with smaller models",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260524-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare CASB 整合 Anthropic Claude Compliance API",
+      "summary": "Cloudflare 把 cloud access security broker (CASB) 接上 Claude Compliance API — 安全/合規團隊可直接在 Cloudflare Dashboard 監控 Claude Enterprise 使用情況（chats、檔案上傳、admin 操作），不需 endpoint agent。Anthropic 把 AI app 從「shadow IT 黑洞」變成可被 SIEM/CASB/DLP 治理的一級 SaaS。",
+      "tags": [
+        "ai-agent",
+        "enterprise-security",
+        "compliance",
+        "paradigm-shift",
+        "casb"
+      ],
+      "url": "https://blog.cloudflare.com/casb-anthropic-integration/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/casb-anthropic-integration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Compliance API：28+ 安全廠商同日宣布整合",
+      "summary": "CrowdStrike (Falcon SIEM / Charlotte SOAR / AIDR)、Cloudflare、Netskope、Relativity 等 28+ enterprise security 廠商在 5/21–22 集體宣布整合 Anthropic Claude Compliance API。audit log + conversation content 變成可進 SIEM/CASB/DLP/SOAR 的一級遙測。",
+      "tags": [
+        "ai-agent",
+        "enterprise-security",
+        "audit-logs",
+        "paradigm-shift",
+        "governance"
+      ],
+      "url": "https://www.bankinfosecurity.com/everyone-suddenly-wants-claudes-audit-logs-a-31753",
+      "source": "BankInfoSecurity",
+      "sourceUrl": "https://www.bankinfosecurity.com/everyone-suddenly-wants-claudes-audit-logs-a-31753",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "The Pulse: Antigravity 2.0 拿掉了新 IDE 的 'IDE'",
+      "summary": "Pragmatic Engineer 整理 Google Antigravity 2.0 IDE 改版的爆量負評：bug 多、UX 設計差、model 支援不完整、Gemini token 用量爆增。Gergely 指出 agentic IDE 想取代傳統編輯器面臨的核心矛盾 — agent 行為不可預測時，UX 從輔助變成阻力。",
+      "tags": [
+        "agentic",
+        "coding-agent",
+        "ide",
+        "dx"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Uber Eats 用 real-time signals + listwise ranking 翻新餐廳推薦",
+      "summary": "Uber 把餐廳推薦從 batch pipeline 改成 real-time 訊號 + listwise ranking — clicks/searches/orders streaming 進 feature 層，feature preprocessing 跟 model inference 解耦以撐 low-latency / high-QPS。靠 historical session replay 確保 online/offline parity。",
+      "tags": [
+        "architecture",
+        "stream-processing",
+        "ml-platform",
+        "real-time",
+        "microservices"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/uber-eats-ranking-system/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/uber-eats-ranking-system/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：記憶體短缺正在重新訂價消費電子",
+      "summary": "Simon Willison 整理 DRAM / NAND 短缺對消費電子定價的衝擊。對自己跑 LLM / build AI infra 的工程師：本地推論硬體（RAM、SSD、GPU VRAM 周邊）成本壓力直接拉高，採購規劃要納入。",
+      "tags": [
+        "ai-infra",
+        "hardware",
+        "cost"
+      ],
+      "url": "https://simonwillison.net/2026/May/22/memory-shortage/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/22/memory-shortage/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Dual-LLM / triple-agent pattern：多模態 agent 系統的攻擊面與架構防禦",
+      "summary": "Reader/Engineer/Validator 三層 agent 隔離：吃 pixels 的 reader 沒權限做決策；engineer 只看 sanitized 結構化資料；deterministic Validator 在 loop 內把關。專門對付 multimodal prompt injection / steganographic 攻擊。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "prompt-injection",
+        "multi-agent",
+        "architecture"
+      ],
+      "url": "https://dev.to/toxy4ny/when-ai-reads-blueprints-the-hidden-attack-surface-of-multimodal-engineering-intelligence-2d7e",
+      "source": "dev.to (toxy4ny)",
+      "sourceUrl": "https://dev.to/toxy4ny/when-ai-reads-blueprints-the-hidden-attack-surface-of-multimodal-engineering-intelligence-2d7e",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-23",
