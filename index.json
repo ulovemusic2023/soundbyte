@@ -42120,6 +42120,106 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260524-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-24",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Your Most Improbable Life",
+      "summary": "KK 提出新框架:人生目標應該成為「最不可能的自己」。AI 跑在「可預測」之上,所以越不尋常、越獨特的人生路徑越難被取代。物理對照:宇宙整體走向熱寂(同質化),局部能反向產生 exotropy — 生命本身就是最強的例子。",
+      "tags": [
+        "ai-resistant",
+        "leverage",
+        "originality"
+      ],
+      "url": "https://kk.org/thetechnium/your-most-improbable-life/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/your-most-improbable-life/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-24",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Google I/O, World Models, I/O Spaghetti",
+      "summary": "Ben Thompson 觀察 Google I/O 2026:把 AI 灑在每個產品上,有些 coherent、有些只是 spaghetti。背後是 DeepMind 長期研究路徑(world models)跟 Google 商業 KPI 並不對齊。大公司做 AI 是研究信念 vs 季度數字的拉鋸。",
+      "tags": [
+        "google",
+        "ai-strategy",
+        "organizational-alignment"
+      ],
+      "url": "https://stratechery.com/2026/google-i-o-world-models-i-o-spaghetti/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/google-i-o-world-models-i-o-spaghetti/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-24",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "The memory shortage is causing a repricing of consumer electronics",
+      "summary": "HBM 從 wafer 產能 2% 飆到年底 20%,而 1GB HBM 用掉 DDR/LPDDR 三倍以上產能。記憶體三大廠又學乖了「寧可短缺」。結果:消費端 DDR/LPDDR 會貴很久,100 美元以下手機(非洲、南亞)首當其衝。AI 基建成本正被全球消費者分攤。",
+      "tags": [
+        "ai-infrastructure",
+        "hardware",
+        "hidden-costs"
+      ],
+      "url": "https://simonwillison.net/2026/May/22/memory-shortage/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/22/memory-shortage/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-24",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "A Return to Code",
+      "summary": "Naval 幾十年沒寫 code,但 2025/12 Claude Opus 4.5 之後重新上癮。關鍵不是 AI 會寫 code,而是「開始寫 code 的 activation energy」掉到接近零 — 不再需要學整套工具鏈。任何過去「門檻 = 工具鏈整合」的領域,都值得重新評估。",
+      "tags": [
+        "vibe-coding",
+        "activation-energy",
+        "solo-founder"
+      ],
+      "url": "https://nav.al/code",
+      "source": "Naval Ravikant • Nivi",
+      "sourceUrl": "https://nav.al/code",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260524-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-24",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Valuing Content on the Agentic Web (Parag Agarwal interview)",
+      "summary": "前 Twitter CEO Parag Agarwal 指出:當網頁主要使用者從人變成 agent,廣告模型崩解。需要新機制 — metering、licensing、給 agent 用內容的付費協議。他做的 Parallel 就是這層。Agentic web 不是換介面,是換經濟學。",
+      "tags": [
+        "agentic-web",
+        "monetization",
+        "content-economy"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-parallel-founder-parag-agarwal-about-valuing-content-on-the-agentic-web/",
+      "source": "Parag Agarwal • Ben Thompson",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-parallel-founder-parag-agarwal-about-valuing-content-on-the-agentic-web/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-23",
