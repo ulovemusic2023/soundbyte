@@ -42220,6 +42220,152 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260524-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-24",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "perplexityai/bumblebee",
+      "summary": "Perplexity 開源的 read-only developer endpoint scanner，掃描磁碟上的 npm/pip/extension/dev-tool metadata，檢查你是否中標已知的 supply-chain 漏洞。Shai-Hulud 等供應鏈攻擊頻發後的剛需工具。",
+      "tags": [
+        "security",
+        "supply-chain",
+        "scanner",
+        "perplexity"
+      ],
+      "url": "https://github.com/perplexityai/bumblebee",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/perplexityai/bumblebee",
+      "stars": 1067,
+      "createdDate": "2026-05-20",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260524-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-24",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "openclaw/clawpatch",
+      "summary": "openclaw 官方推出的 PR review + bug patch agent — 「Review code. Patch bugs. Land PRs.」三件事一條龍。和 OpenClaw 工作流深度整合，專門做 code review + auto-fix。",
+      "tags": [
+        "pr-review",
+        "auto-fix",
+        "openclaw",
+        "coding-agent"
+      ],
+      "url": "https://github.com/openclaw/clawpatch",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/openclaw/clawpatch",
+      "stars": 651,
+      "createdDate": "2026-05-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260524-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-24",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "deeplethe/forkd",
+      "summary": "Fork() for AI agent microVMs。從 warm parent 在 ~100ms spawn 100 個子 VM，BRANCH 一個 live VM ~150ms。KVM-isolated + snapshot CoW。做 parallel agent / sandbox 執行必看。",
+      "tags": [
+        "microvm",
+        "agent-infra",
+        "kvm",
+        "sandbox"
+      ],
+      "url": "https://github.com/deeplethe/forkd",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/deeplethe/forkd",
+      "stars": 642,
+      "createdDate": "2026-05-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260524-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-24",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "evilsocket/audit",
+      "summary": "evilsocket（Bettercap 作者）推出的 8-stage vulnerability-discovery agent。把弱點挖掘流程做成 agent pipeline，是 red team 與 security research 都會關注的指標。",
+      "tags": [
+        "security",
+        "vulnerability",
+        "agent",
+        "red-team"
+      ],
+      "url": "https://github.com/evilsocket/audit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/evilsocket/audit",
+      "stars": 443,
+      "createdDate": "2026-05-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260524-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-24",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "nkzw-tech/codiff",
+      "summary": "純粹的 fast local diff viewer。沒有 AI、沒有雲端，本地跑、夠快、夠輕。日常被 diff 卡頓的人值得換工具。",
+      "tags": [
+        "dev-tool",
+        "diff",
+        "local-first"
+      ],
+      "url": "https://github.com/nkzw-tech/codiff",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/nkzw-tech/codiff",
+      "stars": 457,
+      "createdDate": "2026-05-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260524-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-24",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "phuryn/pm-brain",
+      "summary": "PM Brain OS — 用 Markdown 寫的 Product Manager 第二大腦。把 PM 工作流（roadmap / spec / user research / 決策紀錄）封裝成 Claude Code skill set，整個系統可被 LLM 操作。給 founder 也適用。",
+      "tags": [
+        "pm",
+        "second-brain",
+        "claude-code",
+        "markdown"
+      ],
+      "url": "https://github.com/phuryn/pm-brain",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/phuryn/pm-brain",
+      "stars": 196,
+      "createdDate": "2026-05-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260524-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-24",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "basketikun/infinite-canvas",
+      "summary": "中文社群推出的 AI 創作無限畫布工作台。整合 AI 生圖、參考圖編輯、畫布編排、對話助手、prompt 庫、素材管理。AGPL-3.0 授權，要當 SaaS 跑要注意條款。",
+      "tags": [
+        "infinite-canvas",
+        "ai-image",
+        "creative-tool",
+        "agpl"
+      ],
+      "url": "https://github.com/basketikun/infinite-canvas",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/basketikun/infinite-canvas",
+      "stars": 454,
+      "createdDate": "2026-05-18",
+      "license": "AGPL-3.0"
     }
   ],
   "lastUpdated": "2026-05-23",
