@@ -42366,8 +42366,175 @@
       "stars": 454,
       "createdDate": "2026-05-18",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260525-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "defilantech/llmkube v0.7.12",
+      "summary": "Kubernetes operator 多引擎 local LLM 部署：llama.cpp / vLLM / TGI / mlx-server，Apple Silicon Metal 和 NVIDIA GPU 都吃。5/24 推 v0.7.12，新增 ModelRouter CRD 跨引擎路由（per-rule timeout、circuit breaker、fail-closed PII rules）。自架 LLM 平台值得追。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/defilantech/llmkube",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/defilantech/llmkube/releases",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260525-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "earendil-works/pi v0.75.5",
+      "summary": "AI agent toolkit — coding agent CLI + 統一 LLM API + TUI/web UI + Slack bot + vLLM pods。多 provider 抽象（OpenAI / Anthropic / Google），強調 supply-chain 安全（pinned deps、lockfile verify、shrinkwrap）。要做 agent 產品的 framework 選項。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/earendil-works/pi",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "shiyu-coder/Kronos",
+      "summary": "第一個 open-source 金融 K-line 基礎模型，跨 45 個全球交易所訓練。Decoder-only transformer 兩段式設計：先把 OHLCV 量化成階層 discrete tokens，再 autoregressive 訓練。Mini 4.1M → large 499.2M 四種尺寸，16GB VRAM 都吃得下。",
+      "tags": [
+        "llm_training",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "anthropics/knowledge-work-plugins",
+      "summary": "Anthropic 官方出的 Claude Cowork plugin 庫，給知識工作者用（非 dev-only）。跟 claude-plugins-official 平行軌道，這個更聚焦 office / vertical 場景。Claude Code skills 生態正往一般辦公族擴張。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260525-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AIScientists-Dev/WorldSeed",
+      "summary": "\"More is Different\" — multi-agent world engine 讓 AI 角色在世界裡互動、結盟、競爭。內建 perception filtering、rule-based + AI-judged outcome、emergent behavior 模擬（協作研究、間諜、組織動態）。Generative Agents 那條線延續。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/AIScientists-Dev/WorldSeed",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "manaflow-ai/cmux",
+      "summary": "macOS 原生 terminal（基於 Ghostty + Swift + AppKit，非 Electron），專為 AI coding agent 設計。Vertical tabs + notifications，內建支援 Claude Code / Codex / OpenCode / Pi / Amp / Cursor CLI / Gemini / Copilot / Grok 十幾個 agents。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/manaflow-ai/cmux",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260525-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "mukul975/Anthropic-Cybersecurity-Skills",
+      "summary": "754 個結構化 cybersecurity skills，對應 5 個 security framework，給 AI agent 用。Security ops 自動化的 skill base，跟 KaliGPT 那條 agentic 紅隊路線呼應。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "看 repo"
+    },
+    {
+      "id": "20260525-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "dotnet/skills",
+      "summary": ".NET 官方推的 Claude Code skills，給 AI 助手寫 C# / .NET 用。微軟入局 Claude Skill 生態的訊號。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/dotnet/skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-05-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "fendouai/CodexSaver",
+      "summary": "路由 low-risk 任務到便宜模型，砍 Codex 使用成本。LLM cost optimization 工具，跟 OpenRouter / LiteLLM 那條線思路類似但更聚焦 Codex 工作流。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference"
+      ],
+      "url": "https://github.com/fendouai/CodexSaver",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "看 repo"
     }
   ],
-  "lastUpdated": "2026-05-23",
-  "updatedAt": "2026-05-23T05:35:00+08:00"
+  "lastUpdated": "2026-05-25T05:17:31.246345+08:00",
+  "updatedAt": "2026-05-25T05:17:31.246345+08:00"
 }
