@@ -42542,7 +42542,13 @@
       "priority": "paradigm-shift",
       "title": "Anthropic Self-Hosted Sandboxes + MCP Tunnels for Claude Managed Agents",
       "summary": "Code with Claude London 端出兩個 enterprise feature：self-hosted sandboxes (public beta) 讓 tool execution 跑在客戶自家機房 / Cloudflare / Daytona / Modal / Vercel，agent loop 還在 Anthropic 端；MCP tunnels (research preview) 是 outbound-only encrypted gateway，把 agent 接內部 DB / 私 API 不用開 inbound 防火牆。對 enterprise agent 採用是典範轉移。",
-      "tags": ["paradigm-shift", "managed-agents", "self-hosted-sandbox", "mcp-tunnel", "mcp"],
+      "tags": [
+        "paradigm-shift",
+        "managed-agents",
+        "self-hosted-sandbox",
+        "mcp-tunnel",
+        "mcp"
+      ],
       "url": "https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents/",
       "source": "The Decoder",
       "sourceUrl": "https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents/",
@@ -42558,7 +42564,14 @@
       "priority": "paradigm-shift",
       "title": "Zyphra ZAYA1-8B — Reasoning MoE Trained End-to-End on AMD Instinct",
       "summary": "全鏈路在 1,024 顆 AMD MI300X + Pensando Pollara 上 train（不是 port、不是 fine-tune），760M active / 8.4B total params，數學 / coding 對打 DeepSeek-R1-0528、Gemini 2.5 Pro、Claude 4.5 Sonnet；新提的 Markovian RSA test-time compute 在 HMMT'25 贏 Claude 4.5 Sonnet (89.6 vs 88.3)。第一個證明 AMD 全棧能撐 frontier-class training run。Apache 2.0。",
-      "tags": ["paradigm-shift", "ai_models", "moe", "amd-instinct-training", "markovian-rsa", "open-weight"],
+      "tags": [
+        "paradigm-shift",
+        "ai_models",
+        "moe",
+        "amd-instinct-training",
+        "markovian-rsa",
+        "open-weight"
+      ],
       "url": "https://www.zyphra.com/post/zaya1-8b",
       "source": "Zyphra Blog",
       "sourceUrl": "https://www.zyphra.com/post/zaya1-8b",
@@ -42574,7 +42587,13 @@
       "priority": "high",
       "title": "Pragmatic Engineer 大調查：Claude Code 8 個月內衝上第一名",
       "summary": "Gergely Orosz 1/27–2/17 跑的開發者 AI 工具調查：Claude Code 從 0 到 #1 只花 8 個月，採用率約等於 GitHub Copilot 三年前的水準；95% 受訪者每週用 AI，75% 一半以上工作交給 AI。這是 coding-agent 真的「越過鴻溝」的數字證據。",
-      "tags": ["ai_agent", "coding-agent", "claude-code", "ai-tooling", "industry-survey"],
+      "tags": [
+        "ai_agent",
+        "coding-agent",
+        "claude-code",
+        "ai-tooling",
+        "industry-survey"
+      ],
       "url": "https://newsletter.pragmaticengineer.com/p/ai-tooling-2026",
       "source": "The Pragmatic Engineer",
       "sourceUrl": "https://newsletter.pragmaticengineer.com/p/ai-tooling-2026",
@@ -42590,7 +42609,14 @@
       "priority": "paradigm-shift",
       "title": "Jaeger v2 全面 OpenTelemetry 化 — 給 AI agent 觀測補上 trace 層",
       "summary": "Jaeger v2 把 core 重寫為 OpenTelemetry-native，再加上 MCP 介面，讓人類工程師跟 AI agent 都能 query trace、找 GenAI pipeline 的失敗點。從『log archaeology』轉向『trace-based agent observability』，故障定位時間從 4 小時壓到 ~15 分鐘。Jaeger / Langfuse / Phoenix / Laminar 一起把 agent observability 標準化。",
-      "tags": ["paradigm-shift", "observability", "opentelemetry", "jaeger-v2", "distributed-tracing", "mcp"],
+      "tags": [
+        "paradigm-shift",
+        "observability",
+        "opentelemetry",
+        "jaeger-v2",
+        "distributed-tracing",
+        "mcp"
+      ],
       "url": "https://thenewstack.io/jaeger-v2-ai-observability/",
       "source": "The New Stack",
       "sourceUrl": "https://thenewstack.io/jaeger-v2-ai-observability/",
@@ -42606,7 +42632,12 @@
       "priority": "medium",
       "title": "Google DeepMind Gemma 4 — 多模態、on-device、Apache 2",
       "summary": "Gemma 4 family 上架 Hugging Face，Apache 2 授權，可跑在裝置端的尺寸；多模態包含 audio，Pareto frontier arena 分數穩。on-device frontier 模型已經不是 if、是 when 的問題。",
-      "tags": ["ai_models", "on-device", "multimodal", "open-weight"],
+      "tags": [
+        "ai_models",
+        "on-device",
+        "multimodal",
+        "open-weight"
+      ],
       "url": "https://huggingface.co/blog/gemma4",
       "source": "Hugging Face Blog",
       "sourceUrl": "https://huggingface.co/blog/gemma4",
@@ -42622,7 +42653,12 @@
       "priority": "medium",
       "title": "HiDream-O1-Image 8B — 開放權重 Text-to-Image 衝進 Top 10",
       "summary": "HiDream-ai 開源 HiDream-O1-Image 8B（含 distilled Dev 變體 + Reasoning-Driven Prompt Agent），在 Artificial Analysis Text to Image Arena 直接 debut #8，成為現在最強的 open-weight T2I 模型之一。",
-      "tags": ["ai_models", "text-to-image", "open-weight", "diffusion"],
+      "tags": [
+        "ai_models",
+        "text-to-image",
+        "open-weight",
+        "diffusion"
+      ],
       "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
       "source": "Hugging Face",
       "sourceUrl": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
@@ -42638,7 +42674,12 @@
       "priority": "medium",
       "title": "InfoQ：ETH Zurich 研究重新質疑 AGENTS.md 的價值",
       "summary": "新研究指出 LLM 自動產出的 AGENTS.md 平均讓任務成功率 ↓3%、推論成本 ↑20%、多花 2-4 步 reasoning；人寫的版本只有 modest 幫助。AGENTS.md 已被 Codex / Cursor / Copilot 採用，但 context file 不是越多越好 — 寫不好還會拉低 agent 表現。",
-      "tags": ["ai_agent", "agents-md", "context-engineering", "coding-agent"],
+      "tags": [
+        "ai_agent",
+        "agents-md",
+        "context-engineering",
+        "coding-agent"
+      ],
       "url": "https://www.infoq.com/news/2026/03/agents-context-file-value-review/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/03/agents-context-file-value-review/",
@@ -42654,15 +42695,142 @@
       "priority": "medium",
       "title": "Next.js 16 升級指南 — Sync Request APIs 砍掉、Proxy 不再支援 edge runtime",
       "summary": "Next.js 16 正式移除 sync 存取 Request API（v15 已標 breaking、給暫時的 sync 相容），proxy runtime 寫死 nodejs 不能切 edge；要用 edge 就繼續用 middleware。同時 5/7 補了 13 個 security advisory，含 CVE-2026-23870 RSC Flight protocol DoS。",
-      "tags": ["new_languages", "next.js", "server-components", "edge-runtime", "breaking-change"],
+      "tags": [
+        "new_languages",
+        "next.js",
+        "server-components",
+        "edge-runtime",
+        "breaking-change"
+      ],
       "url": "https://nextjs.org/docs/app/guides/upgrading/version-16",
       "source": "Next.js Docs",
       "sourceUrl": "https://nextjs.org/docs/app/guides/upgrading/version-16",
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260525-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-25",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Dario Amodei — \"Can't stop the AI bus\" framing",
+      "summary": "在 Oprah podcast 公開承認 AI 有「非微不足道的滅絕風險」，但仍選擇加速 — 因為單方面停下來只會讓中國贏。Framework：當競賽動態不可逃，焦點要從「該不該做」轉成「如何重塑規則」(PBC 結構、80% pledge、主動 engage 政府、拒絕 Pentagon 拆 guardrails)。",
+      "tags": [
+        "ai-race",
+        "dual-use",
+        "governance"
+      ],
+      "url": "https://singjupost.com/oprah-podcast-w-co-founders-of-claude-ai-transcript/",
+      "source": "Oprah Podcast",
+      "sourceUrl": "https://singjupost.com/oprah-podcast-w-co-founders-of-claude-ai-transcript/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260525-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-25",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Dan Shipper — The AI paradox: more automation, more humans, more work",
+      "summary": "反直覺：AI 自動化越多，反而需要更多人、產出更多 work。AI 把單位成本壓低後，潛在工作量被解鎖（更多客戶、更多版本、更高品質要求）。對 founder：別用「省人力」當 AI 投資的主要 thesis，要用「解鎖以前做不到的事」當北極星。",
+      "tags": [
+        "ai-economics",
+        "leverage",
+        "jevons-paradox"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/the-ai-paradox-dan-shipper",
+      "source": "Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/the-ai-paradox-dan-shipper",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260525-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-25",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Bezos: 'We have nothing to do with robotics' — Project Prometheus 是 AI engineer",
+      "summary": "Bezos 在 CNBC 親自定義 Project Prometheus：不是機器人公司，是「artificial general engineer」— 幫工程師設計實體物件的 AI（advanced CAD 的下一代）。他親任 co-CEO。Insight：當媒體把你塞進舊類別（robotics）時，founder 要主動跳出來定義新 category，否則永遠在解釋誤解。",
+      "tags": [
+        "category-creation",
+        "founder-mode",
+        "ai-engineering"
+      ],
+      "url": "https://ttybrandafrica.com/jeff-bezos-prometheus-ai-startup-not-robotics/",
+      "source": "CNBC Squawk Box",
+      "sourceUrl": "https://ttybrandafrica.com/jeff-bezos-prometheus-ai-startup-not-robotics/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260525-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-25",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Dario Amodei — 白領「訓練場」要崩了，不只是裁員問題",
+      "summary": "Fox News interview：1-5 年內 AI 會先 augment、再取代金融/顧問/科技的 entry-level 工作。Second-order 問題比裁員更嚴重 — 養成中高階人才的「training ground」消失，整個白領職涯階梯斷掉。提案：可能需要對 AI 公司加稅來填補。",
+      "tags": [
+        "future-of-work",
+        "second-order",
+        "white-collar"
+      ],
+      "url": "https://openthemagazine.com/world/ai-could-replace-entry-level-jobs-soon-warns-anthropic-ceo-dario-amodei",
+      "source": "Open Magazine / Fox News",
+      "sourceUrl": "https://openthemagazine.com/world/ai-could-replace-entry-level-jobs-soon-warns-anthropic-ceo-dario-amodei",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260525-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-25",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "OpenAI 開 $445k 招「tasteful and strategic」工程師：解決還不存在的問題",
+      "summary": "Preparedness team senior 職缺要求：anticipate agentic safety、bio/chem misuse、recursive self-improvement 等「未來才會出現」的問題。Altman 的核心 thesis：safety 必須跑在 capability 前面。對 founder：高階人才價值不在 raw output，在「能不能聞到還沒發生的問題」。",
+      "tags": [
+        "hiring",
+        "taste",
+        "preparedness",
+        "ai-safety"
+      ],
+      "url": "https://economictimes.com/news/new-updates/openai-offers-445000-job-to-solve-problems-that-may-not-exist-yet-sam-altman-wants-candidate-who-is-tasteful-and-strategic/articleshow/131291877.cms",
+      "source": "OpenAI Job Posting",
+      "sourceUrl": "https://economictimes.com/news/new-updates/openai-offers-445000-job-to-solve-problems-that-may-not-exist-yet-sam-altman-wants-candidate-who-is-tasteful-and-strategic/articleshow/131291877.cms",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260525-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-25",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Naval: 'By the time a stock IPOs, most of the alpha is gone.'",
+      "summary": "Naval 主導推出 USVC Venture Capital Access Fund（SEC-registered, $500 起跳），讓散戶買 xAI/OpenAI/Anthropic 的 late-stage 私募股權。論點：真正的 upside 都在 private market，IPO 時 risk 已 priced in。",
+      "tags": [
+        "private-markets",
+        "alpha",
+        "naval-quote"
+      ],
+      "url": "https://bravenewcoin.com/insights/navals-usvc-opens-private-ai-to-retail-and-quietly-tests-the-tokenization-thesis",
+      "source": "Brave New Coin",
+      "sourceUrl": "https://bravenewcoin.com/insights/navals-usvc-opens-private-ai-to-retail-and-quietly-tests-the-tokenization-thesis",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-25T05:20:00+08:00",
-  "updatedAt": "2026-05-25T05:20:00+08:00"
+  "lastUpdated": "2026-05-25",
+  "updatedAt": "2026-05-24T21:38:12Z"
 }
