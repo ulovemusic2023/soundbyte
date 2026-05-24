@@ -42829,6 +42829,245 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260525-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "VILA-Lab/FigMirror",
+      "summary": "專門幫你複製論文圖風格的 AI agent — 給它 data + 一張目標論文 figure，自動還原配色 / 座標 / 字型。",
+      "priority": "rising-fast",
+      "tags": [
+        "ai-agent",
+        "data-viz",
+        "research"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-05-11",
+      "url": "https://github.com/VILA-Lab/FigMirror",
+      "stars": 233,
+      "createdDate": "2026-05-22",
+      "license": "none"
+    },
+    {
+      "id": "20260525-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "Poechant/davinci-resolve-cli",
+      "summary": "DaVinci Resolve 18+ 的 CLI — project / media / render / timeline 可從 code 操作，設計給人 + AI agents 雙用。",
+      "priority": "worth-trying",
+      "tags": [
+        "audio",
+        "video",
+        "daw",
+        "cli-tool"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-11",
+      "url": "https://github.com/Poechant/davinci-resolve-cli",
+      "stars": 43,
+      "createdDate": "2026-05-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "agent-sh/computer-use-linux",
+      "summary": "Linux 桌面控制 over MCP — 整合 AT-SPI、GNOME Shell、Wayland portals、ydotool。",
+      "priority": "worth-trying",
+      "tags": [
+        "mcp",
+        "computer-use",
+        "linux"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-05-11",
+      "url": "https://github.com/agent-sh/computer-use-linux",
+      "stars": 51,
+      "createdDate": "2026-05-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "prof-little-bear/cc-equity-research",
+      "summary": "把 Claude Code 變成 equity research agent — 24 個分析 skill + 一個 data MCP + 投資人客製層。",
+      "priority": "worth-trying",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "finance"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-05-11",
+      "url": "https://github.com/prof-little-bear/cc-equity-research",
+      "stars": 53,
+      "createdDate": "2026-05-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260525-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "op7418/ai-desk-card",
+      "summary": "桌面 AI 副屏 Skill：M5Paper 墨水屏 + AI Agent 推送 widget。本地無雲依賴。",
+      "priority": "worth-trying",
+      "tags": [
+        "ai-agent",
+        "hardware",
+        "e-ink"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-11",
+      "url": "https://github.com/op7418/ai-desk-card",
+      "stars": 56,
+      "createdDate": "2026-05-21",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260525-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "linke-ai/hermes-agent-team",
+      "summary": "基於 Hermes Agent 的本地多 agent 團隊協作 Web 系統。中文圈 multi-agent 實作參考。",
+      "priority": "worth-trying",
+      "tags": [
+        "ai-agent",
+        "multi-agent"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-05-11",
+      "url": "https://github.com/linke-ai/hermes-agent-team",
+      "stars": 72,
+      "createdDate": "2026-05-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "xuanlinAI/overmind",
+      "summary": "跨會話 AI 記憶系統 — 66 模組 6 通道架構，讓所有 AI 工具共享同一個不失憶大腦。",
+      "priority": "worth-trying",
+      "tags": [
+        "ai-memory",
+        "cross-tool",
+        "ai-agent"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-11",
+      "url": "https://github.com/xuanlinAI/overmind",
+      "stars": 61,
+      "createdDate": "2026-05-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "ryoppippi/ccusage",
+      "summary": "分析 Claude Code / Codex 本地 usage data → 算 token、算費用、出報表。",
+      "priority": "on-the-radar",
+      "tags": [
+        "claude-code",
+        "codex",
+        "usage-tracker"
+      ],
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "url": "https://github.com/ryoppippi/ccusage",
+      "stars": 14599,
+      "createdDate": "2025-05-29",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260525-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "awesome-skills/code-review-skill",
+      "summary": "結構化的 Claude Code 程式碼審查 skill。",
+      "priority": "on-the-radar",
+      "tags": [
+        "claude-code",
+        "code-review",
+        "agent-skill"
+      ],
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "url": "https://github.com/awesome-skills/code-review-skill",
+      "stars": 599,
+      "createdDate": "2025-11-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "planetscale/database-skills",
+      "summary": "PlanetScale 出的 DB skill — 教 AI agent MySQL / Postgres / Vitess 最佳實踐。",
+      "priority": "on-the-radar",
+      "tags": [
+        "agent-skill",
+        "database",
+        "claude-code"
+      ],
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "url": "https://github.com/planetscale/database-skills",
+      "stars": 450,
+      "createdDate": "2026-02-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "phodal/routa",
+      "summary": "Multi-agent coordination platform，workspace-first 設計。Phodal 出品。",
+      "priority": "on-the-radar",
+      "tags": [
+        "multi-agent",
+        "orchestration"
+      ],
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "url": "https://github.com/phodal/routa",
+      "stars": 1325,
+      "createdDate": "2026-02-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260525-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-25",
+      "cycle": "mon",
+      "title": "ai-dynamo/dynamo",
+      "summary": "NVIDIA 出的 datacenter-scale 分散式 inference serving framework。",
+      "priority": "on-the-radar",
+      "tags": [
+        "inference",
+        "distributed",
+        "nvidia"
+      ],
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "url": "https://github.com/ai-dynamo/dynamo",
+      "stars": 7050,
+      "createdDate": "2025-03-03",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-05-25",
