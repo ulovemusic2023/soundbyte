@@ -43594,6 +43594,246 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260526-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "0xSero/codex-shim",
+      "summary": "本機 Responses-API shim，讓 Codex Desktop 直接接 Factory BYOK 模型，也支援 ChatGPT GPT-5.5 passthrough。",
+      "priority": "rising-fast",
+      "tags": [
+        "codex",
+        "coding-agent",
+        "ai-infra"
+      ],
+      "url": "https://github.com/0xSero/codex-shim",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-12+stars%3A%3E50&sort=stars",
+      "stars": 585,
+      "createdDate": "2026-05-22",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "ajsai47/backdoor",
+      "summary": "讓 Claude Code 接任何 AI provider — DeepSeek、Groq、Ollama、OpenRouter 都可以。",
+      "priority": "rising-fast",
+      "tags": [
+        "claude-code",
+        "ai-infra",
+        "local-llm"
+      ],
+      "url": "https://github.com/ajsai47/backdoor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-05-12",
+      "stars": 211,
+      "createdDate": "2026-05-17",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "summary": "Production-grade agent skills 集合，專門針對 multi-agent architectures 和 context engineering。",
+      "priority": "worth-trying",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "coding-agent"
+      ],
+      "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 15949,
+      "createdDate": "2026-05",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "presenton/presenton",
+      "summary": "開源 AI 簡報生成器，Gamma / Beautiful AI 替代品。",
+      "priority": "worth-trying",
+      "tags": [
+        "presentation",
+        "ai-tool",
+        "content"
+      ],
+      "url": "https://github.com/presenton/presenton",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 6863,
+      "createdDate": "2026-05",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "firecrawl/pdf-inspector",
+      "summary": "Rust 寫的快速 PDF 檢視/分類/文字抽取庫，可自動辨別掃描型 vs 文字型 PDF。",
+      "priority": "worth-trying",
+      "tags": [
+        "pdf",
+        "rust",
+        "data-pipeline"
+      ],
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 1277,
+      "createdDate": "2026-05",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "xzf-thu/Mega-ASR",
+      "summary": "Foundation ASR 為真實世界打造，7 個 atomic acoustic conditions、54 個複合場景、2.6M 樣本，極端音場下比 SOTA 領先 30%。",
+      "priority": "worth-trying",
+      "tags": [
+        "asr",
+        "audio",
+        "speech-to-text"
+      ],
+      "url": "https://github.com/xzf-thu/Mega-ASR",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-12+stars%3A%3E50&sort=stars",
+      "stars": 579,
+      "createdDate": "2026-05-16",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "leiting-eric/DailyBrief",
+      "summary": "AI 每日新聞簡報：GitHub 熱門 + X 熱門 + 行情技術分析，23 個資料源 + LLM 中文摘要。",
+      "priority": "worth-trying",
+      "tags": [
+        "news-aggregator",
+        "daily-brief",
+        "digest"
+      ],
+      "url": "https://github.com/leiting-eric/DailyBrief",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-05-12",
+      "stars": 143,
+      "createdDate": "2026-05-18",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "calcom/cal.diy",
+      "summary": "Cal.com 的 DIY 開源 scheduling infrastructure 版本。",
+      "priority": "on-the-radar",
+      "tags": [
+        "scheduling",
+        "open-source",
+        "full-stack"
+      ],
+      "url": "https://github.com/calcom/cal.diy",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 44554,
+      "createdDate": "2026-05",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "lithos-ai/motus",
+      "summary": "Serves AI agents from Claude Code or Cursor — 把你的 Claude Code / Cursor session 變成可被別人呼叫的 agent endpoint。",
+      "priority": "on-the-radar",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "agent-protocol"
+      ],
+      "url": "https://github.com/lithos-ai/motus",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 0,
+      "createdDate": "2026-05",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "erickochen/purple",
+      "summary": "自動同步 16 個雲端 provider 的 VMs 到本地 SSH config。",
+      "priority": "on-the-radar",
+      "tags": [
+        "devops",
+        "cli-tool",
+        "automation"
+      ],
+      "url": "https://github.com/erickochen/purple",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 0,
+      "createdDate": "2026-05",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "jhaizhou-ops/pinrule",
+      "summary": "通用 AI 行為規則框架 — pin 住 5-10 條規則避免 AI 在長任務漂移。零 LLM、零網路、零依賴。",
+      "priority": "on-the-radar",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "behavior-rules"
+      ],
+      "url": "https://github.com/jhaizhou-ops/pinrule",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-12",
+      "stars": 31,
+      "createdDate": "2026-05-13",
+      "license": "unknown"
+    },
+    {
+      "id": "20260526-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-26",
+      "cycle": "tue",
+      "title": "Kaka-cheaper/codeSee",
+      "summary": "把專案 feature 邏輯視覺化成 semantic flow graph — 不是 call graph、不是 import map，而是「故事性流程圖」。",
+      "priority": "on-the-radar",
+      "tags": [
+        "code-visualization",
+        "dev-tool",
+        "semantic-graph"
+      ],
+      "url": "https://github.com/Kaka-cheaper/codeSee",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-05-12",
+      "stars": 30,
+      "createdDate": "2026-05-15",
+      "license": "unknown"
     }
   ],
   "lastUpdated": "2026-05-26",
