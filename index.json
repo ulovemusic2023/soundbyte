@@ -43474,6 +43474,126 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260526-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-26",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Karpathy — Software 3.0 + 「外包執行，無法外包理解」",
+      "summary": "Sequoia AI Ascent 2026 演講框架：1.0 是人寫程式碼、2.0 是訓練神經網路、3.0 是 LLM 變成 runtime，自然語言變介面。十二月後他親手寫的 code 從 80% 跌到 20%，剩下都丟給 agent。但他強調：你可以外包執行，無法外包理解——agent 越能做事，人類的瓶頸越集中在 taste、判斷力、決定什麼值得做。",
+      "tags": [
+        "software-3.0",
+        "agentic-engineering",
+        "mental-model"
+      ],
+      "url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+      "source": "Andrej Karpathy",
+      "sourceUrl": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-26",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Bezos — AI 泡沫即使是泡沫，你也不用怕",
+      "summary": "他用 90 年代生技泡沫類比：是的，很多投資人賠錢，但留下了救命的藥。AI 也一樣：投資人現在還無法區分好點子和爛點子，「但好的會把壞的賠的都 cover 掉」。產業週期就是這樣燒——錢虧掉，技術留下。心智模型：bubble 不一定壞，它是基礎建設的融資工具。",
+      "tags": [
+        "ai-bubble",
+        "investment",
+        "mental-model"
+      ],
+      "url": "https://www.cnbc.com/2026/05/20/bezos-ai-bubble-concerns-amazon-prometheum-blue-origin.html",
+      "source": "Jeff Bezos · CNBC Squawk Box",
+      "sourceUrl": "https://www.cnbc.com/2026/05/20/bezos-ai-bubble-concerns-amazon-prometheum-blue-origin.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-26",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Altman × Patrick Collison — 「Idea Guy 的反擊」",
+      "summary": "Stripe Sessions 2026 對談：當 AI 把執行成本壓到接近零，相對價值就移到 insight 和 judgment。早期創業文化嘲笑非技術的「點子人」，但這個 archetype 正在回來——因為最稀缺的不是會寫 code 的人，是能想出「值得做什麼」的人。Altman 同時提到，OpenAI 兩年內的產品路線高信心、超長期基礎建設靠「suspension of disbelief」推進。",
+      "tags": [
+        "founder-archetype",
+        "ai-leverage",
+        "operational"
+      ],
+      "url": "https://www.youtube.com/watch?v=5eouRdDYM2c",
+      "source": "Sam Altman × Patrick Collison · Stripe Sessions",
+      "sourceUrl": "https://www.youtube.com/watch?v=5eouRdDYM2c",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-26",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Simon Willison — Your AI Use Is Breaking My Brain",
+      "summary": "過去網路上看到「異常」內容，第一反應是好奇；現在第一反應是懷疑「是不是 AI 生的」。這種 zombie internet 狀態正在腐蝕信任本身——不是因為 AI 內容變多，而是因為人對「真實 vs AI」的辨識成本變高。對 builder 的啟示：產品如果在這個信任真空裡無法快速建立可信感，會被預設懷疑。",
+      "tags": [
+        "ai-content",
+        "trust",
+        "operational"
+      ],
+      "url": "https://simonwillison.net/2026/May/11/zombie-internet/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/11/zombie-internet/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-26",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Lovable Elena Verna — 一年到 $200M ARR 的成長公式：把產品送出去",
+      "summary": "Head of Growth 拆解 Lovable 三支柱：免費發 + build in public + 把社群當基礎建設。重點不是 freemium 漏斗優化，而是「免費去除非技術 builder 的自我篩除」——讓他們先體驗到價值，自然會付費。優化精力從「轉換率」轉到「做新功能」。100 員工撐起 $200M ARR。",
+      "tags": [
+        "growth",
+        "plg",
+        "ai-native-startup"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/the-new-ai-growth-playbook-for-2026-elena-verna",
+      "source": "Elena Verna · Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/the-new-ai-growth-playbook-for-2026-elena-verna",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-26",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Dan Koe — 如果 2026 重新開始做 one-person business",
+      "summary": "新版本的 leverage 公式：產品 = 自己的人格 + 一份高品質長文 / 週 + 多平台短文擴散 + agentic AI 接重複工作。一個人能同時是行銷、銷售、產品、設計部門的前提是：每天累積「mental real estate」，讓你的想法在別人腦中複利成長。重點不是寫多，是寫到讓人「無法被取代」。",
+      "tags": [
+        "one-person-business",
+        "creator-leverage",
+        "solo-founder"
+      ],
+      "url": "https://letters.thedankoe.com/p/how-id-build-a-one-person-business",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/how-id-build-a-one-person-business",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-26",
