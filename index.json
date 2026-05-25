@@ -43268,8 +43268,214 @@
       "price": null,
       "vram": "N/A",
       "license": "MIT"
+    },
+    {
+      "id": "20260526-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Karpathy joins Anthropic pre-training team",
+      "summary": "Andrej Karpathy（前 OpenAI 共同創辦人、Tesla AI 主管）5/19 在 X 宣布加入 Anthropic 的 pre-training team，由 Nick Joseph 領導。對 Anthropic 而言這是頂級 talent acquisition；對 OpenAI 與整個 frontier AI 業界是震盪訊號。",
+      "tags": [
+        "paradigm-shift",
+        "frontier-lab",
+        "talent-move",
+        "anthropic"
+      ],
+      "url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 整合 Claude Managed Agents 變 agentic cloud",
+      "summary": "Cloudflare 5/19 公布跟 Anthropic Claude Managed Agents 的整合：agent 在 Cloudflare 的 isolated execution environment 跑，可以安全存取私有 backend、自訂工具/runtime。再加上 Workers AI 升級 GPU、Vectorize GA。Edge + agent runtime 正在合體。",
+      "tags": [
+        "paradigm-shift",
+        "agentic-cloud",
+        "edge-runtime",
+        "workers-ai"
+      ],
+      "url": "https://blog.cloudflare.com/claude-managed-agents/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/claude-managed-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google 推出 Gemini 3.5 Flash + DeepMind Co-Scientist",
+      "summary": "DeepMind 5/19 同步發表兩件大事：Gemini 3.5 Flash（為 agent 與 coding 設計的 frontier 小模型，「intelligence with action」），以及登 Nature 的 Co-Scientist 多 agent 系統（迭代提出 / 辯論 / 演化 hypothesis），透過 Hypothesis Generation 工具開放給研究員。Pro 版下月推出。",
+      "tags": [
+        "paradigm-shift",
+        "multi-agent",
+        "gemini-3-5",
+        "co-scientist"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 把 GPT-5.5 Instant 變 ChatGPT 預設模型",
+      "summary": "OpenAI 5/5 公布 GPT-5.5 Instant 全量替換 GPT-5.3 Instant 成 ChatGPT 預設，API 也改用 chat-latest。內部 eval 顯示高風險領域（醫療/法律/金融）hallucinated claims 降 52.5%，平均輸出字數少 30%。GPT-5.3 Instant 給付費用戶留 3 個月過渡。",
+      "tags": [
+        "frontier-model",
+        "hallucination",
+        "gpt-5-5",
+        "default-model"
+      ],
+      "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor 推 Composer 2.5：基於 Kimi K2.5 的 agentic coding model",
+      "summary": "Cursor 5/18 釋出 Composer 2.5（5/7 先推 Cursor 3.3 PR review + parallel agents）。Composer 2.5 是基於 Kimi K2.5 的 long-horizon agentic coding model，$0.50/M input，SWE-Bench 與 Terminal-Bench 對標 Opus 4.7。Bugbot 同步移除 seat fee 改 usage-based。",
+      "tags": [
+        "ai-coding",
+        "agentic-coding",
+        "cursor",
+        "composer-2-5"
+      ],
+      "url": "https://cursor.com/changelog",
+      "source": "Beyond Tomorrow",
+      "sourceUrl": "https://beyondtmrw.org/article/cursor-composer-25-release-pricing-benchmarks-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：過去六個月 LLM 進展（PyCon US 2026 五分鐘 talk）",
+      "summary": "Simon Willison 5/19 在 PyCon US 2026 用 5 分鐘把過去半年 LLM 重點壓縮成一份濃縮筆記，並指出「2025/11 是 LLM coding 的 inflection point」。對快速 catch-up 業界節奏的人最高 CP 值。",
+      "tags": [
+        "llm",
+        "coding-agent",
+        "recap"
+      ],
+      "url": "https://simonwillison.net/2026/May/19/5-minute-llms/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/19/5-minute-llms/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer：Forward Deployed Engineering 再熱起來",
+      "summary": "Gergely Orosz 5/14 觀察 Google / OpenAI / Anthropic 都在大量招 forward deployed engineer，這個 Palantir 起家的 role 在 AI 時代被重新發明：直接駐點客戶解 deploy problem，不是寫 ticket 等回應。AI 部署複雜度推高 customer-facing eng 價值。",
+      "tags": [
+        "engineering-org",
+        "hiring-trend",
+        "forward-deployed"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-forward-deployed-engineering",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-forward-deployed-engineering",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer：Anders Hejlsberg 談 TypeScript、C#、Turbo Pascal",
+      "summary": "Gergely Orosz 5/13 訪 Anders Hejlsberg（Turbo Pascal / C# / TypeScript 三代語言之父），談語言設計取捨、type system 的折衷，以及 AI 怎麼改變未來 language design。對程式語言設計有興趣必聽。",
+      "tags": [
+        "language-design",
+        "typescript",
+        "c-sharp",
+        "podcast"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/typescript-c-and-turbo-pascal-with",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/typescript-c-and-turbo-pascal-with",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-009",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：vibe coding 與 agentic engineering 開始收斂",
+      "summary": "Simon 5/6 反思自己過去半年的工作：原本被視為兩派的 vibe coding（自由發揮）跟 agentic engineering（嚴謹 spec）正在「比我想要的還快」靠近——agent 工具夠強之後，spec-first 跟 vibe-first 的邊界正在模糊。",
+      "tags": [
+        "vibe-coding",
+        "agentic-engineering",
+        "ai-coding"
+      ],
+      "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260526-sw-010",
+      "radar": "software-dev",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：Datasette Agent v1 上線",
+      "summary": "Simon 5/21 公布 Datasette Agent 首版：給 Datasette 的對話式 AI 助理，能直接問資料、用 datasette-agent-charts plugin 生成圖表。開源 + 模組化 plugin 架構。",
+      "tags": [
+        "datasette",
+        "agent",
+        "conversational-bi"
+      ],
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/21/datasette-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-26",
-  "updatedAt": "2026-05-26T05:17:00.061745"
+  "updatedAt": "2026-05-25T21:28:27.947560+00:00"
 }
