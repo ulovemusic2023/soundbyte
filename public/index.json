@@ -43068,8 +43068,208 @@
       "stars": 7050,
       "createdDate": "2025-03-03",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260526-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "moeru-ai/airi",
+      "summary": "開源 AI VTuber / 虛擬伴侶平台，受 Neuro-sama 啟發。real-time voice chat、VRM/Live2D 模型、Discord/Telegram 整合。底層 HuggingFace Candle，可接 ElevenLabs 或本地 STT/TTS。",
+      "tags": [
+        "tts",
+        "voice-chat",
+        "vtuber"
+      ],
+      "url": "https://github.com/moeru-ai/airi",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~6-12GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260526-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "reefyai/reefy",
+      "summary": "從 Buildroot 打造的 AI 工作站 OS。15 秒冷開機、A/B firmware auto-rollback、內建 Ollama / vLLM / SGLang。Adopt & Clone 跨機遷移。",
+      "tags": [
+        "llm-inference",
+        "linux-os",
+        "local-ai"
+      ],
+      "url": "https://github.com/reefyai/reefy",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "看模型",
+      "license": "MIT"
+    },
+    {
+      "id": "20260526-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "rsxdalv/TTS-WebUI",
+      "summary": "單一 Gradio + React WebUI 包 23+ TTS/VC 引擎：ACE-Step、CosyVoice、GPT-SoVITS、F5-TTS、StyleTTS2、XTTSv2、Bark、RVC、Demucs。新增 uv venv 管理。",
+      "tags": [
+        "tts",
+        "voice-conversion",
+        "webui"
+      ],
+      "url": "https://github.com/rsxdalv/TTS-WebUI",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "視引擎而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20260526-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SmoothKen/knn-svc",
+      "summary": "零樣本 singing voice conversion (ICASSP 2025)：kNN retrieval + additive synthesis + WavLM + test-time adaptation。不需訓練目標歌手。",
+      "tags": [
+        "svc",
+        "voice-conversion",
+        "zero-shot"
+      ],
+      "url": "https://github.com/SmoothKen/knn-svc",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "~4-6GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260526-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "elevenlabs/skills",
+      "summary": "ElevenLabs 官方 Agent Skills bundle，8 個核心能力：TTS、STT、real-time speech、voice agents、sound effects、music composition、voice transformation、noise removal。AgentSkills spec 相容。",
+      "tags": [
+        "tts",
+        "agent-skills",
+        "voice"
+      ],
+      "url": "https://github.com/elevenlabs/skills",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "API 服務",
+      "license": "MIT"
+    },
+    {
+      "id": "20260526-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "multimodal-art-projection/YuE",
+      "summary": "類 Suno 開源 full-song 生成 foundation model：Stage 1 LM 7B + Stage 2 audio decoder 1B。LoRA fine-tuning + dual-track in-context learning。Apache 2.0 商用允許。",
+      "tags": [
+        "music-generation",
+        "foundation-model",
+        "song"
+      ],
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "price": null,
+      "vram": "≥24GB 限 2 sessions",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260526-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Wan-Video/Wan2.2",
+      "summary": "阿里 Wan 系列文/圖生 720p@24fps 影片模型，MoE 架構（27B 總/14B active）。TI2V-5B 用優化壓到 24GB。Animate-14B 已併進 Diffusers，S2V 支援 TTS 同步。",
+      "tags": [
+        "video-generation",
+        "moe",
+        "720p"
+      ],
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "5B: 24GB；14B: 80GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260526-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "chenguolin/DiffSplat",
+      "summary": "從 text prompt 或單張圖在 1-2 秒生成 3D Gaussian Splat。Base 用 Stable Diffusion / PixArt-Sigma 微調，0.61B ~ 2.24B。",
+      "tags": [
+        "3d-generation",
+        "gaussian-splat",
+        "diffusion"
+      ],
+      "url": "https://github.com/chenguolin/DiffSplat",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "~8-16GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260526-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "inngest/agent-kit",
+      "summary": "TypeScript 多 agent 編排框架，主打 deterministic routing + MCP 整合。State-based / code-based / agent-based 三種 routing。強調 control 而非純自主。",
+      "tags": [
+        "agent-framework",
+        "typescript",
+        "mcp"
+      ],
+      "url": "https://github.com/inngest/agent-kit",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "N/A",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260526-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-05-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "microsoft/agent-governance-toolkit",
+      "summary": "微軟 agent 治理框架 v3.7.0：YAML policy engine、SPIFFE/DID 零信任身份、四環沙箱、tamper-evident audit log。SDK Python/TS/.NET/Rust/Go。對齊 OWASP Agentic AI Top 10。",
+      "tags": [
+        "agent-governance",
+        "security",
+        "compliance"
+      ],
+      "url": "https://github.com/microsoft/agent-governance-toolkit",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-05-25",
-  "updatedAt": "2026-05-24T21:38:12Z"
+  "lastUpdated": "2026-05-26",
+  "updatedAt": "2026-05-26T05:17:00.061745"
 }
