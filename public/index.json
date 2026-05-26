@@ -43834,6 +43834,98 @@
       "stars": 30,
       "createdDate": "2026-05-15",
       "license": "unknown"
+    },
+    {
+      "id": "20260527-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "sunnyxrxrx/X-Voice",
+      "summary": "Flow-matching 多語 TTS — 一個 speaker 用 zero-shot cross-lingual cloning 直接講 30 種語言。兩階段 inference + multilingual speaking rate predictor，paper 5/8 上 arxiv (2605.05611)。code MIT，pretrained model 是 CC-BY-NC（商用要看授權）。",
+      "tags": [
+        "svc_voice",
+        "tts_speech"
+      ],
+      "url": "https://github.com/sunnyxrxrx/X-Voice",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "未明確標示，flow-matching TTS 一般 local-ready",
+      "license": "MIT (code) / CC-BY-NC (models)"
+    },
+    {
+      "id": "20260527-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "modelscope/FunASR v1.3.3",
+      "summary": "產業級 ASR 大更新（5/24）：整合 vLLM inference engine，LLM decoding 快 2-3x；新增 Qwen3-ASR（52 langs）與 GLM-ASR-Nano（17 langs）；funasr-server CLI 提供 OpenAI-compatible API。GPU 170x realtime，比 Whisper-large-v3 快 13x。",
+      "tags": [
+        "tts_speech",
+        "asr"
+      ],
+      "url": "https://github.com/modelscope/FunASR",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "Qwen3-ASR 1.7B、Fun-ASR-Nano 800M 都可本地",
+      "license": "MIT"
+    },
+    {
+      "id": "20260527-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "adithya-s-k/omniparse",
+      "summary": "LLM/RAG 的「萬物 parser」：把 PDF/Word/PPT/圖片/影片/音訊/網頁通通變成乾淨 markdown，本地離線跑、不需要外部 API。含 table extraction、image captioning、audio/video 轉錄、web crawler。Docker 部署。",
+      "tags": [
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/adithya-s-k/omniparse",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "8-10GB",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260527-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "helblazer811/Diffusion-Explorer",
+      "summary": "互動式視覺化 diffusion / flow-based 生成模型的幾何直覺。實作 Flow Matching + Denoising Score Matching 訓練目標、觀察 sample dynamics 隨時間演化、支援用自己手繪 distribution 訓練。Svelte + WGSL 在瀏覽器跑。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://github.com/helblazer811/Diffusion-Explorer",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "瀏覽器執行",
+      "license": "unspecified"
+    },
+    {
+      "id": "20260527-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ruvnet/open-claude-code v2.1.0",
+      "summary": "開源版的 Anthropic Claude Code CLI — 用 AI 反編譯官方 npm package 重寫。25 個內建 tool、4 種 MCP transport、6 種權限模式、40 slash commands、多 provider（Anthropic/OpenAI/Google/Bedrock/Vertex）。1,581 tests、nightly release + 903 相容性測試。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/ruvnet/open-claude-code",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "無需 GPU",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-26",
