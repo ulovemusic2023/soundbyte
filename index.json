@@ -44306,6 +44306,246 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260527-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "MoonshotAI/kimi-code",
+      "summary": "Moonshot 官方釋出的 terminal coding agent — 跑 Kimi 模型也支援其他相容 provider，能讀寫 code、跑 shell、搜檔。又一個 Claude Code / Codex 競品入場。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "moonshot"
+      ],
+      "url": "https://github.com/MoonshotAI/kimi-code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 708,
+      "createdDate": "2026-05-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260527-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "paradigmxyz/centaur",
+      "summary": "Paradigm (Foundry 那群人) 做的 multiplayer self-hosted secure agents 框架，定位是團隊共用安全 agent runtime。Rust 生態。",
+      "tags": [
+        "ai-agent",
+        "self-hosted",
+        "security"
+      ],
+      "url": "https://github.com/paradigmxyz/centaur",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 539,
+      "createdDate": "2026-05-18",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "husu/loom",
+      "summary": "寫接口文檔的 AI Agent — vibe coding 風格產生 API doc，自帶文檔檢視器 + Mock 工具。",
+      "tags": [
+        "ai-agent",
+        "api-doc",
+        "vibe-coding"
+      ],
+      "url": "https://github.com/husu/loom",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 429,
+      "createdDate": "2026-05-15",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "haidang1810/md2html",
+      "summary": "Claude Code / Codex 通用 Skill：長篇 Markdown → 自包含 HTML，內建 Mermaid、TOC、callouts、時間軸。多語言支援。",
+      "tags": [
+        "skill",
+        "markdown",
+        "claude-code"
+      ],
+      "url": "https://github.com/haidang1810/md2html",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 312,
+      "createdDate": "2026-05-14",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "jianshuo/ccglass",
+      "summary": "看 coding agent (Claude Code / Codex / Kimi) 送了什麼到模型 — local proxy + web dashboard。",
+      "tags": [
+        "coding-agent",
+        "observability",
+        "debug"
+      ],
+      "url": "https://github.com/jianshuo/ccglass",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 303,
+      "createdDate": "2026-05-22",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "seochecks-ai/slopless",
+      "summary": "Deterministic textlint rules + CLI，專門抓英文 Markdown 裡的 AI prose slop。",
+      "tags": [
+        "linter",
+        "ai-slop",
+        "writing"
+      ],
+      "url": "https://github.com/seochecks-ai/slopless",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 290,
+      "createdDate": "2026-05-16",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "akitaonrails/ai-memory",
+      "summary": "跨 coding CLI vendor 的長期記憶方案，重點解決切換工具時 context handoff。",
+      "tags": [
+        "coding-agent",
+        "memory",
+        "handoff"
+      ],
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 281,
+      "createdDate": "2026-05-21",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "study8677/awesome-architecture",
+      "summary": "21 張系統架構地圖 (含 AI gateway / RAG / agents / vector DB) + 語言無關 system design 教學。中英雙語。",
+      "tags": [
+        "architecture",
+        "system-design",
+        "reference"
+      ],
+      "url": "https://github.com/study8677/awesome-architecture",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 287,
+      "createdDate": "2026-05-23",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "modaic-ai/gepa-viz",
+      "summary": "DSPy GEPA (Generative Prompt Adaptation) 的 interactive live visualizer。",
+      "tags": [
+        "dspy",
+        "gepa",
+        "viz"
+      ],
+      "url": "https://github.com/modaic-ai/gepa-viz",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 257,
+      "createdDate": "2026-05-24",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Simbastack-hq/framedex",
+      "summary": "把你的影片庫變成可查詢的 knowledge base — 內容索引、跨片段語意搜尋。",
+      "tags": [
+        "video",
+        "search",
+        "creator-tools"
+      ],
+      "url": "https://github.com/Simbastack-hq/framedex",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 255,
+      "createdDate": "2026-05-21",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "open-gsd/gsd-pi",
+      "summary": "meta-prompting + context engineering + spec-driven dev 系統，目標是讓 agent 長時間自主跑而不丟大局。對應 Pi coding agent 生態。",
+      "tags": [
+        "meta-prompting",
+        "pi",
+        "agent-runtime"
+      ],
+      "url": "https://github.com/open-gsd/gsd-pi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 254,
+      "createdDate": "2026-05-22",
+      "license": "unknown"
+    },
+    {
+      "id": "20260527-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-27",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "kouhxp/yapsnap",
+      "summary": "任意影片 URL 或音檔 → 純文字，一行 command，無 GPU、無 cloud。",
+      "tags": [
+        "audio",
+        "transcription",
+        "local"
+      ],
+      "url": "https://github.com/kouhxp/yapsnap",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-13",
+      "stars": 240,
+      "createdDate": "2026-05-20",
+      "license": "unknown"
     }
   ],
   "lastUpdated": "2026-05-26",
