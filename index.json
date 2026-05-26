@@ -44146,6 +44146,166 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260527-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-27",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Simon Willison：Vibe coding 和 Agentic engineering 開始合流",
+      "summary": "Willison 觀察到自己的工作流：本來 vibe coding 不看 code，agentic engineering 審查每一行——現在 agent 太可靠，他已不再每行都看。但這也是「偏差正常化」的起點，每次寫對都降低你下次的警覺。",
+      "tags": [
+        "vibe-coding",
+        "agentic-engineering",
+        "ai-future"
+      ],
+      "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260527-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-27",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Ben Thompson：Aggregation Theory 在算力受限的世界還活著嗎",
+      "summary": "Thompson 在 MoffettNathanson 訪談重新檢視 Aggregation Theory：agent 時代供給端（算力）變稀缺，但需求端依然可以反向制約供給——這就是半導體股暴漲的本質。",
+      "tags": [
+        "aggregation-theory",
+        "ai-strategy",
+        "compute"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260527-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-27",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Shopify 把「AI 用得熟練」寫進 KPI",
+      "summary": "Lütke 的內部 memo：員工要求加人力或預算前必須先證明 AI 做不到。Prototype 階段要被 AI 主導，performance review 加入 AI 使用問題。把 AI 變成「不會被質疑的預設選項」，逼整個公司做文化重組。",
+      "tags": [
+        "ai-adoption",
+        "founder-mode",
+        "culture"
+      ],
+      "url": "https://www.firstround.com/ai/shopify",
+      "source": "Tobi Lütke • First Round Review",
+      "sourceUrl": "https://www.firstround.com/ai/shopify",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260527-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-27",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Microsoft 在 AI 賽道迷路，Nadella 如何把它拉回來",
+      "summary": "押對 OpenAI、押對 Copilot，但 enterprise 採用速度遠低於預期，員工日常還是用 ChatGPT、Claude、Gemini。Nadella 應對：3 月重整 Copilot 領導層、把 AI 戰略從「賣產品」轉向「成為 cognitive amplifier 平台」。",
+      "tags": [
+        "platform-shift",
+        "enterprise-ai",
+        "leadership"
+      ],
+      "url": "https://fortune.com/2026/05/21/microsoft-copilot-ai-openai-satya-nadella-gemini-claude/",
+      "source": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/05/21/microsoft-copilot-ai-openai-satya-nadella-gemini-claude/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260527-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-27",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Anthropic 發布 Founders Playbook：AI 重啟了 startup 生命週期",
+      "summary": "35 頁 guide，把傳統 Idea→MVP→Launch→Scale 全部用 AI 重寫。核心：「需要團隊才能 scale」這個假設不成立——founder 變成 AI agents 的指揮官。發布日期跟 Cal AI（$40M、7 人、零 VC）同步不是巧合。",
+      "tags": [
+        "ai-native-startup",
+        "solo-founder",
+        "playbook"
+      ],
+      "url": "https://www.techtimes.com/articles/316740/20260516/anthropics-new-founder-playbook-argues-ai-has-rebooted-startup-lifecycle-heres-what-holds.htm",
+      "source": "Anthropic (via TechTimes)",
+      "sourceUrl": "https://www.techtimes.com/articles/316740/20260516/anthropics-new-founder-playbook-argues-ai-has-rebooted-startup-lifecycle-heres-what-holds.htm",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260527-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-27",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Lovable 一年衝到 $200M ARR、只有 100 人——AI 時代的成長 playbook",
+      "summary": "Elena Verna 拆解：傳統 PLG「product 是引擎」假設失效，AI-native product 的引擎是「用戶創造出來的成品本身」變成 organic distribution。Growth loop 1.0 → 3.0 的躍遷。",
+      "tags": [
+        "growth",
+        "plg",
+        "ai-native"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/the-new-ai-growth-playbook-for-2026-elena-verna",
+      "source": "Elena Verna • Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/the-new-ai-growth-playbook-for-2026-elena-verna",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260527-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-05-27",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Dan Koe：如果 2026 重新開始做 one-person business 我會怎麼做",
+      "summary": "Koe 重寫他的入門 playbook：核心 thesis 沒變（personal brand + 寫作為 leverage），但執行被 AI 完全改寫。重點不是「用 AI 加速產 content」，而是讓 AI 處理那些本來要請員工/外包的執行細節。",
+      "tags": [
+        "one-person-business",
+        "creator-economy",
+        "leverage"
+      ],
+      "url": "https://letters.thedankoe.com/p/how-id-build-a-one-person-business",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/how-id-build-a-one-person-business",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260527-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-05-27",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Sam Altman：「我很樂意自己錯了」——白領 jobs apocalypse 並沒發生",
+      "summary": "Altman 在 Commonwealth Bank of Australia 大會上承認他預測的白領 jobs apocalypse 沒發生。原因是「人的部分」沒法被 outsource——即便他用 AI 回 Slack 和 email，跟人的互動還是不願意外包給 AI。",
+      "tags": [
+        "future-of-work",
+        "ai-displacement",
+        "altman"
+      ],
+      "url": "https://time.com/article/2026/05/26/sam-altman-ai-job-losses-openAI-/",
+      "source": "Sam Altman • Time",
+      "sourceUrl": "https://time.com/article/2026/05/26/sam-altman-ai-job-losses-openAI-/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-26",
