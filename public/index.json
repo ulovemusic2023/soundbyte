@@ -44648,8 +44648,215 @@
       "stars": 240,
       "createdDate": "2026-05-20",
       "license": "unknown"
+    },
+    {
+      "id": "20260528-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Microsoft Copilot Studio: Computer-Using Agents 全面 GA + Workflows + Real-time Voice",
+      "summary": "微軟把 CUA (Computer-Using Agents) 正式推到 production — agent 用 vision + reasoning 直接操作桌面 / 瀏覽器 UI，不需要 API hook。內建 OpenAI CUA 和 Claude Sonnet 4.5、Azure Key Vault、Purview audit、human-in-the-loop review。enterprise RPA 進入 LLM-driven 時代。",
+      "tags": [
+        "paradigm-shift",
+        "computer-using-agents",
+        "ai-agent",
+        "copilot-studio"
+      ],
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+      "source": "Microsoft Copilot Blog",
+      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain Deep Agents v0.6 — DeltaChannel + Harness Profiles + 統一 streaming",
+      "summary": "v0.6 一次推 5 個 primitive：輕量 code interpreter runtime、harness profile 一級公民、stream_events v3 統一事件流、DeltaChannel 長 thread checkpoint 降 100x、ContextHub 接 LangSmith 管 skill/policy/memory。agent infra SDK 越來越像 K8s control plane。",
+      "tags": [
+        "paradigm-shift",
+        "agent-framework",
+        "langchain",
+        "delta-channel",
+        "harness-profiles"
+      ],
+      "url": "https://www.langchain.com/blog/deep-agents-0-6",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/deep-agents-0-6",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Netflix UDA (Unified Data Architecture) — knowledge graph 為核心",
+      "summary": "Netflix 把 knowledge graph 當底層，conceptual domain model 翻成各下游一致 schema。'Model Once, Represent Everywhere' — 數據語意 single source of truth。大型 microservice 環境裡是 data mesh 的另一條解法。",
+      "tags": [
+        "paradigm-shift",
+        "architecture",
+        "knowledge-graph",
+        "data-architecture"
+      ],
+      "url": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d",
+      "source": "Netflix TechBlog",
+      "sourceUrl": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netflix — Hexagonal Architecture in production",
+      "summary": "Netflix 用六角架構把 business logic 跟 I/O 解耦 — REST / GraphQL / DB / external API 全部推到邊緣，core 不知道也不在乎。換 backend、加 gRPC port，business logic 一行不動。clean architecture 實作教材。",
+      "tags": [
+        "architecture",
+        "hexagonal-architecture",
+        "clean-architecture"
+      ],
+      "url": "https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749",
+      "source": "Netflix TechBlog",
+      "sourceUrl": "https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Simon Willison: 'The Pressure' — AI 偽造 security report 正在淹沒 OSS",
+      "summary": "Daniel Stenberg (curl maintainer) 公開講 curl team 被 AI 生成 fake security report 轟炸到撐不住。LLM 大量產生看起來像 CVE 的 garbage report，OSS responsible disclosure break down。AI 時代 supply chain security 不只是惡意 package — 是 maintainer attention 變稀缺資源。",
+      "tags": [
+        "paradigm-shift",
+        "security",
+        "ai-slop",
+        "open-source",
+        "supply-chain"
+      ],
+      "url": "https://simonwillison.net/2026/May/26/the-pressure/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/26/the-pressure/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison: Anthropic 和 OpenAI 已經找到 product-market fit",
+      "summary": "Anthropic 開出 390 個職缺、26.9% 屬 enterprise 銷售 — AI lab 已是 enterprise SaaS 公司。Anthropic Q2 預計 $10.9B revenue (Q1 是 $4.8B)，第一個 quarterly operating profit 在望。AI infra 戰爭從 model 轉向 distribution / sales engine。",
+      "tags": [
+        "ai-agent",
+        "product-market-fit",
+        "enterprise"
+      ],
+      "url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "datasette-agent 0.1a4 — agent 嵌進 Datasette command palette",
+      "summary": "Simon 把 datasette-agent 掛進 Datasette 1.0a30 的 makeJumpSections() JS plugin hook — agent chat 變 keyboard-accessible slash menu。data tooling 啟示：agent UI 應該長進現有工作流，不是另開 chat tab。",
+      "tags": [
+        "ai-agent",
+        "datasette",
+        "dev-tools"
+      ],
+      "url": "https://simonwillison.net/2026/May/24/datasette-agent/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/24/datasette-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer: Antigravity 2.0 拿掉了自家 IDE 的「IDE」",
+      "summary": "Gergely 對 Google Antigravity 2.0 feedback 壓倒性負面 — bug 多、UX 差、燒 Gemini token。同時點名 Google product chaos (Gemini CLI 6 月砍) 和 Meta 強制把 20-40% 工程師指派 data labelling (裁員前奏)。AI IDE 軍備競賽 ≠ 好產品。",
+      "tags": [
+        "ai-coding",
+        "antigravity",
+        "ide",
+        "dev-tools"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-antigravity-20-takes-ide",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-009",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google DeepMind WeatherNext — 提前 5 天精準預測颶風 Melissa 登陸",
+      "summary": "National Hurricane Center 用 DeepMind WeatherNext 預測颶風 Melissa 在牙買加 rapid intensification 和登陸，提前 5 天高信心發警報。AI weather model 從 demo 進到 critical infrastructure，跟傳統 NWP 並用。",
+      "tags": [
+        "ai-models",
+        "weather",
+        "foundation-model"
+      ],
+      "url": "https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-sw-010",
+      "radar": "software-dev",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HN: Agentic Frameworks in 2026 — Less Hype, More Autonomy",
+      "summary": "2026 年 agent framework 差異化關鍵不再是 prompt 黑魔法，是怎麼 model time / memory / failure。長 horizon reasoning 和「從自己錯誤學習」做不好的 framework，在真實 workload 下都會崩。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "hn-discussion"
+      ],
+      "url": "https://news.ycombinator.com/item?id=46509130",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=46509130",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-05-26",
+  "lastUpdated": "2026-05-28",
   "updatedAt": "2026-05-25T21:28:27.947560+00:00"
 }
