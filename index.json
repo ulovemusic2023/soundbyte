@@ -44855,6 +44855,126 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260528-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-28",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Microsoft 切兩半:Nadella 顧 AI horizon-2/3,Althoff 升 Commercial CEO 顧 75% 營收",
+      "summary": "Microsoft 大重組:把 sales/marketing/ops/finance/eng 整合給新 Commercial CEO Althoff(cover 75% 營收),Nadella 集中在 data center、systems architecture、AI 研究和產品創新。框架:成熟巨型公司在 platform shift,把 horizon-1 執行和 horizon-2/3 創新明確分人。",
+      "tags": [
+        "org-design",
+        "platform-shift",
+        "ceo-role"
+      ],
+      "url": "https://www.crn.com/news/ai/2026/microsoft-s-althoff-brings-his-sales-channel-expertise-to-newly-created-role",
+      "source": "CRN",
+      "sourceUrl": "https://www.crn.com/news/ai/2026/microsoft-s-althoff-brings-his-sales-channel-expertise-to-newly-created-role",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-28",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Anthropic 的「scare-then-sell」模式 — Moor Insights 對 CIO 的警告",
+      "summary": "Patrick Moorhead 分析:Claude 是 enterprise 最佳前沿 model 之一,但有 outage、SLA 落差;Dario 公開警告 AI 摧毀工作,同時也賣造成那種變化的工具。建議 CIO 透過 hyperscaler 使用 Claude 拿到 SLA 和 model-switching 彈性,直連 Anthropic 留給 R&D。",
+      "tags": [
+        "enterprise-ai",
+        "vendor-strategy",
+        "anthropic"
+      ],
+      "url": "https://moorinsightsstrategy.com/enterprises-need-to-be-careful-before-they-go-all-in-on-anthropic/",
+      "source": "Moor Insights & Strategy",
+      "sourceUrl": "https://moorinsightsstrategy.com/enterprises-need-to-be-careful-before-they-go-all-in-on-anthropic/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-28",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Microsoft 把 Responsible AI 拆給 accessibility 老兵 — 治理要跑 engineering 速度",
+      "summary": "Jenny Lay-Flurrie 升任 Trusted Technology Group head。Microsoft 認知:傳統「事後審核」治理跟不上 AI 開發節奏,必須嵌入工程流程;把無障礙專業帶進核心 AI 決策。",
+      "tags": [
+        "responsible-ai",
+        "governance",
+        "org-design"
+      ],
+      "url": "https://itbusinesstoday.com/tech/ai/microsofts-responsible-ai-leadership-shift-signals-a-new-phase-in-high-speed-ai-development/",
+      "source": "IT Business Today",
+      "sourceUrl": "https://itbusinesstoday.com/tech/ai/microsofts-responsible-ai-leadership-shift-signals-a-new-phase-in-high-speed-ai-development/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-28",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Anthropic 拒 $200M Pentagon 合約:values 一致性是 day-1 決定",
+      "summary": "Dario 和 Daniela 在 Oprah 訪談揭:國防部要求 Claude 不要 guardrail,可做 autonomous lethal weapons 和大規模國內監控。七個共同創辦人開會明知拒掉可能毀公司還是說 no。一致性來自他們 day-1 就拒絕 ads-based business model 的根本選擇。Founder lesson:不要等難關才定 values,從根的選擇開始建一致性。",
+      "tags": [
+        "founder-values",
+        "decision-making",
+        "anthropic"
+      ],
+      "url": "https://www.osvnews.com/what-is-anthropic-a-look-at-the-company-joining-pope-leo-for-ai-encyclical-release/",
+      "source": "OSV News (Oprah Podcast)",
+      "sourceUrl": "https://www.osvnews.com/what-is-anthropic-a-look-at-the-company-joining-pope-leo-for-ai-encyclical-release/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-05-28",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Jensen Huang on AI 失業:是「懶惰推論」",
+      "summary": "「You're not going to lose your job to AI. You're going to lose your job to somebody who learns AI better than you.」 CNA 訪談中他反駁「AI 已經造成 layoffs」的敘事,稱那是 lazy reasoning——AI 才剛變得真正有用,多數公司是用 AI 當其他重整的方便藉口。",
+      "tags": [
+        "future-of-work",
+        "ai-jobs",
+        "skills"
+      ],
+      "url": "https://www.youtube.com/watch?v=vM3IFyb9w1E",
+      "source": "CNA Interview",
+      "sourceUrl": "https://www.youtube.com/watch?v=vM3IFyb9w1E",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260528-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-05-28",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Dario Amodei on 拒 Pentagon 合約",
+      "summary": "「It's not worth defending the country if we do things that go against the values of this country.」Dario 在 Oprah 訪談中解釋為什麼明知會被列為 supply chain risk 也要拒 $200M 國防部合約。",
+      "tags": [
+        "founder-values",
+        "ethics",
+        "anthropic"
+      ],
+      "url": "https://www.osvnews.com/what-is-anthropic-a-look-at-the-company-joining-pope-leo-for-ai-encyclical-release/",
+      "source": "OSV News (Oprah Podcast)",
+      "sourceUrl": "https://www.osvnews.com/what-is-anthropic-a-look-at-the-company-joining-pope-leo-for-ai-encyclical-release/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-28",
