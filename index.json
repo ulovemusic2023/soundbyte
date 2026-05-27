@@ -44975,6 +44975,252 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260528-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "thananon/9arm-skills",
+      "summary": "個人開發者把日常用的 Claude Code skills 整理成 npm 套件，分 engineering / productivity / misc 等 bucket，可用 `npx skills add thananon/9arm-skills` 一鍵安裝到任何 agent。一週衝到 2.4k stars 顯示 skill 共享生態正在成形。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "skill-pack"
+      ],
+      "url": "https://github.com/thananon/9arm-skills",
+      "source": "GitHub API: topic:claude-code",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code&type=repositories",
+      "stars": 2428,
+      "createdDate": "2026-05-20",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "agentic-in/elephant-agent",
+      "summary": "Personal-Model First Self Evolving AI Agent 🐘 — 把 agent 跟個人模型綁定，能跨 session 自我進化。Pitch 是 'agents that grow with you'，跟 piia-engram 等 memory layer 是同一波 thesis：agent 的差異化來自 personal context 累積。",
+      "tags": [
+        "ai-agent",
+        "memory",
+        "personalization"
+      ],
+      "url": "https://github.com/agentic-in/elephant-agent",
+      "source": "GitHub API: rising stars",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-14+stars%3A%3E50&type=repositories",
+      "stars": 526,
+      "createdDate": "2026-05-15",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "butterbase-ai/butterbase-oss",
+      "summary": "Open-source backend-as-a-service：Postgres + auth + storage + functions + AI gateway + MCP server 全包。定位是 agent-native 版的 Supabase，AI gateway 跟 MCP 是內建一級公民，方便寫 agentic app 時跳過自己接 LLM/MCP infra 的步驟。",
+      "tags": [
+        "mcp",
+        "baas",
+        "ai-gateway",
+        "supabase-alt"
+      ],
+      "url": "https://github.com/butterbase-ai/butterbase-oss",
+      "source": "GitHub API: topic:mcp",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp&type=repositories",
+      "stars": 311,
+      "createdDate": "2026-05-20",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "zhaoyue4810/pianke",
+      "summary": "本地端照片選片工具「片刻」：DINOv2 視覺特徵 + 人臉識別 + EXIF 時間/GPS 自動把連拍歸組，再用 A/B 擂台 PK 一張張比較。原生支援 RAW、毫秒級內嵌預覽，純本地不上雲。創作者工具裡少見的「AI 只做初篩、最終決定權留給人」設計哲學。",
+      "tags": [
+        "creator-tools",
+        "photo",
+        "local-ai",
+        "dinov2"
+      ],
+      "url": "https://github.com/zhaoyue4810/pianke",
+      "source": "GitHub API: rising stars",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-14+stars%3A%3E50&type=repositories",
+      "stars": 497,
+      "createdDate": "2026-05-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260528-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "cclank/lanshu-awesome-ai-video-kit",
+      "summary": "做企業 AI 視頻項目逼出來的工具包：411 個 prompt + 15 個模型整合 + 7 個 Claude Skill + 14 篇方法論。屬於少見的「實戰沉澱型」repo，不只是 prompt 收藏，而是 production workflow 的 Claude Skill 化。",
+      "tags": [
+        "claude-code",
+        "ai-video",
+        "prompt-engineering",
+        "skill-pack"
+      ],
+      "url": "https://github.com/cclank/lanshu-awesome-ai-video-kit",
+      "source": "GitHub API: topic:claude-code",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code&type=repositories",
+      "stars": 157,
+      "createdDate": "2026-05-25",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "jaychempan/coding-with-beat",
+      "summary": "把音樂搬進 AI 終端：給 Claude Code / Codex CLI 的 retro pixel DJ，支援 Apple Music / QQ Music / 本地音樂，會顯示同步歌詞，測試失敗時還會 panic 抓狂。屬於開發者文化 + 音樂 cross-over 作品。",
+      "tags": [
+        "claude-code",
+        "music",
+        "developer-culture",
+        "tui"
+      ],
+      "url": "https://github.com/jaychempan/coding-with-beat",
+      "source": "GitHub API: topic:claude-code",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code&type=repositories",
+      "stars": 103,
+      "createdDate": "2026-05-21",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "vuejs-ai/vue-tui",
+      "summary": "用 Vue 寫 terminal UI：SFC & JSX 語法、Yoga flexbox 排版、HMR、內建測試。等於把 Vue 全套 DX 搬到 TUI 場景，跟 React 那邊的 Ink 同類。terminal 是 agent 的主介面之一，TUI framework 接下來會持續有需求。",
+      "tags": [
+        "tui",
+        "vue",
+        "developer-tool",
+        "terminal"
+      ],
+      "url": "https://github.com/vuejs-ai/vue-tui",
+      "source": "GitHub API: topic:ai-agent",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent&type=repositories",
+      "stars": 64,
+      "createdDate": "2026-05-24",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "andreisirbu91-lab/MCPSpend",
+      "summary": "Real-time cost observability for MCP tool calls — 把任何 MCP server 包一層 wrapper，按 tool / project / customer 拆解花費。EU-hosted，免費 25K calls/月。MCP 商業化的早期 infra 動作：先有觀測，才有 billing。",
+      "tags": [
+        "mcp",
+        "observability",
+        "cost-tracking"
+      ],
+      "url": "https://github.com/andreisirbu91-lab/MCPSpend",
+      "source": "GitHub API: topic:mcp",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp&type=repositories",
+      "stars": 44,
+      "createdDate": "2026-05-22",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "norika1207-lab/mercury-mcp",
+      "summary": "Cross-architecture LLM internal observation database — 收錄 23 個模型、13 個架構家族的內部活化資料，暴露為 MCP tools 給任何 coding agent 查詢。研究取向的 MCP server，適合做 model behavior research。",
+      "tags": [
+        "mcp",
+        "llm-internals",
+        "research"
+      ],
+      "url": "https://github.com/norika1207-lab/mercury-mcp",
+      "source": "GitHub API: topic:mcp",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp&type=repositories",
+      "stars": 40,
+      "createdDate": "2026-05-23",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "sammwyy/singulary",
+      "summary": "Self-host 版本的 v0 / Lovable —— FOSS AI app builder，本地端跑。v0 / Lovable 上手快但鎖定 cloud，這波 self-host 替代品開始出現，定位給不想把 prompt 跟 code 給雲端 vendor 的人。",
+      "tags": [
+        "coding-agent",
+        "app-builder",
+        "self-hosted",
+        "v0-alt"
+      ],
+      "url": "https://github.com/sammwyy/singulary",
+      "source": "GitHub API: topic:coding-agent",
+      "sourceUrl": "https://github.com/search?q=topic%3Acoding-agent&type=repositories",
+      "stars": 37,
+      "createdDate": "2026-05-24",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "tathagat22/plumb-mcp",
+      "summary": "Local Figma MCP server，避開 Figma 官方 Dev Mode MCP 跟 Framelink 的 REST rate limit / metered quota，內建驗證 loop。免費版也能用，Claude Code / Cursor / Windsurf 都接得上。設計師 → 前端 agent workflow 的補位工具。",
+      "tags": [
+        "mcp",
+        "figma",
+        "design-to-code"
+      ],
+      "url": "https://github.com/tathagat22/plumb-mcp",
+      "source": "GitHub API: topic:mcp",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp&type=repositories",
+      "stars": 36,
+      "createdDate": "2026-05-23",
+      "license": "unknown"
+    },
+    {
+      "id": "20260528-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-05-28",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "getcrew44/crew44",
+      "summary": "Local-first multi-agent 工作區：每個專家 role 用最適合的 model，加上會累積的 memory & skills。MIT 授權。CrewAI 路線的本地版本，主打「每個 agent 用不同 model」這個搭配自由度。",
+      "tags": [
+        "coding-agent",
+        "multi-agent",
+        "local-first"
+      ],
+      "url": "https://github.com/getcrew44/crew44",
+      "source": "GitHub API: topic:coding-agent",
+      "sourceUrl": "https://github.com/search?q=topic%3Acoding-agent&type=repositories",
+      "stars": 36,
+      "createdDate": "2026-05-15",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-28",
