@@ -1,6 +1,108 @@
 {
   "entries": [
     {
+      "id": "20260528-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "debpalash/OmniVoice-Studio",
+      "summary": "本地端 ElevenLabs 替代品的桌面 app。3 秒 sample zero-shot voice clone，646 種語言，voice design（性別/年齡/口音/情緒），影片配音，系統 hotkey 聽寫。後端整合 OmniVoice / CosyVoice 3 / MLX-Audio / VoxCPM2 / MOSS-TTS-Nano / KittenTTS 多引擎，100% local。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "voice-cloning",
+        "elevenlabs-alt"
+      ],
+      "url": "https://github.com/debpalash/OmniVoice-Studio",
+      "source": "GitHub Topics: voice-cloning",
+      "sourceUrl": "https://github.com/topics/voice-cloning",
+      "price": null,
+      "vram": "4GB 起跳（auto-offload）",
+      "license": "FSL-1.1-ALv2"
+    },
+    {
+      "id": "20260528-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "zai-org/GLM-OCR",
+      "summary": "智譜釋出的 0.9B 多模態 OCR 模型，基於 GLM-V encoder-decoder。OmniDocBench V1.5 拿 94.62 排名第一。支援公式、表格、版面分析、印章、code-heavy 文件。可直接走 vLLM / SGLang / Ollama 部署。",
+      "tags": [
+        "cv_ocr",
+        "llm_inference",
+        "document-ai"
+      ],
+      "url": "https://github.com/zai-org/GLM-OCR",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "~2GB（0.9B FP16）",
+      "license": "Apache 2.0 / MIT"
+    },
+    {
+      "id": "20260528-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DexForce/EmbodiChain",
+      "summary": "GPU-accelerated 端到端 embodied AI 平台，整合 high-fidelity 物理 simulation（rigid + deformable）、imitation/RL 標準介面、平行環境 rollout、Sim2Real pipeline。v0.2.1 五月剛發，alpha 階段。",
+      "tags": [
+        "llm_training",
+        "ai_devtools",
+        "embodied-ai",
+        "robotics"
+      ],
+      "url": "https://github.com/DexForce/EmbodiChain",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "依模型大小",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260528-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "tensorpool/tensorpool",
+      "summary": "Git-style CLI 介面，submit ML training job 跟 access on-demand 多節點 GPU cluster。把 job 管理、cluster provisioning、NFS volume、SSH 全包進 CLI，pip install 就能用。",
+      "tags": [
+        "infra_runtime",
+        "ai_devtools",
+        "gpu-cloud"
+      ],
+      "url": "https://github.com/tensorpool/tensorpool",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260528-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "fluxcd/agent-skills",
+      "summary": "Flux 官方推出的 agent skills 套件，把 GitOps engineer 的工作流程包成 AI agent 能直接用的 skills。K8s + Flux pipeline 可讓 Claude/Codex 接管部署、配置同步、健康檢查。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime",
+        "gitops"
+      ],
+      "url": "https://github.com/fluxcd/agent-skills",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": null,
+      "license": "Apache 2.0"
+    },
+    {
       "id": "20260513-ai-001",
       "radar": "ai-infra",
       "date": "2026-05-13",
