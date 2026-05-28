@@ -45515,8 +45515,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260529-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-29",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Sam Altman 公開認錯：對 AI 衝擊就業的「速度」判斷錯了",
+      "summary": "Altman 在雪梨 CBA 論壇表示，至今並未出現他先前預言的白領失業海嘯，承認自己對衝擊的速度與規模判斷「相當錯」，而且「樂於認錯」。重點不是預測準不準，而是頂尖操盤手會公開更新自己的判斷——把認錯當成訊號強度而非面子問題。他同時強調工作裡仍有 AI 取代不掉的「人的部分」。",
+      "tags": [
+        "belief-updating",
+        "ai-future",
+        "intellectual-honesty"
+      ],
+      "url": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman",
+      "source": "Euronews",
+      "sourceUrl": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-29",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Simon Willison：怎麼判斷 AI 找到 PMF？看「帳單嚇到人」",
+      "summary": "Willison 給了反直覺的 PMF 操作型定義：不是問卷、不是 NPS，而是「公司被自己的 LLM 帳單嚇到」。他自己付 $200/月卻用掉等值 $2,180 的 token；而 Anthropic 把 Enterprise 改成 $20/seat + API 用量計價後，企業內部用量仍失控成長。真實 PMF 訊號 = 使用者停不下來、願意付大錢，而不是嘗鮮。",
+      "tags": [
+        "pmf",
+        "ai-economics",
+        "usage-signal"
+      ],
+      "url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-29",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "The Accidental Orchestrator：agentic engineering 把門檻拉高，不是拉低",
+      "summary": "O'Reilly / Stack Overflow 這篇戳破兩種都不誠實的論調（『工程師一年內被淘汰』vs『AI 只是個工具別緊張』）。核心觀點：用 agent 寫程式不會讓工程師變得不重要，剛好相反——它要求你更懂架構、更會 review diff、更會測試。能不能駕馭 agent 的差別不在年資，而在有沒有一套結構化的工作方法。",
+      "tags": [
+        "agentic-engineering",
+        "ai-coding",
+        "developer-skill"
+      ],
+      "url": "https://stackoverflow.blog/2026/05/22/dispatches-from-o-reilly-the-accidental-orchestrator/",
+      "source": "Stack Overflow Blog / O'Reilly Radar",
+      "sourceUrl": "https://stackoverflow.blog/2026/05/22/dispatches-from-o-reilly-the-accidental-orchestrator/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-29",
-  "updatedAt": "2026-05-29"
+  "updatedAt": "2026-05-29T05:30:00+08:00"
 }
