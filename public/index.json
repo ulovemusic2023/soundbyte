@@ -45575,6 +45575,163 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260529-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-29",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "op7418/guizang-social-card-skill",
+      "summary": "Claude Code / Codex skill，輸入文字就生成小紅書圖文 carousel 與公眾號 21:9+1:1 封面對。28 種 layout、10 套主題，單檔 HTML 直接轉 PNG。",
+      "tags": [
+        "claude-code",
+        "social-content",
+        "design"
+      ],
+      "url": "https://github.com/op7418/guizang-social-card-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-15+stars:>50",
+      "stars": 726,
+      "createdDate": "2026-05-27",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260529-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-29",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "open-gsd/get-shit-done-redux",
+      "summary": "爆紅的 Getting Shit Done claude-code 工作流重製版，把任務拆解、執行、收尾的 agent pipeline 標準化。一週衝破 1500 stars。",
+      "tags": [
+        "claude-code",
+        "agent-workflow",
+        "productivity"
+      ],
+      "url": "https://github.com/open-gsd/get-shit-done-redux",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-15+stars:>50",
+      "stars": 1554,
+      "createdDate": "2026-05-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260529-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-29",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "OpenBMB/PilotDeck",
+      "summary": "OpenBMB 出品的 task-oriented AI agent 生產力平台，把 agent 包成可操作的任務面板。",
+      "tags": [
+        "ai-agent",
+        "productivity"
+      ],
+      "url": "https://github.com/OpenBMB/PilotDeck",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-15+stars:>50",
+      "stars": 1451,
+      "createdDate": "2026-05-22",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260529-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-05-29",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "UditAkhourii/adhd",
+      "summary": "給 coding agent 的 tree-of-thought skill，建在 Claude Agent SDK 上：平行發散想法、評分、剪枝、深化存活者，標榜給創意與跨領域工作用。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "reasoning"
+      ],
+      "url": "https://github.com/UditAkhourii/adhd",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-15+stars:>50",
+      "stars": 460,
+      "createdDate": "2026-05-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260529-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-29",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "withkynam/vibecode-pro-max-kit",
+      "summary": "spec-driven coding harness，主打對抗 context rot：自我改進 context memory、12 agents、32 skills，Claude Code & Codex 通用。",
+      "tags": [
+        "claude-code",
+        "context-memory",
+        "harness"
+      ],
+      "url": "https://github.com/withkynam/vibecode-pro-max-kit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-15+stars:>20+topic:claude-code",
+      "stars": 272,
+      "createdDate": "2026-05-27",
+      "license": "?"
+    },
+    {
+      "id": "20260529-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-05-29",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "yb2460/cli-anything-wps",
+      "summary": "WPS Office 的 CLI harness，讓 AI agent 透過 COM automation 操作 Writer / Calc / Impress。文書自動化新接法。",
+      "tags": [
+        "ai-agent",
+        "automation",
+        "office"
+      ],
+      "url": "https://github.com/yb2460/cli-anything-wps",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-15+stars:>20+topic:ai-agent",
+      "stars": 67,
+      "createdDate": "2026-05-27",
+      "license": "?"
+    },
+    {
+      "id": "20260529-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-05-29",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "tixl3d/tixl",
+      "summary": "graph-based 即時動態圖形工具包。做音樂視覺 / live visuals 的人可留意。",
+      "tags": [
+        "motion-graphics",
+        "creative-coding"
+      ],
+      "url": "https://github.com/tixl3d/tixl",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": null,
+      "createdDate": null,
+      "license": "?"
+    },
+    {
+      "id": "20260529-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-05-29",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "tryvinci/vinci-clips",
+      "summary": "把長影片自動切成適合社群的短 clip，做內容分發的順手工具。",
+      "tags": [
+        "video",
+        "social-clips"
+      ],
+      "url": "https://github.com/tryvinci/vinci-clips",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": null,
+      "createdDate": null,
+      "license": "?"
     }
   ],
   "lastUpdated": "2026-05-29",
