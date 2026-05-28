@@ -45221,8 +45221,134 @@
       "stars": 36,
       "createdDate": "2026-05-15",
       "license": "MIT"
+    },
+    {
+      "id": "20260529-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "pnnbao97/VieNeu-TTS",
+      "summary": "越南語 TTS + instant voice cloning，主打 on-device、real-time CPU inference、24kHz 音質。不用 GPU 就能跑即時語音克隆，架構可移植到其他語言，對多語系 demo / 配音很有參考價值。",
+      "tags": [
+        "tts_speech",
+        "voice-cloning",
+        "on-device"
+      ],
+      "url": "https://github.com/pnnbao97/VieNeu-TTS",
+      "source": "GitHub (web_search)",
+      "sourceUrl": "https://github.com/pnnbao97/VieNeu-TTS",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0",
+      "stars": 1620
+    },
+    {
+      "id": "20260529-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AlexsJones/llmfit",
+      "summary": "一行指令找出你的硬體能跑什麼模型：掃描硬體後從 Q8_0 一路試到 Q2_K，挑出塞得進記憶體的最佳 GGUF quant，裝不下就退半 context。支援 Ollama / llama.cpp / MLX / LM Studio。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf"
+      ],
+      "url": "https://github.com/AlexsJones/llmfit",
+      "source": "GitHub (web_search)",
+      "sourceUrl": "https://github.com/AlexsJones/llmfit",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT",
+      "stars": 26824
+    },
+    {
+      "id": "20260529-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "cognisoc/mullama",
+      "summary": "建在 llama.cpp 上的 Ollama 風格 runtime，直接跑 HF 任何 GGUF 模型。Ollama 相容 CLI（run/pull/serve/chat）+ Rust/Python/Node/Go/PHP/C 原生綁定，可當 server 也可 in-process 嵌入免 HTTP overhead。剛開源、star 還很少。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "runtime"
+      ],
+      "url": "https://github.com/cognisoc/mullama",
+      "source": "GitHub (web_search)",
+      "sourceUrl": "https://github.com/cognisoc/mullama",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "MIT",
+      "stars": 1
+    },
+    {
+      "id": "20260529-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tavris1/ComfyUI-Easy-Install",
+      "summary": "跨平台（Win/macOS/Linux）可攜式 ComfyUI 安裝器，內建 EZi Desktop + Nvidia GPU 支援。省掉手動配環境，適合想快速起一個本地圖像生成 workflow 的人。",
+      "tags": [
+        "image_gen",
+        "comfyui",
+        "installer"
+      ],
+      "url": "https://github.com/Tavris1/ComfyUI-Easy-Install",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/28/Tavris1-ComfyUI-Easy-Install.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT",
+      "stars": 1362
+    },
+    {
+      "id": "20260529-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ruvnet/ruvector",
+      "summary": "Rust 寫的高效能即時 self-learning AI / vector GNN / memory DB，把向量檢索 + 圖神經網路 + 記憶庫整合進一個本地引擎，可當 RAG / agent memory 後端。",
+      "tags": [
+        "rag_knowledge",
+        "vector-database",
+        "rust"
+      ],
+      "url": "https://github.com/ruvnet/ruvector",
+      "source": "GitHub (web_search)",
+      "sourceUrl": "https://github.com/ruvnet/ruvector",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT",
+      "stars": 4155
+    },
+    {
+      "id": "20260529-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "luongnv89/ccl",
+      "summary": "本地版 coding agent CLI：撞到額度上限或要隱私就換個模型，其他不變。支援 ollama / lmstudio / llamacpp / vllm / openrouter，可接遠端 engine（只要有 HTTP），內建 llmfit 做硬體 quant 自動選型。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference",
+        "coding-agent"
+      ],
+      "url": "https://github.com/luongnv89/ccl",
+      "source": "GitHub (web_search)",
+      "sourceUrl": "https://github.com/luongnv89/ccl",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT",
+      "stars": 31
     }
   ],
-  "lastUpdated": "2026-05-28",
-  "updatedAt": "2026-05-25T21:28:27.947560+00:00"
+  "lastUpdated": "2026-05-29",
+  "updatedAt": "2026-05-28T21:14:28.876127+00:00"
 }
