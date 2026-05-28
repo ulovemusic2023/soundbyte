@@ -45347,8 +45347,176 @@
       "vram": "local-ready",
       "license": "MIT",
       "stars": 31
+    },
+    {
+      "id": "20260529-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Opus 4.8 釋出，新增 Dynamic Workflows 協調數百平行 subagent",
+      "summary": "Anthropic 5/28 釋出 Claude Opus 4.8，全平台 + API 上線。重點新功能 Dynamic Workflows（research preview）讓大模型協調數百個平行 subagent 處理複雜任務；官方示範 Claude Code 用 Opus 4.8 跑數十萬行的 codebase-scale migration，拿既有測試套件當驗證。early tester 說它更會主動標記不確定、較少給沒根據的斷言。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "parallel-subagents",
+        "claude-opus-4-8"
+      ],
+      "url": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 公開 Town Lake 資料平台 + Skipper AI data agent",
+      "summary": "Cloudflare 公開內部資料平台 Town Lake——完全建在自家 stack（Workers/Queues/R2/D1）上的統一分析平台，再在上面疊一個 AI data agent「Skipper」：用自然語言問問題，agent 讀 schema 生成 + 執行 SQL，回商業語意的答案。強制 grounding（數字一律走查詢、不臆測）+ SQL 驗證 guardrails。等於用自家積木砌出 data warehouse + 對話式 BI。",
+      "tags": [
+        "architecture",
+        "ai-agent",
+        "data-platform",
+        "text-to-sql"
+      ],
+      "url": "https://blog.cloudflare.com/our-unified-data-platform/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/our-unified-data-platform/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 接 Claude Managed Agents：brain vs hands 分離架構",
+      "summary": "Cloudflare 接上 Anthropic Claude Managed Agents，Anthropic 把它定義成 decoupling the brain from the hands：推理/規劃的「腦」跑在 Anthropic 託管平台，工具執行 + 連企業私網的「手」跑在 Cloudflare。可選 runtime、接私有系統、用 Cloudflare 監控 agent。multi-agent 的 split-brain 架構範式。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "mcp",
+        "split-brain-architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/cloudflare-claude-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/cloudflare-claude-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Lyft 用 LangGraph + LangSmith 蓋自助式客服 AI agent 平台",
+      "summary": "LangChain 釋出 Lyft 案例：用 LangGraph + LangSmith 蓋一個讓內部團隊自助開客服 agent 的平台。production-grade 多 agent 架構 + 觀測性的實戰參考，示範企業怎麼把 agent 從 demo 推到正式環境。",
+      "tags": [
+        "ai-agent",
+        "langgraph",
+        "langsmith",
+        "production-agents"
+      ],
+      "url": "https://www.langchain.com/blog/lyft-built-a-self-serve-ai-agent-platform-for-customer-support-with-langgraph-and-langsmith",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/lyft-built-a-self-serve-ai-agent-platform-for-customer-support-with-langgraph-and-langsmith",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Stack Overflow 調查：agentic AI 仍以單 agent + 人工監督為主",
+      "summary": "Stack Overflow 4 月 agentic 脈動調查（~1,100 人）：職場 agent 使用率從 31%→59%，但 68% 偏好可預測的單 agent 而非多 agent 編排，63% 幾乎不讓 agent 全自動跑，60% 禁止 agent 動未核准的系統變更。單 agent 之王是 Copilot(65%) + Claude Code(50%)。結論：human review 仍是 gold standard。",
+      "tags": [
+        "ai-agent",
+        "survey",
+        "single-agent",
+        "human-in-the-loop"
+      ],
+      "url": "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/",
+      "source": "Stack Overflow Blog",
+      "sourceUrl": "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 為 Genkit 推出 Middleware：agent loop 的可程式化攔截層",
+      "summary": "Google 為 Genkit 推出 Middleware——在 model 呼叫 / tool 執行 / agent loop 周圍加一層可程式化攔截層（像 HTTP middleware）。把 guardrails、logging、retry、快取這些 cross-cutting 關注點從每個 agent 抽出來集中管，讓跨團隊的 agent 行為更容易標準化。",
+      "tags": [
+        "ai-agent",
+        "middleware",
+        "genkit",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/google-genkit-middleware/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/google-genkit-middleware/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Azure Logic Apps 在 agent loop 內加 sandboxed code interpreter",
+      "summary": "Microsoft 在 Azure Logic Apps 的 agent loop 裡加 sandboxed code interpreter：agent 收自然語言 → 生 Python/JS/C#/PowerShell → 在 Hyper-V 隔離 sandbox 跑 → 回結果，整段在受治理的 workflow 內。需要 Azure Container Apps 的 code interpreter session pool。agent 當 planner、執行外包給可稽核 runtime 的模式。",
+      "tags": [
+        "devops-infra",
+        "ai-agent",
+        "sandbox",
+        "code-execution"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/azure-logic-apps-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/azure-logic-apps-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260529-sw-008",
+      "radar": "software-dev",
+      "date": "2026-05-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Deep Research Agentic Systems：拆解 + 迴圈的多 agent 研究架構",
+      "summary": "Sarang Kulkarni 談多 agent 研究系統設計：clarification loop（釐清任務）→ research loop（think/plan→execute→reflect→adjust）→ writing loop（write→reflect）。用拆解 + 迴圈的 plan-act-reflect 架構取代單發 one-shot agent，產出研究分析師級的結構化報告。",
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "deep-research",
+        "plan-act-reflect"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/kulkarni-deep-research-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/kulkarni-deep-research-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-29",
-  "updatedAt": "2026-05-28T21:14:28.876127+00:00"
+  "updatedAt": "2026-05-29"
 }
