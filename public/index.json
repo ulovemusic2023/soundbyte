@@ -45732,8 +45732,101 @@
       "stars": null,
       "createdDate": null,
       "license": "?"
+    },
+    {
+      "id": "20260530-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "betweentwomidnights/gary4juce",
+      "summary": "把 7 個開源 AI 音樂模型直接塞進 DAW 的 VST3/AU plugin（Ableton/FL/Reaper 等）：MusicGen、stable-audio-open-small、ACE-Step、MelodyFlow、Magenta RealTime、Foundation-1，v4 再加 Stable Audio 3（text-to-audio 到 300 秒、loop、transform、continue、LoRA blending、key/BPM-aware prompting）。掛在 master、按播放、邊錄邊迭代。可走作者免費 remote 後端，或 gary4local 在本機跑（GPU 10GB+ 起、16GB+ 建議）。對音樂製作人是「AI 坐進 session 一起做」而非純 text-to-music。",
+      "tags": [
+        "audio_music_ai",
+        "ai_devtools",
+        "musicgen",
+        "stable-audio-3",
+        "ace-step",
+        "DAW",
+        "VST3"
+      ],
+      "url": "https://github.com/betweentwomidnights/gary4juce",
+      "source": "Web Search: github audio music AI",
+      "sourceUrl": "https://github.com/betweentwomidnights/gary4juce",
+      "price": null,
+      "vram": "本機 16GB 可跑（Darius/magenta-realtime 需 24GB+ 另開後端）",
+      "license": "未標示（無 LICENSE 檔）"
+    },
+    {
+      "id": "20260530-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenBMB/MiniCPM5-1B",
+      "summary": "面壁智能釋出的 1B dense on-device LLM，宣稱 1B 級開源 SOTA：reasoning/knowledge/code/math/agentic 平均 42.57，勝過同級最強的 35.61，強項在 agentic tool use、code、競賽數學。內建 <think> hybrid reasoning（enable_thinking 切換），標準 LlamaForCausalLM 架構、無自訂 kernel，vLLM/llama.cpp/Ollama/MLX 直接載入，官方附 GGUF/MLX。1B 在 16GB 上根本零負擔，適合當本地 agent/工具呼叫的快模型。",
+      "tags": [
+        "llm_inference",
+        "on-device",
+        "minicpm",
+        "gguf",
+        "agentic",
+        "reasoning"
+      ],
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "source": "Web Search: ollama/llama.cpp/vllm releases",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM",
+      "price": null,
+      "vram": "1B 模型，FP16 約 2-3GB，輕鬆本機",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260530-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "PilotTTS（arXiv:2605.27258）",
+      "summary": "一套刻意「不追架構新穎、只拼工程紀律」的 zero-shot TTS：Qwen3 當 AR backbone + Q-Former 拆 speaker/style + CFM/DiT（約 300M）+ HiFi-GAN。用 20 萬小時公開中英語音、全套公開工具自建資料管線（標榜可複製、低成本）。Seed-TTS Eval 上 speaker similarity 最高、英文 WER 1.50% 全場最低，還支援 11 種情緒、14 種中文方言、笑/呼吸/哭/咳等 paralinguistic。對自建 TTS 資料流程有參考價值，惟論文未確認釋出權重。",
+      "tags": [
+        "tts_speech",
+        "zero-shot-tts",
+        "voice-cloning",
+        "qwen3",
+        "diffusion",
+        "arxiv"
+      ],
+      "url": "https://arxiv.org/abs/2605.27258",
+      "source": "arXiv audio/music AI",
+      "sourceUrl": "https://arxiv.org/abs/2605.27258",
+      "price": null,
+      "vram": "Qwen3 small + 300M DiT，量化後可本機（權重未釋出，推估）",
+      "license": "arXiv 論文（權重未確認釋出）"
+    },
+    {
+      "id": "20260530-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "salute-developers/GigaAM",
+      "summary": "Sber 開源的 Conformer-based 語音基礎模型家族（220-240M），主打俄語 ASR + 情緒辨識。v3 用 70 萬小時預訓練，新領域 WER 降 30%、end-to-end 版在 LLM-as-Judge side-by-side 對 Whisper-large-v3 以 70:30 勝出，GigaAM-Emo 情緒辨識 Macro F1 比現有模型高 15%。MIT、支援 ONNX/TensorRT/Triton 部署、含 fine-tune 範例。語言侷限俄語，但小模型 + 強情緒辨識的設計值得參考。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "speech-recognition",
+        "emotion",
+        "conformer",
+        "onnx"
+      ],
+      "url": "https://github.com/salute-developers/GigaAM",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/05/29/salute-developers-GigaAM.html",
+      "price": null,
+      "vram": "220-240M，本機輕鬆（ONNX/TRT fp16）",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-05-29",
-  "updatedAt": "2026-05-29T05:30:00+08:00"
+  "lastUpdated": "2026-05-30",
+  "updatedAt": "2026-05-29T21:15:28.306586Z"
 }
