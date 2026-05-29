@@ -45947,6 +45947,133 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260530-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-30",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "Michaelliv/pi-dynamic-workflows",
+      "summary": "把 Claude Code 的 dynamic workflows 概念搬到 Pi。新增 workflow tool，讓模型寫 JS script 把工作 fan-out 給多個 isolated subagent 再彙整。適合 codebase 稽核、多視角 review、大型 refactor。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "dynamic-workflows",
+        "pi"
+      ],
+      "url": "https://github.com/Michaelliv/pi-dynamic-workflows",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 423,
+      "createdDate": "2026-05-28",
+      "license": "unknown"
+    },
+    {
+      "id": "20260530-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-30",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "Sophomoresty/gemini-web2api",
+      "summary": "把 Google Gemini web 版包成 OpenAI-compatible API，single file、zero auth、跨平台。可直接把 Gemini 接進任何吃 OpenAI 格式的工具或 agent。",
+      "tags": [
+        "gemini",
+        "openai-api",
+        "proxy",
+        "local-first"
+      ],
+      "url": "https://github.com/Sophomoresty/gemini-web2api",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 388,
+      "createdDate": "2026-05-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260530-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-30",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "2aronS/Duel-Agents",
+      "summary": "IDE-native multi-model routing layer：同一 prompt 丟給多個 model，挑最便宜但還是贏的答案。CLI/SDK/IDE plugins，支援 Claude Code/Cursor/OpenClaw。流量須走 duelagents.com API key，屬 vendor-locked。",
+      "tags": [
+        "ai-agent",
+        "model-routing",
+        "claude-code",
+        "openclaw",
+        "cli"
+      ],
+      "url": "https://github.com/2aronS/Duel-Agents",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 354,
+      "createdDate": "2026-05-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260530-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-30",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "garnix-io/garnix-ci",
+      "summary": "專為 nix-based、flakified GitHub repo 做的 CI + hosting。用 Nix flakes 的專案可省掉自搭 CI。",
+      "tags": [
+        "nix",
+        "ci",
+        "hosting",
+        "devops"
+      ],
+      "url": "https://github.com/garnix-io/garnix-ci",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 316,
+      "createdDate": "2026-05-27",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20260530-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-30",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "stagas/hallucinate",
+      "summary": "Massively Multiplayer Online Rave——多人線上同步的 web rave。作者為知名 web-audio／creative-coding 開發者。對音樂+互動體驗的人有玩頭，值得看多人音訊同步的做法。",
+      "tags": [
+        "web-audio",
+        "music",
+        "multiplayer",
+        "creative-coding"
+      ],
+      "url": "https://github.com/stagas/hallucinate",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 130,
+      "createdDate": "2026-05-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260530-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-30",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "Chz1Y/Steerable-music-transformer",
+      "summary": "論文《Steerable Rhythmic Complexity in Autoregressive Music Generation》(EI accepted) 官方 PyTorch 實作。bar-level conditional micro-Transformer，用 REMI+ 做精準節奏密度控制與和聲解耦。AI 作曲可控生成的好參考。",
+      "tags": [
+        "music-generation",
+        "transformer",
+        "pytorch",
+        "deep-learning"
+      ],
+      "url": "https://github.com/Chz1Y/Steerable-music-transformer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 21,
+      "createdDate": "2026-05-27",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-30",
