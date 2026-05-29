@@ -45867,8 +45867,88 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260530-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-05-30",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Karpathy 宣告 vibe coding 過時 — 他描述的其實是『產品管理』",
+      "summary": "Karpathy 在 Sequoia AI Ascent 說 vibe coding 已過時，未來是 agentic engineering：寫 spec、審查 plan、檢視 diff、寫測試、建 eval loop、管權限、守品質。Jeff Gothelf 一針見血——把工程術語拿掉，這份清單就是『產品管理』。當 agent 負責打字，人的工作不再是 execution，而是判斷該做什麼、值不值得做。",
+      "tags": [
+        "agentic-engineering",
+        "product-management",
+        "ai-coding"
+      ],
+      "url": "https://jeffgothelf.com/blog/karpathy-said-vibe-coding-is-obsolete-what-he-described-instead-is-product-management/",
+      "source": "Jeff Gothelf",
+      "sourceUrl": "https://jeffgothelf.com/blog/karpathy-said-vibe-coding-is-obsolete-what-he-described-instead-is-product-management/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260530-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-05-30",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Amodei 用 Jevons 悖論重新框定 AI 與工作",
+      "summary": "曾預言 AI 會消滅一半白領工作的 Amodei 改口，把自動化想成 Jevons 悖論：『自動化一份工作的 90%，大家就都去做剩下的 10%，而那 10% 會擴張成 100%，產能放大十倍。』框架轉換——AI 不是減少對人的需求，而是讓人的產出更便宜、更豐富，反而把市場與角色撐大。",
+      "tags": [
+        "jevons-paradox",
+        "future-of-work",
+        "ai-augmentation"
+      ],
+      "url": "https://opentools.ai/news/ai-ceos-walk-back-jobs-apocalypse",
+      "source": "OpenTools (引 Fortune)",
+      "sourceUrl": "https://opentools.ai/news/ai-ceos-walk-back-jobs-apocalypse",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260530-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-05-30",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Amodei 五年立場演變：安全優先 → 放下暫停承諾、重啟五角大廈",
+      "summary": "StartupHub 梳理 Amodei 2021–2026 軌跡：Anthropic 以『安全優先』為創立前提募資，五年後卻放下了 pause commitment、重啟與五角大廈合作、發了 14,000 字樂觀宣言。對創業者的啟示——創立時的硬性原則，會在能力躍進與競爭壓力下被重新定價；值得問自己，哪些原則是真信念，哪些只是當下的姿態。",
+      "tags": [
+        "founder-principles",
+        "ai-safety",
+        "strategy-shift"
+      ],
+      "url": "https://www.startuphub.ai/ai-news/ai-figures/2026/figure-dario-amodei-public-position-evolution-2026-05-28",
+      "source": "StartupHub.ai",
+      "sourceUrl": "https://www.startuphub.ai/ai-news/ai-figures/2026/figure-dario-amodei-public-position-evolution-2026-05-28",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260530-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-05-30",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Altman：『我很高興我錯了』",
+      "summary": "Altman 在雪梨坦承自己對 AI 消滅白領工作的速度判斷錯了——他試著把 Slack/email 回覆外包給 AI，最後還是回去手動回，因為『我們真的在乎和人的互動』。連造 AI 的人都無法外包掉關係，這正是判斷與關係工作為何是護城河。",
+      "tags": [
+        "intellectual-honesty",
+        "human-relationship",
+        "ai-augmentation"
+      ],
+      "url": "https://www.commbank.com.au/articles/newsroom/2026/05/sam-altman-close-ai-gap.html",
+      "source": "CommBank Newsroom",
+      "sourceUrl": "https://www.commbank.com.au/articles/newsroom/2026/05/sam-altman-close-ai-gap.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-30",
-  "updatedAt": "2026-05-30"
+  "updatedAt": "2026-05-30T05:30:00+08:00"
 }
