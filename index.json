@@ -45825,8 +45825,50 @@
       "price": null,
       "vram": "220-240M，本機輕鬆（ONNX/TRT fp16）",
       "license": "MIT"
+    },
+    {
+      "id": "20260530-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "The VibeSec Reckoning — Thoughtworks 點名 vibe coding 的安全債",
+      "summary": "Thoughtworks 長文：vibe coding 讓非工程師快速做 app，但「叫 AI agent 安全」不等於「強制它安全」。1/5 企業資安事件源自 AI 生成 code、25% AI code 含確認漏洞、42% 新企業軟體已 AI 生成/輔助。解法走 harness engineering — security context files + 自動 SAST sensor + secure-by-default templates，把安全變成可強制的 pipeline。",
+      "tags": [
+        "vibe-coding",
+        "harness-engineering",
+        "security",
+        "ai-software-engineering"
+      ],
+      "url": "https://martinfowler.com/articles/vibesec-reckoning.html",
+      "source": "Martin Fowler / Thoughtworks",
+      "sourceUrl": "https://martinfowler.com/articles/vibesec-reckoning.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260530-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Pulse — 企業開始砍 AI 開銷：逐工程師監控 token 花費",
+      "summary": "Gergely Orosz 觀察新趨勢：中大型公司質疑 AI agent ROI，導入每位工程師每月 token 花費監控與上限。壓力同時來自管理層算帳與工程師自省。文中也提到 GCP 無預警停掉一個 $2M/月 客戶。產業從全力衝 AI 轉向要看到可量化價值的縮手期。",
+      "tags": [
+        "ai-tooling-economics",
+        "ai-spend",
+        "token-budget",
+        "per-engineer-monitoring"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut",
+      "source": "Pragmatic Engineer (Gergely Orosz)",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-30",
-  "updatedAt": "2026-05-29T21:15:28.306586Z"
+  "updatedAt": "2026-05-30"
 }
