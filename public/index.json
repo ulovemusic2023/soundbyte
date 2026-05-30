@@ -46154,6 +46154,152 @@
       "price": null,
       "vram": "27B NVFP4 256K 需 24GB+；16GB 須更小模型",
       "license": "見 repo"
+    },
+    {
+      "id": "20260531-sw-001",
+      "radar": "software-dev",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Microsoft 推出 MDASH：100+ AI agent 組隊做大規模漏洞研究",
+      "summary": "Microsoft 內部測試中的 MDASH 是一個 agentic security 平台，由 100+ 個專業 AI agent 分工：掃描、驗證、互相 debate、最終 prove 漏洞，跨大型 codebase 運作且 model-agnostic。把「多 agent 對抗式驗證」搬進安全研究，是 agent 系統設計的範式案例。",
+      "tags": [
+        "multi-agent",
+        "agentic-security",
+        "paradigm-shift",
+        "ai-agent"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/microsoft-mdash/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/microsoft-mdash/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260531-sw-002",
+      "radar": "software-dev",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison：Microsoft Copilot Cowork 會外洩檔案",
+      "summary": "PromptArmor 揭露 Copilot Cowork 允許 agent 未經核准寄信到使用者自己的信箱，而信件裡的外部圖片會觸發網路請求 → 資料被外洩；加上 OneDrive 的預授權下載連結被洩漏，攻擊者可下載檔案。Simon 點名這是 lethal-trifecta 的典型翻車。",
+      "tags": [
+        "prompt-injection",
+        "exfiltration",
+        "lethal-trifecta",
+        "agent-security",
+        "ai-agent"
+      ],
+      "url": "https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260531-sw-003",
+      "radar": "software-dev",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub 用每日 audit + MCP pruning 砍 agent token 花費最多 62%",
+      "summary": "GitHub 分享：透過每日審查 agent workflow、刪掉沒在用的 MCP tool（MCP pruning），把 agent context 變精簡，token 花費最多降 62%。AI coding agent 成本治理開始有可複製的具體 playbook。",
+      "tags": [
+        "agentic",
+        "mcp",
+        "cost-optimization",
+        "ai-coding"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/github-agentic-token-savings/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/github-agentic-token-savings/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260531-sw-004",
+      "radar": "software-dev",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI 輔助遷移工具：幾分鐘從 ingress-nginx 搬到 Higress",
+      "summary": "新的 AI-assisted migration 工具讓團隊在幾分鐘內把 K8s ingress-nginx 設定轉成 Higress（AI gateway）。把繁瑣的 infra 設定遷移交給 AI，是 platform engineering 的實用化方向。",
+      "tags": [
+        "ai-assisted-development",
+        "api-gateway",
+        "kubernetes",
+        "migration"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/ai-nginx-higress/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/ai-nginx-higress/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260531-sw-005",
+      "radar": "software-dev",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 發布 Datasette Agent",
+      "summary": "Simon 推出 Datasette Agent — 一個可擴充的 AI 助手，接上 Datasette/SQLite 資料庫做自然語言查詢。他形容這是 LLM 工作與 Datasette 終於合流的時刻。",
+      "tags": [
+        "ai-agent",
+        "rag",
+        "sqlite",
+        "datasette"
+      ],
+      "url": "https://simonwillison.net/2026/May/29/datasette/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/29/datasette/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260531-sw-006",
+      "radar": "software-dev",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer：Forward Deployed Engineering 再度升溫",
+      "summary": "Gergely Orosz 觀察到 forward deployed engineering（駐點/前線工程師）模式在 2026 重新熱起來——工程師直接駐進客戶現場交付。AI 時代下「貼著客戶寫程式」反而成了差異化。",
+      "tags": [
+        "engineering-management",
+        "fde",
+        "career"
+      ],
+      "url": "https://blog.pragmaticengineer.com/the-pulse-forward-deployed-engineering-heats-up-again/",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://blog.pragmaticengineer.com/the-pulse-forward-deployed-engineering-heats-up-again/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260531-sw-007",
+      "radar": "software-dev",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Pragmatic Engineer：2026 軟體工程就業市場現況",
+      "summary": "Gergely Orosz 用數據盤點 2026 軟體工程職缺市場，分析 AI 對招聘與職位結構的衝擊。給在看機會或帶團隊的人的 reference。",
+      "tags": [
+        "job-market",
+        "career",
+        "reference"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/state-of-the-job-market-2026",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/state-of-the-job-market-2026",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-05-31",
