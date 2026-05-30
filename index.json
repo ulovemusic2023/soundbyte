@@ -46300,6 +46300,186 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260531-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "open-gsd/gsd-core",
+      "summary": "\"Git. Ship. Done\" 的核心引擎，把 AI coding agent 工作流結構化（spec → ship → done），這週衝到 1.8k 星。",
+      "tags": [
+        "coding-agent",
+        "harness",
+        "vibe-coding"
+      ],
+      "url": "https://github.com/open-gsd/gsd-core",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17",
+      "stars": 1857,
+      "createdDate": "2026-05-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260531-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "XingYu-Zhong/DeepSeek-GUI",
+      "summary": "專為 DeepSeek 模型的 AI agent 桌面工作台，內建 Code 與 Claw 兩種模式，可嵌進自己的應用。",
+      "tags": [
+        "ai-agent",
+        "deepseek",
+        "local-ai"
+      ],
+      "url": "https://github.com/XingYu-Zhong/DeepSeek-GUI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17",
+      "stars": 662,
+      "createdDate": "2026-05-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260531-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "alibaba/open-code-review",
+      "summary": "阿里開源 code review 工具，deterministic pipeline + LLM agent 混合架構，行級註解，內建 NPE/thread-safety/XSS/SQL injection 規則，相容 OpenAI 與 Anthropic。",
+      "tags": [
+        "code-review",
+        "ai-agent",
+        "devtool"
+      ],
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17",
+      "stars": 470,
+      "createdDate": "2026-05-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260531-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "nv-tlabs/PiD",
+      "summary": "NVIDIA 實驗室的 Pixel Diffusion latent decoder：高解析度、低延遲影像解碼，給 diffusion 影像生成提速。",
+      "tags": [
+        "diffusion",
+        "image-gen",
+        "nvidia"
+      ],
+      "url": "https://github.com/nv-tlabs/PiD",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17",
+      "stars": 462,
+      "createdDate": "2026-05-21",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260531-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "jdevalk/specification.website",
+      "summary": "平台無關的網站規格書：HTML、無障礙、安全、SEO、agent-readiness（讓 AI agent 讀懂你的網站）。",
+      "tags": [
+        "web",
+        "agent-readiness",
+        "spec"
+      ],
+      "url": "https://github.com/jdevalk/specification.website",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17+topic:mcp",
+      "stars": 88,
+      "createdDate": "2026-05-29",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260531-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "atomicstrata/atomicmemory",
+      "summary": "給 AI agent 的可攜式語意記憶：核心引擎 + TS SDK + framework adapter + MCP server + CLI。",
+      "tags": [
+        "agent-memory",
+        "mcp",
+        "sdk"
+      ],
+      "url": "https://github.com/atomicstrata/atomicmemory",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17+topic:mcp",
+      "stars": 76,
+      "createdDate": "2026-05-18",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260531-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "oleksiijko/pmb",
+      "summary": "給 coding agent（Claude Code/Cursor/Codex）的本地持久記憶，走 MCP。LoCoMo recall@10 94.5%、p50 70ms、零 API key。",
+      "tags": [
+        "mcp",
+        "agent-memory",
+        "local-first"
+      ],
+      "url": "https://github.com/oleksiijko/pmb",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17+topic:mcp",
+      "stars": 61,
+      "createdDate": "2026-05-25",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260531-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "Yapie0/carboncode",
+      "summary": "Chinese-first、DeepSeek 驅動的終端 coding agent。",
+      "tags": [
+        "coding-agent",
+        "deepseek",
+        "cli"
+      ],
+      "url": "https://github.com/Yapie0/carboncode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17+topic:ai-agent",
+      "stars": 68,
+      "createdDate": "2026-05-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260531-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-05-31",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "helloianneo/ian-xiaohei-illustrations",
+      "summary": "中文「小黑」怪誕風配圖生成 Skill（16:9 白底手繪 + 紅橙藍批註），Codex Skill。",
+      "tags": [
+        "illustration",
+        "creator-tool",
+        "codex-skill"
+      ],
+      "url": "https://github.com/helloianneo/ian-xiaohei-illustrations",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-17+topic:ai-agent",
+      "stars": 1105,
+      "createdDate": "2026-05-27",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-05-31",
