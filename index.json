@@ -46074,8 +46074,88 @@
       "stars": 21,
       "createdDate": "2026-05-27",
       "license": "MIT"
+    },
+    {
+      "id": "20260531-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Stable Audio 3 (Stability AI)",
+      "summary": "Stability AI 釋出 Stable Audio 3 開源權重：latent diffusion 家族，44.1kHz 立體聲，支援變長輸出＋inpainting 編輯。SAME autoencoder 用 4096× 壓縮，讓長音檔生成能跑在消費級硬體。small(459M)/medium(1.4B) 開源，large 企業授權，最長 6 分 20 秒。",
+      "tags": [
+        "audio_music_ai",
+        "music generation",
+        "latent diffusion"
+      ],
+      "url": "https://github.com/Stability-AI/stable-audio-tools",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/05/26/stability-ai-releases-stable-audio-3-a-family-of-fast-latent-diffusion-models-for-audio-generation-and-editing/",
+      "price": null,
+      "vram": "small/medium 消費級 GPU 可跑",
+      "license": "Stability AI Community（small/medium 開源）"
+    },
+    {
+      "id": "20260531-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "StepFun StepAudio 2.5 Realtime",
+      "summary": "端到端語音 LLM：audio in → 推理生成 → audio out 即時完成。內建 persona-specific RLHF 角色扮演與細粒度副語言（情緒、語氣）控制。目前以 WebSocket API 提供，尚未釋出本地權重。",
+      "tags": [
+        "tts_speech",
+        "speech LLM",
+        "realtime"
+      ],
+      "url": "https://www.marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension/",
+      "price": null,
+      "vram": "API only，無本地權重",
+      "license": "未公開"
+    },
+    {
+      "id": "20260531-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Dasheng AudioGen (arXiv)",
+      "summary": "統一 text-to-audio 生成模型，混合生成語音／音樂／音效。音樂 benchmark 表現強（MusicCaps FAD 1.37，優於 AudioLDM2 與 MusicGen）。限制：輸出最長 10 秒、無 voice cloning。研究論文已出，權重尚未釋出。",
+      "tags": [
+        "audio_music_ai",
+        "text-to-audio",
+        "research"
+      ],
+      "url": "https://arxiv.org/abs/2605.27838",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2605.27838",
+      "price": null,
+      "vram": "估計可本地跑（權重未釋出）",
+      "license": "未釋出"
+    },
+    {
+      "id": "20260531-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-05-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiangSu8899/FlashRT",
+      "summary": "高效能即時推理引擎，主打小批次、低延遲。旗艦整合是 Pi0／GROOT 等 VLA 機器人控制，也支援 LLM——單張 RTX 5090 跑 Qwen3.6-27B（NVFP4）配 256K context。極致延遲本地推理的新選項，但生態以 robotics VLA 為主。",
+      "tags": [
+        "llm_inference",
+        "inference engine",
+        "VLA"
+      ],
+      "url": "https://github.com/LiangSu8899/FlashRT",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/LiangSu8899/FlashRT",
+      "price": null,
+      "vram": "27B NVFP4 256K 需 24GB+；16GB 須更小模型",
+      "license": "見 repo"
     }
   ],
-  "lastUpdated": "2026-05-30",
-  "updatedAt": "2026-05-30T05:30:00+08:00"
+  "lastUpdated": "2026-05-31",
+  "updatedAt": "2026-05-31T05:10:00+08:00"
 }
