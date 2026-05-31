@@ -46725,6 +46725,166 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260601-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-01",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "odysseus",
+      "summary": "Self-hosted AI workspace。5 天衝到近 6000 星、本週新倉成長最猛。",
+      "tags": [
+        "ai-workspace",
+        "self-hosted",
+        "ai-agent"
+      ],
+      "url": "https://github.com/pewdiepie-archdaemon/odysseus",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 5928,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260601-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-01",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "OpenLogi",
+      "summary": "Rust 寫的 Logitech Options+ 本地替代品，HID++ remap 按鍵/DPI/SmartShift，無帳號無 telemetry。",
+      "tags": [
+        "rust",
+        "local-first",
+        "productivity"
+      ],
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1424,
+      "createdDate": "2026-05-24",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260601-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-01",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "vault",
+      "summary": "MCP prompt-injection 掃描 proxy，runtime 檢查 MCP tool 回傳內容安全性。",
+      "tags": [
+        "mcp",
+        "security",
+        "prompt-injection"
+      ],
+      "url": "https://github.com/vaultmcp/vault",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 513,
+      "createdDate": "2026-05-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260601-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-01",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "lazycodex",
+      "summary": "Codex for no-brainers，ultrawork 模式丟 prompt 就跑的懶人 harness。",
+      "tags": [
+        "codex",
+        "coding-agent",
+        "cli"
+      ],
+      "url": "https://github.com/code-yeongyu/lazycodex",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 171,
+      "createdDate": "2026-05-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260601-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-01",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "pai-pro",
+      "summary": "本地 AI 電影製作 studio（skills+canvas+timeline），由 coding agent 驅動。",
+      "tags": [
+        "ai-filmmaking",
+        "creator-tool",
+        "coding-agent"
+      ],
+      "url": "https://github.com/Utopai-Research/pai-pro",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 43,
+      "createdDate": "2026-05-20",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260601-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-01",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "sample-well-architected-skills-and-steering",
+      "summary": "教 AI coding agent 套用 AWS Well-Architected 的 skills+steering，跨 13 種工具。",
+      "tags": [
+        "aws",
+        "agent-skill",
+        "architecture"
+      ],
+      "url": "https://github.com/aws-samples/sample-well-architected-skills-and-steering",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 145,
+      "createdDate": "2026-05-21",
+      "license": "MIT-0"
+    },
+    {
+      "id": "20260601-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-01",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "skills-for-humanity",
+      "summary": "把嚴謹思想家的結構化推理方法打包成 Claude Code skills。",
+      "tags": [
+        "claude-code",
+        "reasoning",
+        "agent-skill"
+      ],
+      "url": "https://github.com/human-avatar/skills-for-humanity",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 133,
+      "createdDate": "2026-05-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260601-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-01",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "o3-code",
+      "summary": "把 Codex desktop 搬到本地瀏覽器，bridge 存取 Mac/workspace/agent sessions。",
+      "tags": [
+        "codex",
+        "coding-agent",
+        "local"
+      ],
+      "url": "https://github.com/o3dotdev/o3-code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 28,
+      "createdDate": "2026-05-25",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-01",
