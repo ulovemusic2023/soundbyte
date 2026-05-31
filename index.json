@@ -46541,6 +46541,131 @@
       "price": null,
       "vram": "語音通知層，本地可跑",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260601-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor 3.6 — Jira 整合 + /loop + Auto-review run mode",
+      "summary": "Cursor 3.6 把 agent 推進三個方向：(1) Jira 整合，直接把 ticket 指派給 @Cursor 觸發 cloud agent，完工自動連 PR；(2) /loop 讓 agent 在本地按排程或「直到測試過」反覆跑；(3) Auto-review run mode 用 classifier subagent 判斷 Shell/MCP/Fetch 呼叫該放行、改走 sandbox、還是問人。agent 從 IDE 助手變成可長跑、接工單、半自動的同事。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "autonomous-agent",
+        "classifier-subagent"
+      ],
+      "url": "https://cursor.com/changelog",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260601-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Meta 重建 PB 級資料 ingestion 拚可靠性",
+      "summary": "InfoQ 報導 Meta 重寫資料攝取管線，主打 petabyte-scale 的可靠性，以 change data capture (CDC) 路線重構 ingestion，處理超大規模資料流的一致性與容錯。大型分散式資料平台的工程實戰案例。",
+      "tags": [
+        "architecture",
+        "distributed-systems",
+        "cdc",
+        "data-pipeline"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/meta-cdc-migration/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/meta-cdc-migration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260601-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Arm 開源 Metis — agentic AI 資安框架，贏過傳統 SAST",
+      "summary": "Arm 開源 Metis，一套 agentic AI 資安框架，主打用 semantic reasoning 取代傳統 SAST 的 pattern matching，宣稱在漏洞偵測上勝過傳統靜態分析工具。延續 AI-native security 取代規則式掃描的趨勢。",
+      "tags": [
+        "agentic",
+        "security",
+        "sast",
+        "ai-security"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/arm-metis-agentic-security/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260601-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI 輔助把 ingress-nginx 遷移到 Higress",
+      "summary": "InfoQ 介紹用 AI 輔助工具把 K8s 的 ingress-nginx 自動遷移到 Higress（Envoy-based、AI-native API gateway）：工具分析既有 ingress 註解、映射成 Higress 構件、自動產生 manifest，工程師只需驗證。Higress 同時定位成 LLM proxy / MCP server host 的 AI gateway。",
+      "tags": [
+        "api-gateway",
+        "envoy",
+        "ai-assisted-migration",
+        "kubernetes"
+      ],
+      "url": "https://www.infoq.com/news/2026/05/ai-nginx-higress/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/05/ai-nginx-higress/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260601-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：解法也許是取消我的 AI 訂閱",
+      "summary": "Simon Willison 轉述 David Wilson 一篇很有共鳴的文：AI 讓人一小時內把「隨手寫個 script」變成有測試有文件、看似花了好幾週的專案，但隨即被棄置。David 直言這科技是「thermonuclear ADHD amplifier」，produce cheap reward with no friction 反而是負債；Simon 認為要養成的關鍵技能是 discipline。",
+      "tags": [
+        "ai-tooling",
+        "dev-culture",
+        "mental-model",
+        "quotable"
+      ],
+      "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260601-sw-006",
+      "radar": "software-dev",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Domain Expertise 是新的 agentic coding 護城河",
+      "summary": "一篇引爆 HN 大討論的文：當人人都會用 agentic coding 工具，框架與工具不再是護城河，真正的持久優勢是 domain expertise——把不在文件裡的 tacit knowledge 嵌進 workflow、agent 與內部工具。系統邊界與架構選擇怎麼編碼領域規則，才是差異所在。",
+      "tags": [
+        "agentic-coding",
+        "mental-model",
+        "domain-expertise"
+      ],
+      "url": "https://www.developersdigest.tech/blog/domain-expertise-agentic-coding-moat",
+      "source": "Developers Digest / HN",
+      "sourceUrl": "https://www.developersdigest.tech/blog/domain-expertise-agentic-coding-moat",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-01T05:16:00.309984+08:00",
