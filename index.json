@@ -46480,8 +46480,69 @@
       "stars": 1105,
       "createdDate": "2026-05-27",
       "license": "MIT"
+    },
+    {
+      "id": "20260601-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "daydreamlive/DEMON",
+      "summary": "「StreamDiffusion for audio」：把 ACE-Step v1.5 的 denoising 變成可即時演奏的樂器。用 ring buffer 同時跑多首 in-flight 生成，每個 decoder tick 完成一首 song latent；25Hz step-time 控制（source preservation、CFG、timbre 曲線、LoRA hot-swap）可即時調變，還能用 MCP server 讓 LLM agent 每兩小節 live remix。RTX 5090 + 2B turbo 60s 曲目可達 11-12 gen/s。",
+      "tags": [
+        "audio_music_ai",
+        "music generation",
+        "realtime",
+        "diffusion"
+      ],
+      "url": "https://github.com/daydreamlive/DEMON",
+      "source": "GitHub + arXiv",
+      "sourceUrl": "https://github.com/daydreamlive/DEMON",
+      "price": null,
+      "vram": "2B turbo + 低 ring depth 可塞 16GB",
+      "license": "MIT (ACE-Step) / 自訂"
+    },
+    {
+      "id": "20260601-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ryan75195/lora-studio",
+      "summary": "本地端瀏覽器版 AI 音樂工作站，建在 ACE-Step 上：訓練 voice model、生成整首歌、編輯音軌、直接上傳 YouTube，全部在自己 PC 跑、不用 API key。目前 star 還很少（剛起步），但對想把整條 music pipeline 本地化的人是值得追蹤的雛形。",
+      "tags": [
+        "audio_music_ai",
+        "music generation",
+        "voice cloning",
+        "local"
+      ],
+      "url": "https://github.com/ryan75195/lora-studio",
+      "source": "GitHub (music-generation topic)",
+      "sourceUrl": "https://github.com/ryan75195/lora-studio",
+      "price": null,
+      "vram": "ACE-Step 基底可在消費級 GPU 跑",
+      "license": "MIT"
+    },
+    {
+      "id": "20260601-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "paulpreibisch/AgentVibes",
+      "summary": "「TTS for Claude Code」：給 Claude Code 加語音播報，v3.6.0 Voice Explorer 可瀏覽試聽 914 種聲音。本質是 coding agent 的語音通知層、不是新模型，但對天天用 Claude Code 的人是個有趣的小工具。",
+      "tags": [
+        "tts_speech",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/paulpreibisch/AgentVibes",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/paulpreibisch/AgentVibes",
+      "price": null,
+      "vram": "語音通知層，本地可跑",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-05-31",
-  "updatedAt": "2026-05-31T05:10:00+08:00"
+  "lastUpdated": "2026-06-01T05:16:00.309984+08:00",
+  "updatedAt": "2026-06-01T05:16:00.309984+08:00"
 }
