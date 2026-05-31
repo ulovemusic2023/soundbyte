@@ -46666,8 +46666,67 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260601-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-01",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Ben Thompson：敘事不是包裝，是融資工具",
+      "summary": "分析 SpaceX IPO 時，Ben Thompson 點出 Musk 的核心 playbook：用一個夠大的長期願景（火星、太空資料中心）把『相信』直接轉換成資本——『a meme, not a model』。重點不是當下財報合不合理（SpaceX 約 $18–19B 營收、約 $4.9B 虧損），而是敘事本身能融到讓那個願景成真的錢。對 founder 的啟示：願景的規模本身就是一種募資能力。",
+      "tags": [
+        "narrative-as-capital",
+        "vision",
+        "fundraising"
+      ],
+      "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+      "source": "Ben Thompson · Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260601-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-01",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Marc Andreessen：未來的知識工作者是『20 個 agent 的執行長』",
+      "summary": "Andreessen 說矽谷頂尖團隊現在的 benchmark 是每位工程師管約 20 個 AI coding agent，每約 10 分鐘回報一次、24/7 不間斷。更深的洞察是『情緒數學』：高反覆性的工作（做了砍掉重做）天生適合 bot 而非人——人會因白工累積情緒成本，bot 重做 12 次也只說『沒問題』。他預期一年內每個 agent 還會再帶 10–20 個 sub-agent，每個人都變成一張軟體組織圖的 CEO。",
+      "tags": [
+        "ai-agents",
+        "org-design",
+        "leverage"
+      ],
+      "url": "https://economictimes.indiatimes.com/news/international/us/andreessen-horowitz-cofounder-marc-andreessen-says-ai-beats-humans-in-coding-because-ai-never-gets-drunk-sick-or-high-and-never-files-hr-complaints-/articleshow/131325256.cms",
+      "source": "Marc Andreessen · Economic Times",
+      "sourceUrl": "https://economictimes.indiatimes.com/news/international/us/andreessen-horowitz-cofounder-marc-andreessen-says-ai-beats-humans-in-coding-because-ai-never-gets-drunk-sick-or-high-and-never-files-hr-complaints-/articleshow/131325256.cms",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260601-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-01",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Andreessen 金句：AI 不會喝醉、生病或申訴 HR",
+      "summary": "Andreessen 用這句解釋為何 AI 在高反覆的 coding 工作上贏過人類：不是它更聰明，而是它沒有情緒成本與耗損。『AI never gets drunk, sick, or high, and never files HR complaints.』",
+      "tags": [
+        "ai-agents",
+        "future-of-work"
+      ],
+      "url": "https://economictimes.indiatimes.com/news/international/us/andreessen-horowitz-cofounder-marc-andreessen-says-ai-beats-humans-in-coding-because-ai-never-gets-drunk-sick-or-high-and-never-files-hr-complaints-/articleshow/131325256.cms",
+      "source": "Marc Andreessen · Economic Times",
+      "sourceUrl": "https://economictimes.indiatimes.com/news/international/us/andreessen-horowitz-cofounder-marc-andreessen-says-ai-beats-humans-in-coding-because-ai-never-gets-drunk-sick-or-high-and-never-files-hr-complaints-/articleshow/131325256.cms",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-01T05:16:00.309984+08:00",
-  "updatedAt": "2026-06-01T05:16:00.309984+08:00"
+  "lastUpdated": "2026-06-01",
+  "updatedAt": "2026-05-31T21:35:00Z"
 }
