@@ -47033,6 +47033,46 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260602-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-02",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Jensen Huang：「你不是輸給 AI，是輸給更會用 AI 的人」",
+      "summary": "Nvidia CEO 在 CNA 訪談打臉把裁員甩鍋給 AI 的 CEO，稱這敘事「太懶」：AI 半年前才真正好用，兩年前的裁員不可能是 AI 造成。真正分水嶺是會不會用 AI。",
+      "tags": [
+        "ai-displacement",
+        "leadership",
+        "future-of-work"
+      ],
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/nvidia-ceo-jensen-huang-to-ceos-blaming-ai-for-layoffs-tell-me-how-is-it-possible-that-/articleshow/131368483.cms",
+      "source": "Times of India（轉述 CNA 專訪）",
+      "sourceUrl": "https://timesofindia.indiatimes.com/technology/tech-news/nvidia-ceo-jensen-huang-to-ceos-blaming-ai-for-layoffs-tell-me-how-is-it-possible-that-/articleshow/131368483.cms",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260602-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-02",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sam Altman 公開承認看錯 AI 失業潮：「我很樂意承認我錯了」",
+      "summary": "Altman 修正預測：原以為入門白領職位早該被 AI 大量取代，實際衝擊遠比預期小。他反思 OpenAI 對技術判斷大致正確、對社會經濟影響相當錯誤。重點在敢公開更新信念。",
+      "tags": [
+        "ai-displacement",
+        "belief-updating",
+        "future-of-work"
+      ],
+      "url": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman",
+      "source": "Euronews",
+      "sourceUrl": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-02",
