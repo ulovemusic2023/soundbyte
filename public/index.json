@@ -46927,6 +46927,112 @@
       "price": null,
       "vram": "local-ready",
       "license": "MIT"
+    },
+    {
+      "id": "20260602-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BadHost — Starlette 認證繞過漏洞 (CVE-2026-48710) 波及 AI agent 基礎設施",
+      "summary": "Starlette（FastAPI 底層，週下載 325M）爆 Host header 認證繞過：攻擊者用含 /、?、# 的畸形 Host header 繞過 path-based access control，直接打到 AI agent、evaluator、LLM 平台的敏感端點。漏洞橫跨 ASGI server、Starlette、middleware 三層，每層單獨看都正確，bug 出在交互。",
+      "tags": [
+        "security",
+        "ai-agent-infra",
+        "starlette",
+        "CVE",
+        "paradigm-shift"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/badhost-ai-systems-vulnerability/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/badhost-ai-systems-vulnerability/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260602-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Salt Code — 把資安規則塞進 AI coding assistant 裡執行",
+      "summary": "Salt Security 6/1 推 Salt Code，自稱首個 agentic security 方案：透過 Posture Governance Engine 直接在 Claude / Cursor / Copilot / Codex / Gemini CLI 等內強制資安政策，讓 AI 預設生出 policy-compliant code。延續 VibeSec / security context files 那條線。",
+      "tags": [
+        "ai-coding",
+        "security",
+        "vibe-coding",
+        "governance"
+      ],
+      "url": "https://salt.security/press-releases/salt-security-launches-salt-code-the-first-agentic-security-solution-to-enforce-security-policies-inside-ai-coding-assistants",
+      "source": "Salt Security",
+      "sourceUrl": "https://salt.security/press-releases/salt-security-launches-salt-code-the-first-agentic-security-solution-to-enforce-security-policies-inside-ai-coding-assistants",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260602-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot Memory 加上 repo 級關閉開關 + /memory CLI",
+      "summary": "Copilot Memory（public preview）新增治理控制：repo admin 可逐 repo 關閉記憶；CLI 新增 /memory on|off|show 跨 session 持久；store_memory 提示標明這筆是 user preference 還是 repo fact。AI coding 記憶從黑箱累積走向可治理。",
+      "tags": [
+        "copilot",
+        "ai-coding",
+        "memory",
+        "governance"
+      ],
+      "url": "https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260602-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SmartBear TestComplete 加入 Vision AI 視覺物件偵測",
+      "summary": "6/1 SmartBear 為 TestComplete 加 Vision AI，把 property-based、OCR、vision AI 三種定位法整合進同一平台，瞄準 canvas UI、dashboard、legacy app 等過去只能手測的複雜畫面，測試從脆弱的 DOM locator 轉向視覺斷言。",
+      "tags": [
+        "testing",
+        "qa",
+        "visual-testing",
+        "ai-testing"
+      ],
+      "url": "https://smartbear.com/news/news-releases/smartbear-advances-testcomplete-with-vision-ai/",
+      "source": "SmartBear",
+      "sourceUrl": "https://smartbear.com/news/news-releases/smartbear-advances-testcomplete-with-vision-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260602-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Perry — 用 Rust 寫的原生 TypeScript 編譯器",
+      "summary": "Perry 是 Rust 寫的 native TypeScript compiler，走 SWC + LLVM 把 TS 直接編成可執行檔（最新 v0.5.1025，5/22）。還撐起 Bloom Engine 純 TS 跨平台原生遊戲引擎。是目前較成熟的 Rust-based TS→native 工具鏈之一。",
+      "tags": [
+        "typescript",
+        "rust",
+        "compiler",
+        "new-languages"
+      ],
+      "url": "https://github.com/PerryTS/perry",
+      "source": "GitHub (PerryTS)",
+      "sourceUrl": "https://github.com/PerryTS/perry",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-02",
