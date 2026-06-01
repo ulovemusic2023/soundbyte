@@ -46885,8 +46885,50 @@
       "stars": 28,
       "createdDate": "2026-05-25",
       "license": "MIT"
+    },
+    {
+      "id": "20260602-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-02",
+      "cycle": "daily",
+      "priority": "high",
+      "title": "spiritbuun/buun-llama-cpp",
+      "summary": "llama.cpp 實驗性 fork，用 Trellis-Coded Quantization (TCQ) 壓 KV cache，同樣 VRAM 能塞 2–3× context。turbo4 模式幾乎無損、3.8× 壓縮、零速度損失；3-bit 在短 context 下 perplexity 甚至低於 FP16。CUDA-only kernel，正中 RTX 5070 Ti。",
+      "tags": [
+        "llm-inference",
+        "quantization",
+        "kv-cache",
+        "long-context"
+      ],
+      "url": "https://github.com/spiritbuun/buun-llama-cpp",
+      "source": "llama.cpp discussions",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/discussions/20969",
+      "price": null,
+      "vram": "local-ready（降低 KV cache VRAM 佔用）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260602-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-02",
+      "cycle": "daily",
+      "priority": "high",
+      "title": "TAO71-AI/llama-cpp-python-JamePeng",
+      "summary": "維護中的 llama-cpp-python fork。新增 JIT 動態 adapter routing：一次預載多個 LoRA 進 VRAM，按 request 即時切換不用重啟。可注入 Dynamic Control Vectors，在特定 hidden layer 改 activation 操控語氣/情緒/alignment，不動 .gguf 權重。保留 OpenAI 風格 API。",
+      "tags": [
+        "llm-inference",
+        "lora",
+        "control-vectors",
+        "python"
+      ],
+      "url": "https://github.com/TAO71-AI/llama-cpp-python-JamePeng",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/TAO71-AI/llama-cpp-python-JamePeng",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-06-01",
-  "updatedAt": "2026-05-31T21:35:00Z"
+  "lastUpdated": "2026-06-02",
+  "updatedAt": "2026-06-01T21:15:00Z"
 }
