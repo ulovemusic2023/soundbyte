@@ -47073,8 +47073,113 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260602-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-02",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "GordenSun/GordenPPTSkill",
+      "summary": "AI 友善的 PPT 產生 Skill：17 套手工調過的中文 PPTX 模板＋非破壞性「只改文字」工具（python-pptx）。選模板、寫 edits.json，產出版面完整的真 .pptx。⚠️ 授權僅限個人/研究用途。",
+      "tags": [
+        "ppt",
+        "claude-skill",
+        "presentation",
+        "python-pptx"
+      ],
+      "url": "https://github.com/GordenSun/GordenPPTSkill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1381,
+      "createdDate": "2026-05-27",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260602-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-02",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "sandiiarov/skill-creator",
+      "summary": "把任何 MCP server、OpenAPI spec 或 GraphQL endpoint 在 runtime 即時轉成 CLI。對接 AI agent 工具鏈很實用，省去手寫 wrapper。",
+      "tags": [
+        "mcp",
+        "cli",
+        "openapi",
+        "ai-agent"
+      ],
+      "url": "https://github.com/sandiiarov/skill-creator",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 519,
+      "createdDate": "2026-05-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260602-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-02",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "Christian-Katzmann/app-it",
+      "summary": "Claude Code + Codex skill，把本地專案變成 macOS Dock 可啟動的原生 app（自有視窗、自有 icon、不用 Electron）。對在 Mac 上做小工具的人很實用，Windows 版 beta 中。",
+      "tags": [
+        "macos",
+        "claude-code",
+        "desktop-app",
+        "codex"
+      ],
+      "url": "https://github.com/Christian-Katzmann/app-it",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 133,
+      "createdDate": "2026-05-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260602-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-02",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "wasintoh/line-oa-mcp-ultimate",
+      "summary": "用 AI 操作 LINE 官方帳號的 MCP server：27 個工具涵蓋群發、受眾、圖文選單、Flex 訊息、優惠券、洞察。支援 Claude Code/Cursor 等，零基礎設施、免費方案可用。台灣經營 LINE OA 直接相關。",
+      "tags": [
+        "mcp",
+        "line",
+        "marketing",
+        "automation"
+      ],
+      "url": "https://github.com/wasintoh/line-oa-mcp-ultimate",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 53,
+      "createdDate": "2026-05-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260602-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-02",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "PanisHandsome/ai-rules-sync",
+      "summary": "統一管理 AI coding agent 規則的單一真相來源：在 AGENTS.md、CLAUDE.md、.cursorrules、Copilot、Windsurf、Cline、Aider、Gemini 之間互轉同步，或從零 scaffold AGENTS.md。零依賴，多 agent 環境很適合。",
+      "tags": [
+        "agents-md",
+        "claude-code",
+        "config-sync",
+        "coding-agent"
+      ],
+      "url": "https://github.com/PanisHandsome/ai-rules-sync",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 28,
+      "createdDate": "2026-06-01",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-02",
-  "updatedAt": "2026-06-01T21:15:00Z"
+  "updatedAt": "2026-06-02T05:40:00+08:00"
 }
