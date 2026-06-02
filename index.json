@@ -47473,8 +47473,229 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260603-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "boona13/image-extender",
+      "summary": "用 Gemini（透過 OpenRouter）做 AI 影像外擴 outpainting，往任意方向無縫延伸圖片，內建 Poisson blending + best-of-3 變體挑選。創作者做封面/視覺素材實用。",
+      "tags": [
+        "image-ai",
+        "creator-tool",
+        "outpainting"
+      ],
+      "url": "https://github.com/boona13/image-extender",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 748,
+      "createdDate": "2026-05-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260603-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "ClaudioDrews/memory-os",
+      "summary": "給 AI agent 用的 7 層記憶 OS：Qdrant 向量庫 + 結構化 facts + 自動整理 wiki + 精準 context 注入，本地跑、支援任何 LLM provider。",
+      "tags": [
+        "ai-agent",
+        "memory",
+        "rag",
+        "local"
+      ],
+      "url": "https://github.com/ClaudioDrews/memory-os",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 591,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260603-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "yb2460/harness-anything",
+      "summary": "讓 AI agent 透過 COM automation 直接操控 WPS Office 的 CLI harness，把桌面 office 軟體變成 agent 可呼叫的工具。",
+      "tags": [
+        "ai-agent",
+        "automation",
+        "cli"
+      ],
+      "url": "https://github.com/yb2460/harness-anything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 307,
+      "createdDate": "2026-05-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260603-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "IvanWng97/pixtuoid",
+      "summary": "終端機裡的 pixel-art 辦公室，把 Claude Code session 視覺化成像素小人在工作，coding 時的儀式感小物。",
+      "tags": [
+        "claude-code",
+        "terminal",
+        "fun"
+      ],
+      "url": "https://github.com/IvanWng97/pixtuoid",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 104,
+      "createdDate": "2026-05-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260603-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "OnlyTerp/prompt-cache-skills",
+      "summary": "針對各家 LLM agent harness 的 prompt caching 即插即用修補包，指向這個 repo 它就自動 ship 對應 patch，直接省 token 成本。",
+      "tags": [
+        "claude-code",
+        "prompt-cache",
+        "cost"
+      ],
+      "url": "https://github.com/OnlyTerp/prompt-cache-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 95,
+      "createdDate": "2026-05-28",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260603-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "hanxiao/dataroom",
+      "summary": "Jina AI 創辦人 Han Xiao 出品：丟 query 產出整個 dataroom，Pi + 自架 Qwen3.6 的 research harness，單張 L4 GPU 就能跑。",
+      "tags": [
+        "ai-agent",
+        "local-llm",
+        "research"
+      ],
+      "url": "https://github.com/hanxiao/dataroom",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 82,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260603-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "beevibe-ai/beevibe-cto",
+      "summary": "專做系統架構策略決策的 deep research agent，技術選型 / 架構取捨時當第二顆腦袋。",
+      "tags": [
+        "ai-agent",
+        "architecture",
+        "research"
+      ],
+      "url": "https://github.com/beevibe-ai/beevibe-cto",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 70,
+      "createdDate": "2026-05-21",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260603-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "LLMQuant/skills",
+      "summary": "可複用 Agent skills，明確支援 Claude Code / Cursor / Hermes / OpenClaw / Codex，內容以量化金融資料為基礎，命中 OpenClaw 多 agent stack。",
+      "tags": [
+        "agent-skill",
+        "openclaw",
+        "claude-code"
+      ],
+      "url": "https://github.com/LLMQuant/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 54,
+      "createdDate": "2026-05-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260603-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "nv-tlabs/Gamma-World",
+      "summary": "NVIDIA Toronto Lab 的 generative multi-agent world model，超越雙人設定的世界建模，world model paradigm 線值得追。",
+      "tags": [
+        "world-model",
+        "research",
+        "nvidia"
+      ],
+      "url": "https://github.com/nv-tlabs/Gamma-World",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 568,
+      "createdDate": "2026-05-25",
+      "license": "none"
+    },
+    {
+      "id": "20260603-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "agent-sh/agent-workspace-linux",
+      "summary": "給 AI agent 用的隔離 Linux 桌面 workspace，透過 MCP 提供 agent 專屬、隱藏的桌面 + 瀏覽器，做 GUI 操作不碰真正桌面。",
+      "tags": [
+        "mcp",
+        "agent-sandbox",
+        "computer-use"
+      ],
+      "url": "https://github.com/agent-sh/agent-workspace-linux",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 47,
+      "createdDate": "2026-05-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260603-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-03",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "Blinorot/utmos-pytorch",
+      "summary": "UTMOS 語音自然度 MOS 預測模型的 fairseq-free PyTorch 重寫，對齊原始系統，TTS / 語音合成品質評估實用工具。",
+      "tags": [
+        "audio",
+        "tts",
+        "voice-quality"
+      ],
+      "url": "https://github.com/Blinorot/utmos-pytorch",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-20",
+      "stars": 24,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-03",
-  "updatedAt": "2026-06-03"
+  "updatedAt": "2026-06-03T05:40:00+08:00"
 }
