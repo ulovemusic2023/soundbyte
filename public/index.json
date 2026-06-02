@@ -47410,6 +47410,69 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260603-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-03",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "The AI Industrial Revolution — Build Your Own Factory",
+      "summary": "Naval 找來三位 frontier founder（Vercel 的 Guillermo Rauch、Boom Supersonic 的 Blake Scholl、Science 的 Max Hodak）圓桌，重點不是他們做什麼產品，而是他們都選擇「自己蓋工廠」、不靠現成零件組裝。核心：他們在生成什麼新知識、alpha 是什麼、其他創業者能複製什麼原則。Part 1「Waste Tokens, Save Time」點出 AI 時代反直覺槓桿：算力越來越便宜、時間才稀缺。",
+      "tags": [
+        "ai-native",
+        "leverage",
+        "frontier-founders",
+        "means-of-production"
+      ],
+      "url": "https://nav.al/industrial",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://nav.al/industrial",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260603-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-03",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Let the Agents Democratize Open Source",
+      "summary": "開源運動奮鬥數十年爭取「每個人」改寫軟體的權利，AI 來了卻有一堆專案築起『禁止 AI 協助貢獻』的牆。DHH 直指這是 protectionism 加上 Nietzsche 說的 ressentiment——老程式設計師捨不得放掉『我吃過的苦你也得吃』的排他特權。他的觀點：agent 讓更多人能改造軟體，正是開源創始願景的實現。",
+      "tags": [
+        "open-source",
+        "ai-agents",
+        "gatekeeping",
+        "leadership"
+      ],
+      "url": "https://world.hey.com/dhh/let-the-agents-democratize-open-source-9fd630a9",
+      "source": "DHH (David Heinemeier Hansson)",
+      "sourceUrl": "https://world.hey.com/dhh/let-the-agents-democratize-open-source-9fd630a9",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260603-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-03",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "How to Turn Your Love for Learning into a One-Person Business",
+      "summary": "Dan Koe 反駁『興趣太雜是弱點』——多重興趣不是缺點，而是一人公司的素材庫。把『愛學習』本身產品化：持續學、把學到的轉成內容與數位產品，niche 會在過程中自然浮現，不必一開始就鎖死單一主題。",
+      "tags": [
+        "one-person-business",
+        "creator-leverage",
+        "learning",
+        "niche"
+      ],
+      "url": "https://letters.thedankoe.com/p/how-to-turn-your-love-for-learning",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/how-to-turn-your-love-for-learning",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-03",
