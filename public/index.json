@@ -47178,6 +47178,111 @@
       "stars": 28,
       "createdDate": "2026-06-01",
       "license": "MIT"
+    },
+    {
+      "id": "20260603-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ollama v0.30.0",
+      "summary": "Ollama 升級雙引擎：llama.cpp + Apple Silicon MLX，硬體支援更廣、NVIDIA 上推理更快。現在能直接跑 HuggingFace 上的 GGUF 模型與自己 fine-tune 的權重。",
+      "tags": [
+        "ollama",
+        "llm",
+        "gguf",
+        "local-inference"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.30.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.30.0",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260603-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vllm v0.22.0",
+      "summary": "459 commits 大版本：DeepSeek V4 全面硬化（NVFP4 MoE、CUDA graph、MTP speculative decoding）、Model Runner V2 成為 Qwen3 dense 預設、batch-invariant 推理 +28.9% 延遲改善、多層 KV cache offloading、實驗性 Rust frontend。",
+      "tags": [
+        "vllm",
+        "llm",
+        "deepseek-v4",
+        "kv-cache"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.22.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.22.0",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260603-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiquidAI/LFM2.5-8B-A1B",
+      "summary": "Liquid 新一代 MoE：8B 總參數但只 activate 1B，用接近 1B 的速度跑 8B 的腦袋。已附 GGUF，47k 下載。16GB 完全吃得下，本地 chat／agent 高 CP 值選擇。",
+      "tags": [
+        "liquid",
+        "moe",
+        "gguf",
+        "local-llm"
+      ],
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B",
+      "price": null,
+      "vram": "local-ready",
+      "license": "LFM Open License"
+    },
+    {
+      "id": "20260603-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenMOSS-Team/MOSS-TTS-v1.5",
+      "summary": "MOSS-TTS 更新到 v1.5，Apache-2.0 開源 TTS，20k 下載。OpenMOSS（MOSS-Audio／MOSS-TTS）是中文圈值得追的 audio-LLM 系列，語音合成可測音質。",
+      "tags": [
+        "tts",
+        "moss",
+        "speech-synthesis",
+        "audio"
+      ],
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260603-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "JetBrains/Mellum2-12B-A2.5B-Thinking",
+      "summary": "JetBrains 自家 coding 模型 Mellum2，MoE 12B／activate 2.5B 帶 thinking，Apache-2.0。專為程式碼補全／推理調校，本地 coding agent 替代雲端 API 可關注。",
+      "tags": [
+        "jetbrains",
+        "coding-model",
+        "moe",
+        "ai-devtools"
+      ],
+      "url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-06-02",
