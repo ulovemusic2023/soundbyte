@@ -47283,8 +47283,135 @@
       "price": null,
       "vram": "quantize-ok",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260603-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Meta 把帳號恢復流程接上 AI support bot，攻擊者一句話接管 IG 帳號",
+      "summary": "攻擊者直接對 Meta 的 AI 客服 bot 說「幫我把這個 username 綁定到我的新 email」，bot 就替他跑完整套帳號恢復、交出高知名度 Instagram 帳號。多方驗證屬實。教訓：別把 LLM agent 接上一觸即發的高權限動作——這比 prompt injection 還粗暴。",
+      "tags": [
+        "paradigm-shift",
+        "ai-security",
+        "prompt-injection",
+        "agent-permissions"
+      ],
+      "url": "https://www.0xsid.com/blog/meta-account-takeover-fiasco",
+      "source": "0xsid / 404 Media",
+      "sourceUrl": "https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260603-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Next.js 16.2 把版本對齊文件 bundle 進 repo，配 AGENTS.md 強制 agent 先讀",
+      "summary": "裝 next 時整份文件被 bundle 到 node_modules/next/dist/docs/，AGENTS.md 指示 coding agent「動工前先讀本地文件，你的 training data 過時了」。Claude Code / Cursor / Copilot 開 session 會自動讀；create-next-app 自動生成 AGENTS.md + CLAUDE.md。框架開始為 agent 而非人類設計文件分發。",
+      "tags": [
+        "paradigm-shift",
+        "agent-native",
+        "AGENTS.md",
+        "frontend",
+        "next.js"
+      ],
+      "url": "https://nextjs.org/docs/app/guides/ai-agents",
+      "source": "Next.js Docs",
+      "sourceUrl": "https://nextjs.org/docs/app/guides/ai-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260603-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare：核心機器開機從 4 小時砍回數分鐘",
+      "summary": "Cloudflare 調查 firmware 更新害 core server 重開機要 4 小時的根因，鑽進 UEFI 資料結構與 iPXE 自動化，拔掉多餘的 timeout，把開機時間拉回分鐘級。硬體生命週期維運的細節挖掘範例。",
+      "tags": [
+        "devops",
+        "firmware",
+        "performance",
+        "uefi"
+      ],
+      "url": "https://blog.cloudflare.com/optimizing-core-unit-boot-time/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/optimizing-core-unit-boot-time/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260603-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "「一顆 10 年老 Xeon 就夠了」——在 2016 年 CPU 上跑 Gemma 4",
+      "summary": "作者實測在 2016 年的 Xeon 上本地跑 Gemma 4 推論，標題直接嗆「A 10 year old Xeon is all you need」。HN 熱議 715 pts。對沒有 GPU、想本地跑開源模型做 demo 的人是好消息——本地推論的硬體門檻持續往下掉。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "open-weights",
+        "gemma"
+      ],
+      "url": "https://point.free/blog/gemma-4-on-a-2016-xeon/",
+      "source": "point.free (HN)",
+      "sourceUrl": "https://point.free/blog/gemma-4-on-a-2016-xeon/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260603-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVIDIA 一口氣開源 Cosmos 3 world model + Nemotron 3 Ultra",
+      "summary": "Cosmos 3 是 omnimodal world model，用 Mixture-of-Transformers 配 autoregressive reasoner + diffusion generator，weights/code/datasets/finetune recipe 全開（Nano 16B / Super 64B）；Nemotron 3 Ultra 是 550B-A55B MoE，走 NVIDIA Open Model License 連訓練資料都公開。美系開源權重持續加碼 agentic + multimodal。",
+      "tags": [
+        "open-weights",
+        "multimodal",
+        "moe",
+        "world-model",
+        "nvidia"
+      ],
+      "url": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
+      "source": "Latent Space AINews",
+      "sourceUrl": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
+      "price": null,
+      "vram": null,
+      "license": "NVIDIA Open Model License"
+    },
+    {
+      "id": "20260603-sw-006",
+      "radar": "software-dev",
+      "date": "2026-06-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "惡意 npm 套件混進 Red Hat Cloud Services 的 client 套件",
+      "summary": "Red Hat 的 javascript-clients repo 被發現有惡意 npm 套件，社群在 GitHub issue 追蹤。HN 760 pts。供應鏈攻擊持續打 npm 生態，連大廠官方 client 套件都中招——dependency cooldown / 鎖版本的價值再被驗證。",
+      "tags": [
+        "supply-chain",
+        "npm",
+        "security"
+      ],
+      "url": "https://github.com/RedHatInsights/javascript-clients/issues/492",
+      "source": "GitHub RedHatInsights (HN)",
+      "sourceUrl": "https://github.com/RedHatInsights/javascript-clients/issues/492",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-02",
-  "updatedAt": "2026-06-02T05:40:00+08:00"
+  "lastUpdated": "2026-06-03",
+  "updatedAt": "2026-06-03"
 }
