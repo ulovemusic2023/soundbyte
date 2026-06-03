@@ -47842,8 +47842,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260604-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-04",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "「沒有守門人」其實是更高的門檻 — YouTuber 攻佔票房的啟示",
+      "summary": "Ben Thompson 觀察 YouTuber 開始稱霸電影票房，點出反直覺的本質：在 YouTube 上跑出成績，是比好萊塢守門人機制「更高」的門檻，不是更低。守門人看似品質保證，實際上是比公開市場更寬鬆的篩子 — 能在沒人背書的開放平台上贏，代表你已通過更殘酷的真實需求檢驗。",
+      "tags": [
+        "gatekeepers",
+        "creator-economy",
+        "distribution"
+      ],
+      "url": "https://stratechery.com/2026/youtubers-win-the-box-office-goodbye-gatekeepers-the-youtube-bar/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/youtubers-win-the-box-office-goodbye-gatekeepers-the-youtube-bar/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-04",
-  "updatedAt": "2026-06-04T05:10:00+08:00"
+  "updatedAt": "2026-06-04"
 }
