@@ -47756,6 +47756,92 @@
       "price": null,
       "vram": "CPU 工具，無 GPU 需求",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260604-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RealClawBench：把真實 developer-agent session 直接變成可重跑 benchmark",
+      "summary": "新 arXiv 論文把真實部署的 developer-agent session 轉成可重跑 benchmark——281 個可執行任務、重建執行環境 + deterministic scorer，跟原始 session 分布的 Jensen-Shannon divergence 只有 0.0448。14 個當代模型最強只到 65.8%（Claude Opus 4.7），真實 coding agent 任務還有約 1/3 沒解掉。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "evals",
+        "benchmark",
+        "coding-agent"
+      ],
+      "url": "https://arxiv.org/abs/2606.03889",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.03889",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260604-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 推出 Organizations + no-repo / multi-repo Automations",
+      "summary": "Cursor 6/3 changelog：Enterprise 多一層 Organizations（跨團隊 spend/token rollup + org 級 IdP/analytics）；Automations 進駐 Agents Window，可掛多 repo 或完全不掛 repo；Auto-review run mode 用 classifier sub-agent 決定 Shell/MCP/Fetch 放行。no-repo automations（Slack 摘要、產品分析、財務 agent）讓 Cursor 從 coding tool 往營運型 agent 平台擴張。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "agent-automation",
+        "enterprise"
+      ],
+      "url": "https://cursor.com/blog/organizations",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/organizations",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260604-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MiniMax M3：首個結合 frontier coding + 1M context + 原生多模態的 open-weight 模型",
+      "summary": "MiniMax 釋出 open-weight M3，主打 MiniMax Sparse Attention (MSA)：1M token 下用 KV-block selection（每 token 只 attend ~6-7% block），decode 快 ~15.6×、prefill 快 ~9.7×、per-token compute 降到 1/20。SWE-Bench Pro / BrowseComp 對標 closed frontier。長 context agent 與大 codebase 分析的成本結構被重寫。",
+      "tags": [
+        "paradigm-shift",
+        "ai-models",
+        "sparse-attention",
+        "long-context",
+        "open-weight"
+      ],
+      "url": "https://www.minimax.io/blog/minimax-m3",
+      "source": "MiniMax Blog",
+      "sourceUrl": "https://www.minimax.io/blog/minimax-m3",
+      "price": null,
+      "vram": null,
+      "license": "open-weight"
+    },
+    {
+      "id": "20260604-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Red Hat × DeepLearning.AI 免費課：用 vLLM 優化／部署／壓測 LLM",
+      "summary": "Red Hat 6/3 上線免費課，走完 self-host open model 的完整 pipeline：LLM Compressor 量化、vLLM serving、GuideLLM 壓測（TTFT / inter-token latency / throughput）、lm-eval 驗品質。想把 Nemotron 3、gpt-oss、MiniMax 這類 open-weight 模型自架成 coding agent 後端的現成 playbook。",
+      "tags": [
+        "devops_infra",
+        "vllm",
+        "local-inference",
+        "open-weight"
+      ],
+      "url": "https://developers.redhat.com/blog/2026/06/03/learn-optimize-deploy-and-benchmark-llms-vllm-new-free-course",
+      "source": "Red Hat Developer",
+      "sourceUrl": "https://developers.redhat.com/blog/2026/06/03/learn-optimize-deploy-and-benchmark-llms-vllm-new-free-course",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-04",
