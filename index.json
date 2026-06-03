@@ -47862,6 +47862,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260604-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-04",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "Agent-Field/reels-af",
+      "summary": "multi-agent 自動產 Reels/TikTok 短影音，~$0.1/支。Gemini+OpenRouter+TTS pipeline，含腳本配音剪輯。creator 工具。",
+      "tags": [
+        "creator-tools",
+        "short-form-video",
+        "tts",
+        "multi-agent"
+      ],
+      "url": "https://github.com/Agent-Field/reels-af",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-21+topic:text-to-speech&type=repositories",
+      "stars": 23,
+      "createdDate": "2026-05-31",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260604-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-04",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "Health-Yang/MineEcho",
+      "summary": "個人 AI 助理用 local-first Memory OS：L0-L3 分層記憶、Wiki++、skill routing、TokenLess context 壓縮。topics 掛 openclaw。",
+      "tags": [
+        "memory",
+        "local-first",
+        "rag",
+        "openclaw"
+      ],
+      "url": "https://github.com/Health-Yang/MineEcho",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-05-21+topic:ai-agent&type=repositories",
+      "stars": 92,
+      "createdDate": "2026-05-28",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-06-04",
