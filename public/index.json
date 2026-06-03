@@ -47694,8 +47694,70 @@
       "stars": 24,
       "createdDate": "2026-05-31",
       "license": "MIT"
+    },
+    {
+      "id": "20260604-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AutoArk/GPA (GPA-v1.5)",
+      "summary": "一個 0.6B 的統一音訊模型，用單一 autoregressive transformer 同時做 ASR、TTS、voice conversion。GPA-v1.5（4/29）加上原生 PyTorch + ONNX Runtime 推理，主打 edge / 本地 CPU、支援 INT4/INT8 量化。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "asr",
+        "unified-audio"
+      ],
+      "url": "https://github.com/AutoArk/GPA",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/AutoArk/GPA",
+      "price": null,
+      "vram": "0.6B，16GB 綽綽有餘",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260604-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp — Multi-Token Prediction 合併 (PR #22673)",
+      "summary": "llama.cpp 主線（5/16 merge）正式支援 MTP speculative decoding，新旗標 --spec-type draft-mtp。Qwen3.6-27B 實測 22.97 → 42.45 tok/s（約 1.85x），draft 接受率約 75%。需用含 MTP 輔助頭的 GGUF。",
+      "tags": [
+        "llm_inference",
+        "speculative-decoding",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/22673",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/22673",
+      "price": null,
+      "vram": "27B 需 Q4 量化才入 16GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260604-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "chopratejas/headroom",
+      "summary": "Agent 的 context 壓縮層：tool outputs、logs、RAG chunks、檔案、對話史送進 LLM 前先壓 60-95% token。含 SmartCrusher(JSON)、CodeCompressor(AST)、Kompress-base(prose) 與 CacheAligner（拉高 KV-cache 命中）。可當 library / proxy / MCP server / agent wrapper。6/1 v0.22.4。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference",
+        "kv-cache",
+        "token-compression"
+      ],
+      "url": "https://github.com/chopratejas/headroom",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/chopratejas/headroom",
+      "price": null,
+      "vram": "CPU 工具，無 GPU 需求",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-06-03",
-  "updatedAt": "2026-06-03T05:40:00+08:00"
+  "lastUpdated": "2026-06-04",
+  "updatedAt": "2026-06-04T05:10:00+08:00"
 }
