@@ -47943,6 +47943,92 @@
       "price": null,
       "vram": "依掛載模型而定",
       "license": "MIT"
+    },
+    {
+      "id": "20260605-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "「Miasma」蠕蟲攻陷 32 個 Red Hat npm 套件",
+      "summary": "TeamPCP 把 Mini Shai-Hulud 開源後，攻擊不再是單一行為者。6/1 一個被盜的 Red Hat 員工 GitHub 帳號被用來推 orphan commit，塞進 ci.yaml + _index.js，靠 GitHub OIDC 短期 token 直接對 npm trusted publishing 發包。@redhat-cloud-services 命名空間 32 套件、96 版本（週下載 116,991）被植入 4.2MB 混淆 payload，preinstall 階段橫掃 AWS/GCP/Azure/K8s/npm/SSH/.env 全套憑證。供應鏈蠕蟲進入「人人可 fork」的多行為者擴散期。",
+      "tags": [
+        "paradigm-shift",
+        "supply-chain-security",
+        "ci/cd",
+        "github-actions",
+        "oidc"
+      ],
+      "url": "https://www.aikido.dev/blog/red-hat-npm-packages-compromised-credential-stealing-worm",
+      "source": "Aikido Security",
+      "sourceUrl": "https://www.aikido.dev/blog/red-hat-npm-packages-compromised-credential-stealing-worm",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260605-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Microsoft Scout：第一個「Autopilot」，跑在 OpenClaw 上",
+      "summary": "6/2 Build 2026，微軟開新 agent 類別 Autopilots——常駐背景、有自己身分、主動代你行動，跟『你問才答』的 Copilot 切開。Scout 橫跨 Teams/Outlook/OneDrive/SharePoint，會主動排跨時區會議、標風險、生準備材料、卡行事曆。技術底座是 OpenClaw 開源專案。企業端用個人 Entra identity 跑（非共享 service account）所以可歸責，敏感動作要人核准。目前 private preview + Frontier 限定。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "autopilot",
+        "agent-identity",
+        "openclaw"
+      ],
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+      "source": "Microsoft 365 Blog",
+      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260605-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：用 MicroPython + WASM 幫 agent 蓋安全沙箱",
+      "summary": "6/2 連發 micropython-wasm 0.1a1 + datasette-agent-micropython 0.1a0。核心想法：讓 Datasette Agent 能安全跑 LLM 生的 Python，不靠笨重 container——用 wasmtime 跑客製 MicroPython WASM build。他說 alpha 測試裡 GPT-5.5 目前還沒突破沙箱。對 agent code execution 這題，這是輕量、可嵌入的 sandbox 路線。",
+      "tags": [
+        "ai-agent",
+        "sandboxing",
+        "webassembly",
+        "code-execution",
+        "micropython"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/2/datasette-agent-micropython/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260605-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor 改 Teams 計價：拆 first-party / third-party 用量池 + Premium 座位",
+      "summary": "每個 Teams 座位現在分兩池：Composer/Auto（自家模型，給很大）vs Third-Party API（第三方模型）。新增 Premium 座位 5x 用量只收 3x 價（$96/seat/月 年繳）。儀表板顯示逼近上限、可設金額門檻 Slack/email 警報。新客即日生效、續約 7/1 起。AI coding 定價持續從 per-seat 往用量分層+自家模型補貼演化。",
+      "tags": [
+        "ai-coding",
+        "pricing-model",
+        "usage-based-billing"
+      ],
+      "url": "https://cursor.com/blog/teams-pricing-june-2026",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/teams-pricing-june-2026",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-05",
