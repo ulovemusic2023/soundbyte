@@ -47904,8 +47904,47 @@
       "stars": 92,
       "createdDate": "2026-05-28",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260605-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google DeepMind Gemma 4 12B",
+      "summary": "Google 釋出 Gemma 4 12B：dense、encoder-free 統一架構，第一個能原生吃 audio 的中型開源模型（16kHz 切 40ms frame 直接投進 LLM backbone）。benchmark 接近 26B MoE，但記憶體不到一半，16GB VRAM 筆電就能跑。原生支援 text/image/audio/video，256K context。",
+      "tags": [
+        "llm_inference",
+        "tts_speech",
+        "audio_music_ai"
+      ],
+      "url": "https://huggingface.co/google/gemma-4-12b-it",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/06/03/google-deepmind-releases-gemma-4-12b-an-encoder-free-multimodal-model-with-native-audio-that-runs-on-a-16-gb-laptop/",
+      "price": null,
+      "vram": "16GB local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260605-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "llama.cpp 加入 Gemma 4 audio projector 支援",
+      "summary": "llama.cpp 在 b9503（6/4）修好 Gemma 4 audio projector embedding size 處理，到 b9518 一路微調 server spec checkpoint，本地 GGUF runtime 開始能接 Gemma 4 的原生 audio 輸入。配上同週的 Gemma 4 12B，本地端 audio-in 多模態這條路在 llama.cpp 上真的能跑了。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b9503",
+      "source": "GitHub Releases (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b9503",
+      "price": null,
+      "vram": "依掛載模型而定",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-06-04",
-  "updatedAt": "2026-06-04"
+  "lastUpdated": "2026-06-05",
+  "updatedAt": "2026-06-05"
 }
