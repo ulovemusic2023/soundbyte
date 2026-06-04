@@ -48089,6 +48089,109 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260605-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-05",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "tastyeffectco/sandboxes",
+      "summary": "一行指令就能開自架 dev sandbox + preview URL，不用 Kubernetes。專為 coding agent / SaaS factory 設計，讓 AI agent 在隔離環境跑 code、build 並給出可預覽網址。",
+      "tags": [
+        "dev-sandbox",
+        "coding-agent",
+        "self-hosted",
+        "preview-url"
+      ],
+      "url": "https://github.com/tastyeffectco/sandboxes",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 367,
+      "createdDate": "2026-06-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260605-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-05",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "ethanhq/cc-fleet",
+      "summary": "把任意第三方模型（DeepSeek / GLM / Qwen / Kimi / MiniMax）接進 Claude Code，當成原生 agent team 隊友或一次性 subagent。",
+      "tags": [
+        "claude-code",
+        "multi-model",
+        "subagent",
+        "agent-team"
+      ],
+      "url": "https://github.com/ethanhq/cc-fleet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 92,
+      "createdDate": "2026-05-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260605-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-05",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "mai-yyy/multi-llm-mcp",
+      "summary": "MCP 工具，讓 Claude Code 直接調用 Codex 幫忙幹活，還能同時呼叫多個模型（GPT / Kimi / DeepSeek）。",
+      "tags": [
+        "mcp",
+        "claude-code",
+        "codex",
+        "multi-model"
+      ],
+      "url": "https://github.com/mai-yyy/multi-llm-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 40,
+      "createdDate": "2026-05-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260605-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-05",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "robzilla1738/Codex-Workflows",
+      "summary": "給 Codex 用的 workflow-as-code runtime，Claude 風格的工作流定義方式。",
+      "tags": [
+        "codex",
+        "workflow",
+        "agent-runtime"
+      ],
+      "url": "https://github.com/robzilla1738/Codex-Workflows",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 41,
+      "createdDate": "2026-06-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260605-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-05",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "cpaczek/skylight",
+      "summary": "用 RTL-SDR 接收頭頂飛機訊號即時投影到天花板，疊一層 sky layer 顯示每架飛機飛去哪。hacker project，2 天衝到 1.1k 星。",
+      "tags": [
+        "rtl-sdr",
+        "hardware-hack",
+        "visualization"
+      ],
+      "url": "https://github.com/cpaczek/skylight",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 1172,
+      "createdDate": "2026-06-02",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-05",
