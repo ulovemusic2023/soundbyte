@@ -48029,8 +48029,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260605-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-05",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Benedict Evans：AI 是「1997 年的網路時刻」",
+      "summary": "前 a16z 首席分析師 Benedict Evans 主張 AI 跟網路、行動裝置一樣大 —— 但「也就這麼大」。現在是 1997：興奮、早期、但沒人知道價值最終會沉澱在哪一層。關鍵框架：軟體越來越好做，distribution（觸及與信任）才是最後的護城河；判斷工作會不會被取代，別問「AI 能做幾 %」，要問「這是一個 task 還是一個 job」。",
+      "tags": [
+        "ai-future",
+        "distribution-moat",
+        "mental-model"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/a-rational-conversation-on-where",
+      "source": "Benedict Evans • Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/a-rational-conversation-on-where",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260605-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-05",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Uber 把每個 AI coding 工具的用量上限訂在 $1,500/月",
+      "summary": "Uber 四個月燒光 2026 全年 AI 預算後，改為「每名員工、每個 agentic coding 工具上限 $1,500/月」。Simon Willison 認為這比鼓勵員工狂刷 token 的 tokenmaxxing 排行榜理性得多 —— 而且這數字反推出公司認為工具值多少：兩個工具×12 月＝每人每年 $36k，約是 Uber 工程師中位數薪酬的 11%。AI 工具治理從「無限暢飲」走向「有預算的基礎設施」。",
+      "tags": [
+        "ai-spend",
+        "governance",
+        "operational"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260605-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-05",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Task 還是 Job？判斷工作會不會被 AI 取代的框架",
+      "summary": "Task 可以被切出來自動化，job 是一連串判斷與責任的集合；想清楚自己賣的是哪一個。判斷你的工作會不會被 AI 取代，別問「AI 能做幾 %」—— 要問「這是一個 task，還是一個 job」。",
+      "tags": [
+        "ai-future",
+        "career",
+        "quotable"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/a-rational-conversation-on-where",
+      "source": "Benedict Evans • Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/a-rational-conversation-on-where",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-05",
-  "updatedAt": "2026-06-05"
+  "updatedAt": "2026-06-05T05:30:00+08:00"
 }
