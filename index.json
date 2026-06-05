@@ -48422,6 +48422,288 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260606-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "nexu-io/html-video",
+      "summary": "給 coding agent 用的程式化影片引擎：HTML/CSS/資料在本機 render 成真正的 MP4，21 個模板、可插拔 render engine、可掛 AI 配樂，Apache-2.0 無 per-render 費用。",
+      "tags": [
+        "video",
+        "coding-agent",
+        "creator-tool"
+      ],
+      "url": "https://github.com/nexu-io/html-video",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1337,
+      "createdDate": "2026-05-27",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260606-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "jd-opensource/JoyAI-Echo",
+      "summary": "京東開源的長時音視訊生成模型，主打把長 audio-visual generation 往前推進，重視音畫同步一致性。",
+      "tags": [
+        "audio-visual",
+        "generation",
+        "model"
+      ],
+      "url": "https://github.com/jd-opensource/JoyAI-Echo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 551,
+      "createdDate": "2026-06-02",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260606-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "johnbean393/KeyType",
+      "summary": "開源版 Cotypist，macOS 全系統 AI 自動補字，不限 app。",
+      "tags": [
+        "productivity",
+        "macos",
+        "ai-autocomplete"
+      ],
+      "url": "https://github.com/johnbean393/KeyType",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 266,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "OnlyTerp/UltraCode-Shim",
+      "summary": "local proxy + config.json，把 Claude Code 的 ultracode 模式接到任何你已付費的模型，省 API 成本。",
+      "tags": [
+        "ai-coding",
+        "claude-code",
+        "proxy"
+      ],
+      "url": "https://github.com/OnlyTerp/UltraCode-Shim",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 266,
+      "createdDate": "2026-05-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "duncatzat/vigils",
+      "summary": "AI agent 本機 control plane：看清 agent 行為、要緊動作才放行、secrets 不外洩。Rust + Tauri + Chrome MV3。",
+      "tags": [
+        "ai-agent",
+        "observability",
+        "security"
+      ],
+      "url": "https://github.com/duncatzat/vigils",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 243,
+      "createdDate": "2026-05-31",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260606-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "bernardohcrocha/persistia-for-claude-code",
+      "summary": "幫 Claude Code 補上持久記憶，解 context rot，變成有上下文延續的作戰副駕。",
+      "tags": [
+        "claude-code",
+        "memory",
+        "ai-coding"
+      ],
+      "url": "https://github.com/bernardohcrocha/persistia-for-claude-code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 225,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "ntd4996/agentpet",
+      "summary": "macOS menu bar 桌寵，即時監看 Claude Code / Codex / Gemini CLI 的執行狀態。",
+      "tags": [
+        "macos",
+        "coding-agent",
+        "monitor"
+      ],
+      "url": "https://github.com/ntd4996/agentpet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 91,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "mturac/simulacra",
+      "summary": "幽靈人格在出貨前幫你 review code，專抓 edge case、race condition、business logic bug。",
+      "tags": [
+        "code-review",
+        "ai-agent",
+        "testing"
+      ],
+      "url": "https://github.com/mturac/simulacra",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 64,
+      "createdDate": "2026-05-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "yaodub/cast",
+      "summary": "本機跑的多人 Claude agent harness，把 agent 團隊放在自己機器上協作。",
+      "tags": [
+        "multi-agent",
+        "claude",
+        "harness"
+      ],
+      "url": "https://github.com/yaodub/cast",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 22,
+      "createdDate": "2026-06-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "xiaomoBoy/claude-writing-skills",
+      "summary": "長文創作者的 Claude Code skill 工具包：research、評分、改寫、發佈一條龍。",
+      "tags": [
+        "claude-skill",
+        "writing",
+        "creator-tool"
+      ],
+      "url": "https://github.com/xiaomoBoy/claude-writing-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 25,
+      "createdDate": "2026-05-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "mathiaschu/watch",
+      "summary": "給 Claude 影片輸入：/watch 從 yt-dlp 站抓影片、抽 frame、用 mlx 本機轉錄。",
+      "tags": [
+        "video",
+        "transcription",
+        "claude-skill"
+      ],
+      "url": "https://github.com/mathiaschu/watch",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 14,
+      "createdDate": "2026-05-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "aftertonesignal/brume",
+      "summary": "跑在 Raspberry Pi CM5 的 24-voice 多部合成器：觸控 UI、audio/MIDI 走 USB、四種 sound engine、不用 sample。",
+      "tags": [
+        "synthesizer",
+        "midi",
+        "hardware",
+        "dsp"
+      ],
+      "url": "https://github.com/aftertonesignal/brume",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 23,
+      "createdDate": "2026-06-02",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260606-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "pantafive/fader",
+      "summary": "macOS menu bar 音量混音器：per-app 音量、一鍵切換音訊輸出、藍牙耳機控制，原生免費無 telemetry。",
+      "tags": [
+        "audio",
+        "macos",
+        "utility"
+      ],
+      "url": "https://github.com/pantafive/fader",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 11,
+      "createdDate": "2026-06-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260606-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-06-06",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "YoshimiKudo/AutoLooper",
+      "summary": "桌面 app，自動偵測並編輯遊戲音樂檔的 loop marker。",
+      "tags": [
+        "audio",
+        "music",
+        "loop",
+        "game-audio"
+      ],
+      "url": "https://github.com/YoshimiKudo/AutoLooper",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 11,
+      "createdDate": "2026-06-01",
+      "license": "?"
     }
   ],
   "lastUpdated": "2026-06-06",
