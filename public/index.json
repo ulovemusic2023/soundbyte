@@ -48192,8 +48192,74 @@
       "stars": 1172,
       "createdDate": "2026-06-02",
       "license": "MIT"
+    },
+    {
+      "id": "20260606-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenMOSS/MOSS-Music",
+      "summary": "OpenMOSS 把 MOSS-Audio-Encoder 接上 Qwen3-8B，做出專攻音樂理解的 8B 模型（Instruct + Thinking 兩版）。能做帶時間戳的 lyrics ASR、和聲分析、結構分段、chord/key/tempo 推理、長篇音樂 QA——等於把整套 MIR 任務塞進一個 LLM。對做歌、分析參考曲很實用。",
+      "tags": [
+        "music_understanding",
+        "audio_music_ai",
+        "MIR",
+        "Qwen3"
+      ],
+      "url": "https://github.com/OpenMOSS/MOSS-Music",
+      "source": "web_search (github.com)",
+      "sourceUrl": "https://github.com/OpenMOSS/MOSS-Music",
+      "price": null,
+      "vram": "8B（Qwen3-8B + audio encoder），bf16 約 18GB，量化後可進 16GB",
+      "license": "Apache-2.0",
+      "stars": 87
+    },
+    {
+      "id": "20260606-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HumeAI/tada",
+      "summary": "Hume 開源的 speech LM，核心是 TADA（Text-Acoustic Dual Alignment）：每個 text token 對齊一段語音、單步生成並動態決定時長與 prosody，號稱在 1000+ LibriTTSR 樣本上零 transcript hallucination。RTF 0.09，比同級 LLM-based TTS 快約 5 倍；3B 版 bf16 只吃約 9GB，本地跑得動。",
+      "tags": [
+        "tts_speech",
+        "speech-LM",
+        "zero-shot-tts",
+        "Llama"
+      ],
+      "url": "https://github.com/HumeAI/tada",
+      "source": "web_search (github.com)",
+      "sourceUrl": "https://github.com/HumeAI/tada",
+      "price": null,
+      "vram": "3B 版 bf16 約 9GB + encoder 約 2.5GB，16GB 卡輕鬆跑",
+      "license": "MIT (code) / Llama 3.2 Community (weights)",
+      "stars": 986
+    },
+    {
+      "id": "20260606-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vllm-project/vllm-omni",
+      "summary": "vLLM 官方的 omni-modality 推理框架，把 text/image/video/audio 統一進同一套 serving stack，並支援 DiT 這類非自迴歸架構（image/video/TTS 都能跑）。想用一套 runtime 同時服務 LLM + 音訊/影像生成的人值得追。",
+      "tags": [
+        "llm_inference",
+        "audio_music_ai",
+        "omni-modality",
+        "serving"
+      ],
+      "url": "https://github.com/vllm-project/vllm-omni",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/vllm-project/vllm-omni",
+      "price": null,
+      "vram": "框架本身 local-ready，實際 VRAM 視載入模型而定",
+      "license": "Apache-2.0",
+      "stars": 4962
     }
   ],
-  "lastUpdated": "2026-06-05",
-  "updatedAt": "2026-06-05T05:30:00+08:00"
+  "lastUpdated": "2026-06-06",
+  "updatedAt": "2026-06-06T05:30:00+08:00"
 }
