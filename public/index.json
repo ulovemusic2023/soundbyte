@@ -48267,7 +48267,12 @@
       "priority": "paradigm-shift",
       "title": "Anthropic 把 Dynamic Workflows 帶進 Claude Code（research preview）",
       "summary": "Claude Code 現在能自己寫 orchestration script，把大任務拆成 subtask 丟給多個平行 subagent 跑、互相驗證、收斂後才給結論，跑到一半中斷可 resume。鎖定 widespread bug 調查、大型 migration、security audit、架構分析。新增 ultracode 設定可自動判斷何時該開 workflow；代價是 token 用量遠高於一般 session，官方建議先從小範圍試。Max/Team/Enterprise + Claude API / Bedrock / Vertex / Foundry 皆可用。",
-      "tags": ["paradigm-shift", "ai-agent", "multi-agent", "dynamic-workflows"],
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "multi-agent",
+        "dynamic-workflows"
+      ],
       "url": "https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/",
@@ -48283,7 +48288,12 @@
       "priority": "high",
       "title": "GitHub Copilot SDK 正式 GA — agent runtime 變成可嵌入的 library",
       "summary": "GitHub 把 Copilot 背後同一套 agentic engine（planning / tool 呼叫 / 檔案編輯 / streaming / 多輪 session）開成穩定 API，跨 Node/TS、Python、Go、.NET、Rust、Java 六語言。GA 一併帶 custom tools + MCP、system prompt 客製、OpenTelemetry tracing、彈性 auth、cloud/remote session。所有 Copilot 訂閱者（含 Free）可用，非 Copilot 用戶走 BYOK。延續 Cursor SDK 的 agent-as-callable-library 路線，正式進 production。",
-      "tags": ["ai-agent", "agent-sdk", "mcp", "coding-agent"],
+      "tags": [
+        "ai-agent",
+        "agent-sdk",
+        "mcp",
+        "coding-agent"
+      ],
       "url": "https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/",
       "source": "GitHub Changelog",
       "sourceUrl": "https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/",
@@ -48299,7 +48309,12 @@
       "priority": "medium",
       "title": "Simon Willison：微軟自家 MAI 模型（MAI-Thinking-1 / MAI-Code-1-Flash）",
       "summary": "微軟釋出兩顆高效 MoE：MAI-Thinking-1（1T 總參 / 35B active，主打 reasoning，僅早期夥伴）與 MAI-Code-1-Flash（137B / 5B active，專為 GitHub Copilot + VS Code coding 設計，正推給 Copilot 個人用戶）。Simon 起初稱 MAI-Thinking-1 盲測勝過 Sonnet 4.6，但看技術文件後自我更正：所謂『appropriately licensed data』其實仍是 794B 過濾後 web crawl，跟其他大模型一樣有版權問題。",
-      "tags": ["ai-models", "moe", "coding-model", "microsoft"],
+      "tags": [
+        "ai-models",
+        "moe",
+        "coding-model",
+        "microsoft"
+      ],
       "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/",
       "source": "Simon Willison",
       "sourceUrl": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/",
@@ -48315,15 +48330,100 @@
       "priority": "medium",
       "title": "InfoQ：AI agent 在 Kubernetes 上修真實 bug 實測 — 卡在 scope discovery",
       "summary": "用 Claude Opus 4.6 對 9 個真實 K8s bug 跑三種配置（純 RAG / RAG+本地檔案 / 純本地 repo）。最大失敗模式不是改錯，而是『改不完整』：agent 修了主 bug 卻漏掉連動要改的地方，不會主動問『還有什麼要一起改？』。系統級影響的 scope discovery 仍是 coding agent 的硬傷。",
-      "tags": ["ai-agent", "evals", "coding-agent", "benchmark"],
+      "tags": [
+        "ai-agent",
+        "evals",
+        "coding-agent",
+        "benchmark"
+      ],
       "url": "https://www.infoq.com/news/2026/05/ai-agents-kubernetes-rag/",
       "source": "InfoQ",
       "sourceUrl": "https://www.infoq.com/news/2026/05/ai-agents-kubernetes-rag/",
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260606-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-06",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "AI 樂觀派 vs 懷疑派：兩邊都對，缺的是 feedback loop",
+      "summary": "Charity Majors 點出張力：擁抱 AI 的團隊正看到真實、非線性的能力躍升，坐視不管可能在塵埃落定前就出局；但當 code 寫得比工程師讀得快、沒人有完整 context，你是在提領累積多年的信任帳戶——可靠性與制度知識會蒸發。兩種都是真實的存亡威脅，而兩派之間沒有天然回饋迴路，設計這個迴路是組織設計問題，不是技術問題。",
+      "tags": [
+        "ai-native",
+        "org-design",
+        "mental-model"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/",
+      "source": "Charity Majors (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260606-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-06",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Google 是「資本公司」：史上最美的商業模式",
+      "summary": "Ben Thompson 拆解 Aggregator 本質：供給免費、客戶搶著互相抬高你的價格、用戶決定誰有資格付你錢。關鍵心法是 Aggregator 用相對價值換絕對價值——每個來自 Google 的訪客單價遠低於直接訪客，但總量暴增。投資人愛 asset-light、高相對利潤；Google 反過來用龐大資產負債表直接下場，把資本本身變成護城河。",
+      "tags": [
+        "aggregation-theory",
+        "business-model",
+        "moat"
+      ],
+      "url": "https://stratechery.com/2026/the-google-capital-company/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/the-google-capital-company/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260606-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-06",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Sam Altman：AI 最公平的批評，就是「到底值不值」",
+      "summary": "Altman 直接承認「砸大錢做 AI 到底會不會回本」是當前對 AI 最公平的批評。他轉述企業的真實心聲：我花了一堆錢、知道有很多浪費，還要多久才會反映在營收、成本才壓得下來？對任何導入 AI 的團隊，這是操作提醒：把 AI 支出綁到可衡量的營收或成本節省上，別停在『很酷的原型』。",
+      "tags": [
+        "ai-roi",
+        "capex-discipline",
+        "monetization"
+      ],
+      "url": "https://www.businessinsider.com/sam-altman-addresses-ai-spending-concerns-capex-2026-6",
+      "source": "Sam Altman (Business Insider)",
+      "sourceUrl": "https://www.businessinsider.com/sam-altman-addresses-ai-spending-concerns-capex-2026-6",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260606-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-06-06",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "\"Mute the world and build your own\" — David Senra",
+      "summary": "讀完 400 本創辦人傳記後，David Senra 的結論：頂尖創辦人不是更聰明或更幸運，而是專注到『幾乎不像人類』的程度。他更挑釁的觀點是——founder-problem fit 比 product-market fit 更重要。",
+      "tags": [
+        "founder-mindset",
+        "focus",
+        "obsession"
+      ],
+      "url": "https://finance.biggo.com/news/80f550d447622277",
+      "source": "David Senra (Founders Podcast)",
+      "sourceUrl": "https://finance.biggo.com/news/80f550d447622277",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-06",
-  "updatedAt": "2026-06-06T05:35:00+08:00"
+  "updatedAt": "2026-06-06T05:35:21+08:00"
 }
