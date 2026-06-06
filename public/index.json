@@ -48782,8 +48782,173 @@
       "price": null,
       "vram": "靠後端 LLM API",
       "license": "未標示"
+    },
+    {
+      "id": "20260607-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 收購 VoidZero（Vite 母公司）",
+      "summary": "Cloudflare 6/4 收購 Evan You 的 VoidZero——Vite、Vitest、Rolldown、Oxc 全納入旗下，把前端 build/test 工具鏈縫進 Workers，做到 local code → 全球邊緣一鍵部署；砸 $1M 進獨立 Vite 生態基金、維持 MIT。前端工具鏈被 edge 平台收編。",
+      "tags": [
+        "paradigm-shift",
+        "vite",
+        "build-tooling",
+        "edge"
+      ],
+      "url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260607-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Dropbox Nova：把 AI coding agent 變成內部平台",
+      "summary": "Dropbox 蓋 Nova，把 coding agent 當 SDLC 一等公民 orchestrate。session 跑在綁定 commit 的 isolated cloud，走 propose→validate→iterate；code publication 跟 agent 執行切開保留 determinism。整合 MCP + observability。平台 infra 跟 model 一樣重要。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "mcp",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/dropbox-nova-ai-coding-agents/",
+      "source": "InfoQ (Dropbox)",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/dropbox-nova-ai-coding-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260607-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netflix Service Topology：上千微服務的即時依賴圖",
+      "summary": "Netflix 合 eBPF 網路流量 + IPC metrics + distributed traces 成可查詢 live dependency graph，三段 pipeline 解析掉 LB/NAT 還原 app-to-app。Pekko Streams + 多區 Kafka，gRPC sub-second。",
+      "tags": [
+        "distributed-systems",
+        "microservices",
+        "ebpf",
+        "observability"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/netflix-microservices-realtime/",
+      "source": "InfoQ (Netflix)",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/netflix-microservices-realtime/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260607-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Next.js 16.2：把 AI agent 當第一類使用者",
+      "summary": "6/4 release。next dev 啟動快 ~400%、rendering 快 25–60%、Turbopack fast refresh 快 67–900%。agent-first：自動生成 AGENTS.md、內建版本對齊 markdown docs、browser error 轉 terminal、@vercel/next-browser 讓 agent 從 CLI 檢視 running app。",
+      "tags": [
+        "next.js",
+        "ai-agent",
+        "agents-md",
+        "frontend"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/nextjs-6-2/",
+      "source": "InfoQ (Vercel)",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/nextjs-6-2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260607-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Latent Space：你不是 model 問題，是 harness 問題",
+      "summary": "Auriel Wright 6/5。RL 沒 static dataset，model 靠互動自生訓練資料，壞 harness 餵毒 gradient。準則：環境失敗率 >5% 就是 harness 問題。五大失效：stale cache、reward hacking、false resolution、silent timeout、data distribution mismatch。",
+      "tags": [
+        "rl",
+        "agent-harness",
+        "evals",
+        "ai-engineering"
+      ],
+      "url": "https://www.latent.space/p/bad-envs",
+      "source": "Latent Space",
+      "sourceUrl": "https://www.latent.space/p/bad-envs",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260607-sw-006",
+      "radar": "software-dev",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare AI Gateway 加上花費上限",
+      "summary": "6/4。AI Gateway 新增 spend limits，對跑在 Workers AI / 各家 LLM 的 inference 成本設天花板。AI 帳單失控是 2026 普遍痛點，cost guardrail 內建進 gateway 很務實。",
+      "tags": [
+        "ai-gateway",
+        "cost-control",
+        "devops"
+      ],
+      "url": "https://blog.cloudflare.com/ai-gateway-spend-limits/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/ai-gateway-spend-limits/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260607-sw-007",
+      "radar": "software-dev",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenAI 揭露 Codex 的 Windows sandbox 架構",
+      "summary": "OpenAI 拆解 Codex 在 Windows 的隔離：unelevated sandbox（SID/ACL/write-restricted token + 合成 sandbox-write SID 保護 .git）到 elevated sandbox（建專用本機帳號、restricted token 執行），網路防火牆細控。給會執行 code 的 agent 一份 OS 級隔離範本。",
+      "tags": [
+        "coding-agent",
+        "sandbox",
+        "security"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/codex-windows-sandbox-design/",
+      "source": "InfoQ (OpenAI)",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/codex-windows-sandbox-design/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260607-sw-008",
+      "radar": "software-dev",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RedMonk：Bun 的兩堂課",
+      "summary": "6/4 RedMonk 覆盤 Bun——Zig 寫的 Node drop-in（計畫改寫 Rust），如今 ~92k stars 成 JS runtime 版圖核心。談它給生態的兩個教訓。",
+      "tags": [
+        "bun",
+        "javascript-runtime",
+        "zig"
+      ],
+      "url": "https://redmonk.com/sogrady/2026/06/04/bun-two-lessons/",
+      "source": "RedMonk",
+      "sourceUrl": "https://redmonk.com/sogrady/2026/06/04/bun-two-lessons/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-06",
-  "updatedAt": "2026-06-06T05:35:21+08:00"
+  "lastUpdated": "2026-06-07",
+  "updatedAt": "2026-06-07T05:20:00+08:00"
 }
