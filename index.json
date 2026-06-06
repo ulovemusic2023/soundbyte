@@ -48704,6 +48704,84 @@
       "stars": 11,
       "createdDate": "2026-06-01",
       "license": "?"
+    },
+    {
+      "id": "20260607-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FireRedTeam/FireRedASR2S",
+      "summary": "小紅書團隊的 SOTA 工業級 all-in-one ASR 系統，整合 ASR + VAD + LID + Punc 四模組。重點是「speech 和 singing 都能轉錄」，支援中文（普通話 + 20 多種方言/口音）、英文與 code-switching；VAD 覆蓋 100+ 語言的語音/歌唱/音樂。對做歌唱資料標註、人聲對齊很實用。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "asr",
+        "singing"
+      ],
+      "url": "https://github.com/FireRedTeam/FireRedASR2S",
+      "source": "GitHub (FireRedTeam)",
+      "sourceUrl": "https://github.com/FireRedTeam/FireRedASR2S",
+      "price": null,
+      "vram": "ASR + LLM 模組，估 16GB 量化可跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260607-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "JarodMica/audiobook_maker",
+      "summary": "用開源 TTS + voice cloning 生成有聲書的完整 pipeline（GUI）。把長文本切段、選聲線、批次合成一條龍，底層可接 RVC/StyleTTS 類引擎。適合拿來測本地語音克隆品質、做 demo 旁白。",
+      "tags": [
+        "tts_speech",
+        "voice cloning"
+      ],
+      "url": "https://github.com/JarodMica/audiobook_maker",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/06/02/JarodMica-audiobook_maker.html",
+      "price": null,
+      "vram": "消費級 GPU 即可（接 TTS 引擎）",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260607-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "qualcomm/ai-hub-models",
+      "summary": "Qualcomm 官方收錄的一整套針對 latency/memory 最佳化、可直接部署到 Qualcomm 裝置的 SOTA ML 模型集。對 edge/on-device 推論是好參考，雖然不是針對你 RTX 主機，但能看到模型壓縮與部署的工程做法。",
+      "tags": [
+        "infra_runtime",
+        "edge inference"
+      ],
+      "url": "https://github.com/qualcomm/ai-hub-models",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/06/04/qualcomm-ai-hub-models.html",
+      "price": null,
+      "vram": "edge 最佳化、模型小",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20260607-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-06-07",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "razzant/ouroboros",
+      "summary": "會改寫自己原始碼的 self-modifying AI agent（作者形容「self-creating」）。本身不是模型，是個會自我演化的 agent 框架，趨勢觀察點：agent 自我修改/自我擴展這條線。無 license，玩玩可以、別上 production。",
+      "tags": [
+        "ai_devtools",
+        "agent"
+      ],
+      "url": "https://github.com/razzant/ouroboros",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/06/04/razzant-ouroboros.html",
+      "price": null,
+      "vram": "靠後端 LLM API",
+      "license": "未標示"
     }
   ],
   "lastUpdated": "2026-06-06",
