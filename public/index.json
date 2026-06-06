@@ -48947,8 +48947,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260607-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-07",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly：AI 還沒取代人類，是因為它「學不會教訓」",
+      "summary": "Kelly 區分三種認知模式，點出一個常被忽略的護城河：LLM 的「書本智商」早已超越人類，但 AI agent 至今沒取代上班族，關鍵在它不會從錯誤中學習——你每次糾正它，下一輪對話它就忘了。人類就算沒那麼聰明，卻能在工作中一天天變強。真正的競爭力不是「現在多會」，而是「會不會累積」。",
+      "tags": [
+        "mental-model",
+        "ai-future",
+        "learning-moat"
+      ],
+      "url": "https://kk.org/thetechnium/three-modes-of-cognition/",
+      "source": "Kevin Kelly (The Technium)",
+      "sourceUrl": "https://kk.org/thetechnium/three-modes-of-cognition/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260607-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-07",
+      "cycle": "sunday",
+      "priority": "playbook",
+      "title": "Dan Koe：2026 一人公司，門檻變低但天花板變高",
+      "summary": "Koe 的觀察很反直覺：AI 讓創業門檻空前地低，但也把「技能天花板」拉得更高。因為工具人人有，差距不再來自『能不能做』，而是來自品味、持續輸出、和願不願意反覆打磨——多數人淺嚐即止、不疊代，反而拉開差距。做法不變，只是用 AI 做得更快、更好、少走冤枉路。",
+      "tags": [
+        "solo-founder",
+        "creator-leverage",
+        "ai-leverage"
+      ],
+      "url": "https://letters.thedankoe.com/p/how-to-start-a-one-person-business",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/how-to-start-a-one-person-business",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-07",
-  "updatedAt": "2026-06-07T05:20:00+08:00"
+  "updatedAt": "2026-06-07"
 }
