@@ -48987,6 +48987,204 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260607-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "chaitanyagiri/munder-difflin",
+      "summary": "把多個 Claude Code CLI agent 包成桌面 app，視覺化成在辦公室樓層走動的 avatar；GOD orchestrator 統籌派工、跨 session 持久記憶 + mailbox 通訊。Electron + React + Pixi.js。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "multi-agent"
+      ],
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/chaitanyagiri/munder-difflin",
+      "stars": 399,
+      "createdDate": "2026-05-31",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260607-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "razr001/align-dev",
+      "summary": "幫 AI 輔助開發團隊產出共用 coding standards 和 SKILL.md，讓 Claude Code / Codex / Cursor / Copilot 風格一致。",
+      "tags": [
+        "ai-agent",
+        "coding-tools",
+        "skills.md"
+      ],
+      "url": "https://github.com/razr001/align-dev",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/razr001/align-dev",
+      "stars": 177,
+      "createdDate": "2026-06-03",
+      "license": "?"
+    },
+    {
+      "id": "20260607-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "caezium/Burrow",
+      "summary": "macOS 磁碟清理工具 Mole CLI 的原生 GUI，內建 MCP server 讓 Claude Code 直接操作。",
+      "tags": [
+        "mcp",
+        "developer-tool",
+        "macos"
+      ],
+      "url": "https://github.com/caezium/Burrow",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/caezium/Burrow",
+      "stars": 113,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260607-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "AI272/speaker",
+      "summary": "學術簡報 Codex skill：讀 .pptx → 抽取 + 結構解析 + render + OCR，自動生成逐頁講稿寫進註解區。",
+      "tags": [
+        "coding-tools",
+        "codex",
+        "presentation"
+      ],
+      "url": "https://github.com/AI272/speaker",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/AI272/speaker",
+      "stars": 83,
+      "createdDate": "2026-06-03",
+      "license": "?"
+    },
+    {
+      "id": "20260607-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "shyftlabs/continuum",
+      "summary": "ShyftLabs 的 agent runtime，主打 build / orchestrate / ship 一條龍。",
+      "tags": [
+        "ai-agent",
+        "agent-framework"
+      ],
+      "url": "https://github.com/shyftlabs/continuum",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/shyftlabs/continuum",
+      "stars": 69,
+      "createdDate": "2026-05-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260607-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "briangaoo/totem",
+      "summary": "把 Whoop 健身手環資料接進 MCP，47 tools（recovery/sleep/strain/HRV）。逆向 iOS 私有 API。",
+      "tags": [
+        "mcp",
+        "health",
+        "tool-use"
+      ],
+      "url": "https://github.com/briangaoo/totem",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/briangaoo/totem",
+      "stars": 62,
+      "createdDate": "2026-05-26",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260607-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "southleft/figma-console-mcp-skills",
+      "summary": "Figma Console MCP 能力包成 Markdown skills：design tokens、元件分析、WCAG/a11y 稽核、版本歷史。",
+      "tags": [
+        "mcp",
+        "design",
+        "figma"
+      ],
+      "url": "https://github.com/southleft/figma-console-mcp-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/southleft/figma-console-mcp-skills",
+      "stars": 38,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260607-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "ulyssestenn/omt",
+      "summary": "Ollama Model Test — 跑測試找出任務最適合的本地模型。",
+      "tags": [
+        "local-llm",
+        "ollama"
+      ],
+      "url": "https://github.com/ulyssestenn/omt",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ulyssestenn/omt",
+      "stars": 38,
+      "createdDate": "2026-06-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260607-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "Nonanti/narwhal",
+      "summary": "多資料庫 TUI client（6 種 DB），vim 編輯、Lua+WASM plugins、schema diff，內建 MCP server。",
+      "tags": [
+        "developer-tool",
+        "mcp",
+        "database"
+      ],
+      "url": "https://github.com/Nonanti/narwhal",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Nonanti/narwhal",
+      "stars": 35,
+      "createdDate": "2026-05-27",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260607-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-07",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "helloianneo/ian-xiaohei-scenes",
+      "summary": "中文小黑實物文章配圖 + 長卷故事圖的 Codex skill（前作 2.0）。內容創作配圖工具。",
+      "tags": [
+        "codex",
+        "content",
+        "illustration"
+      ],
+      "url": "https://github.com/helloianneo/ian-xiaohei-scenes",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/helloianneo/ian-xiaohei-scenes",
+      "stars": 77,
+      "createdDate": "2026-06-04",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-07",
