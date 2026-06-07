@@ -49185,8 +49185,51 @@
       "stars": 77,
       "createdDate": "2026-06-04",
       "license": "MIT"
+    },
+    {
+      "id": "20260608-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Magenta RealTime 2",
+      "summary": "Google Magenta 的 open-weights 即時音樂生成模型，2.4B 參數。MIDI / text / audio 三種輸入即時控制，反應延遲 ~200ms（比 v1 快 ~15x），48kHz 立體聲串流。可當獨立 app、DAW plugin 或嵌入軟體。即時串流主要針對 Apple Silicon MLX 最佳化，另有 JAX backend。",
+      "tags": [
+        "music-generation",
+        "audio-ai",
+        "real-time",
+        "open-weights"
+      ],
+      "url": "https://github.com/magenta/magenta-realtime",
+      "source": "Magenta Blog",
+      "sourceUrl": "https://magenta.withgoogle.com/magenta-realtime-2",
+      "price": null,
+      "vram": "2.4B，16GB 綽綽有餘（即時串流路徑針對 Apple Silicon MLX 最佳化）",
+      "license": "Apache-2.0 (code) / CC-BY-4.0 (weights)"
+    },
+    {
+      "id": "20260608-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gemma 4 QAT 官方量化檢查點",
+      "summary": "Google 為 Gemma 4 全系列 (E2B/E4B/12B/26B-A4B/31B) 釋出 QAT (quantization-aware training) 官方檢查點，4-bit 下品質幾乎不掉。26B-A4B MoE 在 Q4 約 15GB 即可載入 16GB GPU，每 token 只激活 ~3.8B 參數，接近 4B 速度但品質遠超。官方與 Unsloth 都提供 GGUF，直接餵 llama.cpp / Ollama。",
+      "tags": [
+        "llm-inference",
+        "quantization",
+        "gguf",
+        "gemma",
+        "moe"
+      ],
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+      "price": null,
+      "vram": "26B-A4B Q4 ~15GB 進 16GB；31B Q4 ~18GB 需降階",
+      "license": "Gemma Terms of Use"
     }
   ],
-  "lastUpdated": "2026-06-07",
-  "updatedAt": "2026-06-07"
+  "lastUpdated": "2026-06-08",
+  "updatedAt": "2026-06-08"
 }
