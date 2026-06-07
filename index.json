@@ -49368,6 +49368,110 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260608-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-08",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "tastyeffectco/sandboxd",
+      "summary": "自架 dev sandbox + preview URL，一行指令啟動，不用 Kubernetes。專為 coding agent / SaaS factory 設計——讓每個 agent 任務跑在隔離環境裡再丟預覽連結。",
+      "tags": [
+        "coding-agent",
+        "devtool",
+        "sandbox",
+        "self-hosted"
+      ],
+      "url": "https://github.com/tastyeffectco/sandboxd",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-25+stars%3A%3E50&type=repositories",
+      "stars": 493,
+      "createdDate": "2026-06-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260608-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-08",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "amElnagdy/guard-skills",
+      "summary": "給 coding agent 的「品質閘門」skill 集——專抓 AI 生成 code/測試/文件裡常見的失敗模式。等於幫 vibe coding 加一層 guardrail，AI 寫完先過檢查再放行。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "quality-gate",
+        "code-review"
+      ],
+      "url": "https://github.com/amElnagdy/guard-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-25+topic%3Aclaude-code&type=repositories",
+      "stars": 278,
+      "createdDate": "2026-06-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260608-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-08",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "JimLiu/baoyu-design",
+      "summary": "把 claude.ai/design 搬到本地當 Agent Skill 跑——Cursor / Claude Code 都能用，產出 self-contained HTML 的 UI mockup、prototype、簡報、wireframe。作者標明 Opus 4.8 效果最好。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "ui-design",
+        "prototype"
+      ],
+      "url": "https://github.com/JimLiu/baoyu-design",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-25+topic%3Aclaude-code&type=repositories",
+      "stars": 226,
+      "createdDate": "2026-06-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260608-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-08",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "maximecb/bebelm",
+      "summary": "純 Rust、純 CPU 跑 LiquidAI LFM2.5-8B-A1B 的實作。不用 GPU、不靠 llama.cpp，想在一般筆電上跑 local LLM 的人值得追。",
+      "tags": [
+        "local-llm",
+        "rust",
+        "cpu-inference"
+      ],
+      "url": "https://github.com/maximecb/bebelm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-25+topic%3Alocal-llm&type=repositories",
+      "stars": 31,
+      "createdDate": "2026-06-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260608-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-08",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "Saganaki22/Higgs_v3-TTS-ComfyUI",
+      "summary": "把 higgs-audio-v3-tts-4b 包成 ComfyUI nodes：100 語言對話式 TTS、zero-shot voice cloning、行內情緒/風格/SFX 標籤、長文分段、多角色對話。做音訊內容的人可以直接在 ComfyUI 拉 pipeline。",
+      "tags": [
+        "audio",
+        "tts",
+        "voice-cloning",
+        "comfyui"
+      ],
+      "url": "https://github.com/Saganaki22/Higgs_v3-TTS-ComfyUI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-25+topic%3Avoice-cloning&type=repositories",
+      "stars": 22,
+      "createdDate": "2026-06-05",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-08",
