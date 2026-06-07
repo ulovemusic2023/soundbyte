@@ -49289,6 +49289,85 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260608-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-08",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "David Senra —「Mute the world」：無限槓桿時代，極致手藝才是護城河",
+      "summary": "頂尖創辦人的共通點不是多工、不是追風口，而是系統性消除雜訊、對核心使命近乎偏執的專注。在 AI 帶來無限槓桿的時代，站在手藝極端的人能比中位數高出 100x–1000x 的價值；驅動他們長期堅持的不是錢，是掌控感，錢只是副產品。",
+      "tags": [
+        "leverage",
+        "focus",
+        "craft-mastery"
+      ],
+      "url": "https://www.sequoiacap.com/podcast/david-senra-mute-the-world-and-build-your-own/",
+      "source": "Sequoia Capital Podcast",
+      "sourceUrl": "https://www.sequoiacap.com/podcast/david-senra-mute-the-world-and-build-your-own/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260608-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-08",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Satya Nadella —「世界要的是你做那一件事」",
+      "summary": "Nadella 談核心能力：公司最佳表現來自聚焦獨有強項，而非追逐每個機會。競爭優勢來自做利害關係人期待你做的事，不是嫉妒對手的成功；平台轉移期應把資源集中在有防禦力的生態（專屬數據、整合系統、領域 know-how），而不是想通吃新市場每一塊。",
+      "tags": [
+        "core-competency",
+        "focus",
+        "platform-shift"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260608-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-08",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "Tim Ferriss × Mike Maples —「絕望的客戶」才是 PMF 訊號",
+      "summary": "很多執行力不差的 startup 死在溫吞的中間地帶，只吸引到有點興趣但不是非要不可的客戶。關鍵不是問大家喜不喜歡，而是問誰急著要這個被解決，先為有急迫、尖銳需求的人打造。找到第一批真正絕望的客戶，勝過讓上千人無感地覺得還不錯。",
+      "tags": [
+        "pmf",
+        "desperate-customers",
+        "early-stage"
+      ],
+      "url": "https://tim.blog/2026/06/01/desperate-customers/",
+      "source": "The Tim Ferriss Show",
+      "sourceUrl": "https://tim.blog/2026/06/01/desperate-customers/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260608-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-06-08",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Nolan Bushnell 對 Steve Jobs 說的話",
+      "summary": "「If you pretend to be in control, everybody else will assume that you are.」Senra 引述這句話點出創辦人的掌控感如何成為自我實現的預言——在不確定中仍能持續推進。",
+      "tags": [
+        "leadership",
+        "founder-psychology"
+      ],
+      "url": "https://www.sequoiacap.com/podcast/david-senra-mute-the-world-and-build-your-own/",
+      "source": "Sequoia Capital Podcast",
+      "sourceUrl": "https://www.sequoiacap.com/podcast/david-senra-mute-the-world-and-build-your-own/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-08",
