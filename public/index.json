@@ -49228,6 +49228,67 @@
       "price": null,
       "vram": "26B-A4B Q4 ~15GB 進 16GB；31B Q4 ~18GB 需降階",
       "license": "Gemma Terms of Use"
+    },
+    {
+      "id": "20260608-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 推出 Lockdown Mode：堵死 prompt injection 的資料外洩那一步",
+      "summary": "OpenAI 新增 Lockdown Mode，限制 ChatGPT 對外的 network request，讓攻擊者就算成功注入也帶不走資料。Simon Willison 大讚——切斷 Lethal Trifecta 裡的外洩管道，比擋注入更實際。",
+      "tags": [
+        "ai-security",
+        "prompt-injection",
+        "lethal-trifecta"
+      ],
+      "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260608-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ladybird 瀏覽器停收公開 PR：AI 時代大 patch 不再等於認真",
+      "summary": "Andreas Kling 宣布 Ladybird 不再接受公開 PR。AI 生成 code 後，大 patch=投入心力的假設破裂，治理改以『誰負責』為準。AI coding 對 open source 治理的直接衝擊。",
+      "tags": [
+        "ai-code-governance",
+        "open-source",
+        "accountability"
+      ],
+      "url": "https://ladybird.org/posts/changing-how-we-develop-ladybird/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/5/andreas-kling/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260608-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ollama v0.30.6：內建 Oh My Pi coding agent + Gemma 4 QAT 量化版",
+      "summary": "Ollama 0.30.6 新增 `ollama launch omp` 整合本地 AI coding agent Oh My Pi（帶 IDE 能力），並放出 Gemma 4 QAT 權重壓低記憶體、衝 Apple Silicon on-device 效能。",
+      "tags": [
+        "ollama",
+        "coding-agent",
+        "on-device",
+        "quantization"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.30.6",
+      "source": "Ollama",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.30.6",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-08",
