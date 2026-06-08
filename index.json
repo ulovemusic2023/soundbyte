@@ -49472,6 +49472,137 @@
       "stars": 22,
       "createdDate": "2026-06-05",
       "license": "MIT"
+    },
+    {
+      "id": "20260609-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "google/magenta-realtime (Magenta RealTime 2)",
+      "summary": "Google Magenta 開源即時音樂生成模型升級版，文字 prompt 即時生成音樂，230M/2.4B 兩版，NVIDIA GPU 可 offline 推理。Apache-2.0 可商用。",
+      "tags": [
+        "audio_music_ai",
+        "music-generation"
+      ],
+      "url": "https://github.com/magenta/magenta-realtime",
+      "source": "GitHub Trending / HuggingFace",
+      "sourceUrl": "https://huggingface.co/google/magenta-realtime-2",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260609-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google Gemma 4 QAT checkpoints",
+      "summary": "Google DeepMind 釋出 Gemma 4 QAT checkpoints，Q4_0 + mobile 格式，VRAM 砍 ~72% 品質接近原版，GGUF/compressed tensors 直接給 llama.cpp 與 vLLM。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/google/gemma-4-12B-it",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Gemma Terms"
+    },
+    {
+      "id": "20260609-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "diodiogod/TTS-Audio-Suite",
+      "summary": "ComfyUI 統一 TTS/變聲/音訊編輯擴充，整合 13 套引擎（ChatterBox、F5-TTS、VibeVoice、IndexTTS-2、CosyVoice3、Qwen3-TTS、RVC 等）。MIT 可商用。",
+      "tags": [
+        "tts_speech",
+        "svc_voice"
+      ],
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/diodiogod/TTS-Audio-Suite",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260609-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "bosonai/higgs-audio-v3-tts-4b",
+      "summary": "Higgs Audio v3 TTS 4B，102 語言、zero-shot voice cloning、21 emotion tokens + 唱歌/吼叫/耳語控制。⚠️ Research/Non-Commercial 授權。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Non-Commercial"
+    },
+    {
+      "id": "20260609-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "summary": "NVIDIA 多語 streaming ASR，0.6B，cache-aware FastConformer-RNNT，chunk 80ms~1.12s 低延遲，40 語系。OpenMDW-1.1。",
+      "tags": [
+        "tts_speech",
+        "asr"
+      ],
+      "url": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+      "price": null,
+      "vram": "local-ready",
+      "license": "OpenMDW-1.1"
+    },
+    {
+      "id": "20260609-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ideogram-ai/ideogram-4 (fp8/nf4)",
+      "summary": "Ideogram 4 釋出開放權重（nf4/fp8），9.3B single-stream DiT，主打 in-image 文字渲染與空間控制。⚠️ Non-Commercial 授權。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Non-Commercial"
+    },
+    {
+      "id": "20260609-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RyanCodrai/turbovec",
+      "summary": "Rust 向量索引（Python bindings），基於 Google TurboQuant：1000 萬筆文件 31GB→4GB 且比 FAISS 快，免訓練免調參。",
+      "tags": [
+        "rag_knowledge",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/RyanCodrai/turbovec",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/RyanCodrai/turbovec",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-08",
