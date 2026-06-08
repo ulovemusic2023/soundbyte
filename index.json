@@ -49726,6 +49726,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260609-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-09",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "ayuayue/pi-desktop",
+      "summary": "管理多個 pi coding-agent session 的桌面工作台，跨專案資料夾切換、同時盯多個 agent 跑。給重度 vibe coding 的人用的 session 控制台。",
+      "tags": [
+        "coding-agent",
+        "cli-tool",
+        "productivity"
+      ],
+      "url": "https://github.com/ayuayue/pi-desktop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 57,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260609-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-09",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "Mrbaeksang/deepcloak",
+      "summary": "Local-first deep research agent，能讀「整個網路」— 連 Cloudflare / Datadome / Turnstile / reCAPTCHA 擋住的頁面都能 stealth fetch，產出帶引用的報告。MCP-native。對自己在跑 Radar 爬蟲的人特別有用。",
+      "tags": [
+        "mcp",
+        "research-agent",
+        "scraping"
+      ],
+      "url": "https://github.com/Mrbaeksang/deepcloak",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 37,
+      "createdDate": "2026-06-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260609-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-09",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "hardikpandya/stop-slop",
+      "summary": "一個專門把 AI 味語言模式從文章裡清掉的 skill — 砍掉「不只是…而是」「在這個快速變化的時代」那種 LLM 慣用句。寫 Threads / 貼文怕被一眼看出 AI 寫的可以用。",
+      "tags": [
+        "writing",
+        "agent-skill",
+        "anti-ai-slop"
+      ],
+      "url": "https://github.com/hardikpandya/stop-slop",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 9466,
+      "createdDate": "2026-01-11",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-09",
