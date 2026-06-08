@@ -49647,6 +49647,85 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260609-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-09",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Tony Fadell：v1 產品要靠『意見』不是『數據』決策",
+      "summary": "iPod / iPhone 之父在 Lenny 訪談的心法：v1 產品沒有數據可依靠，必須由創辦人的『意見』下判斷，數據只能優化既有東西、無法創造新的；任何成功產品都遵循『三代法則』，第一代不會完美，要規劃連續三代演進；AI 時代最大的風險是『認知投降』(cognitive surrender)——把判斷力外包給 AI，反而失去產品品味。",
+      "tags": [
+        "product-taste",
+        "decision-making",
+        "ai-era"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/father-of-the-ipod-and-iphone-on",
+      "source": "Tony Fadell • Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/father-of-the-ipod-and-iphone-on",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260609-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-09",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Dario Amodei：花 40% 時間在『文化』而不是寫 AI",
+      "summary": "Anthropic 規模到 ~2,500 人後，Amodei 說 CEO 不可能參與每個技術決定，最高槓桿反而是『使命對齊、價值觀與內部信任』。他每兩週開一小時全員會（Dario Vision Quest），用書面筆記講產品策略、地緣政治、產業趨勢，並刻意用不打官腔的白話維持可信度。心法：公司放大時，創辦人要從『做事』轉向『讓對的文化自己做事』。",
+      "tags": [
+        "culture",
+        "leadership",
+        "scaling"
+      ],
+      "url": "https://www.moneycontrol.com/news/trends/culture-over-code-why-anthropic-ceo-dario-amodei-spends-40-of-his-time-not-building-ai-13943675.html",
+      "source": "Dario Amodei • Moneycontrol",
+      "sourceUrl": "https://www.moneycontrol.com/news/trends/culture-over-code-why-anthropic-ceo-dario-amodei-spends-40-of-his-time-not-building-ai-13943675.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260609-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-09",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Sam Altman：token 超支不是 AI 太貴，是你的 workflow 設計爛",
+      "summary": "面對企業客戶抱怨『Q1 就燒光整年 AI 預算』，Altman 把它定義成規劃與效率問題，而非定價問題——token 用爆代表 workflow 沒設計好。對 startup 的啟示：把『AI 單位經濟』(每任務 / 每用戶的 token 成本) 當成跟 CAC、毛利同級的第一線指標，設計窄而高 ROI 的用例，而不是把所有東西塞進 context。",
+      "tags": [
+        "ai-unit-economics",
+        "cost-discipline",
+        "playbook"
+      ],
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-ceo-sam-altman-admits-ai-token-costs-are-becoming-a-huge-issue-company-seeks-improved-value-as-overspending-becomes-a-meme",
+      "source": "Sam Altman • Tom's Hardware",
+      "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-ceo-sam-altman-admits-ai-token-costs-are-becoming-a-huge-issue-company-seeks-improved-value-as-overspending-becomes-a-meme",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260609-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-06-09",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Jensen Huang：『AI 砍工作？完全是胡扯。』",
+      "summary": "Huang 在 Bloomberg 訪談反駁 AI 砍工程師職位的說法——他說軟體工程師人數其實在增加。邏輯是生產力乘數：一個工程師用 AI 能產出 9 兆美元價值，公司只會想雇更多，不是更少。",
+      "tags": [
+        "ai-jobs",
+        "productivity-multiplier"
+      ],
+      "url": "https://247wallst.com/investing/2026/06/03/nvidia-ceo-jensen-huang-ai-job-losses-are-complete-nonsense-ai-driving-hiring-surge-instead/",
+      "source": "Jensen Huang • 24/7 Wall St (Bloomberg)",
+      "sourceUrl": "https://247wallst.com/investing/2026/06/03/nvidia-ceo-jensen-huang-ai-job-losses-are-complete-nonsense-ai-driving-hiring-surge-instead/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-09",
