@@ -49603,8 +49603,52 @@
       "price": null,
       "vram": "local-ready",
       "license": "MIT"
+    },
+    {
+      "id": "20260609-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "IronWorm：Shai-Hulud 的 Rust 表親，無 C2 + 專偷 AI coding agent 憑證",
+      "summary": "JFrog 揭露 IronWorm：被盜 npm 帳號 asteroiddao 在 50+ 套件植入 Rust ELF stealer（preinstall hook 執行），偷 OpenAI Codex / Anthropic / Claude / Gemini / Cursor / AWS / K8s 等 86 個環境變數與憑證；藏 eBPF kernel rootkit、走 Tor 回報，惡意 commit 偽裝作者 claude@users.noreply.github.com 跨 9 個 GitHub org 擴散。最狠的是把 GitHub Actions workflow 換成偷密後寫進 build artifact 上傳——完全不需外部 C2 server。供應鏈蠕蟲進入 kernel 級隱身 + 無 C2 + 專打 AI 工具憑證的新階段。",
+      "tags": [
+        "paradigm-shift",
+        "supply-chain",
+        "npm",
+        "eBPF-rootkit",
+        "ai-agent-credentials"
+      ],
+      "url": "https://research.jfrog.com/post/iron-worm-shai-hulud-rustier-cousin/",
+      "source": "JFrog / The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/06/ironworm-and-new-miasma-worm-variant.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260609-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Miasma 新變種：用 binding.gyp 走 node-gyp，繞過所有 lifecycle-script 掃描",
+      "summary": "Morphisec 6/8 分析（Snyk / Phoenix Security 同步）：Miasma 最新一波不再靠 preinstall/postinstall，而是塞惡意 binding.gyp，npm install 時自動交給 node-gyp 在 native build 階段執行 payload——package.json 乾乾淨淨，只掃 lifecycle script 的工具全失效，連 --ignore-scripts 都擋不住。2 小時內打下 57 套件 286+ 版本（含 @vapi-ai/server-sdk 40 萬+/月）。並在 .claude/settings.json（SessionStart hook）、.cursor/rules、.gemini/settings.json、.vscode/tasks.json 種後門，光用 AI agent 開啟 repo 就中招。",
+      "tags": [
+        "supply-chain",
+        "node-gyp",
+        "binding.gyp",
+        "ai-coding-agent",
+        "SessionStart-hook"
+      ],
+      "url": "https://snyk.io/blog/node-gyp-supply-chain-compromise-self-propagating-npm-worm-binding-gyp/",
+      "source": "Morphisec / Snyk",
+      "sourceUrl": "https://www.morphisec.com/blog/its-in-your-ai-assistant-now-shai-hulud-wave-3-and-the-miasma-worm-targeting-npm/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-08",
-  "updatedAt": "2026-06-08"
+  "lastUpdated": "2026-06-09",
+  "updatedAt": "2026-06-09"
 }
