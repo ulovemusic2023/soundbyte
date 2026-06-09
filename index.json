@@ -49887,6 +49887,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260610-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-10",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Karpathy: 軟體像開水龍頭流出時，Jevons 悖論讓你的需求暴增",
+      "summary": "當寫軟體變得像開水龍頭一樣容易，Jevons 悖論啟動：供給暴增不會殺死需求，反而把你想要客製軟體的胃口撐大——一次性 dashboard、視覺化、專屬小工具全都能隨手要。",
+      "tags": [
+        "jevons-paradox",
+        "ai-coding",
+        "leverage"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/",
+      "source": "Andrej Karpathy (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260610-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-10",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "全世界最強的 AI 產品團隊，最瘋狂招的是業務",
+      "summary": "OpenAI 與 Anthropic 開放職缺中約 1/5 落在 sales/partnerships/revenue，是占比最高的部門，enterprise AE 是最積極招募的職位。啟示：就算產品是會取代業務的 AI，distribution 仍是最大的乘數。",
+      "tags": [
+        "distribution",
+        "gtm",
+        "moat"
+      ],
+      "url": "https://gtmnow.com/anthropic-and-openai-are-hiring-gtm-roles-more-than-anything-else/",
+      "source": "GTMnow (GTMfund)",
+      "sourceUrl": "https://gtmnow.com/anthropic-and-openai-are-hiring-gtm-roles-more-than-anything-else/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260610-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-10",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "興趣太雜不是缺點，是你的 one-person business 燃料",
+      "summary": "Dan Koe：工業時代要你當專才，但網路+AI 時代，雜食型的人（研究者/老師/創作者/整合者）反而最吃香。把對學習的熱情透過內容變成受眾、再包裝成數位產品，就是一人公司的起手式。",
+      "tags": [
+        "one-person-business",
+        "creator-leverage",
+        "multipotentiality"
+      ],
+      "url": "https://letters.thedankoe.com/p/how-to-turn-your-love-for-learning",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/how-to-turn-your-love-for-learning",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-10",
