@@ -49786,8 +49786,109 @@
       "stars": 9466,
       "createdDate": "2026-01-11",
       "license": "MIT"
+    },
+    {
+      "id": "20260610-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-10",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 公開發布 Claude Fable 5（與 Mythos 5）",
+      "summary": "Anthropic 公開釋出 Claude Fable 5——首個對外開放的 Mythos-class 模型，幾乎所有 benchmark 都是 SOTA，software engineering、knowledge work、vision 特別強。高風險領域（cyber/bio/chem/distillation）會 block 回應並 fallback 到 Opus 4.8。6/9–6/22 Pro/Max/Team 免費試用，API 定價 $10/$50 per 1M tokens（不到 Mythos Preview 一半）。同步推出解除部分安全限制的 Mythos 5，先透過 Project Glasswing 給政府與 cyberdefender。",
+      "tags": [
+        "paradigm-shift",
+        "ai_models",
+        "mythos-class",
+        "agentic-coding"
+      ],
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260610-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Karpathy：Jevons paradox 解釋為何 AI 寫 code 反而讓軟體需求暴增",
+      "summary": "Karpathy 用 Jevons paradox 反駁『軟體會被做完』的焦慮：當產出軟體的成本逼近零，需求不減反增。他現在隨手就做 explainer、visualizer、dashboard、一次性 bespoke app——以前不值得花時間的東西現在都做得出來。對 AI coding 衝擊就業的反向觀點。",
+      "tags": [
+        "ai_agent",
+        "induced-demand",
+        "jevons-paradox"
+      ],
+      "url": "https://twitter.com/karpathy/status/2064409694761054332",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260610-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 釋出 datasette-agent-edit 0.1a0",
+      "summary": "讓 agent 在 Datasette 裡做結構化文字編輯的 plugin（早期 alpha）。是 Simon 持續把 agentic 能力接進自家 data 工具鏈的一步，示範 agent 如何在受控介面下安全改動內容。",
+      "tags": [
+        "ai_agent",
+        "agentic-editing",
+        "tooling"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260610-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 拆解 WWDC 2026 的 Apple Intelligence",
+      "summary": "分析新版 Siri 與 Private Cloud Compute 的隱私架構：Apple 如何在 on-device 與雲端推論之間切分、維持隱私保證。對 edge/cloud 混合 inference 架構是值得參考的設計。",
+      "tags": [
+        "ai_models",
+        "on-device",
+        "private-cloud-compute"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/8/wwdc/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/8/wwdc/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260610-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "用 WebAssembly 沙箱安全執行 MicroPython",
+      "summary": "Simon Willison 詳述怎麼把 MicroPython 跑在 WASM 沙箱裡做隔離——對『讓 agent 執行不可信 code』的需求是很實用的 pattern，比起 container 更輕量。",
+      "tags": [
+        "wasm-sandbox",
+        "security",
+        "code-execution"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-09",
+  "lastUpdated": "2026-06-10",
   "updatedAt": "2026-06-09"
 }
