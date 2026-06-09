@@ -49947,8 +49947,233 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260610-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "diffusionstudio/lottie",
+      "summary": "把 Lottie 動畫做成 codex / claude code 的 skill + harness，AI agent 直接產 production-ready Lottie JSON。",
+      "tags": [
+        "ai-coding",
+        "motion-graphics",
+        "creator-tool"
+      ],
+      "url": "https://github.com/diffusionstudio/lottie",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/diffusionstudio/lottie",
+      "stars": 1376,
+      "createdDate": "2026-06-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260610-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "superloglabs/superlog",
+      "summary": "開源 observability，用 AI agent 自動診斷並 self-heal：讀 log → 找根因 → 提修復。",
+      "tags": [
+        "observability",
+        "ai-agent",
+        "devops"
+      ],
+      "url": "https://github.com/superloglabs/superlog",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/superloglabs/superlog",
+      "stars": 641,
+      "createdDate": "2026-06-02",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260610-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "xiaohuailabs/xiaohu-video-translate",
+      "summary": "對 AI 說一句話就把外語影片自動配中文字幕，下載/轉寫/翻譯/潤色/燒錄一條龍，全程本地，轉寫零 API 費。",
+      "tags": [
+        "video",
+        "transcription",
+        "local-ai",
+        "creator-tool"
+      ],
+      "url": "https://github.com/xiaohuailabs/xiaohu-video-translate",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/xiaohuailabs/xiaohu-video-translate",
+      "stars": 322,
+      "createdDate": "2026-06-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260610-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "apple/coreai-models",
+      "summary": "Apple 官方 on-device AI 工具組：model export recipes、Python primitives、Swift runtime。",
+      "tags": [
+        "on-device",
+        "local-ai",
+        "swift"
+      ],
+      "url": "https://github.com/apple/coreai-models",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/apple/coreai-models",
+      "stars": 298,
+      "createdDate": "2026-06-08",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20260610-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "valkor-ai/loom",
+      "summary": "open delivery harness，把 Claude Code / Codex / OpenCode 變成可重複執行的軟體交付系統。",
+      "tags": [
+        "ai-coding",
+        "claude-code",
+        "harness"
+      ],
+      "url": "https://github.com/valkor-ai/loom",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/valkor-ai/loom",
+      "stars": 99,
+      "createdDate": "2026-06-09",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260610-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "CodeBendKit/codeseek",
+      "summary": "Rust code intelligence CLI，幫 AI agent 建 call graph + 混合語意搜尋，7 語言，原生 MCP tool。",
+      "tags": [
+        "mcp",
+        "code-search",
+        "ai-coding",
+        "rust"
+      ],
+      "url": "https://github.com/CodeBendKit/codeseek",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/CodeBendKit/codeseek",
+      "stars": 35,
+      "createdDate": "2026-06-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260610-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "pcixmix/DAWalka",
+      "summary": "基於 Stable Audio 3 的 AU / VST plugin，可在 Logic / Ableton / Reaper / Bitwig 裡生成任意 sample 與音效。",
+      "tags": [
+        "audio",
+        "vst",
+        "daw",
+        "music-ai"
+      ],
+      "url": "https://github.com/pcixmix/DAWalka",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/pcixmix/DAWalka",
+      "stars": 22,
+      "createdDate": "2026-06-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260610-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Axyom/openwig",
+      "summary": "Bitwig Studio 的 algorithmic composition：寫 Python，產出歌曲。",
+      "tags": [
+        "audio",
+        "midi",
+        "generative-music",
+        "bitwig"
+      ],
+      "url": "https://github.com/Axyom/openwig",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Axyom/openwig",
+      "stars": 32,
+      "createdDate": "2026-06-02",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260610-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "bennjordan/KirlianOrbits_win64",
+      "summary": "音樂人 Benn Jordan 做的圓形 MIDI sequencer，環狀步進排序器，目前僅 Win64。",
+      "tags": [
+        "audio",
+        "midi",
+        "sequencer"
+      ],
+      "url": "https://github.com/bennjordan/KirlianOrbits_win64",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/bennjordan/KirlianOrbits_win64",
+      "stars": 43,
+      "createdDate": "2026-06-01",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260610-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "madisonrickert/ableton-sheet-music-extension",
+      "summary": "把 Ableton MIDI clip 看成五線譜，移調到任意樂器，匯出 MusicXML / PDF / PNG。",
+      "tags": [
+        "audio",
+        "midi",
+        "notation",
+        "ableton"
+      ],
+      "url": "https://github.com/madisonrickert/ableton-sheet-music-extension",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/madisonrickert/ableton-sheet-music-extension",
+      "stars": 26,
+      "createdDate": "2026-06-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260610-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-10",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "nafizb/agent-vibes-cursor",
+      "summary": "把 Cursor AI agent 工作、你打字的動作即時轉成生成式音樂。",
+      "tags": [
+        "audio",
+        "generative-music",
+        "ai-coding"
+      ],
+      "url": "https://github.com/nafizb/agent-vibes-cursor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/nafizb/agent-vibes-cursor",
+      "stars": 12,
+      "createdDate": "2026-05-30",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-10",
-  "updatedAt": "2026-06-09"
+  "updatedAt": "2026-06-10T05:40:00+08:00"
 }
