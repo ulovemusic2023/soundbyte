@@ -50237,6 +50237,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260611-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-11",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Policy on the AI Exponential — 指數型科技 vs 線性制度",
+      "summary": "Dario 用托爾金 Treebeard（睿智但太慢的樹人）當框架：技術以指數前進、制度只能線性適應，被動等待就是失敗。提出 5 大需重新想像的政策領域。對 founder 的母題：指數 vs 線性的落差，是這個時代所有策略的底層。",
+      "tags": [
+        "ai_future",
+        "mental-model",
+        "exponential",
+        "policy"
+      ],
+      "url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "source": "Dario Amodei (Anthropic CEO)",
+      "sourceUrl": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260611-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-11",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Waste tokens, save time — tokenmaxxing 與 software factories",
+      "summary": "Naval：別把 token 當成本，只看你的時間與最終產出 — compute 已便宜到該用暴力多次嘗試換回人的時間。Guillermo Rauch 補上 software factories：工程師價值不再是親手 ship output，而是打造能持續產出 B~Z 的工廠。",
+      "tags": [
+        "solo_founder",
+        "creator_leverage",
+        "ai_future",
+        "mental-model"
+      ],
+      "url": "https://nav.al/tokens",
+      "source": "Naval Ravikant (The AI Industrial Revolution)",
+      "sourceUrl": "https://nav.al/tokens",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-10",
