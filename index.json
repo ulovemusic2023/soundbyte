@@ -50279,8 +50279,105 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260611-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-11",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "shadcn/improve",
+      "summary": "用最強模型（Opus 4.8）audit codebase、寫計畫，再交給便宜模型執行。把規劃與執行拆兩段省 token 的 agentic workflow。",
+      "tags": [
+        "ai-coding",
+        "agent",
+        "planning"
+      ],
+      "url": "https://github.com/shadcn/improve",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 731,
+      "createdDate": "2026-06-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260611-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-11",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "bytedance/Bernini",
+      "summary": "字節的統一影片生成+編輯框架：MLLM 語意 planner + DiT renderer。",
+      "tags": [
+        "video-generation",
+        "multimodal"
+      ],
+      "url": "https://github.com/bytedance/Bernini",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 668,
+      "createdDate": "2026-05-29",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260611-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-11",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "agent0ai/dox",
+      "summary": "Self-documenting AGENTS.md，讓 agent 自己維護專案的 AGENTS.md，AI coding 規範自動化。",
+      "tags": [
+        "agents-md",
+        "ai-coding"
+      ],
+      "url": "https://github.com/agent0ai/dox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 531,
+      "createdDate": "2026-06-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260611-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-11",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "zhnt/loushang",
+      "summary": "AI-native coding 編排平台：統一多模型 agent runtime，stateful session + tool 治理。",
+      "tags": [
+        "orchestration",
+        "agent-runtime"
+      ],
+      "url": "https://github.com/zhnt/loushang",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 128,
+      "createdDate": "2026-05-29",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260611-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-11",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "hadihonarvar/flock",
+      "summary": "Self-hosted LLM gateway：一個 Go binary 把 Mac/Linux 組成私有推論叢集，OpenAI/Anthropic 相容 API。",
+      "tags": [
+        "local-llm",
+        "self-hosted",
+        "gateway"
+      ],
+      "url": "https://github.com/hadihonarvar/flock",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 42,
+      "createdDate": "2026-06-05",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-06-10",
-  "updatedAt": "2026-06-10T05:40:00+08:00"
+  "lastUpdated": "2026-06-11",
+  "updatedAt": "2026-06-11T05:40:00+08:00"
 }
