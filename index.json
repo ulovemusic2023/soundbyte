@@ -50172,6 +50172,71 @@
       "stars": 12,
       "createdDate": "2026-05-30",
       "license": "MIT"
+    },
+    {
+      "id": "20260611-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-11",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Managed Agents 加入 cron 排程 + credential vault",
+      "summary": "Anthropic 6/9 把兩能力推進公測：Scheduled deployments 給 agent cron schedule、平台代管 scheduler；Vault 環境變數讓 agent sandbox 只拿 placeholder，真 key 在 network boundary 才注入且只附 allowlist 網域，prompt injection 也偷不到。把自架 agent 最髒的『排程＋機密注入』做進平台。",
+      "tags": [
+        "ai-agent",
+        "agentic",
+        "managed-agents",
+        "cron",
+        "prompt-injection",
+        "paradigm-shift"
+      ],
+      "url": "https://platform.claude.com/docs/en/managed-agents/overview",
+      "source": "Claude Blog",
+      "sourceUrl": "https://claude.com/blog/whats-new-in-claude-managed-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260611-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer — 2026 軟體工程職場報告 (Part 2)",
+      "summary": "AI engineering 職缺一年 +60%、一般 SWE 只 +7%；大公司新鮮人佔比從 2023 近 3 成掉到 2026 的 1 成；FDE 角色重新升溫；AI lab 吸引力首度超過 Big Tech，Anthropic 最多人花錢請 coach 準備面試。",
+      "tags": [
+        "career",
+        "job-market",
+        "ai-engineering",
+        "fde"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-job-market-in-2026-part-2",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-job-market-in-2026-part-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260611-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 實測 Claude Fable 5：強，但貴又慢",
+      "summary": "5.5 小時、$110 實測 Anthropic 新旗艦 Fable 5（Mythos-class），結論『a beast』：知識深度與複雜 coding 都頂，一天做出 Python-in-WASM，但價格翻倍（$10/$50 per M tokens）、速度偏慢。1M context、知識截止 2026/1。",
+      "tags": [
+        "ai-models",
+        "claude",
+        "fable-5",
+        "coding"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/9/claude-fable-5/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-10",
