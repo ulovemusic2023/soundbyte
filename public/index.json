@@ -50439,6 +50439,84 @@
       "price": null,
       "vram": "local-ready（2B FP16 約 4GB）",
       "license": "技術報告（權重未公開）"
+    },
+    {
+      "id": "20260613-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gemma 4 QAT 26B-A4B",
+      "summary": "Google DeepMind 6/5 釋出的 QAT 權重，記憶體砍 ~72% 還能保住接近原始品質。26B-A4B MoE（~3.8B active），UD-Q4_K_XL GGUF 約 15GB、256K context 直接塞進 16GB 卡，llama.cpp / Ollama 一行就跑。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+      "source": "HuggingFace (unsloth)",
+      "sourceUrl": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+      "price": null,
+      "vram": "~15GB (Q4, 256K ctx)",
+      "license": "Gemma"
+    },
+    {
+      "id": "20260613-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DiffusionGemma 26B",
+      "summary": "6/10 開源、Apache-2.0 的文字擴散模型，用 diffusion 方式生文字而非 autoregressive。官方走 NVFP4 4-bit（~18GB），GGUF/llama.cpp 即將推出，Q4 落地估 ~14-16GB。",
+      "tags": [
+        "llm_inference",
+        "diffusion"
+      ],
+      "url": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
+      "source": "HuggingFace (unsloth)",
+      "sourceUrl": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
+      "price": null,
+      "vram": "NVFP4 ~18GB / GGUF Q4 est ~14-16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260613-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Alibaba-NLP/ZeroSearch",
+      "summary": "訓練 LLM 在內部模擬搜尋引擎，RL 階段不用真的打外部 search API，省下大量 API 成本又能教模型 retrieval 行為。",
+      "tags": [
+        "llm_training",
+        "rlhf"
+      ],
+      "url": "https://github.com/Alibaba-NLP/ZeroSearch",
+      "source": "GitHub (MAGI//ARCHIVE)",
+      "sourceUrl": "https://github.com/Alibaba-NLP/ZeroSearch",
+      "price": null,
+      "vram": "training framework",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260613-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "quic/ai-hub-models",
+      "summary": "Qualcomm 官方優化過的 AI 模型集，針對 edge 裝置做好量化與轉換。量化配方和 on-device 部署做法對本地推理玩家有參考價值。",
+      "tags": [
+        "infra_runtime",
+        "edge inference",
+        "quantization"
+      ],
+      "url": "https://github.com/quic/ai-hub-models",
+      "source": "GitHub (MAGI//ARCHIVE)",
+      "sourceUrl": "https://github.com/quic/ai-hub-models",
+      "price": null,
+      "vram": "edge-optimized",
+      "license": "BSD-3-Clause"
     }
   ],
   "lastUpdated": "2026-06-12",
