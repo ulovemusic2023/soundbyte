@@ -50644,8 +50644,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260613-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-13",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "iPhone 的最後一戰 — 真正的護城河是「脈絡」，不是模型品質",
+      "summary": "Ben Thompson 主張 Apple 在消費級 AI 的優勢從來不是擁有最強的模型，而是 iPhone 上獨家、跨 app、跨模態的個人脈絡（訊息、郵件、照片、螢幕內容）。當所有人都能用差不多的前沿模型，差異化就回到『誰最懂你』——而你的手機比任何裝置都更懂你。框架：在 AI 時代，可累積的私有 context 比一時的模型領先更難被複製。",
+      "tags": [
+        "moat",
+        "context",
+        "ai-strategy"
+      ],
+      "url": "https://stratechery.com/2026/the-iphones-last-stand/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/the-iphones-last-stand/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260613-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-13",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "當 AI agent 搬上雲端，裝置就變成可替換的終端",
+      "summary": "同週 Thompson 分析 Microsoft Project Solara 的『雲端 agent + 瘦終端』路線：當智能主要跑在雲上，手機/PC/徽章只是輸入輸出的入口、彼此可互換，差異化於是從本地算力轉移到延遲、跨裝置連續性與互動設計。對照 Apple 的『裝置即脈絡核心』，這是消費級 AI 兩條對立的下注。給創業者的提醒：先想清楚你的價值綁在『裝置/資料』還是『雲端服務』上，護城河的位置完全不同。",
+      "tags": [
+        "thin-client",
+        "platform-strategy",
+        "ai-agents"
+      ],
+      "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260613-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-13",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "一池有趣的問題 — 把公司做成功，最好的紅利是選擇權",
+      "summary": "DHH 說，把公司做成功最好的紅利不是錢，而是讓你能整天『在一池有趣的問題裡釣魚』——挑那些真正勾住你動機的事做，而且通常正好對得上公司的需求。這正是 calm company 的核心：成功買到的不是退休，是自由地發揮你的比較優勢。",
+      "tags": [
+        "calm-company",
+        "comparative-advantage",
+        "founder-philosophy"
+      ],
+      "url": "https://world.hey.com/dhh/a-pond-of-interesting-problems-5f697567",
+      "source": "DHH (world.hey.com)",
+      "sourceUrl": "https://world.hey.com/dhh/a-pond-of-interesting-problems-5f697567",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-12",
-  "updatedAt": "2026-06-12T10:20:00+08:00"
+  "lastUpdated": "2026-06-13",
+  "updatedAt": "2026-06-13T05:30:00+08:00"
 }
