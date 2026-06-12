@@ -50376,8 +50376,71 @@
       "stars": 42,
       "createdDate": "2026-06-05",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260612-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "UniSinger",
+      "summary": "號稱第一個把歌曲生成與歌聲轉換 SVC 統一的 end-to-end 框架。建立在 multimodal diffusion transformer 上，用統一 speaker embedding space 同時支援 zero-shot 音色克隆的歌曲生成與帶伴奏共生成的 SVC；SVC 指標贏過 so-vits-svc（PER 0.151 vs 0.154）。",
+      "tags": [
+        "svc_voice",
+        "audio_music_ai",
+        "singing-voice-conversion",
+        "diffusion-transformer"
+      ],
+      "url": "https://arxiv.org/abs/2606.07015",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2606.07015",
+      "price": null,
+      "vram": "quantize-ok（diffusion transformer，權重未公開估計）",
+      "license": "研究論文（權重未公開）"
+    },
+    {
+      "id": "20260612-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "UniVoice: A Unified Model for Speech and Singing Voice Generation",
+      "summary": "一個模型同時做 TTS 與歌聲合成。用 conditional flow matching，把條件拆成 content/melody/timbre 三路各自編碼共用 DiT backbone：唱歌用 MIDI note 序列控旋律，講話換成 learnable 條件，解決旋律約束唱歌但不綁死語音 prosody 的衝突。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "singing-voice-synthesis",
+        "flow-matching"
+      ],
+      "url": "https://arxiv.org/abs/2606.05852",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2606.05852",
+      "price": null,
+      "vram": "quantize-ok（DiT，權重未公開估計）",
+      "license": "研究論文（權重未公開）"
+    },
+    {
+      "id": "20260612-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "dots.tts Technical Report",
+      "summary": "2B 參數的 continuous autoregressive TTS foundation model，在連續 latent space 建模語音。三創新：多目標 AudioVAE、flow-matching head 用 full-history conditioning 減少長程飄移、reward-free 自我修正後訓練。Seed-TTS-Eval 最佳平均成績（WER 0.94%/1.30%）。",
+      "tags": [
+        "tts_speech",
+        "foundation-model",
+        "autoregressive",
+        "voice-cloning"
+      ],
+      "url": "https://arxiv.org/abs/2606.07080",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2606.07080",
+      "price": null,
+      "vram": "local-ready（2B FP16 約 4GB）",
+      "license": "技術報告（權重未公開）"
     }
   ],
-  "lastUpdated": "2026-06-11",
-  "updatedAt": "2026-06-11T05:40:00+08:00"
+  "lastUpdated": "2026-06-12",
+  "updatedAt": "2026-06-12T10:20:00+08:00"
 }
