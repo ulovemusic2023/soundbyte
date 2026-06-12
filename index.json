@@ -50517,6 +50517,133 @@
       "price": null,
       "vram": "edge-optimized",
       "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20260613-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Gemma 4 12B — encoder-free 統一多模態架構",
+      "summary": "Google Gemma 4 12B 採用單一 decoder-only transformer 直接吃 text/vision/audio，砍掉傳統各模態各一個 encoder 的堆疊。serving topology 變簡單、latency 降低，更可行的 on-device/edge 部署，把本地端 agentic workflow 門檻往下拉。",
+      "tags": [
+        "paradigm-shift",
+        "ai_models",
+        "multimodal",
+        "local-llm",
+        "encoder-free"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/google-gemma4-12b-local-coding/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/google-gemma4-12b-local-coding/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260613-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Spec-driven development —「code 是可拋棄的中間語言」",
+      "summary": "InfoQ 把 context engineering + spec-driven development 點名為下一個 paradigm：context artifact 夠豐富時 spec 變 source of truth，code 退化成可由 codegen/agent 重生的中間產物。配合 Patrick Debois 的 producer→manager / intent over implementation 四模式，架構重心從手刻每行移到治理 spec 與 agent 編排。",
+      "tags": [
+        "paradigm-shift",
+        "architecture",
+        "spec-driven-development",
+        "ai-native"
+      ],
+      "url": "https://www.infoq.com/articles/adoption-curve-twenty/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/adoption-curve-twenty/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260613-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Copilot 改 token 計費「AI Credits」，用戶炸鍋",
+      "summary": "6/1 起 Copilot 把 PRU 換成 usage-based 的 GitHub AI Credits（1 credit≈$0.01，不滾存）。code completion 仍無限，但 Chat/agentic session/Code Review 全按 token 計費。社群回報 10–50x 帳單暴增（$29→估$750、$50→估$3000），初期未給完整 budget control。理由：Copilot 從 autocomplete 進化成 agentic，compute 吃太兇。",
+      "tags": [
+        "devops_infra",
+        "pricing",
+        "coding-agent",
+        "AI-credits-billing"
+      ],
+      "url": "https://github.blog/changelog/2026-06-11-ai-usage-report-updates/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-06-11-ai-usage-report-updates/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260613-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer：Anthropic 新限制反而幫對手 Codex 搶市佔",
+      "summary": "Gergely Orosz 6/11 分析 Anthropic 新模型/用量限制可能意外把開發者推向 Codex。副線點到正在成形的 smart model routing 趨勢（依 cost/latency/quality 在多模型間動態路由），以及 Coinbase 核心服務沒有自動跨 zone failover 的可靠性反例。",
+      "tags": [
+        "ai_agent",
+        "smart-model-routing",
+        "reliability",
+        "market"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/did-anthropics-new-model-just-boost",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/did-anthropics-new-model-just-boost",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260613-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Pulse：工程組織開始砍 AI 支出 + Antigravity 2.0 翻車",
+      "summary": "Gergely 另一篇（免費）談 eng 部門勒緊 AI 預算的趨勢；並點名 Antigravity 2.0「把 IDE 從 IDE 裡拿掉」收到開發者壓倒性負評。AI tooling 從無腦擴張進入成本回收期。",
+      "tags": [
+        "devops_infra",
+        "ai-spend",
+        "dx",
+        "tooling-backlash"
+      ],
+      "url": "https://blog.pragmaticengineer.com/the-pulse-a-trend-of-trying-to-cut-back-on-ai-spend-within-eng-departments/",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://blog.pragmaticengineer.com/the-pulse-a-trend-of-trying-to-cut-back-on-ai-spend-within-eng-departments/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260613-sw-006",
+      "radar": "software-dev",
+      "date": "2026-06-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Azure Logic Apps Automation —「agent 當成可插拔執行環境」",
+      "summary": "微軟把 agent pattern 內建進整合平台：agent loop（workflow 當 agent 推理迴圈裡的 tool）、call-an-agent（呼叫 hosted agent 拿結果再續跑）、managed sandbox（自帶 harness 跑在隔離 runtime）。整合平台變成 agent hub，agent 被當成有 SLA/isolation 的執行環境。",
+      "tags": [
+        "ai_agent",
+        "architecture",
+        "agent-orchestration",
+        "platform-engineering"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/azure-logic-apps-automation/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/azure-logic-apps-automation/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-12",
