@@ -50704,6 +50704,250 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260613-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "XiaomiMiMo/MiMo-Code",
+      "summary": "小米開源的 coding agent / model，發布即衝上 6600+ stars。AI coding 賽道又一個大廠入局者。",
+      "tags": [
+        "ai-coding",
+        "coding-agent",
+        "local-llm"
+      ],
+      "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-30+stars%3A%3E50&type=repositories",
+      "stars": 6658,
+      "createdDate": "2026-06-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260613-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "DietrichGebert/ponytail",
+      "summary": "一個讓 AI agent「像房間裡最懶的資深工程師那樣思考」的 skill — 最好的程式碼是你根本沒寫的那段。專治 AI 過度生成、over-engineering。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "code-quality"
+      ],
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 849,
+      "createdDate": "2026-06-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260613-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "GordenSun/GordenSuperPPTSkills",
+      "summary": "用 GPT 生成圖片格式 PPT 再轉成完全可編輯的 PPTX。號稱「AI PPT 賽道終結者」。做提案/簡報很實用。",
+      "tags": [
+        "agent-skill",
+        "productivity",
+        "ppt"
+      ],
+      "url": "https://github.com/GordenSun/GordenSuperPPTSkills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-30+stars%3A%3E50&type=repositories",
+      "stars": 842,
+      "createdDate": "2026-06-07",
+      "license": "none"
+    },
+    {
+      "id": "20260613-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "VAST-AI-Research/TripoSplat",
+      "summary": "TripoAI 出品，把單張 2D 圖轉成高品質、數量可變的 3D Gaussians。給做視覺/3D 創作的人。",
+      "tags": [
+        "3d",
+        "gaussian-splatting",
+        "creator-tool"
+      ],
+      "url": "https://github.com/VAST-AI-Research/TripoSplat",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-30+stars%3A%3E50&type=repositories",
+      "stars": 649,
+      "createdDate": "2026-06-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260613-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "jeff141/meatshell",
+      "summary": "輕量、低記憶體占用的 SSH / 終端機客戶端。日常連伺服器的順手工具。",
+      "tags": [
+        "cli",
+        "terminal",
+        "ssh",
+        "dev-tool"
+      ],
+      "url": "https://github.com/jeff141/meatshell",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-30+stars%3A%3E50&type=repositories",
+      "stars": 610,
+      "createdDate": "2026-06-04",
+      "license": "none"
+    },
+    {
+      "id": "20260613-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "Able-rip/cc-VisionRouter",
+      "summary": "Claude Code 的透明 proxy，自動把帶圖片的 request 轉到多模態 model，避免非多模態主模型在長 session 中崩掉。",
+      "tags": [
+        "claude-code",
+        "proxy",
+        "mcp"
+      ],
+      "url": "https://github.com/Able-rip/cc-VisionRouter",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 86,
+      "createdDate": "2026-06-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260613-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "SawyerHood/omegacode",
+      "summary": "用程式碼來編排任何 coding agent 的 orchestration 工具 — 把 agent workflow 寫成 code 而非 prompt。",
+      "tags": [
+        "coding-agent",
+        "orchestration",
+        "ai-coding"
+      ],
+      "url": "https://github.com/SawyerHood/omegacode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 79,
+      "createdDate": "2026-06-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260613-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "axocoatl/axocoatl",
+      "summary": "Rust 寫的 agentic runtime — 持久化、可監督的 agents。Self-hosted、local-first、零遙測。",
+      "tags": [
+        "rust",
+        "agent-runtime",
+        "local-first",
+        "mcp"
+      ],
+      "url": "https://github.com/axocoatl/axocoatl",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 62,
+      "createdDate": "2026-06-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260613-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "john-rocky/coreai-model-zoo",
+      "summary": "Apple Core AI（iOS/macOS 27）的社群 model zoo：Qwen3.5、Gemma 4 端到端轉換，在 iPhone 17 Pro GPU/ANE 上驗證過，附轉換踩坑筆記與 Metal kernel。",
+      "tags": [
+        "on-device",
+        "apple",
+        "local-llm"
+      ],
+      "url": "https://github.com/john-rocky/coreai-model-zoo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/local-llm",
+      "stars": 60,
+      "createdDate": "2026-06-10",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260613-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "getgantry/gantry",
+      "summary": "原生 macOS app 管理/監控 Docker（本地與 SSH 遠端），內建 MCP server 與 App Intents，agent-ready。",
+      "tags": [
+        "docker",
+        "macos",
+        "mcp",
+        "dev-tool"
+      ],
+      "url": "https://github.com/getgantry/gantry",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 40,
+      "createdDate": "2026-06-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260613-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "Fullive-AI/Anima",
+      "summary": "「讓每個硬體都聰明」— 開源的硬體智能 Agent OS。把 agent 能力帶到硬體裝置上。",
+      "tags": [
+        "agent-os",
+        "hardware",
+        "iot"
+      ],
+      "url": "https://github.com/Fullive-AI/Anima",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-05-30+stars%3A%3E50&type=repositories",
+      "stars": 593,
+      "createdDate": "2026-06-01",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260613-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-13",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "newideas99/open-dungeon",
+      "summary": "號稱第一個易用、100% 本地的 AI 角色扮演 app — 劇情與場景圖全在本機生成（Gemma 4 QAT via Ollama + FLUX），無帳號、無 API key、無雲端。",
+      "tags": [
+        "local-ai",
+        "ollama",
+        "flux",
+        "creative"
+      ],
+      "url": "https://github.com/newideas99/open-dungeon",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/local-llm",
+      "stars": 36,
+      "createdDate": "2026-06-12",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-13",
