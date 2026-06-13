@@ -51148,8 +51148,198 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260614-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "plannotator/effective-html",
+      "summary": "Agent skill：讓 coding agent 用乾淨、自成一檔的 HTML 來畫實作計畫、架構圖。輸出不依賴外部資源，方便丟給人 review 或存檔。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "html",
+        "planning"
+      ],
+      "url": "https://github.com/plannotator/effective-html",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+stars:%3E50&type=repositories",
+      "stars": 735,
+      "createdDate": "2026-06-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260614-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "cobusgreyling/loop-engineering",
+      "summary": "「Loop engineering」的實作 pattern + CLI（loop-audit / loop-init / loop-cost），把 AI coding agent 設計成可重複編排的 loop。靈感來自 Addy Osmani 與 Boris Cherny。",
+      "tags": [
+        "claude-code",
+        "mcp",
+        "orchestration",
+        "cli"
+      ],
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+topic:claude-code&type=repositories",
+      "stars": 132,
+      "createdDate": "2026-06-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260614-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "clarilayer/clarilayer",
+      "summary": "透過 MCP 提供「個人分析師的 context layer」，讓你不用每個 session 都重新跟 AI 解釋資料結構。支援 Claude Code / Cursor / Codex。",
+      "tags": [
+        "mcp",
+        "context",
+        "claude-code",
+        "data"
+      ],
+      "url": "https://github.com/clarilayer/clarilayer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+topic:mcp&type=repositories",
+      "stars": 124,
+      "createdDate": "2026-06-08",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260614-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "TexasBedouin/vibe-check",
+      "summary": "由資深 PM 寫的 Claude Code / Codex skill，帶非工程背景的人從模糊想法走到可建構的計畫，再引導實作（GitHub 基礎、clean code 習慣、verify-and-iterate）。給「非工程師」用。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "vibe-coding",
+        "planning"
+      ],
+      "url": "https://github.com/TexasBedouin/vibe-check",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+topic:claude-code&type=repositories",
+      "stars": 113,
+      "createdDate": "2026-06-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260614-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "ghy196830-del/agent-watch-approve",
+      "summary": "在 Apple Watch 上批准 Claude Code / Codex 的危險操作，任務完成自動震動提醒。離開電腦也能 gate agent 的高風險動作。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "apple-watch",
+        "approval"
+      ],
+      "url": "https://github.com/ghy196830-del/agent-watch-approve",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+topic:ai-agent&type=repositories",
+      "stars": 86,
+      "createdDate": "2026-06-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260614-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "Comfy-Org/comfy-skills",
+      "summary": "ComfyUI 官方的 Comfy Cloud product skills：用 slash command 透過 agent 生成圖片、影片、音訊、3D。是 installer 與 MCP server 的 single source of truth。",
+      "tags": [
+        "comfyui",
+        "mcp",
+        "audio",
+        "video",
+        "creator-tool"
+      ],
+      "url": "https://github.com/Comfy-Org/comfy-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+topic:mcp&type=repositories",
+      "stars": 40,
+      "createdDate": "2026-06-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260614-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "nxin-github/Auteur",
+      "summary": "16 個角色的 AI 影視工作室，端到端短影片 pipeline，multi-agent、可 self-host。把腳本到成片的流程拆成分工的 agent。創作者工具。",
+      "tags": [
+        "ai-agent",
+        "video",
+        "creator-tool",
+        "self-hosted"
+      ],
+      "url": "https://github.com/nxin-github/Auteur",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+topic:ai-agent&type=repositories",
+      "stars": 35,
+      "createdDate": "2026-06-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260614-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "dazuiba/handoff",
+      "summary": "在 Claude Code / Codex session 裡，直接把任務委派給 DeepSeek。混搭模型省成本的小工具。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "deepseek",
+        "delegation"
+      ],
+      "url": "https://github.com/dazuiba/handoff",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+topic:coding-agent&type=repositories",
+      "stars": 33,
+      "createdDate": "2026-06-05",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260614-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-06-14",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "yzfly/TokenCode",
+      "summary": "Go 寫的開源終端 coding agent（類 Claude Code，可接任意模型）。哲學是「為燃燒 token 而生」：同一道題派最多 1000 個 agent 並行競賽、裁判擇優，用冗餘換質量。",
+      "tags": [
+        "coding-agent",
+        "go",
+        "multi-agent",
+        "terminal"
+      ],
+      "url": "https://github.com/yzfly/TokenCode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-05-31+topic:coding-agent&type=repositories",
+      "stars": 28,
+      "createdDate": "2026-06-09",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-06-14",
-  "updatedAt": "2026-06-14T05:30:00+08:00"
+  "updatedAt": "2026-06-14T05:40:00+08:00"
 }
