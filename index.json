@@ -51088,8 +51088,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260614-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-14",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "用 AI 複製整個「角色」，人往上移一層當系統設計者",
+      "summary": "AI 新創 Yutori 不是用 AI 分擔零碎任務，而是把一整個職位（chief of staff）做成 AI agent，真人和「自己的 AI 版本」並肩工作。重複流程交給 agent，真人只留判斷、關係、脈絡——把人從「做事」升級到「設計做事的系統」。",
+      "tags": [
+        "ai-agents",
+        "role-replication",
+        "leverage"
+      ],
+      "url": "https://www.businessinsider.com/company-replicated-employees-role-with-ai-agent-worker-not-worried-2026-6",
+      "source": "Business Insider (Tiny Teams)",
+      "sourceUrl": "https://www.businessinsider.com/company-replicated-employees-role-with-ai-agent-worker-not-worried-2026-6",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260614-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-14",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Shopify 20 歲：故意讓 AI 成本吃掉毛利的反直覺賭注",
+      "summary": "單季處理超過 $1000 億交易、$13B+ ARR 還在加速。管理層歡迎 LLM 成本列入 COGS、侵蝕毛利——因為商家用越多 AI＝越多數據＋越好成效。押注 20 年結構化商品資料會在 agentic commerce 時代成為護城河。",
+      "tags": [
+        "agentic-commerce",
+        "moat",
+        "ai-cogs"
+      ],
+      "url": "https://www.saastr.com/shopify-turns-20-5-interesting-learnings-from-shopify-at-13b-in-arr-and-accelerating/",
+      "source": "SaaStr (Jason Lemkin)",
+      "sourceUrl": "https://www.saastr.com/shopify-turns-20-5-interesting-learnings-from-shopify-at-13b-in-arr-and-accelerating/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260614-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-14",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "AI 越強，新的創辦人紀律是守住睡眠",
+      "summary": "Social Champ CEO Sameer Ahmed Khan 兩年失眠後進醫院吊點滴。發現 Claude remote 模式後半夜被小孩吵醒就開手機連 MacBook 繼續燒 token——「不把 token 花掉反而有種怪罪惡感」。AI 多巴胺迴路是真的，新的創辦人紀律不是更拚，而是守住作息與健康。",
+      "tags": [
+        "founder-burnout",
+        "ai-discipline",
+        "mental-health"
+      ],
+      "url": "https://www.sameerahmedkhan.com/blog/the-burnout-i-can-blame-on-ai/",
+      "source": "Sameer Ahmed Khan (Social Champ CEO)",
+      "sourceUrl": "https://www.sameerahmedkhan.com/blog/the-burnout-i-can-blame-on-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-14",
-  "updatedAt": "2026-06-13T21:14:22Z"
+  "updatedAt": "2026-06-14T05:30:00+08:00"
 }
