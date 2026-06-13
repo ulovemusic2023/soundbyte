@@ -50948,8 +50948,64 @@
       "stars": 36,
       "createdDate": "2026-06-12",
       "license": "MIT"
+    },
+    {
+      "id": "20260614-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LilyBench — LLM 看得懂 LilyPond 嗎？符號音樂生成與理解 benchmark",
+      "summary": "第一個用 LilyPond 同時評測 open-weight LLM 生成與理解符號音樂的 benchmark：200 題生成 + 10 項理解任務（語法、結構排序、曲風/作曲家辨識）。zero-shot 產生可編譯的 LilyPond 已做得到，但結構理解仍是弱點。",
+      "tags": [
+        "music_understanding",
+        "llm_inference"
+      ],
+      "url": "https://arxiv.org/abs/2606.08722",
+      "source": "arXiv (cs.SD)",
+      "sourceUrl": "https://arxiv.org/abs/2606.08722",
+      "price": null,
+      "vram": "open-weight LLM 量化後可本地跑",
+      "license": "研究預印本"
+    },
+    {
+      "id": "20260614-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MMAE — Massive Multitask Audio Editing Benchmark",
+      "summary": "大規模多任務音訊編輯評測集，把過去零散的 audio editing 評估標準化，給語音/音樂/環境音的 editing model 一個共同擂台。對做音訊工具的人是衡量 AI 修音能力的尺。",
+      "tags": [
+        "audio_music_ai"
+      ],
+      "url": "https://arxiv.org/abs/2606.07229",
+      "source": "arXiv (cs.SD)",
+      "sourceUrl": "https://arxiv.org/abs/2606.07229",
+      "price": null,
+      "vram": "benchmark，可搭配本地模型評測",
+      "license": "研究預印本"
+    },
+    {
+      "id": "20260614-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Optical Music Recognition for Real-World Manuscripts with Synthetic Data",
+      "summary": "用合成資料訓練 OMR（光學樂譜辨識），專攻圖書館真實世界手稿/掃描樂譜——現有 OMR 資料集多半是 born-digital，做不好這塊。把紙本樂譜轉成可編輯數位 notation 的關鍵一步。",
+      "tags": [
+        "music_understanding",
+        "cv_ocr"
+      ],
+      "url": "https://arxiv.org/abs/2606.09479",
+      "source": "arXiv (cs.CV)",
+      "sourceUrl": "https://arxiv.org/abs/2606.09479",
+      "price": null,
+      "vram": "OMR 模型輕量",
+      "license": "研究預印本"
     }
   ],
-  "lastUpdated": "2026-06-13",
-  "updatedAt": "2026-06-13T05:30:00+08:00"
+  "lastUpdated": "2026-06-14",
+  "updatedAt": "2026-06-13T21:14:22Z"
 }
