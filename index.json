@@ -51004,6 +51004,90 @@
       "price": null,
       "vram": "OMR 模型輕量",
       "license": "研究預印本"
+    },
+    {
+      "id": "20260614-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "美國政府下令、Anthropic 全球關閉 Fable 5 / Mythos 5",
+      "summary": "6/12 Anthropic 收到美國政府 export control 指令要求停止 foreign national 存取 Fable 5/Mythos 5，因無法即時分流而全球關閉這兩個模型，其餘 Claude 不受影響。應為首次政府強制下架已上線 frontier model。",
+      "tags": [
+        "paradigm-shift",
+        "ai-governance",
+        "export-control",
+        "model-availability"
+      ],
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/fable-mythos-access",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260614-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "npm v12 預設關閉 install scripts——供應鏈防線重設",
+      "summary": "npm v12（7月）把 preinstall/install/postinstall 改 opt-in，git/remote tarball 預設封鎖。砍掉 Shai-Hulud/IronWorm 這類 install-time 任意執行的主攻擊路徑，但被質疑 binding.gyp/node-gyp 那條仍在。",
+      "tags": [
+        "paradigm-shift",
+        "supply-chain",
+        "npm",
+        "devops_infra"
+      ],
+      "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260614-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Arch Linux AUR 400+ 套件遭挾持（Atomic Arch）",
+      "summary": "攻擊者認領 AUR 棄置套件、改 build script 在打包階段跑 Rust credential stealer 偷 SSH/token，root 下掛 eBPF rootkit 隱藏。官方 repo 未受影響；Sonatype 命名 Atomic Arch，社群追蹤破 408 個。",
+      "tags": [
+        "security",
+        "supply-chain",
+        "ebpf-rootkit",
+        "aur"
+      ],
+      "url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260614-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "「Agent 工作區需要 filesystem 合約」",
+      "summary": "主張 agent 框架給 agent 過寬檔案存取導致難重現/易外洩；解法是把 workspace 當明確合約：固定目錄語意、可讀寫與不可變路徑、ephemeral vs persistent，寫進 agent API contract。呼應 agent-native infra 轉向。",
+      "tags": [
+        "ai_agent",
+        "architecture",
+        "agent-sandbox",
+        "dx"
+      ],
+      "url": "https://www.developersdigest.tech/blog/agent-workspaces-need-filesystem-contracts",
+      "source": "Developers Digest",
+      "sourceUrl": "https://www.developersdigest.tech/blog/agent-workspaces-need-filesystem-contracts",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-14",
