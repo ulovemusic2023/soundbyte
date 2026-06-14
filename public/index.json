@@ -51397,8 +51397,71 @@
       "price": null,
       "vram": "CPU 推理，不需 GPU",
       "license": "見 repo（未確認）"
+    },
+    {
+      "id": "20260615-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google 開源 DiffusionGemma：text diffusion 取代 autoregressive，生成快 4×",
+      "summary": "DiffusionGemma 是 Google 首個 open-weight 文字擴散模型（Apache 2.0），建在 26B MoE Gemma 4 骨幹（~3.8B active）。不再 token-by-token，而是用 block-parallel diffusion decoding 一次草擬整段（~256 token）再多輪 denoise 收斂，GPU 上生成最高快 4×、單張 H100 可破千 tok/s。原生吃 text/image/video，量化後約 17-18GB VRAM 可塞進 RTX 4090/5090；Transformers / vLLM / llama.cpp / MLX day-one 支援。Google 點名特別適合 inline code / document editing 這類互動式 workflow。",
+      "tags": [
+        "paradigm-shift",
+        "diffusion",
+        "moe",
+        "open-weight",
+        "ai-models"
+      ],
+      "url": "https://ai.google.dev/gemma/docs/diffusiongemma",
+      "source": "Google (The Keyword)",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+      "price": null,
+      "vram": "~17-18GB (quantized)",
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "20260615-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：把 WASM wheels 直接發佈到 PyPI（PEP 783 / PyEmscripten）",
+      "summary": "現在可以把為 Pyodide（或任何 PEP 783 PyEmscripten 相容 runtime）編譯的 Python 套件當作 WASM wheel 直接上傳 PyPI。Simon 用 luau-wasm（把 Luau 語言打包成 Pyodide WASM wheel）當實例，附 cibuildwheel build/deploy script + 一個載入 Pyodide 的 HTML demo。對「在 browser / sandbox 跑不可信 code」的 agent code-execution 路線是直接補件。",
+      "tags": [
+        "webassembly",
+        "wasm",
+        "pyodide",
+        "wasm-sandbox"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260615-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison：把 SQLite 查詢結果欄位映射回來源 table.column",
+      "summary": "處理像 select users.name, orders.total ... 這種 join query 時，怎麼把結果每一欄追回它原本的 table.column。對做需要欄位 provenance 的工具（data agent / query UI）是實用小技巧。",
+      "tags": [
+        "sqlite",
+        "database",
+        "tooling"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-14",
-  "updatedAt": "2026-06-14T05:40:00+08:00"
+  "lastUpdated": "2026-06-15",
+  "updatedAt": "2026-06-15T05:20:00+08:00"
 }
