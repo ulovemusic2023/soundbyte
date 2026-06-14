@@ -51460,8 +51460,108 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260615-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-15",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Dario Amodei：政策必須以「指數速度」追上 AI",
+      "summary": "AI 進步是指數曲線，治理卻是線性慢速（他用《魔戒》樹人 Treebeard 比喻華府）。核心心智模型：當技術指數成長、政策卻照傳統節奏走，落差本身就是最大風險。他主張把 frontier model 當「戰略基礎設施」而非消費品來監理——強制測試、審計、必要時可叫停，像飛機一樣。",
+      "tags": [
+        "ai-exponential",
+        "frontier-model",
+        "governance"
+      ],
+      "url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "source": "Dario Amodei (Anthropic)",
+      "sourceUrl": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260615-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-15",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Ben Thompson：Apple 的 AI 護城河是「個人 context」，不是模型",
+      "summary": "Apple 在 AI 時代的優勢不是模型最強，而是 iPhone 掌握跨 app、裝置端、最完整的使用者 context。心智模型：消費級 AI 比的不是模型強度，而是誰能把「夠好」的整合體驗無縫塞進日常。真正能持續收費的 agent 市場在企業端，不在消費者訂閱。",
+      "tags": [
+        "aggregation",
+        "moat",
+        "ai-strategy"
+      ],
+      "url": "https://stratechery.com/2026/the-iphones-last-stand/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/the-iphones-last-stand/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260615-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-15",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Amodei 的組織設計：CEO 只留一個 direct report",
+      "summary": "Amodei 全公司只留一位 direct report（幕僚長），其餘高管全部 report 給總裁兼共同創辦人 Daniela。設計原理：用組織結構把 CEO 從日常營運中解放出來，逼他幾乎全部時間投入研究方向、策略與文化。重點不是少管事，而是強制 CEO 待在最高槓桿的位置。",
+      "tags": [
+        "org-design",
+        "ceo-leverage",
+        "delegation"
+      ],
+      "url": "https://theaiinsider.tech/2026/06/12/anthropics-dario-amodei-reveals-unconventional-management-structure-with-just-one-direct-report/",
+      "source": "The AI Insider",
+      "sourceUrl": "https://theaiinsider.tech/2026/06/12/anthropics-dario-amodei-reveals-unconventional-management-structure-with-just-one-direct-report/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260615-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-06-15",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "Tobi Lütke：要加人之前，先證明「AI 做不到」",
+      "summary": "Shopify 營運原則——加 headcount 前，團隊要先證明 AI 無法勝任這份工作；並把 AI 使用納入績效考核（不是選修、不是訓練，是評鑑標準）。結果：2025 營收成長 30% 到 $11.6B，員工從 8,100 減到 7,600，人均營收 $1.1M→$1.63M（+45%）。心法：mandate 設優先序，但 evaluation 才真正改變行為。",
+      "tags": [
+        "ai-operating-leverage",
+        "hiring",
+        "performance"
+      ],
+      "url": "https://aiadopters.club/p/shopify-grew-30-percent-with-500",
+      "source": "AI Adopters Club（分析）",
+      "sourceUrl": "https://aiadopters.club/p/shopify-grew-30-percent-with-500",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260615-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-06-15",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Jeff Bezos：領導者的工作是做「少數高品質決策」",
+      "summary": "Bezos 以「一天三個好決策」為目標（致敬 Buffett 的「一年三個好決策」），把最燒腦的會議排在午餐前、傍晚 5 點後不做硬決策，並堅持睡滿 8 小時——刻意用作息保護判斷力。",
+      "tags": [
+        "decision-making",
+        "leverage",
+        "leadership"
+      ],
+      "url": "https://officechai.com/stories/why-jeff-bezos-makes-important-decisions-early-in-the-morning/",
+      "source": "OfficeChai",
+      "sourceUrl": "https://officechai.com/stories/why-jeff-bezos-makes-important-decisions-early-in-the-morning/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-15",
-  "updatedAt": "2026-06-15T05:20:00+08:00"
+  "updatedAt": "2026-06-15T05:30:00+08:00"
 }
