@@ -51560,6 +51560,144 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260615-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-15",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "omnigent-ai/omnigent",
+      "summary": "跨 agent 的 meta-harness：在 Claude Code、Codex、Pi 與自寫 agent 之上鋪共同介面，可切換/混用 harness、policy + sandboxing 控管、多裝置即時協作同一 live session。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "mcp"
+      ],
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1132,
+      "createdDate": "2026-06-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260615-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-15",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "rednote-hilab/dots.tts",
+      "summary": "RedNote hi-lab 開源 2B 全連續 end-to-end AR TTS，48kHz、無 discrete token，Seed-TTS-Eval open-source SOTA，支援零樣本 voice cloning。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "audio"
+      ],
+      "url": "https://github.com/rednote-hilab/dots.tts",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 615,
+      "createdDate": "2026-06-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260615-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-15",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "hoolulu/deep-research",
+      "summary": "一個命令、十分鐘產出深度專業調研報告的 Skill，支援 19 種語言。",
+      "tags": [
+        "ai-agent",
+        "agent-skill",
+        "research"
+      ],
+      "url": "https://github.com/hoolulu/deep-research",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 324,
+      "createdDate": "2026-06-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260615-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-15",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "hvardhan878/ghostwork",
+      "summary": "個人 AI worker：盯螢幕、學 workflow、自動化重複工作。建在 Screenpipe，全本地、無雲端、零設定。",
+      "tags": [
+        "ai-agent",
+        "automation",
+        "local"
+      ],
+      "url": "https://github.com/hvardhan878/ghostwork",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 123,
+      "createdDate": "2026-06-09",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260615-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-15",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "axobase001/tomorrowedge",
+      "summary": "給 full-access 多模型 coding agent 的本地 GUI client。",
+      "tags": [
+        "coding-agent",
+        "dev-tool"
+      ],
+      "url": "https://github.com/axobase001/tomorrowedge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 56,
+      "createdDate": "2026-06-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260615-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-15",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "amElnagdy/delegate-skills",
+      "summary": "把 OpenAI Codex CLI 當背景 implementer：下 brief、它跑、人 review diff、自己 commit。",
+      "tags": [
+        "coding-agent",
+        "agent-skill"
+      ],
+      "url": "https://github.com/amElnagdy/delegate-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 40,
+      "createdDate": "2026-06-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260615-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-15",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "jtaoufik/tiger",
+      "summary": "免費開源、git-native API client：local-first 免帳號 Postman 替代品，內建 MCP server、SOAP/GraphQL、request chaining。",
+      "tags": [
+        "dev-tool",
+        "mcp",
+        "api-client"
+      ],
+      "url": "https://github.com/jtaoufik/tiger",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 39,
+      "createdDate": "2026-06-10",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-15",
