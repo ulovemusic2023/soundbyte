@@ -51338,6 +51338,65 @@
       "stars": 28,
       "createdDate": "2026-06-09",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260615-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AudioX-Turbo",
+      "summary": "統一的 anything-to-audio 生成框架，用 Multimodal Diffusion Transformer（MMDiT）把 text/video/audio 條件整合進同一架構，只要 4 步取樣（比 baseline 少約 25× NFE），text-to-music / text-to-audio 達 SOTA。音樂/音效生成的新一代 foundation model。",
+      "tags": [
+        "audio_music_ai",
+        "music generation",
+        "audio generation"
+      ],
+      "url": "https://arxiv.org/abs/2606.12555",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.12555",
+      "price": null,
+      "vram": "Diffusion audio transformer，估計需量化才穩進 16GB",
+      "license": "arXiv preprint（2026-06-10）"
+    },
+    {
+      "id": "20260615-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Spatial-Omni",
+      "summary": "把 FOA（first-order ambisonics）空間音訊編碼器接進 Omni 多模態 LLM，新增獨立 pathway 提升空間音訊理解（聲源方位/空間推理），不動原本的 audio encoder。對沉浸式/空間音樂分析是有趣的方向。",
+      "tags": [
+        "music_understanding",
+        "audio language model"
+      ],
+      "url": "https://arxiv.org/abs/2606.10738",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.10738",
+      "price": null,
+      "vram": "Omni LLM 7B+ 底座，需量化",
+      "license": "arXiv preprint（2026-06-09）"
+    },
+    {
+      "id": "20260615-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RQLuo/MixTeX-Latex-OCR",
+      "summary": "多模態 LaTeX OCR：把公式、表格、中英混排文字轉成 LaTeX，純 CPU 本地離線推理（Windows）。整理譜面/技術文件、論文截圖轉可編輯格式時實用，不吃 GPU。",
+      "tags": [
+        "cv_ocr",
+        "ocr",
+        "document ai"
+      ],
+      "url": "https://github.com/RQLuo/MixTeX-Latex-OCR",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/RQLuo/MixTeX-Latex-OCR",
+      "price": null,
+      "vram": "CPU 推理，不需 GPU",
+      "license": "見 repo（未確認）"
     }
   ],
   "lastUpdated": "2026-06-14",
