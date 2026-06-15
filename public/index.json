@@ -51842,6 +51842,45 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260616-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-06-16",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Paul Graham — How to Earn a Billion Dollars",
+      "summary": "指數成長是財富的引擎。從小成功起步、維持穩定成長率（即使月增 15%），幾年內就複利到十億級——不靠取巧。關鍵是創造價值而非剝削：做出用戶愛到主動推薦的產品，empathy 與客戶滿意度才是驅動指數成長的燃料。年輕創辦人的優勢在於你就是早期採用者，從自己真實的需求出發比猜陌生人要什麼更準。",
+      "tags": [
+        "exponential-growth",
+        "wealth-creation",
+        "pmf"
+      ],
+      "url": "https://paulgraham.com/earn.html",
+      "source": "Paul Graham",
+      "sourceUrl": "https://paulgraham.com/earn.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260616-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-06-16",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "別小看複利 — Paul Graham 談指數成長",
+      "summary": "別小看複利。月增 15% 看似平凡，幾年後就是十億級的「不可能」結果。",
+      "tags": [
+        "exponential-growth",
+        "compounding"
+      ],
+      "url": "https://paulgraham.com/earn.html",
+      "source": "Paul Graham",
+      "sourceUrl": "https://paulgraham.com/earn.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-16",
