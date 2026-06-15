@@ -51881,6 +51881,246 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260616-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "tamnd/kage",
+      "summary": "把任何網站影印成可離線瀏覽的靜態版本，並把 JavaScript 全部剝掉——適合存檔、閱讀、避免追蹤腳本。",
+      "tags": [
+        "cli-tool",
+        "scraper",
+        "offline"
+      ],
+      "url": "https://github.com/tamnd/kage",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>50&type=repositories",
+      "stars": 1495,
+      "createdDate": "2026-06-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "coder/boo",
+      "summary": "Coder 出的 GNU screen 風格 terminal multiplexer，底層用 libghostty（Ghostty render 引擎），等於現代 GPU 渲染版的 tmux 核心。",
+      "tags": [
+        "terminal",
+        "cli-tool",
+        "dev-tool"
+      ],
+      "url": "https://github.com/coder/boo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>50&type=repositories",
+      "stars": 585,
+      "createdDate": "2026-06-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "alchaincyf/fanbox",
+      "summary": "Vibe coding 駕駛艙：左邊檔案、右邊終端、中間即時看每一次 diff，把 AI coding agent 改了什麼可視化，適合多 agent 工作流。",
+      "tags": [
+        "vibe-coding",
+        "ai-coding",
+        "dev-tool"
+      ],
+      "url": "https://github.com/alchaincyf/fanbox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>50&type=repositories",
+      "stars": 572,
+      "createdDate": "2026-06-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "chubbyguan/chubbyskills",
+      "summary": "13 個 AI Skill 把中文全渠道內容（抖音/B站/小紅書/公眾號/X/Podcast）採集進個人知識庫：圖文存圖、影片轉逐字稿、字幕優先免 GPU，附 KB MCP server。",
+      "tags": [
+        "mcp",
+        "content-reader",
+        "claude-code"
+      ],
+      "url": "https://github.com/chubbyguan/chubbyskills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>20+topic:claude-code&type=repositories",
+      "stars": 356,
+      "createdDate": "2026-06-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "fkiene/llmtrim",
+      "summary": "本地 proxy 壓縮 LLM API 請求省錢——剝掉 prompt/history/tool output/code 的廢 token，實測 input -31% / output -74%，不改答案、不額外打模型，也提供 MCP server。",
+      "tags": [
+        "local-ai",
+        "mcp",
+        "cost"
+      ],
+      "url": "https://github.com/fkiene/llmtrim",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>20+topic:mcp&type=repositories",
+      "stars": 52,
+      "createdDate": "2026-06-07",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260616-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "ruvnet/agent-harness-generator",
+      "summary": "Meta-harness：scaffold 出自己品牌的 agent harness，自帶 npx CLI、MCP server、memory、learning loop。支援 Claude Code / Codex / pi.dev / OpenClaw。",
+      "tags": [
+        "ai-agent",
+        "mcp",
+        "agent-framework"
+      ],
+      "url": "https://github.com/ruvnet/agent-harness-generator",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>20+topic:mcp&type=repositories",
+      "stars": 79,
+      "createdDate": "2026-06-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "IvanMurzak/Godot-MCP",
+      "summary": "把 MCP 接進 Godot Engine 編輯器（C#），讓 AI 直接操作 Godot Editor，雲端可連 ai-game.dev。",
+      "tags": [
+        "mcp",
+        "game-dev",
+        "godot"
+      ],
+      "url": "https://github.com/IvanMurzak/Godot-MCP",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>20+topic:mcp&type=repositories",
+      "stars": 73,
+      "createdDate": "2026-06-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260616-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "dodo-reach/apple-pi",
+      "summary": "Pi coding agent 的原生 macOS app：瀏覽、resume session、本機或 SSH 跑 Pi terminal 分頁。",
+      "tags": [
+        "coding-agent",
+        "macos",
+        "dev-tool"
+      ],
+      "url": "https://github.com/dodo-reach/apple-pi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>20+topic:coding-agent&type=repositories",
+      "stars": 63,
+      "createdDate": "2026-06-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "gantasmo/theDAW",
+      "summary": "GANTASMO 出的 all-in-one AI 音樂工作站：作曲、編輯、混音、DJ、live visuals 整合在一個介面。星數還小但概念對音樂人有意思。",
+      "tags": [
+        "music-generation",
+        "daw",
+        "audio"
+      ],
+      "url": "https://github.com/gantasmo/theDAW",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>20+topic:music-generation&type=repositories",
+      "stars": 22,
+      "createdDate": "2026-06-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "nevertoday/zhongguo-traditional-colors",
+      "summary": "中華傳統色演示 + 色卡瀏覽 + 顏色知識科普開源專案，設計/視覺取色用得上的資源庫。",
+      "tags": [
+        "design",
+        "color",
+        "resource"
+      ],
+      "url": "https://github.com/nevertoday/zhongguo-traditional-colors",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>50&type=repositories",
+      "stars": 1031,
+      "createdDate": "2026-06-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "joeseesun/qiaomu-goal-meta-skill",
+      "summary": "把模糊的 Codex 任務轉成強力 /goal 指令：明確 outcome、verification、constraints、boundaries、iteration policy。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "agent-skill"
+      ],
+      "url": "https://github.com/joeseesun/qiaomu-goal-meta-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>50&type=repositories",
+      "stars": 610,
+      "createdDate": "2026-06-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260616-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-06-16",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "Danilaa1/slot-text",
+      "summary": "零依賴的 text roll（拉霸式滾動）動畫，支援 vanilla JS / React / Vue，前端做數字跳動、文字切換動效很方便。",
+      "tags": [
+        "frontend",
+        "animation",
+        "web"
+      ],
+      "url": "https://github.com/Danilaa1/slot-text",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-02+stars:>50&type=repositories",
+      "stars": 681,
+      "createdDate": "2026-06-09",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-16",
