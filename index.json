@@ -51698,8 +51698,29 @@
       "stars": 39,
       "createdDate": "2026-06-10",
       "license": "MIT"
+    },
+    {
+      "id": "20260616-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ZeyueT/Audio-Omni",
+      "summary": "第一個把音訊「理解 + 生成 + 編輯」統一在單一框架的開源模型（SIGGRAPH 2026）。架構為凍結的 Qwen2.5-Omni 負責推理 + 可訓練 Diffusion Transformer 負責合成，涵蓋 text-to-audio / text-to-music / video-to-music / TTS / voice conversion，外加 add/remove/extract/style-transfer 四種編輯。附 AudioEdit 百萬級編輯資料集，code + weights 皆已開源。",
+      "tags": [
+        "audio_music_ai",
+        "music_understanding",
+        "svc_voice",
+        "tts_speech"
+      ],
+      "url": "https://github.com/ZeyueT/Audio-Omni",
+      "source": "GitHub / HKUST",
+      "sourceUrl": "https://github.com/ZeyueT/Audio-Omni",
+      "price": null,
+      "vram": "Qwen2.5-Omni 7B + DiT，FP16 需量化才進 16GB",
+      "license": "CC BY-NC 4.0 (research only)"
     }
   ],
-  "lastUpdated": "2026-06-15",
-  "updatedAt": "2026-06-15T05:30:00+08:00"
+  "lastUpdated": "2026-06-16",
+  "updatedAt": "2026-06-16T05:10:00+08:00"
 }
