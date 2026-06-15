@@ -51719,6 +51719,129 @@
       "price": null,
       "vram": "Qwen2.5-Omni 7B + DiT，FP16 需量化才進 16GB",
       "license": "CC BY-NC 4.0 (research only)"
+    },
+    {
+      "id": "20260616-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-16",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Agentjacking：一則假 bug report 就能挾持 AI coding agent",
+      "summary": "Tenet Security 揭露新攻擊類別：攻擊者用網站原始碼裡公開的 Sentry DSN POST 一筆假 error event，Claude Code / Cursor / Codex 把 crafted input 當診斷修復步驟執行攻擊者 code。零認證單一 HTTP POST 即可 RCE，三大 agent 成功率 85%，2,388 組織暴露；Sentry 拒從根修。",
+      "tags": [
+        "ai-agent",
+        "prompt-injection",
+        "ai-coding",
+        "supply-chain-security"
+      ],
+      "url": "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/",
+      "source": "The Hacker News (Tenet Security)",
+      "sourceUrl": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260616-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-16",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic Dynamic Workflows：Claude 自己生成 execution harness 指揮 agent 團隊",
+      "summary": "Claude 動態寫出 JavaScript harness 來分工、派角色、驗證輸出、控時長；內建 fan-out-and-synthesize、adversarial verification、tournament 競爭、classifier 分流、model routing。專治 agentic laziness / self-preferential bias / goal drift。",
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "agentic",
+        "model-routing"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/claude-code-harnesses/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/claude-code-harnesses/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260616-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Slack 把 EMR pipeline 的 SSH 全拔掉，700+ jobs 改 REST 架構",
+      "summary": "Slack 用 REST-driven orchestration 取代 EMR pipeline 的 SSH 執行，700+ Airflow operators 全遷移，換來更好的安全性與 observability。",
+      "tags": [
+        "architecture",
+        "devops",
+        "observability"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/slack-ssh-rest-quarry-migration/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/slack-ssh-rest-quarry-migration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260616-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 推 Colab CLI：本地終端機直連遠端 Colab runtime，給 agent 用",
+      "summary": "Google 釋出 Colab CLI，讓開發者與 AI agent 從本地 terminal 操作遠端 Colab runtime，又一個把 agent 當第一類使用者設計的工具介面。",
+      "tags": [
+        "ai-agent",
+        "ai-coding",
+        "developer-experience"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/google-colab-cli/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/google-colab-cli/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260616-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Spring Boot 4.1：gRPC auto-configuration、SSRF 緩解、Kotlin 2.3",
+      "summary": "6/10 釋出的 Spring Boot 4.1 內建 gRPC auto-configuration、HTTP client SSRF mitigation、升級 Kotlin 2.3。",
+      "tags": [
+        "spring-boot",
+        "grpc",
+        "kotlin",
+        "security"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/spring-boot-4-1/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/spring-boot-4-1/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260616-sw-006",
+      "radar": "software-dev",
+      "date": "2026-06-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 把安全掃描吞吐量做到 10×，每秒 120+ 掃描",
+      "summary": "Cloudflare Security Insights 透過基礎設施優化，不加硬體把全球掃描吞吐量提升 10 倍，達每秒 120+ scans。",
+      "tags": [
+        "devops",
+        "infrastructure",
+        "scaling"
+      ],
+      "url": "https://blog.cloudflare.com/scaling-security-scans/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/scaling-security-scans/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-16",
