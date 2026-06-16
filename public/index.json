@@ -52121,8 +52121,30 @@
       "stars": 681,
       "createdDate": "2026-06-09",
       "license": "MIT"
+    },
+    {
+      "id": "20260617-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "google/gemma-4-12B",
+      "summary": "Google 開源 Gemma 4 12B（6/3 釋出），dense、encoder-free 原生多模態，首度在中型 Gemma 上支援 audio 輸入（含 text/image/video），256K context、140+ 語言。官方 QAT q4_0 GGUF 可在 16GB VRAM 本地跑。對 uLove 的意義：本地端就能做音訊理解，不必上雲。",
+      "tags": [
+        "llm_inference",
+        "gemma",
+        "gguf",
+        "quantization",
+        "audio-language-model"
+      ],
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "source": "Google AI for Developers",
+      "sourceUrl": "https://ai.google.dev/gemma/docs/core",
+      "price": null,
+      "vram": "16GB 可跑（QAT q4_0 GGUF）",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-06-16",
-  "updatedAt": "2026-06-16T05:10:00+08:00"
+  "lastUpdated": "2026-06-17",
+  "updatedAt": "2026-06-17T05:10:00+08:00"
 }
