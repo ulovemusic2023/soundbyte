@@ -52224,8 +52224,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260617-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-17",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "為什麼 AI 沒有取代軟體工程師（而且不會）",
+      "summary": "Arvind Narayanan & Sayash Kapoor 的論點：寫 code 從來不是瓶頸。真正卡住的是三件事 —（1）決定並定義要做什麼、（2）驗證成果並為它負責、（3）對 codebase、商業、環境的深層理解。AI 加速「打字成 code」這段，但這三個瓶頸正好是它最難碰的。Simon Willison 補一句：再多 AI 幫忙，你產出的價值仍取決於你對問題與解法理解得多深。",
+      "tags": [
+        "ai-future",
+        "role-of-humans",
+        "software-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/",
+      "source": "Arvind Narayanan & Sayash Kapoor (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260617-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-17",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "「現在一切都被記錄了」— 把 AI 當新員工 onboard",
+      "summary": "a16z 的 David Haber：公司會議預設被錄音已是不可逆趨勢。關鍵洞見 — 你不會叫新員工去翻 CRM 跟 wiki 然後期待他上手，你帶他進會議、靠耳濡目染學文化跟邊界案例。AI 一樣，差別是它能參加每一場會、永遠不會膩。「語音」會變成新的 system of record，而 verbal culture 的公司（Shopify、OpenAI）在 AI 時代反而有複利優勢。",
+      "tags": [
+        "ai-native",
+        "operations",
+        "company-context"
+      ],
+      "url": "https://a16z.com/everything-is-recorded-now/",
+      "source": "David Haber • a16z",
+      "sourceUrl": "https://a16z.com/everything-is-recorded-now/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260617-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-17",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Stripe：agent 是第三種買家",
+      "summary": "Patrick Collison 近期談 agentic commerce — 過去買家只有「人」跟「企業」，現在多了第三類：AI agent。Stripe 正為此重做底層：推 machine payments，讓商家能用程式告訴 agent 該怎麼付款，並與 Paradigm 合作另起 Tempo（因現有區塊鏈撐不起這量級）。內部北極星仍是服務「沒耐心的開發者」。",
+      "tags": [
+        "agentic-commerce",
+        "payments",
+        "gtm"
+      ],
+      "url": "https://www.youtube.com/watch?v=pMvDylVo9f4",
+      "source": "Patrick Collison • Stripe",
+      "sourceUrl": "https://www.youtube.com/watch?v=pMvDylVo9f4",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-17",
-  "updatedAt": "2026-06-17T05:10:00+08:00"
+  "updatedAt": "2026-06-16T21:35:00Z"
 }
