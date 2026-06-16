@@ -52143,6 +52143,87 @@
       "price": null,
       "vram": "16GB 可跑（QAT q4_0 GGUF）",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260617-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 在生效當天喊停 Agent SDK 訂閱拆帳",
+      "summary": "原訂 6/15 起 Claude Agent SDK 改吃獨立每月 credit pool（$20–$200），生效當天 Anthropic 喊卡『Nothing changes for now』，照舊吃訂閱額度。開源開發者反彈 + 跟 OpenAI 價格戰是主因。",
+      "tags": [
+        "ai-agent",
+        "agent-sdk",
+        "pricing"
+      ],
+      "url": "https://thenewstack.io/anthropic-pauses-claude-agent-sdk-subscription-change/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/anthropic-pauses-claude-agent-sdk-subscription-change/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260617-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-17",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Code 開放 sub-agent 遞迴巢狀（5 層上限）+ safe mode",
+      "summary": "v2.1.172（6/10）讓 sub-agent 能再開自己的 sub-agent，最多 5 層防失控；safe mode（--safe-mode）一鍵剝掉所有客製做乾淨除錯；rate limit 翻倍。多 agent 編排變內建原語。",
+      "tags": [
+        "multi-agent",
+        "agent-framework",
+        "nested-subagents"
+      ],
+      "url": "https://docs.anthropic.com/en/docs/claude-code/changelog",
+      "source": "Anthropic Claude Code Changelog",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260617-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LiteLLM 三洞串成 CVSS 9.9：低權帳號拿下 AI gateway",
+      "summary": "Obsidian Security 6/15：LiteLLM 三 bug 串接（CVE-2026-47101/47102/40217）讓預設低權用戶 admin+RCE，已在野利用；橋接 100+ 模型供應商的 AI gateway 全面曝險。修補在 v1.83.14-stable。",
+      "tags": [
+        "ai-gateway",
+        "supply-chain",
+        "rce",
+        "privilege-escalation"
+      ],
+      "url": "https://www.obsidiansecurity.com/blog/litellm-privilege-escalation-rce",
+      "source": "Obsidian Security / The Hacker News",
+      "sourceUrl": "https://www.obsidiansecurity.com/blog/litellm-privilege-escalation-rce",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260617-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "datasette-agent 0.3a0：agentic SQL 加 human-approval 寫入閘",
+      "summary": "Simon Willison 6/15：save_query 讓 agent 把 SQL 存成 stored query，但每次強制人類核可（秀完整 SQL+名稱+database+可見性，按 Yes 才落地）。agentic 寫入預設過人，對付 prompt injection。",
+      "tags": [
+        "ai-agent",
+        "agentic-editing",
+        "human-in-the-loop"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/15/datasette-agent/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/15/datasette-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-17",
