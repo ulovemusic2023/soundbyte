@@ -52543,6 +52543,66 @@
       "stars": 38,
       "createdDate": "2026-06-10",
       "license": "MIT"
+    },
+    {
+      "id": "20260618-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mastra AI 框架遭 npm 供應鏈攻擊 — 140+ 套件被植入後門",
+      "summary": "攻擊者挾持 @mastra npm org，88 分鐘內把 easy-day-js（dayjs 的 typosquat）塞進 140+ 套件當相依；postinstall dropper 下載 cross-platform Node.js RAT，清點 166 個加密錢包擴充、竊取瀏覽紀錄。週下載逾 110 萬曝險，Socket 6 分鐘內攔截。",
+      "tags": [
+        "supply-chain-security",
+        "npm",
+        "ai-agent",
+        "typosquat"
+      ],
+      "url": "https://www.stepsecurity.io/blog/mastra-npm-packages-compromised-using-easy-day-js",
+      "source": "Socket",
+      "sourceUrl": "https://socket.dev/blog/mastra-npm-packages-compromised",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260618-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic 經濟研究：Agentic coding 真正獎勵的是「領域專業」不是「會 coding」",
+      "summary": "分析約 40 萬個 Claude Code session：domain expert verified success rate 28–33%、novice 僅 15%，但專家與中階差距不大。人類做 ~70% 規劃決策、Claude 包辦 ~80% 執行決策。",
+      "tags": [
+        "agentic-coding",
+        "ai-software-engineering",
+        "claude-code"
+      ],
+      "url": "https://www.anthropic.com/research/claude-code-expertise",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/claude-code-expertise",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260618-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison — click-to-play：點了才播的靜態圖 web component",
+      "summary": "漸進增強型 <click-to-play> Web Component，把 GIF/影片做成靜態圖 + 播放鈕、點擊才載入，省頻寬避免自動播放；初始不需 JavaScript 即可運作。",
+      "tags": [
+        "web-components",
+        "frontend"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/17/click-to-play-component/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-17",
