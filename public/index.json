@@ -52663,6 +52663,285 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260618-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "vercel/eve",
+      "summary": "Vercel's Framework for Building Agents. 500+ stars in two days.",
+      "tags": [
+        "agent-framework",
+        "vercel"
+      ],
+      "url": "https://github.com/vercel/eve",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-06-04+stars:%3E50&type=repositories",
+      "stars": 558,
+      "createdDate": "2026-06-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260618-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "BuilderIO/skills",
+      "summary": "Builder.io open-source set of skills for coding agents.",
+      "tags": [
+        "agent-skill",
+        "ai-coding",
+        "claude-code"
+      ],
+      "url": "https://github.com/BuilderIO/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-06-04+stars:%3E40&type=repositories",
+      "stars": 828,
+      "createdDate": "2026-06-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260618-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "alchaincyf/loop-engineering-orange-book",
+      "summary": "Plain-language guide to loop engineering (Chinese + English PDF, free).",
+      "tags": [
+        "loop-engineering",
+        "ai-coding",
+        "guide"
+      ],
+      "url": "https://github.com/alchaincyf/loop-engineering-orange-book",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-06-04+stars:%3E40&type=repositories",
+      "stars": 610,
+      "createdDate": "2026-06-15",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260618-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "Plaer1/junction",
+      "summary": "VS Code chat sidebar for local AI coding agents. ~500 stars in a day.",
+      "tags": [
+        "vscode",
+        "local-agent",
+        "ai-coding"
+      ],
+      "url": "https://github.com/Plaer1/junction",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-06-04+stars:%3E40&type=repositories",
+      "stars": 499,
+      "createdDate": "2026-06-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260618-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "mrtooher/fable-mode",
+      "summary": "Claude skill activating Fable-style agentic behavior: explicit multi-stage planning and enforced verification.",
+      "tags": [
+        "claude-skill",
+        "agentic",
+        "planning"
+      ],
+      "url": "https://github.com/mrtooher/fable-mode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-06-04+stars:%3E40&type=repositories",
+      "stars": 463,
+      "createdDate": "2026-06-13",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260618-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "royalbhati/sqltoerdiagram",
+      "summary": "ER diagram generator — paste CREATE TABLE statements, get a clean interactive ERD, runs locally.",
+      "tags": [
+        "dev-tool",
+        "database",
+        "diagram"
+      ],
+      "url": "https://github.com/royalbhati/sqltoerdiagram",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-06-04+stars:%3E40&type=repositories",
+      "stars": 449,
+      "createdDate": "2026-06-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260618-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "TestSprite/testsprite-cli",
+      "summary": "Official TestSprite CLI — AI-powered automated testing from your terminal.",
+      "tags": [
+        "testing",
+        "cli",
+        "ai-coding"
+      ],
+      "url": "https://github.com/TestSprite/testsprite-cli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-06-04+stars:%3E40&type=repositories",
+      "stars": 394,
+      "createdDate": "2026-06-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260618-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "rebel0789/codexpro",
+      "summary": "Use ChatGPT Developer Mode as a local coding agent for your repo through MCP.",
+      "tags": [
+        "mcp",
+        "coding-agent",
+        "codex"
+      ],
+      "url": "https://github.com/rebel0789/codexpro",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 218,
+      "createdDate": "2026-06-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260618-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "OtterMind/Nubase",
+      "summary": "Open-source, AI-native backend platform that turns AI-written code into real apps.",
+      "tags": [
+        "backend",
+        "ai-native",
+        "full-stack"
+      ],
+      "url": "https://github.com/OtterMind/Nubase",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-06-04+stars:%3E40&type=repositories",
+      "stars": 185,
+      "createdDate": "2026-06-08",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260618-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "aresyn/codex-control-plane-mcp",
+      "summary": "Durable MCP control plane for long-running Codex Desktop tasks.",
+      "tags": [
+        "mcp",
+        "codex",
+        "orchestration"
+      ],
+      "url": "https://github.com/aresyn/codex-control-plane-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 95,
+      "createdDate": "2026-06-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260618-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "keyuchen21/agentic-engineering-handbook",
+      "summary": "Learning roadmap for OpenAI, Claude, MCP, Harness, Evals and production agent systems.",
+      "tags": [
+        "learning",
+        "agent-engineering",
+        "reference"
+      ],
+      "url": "https://github.com/keyuchen21/agentic-engineering-handbook",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 81,
+      "createdDate": "2026-06-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260618-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "eadmin2/jarvis_ai",
+      "summary": "Iron-Man-style local voice assistant + holographic HUD: local Whisper STT, ElevenLabs voice, agent-summoned media panels.",
+      "tags": [
+        "voice",
+        "whisper",
+        "local"
+      ],
+      "url": "https://github.com/eadmin2/jarvis_ai",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 64,
+      "createdDate": "2026-06-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260618-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "P1ouson/deepseek-ArcDesk",
+      "summary": "Open-source DeepSeek desktop agent with file read, code edit, command run and MCP support built in.",
+      "tags": [
+        "deepseek",
+        "desktop-agent",
+        "mcp"
+      ],
+      "url": "https://github.com/P1ouson/deepseek-ArcDesk",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 55,
+      "createdDate": "2026-06-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260618-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-06-18",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "cuolm/pi-sbx-llamacpp",
+      "summary": "Run Pi coding agent isolated in a Docker Sandbox microVM with a local llama-server backend.",
+      "tags": [
+        "sandbox",
+        "local-llm",
+        "coding-agent"
+      ],
+      "url": "https://github.com/cuolm/pi-sbx-llamacpp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/local-llm",
+      "stars": 21,
+      "createdDate": "2026-06-09",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-18T05:30:00+08:00",
