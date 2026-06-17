@@ -52603,8 +52603,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260618-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-18",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Jensen Huang：AI 時代需要「新社會規範」",
+      "summary": "Huang 在 AP 專訪用汽車作類比：當年汽車普及，社會不是只造車，而是發明了人行道、紅綠燈、交通規則才接得住。AI 也一樣——光有強大能力不夠，要同步設計護欄與預設行為。對做 AI 產品的人：贏面不在功能多強，而在有沒有幫使用者鋪好「人行道」(guardrails、安全預設、上手引導)。",
+      "tags": [
+        "mental-model",
+        "ai-native",
+        "product-design"
+      ],
+      "url": "https://www.latimes.com/business/story/2026-06-17/nvidias-jensen-huang-says-society-needs-new-social-norms-in-age-of-ai",
+      "source": "AP / LA Times",
+      "sourceUrl": "https://www.latimes.com/business/story/2026-06-17/nvidias-jensen-huang-says-society-needs-new-social-norms-in-age-of-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260618-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-18",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "2026 年最快成長的 AI 公司，GTM 長一樣",
+      "summary": "SaaStr AI 2026 把 Stripe、Google、Canva、Cloudflare 等六家放在一起，發現沒套招卻收斂出四個共同模式：① build 與 sell 並行，不要做完才賣；② 把 AI intelligence 集中化；③ 把 agent 當成真正的客戶來設計；④ 按成果收費，不是按席位。數據：頂尖 AI 公司 2026 成長 175%，Lovable 8 個月做到 $100M。",
+      "tags": [
+        "gtm",
+        "pricing",
+        "ai-agents",
+        "playbook"
+      ],
+      "url": "https://www.saastr.com/how-stripe-google-canva-cloudflare-and-higgsfield-are-actually-selling-in-2026/",
+      "source": "SaaStr AI 2026",
+      "sourceUrl": "https://www.saastr.com/how-stripe-google-canva-cloudflare-and-higgsfield-are-actually-selling-in-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260618-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-18",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Charge for outcomes, not seats",
+      "summary": "當 agent 能自己把活幹完，按人頭席位收費的邏輯就崩了；2026 的定價要綁在你幫客戶產出的結果上。— Jason Lemkin (SaaStr AI 2026)",
+      "tags": [
+        "pricing",
+        "ai-agents"
+      ],
+      "url": "https://www.saastr.com/how-stripe-google-canva-cloudflare-and-higgsfield-are-actually-selling-in-2026/",
+      "source": "SaaStr AI 2026",
+      "sourceUrl": "https://www.saastr.com/how-stripe-google-canva-cloudflare-and-higgsfield-are-actually-selling-in-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-17",
-  "updatedAt": "2026-06-16T21:35:00Z"
+  "lastUpdated": "2026-06-18T05:30:00+08:00",
+  "updatedAt": "2026-06-18T05:30:00+08:00"
 }
