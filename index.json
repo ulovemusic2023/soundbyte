@@ -53027,6 +53027,204 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260619-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "orange2ai/renwei-writing",
+      "summary": "「人味兒寫作」AI agent skill：編輯文字時保留作者的人味，不把個人風格抹平成 AI 腔。對寫 Threads/FB 貼文潤稿很實用，相容 Claude / Codex / Cursor。",
+      "tags": [
+        "agent-skill",
+        "writing",
+        "content"
+      ],
+      "url": "https://github.com/orange2ai/renwei-writing",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 809,
+      "createdDate": "2026-06-12",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260619-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Waishnav/devspace",
+      "summary": "把 ChatGPT 變成 Codex：掛一個 coding agent 工作區讓 ChatGPT 直接讀寫專案、跑 terminal、看 diff。給有 ChatGPT 但沒 Codex/Claude Code 訂閱的人一條路。",
+      "tags": [
+        "ai-coding",
+        "coding-agent"
+      ],
+      "url": "https://github.com/Waishnav/devspace",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-05+stars:>50",
+      "stars": 785,
+      "createdDate": "2026-06-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260619-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "vorssaint/vorssaint-utils",
+      "summary": "免費開源 macOS menu bar 工具箱：per-app 音量混音器、系統監控、防睡眠、Alt-Tab 視窗切換、app 解除安裝一站搞定。per-app volume mixer 對同時開 DAW + 瀏覽器做音訊的人特別有感。",
+      "tags": [
+        "macos",
+        "developer-tool",
+        "audio"
+      ],
+      "url": "https://github.com/vorssaint/vorssaint-utils",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-05+stars:>50",
+      "stars": 658,
+      "createdDate": "2026-06-12",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260619-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "dongshuyan/compass-skills",
+      "summary": "「司南」個人化 AI 任務總控 Skills 系統，把 AI agent 變成有對齊與優先級概念的個人作業系統。重度用 agent 的人可以拿來統籌任務。",
+      "tags": [
+        "agent-skill",
+        "ai-agent",
+        "workflow"
+      ],
+      "url": "https://github.com/dongshuyan/compass-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 295,
+      "createdDate": "2026-06-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260619-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "KorroAi/mue-x",
+      "summary": "self-evolving AI agent，獨立 CLI 到哪都能跑、不需要 Claude Code，內建 Gemini & Copilot adapter。想要輕量、模型無關的 agent runner 可以試。",
+      "tags": [
+        "ai-agent",
+        "cli",
+        "coding-agent"
+      ],
+      "url": "https://github.com/KorroAi/mue-x",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 52,
+      "createdDate": "2026-06-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260619-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "SkyBlue997/enableMacosAI",
+      "summary": "國行 Mac 一鍵開啟完整 Apple 智能（端側 + Private Cloud Compute 雲端），macOS 27 / Apple Silicon。被地區鎖住 Apple Intelligence 的 Mac 用戶解法。",
+      "tags": [
+        "macos",
+        "local-ai",
+        "on-device"
+      ],
+      "url": "https://github.com/SkyBlue997/enableMacosAI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-05+stars:>50",
+      "stars": 1404,
+      "createdDate": "2026-06-10",
+      "license": "none"
+    },
+    {
+      "id": "20260619-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "lenucksi/aur-malware-check",
+      "summary": "針對 2026 年 6 月 AUR「atomic-lockfile」供應鏈攻擊的偵測工具，從社群 Gists 整理而成。用 Arch / 裝過 AUR 套件的人值得掃一次，也是供應鏈攻擊離我們不遠的提醒。",
+      "tags": [
+        "security",
+        "supply-chain"
+      ],
+      "url": "https://github.com/lenucksi/aur-malware-check",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-05+stars:>50",
+      "stars": 1533,
+      "createdDate": "2026-06-12",
+      "license": "none"
+    },
+    {
+      "id": "20260619-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "mohitsoni48/Turbo-LLM",
+      "summary": "跑任意本地 LLM engine，依你的 GPU 自動調參，附 web UI + OpenAI/Anthropic 相容 API，可直接把 Claude Code 指向它。想本機跑 model 又懶得調設定的人適用。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "self-hosted"
+      ],
+      "url": "https://github.com/mohitsoni48/Turbo-LLM",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:local-llm",
+      "stars": 24,
+      "createdDate": "2026-06-12",
+      "license": "none"
+    },
+    {
+      "id": "20260619-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "AnamKwon/programming-as-theory-building-skill",
+      "summary": "把 Peter Naur《Programming as Theory Building》套進 coding-agent 工作流的 Claude Code skill：提醒 agent 程式碼是理論的外顯，重點是維持對系統的心智模型。方法論愛好者會喜歡。",
+      "tags": [
+        "coding-agent",
+        "agent-skill",
+        "philosophy"
+      ],
+      "url": "https://github.com/AnamKwon/programming-as-theory-building-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:coding-agent",
+      "stars": 25,
+      "createdDate": "2026-06-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260619-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-19",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "therezor/cardputer-ai",
+      "summary": "完全離線的迷你 LLM chatbot，跑在 ESP32-S3 Cardputer 上：3M 參數、Q4 權重直接燒進韌體、約 7 tok/s。edge AI 的極限玩具，硬體愛好者會喜歡。",
+      "tags": [
+        "local-llm",
+        "edge-ai",
+        "embedded"
+      ],
+      "url": "https://github.com/therezor/cardputer-ai",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:local-llm",
+      "stars": 31,
+      "createdDate": "2026-06-12",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-06-19",
