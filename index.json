@@ -52942,8 +52942,93 @@
       "stars": 21,
       "createdDate": "2026-06-09",
       "license": "MIT"
+    },
+    {
+      "id": "20260619-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GLM-5.2 登頂最強 open-weights LLM（MIT 授權，1M context）",
+      "summary": "Z.ai 釋出 GLM-5.2：~750B MoE / 40B active、1M token context，在 Artificial Analysis Intelligence Index 以 51 分成為最強開放權重模型（超越 MiniMax-M3、DeepSeek V4 Pro、Kimi K2.6），主打 long-horizon coding 與 agentic 任務。MIT 授權、無地區限制，weights 上 HuggingFace/ModelScope。",
+      "tags": [
+        "paradigm-shift",
+        "open-weights",
+        "moe",
+        "ai-agent",
+        "ai-models"
+      ],
+      "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+      "source": "Artificial Analysis",
+      "sourceUrl": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+      "price": null,
+      "vram": null,
+      "license": "MIT"
+    },
+    {
+      "id": "20260619-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RFC 10008：HTTP 新增 QUERY method",
+      "summary": "IETF 正式發佈 RFC 10008，定義 HTTP QUERY method——safe + idempotent 的請求方法，把 query 條件放在 request body 而非 URL，補上 GET（參數太長）與 POST（無安全/冪等保證）之間十年缺口。intermediary 可像 GET 一樣 cache/retry（body 需納入 cache key），非 CORS-safelisted 跨來源需 preflight。",
+      "tags": [
+        "paradigm-shift",
+        "rest-api",
+        "http",
+        "api-gateway",
+        "architecture"
+      ],
+      "url": "https://www.rfc-editor.org/info/rfc10008/",
+      "source": "RFC Editor (IETF)",
+      "sourceUrl": "https://www.rfc-editor.org/info/rfc10008/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260619-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Epic 開源 Lore：為大型二進位資產設計的版本控制系統",
+      "summary": "Epic Games 開源 Lore（前身 Unreal Revision Control，MIT）：centralized + content-addressed，repo state 用 Merkle tree、revision hash 串成 immutable chain。大檔 chunk 化去重、sparse workspace 按需 hydration，專攻 Git LFS 不夠、過去只能靠 Perforce 的 game/media 大型二進位工作流。提供 C/C++/C#/Rust/Go/Python/JS SDK，現為 pre-1.0。",
+      "tags": [
+        "version-control",
+        "content-addressed",
+        "merkle-tree",
+        "architecture"
+      ],
+      "url": "https://epicgames.github.io/lore/",
+      "source": "Epic Games",
+      "sourceUrl": "https://epicgames.github.io/lore/explanation/system-design/",
+      "price": null,
+      "vram": null,
+      "license": "MIT"
+    },
+    {
+      "id": "20260619-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：為什麼 AI 還沒取代軟體工程師",
+      "summary": "Simon 撰文整理 AI 為何尚未取代 engineer：系統設計、問題拆解、架構決策才是真正硬功夫，LLM 擅長的是在明確邊界內生成 code。呼應 HN 共識——AI 不消除好架構需求反而讓它更關鍵（schema validation、idempotency、rate limiting 等「無聊但必要」骨架最常被 LLM 做錯）。",
+      "tags": [
+        "ai-software-engineering",
+        "ai-coding",
+        "architecture"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-18T05:30:00+08:00",
-  "updatedAt": "2026-06-18T05:30:00+08:00"
+  "lastUpdated": "2026-06-19",
+  "updatedAt": "2026-06-19T05:20:00+08:00"
 }
