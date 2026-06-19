@@ -53269,6 +53269,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260620-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-20",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Karpathy「Software 3.0」：可驗證性才是 AI 自動化的分界線",
+      "summary": "Karpathy 把軟體演進收斂成一條判準：1.0 自動化人能寫成規則的事，2.0 自動化人能用資料描述的事，3.0 自動化人能驗證的事。AI 能力集中在有密集獎勵訊號的領域（數學、有測試的 code、有分數的遊戲），缺乏驗證機制的開放工作則 jagged 易碎。對 founder 的應用：把 AI 委派在結果能被測試/打分/證明的任務上。",
+      "tags": [
+        "ai-native",
+        "verifiability",
+        "software-3.0"
+      ],
+      "url": "https://www.startuphub.ai/ai-news/ai-figures/2026/figure-andrej-karpathy-software-thesis-evolution-2026-06-17",
+      "source": "Andrej Karpathy (via StartupHub.ai)",
+      "sourceUrl": "https://www.startuphub.ai/ai-news/ai-figures/2026/figure-andrej-karpathy-software-thesis-evolution-2026-06-17",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260620-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-20",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "「刻意做小」是一種新的野心定義",
+      "summary": "2026 的高手 solo founder 不是做不大，是選擇不做大——工具讓一人幹過去一個部門的活，成功被重新定義成擁有權+可持續+撐起想要的生活。關鍵 reframe：別問這能長多大，改問能養活我想要的生活的最小版本是什麼。把小從安慰獎變成主動選擇。",
+      "tags": [
+        "solo-founder",
+        "one-person-business",
+        "lifestyle-business"
+      ],
+      "url": "https://millennialmagazine.com/2026/06/09/solo-entrepreneurs/",
+      "source": "Millennial Magazine",
+      "sourceUrl": "https://millennialmagazine.com/2026/06/09/solo-entrepreneurs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260620-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-20",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Jensen Huang：AI 時代需要新的社會規範",
+      "summary": "Huang 用汽車類比：當年汽車被說成會撞死小孩，社會的解法不是禁車，而是長出人行道、斑馬線、新規範。AI 也一樣——要調整的是社會習慣，不是踩煞車。他主張每個人都該去用 AI、去碰它。",
+      "tags": [
+        "ai-adoption",
+        "tech-paradigm",
+        "society"
+      ],
+      "url": "https://www.clickorlando.com/news/politics/2026/06/16/ap-exclusive-nvidias-jensen-huang-says-society-needs-new-social-norms-in-the-age-of-ai/",
+      "source": "Jensen Huang (AP via ClickOrlando)",
+      "sourceUrl": "https://www.clickorlando.com/news/politics/2026/06/16/ap-exclusive-nvidias-jensen-huang-says-society-needs-new-social-norms-in-the-age-of-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-19",
