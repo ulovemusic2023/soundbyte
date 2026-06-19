@@ -53225,6 +53225,50 @@
       "stars": 31,
       "createdDate": "2026-06-12",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260620-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude 推出 Enterprise-Managed MCP Authorization（首發 Okta）",
+      "summary": "Anthropic 6/18：admin 透過 IdP（先支援 Okta）一次性授權 MCP connector，使用者首次登入即零接觸取得存取權，權限繼承既有 IdP groups/roles，跨 Claude chat / Claude Code / Cowork 生效。首發 connector：Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase，Slack 待補。同時是 MCP 協定層新增 Enterprise-Managed Authorization 規格，把 MCP 接入企業 SSO 治理。",
+      "tags": [
+        "paradigm-shift",
+        "mcp",
+        "model-context-protocol",
+        "enterprise-auth",
+        "zero-touch-oauth"
+      ],
+      "url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+      "source": "Anthropic / MCP Blog",
+      "sourceUrl": "https://claude.com/blog/enterprise-managed-auth",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260620-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 推出 Datasette Apps：把 HTML+JS app 跑進 Datasette",
+      "summary": "6/18 釋出 datasette-apps 0.1a2：在 iframe sandbox 內 host 完整 HTML+JS 應用，透過 JSON API 直連底層 relational DB 讀寫資料。Simon 形容為「Claude Artifacts 的 Datasette 版」，但能接整個資料庫。延續 MCP Apps 路線，給 agent 一個可存資料的安全執行畫布。",
+      "tags": [
+        "datasette",
+        "agentic-editing",
+        "sandbox",
+        "artifacts",
+        "ai_agent"
+      ],
+      "url": "https://datasette.io/blog/2026/datasette-apps",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/18/datasette-apps/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-19",
