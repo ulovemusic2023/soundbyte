@@ -53329,6 +53329,146 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260620-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-20",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "Jeidoban/Ironsmith",
+      "summary": "用一句 prompt 生出可用的 macOS 原生 app，支援端側 + 雲端 LLM。想快速做小工具又不想開 Xcode 的人很有感。",
+      "tags": [
+        "vibe-coding",
+        "macos",
+        "on-device-llm"
+      ],
+      "url": "https://github.com/Jeidoban/Ironsmith",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 240,
+      "createdDate": "2026-06-14",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260620-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-20",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "majidmanzarpour/threejs-game-skills",
+      "summary": "一整套 Agent Skills，讓 coding agent 直接做出可玩、AAA 視覺的 Three.js 瀏覽器遊戲，含 gameplay/UI/QA，還能串 AI 生成 3D、圖片、音訊素材。",
+      "tags": [
+        "agent-skill",
+        "threejs",
+        "ai-assets"
+      ],
+      "url": "https://github.com/majidmanzarpour/threejs-game-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 329,
+      "createdDate": "2026-06-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260620-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-20",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "gykim80/perfectpixel-studio",
+      "summary": "一句 prompt 生出角色 sprite sheet，8 方向 + 100+ 動作，Wails + Go + React 桌面 app。做遊戲/視覺素材的 creator 工具。",
+      "tags": [
+        "sprite",
+        "ai-art",
+        "desktop-app"
+      ],
+      "url": "https://github.com/gykim80/perfectpixel-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 258,
+      "createdDate": "2026-06-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260620-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-20",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "leyten/shard",
+      "summary": "把 LLM 推論 pipeline-parallel 拆到多台機器的多顆 GPU 上跑。家裡有幾台舊機想湊算力跑大模型的人值得看。",
+      "tags": [
+        "llm-inference",
+        "distributed",
+        "local-ai"
+      ],
+      "url": "https://github.com/leyten/shard",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 183,
+      "createdDate": "2026-06-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260620-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-20",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "kennss/SiliconScope",
+      "summary": "免 sudo 的 Apple Silicon 系統監控（SwiftUI），能看 ANE / Media Engine / 記憶體頻寬。在 Mac 上跑 on-device AI 時想確認 ANE 有沒有真的在工作很實用。",
+      "tags": [
+        "apple-silicon",
+        "ane",
+        "monitoring"
+      ],
+      "url": "https://github.com/kennss/SiliconScope",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 169,
+      "createdDate": "2026-06-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260620-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-20",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "shreyashankar/plain-writing-skill",
+      "summary": "ML 研究者 Shreya Shankar 出的 AI 寫作 skill，主打平實語言改寫，還有 revision view 顯示改了哪些。寫 Threads/技術文想去 AI 腔的可參考。",
+      "tags": [
+        "writing",
+        "agent-skill",
+        "anti-slop"
+      ],
+      "url": "https://github.com/shreyashankar/plain-writing-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 154,
+      "createdDate": "2026-06-15",
+      "license": "?"
+    },
+    {
+      "id": "20260620-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-20",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "tamnd/ascii-gif",
+      "summary": "把終端機 session 錄成好看的動畫 GIF，vhs 的 wrapper 但預設樣式更漂亮，Go 寫的。發貼文 demo CLI 工具超好用（跟 kage 同作者）。",
+      "tags": [
+        "cli",
+        "terminal",
+        "content"
+      ],
+      "url": "https://github.com/tamnd/ascii-gif",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 144,
+      "createdDate": "2026-06-14",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-19",
