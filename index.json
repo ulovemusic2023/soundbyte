@@ -53488,6 +53488,88 @@
       "price": null,
       "vram": "428B，4-bit 仍需 ~200GB+",
       "license": "minimax-community"
+    },
+    {
+      "id": "20260624-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Temporary Accounts：AI agent 不用註冊就能部署 Worker",
+      "summary": "Cloudflare 6/19 上線 `wrangler deploy --temporary`：coding agent 不需帳號就能把 Worker 部署上線，平台自動開一個拋棄式帳號並回傳 claim URL；部署存活 60 分鐘，期間人類可認領變成正式帳號，否則自動過期。把 agent-first 部署摩擦消除。",
+      "tags": [
+        "ai agent",
+        "edge runtime",
+        "serverless",
+        "devops",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.cloudflare.com/temporary-accounts/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/temporary-accounts/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260624-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Code Artifacts：把 coding session 變成可分享的 live 網頁",
+      "summary": "Anthropic 6/18 為 Claude Code 加上 Artifacts（Team/Enterprise beta）：session 成果變成即時更新的互動 HTML 網頁，可接 live code 與多個資料來源，產出 PR walkthrough / dashboard / incident page / 架構圖，組織內成員憑驗證才看得到、不可公開。AI coding 從生成 code 往生成可交付互動產物延伸。",
+      "tags": [
+        "ai coding",
+        "coding-agent",
+        "artifacts"
+      ],
+      "url": "https://claude.com/blog/artifacts-in-claude-code",
+      "source": "Anthropic",
+      "sourceUrl": "https://claude.com/blog/artifacts-in-claude-code",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260624-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 用 Claude Code 把 Moebius 0.2B inpainting 模型搬進瀏覽器",
+      "summary": "Simon Willison 6/22：靠 Claude Code 把輕量 Moebius 0.2B 圖像 inpainting 模型 port 到 WebGPU，做出純瀏覽器 demo，不需後端 GPU。展示 coding agent + WebGPU 把小模型推到 on-device / in-browser 推論的可行路徑。",
+      "tags": [
+        "webgpu",
+        "on-device",
+        "coding-agent"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/22/porting-moebius/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/22/porting-moebius/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260624-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "sqlite-utils 4.0rc1：加入 migrations 與 nested transactions",
+      "summary": "Simon Willison 6/21 釋出 sqlite-utils 4.0rc1，新增 schema migrations 與 nested transactions 支援；Python 生態常用的 SQLite 操作工具往正式 4.0 邁進。",
+      "tags": [
+        "sqlite",
+        "database",
+        "python"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-19",
