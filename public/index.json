@@ -53579,7 +53579,11 @@
       "priority": "mental-model",
       "title": "Why Are LLMs Smart? — 智慧藏在語言結構裡",
       "summary": "Kevin Kelly 的框架：LLM 之所以聰明，不是因為工程師「寫進」智慧，而是因為人類的書寫本身就內含思考。大規模訓練人類文本時，模型抽取出藏在文章、論證結構裡的推理模式。對任何用 AI 建東西的人，槓桿不在模型本身，而在它蒸餾的整個人類推理語料。",
-      "tags": ["ai-future", "mental-model", "leverage"],
+      "tags": [
+        "ai-future",
+        "mental-model",
+        "leverage"
+      ],
       "url": "https://kk.org/thetechnium/why-are-llms-smart/",
       "source": "Kevin Kelly",
       "sourceUrl": "https://kk.org/thetechnium/why-are-llms-smart/",
@@ -53595,13 +53599,277 @@
       "priority": "mental-model",
       "title": "Conscious or Not — 意識是光譜，不是開關",
       "summary": "Kevin Kelly 主張意識不是 binary 的「有/沒有」，而是一個光譜。他認為語言本身就能孕育意識，因此具備語言能力的 LLM 已展現出「某些面向的意識」，相對於 AlphaFold 這類非語言系統。重點不在爭論機器能不能思考，而在重新校準我們對意識的定義。",
-      "tags": ["ai-future", "consciousness", "mental-model"],
+      "tags": [
+        "ai-future",
+        "consciousness",
+        "mental-model"
+      ],
       "url": "https://kk.org/thetechnium/conscious-or-not/",
       "source": "Kevin Kelly",
       "sourceUrl": "https://kk.org/thetechnium/conscious-or-not/",
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260624-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "loop-library",
+      "summary": "「Loop engineering」正成新顯學。把實用的 AI-agent loop 模式整理成可安裝 skill，幫你找、改、設計可重複的 agent workflow。",
+      "tags": [
+        "ai-agent",
+        "agent-skill",
+        "workflow"
+      ],
+      "url": "https://github.com/Forward-Future/loop-library",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1448,
+      "createdDate": "2026-06-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260624-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "agent-apprenticeship",
+      "summary": "讓 AI agent 從真實工作中「學徒式」學習，透過 iterative workflow loop 累積可重用經驗並交換 collective training signal。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "learning-loop"
+      ],
+      "url": "https://github.com/Forsy-AI/agent-apprenticeship",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 839,
+      "createdDate": "2026-06-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260624-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "cnfast",
+      "summary": "Million.js 作者 aidenybai 出手：cn（clsx + tailwind-merge）的高速 drop-in 替代品，前端天天合併 className 可直接換。",
+      "tags": [
+        "tailwind",
+        "react",
+        "dev-tool"
+      ],
+      "url": "https://github.com/aidenybai/cnfast",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 774,
+      "createdDate": "2026-06-19",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260624-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "recall",
+      "summary": "給 Claude Code 一個完全離線的持久記憶層，不用每 session 重新解釋專案、省 token。",
+      "tags": [
+        "claude-code",
+        "memory",
+        "productivity"
+      ],
+      "url": "https://github.com/raiyanyahya/recall",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 397,
+      "createdDate": "2026-06-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260624-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "public-apis-live",
+      "summary": "把所有 public API 聚合、去重、每天自動檢查可用性，含 npm + Claude plugin + live search。",
+      "tags": [
+        "api",
+        "claude-plugin",
+        "dev-tool"
+      ],
+      "url": "https://github.com/Manavarya09/public-apis-live",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 131,
+      "createdDate": "2026-06-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260624-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "browser-search",
+      "summary": "給 agent 用的網路搜尋 skill：SearXNG 搜尋 + Camofox 瀏覽 + CloakBrowser 繞過防爬，self-hosted、免費、無限量。",
+      "tags": [
+        "ai-agent",
+        "web-search",
+        "self-hosted"
+      ],
+      "url": "https://github.com/Johell1NS/browser-search",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 127,
+      "createdDate": "2026-06-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260624-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "mcp-db-server",
+      "summary": "無狀態 MCP 資料庫服務，連線參數即傳即用、零持久化零配置，支援 MySQL/PostgreSQL/SQLite/SQL Server/Oracle/H2。",
+      "tags": [
+        "mcp",
+        "database",
+        "dev-tool"
+      ],
+      "url": "https://github.com/PerfectXM/mcp-db-server",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 103,
+      "createdDate": "2026-06-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260624-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "mcp-quickstart",
+      "summary": "30 秒生出能跑、可測、可發佈的 MCP server，TS 或 Python，內建 example tools、Inspector、測試。",
+      "tags": [
+        "mcp",
+        "scaffold",
+        "dev-tool"
+      ],
+      "url": "https://github.com/G12789/mcp-quickstart",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 90,
+      "createdDate": "2026-06-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260624-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "echoes-vault-opencode",
+      "summary": "OpenCode 的持久記憶 plugin，Obsidian 風格知識庫、跨 session 存活。",
+      "tags": [
+        "memory",
+        "opencode",
+        "plugin"
+      ],
+      "url": "https://github.com/psinetron/echoes-vault-opencode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 78,
+      "createdDate": "2026-06-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260624-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "TurboLLM",
+      "summary": "跑任何 local LLM engine、依 GPU 自動調校，附 web UI + OpenAI/Anthropic 相容 API。一行把 Claude Code 指向自己的機器，無 Electron、無 Python、offline-first。",
+      "tags": [
+        "local-llm",
+        "claude-code",
+        "inference"
+      ],
+      "url": "https://github.com/mohitsoni48/TurboLLM",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 51,
+      "createdDate": "2026-06-12",
+      "license": "NOASSERT"
+    },
+    {
+      "id": "20260624-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "ralph",
+      "summary": "可設定的 Bash/PowerShell 迴圈，每次 iteration 都用全新 session 跑 AI coding CLI。極簡版 loop engineering。",
+      "tags": [
+        "coding-agent",
+        "loop",
+        "cli"
+      ],
+      "url": "https://github.com/SantanderAI/ralph",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 60,
+      "createdDate": "2026-06-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260624-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "Code-Duo",
+      "summary": "Claude + Codex 兩個 coding agent 放同一視窗，逐步串流、互相 review、盯成本，還能抓出「宣稱做了但其實沒做」的 AI。靠訂閱不靠 API。",
+      "tags": [
+        "coding-agent",
+        "multi-agent",
+        "claude-code"
+      ],
+      "url": "https://github.com/norika1207-lab/Code-Duo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 37,
+      "createdDate": "2026-06-21",
+      "license": "NOASSERT"
+    },
+    {
+      "id": "20260624-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-06-24",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "humanness-index",
+      "summary": "Vapi 做的開源 benchmark：評 voice AI 聽起來多像真人，同聲音盲測對戰、純投票 Elo，附真人基準線。做語音/音訊可參考。",
+      "tags": [
+        "voice-ai",
+        "tts",
+        "benchmark"
+      ],
+      "url": "https://github.com/VapiAI/humanness-index",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 21,
+      "createdDate": "2026-06-12",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-06-24",
