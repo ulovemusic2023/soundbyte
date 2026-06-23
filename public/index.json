@@ -53469,6 +53469,25 @@
       "stars": 144,
       "createdDate": "2026-06-14",
       "license": "MIT"
+    },
+    {
+      "id": "20260624-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MiniMax-AI/MiniMax-M3",
+      "summary": "open-weight frontier MoE，428B 總參數 / 23B 啟用，1M token context，原生多模態（圖像＋影片）。核心是 MiniMax Sparse Attention (MSA)：1M context 下 prefill 快 9×、decode 快 15×。SWE-Bench Pro 59.0，超過 GPT-5.5 與 Gemini 3.1 Pro。可跑在 vLLM / SGLang / KTransformers / unsloth。",
+      "tags": [
+        "llm_inference",
+        "llm_training"
+      ],
+      "url": "https://github.com/MiniMax-AI/MiniMax-M3",
+      "source": "HuggingFace / GitHub",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "price": null,
+      "vram": "428B，4-bit 仍需 ~200GB+",
+      "license": "minimax-community"
     }
   ],
   "lastUpdated": "2026-06-19",
