@@ -53870,8 +53870,69 @@
       "stars": 21,
       "createdDate": "2026-06-12",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260625-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "zai-org/GLM-5.2",
+      "summary": "Z.ai 6/17 釋出的開放權重旗艦 MoE，被 Willison、Latent Space 點名為目前最強的純文字 open-weights LLM 與全球最強 frontend coding model，首個能在 coding benchmark 正面挑戰閉源前沿的開源模型。744B 級 MoE，本地要多卡。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "coding"
+      ],
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.2",
+      "price": null,
+      "vram": "cloud-only (744B-class MoE，16GB 單卡需社群 GGUF 蒸餾)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "moonshotai/Kimi-K2.7-Code",
+      "summary": "Moonshot 6/11 上架的 coding 專用 MoE，HF 上線兩週累積 48 萬次下載，已被 DeepInfra/Together/Novita 多家 inference provider 上線。64-shard safetensors 超大 MoE，定位 agentic coding，單卡 16GB 不可行。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "coding",
+        "agentic"
+      ],
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+      "price": null,
+      "vram": "cloud-only (超大 MoE，需雲端或多卡)",
+      "license": "Modified MIT"
+    },
+    {
+      "id": "20260625-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Grrovesk/dots.tts",
+      "summary": "主打即時 voice cloning 的輕量 TTS，強調在低 VRAM GPU 上跑 real-time 推理，正對 SVC/語音 pipeline 的 on-device 方向。⚠️ repo 規模小、文件少，主要訊源來自 YouTube 實測，建議觀望實測。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "real-time"
+      ],
+      "url": "https://github.com/Grrovesk/dots.tts",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/Grrovesk/dots.tts",
+      "price": null,
+      "vram": "local-ready (主打低 VRAM real-time)",
+      "license": "未標示"
     }
   ],
-  "lastUpdated": "2026-06-24",
-  "updatedAt": "2026-06-24T05:30:00+08:00"
+  "lastUpdated": "2026-06-25",
+  "updatedAt": "2026-06-25T05:10:00+08:00"
 }
