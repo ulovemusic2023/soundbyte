@@ -54095,6 +54095,272 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260625-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "baidu/Unlimited-OCR",
+      "summary": "百度開源的長文件 OCR，主打 one-shot long-horizon parsing，可一次解析超長文件不切片。發布一週多衝到 6k+ stars。",
+      "tags": [
+        "ocr",
+        "document",
+        "baidu"
+      ],
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/baidu/Unlimited-OCR",
+      "stars": 6255,
+      "createdDate": "2026-06-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260625-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "NO6KIKO/gorest-2d-animation-spritesheet-generator",
+      "summary": "Codex 輔助的本地 2D 動畫 spritesheet 產生器 + 場景合成 workspace，適合做遊戲/動態素材的創作者。",
+      "tags": [
+        "animation",
+        "spritesheet",
+        "codex",
+        "creator"
+      ],
+      "url": "https://github.com/NO6KIKO/gorest-2d-animation-spritesheet-generator",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/NO6KIKO/gorest-2d-animation-spritesheet-generator",
+      "stars": 908,
+      "createdDate": "2026-06-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "cloudflare/security-audit-skill",
+      "summary": "Cloudflare 官方釋出的 coding-agent skill，做多階段安全稽核，產出可機器讀、且經獨立驗證的 findings。直接掛進 Claude Code / Codex 用。",
+      "tags": [
+        "security",
+        "skill",
+        "coding-agent",
+        "cloudflare"
+      ],
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/cloudflare/security-audit-skill",
+      "stars": 677,
+      "createdDate": "2026-06-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260625-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "ngrok/webernetes",
+      "summary": "ngrok 出的怪東西：把 Kubernetes 跑在瀏覽器裡。實用性見仁見智，但作為理解 k8s 的互動 demo 很有梗。",
+      "tags": [
+        "kubernetes",
+        "browser",
+        "wasm"
+      ],
+      "url": "https://github.com/ngrok/webernetes",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ngrok/webernetes",
+      "stars": 623,
+      "createdDate": "2026-06-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "boogu-project/Boogu-Image",
+      "summary": "Apache-2.0 開源圖像生成/編輯模型家族，宣稱用少一個數量級的資料量逼近閉源模型表現。對做視覺素材的創作者值得測。",
+      "tags": [
+        "image-generation",
+        "model",
+        "open-source"
+      ],
+      "url": "https://github.com/boogu-project/Boogu-Image",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/boogu-project/Boogu-Image",
+      "stars": 548,
+      "createdDate": "2026-06-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260625-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "KorroAi/drunk-claude",
+      "summary": "幫 Claude 加一條「醉度」滑桿：從微醺(0.1)到斷片(1.0)，5 種情緒 8 種創意技巧。降低拘束不降智商，需要腦力激盪換口味時拿來玩。",
+      "tags": [
+        "claude-code",
+        "creative",
+        "skill"
+      ],
+      "url": "https://github.com/KorroAi/drunk-claude",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/KorroAi/drunk-claude",
+      "stars": 160,
+      "createdDate": "2026-06-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "iart-ai/motion-skills",
+      "summary": "50 個開源 skills 教 AI coding agent 做動態圖像/動畫/影片：kinetic typography、data-viz、TikTok/Reels、WebGL、Manim，14 個可安裝包。創作者導向，超對 Gary 胃口。",
+      "tags": [
+        "motion-graphics",
+        "animation",
+        "video",
+        "skill",
+        "creator"
+      ],
+      "url": "https://github.com/iart-ai/motion-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/iart-ai/motion-skills",
+      "stars": 157,
+      "createdDate": "2026-06-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "lightbearco/tupper",
+      "summary": "開源沙箱，讓 AI agent 產生的、不可信的程式碼在你自己機器上安全執行。Vibe coding / agent 跑 code 時的安全網。",
+      "tags": [
+        "sandbox",
+        "ai-agent",
+        "security",
+        "mcp"
+      ],
+      "url": "https://github.com/lightbearco/tupper",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/lightbearco/tupper",
+      "stars": 122,
+      "createdDate": "2026-06-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "Env-Kit/envkit-releases",
+      "summary": "免費本地開發環境(Win/Mac)：nginx/Apache、多版本 PHP、MySQL/PG/Redis/Mongo、.test HTTPS，內建 MCP server 讓 AI 助手直接控制。Laragon/XAMPP 替代品。",
+      "tags": [
+        "dev-env",
+        "mcp",
+        "local"
+      ],
+      "url": "https://github.com/Env-Kit/envkit-releases",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Env-Kit/envkit-releases",
+      "stars": 98,
+      "createdDate": "2026-06-20",
+      "license": "proprietary-free"
+    },
+    {
+      "id": "20260625-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "7anX/AgentScan",
+      "summary": "AI 協定掃描器：一條命令盤點暴露在外的 MCP server、A2A Agent Card、開放 LLM API。自架 MCP 後做暴露面盤點很實用。",
+      "tags": [
+        "mcp",
+        "security",
+        "scanner",
+        "a2a"
+      ],
+      "url": "https://github.com/7anX/AgentScan",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/7anX/AgentScan",
+      "stars": 61,
+      "createdDate": "2026-06-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "gintasz/neuralyzer",
+      "summary": "AI agent harness 小工具：讓 agent 自己清空 session context、重跑第一則訊息。對付長對話 context 腐敗的偏方。",
+      "tags": [
+        "ai-agent",
+        "context",
+        "harness"
+      ],
+      "url": "https://github.com/gintasz/neuralyzer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/gintasz/neuralyzer",
+      "stars": 60,
+      "createdDate": "2026-06-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "mahiatlinux/aerollm",
+      "summary": "Apple Silicon Mac 專用的本地 LLM 聊天 app，輕量原生。想在 M 系列 Mac 上跑本地模型的入門選擇。",
+      "tags": [
+        "local-llm",
+        "mac",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/mahiatlinux/aerollm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/mahiatlinux/aerollm",
+      "stars": 22,
+      "createdDate": "2026-06-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260625-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-06-25",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "x0c/doc-skills",
+      "summary": "三個 Claude Code skills：doc-init / doc-compact / doc-update，幫專案產生並維護給 AI 讀的文件。維護 agent 友善文件的好習慣工具。",
+      "tags": [
+        "claude-code",
+        "documentation",
+        "skill"
+      ],
+      "url": "https://github.com/x0c/doc-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/x0c/doc-skills",
+      "stars": 21,
+      "createdDate": "2026-06-22",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-25",
