@@ -53931,8 +53931,132 @@
       "price": null,
       "vram": "local-ready (主打低 VRAM real-time)",
       "license": "未標示"
+    },
+    {
+      "id": "20260625-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 推出 Claude Tag — @Claude 變團隊成員",
+      "summary": "Claude Tag 讓 @Claude 像團隊成員加進 Slack channel：授權它讀指定 channel、接上工具/資料/codebase，任何人 tag 它就能非同步把任務丟給它；它會記住 channel 脈絡、規劃未來任務。官方定位為 Claude Code 的下一步演化——從你叫它做、變成它主動做。Anthropic 內部 65% 產品團隊的 code 已由內部版產生。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "claude-code",
+        "ambient-agent"
+      ],
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/introducing-claude-tag",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260625-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Patch the Planet — AI 找洞 + 人工修補 OSS",
+      "summary": "OpenAI 偕 Trail of Bits 啟動 Daybreak 計畫 Patch the Planet：用最強 cyber 模型做 AI 輔助漏洞探勘，再由資安工程師人工 review，不只找洞還幫 OSS maintainer 寫 patch + 測試。核心論點：AI 加速「找洞」但找到不等於修好，maintainer 反被更多回報淹沒——重點放在減負與可重用 workflow。Trail of Bits 投入整個資安研究團隊，並找 HackerOne 協助 triage/disclosure。",
+      "tags": [
+        "paradigm-shift",
+        "ai-software-engineering",
+        "supply-chain-security",
+        "vulnerability"
+      ],
+      "url": "https://openai.com/index/patch-the-planet/",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/patch-the-planet/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260625-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Gergely Orosz — Slow down to speed up：半年內變了多少",
+      "summary": "Pragmatic Engineer 的 Craft Conference keynote 整理：過去半年 AI agent 讓 code 產出 2× 起跳，卻帶來品質下滑、AI slop 淹沒、tech debt 累積；主張刻意「放慢」用 agent 才是更快的策略。文中以 Meta 近期最尷尬的 outage（AI 能改任意帳號 email）當活生生案例。",
+      "tags": [
+        "ai-assisted-development",
+        "code-quality",
+        "engineering-culture"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/slow-down-to-speed-up",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/slow-down-to-speed-up",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260625-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Stack Overflow — AI 生的後端「跑得起來」才是問題",
+      "summary": "一位十年全端工程師的觀察：AI 生成的後端「boots」反而最危險。多數資安事故不精巧、很無聊（沒驗證、沒授權檢查），但能開機 ≠ 安全，AI 把這些 boring vuln 大量量產。提醒別把「能跑」當驗收標準。",
+      "tags": [
+        "ai-coding",
+        "backend-security",
+        "code-review"
+      ],
+      "url": "https://stackoverflow.blog/2026/06/23/your-ai-shipped-a-backend-that-boots-that-is-the-whole-problem/",
+      "source": "Stack Overflow Blog",
+      "sourceUrl": "https://stackoverflow.blog/2026/06/23/your-ai-shipped-a-backend-that-boots-that-is-the-whole-problem/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260625-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FrontierCode — 首個量測「這段 code 會不會被 merge」的 benchmark",
+      "summary": "新 code 評測 FrontierCode 用 3000+ rubrics，由 20+ 資深 OSS maintainer 親手出題，評的不是「測試過不過」而是真實 merge-worthiness（行為正確、regression 安全、scope 紀律、風格/repo 規範）。回應 METR 3 月發現：逾半 SWE-bench 通過的 patch 過不了人類 code review。採 deterministic 測試 + rubric LLM 評分的 hybrid grading，並設計反 reward hacking。",
+      "tags": [
+        "llm-evaluation",
+        "benchmark",
+        "code-quality",
+        "ai-coding"
+      ],
+      "url": "https://arxiv.org/html/2606.19103v1",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/html/2606.19103v1",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260625-sw-006",
+      "radar": "software-dev",
+      "date": "2026-06-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Swift Package Index 併入 Apple",
+      "summary": "社群經營、已收錄逾萬套件的 Swift 套件索引 SPI 宣布加入 Apple，承諾維持 open source，索引/呈現/文件託管短期不變；Apple 工程師將與社群共同開發，規劃強化 package signing 與 identity 等供應鏈安全能力。共同創辦人 Dave Verwer 一同加入 Apple。",
+      "tags": [
+        "swift",
+        "package-registry",
+        "ecosystem",
+        "supply-chain-security"
+      ],
+      "url": "https://swiftpackageindex.com/blog/swift-package-index-joins-apple",
+      "source": "9to5Mac",
+      "sourceUrl": "https://9to5mac.com/2026/06/23/swift-package-index-joins-apple-pledges-to-remain-open-source/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-25",
-  "updatedAt": "2026-06-25T05:10:00+08:00"
+  "updatedAt": "2026-06-25T05:20:00+08:00"
 }
