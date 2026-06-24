@@ -54055,8 +54055,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260625-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-25",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "AI 時代的「內在賽局」：情緒調節才是真正的護城河",
+      "summary": "Joe Hudson（OpenAI 研究團隊的高管教練）觀察：在最 AI-native 的環境裡，勝出的不是「努力」與「知識」——這兩件恰恰是 AI 最擅長、正在被商品化的能力。真正稀缺的是情緒調節力：能在困難對話裡待得住、壓力上來時不攻擊自己也不攻擊隊友、繼續往前。",
+      "tags": [
+        "ai-age",
+        "emotional-regulation",
+        "future-of-work"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/the-new-inner-game-your-unfair-advantage",
+      "source": "Lenny's Newsletter (Joe Hudson)",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/the-new-inner-game-your-unfair-advantage",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260625-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-25",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "逃離「薪資奴役」：AI 不是威脅，依賴才是",
+      "summary": "Dan Koe：AI 真正的威脅不是技術本身，而是你把生存完全託付給雇主與政府。解法是成為高自主性（high agency）的人、開始做自己的事。他用「心流」拆解工作為何讓人空虛：幾個月後挑戰不再隨能力升級，自然失去沉浸感。",
+      "tags": [
+        "one-person-business",
+        "high-agency",
+        "ai-replacement"
+      ],
+      "url": "https://letters.thedankoe.com/p/how-to-survive-ai-mass-replacement",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/how-to-survive-ai-mass-replacement",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-25",
-  "updatedAt": "2026-06-25T05:20:00+08:00"
+  "updatedAt": "2026-06-25T05:30:00+08:00"
 }
