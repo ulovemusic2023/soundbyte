@@ -54383,6 +54383,168 @@
       "price": null,
       "vram": "local-ready (~5M params, CPU 可跑)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260626-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI × Broadcom 推出 Jalapeño — OpenAI 首顆自研推論晶片",
+      "summary": "OpenAI 與 Broadcom 共同發表 Jalapeño，OpenAI 第一顆專為 LLM inference 設計的 custom ASIC（近 reticle-size、約 9 個月極速開發）。主打 cost per token 與 performance per watt，瞄準 ChatGPT/Codex/API 的大批次低延遲推論，目標降低對 Nvidia GPU 的依賴。",
+      "tags": [
+        "paradigm-shift",
+        "custom-inference-chip",
+        "asic",
+        "ai-infra"
+      ],
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "source": "TechCrunch / Broadcom IR",
+      "sourceUrl": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260626-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RubyLLM 1.16 — 一個 Ruby 框架打通所有 AI 供應商",
+      "summary": "RubyLLM 把 chat、tools(function calling)、embeddings、image generation、agents、audio 全包進單一 Ruby API，並有第一級 Rails 整合與 agentic workflows。對 Ruby/Rails 生態是整合層。",
+      "tags": [
+        "ai-agent",
+        "framework",
+        "ruby",
+        "tool-use"
+      ],
+      "url": "https://rubyllm.com",
+      "source": "rubyllm.com (crmne/ruby_llm)",
+      "sourceUrl": "https://rubyllm.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260626-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Rhombus Language 1.0 — Racket 生態長出的新語言",
+      "summary": "Rhombus 1.0 正式發布，建立在 Racket 之上但採用更貼近主流的傳統語法，是 Racket 團隊多年「可擴充語言」研究的里程碑。",
+      "tags": [
+        "new-language",
+        "racket",
+        "language-design"
+      ],
+      "url": "https://github.com/racket/rhombus",
+      "source": "Hacker News / racket-lang.org",
+      "sourceUrl": "https://github.com/racket/rhombus",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260626-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Coding agent 的「第四層帳單」— 計量式定價成主戰場",
+      "summary": "6 月起 GitHub Copilot 等轉向 AI Credit / usage-based billing，重度使用者面臨成本不確定性。coding agent 的 token 成本成為團隊隱形大開銷，定價模式成了 Cursor / Claude Code / Copilot 的關鍵差異點。",
+      "tags": [
+        "ai-coding",
+        "agent-billing",
+        "metered-pricing"
+      ],
+      "url": "https://www.pointfive.co/blog/the-fourth-layer-coding-agents-biggest-ai-bill",
+      "source": "Pointfive",
+      "sourceUrl": "https://www.pointfive.co/blog/the-fourth-layer-coding-agents-biggest-ai-bill",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260626-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Nub — Bun 風格的 Node.js 全合一工具鏈",
+      "summary": "Show HN：Nub 主打「fast all-in-one Node.js toolkit」，把 runtime + 打包 + 工具整進一套，對標 Bun 但留在 Node 生態。",
+      "tags": [
+        "tooling",
+        "nodejs",
+        "bun-like"
+      ],
+      "url": "https://github.com/nubjs/nub",
+      "source": "Hacker News (nubjs/nub)",
+      "sourceUrl": "https://github.com/nubjs/nub",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260626-sw-006",
+      "radar": "software-dev",
+      "date": "2026-06-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Deno v2.9.0 發布",
+      "summary": "Deno 2.9.0 釋出，持續強化 TS/JS runtime；近期也推出可產出 tiny binaries + auto-update 的 desktop builder，往桌面應用打包場景延伸。",
+      "tags": [
+        "deno",
+        "runtime",
+        "typescript"
+      ],
+      "url": "https://devtalk.com/t/deno-v2-9-0-released/247530",
+      "source": "Devtalk / Deno GitHub",
+      "sourceUrl": "https://devtalk.com/t/deno-v2-9-0-released/247530",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260626-sw-007",
+      "radar": "software-dev",
+      "date": "2026-06-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Latent Space — Data + AI Summit：Lakebase 與 agent 安全",
+      "summary": "swyx 在 Databricks Data+AI Summit 場邊整理 2026 重點：Lakehouse/Lakebase 走向、open formats、agent security、Omnigent 等。",
+      "tags": [
+        "data-platform",
+        "lakebase",
+        "agent-security"
+      ],
+      "url": "https://www.latent.space/p/databricks",
+      "source": "Latent Space",
+      "sourceUrl": "https://www.latent.space/p/databricks",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260626-sw-008",
+      "radar": "software-dev",
+      "date": "2026-06-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Jesse Warden — LLM Learning Bias",
+      "summary": "反思：LLM 把網路上被蒸餾過的知識餵給下一代工程師，等於由過去主流社群（Java/OOP/FP/XP）的偏好在替未來程式設計師塑形。提醒在 AI 輔助學習時注意知識來源的時代偏差。",
+      "tags": [
+        "mental-model",
+        "llm",
+        "learning"
+      ],
+      "url": "https://jessewarden.com/2026/06/llm-learning-bias.html",
+      "source": "Jesse Warden",
+      "sourceUrl": "https://jessewarden.com/2026/06/llm-learning-bias.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-26",
