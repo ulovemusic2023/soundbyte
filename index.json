@@ -54545,6 +54545,46 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260626-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-26",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "「寫程式被解決之後」：當 agent 無所不在，工程組織該怎麼帶",
+      "summary": "Fiona Fung（帶 Claude Code 與 Cowork 團隊）指出：當 agent 把實作這一段吃掉，瓶頸就從「會不會寫」往上移到品味、文化與情境切換。Anthropic 工程師現在平均每季產出的程式碼約是 2021–25 年的 8 倍，PM 與 eng 的角色界線正在模糊——最難解的問題不是寫程式，而是人在多個 agent 之間頻繁切換、注意力被切碎。",
+      "tags": [
+        "ai-native-org",
+        "engineering-management",
+        "agentic"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering",
+      "source": "Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260626-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-26",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Loop Engineering：接棒 vibe coding 的新工法（也別 loopmaxxing）",
+      "summary": "順著 Karpathy 把「vibe coding」改稱「agentic engineering」的脈絡，本週工程圈把焦點從「寫 prompt」推進到「設計 agent 的迴圈」：感知→行動→回饋，讓 agent 自己對指標評分、決定 rollback 或 commit。重點不在更聰明的模型，而在你怎麼安排迴圈、工具與記憶。作者同時提醒別「loopmaxxing」——把迴圈過度工程化反而拖垮可靠度。",
+      "tags": [
+        "agentic-engineering",
+        "vibe-coding",
+        "ai-coding"
+      ],
+      "url": "https://bdtechtalks.com/2026/06/22/ai-loop-engineering/",
+      "source": "TechTalks",
+      "sourceUrl": "https://bdtechtalks.com/2026/06/22/ai-loop-engineering/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-26",
