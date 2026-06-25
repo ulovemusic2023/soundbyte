@@ -54585,6 +54585,258 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260626-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "zhongerxin/Cowart",
+      "summary": "面向 Codex 的本地無限畫布插件，基於 tldraw。可在畫布建 AI image holder 讓 Codex 生圖、依標註截圖迭代修圖，資料存在專案的 canvas/ 目錄。創作者畫圖 + AI coding 結合，跟 Gary 做視覺素材很搭。",
+      "tags": [
+        "codex",
+        "canvas",
+        "image-gen",
+        "tldraw",
+        "plugin"
+      ],
+      "url": "https://github.com/zhongerxin/Cowart",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>50&type=repositories",
+      "stars": 2892,
+      "createdDate": "2026-06-18",
+      "license": "?"
+    },
+    {
+      "id": "20260626-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "AI-Builder-Club/skills",
+      "summary": "一組 codebase harness + loop engineer 的 agent skills，主打讓 coding agent 在大型 codebase 上跑得更穩。Loop engineering 這波最近很熱（橙皮書系列），可當參考。",
+      "tags": [
+        "claude-code",
+        "skills",
+        "harness",
+        "loop-engineering"
+      ],
+      "url": "https://github.com/AI-Builder-Club/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>50&type=repositories",
+      "stars": 559,
+      "createdDate": "2026-06-14",
+      "license": "?"
+    },
+    {
+      "id": "20260626-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "SakanaAI/fugu",
+      "summary": "Sakana AI 出品：把多個 frontier model 動態編排成「單一 LLM」對外提供（Chat Completions / Responses 相容），一行指令裝進 Codex（codex-fugu）。基於 ICLR 2026 的 TRINITY + Conductor 兩篇論文。協調勝過單一模型的代表作。",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "codex",
+        "sakana"
+      ],
+      "url": "https://github.com/SakanaAI/fugu",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>50&type=repositories",
+      "stars": 534,
+      "createdDate": "2026-06-17",
+      "license": "?"
+    },
+    {
+      "id": "20260626-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "latent-spaces/brag",
+      "summary": "一行指令把你剛做好的專案變成短的、可分享的 launch 影片。對要常發 Threads/社群、宣傳 side project 的 Gary 是現成的內容產生器。",
+      "tags": [
+        "creator",
+        "launch-video",
+        "marketing",
+        "cli"
+      ],
+      "url": "https://github.com/latent-spaces/brag",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>50&type=repositories",
+      "stars": 530,
+      "createdDate": "2026-06-16",
+      "license": "?"
+    },
+    {
+      "id": "20260626-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "anthropics/launch-your-agent",
+      "summary": "Anthropic 官方 Claude Code skills：帶 founder 從一個 idea 一路到上線的 Claude Managed Agent — 訪談、scope v0、在自己帳號部署、評分、迭代、排程。想把 Radar/Sub 這類 agent 做得更系統化可直接抄架構。",
+      "tags": [
+        "claude-code",
+        "skills",
+        "managed-agent",
+        "official"
+      ],
+      "url": "https://github.com/anthropics/launch-your-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>50&type=repositories",
+      "stars": 498,
+      "createdDate": "2026-06-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260626-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "sums001/Windows-Copilot-API",
+      "summary": "逆向 Windows Copilot 成 OpenAI 相容 API，免 key 免帳單存取 GPT-4/GPT-5。技術上有趣的 AI infra hack，但僅限 Windows + ToS 灰色地帶，當參考別當生產用。",
+      "tags": [
+        "reverse-engineering",
+        "openai-api",
+        "copilot"
+      ],
+      "url": "https://github.com/sums001/Windows-Copilot-API",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>50&type=repositories",
+      "stars": 737,
+      "createdDate": "2026-06-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260626-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "databufflabs/databuff",
+      "summary": "AI native 的 OpenTelemetry APM，主打讓 agent 直接讀懂監控資料。SoundByte / Radar 後端如果要加觀測性可以留意。",
+      "tags": [
+        "observability",
+        "opentelemetry",
+        "apm",
+        "devops"
+      ],
+      "url": "https://github.com/databufflabs/databuff",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>20+topic:ai-agent&type=repositories",
+      "stars": 139,
+      "createdDate": "2026-06-18",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260626-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "umacloud/umadev",
+      "summary": "專案總監 Agent：驅動你已登入的 Claude Code / Codex / OpenCode，像真實開發團隊那樣規劃、編碼、評審、交付，本身不帶模型。跟 Gary 的多 agent 工作流概念很像。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "orchestration",
+        "project-director"
+      ],
+      "url": "https://github.com/umacloud/umadev",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>20+topic:claude-code&type=repositories",
+      "stars": 122,
+      "createdDate": "2026-06-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260626-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "VisionForge-OU/foreman",
+      "summary": "Boris 風格的 agentic orchestrator TUI，監督多個 headless Claude Code agent 走過一條有 gate 的交付 pipeline，可指向任何 repo。想集中管理多個 coding agent 可試。",
+      "tags": [
+        "claude-code",
+        "tui",
+        "orchestrator",
+        "headless"
+      ],
+      "url": "https://github.com/VisionForge-OU/foreman",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>20+topic:claude-code&type=repositories",
+      "stars": 115,
+      "createdDate": "2026-06-17",
+      "license": "?"
+    },
+    {
+      "id": "20260626-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "NotASithLord/peerd",
+      "summary": "號稱第一個瀏覽器原生的 AI agent harness（Chrome/Firefox 擴充）：agent loop 跑在瀏覽器裡、開沙箱算力（JS notebook、WASM Linux VM），成果還能 P2P 分享。BYOK、無後端、無遙測。架構很新。",
+      "tags": [
+        "browser-extension",
+        "agent-harness",
+        "wasm",
+        "p2p"
+      ],
+      "url": "https://github.com/NotASithLord/peerd",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>20+topic:ai-agent&type=repositories",
+      "stars": 108,
+      "createdDate": "2026-06-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260626-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "bozhouDev/codex-orange-book",
+      "summary": "Codex 橙皮書：從安裝到實戰案例的全鏈路使用指南（非官方、含可下載 PDF）。三天衝到 1.9k★，反映中文圈 Codex 學習需求很猛。資料非工具，當教材看。",
+      "tags": [
+        "codex",
+        "guide",
+        "chinese",
+        "pdf"
+      ],
+      "url": "https://github.com/bozhouDev/codex-orange-book",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>50&type=repositories",
+      "stars": 1920,
+      "createdDate": "2026-06-23",
+      "license": "?"
+    },
+    {
+      "id": "20260626-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-26",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "TaewoooPark/Agent-Blackbox",
+      "summary": "coding agent 的 local-first 黑盒飛行記錄器：把每次執行 replay 成 session map、評估 context 花費，再把修正寫回 AGENTS.md。一個 npx、免 API key。debug agent 行為的小工具。",
+      "tags": [
+        "coding-agent",
+        "observability",
+        "agents.md",
+        "local-first"
+      ],
+      "url": "https://github.com/TaewoooPark/Agent-Blackbox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-12+stars:>20+topic:coding-agent&type=repositories",
+      "stars": 29,
+      "createdDate": "2026-06-16",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-26",
