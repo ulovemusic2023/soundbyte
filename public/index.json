@@ -54361,8 +54361,30 @@
       "stars": 21,
       "createdDate": "2026-06-22",
       "license": "MIT"
+    },
+    {
+      "id": "20260626-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-26",
+      "cycle": "daily",
+      "priority": "high",
+      "title": "owensong/Inflect-Nano-v1",
+      "summary": "4.63M 參數的超迷你英文 TTS（含 vocoder），24kHz 單一男聲，純 PyTorch、CPU 也能跑。完整 text-to-waveform stack 壓到 sub-5M 參數。6/19 衝上 HF TTS leaderboard #1（solo dev 低預算作品）。實用性有限（英文、單聲、experimental），但作為「邊緣/嵌入式語音快速可行化」的 paradigm 訊號值得記。v2 已預告 4m/10m 雙版本＋多語 finetune。",
+      "tags": [
+        "tts_speech",
+        "text-to-speech",
+        "speech-synthesis",
+        "efficient-inference",
+        "edge-inference"
+      ],
+      "url": "https://huggingface.co/owensong/Inflect-Nano-v1",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/owensong/Inflect-Nano-v1",
+      "price": null,
+      "vram": "local-ready (~5M params, CPU 可跑)",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-06-25",
-  "updatedAt": "2026-06-25T05:30:00+08:00"
+  "lastUpdated": "2026-06-26",
+  "updatedAt": "2026-06-26T05:10:00+08:00"
 }
