@@ -55102,6 +55102,267 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260627-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "yolfinance/yolfi-agent",
+      "summary": "Agent Kit：SDK + CLI + MCP server 三合一，給 AI coding agent 用的開發工具包，方便把 agent 能力接進自己的 repo。",
+      "tags": [
+        "ai-agent",
+        "mcp",
+        "sdk",
+        "cli"
+      ],
+      "url": "https://github.com/yolfinance/yolfi-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 214,
+      "createdDate": "2026-06-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260627-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "alvinunreal/lazyskills",
+      "summary": "agent skills 的 mission control，快速瀏覽/管理/切換你裝的一堆 Agent Skills，terminal UI。",
+      "tags": [
+        "agent-skill",
+        "cli",
+        "tui"
+      ],
+      "url": "https://github.com/alvinunreal/lazyskills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 108,
+      "createdDate": "2026-06-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260627-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "nikitadoudikov/claude-pulse",
+      "summary": "本地零依賴 Claude Code dashboard：即時看 token 用量與 context、救回斷掉的 session、全文搜尋，還能用手機 approve tool call。",
+      "tags": [
+        "claude-code",
+        "dashboard",
+        "observability"
+      ],
+      "url": "https://github.com/nikitadoudikov/claude-pulse",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 100,
+      "createdDate": "2026-06-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260627-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "gaasher/Agent-Loop-Skills",
+      "summary": "把『跑到變好為止』的 agentic loop 包成開放標準 Agent Skills（autoresearch、寫作、資料分析、code/SQL/prompt 優化、red-team），verification-gated，Claude Code 原生、可跨 Codex/Cursor。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "agentic-loop"
+      ],
+      "url": "https://github.com/gaasher/Agent-Loop-Skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 98,
+      "createdDate": "2026-06-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260627-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "spronta/crawlie",
+      "summary": "免費開源的 technical SEO + GEO crawler，為人和 agent 設計，跑網站健檢用。",
+      "tags": [
+        "scraper",
+        "seo",
+        "crawler"
+      ],
+      "url": "https://github.com/spronta/crawlie",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 66,
+      "createdDate": "2026-06-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260627-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "GenseeAI/gensee-crate",
+      "summary": "給 AI coding agent 的 runtime 安全層：即時攔截、系統事件監控、long-horizon provenance，支援 macOS 上的 Claude Code / Codex。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "claude-code"
+      ],
+      "url": "https://github.com/GenseeAI/gensee-crate",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 65,
+      "createdDate": "2026-06-23",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260627-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "jaredrhod/ai-memory-vault",
+      "summary": "用 Obsidian markdown 當 AI 的長期記憶，不需 vector DB，純 markdown 模板。",
+      "tags": [
+        "mcp",
+        "memory",
+        "obsidian"
+      ],
+      "url": "https://github.com/jaredrhod/ai-memory-vault",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 56,
+      "createdDate": "2026-06-18",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260627-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "YurunChen/repo-docs-skills",
+      "summary": "給 coding agent 的『活文件』skills：隨 repo 演進自動更新 guide、進度 log、change map、handoff context。",
+      "tags": [
+        "coding-agent",
+        "agent-skill",
+        "docs"
+      ],
+      "url": "https://github.com/YurunChen/repo-docs-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:coding-agent",
+      "stars": 50,
+      "createdDate": "2026-06-23",
+      "license": "?"
+    },
+    {
+      "id": "20260627-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "QwenLM/Qwen-AgentWorld",
+      "summary": "Qwen 出的 Language World Models for General Agents，給通用 agent 用的語言世界模型，研究取向。",
+      "tags": [
+        "ai-agent",
+        "world-model",
+        "research"
+      ],
+      "url": "https://github.com/QwenLM/Qwen-AgentWorld",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 564,
+      "createdDate": "2026-06-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260627-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "xiaohuailabs/xiaohu-ip-studio",
+      "summary": "開源中文配圖技能 + IP 角色庫：用固定角色出演幫中文長文生成正文配圖，含『反 PPT 自檢』。",
+      "tags": [
+        "agent-skill",
+        "content",
+        "illustration"
+      ],
+      "url": "https://github.com/xiaohuailabs/xiaohu-ip-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 141,
+      "createdDate": "2026-06-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260627-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "begin0808/VoxCPM2",
+      "summary": "基於 OpenBMB VoxCPM2 的離線語音合成 + 聲音複製桌面工作站，支援即時錄音與 voice design。",
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "audio"
+      ],
+      "url": "https://github.com/begin0808/VoxCPM2",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:voice-cloning",
+      "stars": 32,
+      "createdDate": "2026-06-19",
+      "license": "?"
+    },
+    {
+      "id": "20260627-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "YeJe-cpu/talk-to-fengge",
+      "summary": "克隆任何人的聲音 + 性格做即時語音對話，工程延遲 < 1 秒。",
+      "tags": [
+        "voice-cloning",
+        "real-time",
+        "audio"
+      ],
+      "url": "https://github.com/YeJe-cpu/talk-to-fengge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:voice-cloning",
+      "stars": 26,
+      "createdDate": "2026-06-25",
+      "license": "?"
+    },
+    {
+      "id": "20260627-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-06-27",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "dduongtrandai/LA-Studio",
+      "summary": "privacy-first 本地 AI 音訊桌面 app：STT / TTS / voice cloning / voice design 一站式。",
+      "tags": [
+        "audio",
+        "tts",
+        "voice-cloning"
+      ],
+      "url": "https://github.com/dduongtrandai/LA-Studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:text-to-speech",
+      "stars": 24,
+      "createdDate": "2026-06-18",
+      "license": "GPL-3.0"
     }
   ],
   "lastUpdated": "2026-06-27",
