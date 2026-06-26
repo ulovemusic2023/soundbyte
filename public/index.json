@@ -54837,6 +54837,106 @@
       "stars": 29,
       "createdDate": "2026-06-16",
       "license": "MIT"
+    },
+    {
+      "id": "20260627-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Zyphra/ZONOS2 8B",
+      "summary": "開源 TTS 大躍進：8B 參數 MoE 架構（900M active），訓練語料從 200K 擴到 6M 小時。主打 naturalness、prosody、voice cloning fidelity，streaming latency 維持低延遲。權重+推理碼已用 Apache 2.0 釋出。",
+      "tags": [
+        "tts_speech",
+        "voice_cloning",
+        "moe"
+      ],
+      "url": "https://github.com/Zyphra/ZONOS2",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.24320",
+      "price": null,
+      "vram": "8B/900M active MoE，量化後可進 16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260627-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis",
+      "summary": "自然語言驅動的通用語音合成：給 prompt 先 reason 出 caption 再合成。一個模型涵蓋 multi-talker、intent-to-speech、role-play、singing voice synthesis，Seed-TTS-Eval 1.7% WER。論文階段，暫無權重。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "singing"
+      ],
+      "url": "https://arxiv.org/abs/2606.22811",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.22811",
+      "price": null,
+      "vram": "未釋權重，估計 local-ready",
+      "license": "未釋出"
+    },
+    {
+      "id": "20260627-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Real-Time Interactive Music Generation via Streaming Consistency Distillation",
+      "summary": "把離線生成式音樂模型變成可即時演奏的樂器。streaming autoregressive latent space distillation，prompt-only 免配對資料集，music-aware consistency loss 保住 timbre/transient/節奏穩定，single-step streaming 達低 real-time factor。",
+      "tags": [
+        "audio_music_ai",
+        "real-time",
+        "music_generation"
+      ],
+      "url": "https://arxiv.org/abs/2606.24307",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.24307",
+      "price": null,
+      "vram": "real-time 設計，估計 local-ready",
+      "license": null
+    },
+    {
+      "id": "20260627-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MusicJudge: Music-Aware Automatic Singing Performance Evaluation",
+      "summary": "Interspeech 2026。block-aligned 多模態分析，歌詞正確性 + pitch-rhythm fidelity 結合；semantic/lexical/phonetic 三訊號對齊歌詞 block，再用 Modality-Guided LoRA 微調 ASR 解決 melisma/vibrato/tempo 下的轉錄難題。與人類評審高度一致。",
+      "tags": [
+        "music_understanding",
+        "singing_assessment",
+        "lora"
+      ],
+      "url": "https://arxiv.org/abs/2606.26451",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.26451",
+      "price": null,
+      "vram": "ASR+LoRA，估計 local-ready",
+      "license": null
+    },
+    {
+      "id": "20260627-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Audio Editing in the Era of Foundation Models: A Survey",
+      "summary": "浙大 Zhou Zhao 團隊的 audio editing 全面綜述，涵蓋 foundation model 時代下的音訊編輯方法與任務分類（含 music/singing 編輯）。",
+      "tags": [
+        "audio_music_ai",
+        "survey",
+        "audio_editing"
+      ],
+      "url": "https://arxiv.org/abs/2606.23139",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.23139",
+      "price": null,
+      "vram": "N/A (survey)",
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-26",
