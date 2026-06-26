@@ -54937,8 +54937,113 @@
       "price": null,
       "vram": "N/A (survey)",
       "license": null
+    },
+    {
+      "id": "20260627-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 開 GPT-5.6：Sol / Terra / Luna 三層模型 + ultra mode subagents",
+      "summary": "OpenAI 6/26 開 GPT-5.6 limited preview：旗艦 Sol、均衡 Terra、便宜快的 Luna（$5/$30、$2.5/$15、$1/$6 per M）。新增 max reasoning effort + ultra mode（靠 subagents 突破單一 agent 上限平行加速，對標 Anthropic Dynamic Workflows）。prompt caching 改可控（explicit breakpoints + 30 分最短快取）。因美國政府 export-control 僅開放 trust partners，OpenAI 稱限制不該變常態。",
+      "tags": [
+        "ai_models",
+        "paradigm-shift",
+        "ultra-mode-subagents",
+        "prompt-caching"
+      ],
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "source": "OpenAI (via TechCrunch)",
+      "sourceUrl": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260627-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Ornith-1.0：自己長出 RL scaffold 的 open-weight coding 模型",
+      "summary": "DeepReinforce 6/25 開源 Ornith-1.0（MIT，9B/31B Dense + 35B/397B MoE，底座 Gemma 4 + Qwen 3.5）。self-scaffolding：模型在 RL 階段同時學解題 rollout 與 task-specific scaffold，先提精煉 scaffold 再生成解，harness 從外掛變成模型學進去。397B Terminal-Bench 2.1 77.5 / SWE-Bench Verified 82.4；9B 邊緣版 43.1/69.4。",
+      "tags": [
+        "ai_agent",
+        "paradigm-shift",
+        "open-weights",
+        "self-scaffolding-rl"
+      ],
+      "url": "https://deep-reinforce.com/ornith_1_0.html",
+      "source": "DeepReinforce Blog",
+      "sourceUrl": "https://deep-reinforce.com/ornith_1_0.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260627-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 拆開 Agents SDK 成 primitive 層 + 首個外部框架 Flue",
+      "summary": "Cloudflare 把 Agents SDK 降成純 primitive 層，開放原鎖在 Project Think 的能力：durable execution（Fibers）、Dynamic Workers sandbox、SQLite 撐的 durable 虛擬 FS、dynamic workflows。把 agent 開發拆成 framework/harness/primitives 三層，首發外部框架 Flue（TS、宣告式 agent 定義）。agent infra 開始像 OS 分層。",
+      "tags": [
+        "ai_agent",
+        "architecture",
+        "paradigm-shift",
+        "agent-harness"
+      ],
+      "url": "https://blog.cloudflare.com/agents-platform-flue-sdk/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/agents-platform-flue-sdk/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260627-sw-004",
+      "radar": "software-dev",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：2,000 人來 hack 我的 AI 助理之後",
+      "summary": "Fernando Irarrázaval 挑戰：~6,000 次嘗試全部沒能偷出 secret。Simon 重點：近期 model training 已讓 prompt injection 明顯變難，但不代表安全——deployment 層 lethal trifecta（私密資料+不可信內容+對外通訊）風險仍在，訓練只是拉高門檻非解法。",
+      "tags": [
+        "ai_agent",
+        "prompt-injection",
+        "security",
+        "lethal-trifecta"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260627-sw-005",
+      "radar": "software-dev",
+      "date": "2026-06-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "CVE-2026-LGTM：兩個 AI review agent 互不服燒爆 API 帳單（諷刺）",
+      "summary": "Andrew Nesbitt 諷刺 incident report（Simon 轉）：兩個競爭的 AI code review agent 對同一 package 陷入無限 disagreement loop 互相反駁，燒出天價 API 費用。玩笑點到真問題：多 agent 缺終止條件 + usage-based 計價 = 成本失控。",
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "cost",
+        "quotable"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/26/incident-report/",
+      "source": "Andrew Nesbitt (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/26/incident-report/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-06-26",
-  "updatedAt": "2026-06-26T05:10:00+08:00"
+  "lastUpdated": "2026-06-27",
+  "updatedAt": "2026-06-27T05:20:00+08:00"
 }
