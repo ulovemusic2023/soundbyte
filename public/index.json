@@ -55042,8 +55042,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260627-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-27",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Aggregators and AI — 個體化規模是 AI 時代的結構性護城河",
+      "summary": "Ben Thompson：每個用戶體驗到的都是專屬版本的 monolithic network-effect 公司（Spotify、社群平台）。對這類聚合者，AI 是 sustaining technology 而非 disruptive，放大他們既有的個人化能力。心法：擁有大規模用戶網路＋個人化能力的公司是 AI 時代贏家，不是被顛覆者。",
+      "tags": [
+        "aggregation-theory",
+        "ai-strategy",
+        "network-effects"
+      ],
+      "url": "https://stratechery.com/2026/aggregators-and-ai/",
+      "source": "Stratechery (Ben Thompson)",
+      "sourceUrl": "https://stratechery.com/2026/aggregators-and-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260627-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-27",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Jensen Huang：AI 讓工程師更高效，所以該招更多人，不是裁員",
+      "summary": "Jevons paradox 用在工程團隊。GitHub commits 從 2023 到 2026 初幾乎三倍，但開發者人數持平，單兵產出暴增。黃仁勳：如果一個工程師能產出更多價值，理性反應是招更多人。'People talk about AI reducing jobs — complete nonsense.'",
+      "tags": [
+        "jevons-paradox",
+        "ai-labor",
+        "hiring"
+      ],
+      "url": "https://siliconangle.com/2026/06/01/five-thoughts-nvidia-ceo-jensen-huangs-gtc-taipei-2026-keynote/",
+      "source": "NVIDIA GTC Taipei 2026 (via SiliconANGLE)",
+      "sourceUrl": "https://siliconangle.com/2026/06/01/five-thoughts-nvidia-ceo-jensen-huangs-gtc-taipei-2026-keynote/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260627-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-27",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Altman & Amodei 收回「AI 工作末日論」",
+      "summary": "自動化不是縮小工作，是放大。Amodei：把 90% 自動化後，每個人去做剩下那 10%，再擴張回 100%，生產力 10 倍。Altman 認錯：'我很高興我錯了 — 我以為入門級白領工作會被消滅得比現在多。' 兩家都在 IPO 前重新定調。",
+      "tags": [
+        "ai-jobs",
+        "automation",
+        "productivity"
+      ],
+      "url": "https://the-decoder.com/sam-altman-and-dario-amodei-walk-back-their-ai-job-apocalypse-predictions/",
+      "source": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/sam-altman-and-dario-amodei-walk-back-their-ai-job-apocalypse-predictions/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-27",
-  "updatedAt": "2026-06-27T05:20:00+08:00"
+  "updatedAt": "2026-06-27T05:30:00+08:00"
 }
