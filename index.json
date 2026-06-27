@@ -55363,8 +55363,71 @@
       "stars": 24,
       "createdDate": "2026-06-18",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20260628-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "alibaba/unified-audio (QuarkAudio)",
+      "summary": "阿里開源的統一音訊框架：單一 decoder-only AR-LM backbone 一次處理 speech restoration、voice conversion、speaker extraction、audio editing、speech separation。架構是 WavLM/Hubert 特徵 + H-Codec 離散 tokenization，主打 prompt-free，不用指令就能切換任務。對我們做人聲處理/去背是直接相關。",
+      "tags": [
+        "voice-conversion",
+        "stem-separation",
+        "audio-music-ai",
+        "audio-editing"
+      ],
+      "url": "https://github.com/alibaba/unified-audio",
+      "source": "GitHub Topics (voice-conversion)",
+      "sourceUrl": "https://github.com/topics/voice-conversion",
+      "price": null,
+      "vram": "未標明模型大小；AR-LM + WavLM 推估需量化才穩進 16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260628-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "vLLM v0.23.0",
+      "summary": "vLLM 6/13 釋出 0.23.0，預設改出 CUDA 13.0 binaries。靠 PagedAttention + continuous batching，多併發吞吐約是 Ollama 的 16–20x，適合本地多用戶 serving。RTX 5070 Ti（CUDA 12.x）要注意 CUDA 13 binary 相容性，可能得自編或鎖舊版。",
+      "tags": [
+        "llm-inference",
+        "vllm",
+        "cuda",
+        "serving"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.23.0",
+      "source": "web_search (github-releases-llm)",
+      "sourceUrl": "https://developers.redhat.com/articles/2026/06/15/llamacpp-vs-vllm-choosing-right-local-llm-inference-engine",
+      "price": null,
+      "vram": "runtime，依載入模型而定（7B Q4 約 4–6GB）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260628-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "wildminder/awesome-ai-voice",
+      "summary": "開源語音/音樂 AI 的 curated list：TTS、voice cloning、music generation 模型一次收齊，含近期 MoE omnimodal（同時做 voice clone + TTS + 音樂生成）的整理。當作追蹤新模型的索引很省事。",
+      "tags": [
+        "resource-list",
+        "tts",
+        "voice-cloning",
+        "music-generation"
+      ],
+      "url": "https://github.com/wildminder/awesome-ai-voice",
+      "source": "web_search (github-trending-audio)",
+      "sourceUrl": "https://github.com/wildminder/awesome-ai-voice",
+      "price": null,
+      "vram": "N/A（資源清單）",
+      "license": "未標明"
     }
   ],
-  "lastUpdated": "2026-06-27",
-  "updatedAt": "2026-06-27T05:30:00+08:00"
+  "lastUpdated": "2026-06-28",
+  "updatedAt": "2026-06-28T05:10:00+08:00"
 }
