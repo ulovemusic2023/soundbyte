@@ -55473,6 +55473,206 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260628-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "deepseek-ai/DeepSpec",
+      "summary": "DeepSeek 官方釋出的 speculative decoding 全棧 codebase，涵蓋訓練與評測各種推測解碼演算法。想壓低 LLM 推理延遲/成本的硬核參考。",
+      "tags": [
+        "local-ai",
+        "llm-inference",
+        "speculative-decoding"
+      ],
+      "url": "https://github.com/deepseek-ai/DeepSpec",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1208,
+      "createdDate": "2026-06-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260628-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "ksimback/looper",
+      "summary": "在跑之前先「畫」出 Claude Code 的 agent loop——視覺化、有 review gate 的流程設計工具。Loop engineering 熱潮下避免 agent doom-loop。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "agent-loop"
+      ],
+      "url": "https://github.com/ksimback/looper",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 488,
+      "createdDate": "2026-06-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260628-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "HKUDS/AgentSpace",
+      "summary": "「人 + 多 agent 同一個 workspace」的協作框架，把 agent 當團隊成員一起做事。HKU Data Lab 出品。",
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "workspace"
+      ],
+      "url": "https://github.com/HKUDS/AgentSpace",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 476,
+      "createdDate": "2026-06-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260628-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "m1ckc3s/claude-status-bar",
+      "summary": "macOS menu bar 小工具：顯示 Claude Code 的執行狀態、animated icon、計時器與 session 生命週期。重度 CC 使用者的桌面點綴。",
+      "tags": [
+        "claude-code",
+        "macos",
+        "developer-tool"
+      ],
+      "url": "https://github.com/m1ckc3s/claude-status-bar",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 369,
+      "createdDate": "2026-06-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260628-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "eli-labz/Godcoder",
+      "summary": "local-first 的桌面 coding agent，BYO LLM key，code 留在本機只送給 model provider。隱私導向的本地 coding agent。",
+      "tags": [
+        "coding-agent",
+        "local-first",
+        "mcp"
+      ],
+      "url": "https://github.com/eli-labz/Godcoder",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 221,
+      "createdDate": "2026-06-27",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260628-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "benchflow-ai/awesome-evals",
+      "summary": "專做 AI agent evaluation 的精選資源庫——論文、blog、talk、工具、benchmark 一站收齊。要建 eval pipeline 可先翻這份。",
+      "tags": [
+        "ai-agent",
+        "evals",
+        "benchmark"
+      ],
+      "url": "https://github.com/benchflow-ai/awesome-evals",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 529,
+      "createdDate": "2026-06-24",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260628-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "kevin333353/jobsmith",
+      "summary": "針對台灣求職市場的開源多 agent 求職 co-pilot：自動找職缺、履歷健檢、一鍵產客製投遞包＋模擬面試。可用本機 Claude Code / Codex CLI 免 API key。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "taiwan"
+      ],
+      "url": "https://github.com/kevin333353/jobsmith",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 84,
+      "createdDate": "2026-06-24",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260628-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "Yuuhann1999/codex-storyboard",
+      "summary": "本地多專案的 Codex 影片分鏡工作台，支援圖片/影片生成任務、HyperFrames 與 Remotion 自動回填。創作者 + AI coding 交集。",
+      "tags": [
+        "coding-agent",
+        "video",
+        "creator-tool"
+      ],
+      "url": "https://github.com/Yuuhann1999/codex-storyboard",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 68,
+      "createdDate": "2026-06-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260628-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "JetXu-LLM/codex-deepseek-bridge",
+      "summary": "輕量本地 bridge，讓 DeepSeek 模型直接塞進 OpenAI Codex 用。想用便宜 model 跑 Codex 的人可試。",
+      "tags": [
+        "coding-agent",
+        "codex",
+        "deepseek"
+      ],
+      "url": "https://github.com/JetXu-LLM/codex-deepseek-bridge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 29,
+      "createdDate": "2026-06-20",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260628-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-06-28",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "KathanModh259/latent-gate",
+      "summary": "VL-JEPA 啟發的 pipeline：本機用 Ollama 壓縮 image/text，再把精簡 payload 丟給任何 LLM API，宣稱省 ~80% token。",
+      "tags": [
+        "local-ai",
+        "ollama",
+        "token-cost"
+      ],
+      "url": "https://github.com/KathanModh259/latent-gate",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 21,
+      "createdDate": "2026-06-15",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-06-28",
