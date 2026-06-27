@@ -55426,8 +55426,55 @@
       "price": null,
       "vram": "N/A（資源清單）",
       "license": "未標明"
+    },
+    {
+      "id": "20260628-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "美國政府放行 GPT-5.6 與 Claude Mythos 5——只給「受信任夥伴」",
+      "summary": "6/26 美國商務部（Lutnick）部分解除 6/12 對 frontier model 的出口管制：Anthropic 獲准把 Claude Mythos 5 釋出給 100+ 家美國機構（含政府單位），OpenAI 同日以相同限制開放 GPT-5.6 Sol/Terra/Luna，僅約 20 家政府核可公司可用，先走 API + Codex。Fable 5 尚未放行。最強 AI 模型首次以『政府核可白名單』形式分發，frontier model 的取得權正式被國安/出口管制框住。",
+      "tags": [
+        "export-control",
+        "frontier-model",
+        "trusted-partner-gating",
+        "paradigm-shift",
+        "Mythos-5",
+        "GPT-5.6"
+      ],
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "source": "9to5Mac / Semafor",
+      "sourceUrl": "https://9to5mac.com/2026/06/26/anthropic-cleared-to-release-claude-mythos-5-to-over-100-us-institutions/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260628-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Leo Platform npm 遭「Phantom Gyp」自我繁殖蠕蟲攻陷",
+      "summary": "6/24 攻擊者 <3 秒連發 20 個惡意 Leo Platform npm 套件（週下載 ~13,600）。不用 pre/postinstall，改靠 157-byte binding.gyp 在 npm install 的 native build 階段觸發 payload，繞過只掃 lifecycle script 的工具；payload 用 Bun runtime 在 Node 外執行避開行程監控，套四層混淆（ROT-N／AES-128-GCM／Bun loader／obfuscator.io）。偷 CI/CD secret、雲憑證、registry token、密碼庫，還從 GitHub Actions runner 記憶體挖明文 masked secret。內建全自動 worm engine 跨 npm/RubyGems/GitHub 擴散並偽造 Sigstore provenance attestation。",
+      "tags": [
+        "supply-chain",
+        "npm",
+        "Phantom-Gyp",
+        "binding.gyp",
+        "worm",
+        "sigstore-provenance-forgery",
+        "bun-loader"
+      ],
+      "url": null,
+      "source": "StepSecurity",
+      "sourceUrl": "https://www.stepsecurity.io/blog/binding-gyp-npm-supply-chain-attack-spreads-like-worm",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-28",
-  "updatedAt": "2026-06-28T05:10:00+08:00"
+  "updatedAt": "2026-06-28T05:20:00+08:00"
 }
