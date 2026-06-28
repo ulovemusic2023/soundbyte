@@ -55795,8 +55795,87 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260629-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-29",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Dylan Field：工程師不會消失，但設計品味才是槓桿",
+      "summary": "Stratechery 訪談 Figma CEO Dylan Field。vibe coding 工具很會搭骨架接功能，但自動生出來的 UX 醜得好笑——AI 把實作商品化後，真正稀缺的是設計判斷與品味。他說 designers will rule the world，design/創意/媒體/廣告正被 AI 融成同一條光譜。別把會寫當護城河，把知道什麼是對的當護城河。",
+      "tags": [
+        "taste-as-moat",
+        "design",
+        "ai-native"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-figma-ceo-dylan-field-about-design-and-ai/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-figma-ceo-dylan-field-about-design-and-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260629-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-29",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Ben Thompson 親自 vibe coding：十個第一手心得",
+      "summary": "Ben 自己用 AI 從頭做了一個他真的會天天用的 app。AI 接管 scaffolding 和大部分接線工作，但 UX、打磨、taste 還是得人來；軟體創造的重心從 raw implementation 往高層思考、設限、審美判斷位移。對 indie/一人公司：原型速度已不是瓶頸，判斷力才是。",
+      "tags": [
+        "vibe-coding",
+        "solo-builder",
+        "ai-leverage"
+      ],
+      "url": "https://stratechery.com/2026/my-vibe-coding-adventure-the-app-and-the-experience-ten-takeaways/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/my-vibe-coding-adventure-the-app-and-the-experience-ten-takeaways/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260629-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-29",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "OpenAI 內部：product work 的形狀正在重寫",
+      "summary": "Lenny 訪談 OpenAI Codex 負責人 Andrew Ambrosino。OpenAI 內部幾乎每個人都在用 Codex，不只工程師。當建構成本趨近於零，產品工作的瓶頸從能不能做出來變成要做什麼、誰來定義。PM 與創辦人的價值在規格與判斷，不在執行。",
+      "tags": [
+        "product-work",
+        "codex",
+        "org-design"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/openai-codex-lead-on-the-new-shape",
+      "source": "Lenny Rachitsky",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/openai-codex-lead-on-the-new-shape",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260629-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-06-29",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Jensen Huang：每個人都該用 AI，去碰它就對了",
+      "summary": "黃仁勳 AP 專訪用汽車比喻：早期汽車被罵會撞死小孩，社會的解法不是禁車，而是蓋人行道、斑馬線、訂新規則。AI 一樣——不是恐懼，是建立新的社會規範然後去用它。",
+      "tags": [
+        "ai-adoption",
+        "social-norms"
+      ],
+      "url": "https://broadbandbreakfast.com/in-interview-with-ap-nvidias-jensen-huang-urges-americans-to-use-ai-more/",
+      "source": "Jensen Huang (AP via Broadband Breakfast)",
+      "sourceUrl": "https://broadbandbreakfast.com/in-interview-with-ap-nvidias-jensen-huang-urges-americans-to-use-ai-more/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-29",
-  "updatedAt": "2026-06-29T05:10:00+08:00"
+  "updatedAt": "2026-06-29T05:30:00+08:00"
 }
