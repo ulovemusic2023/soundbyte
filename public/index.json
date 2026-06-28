@@ -55731,6 +55731,70 @@
       "price": null,
       "vram": "100B MoE Q4≈55GB，需 24GB+",
       "license": "見 repo"
+    },
+    {
+      "id": "20260629-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Workflows 加入 saga rollbacks",
+      "summary": "Cloudflare Workflows 現可在每個 step.do() 直接宣告補償邏輯（compensating action），step 失敗時自動逆向回滾——銀行轉帳 debit 成功但 credit 失敗即自動退款。rollback handler 跑在 Workflows 既有 step 機制上，享同樣 retry/timeout/lifecycle/log，靠 persisted step history 判斷已發生什麼。把分散式交易 saga pattern 變成 durable execution 內建原語，主打 agent-driven workloads。",
+      "tags": [
+        "saga pattern",
+        "distributed transaction",
+        "durable execution",
+        "compensating-action",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.cloudflare.com/rollbacks-for-workflows/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/rollbacks-for-workflows/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260629-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain Deep Agents 推 Rubrics + programmatic subagents",
+      "summary": "Deep Agents 新增 RubricMiddleware：agent 依預設 rubric 自評產出、反覆迭代到達標才收工，把 self-evaluation loop 做成 middleware 原語。另開 programmatic subagents：可從 interpreter code 直接派發 subagent 平行跑任務再合併結果，subagent 編排從設定檔走向程式化動態分派。同梯還有 Fleet on-call copilot（alert triage agent 模板）。",
+      "tags": [
+        "ai agent",
+        "multi-agent",
+        "self-evaluation",
+        "agent-harness"
+      ],
+      "url": "https://www.langchain.com/blog/june-2026-langchain-newsletter",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/june-2026-langchain-newsletter",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260629-sw-003",
+      "radar": "software-dev",
+      "date": "2026-06-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Lucide 1.0：移除 brand icons、bundle 砍 32%",
+      "summary": "開源 icon 套件 Lucide 首個穩定大版號：因法務/商標/維護壓力全數移除 GitHub/Figma/Slack 等 brand logo（改推 Simple Icons），並砍掉 legacy UMD build 只出 ESM+CJS，lucide-react 從 11.4MB 降到 ~1MB gzipped（-32.3%）。新增 React/Vue/Svelte/Solid context provider 設共用預設值，icon 預設 aria-hidden。1,600+ icons。",
+      "tags": [
+        "component library",
+        "frontend",
+        "bundle-size",
+        "a11y"
+      ],
+      "url": "https://www.infoq.com/news/2026/06/lucide-v1-icons/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/06/lucide-v1-icons/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-29",
