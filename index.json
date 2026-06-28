@@ -55673,8 +55673,66 @@
       "stars": 21,
       "createdDate": "2026-06-15",
       "license": "MIT"
+    },
+    {
+      "id": "20260629-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "0xShug0/audio.cpp",
+      "summary": "ggml 打造的純 C++ 音訊推理引擎，把 TTS / ASR / VAD / voice conversion / 唱歌生成 塞進單一 runtime，零 Python 依賴。整合 25 個模型家族（12 個正式釋出），支援 Qwen3-TTS、PocketTTS、VeVo2（含 singing conversion）。CUDA 上比 Python pipeline 快 1.8–5×。等於 audio 界的 llama.cpp。",
+      "tags": [
+        "audio_music_ai",
+        "svc_voice",
+        "tts_speech"
+      ],
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1ufpnm6/audiocpp_12_audio_models_qwen3tts_pockettts_vevo2/",
+      "price": null,
+      "vram": "輕量，本地可跑",
+      "license": "open-source (ggml-based)"
+    },
+    {
+      "id": "20260629-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-06-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "deepreinforce-ai/Ornith-1.0-35B",
+      "summary": "DeepReinforce 開源的 agentic coding 模型家族（9B/31B dense + 35B/397B MoE），post-train 自 Gemma 4 與 Qwen 3.5。35B MoE 每 token 只激活 ~3B，主打自學 RL scaffold 的 self-improving 框架，Terminal-Bench / SWE-Bench 在同級開源模型 SOTA。MIT、262k context、GGUF/Ollama 皆有。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B",
+      "source": "MarkTechPost",
+      "sourceUrl": "https://www.marktechpost.com/2026/06/25/deepreinforce-releases-ornith-1-0-an-open-source-coding-model-family-that-learns-its-own-rl-scaffolds/",
+      "price": null,
+      "vram": "9B dense 本地可跑；35B MoE Q4≈20GB，16GB 需 Q3",
+      "license": "MIT"
+    },
+    {
+      "id": "20260629-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-06-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "inclusionAI/Ling-2.6-flash",
+      "summary": "inclusionAI Ling 2.6 系列效率版，100B 總參數 MoE，主打 agent 場景即時高 token 效率。24/32GB 顯卡可 Q4 本地跑，16GB 吃不下（Q4≈55GB）。官方提醒偏 base、需再對齊才適合 end-user chat，當研究/微調起點較合適。",
+      "tags": [
+        "llm_inference",
+        "llm_training"
+      ],
+      "url": "https://huggingface.co/inclusionAI/Ling-2.6-flash",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1ucih9e/ling_and_ring_26_technical_report_efficient_and/",
+      "price": null,
+      "vram": "100B MoE Q4≈55GB，需 24GB+",
+      "license": "見 repo"
     }
   ],
-  "lastUpdated": "2026-06-28",
-  "updatedAt": "2026-06-28T05:20:00+08:00"
+  "lastUpdated": "2026-06-29",
+  "updatedAt": "2026-06-29T05:10:00+08:00"
 }
