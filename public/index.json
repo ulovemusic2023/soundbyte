@@ -55874,6 +55874,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260629-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-06-29",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "Huxiaoyou97/ManvoTV",
+      "summary": "AI 原生創作平台：無限畫布 + 漫劇劇本工廠，想到什麼就生成什麼。",
+      "tags": [
+        "creator-tool",
+        "infinite-canvas",
+        "video-gen"
+      ],
+      "url": "https://github.com/Huxiaoyou97/ManvoTV",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 108,
+      "createdDate": "2026-06-21",
+      "license": "?"
+    },
+    {
+      "id": "20260629-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-06-29",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "gamedev-skills/awesome-gamedev-agent-skills",
+      "summary": "66 個 game-dev Agent Skills + master router 自動依引擎/任務載入，跨 Claude Code/Cursor/Codex/Copilot。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "gamedev"
+      ],
+      "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 158,
+      "createdDate": "2026-06-24",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260629-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-06-29",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "fishonbike/vault-engine",
+      "summary": "本地 LLM 隱私層：丟進雲端模型前 detect→tokenize→restore 敏感資訊，可逆、零依賴、中文強。",
+      "tags": [
+        "local-llm",
+        "privacy",
+        "pii"
+      ],
+      "url": "https://github.com/fishonbike/vault-engine",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 21,
+      "createdDate": "2026-06-26",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-06-29",
