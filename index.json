@@ -55934,8 +55934,29 @@
       "stars": 21,
       "createdDate": "2026-06-26",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260630-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-06-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "samuel-vitorino/sopro",
+      "summary": "135M-param 英文 TTS，用 dilated convolutions + cross-attention（不是 transformer）做的，支援 streaming 合成（250ms TTFB）與 zero-shot voice cloning（3-12 秒參考音檔即可）。CPU 上 0.05 RTF，Apache-2.0，據稱單張 L40S 約 $100 就訓練完成。單次生成上限約 32 秒。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "streaming",
+        "cpu-inference"
+      ],
+      "url": "https://github.com/samuel-vitorino/sopro",
+      "source": "MAGI//ARCHIVE (tom-doerr)",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/06/29/samuel-vitorino-sopro.html",
+      "price": null,
+      "vram": "CPU-ready / <2GB VRAM",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-06-29",
-  "updatedAt": "2026-06-29T05:30:00+08:00"
+  "lastUpdated": "2026-06-30",
+  "updatedAt": "2026-06-30T05:10:00+08:00"
 }
