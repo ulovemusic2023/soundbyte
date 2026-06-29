@@ -55999,8 +55999,72 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260630-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-06-30",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "a16z：New Media 是「包裝」不是「內容」",
+      "summary": "Erik Torenberg 拆解 a16z 的 go-direct 模式：新媒體不是某種內容格式，而是一種包裝——把創辦人與產品身上本來就有趣的東西系統性、可重複地放大。要贏就得 go direct，要 go direct 就得夠有趣；signal 來自人，不是品牌。重點不是做一次爆款，而是做一百萬次。",
+      "tags": [
+        "distribution",
+        "personal-brand",
+        "go-direct",
+        "attention"
+      ],
+      "url": "https://a16z.com/what-is-new-media-in-2026/",
+      "source": "Erik Torenberg • a16z",
+      "sourceUrl": "https://a16z.com/what-is-new-media-in-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260630-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-06-30",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Elena Verna：AI 時代的成長 Playbook 被重寫",
+      "summary": "Lovable 成長負責人指出傳統成長戰術有 6–70% 在 AI 產品上失效。三個反直覺框架：每 3 個月重新找一次 PMF；成長團隊放棄 activation funnel 改為比對手更快出新功能；免費送產品本身就是打贏付費廣告的成長引擎。MVP 換成 MLP（Minimum Lovable Product）。",
+      "tags": [
+        "growth",
+        "pmf",
+        "ai-native",
+        "free-as-growth",
+        "mlp"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/the-new-ai-growth-playbook-for-2026-elena-verna",
+      "source": "Elena Verna • Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/the-new-ai-growth-playbook-for-2026-elena-verna",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260630-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-06-30",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Dario Amodei：離開 OpenAI 是因為信任，不是分歧",
+      "summary": "Amodei 釐清：在 safety 上有分歧很正常，光靠分歧不足以讓他離開。真正壓垮合作的是信任崩潰——當你覺得對方的價值觀和他說的不一樣、不誠實，就無法繼續共事。對共同創辦人的啟示：理念分歧可以管理，信任一旦失去就無解。",
+      "tags": [
+        "trust",
+        "co-founder",
+        "leadership",
+        "partnership"
+      ],
+      "url": "https://www.businesstoday.in/technology/story/india-ai-summit-was-extremely-disorganised-dario-amodei-on-viral-stage-moment-with-sam-altman-537834-2026-06-18",
+      "source": "Dario Amodei • Business Today",
+      "sourceUrl": "https://www.businesstoday.in/technology/story/india-ai-summit-was-extremely-disorganised-dario-amodei-on-viral-stage-moment-with-sam-altman-537834-2026-06-18",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-30",
-  "updatedAt": "2026-06-30T05:10:00+08:00"
+  "updatedAt": "2026-06-30T05:30:00+08:00"
 }
