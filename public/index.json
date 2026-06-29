@@ -55955,6 +55955,50 @@
       "price": null,
       "vram": "CPU-ready / <2GB VRAM",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260630-sw-001",
+      "radar": "software-dev",
+      "date": "2026-06-30",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Git 2.55 released — `git history fixup`、Linux fsmonitor、Rust 進入預設建置",
+      "summary": "6/29 釋出。新指令 `git history fixup <commit>` 把 staged 修改套到較早 commit 並自動 replay 後續 commit，免去手動 interactive rebase；core.fsmonitor 加入 Linux（inotify）背景守護程式加速 git status；incremental multi-pack index repack 與 `--graph-lane-limit` 收斂 log 視覺化。建置面首度預設啟用 Rust——從原始碼編譯的 CI 若未裝 Rust toolchain 會失敗，除非設 NO_RUST。",
+      "tags": [
+        "git",
+        "developer-tooling",
+        "rust",
+        "new-languages",
+        "paradigm-shift"
+      ],
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+      "source": "The GitHub Blog",
+      "sourceUrl": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260630-sw-002",
+      "radar": "software-dev",
+      "date": "2026-06-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor for iOS 公測 — 從手機啟動／管理 always-on coding agents",
+      "summary": "6/29 在所有付費方案開放公測。手機 App 可選 repo、用語音描述需求、跑 slash command 啟動 agent；cloud agent 在隔離 VM 跑完整環境，可把 local session 移到雲端讓筆電闔上續跑；Remote Control 接手電腦上正在跑的 agent 繼續指揮；Live Activities 在鎖屏看狀態、完成或需輸入時推播，並可直接從 App review diff／merge PR。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "mobile",
+        "cursor",
+        "ai-tool"
+      ],
+      "url": "https://cursor.com/blog/ios-mobile-app",
+      "source": "Cursor",
+      "sourceUrl": "https://cursor.com/blog/ios-mobile-app",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-06-30",
