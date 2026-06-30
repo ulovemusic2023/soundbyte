@@ -56255,8 +56255,26 @@
       "stars": 81,
       "createdDate": "2026-06-25",
       "license": "MIT"
+    },
+    {
+      "id": "20260701-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "WeiboAI/VibeThinker-3B",
+      "summary": "新浪微博團隊放出的 3B 密集推理模型，base 是 Qwen2.5-Coder-3B，MIT 授權。只有 3B 卻在 AIME26 拿 94.3、LiveCodeBench v6 Pass@1 80.2，逼近 flagship 等級；新提出 Claim-Level Reliability (CLR) test-time scaling 還能把 AIME26 推到 97.1。已有官方+社群 GGUF，3B 在 16GB VRAM 上輕鬆跑，是「小模型大邏輯」路線的最新代表。",
+      "tags": ["llm_inference", "llm_training"],
+      "url": "https://github.com/WeiboAI/VibeThinker",
+      "source": "HuggingFace / arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.16140",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT",
+      "stars": 1400,
+      "createdDate": "2026-06-17"
     }
   ],
-  "lastUpdated": "2026-06-30",
-  "updatedAt": "2026-06-30T05:30:00+08:00"
+  "lastUpdated": "2026-07-01",
+  "updatedAt": "2026-07-01T05:10:00+08:00"
 }
