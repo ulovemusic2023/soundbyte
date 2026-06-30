@@ -56296,6 +56296,85 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260701-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-01",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "deepreinforce-ai/Ornith-1",
+      "summary": "DeepReinforce 開源的 agentic coding 模型家族（9B-Dense 到 397B-MoE），用 RL 同時優化解法生成與搜尋 scaffold，提供 bf16/FP8/GGUF 與 OpenAI-compatible API，可接 vLLM/SGLang/OpenHands。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "local-llm"
+      ],
+      "url": "https://github.com/deepreinforce-ai/Ornith-1",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-17+stars%3A%3E50&type=repositories",
+      "stars": 787,
+      "createdDate": "2026-06-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260701-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-01",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "CopilotKit/OpenTag",
+      "summary": "CopilotKit 官方自架 AI bot，掛在 Slack/Discord/Telegram/WhatsApp 讀 thread、回答、跑工具，支援 generative UI（inline 圖表/表格）與 human-in-the-loop 審批，MIT、無 per-seat 收費。",
+      "tags": [
+        "ai-agent",
+        "mcp",
+        "self-hosted"
+      ],
+      "url": "https://github.com/CopilotKit/OpenTag",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 461,
+      "createdDate": "2026-06-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260701-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-01",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "0xMassi/pocketdev",
+      "summary": "一行指令在 Hetzner 開一台只走 Tailscale 私網的機器，跑你已付費的 AI coding CLI（Claude Code/Codex/Cursor/Gemini/aider），用手機 SSH/Mosh 就能 coding；自動 firewall + key-only SSH 硬化。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "self-hosted"
+      ],
+      "url": "https://github.com/0xMassi/pocketdev",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Acoding-agent+created%3A%3E2026-06-17&type=repositories",
+      "stars": 79,
+      "createdDate": "2026-06-29",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260701-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-01",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "Karovia/fullstack-ai-agent-roadmap",
+      "summary": "從零到 AI Agent 全棧工程師的中文學習地圖：110 個教程、58 萬字、400+ GitHub 精選專案，Obsidian 友善。學習資源而非工具。",
+      "tags": [
+        "ai-agent",
+        "learning"
+      ],
+      "url": "https://github.com/Karovia/fullstack-ai-agent-roadmap",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-06-17&type=repositories",
+      "stars": 239,
+      "createdDate": "2026-06-19",
+      "license": "?"
     }
   ],
   "lastUpdated": "2026-07-01",
