@@ -56264,7 +56264,10 @@
       "priority": "high",
       "title": "WeiboAI/VibeThinker-3B",
       "summary": "新浪微博團隊放出的 3B 密集推理模型，base 是 Qwen2.5-Coder-3B，MIT 授權。只有 3B 卻在 AIME26 拿 94.3、LiveCodeBench v6 Pass@1 80.2，逼近 flagship 等級；新提出 Claim-Level Reliability (CLR) test-time scaling 還能把 AIME26 推到 97.1。已有官方+社群 GGUF，3B 在 16GB VRAM 上輕鬆跑，是「小模型大邏輯」路線的最新代表。",
-      "tags": ["llm_inference", "llm_training"],
+      "tags": [
+        "llm_inference",
+        "llm_training"
+      ],
       "url": "https://github.com/WeiboAI/VibeThinker",
       "source": "HuggingFace / arXiv",
       "sourceUrl": "https://arxiv.org/abs/2606.16140",
@@ -56273,6 +56276,26 @@
       "license": "MIT",
       "stars": 1400,
       "createdDate": "2026-06-17"
+    },
+    {
+      "id": "20260701-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-01",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Loop Engineering：別再 prompt agent，去設計那個會自己 prompt 的迴圈",
+      "summary": "Addy Osmani 為過去一個月的 AI 工作法正式命名。當 coding agent 已能自主跑數小時、還能從自己的錯誤中恢復，瓶頸就從『模型能力』轉移到『迴圈設計』；你的角色從按下執行的人，升級成設計系統的工程師，而真正的新瓶頸是你的 review 頻寬與理解力，不是工具。框架五件套：Automations（排程找工作）、Worktrees（防止平行 agent 撞車）、Skills（封裝專案知識）、Sub-agents（把 maker 跟 verifier 分開）、External state（用 markdown / Linear 跨回合保留記憶）。金句：Build the loop. But build it like someone who intends to stay the engineer, not just the person who presses go.",
+      "tags": [
+        "ai-native",
+        "agentic-engineering",
+        "orchestration"
+      ],
+      "url": "https://addyo.substack.com/p/loop-engineering",
+      "source": "Addy Osmani",
+      "sourceUrl": "https://addyo.substack.com/p/loop-engineering",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-01",
