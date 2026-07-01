@@ -56435,6 +56435,89 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260702-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-02",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "Kulaxyz/self-learning-skills",
+      "summary": "教 AI coding agent 自我進化的 meta-skill。每次 session 辛苦 debug 出來的「黃金路徑」(prod DB 怎麼連、部署指令、驗證方式) session 一結束就蒸發，下次從零學起。它讓 agent 認出「剛賺到一條可複用路徑」的時刻，自動寫進 SKILL.md / Cursor rules / AGENTS.md，下次自動載入；連失敗死路也記下避免重踩。支援 Claude Code / Cursor / Codex。",
+      "tags": [
+        "agent-skill",
+        "ai-coding",
+        "claude-code",
+        "meta-skill"
+      ],
+      "url": "https://github.com/Kulaxyz/self-learning-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-18+topic%3Aclaude-code",
+      "stars": 731,
+      "createdDate": "2026-06-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260702-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-02",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "realchendahuang/FlareMo",
+      "summary": "一個免費 Cloudflare 帳號就能跑的 24 小時雲端筆記系統。原生用 Workers + D1 + R2，不用 VPS、不裝 DB、不寫備份腳本，資料不會丟、可自訂網域，還保留 Memos 相容 API 給各種工具調用。Flomo 的自部署零成本替代方案。",
+      "tags": [
+        "cloudflare",
+        "note-taking",
+        "self-hosted",
+        "memos-api"
+      ],
+      "url": "https://github.com/realchendahuang/FlareMo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-18+topic%3Amcp",
+      "stars": 133,
+      "createdDate": "2026-06-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260702-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-02",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "Harzva/chatgpt2localbridge",
+      "summary": "把 Codex / ChatGPT 透過 OAuth MCP connector 接到你本機已授權的 workspace，讓 ChatGPT plugin 能安全操作本地檔案。給想在 ChatGPT 端串本地 Codex 工作流的人。",
+      "tags": [
+        "mcp",
+        "codex",
+        "chatgpt",
+        "local-workspace"
+      ],
+      "url": "https://github.com/Harzva/chatgpt2localbridge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-18+topic%3Amcp",
+      "stars": 91,
+      "createdDate": "2026-06-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260702-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-02",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "ogulcancelik/herdr",
+      "summary": "活在 terminal 裡的 agent multiplexer — 同一畫面同時開多個 coding agent 分頁、統一管理。這週 GitHub trending 竄升。適合同時跑多個 Claude Code / Codex session 的人。",
+      "tags": [
+        "agent-multiplexer",
+        "terminal",
+        "ai-coding"
+      ],
+      "url": "https://github.com/ogulcancelik/herdr",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 9539,
+      "createdDate": "2026-03-27",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-07-02",
