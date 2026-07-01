@@ -56375,8 +56375,68 @@
       "stars": 239,
       "createdDate": "2026-06-19",
       "license": "?"
+    },
+    {
+      "id": "20260702-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-02",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Jon Udell — 「是我們的 loop，agent 只是被招募進團隊」",
+      "summary": "業界都在講 human in the loop（人在迴圈裡監督 AI），Jon Udell 反過來說：是 AI agent 加入『我們的』迴圈。主導權在人、流程照舊，只是多招募幾個 agent 當隊友——把『人淪為 AI 審核員』翻轉回『人是主導、agent 是被指揮的下屬』。",
+      "tags": [
+        "human-in-the-loop",
+        "agentic-workflow",
+        "ai-management"
+      ],
+      "url": "https://blog.jonudell.net/2026/06/28/doctor-it-hurts-when-agents-create-unreviewable-prs-dont-do-that/",
+      "source": "Jon Udell (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/28/jon-udell/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260702-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-02",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Timothy B. Lee — 「用 LLM 沒有學習曲線？那當主管也不用學了」",
+      "summary": "有人說用 LLM 不需要技能、沒有學習曲線。Lee 一句話戳破：這就像說當主管不用學習曲線，因為員工會照你說的做。指揮、交辦、驗收本身就是要練的功夫；用 AI 一樣，會不會下指令、會不會驗收，就是新的專業門檻。",
+      "tags": [
+        "ai-adoption",
+        "skill-curve",
+        "delegation"
+      ],
+      "url": "https://simonwillison.net/2026/Jun/26/timothy-b-lee/",
+      "source": "Timothy B. Lee (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jun/26/timothy-b-lee/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260702-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-02",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Tom MacWright — 「Accidental Anonymity」：AI 潤到完美，反而失去辨識度",
+      "summary": "求職者用 LLM 把履歷、作品集全部潤到完美，反而失去辨識度——MacWright 稱之為『意外的匿名』。AI 時代，通用的完美等於沒有聲音；真實、有觀點、敢暴露自己，才是差異化。金句：I don't know anything about these people. They haven't put themselves out there. They haven't said anything true.",
+      "tags": [
+        "personal-brand",
+        "authenticity",
+        "creator-leverage"
+      ],
+      "url": "https://macwright.com/2026/06/24/accidental-anonymity.html",
+      "source": "Tom MacWright",
+      "sourceUrl": "https://macwright.com/2026/06/24/accidental-anonymity.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-01",
-  "updatedAt": "2026-07-01T05:10:00+08:00"
+  "lastUpdated": "2026-07-02",
+  "updatedAt": "2026-07-02T05:30:00+08:00"
 }
