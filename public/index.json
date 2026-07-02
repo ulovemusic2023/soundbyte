@@ -56684,6 +56684,146 @@
       "url": "https://kk.org/thetechnium/quiet-my-exoself/",
       "source": "Kevin Kelly",
       "sourceUrl": "https://kk.org/thetechnium/quiet-my-exoself/"
+    },
+    {
+      "id": "20260703-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-03",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "langchain-ai/openwiki",
+      "summary": "LangChain 官方 CLI，自動幫 codebase 撰寫並持續維護「給 AI agent 看的文件」，把架構與慣例整理成隨時可讀的 wiki，讓 Claude Code / Cursor 少走冤枉路。",
+      "tags": [
+        "coding-agent",
+        "documentation",
+        "cli"
+      ],
+      "url": "https://github.com/langchain-ai/openwiki",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/langchain-ai/openwiki",
+      "stars": 1036,
+      "createdDate": "2026-06-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260703-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-03",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "tdeverx/contained-app",
+      "summary": "Apple Container CLI 的原生 macOS GUI，在 Mac 上跑容器時不用一直敲指令。macOS only。",
+      "tags": [
+        "macos",
+        "container",
+        "developer-tool"
+      ],
+      "url": "https://github.com/tdeverx/contained-app",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/tdeverx/contained-app",
+      "stars": 467,
+      "createdDate": "2026-06-25",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260703-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-03",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "JayWebtech/autoshorts",
+      "summary": "Local-first 桌面 app，把長影片/長音檔自動切成 9:16 直式短片候選，並用 AI 排序哪些片段最有爆點。剪 Reels/Shorts 的人可試。",
+      "tags": [
+        "video",
+        "creator-tool",
+        "local-first"
+      ],
+      "url": "https://github.com/JayWebtech/autoshorts",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/JayWebtech/autoshorts",
+      "stars": 277,
+      "createdDate": "2026-06-22",
+      "license": "?"
+    },
+    {
+      "id": "20260703-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-03",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "MageByte-Zero/spec-superflow",
+      "summary": "把「需求講清楚」跟「code 寫對路」接起來的 AI 編程工作流 plugin，整合 OpenSpec 規劃 + Superpowers 紀律，spec-first、契約驅動，支援 7 個平台（Claude Code / Cursor / Codex…）。",
+      "tags": [
+        "ai-coding",
+        "spec-driven",
+        "workflow"
+      ],
+      "url": "https://github.com/MageByte-Zero/spec-superflow",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/MageByte-Zero/spec-superflow",
+      "stars": 163,
+      "createdDate": "2026-06-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260703-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-03",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "AIScientists-Dev/academic-humanizer",
+      "summary": "一個 skill（支援 Claude Code / Codex），專門把論文、研究計畫裡的「AI 味」洗掉，同時保留學術語氣、把論點綁回證據。寫長文要去 AI 腔的人可參考做法。",
+      "tags": [
+        "writing-skill",
+        "claude-code"
+      ],
+      "url": "https://github.com/AIScientists-Dev/academic-humanizer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/AIScientists-Dev/academic-humanizer",
+      "stars": 126,
+      "createdDate": "2026-06-20",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260703-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-03",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "OpenFormosa/BlueMagpie-TTS",
+      "summary": "台灣團隊 OpenFormosa 的開源 TTS，以台灣藍鵲命名。目前 star 還少，但屬在地語音合成方向，做台灣在地內容的可留意。Apache-2.0。",
+      "tags": [
+        "tts",
+        "taiwan",
+        "speech-synthesis"
+      ],
+      "url": "https://github.com/OpenFormosa/BlueMagpie-TTS",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/OpenFormosa/BlueMagpie-TTS",
+      "stars": 36,
+      "createdDate": "2026-06-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260703-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-03",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "timoncool/dub-studio",
+      "summary": "號稱「AI 配音版的開源 CapCut」，把短影片一鍵配音成 6 種語言，100% 本地跑，附即時編輯器。同作者先前做過 HiggsAudio-Studio、ACE-Step-Studio。",
+      "tags": [
+        "dubbing",
+        "audio",
+        "local",
+        "video"
+      ],
+      "url": "https://github.com/timoncool/dub-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/timoncool/dub-studio",
+      "stars": 31,
+      "createdDate": "2026-06-21",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-07-03",
