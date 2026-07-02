@@ -56644,8 +56644,48 @@
       "url": "https://blog.cloudflare.com/making-ai-search-smarter/",
       "source": "Cloudflare Blog",
       "sourceUrl": "https://blog.cloudflare.com/making-ai-search-smarter/"
+    },
+    {
+      "radar": "founder-mind",
+      "date": "2026-07-03",
+      "cycle": "friday",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260703-fm-001",
+      "priority": "mental-model",
+      "title": "\"Understand to participate\" — 跟 coding agent 協作的認知門檻",
+      "summary": "Geoffrey Litt 在 AI Engineer World's Fair 提出的框架：當 agent 產出的改動越來越大、越複雜，你最大的風險是「認知負債」(cognitive debt)——你對程式碼的理解逐漸跟真實運作脫節。他的解方是「先理解，才能參與」：你必須理解到一個深度，讓自己還能跟模型一起創造，而不是只會按 accept。腦中缺乏夠豐富的概念，你在專案裡的參與能力就被實質限縮。",
+      "tags": [
+        "coding-agents",
+        "cognitive-debt",
+        "ai-native"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/2/understand-to-participate/"
+    },
+    {
+      "radar": "founder-mind",
+      "date": "2026-07-03",
+      "cycle": "friday",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260703-fm-002",
+      "priority": "quotable",
+      "title": "Kevin Kelly：exoself — 當 AI 關掉，你會覺得被截肢",
+      "summary": "Kelly 提出「exoself」概念：一個 always-on、比你還懂你的 AI agent，會給你知識、判斷、決斷力，最重要的是速度。你會允許它深入你的內在生活，因為它讓你感覺高效、有創造力、聰明。代價是——當它關掉的那一刻，你會覺得自己被截肢。「When it is off, we will feel amputated.」",
+      "tags": [
+        "ai-future",
+        "personal-ai",
+        "human-ai"
+      ],
+      "url": "https://kk.org/thetechnium/quiet-my-exoself/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/quiet-my-exoself/"
     }
   ],
   "lastUpdated": "2026-07-03",
-  "updatedAt": "2026-07-03T05:20:00+08:00"
+  "updatedAt": "2026-07-03T05:33:00+08:00"
 }
