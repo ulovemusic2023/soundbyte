@@ -56558,8 +56558,94 @@
       "price": null,
       "vram": "quantize-ok（預估，同 SongGeneration 4B 級；weights 未釋出）",
       "license": "待釋出"
+    },
+    {
+      "radar": "software-dev",
+      "date": "2026-07-03",
+      "cycle": "morning",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260703-sw-001",
+      "priority": "paradigm-shift",
+      "title": "Claude Sonnet 5 成為 Claude Code 預設模型",
+      "summary": "Anthropic 推出 Claude Sonnet 5 並在 Claude Code v2.1.197 設為預設：原生 1M token context、adaptive thinking 預設開啟、換新 tokenizer 讓同一段文字多吃約 30% token；且不再接受 temperature/top_p/top_k，設非預設值直接回 400。促銷價 $2/$10 per Mtok 到 8/31。Sonnet 級模型直接吃百萬脈絡＋預設推理，是 coding agent 日常主力的一次典範躍升。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "claude-code",
+        "sonnet-5",
+        "1m-context"
+      ],
+      "url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5",
+      "source": "Anthropic (Claude Platform Docs)",
+      "sourceUrl": "https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5"
+    },
+    {
+      "radar": "software-dev",
+      "date": "2026-07-03",
+      "cycle": "morning",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260703-sw-002",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Monetization Gateway — 用 x402 對任何資源收費",
+      "summary": "Cloudflare 開放 Monetization Gateway 候補：任何放在 Cloudflare 後面的網頁 / 資料集 / API / 甚至 MCP tool call 都能收費，用 x402 開放協定（HTTP 402 Payment Required）以 stablecoin 結算，金額可小到不到一美分、秒級到帳。定位是流量從人轉向 AI agent 後『對每個呼叫者收費』的結算層——不只擋爬蟲，而是把 agent 存取變成可計價資源。",
+      "tags": [
+        "paradigm-shift",
+        "x402",
+        "agentic-web",
+        "monetization",
+        "mcp"
+      ],
+      "url": "https://blog.cloudflare.com/monetization-gateway/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/monetization-gateway/"
+    },
+    {
+      "radar": "software-dev",
+      "date": "2026-07-03",
+      "cycle": "morning",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260703-sw-003",
+      "priority": "medium",
+      "title": "Claude Fable 5 回歸 Claude Code",
+      "summary": "繼 6/12 美國出口管制強制下架、6/28 僅以『受信任夥伴白名單』放行後，Fable 5 於 7/1–7/7 在 Claude Code（v2.1.197+）恢復促銷存取：Pro/Max/Team 及高階 Enterprise 座位可用掉最多 50% 每週額度，促銷結束後改走 credit 計費。最強 Mythos-class 模型的取得權，仍隨政策在開關之間擺盪。",
+      "tags": [
+        "fable-5",
+        "claude-code",
+        "model-availability",
+        "export-control"
+      ],
+      "url": "https://dev.classmethod.jp/en/articles/20260702-cc-updates-v2-1-198/",
+      "source": "Anthropic / DevelopersIO",
+      "sourceUrl": "https://dev.classmethod.jp/en/articles/20260702-cc-updates-v2-1-198/"
+    },
+    {
+      "radar": "software-dev",
+      "date": "2026-07-03",
+      "cycle": "morning",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260703-sw-004",
+      "priority": "medium",
+      "title": "Cloudflare「Making AI search smarter」——從 Pay Per Crawl 走向 Pay Per Query",
+      "summary": "Cloudflare 7/1 推 AI Search Intelligence，並超越 Pay Per Crawl 走用量計費：合作方（Ceramic.ai / You.com）試 pay-per-query / pay-per-result，內容被答案引擎『引用』時創作者才分潤，而非被爬就收錢；並指出逾 50% bot 流量在重爬沒變過的頁面。附 AEO（Answer Engine Optimization）報表看熱門 query、排名、snippet。",
+      "tags": [
+        "pay-per-query",
+        "aeo",
+        "ai-search",
+        "agentic-web"
+      ],
+      "url": "https://blog.cloudflare.com/making-ai-search-smarter/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/making-ai-search-smarter/"
     }
   ],
   "lastUpdated": "2026-07-03",
-  "updatedAt": "2026-07-03T05:10:00+08:00"
+  "updatedAt": "2026-07-03T05:20:00+08:00"
 }
