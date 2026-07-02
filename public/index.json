@@ -56518,8 +56518,48 @@
       "stars": 9539,
       "createdDate": "2026-03-27",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260703-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "nvidia/Real-time RE-USE",
+      "summary": "NVIDIA 釋出的即時語音修復模型，用 Convolutional encoder/decoder + Mamba 做 time–frequency 建模，把各種劣化語音（雜訊、失真、頻寬受損）還原成高保真。只有 3.7M 參數、極輕量，即時可跑，對人聲修復與 vocal 前處理很實用。",
+      "tags": [
+        "audio_music_ai",
+        "speech-enhancement",
+        "mamba"
+      ],
+      "url": "https://huggingface.co/nvidia/Real-time_RE-USE",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/nvidia/Real-time_RE-USE",
+      "price": null,
+      "vram": "local-ready（3.7M params，16GB 綽綽有餘）",
+      "license": "NVIDIA NSCLv1（非商用）"
+    },
+    {
+      "id": "20260703-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LeVo 2 — 階層式歌曲生成",
+      "summary": "Tencent LeVo / SongGeneration 團隊新論文（6/29）：完整歌曲生成（人聲＋伴奏）。先預測 mixed tokens 做全局規劃，再分別 refine 人聲與伴奏軌；加上 aesthetics-guided 訓練排程與漸進式 DPO 對齊，musicality 明顯提升。⚠️ 目前僅論文，weights 尚未釋出。",
+      "tags": [
+        "audio_music_ai",
+        "music-generation",
+        "song-generation"
+      ],
+      "url": "https://arxiv.org/abs/2606.30642",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2606.30642",
+      "price": null,
+      "vram": "quantize-ok（預估，同 SongGeneration 4B 級；weights 未釋出）",
+      "license": "待釋出"
     }
   ],
-  "lastUpdated": "2026-07-02",
-  "updatedAt": "2026-07-02T05:30:00+08:00"
+  "lastUpdated": "2026-07-03",
+  "updatedAt": "2026-07-03T05:10:00+08:00"
 }
