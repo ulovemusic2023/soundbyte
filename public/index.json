@@ -56824,8 +56824,71 @@
       "stars": 31,
       "createdDate": "2026-06-21",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260704-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google 釋出 A2UI v0.9 — framework-agnostic generative UI 標準",
+      "summary": "Google 推出 A2UI（agent-to-UI）v0.9：讓 AI agent 用宣告式方式表達 UI 意圖，跨 web / mobile / desktop 由官方 renderer 原生渲染，agent 不用送任意 code。附 React renderer + 更新 Flutter / Lit / Angular renderer，並發佈 A2UI Agent SDK（Python，帶 caching 降延遲）。目前 production 為 v0.9.1，v1.0 RC spec 已出。把「agent 生成介面」變成可攜、標準化的一層（GenUI）。",
+      "tags": [
+        "ai-agent",
+        "generative-ui",
+        "a2ui",
+        "agent-framework",
+        "paradigm-shift"
+      ],
+      "url": "https://www.infoq.com/news/2026/07/google-a2ui-genui/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/07/google-a2ui-genui/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260704-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor 爆兩個 CVSS 9.8 RCE 漏洞「DuneSlide」（CVE-2026-50548 / 50549）",
+      "summary": "SecurityWeek 揭露 Cursor AI IDE 兩個 critical 漏洞：agent 自動執行終端指令時可透過 prompt injection 逃出 sandbox 達成 OS 級 RCE。CVE-2026-50548 靠改 working_directory 把攻擊者路徑加進 allow-list；CVE-2026-50549 靠 project 內建 symlink + path canonicalization bug 繞過越界寫入防護。修補已於 Cursor 3.0（4/2）釋出、CVE 6 月才編號，舊版務必升級。",
+      "tags": [
+        "security",
+        "ai-coding",
+        "prompt-injection",
+        "sandbox-escape"
+      ],
+      "url": "https://www.securityweek.com/critical-cursor-ai-ide-flaws-could-lead-to-os-level-remote-code-execution/",
+      "source": "SecurityWeek",
+      "sourceUrl": "https://www.securityweek.com/critical-cursor-ai-ide-flaws-could-lead-to-os-level-remote-code-execution/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260704-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 釋出 @cloudflare/workers-types v5",
+      "summary": "只保留最新 runtime types、砍掉舊的 dated entrypoints，簡化套件；官方仍建議直接為你的 Worker 產生 types。純 DX 小更新。",
+      "tags": [
+        "cloudflare-workers",
+        "typescript",
+        "dx"
+      ],
+      "url": "https://developers.cloudflare.com/changelog/post/2026-07-03-workers-types-v5/",
+      "source": "Cloudflare Changelog",
+      "sourceUrl": "https://developers.cloudflare.com/changelog/post/2026-07-03-workers-types-v5/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-03",
-  "updatedAt": "2026-07-03T05:33:00+08:00"
+  "lastUpdated": "2026-07-04",
+  "updatedAt": "2026-07-04T05:20:00+08:00"
 }
