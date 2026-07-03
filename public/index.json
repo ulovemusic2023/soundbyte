@@ -56908,6 +56908,232 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260704-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "lycorp-jp/sim-use",
+      "summary": "LY Corp (LINE/Yahoo Japan) 官方開源，讓 AI agent 有「眼睛跟手」直接操作 iOS Simulator 與 Android 模擬器/實機——截圖、點擊、輸入全自動化。做 mobile app QA 或 agentic 手機測試很實用。",
+      "tags": [
+        "ai-agent",
+        "mobile-automation",
+        "ios-simulator",
+        "android"
+      ],
+      "url": "https://github.com/lycorp-jp/sim-use",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 519,
+      "createdDate": "2026-06-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260704-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "HUANGCHIHHUNGLeo/claude-real-video",
+      "summary": "讓 Claude（或任何 LLM）真的「看得懂」影片：從 URL 或本地檔抽出 scene-aware、去重複的關鍵幀 + 逐字稿，全程本地跑、MIT。做內容/剪輯或給 coding agent 餵影片 context 都合用。台灣人作品。",
+      "tags": [
+        "claude",
+        "video",
+        "multimodal",
+        "local"
+      ],
+      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 506,
+      "createdDate": "2026-06-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "cclank/lanshu-animated-architecture-diagram",
+      "summary": "高質感手繪風「動態架構圖」的 Codex skill，直接產出會動的系統架構示意圖。寫技術文件、做簡報、講架構的時候省事。",
+      "tags": [
+        "codex-skill",
+        "diagram",
+        "animation",
+        "architecture"
+      ],
+      "url": "https://github.com/cclank/lanshu-animated-architecture-diagram",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 495,
+      "createdDate": "2026-06-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "larashero3-dotcom/writing-dna-skill",
+      "summary": "「寫作蒸餾器」agent skill——蒸餾並複刻任意寫作風格。對要用固定語氣代筆（例如寫 Threads）的場景蠻對味。",
+      "tags": [
+        "agent-skill",
+        "writing",
+        "style-transfer"
+      ],
+      "url": "https://github.com/larashero3-dotcom/writing-dna-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 135,
+      "createdDate": "2026-06-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "Don-Uwe/video-editor-ai-agent",
+      "summary": "餵原始素材 + 一段創意 brief，一組協作 agent 自動處理選鏡、剪輯、agentic 後製。創作者/內容產線的自動化剪輯實驗。",
+      "tags": [
+        "ai-agent",
+        "video-editing",
+        "creator-tool"
+      ],
+      "url": "https://github.com/Don-Uwe/video-editor-ai-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 132,
+      "createdDate": "2026-06-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "FR0ZON3/notion-mcp",
+      "summary": "用 markdown 把 AI agent 接上 Notion 的 MCP server，讀寫 Notion 內容。把 Notion 當 agent 的知識庫/工作區時好用。",
+      "tags": [
+        "mcp",
+        "notion",
+        "markdown"
+      ],
+      "url": "https://github.com/FR0ZON3/notion-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 131,
+      "createdDate": "2026-06-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "kerlenton/mcpsnoop",
+      "summary": "「MCP 版的 Wireshark」——透明 proxy，在終端機即時顯示 AI client 與 MCP server 之間每一個真實的 tool call。debug MCP、看 agent 到底呼叫了什麼，神器。",
+      "tags": [
+        "mcp",
+        "proxy",
+        "debugging",
+        "observability"
+      ],
+      "url": "https://github.com/kerlenton/mcpsnoop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 107,
+      "createdDate": "2026-06-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "trifillara/moltis-gateway-mcp",
+      "summary": "個人版 agent server（MCP）：多家 LLM、語音、記憶，還能接 Telegram/WhatsApp/Discord/Teams。有點像自建輕量 OpenClaw gateway 的味道。",
+      "tags": [
+        "mcp",
+        "agent-server",
+        "multi-provider",
+        "messaging"
+      ],
+      "url": "https://github.com/trifillara/moltis-gateway-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 98,
+      "createdDate": "2026-06-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "simonlin1212/investment-news",
+      "summary": "為投資者做的全球產業鏈資訊看板，12 大賽道對應股市板塊，覆蓋 100+ 權威源，用你自己的大模型每日提煉重點——全程本地、零 API key。給 Gain 做台股/產業追蹤可參考。",
+      "tags": [
+        "local-ai",
+        "news",
+        "finance",
+        "dashboard"
+      ],
+      "url": "https://github.com/simonlin1212/investment-news",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 87,
+      "createdDate": "2026-06-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "7-e1even/learn-agent",
+      "summary": "從零手寫一個「能活下來」的 AI coding agent，15 課可跑代碼，機制從真實產品移植——拆解 Claude Code / Codex / Cursor 底層怎麼運作。想搞懂 agent harness 內部的好教材。",
+      "tags": [
+        "coding-agent",
+        "education",
+        "from-scratch"
+      ],
+      "url": "https://github.com/7-e1even/learn-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 51,
+      "createdDate": "2026-07-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260704-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-07-04",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "Younesfdj/gitfut",
+      "summary": "把你的 GitHub 數據做成世界盃球員卡風格的圖卡。純好玩、病毒式傳播中，開發者社群小甜點。",
+      "tags": [
+        "github",
+        "fun",
+        "developer-toy"
+      ],
+      "url": "https://github.com/Younesfdj/gitfut",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-20&type=repositories",
+      "stars": 902,
+      "createdDate": "2026-06-24",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-04",
