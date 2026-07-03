@@ -56887,8 +56887,29 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260704-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-04",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Understanding is the new bottleneck",
+      "summary": "當 AI agents 越來越會寫 code、還能自己驗證，人類的瓶頸就從『檢查對錯』轉成『還跟不跟得上』。Litt 的框架：不要被擠出迴圈，而要更深入迴圈——不是為了抓 bug，而是為了保住創造主導權。腦中沒有夠豐富的概念模型，就無法在專案裡繼續做有意義的決策。他提出三個方法：帶測驗的 code 導覽當減速丘、可互動的 micro-world 建直覺、團隊共享心智模型。",
+      "tags": [
+        "cognitive-debt",
+        "ai-coding",
+        "agentic-engineering",
+        "mental-model"
+      ],
+      "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
+      "source": "Geoffrey Litt",
+      "sourceUrl": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-04",
-  "updatedAt": "2026-07-04T05:20:00+08:00"
+  "updatedAt": "2026-07-04T05:45:00+08:00"
 }
