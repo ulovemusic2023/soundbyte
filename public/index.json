@@ -57254,8 +57254,88 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260705-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-05",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "PM 的「協調者」角色正在死去",
+      "summary": "過去十年 PM 這個職位一路漂向「對齊人、協調資源」，但最強公司的最強 PM 已經在用真實 code 做原型、用 MCP 對話式查資料、直接跑 coding agent。洞察：AI 時代的 leverage 不再來自「管人」，而是來自「自己動手做」——能直接 build 的人，才是新的高槓桿。",
+      "tags": [
+        "ai-native",
+        "leverage",
+        "product"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-top-pms-increase-their-leverage",
+      "source": "Colin Matthews · Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-top-pms-increase-their-leverage",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260705-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-05",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "OpenAI 想送美國政府 5% 股權",
+      "summary": "Altman 提議把 OpenAI 5% 股權放進一個「公共財富基金」（仿阿拉斯加永久基金），讓全民分紅，並喊話其他 AI 巨頭跟進。洞察：與其等監管與民粹反撲，不如主動把「反對者」變成「股東」——用所有權綁定利益，是化解政治風險的戰略手段，不只是慈善。",
+      "tags": [
+        "strategy",
+        "regulation",
+        "incentive-alignment"
+      ],
+      "url": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
+      "source": "Sam Altman / OpenAI · TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260705-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-05",
+      "cycle": "sunday",
+      "priority": "playbook",
+      "title": "殺死 solo founder 的不是策略，是 burnout",
+      "summary": "2026 調查指出，一人創業者放棄的第一原因是燃燒殆盡，而非策略失誤。孤獨會放大每個問題，當整間公司只活在你腦袋裡，大腦永遠無法休息。解法：把生意「寫出來」（roadmap、OKR、營運文件），別讓大腦當唯一備份；睡眠與體力才是你真正的護城河。",
+      "tags": [
+        "solo-founder",
+        "burnout",
+        "sustainability"
+      ],
+      "url": "https://www.foundra.ai/key-reads/solo-founder-burnout-top-reason-quit-2026",
+      "source": "Foundra",
+      "sourceUrl": "https://www.foundra.ai/key-reads/solo-founder-burnout-top-reason-quit-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260705-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-07-05",
+      "cycle": "sunday",
+      "priority": "quotable",
+      "title": "擁抱 AI 的光明面與黑暗面",
+      "summary": "「We must embrace both the positive side and the dark side of AI.」Anthropic 總裁 Daniela Amodei 在 Le Monde 專訪強調，真實部署中 AI 目前多是「補強」而非「取代」人力——醫生把雜務交給 AI，反而有更多時間陪病人。",
+      "tags": [
+        "augmentation",
+        "ai-labor",
+        "leadership"
+      ],
+      "url": "https://www.lemonde.fr/en/economy/article/2026/07/02/anthropic-president-daniela-amodei-we-must-embrace-both-the-positive-side-and-the-dark-side-of-ai_6755092_19.html",
+      "source": "Daniela Amodei · Le Monde",
+      "sourceUrl": "https://www.lemonde.fr/en/economy/article/2026/07/02/anthropic-president-daniela-amodei-we-must-embrace-both-the-positive-side-and-the-dark-side-of-ai_6755092_19.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-04",
-  "updatedAt": "2026-07-04T05:45:00+08:00"
+  "lastUpdated": "2026-07-05",
+  "updatedAt": "2026-07-05T05:40:00+08:00"
 }
