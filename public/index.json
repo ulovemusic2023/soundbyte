@@ -57334,6 +57334,106 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260705-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-05",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "jamesob/local-llm",
+      "summary": "本地跑 LLM 全攻略：硬體、量化、llama.cpp/Ollama/MLX 實測與踩雷筆記。",
+      "tags": [
+        "local-llm",
+        "ollama",
+        "inference"
+      ],
+      "url": "https://github.com/jamesob/local-llm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-07-01+stars%3A%3E30&type=repositories",
+      "stars": 718,
+      "createdDate": "2026-07-03",
+      "license": "none"
+    },
+    {
+      "id": "20260705-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-05",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "Kulaxyz/token-diet",
+      "summary": "給 coding agent 的常駐省 token 技能，平均帳單降約 31% 不損正確性。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "cost"
+      ],
+      "url": "https://github.com/Kulaxyz/token-diet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-07-01+stars%3A%3E30&type=repositories",
+      "stars": 443,
+      "createdDate": "2026-07-03",
+      "license": "none"
+    },
+    {
+      "id": "20260705-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-05",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "SuperJJ007/CSSwitch",
+      "summary": "menubar 小工具，一鍵把 Claude 接到自己的 API endpoint（DeepSeek/Qwen/GLM/OpenRouter…）。",
+      "tags": [
+        "proxy",
+        "mcp",
+        "macos"
+      ],
+      "url": "https://github.com/SuperJJ007/CSSwitch",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-07-01+stars%3A%3E30&type=repositories",
+      "stars": 217,
+      "createdDate": "2026-07-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260705-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-05",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "antiwork/chromeless",
+      "summary": "單一 Swift 檔案、零 chrome 的 macOS 瀏覽器，專為乾淨截圖與全螢幕錄影。",
+      "tags": [
+        "browser",
+        "macos",
+        "screenshots"
+      ],
+      "url": "https://github.com/antiwork/chromeless",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-07-01+stars%3A%3E30&type=repositories",
+      "stars": 187,
+      "createdDate": "2026-07-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260705-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-05",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "aleclindz/seo-skill-bench",
+      "summary": "針對 Claude Code SEO 技能的開源 benchmark，用植入缺陷的 fixture 站做 headless 評分。",
+      "tags": [
+        "eval",
+        "claude-code",
+        "seo"
+      ],
+      "url": "https://github.com/aleclindz/seo-skill-bench",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-07-01+stars%3A%3E30&type=repositories",
+      "stars": 108,
+      "createdDate": "2026-07-02",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-05",
