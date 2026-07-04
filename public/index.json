@@ -57134,6 +57134,126 @@
       "stars": 902,
       "createdDate": "2026-06-24",
       "license": "MIT"
+    },
+    {
+      "id": "20260705-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-05",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 發表 Claude Sonnet 5 — 最 agentic 的 Sonnet",
+      "summary": "Sonnet 5 效能逼近 Opus 4.8 但價格低一截（介紹價 $2/$10 per 1M）。能自主 plan、用 browser/terminal，把幾個月前需要更大更貴模型才做得到的 agentic 任務下放到 Sonnet 級距；免費/Pro 預設模型，Claude Code 可用。",
+      "tags": [
+        "ai-agent",
+        "ai-models",
+        "coding-agent"
+      ],
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "source": "Anthropic Blog",
+      "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260705-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Next.js 16.3 Preview：為 agentic 未來重寫的框架",
+      "summary": "AGENTS.md 打包 version-matched 官方文件進 node_modules 導引 agent；三個 first-party Skills（next-dev-loop 讓 agent 開瀏覽器/讀 console/追 network/看 React tree）；agent-browser 提供 agent 視角。框架把 coding agent 當一等公民。",
+      "tags": [
+        "new-languages",
+        "ai-agent",
+        "frontend"
+      ],
+      "url": "https://nextjs.org/blog/next-16-3-ai-improvements",
+      "source": "Next.js Blog",
+      "sourceUrl": "https://nextjs.org/blog/next-16-3-ai-improvements",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260705-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Vercel AI SDK 7 釋出",
+      "summary": "針對 agent 補上 reasoning control、tool/runtime context、provider files & skills、MCP Apps、terminal UI 五塊生產深度。重心從 chat 移到 agent orchestration。",
+      "tags": [
+        "ai-agent",
+        "new-languages",
+        "mcp-apps"
+      ],
+      "url": "https://vercel.com/blog/ai-sdk-7",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/ai-sdk-7",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260705-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer 走訪 OpenAI、Anthropic、Cursor",
+      "summary": "三家全押 cloud agents；OpenAI 95%+ 非工程師用 Codex；工程工作越來越像「幫 agent 打造能高效執行的環境」；OpenAI 併購 Ona(前 Gitpod) 成立 Cloud Agents team。",
+      "tags": [
+        "cloud-agents",
+        "agentic-engineering",
+        "ai-assisted-development"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/impressions-from-visiting-openai",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/impressions-from-visiting-openai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260705-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Kent Beck 如何形塑軟體工程產業（AI 時代）",
+      "summary": "主張「累積信任的速度跟不上累積 code 的速度」。coding 只是軟體工程一小塊；提出 explore-expand-extract 框架幫工程師 navigate 技術巨變。",
+      "tags": [
+        "mental-model",
+        "ai-assisted-development",
+        "engineering-culture"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/how-kent-beck-shapes-the-software",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/how-kent-beck-shapes-the-software",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260705-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：讓模型自己挑更便宜的 subagent 跑實作",
+      "summary": "所有 coding 任務用 judgement 決定低階模型丟 subagent 執行，judgment/review/synthesis 留主 loop。實作很少需頂級模型，是 token 成本失控時代的 agent 分工 pattern。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "cost-optimization"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/3/judgement/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-04",
