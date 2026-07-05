@@ -57564,6 +57564,86 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260706-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-06",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Dan Koe：21 世紀最賺錢的技能不是 AI，是讀懂人性",
+      "summary": "在人人都能用 AI 產內容的時代，差異化槓桿是理解人的三大張力：生存、身份、進展。框架：點名威脅→鏡射身份→描繪轉變→給第一步。工具會被商品化，對人性的洞察不會。",
+      "tags": [
+        "creator-leverage",
+        "persuasion",
+        "one-person-business"
+      ],
+      "url": "https://letters.thedankoe.com/p/the-most-profitable-skill-of-the",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/the-most-profitable-skill-of-the",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260706-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-06",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "課程銷售腰斬——AI 正在掏空賣資訊的護城河",
+      "summary": "Josh W. Comeau 透露多位開發者課程作者營收下滑 50%+：學習者擔心 dev 工作前景而不願花錢學新技能，加上 LLM 提供零摩擦個人化家教。純資訊交付已無護城河，須轉向 mentorship/社群/人味價值。",
+      "tags": [
+        "creator-economy",
+        "moat",
+        "ai-displacement"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/",
+      "source": "Josh W. Comeau (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260706-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-06",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "更好的模型，更差的工具——能力提升不會線性外溢",
+      "summary": "Simon Willison 觀察到最新 SOTA 模型反而更不會用自訂 tool schema，因被 RL 針對特定內建工具過度優化。啟示：AI 效能進步不會可靠跨情境轉移，用 LLM build 東西要拿實際工具/流程實測。",
+      "tags": [
+        "ai-engineering",
+        "capability-gap",
+        "testing"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260706-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-07-06",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Right-sizing：把對的尺寸模型配給對的任務",
+      "summary": "Simon Willison 用 AI 為主力寫完 sqlite-utils 4.0rc2 一個 release，總成本 $149.25，並揪出會 poison transaction 的致命 bug。Agentic engineering 省錢關鍵是 right-sizing——判斷/審查留主迴圈，實作丟便宜 subagent。",
+      "tags": [
+        "agentic-engineering",
+        "ai-leverage",
+        "cost"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-05",
