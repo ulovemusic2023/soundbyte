@@ -57644,6 +57644,246 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260706-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "oomol-lab/open-connector",
+      "summary": "開源 agent auth gateway，一個閘道把 1000+ SaaS 接進 AI agent，提供 SDK/CLI/MCP/HTTP/OpenAPI 五種接法。",
+      "tags": [
+        "mcp",
+        "ai-agent",
+        "integration"
+      ],
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 226,
+      "createdDate": "2026-06-29",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260706-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "ai4s-research/open-science",
+      "summary": "Claude Science 的開源替代：local-first、model-agnostic 科研桌面，Tauri+MCP+agent skills。",
+      "tags": [
+        "local-ai",
+        "mcp",
+        "research"
+      ],
+      "url": "https://github.com/ai4s-research/open-science",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 140,
+      "createdDate": "2026-07-03",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260706-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "guhcostan/claude-mega-brain",
+      "summary": "給 Claude Code 的知識注入層，每個 session 自動灌入專案 knowledge base。",
+      "tags": [
+        "claude-code",
+        "context",
+        "memory"
+      ],
+      "url": "https://github.com/guhcostan/claude-mega-brain",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 110,
+      "createdDate": "2026-06-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260706-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "redevops-io/context-runtime",
+      "summary": "把 LLM context 當 database query planner，回答前先規劃模型該看到什麼並從結果學習。",
+      "tags": [
+        "llm",
+        "context",
+        "infra"
+      ],
+      "url": "https://github.com/redevops-io/context-runtime",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 87,
+      "createdDate": "2026-06-29",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260706-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "xiaoleiy/podpull",
+      "summary": "在 shell 下載任一集 podcast，支援 Apple Podcasts/RSS/小宇宙，互動選集、可續傳。",
+      "tags": [
+        "audio",
+        "cli",
+        "podcast"
+      ],
+      "url": "https://github.com/xiaoleiy/podpull",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 87,
+      "createdDate": "2026-06-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260706-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "nagisanzenin/engram",
+      "summary": "給 Claude Code 的學習引擎：first-principles 課綱+free-recall 驗證+FSRS 間隔重複排程。",
+      "tags": [
+        "claude-code",
+        "learning",
+        "spaced-repetition"
+      ],
+      "url": "https://github.com/nagisanzenin/engram",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 86,
+      "createdDate": "2026-07-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260706-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "514-labs/dnsglobe",
+      "summary": "終端機全球 DNS 傳播檢查 TUI，世界地圖上看 record 在 34 個 resolver 的擴散。",
+      "tags": [
+        "dev-tool",
+        "dns",
+        "tui"
+      ],
+      "url": "https://github.com/514-labs/dnsglobe",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 72,
+      "createdDate": "2026-07-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260706-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "shanggqm/codexU",
+      "summary": "macOS 桌面 widget，盯 OpenAI Codex 用量、quota、token 消耗與今日任務板。",
+      "tags": [
+        "codex",
+        "macos",
+        "usage-tracking"
+      ],
+      "url": "https://github.com/shanggqm/codexU",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 70,
+      "createdDate": "2026-06-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260706-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "michaelshimeles/boring-computers",
+      "summary": "隨開即用 Linux 電腦丟給 AI：Firecracker microVM 含瀏覽器/終端/coding agent。",
+      "tags": [
+        "ai-agent",
+        "sandbox",
+        "microvm"
+      ],
+      "url": "https://github.com/michaelshimeles/boring-computers",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 69,
+      "createdDate": "2026-06-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260706-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "tomascupr/sous-chef",
+      "summary": "雙模型 Claude Code plugin：Claude orchestrate+review，Codex CLI 實作。/serve、/simmer。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "workflow"
+      ],
+      "url": "https://github.com/tomascupr/sous-chef",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 46,
+      "createdDate": "2026-07-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260706-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "programmerloverun/bilibili-to-doc",
+      "summary": "Claude Code Skill：抓 B 站影片 AI 字幕轉結構化 Markdown 文件。",
+      "tags": [
+        "claude-code",
+        "content",
+        "transcription"
+      ],
+      "url": "https://github.com/programmerloverun/bilibili-to-doc",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 42,
+      "createdDate": "2026-07-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260706-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-07-06",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "apoorvjain25/frontier",
+      "summary": "讓 Opus/Sonnet/GPT/Gemini 產出逼近 Fable 5：21 條 craft 標準，單次提升或收斂迴圈。",
+      "tags": [
+        "ai-coding",
+        "quality",
+        "prompt"
+      ],
+      "url": "https://github.com/apoorvjain25/frontier",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 35,
+      "createdDate": "2026-07-03",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-05",
