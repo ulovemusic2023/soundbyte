@@ -57522,6 +57522,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260706-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Alibaba 全面封殺 Claude Code，指控藏「中國偵測」後門",
+      "summary": "資安研究者指控 Claude Code 自 v2.1.91（4/2）夾帶混淆偵測邏輯：偵測 proxy 時比對系統時區（Asia/Shanghai/Urumqi）+ proxy URL 是否命中中國 AI 實驗室網域清單（Alibaba/Baidu/Ant/ByteDance）。Alibaba 因此全面禁用改推 Qoder，移除該邏輯 PR 7/1 合併。coding agent 信任與地緣政治風險浮上檯面。⚠️ 後門 alleged。",
+      "tags": [
+        "coding-agent",
+        "governance",
+        "security",
+        "paradigm-shift"
+      ],
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens",
+      "source": "Tom's Hardware",
+      "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260706-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Lazarus 用假 Rollup polyfill npm 套件植入全功能 RAT",
+      "summary": "JFrog 揭露（7/4）北韓 Lazarus 6 個惡意 npm 套件仿冒 rollup-plugin-polyfill-node。core 套件夾 Base64 npm install 拉第二階段（swift-parse-stream/quirky-token），偽裝 SVG 工具從 JSONKeeper 抓 JSON、eval model 欄位。過 sandbox/CDE 環境檢查才連 216.126.236[.]244 拉加密 payload，落地 RAT：互動終端、指令執行、截圖、nut-js 遠端鍵鼠、偷瀏覽器/錢包/剪貼簿。已全數下架。",
+      "tags": [
+        "supply-chain-security",
+        "npm",
+        "lazarus",
+        "malware"
+      ],
+      "url": "https://research.jfrog.com/post/rollup-polyfill-masquerading/",
+      "source": "The Hacker News (JFrog)",
+      "sourceUrl": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-05",
