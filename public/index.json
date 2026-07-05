@@ -57434,6 +57434,94 @@
       "stars": 108,
       "createdDate": "2026-07-02",
       "license": "MIT"
+    },
+    {
+      "id": "20260706-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Better Models: Worse Tools — 新 Claude 模型在第三方 harness edit tool 上更容易出錯",
+      "summary": "Armin Ronacher（Simon Willison 7/4 轉載）：Opus 4.8 / Sonnet 5 呼叫第三方 harness Pi 的 edit tool 時會塞 schema 外的發明欄位被拒，舊模型不會。推論新模型被 RL 練成擅用 Claude Code 內建 str_replace edit tool（Codex 練 apply_patch），SOTA 反在自訂 schema 退步；第三方 harness 恐需按模型各實作一套 edit tool。",
+      "tags": [
+        "harness-engineering",
+        "tool-use",
+        "reinforcement-learning",
+        "ai-agent",
+        "paradigm-shift"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "source": "Simon Willison / Armin Ronacher",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260706-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "actions/checkout v7 預設封鎖不安全 fork checkout，7/16 backport 全版本",
+      "summary": "GitHub actions/checkout v7（6/18）起在 pull_request_target/workflow_run 預設拒絕 checkout fork PR code，殺掉 pwn request；7/16 backport 全主版（浮動 tag 自動套、釘 SHA 不受影響）。需顯式 allow-unsafe-pr-checkout: true 才恢復舊行為。",
+      "tags": [
+        "github-actions",
+        "ci-cd",
+        "supply-chain",
+        "devops",
+        "secure-by-default"
+      ],
+      "url": "https://github.com/actions/checkout/releases/tag/v7.0.0",
+      "source": "GitHub / I Programmer",
+      "sourceUrl": "https://www.i-programmer.info/news/149-security/18969-github-actions-raises-checkout-security.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260706-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "惡意 npm/Go 套件改用 VS Code task 觸發，繞過 npm v12 硬化",
+      "summary": "THN：html-to-gutenberg、fetch-page-assets 把惡意執行藏進 VS Code task（runOn: folderOpen），開資料夾即觸發、避開 npm lifecycle script，專為存活 npm v12 install-script 封鎖設計；從 blockchain 交易抓加密 JS、socket.io backdoor + 跨平台 Python infostealer。",
+      "tags": [
+        "supply-chain",
+        "npm",
+        "vscode",
+        "security",
+        "malware"
+      ],
+      "url": "https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html",
+      "source": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260706-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 釋出 llm-coding-agent 0.1a0：LLM 函式庫長成 agent framework",
+      "summary": "Simon 把演化成 agent framework 的 llm 函式庫拿來建 Claude-Code 風格 coding agent（讀改檔+執行指令），幾乎全由 Fable 5 以 spec 先行+TDD 自動寫成。`uvx --prerelease=allow --with llm-coding-agent llm code` 即跑，附 CodingAgent Python API。個人 LLM 工具鏈收斂成自建 coding agent 底座。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "llm-library",
+        "python",
+        "open-source"
+      ],
+      "url": "https://github.com/simonw/llm-coding-agent",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/jul/2/llm-coding-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-05",
