@@ -57884,6 +57884,28 @@
       "stars": 35,
       "createdDate": "2026-07-03",
       "license": "MIT"
+    },
+    {
+      "id": "20260707-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison 用 Claude Fable 把 sqlite-utils 推到 4.0rc2 — 全程 $149.25",
+      "summary": "Simon 讓 Claude Fable agent 幾乎獨力完成 sqlite-utils 4.0 release（37 prompts / 34 commits / +1,321 -190），揪出他自己沒發現的 delete_where() silent data loss transaction bug，再用 GPT-5.5 交叉 review。全程 unsubsidized API 成本 $149.25。Pattern：跨模型互相 review、雜活丟便宜模型 subagent、人只留在 on-the-loop。",
+      "tags": [
+        "ai-coding",
+        "agentic",
+        "subagents",
+        "cross-model-review",
+        "cost-transparency"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-05",
