@@ -57906,8 +57906,29 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260707-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-07",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "個人品牌不是靠爆紅，而是複利式技能累積",
+      "summary": "Dan Koe 拆解多數內容創作者失敗的根因：他們把它當成「靈感＋聰明貼文」，其實它是要同時精通品牌、行銷、心理學、平台機制的複合技能，需要數年累積。把熱愛的主題變成生計，靠的是系統性練功，不是病毒式時刻。",
+      "tags": [
+        "personal-brand",
+        "one-person-business",
+        "compounding",
+        "creator-economy"
+      ],
+      "url": "https://letters.thedankoe.com/p/my-friends-thought-i-was-crazy-too",
+      "source": "Dan Koe",
+      "sourceUrl": "https://letters.thedankoe.com/p/my-friends-thought-i-was-crazy-too",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-05",
-  "updatedAt": "2026-07-05T05:40:00+08:00"
+  "lastUpdated": "2026-07-07",
+  "updatedAt": "2026-07-07T05:40:00+08:00"
 }
