@@ -58032,6 +58032,66 @@
       "vram": null,
       "license": null,
       "id": "20260708-sw-003"
+    },
+    {
+      "id": "20260708-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-08",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Dario Amodei 親自下修自己的「一年做十年」AI 生技論",
+      "summary": "Amodei 在 Claude Science 場合公開修正 2024 年的 bold thesis：AI 讓生技「一年抵十年」的願景可能要再等十年。原因是生物學的複雜度與實驗週期無法被 AI 壓縮。對自己最出名的論點保持誠實校準，是創辦人避免自我催眠的關鍵。",
+      "tags": [
+        "intellectual-honesty",
+        "hype-calibration",
+        "ai-limits"
+      ],
+      "url": "https://www.statnews.com/2026/07/06/biotech-news-anthropic-ceo-dario-amodei-tempers-expectations/",
+      "source": "Dario Amodei",
+      "sourceUrl": "https://www.statnews.com/2026/07/06/biotech-news-anthropic-ceo-dario-amodei-tempers-expectations/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260708-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-08",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Better Models, Worse Tools — 模型變強但對第三方工具反而變差",
+      "summary": "Ronacher 觀察 Opus 4.8 / Sonnet 5 在遵守非原生 tool schema 時反而退步、自行發明多餘欄位。根因是模型被 RL 在自家 agent 的寬鬆工具生態上，對外部 harness 被隱性懲罰。Tool schema 不是中立抽象層，模型行為反映的是訓練環境。",
+      "tags": [
+        "ai-tooling",
+        "agent-design",
+        "tool-schema"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "source": "Armin Ronacher",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260708-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-08",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "sqlite-utils 4.0 — 睽違 6 年的大改版，主要由 Claude Fable 寫成",
+      "summary": "Simon Willison 發布 sqlite-utils 自 2020 以來第一個大版本（migrations、nested transactions、compound FK），大部分由 agentic AI 寫成。AI 真正的槓桿是把 solo maintainer 長期拖延的成熟專案大改版，啟動門檻降到近乎零。",
+      "tags": [
+        "solo-maintainer",
+        "ai-leverage",
+        "open-source"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-07",
