@@ -57927,6 +57927,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260708-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "timoncool/ACE-Step-Studio",
+      "summary": "「Suno at home」100% 本地音樂生成 studio，整首歌含人聲、歌詞、翻唱、remix、MV 一次做完。底層 ACE-Step 1.5 XL（4B DiT）。Windows 一鍵、離線可跑、LoRA+批次+AI 寫詞。",
+      "tags": [
+        "audio_music_ai",
+        "music-generation",
+        "ace-step",
+        "local"
+      ],
+      "url": "https://github.com/timoncool/ACE-Step-Studio",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/07/07/timoncool-ACE-Step-Studio.html",
+      "price": null,
+      "vram": "12GB+（BF16 模型 7.5GB）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260708-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-07-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ihatecsv/deepseek-ocr-client",
+      "summary": "DeepSeek-OCR 的即時桌面 GUI（Electron）：拖放上傳、即時辨識、點選複製、匯出 markdown+圖 ZIP。CUDA/MPS/CPU fallback。",
+      "tags": [
+        "cv_ocr",
+        "ai_devtools",
+        "electron",
+        "gui"
+      ],
+      "url": "https://github.com/ihatecsv/deepseek-ocr-client",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/07/07/ihatecsv-deepseek-ocr-client.html",
+      "price": null,
+      "vram": "DeepSeek-OCR 3B",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-07",
