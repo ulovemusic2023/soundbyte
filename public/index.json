@@ -57969,6 +57969,69 @@
       "price": null,
       "vram": "DeepSeek-OCR 3B",
       "license": "MIT"
+    },
+    {
+      "radar": "software-dev",
+      "date": "2026-07-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "sqlite-utils 4.0 正式版 — 內建 database schema migrations",
+      "summary": "Simon Willison 7/7 釋出 sqlite-utils 4.0：signature 功能是 Python-based schema migrations（migrations 追蹤表 + table.transform() 做超出 ALTER TABLE 的變更），外加 nested transactions（db.atomic() 用 savepoint）與 compound foreign key。整份 upgrade guide + release notes 全由 Claude 模型 + GPT-5.5 代寫，Claude Fable 5 測試階段揪出 4 release blocker + 10 issue。",
+      "tags": [
+        "dev-tool",
+        "sqlite",
+        "schema-migration",
+        "ai-written-docs"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260708-sw-001"
+    },
+    {
+      "radar": "software-dev",
+      "date": "2026-07-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code v2.1.202 — Dynamic Workflows 加 agent 數量檔位",
+      "summary": "7/6 更新：/config 新增 dynamic workflow size 設定（small/medium/large）直接控制 workflow 派出的 agent 數量，OpenTelemetry 補 workflow.run_id/workflow.name。把 agent fan-out 廣度與成本做成可調旋鈕，延續 Dynamic Workflows / ultracode 路線。",
+      "tags": [
+        "agentic",
+        "dynamic-workflows",
+        "agent-orchestration",
+        "cost-control"
+      ],
+      "url": "https://code.claude.com/docs/en/changelog",
+      "source": "Anthropic (Claude Code changelog)",
+      "sourceUrl": "https://code.claude.com/docs/en/changelog",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260708-sw-002"
+    },
+    {
+      "radar": "software-dev",
+      "date": "2026-07-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer — 2026 科技就業市場（下）：AI 履歷噪音的 Catch-22",
+      "summary": "Gergely Orosz 7/7：訪談 50+ 招募主管與工程師，市場雙面矛盾——公司找不到資深人才、合格工程師收不到面試回覆，主因 AI 生成履歷淹沒真人；AI 工程師/專才 offer 接不完，generalist 與 EM 苦戰；企業對『漂亮沒料』履歷與 AI 代面試失去信任，放棄 inbound recruiting 改走人脈。",
+      "tags": [
+        "hiring",
+        "ai-resume-noise",
+        "job-market",
+        "career"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/tech-jobs-market-in-2026-part-3-hiring",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/tech-jobs-market-in-2026-part-3-hiring",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "id": "20260708-sw-003"
     }
   ],
   "lastUpdated": "2026-07-07",
