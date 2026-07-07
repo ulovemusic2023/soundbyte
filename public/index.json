@@ -58092,6 +58092,152 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260708-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-08",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "synthetic-sciences/openscience",
+      "summary": "開源 AI 科研工作台。給一個研究目標，它會讀 paper、提假設、寫 code 跑實驗、查科學資料庫（UniProt/PDB/arXiv/ChEMBL…）再寫成報告。瀏覽器 workspace、model-agnostic（Anthropic/OpenAI/Google 皆可 BYOK）、290+ skills，定位是 Claude Science 的 open 替代。",
+      "tags": [
+        "ai-agent",
+        "research",
+        "local-first",
+        "skills"
+      ],
+      "url": "https://github.com/synthetic-sciences/openscience",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-24+stars%3A%3E50&type=repositories",
+      "stars": 1300,
+      "createdDate": "2026-07-03",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260708-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-08",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "isjiamu/gzh-design-skill",
+      "summary": "把 Markdown 一鍵排版成可直接貼進微信公眾號的精緻 HTML 的 agent skill，內建 6 套主題 + 主題生成器 + 雙關卡校驗。內容創作者的排版自動化，Claude Code / Codex 都能掛。",
+      "tags": [
+        "agent-skill",
+        "content",
+        "design",
+        "claude-code"
+      ],
+      "url": "https://github.com/isjiamu/gzh-design-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-24+topic%3Aclaude-code&type=repositories",
+      "stars": 975,
+      "createdDate": "2026-07-01",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260708-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-08",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "HKUDS/OpenOPC",
+      "summary": "HKUDS 團隊出品，主打「打造你自己的 AI 原生公司」——自建、自運行、自成長的多 agent 編排框架。跟 AgentSpace 同一實驗室，適合想玩 agent 團隊自動化的人觀察。",
+      "tags": [
+        "ai-agent",
+        "orchestration",
+        "multi-agent"
+      ],
+      "url": "https://github.com/HKUDS/OpenOPC",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-24+stars%3A%3E50&type=repositories",
+      "stars": 573,
+      "createdDate": "2026-07-01",
+      "license": "NOASSERT"
+    },
+    {
+      "id": "20260708-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-08",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "nexu-io/motion-anything",
+      "summary": "chat-native 的 agentic 動效引擎：一句話生成整頁動畫與 launch video，再在頁面上逐元件微調（4 triggers / 13 motion verbs / spring easing / keyframe editor）。403 套動效 recipe，匯出 CSS/React/Lottie/MP4/GIF，零 npm 依賴、無浮水印。前端/創作者做 landing page 動效可玩。",
+      "tags": [
+        "frontend",
+        "animation",
+        "agent",
+        "creator-tool"
+      ],
+      "url": "https://github.com/nexu-io/motion-anything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-24+topic%3Aai-agent&type=repositories",
+      "stars": 121,
+      "createdDate": "2026-07-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260708-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-08",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "olemeyer/rocketplaneIO",
+      "summary": "自架的 AI SRE for Kubernetes：零 instrumentation 的 eBPF observability，加上會用護欄化、自我驗證的動作去修問題的 copilot。BYO-LLM、可 air-gapped。跑 k8s 又想試 AI 維運的可以留意。",
+      "tags": [
+        "devops",
+        "observability",
+        "kubernetes",
+        "ai-agent"
+      ],
+      "url": "https://github.com/olemeyer/rocketplaneIO",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-24+topic%3Aai-agent&type=repositories",
+      "stars": 122,
+      "createdDate": "2026-07-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260708-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-08",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "MaximeRivest/riddle",
+      "summary": "給 reMarkable Paper Pro 的「湯姆瑞斗日記本」——用筆手寫，頁面把你的字吸走，再用流暢的手寫體回你。把 LLM 包成紙筆手感的創意 hack，玩味十足。",
+      "tags": [
+        "llm",
+        "e-ink",
+        "creative",
+        "device"
+      ],
+      "url": "https://github.com/MaximeRivest/riddle",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-24+stars%3A%3E50&type=repositories",
+      "stars": 1026,
+      "createdDate": "2026-07-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260708-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-08",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "Vexp-ai/horizon",
+      "summary": "完全離線、16GB 機器就能跑的可審計 coding agent。核心是 verification-first 層（硬跑測試 + 符號檢查 + agentic repair），讓本地 7B 在可驗證任務上逼近 671B teacher。MIT、預註冊、可重現——本地 AI coding 的實驗值得追。",
+      "tags": [
+        "local-llm",
+        "coding-agent",
+        "offline",
+        "verification"
+      ],
+      "url": "https://github.com/Vexp-ai/horizon",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-24+topic%3Alocal-llm&type=repositories",
+      "stars": 34,
+      "createdDate": "2026-07-06",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-07",
