@@ -58378,6 +58378,83 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260709-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-09",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "linxidnju/OpenTag",
+      "summary": "開源 channel-native agent gateway：把 Slack thread 路由到 Claude Code / Codex / OpenCode / Docker / HTTP agent 或自訂 CLI，內建 policy、approval、memory、audit log 與 artifact。等於把多 agent 協調搬進 Slack。",
+      "tags": [
+        "ai_agent",
+        "mcp",
+        "coding_tools"
+      ],
+      "url": "https://github.com/linxidnju/OpenTag",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 210,
+      "createdDate": "2026-06-27",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260709-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-09",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "op7418/guizang-material-illustration",
+      "summary": "歸藏的「材質插畫」skill：幫中文長文生成帶字解釋圖、圖表美化與參考配圖，走手感材質風而非 AI slop。做內容配圖很實用。",
+      "tags": [
+        "ai_agent",
+        "creator-tools"
+      ],
+      "url": "https://github.com/op7418/guizang-material-illustration",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 291,
+      "createdDate": "2026-07-07",
+      "license": "?"
+    },
+    {
+      "id": "20260709-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-09",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "sunflower-of-parchman/codex-hygiene",
+      "summary": "稽核與調校 Codex Desktop 的 context / tool surface 的 skill——看清 agent 載了哪些工具、吃掉多少 context 並瘦身。長 session 掉智商的解法之一。",
+      "tags": [
+        "coding_tools",
+        "ai_agent"
+      ],
+      "url": "https://github.com/sunflower-of-parchman/codex-hygiene",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 193,
+      "createdDate": "2026-07-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260709-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-09",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "anthropics/jacobian-lens",
+      "summary": "Anthropic 官方釋出的 global workspace interpretability 論文 companion code，用 Jacobian 觀察模型內部資訊流。非日常工具，但對 interpretability 有興趣值得追。",
+      "tags": [
+        "ai-infra",
+        "interpretability"
+      ],
+      "url": "https://github.com/anthropics/jacobian-lens",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-06-25",
+      "stars": 844,
+      "createdDate": "2026-07-02",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-09",
