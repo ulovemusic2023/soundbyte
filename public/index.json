@@ -58318,8 +58318,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260709-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-09",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Dario Amodei：能力 ≠ 影響力，別把 demo 當成落地",
+      "summary": "Anthropic CEO 罕見下修自己的預言——2024 年他說 AI 能讓生技「一年進步十年」，如今承認這願景可能要十年後才看得到。可轉移框架：再強的技術落地都卡在三個瓶頸——工具成熟天花板、組織適應時間、系統整備度（法規與基礎設施）。demo 很炸，不代表明天就變現。",
+      "tags": [
+        "ai-hype",
+        "timelines",
+        "first-principles"
+      ],
+      "url": "https://www.statnews.com/2026/07/06/anthropic-ai-biotech-impact/",
+      "source": "STAT News",
+      "sourceUrl": "https://www.statnews.com/2026/07/06/anthropic-ai-biotech-impact/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260709-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-09",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Sam Altman：贏家是「AI 原生」，不是「把 AI 黏上去」",
+      "summary": "Altman 判斷下一批爆款產品不會是「有 AI 的 Gmail」，而是從零重新設計核心工作流的東西。把 AI 當外掛貼在舊流程上天花板很低；真正機會是問「如果一開始就有 AI，這件事該怎麼做」。提醒做產品的人：別優化舊流程，重想它。",
+      "tags": [
+        "ai-first",
+        "product-design",
+        "workflow"
+      ],
+      "url": "https://www.bigtechnology.com/p/sam-altman-on-openais-plan-to-win",
+      "source": "Big Technology",
+      "sourceUrl": "https://www.bigtechnology.com/p/sam-altman-on-openais-plan-to-win",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260709-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-09",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Tobi Lütke：共識決策就是領導力的缺席",
+      "summary": "Shopify CEO 談 founder mode：共識往往是沒人願意負責的產物；創辦人模式的價值在於把合法性押在能快速轉向的人身上，而非押在一份計畫上。另一句思考：你不用會預測未來，只要活在別人的未來裡——每天用 beta、每天試新模型，提前建立直覺與品味。",
+      "tags": [
+        "founder-mode",
+        "leadership",
+        "living-in-the-future"
+      ],
+      "url": "https://www.acquired.fm/acq2-episodes/how-to-live-in-everyone-elses-future-with-shopify-ceo-tobi-lutke",
+      "source": "Acquired (ACQ2)",
+      "sourceUrl": "https://www.acquired.fm/acq2-episodes/how-to-live-in-everyone-elses-future-with-shopify-ceo-tobi-lutke",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-07",
-  "updatedAt": "2026-07-07T05:40:00+08:00"
+  "lastUpdated": "2026-07-09",
+  "updatedAt": "2026-07-09"
 }
