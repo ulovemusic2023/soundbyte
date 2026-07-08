@@ -58238,6 +58238,86 @@
       "stars": 34,
       "createdDate": "2026-07-06",
       "license": "MIT"
+    },
+    {
+      "id": "20260709-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Kenton Varda 對 AI 代寫 change description 下禁令",
+      "summary": "Cloudflare 的 Kenton Varda 宣布團隊禁用 AI 生成的 PR/commit message：AI 只複述看 code 就懂的細節，卻漏掉 review 真正需要的 high-level framing 與 context。",
+      "tags": [
+        "ai coding",
+        "code review",
+        "dev-practice"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/8/kenton-varda/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/8/kenton-varda/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260709-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Code v2.1.203 / 204：背景 session 可靠性大修",
+      "summary": "背景 session 卡死改自動 recover、切回 claude agents 不中斷 subagent、login 到期前先警告；204 修好 headless SessionStart hook 不 stream 導致 remote worker 被誤 reap。",
+      "tags": [
+        "coding-agent",
+        "background-agent",
+        "claude-code"
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "source": "anthropics/claude-code Releases",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260709-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "github-code Web Component（GPT-5.5 代寫）",
+      "summary": "Simon Willison 用一段 prompt 讓 GPT-5.5 生出 <github-code> Web Component：吃 GitHub blob URL、轉 raw、fetch 後顯示指定行號範圍。",
+      "tags": [
+        "web components",
+        "ai coding",
+        "code generation"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/7/github-code-component/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/7/github-code-component/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260709-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer AMA：AI-native SDLC 與就業市場",
+      "summary": "Gergely Orosz 回答訂閱者問題，涵蓋 AI 對 SWE 的衝擊、hiring／面試、職涯策略，重點討論 AI-native SDLC、junior 角色、tech debt 管理。",
+      "tags": [
+        "ai software engineering",
+        "hiring",
+        "ai-native-sdlc"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-ama",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-ama",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-07",
