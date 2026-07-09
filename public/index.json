@@ -58607,6 +58607,110 @@
       "price": null,
       "vram": "51.7M，CPU 可跑",
       "license": "未標示（model card 無 license 欄位）"
+    },
+    {
+      "id": "20260710-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Rewriting Bun in Rust — agent harness 重寫 100 萬行",
+      "summary": "Jarred Sumner 公布 Bun 從 Zig 全面改寫成 Rust。理由是 use-after-free / double-free / 忘記 free 這類記憶體 bug 佔了 bugfix list 一大半，safe Rust 直接把它們變成 compiler error。關鍵是他們的 test suite 是 TypeScript 寫的，等於一份 language-independent conformance suite，agent harness 可以拿它當自動驗證迴圈跑 11 天完成初版 port（用 pre-release Claude Fable 5）。Joel Spolsky 2000 年說「絕對不要重寫」的鐵律，被 coding agent 改寫了前提。Bun 已於 2025/12 被 Anthropic 收購。",
+      "tags": [
+        "agentic-rewrite",
+        "conformance-suite-harness",
+        "rust",
+        "bun",
+        "paradigm-shift"
+      ],
+      "url": "https://bun.com/blog/bun-in-rust",
+      "source": "Bun Blog",
+      "sourceUrl": "https://bun.com/blog/bun-in-rust",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260710-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GPT-5.6 家族 GA：Luna / Terra / Sol，multi-agent 進 API 核心",
+      "summary": "OpenAI 旗艦模型 7/9 正式 GA，三個尺寸定價 $1/$6、$2.50/$15、$5/$30（per 1M in/out）。宣稱在 Agents' Last Exam（55 領域長流程 agentic 評測）Sol 拿 53.6 超過 Claude Fable 5 達 13.1 分。但自報 SWE-Bench Pro 反被 Fable 5 壓制（80% vs 64.6%）。真正該注意的是 API 新原語：Programmatic Tool Calling（模型自己寫 JavaScript 編排 tool call）、Multi-agent（原生 spin up subagent）、prompt cache breakpoints — subagent 與 code-orchestrated tool use 從 harness 層下沉成平台原語。⚠️ openai.com 對 curl 回 403（bot 阻擋），以 Simon Willison 實測文為驗證來源。",
+      "tags": [
+        "gpt-5.6",
+        "programmatic-tool-calling",
+        "multi-agent-api",
+        "paradigm-shift"
+      ],
+      "url": "https://openai.com/index/gpt-5-6/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/9/gpt-5-6/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260710-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI：SWE-bench Pro 約 30% 題目是壞的",
+      "summary": "就在 GPT-5.6 發布前一天，OpenAI 發文 audit SWE-bench Pro，估計約 30% 的 task 本身有問題（測試不可解或驗證錯誤），建議所有模型開發者重新檢視結果。時機當然可疑 — 這正是 Fable 5 壓過他們的那個 benchmark。但 coding benchmark 的可信度確實是整個產業的共同債務：我們拿來決定用哪個模型寫 code 的數字，可能有三成是噪音。",
+      "tags": [
+        "benchmark-integrity",
+        "swe-bench-pro",
+        "eval-audit"
+      ],
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/9/gpt-5-6/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260710-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Meta Muse Spark 1.1 — 第一個開 API 的 Spark 模型",
+      "summary": "接續 4 月的 Muse Spark，1.1 是第一個提供 API 的版本，Meta 主打 agentic tool calling 與 computer use 的顯著改善。Evaluation Report 裡「Attractor States in Self-Conversation」段落很有意思：兩個模型互相對話會收斂到存在主義式陳述。Simon Willison 已釋出 llm-meta-ai plugin，可用 llm CLI 直接呼叫。",
+      "tags": [
+        "muse-spark",
+        "meta",
+        "agentic-tool-calling",
+        "computer-use"
+      ],
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260710-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code v2.1.205：封鎖 session transcript 竄改",
+      "summary": "新增 auto mode rule 阻止 agent 竄改自己的 session transcript 檔案 — agent 自我監督的基礎防線。另外修掉 --json-schema 在 schema 無效時靜默輸出非結構化結果、--max-turns 觸頂時使用者訊息被吞掉、Windows worktree 移除誤刪 NTFS junction 外部檔案等問題。",
+      "tags": [
+        "claude-code",
+        "agent-safety",
+        "transcript-tampering"
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-09",
