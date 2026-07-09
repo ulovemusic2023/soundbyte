@@ -58455,6 +58455,158 @@
       "stars": 844,
       "createdDate": "2026-07-02",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260710-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "nvidia/Nemotron-Labs-Audex-30B-A3B",
+      "summary": "NVIDIA 把 Nemotron-Cascade-2 30B-A3B MoE 擴充成統一的 audio-text LLM：擴充 vocabulary 收 discrete audio tokens，加一顆 audio encoder。一顆模型同時做 audio understanding、ASR、speech translation、TTS、audio generation 和 speech-to-speech，而且文字端的 reasoning / long-context / agentic 能力幾乎沒退化。支援 1M context 與 thinking / instruct 雙模式，官方推 vLLM 0.20.0 跑。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai",
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/nvidia/Nemotron-Labs-Audex-30B-A3B",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/nvidia/Nemotron-Labs-Audex-30B-A3B",
+      "price": null,
+      "vram": "30B MoE（3B active）；BF16 約 60GB，Q4 約 17GB，16GB 需少量 offload",
+      "license": "NVIDIA Open Model License (other)"
+    },
+    {
+      "id": "20260710-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "InternScience/Agents-A1",
+      "summary": "35B-A3B MoE agentic model，主打「scale horizon, not parameters」——用 long-horizon trajectory 和三階段訓練（full-domain SFT → domain teacher → multi-teacher 蒸餾）逼近 trillion-parameter 表現。已有官方 quantized variants 和 mlx-community 版本，7/8 官方預告 4B 版即將釋出，那個對本地 assistant 才是真正可用的尺寸。",
+      "tags": [
+        "llm_inference",
+        "llm_training",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/InternScience/Agents-A1",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/InternScience/Agents-A1",
+      "price": null,
+      "vram": "35B MoE；Q4 約 19-20GB 超出 16GB，需 Q3 或 partial offload",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260710-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "unsloth/DeepSeek-V4-Flash-GGUF",
+      "summary": "DeepSeek-V4-Flash 的 GGUF 量化版，284B。30 天 23k 下載、7/9 還在更新，是目前 llama.cpp 圈子搬得最勤的大模型之一。對 16GB 卡沒有幻想空間，但如果之後要租雲端跑 self-host inference，這是現成的 artifact。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF",
+      "price": null,
+      "vram": "284B；即使 Q4 也遠超單卡",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "summary": "Qwen3.6-27B 的 reasoning fine-tune，6 小時前才更新、已經 172 likes。27B 在 Q4 下大約壓到 16GB 邊緣，是這批裡少數「真的可能塞進 5070 Ti」的 reasoning 模型。",
+      "tags": [
+        "llm_training",
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
+      "price": null,
+      "vram": "27B；Q4 約 16GB，卡在臨界值",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260710-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "tencent/Hy3",
+      "summary": "騰訊 Hy3，299B text generation，Apache-2.0。三天內衝到 HF trending 第一、600 likes。Apache-2.0 授權在這個參數量級是罕見的大方，商用沒有授權地雷。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/tencent/Hy3",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/tencent/Hy3",
+      "price": null,
+      "vram": "299B",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260710-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "meituan-longcat/LongCat-2.0",
+      "summary": "美團 LongCat-2.0，1.8T 參數、MIT 授權。純粹的規模宣示，本地無關，但 MIT 放一個 1.8T 模型出來這件事本身值得記一筆。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/meituan-longcat/LongCat-2.0",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0",
+      "price": null,
+      "vram": "1.8T",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "microsoft/SkillOpt",
+      "summary": "微軟的 text-space optimizer：把 agent 的 natural-language skill 當成可訓練參數，用 epoch / batch size / learning rate / validation gate 那套流程去優化，但完全不碰 model weights，產出物就是一份 best_skill.md。v0.2.0 加了 SkillOpt-Sleep——夜間離線自我演化（harvest → mine → replay → consolidate），而且 plugin shell 直接支援 Claude、Codex、Copilot、Devin 和 OpenClaw。",
+      "tags": [
+        "ai_devtools",
+        "llm_training"
+      ],
+      "url": "https://github.com/microsoft/SkillOpt",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/microsoft/SkillOpt",
+      "price": null,
+      "vram": "不訓練權重，CPU 即可",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-07-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "SupraLabs/Supra-Router-51M",
+      "summary": "51.7M 參數的 routing 模型，判斷一個 prompt 該留在本地 SLM 還是丟去雲端 frontier model。手法是 multi-task sequence generation——先吐出 domain / complexity / math / code 旗標再吐 route token，作者宣稱這樣能避免 weight collapse。⚠️ 訓練資料只有 992 rows、5 epochs，且 model card 未標授權，當概念驗證看就好。",
+      "tags": [
+        "infra_runtime",
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/SupraLabs/Supra-Router-51M",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/SupraLabs/Supra-Router-51M",
+      "price": null,
+      "vram": "51.7M，CPU 可跑",
+      "license": "未標示（model card 無 license 欄位）"
     }
   ],
   "lastUpdated": "2026-07-09",
