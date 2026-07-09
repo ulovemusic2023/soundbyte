@@ -58711,6 +58711,105 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260710-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-10",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Bun 用 Rust 重寫：coding agent 把「單向門」變成「雙向門」",
+      "summary": "Jarred Sumner 花 11 天把 22M 月下載量的 Bun 從 Zig 全量重寫成 Rust。關鍵不是 Rust，是他那句「直到最近，程式語言選擇對 Bun 這種專案來說都是單向決策」。Joel Spolsky 2000 年講「絕對不要重寫」的鐵律，前提是重寫成本高到不可逆；當 agent 能自動化大部分移植、TypeScript 測試套件能當 conformance suite 用，那個前提就崩了。對創業者的意思是：你以為的 one-way door（技術棧、架構、甚至產品形態）需要重新盤點，很多已經降級成 two-way door。",
+      "tags": [
+        "one-way-door",
+        "agentic-engineering",
+        "reversible-decision"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/",
+      "source": "Jarred Sumner (Bun / Anthropic)",
+      "sourceUrl": "https://bun.com/blog/bun-in-rust",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260710-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-10",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Ben Thompson 幫祖克柏寫的財報電話會逐字稿",
+      "summary": "Ben Thompson 用第一人稱寫了一篇「祖克柏該講但沒講」的 earnings call 講稿，核心是一句自我批評：多年來最大的錯誤是「抗拒承認 Meta 到底是什麼，花太多時間模仿前輩科技巨頭」。他把 Meta 的歷史濃縮成兩條原則 — 相信 revealed preference（用戶嘴上罵 feed、身體卻狂用），以及相信自己的產品直覺。這是一個給創辦人的定位練習：你的公司真正是什麼，而不是你希望它像誰。",
+      "tags": [
+        "positioning",
+        "revealed-preference",
+        "founder-identity"
+      ],
+      "url": "https://stratechery.com/2026/a-script-for-mark-zuckerberg/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/a-script-for-mark-zuckerberg/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260710-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-10",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Adam Mosseri：產品團隊正從 13 人專才編制縮成 4–6 人通才 pod",
+      "summary": "管 30 億用戶的 Instagram 負責人說，2026 年產品團隊的標準編制正在瓦解：從 baker's-dozen 的專才配置，收斂成 4–6 人的通才小隊，並出現「product staff」這種把 PM、design、data science、research 揉成一個人的角色。他反直覺的一點是仍然看多設計師 — 職能邊界溶解時，品味變成稀缺資源。對小團隊是好消息：你原本就只能通才。",
+      "tags": [
+        "team-design",
+        "generalist",
+        "org-structure"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/adam-mosseri-ai-is-a-tailwind-for",
+      "source": "Adam Mosseri • Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/adam-mosseri-ai-is-a-tailwind-for",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260710-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-07-10",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "什麼是 harness？以及什麼時候不該用 Claude Code",
+      "summary": "「不是模型的問題，是 harness 的問題」被講到爛，但沒人定義 harness。Claire Vo 現場用 Claude Agent SDK 幫 ChatPRD 蓋了一個 Sentry bug 除錯 harness：自動蒐證、root cause 分析、產出後續 artifact，不用再打「親愛的 agent 請修 bug」。判準很清楚 — 重複性高、結構固定的 workflow 才值得蓋 harness；一次性探索就用通用工具。",
+      "tags": [
+        "agent-harness",
+        "workflow-automation",
+        "claude-agent-sdk"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/what-a-harness-is-and-how-to-build",
+      "source": "Claire Vo • How I AI (Lenny's)",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/what-a-harness-is-and-how-to-build",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260710-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-07-10",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "修產生 code 的流程，而不是手動修 code",
+      "summary": "面對 +100 萬行 LLM 寫的 PR，Bun 團隊的答案不是逐行 review，而是百萬條斷言的語言無關測試套件 + 對抗式 code review；出錯時修的是產生 code 的流程本身。",
+      "tags": [
+        "agentic-engineering",
+        "process-over-artifact"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-09",
