@@ -58810,6 +58810,298 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260710-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "yynxxxxx/Codex-X",
+      "summary": "Rust 寫的 Codex 桌面管理器，可以切換 Codex 版本與 instruct 設定檔。685 星、113 forks，六天內衝上來，還在每天 push。如果你同時在跑多組 Codex 設定，這個省去手動改 config 的麻煩。",
+      "tags": [
+        "coding-agent",
+        "codex",
+        "rust",
+        "developer-tool"
+      ],
+      "url": "https://github.com/yynxxxxx/Codex-X",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-26+stars%3A%3E50&s=stars",
+      "stars": 685,
+      "createdDate": "2026-07-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Nanako0129/pilotfish",
+      "summary": "Claude Code 的 multi-model orchestration layer：frontier model 負責 plan，便宜的 model 負責 execute，再用 verification 把關品質。一句 prompt 安裝。開站兩天 251 星 — 這正是「用貴的想、用便宜的做」的成本結構實作。",
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "orchestration",
+        "ai-agent"
+      ],
+      "url": "https://github.com/Nanako0129/pilotfish",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 251,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "ronak-create/FableCut",
+      "summary": "Zero-dependency 的瀏覽器影片剪輯器，設計成讓 AI agent 直接驅動：JSON timeline + MCP + REST + live-reloading UI。對做內容的人是個訊號 — NLE 開始長出 agent 介面，不只是給人點的 GUI。",
+      "tags": [
+        "mcp",
+        "video-editing",
+        "ai-agent",
+        "creator-tool"
+      ],
+      "url": "https://github.com/ronak-create/FableCut",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 215,
+      "createdDate": "2026-07-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "jmerelnyc/Talos",
+      "summary": "把閒置 GPU 接上 Talos network 跑 open-model inference，透過 WebSocket 收工作、回報 uptime 換取 payout。⚠️ 815 星只有 13 forks，星/fork 比例異常，加上牽涉 payout 機制 — 觀察可以，接錢包前先看清楚。",
+      "tags": [
+        "gpu",
+        "local-llm",
+        "distributed-computing",
+        "ollama"
+      ],
+      "url": "https://github.com/jmerelnyc/Talos",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-26+stars%3A%3E50&s=stars",
+      "stars": 815,
+      "createdDate": "2026-07-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "uzairansaruzi/hermex",
+      "summary": "Hermes agent 的原生 iPhone client。agent 的手機端介面正在變成標配 — 跟 OpenClaw 用 Telegram 當前端是同一個問題的不同解法。",
+      "tags": [
+        "ai-agent",
+        "ios",
+        "mobile-client"
+      ],
+      "url": "https://github.com/uzairansaruzi/hermex",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-26+stars%3A%3E50&s=stars",
+      "stars": 709,
+      "createdDate": "2026-07-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "simonlin1212/Vibe-Research",
+      "summary": "個人投研 agent：每日複盤、資訊雷達、個股數據、持倉追蹤，資料與功能配齊、由你自己的 LLM 驅動。A股/美股/港股。架構值得看 — 這就是 Radar 模式套在投資領域。",
+      "tags": [
+        "ai-agent",
+        "research-agent",
+        "mcp",
+        "finance"
+      ],
+      "url": "https://github.com/simonlin1212/Vibe-Research",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 586,
+      "createdDate": "2026-07-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Sahir619/fable-method",
+      "summary": "把 Claude Fable 5 的工作方式蒸餾成任何 model 都能跑的 skills，並附上一組 eval 確保它沒在唬爛。Think / act / prove 三段式。重點在那組 eval — 有驗證的 skill 才不是許願。",
+      "tags": [
+        "agent-skills",
+        "claude-code",
+        "evaluation",
+        "coding-agent"
+      ],
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 64,
+      "createdDate": "2026-07-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "openai/codex-plugin-cc",
+      "summary": "OpenAI 官方出的 plugin，讓你在 Claude Code 裡呼叫 Codex 來 review code 或 delegate 任務。本週 +4,890 星。兩大陣營的 coding agent 開始互相插槽 — 這比誰的 model 強更值得注意。",
+      "tags": [
+        "codex",
+        "claude-code",
+        "code-review",
+        "coding-agent"
+      ],
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 27142,
+      "createdDate": "2026-03-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260710-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "alibaba/page-agent",
+      "summary": "純 JavaScript 的 in-page GUI agent，用自然語言操作網頁介面，不靠外部瀏覽器驅動。本週 +4,295 星。跟 Playwright 那套 headless 路線是完全不同的切法 — agent 住在頁面裡。",
+      "tags": [
+        "ai-agent",
+        "browser-automation",
+        "gui-agent"
+      ],
+      "url": "https://github.com/alibaba/page-agent",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 25486,
+      "createdDate": "2025-09-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "diegosouzapw/OmniRoute",
+      "summary": "一個 endpoint 接 231+ providers（50+ 免費），可掛 Claude Code / Codex / Cursor / Cline。宣稱 stacked compression 省 15-95% token、自動 fallback、支援 MCP/A2A。⚠️ 省 token 的數字是自稱，沒有第三方驗證。",
+      "tags": [
+        "ai-gateway",
+        "llm-router",
+        "claude-code",
+        "token-compression"
+      ],
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 14249,
+      "createdDate": "2026-02-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "TencentCloud/CubeSandbox",
+      "summary": "騰訊雲開源的 agent sandbox，Rust 寫的，主打 instant / concurrent / secure / lightweight。本週 +2,106 星。讓 agent 跑 code 而不炸掉主機，已經是 agent infra 的標配元件。",
+      "tags": [
+        "sandbox",
+        "ai-agent",
+        "rust",
+        "infra"
+      ],
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 9314,
+      "createdDate": "2026-04-10",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260710-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "facebook/astryx",
+      "summary": "Meta 開源的 design system，主打 fully customizable + agent ready。本週 +4,943 星。「agent ready」正在變成 design system 的規格項 — 元件要能被 agent 讀懂、組裝，不只給人用。",
+      "tags": [
+        "design-system",
+        "agent-ready",
+        "typescript",
+        "frontend"
+      ],
+      "url": "https://github.com/facebook/astryx",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 7452,
+      "createdDate": "2026-01-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260710-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "elder-plinius/T3MP3ST",
+      "summary": "本週新倉庫的星數冠軍（七天 4,147 星）：autonomous red teaming 的 multi-agent meta-harness。安全用途先不論，它的 multi-agent 編排架構本身值得讀 — 這類對抗性 harness 通常最早把 agent 協作逼到極限。",
+      "tags": [
+        "security",
+        "multi-agent",
+        "red-team",
+        "harness"
+      ],
+      "url": "https://github.com/elder-plinius/T3MP3ST",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-06-26+stars%3A%3E50&s=stars",
+      "stars": 4147,
+      "createdDate": "2026-07-02",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260710-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-07-10",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "liu-ethan/golem",
+      "summary": "Go 原生的 AI coding agent CLI：單一 binary、三層記憶、YAML 權限規則，TUI 對齊 Claude Code / Codex。才 23 星但架構乾淨，單 binary 部署對自架 agent 很有吸引力。⚠️ 尚未附 license。",
+      "tags": [
+        "coding-agent",
+        "golang",
+        "cli",
+        "tui"
+      ],
+      "url": "https://github.com/liu-ethan/golem",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 23,
+      "createdDate": "2026-07-04",
+      "license": "none"
     }
   ],
   "lastUpdated": "2026-07-09",
