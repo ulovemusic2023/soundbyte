@@ -59126,8 +59126,112 @@
       "license": "Apache-2.0",
       "stars": 281,
       "createdDate": "2026-07-11"
+    },
+    {
+      "id": "20260711-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-11",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI GPT-5.6 家族 GA：Luna / Terra / Sol",
+      "summary": "OpenAI 旗艦模型 7/9 正式 GA，一次三尺寸（Luna $1/$6、Terra $2.50/$15、Sol $5/$30 per 1M token），皆 1M context、128K 輸出、2/16 knowledge cutoff。主打 long-horizon agentic：Sol 在 Agents' Last Exam 拿 53.6，比 Claude Fable 5 高 13.1 分；但 SWE-Bench Pro 反被 Fable 5 壓（80% vs 64.6%）。同步推 Programmatic Tool Calling——模型自己寫 JavaScript 編排 tool call，橋接 MCP 與 terminal。",
+      "tags": [
+        "gpt-5.6",
+        "agentic",
+        "programmatic-tool-calling",
+        "model-release"
+      ],
+      "url": "https://openai.com/index/gpt-5-6/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/9/gpt-5-6/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260711-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-11",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Meerkat：跨 330+ 資料中心的全球共識服務（QuePaxa 新演算法）",
+      "summary": "Cloudflare Research 公開 Meerkat——用全新共識演算法 QuePaxa，在遍布網際網路的 330+ DC 上提供 strongly consistent、fault-tolerant 的 KV store，即使部分 DC/連線掛掉仍保證寫入可用、讀者永不看到不一致狀態。把「全球強一致 control-plane」當工程目標，直面 Paxos/Raft 在跨洲高延遲+不可靠鏈路下的痛點。",
+      "tags": [
+        "distributed-systems",
+        "consensus",
+        "quepaxa",
+        "strong-consistency"
+      ],
+      "url": null,
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/meerkat-introduction/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260711-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code v2.1.206：/doctor 幫你砍肥大的 CLAUDE.md",
+      "summary": "7/9 版新增 /doctor 檢查，主動建議把 checked-in CLAUDE.md 裡「Claude 自己就能從 codebase 推得」的內容刪掉——context hygiene 變成內建工具。另外 /commit-push-pr 現在會自動放行 push 到 repo 設定的 pushDefault remote（不再只認 origin），EnterWorktree 進到 .claude/worktrees/ 外的 worktree 前會先確認。",
+      "tags": [
+        "coding-agent",
+        "claude-code",
+        "context-hygiene"
+      ],
+      "url": null,
+      "source": "Anthropic (Claude Code changelog)",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260711-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare：與其等更好的後量子簽章，不如先用 ML-DSA",
+      "summary": "NIST 正推進 9 個新的 post-quantum signature 候選演算法，Cloudflare 逐一評估後主張：它們潛力大但還沒到位，現階段就用手上最好的 ML-DSA。務實面對 PQC 遷移的時間壓力，別為了完美方案拖延遷移。",
+      "tags": [
+        "post-quantum",
+        "cryptography",
+        "security",
+        "ml-dsa"
+      ],
+      "url": null,
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/ml-dsa-will-have-to-do/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260711-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "TencentDB Agent Memory：全本地、零外部 API 的 agent 長期記憶",
+      "summary": "GitHub trending 上的騰訊雲開源專案，用 4-tier progressive pipeline 給 AI agent 全本地長期記憶，主打 zero external API dependency（記憶不外流）。8K+ star。在「agent memory」這條 2026 熱門賽道上，補上 self-hosted / 隱私優先的選項。",
+      "tags": [
+        "ai-agent",
+        "agent-memory",
+        "self-hosted",
+        "open-source"
+      ],
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "source": "TencentCloud",
+      "sourceUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-09",
-  "updatedAt": "2026-07-09"
+  "lastUpdated": "2026-07-11",
+  "updatedAt": "2026-07-11T05:20:00+08:00"
 }
