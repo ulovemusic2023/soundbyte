@@ -59230,8 +59230,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260711-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-11",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Game Pass 之死：sunk cost 的教科書案例",
+      "summary": "XBOX 裁員 20%（3,200 人），被寄予厚望的 Game Pass 策略正式失敗。Ben Thompson 的重點不在遊戲而在管理學：持續加碼一個贏不了的策略，往往不是因為它會贏，而是「已經投太多、停不下來」——這就是 sunk cost fallacy。真正的能力是認賠止血、把資源移到有勝算的戰場。",
+      "tags": [
+        "sunk-cost",
+        "management-mistakes",
+        "internet-economics"
+      ],
+      "url": "https://stratechery.com/2026/xbox-cuts-bundling-and-the-internet-solvent-transaction-coordination-and-sunk-costs/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/xbox-cuts-bundling-and-the-internet-solvent-transaction-coordination-and-sunk-costs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260711-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-11",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "要做出「下一個大東西」，你就得侵犯隱私——也許你不該做",
+      "summary": "談 AR 眼鏡的物理現實：要即時疊加資訊，就得在眼睛旁放一顆全程錄影、上傳雲端的相機，這是前提不是選項。Nilay Patel 的洞見是一個 via negativa 式的產品決策：有些產品的社會代價太高，最有智慧的選擇可能是「不做」。",
+      "tags": [
+        "product-ethics",
+        "via-negativa",
+        "ar"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/10/nilay-patel/",
+      "source": "Nilay Patel • The Vergecast (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/10/nilay-patel/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-11",
-  "updatedAt": "2026-07-11T05:20:00+08:00"
+  "updatedAt": "2026-07-11T21:35:00Z"
 }
