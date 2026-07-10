@@ -59102,6 +59102,30 @@
       "stars": 23,
       "createdDate": "2026-07-04",
       "license": "none"
+    },
+    {
+      "id": "20260711-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenMOSS/MOSS-Transcribe-Diarize 0.9B",
+      "summary": "一次過把長音檔轉成「帶說話者標籤 + 時間戳」的結構化逐字稿——ASR 和 speaker diarization 合成單一 end-to-end 模型，不用再串接兩套 pipeline。架構是 Qwen3-0.6B decoder + Whisper-Medium encoder，還能標記聲學事件。中英長音檔 CER/cpCER 全面壓過 Doubao、ElevenLabs、Gemini 3 Pro。Podcast、訪談、會議逐字稿的本地首選。",
+      "tags": [
+        "asr",
+        "diarization",
+        "whisper",
+        "tts_speech",
+        "speech-to-text"
+      ],
+      "url": "https://github.com/OpenMOSS/MOSS-Transcribe-Diarize",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
+      "price": null,
+      "vram": "0.9B, local-ready on 16GB",
+      "license": "Apache-2.0",
+      "stars": 281,
+      "createdDate": "2026-07-11"
     }
   ],
   "lastUpdated": "2026-07-09",
