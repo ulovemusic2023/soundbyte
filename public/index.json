@@ -59270,6 +59270,106 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260711-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-11",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "JustVugg/colibri",
+      "summary": "Pure-C, zero-dep engine running GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — experts streamed from disk.",
+      "tags": [
+        "local-llm",
+        "inference",
+        "moe"
+      ],
+      "url": "https://github.com/JustVugg/colibri",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 2049,
+      "createdDate": "2026-07-01",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260711-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-11",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "Neeeophytee/finding-unknowns-skills",
+      "summary": "8 Claude Code/Codex skills for surfacing unknowns before they get expensive: blindspot pass, interviews, references, plans, merge quiz.",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "codex"
+      ],
+      "url": "https://github.com/Neeeophytee/finding-unknowns-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 160,
+      "createdDate": "2026-07-05",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260711-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-11",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "oxbshw/watch-skill",
+      "summary": "Gives any AI agent the ability to watch video and review its own work. MCP+CLI+REST, scene-aware frames, OCR, local transcription.",
+      "tags": [
+        "mcp",
+        "video",
+        "agent-skill"
+      ],
+      "url": "https://github.com/oxbshw/watch-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 145,
+      "createdDate": "2026-07-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260711-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-11",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "bolivestilo/Homekit",
+      "summary": "Gives any AI agent direct physical control over Apple Home through one open interface — lights, locks, sensors.",
+      "tags": [
+        "ai-agent",
+        "homekit",
+        "automation"
+      ],
+      "url": "https://github.com/bolivestilo/Homekit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 66,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260711-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-11",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "dunglas/prompt-mac",
+      "summary": "One-shot AI-first macOS setup script for Apple Silicon by Kévin Dunglas (FrankenPHP/Symfony).",
+      "tags": [
+        "macos",
+        "dev-setup",
+        "cli"
+      ],
+      "url": "https://github.com/dunglas/prompt-mac",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 37,
+      "createdDate": "2026-07-09",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-11",
