@@ -59370,6 +59370,108 @@
       "stars": 37,
       "createdDate": "2026-07-09",
       "license": "MIT"
+    },
+    {
+      "id": "20260712-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-12",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LangChain OpenWiki Brains — 給 agent 主動式記憶",
+      "summary": "OpenWiki 0.1.0 從 codebase 文件擴張成通用 agent memory framework：接上 Gmail/Notion/git/X/HN/web search，自動整理成持續更新的 local wiki 當 agent 記憶。proactive（主動抓）取代 reactive 記憶。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "proactive-agent-memory",
+        "rag"
+      ],
+      "url": "https://www.langchain.com/blog/introducing-openwiki-brains-general-purpose-wiki-memory-for-agents",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/introducing-openwiki-brains-general-purpose-wiki-memory-for-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260712-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor Developer Habits Report — 兩年用量數據",
+      "summary": "coding 速度年增一倍、agent code 通過 review 比率創新高。p99 每週產 30–40K 行(=45 個中位數工程師)、90% token 是 input token(10:1 讀寫比)、input token 成 AI 主要成本。",
+      "tags": [
+        "ai-coding",
+        "power-user-gap",
+        "read-write-token-ratio",
+        "agentic-coding-economics"
+      ],
+      "url": "https://cursor.com/insights",
+      "source": "Cursor (via The Pragmatic Engineer)",
+      "sourceUrl": "https://blog.pragmaticengineer.com/the-pulse-interesting-ai-coding-stats-from-cursor/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260712-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code v2.1.207 — Auto mode GA + consent 安全修補",
+      "summary": "Auto mode 在 Bedrock/Vertex/Foundry 免 opt-in。安全修補：非互動執行(claude -p、SDK)過去把 remote managed settings 永久記成已同意卻沒跳 consent 對話框。另修 agent teams 崩潰迴圈與假 prompt-injection 警告。",
+      "tags": [
+        "coding-agent",
+        "ai-agent",
+        "security"
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+      "source": "Anthropic (Claude Code)",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260712-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Show HN: Ant — 自帶引擎的 JavaScript runtime + 整套生態",
+      "summary": "內建自己的 JS engine、package manager、ants.land registry、部署/hosting 平台、類 Electron 的 Ant Desktop。端到端又相容既有 JS 生態。HN 68 分，仍屬早期。",
+      "tags": [
+        "new_languages",
+        "javascript-runtime",
+        "deno-bun-alternative"
+      ],
+      "url": "https://antjs.org",
+      "source": "Hacker News (Show HN)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=48875377",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260712-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare Smart Tiered Cache 支援公有雲區域",
+      "summary": "origin 架在 AWS/GCP/Azure/Oracle Cloud 時，用 customer-provided cloud region hints 精準指定 upper tier，減少跨區回源延遲與成本。",
+      "tags": [
+        "devops_infra",
+        "cdn",
+        "caching"
+      ],
+      "url": "https://blog.cloudflare.com/smart-tiered-cache-for-public-clouds/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/smart-tiered-cache-for-public-clouds/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-11",
