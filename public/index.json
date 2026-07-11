@@ -59472,8 +59472,207 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260712-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "scroll-world",
+      "summary": "Agent skill：把任何品牌/產品變成可捲動的 3D 沉浸網頁世界，一句話生出 scrollytelling landing page。",
+      "tags": [
+        "agent-skill",
+        "web",
+        "creative-coding"
+      ],
+      "url": "https://github.com/oso95/scroll-world",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 855,
+      "createdDate": "2026-07-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260712-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "brain0",
+      "summary": "AI 寫的 code 的黑盒子：被動記錄 commit↔agent prompt 決策圖，drift 偵測、DLP 稽核、簽章 provenance。Rust、離線優先。",
+      "tags": [
+        "ai-coding",
+        "mcp",
+        "provenance"
+      ],
+      "url": "https://github.com/Brain0-ai/brain0",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 336,
+      "createdDate": "2026-07-02",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260712-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "speak-human-tw",
+      "summary": "繁中去 AI 味改寫 skill，抓 38 種 AI 寫作痕跡，校正中國用語與半形標點。Claude Code/Codex/Cursor 通用。",
+      "tags": [
+        "claude-code",
+        "writing",
+        "zh-tw"
+      ],
+      "url": "https://github.com/Raymondhou0917/speak-human-tw",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 266,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260712-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "contextvc",
+      "summary": "Git-native context control plane：把 coding agent 的 context 當版本控制物件，多 agent/session 共用可追溯上下文。",
+      "tags": [
+        "ai-coding",
+        "context",
+        "mcp"
+      ],
+      "url": "https://github.com/HaochengLu/contextvc",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 122,
+      "createdDate": "2026-07-05",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260712-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "ditto",
+      "summary": "挖你的 Claude Code/Codex log 煉成 local you.md agent profile，讓 agent 記住你的風格。本地執行。",
+      "tags": [
+        "claude-code",
+        "memory",
+        "personalization"
+      ],
+      "url": "https://github.com/ohad6k/ditto",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 104,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260712-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "open-memory-protocol",
+      "summary": "把 AI 記憶做成跨工具/session/裝置可攜的開放標準（memory 版的 MCP）。早期但方向值得追。",
+      "tags": [
+        "mcp",
+        "memory",
+        "protocol"
+      ],
+      "url": "https://github.com/SMJAI/open-memory-protocol",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 68,
+      "createdDate": "2026-06-29",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260712-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "openclaw-voice-call-realtime",
+      "summary": "OpenClaw plugin：走 Twilio+OpenAI Realtime 做真實通話，內建 in-call tools、逐字稿、來電篩選。",
+      "tags": [
+        "openclaw",
+        "voice",
+        "realtime"
+      ],
+      "url": "https://github.com/TristanBrotherton/openclaw-voice-call-realtime",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 62,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260712-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "motiscope",
+      "summary": "餵螢幕錄影，分析動態(timing/easing/stagger/loop)重建成 GSAP/CSS/Framer Motion/Lottie 程式碼。",
+      "tags": [
+        "frontend",
+        "motion",
+        "creative"
+      ],
+      "url": "https://github.com/KumarSashank/motiscope",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 54,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260712-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "knockoff",
+      "summary": "Chrome 擴充：過濾 Amazon 假品牌/貼牌垃圾，只留有信譽的品牌。這週衝很快、實用度高。",
+      "tags": [
+        "browser-extension",
+        "productivity"
+      ],
+      "url": "https://github.com/Shpigford/knockoff",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1760,
+      "createdDate": "2026-07-06",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260712-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-07-12",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "generative-media-skills",
+      "summary": "一組研究背書的 agent skills，涵蓋 image/video/audio/voice 生成式媒體製作，跨多 coding agent 通用。",
+      "tags": [
+        "agent-skill",
+        "audio-voice",
+        "media"
+      ],
+      "url": "https://github.com/calesthio/generative-media-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 25,
+      "createdDate": "2026-07-11",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-07-11",
-  "updatedAt": "2026-07-11T21:35:00Z"
+  "lastUpdated": "2026-07-12",
+  "updatedAt": "2026-07-12T05:40:00+08:00"
 }
