@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "id": "20260713-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-13",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "AI 寫的 PR/commit 說明「比沒有還糟」— 該讓 AI 寫的與不該的分界",
+      "summary": "Cloudflare 的 Kenton Varda 對團隊下禁令：禁止用 AI 生成 PR/commit/issue 的描述。原因很關鍵——AI 很會把「這段 code 做了什麼」逐行寫出來（但那看 code 就知道），卻漏掉真正需要的「為什麼這樣改、整體在解決什麼」的高層次框架。可遷移原則：AI 擅長描述機制（what），但意圖（why）還是人的責任；把意圖外包給 AI，review 反而更慢。",
+      "tags": [
+        "ai-augmentation",
+        "code-review",
+        "human-in-the-loop"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/8/kenton-varda/",
+      "source": "Kenton Varda (Cloudflare) · via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/8/kenton-varda/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260528-ai-001",
       "radar": "ai-infra",
       "date": "2026-05-28",
