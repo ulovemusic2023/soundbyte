@@ -59691,6 +59691,107 @@
       "price": null,
       "vram": "local-ready (~555M, 16GB VRAM 綽綽有餘)",
       "license": "Apache-2.0 (codec: NVIDIA Open Model License)"
+    },
+    {
+      "id": "20260713-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Terry Tao 用 coding agent 幾小時復活 20+ 個死掉的 Java applet",
+      "summary": "數學家 Terrence Tao 把 1999 年寫、早已因 Java 停支失效的兩打教學 applet，用 AI agent 數小時內全數 port 成 JavaScript 復活並加上上色升級；整批只找到 1 個小 bug，agent 反揪出原碼 2 個他沒發現的 bug。接著趁勢用 agent 開發全新狹義相對論視覺化工具。",
+      "tags": [
+        "ai coding",
+        "coding agent",
+        "agentic-legacy-porting",
+        "code generation"
+      ],
+      "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+      "source": "Terence Tao (What's new)",
+      "sourceUrl": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260713-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "geohot：我愛 LLM，我恨 hype",
+      "summary": "George Hotz（comma.ai / tinygrad）坦承對 AI 進展 giddy（上週用 opencode 接本地 GLM-5.2），同時開砲兩種 hype：一是『窗口關閉／永久落後』的 negative-valence-hype，二是從『花俏 autocomplete』硬跳到『AI 吞掉整個 light cone』的稻草人論證。",
+      "tags": [
+        "llm",
+        "ai discourse",
+        "negative-valence-hype"
+      ],
+      "url": "https://geohot.github.io/blog/jekyll/update/2026/07/12/i-love-llms.html",
+      "source": "George Hotz (geohot)",
+      "sourceUrl": "https://geohot.github.io/blog/jekyll/update/2026/07/12/i-love-llms.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260713-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Why write code in 2026 — 工程師蓋的是『軟體工廠』不是軟體",
+      "summary": "softwaredoug 提出 software-factory 觀點：工程師維護『任何人 prompt 一改就上線』的組裝線，用 skills/AGENTS.md 主動導引、tests/lint/eval 被動守護 agent。但他仍主張人要親手寫 code——為了直接在執行環境思考、親身體驗程式脆弱處，抓出 agent 也會卡的架構債。",
+      "tags": [
+        "ai-assisted development",
+        "software-factory",
+        "agent harness"
+      ],
+      "url": "https://softwaredoug.com/blog/2026/07/09/write-code",
+      "source": "Doug Turnbull (softwaredoug)",
+      "sourceUrl": "https://softwaredoug.com/blog/2026/07/09/write-code",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260713-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic 再度延長 Claude Fable 5 在付費方案的存取（到 7/19）",
+      "summary": "因 GPT-5.6 Sol 被視為 Fable/Mythos 等級，Anthropic 再把 Fable 5 從付費方案下架的日期後推到 7/19，Claude Code 週限額續維持高 50%。Simon Willison 評：OpenAI 正單靠『Fable 存取的不確定性』搶用戶，Anthropic 應乾脆讓 Fable 永久留在方案。",
+      "tags": [
+        "generative-ai",
+        "claude",
+        "model access"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/12/bump/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/12/bump/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260713-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "愛爾蘭資料中心吃掉全國約 23% 用電",
+      "summary": "The Register 報導愛爾蘭資料中心用電已佔全國約 23%；AI 算力擴張讓資料中心的能源消耗與選址成為愈來愈難忽視的基礎設施變數。",
+      "tags": [
+        "datacenter",
+        "infrastructure",
+        "ai compute"
+      ],
+      "url": "https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/on-prem/2026/07/11/irish-datacenters-now-guzzle-23-of-the-countrys-electricity/5270013",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-12",
