@@ -59671,6 +59671,26 @@
       "stars": 25,
       "createdDate": "2026-07-11",
       "license": "MIT"
+    },
+    {
+      "id": "20260713-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "nineninesix/gepard-1.0",
+      "summary": "串流優先的即時對話 TTS，text 一開始進來就邊收邊發聲，聽起來像現場講話而非錄音。單一 language model 同時學 text+speech，節奏自然。~555M 參數（Qwen3.5 backbone + NVIDIA NeMo NanoCodec），vLLM 上單張 RTX 5090 跑到 ~25× 即時、TTFA ~50ms，支援 zero-shot voice cloning。Seed-TTS-eval 自然度（NISQA-MOS）領先同儕，代價是 WER/SIM 略遜。支援 en/es-MX/pt-BR/nl。",
+      "tags": [
+        "tts_speech",
+        "zero-shot tts",
+        "voice cloning"
+      ],
+      "url": "https://huggingface.co/nineninesix/gepard-1.0",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "local-ready (~555M, 16GB VRAM 綽綽有餘)",
+      "license": "Apache-2.0 (codec: NVIDIA Open Model License)"
     }
   ],
   "lastUpdated": "2026-07-12",
