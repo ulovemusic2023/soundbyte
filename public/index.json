@@ -60041,8 +60041,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260714-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-14",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "AI agent 永遠不該是專案的 DRI（最終負責人）",
+      "summary": "Simon Willison 借用 Apple／GitLab 的 DRI 概念，主張 LLM agent 永遠不該被視為專案的最終負責人——責任歸屬是人類獨有的，人能為結果扛責，機器不能。呼應 IBM 1979 名言：『電腦永遠無法被究責，所以電腦絕不該做管理決策。』讓 agent 做事可以，但被問責的必須是人。",
+      "tags": [
+        "ai-agents",
+        "accountability",
+        "org-design"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260714-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-14",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "The will to power will return — 用《第四次轉折》看野心的週期",
+      "summary": "1980 年代法國 10 年內蓋了 43 座核電廠、平均每座只花 7 年，如今仍供應近半電力，換到今天的西方幾乎不可想像。DHH 用《The Fourth Turning》循環史觀解釋：High→Awakening→Unraveling→Crisis 四階段輪迴，我們正處於危機期。啟示：野心與建設力是週期性的，英雄世代種下自己乘不到涼的樹；別把停滯當永恆。",
+      "tags": [
+        "mental-model",
+        "ambition",
+        "cycles"
+      ],
+      "url": "https://world.hey.com/dhh/the-will-to-power-will-return-58ffb9dc",
+      "source": "DHH (David Heinemeier Hansson)",
+      "sourceUrl": "https://world.hey.com/dhh/the-will-to-power-will-return-58ffb9dc",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260714-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-14",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Latent Space 是一種全新的創作媒介",
+      "summary": "Kevin Kelly：LLM 就像一個裝下全人類知識的小型 zip 檔——不存原文，卻能重現莎士比亞風格、生成任何人臉。這種對知識的極致壓縮所形成的 latent space（潛在空間）本身，將成為藝術家與科學家的下一個創作平台，而不只是問答與寫程式的工具。",
+      "tags": [
+        "ai-creativity",
+        "latent-space",
+        "mental-model"
+      ],
+      "url": "https://kk.org/thetechnium/latent-space-as-a-new-medium/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/latent-space-as-a-new-medium/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "updatedAt": "2026-07-12T05:40:00+08:00"
+  "lastUpdated": "2026-07-14",
+  "updatedAt": "2026-07-14T21:31:00Z"
 }
