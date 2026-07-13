@@ -59812,6 +59812,235 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260713-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-13",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "clodex-ide",
+      "summary": "Local-first、zero-trust 的 agentic IDE，主打可驗證的自主軟體開發；每步都留可稽核證據。昨天開 repo 就衝 638★/136 forks。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "ide",
+        "local-first"
+      ],
+      "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide",
+      "stars": 638,
+      "createdDate": "2026-07-12",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260713-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "grokbuild-proxy",
+      "summary": "本地自托管的 Grok Build → Claude Code / OpenAI 相容代理。",
+      "tags": [
+        "claude-code",
+        "proxy",
+        "ai-coding"
+      ],
+      "url": "https://github.com/GreyGunG/grokbuild-proxy",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/GreyGunG/grokbuild-proxy",
+      "stars": 123,
+      "createdDate": "2026-07-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260713-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "reame",
+      "summary": "輕量 LLM inference server，OpenAI 相容 API on llama.cpp，把 prompt/prefix/生成結果 cache 到磁碟省 token。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "llama.cpp",
+        "caching"
+      ],
+      "url": "https://github.com/swellweb/reame",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/swellweb/reame",
+      "stars": 76,
+      "createdDate": "2026-07-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260713-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "personal-model",
+      "summary": "Local-first macOS runtime，把跨 app 活動變成可檢視的個人模型給 MCP agents 用。",
+      "tags": [
+        "mcp",
+        "local-first",
+        "personal-context",
+        "macos"
+      ],
+      "url": "https://github.com/Intuition-Lab/personal-model",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Intuition-Lab/personal-model",
+      "stars": 68,
+      "createdDate": "2026-07-10",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260713-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-13",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "audio.cpp-webui",
+      "summary": "純 C++ 音訊模型推論引擎（ggml）+ 全功能 WebUI：TTS/ASR/VAD/voice conversion/diarization/music gen，零 Python。",
+      "tags": [
+        "audio",
+        "tts",
+        "stt",
+        "voice-conversion",
+        "music-generation",
+        "cpp"
+      ],
+      "url": "https://github.com/kigner/audio.cpp-webui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kigner/audio.cpp-webui",
+      "stars": 29,
+      "createdDate": "2026-07-12",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260713-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-13",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "Maestro",
+      "summary": "100% 本地的 AI 影像/圖片/音樂工作室，Director mode 從單一 prompt 規劃整支 MV。建在 WanGP，用 Pinokio 安裝。",
+      "tags": [
+        "music-generation",
+        "video",
+        "local-ai",
+        "creative"
+      ],
+      "url": "https://github.com/Blizaine/Maestro",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Blizaine/Maestro",
+      "stars": 26,
+      "createdDate": "2026-07-08",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260714-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 推出 Precursor：用連續 client-side 行為訊號偵測 agent",
+      "summary": "新的 continuous behavioral validation 引擎，把整段 user journey 的 session 行為轉成 bot detection 訊號，號稱能更精準揪出進階自動化（含 AI agent），同時降低真人誤判摩擦。bot management 從單點指紋走向全程行為分析。",
+      "tags": [
+        "bot-management",
+        "agentic",
+        "observability",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.cloudflare.com/introducing-precursor/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/introducing-precursor/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260714-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Vercel AI Gateway 6月指數：open-weight 模型衝到 29% token 量、每 token 價格走平",
+      "summary": "用自家 AI Gateway 實際流量出報告：open-weight 模型占比升到約三分之一 token 量，price/token 明顯 flatten；花費仍由 Anthropic 拿 61% 主導。用真實 production 數據看 model 分布。",
+      "tags": [
+        "llm-economics",
+        "open-weights",
+        "model-routing"
+      ],
+      "url": "https://vercel.com/blog/ai-gateway-production-index-july-2026",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/ai-gateway-production-index-july-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260714-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ollama v0.31.2：Gemma 4 在 Apple Silicon 靠 multi-token prediction 快 ~90%",
+      "summary": "新版在 coding-agent benchmark 上平均生成速度提升近九成，關鍵是 multi-token prediction；另補 compute 6.x 舊 NVIDIA GPU 的 flash attention、iGPU vision offload。本地推論效能對 on-device coding agent 有感。",
+      "tags": [
+        "local-inference",
+        "gemma",
+        "multi-token-prediction",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.31.2",
+      "source": "Ollama Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.31.2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260714-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor 新增 Side Chats + 對話搜尋",
+      "summary": "最新 release 讓你在主 agent 對話旁開 durable side chat（/side、/btw）問問題、探岔路而不打斷主線，事後可回頭追問、@mention 把 context 拉回主線；並可在 Agents Window 用 Cmd+K 搜尋上千則 agent transcript。coding-agent UX 的實用演進。",
+      "tags": [
+        "coding-agent",
+        "ide",
+        "dx"
+      ],
+      "url": "https://cursor.com/changelog/side-chat",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog/side-chat",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260714-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "用一個沒用的 if 讓 code 快 4 倍",
+      "summary": "purplesyringa 的效能拆解：一個看似多餘的 if 分支如何改變編譯器/CPU 行為（branch prediction、向量化），把熱路徑效能翻四倍。mechanical sympathy 的好教材。",
+      "tags": [
+        "performance",
+        "c",
+        "compiler"
+      ],
+      "url": "https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/",
+      "source": "purplesyringa (lobste.rs)",
+      "sourceUrl": "https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-12",
