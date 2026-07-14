@@ -60183,8 +60183,114 @@
       "price": null,
       "vram": "local-ready（Song Gen base 14GB）",
       "license": "MIT"
+    },
+    {
+      "id": "20260715-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Armin Ronacher：The Tower Keeps Rising — agent 移除的「摩擦」正是團隊同步的機制",
+      "summary": "Ronacher 借 Bruegel 巴別塔：大型軟體被卡住的不是個人產 code 速度，而是團隊對系統的共同理解。過去改別人 storage layer 得讀 code/問人/跨團隊協調，這種 friction 慢，但一部分正是雙方對齊 mental model 的過程。agent 移除摩擦後各自加 OAuth/cache/重建 DB，每個改動單獨合理、都能 compile、測試都過、解釋即時生成，卻沒人再學那份共享模型——塔照長，但沒人聽得懂彼此。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agents",
+        "mental-model",
+        "ai-assisted-development"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+      "source": "Armin Ronacher (lucumr)",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260715-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Bun Zig→Rust rewrite 開戰：Andrew Kelley 開嗆 + 「AI 速度重寫」敘事被打臉",
+      "summary": "Anthropic/Bun 補發 Zig→Rust 遷移說明（實際合併已兩月前），被 The Register 包裝成『以 AI 速度合併的重寫』。Zig 之父 Andrew Kelley 罕見直球回應，火力集中在 Jarred 拿 VC、把 beginner energy 變成對員工要求 grind 的管理文化。Ray Myers 則把 Anthropic 形容為 unreliable narrator：融 $132B、逼近 $1T IPO 卻無獲利，得靠『coding 消失→software engineering 消失』敘事撐估值，呼籲工程師戴懷疑帽做決策。HN 1,510 分熱議。",
+      "tags": [
+        "paradigm-shift",
+        "discourse",
+        "rust",
+        "zig",
+        "agentic-rewrite",
+        "ai-hype"
+      ],
+      "url": "https://raymyers.org/post/zig-creator-calls-spade-a-spade/",
+      "source": "Andrew Kelley / Ray Myers",
+      "sourceUrl": "https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260715-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Lobsters 正式搬到 SQLite：單台 VPS、成本砍半",
+      "summary": "社群站 Lobsters 完成 MariaDB → SQLite 遷移並認定為永久架構。整個 Rails app 跑在單一 VPS，主 content DB 約 3.8GB（另有 1.1GB cache、218MB queue、555MB rack_attack DB）。回報 CPU/記憶體下降、站點更順，MariaDB VPS 下線後成本直接砍半。遷移 PR 動 188 檔、+735/−593 行。2026『一台伺服器 + SQLite 就能扛很多事』的又一實證。",
+      "tags": [
+        "sqlite",
+        "migrations",
+        "architecture",
+        "ops"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/",
+      "source": "Simon Willison / lobste.rs",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260715-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GhostLock（CVE-2026-43499）：潛伏 15 年、全 Linux distro 的 kernel stack-UAF",
+      "summary": "Nebula Security 的 VEGA 找到 rtmutex proxy path 的 use-after-free：remove_waiter() 在 proxy 路徑誤清 current->pi_blocked_on，讓無權限本地攻擊者拿到指向 kernel stack 的懸空指標、幾乎任意位址寫入、劫持 function table 到 root。只要 CONFIG_FUTEX_PI=y、免特權免 user namespace，做成 97% 穩定提權 + container escape。影響 Linux 2.6.39(2011)→7.1，kernelCTF 賞金 $92,337。",
+      "tags": [
+        "security",
+        "linux-kernel",
+        "cve",
+        "privilege-escalation"
+      ],
+      "url": "https://nebusec.ai/research/ionstack-part-2/",
+      "source": "Nebula Security",
+      "sourceUrl": "https://nebusec.ai/research/ionstack-part-2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260715-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Ask HN：幫 AI 生成文章加個標記（1,066 分）",
+      "summary": "HN 高票討論：使用者要求平台為 AI 生成文章加上標記/旗標。反映社群對 AI slop 淹沒資訊源的疲勞，也點出『來源可信度』正成為 reader 端新剛需——與近期 AI 履歷淹沒招聘、AI 代寫 PR 描述被下禁令同一條脈絡。",
+      "tags": [
+        "community",
+        "ai-content",
+        "trust"
+      ],
+      "url": "https://news.ycombinator.com/item?id=48886741",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=48886741",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-14",
-  "updatedAt": "2026-07-14T21:31:00Z"
+  "lastUpdated": "2026-07-15",
+  "updatedAt": "2026-07-15T05:20:00+08:00"
 }
