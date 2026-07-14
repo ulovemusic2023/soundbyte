@@ -60289,6 +60289,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260715-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-15",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "「高塔繼續升高」— AI agent 移除了同步團隊理解的摩擦",
+      "summary": "Armin Ronacher 用巴別塔比喻 AI 輔助開發：過去改別人的 code 要讀、要問、要協調，這種摩擦很慢，卻正是讓團隊對系統形成共識的過程。Agent 把摩擦拿掉後，每人各自叫 agent 改一塊，程式能編譯、測試會過、解釋隨叫隨到，但沒人再需要理解全貌。差別在：巴別塔失去共同語言後工程停擺；AI 時代共識早已崩解、工程卻照樣進行。塔不會倒，所以你不會發現失去了什麼。",
+      "tags": [
+        "ai-coding",
+        "coordination",
+        "technical-debt",
+        "mental-model"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+      "source": "Armin Ronacher",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260715-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-15",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Lobsters 全站搬到 SQLite：單台 VPS、成本砍半",
+      "summary": "社群網站 Lobsters 花數年把 MariaDB 換成 SQLite，本週完成：整站跑在單一 VPS，主庫約 3.8GB，CPU 降、記憶體降、體感更快，關掉舊 MariaDB VPS 後成本直接砍半。心法：2026 年一台伺服器 + SQLite 能扛的規模遠比多數人以為的大。對 bootstrap 團隊，無聊、便宜、單機的基礎設施本身就是競爭優勢（default alive）。",
+      "tags": [
+        "infra",
+        "cost-discipline",
+        "boring-tech",
+        "bootstrapping"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/",
+      "source": "Simon Willison / Lobsters",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-15",
