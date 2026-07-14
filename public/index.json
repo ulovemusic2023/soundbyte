@@ -60331,6 +60331,302 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260715-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "littledivy/mimic",
+      "summary": "攔截任何 app 的行為，像 import library 一樣直接從 Python 呼叫它。作者是 Deno core 的 littledivy。",
+      "tags": [
+        "dev-tool",
+        "python",
+        "automation"
+      ],
+      "url": "https://github.com/littledivy/mimic",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 901,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "SmileLikeYe/agent-chief",
+      "summary": "local-first 的 context 層，幫 coding agent 管理該讀什麼、記什麼，減少 token 浪費。",
+      "tags": [
+        "ai-agent",
+        "context",
+        "local-first"
+      ],
+      "url": "https://github.com/SmileLikeYe/agent-chief",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 619,
+      "createdDate": "2026-07-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "pocket-stack/pocketjs",
+      "summary": "在瀏覽器外跑高效能 JSX UI，走 hardware rendering。",
+      "tags": [
+        "web-framework",
+        "jsx",
+        "rendering"
+      ],
+      "url": "https://github.com/pocket-stack/pocketjs",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 597,
+      "createdDate": "2026-07-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "cosmtrek/mindwalk",
+      "summary": "把 coding-agent 的 session 重播成 3D 程式碼地圖。作者是 air 的 cosmtrek。",
+      "tags": [
+        "coding-agent",
+        "visualization"
+      ],
+      "url": "https://github.com/cosmtrek/mindwalk",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 569,
+      "createdDate": "2026-07-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "dzhng/skills",
+      "summary": "David Zhang 開源的一整套 agent skills 集合，裝進 Claude Code / Codex。",
+      "tags": [
+        "agent-skill",
+        "claude-code"
+      ],
+      "url": "https://github.com/dzhng/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 566,
+      "createdDate": "2026-07-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "muscriptor/muscriptor",
+      "summary": "多樂器音樂轉譜模型，音檔進、樂譜出。53 forks/13 issues 真實使用。",
+      "tags": [
+        "music-ai",
+        "audio",
+        "transcription"
+      ],
+      "url": "https://github.com/muscriptor/muscriptor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 529,
+      "createdDate": "2026-07-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "DannyMac180/fable-advisor",
+      "summary": "把 Claude Fable 當 orchestrator 去調度 Opus、GPT、Grok。",
+      "tags": [
+        "ai-agent",
+        "orchestration",
+        "claude-code"
+      ],
+      "url": "https://github.com/DannyMac180/fable-advisor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 513,
+      "createdDate": "2026-07-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "pengchujin/jzsub",
+      "summary": "一條影片連結自動交付高畫質 MP4＋封面＋GPT 雙語字幕。",
+      "tags": [
+        "creator-tool",
+        "subtitle",
+        "video"
+      ],
+      "url": "https://github.com/pengchujin/jzsub",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 511,
+      "createdDate": "2026-07-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Alisa0808/vox-director",
+      "summary": "一個主題 → 一支 Vox 風格紙拼貼解說/廣告影片的 agent 工具。",
+      "tags": [
+        "creator-tool",
+        "video-gen"
+      ],
+      "url": "https://github.com/Alisa0808/vox-director",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 136,
+      "createdDate": "2026-07-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "ucsandman/marketing-studio",
+      "summary": "Claude Code 的 agent 行銷工作室，一個 /marketing 指令跑完整產出。",
+      "tags": [
+        "claude-code",
+        "marketing",
+        "agent-skill"
+      ],
+      "url": "https://github.com/ucsandman/marketing-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 117,
+      "createdDate": "2026-07-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "cozytab/fable5-mode",
+      "summary": "讓 Opus 4.8 用 Claude Fable 5 的紀律做事：plan gate、model ceiling、self-verify。",
+      "tags": [
+        "claude-code",
+        "coding-agent"
+      ],
+      "url": "https://github.com/cozytab/fable5-mode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 110,
+      "createdDate": "2026-07-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "akustikrausch/yamaha-smaf-player",
+      "summary": "零依賴 C++ 播放器，跑 Yamaha SMAF (.mmf) 鈴聲格式，復古 FM 音源懷舊。",
+      "tags": [
+        "audio",
+        "dsp",
+        "synth"
+      ],
+      "url": "https://github.com/akustikrausch/yamaha-smaf-player",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 52,
+      "createdDate": "2026-07-02",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260715-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "wowitsjack/ENCORE",
+      "summary": "用 WINE 在 Linux 上跑 Ableton Live 12+ 的實驗性 loader（早期）。",
+      "tags": [
+        "music-production",
+        "daw",
+        "ableton"
+      ],
+      "url": "https://github.com/wowitsjack/ENCORE",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 40,
+      "createdDate": "2026-07-14",
+      "license": "NONE"
+    },
+    {
+      "id": "20260715-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "giannisanni/pulsar",
+      "summary": "SSD 串流推論引擎（Rust+CUDA），兩張 16GB GPU 跑 GLM 5.2 743B 巨型 MoE。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "moe"
+      ],
+      "url": "https://github.com/giannisanni/pulsar",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 23,
+      "createdDate": "2026-07-13",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260715-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-07-15",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "Saganaki22/Higgs-Audio-v3-Studio",
+      "summary": "Higgs Audio v3 的 Rust/Tauri 本地桌面 app（Win/Linux），本地 TTS/語音生成。",
+      "tags": [
+        "tts",
+        "audio",
+        "local-ai"
+      ],
+      "url": "https://github.com/Saganaki22/Higgs-Audio-v3-Studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 16,
+      "createdDate": "2026-07-02",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-07-15",
