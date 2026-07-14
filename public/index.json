@@ -60101,6 +60101,88 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260714-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-14",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
+      "summary": "Codex plugin：丟一張物件圖片，吐出純程式碼、可動畫的 procedural Three.js 3D 模型（可調參數幾何）。5 天衝 839 星。做視覺/網頁/創作者工具可用。",
+      "tags": [
+        "codex",
+        "three.js",
+        "creative-coding",
+        "ai-coding"
+      ],
+      "url": "https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 839,
+      "createdDate": "2026-07-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260714-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-14",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "clawkwork/clawk",
+      "summary": "給 AI coding agent 用的用完即丟、限制網路的 Linux VM。讓 Claude Code/Codex 在隔離沙盒跑，不怕亂改機器或連外。Apache-2.0。",
+      "tags": [
+        "ai-coding",
+        "sandbox",
+        "coding-agent",
+        "devtool"
+      ],
+      "url": "https://github.com/clawkwork/clawk",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 257,
+      "createdDate": "2026-07-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260715-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "cactus-compute/needle",
+      "summary": "26M 參數 function-call 專用模型，從 Gemini 3.1 蒸餾而來，用自家 Simple Attention Network 架構。小到能在手機/手錶/眼鏡上跑，也能在 Mac/PC 本地一鍵 finetune 自己的 tools。單輪 function call 贏過 FunctionGemma-270m、Qwen-0.6B。",
+      "tags": [
+        "llm_inference",
+        "on-device",
+        "function-calling"
+      ],
+      "url": "https://github.com/cactus-compute/needle",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "local-ready（26M params）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260715-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "camenduru/TostUI",
+      "summary": "把多個 SOTA 生成式 AI 模型打包成 Docker 一鍵本地跑的 web UI 集合。內建 Song Generation（base-new 最低 14GB VRAM，塞得進 5070 Ti），另有 Trellis 2、Flux.2、Wan 2.2 等。",
+      "tags": [
+        "audio_music_ai",
+        "image_gen",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/camenduru/TostUI",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "local-ready（Song Gen base 14GB）",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-14",
