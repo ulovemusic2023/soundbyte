@@ -60756,6 +60756,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260716-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-16",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly — Latent Space as a New Medium",
+      "summary": "AI 除了問答與寫 code 還能幹嘛？Kelly 認為模型內部壓縮全人類知識的 latent space 本身就是新創作媒介，數十億維度的潛在空間讓人在概念連結裡漫遊、取樣、生成新東西。別只把 LLM 當工具，當成一塊可探索的新大陸。",
+      "tags": [
+        "mental-model",
+        "ai-native",
+        "creativity"
+      ],
+      "url": "https://kk.org/thetechnium/latent-space-as-a-new-medium/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/latent-space-as-a-new-medium/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260716-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-16",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "The Lethal Trifecta — AI Agent security mental model",
+      "summary": "Simon Willison 拆解攻破 Claude web_fetch 的手法：Agent 同時具備存取私密資料、讀取不受信任外部內容、外送資料管道三者，就會被 prompt injection 誘導洩密。設計 Agent 工具時斷開三者之一，比事後補漏洞更關鍵。",
+      "tags": [
+        "agentic",
+        "ai-security",
+        "tool-design"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260716-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-16",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "The will to power will return",
+      "summary": "DHH 借 1980 年代法國七年蓋一座核電廠對比今天西方大工程難產，套用《第四轉折》四階段循環論證現在的管理式衰退不是終點，下一世代終將重拾野心。對創業者的隱喻：別把當下平庸當常態。",
+      "tags": [
+        "ambition",
+        "fourth-turning",
+        "founder-mind"
+      ],
+      "url": "https://world.hey.com/dhh/the-will-to-power-will-return-58ffb9dc",
+      "source": "David Heinemeier Hansson (DHH)",
+      "sourceUrl": "https://world.hey.com/dhh/the-will-to-power-will-return-58ffb9dc",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-15",
