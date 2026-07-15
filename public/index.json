@@ -60816,6 +60816,47 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260716-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-16",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "vshulcz/deja-vu",
+      "summary": "給 coding agent 的記憶層：直接讀 Claude Code / Codex / opencode 已經在寫的 session log，做搜尋、MCP recall、自動注入 context、secret 遮蔽，還能分享同步。單一 zero-dep binary。",
+      "tags": [
+        "mcp",
+        "memory",
+        "coding-agent"
+      ],
+      "url": "https://github.com/vshulcz/deja-vu",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-02+topic:mcp",
+      "stars": 162,
+      "createdDate": "2026-07-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260716-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-16",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "Kuberwastaken/megaphone",
+      "summary": "Mac 上完全本地、私密的語音聽寫工具，用 Apple SpeechAnalyzer + Foundation Models，不上雲。對做音訊 / 需要口述輸入的人是輕量替代方案。",
+      "tags": [
+        "tts",
+        "speech-to-text",
+        "audio",
+        "local-ai"
+      ],
+      "url": "https://github.com/Kuberwastaken/megaphone",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-02+topic:text-to-speech",
+      "stars": 33,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-15",
