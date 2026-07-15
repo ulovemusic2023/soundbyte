@@ -60627,6 +60627,29 @@
       "stars": 16,
       "createdDate": "2026-07-02",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260716-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "prism-ml/Ternary-Bonsai-27B",
+      "summary": "Prism ML 把 Qwen3.6-27B 做成端到端 ternary 量化（真 1.71 bit/weight，全走 ternary 沒有高精度逃生門）。完整 27B-class 推理只吃約 7.2GB（FP16 要 ~54GB），宣稱保留 95% FP16 智力：15 項 thinking benchmark 平均 80.49、數學 93.40、coding 85.96、agentic tool-use 74.01。純 llama.cpp 自訂 2-bit hybrid-attention kernel（CUDA/Metal），262K context on-device + 4-bit KV，內建 DSpark speculative-decoding drafter（1.34x decode）。16GB 卡直接吃得下，另有 1-bit 手機版 ~3.9GB。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "llama.cpp",
+        "ternary",
+        "on-device"
+      ],
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "~7.2GB deployed (16GB local-ready)",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-15",
