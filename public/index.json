@@ -60650,6 +60650,112 @@
       "price": null,
       "vram": "~7.2GB deployed (16GB local-ready)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260716-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-16",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Thinking Machines 開源 Inkling（首個 open-weights 模型）",
+      "summary": "Mira Murati 團隊釋出 Inkling：975B MoE / 41B active、1M context，原生跨 text/image/audio 推理，45T token 多模態預訓；另附 Inkling-Small(12B active)，今起可在 Tinker 微調。定位為好客製化的多模態 base。",
+      "tags": [
+        "ai_models",
+        "open-weights",
+        "moe",
+        "multimodal"
+      ],
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "source": "Thinking Machines Lab",
+      "sourceUrl": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260716-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "The Memory Heist — Claude web_fetch 資料外洩漏洞被補",
+      "summary": "Ayush Paul 展示 lethal trifecta：claude.ai 記憶＋web_fetch 被串成外洩管道；fetch 可跟進前次抓回內容的內嵌連結，攻擊者用逐字母 honeypot、只對 Claude-User UA 顯示，偷出姓名/城市/雇主。Anthropic 已移除該能力。",
+      "tags": [
+        "security",
+        "prompt-injection",
+        "lethal-trifecta",
+        "exfiltration"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/",
+      "source": "Ayush Paul (via Simon Willison)",
+      "sourceUrl": "https://www.ayush.digital/blog/the-memory-heist",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260716-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "xAI 開源 Grok Build — Rust 終端 coding agent",
+      "summary": "xAI 放出 grok-build：全螢幕 TUI coding agent，讀 codebase/改檔/跑 shell/搜網/管長任務，支援互動、headless(CI)、經 ACP 嵌編輯器；Rust 寫成、從 SpaceXAI monorepo 同步。frontier lab 下場 CLI coding agent。",
+      "tags": [
+        "ai_agent",
+        "coding-agent",
+        "cli",
+        "rust",
+        "acp"
+      ],
+      "url": "https://github.com/xai-org/grok-build",
+      "source": "xAI",
+      "sourceUrl": "https://github.com/xai-org/grok-build",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260716-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code v2.1.210 — 修掉非人類輸入誤觸 ultracode",
+      "summary": "ultracode opt-in 不再被 webhook payload / 轉貼 PR comment 觸發（防外部內容誘導 agent fan-out）；並修 isolation:'worktree' 子代理原本能對主 repo 跑 git 變更。",
+      "tags": [
+        "coding-agent",
+        "tooling",
+        "security",
+        "subagent"
+      ],
+      "url": "https://code.claude.com/docs/en/changelog",
+      "source": "Anthropic",
+      "sourceUrl": "https://code.claude.com/docs/en/changelog",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260716-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "SQLite should have (Rust-style) editions",
+      "summary": "mort 提案給 SQLite 引入類 Rust edition 機制：用 per-database edition 旗標讓語意破壞性改進能安全演進，而不必永遠背相容包袱。",
+      "tags": [
+        "database",
+        "sqlite",
+        "new_languages",
+        "api-design"
+      ],
+      "url": "https://mort.coffee/home/sqlite-editions/",
+      "source": "mort.coffee (via Lobsters)",
+      "sourceUrl": "https://mort.coffee/home/sqlite-editions/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-15",
