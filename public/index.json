@@ -61205,8 +61205,112 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260717-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-17",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Pelican benchmark 失效了 — 但 Simon Willison 還是繼續跑",
+      "summary": "跑了 21 個月的「畫一隻騎腳踏車的鵜鶘」proxy 指標，跟模型真實實力的相關性已經斷裂：GLM-5.2 畫得比 Claude Fable 5 好，但它不是 Fable 等級的模型。最大盲點是它完全沒碰到現在最重要的能力 — 長對話下的 agentic tool calling。但 Simon 還是繼續跑，因為它的價值已經從「測量」變成「forcing function」：秀得出鵜鶘，代表你真的把 prompt 跑過一次。任何 proxy 指標終究會脫鉤，但儀式本身可能還有用。",
+      "tags": [
+        "mental-model",
+        "proxy-metric",
+        "benchmark",
+        "forcing-function"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260717-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-17",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Understand to participate — AI 時代的 cognitive debt",
+      "summary": "Geoffrey Litt 在 AI Engineer World's Fair 提出的框架：當 coding agent 幫你寫越來越大、越來越複雜的改動，你對 code 的理解會逐漸漂移，累積「認知債」。他的主張不是「你必須看懂每一行」，而是「你要懂到足以繼續參與」— 腦中要有夠豐富的概念集合，才能流暢地思考下一步怎麼推。缺了那套 fluency，你在自己的專案裡就只剩下按核准鍵的份。",
+      "tags": [
+        "mental-model",
+        "cognitive-debt",
+        "ai-native",
+        "coding-agents"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/",
+      "source": "Geoffrey Litt • via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/2/understand-to-participate/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260717-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-17",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "別規定流程，給判斷權 — Claude Code 團隊的 prompt 心法",
+      "summary": "Claude Code 團隊的 Cat Wu 與 Thariq Shihipar 給的 tip：與其寫死規則（「小的文案或設計改動不要跑測試」），不如直接叫模型「自己判斷」什麼時候該寫測試。Simon 把它延伸到成本控制 — 叫 Fable 自己判斷哪些任務該降級丟給低階模型跑 subagent，判斷、review、synthesis 留在主 loop。管理 agent 跟管理人是同一件事：給 context 和判斷權，比給 SOP 有效。",
+      "tags": [
+        "operational",
+        "agent-management",
+        "delegation",
+        "cost"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/",
+      "source": "Cat Wu • Thariq Shihipar • via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/3/judgement/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260717-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-07-17",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "新模型對「別人的工具」變笨了 — RL 訓練造成的隱形平台鎖定",
+      "summary": "Armin Ronacher 發現 Opus 4.8 和 Sonnet 5 在他自己的 harness（Pi）上呼叫自訂 edit tool 時，反而比舊模型更容易亂加欄位、schema 對不上 — SOTA 新模型在這件事上比它的舊兄弟更差。他的推測：新模型被 RL 特訓成很會用 Claude Code 內建的 edit tool，代價是第三方 harness 的自訂工具被用錯的機率上升。策略含義：平台的訓練選擇會變成看不見的護城河，第三方可能被迫為每個模型各實作一套工具。",
+      "tags": [
+        "operational",
+        "moat",
+        "platform-lockin",
+        "tool-use"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "source": "Armin Ronacher • via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260717-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-07-17",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "線上課程創作者的集體崩塌",
+      "summary": "Josh W. Comeau 第三門課上線，銷量只有以往的三分之一，既有課程也同步下滑。他認為主因是 AI 的雙重打擊：一邊是大家懷疑開發工作還存不存在，所以不想再投錢學新技能；另一邊是想學的人直接找 LLM 當家教。他訪談過的其他課程創作者全都看到同樣趨勢 — 營收掉超過五成。",
+      "tags": [
+        "creator-economy",
+        "info-product",
+        "ai-disruption"
+      ],
+      "url": "https://bsky.app/profile/joshwcomeau.com/post/3mkxyqgrp2d2t",
+      "source": "Josh W. Comeau",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-15",
-  "updatedAt": "2026-07-15T05:20:00+08:00"
+  "lastUpdated": "2026-07-17",
+  "updatedAt": "2026-07-16T21:35:00Z"
 }
