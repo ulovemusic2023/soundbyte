@@ -61309,6 +61309,265 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260717-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Codex-Dream-Skin",
+      "summary": "給 Codex 桌面端換皮膚的外部主題工具，用本機 CDP 注入，不改官方安裝包（不動 .app / app.asar）。兩天衝上 5.2k star，是這週 GitHub 竄最快的 repo。⚠️ 無 license、README 掛贊助商 affiliate 連結，商用前留意。",
+      "tags": [
+        "codex",
+        "ai-coding",
+        "theme"
+      ],
+      "url": "https://github.com/Fei-Away/Codex-Dream-Skin",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-03+stars:>50",
+      "stars": 5222,
+      "createdDate": "2026-07-15",
+      "license": "NONE"
+    },
+    {
+      "id": "20260717-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "aval",
+      "summary": "網頁互動影片的新開源格式 + runtime：內建 state machine、frame-accurate 轉場、可反向播放、packed-alpha 透明。一個動畫打包成 AV1/VP9/HEVC/H.264 多 codec，瀏覽器挑第一個支援的。適合做產品頁動態視覺。",
+      "tags": [
+        "web",
+        "video",
+        "motion",
+        "creator-tool"
+      ],
+      "url": "https://github.com/pixel-point/aval",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-03+stars:>50",
+      "stars": 1021,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260717-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "dom-docx",
+      "summary": "把語意化 HTML 片段轉成原生可編輯的 Word 文件（OOXML），不是截圖也不是 PDF 包皮。要用 agent 自動產出合約 / 提案 / 報告給非技術方看時很實用。Show HN 154 分。",
+      "tags": [
+        "document",
+        "ooxml",
+        "automation"
+      ],
+      "url": "https://github.com/floodtide/dom-docx",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 405,
+      "createdDate": "2026-07-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260717-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "emulo",
+      "summary": "從你既有的 Claude Code / Codex / Copilot / OpenCode session log 挖出「你沒寫下來的規則」，產生本地 you.md profile 給 agent 每次任務前讀。作者強調這不是 memory — memory 是你主動講的，emulo 是從實際工作紀錄反推你會 reject 什麼、什麼叫做完。Python 零依賴。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "agent-memory"
+      ],
+      "url": "https://github.com/ohad6k/emulo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 188,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260717-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "ai-trains-ai",
+      "summary": "用 RL 訓練一個「會用 RL 訓練模型」的 agent，作者自述總成本約 $1.3k。屬於 recursive self-improvement 的實作樣本，程式碼和過程都開源，當作 RL pipeline 的參考讀物。",
+      "tags": [
+        "rl",
+        "agent",
+        "training"
+      ],
+      "url": "https://github.com/Danau5tin/ai-trains-ai",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 179,
+      "createdDate": "2026-07-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260717-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "youtube-guitar-tab-parser",
+      "summary": "CLI，把 YouTube 吉他教學影片直接轉成吉他 tab 的 PDF。影片裡的 tab 畫面被抓出來拼成可列印譜。這是這輪唯一直接打中音樂的工具，TypeScript + GPL-3.0。",
+      "tags": [
+        "music",
+        "guitar",
+        "tab",
+        "audio"
+      ],
+      "url": "https://github.com/marcelpanse/youtube-guitar-tab-parser",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 153,
+      "createdDate": "2026-07-13",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260717-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "misa77",
+      "summary": "解壓縮比 LZ4 快 1.5–3x（x86 和 ARM 都是），壓縮率還更好。C++ / MIT。要塞大量 sample、音檔或 asset 進 app 又想快速載入時值得評估。",
+      "tags": [
+        "codec",
+        "compression",
+        "performance"
+      ],
+      "url": "https://github.com/welcome-to-the-sunny-side/misa77",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 111,
+      "createdDate": "2026-07-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260717-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "jacquard-lang",
+      "summary": "為「大部分 code 由模型寫、由人 review」這個前提設計的小語言，用 OCaml 實作。設計重點放在人類 review 的可讀性而不是寫起來爽。概念值得看，還很早期。",
+      "tags": [
+        "language",
+        "ai-coding",
+        "code-review"
+      ],
+      "url": "https://github.com/jbwinters/jacquard-lang",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 93,
+      "createdDate": "2026-07-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260717-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "tura",
+      "summary": "宣稱在 348 場 long-horizon benchmark 中，比 Codex CLI 少用最多 83.1% turn 數，DeepSWE pass rate 高最多 16.7 個百分點。⚠️ 數字全是作者自報、未經第三方複現。AGPL-3.0。",
+      "tags": [
+        "coding-agent",
+        "benchmark"
+      ],
+      "url": "https://github.com/Tura-AI/tura",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 62,
+      "createdDate": "2026-07-06",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260717-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "juggler",
+      "summary": "開源 GUI coding agent，作者是 jQuery UI 時代那位。Show HN 276 分。建立於 6/19，超過 14 天窗口但這週才在 HN 竄起。",
+      "tags": [
+        "coding-agent",
+        "gui"
+      ],
+      "url": "https://github.com/juggler-ai/juggler",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 456,
+      "createdDate": "2026-06-19",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260717-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "samosa-chat",
+      "summary": "在 16GB RAM 機器上跑 Qwen3.6-35B-A3B。MoE 模型 + 積極 offload 的組合，星數還小但方向對，適合本機跑模型的實驗。",
+      "tags": [
+        "local-llm",
+        "qwen"
+      ],
+      "url": "https://github.com/deepanwadhwa/samosa-chat",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/local-llm",
+      "stars": 38,
+      "createdDate": "2026-07-12",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260717-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "bbarit-agent-oss",
+      "summary": "單一 Rust binary 的終端 coding agent，接 15+ LLM provider、1000+ 模型，定位是可自架的 Claude Code / Codex CLI 替代品。昨天才建立。⚠️ 描述寫 MIT 但 repo license metadata 未被 GitHub 正確辨識。",
+      "tags": [
+        "coding-agent",
+        "rust",
+        "self-hosted"
+      ],
+      "url": "https://github.com/bbarit/bbarit-agent-oss",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 28,
+      "createdDate": "2026-07-16",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260717-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-07-17",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "libargus.cc",
+      "summary": "用 OpenJDK Panama FFM（Java 22+）做的低延遲本機 LLM runner，零 allocation 的 multimodal runtime。星數很低但 Java 生態少見這種東西，先記著。",
+      "tags": [
+        "local-llm",
+        "java",
+        "inference"
+      ],
+      "url": "https://github.com/ProjectArgus-cc/libargus.cc",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 10,
+      "createdDate": "2026-07-12",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-17",
