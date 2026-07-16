@@ -60857,6 +60857,117 @@
       "stars": 33,
       "createdDate": "2026-07-13",
       "license": "MIT"
+    },
+    {
+      "id": "20260717-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "audio-cpp/audio.cpp-gguf",
+      "summary": "audio.cpp 官方 GGUF 權重庫上線：27 個模型家族一次打包成 ggml 格式，含 HTDemucs / Mel-Band-RoFormer（分軌）、IndexTTS2、VoxCPM2、Qwen3-TTS、Stable-Audio-3、MOSS-TTS。等於分軌+TTS+ASR 全部零 Python 依賴跑在 C++ runtime。q8_0 量化版體積小，16GB 綽綽有餘。引擎本身 6/29 已報過，這次新的是官方權重 zoo。",
+      "tags": [
+        "gguf",
+        "htdemucs",
+        "stem-separation",
+        "tts",
+        "voice-conversion",
+        "asr"
+      ],
+      "url": "https://huggingface.co/audio-cpp/audio.cpp-gguf",
+      "source": "Hugging Face（audio.cpp 官方）",
+      "sourceUrl": "https://github.com/0xShug0/audio.cpp/blob/main/docs/gguf.md",
+      "price": null,
+      "vram": "local-ready（q8_0，模型多為 100M–1.7B）",
+      "license": "各模型原授權（Apache-2.0 / MIT / bilibili 等混合）"
+    },
+    {
+      "id": "20260717-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "laion/moss-tts-local-transformer-4.55b-voice-acting",
+      "summary": "LAION 把 MOSS-TTS-Local-1.5 用 RL 調成「配音專用」TTS：48kHz、支援 vocal bursts（尖叫、喘息），並附 10 種角色原型（zombie／orc／fairy／ASMR／ranting）的 prompt 最佳化研究，用 VoiceNet 57 維 reward + EmoNet 情緒分數搜出最佳演出指令。4.55B bf16 約 9GB，5070 Ti 直接跑。",
+      "tags": [
+        "tts",
+        "voice-acting",
+        "expressive-tts",
+        "48khz",
+        "laion"
+      ],
+      "url": "https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting",
+      "source": "Hugging Face / LAION",
+      "sourceUrl": "https://projects.laion.ai/laion-moss-local-1.5-voice-acting-4.55b/overview.html",
+      "price": null,
+      "vram": "local-ready（4.55B bf16 ≈ 9GB）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260717-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-07-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Lightricks/LTX-2.3-22b-LoRA-Foley-V2A",
+      "summary": "Lightricks released LTX-2.3 的 Foley LoRA：吃影片、生對應音效（video-to-audio），官方放了鐵匠打鐵、打字、腳步、濕雪等 side-by-side 示範。做影片配樂/音效時可省掉音效庫翻找。22B base 需量化才進得了 16GB。",
+      "tags": [
+        "foley",
+        "video-to-audio",
+        "audio-generation",
+        "lora",
+        "ltx"
+      ],
+      "url": "https://huggingface.co/Lightricks/LTX-2.3-22b-LoRA-Foley-V2A",
+      "source": "Hugging Face / Lightricks",
+      "sourceUrl": "https://huggingface.co/Lightricks/LTX-2.3-22b-LoRA-Foley-V2A",
+      "price": null,
+      "vram": "quantize-ok（22B base，需 GGUF/INT4）",
+      "license": "LTX-2.3 授權（other）"
+    },
+    {
+      "id": "20260717-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-07-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "thinkingmachines/Inkling",
+      "summary": "Thinking Machines 開放權重多模態 MoE，952B，吃 text + image + audio 出 text，Apache-2.0（附 Acceptable Use Policy）。有 NVFP4 量化版，SGLang / vLLM 都給了官方 recipe。上架 2 天就 781 likes。952B 本地無解，但 audio 輸入這條線值得盯——音訊理解類任務未來可能直接接這個。",
+      "tags": [
+        "multimodal",
+        "moe",
+        "audio-language-model",
+        "open-weights",
+        "vllm"
+      ],
+      "url": "https://huggingface.co/thinkingmachines/Inkling",
+      "source": "Hugging Face / Thinking Machines",
+      "sourceUrl": "https://tinker-docs.thinkingmachines.ai/cookbook/inkling/",
+      "price": null,
+      "vram": "cloud-only（952B MoE）",
+      "license": "Apache-2.0（附 Acceptable Use Policy）"
+    },
+    {
+      "id": "20260717-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-07-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ATH-MaaS/OvisOCR2",
+      "summary": "0.8B 端到端文件解析模型，吃整頁圖片直接吐 Markdown（含公式、表格、閱讀順序）。由 Qwen3.5-0.8B post-train，OmniDocBench v1.6 拿 96.58 分登頂，是第一個贏過 pipeline 方法的 end-to-end 模型。Apache-2.0，0.8B 隨便跑。",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "markdown",
+        "qwen3.5",
+        "vllm"
+      ],
+      "url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
+      "source": "Hugging Face / Ovis",
+      "sourceUrl": "https://arxiv.org/abs/2607.13639",
+      "price": null,
+      "vram": "local-ready（0.8B）",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-15",
