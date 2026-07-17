@@ -8,7 +8,12 @@
       "priority": "high",
       "title": "yasoukyoku/Score2ConVec",
       "summary": "把 so-vits-svc / RVC 這類 ContentVec-based SVC「翻唱模型」升級成能直接看譜開唱的 singer。輸入 MIDI 音符+歌詞，經 G2P 產生 speaker-invariant 的 ContentVec 特徵丟給 SVC backend 唱出來。把 singing 拆成 pitch(f0 從 DAW)、content(此模型產)、timbre(SVC backend) 三條獨立軸，不用訓練笨重 end-to-end SVS。SVC 語音只需 10–15 分鐘乾聲、免手動標音素。支援 zh/ja/en 等 7 語。",
-      "tags": ["svc_voice", "audio_music_ai", "so-vits-svc", "rvc"],
+      "tags": [
+        "svc_voice",
+        "audio_music_ai",
+        "so-vits-svc",
+        "rvc"
+      ],
       "url": "https://github.com/yasoukyoku/Score2ConVec",
       "source": "GitHub Topics (singing-voice-conversion)",
       "sourceUrl": "https://github.com/yasoukyoku/Score2ConVec",
@@ -24,7 +29,12 @@
       "priority": "high",
       "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize 0.9B",
       "summary": "端到端長音檔理解：一次 pass 同時做轉錄+speaker diarization+時間戳+聲學事件標註，不用串 ASR+diarization 兩套系統。單次吃 90 分鐘、50+ 語言、支援 hotword。2026-07-14 拿下 INTERSPEECH 2026 MLC-SLM Challenge 第一名，多項 benchmark 贏 ElevenLabs / GPT-4o。做人聲前處理、字幕、podcast 很實用，可用 vLLM/SGLang 部署。",
-      "tags": ["tts_speech", "asr", "diarization", "long-form-audio"],
+      "tags": [
+        "tts_speech",
+        "asr",
+        "diarization",
+        "long-form-audio"
+      ],
       "url": "https://github.com/OpenMOSS/MOSS-Transcribe-Diarize",
       "source": "HuggingFace Trending",
       "sourceUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
@@ -40,7 +50,12 @@
       "priority": "medium",
       "title": "RyanCodrai/turbovec",
       "summary": "建在 TurboQuant 之上的 vector index，Rust 寫、附 Python bindings。今天同時登上 GitHub Trending 總榜與 Python 榜。定位是給 RAG / semantic search 用的高效向量索引，主打量化壓縮下的檢索速度。",
-      "tags": ["rag_knowledge", "vector database", "quantization", "rust"],
+      "tags": [
+        "rag_knowledge",
+        "vector database",
+        "quantization",
+        "rust"
+      ],
       "url": "https://github.com/RyanCodrai/turbovec",
       "source": "GitHub Trending",
       "sourceUrl": "https://github.com/RyanCodrai/turbovec",
@@ -56,7 +71,12 @@
       "priority": "low",
       "title": "katanemo/plano",
       "summary": "AI-native 的 proxy + data plane，專為 agentic app 設計。內建 orchestration、safety、observability 與 smart LLM routing，把「選哪個模型、怎麼路由、加護欄」從 agent 主邏輯抽出。Rust 寫。自架 local LLM + 多模型混用時當中間層很合適。",
-      "tags": ["ai_devtools", "infra_runtime", "llm-routing", "rust"],
+      "tags": [
+        "ai_devtools",
+        "infra_runtime",
+        "llm-routing",
+        "rust"
+      ],
       "url": "https://github.com/katanemo/plano",
       "source": "GitHub Topics (llm-inference)",
       "sourceUrl": "https://github.com/katanemo/plano",
@@ -61632,6 +61652,106 @@
       "stars": 10,
       "createdDate": "2026-07-12",
       "license": "MIT"
+    },
+    {
+      "id": "20260718-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-18",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Roc 團隊反向操作：300K 行 Rust 改寫成 Zig，剛達 feature parity",
+      "summary": "Roc compiler 團隊花 1.5 年把 30 萬行 Rust 改寫成 Zig，本週宣布與舊 compiler 功能對齊，刻意回應 Bun 的 Zig→Rust 報告——大型 rewrite 兩個方向都有人走，語言選擇沒有單一正解。新 compiler 產出的 wasm binary 更小（31KB）。",
+      "tags": [
+        "new_languages",
+        "rust",
+        "zig",
+        "paradigm-shift"
+      ],
+      "url": "https://rtfeldman.com/rust-to-zig",
+      "source": "Richard Feldman",
+      "sourceUrl": "https://rtfeldman.com/rust-to-zig",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260718-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Codex 會誤刪 $HOME：全權限＋無 sandbox 的 coding agent 事故",
+      "summary": "Simon Willison 轉述 Codex 團隊說明 GPT-5.6 誤刪檔案根因：full access mode 開、關 sandbox 與 auto review 時，模型想把 $HOME 覆寫成暫存目錄卻手滑刪掉 $HOME。提醒 agentic coding 破壞性動作務必留 sandbox / 人核。",
+      "tags": [
+        "coding-agent",
+        "ai-safety",
+        "sandbox"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/bad-codex-bug/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260718-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "「Vibe sickness」：連 Simon Willison 都承認不再逐行 review",
+      "summary": "Christine Lemmer-Webber 回應 Armin〈The Tower Keeps Rising〉，點出 pro-genAI 陣營從『要讀 code』退到接受『最終只剩 LLM 看得懂 codebase 還能繼續蓋』；連 Simon 都坦承 agent 夠可靠後不再逐行 review。作者稱之 vibe sickness / vibe bobsled。",
+      "tags": [
+        "vibe-coding",
+        "agentic-engineering",
+        "tech-culture"
+      ],
+      "url": "https://dustycloud.org/blog/faulty-towers-vibe-sickness-and-the-vibe-bobsled/",
+      "source": "Christine Lemmer-Webber",
+      "sourceUrl": "https://dustycloud.org/blog/faulty-towers-vibe-sickness-and-the-vibe-bobsled/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260718-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Puter 把整個 Firefox 編譯進 WebAssembly，瀏覽器跑在瀏覽器裡",
+      "summary": "Puter 把 Firefox(Gecko) 編譯成 WebAssembly 讓完整瀏覽器跑在另一個瀏覽器內，估計燒約 $25k Claude Opus/Fable token(靠 Max 訂閱)。流量走 Wisp WebSocket proxy、支援 e2e 加密。AI-assisted 讓極端移植變可行。",
+      "tags": [
+        "webassembly",
+        "wasm",
+        "ai-assisted-programming"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/",
+      "source": "Puter (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260718-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Julia Evans：跑 SQLite 時學到的幾件事",
+      "summary": "jvns 整理實際營運 SQLite 的心得（cache 行為等操作面細節），對把 SQLite 當正式後端的人是實用參考。",
+      "tags": [
+        "sqlite",
+        "databases"
+      ],
+      "url": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
+      "source": "Julia Evans",
+      "sourceUrl": "https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-17",
