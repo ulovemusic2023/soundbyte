@@ -61793,6 +61793,153 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260718-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-18",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "yetone/kill-ai-slop",
+      "summary": "yetone（avante.nvim 作者）做的「反 AI 味」field guide + Agent Skill。整理出 33 種 vibe-coded 產品的通病（靛藍漸層、發光卡片、滿滿 emoji、ALL-CAPS 數字卡），skill 會掃描你的 web 專案、指出程式碼層級的 AI 味訊號並提議/套用乾淨修法。多語（含繁中）。",
+      "tags": [
+        "agent-skill",
+        "design",
+        "anti-ai-slop",
+        "creator-tool"
+      ],
+      "url": "https://github.com/yetone/kill-ai-slop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 598,
+      "createdDate": "2026-07-10",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260718-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-18",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "oil-oil/beautify-github-readme",
+      "summary": "用 SVG 標題 + 真實佐證 + 好維護的 Markdown，把 GitHub README 首頁設計成有主題性的門面。適合幫 repo 做第一印象包裝的 skill。",
+      "tags": [
+        "agent-skill",
+        "readme",
+        "svg",
+        "developer-tool"
+      ],
+      "url": "https://github.com/oil-oil/beautify-github-readme",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 751,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260718-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-18",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "yusukebe/ax",
+      "summary": "Hono 作者 yusukebe 出手：號稱「AI 時代的 curl」。把 HTTP 請求工具重新設計成給 AI agent／人都好用的 CLI。作者背景硬，值得追。",
+      "tags": [
+        "cli",
+        "http",
+        "ai-native",
+        "developer-tool"
+      ],
+      "url": "https://github.com/yusukebe/ax",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 532,
+      "createdDate": "2026-07-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260718-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-18",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "jakubkrehel/skills",
+      "summary": "一組 agent skills，專門提升產品各面向：動畫、排版、版面、配色。跟 kill-ai-slop 是同個方向——用 skill 幫 AI 產出的介面補上設計品味。",
+      "tags": [
+        "agent-skill",
+        "design",
+        "animation",
+        "typography"
+      ],
+      "url": "https://github.com/jakubkrehel/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 549,
+      "createdDate": "2026-07-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260718-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-18",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "gostonx/uninstally",
+      "summary": "原生 macOS 反安裝器（SwiftUI + Finder）。用 bundle-identifier 智慧偵測，把 app 跟它殘留的每個檔案徹底清乾淨。開源版 AppCleaner，Gary 日常 Mac 清理可用。",
+      "tags": [
+        "macos",
+        "utility",
+        "swiftui",
+        "productivity"
+      ],
+      "url": "https://github.com/gostonx/uninstally",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 497,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260718-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-18",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "AudarAI/Audar-ASR-V1",
+      "summary": "阿拉伯語優先的生成式語音辨識模型（Flash + Turbo 兩版），登上 Open Universal Arabic ASR 榜首。語言雖偏門，但生成式 ASR 架構本身值得音訊圈參考。",
+      "tags": [
+        "asr",
+        "speech-recognition",
+        "audio",
+        "model"
+      ],
+      "url": "https://github.com/AudarAI/Audar-ASR-V1",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 512,
+      "createdDate": "2026-07-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260718-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-18",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "KlaatAI/klaatcode",
+      "summary": "⚠️ 剛出爐（07-17 建立）的終端 AI coding agent，主打 smart model routing（每個任務挑最省的模型，號稱省 10x），支援 Claude/GPT/Gemini/DeepSeek。license 未定、宣稱較誇大，先觀察別當生產用。",
+      "tags": [
+        "coding-agent",
+        "terminal",
+        "model-routing",
+        "cli"
+      ],
+      "url": "https://github.com/KlaatAI/klaatcode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 104,
+      "createdDate": "2026-07-17",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-07-17",
