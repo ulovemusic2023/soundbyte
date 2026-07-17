@@ -61752,6 +61752,47 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260718-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-18",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Naval：招募是創辦人唯一不能外包的事",
+      "summary": "創辦人能外包一切，除了招募、募資、策略、產品願景 — 招募最關鍵，因為前 20-40 人是公司的 DNA。判斷標準：讓新人隨機面試團隊任一人，若他不被打動就別加入。刻意不裝 Slack 逼團隊維持小規模，因為 scale 是 zero-to-one 的敵人。",
+      "tags": [
+        "hiring",
+        "founder-mode",
+        "team-dna",
+        "zero-to-one"
+      ],
+      "url": "https://nav.al/curate-people",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://nav.al/curate-people",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260718-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-18",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Linus Torvalds：AI 有沒有用已經不是問題",
+      "summary": "Linux 之父在 kernel mailing list 對反 AI 聲浪拍板：Linux 不是反 AI 專案，AI 就是個工具、而且明顯有用。不爽的人可以 fork 或走人。",
+      "tags": [
+        "ai-adoption",
+        "leadership",
+        "open-source"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/16/linus-torvalds/",
+      "source": "Linus Torvalds (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/linus-torvalds/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-17",
