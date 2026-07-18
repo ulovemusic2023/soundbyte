@@ -62163,8 +62163,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260719-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-19",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "Thinking Machines 的楔子：不打前沿之爭，佔住微調底座",
+      "summary": "Mira Murati 的 Thinking Machines Lab 首發開源權重模型 Inkling，並直白承認『這不是目前最強的模型』。策略洞察：與其和 OpenAI/Anthropic 正面搶前沿性能，不如選一個可守的楔子——多模態 + 高效推理 + 綁在自家 Tinker 微調平台上，讓客製化成為護城河。資源不如巨頭時，別打對手最強的仗，佔住他們不在意的層。",
+      "tags": [
+        "positioning",
+        "wedge",
+        "go-to-market"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/16/inkling/",
+      "source": "Thinking Machines Lab (Mira Murati) • via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/16/inkling/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260719-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-19",
+      "cycle": "sunday",
+      "priority": "playbook",
+      "title": "Anthropic 收回『把最強模型移出訂閱』的計畫",
+      "summary": "Anthropic 原打算把旗艦 Fable 5 從 Max/Team 訂閱移除、只走 API 計價（因算力吃緊），7/20 起卻反悔改為納入訂閱（限額 50%）。洞察：定價可以優化毛利，但不能破壞價值主張——當 GPT-5.6、Kimi 3 都把最強模型放進訂閱，你怎麼能讓人月付 $200 卻拿不到你最好的模型？競爭會逼你把旗艦產品重新綁回核心方案。",
+      "tags": [
+        "pricing",
+        "competition",
+        "value-prop"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/",
+      "source": "Simon Willison（評 Anthropic）",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-17",
+  "lastUpdated": "2026-07-19",
   "updatedAt": "2026-07-16T21:35:00Z"
 }
