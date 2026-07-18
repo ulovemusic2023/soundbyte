@@ -61994,6 +61994,175 @@
       "price": null,
       "vram": "local-ready（框架）",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260719-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GPT-5.6 Sol Pro 補上 1996 年以來的 convex optimization 複雜度缺口（Lean 驗證）",
+      "summary": "UC Berkeley IEOR 教授（應數 PhD）用仿 OpenAI CDC 證明的 prompt，148 分鐘一個 session 讓 GPT-5.6 Sol Pro 給出 deterministic zeroth-order convex optimization 的 lower bound 主論證，坐實只有函數值 oracle 時 gradient 是否有用這個 30 年懸案，結果已用 Lean 形式化驗證。作者親自承認自己證不出來。未同儕審查。",
+      "tags": [
+        "paradigm-shift",
+        "ai-for-math",
+        "reasoning",
+        "lean",
+        "evals"
+      ],
+      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "source": "r/math（preprint 作者本人）",
+      "sourceUrl": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260719-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 逆轉：Fable 5 留在 Max/Team 訂閱，不走「只賣 API」",
+      "summary": "7/20 起 Fable 5 回到所有 Max / Team Premium 方案（限額 50%），Pro/Team Standard 走 usage credit + 一次性 $100 credit。Simon Willison 指這是被 GPT-5.6 Sol、Kimi 3 逼出來的，原因是算力吃緊，Anthropic 可能得縮訓練擠 GPU 服務推論。$20 方案仍拿不到 Fable 5。",
+      "tags": [
+        "paradigm-shift",
+        "llm-pricing",
+        "model-access",
+        "anthropic"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260719-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Kimi K3 Moment：open-weights 逼平 Claude，價格三分之一",
+      "summary": "實測 Kimi K3 跑日常 coding 與 Claude 頂模分不出來、token 數也近乎一樣，但 API $3/$15 對 Claude $10/$50。作者重點在政策：美國把 Fable 卡在出口管制、放行閹割版（整類任務拒答），而 frontier 級無限制的中國開放權重一個 download 就到手；Semgrep 也測到 GLM 5.2 在 cyber benchmark 勝 Claude。",
+      "tags": [
+        "open-weights",
+        "kimi-k3",
+        "llm-pricing",
+        "ai-policy"
+      ],
+      "url": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/",
+      "source": "Stephen Bochinski",
+      "sourceUrl": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260719-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Fable 5 vs GPT-5.6 Sol 打 NP-hard：/goal 不是「更努力」開關",
+      "summary": "作者拿未公開的 OR 光纖網路設計題（KIRO，搜尋空間 11^532 起跳）餵兩模型、開關各自原生 /goal mode。結論：Fable 5 raw intelligence 壓倒性最佳、consistency 前所未見；/goal 改的是 control loop 與搜尋路徑，有時找到更好 basin，有時只讓爛點子多熬一會。開源 CLIArena。",
+      "tags": [
+        "agent-eval",
+        "goal-mode",
+        "benchmark",
+        "optimization"
+      ],
+      "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/",
+      "source": "Charles Azam",
+      "sourceUrl": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260719-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "claude-controls-mac：把備用 Mac 變成 Claude Code 全控的 always-on 機",
+      "summary": "step-by-step 把閒置 Mac 設成開了 computer use 的專屬環境，手機用 Claude app、主機用 SSH 遙控。動機是把 --dangerously-skip-permissions 的風險隔離出主機，專跑不想在自己機器上跑的 research / dev 任務。作者也做了容器版 safeclaw 但認為獨立實機少了容器限制。",
+      "tags": [
+        "coding-agent",
+        "computer-use",
+        "agent-isolation",
+        "workflow"
+      ],
+      "url": "https://ykdojo.github.io/claude-controls-mac/",
+      "source": "ykdojo",
+      "sourceUrl": "https://ykdojo.github.io/claude-controls-mac/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260719-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare WAF 擋兩個 WordPress high-severity 漏洞",
+      "summary": "WordPress 安全團隊公開前先告知 Cloudflare：REST API 的 Unauthenticated RCE + 相關 SQL Injection。CF 已於 7/17 17:03 UTC 對所有 proxied 客戶（含免費）部署 WAF 規則，但強調非取代 patch。修正在 7.0.2，回補 6.9.5 / 6.8.6 / 7.1 Beta 2；6.8 以前不受影響。",
+      "tags": [
+        "security",
+        "waf",
+        "wordpress",
+        "rce"
+      ],
+      "url": "https://blog.cloudflare.com/wordpress-vulnerabilities/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/wordpress-vulnerabilities/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260719-sw-007",
+      "radar": "software-dev",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Gleam 把原始碼搬到 Tangled（atproto 上的 git forge）",
+      "summary": "Gleam 語言官方遷到 Tangled 這個建在 atproto 上的 git 協作平台，HN 討論熱度高（153 分）。去中心化身分 + git 託管的實驗又多一個具份量的採用者。",
+      "tags": [
+        "gleam",
+        "vcs",
+        "atproto",
+        "decentralization"
+      ],
+      "url": "https://tangled.org/gleam.run/gleam",
+      "source": "Hacker News / Tangled",
+      "sourceUrl": "https://tangled.org/gleam.run/gleam",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260719-sw-008",
+      "radar": "software-dev",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Moonshine micro：STT + TTS 塞進 500KB 以下",
+      "summary": "moonshine-ai 釋出 micro 版語音辨識與合成，模型體積 <500KB，主打極端輕量 on-device / 邊緣語音。",
+      "tags": [
+        "on-device-ai",
+        "speech",
+        "tts",
+        "tiny-models"
+      ],
+      "url": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
+      "source": "moonshine-ai (GitHub)",
+      "sourceUrl": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-17",
