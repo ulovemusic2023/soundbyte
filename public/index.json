@@ -61940,6 +61940,60 @@
       "stars": 104,
       "createdDate": "2026-07-17",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260719-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "lyogavin/airllm",
+      "summary": "逐層載入推理法，號稱單張 4GB GPU 跑 70B 模型，代價是慢。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/lyogavin/airllm",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/lyogavin/airllm",
+      "price": null,
+      "vram": "local-ready（分層 offload）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260719-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenSenseNova/SenseNova-U1",
+      "summary": "商湯統一多模態模型（8B MoT），07-16 Infographic-V3 強化文字圖表 T2I，附 GGUF 低顯存模式。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "price": null,
+      "vram": "quantize-ok（8B）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260719-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-07-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "calesthio/OpenMontage",
+      "summary": "agentic 影片製作系統，12 pipeline、500+ skills（含 TTS），3.5 個月衝 39.8k★，行銷味重。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/calesthio/OpenMontage",
+      "source": "GitHub topic/text-to-speech",
+      "sourceUrl": "https://github.com/calesthio/OpenMontage",
+      "price": null,
+      "vram": "local-ready（框架）",
+      "license": "AGPL-3.0"
     }
   ],
   "lastUpdated": "2026-07-17",
