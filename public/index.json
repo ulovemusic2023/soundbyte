@@ -62203,6 +62203,137 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260719-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-19",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "JimLiu/baocut",
+      "summary": "開源 Agent Skill，讓 Claude Code / Codex 直接驅動 macOS 上的 BaoCut app：轉錄、上字幕、翻譯、剪掉口播廢話、匯出，全用自然語言下指令。音訊+剪輯+coding agent 的交集。macOS only。",
+      "tags": [
+        "agent-skill",
+        "transcription",
+        "subtitles",
+        "audio",
+        "claude-code"
+      ],
+      "url": "https://github.com/JimLiu/baocut",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 207,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260719-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-19",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "PromptPartner/agentsmith",
+      "summary": "Model-agnostic 的 AI agent operating harness，精簡 core + 可換 work-type profiles，吃 CLAUDE.md/AGENTS.md/GEMINI.md。論點：agent = model + harness，harness 才是可控的 90%。第五版實戰產物。",
+      "tags": [
+        "agentic-coding",
+        "harness",
+        "claude-code",
+        "codex",
+        "gemini"
+      ],
+      "url": "https://github.com/PromptPartner/agentsmith",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 308,
+      "createdDate": "2026-07-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260719-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-19",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "tetsuo-ai/voice_clone_lab",
+      "summary": "本地端 voice cloning：5–15 分鐘語音（錄音或 YouTube）fine-tune Qwen3-TTS 成個人聲音模型，CLI+web UI，支援 zero-shot。全程本地。需 NVIDIA CUDA GPU。",
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "qwen",
+        "local",
+        "gradio"
+      ],
+      "url": "https://github.com/tetsuo-ai/voice_clone_lab",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 33,
+      "createdDate": "2026-07-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260719-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-19",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "karem505/claudecodex",
+      "summary": "用 Claude Code UI 但引擎換 GPT-5.6，billing 走 ChatGPT Plus/Pro 訂閱，不需 API key。本機起 Anthropic-compatible proxy 轉發到 Codex auth。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "proxy",
+        "gpt-5",
+        "cli"
+      ],
+      "url": "https://github.com/karem505/claudecodex",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 25,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260719-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-19",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "mathaix/OpenClawMachines",
+      "summary": "把 OpenClaw agent 跑在自有硬體的 Firecracker microVM：control plane 管主機、每 agent 一個硬體隔離 microVM、Cloudflare data plane edge auth。⚠️ repo 較早(06-04)，本週上 Show HN 才浮現。",
+      "tags": [
+        "openclaw",
+        "firecracker",
+        "microvm",
+        "self-hosted",
+        "sandbox"
+      ],
+      "url": "https://github.com/mathaix/OpenClawMachines",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 51,
+      "createdDate": "2026-06-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260719-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-19",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "CodeDrobe/skills",
+      "summary": "一組 Agent Skills，幫 AI 桌面 app 換膚：參考圖→可逆 skin→驗證、修復、發布。工具鏈周邊。",
+      "tags": [
+        "agent-skills",
+        "theming",
+        "codex",
+        "apache-2.0"
+      ],
+      "url": "https://github.com/CodeDrobe/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 193,
+      "createdDate": "2026-07-15",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-19",
