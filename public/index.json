@@ -62863,6 +62863,288 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260720-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "pablostanley/yoinks",
+      "summary": "Terminal 影片下載工具，一行指令從各平台抓影片，作者強調沒有夾帶廣告與追蹤。做內容素材蒐集、參考影片存檔很直接。",
+      "tags": [
+        "cli-tool",
+        "video",
+        "creator-tool"
+      ],
+      "url": "https://github.com/pablostanley/yoinks",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-06+stars:>50",
+      "stars": 715,
+      "createdDate": "2026-07-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "hoainho/img2threejs",
+      "summary": "丟一張參考圖，自動重建成純程式碼的 procedural Three.js 3D 模型，有 quality gate 且可直接接動畫。做 MV 視覺、網頁互動作品的人值得試。",
+      "tags": [
+        "3d",
+        "threejs",
+        "creative-coding",
+        "ai-coding"
+      ],
+      "url": "https://github.com/hoainho/img2threejs",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-06+stars:>50",
+      "stars": 438,
+      "createdDate": "2026-07-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "blitzdotdev/blitzos",
+      "summary": "讓 cloud agent 開機就帶著你的工作狀態，闔上筆電後仍繼續跑。長時間 agent 任務不用開著機器等。",
+      "tags": [
+        "ai-agent",
+        "cloud",
+        "devtool"
+      ],
+      "url": "https://github.com/blitzdotdev/blitzos",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-06+stars:>50",
+      "stars": 130,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "VKirill/claude-lane-stack",
+      "summary": "Claude Code 的多 agent 編排：分 AGY/Grok/Codex 三條 lane，用 file contracts 界定各自可動的檔案，再自動 merge 回 main。平行跑 agent 最怕互相蓋檔，這個直接從契約層解。",
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "ai-coding"
+      ],
+      "url": "https://github.com/VKirill/claude-lane-stack",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 126,
+      "createdDate": "2026-07-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "xinhuangcs/agentmaker",
+      "summary": "通用 Python agent 框架，主打「四行程式碼一個 agent」，支援 multi-agent 系統。想快速搭 prototype 不想扛 LangChain 重量的選項。",
+      "tags": [
+        "ai-agent",
+        "python",
+        "framework"
+      ],
+      "url": "https://github.com/xinhuangcs/agentmaker",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 74,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "illiahaidar/mcptrustchecker",
+      "summary": "MCP server 的資安掃描器，離線且 deterministic，給出 A–F Trust Score，會偵測 tool poisoning 之類的手法。裝第三方 MCP 前先跑一次比較安心。",
+      "tags": [
+        "mcp",
+        "security",
+        "devtool"
+      ],
+      "url": "https://github.com/illiahaidar/mcptrustchecker",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 70,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "liirAliu/Homekit",
+      "summary": "讓任何 AI agent 直接控制 Apple Home：開燈、鎖門、讀感測器。工作室環境自動化（燈光、錄音提示燈）可以玩。",
+      "tags": [
+        "mcp",
+        "ai-agent",
+        "smart-home"
+      ],
+      "url": "https://github.com/liirAliu/Homekit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 69,
+      "createdDate": "2026-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "Nutlope/hallmark",
+      "summary": "本週爆衝 +8,834 星。專治 AI 生成介面的 slop 感，給 Claude Code / Cursor / Codex 用的設計 skill。vibe coding 出來的東西總是很像模板，這個就是解那個問題。",
+      "tags": [
+        "claude-code",
+        "design",
+        "ai-coding",
+        "agent-skill"
+      ],
+      "url": "https://github.com/Nutlope/hallmark",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 13307,
+      "createdDate": "2026-04-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "iOfficeAI/OfficeCLI",
+      "summary": "專為 AI agent 設計的 Office 套件，讀寫 Word/Excel/PowerPoint，單一 binary、不需安裝 Office。要 agent 自動產出報表、企劃書很實用。",
+      "tags": [
+        "cli-tool",
+        "ai-agent",
+        "automation"
+      ],
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 19619,
+      "createdDate": "2026-03-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260720-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "ibelick/ui-skills",
+      "summary": "給 design engineer 的 agent skills 集合，本週 +1,098 星。跟 hallmark 是同一個脈絡：把設計品味外掛給 coding agent。",
+      "tags": [
+        "agent-skill",
+        "design",
+        "frontend"
+      ],
+      "url": "https://github.com/ibelick/ui-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 5403,
+      "createdDate": "2026-01-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "anthropics/cwc-workshops",
+      "summary": "Anthropic 官方的 Claude workshop 教材，本週 +291 星、497 forks。想系統性補 agent 開發觀念的一手來源。",
+      "tags": [
+        "claude-code",
+        "learning",
+        "official"
+      ],
+      "url": "https://github.com/anthropics/cwc-workshops",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 1755,
+      "createdDate": "2026-05-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260720-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "uiuing/browser-agent",
+      "summary": "開源瀏覽器 AI agent，可自帶任何模型，在 side panel 規劃、在真實頁面上操作。相較 BrowserOS 這種整套瀏覽器，這是輕量的 extension 路線。",
+      "tags": [
+        "ai-agent",
+        "browser",
+        "automation"
+      ],
+      "url": "https://github.com/uiuing/browser-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 31,
+      "createdDate": "2026-07-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "KuiChi-x/reverseloom",
+      "summary": "做 web 逆向的瀏覽器 agent，把網站轉成免瀏覽器的 API client 與爬蟲。抓沒有公開 API 的資料源時很省事。",
+      "tags": [
+        "ai-agent",
+        "browser",
+        "scraping"
+      ],
+      "url": "https://github.com/KuiChi-x/reverseloom",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 24,
+      "createdDate": "2026-07-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260720-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-07-20",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "yeet-src/sigwire",
+      "summary": "Show HN 45 pts。即時 TUI 面板，看 Linux 機器上所有 signal 的流向。除錯 daemon、追 process 為什麼被殺掉時很好用。",
+      "tags": [
+        "cli-tool",
+        "linux",
+        "debugging"
+      ],
+      "url": "https://github.com/yeet-src/sigwire",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 0,
+      "createdDate": "2026-07-13",
+      "license": "unknown"
     }
   ],
   "lastUpdated": "2026-07-19",
