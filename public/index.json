@@ -62757,6 +62757,112 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260720-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-20",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "賣了 2500 台 MIDI 錄音機之後：硬體沒那麼難",
+      "summary": "軟體出身的 Chip Weinberger 做出 Jamcorder（自動側錄鋼琴演奏的 MIDI 裝置），本來以為硬體是最難的關卡，結果最難的是 20 萬行軟體，硬體反而一路順風。他的結論是「硬體有多難取決於你把它做多難」——PCB 只用 25 個現成料件、單顆螺絲組裝、砍掉 USB-C 與電源鍵。",
+      "tags": [
+        "hardware",
+        "music-tech",
+        "solo-founder",
+        "bom",
+        "margins"
+      ],
+      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "source": "Chip Weinberger",
+      "sourceUrl": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260720-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-20",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "If You Build It, They Will Come — 加入圈子最快的方法是自己辦活動",
+      "summary": "想打進任何社群，最快的方式不是持續參加別人的活動，而是自己辦。因為每個社群對「有事做」的需求永遠遠大於供給，而只要一件事需要一點點雜活，大多數人就不會做。結論：場景的領袖幾乎都只是那些願意扛雜活的人，而其他辦活動的人一定會注意到誰在扛。",
+      "tags": [
+        "community",
+        "leadership",
+        "network-building",
+        "free-riders"
+      ],
+      "url": "https://www.benlandautaylor.com/p/if-you-build-it-they-will-come",
+      "source": "Ben Landau-Taylor",
+      "sourceUrl": "https://www.benlandautaylor.com/p/if-you-build-it-they-will-come",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260720-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-07-20",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "人面對問題的三種反應（除了解決它以外）",
+      "summary": "顧問 Brian Kerr 整理出解決問題之外的三種反應：推移問題（在這裡變好、在那裡變糟，也就是局部最佳化）、保存問題、製造新問題。關鍵提醒是不要怪罪推移問題的人——他們只是在玩眼前的賽局並想贏，要修的是上兩層的誘因與系統視野。文中並援引 Shirky Principle：機構會傾向保存那個它賴以存在的問題。",
+      "tags": [
+        "problem-solving",
+        "shirky-principle",
+        "incentives",
+        "local-optimization"
+      ],
+      "url": "https://improvesomething.today/responses-to-problems/",
+      "source": "Brian Kerr (Improve Something Today)",
+      "sourceUrl": "https://improvesomething.today/responses-to-problems/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260720-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-07-20",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "Recurse Center 15 週年：pg 說對了，但還是值得做",
+      "summary": "Recurse Center 創辦人回顧：2010 年 YC 出身，原本要做「求職版 OkCupid」，快速失敗後花了一年在各種點子間 pivot，最後做了自己想要的東西——一個自主導向的程式設計靜修營。當年 pg 在 HN 的留言一語成讖：免費程式靜修營不會是十億美元生意。15 年後影響超過 3000 人，他仍每天興奮地起床工作。",
+      "tags": [
+        "pivot",
+        "yc",
+        "lifestyle-business",
+        "founder-journey",
+        "build-what-you-want"
+      ],
+      "url": "https://www.recurse.com/",
+      "source": "Nick Bergson-Shilcock (Hacker News)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=48949551",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260720-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-07-20",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Boring is good — Claude Code 換掉 Bun 底層沒人發現",
+      "summary": "Jarred Sumner 揭露 Claude Code v2.1.181 起已改用 Rust 重寫的 Bun，Linux 啟動快了 10%，但幾乎沒人注意到。基礎設施重寫的最高評價就是「沒人發現」——這是對所有想大改架構的團隊的定錨。",
+      "tags": [
+        "infrastructure",
+        "rewrite",
+        "engineering-culture"
+      ],
+      "url": "https://bun.com/blog/bun-in-rust",
+      "source": "Jarred Sumner (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-19",
