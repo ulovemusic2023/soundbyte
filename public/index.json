@@ -62334,6 +62334,227 @@
       "stars": 193,
       "createdDate": "2026-07-15",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260720-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "kigner/audio.cpp-webui",
+      "summary": "audio.cpp 的完整任務 WebUI — 純 C++ / ggml 音訊模型推理引擎，完全不需要 Python。一個介面涵蓋 TTS、ASR/STT、VAD、voice conversion、speaker diarization 跟 music generation，等於把整條音訊 pipeline 包成 llama.cpp 那種單一 binary 的體驗。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "audio_music_ai",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/kigner/audio.cpp-webui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kigner/audio.cpp-webui",
+      "price": null,
+      "vram": "local-ready",
+      "license": "NOASSERTION（未標準授權）"
+    },
+    {
+      "id": "20260720-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "katipally/openlive",
+      "summary": "on-device 的語音 + 視覺層，專門給 AI agent 用。整條 speech loop（VAD、STT、TTS、barge-in）全部跑在本機，可以接任何 model 或 coding agent。定位是 ElevenLabs Agents / Gemini Live / OpenAI Realtime 的 open 替代品。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/katipally/openlive",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/katipally/openlive",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LM Studio Bionic",
+      "summary": "LM Studio 推出 agent 模式，主打 open models 做 coding 跟文件工作。內建本地語音輸入（首發搭 Mistral 的 Voxtral 做離線即時轉錄），模型可以選本地跑、走 LM Link、或用 Secure Cloud 接 GLM 5.2 / Kimi K2.7 Code。承諾 Zero Data Retention。",
+      "tags": [
+        "llm_inference",
+        "tts_speech",
+        "ai_devtools"
+      ],
+      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+      "source": "Hacker News (328 pts)",
+      "sourceUrl": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "專有軟體（免費使用）"
+    },
+    {
+      "id": "20260720-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AngelSlim/Hy3-GGUF",
+      "summary": "騰訊 Hy3 的官方 GGUF 量化版，用 imatrix 校準。上架幾天就 109k 下載，代表本地跑 Hy3 的需求很實在。llama.cpp / Ollama 直接可用。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf"
+      ],
+      "url": "https://huggingface.co/AngelSlim/Hy3-GGUF",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/AngelSlim/Hy3-GGUF",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260720-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Vocal Notation — 唱歌轉樂譜（瀏覽器內）",
+      "summary": "直接在瀏覽器裡把你唱的旋律轉成可列印的五線譜，不上傳、不用裝東西。pitch detection + music transcription 全在前端跑完，拿來快速記 demo 旋律很順手。",
+      "tags": [
+        "audio_music_ai",
+        "music_understanding",
+        "pitch extraction"
+      ],
+      "url": "https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html",
+      "source": "Hacker News (93 pts)",
+      "sourceUrl": "https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "未標示"
+    },
+    {
+      "id": "20260720-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ai-sage/GigaAM-Multilingual",
+      "summary": "多語 ASR 模型，覆蓋 ru / en / kk / ky / uz。MIT 授權加上模型不大，適合塞進本地轉錄流程當 Whisper 之外的第二選擇，中亞語系覆蓋度是它的差異點。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "speech recognition"
+      ],
+      "url": "https://huggingface.co/ai-sage/GigaAM-Multilingual",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/ai-sage/GigaAM-Multilingual",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260720-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenMOSS-Team/MOSS-VL-Realtime",
+      "summary": "11.3B 的即時串流影像理解模型，主打 realtime / streaming video understanding。Apache-2.0，FP16 約 22GB 塞不進 16GB，量化後才有機會在 5070 Ti 上跑。",
+      "tags": [
+        "llm_inference",
+        "multimodal",
+        "video"
+      ],
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260720-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Wan-AI/Wan-Dancer-14B",
+      "summary": "Wan 系列的 music-to-dance 模型，吃一張圖 + 音樂生出跟著節拍跳舞的影片。14B image-to-video，Apache-2.0，論文 arXiv:2607.09581。對做 MV / 視覺內容是很直接的工具。",
+      "tags": [
+        "audio_music_ai",
+        "image_gen",
+        "video generation"
+      ],
+      "url": "https://huggingface.co/Wan-AI/Wan-Dancer-14B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/Wan-AI/Wan-Dancer-14B",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260720-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "nvidia/Nemotron-3-Embed-1B-BF16",
+      "summary": "NVIDIA 新的 1.14B embedding 模型，主打 retrieval / semantic search / RAG，支援 sentence-transformers 跟 vLLM。1B 等級本地跑毫無壓力，適合當 RAG 的 embedding 層換代候選。",
+      "tags": [
+        "rag_knowledge",
+        "embedding",
+        "semantic search"
+      ],
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16",
+      "price": null,
+      "vram": "local-ready",
+      "license": "NVIDIA Open Model License（other）"
+    },
+    {
+      "id": "20260720-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "mgwr/M87",
+      "summary": "架在 Krea-2-Turbo 上的 text-to-image LoRA，一週衝到 158 likes。diffusers 直接載入，LoRA 體積小、本地推理成本低。",
+      "tags": [
+        "image_gen",
+        "lora",
+        "diffusers"
+      ],
+      "url": "https://huggingface.co/mgwr/M87",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/mgwr/M87",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260720-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-07-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenEnvision/WorldFoundry",
+      "summary": "統一的 world model 推理與評測基礎設施，涵蓋 3D/4D、video generation、VLA 等 world model 的 benchmark 與 evaluation。本身是 infra 框架，實際 VRAM 看你掛什麼模型，多數 world model 都吃超過 24GB。",
+      "tags": [
+        "infra_runtime",
+        "video generation",
+        "benchmark"
+      ],
+      "url": "https://github.com/OpenEnvision/WorldFoundry",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/OpenEnvision/WorldFoundry",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-19",
