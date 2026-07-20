@@ -63413,6 +63413,91 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260721-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-21",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "lopopolo/harness-engineering",
+      "summary": "Ryan Lopopolo 的「harness engineering」文集＋agent context bundle：把 coding agent 當黑盒，改善 context 與 tools 兩個外部槓桿，並把組織的 non-functional requirements（可靠性、安全、可維護性）寫進可檢索的 context 與 executable constraints。可直接把 agent 指向這份 repo 提升輸出品質。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "harness",
+        "context-engineering"
+      ],
+      "url": "https://github.com/lopopolo/harness-engineering",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-07+stars:>50",
+      "stars": 684,
+      "createdDate": "2026-07-18",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "20260721-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-21",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "0xsline/OpenChatCut",
+      "summary": "Agent-native、local-first 的 AI 影片剪輯器：讓 Codex／Claude Code／內建 agent 直接讀取、編輯、匯出「仍可再編輯」的真實影片專案。多軌 timeline＋Agent Skills＋MCP 整合＋Remotion 渲染，TypeScript/React 19。對創作者工作流很對味。",
+      "tags": [
+        "video-editor",
+        "agent-skill",
+        "mcp",
+        "remotion",
+        "creator-tool"
+      ],
+      "url": "https://github.com/0xsline/OpenChatCut",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 95,
+      "createdDate": "2026-07-15",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260721-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-21",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "smixs/mentor",
+      "summary": "一個 session-insights skill：讀你本機的 Claude Code / Codex 歷史，產出 /insights 風格的 HTML 報告——你都在做什麼、時間卡在哪、有哪些具體可改進點。適用任何支援 skills 的 agent。剛發（2 天）。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "codex",
+        "insights"
+      ],
+      "url": "https://github.com/smixs/mentor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 49,
+      "createdDate": "2026-07-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260721-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-21",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "loopgain-ai/loopgain",
+      "summary": "AI agent loop 的成本控制器：用 control theory 的 loop-gain (Aβ) bands 判斷 loop 是否已收斂就停手，並在退化前 rollback best-so-far，而不是死等 max_iterations。支援 LangGraph/CrewAI/AutoGen/LangChain/OpenAI Agents/Claude Agent SDK。本週上 Show HN（repo 較早，5/12 建立）。",
+      "tags": [
+        "ai-agent",
+        "cost-control",
+        "agent-loop",
+        "control-theory"
+      ],
+      "url": "https://github.com/loopgain-ai/loopgain",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 75,
+      "createdDate": "2026-05-12",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-21",
