@@ -63145,6 +63145,28 @@
       "stars": 0,
       "createdDate": "2026-07-13",
       "license": "unknown"
+    },
+    {
+      "id": "20260721-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "handy-computer/transcribe.cpp",
+      "summary": "whisper.cpp 的概念延伸到整個 STT 生態：一套 ggml 引擎跑 16 個模型家族、60+ 變體(Parakeet / Canary / Canary-Qwen SALM / Whisper / Qwen3-ASR / Voxtral audio-LLM / SenseVoice / FunASR-nano / GigaAM / Moonshine 含 streaming / Nemotron-3.5-ASR 40 語系 / Granite-Speech-4),全用 GGUF 格式、streaming + batch 皆可,CPU(tinyBLAS)/CUDA/Metal/Vulkan 後端全包。每個官方權重都做過數值驗證 + WER 對照,不是隨便包一包。等於把 ASR 的碎片化生態壓進一個可本地部署的 C++ runtime。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "infra_runtime",
+        "whisper",
+        "ggml"
+      ],
+      "url": "https://github.com/handy-computer/transcribe.cpp",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready (16GB 綽綽有餘,STT 模型多在 110M–3B)",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-19",
