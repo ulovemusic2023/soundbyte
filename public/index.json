@@ -63747,6 +63747,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260722-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "Vincentwei1021/video-shotcraft",
+      "summary": "給 Claude Code / Codex 用的 AI 影片 skill，底層走 Remotion，附 106 張 shot recipe cards 與 161 個 motion preview，把拍產品影片拆成可組合的鏡頭語言。",
+      "tags": [
+        "claude-code",
+        "video",
+        "remotion",
+        "agent-skill"
+      ],
+      "url": "https://github.com/Vincentwei1021/video-shotcraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 404,
+      "createdDate": "2026-07-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260722-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-22",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "Blueturboguy07/cue",
+      "summary": "開源版 Cluely：macOS 上浮在螢幕最上層的 AI copilot，會看畫面、聽會議，且對 screen share 隱形，BYOK。",
+      "tags": [
+        "macos",
+        "ai-copilot",
+        "byok",
+        "productivity"
+      ],
+      "url": "https://github.com/Blueturboguy07/cue",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 700,
+      "createdDate": "2026-07-15",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260722-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-22",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "hahhforest/pi-textbook",
+      "summary": "《動手學 Pi》：沿 15 個真實 checkpoint 從零手刻一個 Pi-style Agent 的教材向專案。",
+      "tags": [
+        "ai-agent",
+        "tutorial",
+        "agent-harness"
+      ],
+      "url": "https://github.com/hahhforest/pi-textbook",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 80,
+      "createdDate": "2026-07-21",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-22",
