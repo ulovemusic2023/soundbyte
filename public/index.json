@@ -63554,6 +63554,136 @@
       "price": null,
       "vram": "local-ready",
       "license": "見 repo"
+    },
+    {
+      "id": "20260722-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cursor: Agent swarms and the new model economics",
+      "summary": "Cursor 把 agent swarm 變成可刻意工程化的系統：任務為樹狀結構，planner 用最強模型拆解、worker 用便宜快模型執行葉節點。用文件從零在 Rust 重寫 SQLite，新 swarm 每種配置都勝出，Grok 4.5 四小時通過 80% held-out SQL 測試；分工品質相近但成本天差地別。",
+      "tags": [
+        "agent-swarm",
+        "planner-worker",
+        "model-economics",
+        "orchestration"
+      ],
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/agent-swarm-model-economics",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260722-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Is Not a Compiler",
+      "summary": "作者修正 2025 年的疑問：coding agent 不是插在工程師與 compiler 間、把 NL 編譯成 code 的新一層（category error），而是「比 compiler 更好」——能跨抽象層工作、具 mechanical sympathy。以帝國大廈跨層協作施工為喻。",
+      "tags": [
+        "coding-agent",
+        "mechanical-sympathy",
+        "abstraction-layers",
+        "dev-philosophy"
+      ],
+      "url": "https://blog.exe.dev/claude-is-not-a-compiler",
+      "source": "blog.exe.dev",
+      "sourceUrl": "https://blog.exe.dev/claude-is-not-a-compiler",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260722-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 推 Gemini 3.6 Flash / 3.5 Flash-Lite / 3.5 Flash Cyber",
+      "summary": "主打 production agent 規模化。3.6 Flash output token 較 3.5 Flash 減 17%（DeepSWE 最多減 65%）；Flash-Lite 每秒 350 tokens、最省成本；Flash Cyber 為資安專用模型，搭配 CodeMender code security agent。",
+      "tags": [
+        "gemini",
+        "flash",
+        "agentic-workflow",
+        "token-efficiency",
+        "codemender"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260722-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Poolside 發表 Laguna S 2.1 編碼模型",
+      "summary": "118B-A8B MoE，支援 1M context，開訓到上線不到九週。SWE-Bench Multilingual 78.5、SWE-Bench Pro 59.4、Terminal-Bench 2.1 70.2，與體積數倍模型互有勝負，並公布每個 trial 的完整 trajectory。",
+      "tags": [
+        "poolside",
+        "laguna",
+        "coding-model",
+        "moe",
+        "swe-bench",
+        "long-horizon"
+      ],
+      "url": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "source": "Poolside Blog",
+      "sourceUrl": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260722-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Jack Dorsey 推出 Buzz：整合團隊聊天 + AI agents + Git hosting",
+      "summary": "Block 旗下 Dorsey 推出 Buzz，將團隊通訊、AI agents 與 Git 代管整合到單一平台。⚠️ 內文無法擷取，摘要僅據標題與 HN 討論，細節待官方確認。",
+      "tags": [
+        "dorsey",
+        "block",
+        "buzz",
+        "git-hosting",
+        "dev-tool"
+      ],
+      "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+      "source": "RuntimeWire",
+      "sourceUrl": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260722-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "unslop：約 1/3 新 arXiv 論文全文讀起來像 AI 寫的",
+      "summary": "對 12,750 篇 arXiv 論文全文評分，門檻校準在 0.4% false-positive floor（用前 ChatGPT 論文當人類 ground truth）。約三分之一新論文被標為機器所寫且逐年上升，排除偵測器 artifact 可能。",
+      "tags": [
+        "ai-writing",
+        "arxiv",
+        "detection",
+        "research-integrity"
+      ],
+      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+      "source": "unslop",
+      "sourceUrl": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-21",
