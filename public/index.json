@@ -63684,8 +63684,71 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260722-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-22",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "把新功能先只給自己團隊用，能留存的才推全體",
+      "summary": "Anthropic Claude Code 的做法：新功能先只 ship 給內部員工這個 cohort，只有在這群人身上看到真實 retention 的功能才會推給所有用戶。等於把『內部 dogfooding（他們叫 ant fooding）』升級成一道 retention 閘門——不是問『大家喜不喜歡』，而是看『用了會不會留下來』。",
+      "tags": [
+        "dogfooding",
+        "retention",
+        "product",
+        "shipping"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+      "source": "Cat Wu & Thariq Shihipar（Anthropic Claude Code 團隊）· 經 Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260722-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-22",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "新模型要更短的 prompt：範例和『不要做 X』清單反而降品質",
+      "summary": "反直覺的 AI-native 操作經驗：對 Fable 5、甚至 Opus 4.8 這種新模型，往 system prompt 塞範例已經不再是 best practice，一長串『不要做 X、不要做 Y』的禁令清單還會拉低結果品質。Claude Code 的 system prompt 最近直接砍掉 80%。給模型的指令，少即是多。",
+      "tags": [
+        "prompt-engineering",
+        "ai-native",
+        "llm",
+        "less-is-more"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+      "source": "Cat Wu & Thariq Shihipar（Anthropic Claude Code 團隊）· 經 Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260722-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-22",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "被 AI 接手後覺得無聊？答案是把野心放更大",
+      "summary": "當 coding agent 把大量實作接走，人會有種『被 Deep Blue 打敗』的失落。Thariq 的解法不是退回去自己手刻，而是『對你要扛的工作更有野心』——AI 拉高了個人產出的上限，該做的是把目標訂得更大，而不是抱怨沒事幹。",
+      "tags": [
+        "ai-age",
+        "ambition",
+        "leverage",
+        "mindset"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+      "source": "Cat Wu & Thariq Shihipar（Anthropic Claude Code 團隊）· 經 Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-21",
-  "updatedAt": "2026-07-20T21:31:00Z"
+  "lastUpdated": "2026-07-22",
+  "updatedAt": "2026-07-21T21:31:00Z"
 }
