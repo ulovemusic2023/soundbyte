@@ -64326,6 +64326,304 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260724-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "unicity-aos/aos-ce",
+      "summary": "開源 agent operating system 社群版，兩週衝到 6.8k star，commit 活動真實（61 PR）。⚠️ 但 6848★ 僅 9 forks / 8 watchers，star 曲線極不自然且無 license，建議觀望。",
+      "tags": [
+        "ai-agent",
+        "agent-os"
+      ],
+      "url": "https://github.com/unicity-aos/aos-ce",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-10+stars:>50",
+      "stars": 6848,
+      "createdDate": "2026-07-12",
+      "license": "none"
+    },
+    {
+      "id": "20260724-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "penecho/penecho",
+      "summary": "把 AI 對話從 chat box 拉到共享 canvas：手寫、公式、圖表、空間關係都成為 context 的一部分。多語系完整。",
+      "tags": [
+        "ai-canvas",
+        "spatial-reasoning"
+      ],
+      "url": "https://github.com/penecho/penecho",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-10+stars:>50",
+      "stars": 1309,
+      "createdDate": "2026-07-14",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260724-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "nyblnet/bento",
+      "summary": "整份簡報就是一個 HTML 檔，自帶 viewer/presenter/editor，收到的人不用裝任何東西。Show HN 979 分，本週最高。",
+      "tags": [
+        "presentation",
+        "single-file",
+        "oss-alternative"
+      ],
+      "url": "https://github.com/nyblnet/bento",
+      "source": "GitHub API + Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 1039,
+      "createdDate": "2026-07-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "DavidHDev/canvas-ui",
+      "summary": "creative canvas 元件庫，真實 HTML 疊 WebGL 效果，支援 React / Vue / Svelte / vanilla。",
+      "tags": [
+        "webgl",
+        "ui-components",
+        "creative-coding"
+      ],
+      "url": "https://github.com/DavidHDev/canvas-ui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-10+stars:>50",
+      "stars": 825,
+      "createdDate": "2026-07-16",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260724-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Blaizzy/nativ",
+      "summary": "Apple silicon 本地模型的原生 macOS app：chat、serve、監控、連接 MLX 模型，內建 mlx-vlm server。作者為 mlx-vlm maintainer。需 macOS 26+。",
+      "tags": [
+        "local-llm",
+        "mlx",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/Blaizzy/nativ",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-10+stars:>50",
+      "stars": 806,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "andrewyng/openworker",
+      "summary": "Andrew Ng 掛名的開源桌面 AI coworker，主打交出完成品而非聊天。BYOK 或全本地 Ollama，目前 open beta。",
+      "tags": [
+        "ai-agent",
+        "desktop-agent",
+        "byok"
+      ],
+      "url": "https://github.com/andrewyng/openworker",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-10+stars:>50",
+      "stars": 770,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "pyang5166/gbro-collage-broll",
+      "summary": "半調紙拼貼風 B-roll 生成 agent skill，三閘門審批 + Gemini Omni Flash 首尾幀組裝動畫。",
+      "tags": [
+        "video",
+        "b-roll",
+        "agent-skill",
+        "creator-tool"
+      ],
+      "url": "https://github.com/pyang5166/gbro-collage-broll",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-10+stars:>50",
+      "stars": 718,
+      "createdDate": "2026-07-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Jakubantalik/thinking-orbs",
+      "summary": "給 AI / agent UI 用的點狀思考中載入指示器，六種狀態、兩種尺寸、自動深淺色。",
+      "tags": [
+        "ui",
+        "agent-ux",
+        "loading-state"
+      ],
+      "url": "https://github.com/Jakubantalik/thinking-orbs",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-10+stars:>50",
+      "stars": 816,
+      "createdDate": "2026-07-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "icebird1998/drawio-scientific-illustrator",
+      "summary": "用 MCP 直接操控畫面上的 draw.io canvas，讓 agent 一步步畫科學示意圖。",
+      "tags": [
+        "mcp",
+        "diagram",
+        "drawio"
+      ],
+      "url": "https://github.com/icebird1998/drawio-scientific-illustrator",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 471,
+      "createdDate": "2026-07-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "TryCaspian/caspian-sdk",
+      "summary": "讓一個 agent 在 Slack / Discord / Telegram / WhatsApp / IG / email / SMS / X 共用同一身分，收斂成單一 on_message handler。",
+      "tags": [
+        "ai-agent",
+        "multi-channel",
+        "sdk"
+      ],
+      "url": "https://github.com/TryCaspian/caspian-sdk",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 172,
+      "createdDate": "2026-07-20",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260724-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "finna/Finn-loop",
+      "summary": "Claude Code 三段式 skill 流水線：spec → build → review，人類只負責 merge。四天衝到 156★。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "workflow"
+      ],
+      "url": "https://github.com/finna/Finn-loop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 156,
+      "createdDate": "2026-07-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "izeigerman/claude-thermos",
+      "summary": "把 Claude session 保溫不讓它冷掉的小工具，Show HN 44 分。",
+      "tags": [
+        "claude-code",
+        "devtool"
+      ],
+      "url": "https://github.com/izeigerman/claude-thermos",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 50,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "palmier-io/palmier-pro",
+      "summary": "為 AI 設計的開源 macOS 影片剪輯器，本週 Show HN 88 分重新引爆。⚠️ 非新 repo（4 月建立）。",
+      "tags": [
+        "video-editing",
+        "macos",
+        "creator-tool"
+      ],
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 11211,
+      "createdDate": "2026-04-07",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260724-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "AlmanacCode/codealmanac",
+      "summary": "給 AI coding agent 看的 codebase wiki，記錄決策、資料流、不變條件、踩過的雷。Show HN 59 分。",
+      "tags": [
+        "coding-agent",
+        "documentation",
+        "context"
+      ],
+      "url": "https://github.com/AlmanacCode/codealmanac",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 605,
+      "createdDate": "2026-04-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260724-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-07-24",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "h3nock/remux",
+      "summary": "原生 iOS tmux client，mobile-first UI 管理常駐 terminal session。Show HN 77 分。",
+      "tags": [
+        "tmux",
+        "ios",
+        "devtool"
+      ],
+      "url": "https://github.com/h3nock/remux",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 121,
+      "createdDate": "2026-04-21",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-24",
