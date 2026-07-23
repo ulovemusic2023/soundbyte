@@ -64226,8 +64226,108 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260724-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-24",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Never Enough — 矽谷的瘋狂不再來自叛逆，而是來自怕落後",
+      "summary": "Ronacher 從兩則新聞切入：一對年收 55 萬美金的夫妻仍覺得落後，因為 Anthropic 的人可能先買到夢想中的房子；另一位創辦人把每次初次約會錄音下來，讓 Claude 評估她夠不夠有同理心。他的框架是：科技原本該騰出空間給生活，現在生活卻被重新排列來配合 AI。人們怕被機器取代，於是把更多判斷力、注意力和時間交給機器——而每一個「省下」的小時，都還回到一場沒有終點的競賽。",
+      "tags": [
+        "ai-culture",
+        "focus",
+        "founder-psychology"
+      ],
+      "url": "https://dark.ronacher.eu/2026/7/21/never-enough/",
+      "source": "Armin Ronacher (Dark Thoughts)",
+      "sourceUrl": "https://dark.ronacher.eu/2026/7/21/never-enough/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260724-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-24",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "PyPI 禁止上傳超過 14 天的舊 release 檔案",
+      "summary": "PyPI 現在拒絕把新檔案上傳到 14 天前的 release。理由不是偵測到攻擊，而是：一旦 publishing token 或 workflow 被入侵，攻擊者可以「毒化」一個長期穩定的舊版本，而幾乎沒人會去重新檢查。Seth Larson 明說目前沒看到被濫用，純粹是「攻擊者還沒想到而已」。防禦思維範例：不要等到偵測到攻擊才動手，直接把攻擊面關掉。",
+      "tags": [
+        "supply-chain",
+        "security",
+        "defense-in-depth"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/23/seth-larson/",
+      "source": "Seth Larson (PyPI blog, via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/23/seth-larson/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260724-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-24",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "On Making — 別人照我的要求做出來的，我不算「做過」",
+      "summary": "Beej（Beej's Guides 作者、OSU 講師）拆解 AI 開發分裂的一個少被談的面向：成就感的來源。他承認 AI 帶來高層次問題解決和清掉積壓專案的好處，但對他而言，「按我的要求由別人（或機器）建成的東西」不算是我做的，因此滿足感大幅降低。這對創辦人的意義：如果你的動力來自 making 本身，把所有執行外包給 agent 可能會贏了產出、輸了續航力。⚠️ 原文 2026-03-12，7/23 在 HN 重新引爆（424 分）。",
+      "tags": [
+        "craft",
+        "motivation",
+        "ai-and-work"
+      ],
+      "url": "https://beej.us/blog/data/ai-making/",
+      "source": "Beej Jorgensen",
+      "sourceUrl": "https://beej.us/blog/data/ai-making/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260724-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-07-24",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Thomas Ptacek：這根本不需要 frontier model",
+      "summary": "針對 OpenAI 越獄入侵 Hugging Face 事件的一句冷水。啟示：進攻能力已經商品化，安全假設不能建立在「只有頂尖模型做得到」上。",
+      "tags": [
+        "ai-security",
+        "open-weights"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/",
+      "source": "Thomas Ptacek (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260724-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-07-24",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "反對開源 AI 的論點有多爛 —— 以及「在哪一層競爭」的老框架",
+      "summary": "Kimi K3 發布後又一輪「開源模型很危險」的論述。Tom Bedor 的反駁點出一個對創辦人真正有用的框架：軟體是一層層疊起來的，大部分底層元件不是你的差異化來源，所以商業公司理性上會在底層合作、在上層競爭——frontier labs 現在最怕的，就是模型掉進「太普通、不值得拿來競爭」那一層。他再用加密技術史佐證：1991 年 PGP 被當軍用技術查辦、SSL 被迫出弱化版出口，結果是弱化版更好拿、連美國人都在用，管制反而削弱自家公司。",
+      "tags": [
+        "open-source",
+        "strategy",
+        "commoditization",
+        "moat"
+      ],
+      "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "source": "Tom Bedor",
+      "sourceUrl": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-24",
-  "updatedAt": "2026-07-24T05:10:00+08:00"
+  "updatedAt": "2026-07-24T05:35:00+08:00"
 }
