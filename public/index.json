@@ -63809,8 +63809,171 @@
       "stars": 80,
       "createdDate": "2026-07-21",
       "license": "MIT"
+    },
+    {
+      "id": "20260724-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "neuphonic/neutts-2e",
+      "summary": "Neuphonic 丟出 0.2B 的 on-device 情緒 TTS（Qwen3 backbone + codec），支援 angry/disgusted/fearful/happy/sad/surprised + neutral 共七種情緒、四個固定 speaker，官方同步放 Q4/Q8 GGUF，筆電級 CPU 就能跑到 real-time 以上。目前 early alpha、English-only，要多語言或 instant voice cloning 得走 NeuTTS Nano Multilingual collection。",
+      "tags": [
+        "tts_speech",
+        "on-device",
+        "gguf",
+        "emotional-tts"
+      ],
+      "url": "https://github.com/neuphonic/neutts",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/neuphonic/neutts-2e",
+      "price": null,
+      "vram": "0.2B，CPU/GPU 都輕鬆",
+      "license": "Other (Neuphonic 自訂)"
+    },
+    {
+      "id": "20260724-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ResembleAI/chatterbox-nano",
+      "summary": "Chatterbox 家族最小的一顆：110M 參數，8 核 CPU 上 3x real-time。關鍵是把 speech-token→mel decoder 蒸餾成「一步生成」（原本 10 步），這是先前的瓶頸。MIT 授權、支援 voice cloning 和 [laugh]/[cough] 這類 paralinguistic tag，權重 2026-07-21 才上架。",
+      "tags": [
+        "tts_speech",
+        "voice_cloning",
+        "cpu-inference"
+      ],
+      "url": "https://huggingface.co/ResembleAI/chatterbox-nano",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/ResembleAI/chatterbox-nano",
+      "price": null,
+      "vram": "110M，CPU 即可",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-07-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "poolside/Laguna-S-2.1",
+      "summary": "poolside 開權重的 agentic coding 模型：118B 總參數、每 token 只激活 8B 的 MoE，256 個 routed expert + 1 shared expert，48 層採 1:3 global-to-SWA 交錯注意力。卡在 Laguna XS 2.1 (33B-A3B) 和 Laguna M.1 (225B-A23B) 中間，官方與 unsloth 的 GGUF、NVFP4 版本這兩天陸續上架。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "coding-agent",
+        "gguf"
+      ],
+      "url": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/poolside/Laguna-S-2.1",
+      "price": null,
+      "vram": "118B MoE，Q4 仍需 ~60GB",
+      "license": "OpenMDW-1.1"
+    },
+    {
+      "id": "20260724-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-07-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "upstage/Solar-Open2-250B",
+      "summary": "Upstage 的 250B-A15B open-weight MoE，主打 agentic：tool calling、多步推理、端到端任務執行。架構是 Hybrid-Attention MoE 混 linear attention，長 context 下推理成本壓得很低。支援 en/ko/ja，7/22 才上架，技術報告和 demo 都有。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "agentic",
+        "long-context"
+      ],
+      "url": "https://www.upstage.ai/blog/en/solar-open-2",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/upstage/Solar-Open2-250B",
+      "price": null,
+      "vram": "250B-A15B，遠超 16GB",
+      "license": "upstage-solar-license"
+    },
+    {
+      "id": "20260724-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-07-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Nanbeige/Nanbeige4.2-3B",
+      "summary": "3B 的 agentic 小模型，用 Looped Transformer 重複套用 transformer 層來換容量而不加參數。官方宣稱在 tool-use、office-agent、code-agent benchmark 上贏過 Qwen3.5-9B 和 Gemma4-12B。Apache-2.0，7/21 上架，3B 級距在 16GB 卡上等於免費午餐。",
+      "tags": [
+        "llm_inference",
+        "agentic",
+        "small-model"
+      ],
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+      "price": null,
+      "vram": "3B，FP16 約 6-7GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260724-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-07-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "microsoft/Mage-Flow",
+      "summary": "Microsoft 的 native-resolution 圖像生成 + 編輯 foundation model，4B、rectified flow。一次放出 Base / Turbo / Edit / Edit-Turbo 四個變體，MIT 授權（少見地大方），論文 arXiv:2607.19064。4B 在 16GB 上跑得動，做封面/視覺素材是實用選項。",
+      "tags": [
+        "image_gen",
+        "diffusion",
+        "image-editing"
+      ],
+      "url": "https://github.com/microsoft/Mage",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/microsoft/Mage-Flow",
+      "price": null,
+      "vram": "4B diffusion，約 10-12GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260724-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-07-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Motif-Technologies/Motif-3-Beta",
+      "summary": "韓國 Motif Technologies 自研架構的 314B-A13B MoE，384 experts 選 8 + 1 shared，原生 256K context。明說是 preview/beta checkpoint，最終版隨後釋出，目前 repo 還沒掛授權——想商用要等。值得盯的是「非 Qwen/Llama 再參數化」的自研路線。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "long-context"
+      ],
+      "url": "https://motiftech.io",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/Motif-Technologies/Motif-3-Beta",
+      "price": null,
+      "vram": "314B MoE",
+      "license": "未標示（preview）"
+    },
+    {
+      "id": "20260724-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-07-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "nvidia/Cosmos3-Edge",
+      "summary": "NVIDIA Cosmos 3 的 edge 版本：4B 的 omnimodal world model，能從 text/image/video/action trajectory 生出 video、image、audio 和 action command。定位在 robotics 和 physical AI，OpenMDW-1.1 且明確允許商用。對音樂本業不直接，但 4B 能落地的 world model 值得記一筆。",
+      "tags": [
+        "world-model",
+        "multimodal",
+        "robotics"
+      ],
+      "url": "https://github.com/nvidia/cosmos",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/nvidia/Cosmos3-Edge",
+      "price": null,
+      "vram": "4B edge 版",
+      "license": "OpenMDW-1.1"
     }
   ],
-  "lastUpdated": "2026-07-22",
-  "updatedAt": "2026-07-21T21:31:00Z"
+  "lastUpdated": "2026-07-24",
+  "updatedAt": "2026-07-24T05:10:00+08:00"
 }
