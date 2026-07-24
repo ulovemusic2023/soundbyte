@@ -64774,8 +64774,29 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260725-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-25",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "你依賴的基礎設施，需要的是「可預測」不是「民主」",
+      "summary": "Codeberg 投票決議排除「主要由 AI 生成」的專案。Armin Ronacher 的反思不是挺不挺 AI，而是一個更通用的框架：對你賴以維生的基礎設施來說，你真正需要的是「可預測、可依賴、對合法內容保持中立」，而不是「民主」——一個沒有清楚憲章的民主供應商，可能比一家公司更不穩定，因為多數決隨時能決定你不再屬於這裡。第二層洞見：「mostly AI-written」這種模糊規則把執法權下放給版主與社群氛圍，最後受傷的往往是老實遵守、位在光譜中間的人；模糊地帶不是保護，是風險。",
+      "tags": [
+        "infrastructure",
+        "governance",
+        "open-source",
+        "ai"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/7/24/codeberg-divides/",
+      "source": "Armin Ronacher",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/7/24/codeberg-divides/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-24",
+  "lastUpdated": "2026-07-25",
   "updatedAt": "2026-07-24T05:35:00+08:00"
 }
