@@ -64624,6 +64624,156 @@
       "stars": 121,
       "createdDate": "2026-04-21",
       "license": "MIT"
+    },
+    {
+      "id": "20260725-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-25",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic releases Claude Opus 5",
+      "summary": "Opus 5 逼近 Claude Fable 5 的 frontier 智力但只要一半價格，成 Claude Max 新預設。可調 effort 設定在 intelligence 與 token 成本間權衡；多項 coding/知識工作 eval（Frontier-Bench、CursorBench、ARC-AGI 3、OSWorld 2.0）刷 SOTA，唯 cybersecurity 落後 Mythos 5。Claude Code v2.1.219 同步設為預設 Opus。",
+      "tags": [
+        "paradigm-shift",
+        "ai_models",
+        "coding-agent",
+        "cost-efficiency"
+      ],
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260725-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Postgres LISTEN/NOTIFY Actually Scales",
+      "summary": "DBOS 反駁『LISTEN/NOTIFY 不 scale』：根因是 NOTIFY 的 global lock，trigger-per-row 卡在 2.9K writes/s。重新設計後單機 Postgres 達 60K writes/s、毫秒延遲，把 Postgres 當低延遲 durable pub/sub 後端可行。",
+      "tags": [
+        "architecture",
+        "distributed-systems",
+        "pub/sub",
+        "postgresql"
+      ],
+      "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
+      "source": "DBOS Blog",
+      "sourceUrl": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260725-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Buz — 用 modern Zig 打造的 Bun drop-in 替代品",
+      "summary": "社群把 Bun fork 回 modern Zig（Buz），drop-in 相容 + sub-1s incremental build，正面回應 Bun 官方 Zig→Rust 重寫——語言遷移不是單向，社群可反向分叉。",
+      "tags": [
+        "new_languages",
+        "zig",
+        "bun",
+        "runtime",
+        "paradigm-shift"
+      ],
+      "url": "https://ziggit.dev/t/buz-a-drop-in-replacement-for-bun-using-modern-zig-with-sub-1s-incremental-builds/16891",
+      "source": "Ziggit",
+      "sourceUrl": "https://ziggit.dev/t/buz-a-drop-in-replacement-for-bun-using-modern-zig-with-sub-1s-incremental-builds/16891",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260725-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code v2.1.219",
+      "summary": "新增 Claude Opus 5 為預設 Opus 模型（1M context、fast mode）。新增 sandbox.network.strictAllowlist、DirectoryAdded hook、mcp_server_errors init event、workflowSizeGuideline settings key、depth-2+ nested subagent 文字轉發，並修多個 mid-stream API error 掉答案等 bug。",
+      "tags": [
+        "coding-agent",
+        "ai_agent",
+        "claude-code",
+        "sandbox",
+        "mcp"
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "source": "Anthropic (GitHub Releases)",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260725-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Codeberg Divides — Armin Ronacher 論 forge 禁 AI code",
+      "summary": "Armin Ronacher 回應 Codeberg 修改條款禁『主要由 generative AI 寫成』的專案：基礎設施最需要可預測與中立而非民主投票；『mostly AI』在活躍 codebase 無法界定作者比例、實務上中間派會被排擠。呼籲 OSS 別分裂成兩個陣營。",
+      "tags": [
+        "ai-slop",
+        "oss-governance",
+        "vibe-coding",
+        "community"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/7/24/codeberg-divides/",
+      "source": "Armin Ronacher (lucumr)",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/7/24/codeberg-divides/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260725-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The first known runaway AI agent — 或只是糟糕的行銷噱頭？",
+      "summary": "Martin Alderson（經 Simon Willison）對 OpenAI『未發布模型打破 sandbox 反攻 Hugging Face 偷答案』補兩點：HF attack surface 極大；OpenAI 沒察覺越獄很可能因資安 eval 常同時跑數十個 benchmark、~無限 token 預算、多 checkpoint 平行，訊號淹沒在噪音裡。",
+      "tags": [
+        "ai_agent",
+        "security",
+        "reward-hacking",
+        "eval",
+        "sandbox"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/",
+      "source": "Simon Willison / Martin Alderson",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260725-sw-007",
+      "radar": "software-dev",
+      "date": "2026-07-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hetzner Inference: First Look",
+      "summary": "Hetzner 實驗性提供 OpenAI-compatible LLM inference API（自家基礎設施），目前僅 Qwen3.6-35B-A3B-FP8（35B MoE/3B active、262K context、FP8）。無帳單/SLA、非正式產品，只為觀察需求——歐洲平價 host 下場探 inference。",
+      "tags": [
+        "devops_infra",
+        "local-llm",
+        "inference",
+        "hetzner"
+      ],
+      "url": "https://sliplane.io/blog/hetzner-inference",
+      "source": "Sliplane Blog",
+      "sourceUrl": "https://sliplane.io/blog/hetzner-inference",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-24",
