@@ -64795,6 +64795,165 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260725-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-25",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "gc-minimal-zine-poster",
+      "summary": "Codex skill 生成極簡 zine 風格 editorial poster 的 prompt 與圖片。star:fork 偏高需留意。",
+      "tags": [
+        "codex-skill",
+        "design",
+        "creator-tool"
+      ],
+      "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 775,
+      "createdDate": "2026-07-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260725-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-25",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "draw-your-font",
+      "summary": "把手寫照片轉成真正字型檔（TTF/WOFF），完全 local。Node CLI + Claude Code skill。",
+      "tags": [
+        "font",
+        "creator-tool",
+        "claude-code"
+      ],
+      "url": "https://github.com/danilo-znamerovszkij/draw-your-font",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 119,
+      "createdDate": "2026-07-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260725-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-25",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "concord-mcp",
+      "summary": "coding agents 共享工作狀態的 MCP server：認領任務、handoff、PR 前 review packet。",
+      "tags": [
+        "mcp",
+        "coding-agent"
+      ],
+      "url": "https://github.com/Get-Concord-AI/concord-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 79,
+      "createdDate": "2026-07-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260725-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-25",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "BokeBox",
+      "summary": "多來源私有 AI podcast studio：內容 → 口說 episode，自訂人設聲音、MCP、可自架。",
+      "tags": [
+        "podcast",
+        "tts",
+        "audio",
+        "mcp"
+      ],
+      "url": "https://github.com/vastsa/BokeBox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 52,
+      "createdDate": "2026-07-16",
+      "license": "LGPL-3.0"
+    },
+    {
+      "id": "20260725-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-25",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "minshop",
+      "summary": "全端電商模板，跑在 Cloudflare Workers+D1+R2，含 Stripe/Lightning 付款與 agent-ready API。",
+      "tags": [
+        "ecommerce",
+        "cloudflare-workers"
+      ],
+      "url": "https://github.com/ddyy/minshop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 59,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260725-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-25",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "cicero",
+      "summary": "給 coding agents 的自架語音介面：瀏覽器/Telegram 說話、可打斷、local STT/TTS。",
+      "tags": [
+        "voice",
+        "tts",
+        "coding-agent"
+      ],
+      "url": "https://github.com/5uck1ess/cicero",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 24,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260725-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-25",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "VinvAI",
+      "summary": "agent 驗證：真實 trace + live code graph + 閉環 verify，透過 MCP 餵回 agent。",
+      "tags": [
+        "mcp",
+        "coding-agent",
+        "verification"
+      ],
+      "url": "https://github.com/VinvAI/VinvAI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 26,
+      "createdDate": "2026-07-23",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260725-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-25",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "grok-build-desktop",
+      "summary": "xAI Grok Build/grok CLI 的開源 Electron GUI，支援 MCP、第三方模型、平行 session。",
+      "tags": [
+        "grok",
+        "coding-agent",
+        "desktop"
+      ],
+      "url": "https://github.com/Jane-o-O-o-O/grok-build-desktop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 21,
+      "createdDate": "2026-07-21",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-25",
