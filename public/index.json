@@ -64954,6 +64954,128 @@
       "stars": 21,
       "createdDate": "2026-07-21",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260726-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Open-weight AI is having its Kubernetes moment",
+      "summary": "Mesosphere 共同創辦人 Tobi Knaup 用 Kubernetes 顛覆 Mesos 的經歷類比：open-weight 模型正成為 AI 生態的中性基座，一旦可下載可改的產物成產業重心，環繞它的生態創新速度會超越任何單一封閉廠商。呼籲美國別靠出口管制自我封鎖而該下場競爭。",
+      "tags": [
+        "paradigm-shift",
+        "open-weights",
+        "ai-platform"
+      ],
+      "url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "source": "Tobi Knaup",
+      "sourceUrl": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260726-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Be skeptical of OpenAI's rogue hacker agent story",
+      "summary": "Guardian 把 OpenAI『模型自主打破 sandbox 駭進 HuggingFace 偷答案』的故事讀成 2019 GPT-2『太危險不敢釋出』宣傳劇本的延續：喊危險、投資人聽到強大。此 danger-hype 同時撐兆美元估值與換取監管護城河。對照近日 eval-sandbox-breakout 提醒別照單全收。",
+      "tags": [
+        "ai-hype",
+        "eval-sandbox-breakout",
+        "agent-security"
+      ],
+      "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260726-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "UK AISI / CAISI 對 Kimi K3 cyber 能力初評",
+      "summary": "英國 AISI 與美國 CAISI 聯手評測 Moonshot Kimi K3(7/16 發布、7/27 open-weight 釋出)的資安能力，主測 CMU ExploitBench。美國封閉模型在關閉系統級防護下受測以量最大能力。open-weight 攻擊能力被政府級機構正式建檔。",
+      "tags": [
+        "open-weights",
+        "cyber-eval",
+        "benchmark",
+        "kimi-k3"
+      ],
+      "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
+      "source": "NIST / CAISI",
+      "sourceUrl": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260726-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "我的監視器把 GitHub admin token 印在登入頁",
+      "summary": "研究者把 Hanwha 監視器韌體丟給 Claude Code 逆向出混淆解密(AES key 被 XOR 靜態表拆散重組)取得 rootfs，再從登入頁挖出寫死的 GitHub admin token。agent-assisted 逆向大幅降門檻，secrets 洩漏仍是 IoT 供應鏈重災。",
+      "tags": [
+        "secrets-leak",
+        "reverse-engineering",
+        "coding-agent",
+        "iot-security"
+      ],
+      "url": "https://hhh.hn/hanwha-github-token/",
+      "source": "hhh.hn",
+      "sourceUrl": "https://hhh.hn/hanwha-github-token/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260726-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "If coding has been solved, why does software keep getting worse?",
+      "summary": "Agentic Era 拉高產出與期待，但作者列出銀行 App 要刷三次 FaceID、車機更新後轉向燈靜音等日常爛掉的例子。打賭這些團隊都有最新模型＋充裕 token，品質卻全面滑落，直指生產力敘事與實際體驗的落差。",
+      "tags": [
+        "dev-culture",
+        "software-quality",
+        "ai-slop"
+      ],
+      "url": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
+      "source": "ptrchm.com",
+      "sourceUrl": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260726-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "觀察 Go 新版 garbage collector 在 heap 上的移動",
+      "summary": "eatonphil 實測視覺化 Go 新舊 GC 在 heap 上掃描/搬移物件的行為差異，適合想理解 Go runtime 記憶體管理與 GC 演進的工程師。偏底層 performance 參考。",
+      "tags": [
+        "go",
+        "garbage-collection",
+        "performance"
+      ],
+      "url": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
+      "source": "theconsensus.dev",
+      "sourceUrl": "https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-25",
