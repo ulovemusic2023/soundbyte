@@ -65076,6 +65076,131 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260726-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-26",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "pireel/pireel",
+      "summary": "Backend-free 的開源 AI 影片編輯器，專攻 talking-head 影片：storyboard、動態字幕、主題化，瀏覽器內用 WebCodecs 直接匯出，全程不需後端。最關鍵是整個編輯流程可透過 MCP 被任何 AI agent 驅動——等於幫 agent 開了一條做影片的手。",
+      "tags": [
+        "ai-video",
+        "mcp",
+        "creator-tool",
+        "webcodecs"
+      ],
+      "url": "https://github.com/pireel/pireel",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-12+stars:>50&type=repositories",
+      "stars": 746,
+      "createdDate": "2026-07-20",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260726-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-26",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "xiejunjie524/handdraw-story-video",
+      "summary": "把手繪故事插圖轉成 35–45 秒的「線稿浮現 + 漸進上色」動畫，底層用 HyperFrames。適合做繪本、短影音敘事這類創作者內容，成品風格很有記憶點。",
+      "tags": [
+        "ai-video",
+        "animation",
+        "creator-tool"
+      ],
+      "url": "https://github.com/xiejunjie524/handdraw-story-video",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-12+stars:>50&type=repositories",
+      "stars": 660,
+      "createdDate": "2026-07-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260726-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-26",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "larashero3-dotcom/lieflat-charts",
+      "summary": "面向 AI agent 的單色資料視覺化 Agent Skill，把資料快速生成精緻、可互動的 HTML 圖表。做內容、報告、社群圖表時可以直接叫 agent 產圖。⚠️ license 標示為 NOASSERTION，商用前先確認授權。",
+      "tags": [
+        "agent-skill",
+        "dataviz",
+        "claude-code"
+      ],
+      "url": "https://github.com/larashero3-dotcom/lieflat-charts",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-12+stars:>20+topic:claude-code&type=repositories",
+      "stars": 210,
+      "createdDate": "2026-07-16",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260726-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-26",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "apresta/max-studio-tools",
+      "summary": "一組 Max/MSP externals，把常見的錄音室器材（studio gear）做成模組，可直接在 Max 與 Ableton Live 裡用，C++ DSP 寫的。本週上 Show HN。⚠️ 實際 repo 建立於 2026-05-25（非近 14 天），但這是少見直接打中你做音訊軟體的工具。",
+      "tags": [
+        "dsp",
+        "max-msp",
+        "ableton",
+        "audio",
+        "vst"
+      ],
+      "url": "https://github.com/apresta/max-studio-tools",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 43,
+      "createdDate": "2026-05-25",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260726-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-26",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "monotykamary/pi-fabric",
+      "summary": "為 Pi（earendil-works/pi 那套 agent toolkit）打造的可程式化 tool 與 agent runtime。若在追 Pi 這條新的 coding agent 生態，這是個早期的擴充層。",
+      "tags": [
+        "ai-agent",
+        "runtime",
+        "pi",
+        "coding-agent"
+      ],
+      "url": "https://github.com/monotykamary/pi-fabric",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-12+stars:>20+topic:coding-agent&type=repositories",
+      "stars": 38,
+      "createdDate": "2026-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260726-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-26",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "AashishH15/Lexicon",
+      "summary": "完全離線、本機執行的寫作助手（開源 Grammarly 替代）：文法、改寫、語氣調整都在自己機器上跑，不上傳。隱私敏感的寫作場景可以留意。",
+      "tags": [
+        "local-ai",
+        "writing",
+        "offline",
+        "privacy"
+      ],
+      "url": "https://github.com/AashishH15/Lexicon",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-12+stars:>20+topic:local-llm&type=repositories",
+      "stars": 25,
+      "createdDate": "2026-07-15",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-25",
