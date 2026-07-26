@@ -65530,6 +65530,145 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260727-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-27",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "stackblitz/bolt-slides",
+      "summary": "StackBlitz 出品，讓任何 AI agent 產生互動式簡報 deck。",
+      "tags": [
+        "ai-agent",
+        "presentation",
+        "dev-tool"
+      ],
+      "url": "https://github.com/stackblitz/bolt-slides",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 645,
+      "createdDate": "2026-07-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260727-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-27",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "gnipbao/story-to-handdrawn-video",
+      "summary": "Agent skill：把中文故事文案或圖序轉成手繪日記式漫畫動畫（無聲 MP4）。",
+      "tags": [
+        "agent-skill",
+        "video",
+        "creator"
+      ],
+      "url": "https://github.com/gnipbao/story-to-handdrawn-video",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 653,
+      "createdDate": "2026-07-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260727-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-27",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "makecindy/cindy",
+      "summary": "開箱即用的開源 AI agent，主打免複雜設定。",
+      "tags": [
+        "ai-agent",
+        "open-source"
+      ],
+      "url": "https://github.com/makecindy/cindy",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 412,
+      "createdDate": "2026-07-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260727-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-27",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "0xwilliamortiz/agents-council",
+      "summary": "Claude Code 多 agent 協作 plugin，同時調度多模型收斂觀點。",
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "mcp"
+      ],
+      "url": "https://github.com/0xwilliamortiz/agents-council",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 168,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260727-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-27",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "deerwork-ai/deer-workflow",
+      "summary": "Dynamic Workflow runtime：編排留在 TypeScript，語意工作丟給可替換 Agent runtime。",
+      "tags": [
+        "workflow",
+        "ai-agent",
+        "typescript"
+      ],
+      "url": "https://github.com/deerwork-ai/deer-workflow",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 75,
+      "createdDate": "2026-07-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260727-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-27",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "mshumer/Claude-of-Duty",
+      "summary": "Matt Shumer 用單一 prompt 生成的 Three.js FPS，展示 vibe-coding 能力邊界。",
+      "tags": [
+        "vibe-coding",
+        "threejs",
+        "demo"
+      ],
+      "url": "https://github.com/mshumer/Claude-of-Duty",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 606,
+      "createdDate": "2026-07-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260727-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-27",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "Leonxlnx/tasty-desktop",
+      "summary": "Tauri+React Windows 桌面 harness，一介面同跑 Kimi/Codex/Claude/Cursor。",
+      "tags": [
+        "coding-agent",
+        "desktop",
+        "tauri"
+      ],
+      "url": "https://github.com/Leonxlnx/tasty-desktop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 27,
+      "createdDate": "2026-07-16",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-27",
