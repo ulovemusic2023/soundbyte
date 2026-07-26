@@ -65307,6 +65307,167 @@
       "price": null,
       "vram": "local-ready(Piper/Kokoro/faster-whisper)",
       "license": "MIT"
+    },
+    {
+      "id": "20260727-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic：Claude 5 世代的 context engineering 新規則",
+      "summary": "Anthropic 官方更新針對 Claude 5 世代模型（Opus 5 / Sonnet 5 / Fable 5）的 context engineering 指南，接續去年那篇經典貼文；1M context + adaptive thinking 成預設後，重點轉為重新設計 context 的組織與取捨（⚠️ 頁面 JS 渲染，僅驗證標題與出處）。",
+      "tags": [
+        "paradigm-shift",
+        "context-engineering",
+        "ai_agent"
+      ],
+      "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "source": "Anthropic Blog",
+      "sourceUrl": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "UK AISI × US CAISI：Kimi K3 資安能力評估",
+      "summary": "英美 AI 安全機構聯手，在 Kimi K3（7/16 發布、7/27 open-weight）釋出前用 ExploitBench（41 題端到端漏洞開發）評測其 cyber 能力；美國閉源模型在關閉 safeguard 下測最大能力。frontier open-weight 上市前先過政府資安體檢成新常態。",
+      "tags": [
+        "ai_models",
+        "cyber-capability",
+        "open-weights",
+        "ExploitBench"
+      ],
+      "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
+      "source": "CAISI / NIST",
+      "sourceUrl": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "在 $8 微控制器上跑 28.9M 參數 LLM",
+      "summary": "slvDev 把 28.9M 參數模型塞進 ESP32-S3（約 $8、512KB SRAM），本地生成 ~9.5 tok/s。借用 Gemma 的 Per-Layer Embeddings 把 25M embedding table 留在 flash、每 token 只撈 ~450 bytes，比前一代同級晶片模型大約 100 倍。",
+      "tags": [
+        "edge-ai",
+        "local-inference",
+        "per-layer-embeddings"
+      ],
+      "url": "https://github.com/slvDev/esp32-ai",
+      "source": "GitHub / slvDev",
+      "sourceUrl": "https://github.com/slvDev/esp32-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ruff v0.16.0：預設規則從 59 條暴增到 413 條",
+      "summary": "Astral 用 Rust 寫的 Python linter/formatter 大改預設集，涵蓋 flake8-bugbear、pyupgrade 等原本要手動開的規則，含語法/runtime error 偵測；另新增 Markdown / Quarto 內嵌 Python code block 格式化。",
+      "tags": [
+        "python",
+        "linter",
+        "dev-tooling"
+      ],
+      "url": "https://astral.sh/blog/ruff-v0.16.0",
+      "source": "Astral",
+      "sourceUrl": "https://astral.sh/blog/ruff-v0.16.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Memory Safety Absolutists",
+      "summary": "Piotr Sarnacki：Fil-C（GC + InvisiCaps）讓 C/C++ 在越界/UAF 時 panic，Zig 作者也宣布 Fil-C 啟發的 fil 安全編譯模式。作者批評近期『有 unsafe 就說 Rust 不安全』的 absolutism 不誠實——多一種降低記憶體漏洞的路本該是好事。",
+      "tags": [
+        "memory-safety",
+        "rust",
+        "zig",
+        "fil-c"
+      ],
+      "url": "https://itsallaboutthebit.com/memory-safety-absolutists/",
+      "source": "Piotr Sarnacki",
+      "sourceUrl": "https://itsallaboutthebit.com/memory-safety-absolutists/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Debian 發起 GR：是否禁止 LLM 協助的貢獻",
+      "summary": "Debian 就 LLM usage 進入投票討論（7/24 起），提案 A 主張全面禁止用 LLM 協助的貢獻（source package、lintian、文件翻譯、官方溝通），理由 copyright 不清抵觸 DFSG + 穩定性文化衝突；upstream 用 AI 不在此限。",
+      "tags": [
+        "open-source-governance",
+        "llm-policy",
+        "debian"
+      ],
+      "url": "https://www.debian.org/vote/2026/vote_002",
+      "source": "Debian Project",
+      "sourceUrl": "https://www.debian.org/vote/2026/vote_002",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-sw-007",
+      "radar": "software-dev",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Engineering management after the cost of code collapsed",
+      "summary": "Karim Jedda：別用『新舊』而用『依賴的假設有沒有崩』審視管理實務——靠 code 成本的（velocity、六個月 onboarding、共識式架構）該重審，靠人類協作/信任/驗證的（code review、文件）沒變。警告 felt speed ≠ measured speed。",
+      "tags": [
+        "engineering-management",
+        "ai-native-sdlc"
+      ],
+      "url": "https://karimjedda.com/engineering-management-after-cost-of-code-collapse/",
+      "source": "Karim Jedda",
+      "sourceUrl": "https://karimjedda.com/engineering-management-after-cost-of-code-collapse/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-sw-008",
+      "radar": "software-dev",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OneCLI：讓 agent 永遠看不到真 API key 的憑證閘道",
+      "summary": "開源 Rust gateway 夾在 AI agent 與服務間：真 credential 存進 OneCLI，agent 只拿 FAKE_KEY，出站請求經 gateway 才換成真 key 注入。集中管理/輪替/稽核，金鑰以 AES-256-GCM 加密。",
+      "tags": [
+        "ai_agent",
+        "secrets-management",
+        "credential-gateway"
+      ],
+      "url": "https://github.com/onecli/onecli",
+      "source": "GitHub / OneCLI",
+      "sourceUrl": "https://github.com/onecli/onecli",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-27",
