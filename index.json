@@ -65201,8 +65201,114 @@
       "stars": 25,
       "createdDate": "2026-07-15",
       "license": "MIT"
+    },
+    {
+      "id": "20260727-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "cactus-compute/cactus-hybrid",
+      "summary": "主打「知道自己何時答錯」的 on-device 模型:每個回答附帶 confidence score,低信心時自動 handoff 給雲端。等於把 hallucination 偵測做進本地推理——本地跑得動、只有不確定時才上雲,很適合省 token 的 hybrid 架構。Show HN 185 分。",
+      "tags": [
+        "llm_inference",
+        "on-device",
+        "hybrid",
+        "confidence"
+      ],
+      "url": "https://github.com/cactus-compute/cactus-hybrid",
+      "source": "Show HN / GitHub Trending",
+      "sourceUrl": "https://news.ycombinator.com/item?id=cactus-hybrid",
+      "price": null,
+      "vram": "local-ready(小模型 on-device)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260727-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "owensong/Inflect-Micro-v2",
+      "summary": "不到 1000 萬參數的完整 local TTS,37MB FP32、24kHz 輸出,CPU 或 CUDA 都能跑。固定音色英文、deterministic seeds、支援長文本;另有更小的 Nano(<4M)版本。極致輕量,適合嵌入式/邊緣裝置。",
+      "tags": [
+        "tts_speech",
+        "tts",
+        "lightweight",
+        "on-device"
+      ],
+      "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/owensong/Inflect-Micro-v2",
+      "price": null,
+      "vram": "local-ready(<10M params)",
+      "license": "未標示"
+    },
+    {
+      "id": "20260727-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vastsa/BokeBox",
+      "summary": "私有化 AI podcast studio:影片/連結/文章/筆記丟進去,直接生成有聲節目。可自訂 persona 與音色、支援 MCP + 可插拔來源、完全 self-hosted。想做本地 podcast 自動化或內容轉語音可留意。",
+      "tags": [
+        "audio_music_ai",
+        "tts_speech",
+        "podcast",
+        "self-hosted",
+        "mcp"
+      ],
+      "url": "https://github.com/vastsa/BokeBox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/vastsa/BokeBox",
+      "price": null,
+      "vram": "local-ready(編排層)",
+      "license": "LGPL-3.0"
+    },
+    {
+      "id": "20260727-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "sm18lr88/STT-MCP",
+      "summary": "快速、純本地的 speech-to-text MCP server。把 STT 包成 MCP 工具,讓 Claude/Cursor 等 agent 直接呼叫本地語音轉文字,不經雲端。語音輸入接 agent 工作流的輕量方案。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "mcp",
+        "local"
+      ],
+      "url": "https://github.com/sm18lr88/STT-MCP",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/sm18lr88/STT-MCP",
+      "price": null,
+      "vram": "local-ready(faster-whisper)",
+      "license": "MIT"
+    },
+    {
+      "id": "20260727-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-07-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "agjs/voicebox",
+      "summary": "self-hosted、OpenAI 相容的語音伺服器:STT 用 faster-whisper、TTS 用 Piper/Kokoro。當作 Open WebUI、CLI、自訂 agent 的本地語音後端。一個 endpoint 同時搞定聽與說,全部本地。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "tts",
+        "self-hosted"
+      ],
+      "url": "https://github.com/agjs/voicebox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/agjs/voicebox",
+      "price": null,
+      "vram": "local-ready(Piper/Kokoro/faster-whisper)",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-07-25",
-  "updatedAt": "2026-07-24T05:35:00+08:00"
+  "lastUpdated": "2026-07-27",
+  "updatedAt": "2026-07-27T05:10:00+08:00"
 }
