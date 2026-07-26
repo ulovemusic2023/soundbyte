@@ -65468,8 +65468,70 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260727-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-27",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "DHH：AI 讓「只有點子的人」第一次真的有路可走",
+      "summary": "DHH 跟 David Senra 對談重申 37signals 25 年的老論點——小團隊擁抱限制就能做出不可思議的事，做軟體/媒體不需要大量資本，可以跳過投資人的老鼠賽跑，靠客戶付錢養活自己。過去你得會設計或寫程式才能不拿別人的錢；AI 把這道門檻打掉了。VC 的商業模式是「不成獨角獸就出局」，$5–10M/年的好生意反而會被逼死；但 bootstrapping 到那個規模就能賺到「黃色藍寶堅尼的錢」。關鍵是先想清楚自己到底要什麼。",
+      "tags": [
+        "bootstrapping",
+        "anti-vc",
+        "one-person-business",
+        "ai-leverage"
+      ],
+      "url": "https://world.hey.com/dhh/sitting-down-with-senra-69f5e368",
+      "source": "David Heinemeier Hansson (37signals)",
+      "sourceUrl": "https://world.hey.com/dhh/sitting-down-with-senra-69f5e368",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-27",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Applied Intuition：如何在成長到 1,300 人時守住文化",
+      "summary": "估值 $15B 的 physical AI 公司 Applied Intuition，長年低調只讓客戶和候選人知道自己在做什麼，靠口碑成長。早期員工 Malhar Patel 分享：把文化「刻意設計」出來是兩位共同創辦人的核心工作，不是放任它自然發生。做法包括工程師直接 embed 到全球客戶現場、堅持每週五天進辦公室。洞察：文化不是成長的副產品，是要被架構的產品——規模化階段尤其要主動維護。",
+      "tags": [
+        "culture",
+        "scaling",
+        "founder-mode",
+        "operations"
+      ],
+      "url": "https://review.firstround.com/firsthand-applied-intuition/",
+      "source": "First Round Review",
+      "sourceUrl": "https://review.firstround.com/firsthand-applied-intuition/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260727-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-27",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Constraints provide the pressure that produce diamonds",
+      "summary": "DHH 用《魔鬼終結者》成本比《阿凡達》低卻更好看、一個波蘭大學生在宿舍做出比蘋果微軟更好的視窗管理器，說明限制不是敵人，是把東西逼到極致的力量。",
+      "tags": [
+        "constraints",
+        "creativity",
+        "small-teams"
+      ],
+      "url": "https://world.hey.com/dhh/sitting-down-with-senra-69f5e368",
+      "source": "David Heinemeier Hansson (37signals)",
+      "sourceUrl": "https://world.hey.com/dhh/sitting-down-with-senra-69f5e368",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-27",
-  "updatedAt": "2026-07-27T05:10:00+08:00"
+  "updatedAt": "2026-07-27T21:31:00Z"
 }
