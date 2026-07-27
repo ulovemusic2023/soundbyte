@@ -65837,6 +65837,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260728-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-28",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Naval：學會賣，也學會做 — 兩者兼備才無敵",
+      "summary": "Naval 把創業者拆成 builder（做產品）與 seller（賣產品，含行銷/募資/招募/PR）兩種原型。矽谷經典組合是一 builder 一 seller，但真正開創產業的是同時會兩者的人（Musk、後期 Jobs）。洞察：building 適合起步累積聲譽，selling 隨時間複利更快 — 若只能學一個，先 build 再轉 sell。",
+      "tags": [
+        "skill-stack",
+        "founder-archetype",
+        "leverage"
+      ],
+      "url": "https://nav.al/build-sell",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://nav.al/build-sell",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260728-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-28",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "DHH：工具「因立場拒絕執行」是控制風險 — 為何需要 open-weight 模型",
+      "summary": "DHH 被 Claude 以內容不當為由拒絕翻譯自己的部落格文。他跳過政治直指框架：翻譯≠認同，會因意識形態拒絕機械性任務的工具等於讓供應商決定你能讀什麼、產出什麼。策略結論：強大的 open-weight 模型是對抗壟斷級意識形態鎖定的保險。",
+      "tags": [
+        "ai-alignment",
+        "open-weight",
+        "vendor-risk"
+      ],
+      "url": "https://world.hey.com/dhh/i-m-sorry-dave-380ec27d",
+      "source": "David Heinemeier Hansson (DHH)",
+      "sourceUrl": "https://world.hey.com/dhh/i-m-sorry-dave-380ec27d",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260728-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-07-28",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "LLM token 黑市已成形 — 公開 AI app 前先設硬性花費上限",
+      "summary": "調查揭露轉售 LLM token 的地下市場（主要在中國）：濫用免費試用、代理未設防 support bot、盜刷信用卡，把 API key 池化後折價轉賣，多用開源 one-api/new-api。操作啟示：公開 endpoint 就有生態找破口幫你燒 token bill。Simon Willison 結論 — 該讓 app 在達到金額門檻時直接停擺。",
+      "tags": [
+        "llm-ops",
+        "api-security",
+        "cost-control"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/26/relay-market/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/26/relay-market/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-28",
