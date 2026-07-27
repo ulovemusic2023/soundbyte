@@ -65897,6 +65897,165 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260728-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-28",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "vercel-labs/scriptc",
+      "summary": "Vercel Labs 的 TypeScript-to-Native compiler，把 TS 編成原生執行檔，不需 Node runtime。冷啟動與 CLI 工具場景有感。",
+      "tags": [
+        "dev-tool",
+        "compiler",
+        "typescript"
+      ],
+      "url": "https://github.com/vercel-labs/scriptc",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/vercel-labs/scriptc",
+      "stars": 1639,
+      "createdDate": "2026-07-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260728-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-28",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "mikiarlo3/ai-copywriter",
+      "summary": "AI copywriting skill，內建真實文案/行銷框架，主打人味而非 GPT 腔。做內容、寫貼文可當底稿工具。",
+      "tags": [
+        "ai-agent",
+        "content",
+        "marketing"
+      ],
+      "url": "https://github.com/mikiarlo3/ai-copywriter",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/mikiarlo3/ai-copywriter",
+      "stars": 932,
+      "createdDate": "2026-07-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260728-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-28",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "VictorTaelin/OptMem",
+      "summary": "Victor Taelin（HVM 作者）做的 AI agent 長期記憶：426-token prompt + 一支 script，plug-and-play。",
+      "tags": [
+        "ai-agent",
+        "memory"
+      ],
+      "url": "https://github.com/VictorTaelin/OptMem",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/VictorTaelin/OptMem",
+      "stars": 628,
+      "createdDate": "2026-07-25",
+      "license": "NONE"
+    },
+    {
+      "id": "20260728-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-28",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "yanhua1010/self-media-content-workflow",
+      "summary": "模組化的自媒體內容生產 skill suite，tool-agnostic（Claude Code / Codex 都吃）。從選題到成稿的 pipeline。",
+      "tags": [
+        "content",
+        "skills",
+        "workflow"
+      ],
+      "url": "https://github.com/yanhua1010/self-media-content-workflow",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/yanhua1010/self-media-content-workflow",
+      "stars": 244,
+      "createdDate": "2026-07-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260728-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-28",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "wassgha/rescript",
+      "summary": "瀏覽器內、以逐字稿為核心的影音編輯器（開源版 Descript）。剪片像編輯文字，適合 podcast / 講解影片。尚無 license。",
+      "tags": [
+        "audio",
+        "video",
+        "creator-tool"
+      ],
+      "url": "https://github.com/wassgha/rescript",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/wassgha/rescript",
+      "stars": 138,
+      "createdDate": "2026-07-26",
+      "license": "NONE"
+    },
+    {
+      "id": "20260728-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-28",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "spytensor/openmozi",
+      "summary": "可魔改的 Agent OS，明說靈感來自 OpenClaw。適合正在玩 OpenClaw 的人看架構拆法。",
+      "tags": [
+        "ai-agent",
+        "agent-os",
+        "openclaw"
+      ],
+      "url": "https://github.com/spytensor/openmozi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/spytensor/openmozi",
+      "stars": 26,
+      "createdDate": "2026-07-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260728-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-28",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "Drobiazkin/ai-agent-architecture",
+      "summary": "免費開源工程書＋課程：從 tokenization 到自架模型服務，講機制、取捨與實際數字，非 prompt 技巧書。",
+      "tags": [
+        "education",
+        "llm",
+        "ai-agent"
+      ],
+      "url": "https://github.com/Drobiazkin/ai-agent-architecture",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Drobiazkin/ai-agent-architecture",
+      "stars": 43,
+      "createdDate": "2026-07-17",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "20260728-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-28",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "DINAKAR-S/voice-agent-starter-kit",
+      "summary": "自架多語電話語音 agent 範本：LiveKit Agents + STT/TTS + SIP，延遲約 700ms–1.2s。語音介面 agent 起手式。",
+      "tags": [
+        "voice",
+        "tts",
+        "ai-agent"
+      ],
+      "url": "https://github.com/DINAKAR-S/voice-agent-starter-kit",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/DINAKAR-S/voice-agent-starter-kit",
+      "stars": 22,
+      "createdDate": "2026-07-22",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-28",
