@@ -65669,6 +65669,47 @@
       "stars": 27,
       "createdDate": "2026-07-16",
       "license": "MIT"
+    },
+    {
+      "id": "20260728-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-07-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "feyninc/FeyNoBg",
+      "summary": "SOTA 開源自動去背模型，基於 BiRefNet，8 個 benchmark 中 4 個最佳 S-measure，支援 4K/8K 與髮絲級 image matting。同時開源訓練庫 NoBg。注意：模型權重 CC-BY-NC-4.0（非商用），訓練庫 Apache-2.0。",
+      "tags": [
+        "cv_ocr",
+        "background-removal",
+        "image-matting"
+      ],
+      "url": "https://huggingface.co/feyninc/FeyNobg",
+      "source": "Show HN",
+      "sourceUrl": "https://usefeyn.com/blog/feynobg/",
+      "price": null,
+      "vram": "~4-6GB (BiRefNet-class)",
+      "license": "Model CC-BY-NC-4.0 / lib Apache-2.0"
+    },
+    {
+      "id": "20260728-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "experientiallabs/world-model-optimizer",
+      "summary": "把 agent 已收集的 OTel traces 拿來蒸餾 frontier open models，訓練成本降 40%+ 但接近前沿品質的 router/endpoint，支援 model distillation、routing、world-model 模擬與 E2B 評估。pip 裝、本地跑。注意：無授權。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference",
+        "model-distillation",
+        "mlops"
+      ],
+      "url": "https://github.com/experientiallabs/world-model-optimizer",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/experientiallabs/world-model-optimizer",
+      "price": null,
+      "vram": "取決於 pool 內模型",
+      "license": "no license"
     }
   ],
   "lastUpdated": "2026-07-27",
