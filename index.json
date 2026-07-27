@@ -65710,8 +65710,135 @@
       "price": null,
       "vram": "取決於 pool 內模型",
       "license": "no license"
+    },
+    {
+      "id": "20260728-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "「Bun 用 Rust 重寫」六週後仍無 release，隱藏成本被拆穿",
+      "summary": "lockwood.dev 深挖 Bun Zig→Rust 重寫真實狀態：merge 到 main 六週後仍沒 release tag（距上次 tag 已 11 週），robobun(Claude Code) open PR 從 1277 漲到 2475，以 40 分/PR 的 Buildkite 速度全清要連跑 86 天。$165k API 只是帳面，CI/CD 與 Anthropic 員工投入是檯面下成本。撐『AI 替代 OSS maintainer』估值敘事的招牌案例被打上問號。",
+      "tags": [
+        "agentic-rewrite",
+        "ai-coding",
+        "rust",
+        "off-books-agentic-rewrite"
+      ],
+      "url": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
+      "source": "Cameron Lockwood (lockwood.dev)",
+      "sourceUrl": "https://lockwood.dev/ai/2026/07/27/how-is-the-bun-rewrite-in-rust-going.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260728-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft 首個資安模型 MAI-Cyber-1-Flash 進駐 MDASH 多模型 harness",
+      "summary": "Microsoft 推出自家第一個 cyber 模型 MAI-Cyber-1-Flash（MAI-Thinking-1 血統），吃掉 90% 資安任務、10% 難題升級 GPT-5.4。與 MDASH 多 agent harness 合體後 CyberGym 96%（比 Mythos +12），較最佳組合省 50% 成本。同步發表 Perception agentic security，主打 Model+Data+Harness 三支柱。model-pool-orchestration 延燒到資安領域。",
+      "tags": [
+        "multi-agent",
+        "ai-security",
+        "model-pool-orchestration",
+        "MDASH",
+        "paradigm-shift"
+      ],
+      "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+      "source": "Microsoft AI",
+      "sourceUrl": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260728-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 開源 pvcli：像 curl 一樣測 OHTTP 隱私協定",
+      "summary": "Cloudflare 把每秒百萬級營運 Oblivious HTTP 的經驗包成 curl-like CLI（pvcli），一行指令跑完 relay→gateway→origin 完整 OHTTP 請求，簡化橫跨四方、binary HTTP 編碼與多份 draft RFC 的除錯。Apache-2.0 開源、開放貢獻。",
+      "tags": [
+        "privacy",
+        "ohttp",
+        "open-source",
+        "devops"
+      ],
+      "url": "https://github.com/cloudflareresearch/pvcli",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/open-sourcing-our-privacy-proxy-cli/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260728-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 實測：近 70% BGP 路徑的 ORIGIN attribute 被竄改",
+      "summary": "Cloudflare 深度測試發現近 70% BGP 路徑的 ORIGIN attribute 被 transit provider 為搶流量改寫。這個路由選擇中被當可信的屬性其實普遍不可靠，作者主張在路由決策中廢棄 ORIGIN。理解 Internet 路由信任的一手數據。",
+      "tags": [
+        "distributed-systems",
+        "bgp",
+        "networking",
+        "bgp-origin-rewrite"
+      ],
+      "url": "https://blog.cloudflare.com/bgp-origin-attribute/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/bgp-origin-attribute/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260728-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FeyNoBg：開源 SOTA 去背模型 + NoBg 訓練框架",
+      "summary": "FeyNoBg 是新的自動去背 SOTA 模型，八個 benchmark 中四個拿最佳 S-measure（UHRSD-TE 0.981 勝 BiRefNet 0.957），其餘也在 leader 2% 內。同時開源訓練用的 NoBg 函式庫。技術重點在同時平衡 foreground recognition 與 image matting 邊界精度。",
+      "tags": [
+        "ai-models",
+        "image-matting",
+        "open-source",
+        "computer-vision"
+      ],
+      "url": "https://huggingface.co/feyninc/FeyNobg",
+      "source": "Feyn Inc (usefeyn.com)",
+      "sourceUrl": "https://usefeyn.com/blog/feynobg/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260728-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "world-model-optimizer：拿你自己的 agent traces 蒸餾出便宜的 frontier endpoint",
+      "summary": "wmo 把既有 OTel agent traces 轉成持續改進素材：在多 provider model pool（含 OpenRouter 338 模型）sweep 打分、fit 出 routing policy，做出 frontier 品質但 −40% 成本的 endpoint，並能 distill 自訓小模型進 pool。把 model-pool-orchestration 產品化成 CLI。",
+      "tags": [
+        "model-pool-orchestration",
+        "distillation",
+        "agent-traces",
+        "trace-distillation-routing"
+      ],
+      "url": "https://github.com/experientiallabs/world-model-optimizer",
+      "source": "Experiential Labs (GitHub)",
+      "sourceUrl": "https://github.com/experientiallabs/world-model-optimizer",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-27",
-  "updatedAt": "2026-07-27T21:31:00Z"
+  "lastUpdated": "2026-07-28",
+  "updatedAt": "2026-07-28"
 }
