@@ -66056,6 +66056,26 @@
       "stars": 22,
       "createdDate": "2026-07-22",
       "license": "MIT"
+    },
+    {
+      "id": "20260729-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "huggingface/speech-to-speech",
+      "summary": "HF 開源的本地語音 agent 全鏈路 pipeline：VAD → STT (Whisper) → LLM → TTS 模組化串接，每一段都可換、可本地跑，今天仍在活躍更新。做語音互動 / 即時對話應用是現成骨架。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "llm_inference"
+      ],
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/huggingface/speech-to-speech",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-28",
