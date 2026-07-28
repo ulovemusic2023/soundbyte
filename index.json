@@ -66076,6 +66076,148 @@
       "price": null,
       "vram": "local-ready",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260729-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Dario Amodei：Anthropic 對 open-weights 模型的立場",
+      "summary": "Dario 親撰回應「Anthropic 想禁 open-weights 保護生意」的指控：明確表態從未主張禁 open-weights，無危險能力的開放權重是 public good。真正國安顧慮不是禁美企用中國模型，而是三招——管制對中賣先進晶片、打擊工業級 distillation、加強對強模型的 safety 監管。",
+      "tags": [
+        "open-weights",
+        "ai-policy",
+        "distillation"
+      ],
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "source": "Anthropic (Dario Amodei)",
+      "sourceUrl": "https://www.anthropic.com/news/position-open-weights-models",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260729-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Sebastian Raschka：Kimi K3 架構筆記",
+      "summary": "Kimi K3（2.8T，最大 open-weight）本質是 Kimi Linear 放大量產版，唯一新元件 LatentMoE。整體走 inference 效率路線，全面棄 RoPE 改用 NoPE——首個全 NoPE 的 frontier 級模型，原生多模態。",
+      "tags": [
+        "ai-models",
+        "Kimi-K3",
+        "NoPE",
+        "LatentMoE"
+      ],
+      "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
+      "source": "Sebastian Raschka",
+      "sourceUrl": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260729-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HumanLayer 用 SlopCodeBench 實測 Opus 5",
+      "summary": "SlopCodeBench 每題多 checkpoint、需求逐步揭露。Opus 5 拿 24%（原論文 Opus 4.6 17%），技術上勝出但三者都沒有任一題全綠，連 easy 題都失守。結論：逐 issue 的工程工作，今天模型還不能 lights-off 無人監督地跑。",
+      "tags": [
+        "ai-agent",
+        "coding-benchmark",
+        "SlopCodeBench"
+      ],
+      "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "source": "HumanLayer (Dex)",
+      "sourceUrl": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260729-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Fermisense：自訓 9B 開源模型完勝 frontier（catalog review）",
+      "summary": "GRPO 微調的 9B 開源模型以 $0.50/1000 筆完勝所有 frontier 配置，比最便宜 frontier 便宜 40x。主張 intelligence ownership：窄任務自訓小模型擁有成本遠低於租 frontier。",
+      "tags": [
+        "ai-models",
+        "fine-tuning",
+        "GRPO",
+        "cost"
+      ],
+      "url": "https://fermisense.com/when-machines-take-the-wheel/",
+      "source": "Fermisense",
+      "sourceUrl": "https://fermisense.com/when-machines-take-the-wheel/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260729-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "首個形式化驗證的 3D CSG：信 93 行 spec，不信 1000 行 AI code",
+      "summary": "Lean 4 驗證 mesh intersection。人類只需讀 93 行 spec + 跑 checker 即認證正確，跳過 1000+ 行 AI code 與 6 萬行 AI proof；實作/證明當黑箱、對 LLM 零信任。代價是慢。",
+      "tags": [
+        "formal-verification",
+        "ai-code-trust",
+        "Lean4"
+      ],
+      "url": "https://github.com/schildep/verified-3d-mesh-intersection",
+      "source": "schildep (GitHub)",
+      "sourceUrl": "https://github.com/schildep/verified-3d-mesh-intersection",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260729-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DeltaNet 家族：Kimi Delta Attention 的線性注意力走查",
+      "summary": "doubleword.ai 從頭推導 DeltaNet 系列 linear attention 變體，帶到 Kimi K3 用的 Kimi Delta Attention（KDA），解釋次二次注意力如何保留表達力並壓低長序列成本。",
+      "tags": [
+        "ai-models",
+        "linear-attention",
+        "KDA"
+      ],
+      "url": "https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention",
+      "source": "Doubleword",
+      "sourceUrl": "https://blog.doubleword.ai/you-could-have-come-up-with-kimi-delta-attention",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260729-sw-007",
+      "radar": "software-dev",
+      "date": "2026-07-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Matthew Saltz：用開源模型的感覺意外地好",
+      "summary": "Modal 工程師 5 分鐘把 opencode 接上自架的 Kimi K3 endpoint，描述資料只在筆電↔自己 endpoint、模型是我的自由感。開放權重+自架的第一人稱體感側寫。",
+      "tags": [
+        "open-weights",
+        "opencode",
+        "self-hosted"
+      ],
+      "url": "https://matthewsaltz.com/blog/using-an-open-model-feels-surprisingly-good/",
+      "source": "Matthew Saltz",
+      "sourceUrl": "https://matthewsaltz.com/blog/using-an-open-model-feels-surprisingly-good/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-28",
