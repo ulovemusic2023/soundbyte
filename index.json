@@ -66258,6 +66258,165 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260729-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-29",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "kvcache-ai/AgentENV",
+      "summary": "KTransformers 團隊的分散式平台，大規模跑 agent 執行環境。",
+      "tags": [
+        "ai-agent",
+        "infra"
+      ],
+      "url": "https://github.com/kvcache-ai/AgentENV",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kvcache-ai/AgentENV",
+      "stars": 1409,
+      "createdDate": "2026-07-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260729-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-29",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "egoist/kero",
+      "summary": "egoist（tsup/unjs 作者）的 macOS 原生 terminal workspace。",
+      "tags": [
+        "dev-tool",
+        "terminal",
+        "macos"
+      ],
+      "url": "https://github.com/egoist/kero",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/egoist/kero",
+      "stars": 683,
+      "createdDate": "2026-07-18",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260729-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-29",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "FrigadeHQ/yap",
+      "summary": "純本機語音聽寫（macOS），Apple Speech framework，免雲免 API key。",
+      "tags": [
+        "voice",
+        "audio",
+        "macos"
+      ],
+      "url": "https://github.com/FrigadeHQ/yap",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/FrigadeHQ/yap",
+      "stars": 236,
+      "createdDate": "2026-07-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260729-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-29",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "CatsJuice/sticker-forge",
+      "summary": "WebGL 貼紙產生器，含撕貼紙互動物理效果。",
+      "tags": [
+        "webgl",
+        "creator-tool",
+        "frontend"
+      ],
+      "url": "https://github.com/CatsJuice/sticker-forge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/CatsJuice/sticker-forge",
+      "stars": 631,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260729-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-29",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "icebird1998/scientific-illustrator",
+      "summary": "Codex/MCP 生成可再編輯科學圖表，輸出 PPT/draw.io。",
+      "tags": [
+        "mcp",
+        "codex",
+        "diagrams"
+      ],
+      "url": "https://github.com/icebird1998/scientific-illustrator",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/icebird1998/scientific-illustrator",
+      "stars": 142,
+      "createdDate": "2026-07-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260729-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-29",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "miuuyy/codex-chatgpt-web",
+      "summary": "把 ChatGPT Pro 當 Codex app 原生模型用。",
+      "tags": [
+        "coding-agent",
+        "codex",
+        "mcp"
+      ],
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/miuuyy/codex-chatgpt-web",
+      "stars": 63,
+      "createdDate": "2026-07-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260729-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-29",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "erayendes/app-store-connect-mcp",
+      "summary": "Heimdall — App Store Connect API MCP server，982 tools。",
+      "tags": [
+        "mcp",
+        "app-store",
+        "ios"
+      ],
+      "url": "https://github.com/erayendes/app-store-connect-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/erayendes/app-store-connect-mcp",
+      "stars": 43,
+      "createdDate": "2026-07-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260729-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-29",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "gavamedia/deltafin",
+      "summary": "單台 Apple Silicon Mac 跑 Kimi K3（2.8T MoE）。",
+      "tags": [
+        "local-llm",
+        "mlx",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/gavamedia/deltafin",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/gavamedia/deltafin",
+      "stars": 29,
+      "createdDate": "2026-07-28",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-07-29",
