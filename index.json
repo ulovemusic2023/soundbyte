@@ -66218,8 +66218,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260729-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-29",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Protopia — 用『每年好 1%』的複利思維想未來",
+      "summary": "Kevin Kelly 把未來拆成三種：utopia（不可能也無聊——沒有摩擦就沒有進步），dystopia（最容易想像、最戲劇化，所以科幻電影幾乎都這樣拍），以及 protopia——每年只比去年好 1~2%，但複利累積起來就是整個文明。核心洞見：世界可以有 49% 是爛的，你依然在前進；關鍵是每個決策都要『增加選項』而不是減少選項（打仗減少選項，投資科學增加選項）。給創業者：別追求一步到位的完美解，追求方向對、能複利的微小改善。",
+      "tags": [
+        "mental-model",
+        "long-term-thinking",
+        "progress",
+        "compounding"
+      ],
+      "url": "https://kk.org/thetechnium/protopia-2/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/protopia-2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260729-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-29",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Protopia runs on facts",
+      "summary": "Dystopia runs on fear, and utopia runs on faith. Protopia runs on facts. — 面對未來別靠恐懼或信仰，靠事實：既正視真實的問題，也承認真實的進步——這是唯一能拿來『掌舵』的視角。",
+      "tags": [
+        "mental-model",
+        "progress"
+      ],
+      "url": "https://kk.org/thetechnium/protopia-2/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/protopia-2/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-28",
-  "updatedAt": "2026-07-28"
+  "lastUpdated": "2026-07-29",
+  "updatedAt": "2026-07-29T21:31:00Z"
 }
