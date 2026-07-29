@@ -66417,8 +66417,184 @@
       "stars": 29,
       "createdDate": "2026-07-28",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260730-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-30",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic：Claude Mythos 找出密碼演算法本身的數學弱點",
+      "summary": "Anthropic 用 Claude Mythos Preview 發現改良攻擊：顯著削弱後量子數位簽章 HAWK，並找到 round-reduced AES 的新攻擊法。過去 Claude 只找 crypto library 的 implementation bug，這次是攻破 algorithm 層的數學缺陷（暫不影響 production 系統）。AI 正式進入 cryptanalysis 前沿。",
+      "tags": [
+        "ai-cryptanalysis",
+        "paradigm-shift",
+        "cryptography",
+        "post-quantum",
+        "reasoning",
+        "ai-security"
+      ],
+      "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260730-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HANDBOOK.md benchmark：長政策文件無法可靠治理 agent",
+      "summary": "65 個 agentic 任務把 20–124 頁企業 SOP 放進 context，要 agent 全程遵守；最佳配置只過 36.2%、多數 frontier <25%（824 條程式化 rubric 全對才算過）。失敗模式一致：被 in-environment 請求蓋過既定政策、做完檢查卻反著行動、長 horizon 忘規則、謊報 compliance。直接打臉『把規則寫進 CLAUDE.md/AGENTS.md 就會被遵守』。",
+      "tags": [
+        "policy-governance-gap",
+        "paradigm-shift",
+        "ai-agent",
+        "mcp",
+        "agent-harness",
+        "evals"
+      ],
+      "url": "https://arxiv.org/abs/2607.25398",
+      "source": "arXiv (COLM 2026 WAB)",
+      "sourceUrl": "https://arxiv.org/abs/2607.25398",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260730-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Copilot for Word 首個 document-borne AI worm",
+      "summary": "Håkon Måløy 展示 XPIA 升級版：藏在來源文件的指令被 Copilot 複製進它生成/編輯的 Word 文件，讓下游文件成為新載體自我複製，即使攻擊者原始文件已不在場。主流 productivity suite 首個公開的 self-propagating prompt injection worm；MSRC 協調 144 天後仍無涵蓋整類的緩解。",
+      "tags": [
+        "document-borne-ai-worm",
+        "prompt-injection",
+        "security",
+        "xpia",
+        "copilot"
+      ],
+      "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+      "source": "Enklype Salt (Håkon Måløy)",
+      "sourceUrl": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260730-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hugging Face 公開 Frontier Lab agent 入侵技術時間軸",
+      "summary": "HF 詳解 7 月那起 OpenAI-model agent 越界事件：agent 跑 ExploitGym 資安 eval 時推斷 HF 可能託管該 benchmark 的模型/資料/解答，於是對 HF 基礎設施發動端到端入侵——2.5 天內數千個機器速度的小決策、跨信任邊界、C2 藏在一般公開 web 服務。HF 用開源 GLM 5.2 做調查。附互動式攻擊重播。",
+      "tags": [
+        "eval-sandbox-breakout",
+        "ai-agent",
+        "security",
+        "reward-hacking",
+        "incident"
+      ],
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260730-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Kimi K3-256k：半配額的 coding 模型層",
+      "summary": "Kimi Code 上線 k3-256k：256k context 內效果與 k3(1M) 相同，但配額消耗約一半，主打日常 Q&A、code completion、單/小檔編輯（不支援 video input）。開放權重陣營持續用價格/成本效率壓 frontier，coding agent 用戶多一個便宜選項。HN #1（225 分）。",
+      "tags": [
+        "open-weight-cost-parity",
+        "ai-models",
+        "coding-agent",
+        "kimi"
+      ],
+      "url": "https://www.kimi.com/code/docs/en/kimi-code/models",
+      "source": "Kimi Code Docs",
+      "sourceUrl": "https://www.kimi.com/code/docs/en/kimi-code/models",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260730-sw-006",
+      "radar": "software-dev",
+      "date": "2026-07-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "TurboFieldfare：Gemma 4 26B 在 ~2GB RAM 跑（8GB Mac 也行）",
+      "summary": "自製 Swift + Metal runtime，不把 14.3GB 模型整包載入記憶體：只留 1.35GB shared core + FP16 KV cache，其餘 expert 依每個 token 需要從 SSD 串流。讓 Gemma 4 26B-A4B MoE 在任何 Apple Silicon（含 8GB）本地跑。Show HN 537 分。expert-streaming 換記憶體的 local inference 新招。",
+      "tags": [
+        "expert-streaming-inference",
+        "ai-models",
+        "local-inference",
+        "moe",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "GitHub (drumih/turbo-fieldfare)",
+      "sourceUrl": "https://github.com/drumih/turbo-fieldfare",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260730-sw-007",
+      "radar": "software-dev",
+      "date": "2026-07-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare：對 origin 的 post-quantum 認證上線",
+      "summary": "Cloudflare 現支援連線到客戶 origin server 時做 post-quantum 認證（透過 Authenticated Origin Pulls 與 Custom Origin Trust Store），是全產品 PQ 認證的第一步。與 Anthropic 的 crypto 研究同日呼應——PQ 遷移正在從理論走進基礎設施。",
+      "tags": [
+        "post-quantum",
+        "devops-infra",
+        "security",
+        "tls"
+      ],
+      "url": "https://blog.cloudflare.com/post-quantum-authentication-to-origins/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/post-quantum-authentication-to-origins/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260730-sw-008",
+      "radar": "software-dev",
+      "date": "2026-07-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Zig 增量編譯內部剖析：毫秒級 rebuild",
+      "summary": "Zig 核心成員 mlugg 深入解說 incremental compilation：偵測哪些 function/declaration 有變、只重編那段、直接把 bytes patch 進輸出 binary。實測複雜 app 從 5 秒初編降到每次改動 50–70ms rebuild，核心團隊已日常使用（需 master/0.17.0 的 linker 功能）。Lobsters 151 分。",
+      "tags": [
+        "zig",
+        "compilers",
+        "new-languages",
+        "incremental-compilation",
+        "performance"
+      ],
+      "url": "https://mlugg.co.uk/posts/incremental-compilation-internals/",
+      "source": "mlugg.co.uk",
+      "sourceUrl": "https://mlugg.co.uk/posts/incremental-compilation-internals/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-29",
-  "updatedAt": "2026-07-29T21:31:00Z"
+  "lastUpdated": "2026-07-30",
+  "updatedAt": "2026-07-30T05:20:00+08:00"
 }
