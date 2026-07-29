@@ -66635,6 +66635,166 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260730-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-30",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "digimata/quill",
+      "summary": "極簡 macOS 錄音+本地轉錄工具，按鍵錄音放開轉字，主打快到不用思考的 dictation/memo 流程。目前 no license。",
+      "tags": [
+        "audio",
+        "transcription",
+        "macos"
+      ],
+      "url": "https://github.com/digimata/quill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/digimata/quill",
+      "stars": 1365,
+      "createdDate": "2026-07-24",
+      "license": "none"
+    },
+    {
+      "id": "20260730-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-30",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "mikehasa/agentacct",
+      "summary": "Local-first coding agent 帳本，記錄每個任務用了哪些工具/改哪些檔/花多少 token 跟錢。支援 Claude Code/Codex/OpenCode，無登入無 telemetry。",
+      "tags": [
+        "coding-agent",
+        "cost-tracking",
+        "observability"
+      ],
+      "url": "https://github.com/mikehasa/agentacct",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/mikehasa/agentacct",
+      "stars": 525,
+      "createdDate": "2026-07-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260730-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-30",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "VladUZH/qwen-scribe",
+      "summary": "Apple Silicon 上的私有本地轉錄+全系統 dictation，Qwen3-TTS 管線，完全離線，主打 system-wide 聽寫。",
+      "tags": [
+        "transcription",
+        "dictation",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/VladUZH/qwen-scribe",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/VladUZH/qwen-scribe",
+      "stars": 75,
+      "createdDate": "2026-07-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260730-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-30",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "SerhiiKorniienko/bullshit-detector",
+      "summary": "一組 agent skills，對 YouTube/文章/推文/PDF 做逐條 claim 事實查核，附來源並給 0-10 BS 分數。forks:0 早期。",
+      "tags": [
+        "agent-skill",
+        "fact-check",
+        "research"
+      ],
+      "url": "https://github.com/SerhiiKorniienko/bullshit-detector",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/SerhiiKorniienko/bullshit-detector",
+      "stars": 65,
+      "createdDate": "2026-07-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260730-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-07-30",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "2nd1st/open-mcp-apps",
+      "summary": "開源 MCP App 引擎，讓 AI 建一次 UI component 就能永久重用，給 agent 持久化可視介面層。forks:1 很新。",
+      "tags": [
+        "mcp",
+        "agent-ui",
+        "tooling"
+      ],
+      "url": "https://github.com/2nd1st/open-mcp-apps",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/2nd1st/open-mcp-apps",
+      "stars": 54,
+      "createdDate": "2026-07-21",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260730-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-07-30",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "reflex-dev/xy",
+      "summary": "Reflex 團隊做的超快、GPU 加速 Python 互動繪圖庫，這週靠 Show HN 竄起。matplotlib 替代選項。",
+      "tags": [
+        "dataviz",
+        "python",
+        "charts"
+      ],
+      "url": "https://github.com/reflex-dev/xy",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/reflex-dev/xy",
+      "stars": 735,
+      "createdDate": "2026-07-09",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260730-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-07-30",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "Blackwellboy/model-serving-minefield",
+      "summary": "社群維護的 LLM serving 地雷清單，列出會量到假數據的坑（template/tool parser/量化 kernel/CUDA/KV/eval），症狀在前檢查在後。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "reference"
+      ],
+      "url": "https://github.com/Blackwellboy/model-serving-minefield",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Blackwellboy/model-serving-minefield",
+      "stars": 45,
+      "createdDate": "2026-07-27",
+      "license": "none"
+    },
+    {
+      "id": "20260730-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-07-30",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "flankerhqd/cyvisguard",
+      "summary": "給 AI agent 的安全控制平面：身分委派、capability policy、data-flow taint、稽核軌跡，透過 MCP 強制執行，能端到端守住 Claude Code。forks:3 早期。",
+      "tags": [
+        "mcp",
+        "security",
+        "ai-agent"
+      ],
+      "url": "https://github.com/flankerhqd/cyvisguard",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/flankerhqd/cyvisguard",
+      "stars": 46,
+      "createdDate": "2026-07-22",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-07-30",
