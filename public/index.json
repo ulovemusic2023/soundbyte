@@ -66593,6 +66593,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260730-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-07-30",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "SQL 沒有殺死 COBOL 工程師，只是換了工作內容",
+      "summary": "SQLite 之父 D. Richard Hipp 用歷史類比回應 AI coding 焦慮：SQL 出現前，要靠昂貴的 COBOL 工程師手寫查詢大資料集的程式；SQL 讓人用簡單的宣告就能生成那些程式碼。工程師沒有消失，只是工作內容變了一點。抽象層每升一級，消滅的是『寫法』而非『人』。",
+      "tags": [
+        "ai-coding",
+        "abstraction",
+        "future-of-work",
+        "mental-model"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/29/d-richard-hipp/",
+      "source": "Simon Willison (引用 D. Richard Hipp)",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/29/d-richard-hipp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260730-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-07-30",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Ethan Mollick 的 AI 工具選用指南：主戰場已從 chat 移到 agent",
+      "summary": "Ethan Mollick 每年更新的『該用哪個 AI』指南，今年變化本身就是訊號：一年前還在比 ChatGPT / Claude / Gemini 的聊天模型，現在核心是 agentic 系統——能一口氣做完相當於人類數小時工作的模式。最強用法是給 AI 一台電腦。Gemini 因為沒有對應 agent 產品已掉出清單。",
+      "tags": [
+        "ai-adoption",
+        "agentic",
+        "tooling",
+        "operational"
+      ],
+      "url": "https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22",
+      "source": "Ethan Mollick (One Useful Thing)",
+      "sourceUrl": "https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-30",
