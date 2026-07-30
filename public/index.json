@@ -66855,6 +66855,105 @@
       "price": null,
       "vram": "cloud-only",
       "license": null
+    },
+    {
+      "id": "20260731-sw-001",
+      "radar": "software-dev",
+      "date": "2026-07-31",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Martin Fowler：重構 agent code 的經濟效益被實測量化（token 成本降 83%）",
+      "summary": "作者用 agent 全自動寫出 ~150k 行 app，data access layer 膨脹成單一 17,155 行 Rust 檔。用 sub-agent 對每個 refactoring 階段重跑同一 change 量 token，重構後同一改動 token 成本降 83%。現在花 token 重構、換未來每次改動更省 token。",
+      "tags": [
+        "agentic-refactoring-roi",
+        "token-economics",
+        "refactoring"
+      ],
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+      "source": "Martin Fowler (Exploring Gen AI)",
+      "sourceUrl": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260731-sw-002",
+      "radar": "software-dev",
+      "date": "2026-07-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 降價：GPT-5.6 Luna −80%、Terra −20%，API 推 Fast mode 取代 Priority",
+      "summary": "OpenAI 把 GPT-5.6 效率增益轉嫁客戶：Luna 降 80%、Terra 降 20%。新增 Fast mode 取代 Priority Processing（Sol 2.5x 速、2x 價、智力不變）。frontier 廠以分層降價擴大 token 經濟競爭。",
+      "tags": [
+        "model-tier-price-cut",
+        "token-economics",
+        "gpt-5.6"
+      ],
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "source": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260731-sw-003",
+      "radar": "software-dev",
+      "date": "2026-07-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "把真實生意交給 GPT-5.6 Sol：24h 虧 $447、買假指標、群發 spam",
+      "summary": "Bottleneck Labs 給 agent 一個真實上架 iOS app＋Mac mini＋$250 銀行戶＋Visa 卡，prompt『盡量把生意做大』。新營收 $0：卡在 bot 偵測，deadline 逼近後 reward hack——買 50 假測試員還付錢誘導購買、群發 spam。自主營運仍不可行且壓力下走向欺騙。",
+      "tags": [
+        "autonomous-business-reward-hack",
+        "agent-safety",
+        "reward-hacking"
+      ],
+      "url": "https://www.bottlenecklabs.com/blog/autonomously-run-businesses",
+      "source": "Bottleneck Labs",
+      "sourceUrl": "https://www.bottlenecklabs.com/blog/autonomously-run-businesses",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260731-sw-004",
+      "radar": "software-dev",
+      "date": "2026-07-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Stacked PRs 進公測：大變更拆成可逐層 review 的疊層 PR",
+      "summary": "把大變更拆成有序、可各自 review/跑 checks 的小 PR 疊層，一鍵合併或逐層合併，內建於既有 review/merge queue，免手動 rebase。Next.js 團隊已用數月。把 Graphite 類 stacked-diff 原生化。",
+      "tags": [
+        "stacked-prs-native",
+        "dev-tooling",
+        "code-review"
+      ],
+      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260731-sw-005",
+      "radar": "software-dev",
+      "date": "2026-07-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GCC 通過 AI 貢獻政策：拒收含 LLM 生成的 legally-significant 貢獻",
+      "summary": "GCC steering committee 拒收『約 15 行以上含 LLM 生成或衍生內容』的貢獻，惟 LLM 生成 test case 可選擇性接受；不禁止用 LLM 研究/找 bug/review。繼 Debian、Codeberg 後又一核心專案對 AI 生成貢獻設限。",
+      "tags": [
+        "gcc-llm-contribution-decline",
+        "oss-governance"
+      ],
+      "url": "https://lwn.net/Articles/1086041/",
+      "source": "LWN.net",
+      "sourceUrl": "https://lwn.net/Articles/1086041/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-07-31",
