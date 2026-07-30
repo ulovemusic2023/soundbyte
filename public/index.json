@@ -66795,8 +66795,68 @@
       "stars": 46,
       "createdDate": "2026-07-22",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260731-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-07-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "drumih/turbo-fieldfare",
+      "summary": "HN 冠軍(876pts)：Gemma 4 26B-A4B 塞進 ~2GB RAM 推理。主打 Apple M 系列(MLX)，非 CUDA；極限量化思路在 RTX 上等同 quantize-ok。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gemma",
+        "mlx"
+      ],
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/drumih/turbo-fieldfare",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260731-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-07-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "microsoft/VibeVoice-ASR-BitNet",
+      "summary": "微軟 VibeVoice 家族的 BitNet 量化版 ASR，僅 0.3B。1-bit 權重讓 CPU/邊緣裝置就能跑即時語音辨識。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "quantization",
+        "bitnet"
+      ],
+      "url": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260731-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-07-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "moonshotai/Kimi-K3",
+      "summary": "Moonshot 新一代旗艦 LLM，2.8T 參數、image-text-to-text，登上 HF trending 榜首。純 cloud-only；unsloth 已放 GGUF 量化版。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/moonshotai/Kimi-K3",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3",
+      "price": null,
+      "vram": "cloud-only",
+      "license": null
     }
   ],
-  "lastUpdated": "2026-07-30",
-  "updatedAt": "2026-07-30T05:20:00+08:00"
+  "lastUpdated": "2026-07-31",
+  "updatedAt": "2026-07-31T05:10:00+08:00"
 }
