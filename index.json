@@ -66954,6 +66954,87 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260731-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-07-31",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "XYZ-AI-Lab/AxisAgentic",
+      "summary": "long-horizon agent 的可擴充 runtime，同時收集執行 trajectory；支援 OpenAI-compatible endpoint 與本地模型，處理 multi-turn、tool orchestration、context 管理、recovery、benchmark，trace 可 replay/評測/export 成 SFT。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "trajectory",
+        "sft"
+      ],
+      "url": "https://github.com/XYZ-AI-Lab/AxisAgentic",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/XYZ-AI-Lab/AxisAgentic",
+      "stars": 670,
+      "createdDate": "2026-07-23",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260731-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-07-31",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "tsingyuai/growth-lab",
+      "summary": "開源端到端 growth agent：理解產品、接資料、研究市場、跑行銷 campaign、再用真實數據自我改進。從 code 做到 market 的自動化增長工具。",
+      "tags": [
+        "ai-agent",
+        "growth",
+        "marketing",
+        "automation"
+      ],
+      "url": "https://github.com/tsingyuai/growth-lab",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/tsingyuai/growth-lab",
+      "stars": 80,
+      "createdDate": "2026-07-24",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260731-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-07-31",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "xikhar/persona",
+      "summary": "桌面即時角色 avatar，偵測指定 app 的語音播放讓對話有視覺角色陪伴（不錄麥克風/不做 TTS/不轉錄/不上傳）。3 天 668★。",
+      "tags": [
+        "voice",
+        "desktop",
+        "avatar"
+      ],
+      "url": "https://github.com/xikhar/persona",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/xikhar/persona",
+      "stars": 668,
+      "createdDate": "2026-07-28",
+      "license": "none"
+    },
+    {
+      "id": "20260731-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-07-31",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "HezaoHezao/poirot",
+      "summary": "deep research agent kernel，主打乾淨的 agent 架構，適合研究/自組 research agent 的參考範本。",
+      "tags": [
+        "ai-agent",
+        "deep-research"
+      ],
+      "url": "https://github.com/HezaoHezao/poirot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/HezaoHezao/poirot",
+      "stars": 34,
+      "createdDate": "2026-07-28",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-07-31",
