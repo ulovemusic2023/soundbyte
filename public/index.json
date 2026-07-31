@@ -67035,8 +67035,47 @@
       "stars": 34,
       "createdDate": "2026-07-28",
       "license": "MIT"
+    },
+    {
+      "id": "20260801-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HAKORADev/VODER",
+      "summary": "本機端一站式語音引擎，8 種模式塞進單一 CLI：STT / TTS / voice conversion / 音樂生成 / 語音增強 / 音效 / vocal separation / speaker diarization。可從歌詞+風格生成整首歌並輸出最多 12 軌樂器 stem，voice cloning 走 Seed-VC v2，翻譯配音用 TranslateGemma 12B（76 語）。可把多任務串成 chain。全離線、免訂閱、有無 GPU 皆可跑。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/HAKORADev/VODER",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/07/28/HAKORADev-VODER.html",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260801-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "1038lab/ComfyUI-QwenTTS",
+      "summary": "把 Qwen3-TTS（12Hz tokenizer，1.7B / 0.6B）包成 ComfyUI custom nodes：CustomVoice（9 種預設音色+風格控制）、VoiceDesign（自然語言描述生成音色）、VoiceClone（3 秒參考音快速複製）。支援 10 種語言、串流輸出、CUDA/MPS/CPU 自動切換，附 Whisper STT 與 Voice Instruct 工具。模型小、本地優先。",
+      "tags": [
+        "tts_speech",
+        "voice_cloning"
+      ],
+      "url": "https://github.com/1038lab/ComfyUI-QwenTTS",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/07/31/1038lab-ComfyUI-QwenTTS.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "GPL-3.0"
     }
   ],
-  "lastUpdated": "2026-07-31",
-  "updatedAt": "2026-07-31T05:10:00+08:00"
+  "lastUpdated": "2026-08-01",
+  "updatedAt": "2026-08-01T05:10:00+08:00"
 }
