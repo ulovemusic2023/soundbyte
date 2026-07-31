@@ -67258,6 +67258,106 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260801-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-01",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "yc-software/qm",
+      "summary": "YC 出品（homepage qm.ycombinator.com）的多人協作 agent harness，讓團隊多個 coding agent 在同一工作環境協同。19 open issues、118 forks，活躍開發中。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "multiplayer"
+      ],
+      "url": "https://github.com/yc-software/qm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-18+stars:>50",
+      "stars": 1286,
+      "createdDate": "2026-07-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260801-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-01",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "AminBlg/SimpleEnglish",
+      "summary": "Agent skill，強制 LLM 用 ASD-STE100 Simplified Technical English 寫文件，專治那種浮誇冗長的 AI slop。適合技術文件/README 要乾淨可讀的場景。",
+      "tags": [
+        "agent-skill",
+        "writing",
+        "docs"
+      ],
+      "url": "https://github.com/AminBlg/SimpleEnglish",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-18+stars:>50",
+      "stars": 994,
+      "createdDate": "2026-07-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260801-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-01",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "AmazingAng/old-coder",
+      "summary": "0xAA（WTF Academy 創辦人）做的 coding agent skill，理念是「別讀 code，讓它跑過 gauntlet」——evidence-first 開發，靈感來自 Uncle Bob。給 agent 時代的老派工程紀律。",
+      "tags": [
+        "coding-agent",
+        "claude-code",
+        "testing"
+      ],
+      "url": "https://github.com/AmazingAng/old-coder",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 192,
+      "createdDate": "2026-07-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260801-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-01",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "bybit-exchange/kaas",
+      "summary": "把零散筆記、文件、逐字稿編譯成可查詢的 Markdown wiki——一個 LLM knowledge-base compiler，走 MCP 存取、不用 embeddings、可自架。適合管理 radar/研究筆記。",
+      "tags": [
+        "mcp",
+        "knowledge-base",
+        "self-hosted"
+      ],
+      "url": "https://github.com/bybit-exchange/kaas",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 55,
+      "createdDate": "2026-07-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260801-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-01",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "funador/claude-code-merge-queue",
+      "summary": "給「多個 Claude Code agent 平行跑」用的本地 merge queue，解決平行 agent 同時改 code 的合併衝突。本週 Show HN 熱議（建立於 7/10，非嚴格 14 天內故列此區）。",
+      "tags": [
+        "claude-code",
+        "coding-agent",
+        "git"
+      ],
+      "url": "https://github.com/funador/claude-code-merge-queue",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 113,
+      "createdDate": "2026-07-10",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-01",
