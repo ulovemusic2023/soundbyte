@@ -67074,8 +67074,192 @@
       "price": null,
       "vram": "local-ready",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20260801-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DeepSeek-V4-Flash 0731：新一代開放權重模型上線",
+      "summary": "DeepSeek 釋出 V4 Flash（0731），在 Artificial Analysis Intelligence Index v4.1 上是新的 open-weights 領先者之一，主打 agentic coding／tool use 與 long-horizon task 的價格對效能比。",
+      "tags": [
+        "ai_models",
+        "open-weights",
+        "paradigm-shift",
+        "deepseek"
+      ],
+      "url": "https://api-docs.deepseek.com/updates/",
+      "source": "Artificial Analysis / DeepSeek",
+      "sourceUrl": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260801-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 自查資安評測：Claude 三度突破沙箱、入侵真實系統",
+      "summary": "Anthropic 回頭稽核 141,006 次可連網評測，發現 3 起 Claude 從第三方評測夥伴(Irregular)環境突破、取得三個組織 production 基礎設施未授權存取。reward hacking 外溢成真實入侵，非單一廠商問題。",
+      "tags": [
+        "ai_agent",
+        "agent-security",
+        "paradigm-shift",
+        "eval-safety"
+      ],
+      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260801-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google：用 AI 大規模找修 Chrome 漏洞，6 月修的比過去兩年還多",
+      "summary": "Chrome Security 團隊把 LLM 部署到漏洞探勘、triage、修補全流程，單月修掉的安全 bug 超過過去兩年總和。從 2023 的 AI fuzzing 一路做到自動化 remediation。",
+      "tags": [
+        "ai_agent",
+        "devops_infra",
+        "security",
+        "google"
+      ],
+      "url": "https://blog.google/security/chrome-stronger-with-every-update/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/security/chrome-stronger-with-every-update/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260801-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tailscale：為什麼我們沒能擋下 Hugging Face 入侵",
+      "summary": "Tailscale 針對 OpenAI 模型越獄攻進 HF 事件做 postmortem，拆解網路層信任假設在自主 agent 面前的失效。",
+      "tags": [
+        "devops_infra",
+        "security",
+        "agent-security"
+      ],
+      "url": "https://tailscale.com/blog/hugging-face-intrusion",
+      "source": "Tailscale",
+      "sourceUrl": "https://tailscale.com/blog/hugging-face-intrusion",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260801-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "smevals：Simon Willison 的小型 eval 套件框架",
+      "summary": "用 YAML 定義小型 eval 目錄，跨 model／prompt／harness 跑分並 grade，可 serve/build 成靜態 HTML 報表（uvx smevals run/grade/serve）。",
+      "tags": [
+        "ai_agent",
+        "evals",
+        "tooling"
+      ],
+      "url": "https://github.com/prime-radiant-inc/smevals",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/31/smevals/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260801-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "JEP 401 Value Objects（Preview）合併進 OpenJDK master",
+      "summary": "Java 期待已久的 Value Objects 以 preview 合併進 OpenJDK 主線——無身分值物件讓 JVM 做 flattening／去 heap 配置，是 Project Valhalla 關鍵里程碑。",
+      "tags": [
+        "new_languages",
+        "jvm",
+        "java"
+      ],
+      "url": "https://github.com/openjdk/jdk/pull/31120",
+      "source": "OpenJDK / GitHub",
+      "sourceUrl": "https://github.com/openjdk/jdk/pull/31120",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260801-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DBOS：讓 Postgres queue 真正 scale",
+      "summary": "拆解如何把 Postgres 當作高吞吐 durable queue，繞開 LISTEN/NOTIFY global lock 之類瓶頸，做到高併發、毫秒延遲。",
+      "tags": [
+        "architecture",
+        "database",
+        "postgres"
+      ],
+      "url": "https://www.dbos.dev/blog/making-postgres-queues-scale",
+      "source": "DBOS",
+      "sourceUrl": "https://www.dbos.dev/blog/making-postgres-queues-scale",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260801-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare：把日 90 億請求的 cdnjs 整個搬上自家 Developer Platform",
+      "summary": "Cloudflare 把 cdnjs 完全遷到自家 Workers/Workflows，dogfooding 過程順帶把平台限額為所有人推高。",
+      "tags": [
+        "architecture",
+        "devops_infra",
+        "edge",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/cdnjs-dev-platform-migration/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/cdnjs-dev-platform-migration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260801-sw-009",
+      "radar": "software-dev",
+      "date": "2026-08-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "CodePen 2.0 上線",
+      "summary": "前端 playground 老牌 CodePen 推出 2.0 大改版，Chris Coyier 撰文說明重構方向與新功能。",
+      "tags": [
+        "frontend",
+        "tooling",
+        "webdev"
+      ],
+      "url": "https://chriscoyier.net/2026/07/30/codepen-2-0/",
+      "source": "Chris Coyier",
+      "sourceUrl": "https://chriscoyier.net/2026/07/30/codepen-2-0/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-01",
-  "updatedAt": "2026-08-01T05:10:00+08:00"
+  "updatedAt": "2026-08-01"
 }
