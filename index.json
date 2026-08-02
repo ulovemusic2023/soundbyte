@@ -67396,6 +67396,248 @@
       "price": null,
       "vram": "agent harness，模型另計",
       "license": "MIT"
+    },
+    {
+      "id": "20260803-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 開 Agents Week：為 autonomous agents 重構雲基礎設施",
+      "summary": "Cloudflare 啟動 'Agents Week' 系列，主張雲基礎設施必須從服務 human browsers 轉向服務 autonomous agents，重新設計 storage / execution / security primitives，打造 agent-native web。",
+      "tags": [
+        "ai_agent",
+        "edge",
+        "agent-native-infra",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.cloudflare.com/agents-week-welcome/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/agents-week-welcome/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Go 1.27 Interactive Tour",
+      "summary": "VictoriaMetrics 出了一份互動式導覽，帶你逐一玩過 Go 1.27 的新特性與語言/runtime 改動，HN 熱度極高。",
+      "tags": [
+        "golang",
+        "new_languages"
+      ],
+      "url": "https://victoriametrics.com/blog/go-1-27/index.html",
+      "source": "VictoriaMetrics (HN)",
+      "sourceUrl": "https://victoriametrics.com/blog/go-1-27/index.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Kimi K3（2.8T）在 AMD MI355X 跑出比 B300 更好的每美元效能",
+      "summary": "開源 Kimi K3 達 2.8T 參數、逼近 Fable/Sol 級智能，但 1.5TB VRAM 連 B200 node 都塞不下。MI355X 靠 288GB VRAM、每 GPU 約便宜 2.4×，做到 ~952 tok/s/node，成為 frontier serving 的性價比選項——瓶頸剩軟體 kernel 支援。",
+      "tags": [
+        "ai_models",
+        "inference",
+        "amd",
+        "mi355x-perf-per-dollar",
+        "paradigm-shift"
+      ],
+      "url": "https://www.wafer.ai/blog/kimi-k3-mi355x",
+      "source": "Wafer.ai",
+      "sourceUrl": "https://www.wafer.ai/blog/kimi-k3-mi355x",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Kedge：forkable VM snapshots + 全域 SQLite 的輕量雲",
+      "summary": "`echo '# Hello' | ssh kedge.dev` 就能部署。硬體隔離 VM（完整 Linux kernel）、每個 app 內建 global SQLite 與共享 FS、scale-to-zero、push-to-deploy 的 per-PR preview，並為 AI agents 提供 SSH/HTTP API。",
+      "tags": [
+        "architecture",
+        "serverless",
+        "devops_infra"
+      ],
+      "url": "https://kedge.dev/",
+      "source": "Kedge (Show HN)",
+      "sourceUrl": "https://kedge.dev/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Fuse：靜態型別純函數式語言，編到 GRIN → LLVM",
+      "summary": "Fuse 是純函數式語言，帶 higher-kinded types 與 ad-hoc polymorphism（trait/impl），型別系統基於 System F。經 GRIN whole-program optimizer 產生 LLVM native code。",
+      "tags": [
+        "new_languages",
+        "functional",
+        "llvm"
+      ],
+      "url": "https://fuselang.org",
+      "source": "Fuse (Show HN)",
+      "sourceUrl": "https://fuselang.org",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "CTGT：蒸餾中國審查模型，能力上升但審查不會傳染",
+      "summary": "用重度審查的 DeepSeek V4 輸出訓練 gpt-oss，financial reasoning 大幅提升（120B 版 83.61% 勝 Kimi K3），但 China-sensitive 審查 gap（+45.45）並未被繼承；self-distill 甚至能達同分。直接回應華府『中國模型價值觀隨蒸餾傳染』的疑慮。",
+      "tags": [
+        "ai_models",
+        "distillation",
+        "distillation-lineage"
+      ],
+      "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+      "source": "CTGT",
+      "sourceUrl": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：open-weights 政策公開信戰局",
+      "summary": "Microsoft 領銜 235 家（NVIDIA、Amazon、YC、後來 OpenAI）連署『Open Weights and American AI Leadership』，力挺 open weights 並罕見替 distillation 背書。Anthropic 明顯缺席，三天後自行發反對文，Dario 呼籲打擊工業級蒸餾。",
+      "tags": [
+        "ai_models",
+        "policy",
+        "open-weights"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/2/open-letters/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/2/open-letters/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tokenless (YC S26)：自動切換模型省成本",
+      "summary": "Launch HN 產品，依任務難度自動 route 到最省的模型，宣稱在不明顯犧牲品質下降低 LLM 成本。屬 model-routing / cost-optimization 這條線的新玩家。",
+      "tags": [
+        "ai_agent",
+        "cost-routing",
+        "llm"
+      ],
+      "url": "https://usetokenless.com/",
+      "source": "Tokenless (Launch HN)",
+      "sourceUrl": "https://usetokenless.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-009",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Kakehashi：在 Linux ARM 上跑 macOS binary 的 userspace",
+      "summary": "實驗性 userspace 相容層，讓 macOS binaries 直接在 Linux ARM 上執行（類 Wine 之於 Windows 的思路），HN 熱議。",
+      "tags": [
+        "runtime",
+        "new_languages",
+        "arm"
+      ],
+      "url": "https://github.com/wie-project/kakehashi",
+      "source": "Kakehashi (Show HN)",
+      "sourceUrl": "https://github.com/wie-project/kakehashi",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-010",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Syncular：offline-first SQL sync，TS + Rust core",
+      "summary": "面向 local-first 應用的 SQL 同步引擎，TypeScript 與 Rust 雙核心，處理離線優先與衝突合併。",
+      "tags": [
+        "database",
+        "local-first",
+        "sync"
+      ],
+      "url": "https://github.com/syncular/syncular",
+      "source": "Syncular (Show HN)",
+      "sourceUrl": "https://github.com/syncular/syncular",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-011",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cursor 移除 usage page 的成本資訊與 CSV export",
+      "summary": "Cursor 把用量頁的成本明細與 CSV 匯出拿掉，只剩 token 數字，社群論壇熱議計費透明度倒退。AI coding 工具的定價/信任議題再起。",
+      "tags": [
+        "ai_agent",
+        "dev-tools",
+        "pricing"
+      ],
+      "url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
+      "source": "Cursor Forum",
+      "sourceUrl": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260803-sw-012",
+      "radar": "software-dev",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "『我不推薦 Tailwind CSS』",
+      "summary": "一篇逆風意見文，論述為何作者不再推薦 Tailwind，引發前端社群大量討論（146p）。frontend DX 的長青爭論。",
+      "tags": [
+        "frontend_dx",
+        "css",
+        "tailwind"
+      ],
+      "url": "https://en.andros.dev/blog/af3ee191/why-i-dont-recommend-tailwind-css/",
+      "source": "andros.dev",
+      "sourceUrl": "https://en.andros.dev/blog/af3ee191/why-i-dont-recommend-tailwind-css/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-01",
