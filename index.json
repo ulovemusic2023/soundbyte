@@ -67638,6 +67638,27 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260803-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-03",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "AI 該把時間還給人，而不是變成隔開人的介質",
+      "summary": "在 OpenAI，很多人把 ChatGPT 接上 Slack 自動找人協作。Brockman 的觀察：當同事的 ChatGPT 主動來找你幫忙，大家會很反感——即使同一件事若是同事本人開口，他們會樂意去做。人真正在意的是『關係』而非『任務』。好的 AI 應把時間還給人、或強化人與人的相處，而不是成為一層把人隔開的介質。",
+      "tags": [
+        "ai-collaboration",
+        "human-relationships",
+        "product-philosophy",
+        "agentic-ai"
+      ],
+      "url": "https://twitter.com/gdb/status/2083435180392673714",
+      "source": "Greg Brockman (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/1/greg-brockman/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-01",
