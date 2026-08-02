@@ -67358,6 +67358,44 @@
       "stars": 113,
       "createdDate": "2026-07-10",
       "license": "MIT"
+    },
+    {
+      "id": "20260803-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "XMUDeepLIT/MemGraphRAG",
+      "summary": "KDD 2026 論文開源，記憶式多代理 Graph RAG。知識拆成 schema/fact/passage 三層，支援 conflict-aware 建圖與記憶導出圖。",
+      "tags": [
+        "rag_knowledge",
+        "graphrag"
+      ],
+      "url": "https://github.com/XMUDeepLIT/MemGraphRAG",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/08/02/XMUDeepLIT-MemGraphRAG.html",
+      "price": null,
+      "vram": "框架輕量，LLM backend 另計",
+      "license": "MIT"
+    },
+    {
+      "id": "20260803-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-08-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "esengine/DeepSeek-Reasonix",
+      "summary": "DeepSeek 原生的終端 AI coding agent，圍繞 prefix-cache 穩定性設計，主打開著讓它一直跑。",
+      "tags": [
+        "ai_devtools",
+        "deepseek"
+      ],
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "agent harness，模型另計",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-01",
