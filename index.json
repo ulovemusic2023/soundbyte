@@ -67659,8 +67659,190 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260803-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "sqliteai/waste",
+      "summary": "Dependency-free 可嵌入的 C 推論引擎：把 Kimi K3（2.78T 參數）activated weights 直接從 NVMe 串流，讓超出 RAM 的模型也能在本機跑。想在自己機器上玩超大模型的路子。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "kimi-k3",
+        "c"
+      ],
+      "url": "https://github.com/sqliteai/waste",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 999,
+      "createdDate": "2026-07-28",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260803-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "microsoft/skill-recorder",
+      "summary": "錄下你螢幕上的操作流程，用 GitHub Copilot CLI 反推成 intent + 有序步驟，再產出可重用的 Skill / Automation。把手動流程變成 agent skill 的工具，Microsoft 官方出品。",
+      "tags": [
+        "agent-skill",
+        "copilot",
+        "automation"
+      ],
+      "url": "https://github.com/microsoft/skill-recorder",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 720,
+      "createdDate": "2026-07-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260803-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "perplexityai/numbat",
+      "summary": "端點上的 AI agent 行為可視化：on-device 偵測、可選的 pre-action 阻擋、事後 forensic 重建。Perplexity 出的 agent 安全/稽核工具，agent 跑在你機器上時值得留意的一類方案。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "observability"
+      ],
+      "url": "https://github.com/perplexityai/numbat",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 627,
+      "createdDate": "2026-07-24",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260803-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "0xwilliamortiz/ratchet",
+      "summary": "「你的 agent 讀了規則——這個檢查它有沒有真的照做。」給 coding agent 的規則合規檢查器，補上 CLAUDE.md/rules 有寫但 agent 沒遵守的那道缺口。",
+      "tags": [
+        "ai-coding",
+        "claude-code",
+        "compliance"
+      ],
+      "url": "https://github.com/0xwilliamortiz/ratchet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 411,
+      "createdDate": "2026-07-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260803-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "michellzappa/headroom",
+      "summary": "Local-first 的 AI coding 額度與 ship 狀態顯示，放在 menu bar、iPhone、Apple Watch 甚至 ESP32 桌面小螢幕上。想隨時知道 Claude/Codex 用量還剩多少的硬核玩法。",
+      "tags": [
+        "ai-coding",
+        "quota",
+        "local-first"
+      ],
+      "url": "https://github.com/michellzappa/headroom",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 209,
+      "createdDate": "2026-07-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260803-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "trycompai/crm",
+      "summary": "Open-source、agentic-first 的 CRM。從一開始就把 AI agent 當一等公民設計，而不是後補的功能。做創作者/公司經營工具時可以參考它的架構取向。",
+      "tags": [
+        "crm",
+        "ai-agent",
+        "open-source"
+      ],
+      "url": "https://github.com/trycompai/crm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1724,
+      "createdDate": "2026-07-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260803-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "thinkany-ai/dscode",
+      "summary": "以 DeepSeek 為核心的 coding agent。想用非 Claude/GPT 模型跑 coding agent、或壓成本時的一個選項。",
+      "tags": [
+        "coding-agent",
+        "deepseek"
+      ],
+      "url": "https://github.com/thinkany-ai/dscode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 99,
+      "createdDate": "2026-07-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260803-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "the0cp/beatflow-skill",
+      "summary": "AI 作曲 skill：用 Python DSL 寫、附 musical diagnostics，並做 deterministic 多軌 MIDI 渲染。星數還小但正中你的音樂本業——值得看它怎麼把作曲拆成 agent 能操作的介面。",
+      "tags": [
+        "music-generation",
+        "midi",
+        "agent-skill",
+        "dsl"
+      ],
+      "url": "https://github.com/the0cp/beatflow-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 21,
+      "createdDate": "2026-07-24",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260803-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-03",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "RightNow-AI/local-kimi",
+      "summary": "Kimi-Linear-48B 的本機推論引擎：INT4 量化 + fused decode kernels（實測 3.18x），OpenAI 相容 server。附 k3 bridge，讓 Claude Code / Codex / Cline / Aider / opencode 不改設定直接接本機模型。",
+      "tags": [
+        "local-llm",
+        "kimi",
+        "quantization",
+        "ai-coding"
+      ],
+      "url": "https://github.com/RightNow-AI/local-kimi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 28,
+      "createdDate": "2026-07-29",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-08-01",
+  "lastUpdated": "2026-08-03",
   "updatedAt": "2026-08-01"
 }
