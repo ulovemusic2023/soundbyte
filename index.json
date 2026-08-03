@@ -68159,8 +68159,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260804-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-04",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly — 88 Prompts for Long Term Thinking",
+      "summary": "KK 公開他 2019 為 Long Now Foundation 寫的 88 條長期思考公理。核心區分：長期『思考』≠ 長期『計畫』——計畫是固定答案會過時，思考是開放問題能隨變化重塑意義。判準：今天最好的選擇，是能在未來打開最多選項的那個。",
+      "tags": [
+        "long-term-thinking",
+        "mental-model",
+        "optionality"
+      ],
+      "url": "https://kk.org/thetechnium/88-prompts-for-long-term-thinking/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/88-prompts-for-long-term-thinking/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-04",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "David Crawshaw — 個人化軟體的時代（Devtools must be open source）",
+      "summary": "Tailscale 共同創辦人主張：agent 讓客製化軟體 ROI 同時在兩端崩解——一句 prompt 就能改原始碼，還能設 nightly cron 自動把本地修改 rebase 到上游新版。含意：高度可設定的 task manager / CRM / CMS 產品邏輯要被重寫；前提是拿得到原始碼，所以 devtools 一定要 open source。",
+      "tags": [
+        "ai-agents",
+        "personalized-software",
+        "product-strategy"
+      ],
+      "url": "https://blog.exe.dev/devtools-must-be-open-source",
+      "source": "David Crawshaw / exe.dev",
+      "sourceUrl": "https://blog.exe.dev/devtools-must-be-open-source",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-08-04",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "自動維護個人 fork 的 nightly-cron prompt",
+      "summary": "一句話點出 agent 時代維護個人 fork 的關鍵：客製化不再是一次性 hack，而是自動跟上游同步、可長期存活。金句：『設一個每晚的 cron job，抓上游更新，把本地修改 rebase 上去，確認能跑後替換現行版本。』",
+      "tags": [
+        "ai-agents",
+        "automation",
+        "personalized-software"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/3/david-crawshaw/",
+      "source": "David Crawshaw",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/3/david-crawshaw/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-03",
-  "updatedAt": "2026-08-01"
+  "lastUpdated": "2026-08-04",
+  "updatedAt": "2026-08-03T21:31:00Z"
 }
