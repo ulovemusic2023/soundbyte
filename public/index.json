@@ -68219,6 +68219,166 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260804-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-04",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "DannyMac180/sol-advisor",
+      "summary": "Codex-native 的多 agent 架構編排：用 Luna / Terra 兩條實作 lane 分工，最後強制跑一次全新的 Sol review 把關。想在 Codex 上做 planner→implementer→reviewer 流水線可以直接抄架構。",
+      "tags": [
+        "ai-agent",
+        "codex",
+        "orchestration"
+      ],
+      "url": "https://github.com/DannyMac180/sol-advisor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-21+stars:>50&type=repositories",
+      "stars": 964,
+      "createdDate": "2026-08-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260804-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-04",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "FareedKhan-dev/kimi-k3-in-c",
+      "summary": "2.78-trillion 參數的 Kimi K3 用純 C99 跑在單顆 CPU、8.24GB RAM 內：沒有 BLAS、沒有 framework、沒有 GPU。教學性質、把 MoE streaming inference 拆到最底層。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "kimi"
+      ],
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-21+stars:>50&type=repositories",
+      "stars": 1160,
+      "createdDate": "2026-08-01",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260804-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-04",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "uczltw6/trace-file-lineage",
+      "summary": "本機追查「這個檔案是哪支 script / notebook / 指令 / AI agent 產出的」，附證據並誠實標註不確定性。",
+      "tags": [
+        "dev-tool",
+        "provenance",
+        "cli"
+      ],
+      "url": "https://github.com/uczltw6/trace-file-lineage",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 207,
+      "createdDate": "2026-07-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260804-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-04",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "NulightJens/humanizer-stack",
+      "summary": "兩段式 pipeline 去掉對外文字的 AI 味：表層 pass + 基於 StoryScope 研究的結構 pass，打包成 Claude Code Skills。README 帶 skool 社群導流。",
+      "tags": [
+        "content",
+        "writing",
+        "claude-code"
+      ],
+      "url": "https://github.com/NulightJens/humanizer-stack",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 170,
+      "createdDate": "2026-07-23",
+      "license": "none"
+    },
+    {
+      "id": "20260804-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-04",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "U-C4N/U-Pool",
+      "summary": "Claude Code / Codex 桌面 provider 切換器：endpoint / API key / model 集中管理，一鍵切換並先測延遲。⚠️ 無 license。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "dev-tool"
+      ],
+      "url": "https://github.com/U-C4N/U-Pool",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 119,
+      "createdDate": "2026-07-25",
+      "license": "none"
+    },
+    {
+      "id": "20260804-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-04",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "mrpulor-gh/nuphus-mcp",
+      "summary": "桌面自動化 MCP server：讓 AI agent 透過 stdio 控制螢幕、視窗、滑鼠鍵盤跟 Chrome。",
+      "tags": [
+        "mcp",
+        "automation",
+        "computer-use"
+      ],
+      "url": "https://github.com/mrpulor-gh/nuphus-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 60,
+      "createdDate": "2026-08-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260804-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-04",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "calesthio/Resonant",
+      "summary": "本機端 AI 音樂工作室（Windows）：生成歌曲、彈樂器、編曲、混音、匯出 WAV，並透過 MCP 接 Codex / Claude 操作。",
+      "tags": [
+        "music",
+        "audio",
+        "mcp"
+      ],
+      "url": "https://github.com/calesthio/Resonant",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 51,
+      "createdDate": "2026-08-02",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260804-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-04",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "vedaant00/opendot",
+      "summary": "可完全 undo 的終端 AI agent：每個檔案跟 shell 動作都快照、可逆，model-agnostic，接 1000+ app 工具與 MCP。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "undo"
+      ],
+      "url": "https://github.com/vedaant00/opendot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 24,
+      "createdDate": "2026-07-28",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-04",
