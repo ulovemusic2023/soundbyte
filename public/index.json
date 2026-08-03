@@ -67918,6 +67918,247 @@
       "price": null,
       "vram": "依所接模型",
       "license": "MIT"
+    },
+    {
+      "id": "20260804-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Qwen3.8-Max — 主打 coding 與 agentic cowork 的新旗艦",
+      "summary": "阿里 Qwen 發表 Qwen3.8-Max，宣稱在 coding 與多步 agent 協作樹立新標竿，HN 破千分。",
+      "tags": [
+        "coding-agent",
+        "ai_models",
+        "qwen"
+      ],
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "source": "Qwen Team",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.8",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SQLite 重大 CVE 其實是 LLM slop",
+      "summary": "JFrog 拆解某 repo 灌爆的 50+ SQLite CVE：引用碼不存在、PoC 跑不出、官方未收錄、GPTZero 判 AI 生成，NVD/CISA 卻先給 Critical。",
+      "tags": [
+        "llm-slop",
+        "security",
+        "cve"
+      ],
+      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "source": "JFrog Security Research",
+      "sourceUrl": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Stateless MCP（MCP 2.0）重新點燃 Simon Willison 對協定的興趣",
+      "summary": "2026-07-28 版 MCP spec 是自推出以來最大改版，無狀態設計讓 Simon 重新投入，做了 mcp-explorer、datasette-mcp。",
+      "tags": [
+        "mcp",
+        "ai_agent",
+        "protocol"
+      ],
+      "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "用手動重打一遍對抗 LLM 產碼的認知負債",
+      "summary": "Ankur Sethi 主張一次生成整個 feature 會累積 cognitive debt，折衷是逐行重打 LLM 產出強迫理解。",
+      "tags": [
+        "ai-coding",
+        "cognitive-debt",
+        "developer-experience"
+      ],
+      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "source": "Ankur Sethi",
+      "sourceUrl": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "開發者工具必須開源",
+      "summary": "Tailscale 的 David Crawshaw 論證工程師最該能客製/fork 的正是 devtools，閉源讓你失去掌控；Simon Willison 背書。",
+      "tags": [
+        "open-source",
+        "devtools",
+        "tooling"
+      ],
+      "url": "https://blog.exe.dev/devtools-must-be-open-source",
+      "source": "David Crawshaw",
+      "sourceUrl": "https://blog.exe.dev/devtools-must-be-open-source",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Octane — 把 React 的心智模型編譯掉",
+      "summary": "Inferno 後繼者，compiler-first：無 vdom、無 rules of hooks、不用手維護 dependency array，保留 hooks/Suspense/actions。",
+      "tags": [
+        "frontend",
+        "react",
+        "compiler",
+        "framework"
+      ],
+      "url": "https://octanejs.dev",
+      "source": "Octane",
+      "sourceUrl": "https://octanejs.dev",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "COBOL→Java 遷移的 agentic 驗證法 Locksmith Loop",
+      "summary": "arXiv：off-mainframe 執行 + Witness Search 穿透分支 + parity-preserving mutation，破解 Locked Paragraph，三案例突破覆蓋率瓶頸。",
+      "tags": [
+        "ai-agent",
+        "legacy-migration",
+        "cobol"
+      ],
+      "url": "https://arxiv.org/abs/2607.28271",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2607.28271",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "我現在大多用速度而非智商選模型",
+      "summary": "Martin Alderson：Opus 4.6 等級已夠聰明，改用速度選 daily driver；Fable 帶 guardrails 回歸太慢讓他換回 Opus。",
+      "tags": [
+        "ai-models",
+        "latency",
+        "developer-experience"
+      ],
+      "url": "https://martinalderson.com/posts/speed-vs-intelligence/",
+      "source": "Martin Alderson",
+      "sourceUrl": "https://martinalderson.com/posts/speed-vs-intelligence/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-009",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Andy Pavlo 加入 ClickHouse、成立 ClickHouse Labs",
+      "summary": "CMU 資料庫名教授、OtterTune 創辦人 Andy Pavlo 加入 ClickHouse 並籌建 ClickHouse Labs 研究部門。",
+      "tags": [
+        "database",
+        "olap",
+        "clickhouse"
+      ],
+      "url": "https://clickhouse.com/blog/andy-pavlo-joins-clickhouse",
+      "source": "ClickHouse Blog",
+      "sourceUrl": "https://clickhouse.com/blog/andy-pavlo-joins-clickhouse",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-010",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Rust 專案目標：Immobile types 與保證解構",
+      "summary": "Rust 2026 project goals 提案 immobile types 與 guaranteed destructors，觸及 linear types / 洩漏安全爭議。",
+      "tags": [
+        "rust",
+        "type-system",
+        "language-design"
+      ],
+      "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
+      "source": "Rust Project Goals",
+      "sourceUrl": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-011",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "你的 JSON 在騙你",
+      "summary": "JSON.stringify/parse 隱形資料損毀：超過 MAX_SAFE_INTEGER 尾數被改、undefined 消失、Date 變字串、NaN 變 null，全程不丟例外。",
+      "tags": [
+        "javascript",
+        "json",
+        "gotcha"
+      ],
+      "url": "https://blog.gaborkoos.com/posts/2026-08-03-Your-JSON-Is-Lying-to-You/",
+      "source": "Gábor Koós",
+      "sourceUrl": "https://blog.gaborkoos.com/posts/2026-08-03-Your-JSON-Is-Lying-to-You/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260804-sw-012",
+      "radar": "software-dev",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "別當肉身代理（meat proxy）",
+      "summary": "Holger Gruhn：貼 Claude 整段原文不是加值，對方能自己問 AI 且掌控 context；1600+ 分共鳴。",
+      "tags": [
+        "ai-culture",
+        "communication",
+        "team"
+      ],
+      "url": "https://gruhn.me/blog/2026-08-03/",
+      "source": "Holger Gruhn",
+      "sourceUrl": "https://gruhn.me/blog/2026-08-03/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-03",
