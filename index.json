@@ -67841,6 +67841,83 @@
       "stars": 28,
       "createdDate": "2026-07-29",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260804-ai-001",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "high",
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "summary": "DeepSeek-V4-Flash 的 0731 refresh checkpoint。base 304B MoE（雲端等級），但 unsloth 已放出官方 GGUF 量化版，20B 規模可塞 16GB VRAM。本地跑 DeepSeek 4 推理直接抓 GGUF。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "20B GGUF 可塞 16GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260804-ai-002",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "high",
+      "title": "leoheuler/flashtensors",
+      "summary": "單張 GPU 跑數百個大模型的載入器：SSD 直灌 VRAM 快 10x，coldstart 2 秒內。適合本地頻繁切換多模型（TTS/SVC/LLM）。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/leoheuler/flashtensors",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "loader 不吃 VRAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260804-ai-003",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "high",
+      "title": "livekit/agents",
+      "summary": "建構 realtime 語音 AI agent 的框架，串起 STT+LLM+TTS 即時對話 pipeline。自架語音 agent 的成熟骨架。",
+      "tags": [
+        "tts_speech",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/livekit/agents",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "框架 local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260804-ai-004",
+      "date": "2026-08-04",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "medium",
+      "title": "vitali87/code-graph-rag",
+      "summary": "針對 monorepo 的 RAG：用知識圖譜查詢、理解、編輯跨語言程式碼。self-host、bring-your-own-model，比純向量檢索更懂結構。",
+      "tags": [
+        "rag_knowledge",
+        "knowledge-graph"
+      ],
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python",
+      "price": null,
+      "vram": "依所接模型",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-03",
