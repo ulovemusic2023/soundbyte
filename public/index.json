@@ -68438,6 +68438,101 @@
       "price": null,
       "vram": "監控工具，幾乎不吃 VRAM",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260809-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+      "summary": "NVIDIA Nemotron Labs 開源 11B end-to-end 語音對話模型，直接吃語音、回語音。",
+      "tags": [
+        "tts_speech",
+        "voice"
+      ],
+      "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+      "price": null,
+      "vram": "11B，16GB 需量化",
+      "license": "openmdw-1.1"
+    },
+    {
+      "id": "20260809-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "deepgrove/maple-preview",
+      "summary": "Ternary 20B MoE，iPhone 上 120 tok/s，桌機 RTX local-ready。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/deepgrove/maple-preview",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49173984",
+      "price": null,
+      "vram": "ternary 20B 極省",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "leonickson1/Swiftlet",
+      "summary": "Swift+Metal 串流 expert 權重，Apple 裝置跑 Qwen MoE 35B/80B，iPhone 也能跑 80B。僅 Apple Silicon。",
+      "tags": [
+        "llm_inference",
+        "moe"
+      ],
+      "url": "https://github.com/leonickson1/Swiftlet",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49158333",
+      "price": null,
+      "vram": "Apple 專用",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260809-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "superlinked/sie",
+      "summary": "開源推理伺服器 + cluster，agent 所需所有模型一站式 serving。",
+      "tags": [
+        "llm_inference",
+        "model-serving"
+      ],
+      "url": "https://github.com/superlinked/sie",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/superlinked/sie",
+      "price": null,
+      "vram": "視模型而定",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260809-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MakazhanAlpamys/Soup",
+      "summary": "一份 YAML 微調 LLM，layer streaming 在 4GB GPU 訓練 8B 模型。",
+      "tags": [
+        "llm_training",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/MakazhanAlpamys/Soup",
+      "price": null,
+      "vram": "8B 可壓到 4GB",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-04",
