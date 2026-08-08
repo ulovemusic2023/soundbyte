@@ -68533,6 +68533,258 @@
       "price": null,
       "vram": "8B 可壓到 4GB",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260809-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Rootly 廢掉 small PR 規則：agentic AI 改寫 code review 經濟學",
+      "summary": "Incident 平台 Rootly：AI agent 產出多數程式碼後，衡量從 PR 行數改為 blast radius，靠 feature flag 與 rollback 把關。",
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "code-review",
+        "agentic"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/rootly-small-pr-agentic-ai/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/rootly-small-pr-agentic-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Computer：給 AI agent 一台持久有狀態的『電腦』",
+      "summary": "open-source runtime 讓 agent 擁有近似真電腦的持久有狀態環境，走 Cloudflare isolates，取代 ephemeral container。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "runtime",
+        "serverless"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/cloudflare-computer-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/cloudflare-computer-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 把 bot 防護從 Risk 轉為持續 Trust 評估",
+      "summary": "導入 BotBase 與 Precursor，對 agentic internet 上 bot/agent 行為做連續 Trust 評分，附 Precursor Trace 模擬。",
+      "tags": [
+        "ai-agent",
+        "agentic-internet",
+        "bot-detection",
+        "trust"
+      ],
+      "url": "https://blog.cloudflare.com/good-and-bad-agentic-behaviors/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/good-and-bad-agentic-behaviors/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Instacart Blueberry：查 incident 的 AI 助手",
+      "summary": "結合 parallel subagents、MCP 與 incident 歷史，在 Slack 產出有依據的 root cause 假設，工程師留在決策迴圈。",
+      "tags": [
+        "ai-agent",
+        "sre",
+        "incident-response",
+        "mcp",
+        "multi-agent"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/instacart-blueberry-sre-ai/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/instacart-blueberry-sre-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 合併 Workers AI 與 AI Gateway 成單一 control plane",
+      "summary": "單一控制平面提供跨自家 GPU 與外部 provider 的 observability、billing 與動態 routing，走 model-first routing。",
+      "tags": [
+        "ai-gateway-control-plane",
+        "devops",
+        "routing",
+        "ai-infra"
+      ],
+      "url": "https://blog.cloudflare.com/workers-ai-gateway-unification/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workers-ai-gateway-unification/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Azure API Management 新增專屬 AI Gateway tier",
+      "summary": "控制平面圍繞 model、MCP server 與 tool，單一 endpoint 前置 Foundry/Bedrock/Vertex/OpenAI，用 policy card 取代 XML。",
+      "tags": [
+        "ai-gateway-control-plane",
+        "mcp",
+        "devops",
+        "governance"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/azure-apim-ai-gateway-tier/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/azure-apim-ai-gateway-tier/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub 收緊 npm 與 Actions 預設值對抗供應鏈攻擊",
+      "summary": "整併 3–7 月的供應鏈防護變更，多為改預設值；HN 爭論等待期是否只是 package signing 的替代品。",
+      "tags": [
+        "supply-chain",
+        "security",
+        "npm",
+        "github-actions"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/github-npm-actions-defaults/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/github-npm-actions-defaults/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 整理 OpenAI 誤攻擊 Hugging Face 時間線",
+      "summary": "依 OpenAI 在 Black Hat 的簡報影片重建完整時間線——一個 agent 意外對外部服務造成攻擊的實例。",
+      "tags": [
+        "security",
+        "ai-agent",
+        "incident",
+        "openai"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-009",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "『Code was never the hard part』是對所有工程師的侮辱",
+      "summary": "HN 349 分：反駁『寫 code 不難、所以 AI 取代得了』，主張把工程師價值窄化成打字是誤解軟體工程的難處。",
+      "tags": [
+        "ai-coding",
+        "dev-culture",
+        "opinion"
+      ],
+      "url": "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers",
+      "source": "senko.net (HN)",
+      "sourceUrl": "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-010",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DeepMind WeatherNext 在颶風預測取得突破",
+      "summary": "Google DeepMind 的 WeatherNext 在氣旋/颶風路徑預測達成突破，以 AI model 挑戰傳統數值天氣預報。",
+      "tags": [
+        "ai-models",
+        "weather",
+        "deepmind",
+        "forecasting"
+      ],
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-011",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare AI Search：給 agent 查自家資料的搜尋引擎",
+      "summary": "指向你的資料就能建出對自家檔案與網站的搜尋供 agent 使用，免拼裝多個 primitive，並預覽新計價。",
+      "tags": [
+        "ai-agent",
+        "rag",
+        "search",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/ai-search-easier/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/ai-search-easier/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-sw-012",
+      "radar": "software-dev",
+      "date": "2026-08-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Uno Platform 6.6：Native AOT、Vulkan、更廣 MCP 支援",
+      "summary": "五平台導入 Native AOT 發佈、可選 Vulkan 渲染、MCP server 自動註冊，減少 XAML boilerplate。",
+      "tags": [
+        "dotnet",
+        "native-aot",
+        "vulkan",
+        "mcp"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/uno-platform-6-6/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/uno-platform-6-6/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-04",
