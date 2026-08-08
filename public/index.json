@@ -68379,6 +68379,65 @@
       "stars": 24,
       "createdDate": "2026-07-28",
       "license": "MIT"
+    },
+    {
+      "id": "20260808-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-08",
+      "cycle": "daily",
+      "priority": "high",
+      "title": "NVIDIA-NeMo/Speech",
+      "summary": "NeMo 主 repo 拆分後獨立出的 Speech AI 框架，專攻 ASR / TTS / Speech-LLM。近期釋出 MagpieTTS v2607（多語 TTS，含中/日/韓等 12 語）與 Nemotron-3.5-ASR-Streaming-0.6B（40 語、可控延遲 80ms–1s）。0.6B 系列權重小、單卡即可跑，適合本地語音管線。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "speech-llm"
+      ],
+      "url": "https://github.com/NVIDIA-NeMo/Speech",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "0.6B 模型單卡可跑；完整訓練需量化",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260808-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-08",
+      "cycle": "daily",
+      "priority": "low",
+      "title": "PrimeIntellect-ai/prime-agent",
+      "summary": "Prime Intellect 開源的自我改進 coding/research agent。核心是 RLM（Recursive Language Model，把 context 當變數、subagent 當函式呼叫，跑在常駐 IPython REPL）＋ Continual Harness（把 prompt/記憶/skill 存成可持續精修的狀態）。今日 GitHub Trending 第一，單日 +2,293 stars。",
+      "tags": [
+        "ai_devtools",
+        "coding-agent",
+        "rlm"
+      ],
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "harness 本身不吃 VRAM，可接本地模型",
+      "license": "MIT"
+    },
+    {
+      "id": "20260808-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-08",
+      "cycle": "daily",
+      "priority": "low",
+      "title": "lablup/all-smi",
+      "summary": "跨廠牌 GPU/NPU 監控 CLI，nvidia-smi 的多平台替代品。支援 NVIDIA / AMD / Apple Silicon / Intel Arc / Jetson / TPU / Tenstorrent / Furiosa 等，terminal UI 有 cluster overview 與遠端多節點監控，還能輸出 Prometheus metrics。Rust 寫的，brew/apt 可裝。",
+      "tags": [
+        "infra_runtime",
+        "gpu-monitoring"
+      ],
+      "url": "https://github.com/lablup/all-smi",
+      "source": "MAGI//ARCHIVE (Tom Dörr)",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/08/03/lablup-all-smi.html",
+      "price": null,
+      "vram": "監控工具，幾乎不吃 VRAM",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-04",
