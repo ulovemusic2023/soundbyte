@@ -68785,8 +68785,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260809-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-09",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "別當「肉搏代理」(meat proxy)",
+      "summary": "Niklas Gruhn 造了一個詞 meat proxy——指那些把 AI 輸出原封不動複製貼上、轉發給同事的人。用 AI 沒問題，但別只當傳聲筒：讀懂它、驗證它、再用自己的話寫出來。這份「用自己的話重寫」本身就是你真的理解了的憑證，也是你唯一能加上的價值。",
+      "tags": [
+        "ai-augmentation",
+        "knowledge-work",
+        "human-value"
+      ],
+      "url": "https://gruhn.me/blog/2026-08-03/",
+      "source": "Niklas Gruhn (via Simon Willison)",
+      "sourceUrl": "https://gruhn.me/blog/2026-08-03/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-09",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Simon Willison 談發文：把標準降低",
+      "summary": "Simon Willison 的頭號寫作建議：把標準降低，在你還對成品不滿意時就按下發布。唯一的替代方案是一個塞滿草稿、永遠不見天日的資料夾。你眼中的瑕疵，讀者根本看不到。",
+      "tags": [
+        "creator-leverage",
+        "shipping",
+        "writing"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/6/simon-willison-on-technical-blogging/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/6/simon-willison-on-technical-blogging/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260809-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-08-09",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "John Gruber：我在現場演出，不是錄錄音室專輯",
+      "summary": "Gruber 回應 Simon 的發文建議：把持續產出想成現場演出，而不是每篇都要錄成傳世專輯。追求的是專業地、連續地上台，而不是每一篇都擠進名人堂——那樣只會什麼都發不出來。",
+      "tags": [
+        "creator-leverage",
+        "consistency",
+        "writing"
+      ],
+      "url": "https://daringfireball.net/linked/2026/08/07/simon-willison-on-blogging",
+      "source": "John Gruber",
+      "sourceUrl": "https://daringfireball.net/linked/2026/08/07/simon-willison-on-blogging",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-04",
+  "lastUpdated": "2026-08-09",
   "updatedAt": "2026-08-03T21:31:00Z"
 }
