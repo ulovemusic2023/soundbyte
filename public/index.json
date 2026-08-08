@@ -68845,8 +68845,228 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260809-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "firecrawl/anydoc",
+      "summary": "Firecrawl 出的文件轉檔工具：Word/PPT/Excel/PDF 等一次轉成乾淨 Markdown，Rust 寫、附 Node/Python bindings。",
+      "tags": [
+        "data-content",
+        "coding-tools",
+        "markdown"
+      ],
+      "url": "https://github.com/firecrawl/anydoc",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 12046,
+      "createdDate": "2026-08-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "QwenAudio/qwen-audio-agent",
+      "summary": "Qwen 的 realtime voice runtime，讓 AI agent 即時聽說、邊工作邊對話。",
+      "tags": [
+        "audio-voice",
+        "ai-agent",
+        "realtime"
+      ],
+      "url": "https://github.com/QwenAudio/qwen-audio-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1990,
+      "createdDate": "2026-07-27",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260809-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "petergyang/human-review",
+      "summary": "視覺化編輯 HTML/Markdown、像 Google Doc 留 comment，再把回饋送回 AI agent，塞進任何 harness。",
+      "tags": [
+        "ai-agent",
+        "coding-tools",
+        "claude-code"
+      ],
+      "url": "https://github.com/petergyang/human-review",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 619,
+      "createdDate": "2026-07-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "KKKKhazix/human-writing",
+      "summary": "讓 AI 寫的中文像真人在說話的通用創作/改稿 Skill，開箱即用。",
+      "tags": [
+        "ai-agent",
+        "content",
+        "skill"
+      ],
+      "url": "https://github.com/KKKKhazix/human-writing",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1983,
+      "createdDate": "2026-08-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "cristicretu/diri",
+      "summary": "macOS 原生 coding agent 編排器：git worktree/遠端主機並行跑 Claude Code/Codex/Cursor/Gemini。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "mcp"
+      ],
+      "url": "https://github.com/cristicretu/diri",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 226,
+      "createdDate": "2026-08-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260809-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "AMAP-ML/LongHorizon-Harness",
+      "summary": "長時程 computer-use harness，跨桌面 app/CLI 長時間執行並保留狀態，原生支援 Claude Code/Codex/OpenClaw。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "computer-use",
+        "openclaw"
+      ],
+      "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 410,
+      "createdDate": "2026-08-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "Anionex/agent-vision-toolkit",
+      "summary": "給純文字模型看圖的視覺工具箱/Skill：多圖理解、前端 UI 還原、GUI 自動化，接 Codex/Claude Code/OpenCode。",
+      "tags": [
+        "ai-agent",
+        "coding-tools",
+        "vision"
+      ],
+      "url": "https://github.com/Anionex/agent-vision-toolkit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 359,
+      "createdDate": "2026-08-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "notivn/AIEV",
+      "summary": "自動 AI 影片剪輯：Claude 指揮 HyperFrames+Remotion，逐字稿/動態字幕/卡拉OK字幕/音效全包，自架。",
+      "tags": [
+        "audio-voice",
+        "video",
+        "creator-tool"
+      ],
+      "url": "https://github.com/notivn/AIEV",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 77,
+      "createdDate": "2026-07-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "guillermolg00/morphicons",
+      "summary": "任何 icon 變形成另一個 icon，stroke-based 通用 morphing + spring 物理，零依賴約 7KB。",
+      "tags": [
+        "web-fullstack",
+        "frontend",
+        "animation"
+      ],
+      "url": "https://github.com/guillermolg00/morphicons",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 893,
+      "createdDate": "2026-08-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "drpwchen/lecture-to-notes",
+      "summary": "演講錄影轉結構化筆記+同步 HTML viewer，本地 GPU pipeline（Whisper+OCR+VLM），Claude Code skill/CLI。",
+      "tags": [
+        "audio-voice",
+        "data-content",
+        "transcription"
+      ],
+      "url": "https://github.com/drpwchen/lecture-to-notes",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 91,
+      "createdDate": "2026-08-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260809-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-08-09",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "genspark-ai/genoffice",
+      "summary": "GenSpark 的 AI-native office suite（mac/Win）：文書/試算表/簡報/PDF 全包。",
+      "tags": [
+        "productivity",
+        "ai-agent"
+      ],
+      "url": "https://github.com/genspark-ai/genoffice",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 2249,
+      "createdDate": "2026-07-31",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-09",
-  "updatedAt": "2026-08-03T21:31:00Z"
+  "updatedAt": "2026-08-09T05:40:00+08:00"
 }
