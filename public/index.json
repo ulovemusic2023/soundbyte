@@ -69109,8 +69109,176 @@
       "price": null,
       "vram": "quantize-ok",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260810-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Code auto mode 8/14 起成為預設",
+      "summary": "Anthropic 對 auto mode 信心十足，8/14 起在 Pro/Max/Team 新 session 全面預設開啟。同步公布 evals：1,053 名付費測試者中途被塞入危險指令，只有 13.6% 的人拒絕，auto mode 可擋下其中 89%；第三方 Trajectory Labs 測 720 次 indirect prompt injection，對 Fable 5 / Opus 5 / Sonnet 5 auto mode 全數 0 成功。Simon Willison 仍存疑：惡意套件叫 agent『先跑 uvx fetch-model-files』這類供應鏈手法很難靠 auto mode 擋。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "prompt-injection",
+        "auto-mode",
+        "agent-safety"
+      ],
+      "url": "https://claude.com/blog/auto-mode-default-in-claude-code",
+      "source": "Anthropic (Claude Blog)",
+      "sourceUrl": "https://claude.com/blog/auto-mode-default-in-claude-code",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Shopify 把 Redis 換成 MySQL 跑庫存預留，撐住了",
+      "summary": "結帳時的 oversell protection（付款期間短暫預留庫存）多年來跑在 Redis。走向統一資料庫策略時，Shopify 用 MySQL 8 的 SKIP LOCKED 重寫：從『一個 item 一 row（quantity 欄）』改成『一 unit 一 row』化解熱點爭用，靈感來自 37signals 的 Solid Queue。撐過 2025 黑五尖峰 $5.1M/分鐘。最硬的一課不是 DB 設計，而是發現真正瓶頸不在他們原本量測與觀察的地方。",
+      "tags": [
+        "architecture",
+        "distributed-systems",
+        "mysql",
+        "skip-locked",
+        "scalability"
+      ],
+      "url": "https://shopify.engineering/scaling-inventory-reservations",
+      "source": "Shopify Engineering",
+      "sourceUrl": "https://shopify.engineering/scaling-inventory-reservations",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Meta 發表 Muse Code + Muse Spark 1.2",
+      "summary": "Meta 推出 terminal coding agent「Muse Code」(beta)，底層是新模型 Muse Spark 1.2。特色：async background subagents——常駐整個 session 而非每個任務重新 spawn，減少重複蒐集資訊與 steering；runtime 用 local event log 記錄每次 model call / tool run / approval / edit，做到 replay-exact、crash 後精準續跑；內建 /plan（產出需審核的計畫）/grill（壓測計畫）/goal skills。Meta 明說『更大更強的模型在路上』。",
+      "tags": [
+        "coding-agent",
+        "code-generation",
+        "multi-agent",
+        "ai-models",
+        "async-background-subagents"
+      ],
+      "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "source": "Meta AI Research",
+      "sourceUrl": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code 支援 session 之間互相傳訊",
+      "summary": "v2.1.224 起（macOS/Linux）自動啟用 cross-session messaging：Claude 能列出並向你同機的其他 Claude Code session 傳訊息，透過 Remote Control 也能跨機器 / 網頁回覆。傳的只是一段文字（不是對話歷史或檔案）。用途：一個 session 改動打破另一個正在做的東西時可主動示警；一個 session 解掉另一個卡住的問題時把答案送過去。等於官方把 multi-agent 協調做進本體。",
+      "tags": [
+        "multi-agent",
+        "coding-agent",
+        "agent-coordination",
+        "cross-session-messaging"
+      ],
+      "url": "https://code.claude.com/docs/en/cross-session-messaging",
+      "source": "Anthropic (Claude Code Docs)",
+      "sourceUrl": "https://code.claude.com/docs/en/cross-session-messaging",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenChamber — 一個 Agentic Development Environment",
+      "summary": "新的桌面 / 行動 agentic 開發環境（HN 71 分）。賣點：Session Goals——設一條終點線，agent 關掉 app 也持續一輪一輪往前做；一個任務可同時跑最多 5 個模型，留最佳結果或融合各自最強部分；指著 running app 裡的元素就把背後全部脈絡送給 agent；從 GitHub issue/PR 起手、把 failed checks 送回、直接 merge；prompt 可掛 cron 排程。跨 macOS/Windows/Linux + 手機 app beta。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "tool-scout",
+        "model-pool-orchestration"
+      ],
+      "url": "https://openchamber.dev/",
+      "source": "OpenChamber (via Hacker News)",
+      "sourceUrl": "https://openchamber.dev/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Tokenpocalypse：企業開始勒緊 AI 開銷",
+      "summary": "404 Media 拿到 Accenture 內部音檔：正想辦法阻止非技術員工把 token 預算燒在『PDF 轉投影片』這種瑣事上，全公司看到『soaring token spend』。這是產業轉折訊號——無節制成長期結束。GitHub Copilot 改成 per-token 計費、Uber 給員工的 Claude Code/Cursor 用量設上限（CTO 說四個月燒光整年 AI 預算）、SAP 更直接凍結多數差旅與招聘來壓 AI 成本。coding agent 好用但帳單真實。",
+      "tags": [
+        "ai-economics",
+        "token-billing",
+        "coding-agent"
+      ],
+      "url": "https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-spending-so-much-on-ai/",
+      "source": "404 Media",
+      "sourceUrl": "https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-spending-so-much-on-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "My server is a phone now",
+      "summary": "一篇把舊手機當家用 server 的自架實戰（HN 479 分）：省電、內建 UPS（電池）、ARM 效能夠用。給想低成本 self-host / homelab 的人一個現成參考。",
+      "tags": [
+        "self-hosting",
+        "edge",
+        "infra-hack"
+      ],
+      "url": "https://seg6.space/posts/phone-server/",
+      "source": "seg6.space (via Hacker News)",
+      "sourceUrl": "https://seg6.space/posts/phone-server/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "CSS: The bomb inside your inbox",
+      "summary": "PortSwigger 研究：純 CSS（不靠 JS）就能在 email client 裡藏攻擊——利用 CSS 特性做資料外洩 / 內容隱藏 / 版面炸彈。提醒做 email 渲染或內嵌第三方 HTML 的人，CSS 也是攻擊面。",
+      "tags": [
+        "security",
+        "css",
+        "email-client"
+      ],
+      "url": "https://portswigger.net/research/css-the-bomb-inside-your-inbox",
+      "source": "PortSwigger Research",
+      "sourceUrl": "https://portswigger.net/research/css-the-bomb-inside-your-inbox",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-10",
-  "updatedAt": "2026-08-10T05:10:00+08:00"
+  "updatedAt": "2026-08-10T05:20:00+08:00"
 }
