@@ -69065,8 +69065,52 @@
       "stars": 2249,
       "createdDate": "2026-07-31",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260810-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "eduardolat/kokoro-web",
+      "summary": "瀏覽器版 AI TTS，跑 Apache 授權的 Kokoro-82M（僅 82M 參數），可直接用 WebGPU 在瀏覽器生成，也能自架成 OpenAI TTS API 的 drop-in replacement（Docker 一行起）。TTS Arena 排名僅次於 ElevenLabs。",
+      "tags": [
+        "tts_speech",
+        "text-to-speech",
+        "kokoro",
+        "webgpu",
+        "openai-compatible"
+      ],
+      "url": "https://github.com/eduardolat/kokoro-web",
+      "source": "MAGI//ARCHIVE (Tom Dörr)",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/08/06/eduardolat-kokoro-web.html",
+      "price": null,
+      "vram": "local-ready（82M）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260810-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "vladmandic/sdnext",
+      "summary": "SD.Next：全能型 image/video 生成 WebUI，整合 caption、處理與多模型工作流，A1111 血統但持續維護，約 7.3k stars。16GB VRAM 跑 SDXL OK，Flux 需量化/offload。",
+      "tags": [
+        "image_gen",
+        "stable-diffusion",
+        "sdxl",
+        "flux",
+        "webui"
+      ],
+      "url": "https://github.com/vladmandic/sdnext",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-08-09",
-  "updatedAt": "2026-08-09T05:40:00+08:00"
+  "lastUpdated": "2026-08-10",
+  "updatedAt": "2026-08-10T05:10:00+08:00"
 }
