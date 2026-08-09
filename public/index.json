@@ -69337,6 +69337,206 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260810-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "Accio-org/RealReplicaBench",
+      "summary": "RealReplicaBench：把真實線上服務做成高保真、有狀態、可重現的沙盒副本，用來 benchmark long-horizon agent。",
+      "tags": [
+        "ai-agent",
+        "benchmark",
+        "agent-harness"
+      ],
+      "url": "https://github.com/Accio-org/RealReplicaBench",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1042,
+      "createdDate": "2026-08-02",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260810-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "ShawnPana/phone-harness",
+      "summary": "讓 AI agent 直接操控手機，computer-use 延伸到 mobile。",
+      "tags": [
+        "ai-agent",
+        "computer-use",
+        "automation"
+      ],
+      "url": "https://github.com/ShawnPana/phone-harness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 782,
+      "createdDate": "2026-08-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260810-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "Sateezg/codex-bridge",
+      "summary": "用既有 Codex CLI 登入，在 Claude Code 裡叫 gpt-image-2 生圖 + GPT-5 subagent，免 OpenAI API key。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "coding-agent"
+      ],
+      "url": "https://github.com/Sateezg/codex-bridge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 335,
+      "createdDate": "2026-08-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260810-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "memorax-ai/memorax-code",
+      "summary": "AI coding 的 memory plugin，把工程經驗與 repo 知識沉澱成跨任務可複用記憶。",
+      "tags": [
+        "ai-coding",
+        "memory",
+        "coding-agent"
+      ],
+      "url": "https://github.com/memorax-ai/memorax-code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 142,
+      "createdDate": "2026-08-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260810-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "oliverb-io1902e8/agent-skills-collection",
+      "summary": "一包 curated、模組化的 agent skills（SKILL.md），可直接掛給 LLM agent。",
+      "tags": [
+        "agent-skill",
+        "skills.md",
+        "ai-agent"
+      ],
+      "url": "https://github.com/oliverb-io1902e8/agent-skills-collection",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 134,
+      "createdDate": "2026-08-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260810-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "dondai44423/bladebro",
+      "summary": "給 AI 用的 agentic browser driver：工具少、控制完整、真 stealth、token 效率頂級。",
+      "tags": [
+        "browser-agent",
+        "automation",
+        "ai-agent"
+      ],
+      "url": "https://github.com/dondai44423/bladebro",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 85,
+      "createdDate": "2026-07-28",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260810-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "wanmol/goal-flow",
+      "summary": "建在 LangGraph 上的 Graph-Orchestrated Agent Loop，可把 Dify DSL transpile 成可跑 code。",
+      "tags": [
+        "agent-orchestration",
+        "langgraph",
+        "framework"
+      ],
+      "url": "https://github.com/wanmol/goal-flow",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 72,
+      "createdDate": "2026-08-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260810-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "SaladDay/pi-from-scratch",
+      "summary": "600 行 TypeScript 從零寫出迷你版 pi agent，理解 coding agent harness 的教材。",
+      "tags": [
+        "coding-agent",
+        "agent-harness",
+        "educational"
+      ],
+      "url": "https://github.com/SaladDay/pi-from-scratch",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 58,
+      "createdDate": "2026-08-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260810-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "abluva/mcp-remote",
+      "summary": "remote MCP 橋接層：OAuth 一把搞定、auth 斷線自癒，production-grade 可靠度。",
+      "tags": [
+        "mcp",
+        "oauth",
+        "infra"
+      ],
+      "url": "https://github.com/abluva/mcp-remote",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 50,
+      "createdDate": "2026-07-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260810-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-10",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "lennney/mcp-slim-guard",
+      "summary": "MCP 的 context 壓縮層：同一 upstream call、結果可精確還原，縮小 context 佔用。",
+      "tags": [
+        "mcp",
+        "context-compression",
+        "coding-agent"
+      ],
+      "url": "https://github.com/lennney/mcp-slim-guard",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 46,
+      "createdDate": "2026-07-31",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-10",
