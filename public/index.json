@@ -69277,8 +69277,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260810-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-10",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "DHH：Agent 時代帶來「無盡的執行力」",
+      "summary": "DHH 說 agent 讓每個念頭、每個直覺、每個實驗都能立即動手做——瓶頸從「執行」徹底移到「想像力」。對點子多的人這是天堂：以前卡在做不完，現在卡在敢不敢想。他四十年來玩電腦最爽的一刻，是能把腦中每個閃過的念頭都執行出來的那種解放感。",
+      "tags": [
+        "ai-native",
+        "agentic",
+        "leverage"
+      ],
+      "url": "https://world.hey.com/dhh/endless-execution-4157e065",
+      "source": "David Heinemeier Hansson (DHH)",
+      "sourceUrl": "https://world.hey.com/dhh/endless-execution-4157e065",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-10",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "「人類逐一核准」是安全劇場：確認疲勞才是真風險",
+      "summary": "Anthropic 8/14 起把 Claude Code 的 auto mode 設為預設。理由來自一個殘酷實驗：1,053 名付費測試者中途被塞一個明顯危險的指令，只有 13.6% 的人拒絕，其餘全部照按。啟示：要求人每幾步點一次 OK 不會帶來安全，只會製造確認疲勞。Simon Willison 認同 auto mode 勝過人肉把關，但對 prompt injection 是否真被解決仍保留態度。",
+      "tags": [
+        "human-in-the-loop",
+        "ai-safety",
+        "delegation"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/",
+      "source": "Simon Willison / Anthropic",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/8/auto-mode/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260810-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-08-10",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "寫作像現場演出，不是錄音室專輯",
+      "summary": "John Gruber 回應 Simon Willison 的部落格心法：他寫每篇貼文是用現場演出的心態，而不是錄音室專輯。認真、專注、盡量每個音都準，但重點是不斷從一首歌流動到下一首——如果每篇都想進名人堂，就永遠發不出東西。對做內容的人是解藥。",
+      "tags": [
+        "creator-economy",
+        "content-leverage",
+        "shipping"
+      ],
+      "url": "https://daringfireball.net/linked/2026/08/07/simon-willison-on-blogging",
+      "source": "John Gruber (Daring Fireball)",
+      "sourceUrl": "https://daringfireball.net/linked/2026/08/07/simon-willison-on-blogging",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-10",
-  "updatedAt": "2026-08-10T05:20:00+08:00"
+  "updatedAt": "2026-08-10T21:31:00Z"
 }
