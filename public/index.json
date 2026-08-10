@@ -69721,6 +69721,246 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260811-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "QwenLM/Qwen-MM-Plugins",
+      "summary": "Qwen 團隊的外掛，讓任何 agent harness 變成 multimodal-native，純文字模型也能吃圖／影音。",
+      "tags": [
+        "ai-agent",
+        "multimodal",
+        "agent-harness"
+      ],
+      "url": "https://github.com/QwenLM/Qwen-MM-Plugins",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-07-28+stars:%3E50",
+      "stars": 1040,
+      "createdDate": "2026-07-29",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260811-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "oil-oil/oil-motion",
+      "summary": "零依賴 web 動畫庫，主打順滑、可響應的互動動畫，一週衝到 1k+ star。",
+      "tags": [
+        "web",
+        "animation",
+        "frontend"
+      ],
+      "url": "https://github.com/oil-oil/oil-motion",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-07-28+stars:%3E50",
+      "stars": 1142,
+      "createdDate": "2026-08-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260811-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "alexgreensh/attention-span",
+      "summary": "Claude Code 的 output style 套件，ADHD-friendly、講人話、少燒 token。",
+      "tags": [
+        "claude-code",
+        "output-style",
+        "productivity"
+      ],
+      "url": "https://github.com/alexgreensh/attention-span",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 207,
+      "createdDate": "2026-08-04",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260811-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "huangruiteng/loopx",
+      "summary": "長時間運行 agent 團隊的迴圈引擎狀態核心：durable goals、配額感知自動喚醒、可執行 todo、可驗證交接，跨 Codex/Claude Code。本週 +3518★。",
+      "tags": [
+        "ai-agent",
+        "orchestration",
+        "long-running"
+      ],
+      "url": "https://github.com/huangruiteng/loopx",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 3937,
+      "createdDate": "2026-05-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260811-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "CopilotKit/channels-sdk",
+      "summary": "把任何 agent 接到任何聊天平台的 SDK：Slack/MS Teams/Discord/Telegram，帶原生互動 UI。",
+      "tags": [
+        "agent",
+        "channels",
+        "telegram"
+      ],
+      "url": "https://github.com/CopilotKit/channels-sdk",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49198583",
+      "stars": 820,
+      "createdDate": "2026-07-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260811-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "zzet/gortex",
+      "summary": "給 AI agent 的高效 code-intelligence 引擎，257 語言、多 repo、graph-based，CLI/MCP/API，省 token 最多 50x，100% 本地。",
+      "tags": [
+        "mcp",
+        "code-intelligence",
+        "local"
+      ],
+      "url": "https://github.com/zzet/gortex",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 1119,
+      "createdDate": "2026-04-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260811-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "AntigmaLabs/ante",
+      "summary": "自帶核心、無外部依賴的 agent harness，像 Claude Code/Codex 但不綁模型、可離線單一 binary。HN 112 分。",
+      "tags": [
+        "coding-agent",
+        "offline",
+        "harness"
+      ],
+      "url": "https://github.com/AntigmaLabs/ante",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49245437",
+      "stars": 938,
+      "createdDate": "2025-12-23",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260811-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "mindmuxai/brain.md",
+      "summary": "給 coding agent 的持久記憶層，把決策/需求/限制寫成 repo 內 Markdown，零依賴 CLI，Claude Code/Codex 通用。",
+      "tags": [
+        "memory",
+        "coding-agent",
+        "markdown"
+      ],
+      "url": "https://github.com/mindmuxai/brain.md",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 422,
+      "createdDate": "2026-06-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260811-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "statewright/statewright",
+      "summary": "用狀態機當 agent 護欄：定義每階段可用工具，跨 Claude Code/Codex/Cursor/opencode/Pi 擋掉不該用的工具呼叫。",
+      "tags": [
+        "agent",
+        "guardrails",
+        "reliability"
+      ],
+      "url": "https://github.com/statewright/statewright",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 484,
+      "createdDate": "2026-05-03",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260811-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "Agent-Field/pr-af",
+      "summary": "自稱 Code-Review-Bench 第一名的開源 code reviewer，Go 寫。",
+      "tags": [
+        "code-review",
+        "ci",
+        "agent"
+      ],
+      "url": "https://github.com/Agent-Field/pr-af",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 452,
+      "createdDate": "2026-03-11",
+      "license": "none"
+    },
+    {
+      "id": "20260811-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "pingdotgg/t3code",
+      "summary": "Theo (t3.gg) 的終端 coding 工具，本週續強，TypeScript 生態值得看工作流設計。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "typescript"
+      ],
+      "url": "https://github.com/pingdotgg/t3code",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 17991,
+      "createdDate": "2026-02-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260811-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "google/skills",
+      "summary": "Google 官方 Agent Skills 集合，對應各 Google 產品/技術。Skills 生態進入大廠標配。",
+      "tags": [
+        "agent-skill",
+        "google",
+        "ecosystem"
+      ],
+      "url": "https://github.com/google/skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 17586,
+      "createdDate": "2026-03-31",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-11",
