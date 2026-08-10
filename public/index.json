@@ -69537,8 +69537,68 @@
       "stars": 46,
       "createdDate": "2026-07-31",
       "license": "MIT"
+    },
+    {
+      "id": "20260811-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "th1nhhdk/local_ai_ocr",
+      "summary": "把 DeepSeek-OCR-2 包成離線桌面 OCR：weights 6.67GB、最低 8GB VRAM 就能跑，圖片與 PDF 都吃，支援中英日越多語，輸出保留表格排版的 Markdown 並可直接匯出 .docx。初次設定後完全離線、不外連。",
+      "tags": [
+        "cv_ocr",
+        "llm_inference",
+        "local-inference"
+      ],
+      "url": "https://github.com/th1nhhdk/local_ai_ocr",
+      "source": "GitHub / MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/th1nhhdk/local_ai_ocr",
+      "price": null,
+      "vram": "6.67GB weights / 最低 8GB VRAM",
+      "license": "未標示"
+    },
+    {
+      "id": "20260811-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Haervwe/open-webui-tools",
+      "summary": "Open WebUI 的模組化工具包，20+ 個 tool/pipe/filter：把 ACE-Step 1.5 音樂生成、ComfyUI 圖生圖、text-to-video、多 agent 對話、Planner Agent 全接進同一介面，把本地 Ollama+ComfyUI 疊成 AI workstation。",
+      "tags": [
+        "audio_music_ai",
+        "image_gen",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/Haervwe/open-webui-tools",
+      "source": "GitHub Topics: music-generation",
+      "sourceUrl": "https://github.com/Haervwe/open-webui-tools",
+      "price": null,
+      "vram": "視後端而定（Ollama/ComfyUI）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260811-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "neuml/txtai",
+      "summary": "All-in-one AI framework，主打語意搜尋 + LLM orchestration + embedding workflow，內建向量索引與 RAG pipeline，單一套件就能起本地知識庫後端。近期又衝上 GitHub trending。",
+      "tags": [
+        "rag_knowledge",
+        "embedding",
+        "semantic-search"
+      ],
+      "url": "https://github.com/neuml/txtai",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/neuml/txtai",
+      "price": null,
+      "vram": "embedding model 小，CPU/GPU 皆可",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-08-10",
-  "updatedAt": "2026-08-10T21:31:00Z"
+  "lastUpdated": "2026-08-11",
+  "updatedAt": "2026-08-11T05:10:00+08:00"
 }
