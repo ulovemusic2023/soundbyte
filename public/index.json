@@ -69681,6 +69681,46 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260811-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-11",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly — 下一個 AI 典範是「空間智能」與世界模型",
+      "summary": "LLM 成功是因為語言早被數位化；世界模型的瓶頸不是演算法，而是『現實的數位化資料』根本不存在。誰能大規模收集高品質真實世界資料，誰就握住下一波入口。",
+      "tags": [
+        "ai-future",
+        "world-models",
+        "paradigm-shift"
+      ],
+      "url": "https://kk.org/thetechnium/worldbuilding-with-spatial-intelligence/",
+      "source": "Kevin Kelly (The Technium)",
+      "sourceUrl": "https://kk.org/thetechnium/worldbuilding-with-spatial-intelligence/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260811-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-11",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Steve Yegge — 把工具緊耦合在單一模型版本上是脆弱的",
+      "summary": "Gas Town 在 Opus 4.7 因模型『再多做兩件事』的 tic 無法收斂而燒毀。教訓：在前沿模型上蓋東西，別把地基押在某一版模型的行為上。",
+      "tags": [
+        "ai-coding",
+        "agents",
+        "model-dependency"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/4/steve-yegge/",
+      "source": "Steve Yegge (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/4/steve-yegge/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-11",
