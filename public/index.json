@@ -69597,6 +69597,90 @@
       "price": null,
       "vram": "embedding model 小，CPU/GPU 皆可",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260811-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 為未上市的 next major model『Astra』踩煞車——首個觸及 Critical cyber 等級",
+      "summary": "OpenAI 8/7 slow/pause 開發中的 Astra：首個在 Preparedness Framework 觸及『Critical』cybersecurity 等級的 OpenAI 模型，能自主找出並攻擊防護良好的真實系統。8/1 才用 10 個未解數學題預告，一週後即因 cyber 能力太危險加嚴 security controls。frontier 廠首次為未上市模型公開喊停。",
+      "tags": [
+        "paradigm-shift",
+        "ai-safety",
+        "cybersecurity",
+        "critical-cyber-threshold"
+      ],
+      "url": "https://openai.com/index/ten-advances-in-mathematics/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260811-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "paradigm-shift",
+      "title": "Prime Intellect 開源 Prime Agent：RLM + Continual Harness 的自我改進 harness",
+      "summary": "MIT 開源。RLM(Recursive Language Model)把 context 當變數、subagent 當 REPL function call；Continual Harness 讓 agent 對自己的 prompt/skill/memory/subagent 做 CRUD，反覆失敗靠 /refine 自動改自己。唯一工具是持久 IPython kernel。ARC-AGI-3 95.5% 越過人類專家 95.4%，增益全來自 harness scaffolding 而非模型。",
+      "tags": [
+        "paradigm-shift",
+        "harness-engineering",
+        "recursive-language-model",
+        "continual-harness",
+        "open-source"
+      ],
+      "url": "https://www.primeintellect.ai/blog/prime-agent",
+      "source": "Prime Intellect",
+      "sourceUrl": "https://www.primeintellect.ai/blog/prime-agent",
+      "price": null,
+      "vram": null,
+      "license": "MIT"
+    },
+    {
+      "id": "20260811-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "high",
+      "title": "Cloudflare 開源可 self-host 的 agent 平台 Cloudflare OS",
+      "summary": "8/5 開源、可部署進自家帳號。把 agent 綁進公司 context/術語/流程，附 Agent Workspace＋共享 skills library。安全核心 Gatekeepers 夾在 agent 與外部服務間，能限只讀單 repo、遮敏感欄位、限流、merge 前需核准；server code 跑在關外網的 Dynamic Workers、client 在 sandbox frame。",
+      "tags": [
+        "agent-infra",
+        "zero-trust",
+        "self-hostable-agent-os",
+        "open-source"
+      ],
+      "url": "https://blog.cloudflare.com/cloudflare-os/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/cloudflare-os/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260811-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-11",
+      "cycle": "daily",
+      "priority": "low",
+      "title": "Simon Willison：用 SQLite BLOB + Zstd 存壓縮版本歷史的 prototype",
+      "summary": "把文件所有歷史版本壓成一個 JSON array 塞進 SQLite BLOB(Zstd)，而非每改動存一 row。1000 次修訂原始 20.4MB 壓到 80.3KB；為免每次編輯全解壓，每段最多 128 版或 3MB 分多 row。給需完整版本追蹤的 app 超省空間作法。",
+      "tags": [
+        "sqlite",
+        "compression",
+        "versioning"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-11",
