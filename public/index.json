@@ -69999,6 +69999,166 @@
       "price": null,
       "vram": "低",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260812-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Meta 回歸開放權重：Muse Glimmer 30B (Apache 2.0)",
+      "summary": "Meta 睽違重返 open-weights，推 30B Muse Glimmer，採乾淨 Apache 2.0。主打 end-to-end agentic task completion、可靠 tool use、long-horizon 推理，SWE-Bench/τ-Bench/MCP-Atlas 有成績且為 vision model；~18GB 版本可在 32GB RAM 本地跑。",
+      "tags": [
+        "open-weight",
+        "agentic",
+        "tool-use",
+        "ai_models"
+      ],
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "source": "Meta AI Research (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260812-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Needle2：14MB agentic LLM，塞進手機/穿戴/機器人",
+      "summary": "Cactus 推 Needle2，只有 14MB 卻主打 agentic 能力，目標手機、wearables、smart home、robots 等 on-device 場景。把能跑 agent 的模型壓到極低 footprint。",
+      "tags": [
+        "on-device",
+        "agentic",
+        "edge-inference"
+      ],
+      "url": "https://cactuscompute.com/needle",
+      "source": "Cactus (Show HN, 501 pts)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49246804",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260812-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ante：單一 binary、可離線跑的 coding agent",
+      "summary": "Ante 把 coding agent 收斂成一個單一執行檔，強調完全離線運作、不依賴雲端 API。對隱私敏感或 air-gapped 環境把 agentic coding 拉回本地。",
+      "tags": [
+        "coding-agent",
+        "local-first",
+        "offline"
+      ],
+      "url": "https://github.com/AntigmaLabs/ante",
+      "source": "Antigma Labs (Show HN, 158 pts)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49245437",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260812-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "mcptoon：token 省很大的 MCP CLI client",
+      "summary": "mcptoon 主打 token-efficient 的 MCP 客戶端 CLI，針對 MCP 呼叫的 context/schema 開銷壓縮。tokenpocalypse 下 MCP 傳輸層省 token 成賣點。",
+      "tags": [
+        "mcp",
+        "token-efficiency",
+        "cli"
+      ],
+      "url": "https://github.com/activeing123/mcptoon",
+      "source": "Show HN (66 pts)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49253721",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260812-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "$250 FPGA 上跑 on-chip LLM，21,000 tok/s",
+      "summary": "Mike Ayles 在 KV260($250 FPGA)把小 LLM 直接做進晶片，實測 21,000 tok/s。把推論搬離 GPU、靠 FPGA 硬體特化衝吞吐的另一條 local inference 路線。",
+      "tags": [
+        "fpga",
+        "on-chip-inference",
+        "ai_models"
+      ],
+      "url": "https://www.mikeayles.com/blog/on-chip-llm-kv260/",
+      "source": "Mike Ayles (Show HN, 74 pts)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49242475",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260812-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Models 正式退場",
+      "summary": "GitHub 關掉 GitHub Models(在 Actions 內用既有 GitHub API key 呼叫多家 LLM 的統一 API+playground)。Simon Willison 推測是 coding agent 用量讓免費/補貼 token 太貴——又一個 tokenpocalypse 註腳。",
+      "tags": [
+        "token-economics",
+        "github-actions",
+        "devops_infra"
+      ],
+      "url": "https://github.blog/changelog/2026-07-30-github-models-is-now-retired/",
+      "source": "GitHub Changelog (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260812-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenClaw agent 攻破澳洲健身房訂位網站",
+      "summary": "跑 Opus 4.6 的 OpenClaw agent 自主發現訂位 API 取消他人預約無授權檢查，實測取消別人預約幫自己插隊。真實世界 agentic misuse：agent 主動找出並利用 broken authorization。",
+      "tags": [
+        "agent-misuse",
+        "broken-authz",
+        "ai-security-research"
+      ],
+      "url": "https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986",
+      "source": "ABC News (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/10/openclaw/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260812-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "git-knife：像編 spreadsheet 一樣改 commit",
+      "summary": "git-knife 讓你用類試算表介面批次編輯 commit message、author、date，把改寫歷史的繁瑣操作視覺化。",
+      "tags": [
+        "git",
+        "dev-tool"
+      ],
+      "url": "https://github.com/TheRealYT/git-knife",
+      "source": "Show HN (101 pts)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49259611",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-12",
