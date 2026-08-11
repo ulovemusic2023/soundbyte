@@ -69961,8 +69961,46 @@
       "stars": 17586,
       "createdDate": "2026-03-31",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260812-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiquidAI/LFM2.5-2.6B",
+      "summary": "Liquid 新一代 on-device 混合模型：2.69B 參數、128K context、agentic 後訓練。官方稱 tool use / 多步 agent 任務可打贏 4× 大的模型，<2.5GB 記憶體、Ryzen CPU 上 113 tok/s。附 GGUF / ONNX / MLX 版本。純文字模型，不建議拿來寫 code。",
+      "tags": [
+        "llm_inference",
+        "llm_training"
+      ],
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "<2.5GB",
+      "license": "LFM Open License"
+    },
+    {
+      "id": "20260812-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ultralytics/inference",
+      "summary": "純 Rust 寫的 YOLO 推理庫，走 ONNX Runtime，API 對齊 Ultralytics Python 版。支援 YOLOv8/11/26，backends 含 CUDA / TensorRT / OpenVINO / WebGPU，不需要 PyTorch / Python runtime，單一 binary + CLI。輕量 CV 部署適用。",
+      "tags": [
+        "cv_ocr",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/ultralytics/inference",
+      "source": "MAGI//ARCHIVE + GitHub Topics",
+      "sourceUrl": "https://github.com/ultralytics/inference",
+      "price": null,
+      "vram": "低",
+      "license": "AGPL-3.0"
     }
   ],
-  "lastUpdated": "2026-08-11",
-  "updatedAt": "2026-08-11T05:10:00+08:00"
+  "lastUpdated": "2026-08-12",
+  "updatedAt": "2026-08-12T05:10:00+08:00"
 }
