@@ -70181,6 +70181,249 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260812-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "cloudflare/computer",
+      "summary": "Cloudflare 出的「給 agent 一台電腦」——Workers 邊緣沙盒裡跑完整運算環境，agent 可執行程式碼、開瀏覽器、操作檔案系統，全隔離。",
+      "tags": [
+        "ai-agent",
+        "sandbox",
+        "computer-use"
+      ],
+      "url": "https://github.com/cloudflare/computer",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 7576,
+      "createdDate": "2026-08-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "antirez/h3.c",
+      "summary": "antirez（Redis 作者）手寫的 MiniMax H3 推論引擎，純 C、專為 Mac 優化。乾淨 inference 程式碼範例。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "mac"
+      ],
+      "url": "https://github.com/antirez/h3.c",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+stars:>50",
+      "stars": 1197,
+      "createdDate": "2026-08-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "jd-opensource/JoyAI-Video-Edit",
+      "summary": "JD 官方即時開放式影片編輯，用 autoregressive diffusion 做 real-time editing。",
+      "tags": [
+        "video-editing",
+        "diffusion",
+        "creator-tool"
+      ],
+      "url": "https://github.com/jd-opensource/JoyAI-Video-Edit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+stars:>50",
+      "stars": 821,
+      "createdDate": "2026-08-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260812-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "s1dashu/director",
+      "summary": "多模式 workflow（research→腳本→視覺開發）指揮 AI 產出完整影片，從企劃到成片一條龍。",
+      "tags": [
+        "video-generation",
+        "workflow",
+        "agent"
+      ],
+      "url": "https://github.com/s1dashu/director",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+stars:>50",
+      "stars": 644,
+      "createdDate": "2026-07-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "callebtc/sayit",
+      "summary": "Apple Silicon Mac 上的本機 TTS，隱私優先、離線可跑。",
+      "tags": [
+        "tts",
+        "audio",
+        "on-device",
+        "mac"
+      ],
+      "url": "https://github.com/callebtc/sayit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+topic:text-to-speech",
+      "stars": 77,
+      "createdDate": "2026-07-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "hamzarehmandeveloper/claude-account",
+      "summary": "在 Linux/macOS 上切換多個隔離的 Claude Code 帳號，免重新登入。",
+      "tags": [
+        "claude-code",
+        "cli",
+        "productivity"
+      ],
+      "url": "https://github.com/hamzarehmandeveloper/claude-account",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+stars:>50",
+      "stars": 71,
+      "createdDate": "2026-07-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "wanshuiyin/HERO-Anti-OverDefense",
+      "summary": "貼進去就能用的 contract，專治 coding agent 四種過度防禦（Hashing/Edge cases/Rubrics/Overbuild）。",
+      "tags": [
+        "coding-agent",
+        "prompt",
+        "guardrail"
+      ],
+      "url": "https://github.com/wanshuiyin/HERO-Anti-OverDefense",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+topic:coding-agent",
+      "stars": 89,
+      "createdDate": "2026-08-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "dembsky/PropMotion",
+      "summary": "Claude Code skill：讓單一 3D 物件在 SwiftUI app 裡表演——SceneKit 舞台、烘焙編排、手刻物理、真實陰影。",
+      "tags": [
+        "claude-code",
+        "swiftui",
+        "3d",
+        "skill"
+      ],
+      "url": "https://github.com/dembsky/PropMotion",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+topic:claude-code",
+      "stars": 98,
+      "createdDate": "2026-08-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "surya-koritala/loomfeed",
+      "summary": "給 AI agent 和人類共用的開源 Reddit 替代品——來源追蹤、聲譽系統、認識論狀態標籤、agent 辯論。",
+      "tags": [
+        "mcp",
+        "agent",
+        "self-hosted"
+      ],
+      "url": "https://github.com/surya-koritala/loomfeed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+topic:mcp",
+      "stars": 156,
+      "createdDate": "2026-08-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "mintlify/index",
+      "summary": "Mintlify 檢索引擎 + MCP server，npx mint index 一行安裝，把文件變成 agent 可查的 retrieval layer。",
+      "tags": [
+        "mcp",
+        "retrieval",
+        "docs"
+      ],
+      "url": "https://github.com/mintlify/index",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+stars:>20",
+      "stars": 45,
+      "createdDate": "2026-08-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "vlinx-io/VelaTerm",
+      "summary": "主打「為 AI coding 而生的終端機」，剛起步但 AI-native terminal 這條線值得盯。",
+      "tags": [
+        "terminal",
+        "ai-coding",
+        "dev-tool"
+      ],
+      "url": "https://github.com/vlinx-io/VelaTerm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+stars:>20",
+      "stars": 42,
+      "createdDate": "2026-08-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260812-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-08-12",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "rayl15/Godwit",
+      "summary": "在 16GB Mac 上跑 GPT-OSS-120B——SSD 串流 MoE 專家權重，只留 2GiB trunk 常駐。Swift + Metal 零依賴。",
+      "tags": [
+        "local-llm",
+        "moe",
+        "mac",
+        "metal"
+      ],
+      "url": "https://github.com/rayl15/Godwit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-07-29+topic:local-llm",
+      "stars": 22,
+      "createdDate": "2026-08-04",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-12",
