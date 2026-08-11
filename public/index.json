@@ -70159,6 +70159,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260812-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-12",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Nvidia 開始「借錢給自己的客戶」——為什麼這是危險訊號",
+      "summary": "Ben Thompson 用 1870 年 Jay Cooke 靠愛國情緒把北太平洋鐵路債券零售給散戶、最終過度槓桿引爆 1873 大恐慌的歷史，對照 Nvidia 現在的新玩法：不再只是賣晶片，而是下場替客戶的資料中心投資背書、把自己的利潤押上去，藉此壓低客戶的資金成本、製造需求。心智模型：當供應商開始吸收客戶的融資風險（動用保險浮存金、退休基金這類長期負債），短期保住毛利，長期卻在系統裡埋下脆弱性——這就是 Thompson 說的 danger zone。",
+      "tags": [
+        "vendor-financing",
+        "circular-financing",
+        "mental-model",
+        "ai-capex",
+        "risk"
+      ],
+      "url": "https://stratechery.com/2026/nvidias-risky-business/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/nvidias-risky-business/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-12",
