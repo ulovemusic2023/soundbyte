@@ -70480,6 +70480,171 @@
       "price": null,
       "vram": "local-ready",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260813-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Zed 推出 Delta：agent × 人的 multiplayer coding 環境",
+      "summary": "Zed 發表 Delta（private beta）＋底層 DeltaDB：把對話與 worktree 一起即時 replicate、疊在既有 git repo 上，commit/push 照舊、沒開 Delta 的隊友看到的仍是普通 repo。comment 錨定在會演進的程式碼與對話上，agent 就在 thread 裡用同一份脈絡解釋/修改，把 review 從對著 diff 重建意圖轉成連著對話與決策。",
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "agentic",
+        "collaboration"
+      ],
+      "url": "https://zed.dev/blog/introducing-delta",
+      "source": "Zed Blog",
+      "sourceUrl": "https://zed.dev/blog/introducing-delta",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260813-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "論文：從商用 LLM API 偷推理軌跡（reasoning-trace replay）",
+      "summary": "stolen-thoughts.com：Anthropic/OpenAI/Google 回傳的 encrypted chain-of-thought 可跨 session/user/model replay。把強模型 trace 灌進同家族較弱 sibling、jailbreak 後還原強模型隱藏推理明文，同家族共用同金鑰是關鍵。Claude Haiku 4.5 最易攻破，三家均已修補。",
+      "tags": [
+        "llm-security",
+        "reasoning",
+        "red-teaming"
+      ],
+      "url": "https://stolen-thoughts.com/",
+      "source": "Simon Willison / alphaxiv",
+      "sourceUrl": "https://stolen-thoughts.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260813-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tailscale 揪出潛伏 16 年的 SQLite WAL-reset bug",
+      "summary": "Tailscale uptime 一路不穩的元凶是 SQLite 深處潛伏 16 年的 bug。single-writer + 每幾分鐘快照上傳 S3，靠 backup pipeline 的 PRAGMA integrity_check 才發現 DB 損毀，數月 forensics 定位並修好。",
+      "tags": [
+        "sqlite",
+        "databases",
+        "distributed-systems",
+        "postmortem"
+      ],
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "source": "Tailscale Blog",
+      "sourceUrl": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260813-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Grok 4.6 重回智力前沿、主打成本效率",
+      "summary": "SpaceXAI Grok 4.6 在 Artificial Analysis Intelligence Index 拿 61，追平 GPT-5.6 Sol，僅落後 Opus 5(63)/Fable 5(62)。$2/$6 per 1M token 便宜 60%+、每任務 $0.84，agentic 突出且 turn-efficient（~53 turns/0.5B token vs Opus 5 ~103 turns/2B）。",
+      "tags": [
+        "ai_models",
+        "benchmark",
+        "agentic",
+        "cost-efficiency"
+      ],
+      "url": "https://x.ai/news/grok-4-6",
+      "source": "Artificial Analysis",
+      "sourceUrl": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260813-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwen3.8：首度開放 Qwen-Max 級模型",
+      "summary": "阿里 Qwen 釋出 Qwen3.8-2.4T-A95B（2.4T 總參 / 95B active MoE），首次把 Qwen-Max 級模型 open-weight 釋出，相容 vLLM/SGLang，強化 coding 與 long-horizon agentic execution。官方 Qwen3.8-Max 另加 vision、1M context、內建工具。",
+      "tags": [
+        "ai_models",
+        "open-weights",
+        "moe",
+        "agentic"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "source": "Hugging Face (Qwen)",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260813-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DeepSeek V4 Pro 0813 上線",
+      "summary": "DeepSeek 釋出 V4 Pro 0813，登上 HN 首頁前段（581 分），延續以價效比切入 agentic coding/tool use 的路線。⚠️ 官方 model card 細節與 benchmark 尚待補充，僅記錄發布事實。",
+      "tags": [
+        "ai_models",
+        "open-weights"
+      ],
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "source": "OpenRouter / Hacker News",
+      "sourceUrl": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260813-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare H1 2026 DDoS 威脅報告：hyper-volumetric 攻擊暴增 519%",
+      "summary": "Cloudflare 上半年偵測 hyper-volumetric DDoS 暴增 519%，1 Tbps 級攻擊常態化，主靠 DNS 與 CLDAP reflection 放大，地緣政治衝突重塑全球威脅樣貌。",
+      "tags": [
+        "security",
+        "ddos",
+        "network",
+        "infrastructure"
+      ],
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-h1/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/ddos-threat-report-2026-h1/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260813-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "HTML over WebSockets：幾乎不寫 JS 的即時 SPA",
+      "summary": "andros.dev 示範用 WebSocket 直接推 HTML 片段做即時更新的 SPA，前端幾乎不需 JavaScript，回到 server 主導 render 的路線（類 htmx/LiveView）。",
+      "tags": [
+        "frontend",
+        "architecture",
+        "websocket",
+        "htmx"
+      ],
+      "url": "https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/",
+      "source": "andros.dev",
+      "sourceUrl": "https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-12",
