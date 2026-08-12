@@ -70645,6 +70645,146 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260813-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-13",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "egoist/waku",
+      "summary": "egoist 新作，把 Claude Code / Codex / Cursor 等 CLI coding agent 包成原生桌面 app，統一介面管理多個 agent session。",
+      "tags": [
+        "coding-agent",
+        "desktop",
+        "claude-code"
+      ],
+      "url": "https://github.com/egoist/waku",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 597,
+      "createdDate": "2026-07-31",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260813-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-13",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "guillaumemeyer/watermarks-remover",
+      "summary": "移除多家 AI 供應商浮水印／溯源標記：Unicode 清理、統計改寫、C2PA + metadata 剝除。兩天衝近 2k 星。",
+      "tags": [
+        "ai-provenance",
+        "c2pa",
+        "cli"
+      ],
+      "url": "https://github.com/guillaumemeyer/watermarks-remover",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1972,
+      "createdDate": "2026-08-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260813-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-13",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "headroomlabs-ai/headroom",
+      "summary": "tool output / log / RAG chunk 進 LLM 前先壓縮，coding agent 省 20% token，JSON 省 60–95%。library / proxy / MCP server。",
+      "tags": [
+        "token-compression",
+        "mcp",
+        "coding-agent"
+      ],
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 66083,
+      "createdDate": "2026-01-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260813-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-13",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "QwenLM/qwen-code",
+      "summary": "Qwen 官方終端 AI coding agent，隨新模型再度衝榜，可搭配自家開源模型。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "terminal"
+      ],
+      "url": "https://github.com/QwenLM/qwen-code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 26946,
+      "createdDate": "2025-06-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260813-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-13",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "cloudflare/vibesdk",
+      "summary": "Cloudflare 官方開源 vibe coding 平台——用來自建 vibe coding 平台，整套跑在 Cloudflare stack。",
+      "tags": [
+        "vibe-coding",
+        "cloudflare",
+        "platform"
+      ],
+      "url": "https://github.com/cloudflare/vibesdk",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 5310,
+      "createdDate": "2025-08-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260813-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-13",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "deta/surf",
+      "summary": "Personal AI Notebooks：整理檔案與網頁並自動生成筆記。開源、本地資料、可選本地模型。",
+      "tags": [
+        "ai-notebook",
+        "local-first",
+        "knowledge"
+      ],
+      "url": "https://github.com/deta/surf",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 3522,
+      "createdDate": "2025-10-20",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260813-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-13",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "nicedreamzapp/claude-code-local",
+      "summary": "100% 本地跑 Claude Code：Apple Silicon MLX-native Anthropic-API server，內建多本地模型，可 airgap。",
+      "tags": [
+        "local-llm",
+        "claude-code",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/nicedreamzapp/claude-code-local",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 3194,
+      "createdDate": "2026-03-26",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-12",
