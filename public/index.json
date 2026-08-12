@@ -70424,6 +70424,62 @@
       "stars": 22,
       "createdDate": "2026-08-04",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260813-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NVIDIA-NeMo/Switchyard",
+      "summary": "NVIDIA 官方新開源的 Rust LLM proxy／library：把 Claude Code、Codex 這類 coding agent 直接指向本地開源模型，於 OpenAI／Anthropic API 格式間即時轉譯，後端可接 vLLM、NIM、Ollama，內建多種 routing 算法。pre-alpha。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260813-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "xororz/local-dream",
+      "summary": "在 Android 用 Snapdragon NPU（Hexagon V68+）跑 Stable Diffusion，SDXL 需 8 Gen 3+，其餘可 CPU/GPU 跑 SD1.5。純本地、免費，NPU 靠 Qualcomm QNN SDK。",
+      "tags": [
+        "image_gen",
+        "on-device"
+      ],
+      "url": "https://github.com/xororz/local-dream",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/08/12/xororz-local-dream.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "custom（開源免費）"
+    },
+    {
+      "id": "20260813-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "infiniflow/ragflow",
+      "summary": "成熟開源 RAG 引擎，主打 context layer for LLMs：深度文件解析、agentic workflow + MCP、可編排 ingestion pipeline，近期加多聊天通道與 DeepSeek v4。自建知識庫高完成度選項。",
+      "tags": [
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/infiniflow/ragflow",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-12",
