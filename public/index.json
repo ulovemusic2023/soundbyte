@@ -70785,6 +70785,66 @@
       "stars": 3194,
       "createdDate": "2026-03-26",
       "license": "MIT"
+    },
+    {
+      "id": "20260814-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "sgl-project/sglang-omni",
+      "summary": "SGLang 團隊的多階段 serving runtime，專為 omni / speech / TTS 模型設計，OpenAI-compatible API。day-0 支援 MiniMax Music 3（歌詞+caption→32kHz 立體聲歌曲），整合 MOSS-TTS、Higgs Audio v3、Qwen3-Omni。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai",
+        "llm_inference"
+      ],
+      "url": "https://github.com/sgl-project/sglang-omni",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "取決於模型（quantize-ok）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260814-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "altic-dev/FluidVoice",
+      "summary": "macOS on-device 語音聽寫 app（Wispr Flow 本地替代）。重寫版 Parakeet 做近乎零延遲 STT，可選 Nemotron Speech 3.5 / Whisper / Apple Speech，本地 AI 後處理，資料不出機器。目前僅 macOS。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "whisper"
+      ],
+      "url": "https://github.com/altic-dev/FluidVoice",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "on-device（local-ready）",
+      "license": "GPLv3"
+    },
+    {
+      "id": "20260814-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NVIDIA-NeMo/Automodel",
+      "summary": "NVIDIA NeMo 新開的 PyTorch 原生分散式訓練庫，OOTB 吃 HuggingFace 模型，支援 LoRA / SFT / full fine-tuning。近期加 Qwen3.8、Kimi K3、Nemotron 3.5 等 recipe。多卡大規模微調為主。",
+      "tags": [
+        "llm_training",
+        "lora",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/NVIDIA-NeMo/Automodel",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "分散式多卡為主（cloud-only）",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-12",
