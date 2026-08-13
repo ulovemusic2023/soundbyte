@@ -71068,6 +71068,126 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260814-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-14",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "deepseek-ai/deepseek-harness",
+      "summary": "DeepSeek 官方 agent harness，主打「Everything is a Plugin」的統一 coding agent 骨架，上線當天衝上 38k star。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "agent-harness"
+      ],
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/deepseek-ai/deepseek-harness",
+      "stars": 38424,
+      "createdDate": "2026-08-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260814-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-14",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Leutenegger/book-to-skill",
+      "summary": "把任何技術書 PDF 轉成 Claude Code skill，邊工作邊查邊用。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "pdf"
+      ],
+      "url": "https://github.com/Leutenegger/book-to-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Leutenegger/book-to-skill",
+      "stars": 1020,
+      "createdDate": "2026-08-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260814-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-14",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "fuxicodex/Fuxi",
+      "summary": "終端機內建 AI coding agent，跨 LLM provider 做 cost-aware routing，輕量單檔省 token。",
+      "tags": [
+        "ai-agent",
+        "cli",
+        "cost-routing"
+      ],
+      "url": "https://github.com/fuxicodex/Fuxi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/fuxicodex/Fuxi",
+      "stars": 495,
+      "createdDate": "2026-08-04",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260814-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-14",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "wzchav/tokentab",
+      "summary": "讀 Claude Code / Codex / Gemini CLI session log，按 model / 專案 / 日期算 AI coding 成本。",
+      "tags": [
+        "cli",
+        "cost-tracking",
+        "claude-code"
+      ],
+      "url": "https://github.com/wzchav/tokentab",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/wzchav/tokentab",
+      "stars": 168,
+      "createdDate": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260814-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-14",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "astrofox-io/astrofox",
+      "summary": "把音訊變成 motion graphics 影片的老牌開源工具，被 MAGI 重新翻出，音樂視覺化利器。",
+      "tags": [
+        "audio",
+        "motion-graphics",
+        "music-visualizer"
+      ],
+      "url": "https://github.com/astrofox-io/astrofox",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 1962,
+      "createdDate": "2018-07-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260814-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-14",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "kdlbs/kandev",
+      "summary": "AI Kanban + 開發環境：編排多 agent、審 diff、開 PR，多 provider、可自架、無 telemetry。",
+      "tags": [
+        "ai-kanban",
+        "orchestration",
+        "self-hosted"
+      ],
+      "url": "https://github.com/kdlbs/kandev",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 610,
+      "createdDate": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-14",
