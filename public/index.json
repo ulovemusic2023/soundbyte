@@ -71028,8 +71028,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260814-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-14",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "沒有任何自然語言文字的轉換是無損的",
+      "summary": "Sophie Alpert 公布她對工程師使用 AI 寫作的內部規範。核心心智模型：每一次 AI 改寫、潤飾都會改變原意，而執行改寫的 AI 並不擁有你腦中最精確的意圖表徵，所以資訊必然流失。鐵律：你必須為文件裡的每一句話負責，不能事後說「那句是 AI 寫的，忽略它」。",
+      "tags": [
+        "ai-writing",
+        "communication",
+        "first-principles"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/11/there-are-no-lossless-transformations-of-natural-language-text/",
+      "source": "Sophie Alpert",
+      "sourceUrl": "https://sophiebits.com/2026/06/25/there-are-no-lossless-transformations-of-natural-language-text",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-14",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "AI 正在消滅軟體工程的「中產階級」",
+      "summary": "Florian Herrengt 的觀察：AI 讓每個人都能快速產出功能，但沒人真正理解系統怎麼運作。當 bug 第四次修不好，你去問「資料從哪來？」，答案是「不知道，我去問 Claude」。專案層層堆疊到沒人能理解，深度理解系統的那群工程師正在被掏空。",
+      "tags": [
+        "ai-coding",
+        "engineering-org",
+        "technical-debt"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
+      "source": "Florian Herrengt",
+      "sourceUrl": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-12",
-  "updatedAt": "2026-08-12T05:10:00+08:00"
+  "lastUpdated": "2026-08-14",
+  "updatedAt": "2026-08-13T21:32:00Z"
 }
