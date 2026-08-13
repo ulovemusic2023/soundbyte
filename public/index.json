@@ -70845,6 +70845,189 @@
       "price": null,
       "vram": "分散式多卡為主（cloud-only）",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260814-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AI is removing the middle class of software engineering",
+      "summary": "Florian Herrengt：AI 移除了工程的『速度限制』。弱工程文化的專案因 agent 加速崩壞更快——週五到週一的變更量超過以往請假數週，PR 動輒 +24506/-3938 行配 AI 生成描述。測起來『看似能動』所以團隊一路衝，直到沒人（也沒有 AI）搞得懂資料從哪來；認知負債像刷卡買豪車，看不到債只看到車。",
+      "tags": [
+        "paradigm-shift",
+        "cognitive-debt",
+        "vibecoding"
+      ],
+      "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+      "source": "Florian Herrengt",
+      "sourceUrl": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "How Compaction Works in Pi",
+      "summary": "Pi 團隊拆解 coding agent 的 compaction：對話史逐 turn 疊加一旦超過 context window 就報錯，只能丟棄歷史重開或壓成較小表徵續談。並引 context rot 說明 context 越長輸出品質越掉，因此 compaction 何時觸發、保留什麼是 agent harness 核心工程。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "context-engineering"
+      ],
+      "url": "https://earendil.com/posts/compaction-in-pi/",
+      "source": "earendil.com (Pi)",
+      "sourceUrl": "https://earendil.com/posts/compaction-in-pi/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Introducing Gemini 3.7 Flash",
+      "summary": "Google 在 3.6 Flash 僅三週後推 3.7 Flash，主打 coding 與 agents，introductory 價砍到前代一半。FrontierCode 1.1 43.6% vs 34.4%、DeepSWE 65.3% vs 49.0%、WebDev Arena Elo 1588 vs 1538，first-pass code accuracy 明顯提升。frontier Flash 級模型進入密集迭代+降價節奏。",
+      "tags": [
+        "ai_models",
+        "coding-agent",
+        "llm-release",
+        "price-cut"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NP-overrated",
+      "summary": "gruhn.me 拆穿『NP-hard 所以做不到』的迷思：worst-case 在 dependency resolution、type checking 幾乎不出現；SAT/SMT 已 routine 解到規模化（Amazon 每天 10 億 SMT query），Gurobi/SCIP/OR-Tools 能找可證最優解。1991–2015 演算法加速 4500 億倍、超越硬體增益。理論沒錯但實務常無關。",
+      "tags": [
+        "algorithms",
+        "optimization"
+      ],
+      "url": "https://gruhn.me/blog/2026-08-13/",
+      "source": "gruhn.me",
+      "sourceUrl": "https://gruhn.me/blog/2026-08-13/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Accelerating GPT-5.6 Sol Ultrafast with OpenAI (Cerebras)",
+      "summary": "Cerebras 與 OpenAI 推 Ultrafast Mode，先在 OpenAI API 給少數客戶：Cerebras 晶圓級硬體驅動 GPT-5.6 Sol，達每秒最高 750 output tokens 且宣稱不犧牲品質。據 Artificial Analysis 比 Fable 5 快 11x、比一般 Sol 快 5x，化解速度與智力的取捨。",
+      "tags": [
+        "ai_models",
+        "inference",
+        "hardware"
+      ],
+      "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "source": "Cerebras Blog",
+      "sourceUrl": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Stacks in Jujutsu",
+      "summary": "GitHub Stacked PRs（7/30 公測）也文件化支援 Jujutsu(jj) 等相容 VCS。Alan Norbauer 寫實作 primer：裝 gh-stack extension，每個 PR 需對應一個 jj bookmark（git branch），用 jj b 系列 alias 管理大量 bookmark。把 stacked-diff 工作流接上新世代 VCS。",
+      "tags": [
+        "stacked-prs",
+        "vcs",
+        "jujutsu",
+        "developer-experience"
+      ],
+      "url": "https://alan.norbauer.com/articles/github-stacks-with-jujutsu/",
+      "source": "Alan Norbauer",
+      "sourceUrl": "https://alan.norbauer.com/articles/github-stacks-with-jujutsu/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DeepSeek V4 Pro 0813",
+      "summary": "DeepSeek 最新 Pro 模型 0813 上線（先僅 API，經 OpenRouter），無明顯官方公告頁。Simon Willison 觀察 low/medium/high 三種 reasoning level 產出差異明顯（罕見）。open weights 未證實釋出，但四月 V4-Pro 與七月 V4-Flash-0731 皆已開權重，延續開放權重逼近前沿走勢。",
+      "tags": [
+        "ai_models",
+        "llm-release",
+        "open-weights",
+        "ai-in-china"
+      ],
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "alchemy-utils — database-agnostic sqlite-utils",
+      "summary": "Simon Willison 洗澡靈感研究 spike：讓 Codex + GPT-5.6 Sol Ultra 用 SQLAlchemy 重造 sqlite-utils 的核心 API（insert/upsert/introspection），一次支援 PostgreSQL/SQLite/DuckDB，紅綠 TDD、極少 follow-up prompt 就達可發 alpha。一行 uvx 指令即可對多種 DB 操作。",
+      "tags": [
+        "ai-coding",
+        "database",
+        "sqlalchemy"
+      ],
+      "url": "https://github.com/simonw/alchemy-utils",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260814-sw-009",
+      "radar": "software-dev",
+      "date": "2026-08-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Unlocking everything on the CPU with DRAM scrambling",
+      "summary": "xoreaxeaxeax（Christopher Domas）最新硬體研究：利用 DRAM scrambling 在 CPU 上『解鎖一切』，HN 7 小時衝 413 分。延續其處理器隱藏行為/微架構逆向風格，把記憶體層物理特性當攻擊/探索面，提醒底層硬體信任邊界仍有未被檢視角落。",
+      "tags": [
+        "security",
+        "hardware",
+        "cpu",
+        "reverse-engineering"
+      ],
+      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+      "source": "github.com/xoreaxeaxeax",
+      "sourceUrl": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-12",
