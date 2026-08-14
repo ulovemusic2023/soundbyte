@@ -71494,6 +71494,206 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260815-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "dsh-web-ui",
+      "summary": "DeepSeek Harness Web UI 插件/皮膚合集：task board、git graph、右側面板、手機遠端 UI、即時 token 統計。DSH 生態一夜爆量。",
+      "tags": [
+        "coding-agent",
+        "dsh",
+        "plugin"
+      ],
+      "url": "https://github.com/zhu1090093659/dsh-web-ui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1917,
+      "createdDate": "2026-08-12",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260815-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "deepseek-harness-desktop",
+      "summary": "DeepSeek Harness 的現代化桌面端 client，發表兩天內就有完整 GUI 體驗。",
+      "tags": [
+        "coding-agent",
+        "dsh",
+        "desktop"
+      ],
+      "url": "https://github.com/anywhere-labs/deepseek-harness-desktop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1743,
+      "createdDate": "2026-08-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260815-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "agent-safe-pipeline",
+      "summary": "Agent 安全參考架構：agent 只能提議動作，由獨立策略引擎給 ALLOW/ESCALATE/BLOCK，人工核准後由 SafeExecutor 用一次性 grant 執行。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "mcp"
+      ],
+      "url": "https://github.com/decionis/agent-safe-pipeline",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 366,
+      "createdDate": "2026-08-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260815-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "MasterAgent",
+      "summary": "100% 在裝置上跑的 AI agent，Qualcomm NPU 上 sub-100ms latency、零雲端依賴。",
+      "tags": [
+        "local-ai",
+        "on-device",
+        "ai-agent"
+      ],
+      "url": "https://github.com/OpenSparX/MasterAgent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 187,
+      "createdDate": "2026-08-10",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260815-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "mkagent",
+      "summary": "Local-first、pi 驅動的 AI agent 工作區，Desktop/WebUI/CLI 共用同一 runtime。",
+      "tags": [
+        "local-ai",
+        "ai-agent",
+        "pi"
+      ],
+      "url": "https://github.com/MkThingsHQ/mkagent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 98,
+      "createdDate": "2026-08-09",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260815-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "zacp",
+      "summary": "基於 ACP 協議的多 Agent Web 網關，讓 CLI agent 直接在瀏覽器裡用。",
+      "tags": [
+        "ai-agent",
+        "acp",
+        "gateway"
+      ],
+      "url": "https://github.com/helloxz/zacp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 90,
+      "createdDate": "2026-08-04",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260815-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "multi-agent-workflow-lab",
+      "summary": "multi-agent 委派的測試與可觀測性：MCP tools、權限、sandboxed actions、prompts、workflow replay。",
+      "tags": [
+        "multi-agent",
+        "mcp",
+        "observability"
+      ],
+      "url": "https://github.com/christiangrey922/multi-agent-workflow-lab",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 85,
+      "createdDate": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260815-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "percho",
+      "summary": "pi coding agent 的極簡桌面 GUI，同引擎換視覺介面，多 session、視覺化 tool approval、自訂主題。",
+      "tags": [
+        "coding-agent",
+        "pi",
+        "desktop"
+      ],
+      "url": "https://github.com/Jaxton07/percho",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 64,
+      "createdDate": "2026-08-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260815-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "Kun",
+      "summary": "Local-first AI agent 工作區，一個 runtime 同吃 desktop GUI 與 TUI，涵蓋 coding/writing/design/research/automation。",
+      "tags": [
+        "local-ai",
+        "ai-agent",
+        "workspace"
+      ],
+      "url": "https://github.com/KunAgent/Kun",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 6123,
+      "createdDate": "2026-05-21",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260815-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-15",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "corsair",
+      "summary": "Your Agent's Integration Layer — 把外部服務/API 統一接給 agent 呼叫，與 MCP 生態互補/競爭。",
+      "tags": [
+        "ai-agent",
+        "integration",
+        "mcp"
+      ],
+      "url": "https://github.com/corsairdev/corsair",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 9939,
+      "createdDate": "2025-10-14",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-08-15",
