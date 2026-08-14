@@ -71188,6 +71188,103 @@
       "stars": 610,
       "createdDate": null,
       "license": null
+    },
+    {
+      "id": "20260815-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MiniMaxAI/MiniMax-Music3",
+      "summary": "MiniMax 開源音樂生成模型：吃 lyrics + 結構化 music description，一次生成最長 5 分鐘、含 intro/verse/chorus/bridge 完整結構的整首歌，32kHz 16-bit stereo。架構為 8B Global LLM(自 Qwen3-8B 初始化)管長程結構 + 0.6B Local LLM 管 frame 級聲學 + 2.4B Flow Matching 合成。",
+      "tags": [
+        "audio_music_ai",
+        "music generation"
+      ],
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "~11B 合計，16GB 需量化/offload",
+      "license": "MiniMax(自訂)"
+    },
+    {
+      "id": "20260815-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "inclusionAI/Ling-3.0-tiny",
+      "summary": "螞蟻 inclusionAI 輕量 hybrid-reasoning MoE：7.9B 總參數、每 token 僅 activate 1.3B。3:1 KDA/MLA 混合注意力 + 128 experts(選 8+1)，原生 thinking/非 thinking 切換。FP8 在 M4 Pro MacBook 86-90 tok/s、8K context 僅 ~8.3GB peak。附 BF16/FP8/INT4 權重。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "local inference"
+      ],
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "FP8 ~8.3GB@8K",
+      "license": "MIT"
+    },
+    {
+      "id": "20260815-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Zyora-Dev/zse",
+      "summary": "零依賴 LLM inference engine：不用 PyTorch/Triton/transformers，純 Python + ctypes + 自製 kernel compiler 直吐 CUDA/ROCm/Metal。宣稱 7B 冷啟 5-7 秒、14B INT4 僅 12GB、pip 裝 ~5MB，內建 RAG + OpenAI-compatible API + LoRA hot-swap。⚠️ 效能數字為官方自稱、無第三方驗證，且 repo 無 License。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "cuda"
+      ],
+      "url": "https://github.com/Zyora-Dev/zse",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "14B INT4 ~12GB",
+      "license": "⚠️ none"
+    },
+    {
+      "id": "20260815-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MiniMaxAI/MiniMax-H3",
+      "summary": "MiniMax 的 image-to-video 生成模型(~33B)，HF 上爆紅、已長出 ComfyUI/GGUF/Turbo LoRA 生態。跟 MV/視覺內容製作沾邊，但模型偏大。",
+      "tags": [
+        "image_gen",
+        "text to video"
+      ],
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "~33B video，16GB 不可行",
+      "license": "other"
+    },
+    {
+      "id": "20260815-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Continuum-AI-Corp/OrcaRouter-Lite",
+      "summary": "自架版 OpenRouter：統一多家 LLM API、內建 managed fallback，MIT。適合本地/自控的模型路由層。⚠️ 最後更新停在 2026-05，維護頻率偏低。",
+      "tags": [
+        "ai_devtools",
+        "model serving"
+      ],
+      "url": "https://github.com/Continuum-AI-Corp/OrcaRouter-Lite",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "price": null,
+      "vram": "路由層無模型",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-14",
