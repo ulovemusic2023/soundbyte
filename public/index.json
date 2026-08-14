@@ -71285,8 +71285,175 @@
       "price": null,
       "vram": "路由層無模型",
       "license": "MIT"
+    },
+    {
+      "id": "20260815-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GLM-5.3：純 post-training 就把開源權重推到 frontier coding",
+      "summary": "智譜 GLM-5.3 沿用 GLM-5.2 base model，全部提升來自 post-training scaling。號稱最強開源權重 coding 模型，Z.ai Code Bench 較前代 +50%，Terminal-Bench 3.0 從 4.6 衝到 28.3；token 效率也更好（High effort 31.4% @50K tokens，勝 Opus 4.8 的 29.5% @120K，仍落後 Fable 5）。並意外出現 emergent cyber capability，CyberGym SOTA、exploitation 分數翻倍。兩週後開權重。",
+      "tags": [
+        "ai-coding",
+        "open-weights",
+        "agent",
+        "posttraining-environment-scaling",
+        "paradigm-shift"
+      ],
+      "url": "https://z.ai/blog/glm-5.3",
+      "source": "Z.ai Blog",
+      "sourceUrl": "https://z.ai/blog/glm-5.3",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260815-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mixedbread Toast 1：把 search loop 卸載給專用 retrieval agent",
+      "summary": "Toast 1 是專門化的搜尋 agent，接手整個 search loop——拆 subquery、蒐證、檢視來源、篩出相關 context 再回傳，讓 frontier model 把 context 與 compute 留給 reasoning。可獨立跑或當 subagent。品質對打 Claude Opus 5 / GPT-5.6 Sol，宣稱最多 10× 便宜、12× 快，建立 cost/speed 的新 Pareto frontier。",
+      "tags": [
+        "ai-agent",
+        "rag",
+        "specialised-retrieval-agent",
+        "subagent"
+      ],
+      "url": "https://www.mixedbread.com/blog/toast-1",
+      "source": "Mixedbread",
+      "sourceUrl": "https://www.mixedbread.com/blog/toast-1",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260815-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Why does Opus 5 feel worse to work with?",
+      "summary": "作者觀察：Opus 5 benchmark 更強、卻比 Opus 4.7/4.8/Fable 更難用——因為它會擅自假設、不問澄清、重寫你的 plan，需要更多 babysitting。推測根因：RLVR / benchmark 本質上選出『在模糊處大膽假設、通常對』的模型，並懲罰會停下來問澄清的模型——但這正是 coding agent 使用者最想要的特質。對『benchmark 分數 ≠ 好用』的一線觀察。",
+      "tags": [
+        "coding-agent",
+        "evals",
+        "benchmark-assumption-bias",
+        "rlhf"
+      ],
+      "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+      "source": "mun-logadan",
+      "sourceUrl": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260815-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 開源 HEIR：讓 homomorphic encryption 私密 AI 推論實用化",
+      "summary": "Google 開源 HEIR compiler，把程式編譯成可在密文上直接運算的 FHE：server 處理 ciphertext、回傳加密結果，全程不解密任何底層資料（例如雲端做內容推薦卻看不到使用者特徵）。它把 privacy/capability 的取捨轉成純『成本』問題，而 FHE 成本正快速下降；對醫療、金融等受法規限制、不能共享資料的場景特別關鍵。",
+      "tags": [
+        "ai-models",
+        "security",
+        "homomorphic-inference",
+        "open-source"
+      ],
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260815-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Bluesky Protocol Services + Jetstream v2",
+      "summary": "Bluesky 把它在 AT Protocol 上營運的公共基礎設施（relay、Jetstream、API endpoint）整併成品牌與新站，釐清 service contract。同步推 Jetstream v2：Network Replay 讓你從過去任一點補齊歷史記錄再無縫接上 live tail，server 端 stateless、無 per-consumer cursor；也能純做 point-in-time snapshot。等於把『backfill 歷史』直接內建進 stream 基礎設施。",
+      "tags": [
+        "architecture",
+        "stream-processing",
+        "atproto",
+        "distributed-systems"
+      ],
+      "url": "https://atproto.com/blog/introducing-bluesky-protocol-services",
+      "source": "AT Protocol Blog",
+      "sourceUrl": "https://atproto.com/blog/introducing-bluesky-protocol-services",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260815-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Kubernetes on Oxide：以客戶需求驅動的整合",
+      "summary": "Oxide 分享如何在自家 bare-metal cloud 上支援 Kubernetes：不從抽象設計出發，而是跟著客戶從 provision 叢集到營運 workload 遇到的真實問題走——provisioning 走 Rancher / Omni / Cluster API，運行時要 infrastructure reconciliation，暴露應用揭露 networking gap，stateful workload 逼出 storage 整合。第一位 Solutions Software Engineer 的落地紀錄。",
+      "tags": [
+        "devops-infra",
+        "kubernetes",
+        "cluster-api",
+        "bare-metal"
+      ],
+      "url": "https://oxide.computer/blog/kubernetes-on-oxide",
+      "source": "Oxide Computer",
+      "sourceUrl": "https://oxide.computer/blog/kubernetes-on-oxide",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260815-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwen3.8-27B（FP8）開源模型上線",
+      "summary": "阿里 Qwen 團隊釋出 Qwen3.8-27B，並提供 FP8 權重（Hugging Face 上熱度極高、HN 690 分）。屬中量級開源模型，FP8 量化利於在較低 VRAM 上本地部署／推論。",
+      "tags": [
+        "ai-models",
+        "open-weights",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260815-sw-009",
+      "radar": "software-dev",
+      "date": "2026-08-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Mistral OCR 4.1",
+      "summary": "Mistral 更新 OCR 模型至 4.1，強化文件解析／multimodal 文字擷取能力，供 document AI 與 RAG pipeline 前處理使用。",
+      "tags": [
+        "ai-models",
+        "multimodal",
+        "ocr"
+      ],
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "source": "Mistral Docs",
+      "sourceUrl": "https://docs.mistral.ai/models/ocr-4-1",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-14",
-  "updatedAt": "2026-08-13T21:32:00Z"
+  "lastUpdated": "2026-08-15",
+  "updatedAt": "2026-08-15T05:20:00+08:00"
 }
