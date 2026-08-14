@@ -71452,6 +71452,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260815-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-15",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "資本，而非算力，可能才是 AI 建設的真正瓶頸",
+      "summary": "Ben Thompson 提出反直覺框架：大家都知道算力短缺、電力也快短缺，但真正的約束可能是資本。核心檢驗問句——如果 AI 真的像宣稱的那麼有價值，它理應能自己養活自己，但至今還沒發生。Nvidia 推出長天期資本募資機制、Google 靠股權融資鋪路，都是在為『尚未兌現的價值』搭橋，同時放大泡沫爆炸半徑。可轉移思維：找出系統真正的 binding constraint，把『價值還無法自我償付』當成警訊。",
+      "tags": [
+        "binding-constraint",
+        "capital",
+        "ai-economics",
+        "first-principles"
+      ],
+      "url": "https://stratechery.com/2026/nvidias-risky-business/",
+      "source": "Ben Thompson · Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/nvidias-risky-business/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260815-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-15",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "網路效應很強大，但可以被打破——紐約 vs 好萊塢",
+      "summary": "兩個城市對照出護城河框架：紐約即使面對敵意言論，金融業仍走不了，因為網路效應把人才、資本、關係密度綁在一起；好萊塢卻眼睜睜看著製片外流到鄰州與海外。教訓不是『網路效應無敵』，而是看懂『什麼條件會讓網路效應失效』——當核心活動可被異地複製、且成本差夠大時，護城河就會漏水。建構事業時要問：你的網路效應是否綁在無法搬遷的東西上。",
+      "tags": [
+        "network-effects",
+        "moat",
+        "competitive-advantage",
+        "distribution"
+      ],
+      "url": "https://sharptext.net/2026/new-york-and-the-power-of-the-network/",
+      "source": "Andrew Sharp · Sharp Text",
+      "sourceUrl": "https://sharptext.net/2026/new-york-and-the-power-of-the-network/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-15",
