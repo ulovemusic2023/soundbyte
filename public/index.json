@@ -71750,6 +71750,150 @@
       "price": null,
       "vram": "local-ready",
       "license": "未指定"
+    },
+    {
+      "id": "20260816-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "How Cloudflare detects MCP traffic and helps secure it",
+      "summary": "Cloudflare One 用 protocol-level heuristics 辨識 MCP 流量，揪出員工未核准接上的 shadow MCP server，強制走 Portal-only 路徑。論點：AI agent 打破『人有判斷力、只能以人速度操作』的權限假設，錯誤決定可在人察覺前放大成上千動作。",
+      "tags": [
+        "mcp",
+        "agentic-security",
+        "zero-trust",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.cloudflare.com/mcp-security-updates/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/mcp-security-updates/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260816-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Auto-research with Codex: 232x faster QR kernel",
+      "summary": "sankalp 在 GPU Mode auto-research 賽用 Codex 把 Householder QR CUDA kernel 迭代到比 baseline 快 232x（183 人第 12）。把 agent 當研究迴圈：學到能問好問題、blocked Householder 縮小 serial 工作、刻意引入 idea diversity 跳出 local maxima。",
+      "tags": [
+        "ai-coding",
+        "agentic",
+        "loop-engineering",
+        "gpu-kernel"
+      ],
+      "url": "https://sankalp.bearblog.dev/autoresearch/",
+      "source": "sankalp's blog (via Hacker News)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49309549",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260816-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Secure all your internal vibe-coded applications — in one click",
+      "summary": "Cloudflare Access for Workers：把 Access policy 直接掛在 Worker 上，routes/custom domains/workers.dev/preview 全部一次套用，替 vibe-coding 快速生出卻常忘加驗證的內部應用一鍵補上身分驗證。",
+      "tags": [
+        "cloudflare-workers",
+        "vibe-coding",
+        "zero-trust",
+        "edge"
+      ],
+      "url": "https://blog.cloudflare.com/workers-protected-by-access/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workers-protected-by-access/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260816-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Working With AI Feels More Like Leadership Than Coding",
+      "summary": "Allen Bargi：程式給確定性，AI 協作更像帶人——同請求可能不同答案，當 compiler 會受挫，當協作對象才有用。好領導不只下指令，而是分享 context、說清期望與邊界；同樣習慣用在 AI 上，投資在把『表達意圖』練好。",
+      "tags": [
+        "ai-assisted-development",
+        "ai-pair-programming",
+        "dx"
+      ],
+      "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
+      "source": "Allen Bargi (via Hacker News)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49309451",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260816-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Don't classify. Hallucinate!",
+      "summary": "Doug Turnbull 的 LLM 分類技巧：不用上百合法值的 giant Literal 硬約束（貴又有上限），改叫便宜小模型幻想合理假分類，再用 vector embedding 對既有 taxonomy 找最近鄰映射回合法標籤。便宜可規模化。",
+      "tags": [
+        "llm",
+        "embedding",
+        "vector-search",
+        "classification"
+      ],
+      "url": "https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications",
+      "source": "Doug Turnbull",
+      "sourceUrl": "https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260816-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them.",
+      "summary": "Davide Piffer：AI 解難題常被當推理變強，更可能是它有巨大外部符號 working memory——同時 hold 整題、上百中間式與放棄路徑。人腦 working memory 極受限，AI 優勢部分來自移除這生物限制而非更會想。",
+      "tags": [
+        "reasoning",
+        "context-window",
+        "ai-models"
+      ],
+      "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+      "source": "Davide Piffer (via Hacker News)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49312845",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260816-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "RISC-V: They Should Have Known Better",
+      "summary": "Dmitry Grinberg 逐條開炮 RISC-V ISA 設計取捨（compressed 指令、conditional 缺失等『為純粹犧牲實務效率』的決定），主張在有前車之鑑下仍重蹈覆轍。HN/Lobsters 引發大量爭論。ISA 低階架構觀點文。",
+      "tags": [
+        "risc-v",
+        "isa",
+        "computer-architecture"
+      ],
+      "url": "https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV",
+      "source": "dmitry.gr (via HN/Lobsters)",
+      "sourceUrl": "https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-16",
