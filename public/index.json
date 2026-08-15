@@ -71934,6 +71934,89 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260816-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-16",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "icesixgod/codex-trajectory",
+      "summary": "隱私優先的 local Codex task log 檢視器：把 Codex CLI 跑過的 trajectory（每步工具呼叫、思考、輸出）視覺化，方便回溯 debug agent 的行為。剛開源 2 天。",
+      "tags": [
+        "codex",
+        "ai-coding",
+        "observability"
+      ],
+      "url": "https://github.com/icesixgod/codex-trajectory",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 142,
+      "createdDate": "2026-08-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260816-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-16",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "NEDONION/lobster0",
+      "summary": "受 OpenClaw 啟發的自託管 AI agent：具備 persistent memory、受控自治（governed autonomy）與自我進化。Gary 自己就跑 OpenClaw，這個 clone 的記憶/自治設計值得對照參考。",
+      "tags": [
+        "ai-agent",
+        "openclaw",
+        "self-hosted",
+        "memory"
+      ],
+      "url": "https://github.com/NEDONION/lobster0",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 90,
+      "createdDate": "2026-08-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260816-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-16",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "dannguyen9x/tiktok-live-studio-mcp",
+      "summary": "本地 MCP server，透過 TikTok LIVE Studio 內建的 Stream Deck Socket.IO 通道遠端控制直播。對做內容/直播的創作者是個很利基但實用的自動化橋接。⚠️ forks:0，仍很早期。",
+      "tags": [
+        "mcp",
+        "tiktok",
+        "livestream",
+        "creator"
+      ],
+      "url": "https://github.com/dannguyen9x/tiktok-live-studio-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 77,
+      "createdDate": "2026-08-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260816-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-16",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "muratgur/ordinus",
+      "summary": "local-first 的 AI agent「指揮中心」：把 Codex / Claude CLI 當成一支團隊來排程與協調工作流。本週被 Tom Dörr 的 MAGI//ARCHIVE 收錄，適合 Gary 這種多 agent + cron 排程的用法。",
+      "tags": [
+        "ai-agent",
+        "orchestration",
+        "cli",
+        "automation"
+      ],
+      "url": "https://github.com/muratgur/ordinus",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 89,
+      "createdDate": "2026-05-08",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-16",
