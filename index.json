@@ -71894,6 +71894,46 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260816-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-16",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "「不要分類，用幻覺」— 讓模型先亂猜，再用向量貼回現實",
+      "summary": "Doug Turnbull 的反直覺技巧：當你的標籤/分類太多、塞不進 prompt 時，別叫模型從既有清單挑，而是叫它憑空生出最合適的分類，再用 vector embedding 把它想像的標籤貼回你真實的詞彙表。框架轉換：把 LLM 的『幻覺』當成 feature 而非 bug——先讓它自由發想理想答案，再 snap 回現實。",
+      "tags": [
+        "llm-pattern",
+        "mental-model",
+        "inversion"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+      "source": "Doug Turnbull（via Simon Willison）",
+      "sourceUrl": "https://softwaredoug.com/blog/2026/08/10/hypothetical-classifications",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260816-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-16",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "面試創辦人時，聽他『舉什麼例子』比聽他答什麼更準",
+      "summary": "Vanta 第一位產品行銷回顧：那年夏天面試的創辦人談『好行銷』都只會舉 Nike 和 Apple；只有 CEO Christina 舉 The New Yorker、時尚品牌 Loewe，還有英國木器漆標語『does exactly what it says on the tin』（後來成公司價值觀）。差別在於她把行銷當成有品味、要親手做的 craft，而非照教科書外包的功能。洞見：看創辦人信手拈來的參照點，就知道他對那件事是真懂還是照抄。",
+      "tags": [
+        "hiring",
+        "founder-evaluation",
+        "taste"
+      ],
+      "url": "https://review.firstround.com/vanta-firsthand/",
+      "source": "Vanta 首位 PMM • First Round Review",
+      "sourceUrl": "https://review.firstround.com/vanta-firsthand/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-16",
