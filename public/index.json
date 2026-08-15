@@ -71694,8 +71694,64 @@
       "stars": 9939,
       "createdDate": "2025-10-14",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260816-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "divagr18/memlayer",
+      "summary": "3 行 code 幫任何 LLM 加上持久記憶。salience gate 過濾值得記的內容，vector（ChromaDB）+ knowledge graph（NetworkX）混合檢索，Fast tier <100ms。100% 本地、支援 Ollama，是給 agent 加長期記憶的輕量選擇。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/divagr18/memlayer",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260816-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "microsoft/Orchard",
+      "summary": "微軟開源的 agentic modeling 框架。核心是 Orchard Env——K8s-native sandbox，能開上千個隔離容器跑 multi-turn agent RL rollout。附 SFT/RL recipes（SWE/GUI）與 107K SWE 軌跡 dataset，用來訓練 coding/browser agent。",
+      "tags": [
+        "llm_training",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/microsoft/Orchard",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/08/14/microsoft-Orchard.html",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260816-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AIGeeksGroup/AnyDepth",
+      "summary": "zero-shot 單目深度估計新框架。核心 Simple Depth Transformer (SDT) decoder 比 DPT 少 85–89% 參數（只 5–13M），精度相當。可直接替換現有 codebase 裡的 DPT，已放出接 Depth Anything V2/V3 的權重。",
+      "tags": [
+        "cv_ocr"
+      ],
+      "url": "https://github.com/AIGeeksGroup/AnyDepth",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/08/14/AIGeeksGroup-AnyDepth.html",
+      "price": null,
+      "vram": "local-ready",
+      "license": "未指定"
     }
   ],
-  "lastUpdated": "2026-08-15",
-  "updatedAt": "2026-08-15T05:20:00+08:00"
+  "lastUpdated": "2026-08-16",
+  "updatedAt": "2026-08-16T05:10:00+08:00"
 }
