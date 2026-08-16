@@ -72017,6 +72017,27 @@
       "stars": 89,
       "createdDate": "2026-05-08",
       "license": "MIT"
+    },
+    {
+      "id": "20260817-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "THUDM/slime",
+      "summary": "智譜 GLM 全家桶（GLM-4.5 → GLM-5.2）背後的 RL post-training 框架，Megatron 訓練 + SGLang rollout，參數直接 pass-through。主打 correctness-first、可 train-only/rollout-only 分離除錯。",
+      "tags": [
+        "llm_training",
+        "rlhf",
+        "megatron",
+        "sglang"
+      ],
+      "url": "https://github.com/THUDM/slime",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "大規模 RL＋Megatron 多卡",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-16",
