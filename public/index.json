@@ -72249,6 +72249,126 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260817-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-17",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "NanoNets/Graft",
+      "summary": "給 Claude Code / Cursor / Codex 掛的 context 加速層：預先建 codebase 語意索引，讓 agent 少跑 grep、少燒 token（宣稱省 42% grep token）。",
+      "tags": [
+        "ai-agent",
+        "coding-tools",
+        "claude-code"
+      ],
+      "url": "https://github.com/NanoNets/Graft",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 3086,
+      "createdDate": "2026-07-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260817-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-17",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "lajosdeme/mole",
+      "summary": "Terminal 裡的 deep-research agent：強制 budget 上限、引用附可驗證出處、本地資料 privacy boundary。",
+      "tags": [
+        "ai-agent",
+        "research",
+        "cli"
+      ],
+      "url": "https://github.com/lajosdeme/mole",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 215,
+      "createdDate": "2026-08-01",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260817-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-17",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "fellowgeek/mcp-memory",
+      "summary": "MCP server，給 agent 持久長期記憶：OKF 結構 + SQLite FTS5 全文檢索，零雲端依賴。",
+      "tags": [
+        "mcp",
+        "agent-memory",
+        "local"
+      ],
+      "url": "https://github.com/fellowgeek/mcp-memory",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 175,
+      "createdDate": "2026-08-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260817-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-17",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "BaselAshraf81/eigendrum",
+      "summary": "畫任何形狀就聽到它當鼓面振動的聲音——用 eigenmode 算膜振動解，把幾何 render 成打擊樂音色。物理 DSP + 互動視覺。",
+      "tags": [
+        "audio",
+        "dsp",
+        "sound-design"
+      ],
+      "url": "https://github.com/BaselAshraf81/eigendrum",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 128,
+      "createdDate": "2026-08-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260817-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-17",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "chenxiachan/thoughtdag",
+      "summary": "把 LLM 對話從線性聊天變成可編輯的 thought graph：無限畫布、節點是想法、連線是 context。本週 Show HN 131 pts。",
+      "tags": [
+        "ai-tool",
+        "llm",
+        "context-graph"
+      ],
+      "url": "https://github.com/chenxiachan/thoughtdag",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 215,
+      "createdDate": "2026-02-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260817-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-17",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "StamManif/mcp-stama",
+      "summary": "Rust 寫的單一 binary MCP server，主打取代 Node.js/Python 版本、零依賴、極快啟動。",
+      "tags": [
+        "mcp",
+        "rust",
+        "single-binary"
+      ],
+      "url": "https://github.com/StamManif/mcp-stama",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 6,
+      "createdDate": "2026-08-13",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-17",
