@@ -72228,8 +72228,29 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260817-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-17",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Dario Amodei：贏回信任的不是行銷，是真的兌現承諾",
+      "summary": "Dario 回應『AI 領袖談風險害大眾反感』的說法：問題根源不是誰在示警，而是一場信任危機——人們早就不信任企業、政府、科技業。他認為華麗的正向行銷救不了，說『AI 會治好癌症』如今是老套而非鼓舞人心；唯一有效的是『真的把癌症治好』。對 AI 公司最中肯的批評，是至今還沒兌現造福世界的大承諾——那完全是自己的責任。",
+      "tags": [
+        "trust",
+        "leadership",
+        "ai-future",
+        "delivery-over-marketing"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+      "source": "Dario Amodei • via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-17",
-  "updatedAt": "2026-08-17T05:20:00+08:00"
+  "updatedAt": "2026-08-17T21:33:00Z"
 }
