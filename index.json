@@ -72038,8 +72038,198 @@
       "price": null,
       "vram": "大規模 RL＋Megatron 多卡",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260817-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "I thought I was building a C replacement. I was wrong",
+      "summary": "C3 作者反思把語言定位成「C alternative」是行銷失誤——今天講 C 已是系統語言，但他真正懷念的是 80/90 年代 Turbo Pascal 那種 procedural、坐下就寫的開發速度。追溯 BASIC→Pascal→OO→回歸 procedural 的心路，主張多數應用其實不需要 OO 架構。",
+      "tags": [
+        "new_languages",
+        "c3",
+        "procedural",
+        "language-design"
+      ],
+      "url": "https://c3-lang.org/blog/i_thought_i_was_building_a_c_replacement/",
+      "source": "C3 Lang Blog",
+      "sourceUrl": "https://c3-lang.org/blog/i_thought_i_was_building_a_c_replacement/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260817-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude System Prompts (公開頁)",
+      "summary": "Anthropic 官方 docs 開了 release-notes/system-prompts 頁，逐版列出 claude.ai 網頁 / iOS / Android app 實際使用的 system prompt（含日期、版本差異 bold 標注），不套用到 API。對研究 prompt 設計與對齊行為是一手材料，HN 438 分熱議。",
+      "tags": [
+        "ai_agent",
+        "system-prompt",
+        "anthropic",
+        "prompt-engineering"
+      ],
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "source": "Anthropic Docs",
+      "sourceUrl": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260817-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MathCode — Frontier Mathematical Coding Agent",
+      "summary": "終端機 AI coding agent，內建數學形式化引擎：把自然語言數學題自動轉成 Lean 4 定理並嘗試形式證明。持久 Lean REPL 把 compile check 從 ~30s 壓到 ~0.4s，可重用 theorem/axiom library、tree-of-subgoals 平行證明、multi-planner、Obsidian 知識圖。預設接 codex CLI。",
+      "tags": [
+        "ai_agent",
+        "coding-agent",
+        "lean4",
+        "formal-proof",
+        "paradigm-shift"
+      ],
+      "url": "https://math-ai-org.github.io/mathcode/",
+      "source": "math-ai-org",
+      "sourceUrl": "https://math-ai-org.github.io/mathcode/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260817-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Protecting the Rust standard library from accidental breakage",
+      "summary": "Rust 標準庫現在也導入 cargo-semver-checks 擋意外破壞。作者列出 2020 以來多起 std 無意間破壞 stable/async-std/tokio 的案例，結論：人類無法可靠抓出 accidental breakage——連原 PR 資深作者與 reviewer 都沒看出。整合花了數月、多位 Rustacean、15000+ 行程式碼。",
+      "tags": [
+        "rust",
+        "new_languages",
+        "cargo-semver-checks",
+        "api-stability"
+      ],
+      "url": "https://predr.ag/blog/protecting-the-rust-stdlib-from-breakage/",
+      "source": "predr.ag",
+      "sourceUrl": "https://predr.ag/blog/protecting-the-rust-stdlib-from-breakage/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260817-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Models Are Getting Dumber on Purpose",
+      "summary": "反直覺分析：推理分數狂飆、每 token 算力狂降（GLM-5.2 約 40B active 拿 AIME 99.2%、Qwen3.5 9B 塞進 6GB VRAM），但同批模型問純事實題就翻車——SimpleQA 冠軍才 53%，小模型幻覺率 80-82%。事實佔權重（約 2 bits/param），推理可蒸餾；labs 刻意拿 world knowledge 換 reasoning。",
+      "tags": [
+        "ai_models",
+        "distillation",
+        "quantization",
+        "reasoning",
+        "paradigm-shift"
+      ],
+      "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+      "source": "w4g1.dev",
+      "sourceUrl": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260817-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Protobuf finally has LSP support",
+      "summary": "Buf 發布首個 production-grade Protobuf LSP server，補上 go-to-definition、code completion、find references、語意 highlight——由 Buf CLI 驅動，VSCode 裝 Buf extension 或 Neovim 接 CLI 即可。Protobuf 首次有現代 IDE 支援。",
+      "tags": [
+        "protobuf",
+        "lsp",
+        "grpc",
+        "dev-tooling"
+      ],
+      "url": "https://buf.build/blog/protobuf-lsp",
+      "source": "Buf Blog",
+      "sourceUrl": "https://buf.build/blog/protobuf-lsp",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260817-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Access for Workers",
+      "summary": "針對「隨手 vibe code 出來的內部 app 常忘了加驗證」的痛點，Cloudflare 讓你把 Access policy 直接掛在 Worker 上——routes、custom domain、workers.dev、preview 全部自動套用，不必逐個路由設定。",
+      "tags": [
+        "devops_infra",
+        "cloudflare-workers",
+        "zero-trust",
+        "edge"
+      ],
+      "url": "https://blog.cloudflare.com/workers-protected-by-access/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workers-protected-by-access/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260817-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Who Are the Token Brokers?",
+      "summary": "一手觀察 off-market inference 灰市：有人專門收購 startup 用不完的 Anthropic/OpenAI credit 再轉賣。Founder 信箱塞滿「我有數百萬 API credit 求合作」「直連 Claude/OpenAI 比 list 便宜 40-50%、只換一支 key」。作者直接聯絡 broker，對方號稱單帳號一天可燒 $100k。",
+      "tags": [
+        "llm-security",
+        "ai-economics",
+        "token-broker",
+        "inference"
+      ],
+      "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+      "source": "Vectoral",
+      "sourceUrl": "https://vectoral.com/blog/who-are-the-token-brokers",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260817-sw-009",
+      "radar": "software-dev",
+      "date": "2026-08-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "The Case Against Formal Verification, 50 Years Later",
+      "summary": "重探 1979 年〈Social Processes and Proofs of Theorems and Programs〉論戰在今天的意義——形式驗證推廣 50 年後為何仍非主流。從軟體的社會過程角度質疑「證明即信任」的假設。HN 熱議中。",
+      "tags": [
+        "formal-verification",
+        "software-engineering",
+        "correctness"
+      ],
+      "url": "https://ivan-gavran.github.io/0-social-processes-paper",
+      "source": "Ivan Gavran",
+      "sourceUrl": "https://ivan-gavran.github.io/0-social-processes-paper",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-16",
-  "updatedAt": "2026-08-16T05:10:00+08:00"
+  "lastUpdated": "2026-08-17",
+  "updatedAt": "2026-08-17T05:20:00+08:00"
 }
