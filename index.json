@@ -72369,6 +72369,26 @@
       "stars": 6,
       "createdDate": "2026-08-13",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260818-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Aurora Audio Studio",
+      "summary": "本地優先的 Windows AI 音頻工作台，把音樂生成（ACE-Step 1.5）、AI 配音/聲音克隆（Qwen3-TTS）、歌聲轉換（Seed-VC 44.1k）、AI 分軌（BS-RoFormer/Demucs 4）、MIDI 扒譜（YourMT3+）、影片字幕（Faster-Whisper）整合到同一個桌面入口，全程本地執行、不走雲端。",
+      "tags": [
+        "svc_voice",
+        "audio_music_ai",
+        "tts_speech"
+      ],
+      "url": "https://github.com/swy2018/Aurora-Audio-Studio",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "local-ready",
+      "license": "GPL-3.0"
     }
   ],
   "lastUpdated": "2026-08-17",
