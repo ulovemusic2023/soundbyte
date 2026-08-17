@@ -72389,6 +72389,146 @@
       "price": null,
       "vram": "local-ready",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20260818-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Stripe 以 $7B+ 收購 OpenRouter",
+      "summary": "Bloomberg 報導 Stripe 敲定收購 model-gateway OpenRouter（8M 用戶、400+ 模型、5 月估值 $1.3B）。支付巨頭收編 AI model marketplace/routing 這層，控制平面圍繞 model 而非 API 的趨勢再進一步。",
+      "tags": [
+        "ai-gateway",
+        "ai_agent",
+        "paradigm-shift"
+      ],
+      "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260818-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Wiz Red Agent 經 Copilot 輔助 PR 攻進 Snowflake 內部 Jira",
+      "summary": "Wiz 自主 AI 資安 agent 掃到 Snowflake 公開 repo 的 GitHub Actions script injection。漏洞由掛名 Copilot Autofix co-author 的 squash commit 引入，GitHub AI 資安 review 沒抓到；AI 產碼+AI review 一起放行 critical vuln。",
+      "tags": [
+        "ai-coding",
+        "security",
+        "paradigm-shift"
+      ],
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "source": "Wiz Research",
+      "sourceUrl": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260818-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GPU Offload in Rust：零開銷、跨廠商、記憶體安全",
+      "summary": "新論文把 GPU kernel 編譯做進 rustc+LLVM Offload backend，用 ownership/noalias 管 host↔device 搬移，不必落回 unsafe 或綁 vendor DSL。RAJAPerf 上效能與手調 CUDA/HIP C++ 打平。",
+      "tags": [
+        "rust",
+        "new_languages",
+        "gpu"
+      ],
+      "url": "https://arxiv.org/abs/2608.13759",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2608.13759",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260818-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DuckDB v2.0「Cyanoptera」預覽：in-process DB 長出 server 模式",
+      "summary": "自 v1.5 起 10,000+ commit。quack extension+CONNECT 讓 DuckDB process 可透過網路 serve、另一個 attach route query；另有 triggers、VARIANT 型別、async I/O、新 SQL parser 與 storage format。官方定調 the year of DuckDB as a server。",
+      "tags": [
+        "duckdb",
+        "database",
+        "architecture"
+      ],
+      "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+      "source": "DuckDB Blog",
+      "sourceUrl": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260818-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Red Queen Gödel Machine：讓 evaluator 跟 agent 一起進化",
+      "summary": "Cambridge+NVIDIA+Flower Labs：self-improving agent 只能好到打分它的 test 為止，固定 benchmark 就是天花板。做法是讓 agent 與 evaluator 共同演化，agent 變強、評測同步變難，bar 一直往上抬，並降低算力成本。",
+      "tags": [
+        "self-improving-ai",
+        "ai_models",
+        "paradigm-shift"
+      ],
+      "url": "https://arxiv.org/abs/2606.26294",
+      "source": "Cambridge CST",
+      "sourceUrl": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260818-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwen 3.8 27B：優秀，但預設 xhigh reasoning「想太多」",
+      "summary": "Alibaba Apache 2、27B、vision-capable LLM，自報 benchmark 勝過自家 closed-weight Qwen 3.7-Plus。Simon Willison 實測：預設 reasoning_effort=xhigh 連瑣事都狂想到把 context 用光，調 medium/low 或開滿 262K context 才實用。",
+      "tags": [
+        "qwen",
+        "ai_models",
+        "local-llm"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260818-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GPT-5.6 Sol 是 OpenAI 至今最強視覺模型",
+      "summary": "Roboflow VLM benchmark：Sol 在 object detection 從 GPT-5.5 的 13.8 mAP@50 跳到 46.2，counting 進步最明顯；Terra/Luna 44.7/43.3 緊追。呼應發表會主打的 computer use/UI agent。",
+      "tags": [
+        "gpt-5.6",
+        "ai_models",
+        "computer-use"
+      ],
+      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "source": "Roboflow",
+      "sourceUrl": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-17",
