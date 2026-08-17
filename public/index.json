@@ -72529,6 +72529,27 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260818-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-18",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Without a Theory of Intelligence",
+      "summary": "Kevin Kelly 把 AI 重新定義成一台「認知迴旋加速器」——不只是替我們做事的工具，而是第一台能反過來觀察人類心智的顯微鏡。我們至今對智能是什麼、最小構成單位、如何量化一無所知；AI 會是讓我們解剖思考本身的那把尺。對創業者的啟示：真正的槓桿不在自動化既有工作，而在 AI 打開的、過去連想都想不到的新問題空間。",
+      "tags": [
+        "mental-model",
+        "ai",
+        "theory-of-intelligence",
+        "cognition"
+      ],
+      "url": "https://kk.org/thetechnium/without-a-theory-of-intelligence/",
+      "source": "Kevin Kelly (The Technium)",
+      "sourceUrl": "https://kk.org/thetechnium/without-a-theory-of-intelligence/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-17",
