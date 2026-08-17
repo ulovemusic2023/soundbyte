@@ -72550,6 +72550,186 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260818-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "yetone/cumora",
+      "summary": "avante.nvim 作者 yetone 的新作：AI agent 也是正式隊友的跨平台團隊聊天室。可接雲端模型或 BYO Claude Code / Codex 當大腦。",
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "team-chat"
+      ],
+      "url": "https://github.com/yetone/cumora",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-04+stars:>50&type=repositories",
+      "stars": 998,
+      "createdDate": "2026-08-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260818-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "tornikegomareli/Talkify",
+      "summary": "macOS 上的本地語音聽寫，on-device 轉錄、免費、隱私優先。做音訊/創作者工作流時當快速 dictation。",
+      "tags": [
+        "tts",
+        "speech-to-text",
+        "local",
+        "macos"
+      ],
+      "url": "https://github.com/tornikegomareli/Talkify",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-04+stars:>20+topic:text-to-speech&type=repositories",
+      "stars": 439,
+      "createdDate": "2026-08-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260818-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "Endokelp/Endoplexity",
+      "summary": "用自己的 Claude / Cursor 訂閱驅動 agentic 瀏覽器操控，不必另外燒 API 費。",
+      "tags": [
+        "browser-agent",
+        "ai-agent"
+      ],
+      "url": "https://github.com/Endokelp/Endoplexity",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-04+stars:>20+topic:ai-agent&type=repositories",
+      "stars": 208,
+      "createdDate": "2026-08-14",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260818-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "jaredrhod/barehands",
+      "summary": "用 webcam 做手勢追蹤來操控 AI，沒有頭盔沒有手把，徒手在螢幕上移動東西。",
+      "tags": [
+        "hand-tracking",
+        "ui",
+        "computer-vision"
+      ],
+      "url": "https://github.com/jaredrhod/barehands",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-04+stars:>20+topic:claude-code&type=repositories",
+      "stars": 157,
+      "createdDate": "2026-08-15",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260818-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "seyedehsanhadi/sloptrim",
+      "summary": "本地端偵測 AI 味寫作的工具，幫 agent 存下的每個 prose 檔打分。純 Python 標準庫、無網路、無模型。",
+      "tags": [
+        "anti-slop",
+        "writing",
+        "local"
+      ],
+      "url": "https://github.com/seyedehsanhadi/sloptrim",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-04+stars:>20+topic:claude-code&type=repositories",
+      "stars": 154,
+      "createdDate": "2026-08-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260818-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "danyuchn/iso-24495-skill",
+      "summary": "把 ISO 24495-1 淺白語言規則做成 Claude Code skill，雙語（English + 繁體中文淺白改寫）。寫社群/文件時可當 lint。",
+      "tags": [
+        "claude-code",
+        "writing",
+        "zh-tw"
+      ],
+      "url": "https://github.com/danyuchn/iso-24495-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-04+stars:>20+topic:claude-code&type=repositories",
+      "stars": 108,
+      "createdDate": "2026-08-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260818-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "macro-inc/macro",
+      "summary": "團隊統一工作區：email、chat、docs、tasks、agents、calls、CRM 用 @ 串起來，共享 AI memory。",
+      "tags": [
+        "workspace",
+        "ai-agent",
+        "productivity"
+      ],
+      "url": "https://github.com/macro-inc/macro",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 3537,
+      "createdDate": "2025-11-08",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260818-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "nilbuild/claude-run",
+      "summary": "一個漂亮的本地 web UI，用來瀏覽 Claude Code 的對話歷史。",
+      "tags": [
+        "claude-code",
+        "dev-tool",
+        "ui"
+      ],
+      "url": "https://github.com/nilbuild/claude-run",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 642,
+      "createdDate": "2025-12-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260818-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-18",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "Wartybix/Constrict",
+      "summary": "把本地影片壓到指定檔案大小，支援 H.264 / HEVC / AV1 / VP9。要塞進平台上傳上限時很省事。",
+      "tags": [
+        "video",
+        "ffmpeg",
+        "encoding"
+      ],
+      "url": "https://github.com/Wartybix/Constrict",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 706,
+      "createdDate": "2024-12-30",
+      "license": "GPL-3.0"
     }
   ],
   "lastUpdated": "2026-08-17",
