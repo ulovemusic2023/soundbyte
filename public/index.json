@@ -72730,6 +72730,135 @@
       "stars": 706,
       "createdDate": "2024-12-30",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20260820-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Mojo🔥 fully open source under Apache 2.0",
+      "summary": "Modular 把 Mojo 編譯器與工具鏈全部以 Apache 2.0（含 LLVM 例外）開源，兌現 2023 年承諾。上週剛發 1.0，如今整個 compiler/toolchain 進 modular GitHub。Mojo 已從『Python superset』轉為定位 GPU/AI accelerator 導向、語法近 Python 的獨立語言。",
+      "tags": [
+        "mojo",
+        "new-languages",
+        "gpu",
+        "open-source",
+        "paradigm-shift"
+      ],
+      "url": "https://github.com/modular/modular",
+      "source": "Modular Blog",
+      "sourceUrl": "https://www.modular.com/blog/mojo-open-source",
+      "stars": null,
+      "createdDate": "2026-08-20",
+      "license": null
+    },
+    {
+      "id": "20260820-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Go 1.27 released",
+      "summary": "Go 1.27 語言層三大更新：generic methods、struct literal 可用巢狀/embedded 欄位當 key、function type inference 擴及所有 assignment context。runtime size-specialized 記憶體配置讓 <80B 小物件配置成本降最多 30%，並新增 goroutineleak profile。",
+      "tags": [
+        "golang",
+        "new-languages",
+        "generics",
+        "runtime"
+      ],
+      "url": null,
+      "source": "The Go Blog",
+      "sourceUrl": "https://go.dev/blog/go1.27",
+      "stars": null,
+      "createdDate": "2026-08-20",
+      "license": null
+    },
+    {
+      "id": "20260820-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ornith-1.5: 從 self-scaffolding 到端到端 self-improvement",
+      "summary": "Ornith-1.5 把自我改進迴圈擴到『模型自提更難新任務→產 task-specific scaffold→跑 rollout 餵 RL』，不再靠人工 curated task。旗艦 397B 在 Terminal-Bench 2.1(86.1)/DeepSWE(56) 追平 Claude Opus 4.8；9B dense 量化後可上手機。",
+      "tags": [
+        "ai-agent",
+        "self-improvement",
+        "rl",
+        "open-weights",
+        "paradigm-shift"
+      ],
+      "url": null,
+      "source": "Ornith",
+      "sourceUrl": "https://ornith.ai/ornith_1_5.html",
+      "stars": null,
+      "createdDate": "2026-08-20",
+      "license": null
+    },
+    {
+      "id": "20260820-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 重評 Workers 上的 remote Spectre 攻擊",
+      "summary": "Cloudflare 在 Workers production 重建 remote Spectre PoC，發現 Dynamic Process Isolation(DyPrIs) 一實作限制，穩定洩漏 12 bit/s、99% 準確。已改良 DyPrIs、整合 V8 Sandbox 與 in-process isolation；production 已緩解，三年無被利用跡象。",
+      "tags": [
+        "security",
+        "spectre",
+        "side-channel",
+        "workers",
+        "architecture"
+      ],
+      "url": "https://arxiv.org/pdf/2608.17043",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/",
+      "stars": null,
+      "createdDate": "2026-08-20",
+      "license": null
+    },
+    {
+      "id": "20260820-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Unsloth Dynamic 3.0 GGUFs",
+      "summary": "Unsloth Dynamic v3.0 量化（先以 Qwen3.8-27B）：純 post-training quantization（不用 QAT/QAD），靠更高品質、針對 agentic coding/chat/多語的 imatrix calibration 加改良 layer selection，同 size 下 top-1% 準確度較他家 +10%，相容 llama.cpp。",
+      "tags": [
+        "quantization",
+        "gguf",
+        "local-inference",
+        "qwen"
+      ],
+      "url": null,
+      "source": "Unsloth Docs",
+      "sourceUrl": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+      "stars": null,
+      "createdDate": "2026-08-20",
+      "license": null
+    },
+    {
+      "id": "20260820-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-20",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 量測 RFC 9234（BGP Role model）採用率",
+      "summary": "RFC 9234 讓路由器靠 BGP Roles + Only-to-Customer(OTC) attribute 自行拒絕 route leak。Cloudflare 實測採用率，卻發現兩家 Tier 1 網路異常地剝除 OTC attribute——原意防洩漏的機制反被上游破壞。",
+      "tags": [
+        "networking",
+        "bgp",
+        "routing",
+        "security"
+      ],
+      "url": null,
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/rfc9234-bgp-role-model/",
+      "stars": null,
+      "createdDate": "2026-08-20",
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-17",
