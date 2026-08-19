@@ -72859,6 +72859,46 @@
       "stars": null,
       "createdDate": "2026-08-20",
       "license": null
+    },
+    {
+      "id": "20260820-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-20",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Stripe 收購 OpenRouter：把 AI 模型市場「聚合化」，翻轉商業模式",
+      "summary": "Ben Thompson 觀點：Stripe 傳出收購 OpenRouter，是押注未來是一個「多模型市場」——當沒有單一模型稱霸，把所有模型集中、路由的聚合層本身就變成價值所在。更關鍵的是它翻轉了商業模式：Stripe 從收單金流延伸到 AI token 金流，用同一套「當所有人的收銀台」邏輯去 aggregate AI。框架：當底層商品化（模型變多、變便宜），賺錢的位置會往「聚合＋分發」移動。",
+      "tags": [
+        "aggregation-theory",
+        "business-model",
+        "ai-infra"
+      ],
+      "url": "https://stratechery.com/2026/stripe-acquiring-openrouter-aggregating-ai-flipping-the-business-model/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/stripe-acquiring-openrouter-aggregating-ai-flipping-the-business-model/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260820-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-20",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Modular 開源 Mojo，並公開放棄「Python superset」創始承諾",
+      "summary": "Modular 今天把 Mojo 編譯器與工具鏈以 Apache 2 開源。真正的思考點不是「又一個語言開源」，而是它公開放棄了創始承諾——原本要做 Python 的完整 superset（讓現有 Python code 直接跑），2025 年 8 月改口：「Mojo 可能、也可能不會變成 Python 的完整 superset，就算沒有也沒關係。」他們的賭注是：AI 輔助的 migration 工具會讓相容性變得沒那麼重要，所以不必為了向後相容綁死今天的設計。框架：當環境（AI tooling）改變了成本結構，敢砍掉創始約束，比死守承諾更有價值。",
+      "tags": [
+        "strategic-pivot",
+        "conviction",
+        "open-source"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
+      "source": "Modular（via Simon Willison）",
+      "sourceUrl": "https://www.modular.com/blog/mojo-open-source",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-17",
