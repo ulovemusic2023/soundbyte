@@ -72899,6 +72899,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260820-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-20",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "CopilotKit/openbot",
+      "summary": "CopilotKit（AG-UI Protocol 作者）的 open-source AI coworkers：每個 agent 有自己的一台電腦（瀏覽器、檔案、工具），動作事前決策、事後留紀錄，可接任何 AG-UI agent。",
+      "tags": [
+        "ai-agent",
+        "agent-sandbox",
+        "ag-ui"
+      ],
+      "url": "https://github.com/CopilotKit/openbot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/CopilotKit/openbot",
+      "stars": 273,
+      "createdDate": "2026-08-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260820-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-20",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "adambenhassen/minimax-music-ui",
+      "summary": "自架 MiniMax-Music3 推論伺服器的 Suno 風 web UI，本機跑 AI 生音樂配像樣介面。",
+      "tags": [
+        "music-generation",
+        "music-ai",
+        "self-hosted"
+      ],
+      "url": "https://github.com/adambenhassen/minimax-music-ui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/adambenhassen/minimax-music-ui",
+      "stars": 48,
+      "createdDate": "2026-08-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260820-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-20",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "stronghamjji/PersoDub",
+      "summary": "100% 本機影片配音，用你自己的聲音重配影片，無雲端無上傳。",
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "audio"
+      ],
+      "url": "https://github.com/stronghamjji/PersoDub",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/stronghamjji/PersoDub",
+      "stars": 23,
+      "createdDate": "2026-08-07",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-17",
