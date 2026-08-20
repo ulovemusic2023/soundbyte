@@ -72980,8 +72980,152 @@
       "price": null,
       "vram": "local-ready",
       "license": "MIT"
+    },
+    {
+      "id": "20260821-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "xAI Grok Build CLI 被抓到把整個 repo + .env 上傳雲端",
+      "summary": "獨立研究者 Cerblab 實證：Grok Build CLI 在正常消費者登入下，把讀到的檔案（含 .env secrets）逐字未遮罩傳給 xAI，並獨立於 agent 讀什麼、直接把整個 repo（每個 tracked 檔 + git history）打包 git bundle 上傳到 grok-code-session-traces GCS bucket。用 prompt『reply OK, do not read any files』仍上傳整包，clone 回來連 never_read_canary.txt 都在；12GB never-read repo 移了 5.10GiB，是 model-turn 通道的 ~27,800×。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "security",
+        "data-exfiltration"
+      ],
+      "url": "https://blog.pragmaticengineer.com/grolk-cli-uploaded-all-your-files-to-the-cloud/",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://blog.pragmaticengineer.com/grolk-cli-uploaded-all-your-files-to-the-cloud/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260821-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "惡意 Rust crate arrayref 在編譯期跑 build-time payload",
+      "summary": "2026-08-20 crates.io 出現遭入侵的 arrayref 0.3.10，新增對 typosquat crate proc-macro1 的依賴，其 build script 在專案編譯時下載並執行遠端 binary——光是 compile 就會觸發。maintainer droundy 帳號疑遭盜、GitHub repo 全 404；proc-macro1 假冒 David Tolnay、src 直接抄 proc-macro2 讓 build 照常過，C2 位址以 base64 分段藏在 build.rs。crates.io 已下架。",
+      "tags": [
+        "supply-chain-security",
+        "rust",
+        "crates-io",
+        "typosquat"
+      ],
+      "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+      "source": "SafeDep",
+      "sourceUrl": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260821-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare OAuth 推 task-based 同意：scope 可標為 optional",
+      "summary": "Cloudflare OAuth 新增 scope customization：client owner 可把個別 scope 標為 optional，讓使用者授權當下只勾選較窄子集，取代 all-or-nothing 同意畫面。直指 MCP server 常請求超廣權限但使用者不想全給的問題，把最小授權內建進 consent flow，開發者不必自建 scope 選擇頁。",
+      "tags": [
+        "paradigm-shift",
+        "agent-authz",
+        "oauth",
+        "mcp"
+      ],
+      "url": "https://blog.cloudflare.com/task-based-oauth-consent/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/task-based-oauth-consent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260821-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Jeremy Morrell：LLM 時代的可擴充軟體",
+      "summary": "LLM 大幅降低寫 extension 的成本、沙箱 primitive 降低部署與安全成本，讓『穩固可究責核心 + 使用者用講的就能無限擴充』成新型態（以 Pi 為例，YC 稱 Small Software / Software for One）。過去 pluggable 多限本地專業工具，現在長尾需求首度能在 web 規模化被滿足。",
+      "tags": [
+        "paradigm-shift",
+        "sandboxing",
+        "small-software",
+        "llm-native"
+      ],
+      "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+      "source": "Jeremy Morrell",
+      "sourceUrl": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260821-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：conceptual integrity 與『數 code 行數』",
+      "summary": "Simon 主張 LOC 在 agent 時代其實有意義：agent 讓單人產能達 100×，但新的限制因素是『認知容量』——一個人 hold 不住 100 倍的 code，故團隊仍需存在以 load balance 認知負荷。並重提 Mythical Man-Month 的 conceptual integrity：agent 五分鐘生功能，卻更難維持系統整體無驚喜（比作 Winchester Mystery House）。",
+      "tags": [
+        "ai-coding",
+        "conceptual-integrity",
+        "productivity"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260821-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Huzzah：declarative、persistent 的 AI coding 新典範",
+      "summary": "Daniel Vaughn 的實驗編輯器，對治 coding agent 三痛點——prompt 被丟棄無人類意圖紀錄、imperative 逐步指令重複燒 token、自然語言多為社交非資訊。Huzzah 改以 pseudocode（宣告式）、declarative、persistent 的 prompt 取代 longform/imperative/transient chat，把『人要什麼』留成可持久的中央權威。",
+      "tags": [
+        "ai-coding",
+        "developer-tools",
+        "show-hn"
+      ],
+      "url": "https://www.danielvaughn.dev/posts/huzzah/",
+      "source": "Daniel Vaughn (Show HN)",
+      "sourceUrl": "https://www.danielvaughn.dev/posts/huzzah/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260821-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Pulse：code review 負載暴增成新瓶頸",
+      "summary": "AI 產碼變多變好後，建軟體瓶頸從 coding 移到 review。自 2 月起 AI code review 工具爆發——CodeRabbit / Greptile / Qodo / SonarQube(Gitar)，加上 harness 自帶的 Claude Code / Cursor / Copilot review，及有 codebase context 的 Sentry Seer、Linear。大公司自建如 Uber Code Inbox（smart assignment + Risk Profiles 估變更影響）。",
+      "tags": [
+        "ai-code-review",
+        "engineering-management",
+        "workflow"
+      ],
+      "url": "https://blog.pragmaticengineer.com/the-pulse-new-trend-concern-about-massive-increase-in-code-review-load/",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://blog.pragmaticengineer.com/the-pulse-new-trend-concern-about-massive-increase-in-code-review-load/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-17",
-  "updatedAt": "2026-08-17T21:33:00Z"
+  "lastUpdated": "2026-08-21",
+  "updatedAt": "2026-08-21T05:20:00+08:00"
 }
