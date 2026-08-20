@@ -72959,6 +72959,27 @@
       "stars": 23,
       "createdDate": "2026-08-07",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260821-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "slvDev/esp32-ai",
+      "summary": "把 28.9M 參數語言模型整顆塞進 ESP32-S3 微控制器，離線跑出 9.88 tok/s。用 Google Gemma 3n 的 Per-Layer Embeddings：25M 參數 embedding table 留在 flash，每 token 只撈 ~450 bytes。TinyStories 玩具模型，但記憶體分層架構跟 colibri 同一 paradigm。",
+      "tags": [
+        "llm_inference",
+        "on-device",
+        "4-bit",
+        "edge"
+      ],
+      "url": "https://github.com/slvDev/esp32-ai",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://github.com/slvDev/esp32-ai",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-17",
