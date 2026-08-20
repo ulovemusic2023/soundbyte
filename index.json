@@ -73124,6 +73124,226 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260821-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "vercel-labs/fx",
+      "summary": "Vercel Labs 出的 Unix-like coding agent，把 agent 當成可以 pipe/組合的終端工具，而不是黑盒 chat。強調用 Unix 哲學組裝 agent workflow。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "cli"
+      ],
+      "url": "https://github.com/vercel-labs/fx",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1620,
+      "createdDate": "2026-08-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260821-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Leonxlnx/unlazy",
+      "summary": "對抗 AI agent「偷懶／underthinking／提早收工」的 skill。核心是 Depth Tree 方法：把任務切 N 層，每個 leaf 都給整個任務的時間預算，讓投入隨深度成倍放大。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "agent-skill"
+      ],
+      "url": "https://github.com/Leonxlnx/unlazy",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 467,
+      "createdDate": "2026-08-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20260821-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Spielewoy/autoprompt-skill",
+      "summary": "coding-agent skill，號稱在 agentic coding 任務上把失敗率砍掉 45%。自動幫你把模糊指令補成結構化 prompt 再交給 agent 執行。",
+      "tags": [
+        "coding-agent",
+        "agent-skill",
+        "prompt"
+      ],
+      "url": "https://github.com/Spielewoy/autoprompt-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 442,
+      "createdDate": "2026-08-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260821-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "cinderline/northcinder",
+      "summary": "buyer-run、去廣告的購物 agent MCP：deterministic ranking、簽章式 purchase mandate、本地 audit trail。把「AI 幫你買東西」做成可稽核、不被廣告污染的協議。",
+      "tags": [
+        "mcp",
+        "ai-agent",
+        "shopping"
+      ],
+      "url": "https://github.com/cinderline/northcinder",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1198,
+      "createdDate": "2026-08-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260821-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Yuzzyuk/marketing-os",
+      "summary": "把整個行銷部門包成一個 Claude skill：14 個模組，含 0-100 評分的 audit、18 招 hook engine、文案先打分再給你看、廣告診斷、GEO、email。Claude / Codex / Cursor 都能跑。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "marketing"
+      ],
+      "url": "https://github.com/Yuzzyuk/marketing-os",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 234,
+      "createdDate": "2026-08-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260821-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "soumatheusgomes/vibe-coding-toolkit",
+      "summary": "從實戰生產環境萃取出來的 Claude Code 工具包：plugins、subagent orchestration、quality gates、可直接複製的 prompts。",
+      "tags": [
+        "claude-code",
+        "subagent",
+        "toolkit"
+      ],
+      "url": "https://github.com/soumatheusgomes/vibe-coding-toolkit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 207,
+      "createdDate": "2026-08-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260821-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Avijit07x/claude-db",
+      "summary": "給 Claude Code 的持久記憶層，BYO database（自己接資料庫）。讓 agent 跨 session 記得專案脈絡，不用每次重講。",
+      "tags": [
+        "claude-code",
+        "memory",
+        "database"
+      ],
+      "url": "https://github.com/Avijit07x/claude-db",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 160,
+      "createdDate": "2026-08-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260821-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "niclasvestlund-YT/vibepulse",
+      "summary": "桌上型 AMOLED 小螢幕，即時顯示 Claude Code / Codex 的用量、agent 活動，agent 卡住等你輸入時亮出 NEEDS YOU。ESP32-S3 + 純 stdlib 的 Mac service，資料不出 LAN。",
+      "tags": [
+        "claude-code",
+        "hardware",
+        "esp32"
+      ],
+      "url": "https://github.com/niclasvestlund-YT/vibepulse",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 140,
+      "createdDate": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260821-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "syv-ai/qwen38-27b-rtx3090",
+      "summary": "在單張 RTX 3090 上跑 Qwen3.8-27B（vLLM）：64 併發約 1000 tok/s、單人約 114-124 tok/s、150k-262k context。附 patches、requant 腳本與 benchmark。本地推論實測參考。",
+      "tags": [
+        "local-llm",
+        "vllm",
+        "inference"
+      ],
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 223,
+      "createdDate": "2026-08-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260821-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "ryanlab/bivor",
+      "summary": "給 pi coding agent 的 macOS 桌面 workbench。這一輪 pi / Oh My Pi 生態在冒頭，bivor 提供視覺化的 session / 工具核可介面。",
+      "tags": [
+        "coding-agent",
+        "macos",
+        "pi"
+      ],
+      "url": "https://github.com/ryanlab/bivor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 206,
+      "createdDate": "2026-08-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260821-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-08-21",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "nanguoyu/minirun-app",
+      "summary": "在 iPhone 16 Pro 上跑 Kimi K3（2.8T 參數 / 1.56TB）：權重從 SSD 依你設的 memory budget 串流進來。Mac 與 iPhone 都免費、本地。on-device 推論的極限實驗。",
+      "tags": [
+        "local-llm",
+        "on-device",
+        "apple"
+      ],
+      "url": "https://github.com/nanguoyu/minirun-app",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 28,
+      "createdDate": "2026-08-14",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-21",
