@@ -73453,6 +73453,107 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260822-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-22",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Conceptual integrity and counting lines of code",
+      "summary": "大家常說用行數衡量生產力沒意義，Simon Willison 反駁：在 AI agent 時代反而有意義。過去頂尖工程師一天最多產出約 200 行可上線程式碼（多數日子只有 50-60 行），這是人類硬上限。若 agent 讓你一天穩定產出 1000 行同品質、可維護、有測試的程式碼，那就是實打實的躍升。重點不是行數本身，而是單位時間能交付的可靠複雜度被放大了。",
+      "tags": [
+        "productivity",
+        "ai-coding",
+        "mental-model"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260822-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-22",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Extensible Software in the age of LLMs",
+      "summary": "LLM 大幅降低寫擴充功能的成本，現代 sandbox 又壓低部署與安全成本。Jeremy Morrell 的假設：新機會是把產品做成穩固、可問責的核心 (accountable core)，讓使用者透過 LLM 自行填空擴充。等於把給使用者超能力變成產品策略——AI 時代做工具的新護城河思路。",
+      "tags": [
+        "product-strategy",
+        "llm",
+        "extensibility"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
+      "source": "Jeremy Morrell (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260822-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-08-22",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "GEO 正在取代 SEO：ChatGPT 搜尋大量改用 site: operator",
+      "summary": "Promptwatch 追蹤數據：GPT-5.6 上線後，ChatGPT 搜尋帶 site: operator 的 fanout 查詢從長期 0.3-0.5% 暴增到 8/8 的 16-17%。帶出新戰場 GEO (Generative Engine Optimization)——為 chatbot 回答做優化，而非傳統 Google 排名。對靠內容分發的人：被 AI 引用的能見度可能比傳統 SEO 更關鍵。",
+      "tags": [
+        "distribution",
+        "geo",
+        "seo",
+        "content-marketing"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "source": "Simon Willison / Promptwatch",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260822-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-08-22",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Stop Making TUIs — 該做原生 UI 了",
+      "summary": "Thomas Ptacek 主張：coding agent 已把做出堪用 GUI 的成本壓到幾乎為零，別再為個人小工具做 TUI/CLI，直接做原生 app。挑戰：把你 500 個丟棄的 CLI 挑一個做成原生 UI，它大概會改變你思考的方式。門檻消失後，過去不值得做 UI 的取捨要全部重算。",
+      "tags": [
+        "vibe-coding",
+        "tooling",
+        "native-ui"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
+      "source": "Thomas Ptacek (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260822-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-08-22",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "把思考外包給 AI，反而逼你學更多",
+      "summary": "Matt Webb 用 ChatGPT 當互動家教學會四元數 (quaternions) 來完成 app——不是叫它寫 code，是叫它教他。過去讀書、問數學家朋友學不會的東西，靠一個有耐心的互動導師終於搞懂。AI 當老師、不是當代工。",
+      "tags": [
+        "ai-learning",
+        "leverage",
+        "quotable"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/21/matt-webb/",
+      "source": "Matt Webb (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/21/matt-webb/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-22",
