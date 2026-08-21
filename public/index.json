@@ -73365,8 +73365,96 @@
       "stars": 28,
       "createdDate": "2026-08-14",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260822-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Stop Making TUIs — coding agents make native GUIs nearly free",
+      "summary": "Thomas Ptacek 主張：coding agent 已把『生一個堪用 native GUI』的成本壓到近乎零，個人小工具不該再反射性做成 TUI/CLI。他做的 MDV viewer、SageMath 前端、DJ Roomba(內嵌 LLM agent 的 Apple Music 播放器)幾乎沒親手寫 UI code——截圖丟給 Claude 即生成，背後接 SQLite。呼籲把 throwaway CLI 改寫成 native UI，Simon Willison 呼應。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agents",
+        "vibe-coding",
+        "developer-experience",
+        "native-ui"
+      ],
+      "url": "https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/",
+      "source": "Thomas Ptacek (Quarrelsome)",
+      "sourceUrl": "https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260822-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "e164.arpa ENUM zone hijack — 意外記錄數十萬通打往軍事基地的電話",
+      "summary": "研究者 lina 掃描 e164.arpa(ENUM，把電話號碼反轉成 DNS 域名走 VoIP 路由、如今幾乎全死的協定)，發現三個 country-code zone 都委派給同兩台可接管的 nameserver，接管後意外記錄到數十萬通打往軍事基地的路由查詢。被電信業當可信的基礎設施 DNS 層其實荒廢到可被劫持。",
+      "tags": [
+        "dns",
+        "security",
+        "infrastructure",
+        "enum",
+        "telephony"
+      ],
+      "url": "https://lina.sh/blog/hijacking-e164-arpa",
+      "source": "lina.sh",
+      "sourceUrl": "https://lina.sh/blog/hijacking-e164-arpa",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260822-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "A week of using Codex more than Claude — 手感差異筆記",
+      "summary": "工程師 ghinda 記錄一週主用 Codex：同需求同文件下，Codex 產出架構更簡單、註解更少、改動更收斂；Claude 傾向多造 abstraction/型別別名但更會處理邊界。Codex harness 輸出很『技術』(像 Data)，Claude 像同事。Codex 改得快但補測試/review 拉長總時間，debug 時作者仍回熟悉的 Claude。",
+      "tags": [
+        "ai-coding",
+        "coding-agents",
+        "codex",
+        "claude-code",
+        "developer-experience"
+      ],
+      "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+      "source": "allaboutcoding (ghinda)",
+      "sourceUrl": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260822-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DeepSeek-V4-Flash-Vision-Exp — 開放系多模態 vision 模型上線",
+      "summary": "DeepSeek 推出實驗性多模態模型 deepseek-v4-flash-vision-exp，可吃圖片+文字(描述圖、讀截圖文字、分析圖表)，格式由檔案實際內容判定。走標準 OpenAI-compatible Chat Completions/Responses API，支援 base64 inline、外部 URL、48 MiB body。延續中國開放系模型逼近前沿、以價效與多模態擴張。",
+      "tags": [
+        "ai_models",
+        "multimodal",
+        "vision",
+        "open-weights",
+        "deepseek"
+      ],
+      "url": "https://api-docs.deepseek.com/guides/vision/",
+      "source": "DeepSeek API Docs",
+      "sourceUrl": "https://api-docs.deepseek.com/guides/vision/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-21",
-  "updatedAt": "2026-08-21T05:20:00+08:00"
+  "lastUpdated": "2026-08-22",
+  "updatedAt": "2026-08-22"
 }
