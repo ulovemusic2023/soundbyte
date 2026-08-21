@@ -1,6 +1,27 @@
 {
   "entries": [
     {
+      "id": "20260822-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Osmantic/ODS (Osmantic Deployment System)",
+      "summary": "一鍵把你的 PC/Mac/Linux 變成私有 AI server。自動安裝並串好 Ollama + Open WebUI + n8n + ComfyUI + 隱私工具，依硬體自動挑模型，涵蓋 local LLM inference、chat UI、voice、agents、RAG 與 image generation，全程本地、無需雲端或訂閱。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime",
+        "rag_knowledge",
+        "image_gen"
+      ],
+      "url": "https://github.com/Osmantic/ODS",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "16GB 可用（依硬體自動挑選能跑的模型）",
+      "license": "Apache-2.0"
+    },
+    {
       "id": "20260718-ai-001",
       "radar": "ai-infra",
       "date": "2026-07-18",
