@@ -73554,6 +73554,194 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260822-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "elie222/rakazo",
+      "summary": "開源版「Grok Bot」：讓 AI agent 在可選 sandbox 裡自主跑任務，模型自帶（BYOM）。elie222（Inbox Zero 作者）出品，Apache-2.0，一週衝破千星。可當作自架 agent + 隔離執行環境的參考架構。",
+      "tags": [
+        "ai-agent",
+        "agent-sandbox",
+        "autonomous-agent"
+      ],
+      "url": "https://github.com/elie222/rakazo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-08+stars:>50",
+      "stars": 1068,
+      "createdDate": "2026-08-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260822-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "sam70361/emotion-ball",
+      "summary": "給 AI 助手用的「表情引擎」：32 種狀態表情全用純 SVG + 原生 JS 即時驅動，零框架、零圖片。AI 端只要吐一個 emotionId，小球就切表情。可直接當聊天機器人／桌面寵物／懸浮助手的情緒層。",
+      "tags": [
+        "ui",
+        "chatbot",
+        "creator-tools"
+      ],
+      "url": "https://github.com/sam70361/emotion-ball",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 222,
+      "createdDate": "2026-08-18",
+      "license": "none"
+    },
+    {
+      "id": "20260822-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "azrtydxb/procoder",
+      "summary": "幫 AI coding agent 補上「資深工程師紀律」：commit gate 把未勾選視為失敗、quality controller 拒絕把沒做完的當完成、還有把每個逃逸 bug 歸類的 lessons loop。單一 Go binary、零依賴，支援 20+ agent。",
+      "tags": [
+        "coding-agent",
+        "quality-gate",
+        "cli"
+      ],
+      "url": "https://github.com/azrtydxb/procoder",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 125,
+      "createdDate": "2026-08-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260822-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "cursor/plugins",
+      "summary": "Cursor 官方 plugin 規格與官方外掛集本週登上 trending（週增 1,273 星）。Cursor 正式把外掛生態標準化，繼 Claude Code plugins 之後，AI IDE 的擴充規範戰開打——用 Cursor 的人值得追。",
+      "tags": [
+        "ai-coding",
+        "cursor",
+        "plugin-spec"
+      ],
+      "url": "https://github.com/cursor/plugins",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 4367,
+      "createdDate": "2026-01-23",
+      "license": "none"
+    },
+    {
+      "id": "20260822-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "nari-labs/nari-qwen3-tts",
+      "summary": "Nari Labs（Dia TTS 作者）新作：超快 Qwen3-TTS，10 req/s 下 time-to-first-audio < 50ms。星數還低但團隊有料，做語音／有聲內容管線的可以先收藏。Apache-2.0。",
+      "tags": [
+        "tts",
+        "audio",
+        "local-ai"
+      ],
+      "url": "https://github.com/nari-labs/nari-qwen3-tts",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:text-to-speech",
+      "stars": 45,
+      "createdDate": "2026-08-12",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260822-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "jaredrhod/backtalk",
+      "summary": "用講的跟 Claude Code 對話：按住鍵說話，約一秒後它用真人聲音回你，帶所有工具與自己的個性。STT 與 TTS 都跑免費本地模型，不用 API key。同作者也出了 barehands（手勢操控）。",
+      "tags": [
+        "voice",
+        "coding-agent",
+        "local-ai"
+      ],
+      "url": "https://github.com/jaredrhod/backtalk",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:text-to-speech",
+      "stars": 22,
+      "createdDate": "2026-08-16",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260822-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "product-hunt",
+      "title": "RollTab — 125M 鋼琴自動補完",
+      "summary": "「鋼琴版 GitHub Copilot」：作者訓了一顆 125M transformer，即時補完你彈的鋼琴 MIDI，iPhone 15 上約 108 notes/sec。關鍵在 MIDI tokenization + 激進清資料 + DPO。免費 app RollTab 已上架（需 MIDI 鍵盤 + iPhone/iPad）。Show HN 574 讚。",
+      "tags": [
+        "music",
+        "midi",
+        "on-device-ai"
+      ],
+      "url": "https://simedw.com/2026/08/20/midi-autocomplete/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "createdDate": "2026-08-20"
+    },
+    {
+      "id": "20260822-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "product-hunt",
+      "title": "modelmap.cc",
+      "summary": "互動式、動畫化地拆解任何 HuggingFace 模型的架構圖。想搞懂某顆模型內部長怎樣、教學或做筆記時很好用。Show HN 113 讚。",
+      "tags": [
+        "reference",
+        "ml",
+        "visualization"
+      ],
+      "url": "https://modelmap.cc",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/"
+    },
+    {
+      "id": "20260822-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "product-hunt",
+      "title": "Shoehorn",
+      "summary": "把任何模型量化到能塞進你的機器跑。想在本地跑大模型、卡在 VRAM 不夠時的實用小工具。Show HN 66 讚。",
+      "tags": [
+        "local-ai",
+        "quantization"
+      ],
+      "url": "https://notactuallytreyanastasio.github.io/shoehorn/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/"
+    },
+    {
+      "id": "20260822-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-22",
+      "cycle": "sat",
+      "priority": "product-hunt",
+      "title": "pub.doub.ly — 查 MLC 未領版稅",
+      "summary": "查 The MLC 帳上 6.56 億美元未認領機械版稅裡有沒有你的。做音樂發行／有版權作品的人值得跑一次。Show HN 75 讚。",
+      "tags": [
+        "music",
+        "royalties",
+        "music-industry"
+      ],
+      "url": "https://pub.doub.ly/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/"
     }
   ],
   "lastUpdated": "2026-08-22",
