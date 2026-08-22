@@ -73948,6 +73948,105 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260823-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-23",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "dmmulroy/anti-slop",
+      "summary": "Opinionated Oxlint 規則，擋掉 AI 生的低證據 TS/JS pattern（無根據型別斷言、隨手 any、無意義防禦碼），可掛 CI。",
+      "tags": [
+        "linter",
+        "coding-tools"
+      ],
+      "url": "https://github.com/dmmulroy/anti-slop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 3390,
+      "createdDate": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260823-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-23",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "CopilotKit/OpenBot",
+      "summary": "開源 AI 同事：每個 agent 有自己的電腦（瀏覽器/檔案/工具），動作前決策、事後留紀錄，接任何 AG-UI agent。",
+      "tags": [
+        "ai-agent",
+        "computer-use",
+        "mcp"
+      ],
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 2307,
+      "createdDate": "2026-08-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260823-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-08-23",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "furkankly/zoetrope",
+      "summary": "把 Claude Code session 畫成即時 flow graph（terminal/瀏覽器），debug 長 agent run。",
+      "tags": [
+        "claude-code",
+        "observability",
+        "tui"
+      ],
+      "url": "https://github.com/furkankly/zoetrope",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 168,
+      "createdDate": "2026-08-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260823-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-08-23",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "nduc99911/repo-context-mcp",
+      "summary": "MCP server：repo map、code search、token-aware context pack，解決大 repo 塞不進 context。",
+      "tags": [
+        "mcp",
+        "context",
+        "coding-agent"
+      ],
+      "url": "https://github.com/nduc99911/repo-context-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 101,
+      "createdDate": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260823-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-08-23",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "wolfiesch/omp-best-of",
+      "summary": "Best-of-N coding agents + LLM-as-Verifier：隔離 git worktree 各跑一版，verifier 排名 trajectory，只套勝出 patch。",
+      "tags": [
+        "coding-agent",
+        "best-of-n",
+        "verifier"
+      ],
+      "url": "https://github.com/wolfiesch/omp-best-of",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 56,
+      "createdDate": "2026-08-18",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-23T05:30:00+08:00",
