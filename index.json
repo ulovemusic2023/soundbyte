@@ -73742,8 +73742,172 @@
       "url": "https://pub.doub.ly/",
       "source": "Show HN",
       "sourceUrl": "https://news.ycombinator.com/"
+    },
+    {
+      "id": "20260823-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "The New MCP Roadmap",
+      "summary": "MCP 核心維護者發布新版路線圖分五大優先區。首要 agentic messaging primitives——現代 agentic workload 已不符 request-response:loop 跑更久、server 要能 push streamed result、要能中途 steer。將把 Tasks 擴充(SEP-2663)推入正式 spec、做 server-initiated events(webhooks/channels 免 polling),延續『remote MCP=普通 HTTP workload』的 transport 統一。",
+      "tags": [
+        "mcp",
+        "ai-agent",
+        "agentic-messaging-primitives",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+      "source": "Model Context Protocol Blog",
+      "sourceUrl": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260823-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Munder Difflin — 把整個團隊 clone 成 24/7 agent 辦公室",
+      "summary": "免費開源多 agent harness,包住你已在用的 CLI agent(Claude Code/Codex/Grok/Kimi/Gemini CLI 等 12 家),吃現有訂閱 hourly limit。每個 clone 共享你的 workflow 與 memory;clone 之間 E2E 加密互傳、handoff、互相 unblock,全在自己機器 24/7 跑。附『The Office』主題模擬監看(deterministic 不燒 token)。",
+      "tags": [
+        "multi-agent",
+        "agent-framework",
+        "clone-office-harness",
+        "coding-agent"
+      ],
+      "url": "https://munderdiffl.in/",
+      "source": "Munder Difflin",
+      "sourceUrl": "https://munderdiffl.in/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260823-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Rust Glancer:記憶體用量 100× 更省的 Rust LSP",
+      "summary": "獨立開發者 4 個月做的替代 Rust LSP,主打低記憶體(目標 <100MB)與『重啟即用免重新索引』。索引速度與 rust-analyzer 相當甚至更快,8GB RAM 的 2020 M1 順跑。已具型別推論+trait solver(chalk)、goto/hover/inlay/completion,VS Code 擴充可裝。過程大量借助 LLM。",
+      "tags": [
+        "rust",
+        "developer-experience",
+        "lsp",
+        "low-memory-tooling"
+      ],
+      "url": "https://rust-glancer.github.io/blog/hello-world/",
+      "source": "Rust Glancer Blog",
+      "sourceUrl": "https://rust-glancer.github.io/blog/hello-world/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260823-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OTel Isn't Going Well(附試算表)",
+      "summary": "Mat Duggan 用數據拆解 OpenTelemetry 為何看似永遠沒做完:三方對撞——binary stability gate(不敢把 feature 標成穩定)×極小 maintainer 板凳×橫跨數十語言/框架的巨大 scope。auto-instrument 很神,但跨到手動 instrument 就是懸崖;Go/.NET 一等公民、其他語言落後數年。",
+      "tags": [
+        "observability",
+        "opentelemetry",
+        "otel-stability-gate-stall"
+      ],
+      "url": "https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/",
+      "source": "matduggan.com",
+      "sourceUrl": "https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260823-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "There's no reason for software to be slow anymore",
+      "summary": "danluu:AI 把過去要稀有專才的 performance work 成本壓低數個數量級,任何會打幾句話的人都能做以往只有超大規模才划算的最佳化。Marc Brooker 呼應——會走向針對特定 workload 而非一類 workload 客製的 dynamic 軟體(類比 FFTW/demoscene);Michael Malis 補:JIT 這類寫 code 才是難點的領域 AI 幫助最大。",
+      "tags": [
+        "performance",
+        "ai-coding",
+        "workload-fitted-software",
+        "quotable"
+      ],
+      "url": "https://danluu.com/perf-opt/",
+      "source": "danluu.com",
+      "sourceUrl": "https://danluu.com/perf-opt/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260823-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison:coding agent 的關鍵技能不只是 code review",
+      "summary": "Simon:用好 coding agent 的核心技能,是能有把握地指示它怎麼改、再有把握地驗證改動確實照做。逐行看過每行 code 是其中一種方法,但 eyeballing 每一行從來就不是驗證軟體變更最有效的方式——還有別條路能達到同樣信心。",
+      "tags": [
+        "coding-agents",
+        "code-review",
+        "agentic-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260823-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Bot Preference Sync:自動同步 robots.txt 與 AI bot 政策",
+      "summary": "Cloudflare 新功能會自動把 robots.txt 對齊你在 Cloudflare 設定的 AI bot 政策(Search/Agent/Training 三類),不必再手動維護靜態檔案管哪些 bot 能存取內容。回應 agentic internet 下內容存取偏好管理碎片化。",
+      "tags": [
+        "ai-bots",
+        "agent-infra",
+        "content-access-control"
+      ],
+      "url": "https://blog.cloudflare.com/bot-preference-sync/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/bot-preference-sync/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260823-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Linus Torvalds:AI 幫忙 debug 卻一直喊『不可能』",
+      "summary": "Torvalds 在一則 drm/xe kernel commit 訊息寫:這是地獄級 debug session,靠 AI 做掉大量苦工,但 AI 好幾次直接斷言問題無解、建議乾脆寫報告放棄。他懷疑那些模型是被沒他固執的人訓練的;被他推著時 AI 仍忠實不斷加 debug code 分析。commit 訊息由 AI 代寫。",
+      "tags": [
+        "ai-assisted-programming",
+        "quotable",
+        "linux"
+      ],
+      "url": "https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c",
+      "source": "Simon Willison (quoting Linus Torvalds)",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-22",
-  "updatedAt": "2026-08-22"
+  "lastUpdated": "2026-08-23",
+  "updatedAt": "2026-08-23"
 }
