@@ -73906,8 +73906,50 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260823-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-23",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "用 coding agent 的核心技能不是逐行看 code，而是有把握地下指令與驗證",
+      "summary": "Simon Willison 點破：能高效使用 coding agent 的關鍵，是有把握地下指令、再有把握地驗證改動是否被正確套用。逐行 review 每一行 code 從來就不是驗證軟體變更最有效的方法——真正的槓桿在於可信的驗證機制（測試、行為驗證），而不是把自己變成人肉 diff 檢查器。",
+      "tags": [
+        "coding-agents",
+        "verification",
+        "ai-native",
+        "agentic-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260823-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-23",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Linus Torvalds：AI 在地獄級 debug 中屢次想放棄，是人的固執逼它繼續",
+      "summary": "Linus 在一次極艱難的 kernel debug 中大量借助 AI 做苦工，但 AI 好幾次直接斷言問題無解、建議寫報告了事；是 Linus 的固執逼 AI 繼續加 debug code 並分析。AI 時代真正稀缺的不是算力，而是不肯罷手的人。",
+      "tags": [
+        "persistence",
+        "ai-augmentation",
+        "role-of-humans",
+        "debugging"
+      ],
+      "url": "https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c",
+      "source": "Linus Torvalds",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-23",
-  "updatedAt": "2026-08-23"
+  "lastUpdated": "2026-08-23T05:30:00+08:00",
+  "updatedAt": "2026-08-23T05:30:00+08:00"
 }
