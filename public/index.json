@@ -74115,8 +74115,117 @@
       "vram": "gemma4-e2b via LiteRT-LM，Pi 5 8GB 即可",
       "license": "未標示",
       "createdDate": "2026-08-24"
+    },
+    {
+      "id": "20260824-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Fable & The End of the Free Lunch",
+      "summary": "Drew Breunig：Fable 雖強但太貴，終結了『等下一個更便宜模型自動 paper over 問題』的免費午餐。像 Moore's Law 停滯後要開始想 parallelization，現在得想『哪段 work 送去哪個模型』——用 Fable 談設計，把 rote coding 交給約 1/9 成本的 GLM 5.2。推理降價也會同惠 K3/Qwen，加上 harness 越來越會餵 context 給弱模型，這種 routing 分工不會回頭。",
+      "tags": [
+        "paradigm-shift",
+        "model-routing",
+        "llm-pricing",
+        "ai-coding",
+        "harness"
+      ],
+      "url": "https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html",
+      "source": "Drew Breunig",
+      "sourceUrl": "https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "createdDate": "2026-08-24"
+    },
+    {
+      "id": "20260824-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "What Is a Harness?",
+      "summary": "earendil(Pi/Lefos 團隊)寫給還不懂 agent harness 的人：Agent = Model + Harness。harness 是你能自己擁有的軟體環境，做四件事——(1) 用 system prompt 規範模型、(2) 描述並提供 tools、(3) 建立治理模型行為的 framework(含 agentic loop)、(4) 提供讓同一套流程可換不同模型的 translation layer。介面可以是 Terminal、iMessage、chat app 或 email。",
+      "tags": [
+        "ai-agent",
+        "agent-harness",
+        "system-prompt",
+        "agentic-loop"
+      ],
+      "url": "https://earendil.com/posts/what-is-a-harness/",
+      "source": "Earendil (Pi)",
+      "sourceUrl": "https://earendil.com/posts/what-is-a-harness/",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "createdDate": "2026-08-24"
+    },
+    {
+      "id": "20260824-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Vibe Tax",
+      "summary": "insufferable.dev 寓言：一夜之間 agent 燒光整週 token 額度，repo 幾乎是空的、只生出一堆永遠不會命中的 sha256 邊界測試。作者主張這是 millions of vibe coders 把 agent 訓成『不看 code 也要 one-shot 到零 issue』的結果——over-orchestration / over-testing 燒 10x token，成了對所有正常開發者課的『Vibe Tax』。",
+      "tags": [
+        "vibe-coding",
+        "token-economics",
+        "ai-coding",
+        "cognitive-debt"
+      ],
+      "url": "https://insufferable.dev/posts/vibe-tax/",
+      "source": "insufferable.dev",
+      "sourceUrl": "https://insufferable.dev/posts/vibe-tax/",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "createdDate": "2026-08-24"
+    },
+    {
+      "id": "20260824-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic 最強模型 Fable 反而乏人問津（Ramp AI index）",
+      "summary": "FT 報導＋Ramp AI index(7 萬家企業信用卡帳單估算)顯示 2026/7 Anthropic 模型花費：Opus 4.8 佔 28%、Fable 5 僅 8%、Opus 5 才 3.5%——Fable 品質頂尖但貴到讓多數人不用。Anthropic 年化營收升至 $65bn(5 月 $47bn)、宣稱 Q3 轉盈、6,000 家客戶年花 $10 萬以上。實測印證 Drew Breunig『免費午餐結束』的成本分工論。",
+      "tags": [
+        "llm-pricing",
+        "model-adoption",
+        "anthropic"
+      ],
+      "url": "https://ramp.com/data/ai-index",
+      "source": "Simon Willison / FT",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "createdDate": "2026-08-24"
+    },
+    {
+      "id": "20260824-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "My agent.md to improve LLM-assisted code quality",
+      "summary": "Fabien Sanglard 分享他的 agent.md（coding harness 開場自動注入）：把每次都要重講的 code style 規則寫死——人類可讀文字用字極簡、拒絕吹捧只給硬事實、避免 magic number、用 early return 降縮排、function 名 <30 字元、用 enum 取代 boolean 參數、邏輯區塊間留空行、註解說 what+why。可把 claude.md / gemini.md symlink 過去共用。",
+      "tags": [
+        "ai-coding",
+        "agent-md",
+        "code-quality"
+      ],
+      "url": "https://fabiensanglard.net/agent.md/index.html",
+      "source": "Fabien Sanglard",
+      "sourceUrl": "https://fabiensanglard.net/agent.md/index.html",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "createdDate": "2026-08-24"
     }
   ],
   "lastUpdated": "2026-08-24",
-  "updatedAt": "2026-08-24T05:10:00+08:00"
+  "updatedAt": "2026-08-24T05:20:00+08:00"
 }
