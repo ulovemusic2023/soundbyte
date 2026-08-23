@@ -74224,6 +74224,69 @@
       "vram": null,
       "license": null,
       "createdDate": "2026-08-24"
+    },
+    {
+      "id": "20260824-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-24",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "「能幾小時內重建，沉沒成本就不再是成本」— Lovable 的 clock speed",
+      "summary": "AI 時代最反直覺的心智模型更新：過去做 UX 決策「錯了時間金錢都拿不回來」，但當產品能在數小時內建了又拆、拆了又建，sunk cost 就失效——錯了就拿到新資訊再試。Lovable 把這種內在思考／決策／執行的節奏叫 clock speed，速度的價值不在做得多，而在學得快。",
+      "tags": [
+        "sunk-cost",
+        "clock-speed",
+        "two-way-door",
+        "ai-native"
+      ],
+      "url": "https://review.firstround.com/firsthand-lovable/",
+      "source": "Lovable 首位設計師 • First Round 'Firsthand'",
+      "sourceUrl": "https://review.firstround.com/firsthand-lovable/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260824-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-24",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "最強模型 ≠ 最多人用：Fable 太貴，「夠好又便宜」正在吃市佔",
+      "summary": "FT 引述數據：Anthropic 七月年化營收衝到 $65bn，但 Ramp 七萬家企業刷卡數據顯示，Opus 5（Fable）因成本太高，在自家模型花費佔比並不突出——多數程式工作用 Opus／5.6／K3／GLM「夠好」就夠。啟示：定價與 good-enough 門檻，往往比純粹能力領先更決定採用率。",
+      "tags": [
+        "pricing",
+        "adoption",
+        "good-enough",
+        "moat"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "source": "Financial Times（經 Simon Willison 整理）",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260824-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-08-24",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "免費午餐結束了：工程手藝終於開始有回報",
+      "summary": "當最強模型變貴、便宜模型「夠好」，投資 coding harness／context engineering 終於開始有回報——不能再等下一個更便宜的模型幫你把問題蓋掉。",
+      "tags": [
+        "free-lunch",
+        "context-engineering",
+        "craft",
+        "leverage"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "source": "Drew Breunig（經 Simon Willison 整理）",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-24",
