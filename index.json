@@ -74287,8 +74287,208 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260824-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "MengTo/threeui",
+      "summary": "Design+Code 的 MengTo 出品：開源的 ThreeUI Community catalog，一整套用 Three.js 驅動的 live interactive UI 元件，附完整 source。想在網站 / 作品集加 3D 互動視覺的創作者可直接抄。",
+      "tags": [
+        "threejs",
+        "ui-components",
+        "frontend"
+      ],
+      "url": "https://github.com/MengTo/threeui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-10+stars:>50&type=repositories",
+      "stars": 2809,
+      "createdDate": "2026-08-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260824-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "duty1g/x64dbg-mcp-server",
+      "summary": "把 x64dbg debugger 的完整功能透過 HTTP 開成 MCP server：任何 MCP-compatible AI 助手都能程式化下中斷點、單步、讀記憶體、dump 暫存器。用 Zig 寫、零依賴、single-binary、跨平台。逆向 / debug 自動化的新玩法。",
+      "tags": [
+        "mcp",
+        "debugger",
+        "zig"
+      ],
+      "url": "https://github.com/duty1g/x64dbg-mcp-server",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-10+stars:>20+topic:mcp&type=repositories",
+      "stars": 763,
+      "createdDate": "2026-08-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260824-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "nateherkai/scroll-craft",
+      "summary": "一個 Claude Code skill，專做 premium 的 scroll-driven 網站——把 scroll 當成 timeline，在真正的 design floor 上做，而且會自己截圖驗證 scroll 效果。做 landing / 作品集動效很對味。",
+      "tags": [
+        "claude-code",
+        "web",
+        "scroll-animation"
+      ],
+      "url": "https://github.com/nateherkai/scroll-craft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-10+stars:>20+topic:claude-code&type=repositories",
+      "stars": 459,
+      "createdDate": "2026-08-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260824-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "only-cli/oc",
+      "summary": "把任何網站變成給 AI agent 用的精簡 CLI：用「幾百個 token」瀏覽網頁，而不是幾萬個。大幅降低 agent 上網的 context 成本，值得試。",
+      "tags": [
+        "cli",
+        "ai-agent",
+        "web"
+      ],
+      "url": "https://github.com/only-cli/oc",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-10+stars:>20+topic:claude-code&type=repositories",
+      "stars": 206,
+      "createdDate": "2026-08-18",
+      "license": "no-license"
+    },
+    {
+      "id": "20260824-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "kgoedecke/doop",
+      "summary": "Paper.design 的開源替代品：一個 human 與 AI agent 一起即時協作的多人設計畫布，內建 MCP。對做 creator 工具 / 想讓 agent 參與視覺設計的人是有趣的 reference。",
+      "tags": [
+        "design",
+        "mcp",
+        "multiplayer"
+      ],
+      "url": "https://github.com/kgoedecke/doop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-10+stars:>20+topic:mcp&type=repositories",
+      "stars": 148,
+      "createdDate": "2026-08-22",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260824-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "microsoft/AI-Engineering-Coach",
+      "summary": "Microsoft 的「better agentic engineering」工具：稽核本地 AI session log，追蹤進度並偵測 coding prompt 裡的 anti-pattern。想把自己用 AI 寫 code 的習慣抓出壞味道的人可看。（來源：MAGI//ARCHIVE）",
+      "tags": [
+        "ai-agent",
+        "coding",
+        "audit"
+      ],
+      "url": "https://github.com/microsoft/AI-Engineering-Coach",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 3654,
+      "createdDate": "2026-05-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260824-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "compozy/compozy",
+      "summary": "「AI agent 的作業系統」：把你已在用的 agent CLI（Claude Code / Codex / Gemini CLI / Cursor）插進來變成一個團隊——分工、互相交派任務、跑排程 loop、共用專案記憶，全部從瀏覽器操控。本週 Go trending。",
+      "tags": [
+        "ai-agent",
+        "orchestration",
+        "multi-agent"
+      ],
+      "url": "https://github.com/compozy/compozy",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 2659,
+      "createdDate": "2026-03-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260824-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "apache/maka",
+      "summary": "Apache Maka（孵化中）：local-first 的 AI agent 工作區。把 model 訊息、tool call、tool 結果、權限決策、終止事件全記成 append-only log，適合需要可稽核 agent 軌跡的場景。本週 TypeScript trending。",
+      "tags": [
+        "ai-agent",
+        "local-first",
+        "audit"
+      ],
+      "url": "https://github.com/apache/maka",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 2312,
+      "createdDate": "2026-05-27",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260824-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "eneskirca/nodeterm",
+      "summary": "給 AI coding agent 的 node-based terminal 管理器：tmux-backed terminal 與並行 agent session 變成無限畫布上可拖曳的節點。支援 macOS / Linux，還有瀏覽器 Server Edition。多 agent 並跑的視覺化控制台。",
+      "tags": [
+        "terminal",
+        "coding-agent",
+        "tmux"
+      ],
+      "url": "https://github.com/eneskirca/nodeterm",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 1123,
+      "createdDate": "2026-06-15",
+      "license": "no-license"
+    },
+    {
+      "id": "20260824-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-24",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "Formsmith746/SketchForge-3D",
+      "summary": "Local-first 的瀏覽器 3D 設計編輯器：建模、切割、匯入 STL、匯出模型，全在本機、免帳號、不依賴雲端。做實體 / 3D 列印 / 視覺素材的創作者可用。（來源：MAGI//ARCHIVE）",
+      "tags": [
+        "3d",
+        "local-first",
+        "creator-tools"
+      ],
+      "url": "https://github.com/Formsmith746/SketchForge-3D",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 904,
+      "createdDate": "2026-06-06",
+      "license": "AGPL-3.0"
     }
   ],
   "lastUpdated": "2026-08-24",
-  "updatedAt": "2026-08-24T05:20:00+08:00"
+  "updatedAt": "2026-08-24T05:40:00+08:00"
 }
