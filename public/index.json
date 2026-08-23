@@ -74047,8 +74047,76 @@
       "stars": 56,
       "createdDate": "2026-08-18",
       "license": "MIT"
+    },
+    {
+      "id": "20260824-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "swy2018/Aurora-Audio-Studio",
+      "summary": "本地優先的 Windows AI 音頻工作台，六大功能整進單一入口：音樂生成（ACE-Step 1.5）、AI 配音/聲音克隆（Qwen3-TTS、F5-TTS）、歌聲克隆（Seed-VC 44.1k）、AI 分軌（BS-RoFormer、Demucs 4）、AI 扒譜（YourMT3+）、影片字幕（Faster-Whisper XXL）。.NET 10 + WinUI 3，模型走暫存＋SHA-256 校驗才切正式，更新失敗可回退。",
+      "tags": [
+        "audio_music_ai",
+        "svc_voice",
+        "stem separation",
+        "music transcription",
+        "tts_speech"
+      ],
+      "url": "https://github.com/swy2018/Aurora-Audio-Studio",
+      "source": "GitHub Topics (singing-voice-conversion)",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "Windows x64 + NVIDIA RTX 建議",
+      "license": "GPL-3.0",
+      "createdDate": "2026-08-24"
+    },
+    {
+      "id": "20260824-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "supertone-inc/supertonic",
+      "summary": "Supertone 開源的 on-device 多語 TTS：99M 參數 open-weight，走 ONNX Runtime，桌面/瀏覽器/手機/Pi 都能跑、免 GPU、免連網，輸出 44.1kHz 16-bit WAV，支援 31 語言＋10 個 inline 表情標籤。⚠️ 官方公告 repo 將封存、Voice Builder 於 2026-08-31 後停用，open-weight 模型仍可下載自用。",
+      "tags": [
+        "tts_speech",
+        "on-device",
+        "onnx",
+        "multilingual tts"
+      ],
+      "url": "https://github.com/supertone-inc/supertonic",
+      "source": "GitHub Topics (text-to-speech)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "99M 參數、免 GPU，CPU/邊緣裝置即可",
+      "license": "未標示",
+      "createdDate": "2026-08-24"
+    },
+    {
+      "id": "20260824-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-08-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "google-gemma/gemma-translator",
+      "summary": "Google 官方示範：完全離線的語音翻譯器，用 LiteRT-LM 在本地跑 gemma4-e2b，麥克風收音→本地模型→TTS（Moonshine）。前端為 480x320 小螢幕優化，一鍵啟動 LLM server + Python API + React 前端，附 deploy-pi.sh 打包成 systemd。目標硬體僅 Raspberry Pi 5 8GB。",
+      "tags": [
+        "tts_speech",
+        "llm_inference",
+        "gemma",
+        "on-device",
+        "asr"
+      ],
+      "url": "https://github.com/google-gemma/gemma-translator",
+      "source": "MAGI//ARCHIVE (tom-doerr)",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/08/22/google-gemma-gemma-translator.html",
+      "price": null,
+      "vram": "gemma4-e2b via LiteRT-LM，Pi 5 8GB 即可",
+      "license": "未標示",
+      "createdDate": "2026-08-24"
     }
   ],
-  "lastUpdated": "2026-08-23T05:30:00+08:00",
-  "updatedAt": "2026-08-23T05:30:00+08:00"
+  "lastUpdated": "2026-08-24",
+  "updatedAt": "2026-08-24T05:10:00+08:00"
 }
