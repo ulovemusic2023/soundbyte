@@ -74487,6 +74487,25 @@
       "stars": 904,
       "createdDate": "2026-06-06",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260825-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "marin-community/marin",
+      "summary": "開放的基礎模型開發框架，涵蓋資料清洗、tokenization、pretraining、posttraining 到 evaluation 全流程，並公開所有過程知識（含失敗實驗）。目前主攻從零訓練 500B+ 參數 MoE 模型，也已延伸到 audio-text、DNA、protein 模型。",
+      "tags": [
+        "llm_training",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/marin-community/marin",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "cloud-only（TPU / 500B+ MoE 訓練）",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-24",
