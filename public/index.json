@@ -74673,6 +74673,47 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260825-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "同樣的工具，不同的誘因 → 完全不同的結局（AI 對巨頭是 sustaining，對新創是 disruptive）",
+      "summary": "Ben Thompson 用『攻擊 vs 防守的期望值不對稱』解釋為什麼 AI 時代的贏家會是 startup 而非 incumbent。攻擊方只要成功一次就是正報酬，失敗無損現狀，所以全力自動化是『只有上檔』；防守方只要出一次錯就是負報酬，於是死守 human-in-the-loop。AI 對大公司是 sustaining，對新創是 disruptive。真正 AI-native 的公司不會是轉型的巨頭，而是一無所失的新創。",
+      "tags": [
+        "mental-model",
+        "ai-native",
+        "disruptive-innovation",
+        "expected-value"
+      ],
+      "url": "https://stratechery.com/2026/autonomy-and-innovation/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/autonomy-and-innovation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260825-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Same tools, different incentives, very different outcomes",
+      "summary": "新創與巨頭拿到的是同一套 AI，差別只在誰敢全押；誘因結構決定了誰會被誰顛覆。",
+      "tags": [
+        "quotable",
+        "incentives",
+        "ai-native"
+      ],
+      "url": "https://stratechery.com/2026/autonomy-and-innovation/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/autonomy-and-innovation/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-25",
