@@ -74714,6 +74714,211 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260825-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "tobi/walgit",
+      "summary": "Shopify CEO Tobi Lütke 的 Rust git server：無資料庫/leader/本地狀態，跑一個 binary 指向 S3/GCS 就有 smart HTTP push/fetch、LFS、web UI、JSON API。每台機是可丟棄 cache，bucket 才是 repo。Cursor Continuity 架構的開源實作。",
+      "tags": [
+        "devops",
+        "git",
+        "rust",
+        "infra"
+      ],
+      "url": "https://github.com/tobi/walgit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/tobi/walgit",
+      "stars": 1004,
+      "createdDate": "2026-08-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260825-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "ShadowAqueduct/watermark-remover",
+      "summary": "清除多家 AI 浮水印：Unicode 隱藏字元、統計改寫、移除 C2PA + metadata，支援 PNG/JPEG/SVG/PDF/DOCX/HTML/MD。灰色工具，可規避溯源。",
+      "tags": [
+        "content",
+        "watermark",
+        "c2pa"
+      ],
+      "url": "https://github.com/ShadowAqueduct/watermark-remover",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ShadowAqueduct/watermark-remover",
+      "stars": 767,
+      "createdDate": "2026-08-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260825-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "rome-os/rome",
+      "summary": "agentic OS：scale 環境而非只 scale model。人+agent 協作的 guardrailed 環境，agent 自建 harness/SOP/編排 workflow，能力累積複利。有 cloud preview。",
+      "tags": [
+        "ai-agent",
+        "agent-os",
+        "harness"
+      ],
+      "url": "https://github.com/rome-os/rome",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/rome-os/rome",
+      "stars": 276,
+      "createdDate": "2026-08-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260825-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "squall01337/mixamo-llm-mocap",
+      "summary": "影片轉 Mixamo 骨架動畫：GVHMR 姿態估計→spec-driven retarget→Blender 經 MCP 套 FK。設計成可被 AI agent 端到端操作。",
+      "tags": [
+        "mocap",
+        "blender",
+        "mcp",
+        "creator"
+      ],
+      "url": "https://github.com/squall01337/mixamo-llm-mocap",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/squall01337/mixamo-llm-mocap",
+      "stars": 186,
+      "createdDate": "2026-08-17",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260825-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "Vendredi218/awesome-ai-harness",
+      "summary": "harness engineering 知識庫：context 管理、tool 設計、agent loop、memory、sandbox、evals。中英雙語 CC0。調 AI coding workflow 的參考。",
+      "tags": [
+        "harness",
+        "ai-agent",
+        "reference"
+      ],
+      "url": "https://github.com/Vendredi218/awesome-ai-harness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Vendredi218/awesome-ai-harness",
+      "stars": 138,
+      "createdDate": "2026-08-16",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "20260825-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "bojieli/agentreach",
+      "summary": "李博杰作品。把 coding agent 指向任何 SSH 機器，但 server 端拿不到你的 agent（安全邊界）。遠端/多機開發跑 agent 的輕量橋接。",
+      "tags": [
+        "coding-agent",
+        "ssh",
+        "remote-dev"
+      ],
+      "url": "https://github.com/bojieli/agentreach",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/bojieli/agentreach",
+      "stars": 99,
+      "createdDate": "2026-08-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260825-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "blakebratcher/bitwig-nitro-tools",
+      "summary": "離線逆向 Bitwig Studio Nitro DSP 格式：解密/反編譯/讀出原生 device 與 Grid module 的 DSP。純工具+格式規格。",
+      "tags": [
+        "audio",
+        "dsp",
+        "bitwig",
+        "reverse-engineering"
+      ],
+      "url": "https://github.com/blakebratcher/bitwig-nitro-tools",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/blakebratcher/bitwig-nitro-tools",
+      "stars": 23,
+      "createdDate": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260825-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "goyak-app/goyak-desktop",
+      "summary": "免費開源即時 AI 配音（dubbing），針對遊戲與桌面 app 的 local 方案雛形。",
+      "tags": [
+        "audio",
+        "dubbing",
+        "tts",
+        "realtime"
+      ],
+      "url": "https://github.com/goyak-app/goyak-desktop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/goyak-app/goyak-desktop",
+      "stars": 24,
+      "createdDate": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260825-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "liyupi/niulai-video-generator",
+      "summary": "程式設計師魚皮出品。一段故事一條指令產出抽象 3D 動畫：同步字幕配音+低模。Three.js+DeepSeek 劇本+TTS+FFmpeg，不依賴影片大模型。",
+      "tags": [
+        "video",
+        "creator",
+        "tts",
+        "threejs"
+      ],
+      "url": "https://github.com/liyupi/niulai-video-generator",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/liyupi/niulai-video-generator",
+      "stars": 23,
+      "createdDate": "2026-08-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260825-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-25",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "Saganaki22/FireRedTTS3-ComfyUI",
+      "summary": "FireRedTTS3 的 ComfyUI 節點：多語言 zero-shot voice cloning、voice design、語音編輯、Whisper 轉錄，bf16/INT8。",
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "comfyui"
+      ],
+      "url": "https://github.com/Saganaki22/FireRedTTS3-ComfyUI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Saganaki22/FireRedTTS3-ComfyUI",
+      "stars": 15,
+      "createdDate": "2026-08-14",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-25",
