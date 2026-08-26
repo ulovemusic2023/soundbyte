@@ -74939,6 +74939,211 @@
       "price": null,
       "vram": "客戶端壓測工具，本機即可跑",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260827-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Paul Dix: The end of programming",
+      "summary": "InfluxDB 創辦人 Paul Dix 從 Bun 1.4 的 Zig→Rust 重寫（一位開發者 + 預發布 Fable 5 + ~$165k token，11 天 6,778 commits 產 1M 行 Rust，現跑在數百萬台機器）論證人類逐行寫 code、逐行 review 正走向消亡；未來多數 working software 由 agent 產出、人類只審最終結果不審 code，關鍵是可驗證系統加方向指引。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agents",
+        "ai-assisted-development",
+        "review-only-development"
+      ],
+      "url": "https://pauldix.com/the-end-of-programming",
+      "source": "Paul Dix",
+      "sourceUrl": "https://pauldix.com/the-end-of-programming",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AWS 收購 DuckLabs",
+      "summary": "DuckDB 背後的 DuckLabs（Mark Raasveldt、Hannes Mühleisen）宣布加入 AWS，預計九月初生效，團隊續留 Amsterdam。DuckDB / DuckLake / Quack 等 Duck Stack 開源元件維持 MIT 授權，由 DuckDB Foundation 續管。",
+      "tags": [
+        "database",
+        "duckdb",
+        "acquisition",
+        "olap"
+      ],
+      "url": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
+      "source": "DuckLabs",
+      "sourceUrl": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GLM-5.3-Flash 釋出",
+      "summary": "Zhipu（z.ai）推出新一代 GLM Flash 開放權重模型，主打低成本快速推理，延續中國開放權重陣營逼近前沿、以價差取勝的走勢；當日 HN 743 分熱議。benchmark 細節未逐條驗證。",
+      "tags": [
+        "open-weights",
+        "ai_models",
+        "llm-release"
+      ],
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "source": "z.ai (Zhipu)",
+      "sourceUrl": "https://z.ai/blog/glm-5.3-flash",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwen3.8-Flash-Next 釋出",
+      "summary": "阿里 Qwen 推出 Flash 系列新版，主攻快速/低成本推理，與 GLM-5.3-Flash 同日登上 HN 前排，開放權重 Flash 級競爭白熱化。規格未逐條驗證。",
+      "tags": [
+        "open-weights",
+        "ai_models",
+        "llm-release"
+      ],
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "source": "Qwen (Alibaba)",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "EVE Online 啟動 Python 3 遷移",
+      "summary": "運行 20+ 年、自 2003 起用 Stackless Python（2010 升到 2.7 後 16 年未大改）的 EVE Online 開始遷移到 Python 3：先用 futurize 掃 240 萬行 code，再人工審 ~2 萬處 Py2/Py3 行為差異（如 1/2 由 0 變 0.5）。",
+      "tags": [
+        "migration",
+        "python",
+        "python3",
+        "legacy"
+      ],
+      "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
+      "source": "CCP Games (EVE Online)",
+      "sourceUrl": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Rust never type 終於穩定",
+      "summary": "歷經 10 年不穩定、5 次失敗嘗試、作者 2 年多努力，Rust 的 never type（!）在 nightly 上穩定（PR #155499）。長年懸置的型別系統缺口補上，利於更精確的 diverging 表達與型別推斷。",
+      "tags": [
+        "rust",
+        "new_languages",
+        "type-system"
+      ],
+      "url": "https://blog.ihatereality.space/0C-never-type/",
+      "source": "I hate reality (blog)",
+      "sourceUrl": "https://blog.ihatereality.space/0C-never-type/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "mold: A Massively Parallel Linker (ASPLOS 2027)",
+      "summary": "mold 論文：把 data parallelism 系統性套進整條 linking pipeline，解耦傳統 linker 糾纏的 symbol resolution / archive 處理，多 GB debug binary 常 <1s 連結完成。比 lld 快 2.4–16.1x、比 GNU ld 快最多 112x。",
+      "tags": [
+        "compilers",
+        "performance",
+        "linker",
+        "toolchain"
+      ],
+      "url": "https://arxiv.org/abs/2608.23228",
+      "source": "arXiv (cs.OS)",
+      "sourceUrl": "https://arxiv.org/abs/2608.23228",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-008",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Go sync.Map：從 API 到 hash trie",
+      "summary": "VictoriaMetrics 拆解 Go sync.Map 的設計，從對外 API 一路講到底層 hash trie 實作，理解 Go 標準庫並行 map 的取捨。",
+      "tags": [
+        "go",
+        "concurrency",
+        "stdlib"
+      ],
+      "url": "https://victoriametrics.com/blog/go-sync-map-hash-trie/",
+      "source": "VictoriaMetrics",
+      "sourceUrl": "https://victoriametrics.com/blog/go-sync-map-hash-trie/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-009",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Tailcat — Tailscale 版 netcat",
+      "summary": "Tailscale 官方釋出 tailcat：類 netcat 工具，但直接走 Tailscale 的 data plane，在 tailnet 上做點對點資料傳輸。",
+      "tags": [
+        "tailscale",
+        "networking",
+        "cli-tool"
+      ],
+      "url": "https://github.com/tailscale/tailcat",
+      "source": "Tailscale",
+      "sourceUrl": "https://github.com/tailscale/tailcat",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260827-sw-010",
+      "radar": "software-dev",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "用 Accept header 對 AI agent 提供 Markdown",
+      "summary": "acceptmarkdown.com 示範以 HTTP content negotiation（Accept: text/markdown）在同一 URL 對 AI agent 回 Markdown、對瀏覽器回 HTML，讓網站對 agent 友善而不必另建 endpoint。",
+      "tags": [
+        "agent-content-negotiation",
+        "markdown",
+        "agent-native",
+        "web"
+      ],
+      "url": "https://acceptmarkdown.com/",
+      "source": "acceptmarkdown.com",
+      "sourceUrl": "https://acceptmarkdown.com/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-27",
