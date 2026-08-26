@@ -75144,6 +75144,191 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260827-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "iAmCorey/Wake",
+      "summary": "Rust + GPUI 桌面 app，把散落各處的 AI agent sessions（Claude Code / Codex 等）集中管理，可瀏覽、搜尋、resume。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "session-manager",
+        "rust"
+      ],
+      "url": "https://github.com/iAmCorey/Wake",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 646,
+      "createdDate": "2026-08-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260827-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "missuo/herdrm",
+      "summary": "herdr 的原生 macOS console，把所有 coding agent 和它們的 live terminal 集中在一個介面，可跨裝置存取。",
+      "tags": [
+        "coding-agent",
+        "macos",
+        "terminal"
+      ],
+      "url": "https://github.com/missuo/herdrm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 635,
+      "createdDate": "2026-08-19",
+      "license": "none"
+    },
+    {
+      "id": "20260827-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "bawadou/ai-data-extractor",
+      "summary": "免費開源工具，抽取 Claude Code / Cursor / Windsurf / Aider / Cline 等 AI coding 助手的對話歷史，方便備份/分析。",
+      "tags": [
+        "ai-agent",
+        "data",
+        "claude-code",
+        "cursor"
+      ],
+      "url": "https://github.com/bawadou/ai-data-extractor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 544,
+      "createdDate": "2026-08-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260827-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "sodiumsun/agenttrail",
+      "summary": "本地端 AI coding agent 觀測地圖，即時看 Claude Code / Codex / Cursor 的 plan、tool calls、檔案異動與進度。",
+      "tags": [
+        "ai-agent",
+        "observability",
+        "claude-code"
+      ],
+      "url": "https://github.com/sodiumsun/agenttrail",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 262,
+      "createdDate": "2026-08-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260827-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "ApodexAI/FrontierAgent",
+      "summary": "開源 agent framework，原生 CLI TUI，支援 ReAct 與 Agent Team 模式，macOS/Linux 一行指令啟動，不強制 Docker。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "tui"
+      ],
+      "url": "https://github.com/ApodexAI/FrontierAgent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 908,
+      "createdDate": "2026-08-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260827-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "lianghsun/open-sheet",
+      "summary": "台灣開發者作品。專為 agent 設計的試算表框架：用 React 寫模型、匯出 live .xlsx，接續 open-slide、open-doc。",
+      "tags": [
+        "ai-agent",
+        "spreadsheet",
+        "react",
+        "taiwan"
+      ],
+      "url": "https://github.com/lianghsun/open-sheet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 113,
+      "createdDate": "2026-08-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260827-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "Akimiya-z/codex-guard",
+      "summary": "AI/Codex 生成 PR 的品質閘門：擋掉殘留 TODO、外洩 secret、草率 commit 和紅燈 CI，避免進 main。",
+      "tags": [
+        "coding-agent",
+        "codex",
+        "ci",
+        "quality-gate"
+      ],
+      "url": "https://github.com/Akimiya-z/codex-guard",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 65,
+      "createdDate": "2026-08-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260827-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "ronaldo-avalos/Maya",
+      "summary": "把 iPhone 螢幕錄影包進漂亮 device frame，加電影感 zoom 動態，輸出可直接發社群的影片。做 demo / 社群短片實用。（5 月建立，近期竄升）",
+      "tags": [
+        "creator",
+        "video",
+        "macos",
+        "marketing"
+      ],
+      "url": "https://github.com/ronaldo-avalos/Maya",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 929,
+      "createdDate": "2026-05-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260827-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-27",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "itshen/source-reading-methodology",
+      "summary": "帶 AI 精讀大型開源 repo 的方法論：四階段流程 + 可複用模板 + 28 條踩坑清單，每個技術論斷都可回溯到原始碼具體行。",
+      "tags": [
+        "ai-agent",
+        "methodology",
+        "code-reading"
+      ],
+      "url": "https://github.com/itshen/source-reading-methodology",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 125,
+      "createdDate": "2026-08-23",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-27",
