@@ -74919,8 +74919,28 @@
       "stars": 15,
       "createdDate": "2026-08-14",
       "license": "MIT"
+    },
+    {
+      "id": "20260827-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ai-dynamo/aiperf",
+      "summary": "NVIDIA 官方推出的 GenAI 推理效能壓測工具，一個 CLI 就能對 vLLM / SGLang / TensorRT-LLM / Ollama / TGI 等任何 OpenAI-compatible 端點做 benchmark。量測 TTFT、ITL、throughput、goodput，支援 concurrency / request-rate / trace replay 多種模式，還能收 DCGM GPU telemetry。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime",
+        "llm_inference"
+      ],
+      "url": "https://github.com/ai-dynamo/aiperf",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "客戶端壓測工具，本機即可跑",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-08-25",
-  "updatedAt": "2026-08-25T05:40:00+08:00"
+  "lastUpdated": "2026-08-27",
+  "updatedAt": "2026-08-27T05:10:00+08:00"
 }
