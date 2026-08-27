@@ -75617,8 +75617,287 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260828-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "browser-use/macos-harness",
+      "summary": "給 LLM 完整控制整台 Mac 的最薄 harness，computer-use 起手式",
+      "tags": [
+        "ai-agent",
+        "computer-use",
+        "browser-agent"
+      ],
+      "url": "https://github.com/browser-use/macos-harness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 791,
+      "createdDate": "2026-08-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260828-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "localai-org/kimodo.cpp",
+      "summary": "NVIDIA Kimodo 骨架動畫模型移植到 C++/GGML，自然語言驅動骨架動作，本地跑",
+      "tags": [
+        "local-inference",
+        "animation",
+        "creator-tool"
+      ],
+      "url": "https://github.com/localai-org/kimodo.cpp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 507,
+      "createdDate": "2026-08-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260828-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "ooolabdev/ooosplat",
+      "summary": "本地桌面 app 把影片轉成 3D Gaussian Splatting，實拍轉可運鏡 3D",
+      "tags": [
+        "gaussian-splatting",
+        "video",
+        "creator-tool"
+      ],
+      "url": "https://github.com/ooolabdev/ooosplat",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 474,
+      "createdDate": "2026-08-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260828-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Tencent/WeMM-Embedding",
+      "summary": "騰訊微信視覺團隊的通用多模態 embedding 模型家族，跨模態統一檢索",
+      "tags": [
+        "multimodal",
+        "embedding",
+        "rag"
+      ],
+      "url": "https://github.com/Tencent/WeMM-Embedding",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 473,
+      "createdDate": "2026-08-25",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260828-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "damejan80/tokentab",
+      "summary": "CLI 讀 Claude Code/Codex/Gemini session log，算按 model/專案/日的花費",
+      "tags": [
+        "cli",
+        "ai-coding",
+        "cost-tracking"
+      ],
+      "url": "https://github.com/damejan80/tokentab",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 211,
+      "createdDate": "2026-08-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260828-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "zachahn/vomit",
+      "summary": "用另一顆 LLM 清掉 Claude 的 token vomit，省 token",
+      "tags": [
+        "ai-coding",
+        "token-optimization"
+      ],
+      "url": "https://github.com/zachahn/vomit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 176,
+      "createdDate": "2026-08-15",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260828-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "joe960913/Jixu",
+      "summary": "TypeScript 持久化 single-agent harness：可復原 Threads、native TUI",
+      "tags": [
+        "agent-harness",
+        "typescript",
+        "tui"
+      ],
+      "url": "https://github.com/joe960913/Jixu",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 117,
+      "createdDate": "2026-08-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260828-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "ztratar/openhistory",
+      "summary": "macOS 私人可搜尋工作時間軸，給本地 AI agent，資料留本機",
+      "tags": [
+        "local-ai",
+        "productivity",
+        "macos"
+      ],
+      "url": "https://github.com/ztratar/openhistory",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 100,
+      "createdDate": "2026-08-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260828-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "sololabstr/uisight",
+      "summary": "給 AI「眼睛」看螢幕：即時 mobile+desktop session + 對比度/觸控目標量測",
+      "tags": [
+        "ai-agent",
+        "ui",
+        "vision"
+      ],
+      "url": "https://github.com/sololabstr/uisight",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 99,
+      "createdDate": "2026-08-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260828-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "crmne/fastpotify",
+      "summary": "crmne 做的原生快速 Spotify Rust 客戶端，本地播放+Connect，跨平台",
+      "tags": [
+        "audio",
+        "spotify",
+        "rust"
+      ],
+      "url": "https://github.com/crmne/fastpotify",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 62,
+      "createdDate": "2026-08-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260828-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Cripacx/mediagen",
+      "summary": "給 Claude Code 的 AI 圖片+影片生成 skill，Gemini/OpenAI/Kie 一個 CLI+MCP",
+      "tags": [
+        "image-gen",
+        "video-gen",
+        "mcp"
+      ],
+      "url": "https://github.com/Cripacx/mediagen",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 56,
+      "createdDate": "2026-08-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260828-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "Saganaki22/ComfyUI-Breeze-TTS-2",
+      "summary": "聯發科 Breeze TTS 2 ComfyUI 節點：voice clone/design/direction，雙語+INT8",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "comfyui"
+      ],
+      "url": "https://github.com/Saganaki22/ComfyUI-Breeze-TTS-2",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 24,
+      "createdDate": "2026-08-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260828-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "Morningstar202604/agentseed-mcp",
+      "summary": "AI coding agent 反幻覺 gate：8 個 MCP 工具抓發明 API 與假 tests pass",
+      "tags": [
+        "mcp",
+        "ai-coding",
+        "anti-hallucination"
+      ],
+      "url": "https://github.com/Morningstar202604/agentseed-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 22,
+      "createdDate": "2026-08-25",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260828-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-08-28",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "ssx360/rack-02",
+      "summary": "一個 HTML 檔實作完整 techno 音樂機（drum machine+合成），純前端無依賴",
+      "tags": [
+        "music",
+        "web-audio",
+        "creative"
+      ],
+      "url": "https://ssx360.github.io/rack-02/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 0,
+      "createdDate": "2026-08-27",
+      "license": "NONE"
     }
   ],
   "lastUpdated": "2026-08-28",
-  "updatedAt": "2026-08-28"
+  "updatedAt": "2026-08-28T05:40:00+08:00"
 }
