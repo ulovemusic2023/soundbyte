@@ -75597,8 +75597,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260828-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-28",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Paul Graham：大學該怎麼「養」出創辦人",
+      "summary": "創辦人不是靠創業課教出來的。PG 主張大學該做的是把技術學科（CS、工程、生物）教扎實，再給學生大量『非結構化時間』去做自己的 side project——因為創辦能力來自『會做東西』＋專案經驗，不是『會 pitch』。第一性原理：startup 成敗取決於產品，不是講給投資人聽的故事。金句：『The core of starting a startup is not creating a story that appeals to investors, but creating a product that appeals to users.』",
+      "tags": [
+        "founder-education",
+        "first-principles",
+        "product-over-pitch"
+      ],
+      "url": "https://paulgraham.com/prepare.html",
+      "source": "Paul Graham",
+      "sourceUrl": "https://paulgraham.com/prepare.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-28",
-  "updatedAt": "2026-08-28T05:20:00+08:00"
+  "updatedAt": "2026-08-28"
 }
