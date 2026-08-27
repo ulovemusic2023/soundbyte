@@ -75329,6 +75329,108 @@
       "stars": 125,
       "createdDate": "2026-08-23",
       "license": "MIT"
+    },
+    {
+      "id": "20260828-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Breeze TTS 2",
+      "summary": "開源 open-weight TTS，號稱 Artificial Analysis TTS 排行榜 open-weight 第一。中英雙語，支援 voice clone / voice design / voice direction 及 inline vocal events。<40ms TTFA，eager 僅 ~7.7 GiB，16GB 卡可跑。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "voice design",
+        "zero-shot tts"
+      ],
+      "url": "https://github.com/breezeblue-ai/breeze-tts",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/BreezeBlue/Breeze-TTS-2",
+      "price": null,
+      "vram": "~7.7 GiB (eager)",
+      "license": "Apache-2.0 (code) / weights 研究非商用"
+    },
+    {
+      "id": "20260828-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Audio8 TTS Preview 0.1B",
+      "summary": "能實用的最小 zero-shot TTS。主模型 ~170M + codec ~120M，Falcon H1 雙 AR 架構，中英為主。ONNX INT8 可純 CPU 跑，僅 ~0.4 GiB。",
+      "tags": [
+        "tts_speech",
+        "zero-shot tts",
+        "voice cloning",
+        "onnx"
+      ],
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b",
+      "price": null,
+      "vram": "<0.5 GiB (ONNX INT8, CPU)",
+      "license": "other"
+    },
+    {
+      "id": "20260828-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GLM-5.3-Flash",
+      "summary": "GLM-5 系列首個原生多模態，320B/18B active MoE，混合 sparse+linear attention。號稱 1/10 價格勝 GLM-5.2，coding/agentic 逼近 Claude Opus 4.8。可 SGLang/vLLM/KTransformers 部署。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "multimodal"
+      ],
+      "url": null,
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "price": null,
+      "vram": "320B — cloud-only",
+      "license": "MIT"
+    },
+    {
+      "id": "20260828-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-08-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Qwen3.8-Flash-Next",
+      "summary": "Qwen4 架構實驗 preview（180B 多模態）。QSA micro-block sparse attention、Gated Residual、N-gram Embedding（比 MoE 更好 offload 的擴展軸）。open-weight。",
+      "tags": [
+        "llm_inference",
+        "multimodal",
+        "sparse attention"
+      ],
+      "url": null,
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "price": null,
+      "vram": "~180B — cloud-only",
+      "license": "other (Qwen license)"
+    },
+    {
+      "id": "20260828-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-08-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Lightricks LTX-2.5",
+      "summary": "LTX Video 新版 image-to-video，HF 91 萬下載。LTX 一向輕量、消費級 GPU 友善，適合本地影片生成。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "text to video"
+      ],
+      "url": null,
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/Lightricks/LTX-2.5",
+      "price": null,
+      "vram": "量化後 16-24GB",
+      "license": "other (LTX license)"
     }
   ],
   "lastUpdated": "2026-08-27",
