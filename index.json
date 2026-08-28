@@ -76165,6 +76165,306 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260829-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "sapientinc/PRAXIST",
+      "summary": "Sapient（HRM 團隊）開源的 autonomous research system，把研究流程變成可測量、可被電腦執行的 loop，自跑實驗、驗證假設、產出可複現結果。",
+      "tags": [
+        "ai-agent",
+        "autonomous-agent",
+        "research"
+      ],
+      "url": "https://github.com/sapientinc/PRAXIST",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-15+stars:>50",
+      "stars": 1449,
+      "createdDate": "2026-08-27",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260829-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "missuo/kumone",
+      "summary": "雲の音 — 原生 macOS 網易雲音樂客戶端，純 SwiftUI，界面乾淨。",
+      "tags": [
+        "audio",
+        "macos",
+        "music-client"
+      ],
+      "url": "https://github.com/missuo/kumone",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-15+stars:>50",
+      "stars": 829,
+      "createdDate": "2026-08-16",
+      "license": "LGPL-3.0"
+    },
+    {
+      "id": "20260829-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "Zyrexnn/Cybermes",
+      "summary": "Offensive security / bug bounty / red team 的 agent framework，基於 Hermes agent + 專用推理 skills + 多模型 orchestration。授權滲透測試用。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "red-team"
+      ],
+      "url": "https://github.com/Zyrexnn/Cybermes",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 646,
+      "createdDate": "2026-08-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260829-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "XiaoDuoYa/codex-with-chatgpt",
+      "summary": "ChatGPT 當規劃腦出計畫，Codex harness 負責執行。把思考跟施工拆開的 AI coding 工作流。",
+      "tags": [
+        "coding-agent",
+        "codex",
+        "mcp"
+      ],
+      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 236,
+      "createdDate": "2026-08-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260829-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "Nanako0129/sepia",
+      "summary": "De-AI writing skill（CC/Codex/Grok/Antigravity），做敘事結構修復＋依載體匹配的專業文風規則，基於 StoryScope。",
+      "tags": [
+        "writing",
+        "agent-skill",
+        "claude-code"
+      ],
+      "url": "https://github.com/Nanako0129/sepia",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 234,
+      "createdDate": "2026-08-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260829-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "wide-trace/open-higgsfield",
+      "summary": "開源版 Higgsfield：圖片＋影片生成 studio，單一 prompt bar、每 model 保留設定、成品收進同一 gallery。⚠️ 無 license、fork 偏低。",
+      "tags": [
+        "image-generation",
+        "video-generation",
+        "creator-tool"
+      ],
+      "url": "https://github.com/wide-trace/open-higgsfield",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-15+stars:>50",
+      "stars": 964,
+      "createdDate": "2026-08-26",
+      "license": "none"
+    },
+    {
+      "id": "20260829-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "Mudb0y/openevv",
+      "summary": "把 IBM Embedded ViaVoice / ETI Eloquence SF 用可攜 C 重寫的 TTS 引擎，經典機器人腔語音。niche 但玩復古音色對味。",
+      "tags": [
+        "tts",
+        "audio",
+        "speech-synthesis"
+      ],
+      "url": "https://github.com/Mudb0y/openevv",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "stars": 23,
+      "createdDate": "2026-08-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260829-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "vllm-project/semantic-router",
+      "summary": "vLLM 官方的 programmable Mixture-of-Models router，依 prompt 內容做語意路由選最適模型。自架多模型推理的省錢層。",
+      "tags": [
+        "llm-inference",
+        "model-router",
+        "infra"
+      ],
+      "url": "https://github.com/vllm-project/semantic-router",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 5383,
+      "createdDate": "2025-xx",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260829-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "github/gh-aw",
+      "summary": "GitHub 官方 Agentic Workflows：把 AI agent 接進 GitHub Actions，用自然語言描述任務讓 agent 在 CI 裡跑。",
+      "tags": [
+        "ai-agent",
+        "ci-cd",
+        "github"
+      ],
+      "url": "https://github.com/github/gh-aw",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 5029,
+      "createdDate": "2025-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260829-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "TabularisDB/tabularis",
+      "summary": "開源桌面 SQL workspace，打通 PostgreSQL/MySQL/SQLite ＋ DuckDB/ClickHouse/Redis/Firestore 等 15+ DB。內建 MCP server 給 Claude/Cursor/Devin，含 SQL notebook 與視覺化 EXPLAIN。",
+      "tags": [
+        "database",
+        "mcp",
+        "dev-tool"
+      ],
+      "url": "https://github.com/TabularisDB/tabularis",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 4354,
+      "createdDate": "2026-01-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260829-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "bjarneo/cliamp",
+      "summary": "Winamp 風格的終端機音樂播放器（Go），命令列裡放歌的懷舊神器。",
+      "tags": [
+        "audio",
+        "cli",
+        "music-player"
+      ],
+      "url": "https://github.com/bjarneo/cliamp",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 3821,
+      "createdDate": "2026-02-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260829-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "asciimoo/hister",
+      "summary": "你自己的搜尋引擎——自架、私有的個人搜尋，asciimoo（searx 作者）出品。",
+      "tags": [
+        "search-engine",
+        "self-hosted",
+        "privacy"
+      ],
+      "url": "https://github.com/asciimoo/hister",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 3185,
+      "createdDate": "2026-01-04",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260829-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "workweave/router",
+      "summary": "給 agentic 系統的 model router，<50ms 路由每個 prompt 到最適模型，宣稱換 endpoint 就能砍 40-70% 成本。",
+      "tags": [
+        "model-router",
+        "ai-agent",
+        "cost-optimization"
+      ],
+      "url": "https://github.com/workweave/router",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 2441,
+      "createdDate": "2026-04-27",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260829-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "google/sam",
+      "summary": "Google 的 SAM（Sovereign Agent Mesh），agent 互聯的 mesh 基礎設施，Go 寫。",
+      "tags": [
+        "ai-agent",
+        "agent-mesh",
+        "infra"
+      ],
+      "url": "https://github.com/google/sam",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 775,
+      "createdDate": "2026-04-21",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260829-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-08-29",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "openai/tunnel-client",
+      "summary": "OpenAI 官方 Secure MCP Tunnel 客戶端：把本機/private MCP server 安全接到 ChatGPT/Codex/Responses API/AgentKit，不暴露公網。",
+      "tags": [
+        "mcp",
+        "tunnel",
+        "openai"
+      ],
+      "url": "https://github.com/openai/tunnel-client",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 315,
+      "createdDate": "2025-12-10",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-08-28T21:33:39Z",
