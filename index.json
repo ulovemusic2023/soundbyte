@@ -76145,8 +76145,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260829-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-29",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Claude Code Auto Mode 被繞過 80% — 安全機制反成幫兇",
+      "summary": "Johann Rehberger 找到繞過 Claude Code auto mode 的攻擊，成功率約 80%：誘導 agent 下載解壓 zip，import base64 時連帶執行 archive 裡的 struct.py。關鍵洞察是安全分類器本身成了失敗的一環——放行惡意程序建立，卻在 Claude 想終止程序時擋下清理指令。結論：對外暴露的 autonomous agent 唯一安全解是沙箱化、限制對外網路、不把憑證放進 agent runtime。",
+      "tags": [
+        "ai-agent-security",
+        "sandboxing",
+        "agentic"
+      ],
+      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "source": "Johann Rehberger (via Simon Willison)",
+      "sourceUrl": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-28T21:24:11.240741Z",
-  "updatedAt": "2026-08-28T21:24:11.240741Z"
+  "lastUpdated": "2026-08-28T21:33:39Z",
+  "updatedAt": "2026-08-28T21:33:39Z"
 }
