@@ -75995,8 +75995,158 @@
       "price": null,
       "vram": "9B 量化後 16GB 可跑",
       "license": "Other"
+    },
+    {
+      "id": "20260829-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "summary": "Johann Rehberger 用一句『summarize this website』就劫持 Claude Code Opus 5 的 Auto Mode 達成 RCE，成功率 60-80%——對照 Anthropic 委託測出的 0.00%。攻擊鏈把 agent 導去 curl 抓 ZIP、解壓後 import base64 觸發被 shadow 的惡意 struct.py。更關鍵：安全 classifier 自身成失效點，放行 malware process 卻擋掉 Claude 想終止它的 cleanup。Auto Mode 不能取代 sandbox。",
+      "tags": [
+        "prompt-injection",
+        "claude-code",
+        "agent-safety",
+        "sandboxing",
+        "security",
+        "paradigm-shift"
+      ],
+      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "source": "Embrace The Red (Johann Rehberger)",
+      "sourceUrl": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260829-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Just a rumour of a bug is enough to find a security exploit these days",
+      "summary": "Anil Madhavapeddy 修 OCaml cohttp path traversal 時發現：只要大概知道有個 bug，用 agent 一分鐘就能重造 exploit；公開 fix PR 後約 10 分鐘 server log 就冒出探測。rumour 即足夠情報、自動化 watcher 盯著 public repo，傳統『先私下修再公告』的 OSS 安全流程被壓縮到失效。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "coordinated-disclosure",
+        "open-source",
+        "paradigm-shift"
+      ],
+      "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+      "source": "Anil Madhavapeddy (recoil.org)",
+      "sourceUrl": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260829-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GLM-5.3 開放權重釋出：coding SOTA + 湧現的 cyber 能力",
+      "summary": "z.ai 釋出 GLM-5.3（同 5.2 base、全靠 post-training）：最強開放權重 coding 模型，Z.ai Code Bench +50%，Terminal Bench 3.0 與 Agents' Last Exam 開源 SOTA。意外亮點是 cyber——CyberGym SOTA、ExploitGym/ExploitBench 較 5.2 翻倍以上，攻擊性資安成為 scaling 的湧現能力。",
+      "tags": [
+        "open-weights",
+        "ai-models",
+        "coding-agent",
+        "cyber",
+        "paradigm-shift"
+      ],
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "source": "Z.ai (Hugging Face)",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260829-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "htmx 4.0.0 released",
+      "summary": "htmx 4 歷時 8 個月：內部從 XMLHttpRequest 遷到 fetch()，對使用者幾乎無感。三大變更：attribute inheritance 改為顯式預設、event 命名標準化、history 不再預設用 localStorage。刻意不標為 npm latest（2.x 續留到 2027 初），避免非版本化 CDN 使用者被強制升級。定位『100 年網路服務』。",
+      "tags": [
+        "htmx",
+        "frontend",
+        "fetch-api",
+        "new-languages"
+      ],
+      "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+      "source": "htmx.org",
+      "sourceUrl": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260829-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment (Station)",
+      "summary": "『Station』開放世界多 agent 環境：不同 model family 的 agent 無中央協調、自選研究方向、協作共建文獻。12 題 AlphaEvolve 建構題中 5 題產出新結果（有限體 Kakeya 新無窮族、11 維 604 點 kissing、Erdős minimum-overlap 改進下界等），且產出定理與分析而非只數值，全程開源。",
+      "tags": [
+        "multi-agent",
+        "ai-agent",
+        "autonomous-research",
+        "ai-models"
+      ],
+      "url": "https://arxiv.org/abs/2608.23691",
+      "source": "arXiv 2608.23691",
+      "sourceUrl": "https://arxiv.org/abs/2608.23691",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260829-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Pulse: We need to talk about migrations with AI",
+      "summary": "OpenAI 案例宣稱 Asana 用 Codex 兩週、約 $12K 移除過時測試框架 Enzyme，對比原估 4 工程師 5 年、約 $6M。Gergely 認同 AI 極擅長 migration，但對『5 年/$6M』原估存疑並逐一拆解。重點：AI 讓一整類過去被無限延後的長期工程變得實際可做。",
+      "tags": [
+        "ai-coding",
+        "migration",
+        "developer-productivity"
+      ],
+      "url": "https://blog.pragmaticengineer.com/the-pulse-we-need-to-talk-about-migrations-with-ai/",
+      "source": "The Pragmatic Engineer (Gergely Orosz)",
+      "sourceUrl": "https://blog.pragmaticengineer.com/the-pulse-we-need-to-talk-about-migrations-with-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260829-sw-007",
+      "radar": "software-dev",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GUIs should be fully keyboard-driven",
+      "summary": "回應『Stop Making TUIs』論戰：作者反對『TUI 該優先因為它 keyboard-driven』。GUI 能力是 TUI 超集，隨機挑 TUI 較可能全鍵盤只凸顯多數 GUI 鍵盤導覽做得爛。GNOME HIG 早就明訂能用指標做的動作也都該能用鍵盤。主張讓 GUI 全鍵盤可操作。",
+      "tags": [
+        "frontend-dx",
+        "ux",
+        "tui-vs-gui",
+        "accessibility"
+      ],
+      "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+      "source": "ckardaris.com",
+      "sourceUrl": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-29",
-  "updatedAt": "2026-08-29T05:13:20.712850+08:00"
+  "lastUpdated": "2026-08-28T21:24:11.240741Z",
+  "updatedAt": "2026-08-28T21:24:11.240741Z"
 }
