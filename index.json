@@ -75896,8 +75896,107 @@
       "stars": 0,
       "createdDate": "2026-08-27",
       "license": "NONE"
+    },
+    {
+      "id": "20260829-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "unsloth/GLM-5.3-Flash-GGUF",
+      "summary": "Unsloth 釋出 GLM-5.3-Flash 的 GGUF 量化版（含 imatrix dynamic quant），MIT 授權。GLM-5.3-Flash 是智譜最新 glm5_next MoE flash 模型，這版讓它能在 llama.cpp／Ollama 本地跑；配 64GB RAM 做 MoE offload，RTX 5070 Ti 用低 bit quant 有機會塞下。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
+      "price": null,
+      "vram": "低 bit GGUF 量化可在 16GB 邊緣運行（MoE offload）",
+      "license": "MIT"
+    },
+    {
+      "id": "20260829-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "pipecat-ai/phonellm-alpha-1",
+      "summary": "Pipecat 團隊基於 NVIDIA Nemotron-3-Nano-30B-A3B 微調的語音 agent 專用 LLM，主打 phone／voice-agent 場景，內建 tool-use／function-calling。MoE 僅啟用 3B active params，搭 Pipecat 即時語音 pipeline，適合做本地語音助理。BSD-2 授權。",
+      "tags": [
+        "tts_speech",
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://huggingface.co/pipecat-ai/phonellm-alpha-1",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/pipecat-ai/phonellm-alpha-1",
+      "price": null,
+      "vram": "30B-A3B MoE，量化後 16GB 可跑（3B active）",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "id": "20260829-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "tencent/Hy4-preview",
+      "summary": "騰訊混元 Hunyuan Hy4 preview 上線，text-generation MoE 架構、Apache-2.0（附兩篇 arXiv）。定位新一代旗艦對話模型，開源授權友善但體積大，本地跑需雲端等級 VRAM。可先觀望正式版與 GGUF 量化。",
+      "tags": [
+        "llm_inference",
+        "moe"
+      ],
+      "url": "https://huggingface.co/tencent/Hy4-preview",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/tencent/Hy4-preview",
+      "price": null,
+      "vram": "大型 MoE 旗艦，需 >24GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260829-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "zai-org/GLM-5.3",
+      "summary": "智譜 GLM-5.3 完整版釋出（glm_moe_dsa 架構、FP8 權重）。相對前一天掃到的 Flash 版，這是完整旗艦，效能更強但需雲端 VRAM。想本地用的看 unsloth 的 Flash-GGUF 量化版即可。",
+      "tags": [
+        "llm_inference",
+        "glm",
+        "fp8"
+      ],
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+      "price": null,
+      "vram": "完整旗艦 MoE，需雲端等級 VRAM",
+      "license": "Other"
+    },
+    {
+      "id": "20260829-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-08-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "tencent/WeMM-Embedding-9B",
+      "summary": "騰訊 WeMM 多模態 embedding 模型，基於 Qwen3.5-9B，支援 text／image／video 統一向量、MRL 可變維度。適合跨模態 RAG、語意檢索與多模態知識庫。9B 量化後可在 16GB 塞下。",
+      "tags": [
+        "rag_knowledge",
+        "embedding",
+        "music_understanding"
+      ],
+      "url": "https://huggingface.co/tencent/WeMM-Embedding-9B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/tencent/WeMM-Embedding-9B",
+      "price": null,
+      "vram": "9B 量化後 16GB 可跑",
+      "license": "Other"
     }
   ],
-  "lastUpdated": "2026-08-28",
-  "updatedAt": "2026-08-28T05:40:00+08:00"
+  "lastUpdated": "2026-08-29",
+  "updatedAt": "2026-08-29T05:13:20.712850+08:00"
 }
