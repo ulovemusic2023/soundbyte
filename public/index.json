@@ -76661,8 +76661,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260830-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-30",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "攻擊者永遠比防守者有結構性優勢",
+      "summary": "Ben Thompson 用資安的不對稱性推導出通用商業框架：攻擊方目標是弄壞東西，防守方卻必須什麼都不能弄壞——這種先天不對稱正是新創持續掀翻在位者的底層原因。他也用同一邏輯解釋為何 AI 的真實世界改造會比炒作慢：破壞很快，重建體系很慢。",
+      "tags": [
+        "asymmetric-incentives",
+        "incumbent-vs-startup",
+        "ai-adoption"
+      ],
+      "url": "https://stratechery.com/2026/internet-hype-and-real-world-change/",
+      "source": "Ben Thompson · Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/internet-hype-and-real-world-change/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260830-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-08-30",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "資安『禁運期』已死：AI 讓補丁的風聲就是 exploit",
+      "summary": "Cambridge 教授 / OCaml maintainer Anil Madhavapeddy 實測：安全修補公開討論後約 10 分鐘就被 AI agent 探測。研究數據：給 AI 一段 CVE 描述能打穿 87% 漏洞，不給只剩 7%。結論：放棄禁運→修補→公告的順序流程，改成補丁一出就同步公開部署 + 協定層防禦。",
+      "tags": [
+        "security-disclosure",
+        "ai-agents",
+        "ops"
+      ],
+      "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+      "source": "Anil Madhavapeddy",
+      "sourceUrl": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-28T21:33:39Z",
-  "updatedAt": "2026-08-28T21:33:39Z"
+  "lastUpdated": "2026-08-29T21:35:01Z",
+  "updatedAt": "2026-08-29T21:35:01Z"
 }
