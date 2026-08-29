@@ -76701,6 +76701,285 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260830-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "chat-on-steroids",
+      "summary": "幫 ChatGPT 桌面版加上本地 MCP 能力 + Chrome 整合，支援 Goal、Compact & Resume 與可持久化的 multi-agent workflow。等於把 Claude Code/Codex 的持久任務體驗搬到 ChatGPT。",
+      "tags": [
+        "mcp",
+        "chatgpt",
+        "multi-agent"
+      ],
+      "url": "https://github.com/totec448-spec/chat-on-steroids",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 551,
+      "createdDate": "2026-08-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260830-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "lanshu-create-ai-presenter-video",
+      "summary": "Provider-neutral 的 Codex Skill：給一份腳本 + 一張授權主持人照片，就能產出「經過驗證」的 AI 主播影片。適合快速做教學/行銷短片。",
+      "tags": [
+        "coding-agent",
+        "video",
+        "creator-tool"
+      ],
+      "url": "https://github.com/cclank/lanshu-create-ai-presenter-video",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+stars:>50",
+      "stars": 972,
+      "createdDate": "2026-08-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260830-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "ip-as-logo-skill",
+      "summary": "一支爆紅的 Agent Skill，專門生成簡化、圓角、微擬物風的 IP 吉祥物 logo。純 prompt 驅動，適合快速做品牌角色/貼圖概念。",
+      "tags": [
+        "agent-skill",
+        "branding",
+        "logo"
+      ],
+      "url": "https://github.com/s1dashu/ip-as-logo-skill",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 4552,
+      "createdDate": "2026-08-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260830-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "decionis-docker",
+      "summary": "在 Docker 裡「治理」AI agent 的高風險動作：deterministic policy + 人工核准 + 簽章的 Decision Dossier。放行破壞性操作前先過一道閘。",
+      "tags": [
+        "ai-agent",
+        "governance",
+        "sandbox"
+      ],
+      "url": "https://github.com/decionis/docker",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+topic:ai-agent",
+      "stars": 165,
+      "createdDate": "2026-08-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260830-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "lemmalog",
+      "summary": "給 LLM agent 記憶用的 Datalog engine：分層規則、可追溯 provenance 的 facts、增量推導，附 MCP server 讓 harness 當共享大腦。",
+      "tags": [
+        "mcp",
+        "agent-memory",
+        "datalog"
+      ],
+      "url": "https://github.com/JordyZomer/lemmalog",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+topic:mcp",
+      "stars": 133,
+      "createdDate": "2026-08-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260830-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "headcount",
+      "summary": "把 Claude Code 組成一間「公司」：15+ 部門、125+ skills，每個都能獨立安裝。想要模組化 skill 生態可以參考它的結構。",
+      "tags": [
+        "claude-code",
+        "skills",
+        "agent-org"
+      ],
+      "url": "https://github.com/cbrock84/headcount",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+topic:mcp",
+      "stars": 118,
+      "createdDate": "2026-08-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260830-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "codex-command-center",
+      "summary": "Codex 的本地桌面控制中心：管理專案、工程任務、sessions、Git 變更、Skills 與 MCP 設定。Codex 重度使用者的儀表板。",
+      "tags": [
+        "coding-agent",
+        "codex",
+        "desktop"
+      ],
+      "url": "https://github.com/sevensir888/codex-command-center",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+topic:mcp",
+      "stars": 107,
+      "createdDate": "2026-08-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260830-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "tare",
+      "summary": "「Claude 額度 10 分鐘就燒完」——作者做的工具，幫你分析到底是什麼吃掉 Claude quota。Claude Code 重度用戶必看。",
+      "tags": [
+        "claude-code",
+        "token-analysis"
+      ],
+      "url": "https://github.com/kelviq/tare",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49470000",
+      "stars": 132,
+      "createdDate": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260830-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "sparkduet",
+      "summary": "在 2× NVIDIA DGX Spark 上跑 DeepSeek/Qwen：on-demand model library、Unsloth QLoRA 微調、TP=2 vLLM 單一 OpenAI-compatible endpoint，附誠實 benchmark。",
+      "tags": [
+        "local-llm",
+        "vllm",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/zorost/sparkduet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+topic:local-llm",
+      "stars": 71,
+      "createdDate": "2026-08-25",
+      "license": "none"
+    },
+    {
+      "id": "20260830-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "rapid-mlx-dsh-provider",
+      "summary": "Rapid-MLX 的原生 provider，讓 DeepSeek Harness 直接從 server 讀 model facts（不用手改 settings.yaml）。Apple Silicon 本地推理生態的一塊拼圖。",
+      "tags": [
+        "local-llm",
+        "mlx",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/raullenchai/rapid-mlx-dsh-provider",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+topic:local-llm",
+      "stars": 70,
+      "createdDate": "2026-08-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260830-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "archify",
+      "summary": "本週爆衝的 Agent Skill：把架構、workflow、sequence、data-flow、lifecycle 都畫成漂亮又可驗證的圖，輸出自帶動態的 self-contained HTML。技術文件/簡報神器。",
+      "tags": [
+        "agent-skill",
+        "diagrams",
+        "architecture"
+      ],
+      "url": "https://github.com/tt-a1i/archify",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 30811,
+      "createdDate": "2026-04-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260830-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "kern",
+      "summary": "1.5MB 單一 binary、沒有 daemon 的 container / resource runtime。想要極輕量容器的可以玩。",
+      "tags": [
+        "devtool",
+        "container",
+        "runtime"
+      ],
+      "url": "https://github.com/getkern/kern",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49440000",
+      "stars": 303,
+      "createdDate": "2026-07-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260830-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "LeapSinger",
+      "summary": "🎵 快速的歌聲 acoustic model：harmonic + noise 激發，經 1-step rectified flow 精修成 mel（內建 NHVSing vocoder）。多歌手 + 風格控制，支援 ONNX/OpenUTAU 匯出。做 SVS 的值得追。",
+      "tags": [
+        "singing-voice",
+        "tts",
+        "audio"
+      ],
+      "url": "https://github.com/wavtechyukky/LeapSinger",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+topic:text-to-speech",
+      "stars": 32,
+      "createdDate": "2026-08-29",
+      "license": "none"
+    },
+    {
+      "id": "20260830-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-08-30",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "halofpx",
+      "summary": "在 AMD Strix Halo 上跑 Ornith/Qwen/Nemotron/DeepSeek：統一 OpenAI-compatible server，ROCm FP4 量化、驗證過 262K context、vision + iGPU/NPU 熱插拔。",
+      "tags": [
+        "local-llm",
+        "rocm",
+        "amd"
+      ],
+      "url": "https://github.com/julianmb/halofpx",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-16+topic:local-llm",
+      "stars": 35,
+      "createdDate": "2026-08-17",
+      "license": "none"
     }
   ],
   "lastUpdated": "2026-08-29T21:35:01Z",
