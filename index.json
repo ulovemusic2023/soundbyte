@@ -76540,6 +76540,127 @@
       "price": null,
       "vram": "local-ready",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260830-sw-001",
+      "radar": "software-dev",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tencent 開源 Hunyuan Hy4 Preview（770B/49B active，1M context）",
+      "summary": "騰訊釋出並開源 Hy4 preview：770B 總參數、49B active、context 破 1M，主打 coding／office／科研 productivity。內部 163 專家×203 任務盲測 2.99/4.00，微幅勝 GLM-5.3(2.92)、Kimi K3(2.94)。可經 TokenHub／OpenRouter 取用。",
+      "tags": [
+        "open-weights",
+        "moe",
+        "1m-context",
+        "coding-agent"
+      ],
+      "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "source": "Tencent (Hunyuan)",
+      "sourceUrl": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260830-sw-002",
+      "radar": "software-dev",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Domain-Driven Agents：brownfield 才是 agent 真正的牆",
+      "summary": "LLM 在 greenfield 強、進老 codebase 崩，因系統從沒決定哪個概念拼法是真的。瓶頸不是模型是 code readiness：用 DDD 釐清顯性化 domain 語言；refactor 的『打字』崩到近零，貴的是『decide』。",
+      "tags": [
+        "ai-agent",
+        "ddd",
+        "brownfield",
+        "tech-debt"
+      ],
+      "url": "https://coldtake.dev/blog/domain-driven-agents",
+      "source": "coldtake.dev",
+      "sourceUrl": "https://coldtake.dev/blog/domain-driven-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260830-sw-003",
+      "radar": "software-dev",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Creepy crawlies：AI scraper 讓 kernel.org 花在爬蟲的 CPU 超過所有正常存取",
+      "summary": "Konstantin Ryabitsev 硬數據：5 節點隨時 14 CPU core 只在把 git commit 逐條 render HTML 餵 AI 爬蟲，比含 git clone 的所有正當存取還多——全站本可一個 git clone 抓走。pre-AI kernel 歷史成訓練金礦(LLM 產物再訓練＝digital prion)。",
+      "tags": [
+        "ai-crawlers",
+        "devops",
+        "scraping-load"
+      ],
+      "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
+      "source": "people.kernel.org",
+      "sourceUrl": "https://people.kernel.org/monsieuricon/creepy-crawlies",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260830-sw-004",
+      "radar": "software-dev",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Debian 表決『不禁止也不背書』LLM，Joey Hess 憂 boilerplate 被焊死",
+      "summary": "Debian GR(vote_002) 對開發用 LLM 採『不背書也不禁止』。Joey Hess〈Debian and the sirens〉憂 LLM 消滅精簡 boilerplate／改革 policy 的動機，讓 Debian 更堅定成為它現在的樣子、更難蛻變。",
+      "tags": [
+        "governance",
+        "llm-policy",
+        "open-source"
+      ],
+      "url": "https://joeyh.name/blog/entry/Debian_and_the_sirens/",
+      "source": "joeyh.name",
+      "sourceUrl": "https://joeyh.name/blog/entry/Debian_and_the_sirens/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260830-sw-005",
+      "radar": "software-dev",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Yap：一種特定的 slop，以及怎麼 review LLM 產出的 code",
+      "summary": "mckayla 把 LLM 冗長 shrill 的表達命名為 yap。主張『LLM review LLM』不足(第一隻覺得對憑什麼信第二隻品味更好)，改從 communication levels 優化人類 review。",
+      "tags": [
+        "code-review",
+        "ai-slop",
+        "practices"
+      ],
+      "url": "https://mckayla.blog/posts/yap.html",
+      "source": "mckayla.blog",
+      "sourceUrl": "https://mckayla.blog/posts/yap.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260830-sw-006",
+      "radar": "software-dev",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare BotBase for Operators：給 bot 營運方的雙向登錄",
+      "summary": "Cloudflare 讓 bot／agent 營運方在 dashboard 追蹤送審狀態、編輯條目、用 behavior model 宣告 bot 如何使用內容，補上 agentic web 兩邊參與的透明度。",
+      "tags": [
+        "agent-native-web",
+        "bot-directory"
+      ],
+      "url": "https://blog.cloudflare.com/botbase-for-operators/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/botbase-for-operators/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-28T21:33:39Z",
