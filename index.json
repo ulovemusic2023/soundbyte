@@ -76465,6 +76465,81 @@
       "stars": 315,
       "createdDate": "2025-12-10",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260830-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vllm-project/vllm v0.28.0",
+      "summary": "vLLM 大版本更新：新增 Ling 3.0 Flash（BF16/FP8）、Dots3 NOTE、Kimi-K3 fused kernels，Qwen3.8 加上 AMD ROCm 支援。重點是 shared-expert sharding「每張 GPU 省 ~17GiB」+ online MXFP4 量化，對 16GB 卡跑 MoE 幫助大。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260830-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp v0.3.0",
+      "summary": "版本號從 b-number 跳到 semver v0.3.0。DeepSeek 4 支援 -sm tensor 張量切分多卡、GLM-4.5-Air 加入 MTP、新增 dots3 多模態（DSA-ISWA KV cache）。web UI 也加了分頁對話。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.3.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.3.0",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260830-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "experientiallabs/experiential",
+      "summary": "開源 model gateway：一個 control plane 同時管閉源、開源、本地、自訓模型。Show HN 214 分。想在 local + cloud 模型之間統一切換／控本，可取代自建路由層。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/experientiallabs/experiential",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/experientiallabs/experiential",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260830-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-08-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ThinkOffApp/CarWatch",
+      "summary": "把車子變成 chat-room agent：Raspberry Pi 5 + 行車記錄器 + 本地 AI。edge 推理的有趣範例，全跑在 Pi 上、不上雲。Show HN 146 分。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/ThinkOffApp/CarWatch",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/ThinkOffApp/CarWatch",
+      "price": null,
+      "vram": "local-ready",
+      "license": "AGPL-3.0"
     }
   ],
   "lastUpdated": "2026-08-28T21:33:39Z",
