@@ -76980,8 +76980,29 @@
       "stars": 35,
       "createdDate": "2026-08-17",
       "license": "none"
+    },
+    {
+      "id": "20260831-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-08-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "shootthesound/Fizgig",
+      "summary": "本地 LoRA／微調工作台，專攻 Flux 2 Klein 9B、Krea 2、MiniMax H3。5.0 版連整個 base model 全參數微調都能塞進 16GB 消費級顯卡（社群實測 RTX 5070 12GB 也能跑 H3 LoRA）。支援用圖片、影片、聲音、人聲訓練，內建 Checkpoint→LoRA 轉檔。",
+      "tags": [
+        "image_gen",
+        "llm_training",
+        "lora",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/shootthesound/Fizgig",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "16GB local-ready",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-08-29T21:35:01Z",
-  "updatedAt": "2026-08-29T21:35:01Z"
+  "lastUpdated": "2026-08-31T05:13:31.909415+08:00",
+  "updatedAt": "2026-08-31T05:13:31.909415+08:00"
 }
