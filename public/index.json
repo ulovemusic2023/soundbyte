@@ -77169,8 +77169,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260831-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-08-31",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Thomas Kurian — 不要用 zero-sum 看你的 stack",
+      "summary": "Google Cloud 為何願意讓對手在自家 TPU 上訓練/推論競品模型？因為 stack 的每一層都能各自變現：賣 TPU 的錢回頭養 R&D，不需要逼所有營收都從單一層擠出來。框架——把商業模式拆成多層各自定價，比綁死單一利潤點更 antifragile，也讓你敢跟對手合作。",
+      "tags": [
+        "business-model",
+        "non-zero-sum",
+        "platform-strategy"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-google-cloud-ceo-thomas-kurian-about-the-agentic-moment/",
+      "source": "Stratechery (Ben Thompson interview)",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-google-cloud-ceo-thomas-kurian-about-the-agentic-moment/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-31T05:13:31.909415+08:00",
-  "updatedAt": "2026-08-31T05:13:31.909415+08:00"
+  "lastUpdated": "2026-08-30T21:33:36.933616Z",
+  "updatedAt": "2026-08-30T21:33:36.933616Z"
 }
