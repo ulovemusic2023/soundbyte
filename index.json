@@ -77189,6 +77189,186 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260831-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "kacperkapusciak/goldie",
+      "summary": "Agentic App Store 截圖/預覽產生器，讓 coding agent 自動產出上架用 screenshots 與 previews。TypeScript + MIT。",
+      "tags": [
+        "ai-agent",
+        "creator-tool",
+        "screenshots"
+      ],
+      "url": "https://github.com/kacperkapusciak/goldie",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kacperkapusciak/goldie",
+      "stars": 702,
+      "createdDate": "2026-08-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260831-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "hkqr/my-free-code",
+      "summary": "開源多供應商 AI gateway，為 Claude Code 等 coding agent 提供 model routing、streaming、tool use、fallback、local model。",
+      "tags": [
+        "ai-gateway",
+        "claude-code",
+        "model-routing"
+      ],
+      "url": "https://github.com/hkqr/my-free-code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/hkqr/my-free-code",
+      "stars": 345,
+      "createdDate": "2026-08-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260831-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "useagenthq/useagent",
+      "summary": "開源 AI 同事：每個 agent 有自己的 cloud computer 與工具，交回成品。底層跑 Claude Code / Codex / OpenCode。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "delegation"
+      ],
+      "url": "https://github.com/useagenthq/useagent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/useagenthq/useagent",
+      "stars": 127,
+      "createdDate": "2026-08-29",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260831-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "omaekumiko2-create/kru",
+      "summary": "Local-first MCP 密碼/憑證管理器，讓 agent 用 password/API key/SSH/TOTP 但明文不暴露給模型。Rust。",
+      "tags": [
+        "mcp",
+        "security",
+        "credential-manager"
+      ],
+      "url": "https://github.com/omaekumiko2-create/kru",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/omaekumiko2-create/kru",
+      "stars": 126,
+      "createdDate": "2026-08-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260831-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "pinoox/neuromesh",
+      "summary": "仿生 context engine + neural runtime，主打更聰明的 AI coding context 管理。Rust，早期。",
+      "tags": [
+        "context-engine",
+        "ai-coding",
+        "rust"
+      ],
+      "url": "https://github.com/pinoox/neuromesh",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/pinoox/neuromesh",
+      "stars": 73,
+      "createdDate": "2026-08-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260831-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "naw103/foremerge",
+      "summary": "Git 之上的 coding agent 協調協定，在 code 衝突前先抓 intent 衝突。多 agent 平行改 repo 用。Rust。",
+      "tags": [
+        "multi-agent",
+        "coordination",
+        "git"
+      ],
+      "url": "https://github.com/naw103/foremerge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/naw103/foremerge",
+      "stars": 61,
+      "createdDate": "2026-08-21",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260831-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "inkeep/open-knowledge",
+      "summary": "AI-native Markdown IDE / LLM wiki，真 WYSIWYG，原生整合 Claude、Codex，適合私人知識庫與技術規格。",
+      "tags": [
+        "markdown",
+        "knowledge-base",
+        "ai-native"
+      ],
+      "url": "https://github.com/inkeep/open-knowledge",
+      "source": "MAGI",
+      "sourceUrl": "https://github.com/inkeep/open-knowledge",
+      "stars": 3742,
+      "createdDate": "2026-06-03",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260831-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "img2threejs/img2threejs",
+      "summary": "給參考圖重建成純程式碼、程序化、可動畫的 Three.js 3D 模型。Token-efficient image-to-3D。",
+      "tags": [
+        "3d",
+        "threejs",
+        "image-to-code"
+      ],
+      "url": "https://github.com/img2threejs/img2threejs",
+      "source": "MAGI",
+      "sourceUrl": "https://github.com/img2threejs/img2threejs",
+      "stars": 14568,
+      "createdDate": "2026-07-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260831-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-08-31",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "rand/cc-polymath",
+      "summary": "Claude Code skills + workflows 合集，主打 context 高效與 skill 品質，範圍從 cloud infra 到 design 到數學。",
+      "tags": [
+        "claude-code",
+        "skills",
+        "workflows"
+      ],
+      "url": "https://github.com/rand/cc-polymath",
+      "source": "MAGI",
+      "sourceUrl": "https://github.com/rand/cc-polymath",
+      "stars": 135,
+      "createdDate": "2025-10-18",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-30T21:33:36.933616Z",
