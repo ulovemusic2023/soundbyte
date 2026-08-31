@@ -77679,6 +77679,88 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260901-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-01",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "jub0t/Concat",
+      "summary": "免費開源 CapCut 替代品（前身 WolfCut）。Rust 引擎 + React 介面，本機執行、無浮水印無訂閱：多軌剪輯、split/trim/transitions、變速，內建完全本機的 auto-caption（whisper，音檔不外傳）、本地 TTS 與人聲濾鏡。跨 macOS/Windows/Linux，Alpha。",
+      "tags": [
+        "video-editing",
+        "tts",
+        "whisper",
+        "creator-tool"
+      ],
+      "url": "https://github.com/jub0t/Concat",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/jub0t/Concat",
+      "stars": 876,
+      "createdDate": "2026-08-25",
+      "license": "MPL-2.0"
+    },
+    {
+      "id": "20260901-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-01",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "Jordanwei1/jiaojie-skill",
+      "summary": "「交接 Skill」跨窗口/跨模型/跨裝置的 AI context handoff 工具，基於 open Agent Skills 協議。不只交摘要，而是把目標、決策、廢案、負知識、產物與下一步一起交給下一個 agent，一句「交接一下」自動導出＋接收確認＋連續性驗證。",
+      "tags": [
+        "agent-skill",
+        "context-handoff",
+        "multi-agent"
+      ],
+      "url": "https://github.com/Jordanwei1/jiaojie-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Jordanwei1/jiaojie-skill",
+      "stars": 104,
+      "createdDate": "2026-08-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260901-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-01",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "singula-ai/alego",
+      "summary": "「像玩樂高一樣組 AI Agent」一切皆 plugin 的 agent 框架，把 agent 能力拆成可插拔積木自由拼裝。很早期，當 architecture 參考。",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "plugin"
+      ],
+      "url": "https://github.com/singula-ai/alego",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/singula-ai/alego",
+      "stars": 109,
+      "createdDate": "2026-08-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260901-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-01",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "S1N6H/pentest-harness",
+      "summary": "自架 AI agent harness，專為授權滲透測試、bug bounty、security lab 與 CTF 設計。BYO model API、session 全留本機。作為 agent-harness 設計案例值得參考。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "harness",
+        "ctf"
+      ],
+      "url": "https://github.com/S1N6H/pentest-harness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/S1N6H/pentest-harness",
+      "stars": 311,
+      "createdDate": "2026-08-26",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-08-30T21:33:36.933616Z",
