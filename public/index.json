@@ -77413,6 +77413,213 @@
       "vram": "GGUF 量化模型 16GB 可跑",
       "license": "MIT",
       "createdDate": "2026-09-01"
+    },
+    {
+      "id": "20260901-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "DoorDash Flux：一個月跑 130,000 個工程 agent 任務",
+      "summary": "DoorDash 把 coding agent 從工程師筆電搬上 Flux 雲平台：Firecracker microVM 隔離、MCP gateway、可重用 playbook，一個月自動化 13 萬工程任務、每週 25,000+ 自動 code review。",
+      "tags": [
+        "paradigm-shift",
+        "agentic",
+        "coding-agent",
+        "mcp",
+        "firecracker"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/doordash-flux-cloud-agent/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/doordash-flux-cloud-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AWS 開源 Kiro Crew：非同步 coding agent 編排",
+      "summary": "Amazon 推出 Kiro Crew，開源系統讓多個 Kiro agent 跨 session／工具／任務協作，把 incident 調查、triage、migration、PR 監看丟給 agent 非同步進行。",
+      "tags": [
+        "agentic",
+        "multi-agent",
+        "coding-agent",
+        "async"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/kiro-crew-coding-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/kiro-crew-coding-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Workers 開放 inbound TCP，gRPC 打頭陣",
+      "summary": "connect(socket) handler 經 Spectrum 路由，終結 Workers 八年只能收 HTTP 的限制；Container 拿到全雙工 gRPC，Workers 支援 unary/server-streaming。private beta。",
+      "tags": [
+        "architecture",
+        "grpc",
+        "edge",
+        "workers"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/workers-inbound-tcp-grpc/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/workers-inbound-tcp-grpc/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FreeToken：dynamic co-execution 讓消費級硬體跑 frontier MoE",
+      "summary": "UC Berkeley 與 MIT 的開源專案，用 CPU/GPU 動態協同執行，讓前沿 MoE 模型在消費級硬體做推論。",
+      "tags": [
+        "moe",
+        "local-inference",
+        "ai-models",
+        "open-source"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/freetoken-local-inference/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/freetoken-local-inference/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison — 拆解 ChatGPT Work 到底是什麼",
+      "summary": "OpenAI 7 月推出 ChatGPT Work 後瘋狂迭代。Simon 整理這個混亂但很強的產品目前搞懂的部分，含 tool/skill 機制與用法。",
+      "tags": [
+        "ai-agent",
+        "ai-tooling",
+        "openai"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Azure Foundry Model Router 從 2 區擴到 28 區",
+      "summary": "Microsoft 把 Foundry model router 擴到 28 個 global standard 區、21 data zone，新增 Claude Opus 4.8 與 GPT-5.6、下架 4 個舊模型。",
+      "tags": [
+        "model-router",
+        "devops",
+        "ai-infra"
+      ],
+      "url": "https://www.infoq.com/news/2026/08/foundry-model-router-regions/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/08/foundry-model-router-regions/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 靠 5 個 Rust 記憶體優化，替 1.1.1.1 省下 100TB",
+      "summary": "Big Pineapple DNS cache layout 做 5 項 Rust-level 優化，每筆 entry 記憶體降 56%，全機隊釋出約 100TB。",
+      "tags": [
+        "rust",
+        "performance",
+        "architecture",
+        "dns"
+      ],
+      "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-008",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tencent 開源 Hy4 Preview：770B 參數、1M context",
+      "summary": "騰訊釋出開放權重純文字 LLM Hy4 Preview，770B 總參數／49B active／1M token context，比 7 月 Hy3(295B)大幅升級。",
+      "tags": [
+        "llm-release",
+        "ai-models",
+        "ai-in-china",
+        "moe"
+      ],
+      "url": "https://huggingface.co/tencent/Hy4-preview",
+      "source": "Simon Willison / Hugging Face",
+      "sourceUrl": "https://huggingface.co/tencent/Hy4-preview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-009",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Grok CLI 把你的 .env 和 git 歷史全上傳雲端",
+      "summary": "開發者發現 Grok CLI 把本地所有檔案、.env、git 歷史未加密推到 GCP bucket；SpaceX 初步反應怪開發者。",
+      "tags": [
+        "security",
+        "ai-tooling",
+        "data-exfiltration"
+      ],
+      "url": "https://blog.pragmaticengineer.com/grolk-cli-uploaded-all-your-files-to-the-cloud/",
+      "source": "Pragmatic Engineer",
+      "sourceUrl": "https://blog.pragmaticengineer.com/grolk-cli-uploaded-all-your-files-to-the-cloud/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-sw-010",
+      "radar": "software-dev",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "A Better SQL in 11 Lines of Code（Prela）",
+      "summary": "Prela 語言教學文，主張用 11 行實作出比 SQL 更好的查詢寫法，展示更精簡語法組合查詢的思路。",
+      "tags": [
+        "new-language",
+        "database",
+        "query-language"
+      ],
+      "url": "https://prela-lang.org/tutorial/",
+      "source": "prela-lang.org",
+      "sourceUrl": "https://prela-lang.org/tutorial/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-30T21:33:36.933616Z",
