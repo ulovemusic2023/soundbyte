@@ -77369,6 +77369,50 @@
       "stars": 135,
       "createdDate": "2025-10-18",
       "license": "MIT"
+    },
+    {
+      "id": "20260901-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ivcylc/OpenMusic (QA-MDT)",
+      "summary": "SOTA 文字轉音樂（TTM）生成模型，IJCAI-25 論文開源實作。核心 Quality-Aware Masked Diffusion Transformer 在 AudioLDM 上加一層品質感知注入，產出更悅耳的音樂。附 HuggingFace checkpoint 與 Gradio demo，pip 即裝本地跑。",
+      "tags": [
+        "audio_music_ai",
+        "text-to-music",
+        "diffusion",
+        "music generation"
+      ],
+      "url": "https://github.com/ivcylc/OpenMusic",
+      "source": "GitHub Topics (music-generation)",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "price": null,
+      "vram": "16GB VRAM 可跑",
+      "license": "未標示（研究用）",
+      "createdDate": "2026-09-01"
+    },
+    {
+      "id": "20260901-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ollama v0.33.0",
+      "summary": "本地 LLM runtime 跳到 0.33。新增 Claude Desktop gateway provider 整合；prefill/KV-cache restore 正確性大修，長 prompt 被中斷不再從頭重算；快取 model metadata 讓 TTFT 幾乎砍半。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "local inference",
+        "kv-cache"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.33.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases",
+      "price": null,
+      "vram": "GGUF 量化模型 16GB 可跑",
+      "license": "MIT",
+      "createdDate": "2026-09-01"
     }
   ],
   "lastUpdated": "2026-08-30T21:33:36.933616Z",
