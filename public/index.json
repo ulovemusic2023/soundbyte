@@ -77620,6 +77620,65 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260901-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-01",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "網路點燃的民憤，燒得快也退得快",
+      "summary": "Andrew Sharp 觀察 AI data center 反對浪潮三個月內全國爆發，但他反而不擔心長期影響。框架：由社群演算法放大的政治運動，天生比前網路時代的道德恐慌（如反核延燒 40 年）更短命——來得猛、退得也快。啟示：別因為某件事在網路上瘋傳就 over-index 它的持久性，virality ≠ durability。",
+      "tags": [
+        "mental-model",
+        "virality",
+        "second-order-thinking"
+      ],
+      "url": "https://sharptext.net/2026/halt-and-catch-ire/",
+      "source": "Andrew Sharp • Sharp Text",
+      "sourceUrl": "https://sharptext.net/2026/halt-and-catch-ire/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-01",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Netflix 從「拒絕聚合」翻轉成「賣別人的串流」",
+      "summary": "Ben Thompson 分析 Netflix 態度大轉彎：過去堅持獨立、抗拒被 Apple 等整合，如今卻打算反過來在自家平台賣競爭對手的串流。這是 aggregation theory 的終局——抗拒聚合的在位者，最終多半會投降、成為聚合平台上的一個供應商。啟示：與其和分發通路對抗，不如想清楚你要當通路、還是當通路上的供給。",
+      "tags": [
+        "aggregation-theory",
+        "distribution",
+        "strategy"
+      ],
+      "url": "https://stratechery.com/2026/netflix-to-sell-streaming-services-streamers-as-aggregators-revisiting-roku/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/netflix-to-sell-streaming-services-streamers-as-aggregators-revisiting-roku/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260901-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-09-01",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "網路本質是短暫的，連政治運動也一樣",
+      "summary": "瘋傳不代表能持久——網路上誕生的民憤運動，多半來得快也退得快。（金句：The internet is ephemeral, and that includes most of the political movements that start there.）",
+      "tags": [
+        "quotable",
+        "virality"
+      ],
+      "url": "https://sharptext.net/2026/halt-and-catch-ire/",
+      "source": "Andrew Sharp • Sharp Text",
+      "sourceUrl": "https://sharptext.net/2026/halt-and-catch-ire/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-08-30T21:33:36.933616Z",
