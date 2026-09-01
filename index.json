@@ -77961,8 +77961,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260902-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-02",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "不是 vibe coding，是「專家指揮 AI」",
+      "summary": "做 Wrapture 這個工具時，Graham Dumpleton 先把「結果該長什麼樣」想清楚，再讓 AI 當純執行工具，而不是讓 AI 決定設計。他點破 vibe coding 的壞名聲來源：你沒能力判斷 AI 給的東西好不好，只能祈禱。真正有效的 AI 協作是——專家出設計、做 review，AI 只負責寫；領域知識才是方向盤。",
+      "tags": [
+        "ai-collaboration",
+        "vibe-coding",
+        "human-in-the-loop"
+      ],
+      "url": "https://grahamdumpleton.me/posts/2026/08/introducing-wrapture/",
+      "source": "Graham Dumpleton（經 Simon Willison）",
+      "sourceUrl": "https://grahamdumpleton.me/posts/2026/08/introducing-wrapture/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-02",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "51 → 325：持續投入能逆轉近乎絕望的局面",
+      "summary": "1995 年全世界只剩 51 隻鴞鸚鵡（kākāpō），今年破紀錄繁殖季後族群數來到 325。看似無望的處境，靠數十年不間斷的投入與系統化管理是能翻盤的。對創業者這是複利/長期主義的提醒：真正的護城河往往不是某個爆點，而是別人熬不住的持續投入。",
+      "tags": [
+        "compounding",
+        "persistence",
+        "long-term"
+      ],
+      "url": "https://simonwillison.net/2026/Aug/31/andrew-digby/",
+      "source": "Andrew Digby（經 Simon Willison）",
+      "sourceUrl": "https://simonwillison.net/2026/Aug/31/andrew-digby/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-02",
-  "updatedAt": "2026-09-02T05:23:55.009092"
+  "updatedAt": "2026-09-01T21:33:46Z"
 }
