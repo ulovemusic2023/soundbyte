@@ -77761,8 +77761,208 @@
       "stars": 311,
       "createdDate": "2026-08-26",
       "license": "MIT"
+    },
+    {
+      "id": "20260902-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 發表 Claude Fable 5.1 與 Mythos 5.1",
+      "summary": "Anthropic 推出新一代模型 Claude Fable 5.1 與 Mythos 5.1，同步公開 system card。HN 單日 668 分、634 則討論，是本波最熱的模型發布，追 coding agent／API 選型者要優先評估。",
+      "tags": [
+        "ai_models",
+        "model-release",
+        "anthropic"
+      ],
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "44% on ARC-AGI-1 in 67 cents — 小 transformer 打贏多數 LLM",
+      "summary": "單張 5090、1.5 小時從零訓練的小型 transformer，ARC-AGI-1 拿 44%（成本 67 美分）並開源，與 TRM/HRM 同級、勝過許多大型 LLM。靠 test-time training 挑戰『只有 scale 才能推理』。",
+      "tags": [
+        "ai_models",
+        "reasoning",
+        "benchmark",
+        "test-time-training"
+      ],
+      "url": "https://mvakde.github.io/blog/44-on-arc-1/",
+      "source": "Mithil Vakde",
+      "sourceUrl": "https://mvakde.github.io/blog/44-on-arc-1/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Codex 桌面版內建整套 LibreOffice",
+      "summary": "Simon Willison 挖到 OpenAI Codex 桌面版塞了 1.7GB runtime，含完整 Python、Node.js、Poppler、git 與 LibreOffice，並附 skills 教 agent 呼叫。coding agent 正把整套 office 工具鏈打包進本地。",
+      "tags": [
+        "ai_agent",
+        "coding-agent",
+        "tool-use"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ChatGPT Work 的 Tool 與 Skill Reference 被逆向整理",
+      "summary": "社群把 ChatGPT Work（Codex）內部 tool 與 skill 定義逆向整理成公開參考，可看到 agent 被賦予哪些工具與呼叫慣例。理解商用 coding agent 的 tool schema 設計值得一讀。",
+      "tags": [
+        "ai_agent",
+        "tool-use",
+        "system-prompt"
+      ],
+      "url": "https://codex-tool-reference.simonw.chatgpt.site/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://codex-tool-reference.simonw.chatgpt.site/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Jujutsu 作者出任 ERSC CTO",
+      "summary": "版本控制系統 Jujutsu（jj，30k+ star、Apache 2.0）作者 Martin von Zweigbergk 離開 Google，加入 East River Source Control 任 CTO 主導下一代版控平台。jj 的 workflow 抽象被商業化押注。",
+      "tags": [
+        "dev-tools",
+        "version-control",
+        "jujutsu"
+      ],
+      "url": "https://ersc.io/blog/martin-joins-ersc",
+      "source": "East River Source Control",
+      "sourceUrl": "https://ersc.io/blog/martin-joins-ersc",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI Can Make You Suck Faster Too",
+      "summary": "Jordan Andersen 反駁『AI 讓開發 10x』的樂觀論：底子不穩時 AI 只是讓你更快把爛東西做出來。對 vibe coding 的生產力神話潑冷水。",
+      "tags": [
+        "ai_agent",
+        "ai-coding",
+        "productivity"
+      ],
+      "url": "https://www.hermit-tech.com/blog/ai-can-make-you-suck-faster-too",
+      "source": "Hermit Tech",
+      "sourceUrl": "https://www.hermit-tech.com/blog/ai-can-make-you-suck-faster-too",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Wasmi 2.0 — 最快的 Wasm 直譯器工程解析",
+      "summary": "Wasmi 2.0 發布，詳解如何把 WebAssembly 直譯器做到業界最快等級的執行引擎設計。edge／plugin／沙箱跑 wasm 的重要更新。",
+      "tags": [
+        "wasm",
+        "new_languages",
+        "performance"
+      ],
+      "url": "https://wasmi-labs.github.io/blog/posts/wasmi-v2.0/",
+      "source": "Wasmi Labs",
+      "sourceUrl": "https://wasmi-labs.github.io/blog/posts/wasmi-v2.0/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-008",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Python 3.15.0 release candidate 2",
+      "summary": "Python 3.15.0 進入 rc2，正式版將近。想提早驗 CI／相依套件相容性可開始測。",
+      "tags": [
+        "new_languages",
+        "python",
+        "release"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/1/python-315-rc-2/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/1/python-315-rc-2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-009",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Janet 1.42.0 發布",
+      "summary": "嵌入式 Lisp 方言 Janet 推出 1.42.0，持續迭代。小巧、易嵌入、適合 scripting 與 game 場景。",
+      "tags": [
+        "new_languages",
+        "lisp",
+        "release"
+      ],
+      "url": "https://github.com/janet-lang/janet/releases/tag/v1.42.0",
+      "source": "janet-lang",
+      "sourceUrl": "https://github.com/janet-lang/janet/releases/tag/v1.42.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260902-sw-010",
+      "radar": "software-dev",
+      "date": "2026-09-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "danluu：Ed Zitron 的 AI 唱衰預測準不準？",
+      "summary": "Dan Luu 逐條檢視 AI 唱衰者 Ed Zitron 的預測命中率，用資料替 AI 泡沫論做 scorecard。想在 hype 與唱衰間找中線的實證盤點。",
+      "tags": [
+        "ai-industry",
+        "commentary"
+      ],
+      "url": "https://danluu.com/zitron/",
+      "source": "Dan Luu",
+      "sourceUrl": "https://danluu.com/zitron/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-08-30T21:33:36.933616Z",
-  "updatedAt": "2026-08-30T21:33:36.933616Z"
+  "lastUpdated": "2026-09-02",
+  "updatedAt": "2026-09-02T05:23:55.009092"
 }
