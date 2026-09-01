@@ -78001,6 +78001,229 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260902-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "try-omarchy",
+      "summary": "不用重灌就能在 macOS 上跑 DHH 的 Omarchy（opinionated Arch/Hyprland 環境），一鍵起 VM 體驗。",
+      "tags": [
+        "dev-tool",
+        "macos",
+        "vm"
+      ],
+      "url": "https://github.com/themartiano/try-omarchy",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1222,
+      "createdDate": "2026-08-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260902-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "breakscale",
+      "summary": "分散式系統壓力模擬器：搭系統、灌流量直到崩，看為什麼崩。補系統設計直覺用。",
+      "tags": [
+        "dev-tool",
+        "system-design",
+        "learning"
+      ],
+      "url": "https://github.com/xevrion/breakscale",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 894,
+      "createdDate": "2026-08-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260902-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "darwin-vm",
+      "summary": "用 QEMU 跑 iOS / macOS，虛擬 iPhone 17~12、M5~M1 Mac 都支援。",
+      "tags": [
+        "dev-tool",
+        "qemu",
+        "ios",
+        "macos"
+      ],
+      "url": "https://github.com/jprx/darwin-vm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 863,
+      "createdDate": "2026-08-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260902-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "boop",
+      "summary": "給開發者的極簡 self-hosted 通知收件匣，app 事件推到手機。",
+      "tags": [
+        "dev-tool",
+        "self-hosted",
+        "notification"
+      ],
+      "url": "https://github.com/chrisgreg/boop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 676,
+      "createdDate": "2026-08-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260902-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "no-negative-echo",
+      "summary": "讓 Codex 依最終結果而非被否決方案來產標題/註解/commit/PR。",
+      "tags": [
+        "coding-agent",
+        "codex",
+        "code-quality"
+      ],
+      "url": "https://github.com/LB623/no-negative-echo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 664,
+      "createdDate": "2026-08-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260902-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "video-talkcraft",
+      "summary": "把 Claude Code / Codex 變成旁白驅動的解說影片工作室，字級語音同步、Remotion 出片。",
+      "tags": [
+        "creator-tool",
+        "video",
+        "remotion",
+        "agent-skill"
+      ],
+      "url": "https://github.com/Vincentwei1021/video-talkcraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 500,
+      "createdDate": "2026-08-22",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260902-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "ai-coding-welfare",
+      "summary": "免費/公益 Claude Code / Codex 中轉站導航，額度/模型/價格自動更新+一鍵配置。⚠️ 灰色地帶注意風險。",
+      "tags": [
+        "ai-coding",
+        "claude-code",
+        "codex"
+      ],
+      "url": "https://github.com/panxunying/ai-coding-welfare",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 434,
+      "createdDate": "2026-08-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260902-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "solo-skills",
+      "summary": "一人公司生產力套件：開源 26 個可用 AI agent skills（附腳本）。",
+      "tags": [
+        "founder",
+        "agent-skill",
+        "automation"
+      ],
+      "url": "https://github.com/bam-bam-2/solo-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 350,
+      "createdDate": "2026-08-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260902-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Easel",
+      "summary": "開源社群媒體 AI agent：跨小紅書/抖音/知乎/B站發掘趨勢、生成內容、多平台發佈並回收成效。",
+      "tags": [
+        "social-media",
+        "marketing",
+        "ai-agent"
+      ],
+      "url": "https://github.com/ZJU-REAL/Easel",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 112,
+      "createdDate": "2026-08-28",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260902-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "slotstream",
+      "summary": "在 Mac 上跑 Qwen3.8-Flash-Next（125B MoE）用 SSD 串流 experts，MLX+Swift、Ollama 相容。",
+      "tags": [
+        "local-llm",
+        "mlx",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/carloslfu/slotstream",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 95,
+      "createdDate": "2026-08-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260902-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-09-02",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "VoiceStudio",
+      "summary": "完全本地版 ElevenLabs 替代品：voice cloning/design、配音、聽寫、轉錄、有聲書，16 TTS+11 ASR、646 語言。",
+      "tags": [
+        "audio",
+        "voice-cloning",
+        "tts",
+        "dubbing"
+      ],
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 13744,
+      "createdDate": "2026-04-09",
+      "license": "AGPL-3.0"
     }
   ],
   "lastUpdated": "2026-09-02",
