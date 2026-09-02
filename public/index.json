@@ -78224,8 +78224,131 @@
       "stars": 13744,
       "createdDate": "2026-04-09",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260903-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-03",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Gemini 3.8 Flash & 3.8 Flash Cyber",
+      "summary": "Google DeepMind 六週內第三次 Flash 發布：3.8 Flash 目前最強推理/coding model，價格維持 $0.75/$3.75 per M tokens，DeepSWE long-horizon SWE 勝過多數更貴 frontier model。首度切出 Flash Cyber 變體（漏洞偵測+自動修補），只透過 Fairwind Program 給 trusted defenders。",
+      "tags": [
+        "ai-models",
+        "agentic",
+        "cybersecurity",
+        "fairwind-program"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "source": "Google DeepMind Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260903-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-03",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "AI Agents and the Refactoring That Never Happens",
+      "summary": "連資深工程師都悄悄不再重構最難的 code。重點不是 agent code 品質，而是『我迷路了→該重構』這反射消失——agent working memory 遠大於人腦。modularity 本是遷就人腦容量的妥協，維持長壽系統可維護性的力量正在瓦解。",
+      "tags": [
+        "agentic",
+        "ai-coding",
+        "technical-debt"
+      ],
+      "url": "https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/",
+      "source": "Rosenfeld",
+      "sourceUrl": "https://www.rosenfeld.page/articles/programming/2026_09_02_ai_agents_and_the_refactoring_that_never_happens/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260903-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Paint.NET WINE Direct2D：Claude vibe-code 出 18 萬行 clean-room 重寫",
+      "summary": "Rick Brewster 為讓 Paint.NET 跑在 WINE/Linux，用 Claude clean-room 逆向重寫整套 Direct2D（~180k 行）。坦言大多 vibe coded、沒細審。對照他 20 年寫的本體約 70 萬行。單一 side project 的 vibe-coding 規模天花板被推高。",
+      "tags": [
+        "vibe-coding",
+        "coding-agent",
+        "reverse-engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260903-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Cache Transcoding：Zstandard + Pingora 省下 PB 級快取",
+      "summary": "RAM/HDD 價格暴漲，Cloudflare 在 Pingora 內對 cache asset 用 zstd 編碼再落盤，跨 Tiered Cache 保持壓縮態，出站前才解碼。平均縮到 on-disk ⅓，代價只是一點 CPU。用 CPU 換 PB 級有效快取。",
+      "tags": [
+        "architecture",
+        "rust",
+        "pingora",
+        "caching"
+      ],
+      "url": "https://blog.cloudflare.com/cache-transcoding/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/cache-transcoding/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260903-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude 新版 system prompt：極力避免重現歌詞",
+      "summary": "Anthropic 公開 Claude 消費端 system prompt 並保留歷史 diff；新版花大量篇幅防止重現受版權保護歌詞。亮點：docs 頁面加 .md 就拿到 Markdown，設計成 LLM 可讀。prompt engineering + 版權護欄實例。",
+      "tags": [
+        "prompt-engineering",
+        "system-prompt",
+        "guardrails"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260903-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "matklad — Static Allocation, Constant Work",
+      "summary": "object pool 是 tag 為『slot 現在住哪代物件』的 tagged union，型別系統不追蹤。無 pool 時 use-after-free 惡化成 type confusion；有 pool 時退化成有定義的 aliasing，除非物件內嵌 enum 才踩 hard case。談 static allocation 把 bug 壓成 constant work。",
+      "tags": [
+        "memory-safety",
+        "rust",
+        "zig",
+        "systems"
+      ],
+      "url": "https://matklad.github.io/2026/09/02/static-allocation-constant-work.html",
+      "source": "matklad",
+      "sourceUrl": "https://matklad.github.io/2026/09/02/static-allocation-constant-work.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-02",
-  "updatedAt": "2026-09-01T21:33:46Z"
+  "lastUpdated": "2026-09-03",
+  "updatedAt": "2026-09-03T05:23:47.866386+08:00"
 }
