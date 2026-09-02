@@ -78347,8 +78347,29 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260903-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-03",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Anger, Anxiety and Agency — AI 時代該選『不確定』而非『憤怒』",
+      "summary": "Armin Ronacher 拆解 AI 衝擊下的情緒選擇：憤怒需要責怪對象、對改變情況幾乎沒幫助；焦慮不需對象，是面對不確定未來的合理反應，卻能被導向好奇與興奮。最有生產力的狀態是『不確定』，因為它通往好奇心。關鍵洞見：ownership 帶來的是 agency 不是 foresight——連創辦人私下都不確定，只是公開裝出信心；而 AI 紅利現在多半不是變成公司帳面生產力，而是每個人下班後多 ship 的 side project。",
+      "tags": [
+        "ai-age",
+        "mental-model",
+        "agency",
+        "founder-psychology"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+      "source": "Armin Ronacher",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-03",
-  "updatedAt": "2026-09-03T05:23:47.866386+08:00"
+  "lastUpdated": "2026-09-02T21:33:17Z",
+  "updatedAt": "2026-09-02T21:33:17Z"
 }
