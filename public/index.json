@@ -78368,6 +78368,218 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260903-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "2akouwu/reverify",
+      "summary": "Verified reverse engineering：把 AI 逆向工程 grounded 在 deterministic tools 上，每個結論都拿去跟 binary 對照驗證，減少 LLM 亂猜。",
+      "tags": [
+        "ai-agent",
+        "reverse-engineering",
+        "mcp"
+      ],
+      "url": "https://github.com/2akouwu/reverify",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/2akouwu/reverify",
+      "stars": 579,
+      "createdDate": "2026-08-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260903-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "s0xDk/refactoring-ui-skill",
+      "summary": "把 Refactoring UI（Wathan & Schoger）那本書的具體設計規則做成 Claude Code skill，讓 agent 產 UI 時直接套用專業排版/間距/層級原則。",
+      "tags": [
+        "claude-code",
+        "design",
+        "agent-skill"
+      ],
+      "url": "https://github.com/s0xDk/refactoring-ui-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/s0xDk/refactoring-ui-skill",
+      "stars": 502,
+      "createdDate": "2026-08-26",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260903-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "kharmanskyi/open-steps",
+      "summary": "一組 skill，把 coding agent 的輸出翻成人話：誠實回報、直接下判斷，而不是含糊帶過。適合想讓 agent 少報喜多報憂的人。",
+      "tags": [
+        "coding-agent",
+        "agent-skill"
+      ],
+      "url": "https://github.com/kharmanskyi/open-steps",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kharmanskyi/open-steps",
+      "stars": 178,
+      "createdDate": "2026-08-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260903-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "Vuk97/forward-implementation-first",
+      "summary": "專治 coding agent 拖延症：阻止它把時間花在自己發明的 bookkeeping（receipts、hashes、lock 檔）上，逼它先做真正的實作。",
+      "tags": [
+        "coding-agent",
+        "workflow"
+      ],
+      "url": "https://github.com/Vuk97/forward-implementation-first",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Vuk97/forward-implementation-first",
+      "stars": 161,
+      "createdDate": "2026-08-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20260903-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "rokbenko/quackd",
+      "summary": "給小機器人一顆腦：透過 MCP 讓 Microduck、Reachy Mini、LeRobot 手臂或任何 ROS base 聽自然語言指令行動。",
+      "tags": [
+        "mcp",
+        "robotics"
+      ],
+      "url": "https://github.com/rokbenko/quackd",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/rokbenko/quackd",
+      "stars": 120,
+      "createdDate": "2026-08-28",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260903-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "yuzushi-dev/Sando",
+      "summary": "本地跑的 Claude Code / Codex plugin，把過大、重複的 tool output 截斷收斂，保住上下文空間又不失完整性。",
+      "tags": [
+        "claude-code",
+        "context"
+      ],
+      "url": "https://github.com/yuzushi-dev/Sando",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/yuzushi-dev/Sando",
+      "stars": 53,
+      "createdDate": "2026-08-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260903-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "mkamranr/reelforge",
+      "summary": "丟一個 GitHub repo 或 Hugging Face model 進去，直接產出一支完整的直式 reel：影片、封面圖、配音。創作者行銷素材一鍵生成（⚠️ 無 license）。",
+      "tags": [
+        "creator",
+        "video"
+      ],
+      "url": "https://github.com/mkamranr/reelforge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/mkamranr/reelforge",
+      "stars": 51,
+      "createdDate": "2026-08-22",
+      "license": "none"
+    },
+    {
+      "id": "20260903-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "dmtrKovalenko/fff",
+      "summary": "號稱最快也最準的檔案搜尋 SDK，給 AI agents / Neovim / Rust / C / Python / Bun / Node 用。本週 trending 爆量（repo 是去年的，這週衝上榜）。",
+      "tags": [
+        "coding-tool",
+        "search"
+      ],
+      "url": "https://github.com/dmtrKovalenko/fff",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/dmtrKovalenko/fff",
+      "stars": 10368,
+      "createdDate": "2025-07-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260903-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "elliottophellia/Ryuumonbuchi",
+      "summary": "可能是你在找的那個 headless Ghidra MCP server，讓 AI agent 直接驅動 Ghidra 做逆向分析。",
+      "tags": [
+        "mcp",
+        "reverse-engineering"
+      ],
+      "url": "https://github.com/elliottophellia/Ryuumonbuchi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/elliottophellia/Ryuumonbuchi",
+      "stars": 64,
+      "createdDate": "2026-08-23",
+      "license": "GPL-2.0"
+    },
+    {
+      "id": "20260903-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "ruashots/ComfyUI-OpenH3-IR",
+      "summary": "給 MiniMax H3 的 4 個 ComfyUI 節點：用 @ 命名素材、鎖定精確台詞，產出結構化媒體。音訊/影音創作向。",
+      "tags": [
+        "comfyui",
+        "audio"
+      ],
+      "url": "https://github.com/ruashots/ComfyUI-OpenH3-IR",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ruashots/ComfyUI-OpenH3-IR",
+      "stars": 20,
+      "createdDate": "2026-08-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260903-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-09-03",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "T8mars/comfyui-fireredaudio-T8",
+      "summary": "FireRedAudio 的 ComfyUI V3 節點包，隔離的 Transformers 5.8 worker + 完整創作者 workflow。想在 ComfyUI 裡玩 TTS/音訊生成的可試。",
+      "tags": [
+        "comfyui",
+        "audio",
+        "tts"
+      ],
+      "url": "https://github.com/T8mars/comfyui-fireredaudio-T8",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/T8mars/comfyui-fireredaudio-T8",
+      "stars": 19,
+      "createdDate": "2026-08-26",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-09-02T21:33:17Z",
