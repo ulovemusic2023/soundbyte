@@ -78600,8 +78600,138 @@
       "price": null,
       "vram": "local-ready",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260904-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 發表 GPT-6 Astra",
+      "summary": "OpenAI GPT-6 Astra，定位 Claude Fable 競品，API $10/M in、$50/M out。主打資安（ExploitBench 100%）與長 context（512K–1M 拿 96.3%，幾乎解掉 long-context）。ARC-AGI-3 自訂 harness 99.9%。Intelligence Index 略輸 Fable 5.1，Coding Agent Index 成本效率領先。",
+      "tags": [
+        "paradigm-shift",
+        "llm-release",
+        "openai",
+        "long-context",
+        "security"
+      ],
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/3/gpt6-astra/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260904-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-04",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "IFM 開源 K2 Horizon：六模型連動艦隊",
+      "summary": "IFM K2 Horizon：六個模型（375B-A23B 到 0.9B），小模型刷新各量級 SOTA。史上最完整開源——pretraining 到 agentic post-training 全開（checkpoint/資料/code/logs/weights），Apache 2.0。新 MoVA attention 讓 36B-A4B 超越更大模型。號稱首個為 agent 完整開放開發流程的開源家族。",
+      "tags": [
+        "paradigm-shift",
+        "open-model",
+        "agentic",
+        "mova",
+        "apache-2.0"
+      ],
+      "url": "https://ifm.ai/blog/k2/",
+      "source": "IFM Blog",
+      "sourceUrl": "https://ifm.ai/blog/k2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260904-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 推 AI 情境化漏洞偵測與修補（接 OpenAI Daybreak）",
+      "summary": "Cloudflare Managed Defense 新增 Vulnerability Discovery and Remediation（邀請制）。用 OpenAI Daybreak（含 GPT-5.6 Cyber）做 recon/hunting，結合 WAF 生產流量判斷漏洞是否真的暴露來排序，自動驗證後提 patch，套用與否由客戶決定。解決『scanner 一次噴 4000 個漏洞先修哪個』的排序痛點。",
+      "tags": [
+        "high",
+        "ai-security",
+        "vulnerability",
+        "agentic",
+        "cloudflare"
+      ],
+      "url": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260904-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Polars 2.0 RC：streaming engine 變預設",
+      "summary": "Polars 2.0 首個 RC。LazyFrame collect 預設走 streaming engine，記憶體/效能大幅改善（aggregate 上看 ~5x）。代價：join/group_by 預設不再保證 row-order，需 maintain_order=True 或 engine_affinity('in-memory')。並強調更嚴格 fail-fast，明說為 AI-driven development。",
+      "tags": [
+        "medium",
+        "dataframe",
+        "polars",
+        "streaming",
+        "performance"
+      ],
+      "url": "https://pola.rs/posts/announcing-polars-2/",
+      "source": "Polars Blog",
+      "sourceUrl": "https://pola.rs/posts/announcing-polars-2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260904-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Jujutsu (jj) 0.45.0 發布",
+      "summary": "Git 相容新世代 VCS jujutsu 釋出 0.45.0，以 working-copy-as-commit、first-class conflict 模型持續累積關注，社群視為 Git 實驗性替代。",
+      "tags": [
+        "low",
+        "vcs",
+        "jujutsu",
+        "developer-tools"
+      ],
+      "url": "https://github.com/jj-vcs/jj/releases/tag/v0.45.0",
+      "source": "GitHub (jj-vcs)",
+      "sourceUrl": "https://github.com/jj-vcs/jj/releases/tag/v0.45.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260904-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "CERN 工業電腦從 RHEL 轉向 Debian",
+      "summary": "長期 RHEL 大戶 CERN 宣布把工業控制電腦遷移到 Debian，被視為 Red Hat 政策變動後大型科研機構轉向社群發行版的指標事件。",
+      "tags": [
+        "low",
+        "linux",
+        "debian",
+        "rhel"
+      ],
+      "url": "https://www.phoronix.com/news/CERN-Goes-Debian-Leaving-RHEL",
+      "source": "Phoronix",
+      "sourceUrl": "https://www.phoronix.com/news/CERN-Goes-Debian-Leaving-RHEL",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-04",
-  "updatedAt": "2026-09-04T05:10:00+08:00"
+  "updatedAt": "2026-09-03T21:23:45.881160Z"
 }
