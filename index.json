@@ -78730,8 +78730,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260904-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-04",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "「硬技術」的門檻正在崩塌 — 瓶頸從「你會不會」變成「你敢不敢做」",
+      "summary": "Armin Ronacher 觀察：LLM 讓「學一門新語言」的摩擦幾乎歸零，語言選擇不再是關鍵決定——不喜歡就叫 agent 換一種語言重寫。真正的轉變是，Rust、Zig、DWARF、eBPF、自訂 crypto 這些過去把多數開發者擋在門外的「硬技術」，現在小團隊甚至個人都敢碰了。瓶頸從「你會不會」變成「你敢不敢做」。",
+      "tags": [
+        "ai-leverage",
+        "capability-gap",
+        "solo-founder"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
+      "source": "Armin Ronacher (Flask / Sentry 創辦人)",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-04",
-  "updatedAt": "2026-09-03T21:23:45.881160Z"
+  "updatedAt": "2026-09-04T05:32:00+08:00"
 }
