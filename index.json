@@ -78580,8 +78580,28 @@
       "stars": 19,
       "createdDate": "2026-08-26",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260904-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "magnitudedev/magnitude",
+      "summary": "本地推理 server：先 profile 你的機器（晶片/記憶體/頻寬），推薦跑得動的模型並估 tok/s，再自動下載、調參（speculative decoding、concurrency）後跑起來。可直接接 Claude Code / Codex / Cline / OpenClaw 等 harness，模型按需載入、閒置卸載。對 16GB VRAM 挑模型很實用。",
+      "tags": [
+        "llm-inference",
+        "local-llm",
+        "inference-server"
+      ],
+      "url": "https://github.com/magnitudedev/magnitude",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-09-02T21:33:17Z",
-  "updatedAt": "2026-09-02T21:33:17Z"
+  "lastUpdated": "2026-09-04",
+  "updatedAt": "2026-09-04T05:10:00+08:00"
 }
