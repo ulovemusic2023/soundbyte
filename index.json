@@ -78750,6 +78750,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260904-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-04",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "shadcn-ui/cn",
+      "summary": "shadcn 官方推出的全新 Tailwind class 合併引擎，直接取代 tailwind-merge + clsx，API 完全相容、宣稱衝突解析快 30×。前端專案幾乎零成本換上。",
+      "tags": [
+        "tailwind",
+        "frontend",
+        "dev-tool"
+      ],
+      "url": "https://github.com/shadcn-ui/cn",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/shadcn-ui/cn",
+      "stars": 936,
+      "createdDate": "2026-08-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260904-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-04",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "anthropics/commerce-agents",
+      "summary": "Anthropic 官方釋出的購物／商家 agent 參考藍圖，附零售、電商、電信、娛樂等實作範例，示範如何用 Claude 搭出會下單、比價、客服的 agent。",
+      "tags": [
+        "ai-agent",
+        "claude",
+        "agent-framework"
+      ],
+      "url": "https://github.com/anthropics/commerce-agents",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/anthropics/commerce-agents",
+      "stars": 1504,
+      "createdDate": "2026-09-01",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260904-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-04",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Continuum-AI-Corp/OrcaReplay",
+      "summary": "把任何 coding agent 的執行過程錄下來，關掉網路也能 byte-for-byte 重播；還能從任一步 fork 到不同 model 比較誰答對。debug agent 行為的時光機，OrcaRouter 團隊出品。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "debug"
+      ],
+      "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Continuum-AI-Corp/OrcaReplay",
+      "stars": 82,
+      "createdDate": "2026-08-29",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-09-04",
