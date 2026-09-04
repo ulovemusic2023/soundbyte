@@ -79062,6 +79062,224 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260905-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "m3e-canvas",
+      "summary": "在瀏覽器裡直接畫 Material 3 Expressive 的 UI，畫完一鍵轉成 vibe-coding prompt 丟給 coding agent 生成。設計→prompt→code 的橋樑，對用 AI 做 app 前端很實用。",
+      "tags": [
+        "design-tool",
+        "vibe-coding",
+        "ui"
+      ],
+      "url": "https://github.com/lnkiai/m3e-canvas",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1721,
+      "createdDate": "2026-09-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260905-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "PawWork_ZhuaZhua",
+      "summary": "Chrome 上的「先選取再描述」網頁 agent：在真實頁面框選內容、描述你要的結果，直接產出可編輯的 Office 檔。BYOK、沙箱、無伺服器。⚠️ 1021⭐ 卻只有 5 forks，star/fork 比例偏怪，觀察中。",
+      "tags": [
+        "browser-agent",
+        "web-agent"
+      ],
+      "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1021,
+      "createdDate": "2026-08-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260905-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "guizang-yingzao-skill",
+      "summary": "歸藏做的 Claude Code / Codex skill：把中國古建築、在地文化、旅遊照片用 GPT Image 轉成有藝術指導的編輯風海報。創作者出圖工具，⚠️ 無 license。",
+      "tags": [
+        "claude-code",
+        "skill",
+        "image-gen"
+      ],
+      "url": "https://github.com/op7418/guizang-yingzao-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 312,
+      "createdDate": "2026-09-02",
+      "license": "none"
+    },
+    {
+      "id": "20260905-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "boardui",
+      "summary": "給 agentic 介面用的 React design system，每個元件都開源附 source，首頁本身就是一個接你自己 model key 的 AI chat app。做 AI 產品前端可直接拿來用。",
+      "tags": [
+        "react",
+        "design-system",
+        "agentic-ui"
+      ],
+      "url": "https://github.com/BoardUI/boardui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 99,
+      "createdDate": "2026-09-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20260905-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "vicoa",
+      "summary": "ADE（Agent Dev Environment），讓你從任何裝置（桌機、手機、VPS）跑一整團 coding agents。開源、可自架。",
+      "tags": [
+        "coding-agent",
+        "self-hosted"
+      ],
+      "url": "https://github.com/vicoa-ai/vicoa",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 85,
+      "createdDate": "2026-08-28",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260905-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "sanoTTS-jp",
+      "summary": "559K 參數的日文 TTS，能在 ESP32-S3 上即時合成，連漢字/かな 混排的斷詞、重音推估都在裝置端跑。零依賴 C99、有瀏覽器 demo。極致 edge TTS，對音訊/嵌入式有興趣值得看。",
+      "tags": [
+        "tts",
+        "edge-ai",
+        "audio"
+      ],
+      "url": "https://github.com/ayutaz/sanoTTS-jp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 51,
+      "createdDate": "2026-08-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260905-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "CluxMate",
+      "summary": "一個 Python core 配三個前端（headless CLI / Textual TUI / Electron 桌面）的 AI coding agent。支援任何 OpenAI-compatible API，有分級權限、可重播的 event-sourced session、fail-closed OS 級沙箱。",
+      "tags": [
+        "coding-agent",
+        "sandbox",
+        "tui"
+      ],
+      "url": "https://github.com/r1c7/CluxMate",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 50,
+      "createdDate": "2026-08-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260905-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "agentsview",
+      "summary": "Local-first 的 coding agent session 搜尋 + 分析 + token 用量統計，支援 Claude Code、Codex 等 20+ agents。想搞清楚自己 AI coding 花多少 token、翻舊 session 很好用。",
+      "tags": [
+        "coding-agent",
+        "analytics",
+        "token-usage"
+      ],
+      "url": "https://github.com/kenn-io/agentsview",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 5767,
+      "createdDate": "2026-02-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260905-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "router",
+      "summary": "給 agentic 系統用的 model router，<50ms 把每個 prompt 路由到最適合的 model，宣稱只換 endpoint 就能省 40-70% 成本。",
+      "tags": [
+        "model-router",
+        "llm-infra",
+        "cost"
+      ],
+      "url": "https://github.com/weave-os/router",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 3845,
+      "createdDate": "2026-04-27",
+      "license": "none"
+    },
+    {
+      "id": "20260905-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "Pixelle-Video",
+      "summary": "AI 全自動短影片引擎。⚠️ 星數很高（27k⭐/4k forks）、是這週 trending 的老 repo，但對做內容/創作者短影片自動化的方向值得記一筆。",
+      "tags": [
+        "video-gen",
+        "content",
+        "automation"
+      ],
+      "url": "https://github.com/ATH-MaaS/Pixelle-Video",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 27774,
+      "createdDate": "2025-11-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260905-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-09-05",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "filesnap",
+      "summary": "不需要 git repo 的檔案快照 + rewind：把一個資料夾還原到之前的狀態，不碰你的版本控制。coding agent 亂改檔時的安全網。",
+      "tags": [
+        "dev-tool",
+        "snapshot",
+        "rewind"
+      ],
+      "url": "https://github.com/extracurricular-ai/filesnap",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 21,
+      "createdDate": "2026-08-25",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-09-05",
