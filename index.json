@@ -78810,6 +78810,51 @@
       "stars": 82,
       "createdDate": "2026-08-29",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260905-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "carloslfu/slotstream",
+      "summary": "用 SSD 串流 MoE experts，在遠小於模型大小的記憶體上跑 Qwen3.8-Flash-Next（125B MoE，4-bit 約 104GB）。MLX + Swift 寫的，提供 Ollama 相容 API。Show HN 231 分。核心思路：expert streaming 讓「模型比記憶體大」變可行。",
+      "tags": [
+        "llm_inference",
+        "llm-inference",
+        "local-llm",
+        "ollama",
+        "mlx",
+        "mixture-of-experts"
+      ],
+      "url": "https://github.com/carloslfu/slotstream",
+      "source": "Hacker News (Show HN)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=slotstream",
+      "price": null,
+      "vram": "僅 Apple Silicon / MLX，RTX 5070 Ti 用不到；SSD-streaming 思路值得追",
+      "license": "MIT"
+    },
+    {
+      "id": "20260905-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "radixark/miles",
+      "summary": "企業級的 LLM / VLM 後訓練 (post-training) 強化學習框架，從 slime fork 出來並持續共同演進。今天登上 GitHub Trending。",
+      "tags": [
+        "llm_training",
+        "rlhf",
+        "post-training",
+        "reinforcement-learning",
+        "vlm"
+      ],
+      "url": "https://github.com/radixark/miles",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "RL 後訓練需多卡",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-09-04",
