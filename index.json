@@ -79002,6 +79002,66 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260905-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-05",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "深入陌生領域的第一性原理：Brockman 從 Stripe 帶到 OpenAI 的核心技能",
+      "summary": "Brockman 說他從 Stripe 帶到 OpenAI 的可轉移核心技能，是「科學化搞懂一個你毫無經驗的領域」。真正的功夫不是背 ISO 8583 那種拜占庭式規格，而是理解底層 why，再用對的 primitive 與 API 化繁為簡。",
+      "tags": [
+        "first-principles",
+        "api-design",
+        "transferable-skill"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+      "source": "Greg Brockman (via Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260905-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-05",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "工程師正在變成導演：Brockman 談 coding 角色的轉移",
+      "summary": "Brockman 認為每個工程師都該學這課：coding 本身在劇烈改變。我們正從「知道用哪個 library」的人，轉為更高層的 director——靈感、願景、判斷與回饋的來源。放掉親手寫 code 很痛，但換來的更值得。",
+      "tags": [
+        "ai-native",
+        "future-of-work",
+        "engineering-management"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+      "source": "Greg Brockman (via Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260905-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-09-05",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "「就算你 code 寫得很好，也不夠」",
+      "summary": "個人技術再強，最後拚的是能不能組出、塑造出能交付成果的團隊與文化。",
+      "tags": [
+        "team-building",
+        "culture",
+        "leverage"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+      "source": "Greg Brockman (via Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-05",
