@@ -79409,6 +79409,26 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260906-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-06",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Latent Powers — 你的「原創」可能只是模型的預設路徑",
+      "summary": "Armin Ronacher 觀察到一批獨立開發者最近同時做出幾乎一樣的專案（例如 CarPlay hacking），時間點還很接近。原因不是巧合——大家都在問同一批 LLM，被引導往模型架構裡「最可能的那條路」走。當創意起點都來自同一個 latent space，我們以為在發散探索，其實在收斂。差異化不會從 prompt 裡長出來，得刻意往模型不會建議的方向走。",
+      "tags": [
+        "ai-native",
+        "originality",
+        "differentiation"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/9/5/latent-powers/",
+      "source": "lucumr (Armin Ronacher)",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/9/5/latent-powers/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-06",
