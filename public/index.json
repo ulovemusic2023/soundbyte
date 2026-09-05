@@ -79280,8 +79280,137 @@
       "stars": 21,
       "createdDate": "2026-08-25",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260906-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Portal by Spotify 把 Claude Code token 用量砍 90%",
+      "summary": "Spotify 的『shunt』Claude Code plugin：coding agent 多數動作不是 thinking 而是 I/O。用 hooks 攔截 >350 行的檔案讀取、bash wrapper(bulk-read/code-write)把 I/O-heavy 任務下放到 Gemini 2.5 Flash 等 worker model，Claude 不必看原文。Java monorepo 多檔分析 mean 省 ~90% token。",
+      "tags": [
+        "ai_agent",
+        "coding-agent",
+        "token-efficiency",
+        "agent-io-offloading",
+        "paradigm-shift"
+      ],
+      "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+      "source": "Spotify Engineering",
+      "sourceUrl": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260906-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Rust React Compiler 原生進駐 Vite",
+      "summary": "oxc 團隊把 React Compiler 從 Babel 重寫成 Rust，Vite @vitejs/plugin-react v6.1.0 內建原生支援(compiler: true)。作者 1,036 檔 codebase 編譯從 14.3s→0.81s(17.6x)、整體 build 2.4x；且支援 Babel 版不支援的 JS pattern。前端 toolchain 全面 Rust 化再一步。",
+      "tags": [
+        "rust",
+        "vite",
+        "react",
+        "frontend",
+        "rust-react-compiler",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.master.dev/react-now-rusted-all-the-way-out/",
+      "source": "blog.master.dev",
+      "sourceUrl": "https://blog.master.dev/react-now-rusted-all-the-way-out/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260906-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Artificial Analysis Intelligence Index v4.2",
+      "summary": "新增 AA-Briefcase(真實 agentic 知識工作)與 GDP.pdf(跨 4,592 頁 100 份 PDF 綜合推理)，移除已飽和的 GPQA Diamond，私有測試集權重 20%→40% 防 gaming。Claude Fable 5.1 居總榜首、GPT-6 Astra 第二(主宰 output token 效率前沿)、Meta 第三。",
+      "tags": [
+        "benchmark",
+        "ai_models",
+        "evals"
+      ],
+      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
+      "source": "Artificial Analysis",
+      "sourceUrl": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260906-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI 接手 incident，工程師與系統失聯",
+      "summary": "Sylvain Kalache 援引 Bainbridge 1983『automation ironies』——AI 接手 routine incident，工程師失去累積系統直覺的機會，卻仍要負責罕見異常，複雜事故 MTTR 反而惡化。解方：用 incident simulation + chaos engineering 對抗 comprehension debt。",
+      "tags": [
+        "devops_infra",
+        "sre",
+        "incident",
+        "cognitive-debt",
+        "incident-automation-deskilling"
+      ],
+      "url": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+      "source": "Sylvain Kalache",
+      "sourceUrl": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260906-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "「next-token predictor」是理解 LLM 的錯誤心智模型",
+      "summary": "gmcgoldr 主張 next-token 只描述 mechanism、不描述 post-training 後的 function。經 RLVR 探索新序列、從結果學習，已非模仿既有資料。類比：探索過無數盤面的西洋棋引擎叫它『next-move predictor』會漏掉它在『選會贏的一步』。心智模型該反映 mechanism 做什麼而非長什麼樣。",
+      "tags": [
+        "ai_models",
+        "mental-model",
+        "rlvr",
+        "function-over-mechanism-llm"
+      ],
+      "url": "https://gmcgoldr.github.io/2026/09/04/llm-next-token-predictors.html",
+      "source": "gmcgoldr.github.io",
+      "sourceUrl": "https://gmcgoldr.github.io/2026/09/04/llm-next-token-predictors.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260906-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI 能設計電路板了嗎？EEBench",
+      "summary": "EEBench 用 atopile 宣告式語言(而非 GUI CAD)測 AI 設計功能性電路，對真實 manufacturer spec + SPICE 模擬 + tolerance corner 評分。Claude Opus 5 61.6%、Grok 4.6 57.1%、Fable 5.1 56.4%；OpenAI 落後(GPT-5.6 Sol 39.4%)。對一組成長中的電路問題『已經可以』，醫材等複雜應用仍有距離。",
+      "tags": [
+        "ai-capability",
+        "hardware",
+        "benchmark",
+        "ai-pcb-design"
+      ],
+      "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+      "source": "EEBench",
+      "sourceUrl": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-05",
-  "updatedAt": "2026-09-05T05:20:00+08:00"
+  "lastUpdated": "2026-09-06",
+  "updatedAt": "2026-09-06T05:20:00+08:00"
 }
