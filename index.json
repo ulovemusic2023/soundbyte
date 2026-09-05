@@ -79429,6 +79429,67 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260906-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-06",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "soirihiroka/shrimply",
+      "summary": "Free & open-source video editor for creators — full pipeline, Manim-backed. Pre-alpha (crashes; runs arbitrary code without validation).",
+      "tags": [
+        "video-editor",
+        "creator-tool",
+        "open-source"
+      ],
+      "url": "https://github.com/soirihiroka/shrimply",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 831,
+      "createdDate": "2026-08-26",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260906-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-06",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "vaelkeep/hermes-paper-agent",
+      "summary": "Agent that writes your own nightly newspaper from calendar/feeds/notes + live data desks; figures from code, refuses to publish editions with AI provenance marks.",
+      "tags": [
+        "ai-agent",
+        "content-automation",
+        "local-llm"
+      ],
+      "url": "https://github.com/vaelkeep/hermes-paper-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 50,
+      "createdDate": "2026-09-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260906-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-06",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "NguyenSiTrung/VieNeuTTSApp",
+      "summary": "Fully-offline VI/EN TTS desktop workstation (VieNeu-TTS v3 Turbo, ONNX/CUDA) with voice cloning + EPUB→audiobook. VI-primary; offline voice-clone pipeline worth a look.",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "audio",
+        "offline"
+      ],
+      "url": "https://github.com/NguyenSiTrung/VieNeuTTSApp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 52,
+      "createdDate": "2026-08-26",
+      "license": "none"
     }
   ],
   "lastUpdated": "2026-09-06",
