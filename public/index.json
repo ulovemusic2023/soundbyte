@@ -79661,6 +79661,108 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260907-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-07",
+      "cycle": "mon",
+      "priority": "rising-fast",
+      "title": "pierrenade/short-video-generator-AI",
+      "summary": "把 YouTube 長片自動轉成無浮水印的短影音：亮點偵測、字幕、翻譯、配音一條龍。定位成 OpusClip / Vidyo.ai 的免費 open-source 替代品，內容創作者做二次分發實用。",
+      "tags": [
+        "video",
+        "creator-tool",
+        "automation"
+      ],
+      "url": "https://github.com/pierrenade/short-video-generator-AI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 759,
+      "createdDate": "2026-09-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260907-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-07",
+      "cycle": "mon",
+      "priority": "worth-trying",
+      "title": "GENEXIS-AI/gpt-image-skill",
+      "summary": "用你的 ChatGPT 訂閱、從 Codex / Claude Code / Antigravity 直接生成與編輯 GPT 圖，不必走 Images API（省 API 費）。支援參考圖、透明 PNG 檢查。⚠️ 無 license，且透過訂閱生圖屬灰色地帶，自行斟酌。",
+      "tags": [
+        "image-gen",
+        "claude-code",
+        "codex",
+        "skill"
+      ],
+      "url": "https://github.com/GENEXIS-AI/gpt-image-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 161,
+      "createdDate": "2026-08-26",
+      "license": "none"
+    },
+    {
+      "id": "20260907-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-07",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "anthropics/fermats-last-theorem",
+      "summary": "Anthropic 官方：費馬最後定理在 Lean 4 的完整機器驗證證明（Frey–Serre–Ribet–Wiles–Taylor 路線），60,475 個 module 全 build 過、no sorry、只依賴 Lean 三條標準公理。AI 時代形式化數學的指標 artifact（研究用，非工具）。",
+      "tags": [
+        "lean4",
+        "formal-proof",
+        "research"
+      ],
+      "url": "https://github.com/anthropics/fermats-last-theorem",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 836,
+      "createdDate": "2026-09-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260907-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-07",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "frontier-harness-eval/eval",
+      "summary": "FrontierHarness Eval 的公開結果與任務定義：同一個 model（Kimi K3）跑 9 種 agent harness、12 種設定、30 個任務，發現「每次 pass 的成本」最多差 17 倍。關心 AI coding 花費的人值得看。⚠️ repo 無 license，內容為 data/leaderboard。",
+      "tags": [
+        "eval",
+        "coding-agent",
+        "benchmark"
+      ],
+      "url": "https://github.com/frontier-harness-eval/eval",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 151,
+      "createdDate": "2026-08-31",
+      "license": "none"
+    },
+    {
+      "id": "20260907-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-07",
+      "cycle": "mon",
+      "priority": "on-the-radar",
+      "title": "SueliHora/fofoca",
+      "summary": "Fofoca：100% 離線的媒體轉錄 + 神經語音合成生態，基於 Python + Whisper + Piper，附 Gradio UI。做音訊內容、需要離線轉錄／配音的可留意（目前僅 23★，早期）。",
+      "tags": [
+        "transcription",
+        "tts",
+        "whisper",
+        "audio"
+      ],
+      "url": "https://github.com/SueliHora/fofoca",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 23,
+      "createdDate": "2026-08-29",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-09-06T21:32:54Z",
