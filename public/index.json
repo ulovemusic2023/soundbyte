@@ -79490,8 +79490,158 @@
       "stars": 52,
       "createdDate": "2026-08-26",
       "license": "none"
+    },
+    {
+      "id": "20260907-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google open-sources Mantis: an agentic vulnerability-scanning harness",
+      "summary": "Google 開源 Mantis，把漏洞生命週期自動化的 AI-agent framework——辨識、驗證、重現到修補。主打對治 conventional AI code scanning 的高 false positive 與 hallucinated vulnerability，用 agent 交叉驗證降噪。",
+      "tags": [
+        "ai-agent",
+        "agentic",
+        "security",
+        "vulnerability-management",
+        "open-source"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260907-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google publishes Beyond Zero — a Zero Trust successor for the AI-agent era",
+      "summary": "Google 發表 BeyondCorp 後繼者 Beyond Zero，號稱『AI 時代的安全模型』。把存取決策從 application 層下放到個別 resource 與 action，結合 static authorization 與 AI-driven 動態決策，讓人與 autonomous agent 都能以 machine speed 執行 Zero Trust。",
+      "tags": [
+        "paradigm-shift",
+        "zero-trust",
+        "security",
+        "ai-agent",
+        "authorization"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/google-beyond-zero/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/google-beyond-zero/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260907-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "How Figma uses AI agents for security",
+      "summary": "Figma 工程團隊公開如何打造 AI agent 協助資安：調查告警、搜尋歷史事故、檢查系統、甚至準備 code fix。Agent 從過往調查學習，複雜告警解決速度快約 70%。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "secops",
+        "developer-experience"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/figma-security-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/figma-security-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260907-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "It took a year to ship WebAssembly in Anubis",
+      "summary": "Xe Iaso 分享把 WebAssembly 塞進 Anubis（反 AI 爬蟲的 proof-of-work gateway）花了整整一年。談 wasm 在 production 交付的邊角坑與跨瀏覽器相容性。",
+      "tags": [
+        "wasm",
+        "webassembly",
+        "new-languages",
+        "anti-scraping"
+      ],
+      "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
+      "source": "Xe Iaso (via Hacker News)",
+      "sourceUrl": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260907-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Vidact — a compiler that turns React into direct DOM operations",
+      "summary": "Vidact 在編譯期把 React 元件轉成 direct DOM operations，走 Svelte/Solid 路線消滅 virtual DOM runtime，同時保留 React 撰寫體驗。React 生態 compile-away runtime 趨勢再添一員。",
+      "tags": [
+        "frontend",
+        "react",
+        "compiler",
+        "no-vdom",
+        "performance"
+      ],
+      "url": "https://www.vidact.dev/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49542123",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260907-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-07",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "There's No Limit to How Bad Code Can Get",
+      "summary": "Zach Kehs 金句：實體建築無限加蓋會倒，軟體卻沒這種約束——code 永遠可以更糟，永遠能再加一層 indirection 或再降一點效能。對 technical debt 的殘酷提醒。",
+      "tags": [
+        "technical-debt",
+        "software-philosophy",
+        "maintainability"
+      ],
+      "url": "https://zachkehs.com/blog/theres_no_limit_to_how_bad_code_can_get/",
+      "source": "Zach Kehs (via Simon Willison)",
+      "sourceUrl": "https://zachkehs.com/blog/theres_no_limit_to_how_bad_code_can_get/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260907-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-07",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Blume — zero-config docs framework turning a Markdown folder into an AI-ready site",
+      "summary": "Blume 開源文件框架，用 Astro + Vite，只要 Node.js 與單一 Markdown 檔就能生出完整文件站。內建自動 SEO、文件測試，方便從其他系統遷移，主打產出 AI-ready 網站。",
+      "tags": [
+        "frontend",
+        "documentation",
+        "astro",
+        "vite",
+        "open-source"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/blume-docs-ai/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/blume-docs-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-06",
-  "updatedAt": "2026-09-06T05:20:00+08:00"
+  "lastUpdated": "2026-09-07",
+  "updatedAt": "2026-09-06T21:20:00Z"
 }
