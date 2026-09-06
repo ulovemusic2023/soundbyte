@@ -79640,8 +79640,29 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260907-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-07",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "The greenfield rewrite trap — why 'burn it down and start over' almost always fails",
+      "summary": "打掉重寫幾乎總是失敗。舊系統還在跑核心業務、持續變成移動目標;維護它的人只做最低限度、技術債繼續堆。新團隊 greenfield 起步很快,但沒人真正搞懂舊系統全部的行為與邊界,最後被逼上線一個只能處理子集、大半是死碼的新系統——你從一個系統變成兩個。Simon 建議:先幫舊系統補上大量自動化測試,再用 targeted refactor 逼近想要的樣子,成功率遠高於重寫。",
+      "tags": [
+        "technical-debt",
+        "migrations",
+        "rewrite-trap",
+        "decision-making"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-07",
-  "updatedAt": "2026-09-06T21:20:00Z"
+  "lastUpdated": "2026-09-06T21:32:54Z",
+  "updatedAt": "2026-09-06T21:32:54Z"
 }
