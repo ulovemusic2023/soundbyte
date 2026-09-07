@@ -79807,6 +79807,90 @@
       "license": "GPL-3.0",
       "stars": 31,
       "createdDate": "2026-09-08"
+    },
+    {
+      "id": "20260908-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-08",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "AI 訓練資料 = 我們新的公共領域(latent space as public domain)",
+      "summary": "Kevin Kelly 主張 AI 訓練應算合理使用:訓練資料被不可逆地轉成數學抽象(latent space),裡面不含任何原作拷貝、產生原素材沒有的社會新價值、且單一來源在龐大尺度下貢獻趨近於零。結論框架:別把 LLM 的 latent space 想成盜版倉庫,它是新的智慧公共財——限制它等於限制公共智慧的累積。",
+      "tags": [
+        "ai-copyright",
+        "latent-space",
+        "public-domain",
+        "fair-use"
+      ],
+      "url": "https://kk.org/thetechnium/arguments-in-favor-of-ai-fair-use/",
+      "source": "Kevin Kelly",
+      "sourceUrl": "https://kk.org/thetechnium/arguments-in-favor-of-ai-fair-use/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260908-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-08",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "AI 讓做工具變快,但沒解決「知道你需要一個工具」這件難事",
+      "summary": "Ben Evans 的制度化曲線:AI 不會消滅軟體架構的需求,只是把工作從「臨時湊合」(Excel、email)推向「制度化」(專屬平台)的門檻往後移。真正的價值不在把工具做得更快,而在辨識哪些臨時流程已擴張到需要正式化、稽核與問責。founder 的機會是看見組織裡隱藏的浪費——「你可能沒發現有幾百人每天花一小時在做這件事」——而不是人人都能生工具。",
+      "tags": [
+        "ai-tools",
+        "org-transformation",
+        "tool-discovery",
+        "operational"
+      ],
+      "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+      "source": "Benedict Evans",
+      "sourceUrl": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260908-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-09-08",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "內部採用往往領先市場——OpenAI 自曝 2026 是 agentic engineering 起飛年",
+      "summary": "OpenAI 公布內部研究:2026 是 agentic engineering 在內部真正起飛的一年,研究員人均工具花費出現明顯拐點。可轉移的心智模型:當一項能力落到領域專家手裡,生產力增速會突然噴出,而且內部採用曲線通常領先外部市場——追蹤「人均花費/使用」的拐點,比看外部新聞更早看到 paradigm shift。",
+      "tags": [
+        "internal-adoption",
+        "ai-native",
+        "agentic-engineering",
+        "productivity"
+      ],
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "source": "OpenAI Research (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260908-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-09-08",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "讀者的反撲:真誠是你唯一護城河",
+      "summary": "Bryan Cantrill:當你把寫作外包給 LLM,讀者會立刻察覺並永久離開你。作者與讀者之間的社會契約,建立在你親手把想法蒸餾出來的勞動上;省掉這一步,你不是在吸引讀者,而是在主動趕走他們。",
+      "tags": [
+        "authenticity",
+        "creator-trust",
+        "llm-writing",
+        "personal-brand"
+      ],
+      "url": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/",
+      "source": "Bryan Cantrill",
+      "sourceUrl": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-06T21:32:54Z",
