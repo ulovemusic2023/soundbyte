@@ -79891,6 +79891,230 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260908-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "vinzdg/codenotch",
+      "summary": "macOS app，把 Claude Code / Cursor / Codex / Antigravity 的用量上限釘在螢幕邊緣常駐顯示，一眼看到誰快撞額度。",
+      "tags": [
+        "claude-code",
+        "ai-coding",
+        "macos",
+        "productivity"
+      ],
+      "url": "https://github.com/vinzdg/codenotch",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 917,
+      "createdDate": "2026-09-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260908-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "EverettFish/holo-card-studio",
+      "summary": "把描述或參考圖變成可編輯的 Blender 卡片 + 互動 Three.js 頁面的 skill；⚠️ 自訂授權。",
+      "tags": [
+        "creator-tool",
+        "blender",
+        "threejs",
+        "agent-skill"
+      ],
+      "url": "https://github.com/EverettFish/holo-card-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 779,
+      "createdDate": "2026-09-07",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260908-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "ARahim3/kaggle-tpu-lab",
+      "summary": "在免費 Kaggle TPU 跑 Qwen3.8-27B，開 OpenAI-compatible endpoint，可接 Claude Code / Codex。",
+      "tags": [
+        "local-llm",
+        "free-endpoint",
+        "claude-code",
+        "qwen"
+      ],
+      "url": "https://github.com/ARahim3/kaggle-tpu-lab",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 145,
+      "createdDate": "2026-08-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260908-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "chigwell/Penelopa.ai",
+      "summary": "分析真實 Codex/Claude Code session，找重複工作流 pattern，自動蒸餾成可複用 skills。",
+      "tags": [
+        "ai-coding",
+        "agent-skill",
+        "workflow-mining"
+      ],
+      "url": "https://github.com/chigwell/Penelopa.ai",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 91,
+      "createdDate": "2026-09-03",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260908-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "camilleroux/genart-skill",
+      "summary": "Claude Code 生成式藝術 skill，deterministic、hash-seeded、onchain-ready。",
+      "tags": [
+        "generative-art",
+        "claude-code",
+        "creator-tool"
+      ],
+      "url": "https://github.com/camilleroux/genart-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 137,
+      "createdDate": "2026-08-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20260908-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "WangPeterXF/session-harbor",
+      "summary": "Local-first Codex session 備份／還原，跨裝置 context 還原（macOS + Windows）。",
+      "tags": [
+        "codex",
+        "session-backup",
+        "local-first"
+      ],
+      "url": "https://github.com/WangPeterXF/session-harbor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 84,
+      "createdDate": "2026-08-26",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260908-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "heyman333/agent-notion-template-docs",
+      "summary": "Claude Code skill，讓 agent 產出的文件長得像 Notion，鎖定結構與視覺風格。",
+      "tags": [
+        "claude-code",
+        "docs",
+        "agent-skill"
+      ],
+      "url": "https://github.com/heyman333/agent-notion-template-docs",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 80,
+      "createdDate": "2026-08-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20260908-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "gesta-run/subpool",
+      "summary": "輕量自架的 AI 訂閱池，給團隊集中管理分配 AI 訂閱、控管成本。",
+      "tags": [
+        "ai-cost",
+        "self-hosted",
+        "team-tool"
+      ],
+      "url": "https://github.com/gesta-run/subpool",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 68,
+      "createdDate": "2026-09-02",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260908-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "mini-harness/mini-harness",
+      "summary": "小而完整的 Python agent harness：tools、compaction、retries + 單檔 TUI，適合學習/baseline。",
+      "tags": [
+        "agent-harness",
+        "python",
+        "educational"
+      ],
+      "url": "https://github.com/mini-harness/mini-harness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 22,
+      "createdDate": "2026-09-05",
+      "license": "none"
+    },
+    {
+      "id": "20260908-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "Ayueh0102/Ronnier-skill",
+      "summary": "色彩科學／色度學完整中文筆記，包成 Claude Code skill；涵蓋 CIE、CIEDE2000、CIECAM02。",
+      "tags": [
+        "color-science",
+        "claude-code",
+        "zh-notes"
+      ],
+      "url": "https://github.com/Ayueh0102/Ronnier-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 89,
+      "createdDate": "2026-08-26",
+      "license": "none"
+    },
+    {
+      "id": "20260908-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-09-08",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "sansan0/TrendRadar",
+      "summary": "AI 驅動輿情／熱點監控：多平台聚合 + RSS + 關鍵字篩選 + MCP，多渠道推送。老專案本週再爆量。",
+      "tags": [
+        "trend-monitor",
+        "rss",
+        "mcp",
+        "self-hosted"
+      ],
+      "url": "https://github.com/sansan0/TrendRadar",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 62099,
+      "createdDate": "2025-04-28",
+      "license": "GPL-3.0"
     }
   ],
   "lastUpdated": "2026-09-06T21:32:54Z",
