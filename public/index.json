@@ -79763,6 +79763,50 @@
       "stars": 23,
       "createdDate": "2026-08-29",
       "license": "MIT"
+    },
+    {
+      "id": "20260908-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "bosonai/higgs-tts-3-4b (Higgs TTS 3)",
+      "summary": "Boson AI 的對話式 TTS，~4B autoregressive decoder，支援 100+ 語言 zero-shot voice cloning，可在文字內嵌 emotion/style/prosody/停頓/音效控制，專為 voice chat 設計。授權為 research/非商用，但創作者製作可營利的 podcast/影片/社群貼文免費（需標註 Boson AI Higgs Audio）。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "zero-shot tts"
+      ],
+      "url": "https://www.boson.ai/blog/higgs-audio-v3-tts",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/bosonai/higgs-tts-3-4b",
+      "price": null,
+      "vram": "~8GB (FP16, 4B) — RTX 5070 Ti 16GB 可原生跑",
+      "license": "Boson Higgs TTS 3 Research/Non-Commercial (creator use free)",
+      "stars": 751,
+      "createdDate": "2026-09-08"
+    },
+    {
+      "id": "20260908-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ampixa/sanoTTS",
+      "summary": "超迷你 neural TTS，294k–2.27M 參數，可即時跑在 $3 的 ESP32-S3 微控制器（GPIO 接 LM386 喇叭）或瀏覽器 WASM，完全無需雲端/NPU。11 個聲音、6 種語言（含中文），單聲音佔用僅 337KB–8.7MB，零依賴。GPL-3.0。",
+      "tags": [
+        "tts_speech",
+        "edge",
+        "on-device"
+      ],
+      "url": "https://github.com/Ampixa/sanoTTS",
+      "source": "HuggingFace",
+      "sourceUrl": "https://huggingface.co/ampixa/sanoTTS",
+      "price": null,
+      "vram": "極小（可跑在微控制器/瀏覽器）",
+      "license": "GPL-3.0",
+      "stars": 31,
+      "createdDate": "2026-09-08"
     }
   ],
   "lastUpdated": "2026-09-06T21:32:54Z",
