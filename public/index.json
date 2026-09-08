@@ -80115,8 +80115,49 @@
       "stars": 62099,
       "createdDate": "2025-04-28",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20260909-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-09",
+      "cycle": "daily",
+      "priority": "mental-model",
+      "title": "Write Things Down — 把腦袋清空是唯一能規模化的方法",
+      "summary": "Ben Thompson 借 GTD 的核心：大腦短期記憶像 RAM，塞滿未完成的 open loops 只會製造焦慮。解法是把所有事寫進一個信任、會定期 review 的系統，讓大腦專心思考而非儲存。他把框架延伸到 AI——Claude Code 的 markdown 筆記、agent 的 status board 本質都是「寫下來」，正是人類從口語到文字再到 LLM 的規模化引擎。能寫下來，才能規模化，也才能交給別人或 agent 執行。",
+      "tags": [
+        "mental-model",
+        "productivity",
+        "scaling",
+        "ai-workflow"
+      ],
+      "url": "https://stratechery.com/2026/write-things-down/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/write-things-down/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260909-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-09",
+      "cycle": "daily",
+      "priority": "quotable",
+      "title": "Jakub Pachocki：想清楚賭注，就不會盲目全速衝刺",
+      "summary": "OpenAI 首席科學家在 An Alien Mind 中談 AI 競賽：真正內化風險有多大，就會覺得「不計代價全速前進」很荒謬。決策前先想清楚 stakes，而非被競爭節奏推著走——對創業者同樣適用。",
+      "tags": [
+        "mental-model",
+        "decision-making",
+        "ai-strategy"
+      ],
+      "url": "https://openai.com/index/an-alien-mind/",
+      "source": "Jakub Pachocki (OpenAI) via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-06T21:32:54Z",
-  "updatedAt": "2026-09-06T21:32:54Z"
+  "lastUpdated": "2026-09-09",
+  "updatedAt": "2026-09-08T21:33:14.173548Z"
 }
