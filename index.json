@@ -80156,8 +80156,51 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260910-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "supertonic — 99M 開源多語 on-device TTS",
+      "summary": "Supertone 開源的 99M 參數多語 TTS，純 ONNX Runtime 本地推論，涵蓋 31 種語言、輸出 44.1kHz studio 級音質，支援 <laugh>/<breath>/<sigh> 等 10 個 inline 表情標籤。體積僅主流 0.7B–2B TTS 的零頭，Raspberry Pi、瀏覽器(WebGPU)、手機皆可跑、免 GPU。官方已將 repo 歸檔（停止維護），權重與 code 仍可用。",
+      "tags": [
+        "tts_speech",
+        "on-device",
+        "onnx",
+        "multilingual"
+      ],
+      "url": "https://github.com/supertone-oss-archive/supertonic",
+      "source": "GitHub Topics (text-to-speech)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "local-ready (99M, no GPU)",
+      "license": "見 repo LICENSE"
+    },
+    {
+      "id": "20260910-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "openbmb/MiniCPM5-2B — 2B on-device SOTA LLM",
+      "summary": "MiniCPM5 系列第二彈：dense 2B Transformer，主打 on-device／資源受限場景，號稱 2B 級開源 SOTA，coding、數學、long-context、tool use、agentic 任務逼近 4B 模型。同步開源 UltraData 訓練資料集（web 預訓練＋分級 code＋50 萬 agent SFT＋8 萬 RL 樣本）。附 GGUF (llama.cpp/Ollama/LM Studio) 與 MLX 版本。",
+      "tags": [
+        "llm_inference",
+        "llm_training",
+        "gguf",
+        "mlx",
+        "on-device"
+      ],
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "local-ready (2B BF16 ~5GB, GGUF)",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-09-09",
-  "updatedAt": "2026-09-08T21:33:14.173548Z"
+  "lastUpdated": "2026-09-10",
+  "updatedAt": "2026-09-10T05:13:54.556459"
 }
