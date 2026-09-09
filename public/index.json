@@ -80413,6 +80413,165 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260910-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-10",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "kajisho5/ffmpeg-skill",
+      "summary": "給 coding agent 一個影音剪輯器：40 個 ffmpeg/ffprobe 工具（剪接、去靜音、字幕/卡拉OK、HDR→SDR、loudness、多機同步），本地執行免 API key，每個工具同時也是 MCP tool。",
+      "tags": [
+        "audio",
+        "ffmpeg",
+        "mcp",
+        "coding-agent"
+      ],
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kajisho5/ffmpeg-skill",
+      "stars": 875,
+      "createdDate": "2026-09-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20260910-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-10",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "Albertchamberlain/Awesome-OKF",
+      "summary": "OKF（Open Knowledge Format）精選目錄：工具、plugin、skills、proposals、docs，YAML 驅動、agent 可搜尋、MCP-ready。",
+      "tags": [
+        "mcp",
+        "agent-knowledge",
+        "coding-tools"
+      ],
+      "url": "https://github.com/Albertchamberlain/Awesome-OKF",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Albertchamberlain/Awesome-OKF",
+      "stars": 81,
+      "createdDate": "2026-09-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260910-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-10",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "Jakeschincariol/linkedin-agent-skill",
+      "summary": "11 個免費 Claude skills 經營 LinkedIn 帳號：21 種 hook 公式發文、留言、profile 評分、週計畫，還有一個 humanizer 在發文前把 AI 指紋洗掉並評分。",
+      "tags": [
+        "claude-code",
+        "social",
+        "content",
+        "ai-agent"
+      ],
+      "url": "https://github.com/Jakeschincariol/linkedin-agent-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Jakeschincariol/linkedin-agent-skill",
+      "stars": 78,
+      "createdDate": "2026-09-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260910-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-10",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "qunqin24/Pulse",
+      "summary": "浮在 macOS 桌面的小監視器，顯示 Claude Code / Codex / Antigravity / OpenCode Go / Kimi Code 各家額度還剩多少。",
+      "tags": [
+        "claude-code",
+        "macos",
+        "productivity"
+      ],
+      "url": "https://github.com/qunqin24/Pulse",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/qunqin24/Pulse",
+      "stars": 75,
+      "createdDate": "2026-08-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260910-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-10",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "jangtrinh/design-os-3d-blender",
+      "summary": "給 Blender 5.2 的 AI-agent OS：skills + 驗證過的 bpy 知識庫 + AGENT_OK/AGENT_FAIL 執行契約 + 3D 列印零件 production gate。",
+      "tags": [
+        "ai-agent",
+        "blender",
+        "3d"
+      ],
+      "url": "https://github.com/jangtrinh/design-os-3d-blender",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/jangtrinh/design-os-3d-blender",
+      "stars": 62,
+      "createdDate": "2026-09-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260910-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-10",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "xiaojumaoaihuaban/grok-unleashed",
+      "summary": "把 grok-build 解開束縛的單一 binary：接任何 OpenAI-compatible endpoint、零 phone-home、不需 x.ai 帳號。名稱偏 jailbreak repackage，自行斟酌。",
+      "tags": [
+        "coding-agent",
+        "cli"
+      ],
+      "url": "https://github.com/xiaojumaoaihuaban/grok-unleashed",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/xiaojumaoaihuaban/grok-unleashed",
+      "stars": 60,
+      "createdDate": "2026-09-02",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260910-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-10",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "franciscocarloserra/ttslibre",
+      "summary": "開源 sub-100M TTS 完整食譜：code、data、weights 全給。小、快、免費，適合想自己 train 輕量語音合成的人。",
+      "tags": [
+        "tts",
+        "audio-voice"
+      ],
+      "url": "https://github.com/franciscocarloserra/ttslibre",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/franciscocarloserra/ttslibre",
+      "stars": 32,
+      "createdDate": "2026-09-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20260910-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-10",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "gonzalo-cordova-pou/voice-ai-benchmarks",
+      "summary": "語音 agent 的 benchmark 目錄：把 STT/TTS/端到端語音系統各元件的 benchmark 整理成一處，選語音技術棧的參考索引。",
+      "tags": [
+        "voice",
+        "benchmarks"
+      ],
+      "url": "https://github.com/gonzalo-cordova-pou/voice-ai-benchmarks",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/gonzalo-cordova-pou/voice-ai-benchmarks",
+      "stars": 21,
+      "createdDate": "2026-09-07",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-09-10T05:23:20.818382+08:00",
