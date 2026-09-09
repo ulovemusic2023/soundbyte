@@ -80199,8 +80199,222 @@
       "price": null,
       "vram": "local-ready (2B BF16 ~5GB, GGUF)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260910-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "The Pragmatic Engineer — What is happening with code reviews?",
+      "summary": "AI agent 產出的 code 量遠超人類 review 能力，GitHub PR 三年成長 5 倍且 2025 底加速。各家轉向 risk-based triage：低風險改動跳過人審、高風險強制審。Duckbill 導入後週合併 PR 從 80→154、非審查改動 median merge time 從 26 小時掉到 1 小時。Code review 正從『審 code』轉為『審結果（schema/測試/spec）』——典範轉移。",
+      "tags": [
+        "code-review",
+        "ai-coding",
+        "risk-based-review",
+        "paradigm-shift",
+        "dx"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Building Codex with Tibo Sottiaux",
+      "summary": "OpenAI 的 Tibo Sottiaux 拆解 Codex 怎麼被打造：開源策略、OpenAI 內部如何自用、以及對軟體開發流程的實際衝擊。是理解 coding agent harness 內部設計的一手訪談。",
+      "tags": [
+        "ai-coding",
+        "codex",
+        "coding-agent",
+        "openai"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+      "summary": "Sebastian Raschka 拆 GPT-6 Astra：looped transformers 重複複用同一組 transformer block 而非堆新 block，在參數量不變下加深有效計算深度，固定 compute 下換更好表現。並主張較短 CoT 是模型變強的結果、非刻意隱藏 reasoning。指向『不靠加參數』的效率新路線。",
+      "tags": [
+        "ai-models",
+        "looped-transformers",
+        "transformer",
+        "reasoning",
+        "paradigm-shift"
+      ],
+      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+      "source": "Sebastian Raschka (Ahead of AI)",
+      "sourceUrl": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare Workers: Module Registry 與預設 Node.js 相容",
+      "summary": "Cloudflare Workers 改為預設 Node.js 相容，支援單一 app 上看 64 MiB，並推出 URL-based module registry 搭配編譯與快取優化。降低把既有 Node 生態搬上 edge runtime 的門檻。",
+      "tags": [
+        "cloudflare-workers",
+        "edge-runtime",
+        "nodejs",
+        "serverless",
+        "architecture"
+      ],
+      "url": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Managed Defense × OpenAI 自動修補",
+      "summary": "Cloudflare Managed Defense 接上 OpenAI 模型，用 production traffic 訊號辨識高危威脅，並自動生成 code patch 提案修補。是 agentic security 在真實流量規模上落地的一例。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "auto-patch",
+        "observability",
+        "devops"
+      ],
+      "url": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison — 釋出 llm 0.35",
+      "summary": "Simon Willison 的 llm CLI 更新到 0.35，新增 GPT-6 Astra 模型支援。維持它作為本地串接多家模型的輕量工具的地位。",
+      "tags": [
+        "ai-tooling",
+        "llm-cli",
+        "local-llm"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/7/llm/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/7/llm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison — 談 Navier–Stokes 千禧年問題",
+      "summary": "OpenAI 用 AI agent 宣稱解出 Navier–Stokes 千禧年難題，卻被 NYU 數學家 Tristan Buckmaster 指控搶跑其與 Anthropic 研究者的成果。AI agent 進軍前沿數學研究，也帶出學術倫理與『搶發』爭議。",
+      "tags": [
+        "ai-agent",
+        "research",
+        "math",
+        "ethics"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-008",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Opusfived — 「把 Add to Cart 按鈕改成藍色，其他別動」",
+      "summary": "一個諷刺 coding agent 的互動小專案：任務極簡『把加入購物車按鈕改藍、其他不要動』，卻凸顯 agent 常見的 constraint adherence 失敗與 scope creep——改一堆無關的東西。對 vibe coding 的落地限制是很好的 quotable 案例。",
+      "tags": [
+        "ai-coding",
+        "vibe-coding",
+        "scope-creep",
+        "agent-limits"
+      ],
+      "url": "https://opusfived.dev/",
+      "source": "Opusfived (Miloš)",
+      "sourceUrl": "https://opusfived.dev/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-009",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare — Origin 自動金鑰交換（post-quantum 優先）",
+      "summary": "Cloudflare 新機制主動探測 origin 支援的 TLS 1.3 key agreement 演算法，對每日數十億連線優先採用 post-quantum 安全的組合。把後量子加密無痛推進到現網。",
+      "tags": [
+        "security",
+        "tls",
+        "post-quantum",
+        "infrastructure"
+      ],
+      "url": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260910-sw-010",
+      "radar": "software-dev",
+      "date": "2026-09-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Read the Docs 遭 DDoS 攻擊事件回顧",
+      "summary": "Read the Docs 公開 2026 年一起 DDoS 攻擊的技術回顧：攻擊樣態、影響與緩解手法。對維運開源基礎設施的 SRE/incident 應對是實用參考。",
+      "tags": [
+        "sre",
+        "ddos",
+        "incident",
+        "postmortem",
+        "security"
+      ],
+      "url": "https://about.readthedocs.com/blog/2026/09/2026-ddos-attack/",
+      "source": "Read the Docs Blog",
+      "sourceUrl": "https://about.readthedocs.com/blog/2026/09/2026-ddos-attack/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-10",
-  "updatedAt": "2026-09-10T05:13:54.556459"
+  "lastUpdated": "2026-09-10T05:23:20.818382+08:00",
+  "updatedAt": "2026-09-10T05:23:20.818382+08:00"
 }
