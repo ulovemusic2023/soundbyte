@@ -80639,6 +80639,147 @@
       "stars": 2238,
       "createdDate": "2023-03-22",
       "license": "LGPL-3.0"
+    },
+    {
+      "id": "20260911-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cognition SWE-2 coding model",
+      "summary": "FrontierCode 1.1 拿 50.0%，比 Fable 5.1 便宜 64%、逼近 GPT-6 Astra 但約 25% 成本，比 SWE-1.7 少 58% 步數。RL 加 Pareto cost penalty + length-weighted reward baseline + online draft-model 更新，把 cost-per-task 當優化目標。",
+      "tags": [
+        "coding-agent",
+        "cost-penalized-rl",
+        "ai-model"
+      ],
+      "url": "https://cognition.com/blog/swe-2",
+      "source": "Cognition",
+      "sourceUrl": "https://cognition.com/blog/swe-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260911-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Shopify moves back to Native from React Native",
+      "summary": "2020 選 RN 為省跨平台重工，但 coding agent 現在能拿 iOS 當參考實作 Android、用 spec/test/review 低成本維持雙平台 parity，LLM 推翻選 RN 的核心假設。Shop app 12 週從 PoC 到上架 native。",
+      "tags": [
+        "paradigm-shift",
+        "ai-cross-platform-parity",
+        "frontend",
+        "native"
+      ],
+      "url": "https://shopify.engineering/back-to-native",
+      "source": "Shopify Engineering",
+      "sourceUrl": "https://shopify.engineering/back-to-native",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260911-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Rust is a tier-1 language at Microsoft",
+      "summary": "與 C++/C#/TypeScript 同級的制度化支援與 SDL 合規 paved path。新 compiler backend rustc_codegen_utc 把 Rust 接進 MSVC 生態做 C++/Rust interop。2026 初已 100+ Microsoft repo 用此基建建置。",
+      "tags": [
+        "rust",
+        "new-languages",
+        "compiler-backend-interop"
+      ],
+      "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+      "source": "Rust Foundation",
+      "sourceUrl": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260911-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "PlanetScale Neki: sharded Postgres",
+      "summary": "Vitess 式水平分片帶到 Postgres：每 shard 跑真正的 Postgres 保留 extension/SQL/原生效能，用講標準 Postgres wire protocol 的 router 分流、內建連線池，schema change/resharding 線上無停機。",
+      "tags": [
+        "sharded-postgres",
+        "distributed-systems",
+        "database"
+      ],
+      "url": "https://planetscale.com/blog/introducing-neki",
+      "source": "PlanetScale",
+      "sourceUrl": "https://planetscale.com/blog/introducing-neki",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260911-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Desert Ant Labs: on-device model SDKs",
+      "summary": "歐洲團隊推 18 個 on-device audio/vision/text 模型，Swift/Kotlin/JS SDK。audio 轉錄比 Whisper 快 4.7x、語言辨識僅 2MB，免費用到 100k MAU；on-device 定位成比 cloud API 更快/私密/省。",
+      "tags": [
+        "on-device-model-sdk",
+        "local-inference",
+        "ai-model"
+      ],
+      "url": "https://desertant.com/blog/introducing-desert-ant-labs/",
+      "source": "Desert Ant Labs",
+      "sourceUrl": "https://desertant.com/blog/introducing-desert-ant-labs/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260911-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tailwind Labs joins Shopify",
+      "summary": "Tailwind CSS 及所有 OSS(Headless UI/Heroicons)維持 MIT 無變動，團隊在 Shopify 支援下續領社群(110M+ 週安裝)。商業線 Tailwind Plus/ui.sh 停新註冊，資源集中回 Tailwind CSS，現有客戶保留存取。",
+      "tags": [
+        "tailwind",
+        "frontend-dx",
+        "oss-acquisition"
+      ],
+      "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+      "source": "Tailwind Labs",
+      "sourceUrl": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260911-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Copperhead: open-source AI agent for circuit boards",
+      "summary": "開源 AI agent 設計/記錄/驗證 PCB：自動編輯 KiCad 檔、同步文件、跑 verification 防止 schematic/BOM/文件 drift。延續 AI 進軍硬體/EE 設計。",
+      "tags": [
+        "ai-pcb-design",
+        "ai-agent",
+        "hardware"
+      ],
+      "url": "https://copperhead.sh/",
+      "source": "Copperhead",
+      "sourceUrl": "https://copperhead.sh/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-11T05:14:45.813682+08:00",
