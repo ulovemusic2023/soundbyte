@@ -80839,8 +80839,112 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260911-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-11",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Vincentwei1021/anything2explainer",
+      "summary": "一句 topic 進，帶旁白的解說影片出。Claude Code / Codex skill，用 Remotion 把任何主題變成黑底 motion-graphics 解說片，含 TTS 配音、字幕、章節進度條，中英皆可、每一幀都用 code 畫。",
+      "tags": [
+        "claude-code",
+        "video",
+        "remotion",
+        "tts"
+      ],
+      "url": "https://github.com/Vincentwei1021/anything2explainer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 683,
+      "createdDate": "2026-09-08",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260911-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-11",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "crwdla/tokentab",
+      "summary": "一支 CLI，讀 Claude Code、Codex、Gemini CLI 的 session log，算出各自燒了多少錢——按 model / project / day 拆帳。多 CLI 並用又想控成本的人必備。",
+      "tags": [
+        "cli",
+        "claude-code",
+        "cost-tracking"
+      ],
+      "url": "https://github.com/crwdla/tokentab",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 211,
+      "createdDate": "2026-09-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260911-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-11",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "viettranx/3dviz-pro-max",
+      "summary": "創意 3D 視覺化的 agent skill：把一個想法變成值得探索的 Three.js / Blender 場景。Claude Code + Codex plugin，內含 223 recipes、440 knowledge records、22 kits。",
+      "tags": [
+        "claude-code",
+        "3d",
+        "threejs",
+        "blender"
+      ],
+      "url": "https://github.com/viettranx/3dviz-pro-max",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 131,
+      "createdDate": "2026-09-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260911-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-11",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Atomburstofficial/geiger",
+      "summary": "給 AI agent 用的蓋革計數器：一條唯讀指令，盤點機器上所有 agent、MCP server、plugin 與 AI 擴充。多 agent 環境的衛生檢查工具。",
+      "tags": [
+        "claude-code",
+        "mcp",
+        "security",
+        "inventory"
+      ],
+      "url": "https://github.com/Atomburstofficial/geiger",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 101,
+      "createdDate": "2026-09-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260911-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-11",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "wsw669/cclens",
+      "summary": "Claude Code 專屬會話管理器：多會話統一管理 + AI 成本視覺化儀表盤 + 會話摘要知識庫。終端 CLI 與 VS Code 擴充雙形態，串流解析 session log，按 model/project/date 歸因成本並支援預算預警。",
+      "tags": [
+        "claude-code",
+        "cli",
+        "cost-dashboard",
+        "tui"
+      ],
+      "url": "https://github.com/wsw669/cclens",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 85,
+      "createdDate": "2026-08-31",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-09-11T05:14:45.813682+08:00",
-  "updatedAt": "2026-09-11T05:14:45.813682+08:00"
+  "lastUpdated": "2026-09-11",
+  "updatedAt": "2026-09-11T05:45:00Z"
 }
