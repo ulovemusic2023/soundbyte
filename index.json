@@ -80780,6 +80780,65 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260911-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-11",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Shopify 掉頭回 Native：決策的「約束」會變，權衡本身不會",
+      "summary": "2020 年 Shopify 選 React Native 是為了省掉雙平台重工；六年後又搬回原生。理由不是原生變好了，而是 AI coding agents 現在能扛下實作、移植、測試、review 的重工，「雙平台維護成本」不再是決定性因素。啟示：技術選擇沒有永恆正解，當生態裡某個能力暴增，過去合理的取捨就該重算。",
+      "tags": [
+        "decision-making",
+        "ai-leverage",
+        "architecture"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
+      "source": "Shopify Engineering (Tobi Lütke 團隊)",
+      "sourceUrl": "https://shopify.engineering/back-to-native",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260911-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-11",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "AI 扛執行、人管判斷：新的分工長這樣",
+      "summary": "Calif Research 在一份安全研究釋出裡點出正在成形的分工：AI 已能做掉大部分執行層苦工，人類負責『打哪、怎麼安全地測』的方向與風險判斷。不是 AI 取代人，而是把人往『決定範圍與界線』的位置推。",
+      "tags": [
+        "ai-augmentation",
+        "judgment",
+        "division-of-labor"
+      ],
+      "url": "https://calif.io/research/weworm",
+      "source": "Calif Research",
+      "sourceUrl": "https://calif.io/research/weworm",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260911-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-09-11",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "金句：讓你重估架構決策的，是 AI 把重工成本壓到歸零",
+      "summary": "讓你重估架構決策的不是原生變香，是 AI 把『重工成本』這個變數壓到幾乎歸零。",
+      "tags": [
+        "ai-leverage",
+        "decision-making"
+      ],
+      "url": "https://shopify.engineering/back-to-native",
+      "source": "Shopify Engineering",
+      "sourceUrl": "https://shopify.engineering/back-to-native",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-11T05:14:45.813682+08:00",
