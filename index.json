@@ -80572,8 +80572,75 @@
       "stars": 21,
       "createdDate": "2026-09-07",
       "license": "MIT"
+    },
+    {
+      "id": "20260911-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "nashsu/llm_wiki",
+      "summary": "跨平台桌面 app，把文件自動長成結構化、互相連結的知識 wiki。跟傳統 RAG 不同，用 two-step CoT ingest 增量建立並持續維護 persistent wiki，支援多模態圖片擷取、LanceDB 向量搜尋、知識圖譜。",
+      "tags": [
+        "rag_knowledge",
+        "vector database",
+        "knowledge graph",
+        "local"
+      ],
+      "url": "https://github.com/nashsu/llm_wiki",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/nashsu/llm_wiki",
+      "price": null,
+      "vram": "local-ready",
+      "stars": 18032,
+      "createdDate": "2026-04-08",
+      "license": "custom (NOASSERTION)"
+    },
+    {
+      "id": "20260911-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Untrivial-ai/agent-orchestrator",
+      "summary": "開源 agent orchestrator：從 planning → run → 監督一整隊 coding agents 到 merge。支援任何 harness（Claude Code、Codex 等 25+），有桌面版。",
+      "tags": [
+        "ai_devtools",
+        "coding agent",
+        "orchestrator"
+      ],
+      "url": "https://github.com/Untrivial-ai/agent-orchestrator",
+      "source": "MAGI//ARCHIVE",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/2026/09/10/Untrivial-ai-agent-orchestrator.html",
+      "price": null,
+      "vram": "local-ready",
+      "stars": 11300,
+      "createdDate": "2026-02-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260911-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-09-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "vastsa/PI-Desktop",
+      "summary": "Local-first 的 AI coding agent 桌面環境：Electron + Rust host core + pi Agent Harness + 可安裝 plugins。強調本地優先與外掛擴充。",
+      "tags": [
+        "ai_devtools",
+        "coding agent",
+        "local"
+      ],
+      "url": "https://github.com/vastsa/PI-Desktop",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/vastsa/PI-Desktop",
+      "price": null,
+      "vram": "local-ready",
+      "stars": 2238,
+      "createdDate": "2023-03-22",
+      "license": "LGPL-3.0"
     }
   ],
-  "lastUpdated": "2026-09-10T05:23:20.818382+08:00",
-  "updatedAt": "2026-09-10T05:23:20.818382+08:00"
+  "lastUpdated": "2026-09-11T05:14:45.813682+08:00",
+  "updatedAt": "2026-09-11T05:14:45.813682+08:00"
 }
