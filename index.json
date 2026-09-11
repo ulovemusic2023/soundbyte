@@ -81160,8 +81160,29 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260912-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-12",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "AI 寫的 production code，標準要比人寫的更高",
+      "summary": "Boris Cherny（Anthropic、Claude Code 作者）指出：AI 產出的正式環境程式碼，把關標準應該比人寫的更嚴格。Anthropic 用大量 lint、測試、Claude 驅動的 E2E 測試、每日 Claude fuzzer、自動化 code review 與 security review 把 AI 程式碼包起來——少了這些護欄，最後只會累積成難維護的爛攤子。",
+      "tags": [
+        "ai-coding",
+        "code-quality",
+        "guardrails",
+        "engineering-ops"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "source": "Boris Cherny (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-12",
-  "updatedAt": "2026-09-11T21:24:22.265140+00:00"
+  "updatedAt": "2026-09-11T21:33:06.861320+00:00"
 }
