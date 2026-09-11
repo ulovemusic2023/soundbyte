@@ -81020,8 +81020,148 @@
       "price": null,
       "vram": "框架本體，需搭配 embedding+VLM，可用本地 Ollama",
       "license": "見 repo"
+    },
+    {
+      "id": "20260912-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain：Multi-Agent Harness 的 context 管理與 forked subagents",
+      "summary": "LangChain 拆解 supervisor→subagent 的 context 策略：傳統 subagent 開全新 context window 做 isolation，卻常重做 supervisor 已完成的 file read 造成浪費。新的 forked subagents 直接繼承 supervisor 完整對話，靠 prompt caching 更快更省。",
+      "tags": [
+        "ai-agent",
+        "multi-agent",
+        "context-engineering"
+      ],
+      "url": "https://www.langchain.com/blog/organizing-context-in-a-multi-agent-harness",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/organizing-context-in-a-multi-agent-harness",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260912-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 1.1.1.1 上線 post-quantum DNSSEC（ML-DSA-44）",
+      "summary": "Cloudflare 讓 1.1.1.1 用 NIST 後量子演算法 ML-DSA-44 驗證 DNSSEC 簽章，單筆簽章高達 2,420 bytes；文章講他們怎麼在規模下處理超大簽章與 downgrade 風險。DNS 安全進入後量子時代。",
+      "tags": [
+        "security",
+        "post-quantum",
+        "architecture"
+      ],
+      "url": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260912-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Boris Cherny：Claude 寫的 production code 要比人類更高標準",
+      "summary": "Anthropic 的 Boris Cherny 分享內部做法——AI 產出的程式碼不能降低把關，反而要更多 guardrails：大量 lint、tests、Claude 驅動 e2e 測試、每日跑的 Claude fuzzer、自動 code/security review 與 refactor。",
+      "tags": [
+        "ai-assisted-programming",
+        "coding-agent",
+        "guardrails"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260912-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "A Design Space Exploration of Async/Await（Brown CEL）",
+      "summary": "研究團隊比較各語言的 async/await，發現「straight-line asynchrony」在 Python / Rust / Swift 之間差異比想像大得多——同一段 fire-and-forget 程式在不同語言語意天差地別。附論文。",
+      "tags": [
+        "languages",
+        "concurrency",
+        "async-await"
+      ],
+      "url": "https://cel.cs.brown.edu/blog/design-space-async-await/",
+      "source": "Brown CEL",
+      "sourceUrl": "https://cel.cs.brown.edu/blog/design-space-async-await/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260912-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "數學家聯署〈Math and AI Declaration〉：AI 解題與數學社群嚴重錯位",
+      "summary": "數學家發起的聲明：LLM 數學能力暴增到能解重大未解問題，但 AI 公司把「解題當 benchmark」傷害數學這門科學——價值在過程長出的洞見與方法，不是答案。視為更廣泛 alignment 問題一環。",
+      "tags": [
+        "ai-alignment",
+        "ai-safety",
+        "research"
+      ],
+      "url": "https://mathandai.org/",
+      "source": "mathandai.org",
+      "sourceUrl": "https://mathandai.org/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260912-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "wrapture：Python monkey-patching 新利器（測試 + observability）",
+      "summary": "Graham Dumpleton 的 wrapture 同時服務 unit testing（取代 unittest.mock）與 tracing；純 TOML 做 zero-code tracing、匯出 OpenTelemetry，附各框架 instrumentation。alpha 但好用，Simon Willison 力推。",
+      "tags": [
+        "python",
+        "observability",
+        "opentelemetry"
+      ],
+      "url": "https://wrapture.readthedocs.io/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260912-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Litelm：把 LiteLLM 瘦身的 LLM gateway",
+      "summary": "社群作品，主打「LiteLLM without the bloat」——統一多家 LLM API，但砍掉臃腫依賴、追求輕量。",
+      "tags": [
+        "llm-gateway",
+        "ai-tool",
+        "open-source"
+      ],
+      "url": "https://github.com/kennethwolters/litelm",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/kennethwolters/litelm",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-11",
-  "updatedAt": "2026-09-11T05:45:00Z"
+  "lastUpdated": "2026-09-12",
+  "updatedAt": "2026-09-11T21:24:22.265140+00:00"
 }
