@@ -80943,6 +80943,83 @@
       "stars": 85,
       "createdDate": "2026-08-31",
       "license": "MIT"
+    },
+    {
+      "id": "20260912-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "swy2018/Aurora-Audio-Studio (2.0 Beta)",
+      "summary": "Windows/macOS 本地 AI 音訊創作工作台，整合音樂生成(ACE-Step 1.5/MiniMax-Music3)、配音與聲音克隆(Qwen3-TTS/F5-TTS)、歌聲克隆(Seed-VC 44.1k/SoulX-Singer-SVC)、音軌分離(BS-RoFormer/Demucs 4)、AI 扒譜(TransKun/YourMT3+)與影片字幕(Faster-Whisper)於單一本地入口，模型按需下載。",
+      "tags": [
+        "svc_voice",
+        "audio_music_ai",
+        "tts_speech"
+      ],
+      "url": "https://github.com/swy2018/Aurora-Audio-Studio",
+      "source": "GitHub Topics (singing-voice-conversion)",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "多模型混用，建議 NVIDIA RTX，多數可於 16GB 內執行",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260912-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "yasoukyoku/Score2ConVec",
+      "summary": "Score-to-ContentVec：讓 so-vits-svc/RVC 等 ContentVec-based SVC 模型能照 MIDI 譜+歌詞唱歌。經 G2P 產生 speaker-invariant ContentVec，再交 SVC backend 解碼成歌聲，把翻唱模型升級為 sing-from-score singer，免訓練 end-to-end SVS，一個音色僅需 10–15 分鐘乾聲。",
+      "tags": [
+        "svc_voice",
+        "music_understanding"
+      ],
+      "url": "https://github.com/yasoukyoku/Score2ConVec",
+      "source": "GitHub Topics (singing-voice-conversion)",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "content model ~188MB + SVC backend，消費級 GPU 可跑",
+      "license": "研究/非商用"
+    },
+    {
+      "id": "20260912-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "supertone-oss-archive/supertonic",
+      "summary": "Supertone 開源極輕量 on-device TTS：99M 參數 open-weight，ONNX Runtime 純本地推理免 GPU，可跑 Raspberry Pi。31 語言、44.1kHz 輸出、內建表情標籤。多語言 ONNX SDK。repo 已 archived 但程式碼與權重仍可用。",
+      "tags": [
+        "tts_speech",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/supertone-oss-archive/supertonic",
+      "source": "GitHub Topics (text-to-speech)",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "price": null,
+      "vram": "99M 參數，官方稱免 GPU、可在 edge 裝置跑",
+      "license": "Open-weight"
+    },
+    {
+      "id": "20260912-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-09-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "volcengine/OpenViking",
+      "summary": "火山引擎(ByteDance)開源 AI Agent Context Database，統一 Agent Memory、Knowledge RAG 與 Skills 成 viking:// 虛擬檔案系統，三層載入省 token。官方 benchmark LoCoMo 記憶準確率 80–83%。可接 OpenAI/Kimi/GLM 或本地 Ollama。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/volcengine/OpenViking",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "框架本體，需搭配 embedding+VLM，可用本地 Ollama",
+      "license": "見 repo"
     }
   ],
   "lastUpdated": "2026-09-11",
