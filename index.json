@@ -81181,6 +81181,169 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260912-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-12",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "NVlabs/SoL-Pi",
+      "summary": "NVIDIA 的 agent harness 研究框架，把自動研究迴圈規模化，讓 agent 自跑實驗、評估、改進 harness。",
+      "tags": [
+        "ai-agent",
+        "agent-harness",
+        "research-loop"
+      ],
+      "url": "https://github.com/NVlabs/SoL-Pi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-29+stars:>50",
+      "stars": 1012,
+      "createdDate": "2026-09-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20260912-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-12",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "achimala/dream-loop",
+      "summary": "做 3D 視覺的 agent skill：Blender + 影像生成 + subagent 評審互相修正。",
+      "tags": [
+        "agent-skill",
+        "blender",
+        "3d",
+        "multi-agent"
+      ],
+      "url": "https://github.com/achimala/dream-loop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-29+stars:>50",
+      "stars": 841,
+      "createdDate": "2026-09-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260912-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-12",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "jplenio/ComfyUI-MiniMax-Music-Production-Toolkit",
+      "summary": "MiniMax Music 3 的完整 ComfyUI 生產環境：prompt、metadata、mastering、多格式輸出。",
+      "tags": [
+        "music-generation",
+        "comfyui",
+        "audio",
+        "mastering"
+      ],
+      "url": "https://github.com/jplenio/ComfyUI-MiniMax-Music-Production-Toolkit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:music-generation",
+      "stars": 28,
+      "createdDate": "2026-08-31",
+      "license": "MIT"
+    },
+    {
+      "id": "20260912-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-12",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "petergyang/no-ai-slop",
+      "summary": "偵測並移除文字裡 20+ 種 AI 味寫作模式。",
+      "tags": [
+        "writing",
+        "ai-slop",
+        "content"
+      ],
+      "url": "https://github.com/petergyang/no-ai-slop",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 8411,
+      "createdDate": "2026-07-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260912-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-12",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "Gentleman-Programming/engram",
+      "summary": "AI coding agent 的持久記憶系統：Go binary + SQLite/FTS5 + MCP/HTTP/CLI/TUI。",
+      "tags": [
+        "mcp",
+        "agent-memory",
+        "sqlite",
+        "cli"
+      ],
+      "url": "https://github.com/Gentleman-Programming/engram",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 6531,
+      "createdDate": "2026-02-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260912-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-12",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "timgordontg/engrim",
+      "summary": "跨模型 episodic memory 標準，local-first SQLite 記憶引擎，支援 Claude Code/Cursor/Codex。",
+      "tags": [
+        "agent-memory",
+        "sqlite",
+        "local-first"
+      ],
+      "url": "https://github.com/timgordontg/engrim",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 231,
+      "createdDate": "2026-06-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20260912-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-12",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "paradise-runner/toast",
+      "summary": "batteries-included、開箱漂亮的終端內 IDE。",
+      "tags": [
+        "tui",
+        "terminal",
+        "ide"
+      ],
+      "url": "https://github.com/paradise-runner/toast",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 176,
+      "createdDate": "2026-03-23",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260912-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-12",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "OtoDock/oto-dock",
+      "summary": "自架的個人 AI agent 平台，BYO Claude/Codex 訂閱，agent 分部門管理。",
+      "tags": [
+        "ai-agent",
+        "self-hosted",
+        "claude-code"
+      ],
+      "url": "https://github.com/OtoDock/oto-dock",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 140,
+      "createdDate": "2026-07-09",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-09-12",
