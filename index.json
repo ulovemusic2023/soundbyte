@@ -81344,8 +81344,50 @@
       "stars": 140,
       "createdDate": "2026-07-09",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260913-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "m-a-p/YuE2-3B",
+      "summary": "YuE2 音樂生成：給歌詞+風格，先產出可編輯的 melody/chord 符號計畫，再算成 48kHz 立體聲人聲+伴奏。支援 zero-shot 翻唱與 agentic 對話式編曲，SongBench 逼近 Suno v5/v6。3B 但官方要求 24GB VRAM 起跳，16GB 需量化/offload。權重 CC-BY-NC-4.0 純非商用。",
+      "tags": [
+        "audio_music_ai",
+        "music_understanding",
+        "music-generation",
+        "text-to-audio"
+      ],
+      "url": "https://huggingface.co/m-a-p/YuE2-3B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "24GB baseline; 16GB 需量化/offload",
+      "license": "CC-BY-NC-4.0 (weights) / Apache-2.0 (code)"
+    },
+    {
+      "id": "20260913-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-13",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "現在人人都能寫 code，反而更清楚為什麼很多人不該寫",
+      "summary": "Paul Ford 在 NYT 專欄指出：AI 能寫出很好的軟體，但也讓「把別人的專業做爛」變得非常容易——這正是很多 AI 專案失敗的原因。門檻降低不等於品質提升；當寫 code 變成人人都會，真正稀缺的是判斷力與把事情做對的專業。",
+      "tags": [
+        "ai-coding",
+        "craft",
+        "judgment",
+        "vibe-coding"
+      ],
+      "url": "https://www.nytimes.com/2026/09/12/opinion/ai-software-coding-apps.html",
+      "source": "Simon Willison (quoting Paul Ford, NYT Opinion)",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-12",
-  "updatedAt": "2026-09-11T21:33:06.861320+00:00"
+  "lastUpdated": "2026-09-12T21:33:14Z",
+  "updatedAt": "2026-09-12T21:33:14Z"
 }
