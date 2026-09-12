@@ -81386,6 +81386,246 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260913-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "xiaYuTian11/maskit",
+      "summary": "本地隱私脫敏閘道：送進 LLM 前自動把敏感資料打碼、回覆時串流還原。支援 Cursor / Claude Code / Codex / Pi 等任何可設 Base URL 的工具。",
+      "tags": [
+        "privacy",
+        "llm-gateway",
+        "coding-tools"
+      ],
+      "url": "https://github.com/xiaYuTian11/maskit",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 191,
+      "createdDate": "2026-09-09",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260913-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "kruzovic7/ai-data-extractor",
+      "summary": "免費開源工具，把 AI coding assistant 的對話歷史全部 dump 出來。支援 Claude Code、Cursor、Windsurf、Aider、Cline/Roo Code 等。想備份或分析自己的 coding session 很實用。",
+      "tags": [
+        "coding-agent",
+        "data-export"
+      ],
+      "url": "https://github.com/kruzovic7/ai-data-extractor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 148,
+      "createdDate": "2026-09-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20260913-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "Saganaki22/ComfyUI-AuK",
+      "summary": "ComfyUI 節點：本地跑 AuK / AuK-Flash 語音生成、voice cloning、語音編輯、增強與分離。用 ComfyUI 的模型管理與量化運算，全程本地。做音訊/人聲處理可以試。",
+      "tags": [
+        "audio",
+        "voice-cloning",
+        "tts",
+        "comfyui"
+      ],
+      "url": "https://github.com/Saganaki22/ComfyUI-AuK",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:voice-cloning",
+      "stars": 27,
+      "createdDate": "2026-09-09",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260913-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "jceronch1/Clonar-voz",
+      "summary": "100% 本地 voice cloning + TTS，用 Qwen3-TTS + llama.cpp，CPU/GPU 都能跑，支援 10 種語言，附西語 web UI。輕量本地人聲方案。",
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "local-ai"
+      ],
+      "url": "https://github.com/jceronch1/Clonar-voz",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:text-to-speech",
+      "stars": 21,
+      "createdDate": "2026-09-08",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260913-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "agent-launch/agent-launcher",
+      "summary": "一個桌面 app 裡設定並啟動各家 coding-agent CLI。同時在用 Claude Code / Codex / OpenCode 多套工具的人可以統一管理。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "desktop"
+      ],
+      "url": "https://github.com/agent-launch/agent-launcher",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 57,
+      "createdDate": "2026-09-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260913-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "Xu123-Bob/Baize",
+      "summary": "白澤：開源 AI Coding Agent CLI，支援多後端（DeepSeek / OpenAI 相容 / Ollama 本地），具備 tool calling、skill 載入、子代理委派、context 壓縮、安全沙箱。昨天剛建立，值得觀察。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "local-llm"
+      ],
+      "url": "https://github.com/Xu123-Bob/Baize",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent",
+      "stars": 67,
+      "createdDate": "2026-09-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260913-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "reality-opened/openreality",
+      "summary": "手機影片 → 可被 AI 查詢的 3D 場景。提供給 Claude/Codex/Cursor 的 MCP 工具（npm openreality-mcp）、自架 broker，以及 VGGT-SLAM 函式庫，整合在一個 repo。",
+      "tags": [
+        "mcp",
+        "3d",
+        "slam"
+      ],
+      "url": "https://github.com/reality-opened/openreality",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 78,
+      "createdDate": "2026-09-01",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "id": "20260913-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "heygen-com/hyperframes",
+      "summary": "HeyGen 出的：寫 HTML，渲染成影片，專為 agent 設計。本週 GitHub Trending 高位。對做影音/創作者內容 + 用 agent 自動化的人很有想像空間。",
+      "tags": [
+        "video",
+        "agents",
+        "html"
+      ],
+      "url": "https://github.com/heygen-com/hyperframes",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 49195,
+      "createdDate": "2026-03-10",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260913-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "ayghri/i-have-adhd",
+      "summary": "一個 skill，讓 coding agent 別把答案埋在一堆廢話裡，輸出走 ADHD-friendly 風格：先講重點。本週爆紅（單週 +1.3 萬星）。",
+      "tags": [
+        "claude-code",
+        "skill",
+        "agent-output"
+      ],
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 43347,
+      "createdDate": "2026-05-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260913-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "SeemSeam/claude_codex_bridge",
+      "summary": "可視化的多 agent CLI workspace，把 Codex、Claude、Gemini、Kimi、Qwen、Cursor、Copilot、Pi、OpenCode 混在一起協作。本週有 star surge。",
+      "tags": [
+        "multi-agent",
+        "cli",
+        "coding-agent"
+      ],
+      "url": "https://github.com/SeemSeam/claude_codex_bridge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:coding-agent",
+      "stars": 3493,
+      "createdDate": "2025-10-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260913-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "siddsachar/row-bot",
+      "summary": "本地優先的個人 AI 助手：整合 knowledge graph、語音、視覺、shell、瀏覽器自動化、排程、訊息通道。可透過 Ollama 本地跑，資料留在自己機器上。概念上跟 OpenClaw 同類。",
+      "tags": [
+        "local-ai",
+        "personal-assistant",
+        "agent"
+      ],
+      "url": "https://github.com/siddsachar/row-bot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:local-llm",
+      "stars": 1490,
+      "createdDate": "2026-03-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20260913-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-09-13",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "openai/plugins",
+      "summary": "OpenAI 官方 Plugins repo，本週 Trending。搭配 openai/skills（Codex skills 目錄）一起看，OpenAI 的 agent 生態在補齊。",
+      "tags": [
+        "openai",
+        "plugins",
+        "agent"
+      ],
+      "url": "https://github.com/openai/plugins",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 6530,
+      "createdDate": "2026-03-04",
+      "license": "none"
     }
   ],
   "lastUpdated": "2026-09-12T21:33:14Z",
