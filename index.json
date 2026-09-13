@@ -81815,6 +81815,133 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260914-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-14",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "jtydhr88/screenwriting-skills",
+      "summary": "Claude Code / Codex 的編劇技能包，⭐989 且 8 天內衝上來。⚠️ repo 無 README 描述、無授權條款，用前自行評估。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "screenwriting",
+        "creator"
+      ],
+      "url": "https://github.com/jtydhr88/screenwriting-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-31+stars:>50",
+      "stars": 989,
+      "createdDate": "2026-09-06",
+      "license": "none"
+    },
+    {
+      "id": "20260914-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-14",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "FankChen/tracecrate",
+      "summary": "Local-first 的 AI agent trace 工作台：把 Claude Code、Codex、OTLP log 拉進來檢視、比對不同 run，還能匯出去識別化報告。無後端、免 API key，適合排查自己的 coding agent 行為。",
+      "tags": [
+        "ai-agent",
+        "claude-code",
+        "codex",
+        "observability",
+        "local-first"
+      ],
+      "url": "https://github.com/FankChen/tracecrate",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-08-31+topic:claude-code",
+      "stars": 116,
+      "createdDate": "2026-09-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260914-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-14",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "Gentleman-Programming/gentle-ai",
+      "summary": "一支 Go CLI 幫你一鍵設定手上各家 AI coding agent（Claude Code / Cursor / Codex / OpenCode / Pi）：持久化記憶、Spec-Driven Development、精選 skills、MCP server、persona 都能選，不綁單一 agent。本週 Go trending。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "mcp",
+        "cli"
+      ],
+      "url": "https://github.com/Gentleman-Programming/gentle-ai",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 6726,
+      "createdDate": "2026-02-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20260914-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-14",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "vinta/pangu.js",
+      "summary": "老牌中英文自動排版工具（在漢字與英數之間補空白）現在加了 on-device AI 語意判斷，能更聰明地決定該不該加空白。寫 Threads／貼文校稿好用，這週因新功能重新衝榜。",
+      "tags": [
+        "text-processing",
+        "on-device-ai",
+        "cli",
+        "content"
+      ],
+      "url": "https://github.com/vinta/pangu.js",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=pushed:>2026-09-07+topic:local-llm",
+      "stars": 4816,
+      "createdDate": "2012-02-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260914-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-14",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "peetzweg/opendisplay",
+      "summary": "開源的 Sidecar／Duet 替代品：把 iPhone 或 iPad 當 Mac 的第二螢幕，USB 或 WiFi 皆可，低延遲 H.264、Retina HiDPI、支援觸控。桌面工作流多一塊螢幕免花錢。",
+      "tags": [
+        "macos",
+        "productivity",
+        "open-source",
+        "dev-tool"
+      ],
+      "url": "https://github.com/peetzweg/opendisplay",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 3229,
+      "createdDate": "2026-06-10",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260914-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-14",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "HarnessRouter/harnessrouter",
+      "summary": "self-hosted 的 agent harness 統一介面：Codex、Claude Code、Hermes、PI、DSH 等透過同一組 API 跑，含 session、streaming、檔案、取消與錯誤處理，走開放的 Unified Harness Protocol (UHP)。自己的 key、自己的機器。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "self-hosted",
+        "protocol"
+      ],
+      "url": "https://github.com/HarnessRouter/harnessrouter",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 1358,
+      "createdDate": "2026-08-09",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-09-14",
