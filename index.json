@@ -81773,8 +81773,50 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260914-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-14",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Making Startups Powerful — 別問怎麼賺更多，問怎麼變更強大",
+      "summary": "PG 在 office hours 最常用的 heuristic 不是「怎麼賺更多錢」（那只帶來漸進改善），而是「怎麼讓公司更強大」——常能把價值變成數量級差距。方法：從零件供應商變成擁有客戶關係、讓金流穿過你的那一方；製造網路效應（把 service 變 marketplace）；走 full stack 吃掉客戶；留意會反客為主的意外用法（PayPal 本是安全軟體 demo，被 eBay 賣家拿去收款才成為本業）。最反直覺的一條：慷慨讓你更強大——創造的價值要大於你捕獲的。",
+      "tags": [
+        "mental-model",
+        "network-effects",
+        "leverage",
+        "full-stack",
+        "startup"
+      ],
+      "url": "https://paulgraham.com/powerful.html",
+      "source": "Paul Graham",
+      "sourceUrl": "https://paulgraham.com/powerful.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260914-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-14",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "PG on generosity: create more value than you capture",
+      "summary": "把慷慨當競爭策略而非理想主義：榨乾每一分錢頂多 2x 回報，替客戶發明新東西能拿 10x、100x。open source 就是經典案例——白送產品反而放大自身價值。",
+      "tags": [
+        "quotable",
+        "generosity",
+        "value-capture"
+      ],
+      "url": "https://paulgraham.com/powerful.html",
+      "source": "Paul Graham",
+      "sourceUrl": "https://paulgraham.com/powerful.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-14",
-  "updatedAt": "2026-09-14T05:25:02.699773"
+  "updatedAt": "2026-09-13T21:34:13Z"
 }
