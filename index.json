@@ -81942,6 +81942,175 @@
       "stars": 1358,
       "createdDate": "2026-08-09",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260915-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Laurie Voss：我們現在都是 Product Engineer 了",
+      "summary": "Laurie Voss 做兩個大膽假設——agent 終將吃下整個 SDLC(不只寫 code，連 review/test/debug/deploy/monitor 都會補上)，且軟體需求沒有上限。結論：當產碼成本趨近零，軟體工作只剩『找出人真正要什麼、精確定義、做得好用』；這份成本是 per-piece、不可轉移的，隨軟體量趨近無限而成為整份工作的全部。",
+      "tags": [
+        "ai-assisted-development",
+        "agentic-engineering",
+        "paradigm-shift",
+        "careers"
+      ],
+      "url": "https://seldo.com/posts/we-are-all-product-engineers-now/",
+      "source": "Laurie Voss (seldo.com)",
+      "sourceUrl": "https://seldo.com/posts/we-are-all-product-engineers-now/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-15",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Andon Labs 推出 Pion：讓 agent 全自動經營公司的平台",
+      "summary": "Vending-Bench 團隊 Andon Labs 釋出 Pion，一個讓 agent 全自動經營真實公司的平台——從模擬走到實跑 vending machine/店/咖啡廳，現開放 waitlist 給更多人實驗自主生意。他們追蹤『AI 何時能在真實世界自主取得資源』近兩年；Vending-Bench 2 分數隨每次新模型發布持續攀升、無 plateau，團隊心態是『恐懼混合著著迷』。",
+      "tags": [
+        "ai-agent",
+        "agentic",
+        "autonomous-business",
+        "paradigm-shift"
+      ],
+      "url": "https://andonlabs.com/pion",
+      "source": "Andon Labs",
+      "sourceUrl": "https://andonlabs.com/blog/why-we-built-pion",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Meta 開源 Astryx：把 AI agent 當一級使用者的 React 設計系統",
+      "summary": "Meta 開源內部研發 8 年的 Astryx——React 19 + StyleX 打底，150+ 無障礙元件、集中式 design token、build-time 產生的原子 CSS，並內建 CLI 與 MCP endpoint『同時給工程師與 AI agent 用』。swizzle 指令可把元件原始碼 eject 進自家 repo(換取自由但接手維護)；元件保留 className 可與 Tailwind/CSS Modules 互通。design system 開始把 agent 當一級使用者。",
+      "tags": [
+        "design-system",
+        "react",
+        "mcp",
+        "agent-native",
+        "stylex",
+        "frontend"
+      ],
+      "url": "https://astryx.atmeta.com/blog/introducing-astryx",
+      "source": "InfoQ / Meta",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/meta-astryx-design-system/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Agoda 用 DragonflyDB 取代 72 分片 SQL Server 價格快取",
+      "summary": "Agoda 把 1.5TB 飯店價格快取從 72 個 SQL Server 分片遷到 DragonflyDB，以應付成長中的讀寫量。遷移採 staged dual reads、parity 驗證、漸進流量切換與去中心化故障偵測。成果：P99 讀取延遲約降 8 倍，兩座 DragonflyDB cluster 提供高可用。",
+      "tags": [
+        "architecture",
+        "distributed-cache",
+        "dragonflydb",
+        "migration"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/agoda-price-cache-dragonflydb/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/agoda-price-cache-dragonflydb/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Fable 5.1 破解沉睡 370 年的 Cyphral Distich 密碼",
+      "summary": "Vals AI 報告 Fable 5.1 解開了 370 年來無人破譯的 Cyphral Distich 密碼，HN 上衝到 1,100+ 分。是近期最強的 frontier model 推理能力實證之一——把 LLM 從輔助工具推向能獨立攻克歷史級難題。",
+      "tags": [
+        "ai-models",
+        "reasoning",
+        "benchmark"
+      ],
+      "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+      "source": "Vals AI",
+      "sourceUrl": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Show HN：Nari Qwen3-TTS / Qwen3-ASR，高準確、低延遲又便宜",
+      "summary": "Nari Labs 推出基於 Qwen3 的 TTS/ASR 模型組，主打高準確度、低延遲與低成本，並宣稱在 Coval voice AI benchmark 領先。語音端 on-device/低成本推論的競爭延燒到開源 TTS/ASR 賽道。",
+      "tags": [
+        "ai-models",
+        "tts",
+        "asr",
+        "voice",
+        "low-cost"
+      ],
+      "url": "https://narilabs.com/blog/nari-labs-leads-coval-voice-ai-benchmarks/",
+      "source": "Nari Labs (Show HN)",
+      "sourceUrl": "https://narilabs.com/blog/nari-labs-leads-coval-voice-ai-benchmarks/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "程式碼顯示：Siri 可被換成 Claude 或 ChatGPT",
+      "summary": "MacRumors 從程式碼跡證發現 Apple 正打造可抽換 Siri 底層模型的架構，使用者/系統可把 Siri 換成 Claude 或 ChatGPT。作業系統把 LLM 當可插拔後端，是 model-router 概念下放到消費級 OS 的一步。",
+      "tags": [
+        "ai-agent",
+        "apple",
+        "llm-integration",
+        "model-router"
+      ],
+      "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
+      "source": "MacRumors",
+      "sourceUrl": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-sw-008",
+      "radar": "software-dev",
+      "date": "2026-09-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "怎麼寫一份有效的軟體設計文件",
+      "summary": "Refactoring English 的節選：在 agent 產碼成本歸零、review/設計成為瓶頸的時代，把意圖精確寫成 design doc 的技藝反而更值錢。文章拆解如何寫出讓讀者真正理解、能據以決策的設計文件。",
+      "tags": [
+        "engineering-craft",
+        "design-doc",
+        "communication"
+      ],
+      "url": "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/",
+      "source": "Refactoring English",
+      "sourceUrl": "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-14",
