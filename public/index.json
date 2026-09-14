@@ -82171,6 +82171,111 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260915-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-15",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "zachsaw/graphify-csharp",
+      "summary": "把 JetBrains Rider 等級的程式碼理解力（find usages、C# 15 語法）餵給 LLM agent，讓 coding agent 在大型 C# 專案裡精準定位參照。走 compiler-accurate 路線，不是純文字搜尋。",
+      "tags": [
+        "coding-agent",
+        "code-intelligence",
+        "csharp",
+        "mcp"
+      ],
+      "url": "https://github.com/zachsaw/graphify-csharp",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 62,
+      "createdDate": "2026-09-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260915-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-15",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "codejunkie99/agentic-stack-desktop",
+      "summary": "macOS 原生 workspace，把 Claude Code / Codex / OpenCode / Cursor 串到同一張 local knowledge graph 上，讓不同 coding agent 共享一份專案記憶。適合多工具並用的人。",
+      "tags": [
+        "coding-agent",
+        "knowledge-graph",
+        "mcp",
+        "local",
+        "macos"
+      ],
+      "url": "https://github.com/codejunkie99/agentic-stack-desktop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-09-01+topic%3Amcp",
+      "stars": 60,
+      "createdDate": "2026-09-08",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260915-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-15",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "filliptm/ComfyUI-FL-YuE2",
+      "summary": "把 YuE2 音樂生成模型接進 ComfyUI，還附一個可編輯的 piano roll。music AI + 節點式工作流，對想在本地跑音樂生成、又要能手動修 MIDI 的人剛好。",
+      "tags": [
+        "music-generation",
+        "music-ai",
+        "comfyui",
+        "midi"
+      ],
+      "url": "https://github.com/filliptm/ComfyUI-FL-YuE2",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-09-01+topic%3Amusic-generation",
+      "stars": 37,
+      "createdDate": "2026-09-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260915-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-15",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "Emmimal/intent-continuity",
+      "summary": "純 Python，自動找出並套用 coding agent 過去的相關需求記錄——沒有 embedding、沒有 vector DB、不呼叫 LLM。對抗 context rot 的輕量作法，Towards Data Science 文章的配套程式碼。",
+      "tags": [
+        "coding-agent",
+        "memory",
+        "no-embedding",
+        "context"
+      ],
+      "url": "https://github.com/Emmimal/intent-continuity",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-09-01+topic%3Acoding-agent",
+      "stars": 26,
+      "createdDate": "2026-09-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260915-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-15",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "daimou1028/hadome",
+      "summary": "一個 coding agent，直接驅動你已經開著的 ChatGPT 網頁分頁——不用 API key，而且刻意「踩煞車」加了安全限制。想省 API 費用、用瀏覽器 session 當後端的實驗性玩法。",
+      "tags": [
+        "coding-agent",
+        "browser-agent",
+        "no-api-key"
+      ],
+      "url": "https://github.com/daimou1028/hadome",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-09-01+topic%3Acoding-agent",
+      "stars": 22,
+      "createdDate": "2026-09-11",
+      "license": "AGPL-3.0"
     }
   ],
   "lastUpdated": "2026-09-15",
