@@ -82111,8 +82111,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260915-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-15",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Laurie Voss：我們現在都是 Product Engineer",
+      "summary": "寫 code 的成本已經崩塌，review、修 bug、維運的成本正在跟上、遲早也趨近於零。真正剩下的軟體工作是：搞清楚人們到底要什麼、把它精準定義、把體驗做得好用。這部分成本是「每個產品各自付一次、無法轉移」，所以當軟體數量趨近無限（需求沒有上限），這件事就會變成工作的全部。",
+      "tags": [
+        "future-of-work",
+        "ai-coding",
+        "product-engineering"
+      ],
+      "url": "https://seldo.com/posts/we-are-all-product-engineers-now/",
+      "source": "Laurie Voss (via Simon Willison)",
+      "sourceUrl": "https://seldo.com/posts/we-are-all-product-engineers-now/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-15",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly：別急著相信炒作的時間表",
+      "summary": "KK 跟 Craig Mod 打賭機器人 2040 年前打不贏人類籃球隊。他對 AI 極度樂觀，卻對機器人時間表保守——因為人體是超高效形態：大腦只要 25 瓦、打籃球全身約 400 瓦，機器光走路就要 500 瓦、劇烈運動 2000 瓦。馬達效率我們已優化上百年，五倍提升 15 年內不是不可能但很難。框架：把「終將實現」和「多快實現」分開判斷，方向樂觀、時程保守。",
+      "tags": [
+        "techno-optimism",
+        "robotics",
+        "timeline-thinking"
+      ],
+      "url": "https://kk.org/thetechnium/robot-basketball/",
+      "source": "Kevin Kelly (The Technium)",
+      "sourceUrl": "https://kk.org/thetechnium/robot-basketball/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260915-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-09-15",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Bryan Cantrill：專家發警報的責任",
+      "summary": "針對前 Anthropic 員工「AI 十年內可能毀滅人類」的說法，Cantrill 用自己年輕時嚇壞外行同儕的糗事提醒：專家因專業而隱含握有大眾信任，發警報前舉證責任在自己身上，越是拉警報越要克制。",
+      "tags": [
+        "expertise",
+        "ai-safety",
+        "communication"
+      ],
+      "url": "https://bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear/",
+      "source": "Bryan Cantrill",
+      "sourceUrl": "https://bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-14",
-  "updatedAt": "2026-09-13T21:34:13Z"
+  "lastUpdated": "2026-09-15",
+  "updatedAt": "2026-09-14T21:33:26Z"
 }
