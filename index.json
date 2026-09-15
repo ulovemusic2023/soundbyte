@@ -82520,8 +82520,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260916-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-16",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Sam Altman：AI 落地慢是行為慣性問題，不是技術問題",
+      "summary": "在 David Senra 的 podcast 上 Altman 罕見認錯：整個產業對 AI 時程太樂觀。真正瓶頸不是模型能力，而是經濟體與人的行為慣性——改變行為比科技宅想的難太多了。他不認同 Tobi Lütke 2026 每個生意都會被重寫。對創業者：要解的是採用難題，不只是工程難題。OpenAI 定位是平台不是產品，一介面＋一 API，算力與研究擺第一。",
+      "tags": [
+        "ai-adoption",
+        "behavior-inertia",
+        "platform-strategy"
+      ],
+      "url": "https://www.davidsenra.com/episode/sam-altman",
+      "source": "David Senra Podcast",
+      "sourceUrl": "https://www.davidsenra.com/episode/sam-altman",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260916-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-16",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Paul Graham：工具會變，創業者的本質工作不變",
+      "summary": "PG 在 YC Startup Podcast（第 47 場 batch talk）說：做了 21 年，AI 之後幾乎所有事情還是一模一樣。決定創業成敗的還是那三樣——formidability、出貨速度、對失敗的恐懼。技術是工具，不是本質變革。",
+      "tags": [
+        "founder-quality",
+        "shipping-speed",
+        "ai-era"
+      ],
+      "url": "https://finance.biggo.com/news/d47097987d1dee57",
+      "source": "Y Combinator Startup Podcast",
+      "sourceUrl": "https://finance.biggo.com/news/d47097987d1dee57",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-16T05:10:00+08:00",
-  "updatedAt": "2026-09-16T05:10:00+08:00"
+  "lastUpdated": "2026-09-16",
+  "updatedAt": "2026-09-15T21:33:59.004101+00:00"
 }
