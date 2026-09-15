@@ -82276,8 +82276,46 @@
       "stars": 22,
       "createdDate": "2026-09-11",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260916-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tencent-Hunyuan/AuK",
+      "summary": "Tencent 開源語音基礎模型：一個模型統包 zero-shot TTS、voice cloning、語音編輯、speech enhancement 與 source separation，走 instruction-guided diffusion 架構。base 權重約 6GB，16GB VRAM 可直接跑，對人聲處理／去背景／翻唱前處理很實用。2026/09/09 開源，MIT 授權可商用。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/Tencent-Hunyuan/AuK",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/tencent/AuK",
+      "price": null,
+      "vram": "~6GB 權重，16GB VRAM 可跑",
+      "license": "MIT"
+    },
+    {
+      "id": "20260916-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "summary": "DeepSeek 新的 V4.1 Flash：763B 多模態（image-text-to-text）MoE，HF 本週 trending 第一，32 萬+ 下載、2.7k likes。MIT 授權可商用，但 763B 即使量化也遠超 16GB，本地免談，屬雲端／API 場景。留意生態圈很快會出蒸餾小版本。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "price": null,
+      "vram": "763B，量化後仍 >24GB",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-09-15",
-  "updatedAt": "2026-09-14T21:33:26Z"
+  "lastUpdated": "2026-09-16T05:10:00+08:00",
+  "updatedAt": "2026-09-16T05:10:00+08:00"
 }
