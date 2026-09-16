@@ -82560,8 +82560,270 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260916-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "pliablepixels/gap-trap",
+      "summary": "在 repo 裡自動建立 rules + gates，讓 AI 寫的 code 不用逐行 review 也能保持正確。專治 vibe coding 品質失控。",
+      "tags": [
+        "ai-coding",
+        "quality-gate",
+        "vibe-coding"
+      ],
+      "url": "https://github.com/pliablepixels/gap-trap",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/pliablepixels/gap-trap",
+      "stars": 144,
+      "createdDate": "2026-09-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20260916-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "JamesRyanATX/fcbnerd",
+      "summary": "用 Behringer FCB1010 MIDI 腳踏板在 macOS 上觸發各種操作。硬體 MIDI × Mac 自動化。",
+      "tags": [
+        "midi",
+        "macos",
+        "audio",
+        "automation"
+      ],
+      "url": "https://github.com/JamesRyanATX/fcbnerd",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/JamesRyanATX/fcbnerd",
+      "stars": 58,
+      "createdDate": "2026-09-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20260916-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "onmyway133/claude-code-tips-tricks",
+      "summary": "作者整理的 Claude Code 私房技巧合集。純筆記 repo，抄工作流實用。",
+      "tags": [
+        "claude-code",
+        "ai-coding",
+        "reference"
+      ],
+      "url": "https://github.com/onmyway133/claude-code-tips-tricks",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/onmyway133/claude-code-tips-tricks",
+      "stars": 78,
+      "createdDate": "2026-09-13",
+      "license": "NONE"
+    },
+    {
+      "id": "20260916-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "greentfrapp/panel",
+      "summary": "research workspace，agent 可以自己動態建立 pane 排版分析。Show HN 當天上榜。",
+      "tags": [
+        "ai-agent",
+        "workspace",
+        "agentic"
+      ],
+      "url": "https://github.com/greentfrapp/panel",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/greentfrapp/panel",
+      "stars": 44,
+      "createdDate": "2026-09-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260916-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "undefined-ui/second-brain-os",
+      "summary": "會自我維護的 AI second brain：guide + starter vault + agent skills，跑在 Claude Code + Obsidian。",
+      "tags": [
+        "agent-skill",
+        "knowledge-base",
+        "obsidian"
+      ],
+      "url": "https://github.com/undefined-ui/second-brain-os",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/undefined-ui/second-brain-os",
+      "stars": 60,
+      "createdDate": "2026-09-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260916-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "JakeATX/llamAmpere",
+      "summary": "llama.cpp fork，為 Ampere（RTX 3090）優化：TurboQuant KV cache + MTP speculative decoding，10 萬 token 90 tok/s。",
+      "tags": [
+        "local-llm",
+        "llama.cpp",
+        "inference"
+      ],
+      "url": "https://github.com/JakeATX/llamAmpere",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/JakeATX/llamAmpere",
+      "stars": 78,
+      "createdDate": "2026-09-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260916-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "ordewell/ordewell",
+      "summary": "把目標拆成有序的 coding-agent 任務，各自指定 runner/model/mode，執行後驗證。Show HN 回溫。",
+      "tags": [
+        "ai-agent",
+        "orchestration",
+        "coding-agent"
+      ],
+      "url": "https://github.com/ordewell/ordewell",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/ordewell/ordewell",
+      "stars": 86,
+      "createdDate": "2026-07-31",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260916-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "langchain-ai/paid-media-agent",
+      "summary": "LangChain 官方付費媒體 agent：Google/Meta/Reddit/LinkedIn/X/OpenAI Ads 分析報表，建在 Deep Agents 上。",
+      "tags": [
+        "ai-agent",
+        "marketing",
+        "deep-agents"
+      ],
+      "url": "https://github.com/langchain-ai/paid-media-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/langchain-ai/paid-media-agent",
+      "stars": 28,
+      "createdDate": "2026-09-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260916-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "godot-pty/gpty",
+      "summary": "Godot + Rust 寫的多 PTY 終端機模擬器桌面 app。多 pane 平行跑 agent 的終端玩具。",
+      "tags": [
+        "terminal",
+        "multiplexer",
+        "rust"
+      ],
+      "url": "https://github.com/godot-pty/gpty",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/godot-pty/gpty",
+      "stars": 68,
+      "createdDate": "2026-07-15",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260916-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "sixtysevenlf/dsh-blender-plugin",
+      "summary": "讓 AI model 透過 TCP 直接驅動 Blender：viewport 影格、自訂角度 render、headless offload。AI × 3D 創作。",
+      "tags": [
+        "blender",
+        "ai-agent",
+        "creative-tool"
+      ],
+      "url": "https://github.com/sixtysevenlf/dsh-blender-plugin",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/sixtysevenlf/dsh-blender-plugin",
+      "stars": 39,
+      "createdDate": "2026-09-13",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20260916-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-09-16",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "lant1ng-1216/lab-agent",
+      "summary": "open-source coding agent，terminal + desktop 兩種介面。還很早期，先放雷達追。",
+      "tags": [
+        "coding-agent",
+        "cli",
+        "desktop"
+      ],
+      "url": "https://github.com/lant1ng-1216/lab-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/lant1ng-1216/lab-agent",
+      "stars": 21,
+      "createdDate": "2026-09-04",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260917-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "meituan-longcat/LongCat-Video",
+      "summary": "Meituan 開源 13.6B 影片生成基礎模型，單一模型統一 Text-to-Video / Image-to-Video / Video-Continuation。原生以 Video-Continuation 預訓練，能產數分鐘級長片不掉色；720p 30fps 幾分鐘內生成，multi-reward GRPO 對齊。",
+      "tags": [
+        "image_gen",
+        "video-generation",
+        "world-model"
+      ],
+      "url": "https://github.com/meituan-longcat/LongCat-Video",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "13.6B 影片模型，720p 記憶體需求高 >24GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260917-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tencent/WeKnora",
+      "summary": "騰訊開源 LLM 知識框架：RAG 快問快答 + ReAct Agent + 全新 Wiki Mode（文件蒸餾成自我維護的 markdown 知識庫與知識圖譜）。v0.8.0 加 skill sandbox、tenant skill catalog、跨 session 長期記憶。相容 20+ provider，可完全本地私有部署。",
+      "tags": [
+        "rag_knowledge",
+        "rag",
+        "agent",
+        "knowledge-base"
+      ],
+      "url": "https://github.com/Tencent/WeKnora",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "框架輕量，接 Ollama/本地 LLM，16GB 可跑",
+      "license": "Other (NOASSERTION)"
     }
   ],
-  "lastUpdated": "2026-09-16",
-  "updatedAt": "2026-09-15T21:33:59.004101+00:00"
+  "lastUpdated": "2026-09-17",
+  "updatedAt": "2026-09-16T21:13:16Z"
 }
