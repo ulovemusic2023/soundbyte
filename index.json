@@ -83083,6 +83083,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260918-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-18",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "We Must Pace the Frontier — Dario Amodei 的 race-to-the-top 框架",
+      "summary": "Dario 提出「race to the top」回應 AI 風險：不造技術（把力量讓給威權）與魯莽狂造都是死路，Anthropic 選第三條路——證明『謹慎打造』與『商業成功』可以並存，把安全變成公司間互相競爭的維度。核心是把『安全 vs 速度』的二選一，重構成『用安全當競爭武器』。",
+      "tags": [
+        "ai-safety",
+        "mental-model",
+        "race-to-the-top",
+        "strategy"
+      ],
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "source": "Dario Amodei (Anthropic CEO)",
+      "sourceUrl": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260918-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-18",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "P(doom)：要被 pace 的到底是什麼？— Armin Ronacher 的反框架",
+      "summary": "Armin 同意 Dario 的觀察卻強烈反對其結論。所謂『為前沿定速』聽起來很負責，實際上把『誰能做什麼』的決定權集中到極少數美國公司（其實只有 Anthropic 與 OpenAI，連第三方評估者 METR 都與兩者關係密切）。他真正擔心的不是失控 AI，而是『這對身為人類的我們做了什麼』。",
+      "tags": [
+        "ai-safety",
+        "contrarian",
+        "power-concentration",
+        "mental-model"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/9/12/pdoom/",
+      "source": "Armin Ronacher",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/9/12/pdoom/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-18",
