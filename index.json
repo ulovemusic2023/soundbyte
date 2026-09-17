@@ -83125,6 +83125,86 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260918-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-18",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "browser-use/jev-ultrafast",
+      "summary": "browser-use 團隊新作，用 TypeSafe 的 Jev 做動態索引 action space 的瀏覽器 agent，一次 LLM round trip 同時決定 operation + target，號稱 Google Flights 蘇黎世→倫敦 7.1 秒完成。",
+      "tags": [
+        "browser-agent",
+        "ai-agent",
+        "automation"
+      ],
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/browser-use/jev-ultrafast",
+      "stars": 1748,
+      "createdDate": "2026-09-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260918-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-18",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Colafornia/short-video-generator-AI",
+      "summary": "把 YouTube 長影片自動剪成短影音的開源工具：highlight 偵測、字幕、翻譯、配音一條龍，Python，可自架。",
+      "tags": [
+        "creator-tool",
+        "video",
+        "voiceover"
+      ],
+      "url": "https://github.com/Colafornia/short-video-generator-AI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Colafornia/short-video-generator-AI",
+      "stars": 744,
+      "createdDate": "2026-09-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20260918-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-18",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "agentverse-os/AgentVerse-OS",
+      "summary": "給開發者跟 AI agents 用的個人雲 OS：Ubuntu 一鍵安裝，瀏覽器裡開視窗化桌面、隔離 workspace（內建 VS Code / Claude Code / Codex）、944 個自架 app，全程只走 Tailscale。Rust core + Svelte UI。",
+      "tags": [
+        "ai-agent",
+        "self-hosted",
+        "dev-environment"
+      ],
+      "url": "https://github.com/agentverse-os/AgentVerse-OS",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/agentverse-os/AgentVerse-OS",
+      "stars": 739,
+      "createdDate": "2026-09-12",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260918-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-18",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "leemysw/yovoice",
+      "summary": "macOS / Windows 的本地語音生成：local TTS + voice cloning + 情緒控制，完全不用雲端 API、沒有 per-character 費用。TypeScript。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "audio"
+      ],
+      "url": "https://github.com/leemysw/yovoice",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/leemysw/yovoice",
+      "stars": 31,
+      "createdDate": "2026-09-15",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-09-18",
