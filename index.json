@@ -83469,8 +83469,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260919-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-19",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "How To Write With An LLM — 把 LLM 當校對，不當代筆",
+      "summary": "Thomas Ptacek 的原則一：「LLM 建議的任何一個詞都不准用。」他把這條規則當成「智識上的個人防護裝備」——LLM 可以拿來查證事實、抓錯字、當同義詞辭典，但一旦讓它決定遣詞用字，文字就會有那股 AI 味。紀律的價值不在效率，而在守住你自己的聲音。",
+      "tags": [
+        "writing",
+        "ai-augmentation",
+        "craft"
+      ],
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "source": "Thomas Ptacek (via Simon Willison)",
+      "sourceUrl": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-19",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "為什麼 LLM 訓練該算「合理使用」——latent space 是一種非複製品",
+      "summary": "Kevin Kelly 提出一個思考框架：訓練把人類的「表達」單向轉換成 latent space 這種近乎數學的抽象，過程不可逆、也不儲存原文複製品，因此更接近不受版權保護的「語法」。他更主張「Public Intelligence」——公共資助、公共問責的開放權重模型，把 latent space 當成網路之後的新公共領域(commons)。",
+      "tags": [
+        "mental-model",
+        "ai-copyright",
+        "commons"
+      ],
+      "url": "https://kk.org/thetechnium/arguments-in-favor-of-ai-fair-use/",
+      "source": "Kevin Kelly (kk.org The Technium)",
+      "sourceUrl": "https://kk.org/thetechnium/arguments-in-favor-of-ai-fair-use/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-09-19",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Salesforce 放棄把 UI 當護城河",
+      "summary": "Ben Thompson：\"Salesforce is abandoning UI as a moat, which is a very smart move because it's disappearing for everyone.\" AI agent 時代裡，介面正在對所有人失去護城河的意義——與其死守，不如主動走向 headless。",
+      "tags": [
+        "strategy",
+        "ai-agents",
+        "moat"
+      ],
+      "url": "https://stratechery.com/2026/salesforce-ai-force-agents-as-ui-the-race-to-headless/",
+      "source": "Ben Thompson (Stratechery)",
+      "sourceUrl": "https://stratechery.com/2026/salesforce-ai-force-agents-as-ui-the-race-to-headless/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-19",
-  "updatedAt": "2026-09-19T05:20:00+08:00"
+  "updatedAt": "2026-09-18T21:33:43.046131+00:00"
 }
