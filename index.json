@@ -83281,8 +83281,196 @@
       "price": null,
       "vram": "local-ready",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260919-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "An Empirical Study of Harness Design for Coding Agents",
+      "summary": "arXiv 研究（Fan et al.，176 組配置 × SWE-Bench Verified / Terminal-Bench 2.1）：harness 組件需對齊模型能力與 budget。Context management 在 context window 吃緊時才值錢，主要防 overflow 而非提升品質；planning 對弱模型是準確度支架、對強模型只剩省錢；預定義工具幫弱模型，強模型只用 bash 反而成本更低。結論：one-size-fits-all harness 會 underperform。",
+      "tags": [
+        "ai_agent",
+        "coding-agent",
+        "harness",
+        "harness-model-fit"
+      ],
+      "url": "https://arxiv.org/abs/2609.20804",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2609.20804",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ZCode（GLM coding agent）登入即靜默上傳整個 git 歷史",
+      "summary": "tokenstead.ai / ferstar：ZCode 登入後無條件把整個 workspace 打包上傳 Alibaba Cloud OSS，含完整 .git（占 payload 86.6%：commit 歷史、已刪檔、未推分支）、LFS cache、reflog。一案例 345MB workspace（42,411 檔）→ 313MB 加密封存。UI 的 Optimize Experience / Repo Snapshot Indexing 開關都擋不掉；AES-256-CTR + RSA-OAEP 但私鑰只在 Z.ai 雲端、使用者無法自解。本地刪除後仍重試 564 次。隱私政策未揭露。延續 Grok CLI 沉默外洩線。",
+      "tags": [
+        "ai_agent",
+        "ai coding",
+        "agent-cli-exfiltration",
+        "security"
+      ],
+      "url": "https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/",
+      "source": "tokenstead.ai",
+      "sourceUrl": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Bend 2 與「Vibe-Coding 陷阱」",
+      "summary": "Bend 2 是為 AI coding 時代設計的語言：人寫高階規格（laws）、AI 生實作、compiler 驗證正確性證明，並能跑在 GPU。但 Liam Powell 批評它正是 vibe-coding 陷阱的範例——在充分研究既有領域前就用 AI 蓋出龐大方案，等於沒意識到 formal verification 這個領域早已存在。Bend demo 用 58 行規則 + 442 行 AI 生成證明，作者用既有的 SPARK 以遠少行數達成同等保證（『all checks proved』）。核心痛點：LLM 從不建議先查既有解法。",
+      "tags": [
+        "new_languages",
+        "formal-verification",
+        "vibe-coding",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.liampwll.com/posts/bend_vibe_coding/",
+      "source": "Liam Powell (blog.liampwll.com)",
+      "sourceUrl": "https://blog.liampwll.com/posts/bend_vibe_coding/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Bonsai 2 27B：1.76-bit ternary 權重，近無損 9x 縮小",
+      "summary": "Prism ML 基於 Qwen3.8 27B 壓縮的多模態模型：ternary {-1,0,+1} 權重 + FP16 group-wise scaling = 1.76 有效 bit/權重，footprint 僅 5.9GB（約 -9x），保留 98.2% 綜合 benchmark，號稱『near-lossless』。RTX 5090 143 tok/s、M5 Max 46.8 tok/s、262K context、RTX4090 0.714 mWh/token（比 full-precision 8B 省 40% 能耗）。Apache 2.0，HF/GitHub 現可取，支援 CUDA/MLX。極端量化從『掉分妥協』變『部署解鎖』。",
+      "tags": [
+        "ai_models",
+        "quantization",
+        "ternary-weight-model",
+        "local-llm"
+      ],
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "source": "Prism ML",
+      "sourceUrl": "https://prismml.com/news/bonsai-2-27b",
+      "price": null,
+      "vram": "~5.9GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260919-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cactus Needle 3：8-29MB 自動化模型可比肩 DeepSeek V4 Flash",
+      "summary": "為資源受限裝置設計的 foundation model，用『Intelligence laddering』：開發者從 2~20 層自選，每層是完整 subnetwork、能力遞增；8MB（4 層）~29MB（20 層）、CQ2-bit 量化、29-121M params，架構用 Simple Attention Networks 而非 transformer。4 層（29M）fine-tune 後可追平 DeepSeek V4 Flash，號稱 mobile tool call 勝 10x 大的模型。Raspberry Pi 5 上 400-4k tok/s decode，全本地、支援手機/穿戴/microcontroller/WASM。",
+      "tags": [
+        "ai_models",
+        "on-device",
+        "small-model",
+        "intelligence-laddering"
+      ],
+      "url": "https://cactuscompute.com/needle",
+      "source": "Cactus Compute",
+      "sourceUrl": "https://cactuscompute.com/needle",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Infinite-Parameter LLMs：從即時資料生成並調適權重",
+      "summary": "arXiv（Hu et al.）：compact hypernetwork 把 live 互動資料轉成 base network 的 low-rank 調變，並對 generator 的 latent code 維持 Bayesian belief 線上更新——知識存進『動態生成的權重』而非 prompt 或 retrieval，等效無限參數空間但儲存 footprint 固定。主張比 in-context learning 更能跨 turn 保留脈絡、更好攤提 compute，並附上與 ICL/retrieval 對比的評估協定。",
+      "tags": [
+        "ai_models",
+        "hypernetwork",
+        "runtime-weight-generation",
+        "research"
+      ],
+      "url": "https://arxiv.org/abs/2609.18842",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2609.18842",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "How to Write with an LLM — Thomas Ptacek",
+      "summary": "Ptacek 主張 LLM 該當 copyeditor 而非 ghostwriter。兩條鐵律：(1) 不准用任何 LLM 建議的字（frontier model 擅長寫好聽卻像雜誌標題的假掰句）；(2) 拒絕模型的無條件讚美（它會誇你初稿，阻止真正重寫）。流程：自己寫→用模型只做機械性挑錯 pass（被動語態/重複/贅字/段落錯位）→人工重寫被標段落→再用另一模型無脈絡比對前後版。讀者會本能認出 LLM 生成文是『output』。",
+      "tags": [
+        "ai_agent",
+        "ai-assisted-writing",
+        "workflow"
+      ],
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "source": "Thomas Ptacek (sockpuppet.org)",
+      "sourceUrl": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-sw-008",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Heap overflow + SSO 設定錯誤攻陷 OpenAI 內部 repo",
+      "summary": "Hacktron 揭露：串接 libheif（Discourse HEIC/HEIF 解碼用）的 heap buffer overflow（Debian 12/13 未及時 backport、上游沒標為安全問題也無 CVE）與 community.openai.com『Sign in with OpenAI』SSO 設定錯誤——被攻陷的論壇帳號可升級成完整 ChatGPT/Codex 存取。Claude Opus 5 釋出後數小時內做出可靠 RCE，7/25 確認拿到員工 Codex 帳號（連 OpenAI GitHub org），並在內部 monorepo 開了 PR #1186742 即停手。OpenAI 14 小時內修好、$6,500 bounty。",
+      "tags": [
+        "security",
+        "sso",
+        "rce",
+        "supply-chain"
+      ],
+      "url": "https://www.hacktron.ai/blog/hacking-openai",
+      "source": "Hacktron",
+      "sourceUrl": "https://www.hacktron.ai/blog/hacking-openai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260919-sw-009",
+      "radar": "software-dev",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "The scourge of x86 emulation（FEX-Emu）",
+      "summary": "FEX-Emu 談 x86-on-ARM 的根本難題：x86 用 Total Store Ordering（強一致），ARM 是 weak ordering。FEX 把 x86 load/store 轉成 ARM acquire/release，最高 -50% 效能；未對齊存取要 kernel 介入；split-lock atomics ARM 無硬體對應；write-combine 記憶體頻寬最慘差 816x（部分遊戲近乎不能玩）。解法零碎：ARM FEAT_LRCPC、Apple M1 硬體 TSO、Qualcomm Oryon-3 unaligned atomic、Valve Steam Frame kernel patch，FEX 另提 128-bit CASP 新指令做可重試 split-lock。完整方案仍難產。",
+      "tags": [
+        "architecture",
+        "emulation",
+        "arm",
+        "systems"
+      ],
+      "url": "https://fex-emu.com/Scourge-of-emulation/",
+      "source": "FEX-Emu",
+      "sourceUrl": "https://fex-emu.com/Scourge-of-emulation/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-19T05:14:27.454684+08:00",
-  "updatedAt": "2026-09-19T05:14:27.454684+08:00"
+  "lastUpdated": "2026-09-19",
+  "updatedAt": "2026-09-19T05:20:00+08:00"
 }
