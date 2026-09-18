@@ -83205,8 +83205,84 @@
       "stars": 31,
       "createdDate": "2026-09-15",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260919-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "m-a-p/MERT-v2-FullSong",
+      "summary": "MERT 系列音樂理解基礎模型 v2 的 FullSong 變體，支援整首歌長度的 self-supervised 特徵抽取，適合 tagging、embedding、MIR 下游任務。跟同批的 YuE2、SheetSage2 拼成完整音樂 AI stack。",
+      "tags": [
+        "music_understanding",
+        "audio_music_ai"
+      ],
+      "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/m-a-p/MERT-v2-FullSong",
+      "price": null,
+      "vram": "local-ready",
+      "license": "CC-BY-NC-4.0"
+    },
+    {
+      "id": "20260919-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "m-a-p/SheetSage2",
+      "summary": "m-a-p 的音樂轉譜模型，把音檔轉成 symbolic / lead-sheet。對 cover、重編曲、和弦分析實用，09-09 同批釋出，VRAM 需求低可本地跑。",
+      "tags": [
+        "music_understanding",
+        "audio_music_ai"
+      ],
+      "url": "https://huggingface.co/m-a-p/SheetSage2",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/m-a-p/SheetSage2",
+      "price": null,
+      "vram": "local-ready",
+      "license": "CC-BY-NC-4.0"
+    },
+    {
+      "id": "20260919-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "microsoft/agent-lightning",
+      "summary": "微軟開源 agent RL 訓練框架，用 reinforcement learning 優化既有 agent 幾乎不改 code。今天 GitHub trending，★18.3k。",
+      "tags": [
+        "llm_training",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/microsoft/agent-lightning",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/microsoft/agent-lightning",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20260919-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-09-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "fastino-ai/GLiNER2",
+      "summary": "GLiNER 家族續作：schema-based 統一資訊抽取（NER、分類、結構化擷取）。輕巧可 CPU/小 GPU 本地跑，適合 RAG 前處理。Apache-2.0。",
+      "tags": [
+        "rag_knowledge",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/fastino-ai/GLiNER2",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/fastino-ai/GLiNER2",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-09-18",
-  "updatedAt": "2026-09-18T05:10:00+08:00"
+  "lastUpdated": "2026-09-19T05:14:27.454684+08:00",
+  "updatedAt": "2026-09-19T05:14:27.454684+08:00"
 }
