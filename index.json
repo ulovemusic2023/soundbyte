@@ -83529,8 +83529,157 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260919-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-19",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "mcncarl/jianying-headless",
+      "summary": "剪映（Jianying/CapCut）headless 草稿工具：可用原生剪映 draft 格式做隔離的編輯／匯出，並附獨立 Agent Skill。給用 AI agent 批次生成短影音的創作者。註：目前是 private source preview（原始碼未完全開放）。",
+      "tags": [
+        "video",
+        "agent-skill",
+        "creator",
+        "jianying"
+      ],
+      "url": "https://github.com/mcncarl/jianying-headless",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-05+stars:>50&type=repositories",
+      "stars": 981,
+      "createdDate": "2026-09-15",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260919-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-19",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "youngyangyang04/llm-master",
+      "summary": "LLM 全棧學習路線與中文教程：涵蓋 Prompt Engineering、RAG、AI Agent、MCP、微調、模型部署、Transformer、AI 編程與大廠面試。作者是《代碼隨想錄》團隊，內容口碑穩，適合系統性補齊 LLM 工程基礎。",
+      "tags": [
+        "learning",
+        "llm",
+        "rag",
+        "agent",
+        "mcp"
+      ],
+      "url": "https://github.com/youngyangyang04/llm-master",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-05+stars:>50&type=repositories",
+      "stars": 763,
+      "createdDate": "2026-09-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260919-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-19",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "shinthink/blitzstrike",
+      "summary": "通用 MCP 滲透測試工具帶：結構化方法論（偵察與攻擊面測繪、source-to-sink 分析、即時驗證），57 條提權鏈、130 個工具目錄。一台 MCP server 給任何 agent 用。授權測試／CTF 場景可用。",
+      "tags": [
+        "mcp",
+        "security",
+        "pentest",
+        "ctf"
+      ],
+      "url": "https://github.com/shinthink/blitzstrike",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-05+topic:mcp&type=repositories",
+      "stars": 636,
+      "createdDate": "2026-09-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260919-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-19",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "inikolax/remiqora",
+      "summary": "本地 AI 音樂工作室：把 ACE-Step 1.5 與 YuE2-3B 兩套生成引擎統一在一個 Vue 介面，附內建多軌 DAW、Demucs stem 分離、MIDI 轉譜（MuScriptor）、LoRA 微調。共用 SQLite 曲庫，生成的曲子可直接拆軌混音。GPU 本地跑，仍在開發中。",
+      "tags": [
+        "music-generation",
+        "daw",
+        "local-ai",
+        "midi",
+        "stem-separation"
+      ],
+      "url": "https://github.com/inikolax/remiqora",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-05+topic:music-generation&type=repositories",
+      "stars": 88,
+      "createdDate": "2026-09-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260919-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-19",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "NanmiCoder/creator-pipeline",
+      "summary": "本地語音克隆 + SRT 驅動的網頁簡報：兩個可安裝的 Agent Skill，走 script → voice → motion 流程。給用 agent 把腳本自動變成有旁白的內容的創作者。星數還低但方向對到 Gary 的創作者工具。",
+      "tags": [
+        "voice-cloning",
+        "agent-skill",
+        "creator",
+        "tts"
+      ],
+      "url": "https://github.com/NanmiCoder/creator-pipeline",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-05+topic:voice-cloning&type=repositories",
+      "stars": 29,
+      "createdDate": "2026-09-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260919-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-19",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "nirbhay41120003/EchoMind",
+      "summary": "本地優先的語音記憶助理：即時收音轉錄，再對一個私有 RAG chatbot 提問，答案只 grounded 在你實際說過的話。完全不需雲端。適合當個人語音備忘 + 可查詢的記憶層。",
+      "tags": [
+        "local-llm",
+        "voice",
+        "rag",
+        "privacy"
+      ],
+      "url": "https://github.com/nirbhay41120003/EchoMind",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-05+topic:local-llm&type=repositories",
+      "stars": 30,
+      "createdDate": "2026-09-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260919-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-19",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "MobAI-App/simslim",
+      "summary": "在一台 Mac 上跑更多 iOS 模擬器：關掉模擬器用不到的背景 daemon 來省資源。給要同時開多台 simulator 做行動端測試的開發者。",
+      "tags": [
+        "dev-tool",
+        "ios",
+        "macos",
+        "simulator"
+      ],
+      "url": "https://github.com/MobAI-App/simslim",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 1957,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-09-19",
-  "updatedAt": "2026-09-18T21:33:43.046131+00:00"
+  "updatedAt": "2026-09-18T21:45:00Z"
 }
