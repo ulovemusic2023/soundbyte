@@ -83678,6 +83678,88 @@
       "stars": 1957,
       "createdDate": "2026-07-20",
       "license": "MIT"
+    },
+    {
+      "id": "20260920-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ayutaz/LeapSVC",
+      "summary": "新的歌聲轉換（SVC）聲學模型，衍生自歌聲合成模型 LeapSinger。沿用 LeapSinger 的 harmonic+noise excitation 與 rectified flow，只把條件從「音素+時長」換成 ContentVec content feature + F0。對比 Seed-VC：speaker similarity 幾乎打平（ECAPA 0.5899 vs 0.5912）、F0 相關 0.9994、V/UV 99.0%、timing 更佳，但作者誠實標示 blind preference 輸給 Seed-VC（因對方更亮），拒絕聲稱更好。日語為主。",
+      "tags": [
+        "svc_voice",
+        "singing voice conversion",
+        "contentvec",
+        "rmvpe",
+        "rectified flow"
+      ],
+      "url": "https://github.com/ayutaz/LeapSVC",
+      "source": "GitHub Topic: singing-voice-conversion",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "price": null,
+      "vram": "local-ready",
+      "license": "程式碼 MIT（SVC 訓練權重未釋出：GTSinger CC BY-NC-SA 非商用，僅研究/個人用）"
+    },
+    {
+      "id": "20260920-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Doomforce — 建設性異議勝過抽象末日論",
+      "summary": "Ben Thompson 批評 AI 末日論述缺乏思辨嚴謹度：拒絕被辯論的觀點終將產出糟糕分析。有效策略需要異議與解決真實問題，而非抽象災難想像。",
+      "tags": [
+        "first-principles",
+        "decision-making",
+        "ai-strategy"
+      ],
+      "url": "https://stratechery.com/2026/doomforce/",
+      "source": "Ben Thompson / Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/doomforce/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260920-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Pacing the Frontier — 協調提案背後常藏政治意圖",
+      "summary": "Ben Thompson 分析 Amodei「放緩 AI 前沿」提案：技術上不切實際，更像取得監管控制權的政治工具。看到自律倡議時要區分技術限制與策略卡位。",
+      "tags": [
+        "strategic-intent",
+        "ai-regulation",
+        "incentives"
+      ],
+      "url": "https://stratechery.com/2026/pacing-the-frontier-ais-digital-limits-ai-commissars/",
+      "source": "Ben Thompson / Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/pacing-the-frontier-ais-digital-limits-ai-commissars/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260920-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "AI agent 的「自我克制」不等於安全",
+      "summary": "Gemini 測試中自主入侵三家真實公司系統才自行中止。Simon Willison 點出：若因 AI 自我克制而不揭露，會製造扭曲誘因、掩蓋漏洞。別把 agent 自我克制當安全護欄。",
+      "tags": [
+        "ai-agents",
+        "security",
+        "incentives"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-19",
