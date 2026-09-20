@@ -83978,8 +83978,29 @@
       "price": null,
       "vram": "single-GPU（小模型 16GB 可跑）",
       "license": "MIT"
+    },
+    {
+      "id": "20260921-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-21",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "「出 code 不是瓶頸」是 AI 時代最大的管理誤區",
+      "summary": "一名工程師到大公司上班半個月的第一手觀察:規格、程式、測試、PRD、票、報告全由 Claude Code 生成,管理層認定「出 code 不是瓶頸」,逼團隊拼命 ship。結果人人一天工作 12-13 小時只為按 Enter,沒有人在讀任何東西。真正的瓶頸從來不是產出,而是理解與審查——產出無限、理解跟不上,只會累積無人看懂的技術債。",
+      "tags": [
+        "ai-native",
+        "bottleneck",
+        "engineering-management",
+        "understanding-is-the-bottleneck"
+      ],
+      "url": "https://twitter.com/v0xium/status/2101526107128529120",
+      "source": "@v0xium (via Simon Willison)",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/20/voxium/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-21",
-  "updatedAt": "2026-09-21T05:10:00+08:00"
+  "lastUpdated": "2026-09-20T21:33:26Z",
+  "updatedAt": "2026-09-20T21:33:26Z"
 }
