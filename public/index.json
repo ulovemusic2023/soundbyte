@@ -83760,8 +83760,226 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260920-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "robbietilton/Compositor",
+      "summary": "Mac 原生的 Photoshop 替代品，主打圖層合成與影像編輯，開源、上週爆紅。對做視覺/封面/社群素材的創作者是值得盯的免費工具。",
+      "tags": [
+        "creator-tool",
+        "image-editing",
+        "mac"
+      ],
+      "url": "https://github.com/robbietilton/Compositor",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 2271,
+      "createdDate": "2026-09-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260920-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "NandhaKishorM/laya",
+      "summary": "多語言、非自回歸的「決策引擎」：對文字或 JSON 丟出 choice/score/boolean 型問題，一次 forward pass（約 33ms）給答案，用 ModernBERT/mmBERT + RL 訓練。等於本地超快分類/評分原語，比呼叫 LLM 便宜太多。",
+      "tags": [
+        "local-ai",
+        "classification",
+        "inference"
+      ],
+      "url": "https://github.com/NandhaKishorM/laya",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1149,
+      "createdDate": "2026-09-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260920-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "worth-trying",
+      "title": "op7418/guizang-product-video-skill",
+      "summary": "歸藏做的 product video skill：複用真實產品組件與設計語言，用 code 做軟體更新宣傳片，內含分鏡文案、原創配樂、動作音效與影片渲染，支援 Claude Code / Codex。做創作者工具 + 音樂 + 影片的交集，很對 Gary 胃口。",
+      "tags": [
+        "creator-tool",
+        "video",
+        "music",
+        "claude-code"
+      ],
+      "url": "https://github.com/op7418/guizang-product-video-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 147,
+      "createdDate": "2026-09-18",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20260920-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "worth-trying",
+      "title": "coldteadotai/abide",
+      "summary": "讓 coding agent 乖乖遵守你專案的所有規則——把規範變成 agent 執行時的硬約束，減少「vibe coding 亂改」的失控。輕量、剛上線。",
+      "tags": [
+        "ai-coding",
+        "agent-rules",
+        "claude-code"
+      ],
+      "url": "https://github.com/coldteadotai/abide",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 148,
+      "createdDate": "2026-09-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260920-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "worth-trying",
+      "title": "makifbaysal/tasktrooper",
+      "summary": "Local-first 的 agent 平台：看板 + 角色 agents + Claude Code 執行，全部跑在自己的 Mac 上。適合想在本機組多 agent 工作流又不想上雲的人。",
+      "tags": [
+        "ai-coding",
+        "multi-agent",
+        "local",
+        "mac"
+      ],
+      "url": "https://github.com/makifbaysal/tasktrooper",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 65,
+      "createdDate": "2026-09-14",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260920-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "alphaXiv/OpenResearch",
+      "summary": "把你的 coding agent 變成 research agent——這週 Trending 竄升。對常用 AI coding 又要做技術調研的人是個現成框架。",
+      "tags": [
+        "ai-coding",
+        "research-agent"
+      ],
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 5377,
+      "createdDate": "2026-06-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20260920-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "yyjeqhc/webcodex",
+      "summary": "給雲端 AI agents 一個跑在你自己機器上的真實開發環境。想把 agent 的執行落地在自有硬體、又要完整 dev env 的可以看。",
+      "tags": [
+        "ai-coding",
+        "dev-environment",
+        "self-hosted"
+      ],
+      "url": "https://github.com/yyjeqhc/webcodex",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1406,
+      "createdDate": "2026-05-28",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260920-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "Neroued/ninfer",
+      "summary": "針對特定 model checkpoint 與 GPU 做的高效能單卡推論引擎，這週 Rust Trending。本地跑模型、想壓榨單 GPU 效能可留意。",
+      "tags": [
+        "local-ai",
+        "inference",
+        "gpu"
+      ],
+      "url": "https://github.com/Neroued/ninfer",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 2130,
+      "createdDate": "2026-06-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260920-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "raine/workmux",
+      "summary": "git worktrees + tmux 視窗，零摩擦地平行開發。正好搭配「一次跑多個 coding agent」的工作流，管理多分支超順。",
+      "tags": [
+        "dev-tool",
+        "cli",
+        "parallel-dev"
+      ],
+      "url": "https://github.com/raine/workmux",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 2658,
+      "createdDate": "2025-11-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20260920-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-09-20",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "kunchenguid/firstmate",
+      "summary": "「跟一個 agent 講話，用一整組 crew 出貨」——多 agent 協作出貨框架，這週 fork 數爆量（2k+）。多 agent 編排有興趣可追。",
+      "tags": [
+        "ai-coding",
+        "multi-agent"
+      ],
+      "url": "https://github.com/kunchenguid/firstmate",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 6704,
+      "createdDate": "2026-06-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20260921-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FareedKhan-dev/train-llm-from-scratch",
+      "summary": "純 PyTorch 手刻整條 LLM pipeline：raw text → tokenizer → Transformer → 預訓練 → SFT → Reward Model → PPO/DPO/GRPO → 對齊與評估，完全不依賴 trl / peft / transformers。從 13M 到 billion 級都能用單張 GPU 跑，適合想真正搞懂 RLHF/GRPO 內部機制的人。今日 GitHub Python trending。",
+      "tags": [
+        "llm_training"
+      ],
+      "url": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
+      "price": null,
+      "vram": "single-GPU（小模型 16GB 可跑）",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-09-19",
-  "updatedAt": "2026-09-18T21:45:00Z"
+  "lastUpdated": "2026-09-21",
+  "updatedAt": "2026-09-21T05:10:00+08:00"
 }
