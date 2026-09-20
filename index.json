@@ -83999,6 +83999,142 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260921-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-21",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "mizorewww/laya-mlx",
+      "summary": "Native MLX runtime for Laya typed decision models — 7–14ms short decisions on M3 Max. No text generation, PyTorch, or cloud API.",
+      "tags": [
+        "local-llm",
+        "mlx",
+        "typed-decisions"
+      ],
+      "url": "https://github.com/mizorewww/laya-mlx",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1501,
+      "createdDate": "2026-09-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260921-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-21",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "TianyuCodings/NanoJev",
+      "summary": "A nano replica of Jev: parallel decisions, dynamic candidates, and an end-to-end training pipeline.",
+      "tags": [
+        "typed-decisions",
+        "training"
+      ],
+      "url": "https://github.com/TianyuCodings/NanoJev",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1375,
+      "createdDate": "2026-09-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20260921-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-21",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "bespokelabsai/nimble",
+      "summary": "Local typed decisions, contrastive data curation, and model evaluation.",
+      "tags": [
+        "typed-decisions",
+        "data-curation"
+      ],
+      "url": "https://github.com/bespokelabsai/nimble",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1044,
+      "createdDate": "2026-09-18",
+      "license": "none"
+    },
+    {
+      "id": "20260921-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-21",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "jaredpalmer/kev",
+      "summary": "Tiny Jev-like family of decision models on Qwen3 you can train and run yourself.",
+      "tags": [
+        "typed-decisions",
+        "qwen3"
+      ],
+      "url": "https://github.com/jaredpalmer/kev",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 962,
+      "createdDate": "2026-09-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260921-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-21",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "js713-lab/sonic-match-mcp",
+      "summary": "MCP that watches video and returns license-safe BGM matches, hook windows, ffmpeg ducking specs.",
+      "tags": [
+        "mcp",
+        "audio",
+        "bgm"
+      ],
+      "url": "https://github.com/js713-lab/sonic-match-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 69,
+      "createdDate": "2026-09-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20260921-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-21",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "Oldcircle/geo-sleuth",
+      "summary": "Agent skill that finds where a photo was taken (OSM, elevation, satellite, street view) and shows its work.",
+      "tags": [
+        "agent-skill",
+        "geolocation"
+      ],
+      "url": "https://github.com/Oldcircle/geo-sleuth",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 195,
+      "createdDate": "2026-09-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260921-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-21",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "INSANE0777/Awwards-mcp",
+      "summary": "MCP giving coding agents design inspiration from award-winning sites. Mobbin alternative, no API key.",
+      "tags": [
+        "mcp",
+        "design",
+        "frontend"
+      ],
+      "url": "https://github.com/INSANE0777/Awwards-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 41,
+      "createdDate": "2026-09-18",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-09-20T21:33:26Z",
