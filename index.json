@@ -84379,8 +84379,118 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260923-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "netease-youdao/Confucius4-R2T2",
+      "summary": "NetEase 有道 streaming ASR，2B（基於 Qwen3-ASR-1.7B fine-tune）。主打 append-only「Real Real-Time」輸出，已吐出的字不回改，延遲 200–600ms，中英為主。適合即時字幕/直播轉錄。",
+      "tags": [
+        "tts_speech",
+        "asr"
+      ],
+      "url": "https://huggingface.co/netease-youdao/Confucius4-R2T2",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "2B, BF16",
+      "license": "other"
+    },
+    {
+      "id": "20260923-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "prism-ml/Ternary-Bonsai-2-27B",
+      "summary": "Qwen3.8-27B 的 ternary 量化版（~1.72 bits/weight）。PTQ1_0 5.95GB / PQ2_0 7.21GB，保留 98.2% 能力、262K context。27B 級推理可進 16GB 卡與筆電。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "5.95-7.21GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260923-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+      "summary": "小米 MiMo V2.6 RL 系列（09-21 釋出）蒸餾進 9B Qwen backbone，走 reasoning + RL。9B 量化後可進 16GB。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "9B 量化 ~5-6GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20260923-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "volotat/mini-AGI",
+      "summary": "從零訓練的 continual learning 模型，在 8GB VRAM 筆電上用 batch-1 串流資料邊看邊學。HN 274 分。示範「小硬體 + 持續學習」另一條路。",
+      "tags": [
+        "llm_training"
+      ],
+      "url": "https://github.com/volotat/mini-AGI",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "price": null,
+      "vram": "8GB 可訓練",
+      "license": "MIT"
+    },
+    {
+      "id": "20260923-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwen/Qwen-Image-2.1",
+      "summary": "Qwen 影像生成模型 2.1，text-to-image，HF 熱榜。社群已有 GGUF/ComfyUI 量化版，量化後可在 16GB 跑。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "量化可進 16GB",
+      "license": "other"
+    },
+    {
+      "id": "20260923-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "superdesigndev/treg",
+      "summary": "「OpenRouter for agent tools」，把各家 agent 工具呼叫統一成一個 router 介面。GitHub 今日趨勢。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/superdesigndev/treg",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "N/A",
+      "license": "NOASSERTION"
     }
   ],
-  "lastUpdated": "2026-09-23",
-  "updatedAt": "2026-09-23T08:55:00+08:00"
+  "lastUpdated": "2026-09-23T08:51:00+08:00",
+  "updatedAt": "2026-09-23T08:51:00+08:00"
 }
