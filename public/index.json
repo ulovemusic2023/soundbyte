@@ -84489,8 +84489,148 @@
       "price": null,
       "vram": "N/A",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260923-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-23",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "zai-org/ZCode",
+      "summary": "Z.ai（智譜）官方 coding agent harness，Claude Code/Codex 同路線但綁自家 GLM 模型，三天衝 6.3k★，可自訂 skill 與 subagent。",
+      "tags": [
+        "coding-agent",
+        "agent-harness",
+        "ai-coding"
+      ],
+      "url": "https://github.com/zai-org/ZCode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-09+stars:>50",
+      "stars": 6292,
+      "createdDate": "2026-09-20",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260923-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-23",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "CopilotKit/openmuse",
+      "summary": "CopilotKit（AG-UI 協定作者）的 personal agent，內建 browser+terminal+檔案系統，任務可背景長跑；agentic UI 好參考。",
+      "tags": [
+        "ai-agent",
+        "agent-ui",
+        "automation"
+      ],
+      "url": "https://github.com/CopilotKit/openmuse",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-09+stars:>50",
+      "stars": 873,
+      "createdDate": "2026-09-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20260923-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-23",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "Frankie-Xu/threadport",
+      "summary": "給 coding agent 用的可攜、可驗證工作狀態：把 session 進度/決策打包成可轉移可稽核格式，多 agent 接力不掉 context。",
+      "tags": [
+        "coding-agent",
+        "context",
+        "workflow"
+      ],
+      "url": "https://github.com/Frankie-Xu/threadport",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 81,
+      "createdDate": "2026-09-12",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260923-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-23",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "NoizAI/YuE2-Turbo",
+      "summary": "YuE2 音樂生成模型加速推論版：同模型同 recipe，每首快 1.68×、同 GPU 產量 3.31×。追開源生歌線的 throughput 解方。",
+      "tags": [
+        "music-generation",
+        "audio",
+        "local-ai"
+      ],
+      "url": "https://github.com/NoizAI/YuE2-Turbo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "stars": 48,
+      "createdDate": "2026-09-21",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260923-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-23",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "itayinbarr/little-coder",
+      "summary": "專為小模型優化的 coding harness，讓 7B~30B 級本地模型也能跑 agentic coding。本機/低成本 coding agent 實驗場。",
+      "tags": [
+        "coding-agent",
+        "local-llm",
+        "small-language-model"
+      ],
+      "url": "https://github.com/itayinbarr/little-coder",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/local-llm",
+      "stars": 2612,
+      "createdDate": "2026-04-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260923-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-23",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "harry0703/MangoDisk",
+      "summary": "安全優先的磁碟清理/空間分析工具（macOS+Windows）：重複檔清理、App 反安裝、開機項管理。作者是 MoneyPrinterTurbo 那位。",
+      "tags": [
+        "productivity",
+        "developer-tool",
+        "cli"
+      ],
+      "url": "https://github.com/harry0703/MangoDisk",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 3047,
+      "createdDate": "2026-08-01",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20260923-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-23",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "aru-labs/lossless-memory",
+      "summary": "Show HN(65pts)。給 personal AI 的長期記憶：拒絕 summarize、逐行保留、每筆加時間戳。反主流壓縮式記憶路線。",
+      "tags": [
+        "ai-memory",
+        "rag",
+        "personal-ai"
+      ],
+      "url": "https://github.com/aru-labs/lossless-memory",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49786419",
+      "stars": 102,
+      "createdDate": "2026-09-04",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-09-23T08:51:00+08:00",
-  "updatedAt": "2026-09-23T08:51:00+08:00"
+  "lastUpdated": "2026-09-23",
+  "updatedAt": "2026-09-23T01:03:53.407015Z"
 }
