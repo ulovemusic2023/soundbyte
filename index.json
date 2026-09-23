@@ -84135,8 +84135,252 @@
       "stars": 41,
       "createdDate": "2026-09-18",
       "license": "MIT"
+    },
+    {
+      "id": "20260923-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Jev 開啟新 LLM 形狀：System One / Decision Models 生態兩天爆發",
+      "summary": "TypeSafe AI 的 Jev 是一種新品類模型——輸入文字但輸出對應類別/是非/評分的 float + confidence，而非文字。Simon Willison 認同 Maggie Appleton 稱其為『decision models』。上線兩天內 HN 生態炸開：llm-typesafe plugin、JevBench、jevals(取代 LLM judge)、jev-leftpad、Kev(建在 Qwen3.5 上)，Arcturus 分析 OpenAI 有本錢 fast-follow。挑戰 LLM-as-judge 與 function-calling。",
+      "tags": [
+        "paradigm-shift",
+        "decision-models",
+        "system-one",
+        "llm"
+      ],
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/21/jev/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "模型價格戰同週開打：Claude Opus 5.5 / GPT-6 Sol+Luna / Grok 4.7 / MiMo v2.6",
+      "summary": "一週內四大陣營連發：Grok 4.7、Xiaomi MiMo v2.6 Flash/Pro，接著 Anthropic 釋出 Claude Opus 5.5、約一小時後 OpenAI 推 GPT-6 Sol 與 Luna(單/雙軌命名)。Simon Willison 定調為新一輪 price war，強調要花時間才能讀出各家真實定位。frontier 與便宜小模型同步刷新，定價成主戰場。",
+      "tags": [
+        "ai-models",
+        "model-release",
+        "price-war"
+      ],
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 提出 ADLC(Agent Development Lifecycle) 取代傳統 SDLC",
+      "summary": "Cloudflare 把 AI 驅動工程正式化成一套生命週期，針對傳統 SDLC 在 testing/deployment/maintenance 的瓶頸。核心四塊：automated software factories、dynamic orchestration、進階 observability、autonomous agent 安全模型。把散見的『軟體工廠』pattern 收斂成完整敘事。",
+      "tags": [
+        "paradigm-shift",
+        "agent",
+        "sdlc",
+        "software-factory"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/cloudflare-adlc-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/cloudflare-adlc-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google 開源 AX：Kubernetes 式的 autonomous agent orchestrator",
+      "summary": "AX 跑在 Agent Substrate runtime 上，把 agent 當 stateful actor，提供 resource-efficient 的 task suspend/resume(idle 期降延遲省資源)，control plane 採 Kubernetes 式 primitives 管理 agent 任務與資源。agent orchestration 正式走向 K8s 化。",
+      "tags": [
+        "ai-agent",
+        "orchestration",
+        "kubernetes",
+        "open-source"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/google-ax-orchestrator/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/google-ax-orchestrator/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Python Workers 正式 GA",
+      "summary": "Cloudflare Workers 的 Python 支援脫離 beta 正式 GA，把 Python 帶進 edge runtime / serverless 生態。對偏好 Python 的後端與 AI 工作負載降低在邊緣部署的門檻。",
+      "tags": [
+        "edge-runtime",
+        "serverless",
+        "python"
+      ],
+      "url": "https://blog.cloudflare.com/python-workers-ga/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/python-workers-ga/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Out-of-Order HTML Streaming 從框架下沉進瀏覽器(Chrome 151)",
+      "summary": "由 React/Astro 等前端框架推廣的『先看骨架、資料到了再補洞』體驗開始瀏覽器原生化：data 到達時直接 patch placeholder，開發者可用宣告式 HTML 或對應 JS API。Chrome 151 起可用，框架能力回流平台。",
+      "tags": [
+        "frontend",
+        "streaming",
+        "browser"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/native-deferred-html-streaming/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/native-deferred-html-streaming/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Uber 用 fixed-size subcluster 重設計 M3DB sharding",
+      "summary": "Uber 重做 M3DB 的 shard placement，用固定大小 subcluster 限制節點故障/維護/擴縮的影響半徑：bound shard 依賴、保留 replica 隔離，並以 greedy 演算法選 shard 遷移，免掉獨立 rebalancing pass 與不必要的資料搬移。分散式儲存的 blast-radius 控制實作。",
+      "tags": [
+        "distributed-systems",
+        "sharding",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/uber-m3db-subcluster-sharding/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/uber-m3db-subcluster-sharding/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-008",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Linear：AI coding 讓 CI 變瓶頸，於是重做 CI",
+      "summary": "Linear 分享 AI 輔助開發把產碼速度拉高後，CI 反而成為新瓶頸，於是重構 CI pipeline 以跟上 agent 產出的節奏。是『產碼成本歸零→瓶頸上移到 review/verify/CI』趨勢的具體工程案例。",
+      "tags": [
+        "ci-cd",
+        "ai-coding",
+        "devops"
+      ],
+      "url": "https://linear.app/now/ci-bottleneck-reworked",
+      "source": "Linear",
+      "sourceUrl": "https://linear.app/now/ci-bottleneck-reworked",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-009",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Drop：支援 gVisor 的 rootless Linux sandbox",
+      "summary": "Show HN 專案 Drop，主打 rootless 執行且可用 gVisor 做核心隔離的 Linux sandbox。正對上『跑 agent 需要最小攻擊面、ephemeral 隔離環境』的需求，是 agent-per-VM/sandbox 路線的輕量選項。",
+      "tags": [
+        "sandbox",
+        "gvisor",
+        "agent-isolation",
+        "security"
+      ],
+      "url": "https://droprun.sh/",
+      "source": "Show HN",
+      "sourceUrl": "https://droprun.sh/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-010",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "mini-AGI：8GB VRAM 從零訓練的 continual learning 模型",
+      "summary": "byte-level continual learning 模型，自組架構、單張 8GB VRAM GPU 從零訓練；權重以檔案存磁碟、按需 page 進顯卡，參數上限由可用磁碟而非 VRAM 決定，缺容量就長新 capacity、沒人用就 prune。目前 toy-level，但示範單一資料流下不 catastrophic forgetting 在平價硬體可行。",
+      "tags": [
+        "continual-learning",
+        "on-device",
+        "ai-models"
+      ],
+      "url": "https://github.com/volotat/mini-AGI/",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/volotat/mini-AGI/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-011",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Java News Roundup：JDK 27 GA、A2A Jakarta 1.0、Netflix ja",
+      "summary": "本週 Java 動態：JDK 27 與 LibericaJDK 27 GA、Open J Proxy 1.0、A2A Jakarta 1.0 發布；Azul Payara、JHipster、Ktor、BoxLang 點版本；Netflix 推 ja(現代化 JMS CLI 開發體驗)。",
+      "tags": [
+        "java",
+        "jdk",
+        "new-languages"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/java-news-roundup-sep14-2026/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/java-news-roundup-sep14-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260923-sw-012",
+      "radar": "software-dev",
+      "date": "2026-09-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Changesets v3：peer 依賴改 patch bump、純 ESM、安裝縮 88%",
+      "summary": "JS monorepo 版本管理工具 Changesets 3.0：更精簡的安裝(縮 88%)、重寫 CLI、改動 peer dependency 管理(改以 patch bump)解長年抱怨，改為只出 ESM。升級需調整設定。",
+      "tags": [
+        "monorepo",
+        "javascript",
+        "tooling"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/changesets-v3-release/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/changesets-v3-release/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-20T21:33:26Z",
-  "updatedAt": "2026-09-20T21:33:26Z"
+  "lastUpdated": "2026-09-23",
+  "updatedAt": "2026-09-23T08:55:00+08:00"
 }
