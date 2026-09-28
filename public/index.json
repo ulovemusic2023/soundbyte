@@ -84951,6 +84951,268 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260929-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "yetone/magpie",
+      "summary": "從 menu bar 一鍵切換每個 agent 背後的模型：Codex 跑 DeepSeek、Claude Code 跑 Kimi。avante.nvim 作者 yetone 出品，多供應商 routing。",
+      "tags": [
+        "ai-agent",
+        "model-router",
+        "claude-code"
+      ],
+      "url": "https://github.com/yetone/magpie",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 1580,
+      "createdDate": "2026-09-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "dzhng/jevgrep",
+      "summary": "用『這段 code 做什麼』來找檔案，而不是靠關鍵字。給 coding agent 用的語意檔案搜尋 CLI，底層用 Jev 挑相關檔案與 context。",
+      "tags": [
+        "cli",
+        "code-search",
+        "coding-agent"
+      ],
+      "url": "https://github.com/dzhng/jevgrep",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 1349,
+      "createdDate": "2026-09-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "timoncool/YuE2-Studio",
+      "summary": "本地跑 YuE2 的 AI 歌曲生成器，帶可編輯的樂譜：完整人聲歌曲、五線譜、封面、可精準重播。原生 Windows app，不用碰 Python，附自動更新安裝檔。",
+      "tags": [
+        "music-generation",
+        "yue2",
+        "local-ai",
+        "daw"
+      ],
+      "url": "https://github.com/timoncool/YuE2-Studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:music-generation",
+      "stars": 283,
+      "createdDate": "2026-09-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "awlevin/typesafe-computer-use",
+      "summary": "每一步約 $0.0002 的 computer use：OCR 螢幕 → 用 TypeSafe 分類下一動作 → 點擊。macOS 專用，走 typed decision 而非燒 token 的 vision LLM 路線。",
+      "tags": [
+        "computer-use",
+        "typesafe",
+        "macos"
+      ],
+      "url": "https://github.com/awlevin/typesafe-computer-use",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-15+stars:>50",
+      "stars": 1067,
+      "createdDate": "2026-09-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "LockedinLabs-AI/agent-console",
+      "summary": "Local-first 的 AI coding agent 觀測台：把每個 Claude Code / Codex session 的 tokens、cache、模型與成本攤開，可接自架 team hub。含 policy hooks，macOS build 有簽章。",
+      "tags": [
+        "observability",
+        "coding-agent",
+        "local-first"
+      ],
+      "url": "https://github.com/LockedinLabs-AI/agent-console",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 626,
+      "createdDate": "2026-09-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "leter/zh-tech-writing",
+      "summary": "寫中文技術文件的 Agent Skill，基於阮一峰《中文技術文件寫作規範》：短句、平實、去掉 AI 腔。寫文件、寫 README 可直接掛。",
+      "tags": [
+        "agent-skill",
+        "writing",
+        "chinese"
+      ],
+      "url": "https://github.com/leter/zh-tech-writing",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 303,
+      "createdDate": "2026-09-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "sno-ai/sno-station",
+      "summary": "把 Claude Code + Codex 當成同一支小隊在你機器上跑：共享加密記憶、agent 之間互傳訊息（Reach）、跨 vendor review，還有每晚會改寫自己 skill 的 loop（需你核准）。無 daemon、無雲端。",
+      "tags": [
+        "multi-agent",
+        "claude-code",
+        "codex",
+        "memory"
+      ],
+      "url": "https://github.com/sno-ai/sno-station",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code",
+      "stars": 286,
+      "createdDate": "2026-09-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260929-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "XiaoPuOuO/openchatx-mcp",
+      "summary": "把 ChatGPT 變成本地 agent runtime：操作電腦、用本地工具、發掘 MCP servers、把工作委派給自己的模型，全走一條 MCP 連線。",
+      "tags": [
+        "mcp",
+        "chatgpt",
+        "local-agent"
+      ],
+      "url": "https://github.com/XiaoPuOuO/openchatx-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 195,
+      "createdDate": "2026-09-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "graygnatconsole/mcp-audit-tool",
+      "summary": "掃 MCP server 設定的資安 CLI：tool poisoning、rug pull、寫死的 secrets、command injection、供應鏈風險都查。純 Python，出 SARIF、可進 CI。裝 MCP 前先過一遍。",
+      "tags": [
+        "mcp",
+        "security",
+        "audit"
+      ],
+      "url": "https://github.com/graygnatconsole/mcp-audit-tool",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 120,
+      "createdDate": "2026-09-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "matank001/clodfarm",
+      "summary": "一整片 Claude Code agents 的農場：丟一個 mission，它拆成 sub-agent、開工，並照每個帳號真實的 5 小時／每週額度自己配速。可從 Claude app 遙控。",
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "orchestration"
+      ],
+      "url": "https://github.com/matank001/clodfarm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:coding-agent",
+      "stars": 76,
+      "createdDate": "2026-09-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "Contrastive-LM/CLM",
+      "summary": "開源 System One 模型 CLM-8B：用 contrastive learning 連結 state 與 action。號稱在 computer-use／gaming／tool-calling 上跟 Jev 打平，但延遲低 9×，走 TypeSafe 相容 API。Jev/Laya 這波 typed-decision 浪潮的開源復刻。",
+      "tags": [
+        "system-one",
+        "open-weights",
+        "typed-decision"
+      ],
+      "url": "https://github.com/Contrastive-LM/CLM",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-15+stars:>50",
+      "stars": 2255,
+      "createdDate": "2026-09-23",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260929-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "tobi/disktree",
+      "summary": "Shopify CEO Tobi Lütke 寫的磁碟 treemap：找出並清掉塞滿硬碟的東西，為 Omarchy 打造。Rust + GPUI。",
+      "tags": [
+        "cli",
+        "disk-usage",
+        "rust"
+      ],
+      "url": "https://github.com/tobi/disktree",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-15+stars:>50",
+      "stars": 1803,
+      "createdDate": "2026-09-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-09-29",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "hydra-db/open-glean",
+      "summary": "開源的 AI knowledge work 平台（Glean 的開源版）：接上你的各種 app，搜答案、把工作做完。Apache-2.0。",
+      "tags": [
+        "knowledge-work",
+        "rag",
+        "glean-alternative"
+      ],
+      "url": "https://github.com/hydra-db/open-glean",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-15+stars:>50",
+      "stars": 1531,
+      "createdDate": "2026-09-17",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-09-29",
