@@ -84686,6 +84686,231 @@
       "price": null,
       "vram": "Apple Silicon only（RTX 5070 Ti 不適用）",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20260929-sw-001",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 發布 Claude Sonnet 5.5",
+      "summary": "Sonnet 5.5(9/28)比 Sonnet 5 快 30%+、每任務成本低 30%,coding/知識工作/影像理解全面提升。Terminal-Bench 4.0 衝到 70.6%(Sonnet 5 僅 10.3%),GDPval-AA 1844 幾乎追平 Opus 5.5 的 1846,但價格不變($2/$10 per M tokens)。首個純靠截圖破關 Pokémon Red 的 Sonnet。",
+      "tags": [
+        "ai-models",
+        "coding-agent",
+        "model-release"
+      ],
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-002",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google 用 AI + differential fuzzing 把 C 函式庫改寫成 Rust",
+      "summary": "Google 安全團隊用 Gemini 單一 prompt 把 giflib(~3,000 行 C)全量轉 Rust,保留 exported symbols/struct 維持 ABI;再用 differential fuzzing 跑 30M+ 真實 GIF 達 bit-for-bit parity、200M 次迭代 6 天無漂移。Rust 版零 runtime overhead 且結構性免疫 CVE-2026-26740(公開前)。",
+      "tags": [
+        "paradigm-shift",
+        "rust",
+        "ai-c-to-rust-migration",
+        "memory-safety"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/c-rust-rewrite/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/c-rust-rewrite/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-003",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Meta ZGateway:stateless proxy 讓 ZippyDB 連線數砍 19x",
+      "summary": "ZippyDB 原本 client 直連數萬 shard×數十萬 host 形成 many-to-many 連線網、易爆 connection storm。ZGateway 改用 stateless 代理層(client 黏 regional gateway、DB 只收 gateway fleet 連線),per-host 連線降 97-98%、總持久連線降 ~19x,單層扛 >10 億 ops/秒(約 40% 流量),並集中做 authz/admission/batching。",
+      "tags": [
+        "architecture",
+        "distributed-systems",
+        "db-gateway-proxy",
+        "api-gateway"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/meta-zgateway-zippydb-proxy/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/meta-zgateway-zippydb-proxy/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-004",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Stateless MCP:拿掉 session affinity,Lambda 也能跑 MCP server",
+      "summary": "MCP spec 移除 initialize/initialized handshake 與 Mcp-Session-Id header,每個 request 可獨立路由到任一 server instance。不再需要 sticky session 與共享 session store,一般 load balancer 就能分流,AWS Lambda 部署變可行。『協定無狀態,你的 app 不必有狀態。』",
+      "tags": [
+        "paradigm-shift",
+        "mcp",
+        "ai-agent",
+        "stateless-mcp"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/aws-stateless-mcp/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/aws-stateless-mcp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-005",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Docker Cloud Sandboxes:coding agent 搬上雲、hardware microVM 隔離",
+      "summary": "Docker 把本地 Sandboxes 延伸上雲,用 hardware-enforced microVM 隔離跑自主 coding agent。同一組 CLI 指令(sbx move --to cloud)在筆電/雲間無縫搬移,可一次跑十幾個 agent、每個 5-21 小時不用盯。另推 Kits v3 把預配 sandbox 打包成標準 OCI image。",
+      "tags": [
+        "devops",
+        "agent-isolation",
+        "microvm",
+        "docker"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-006",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Perplexity 自建 CobbleDB 取代 DynamoDB,latency 砍 5x",
+      "summary": "200k+ RPS×50KB payload 下 DynamoDB 依 byte 計費不可持續、tail latency 黑箱不可控。Perplexity 用 Rust 自建 CobbleDB(RocksDB+mmap cache+本地 NVMe、batched MultiGet):median 31.4→5.6ms、p99 123→24.2ms、儲存成本降 ≥20%。兩位工程師靠 AI coding agent 兩個月寫出 40,000 行 Rust。",
+      "tags": [
+        "database",
+        "architecture",
+        "custom-kv-store-buildout",
+        "rust"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/cobbledb-perplexity/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/cobbledb-perplexity/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-007",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Uber ServiceScale:把 scaling intent 與 execution 拆開",
+      "summary": "為支援 regional failover 又不想全區備閒置容量,Uber 不在既有 UDC 加 failover 邏輯,改立獨立 ServiceScale CR + controller:各 orchestrator 只表達 scaling 意圖、SSC 調解競合,所有狀態存進 K8s object 好 debug。穩態 provisioning 從 2x 降到 1.3x,省下逾百萬 CPU core。",
+      "tags": [
+        "devops",
+        "kubernetes",
+        "scaling-intent-execution-split"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/uber-kubernetes-scaling/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/uber-kubernetes-scaling/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-008",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison〈2026 in LLMs (so far)〉keynote 回顧",
+      "summary": "Simon 盤點 2026 六大趨勢:coding agent 跨過可日用門檻、personal AI agent『Claw』新品類(OpenClaw 等,買 Mac Mini 當數位魚缸養)、agent 接管 routine 後只剩難題的『Deep Blue 倦怠』、open model(Qwen3.8 27B)本地近前沿、訓練 agent 多次破 containment 攻擊 HF/RubyGems、美政府對 Fable 5 祭出口管。",
+      "tags": [
+        "ai-models",
+        "coding-agent",
+        "industry-trends"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-009",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Swift 6.4 釋出:Subprocess 1.0、Wasm 最高快 40x",
+      "summary": "Swift 6.4 帶來 Subprocess 1.0、更好的 C++/Java interop,以及『generated Wasm code 最高快 40 倍』。持續強化跨語言互通與 WebAssembly 產碼效能。",
+      "tags": [
+        "new-languages",
+        "swift",
+        "webassembly"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/swift-6-4-released/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/swift-6-4-released/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-010",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 遷移到自研『WordPress 後繼者』EmDash",
+      "summary": "Cloudflare 揭露把 blog 從 WordPress 遷到內部 CMS EmDash,改善高流量部落格的效能與快取能力。",
+      "tags": [
+        "architecture",
+        "cms",
+        "frontend"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/cloudflare-emdash-migration/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/cloudflare-emdash-migration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-sw-011",
+      "radar": "software-dev",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Whiteboard (YC W26):開源『深思軟體設計』IDE",
+      "summary": "Show HN 熱議(421 分):一個把設計思考放進前期的開源 IDE,主打在寫 code 前先想清楚軟體設計。",
+      "tags": [
+        "tooling",
+        "developer-experience",
+        "open-source"
+      ],
+      "url": "https://github.com/devdotfast/whiteboard",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/devdotfast/whiteboard",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-23",
