@@ -84629,6 +84629,63 @@
       "stars": 102,
       "createdDate": "2026-09-04",
       "license": "MIT"
+    },
+    {
+      "id": "20260929-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Blizaine/Maestro",
+      "summary": "100% 本地的 AI 影像／音樂／MV 工作室。Director mode 吃一段 audio 或一則故事，讓本地 LLM 分析 BPM、段落與能量後自動排 shot、寫腳本/歌詞、生 keyframe 並跑完整多片段生成。音樂端支援 MiniMax-Music3、ACE-Step、YuE2（48kHz 立體聲），首次啟動會偵測 GPU/VRAM 自動選 quantization 與 VAE tiling profile，小顯卡可用較短 clip。",
+      "tags": [
+        "audio_music_ai",
+        "image_gen",
+        "llm_inference"
+      ],
+      "url": "https://github.com/Blizaine/Maestro",
+      "source": "GitHub Topics (music-generation)",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "price": null,
+      "vram": "auto-tune：偵測 VRAM 選 profile，小顯卡跑短 clip；YuE2 訓練示範用 24GB",
+      "license": "NOASSERTION（自訂；YuE2/tokenizer 權重為 noncommercial model terms）"
+    },
+    {
+      "id": "20260929-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ashhart/TensorFold",
+      "summary": "在 Apple Silicon (MLX) 與 NVIDIA GPU (CUDA) 上做 exact LLM decoding 的推理引擎，開 OpenAI 相容 endpoint。內建 speculative decoding（MTP head / DFlash2 draft + context copies），支援 Nemotron 3.5 Lightning 30B-A3B、Qwen3.8-27B、GLM-5.3-Flash、Gemma 4 26B-A4B 等 4-bit MLX/EXL3 checkpoint。draft 只在與序列輸出逐 token 相等時才接受，主打「加速但不改變結果」。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://github.com/ashhart/TensorFold",
+      "source": "GitHub Trending (python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "4-bit MoE 27–30B（active params 小），CUDA 16GB 可跑但偏緊",
+      "license": "MIT"
+    },
+    {
+      "id": "20260929-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-09-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ddalcu/mlx-serve",
+      "summary": "專為 Apple Silicon 打造的原生 LLM 推理 server，OpenAI + Anthropic API 相容、無 Python 依賴（Zig 寫的）。附一個 MLX Core macOS app，內建 chat、agent mode 與 tool calling。⚠️ 僅限 Apple Silicon，RTX 5070 Ti 不適用，列入僅供追蹤 Mac 端本地推理生態。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://github.com/ddalcu/mlx-serve",
+      "source": "GitHub Topics (voice-cloning listing)",
+      "sourceUrl": "https://github.com/topics/voice-cloning",
+      "price": null,
+      "vram": "Apple Silicon only（RTX 5070 Ti 不適用）",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-09-23",
