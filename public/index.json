@@ -84911,8 +84911,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260929-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-29",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Agents 時代的聚合理論：戰場從「發現」移到「渴望」",
+      "summary": "Ben Thompson 主張 AI agent 正成為新的平台層，取代 app 成為使用者完成任務的介面。當 agent 把每個 app 變成實作細節，競爭焦點就從 discovery（誰幫你找到東西）轉向 inspiration（誰決定你接下來想做什麼）——掌握使用者意圖與登入憑證的公司握有不對稱優勢。",
+      "tags": [
+        "aggregation-theory",
+        "agents",
+        "distribution"
+      ],
+      "url": "https://stratechery.com/2026/apps-agents-and-aggregation/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/apps-agents-and-aggregation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260929-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-29",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Netflix 如何讓上千名創作者信任 AI 改造",
+      "summary": "不是靠技術，是靠組織手法：先定義理想使用者體驗與痛點再碰 AI；用「今天 vs 明天」對照表把工作如何轉向高判斷力任務講清楚；重組成跨職能 first team、共寫目標共擔成敗。關鍵心態：別問 AI 能做什麼，要問人該做什麼，並把 AI 投資綁在 CEO 在意的指標（觀看數，不是省成本）。",
+      "tags": [
+        "ai-adoption",
+        "change-management",
+        "org-design"
+      ],
+      "url": "https://review.firstround.com/netflix-ai-strategy/",
+      "source": "First Round Review",
+      "sourceUrl": "https://review.firstround.com/netflix-ai-strategy/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-09-29",
   "updatedAt": "2026-09-23T01:03:53.407015Z"
 }
