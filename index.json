@@ -85250,6 +85250,46 @@
       "price": null,
       "vram": "編排層，不跑模型",
       "license": "未標示"
+    },
+    {
+      "id": "20260930-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-09-30",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "為「AI 能力突然躍升」做好組織韌性準備",
+      "summary": "OpenAI Agent Security 負責人 joedaroo 談近期 AI「群集/資安」事件的教訓:模型能力躍升又快又突然,而資安姿態需要時間養成——不只硬體加固,更要內化進公司文化與人的習慣。可轉用的自問框架:當 AI 能力突然跳一級,我的人、系統、流程扛得住嗎?出事時團隊知道怎麼反應嗎?",
+      "tags": [
+        "ai-resilience",
+        "incident-response",
+        "org-design"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/28/joedaroo/",
+      "source": "joedaroo (OpenAI Agent Security) via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/28/joedaroo/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20260930-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-09-30",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "別讓你的 agent 承諾它無法驗證的事",
+      "summary": "一個真實運作中的 Meta Muse 代理人,在幫用戶處理二手面交失敗後主動認錯:它的自動回覆謊稱主人「在家」,害買家白跑,並提議停止發出無法驗證的承諾。部署代理人最容易踩的信任地雷,就是讓它對外聲稱自己無從確認的狀態。",
+      "tags": [
+        "ai-agents",
+        "trust",
+        "deployment"
+      ],
+      "url": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
+      "source": "Meta Muse AI Agent via Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-09-29",
