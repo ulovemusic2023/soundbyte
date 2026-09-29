@@ -85213,6 +85213,43 @@
       "stars": 1531,
       "createdDate": "2026-09-17",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20260930-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-09-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SemiAnalysisAI/InferenceX",
+      "summary": "SemiAnalysis 開源推理效能研究平台 (前 InferenceMAX)，持續 benchmark 主流開源模型在 NVIDIA Blackwell/Hopper 與 AMD 上的推理表現，含 AgentX 1M+ 長上下文多輪 benchmark (Apache 2.0)。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/SemiAnalysisAI/InferenceX",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "資料中心 GPU 導向",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260930-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-09-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "mvschwarz/openrig",
+      "summary": "Multi-agent harness，把 Claude Code 與 Codex 當成單一系統協同運作。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/mvschwarz/openrig",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "編排層，不跑模型",
+      "license": "未標示"
     }
   ],
   "lastUpdated": "2026-09-29",
