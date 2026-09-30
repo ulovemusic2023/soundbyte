@@ -85290,8 +85290,268 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20260930-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-09-30",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "Niko1221/Strata",
+      "summary": "把 Qwen3.8-Flash-Next（125B MoE）塞進 8GB+ NVIDIA GPU，Windows/Linux 一鍵安裝，內建 Strata inference engine，localhost 開 OpenAI/Anthropic 相容 API，支援圖片輸入。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "self-hosted"
+      ],
+      "url": "https://github.com/Niko1221/Strata",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1653,
+      "createdDate": "2026-09-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20260930-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-09-30",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "freestylefly/WeChatBridge",
+      "summary": "原生 macOS 工具，把微信聊天記錄一鍵轉發到 AI Agent 與 Obsidian。fork 數健康，適合把對話素材餵給 agent／做筆記歸檔。",
+      "tags": [
+        "automation",
+        "productivity",
+        "ai-agent"
+      ],
+      "url": "https://github.com/freestylefly/WeChatBridge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 912,
+      "createdDate": "2026-09-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20260930-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-09-30",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "alexgreensh/anidoodle",
+      "summary": "用程式碼寫美術與動畫：插畫、loop、互動網頁藝術、launch video、配樂短片，全部 code 生成、每次 render 一致。",
+      "tags": [
+        "creative-coding",
+        "animation",
+        "generative-art"
+      ],
+      "url": "https://github.com/alexgreensh/anidoodle",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 693,
+      "createdDate": "2026-09-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260930-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-09-30",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "lemomo-ai/lemo-opuscar",
+      "summary": "43 種影片風格，每種是 style prompt + 純程式碼（Claude Opus 5.5）樣片。挑風格、帶故事，讓 agent 當導演。code-as-film 趨勢。",
+      "tags": [
+        "video",
+        "creative-coding",
+        "claude-code"
+      ],
+      "url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 608,
+      "createdDate": "2026-09-26",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20260930-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-09-30",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "INSANE0777/Awwwards-mcp",
+      "summary": "免費開源 MCP server，讓 coding agent 直接抓 Awwwards 得獎網站設計靈感：截圖搜尋、design DNA、擷取即時網站。號稱 Mobbin 替代品，免 API key。",
+      "tags": [
+        "mcp",
+        "design",
+        "frontend"
+      ],
+      "url": "https://github.com/INSANE0777/Awwwards-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 92,
+      "createdDate": "2026-09-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20260930-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-09-30",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "domenkozar/agentaps",
+      "summary": "給 coding harness 用的通用 GUI。星數還小但作者是 Nix/Cachix 生態的 Domen Kožar，工程可信度高，值得盯。",
+      "tags": [
+        "coding-agent",
+        "gui",
+        "dev-tool"
+      ],
+      "url": "https://github.com/domenkozar/agentaps",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 49,
+      "createdDate": "2026-09-24",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260930-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-09-30",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "reladraw/reladraw",
+      "summary": "「你來決定東西放哪」的圖表描述語言，本週 Show HN 前排（406 pts）。與 auto-layout 相反，強調手動佈局控制。",
+      "tags": [
+        "diagram",
+        "dev-tool",
+        "dsl"
+      ],
+      "url": "https://github.com/reladraw/reladraw",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/search",
+      "stars": 972,
+      "createdDate": "2026-09-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20260930-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-09-30",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "zhuyansen/awesome-claude-video-skills",
+      "summary": "彙整 180 個『讓 coding agent 做影片』的 skills/工具，依類型分類、標 security 等級，中英雙語。當 code-as-video 入口地圖。",
+      "tags": [
+        "video",
+        "claude-code",
+        "awesome-list"
+      ],
+      "url": "https://github.com/zhuyansen/awesome-claude-video-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 290,
+      "createdDate": "2026-09-27",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261001-ai-001",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "high",
+      "title": "nvidia/Nemotron-3-Diarization",
+      "summary": "NVIDIA 開源 speaker diarization/VAD 模型，僅 99.2M 參數，超輕量。適合錄音、Podcast、多人對話素材自動切分「誰在何時講話」，語音預處理管線基礎件。",
+      "tags": [
+        "tts_speech",
+        "diarization",
+        "asr"
+      ],
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "<1GB（99.2M）",
+      "license": "openmdw-1.1"
+    },
+    {
+      "id": "20261001-ai-002",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "high",
+      "title": "Edge0/Audio8-ASR-Infinite",
+      "summary": "4B zero-shot ASR，主打長音檔連續辨識，10 天累積 26.7k 下載、1.8k likes。4B 量級 16GB VRAM 原生可跑，適合本地字幕/轉錄。Apache-2.0。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "speech recognition"
+      ],
+      "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "~8-10GB（4B FP16）",
+      "license": "apache-2.0"
+    },
+    {
+      "id": "20261001-ai-003",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "medium",
+      "title": "lostmsu/TurboGPT",
+      "summary": "教學/實驗：一分鐘內在 CUDA 上訓練 tiny GPT（Show HN 壓到 22KiB/13s）。理解 transformer 訓練管線與小規模 kernel 實驗用，MIT。",
+      "tags": [
+        "llm_training",
+        "fine-tuning",
+        "cuda"
+      ],
+      "url": "https://github.com/lostmsu/TurboGPT",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "price": null,
+      "vram": "極低",
+      "license": "MIT"
+    },
+    {
+      "id": "20261001-ai-004",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "low",
+      "title": "pydantic/pydantic-ai",
+      "summary": "Pydantic 團隊 type-safe agent 框架：agents、realtime voice、image gen、embeddings 端到端型別化，支援主流模型。20k+ stars，MIT。",
+      "tags": [
+        "ai_devtools",
+        "rag_knowledge",
+        "tts_speech"
+      ],
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT"
+    },
+    {
+      "id": "20261001-ai-005",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "radar": "ai-infra",
+      "priority": "low",
+      "title": "EverMind-AI/Raven",
+      "summary": "「harness of harnesses」：整合多 coding agent 成持久、可自我演化協作層，主打 RSI。Apache-2.0。⚠️ star/fork 比偏高（4969/137），列觀察。",
+      "tags": [
+        "ai_devtools",
+        "coding agent",
+        "multi-agent"
+      ],
+      "url": "https://github.com/EverMind-AI/Raven",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "price": null,
+      "vram": "N/A",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-09-29",
-  "updatedAt": "2026-09-23T01:03:53.407015Z"
+  "lastUpdated": "2026-09-30",
+  "updatedAt": "2026-09-30T05:40:00+08:00"
 }
