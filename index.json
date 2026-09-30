@@ -85811,6 +85811,175 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261001-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-01",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "KKKKhazix/AIHOT",
+      "summary": "自架型「熱點站」框架：自己抓信源、自己寫日報，換掉信源與精選標準就變成你的產業情報站。跟做 radar/digest 高度相關。",
+      "tags": [
+        "news-aggregator",
+        "daily-report",
+        "self-hosted",
+        "mcp"
+      ],
+      "url": "https://github.com/KKKKhazix/AIHOT",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 4049,
+      "createdDate": "2026-09-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20261001-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-01",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "feder-cr/dots",
+      "summary": "AIHawk 作者新作：自帶瀏覽器、號稱不會被封的 web AI agent。適合抓資料/自動化工作流。",
+      "tags": [
+        "ai-agent",
+        "browser-agent",
+        "scraping",
+        "automation"
+      ],
+      "url": "https://github.com/feder-cr/dots",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1930,
+      "createdDate": "2026-09-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20261001-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-01",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "Louis-CFM/coucou",
+      "summary": "住在 macOS 瀏海/螢幕頂端的小夥伴，盯著你的 Claude Code session 狀態。跑多個 agent session 時很實用。",
+      "tags": [
+        "claude-code",
+        "macos",
+        "menubar",
+        "dev-tool"
+      ],
+      "url": "https://github.com/Louis-CFM/coucou",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1001,
+      "createdDate": "2026-09-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20261001-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-01",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "rehan-remade/universal-modder",
+      "summary": "用 Claude Code + fal MCP 幫幾乎任何 PC 遊戲做 mod：逆向、fal 生成美術/3D/音效、遊戲內測試、展示影片。agentic 創作流的有趣案例。",
+      "tags": [
+        "claude-code",
+        "game-mod",
+        "fal-mcp",
+        "creative"
+      ],
+      "url": "https://github.com/rehan-remade/universal-modder",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 728,
+      "createdDate": "2026-09-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20261001-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-01",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "minorun365/minorun-marp-skill",
+      "summary": "給 coding agent 用的 Marp 登壇簡報技能集：故事線、圖解、設計平衡、黑底主題與檢查工具。常做簡報可收。",
+      "tags": [
+        "agent-skill",
+        "marp",
+        "slides",
+        "presentation"
+      ],
+      "url": "https://github.com/minorun365/minorun-marp-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 397,
+      "createdDate": "2026-09-20",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261001-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-01",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "OneMoh/html-explainer",
+      "summary": "面向 AI agent 的確定性 HTML→MP4 流水線：把一個主題做成有配音、字幕、封面的講解影片，全本地、音畫同步穩定。",
+      "tags": [
+        "video",
+        "html-to-mp4",
+        "tts",
+        "content-creation"
+      ],
+      "url": "https://github.com/OneMoh/html-explainer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 135,
+      "createdDate": "2026-09-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261001-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-01",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "ArtificialAnalysis/aa-agentperf-local",
+      "summary": "ArtificialAnalysis 出的本地 LLM serving benchmark：用真實 agent 軌跡重放來壓測。要選本地推論後端時的客觀參考。",
+      "tags": [
+        "local-llm",
+        "benchmark",
+        "agent",
+        "inference"
+      ],
+      "url": "https://github.com/ArtificialAnalysis/aa-agentperf-local",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 55,
+      "createdDate": "2026-09-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261001-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-01",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "vincentsch/explainroo",
+      "summary": "讓 AI agent 做講解影片/產品 demo：本地 Kokoro 配音 + Whisper 對時 + canvas 渲染，把腳本變成旁白 MP4。全開源免費。",
+      "tags": [
+        "video",
+        "local-voice",
+        "kokoro",
+        "whisper",
+        "content-creation"
+      ],
+      "url": "https://github.com/vincentsch/explainroo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 25,
+      "createdDate": "2026-09-25",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-10-01T05:34:38.618536+08:00",
