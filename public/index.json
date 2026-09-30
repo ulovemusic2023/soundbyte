@@ -85550,8 +85550,249 @@
       "price": null,
       "vram": "N/A",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261001-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare：網際網路的『第二受眾』——向 AI agent 收費的 agentic web",
+      "summary": "Cloudflare 指出流入其網路的流量已過半是自動化、AI agent 成長最快。新工具讓站長能看見誰在爬、決定誰能進、並對 agent 存取『收費』（pay-per-crawl）。把 bot 從一律封鎖，轉成可辨識、可授權、可變現的第二受眾。",
+      "tags": [
+        "ai-agent",
+        "agent-pay-per-crawl",
+        "paradigm-shift",
+        "accountable-ai-crawler"
+      ],
+      "url": "https://blog.cloudflare.com/agentic-web/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/agentic-web/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor Continuity：用 S3 WAL 把 Git 儲存擴到 >300 pushes/sec",
+      "summary": "Cursor 推出 Continuity——以 S3-backed write-ahead log 當 source of truth 的 Git 儲存架構，本地 NVMe repo 降為 warm cache，並把 replica 協調與一致性分離。合成測試下 read 線性擴展到 100 replica，S3 Express One Zone 可達 >300 pushes/sec。",
+      "tags": [
+        "architecture",
+        "distributed-systems",
+        "s3-wal-git-storage"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/cursor-continuity-git-storage/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/cursor-continuity-git-storage/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Agent 三週重構 30 萬行 C、花 $4000——實務界問這證明了什麼",
+      "summary": "CodeScene 案例：coding agents 用三週、約 $4,000 token 成本重構 30 萬行 C，靠 frame-by-frame replay harness 驗證，過程中自建了 codebase 專屬 recipe playbook。實務界則質疑範圍、指標與『多少成效其實來自 harness』。",
+      "tags": [
+        "ai-coding",
+        "agentic-refactoring",
+        "refactoring-reflex-atrophy"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "『You said no MCP』——Pi 把曾經唾棄的 MCP 納入 core",
+      "summary": "Earendil 團隊一年前在 pi.dev 高調宣稱不支援 MCP，如今卻把它放進核心。原因：MCP 已非昔日的 MCP，且為支援 MCP 所做的改動（sandbox/interpreter）對自家 Jev 等功能也通用。象徵 MCP 從爭議走向預設整合。",
+      "tags": [
+        "mcp",
+        "ai-agent",
+        "mcp-core-adoption"
+      ],
+      "url": "https://earendil.com/posts/you-said-no-mcp/",
+      "source": "Earendil",
+      "sourceUrl": "https://earendil.com/posts/you-said-no-mcp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Netlify：用 Firecracker MicroVM 取代 V8 isolates，Edge Functions 快 5x",
+      "summary": "Netlify 每天跑約十億次 Edge Functions，過去走 hosted execution service，如今改在自家 edge 網路內的 MicroVM 執行（與 Unikraft 合作），median 約快 5x，安全性與可靠性同步提升。edge runtime 從共享 isolate 往 per-request MicroVM 演進。",
+      "tags": [
+        "architecture",
+        "edge-runtime",
+        "edge-microvm-runtime"
+      ],
+      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+      "source": "Netlify Blog",
+      "sourceUrl": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SvelteKit 3 進入 RC：設定搬到 Vite、$lib 退場改用 #lib",
+      "summary": "Svelte 團隊讓 SvelteKit 3 進入 release candidate，聚焦程式碼精煉。重點：設定移到 vite.config.ts、以 #lib 取代 $lib alias 改善相容性；需 Vite 8 + Svelte 5，強化錯誤處理與建置效率。",
+      "tags": [
+        "new-languages",
+        "frameworks",
+        "sveltekit"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/sveltekit-3-vite/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/sveltekit-3-vite/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare AI Gateway Auto Router：邊緣分類器自動選最省模型",
+      "summary": "Cloudflare AI Gateway 新增 model router，用 edge 端部署的 classifier 評估請求複雜度，權衡預期輸出品質與 token 成本後自動挑最佳模型，宣稱能在維持表現下大幅砍 AI 花費。",
+      "tags": [
+        "ai-agent",
+        "model-router",
+        "cost-optimization"
+      ],
+      "url": "https://blog.cloudflare.com/auto-router/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/auto-router/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic Frontier Red Team：GLM-5.3 跨過『進階 cyber 能力』門檻",
+      "summary": "Anthropic 在內部 Binary Exploitation benchmark 測 100 題：GLM-5.3 在 4% trials 做出完整 control-flow hijack、Claude Mythos Preview 6%；而 Opus 4.6 / GLM-5.2 全數 0%。雖 GLM-5.3 略遜，但明顯跨過一個有意義門檻——進階攻擊能力正在擴散。",
+      "tags": [
+        "ai-models",
+        "ai-security",
+        "critical-cyber-classification"
+      ],
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "source": "Anthropic (via Simon Willison)",
+      "sourceUrl": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 發表 Gemini 4 Argon",
+      "summary": "Google 推出 Gemini 4 系列的 Argon 模型，登上 HN 首頁討論；第三方（Artificial Analysis）同步釋出 intelligence / performance / price 分析。新一代前沿模型加入競爭。",
+      "tags": [
+        "ai-models",
+        "llm-release",
+        "gemini"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 原生支援可設定的 HTTP Vary header，防 cache thrashing",
+      "summary": "Cloudflare 在 edge 網路原生支援 HTTP Vary header，全方案適用。可更精準協商內容表述、同時降低 cache 碎片化；營運者能針對特定 request header 定義行為，提升快取效率並減輕 server 負載。",
+      "tags": [
+        "devops-infra",
+        "caching",
+        "cdn"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/cloudflare-http-vary/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/cloudflare-http-vary/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare：production 錯誤直接送進你的 coding agent",
+      "summary": "Cloudflare Workers 內建錯誤監控，可把 production failure 分群，並將 stack trace、logs、traces 與應用情境直接送給 coding agent 進一步調查、甚至自動開 PR。把 observability 接上 agent 修復迴圈。",
+      "tags": [
+        "devops-infra",
+        "observability",
+        "ai-agent"
+      ],
+      "url": "https://blog.cloudflare.com/real-time-issue-detection/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/real-time-issue-detection/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261001-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Radicle 揭露重大漏洞：私有 repo 以明文外洩",
+      "summary": "Radicle 在其 wire protocol 發現兩個重大安全漏洞，衝擊所有節點版本的機密性：攻擊者可明文讀取私有 repo 資料並偽冒節點。因架構性缺陷，建議立即停止 clearnet 運作；修復需改用新協定（Iroh），將造成向後不相容。",
+      "tags": [
+        "security",
+        "vulnerability",
+        "p2p"
+      ],
+      "url": "https://www.infoq.com/news/2026/09/radicle-network-vulnerabilities/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/09/radicle-network-vulnerabilities/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-09-30",
-  "updatedAt": "2026-09-30T05:40:00+08:00"
+  "lastUpdated": "2026-10-01",
+  "updatedAt": "2026-09-30T21:24:11.568520+00:00"
 }
