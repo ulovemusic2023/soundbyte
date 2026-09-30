@@ -85791,8 +85791,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261001-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-01",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "為什麼你打不倒現有龍頭 —— 不是靠更純粹，而是拿掉所有讓對方留下來的理由",
+      "summary": "Armin Ronacher 重寫 Rust 序列化庫 Deser，點出一個超越技術的框架：Serde 那些難修的問題不是 bug，而是它『向後相容保證』的設計後果——穩定性承諾一旦立下，就成了改不動的牢籠。想取代既有龍頭，光技術更強沒用，要消除對方留下來的每一個理由。對做產品的人一體適用：incumbent 的護城河常常正是它自己的相容包袱，挑戰者的勝算來自把遷移成本歸零，而非比誰更漂亮。",
+      "tags": [
+        "incumbent-displacement",
+        "product-strategy",
+        "technical-debt"
+      ],
+      "url": "https://lucumr.pocoo.org/2026/9/29/deser/",
+      "source": "Armin Ronacher (lucumr)",
+      "sourceUrl": "https://lucumr.pocoo.org/2026/9/29/deser/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-01",
-  "updatedAt": "2026-09-30T21:24:11.568520+00:00"
+  "lastUpdated": "2026-10-01T05:34:38.618536+08:00",
+  "updatedAt": "2026-10-01T05:34:38.618536+08:00"
 }
