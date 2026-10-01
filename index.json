@@ -85980,6 +85980,46 @@
       "stars": 25,
       "createdDate": "2026-09-25",
       "license": "MIT"
+    },
+    {
+      "id": "20261002-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Aratako/Irodori-TTS-v4-Large",
+      "summary": "日文 zero-shot TTS，RF-DiT 架構整合 文字+參考語音+caption：支援 voice cloning、文字描述式 voice design、emoji 控制語氣/情緒/笑聲咳嗽，參考音最長 120 秒，內建 SilentCipher 浮水印。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "zero-shot tts"
+      ],
+      "url": "https://github.com/Aratako/Irodori-TTS",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/Aratako/Irodori-TTS-v4-Large",
+      "price": null,
+      "vram": "~3B / 約 6-7GB (local-ready)",
+      "license": "gemma"
+    },
+    {
+      "id": "20261002-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "NVIDIA/OpenShell",
+      "summary": "NVIDIA 的 autonomous agent 安全執行環境：kernel-level 在每次 file/syscall/網路存取套 policy，agent 看不到真實憑證，policy 變更前用 formal verification 預檢風險。0.1.0 登上 Trending。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime",
+        "agent sandbox"
+      ],
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/NVIDIA/OpenShell",
+      "price": null,
+      "vram": "runtime，非模型 (local-ready)",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-10-01T05:34:38.618536+08:00",
