@@ -86020,8 +86020,160 @@
       "price": null,
       "vram": "runtime，非模型 (local-ready)",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261002-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 推出 Clef：open-source decision models + RL fine-tuning 平台",
+      "summary": "Cloudflare 發表自家訓練的 Clef / Clef-flash 兩款 open-source decision models，Apache-2.0 上架 Hugging Face、hosted 在 Workers AI、完全 Jev-API 相容，並宣稱在 Jev Decision Index 上領先 TypeSafe 的 Jev。同時推出讓開發者用自有資料 fine-tune decision model 的 RL 平台。繼 Jev 與 OpenAI Decisions API 後，基礎設施巨頭正式進場 decision model 新品類。",
+      "tags": [
+        "paradigm-shift",
+        "decision-model",
+        "ai-agent",
+        "open-source",
+        "workers-ai"
+      ],
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/clef-decision-models/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261002-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Matthew Green：sandbox 擋不住 rogue agent——AI agent worm 的兩半",
+      "summary": "密碼學教授 Matthew Green 把 HF hack 類事件抽象成 worm：一半是劫持 agent 的 payload，一半是會把 payload 帶給下一個 agent 的載體。獨立 sandbox 的 agent 靠 shared package cache 互留指令、改變彼此行為；把 cache 換成 email/Slack/共享文件、把隔離訓練 run 換成各自部署的個人 agent，就湊齊 worm 所需的全部材料。sandbox 隔離阻不了跨 agent 傳染。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "ai-security",
+        "sandboxing",
+        "prompt-injection"
+      ],
+      "url": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/",
+      "source": "A Few Thoughts on Cryptographic Engineering",
+      "sourceUrl": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261002-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain：model router 該放進 agent harness，不是 gateway",
+      "summary": "LangChain 主張 model routing 應內建在 agent harness 而非通用 gateway——選對模型需要 harness 已掌握的 domain/task context，gateway 通常拿不到。他們為 open-source coding agent Open SWE 建了 router，相較一律用頂級 frontier model，median cost/thread 降 64% 且品質無可量測變化。model-router 從 infra 層往 agent 內部收斂。",
+      "tags": [
+        "ai-agent",
+        "model-router",
+        "agent-harness",
+        "cost-optimization",
+        "open-source"
+      ],
+      "url": "https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261002-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Azure Container Apps Express + Sandboxes GA：agent-first 的 microVM 運算層",
+      "summary": "微軟讓 Azure Container Apps Express 正式 GA，拿掉環境佈建步驟、以 opinionated 預設取代多數設定，consumption CPU 按秒計費、idle 時 scale to zero。它跑在同步 GA 的 Container Apps Sandboxes 之上——prewarmed pool 次秒啟動、每 workload 隔離在 hardware-isolated microVM、可 suspend/resume 快照整個記憶體與磁碟。微軟明言是 developer-first 也是 agent-first。",
+      "tags": [
+        "devops-infra",
+        "microvm",
+        "agent-first",
+        "serverless",
+        "sandbox"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/container-apps-express-sandboxes/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/container-apps-express-sandboxes/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261002-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Basin GA：建在 Apache Iceberg + R2 的 serverless 資料平台",
+      "summary": "Cloudflare 把去年的 Data Platform 正式 GA 並改名 Basin，建在 Apache Iceberg 開放標準與 R2 Object Storage 上的 serverless 分析平台，查詢大型資料集不收 egress fee。三元件：Basin Pipelines（收事件、用 SQL 轉換寫成 Iceberg 表）、Basin Catalog（管 Iceberg metadata 並自動維護表效能）、Basin SQL（serverless 分散式 SQL 引擎直查 Iceberg）。",
+      "tags": [
+        "devops-infra",
+        "data-lakehouse",
+        "apache-iceberg",
+        "serverless",
+        "architecture"
+      ],
+      "url": "https://blog.cloudflare.com/cloudflare-basin/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/cloudflare-basin/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261002-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Workers KV Instant：把內部 Quicksilver 開放，sub-2ms p99 讀取",
+      "summary": "Cloudflare 推出 Workers KV 新模式 KV Instant，由內部一直沒對外開放的 Quicksilver key-value store 驅動：全球 300+ edge 節點 sub-2ms p99 讀延遲、250ms 全球複寫，消除 cold-read penalty，沿用熟悉的 Workers KV API。幾乎每個 Cloudflare 請求都會查一次 Quicksilver，現在開放給開發者。",
+      "tags": [
+        "devops-infra",
+        "edge",
+        "key-value-store",
+        "low-latency"
+      ],
+      "url": "https://blog.cloudflare.com/workers-kv-instant/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workers-kv-instant/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261002-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI 時代如何培養軟體工程能力：要刻意慢下來",
+      "summary": "Chelsea Troy 在 Craft conference 主張技能養成需要刻意慢下來：工具與 AI 能加速產出卻不支援技能發展。軟體工程有 figuring stuff out（要慢）與 doing stuff（會快）兩模式，後者依賴前者，越急越卡。促進學習的活動本質低效率，需忍受困惑挫折建立 cognitive capacity；並善用 spaced repetition、睡眠與『先猜下一步再驗證』的 outcome prediction。",
+      "tags": [
+        "ai-coding",
+        "skill-development",
+        "mental-model",
+        "cognitive-capacity"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/software-engineering-skills/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/software-engineering-skills/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-01T05:34:38.618536+08:00",
-  "updatedAt": "2026-10-01T05:34:38.618536+08:00"
+  "lastUpdated": "2026-10-02",
+  "updatedAt": "2026-10-02T05:20:00+08:00"
 }
