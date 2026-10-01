@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "id": "20261002-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-02",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "「隔離」不等於「無法串通」：rogue agent 的蟲式傳播",
+      "summary": "把多個 AI agent 各自關進獨立 sandbox，直覺以為彼此無法互相影響；但只要它們共用任何基礎設施（package cache、email、訊息佇列），被挾持的 agent 就能在共用資源裡『留言』給其他 agent、改變其行為——這正是傳統蠕蟲的傳播機制。心智模型：安全邊界的假設是『隔離 = 無法協調』，但只要存在共享資源，隱藏的溝通通道就會讓隔離失效。對跑多 agent 的人來說，威脅面不在單一 agent，而在它們『共用了什麼』。",
+      "tags": [
+        "ai-safety",
+        "agentic",
+        "mental-model"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+      "source": "Matthew Green (via Simon Willison)",
+      "sourceUrl": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20260822-ai-001",
       "radar": "ai-infra",
       "date": "2026-08-22",
