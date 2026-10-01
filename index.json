@@ -86192,6 +86192,167 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261002-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-02",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "mexicat/pdoom-video",
+      "summary": "本週爆紅 AI 諷刺 MV《I'm Upping My P(doom)》原始碼——整支音樂影片完全用程式碼 render 出來（Claude Opus 5.5），不靠剪輯軟體。對做音樂+影像的人來說是『code 即創作工具』範式代表作。",
+      "tags": [
+        "music-video",
+        "creative-coding",
+        "opus-5.5"
+      ],
+      "url": "https://github.com/mexicat/pdoom-video",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-09-18+stars%3A%3E50&type=repositories",
+      "stars": 2191,
+      "createdDate": "2026-09-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20261002-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-02",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "852wa/JIZURA",
+      "summary": "純瀏覽器的歌詞文字 PV（lyric motion）自動產生器：貼歌詞+丟歌曲，自動偵測拍點、從 860 個部件×27 風格隨機組出文字 MV，匯出 MP4（可去背），附 After Effects 面板。全程本地處理不上傳。",
+      "tags": [
+        "lyric-video",
+        "music",
+        "creator-tool",
+        "local"
+      ],
+      "url": "https://github.com/852wa/JIZURA",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-09-18+stars%3A%3E50&type=repositories",
+      "stars": 1278,
+      "createdDate": "2026-09-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20261002-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-02",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "unreallabsai/unreal-agent",
+      "summary": "Async-first 的 agent harness，主打非同步優先的 agent 執行架構。還很早期但 star 衝很快，值得追它要解決的長任務／並行 subagent 排程痛點。",
+      "tags": [
+        "ai-agent",
+        "agent-harness"
+      ],
+      "url": "https://github.com/unreallabsai/unreal-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-09-18+stars%3A%3E50&type=repositories",
+      "stars": 2049,
+      "createdDate": "2026-09-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261002-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-02",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "kaankiziltug/logo-design-skill",
+      "summary": "給 Claude / Gemini CLI / Codex 的完整 logo 設計 Agent Skill：設計原則、流程、SVG 技巧、檢測工具，附 1400+ logo 參考庫。要幫作品/品牌快速出 logo 概念可直接掛上。",
+      "tags": [
+        "agent-skill",
+        "design",
+        "creator-tool"
+      ],
+      "url": "https://github.com/kaankiziltug/logo-design-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-09-18&type=repositories",
+      "stars": 1337,
+      "createdDate": "2026-09-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20261002-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-02",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "mikehasa/golive-skill",
+      "summary": "把 agent 做出來的產品一鍵上線的 Agent Skill + 零依賴 Node CLI：自動搞定 hosting、DB、網域、email、金流，全開在你自己的帳號（不綁它後端/telemetry）。detect→plan→approve→apply→verify。",
+      "tags": [
+        "agent-skill",
+        "deployment",
+        "ai-coding"
+      ],
+      "url": "https://github.com/mikehasa/golive-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-09-18&type=repositories",
+      "stars": 1160,
+      "createdDate": "2026-09-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20261002-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-02",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "edenfunf/reelmimic",
+      "summary": "丟一支你喜歡的影片進去，它用 AI crew（Claude Code 或 Codex）幫你規劃、產出、審一支同風格的新影片。走『參考片→同風格重製』的 creator 工作流。",
+      "tags": [
+        "video",
+        "creator-tool",
+        "ai-agent"
+      ],
+      "url": "https://github.com/edenfunf/reelmimic",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-09-18&type=repositories",
+      "stars": 682,
+      "createdDate": "2026-09-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20261002-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-02",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "yihui-dev/awesome-opus5-5-videos",
+      "summary": "持續更新的清單：收集用 Claude Opus 5.5 做出來的爆紅影片 + 背後 prompt，每支可跟 live remake 對照。想學『用 code/prompt 生影片』這波的人可當素材庫。",
+      "tags": [
+        "awesome-list",
+        "video",
+        "opus-5.5"
+      ],
+      "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-09-18+stars%3A%3E50&type=repositories",
+      "stars": 1231,
+      "createdDate": "2026-09-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20261002-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-02",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "Lofi Cities",
+      "summary": "免費網頁 app：挑一座城市，瀏覽器即時生成 pixel-art 夜景動畫 + 無限 lofi 音樂（邊跑邊作曲），每 4 分鐘無縫 loop、各有天氣與城市音，免安裝免帳號。browser-side 即時生成音樂的玩法值得看。",
+      "tags": [
+        "music",
+        "lofi",
+        "generative",
+        "web-app"
+      ],
+      "url": "https://loficities.com/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": null,
+      "createdDate": "2026-10-02",
+      "license": "n/a"
     }
   ],
   "lastUpdated": "2026-10-02",
