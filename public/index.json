@@ -86890,8 +86890,27 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261007-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "bojieli/ai-infra-book —《深入理解 AI Infra：量化分析與系統設計》",
+      "summary": "李博杰新開源書稿，是 50k★《深入理解 AI Agent》的姊妹篇。核心方法是「從約束推導設計」：先定任務與品質要求，列出計算/儲存/通訊/依賴，再對照硬體容量、頻寬、算力做數量級估算，逼到物理極限再看實測差距。12 章涵蓋模型架構、算子與執行時、KV 管理、推測解碼、分散式推理與訓練、端邊雲協同，並附可複算的計算工具與實驗。對想在 16GB 本機跑模型、搞懂「為什麼慢、怎麼省成本」的工程師是很好的起點，有繁中線上版。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/bojieli/ai-infra-book",
+      "source": "GitHub Topics (llm-inference)",
+      "sourceUrl": "https://github.com/topics/llm-inference",
+      "price": null,
+      "vram": "不適用（書籍/參考資料）",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-10-06",
-  "updatedAt": "2026-10-06"
+  "lastUpdated": "2026-10-07T05:14:29.152046+08:00",
+  "updatedAt": "2026-10-07T05:14:29.152046+08:00"
 }
