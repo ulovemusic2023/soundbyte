@@ -87089,8 +87089,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261007-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-07",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Over my dead pencil — 放下鉛筆，擁抱 agent 時代",
+      "summary": "DHH 在 Rails World 對工程師說「該放下鉛筆了」——coding agents 已經好到讓手寫大部分程式碼不再具經濟效益。他主張把 AI 看成偶爾需要把關的新同事，而非又一個工具；真正該擔心的只有拒絕擁抱、拖延 agent 時代的人。",
+      "tags": [
+        "ai-agents",
+        "future-of-work",
+        "coding"
+      ],
+      "url": "https://world.hey.com/dhh/over-my-dead-pencil-fb0f3647",
+      "source": "David Heinemeier Hansson (DHH)",
+      "sourceUrl": "https://world.hey.com/dhh/over-my-dead-pencil-fb0f3647",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-07T05:14:29.152046+08:00",
-  "updatedAt": "2026-10-07T05:14:29.152046+08:00"
+  "lastUpdated": "2026-10-07",
+  "updatedAt": "2026-10-07T05:30:00+08:00"
 }
