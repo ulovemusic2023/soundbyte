@@ -86909,6 +86909,186 @@
       "price": null,
       "vram": "不適用（書籍/參考資料）",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261007-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "summary": "Q Labs 發表首個在 pretraining transformer LM 上與 backprop 競爭的 zeroth-order 方法：用 node perturbation 在 activation space 對每個 token 獨立擾動，一次 forward pass 平行評估整個 virtual population。大 compute 時逼近甚至超越 backprop，且大模型更 population-efficient。",
+      "tags": [
+        "paradigm-shift",
+        "ai_models",
+        "zeroth-order-pretraining"
+      ],
+      "url": "https://qlabs.sh/research/dust",
+      "source": "Q Labs Research",
+      "sourceUrl": "https://qlabs.sh/research/dust",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261007-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Magnitude — self-tuning open-source inference engine for agents",
+      "summary": "YC S25 的 Magnitude 在你的硬體上現場 compile+tune kernels 再跑模型，開放權重模型比 llama.cpp 快最多 2x（Metal decode +92%），每 agent 省 27% 記憶體、session 共享 prefix cache。一鍵接 Pi/OpenCode/Codex，Apache 2.0、本地不花 token。",
+      "tags": [
+        "ai_agent",
+        "self-tuning-inference",
+        "local-inference"
+      ],
+      "url": "https://magnitude.dev/download",
+      "source": "GitHub (magnitudedev)",
+      "sourceUrl": "https://github.com/magnitudedev/magnitude",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261007-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mistral Large 4 Le Chonk",
+      "summary": "Mistral 回歸前線：1 兆參數、49B active MoE，在 3,800 張 Grace Blackwell GPU 上訓練，目前 API 提供、月底釋出 open weights。Artificial Analysis 評 38 分，較去年 Large 3 大幅進步，約落後前沿 6 個月。",
+      "tags": [
+        "ai_models",
+        "moe",
+        "open-weights"
+      ],
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "source": "Mistral AI (via Simon Willison)",
+      "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261007-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Polars 2.0 released",
+      "summary": "Polars 2.0 推出首版 out-of-core（spill-to-disk）支援與核心效能優化，SQL 升為一等公民，在 TPC-H/TPC-DS 領先 DataFusion 與 DuckDB；新增 Map dtype、更嚴格的 dtype explicitness。",
+      "tags": [
+        "database",
+        "out-of-core-dataframe",
+        "sql"
+      ],
+      "url": "https://pola.rs/posts/release-polars-2/",
+      "source": "Polars Blog",
+      "sourceUrl": "https://pola.rs/posts/release-polars-2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261007-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Gleam 不再編譯成 Erlang 原始碼 v1.19",
+      "summary": "Gleam v1.19 的 Erlang code generator 重寫：改輸出 Erlang abstract forms（二進位中介表示）而非原始碼，可跳過編譯器前半段直接載入，build 更快，且 BEAM stacktrace 行號精準對應 Gleam 原始碼。",
+      "tags": [
+        "new_languages",
+        "gleam",
+        "erlang-abstract-forms"
+      ],
+      "url": "https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/",
+      "source": "Gleam Blog",
+      "sourceUrl": "https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261007-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Offrun — 在 Mac 上平行跑 Claude Code / Codex agents",
+      "summary": "Offrun 以本機帳號平行驅動多個 coding CLI，每個 agent 各自一個 git worktree 互不覆蓋，可同時跑 refactor 與 bug fix；還能指派第二個 agent 在 commit 前審查 diff，沒有東西會自動 merge。",
+      "tags": [
+        "ai_agent",
+        "coding-agent",
+        "git-worktree"
+      ],
+      "url": "https://offrun.dev/",
+      "source": "Offrun",
+      "sourceUrl": "https://offrun.dev/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261007-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Vibecoding isn't as fun as writing code by hand",
+      "summary": "作者反思手寫 code『從無到有』的樂趣正被 AI-assisted coding 侵蝕。承認已過了能輕易貶 AI 為笨或無用的階段，改主張 AI coding 比較不好玩，觸及 agentic coding 普及下的開發者動機與身份焦慮。",
+      "tags": [
+        "ai_agent",
+        "vibe-coding",
+        "developer-sentiment"
+      ],
+      "url": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
+      "source": "The Autodidacts",
+      "sourceUrl": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261007-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Friendship ended with Deno, now Node is my best friend",
+      "summary": "長期 Deno 使用者在 SvelteKit 專案重用現代 Node，驚訝於完整 ECMAScript 支援、老 API 現代化、再也不用 require()；並改用 PNPM 與 FNM。反映 JS runtime 競爭下 Node 重新站穩的開發者體感。",
+      "tags": [
+        "new_languages",
+        "node",
+        "deno"
+      ],
+      "url": "https://dbushell.com/2026/10/03/deno-to-node/",
+      "source": "David Bushell",
+      "sourceUrl": "https://dbushell.com/2026/10/03/deno-to-node/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261007-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-07",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "openTPU — 由 AI 設計的開源 AI 加速器",
+      "summary": "openTPU 把 agent 設計硬體推到『能否造出跑自己 inference 的晶片』：一個 monorepo 含 SystemVerilog 設計、ISA、bit-exact simulator、kernel compiler 與 host 軟體，在 Kintex-7 FPGA 卡上以真實權重跑十個模型（Qwen3、LFM2.5），輸出與 simulator bit-exact。",
+      "tags": [
+        "ai-designed-silicon",
+        "hardware",
+        "fpga"
+      ],
+      "url": "https://github.com/FeSens/openTPU",
+      "source": "GitHub (FeSens)",
+      "sourceUrl": "https://github.com/FeSens/openTPU",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-07T05:14:29.152046+08:00",
