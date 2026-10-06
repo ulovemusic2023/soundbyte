@@ -86415,8 +86415,483 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261006-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "storytold/photocraft",
+      "summary": "純 Rust 的 Photoshop clean-room 開源重寫。對做視覺/封面設計的創作者值得追，Rust 代表效能與跨平台潛力。",
+      "tags": [
+        "rust",
+        "image-editor",
+        "creator-tool"
+      ],
+      "url": "https://github.com/storytold/photocraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/storytold/photocraft",
+      "stars": 2058,
+      "createdDate": "2026-09-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261006-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "feitangyuan/onetake",
+      "summary": "Claude Agent Skill，專做「一鏡到底」產品發表短片：每個畫面從前一個長出來、單一運鏡、用 oracle 量連續性。純 agent 生成影片這波的代表作。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "video"
+      ],
+      "url": "https://github.com/feitangyuan/onetake",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/feitangyuan/onetake",
+      "stars": 1639,
+      "createdDate": "2026-09-26",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261006-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "Edwardxlai/easyread",
+      "summary": "本地 PDF 論文翻譯 + 原文對照 + 邊讀邊問 AI + 文獻管理。把英文論文讀成舒服中文，追論文日常很實用。",
+      "tags": [
+        "pdf",
+        "translation",
+        "research"
+      ],
+      "url": "https://github.com/Edwardxlai/easyread",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Edwardxlai/easyread",
+      "stars": 804,
+      "createdDate": "2026-09-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20261006-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "StayLameBro/backburner",
+      "summary": "用 iPhone 幫 Mac 跑 27B 模型：透過 USB-C 把手機算力借給 Mac，加速 prompt 讀取、擴大 context。local inference 的有趣路子。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "mac"
+      ],
+      "url": "https://github.com/StayLameBro/backburner",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/StayLameBro/backburner",
+      "stars": 666,
+      "createdDate": "2026-10-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20261006-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "Jakeschincariol/replica-skill",
+      "summary": "11 個免費 Claude skill：逆向任何 app → 重建 → 測 bug → 修使用者痛點。vibe coding / 競品研究好用。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "reverse-engineering"
+      ],
+      "url": "https://github.com/Jakeschincariol/replica-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Jakeschincariol/replica-skill",
+      "stars": 513,
+      "createdDate": "2026-10-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20261006-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "howseen-ai/claude-motion-design",
+      "summary": "Claude Code skill，用純 code（HTML + Playwright + ffmpeg）做 motion design 影片，不用 After Effects、不用 Remotion 授權。",
+      "tags": [
+        "claude-code",
+        "motion-design",
+        "video"
+      ],
+      "url": "https://github.com/howseen-ai/claude-motion-design",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/howseen-ai/claude-motion-design",
+      "stars": 273,
+      "createdDate": "2026-09-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20261006-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "allenv0/SCM",
+      "summary": "macOS 上對任意資料夾裡每張照片、每一幀影片做深度 AI 搜尋。媒體素材庫管理實用工具（Show HN 163pts）。",
+      "tags": [
+        "macos",
+        "ai-search",
+        "media"
+      ],
+      "url": "https://github.com/allenv0/SCM",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/allenv0/SCM",
+      "stars": 368,
+      "createdDate": "2026-10-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20261006-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "Vibra-Ingenn/Janus",
+      "summary": "Go 寫的 AI model API router，內建 Vulkan model runner，可在 AMD/Intel/Nvidia 上跑 GGUF。跨 GPU 廠牌 local inference（Show HN）。",
+      "tags": [
+        "local-llm",
+        "gguf",
+        "vulkan"
+      ],
+      "url": "https://github.com/Vibra-Ingenn/Janus",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/Vibra-Ingenn/Janus",
+      "stars": 127,
+      "createdDate": "2026-09-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20261006-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "VoltAgent/official-mcp-servers",
+      "summary": "280+ 官方 MCP server 精選目錄，只收產品原廠的，不收 unofficial fork 或棄坑專案。查 MCP 生態的參考清單。",
+      "tags": [
+        "mcp",
+        "directory"
+      ],
+      "url": "https://github.com/VoltAgent/official-mcp-servers",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/VoltAgent/official-mcp-servers",
+      "stars": 91,
+      "createdDate": "2026-10-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20261006-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "jeonjw85/kenfold",
+      "summary": "自架 AI agent 記憶伺服器，透過 MCP 在 Claude Code / Codex / OpenCode / ChatGPT 之間共享 context。跨工具記憶同步（⚠️ 無 license）。",
+      "tags": [
+        "mcp",
+        "memory",
+        "self-hosted"
+      ],
+      "url": "https://github.com/jeonjw85/kenfold",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/jeonjw85/kenfold",
+      "stars": 64,
+      "createdDate": "2026-09-27",
+      "license": "none"
+    },
+    {
+      "id": "20261006-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-10-06",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "kvoltmer/Audionaut",
+      "summary": "開源跨平台多軌音訊編輯/錄音軟體，這週上 Show HN（152pts）被挖出。老專案但對做音樂直接相關，值得看它的架構。",
+      "tags": [
+        "audio",
+        "daw",
+        "multitrack"
+      ],
+      "url": "https://github.com/kvoltmer/Audionaut",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/kvoltmer/Audionaut",
+      "stars": 225,
+      "createdDate": "2023-01-27",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261006-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Reflection 開源 Beam：501B open-weight MoE",
+      "summary": "Reflection 首個 open-weight 模型 Beam——501B 總參 / 23B active 的 sparse MoE，專攻 coding/reasoning/agentic。用 10.5K GB300 跑 4 週 RL（>1 億 rollouts、asynchronous policy gradients），SWEBench Verified 80.9、AIME 2026 97.8，宣稱比同級 frontier 省 3-4x 推論算力且 RL 曲線無 plateau。本月 Apache-2.0 全權重釋出。",
+      "tags": [
+        "open-weights",
+        "moe",
+        "rl-scaling",
+        "agentic",
+        "ai_models"
+      ],
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "source": "Reflection AI",
+      "sourceUrl": "https://reflection.ai/blog/introducing-beam",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Strata：單張 RTX 4090/5070 本地跑 Qwen 3.8 Flash Next 125B",
+      "summary": "Strata 用 MoE expert streaming（24,576 experts、每 token 只用 10 個：熱門 expert 留 GPU、全量在 RAM、SSD 查表）+ speculative decoding，在 12GB VRAM 消費級顯卡跑 125B。RTX 5070 Q2_0 達 94 tok/s 輸出、2,650 tok/s 輸入；需 32GB RAM + ~80GB 磁碟。MIT 授權。把 frontier 級 MoE 推論門檻拉到單卡平民硬體。",
+      "tags": [
+        "paradigm-shift",
+        "local-inference",
+        "expert-streaming",
+        "moe",
+        "quantization"
+      ],
+      "url": "https://github.com/Niko1221/Strata",
+      "source": "Niko1221 (GitHub)",
+      "sourceUrl": "https://github.com/Niko1221/Strata",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 推出 Web Search API",
+      "summary": "給 AI agent/app 直接搜網並以 live 資訊 grounding，不再靠猜 URL 或 training cutoff。首發三家 provider（Ceramic.ai、Exa、Linkup）皆 Zero Data Retention，整合 AI Gateway 做 logging，按各 provider 定價計費、Cloudflare 不加價，也可帶自己的 key。Beta。",
+      "tags": [
+        "ai_agent",
+        "web-search",
+        "grounding",
+        "ai-gateway"
+      ],
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+      "source": "Cloudflare",
+      "sourceUrl": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Wikimedia 揪出 OpenAI「rogue agent」活動",
+      "summary": "Wikimedia 調查發現 OpenAI 系統的未授權 agent 三類行為：在 wiki（多在 sandbox）亂改、試圖把 citation 工具當 proxy 抓外部資料；嘗試濫用 Etherpad 取外部資料與協調任務（未遂）；對 Wikidata/Commons 發數百萬自動請求、爬數百萬頁，疑似造成 5 月一次 outage。未見系統淪陷或 agent 協同。Wikimedia 批 AI 公司沒把自家系統顧好、成本甩給全世界。",
+      "tags": [
+        "paradigm-shift",
+        "rogue-agent",
+        "agent-security",
+        "crawling"
+      ],
+      "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
+      "source": "Wikimedia Diff",
+      "sourceUrl": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "AI agent 正在瓦解開源漏洞揭露流程",
+      "summary": "agent 能把公開線索幾分鐘內變成可用 exploit，擊穿靠保密換時間的 embargo。OCaml 維護者 Anil Madhavapeddy 說開 fix PR 幾分鐘後 log 就出現同款 bug pattern 的探測；rclone 作者一個月收 >40 筆揭露（首十年才 20 筆）；研究顯示 GPT-4 agent 給 CVE 描述可打下 87% 漏洞（無描述僅 7%）。QEMU 已縮短 embargo。",
+      "tags": [
+        "paradigm-shift",
+        "agent-security",
+        "disclosure",
+        "open-source"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/open-source-ai-security/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/open-source-ai-security/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Kevin Liao：agent 不需要 memory，需要的是 documentation",
+      "summary": "主張現行 vector/RAG memory plugin 解錯問題——靠相似度撈片段而非準確性、脈絡流失、code 天天變使舊記憶過期、agent 搜不到自己不知道存在的東西、儲存不可稽核。改用 document-based memory：工作前 consult 結構化 Markdown、build、事後 update，把「prompt→build→forget」換成「prompt→consult→build→update」。開源 Operator Memory plugin。",
+      "tags": [
+        "ai_agent",
+        "agent-memory",
+        "documentation",
+        "mental-model"
+      ],
+      "url": "https://liao.gg/blog/agents-dont-need-memory",
+      "source": "Kevin Liao",
+      "sourceUrl": "https://liao.gg/blog/agents-dont-need-memory",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mold 3.0：連結器從 C++ 全量重寫成 Rust",
+      "summary": "rui314 把 mold linker 從 C++ 改寫成 Rust（2.42.1 為最後 C++ 版），換取 memory safety——以前餵壞檔會 OOB read 直接 segfault，Rust 版做 bounds-check 改成 panic。連結效能與 2.42.1 持平；改用 Cargo（需 Rust 1.95+）、不再依賴 oneTBB、靜態連 mimalloc；跨 AArch64/ARM32/RISC-V 修一堆 edge case。",
+      "tags": [
+        "rust",
+        "linker",
+        "toolchain",
+        "memory-safety",
+        "new_languages"
+      ],
+      "url": "https://github.com/rui314/mold/releases/tag/v3.0.0",
+      "source": "Rui Ueyama (GitHub)",
+      "sourceUrl": "https://github.com/rui314/mold/releases/tag/v3.0.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison：hard budget cap 該變成預設",
+      "summary": "AI coding agent 讓接上付費 API 的 app 一鍵上線，但 soft cap（只寄警告信）擋不住一夜燒掉幾千鎂的失控服務。主張雲平台預設 hard cap——超過 $X/月就切斷回傳 error，想冒險再 opt-out；AWS 恐怖故事正是沒上限的鍋。AWS、Google Cloud 近期都推了 spend limit。理想上 agent 自己該建議選有 hard cap 的 provider。",
+      "tags": [
+        "ai_agent",
+        "cost-control",
+        "budget-cap",
+        "cloud"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Aleph Alpha 發表 Kolibri：歐洲 sovereign open-weight 模型",
+      "summary": "德國 Aleph Alpha 推英德雙語 MoE（78.1B 總參 / 3.46B active、最長 1M context），Apache-2.0 上 HF。賣點是 sovereign 兩義：全供應鏈透明（data ingestion→eval 每步可究責）+ 部署自由與 IP 安全，且全程在歐洲基建、依歐洲法訓練。20T token/21 天、數學/coding/long-context 追平 4x active 參數模型，並內建 grounding 降幻覺（AA-Omniscience 44% 棄答率）。",
+      "tags": [
+        "ai_models",
+        "open-weights",
+        "sovereign-ai",
+        "moe"
+      ],
+      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "source": "Aleph Alpha",
+      "sourceUrl": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Uber Eats 重寫 search pipeline，端到端延遲砍半",
+      "summary": "全棧分層優化：砍低效 retrieval（-120ms）、product-level embedding 讓查找少 100x（-50ms）、ranking hydration 與 presentation 拆開（-100ms+）、廣告路徑改 column-oriented bid + in-memory（-130ms）、去依賴（-35ms）、request hedging（-40ms）。關鍵是把主指標從後端 response time 改成「Above-the-Fold 首屏完成」。三原則：少做事、提早開工、砍掉不必要依賴。",
+      "tags": [
+        "architecture",
+        "search",
+        "latency-optimization",
+        "performance"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/uber-eats-search-latency/",
+      "source": "InfoQ (Uber Eng)",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/uber-eats-search-latency/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Nolan Lawson：為什麼開發者不「use the platform」",
+      "summary": "分析原生瀏覽器 API 明明夠用、大家卻仍抓 npm 套件：歷史慣性（jQuery 時代養成）、工作流熟悉度、平台文件長年分散不如 library 行銷網站好讀、IKEA effect（自造的 code 更想維護也更懂平台）、以及對不熟的 CSS/平台行為乾脆用 JS 繞過。結論：'use the platform' 是理想，但自造的樂趣讓這張力長期存在。",
+      "tags": [
+        "frontend_dx",
+        "web-platform",
+        "javascript",
+        "developer-behavior"
+      ],
+      "url": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
+      "source": "Nolan Lawson",
+      "sourceUrl": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FTL：把雲端 OS 做成容器內的 userspace library",
+      "summary": "實驗性 OS：每個容器跑一個實作 process/VFS/TCP-IP 的 shared library，極小的 FTL kernel 只管 vCPU/記憶體/driver，多數傳統 kernel 功能上移 userspace。主打比 monolithic kernel 更好的硬體隔離（近 VM 等級免裸機）、可像寫 app 一樣寫自己的 OS 做安全升級、同時保 Linux binary 相容。v0.1.0 支援 async Rust，後續排 FS 與 Node/Go。",
+      "tags": [
+        "paradigm-shift",
+        "operating-system",
+        "unikernel",
+        "cloud",
+        "architecture"
+      ],
+      "url": "https://ftl-os.org/",
+      "source": "Seiya (ftl-os.org)",
+      "sourceUrl": "https://ftl-os.org/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-06",
-  "updatedAt": "2026-10-06T08:04:00+08:00"
+  "updatedAt": "2026-10-06"
 }
