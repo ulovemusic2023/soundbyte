@@ -86353,8 +86353,29 @@
       "stars": null,
       "createdDate": "2026-10-02",
       "license": "n/a"
+    },
+    {
+      "id": "20261006-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "jamwithai/production-agentic-rag-course",
+      "summary": "一套教你把 RAG 做到 production 等級的開源課程，重點在 agentic RAG——讓 retrieval 變成 agent 會規劃、會重試的流程，而不是一次性塞 context。短時間衝上 GitHub Trending（9.6k stars），適合想把本地 RAG 從 demo 推到能用的人。",
+      "tags": [
+        "rag",
+        "agentic-rag",
+        "llm",
+        "course"
+      ],
+      "url": "https://github.com/jamwithai/production-agentic-rag-course",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "不需 GPU（教學/程式碼）",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-02",
-  "updatedAt": "2026-10-02T05:20:00+08:00"
+  "lastUpdated": "2026-10-06",
+  "updatedAt": "2026-10-06T08:04:00+08:00"
 }
