@@ -86374,6 +86374,47 @@
       "price": null,
       "vram": "不需 GPU（教學/程式碼）",
       "license": "MIT"
+    },
+    {
+      "id": "20261006-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-06",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "別讓「穴居人的負面偏誤」統治你的人生",
+      "summary": "DHH 區分兩種恐懼：對「可信且立即」的威脅警覺是生存機制（the gift of fear），但對氣候、他人財富、AI 這類無法控制的事「模糊地焦慮」只是 rumination，會磨壞大腦。重點不是盲目樂觀，而是把注意力留給能改變的事——否則不管終結者來不來，你都白白錯過了當下的智力與創造力爆發。",
+      "tags": [
+        "mental-model",
+        "negativity-bias",
+        "focus"
+      ],
+      "url": "https://world.hey.com/dhh/what-on-earth-are-you-dooming-about-386cc1da",
+      "source": "David Heinemeier Hansson (DHH)",
+      "sourceUrl": "https://world.hey.com/dhh/what-on-earth-are-you-dooming-about-386cc1da",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261006-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-06",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Agentic 時代的必備預設：硬性預算上限（hard budget caps）",
+      "summary": "Simon Willison 指出 coding/personal agent 大幅降低開啟「會花錢服務」的摩擦，「睡一覺醒來帳單暴增幾千美元」將變常態。軟性 email 警告不夠，必須是超過 $X 就直接回傳錯誤、硬停的預設；想冒險的人再 opt-out。多數人寧願服務報錯也不要意外萬元帳單。AWS 幾週前終於上線 spend limit。",
+      "tags": [
+        "agentic",
+        "cost-control",
+        "defaults",
+        "operational"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-06",
