@@ -87630,8 +87630,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261008-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "冗餘（redundancy）才是進步的引擎 —— 工作被取代不是失敗，是進步的樣子",
+      "summary": "DHH 的框架：農夫從美國人口的 90% 掉到約 1%、接線生與打字員消失，都不是災難而是進步本身。程式設計師不該預期一個靜止的就業市場——軟體變便宜會催生新的 app 與服務，白領自動化也會長出新角色。他同時承認：對社會長期有利、對個人短期可能很痛，兩者都是真的，所以同理與支持有其必要。但想用立法擋住改變通常只會拖慢進步，擋不住。",
+      "tags": [
+        "ai-displacement",
+        "progress",
+        "labor-market"
+      ],
+      "url": "https://world.hey.com/dhh/redundancy-is-the-engine-of-progress-76499402",
+      "source": "DHH (David Heinemeier Hansson)",
+      "sourceUrl": "https://world.hey.com/dhh/redundancy-is-the-engine-of-progress-76499402",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "當 agent 讓「人人都是 hacker」—— 無頭機器跑 agent 的安全新局",
+      "summary": "Ben Thompson 專門跑 Claude 與 Codex agent 的 Mac Mini，因 screen-sharing 漏洞加上 5900 port 對外開放被入侵；諷刺的是那台 always-on 的 agent 反而最先偵測到入侵並協助追蹤。洞察：Apple 的權限模型（TCC／Full Disk Access）是為「有人在前面操作」設計的，完全不適合無頭、全天候跑 agent 的機器。當 agent 把每個人都變成 hacker，走向封閉花園的 Apple 可能不再是預設選擇——他已經買了一台 Linux server。",
+      "tags": [
+        "ai-agents",
+        "security",
+        "platform-strategy"
+      ],
+      "url": "https://stratechery.com/2026/apple-and-a-hackers-future/",
+      "source": "Ben Thompson · Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/apple-and-a-hackers-future/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "寫技術文章最大的毛病不是不夠專業，是太刻意",
+      "summary": "Michael Lynch 列出軟體寫作的反模式：冗長的開場、誤判讀者已知多少、假設讀者看過你之前的文章、過度正式、用連結代替解釋術語。解法濃縮成一句：『Just write the way you talk.』像你說話那樣寫。",
+      "tags": [
+        "writing",
+        "communication",
+        "personal-brand"
+      ],
+      "url": "https://refactoringenglish.com/blog/anti-patterns-software-blogging/",
+      "source": "Michael Lynch · Refactoring English",
+      "sourceUrl": "https://refactoringenglish.com/blog/anti-patterns-software-blogging/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-08",
-  "updatedAt": "2026-10-08T05:15:01.686693"
+  "updatedAt": "2026-10-08T05:34:18.230234+08:00"
 }
