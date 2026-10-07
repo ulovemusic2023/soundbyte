@@ -87690,8 +87690,132 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261008-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "nykooi1/vibe-wise",
+      "summary": "Claude Code plugin，讓 AI 寫 code 的同時教你怎麼 build，邊做邊學、不把 vibe coding 變黑箱。",
+      "tags": [
+        "claude-code",
+        "plugin",
+        "vibe-coding",
+        "learning"
+      ],
+      "url": "https://github.com/nykooi1/vibe-wise",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-24+stars:>50&type=repositories",
+      "stars": 2963,
+      "createdDate": "2026-09-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20261008-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "feder-cr/invisible_playwright_mcp",
+      "summary": "反偵測的 Playwright MCP server，用 stealth Firefox 繞過 anti-bot 和 captcha，給 agent 做網頁自動化、爬蟲、computer use。",
+      "tags": [
+        "mcp",
+        "playwright",
+        "scraping",
+        "computer-use"
+      ],
+      "url": "https://github.com/feder-cr/invisible_playwright_mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 2644,
+      "createdDate": "2026-09-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20261008-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "firelex/jeff",
+      "summary": "0.8B 開源 \"System 1\" 決策模型，毫秒級在你給的選項中做選擇並給校準機率。單一 base + 可換 LoRA adapter，跑在自己硬體上。",
+      "tags": [
+        "local-llm",
+        "decision-model",
+        "lora",
+        "on-device"
+      ],
+      "url": "https://github.com/firelex/jeff",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-24+stars:>50&type=repositories",
+      "stars": 1434,
+      "createdDate": "2026-09-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20261008-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "oil-oil/oil-ui",
+      "summary": "把 AI 的 UI 設計能力推到極限：探索不同設計方向、並排比較、對著真實截圖迭代微調。",
+      "tags": [
+        "ai-ui",
+        "design",
+        "claude-code"
+      ],
+      "url": "https://github.com/oil-oil/oil-ui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 1008,
+      "createdDate": "2026-09-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20261008-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "alchaincyf/huashu-art-motion",
+      "summary": "藝術動畫 skill：35 種藝術風格、9 種解說語法，用 code 讓畫動起來。適合做知識型／創作型影片。",
+      "tags": [
+        "animation",
+        "art",
+        "agent-skill",
+        "creator"
+      ],
+      "url": "https://github.com/alchaincyf/huashu-art-motion",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-24+stars:>50&type=repositories",
+      "stars": 1553,
+      "createdDate": "2026-10-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20261008-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-10-08",
+      "cycle": "thursday",
+      "priority": "on-the-radar",
+      "title": "zeronsh/zeron",
+      "summary": "給 Claude Code/Codex/Cursor/Devin 等 coding agent 的原生 control plane，Rust 寫的。本週 Rust trending。",
+      "tags": [
+        "coding-agent",
+        "control-plane",
+        "rust"
+      ],
+      "url": "https://github.com/zeronsh/zeron",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 3086,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-10-08",
-  "updatedAt": "2026-10-08T05:34:18.230234+08:00"
+  "updatedAt": "2026-10-08T05:40:00+08:00"
 }
