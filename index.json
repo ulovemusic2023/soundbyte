@@ -87403,6 +87403,233 @@
       "price": null,
       "vram": "125B MoE 需大量 RAM offload，VRAM 12GB+",
       "license": "MIT"
+    },
+    {
+      "id": "20261008-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Spanner Omni Reaches GA, Replacing Google's Atomic Clocks and File System with Software",
+      "summary": "Google 的 distributed SQL 資料庫正式 GA，可跑在自家機房、其他雲（含 AWS）甚至筆電上。用 software-based error-bounded time sync 取代 TrueTime 原子鐘、用 Colossus-like abstraction layer 取代 Colossus 檔案系統；代價是客戶自管部署無 availability SLA、且排除 BigQuery 等 GCP 綁定整合。",
+      "tags": [
+        "distributed-systems",
+        "spanner",
+        "software-defined-truetime",
+        "paradigm-shift"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/spanner-omni-deploy-anywhere-ga/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/spanner-omni-deploy-anywhere-ga/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare Introduces cf CLI for AI Agents, Sunsetting Wrangler",
+      "summary": "Cloudflare 推出 open-beta 的 cf CLI（TypeScript、Apache-2.0/MIT），預設輸出 JSON 讓 agent 可解析、用 cloudflare.config.ts 給 agent type-safety 與 LSP 支援。透過 Forge pipeline 從 OpenAPI schema 生成 3000+ 指令（Wrangler 僅約 280）。Wrangler 將在 beta 後棄用，提供 18 個月維護期。agent-first CLI 設計正式成形。",
+      "tags": [
+        "ai-agent",
+        "cli",
+        "agent-first-cli",
+        "cloudflare",
+        "paradigm-shift"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-cf-cli/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/cloudflare-cf-cli/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Survey: AI-Generated Code Increases Debugging and Failure Rates, Creates Comprehension Gap",
+      "summary": "Undo 委託調查 300 位資深工程主管（多為 mission-critical C/C++）：團隊每週寫 code 約 9.8 小時、debug 卻達 16.9 小時（佔工時 42%）。35% 的 AI 生成 code 在團隊完全理解前就進 production；81% 半年內出過 production incident。瓶頸從生成轉移到除錯與理解，release cycle 整體「沒有變快」。",
+      "tags": [
+        "ai-coding",
+        "comprehension-gap",
+        "developer-experience"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/survey-complex-codebases-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/survey-complex-codebases-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic releases Claude Haiku 5.5",
+      "summary": "Anthropic 推出 fast/low-cost 模型 Haiku 5.5：$0.10/$0.50 per M tokens（100K 內），超過 100K 漲 5 倍。較 Haiku 4.5 的 $1/$5 大降，但換了較不省的 tokenizer（同 prompt 約多 1.25x tokens），且無法關閉 reasoning。Simon Willison 實測 100K 內 benchmark 高於同價的 GPT-6 Luna。",
+      "tags": [
+        "ai-models",
+        "claude",
+        "llm-pricing"
+      ],
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+      "summary": "Cloudflare Managed Defense 用專職 AI agents 分析安全告警，關鍵在把 deterministic evidence collection 與 model inference 分離：證據蒐集走確定性流程、模型只負責推理判讀，降低 agent 幻覺污染決策。evidence-grounded agent 的實務架構範例。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "evidence-grounded-agent"
+      ],
+      "url": "https://blog.cloudflare.com/agentic-security-operations/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/agentic-security-operations/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Uses an AI Harness to Probe and Harden Its WAF",
+      "summary": "Cloudflare 用 frontier model 建 test harness，從被擋下的攻擊自動生成新攻擊變體來壓測、強化 WAF 規則。把 LLM 當紅隊自動化，持續產生 adversarial 變異。",
+      "tags": [
+        "ai-agent",
+        "security",
+        "waf",
+        "red-teaming"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-sec-harness/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/cloudflare-sec-harness/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Grab Redesigns Counter Service Storage for 50% Lower P99 Latency",
+      "summary": "Grab 把 Counter Service 從 wide-column 資料庫遷到 Aerospike，read latency、disk 用量、單節點成本都下降，P99 延遲降約 50%。高流量計數服務的 storage engine 選型實戰。",
+      "tags": [
+        "architecture",
+        "distributed-systems",
+        "aerospike",
+        "latency"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/grab-counter-aerospike-migration/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/grab-counter-aerospike-migration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Akka Tests Spec-Driven AI Delivery across 65 Open Source Projects",
+      "summary": "Akka 做了跨 65 個 OSS 專案的實驗，看 specification、model、validation 如何影響 AI 輔助的 code porting 品質。把「spec 驅動」當成約束 AI 產出正確性的方法論。",
+      "tags": [
+        "ai-coding",
+        "spec-driven-delivery",
+        "architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/ai-spec-driven-delivery/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/ai-spec-driven-delivery/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenTelemetry Makes Kubernetes Attributes Processor Stable (v1.0.0)",
+      "summary": "OpenTelemetry 的 Kubernetes attributes processor 達 v1.0.0 stable，observability schema 持續成熟，K8s 環境的 telemetry 屬性標註正式穩定可用。",
+      "tags": [
+        "devops",
+        "observability",
+        "opentelemetry",
+        "kubernetes"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Push ifs up and fors down: the idiom, its algebra, and its limits",
+      "summary": "一篇流傳的 code 結構 idiom 解析：把條件判斷往呼叫端上推、把迴圈往被呼叫端下壓，可簡化函式邊界、提升可組合性與效能；文中也談這招的代數意義與適用界線。",
+      "tags": [
+        "code-idiom",
+        "architecture",
+        "refactoring"
+      ],
+      "url": "https://debasishg.github.io/blog/push-ifs-up-fors-down/",
+      "source": "debasishg.github.io (HN)",
+      "sourceUrl": "https://debasishg.github.io/blog/push-ifs-up-fors-down/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261008-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Shipping JPEG XL in Chrome",
+      "summary": "Chrome 宣布導入 JPEG XL 支援，web 影像格式再添一員；對前端影像效能與相容性策略有影響。",
+      "tags": [
+        "frontend",
+        "web-platform",
+        "chrome",
+        "image-format"
+      ],
+      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
+      "source": "Chrome Developers",
+      "sourceUrl": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-08",
