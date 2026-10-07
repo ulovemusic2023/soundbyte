@@ -87109,8 +87109,302 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261007-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "storytold/filmcraft",
+      "summary": "Adobe Premiere Pro 的 clean-room 純 Rust 重寫，跟前幾天的 photocraft（Photoshop）同一團隊。非線性剪輯核心完全開源，對做內容/MV 的人是值得盯的 creator tool。",
+      "tags": [
+        "creator-tool",
+        "video-editor",
+        "rust"
+      ],
+      "url": "https://github.com/storytold/filmcraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 1470,
+      "createdDate": "2026-09-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261007-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "shader-effects-inc/shaders",
+      "summary": "給 React / Vue / Svelte / Solid / Framer 的 WebGPU 視覺元件庫，一行就能掛上 GPU 加速的 shader 效果。做網站 landing / 視覺化很好用。",
+      "tags": [
+        "webgpu",
+        "frontend",
+        "shaders"
+      ],
+      "url": "https://github.com/shader-effects-inc/shaders",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending/typescript",
+      "stars": 1086,
+      "createdDate": "2026-09-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20261007-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "shinshin86/mesh-avatar-studio",
+      "summary": "丟一張插畫，用 coding agent + 本地編輯器把它變成可動的 2D mesh avatar。對做 MV / 虛擬人物 / 直播素材的創作者是現成管線。",
+      "tags": [
+        "avatar",
+        "animation",
+        "coding-agent"
+      ],
+      "url": "https://github.com/shinshin86/mesh-avatar-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 382,
+      "createdDate": "2026-10-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20261007-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "Jakeschincariol/arena-skill",
+      "summary": "Claude 答得爛就讓它自己打擂台：同一題跑 100 種策略、淘汰賽、留一個最強答案。免費 Claude Code skill，和昨天的 replica-skill 同作者。",
+      "tags": [
+        "claude-code",
+        "agent-skill"
+      ],
+      "url": "https://github.com/Jakeschincariol/arena-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 303,
+      "createdDate": "2026-09-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20261007-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "fumingyang2004/Tulpa",
+      "summary": "基於 Windows 本地 QQ + 微信的 Harness/MCP，讓 agent 做即時檢索、跟進、記憶與工作區管理；同時開 MCP 版給 Codex / Claude Code / Antigravity 用。",
+      "tags": [
+        "mcp",
+        "harness",
+        "local"
+      ],
+      "url": "https://github.com/fumingyang2004/Tulpa",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 184,
+      "createdDate": "2026-09-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20261007-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "scaleapi/agentenv-framework",
+      "summary": "Scale AI 開源的 RL 環境建構框架，統一處理 artifacts、環境工具、動態性與可重現性——這塊一直沒有好用的開源方案。訓練 agent 的人值得看。",
+      "tags": [
+        "ai-agent",
+        "rl",
+        "infra"
+      ],
+      "url": "https://github.com/scaleapi/agentenv-framework",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 86,
+      "createdDate": "2026-09-24",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261007-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "phprs-cms/kaletacms",
+      "summary": "開源企業網站 CMS：視覺化 page builder + token design system，而且 Claude 可以直接透過 MCP 操作。想用 agent 管網站內容可以試。",
+      "tags": [
+        "cms",
+        "mcp",
+        "web"
+      ],
+      "url": "https://github.com/phprs-cms/kaletacms",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 65,
+      "createdDate": "2026-09-24",
+      "license": "GPL-2.0"
+    },
+    {
+      "id": "20261007-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "lintsinghua/paint-mv-skills",
+      "summary": "把一首歌和歌詞變成手繪水彩風 MV 的 agent skills（p5.brush + headless Chrome + ffmpeg），沿用 PDoomVideo 的 pipeline。星少但方向很對 Gary 的音樂創作。",
+      "tags": [
+        "music-video",
+        "agent-skill",
+        "ffmpeg"
+      ],
+      "url": "https://github.com/lintsinghua/paint-mv-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "stars": 31,
+      "createdDate": "2026-09-25",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261007-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "TecharoHQ/anubis",
+      "summary": "本週 Go trending：用工作量證明「秤 HTTP 請求的靈魂」來擋 AI 爬蟲，站長界現在很紅。自己架站被 AI bot 爬爆的話是現成解法。",
+      "tags": [
+        "anti-crawler",
+        "infra",
+        "go"
+      ],
+      "url": "https://github.com/TecharoHQ/anubis",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go",
+      "stars": 23132,
+      "createdDate": "2025-03-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20261007-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "Gaurav-Gosain/tuios",
+      "summary": "會看懂你 agent 在幹嘛的 terminal window manager：平鋪分頁、workspace、重啟後 session 還在，還有一個收所有 coding agent 的 Inbox。管多個 agent 必看。",
+      "tags": [
+        "tui",
+        "coding-agent",
+        "terminal"
+      ],
+      "url": "https://github.com/Gaurav-Gosain/tuios",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go",
+      "stars": 4936,
+      "createdDate": "2025-09-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20261007-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "harry7557558/spirula-studio",
+      "summary": "跨廠商 3D Gaussian Splatting 訓練器：影片 → splat → mesh，支援 Vulkan 或 CUDA。做 3D / 視覺素材的可以玩。",
+      "tags": [
+        "3d",
+        "gaussian-splatting",
+        "cpp"
+      ],
+      "url": "https://github.com/harry7557558/spirula-studio",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/c++",
+      "stars": 1471,
+      "createdDate": "2024-05-04",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261007-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "product-hunt",
+      "title": "ledge.sh",
+      "summary": "可執行的 Markdown 筆記：把指令直接寫進筆記裡一鍵跑，Show HN 204 分。適合整理 runbook / 日常雜務流程。",
+      "tags": [
+        "dev-tool",
+        "markdown"
+      ],
+      "url": "https://ledge.sh/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 204,
+      "createdDate": null,
+      "license": null
+    },
+    {
+      "id": "20261007-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-10-07",
+      "cycle": "wed",
+      "priority": "product-hunt",
+      "title": "pipod.dev",
+      "summary": "把你的 pi coding agent 跑在自己 server 的 sandbox 裡，Show HN 121 分。想安全地放 agent 跑自動化任務的可以看。",
+      "tags": [
+        "coding-agent",
+        "sandbox"
+      ],
+      "url": "https://pipod.dev/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 121,
+      "createdDate": null,
+      "license": null
+    },
+    {
+      "id": "20261008-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "pegainfer-project/pega-omni",
+      "summary": "Rust 寫的 OpenAI 相容語音服務：streaming TTS + full-duplex voice，宣稱單張 GPU 128 路併發。要自架低延遲語音後端可評估。⚠️ repo 無授權（license None），商用前要先問作者。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://github.com/pegainfer-project/pega-omni",
+      "source": "GitHub API (topic:text-to-speech)",
+      "sourceUrl": "https://github.com/pegainfer-project/pega-omni",
+      "price": null,
+      "vram": "streaming TTS 模型偏小",
+      "license": "None (⚠️ 未標授權)"
+    },
+    {
+      "id": "20261008-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "sergqwer/strata-nvfp4",
+      "summary": "Strata fork，把 125B MoE 模型用 ModelOpt NVFP4 塞進單張 12GB+ RTX（含 50 系列）+ 64GB 以上 RAM：W4A8 prompt path、AVX-512 CPU experts、低 RAM 分層。這組設定正好對應你的 RTX 5070 Ti 16GB + 64GB RAM。⚠️ 模型版本宣稱未獨立查證，以 repo 說法為準。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://github.com/sergqwer/strata-nvfp4",
+      "source": "GitHub API (topic:llm-inference)",
+      "sourceUrl": "https://github.com/sergqwer/strata-nvfp4",
+      "price": null,
+      "vram": "125B MoE 需大量 RAM offload，VRAM 12GB+",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-07",
-  "updatedAt": "2026-10-07T05:30:00+08:00"
+  "lastUpdated": "2026-10-08",
+  "updatedAt": "2026-10-08T05:15:01.686693"
 }
