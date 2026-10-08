@@ -88134,8 +88134,230 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261009-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "storytold/designcraft",
+      "summary": "storytold 系列又一發——純 Rust 乾淨室重寫的 Adobe Illustrator。photocraft/lightcraft/filmcraft/vectorcraft 家族都在這兩週爆量，開源取代 Adobe 的 Rust 浪潮成形中。",
+      "tags": [
+        "creative-tools",
+        "rust",
+        "design"
+      ],
+      "url": "https://github.com/storytold/designcraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-09-25+stars:>50&type=repositories",
+      "stars": 1570,
+      "createdDate": "2026-10-01",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "GTKottman/mortiflix-oss",
+      "summary": "在自己機器上的 motion design 工作室：Claude 一步步做影片，每個階段都要你核准。自帶 Claude Code 或 API key。適合要做 MV / 視覺動畫但想控流程的創作者。",
+      "tags": [
+        "claude-code",
+        "motion-design",
+        "creator"
+      ],
+      "url": "https://github.com/GTKottman/mortiflix-oss",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-09-25&type=repositories",
+      "stars": 456,
+      "createdDate": "2026-10-05",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "openqodex/openqodex",
+      "summary": "為 Claude Code / Codex 做的開源 AI code review，push 前先掃 SAST、secrets、依賴、lint（只跑改動的行），再由獨立 reviewer 複查每個發現。不用額外 API key。",
+      "tags": [
+        "ai-agent",
+        "code-review",
+        "claude-code"
+      ],
+      "url": "https://github.com/openqodex/openqodex",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-09-25&type=repositories",
+      "stars": 420,
+      "createdDate": "2026-10-02",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "cv-cat/catbus",
+      "summary": "一個命令操作小紅書/抖音/TikTok/B站/快手/微博/閒魚/淘寶/京東/X，統一命令與 JSON 輸出，給人和 AI Agent 用。適合跨平台社群發文/監看自動化。",
+      "tags": [
+        "ai-agent",
+        "social",
+        "automation"
+      ],
+      "url": "https://github.com/cv-cat/catbus",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:ai-agent+created:>2026-09-25&type=repositories",
+      "stars": 224,
+      "createdDate": "2026-09-27",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "strands-agents/box",
+      "summary": "把 AI agent 關進沙箱，限制能執行/讀/寫/連網的範圍。OS 隔離 + default-deny 政策 + 把密鑰擋在 agent 外的 credential injection。Rust 寫，目前支援 Apple Silicon macOS。",
+      "tags": [
+        "agent-sandbox",
+        "mcp",
+        "rust",
+        "security"
+      ],
+      "url": "https://github.com/strands-agents/box",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp+created:>2026-09-25&type=repositories",
+      "stars": 223,
+      "createdDate": "2026-10-02",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "botbus-io/botbus-protocol",
+      "summary": "BotBus 協定：讓電腦上的 menu bar app 跟手機/手錶 app 同步，從任何地方 follow、核准、啟動 Codex 和 Claude Code 任務。附公開 fixtures。遠端遙控 coding agent 的開放協定。",
+      "tags": [
+        "coding-agent",
+        "protocol",
+        "claude-code"
+      ],
+      "url": "https://github.com/botbus-io/botbus-protocol",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:coding-agent+created:>2026-09-25&type=repositories",
+      "stars": 88,
+      "createdDate": "2026-09-27",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "mcpdelta/mcpdelta",
+      "summary": "Delta MCP 夾在 AI app 和它的 MCP servers 之間：一個 task 一支程式，取代一步一個 tool call，官方 benchmark 省到 24.1× tokens。每次變更可記錄、可還原。",
+      "tags": [
+        "mcp",
+        "efficiency",
+        "tokens"
+      ],
+      "url": "https://github.com/mcpdelta/mcpdelta",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp+created:>2026-09-25&type=repositories",
+      "stars": 79,
+      "createdDate": "2026-10-07",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "RoversX/ThinkTerm",
+      "summary": "內建 multiplexer 的現代終端機：關掉它 session 照跑，可跨機器開 shell 和一堆 AI agent，再從桌面/瀏覽器/TUI 接回來。Rust 寫、介面直接畫在 GPU 上，無 Electron/webview。",
+      "tags": [
+        "terminal",
+        "coding-agent",
+        "rust"
+      ],
+      "url": "https://github.com/RoversX/ThinkTerm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:coding-agent+created:>2026-09-25&type=repositories",
+      "stars": 67,
+      "createdDate": "2026-10-01",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Dicklesworthstone/frankensonos",
+      "summary": "記憶體安全的 Rust 控制器，操作自己 LAN 上的 Sonos 喇叭（S1+S2 SSDP/UPnP/GENA 互通），附 Spotify 曲庫古典樂 DJ，以及 CLI + HTTP API + MCP server 讓 AI agent 管整個音響系統，可透過 Tailscale 離網控制。",
+      "tags": [
+        "audio",
+        "mcp",
+        "rust"
+      ],
+      "url": "https://github.com/Dicklesworthstone/frankensonos",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp+created:>2026-09-25&type=repositories",
+      "stars": 67,
+      "createdDate": "2026-10-06",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "rakesh0x/OpenCardboard",
+      "summary": "local-first 的「對話即剪輯」AI 影片編輯器，你的素材永遠不離開本機。對創作者隱私友善的本地影片工具。",
+      "tags": [
+        "video",
+        "local-first",
+        "creator"
+      ],
+      "url": "https://github.com/rakesh0x/OpenCardboard",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp+created:>2026-09-25&type=repositories",
+      "stars": 58,
+      "createdDate": "2026-10-04",
+      "license": "unknown"
+    },
+    {
+      "id": "20261009-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-10-09",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "igrbible/Ruach_Studio",
+      "summary": "為 YuE2 打造的完整音樂工作室 + WebUI：先寫譜（ABC/MIDI）、LoRA 訓練、分軌、remaster、upscale、歌詞檢查、DAW 匯出。基於 yue2.cpp，支援 7 語言，在自己 GPU 上從文字生成歌曲。直接關聯 Gary 的音樂製作。",
+      "tags": [
+        "music-generation",
+        "yue2",
+        "daw",
+        "audio"
+      ],
+      "url": "https://github.com/igrbible/Ruach_Studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:music-generation+created:>2026-09-25&type=repositories",
+      "stars": 23,
+      "createdDate": "2026-10-05",
+      "license": "unknown"
     }
   ],
   "lastUpdated": "2026-10-09",
-  "updatedAt": "2026-10-08T21:34:15.254835Z"
+  "updatedAt": "2026-10-09T05:44:14.678224+08:00"
 }
