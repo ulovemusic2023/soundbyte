@@ -88094,8 +88094,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261009-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-09",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "寫程式的本質，AI 動不了的那一塊",
+      "summary": "Carson Gross（htmx 作者）把 programming 的核心拆成兩件事：用電腦解問題、以及解問題時控制複雜度。他的推論是——很難想像一個『會解問題 + 能馴服複雜度』比今天更不值錢的未來，所以就算 AI 工具再強，這條職涯路依然成立。重點不是語法會不會被取代，而是你有沒有在練那兩塊底層肌肉。",
+      "tags": [
+        "ai-age",
+        "career-durability",
+        "first-principles"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/8/carson-gross/",
+      "source": "Carson Gross (htmx.org)",
+      "sourceUrl": "https://htmx.org/essays/yes-and/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-09",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "當 AI 解開了定義你 24 年的難題",
+      "summary": "Jake Boggan 斷斷續續花了 24 年在證明 Barnette's Conjecture，去年還一度以為自己解開了；結果 OpenAI 的 math 專案把它證了出來。他說那種感受不是恐懼，而是一種說不上來的失落。當 AI 開始跨進那些『定義了你是誰』的難題，這種情緒會是 AI 時代越來越常見、卻很少被談的心境。",
+      "tags": [
+        "ai-age",
+        "meaning",
+        "human-condition"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
+      "source": "Jake Boggan (Hacker News)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=49984923",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-09",
-  "updatedAt": "2026-10-08T21:13:45.022107Z"
+  "updatedAt": "2026-10-08T21:34:15.254835Z"
 }
