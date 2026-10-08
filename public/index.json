@@ -87814,8 +87814,63 @@
       "stars": 3086,
       "createdDate": "2026-07-20",
       "license": "MIT"
+    },
+    {
+      "id": "20261009-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "canberkkkkkk/ema-lightning",
+      "summary": "超輕量 Turkish TTS：DiT acoustic 5.6M + vocoder 3M = 8.6M 參數、約 34MB。Freya-TR-Eval WER 0.92%，低於 ElevenLabs v4、Gemini 3.8 與 2.38B 的 Trendyol-TTS。RTX 4090 首段 3.86ms、440× 即時速度，支援 streaming，GPU/CPU 全離線。目前僅土耳其語。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://huggingface.co/canberkkkkkk/ema-lightning",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "8.6M 參數 / ~34MB，GPU 或 CPU",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261009-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cactus-Compute/whistle",
+      "summary": "端側 STT：單檔 16.9MB，跑在和 Needle 同一個 CPU engine（.cact 容器、2–4bit 量化），無依賴無 GPU，手機/穿戴/機器人/MCU 可跑。支援英德法西義荷波 7 語，提供 word timestamps 與 speech embedding，並有 keyword biasing。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://huggingface.co/Cactus-Compute/whistle",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "16.9MB 單檔，純 CPU",
+      "license": "未標示（見 repo）"
+    },
+    {
+      "id": "20261009-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "google/embeddinggemma-2",
+      "summary": "Google DeepMind 開源多模態 embedding：text/image/video/audio 統一映射到 768 維向量空間，740M 參數（270M text + 170M vision + 300M audio，可選載）。支援 100+ 語言、code +14%，為手機/筆電 on-device RAG/檢索設計。audio 模態對音樂檢索有想像空間。",
+      "tags": [
+        "rag_knowledge",
+        "music_understanding"
+      ],
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "740M，消費級 on-device",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-10-08",
-  "updatedAt": "2026-10-08T05:40:00+08:00"
+  "lastUpdated": "2026-10-09",
+  "updatedAt": "2026-10-08T21:13:45.022107Z"
 }
