@@ -87869,6 +87869,231 @@
       "price": null,
       "vram": "740M，消費級 on-device",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261009-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "LLM 把 TypeScript 7 compiler 整包 port 成 Rust（tsc-rs）",
+      "summary": "Theo（ping.gg）用 LLM 把 TypeScript compiler / checker / lsp 整包移植成 Rust，宣稱在所有實測專案達 100% 相容、可當 drop-in 用（npm 的 tsc-rs）。GPT-5.6/GPT-6 燒了 $42 萬 token 寫了 130 萬行 Rust 卻卡在 84% 相容；改丟 Opus 5.5，10 小時就有可動 v0。作者直言「我一行都沒讀過」。AI 全自動移植整條 toolchain 的信號。",
+      "tags": [
+        "ai-ported-compiler",
+        "rust",
+        "ai coding",
+        "vibe-coding",
+        "paradigm-shift"
+      ],
+      "url": "https://github.com/pingdotgg/ts-rust",
+      "source": "GitHub (Theo / ping.gg)",
+      "sourceUrl": "https://github.com/pingdotgg/ts-rust",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Cloudflare 推 agent-first 的 cf CLI，日落 Wrangler",
+      "summary": "Cloudflare 開 beta 新 CLI「cf」：TypeScript 寫、結構化 JSON 輸出、command discovery，為 AI agent 與開發者設計，Apache-2.0/MIT。官方說特意不沿用 Wrangler——避免跟 LLM 已學會的 Wrangler 行為衝突，也擺脫 280 條指令跨團隊不一致的包袱；新用 cloudflare.config.ts、Vite 當預設開發環境。",
+      "tags": [
+        "agent-first-cli",
+        "developer-experience",
+        "cloudflare",
+        "paradigm-shift"
+      ],
+      "url": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/cloudflare-cf-cli/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Docker Agent：用 YAML 宣告式打造 multi-agent runtime",
+      "summary": "Docker 官方釋出 docker-agent，一個 docker CLI plugin（docker agent run）。用宣告式 YAML 定義 agent、掛工具、做 multi-agent orchestration，無需寫 code；工具生態支援任意 MCP server。把「建 / 跑 / 分享 agent」收進既有 Docker 工作流。",
+      "tags": [
+        "ai-agent",
+        "yaml-declarative-agent",
+        "mcp",
+        "multi-agent"
+      ],
+      "url": "https://github.com/docker/docker-agent",
+      "source": "GitHub (Docker)",
+      "sourceUrl": "https://github.com/docker/docker-agent",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LangChain 改版 Deep Agents 的 Skills 支援",
+      "summary": "LangChain 把 Agent Skills（開放標準、一個 markdown 資料夾教 agent 做事、跨模型相容）重做進 Deep Agents。核心是 progressive disclosure——agent 平時只看 skill 名稱 / 描述，需要時才讀完整內容以控 context。因應企業 skill registry 成長到數千個、跨團隊共享的新需求。",
+      "tags": [
+        "ai-agent",
+        "agent-skill-registry",
+        "progressive-disclosure",
+        "context-engineering"
+      ],
+      "url": "https://www.langchain.com/blog/revamping-skills-in-deep-agents",
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/revamping-skills-in-deep-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Samsung LittleBit-2：Sub-1-bit LLM 壓縮（低至 0.1 bit/權重）",
+      "summary": "Samsung Labs 的 LittleBit（NeurIPS 2025）/ LittleBit-2（ICML 2026）把 LLM 權重矩陣做 low-rank latent factorization + binarization + 學習式 scale，壓到 sub-1-bit（設計範圍 1.0～0.1 bit/權重），且推論時維持原架構、無額外開銷。LittleBit-2 再用 Joint-ITQ 對齊 latent geometry 改善初始化。",
+      "tags": [
+        "sub-1-bit-quantization",
+        "quantization",
+        "ai_models"
+      ],
+      "url": "https://github.com/SamsungLabs/LittleBit",
+      "source": "GitHub (Samsung Labs) / ICML 2026",
+      "sourceUrl": "https://github.com/SamsungLabs/LittleBit",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cactus Whistle：16.9MB、純 CPU 的裝置端語音辨識",
+      "summary": "Cactus Compute 釋出 Whistle，一個 16.9MB 單檔語音辨識模型，純 CPU、無依賴，跟自家 Needle 共用同一 C++ 引擎與量化。支援 7 種語言、first token 11ms，audio 全程不離開裝置；鎖定手機 / 穿戴 / 機器人 / 車機 / MCU。",
+      "tags": [
+        "cpu-native-stt",
+        "on-device",
+        "ai_models"
+      ],
+      "url": "https://cactuscompute.com/blog/whistle",
+      "source": "Cactus Compute",
+      "sourceUrl": "https://cactuscompute.com/blog/whistle",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "StepFun Step 5 Preview：1M-context MoE 登上 OpenRouter",
+      "summary": "StepFun 的 Step 5 Preview（1M-context MoE 模型）上架 OpenRouter，開放試用。長 context + MoE 的新一輪開源 / 可用模型競爭。",
+      "tags": [
+        "ai_models",
+        "moe",
+        "long-context"
+      ],
+      "url": "https://openrouter.ai/stepfun/step-5-preview",
+      "source": "OpenRouter / Hacker News",
+      "sourceUrl": "https://openrouter.ai/stepfun/step-5-preview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "為何業界沒在怕 DeepSeek 4.1 Flash？",
+      "summary": "開發者 dgt 分享一個月重度使用 DeepSeek 4.1 Flash 的主觀經驗：能力強、比 frontier 模型便宜數個數量級，盲測下跟 Opus 難分辨。他的論點——China 的 open 模型正在逼近 frontier，frontier labs 該緊張了。附第三方 benchmark 連結供參。",
+      "tags": [
+        "ai_models",
+        "deepseek",
+        "cost-efficiency"
+      ],
+      "url": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+      "source": "dgt.is blog",
+      "sourceUrl": "https://www.dgt.is/blog/2026-10-07-deepseek-freek-out/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "DuckLake：DuckDB 的整合式 data lake + catalog 格式",
+      "summary": "DuckDB 推出 DuckLake——把 data lake 與 catalog 整合成單一格式，簡化 lakehouse 架構。開源，鎖定輕量、單機到雲端的分析工作流。",
+      "tags": [
+        "database",
+        "data-lakehouse",
+        "duckdb"
+      ],
+      "url": "https://github.com/duckdb/ducklake",
+      "source": "GitHub (DuckDB)",
+      "sourceUrl": "https://github.com/duckdb/ducklake",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "OpenSSH 10.6 發布",
+      "summary": "OpenSSH 10.6 釋出，更新 release notes。基礎設施等級的安全工具例行升級，值得排程套用。",
+      "tags": [
+        "security",
+        "openssh",
+        "release"
+      ],
+      "url": "https://www.openssh.org/releasenotes.html",
+      "source": "OpenSSH",
+      "sourceUrl": "https://www.openssh.org/releasenotes.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261009-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Google SynthID Detector 上線",
+      "summary": "Google 的 SynthID Detector 入口上線，供偵測帶有 SynthID 浮水印的 AI 生成內容。AI 內容來源溯源 / provenance 工具化的一步。",
+      "tags": [
+        "ai-provenance",
+        "watermark",
+        "synthid"
+      ],
+      "url": "https://synthid.com/",
+      "source": "Google / Hacker News",
+      "sourceUrl": "https://synthid.com/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-09",
