@@ -88647,8 +88647,128 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261010-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-10",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "storytold/wordcraft",
+      "summary": "storytold 的 clean-room 重寫 Adobe/Office 系列再 +1：純 Rust 重寫 Microsoft Word，接續 photocraft/lightcraft/filmcraft 的開源生產力套件路線。",
+      "tags": [
+        "rust",
+        "productivity",
+        "open-source"
+      ],
+      "url": "https://github.com/storytold/wordcraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-09-26",
+      "stars": 1729,
+      "createdDate": "2026-10-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261010-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-10",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "zhongerxin/iPhone-use",
+      "summary": "讓 Codex 透過 USB 操作真實 iPhone：引導安裝 App、自動化操作、即時螢幕與截圖回退。把 computer-use 延伸到實體 iOS 裝置。",
+      "tags": [
+        "ai-agent",
+        "computer-use",
+        "automation"
+      ],
+      "url": "https://github.com/zhongerxin/iPhone-use",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:%3E2026-09-26",
+      "stars": 1660,
+      "createdDate": "2026-10-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20261010-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-10",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "dongnguyenvie/BashCut",
+      "summary": "原生 macOS 影片編輯器，但 coding agent 能完整驅動：UI 能做的，Claude Code / Codex 都能透過 bashcut CLI 或 MCP server 做。分層時間軸、字幕、配音、plugin。",
+      "tags": [
+        "video-editing",
+        "mcp",
+        "macos"
+      ],
+      "url": "https://github.com/dongnguyenvie/BashCut",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:mcp",
+      "stars": 61,
+      "createdDate": "2026-10-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20261010-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-10",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "cjpais/Handy",
+      "summary": "免費、開源、可擴充的語音轉文字 app，完全離線運作。本週 trending，對做音訊／語音工作流很實用。",
+      "tags": [
+        "speech-to-text",
+        "offline",
+        "audio"
+      ],
+      "url": "https://github.com/cjpais/Handy",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 33364,
+      "createdDate": "2025-02-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261010-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-10",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "longbridge/gpui-kit",
+      "summary": "用 GPUI（Zed 編輯器的 GPU UI framework）打造跨平台桌面 app 的 Rust GUI 元件庫。想用 Rust 做高效能桌面工具可參考。",
+      "tags": [
+        "rust",
+        "gui",
+        "desktop"
+      ],
+      "url": "https://github.com/longbridge/gpui-kit",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 16662,
+      "createdDate": "2024-06-13",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261010-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-10",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "dmtrKovalenko/fframes",
+      "summary": "「真的很快」的程式化影片 rendering framework（Rust）。做動態影片／動畫輸出的替代方案。",
+      "tags": [
+        "video",
+        "rust",
+        "rendering"
+      ],
+      "url": "https://github.com/dmtrKovalenko/fframes",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 2492,
+      "createdDate": "2021-11-22",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-10T05:12:00+08:00",
-  "updatedAt": "2026-10-10T05:12:00+08:00"
+  "lastUpdated": "2026-10-10",
+  "updatedAt": "2026-10-10T05:40:00+08:00"
 }
