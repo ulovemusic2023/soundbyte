@@ -88356,8 +88356,65 @@
       "stars": 23,
       "createdDate": "2026-10-05",
       "license": "unknown"
+    },
+    {
+      "id": "20261010-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "multimodal-art-projection/YuE2",
+      "summary": "YuE 升級到 YuE2：frontier 級開源音樂生成，新增 symbolic planning、zero-shot 翻唱與 agentic 音樂編輯。發布兩天內 YuE-Studio、yue2-mlx、awesome-YuE 等生態系全冒出來。對做音樂的最該盯。",
+      "tags": [
+        "audio_music_ai",
+        "music generation"
+      ],
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "source": "GitHub Topics (music-generation)",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "price": null,
+      "vram": "YuE2-3B 量化可塞 16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261010-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BerriAI/litellm",
+      "summary": "litellm 核心改寫成 Rust（Python SDK 在外），主打最快最輕的 AI Gateway。一套 OpenAI 相容介面打 100+ LLM API，內建成本追蹤、guardrails、load balancing、logging。本地 proxy 不吃 GPU。",
+      "tags": [
+        "llm_inference",
+        "gateway"
+      ],
+      "url": "https://github.com/BerriAI/litellm",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "CPU proxy，不需 GPU",
+      "license": "MIT (core)"
+    },
+    {
+      "id": "20261010-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "unslothai/unsloth",
+      "summary": "Unsloth 從訓練加速函式庫擴成本地 UI：直接跑 + 微調 LLM 與 diffusion，支援 GGUF/MLX，內建 Qwen3.8、DeepSeek-V4、MiniMax-H3、Gemma 4、FLUX。16GB 單卡把選模型→量化→跑→LoRA 收進一個介面。",
+      "tags": [
+        "llm_training",
+        "llm_inference"
+      ],
+      "url": "https://github.com/unslothai/unsloth",
+      "source": "GitHub Trending (Python)",
+      "sourceUrl": "https://github.com/trending/python",
+      "price": null,
+      "vram": "配量化模型 16GB 可用",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-10-09",
-  "updatedAt": "2026-10-09T05:44:14.678224+08:00"
+  "lastUpdated": "2026-10-10T05:12:00+08:00",
+  "updatedAt": "2026-10-10T05:12:00+08:00"
 }
