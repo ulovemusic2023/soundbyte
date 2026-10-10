@@ -88767,8 +88767,71 @@
       "stars": 2492,
       "createdDate": "2021-11-22",
       "license": "MIT"
+    },
+    {
+      "id": "20261011-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FlashML-org/FreeToken",
+      "summary": "Edge-native MoE serving engine，把 datacenter 等級的模型搬到你家 PC。用 CPU–GPU co-execution（q* 政策）、global LRU expert caching、elastic VRAM 動態配置，在 RTX 30/40/50 上跑 290B+ frontier MoE（DeepSeek-V4-Flash、Qwen3.6-35B-A3B、GLM-5.2），支援 MXFP4/NVFP4/FP8，並提供 Anthropic/OpenAI 相容 API 直接接 Claude Code / OpenClaw。",
+      "tags": [
+        "llm-inference",
+        "moe",
+        "quantization",
+        "local-llm"
+      ],
+      "url": "https://github.com/FlashML-org/FreeToken",
+      "source": "GitHub Topics (llm-inference)",
+      "sourceUrl": "https://github.com/topics/llm-inference",
+      "vram": "quantize-ok",
+      "license": "Apache-2.0",
+      "price": null
+    },
+    {
+      "id": "20261011-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "mainza-ai/milimomusic",
+      "summary": "開源 AI 音樂生成 + 多軌 DAW，核心用 MiniMax Music 3。內建 BS-Roformer 6-stem 分軌、離線 SVC 歌聲轉換、neural MIDI/MusicXML 轉譜、歌詞對齊（TorchAudio MMS_FA），再加上用 Wan 2.1 14B 的 AI 音樂影片工作室。從 prompt 到 mastered 立體聲一條龍（音樂影片模組較吃顯存）。",
+      "tags": [
+        "music-generation",
+        "svc",
+        "stem-separation",
+        "daw",
+        "transcription"
+      ],
+      "url": "https://github.com/mainza-ai/milimomusic",
+      "source": "GitHub Topics (singing-voice-conversion)",
+      "sourceUrl": "https://github.com/topics/singing-voice-conversion",
+      "vram": "quantize-ok",
+      "license": "Apache-2.0",
+      "price": null
+    },
+    {
+      "id": "20261011-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "microsoft/TRELLIS.2",
+      "summary": "微軟的 4B image-to-3D 生成模型。用全新 field-free sparse voxel 結構 O-Voxel，能生成複雜拓撲、開放表面與完整 PBR 材質的高解析 3D 資產；512³ 約 3 秒、1024³ 約 17 秒（H100 實測）。需 ≥24GB VRAM、目前僅 Linux。",
+      "tags": [
+        "image-gen",
+        "3d-generation",
+        "diffusion"
+      ],
+      "url": "https://github.com/microsoft/TRELLIS.2",
+      "source": "GitHub Trending (python)",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "vram": "cloud-only",
+      "license": "MIT",
+      "price": null
     }
   ],
-  "lastUpdated": "2026-10-10",
-  "updatedAt": "2026-10-10T05:40:00+08:00"
+  "lastUpdated": "2026-10-11",
+  "updatedAt": "2026-10-11T05:12:00+08:00"
 }
