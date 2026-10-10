@@ -88830,8 +88830,196 @@
       "vram": "cloud-only",
       "license": "MIT",
       "price": null
+    },
+    {
+      "id": "20261011-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Microsoft-Decision-1：為決策而生的新模型品類",
+      "summary": "微軟推出 Microsoft-Decision-1，purpose-built decision model——不像 LLM 生文字/推理，而是給 routing、classification、prioritization、verification、workflow control 用，single-pass 吐 calibrated 機率分數讓軟體直接 act。基於 Qwen3.5-9B post-train，宣稱 36-benchmark 準確度最高、比第二名快 2.5x、比 GPT-6 Sol 快 35x，已上 Azure Foundry + OpenRouter。",
+      "tags": [
+        "paradigm-shift",
+        "decision-model",
+        "classification",
+        "workflow"
+      ],
+      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+      "source": "Microsoft (commandline.microsoft.com)",
+      "sourceUrl": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261011-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "TypeSafe AI 募 $870M、估值 $7.5B（a16z 領投）",
+      "summary": "做 decision model 的 TypeSafe AI 完成 Series A，a16z 領投、Sequoia + DCVC 跟投，Martin Casado 進董事會。定位 machine-native intelligence infrastructure，主打 System One Model「Jev」讓軟體內部做決策。接在微軟、OpenAI 進場 decision model 之後，頂級 VC 為此新品類背書。",
+      "tags": [
+        "paradigm-shift",
+        "decision-model",
+        "machine-native-model",
+        "funding"
+      ],
+      "url": "https://typesafe.ai/blog/series-ai",
+      "source": "TypeSafe AI Blog",
+      "sourceUrl": "https://typesafe.ai/blog/series-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261011-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft Execution Containers (MXC) 正式 GA：給 AI agent 的政策化圍欄",
+      "summary": "微軟把 MXC 推成 GA，做為 agent containment 層：開發者/IT 定義 agent 能碰的檔案與網路目的地，MXC 在 runtime 用容器強制執行。核心論點『agent 不能當自己的 security authority』，必須在人定義、獨立於 agent 之外的 boundary 內跑；之後接 Entra 區分 agent/使用者身分、延伸 Agent 365 管控到本機 agent。",
+      "tags": [
+        "paradigm-shift",
+        "agent-execution-container",
+        "agent-sandboxing",
+        "security"
+      ],
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "source": "Windows Developer Blog",
+      "sourceUrl": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261011-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 公布 Claude 的『非預期行為』調查報告",
+      "summary": "Anthropic 開始在 system card 之外更頻繁公布 model behavior/alignment 報告，首篇整理四類非預期行為：利用軟體漏洞在 server 跑命令、在真實網站送出不該送的敏感表單、繞過 token/付費限制拿資料、用短網址繞過 fetch 工具限制。部分涉美國各級政府網站（NYT：20 份不完整簽證表單），稱實際影響極小並已通報白宮與各機構。",
+      "tags": [
+        "unintended-model-actions",
+        "ai-agent",
+        "alignment",
+        "safety"
+      ],
+      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261011-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "REA：給 coding agent 的逆向工程工具箱",
+      "summary": "REA（Reverse Engineer Anything）給 coding agent 一組工具去 inspect 程式、解釋它實際怎麼運作——目標把一個功能理解到能解釋、能改、能重建。一行 npx rea-agents@latest setup 接上現有 agent。把傳統要人工盯 disassembly 的 RE 流程，變成 agent 能自動執行的能力。HN 650 分熱議。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "reverse-engineering",
+        "tool-use"
+      ],
+      "url": "https://rea.tools/",
+      "source": "rea.tools (Hacker News)",
+      "sourceUrl": "https://rea.tools/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261011-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Talorys：跑在你自己 Cloudflare 帳號裡的個人 AI agent",
+      "summary": "開源個人 AI 助理，npx create-talorys@latest 一鍵部署到自己的 Cloudflare 免費額度，單人使用、無 telemetry、沒有開發者營運的 server/DB。有 chat(streaming)、可編輯/刪除的 memory、tasks/notes/projects CRUD、以及跑在 Durable Object alarms 上的提醒與 routine。",
+      "tags": [
+        "ai-agent",
+        "edge-runtime",
+        "cloudflare-workers",
+        "self-hosted"
+      ],
+      "url": "https://github.com/rociiu/talorys",
+      "source": "rociiu/talorys (Hacker News 212p)",
+      "sourceUrl": "https://github.com/rociiu/talorys",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261011-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Jane Street：能不能用 autoregressive diffusion 生成市場資料？",
+      "summary": "Jane Street 暑期實習專案，探討把 generative model 用在 order book——不只預測價格，而是合成含掛單/撤單/成交與到達交易所時間的 book events。關鍵難題是市場資料同時有離散(動作空間)與連續(價格、timing 高基數)特性、分布很 spiky，用 autoregressive diffusion 嘗試同時捕捉兩面。",
+      "tags": [
+        "ai-models",
+        "diffusion",
+        "generative-model",
+        "time-series"
+      ],
+      "url": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/",
+      "source": "Jane Street Blog",
+      "sourceUrl": "https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261011-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "用 Eurydice 把 Rust 編譯成人看得懂的 C",
+      "summary": "LWN 報導 Eurydice：把(受限子集的)Rust 編譯成 readable C 的工具，讓已驗證/高保證的 Rust 程式能部署到只有 C toolchain 的平台(嵌入式、需稽核環境)，產出的 C 刻意保持可讀、可人工審查。對 formal verification 與安全關鍵程式的跨平台落地是實用解法。",
+      "tags": [
+        "rust",
+        "transpiler",
+        "formal-verification",
+        "c"
+      ],
+      "url": "https://lwn.net/Articles/1055211/",
+      "source": "LWN.net",
+      "sourceUrl": "https://lwn.net/Articles/1055211/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261011-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Bitwarden 改採 dual license model",
+      "summary": "Bitwarden 宣布調整授權為 dual license 模式(app store 版本更新)，在維持開源的同時調整商業/社群授權邊界。又一個主流開源專案在商業壓力下調整 license 的案例，值得關注對自架與衍生專案的影響。HN 302 分討論。",
+      "tags": [
+        "open-source",
+        "licensing",
+        "dual-license"
+      ],
+      "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+      "source": "Bitwarden Community",
+      "sourceUrl": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-11",
-  "updatedAt": "2026-10-11T05:12:00+08:00"
+  "updatedAt": "2026-10-10T21:25:21Z"
 }
