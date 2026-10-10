@@ -89117,8 +89117,195 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261011-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "storytold/soundcraft",
+      "summary": "Avid Pro Tools 的 clean-room 開源重寫，純 Rust。屬 ArtCraft 開源創作套件系列。",
+      "tags": [
+        "audio",
+        "daw",
+        "rust",
+        "creative-tools"
+      ],
+      "url": "https://github.com/storytold/soundcraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/storytold",
+      "stars": 1274,
+      "createdDate": "2026-10-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261011-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "rising-fast",
+      "title": "cth9191/animate",
+      "summary": "給 Claude Code 的程序化動畫 skill：單檔 canvas 影片、含分鏡確認、7 種風格、可用自己的音樂做卡拍剪輯、嵌真實產品截圖。",
+      "tags": [
+        "claude-code",
+        "animation",
+        "music",
+        "creative-tools"
+      ],
+      "url": "https://github.com/cth9191/animate",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 420,
+      "createdDate": "2026-10-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20261011-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "weike-zhang/architecture-canvas",
+      "summary": "跟文件對話生成並反覆修改可編輯的架構圖，本地 workspace + Excalidraw 畫布，可選 Tavily 搜尋。",
+      "tags": [
+        "mcp",
+        "diagram",
+        "developer-tool",
+        "local"
+      ],
+      "url": "https://github.com/weike-zhang/architecture-canvas",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 147,
+      "createdDate": "2026-10-03",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261011-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "bherbruck/solvecraft",
+      "summary": "Autodesk Fusion 360 的 clean-room 開源重寫，純 Rust，參數式 3D CAD，支援桌面/瀏覽器，並可透過 MCP 給 AI agent 操作。",
+      "tags": [
+        "cad",
+        "rust",
+        "mcp"
+      ],
+      "url": "https://github.com/bherbruck/solvecraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 117,
+      "createdDate": "2026-10-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261011-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "liyupi/ai-promo-video-maker",
+      "summary": "一句話讓 Cursor/Claude Code/Codex 幫你做 4K 產品宣傳片：自動調研、出樣圖、截頁面、卡音樂節拍剪輯、AI 旁白。基於 Remotion + ElevenLabs，可當 Agent Skill 安裝。",
+      "tags": [
+        "claude-code",
+        "video",
+        "creative-tools",
+        "remotion"
+      ],
+      "url": "https://github.com/liyupi/ai-promo-video-maker",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 103,
+      "createdDate": "2026-10-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20261011-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "nyosegawa/speech.cpp",
+      "summary": "C++/ggml 上的語音合成+辨識+VAD：Qwen3-TTS、Qwen3-ASR、ReazonSpeech、Silero VAD，支援 Metal/Vulkan/CPU，附 OpenAI 相容 server 與即時轉錄。",
+      "tags": [
+        "tts",
+        "asr",
+        "audio",
+        "local-inference",
+        "ggml"
+      ],
+      "url": "https://github.com/nyosegawa/speech.cpp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/text-to-speech",
+      "stars": 38,
+      "createdDate": "2026-09-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20261011-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "worth-trying",
+      "title": "rabbitfiremediacreation/music-generator",
+      "summary": "本地生成自己的歌：ACE-Step 1.5 透過 acestep.cpp，Mac (Apple Silicon/Metal) 與 Windows (NVIDIA)，附 Web App 與安裝器。",
+      "tags": [
+        "music-generation",
+        "local",
+        "audio"
+      ],
+      "url": "https://github.com/rabbitfiremediacreation/music-generator",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/music-generation",
+      "stars": 22,
+      "createdDate": "2026-09-29",
+      "license": "MIT"
+    },
+    {
+      "id": "20261011-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "storytold ArtCraft 套件 (cadcraft/gridcraft/deckcraft)",
+      "summary": "同一團隊 ArtCraft 的開源 Office/CAD 重寫浪潮：cadcraft(AutoCAD,⭐1796)、gridcraft(Excel,⭐1769)、deckcraft(PowerPoint,⭐1370)，皆純 Rust。連同 photocraft/soundcraft 形成完整開源創作套件。",
+      "tags": [
+        "rust",
+        "creative-tools",
+        "office",
+        "cad"
+      ],
+      "url": "https://github.com/storytold/cadcraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/storytold",
+      "stars": 1796,
+      "createdDate": "2026-10-07",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261011-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-11",
+      "cycle": "sun",
+      "priority": "on-the-radar",
+      "title": "miqdadbadjuber/anti-slop",
+      "summary": "給 AI coding agent 的規則集，過濾掉泛用的 AI slop UI、文案與程式碼。本週在 MAGI//ARCHIVE 被重新帶起熱度。",
+      "tags": [
+        "ai-coding",
+        "anti-slop",
+        "agent-rules"
+      ],
+      "url": "https://github.com/miqdadbadjuber/anti-slop",
+      "source": "MAGI",
+      "sourceUrl": "https://tom-doerr.github.io/repo_posts/",
+      "stars": 5784,
+      "createdDate": "2026-08-07",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-11",
-  "updatedAt": "2026-10-10T21:25:21Z"
+  "lastUpdated": "2026-10-11T05:45:11+08:00",
+  "updatedAt": "2026-10-11T05:45:11+08:00"
 }
