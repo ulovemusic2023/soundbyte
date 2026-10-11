@@ -89304,6 +89304,252 @@
       "stars": 5784,
       "createdDate": "2026-08-07",
       "license": "MIT"
+    },
+    {
+      "id": "20261012-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Context Language Models：模型自管 context",
+      "summary": "Meta、MIT、UW 提出 Context Language Models (CLMs)——模型自己管理、編輯自身 context，取代固定的 summarization + retrieval。把 context engineering 內化進模型，對 long-horizon agent 的記憶管理是方向性轉變。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "context-management",
+        "llm"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/context-language-models/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/context-language-models/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Deno 加入 Cloudflare",
+      "summary": "Cloudflare 收購 Deno 團隊，讓自架 Workers / Durable Objects 更容易。Deno runtime 再維護一年後停止開發，但維持 open source。JS/TS runtime 版圖再洗牌。",
+      "tags": [
+        "deno",
+        "javascript-runtime",
+        "cloudflare-workers"
+      ],
+      "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Android Bench 2.0：agentic 評測多步驟開發任務",
+      "summary": "Google Android Bench 2.0 用 agent-based evaluation + continuous scoring，評測模型/agent 在多步驟 Android 開發任務上的 long-horizon 表現。",
+      "tags": [
+        "ai-agent",
+        "evals",
+        "benchmark",
+        "coding-agent"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/android-bench-2/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/android-bench-2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AWS EventBridge 推出 Enhanced Custom Event Buses",
+      "summary": "新的 enhanced bus 支援 ordered delivery、event replay、content-based dedup，並改為 publisher/subscriber 計價。event-driven 架構更接近完整 event streaming。",
+      "tags": [
+        "event-driven",
+        "architecture",
+        "aws",
+        "message-queue"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/aws-enhanced-eventbridge-buses/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/aws-enhanced-eventbridge-buses/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Build Your Own Decision Model",
+      "summary": "用 Qwen3-1.7B 當 System One decision model：mask 輸出 vocab 到選項 token、single-pass 多選分類，finetune 後 CommonsenseQA 約 62%。raw 機率 overconfident，要 temperature scaling 校準。",
+      "tags": [
+        "decision-model",
+        "ai-models",
+        "calibration"
+      ],
+      "url": "https://nishtahir.com/build-your-own-decision-model/",
+      "source": "Nish Tahir (Hacker News)",
+      "sourceUrl": "https://nishtahir.com/build-your-own-decision-model/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Clef-omni：全模態 decision model",
+      "summary": "Clef-omni 單一 pipeline 處理 audio/video/image/text；Clef inference 快 2x、Clef-flash 降價。Cloudflare 在 decision model 品類往多模態加碼。",
+      "tags": [
+        "decision-model",
+        "multimodal",
+        "ai-models"
+      ],
+      "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Traces 進 open beta",
+      "summary": "把 proxy 層活動直接吐成 OpenTelemetry spans，12/1 起改以 ingestion + retention 用量計價。edge 層觀測性原生化。",
+      "tags": [
+        "observability",
+        "opentelemetry",
+        "devops"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-traces-open-beta/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/cloudflare-traces-open-beta/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Workers / Durable Objects on-demand flamegraph profiling",
+      "summary": "可在 production 直接產生互動式 CPU / memory flamegraph，抓 memory leak 和效能瓶頸。serverless 的 production profiling 補齊。",
+      "tags": [
+        "observability",
+        "profiling",
+        "cloudflare-workers",
+        "devops"
+      ],
+      "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Gremlin Foresight AI：agentic reliability engineering GA",
+      "summary": "Gremlin 把 agentic Foresight AI 轉 GA：自動分析服務失效風險、建議修改、重跑測試驗證修復。chaos engineering/SRE 被 agent 自動化。",
+      "tags": [
+        "sre",
+        "chaos-engineering",
+        "ai-agent",
+        "reliability"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/gremlin-foresight-ai/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/gremlin-foresight-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison：用語音叫 coding agent 做功能",
+      "summary": "Simon 幾乎全程用語音跟 coding agent 對話，邊煮晚餐邊幫 blog 做出 Newsletters index 頁。vibe coding 的互動介面從鍵盤往語音延伸。",
+      "tags": [
+        "vibe-coding",
+        "ai-agent",
+        "coding-agent"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "為什麼 DuckDB 2.0 更快",
+      "summary": "2.0 用獨立 thread pool 預抓 Parquet row groups 到 buffer，worker thread 只負責 decode，network I/O 與 CPU 重疊。實測 2.2GB S3 Parquet aggregation 從 18.8s 降到 7.7s。",
+      "tags": [
+        "duckdb",
+        "olap",
+        "parquet",
+        "database"
+      ],
+      "url": "https://motherduck.com/blog/why-duckdb-20-is-faster/",
+      "source": "MotherDuck Blog",
+      "sourceUrl": "https://motherduck.com/blog/why-duckdb-20-is-faster/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261012-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Unikernels were hard. Key word: were.",
+      "summary": "Geoffrey Huntley：AI agent 能快速 port library，unikernel（app 即 OS、無 shell/userland）從難做變可行；把『硬化通用 OS』的 design debt 反轉成『無 shell/interpreter 可被利用』的設計。",
+      "tags": [
+        "unikernel",
+        "security",
+        "ai-assisted-development"
+      ],
+      "url": "https://ghuntley.com/unikernels/",
+      "source": "Geoffrey Huntley",
+      "sourceUrl": "https://ghuntley.com/unikernels/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-11T05:45:11+08:00",
