@@ -89550,6 +89550,90 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261012-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-12",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "wheresryan22/anatomy",
+      "summary": "Claude Code skill：把技術概念轉成互動式等角視圖（isometric figure），輸出 SVG + 選配 WebGL shader 與 3D，適合 docs、文章與 landing page 的技術示意圖。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "svg",
+        "webgl",
+        "docs"
+      ],
+      "url": "https://github.com/wheresryan22/anatomy",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 3044,
+      "createdDate": "2026-10-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20261012-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-12",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "aindeev/agent-chrome-relay",
+      "summary": "讓 AI agent 用你已登入的 Chrome 在背景分頁操作——不必另開無痕瀏覽器或重新登入，agent 直接以你的身分存取網站。",
+      "tags": [
+        "ai-agent",
+        "browser-automation",
+        "chrome",
+        "computer-use"
+      ],
+      "url": "https://github.com/aindeev/agent-chrome-relay",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 251,
+      "createdDate": "2026-10-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20261012-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-12",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "danyuchn/asd-ste100-skill",
+      "summary": "把航太業的 ASD-STE100 Simplified Technical English 規則包成 Claude Code skill，用來把模糊、容易被 agent 誤解的英文指令改寫得精準。寫 agent prompt / 技術文件很受用。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "writing",
+        "prompt-engineering"
+      ],
+      "url": "https://github.com/danyuchn/asd-ste100-skill",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 4447,
+      "createdDate": "2026-07-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20261012-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-12",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "ranxianglei/billion-context",
+      "summary": "小 context window 的壓縮外掛：號稱 100K context 就夠、省 5x token、單一 session 可撐數月（數十億 token）。對長跑 coding agent 的 token 成本有感。",
+      "tags": [
+        "ai-coding",
+        "context-compression",
+        "token-optimization"
+      ],
+      "url": "https://github.com/ranxianglei/billion-context",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 895,
+      "createdDate": "2026-08-06",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-10-11T05:45:11+08:00",
