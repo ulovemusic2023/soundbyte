@@ -89879,6 +89879,69 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261013-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-13",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "AI 的未來是「蜂群智能」，不是天空中的巨腦",
+      "summary": "Kevin Kelly 主張：最可能的 AI 未來不是單一超級 AI，而是無數大小不一、彼此互動的智能體組成的隱形超個體——像海洋、珊瑚礁、腸道菌群。管理它的最佳方式不是工程，而是園藝：調節連結密度（太緊會僵化、太鬆會崩解）、用分層權限與邊界圍堵、靠觀察與介入間接治理。責任變分散，需要可追蹤影響力與反制惡意 agent 的免疫系統。",
+      "tags": [
+        "ai-future",
+        "mental-model",
+        "swarm",
+        "governance"
+      ],
+      "url": "https://kk.org/thetechnium/swarm-intelligence/",
+      "source": "Kevin Kelly (The Technium)",
+      "sourceUrl": "https://kk.org/thetechnium/swarm-intelligence/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-13",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "什麼時候該請 Forward Deployed Engineer（FDE）",
+      "summary": "FDE 進駐客戶現場、直接寫 production code，但只有特定條件划算：鎖定大型企業、產品不被固定 roadmap 綁死、客戶需求多樣且技術性高、單位經濟撐得住。用人看特質不看履歷——早期職涯、有韌性、對商業好奇、愛開放式問題。角色要收斂：只給最大客戶最難的題目，做能複用的產品而非無止境客製。",
+      "tags": [
+        "hiring",
+        "gtm",
+        "enterprise",
+        "org-design"
+      ],
+      "url": "https://review.firstround.com/so-you-want-to-hire-a-forward-deployed-engineer/",
+      "source": "First Round Review",
+      "sourceUrl": "https://review.firstround.com/so-you-want-to-hire-a-forward-deployed-engineer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-10-13",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "把企業買家當消費者來賣：Serval 的 PMF 打法",
+      "summary": "不用功能清單、也不問『你最大的痛點』，改問『如果能請人坐你旁邊幫你做事，你會讓他做什麼？』——這個委派問句挖出沒被說成痛點的重複雜務。產品要 10 倍好、好到無法否認。Demo 要有肉眼可見 wow moment：自然語言描述當場生成自動化流程，連 Fortune 50 CISO 都被打動；再讓 IT 人員自建分享，由下而上養內部擁護者。",
+      "tags": [
+        "pmf",
+        "enterprise-sales",
+        "customer-discovery",
+        "demo"
+      ],
+      "url": "https://review.firstround.com/servals-path-to-product-market-fit/",
+      "source": "First Round Review",
+      "sourceUrl": "https://review.firstround.com/servals-path-to-product-market-fit/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-12T21:24:43.601057Z",
