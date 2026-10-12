@@ -89634,8 +89634,253 @@
       "stars": 895,
       "createdDate": "2026-08-06",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20261013-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Deno is joining Cloudflare",
+      "summary": "Cloudflare 收購 Deno 團隊，目標把 workerd 自架（self-hosting）變成一等公民，讓開發者在更多地方用同一套 Workers/Durable Objects primitives。核心押注在 Deno 團隊 8 月開源的 celld（Durable Objects 模式實作）。壞消息：Deno runtime 只再維護一年後停止開發，Ryan Dahl 坦言 Deno 被 Node 相容性拖住、不再是他能做最重要工作的地方。",
+      "tags": [
+        "paradigm-shift",
+        "deno",
+        "cloudflare-workers",
+        "durable-objects",
+        "celld",
+        "runtime"
+      ],
+      "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GitHub Migrates Copilot Runtime to Rust with AI-Assisted Rewrite",
+      "summary": "GitHub 在約 14.5 週內用 AI-assisted development 把 80 萬行 Copilot runtime 從 TypeScript/Node.js 遷移到 Rust，透過 N-API 互通、自動化測試、人工 review、128 個 PR 漸進完成，過程中持續出 release。延續 Bun 的 Rust 重寫趨勢，AI 讓「大規模語言遷移」從多年工程變成數週可行。",
+      "tags": [
+        "paradigm-shift",
+        "ai-assisted-migration",
+        "rust",
+        "safe-rust-port",
+        "code-generation"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AI coding agents generate more code, but not more software",
+      "summary": "Ars Technica 整理研究與實務觀察：AI agent 讓程式碼產出暴增，但「可交付的軟體」並未等比成長——code review 負擔、品質/可靠度控管、理解落差（comprehension gap）成為新瓶頸。與 Spotify「merge 量翻倍後重整品質控管」互相印證，是對「AI = 生產力線性放大」的重要反命題。",
+      "tags": [
+        "paradigm-shift",
+        "ai-code-software-gap",
+        "ai-coding",
+        "developer-experience"
+      ],
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "source": "Ars Technica",
+      "sourceUrl": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare introduces Clef-omni multimodal decision model",
+      "summary": "Cloudflare 擴充 Clef decision model 家族，新增 Clef-omni——在單一 pipeline 原生處理 audio/video/image/text；同時 Clef-flash 降價、Clef 推論速度最高提升 2.0x。decision model 品類（給軟體內部做 routing/classification/verification 決策的模型）持續軍備競賽，基礎設施巨頭把它多模態化。",
+      "tags": [
+        "clef-decision-model",
+        "multimodal-decision-model",
+        "decision-model-ecosystem"
+      ],
+      "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development",
+      "summary": "Spotify 表示 AI-assisted development 讓每月 merge 的變更量翻倍以上，迫使工程組織全面檢討品質與可靠度控管——調整 testing、observability、rollback 容量、工作負載優先序與自動化維護，以吸收暴增的變更量。是「code 多但軟體沒變多」的第一線企業實證。",
+      "tags": [
+        "ai-assisted-development",
+        "developer-experience",
+        "observability"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "React 19.3 adds a browser() API for first-class client-only rendering",
+      "summary": "9/9 釋出的 React 19.3 帶來 react-dom 的 browser() API，讓元件可明確 opt out of SSR。針對依賴 client 專屬資料的元件，提供更乾淨的 hydration mismatch 解法，並支援條件式資料抓取，提升渲染彈性。",
+      "tags": [
+        "react-browser-api",
+        "react-server-components",
+        "hydration"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/react-19-3-browser-api/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/react-19-3-browser-api/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Logpush Transformers: filter, reshape, redact logs with SQL before export",
+      "summary": "Logpush 新增 Transformers，能在 log 送達目的地前用 SQL 做過濾、遮罩（redact）與重塑；底層由 Apache DataFusion + Apache Arrow 驅動，把資料治理與 PII 遮罩直接內建進 log pipeline。",
+      "tags": [
+        "observability",
+        "structured-logging",
+        "data-pipeline"
+      ],
+      "url": "https://blog.cloudflare.com/transformers-on-logpush/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/transformers-on-logpush/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Workers: on-demand CPU/memory profiling with flamegraphs",
+      "summary": "Workers 與 Durable Objects 現支援 on-demand CPU/memory profiling，可直接在 production 產生互動式 flamegraph，快速定位 memory leak 與效能瓶頸。serverless/edge 環境的可觀測性再補一塊。",
+      "tags": [
+        "observability",
+        "serverless",
+        "edge-runtime",
+        "performance"
+      ],
+      "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AWS Introduces Enhanced Custom Event Buses for EventBridge",
+      "summary": "AWS 為 Amazon EventBridge 推出強化版 custom event bus，支援跨帳號共用的中央化 bus、有序投遞（ordered delivery）、簡化的 subscriber 管理、event replay、基於內容的去重，以及新的 publisher/subscriber 計價模式。對 event-driven 架構更友善。",
+      "tags": [
+        "event-driven",
+        "pub-sub",
+        "aws"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/aws-enhanced-eventbridge-buses/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/aws-enhanced-eventbridge-buses/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+      "summary": "HN 熱議（334 分）：OpenAI Codex CLI 預設會裝一個常駐、會自我更新的 background daemon。延續先前 Grok CLI 偷傳本地檔案的疑慮，開發者對 AI CLI 工具的「預設行為透明度與信任邊界」再度拉警報。",
+      "tags": [
+        "agent-first-cli",
+        "developer-experience",
+        "supply-chain-security"
+      ],
+      "url": "https://github.com/openai/codex/issues/48195",
+      "source": "Hacker News / GitHub issue",
+      "sourceUrl": "https://github.com/openai/codex/issues/48195",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic introduces Claude Haiku 5.5",
+      "summary": "Anthropic 發表 Claude Haiku 5.5，定位為目前最快、最便宜也最強的小模型，瞄準高流量、成本敏感的工作負載。配合近期 Opus 5.5 / Sonnet 5.5，補齊「成本-速度」光譜下緣。",
+      "tags": [
+        "ai-models",
+        "small-model"
+      ],
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "source": "Anthropic Blog",
+      "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261013-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Python 3.15 released",
+      "summary": "Python 3.15 正式釋出；Simon Willison 的筆記指出他終於能告別 3.10、開始用 3.11 的功能，並提到 3.15 新增的 sampling profiler。對維護跨版本 open source 的人是一輪例行但重要的版本遞移。",
+      "tags": [
+        "python",
+        "new-language-release"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-11T05:45:11+08:00",
-  "updatedAt": "2026-10-11T05:45:11+08:00"
+  "lastUpdated": "2026-10-12T21:24:43.601057Z",
+  "updatedAt": "2026-10-12T21:24:43.601057Z"
 }
