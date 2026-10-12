@@ -89942,6 +89942,132 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261013-ts-001",
+      "priority": "worth-trying",
+      "title": "longsurf-ai/openchart",
+      "summary": "OSS 交易工作台，把你習慣的 AI agent 接進圖表與下單流程。開源的 TradingView 類替代品，適合把投研/盯盤跟 AI 整合的人。",
+      "tags": [
+        "dev-tool",
+        "ai-agent",
+        "trading",
+        "finance"
+      ],
+      "url": "https://github.com/longsurf-ai/openchart",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/longsurf-ai/openchart",
+      "stars": 170,
+      "createdDate": "2026-10-05",
+      "license": "NOASSERTION",
+      "radar": "tool-scout",
+      "date": "2026-10-13",
+      "cycle": "tue"
+    },
+    {
+      "id": "20261013-ts-002",
+      "priority": "worth-trying",
+      "title": "thesnarkitecht/rembrandt",
+      "summary": "免費相片編輯器，無帳號、無訂閱、無追蹤。支援 RAW、遮罩與 on-device AI，macOS / Windows / Linux 皆可，且可自架。對創作者是輕量 Lightroom 替代選項。",
+      "tags": [
+        "creator-tool",
+        "photo-editor",
+        "local-ai",
+        "privacy"
+      ],
+      "url": "https://github.com/thesnarkitecht/rembrandt",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 103,
+      "createdDate": "2026-09-29",
+      "license": "GPL-3.0",
+      "radar": "tool-scout",
+      "date": "2026-10-13",
+      "cycle": "tue"
+    },
+    {
+      "id": "20261013-ts-003",
+      "priority": "worth-trying",
+      "title": "SaarthurR/atticus-mac",
+      "summary": "Mac 語音助手，免 API key — 直接跑在你的 Claude Pro / Max 方案上。按住 ⌃⌥Space 說話，會記住你、學你的捷徑。對已訂 Claude 的人幾乎零成本。",
+      "tags": [
+        "voice",
+        "ai-agent",
+        "claude-code",
+        "macos"
+      ],
+      "url": "https://github.com/SaarthurR/atticus-mac",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 49,
+      "createdDate": "2026-10-10",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-10-13",
+      "cycle": "tue"
+    },
+    {
+      "id": "20261013-ts-004",
+      "priority": "worth-trying",
+      "title": "barbarabax/sonora-studio",
+      "summary": "免費、local-first 的 AI 音樂工作室，基於 ACE-Step 1.5：prompt+歌詞創作、曲庫、remix、編輯、分軌與 mastering。透過 ComfyUI 跑自家 GPU，或上 RunPod / Vast.ai。跟我們做音樂直接相關。",
+      "tags": [
+        "music-generation",
+        "audio",
+        "local-ai",
+        "ace-step"
+      ],
+      "url": "https://github.com/barbarabax/sonora-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/barbarabax/sonora-studio",
+      "stars": 21,
+      "createdDate": "2026-10-11",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-10-13",
+      "cycle": "tue"
+    },
+    {
+      "id": "20261013-ts-005",
+      "priority": "on-the-radar",
+      "title": "moritzwilksch/diffle",
+      "summary": "鍵盤優先的 diff 檢視器，內建 LSP 支援與 GitHub 整合。這週在 Show HN 竄起（71pts），適合愛用鍵盤流 review code 的人。",
+      "tags": [
+        "dev-tool",
+        "diff",
+        "lsp",
+        "cli"
+      ],
+      "url": "https://github.com/moritzwilksch/diffle",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 139,
+      "createdDate": "2026-09-08",
+      "license": "Apache-2.0",
+      "radar": "tool-scout",
+      "date": "2026-10-13",
+      "cycle": "tue"
+    },
+    {
+      "id": "20261013-ts-006",
+      "priority": "on-the-radar",
+      "title": "darshi1337/apogee",
+      "summary": "私密的 AI 閱讀摘要器，靈感來自 Mozilla Orbit，摘要你讀的任何東西。這週 Show HN 回溫（66pts，84★/39 forks 互動扎實）。",
+      "tags": [
+        "ai-summarizer",
+        "reading",
+        "privacy",
+        "local-ai"
+      ],
+      "url": "https://github.com/darshi1337/apogee",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 84,
+      "createdDate": "2026-05-26",
+      "license": "MIT",
+      "radar": "tool-scout",
+      "date": "2026-10-13",
+      "cycle": "tue"
     }
   ],
   "lastUpdated": "2026-10-12T21:24:43.601057Z",
