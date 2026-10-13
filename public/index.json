@@ -90391,6 +90391,240 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261014-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "DigUp",
+      "summary": "用自然語言搜尋整台 Mac 的檔案內容——照片、PDF、錄音、影片、程式碼都能靠語意找。完全 on-device，建在 Google DeepMind 的 EmbeddingGemma 2 上，不上傳雲端。",
+      "tags": [
+        "local-ai",
+        "embedding",
+        "dev-tool"
+      ],
+      "url": "https://github.com/ARahim3/DigUp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 2310,
+      "createdDate": "2026-10-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20261014-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "esp32-iphone-agent",
+      "summary": "用一顆 $7 的 ESP32 讓 AI 操作真實 iPhone：AirPlay 當眼睛、USB HID 當手，接任何 OpenAI-compatible 的 vision model。不用 Mac、不用開發者帳號、不用越獄。",
+      "tags": [
+        "ai-agent",
+        "computer-use"
+      ],
+      "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "stars": 1479,
+      "createdDate": "2026-10-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20261014-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "new-term-radar",
+      "summary": "每天掃出新 AI 術語——新 model、產品、repo 的名字，從 X / Hugging Face / GitHub / sitemap 上搶在一般關鍵字工具收錄前抓到。跟 Sub 自己的 radar 工作同路數，可直接 clone 來跑。",
+      "tags": [
+        "ai-agent",
+        "radar",
+        "claude-code"
+      ],
+      "url": "https://github.com/zhuyansen/new-term-radar",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/zhuyansen/new-term-radar",
+      "stars": 855,
+      "createdDate": "2026-10-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261014-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "folkbench",
+      "summary": "開源的 AI API 中轉站評測與切換工具：實測 Claude Code / Codex 各家中轉站的可用率、延遲與價格並排行。常在用第三方 relay 的人可拿來挑最穩的。",
+      "tags": [
+        "coding-agent",
+        "benchmark"
+      ],
+      "url": "https://github.com/Folkbench/folkbench",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Folkbench/folkbench",
+      "stars": 840,
+      "createdDate": "2026-10-02",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261014-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "SeeCode",
+      "summary": "給 Claude 等 coding agent 用的動畫化、可探索圖解：從一小段 JSON spec 生成可互動的流程/架構動畫，解釋程式邏輯時好用。",
+      "tags": [
+        "coding-agent",
+        "diagram"
+      ],
+      "url": "https://github.com/Aryanutkarsh/SeeCode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Aryanutkarsh/SeeCode",
+      "stars": 465,
+      "createdDate": "2026-10-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20261014-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "motionmaxxing",
+      "summary": "一個 agent skill，把 AI 生出來的 slop 影片修成像 motion designer 做的片子。給做創作者內容、要產動態圖像的人參考。",
+      "tags": [
+        "motion-graphics",
+        "skill"
+      ],
+      "url": "https://github.com/Tejashmakwana/motionmaxxing",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Tejashmakwana/motionmaxxing",
+      "stars": 383,
+      "createdDate": "2026-10-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261014-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "Pi-Bolt",
+      "summary": "把 Pi coding agent 提前編譯成原生碼：啟動比在 Bun 上跑快 3 倍，CPU 只用約三分之一。在意 agent 冷啟動速度的可以試。",
+      "tags": [
+        "coding-agent"
+      ],
+      "url": "https://github.com/opensec-git/Pi-Bolt",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/opensec-git/Pi-Bolt",
+      "stars": 317,
+      "createdDate": "2026-10-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20261014-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "sno-station-skills",
+      "summary": "31 套測過的 skills，把 Claude Code 和 Codex 變成一個團隊：跨廠商互審、quota 用完自動交接、每早一頁 brief、帶證據的工單，還有夜間從你自己的 session 學習的迴圈。一行 sno setup 裝起。",
+      "tags": [
+        "claude-code",
+        "skills",
+        "codex"
+      ],
+      "url": "https://github.com/sno-ai/sno-station-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/sno-ai/sno-station-skills",
+      "stars": 302,
+      "createdDate": "2026-10-01",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261014-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "fish-audio-hermes",
+      "summary": "Fish Audio 官方的 Hermes Agent plugin：有表現力的 TTS、STT、voice library、voice cloning 與 voice design。做音訊/配音相關的可留意。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "audio"
+      ],
+      "url": "https://github.com/100yenadmin/fish-audio-hermes",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/100yenadmin/fish-audio-hermes",
+      "stars": 123,
+      "createdDate": "2026-10-05",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261014-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "opencode-rust",
+      "summary": "用 Rust 重寫的開源 AI coding agent：CLI、TUI 加 HTTP server，專跑 local AI agent，不用 Docker。昨天才建的，很早期。",
+      "tags": [
+        "coding-agent",
+        "rust",
+        "local-llm"
+      ],
+      "url": "https://github.com/vakandi/opencode-rust",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/vakandi/opencode-rust",
+      "stars": 56,
+      "createdDate": "2026-10-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261014-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "blokkily",
+      "summary": "實驗性的 pattern-first DAW，而且支援 MCP——等於可以讓 AI agent 直接操作這個 DAW。本週 Show HN 冒出來的，正好踩在 Gary 的音訊 + agent 交集上。",
+      "tags": [
+        "daw",
+        "mcp",
+        "audio"
+      ],
+      "url": "https://github.com/andrewfader/blokkily",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": 75,
+      "createdDate": "2026-09-26",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261014-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-10-14",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "ito",
+      "summary": "跑在 ESP32-S3 上的自然串流 TTS：4.4M 參數、4.9MB，不用雲端、不用 NPU。邊緣端語音合成的有趣極限案例。",
+      "tags": [
+        "tts",
+        "edge-ai",
+        "audio"
+      ],
+      "url": "https://github.com/lokutor-ai/ito",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/lokutor-ai/ito",
+      "stars": 24,
+      "createdDate": "2026-10-02",
+      "license": "GPL-3.0"
     }
   ],
   "lastUpdated": "2026-10-13T21:34:24Z",
