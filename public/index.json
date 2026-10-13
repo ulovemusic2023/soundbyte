@@ -90068,6 +90068,24 @@
       "radar": "tool-scout",
       "date": "2026-10-13",
       "cycle": "tue"
+    },
+    {
+      "id": "20261014-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwen/Qwen-Image-2.1-Turbo",
+      "summary": "Qwen 新版文生圖模型的 Turbo 蒸餾加速版，7B 參數、少步數即可出圖，10/9 上架 HuggingFace，已累積 ~9.6k 下載、701 likes。適合單張 16GB 卡做快速 text-to-image，省去大模型多步採樣的等待。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "7B fp16 約需量化以舒適塞進 16GB",
+      "license": "other（非標準開源授權，商用前先看條款）"
     }
   ],
   "lastUpdated": "2026-10-12T21:24:43.601057Z",
