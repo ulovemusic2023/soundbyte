@@ -90331,8 +90331,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261014-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-14",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Geoffrey Huntley — AI 時代的 leverage 不在寫 code，在「決定、驗證、負責」",
+      "summary": "模型能力已不是瓶頸。你的槓桿來自三件事：決定要 build 什麼、驗證產出、對結果負責。把生成的 code 當黑箱來驗證而非逐行讀，整個系統上測試；把反覆的糾正變成 pre-commit hook——用機械化檢查強制行為，比寫在 instruction/skill 檔裡可靠，因為那些檔會隨模型漂移退化。",
+      "tags": [
+        "ai-native",
+        "leverage",
+        "agentic-engineering"
+      ],
+      "url": "https://ghuntley.com/agency/",
+      "source": "Geoffrey Huntley",
+      "sourceUrl": "https://ghuntley.com/agency/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-14",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Applied Intuition 的建構順序：共同創辦人 → 市場時機 → 問題",
+      "summary": "他們刻意照順序打造公司：先找長期合作過的 co-founder，再選一個創辦人經驗重疊、且正要起飛的市場，最後才鎖定市場裡的具體問題。因為選了自己懂、又即將爆發的市場，他們熬得過早期、並在需求到來時卡好位。",
+      "tags": [
+        "market-timing",
+        "pmf",
+        "co-founder"
+      ],
+      "url": "https://review.firstround.com/applied-intuitions-path-to-product-market-fit/",
+      "source": "First Round Review",
+      "sourceUrl": "https://review.firstround.com/applied-intuitions-path-to-product-market-fit/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-10-14",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Matthew Green — 應對衝擊拼的是事前準備",
+      "summary": "AI 製造意外的速度，遠快過人類修訂標準的速度——所以應對必須在衝擊來臨前就備好。危機處理拼的是事前準備，不是事後反應。金句：You only recover from a surprise like this if you do the preparation in advance.",
+      "tags": [
+        "preparation",
+        "ai-risk",
+        "mental-model"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/9/matthew-green/",
+      "source": "Simon Willison (quoting Matthew Green)",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/9/matthew-green/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-12T21:24:43.601057Z",
-  "updatedAt": "2026-10-12T21:24:43.601057Z"
+  "lastUpdated": "2026-10-13T21:34:24Z",
+  "updatedAt": "2026-10-13T21:34:24Z"
 }
