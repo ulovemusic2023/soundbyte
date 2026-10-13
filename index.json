@@ -90086,6 +90086,251 @@
       "price": null,
       "vram": "7B fp16 約需量化以舒適塞進 16GB",
       "license": "other（非標準開源授權，商用前先看條款）"
+    },
+    {
+      "id": "20261014-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Gemini 4 Argon",
+      "summary": "Google DeepMind 發表 Gemini 4 Argon：定位與專家協作解前沿問題的 agentic 模型，CWE-Bench 漏洞修復並列第一(68%)、號稱對 indirect prompt injection 最具韌性，並能把原始影片自動轉成物理精確模擬加速機器人訓練。",
+      "tags": [
+        "frontier-model",
+        "agentic",
+        "cyber-defense",
+        "robotics"
+      ],
+      "url": "https://deepmind.google/models/gemini/",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/models/gemini/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Redesigning source control at Anthropic (Scion)",
+      "summary": "Anthropic 五個月內自建版本控制 Scion 把 monorepo 從 git 整包遷走：Claude 讓每日 merge 從 5 月 2,500 暴衝到 9 月 30,000+，git 去中心化設計(主幹史近 100GB、每日 25M checkout)撐不住。coding 不再是瓶頸、人類尺度 dev infra 才是。",
+      "tags": [
+        "version-control",
+        "monorepo",
+        "ai-scale-infra"
+      ],
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "11-year-old unsoundness bugs in Rust borrow checker",
+      "summary": "rust-lang/rust 回報 borrow checker 存在 11 年的 unsoundness 漏洞(可繞過借用檢查構造 UB)，HN 622 分熱議。動搖『safe Rust 不會 UB』的信任基礎。",
+      "tags": [
+        "rust",
+        "memory-safety",
+        "borrow-checker",
+        "soundness"
+      ],
+      "url": "https://github.com/rust-lang/rust/issues/164250",
+      "source": "rust-lang/rust (GitHub Issue)",
+      "sourceUrl": "https://github.com/rust-lang/rust/issues/164250",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Codex CLI installs a persistent self-updating background daemon by default",
+      "summary": "OpenAI Codex CLI 0.157.0 起光開互動 session 就啟動常駐背景 daemon(關窗仍存活、複製 ~374MB 自跑、每小時自動更新可能殺掉進行中 turn)。開發者要求改為 opt-in。agent 工具越界預設引爆信任爭議。",
+      "tags": [
+        "coding-agent",
+        "dev-tooling",
+        "cli-daemon",
+        "trust"
+      ],
+      "url": "https://github.com/openai/codex/issues/48195",
+      "source": "openai/codex (GitHub Issue)",
+      "sourceUrl": "https://github.com/openai/codex/issues/48195",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Spotify more than doubled monthly code changes as AI accelerated development",
+      "summary": "InfoQ：Spotify 導入 AI 輔助開發後每月 merge 變更量翻倍以上，迫使全組織重檢品質/可靠度控管(測試、observability、rollback、工作負載排序、自動化維護)。呼應『AI 產更多 code 但不等於更多可交付軟體』。",
+      "tags": [
+        "ai-code-software-gap",
+        "developer-productivity",
+        "quality-controls"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Apple Minions: distributed virtual GPU cloud on idle Apple Silicon",
+      "summary": "Apple ML 研究 Minions：聚合散落 macOS 裝置上平時閒置的 Apple Silicon GPU 成動態分散式虛擬 GPU 雲跑大規模 ML 推論，含容錯與資源調度。中央算力吃緊時用現有硬體扛推論、免加購 GPU。",
+      "tags": [
+        "apple-silicon",
+        "distributed-inference",
+        "gpu-cloud"
+      ],
+      "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "source": "Apple Machine Learning Research",
+      "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "EmbeddingGemma 2 turned into a speech-to-text model",
+      "summary": "把 Google 多模態 embedding 模型 EmbeddingGemma 2 當 STT：audio encoder 不動，只訓小 reader 把音訊投進模型文字空間找最近英文詞(~22.9萬)拼逐字稿，再補標點。base MacBook Air 純裝置端 ~13s 轉 1 小時音訊。",
+      "tags": [
+        "embedding-model-stt",
+        "on-device",
+        "speech-to-text",
+        "gemma"
+      ],
+      "url": "https://eg2.haku.sh/",
+      "source": "eg2.haku.sh",
+      "sourceUrl": "https://eg2.haku.sh/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Janas: run LLMs larger than RAM by streaming experts from SSD",
+      "summary": "純 C 的 Janas-LLM：32GB 筆電跑 48GB 的 Qwen3-Next-80B，寫 24 tok/s(llama.cpp 僅 2.8)、讀 62 vs 16；同機 13 個模型 Q4_K_M 全面快過 llama.cpp。CPU/GPU 皆可，把『模型比記憶體大』從不可行變日常。",
+      "tags": [
+        "local-inference",
+        "expert-streaming",
+        "ssd-offload"
+      ],
+      "url": "https://github.com/prabanta-dev/janas",
+      "source": "prabanta-dev/janas (GitHub)",
+      "sourceUrl": "https://github.com/prabanta-dev/janas",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Z.ai GLM-Legal",
+      "summary": "Z.ai 推出 GLM-Legal：GLM 開放權重家族的法律領域專用模型，HN 660 分。延續開放權重模型走向垂直領域(法律/醫療)專化趨勢。原文正文未能完整擷取，細節以官方公告為準。",
+      "tags": [
+        "open-weight",
+        "domain-model",
+        "legal-ai"
+      ],
+      "url": "https://z.ai/blog/glm-legal",
+      "source": "Z.ai Blog",
+      "sourceUrl": "https://z.ai/blog/glm-legal",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Meta Muse Wonder",
+      "summary": "Meta 發表 Muse Wonder / Muse Wonder Full：主打個人與專業 agent 的前沿模型，結合 Active Memory 與 Active Focus，定位邁向『personal superintelligence』。已上 Meta Model API 與 Muse Code。",
+      "tags": [
+        "frontier-model",
+        "personal-agent",
+        "agentic-memory"
+      ],
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "source": "Meta AI Research",
+      "sourceUrl": "https://research.meta.ai/blog/muse-wonder",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare OHTTP Gateway refuses to decrypt Cloudflare-proxied requests",
+      "summary": "Cloudflare 開放 OHTTP Gateway closed beta(替 origin 解密 Oblivious HTTP)，刻意拒絕來自 Cloudflare Workers 或經 Cloudflare 代理的請求——否則 client 識別資訊與請求內容會落在同一方手上，破壞 OHTTP 隱私保證。",
+      "tags": [
+        "privacy",
+        "oblivious-http",
+        "cloudflare",
+        "trust-boundary"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-ohttp-gateway/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/cloudflare-ohttp-gateway/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261014-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "A Modern Web App in C",
+      "summary": "一篇示範用純 C 寫現代 web app 的文章(HN 685 分)，逆潮流探討在 C 裡處理 routing/模板/資料庫的實作與取捨。",
+      "tags": [
+        "c-lang",
+        "web-dev",
+        "systems-programming"
+      ],
+      "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
+      "source": "prophitt.me",
+      "sourceUrl": "https://prophitt.me/writing/a-modern-web-app-in-c",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-12T21:24:43.601057Z",
