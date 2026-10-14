@@ -90625,8 +90625,45 @@
       "stars": 24,
       "createdDate": "2026-10-02",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20261015-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "fishaudio/drama-3",
+      "summary": "fishaudio（fish-speech 作者）新 TTS 模型 drama-3，36B 參數，主打對話／戲劇語音生成。10/1 上架、今天仍在更新，HF 兩週累積 295 likes。",
+      "tags": [
+        "tts_speech"
+      ],
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "36B，4-bit 後約 18-20GB",
+      "license": "other"
+    },
+    {
+      "id": "20261015-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "isair/jarvis",
+      "summary": "本地桌面 AI 助理：語音＋文字對話、個人記憶、聽寫、MCP 工具，完全離線跑在 Ollama 或 OpenAI-compatible server 上，支援 macOS/Windows/Linux。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/isair/jarvis",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "本體不吃顯存，依 Ollama 模型而定",
+      "license": "NOASSERTION"
     }
   ],
-  "lastUpdated": "2026-10-13T21:34:24Z",
-  "updatedAt": "2026-10-13T21:34:24Z"
+  "lastUpdated": "2026-10-14T21:13:30.557780+00:00",
+  "updatedAt": "2026-10-14T21:13:30.557780+00:00"
 }
