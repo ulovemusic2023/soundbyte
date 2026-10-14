@@ -90722,8 +90722,110 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261015-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-15",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "outcrawlai/scout",
+      "summary": "開源 browser agent，由 Outcrawl 團隊釋出。讓 AI 自動操作瀏覽器完成多步驟任務（填表、擷取資料、自動化流程），幾天內衝到 600+ stars。",
+      "tags": [
+        "ai-agent",
+        "browser-agent",
+        "automation"
+      ],
+      "url": "https://github.com/outcrawlai/scout",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/outcrawlai/scout",
+      "stars": 635,
+      "createdDate": "2026-10-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261015-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-15",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "mw00/project-maya",
+      "summary": "在自己的 GPU 上私有跑 GLM-5.3-Flash（321B MoE），單卡到 16 卡、NVIDIA/AMD、Linux/Windows 都支援。OpenAI- 與 Anthropic-compatible API 與量化工具。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "self-hosted"
+      ],
+      "url": "https://github.com/mw00/project-maya",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/mw00/project-maya",
+      "stars": 841,
+      "createdDate": "2026-10-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20261015-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-15",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "assafkip/claudemy",
+      "summary": "Claude Code skill：給一個主題，它上網研究後生成一套 2 分鐘的有聲課程，每段附引用來源。開源版 Udemy/Coursera，對做有聲內容的創作者有參考價值。",
+      "tags": [
+        "claude-code",
+        "audio",
+        "tts",
+        "creator-tool"
+      ],
+      "url": "https://github.com/assafkip/claudemy",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/assafkip/claudemy",
+      "stars": 90,
+      "createdDate": "2026-10-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261015-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-15",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "0xS4N4TG/papercut-explainer",
+      "summary": "Claude Code skills + Remotion library，自動產出直式剪紙風格解說短片：hook、腳本、分鏡、配音到 build、QA 一條龍。",
+      "tags": [
+        "claude-code",
+        "remotion",
+        "video",
+        "creator-tool"
+      ],
+      "url": "https://github.com/0xS4N4TG/papercut-explainer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/0xS4N4TG/papercut-explainer",
+      "stars": 59,
+      "createdDate": "2026-10-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261015-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-15",
+      "cycle": "daily",
+      "priority": "on-the-radar",
+      "title": "twostraws/SwiftUI-Agent-Skill",
+      "summary": "Paul Hudson（Hacking with Swift）釋出的 SwiftUI agent skill，給 Claude Code / Codex 等 AI 寫出更到位的 SwiftUI。",
+      "tags": [
+        "claude-code",
+        "swiftui",
+        "ios"
+      ],
+      "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "stars": 5953,
+      "createdDate": "2026-03-05",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-14T21:13:30.557780+00:00",
-  "updatedAt": "2026-10-14T21:13:30.557780+00:00"
+  "lastUpdated": "2026-10-15",
+  "updatedAt": "2026-10-15T05:43:51.295562+08:00"
 }
