@@ -90662,6 +90662,66 @@
       "price": null,
       "vram": "本體不吃顯存，依 Ollama 模型而定",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20261015-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-15",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "怎麼判斷一家 startup 有沒有護城河：看「會複利的優勢」",
+      "summary": "Dan Hockenmaier 的框架：真正的 moat 是會自我強化、越久越強的 compounding advantage，只有四種——switching cost（workflow tax）、network effect、scale economy（Zipline 每單成本從 $300 掉到 $12）、data effect（Stripe Radar、Cursor）。關鍵提醒：看公司實際在做什麼（roadmap、哪個團隊最大最有話語權），不是看它嘴上的策略。而 speed、distribution、brand、強團隊、融資都不是護城河，只是「燃料」。",
+      "tags": [
+        "moat",
+        "compounding-advantage",
+        "defensibility"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-to-tell-if-a-startup-has-a-moat",
+      "source": "Lenny's Newsletter (Dan Hockenmaier)",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-tell-if-a-startup-has-a-moat",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261015-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-15",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Thiel Fellowship 早期怎麼選人：看「整個人」而不是 checklist",
+      "summary": "Danielle Strachman（Thiel Fellowship 早期 program director）回顧選才心法：不是用履歷清單篩，而是評估一個人的獨立思考與自我驅動能力，然後給他們空間追自己的點子。反直覺的一課——再怎麼 self-directed 的人也需要持續 support；而且當一個計畫變得夠有名，它本身就會變成它原本想打破的那種「光環門票」。",
+      "tags": [
+        "hiring",
+        "talent-evaluation",
+        "founder-selection"
+      ],
+      "url": "https://review.firstround.com/inside-thiel-fellowship/",
+      "source": "First Round Review (Danielle Strachman)",
+      "sourceUrl": "https://review.firstround.com/inside-thiel-fellowship/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261015-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-10-15",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Reference check 是被低估的招募武器——但多數人做錯了",
+      "summary": "First Round 提出 composite referencing：別只打候選人給的那幾通好話電話，要打更多通、混進 backchannel 側面打聽、問具體的「講個故事」型問題，而且 reference 要在流程早期就開始做，不是等到最後才走流程。做對了，reference 是你對一個人判斷最準的來源之一。",
+      "tags": [
+        "hiring",
+        "references",
+        "due-diligence"
+      ],
+      "url": "https://review.firstround.com/references-are-the-most-underrated-tool-in-hiring/",
+      "source": "First Round Review",
+      "sourceUrl": "https://review.firstround.com/references-are-the-most-underrated-tool-in-hiring/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-14T21:13:30.557780+00:00",
