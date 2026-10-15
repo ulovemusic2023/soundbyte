@@ -90824,8 +90824,116 @@
       "stars": 5953,
       "createdDate": "2026-03-05",
       "license": "MIT"
+    },
+    {
+      "id": "20261016-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Spotify：AI 讓月度 code 變更翻倍（8,100→17,000），品質控管被迫重做",
+      "summary": "Spotify 導入 AI 輔助開發後，月合併變更年增一倍以上（8 月約 8,100→17,000）。背後有 Fleet Management（已自動合併 250 萬+ 維護 PR）加上背景 coding agent Honk（在 K8s pod 跑 Claude Agent SDK，Fleetshift 排程、Honk 改 code 並跑 CI），一次 Java 後端遷移只花 3 天。但有自動相依升級通過既有檢查卻在 production 失敗，公司正補強 rollback 容量、把自動變更排進負責團隊的工時內。code 產出暴增、品質/可靠性成新瓶頸的具體實證。",
+      "tags": [
+        "ai-coding",
+        "ai-code-software-gap",
+        "agent-fleet-orchestration",
+        "devops"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261016-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 開源 Void：Vite 全端 SDK/CLI/self-host 平台，一條龍部署到 Cloudflare",
+      "summary": "Cloudflare 在 VoidZero 的 Vite+（Vite/Vitest/Oxc/Rolldown）工具鏈之上，開源三件套 Void Platform / SDK / CLI（單一 npm install void + Vite plugin）。補齊 server routing、typed data access（型別從 DB 一路帶到 UI）、本地開發與自動 provision Cloudflare 資源。原本要做私有平台，VoidZero 併入 CF 後轉成 open-source + 可自架。前端工具鏈往全端平台延伸，並與 workerd self-hosting 路線合流。",
+      "tags": [
+        "vite",
+        "fullstack",
+        "void-fullstack-sdk",
+        "workerd-self-hosting",
+        "edge-runtime"
+      ],
+      "url": "https://blog.cloudflare.com/deploy-with-void/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/deploy-with-void/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261016-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 把 Worker 跑進 Secure Web Gateway / DLP 的 policy path",
+      "summary": "Cloudflare 為 Gateway 與 DLP 推出新的 Forward action + custom validation functions，讓你用自寫的任意 Worker 邏輯 inline 介入『安全決策當下』、或把自有資料帶進 policy evaluation。打破近 30 年來 SWG『condition 命中→terminal action（Allow/Block/Isolate/Log）』的固定模型。論點：true programmability 不是有 public API/Terraform/webhook，而是能在 policy 評估路徑裡跑你自己的 code。全 Zero Trust 方案可用。",
+      "tags": [
+        "sase",
+        "programmable-sase-worker",
+        "security",
+        "edge-compute",
+        "architecture"
+      ],
+      "url": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261016-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI 正在大規模反編譯遊戲：保存派大勝，但攻擊面也炸開",
+      "summary": "Indie 開發者 Popcar 盤點 AI 驅動的反編譯浪潮：老遊戲被 port/mod/強化、常靜態重編成 WebAssembly 直接在瀏覽器跑，遊戲保存專案大爆發；在主機廠全面數位化、伺服器關閉即不可玩的當下是好消息。反面是這套能套用到任何軟體——付費 app 可被違願開源、公司互相抄，且沒人攔得住。延續原生 binary 靜態重編譯/重寫成可攜格式的趨勢線。",
+      "tags": [
+        "mass-game-decompilation",
+        "static-recompilation-wasm",
+        "wasm",
+        "preservation",
+        "paradigm-shift"
+      ],
+      "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261016-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Titus Winters：Develop / Deploy / Operate 是三種不同的工作",
+      "summary": "Titus Winters 在 Craft Conference 的〈Software Workflow Optimization〉：軟體只有 ship 給客戶才有價值，release cadence 越快幾乎總是越好。Development 是創意流程（該留給人）、Deployment 是工廠流程、Operations 是自動化流程——三者需要不同思維、指標與投資。四大影響：product success / compute capacity / engineering capacity / strategic innovation；最大開銷是人（而非 compute）且多半沒被量測。AI 的作用是讓工程師更深入理解問題，不是讓工程師變少。",
+      "tags": [
+        "mental-model",
+        "devops",
+        "sdlc",
+        "ai-coding"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/optimize-software-workflow/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/optimize-software-workflow/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-15",
-  "updatedAt": "2026-10-15T05:43:51.295562+08:00"
+  "lastUpdated": "2026-10-16T05:24:15.951870+08:00",
+  "updatedAt": "2026-10-16T05:24:15.951870+08:00"
 }
