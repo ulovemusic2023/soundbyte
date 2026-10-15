@@ -90994,8 +90994,169 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261016-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-16",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Jakeschincariol/founder-skill",
+      "summary": "11 個免費 Claude skills，在你發布前先測試一個生意：一個受 Hormozi / Thiel / Jobs 訓練的董事會、一位行銷總監、一位 CFO，和 100 個買家 agent 組成的消費者小組。MIT。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "founder"
+      ],
+      "url": "https://github.com/Jakeschincariol/founder-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories?q=created:>2026-10-02+stars:>20+topic:claude-code",
+      "stars": 786,
+      "createdDate": "2026-10-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20261016-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-16",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "iamlukethedev/Herald-OS",
+      "summary": "agent-native 作業系統，用 Hermes Agent 當介面。獨立專案，與 Nous Research 無關。想看 agent-first OS 長怎樣的可以追。",
+      "tags": [
+        "ai-agent",
+        "agent-os"
+      ],
+      "url": "https://github.com/iamlukethedev/Herald-OS",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories?q=created:>2026-10-02+stars:>20+topic:ai-agent",
+      "stars": 502,
+      "createdDate": "2026-10-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20261016-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-16",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "openfilm/openfilm",
+      "summary": "開源 AI 影片 agent：把任何 coding agent 變成影片 agent，附編輯器可改它做的任何東西。做影片內容的創作者工具。",
+      "tags": [
+        "creator-tool",
+        "video",
+        "ai-agent"
+      ],
+      "url": "https://github.com/openfilm/openfilm",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories?q=created:>2026-10-02+stars:>20+topic:claude-code",
+      "stars": 406,
+      "createdDate": "2026-10-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20261016-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-16",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "i12bp8/decomp.wtf",
+      "summary": "What The Function：讓你的 AI agent 把你擁有的遊戲反編譯成 C，而且能編回一模一樣的 bytecode。本地運行。對逆向工程 / 學底層的人很有料。",
+      "tags": [
+        "reverse-engineering",
+        "dev-tool",
+        "mcp"
+      ],
+      "url": "https://github.com/i12bp8/decomp.wtf",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories?q=created:>2026-10-02+stars:>20+topic:claude-code",
+      "stars": 350,
+      "createdDate": "2026-10-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261016-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-10-16",
+      "cycle": "fri",
+      "priority": "rising-fast",
+      "title": "Nongfsq/ftop",
+      "summary": "給 Apple Silicon Mac 的小巧安靜系統監控：一個浮動玻璃面板，任何尺寸都能用。輕量好看的日常工具。",
+      "tags": [
+        "dev-tool",
+        "macos",
+        "productivity"
+      ],
+      "url": "https://github.com/Nongfsq/ftop",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories?q=created:>2026-10-02+stars:>20+topic:local-llm",
+      "stars": 289,
+      "createdDate": "2026-10-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20261016-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-10-16",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "Graphicle-AI/graphicle",
+      "summary": "給 coding agent 的 code graph + memory，用一支 Rust 程式搞定。支援 Claude Code、Codex、Cursor 和任何 MCP client。想讓 agent 更懂大型 codebase 的可以試。",
+      "tags": [
+        "mcp",
+        "coding-agent",
+        "code-graph",
+        "rust"
+      ],
+      "url": "https://github.com/Graphicle-AI/graphicle",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories?q=created:>2026-10-02+stars:>20+topic:mcp",
+      "stars": 173,
+      "createdDate": "2026-10-14",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261016-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-10-16",
+      "cycle": "fri",
+      "priority": "worth-trying",
+      "title": "tony3liu/eido",
+      "summary": "macOS 上的 AI coding agent 工作區，基於 Zed 和 pi。原生程式編輯與審查、browser use、computer use、全域 agent 存取控制。",
+      "tags": [
+        "coding-agent",
+        "macos",
+        "ide"
+      ],
+      "url": "https://github.com/tony3liu/eido",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories?q=created:>2026-10-02+stars:>20+topic:coding-agent",
+      "stars": 62,
+      "createdDate": "2026-10-08",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261016-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-10-16",
+      "cycle": "fri",
+      "priority": "on-the-radar",
+      "title": "PedroMarinhoDev/ComfyUI-Drama3",
+      "summary": "Fish Audio Drama 3 text-to-speech 原生進 ComfyUI：voice cloning、對話、卡片內 inline cues，8 GB 起跑，另附原生 Qwen3-ASR。做配音 / 有聲內容的音訊工具。",
+      "tags": [
+        "audio",
+        "tts",
+        "voice-cloning",
+        "comfyui"
+      ],
+      "url": "https://github.com/PedroMarinhoDev/ComfyUI-Drama3",
+      "source": "GitHub API",
+      "sourceUrl": "https://api.github.com/search/repositories?q=created:>2026-10-02+stars:>20+topic:text-to-speech",
+      "stars": 32,
+      "createdDate": "2026-10-14",
+      "license": "GPL-3.0"
     }
   ],
-  "lastUpdated": "2026-10-16T05:24:15.951870+08:00",
-  "updatedAt": "2026-10-16T05:24:15.951870+08:00"
+  "lastUpdated": "2026-10-16",
+  "updatedAt": "2026-10-16T05:42:00+08:00"
 }
