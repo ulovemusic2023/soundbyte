@@ -90932,6 +90932,68 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261016-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-16",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Anthropic 重寫版本控制：為「真正的主力用戶」而設計，而不是為通用情境",
+      "summary": "Anthropic 自建 Scion 取代 Git，核心心法是「為實際的主力用戶與規模設計」——他們發現 Claude 本身才是系統最重的使用者、且永遠在線，於是離線支援這類通用需求直接砍掉。幾個月內合併量從約 2,500 衝到 30,000+ 筆/天，7 人小隊 5 個月就完成遷移。啟示：當瓶頸變了，工具就該跟著換；小而專注的團隊能快速重建核心基建；AI adversarial review 很強但會「見樹不見林」，仍需資深工程師掌舵。",
+      "tags": [
+        "ai-native",
+        "infra",
+        "team-scaling",
+        "first-principles"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+      "source": "Anthropic Engineering（經 Simon Willison 轉介）",
+      "sourceUrl": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261016-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-16",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Anthropic 給投資人的數字：用「每一塊運算成本賺多少」衡量 AI 生意",
+      "summary": "據 FT 報導，Anthropic Q3 每花 1 美元運算就賺回約 1.70 美元——這個「營收/運算」比值，是判斷 AI 生意的使用量成長究竟在創造還是消耗價值的關鍵指標。更值得學的是取捨：競爭對手靠蒸餾(distillation)貢獻了 5–7% 營收，但同時在抽走核心 IP，Anthropic 選擇「實質性地」砍掉這塊營收來保護產品。快速成長 ≠ 獲利（調整後營業利益率約 11%）。",
+      "tags": [
+        "ai-economics",
+        "unit-economics",
+        "strategy",
+        "trade-off"
+      ],
+      "url": "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b",
+      "source": "Financial Times（經 Simon Willison 轉介）",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261016-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-10-16",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "AI 正在大規模反編譯軟體——「靠難度築起的護城河」正在歸零",
+      "summary": "獨立遊戲開發者 Popcar 指出：AI 讓反編譯變得又便宜又普及，長期以來保護已編譯軟體的「實務上的保密性」正在瓦解。這把雙面刃——競爭者可未經授權複製你的付費產品，但保存者也能移植、改造老遊戲到新硬體。心智模型：任何建立在「做起來很難 / 看不懂」之上的護城河，當難度被 AI 降到零時就會蒸發。",
+      "tags": [
+        "ai-future",
+        "moat",
+        "paradigm-shift"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "source": "Popcar（經 Simon Willison 轉介）",
+      "sourceUrl": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-16T05:24:15.951870+08:00",
