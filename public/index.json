@@ -91155,6 +91155,94 @@
       "stars": 32,
       "createdDate": "2026-10-14",
       "license": "GPL-3.0"
+    },
+    {
+      "id": "20261017-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-17",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "academa-labs/manimgx",
+      "summary": "給 agent 用的動畫引擎——用 Manim 的 Python API 寫數學/3D 動畫，底層是 Rust GPU core，號稱 blazingly fast。做教學/產品解說影片的創作者工具。",
+      "tags": [
+        "animation",
+        "creator-tool",
+        "rust",
+        "manim",
+        "video"
+      ],
+      "url": "https://github.com/academa-labs/manimgx",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-03+stars:>50&type=repositories",
+      "stars": 1612,
+      "createdDate": "2026-10-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20261017-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-17",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "Leonxlnx/earshot",
+      "summary": "給 coding agent「耳朵」——讓 AI 能聽、能 review、能產生聲音，純 CPU、開源。對做音訊軟體又重度用 AI coding 的人很對味。",
+      "tags": [
+        "audio",
+        "ai-agent",
+        "coding-agent",
+        "cpu",
+        "open-source"
+      ],
+      "url": "https://github.com/Leonxlnx/earshot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:claude-code+created:>2026-10-03&type=repositories",
+      "stars": 302,
+      "createdDate": "2026-10-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261017-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-17",
+      "cycle": "sat",
+      "priority": "worth-trying",
+      "title": "christos-antono/NPCTalk",
+      "summary": "用 Fish Audio 讓任何遊戲裡的 NPC 開口說話：含 skills、自架 voice server 跟給 AI coding agent 用的工具，附完整 GTA V 範例。語音 + 遊戲應用。",
+      "tags": [
+        "voice",
+        "tts",
+        "fish-audio",
+        "game",
+        "ai-agent"
+      ],
+      "url": "https://github.com/christos-antono/NPCTalk",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:voice-cloning+created:>2026-10-03&type=repositories",
+      "stars": 71,
+      "createdDate": "2026-10-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261017-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-17",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "swax/dub-anything",
+      "summary": "讓 AI 主導配音流程，沿用原演員的聲線、音訊在本地端生成。配音/本地化 audio pipeline 的 early-stage 工具。",
+      "tags": [
+        "audio",
+        "dubbing",
+        "voice",
+        "local",
+        "ai"
+      ],
+      "url": "https://github.com/swax/dub-anything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:voice-cloning+created:>2026-10-03&type=repositories",
+      "stars": 36,
+      "createdDate": "2026-10-07",
+      "license": "NOASSERTION"
     }
   ],
   "lastUpdated": "2026-10-16",
