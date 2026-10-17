@@ -91243,6 +91243,26 @@
       "stars": 36,
       "createdDate": "2026-10-07",
       "license": "NOASSERTION"
+    },
+    {
+      "id": "20261018-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "liuzhao1225/YouDub-webui",
+      "summary": "開源 AI 影片在地化／配音工作台：導入影片後用 Whisper 做 ASR、翻譯字幕，再逐句用 VoxCPM2 克隆原聲做配音，搭配 Demucs htdemucs 分離背景音。改用 Cordis 外掛架構，ASR／翻譯／TTS 都可抽換。已在 Windows x64 CUDA 與 macOS CPU 實機驗證，自動偵測 CUDA/MPS/ROCm。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "audio_music_ai"
+      ],
+      "url": "https://github.com/liuzhao1225/YouDub-webui",
+      "source": "GitHub Topics (voice-conversion)",
+      "sourceUrl": "https://github.com/topics/voice-conversion",
+      "price": null,
+      "vram": "所有 bundled 模型為小模型（Whisper tiny / VoxCPM2 / Demucs htdemucs / Qwen3 0.6B aligner），16GB 綰綰有餘，且有 CPU fallback",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-10-16",
