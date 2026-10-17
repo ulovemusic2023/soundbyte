@@ -91424,8 +91424,170 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261018-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-18",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "HeyPuter/everything",
+      "summary": "HeyPuter（puter.com 團隊）要從頭 re-implement 並開源全世界的軟體，everything 是這個計畫的 monorepo 起點。野心超大，值得追蹤它會從哪些基礎元件開始。",
+      "tags": [
+        "open-source",
+        "platform",
+        "monorepo"
+      ],
+      "url": "https://github.com/HeyPuter/everything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=tool-scout-radar",
+      "stars": 2023,
+      "createdDate": "2026-10-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261018-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-18",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "deeplethe/solid-glass",
+      "summary": "專為 AI 應用設計的 design system，主打 material / physical / tactile 的質感語言。對做 creator tools、AI app UI 的人是現成的視覺底子。⚠️ 1.6k★ 但只有 21 forks，比例偏高，建議先看 code。",
+      "tags": [
+        "design-system",
+        "ui",
+        "ai-app"
+      ],
+      "url": "https://github.com/deeplethe/solid-glass",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=tool-scout-radar",
+      "stars": 1687,
+      "createdDate": "2026-10-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261018-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-18",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "chenglou/handwired",
+      "summary": "chenglou（React 社群老面孔）的實驗：把一般 JavaScript 程式直接轉成 neural net。偏研究/玩具性質，但概念很有意思。",
+      "tags": [
+        "javascript",
+        "neural-net",
+        "experiment"
+      ],
+      "url": "https://github.com/chenglou/handwired",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=tool-scout-radar",
+      "stars": 1672,
+      "createdDate": "2026-10-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261018-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "anujasid/blender-ai-mcp-addon",
+      "summary": "Blender 的 AI 助手 + MCP server：visual chat、場景工具、multi-agent workflow，支援 OpenAI / Claude / Gemini / Ollama / OpenCode。對 3D / 創作者流程想接 agent 的人很實用。",
+      "tags": [
+        "mcp",
+        "blender",
+        "3d",
+        "ai-agent"
+      ],
+      "url": "https://github.com/anujasid/blender-ai-mcp-addon",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=tool-scout-radar",
+      "stars": 591,
+      "createdDate": "2026-10-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261018-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "juliobsz/skills",
+      "summary": "一句話就生出 award-caliber 網站的 agent skill。對快速打樣 landing page / 作品集很對味，可當 Claude Code / Codex 的 skill 直接裝。",
+      "tags": [
+        "agent-skill",
+        "web",
+        "claude-code"
+      ],
+      "url": "https://github.com/juliobsz/skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=tool-scout-radar",
+      "stars": 384,
+      "createdDate": "2026-10-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261018-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "AirsupHQ/machine-skill",
+      "summary": "一句話描述任何機械，Claude 就生出 photoreal、有物理模擬的互動版（單一 HTML 檔）外加一支宣傳影片。教育/產品 demo 視覺化很有想像空間。",
+      "tags": [
+        "agent-skill",
+        "simulation",
+        "claude-code"
+      ],
+      "url": "https://github.com/AirsupHQ/machine-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=tool-scout-radar",
+      "stars": 290,
+      "createdDate": "2026-10-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261018-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "hanzohanzhe/Grandet",
+      "summary": "幫你在 1,800+ 官方/推理/中轉供應商裡，找出任一模型最便宜的 API 來源，附 Skill + 匿名 MCP server。對控 AI 成本、常切 provider 的人很實用。",
+      "tags": [
+        "mcp",
+        "llm-cost",
+        "api",
+        "ai-infra"
+      ],
+      "url": "https://github.com/hanzohanzhe/Grandet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=tool-scout-radar",
+      "stars": 283,
+      "createdDate": "2026-10-05",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261018-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-18",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "LumaryLabsLLC/muxin",
+      "summary": "一個 app 管你所有機器：agent sessions、桌面、檔案、logs、GitHub，跨 Mac / Linux / Windows，內建 MCP server。對同時跑多台機器、多個 agent 的工作流很對味。",
+      "tags": [
+        "mcp",
+        "agent-orchestration",
+        "devtool"
+      ],
+      "url": "https://github.com/LumaryLabsLLC/muxin",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=tool-scout-radar",
+      "stars": 271,
+      "createdDate": "2026-10-08",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-10-18",
-  "updatedAt": "2026-10-18T05:20:00+08:00"
+  "updatedAt": "2026-10-18T05:40:00+08:00"
 }
