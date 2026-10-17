@@ -91404,6 +91404,26 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261018-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-18",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "Claude Code 團隊如何做 code review：從終點閘門變成即時拼字檢查",
+      "summary": "Anthropic 的 Claude Code 團隊重新定義了 code review：與其問「有沒有人讀過這段 code？」，改問「這個改動可能出什麼錯？哪一種檢查（自動或人工）最適合抓？」。於是 review 不再是開 PR、等同事看的終點閘門，而是像寫作時的即時拼字檢查——多數改動在送到人類面前前，已被 Claude 審過並修過至少一次，把團隊注意力留給更高層次的判斷。",
+      "tags": [
+        "code-review",
+        "ai-native-workflow",
+        "process-design"
+      ],
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "source": "Claude Code team (Addy Osmani, Morgan Westlee Lunt, Qing Wang)",
+      "sourceUrl": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-18",
