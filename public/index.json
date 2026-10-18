@@ -91629,6 +91629,215 @@
       "license": "開源（見 repo）",
       "createdDate": "2026-10-19T05:13:12.609065",
       "stars": 654
+    },
+    {
+      "id": "20261019-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DeepSeek 推出 Search / Fetch API：給 agent 的廉價 web 存取 primitive",
+      "summary": "DeepSeek 開放 Search API 與 Fetch API（raw JSON、沿用 DeepSeek API 的 bearer auth）給 agent/RAG 直接存取 live web：Search 用自家搜尋引擎回結構化結果，Fetch 抓單頁回 Markdown。定價 $0.75/1000 次成功請求，把『web 搜尋+抓取』商品化成便宜的 agent primitive。",
+      "tags": [
+        "rag",
+        "ai-agent",
+        "search-as-api",
+        "deepseek"
+      ],
+      "url": "https://api-docs.deepseek.com/guides/search/",
+      "source": "DeepSeek API Docs",
+      "sourceUrl": "https://api-docs.deepseek.com/guides/search/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AWS Well-Architected Agent（preview）：AI 自動審 IaC 與雲端最佳化",
+      "summary": "AWS 發表 Well-Architected Agent preview：對照 65+ 服務的 Well-Architected 最佳實踐，關聯資源配置/使用率/應用拓撲/宣告的商業目標，在 resource/application/architecture 三層給優先排序建議與 cross-pillar 取捨，並能在部署前審 Terraform / CloudFormation、附上可執行的 remediation（CLI/IaC/自動化）。",
+      "tags": [
+        "ai-agent",
+        "devops",
+        "iac",
+        "aws"
+      ],
+      "url": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/aws-well-architected-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Sphinx：push 前問你一題，確認你真的理解 agent 寫的 code",
+      "summary": "Sphinx（FOSS）是給 agent 輔助開發的 git hook：agent 的 code 要 ship 前，針對你的 diff 問一題『這段實際上做什麼』，答不出就擋。設計成極省 token，可接現有 coding agent / OpenRouter / 任何 OpenAI-compatible endpoint。核心主張：『你可以外包思考，但不能外包理解』——把 comprehension-gap 變成可執行的 CI 關卡。",
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "understanding-check-hook",
+        "comprehension-gap"
+      ],
+      "url": "https://github.com/parthh01/sphinx",
+      "source": "Show HN / Sphinx",
+      "sourceUrl": "https://sphinx-six-theta.vercel.app/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Azure Maia 300：inference-first 加速器，效率指標被打問號",
+      "summary": "微軟宣布 Maia 系列 2027 起擴到 multi-gigawatt，成為 Microsoft 產品的『primary inference system』。Maia 300 專做 inference（不訓練），主打 long-context / decode-heavy：每顆 8×HBM4=288GB、18TB/s、950W TDP，一櫃 96 顆 167kW、27.6TB HBM、1.7PB/s。compute chiplet 走 TSMC N2P。但領銜的 efficiency 宣稱被 practitioner 公開質疑不夠具體。",
+      "tags": [
+        "ai-infra",
+        "inference-first-accelerator",
+        "hardware",
+        "azure"
+      ],
+      "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/azure-maia-300/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Codex Desktop crash dump 失控：一天 +5GB、每秒一份",
+      "summary": "OpenAI Codex Desktop（macOS, v26.602.71036）被回報 Crashpad pending 目錄無上限暴漲：有人 pending 夾長到 ~61GB、738,864 個檔，清掉重裝後仍以約每秒一份 crash report 的速度回長。AI coding 桌面工具的可靠性/資源管理踩雷案例。",
+      "tags": [
+        "ai-coding",
+        "reliability",
+        "codex",
+        "bug"
+      ],
+      "url": "https://github.com/openai/codex/issues/25921",
+      "source": "GitHub Issue (openai/codex)",
+      "sourceUrl": "https://github.com/openai/codex/issues/25921",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Chrome 158 下架 client-side XSLT（11/17 stable），Edge 跟進",
+      "summary": "2026-11-17 Chrome 158 進 stable 後移除瀏覽器端 XSLT，Edge 同引擎一起。任何帶 <?xml-stylesheet?> 的 XML（含多數 WordPress SEO plugin 產的 sitemap）當天起在瀏覽器看到的『友善表格』會壞掉；但 crawling / 搜尋不受影響，壞的是人類看 XML 的可讀畫面。",
+      "tags": [
+        "frontend",
+        "web-platform",
+        "xslt-sunset",
+        "chrome"
+      ],
+      "url": "https://doctor-seo.net/en/blog/news/chrome-edge-removing-xslt/",
+      "source": "Doctor SEO",
+      "sourceUrl": "https://doctor-seo.net/en/blog/news/chrome-edge-removing-xslt/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Verge：網站開始對 AI agent 關門",
+      "summary": "The Verge 報導 web 正加速對 AI agent 設限（封鎖/擋 bot），agentic web 的『誰能自動存取內容』摩擦升溫。⚠️ 僅讀到標題層級，未逐段驗證內文。",
+      "tags": [
+        "agentic-web",
+        "ai-agent",
+        "access"
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "JDK 28 JEP 清單成形：Value Objects、Structured Concurrency、Simple JSON API",
+      "summary": "OpenJDK JDK 28（early-access，GA 約 2027 春）目前 targeted 的 JEP：Value Objects(Preview)、Structured Concurrency、Simple JSON API(Incubator)、Ahead-of-Time Code Compilation、ZGC 更快啟動/warmup 與 adaptive heap、Shenandoah 預設 generational、PEM 加密物件編碼。還在開發中、清單會變。",
+      "tags": [
+        "new-languages",
+        "java",
+        "jdk",
+        "release"
+      ],
+      "url": "https://openjdk.org/projects/jdk/28/",
+      "source": "OpenJDK",
+      "sourceUrl": "https://openjdk.org/projects/jdk/28/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Parser Combinators：型別驅動的互動式教學",
+      "summary": "t3.at 的互動教學，用 TypeScript 的 `type Parser<T> = (input: string) => [T, string]` 從 pHello/pInteger 這類小 parser 一路 pSeq/pMap 組起來，示範把 ping 輸出之類的文字解析成結構化資料。適合想補 parser combinator 直覺的人。",
+      "tags": [
+        "reference",
+        "parsing",
+        "typescript",
+        "functional"
+      ],
+      "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
+      "source": "t3.at",
+      "sourceUrl": "https://t3.at/blog/2026-10-17-parser-combinators/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Pele：把 Mermaid 圖輸出成可主題化的 SVG",
+      "summary": "Pele 把 Mermaid 流程圖/圖表渲染成可套主題的 SVG，解決內建樣式不好客製的痛點。⚠️ 僅讀到標題/專案層級。",
+      "tags": [
+        "dev-tool",
+        "diagram",
+        "mermaid",
+        "svg"
+      ],
+      "url": "https://pele.run/",
+      "source": "Show HN / pele.run",
+      "sourceUrl": "https://pele.run/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-19",
