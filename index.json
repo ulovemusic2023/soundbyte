@@ -91586,8 +91586,51 @@
       "stars": 271,
       "createdDate": "2026-10-08",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261019-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "tencent/Hy-Memory-30B-A3B",
+      "summary": "騰訊混元推出的「記憶寫手」模型，30B MoE 僅 ~3B active。專門負責外部記憶框架（Mem0、MemOS、Hy-Memory）的 write path——決定要記什麼、如何精確表示、新證據如何更新記憶庫。兩階段訓練（Memory OPD + Attributed Memory RL），可直接遷移到未見過的框架（EverMemOS）。跨 harness 平均 55.49，贏過 Claude Opus 5（54.62）與 DeepSeek V4.1 Flash（53.64）。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "agent-memory"
+      ],
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "30B MoE（~3B active）；BF16 全權重約 60GB，4-bit 量化約 16GB 吃緊",
+      "license": "Tencent Hunyuan（見 repo）",
+      "createdDate": "2026-10-19T05:13:12.609065"
+    },
+    {
+      "id": "20261019-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "mozilla-ai/otari",
+      "summary": "Mozilla AI 的自架 LLM gateway：OpenAI／Anthropic 相容的單一 endpoint 接 40+ provider。provider 金鑰藏在 gateway 後、可撤銷的 virtual key（含 user/workspace/model scope）、花費前先做 budget check、結算後記錄 usage。支援 failover／權重／learned routing，可選 code exec、web search、MCP、inference guardrails。Docker 一行即可起一個 ephemeral gateway。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime",
+        "llm-gateway"
+      ],
+      "url": "https://github.com/mozilla-ai/otari",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "N/A（gateway，推理走各家 provider）",
+      "license": "開源（見 repo）",
+      "createdDate": "2026-10-19T05:13:12.609065",
+      "stars": 654
     }
   ],
-  "lastUpdated": "2026-10-18",
-  "updatedAt": "2026-10-18T05:40:00+08:00"
+  "lastUpdated": "2026-10-19",
+  "updatedAt": "2026-10-19T05:13:12.609065"
 }
