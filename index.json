@@ -91838,6 +91838,46 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261019-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-19",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly — AI 的未來不是巨腦，是一片「蜂群智能」",
+      "summary": "未來不會是單一超級 AI，而是無數心智互相作用、環繞我們的隱形蜂群。管理這種系統比較像種花園而非造機器——塑造環境、架保護層、持續觀察並間接介入。",
+      "tags": [
+        "ai-future",
+        "mental-model",
+        "systems-thinking"
+      ],
+      "url": "https://kk.org/thetechnium/swarm-intelligence/",
+      "source": "Kevin Kelly (The Technium)",
+      "sourceUrl": "https://kk.org/thetechnium/swarm-intelligence/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261019-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-19",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "加倍押注強項，而不是修補弱項",
+      "summary": "Ben Thompson：永遠該加倍投資強項而非彌補弱點；Ari Emanuel 稱這是美國資本主義的引擎。判斷資本、人才、注意力該投哪的簡單測試。",
+      "tags": [
+        "mental-model",
+        "strategy",
+        "capital-allocation"
+      ],
+      "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+      "source": "Stratechery (Ben Thompson)",
+      "sourceUrl": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-19",
