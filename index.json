@@ -91878,8 +91878,70 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261019-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-19",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "feder-cr/git-ai",
+      "summary": "開源版的 Anthropic Scion（server-centric 版控，專為 coding agent 設計）。古典 Git 是給人用的——clone、工作數小時、push 一次；agent 卻是上千個短命任務、各動幾個檔、都想幾秒內 land 到同一條 branch。gitai 把工作搬到 server：client 常駐只抓需要的、history 由 server 回答＋快取、用 compare-and-swap 取代 merge queue，底層仍是正常 Git repo。vendor neutral，server 不呼叫 LLM。",
+      "tags": [
+        "version-control",
+        "ai-agent",
+        "coding-agent"
+      ],
+      "url": "https://github.com/feder-cr/git-ai",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-05",
+      "stars": 1814,
+      "createdDate": "2026-10-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261019-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-19",
+      "cycle": "daily",
+      "priority": "rising-fast",
+      "title": "reason-machines/reason-network",
+      "summary": "讓你的 coding agent 跟隊友的 agent 互相講話。一台電腦一個小 daemon，P2P 無 server，訊息直接落到正在開的那個 session。每個 agent session（誰、哪個 repo/branch、忙或閒、正在幹嘛）都看得到，任一個都能丟訊息給對的那個。支援 Claude Code / Codex / Cursor / Gemini CLI / opencode / DeepSeek Harness 等（前身 tincan，自動遷移）。",
+      "tags": [
+        "ai-agent",
+        "agent-orchestration",
+        "p2p",
+        "mcp"
+      ],
+      "url": "https://github.com/reason-machines/reason-network",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-05",
+      "stars": 402,
+      "createdDate": "2026-10-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261019-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-19",
+      "cycle": "daily",
+      "priority": "worth-trying",
+      "title": "kanaworksai-hue/audio-studio-mcp",
+      "summary": "給 Claude Code / Cursor / 任何 MCP client 一個跑在自己 Mac 上的 sound studio：用自然語言要 BGM 或音效，模型用 Stable Audio 3（Apple Silicon MLX）本機生成、loop、normalize loudness、export 給遊戲引擎或剪輯。無雲端、無 API key、生成免費；每個檔附 .json sidecar（prompt/seed/settings）可重現，同 seed 與官方 sa3 CLI bit-for-bit 一致。最貼 Gary 本業。",
+      "tags": [
+        "mcp",
+        "music-generation",
+        "audio",
+        "local-ai"
+      ],
+      "url": "https://github.com/kanaworksai-hue/audio-studio-mcp",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic:music-generation",
+      "stars": 62,
+      "createdDate": "2026-10-18",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-10-19",
-  "updatedAt": "2026-10-19T05:13:12.609065"
+  "updatedAt": "2026-10-19T05:40:00+08:00"
 }
