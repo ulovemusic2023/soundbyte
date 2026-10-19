@@ -92033,6 +92033,232 @@
       "price": null,
       "vram": "純 CPU，無需 GPU",
       "license": "Apache-2.0（code）/ modified OpenRAIL-M（weights）"
+    },
+    {
+      "id": "20261020-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "HybridAgent：讓 agent 在 latent 思考與文字行動間動態切換",
+      "summary": "Together 等團隊提出 Hybrid Reasoning Agents：輕量 HybridLink 在 latent reasoning 與 text 互動間無縫切換，連續 working memory 保留跨輪脈絡，兼顧 tool use 與 latent 思考可檢視性。11 benchmark 平均 +10.4%、token -35~55%、推論快 1.8–2.6x、成本省 2.7–3.7x。打破『agent 只能用文字推理』前提。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "latent-reasoning",
+        "reasoning"
+      ],
+      "url": "https://arxiv.org/abs/2610.18861",
+      "source": "arXiv (Zou et al., Together)",
+      "sourceUrl": "https://arxiv.org/abs/2610.18861",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Harness Engineering 101：LLM 是大腦，harness 是身體",
+      "summary": "Isuru Wijesiri 把 agent 拆解成對一個 stateless JSON array 的 loop 連續打補丁——16 章從 ~300 行 Python toy agent 長出 caching、context budget、subagents、steering，每章用『這個 patch 修了什麼 failure、代價是什麼』講。把 agent 框架還原成工程決策。",
+      "tags": [
+        "ai-agent",
+        "agent-harness",
+        "context-engineering"
+      ],
+      "url": "https://github.com/IsuruMaduranga/harness-engineering-101",
+      "source": "Isuru Wijesiri",
+      "sourceUrl": "https://github.com/IsuruMaduranga/harness-engineering-101",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "WhatsApp MCP：跑在自己 Cloudflare 帳號、唯讀讀自己的 WhatsApp",
+      "summary": "部署在 Cloudflare Workers 的唯讀 MCP server，像 WhatsApp Web 連結手機一次，之後任何 MCP client(Claude Code/Desktop)能搜尋/摘要聊天但不能發送。訊息存自家帳號 Durable Object 內 SQLite、每天連線拉增量。個人資料接進 agent 的 self-hosted MCP 範式。",
+      "tags": [
+        "ai-agent",
+        "mcp",
+        "cloudflare-workers",
+        "durable-objects"
+      ],
+      "url": "https://github.com/finereli/whatsapp-mcp",
+      "source": "finereli (GitHub)",
+      "sourceUrl": "https://github.com/finereli/whatsapp-mcp",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Superlite：把 spec 丟給 agent，回來就是測過、commit 好的成果",
+      "summary": "針對 Claude Code 每四分鐘就停下來問『可以嗎』的痛點，Superlite 做成自主 build workflow：平行 fan-out 多 agent 同時建多區塊、少中斷、自帶 review/fix 迴圈。延續『agent 一次把任務跑完』的 autonomous delivery 線。",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "autonomous-delivery"
+      ],
+      "url": "https://contextfirst.blog/superlite-hand-an-agent-a-spec/",
+      "source": "Iheatu Chris Wogu",
+      "sourceUrl": "https://contextfirst.blog/superlite-hand-an-agent-a-spec/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MiniMax M3.1 Flash：agentic/coding/Computer Use 全面升級、成本砍 70%",
+      "summary": "下一代 Flash 模型(匿名代號 Space Bunny，已跑 >200 兆 token)：online 推論快近 3x、成本降 70%。DeepSWE v1.1 73.7%、OSWorld V2 61.7、BankerToolBench 76.2，主打長序列 agentic 任務與 Computer Use。便宜快速 agent 模型競爭白熱化。",
+      "tags": [
+        "ai-models",
+        "agentic",
+        "computer-use",
+        "coding"
+      ],
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "source": "MiniMax",
+      "sourceUrl": "https://www.minimax.io/blog/minimax-m31f",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Mercury 3：diffusion LLM 證明可規模化",
+      "summary": "Inception 發布目前最強 diffusion-based LLM：benchmark 持平或勝過 GPT-6 Luna / Claude Haiku 5.5，卻以 1,000+ tok/s 快 4–8x。比 Mercury 1 大 40 倍、智力升 3x 但一樣快，1M context、$0.20/$0.70 每百萬 token。證明 autoregressive 的 scaling law 在 diffusion 也成立。",
+      "tags": [
+        "ai-models",
+        "diffusion-llm",
+        "paradigm-shift"
+      ],
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "source": "Inception Labs",
+      "sourceUrl": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Timestral：Mistral 首個 time-series foundation model 家族",
+      "summary": "最大僅 209M 參數卻在 GIFT-Eval/TIME/fev-bench 三大公開 benchmark zero-shot 稱冠，用 2/3 參數超越前 SOTA。四種尺寸(5M–209M)、CPU 可跑、支援 past/future covariates 的機率式多變量預測。把 pre-training 範式帶進 sensor/observability/供應鏈時序預測。",
+      "tags": [
+        "ai-models",
+        "time-series",
+        "foundation-model",
+        "zero-shot"
+      ],
+      "url": "https://mistral.ai/news/timestral/",
+      "source": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/timestral/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "qwen3-4b-deslop：把 AI 寫作腔訓練掉的本地小模型",
+      "summary": "在 MacBook Air 上用 161 筆答案 fine-tune Qwen3-4B，把 em dash、『not X, but Y』、三項式清單等 AI slop 訓練掉、免 system prompt、Ollama 2.5GB 可跑。40 題未見 prompt 上 slop 分數 121→12.5、em dash 歸零、30/30 事實題仍答對。教訓：中間版過度優化反寫出沒觀點的評論/瞎掰研究。",
+      "tags": [
+        "ai-models",
+        "fine-tuning",
+        "local-llm",
+        "ollama"
+      ],
+      "url": "https://100toolkit.com/blog/deslop-model/",
+      "source": "Erik Kännike",
+      "sourceUrl": "https://100toolkit.com/blog/deslop-model/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "不自架 LLM proxy，你怎麼知道發生了什麼？",
+      "summary": "作者主張：用大廠 Analytics 面板的漂亮圖無法做工程決策，應自架 LLM proxy——單一你掌控的 endpoint 管多 provider/多模型、記錄哪把 key 用哪個模型/client/時間/狀態、用 virtual API key 不再散落主 key、快速切換 provider。LLM 可觀測性回到自控基礎設施。",
+      "tags": [
+        "devops",
+        "observability",
+        "llm-proxy",
+        "ai-agent"
+      ],
+      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+      "source": "jrdsgl",
+      "sourceUrl": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ask HN：怎麼面對要出貨但看不懂的 AI code？",
+      "summary": "HN 熱議(125 分)：工程師大量收到 agent 產出但自己沒完全理解的 code，該怎麼 review/負責/出貨。社群層面的 comprehension-gap 訊號，延續『AI 產 code 暴增但可交付軟體沒等比成長』瓶頸討論。",
+      "tags": [
+        "ai-agent",
+        "ai-coding",
+        "comprehension-gap"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50151036",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50151036",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261020-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Linux 7.3 發布：破紀錄 18,765 commits / 3,021 開發者",
+      "summary": "Torvalds 如期釋出 Linux 7.3：史上最大規模，18,765 non-merge commits、3,021 位開發者(807 首次貢獻)。重點含 binfmt_misc 擴充、針對大型系統的 group-scheduling 效能改進。隔日開 7.4 merge window。",
+      "tags": [
+        "devops",
+        "kernel",
+        "linux"
+      ],
+      "url": "https://lwn.net/Articles/1101143/",
+      "source": "LWN",
+      "sourceUrl": "https://lwn.net/Articles/1101143/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-20",
