@@ -92259,8 +92259,28 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261020-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-20",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "信任才是智慧家庭的真正護城河",
+      "summary": "Ben Thompson 分析 Apple 家庭策略時點破重點：要讓人把整個家交給一個中控裝置，拚的不是規格，是「信任」這個長期累積的資本。Apple 的隱私立場與配件生態是信任資產，但當年砍掉 AirPort、加上 Siri 至今不可靠，都在提領這份信任。可遷移洞察——平台／硬體生意裡，信任是複利資產，臨時買不到，每一次砍產品線都是在花掉它。",
+      "tags": [
+        "operational",
+        "platform-strategy",
+        "trust-as-moat"
+      ],
+      "url": "https://stratechery.com/2026/do-you-trust-apple/",
+      "source": "Stratechery (Ben Thompson)",
+      "sourceUrl": "https://stratechery.com/2026/do-you-trust-apple/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-20",
-  "updatedAt": "2026-10-20T05:14:32.225303+08:00"
+  "lastUpdated": "2026-10-20T05:33:49.478973+08:00",
+  "updatedAt": "2026-10-20T05:33:49.478973+08:00"
 }
