@@ -92279,6 +92279,171 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261020-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-20",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "jwuthri-cloud/Tracely-ai",
+      "summary": "Trace-native CI/CD for AI agents：把 production traces 打分、把 failure 聚類、凍結成可重播的 regression test，PR 一旦 regress 就擋下來。可 self-host。等於給 agent pipeline 加一套迴歸守門員。",
+      "tags": [
+        "ai-agent",
+        "ci-cd",
+        "observability",
+        "mcp"
+      ],
+      "url": "https://github.com/jwuthri-cloud/Tracely-ai",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-06+topic:mcp",
+      "stars": 1085,
+      "createdDate": "2026-10-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20261020-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-20",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "LiCinCan/blender-ai-mcp-addon",
+      "summary": "Blender 的 AI 助手 + MCP server：可視化 chat、場景工具、multi-agent workflow，支援 OpenAI / Claude / Gemini / Ollama / OpenCode。讓 coding agent 直接驅動 bpy scripting 做 3D，MV 視覺 / 封面 3D 可玩。",
+      "tags": [
+        "mcp",
+        "blender",
+        "3d",
+        "multi-agent"
+      ],
+      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-06+topic:mcp",
+      "stars": 961,
+      "createdDate": "2026-10-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261020-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-20",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "alchaincyf/huashu-motion",
+      "summary": "讓 coding agent 一鍵直出商業級產品宣傳片：會作曲、能指著畫面改（point-at-the-frame editing），音樂與動態都 AI 生成。要做發行宣傳片 / teaser 的音樂人很對味。",
+      "tags": [
+        "creator-tool",
+        "video",
+        "music",
+        "coding-agent"
+      ],
+      "url": "https://github.com/alchaincyf/huashu-motion",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-06+topic:claude-code",
+      "stars": 898,
+      "createdDate": "2026-10-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20261020-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-20",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "kitlangton/scrawl",
+      "summary": "給 agent 看一個問題：在螢幕上標註、錄下來、送出去。把想講的 bug / 需求用視覺＋錄音餵給 coding agent，比打字快。作者 kitlangton 是 Scala 社群熟面孔。",
+      "tags": [
+        "ai-agent",
+        "coding-tools",
+        "workflow"
+      ],
+      "url": "https://github.com/kitlangton/scrawl",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-06+topic:claude-code",
+      "stars": 441,
+      "createdDate": "2026-10-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261020-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-20",
+      "cycle": "tue",
+      "priority": "rising-fast",
+      "title": "jatechan/ai-data-extractor",
+      "summary": "免費開源，把各家 AI coding assistant 的 chat 歷史抽出來——支援 Claude Code / Cursor / Windsurf / Aider / Cline / Roo Code。想分析自己跟 agent 的對話、或備份 prompt 資產可用。",
+      "tags": [
+        "coding-tools",
+        "data",
+        "claude-code"
+      ],
+      "url": "https://github.com/jatechan/ai-data-extractor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-06+topic:claude-code",
+      "stars": 438,
+      "createdDate": "2026-10-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20261020-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-20",
+      "cycle": "tue",
+      "priority": "worth-trying",
+      "title": "serhatandic/kuvo-code",
+      "summary": "原生 macOS 的 coding agent harness，跑在 opencode engine 上，支援任意 model。想在 Mac 上有個輕量 agent 殼的可試。",
+      "tags": [
+        "coding-agent",
+        "macos",
+        "opencode"
+      ],
+      "url": "https://github.com/serhatandic/kuvo-code",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-06+topic:coding-agent",
+      "stars": 60,
+      "createdDate": "2026-10-13",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261020-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-20",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "DamRsn/NeuralNote",
+      "summary": "Audio-to-MIDI 轉錄的 audio plugin，用 deep learning 把錄音轉成 MIDI。本週登上 GitHub C++ Trending。不是新 repo（2023），但直接打中 Gary 的音訊核心，值得放進工具箱。",
+      "tags": [
+        "audio",
+        "midi",
+        "plugin",
+        "dsp"
+      ],
+      "url": "https://github.com/DamRsn/NeuralNote",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/c++?since=weekly",
+      "stars": 3249,
+      "createdDate": "2023-03-03",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261020-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-20",
+      "cycle": "tue",
+      "priority": "on-the-radar",
+      "title": "Goekdeniz-Guelmez/JOSIE-Voice",
+      "summary": "即時、on-device 語音助手，專為 Apple Silicon，Releases 有 macOS DMG。作者是做 JOSIE 系列模型的，本地化 voice 方向值得追。⚠️ 無 license。",
+      "tags": [
+        "audio",
+        "voice",
+        "local-ai",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/Goekdeniz-Guelmez/JOSIE-Voice",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created:>2026-10-06+topic:voice-cloning",
+      "stars": 40,
+      "createdDate": "2026-10-14",
+      "license": "NO-LIC"
     }
   ],
   "lastUpdated": "2026-10-20T05:33:49.478973+08:00",
