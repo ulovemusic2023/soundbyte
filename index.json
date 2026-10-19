@@ -91940,8 +91940,101 @@
       "stars": 62,
       "createdDate": "2026-10-18",
       "license": "MIT"
+    },
+    {
+      "id": "20261020-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "summary": "MiniCPM-V 系列首個 MoE 模型，35B 總參數、A3B（啟用 3B）。靠 Lookahead Expert Scheduling + 分層量化 + DSpark 投機採樣，號稱首個能在手機上不掉效能順跑的開源 MoE——iPhone 17 Pro Max 上 3GB 記憶體、13+ tokens/s。支援 SGLang/vLLM/llama.cpp/Ollama，附 GGUF/BNB/AWQ/GPTQ/FP8 量化。",
+      "tags": [
+        "llm_inference",
+        "image_gen",
+        "quantization"
+      ],
+      "url": "https://github.com/openbmb/MiniCPM-V",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "price": null,
+      "vram": "35B MoE A3B；FP8/AWQ/GGUF 量化可塞 16GB",
+      "license": "見 model card"
+    },
+    {
+      "id": "20261020-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
+      "summary": "NVIDIA 用 Model Optimizer 對 Qwen3.8-Flash-Next 做 FP4 量化感知蒸餾 (QAD)，主打本地可跑的 FP4 checkpoint。125B 總參數 / 6B 啟用 MoE，hybrid attention（Gated DeltaNet + Qwen Sparse Attention），context 262K 可擴到 1M。但磁碟約 96GB，驗證硬體 RTX PRO 6000 / DGX Spark——16GB 吃不下。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local",
+      "price": null,
+      "vram": "~96GB on disk，需 Blackwell 等級大卡",
+      "license": "NVIDIA Open Model Agreement + Qwen Community License 1.0"
+    },
+    {
+      "id": "20261020-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "black-forest-labs/flux-3-image-klein",
+      "summary": "FLUX 3 的開源蒸餾版 Klein，5.6B image transformer（文字編碼器另用 Qwen3-VL-4B）。文生圖、單圖編輯、多圖合成同一模型，支援 prompt 內 bounding box 定位與圖內文字渲染。附 BF16 + FP8 + NVFP4 變體。注意要配 prompt upsampler（官方 pup 約 18.8GB）否則輸出很爛。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://github.com/black-forest-labs/flux-3-image-klein",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "price": null,
+      "vram": "5.6B；FP8/NVFP4 變體可進 16GB",
+      "license": "FLUX Kommunity License（非商用，含商用輸出例外）"
+    },
+    {
+      "id": "20261020-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenMOSS-Team/MOSS-Image-Base",
+      "summary": "OpenMOSS 開源文生圖模型 MOSS-Image 家族 base 版，支援自然語言、tag 序列、JSON layout 控制文字位置與物件排版，中文文字渲染特別強。flow-matching Euler、VAE 用 FLUX.2 small decoder，diffusers / ComfyUI 可接。技術報告 arXiv 2610.23374。",
+      "tags": [
+        "image_gen"
+      ],
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
+      "price": null,
+      "vram": "~5B，bf16 單卡 16GB 可跑",
+      "license": "見 model card"
+    },
+    {
+      "id": "20261020-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-10-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "datalab-to/indra-ocr",
+      "summary": "只有 1M 參數、純 CPU 跑的 OCR 模型（ONNX Runtime，不用 GPU）。PDF/圖片轉 markdown/text/JSON 帶 box，讀手寫、80+ 語言、任意角度歪斜。OmniParseBench 66.7 分贏過 PaddleOCR 完整 PP-StructureV3 (58.4)；32 核約 44 頁/秒，比 Tesseract 快 15 倍。模型檔才約 76MB。",
+      "tags": [
+        "cv_ocr"
+      ],
+      "url": "https://github.com/datalab-to/indra",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/datalab-to/indra-ocr",
+      "price": null,
+      "vram": "純 CPU，無需 GPU",
+      "license": "Apache-2.0（code）/ modified OpenRAIL-M（weights）"
     }
   ],
-  "lastUpdated": "2026-10-19",
-  "updatedAt": "2026-10-19T05:40:00+08:00"
+  "lastUpdated": "2026-10-20",
+  "updatedAt": "2026-10-20T05:14:32.225303+08:00"
 }
