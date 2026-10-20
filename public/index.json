@@ -92700,6 +92700,133 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261021-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-21",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "Hybirdss/Hycli",
+      "summary": "把網站操作變成「可驗證的 CLI / MCP 動作」——agent 不再盲點網頁，而是跑一組已驗證指令，附本地 dashboard、支援 20 種語言。Rust。",
+      "tags": [
+        "ai-agent",
+        "mcp",
+        "browser-automation",
+        "rust"
+      ],
+      "url": "https://github.com/Hybirdss/Hycli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Hybirdss/Hycli",
+      "stars": 358,
+      "createdDate": "2026-10-09",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261021-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-21",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "kividbio/kividb",
+      "summary": "Rust 寫的 Redis / Valkey drop-in 替代品，內建全文搜尋 + 向量搜尋。快取層直接當 vector DB，RAG 場景省一個元件。",
+      "tags": [
+        "database",
+        "vector-search",
+        "redis",
+        "rust",
+        "rag"
+      ],
+      "url": "https://github.com/kividbio/kividb",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kividbio/kividb",
+      "stars": 326,
+      "createdDate": "2026-10-16",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261021-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-21",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "llmspeed.dev",
+      "summary": "買硬體前先「感受」本地 LLM 跑多快：選 GPU / Mac（3090、5090、M5 Ultra、Strix Halo…）看實際 token/s 預估。本地部署選卡神器。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "hardware",
+        "benchmark"
+      ],
+      "url": "https://llmspeed.dev/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": null,
+      "createdDate": "2026-10",
+      "license": null
+    },
+    {
+      "id": "20261021-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-21",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "sygal.app",
+      "summary": "本地優先的「文件 → 乾淨 Markdown」轉換器：掃描、截圖、PDF、網頁、YouTube 全吃，轉成結構化文字後 token 量少 2–7 倍，AI 只讀重要內容。",
+      "tags": [
+        "document",
+        "markdown",
+        "local-first",
+        "ai-tooling"
+      ],
+      "url": "https://sygal.app",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": null,
+      "createdDate": "2026-10",
+      "license": null
+    },
+    {
+      "id": "20261021-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-21",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "celphase/duck-pond",
+      "summary": "鴨子音訊合成器 demo：七隻野鴨每一聲「呱」都是即時合成、零錄音，還依你站的位置做空間定位。純 DSP 玩法，audio 人會想拆。",
+      "tags": [
+        "audio",
+        "dsp",
+        "synthesis",
+        "spatial-audio"
+      ],
+      "url": "https://celphase.github.io/duck-pond/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/",
+      "stars": null,
+      "createdDate": "2026-10",
+      "license": null
+    },
+    {
+      "id": "20261021-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-21",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "AbdullahAlhariri/penmentor",
+      "summary": "用本地 harness 幫你「批改手寫數學」——像老師一樣在手寫算式上視覺化標註對錯。MIT，Python。教育 / 本地 AI 小品。",
+      "tags": [
+        "education",
+        "local-ai",
+        "claude-code",
+        "python"
+      ],
+      "url": "https://github.com/AbdullahAlhariri/penmentor",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/AbdullahAlhariri/penmentor",
+      "stars": 48,
+      "createdDate": "2026-10-17",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-10-20T05:33:49.478973+08:00",
