@@ -92827,6 +92827,172 @@
       "stars": 48,
       "createdDate": "2026-10-17",
       "license": "MIT"
+    },
+    {
+      "id": "20261022-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-22",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "shaongitbd/doory",
+      "summary": "開源的 Canva 替代品，瀏覽器端做平面設計與社群圖。做行銷素材/縮圖的創作者可自架試用。授權為非標準 NOASSERTION，商用前先確認。",
+      "tags": [
+        "design-tool",
+        "creator",
+        "canva-alt"
+      ],
+      "url": "https://github.com/shaongitbd/doory",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-08+stars%3A%3E50",
+      "stars": 1713,
+      "createdDate": "2026-10-10",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261022-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-22",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "Caho1/open-claude-ui",
+      "summary": "用 REA 逆向並高保真還原 Claude 官方桌面端 UI，重建 30 個獨立 React 元件與 8 套互動物理演算法，附 3000+ 行逆向分析手冊。想研究 Claude 前端如何實作的很值得翻。",
+      "tags": [
+        "claude",
+        "ui",
+        "reverse-engineering",
+        "react"
+      ],
+      "url": "https://github.com/Caho1/open-claude-ui",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 1310,
+      "createdDate": "2026-10-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261022-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-22",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "TonF1917/claude-desktop-multiple-windows-different-api",
+      "summary": "讓 Claude Desktop 同時開多個視窗、各自接不同 API —— 官方訂閱開一個窗、第三方 API 另開窗並行（cc-switch 的多開版）。目前限 Windows。",
+      "tags": [
+        "claude-code",
+        "cc-switch",
+        "workflow"
+      ],
+      "url": "https://github.com/TonF1917/claude-desktop-multiple-windows-different-api",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 443,
+      "createdDate": "2026-10-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261022-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-22",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "sitor-ai/frametell",
+      "summary": "local-first 的「AI 導演」agent，把想法與素材變成解說影片，可接任何模型、不綁雲端。做教學/產品說明影片的創作流程值得試。AGPL-3.0。",
+      "tags": [
+        "ai-agent",
+        "video",
+        "explainer",
+        "local-first"
+      ],
+      "url": "https://github.com/sitor-ai/frametell",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 363,
+      "createdDate": "2026-10-10",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261022-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-22",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "EL4CTEO/blender-skills",
+      "summary": "把 Blender 5.2 的專業流程（建模/UV/PBR/烘焙/綁定/動畫/匯出/QA）包成 Agent Skills，Claude Code、Codex、Gemini CLI、Cursor 都能用。做 3D 視覺或 MV 的創作者可一鍵接上。",
+      "tags": [
+        "blender",
+        "agent-skill",
+        "3d",
+        "mcp"
+      ],
+      "url": "https://github.com/EL4CTEO/blender-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/mcp",
+      "stars": 339,
+      "createdDate": "2026-10-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261022-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-22",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "amurgola/LumaBrowser",
+      "summary": "本地 AI 桌面全家桶：Chromium 瀏覽器 + GPU-aware llama.cpp runtime + OpenAI 相容 API，內建 Stable Diffusion 生圖/生片、TTS/音樂，還附 MCP server 讓 Claude Code/Codex/Cline 操控瀏覽器。Win/Mac/Linux。",
+      "tags": [
+        "local-llm",
+        "browser",
+        "mcp",
+        "tts",
+        "music"
+      ],
+      "url": "https://github.com/amurgola/LumaBrowser",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/local-llm",
+      "stars": 124,
+      "createdDate": "2026-10-09",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261022-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-22",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "vatavale/folivox",
+      "summary": "把電子書轉成「用你自己聲音」朗讀的分章有聲書，完全本地、免費。底層可選 CosyVoice 3 或 Fish Audio Drama 3（80+ 語言、多音色）。audio/voice clone 直接相關，Apache-2.0。",
+      "tags": [
+        "audiobook",
+        "voice-clone",
+        "tts",
+        "local"
+      ],
+      "url": "https://github.com/vatavale/folivox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/voice-cloning",
+      "stars": 102,
+      "createdDate": "2026-10-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261022-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-22",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "rohit267/net-merge",
+      "summary": "同時用上所有網卡：Wi-Fi、乙太、手機 USB 分享一起跑，做 per-connection 負載平衡（TUN + Wintun），Win/Linux/Mac。上傳大檔或直播想要備援頻寬時很實用。MIT。",
+      "tags": [
+        "networking",
+        "cli",
+        "productivity"
+      ],
+      "url": "https://github.com/rohit267/net-merge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-08+stars%3A%3E50",
+      "stars": 1557,
+      "createdDate": "2026-10-12",
+      "license": "MIT"
     }
   ],
   "lastUpdated": "2026-10-20T05:33:49.478973+08:00",
