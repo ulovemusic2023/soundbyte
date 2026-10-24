@@ -93444,8 +93444,257 @@
       "stars": 1557,
       "createdDate": "2026-10-12",
       "license": "MIT"
+    },
+    {
+      "id": "20261024-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI Decisions API GA：給 agent 用的超快「小決策」端點",
+      "summary": "OpenAI 讓 Decisions API 正式 GA，基於 GPT-6 Luna，專門回答有界答案的問題（predicate 機率／choice 選項／score 評分），號稱比走 Responses API 快到 10x。新增 GPT-Live 原生整合、prompt caching、單次最多 400 題；只收 input token，$0.10 / M。Datadog 用它在執行前替 agent 產生的 shell 指令打風險分數。",
+      "tags": [
+        "paradigm-shift",
+        "ai-agent",
+        "tool-calling",
+        "routing",
+        "openai"
+      ],
+      "url": "https://openai.com/index/decisions-api",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/decisions-api",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OpenAI Habitat Part II：撐 10 億 ChatGPT 用戶的 Cosmos DB 多租戶之路",
+      "summary": "OpenAI 的線上儲存平台 Habitat（500+ PB、40 個 region）從單一 multi-tenant container → 單租戶隔離 → 再回到 multi-tenant 預設，靠 hot key throttling、QoS 分級與 Azure 特製 serverless mode 解決 noisy neighbor 與 weak partition。讀取 p50 從約 120ms 降到約 10ms（近端複寫 + CDC 驅動快取失效 + Rust 重寫），並在做 RocksDB Cloud + Raft 的 exabyte 級自研儲存。",
+      "tags": [
+        "distributed-systems",
+        "multi-tenancy",
+        "partitioning",
+        "change-data-capture",
+        "caching"
+      ],
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "source": "OpenAI Engineering",
+      "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google Data Agent Kit GA：用 skills 管行為、用 IAM 管權限",
+      "summary": "Google 把 Data Agent Kit 轉為 GA：免費開源，一組 MCP tools 接 15+ 個 Google Data Cloud 服務，外加 37 個 Apache 2.0 skills（如 BigQuery SQL 最佳化、Bigtable row key 設計、accidental-data-loss-prevention）。可裝進 Claude Code、Codex、Cursor、Antigravity；InfoQ 指出它把 agent guardrail 拆成「skills 教做法」和「IAM 真正擋權限」兩層。",
+      "tags": [
+        "mcp",
+        "agent-skills",
+        "ai-agent",
+        "guardrails"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/data-agent-kit-ga/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/data-agent-kit-ga/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare 優化 consistent hashing，省下 100 TB RAM",
+      "summary": "Cloudflare 在 Pingora Backend Router 的 Rust 實作 pingora-ketama 裡壓縮 hash-ring entry，再用機率分析算出達到目標分布所需的最少 hash 點，每台 backend 的 hash 數砍約 90%，load balancing 精度不變，整體記憶體省下超過 100 TB。",
+      "tags": [
+        "load-balancing",
+        "consistent-hashing",
+        "rust",
+        "distributed-systems"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-013",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "哈佛研究：AI 寫更多 code，但下游瓶頸讓產出沒跟著漲",
+      "summary": "基於 Jellyfish 平台、718 家公司約 3 億筆工作事件的研究：AI coding agent 讓 LOC/commit/PR 增加 20–30%，但 resolved Jira issue 只多 12%；assistant 類工具對完成的 issue 數幾乎沒影響。主因是 code review 等後段工作量被放大。",
+      "tags": [
+        "ai-coding",
+        "developer-productivity",
+        "code-review"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-014",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Vercel Agent 怎麼安全碰 production：plan 式一次授權",
+      "summary": "Vercel Agent 先以 read-only 自動調查（比對失敗 deployment 與上一版、看 build log），要寫入時才提出一份 plan，列出要做的事和需要的 scopes，使用者一次核准整份 plan。避免「每步都按 approve」變成反射動作，也避免一開始就給 agent 過大權限。",
+      "tags": [
+        "ai-agent",
+        "permissions",
+        "agent-safety",
+        "least-privilege"
+      ],
+      "url": "https://vercel.com/blog/how-vercel-agent-accesses-production-safely",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/how-vercel-agent-accesses-production-safely",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-015",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Twelve years of distributed SQLite：rqlite 作者寫的一手史",
+      "summary": "rqlite 作者 Philip O'Toole 回顧 2014 年把 Raft 接到 SQLite 的起點：rqlite 從頭就是 CP 系統（寫入走 leader、需多數派 ack）。並比較 dqlite（嵌入式 library）、Litestream（WAL 串流到 S3 做災備）、LiteFS 等路線各自回答的問題。HN 200+ 分。",
+      "tags": [
+        "distributed-systems",
+        "raft",
+        "sqlite",
+        "replication"
+      ],
+      "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+      "source": "Hacker News",
+      "sourceUrl": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-016",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Netflix Quasar：量化 library 變更的 blast radius",
+      "summary": "Netflix Java Platform 團隊做了 Quasar，把 API 變更對應到各 consumer repo 中實際被引用的 symbol，讓 library 作者移除 deprecated API 前有證據可判斷影響範圍。文中強調：coding agent 沒有跨 repo context 就無法評估下游風險，這份證據同樣能餵給 agent 規劃 migration。",
+      "tags": [
+        "dependency-management",
+        "coding-agent",
+        "monorepo-polyrepo"
+      ],
+      "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90",
+      "source": "Netflix Tech Blog",
+      "sourceUrl": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-017",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Show HN：Corgi，給 agent 用的 terminal multiplexer",
+      "summary": "像 tmux 一樣讓 Claude Code、Codex、Pi、OpenCode 在背景跑，但會顯示每個 agent 正在做什麼、誰在等你（F1 跳到下一個未讀），還有 token 用量、worktree 管理、每個 workspace 的 CPU/記憶體統計，SSH 上也能直接貼圖。支援 macOS、Linux、WSL。",
+      "tags": [
+        "multi-agent",
+        "developer-tools",
+        "terminal"
+      ],
+      "url": "https://corgi.computer/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50214373",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-018",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Richard Feldman：純 FP 能多接近 C？Roc 挑戰 libdeflate",
+      "summary": "Roc 作者把 roc-deflate 一路調校去追 C 寫的 libdeflate：144 個 Silesia benchmark 中位數只慢 8.9%（Ryzen）／2.6%（M1）。展示 functional language 在不寫 SIMD 的情況下能逼近手調 C；Roc 0.1.0 即將釋出。",
+      "tags": [
+        "roc",
+        "functional-programming",
+        "performance",
+        "new-languages"
+      ],
+      "url": "https://rtfeldman.com/fp-vs-c",
+      "source": "rtfeldman.com",
+      "sourceUrl": "https://rtfeldman.com/fp-vs-c",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-019",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "UUIDv7 很怪：timestamp 不保證時間有序",
+      "summary": "作者引 RFC 9562 指出 UUIDv7 唯一嚴格保證的只有唯一性；像 Python 標準庫的實作在系統時鐘倒退時可能卡進遞增循環，讓內嵌 timestamp 無限跑到未來。拿 UUIDv7 當時間排序或建立時間的人要小心。",
+      "tags": [
+        "database",
+        "uuid",
+        "primary-key"
+      ],
+      "url": "https://alexsci.com/blog/uuidv7-is-weird/",
+      "source": "Hacker News",
+      "sourceUrl": "https://alexsci.com/blog/uuidv7-is-weird/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-020",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Anthropic OSS Scanner：開源專案可 opt-in 的 AI 弱點掃描",
+      "summary": "Anthropic 推出免費、opt-in 的 OSS Scanner，用包含 Claude Mythos 在內的最強模型定期替開源專案出安全報告（附 reproducer、bisect 出的引入 commit 與候選 patch），未經人工審核直接送維護者。六個月找到 29,000+ 候選漏洞，人工只來得及 triage 約 6,000。",
+      "tags": [
+        "security",
+        "ai-security",
+        "open-source"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/anthropic-oss-security-scanner/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/anthropic-oss-security-scanner/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-24T16:11:39.026873+08:00",
-  "updatedAt": "2026-10-24T16:11:39.026873+08:00"
+  "lastUpdated": "2026-10-24T18:28:37.865919+08:00",
+  "updatedAt": "2026-10-24T18:28:37.865919+08:00"
 }
