@@ -1,6 +1,457 @@
 {
   "entries": [
     {
+      "id": "20261024-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-24",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "ahtx/kindi",
+      "summary": "讓老舊 NVIDIA 卡也能跑 2B–27B 模型的自製 inference engine，附 OpenAI-compatible server。",
+      "tags": [
+        "local-llm",
+        "inference"
+      ],
+      "url": "https://github.com/ahtx/kindi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ahtx/kindi",
+      "stars": 39,
+      "createdDate": "2026-10-20",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261024-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-24",
+      "cycle": "sat",
+      "priority": "on-the-radar",
+      "title": "JMS1717/ming-voice",
+      "summary": "本地低延遲 speech-to-speech 語音助理（Ming-3.0-audio-tiny），AMD/Nvidia 皆可。",
+      "tags": [
+        "voice",
+        "local-llm"
+      ],
+      "url": "https://github.com/JMS1717/ming-voice",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/JMS1717/ming-voice",
+      "stars": 193,
+      "createdDate": "2026-10-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261024-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-24",
+      "cycle": "sat",
+      "priority": "worth-watching",
+      "title": "alibaba/qz-browser-agent",
+      "summary": "阿里巴巴開源的 local-first Chrome AI agent：瀏覽器自動化、網頁研究與資料擷取，可接自己的模型。",
+      "tags": [
+        "browser-agent",
+        "local-first"
+      ],
+      "url": "https://github.com/alibaba/qz-browser-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/alibaba/qz-browser-agent",
+      "stars": 125,
+      "createdDate": "2026-10-12",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-24",
+      "cycle": "sat",
+      "priority": "worth-watching",
+      "title": "C4rohan/Lampline",
+      "summary": "在自己電腦上建 AI 電話 agent，並用 AI caller 自動測試每次改動；無 API key 也能免費跑，可匯入 Dialogflow CX。",
+      "tags": [
+        "voice-agent",
+        "testing",
+        "local"
+      ],
+      "url": "https://github.com/C4rohan/Lampline",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/C4rohan/Lampline",
+      "stars": 171,
+      "createdDate": "2026-10-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-24",
+      "cycle": "sat",
+      "priority": "worth-watching",
+      "title": "ethanplusai/harvey",
+      "summary": "用 Claude Code / Codex 驅動的自動化業務 agent：找潛在客戶、寫 cold email、跟進回覆到約會議，跑在你的訂閱上不需 API key。本週 Trending。",
+      "tags": [
+        "ai-agent",
+        "sales",
+        "claude-code"
+      ],
+      "url": "https://github.com/ethanplusai/harvey",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/ethanplusai/harvey",
+      "stars": 2372,
+      "createdDate": "2026-03-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261024-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-24",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "android/skills",
+      "summary": "Google 官方 Android agent skills 倉庫，本週 GitHub Trending；用 coding agent 開發 Android 時可直接載入。",
+      "tags": [
+        "agent-skills",
+        "android",
+        "official"
+      ],
+      "url": "https://github.com/android/skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/android/skills",
+      "stars": 9497,
+      "createdDate": "2026-03-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-24",
+      "cycle": "sat",
+      "priority": "rising-fast",
+      "title": "aicodeking/leanrea",
+      "summary": "一個 8KB 的 skill 取代 REA（Reverse Engineer Anything）：只用一般 CLI 工具、不用 MCP，作者 benchmark 稱快 38%、便宜 35%。",
+      "tags": [
+        "claude-code",
+        "skill",
+        "reverse-engineering"
+      ],
+      "url": "https://github.com/aicodeking/leanrea",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/aicodeking/leanrea",
+      "stars": 1893,
+      "createdDate": "2026-10-17",
+      "license": "MIT"
+    },
+    {
+      "id": "20261024-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-24",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Naval「Live in the Future」：先活在未來，再倒推",
+      "summary": "Garry Tan：現在大量花 token 等於預覽 2028 年的工作方式；Farbood Nivi：模型已夠聰明，真正瓶頸是每用戶成本（他們從 ~$100/月壓到 <$3）。Naval：「AI eats software」，硬體是爭取時間建軟體城堡的 moat。（二手整理，原 podcast 為一手來源）",
+      "tags": [
+        "mental-model",
+        "ai-cost",
+        "live-in-the-future"
+      ],
+      "url": "https://navalsarchive.substack.com/p/live-in-the-future-what-naval-and",
+      "source": "Naval (via Naval's Archive)",
+      "sourceUrl": "https://navalsarchive.substack.com/p/live-in-the-future-what-naval-and",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-24",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Paul Graham：AI 時代，標準創業建議幾乎都還適用",
+      "summary": "PG 指出現在創業「大致和以往一樣」；AI 讓你不一定需要 cofounder 幫忙做事，但 cofounder 的主要價值本來就是分擔壓力，這點 AI 取代不了。也提醒別為 moat 焦慮——放棄成長機會遠比沒有 moat 更糟。",
+      "tags": [
+        "mental-model",
+        "cofounder",
+        "growth-over-moat"
+      ],
+      "url": "https://x.com/paulg/status/2110087363254690301",
+      "source": "Paul Graham (X)",
+      "sourceUrl": "https://x.com/paulg/status/2110087363254690301",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ahtx/kindi",
+      "summary": "為廉價舊 NVIDIA 卡（Quadro K420/K1200、GTX 1080、RTX 3080）寫的自製 LLM inference engine，可把兩張 K1200 合成 8GB，提供 OpenAI-compatible server。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/ahtx/kindi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ahtx/kindi",
+      "price": null,
+      "vram": "2–8GB 舊卡",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261024-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "vllm-project/vllm v0.32.0",
+      "summary": "814 commits：新增 /v1/systemone structured decision endpoint、NVFP4 KV cache 擴及 SM12x（含 RTX 50 系）、Model Runner V2 強化與多項安全修補；breaking：移除 Python 3.10、預設 CORS 收緊。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "price": null,
+      "vram": "依模型",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
+      "summary": "在 RTX 5070 Ti Laptop 12GB 上跑 Qwen3.8-27B：NInfer + KVMem、KV 放 RAM、256K 邏輯 context、MTP，附 Windows 部署與實測——和 Gary 的 5070 Ti 直接相關。",
+      "tags": [
+        "llm_inference",
+        "quantization"
+      ],
+      "url": "https://github.com/CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
+      "price": null,
+      "vram": "12GB 實測（RAM offload KV）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "alexturkey/voxcpm2-turkce-ses-tasarimi",
+      "summary": "用 VoxCPM2 在 4GB GPU 上做土耳其語 voice design：描述聲音→選變體→朗讀，含 patched audio.cpp 與本地 UI。可參考其低 VRAM 部署方式。",
+      "tags": [
+        "tts_speech",
+        "voice-design"
+      ],
+      "url": "https://github.com/alexturkey/voxcpm2-turkce-ses-tasarimi",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/alexturkey/voxcpm2-turkce-ses-tasarimi",
+      "price": null,
+      "vram": "4GB GPU（README）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "JMS1717/ming-voice",
+      "summary": "以 Ming-3.0-audio-tiny 打造的低延遲本地 speech-to-speech 語音助理，支援 AMD 與 Nvidia GPU，Windows/Linux 易安裝。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "local"
+      ],
+      "url": "https://github.com/JMS1717/ming-voice",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/JMS1717/ming-voice",
+      "price": null,
+      "vram": "tiny 模型，16GB 可跑（估）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261024-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b11850：支援 Soprano TTS",
+      "summary": "llama.cpp 新增 Soprano-80M / 1.1-80M TTS（Qwen3 backbone + Vocos decoder 作為 gen-only mmproj），本地輕量語音生成又多一個選擇。",
+      "tags": [
+        "tts_speech",
+        "llm_inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11850",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b11850",
+      "price": null,
+      "vram": "80M 參數，CPU/任何 GPU 皆可",
+      "license": "MIT"
+    },
+    {
+      "id": "20261024-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Armin Ronacher：宇宙在懲罰我們過去 30 年寫的爛軟體",
+      "summary": "Simon 收錄 Armin 的一句話，呼應 AI 大量挖出既有軟體安全漏洞的現象（ai-security-research）。",
+      "tags": [
+        "ai-security",
+        "quote"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
+      "source": "Simon Willison / Armin Ronacher",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Battle Drones：vibe coded RTS 與聲波多人連線",
+      "summary": "Simon 用 Claude Code 經 12 次大迭代、321 個 commits 做出可玩的瀏覽器 RTS，附近裝置可用「聲音」同步遊戲狀態；心得包括直接要 Claude「Make it a LOT more fun」竟然有效。",
+      "tags": [
+        "vibe-coding",
+        "claude-code",
+        "game"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer：2026 科技業現況",
+      "summary": "Gergely Orosz LDX3 keynote 整理：幾乎沒人手寫 code、同時跑 5-10 個 agents 變常態、IDE 淡出；code review 流於形式、品質與可靠度下滑；下一步是 cloud coding agents 與 harnesses。",
+      "tags": [
+        "industry-trends",
+        "coding-agents"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in",
+      "source": "Gergely Orosz",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Fowler Fragments 10/4：code 仍是概念模型",
+      "summary": "引用 Unmesh Joshi：LLM 讓寫程式的機械部分變便宜，但 code 作為 domain 概念模型與詞彙的角色更重要；寫 code 本身就是思考。",
+      "tags": [
+        "ai-coding",
+        "software-design"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-10-04.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-10-04.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Fowler Fragments 10/21：用 agent debug 時別先讀 code",
+      "summary": "引介 Cindy Sridharan 長文：讓 agent 先蒐集證據（facts）、選一個 control，再形成 hypotheses 並逐一驗證；「先讀 code」是 agentic debugging 的 anti-pattern。工程師的價值轉向設計 verification loop。",
+      "tags": [
+        "ai-coding",
+        "debugging",
+        "agentic"
+      ],
+      "url": "https://www.martinfowler.com/fragments/2026-10-21.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://www.martinfowler.com/fragments/2026-10-21.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Are Harnesses Worth the Cost?（Naresh Jain @ martinfowler.com）",
+      "summary": "同一個 API service 任務：GPT-6 Luna 無 behavioral harness 只 3/10 成功、加 harness 後 10/10，且每次成本比 GPT-6 Sol 低 33%（$0.273 vs $0.406）。結論：harness 能讓便宜小模型達到可靠產出。",
+      "tags": [
+        "paradigm-shift",
+        "harness",
+        "coding-agents",
+        "cost"
+      ],
+      "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
+      "source": "Martin Fowler / Naresh Jain",
+      "sourceUrl": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Agent Skills 標準捐給 Agentic AI Foundation",
+      "summary": "Anthropic 把 Agent Skills 標準捐給 Linux Foundation 旗下的 AAIF（MCP 也在此），維持 vendor-neutral、社群驅動。對寫 skill 的開發者代表跨工具可攜性更有保障。",
+      "tags": [
+        "paradigm-shift",
+        "agent-skills",
+        "mcp",
+        "standards"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261024-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison：Kimi K3.1 Pro 上線，即將 open weights",
+      "summary": "Moonshot 推出 Kimi K3.1 Pro，承諾 2026/11/4 前釋出完整權重；定價 $2/$10 per M tokens，是 Claude Opus 5.5 的一半。Artificial Analysis 給 55 分，僅次 Opus 5.5（58），是首個逼近 frontier 的（準）open-weight 模型。",
+      "tags": [
+        "ai_models",
+        "open-weights",
+        "llm-pricing"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
       "id": "20261002-fm-001",
       "radar": "founder-mind",
       "date": "2026-10-02",
@@ -92995,6 +93446,6 @@
       "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-20T05:33:49.478973+08:00",
-  "updatedAt": "2026-10-20T05:33:49.478973+08:00"
+  "lastUpdated": "2026-10-24T16:11:39.026873+08:00",
+  "updatedAt": "2026-10-24T16:11:39.026873+08:00"
 }
