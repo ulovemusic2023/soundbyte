@@ -93693,8 +93693,254 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261024-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "gradium/phonon-31m-en（Phonon TTS 家族）",
+      "summary": "Gradium 推出 Phonon 系列 on-device TTS：phonon-31m-en 只有 31M 參數、q8 GGUF 64.5MB，基於 Kyutai Pocket TTS + Mimi codec，24kHz 串流輸出，能在瀏覽器、手機、筆電 CPU 跑。另有 40M 的 en/fr/de/es/pt/multilingual 版；Ollama v0.40.11-rc0 已在 mlxrunner 加入 Phonon 與 voice catalog。",
+      "tags": [
+        "tts_speech",
+        "text-to-speech",
+        "gguf",
+        "on-device"
+      ],
+      "url": "https://huggingface.co/gradium/phonon-31m-en",
+      "source": "Hugging Face / Ollama Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.11-rc0",
+      "price": null,
+      "vram": "31M 參數，CPU 即可",
+      "license": "Apache-2.0（31m-en）／CC BY-NC 4.0（40m 系列）"
+    },
+    {
+      "id": "20261024-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Block Dessa：只用語音訓練的 full-duplex 對話模型",
+      "summary": "Block 旗下小型研究團隊發表 Dessa：從零只用人類對話語音訓練（無文字、無預訓練模型）的 speech-to-speech 模型，full-duplex 邊聽邊講、會插話與 backchannel，官方稱推理快於即時、可在 MacBook Pro M4 Max 以上本機執行，訓練只用一套 GB200 NVL72。目前僅開放 waitlist，未釋出權重。",
+      "tags": [
+        "tts_speech",
+        "speech synthesis",
+        "speech-to-speech"
+      ],
+      "url": "https://block.xyz/dessa",
+      "source": "Hacker News（423 pts）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50213925",
+      "price": null,
+      "vram": "權重未釋出；官方稱 MacBook Pro M4 Max 以上可本機跑",
+      "license": "未公開（waitlist）"
+    },
+    {
+      "id": "20261024-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "third-intelligence/RubatoCodec",
+      "summary": "基於 X-Codec-2 的 variable-frame-rate speech codec，用 Adaptive Firing 依內容切出不定長 event，並有精確的 utterance-level event budget 與 streaming decoding。論文中在相同 TTS 設定下比 fixed-rate 有更低 WER、更高 UTMOS，支援英／日／中；code 與權重已開源。",
+      "tags": [
+        "tts_speech",
+        "speech tokenizer",
+        "text-to-speech"
+      ],
+      "url": "https://github.com/third-intelligence/RubatoCodec",
+      "source": "arXiv (eess.AS)",
+      "sourceUrl": "https://arxiv.org/abs/2610.29434",
+      "price": null,
+      "vram": "codec 級模型，估 16GB 內可跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "k2-fsa/sherpa-onnx v2.0.0",
+      "summary": "離線 ASR/TTS 推理框架 sherpa-onnx 進入 2.0：NeMo transducer 支援 hotwords streaming、offline CTC 的 HLG decoding 擴到 C/C++/JNI/WASM、新增 7M Kokoro distill（阿拉伯文＋英文）轉換腳本與多語 Kokoro TTS wasm demo，並附 Qwen3 ASR 字幕生成範例。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "speech recognition",
+        "onnx"
+      ],
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v2.0.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v2.0.0",
+      "price": null,
+      "vram": "CPU/ONNX Runtime 即可",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "summary": "NVIDIA 以 Gemma-4-E4B-it 後訓練的小模型（8B 總參數／4B effective），主打低記憶體、低 TTFT 的本地語音助理與 tool use，64K context，附 DFlash drafter 做 speculative decoding。Ollama v0.40.10 已上架（ollama run nemotron-3.5-bolt:e4b），Unsloth 也已支援。",
+      "tags": [
+        "llm_inference",
+        "gemma",
+        "speculative decoding",
+        "on-device"
+      ],
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "source": "r/LocalLLaMA / Ollama Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
+      "price": null,
+      "vram": "Q4_K_M 約 4GB",
+      "license": "OpenMDW-1.1"
+    },
+    {
+      "id": "20261024-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "RecursiveSI/flint",
+      "summary": "Recursive 的 coding-agent MoE：39.8B 總參數、每 token 約 2.5B active，官方報 Terminal-Bench 2.1 54.9%、SWE-bench Verified 74.2%。附 SGLang serving kit 與本地引擎 rec；Unsloth 指南稱 3-bit 可在 24GB 跑，16GB 需更低 bit 或 MoE offload 到 RAM。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization",
+        "coding agent"
+      ],
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "source": "Hugging Face Trending / Unsloth Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.910-beta",
+      "price": null,
+      "vram": "BF16 約 80GB；3-bit 約 24GB，16GB 需 offload",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "XHToken/Spark-X2.6-4B",
+      "summary": "主打 on-device agent 的 4B 模型，架構同 Spark-X2.5，靠改良 post-training 提升 coding、agent、long-context，官方稱可比肩約 9B 模型，並有 none/low/high 三段 thinking budget。r/LocalLLaMA 實測 tool calling 表現佳、KV cache 小，但不支援 vision。",
+      "tags": [
+        "llm_inference",
+        "on-device",
+        "context length"
+      ],
+      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xe1kkh/spark_x26_4b_is_the_best_of_its_size/",
+      "price": null,
+      "vram": "4.1B，BF16 約 8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "summary": "IST DASLab 用 GSQ + RCO 對 763B MoE 的 DeepSeek-V4.1-Flash-1017 做逐層 non-uniform GGUF 量化（IQ1_M 1.75 ／ IQ2_XXS 2.00 ／ IQ2_XS 2.25 bpw），backbone 120.7–155.2GB，另有共用的 110.6GB Engram 檔可 mmap 在 SSD。搭配 Strata 宣稱單張 12GB GPU 可跑；llama.cpp 架構支援尚未 merge。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization",
+        "deepseek"
+      ],
+      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xe2wg8/release_ista_gsqrco_ggufs_for_deepseekv41flash1017/",
+      "price": null,
+      "vram": "VRAM 12GB 即可，但 backbone 120–155GB 需放系統記憶體，64GB RAM 不夠",
+      "license": "MIT"
+    },
+    {
+      "id": "20261024-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MiniMaxAI/MiniMax-M3.1-Flash",
+      "summary": "MiniMax 釋出 M3.1-Flash 權重：原生多模態 MoE，約 428B 總參數／23B active，1M context，全模型 MiniMax Sparse Attention、quantization-aware training，內建 DSpark speculative decoding draft head，主打 coding、agent、computer use。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "price": null,
+      "vram": "428B MoE，量化後仍遠超 24GB",
+      "license": "MiniMax Community License"
+    },
+    {
+      "id": "20261024-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "huggingface/diffusers v0.42.0",
+      "summary": "Diffusers 新版加入 FLUX.3 Image Klein（含 BFL FP8r / NVFP4 checkpoint）、Bria Fibo 2.0（JSON caption、四步 edit-turbo、LoRA/DreamBooth 範例）、可同步生成音訊的 Kandinsky 6 影片模型，以及 camera trajectory 控制的 SANA-WM。注意：改為需要 Python 3.11+。",
+      "tags": [
+        "image_gen",
+        "diffusers",
+        "flux",
+        "video generation"
+      ],
+      "url": "https://github.com/huggingface/diffusers/releases/tag/v0.42.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/diffusers/releases/tag/v0.42.0",
+      "price": null,
+      "vram": "依模型而定；FLUX.3 Klein 有 FP8/NVFP4 版",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "unslothai/unsloth v0.1.910-beta",
+      "summary": "Unsloth 本地 UI 新增 Flint、MOSS-Image（16GB GPU 可跑）、Nemotron 3.5 Bolt；加入 REAP MoE expert pruning（剪掉 25%／50% expert 匯出小模型）、OpenAI 相容 fine-tuning API、chat-only（GGUF）精簡安裝，以及 MLX MoE expert 放 SSD 讓大模型跑在小記憶體 Mac。",
+      "tags": [
+        "llm_training",
+        "unsloth",
+        "fine-tuning",
+        "gguf"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.910-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.910-beta",
+      "price": null,
+      "vram": "依模型；工具本身支援 16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261024-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-10-24",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Zagitta/gpu-unlock",
+      "summary": "Linux kernel module，在 NVIDIA driver 綁卡前解鎖 RTX 30 系列（GA102/103/104/106）被限速的 FP16/BF16→FP32 accumulation 指令速率；README 的 3090 Ti GEMM 實測 BF16 87.5→157.4 TFLOPS。r/LocalLLaMA 實測 vLLM prefill +20%、decode 無變化。目前只支援 Ampere，RTX 5070 Ti（Blackwell）不適用。",
+      "tags": [
+        "infra_runtime",
+        "cuda"
+      ],
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xdn33h/new_nvidia_unlock_works_on_chinese_3080_20gb_too/",
+      "price": null,
+      "vram": "N/A（僅 RTX 30 系列）",
+      "license": "未標示（GitHub 未偵測到 LICENSE）"
     }
   ],
-  "lastUpdated": "2026-10-24T18:28:37.865919+08:00",
-  "updatedAt": "2026-10-24T18:28:37.865919+08:00"
+  "lastUpdated": "2026-10-24T22:26:52.449663+08:00",
+  "updatedAt": "2026-10-24T22:26:52.449663+08:00"
 }
