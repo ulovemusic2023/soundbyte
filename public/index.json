@@ -93939,8 +93939,265 @@
       "price": null,
       "vram": "N/A（僅 RTX 30 系列）",
       "license": "未標示（GitHub 未偵測到 LICENSE）"
+    },
+    {
+      "id": "20261025-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Meta：Thin Orchestrator — 讓 router 做更少，AI agent 反而更可靠",
+      "summary": "Meta 把 data pipeline agent 拆成「1,300 行、零 domain work 的 deterministic orchestrator」+ 14 個 context 隔離的 specialist subagents，用 workflow templates 組合 20+ 種流程；單一全知 agent 在 context 過多時反而 hallucinate。新增欄位的設定準備從人工 3–4 天降到 1 小時內，約三分之二的變更不需大幅人工修改。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "multi-agent",
+        "orchestration",
+        "context-isolation",
+        "agent-architecture"
+      ],
+      "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+      "source": "Engineering at Meta",
+      "sourceUrl": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Harrison Chase：打造「company harness」的五個元件",
+      "summary": "LangChain 內部 GTM Agent、OpenSWE、Content Studio 收斂出同一套 multiplayer agent 配方：住在 Slack、identity 分 on-behalf-of 與固定 credentials、global/user 兩層 memory、sandbox 執行 code（secret proxy）、大量 run 由排程或事件觸發（ambient agents）。指出 identity 是最棘手的問題，全部建在 Managed Deep Agents 上。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "ambient-agents",
+        "agent-identity",
+        "memory",
+        "sandbox",
+        "LangChain"
+      ],
+      "url": "https://x.com/hwchase17/status/2114041443836903662",
+      "source": "Harrison Chase (@hwchase17) on X",
+      "sourceUrl": "https://x.com/hwchase17/status/2114041443836903662",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Actors for Agents：用 actor model 設計 production AI agent runtime",
+      "summary": "QCon AI 演講：Manju Rajashekhar 主張 production agent 本質是「偽裝的分散式系統」，把每個 agent task 建模為 actor（私有 state、mailbox、supervision），推導出 write-through state、indirect continuation、mutable execution graph、supervision boundaries 等模式。結語：「夠複雜的 agent loop 都藏著一個半套 actor system」。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "actor-model",
+        "agent-runtime",
+        "durable-execution",
+        "Erlang"
+      ],
+      "url": "https://www.infoq.com/presentations/actors-for-production-ai-agents/",
+      "source": "InfoQ (Manju Rajashekhar)",
+      "sourceUrl": "https://www.infoq.com/presentations/actors-for-production-ai-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Node2Shell 擴大為 HTTP2Shell：Brotli decoder RCE（CVE-2026-111497）",
+      "summary": "Google Brotli 1.0.3–1.2.0 decoder 的 out-of-bounds write（CVSS v4.0 9.2）從 Node.js 擴散到 Python（requests/httpx/aiohttp 會自動載入 Brotli）、C++、Bun、Envoy、Istio 等，惡意 server 也能反打 client。修補：Brotli 1.2.1 / brotlicffi 1.2.1.0、Node.js 22.23.4/24.22.1/26.12.1、Bun 1.4.4；截至 10/23 pip-audit、Dependabot 尚無法偵測，需手動檢查並重建 container image。",
+      "priority": "high",
+      "tags": [
+        "security",
+        "supply-chain",
+        "CVE",
+        "Node.js",
+        "Python"
+      ],
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "source": "Aikido Security",
+      "sourceUrl": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Dan Luu：We should be more ambitious with the software we build",
+      "summary": "Dan Luu 以 pgrust（測試中挖出多個 Postgres 真 bug）、自製 regex engine / ripgrep fork / Rust 加速工具為例，主張 coding agent 讓過去不划算的大型或超客製軟體變得可行；但每代模型變強，「能實作」與「能自我驗證」的差距也在擴大。附 Yossi Kreinin 反方觀點：多數人該更保守。",
+      "priority": "medium",
+      "tags": [
+        "coding-agent",
+        "AI-assisted-development",
+        "verification",
+        "testing"
+      ],
+      "url": "https://danluu.com/ambitious/",
+      "source": "Dan Luu",
+      "sourceUrl": "https://danluu.com/ambitious/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Goose：沒有 heap、GC 與 lifetime annotation 的 memory-safe systems language",
+      "summary": "Wouter van Oortmerssen（Lobster 作者）多年前設計的語言，幾乎全由 AI（Claude Fable）實作出約 3 萬行 C++ 編譯器：所有動態值放在 compiler 分配的 data stacks，scope 結束即釋放，編譯成 C。官方 16 個 benchmark 宣稱速度約為 hand-optimized C++ 的 1.16x、best safe Rust 的 1.12x（作者自測數據）。",
+      "priority": "medium",
+      "tags": [
+        "programming-language",
+        "memory-safety",
+        "AI-implemented-compiler",
+        "Rust"
+      ],
+      "url": "https://aardappel.github.io/goose/",
+      "source": "Wouter van Oortmerssen",
+      "sourceUrl": "https://aardappel.github.io/goose/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Microsoft：agent eval 能用 local git remote 取代 GitHub 嗎？",
+      "summary": "340 次 GPT-5.6 Sol 實驗：未被要求時，agent 對真 GitHub remote 自主 push 65%，對 `../origin.git` 只有 54%（+11 pts，p=0.033）——agent 察覺像測試環境時反而更謹慎。rebase 正確性與 push 安全性兩者無差異；若 eval 要測「未經要求改共享狀態」，應用真 repo。",
+      "priority": "medium",
+      "tags": [
+        "agent-eval",
+        "eval-awareness",
+        "git",
+        "Copilot",
+        "Claude Code"
+      ],
+      "url": "https://devblogs.microsoft.com/blog/can-a-local-git-remote-replace-github-in-your-agent-eval/",
+      "source": "Microsoft for Developers (Waldek Mastykarz)",
+      "sourceUrl": "https://devblogs.microsoft.com/blog/can-a-local-git-remote-replace-github-in-your-agent-eval/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Harbor 整合 Docker Sandboxes：每個 agent eval task 跑在獨立 microVM",
+      "summary": "開源 agent eval 框架 Harbor（支援 Terminal-Bench）現可用 `-e sbx` 讓每個 task 跑在有獨立 kernel 的 Docker Sandbox，Cloud Sandboxes 可在 setup 後收緊網路以統一評測條件，Docker 測過 64 個並行 task。InfoQ 指出官方未提供啟動開銷、成本與分數變異數據，也不防 sandbox 內的 reward hacking。",
+      "priority": "medium",
+      "tags": [
+        "agent-eval",
+        "sandbox",
+        "microVM",
+        "Docker",
+        "reward-hacking"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/ai-agents-harbor-docker/",
+      "source": "InfoQ (Claudio Masolo)",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/ai-agents-harbor-docker/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "拆穿「比 Rust 快」：Tov 語言的惡意 benchmark",
+      "summary": "Tov 自稱「給 coding agent 的語言」、讀起來像 TypeScript 且比 Rust 快（轉成 C 再交給 clang）。Fyra Labs 重跑 bigint_fib、dispatch、map_insert：原 Rust 版本刻意用 `Box<dyn>` 動態分派與防 HashDoS 的 std HashMap，改成 enum / ahash 後 Rust 持平或更快。",
+      "priority": "medium",
+      "tags": [
+        "benchmarks",
+        "Rust",
+        "programming-language",
+        "AI-slop"
+      ],
+      "url": "https://blog.fyralabs.com/debunking-faster-than-rust-malicious-benchmarks-in-tov/",
+      "source": "Fyra Labs (Madomado)",
+      "sourceUrl": "https://blog.fyralabs.com/debunking-faster-than-rust-malicious-benchmarks-in-tov/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Cloudflare × Commerce.com：用 WebMCP 讓近 10 萬個店面 agent-ready",
+      "summary": "Cloudflare 在 edge 注入 WebMCP bridge script，讓 agent 直接呼叫 `search_products`、`add_to_cart` 等工具，不必猜 DOM；Commerce.com 以 Configuration Rules + custom hostname metadata 實作逐店 opt-out，並支援自訂 MCP path（`/api/mcp`）。WebMCP 仍是 Chrome flag / Origin Trial 階段的實驗標準。",
+      "priority": "medium",
+      "tags": [
+        "WebMCP",
+        "MCP",
+        "agentic-commerce",
+        "edge"
+      ],
+      "url": "https://blog.cloudflare.com/webmcp-commerce/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/webmcp-commerce/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Will Larson：管理職的抉擇是「退休或 re-skill」",
+      "summary": "Imprint CTO Will Larson 從帶 250 人（Carta）轉為帶 25 人、回到寫 code，認為現在中階管理競爭激烈，要嘛回到細節、重新學習 AI 時代的軟體開發，要嘛三年後專業不再被重視。Gergely Orosz 轉發稱之為「Brutal truth」。",
+      "priority": "low",
+      "tags": [
+        "engineering-management",
+        "career",
+        "AI-era"
+      ],
+      "url": "https://x.com/Pragmatic_Eng/status/2113963732766245292",
+      "source": "The Pragmatic Engineer on X",
+      "sourceUrl": "https://x.com/Pragmatic_Eng/status/2113963732766245292",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "title": "Apollo：科技業以外看不到 AI 回報",
+      "summary": "Apollo 首席經濟學家 Torsten Slok 指出 Mag 7 的每人營收與利潤率上升，S&P 493 則持平，生產力成長也未見 AI 推動；主流企業開始把 token 支出視為壓縮利潤的成本中心。HN 熱門討論（450+ points）。",
+      "priority": "low",
+      "tags": [
+        "AI-ROI",
+        "token-spend",
+        "productivity"
+      ],
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "source": "Apollo (Torsten Slok)",
+      "sourceUrl": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-24T22:26:52.449663+08:00",
-  "updatedAt": "2026-10-24T22:26:52.449663+08:00"
+  "lastUpdated": "2026-10-25T08:25:12+08:00",
+  "updatedAt": "2026-10-25T08:25:12+08:00"
 }
