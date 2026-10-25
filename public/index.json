@@ -94660,8 +94660,180 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261025-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "debpalash/VoiceStudio",
+      "summary": "今天 GitHub Trending（all + Python）雙榜第一，單日 +1,588⭐：開源、全本地的 ElevenLabs 替代品，涵蓋 voice cloning、voice design、影片 dubbing、dictation、transcription 與有聲書，支援 646 種語言。預設引擎為 k2-fsa/OmniVoice，也可換其他引擎；內建 local API 與 MCP，讓 Claude Code／Cursor 等 agent 直接呼叫。NVIDIA 走 CUDA、Apple Silicon 走 MPS，無 GPU 也能用 CPU 跑（較慢）；最新版 v0.5.7-beta.2。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "voice cloning",
+        "text-to-speech",
+        "speech to text"
+      ],
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=daily",
+      "price": null,
+      "vram": "依所選引擎而定；支援 CUDA／MPS／CPU",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261025-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Tesslate/Lure-TTS-0.6B + Lure-Turbo",
+      "summary": "以 Qwen3-TTS 0.6B 為底，經 SFT、multi-teacher OPD（on-policy distillation）等訓練的英文 zero-shot voice cloning TTS（3–12 秒參考音＋逐字稿）。可用 inline tag 如 (sigh) 表演聲音、用一句 acting note 控制語氣。Turbo 版把每 frame 15 次 code predictor 降到 3 次，作者稱 RTF 0.14（Fish S2 Pro 5B 為 0.195）且 speaker similarity 相同，訓練成本低於 US$200；另釋出 lure-tts 推理引擎（CUDA／MLX／CPU，OpenAI-compatible server）與訓練碼。標示為 research preview。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "voice cloning",
+        "zero-shot tts",
+        "emotional speech"
+      ],
+      "url": "https://huggingface.co/Tesslate/Lure-TTS-0.6B",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xf14j2/luretts_and_lureturbo_600m_voice_models_to_run_4x/",
+      "price": null,
+      "vram": "0.6B 參數；官方稱 MacBook 上快於即時、單張 24GB GPU 可同時串流 8 個聲音",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261025-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "jesdga95/basalt",
+      "summary": "Strata 的 fork，專為 NVIDIA Blackwell（sm_120，即 RTX 50 系列）打造的 Qwen3.8-Flash-Next 本地推理引擎：放不下 VRAM 的 experts 放 system RAM（可選第二張 GPU 當 expert tier），提供 OpenAI／Anthropic-compatible API。r/LocalLLaMA 實測 RTX 5080 16GB + 62GB DDR5、IQ3_S、262K context、int8 KV：opencode agent session 平均 TG 153 tok/s（峰值 262）、PP 約 5,000 tok/s，VRAM 15.7GB、引擎吃 RAM 54.1GB。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "quantization",
+        "local inference",
+        "kv-cache"
+      ],
+      "url": "https://github.com/jesdga95/basalt",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xesda1/benchmark_stratabasalt_runs_qwen38_flash_next_iq3/",
+      "price": null,
+      "vram": "16GB VRAM（實測 15.7GB）+ 約 54GB RAM（IQ3_S）；需 CUDA 13",
+      "license": "MIT（引擎）／Qwen Community License 1.0（模型 packs）"
+    },
+    {
+      "id": "20261025-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MaxDevv/lean-qwenflash",
+      "summary": "讓 125B 的 Qwen3.8-Flash-Next 在 16GB VRAM + 只用 8GB RAM 下跑滿 262K context：未快取的 experts 透過 O_DIRECT 直接從 NVMe 串流進 GPU cache，51B N-gram embedding table 也放 SSD，expert 計算全在 GPU。作者實測（RTX 4090 限制 16GB VRAM／8GB RAM）100K context 約 20.8 tok/s decode、約 1,536 tok/s prefill；RTX 3080 Laptop 16GB 峰值 VRAM 15.5GB。基於 ExLlamaV3，需 PCIe 3.0/4.0 NVMe（約 3GB/s+），下載約 85GB。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "quantization",
+        "local inference"
+      ],
+      "url": "https://github.com/MaxDevv/lean-qwenflash",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xev6bo/leanqwenflash_qwen38flashnext_125b_running_at_20/",
+      "price": null,
+      "vram": "16GB VRAM（峰值約 15.5GB）+ 4–16GB RAM + NVMe（3.05bpw）",
+      "license": "未標示（repo 無 LICENSE）"
+    },
+    {
+      "id": "20261025-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b11870：正式支援 DeepSeek-V4.1-Flash",
+      "summary": "接續 10/24 的 ISTA GSQ-RCO GGUF：llama.cpp 已 merge DeepSeek-V4.1-Flash（deepseek41）架構支援（PR #31086，含 Engram table、compressed-KV），b11870 已發佈。同日另 merge CUDA PR #29948：prompt processing 時把 dense FFN 的 gate/up matmul 與 GLU 融合成單一 MMQ launch，作者在 DGX Spark 上測 Qwen3.8-27B 約 +5～7.5% PP（Q4_K/Q5_K/Q6_K/Q8_0/IQ4_XS，NVIDIA Turing+）。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "deepseek",
+        "gguf",
+        "cuda"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11870",
+      "source": "GitHub Releases / r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xeqf7k/model_dsv41_flash_by_am17an_pull_request_31086/",
+      "price": null,
+      "vram": "DSV4.1-Flash 為 763B MoE；VRAM 可壓到 12–16GB，但 2-bit backbone 120–155GB 需放 RAM，64GB 不夠",
+      "license": "MIT（llama.cpp 與模型）"
+    },
+    {
+      "id": "20261025-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "slee-persis/GVS5H：5 個 Qwen3.8-27B 追平 Claude Fable 5",
+      "summary": "HN 171 分：training-free 的 ledger-based zero-shot self-orchestration，同一模型的多個新 instance 透過共享檔案系統（plan、notes、目前解答）拆題協作。在 100 題最新 LiveCodeBench Hard 上，本地可跑的 open-weight Qwen3.8-27B 從 66.8% 拉到 92.4%（Fable 5 單次 90.4%），Qwen3.8 Flash Next 編排後 93.0%、成本約 9%；作者也註明並非所有模型都有效。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "coding agent",
+        "ai_devtools"
+      ],
+      "url": "https://github.com/slee-persis/GVS5H",
+      "source": "Hacker News（171 pts）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50228167",
+      "price": null,
+      "vram": "Qwen3.8-27B 需 Q4 等量化才放得進 16GB（估計）",
+      "license": "MIT（code）／CC BY 4.0（paper、data）"
+    },
+    {
+      "id": "20261025-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cerebras：怎麼把兆參數模型部署到 wafer-scale 晶片",
+      "summary": "HN 236 分：Cerebras 以 3T 參數的 open-source Kimi K3 為例，拆解如何把模型切到多片 WSE-3T（每片 44GB on-chip SRAM）：4-bit weight、8-bit KV cache、256K 平均 request，每層約 16GB；dense（full-attention）層一片放一層、其餘 SRAM 留給 KV cache，linear-attention 層因只需固定大小 state 可一片放兩層，達到 1,000–2,000+ tok/s。",
+      "tags": [
+        "llm_inference",
+        "4-bit",
+        "kv-cache",
+        "model serving"
+      ],
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "source": "Hacker News（236 pts）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50227356",
+      "price": null,
+      "vram": "資料中心 wafer-scale，非本地方案",
+      "license": "N/A（技術文章；Kimi K3 為 open weights）"
+    },
+    {
+      "id": "20261025-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Nanbeige/Nanbeige4.3-33B",
+      "summary": "Nanbeige4.3 系列旗艦 teacher model（33B），主打 agentic coding 與 cowork，之後會蒸餾成 Nanbeige4.3-3B 等小模型。官方表（皆最高 thinking effort、同 harness）：Terminal-Bench 2.1 80.9 vs Qwen3.8-27B 73.0、DeepSWE 65.5 vs 42.5，但 SWE-Bench Pro 60.3 略低於 Qwen3.8-27B 的 61.7；支援 512K context。今晚 r/LocalLLaMA 熱門討論。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "context length",
+        "coding agent"
+      ],
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "source": "r/LocalLLaMA / Hugging Face",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xf0kz4/nanbeigenanbeige4333b_hugging_face/",
+      "price": null,
+      "vram": "33B；估 Q4 約 19–20GB，16GB 需 Q3 或部分 offload 到 RAM（估計）",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-10-25T18:29:41+08:00",
-  "updatedAt": "2026-10-25T18:29:41+08:00"
+  "lastUpdated": "2026-10-25T22:19:31+08:00",
+  "updatedAt": "2026-10-25T22:19:31+08:00"
 }
