@@ -94428,8 +94428,240 @@
       "price": null,
       "vram": "官方本地建議 24GB+；16GB 需 INT8/NVFP4 + offload，未驗證",
       "license": "other"
+    },
+    {
+      "id": "20261025-sw-013",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google 用 Gemini 4 Argon 一夜優化 ADK 20 萬行 Python codebase",
+      "summary": "Google 讓 Gemini 4 Argon 無人值守跑 11 小時，在 Agent Development Kit（約 800 檔、近 17,000 個 unit tests）上產出兩個被接受的優化：長 session 的 in-memory session-preparation 開銷降約 40%、cold import 時間降 21%。關鍵做法是把 repo 慣例寫進 .agents/skills（像新人 onboarding 文件、按需載入），並用 Antigravity 的 /goal 模式讓目標撐過 context compaction。",
+      "tags": [
+        "paradigm-shift",
+        "ai-coding",
+        "long-running-agent",
+        "agent-skills",
+        "goal-mode"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-014",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "GVS5H：5 個 Qwen3.8-27B 自我協作，在 LiveCodeBench Hard 追平 Claude Fable 5",
+      "summary": "提出 training-free 的 ledger-based zero-shot self-orchestration：同一模型開多個新 instance，透過共享 filesystem 上的 plan／notes／current solution 分工協作。在最新 100 題 LiveCodeBench hard 上，orchestrated Qwen3.8 Flash Next 拿到 93.0% pass@1（Fable 5 為 90.4%），成本約 9%；可本地跑的 Qwen3.8-27B 從 66.8% 拉到 92.4%。作者也坦承不是每個模型都有效，有些持平或變差。",
+      "tags": [
+        "paradigm-shift",
+        "multi-agent",
+        "harness",
+        "self-orchestration",
+        "open-weights"
+      ],
+      "url": "https://github.com/slee-persis/GVS5H",
+      "source": "GitHub (slee-persis/GVS5H) via Hacker News",
+      "sourceUrl": "https://github.com/slee-persis/GVS5H",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-015",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Guillermo Rauch：管好「過度引導 vs. 引導不足」AI，是他最看重的 #0 技能",
+      "summary": "Rauch 說有時你會 over-guide AI（它其實比你懂），有時又 under-guide（它會跑偏、帶錯偏見或缺 context），而拿捏這個分寸是他招人時看的第一技能。這則貼文約 2,300 讚、近 300 則回覆，是這週 AI-assisted development 討論度最高的觀點之一。",
+      "tags": [
+        "ai-assisted-development",
+        "vibe-coding",
+        "engineering-culture"
+      ],
+      "url": "https://x.com/rauchg/status/2114085432749347086",
+      "source": "X (@rauchg)",
+      "sourceUrl": "https://x.com/rauchg/status/2114085432749347086",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-016",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Astral：uv 與 ty 整合（experimental），新增統一的 uv check",
+      "summary": "Astral 推出 uv × ty 實驗性整合：ty 會讀 PEP 723 inline metadata，自動找出專案裡的 Python scripts，並借 uv 為每支 script 準備各自的環境，所以同一 repo 內不同依賴的 scripts 都能被正確 type check、在編輯器拿到 completion／Go to Definition；另外合併出一個 uv check 指令。這是 Astral 走向「整合工具鏈」的第一步。",
+      "tags": [
+        "python",
+        "uv",
+        "ty",
+        "developer-experience",
+        "type-checking"
+      ],
+      "url": "https://astral.sh/blog/uv-ty-integration",
+      "source": "Astral Blog",
+      "sourceUrl": "https://astral.sh/blog/uv-ty-integration",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-017",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "arXiv：為什麼 AI 寫的文字越來越難讀？",
+      "summary": "研究者比較 9 個 frontier／near-frontier 模型與人類寫作，發現模型更常用低頻 n-gram、無生命主詞配有生命動詞，多數也用更長的依存距離、堆疊名詞等難處理結構。假說是模型越來越被 math／code／reasoning 目標優化，壓力在「information density」而非溝通；用 length penalty 微調就能重現這種偏移。HN 上 200+ 分。",
+      "tags": [
+        "llm",
+        "alignment",
+        "information-density",
+        "readability"
+      ],
+      "url": "https://arxiv.org/abs/2610.29162",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2610.29162",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-018",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "C++26 投票未通過（Disapproved）",
+      "summary": "ISO 委員 Robert Seacord 公布 C++26 投票結果：P-Members 贊成 12/20＝60%（門檻 ≥66.67%），member bodies 反對 9/22＝41%（門檻 ≤25%），草案被否決。留言區不少人指向爭議很大的 contracts 提案，也有人提到另有 12 國因無共識而棄權。",
+      "tags": [
+        "c++",
+        "language-standard",
+        "wg21"
+      ],
+      "url": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
+      "source": "LinkedIn (Robert Seacord) via Lobsters",
+      "sourceUrl": "https://www.linkedin.com/posts/robertseacord_balloting-has-completed-for-c26-unfortunately-activity-7519795140887035918-5PWL",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-019",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Sean Goedecke：軟體慢是設計問題，不是語言問題",
+      "summary": "反駁「讓 AI 把程式改寫成 C／Rust 就會變快」：多數真實程式是 I/O-bound（DB、第三方 API、磁碟），換語言只能加速剩下那一段；真正 CPU-bound 的部分，慢語言早就靠呼叫 C 寫的 library 解決。結論是效能取決於設計，不是語言選擇。",
+      "tags": [
+        "performance",
+        "architecture",
+        "rust",
+        "ai-rewrite"
+      ],
+      "url": "https://www.seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
+      "source": "seangoedecke.com via Lobsters",
+      "sourceUrl": "https://www.seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-020",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Vercel CLI 加入 Spend Management：agent 也能查預算",
+      "summary": "新增 vercel budgets 指令，你或你跑的 scripts／agents 可直接取得目前花費與預算，還能 set／remove 預算、查 alert 歷史（支援 --json）。加 --pause 時，花費到 100% 會暫停所有專案的 production deployments；單純設預算本身不會擋用量。",
+      "tags": [
+        "vercel",
+        "developer-experience",
+        "agent-tooling",
+        "cost-control"
+      ],
+      "url": "https://vercel.com/changelog/vercel-cli-adds-spend-management",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/vercel-cli-adds-spend-management",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-021",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Docker is weird：自己寫 container runtime 學到的事",
+      "summary": "作者為了好玩自寫 container runtime，整理出幾個反直覺：container 只是加了限制的 process（namespaces＋cgroups＋網路隔離等多個 kernel 功能拼起來），image 只是資料夾再 chroot／pivot_root；而 runc 用 Go 寫，Go runtime 天生多執行緒，跟一些必須單執行緒呼叫的 syscall 不太合。Lobsters 100+ 分。",
+      "tags": [
+        "docker",
+        "containers",
+        "linux",
+        "go"
+      ],
+      "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+      "source": "Code and Cake via Lobsters",
+      "sourceUrl": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-022",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "PingCAP 遭入侵：客戶資料與 source code 外洩",
+      "summary": "TiDB 背後的 PingCAP 證實內部系統遭未授權存取，source code 與客戶相關資料被竊。勒索集團 FulcrumSec 聲稱拿走 10.6 TB，含 TiDB Cloud control-plane 紀錄、客戶 SQL、API keys、連線 log 與 413 個私有 repo（尚未獨立證實）；PingCAP 表示沒有證據顯示 TiDB 內儲存的資料受影響，但確認匯出紀錄含使用者名稱、email、SQL editor 文字等。",
+      "tags": [
+        "tidb",
+        "security",
+        "data-breach",
+        "supply-chain-security"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/pingcap-cloud-data-breach/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/pingcap-cloud-data-breach/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261025-sw-023",
+      "radar": "software-dev",
+      "date": "2026-10-25",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "MongoDB：十幾種語言的 driver，怎麼做 spec conformance testing",
+      "summary": "MongoDB 有十幾個用各語言原生重寫的 drivers（不是 C core 加薄包裝），換來更道地的 API 與 runtime 整合，代價是要確保跨語言行為一致。作者回顧他們放棄 Cucumber、改在 YAML 上自建測試語言，2020 年再收斂成單一的 Unified Test Format（用 JSON Schema 驗語法、schemaVersion 讓舊 runner 跳過看不懂的檔案）。",
+      "tags": [
+        "conformance-testing",
+        "polyglot",
+        "testing",
+        "mongodb"
+      ],
+      "url": "https://emptysqua.re/blog/polyglots-dilemma/",
+      "source": "emptysqua.re via Lobsters",
+      "sourceUrl": "https://emptysqua.re/blog/polyglots-dilemma/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-25T10:18:57+08:00",
-  "updatedAt": "2026-10-25T10:18:57+08:00"
+  "lastUpdated": "2026-10-25T18:29:41+08:00",
+  "updatedAt": "2026-10-25T18:29:41+08:00"
 }
