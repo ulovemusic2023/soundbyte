@@ -94196,8 +94196,240 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261025-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ValerioDolci/capy-flash v0.7.5",
+      "summary": "專為 16GB RTX 50 系列打造的推理 server，跑 Qwen3.8-Flash-Next（125B MoE）與 Qwen3.8-27B：放不下 VRAM 的 experts 留在 host RAM 由 CPU 計算，雙卡走 tensor parallel，提供 OpenAI/Anthropic-compatible API 給 Claude Code、Codex CLI、OpenCode。作者的測試機正是 2× RTX 5070 Ti + Ryzen 9 9900X；v0.7.5 新增 --miss-split calibrate，在自家機器上實測 expert 計算成本（預設仍為 off）。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "quantization",
+        "local inference"
+      ],
+      "url": "https://github.com/ValerioDolci/capy-flash",
+      "source": "r/LocalLLaMA + GitHub Releases",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xe9yyg/capyflash_v074_where_my_twogpu_qwen38_engine_is/",
+      "price": null,
+      "vram": "單張 16GB：27B 3-bit，或 Flash-Next 64GB edition（需 64GB RAM，約 56GiB 可用）；雙卡可跑 NVFP4",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261025-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "mudler/LocalAI v4.12.0",
+      "summary": "LocalAI 4.12.0 重新設計 web UI，新增 streaming voice：LLM 回覆片段可邊生成邊餵進 Qwen TTS，其他 engine 用 clause streaming，並可透過 Parakeet bundles 組合音訊分析角色。另有原生 decision routing（/v1/decisions）、Studio image upscaling、Qdrant stores。10/23 另發 v4.12.1 安全修補（外部 URL 政策強化）。",
+      "tags": [
+        "llm_inference",
+        "tts_speech",
+        "localai",
+        "asr"
+      ],
+      "url": "https://github.com/mudler/LocalAI/releases/tag/v4.12.0",
+      "source": "GitHub Releases / X",
+      "sourceUrl": "https://github.com/mudler/LocalAI/releases/tag/v4.12.0",
+      "price": null,
+      "vram": "engine 本身不限；依所載模型而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20261025-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "yaya-sy/specspeech",
+      "summary": "把 speculative decoding 用在 ASR/TTS：以 nvidia/parakeet-tdt-0.6b-v3（TensorRT engine）當 drafter 平行處理音訊片段，Speech LLM（Qwen ASR verifier，走 vLLM）prefill 完整音訊後驗證 draft，提供 CLI 與 Python API。需 CUDA 13 相容 driver。",
+      "tags": [
+        "tts_speech",
+        "speculative decoding",
+        "asr",
+        "vllm"
+      ],
+      "url": "https://github.com/yaya-sy/specspeech",
+      "source": "GitHub Topics (speech-recognition)",
+      "sourceUrl": "https://github.com/yaya-sy/specspeech",
+      "price": null,
+      "vram": "drafter 0.6B；verifier 依 Qwen ASR 模型而定（估計 16GB 內可跑）",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261025-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "KRAFTON/Raon-1-mini-preview",
+      "summary": "KRAFTON AI 從零訓練的 30B-A4B MoE（總參數 28.8B、每 token 啟用 4.3B），hybrid Raon Delta Attention + Gated MLA，原生 262,144 context，主打韓語與 agentic tool calling，附 DFlash2 draft model 做 speculative decoding。目前為 preview，r/LocalLLaMA 有人拿來跟 Flint 比較。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "speculative decoding",
+        "context length"
+      ],
+      "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview",
+      "source": "r/LocalLLaMA / HuggingFace Trending",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xehs52/raon_is_better_than_flint/",
+      "price": null,
+      "vram": "GGUF IQ4_XS 約 16GB、Q4_K_M 約 19GB，16GB 需 MoE CPU offload；官方 NVFP4 需 RTX 5090 32GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261025-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF：8GB GPU 跑 262K context",
+      "summary": "r/LocalLLaMA 實測指南：用 llama.cpp 跑 3.5 BPW 的 Qwen3.8-Flash-Next GSQ-RCO Coder（6B active），大部分 MoE experts 放 RAM、n-gram 放 SSD，在 8GB VRAM + 24GB RAM 達 262K context、約 70 T/s。作者註明 8GB 下 CUDA 可能跑不起來，建議改 Vulkan backend。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "gguf",
+        "llama.cpp",
+        "context length"
+      ],
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xebdzl/8_gb_gpu_262k_context_35_bpw_qwenflashnext_coder/",
+      "price": null,
+      "vram": "8GB VRAM + 24GB RAM 可跑（experts offload）；16GB 更寬裕",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261025-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Felliks/Struna",
+      "summary": "瀏覽器 rhythm runner：歌曲在裝置端用 onnxruntime-web（WASM、各自 web worker）分析，BeatNet（beat + downbeat tracking，約 1.6MB）、Spotify Basic Pitch（note transcription）、Spleeter 等 4 個小模型決定關卡節奏與障礙。音檔不上傳，純本地 MIR inference 的輕量範例。",
+      "tags": [
+        "music_understanding",
+        "beat tracking",
+        "music transcription",
+        "onnx"
+      ],
+      "url": "https://github.com/Felliks/Struna",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xeia9o/made_a_rhythm_game_where_4_small_neural_nets/",
+      "price": null,
+      "vram": "瀏覽器 WASM / CPU，不需 GPU",
+      "license": "MIT"
+    },
+    {
+      "id": "20261025-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Spark-Audio 1.0 Technical Report",
+      "summary": "speech foundation model：0.65B dense audio encoder（BEST-RQ 預訓練）接 30B-A3B MoE LLM，支援 99 種語言、202 種方言的 speech recognition、speech translation、音訊理解與語音對話，訓練用 1,300 萬小時音訊，全程在 Huawei Ascend 910B、Hygon BW1000 上訓練。論文稱多數任務與 Qwen3.5-Omni-Flash 相當，multilingual ASR 更好。",
+      "tags": [
+        "music_understanding",
+        "audio language model",
+        "speech recognition",
+        "asr"
+      ],
+      "url": "https://arxiv.org/abs/2610.31292",
+      "source": "arXiv (eess.AS)",
+      "sourceUrl": "https://arxiv.org/abs/2610.31292",
+      "price": null,
+      "vram": "30B-A3B MoE + 0.65B encoder，估計需 4-bit + offload；論文頁未見權重連結",
+      "license": "未標示（僅論文）"
+    },
+    {
+      "id": "20261025-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "eagle-hq/EAGLE-4",
+      "summary": "EAGLE-4 官方推理碼 eagle-harness：一個 drafter 適配所有 batch size 與硬體，依實測成本決定 draft tree 深度，輸出與 target model 完全一致；在 Qwen3.8-27B 上最高 3.4× 生成加速，支援 SGLang、vLLM、TokenSpeed。注意授權是 source-available，非 OSI 開源。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "vllm",
+        "qwen"
+      ],
+      "url": "https://github.com/eagle-hq/EAGLE-4",
+      "source": "GitHub Topics (llm-inference)",
+      "sourceUrl": "https://github.com/eagle-hq/EAGLE-4",
+      "price": null,
+      "vram": "官方 quick start 在 NVIDIA B300 測試（Qwen3.8-27B + draft 下載約 62GB）",
+      "license": "Eagle 4 Source-Available License（非 OSI）"
+    },
+    {
+      "id": "20261025-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "zhongkaifu/TensorSharp：MiniMax-M3.1-Flash Day-1 支援",
+      "summary": ".NET 原生 GGUF 推理引擎，Day-1 支援 MiniMax-M3.1-Flash：MiniMax Sparse Attention 專用 CUDA kernels、vision、tool calling、DSpark speculative decoding、routed MoE experts CPU offload、multi-GPU tensor parallel。作者 8× A40 測試 64K prefill 2,567 tok/s（對比測試的 llama.cpp branch 262 tok/s），TTFT 293.4s → 40.0s。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "speculative decoding",
+        "kv-cache"
+      ],
+      "url": "https://github.com/zhongkaifu/TensorSharp",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xejzuo/day_1_minimaxm31flash_support_in_tensorsharp_gguf/",
+      "price": null,
+      "vram": "MiniMax-M3.1-Flash 約 220B 參數，作者測試為 8× A40；引擎本身可跑較小 GGUF",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20261025-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "briaai/Fibo-2.0-dev",
+      "summary": "Bria FIBO 第二代，首次把 image editing 與 text-to-image 合進單一模型（8.1B），延續 VGL 長結構化 caption 訓練，支援 masked edit、multi-reference、fine-tuning，diffusers 可直接載入。model card 稱 10/20 在 Artificial Analysis open-weights 排行 image editing 第 1、text-to-image 第 2。權重僅限非商用。",
+      "tags": [
+        "image_gen",
+        "image generation",
+        "inpainting",
+        "diffusers"
+      ],
+      "url": "https://huggingface.co/briaai/Fibo-2.0-dev",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/briaai/Fibo-2.0-dev",
+      "price": null,
+      "vram": "8.1B，BF16 權重約 16GB，16GB 卡需 FP8/量化或 offload",
+      "license": "bria-fibo（非商用）"
+    },
+    {
+      "id": "20261025-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-10-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FastVideo/FastH3-Omni-Comfy",
+      "summary": "FastH3 Omni 的 ComfyUI 版（BF16 / INT8 ConvRot），用 prompt 加有序的 image/video/audio references 生成影片與同步音訊，8 steps；需搭配 Qwen3-VL 32B text encoder（BF16/INT8/NVFP4-AWQ）與 MiniMax-H3 video/audio VAE。官方本地路徑為 RTX 5090 / DGX Spark（NVFP4）與 RTX 4090（FP8 + layerwise offload）。",
+      "tags": [
+        "image_gen",
+        "comfyui",
+        "video generation",
+        "audio generation"
+      ],
+      "url": "https://huggingface.co/FastVideo/FastH3-Omni-Comfy",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/FastVideo/FastH3-Omni-Comfy",
+      "price": null,
+      "vram": "官方本地建議 24GB+；16GB 需 INT8/NVFP4 + offload，未驗證",
+      "license": "other"
     }
   ],
-  "lastUpdated": "2026-10-25T08:25:12+08:00",
-  "updatedAt": "2026-10-25T08:25:12+08:00"
+  "lastUpdated": "2026-10-25T10:18:57+08:00",
+  "updatedAt": "2026-10-25T10:18:57+08:00"
 }
