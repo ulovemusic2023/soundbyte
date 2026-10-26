@@ -95216,8 +95216,195 @@
       "price": null,
       "vram": "quantize-ok（26B，需 4-bit 量化才可能塞進 16GB）",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261026-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cloudflare Auto Router（public beta）：逐 request 評估 stakes 自動選模型",
+      "summary": "AI Gateway 新增 cloudflare/auto：先依格式、權限、預算篩候選池，再由跑在 Workers AI 的多頭分類器判斷 14 類任務，並對 complexity、ambiguity、stakes、上下文依賴各打 1–5 分，依「expected quality − adaptive cost penalty」選模型；回應會帶 cf-aig-routed-model / routing-reason 可稽核。Cloudflare 自己公布的 benchmark 裡 router 輸給頂級模型約 10 個百分點的可靠度、但只花約三分之一成本。社群提醒：分類只看最近幾輪（上限 8 KiB），長 agent session 裡一句「go ahead」可能被誤判成低風險。",
+      "tags": [
+        "model-routing",
+        "ai-gateway",
+        "agentic",
+        "llm-evaluation"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-auto-router/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/cloudflare-auto-router/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261026-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "MCP C# SDK 2.0：HTTP 預設 stateless，新增 Multi Round-Trip Requests",
+      "summary": "Microsoft 釋出官方 MCP C# SDK 2.0 stable，實作 2026-07-28 版 MCP spec（SDK 團隊稱是協定上線以來最大改版）：拿掉 initialize handshake 與 Mcp-Session-Id，協定版本與 capabilities 隨每個 request 傳遞，任何 instance 都能接，不需 sticky routing；tools/call 加上 Mcp-Method / Mcp-Name header 讓 gateway 不讀 body 就能路由。server 中途要問 client 改用 MRTR（丟 InputRequiredException、client 帶 inputResponses 重送）；roots / sampling / logging API 標為 deprecated。",
+      "tags": [
+        "paradigm-shift",
+        "mcp",
+        "stateless-mcp",
+        "tool-calling",
+        "api-gateway"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/MCP-CSharp-SDK-Stateless/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/MCP-CSharp-SDK-Stateless/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261026-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Drew Breunig：The State of Context Engineering",
+      "summary": "AGNTCon 演講逐字稿：回顧從「RAG is dead、塞滿長 context 就好」到四種 context 失敗模式（poisoning、distraction、confusion、clash），例如 Gemini 玩 Pokémon 時被權重裡的「iced tea」毒化 to-do list。核心論點是 context engineering 與 harness engineering 本質同一件事，工作在於判斷哪些該交給 deterministic code、哪些留給 probabilistic 的模型。",
+      "tags": [
+        "context-engineering",
+        "harness",
+        "agentic",
+        "context-poisoning"
+      ],
+      "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+      "source": "dbreunig.com",
+      "sourceUrl": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261026-sw-013",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "PaperPilot：純 Rust 的本地 PDF 引擎，同時是 MCP server / CLI / WASM",
+      "summary": "同一個 Rust engine 以多種形態提供：MCP server（讓 Claude Desktop、Cursor 合併、拆分、OCR、壓縮 PDF）、CLI、瀏覽器內 WASM（檔案不上傳）、Tauri + Svelte 桌面 app、localhost REST API。不依賴 Chromium、C++ runtime 或雲端。Show HN 142 分。",
+      "tags": [
+        "rust",
+        "wasm",
+        "mcp",
+        "tool-use"
+      ],
+      "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+      "source": "GitHub / Show HN",
+      "sourceUrl": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261026-sw-014",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Charles Miller：「AI Skills」在 2026 年一文不值",
+      "summary": "作者拿 C 語言 i++ vs ++i 的老迷思類比：prompt engineering 這類幾週就能學會、幾個月就過時的技巧，好用的最後都會被收進產品變成預設，因此在當下以外沒有長期價值；與其搶當早鳥，不如跟上主流、把事情做對。對「該不該投資學 agent 技巧」是個反向觀點。",
+      "tags": [
+        "ai-coding",
+        "prompt-engineering",
+        "developer-experience"
+      ],
+      "url": "https://fishbowl.pastiche.org/2026/10/26/ai-skills",
+      "source": "fishbowl.pastiche.org",
+      "sourceUrl": "https://fishbowl.pastiche.org/2026/10/26/ai-skills",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261026-sw-015",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "IBM CEO：open weight 模型以一成價格做到九成效果，on-prem 很難拒絕",
+      "summary": "Arvind Krishna 在 Q3 法說會表示，2024 年廣泛 benchmark 上 frontier 約 70 分、open model 只有 20–30 分，2025 年底差距縮到 70 對 50；現在 open weight 模型只要 frontier 的 10–25% token 成本、效果約九成，摘要信件、審合約、客服等多數任務都夠用，IBM 因此看到 on-prem AI 基礎設施需求大增。HN 257 分、150 則留言。",
+      "tags": [
+        "open-weights",
+        "on-prem",
+        "llm-cost"
+      ],
+      "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261026-sw-016",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Google 開源 ML Drift：LiteRT 背後的跨平台 GPU 推論引擎",
+      "summary": "ML Drift 是驅動 LiteRT 的 GPU compute engine，以 Apache 2.0 開源，抽象掉 OpenGL ES、OpenCL、Metal、WebGPU 等底層 API 差異，讓開發者能在各式 edge GPU 上自建 CV、音訊、depth 到 generative AI 的推論 runtime。",
+      "tags": [
+        "on-device-inference",
+        "webgpu",
+        "litert",
+        "open-source"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/google-ml-drift/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/google-ml-drift/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261026-sw-017",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "拿掉 Next.js，部落格 Lighthouse 四項全拿 100",
+      "summary": "作者為了做一個像 Bear Blog 一樣快、但功能多一點的多部落格平台（bloffy），最後把最常用的 Next.js 整個移除，分享 caching 等效能優化過程與踩坑。HN 142 分、79 則留言，又一篇「框架 vs. 極簡」的討論。",
+      "tags": [
+        "next.js",
+        "web-performance",
+        "lighthouse"
+      ],
+      "url": "https://korindiehacker.bloffy.blog/en/removing-nextjs-got-my-blog-to-100-on-every-lighthouse-category",
+      "source": "korindiehacker（bloffy blog）",
+      "sourceUrl": "https://korindiehacker.bloffy.blog/en/removing-nextjs-got-my-blog-to-100-on-every-lighthouse-category",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261026-sw-018",
+      "radar": "software-dev",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Apple：eMudhra 八個 intermediate CA 私鑰外洩，macOS 的 curl / git 仍可能信任",
+      "summary": "eMudhra 營運的八個 intermediate CA 私鑰遭竊，其中六個簽發 TLS 憑證，可偽造任意網站的有效憑證；eMudhra 與 Sectigo 已撤銷。Apple 自 10/19 起在 Safari、Mail 與系統框架自動封鎖，但 macOS / Xcode Command Line Tools 的 curl、git 讀 /etc/ssl/cert.pem，在後續更新前仍可能接受，開發者可依文件手動移除相關 root。",
+      "tags": [
+        "supply-chain-security",
+        "tls",
+        "pki",
+        "macos"
+      ],
+      "url": "https://support.apple.com/en-us/149555",
+      "source": "Apple Support",
+      "sourceUrl": "https://support.apple.com/en-us/149555",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-26T10:16:26+08:00",
-  "updatedAt": "2026-10-26T10:16:26+08:00"
+  "lastUpdated": "2026-10-26T10:24:25.223003+00:00",
+  "updatedAt": "2026-10-26T10:24:25.223003+00:00"
 }
