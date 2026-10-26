@@ -95403,8 +95403,203 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261026-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "tencent/Hy-SimulMT-30B-A3B",
+      "summary": "騰訊混元今天正式釋出的即時同步口譯模型，中英雙向 speech-to-speech：邊聽邊翻，同時輸出譯文文字與語音，還能 real-time voice cloning 保留講者聲音。官方在 RealSI 長音檔評測中 StreamLAAL 約 3 秒（比較組最低），GEMBA 分數贏過比較的開源模型與五家商用 API 中的四家。GitHub 附 SimulInfer 推理服務與 SimulTrain 訓練工具；語音輸出與 voice cloning 需另接 TTS 服務。官方已放 GGUF，但 llama.cpp 正式支援尚未 merge，建議等新版。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "speech-to-speech",
+        "simultaneous translation",
+        "gguf",
+        "moe"
+      ],
+      "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xfrgt5/tencenthysimulmt30ba3b_hugging_face/",
+      "price": null,
+      "vram": "30B-A3B MoE；官方 Q4_K_M GGUF 19.75GB、Q8_0 33.3GB，16GB 需部分 experts offload 到 RAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261026-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "boro64/Ternary-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+      "summary": "把 Nota AI 只出 MLX 版的 ternary（1.58-bit）Nemotron 3.5 Lightning 30B-A3B bit-exact 轉成 GGUF（Q2_0），單檔 8.82GB，stock llama.cpp（b11555+）與 PrismML fork 都能跑。作者在 RTX 4070 Ti 12GB 全 GPU 實測：262K context 下 decode 166–172 tok/s、prefill 約 4,600 tok/s，可撐到約 368K context。自稱是 intermediate recovery checkpoint，約 BF16 教師 89% 品質，擅長長文閱讀/檢索/摘要，不是 coding 主力。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "llama.cpp",
+        "quantization",
+        "context length",
+        "moe"
+      ],
+      "url": "https://huggingface.co/boro64/Ternary-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xfqi2d/boro64ternarynemotron35lightning30ba3bgguf/",
+      "price": null,
+      "vram": "權重約 9.5GB，12GB 卡即可全 GPU 跑到 368K context",
+      "license": "other（見 model card）"
+    },
+    {
+      "id": "20261026-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp PR #31028：Qwen 轉檔時合併 tensors",
+      "summary": "Qwen graph 裡有幾組 tensors 共用相同 activations，這個 PR 在 convert 時就把它們的權重合併（概念類似 --fuse-gate-up-exps，但用在較小的 tensors）。作者實測新轉出的 GGUF TG +7%、prefill +5%。已於 10/25 merge；r/LocalLLaMA 的反應是「該重新轉 GGUF 了」——舊 GGUF 不會自動吃到這個加速。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "qwen",
+        "gguf"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31028",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xf716t/qwen_merge_tensors_on_convert_by_am17an_pull/",
+      "price": null,
+      "vram": "不增加 VRAM，需用新版 convert 重新產生 GGUF",
+      "license": "MIT"
+    },
+    {
+      "id": "20261026-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "harlixay7/Kinoloom",
+      "summary": "給 Windows + 8GB NVIDIA 卡 + 64GB RAM 的本地 AI 電影工作室：用任何 LLM 寫故事、Qwen-Image 2.1 生角色與首幀，再用 LTX-2.5（或自備權重的 MiniMax H3）渲染鏡頭並自動剪接，全部跑在 ComfyUI 上。重點是 seamless-chain：把每段結尾以 latents 傳進下一段、整段最後才 decode，減少接縫跳動。作者在 RTX 3070 8GB 上 16 秒 4 段長鏡頭約 28 分鐘。單人專案、只在一台機器測過。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "comfyui",
+        "ltx-2.5"
+      ],
+      "url": "https://github.com/harlixay7/Kinoloom",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xfd1tv/i_built_an_opensource_local_film_studio_for_8_gb/",
+      "price": null,
+      "vram": "8GB VRAM + 64GB RAM（模型部分放 RAM 串流）",
+      "license": "MIT（模型權重各有授權，MiniMax H3 有地區限制）"
+    },
+    {
+      "id": "20261026-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp CVE-2026-116096：Pocket-TTS mmproj 越界寫入",
+      "summary": "NVD 10/25 公告：llama.cpp 的 Pocket-TTS 元件（tools/mtmd/models/pockettts-gen.cpp）處理惡意 mmproj 時會 out-of-bounds write，需本機存取、exploit 已公開，修正版為 b11796。r/LocalLLaMA PSA 補充：最新 release b11871 會以 GGML_ASSERT 中止而非靜默寫入，但根本修正 PR #29360 仍未 merge。有在用 llama.cpp 跑 TTS / 載第三方 mmproj 的話，先升級並只用可信來源的檔案。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "tts_speech",
+        "security"
+      ],
+      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116096",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xfizft/psa_llamacpp_cve2026116096/",
+      "price": null,
+      "vram": "不適用（安全公告）",
+      "license": "MIT（llama.cpp）"
+    },
+    {
+      "id": "20261026-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Ubicloud：修好 vLLM 的 tool-call 準確率",
+      "summary": "HN 熱門文章：Ubicloud 用 vLLM 0.28 服務 Kimi K2.6 時，只有 92% 的 tool call 符合 schema（每 25 次壞 2 次），會汙染 agent 的 context。vLLM 0.31 起提供 constrained decoding 的 server 端開關（--tool-strict-level），開啟後他們在新版 Kimi / DeepSeek 上達到 100% schema 準確率（用 Moonshot 的 K2VV ToolCall benchmark 驗證）。預設沒開是因為部分模型會受影響，自架 agent 後端值得檢查。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "model serving",
+        "tool calling",
+        "constrained decoding"
+      ],
+      "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50242870",
+      "price": null,
+      "vram": "不適用（serving 設定）",
+      "license": "Apache-2.0（vLLM）"
+    },
+    {
+      "id": "20261026-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TokenGate：learned token pruning 讓長 context prefill 最快 11.3×",
+      "summary": "Stanford 與 UC Berkeley 的研究：在既有 LLM（Qwen3-1.7B / Qwen3.5-2B）加一個小 MLP gate + LoRA（r=16），在某層之後只保留重要的 document tokens，被剪掉的 token 不建立 KV。論文稱 TTFT 快 1.4–11.3×、prefill 峰值記憶體降 1.5–3.4×，128K 時最高 13×；時間是在單張 A100、batch 1 量測。程式與 checkpoints 以 Apache-2.0 開源。r/LocalLLaMA 反應偏觀望。",
+      "tags": [
+        "llm_inference",
+        "kv-cache",
+        "context length",
+        "lora",
+        "qwen"
+      ],
+      "url": "https://arxiv.org/abs/2610.26754",
+      "source": "MarkTechPost / r/LocalLLaMA",
+      "sourceUrl": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/",
+      "price": null,
+      "vram": "測試模型 1.7B–2B，16GB 可跑；訓練用 4×A100",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261026-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "IBM CEO：open-weight 模型已經好又便宜，適合 on-prem",
+      "summary": "HN 365 分熱門：IBM 執行長 Arvind Krishna 在 Q3 法說會說，2024 年閉源前沿模型分數約 70、開源只有 20–30，到 2025 年底差距縮到 70 比 50；現在 open-weight 模型約有前沿模型 90% 的效果，token 成本只要 10–25%。他認為多數企業任務（摘要 email、審合約、客服）用便宜模型就夠，兩三個 rack 就能建出實用的 on-prem AI，但難在缺 kernel / 網路 / 快取等工程人才。",
+      "tags": [
+        "model deployment",
+        "on-prem",
+        "open-weight",
+        "infra_runtime"
+      ],
+      "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50238088",
+      "price": null,
+      "vram": "不適用（產業新聞）",
+      "license": "N/A"
+    },
+    {
+      "id": "20261026-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "unslothai/unsloth v0.1.911-beta",
+      "summary": "Unsloth Studio 新版：加入 Scheduled tasks（用本地模型或 API 定時跑 prompt，每次結果存成新 chat）、FLUX 3 圖片編輯、NVIDIA Cosmos3-Edge 文生影片、Images 頁的 Detailer（需 SAM 3），以及 MiniMax-M3.1-Flash（428B MoE、23B active）GGUF。另有每個模型可存 Run 設定 preset、長 prompt 顯示處理進度。",
+      "tags": [
+        "llm_training",
+        "unsloth",
+        "gguf",
+        "image_gen"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.911-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.911-beta",
+      "price": null,
+      "vram": "依模型而定；MiniMax-M3.1-Flash 428B 遠超 16GB",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-10-26T10:24:25.223003+00:00",
-  "updatedAt": "2026-10-26T10:24:25.223003+00:00"
+  "lastUpdated": "2026-10-26T22:34:15+08:00",
+  "updatedAt": "2026-10-26T22:34:15+08:00"
 }
