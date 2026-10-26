@@ -95022,8 +95022,202 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261026-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Magnvs7/Promethevs",
+      "summary": "在 64GB RAM + 單張 12GB NVIDIA 卡的家用 PC 上跑完整 510GB 的 DeepSeek-V4.1-Flash-1017 原始權重。做法是 compress-then-correct：先用 2-bit experts 算，模型不確定時才回頭用完整權重修正；作者實測 code prompt 最高 7.4 tok/s、與 full model 選字一致率 98.3%，附 OpenAI-compatible local server。注意：目前只支援 Windows + RTX 30/40 系列（compute capability 8.6–8.9），5070 Ti（Blackwell）不在清單內，且需約 1.1TB NVMe。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "deepseek",
+        "local llm",
+        "openai compatible"
+      ],
+      "url": "https://github.com/Magnvs7/Promethevs",
+      "source": "GitHub Search (topic:quantization)",
+      "sourceUrl": "https://github.com/Magnvs7/Promethevs",
+      "price": null,
+      "vram": "quantize-ok（12GB GPU + 64GB RAM（官方僅支援 RTX 30/40））",
+      "license": "Apache-2.0 (engine) / CC-BY-4.0 (report)"
+    },
+    {
+      "id": "20261026-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiquidAI/LFM2.5-24B-A2B",
+      "summary": "Liquid AI LFM2.5 家族最大也是最後一顆：24B 總參數、只有約 2.45B active 的 reasoning MoE，主打 on-device agent，官方稱 agentic/tool-use 上可對打 Qwen3.6-35B-A3B（LiveClaw 48.09 vs 38.19），context 131K。官方與 unsloth 都已有 GGUF。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "gguf",
+        "on-device",
+        "agent"
+      ],
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+      "price": null,
+      "vram": "quantize-ok（24B 總參數，Q4 GGUF 約 14GB 上下，16GB 可塞或 offload 部分 experts）",
+      "license": "LFM Open License 1.0"
+    },
+    {
+      "id": "20261026-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "alleyxd/quantpicker",
+      "summary": "一行指令幫你在「自己的 GPU」上實測該跑哪個 GGUF quant：自動下載各 quant、用 llama-bench 測速，再跟 Q8_0 比 KL-divergence，挑出夠接近原模型裡最快的那個。作者在 RTX 5090 上跑 Qwen3-8B，結果 IQ4_XS 比慣用的 Q4_K_M 快 11%、品質幾乎一樣。很適合拿 5070 Ti 直接跑一輪。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "llama.cpp",
+        "quantization",
+        "benchmark"
+      ],
+      "url": "https://github.com/alleyxd/quantpicker",
+      "source": "GitHub Search (topic:quantization)",
+      "sourceUrl": "https://github.com/alleyxd/quantpicker",
+      "price": null,
+      "vram": "local-ready（依受測模型而定，工具本身不吃 VRAM）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261026-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Saganaki22/ComfyUI-Ming-3-tts",
+      "summary": "把 inclusionAI 的 Ming-3.0-tts 原生搬進 ComfyUI，支援 0.5B 與 Tiny 9B（有 INT8 bundle）。內建 voice、voice design、reference 錄音 voice cloning（可接 Whisper 自動轉稿）、情緒與語速/音高控制，Tiny 還能原生多人對話，輸出 44.1kHz mono，附現成 workflow JSON。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "comfyui",
+        "ming-3.0-tts"
+      ],
+      "url": "https://github.com/Saganaki22/ComfyUI-Ming-3-tts",
+      "source": "GitHub Search (topic:text-to-speech)",
+      "sourceUrl": "https://github.com/Saganaki22/ComfyUI-Ming-3-tts",
+      "price": null,
+      "vram": "local-ready（0.5B 輕鬆跑；Tiny 9B 建議用 INT8）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261026-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "destined/hurston-1",
+      "summary": "Show HN 上的開源 TTS，專做 Southern American English 與 African-American / Afro-English 口音，偏 telephony / narrowband 場景。基於 maya-research/maya1 微調、約 3.3B 參數；HF 上是 gated model，要先申請存取。",
+      "tags": [
+        "tts_speech",
+        "accents",
+        "text-to-speech",
+        "telephony"
+      ],
+      "url": "https://huggingface.co/destined/hurston-1",
+      "source": "Hacker News (Show HN)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50227330",
+      "price": null,
+      "vram": "local-ready（約 3.3B，BF16 約 7GB）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261026-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "hiroki-abe-58/ComfyUI-DBS",
+      "summary": "在 ComfyUI 裡用官方 Dynamic Band Splitting（DBS）模型把 soundtrack 拆成 music / sfx / speech 三軌，可去掉影片對白只留配樂與音效，或把對白抽出來做 dubbing、轉錄。模型只有 1.0M / 4.7M 參數，CPU 也能跑，三軌相加可還原輸入。非官方整合。",
+      "tags": [
+        "audio_music_ai",
+        "source separation",
+        "comfyui",
+        "dubbing"
+      ],
+      "url": "https://github.com/hiroki-abe-58/ComfyUI-DBS",
+      "source": "GitHub Search (topic:comfyui)",
+      "sourceUrl": "https://github.com/hiroki-abe-58/ComfyUI-DBS",
+      "price": null,
+      "vram": "local-ready（極小（1–5M 參數），CPU 可跑）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261026-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "lodestones/Kromoss",
+      "summary": "MOSS-Image-Base 在 1024px 的 full fine-tune，架構、pipeline、text encoder（Qwen3.5-9B）與 VAE 都跟 MOSS-Image-SFT 相同，可直接替換。另附兩個從 Base 蒸餾的 8-step turbo LoRA（DMD / DMD2，CFG 1），出圖步數大幅縮短。",
+      "tags": [
+        "image_gen",
+        "diffusers",
+        "lora",
+        "text-to-image",
+        "moss-image"
+      ],
+      "url": "https://huggingface.co/lodestones/Kromoss",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/lodestones/Kromoss",
+      "price": null,
+      "vram": "quantize-ok（約 5B diffusion + 9B text encoder，16GB 需量化或 offload）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261026-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MemTensor/MemT-1.0-Nano",
+      "summary": "記憶型 foundation model：把 dynamic local memory 與可訓練的 hyper memory 做進模型計算本身，推理時不必重讀原始 context。官方稱在 128K 歷史長度下，persistent state 比完整 KV cache 省約 66× 儲存。基於 Qwen3.6-35B-A3B、需 custom_code；社群已有 exl3 量化版。",
+      "tags": [
+        "rag_knowledge",
+        "long-term memory",
+        "kv cache",
+        "moe"
+      ],
+      "url": "https://github.com/MemTensor/MemT-1.0",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/MemTensor/MemT-1.0-Nano",
+      "price": null,
+      "vram": "quantize-ok（35B-A3B，需 4-bit 等級量化（如 exl3）才可能塞進 16GB）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261026-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-10-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "vllm-sr/d3-turbo",
+      "summary": "vLLM Semantic Router 的 Decision 3.0 升級版：26B multimodal decision model，輸入文字/JSON（可帶圖片影片）加上問題，輸出選擇、Yes/No、分數，甚至 bounding box 與影片片段追蹤，適合當 routing / 分類 / 審核的「System 1」。context 預設 32K、可開到 131K，有免費 API 可試。",
+      "tags": [
+        "model serving",
+        "routing",
+        "vllm",
+        "classification",
+        "multimodal"
+      ],
+      "url": "https://github.com/vllm-project/semantic-router",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/vllm-sr/d3-turbo",
+      "price": null,
+      "vram": "quantize-ok（26B，需 4-bit 量化才可能塞進 16GB）",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-10-26T08:23:28+08:00",
-  "updatedAt": "2026-10-26T08:23:28+08:00"
+  "lastUpdated": "2026-10-26T10:16:26+08:00",
+  "updatedAt": "2026-10-26T10:16:26+08:00"
 }
