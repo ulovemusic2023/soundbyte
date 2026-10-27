@@ -95843,6 +95843,172 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261027-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-27",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Ben Thompson「The End of the Internet」：小，才是新的規模",
+      "summary": "Thompson 以 PHP RCE 漏洞事件回顧 2003 年自架 WordPress 的年代，認為那個什麼都能自己來的 Internet 已一去不返。他的框架是 smallness at scale：未來不是一個全球市場，而是無數個 local／private network 裡的小市場，economies of scale 變得沒那麼重要，能不能滿足「社群層級才浮現的新需求」才是機會所在。",
+      "tags": [
+        "smallness-at-scale",
+        "distribution",
+        "community",
+        "aggregation"
+      ],
+      "url": "https://stratechery.com/2026/the-end-of-the-internet/",
+      "source": "Ben Thompson • Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/the-end-of-the-internet/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-27",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly：AI 現在是最集中的時候，接下來只會越來越分散",
+      "summary": "KK 指出 AI 架構進步讓同等能力所需 compute 約每 8 個月減半，再加上 Moore's Law，每單位能力的成本約 6–7 個月減半；幾年內像今天頂尖 LLM 等級的模型就能跑在自己的裝置上。他的判斷是巨型 data center 可能只是第一輪技術的暫時鷹架，99% 的工作需要的 AI 最終會是你自己擁有、自己訓練、反映你自己的 personal AI。",
+      "tags": [
+        "ai-future",
+        "decentralization",
+        "local-ai",
+        "second-order-thinking"
+      ],
+      "url": "https://kk.org/thetechnium/most-improbable-agent-of-you/",
+      "source": "Kevin Kelly • The Technium",
+      "sourceUrl": "https://kk.org/thetechnium/most-improbable-agent-of-you/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-10-27",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Marc Andreessen：先讓混亂發生，再收服混亂",
+      "summary": "pmarca 借用 Andy Grove 的「let chaos reign, then rein in chaos」：一項技術會不會改變世界，最好的徵兆之一就是它是否「混亂地登場」——就像當年員工自帶 PC、自建 spreadsheet 形成 shadow IT。現在員工各自在聊天視窗和個人帳號裡跑 agent 也是同一種訊號，正確做法不是把它關進籠子，而是蓋一個讓這種行為能健康生長的 habitat。",
+      "tags": [
+        "platform-shift",
+        "agentic",
+        "disruption",
+        "leadership"
+      ],
+      "url": "https://www.a16z.news/p/let-chaos-reign-and-then-rein-in",
+      "source": "Marc Andreessen • a16z news",
+      "sourceUrl": "https://www.a16z.news/p/let-chaos-reign-and-then-rein-in",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-10-27",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "levelsio 的生存論：既然 Big AI 會吃掉軟體，就當它的共同擁有者",
+      "summary": "Pieter Levels 認為從基本經濟學來看，軟體業對所有人都是 race to the bottom，真正贏的只有 Big AI 和 Big Tech；它們會成為 exponential intelligence 的唯一擁有者，取代很多小生意後再賣回給我們。他的對策是 hedge：把自己變成它們的股東，並說自己正在照做（加碼 Google）。對 solo founder 來說，這是把「被顛覆風險」轉成「持有上行」的 asymmetric 思考。",
+      "tags": [
+        "solo-founder",
+        "asymmetric-upside",
+        "ai-displacement",
+        "hedging"
+      ],
+      "url": "https://x.com/levelsio/status/2114792905973838057",
+      "source": "Pieter Levels",
+      "sourceUrl": "https://x.com/levelsio/status/2114792905973838057",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-10-27",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Replit 的 Self-Driving Company：人定方向，agent 負責執行",
+      "summary": "Amjad Masad 從 Coase「公司為什麼存在」的交易成本理論出發：公司本身的協調成本（會議、部門、層級）一直被當成必要之惡，而 agent 能吃掉大量執行與協調。Self-Driving Company 裡人負責定目標、判斷、品味和承擔責任，agent 在清楚的權限邊界內執行、必要時請求核准。Replit 自己的經驗是工程師程式碼產出在 2026 上半年近三倍，而 review 時間與事故數持平，員工感覺「被升職，而不是被取代」。",
+      "tags": [
+        "organizational-design",
+        "agentic",
+        "self-driving-company",
+        "human-in-the-loop"
+      ],
+      "url": "https://replit.com/blog/rise-of-self-driving-company",
+      "source": "Amjad Masad • Replit Blog",
+      "sourceUrl": "https://replit.com/blog/rise-of-self-driving-company",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-10-27",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Rob Snyder 的 PULL 框架：找 PMF 是在找「拉力」，不是推銷",
+      "summary": "Rob Snyder 輔導過 50+ 家 startup 從 0 做到 $1M ARR，自己也曾花兩年硬推市場不要的產品。他的 PULL 框架拆成 Project（客戶本來就在推進的專案）、Unavoidable（非做不可）、List of options（他們正在比較的選項）、Limitations（現有選項的限制）——找到這四點同時成立的人，產品才會被「拉」走。節目也談到他為什麼不建議找 design partners。",
+      "tags": [
+        "pmf",
+        "go-to-market",
+        "customer-discovery"
+      ],
+      "url": "https://thephysicsofstartups.substack.com/p/the-pull-framework",
+      "source": "Rob Snyder • Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-10-27",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Dan Koe：Influencer 已死，接下來是 Age of Experience",
+      "summary": "Dan Koe 觀察到，現在能做出百萬級 launch 的，常常是沒有技術背景、生活不華麗的普通人，用 30 天挑戰這類簡單 digital product，先建 waitlist、發驗證過的內容、再對 waitlist 開賣。關鍵不是粉絲數，而是 relatability：大家買單的是「跟自己處境相同的人」的經驗。他的建議是：只要你有一段故事、一個小技能，未來 12 個月就是窗口。",
+      "tags": [
+        "creator-economy",
+        "digital-product",
+        "personal-brand",
+        "build-in-public"
+      ],
+      "url": "https://letters.thedankoe.com/p/the-influencer-is-dead-the-age-of",
+      "source": "Dan Koe • Dan Koe Letters",
+      "sourceUrl": "https://letters.thedankoe.com/p/the-influencer-is-dead-the-age-of",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-10-27",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Paul Graham：不讀不寫，會像當年抽菸一樣普遍",
+      "summary": "PG 預言 AI 時代不讀不寫將變得像抽菸一樣普遍，而它的代價可能不像抽菸那麼明顯，所以人們不一定會醒悟。",
+      "tags": [
+        "writing",
+        "thinking",
+        "ai-age"
+      ],
+      "url": "https://x.com/paulg/status/2114787151619485852",
+      "source": "Paul Graham",
+      "sourceUrl": "https://x.com/paulg/status/2114787151619485852",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-26T22:34:15+08:00",
