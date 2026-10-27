@@ -96224,8 +96224,218 @@
       "price": null,
       "vram": "N/A",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261027-sw-013",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Superset 改名 Paradev，拿 $11.5M seed：一次跑上百個 coding agent 的工作台",
+      "summary": "原 Superset 10/26 更名 Paradev、釋出 desktop v2.0.0，並宣布由 Union Square Ventures 領投 $11.5M seed（YC、BoxGroup、Paul Graham 等跟投）。產品定位是 parallel agent orchestration：自帶 Claude Code、Codex、Pi 等 harness 與既有算力，Paradev 負責在隔離 workspace 中組織、監看與 review。公司自稱已有數十萬開發者、八分之一 Fortune 500 使用（官方說法）；superset CLI 繼續可用，paradev 為新 alias。",
+      "tags": [
+        "coding-agent",
+        "parallel-agents",
+        "agent-orchestration",
+        "developer-experience"
+      ],
+      "url": "https://www.usv.com/writing/paradev",
+      "source": "Paradev Blog",
+      "sourceUrl": "https://paradev.com/blog/superset-is-now-paradev",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-014",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "AWS 用 AI agent 分流 Linux kernel CVE：先 script 濾掉 70%，再由 agent 分類、人類覆核",
+      "summary": "AWS 維護 EC2 底層 kernel 的團隊在 Linux Plumbers 分享：kernel 成為 CNA 後 CVE 從每週約 2 個暴增到每天約 16 個。流程先用不含 AI 的 script 依版本範圍與實際編進 image 的檔案剔除約 70%，剩下交給 agent，輸入 source tree、各平台 config、threat model 與 severity rubric，輸出 subsystem / 漏洞類型 / attack vector 表格（約 3.4 秒/筆），再由兩位工程師覆核。團隊把 agent 當「very fancy classifier」，非正式估計 5–10% 判斷有問題，因此不打算拿掉人工 review。",
+      "tags": [
+        "ai agent",
+        "ai-cve-triage",
+        "human-in-the-loop",
+        "linux-kernel",
+        "security"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/aws-ai-agents-linux-kernel-cves/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/aws-ai-agents-linux-kernel-cves/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-015",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "DigitalOcean 推出 Learning Services 與 Agent Data Services：把 trace 變成讓 agent 自我改進的資料",
+      "summary": "DigitalOcean 公開預覽兩項服務：Learning Services 由 Insights（記錄 agent 活動）、Signals（找出失敗與效能缺口）、Simulations（部署前用模擬對話測試改動）組成；Agent Data Services 則索引文件、影音、logs 與 agent sessions，附 governance 與存取控制。Inference Router 會依任務在成本與品質間選模型，並在新模型版本上重跑同一組 evals；Optimizer 只在客戶明確 opt-in 時才用其資料訓練。",
+      "tags": [
+        "ai agent",
+        "evals",
+        "agent-learning-loop",
+        "observability"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/digitalocean-self-improving-ai/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/digitalocean-self-improving-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-016",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "OpenCode v2.2.0：plugin 可掛 keyed session instructions，不再為改 system prompt 打爆 prompt cache",
+      "summary": "開源 coding agent OpenCode 2.2.0 讓 plugin 透過 ctx.session.instructions.entry.put/list/remove 附加或更新具 key 的 session 指令：改動以小 update 形式在下一步注入，不改 system prompt、不觸發額外 model turn，且能撐過 compaction 與 revert。另新增可依 provider/model 設定 prompt cache TTL、實驗性 desktop plugins 與 image / decision generation API；breaking change 包括移除 OpenCode GitHub Action、@opencode/ai root 改為 Promise API。",
+      "tags": [
+        "coding-agent",
+        "harness",
+        "prompt-caching",
+        "context-engineering"
+      ],
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v2.2.0",
+      "source": "GitHub (anomalyco/opencode)",
+      "sourceUrl": "https://github.com/anomalyco/opencode/releases/tag/v2.2.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-017",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "The Mythical Man-Month in the Age of AI：Brooks 定律沒消失，只是突變了",
+      "summary": "Jan van den Berg 檢視 Brooks's Law 在 agent 時代是否仍成立：onboarding、站會等人力協調成本確實消失，但「九個 agent 也無法一個月生出小孩」——循序工作仍是循序的，overhead 從管人轉成管 agent，仍需有人定義 done、review、抓 hallucination、把碎片拼起來。他的 2026 版定律：「在需求不清的專案加 agent，只會更快得到錯的答案。」HN 150+ 分、110+ 留言。",
+      "tags": [
+        "ai-assisted development",
+        "multi-agent",
+        "engineering-management"
+      ],
+      "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "source": "j11g.com",
+      "sourceUrl": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-018",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 宣布 AI 證出三項重大結果：ETH 被推翻、Kakeya 全維度成立、QCD 存在性證明",
+      "summary": "OpenAI 10/26 公布內部模型產出的三項結果：(1) 證明 local smoothing conjecture 在所有維度成立，連帶解決 Kakeya 與 Stein restriction conjecture；(2) 給出 k-CNF 精確計數的 deterministic 演算法，以 subexponential 時間、polynomial space 執行，推翻 Exponential Time Hypothesis（已有 Lean 形式化，由 ETH 原提出者 Impagliazzo、Paturi 與 Ryan Williams 帶隊驗證）；(3) 4 維含 gauge field 與 fermion 的 QFT（含 QCD 與 Yang–Mills）存在性證明，由 David Gross 等人主導、暫不公開 AI 產出。OpenAI 表示不求學術 credit。HN 兩串合計 1,500+ 分。注意：subexponential 不等於 polynomial，與 P vs NP 無直接結論。",
+      "tags": [
+        "paradigm-shift",
+        "ai-for-science",
+        "lean-formalization",
+        "complexity-theory",
+        "reasoning"
+      ],
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "source": "OpenAI",
+      "sourceUrl": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-019",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Atlassian DevEx 2026：自稱每週靠 AI 省 10 小時以上的開發者，一年內從 68% 掉到 26%",
+      "summary": "Atlassian 調查 1,155 名 IC 與 405 名 engineering leader：95% 開發者所在組織已在用 AI，87% 認為 AI 讓出貨更快，但只有 28% 覺得 friction 明顯減少。49% 每週花 4 小時以上「管理 AI 工具」，65% 花時間修正偏離原意的 AI 產出；60% 說 AI 使用量被當成生產力指標，41% 坦承有時為了符合期待而多用 AI。CTO Taroon Mandhana：瓶頸已轉移到「管理 AI 的工作」。報告強調為自評、非因果證據。",
+      "tags": [
+        "ai-assisted development",
+        "developer experience",
+        "dx",
+        "engineering-metrics"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/atlassian-devex-2026/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/atlassian-devex-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-020",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "CPython 實驗性 JIT 將被移除：PEP 836 撤回",
+      "summary": "Steering Council 6 月要求 JIT 團隊在六個月內提出並通過 standards-track PEP，否則從 main 移除。Brandt Bucher、Savannah Ostrowski、Ken Jin 起草 PEP 836，council 9 月回覆列出十項疑慮（平台一致性、使用者可見行為差異、security review、相容性測試太晚等）。10/19 作者以「沒有個人餘力推進」撤回 PEP，JIT 預計在 3.16 開發週期初期自 main 移除；reference implementation 會留給社群接手。",
+      "tags": [
+        "python",
+        "jit",
+        "cpython",
+        "language-runtime"
+      ],
+      "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+      "source": "LWN.net",
+      "sourceUrl": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-021",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenTofu 1.13：module 作者可在 plan 階段用 type / value hint 減少 unknown values",
+      "summary": "OpenTofu 1.13 新增函式，讓 module 作者在 count 或 for_each key 原本會是 unknown 時提供型別與值的提示，planner 就能先算出要建幾個 resource instance，其餘屬性留到 apply 再決定。設計由 maintainer Martin Atkins 以 RFC 提出、8 月合併；起因是 yamldecode 這類可回傳多種型別（含 null）的輸入會讓 plan 卡住。",
+      "tags": [
+        "infrastructure as code",
+        "opentofu",
+        "terraform"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/opentofu-1-13-unknown-values/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/opentofu-1-13-unknown-values/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-022",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Show HN：Hob — 開源、在本機跑 open-weight 模型的 Claude Cowork / ChatGPT 替代品",
+      "summary": "Frigade 開源的桌面 app（Mac / Windows / Linux，MIT 授權），會依電腦規格自動挑選並設定能跑得動的 open-weight 模型（如 Gemma、gpt-oss），可離線處理 PDF 填寫與文件工作；repo topics 標示基於 llama-cpp、支援 MCP。Show HN 140+ 分。",
+      "tags": [
+        "local-llm",
+        "mcp",
+        "open-source",
+        "desktop-agent"
+      ],
+      "url": "https://hob.chat",
+      "source": "GitHub / Show HN",
+      "sourceUrl": "https://github.com/FrigadeHQ/hob",
+      "price": null,
+      "vram": null,
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-27T10:19:04+08:00",
-  "updatedAt": "2026-10-27T10:19:04+08:00"
+  "lastUpdated": "2026-10-27T18:34:13+08:00",
+  "updatedAt": "2026-10-27T18:34:13+08:00"
 }
