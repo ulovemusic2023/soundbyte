@@ -96434,8 +96434,179 @@
       "price": null,
       "vram": null,
       "license": "MIT"
+    },
+    {
+      "id": "20261027-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "maya-research/maya2-native（Maya 2 Native TTS）",
+      "summary": "Maya Research 10/27 正式開源的 streaming TTS：11 種印度語言 + English、20 個內建聲音，3–10 秒參考音檔就能 zero-shot voice cloning，還能跨語言（Hindi 參考音→Tamil 語音）。2.5B 參數（base model Qwen3-1.7B-Base），24 kHz、80 ms frame streaming，附 Python API、OpenAI-compatible speech endpoint 與 WebSocket，有 continuous batching + CUDA graphs。CEO 在 X 宣布的貼文約 1.8k likes；model card 列 VoiceArena Hindi real-time 榜第 2。不支援中文，但做多語 voice agent 的 serving 架構值得參考。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "zero-shot tts",
+        "multilingual tts",
+        "streaming"
+      ],
+      "url": "https://huggingface.co/maya-research/maya2-native",
+      "source": "X / Hugging Face",
+      "sourceUrl": "https://x.com/Dheemanthredy/status/2115003351637328204",
+      "price": null,
+      "vram": "官方實測：單一 seat 穩定 7.7GB、載入峰值 9.2GB（另加約 0.5GB CUDA context），32 seats 約 15.8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261027-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "L-Forster/open-jet：一張 RTX 3090 同時跑 4 個 coding agents",
+      "summary": "OpenJet 是離線 coding agent，自帶 Qwen3.8-27B Q4_K_M 的 CUDA megakernel engine。新版支援單 GPU 同時服務多個 agents：每個 decode step 把所有 agents 的 token 和 MTP draft 疊成同一個 batch，權重只從 VRAM 讀一次，4 agents 合計約 256–288 tok/s（llama-server --parallel 4 約 72–80 tok/s）；132K 的 q8_0 KV pool 是 paged、共享 system prompt 只存一份，新 prompt 進來時其他 agent 不會卡住。這些數字都是作者自己在 RTX 3090 上測的。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "speculative decoding",
+        "kv-cache",
+        "coding agent",
+        "cuda"
+      ],
+      "url": "https://github.com/L-Forster/open-jet",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xgs8hp/4_coding_agents_on_one_rtx_3090_290_toks_total/",
+      "price": null,
+      "vram": "megakernel 需 24GB+ RTX 30/40/50（Qwen3.8-27B Q4_K_M 約 17GB）；16GB 卡會退回 llama.cpp、改用較小模型",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261027-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TensorSharp 作者實測：Qwen3.8-27B 在 RTX 5090 上六個 inference engine 開／關 DFlash2",
+      "summary": "同一張 RTX 5090 32GB 比較 llama.cpp、vLLM、SGLang、NInfer、velox-inferer、TensorSharp。單請求不開 speculative decoding 時 llama.cpp 最快（84.2 tok/s）；開 DFlash2 後 NInfer 280.5、vLLM 247.8、llama.cpp 212.9；四路併發 NInfer 488、TensorSharp 445 tok/s。32K prompt 時 llama.cpp 開 DFlash2 後 TTFT 從 5.01s 變成 8.16s。作者自己也提醒：各 engine 用的 quant、drafter、KV 格式都不同，所以比的是整套配置，不是單純比 runtime；而且作者就是 TensorSharp 的開發者。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "llama.cpp",
+        "vllm",
+        "qwen",
+        "benchmark"
+      ],
+      "url": "https://github.com/zhongkaifu/TensorSharp",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xgkzb9/qwen38_27b_on_one_rtx_5090_six_inference_engines/",
+      "price": null,
+      "vram": "測試用 RTX 5090 32GB；27B 的 NVFP4／Q4 加 drafter 超過 16GB，要用更低 bit 的 quant 或部分 offload",
+      "license": "BSD-3-Clause（TensorSharp）"
+    },
+    {
+      "id": "20261027-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "inclusionAI/Ling-3.1-flash-1019（+ Ling-3.1-flash-base）",
+      "summary": "Ant 的 Ling-3.1-flash 更新版權重 10/27 上架：560B 總參數、每 token 25B active、1M context。官方數據：Artificial Analysis Intelligence Index 41→44、AutomationBench-AA 62%→68%、SciCode 54%→57%。同時釋出 BF16 base model，可以拿來自己 post-train。r/LocalLLaMA 提醒：1019 README 的 SGLang 範例 model path 還是舊的 inclusionAI/Ling-3.1-flash，複製時要改。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "context length",
+        "open weights"
+      ],
+      "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xgrr8n/ling31flash1019_weights_are_out_and_they_released/",
+      "price": null,
+      "vram": "560B MoE；官方 recipe 是 H100/H200/B200/GB300 多卡",
+      "license": "MIT"
+    },
+    {
+      "id": "20261027-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "baidu/Unlimited-OCR-2",
+      "summary": "百度 Unlimited OCR 第二版 10/27 發布，主打超長文件一次 parse 完。新的 SR-SWA（Sparse Reference Sliding Window Attention）把文字和影像之間的 attention 壓成固定大小的 reference 集合（例如 512 tokens），所以文件再長，每步 decode 的延遲和記憶體都幾乎不變。官方稱在 MPDocBench 與百頁級的 MarathonDocBench（同步釋出）都是 SOTA。支援 Transformers（trust_remote_code）與 SGLang。",
+      "tags": [
+        "cv_ocr",
+        "ocr",
+        "document ai",
+        "document parsing"
+      ],
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xgnbtq/baiduunlimitedocr2_hugging_face/",
+      "price": null,
+      "vram": "約 3.3B 參數，BF16 權重約 7GB，16GB 可跑（官方測試環境是 A800-80GB）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261027-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Comfy-Org/ComfyUI v0.43.0",
+      "summary": "10/27 發布，r/StableDiffusion 有討論串。本地端重點：Comfy-Aimdo 0.6.0 加上 Dynamic VRAM KV caches（KV cache 可以同時放在 VRAM 和 RAM）、Qwen 3.x 的 adaptive tree MTP 加速、MOSS-Image 支援 rope scaling／color-depth control／edit LoRA，並降低峰值記憶體，另外新增 Fibo 2.0 支援、Flux2 VAE fuse，以及修正 Gemma 4 31B 的 global attention。其餘大多是雲端 Partner Nodes（FLUX 3 Max、Kling 4.0、HeyGen Voice 等）。",
+      "tags": [
+        "image_gen",
+        "comfyui",
+        "kv-cache",
+        "video generation"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0",
+      "price": null,
+      "vram": "不變；Dynamic VRAM 讓 KV cache 可以溢到 RAM，對 16GB 卡有利",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261027-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "huggingface/diffusers v0.42.1：修補 from_pretrained RCE（GHSA-4prv-5hj7-c2xr）",
+      "summary": "安全性更新（advisory 嚴重度 high，CVSS 7）。model_index.json 等 config 裡的 library 名稱沒有驗證就傳給 importlib，所以就算設了 trust_remote_code=False 或 DIFFUSERS_DISABLE_REMOTE_CODE=1，repo 內附的 .py 還是會被執行。前提是 repo 目錄位於 sys.path 底下，例如 git clone／hf download --local-dir 之後在上層目錄跑 script；直接用 Hub id 冷載入不會觸發，PYTHONSAFEPATH=1 可以擋。0.42.0 的使用者都建議升級。",
+      "tags": [
+        "image_gen",
+        "diffusers",
+        "security"
+      ],
+      "url": "https://github.com/huggingface/diffusers/security/advisories/GHSA-4prv-5hj7-c2xr",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/diffusers/releases/tag/v0.42.1",
+      "price": null,
+      "vram": "不適用（安全更新）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261027-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "FrigadeHQ/hob",
+      "summary": "Show HN 154 分：開源、可離線使用的桌面 AI app，定位是 Claude Cowork／ChatGPT 的本地替代品。會依你電腦的硬體自動挑一個放得下的 open-weight 模型（README 舉 Gemma、gpt-oss）並設定好，能處理文件、填 PDF、讀 spreadsheet 畫圖表；支援 Mac／Windows／Linux。",
+      "tags": [
+        "ai_devtools",
+        "local inference",
+        "on-device"
+      ],
+      "url": "https://github.com/FrigadeHQ/hob",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50246238",
+      "price": null,
+      "vram": "依硬體自動選模型",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-27T18:34:13+08:00",
-  "updatedAt": "2026-10-27T18:34:13+08:00"
+  "lastUpdated": "2026-10-27T22:29:42+08:00",
+  "updatedAt": "2026-10-27T22:29:42+08:00"
 }
