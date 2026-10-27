@@ -96009,8 +96009,223 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261027-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Esmerubphire/astrbot_plugin_feiyu_voice",
+      "summary": "可本機部署的「肥魚」聲音服務：兩條說話聲線（CosyVoice3 TTS）、RVC v1 換聲，加上 SoulX-Singer 按 MIDI／ABC 譜唱歌，用統一 HTTP 介面接到 AstrBot 或其他 Bot。README 也寫了交給 agent 跑 MSST 分離、換聲、混音的翻唱流程；作者在 RTX 5090 Laptop 上實測過 TTS、RVC 和按譜唱歌。",
+      "tags": [
+        "svc_voice",
+        "rvc",
+        "tts_speech",
+        "singing voice synthesis"
+      ],
+      "url": "https://github.com/Esmerubphire/astrbot_plugin_feiyu_voice",
+      "source": "GitHub Search",
+      "sourceUrl": "https://github.com/Esmerubphire/astrbot_plugin_feiyu_voice",
+      "price": null,
+      "vram": "local-ready（RVC v1 + CosyVoice3，估計 16GB 內可跑；作者稱占用以本機診斷為準）",
+      "license": "未標示（各元件依各自條款，見 NOTICE.md）"
+    },
+    {
+      "id": "20261027-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "huggingface/transformers v5.21",
+      "summary": "新增 Kyutai Pocket TTS（100M、CPU 上也比即時快、可從錄音 clone 聲音）和它的 audio tokenizer、Gradium Phonon TTS、Recursive 的 Flint MoE、MiniCPM-OCR、UltraVBert。另外 QuantizedCache 多了 fp8 backend，KV cache 以 float8_e4m3fn 儲存，長 context 更省 VRAM。",
+      "tags": [
+        "tts_speech",
+        "pocket tts",
+        "kv-cache",
+        "fp8",
+        "ocr"
+      ],
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.21",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/transformers/releases/tag/v5.21",
+      "price": null,
+      "vram": "local-ready（Pocket TTS 100M 可在 CPU 跑）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261027-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare：GLM-5.3 Workers AI 跨請求 KV cache 外洩事件",
+      "summary": "Cloudflare 把 GLM-5.3 開到 1,048,576 token context，但 prefill 的 KV pool 只放得下 681,280 tokens；SGLang 在 disaggregated prefill/decode 模式下把超長請求換成 one-token placeholder 卻沒中止，decode 端就讀到殘留的舊 KV cache，共 155 個回應混入別人的資料。修法是把 pool 擴到約 2.04M tokens，並在 SGLang 上游送 PR #38704 讓被拒的請求在 KV 交接前就退出。自架 SGLang 做 PD 分離的人值得看。",
+      "tags": [
+        "llm_inference",
+        "kv-cache",
+        "sglang",
+        "disaggregated serving",
+        "security"
+      ],
+      "url": "https://github.com/sgl-project/sglang/pull/38704",
+      "source": "Cloudflare Blog / Hacker News",
+      "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "price": null,
+      "vram": "cloud-only（伺服器端部署事件）",
+      "license": "N/A"
+    },
+    {
+      "id": "20261027-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ccore/Qwen3.5-4B-3D-Coder",
+      "summary": "個人 fine-tune 的 Qwen3.5-4B，主打一般 coding 加上用 Three.js 生成互動 3D 場景，目前是 early preview。10/26 更新了 Q4_K_M 和 Q8_0 GGUF 修正 layer 問題；作者說訓練預計 10/28 完成，之後會放出 FP16 權重、全套量化和訓練資料集。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "gguf",
+        "code generation",
+        "threejs"
+      ],
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "price": null,
+      "vram": "local-ready（4B，Q4/Q8 GGUF）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261027-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ollama/ollama v0.40.12-rc0",
+      "summary": "RC 版：MLX backend 加入 DFlash2 支援、gemma/flint/laguna 的 prompt 處理加速，Gemma 4 小型 vision tower 保留更多影像細節，並把內建 llama.cpp 升到 b11901。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "llama.cpp",
+        "mlx"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12-rc0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.12-rc0",
+      "price": null,
+      "vram": "local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20261027-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "InternScience/Sage-A1.5",
+      "summary": "上海 AI Lab 的 35B MoE agentic 模型，基於 Qwen3.6-35B-A3B 和 Agents-A1，主打長時程科學問題：能分派 subagent 平行工作、自己檢查進度與證據、走不通就換策略。權重是 Transformers 格式，可用 vLLM、SGLang 跑，附 technical report。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "moe",
+        "agentic",
+        "tool-use"
+      ],
+      "url": "https://huggingface.co/InternScience/Sage-A1.5",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/InternScience/Sage-A1.5",
+      "price": null,
+      "vram": "quantize-ok（35B MoE，需 4-bit 量化加部分 CPU offload）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261027-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Sebastian Raschka：從零打造 Reasoning Model 影片課",
+      "summary": "8 支影片、超過 11 小時的 coding 課，從 pre-trained LLM 出發，用 Python 和 PyTorch 實作 evaluation、inference-time scaling、reinforcement learning 和 distillation，是他《Build a Reasoning Model (From Scratch)》的配套課程。HN 564 分，今天社群最熱門的 LLM 學習資源。",
+      "tags": [
+        "llm_training",
+        "reasoning",
+        "rlhf",
+        "distillation",
+        "pytorch"
+      ],
+      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+      "source": "Hacker News",
+      "sourceUrl": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+      "price": null,
+      "vram": "local-ready（教學用小模型，估計）",
+      "license": "N/A"
+    },
+    {
+      "id": "20261027-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "kapa.ai：Retrieval 的瓶頸正從「找到」轉向「挑選」",
+      "summary": "kapa.ai 在自家 production retrieval pipeline 上追蹤每個 gold chunk，發現搜尋已能找到大部分需要的內容，但被找到的 gold chunk 裡將近三分之一最後沒送進模型。結論是 RAG 接下來該花力氣在 reranking 和選擇，而不只是 embedding 召回。",
+      "tags": [
+        "rag_knowledge",
+        "rag",
+        "reranker",
+        "retrieval"
+      ],
+      "url": "https://www.kapa.ai/blog/retrieval-bottleneck",
+      "source": "Hacker News",
+      "sourceUrl": "https://www.kapa.ai/blog/retrieval-bottleneck",
+      "price": null,
+      "vram": "N/A",
+      "license": "N/A"
+    },
+    {
+      "id": "20261027-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HuggingFaceBio/Carbon-X",
+      "summary": "HF Bio 的 14.8B DNA + 文字語言模型，從 Qwen3-14B 出發，做了 302B tokens mid-training，再加 SFT 和 RL with verifiable rewards。直接在對話裡貼 DNA 就能預測突變致病性、調控區等，官方稱五項 DNA benchmark 平均 66.7%，接近 GPT-6.1 Sol，成本約 1/1,800。",
+      "tags": [
+        "llm_training",
+        "sft",
+        "qwen",
+        "genomics"
+      ],
+      "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+      "price": null,
+      "vram": "quantize-ok（14.8B，bf16 需約 30GB，4-bit 可進 16GB）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261027-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "usestrix/firewall",
+      "summary": "LiteLLM backdoor 事件後 Strix 開源的 OS-level 套件防火牆：在本機比對惡意套件 blocklist（也參考 OSSF、OSV），在 npm、PyPI、cargo、go、gem 安裝前就攔下，新版本預設先擋一天。macOS、Windows 支援全機模式，Linux 目前用 command prefix 模式。",
+      "tags": [
+        "ai_devtools",
+        "supply chain",
+        "pypi",
+        "security"
+      ],
+      "url": "https://github.com/usestrix/firewall",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/usestrix/firewall",
+      "price": null,
+      "vram": "N/A",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-10-26T22:34:15+08:00",
-  "updatedAt": "2026-10-26T22:34:15+08:00"
+  "lastUpdated": "2026-10-27T10:19:04+08:00",
+  "updatedAt": "2026-10-27T10:19:04+08:00"
 }
