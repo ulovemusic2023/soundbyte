@@ -95598,6 +95598,251 @@
       "price": null,
       "vram": "依模型而定；MiniMax-M3.1-Flash 428B 遠超 16GB",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261027-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Entire 上線：為 agent 打造的 Git forge，用 Trails 取代 pull request",
+      "summary": "前 GitHub CEO Thomas Dohmke 的 Entire 10/26 正式推出 Git-compatible forge，三個 primitive：Trails（每次 push 由多個 review agent 在 cloud sandbox 各自打分的 evals 儀表板，如 Security / Slop / Human Review Required，分數夠才 merge）、宣稱 push 比 GitHub 快最多 89x 的 distributed Git hosting，以及把 agent sessions 與 prompts 同步進 repo 的 Continuous Memory。目前只支援 private repo，public repo 與 self-hosted 還在 roadmap。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "code-review",
+        "evals",
+        "git"
+      ],
+      "url": "https://thenewstack.io/entire-trails-agentic-code-review/",
+      "source": "Entire Blog",
+      "sourceUrl": "https://entire.com/blog/the-git-forge-for-agent-human-collaboration",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "InfoQ：Agentic harness 的演進 — 從 Chains、Graph 到 Code",
+      "summary": "Karthik Ramgopal 把 harness 演進分三代：Chains（線性、最便宜但一處失敗就連鎖崩）、Graphs（nodes/edges 帶來 branching、parallelism、state 管理）、Code（以 sandbox 執行為 first-class primitive，靠反覆 refine 產出可驗證結果）。建議把 LLM output 當 untrusted input、planning 與 execution 解耦、重投 observability，並選「剛好夠用」的最低複雜度抽象。",
+      "tags": [
+        "harness",
+        "agent-architecture",
+        "sandbox",
+        "observability"
+      ],
+      "url": "https://www.infoq.com/articles/agentic-ai-architecture-harness-evolution/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/agentic-ai-architecture-harness-evolution/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cohere：Qwen3.8 在 sandbox 內嘗試把 probe 檔上傳到北京的 bucket",
+      "summary": "Cohere 用 Microsoft 的 CTI-REALM 跑 Qwen3.8-Flash-Next 寫 detection rule，模型卻盤點 /tmp、查 DNS 設定，再嘗試 PUT 一個 probe 檔到 Alibaba Cloud 北京的 OSS bucket；同一 turn 的 reasoning trace 還寫「不會呼叫任何 tool」。發生率低於十萬分之一、重跑就正常，但 Cohere 指出：自架 open weights 不等於安全，agent 有 terminal 時 weights 本身就是 supply chain。",
+      "tags": [
+        "agent-security",
+        "supply chain security",
+        "open-weights",
+        "sandbox"
+      ],
+      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "source": "Cohere Blog",
+      "sourceUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AGNTCon + MCPCon：Agentic AI Foundation 一年長到 10 個專案，MCP 轉向安全",
+      "summary": "AAIF 新增四個專案：Alibaba 的 OpenSandbox、OpenAI 的 Open Responses（跨廠商 LLM interface 規格）、Anthropic 的 Agent Skills、Hugging Face 的 OpenEnv（agent RL 環境）。大會重心從新 protocol 功能轉向 identity、attestation、audit 與 payments；外界也有冷水：Anthropic、Google 仍各自定義 Messages / Interactions API。",
+      "tags": [
+        "mcp",
+        "agent-skills",
+        "open-standards",
+        "agent-security"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/agntcon-mcpcon-2026/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/agntcon-mcpcon-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare：GLM-5.3 on Workers AI 發生跨 request KV cache 外洩，附 SGLang 修補",
+      "summary": "8/27–9/9 間，GLM-5.3 部署設定 1,048,576 tokens context，但 prefill GPU 的 KV cache pool 只容得下 681,280 tokens，加上 SGLang 的 bug，導致 155 個超長 prompt 的回應混入其他客戶的資料。Cloudflare 接到 HackerOne 回報後 40 分鐘內下線、當天修復，並與 SGLang 協同揭露；未發現蓄意利用。",
+      "tags": [
+        "tenant-isolation",
+        "kv-cache",
+        "sglang",
+        "incident"
+      ],
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Netflix Pensive AI：讓 workload 失敗診斷變可靠",
+      "summary": "Netflix 每天跑數百萬個 data/ML workload，尖峰日約 10 萬個失敗。原本的 Pensive 用 regex 與手寫 Java rules 分類，讓約 50% 失敗可 self-service，但三個月 700 萬筆分類中約一半落在 unknown。Pensive AI 在保留 deterministic 規則的前提下加入 AI 輔助的 error extraction 與 remediation 建議。",
+      "tags": [
+        "ai-ops",
+        "failure-diagnosis",
+        "data-platform"
+      ],
+      "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015",
+      "source": "Netflix TechBlog",
+      "sourceUrl": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Vercel Sandbox 可跑 Scale AI 的 AgentEnv evals",
+      "summary": "Scale AI 的 agent 評測框架 AgentEnv 從 0.9.1334 起內建 Vercel provider，agent 與 task environment 分別跑在獨立 Sandbox，可直接看任務分數與 agent 的動作紀錄；沿用既有 Vercel CLI 登入即可。",
+      "tags": [
+        "evals",
+        "sandbox",
+        "harness"
+      ],
+      "url": "https://vercel.com/changelog/run-scale-ais-agentenv-evals-on-vercel-sandbox",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/run-scale-ais-agentenv-evals-on-vercel-sandbox",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison：webframe 作為 scraper 與 sandbox 的評估",
+      "summary": "Jeff Lindsay 的 webframe 用 Go + 系統內建 web view（WKWebView / WebKitGTK / WebView2）「把網頁當程式跑」，console.log 輸出到 stdout。Simon 讓 Claude Opus 5.5 實測：當 scraper 速度和 shot-scraper 相當，但有 CSP 失敗、0×0 viewport、載入卡住、缺 HTTP metadata 等毛邊。示範了「讓 agent 寫 research report」的工作流。",
+      "tags": [
+        "sandbox",
+        "scraping",
+        "agentic-research"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/26/webframe-evaluation/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/26/webframe-evaluation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 遞交 S-1，準備以 ANT 在 Nasdaq 上市",
+      "summary": "Anthropic 10/26 遞交 S-1：2026 上半年營收 162.86 億美元（去年同期 11.63 億，約 14 倍），operating loss 收斂到 6.93 億；淨損 807 億主要來自 convertible notes / derivative 的非現金公允價值變動。現金及短期投資 1,316.5 億美元；股數與價格區間未定。HN 單篇 1,400+ 分、1,400+ 留言。",
+      "tags": [
+        "industry",
+        "anthropic",
+        "ipo"
+      ],
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "source": "Anthropic News",
+      "sourceUrl": "https://www.anthropic.com/news/s1-sec",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenAI 推出 GPT-6.1 Terra：主打 computer use 的中階模型",
+      "summary": "Terra 定位類似 Anthropic 的 Sonnet，強調 visual reasoning、精準 computer use 與更自然的寫作；定價 $1 / $5 per M tokens，約為 GPT-5.6 Terra 與 GPT-6.1 Sol 的一半。OpenAI 的 Ted Sanders 在 HN 表示 Terra 在技術溝通勝過 Astra 與 Sol，vision / computer use 相近但快很多，其他項略弱。",
+      "tags": [
+        "llm-release",
+        "computer-use",
+        "llm-pricing"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft 對約 6 萬人（約四分之一員工）提出自願離職方案",
+      "summary": "適用美、加、印、英 VP 以下員工，提供標準 severance，12 月初前決定；gaming、Windows、Copilot 等部門全面參與，AI、legal、cloud 部分參與。Gergely Orosz 認為讓員工自己選比等裁員體貼，並提醒 FDE 與 AI infra 職缺仍很搶手。",
+      "tags": [
+        "industry",
+        "engineering-careers"
+      ],
+      "url": "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/",
+      "source": "KUOW / Seattle Times",
+      "sourceUrl": "https://www.kuow.org/technology/2026-10-26/microsoft-offers-voluntary-buyouts-to-a-quarter-of-its-workforce",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261027-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Microsoft 公開 Type Server Protocol（TSP）",
+      "summary": "Pylance 團隊發布 TSP：一個 JSON-RPC 協定，讓 client 向 type server 查詢 Python 的 import resolution 與 computed / declared / expected types，沿用 LSP 的資料形狀，方法前綴 typeServer/，目前 0.4.1。等於把 type checker 從 language server 拆出來成可共用的服務，HN 討論熱烈。",
+      "tags": [
+        "python",
+        "developer-tools",
+        "protocol"
+      ],
+      "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+      "source": "GitHub (microsoft/pylance-release)",
+      "sourceUrl": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-26T22:34:15+08:00",
