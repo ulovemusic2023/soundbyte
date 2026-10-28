@@ -98220,6 +98220,246 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261029-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "blaze",
+      "summary": "Incremental Rust 建置工具，官方宣稱比 cargo/rustc 快最多 92x。純 Rust 寫的 drop-in 加速層，對編譯等待時間長的 Rust 專案（含本地 inference/audio DSP 類 crate）很有感。",
+      "tags": [
+        "dev-tool",
+        "rust",
+        "build-tool"
+      ],
+      "url": "https://github.com/indexable-inc/blaze",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1677,
+      "createdDate": "2026-10-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "BeautifulRust",
+      "summary": "一組 Agent Skills，教 coding agent 寫、review、port 慣用 Rust，附測過的 clippy config。相容 Claude Code / Codex / Copilot / Cursor / Gemini CLI。",
+      "tags": [
+        "agent-skill",
+        "rust",
+        "coding-agent"
+      ],
+      "url": "https://github.com/morganlinton/BeautifulRust",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 1361,
+      "createdDate": "2026-10-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20261029-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "bama",
+      "summary": "BAMA = Build Any Mac App。一套 agent skills，從研究、clone、設計、build、優化到測試，用 Swift/SwiftUI 做原生 macOS app。對想用 AI 快速做桌面工具的人很實用。",
+      "tags": [
+        "agent-skill",
+        "macos",
+        "swift"
+      ],
+      "url": "https://github.com/daveebbelaar/bama",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 549,
+      "createdDate": "2026-10-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20261029-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "antirion",
+      "summary": "號稱最快的開源 AI Gateway / LLM Gateway，單一 binary 內建 console，統一 route、限額、觀測 OpenAI / Anthropic / Gemini / Bedrock 等所有 LLM 呼叫。自架 LLM infra 的人可留意。",
+      "tags": [
+        "llm-gateway",
+        "ai-infra",
+        "observability"
+      ],
+      "url": "https://github.com/eliasbiondo/antirion",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 408,
+      "createdDate": "2026-10-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "video-editor-skills",
+      "summary": "教 Claude Code 當 DaVinci Resolve 的初剪助手：逐字稿剪輯、vlog 節奏、B-roll、配樂與音效、乾淨字幕、motion graphics、YouTube 匯出。授權 CC BY-NC 4.0（禁商用）。對做內容/影音的創作者直接相關。",
+      "tags": [
+        "agent-skill",
+        "video-editing",
+        "creator-tool"
+      ],
+      "url": "https://github.com/appariciojunior/video-editor-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 313,
+      "createdDate": "2026-10-23",
+      "license": "other"
+    },
+    {
+      "id": "20261029-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "rising-fast",
+      "title": "design-agent",
+      "summary": "LangChain 官方開源 design agent：從一段對話生出 on-brand 靜圖、簡報、diagram、圖表與 motion graphics，建在 Deep Agents 之上。創作者/行銷素材自動化可試。",
+      "tags": [
+        "ai-agent",
+        "design",
+        "creator-tool"
+      ],
+      "url": "https://github.com/langchain-ai/design-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 285,
+      "createdDate": "2026-10-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "mcode-stack",
+      "summary": "MiniMax Code 團隊自己拿來做 MiniMax Code 的 workflows 與 skills，開源可直接裝來用。想偷看一線 coding-agent 團隊怎麼組 skill 的可參考。",
+      "tags": [
+        "agent-skill",
+        "coding-agent",
+        "workflow"
+      ],
+      "url": "https://github.com/MiniMax-AI/mcode-stack",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 172,
+      "createdDate": "2026-10-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20261029-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "MyAgent",
+      "summary": "從零實現的通用 Agent Runtime：Agent Loop、權限、MCP、子 Agent、context 折疊與 Skills 自進化。學習 agent 架構的好教材。⚠️ 172★/0 forks，星數熱但還沒人 fork。",
+      "tags": [
+        "ai-agent",
+        "agent-runtime",
+        "mcp"
+      ],
+      "url": "https://github.com/ztt0216/MyAgent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 172,
+      "createdDate": "2026-10-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261029-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "worth-trying",
+      "title": "lessloc",
+      "summary": "把 Claude Code / Codex / Copilot / Gemini CLI / Cursor 這類 coding agent 約束成「用最少、能動的 code」解決問題，對抗 AI 愛過度生成。⚠️ 108★/1 fork，比例偏低，留意是否灌星。",
+      "tags": [
+        "coding-agent",
+        "dev-tool",
+        "ai-coding"
+      ],
+      "url": "https://github.com/rextail-ai/lessloc",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 108,
+      "createdDate": "2026-10-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "preowned",
+      "summary": "mattt（Mattt Thompson，NSHipster 作者）新作：把 macOS 內建功能包成 OpenAI-compatible API。星數還小但作者可信度高，macOS 自動化可留意。",
+      "tags": [
+        "macos",
+        "api",
+        "local-ai"
+      ],
+      "url": "https://github.com/mattt/preowned",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 48,
+      "createdDate": "2026-10-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20261029-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "agent-loop-visualizer",
+      "summary": "視覺化 agent loop 怎麼跑：一步步看 model 提議動作、harness 執行，直到停止。想直覺理解 agent 內部機制的教學型專案。",
+      "tags": [
+        "ai-agent",
+        "education",
+        "visualization"
+      ],
+      "url": "https://github.com/Agentic-System-Lab/agent-loop-visualizer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 31,
+      "createdDate": "2026-10-24",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-10-29",
+      "cycle": "thu",
+      "priority": "on-the-radar",
+      "title": "molten",
+      "summary": "在 Mac 上用原生 Rust + Metal 跑 LiquidAI LFM2.5-24B-A2B（MLX 4-bit），coding model 吃到 300+ tok/s。Apple Silicon 本地推論新選擇。",
+      "tags": [
+        "local-llm",
+        "apple-silicon",
+        "inference"
+      ],
+      "url": "https://github.com/zhangshuibai/molten",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search",
+      "stars": 22,
+      "createdDate": "2026-10-25",
+      "license": "Apache-2.0"
     }
   ],
   "lastUpdated": "2026-10-29",
