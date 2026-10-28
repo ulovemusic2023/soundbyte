@@ -98180,8 +98180,48 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261029-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "用「inflection point」判斷何時該押注新能力",
+      "summary": "Simon Willison 提出用「能力拐點（inflection point）」當判斷框架：重點不是問 AI 能不能做某件事，而是它何時從「偶爾能用」跨過「可靠到能當日常工具」的門檻。他認為 2025/11 是 coding agent 的拐點，2026/10 則是 vibe coding 做遊戲的拐點。對創業者的啟示：押注時機比押注方向更重要。",
+      "tags": [
+        "inflection-point",
+        "ai-timing",
+        "vibe-coding"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "能說清楚 AI 在哪裡還幫不上忙，本身就是判斷力",
+      "summary": "Amazon 工程領導層重新定義 AI 時代的工程師價值：如果你的工作沒從現有 AI 工具獲益，那是一個『發現』而非『失敗』。能具體說明 AI 在哪裡還幫不上你，正是他們期待的判斷力——把『AI 幫不了我』從藉口翻轉成值得記錄回報的專業觀察。",
+      "tags": [
+        "ai-judgment",
+        "engineering-culture",
+        "future-of-work"
+      ],
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai",
+      "source": "Terk Terkowitz • Amazon",
+      "sourceUrl": "https://www.aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-28T22:24:25+08:00",
-  "updatedAt": "2026-10-28T22:24:25+08:00"
+  "lastUpdated": "2026-10-29",
+  "updatedAt": "2026-10-28T21:33:56.843433Z"
 }
