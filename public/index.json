@@ -97962,6 +97962,81 @@
       "price": null,
       "vram": "跟 MiniMax H3 本體一樣（作者用 5090 測）",
       "license": "MIT"
+    },
+    {
+      "id": "20261029-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "summary": "NVIDIA 開源離線語音模型，Mamba-2+Transformer hybrid MoE，34B/4.3B active，40 語言、單檔 1 小時、65k context，支援轉錄/語者標註/翻譯/timestamp/audio QA，附 BF16/FP8/NVFP4。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "source": "HuggingFace/GitHub Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "quantize-ok",
+      "license": "OpenMDW-1.1"
+    },
+    {
+      "id": "20261029-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "openbmb/MiniCPM-OCR-1.0",
+      "summary": "MiniCPM 首個 OCR 專用模型 1.3B，文件解析 SOTA（Real5-OmniDocBench 93.68），表格/公式/圖表/印章，day-one vLLM/SGLang/llama.cpp/Ollama，有 GGUF。",
+      "tags": [
+        "cv_ocr"
+      ],
+      "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+      "source": "HuggingFace/GitHub Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "NVIDIA/SkillSpector",
+      "summary": "NVIDIA 開源 AI agent skill 安全掃描器，偵測 Claude Code/Codex/MCP skills 的漏洞、prompt injection、資料外洩與供應鏈風險。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime"
+      ],
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "source": "HuggingFace/GitHub Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "local-ready",
+      "license": "見 repo"
+    },
+    {
+      "id": "20261029-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "nightly-labs/openbot",
+      "summary": "Local-first 桌面工作區，讓 Codex/Claude/Grok 當常駐 AI 隊友：獨立 workspace、task queue、檔案共享、瀏覽器控制與 agent 協作。",
+      "tags": [
+        "ai_devtools"
+      ],
+      "url": "https://github.com/nightly-labs/openbot",
+      "source": "HuggingFace/GitHub Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "local-ready",
+      "license": "見 repo"
     }
   ],
   "lastUpdated": "2026-10-28T22:24:25+08:00",
