@@ -96858,8 +96858,213 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261028-mt-001",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Apple Logic Pro 13：內建 AI intelligent assistant、重新設計 sound browser",
+      "summary": "Apple 宣布 Logic Pro 13 將以免費更新推出，新增由 Apple 自家模型加 OpenAI 驅動的 intelligent assistant，可以用一句 prompt 生出 vocal track，或協助調整正在進行的專案。另外也重新設計了整合 loops、instruments、effect patches 的 sound browser。發布日期未定，AI 助理需要 macOS 27、支援 Apple Intelligence 的 Mac，且目前只支援美式英文。",
+      "tags": [
+        "logic pro",
+        "daw",
+        "music ai"
+      ],
+      "url": "https://synthanatomy.com/2026/10/apple-logic-13-ai-powered-assistant-redesigned-sound-browser-and-more.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/10/apple-logic-13-ai-powered-assistant-redesigned-sound-browser-and-more.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-002",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Native Instruments Massive XL：餵一段音訊就生成 preset 的 Preset Generator",
+      "summary": "NI 推出 Massive X 的後繼者 Massive XL，主打 Preset Generator，可以丟入一段 audio reference 自動產生可演奏的 synth patch，另有 Mutator、Morpher、Animator 等新工具和 custom wavetable 匯入。介面重新設計並保留 semi-modular open routing。BPB 報導首發價 $99，Massive X 用戶升級 $49。",
+      "tags": [
+        "synthesizer",
+        "sound design",
+        "audio ai",
+        "plugin release"
+      ],
+      "url": "https://www.synthtopia.com/content/2026/10/27/native-instruments-announces-successor-to-massive-x-massive-xl/",
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/10/27/native-instruments-announces-successor-to-massive-x-massive-xl/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-003",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Scaler Detector 限免到 12/7：key、scale、chord detection plugin",
+      "summary": "Scaler Music 把原本付費的 Scaler Detector 開放免費領取到 12 月 7 日，可以從 audio 或 MIDI 即時偵測調性、音階與和弦，偵測完還能試聽同調和弦並用 Bind 功能單鍵彈和弦。支援 standalone 與 VST3/AU/AAX，macOS 和 Windows 皆可，需要 Scaler Music 帳號。",
+      "tags": [
+        "key detection",
+        "chord recognition",
+        "free plugin",
+        "midi"
+      ],
+      "url": "https://scalermusic.com/products/scaler-detector/",
+      "source": "KVR Audio",
+      "sourceUrl": "https://www.kvraudio.com/news/scaler-music-makes-scaler-detector-free-for-a-limited-time-69429",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-004",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "IK Multimedia TONEX Free Unlimited：免費版解除下載與 Tone Model capture 上限",
+      "summary": "TONEX 2.2 讓免費的 TONEX 2 CS 版本可以無限下載 ToneNET 上的免費 Tone Models，並無限次用 Modeler 擷取自己的 amp、cab、pedal（IK 的 AI Machine Modeling）。內含 120 個 Tone Models 與 15 種內建效果，付費 collections 和 TONEX Rig 仍需另購。",
+      "tags": [
+        "guitar amp",
+        "guitar modeling",
+        "guitar plugin",
+        "free plugin"
+      ],
+      "url": "https://ikmultimedia.com/blogs/news/ik-multimedia-unlocks-limitless-tone-with-tonex-free-unlimited",
+      "source": "IK Multimedia",
+      "sourceUrl": "https://ikmultimedia.com/blogs/news/ik-multimedia-unlocks-limitless-tone-with-tonex-free-unlimited",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-005",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Expressive Guitar Synthesis via Controllable Latent Flow Matching",
+      "summary": "提出兩階段吉他合成：先從 timed MIDI note events 和 note-level dynamics 預測可編輯的 per-string f0 與 amplitude 軌跡，再用 latent flow matching 渲染成音訊，讓推弦、每弦 articulation 這類演奏細節可以被控制。實驗顯示在 control fidelity 與主觀音質上都勝過單階段版本和 DDSP-Guitar。",
+      "tags": [
+        "guitar",
+        "audio generation",
+        "midi",
+        "neural audio"
+      ],
+      "url": "https://arxiv.org/abs/2610.36786",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2610.36786",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-006",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SMEBench：用合成 MIDI 編輯做 neural music editing 的 benchmark",
+      "summary": "SMEBench 透過修改 symbolic MIDI 演奏並渲染出成對的 source/target 音訊，建立大規模的音樂編輯評測集，涵蓋配器、articulation、dynamics、pitch 等 12 種操作。附 3,600 筆平衡測試集和一組來自 multitrack 真實錄音的補充集，可以分別衡量保留原內容、達成目標編輯和文字相符度。",
+      "tags": [
+        "music model",
+        "music generation",
+        "midi"
+      ],
+      "url": "https://arxiv.org/abs/2610.36715",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2610.36715",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-007",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gangqinpu：音訊、MIDI、樂譜三方對齊的多曲風鋼琴資料集",
+      "summary": "Gangqinpu 收錄 18,786 組樂譜與演奏配對、約 1,007 小時音訊，含自動 note-level 對齊與 beat/downbeat 標註，曲風涵蓋 pop、古典、jazz、民謠、rock、blues。資料由自動 transcription 加樂譜對齊 pipeline 產生，並與 ASAP 建立防 data leakage 的 splits，適合做 performance MIDI-to-score 等 MIR 任務。",
+      "tags": [
+        "music transcription",
+        "beat tracking",
+        "music information retrieval"
+      ],
+      "url": "https://arxiv.org/abs/2610.34694",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2610.34694",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-008",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "UMG v. Suno 傳票戰全面擴大：投資人、MLC、Apple Music 都被捲入",
+      "summary": "Digital Music News 整理 UMG v. Suno 的傳票攻防：至少七家 Series D 投資人收到傳票，Lightspeed 已聲請撤銷，Apple 也對 Suno 發的傳票提出撤銷，而 Suno 則向 MLC 聲請強制提出資料。原告主張領投 Suno 2026 年 $400M Series D 的 Bond Capital 必然問過侵權訴訟風險，相關揭露可能影響 Suno 的 fair use 抗辯。",
+      "tags": [
+        "suno",
+        "music ai",
+        "music industry"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/10/27/umg-v-suno-subpoenas-analysis/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/10/27/umg-v-suno-subpoenas-analysis/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-009",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "The Verge：vibe coding 讓合成器、取樣器 custom firmware 爆量",
+      "summary": "The Verge 報導，LLM 讓 hobbyist 也能替硬體 synth、sampler、groovebox 寫 custom firmware，以前替 Korg Volca 加個 velocity sensitivity 要花數週到數月，現在門檻大幅降低，r/synthesizers 和 YouTube 上相關改版韌體大量出現。這篇也在 Hacker News 上被討論。",
+      "tags": [
+        "music tech",
+        "synthesizer",
+        "open source music"
+      ],
+      "url": "https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-mt-010",
+      "radar": "music-tech",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "null.audio ALIGN 與 EDIT：讓 Ableton Live 也能用 ARA plugins",
+      "summary": "Ableton Live 一直不支援 ARA，獨立開發者 null.audio 推出 ALIGN 和 EDIT，在 Live 旁邊跑 ARA host 並連到 Arrangement clips。ALIGN 依軌名自動找出 vocal doubles，最多 8 軌一起送進 VocAlign 對齊，EDIT 則能直接用 Melodyne、SpectraLayers、RePitch 等編輯 clip 並即時在混音裡聽。兩者都是 non-destructive，macOS 與 Windows 皆支援。",
+      "tags": [
+        "ableton",
+        "daw",
+        "plugin",
+        "mixing"
+      ],
+      "url": "https://rekkerd.org/null-audios-align-and-edit-bring-ara-plugins-to-ableton-live/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/null-audios-align-and-edit-bring-ara-plugins-to-ableton-live/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-27T22:29:42+08:00",
-  "updatedAt": "2026-10-27T22:29:42+08:00"
+  "lastUpdated": "2026-10-28T09:20:00+08:00",
+  "updatedAt": "2026-10-28T09:20:00+08:00"
 }
