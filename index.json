@@ -98037,6 +98037,149 @@
       "price": null,
       "vram": "local-ready",
       "license": "見 repo"
+    },
+    {
+      "id": "20261029-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google 發表 Gemini 4 Carbon：主打 cybersecurity 的前沿模型",
+      "summary": "Google 最新前沿模型，登上 Artificial Analysis Intelligence Index v5.0 第一，強化資安與 long-horizon（SEC-bench Pro 88.2%、ExploitGym 54.8%）。相比 Gemini 4 Argon，secure-code 成功率翻倍、unsupported claims 砍半，Gray Swan Indirect Prompt Injection 0.0% 攻擊成功率。introductory $2/$10 per M tokens。",
+      "tags": [
+        "paradigm-shift",
+        "ai-models",
+        "cybersecurity",
+        "prompt-injection"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Liquid AI 發表 LFM3：一個 backbone 跑完所有 modality，還能塞進手機",
+      "summary": "open-weight 模型，text/vision/audio/omni/decision 共用 backbone。約 2B、單 GPU fine-tune、端側跑；tri-hybrid 架構，text 版 256K context、4-bit 約 1GB。把 multimodal 從雲端大模型推向端側小專家。",
+      "tags": [
+        "paradigm-shift",
+        "on-device",
+        "multimodal",
+        "open-weights"
+      ],
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "source": "Liquid AI",
+      "sourceUrl": "https://www.liquid.ai/blog/lfm3",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DAYJOB: Tax — 用 50 個真實報稅案子考 AI agent，最高只拿 10.8%",
+      "summary": "Surge AI benchmark：50 環境、1,789 檔案、八個稅務領域，考 agent 能否自己發現未提問題、權衡矛盾證據、完成交付。Claude Sonnet 5.5 10.8% pass@1 領先，Fable 5.1 9.6%、Opus 5.5 9.2% — 前沿模型仍缺真實專業判斷力。",
+      "tags": [
+        "agent-eval",
+        "benchmark",
+        "professional-judgment"
+      ],
+      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "source": "Surge AI",
+      "sourceUrl": "https://surgehq.ai/blog/dayjob-tax",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Trending 冒出一整排「反 AI slop」的 design skills",
+      "summary": "趨勢榜被幫 coding agent 避免 AI 感設計的 skill 洗版：impeccable（92K★）、hallmark（40K★）、superpowers（307K★）。當 agent 產能爆量，品味/審美把關正被工具化成可掛載 skill。",
+      "tags": [
+        "coding-agent",
+        "ai-slop",
+        "design-skills",
+        "trend"
+      ],
+      "url": "https://github.com/pbakaus/impeccable",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/pbakaus/impeccable",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Survival LLM：離線跑在自己電腦上的急難救助 AI + 知識庫",
+      "summary": "免費開源離線 AI 助理兼緊急知識庫，本機運作、回答附來源。Mac（212MB）/ Windows（25MB），依記憶體自動裝模型（IBM Granite 4.2 8B → NVIDIA Nemotron 3.5 Super）。",
+      "tags": [
+        "local-llm",
+        "offline",
+        "open-source"
+      ],
+      "url": "https://www.brangus.io/survival-llm",
+      "source": "brangus.io",
+      "sourceUrl": "https://www.brangus.io/survival-llm",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "「軟體也許正在變爛，但它以前更爛」",
+      "summary": "作者主張軟體品質下滑部分因產出速度比錯誤率下降快；但過去軟體更不可靠。對 AI：把更多 code 交給 agent 可能更多 bug，除非品質把關跟得上產量。",
+      "tags": [
+        "software-quality",
+        "ai-generated-code",
+        "essay"
+      ],
+      "url": "https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/",
+      "source": "bitlog",
+      "sourceUrl": "https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Four Months of Zig：用了四個月，作者還是最愛 Zig",
+      "summary": "作者偏好 Zig：explicit allocator/IO、comptime、build system、少依賴、快速增量編譯。缺點 breaking changes 頻繁、文件稀疏、lifetime 陷阱、bootstrap 卡 Debian 打包。要長期穩定可能仍選 Rust。",
+      "tags": [
+        "zig",
+        "systems-language",
+        "rust"
+      ],
+      "url": "https://gracefulliberty.com/articles/four-months-of-zig/",
+      "source": "gracefulliberty.com",
+      "sourceUrl": "https://gracefulliberty.com/articles/four-months-of-zig/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-28T22:24:25+08:00",
