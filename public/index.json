@@ -97325,8 +97325,26 @@
       "url": "https://www.producthunt.com/posts/whoiscooking",
       "source": "Product Hunt",
       "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/10/26"
+    },
+    {
+      "id": "20261028-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiquidAI/LFM3-1.7B",
+      "summary": "Liquid AI 第三代 Liquid Foundation Model，1.7B 超輕量，鎖定 on-device／edge 部署。",
+      "tags": [
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/models?sort=trending",
+      "price": null,
+      "vram": "1.7B",
+      "license": "LFM Open License (other)"
     }
   ],
-  "lastUpdated": "2026-10-28T09:55:00+08:00",
-  "updatedAt": "2026-10-28T09:55:00+08:00"
+  "lastUpdated": "2026-10-28T09:49:53.470138+08:00",
+  "updatedAt": "2026-10-28T09:49:53.470138+08:00"
 }
