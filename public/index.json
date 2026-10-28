@@ -97343,8 +97343,183 @@
       "price": null,
       "vram": "1.7B",
       "license": "LFM Open License (other)"
+    },
+    {
+      "id": "20261028-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiquidAI/LFM3-Audio-2B + LFM3-Omni-2B：llama.cpp 正式支援",
+      "summary": "Liquid AI LFM3 家族的 audio／omni 模型，llama.cpp b11941（PR #31257）已正式支援，官方 GGUF 同步上架。LFM3-Audio-2B 吃 text 或 audio，輸出 text、24 kHz 串流語音或兩者交錯，能做 voice chat、ASR、TTS、語音翻譯和從語音直接 tool call，model card 列 18 種語言（含中文），換上自家 audio encoder 與 LiquidCodec tokenizer，音質比 LFM2.5-Audio 好；Omni-2B 再加 image／video 輸入（video 之後的 PR 才支援）。PR 註明 F32/Q8_0/Q4_0 在 Mac 和 CUDA 上都 smoke-test 過。",
+      "tags": [
+        "tts_speech",
+        "speech recognition",
+        "voice chat",
+        "audio llm",
+        "gguf",
+        "llama.cpp"
+      ],
+      "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+      "source": "GitHub（llama.cpp PR #31257）",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/31257",
+      "price": null,
+      "vram": "2B 參數，BF16 權重約 4GB，Q4/Q8 GGUF 更小",
+      "license": "LFM Open License v1.0"
+    },
+    {
+      "id": "20261028-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp b11946：llama-server 支援 /v1/realtime 語音對話與即時轉錄",
+      "summary": "10/28 合併的 PR #31269 把 llama-server 的 /v1/realtime 擴充成可以 streaming 音訊輸入、輸出語音，支援 voice chat、text／speech 交錯回覆，以及 live ASR（逐檔或即時轉錄）。目前搭配 LFM3-Audio-2B／LFM3-Omni-2B 的 GGUF，附 examples/realtime_client.py 範例。等於在本機用一個 llama-server 就能架起類 OpenAI Realtime 介面的 voice agent，不用另外拼 ASR＋LLM＋TTS 三段。",
+      "tags": [
+        "tts_speech",
+        "speech recognition",
+        "realtime",
+        "llama.cpp",
+        "voice agent"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31269",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b11946",
+      "price": null,
+      "vram": "跟著模型走；搭 2B 的 LFM3-Audio 約 4GB 以內",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "jamespetts/yue2-1980s-eurodisco-lora：YuE2 的 80s Eurodisco 音色 LoRA",
+      "summary": "給 YuE2 歌曲生成模型用的 NAR（texture／timbre）LoRA，只改編曲質感不動歌曲結構：厚 chorus synth bass、四拍 kick 加 gated toms、層疊 synth pad、brass／strings stab 的 80s 錄音室光澤。trigger word 是 eurodisco（要放在 style prompt 最前面），建議 scale 1.0（約 0.7–2.0）。同時提供 ComfyUI fused 版和 audio.cpp YuE2 engine 用的 unfused 版（作者說兩者 392/392 tensors 逐位元一致），以 CC0 釋出。可以當自己訓練 YuE2 曲風 LoRA 的參考範本。",
+      "tags": [
+        "audio_music_ai",
+        "music generation",
+        "lora",
+        "yue2",
+        "comfyui"
+      ],
+      "url": "https://huggingface.co/jamespetts/yue2-1980s-eurodisco-lora",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xh1aor/eurodisco_lora_for_yue2/",
+      "price": null,
+      "vram": "LoRA 本身很小，需求跟 YuE2 base model 一樣",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "20261028-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "dchatel/comfyui_davcha_flux2klein：Flux2 Klein 的 text encoder VRAM 從 5.5GB 砍到 3.2GB",
+      "summary": "Flux2 Klein 其實只讀 Qwen3 text encoder 的第 9、18、27 層，但標準 loader 會建完整 36 層加 final norm 和 lm_head，ComfyUI-GGUF 還會把整張 token embedding 解成 fp16。這個新 node 只建 27 層、embedding 保持量化、只 dequantize prompt 用到的 rows，conditioning 跟原本完全相同（作者比對 max abs diff 0.0）。作者在 RTX 4090 上用 Qwen3-8B Q4_K_M 測：encode 峰值 VRAM 5.97GB 降到 3.62GB，多出約 2.3GB 給 DiT、LoRA 或旁邊跑的 LLM。",
+      "tags": [
+        "image_gen",
+        "comfyui",
+        "flux2",
+        "gguf",
+        "vram optimization"
+      ],
+      "url": "https://github.com/dchatel/comfyui_davcha_flux2klein",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xgzujz/flux2_klein_cut_the_qwen3_text_encoders_vram_from/",
+      "price": null,
+      "vram": "省 VRAM 的工具；text encoder 峰值約 3.6GB（Qwen3-8B Q4_K_M）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261028-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "PrunaAI/P-Q-Image-2.1 v0.2：Qwen-Image-2.1 的 6-step LoRA，連 prompt upsampling 都省掉",
+      "summary": "Pruna 釋出兩個新的 6-step distillation LoRA，直接掛在 Qwen-Image-2.1 上，pipeline、text encoder、VAE 都不用換，生成和編輯從 40 步降到 6 步、不用 CFG。6-steps 版保真度高、適合編輯時保留原圖；6-steps-upsampled 版把官方建議的 prompt upsampler 也蒸餾進 LoRA，作者說可省掉 41–80 秒的 upsampling 時間。model card 寫最多快 6.3×（Reddit 標題寫約 5×）。",
+      "tags": [
+        "image_gen",
+        "qwen-image",
+        "distillation",
+        "lora",
+        "few-step"
+      ],
+      "url": "https://huggingface.co/PrunaAI/P-Q-Image-2.1",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xgyg7b/new_6step_lora_adapters_for_qwenimage21_no/",
+      "price": null,
+      "vram": "跟 Qwen-Image-2.1 base 相同；LoRA 只減少步數、不減權重大小",
+      "license": "qwen-research"
+    },
+    {
+      "id": "20261028-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "jimmycarter/krea2-turbo-bbox：Krea 2 的版面控制 finetune 完成訓練",
+      "summary": "Krea 2 finetune，專攻 layout control：多格漫畫、對話框落在正確的格子裡、角色跨格一致、文字放在指定位置。訓練 20 epochs 後釋出最終版，Turbo（8 步、不用 CFG）和 Raw（50 步、CFG 5.5，供再訓練用）各有兩個 EMA 版本，還有 rank 64/128/256 的 LoRA，diffusers 和 Comfy 格式都有。約 90% 訓練資料用 [x0,y0,x1,y1] bbox 的 grounding DSL，寫 prompt 前要先看 PROMPTING.md；HF Space 可以免費試。",
+      "tags": [
+        "image_gen",
+        "layout control",
+        "krea2",
+        "comfyui",
+        "lora"
+      ],
+      "url": "https://huggingface.co/jimmycarter/krea2-turbo-bbox",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xh6gar/krea2_bbox_models_have_finished_training_and_been/",
+      "price": null,
+      "vram": "跟 Krea 2 base 相同（model card 沒寫）",
+      "license": "未標示"
+    },
+    {
+      "id": "20261028-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SenseTime 開源 SenseNova 6.8 Code2Video：寫 code 做影片",
+      "summary": "從 Qwen3.8-27B fine-tune 的影片生成模型，不直接產像素，而是寫出可執行的 code 再 render 成影片，主打 motion graphics、kinetic typography、動畫插畫、產品展示和知識講解影片。可以用自然語言修改顏色、節奏、動作，也能把參考影片的版面和動態重建成可編輯的 code，另附從想法到 brief、preview、修改的創作 Skill。context 512K，官方說 INT4／INT8 權重之後才會出。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "code generation",
+        "qwen"
+      ],
+      "url": "https://huggingface.co/sensenova/SenseNova-6.8-Code2Video",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xguh4z/sensetime_open_sourced_sensenova_68_code2video/",
+      "price": null,
+      "vram": "27B，BF16 約 55GB；要等 INT4 或社群 GGUF，Q4 約 16GB 很緊",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261028-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Survival LLM：斷網也能用的本地 AI 助理加緊急知識庫",
+      "summary": "HN 193 分。免費開源的桌面 app（Mac／Windows），開啟時依記憶體自動下載合適的模型（16–31GB 用 IBM Granite 4.2 8B、32GB+ 的 PC 用 Nemotron 3.5 Lightning、Mac 32–96GB 用 Qwen3.8 27B），搭配本地 RAG 知識庫：醫療參考、FEMA／CDC 指引、求生手冊、iFixit 和約 93 萬篇 Wikipedia，回答都附來源並標出原文段落。作者自己的 22 題停電／急救測驗中，8B 模型對 14 題、27B 對 21 題。完整知識庫下載 9GB。",
+      "tags": [
+        "rag_knowledge",
+        "local inference",
+        "offline",
+        "on-device"
+      ],
+      "url": "https://www.brangus.io/survival-llm",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50264853",
+      "price": null,
+      "vram": "依記憶體自動選模型；16GB 級對應 8B 模型（約 6GB）",
+      "license": "開源（網站未寫授權名稱）"
     }
   ],
-  "lastUpdated": "2026-10-28T09:49:53.470138+08:00",
-  "updatedAt": "2026-10-28T09:49:53.470138+08:00"
+  "lastUpdated": "2026-10-28T10:16:41+08:00",
+  "updatedAt": "2026-10-28T10:16:41+08:00"
 }
