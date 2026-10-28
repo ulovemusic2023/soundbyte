@@ -97063,8 +97063,270 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261028-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "amosblomqvist/learnharness",
+      "summary": "用 AI agent 當家教的 agent harness：先測出你的理解邊界，再畫出到目標的 dependency map，一步步 predict → 解釋 → 檢查，並用 persistent knowledge graph 跨 session 記住你懂了什麼。想快速補 DSP / 音訊數學這類硬知識時可以試。",
+      "tags": [
+        "agent-harness",
+        "learning",
+        "knowledge-graph"
+      ],
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-14+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 3118,
+      "createdDate": "2026-10-16",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261028-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "unclebob/ub-mode",
+      "summary": "Uncle Bob 本人出的 agent skill，把 TDD、Fix Root Causes、小步 commit 等紀律寫成 SKILL.md，搭配 crapper（CRAP < 10）、dryer（重複度）、mutator（mutation testing）等確定性 quality gate。複製進 ~/.claude/skills 就能用 /ub-mode 叫出。",
+      "tags": [
+        "agent-skill",
+        "code-quality",
+        "tdd"
+      ],
+      "url": "https://github.com/unclebob/ub-mode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-14+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 2365,
+      "createdDate": "2026-10-25"
+    },
+    {
+      "id": "20261028-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "t3dotgg/tstack",
+      "summary": "Theo（t3.gg）每天在用的 agent skills，Claude Code / Codex 通用：full-send 從驗證、review、開 PR、盯 CI 到 merge 一條龍，council 找三家不同 provider 的模型互審直到一致，babysit-pr 自動修 review bot 的真問題。需要已登入的 gh CLI。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "codex",
+        "pull-request"
+      ],
+      "url": "https://github.com/t3dotgg/tstack",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-14+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 2015,
+      "createdDate": "2026-10-24",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "HeyChengC/wallstreet-explainer",
+      "summary": "華爾街風財經/科技解讀短片 skill：規範素材優先順序、數字視覺化與鏡頭轉場風格，附找片、截圖、配音、渲染、混音工具，整支片用程式逐格畫出。做創作者短影音內容的現成 pipeline 參考。",
+      "tags": [
+        "agent-skill",
+        "short-video",
+        "motion-graphics",
+        "claude-code"
+      ],
+      "url": "https://github.com/HeyChengC/wallstreet-explainer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-14+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars",
+      "stars": 411,
+      "createdDate": "2026-10-18"
+    },
+    {
+      "id": "20261028-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "rising-fast",
+      "title": "dsmurrell/onkey",
+      "summary": "開源 Mac 歌唱練習器（Show HN 235 分）：用 Spotify / Apple Music 放歌，歌曲結束後在本機做人聲分離 + CREPE pitch tracking + GAME note model 轉成音符條，之後跟唱時即時畫出你的音高並逐句評分。Rust + Tauri + ONNX，需 Apple Silicon、macOS 14.2+。",
+      "tags": [
+        "music",
+        "pitch-detection",
+        "singing",
+        "tauri",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/dsmurrell/onkey",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50195488",
+      "stars": 345,
+      "createdDate": "2026-10-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "0xS4N4TG/kinetograph",
+      "summary": "給 agent 用的 programmatic video engine：用 Remotion API + CSS/SVG/WebGL/Web Audio 寫 TypeScript，Rust GPU compositor（N-API addon）逐格合成，既有 Remotion 專案可直接渲染。README 稱 1,184 幀 1080p 含聲音在筆電上 26 秒渲完。",
+      "tags": [
+        "programmatic-video",
+        "remotion",
+        "rust",
+        "mcp"
+      ],
+      "url": "https://github.com/0xS4N4TG/kinetograph",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-14+stars%3A%3E20+topic%3Amcp&type=repositories&s=stars",
+      "stars": 194,
+      "createdDate": "2026-10-23"
+    },
+    {
+      "id": "20261028-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "winnin/farol",
+      "summary": "接在 AI code review 之後的 PR 風險地圖：CLI + GitHub Action 用 static analysis 標出最危險的檔案、影響範圍、diff coverage 與 contract break，結果可重現。agent 寫、agent 審的時代，幫人類決定哪些 PR 要逐行看。支援 TS/React、Go、Python。",
+      "tags": [
+        "code-review",
+        "cli",
+        "github-action",
+        "static-analysis"
+      ],
+      "url": "https://github.com/winnin/farol",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50231349",
+      "stars": 154,
+      "createdDate": "2026-10-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "worth-trying",
+      "title": "timoncool/speech-studio",
+      "summary": "離線 AI 語音工作室（Windows / macOS Apple silicon / Linux）：cloned 與內建聲音的 TTS、多角色對話/Podcast/整本書配音，加上含 speaker 分離的轉錄，還有透過 MCP 接 AI agent 的 Live 對話模式。Rust + C++，支援 CUDA/Vulkan/Metal，零 Python。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "asr",
+        "local-ai",
+        "tauri"
+      ],
+      "url": "https://github.com/timoncool/speech-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-14+stars%3A%3E20+topic%3Avoice-cloning&type=repositories&s=stars",
+      "stars": 123,
+      "createdDate": "2026-10-15"
+    },
+    {
+      "id": "20261028-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "xerj-org/xerj",
+      "summary": "本週 Rust trending（+5,091 stars/週）：單一 Rust binary 的 AI 搜尋引擎 + MCP server，可索引 code、docs、logs、JSONL/CSV、PDF，提供 BM25 / vector / hybrid search、agent memory 與 RAG，API 相容 Elasticsearch。",
+      "tags": [
+        "mcp",
+        "search-engine",
+        "rag",
+        "rust",
+        "agent-memory"
+      ],
+      "url": "https://github.com/xerj-org/xerj",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 17128,
+      "createdDate": "2026-06-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261028-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "anthropics/sandbox-runtime",
+      "summary": "Anthropic 官方的輕量 sandbox 工具，本週 TypeScript trending（+1,151 stars/週）：在 OS 層對任意 process 限制 filesystem 與 network，不需要 container。跑 headless coding agent 時的安全護欄。",
+      "tags": [
+        "agent-sandbox",
+        "security",
+        "cli"
+      ],
+      "url": "https://github.com/anthropics/sandbox-runtime",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 6773,
+      "createdDate": "2025-10-20",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261028-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "on-the-radar",
+      "title": "Asymptote-Labs/agent-beacon",
+      "summary": "跨 harness 的 coding agent 記憶層，本週 Go trending（+946 stars/週）：收集 Claude Code、Cursor、Codex、OpenCode 等 20+ 工具的 session history，把修正與 debug 經驗整理成可重用知識，再透過 MCP 或 Agent Skills 給下一個 agent 用。",
+      "tags": [
+        "agent-memory",
+        "claude-code",
+        "cursor",
+        "codex",
+        "mcp"
+      ],
+      "url": "https://github.com/Asymptote-Labs/agent-beacon",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 2879,
+      "createdDate": "2026-05-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "product-hunt",
+      "title": "Beam.win",
+      "summary": "把 agent 和 build 留在 Mac mini / Studio 上跑，Beam 把它們的 Terminal、瀏覽器等視窗一個個搬到你面前的 Mac，各自有 Dock icon 和 ⌘Tab，Mac 之間加密傳輸，可免費試用。",
+      "tags": [
+        "remote-desktop",
+        "agents",
+        "macos"
+      ],
+      "url": "https://www.producthunt.com/posts/beam-win",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/43"
+    },
+    {
+      "id": "20261028-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-10-28",
+      "cycle": "wed",
+      "priority": "product-hunt",
+      "title": "WhoIsCooking",
+      "summary": "Mac menu bar app，顯示晶片溫度與是哪個 AI agent（Claude Code、Codex、Cursor）在讓 Apple Silicon 發燙，一鍵把忙碌工作移到 efficiency cores 降溫。一次買斷 $5。",
+      "tags": [
+        "macos",
+        "menu-bar",
+        "coding-agent"
+      ],
+      "url": "https://www.producthunt.com/posts/whoiscooking",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/10/26"
     }
   ],
-  "lastUpdated": "2026-10-28T09:20:00+08:00",
-  "updatedAt": "2026-10-28T09:20:00+08:00"
+  "lastUpdated": "2026-10-28T09:55:00+08:00",
+  "updatedAt": "2026-10-28T09:55:00+08:00"
 }
