@@ -97518,8 +97518,262 @@
       "price": null,
       "vram": "依記憶體自動選模型；16GB 級對應 8B 模型（約 6GB）",
       "license": "開源（網站未寫授權名稱）"
+    },
+    {
+      "id": "20261028-sw-013",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic 招募主管 Felix Rieseberg 宣布不再考 coding interview：「Hunger beats tenure」",
+      "summary": "Felix Rieseberg 在個人部落格說，他這個月起在 Anthropic 招人不再出傳統 coding interview：「考小 React 題跟考 assembly 一樣沒意義，Claude 兩樣都比較強」，團隊裡最有影響力的 builder 跟考試表現無關。他給沒有資歷與話語權的新人的建議是：選商業影響而非 backlog、挑一個大膽想法、週末直接做出 prototype 跳過 PRD 流程、一個 prototype 只放一個好點子、善用新人的新鮮視角。Latent Space AINews 今天把它當頭條，X 上約 8.5K 互動。",
+      "tags": [
+        "paradigm-shift",
+        "ai-driven development",
+        "hiring",
+        "career",
+        "engineering culture"
+      ],
+      "url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+      "source": "Felix Rieseberg（via Latent Space AINews）",
+      "sourceUrl": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-014",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cognition 推出 FrontierCode 2.0：用「maintainer 會不會 merge」評 coding agent，最強模型只拿 45%",
+      "summary": "FrontierCode 2.0 是 132 題私有任務，由 open-source maintainer 用自己 repo 出題，prompt 刻意不講清楚，用測試加 rubric 評「能不能 merge」，踩到任何 blocking criteria 直接 0 分。跟 1.1 比，repo 數多 55%、reference solution 改動檔案多 67%、行數多 89%，新增 security patch 與效能優化類別。Claude Opus 5.5 以 45.5% 居首、GPT-6 Astra 42.8%；Gemini 4 Argon 從 1.1 的 47.5% 掉到 26.3%，open-source 模型落差更大。Cognition 說建題時約八成提交的 PR 被退。",
+      "tags": [
+        "coding-agent",
+        "benchmark",
+        "mergeability",
+        "agentic software engineering",
+        "eval"
+      ],
+      "url": "https://cognition.com/blog/frontier-code-2.0",
+      "source": "Cognition Blog",
+      "sourceUrl": "https://cognition.com/blog/frontier-code-2.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-015",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cursor Agent SDK 正式 GA：agent 就是一個 Markdown + TypeScript 的資料夾",
+      "summary": "Cursor 把內部做 Bugbot、Security Reviewer、Rollouts 的框架開放成 Agent SDK：instructions.md 是 prompt、tools/ 每個檔是一個 typed action、skills/ 按需載入、mcp-connections/ 接 MCP、channels/ 定義從 GitHub/GitLab/Bitbucket 的 PR、comment、CI 事件、Slack、webhook 或 cron 喚醒。內建 eval 與 `agent-sdk github replay`（把真實 PR 轉成 webhook payload 重播測試），`agent-sdk deploy` 一行部署到 Cursor，或自架成單一 Node process。部落格 10/20 發表，docs changelog 標 0.3.0（10/23）為 GA。",
+      "tags": [
+        "agents-as-code",
+        "agent harness",
+        "coding-agent",
+        "eval",
+        "mcp"
+      ],
+      "url": "https://cursor.com/docs/agent-sdk/changelog",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/agent-sdk",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-016",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GitHub Copilot SDK 支援 server-to-server 驗證：agent 不再綁某個人的帳號",
+      "summary": "Public preview：org 安裝的 GitHub App 只要給唯讀的 Copilot Requests 權限，就能把短效 installation token 交給 Copilot SDK，讓服務與 agent 以 workload 身分代表整個 organization 發請求，不靠某位使用者登入。用量記到 org 帳上、套用 org 的 model policy、預算與花費上限；owner 可在 AI usage CSV 用 app_client_id 查是哪個 app 用的，停權就是 suspend 或 uninstall。",
+      "tags": [
+        "workload-identity",
+        "github-copilot",
+        "agent auth",
+        "github app"
+      ],
+      "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-017",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Codex CLI rust-v0.165.0：memory v2 預設開啟、可匯入別家 agent 的記憶",
+      "summary": "新版 Codex CLI 對新 profile 預設開 memory v2，並支援把其他 coding agent 的 memory 匯進來；新增內建 Google Cloud Vertex AI provider（model_provider = \"gcp\"）、GPT-6.1 Terra 進 model catalog、對話中途改 reasoning effort 預設開放、session picker 可依 repo 篩選並把 linked worktree 分組。修補也包括 marketplace URL 驗證漏洞（Git 可能連到跟白名單比對時不同的 host）。",
+      "tags": [
+        "coding-agent",
+        "agent memory",
+        "codex",
+        "cli"
+      ],
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
+      "source": "GitHub Releases（openai/codex）",
+      "sourceUrl": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-018",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Artificial Analysis Intelligence Index v5：六成改用私有測試集，coding 權重給 FrontierCode 2.0",
+      "summary": "AA 指數 v5 分 Knowledge Work、Coding、Science、General 四類各 25%，首次有 60% 來自私有或 held-out 資料集；Coding 由 FrontierCode 2.0（15%）加 Terminal-Bench 4.0（10%）組成，新增 Terminal-Bench-Science，HLE 換成 HLE-Diamond，拿掉 GDPval-AA、SciCode、AA-LCR。Claude Opus 5.5 58 分、GPT-6 Astra 57、GPT-6.1 Sol 55；open weights 差距從 3 分拉大到 12 分。每題輸出 token 中位數從 35k 增到 59k，agentic 評測佔 55% 權重卻用掉約九成 token。",
+      "tags": [
+        "benchmark",
+        "private-eval-sets",
+        "eval contamination",
+        "coding-agent"
+      ],
+      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
+      "source": "Artificial Analysis",
+      "sourceUrl": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-019",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Hex 4.0 從零重寫成 agent-native，同時募 $100M、估值 $1.2B",
+      "summary": "Hex CEO Barry McCardel 說舊架構是 2020–21 年定的，agent harness 被數百個工具撐到臃腫、外部 agent 只能透過 MCP「從鑰匙孔」操作、compute engine 也扛不住 agent 高併發反覆執行，所以乾脆 clean-sheet 重寫：核心假設是「everything is code」，用一般 code 而非自家 YAML，再加上 context、controls 讓資料工作可信。重寫過程大量用 agent 寫 code。新一輪 $100M 由 Peak XV 與 137 Ventures 領投。",
+      "tags": [
+        "agent-native-rewrite",
+        "agent harness",
+        "data platform",
+        "mcp"
+      ],
+      "url": "https://hex.tech/blog/hex-new-era/",
+      "source": "Hex Blog",
+      "sourceUrl": "https://hex.tech/blog/hex-new-era/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-020",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "UEFI 韌體 EDK2 爆 9.5 分 RCE（CVE-2026-97631），揭露流程出包、修補已公開",
+      "summary": "漏洞在 TianoCore EDK II 的 PXE Base Code driver：network boot 時把 ICMP error 複製進固定 504 bytes 的欄位，邊界處理錯誤導致 buffer overflow，攻擊者在 PXE 開機期間送一個 unicast 封包就可能在 Secure Boot 生效前執行 code，16 年老 bug，AMI、Insyde、Phoenix 和 Microsoft Project Mu 都受影響。發現者是 Anthropic 的 Alex Matrosov 與 Google 的 Dan Holmes，原定一月協調揭露，但 AMI 上個月的公開 PR 已帶出修補。HN 146 分。",
+      "tags": [
+        "security",
+        "firmware",
+        "uefi",
+        "vulnerability disclosure"
+      ],
+      "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+      "source": "Ars Technica",
+      "sourceUrl": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-021",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Anthropic 公布 Claude 加速新藥開發的早期成果：六家合作藥廠案例",
+      "summary": "Anthropic 與 BigHat、Bristol Myers Squibb、Divergence Labs、Enveda、Generate Biomedicines、The Column Group 合作，也自己做藥物探索。例子包括：Generate 用 Claude Code 設計出短約 70% 的 CAR-T 片段、受體量約 10 倍；Divergence 一個月內大致自主產出約 35,000 個抗體設計；Enveda 1,061 頁製造文件中 Claude 抓到人工找到的 11 個問題外加 7 個漏掉的，審查時間少 89%。社群提醒多數驗證仍在 in vitro。HN 230 分。",
+      "tags": [
+        "ai for science",
+        "claude code",
+        "agentic workflow",
+        "life sciences"
+      ],
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/early-progress-drug-development",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-022",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Cloudflare 把內部 Quicksilver 開放成 Workers KV Instant：p99 讀取 1.62ms，但只給 1MB",
+      "summary": "InfoQ 整理：KV Instant 是 Workers KV 的新 mode，p99 讀 1.62ms（classic 287ms），寫入 p99 約 256ms 傳遍 300+ 節點。限制很硬：每個 namespace 最多 10,000 組 key、總共 1MB、每秒只能寫一次，mode 建立後不能改；讀比 classic 便宜 60%，但每次寫 $0.10、儲存每 MB 每月 $100。適合 feature flag、路由表、agent 設定這類讀多寫少的小資料，目前 private beta。",
+      "tags": [
+        "edge",
+        "key-value store",
+        "config",
+        "cloudflare"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/workers-kv-instant/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/workers-kv-instant/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-023",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Chrome 開放 Email Verification API origin trial：不寄信也能驗證信箱",
+      "summary": "Chrome 150 桌面版開始 origin trial，Gmail 是第一個參與的 provider。這個 WICG 提案讓瀏覽器夾在網站（verifier）與信箱商（issuer）中間：使用者已登入信箱時，瀏覽器直接拿一個簽章 token 填進表單，server 送出時驗 token，省掉切去收信、複製驗證碼或 magic link。Google 表示 issuer 不會知道是哪個網站在驗。",
+      "tags": [
+        "web platform",
+        "authentication",
+        "chrome",
+        "identity"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/chrome-email-verification/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/chrome-email-verification/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261028-sw-024",
+      "radar": "software-dev",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Git for the US Code：把美國法典做成可 blame、可查任一天版本的歷史",
+      "summary": "Lexifina 把美國法典整理成類似 Git 的歷史：每一句是哪部 public law 寫的、何時生效、任一天的條文長什麼樣，都能像查 code 一樣回溯。文章以 11 USC § 1182(1) 小企業債務人上限在 CARES Act 後多次調整、失效又追溯恢復為例，說明現在這些資訊散在註解裡，連 LLM 做法律研究也難掌握條文 lineage。HN 273 分。",
+      "tags": [
+        "version control",
+        "legal tech",
+        "data lineage"
+      ],
+      "url": "https://lexifina.com/blog/git-for-the-us-code",
+      "source": "Lexifina Blog",
+      "sourceUrl": "https://lexifina.com/blog/git-for-the-us-code",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-28T10:16:41+08:00",
-  "updatedAt": "2026-10-28T10:16:41+08:00"
+  "lastUpdated": "2026-10-28T18:24:53+08:00",
+  "updatedAt": "2026-10-28T18:24:53+08:00"
 }
