@@ -97772,8 +97772,198 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261028-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/llama.cpp v0.8.0：第一個正式版號，LFM3 語音模型、/v1/realtime 與 /tts 一次到位",
+      "summary": "10/28 晚間 llama.cpp 從 b-build 編號改出 v0.8.0 正式版，把這幾天的語音功能打包：LFM3 全家（1.7B text、VL-2B、Audio-2B、Omni-2B）、mtmd 新的實驗性 streaming-audio API、llama-server 的 /v1/realtime（OpenAI realtime protocol，支援對話和轉錄）與新的 POST /tts endpoint，另外加了 Soprano TTS。新架構包含 DeepSeek V4.1 Flash、Flint、Muse Spark Open、MiniCPM-OCR 1.0 等；核心面有 host 端 MoE experts 改用 50/50 SLRU cache、ggml 升到 v0.28.0（CUDA chunked graph launch 等）。注意 CLI 現在一定要帶 --model 或 -hf。",
+      "tags": [
+        "tts_speech",
+        "speech recognition",
+        "llama.cpp",
+        "realtime",
+        "llm_inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+      "price": null,
+      "vram": "推理引擎；搭 LFM3-Audio-2B 約 4GB 以內",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "BrunoHays/embeddinggemma-2-nullspace-audio：加 2.4MB PCA head，EmbeddingGemma-2 衝上 MAEB 音訊榜第一",
+      "summary": "作者沒訓練任何權重，只在 Google 的 embeddinggemma-2（577M、768 維）上加一個 2.37MB 的凍結 PCA 矩陣，從 audio encoder 較早的層抽特徵，把 MAEB（MTEB 的音訊 embedding benchmark）分數從 49.3% 拉到 54.4%，audio-only 榜從第 26 名到第 1，贏過 8B–9B 的 omni 模型。作者列的改善：無監督人聲／性別分群 0.05% 到 63.1%、歌手／歌曲的 audio-to-audio 搜尋 55.2% 到 93.8%、人聲情緒分類 19.7% 到 40.2%，同時保留原本 100+ 語言的 text-to-audio 搜尋。做音色或歌曲相似度搜尋可以直接拿來用。",
+      "tags": [
+        "audio_music_ai",
+        "embeddings",
+        "voice similarity",
+        "edge"
+      ],
+      "url": "https://huggingface.co/BrunoHays/embeddinggemma-2-nullspace-audio",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhny7x/i_took_embeddinggemma2_577m_from_rank_26_to_1_on/",
+      "price": null,
+      "vram": "577M 參數，約 1–2GB",
+      "license": "gemma"
+    },
+    {
+      "id": "20261028-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "llama.cpp PR #31188：CUDA 把 MoE 的 gate/up matmul 和 GLU 融合進 MMQ",
+      "summary": "10/28 合併、已進 b11962。CUDA 後端在 MMQ（量化矩陣乘法）裡把 MoE 的 gate、up 兩個 matmul 和 GLU 融合成一次，加快 prompt processing。PR 貼的數據：RTX 5090 上 Qwen3-30B-A3B Q4_K_M 快 5.7%、Qwen3.6-35B-A3B 快 5.7–6.1%，DGX Spark（GB10）上最多快 17.2%。在 16GB 卡上跑 30B 級 A3B MoE 的人更新就有。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "cuda",
+        "moe",
+        "performance"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31188",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhodj3/cuda_fuse_moe_gateup_matmuls_and_glu_in_mmq_by/",
+      "price": null,
+      "vram": "效能優化，不增加 VRAM",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "llama.cpp PR #31283：LFM3 家族支援 video 輸入",
+      "summary": "早上提到 LFM3-Omni-2B 的 video 輸入要等後續 PR，這個 PR 10/28 已合併：mtmd 開放 LFM3 模型吃影片，2B 級的小模型也能看影片回答。",
+      "tags": [
+        "multimodal",
+        "llama.cpp",
+        "video understanding",
+        "lfm3"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31283",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhmgql/mtmd_enable_video_input_support_for_lfm3_model/",
+      "price": null,
+      "vram": "跟著模型走；LFM3 2B 級約 4GB 以內",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Diffuspace/Clover-35B-A3B-Preview：HKU Dream 團隊的 35B MoE 擴散語言模型",
+      "summary": "做 Dream 7B 的 HKU NLP 成員新團隊 DiffuSpace 的第一個模型：35B 參數、約 3B active 的 MoE，用 block diffusion 生成，128K context、支援思考模式。官方部落格說六項 agent 評測都是所列模型最高（SWE-bench Verified 73.6、Terminal-Bench 2.1 51.7），勝過 Qwen3.6-35B-A3B 和 LLaDA2.2 flash、Mercury 2.5；H200 上 agent 任務 515 tok/s，高於 DFlash2 的 365 tok/s。Apache 授權，支援 SGLang 和 llama.cpp 推理。",
+      "tags": [
+        "llm_inference",
+        "diffusion llm",
+        "moe",
+        "agentic coding"
+      ],
+      "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhinyj/diffuspaceclover35ba3bpreview_hugging_face/",
+      "price": null,
+      "vram": "35B 總參數，BF16 約 70GB；Q4 約 20GB，要部分 offload 到 RAM（A3B 速度還可以）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261028-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "FlashMap：Princeton 與 Polymathic AI 的 flow map speculative decoding",
+      "summary": "arXiv 2610.24365。DFlash 這類 block diffusion drafter 一次產一整塊 token，但每個 token 各自預測、忽略彼此關係。FlashMap 改用以 target model hidden states 為條件的 flow map language model，一次 forward 產出整塊 draft，同時考慮 token 之間的依賴。論文在 Qwen3-8B 上每個 benchmark 都比對應的 DFlash baseline 快，平均 speedup 高 7%，最高 6.1× lossless 加速。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "research"
+      ],
+      "url": "https://arxiv.org/abs/2610.24365",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhkpzf/princeton_and_polymathic_ai_release_flashmap_flow/",
+      "price": null,
+      "vram": "論文方法，drafter 很小；實測模型 Qwen3-8B",
+      "license": "N/A"
+    },
+    {
+      "id": "20261028-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "AuroraIMG2-50M-Preview：denoiser 只有 50M 參數的 text-to-image 模型",
+      "summary": "迷你 text-to-image 模型，denoiser 50M 參數，加上自製 text encoder 和預訓練的 Flux VAE，端到端約 90M。作者說在 2016 年的筆電 CPU（i5-7200U）上 50 步 27 秒、20 步 11 秒。Apache 2.0，model card 有範例和 quick start。品質當然不能跟大模型比，適合研究小模型或嵌入式場景。",
+      "tags": [
+        "image_gen",
+        "tiny model",
+        "cpu inference"
+      ],
+      "url": "https://huggingface.co/AuroraAI-Research/AuroraIMG2-50M-Preview",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhoxux/auroraimg250mpreview_releases/",
+      "price": null,
+      "vram": "約 90M 參數，CPU 就能跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261028-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "fronteagle739/streaming-llama-stack：單張 5090 從 NVMe 串流跑 DeepSeek V4.1 Flash 原精度",
+      "summary": "作者開源自己的串流推理 stack：用 DirectStorage 從高速 NVMe 串流 prefill 放不進記憶體的模型，decode 時用 router bias 偏好已在 VRAM cache 的 experts。作者的數字：1×5090＋32GB DDR5＋25GB/s RAID0 跑 DSv4.1 原精度，prefill 最高約 1770 tok/s、decode 7–20 tok/s；也能在 RTX 機器 prefill 後把 KV 傳到 Mac 或大記憶體伺服器 decode。剛開源、還沒人驗證，算實驗性質。",
+      "tags": [
+        "llm_inference",
+        "ssd offload",
+        "moe",
+        "disaggregated inference"
+      ],
+      "url": "https://github.com/fronteagle739/streaming-llama-stack",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhnua5/streaming_llama_stack_disaggregated_prefilldecode/",
+      "price": null,
+      "vram": "作者用 32GB 的 5090；16GB 卡可行性沒測，速度會更依賴 SSD",
+      "license": "MIT"
+    },
+    {
+      "id": "20261028-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-10-28",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "tazmannner/ComfyUI-H3-RelayHires：MiniMax H3 動畫影片的 hires node，約快 4 倍",
+      "summary": "給 MiniMax H3 影片模型用的 ComfyUI node：先用 0.5MP 跑完整 20 步當預覽（版面、動作、音訊都在這步決定），滿意再用自訓的小型 AnimeSR upscaler 放大到 1920×1088，最後補一步 turbo refine，音訊保持不變。作者在 5090 上 5 秒 1920 片段：native 約 500 秒，Relay Hires 約 118 秒。MIT，附 8 個範例 workflow。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "comfyui",
+        "upscaling",
+        "minimax h3"
+      ],
+      "url": "https://github.com/tazmannner/ComfyUI-H3-RelayHires",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xhecjk/introducing_h3_relay_hires_node_05_2_mp_anime/",
+      "price": null,
+      "vram": "跟 MiniMax H3 本體一樣（作者用 5090 測）",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-28T18:24:53+08:00",
-  "updatedAt": "2026-10-28T18:24:53+08:00"
+  "lastUpdated": "2026-10-28T22:24:25+08:00",
+  "updatedAt": "2026-10-28T22:24:25+08:00"
 }
