@@ -98630,8 +98630,285 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261029-mt-001",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mastering The Mix BASSROOM 低頻 EQ 免費送",
+      "summary": "原價 £59 的 BASSROOM 低頻 mastering EQ 目前免費。五段式 EQ，會分析你的 track 並依 genre preset 或 reference track 給 boost/cut 建議，附 level-match 比對原始響度。領取方式偏 hack：進 masteringthemix.com/products/reference 頁、把游標往瀏覽器頂端移動觸發 exit-intent 彈窗「Leaving? Take BASSROOM free.」，填 email 勾同意即可（不用買 Reference）。未標截止日。",
+      "tags": [
+        "mastering",
+        "eq",
+        "free plugin",
+        "low-end"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/28/mastering-the-mix-bassroom-free/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/28/mastering-the-mix-bassroom-free/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-002",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Vochlea 送 Native Instruments Empire Breaks（Kontakt boom bap 鼓組）",
+      "summary": "NI 原價 $49 的 boom bap 鼓 instrument 完整授權免費，可在免費 Kontakt Player 跑（Mac/Win）。用 Vochlea email 註冊拿領取連結，7 天內在 Native Access 兌換 serial。未標 giveaway 截止日。",
+      "tags": [
+        "kontakt",
+        "drums",
+        "sampler",
+        "free plugin",
+        "boom bap"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/28/vochlea-empire-breaks/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/28/vochlea-empire-breaks/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-003",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Reaper 7.83 內建 instruments：移植一票 open-source 合成器",
+      "summary": "Reaper 首次內建 instruments。chmaha (Christopher Hampson) 移植了 39 個 JSFX instruments/FX，包含 Dr Nine Drum Synth (9W9)、JamSynth (amSynth)、Jexed (Dexed)、Major General MIDI (EAS)、Synthy McSynthface (MDA synths)、Tolerable Tines (ACE)、Lord of the Rinks (setBfree organ)。跨 Linux/Mac/Win，60 天免費試用。",
+      "tags": [
+        "daw",
+        "reaper",
+        "jsfx",
+        "open source",
+        "synthesizer",
+        "update"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/28/reaper-now-has-instruments-reaper-7-83-includes-ports-of-various-open-source-instruments/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/28/reaper-now-has-instruments-reaper-7-83-includes-ports-of-various-open-source-instruments/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-004",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "CodWaves QUANCE 自動共振抑制器 €49.99 intro",
+      "summary": "新的 automatic resonance suppressor plugin（macOS/Windows），intro 價 €49.99（sponsored post）。用來自動壓掉刺耳共振峰。",
+      "tags": [
+        "plugin",
+        "resonance",
+        "mixing",
+        "release"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/28/codwaves-quance/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/28/codwaves-quance/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-005",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tracktion Waveform 14.1：AI Assistant 直接幫你寫 plugin、分析混音",
+      "summary": "Waveform 14.1 的 AI Assistant 可選用任何模型（包含本機跑的），用講的就能生出一個完整 plugin：Assistant 用 Cmajor 寫 DSP、在 Waveform 內編譯並自動修 build error，參數可自動化、存成專案內的純文字檔。另外還有重做的 export 系統、mastering 等級 loudness meter、mix analysis，以及每個版本都免費內建的 Attracktive synth。Waveform 14 Pro 現在 4 折起 $149（到 11/6），14 Pro 用戶免費更新。",
+      "tags": [
+        "daw",
+        "daw update",
+        "plugin",
+        "audio ai",
+        "mixing"
+      ],
+      "url": "https://rekkerd.org/tracktion-launches-waveform-14-1-build-plugins-analyze-mixes/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/tracktion-launches-waveform-14-1-build-plugins-analyze-mixes/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-006",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Akai MPC Sample 與新 SampleKey 開放韌體：官方示範 Claude 生成的 synth engine",
+      "summary": "Akai 先在 Instagram 預告兩個八度鍵盤取樣機 SampleKey，主打 open firmware，接著又宣布 MPC Sample 也會開放給社群做 custom firmware。官方影片示範了用 Claude 生成的 chiptune、wavetable 等引擎，SampleKey 第二支影片還秀了 vibe-coded 的 wavetable、FM、virtual analog engine。Synth Anatomy 認為這是在回應 Behringer 前一天公布、搭載 open-source firmware 的 $150 MPC clone。",
+      "tags": [
+        "sampler",
+        "open source music",
+        "custom firmware",
+        "music tech"
+      ],
+      "url": "https://www.gearnews.com/akai-mpc-sample-review/",
+      "source": "Synth Anatomy / Gearnews",
+      "sourceUrl": "https://synthanatomy.com/2026/10/akai-samplekey-the-keyboard-sampler-sibling-of-the-mpc-sample-with-open-firmware.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-007",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ACE Studio v2.1.9：新增 Speech Generator 與 Sound Generator",
+      "summary": "Timedomain 的 AI 音樂工作站 ACE Studio（Windows/macOS）更新到 2.1.9，新增語音生成與音效生成，並改進 audio editor。ACE Studio 本身已整合 AI vocals、AI instruments、voice cloning、stem splitter 與 music generator，既有用戶免費更新，Artist / Artist Pro 目前 8 折。",
+      "tags": [
+        "audio ai",
+        "voice synthesis",
+        "voice clone",
+        "audio generation"
+      ],
+      "url": "https://rekkerd.org/timedomain-updates-ace-studio-to-v2-1-9-incl-speech-sound-generator/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/timedomain-updates-ace-studio-to-v2-1-9-incl-speech-sound-generator/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-008",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Flamma Tone Go：€119 的練習音箱，能載 NAM A2 captures",
+      "summary": "Flamma Tone Go 是隨身 multi-effect 加練習音箱，內建兩顆 2 吋喇叭（10W 立體聲）、可撐 5 小時的電池、looper、彩色螢幕、Bluetooth 和 stereo out，還能載入 NAM A2 captures 與 IR，售價只要 119 歐元。Gearnews 提醒 manual 對 NAM 的寫法有點模糊，推測 NAM profile 要透過 companion app 轉換。",
+      "tags": [
+        "guitar amp",
+        "guitar modeling",
+        "NAM",
+        "multi-effect"
+      ],
+      "url": "https://www.gearnews.com/flamma-tone-go-pedal-guitar/",
+      "source": "Gearnews",
+      "sourceUrl": "https://www.gearnews.com/flamma-tone-go-pedal-guitar/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-009",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Hotone VOCLAS：用 neural network 做和聲的 vocal 加吉他 multi-effects pedal",
+      "summary": "VOCLAS 是給邊彈邊唱的人用的 vocal pedal，32-bit 引擎搭配低延遲 neural network 處理，最多同時疊 12 種效果，含 9 個人聲模組、吉他效果與 amp simulation。intelligent harmony 最多三層和聲，可以跟著吉他和弦走，也能用 MIDI 或它的 generative neural algorithm 預測和聲；人聲鏈還有 preamp、de-esser、LA-2A / 1176 風格 compressor 等。",
+      "tags": [
+        "guitar effect",
+        "voice synthesis",
+        "audio ai",
+        "multi-effect"
+      ],
+      "url": "https://www.gearnews.com/hotone-voclas-live/",
+      "source": "Gearnews",
+      "sourceUrl": "https://www.gearnews.com/hotone-voclas-live/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-010",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Klangfeld Labs DOOM OS 0.7：把 Roland SP-404MKII 變成有 20 個 synth engine 的 groovebox",
+      "summary": "非官方 custom firmware DOOM OS 0.7 為 SP-404MKII 加入 20 個可調的 synth engine（BASS、POLY、FM、WAVE、各種 kick/snare/hats 等）和 11 組鼓組（909、808、CR-78 等），讓它從 sampler 變成 groovebox。這版還加了 arpeggiator、per-step parameter locks、視覺化 side-chain editor、每軌 3-band EQ 和 resampling。",
+      "tags": [
+        "sampler",
+        "sound design",
+        "custom firmware",
+        "drum machine"
+      ],
+      "url": "https://synthanatomy.com/2026/10/klangfeld-labs-doom-os-a-custom-roland-sp-404mkii-firmware.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/10/klangfeld-labs-doom-os-a-custom-roland-sp-404mkii-firmware.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-011",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cineol-X 224：開源 Lexicon 224 reverb，DAW 和 Daisy DSP 都能跑",
+      "summary": "Cineol-X 224 是開源專案，重現經典 Lexicon 224 數位 reverb，有 macOS（AU/VST3/standalone）與 Windows（VST3/standalone）版，也有 Daisy embedded DSP 版本。它採 bring your own ROM，要自己提供原版 Lexicon firmware；最新 v1.0Alpha 加入降低 DSP clock rate 與調整 converter-filter（Dirt）的控制。",
+      "tags": [
+        "reverb",
+        "open source audio",
+        "vst3",
+        "plugin"
+      ],
+      "url": "https://www.synthtopia.com/content/2026/10/27/open-source-cineol-x-224-brings-classic-lexicon-reverb-to-daws-daisy-dsp/",
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/10/27/open-source-cineol-x-224-brings-classic-lexicon-reverb-to-daws-daisy-dsp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-012",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Push and Groove MICRONIX：FREE 單音 synth，內含 24 種 Plaits synthesis models",
+      "summary": "MICRONIX 是免費的 Mac/Windows 單音軟體合成器，基於 Mutable Instruments Plaits 的 MIT 授權開源 DSP，提供 24 種合成模型，加上 modulation 與 MIDI 表演功能，適合 bassline、lead、打擊和實驗音色（非 Mutable 官方產品）。",
+      "tags": [
+        "free plugin",
+        "synthesizer",
+        "soft synth",
+        "open source audio"
+      ],
+      "url": "https://www.synthtopia.com/content/2026/10/28/free-micronix-synthesizer-brings-24-plaits-based-synthesis-models-to-your-daw/",
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/10/28/free-micronix-synthesizer-brings-24-plaits-based-synthesis-models-to-your-daw/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-mt-013",
+      "radar": "music-tech",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Softube Flow Studio 免費更新：支援 Neural DSP、FabFilter 等第三方 plugin",
+      "summary": "Softube 的桌上型控制器 Flow Studio 透過 Flow Mixing Suite 掃描系統，現在可以實體操控 FabFilter、Neural DSP、oeksound、Plugin Alliance、Soundtoys、UA、Valhalla DSP、XLN Audio 等第三方 plugin，也能和 Softube plugin 組成自訂 chain，在任何 DAW 裡 recall。官方說這只是第一批，之後還會增加。",
+      "tags": [
+        "plugin",
+        "mixing",
+        "neural dsp",
+        "daw"
+      ],
+      "url": "https://www.gearnews.com/softube-flow-studio/",
+      "source": "Gearnews",
+      "sourceUrl": "https://www.gearnews.com/softube-flow-studio/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-29T08:23:38+08:00",
-  "updatedAt": "2026-10-29T08:23:38+08:00"
+  "lastUpdated": "2026-10-29T09:03:17+08:00",
+  "updatedAt": "2026-10-29T09:03:17+08:00"
 }
