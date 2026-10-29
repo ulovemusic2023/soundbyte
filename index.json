@@ -99744,6 +99744,197 @@
       "price": null,
       "vram": "量化後 16GB 可跑",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261030-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Mistral 開源 Large 4「Le Chonk」：1T 參數 MoE，自稱最強開源 coding 模型",
+      "summary": "Mistral 釋出旗艦 Large 4 的 weights：約 1T 總參數、52B active 的多模態 MoE，支援 160+ 語言與 low/medium/high 三段 reasoning。宣稱是最強開源 coding 模型（FrontierCode 2.0 19.7%、Coding Agent Index 48%，比 GLM-5.3 省 47% token）。採修改版 MIT 的 Mistral Ecosystem Open-Weight 授權，可自架（vLLM/SGLang）、商用免費，僅 MaaS 需另談授權。",
+      "tags": [
+        "paradigm-shift",
+        "open-weights",
+        "coding-agent",
+        "moe",
+        "frontier-model"
+      ],
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "source": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Qwenputer：把一顆 RISC-V CPU「編譯」進 Qwen 3.5 的權重，零訓練",
+      "summary": "Divyansh Agrawal 發現 Qwen 3.5 的 Gated DeltaNet layer 可當成精確、可定址的 RAM，於是直接寫權重加 11 層、塞進一顆 32-bit RV32IM 核心，在模型 decode 時執行、用 tool-call 介面呼叫。通過官方 riscv-tests、連跑 18M 指令無誤；NUPA 長整數算術從 48.6% 飆到 100%，還做了 in-weight 檔案系統。證明 RNN state 能變成可靠記憶體、整台電腦能進預訓練權重，也是 AI safety 把監控塞進權重的 testbed。",
+      "tags": [
+        "paradigm-shift",
+        "in-weight-compute",
+        "rnn-memory",
+        "ai-safety",
+        "risc-v"
+      ],
+      "url": "https://divagr.com/blog/qwenputer",
+      "source": "Divyansh Agrawal (divagr.com)",
+      "sourceUrl": "https://divagr.com/blog/qwenputer",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Martin Fowler 談「LLM-Voice」：機器味的文字會讓讀者直接出戲",
+      "summary": "Fowler 把那種一看就知道是 AI 生成的尷尬機器腔叫做 LLM-Voice，主張讀者的反感是本能、偵測工具抓不準也不是重點。強烈建議作者自己寫 prose——人工潤飾很難去掉機器味，而且把寫作外包給 LLM 等於把思考與理解一起外包。例外：帕金森氏症患者、翻譯、制式信件；他自己只拿 AI 當搜尋工具並回原始出處查證。",
+      "tags": [
+        "llm-voice",
+        "ai-writing",
+        "developer-culture",
+        "influential-engineer"
+      ],
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison 轉述 Spawn：一群 agent 自主開發遊戲、每小時出貨，「一小時沒 ship 就是 SEV-0」",
+      "summary": "Jacob Sansbury 寫 Spawn——玩家用 prompt 對遊戲內 AI「Savi」改變世界的多人遊戲，宣稱由一群 Fable 驅動的 agent 自主開發、直接改 live code、每小時 ship。團隊把「一小時沒出貨」當成 SEV-0 事故。Simon 覺得用在遊戲上很意外，並認為遊戲開發是測試 coding agent 極限的好試煉場。",
+      "tags": [
+        "agentic-engineering",
+        "vibe-coding",
+        "coding-agent",
+        "ship-velocity"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub Agent Merge：Copilot 在雲端盯著你的 PR，自動修 CI 失敗與 merge conflict",
+      "summary": "Agent Merge 內建進 GitHub PR，會監看指定的 blocker（failing Actions、merge conflict），一出現就開雲端開發環境自動修復，搭配 auto-merge 可加速合併。需付費 Copilot 方案，受組織／企業政策控管。",
+      "tags": [
+        "coding-agent",
+        "ci",
+        "copilot",
+        "pull-request"
+      ],
+      "url": "https://github.blog/changelog/2026-10-28-agent-merge-watches-and-fixes-pull-requests-in-the-cloud",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-10-28-agent-merge-watches-and-fixes-pull-requests-in-the-cloud",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Nvidia Nemotron 3.5 Transcribe：一個 checkpoint 幹掉轉錄＋說話者標記＋翻譯＋音訊問答",
+      "summary": "開源、可 prompt 的語音模型：轉錄 40 種語言、31 種可與英文互譯、13 種可標說話者，約 30B 總參數／4B active。在 HuggingFace English Open ASR Leaderboard 開源組排第一，量化版可本地跑，能用自然語言 prompt 操控或用 Granary v2 + NeMo 微調領域詞彙。",
+      "tags": [
+        "promptable-asr",
+        "open-weights",
+        "speech",
+        "multilingual"
+      ],
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "source": "Hugging Face (Nvidia)",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Bug0 QA Agent：用 AI 探索一次 UI、把步驟 cache 成 Playwright 回放，壞了才再叫 agent",
+      "summary": "Linearbytes 釋出 source-available 的 Bug0——首次執行時 agent 透過 accessibility tree＋截圖探索 UI，把單步操作 cache 成 Playwright script 以加速回放，cached 動作壞掉才重新喚醒 agent，每次都用 vision model 驗證斷言。目標是兼顧 AI 測試的彈性與腳本測試的速度，同時降低 AI-first 的延遲與傳統 suite 的脆性。",
+      "tags": [
+        "cached-agent-replay",
+        "testing-agent",
+        "playwright",
+        "qa"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 在 OAuth 2.0 導入 DPoP，對抗 token 竊取與重放攻擊",
+      "summary": "Google 採用 DPoP（Demonstrating Proof-of-Possession），把 access token 綁定到發出請求的 client 持有的密鑰，被偷走的 token 在別處無法使用，強化 OAuth 2.0 的安全性。",
+      "tags": [
+        "security",
+        "oauth",
+        "dpop",
+        "token-binding"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/google-dpop-oauth2/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/google-dpop-oauth2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "QCon AI New York 2026 選題：Agent 身分、Context 成本、開源推論",
+      "summary": "QCon AI New York 2026 Program Committee 公布重點題目，聚焦 agent identity（agent 的身分與授權）、context costs（長脈絡的成本管理）與 open-source inference。可一窺產業把哪些 AI 工程議題視為當前最硬的痛點。",
+      "tags": [
+        "agent-identity",
+        "context-costs",
+        "open-source-inference",
+        "conference"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/qcon-ai-newyork-2026-pc-picks/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/qcon-ai-newyork-2026-pc-picks/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-10-30T05:16:54.335425",
