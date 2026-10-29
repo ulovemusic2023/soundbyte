@@ -99620,8 +99620,132 @@
       "price": null,
       "vram": "官方約 150GB；社群 ComfyUI 版可在 4090 跑",
       "license": "minimax-h3-community"
+    },
+    {
+      "id": "20261030-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "mistralai/Mistral-Large-4-1T-A52B",
+      "summary": "Mistral 開源旗艦 Large 4（Le Chonk）：1T 參數、~52B active 的原生多模態 hybrid instruct+reasoning MoE，支援 160+ 語言，強在 coding、防禦性 cybersecurity、agentic、finance。權重以 Mistral Ecosystem OW（改版 MIT）釋出，可用 vLLM / SGLang 部署。",
+      "tags": [
+        "llm",
+        "moe",
+        "multimodal"
+      ],
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "source": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+      "price": null,
+      "vram": ">24GB（cloud-only）",
+      "license": "Mistral Ecosystem OW (modified MIT)"
+    },
+    {
+      "id": "20261030-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiquidAI/LFM3-Audio-2B",
+      "summary": "Liquid AI 2B any-to-any 音訊模型：吃文字/音訊，輸出文字、24kHz 語音或兩者。涵蓋 ASR、TTS、語音翻譯、audio understanding（18 語言）與語音 tool calling，32K context，主打筆電/edge 本地跑，已有 GGUF/MLX/ONNX。",
+      "tags": [
+        "tts",
+        "asr",
+        "audio",
+        "any-to-any"
+      ],
+      "url": "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/LiquidAI/LFM3-Audio-2B",
+      "price": null,
+      "vram": "~2B local-ready",
+      "license": "LFM Open License"
+    },
+    {
+      "id": "20261030-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiquidAI/LFM3-Omni-2B",
+      "summary": "Liquid AI omni-modal 模型 2.17B：輸入文字/圖/影片/16kHz 音訊，輸出文字、24kHz 語音或交錯。定位 on-device 一次取代 ASR+VLM+LLM+TTS，提供 BF16 與 GGUF（llama.cpp）。",
+      "tags": [
+        "tts",
+        "omni",
+        "on-device",
+        "音樂理解"
+      ],
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "price": null,
+      "vram": "~2.17B local-ready",
+      "license": "LFM Open License"
+    },
+    {
+      "id": "20261030-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "maya-research/maya2-native",
+      "summary": "Maya Research 開源 streaming TTS：11 種印度語言+英文，24kHz，內建 20 聲音，3–10 秒參考音訊 zero-shot voice cloning。約 2.5B（BF16 ~5GB），載入峰值 ~9.2GB，16GB 本地可跑。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "streaming",
+        "zero-shot"
+      ],
+      "url": "https://huggingface.co/maya-research/maya2-native",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/maya-research/maya2-native",
+      "price": null,
+      "vram": "~9.2GB local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261030-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "inclusionAI/Ming-3.0-tts-0.5B",
+      "summary": "基於 Qwen2.5-0.5B 的 0.5B dense TTS：支援中英德西法韓日＋四川話與粵語，內建聲音、zero-shot voice cloning、voice design。HF 只放 checkpoint，推論需另 clone GitHub repo。",
+      "tags": [
+        "tts",
+        "voice-cloning",
+        "multilingual",
+        "cantonese"
+      ],
+      "url": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B",
+      "source": "HuggingFace Trending",
+      "sourceUrl": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B",
+      "price": null,
+      "vram": "0.5B local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20261030-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "StarTrail-org/PixelRAG",
+      "summary": "pixel-native RAG：把網頁/PDF/圖截圖成 tile，直接用 vision embedding（LoRA 微調 Qwen3-VL）檢索，圖表表格不因文字 parsing 丟失。pip 可裝，附 8.28M 頁 Wikipedia 托管索引，也能本地索引 PDF。",
+      "tags": [
+        "rag",
+        "vision-embedding",
+        "qwen3-vl"
+      ],
+      "url": "https://github.com/StarTrail-org/PixelRAG",
+      "source": "GitHub Topics",
+      "sourceUrl": "https://github.com/StarTrail-org/PixelRAG",
+      "price": null,
+      "vram": "量化後 16GB 可跑",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-10-29T22:22:48+08:00",
-  "updatedAt": "2026-10-29T22:22:48+08:00"
+  "lastUpdated": "2026-10-30T05:16:54.335425",
+  "updatedAt": "2026-10-30T05:16:54.335425"
 }
