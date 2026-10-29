@@ -98907,8 +98907,172 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261029-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Paul Graham：老公司最多只能「適應」AI，新創一出生就是 AI-native",
+      "summary": "PG 的判斷：established companies 面對 AI 最多只能 adapt，新創則從第一天就是 AI-native。他引用的 Podium 是少數「卡在中間」卻成功轉身的案例——同樣做到 $150M ARR，第一次花 8 年，靠 AI 重做只花 2.5 年；而最難的不是重做產品，是打破十年累積的組織慣性，等於在成功公司裡再開一間 startup。",
+      "tags": [
+        "ai-native",
+        "incumbent-vs-startup",
+        "self-disruption"
+      ],
+      "url": "https://x.com/paulg/status/2113284574172135639",
+      "source": "Paul Graham",
+      "sourceUrl": "https://x.com/paulg/status/2113284574172135639",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "「模型這麼強，OpenAI 為何不自己開 100 間公司？」— AI 是大腦，公司還需要手腳與關係",
+      "summary": "HN 680+ 分熱議。高票回覆用 McKinsey 類比：顧問熟知 Fortune 500 的營運卻從沒取代它們，因為 AI 只提供「腦」，公司還需要執行、通路與關係。另一派提醒：任何能被 agent 輕易做出來的公司，利潤也會被別人的 agent 打到接近零。框架：智慧變便宜後，稀缺資源移到 distribution、relationships 與把事做完的能力。",
+      "tags": [
+        "moat",
+        "distribution",
+        "ai-strategy",
+        "community-hot"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50200997",
+      "source": "HN community (epsteingpt 等) • Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50200997",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Dario Amodei：7 位共同創辦人能運作，靠的是「預設善意」的信任",
+      "summary": "當初很多人警告 7 個 co-founder 是災難，五年後 Amodei 說這反而是成功關鍵：大家 equal stakes、都扛 vision。高風險分歧（模型 safeguard、怎麼遊說監管）之所以總能收斂，是因為每個人都相信對方在追求正確答案且誠實——他拿來對比自己在 OpenAI 的經驗。框架：分歧不是問題，信任崩壞才是組織的單點故障。",
+      "tags": [
+        "co-founders",
+        "trust",
+        "leadership",
+        "disagree-and-commit"
+      ],
+      "url": "https://www.businessinsider.com/dario-daniela-amodei-running-anthropic-cofounders-trust-honesty-2026-10",
+      "source": "Dario Amodei • Business Insider（The Builders podcast）",
+      "sourceUrl": "https://www.businessinsider.com/dario-daniela-amodei-running-anthropic-cofounders-trust-honesty-2026-10",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Satya Nadella：在 AI 產業，初期成功什麼都不代表",
+      "summary": "Semafor《Future Proof》專訪中，Nadella 從 2023 年「要讓 Google 跳舞」轉為專注讓 AI 可預測、可靠地運作，並喊話產業別再追 shiny object 與 FOMO。他稱 frontier labs 是 magical businesses，但以 Microsoft 51 年歷史提醒：先馳得點不等於最後贏。洞見：平台轉移期比的是可靠交付與耐力，不是第一波光環。",
+      "tags": [
+        "platform-shift",
+        "long-game",
+        "reliability",
+        "leadership"
+      ],
+      "url": "https://www.semafor.com/article/10/21/2026/microsofts-nadella-is-back-in-business",
+      "source": "Satya Nadella • Semafor",
+      "sourceUrl": "https://www.semafor.com/article/10/21/2026/microsofts-nadella-is-back-in-business",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Town CEO JDG：護城河窗口從 2 年縮到 1 季，你得連續做對 4–5 次",
+      "summary": "前 Plaid CTO、Town 創辦人在 First Round《In Depth》說，競品拆解並複製你最好功能的時間，已從「幾年」縮到「幾週到幾個月」，所以要在約 18 個月內連續做對 4、5 次；但反過來，incumbents 也沒有真正的 network effect，看起來沒以前可怕。定價上他放棄 outcome-based，改用 seat + token bundle 讓用戶自己決定 ROI，並主張產品層要保持中立、不要綁死單一 frontier lab。",
+      "tags": [
+        "moat",
+        "pricing",
+        "gtm",
+        "ai-agents"
+      ],
+      "url": "https://review.firstround.com/podcast/competing-with-openai-and-meta-for-your-inbox-jean-denis-greze-town-co-founder-ceo/",
+      "source": "Jean-Denis Greze • First Round Review — In Depth",
+      "sourceUrl": "https://review.firstround.com/podcast/competing-with-openai-and-meta-for-your-inbox-jean-denis-greze-town-co-founder-ceo/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Julian Weisser：AI 之後 solo founding 會變成預設，下一個殺手是孤獨",
+      "summary": "On Deck 共同創辦人引用與 Carta 合作的報告：solo founder 佔新創比例從 2018 到 2026 幾乎翻倍，來到 39%。Wasserman 研究指出 65% 高潛力新創死於人際衝突，拿掉 co-founder 等於拿掉主要死因；但 solo 成為預設後，主要死因會變成 loneliness。解法不是硬找「方便的 co-founder」，而是 \"solo, together\"——身邊圍繞資源與其他 solo founder。",
+      "tags": [
+        "solo-founder",
+        "one-person-company",
+        "community"
+      ],
+      "url": "https://every.to/thesis-statements/julian-weisser",
+      "source": "Julian Weisser • Every — Thesis Statements",
+      "sourceUrl": "https://every.to/thesis-statements/julian-weisser",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-fm-009",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Sam Altman：地面晃得最厲害時，高潛力的人表現最好",
+      "summary": "Altman 在 Stanford GSB 對學生說，大量工作會被 AI 以完全不同的方式重做，但這正是創業窗口；他對 MBA 學生的 chronic disappointment，是他們總想去做五年前很酷的事。",
+      "tags": [
+        "timing",
+        "career",
+        "ai-age"
+      ],
+      "url": "https://fortune.com/2026/10/28/openai-ceo-sam-altman-gen-z-disappointment-start-new-business-with-ai-entrepreneurship-career-advice/",
+      "source": "Sam Altman • Fortune",
+      "sourceUrl": "https://fortune.com/2026/10/28/openai-ceo-sam-altman-gen-z-disappointment-start-new-business-with-ai-entrepreneurship-career-advice/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-fm-010",
+      "radar": "founder-mind",
+      "date": "2026-10-29",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Paul Graham：YC 是投資界的「老朋友」",
+      "summary": "PG 說 YC 最意外的一點，是身為最早的投資人，十年後仍在給同一批 founder 建議——長期關係本身就是投資人的護城河。",
+      "tags": [
+        "yc",
+        "long-game",
+        "relationships"
+      ],
+      "url": "https://x.com/paulg/status/2114814292096700906",
+      "source": "Paul Graham",
+      "sourceUrl": "https://x.com/paulg/status/2114814292096700906",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-29T09:03:17+08:00",
-  "updatedAt": "2026-10-29T09:03:17+08:00"
+  "lastUpdated": "2026-10-29T09:40:00+08:00",
+  "updatedAt": "2026-10-29T09:40:00+08:00"
 }
