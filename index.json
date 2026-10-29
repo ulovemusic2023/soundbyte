@@ -99240,8 +99240,244 @@
       "price": null,
       "vram": "512GB unified memory，可跑大型 MoE 原精度",
       "license": "N/A"
+    },
+    {
+      "id": "20261029-sw-016",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Anthropic 研究：專家用 Claude Code 做分析，86% 跟著 agent 被暗中設定的立場走",
+      "summary": "Anthropic 找 50 位有 causal inference 經驗的分析師用 Claude Code 做真實統計分析，並用 system prompt 讓 agent 在四個「兩邊都合理」的分析選擇上各偏一邊（由擲硬幣決定）。結果分析師 86% 選了 agent 偏好的那邊（隨機應約 50%）；先表態過的人，agent 不同意時有 60% 改口、同意時只有 6%。事後 77% 用了 agent 的論點（有時一字不差），但只有 15% 註明來源，跟得最緊的人也一樣覺得結論是自己判斷的。論文 10/27 發表，今天 X 與媒體持續熱議。",
+      "tags": [
+        "paradigm-shift",
+        "agentic",
+        "ai coding",
+        "human oversight",
+        "agent-deference"
+      ],
+      "url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/agents-judgment-calls",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-017",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Claude Code 每 30 秒把每個 background agent 的完整 transcript 丟給模型，只為了 3–5 個字的狀態列",
+      "summary": "Flamerix AI 的 gist 指出：Claude Code 對每個 background agent 約每 30 秒送出整段 transcript（通常給 Opus），只要求「用 3–5 個字描述最近動作」來更新 agents panel 狀態列，結果不會回到對話裡；2.1.232（2026/8）起預設開啟、沒有設定可關。他們用 OpenTelemetry 量到 agent_summary 佔 Claude Code 花費 16.4%（主對話才 15.7%）、19.7% 的 API requests，input:output 約 9,000:1；issue #86879 另收錄四份獨立測量，18–26%。解法是約 80 行的 Bun preload 攔截該 timer，不改 binary。HN 387 分。",
+      "tags": [
+        "ai coding",
+        "tool use",
+        "claude code",
+        "token cost",
+        "background-agent-overhead"
+      ],
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "source": "GitHub Gist（Flamerix AI）",
+      "sourceUrl": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-018",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Claude Code 團隊怎麼做 code review：「沒有人需要整個 codebase 的 mental model」引爆討論",
+      "summary": "InfoQ 今天整理 Anthropic 10/15 的文章：Claude 寫了約 90% 的 Claude Code，monorepo 每天合併量從 5 月約 2,500 增到 9 月 30,000+。目標是大多數 PR 最多一個人類（可以是作者）就能 merge，且 revert 與 incident 不增加；由 classifier 依變更內容分 risk tier（「the change sets the tier, not the author」）。教訓包括：曾有 PR 一夜被 review/fix 五十多輪，所以限制輪數；被反覆標出的問題約 59% 是第一輪就存在的舊 code。最具爭議的是「團隊沒人記得完整 mental model，需要時請 Claude 寫該片段的 explainer」，HN 質疑出事時沒人能有系統地 debug。",
+      "tags": [
+        "paradigm-shift",
+        "ai-assisted development",
+        "code review",
+        "risk-tiered-review",
+        "agentic"
+      ],
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/anthropic-code-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-019",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Android Studio Rabbit 2 穩定版：Bring Your Own Agent，40+ 個 ACP agent 直接進 IDE",
+      "summary": "Android Dev Summit 同步推出的 Rabbit 2 stable，主打 Bring Your Own Agent：任何 ACP-compliant 的 coding agent（包括 Claude Agent、OpenAI Codex、Junie、Google Antigravity 等 40 多個）都能在 agent window 選用，並取用 Android Emulator、build system、Logcat 與 Android skills。另加了 skills manager（內建 XML→Compose、升級 AGP 9 等 skills）、LeakCanary agent 修 memory leak、AI code review 等。等於 Google 把 IDE 變成中立的 agent host。",
+      "tags": [
+        "agentic",
+        "ai coding",
+        "acp",
+        "bring-your-own-agent",
+        "android"
+      ],
+      "url": "https://developer.android.com/blog/posts/ai-agents-android-studio-integration",
+      "source": "Android Developers Blog",
+      "sourceUrl": "https://developer.android.com/blog/posts/ai-agents-android-studio-integration",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-020",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Vercel CI 推出 beta：為了讓 CI 跟得上 coding agent 的速度",
+      "summary": "Vercel CI 只要在 turbo.json 給 task 加上 \"ci\" tag 就會在每次 push 跑；自動只跑受變更影響的 task、用 Vercel Remote Cache 快取 task、每次 run 只裝一次 dependency 並跨 commit 快取。Vercel 說內部 repo 從 git push 到「CI passed」的等待時間縮短 2–6 倍，「大幅提升 CI 跟上我們 coding agents 的能力」。上手方式是直接叫 agent 執行 `npx skills use vercel/ci@setup` 設定並開 PR。",
+      "tags": [
+        "ci/cd",
+        "turborepo",
+        "coding agent",
+        "agent-paced-ci"
+      ],
+      "url": "https://vercel.com/changelog/vercel-ci-is-now-in-beta",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/vercel-ci-is-now-in-beta",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-021",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Datadog 推出 Scout：專做 SRE 事故調查的模型，成本比 frontier model 低 3–8 倍",
+      "summary": "Scout 跑在 Datadog 的 AI SRE 產品 Bits Investigation 裡，收到 alert 就去翻 telemetry、推測 root cause，目前 closed preview。它以 GLM-5.3 Flash 為底，用歷史事故模式做出的 incident simulation 做 RL post-training。在 Datadog 自家 AlertEval 上，Scout medium 跟 GPT-6.1 Sol high、Claude Opus 5.5 high 分數相近，推論成本估計低 3–8 倍；xhigh 檔追平 Claude Fable 5.1 xhigh、成本約四分之一。Datadog 未公布價格，也提醒分數不是「解決事故的百分比」。",
+      "tags": [
+        "sre",
+        "ai-sre",
+        "specialist-model",
+        "incident management",
+        "eval"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/datadog-scout-sre-model/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/datadog-scout-sre-model/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-022",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Cloudflare AI Gateway 推出 Web Search API beta：agent 不必再「猜 URL 去 curl」",
+      "summary": "透過 AI Gateway 提供統一的 web search 介面（REST 與 Workers 都能用），後端可選 Ceramic.ai、Exa、Linkup，支援 bring-your-own-provider key，搜尋請求與模型推論一起記 log、一起計費。Cloudflare 的動機是 agent 常靠猜 URL 再 curl 抓頁面而撞 404；同時要求搜尋供應商的 crawler 符合 Verified Bots 規範、回應必須附上來源連結。",
+      "tags": [
+        "tool use",
+        "ai agent",
+        "web search",
+        "ai gateway"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/cloudflare-web-search-api/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/cloudflare-web-search-api/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-023",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Stack Overflow 每月新問題跌破 1,000 則",
+      "summary": "HN 今天最熱門的討論之一（467 分、391 則留言）引用 Stack Exchange Data Explorer 的查詢，指 Stack Overflow 現在每月新問題不到 1,000 則。我們用 Stack Exchange API 交叉核對：2026 年 9 月 969 則、10/1–10/28 935 則；對照 2025 年 10 月 5,263 則、2024 年 10 月 23,162 則（API 不含已刪除問題）。開發者求助的入口幾乎全面轉到 AI coding 工具。",
+      "tags": [
+        "paradigm-shift",
+        "ai coding",
+        "developer community",
+        "stack overflow"
+      ],
+      "url": "https://api.stackexchange.com/2.3/questions?site=stackoverflow&filter=total",
+      "source": "Hacker News / Stack Exchange API",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50282454",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-024",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenAI：ChatGPT Pro / Business 訂閱每月附送最高 $500 API credits",
+      "summary": "OpenAI Developers 宣布即日起符合資格的 ChatGPT Pro 與 Business 訂閱可領 API credits 來做 app 與 agent：Pro $100/$200/$500 方案各得等額 credits；Business 每個 Standard seat $20、Premium seat $100，整個 workspace 每月上限 $500。訂閱需付費滿 7 天、要用同一 email 擁有該 API organization，credits 不累積、當期到期。可用於 Responses、Agents、Realtime、Images 等 API，但不涵蓋用 API key 跑 Codex，也不增加 ChatGPT 或 Codex 用量額度。X 貼文 7.2K 讚。",
+      "tags": [
+        "openai api",
+        "pricing",
+        "ai agent",
+        "developer credits"
+      ],
+      "url": "https://x.com/OpenAIDevs/status/2115583698074755078",
+      "source": "OpenAI Developers",
+      "sourceUrl": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-025",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Alpine Linux 的 GitLab 遭 CVE-2026-97229 攻擊：升級 GitLab 不夠，漏洞在 Ruby",
+      "summary": "CVE-2026-97229（CVSS 10.0）出在 GitLab 評估 CI 設定裡 regular expression 時用的 Ruby Onigmo 引擎。GitLab 10/12 發布修補，但修補是打在官方套件內附的 Ruby 上；Alpine 自建 image 用標準 Ruby，10/22 升到 19.3.6 仍有洞。10/20–21 新註冊帳號送惡意 CI 設定讓 worker 崩潰 8 次、其中 4 次走到一半，還下載了他們的 image 調整 exploit。Alpine 未發現被執行 code 的證據但視同遭入侵、整台重建、重設所有密碼，確認 aports 與套件未被竄改。自備 Ruby 跑 GitLab 的人需升到 Ruby 3.3.13 / 3.4.12 / 4.0.9。HN 181 分。",
+      "tags": [
+        "gitlab ci",
+        "security",
+        "supply chain security",
+        "ruby"
+      ],
+      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "source": "Alpine Linux",
+      "sourceUrl": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-026",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Orange Tsai 公開 Pwn2Own 冠軍鏈：純手工、全 logic bug 的 Microsoft Edge full chain",
+      "summary": "DEVCORE 的 Orange Tsai 公開他在 Pwn2Own Berlin 2026 拿下 $175,000 的 Edge 沙箱逃脫鏈：沒有 memory corruption、也「完全沒用 AI」，由五個 bug 加兩個 Windows 功能串成，入口是 Edge 為 Entra ID 做的 EdgeCAGuidanceNavigationThrottle。這條鏈也拿下今年 Pwnie Awards 的 Epic Achievement。標題「The Last Proof of Human Craft」在大家都說 LLM 能 pwn 一切的時候特別有感。",
+      "tags": [
+        "security",
+        "browser security",
+        "chromium",
+        "human craft"
+      ],
+      "url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
+      "source": "Orange Tsai Blog",
+      "sourceUrl": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-29T10:21:37+08:00",
-  "updatedAt": "2026-10-29T10:21:37+08:00"
+  "lastUpdated": "2026-10-29T18:34:22+08:00",
+  "updatedAt": "2026-10-29T18:34:22+08:00"
 }
