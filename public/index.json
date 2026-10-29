@@ -98460,8 +98460,178 @@
       "stars": 22,
       "createdDate": "2026-10-25",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "title": "GitHub Universe 2026：Copilot app、Copilot projects、session continuity 上線，GitHub 定位成「agentic software delivery system」",
+      "summary": "Jay Parikh 在 Universe 宣布 GitHub 要做完整的 agentic 軟體交付系統：新 GitHub Copilot app 從 issue 到 merge 一個介面完成；Copilot projects 讓 agent 在多個 repo 平行跑 managed session；同一個 cloud agent session 可以在手機 app、VS Code、CLI、web 之間接續。Copilot automations 會從執行結果學習並提改進讓人審核，shared automations 屬於 repo、以 Copilot 身分動作、費用算 repo owner；另有 Copilot code review Max。GitHub Enterprise 起改成內含全部 Copilot 功能、按 AI credits 計費；基礎設施今年加了 4M CPU cores、160 PB 儲存，並在重做 Git 架構（storage 與 compute 解耦）。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "agentic software delivery",
+        "copilot",
+        "multi-repo agents"
+      ],
+      "url": null,
+      "source": "GitHub Blog",
+      "sourceUrl": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "title": "GitHub Agentic Workflows 正式 GA：用 Markdown 寫自動化，編譯成 Actions YAML 跑 coding agent",
+      "summary": "GitHub Next 的開源專案 Agentic Workflows GA：用自然語言 Markdown 描述 issue triage、CI 失敗分析、文件更新、補測試等任務，編譯成標準 GitHub Actions YAML，可用 Copilot 或自帶 coding agent。預設 read-only 權限、跑在 sandbox container 並有 Agent Workflow Firewall，輸出經 safe outputs 驗證與威脅偵測 job 掃描後才套用；GA 新增 ARC self-hosted runner 與 Docker-in-Docker 支援、預算預估。Accenture 案例稱 AI 撰寫該團隊 91% 的 commit。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "agentic workflow",
+        "ci/cd",
+        "coding-agent",
+        "agent sandbox"
+      ],
+      "url": null,
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "title": "Octoverse 2026：每月 merged PR 一年內翻三倍到 2.2 億，超過 40% 的 PR 由 agent 起頭",
+      "summary": "GitHub 年度報告：過去 12 個月 push 次數 179 億，比 2024 加 2025 總和還多；每月 merged PR 不到一年翻三倍到 2.2 億、commit 超過三倍到每月 73.8 億，大部分成長在下半年。有 agent 設定檔的新 repo 平均 commit 數是沒有的 8 倍；9 月時超過 40% 的 PR 由 agent 起頭（3 月才 17%），61% Copilot 使用者會用一個以上的模型。Simon Willison 在現場說這是 agentic engineering 影響的鮮明證據。",
+      "priority": "high",
+      "tags": [
+        "agentic engineering",
+        "developer trends",
+        "octoverse",
+        "multi-model"
+      ],
+      "url": null,
+      "source": "GitHub Blog（via Simon Willison）",
+      "sourceUrl": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "title": "GitHub Copilot Fusion GA：不選模型，由系統自動 routing 與多模型協作",
+      "summary": "Copilot Fusion 結合 Project HydraFusion 的多模型編排與 auto model selection：每個 prompt 自動決定用 Single、Cascade（便宜模型先寫、品質檢查不過再升級）或 Critique（一個寫、另一個審、再修）流程，使用者只選 Standard / High / Max 努力程度。官方說 Fusion Max 在 Artificial Analysis Coding Agent Index 拿 60，離 Claude Code + Opus 5.5 Max 兩分，但每題 API 成本約一半、時間少約 40%；新增可選本地模型，管理員可限制可用模型。",
+      "priority": "medium",
+      "tags": [
+        "model routing",
+        "multi-model orchestration",
+        "coding-agent",
+        "cost optimization"
+      ],
+      "url": null,
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "title": "Vercel AI SDK 的 fx adapter 改成 harness 跑在 host、只有檔案與 shell 留在 sandbox",
+      "summary": "AI SDK HarnessAgent 的 fx adapter 重寫：harness 與 model request 跟你的應用跑在同一個 process，內建 filesystem / shell 操作仍隔離在 sandbox，不再需要在 sandbox 裝 fx、跑 bridge 或開 port，model credentials 也留在 host。同時加上 built-in tool 過濾、mid-turn steering、structured output、image tool results，session 可存檔後在新 process 續跑。更新 @ai-sdk/harness-fx 即可。",
+      "priority": "medium",
+      "tags": [
+        "agent harness",
+        "sandbox",
+        "ai sdk",
+        "agent-runtime-separation"
+      ],
+      "url": null,
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-013",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "title": "Simon Willison：2026 年 10 月是 vibe coding 做遊戲的轉折點",
+      "summary": "Simon 認為繼 2025 年 11 月 coding agent 變成可靠日常工具後，這個月輪到「vibe coding 遊戲」過門檻：Claude Opus 5.5 在 3D modeling、音樂生成、尤其 game design 上明顯進步，他對模型說「Make it a LOT more fun」就真的變好玩。他這幾週完全不看 code 做了四款自己真心愛玩的遊戲，並說現在難的不是做出好玩的遊戲，而是想出新穎的概念。",
+      "priority": "medium",
+      "tags": [
+        "vibe coding",
+        "game development",
+        "claude opus 5.5",
+        "ai-assisted creativity"
+      ],
+      "url": null,
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-014",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "title": "macOS 內建的 git、curl、python3 仍信任被入侵的 eMudhra 憑證，macOS 27.2 還把手動修補蓋掉",
+      "summary": "揭露頁指出 Apple 10/17 就被通知 eMudhra 中繼 CA 遭入侵，但到 10/28 macOS 隨附的 git、curl、python3 仍信任這些憑證；10/26 推出的 macOS 27.2 不但沒修，還還原了使用者手動加的 workaround。後果是網路路徑上的人可攔截 https git remote：clone 可被塞入攻擊者的 code、push 可被竄改、GitHub token 可被截取。頁面提供 `git ls-remote` 檢查指令；Apple 也發了支援說明。HN 1,026 分。",
+      "priority": "medium",
+      "tags": [
+        "supply chain security",
+        "tls",
+        "git",
+        "macos"
+      ],
+      "url": null,
+      "source": "emudhra.we-have-a-problem.com（HN）",
+      "sourceUrl": "https://emudhra.we-have-a-problem.com/apple.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261029-sw-015",
+      "radar": "software-dev",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "title": "一支 fingerprinting script 裡藏了用 Unicode tag 字元編碼的 jailbreak prompt，專門干擾 AI 分析",
+      "summary": "作者用 Playwright 爬 Tranco 前一萬個網站收集 canvas fingerprint（做成 fingerprint.garden），在其中一支 script 裡發現用不可見的 Unicode tag 字元編碼的大段 jailbreak 文字與六四等敏感詞，目的是讓用 LLM 分析這支 script 的工具觸發安全機制、拒絕分析。script 在 Node 環境且特定環境變數存在時，還會讀 .npmrc、.env、.kube/config 等檔並收集系統資訊打包外傳。HN 759 分。",
+      "priority": "low",
+      "tags": [
+        "anti-llm obfuscation",
+        "prompt injection",
+        "browser fingerprinting",
+        "malware"
+      ],
+      "url": null,
+      "source": "nullpt.rs",
+      "sourceUrl": "https://nullpt.rs/fingerprinting-bioweapons",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-29",
-  "updatedAt": "2026-10-28T21:33:56.843433Z"
+  "lastUpdated": "2026-10-29T08:23:38+08:00",
+  "updatedAt": "2026-10-29T08:23:38+08:00"
 }
