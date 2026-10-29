@@ -99463,7 +99463,7 @@
       "cycle": "evening",
       "priority": "low",
       "title": "Orange Tsai 公開 Pwn2Own 冠軍鏈：純手工、全 logic bug 的 Microsoft Edge full chain",
-      "summary": "DEVCORE 的 Orange Tsai 公開他在 Pwn2Own Berlin 2026 拿下 $175,000 的 Edge 沙箱逃脫鏈：沒有 memory corruption、也「完全沒用 AI」，由五個 bug 加兩個 Windows 功能串成，入口是 Edge 為 Entra ID 做的 EdgeCAGuidanceNavigationThrottle。這條鏈也拿下今年 Pwnie Awards 的 Epic Achievement。標題「The Last Proof of Human Craft」在大家都說 LLM 能 pwn 一切的時候特別有感。",
+      "summary": "DEVCORE 的 Orange Tsai 公開他在 Pwn2Own Berlin 2026 拿下 $175,000 的 Edge 沙箱逃脫鏈：沒有 memory corruption、也「完全沒用 AI」，由五個 bug 加兩個 Windows 功能串成，挖掘起點是 Edge 為 Entra ID 做的 EdgeCAGuidanceNavigationThrottle。這條鏈也拿下今年 Pwnie Awards 的 Epic Achievement。標題「The Last Proof of Human Craft」在大家都說 LLM 能 pwn 一切的時候特別有感。",
       "tags": [
         "security",
         "browser security",
