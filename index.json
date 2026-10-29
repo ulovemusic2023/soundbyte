@@ -99476,8 +99476,152 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261029-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Qwen4 下週發布：Alibaba Cloud CTO 在 Apsara Amsterdam 宣布",
+      "summary": "Apsara Amsterdam 現場與會者轉述 Alibaba Cloud CTO 說 Qwen4 下週上線，現場投影片列出 Qwen4-Max / Flash / Plus / 27B。QwenLM/qwen-code PR #15762 已把整個 qwen4 世代的 context window 設成 1M。r/LocalLLaMA 同時有人擔心 Qwen4 會沿用 Qwen3.8-Flash-Next 的自訂授權，不再是 Apache-2.0。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "context length"
+      ],
+      "url": "https://github.com/QwenLM/qwen-code/pull/15762",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xif6lf/apsara_conference_qwen4_next_week/",
+      "price": null,
+      "vram": "尚未釋出；Qwen4-27B 預估要 Q4 量化才塞得進 16GB",
+      "license": "未公布（社群擔心是自訂授權）"
+    },
+    {
+      "id": "20261029-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "jesdga95/basalt 新 PR：16GB RTX 5080 跑 Qwen3.8 Flash Next IQ3_S，prompt processing 5500 tok/s",
+      "summary": "Blackwell 專用的 Qwen3.8-Flash-Next 推理引擎 basalt（Strata fork）又有新 PR。作者用 16GB 的 RTX 5080 加 64GB DDR5，跑 IQ3_S 量化版，prompt processing 約 5500 tok/s，code 和 tool call 生成峰值 275 tok/s，reasoning 約 190 tok/s。部分優化 PR 還在等合併。VRAM 跟你的 5070 Ti 一樣是 16GB，可以直接參考這個設定。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "qwen"
+      ],
+      "url": "https://github.com/jesdga95/basalt",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xi9sfl/update_benchmark_basalts_new_prs_strata_fork_new/",
+      "price": null,
+      "vram": "16GB VRAM + ~51GB system RAM（IQ3_S）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261029-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "esokullu/openbonsai：把自己的 BF16 fine-tune 壓成約 2GB ternary GGUF",
+      "summary": "Prism ML 的 Ternary Bonsai 只放出權重和 runtime，沒有放 BF16→ternary 的壓縮流程，OpenBonsai 是社群做的開源 PTQ 版本。流程用 Hadamard rotation 加 sequential GPTQ 把權重量化到 {-1,0,+1}，再用模型自己產生的 reasoning trace 做 calibration，輸出相容 PTQ1_0 GGUF。示範模型是 openbonsai-qwen-3.5-9b，目前還是實驗階段。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "gptq"
+      ],
+      "url": "https://github.com/esokullu/openbonsai",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xie29o/i_opensourced_openbonsai_compress_your_own_bf16/",
+      "price": null,
+      "vram": "9B ternary 約 2GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "JSSA：Joint Subspace Sparse Attention，long-context decoding 的 token 級 sparse KV",
+      "summary": "新論文 JSSA 學一個共享的 low-dim query-key subspace 來挑 token，再搭配 gather-free 的 indexed-attention kernel，支援 GQA、sliding-window/global hybrid 和 MLA。論文宣稱準確率接近 full-KV，而且不會像其他方法那樣讓生成長度暴增。目標是減少 long-context decode 時的 KV-cache 頻寬，code 已開源。",
+      "tags": [
+        "llm_inference",
+        "kv-cache",
+        "context length"
+      ],
+      "url": "https://github.com/jiwonsong-dev/JSSA",
+      "source": "arXiv / r/LocalLLaMA",
+      "sourceUrl": "https://arxiv.org/abs/2610.19026",
+      "price": null,
+      "vram": "推理優化方法，不另外吃 VRAM",
+      "license": "MIT"
+    },
+    {
+      "id": "20261029-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "huggingface/transformers v5.22.0：FP8 權重上直接訓 LoRA，加入 Mistral Large 4",
+      "summary": "FP8 量化模型現在可以直接拿來訓練 adapter（LoRA/PEFT）。新版補上 FP8 dense/grouped matmul 的 backward，MoE expert 改成分塊 dequant，8k tokens 時 MoE backward 的 peak memory 從約 28.9 GiB 降到 2.8 GiB。這版也加入 Mistral Large 4（1T/52B active MoE、1M context）的支援。",
+      "tags": [
+        "llm_training",
+        "lora",
+        "peft",
+        "fp8"
+      ],
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
+      "price": null,
+      "vram": "library；FP8 LoRA 讓中型 MoE 有機會在 16GB 上訓練（Mistral Large 4 本身是 cloud-only）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ai-021",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "tencent/Hy-Nomas：開源 interactive video world model，可以多輪下文字指令和控制 camera",
+      "summary": "Tencent Hunyuan 的影片世界模型，一段一段生成世界，過程中可以用文字加物件、換風格或場景，也可以給 camera trajectory 控制視角。架構是 segment-wise autoregressive DiT，用 persistent KV cache 保留前面的內容。蒸餾版 8 步就能輸出 720×1280 24fps，另有 RTX 4090 用的 INT8 + CPU offload 設定。同時釋出 Hy-Nomas-Bench。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "world model"
+      ],
+      "url": "https://huggingface.co/tencent/Hy-Nomas",
+      "source": "X / HuggingFace",
+      "sourceUrl": "https://x.com/budqst/status/2115758210779161019",
+      "price": null,
+      "vram": "官方單卡 RTX 4090（24GB）要用 INT8 + CPU offload；16GB 沒有官方設定",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ai-022",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "NVlabs Open-H3-Regenerate-2K：MiniMax-H3 草稿重新生成到 2560×1440 的開源版",
+      "summary": "NVIDIA 把原本閉源的 H3-Regenerate-2K API 做成開源版。它對 MiniMax-H3 的 768P 草稿做 3 步 refine，輸出 2K；B200 上跑 Sol-Attn + MXFP8 一段 5 秒影片約 22 秒。官方 code 約需 150GB VRAM，有社群把 LoRA 轉成 ComfyUI 格式在 4090 上跑，但實測預設強度會改掉演員的表情和表演，要調到 σ≈0.7–0.8。",
+      "tags": [
+        "image_gen",
+        "video generation",
+        "lora",
+        "comfyui"
+      ],
+      "url": "https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K",
+      "source": "r/StableDiffusion",
+      "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1xhz3l1/nvidias_new_openh3regenerate2k/",
+      "price": null,
+      "vram": "官方約 150GB；社群 ComfyUI 版可在 4090 跑",
+      "license": "minimax-h3-community"
     }
   ],
-  "lastUpdated": "2026-10-29T18:34:22+08:00",
-  "updatedAt": "2026-10-29T18:34:22+08:00"
+  "lastUpdated": "2026-10-29T22:22:48+08:00",
+  "updatedAt": "2026-10-29T22:22:48+08:00"
 }
