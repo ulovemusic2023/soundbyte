@@ -99071,8 +99071,177 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261029-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Raon-1-mini-preview 塞進 16GB RTX 5070 Ti：IQ3_KS 全上 GPU，decode 從 50 衝到 232 tok/s",
+      "summary": "r/LocalLLaMA 網友用跟你一樣的 5070 Ti 16GB（搭 5600X、48GB DDR4）優化 KRAFTON 的 Raon-1-mini-preview（29B MoE、4B active）。起點是官方 Q4_K_M 把 9 層 experts 放 RAM，50 tok/s；換成能整個放進 VRAM 的 3-bit quant 就到約 135 tok/s，再改用 ik_llama.cpp 的 IQ3_KS（KLD 0.09，IQ4_KS 是 16.3GB 放不下）。另外把 260K vocab 砍掉 54K 個 CJK token（KLD 幾乎沒變，但只用英文才適合），修掉 sampler 每個 token 掃全表的問題，最後 decode 到 232 tok/s。GGUF 和 ik_llama.cpp fork 都開源了，附 build/run 說明。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "ik_llama.cpp",
+        "moe",
+        "rtx 5070 ti"
+      ],
+      "url": "https://github.com/Mcniiby/ik_llama.cpp-raon",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xi7k3y/i_squoze_raon1minipreview_29b_moe_4b_active_onto/",
+      "price": null,
+      "vram": "IQ3_KS 整個放進 16GB；作者就是用 5070 Ti 測",
+      "license": "MIT（fork）/ Apache-2.0（GGUF）"
+    },
+    {
+      "id": "20261029-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "zeropointnine/tts-audiobook-tool：LLM 自動標角色台詞，做出多人配音的 audio drama",
+      "summary": "作者展示 tts-audiobook-tool 新的 full-cast 流程：可選的前置步驟讓 LLM 找出小說裡的角色和每句台詞，再對應到你設定好的 voice clone，旁白加三個角色各自一個聲音。作者說用 DeepSeek Flash 4.1 API 標《The Sun Also Rises》的對白準確率超過 99%（承認 LLM 可能本來就讀過這本書），本地模型應該也行。demo 用的是 Breeze TTS 2，作者目前最愛的還有 MOSS TTS 9B；工具支援二十幾個 TTS 模型，可本地跑或接 SGL-Omni、audio.cpp server。注意 Breeze TTS 2 權重只限研究和非商用。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "audiobook",
+        "breeze tts 2"
+      ],
+      "url": "https://github.com/zeropointnine/tts-audiobook-tool",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhv6j0/making_tts_fullcast_audio_dramas/",
+      "price": null,
+      "vram": "看選的 TTS 模型；Breeze TTS 2 約 3.5B 參數，16GB 可跑",
+      "license": "MIT（工具）；Breeze TTS 2 權重非商用"
+    },
+    {
+      "id": "20261029-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "z-10/fine-read-it-myself：把網路小說轉成多聲道有聲書的本地桌面 app",
+      "summary": "Electron + C++（ggml、Vulkan）桌面 app，三步驟都能檢查和修改：先用 ModernBookNLP／BookNLP 的 ggml port 在 GPU 上切旁白和引號、判斷說話者；再由本地 LLM（Qwen3.5-4B／9B 或 Gemma 4 12B，走 llama.cpp）或任何 OpenAI 相容 endpoint 複核，不確定的標給你確認；最後每個角色從 LibriVox 讀者的聲音池分配固定聲音，用 VoxCPM2（透過 audio.cpp）念出來。內建 Royal Road、Wuxiaworld、NovelFire 爬蟲，其他網站用 YAML plugin 加。",
+      "tags": [
+        "tts_speech",
+        "audiobook",
+        "audio.cpp",
+        "voxcpm2",
+        "speaker attribution"
+      ],
+      "url": "https://github.com/z-10/fine-read-it-myself",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xi5o93/fine_ill_read_it_myself_local_audiobook_producer/",
+      "price": null,
+      "vram": "4B–12B LLM 加 VoxCPM2，16GB 夠用",
+      "license": "MIT"
+    },
+    {
+      "id": "20261029-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RTX 5080 美國零售價飆到約 $2,000，SK hynix 說 DRAM/HBM 到 2029 年都賣光了",
+      "summary": "VideoCardz 10/28 查 Micro Center、Best Buy、Newegg 等有現貨的新卡：RTX 5080 最低 $1,979.99（Micro Center 自取），線上最低是 Best Buy 的 $1,999.99，比 $999 MSRP 高約一倍，兩個月內從約 $1,200 漲上來；RTX 5090 有款標到 $5,599。同一天 SK hynix 法說會表示 2027、2028 年過半產能已被長約鎖定，DRAM 和 HBM 到 2029 年「實質上賣光」，需求預期超過供給到 2030 年。手上那張 5070 Ti 16GB 短期內升級成本會很高。",
+      "tags": [
+        "gpu",
+        "hardware",
+        "memory shortage",
+        "pricing"
+      ],
+      "url": "https://videocardz.com/newz/nvidia-rtx-5080-is-now-selling-for-nearly-2000-at-us-retailers-800-higher-in-just-two-months",
+      "source": "VideoCardz",
+      "sourceUrl": "https://videocardz.com/newz/nvidia-rtx-5080-is-now-selling-for-nearly-2000-at-us-retailers-800-higher-in-just-two-months",
+      "price": null,
+      "vram": "硬體市場消息",
+      "license": "N/A"
+    },
+    {
+      "id": "20261029-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwenputer：把 RISC-V CPU 編譯進 Qwen3.5-4B 權重，Gated DeltaNet 當 RAM",
+      "summary": "HN 87 分。作者在 stock Qwen3.5 4B 裡嵌入一顆 RV32IM CPU：把 Gated DeltaNet 層的 gate 和 write strength 設成 1、用 one-hot key，讓 RNN state 變成可精確讀寫的 RAM，整顆 CPU 在 forward pass 裡跑，能算數、跑 C 和 MicroPython，不靠任何外部 runtime 或 tool。作者另外寫了兩篇延伸：hybrid model 能把推理藏在 RNN state 躲過 CoT 監控，以及用 compiled weights 做模型改不掉的內建監控。之後已經有人在上面跑 Doom E1M1。",
+      "tags": [
+        "llm research",
+        "gated deltanet",
+        "interpretability",
+        "qwen3.5"
+      ],
+      "url": "https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer",
+      "source": "Hacker News",
+      "sourceUrl": "https://divagr.com/blog/qwenputer",
+      "price": null,
+      "vram": "4B 模型，BF16 約 8GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261029-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cartesia「From Tokens to Bytes I」：H-Net 階層式網路的 scaling law",
+      "summary": "做 Sonic TTS 的 Cartesia 發表 byte-level 語言模型系列第一篇。他們照 Kimi、MAI 的做法建了標準 BPE Transformer scaling ladder，再把 tokenizer 換成改良版 H-Net（自己學 chunking），validation loss 上算出 1.3× compute multiplier，code 子領域 2×，out-of-domain code 最高 5×；BPE 那邊還特地用同語料訓練的 tokenizer 當 baseline。對語音和音訊這種沒有好 tokenizer 的 modality 是值得追的方向，第二篇還沒出。",
+      "tags": [
+        "research",
+        "byte-level lm",
+        "h-net",
+        "scaling laws"
+      ],
+      "url": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1",
+      "source": "Hacker News",
+      "sourceUrl": "https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1",
+      "price": null,
+      "vram": "研究文章，無公開模型",
+      "license": "N/A"
+    },
+    {
+      "id": "20261029-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Google Research 的 sleep framework：讓 LLM 在「睡眠」階段把新知識寫回權重",
+      "summary": "Google Research 10/27 部落格。LLM 在 wake 階段處理輸入、把資訊放在短期記憶；sleep 階段停止接新輸入，解鎖預先配置的 MoE memory blocks，用自己生成的練習資料更新權重，藉此持續學新事實並減少 catastrophic forgetting。他們說這樣能保留最長 10M tokens 的長 context 知識，推理也有提升。目前是研究框架。",
+      "tags": [
+        "research",
+        "continual learning",
+        "moe",
+        "memory"
+      ],
+      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "source": "Hacker News",
+      "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "price": null,
+      "vram": "研究文章",
+      "license": "N/A"
+    },
+    {
+      "id": "20261029-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-10-29",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Mac Studio M5 Ultra 512GB 上架，起價 $22,299",
+      "summary": "Apple 美國官網開賣 M5 Ultra（36 核 CPU、80 核 GPU）搭 512GB unified memory、1TB SSD 的 Mac Studio，r/LocalLLaMA 貼的價格是 $22,299 起。要在單機原精度跑 DeepSeek V4.1 Flash 這種大 MoE 的人會考慮，但在記憶體短缺下價格不低。",
+      "tags": [
+        "hardware",
+        "apple silicon",
+        "unified memory"
+      ],
+      "url": "https://www.apple.com/shop/buy-mac/mac-studio/m5-ultra-chip-36-core-cpu-80-core-gpu-512gb-memory-1tb-storage",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xhu3b0/mac_studio_m5_ultra_512gb_starts_at_2229900_usd/",
+      "price": null,
+      "vram": "512GB unified memory，可跑大型 MoE 原精度",
+      "license": "N/A"
     }
   ],
-  "lastUpdated": "2026-10-29T09:40:00+08:00",
-  "updatedAt": "2026-10-29T09:40:00+08:00"
+  "lastUpdated": "2026-10-29T10:21:37+08:00",
+  "updatedAt": "2026-10-29T10:21:37+08:00"
 }
