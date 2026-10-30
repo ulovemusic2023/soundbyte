@@ -100147,8 +100147,300 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261030-mt-001",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Decent Sampler 1.40.1 — Kontakt 匯入 + 硬體 Auto Sampler（免費）",
+      "summary": "Decent Samples 的免費 sampler 大更新：可直接拖入未加密的 Kontakt 2–8 .nki 檔轉成 .dsbundle（含 key mapping、round robin、envelope、keyswitch）；新增 Auto Sampler 可對 MIDI 硬體合成器逐音錄製、自動裁切與找 sustain loop 建 preset（僅限 Mac/Win standalone）。全平台 VST/VST3/AU/AAX/standalone，含 Linux 與 iOS AUv3。",
+      "tags": [
+        "sampler",
+        "kontakt",
+        "free plugin",
+        "auto sampler",
+        "vst3"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/29/decent-sampler-kontakt-import/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/29/decent-sampler-kontakt-import/"
+    },
+    {
+      "id": "20261030-mt-002",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HoRNet FilterSolo — 萬聖節限免（11/1 截止）",
+      "summary": "HoRNet 的共振濾波器 plugin，提供 low/high/band-pass 與 band-stop、12/24 dB/oct、20Hz–20kHz，兩個可同步 DAW 的 LFO 加兩個 envelope follower。萬聖節用折扣碼 FILTERBOO 結帳免費，需免費 HoRNet 帳號，每人限兑一次，截止 2026/11/1 23:59 CET，兌換後永久保留。VST3/AU/AAX，支援 Apple Silicon。",
+      "tags": [
+        "filter",
+        "resonance",
+        "free plugin",
+        "deadline",
+        "vst3"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/29/hornet-filtersolo-freebie/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/29/hornet-filtersolo-freebie/"
+    },
+    {
+      "id": "20261030-mt-003",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Spotlight — 極簡 stereo shaping plugin（免費/PWYW）",
+      "summary": "開發者 Daniel Fernandes 的立體聲塑形工具，用半圓面上一個點同時控制 width 與 pan：橫移調 pan、內外移調 width，可用 scroll 單獨改 focus、右鍵拖曳單獨改 pan。Ko-fi 填 0 即免費（PWYW）。VST3/CLAP/AUv2，目前 beta；Win/Linux 已測，Mac/AUv2 為實驗性。",
+      "tags": [
+        "stereo",
+        "imaging",
+        "free plugin",
+        "clap",
+        "vst3"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/29/spotlight-stereo-shaping/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/29/spotlight-stereo-shaping/"
+    },
+    {
+      "id": "20261030-mt-004",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DAWJunkie Jack Johnsynth — 人聲混合合成器（免費）",
+      "summary": "三層架構的免費 vocal hybrid synth：JackSampler（人聲 articulation 與短字）、synth 層、one-shot 層，內建 arpeggiator、amp envelope、多模 filter 與效果。macOS 11+（AU/VST3/AAX）、Windows 10+（VST/VST3/AAX），免費下載無截止。",
+      "tags": [
+        "synthesizer",
+        "vocal",
+        "free plugin",
+        "sampler"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/29/dawjunkie-jack-johnsynth/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/29/dawjunkie-jack-johnsynth/"
+    },
+    {
+      "id": "20261030-mt-005",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hivetune Marimbox — 取樣馬林巴（免費）",
+      "summary": "以立體聲錄製真實 marimba 的取樣樂器。免費版含 Cord/Deadstroke/Rubber/Yarn 四種 articulation 與效果、音色控制；$4.99 Complete 版多一個 Roll（持續 tremolo）。Win10+（VST3/standalone）、macOS 11+ Intel/Apple Silicon（VST3/AU/standalone）。下載需 email（訂閱電子報）。",
+      "tags": [
+        "virtual instrument",
+        "marimba",
+        "free plugin",
+        "vst3"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/29/hivetune-marimbox/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/29/hivetune-marimbox/"
+    },
+    {
+      "id": "20261030-mt-006",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Jump Scares 恐怖音效庫 — A Sound Effect 限免（10/31 截止）",
+      "summary": "344 SFX 製作、100 個 royalty-free 恐怖音效，原價 $27，A Sound Effect 對電子報訂閱者（新舊皆可）限時免費。24-bit/96kHz 共 100 檔、約 345MB，截止 2026/10/31 23:59 CET。",
+      "tags": [
+        "sound design",
+        "sfx",
+        "sample library",
+        "deadline",
+        "free"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/10/29/jump-scares-horror-sound-library/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/29/jump-scares-horror-sound-library/"
+    },
+    {
+      "id": "20261030-mt-007",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AnalogX Genesis 正式上線：GPU 跑 mixing emulation，支援 NAM A2",
+      "summary": "AnalogX 推出 GPU 驅動的 mixing 生態系 Genesis，用 GPU Audio Soundcore 把 neural 類比硬體模擬丟到顯示卡算，不吃 CPU，Windows 和 Apple Silicon Mac 都支援。Genesis Pro 有 4 個 profile slot 可串接，能載 150+ 個 compressor、console、EQ、tape 擴充，也能用 CPU/GPU 跑 NAM A2 profile。",
+      "tags": [
+        "audio ai",
+        "mixing",
+        "neural audio",
+        "plugin",
+        "nam"
+      ],
+      "url": "https://rekkerd.org/analogx-launches-genesis-gpu-driven-mixing-ecosystem-and-nam-a2-player/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/analogx-launches-genesis-gpu-driven-mixing-ecosystem-and-nam-a2-player/"
+    },
+    {
+      "id": "20261030-mt-008",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Neural DSP Morgan Amps Suite X：介面翻新、加 preset explorer 與 undo/redo",
+      "summary": "Neural DSP 把 Morgan Amplification plugin 升級成 Suite X，保留 AC20、PR12、SW50R 三顆 amp model。這次主要是工作流程更新：兩款新 amp skin、global lock、preset explorer、tooltips 和 undo/redo，換 preset 時能鎖住關鍵設定。",
+      "tags": [
+        "neural dsp",
+        "guitar plugin",
+        "guitar amp",
+        "guitar tone"
+      ],
+      "url": "https://rekkerd.org/neural-dsp-releases-morgan-amps-suite-x-with-updated-visuals-and-expanded-global-features/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/neural-dsp-releases-morgan-amps-suite-x-with-updated-visuals-and-expanded-global-features/"
+    },
+    {
+      "id": "20261030-mt-009",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Behringer IGNITE：開源韌體的 64-track 硬體 sequencer",
+      "summary": "Behringer 繼 KICK 之後再發表 IGNITE，64-track、song/scene/track/pattern 結構，pattern 最長 16 小節，有大觸控螢幕和 16 顆 step 按鈕。硬體還沒上市、日期未定，但韌體已經放上 GitHub，gearnews 直說這是在擁抱 AI vibe coding。",
+      "tags": [
+        "midi",
+        "sequencer",
+        "open source",
+        "open firmware",
+        "vibe coding"
+      ],
+      "url": "https://www.gearnews.com/behringer-ignite-sequencer/",
+      "source": "Gearnews",
+      "sourceUrl": "https://www.gearnews.com/behringer-ignite-sequencer/"
+    },
+    {
+      "id": "20261030-mt-010",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BOSS Katana-25：US$199 的練習用 1x8 數位音箱",
+      "summary": "BOSS 推出 Katana 系列最小的 25W 練習音箱，有 6 種 amp character、60+ 種內建效果，吉他和 bass 都能用。內建 Bluetooth，可搭配 BOSS Tone Studio app 串流歌曲、編輯效果、跟著 YouTube 練、從 Tone Exchange 下載音色。",
+      "tags": [
+        "guitar amp",
+        "guitar",
+        "bass guitar"
+      ],
+      "url": "https://www.musicradar.com/guitars/boss-unveils-katana-25-1x8-digital-amp-combo-for-practice",
+      "source": "MusicRadar",
+      "sourceUrl": "https://www.musicradar.com/guitars/boss-unveils-katana-25-1x8-digital-amp-combo-for-practice"
+    },
+    {
+      "id": "20261030-mt-011",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Apple 首款觸控 MacBook Pro，發表影片主打在 Logic Pro 上彈鍵盤、打 pad",
+      "summary": "Apple 發表 MacBook Pro with PROLED XDR Display，M5 Pro/M5 Max、最高 128GB 記憶體，觸控感測器直接做進面板以降低延遲。Apple 的影片示範在 Logic Pro 裡直接用螢幕彈鍵盤和打 drum pad，MusicRadar 則質疑立著的筆電螢幕實際好不好用。",
+      "tags": [
+        "logic pro",
+        "daw",
+        "music production"
+      ],
+      "url": "https://www.musicradar.com/music-tech/the-macbook-pro-with-proled-xdr-display-has-the-touchscreen-of-your-dreams-but-will-using-it-with-logic-pro-be-as-fun-as-apple-is-making-it-look",
+      "source": "MusicRadar",
+      "sourceUrl": "https://www.musicradar.com/music-tech/the-macbook-pro-with-proled-xdr-display-has-the-touchscreen-of-your-dreams-but-will-using-it-with-logic-pro-be-as-fun-as-apple-is-making-it-look"
+    },
+    {
+      "id": "20261030-mt-012",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Homi：開源 audio decision model，聽音訊回答選擇題",
+      "summary": "egma-ai 開源 homi（Apache-2.0），輸入一段 audio 加一個問題，對每個選項輸出機率，不生成文字。架構是凍結的 Qwen3-Omni-30B-A3B-Instruct 加 decision head 和 17M 參數 LoRA；作者稱在 VocalGrad 贏 Gemini Flash、MMSU 相當，適合低成本大量評估音訊。偏 speech/paralinguistic 方向，HN Show HN 熱度還低。",
+      "tags": [
+        "audio model",
+        "audio ai",
+        "open source"
+      ],
+      "url": "https://github.com/egma-ai/homi/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50276913",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261030-mt-013",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "XEN FX LAB：Zen Delay 續作，加 spring reverb 和 dub mode",
+      "summary": "Zen Delay 的軟體續作改名 XEN FX LAB，保留六種 delay mode、帶 resonance 的 virtual analog filter 和 tube drive。新增可調 tension 的模擬 spring reverb、敲擊彈簧槽的 strike，還有 dub throw 按鈕，CPU 用量也優化。macOS/Windows VST3、AU、standalone，也有 iOS 版。",
+      "tags": [
+        "delay",
+        "reverb",
+        "plugin",
+        "vst3"
+      ],
+      "url": "https://cdm.link/xen-fx-lab/",
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/xen-fx-lab/"
+    },
+    {
+      "id": "20261030-mt-014",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Past To Future PTF-S950：模擬 Akai S950 的 12-bit sampler plugin",
+      "summary": "Past To Future Plugins 推出以 Akai S950 為藍本的 sampler plugin，包含類比輸入段、頻寬縮減、12-bit 轉換和 8 voice 可演奏 sampler，主打 hip-hop、house 那種顆粒感。Windows/Mac VST3/AU，售價 US$59。",
+      "tags": [
+        "sampler",
+        "plugin",
+        "vst3"
+      ],
+      "url": "https://rekkerd.org/past-to-future-plugins-releases-s950-sampler-plugin-vst3-au/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/past-to-future-plugins-releases-s950-sampler-plugin-vst3-au/",
+      "price": "US$59"
+    },
+    {
+      "id": "20261030-mt-015",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Grasswhistle：免費、會跟著和弦變形的 arpeggiator",
+      "summary": "Aqeel Aadam Sound 釋出免費 arpeggiator Grasswhistle，序列形狀能在不同音數的和弦間保持一致，有隨機化和 50+ factory presets。可當 instrument（內建 synth voice）或 MIDI effect，VST3/AU/AAX，Windows/macOS，iOS 版即將推出。",
+      "tags": [
+        "free plugin",
+        "midi",
+        "plugin"
+      ],
+      "url": "https://rekkerd.org/free-grasswhistle-arpeggiator-plugin-by-aqeel-aadam-sound/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/free-grasswhistle-arpeggiator-plugin-by-aqeel-aadam-sound/",
+      "price": "免費"
+    },
+    {
+      "id": "20261030-mt-016",
+      "radar": "music-tech",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Behringer SP1200X：US$200、開源韌體的 E-mu SP-1200 復刻",
+      "summary": "Behringer 證實之前的傳聞，發表 SP-1200 clone，目標價 US$200、韌體開源，保留 8 推桿與 pad 配置，但換成較大的彩色螢幕。對照 Rossum 自己出的 US$3,999 限量復刻版，價差非常大。",
+      "tags": [
+        "drum machine",
+        "sampler",
+        "open firmware"
+      ],
+      "url": "https://synthanatomy.com/2026/10/behringer-sp1200x-a-200-open-source-clone-of-the-e-mu-sp-1200-drum-machine.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/10/behringer-sp1200x-a-200-open-source-clone-of-the-e-mu-sp-1200-drum-machine.html",
+      "price": "US$200（目標價）"
     }
   ],
-  "lastUpdated": "2026-10-30T00:26:10.167203+00:00",
-  "updatedAt": "2026-10-30T00:26:10.167203+00:00"
+  "lastUpdated": "2026-10-30T01:12:26.597541+00:00",
+  "updatedAt": "2026-10-30T01:12:26.597541+00:00"
 }
