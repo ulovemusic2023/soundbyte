@@ -100907,8 +100907,155 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261030-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Unsloth DeepSeek-V4.1-Flash-1017 Dynamic v3.1 GGUF（preview）",
+      "summary": "Unsloth 釋出 DeepSeek-V4.1-Flash-1017 的 Dynamic v3.1 GGUF，並公開在 AIME25、LiveCodeBench、GPQA Diamond、Aider Polyglot 等 benchmark 上和 ISTA 的 GSQ-RCO GGUF 對打：他們重跑後無法重現 ISTA 宣稱的 AIME25 100% accuracy recovery（實測約 91.88%），UDv3.1 在多數指標與各領域 KLD 都較佳。也坦承低 bit quant 會讓模型「想比較久」，下一步要再改善。",
+      "tags": [
+        "gguf",
+        "quantization",
+        "deepseek",
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xjfuqh/introducing_deepseekv41flash1017_dynamic_v31/",
+      "price": null,
+      "vram": "552B MoE，16GB VRAM 放不下，需大量系統 RAM offload 或雲端",
+      "license": "MIT"
+    },
+    {
+      "id": "20261030-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp b12000–b12007：OCP FP8 E4M3 量化進 ggml，KV cache rotation 常數改留 GPU",
+      "summary": "b12000 合併 PR #27512，把 OCP FP8（E4M3，saturating mode）加進 ggml，後續 stacked PR 會補 KV cache、CUDA、Vulkan 支援。b12007 的 PR #31073 把 KV cache 的 Hadamard rotation 常數留在 GPU，作者在 RTX 3090 + PCIe 2.0 環境測 Qwen3.5 9B Q4_K_M，tg128 從 71.2 提升到 77.4 tok/s（+8.7%），pp512 持平。",
+      "tags": [
+        "llama.cpp",
+        "quantization",
+        "fp8",
+        "kv-cache",
+        "llm_inference"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/27512",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b12007",
+      "price": null,
+      "vram": "runtime 更新，16GB 可用",
+      "license": "MIT"
+    },
+    {
+      "id": "20261030-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "sensenova/SenseNova-Loop-9B-Preview：looped decoder + mHC 的 9B 多模態 agent 模型",
+      "summary": "SenseTime 10/30 釋出的 9B 多模態模型（text + image 輸入），主打 long-context 與 agentic workflow。架構是 looped decoder：24 層共享權重的 block 跑兩次（32 個實體層、56 次 layer 執行），加上 two-stream manifold-constrained hyper-connections（mHC）與 linear/full attention 混合，訓練序列最長 256K。目前用 Transformers custom_code 或 SGLang 跑，還沒看到 GGUF。",
+      "tags": [
+        "looped transformer",
+        "long context",
+        "on-device",
+        "llm_inference"
+      ],
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xje5oo/sensenovasensenovaloop9bpreview_hugging_face/",
+      "price": null,
+      "vram": "BF16 約 19GB，16GB 需 8-bit 量化",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261030-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "inclusionAI/ZwZ2 27B / 9B / 4B：不用 zoom 工具的 Qwen 視覺推理 finetune",
+      "summary": "Zooming-without-Zooming-v2 用 SA-1B 圖片自動建出需要跨多個區域比較、配對的驗證題（EvidenceConnect），只用約 20K 筆資料直接跑 GRPO，不需額外 SFT。27B 版（基於 Qwen3.6-27B）在 25 個 benchmark 全部優於 base，overall 從 55.52 到 60.51；推論時看整張圖、不呼叫 zoom 工具。4B 已有社群 GGUF。",
+      "tags": [
+        "qwen",
+        "vision-language",
+        "grpo",
+        "rl"
+      ],
+      "url": "https://huggingface.co/inclusionAI/ZwZ2-27B",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xjcl4x/inclusionaizwz2_27b9b4b_qwen_finetunes/",
+      "price": null,
+      "vram": "4B/9B 16GB 可跑；27B 需 4-bit 量化",
+      "license": "Apache-2.0（GitHub repo；HF model card 未標示）"
+    },
+    {
+      "id": "20261030-ai-021",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "LessThanThreeAI/Gemma-4-31B-Humanlike-Chat GGUF：講話像真人的 Gemma 4 31B",
+      "summary": "把 Qwen3.8-27B-Humanlike-Chat 2.0 的「像朋友傳訊息」口吻搬到 Gemma 4 31B，不用 system prompt。model card 自報：blind judge 有 26% 時間把它的回覆當成真人（原版 Gemma 為 0%），When2Call 66 vs 46、BFCL irrelevance 90 vs 81，MMLU-Pro 維持 82.5，LiveCodeBench 比 Qwen 版高（66 vs 51）。",
+      "tags": [
+        "gemma",
+        "gguf",
+        "tool-calling",
+        "roleplay"
+      ],
+      "url": "https://huggingface.co/LessThanThreeAI/Gemma-4-31B-Humanlike-Chat-GGUF",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xjdjy0/gemma431bhumanlikechat_20s_improved_human_voice/",
+      "price": null,
+      "vram": "31B，16GB 需約 3-bit 量化或部分 offload",
+      "license": "Apache-2.0（依 model card；base 為 google/gemma-4-31B-it）"
+    },
+    {
+      "id": "20261030-ai-022",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Soft-MTP：Multi-Token Prediction 訓練只改一行，speculative decoding 更好",
+      "summary": "論文指出標準 MTP 的 cross-entropy gradient 可拆成「KL self-distillation」和低訊噪比的 residual，後者會干擾 next-token 與 multi-token 學習，模型越大越嚴重。提出 KL gradient-recovery trick，只保留 KL 訊號、不需 vocabulary 大小的 logit 矩陣、相容 fused CE kernel，號稱一行改動。code（MIT）與 167M–1.2B 實驗模型已釋出。",
+      "tags": [
+        "multi-token prediction",
+        "speculative decoding",
+        "training"
+      ],
+      "url": "https://github.com/JaydenTeoh/Soft-MTP",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2610.38331",
+      "price": null,
+      "vram": "研究模型 1.2B 以下，16GB 綽綽有餘",
+      "license": "MIT"
+    },
+    {
+      "id": "20261030-ai-023",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Claude Code for VS Code 2.1.313 被植入 SSH 後門（Cursor Marketplace）",
+      "summary": "Phorion 發現 Cursor Marketplace 上官方 Claude Code for VS Code extension 2.1.313 被植入跨 macOS/Linux/Windows 的持久化 SSH 後門。Cursor 已下架該版本，NPM 與 VS Code registry 上的 2.1.313 也被撤下；有裝過的要立即檢查並走 incident response。HN 討論近 600 分。",
+      "tags": [
+        "supply chain security",
+        "ai coding",
+        "claude code",
+        "ai_devtools"
+      ],
+      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50302334",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-30T18:26:58+08:00",
-  "updatedAt": "2026-10-30T18:26:58+08:00"
+  "lastUpdated": "2026-10-30T22:22:04+08:00",
+  "updatedAt": "2026-10-30T22:22:04+08:00"
 }
