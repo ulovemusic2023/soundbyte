@@ -100439,8 +100439,220 @@
       "source": "Synth Anatomy",
       "sourceUrl": "https://synthanatomy.com/2026/10/behringer-sp1200x-a-200-open-source-clone-of-the-e-mu-sp-1200-drum-machine.html",
       "price": "US$200（目標價）"
+    },
+    {
+      "id": "20261030-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "audio.cpp any-tts recipe：Kokoro + OpenVoice ToneColorConverter，多約 600MB VRAM 就能 voice clone",
+      "summary": "r/LocalLLaMA 網友把 OpenVoice 的 ToneColorConverter（voice conversion 部分可以單獨跑）接在 Kokoro 後面，做成 audio.cpp 的 any-tts recipe（recipe 是 v0.9.2 加的多模型 pipeline）。代價是 peak VRAM 多約 600MB、CUDA 上慢約 10%，CPU 上變 0.5× 但仍有 2× real-time；作者用合成聲音當參考，CAM++ speaker similarity 0.7–0.8。不用重訓就能讓任何小 TTS 有 cloning 能力，作者也說這是延伸既有模型，不是新的 cloning 模型。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "audio.cpp",
+        "kokoro",
+        "openvoice"
+      ],
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xiplj7/kokoro_can_now_clone_any_voice_with_just_600_mb/",
+      "price": null,
+      "vram": "Kokoro 加 ToneColorConverter，額外約 600MB",
+      "license": "Apache-2.0（audio.cpp）"
+    },
+    {
+      "id": "20261030-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ServiceNow-AI/Apriel-Voice-27B-preview：Whisper encoder 接 Gemma 4 26B-A4B 的語音理解 + tool calling 模型",
+      "summary": "ServiceNow 10/29 放出的 open model：Whisper large-v3-turbo speech encoder 透過 learned projector 接到 Gemma 4 26B-A4B backbone，支援 transcription、speech translation、spoken QA、多步推理和 function calling，也保留文字和圖片輸入。注意它只輸出文字和 tool call，不是 full-duplex 語音模型，要做語音助理得自己接外部 TTS。HF 上有 Apriel Live demo、blog 和 technical report。",
+      "tags": [
+        "tts_speech",
+        "speech understanding",
+        "tool calling",
+        "gemma 4",
+        "moe"
+      ],
+      "url": "https://huggingface.co/ServiceNow-AI/Apriel-Voice-27B-preview",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xipftk/servicenowaiaprielvoice27bpreview_hugging_face/",
+      "price": null,
+      "vram": "約 27B 參數、MoE 4B active；BF16 放不進 16GB，要等 4-bit quant 或 expert offload",
+      "license": "MIT"
+    },
+    {
+      "id": "20261030-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ollama v0.40.13：LFM3（含 lfm3-audio TTS、lfm3-omni）現在 Linux / Windows 也能跑",
+      "summary": "Ollama 10/29 的 release 只有一件事：Liquid AI 的 LFM3 系列，包括 text-to-speech 的 lfm3-audio 和 lfm3-omni，原本只支援 Apple silicon，現在 Linux 和 Windows 也能跑。今天早上雷達收過 LFM3-Audio-2B 和 LFM3-Omni-2B，想在 5070 Ti 上試的話這是最省事的路。",
+      "tags": [
+        "llm_inference",
+        "tts_speech",
+        "ollama",
+        "lfm3"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
+      "price": null,
+      "vram": "LFM3 audio/omni 約 2B，16GB 很寬裕",
+      "license": "MIT（Ollama）"
+    },
+    {
+      "id": "20261030-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Sam Altman：「local inference 是稀缺資源的糟糕配置」，r/LocalLLaMA 炸鍋",
+      "summary": "r/LocalLLaMA 今天最熱門的貼文引述 Sam Altman 的話：大家以為有 open-source model 就能在自己電腦上跑、不需要資料中心，但從全球配置來看，讓每個人電腦裡放一堆只用 5% 時間的 DRAM 很糟，在供給受限下應該追求雲端的最大利用率。社群的 TL;DR 是「賣產品的人說擁有自己的產品是壞主意」。原話出處貼文沒附連結，只有截圖。",
+      "tags": [
+        "local inference",
+        "dram shortage",
+        "openai",
+        "community"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xizbq1/sam_altman_local_inference_is_a_terrible/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xizbq1/sam_altman_local_inference_is_a_terrible/",
+      "price": null,
+      "vram": "產業觀點",
+      "license": "N/A"
+    },
+    {
+      "id": "20261030-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "40 天 coding agent telemetry：雲端供應商悄悄把 deepseek-v4.1-flash 換成 -1017 版",
+      "summary": "作者覺得 10 月中 deepseek-v4.1-flash 在 coding agent 裡突然變笨，於是解析本地 session log。10/17 釋出的 -1017 版修掉了「以為在講英文卻冒出中文」的老毛病，也讓 tool call 更積極，但各家 provider 在 10/19 前就直接把同一個 endpoint 換成新權重。他罵髒話的頻率變 3 倍、session 中途換模型的次數變 6.7 倍，而且雲端 API 沒辦法回退舊權重，這是本地跑的理由之一。",
+      "tags": [
+        "llm_inference",
+        "model drift",
+        "deepseek",
+        "coding agent"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xiqw9i/why_you_cant_trust_cloud_api_endpoints_40_days_of/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xiqw9i/why_you_cant_trust_cloud_api_endpoints_40_days_of/",
+      "price": null,
+      "vram": "觀察文",
+      "license": "N/A"
+    },
+    {
+      "id": "20261030-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Unsloth v0.1.912-beta：最多 4 個 fine-tuning job 一起用 multi-LoRA batching 訓練",
+      "summary": "Unsloth 10/28 版本：佇列裡相容的 fine-tuning job 現在會合併成 multi-LoRA batch 一起訓（最多 4 個）。另外首次啟動快約 2 倍、Linux 上 tool call 啟動從 84–174 ms 降到 1–2 ms、Gemma 3 4B 的 1,000 筆 chat dataset 準備從 6.6 s 降到 1.75 s；vLLM 和 SGLang 也支援 thinking 的 resume 和 JSON output。",
+      "tags": [
+        "llm_training",
+        "lora",
+        "unsloth",
+        "fine-tuning"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.912-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.912-beta",
+      "price": null,
+      "vram": "看模型大小；小模型 LoRA 在 16GB 可行",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261030-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "10 個 coding agent 共用同一個 Qwen 3.8 27B llama-server：token 和 cache reuse 差很多",
+      "summary": "網友在 M5 Max 64GB 上用 Qwen 3.8 27B Q4（thinking 關）跑 5 個帶陷阱的小任務，每個 agent 都關在 sandbox 裡。通過率差不多（4/5 到 5/5），但 Pi 每題只用約 9.2k tokens、Qwen Code 要約 108k；Hermes cache reuse 最高 93%，Atomic Agent 是唯一走 llama.cpp 原生 endpoint 加 grammar 的，reuse 86%；Codex CLI、Cline、OpenCode、goose 每次都嘗試連網。本地跑 agent 時選 harness 對速度影響比模型還大。",
+      "tags": [
+        "llm_inference",
+        "coding agent",
+        "llama.cpp",
+        "benchmark"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xj182d/10_coding_agents_one_qwen_38_27b_same_llamaserver/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xj182d/10_coding_agents_one_qwen_38_27b_same_llamaserver/",
+      "price": null,
+      "vram": "27B Q4 約 16GB 上下，5070 Ti 要縮 context 或部分 offload",
+      "license": "N/A"
+    },
+    {
+      "id": "20261030-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "UkisAI Swift 1.5：GLM-5.3-Flash 和 Ornith 9B 的「少想一點」版本",
+      "summary": "UkisAI 找出跟 overthinking 相關的 token 並加懲罰，再用 RL 和 on-policy distillation 把準確度補回來。Swift 1.5 GLM-5.3-Flash 在 MMLU-Pro 上 thinking token 少 61.4%，九個 benchmark 平均準確度只掉 0.46%（各跑 5 個 seed），提供 1–8 bit GGUF、AWQ、NVFP4；Swift 1.5 Ornith 9B 少 33.5% thinking token、無準確度損失，overthinking loop 約少一半。",
+      "tags": [
+        "llm_inference",
+        "reasoning efficiency",
+        "gguf",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Ornith-9B-GGUF",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xisqge/ukisai_swift_glm53_gsqrco_swift_ornith_9b_577/",
+      "price": null,
+      "vram": "Ornith 9B GGUF 輕鬆放進 16GB；GLM-5.3-Flash 看 quant",
+      "license": "N/A"
+    },
+    {
+      "id": "20261030-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "SheepSeb/tinyworldformer：在 Raspberry Pi Pico 2 W 上跑 world model 生成遊戲、同時讓 RL agent 玩",
+      "summary": "HN 137 分。兩個小網路同時跑在 RP2350 的一顆核心上：looped transformer world model（int8，26k–131k 參數）從目前畫面和動作預測下一格畫面和 reward，另一個 MLP actor 看生成畫面選動作。做了 Breakout、Doom-lite、Flappy Bird、Pong、Pac-Man lite，Flappy Bird 的 held-out 畫面 100% 完全正確；也能換成 stream-x agent 在板子上從零學，按鍵就能自己玩這個「夢」。",
+      "tags": [
+        "world model",
+        "looped transformer",
+        "edge ai",
+        "quantization"
+      ],
+      "url": "https://github.com/SheepSeb/tinyworldformer",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50295450",
+      "price": null,
+      "vram": "微控制器等級，不需 GPU",
+      "license": "未標示"
+    },
+    {
+      "id": "20261030-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-10-30",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "SkyPilot：Grace Blackwell NVL72 需要 topology-aware scheduler，同樣機櫃多出 27% 可用 GPU",
+      "summary": "HN 130 分。NVL72 讓整櫃 72 顆 GPU 共用 NVLink，但跨櫃的 job 還是卡在 InfiniBand，同一個訓練 job 走 InfiniBand 比 NVLink 慢約 43%。SkyPilot 說明怎麼靠 rack-local placement、GPU 故障時 in-place recovery 和自動 defragmentation，讓 tensor/expert parallelism 的通訊留在 NVLink 上，標題宣稱同樣機櫃多出 27% 可用 GPU。",
+      "tags": [
+        "gpu cluster",
+        "scheduling",
+        "nvl72",
+        "distributed training"
+      ],
+      "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50290912",
+      "price": null,
+      "vram": "資料中心等級",
+      "license": "N/A"
     }
   ],
-  "lastUpdated": "2026-10-30T01:12:26.597541+00:00",
-  "updatedAt": "2026-10-30T01:12:26.597541+00:00"
+  "lastUpdated": "2026-10-30T10:16:21+08:00",
+  "updatedAt": "2026-10-30T10:16:21+08:00"
 }
