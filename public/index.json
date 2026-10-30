@@ -100651,8 +100651,264 @@
       "price": null,
       "vram": "資料中心等級",
       "license": "N/A"
+    },
+    {
+      "id": "20261030-sw-020",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cursor 擴充市集出現木馬版 Claude Code 擴充（2.1.313），最多 5,000 名使用者受影響",
+      "summary": "10/29 約 02:27–13:35 PT，Cursor 的 VS Code extension marketplace 上架了被竄改的 Anthropic.claude-code 2.1.313（非 Anthropic 所發布）：會蒐集主機資訊、把攻擊者的 SSH key（標記 svc-telemetry）寫進 authorized_keys、嘗試開 reverse SSH tunnel 並在 macOS/Windows 建立持久化。Cursor 已下架、重建 marketplace 並輪換 key，攻擊者 server 已離線；官方提醒光移除擴充不夠，要跑檢查腳本清除持久化並輪換憑證。Cursor 在 X 的公告約 2.5k 讚，StepSecurity、Phorion 皆有獨立分析。",
+      "tags": [
+        "must-know",
+        "supply-chain-security",
+        "coding-agent",
+        "claude-code",
+        "cursor"
+      ],
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-021",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "AWS Hydro 團隊：讓 compiler 來抓 coding agent 的錯，而不是靠人 review",
+      "summary": "Hydro 是 AWS 與 UC Berkeley 合作的開源 Rust distributed systems framework，現在大部分 code 由 agent 撰寫，曾出現約 5,000 行、難以拆分的 PR。研究負責人 Shadaj Laddad 主張：agent 同時寫 code 和 unit test，測試不可盡信，正確性檢查應放在 agent 的「zone of trust」之外——像 Rust borrow checker 那樣在 compile time 擋下 distributed systems bug，下一步想把 idempotency 等模式做成可共用的 guardrail。同團隊也做了開源 agent runtime Infinity。",
+      "tags": [
+        "paradigm-shift",
+        "ai coding",
+        "rust",
+        "distributed systems",
+        "compiler-guardrails"
+      ],
+      "url": "https://thenewstack.io/ai-agents-compiler-guardrails/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/ai-agents-compiler-guardrails/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-022",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Microsoft 把 GitHub Copilot 的 agent harness 開放給開發者：Foundry 上的 Copilot harness public preview",
+      "summary": "同一套 harness 已驅動 Copilot Code、Copilot Studio、GitHub Copilot、CLI 與 VS Code，現透過 Foundry Agent Service 開放 public preview，內建 sandboxing、skills、MCP 整合與 subagents。限制是 harness 類型建立後不能更換、不支援 bring-your-own model、CPU/memory 由 Microsoft 控制；12/1 前 harness 免費，之後 vCPU-hour $0.0994、GiB-hour $0.0118。",
+      "tags": [
+        "agent framework",
+        "harness-engineering",
+        "mcp",
+        "github copilot",
+        "vendor-lock-in"
+      ],
+      "url": "https://thenewstack.io/microsoft-copilot-harness-foundry/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/microsoft-copilot-harness-foundry/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-023",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "AWS James Ward：MCP server 不該只吐資料，要告訴 agent 下一步做什麼",
+      "summary": "AWS principal developer advocate、Agentic AI Foundation 技術委員 James Ward 認為多數 MCP server 只是薄薄一層 API；tool response 應附上「剛做了什麼、接下來可做什麼、去哪找更多」的指引。MCP 預設沒有 trace ID，AWS 的做法是在 tools 加 session ID（和使用者目標摘要）參數，把整段 agent journey 串起來做 eval，再調整 tool description 或補 batch tool。",
+      "tags": [
+        "mcp",
+        "tool use",
+        "agent observability",
+        "evals"
+      ],
+      "url": "https://thenewstack.io/aws-mcp-agent-observability/",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/aws-mcp-agent-observability/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-024",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "InfoQ AI/ML/Data Engineering Trends Report 2026：Harness Engineering、Spec-Driven Development、System One 模型進入 Innovators",
+      "summary": "InfoQ 年度採用曲線（Srini Penchikala、Chip Huyen 等人）：Innovators 新增 agent-to-agent protocols、inference engines（vLLM/SGLang/llm-d）、harness engineering、spec-driven development / AI software factories、System One decision models；agentic coding、agent observability、MCP、model routing 升到 Early Adopters；context engineering、RAG、vector DB 進入 Early Majority。",
+      "tags": [
+        "ai agent",
+        "harness-engineering",
+        "spec-driven development",
+        "system-one-model",
+        "evals"
+      ],
+      "url": "https://www.infoq.com/articles/ai-ml-data-engineering-trends-2026/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/ai-ml-data-engineering-trends-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-025",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Herdr 推出原生桌面 app：專為 terminal + coding agent 設計的工作區",
+      "summary": "Herdr 從 TUI 走向原生 desktop app（Linux/macOS/Windows），底層用 libghostty。以 space/tab/pane 組織終端機，agents sidebar 把各 space 的 agent（含其他 agent 啟動的 worker）集中列出，顯示 Working / Blocked / Done 狀態，關窗後 terminal 仍持續執行。HN 211 分，有使用者說用了十年 tmux 後換過來。",
+      "tags": [
+        "coding agent",
+        "developer experience",
+        "terminal",
+        "ghostty"
+      ],
+      "url": "https://github.com/herdrdev/herdr-app",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50298436",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-026",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "「AI 時代你也覺得更累嗎？」——平行盯多個 agent 的心智負擔成為熱門話題",
+      "summary": "Ask HN 發文者說 AI 讓產出變多，但要追蹤大量平行工作、讀大量生成文字、不斷 guardrail 與切換 context，反而更累。同時 Gergely Orosz 表示，他問過的開發者幾乎都懷念 coding 的 flow state，只有在打造「AI 還做不到、沒有藍圖」的 agentic 系統的人例外（約 636 讚）；他也引用 Rootly 數據：開發者下班時間被 page 的次數約為一年前的 2 倍，推測與 AI 帶來的 PR 量倍增有關。",
+      "tags": [
+        "must-know",
+        "developer experience",
+        "ai-assisted development",
+        "agent-fatigue"
+      ],
+      "url": "https://x.com/GergelyOrosz/status/2115965483279331735",
+      "source": "Hacker News / X",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50301479",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-027",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "404 Media：Proton 內部的 AI 強推——CEO 稱上線前 pentest 是「loser thinking」",
+      "summary": "404 Media 訪談 8 名現職、1 名前員工並看過 Slack 與會議紀錄：Proton CEO Andy Yen 要工程師「別再手工細琢 code、多用 AI」，設信箱讓員工回報阻礙 AI 的事物、在電腦裝軟體追蹤 AI 產生的 code 量，並稱今年是最後一年招工程師。對一家以隱私安全為賣點的公司，安全審查 vs. AI velocity 的衝突引發 HN 兩串討論（165 分、98 分）。",
+      "tags": [
+        "must-know",
+        "ai coding",
+        "engineering culture",
+        "security"
+      ],
+      "url": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/",
+      "source": "404 Media",
+      "sourceUrl": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-028",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Node.js 26 進入 LTS（Lithium），Vercel 同步 GA：內建 fetch 預設走 HTTP/2",
+      "summary": "Node.js 26.13.0 於 10/28 轉為 LTS（代號 Lithium），支援到 2029 年 4 月。Vercel 10/29 讓 Node 26 成為新專案預設：Undici 8 讓內建 fetch 預設使用 HTTP/2、Temporal API、V8 14.6；engines.node 範圍寬鬆（如 >=20）的既有專案下次部署就會自動升級，需要時可設 VERCEL_FETCH_DISABLE_H2=1 退回 HTTP/1.1。Rauch 提到 agent 產生大量網路流量，HTTP/2 會有幫助。",
+      "tags": [
+        "serverless",
+        "node.js",
+        "http/2",
+        "vercel"
+      ],
+      "url": "https://nodejs.org/en/blog/release/v26.13.0",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-029",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Netflix Titus 推出 single-tenant 模式：一個 task 獨占一台 right-sized EC2",
+      "summary": "Titus 預設多租戶，但 cgroups、seccomp、iocost 等無法切分 last-level cache 與記憶體頻寬，HTB traffic shaper 還有 global lock。Netflix 評估 Firecracker/Kata（需 nested virtualization、缺 GPU 支援）與 gVisor（I/O overhead）後，選擇用 anti-affinity、non-preemptible priority class 和 taint 讓一個 task 獨占一個 node，平台團隊仍負責 patch；代價是啟動延遲（新機器要開機數十秒）。",
+      "tags": [
+        "kubernetes",
+        "isolation",
+        "platform engineering",
+        "netflix"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/netflix-titus-kubernetes-microvm/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/netflix-titus-kubernetes-microvm/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-030",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Microsoft 退役 Azure Deployment Environments（2027/2/22），且沒有替代產品",
+      "summary": "Azure Deployment Environments 將於 2027/2/22 停止，Microsoft Dev Box 於 2028/9/18 跟進（導向 Windows 365，但官方自己說不等價）。退役指南只建議直接用 Bicep/ARM、Azure verified modules 和 CI/CD pipeline，並坦言找不到支援 Bicep/ARM 生命週期的第三方方案。InfoQ 指出，被拿掉的其實是 governed catalog + 自助入口，這塊落到 Backstage 等 internal developer platform。",
+      "tags": [
+        "platform engineering",
+        "internal developer platform",
+        "infrastructure as code",
+        "azure"
+      ],
+      "url": "https://www.infoq.com/news/2026/10/ade-dev-box-retirement/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/ade-dev-box-retirement/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261030-sw-031",
+      "radar": "software-dev",
+      "date": "2026-10-30",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "PHP2Shell 串接 kernel LPE，root 掉 25 台 PAN-OS 防火牆（含美國政府相關環境）",
+      "summary": "Dream Research 發現攻擊者把 PHP2Shell（CVE-2026-109618/109619）與 Fragnesia kernel 提權（CVE-2026-46300）串成單一 request 的 exploit，root 掉美、日、台、韓 25 台 PAN-OS 防火牆與管理伺服器，再打 Active Directory。現場有 Claude Code、設定 DeepSeek/Kimi 的 aiscan，研究者認為約 40 支 script 疑似 AI 輔助撰寫，但無直接證據。Palo Alto Unit 42 已驗證並釋出修補版本。",
+      "tags": [
+        "supply chain security",
+        "incident management",
+        "php2shell",
+        "ai-assisted attack"
+      ],
+      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+      "source": "Dream Research",
+      "sourceUrl": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-30T10:16:21+08:00",
-  "updatedAt": "2026-10-30T10:16:21+08:00"
+  "lastUpdated": "2026-10-30T18:26:58+08:00",
+  "updatedAt": "2026-10-30T18:26:58+08:00"
 }
