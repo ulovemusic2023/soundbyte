@@ -102287,8 +102287,162 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261031-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "KoboldCpp v1.124：整合 audio.cpp，內建 YuE2 音樂生成和十幾個 TTS（BreezeTTS 2、Ming 3.0、Qwen3-TTS、VoxCPM2…）",
+      "summary": "KoboldCpp 10/31 發 v1.124，把 audio.cpp 的一批模型直接收進來：Music Gen 終於支援 YuE2（有不帶 LLM、搭 4B 小 LLM 寫歌詞、搭大 LLM 三種 template），TTS 則加了 BreezeTTS 2、Ming 3.0 TTS 0.5B、Qwen3-TTS Base / VoiceDesign、VoxCPM2、CosyVoice 3、Fish Audio S2 Pro 等，很多標了 voice cloning，全部是 GGUF。MusicUI（localhost:5001/musicui）也多了 Whisper 轉錄分頁，方便準備 voice clone 要的 reference transcript；圖像端同步加了 Flux 3 Klein、MOSS Image、Fibo 2 Edit。",
+      "tags": [
+        "audio_music_ai",
+        "tts_speech",
+        "koboldcpp",
+        "yue2",
+        "voice cloning",
+        "gguf"
+      ],
+      "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.124",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xk1vyk/",
+      "price": null,
+      "vram": "TTS 多是 0.5B–1.7B 的 Q8_0 GGUF；YuE2 大 LLM 版 release 註明只適合大 GPU",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261031-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Betelgeuse：llama.cpp fork，在 RTX 3060 12GB + 16GB RAM 跑 Qwen3.8-Flash-Next，22 tok/s 且輸出 bit-exact",
+      "summary": "作者把 68GB 的 GSQ-RCO-IQ2_XS Flash-Next 拆成 3.2GB dense 部分常駐 VRAM，其餘 VRAM 做成約 5,000 個 expert slot pool，被踢出的 expert 進 RAM victim cache，再用 io_uring 從 NVMe 讀，每 token SSD 讀取從約 71MB 降到 12.43MB。同一台機器上 stock llama.cpp 只有 1.47 tok/s、Strata 的 --low-ram 模式 8.11 tok/s，Betelgeuse warm 約 22 tok/s、峰值 48，而且不砍任何 expert，對 golden output 逐 byte 比對一致。repo 今天才建、還是 alpha，但 16GB 卡用同樣思路空間更大。",
+      "tags": [
+        "llm_inference",
+        "moe offload",
+        "expert vram pool",
+        "llama.cpp fork",
+        "qwen3.8-flash-next"
+      ],
+      "url": "https://github.com/Betelgeuse-AI/Betelgeuse",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xk8s6z/",
+      "price": null,
+      "vram": "實測 12GB VRAM + 16GB RAM + NVMe，模型本體 IQ2_XS 68GB 大部分放在 SSD",
+      "license": "MIT"
+    },
+    {
+      "id": "20261031-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Basalt 作者實測 MoE offload 的 lossy flags：模擬 16GB 卡時，routing bias + tail skip 換到 +56% 速度，但推理和事實題明顯掉分",
+      "summary": "Basalt（Blackwell 上跑 Qwen3.8-Flash-Next 的推理引擎）作者把兩個常見加速手法做成可開關的 flag 來量：routing bias（偏向已在 GPU 的 expert）和 tail skip（排名低的 expert 不在 GPU 就跳過）。大 VRAM 下用常見預設只掉約 1.5 分、速度也沒多少好處；把 expert cache 壓到 5GB 模擬 16GB 卡時，速度 +56%，但 chained reasoning 掉 5.2 分、closed-book facts 掉 2.3 分，KLD 上等於掉到 IQ3_XXS 到 Q2 之間。結論是挑引擎時要看預設有沒有偷開這類 flag。",
+      "tags": [
+        "llm_inference",
+        "moe offload",
+        "kld",
+        "quantization",
+        "benchmarking"
+      ],
+      "url": "https://github.com/jesdga95/basalt",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xkbbqi/",
+      "price": null,
+      "vram": "測試機是 RTX 5090 + 5060 Ti + 128GB RAM；另外把 expert cache 限到 5GB 模擬 16GB 卡",
+      "license": "MIT"
+    },
+    {
+      "id": "20261031-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Xing4.0-29B-A4B 拿到 ik_llama.cpp 原生支援（PR #2808）：mHC + MLA 架構，附 HF→GGUF converter",
+      "summary": "中國電信 TeleAI 的 Xing4.0-29B-A4B 是 29.5B MoE、約 4B active，混了 DeepSeek 式 MLA 和 4-stream mHC residual mixing。上游 llama.cpp 的 PR 因為要不要加 model-specific GGML opcode 卡住，這個 ik_llama.cpp PR 只用通用 GGML primitive 實作，CPU / CUDA / Metal / Vulkan 都能跑，還會自動保護 mHC 權重不被量化，作者量到 perplexity 12.419。PR 10/30 開、還沒合併，要從分支自己編。",
+      "tags": [
+        "llm_inference",
+        "ik_llama.cpp",
+        "gguf",
+        "moe",
+        "mla"
+      ],
+      "url": "https://github.com/ikawrakow/ik_llama.cpp/pull/2808",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xjqsb4/",
+      "price": null,
+      "vram": "29.5B MoE、4B active，16GB 卡要 Q4 左右加部分 expert offload 到 RAM",
+      "license": "模型 Apache-2.0；ik_llama.cpp MIT"
+    },
+    {
+      "id": "20261031-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "QEngine 1.3.1 在 2× RTX 5090 跑 Qwen3.8-Flash-Next：單流 decode 最高 504 tok/s，比 Strata 快約 1.4–1.9 倍",
+      "summary": "網友把原本為 3× RTX 3090 寫的 C++/CUDA 引擎 QEngine 改 CMAKE_CUDA_ARCHITECTURES 成 sm_120 編給 5090，用它的 INT4 AutoRound Flash-Next 跟 Strata、vLLM 等四個引擎比。單流 decode 370–439 tok/s，開 FLASH_KV=ram 到 406–504；12 輪 tool-use agentic bench 的 prompt 讀取跟 Strata 打平約 1.75 秒。作者也提醒 bench 重複同樣 prompt、expert cache 會受益，混合流量實際約 300–400 tok/s，而且 90K 長 context prefill 輸給 Strata。",
+      "tags": [
+        "llm_inference",
+        "qengine",
+        "inference engine benchmark",
+        "qwen3.8-flash-next",
+        "multi-gpu"
+      ],
+      "url": "https://github.com/bpx03/QEngine",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xjx0ez/",
+      "price": null,
+      "vram": "測試是 2× RTX 5090（共 64GB）加 251GB RAM",
+      "license": "Source-available（GitHub 未標準授權）"
+    },
+    {
+      "id": "20261031-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "microsoft/Mage-VL-Cowork：4B 視覺語言模型做 computer use，OSWorld-Verified 66.0% 是同尺寸最佳",
+      "summary": "Microsoft 10/30 在 HF 放出 Mage-VL-Cowork，一個 4B 級 VLM，專做桌面 hybrid computer use。官方說靠 teacher-harness 演化、Mage-CUA-Forge 合成工作流環境和五階段 specialize-then-unify curriculum，加上 online RL 後在 OSWorld-Verified 拿 66.0%，同時少用 13% model call、少 25.4% output token。想做本地端的 desktop agent，這個尺寸很好塞。",
+      "tags": [
+        "cv_ocr",
+        "ai_devtools",
+        "computer use",
+        "vlm",
+        "on-device agent"
+      ],
+      "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xk6blw/",
+      "price": null,
+      "vram": "約 4.7B 參數，BF16 權重約 9.5GB，16GB 放得下",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261031-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Opera 推 WebAI：提案中的 web standard，讓網站和 extension 直接呼叫瀏覽器裡的本地模型",
+      "summary": "Opera 10/27 起在 Opera One 開放 WebAI early preview，說這是 Google、Microsoft 等支持的提案標準，提供 Prompt、Decision、Semantic Embeddings 三組 API，網站或 extension 可以在使用者電腦上跑模型、資料不用上雲，也不用 API key。目前支援 Gemma 等 open-weight 模型，Mac 上還能用 Apple 的 on-device foundation model；需要手動在設定開啟，只支援 64-bit Windows 和 Apple silicon Mac，Linux 還不行。",
+      "tags": [
+        "infra_runtime",
+        "webai",
+        "browser local inference",
+        "web standard"
+      ],
+      "url": "https://blogs.opera.com/news/2026/10/webai-local-ai-for-the-web-now-in-opera/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xk70qu/",
+      "price": null,
+      "vram": "瀏覽器內建小模型，速度看裝置",
+      "license": "N/A"
     }
   ],
-  "lastUpdated": "2026-10-31T18:30:56+08:00",
-  "updatedAt": "2026-10-31T18:30:56+08:00"
+  "lastUpdated": "2026-10-31T22:21:07+08:00",
+  "updatedAt": "2026-10-31T22:21:07+08:00"
 }
