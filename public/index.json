@@ -102117,8 +102117,178 @@
       "price": null,
       "vram": "硬體新聞，不適用",
       "license": "N/A"
+    },
+    {
+      "id": "20261031-sw-012",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "title": "Factory 發表 Droid 1.0：預設改用 programmatic tool calling，一次 model request 跑上百個 tool calls",
+      "summary": "Factory 把自家 agent harness 大改成 Droid 1.0，最大改變是 programmatic tool calling（PTC）變預設：模型寫一段 JavaScript 在沒有檔案、網路權限的 sandbox 裡呼叫工具，原始檔案、搜尋結果、logs 都留在程式變數裡，context 只收到程式輸出；互不相依的呼叫會並行。官方範例中同樣 15 個 tool calls，model calls 從 10 次降到 5 次、快 15 秒。Factory 自己公布的 Terminal-Bench 4 結果：用 GPT-6.1 Sol 時 57.6%、比 Codex 高 3.5 分且便宜 12%；用 Opus 5.5 時 65.2%，比 Cursor、OpenCode、Devin、Claude Code 高 3.0–7.6 分。這是廠商自測數字。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "agent harness",
+        "programmatic-tool-calling",
+        "coding agent",
+        "context engineering"
+      ],
+      "url": null,
+      "source": "Factory",
+      "sourceUrl": "https://factory.com/news/frontier-harness",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-013",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "title": "Vercel Labs 推出 agent-desktop：用 OS accessibility tree 讓任何 coding agent 操作桌面 app",
+      "summary": "agent-desktop 是 Rust 寫的 CLI 加 C library，支援 macOS、Windows、Linux：snapshot 會回傳 JSON，每個可操作的 UI 元素都有一個 ref，agent 對 ref 下動作再重新 snapshot 確認，不靠 screenshot 猜像素，loop 留在你自己的 agent 裡。可以在背景跑，多個 agent 平行各用自己的 cursor。原本是 lahfir 的專案，10/28 出 v1.0、轉到 vercel-labs，Apache-2.0，約 3,000 stars；Chris Tate 的發表貼文約 4,500 讚。README 也提醒 snapshot 與截圖可能含私人桌面內容。",
+      "priority": "medium",
+      "tags": [
+        "computer use",
+        "accessibility-tree",
+        "coding agent",
+        "agent tooling"
+      ],
+      "url": "https://x.com/ctatedev/status/2116323148706771302",
+      "source": "GitHub（vercel-labs/agent-desktop）",
+      "sourceUrl": "https://github.com/vercel-labs/agent-desktop",
+      "price": null,
+      "vram": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261031-sw-014",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "title": "DoorDash 把 grocery 重購從 16 秒降到 2 秒：把推理移出 agent loop，預先 batch 算好",
+      "summary": "DoorDash 的 Ask DoorDash 原本每次請求都即時重建「你常買什麼」，現在改成用 90 天購買紀錄做 batch LLM inference，先經 deterministic validation 再存成可重用的清單；線上請求只做 catalog 比對（原商品、產品 ID、再退到搜尋詞）。延遲從約 16 秒降到 2 秒，清單瀏覽翻倍、下單率約增 34%。工程師 Twisha Jain 的重點是：好的 agentic system 不一定是更多推理，而是決定哪些該留在 agent loop、哪些可以提前做。",
+      "priority": "low",
+      "tags": [
+        "agent architecture",
+        "batch inference",
+        "latency",
+        "precompute"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-015",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "title": "Linux kernel TCP use-after-free（CVE-2026-98432）可遠端 RCE；Go 1.24 起預設開 MPTCP，Go 團隊要大家先升 kernel",
+      "summary": "這個 CVSS 9.8 的漏洞出在 IPv4 TCP 處理 SYN 時的 ip options（Ubuntu 列為所有版本受影響），Anthropic 在 10/27 的研究文章中示範：對有 Multipath TCP（MPTCP）listener 的 Linux server 可以不需帳密直接以 root 執行指令。Go 團隊指出 Go 1.24 起 Linux 上的 listen socket 預設啟用 MPTCP，可用 GODEBUG=multipathtcp=0 或 go.mod 的 godebug 暫時關掉，但強調這是脆弱的緩解，底層 bug 不限於 MPTCP，最好的修法是升級 kernel。Linode（Akamai）正在部署緩解並要客戶盡快套 OS 更新。",
+      "priority": "high",
+      "tags": [
+        "security",
+        "linux kernel",
+        "mptcp",
+        "golang",
+        "ai vulnerability discovery"
+      ],
+      "url": "https://ubuntu.com/security/CVE-2026-98432",
+      "source": "golang-announce",
+      "sourceUrl": "https://groups.google.com/g/golang-announce/c/PCoQcdxoScw",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-016",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "title": "Thariq：coding agent 會讓人陷入「一種 mania」，感覺很忙但什麼都沒發生",
+      "summary": "Thariq（@trq212）10/30 發文說，用 coding agent 很容易進入一種狂熱狀態，好像一直在工作、做了很多事，其實什麼都沒真正推進，他認為這常是在逃避生活中的其他事。貼文約 1.6 萬讚、126 萬次瀏覽，大量轉發的共識是：用實際上線的功能、修掉的 bug、能在 10 分鐘內 review 完的 PR 來衡量，而不是 agent 跑了多久、diff 多大。多則轉述說他剛離開 Anthropic，這點貼文本身沒提。",
+      "priority": "medium",
+      "tags": [
+        "agent-mania",
+        "developer productivity",
+        "coding agent",
+        "ai workflow"
+      ],
+      "url": null,
+      "source": "X（@trq212）",
+      "sourceUrl": "https://x.com/trq212/status/2115937378674372783",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-017",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "title": "bunny.net 也中招：上游主機商的 server 管理軟體被入侵，全面重發 TLS 憑證",
+      "summary": "bunny.net 說上週一家 infrastructure provider 回報其 third-party server management software 遭未授權存取，bunny 在亞美尼亞的一個 CDN node 就跑在那台主機上；他們 20 分鐘內切流量、抹除並移除該 server，目前雙方都沒找到存取證據，但無法完全排除。預防措施是重發 b-cdn.net、bunny.run 所有憑證，custom domain 的 managed 憑證預計 10/31 前分批換新 private key；自管憑證的客戶建議自己 revoke 重簽。HN 218 分；同一天 Scribd 用戶也收到資料外洩通知，HN 上有人說首頁「被 breach 洗版」，延續本週 Railway、Northflank 的事件潮。",
+      "priority": "medium",
+      "tags": [
+        "security",
+        "cdn",
+        "tls",
+        "supply chain",
+        "breach-wave"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50312756",
+      "source": "bunny.net Status",
+      "sourceUrl": "https://status.bunny.net/incidents/p6gf1by9kr7m",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-018",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "title": "Lobsters 把「怎麼用（或不用）LLM」的文章列為 off-topic，社群在 meta 討論串爭論理由",
+      "summary": "Lobsters 最近調整 moderation，把 vibecoding tag 改成較窄的 building-LLM-tooling，談 LLM 使用心得的文章則被視為離題。facundoolano 發 meta 文質疑：這類討論對專業開發者其實有用，為何不另開 tag 讓人自行過濾？高票回覆的看法是，多數 LLM 使用文不是「我叫 LLM 做了某件事」，就是「這是我用的一組 Markdown 檔」，前者沒教到任何程式知識，後者幾天後就過時；另一則說，討論這些的地方很多，缺的是不被它淹沒的地方。",
+      "priority": "low",
+      "tags": [
+        "developer community",
+        "moderation",
+        "llm discourse"
+      ],
+      "url": null,
+      "source": "Lobsters",
+      "sourceUrl": "https://lobste.rs/s/spv7tb/rationale_for_filtering_llm_usage_links",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-019",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "evening",
+      "title": "Firezone 開源 sanstun：sans-IO、適合平行處理的 Rust WireGuard 實作",
+      "summary": "Firezone 原本用 Cloudflare 的 boringtun，兩年多來在 fork 上累積超過 70 個 PR 的修補與 API 擴充，最後決定重寫成 sanstun：把 IO、時間、亂數等 side effects 和 WireGuard state machine 完全分開（sans-IO），方便模擬整個系統做測試，也避開 function coloring，符合 Rust ownership。設計上拿掉函式庫內部的 buffering，讓 API 更直覺、少配置記憶體。HN 136 分。",
+      "priority": "low",
+      "tags": [
+        "sans-io",
+        "rust",
+        "wireguard",
+        "networking"
+      ],
+      "url": null,
+      "source": "Firezone Blog",
+      "sourceUrl": "https://www.firezone.dev/blog/introducing-sanstun",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-31T10:22:14+08:00",
-  "updatedAt": "2026-10-31T10:22:14+08:00"
+  "lastUpdated": "2026-10-31T18:30:56+08:00",
+  "updatedAt": "2026-10-31T18:30:56+08:00"
 }
