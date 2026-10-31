@@ -101642,8 +101642,287 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261031-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "lyramakesmusic/neuron-explorer",
+      "summary": "針對 Qwen3.5-4B 的 steering-first neuron explorer：把每一層 MLP neuron 往正負方向推，保留所有 rollout，再用 3D 視圖、logit lens、UMAP 瀏覽結果。本機 CUDA / MPS 就能跑（4B 模型 16GB VRAM 夠用），還內建一個透過 MCP 接 claude CLI 的 agent 幫你做 ablation 與分析。",
+      "tags": [
+        "local-llm",
+        "interpretability",
+        "mcp",
+        "claude-code"
+      ],
+      "url": "https://github.com/lyramakesmusic/neuron-explorer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 1748,
+      "createdDate": "2026-10-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261031-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "l0ng-ai/openidea",
+      "summary": "用 Rust 重寫、IntelliJ IDEA 風格的原生 IDE：保留熟悉的 keymap、tool windows、search-everywhere，內建 editor、code insight、debugger、Git、terminal、database 與 HTTP client，號稱支援 60+ 語言。想要 JetBrains 手感但更輕快的可以看看。",
+      "tags": [
+        "ide",
+        "rust",
+        "developer-tool"
+      ],
+      "url": "https://github.com/l0ng-ai/openidea",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 1669,
+      "createdDate": "2026-10-21",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261031-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "CopilotKit/OpenDuet",
+      "summary": "CopilotKit 開源的 proactive agent 模板，建在 OpenBot 之上：每天早上給 brief、整理 mail / calendar / Slack 裡真正需要你的事，並在自己的電腦環境（真瀏覽器、獨立檔案）裡持續做事；送出、付款、刪除前都會先問你。可 self-host、自選模型，但 threads 與 memory 需要免費的 CopilotKit Intelligence 專案，目前仍屬早期開發。",
+      "tags": [
+        "ai-agent",
+        "proactive-agent",
+        "self-hosted"
+      ],
+      "url": "https://github.com/CopilotKit/OpenDuet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 1656,
+      "createdDate": "2026-10-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261031-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "andyhuo520/digital-human-koubo",
+      "summary": "一張照片生成 AI 數位人口播影片的 Claude Code agent skill：透過 Renoise MCP 生成，附 5 種剪輯風格和 48 個創作者級包裝元件。做音樂內容或 SoundByte 短影音推廣時可以參考它的 pipeline。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "creator-tool",
+        "video-generation"
+      ],
+      "url": "https://github.com/andyhuo520/digital-human-koubo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 1556,
+      "createdDate": "2026-10-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20261031-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "colinhacks/reylo",
+      "summary": "Zod 作者 Colin McDonnell 的新專案：直接 import .sql 檔進 TypeScript，享有完整 type inference，而且 zero codegen。寫 SQL 又想要型別安全、不想多一步 codegen 的人值得試。",
+      "tags": [
+        "typescript",
+        "sql",
+        "developer-tool"
+      ],
+      "url": "https://github.com/colinhacks/reylo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 1425,
+      "createdDate": "2026-10-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261031-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "heydamir/unslop",
+      "summary": "一個 Claude skill，專門把 vibecoded、一看就是 AI 做的 UI（紫色漸層、glow、emoji label、間距不均）改成有個性的設計。先 audit、提方向再動手，依序過 spacing / color / icon / copy / type / layout，還能用 Playwright + ffmpeg 產出 10 秒內的前後對比影片。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "ui-design",
+        "vibe-coding"
+      ],
+      "url": "https://github.com/heydamir/unslop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 1307,
+      "createdDate": "2026-10-29",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "20261031-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "ZiChuanLan/agent-purge",
+      "summary": "一份 system prompt / persona 同時餵給多個 coding agent（codex、claude、opencode、grok、pi 等）。支援 replace / strict / append / off 四種模式，可透過 install、PATH shim、會話內 /purge 指令熱切換，全程可逆；npm 安裝、零依賴，附本地 web console。",
+      "tags": [
+        "coding-agent",
+        "system-prompt",
+        "cli-tool"
+      ],
+      "url": "https://github.com/ZiChuanLan/agent-purge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars",
+      "stars": 913,
+      "createdDate": "2026-10-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20261031-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "didi/helixharness",
+      "summary": "滴滴金融科技團隊開源的 AI coding harness，跑在 Codex / Claude Code 上：用 Propose → Apply → Archive 流程把團隊的業務規則、工程規範、驗證過的經驗沉澱成可重用的 context，支援單 repo 與 multi-repo workspace，共 9 個指令。",
+      "tags": [
+        "agent-harness",
+        "coding-agent",
+        "claude-code",
+        "codex"
+      ],
+      "url": "https://github.com/didi/helixharness",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars",
+      "stars": 180,
+      "createdDate": "2026-10-27",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261031-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "EntranceStarfish/VoiceStudioV2",
+      "summary": "全離線的本地 AI voice studio：real-time voice changer、TTS、voice cloning 與 dubbing，並提供 OpenAI-compatible API 可直接替換。注意它是 VoiceStudio 的非官方 fork，昨天才建立，先觀望穩定度。",
+      "tags": [
+        "voice-cloning",
+        "text-to-speech",
+        "local-ai",
+        "audio"
+      ],
+      "url": "https://github.com/EntranceStarfish/VoiceStudioV2",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E20+topic%3Avoice-cloning&type=repositories&s=stars",
+      "stars": 128,
+      "createdDate": "2026-10-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20261031-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "drawthingsai/local-code-community",
+      "summary": "Draw Things 團隊的 Local Code 原始碼：在 Mac、iPad、iPhone 上本機跑 DeepSeek 4.1 的私人 AI agent，內建 Python、Node.js 與 shell。看 on-device coding agent 怎麼做的好範例。",
+      "tags": [
+        "local-llm",
+        "coding-agent",
+        "on-device"
+      ],
+      "url": "https://github.com/drawthingsai/local-code-community",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-17+stars%3A%3E20+topic%3Alocal-llm&type=repositories&s=stars",
+      "stars": 58,
+      "createdDate": "2026-10-21",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261031-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "NVIDIA/cuda-rust",
+      "summary": "NVIDIA 官方的 Rust CUDA 平台：host runtime crates 加上 Tile（cutile-rs）與 SIMT（cuda-oxide）兩種 kernel 寫法，都是 idiomatic Rust。之後想在 RTX 5070 Ti 上用 Rust 寫音訊 / DSP GPU kernel 可以記著。",
+      "tags": [
+        "cuda",
+        "rust",
+        "gpu"
+      ],
+      "url": "https://github.com/NVIDIA/cuda-rust",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 3910,
+      "createdDate": "2026-04-22",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261031-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Dedica",
+      "summary": "測試 AI agent 能不能順利使用你的網站：免費跑 125 項檢查，每個失敗點都給可以直接丟給 coding agent 的修法。10/28 Product Hunt 日榜第 1。",
+      "tags": [
+        "ai-agent",
+        "website-audit",
+        "developer-tool"
+      ],
+      "url": "https://getdedica.com",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/10/28"
+    },
+    {
+      "id": "20261031-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Vaani Developer Platform",
+      "summary": "自稱 voice AI harness 的平台：不寫程式就能設計通話流程、處理例外、接工具與知識庫，直接上線到真實電話號碼，每通電話結束都輸出結構化資料。10/30 Product Hunt 日榜第 1。",
+      "tags": [
+        "voice-agent",
+        "audio",
+        "no-code"
+      ],
+      "url": "https://www.vaani.dev/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/10/30"
+    },
+    {
+      "id": "20261031-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "zzunkie/yardlet",
+      "summary": "開源的原生 macOS app，把 Codex、Claude Code 等 agent CLI 並排放在同一個視窗，直接沿用你已安裝的 CLI 和登入。本週在 Product Hunt 上架，repo 本身還很小。",
+      "tags": [
+        "coding-agent",
+        "macos",
+        "multi-agent"
+      ],
+      "url": "https://github.com/zzunkie/yardlet",
+      "source": "Product Hunt",
+      "sourceUrl": "https://aitoolly.com/ai-news/article/2026-10-29-yardlet-launches-as-an-open-source-mac-workbench-unifying-claude-code-codex-and-developer-agents",
+      "stars": 28,
+      "createdDate": "2026-06-02",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-10-31T09:07:40+08:00",
-  "updatedAt": "2026-10-31T09:07:40+08:00"
+  "lastUpdated": "2026-10-31T01:36:04.795002+00:00",
+  "updatedAt": "2026-10-31T01:36:04.795002+00:00"
 }
