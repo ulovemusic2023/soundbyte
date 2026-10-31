@@ -101498,8 +101498,152 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261031-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Shyam Sankar：用 AI 砍成本的公司幾乎都失敗，拿 AI 攻 top line 的才大贏",
+      "summary": "Palantir CTO 觀察自己的客戶：目標是「用 AI 減人頭、降成本」的，幾乎連這個目標都沒達成；想「用 AI 稱霸市場、做以前做不起的事」的才大幅成功。他的解釋是，「刪掉人」這種短視目標不足以逼你去做真正困難的事，而且 AI 只要做不到人做的那 2%，替換就會失敗。AI 時代結果更二元：要嘛是贏家，要嘛覺得「好像不太 work」。",
+      "tags": [
+        "ai-adoption",
+        "top-line-vs-bottom-line",
+        "ambition",
+        "alpha-vs-beta"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-palantir-cto-shyam-sankar-about-the-ai-religious-war/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-palantir-cto-shyam-sankar-about-the-ai-religious-war/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Ben Horowitz：AI 不會讓每個人都變工程師，而是讓每個人都變 manager",
+      "summary": "a16z 以 Databricks 為例談「公司的未來」：兩個突破正在發生，一是 agentic automation（描述一件現在在做的事，把它自動化），二是第一線的人不必等資訊和權限層層傳遞，就能直接調查、直接行動。長期影響可能不是「人人都有工程師超能力」，而是「人人都是 manager」，20 世紀那套由少數專業經理人集中決策的管理模式正在被拆掉。前提是組織的 system of record 跟得上。",
+      "tags": [
+        "future-of-the-firm",
+        "agents",
+        "everyone-is-a-manager",
+        "organizational-design"
+      ],
+      "url": "https://www.a16z.news/p/databricks-and-the-future-of-the",
+      "source": "a16z News",
+      "sourceUrl": "https://www.a16z.news/p/databricks-and-the-future-of-the",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "DHH 看 Proton 的 AI 內部風波：推 AI 遇到「反叛」時，安撫沒有用",
+      "summary": "404 Media 報導 Proton CEO Andy Yen 在內部強推用 AI 開發、員工反彈，之後他取消了原本要談員工 AI 使用狀況的「re-interviews」。DHH 認為那份 CTO AI manifesto 沒什麼好大驚小怪，Proton 員工在 agent 時代會很難熬；他也提醒領導者：一旦演變成「反叛」，你做什麼都安撫不了，退讓只會換來更多要求。值得對照的是：推 AI 轉型時，決心跟溝通方式一樣重要。",
+      "tags": [
+        "leadership",
+        "ai-mandate",
+        "change-management",
+        "founder-mode"
+      ],
+      "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+      "source": "DHH",
+      "sourceUrl": "https://x.com/dhh/status/2116288404480471381",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Andrew Chen：AI 時代的新創辦人原型，以及每一種的正反論點",
+      "summary": "a16z Speedrun 的 Andrew Chen 列出 AI 會放大的幾種創辦人：solo founder、非技術創辦人、領域專家、學生、content creator，每一種都給正反論點。例如 solo founder 能靠 AI 做出 100x 產出，但「coding 可能從來不是 startup 的主要瓶頸」，客戶會議還是得有人跑；creator 有 distribution，但一波流量不等於能長期成長的產品。結論：每個創業浪潮都有一種當紅原型，這次的帳篷會更大，失敗率也會更高。",
+      "tags": [
+        "solo-founder",
+        "founder-archetypes",
+        "creator-leverage",
+        "ai-native"
+      ],
+      "url": "https://www.a16z.news/p/new-founder-archetypes-in-the-ai",
+      "source": "a16z News",
+      "sourceUrl": "https://www.a16z.news/p/new-founder-archetypes-in-the-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Paul Graham：募資不是里程碑，目標應該是不需要募資",
+      "summary": "PG 提醒創辦人別把 Series A 當成目標，真正的目標是做到不需要它，呼應 default alive 的思維。",
+      "tags": [
+        "fundraising",
+        "default-alive",
+        "bootstrapping"
+      ],
+      "url": "https://x.com/paulg/status/2115977741808157030",
+      "source": "Paul Graham",
+      "sourceUrl": "https://x.com/paulg/status/2115977741808157030",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "DHH：真正的 AI psychosis，是覺得它只是另一個工具",
+      "summary": "DHH 反過來定義 AI psychosis：低估 AI、堅持每一行都要人工 review，才是脫離現實。",
+      "tags": [
+        "ai-future",
+        "agentic",
+        "mindset"
+      ],
+      "url": "https://x.com/dhh/status/2116109588554498081",
+      "source": "DHH",
+      "sourceUrl": "https://x.com/dhh/status/2116109588554498081",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-10-31",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Dan Koe：AI 讓人人都能做任何東西，但你真正的對手是自己的心",
+      "summary": "Dan Koe 的觀點：AI 降低了做東西的門檻，卻也放大了分心，所以競爭其實沒變多，卡住你的是專注力。",
+      "tags": [
+        "focus",
+        "creator-leverage",
+        "one-person-company"
+      ],
+      "url": "https://x.com/thedankoe/status/2116156997712195646",
+      "source": "Dan Koe",
+      "sourceUrl": "https://x.com/thedankoe/status/2116156997712195646",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-31T09:20:00+08:00",
-  "updatedAt": "2026-10-31T09:20:00+08:00"
+  "lastUpdated": "2026-10-31T09:07:40+08:00",
+  "updatedAt": "2026-10-31T09:07:40+08:00"
 }
