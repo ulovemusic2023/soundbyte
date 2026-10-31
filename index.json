@@ -101054,8 +101054,243 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261031-sw-001",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 用 Claude 把整個 Messages API 從 Python 改寫成 Rust：團隊沒有 Rust 工程師，CPU 降 40–50%",
+      "summary": "Claude Platform 工程負責人 Katelyn Lesse 在 Latent Space 訪談中說，Messages API 原本是 CPU 效率很差的 Python monolith，團隊決定一次整個搬到 Rust，雖然「房間裡沒有一個 Rust developer」。分工是人類設計 distributed system 架構與驗證方式、Claude 寫實作；做法是 fork 出完整的 Rust 版 API、把 shadow traffic 同時送進兩邊比對輸出，再用 feature flags 與 load balancing 逐步切流量。上週已全面上線，她給的粗估是 CPU 省 40–50%、time to first token 快 10–20%。她認為傳統逐塊遷移會是好幾年的工程，「never do the big rewrite」這條老建議因此被大量討論。",
+      "tags": [
+        "paradigm-shift",
+        "ai-assisted development",
+        "rust",
+        "migration",
+        "shadow-traffic-rewrite"
+      ],
+      "url": "https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/",
+      "source": "Latent Space",
+      "sourceUrl": "https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-002",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenAI Agents API 本週更新：Auto Review、背景 compaction、時間感知、session 中途換工具",
+      "summary": "OpenAI 的 Steven Coffey 列出 Agents API 本週出貨：Auto Review 會像 Codex 一樣在執行指令前先評估有沒有危險行為；Async Compaction 讓 compaction 在背景進行、不卡住 session；實驗性的 time awareness 讓模型感覺到時間流逝，能處理「CI 修復限時 10 分鐘」這類要求；session 的 tools 可以隨時更新；system prompt 會自動跨 session cache，省錢也省時間。OpenAI Developers 轉發後約 256 讚。",
+      "tags": [
+        "agent harness",
+        "agents api",
+        "compaction",
+        "prompt caching",
+        "time-awareness"
+      ],
+      "url": "https://x.com/stevendcoffey/status/2116303789649236048",
+      "source": "X（@stevendcoffey / OpenAI）",
+      "sourceUrl": "https://x.com/stevendcoffey/status/2116303789649236048",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-003",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenCode 2.2.3 加入 Claude Agent provider：用自己的 Claude Code 登入跑在 OpenCode 裡",
+      "summary": "OpenCode v2.2.3（10/30）內建 Claude Agent provider：裝好 Claude Code 2.1.248 以上、跑 claude auth login，再在 /connect 選 Claude Agent 就能用。實際上是 Claude Code 呼叫模型、OpenCode 負責工具、權限、compaction 與 subagents；你的 CLAUDE.md、hooks、MCP 設定不會載入，但同一 session 可以切換到其他模型。用訂閱登入時 OpenCode 不顯示費用、算在方案額度內。是否符合 Anthropic 訂閱條款，release notes 沒說，X 上有人質疑。",
+      "tags": [
+        "coding agent",
+        "opencode",
+        "claude code",
+        "agent harness",
+        "multi-model"
+      ],
+      "url": "https://dev.opencode.ai/v2/docs/providers",
+      "source": "GitHub（anomalyco/opencode）",
+      "sourceUrl": "https://github.com/anomalyco/opencode/releases/tag/v2.2.3",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-004",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft 實驗：workspace 路徑叫「eval」會讓 agent 覺得在被測，但行為沒變",
+      "summary": "Microsoft 的 Waldek Mastykarz 用一個有真實 git history 的 Node.js billing service，交替放在 billing-api 與 eval-XysseR 兩種資料夾，以 GitHub Copilot CLI 搭 GPT-5.6 Terra、Claude Sonnet 5.5、GPT-5.6 Luna、Claude Haiku 5.5 跑了約 900 次。結果：eval 資料夾確實讓模型更相信自己在受測，但在作弊、偷工、誠實回報、努力程度上都量不到差異。對自己搭 agent eval 的人是個好消息，不過他們先前的研究發現 poc、test 這類字眼會讓 agent 傾向偷工。",
+      "tags": [
+        "agent eval",
+        "eval-awareness",
+        "coding agent",
+        "github copilot cli"
+      ],
+      "url": "https://devblogs.microsoft.com/blog/does-eval-in-the-workspace-path-change-what-your-agent-does/",
+      "source": "Microsoft for Developers",
+      "sourceUrl": "https://devblogs.microsoft.com/blog/does-eval-in-the-workspace-path-change-what-your-agent-does/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-005",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "nesformer：把 NES 的 6502 CPU 模擬器「烤」進 Qwen3.5-4B 權重，能慢慢玩 Super Mario",
+      "summary": "受上週 Qwenputer 啟發，Drew Breunig 把 Nintendo Entertainment System 的 6502 CPU 模擬做進 Qwen3.5-4B 的 weights，可以餵 ROM 執行（非常慢）。Simon Willison 特別記下他給 Opus 5.5 的兩段 prompt：先讀 Qwenputer 文章評估可行性，再說「I think we should build it! Just for fun」；Opus 還自己找到 15 年前的 NES CPU conformance tests 來驗證。HN 178 分。",
+      "tags": [
+        "vibe coding",
+        "conformance-suites",
+        "qwen",
+        "weights-as-computer"
+      ],
+      "url": "https://github.com/dbreunig/nesformer",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/30/nesformer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-006",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Northflank 遭入侵：用戶的 AI API keys 被盜用，距 Railway 事件僅 9 天",
+      "summary": "Northflank 10/30 11:43 UTC 收到 Wiz 告警後開始修補，狀態頁要求所有用戶「假設環境變數都已被解密」，立即輪換 workload、secret groups 與 global secrets，並關閉 addon 的 public access；多名用戶回報 AI keys 已被拿去用，Northflank 說手法可能符合 Wiz「Black October」報告中鎖定 AI credentials 的攻擊模式。Railway 10/20–22 才因同類攻擊被解密部分環境變數，當時攻擊者 payload 就是在找 AI provider API keys（Railway 說是為了 distillation）。Gergely Orosz 指出 Northflank 當時還拿 Railway 事件拉客。有用 PaaS 存 AI key 的現在就該輪換。",
+      "tags": [
+        "security",
+        "supply chain",
+        "ai-credential-theft",
+        "paas",
+        "secrets rotation"
+      ],
+      "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+      "source": "Northflank Status",
+      "sourceUrl": "https://status.northflank.com",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-007",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude 方案改名：Max 5x 改叫 Max、Max 20x 改叫 Ultra，驗證過的 Ultra 拿掉 5 小時限制",
+      "summary": "Claude 官方宣布 Max（$100/月）與 Ultra（$200/月）價格不變、現有訂閱者不用做任何事；從今天起大多數既有 Ultra 帳號移除 5-hour limit，新帳號在驗證前保留暫時限制（防詐騙與濫用），移除時會收到 email。Weekly limits 不變。這則貼文約 2.3 萬讚、320 萬次瀏覽，對重度用 Claude Code 的人等於不再被 5 小時窗口打斷。",
+      "tags": [
+        "claude code",
+        "pricing",
+        "rate limits",
+        "anthropic"
+      ],
+      "url": "https://claude.com/pricing",
+      "source": "X（@claudeai）",
+      "sourceUrl": "https://x.com/claudeai/status/2116220869479428500",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-008",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Mozilla：AI 讓 patch-gapping 變實際威脅，Firefox 要讓不同類修補的空窗期錯開",
+      "summary": "Mozilla 說 Firefox 團隊 2 月起用 Anthropic 與 OpenAI 的 frontier models 找漏洞，安全修補數是 2025 同期的 7 倍多；但攻擊者可以從公開的修補反推漏洞，他們也看到 GLM 5.3 能利用部分由更強模型找到的 bug 的修補。已做的對策：release 週期砍半變每週、regression test 在修補上線前保密（沒有測試時 GLM 5.3 效果差很多）、掃描每個新 commit。新的結構性做法是把 renderer exploit 與 sandbox escape 等不同類別的修補分批，讓它們的 patch gap 不重疊，攻擊者永遠缺一塊。",
+      "tags": [
+        "security",
+        "patch-gapping",
+        "ai vulnerability discovery",
+        "firefox"
+      ],
+      "url": "https://blog.mozilla.org/en/firefox/privacy-security/defending-patch-gap/",
+      "source": "Mozilla Blog",
+      "sourceUrl": "https://blog.mozilla.org/en/firefox/privacy-security/defending-patch-gap/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-009",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "「AI 不是取代 SRE，而是讓 SRE 退化」登上 HN 熱門",
+      "summary": "SigNoz newsletter 這篇（原文 2026/2 發表，這兩天在 HN 拿到 489 分、360 則留言）用 1983 年 Bainbridge 的〈Ironies of Automation〉來看 AI SRE：自動化越多，人越只在罕見的大事故才介入，卻越缺乏練習。文中引用 PagerDuty 的三層模型（已知問題全自動、部分理解由 AI 建議人審、全新事故人主導），並舉內視鏡醫師用 AI 後獨立偵測率從 28% 降到 22%、FAA 要求機師增加手動飛行時數為例。剛好呼應這週 AI SRE 產品一波發表。",
+      "tags": [
+        "sre",
+        "deskilling",
+        "ai-assisted operations",
+        "ironies of automation"
+      ],
+      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "source": "SigNoz Newsletter",
+      "sourceUrl": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-010",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Azure Logic Apps 的 API Connections 再爆五個 full cross-tenant compromise",
+      "summary": "Binary Security 研究員延續先前系列，找到 Azure API Connections 另外五個漏洞，每一個都能讓攻擊者操作世界上任何其他人的 connection，進而控制背後連接的服務，包括其他租戶的 Key Vault、Azure SQL，以及 Jira、Salesforce 等外部服務。根因是架構本身：靠 ARM 的 DynamicInvoke 或 /extensions/proxy/ 直接打共用的 API Management，只剩層層 input validation 擋著。這批漏洞共拿到 $200,000 bounty。HN 259 分。",
+      "tags": [
+        "security",
+        "azure",
+        "cross-tenant",
+        "cloud architecture"
+      ],
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "source": "Binary Security",
+      "sourceUrl": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-sw-011",
+      "radar": "software-dev",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Tangled 發表 federated code forge：建在 AT Protocol 上，可只 self-host Git 或 CI",
+      "summary": "Tangled 認為集中式 forge 正在瓦解，主張用 AT Protocol 取代 email 當協作協定：你可以只自架 Git hosting（knot）或 CI runner（spindle），也能全部自架含 API server 與 UI，仍然能和其他人無縫協作；可以訂閱 firehose、寫自己的 extension，例如跑在 Cloudflare Workers 上的 knot。他們特別強調對 agent 友善、hackable，這次也用 Svelte 改了整個 UI。HN 219 分、Lobsters 熱門。",
+      "tags": [
+        "code forge",
+        "at protocol",
+        "federation",
+        "developer tools"
+      ],
+      "url": "https://tangled.org/blog/forge/",
+      "source": "Tangled Blog",
+      "sourceUrl": "https://tangled.org/blog/forge/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-30T22:22:04+08:00",
-  "updatedAt": "2026-10-30T22:22:04+08:00"
+  "lastUpdated": "2026-10-31T08:30:18+08:00",
+  "updatedAt": "2026-10-31T08:30:18+08:00"
 }
