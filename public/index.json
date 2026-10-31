@@ -101289,8 +101289,217 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261031-mt-001",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno MCP（beta）：在 Claude、ChatGPT、Claude Code 裡直接做歌",
+      "summary": "Suno 在 10/28 release notes 推出 Suno MCP beta，可把 Suno 接到 Claude、ChatGPT、Claude Code 等 MCP client，用對話構思歌詞與風格後直接生成歌曲，也能上傳 voice memo 或 loop 延伸成完整歌曲、做 cover / extension / mashup。歌曲會進到你的 Suno library，所有方案可用、消耗 credits，目前需申請 early access。MBW 另外發現 Suno developer API 出現 sign-in portal，但官方說仍在 beta。",
+      "tags": [
+        "suno",
+        "music ai",
+        "mcp",
+        "music generation"
+      ],
+      "url": "https://suno.com/release-notes/suno-mcp-beta",
+      "source": "Suno Release Notes / Music Business Worldwide",
+      "sourceUrl": "https://suno.com/release-notes/suno-mcp-beta",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-002",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Spotify AI covers & remix 工具瞄準 2027 Q1 上線，加購價傳每月 US$4–5",
+      "summary": "據 Financial Times 報導，Spotify 5 月宣布的粉絲 AI 翻唱 / remix 工具目標 2027 年初上線，可能在 2 月 Grammy 前後亮相，付費 add-on 傳每月多 US$4–5。目前 UMG、Merlin、Believe 已授權，Sony 與 Warner 仍在談；報導也提到說服當紅歌手參與比找資深藝人難，UMG 目標是 1,000 位藝人 opt in。",
+      "tags": [
+        "music ai",
+        "spotify",
+        "remix",
+        "licensing"
+      ],
+      "url": "https://musically.com/2026/10/30/spotify-is-hoping-to-launch-its-ai-remix-tool-in-early-2027/",
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/10/30/spotify-is-hoping-to-launch-its-ai-remix-tool-in-early-2027/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-003",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Infinite：免費、開源的 node-based 影音 DAW",
+      "summary": "開發者 Naman Soni 推出 Infinite，把音樂製作、視覺合成與 creative coding 放在同一個 node-based canvas，用連線串起 synth、effects、modulator 與視覺處理器，並支援第三方 plugin hosting、即時圖像與程序化 3D 場景。macOS / Windows / Linux 免費，原始碼 MIT 授權（含 VST3 hosting 的預設 binary 為 GPLv3）。留言區也有人吐槽介面像 vibe-coded。",
+      "tags": [
+        "daw",
+        "open source audio",
+        "sound design",
+        "modular"
+      ],
+      "url": "https://www.synthtopia.com/content/2026/10/30/free-infinite-daw-combines-modular-synthesis-visuals-and-creative-coding/",
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/10/30/free-infinite-daw-combines-modular-synthesis-visuals-and-creative-coding/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-004",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "EHX Deluxe Big Muff Pi 2 評測：Bob Meyer 筆記本裡的 op-amp Muff 復活",
+      "summary": "Electro-Harmonix 從 Big Muff 發明人 Bob Meyer 的筆記找出一款從沒量產的 op-amp 版 Big Muff，做成 Deluxe Big Muff Pi 2（US$188），有 Blend、Gate、Mids、High/Low Q、Wicker 等 10 個旋鈕與 expression 輸入。MusicRadar 各項給 4.5 星，但批評第二個 footswitch 只用來切 mids，浪費了一個可以放 boost 的位置。",
+      "tags": [
+        "guitar pedal",
+        "guitar effect",
+        "fuzz",
+        "guitar tone"
+      ],
+      "url": "https://www.musicradar.com/guitars/guitar-pedals/electro-harmonix-deluxe-big-muff-pi-2-review",
+      "source": "MusicRadar",
+      "sourceUrl": "https://www.musicradar.com/guitars/guitar-pedals/electro-harmonix-deluxe-big-muff-pi-2-review",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-005",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Vitric Audio Colorfield Mix Stage：把軌道擺進虛擬房間的混音 plugin",
+      "summary": "做過 Bevel EQ 的 Vitric Audio 推出 Colorfield Mix Stage，讓你在虛擬房間裡視覺化擺放各軌位置來做空間混音。11/19 前優惠價 US$29，之後回到原價 US$99。",
+      "tags": [
+        "mixing",
+        "plugin",
+        "spatial",
+        "audio effect"
+      ],
+      "url": "https://vitricaudio.com/",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/10/30/vitric-audio-colorfield-mix-stage/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-006",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Electra One Mk3：可程式化 MIDI controller 大改版",
+      "summary": "捷克 Electra One 的旗艦 MIDI controller 第三代開發中、數月內出貨：螢幕從 7 吋加大到 8 吋 1280×800，反應時間由 40ms 降到 5ms，免滑動換頁；處理器從單核 240MHz 換成雙核 1GHz Renesas RA8D2（一核專跑低延遲 MIDI）、64MB unified RAM，並改用可按壓的高解析度觸控旋鈕和 6 顆可指派按鍵。",
+      "tags": [
+        "midi",
+        "midi controller",
+        "lua"
+      ],
+      "url": "https://synthanatomy.com/2026/10/electra-one-mk3-the-flagship-midi-controller-gets-a-major-revision.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/10/electra-one-mk3-the-flagship-midi-controller-gets-a-major-revision.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-007",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "arXiv：用 CQT + BiLSTM / attention 做鋼琴 automatic music transcription",
+      "summary": "新論文把複音鋼琴轉譜當成 88 鍵 frame-level multi-label 分類，輸入 252 bins 的 CQT，比較 LSTM 與 BiLSTM 骨幹，並提出改良的 additive attention 與 tanh multihead attention；針對 active 與 inactive note 約 1:41 的類別失衡，評估 Weighted BCE 等 loss。偏學術 baseline 研究，適合追 AMT / MIR 的人參考。",
+      "tags": [
+        "music transcription",
+        "automatic music transcription",
+        "mir",
+        "pitch detection"
+      ],
+      "url": "https://arxiv.org/abs/2610.39255",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2610.39255",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-008",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "UMG 財報會議：Grainge 說 AI 音樂量長得比防護還快",
+      "summary": "UMG 執行長 Lucian Grainge 在 Q3 財報會議引用 Deezer 數據，每天有超過 9 萬首全 AI 生成曲目上傳到串流平台，某些平台 blues 榜前十有多達五張專輯來自未標示的 AI 藝人。UMG 將要求更清楚的 AI 標示，並施壓 DSP 不只降推薦，還要對全 AI 曲目去 monetize 甚至下架，同時批評 pro-rata 分潤讓 AI slop 和頂尖作品分到一樣的錢。",
+      "tags": [
+        "music industry",
+        "music ai",
+        "ai slop",
+        "streaming"
+      ],
+      "url": "https://musically.com/2026/10/30/umg-talks-ai-music-the-volume-is-growing-faster-than-the-safeguards/",
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/10/30/umg-talks-ai-music-the-volume-is-growing-faster-than-the-safeguards/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-009",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "sndstation：把約 US$40 的掌機變成 Linux 音樂工作站",
+      "summary": "Plogue 的 David Viens 發起開源 Linux 發行版 sndstation，把便宜的遊戲掌機變成可跑 plugin（包含商業閉源 plugin）的音樂工作站，也附原創音樂 app 與遊戲。團隊有 Audio Damage、Surge 的 Baconpaul、fisound 等人，是開放協作專案，不是 Plogue 產品。CDM 獨家搶先看。",
+      "tags": [
+        "open source audio",
+        "plugin",
+        "music software",
+        "linux"
+      ],
+      "url": "https://cdm.link/sndstation-linux-distro-for-game-handhelds/",
+      "source": "CDM Create Digital Music",
+      "sourceUrl": "https://cdm.link/sndstation-linux-distro-for-game-handhelds/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261031-mt-010",
+      "radar": "music-tech",
+      "date": "2026-10-31",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MAP Audio MFX：34 種效果、可接 feedback 的模組化 multi-effect plugin",
+      "summary": "MFX 有四個 processing cell，可用虛擬導線串聯、並聯或做 feedback 路由，線上直接調訊號量，內建 34 種效果和大量 modulation，一個 plugin 就能搭出自訂效果鏈，適合 synth、鼓機、人聲和取樣再加工。售價 US$80，一個授權可用三台機器。",
+      "tags": [
+        "multi-effect",
+        "fx plugin",
+        "effect chain",
+        "modulation"
+      ],
+      "url": "https://www.synthtopia.com/content/2026/10/30/mfx-combines-34-effects-with-modular-routing-feedback/",
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/10/30/mfx-combines-34-effects-with-modular-routing-feedback/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-31T08:30:18+08:00",
-  "updatedAt": "2026-10-31T08:30:18+08:00"
+  "lastUpdated": "2026-10-31T09:20:00+08:00",
+  "updatedAt": "2026-10-31T09:20:00+08:00"
 }
