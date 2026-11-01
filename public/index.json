@@ -103336,8 +103336,161 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261101-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Switching to EPYC 實測：同一組 GPU（含 RTX 5070 Ti）換平台後，GLM-5.3-Flash decode 從 9.7 衝到 41 tok/s",
+      "summary": "一位 r/LocalLLaMA 用戶把 Core Ultra 7 265KF + 64GB DDR5 雙通道換成 EPYC 7443 + 256GB DDR4 八通道，GPU 不變（3090、5070 Ti、5060 Ti 16GB）。RAM triad 頻寬 58.8→102 GB/s、PCIe host↔GPU 約 2 倍，GLM-5.3-Flash（Maya IQ3_S）decode 4.2×、DeepSeek-V4.1-Flash 3.8×，主因是大 MoE 不必再每個 token 從 NVMe 讀 30–60% 權重。他也列了 BMC 風扇門檻、iommu=pt、Resizable BAR、llama.cpp `-sm tensor` 用 `-ub 1024` 等調校；dense 27B 在多卡上則沒變快。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime",
+        "MoE offload",
+        "EPYC",
+        "RAM bandwidth"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xl3cnv/switching_to_epyc_what_i_had_to_fix_and/",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xl3cnv/switching_to_epyc_what_i_had_to_fix_and/",
+      "price": null,
+      "vram": "多卡 + 256GB RAM 跑大 MoE；單張 16GB 只能分擔一部分 expert",
+      "license": "N/A（實測貼文）"
+    },
+    {
+      "id": "20261101-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "租 vast.ai 雙 EPYC 7642 + 2×3090 實測：Strata 跑 Qwen3.8-Flash-Next Q8，單流 94 tok/s、8 併發合計 456 tok/s",
+      "summary": "作者花約 $40 在 vast.ai 租 RAM 很大的 EPYC Rome 主機（251GB / 504GB DDR4）加兩張 3090，用 Strata 跑到 unsloth Q8、用 Maya 跑 GLM-5.3-Flash 和 DeepSeek-V4.1-Flash。結論是 Strata 在 124k context 下到 8 個 stream 都幾乎線性擴展，Maya 則不建議超過單併發。重點是「先租機器試再買」：VRAM 不夠時，用便宜很多的 DRAM 加幾張中階卡也能撐起大 MoE。",
+      "tags": [
+        "llm_inference",
+        "Strata",
+        "concurrency",
+        "EPYC",
+        "vast.ai"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkvp10/rented_some_server_time_and_wanted_to_share_some/",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xkvp10/rented_some_server_time_and_wanted_to_share_some/",
+      "price": null,
+      "vram": "2×3090 + 250GB 以上 RAM；16GB 單卡無法照搬",
+      "license": "N/A（實測貼文）"
+    },
+    {
+      "id": "20261101-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Bespoke inference engine 反思：2×R9700 跑 Strata 只換到 Q3，HumanEval+ 反而輸給 llama.cpp 的 27B Q8",
+      "summary": "想用 Strata 跑 Qwen3.8-Flash-Next 取代 Qwen3.8-27B Q8 MTP 的用戶回報：expert offload 到 RAM 時長任務一律卡住，只有全部 expert 塞進 64GB VRAM 才穩，也就只能用 3-bit。紙面速度約 60 t/s，但 HumanEval+ 93.9% 對上 27B Q8 的 95.1%，token 還多用近一倍。同一天另一串「Age of the bespoke engines?」也在吐槽 Strata、Basalt、Betelgeuse 各種 fork 太分散，社群開始質疑單一模型專用引擎是不是被吹過頭。",
+      "tags": [
+        "llm_inference",
+        "Strata",
+        "llama.cpp",
+        "Qwen3.8-Flash-Next",
+        "quantization"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xl0oqz/are_bespoke_inference_engines_overhyped_my_strata/",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xl0oqz/are_bespoke_inference_engines_overhyped_my_strata/",
+      "price": null,
+      "vram": "Flash-Next 3-bit 要約 64GB VRAM 才穩；16GB 還是 27B 量化版比較實際",
+      "license": "N/A（討論串）"
+    },
+    {
+      "id": "20261101-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Heretic 2.0：從去審查工具變成通用 model modification 框架，ARA 取代 abliteration",
+      "summary": "p-e-w/heretic（約 37k stars，HF 上 8,500+ 衍生模型）發布 2.0：預設改用作者自創的 Arbitrary-Rank Ablation（ARA）取代 directional abliteration，整個架構改成 scorer / modifier plugin，可以拿來壓 slop、降 sycophancy、調情緒 alignment。也支援非互動執行與 end-to-end 測試，但 1.x 的 config 不相容，要照 migration guide 改；research 功能移到 Lophius。",
+      "tags": [
+        "llm_training",
+        "abliteration",
+        "ARA",
+        "model steering",
+        "plugins"
+      ],
+      "url": "https://github.com/p-e-w/heretic",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/p-e-w/heretic/releases/tag/v2.0.0",
+      "price": null,
+      "vram": "依目標模型大小；7–14B 在 16GB 上可跑",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261101-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "HuggingFaceBio/FineDNA：把 Qwen3-14B 訓成 Carbon-X 的整套 DNA 資料（300B+ midtraining、200K SFT、98K RL）",
+      "summary": "Hugging Face 公開了訓練 Carbon-X（號稱最強的 open DNA 語言模型）用的全部資料：300B+ tokens 的基因組與 DNA 相關文本 midtraining、約 200K 筆 SFT 對話、約 98K 個可驗證 RL prompt，訓練 code 和 recipe 也放在 huggingface/carbon。跟音樂本業無直接關係，但是一份完整的「midtraining → SFT → RL」領域適配範本，想替自己領域做專用模型可以參考流程。",
+      "tags": [
+        "llm_training",
+        "dataset",
+        "midtraining",
+        "RL",
+        "domain adaptation"
+      ],
+      "url": "https://github.com/huggingface/carbon",
+      "source": "Hugging Face Datasets",
+      "sourceUrl": "https://huggingface.co/datasets/HuggingFaceBio/FineDNA",
+      "price": null,
+      "vram": "資料集本身不吃 VRAM；照 recipe 訓 14B 需要多卡",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261101-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "speridlabs/idol：一張圖生成 3D Gaussian splat，7.2GB VRAM、不到 2 秒",
+      "summary": "Idol 把一張物件照片、render 或生成圖變成最多 1,048,576 個 Gaussian 的 3DGS `.ply`，連照片沒拍到的側面也會補出來；會自動去背和框物件。官方說在消費級 GPU 上用 7.2GB VRAM、2 秒內完成，有 HF demo 和 idol-sdk。要注意它的 image encoder 用到兩個 gated 模型（含 DINOv3），要先在 HF 同意條款。",
+      "tags": [
+        "image_gen",
+        "image-to-3d",
+        "gaussian-splatting",
+        "3DGS"
+      ],
+      "url": "https://github.com/speridlabs/idol-sdk",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/speridlabs/idol",
+      "price": null,
+      "vram": "官方標 7.2GB",
+      "license": "Apache-2.0（encoder 為 gated 模型，另有條款）"
+    },
+    {
+      "id": "20261101-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "GPT-6.1 Sol 當 orchestrator、自架 GLM-5.3-Flash 當 subagent：OpenCode 混合雲端與本地模型的實戰設定",
+      "summary": "Aayush Garg 在公司 4×H200 上用 512K context 跑 GLM-5.3-Flash（320B MoE、18B active），在 OpenCode 裡讓 Sol 規劃和檢查、GLM subagent 負責探索和寫 code，藉此大幅減少 Claude Code / Codex 用量。他選 OpenCode 是因為 Claude Code 和 Codex 都不能在同一個 session 讓 subagent 用不同 provider 的模型；做法不限 GLM，任何自架模型都能當 workhorse。",
+      "tags": [
+        "ai_devtools",
+        "OpenCode",
+        "GLM-5.3-Flash",
+        "subagents",
+        "hybrid inference"
+      ],
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "source": "aayushgarg.dev（r/LocalLLaMA 討論）",
+      "sourceUrl": "https://aayushgarg.dev/posts/2026-11-01-gpt-local-model-opencode/",
+      "price": null,
+      "vram": "GLM-5.3-Flash 需 4×H200 等級；16GB 可改用小模型當 subagent",
+      "license": "MIT（GLM-5.3-Flash）"
     }
   ],
-  "lastUpdated": "2026-11-01T18:35:15+08:00",
-  "updatedAt": "2026-11-01T18:35:15+08:00"
+  "lastUpdated": "2026-11-01T22:13:48+08:00",
+  "updatedAt": "2026-11-01T22:13:48+08:00"
 }
