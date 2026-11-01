@@ -102678,8 +102678,217 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261101-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NeuSynth：在 DAW 裡依你的曲子生成新樂器 stems 的 AI plugin",
+      "summary": "NeuSynth 是 AI stem generator plugin：從 DAW 拖進最多 60 秒的段落當 Context，選樂器類別、丟 audio reference 或用文字描述，一次最多 6 層，每次回傳四組 variation set，每個樂器都是獨立 WAV，可單軌或整組拖回 DAW。目前 macOS 11+ 的 VST3 / AU（官網列 Windows VST3，但 Mac 優先），免費試用 24 credits 且輸出限非商用，付費方案 US$4.99 / 150 credits、US$9.99 / 400 credits。BPB 這篇是贊助文。",
+      "tags": [
+        "audio generation",
+        "music ai",
+        "stems",
+        "daw",
+        "plugin"
+      ],
+      "url": "https://www.neusynth.com/",
+      "source": "Bedroom Producers Blog（via DawCrash）/ NeuSynth",
+      "sourceUrl": "https://www.dawcrash.com/2026/10/31/neusynth-lets-you-explore-new-instrument-stems-in-your-projects/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 請法院暫停 Sony 與 UMG 的第二起著作權訴訟",
+      "summary": "據 Law360，Suno 在 10/30（美東週五）向麻州聯邦法院提出，要暫停 Sony Music 與 Universal Music 對它提起的第二起 AI 訓練侵權訴訟，理由是應先等兩家唱片公司另一案的關鍵裁決。這起訴訟仍在 discovery 階段，雙方對投資人、DistroKid、Apple Music、MLC 的 subpoena 攻防持續升溫。",
+      "tags": [
+        "suno",
+        "music ai",
+        "copyright",
+        "music industry"
+      ],
+      "url": "https://www.law360.com/articles/2544762/ai-music-startup-wants-labels-second-ip-suit-paused",
+      "source": "Law360",
+      "sourceUrl": "https://www.law360.com/articles/2544762/ai-music-startup-wants-labels-second-ip-suit-paused",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "arXiv：拆解 voice-cloning TTS 模型到底學了哪些聲學特徵",
+      "summary": "新論文提出 autoregressive voice-cloning TTS 的 interpretability 框架，以 Qwen3-TTS 為主、再延伸到另外 5 個模型，用 sparse autoencoder（SAE）、PCA 和隨機方向做 sparse probing、steering 與 auto-interpretability。模型確實編碼了 pitch、energy、noise、accent 等概念，但 probing 強不代表 steering 有效；在 Qwen3-TTS 中自動驗證出 684 個 SAE feature，涵蓋說話者群組、說話風格與錄音條件。",
+      "tags": [
+        "voice clone",
+        "voice synthesis",
+        "audio model",
+        "interpretability"
+      ],
+      "url": "https://arxiv.org/abs/2610.40505",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2610.40505",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "arXiv：用群論量化旋律裡的移調、倒影與逆行動機",
+      "summary": "論文把長度 3–6 音的旋律視窗放到 transposition、inversion、retrograde 與 cyclic shift 生成的群下分析，把 entropy 拆成「動機詞彙」與「使用方式」兩部分。在橫跨四個世紀的 852 首鍵盤作品中，至少 97% 的旋律 orbit entropy 低於保留音高內容的對照組；重複動機以五度或四度移調的比例是隨機的 2.8 倍，而這個偏好從巴洛克到 20 世紀逐漸減弱。",
+      "tags": [
+        "music structure",
+        "mir",
+        "composition",
+        "music theory"
+      ],
+      "url": "https://arxiv.org/abs/2610.40303",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2610.40303",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Vatrica：Flame Sound 免費 one-knob mix enhancer",
+      "summary": "Flame Sound 開發者為了慶生在 BPB 釋出 Vatrica（塞爾維亞文「小火」之意），是一顆單旋鈕的 mix enhancer，支援 macOS 與 Windows，免費提供給 BPB 讀者和 Flame Sound 用戶。",
+      "tags": [
+        "mixing",
+        "free plugin",
+        "plugin"
+      ],
+      "url": "https://www.dawcrash.com/2026/10/31/vatrica-is-a-free-mix-enhancer-and-my-birthday-gift-to-you/",
+      "source": "Bedroom Producers Blog（via DawCrash）",
+      "sourceUrl": "https://www.dawcrash.com/2026/10/31/vatrica-is-a-free-mix-enhancer-and-my-birthday-gift-to-you/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ZL Limiter：ZL Audio 開源免費 limiter（Win / Mac / Linux）",
+      "summary": "做 ZL Equalizer 2、ZL Compressor 的 ZL Audio 推出 ZL Limiter，免費、開源，支援 Windows、macOS、Linux，補齊自家 mixing / mastering 工具線。GitHub 上 10/31 發佈 0.0.1，授權 AGPL-3.0，README 仍標示 work in progress。",
+      "tags": [
+        "limiter",
+        "mastering",
+        "free plugin",
+        "open source audio"
+      ],
+      "url": "https://github.com/ZL-Audio/ZLLimiter",
+      "source": "Bedroom Producers Blog（via DawCrash）/ GitHub",
+      "sourceUrl": "https://www.dawcrash.com/2026/10/31/zl-audio-releases-zl-limiter-a-free-limiter-for-windows-macos-and-linux/",
+      "price": null,
+      "vram": null,
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261101-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Airwindows Consolidated 登上 iOS：500+ 效果免費 app",
+      "summary": "Sveinbjorn Palsson 把 Chris Johnson 的 Airwindows Consolidated 移植到 iOS，做成免費 app，一次帶進 500 多種 Airwindows 效果，手機 / iPad 上也能用這套經典免費效果庫。",
+      "tags": [
+        "airwindows",
+        "audio effect",
+        "free plugin",
+        "music app"
+      ],
+      "url": "https://synthanatomy.com/2026/10/airwindows-consolidated-by-sveinbjorn-palsson-brings-500-audio-effects-to-ios-as-a-free-app.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/10/airwindows-consolidated-by-sveinbjorn-palsson-brings-500-audio-effects-to-ios-as-a-free-app.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Voiks：StageBox 免費 lo-fi 玩具鍵盤 sampler plugin",
+      "summary": "StageBox Software 推出免費 sampler plugin Voiks（macOS / Windows），靈感來自 1987 年 Yamaha VSS-30 取樣玩具鍵盤：原機是 8-bit sampler、只有約 1.5 秒取樣記憶體，錄一段聲音就能馬上彈。適合想要髒髒 lo-fi 質感的 sound design。",
+      "tags": [
+        "sampler",
+        "free plugin",
+        "lo-fi",
+        "sound design"
+      ],
+      "url": "https://www.dawcrash.com/2026/10/31/stagebox-software-releases-voiks-a-free-toy-keyboard-sampler-plugin/",
+      "source": "Bedroom Producers Blog（via DawCrash）",
+      "sourceUrl": "https://www.dawcrash.com/2026/10/31/stagebox-software-releases-voiks-a-free-toy-keyboard-sampler-plugin/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Gooey Audio Black Rhino：節奏同步的 beat masher plugin",
+      "summary": "Black Rhino 可一鍵產生跟節拍同步的切碎 / 翻轉 pattern，內建 8 種 pattern、可排成 1、2、4 小節樂句，Invert 控制再加隨機變化，最多 64 種組合。Windows / macOS 的 VST3、AU、AAX，售價 US$8.99，White Rhino 用戶限時 US$3.99。",
+      "tags": [
+        "audio effect",
+        "plugin",
+        "beat making",
+        "vst3"
+      ],
+      "url": "https://rekkerd.org/gooey-audio-releases-black-rhino-rhythmic-beat-smasher-plugin/",
+      "source": "Rekkerd.org",
+      "sourceUrl": "https://rekkerd.org/gooey-audio-releases-black-rhino-rhythmic-beat-smasher-plugin/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ROLI 二度進入 administration",
+      "summary": "Synth Anatomy 引述 The Times 報導，做 Seaboard、LUMI Keys 的 ROLI 在 10/20 確定正式進入 administration，是 2021 年破產重整、以 Luminary 重新出發後第二次。ROLI 一生募資超過 US$75M、投資人含 Balderton、Foundry Group、UMG；7 月時創投 TriplePoint 已遞出指派管理人意向通知。",
+      "tags": [
+        "music industry",
+        "music tech",
+        "midi controller"
+      ],
+      "url": "https://synthanatomy.com/2026/10/roli-is-facing-serious-financial-difficulties-for-the-second-time.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/10/roli-is-facing-serious-financial-difficulties-for-the-second-time.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-01T08:25:24+08:00",
-  "updatedAt": "2026-11-01T08:25:24+08:00"
+  "lastUpdated": "2026-11-01T09:30:00+08:00",
+  "updatedAt": "2026-11-01T09:30:00+08:00"
 }
