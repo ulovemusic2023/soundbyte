@@ -102441,8 +102441,245 @@
       "price": null,
       "vram": "瀏覽器內建小模型，速度看裝置",
       "license": "N/A"
+    },
+    {
+      "id": "20261101-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Microsoft 開源 TokenEconomizer：讓 Claude Code、Codex 記住 repo 經驗，SWE-Bench 成本降 18–31%",
+      "summary": "TokenEconomizer 是 Microsoft 的研究外掛（論文 arXiv 2610.22732，0.1.0 版 10/26 釋出），不改 agent 本身，而是從同一個 repo 過去的 sessions 學習：micro-skills 記住「這裡要用 python -m pytest」這類反覆被重新發現的事實（三個 session 確認才注入）、tool pruning 把長期沒用到的工具定義拿掉、loop guard 在 turn 卡在同樣失敗時由 judge model 給一次轉向提示。官方數字：SWE-Bench 上五種 agent–model 組合平均成本降 18.4–30.9%，其中四種 Pass@1 也提升；他們的 profiling 發現 23 個工具描述有 16 個從沒被呼叫，失敗的 17% 任務吃掉 32% 花費。支援 Claude Code、Codex、Copilot CLI、Pi，學到的東西只存在本機 ~/.tokeneconomizer。",
+      "priority": "medium",
+      "tags": [
+        "coding agent",
+        "context engineering",
+        "micro-skills",
+        "tool-pruning",
+        "cost optimization"
+      ],
+      "url": "https://tokeneconomizer.github.io/",
+      "source": "Microsoft（GitHub）",
+      "sourceUrl": "https://github.com/microsoft/TokenEconomizer",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Harrison Chase：agent 架構收斂了，但 context engineering 還遠沒解完",
+      "summary": "LangChain 創辦人 Harrison Chase 發了一篇 X Article 回應「agent engineering 已經很無聊」的說法：在 Claude Code、Deep Agents 確立「LLM in a loop + tools + sandbox」之後，summarization、tool result offloading、skills、tool search、subagents、bash 大致有標準解；還大開的是：主動但不煩人的 agent、決定要記住什麼、async 工作（主 agent 等使用者時 context 怎麼流動）、goal tracking、alignment、browser use。他用一張「agent 刪掉 src/ 然後宣布 0 bugs found」的梗圖說明 goal tracking 很容易被鑽漏洞。約 300 讚、430 收藏、130 則回覆。",
+      "priority": "medium",
+      "tags": [
+        "context engineering",
+        "agent harness",
+        "memory",
+        "proactive-agents",
+        "goal tracking"
+      ],
+      "url": null,
+      "source": "Harrison Chase（X）",
+      "sourceUrl": "https://x.com/hwchase17/status/2116553654857867330",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Prospero：Chris Wellons 用 C++ 和 Dear ImGui 寫的超輕量 coding harness，資源用量少兩個數量級",
+      "summary": "nullprogram 作者 Chris Wellons 不滿多數 harness 用 web stack、吃掉好幾 GB 記憶體（「coding harness 本質就是 curl 黏上 popen()」），自己寫了 Prospero：不內建任何 model provider，自己接 llama.cpp、OpenRouter、Anthropic 或 OpenAI API（不能用 Claude 訂閱）。設計原則是「Never wait forever」，每個操作都有 deadline，沒人批准的權限請求會逾時拒絕，避免半夜卡住；支援 subagents、git worktrees、MCP、桌面控制，也能透過 SSH 把 headless engine 部署到別台機器，輕到能在跑 fuzz campaign 時不被 OOM killer 先殺掉。GitHub 上是 Unlicense 的 Community Edition，付費 Professional Edition 才內建 headless engines。HN 180 分。",
+      "priority": "medium",
+      "tags": [
+        "agent harness",
+        "local-llm",
+        "coding agent",
+        "never-wait-forever",
+        "headless agents"
+      ],
+      "url": "https://github.com/skeeto/prospero",
+      "source": "nullprogram.com",
+      "sourceUrl": "https://nullprogram.com/blog/2026/10/31/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Arca：agent 任務一跑十天，「agents prompt people」而不是反過來",
+      "summary": "Latent Space 訪問 AI 財富管理公司 Arca 的 lead AI engineer Aman Singh：金融工作是 long-horizon 但不是 long-running，一個 agent 任務可能橫跨十天、中間有很多人、決策點和交接。所以他們為每個客戶建了持久的 memory system，記錄目前進度、接下來要追的事、誰負責哪個動作，由 agents 一起寫入；最後決定權留在人類顧問手上。Arca 主要用 Claude，自建 harness，認為自建比現成的好處在於能完全掌控流程。",
+      "priority": "low",
+      "tags": [
+        "long-horizon agents",
+        "agent memory",
+        "agent harness",
+        "human-in-the-loop"
+      ],
+      "url": null,
+      "source": "Latent Space",
+      "sourceUrl": "https://latent.space/p/arca/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "GPT-5.6 Sol 在 Codex 裡低 thinking level 自主破關 Factorio（和平模式）",
+      "summary": "Ryan Madden 用一個 game manager 讓 GPT-5.6 Sol 透過 Python library 玩 Factorio，限制和人類 GUI 玩家一樣（手臂距離、戰爭迷霧），在 13.5 小時遊戲時間內完成和平模式的火箭發射。前期表現超出預期，但到藍色科技之後擴產開始出問題，最後靠模型反覆手動搬運物資才把系統接起來；上一代 GPT-5.5 連輸送帶都不太會用。他認為 Factorio 和寫程式很像，又比程式碼好懂，適合拿來觀察模型能力。HN 153 分。",
+      "priority": "low",
+      "tags": [
+        "agent eval",
+        "long-horizon agents",
+        "codex",
+        "benchmark"
+      ],
+      "url": null,
+      "source": "ryanmadden.net",
+      "sourceUrl": "https://ryanmadden.net/gpt-56-beats-factorio/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Anthropic 收緊 Claude：擋遊戲逆向工程、也擋碰到模型訓練的工作，誤傷開發者引發反彈",
+      "summary": "Tom's Hardware 報導 Claude 近期開始拒絕 modding、decompile、遊戲逆向與重製類任務，Claude Code 的 GitHub issues 湧入抱怨：做到一半被拒、自家遊戲的 anti-cheat 開發和 security review 也被擋，Reddit 上還有人說連分析 Windows crash dump 都不行；Anthropic 沒有正式說明。同時有研究者在 X 上說自己被標記為「training a competitor」，現在只要碰到 RFT、SFT 或訓練更大模型，就會被擋、Opus 5.5 被降級成 Opus 5、或 session 直接被砍，他強調 rollouts 來自開源模型、Claude 只是幫忙送 job 和分析。兩則在 HN 合計約 250 分。",
+      "priority": "high",
+      "tags": [
+        "claude code",
+        "usage policy",
+        "reverse engineering",
+        "ai-refusals",
+        "anthropic"
+      ],
+      "url": "https://x.com/jiahaoshao1/status/2116475922190922088",
+      "source": "Tom's Hardware",
+      "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "點一個 ChatGPT 分享連結就被接管帳號：HTML Preview 加 MathLive 的 postMessage 漏洞鏈",
+      "summary": "Parameter 研究團隊發現，攻擊者可以發布一段公開的 ChatGPT 分享對話，受害者只要打開連結，payload 就以 chatgpt.com 身分在其登入 session 裡執行，能列出對話清單、讀取從未分享的私人對話並外傳。漏洞鏈的起點是兩個看似無害的功能：HTML Preview 雖跑在隔離的 frame，但對話裡的互動圖表載入了 MathLive，它在主頁面裝了一個不檢查來源的 postMessage listener，接受可含 HTML 的鍵盤 layout 設定，從而繞過 sandbox 與 CSP。OpenAI 10/26 修復、評為 P1。Simon Willison 也轉載，HN 298 分。",
+      "priority": "high",
+      "tags": [
+        "security",
+        "xss",
+        "postMessage",
+        "sandbox escape",
+        "chatgpt"
+      ],
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+      "source": "Parameter",
+      "sourceUrl": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Karpathy 週六早上用 Opus 5.5 兩小時做出 HackerTube：只收 HN 推薦過的 YouTube 影片",
+      "summary": "Karpathy 受不了 YouTube 推薦的 slop，請 Opus 5.5 做一個「以 Hacker News 推薦影片為基礎的 YouTube clone」：Opus 下載整個 HN 留言，用 Sonnet 跑 workflow 過濾 spam 與低品質內容，篩出約 4 萬則推薦影片的留言，整理成 2007–2026 年、150 個主題、6,454 支影片，包上 YouTube 風格 UI、買 domain、部署到 VPS 並做 hardening。沒有帳號系統，推薦狀態存在瀏覽器 session，還提供資料匯出讓你的 agent 自己做一份。他說整件事現在大約兩小時。HN 572 分，是今天最熱門的開發者話題。",
+      "priority": "medium",
+      "tags": [
+        "vibe coding",
+        "claude opus",
+        "personal software",
+        "agentic workflow"
+      ],
+      "url": "https://hackertube.org",
+      "source": "karpathy.bearblog.dev",
+      "sourceUrl": "https://karpathy.bearblog.dev/hacker-tube/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Talos：VOLTA infostealer 偷完資料後交給 LLM 評估「這個受害者值多少錢」",
+      "summary": "Cisco Talos 分析一個自稱 VOLTA-AUTODOXER 的 Windows infostealer：偷走瀏覽器密碼、cookies、錢包 seed、Discord/Telegram session、OAuth token、SSH 與雲端金鑰後，會再用偷到的 session 去搜 Gmail 收據、外送紀錄來補齊受害者檔案，然後 POST 到 OpenRouter，要求模型扮演「forensic intelligence analyst」產出含「WHAT THEY'RE WORTH」與 OPSEC 評估的報告；模型拒絕時會自動切換到三個模型組成的備援鏈。Talos 認為新意在於 AI 不是做傳統惡意功能，而是當攻擊者的情報分析師。HN 229 分。",
+      "priority": "medium",
+      "tags": [
+        "security",
+        "malware",
+        "llm abuse",
+        "ai-victim-triage",
+        "openrouter"
+      ],
+      "url": null,
+      "source": "Cisco Talos",
+      "sourceUrl": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Jepsen 測 ParticleDB（為 AI agent 設計的 Rust 資料庫）：找到 96 個問題，「Full ACID」言之過早",
+      "summary": "Kyle Kingsbury 測試 Orkes 用 Rust 自寫、主打給 AI agents 用的多模型資料庫 ParticleDB（transactional SQL、KV、vector search、即時分析，相容 Postgres 與 Redis 協定）。從 1.1.4 測到 1.1.18.11.rc-22 共找到 96 個問題，從 crash、deadlock、資料遺失，到刪不掉的半隱形 row、被 drop 的 table 以變形狀態復活、字串變整數；多數只要單一 server、單一 client、無故障注入就會發生。最新測試版仍在預設 occ 模式下遺失已 commit 的寫入，serializable 也會 Lost Update；Orkes 說 1.1.19-rc.13 已全部修好。研究由 Orkes 出資。HN 180 分。",
+      "priority": "medium",
+      "tags": [
+        "distributed systems",
+        "database correctness",
+        "jepsen",
+        "vector database"
+      ],
+      "url": null,
+      "source": "Jepsen",
+      "sourceUrl": "https://jepsen.io/analyses/particledb-1.1.4",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261101-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "title": "Netflix 把 GPU 可靠性當分散式系統問題處理：job 成功率從約 98% 拉到 99.5% 以上",
+      "summary": "InfoQ 整理 Netflix 的 GPU 訓練與推論可靠性平台：大型訓練 job 數百張 GPU 同步運作，一張壞卡或一個降速的網卡就能拖垮整個 job，而且 GPU 可能對狀態查詢正常回應、一配置記憶體或持續運算才出錯。Netflix 在 Kubernetes 上用 NVIDIA DCGM 做裝置層檢查、檢查 EFA 高速網卡的數量與狀態，由 node agent 轉成 node conditions 自動摘除不健康節點，再搭配 fault-tolerant training 讓長 job 能從機器遺失中恢復。成果是 GPU node 可用率超過 99.95%、job 成功率從約 98% 提升到超過 99.5%。",
+      "priority": "low",
+      "tags": [
+        "reliability",
+        "gpu",
+        "kubernetes",
+        "distributed systems"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/netflix-gpu-distributed-systems/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-10-31T22:21:07+08:00",
-  "updatedAt": "2026-10-31T22:21:07+08:00"
+  "lastUpdated": "2026-11-01T08:25:24+08:00",
+  "updatedAt": "2026-11-01T08:25:24+08:00"
 }
