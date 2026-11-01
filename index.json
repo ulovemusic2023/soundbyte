@@ -102887,8 +102887,225 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261101-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Audio8-TTS-Realistic-0.6B：0.6B 的 zero-shot voice cloning TTS，擴到 23 種語言（含中文、粵語），44.1kHz codec",
+      "summary": "Edge0 把 Audio8-TTS-Preview-0.6b 再訓一輪推出 Realistic 版，主打語音更自然、prosody 更有表情，語言從 11 種加到 23 種（zh、yue、ja、ko、en 等都有），仍保留 zero-shot voice cloning。repo 內含完整 checkpoint、44.1kHz neural audio codec、tokenizer 跟自訂 Transformers 程式碼，用法和 Preview 一樣，也有 SGLang-Omni 高吞吐 serving 說明和 HF Playground。它目前在 HF trending 前段、也在 TTS Arena 上被評比，是要做本地中文 TTS / voice clone 很值得試的小模型。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "multilingual",
+        "zero-shot",
+        "audio8"
+      ],
+      "url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b",
+      "price": null,
+      "vram": "主模型 601M 參數，codec 另外附；16GB 綽綽有餘",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261101-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Betelgeuse 續集：Qwen3.8-Flash-Next IQ4_XS（真 4-bit expert）在 RTX 3060 12GB + 2×8GB DDR4 跑到 24 tok/s，仍 byte-exact",
+      "summary": "昨天的 Betelgeuse（llama.cpp fork，VRAM expert slot pool + RAM victim cache + NVMe）作者回應「2-bit 太低」的質疑，改良 oracle 和 victim-cache DMA 路徑後改測 IQ4_XS（100GB+ 級）。同一張 3060 12GB、總共 16GB RAM：單通道 1×16GB 是 14 tok/s，換成雙通道 2×8GB 拉到 24 tok/s；stock llama.cpp 約 0.5–0.6 tok/s（thrash），Strata --low-ram 約 4–6 tok/s，輸出跟 stock 逐 byte 一致。重點是瓶頸在 host RAM 頻寬，所以雙通道比容量更重要；16GB 的 5070 Ti 能放更多 expert slot，空間更大。",
+      "tags": [
+        "llm_inference",
+        "moe offload",
+        "expert vram pool",
+        "llama.cpp fork",
+        "qwen3.8-flash-next"
+      ],
+      "url": "https://github.com/Betelgeuse-AI/Betelgeuse",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xkh2ns/",
+      "price": null,
+      "vram": "實測 12GB VRAM + 16GB RAM + NVMe，IQ4_XS 本體 100GB+ 大部分在 SSD",
+      "license": "MIT"
+    },
+    {
+      "id": "20261101-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ik_llama.cpp 補齊 ternary / Q2_0：Ternary Bonsai 2 原生 CUDA 全 offload，加上 Q2_0_R8 CPU kernel PR（pp +45%）",
+      "summary": "PrismML 的 Ternary Bonsai 2 以前在 Prism 自家 fork 以外很難跑（upstream TQ2_0 用 QK=256、Prism 的 PQ2_0 用 QK=128，CUDA offload 還會被 Hadamard sign tensor 卡住）。現在 ik_llama.cpp 合了原生 PQ2_0 CUDA kernel（PR #2747 已合併），也附 script 把 TQ2_0/TQ1_0 無損 repack 成 PQ2_0，可以 -ngl 99 全丟 GPU。另一個還沒合併的 PR #2785 加 Q2_0_R8 的 AVX2/AVX-VNNI kernel，對 ISTA-DASLab GSQ-RCO 那批低 bit GGUF 有用，作者在 i5-13420H 上量到 prompt processing +45%、token generation +22%，perplexity 幾乎不變。",
+      "tags": [
+        "llm_inference",
+        "ik_llama.cpp",
+        "ternary",
+        "quantization",
+        "gsq-rco"
+      ],
+      "url": "https://github.com/ikawrakow/ik_llama.cpp/pull/2785",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xkcg2y/",
+      "price": null,
+      "vram": "Bonsai-2-27B 的 PQ2_0 約 2 bpw，16GB 卡可全 offload；Q2_0_R8 是 CPU 路線",
+      "license": "MIT"
+    },
+    {
+      "id": "20261101-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Memdoor 重現 GVS5H：5 個 Qwen3.8-27B 的 team-solve 在 LiveCodeBench Hard 前 10 題平均 9.8/10，Fable 5 單跑 8.0",
+      "summary": "HN 88 分。Memdoor 用作者原版 prompt 把 GVS5H 的多 agent 解題法（planner、兩個 ideator、solver、manager 加 repair worker，各自 fresh context、只透過檔案溝通，由 shell script 跑測資判定成敗）重寫成 workflow。五輪跑前 10 題：Memdoor 9.8、原作者 harness 9.6、Fable 5 單次 8.0，50 次中 49 次解出，總成本約 36 美元。作者自己也標了限制：只有 10 題不是 100 題、題目是 2025 年的可能有 contamination，而且是在 OpenRouter 上跑、不是本地機器，單題中位數要 40 分鐘。",
+      "tags": [
+        "llm_inference",
+        "multi-agent",
+        "qwen3.8-27b",
+        "livecodebench",
+        "agent harness"
+      ],
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50320995",
+      "price": null,
+      "vram": "Qwen3.8-27B 本地要 Q4 左右才塞得進 16GB；實驗本身走雲端 API",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261101-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "modeljury：5 個便宜 open model 投票做分類，71% 有共識的題目準確率 89.6%，接近 Opus 5.5 的 90.5%，成本約十分之一",
+      "summary": "作者拿 DeepSeek V4.1 Flash、GLM 5.3 Flash、MiMo V2.6 Flash、Qwen3.8 Flash、Gemma 4 26B-A4B 組成陪審團，跑 6 個公開資料集共 2,850 個 yes/no 或貼標籤決策，全體同意才出答案、不一致就丟給人。有共識的 71% 準確率 89.6%（Opus 同樣最有把握的 71% 是 90.5%），每千筆 0.61 美元對 5.79 美元；但整體準確率 80.1% 輸給 Opus 的 83.1%，長答案比較和 77 類意圖分類也明顯不行。作者坦白主要價值是知道哪些該交給人，而且數字還沒在新樣本上複驗。吃 OpenAI 相容 API，Ollama、vLLM、llama.cpp server 都能接。",
+      "tags": [
+        "llm_inference",
+        "ensemble voting",
+        "open models",
+        "cost optimization",
+        "classification"
+      ],
+      "url": "https://github.com/YasserManss/modeljury",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xk9xep/",
+      "price": null,
+      "vram": "看陪審團成員；Gemma 4 26B-A4B 這類 MoE 在 16GB 要量化加 offload，其他可走 API",
+      "license": "MIT"
+    },
+    {
+      "id": "20261101-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "TensorAgent 本地多模態知識庫：文件、CSV、圖片、音訊、影片都能被 agent 搜到，保留原檔連結",
+      "summary": "TensorSharp（C# 推理框架）作者在 TensorAgent 加了本地知識庫：文件和 CSV 抽文字、圖片用 vision model 產描述和 OCR、音訊用 audio model 轉錄、影片抽樣影格（音軌目前不索引），預設 BM25、embedding 可選。作者強調不是把所有模態塞進同一個向量空間，而是讓搜尋找到證據後，agent 再打開完整原檔做計算。示範影片是腳本化的 UI 展示，不是實測 benchmark。",
+      "tags": [
+        "infra_runtime",
+        "local rag",
+        "multimodal indexing",
+        "asr",
+        "agent"
+      ],
+      "url": "https://github.com/zhongkaifu/TensorSharp",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xkluu4/",
+      "price": null,
+      "vram": "取決於選用的 vision / audio model，小模型 16GB 內可跑",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20261101-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Morgana 1.2：FLUX.2 Klein 4B 的攝影寫實 finetune，免費權重加一整套 GGUF",
+      "summary": "Kitani 和 ShuttleAI 合作的 Morgana 1.2 把 FLUX.2 Klein 4B 往「不像 AI 拍的照片」調：自然光、毛孔和亂髮的真實臉、水滴羽毛布紋等 macro 材質、夜景霓虹。HF 上放了完整 safetensors 和 BF16、Q8_0、Q6_K、Q5_K_M 等 GGUF，用 diffusers 的 Flux2KleinPipeline 就能跑；作者說 H100 上 15 步 4.6 秒。已知弱點是文字渲染和手。",
+      "tags": [
+        "image_video_gen",
+        "flux.2 klein",
+        "finetune",
+        "gguf",
+        "photorealism"
+      ],
+      "url": "https://huggingface.co/kitaniai/morgana-1.2",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xkgbhu/",
+      "price": null,
+      "vram": "4B 參數，BF16 約 8GB，GGUF 更小，16GB 可跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261101-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "QwenPU：把 NPU 編譯進 Qwen3.5-4B 權重，在裡面 bit-exact 跑 Karpathy 的 stories260k，LLM 裡跑 LLM",
+      "summary": "之前把 RISC-V CPU 塞進 Qwen 權重（Qwenputer）的同一位作者，這次在 Qwen3.5-4B 權重裡「編譯」出一顆能做 matmul、softmax、attention 的 NPU，結果 bit-exact，stories260k 的權重就放在 Qwen 自己的記憶體裡、不靠外部工具。code 和權重都放出來了，完整 writeup 和速度優化作者說之後補。實用性低，但對理解 transformer 能模擬什麼計算很有意思。",
+      "tags": [
+        "llm_inference",
+        "research",
+        "qwen3.5-4b",
+        "weights as programs"
+      ],
+      "url": "https://github.com/divagr18/QwenPU",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xkiuut/",
+      "price": null,
+      "vram": "Qwen3.5-4B 級，16GB 放得下",
+      "license": "未標準授權（GitHub 顯示 NOASSERTION）"
+    },
+    {
+      "id": "20261101-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "WiCi：透過 WiFi 連 GPU，主機把遠端 RTX 5090 當本機顯卡用",
+      "summary": "NetworkChuck 影片介紹的 WiCi，把一台裝 RTX 5090 的盒子透過 WiFi 接到主機，Windows 工作管理員會看到它是一張原生 GPU，影片示範了跑 DeepSeek 和遊戲。官方說法是快取穩定資料、去重重複 payload、壓縮串流大傳輸、把昂貴狀態常駐在遠端，而不是真的用 WiFi 取代 PCIe；發文者推測是在 CUDA 指令層做了中介層。效能和延遲細節還沒看到獨立實測，先當觀察項。",
+      "tags": [
+        "infra_runtime",
+        "remote gpu",
+        "gpu sharing",
+        "hardware"
+      ],
+      "url": "https://wici.ai",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xkaqk0/",
+      "price": null,
+      "vram": "遠端 GPU，本機不吃 VRAM",
+      "license": "商業產品"
+    },
+    {
+      "id": "20261101-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-01",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "bootgpt：塞進 boot sector 的語言模型，512 bytes 組語在 386 real mode 跑 11.5KB int8 模型",
+      "summary": "HN 59 分的 Show HN。MBR 是 512 bytes 手寫 asm，從後面 23 個 sector 載入 11.5KB 的 int8 模型，在 16-bit real mode 上不靠 OS 直接推論，「夢出」假的 Linux 開機 log。訓練腳本會模擬組語的整數運算，Python 和 boot sector 輸出逐字一致。純好玩，但是極限量化和 integer-only 推論的漂亮示範。",
+      "tags": [
+        "llm_inference",
+        "int8",
+        "tiny models",
+        "bare metal"
+      ],
+      "url": "https://github.com/kerlenton/bootgpt",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50315782",
+      "price": null,
+      "vram": "不用 GPU，386 就能跑",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-11-01T09:30:00+08:00",
-  "updatedAt": "2026-11-01T09:30:00+08:00"
+  "lastUpdated": "2026-11-01T10:18:26+08:00",
+  "updatedAt": "2026-11-01T10:18:26+08:00"
 }
