@@ -103697,8 +103697,218 @@
       "price": null,
       "vram": null,
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261102-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "JJ Suna AI：基於 ACE-Step 1.5 XL 的 open-weights 48 kHz 音樂生成模型",
+      "summary": "JJ Coders 在 HN Show HN 發表 JJ Suna AI，官網自稱 5B 參數 flow-matching DiT，底層是 ACE-Step 1.5 XL + Qwen 2.5，輸出 48 kHz stereo，並有「Sing-to-Masterpiece」可哼唱旋律當條件生成整首編曲。權重放在 Hugging Face jjcoders/suna-v1（MIT 授權、有 GGUF），可用 ZeroGPU 免費跑。注意：HF 上目前約 1.5k 下載、2 likes，官網「world's leading」等說法屬自我宣傳，品質待實測。",
+      "tags": [
+        "music generation",
+        "text-to-music",
+        "open source audio",
+        "music ai",
+        "flow matching"
+      ],
+      "url": "https://huggingface.co/jjcoders/suna-v1",
+      "source": "Hacker News（Show HN）/ Hugging Face",
+      "sourceUrl": "https://suna.jjcoders.com/",
+      "price": null,
+      "vram": null,
+      "license": "MIT"
+    },
+    {
+      "id": "20261102-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "arXiv：A Tutorial on Generative Models for Music Audio（音樂音訊生成專書級教學）",
+      "summary": "一份給「會訓練神經網路、但剛入門音樂生成」讀者的 monograph，用統一符號講 neural audio codec / autoencoder、autoregressive 與 masked token model、diffusion 與 flow matching、sampling 加速和 preference optimization，再對應到器樂生成、帶人聲整首歌、編輯與即時伴奏等應用。也整理比較表、怎麼解讀 automatic metrics 與聽測，以及 data provenance、memorization、attribution 和相關法律爭議。",
+      "tags": [
+        "music generation",
+        "audio generation",
+        "diffusion",
+        "neural audio codec"
+      ],
+      "url": "https://arxiv.org/abs/2610.38252",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2610.38252",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Dawesome Myth 1.81：machine learning resynthesis synth 免費更新加 13 種效果",
+      "summary": "Myth 是用 machine learning 輔助 resynthesis 的 synth plugin（macOS / Windows），用重合成後的音檔取代傳統 oscillator。1.81 免費更新新增 maximizer、limiter、compressor、split EQ、dual / reverse delay、tape、pulse gate、plate reverb、auto pan 等 13 種效果，另加 57 個 preset。目前官網特價 €107.40（原價 €179）。",
+      "tags": [
+        "synthesizer",
+        "machine learning",
+        "resynthesis",
+        "plugin"
+      ],
+      "url": "https://synthanatomy.com/2026/11/dawesome-myth-new-synthesizer-takes-you-on-an-ai-supported-resynthesis-journey.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/dawesome-myth-new-synthesizer-takes-you-on-an-ai-supported-resynthesis-journey.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Behringer Polykeys 61：US$199 的 open-source polyphonic aftertouch MIDI 鍵盤",
+      "summary": "Behringer 在 Facebook 公布 Polykeys 61，61 鍵 polyphonic aftertouch keybed、鍵盤上方有 ribbon controller，另有 9 推桿、9 旋鈕、16 pads 和顯示螢幕，目標價 US$199，上市時間未定。官方確認韌體 open-source，是否內建 arpeggiator / sequencer 還不清楚。便宜 polyAT 鍵盤很少見，對 MPE / 表情控制有興趣的人值得留意。",
+      "tags": [
+        "midi controller",
+        "polyphonic aftertouch",
+        "open source",
+        "hardware"
+      ],
+      "url": "https://synthanatomy.com/2026/11/behringer-polykeys-61-an-open-source-midi-keyboard-controller-with-polyphonic-aftertouch.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/behringer-polykeys-61-an-open-source-midi-keyboard-controller-with-polyphonic-aftertouch.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FabFilter Twin 3 v3.10：免費更新支援 MPE 與 note expression",
+      "summary": "FabFilter 的 subtractive VA synth Twin 3 推出 3.10 免費更新，加入 MPE 與 note expression 的 polyphonic expression 支援，新增 timbre、lift 等 MIDI 來源，開啟 MPE 時 pitch bend 預設為 per-note。另有 bManic、Bigtone、Christian Laffitte 製作的 200+ 新 preset，原廠 preset 也調成接 MPE 控制器即可用。Twin 3 售價 US$149 / €129。",
+      "tags": [
+        "synthesizer",
+        "mpe",
+        "plugin",
+        "fabfilter"
+      ],
+      "url": "https://synthanatomy.com/2026/11/fabfilter-twin-3-a-classic-subtractive-synth-plugin-gets-a-makeover.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/fabfilter-twin-3-a-classic-subtractive-synth-plugin-gets-a-makeover.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pulsar Audio DigiTape：重現 2000 年代早期數位 tape 演算法的免費 plugin",
+      "summary": "Pulsar Audio 釋出免費 plugin DigiTape，模擬兩種 2000 年代早期的 digital tape simulation 演算法，有 Colour / Grain 兩種模式與 Halo、Gasoline、Flare、Sheen、Shade 五種 type，加上 Drive、Brightness、Mix。支援 macOS / Windows 的 VST、VST3、AU、AAX。",
+      "tags": [
+        "free plugin",
+        "tape emulation",
+        "saturation",
+        "mixing"
+      ],
+      "url": "https://www.gearnews.com/digitape-free-plugins/",
+      "source": "Gearnews（Free Plugins of the Week）",
+      "sourceUrl": "https://www.gearnews.com/digitape-free-plugins/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Aberrant DSP Lair 1.5：免費更新新增 granular 風格 reverb 模式並支援 Linux",
+      "summary": "Lair 1.5 是給既有用戶的免費更新，新增 Cascade（可扭曲分布的 echo cluster）、Swarm（類 granular 的碎片 reverb）等模式，加上可並聯兩種演算法的 parallel device mode 與由 dry signal 觸發的 gate。新增 37 個 preset（總數 115），並原生支援 Linux。",
+      "tags": [
+        "reverb",
+        "plugin",
+        "linux audio",
+        "sound design"
+      ],
+      "url": "https://synthanatomy.com/2026/11/aberrant-dsp-lair.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/aberrant-dsp-lair.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "arXiv：自動排出 synth 參數對音色影響力的「量測＋驗證」框架",
+      "summary": "論文提出兩階段方法替軟體 synth 參數依對輸出音色的影響力排序：先把每段 render 正規化到 -23 LUFS、用五種 spectral fingerprint 描述，再以 101 步 Sweep Test 打分，並用 128 點 Sobol 變異實驗獨立驗證。在 TorchSynth、Pyo、Pedalboard、Csound、FluidSynth 五種引擎（48–76 個參數）上，兩種測試在確定性 render 的四個引擎 Spearman ρ 達 0.82–0.96，適合拿來做 synth 自動調音、sound matching 前的降維。",
+      "tags": [
+        "sound design",
+        "synthesizer",
+        "audio ml",
+        "dsp"
+      ],
+      "url": "https://arxiv.org/abs/2610.38740",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2610.38740",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Techno 先驅 Juan Atkins 辭世，享年 64 歲",
+      "summary": "創造「techno」一詞、被稱為 the originator 的 Detroit techno 先驅 Juan Atkins 過世，享年 64 歲。CDM 回顧他從 Cybotron、Model 500、Infiniti 到與 Moritz von Oswald 合作的 Borderland，並提到他第一台 synth 是 KORG MS-10。此消息在 HN、MusicRadar 也都有大量討論。",
+      "tags": [
+        "electronic music",
+        "music industry",
+        "techno"
+      ],
+      "url": "https://cdm.link/the-techno-originator-juan-atkins-has-died-at-64/",
+      "source": "CDM Create Digital Music",
+      "sourceUrl": "https://cdm.link/the-techno-originator-juan-atkins-has-died-at-64/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ted Gioia：音樂產業正在崩盤嗎？（UMG 傳洽談私有化）",
+      "summary": "Ted Gioia 在 The Honest Broker 撰文，引 Bloomberg 報導指 Universal Music 正與私募基金接觸、考慮下市私有化，UMG 股價今年跌約 29%、已低於 2021 年上市價，Spotify 股價近 16 個月也跌近 30%。他歸納主要唱片公司犯下的七大錯誤。這篇在 HN 上是本週音樂類熱門討論。",
+      "tags": [
+        "music industry",
+        "streaming",
+        "umg",
+        "spotify"
+      ],
+      "url": "https://www.honest-broker.com/p/is-the-music-business-collapsing",
+      "source": "The Honest Broker（via Hacker News）",
+      "sourceUrl": "https://www.honest-broker.com/p/is-the-music-business-collapsing",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-02T08:27:58+08:00",
-  "updatedAt": "2026-11-02T08:27:58+08:00"
+  "lastUpdated": "2026-11-02T09:30:00+08:00",
+  "updatedAt": "2026-11-02T09:30:00+08:00"
 }
