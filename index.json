@@ -104124,8 +104124,156 @@
       "price": null,
       "vram": "0.8B 級，16GB 綽綽有餘",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "title": "Robert Haas：〈Postgres 19 is late, and it's AI's fault〉——LLM 找 bug 的速度遠超人類修 bug 的速度",
+      "summary": "PostgreSQL 核心 committer Robert Haas 說明 PG 19 為何會晚到 11 月甚至更晚：今年 UPDATE/DELETE FOR PORTION OF、SQL/PGQ、MERGE/SPLIT PARTITION 三個大功能在 8/27–9/15 間被撤回。同期（4/8–9/25）back-patch 到 REL_19_STABLE 的 commit 從去年的 724 增到 1169，回補到更舊版本的 commit 也從 248 增到 433（+74%），主因是大量網友用 LLM 找到 bug 回報。LLM 能起草修正，但仍要人審、人 commit，審查人力被拉去修舊分支，release 就延後了；他也擔心四十年累積、人找不到但 LLM 找得到的 bug，長期要怎麼消化。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "LLM bug finding",
+        "open source maintenance",
+        "postgresql",
+        "back-patch"
+      ],
+      "url": null,
+      "source": "Robert Haas's blog",
+      "sourceUrl": "https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "title": "GitHub Octoverse 2026：merged PR 不到一年翻三倍到每月 2.2 億，agentic engineering 的影響直接反映在數字上",
+      "summary": "Simon Willison 在 GitHub Universe 現場整理 Octoverse 2026 重點：每月 merged PR 不到一年成長三倍到 2.2 億，commit 超過三倍到每月 73.8 億（多數增幅在下半年），新 repo 速度翻倍到每月 3,030 萬。報告新增依產業分類，並單獨統計提到 interoperability、reverse engineering、clean room implementation、drop-in replacement 的 repo；國家排名改用 LLM 從 profile 抽取國碼來修正 VPN 偏差。",
+      "priority": "medium",
+      "tags": [
+        "agentic engineering",
+        "octoverse",
+        "github",
+        "developer metrics"
+      ],
+      "url": "https://github.blog/news-insights/octoverse/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-013",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "title": "Uber 的 CAPRI：用一層 middleware 錄下真實 production traffic，再在個人環境 replay 驗證修正",
+      "summary": "Pragmatic Engineer 節錄 Uber Distinguished Engineer Uday Kiran 的說法：業務線、產品線、城市的組合太多，不可能維護成千上萬的測試，所以最複雜的平台改用 capture-replay。因為各服務的語言框架已標準化，一層 middleware 就能錄下服務的 inbound／outbound 和下游 API 呼叫；例如修一個只影響舊金山 Uber Eats 的 bug，可以開一個 Slate 環境、只 replay 那筆 request 看 delta。Gergely Orosz 補充這套系統花了好幾年，前身是 Deputy 和 Cerberus。",
+      "priority": "medium",
+      "tags": [
+        "capture-replay",
+        "testing",
+        "production traffic",
+        "uber"
+      ],
+      "url": null,
+      "source": "The Pragmatic Engineer（X）",
+      "sourceUrl": "https://x.com/Pragmatic_Eng/status/2116885470802239557",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-014",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "title": "Kyle Kingsbury（Jepsen）：LLM 讓「成熟系統」的訊號變得容易偽造，文件和軟體的信任正在流失",
+      "summary": "Simon Willison 摘錄 Jepsen 測試 ParticleDB 1.1.4 報告中的一段話：LLM 的普及侵蝕了大家對文件、軟體和背後組織的信任，工程師可能開始用懷疑眼光看每個新專案，因為以前判斷系統成熟度的訊號現在很容易造假。他提出問題：maintainer 要怎麼確保軟體正確、文件準確，又要怎麼向使用者證明品質。",
+      "priority": "low",
+      "tags": [
+        "trust signals",
+        "documentation",
+        "jepsen",
+        "ai-misuse"
+      ],
+      "url": null,
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-015",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "title": "OccupySaaS：被裁的工程師用 AI＋公開文件 clean-room 重寫 SaaS，首發 Auth0 與 Salesforce 相容替代品",
+      "summary": "自稱抗議運動的 OccupySaaS（Apache-2.0）主張用 AI 依公開 API 文件、開放標準和 SDK 行為寫出 spec，再讓 agent 在 spec 和實作分離的「防火牆」後實作，每個 repo 附 CLEAN_ROOM.md 並記錄 provenance，最後用廠商自己的公開 SDK 驗證相容性。首批兩個早期專案：Go 寫的 ZeroAuthy（相容 Auth0 Authentication API，已用 auth0-spa-js、auth0-react、nextjs-auth0 驗證）和 SalesCompel（相容 Salesforce 公開 API 的 CRM）。HN 276 分、163 則留言。",
+      "priority": "medium",
+      "tags": [
+        "clean-room reimplementation",
+        "open source",
+        "drop-in replacement",
+        "saas"
+      ],
+      "url": "https://occupysaas.com/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50331402",
+      "price": null,
+      "vram": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-sw-016",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "title": "Trigger.dev 資安事件：攻擊者取得部分組織的 environment variables",
+      "summary": "背景任務平台 Trigger.dev 發布 11/1 資安揭露：已封鎖這次攻擊用的漏洞，但調查發現一部分組織的 environment variables 被未授權存取，受影響的帳號擁有者已收到含緩解步驟的 email，後續更新會放在 status page。有用 Trigger.dev 的話，建議檢查信箱並輪換存在那裡的 secrets。HN 93 分。",
+      "priority": "medium",
+      "tags": [
+        "security incident",
+        "secrets",
+        "supply chain",
+        "trigger.dev"
+      ],
+      "url": null,
+      "source": "Trigger.dev Blog",
+      "sourceUrl": "https://trigger.dev/blog/security-incident-nov-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-017",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "title": "Shopify Overexposed：repo 設定只代表意圖，cluster 才代表實際狀態——改用 Cloud Asset Inventory 掃未驗證的公開服務",
+      "summary": "InfoQ 報導 Shopify 內部掃描器 Overexposed，用來找 GKE Ingress 和 Cloud Run 上沒有驗證就能從網路存取的服務。第一版只讀 infra repo 的設定，結果有誤報（直接寫 proxy auth annotation）、漏報（admission controller 改寫設定但不是每個 cluster 都有跑，其他 repo 建的 Ingress 也看不到）。新版定期查 GCP Cloud Asset Inventory 取得實際被接受的資源，再對每個候選發一次匿名 HEAD／GET probe，幾週調整後讓無法判定的 Ingress 結果減少約 80%。",
+      "priority": "low",
+      "tags": [
+        "cloud security",
+        "kubernetes",
+        "cloud asset inventory",
+        "shopify"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/shopify-kubernetes-ingresses/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-02T10:19:16+08:00",
-  "updatedAt": "2026-11-02T10:19:16+08:00"
+  "lastUpdated": "2026-11-02T18:25:23+08:00",
+  "updatedAt": "2026-11-02T18:25:23+08:00"
 }
