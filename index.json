@@ -103907,8 +103907,225 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261102-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "tandem.cpp：llama.cpp patch set，單張 4090 + 64GB RAM 跑 Qwen3.8-Flash-Next 97 tok/s，比原版快 3.3 倍，任何 MoE 都適用",
+      "summary": "tandem.cpp 是一組套在 llama.cpp 上的 patch（不是另起爐灶的 engine），專門解決 MoE 塞不進 VRAM 的情況：把最常被選到的 experts 留在 GPU，其餘讓 CPU 幫忙算，目標是單人 decode。i5-12400F + 64GB DDR4 + 4090 上，Qwen3.8-Flash-Next IQ3_S + MTP 從 29.8 拉到 97.3 tok/s，跟 Strata exact mode 的 103.6 很接近；gpt-oss-120b 也有 1.85 倍，其他 MoE（GLM-4.5-Air、Qwen3.6-35B-A3B、DeepSeek-V4.1）大約 1.4–2.1 倍，64k prompt 的 prefill 也快 1.4–1.8 倍。好處是留在 llama.cpp 生態裡、每個 routed expert 都照算，不像 Strata 預設會跳過低排名 expert。",
+      "tags": [
+        "llm_inference",
+        "moe offload",
+        "llama.cpp patch",
+        "expert caching",
+        "qwen3.8-flash-next"
+      ],
+      "url": "https://github.com/ewhacc/tandem.cpp",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xldent/",
+      "price": null,
+      "vram": "MoE 本體放 RAM、熱門 experts 放 GPU；4090 24GB 實測，16GB 卡能放的 expert 較少、加速會打折",
+      "license": "未標準授權（GitHub 顯示 NOASSERTION）"
+    },
+    {
+      "id": "20261102-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Silencio-2：18M 參數的 TTS，文字裡下 [sigh]、[laugh] 和情緒 tag，CPU 上約 20 倍即時，可 voice cloning",
+      "summary": "作者把 Kyutai Pocket TTS 18M 微調成能聽懂行內 tag 的版本：聲音有 laugh、sigh、gasp、cough、clear_throat，情緒有 happy、sad、angry、fear、surprised、whisper。語音部分 18.2M 參數、加上 voice cloning 要用的 encoder 共 27.9M，磁碟 112MB，24kHz、可 streaming，作者在 M4 四執行緒、不用 GPU 量到約 20 倍即時（單次測試，不是正式 benchmark）。限制是只有英文。貼文最有價值的是踩雷紀錄：用 AudioSet tagger 過濾訓練資料，結果把 laugh、cough 全濾光、模型根本沒看過，最後是拿掉 filter、自己用耳朵聽才訓成功。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "emotion tags",
+        "pocket tts",
+        "cpu inference"
+      ],
+      "url": "https://huggingface.co/BlueRoseLabs/Silencio-2",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xl9yfi/",
+      "price": null,
+      "vram": "27.9M 參數、112MB，CPU 就能跑",
+      "license": "權重 CC-BY-4.0，推論程式 MIT"
+    },
+    {
+      "id": "20261102-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "sparsekv-hyperqwen：兩張 3090 同時撐 8 個 250K context 的 coding agent，KV cache 用 int4 放系統 RAM、每步只讀約 1% token",
+      "summary": "作者試過 TokenGate 那種先把 token 剪掉的做法，發現 agent 一直問新問題、需要的 token 已經被丟掉，就反過來做：完整 KV cache 以 int4 放在系統 RAM，每個 decode step 用 rank-64 的 key sketch 幫每個 token 打分，只把 top 約 2K 個 token 搬過 PCIe 給 int8 attention 算。以 vLLM patch 形式套在 HyperQwen fork 上，短對話自動走 dense。實測 Qwen3.8-27B W4A16：8 × 250K 合計約 545 tok/s（explain）到 790 tok/s（copy），follow-up 首 token 約 5 秒，recall 測試 31/32；單人 113K context 對 dense 也有 +15% 到 +36%。作者自己標了：這是近似 attention，greedy 輸出跑久會跟 dense 分岔，244K 冷 prefill 要 390 秒，而且數字是在掛 gpu-unlock 模組的 3090 上量的。",
+      "tags": [
+        "llm_inference",
+        "sparse attention",
+        "kv cache offload",
+        "vllm",
+        "long context"
+      ],
+      "url": "https://github.com/bradj00/sparsekv-hyperqwen",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlk43x/",
+      "price": null,
+      "vram": "Qwen3.8-27B W4A16 單卡 24GB 撐 4 × 250K；16GB 卡要降 context 或 agent 數",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Strata 的 DeepSeek V4.1 patch：16GB 的 RX 9070 XT 跑 1M context，KV splice 讓新 agent session 開場快 20 倍",
+      "summary": "回應 Sam Altman「家用 DRAM 是浪費」的說法，作者在 RX 9070 XT 16GB + 64GB DDR4 + PCIe 3.0 NVMe 上用 Strata 跑 DeepSeek V4.1 Flash（ISTA 1.75 bpw）1M context，generation 約 7 tok/s，但 OpenCode 每開新 session 都要重讀約 37K token 的 system prompt、等 100 秒。兩個改動：一是 KV splice，把新 prompt 跟已存的對話對齊、只重讀有變的那幾行（工作目錄、日期、skill 路徑這類每 session 不同的東西）；二是 prompt 階段只挑已經在 VRAM / RAM 的 experts，不再從 SSD 拉 58GB。限制講得很清楚：目前只有 HIP（gfx1201），CUDA 沒測；splice 是近似的、沒有正式 eval，resident routing 也會讓答案稍微不同。",
+      "tags": [
+        "llm_inference",
+        "prefix cache",
+        "kv splice",
+        "moe offload",
+        "deepseek-v4.1-flash"
+      ],
+      "url": "https://github.com/PhialsBasement/Strata/tree/dsv41-kv-splice",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xljdnj/",
+      "price": null,
+      "vram": "16GB VRAM + 64GB RAM + NVMe 實測；目前只支援 AMD HIP",
+      "license": "MIT"
+    },
+    {
+      "id": "20261102-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Speedy：調過的 Strata fork，Qwen3.8-Flash-Next 在 4090 上 prefill 比 Strata 快約 4 倍、比 Avalon 快 1.6 倍",
+      "summary": "Speedy 是針對一兩張 RTX 卡（作者在 3080 10GB 上調）做量測和調參的 Strata fork，主打 Qwen3.8-Flash-Next 最高 1M context。有網友在 4090 + 128GB DDR5 上用 ISTA IQ3_S 比較 Strata、Avalon、Speedy：60K 到 198K context 下，Speedy 的 prompt reading 約 4,400–4,600 tok/s，比 Strata 快 4.0–4.3 倍、比 Avalon 快 1.6 倍；generation 約 104–110 tok/s，比 Strata 多 45–47%，跟 Avalon 差不多；整段對話的牆鐘時間比 Strata 短 64–72%。這是單一使用者的數字，還沒看到其他人複測。",
+      "tags": [
+        "llm_inference",
+        "strata fork",
+        "moe offload",
+        "long context",
+        "qwen3.8-flash-next"
+      ],
+      "url": "https://github.com/DevDock-AI/Speedy",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlfhrd/",
+      "price": null,
+      "vram": "作者在 3080 10GB 調校，16GB 卡可以放更多 experts",
+      "license": "MIT"
+    },
+    {
+      "id": "20261102-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "llamAmpere 新 2.3bpw Qwen3.8-27B：卡上只佔 7.4GiB，LiveCodeBench 84.3% 追平 Qwen3.6 BF16",
+      "summary": "llamAmpere（針對 Ampere 卡優化的 llama.cpp fork）作者更新給 12GB 卡用的 2.3bpw 版本：新的 AmperInteger+ 格式支援 2–3 之間的小數 bpw，加上 trellis encoding 和類似 RCO 的最佳化。LiveCodeBench 三次平均 84.3%（嚴格評分），前一版是 75%，Qwen3.6 27B BF16 是 83.9%、Qwen3.8 BF16 是 90.3%；KLD 從 0.096 降到 0.059，回答也變短。卡上 7.4GiB（含 MTP head），embedding table 放一般 RAM，搭配 SJKVaRN 可以在單張 12GB 卡跑 200K+ context。底模是 Swift 1.5 的 uncensored 版本，模型授權標 other。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "2-bit",
+        "llama.cpp fork",
+        "qwen3.8-27b"
+      ],
+      "url": "https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlerw1/",
+      "price": null,
+      "vram": "卡上 7.4GiB，16GB 卡可以留更多空間給 KV cache",
+      "license": "模型 other；llamAmpere 程式 MIT"
+    },
+    {
+      "id": "20261102-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "deepseek-ai/dsh-superagent-prototype：DeepSeek 放出「super-agent」設計的研究原型，兩天衝到 8k stars",
+      "summary": "DeepSeek Harness 團隊發了〈Exploring Super-agent Design〉一文，同時開源部分實作。dsh-superagent 是給 DeepSeek Harness 用的主動式 coding agent bundle，綁一個 GitHub repo，監聽 GitHub（也可接飛書），有權限的人交代工作後，它會開 work item、在自己的 session 和目錄裡做，最後在原本的對話裡回覆，例如開一個 PR，另有 web panel 列出需要人處理的事。設計原則是「花最少的人類注意力」：只在被要求或團隊寫好的規則允許時才動作。官方特別註明這是研究原型、不是正式產品，跟文章描述的內部版本也不完全一樣。",
+      "tags": [
+        "ai_devtools",
+        "coding agent",
+        "deepseek harness",
+        "agent orchestration"
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xl1zn3/",
+      "price": null,
+      "vram": "agent 框架本身不吃 VRAM，背後模型可接雲端或本地",
+      "license": "MIT"
+    },
+    {
+      "id": "20261102-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "「Anthropic Mythos 級模型外洩到 Hugging Face」是假的：43 個 tensor 可以用 tensor 名稱當 seed 的 NumPy 亂數逐 bit 重現",
+      "summary": "HN 上兩串討論在傳 burner22/numbat 這個 repo 是 Anthropic 外洩的 checkpoint，已經有好幾千次下載。HF 討論區 #13 的稽核找到確定的造假指紋：28 個 normalization 和 15 個 convolution tensor，共 730,368 個 BF16 數值，都能用「SHA256(tensor 名稱) 當 seed 的 NumPy PCG64 亂數」逐 bit 算出來，事先預測的另外 21 個 tensor 也全部對上。HN 留言也提醒，這類「外洩模型」常是騙人下載執行惡意程式的手法，其中一串的原始連結已因惡意程式疑慮被移除。重點：不要下載或執行。",
+      "tags": [
+        "ai_security",
+        "model leak",
+        "hugging face",
+        "malware risk"
+      ],
+      "url": "https://huggingface.co/burner22/numbat/discussions/13",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50327240",
+      "price": null,
+      "vram": "不適用（號稱十兆級參數，而且是假權重）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261102-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GLB-3D-Coder：4B 小模型寫 Three.js 場景並匯出 GLB，直接拿進 Godot 當遊戲素材",
+      "summary": "之前做 3D coding model 的作者，應網友要求訓了專做遊戲素材的版本：模型寫 Three.js 場景再 export 成 GLB，可以匯入 Godot 等引擎。用 model card 裡的 system prompt，再下「Create a mana potion」這種簡單指令就行，英文 prompt 效果最好。這是第一個可用的 checkpoint、訓練還在跑，作者說多數生成第一次就成功、有些要重試或小修 code；訓完會放完整 safetensors 和訓練資料集。",
+      "tags": [
+        "code_gen",
+        "3d assets",
+        "three.js",
+        "godot",
+        "qwen3.5-4b"
+      ],
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlh0zw/",
+      "price": null,
+      "vram": "4B 參數，16GB 輕鬆跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "QwenBend：Qwen3.5-0.8B 自己寫 Bend 程式、自己做型別檢查，再在 forward pass 裡執行",
+      "summary": "接續 Qwenputer（把 CPU 塞進 Qwen 權重）的玩法：Qwen 先寫出 Bend 程式，接著同一個模型用 Bend2 的子集規則檢查型別、affine 和 termination，通過才執行，每個 next token 就是一道執行過的指令，完全不靠 interpreter、compiler 或 tool call。整顆 16 暫存器 CPU（8K×32-bit RAM）是 5,300 萬個手設的非零權重，用 Gated DeltaNet 當記憶體、SwiGLU 當 AND gate。作者自己說純屬好玩，但示範了這類架構能在模型裡做什麼計算。",
+      "tags": [
+        "llm_inference",
+        "research",
+        "weights as programs",
+        "gated deltanet"
+      ],
+      "url": "https://github.com/voidash/qwenbend",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xle8ta/",
+      "price": null,
+      "vram": "0.8B 級，16GB 綽綽有餘",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-11-02T09:30:00+08:00",
-  "updatedAt": "2026-11-02T09:30:00+08:00"
+  "lastUpdated": "2026-11-02T10:19:16+08:00",
+  "updatedAt": "2026-11-02T10:19:16+08:00"
 }
