@@ -103489,8 +103489,216 @@
       "price": null,
       "vram": "GLM-5.3-Flash 需 4×H200 等級；16GB 可改用小模型當 subagent",
       "license": "MIT（GLM-5.3-Flash）"
+    },
+    {
+      "id": "20261102-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "DeepSeek Harness 發表〈Exploring Super-agent Design〉：別再讓人管 session，agent 要變成一個常駐、事件驅動的系統",
+      "summary": "DeepSeek Harness 團隊在 X Article 長文說明 dsh-superagent 背後的架構想法：單一任務的瓶頸是模型能力，但多工的瓶頸已變成人的注意力（一個人通常只跟得上 3–5 個 session）。他們提出五個模組：只負責和人互動、派工的長駐 Router 層＋各自隔離 context 的 Worker 層、事件過濾與訂閱（Inline & Spill、Chain of Recall 按需召回舊任務）、全雙工多管道互動、compute／state／環境分離，以及外部 Watchdog session 判斷 Worker 是否卡住或偏離目標。初步實驗中 Super-agent 完成任務 p50 12.4 分、p95 15.7 分，單一 session 加 subagent tool 在中性 prompt 下從不委派，p95 達 29.5 分；文章 8.5k 讚、約 8.9k 收藏。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "super-agent",
+        "router-worker",
+        "event-driven agents",
+        "agent harness"
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "source": "DeepSeek Harness（X Article）",
+      "sourceUrl": "https://x.com/DeepSeekHarness/status/2116857257245987236",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "Armin Ronacher 的 lineread：先讓 agent 對 GNU Readline 寫測試、再「clean-room」重寫成 Rust，他自己稱之為 GPL→MIT 洗白機",
+      "summary": "Flask 作者 Armin Ronacher 週末公開 lineread（Apache-2.0）：先對 GNU Readline 8.3 建立行為測試套件，接著刪掉參考原始碼、只留編譯好的 binary 當黑箱 oracle，再由 AI coding agents 依 header、文件和測試用 Rust 重寫出相容的 C 介面。README 開頭就聲明沒有做過任何技術或法律驗證，不保證算 clean-room，也無法確認 agent 訓練資料裡看過原始碼。他同時在 Mastodon 說，Opus 5.5 agent 只靠測試大概兩週就能重寫整個 CPython，並展示另一個實驗 djs：一個小型 agent swarm 約 24 小時從單一 spec 做出的 no_std Rust JS/TS 引擎，用來取代 pi codemode 裡的 QuickJS。",
+      "priority": "medium",
+      "tags": [
+        "agentic coding",
+        "clean-room reimplementation",
+        "test-driven porting",
+        "licensing",
+        "codemode"
+      ],
+      "url": "https://github.com/mitsuhiko/lineread",
+      "source": "GitHub（mitsuhiko/lineread）",
+      "sourceUrl": "https://x.com/mitsuhiko/status/2117029133418983576",
+      "price": null,
+      "vram": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "T3 Code v0.1.6 穩定版：137 位貢獻者、521 項變更，新增 side chat 與本地 commit review",
+      "summary": "Theo 的開源 coding agent GUI T3 Code（可同時接 Codex、Claude Code、OpenCode、Pi、Cursor SDK 等）10/31 發布 v0.1.6，一次包含 137 位貢獻者的 521 項變更。重點功能：在 side chat 問問題不打斷主 thread、pin／archive 專案、在 Diff pane 審本地 commits、用 1Password 管 provider 與 source-control 憑證。修正包括 agent 無回應時 Stop 也能結束、刪 thread 不再刪掉共用的 worktree、commit 不會落到切換後的分支。",
+      "priority": "medium",
+      "tags": [
+        "coding agent",
+        "agent GUI",
+        "multi-harness",
+        "worktrees"
+      ],
+      "url": "https://t3.codes/download/",
+      "source": "GitHub（pingdotgg/t3code）",
+      "sourceUrl": "https://github.com/pingdotgg/t3code/releases/tag/v0.1.6",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "Guillermo Rauch：「Own your intelligence」——擁有自己的 harness、資料和 runtime，本地模型要繼續普及",
+      "summary": "Vercel CEO Guillermo Rauch 週日發文說，反對「擁有自己的 intelligence」的人都有東西要賣你；巨型模型暫時跑不進本地，所以要保持選擇權，擁有自己的 harness、資料、連線和 runtime，也就是你的 agents，並擁抱開源。約 1.2k 讚、270 收藏、150 則回覆；同一天他也展示用 Gemini 跑 Zig 寫的小型 coding agent fx。",
+      "priority": "low",
+      "tags": [
+        "local models",
+        "own your harness",
+        "open source",
+        "agent portability"
+      ],
+      "url": null,
+      "source": "Guillermo Rauch（X）",
+      "sourceUrl": "https://x.com/rauchg/status/2117000819623243925",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "Simon Willison：升到 Python 3.15 後遇到怪錯，先刪 uv.lock",
+      "summary": "Simon 換成 Python 3.15 後偶爾遇到依賴錯誤：他的 library 專案不 commit uv.lock，但 uv run pytest 會在本地留下一份，裡面可能鎖著還沒有 3.15 wheel 的版本（例如 watchfiles 1.1.1 因 PyO3 最高只支援 3.14 而 build 失敗）。刪掉 uv.lock 再跑一次通常就好。",
+      "priority": "low",
+      "tags": [
+        "python 3.15",
+        "uv",
+        "dependency management"
+      ],
+      "url": null,
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "Show HN：HackerBooks —— 繼 HackerTube 之後，有人用 Claude 做了「HN 推薦過的書」",
+      "summary": "看到 Karpathy 的 HackerTube 後，HN 使用者 roansh 讓 Claude（Opus 5.5）做了同樣概念的書單站：約 16.5k 本、2007 年至今至少被兩位不同 HN 留言者提過的書，每本都連回原始留言，資料可從 about 頁下載。作者說幾乎所有程式碼，包括資料 pipeline，都由 Claude 寫，他只負責掌方向、做決定、買網域；但它只算提及次數，誇和罵都算一次。HN 848 分，是過去一天 HN 最高分的貼文。",
+      "priority": "medium",
+      "tags": [
+        "personal software",
+        "vibe coding",
+        "claude opus",
+        "show hn"
+      ],
+      "url": "https://hackerbooks.org",
+      "source": "Hacker News（Show HN）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50326821",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "Terence Tao 部落格客座文〈Mathematics has changed. Let's act like it〉：OpenAI 一口氣丟出 700 篇數學論文之後",
+      "summary": "數論學家 Frank Calegari 在 Tao 部落格寫道，OpenAI 10/6 釋出 700 多篇研究論文是數學史的分水嶺，AI 已能在許多領域做出突破性貢獻；但這些論文寫得很糟、不符合學界的 attribution 規範，有些甚至是錯的。他建議數學界與其氣大公司，不如把力氣放在自己能控制的招聘、出版和學生訓練上，並拿有限單群分類完成後整個領域降溫來類比，提醒別把領域宣告為「做完了」。HN 207 分、221 則留言。",
+      "priority": "medium",
+      "tags": [
+        "ai for math",
+        "research automation",
+        "attribution"
+      ],
+      "url": null,
+      "source": "What's new（Terence Tao）",
+      "sourceUrl": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "Databricks source-control 工程師評 Anthropic Scion：哪些是 Mononoke 舊招、哪些數字對不上",
+      "summary": "在 Databricks 負責 source control 的 typesanitizer 以個人身分逐點評論 Anthropic 的 Scion 文章：changeset 表示法等設計直接來自 Meta 的 Mononoke（Rain 的文章上 HN 頭版後才補上 attribution）。他覺得「superfan」Claude（每個元件一個 Slack 頻道、盯 telemetry 找異常）是少見的新做法；但「數百台 git mirror」、記憶體不夠等說法和他管理同量級 monorepo 的經驗不符，pull latest p50 從 87 秒降到 3.5 秒的前後數字也都偏高、難以解讀。",
+      "priority": "low",
+      "tags": [
+        "version control",
+        "monorepo",
+        "scion",
+        "mononoke"
+      ],
+      "url": null,
+      "source": "typesanitizer.com",
+      "sourceUrl": "https://typesanitizer.com/blog/scion.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "QCon 演講〈The Ladder Is Missing Rungs〉：AI 吃掉中段工作後，junior 要怎麼長成能監督 agent 的 senior",
+      "summary": "Alasdair Allan 在 QCon London 整理 METR 與 Anthropic 的 AI coding 採用研究，提出「supervision paradox」：越依賴 AI 工具，junior 越難練出技能，組織也會流失 institutional context，長期威脅到能有效監督自主系統的工程師培養管道。InfoQ 已放出 50 分鐘影片與逐字稿。",
+      "priority": "low",
+      "tags": [
+        "engineering career",
+        "supervision paradox",
+        "ai adoption"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/presentations/ai-software-engineering-pipeline/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261102-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-02",
+      "cycle": "morning",
+      "title": "Show HN：OmniDiff —— 用 Rust 寫、能 diff 程式碼、圖片、PDF、字型的 content-aware git difftool",
+      "summary": "作者從 Gentoo 套件裡的 7,400 個 repo 抽 2,000 個真實 diff 手動解過，再為每種內容設計 diff pipeline。OmniDiff 支援 25 種語言的程式碼、設定檔、圖片、PDF、壓縮檔、字型等，數萬行 C++ 在 2023 年的 ThinkPad 上不到 100ms。AGPLv3，目前 v0.3.0；作者說有用 AI 但「不 vibecode」。HN 143 分。",
+      "priority": "low",
+      "tags": [
+        "developer tools",
+        "git difftool",
+        "rust"
+      ],
+      "url": "https://github.com/ivankovic/omnidiff",
+      "source": "GitHub（ivankovic/omnidiff）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50325253",
+      "price": null,
+      "vram": null,
+      "license": "AGPL-3.0"
     }
   ],
-  "lastUpdated": "2026-11-01T22:13:48+08:00",
-  "updatedAt": "2026-11-01T22:13:48+08:00"
+  "lastUpdated": "2026-11-02T08:27:58+08:00",
+  "updatedAt": "2026-11-02T08:27:58+08:00"
 }
