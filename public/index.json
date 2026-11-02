@@ -104272,8 +104272,180 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261102-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "本地量化 vs Claude 實測 9 個真實 bug：作者就用 2 張 RTX 5070 Ti，3-bit 沒掉分、但 27B 多想 40% token",
+      "summary": "作者在 2× RTX 5070 Ti 16GB、Ryzen 9900X 上用自寫的 capy-flash engine，拿自己 C++/CUDA 專案的 9 個真實 regression 當題目（不公開、模型沒看過），agent 只能讀 code 寫 patch，每題跑 3 次，用隱藏答案自動評分加 Claude Opus 5 盲評（兩者相關 r=0.79）。結果：Qwen3.8-Flash-Next 本地 0.48–0.50，跟 Claude Haiku 5.5（0.47）同級、贏過舊版 Sonnet；Sonnet 5.5 0.58、Opus 5.5 0.74；Gemma 4 26B 幾乎不能當 agent。最值得看的是量化的代價：Flash-Next 只量化 experts 到 3-bit 幾乎免費，但 27B dense 的 3-bit 分數沒掉、卻多生 40% token，所以雖然 decode 比較快（153 vs 132 tok/s），每題反而從 13 分鐘變 18 分鐘。作者自己標了限制：只有 9 題、信賴區間約 ±0.2、兩邊 harness 不同。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "coding agent",
+        "benchmark",
+        "rtx 5070 ti"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlwpqv/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlwpqv/",
+      "price": null,
+      "vram": "跟你同一張卡：2× RTX 5070 Ti 16GB + 96GB RAM 跑 Flash-Next 3-bit / NVFP4",
+      "license": "不適用"
+    },
+    {
+      "id": "20261102-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "KVARK Sparkle 1.0（27B）：Qwen3.8-27B 微調，thinking token 最多少 67%、回答中位時間快 2 倍",
+      "summary": "Egzakta AI Lab 的第一個 open-weight 模型，目標是讓 reasoning 不要想太多：官方數據中位回應時間 13.7 秒對原版 Qwen3.8-27B 的 28.1 秒，thinking token 最多少 67%，GPQA Diamond、AIME、LiveCodeBench、IFEval、MMLU-Pro 五項準確率跟原版的差距都不顯著。有 BF16、FP8、GGUF，支援 llama.cpp、vLLM、Transformers、SGLang。數字都是官方自測，還沒看到第三方複測；HF 頁才剛上 4 個 likes。",
+      "tags": [
+        "llm_inference",
+        "efficient reasoning",
+        "qwen3.8-27b",
+        "gguf"
+      ],
+      "url": "https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlxnpc/",
+      "price": null,
+      "vram": "27B，16GB 要用 Q3/Q4 GGUF 或部分 offload",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Berth：用 lease 和排隊管 GPU 的 Go 小工具，讓 llama.cpp、ComfyUI、TTS 輪流用同一張卡",
+      "summary": "Berth 是單一 Go binary 的 GPU 資源管理器，不讓每個 app 搶 VRAM，而是用 lease、priority 和 request queue 排隊：目前的工作做完才釋放記憶體交給下一個。換模型時可以把支援的 engine 停在系統 RAM，或用 NVIDIA cuda-checkpoint 暫存，避免一直從硬碟重載；另有 OpenAI-compatible gateway（含 ComfyUI workflow）、web dashboard、多卡獨立排程，也附給 Claude Code、Codex、OpenCode 用的 skill。對單張 16GB 同時想跑 LLM、出圖、語音的人很對味。還在 alpha（v0.4.1，11/2 發布），主要支援 Linux NVIDIA，AMD 和 Windows 是實驗性。",
+      "tags": [
+        "infra_runtime",
+        "gpu scheduling",
+        "llama.cpp",
+        "comfyui",
+        "cuda-checkpoint"
+      ],
+      "url": "https://github.com/T-Crypt/berth",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlmu81/",
+      "price": null,
+      "vram": "本身不吃 VRAM，是管 VRAM 的工具",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "JetBrains Mellum2.1-12B-A2.5B-Thinking 加上 MTP head：輸出不變，decode 快 1.4–1.8 倍",
+      "summary": "JetBrains 幫 Mellum2.1 Thinking（12B MoE、2.5B active）多放一個 multi-token prediction head：多一層 transformer block、跟模型一起訓，用來當 speculative draft，模型會逐一驗證所以輸出不變，官方說 decode 快 1.4–1.8 倍、約 90% draft token 被接受。vLLM 0.33 以上用 --speculative-config 開，transformers 5.20 以上傳 use_mtp=True，llama.cpp 用 GGUF 版加 --spec-type draft-mtp。另外同一天有網友提醒：模型大到要跟 RAM 分著放時，MTP 反而可能拖慢，自己在 3060 + 32GB 上關掉 MTP 快了 20–30%，值得自己兩種都測。",
+      "tags": [
+        "llm_inference",
+        "mtp",
+        "speculative decoding",
+        "moe",
+        "coding model"
+      ],
+      "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-MTP",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xln8f2/",
+      "price": null,
+      "vram": "12B MoE（2.5B active），Q4/Q8 都放得進 16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "vLLM v0.33.0rc3：正式 wheel 改成只出 CUDA 13.0，CUDA 12.9 不再提供",
+      "summary": "vLLM 0.33 的 release candidate（927 個 commit），換成 PyTorch 2.14，最需要注意的是 release wheel 和 image 改成只有 CUDA 13.0，cu129 版本不再發布，driver 或環境還停在 CUDA 12.x 的要先準備升級。新模型支援包含 Reflection Beam-1.0（501B MoE）、Recursive Flint（40B MoE、2.5B active）、MiniCPM-OCR 1.0 等，speculative decoding 也加了給 DFlash 這類 block-diffusion drafter 用的 XPress refiner。目前還是 rc，正式版還沒出。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "cuda 13",
+        "speculative decoding"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+      "price": null,
+      "vram": "推論框架，看你載的模型",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "RAGFlow 1.0 preview 論文：agent 會自己反覆查，瓶頸從「找得到」變成「讀的成本」",
+      "summary": "RAGFlow 團隊分享 1.0 背後的論文〈Context as Infrastructure〉。論點是 retrieval 現在是 agent 的迴圈，chunking、embedding、Recall@k 不再是主要瓶頸，真正貴的是把東西讀進 context。他們測了 summary tree、outline、wiki、graph，在好的 harness 下都沒有可測到的準確率提升，所以改把「compilation」當供應層：匯入時就把文件轉成帶原文證據的 claim、relation、timeline 等 typed artifacts，再由 harness 決定放哪些進 context。難得的是作者公開了一張「目前全部沒達標」的結果表，不拿 demo 灌數字。repo 這週剛出 v1.0.0-rc3。",
+      "tags": [
+        "rag_knowledge",
+        "agentic retrieval",
+        "context engineering",
+        "ragflow"
+      ],
+      "url": "https://arxiv.org/abs/2610.41172",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlubz9/",
+      "price": null,
+      "vram": "RAG 框架本身不吃 VRAM，embedding / LLM 可接本地或雲端",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261102-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "中國首次對前沿 AI 出口管制（商務部公告 2026 年第 48 號）：模型權重、agent 架構都列入，登記要求已生效",
+      "summary": "Cloud Security Alliance 整理 10/16 商務部與科技部的公告：擬在禁止或限制出口技術目錄新增 40 項，其中 23 項是 AI。模型只要符合任一條件就受限：訓練算力至少 10^26 FLOPs、參數至少 2 兆、或在公開排行或全球呼叫量排進前 10，權重、checkpoint、原始碼、訓練與推論最佳化 know-how 都算；agent 的規劃、多 agent 協作、tool use 也另外管。目錄是草案、11/15 前徵求意見，但出口前登記已經生效。官方說 API、App、SaaS 和輕量 on-device 使用不算出口，但在中國境外本地部署受限模型算。HN 上 102 分，對之後中國開源大模型能怎麼釋出值得留意。",
+      "tags": [
+        "ai policy",
+        "export control",
+        "model weights",
+        "open-weight models"
+      ],
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50334038",
+      "price": null,
+      "vram": "不適用",
+      "license": "N/A"
+    },
+    {
+      "id": "20261102-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-11-02",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "SmolChat v17：Android 手機跑 GGUF，現在能開 OpenAI-compatible server，鎖屏也不斷",
+      "summary": "SmolChat 是在 Android 上本地跑 GGUF 的 app（底層 llama.cpp）。v17 加了用 foreground service 跑的 OpenAI-compatible HTTP server，手機鎖屏時 port 也會留著，等於把手機變成區網內的小推論節點；另外有全域 chat 設定（min-p、top-k、temperature）、code 區塊複製鈕、同步上游 llama.cpp，並修正 tok/s 算法，現在只算 generation、不再把 prompt processing 算進去。Play Store 的新版還在審核。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "android",
+        "on-device",
+        "openai-compatible"
+      ],
+      "url": "https://github.com/shubham0204/SmolChat-Android/releases/tag/v17",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlk5si/",
+      "price": null,
+      "vram": "手機端，跑小型 GGUF",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-11-02T18:25:23+08:00",
-  "updatedAt": "2026-11-02T18:25:23+08:00"
+  "lastUpdated": "2026-11-02T22:25:17+08:00",
+  "updatedAt": "2026-11-02T22:25:17+08:00"
 }
