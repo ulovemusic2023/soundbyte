@@ -104869,8 +104869,154 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261103-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-03",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Patrick Collison：「liquid software」——每個 app 都該有一個「告訴它你想怎麼改」的輸入框",
+      "summary": "Collison 在自己 vibecoded 的個人 app 裡都加了「improvements」欄位：自由輸入文字，接上 agent 直接 yolo 實作。修掉小毛邊或加新功能的 activation energy 幾乎歸零，另一位使用者幾天內就做了 150 個改進。他認為沒有這個功能的軟體開始顯得僵硬過時，但也坦承還不確定這模式能否 scale、多人協作與安全性怎麼辦——讓人聯想到 Lisp machine、Smalltalk、HyperCard「使用者可改寫軟體」的舊願景。",
+      "tags": [
+        "liquid-software",
+        "personal-software",
+        "ai-native",
+        "agentic"
+      ],
+      "url": "https://x.com/patrickc/status/2116636967517798672",
+      "source": "X @patrickc",
+      "sourceUrl": "https://x.com/patrickc/status/2116636967517798672",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-03",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Karpathy 的 HackerTube：2 小時用 agent 自己蓋一個沒有 slop 的 YouTube",
+      "summary": "受不了 YouTube 推薦全是 slop，Karpathy 讓 Opus 5.5 抓下 Hacker News 留言、用 Sonnet 過濾，整理出 2007–2026 年間被 HN 推薦過的 6,454 支影片，包成 YouTube 介面上線，約 2 小時完成。重點是他的工作方式：他說已經不做傳統工程（讀寫 code、跑 terminal），只跟 Claude 對話；自己動手的只有申請 Google Cloud API key、開 VPS、買網域。演算法不合你，就自己做一個。",
+      "tags": [
+        "personal-software",
+        "vibe-coding",
+        "ai-coding",
+        "supervisory-programming"
+      ],
+      "url": "https://hackertube.org",
+      "source": "karpathy.bearblog.dev",
+      "sourceUrl": "https://karpathy.bearblog.dev/hacker-tube/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-03",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Steve Lacey：MCP 最後會變成「沒有 contract 的 API」",
+      "summary": "Lacey 在自己的 app 裡做了 MCP，卻發現自己的 agent 幾乎不用——因為 connector 要人類安裝設定，agent 會直接繞去打 API 或開瀏覽器。但他仍看好 MCP 的一點：傳統 API 要 versioning、向下相容是為了保護呼叫端的 code，而 agent 每次都重讀文件，所以你可以隨時重寫介面、開放傳統 API 不會做的能力。levelsio 轉述後也說，長期 MCP 和 API endpoint 會合流。",
+      "tags": [
+        "mcp",
+        "api-design",
+        "agentic",
+        "distribution"
+      ],
+      "url": "https://x.com/stevelacey/status/2117359574181163199",
+      "source": "X @stevelacey（levelsio 轉發討論）",
+      "sourceUrl": "https://x.com/stevelacey/status/2117359574181163199",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-03",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "a16z：模型越便宜，AI app 越要證明自己值這個溢價",
+      "summary": "Tugce Erten 指出推論成本下降雖改善毛利，但也讓客戶更容易用通用模型自己做出替代品；只要客戶能把一個高量任務搬回內部，你的定價權就鬆動了。她整理三條規則：把整個 workflow 做得比客戶自己好、讓 context「租比重建便宜」、先證明價值再定價去捕捉它。案例是 Repsol 法務盲測 Harvey、Copilot 與自建原型後選了 Harvey。",
+      "tags": [
+        "pricing",
+        "moat",
+        "build-vs-buy",
+        "ai-applications"
+      ],
+      "url": "https://www.a16z.news/p/how-ai-applications-earn-their-premium",
+      "source": "a16z news",
+      "sourceUrl": "https://www.a16z.news/p/how-ai-applications-earn-their-premium",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-03",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Wispr Flow 的 paid-UGC 引擎：19 歲 intern 怎麼把 B2B SaaS 當 DTC 品牌在做",
+      "summary": "Hector Serrano 把電商的打法搬到 SaaS：約 50 位創作者每月產出 500–600 支 UGC 廣告，報酬是廣告花費的抽成，頂尖者月入超過 $13,000；新人有「smart retainer」保底撐過前幾個月。他的原則包括：先有 PMF 再開 paid、手動 DM 招募利基創作者對準不同 ICP、別抄熱門廣告（Meta 會把相似廣告歸群、很快疲乏），以及「最好的行銷人對 AI 過敏」——最後那 10% 一定要有人把關。",
+      "tags": [
+        "gtm",
+        "paid-ugc",
+        "creator-economy",
+        "growth"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+      "source": "Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-03",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Lulu Cheng Meservey：最有影響力的人買不到",
+      "summary": "“Paid engagement campaigns suffer from adverse selection because the most influential “influencers” can’t be bought” — Lulu Cheng Meservey。levelsio 接著說，X 上的業配一看就不是本人的聲音，追蹤者會尷尬甚至退追——直率透明正是影響力的來源。",
+      "tags": [
+        "adverse-selection",
+        "creator-leverage",
+        "audience",
+        "trust"
+      ],
+      "url": "https://x.com/lulumeservey/status/2117381018395042216",
+      "source": "X @lulumeservey",
+      "sourceUrl": "https://x.com/lulumeservey/status/2117381018395042216",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-03",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Paul Graham：這就是指數成長的感覺",
+      "summary": "“The previous month's towering revenue number now looks small, and the early part of the graph is starting to read as flat. This is what exponential growth feels like.” — Paul Graham。PG 貼出一家成功新創一個月的營收圖：上個月看似驚人的高點，這個月回頭看已像平地。",
+      "tags": [
+        "exponential-growth",
+        "compounding",
+        "startup"
+      ],
+      "url": "https://x.com/paulg/status/2117373555310760168",
+      "source": "X @paulg",
+      "sourceUrl": "https://x.com/paulg/status/2117373555310760168",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-03T09:20:00+08:00",
-  "updatedAt": "2026-11-03T09:20:00+08:00"
+  "lastUpdated": "2026-11-03T09:12:15+08:00",
+  "updatedAt": "2026-11-03T09:12:15+08:00"
 }
