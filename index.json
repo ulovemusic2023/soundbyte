@@ -104674,8 +104674,203 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261103-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "UMG、Sony 與 DistroKid 向法院表示正「working on a resolution」：Suno 案的 AI 音樂資料之爭",
+      "summary": "UMG 和 Sony 為了 2024 年告 Suno 的著作權案，向 DistroKid 發 subpoena，要它交出每月有多少 track 被第三方 prediction model 判定為 AI 生成、這些 track 的串流與版稅，以及其中多少被歸因於 Suno，還要知道偵測模型的名稱與供應商。雙方在 10/27 的聯合文件中表示正在協商，法院同意 DistroKid 延到 11/6 再回應。文件沒說會怎麼解決、DistroKid 會不會交出資料。",
+      "tags": [
+        "suno",
+        "music ai",
+        "ai detection",
+        "music industry"
+      ],
+      "url": "https://www.musicbusinessworldwide.com/umg-sony-and-distrokid-tell-court-they-are-working-on-a-resolution-in-dispute-over-ai-music-data-for-suno-case/",
+      "source": "Music Business Worldwide / Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/10/29/umg-distrokid-subpoena/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Alphabet 股東告 Sundar Pichai 等 13 人：指控 Lyria、MusicLM 用未授權音樂訓練",
+      "summary": "股東 Phil Rosen 10/30 在芝加哥聯邦法院提起 shareholder derivative suit，被告包含 Pichai、Larry Page、Sergey Brin 等 13 位董事與高管。79 頁的訴狀指控 Google 從 YouTube 擷取大量錄音、詞曲來訓練 Lyria、Lyria 2、Lyria 3、MuLan 和 MusicLM，並移除版權資訊，還涉及違反伊利諾州 BIPA 的 voiceprint 蒐集。因為是 derivative suit，若勝訴賠償歸 Alphabet 本身而非原告。",
+      "tags": [
+        "music ai",
+        "lyria",
+        "musiclm",
+        "copyright",
+        "music industry"
+      ],
+      "url": "https://www.musicbusinessworldwide.com/alphabet-shareholder-sues-sundar-pichai-and-12-others-over-training-googles-ai-including-lyria-on-copyrighted-works/",
+      "source": "Music Business Worldwide / Mubert Blog",
+      "sourceUrl": "https://mubert.com/blog/alphabet-shareholder-lawsuit-pichai-lyria",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Polyend Tracker 全系列 open-source，並推出 Tracker Community Edition 1.0",
+      "summary": "Polyend 把 Tracker（OG、+、Mini）三款的韌體原始碼都放上 GitHub，還做了 recovery 機制，避免刷壞 bootloader。同時釋出的 Community Edition 1.0 支援從 microSD 串流長 stem、新增 micro-move 與 volume 欄位、chance conditions、六個 sample editor plugin，並提供 dev kit 讓使用者開發、分享甚至販售自己的效果與 generator；Tracker+ 和 Mini 另加 CHIP、DIRT 兩個 synth engine。這是繼 Behringer、Akai 之後又一家硬體廠開放韌體。",
+      "tags": [
+        "open source music",
+        "sampler",
+        "groovebox",
+        "midi",
+        "custom firmware"
+      ],
+      "url": "https://github.com/polyend/tracker-ce",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/polyend-tracker-family-now-open-source-and-community-update-with-major-new-features.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Orra Vocal：pitch editor 加八段 vocal chain 的一體化 plugin",
+      "summary": "Orra Audio 推出 Orra Vocal，把人聲放到 piano roll 上逐音修 pitch、timing、vibrato、formant，沒動到的音、子音和呼吸維持原樣。後面接 CLEAN、EQ、SAT、COMP、DOUBLE、DELAY、REVERB、OUTPUT 八個效果，AUTO SETUP 會聽一次人聲自動設好參數，支援 ARA 2（VST3/AU）。Windows/macOS，VST3/AU/AAX，intro 價 US$35 到 11/17（原價 US$49）。",
+      "tags": [
+        "vocal",
+        "pitch correction",
+        "mixing",
+        "plugin",
+        "vst3",
+        "aax"
+      ],
+      "url": "https://rekkerd.org/orra-audio-launches-orra-vocal-pitch-editor-and-vocal-chain-plugin/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/orra-audio-launches-orra-vocal-pitch-editor-and-vocal-chain-plugin/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MONAD：把 Maschine MK3 MIDI controller 變成 8 軌 sampling groovebox",
+      "summary": "YouTuber Shift Sync 的個人專案 MONAD，利用 Maschine MK3 內建的 2-in/2-out audio interface，把這台原本要接電腦的 MIDI controller 改成獨立的 8 軌 sampling groovebox，每軌可選不同 engine，包含 Mutable Instruments Plaits 與 Clouds。Synth Anatomy 提到他是借助 AI 完成開發，是最近 custom firmware 熱潮的一部分。",
+      "tags": [
+        "midi",
+        "groovebox",
+        "sampler",
+        "custom firmware",
+        "native instruments"
+      ],
+      "url": "https://synthanatomy.com/2026/11/monad-turns-the-maschine-mk3-midi-controller-into-an-8-part-sampling-groovebox.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/monad-turns-the-maschine-mk3-midi-controller-into-an-8-part-sampling-groovebox.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BangZilla Wave Theory：把波形形狀轉成旋律的 MIDI sequencer plugin",
+      "summary": "BangZilla 與英國樂器廠 Boxed Ear 合作推出 Wave Theory，用 waveform 的形狀產生旋律，驅動軟體或硬體樂器。售價 US$59 / €49 / £49，有 14 天全功能免費試用（需註冊帳號下載）。⚠️ 未驗證：BPB 原文對 curl 回 403（Cloudflare），官網為 JS 頁面無法確認內容，資訊取自 BPB RSS。",
+      "tags": [
+        "midi",
+        "midi plugin",
+        "sequencer",
+        "composition"
+      ],
+      "url": "https://www.bangzilla.com/wave-theory",
+      "source": "Bedroom Producers Blog",
+      "sourceUrl": "https://bedroomproducersblog.com/2026/11/02/bangzilla-wave-theory/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GEMA 談 AI：最重要的是 output remuneration",
+      "summary": "在德國對 Suno 拿下初步勝訴後，德國著作權集管團體 GEMA 的 general counsel Kai Welp 在 Music Ally Focus podcast 表示，首要目標是針對 AI 輸出向作者與發行商付費，因為真正的威脅是 AI 音樂取代背景音樂等用途造成的 substitution effect；訓練端也需要公平的授權。他也認為 EU AI Act 目前「really not sufficient」。",
+      "tags": [
+        "music ai",
+        "suno",
+        "licensing",
+        "music industry"
+      ],
+      "url": "https://musically.com/2026/11/02/gema-on-ai-the-most-important-thing-is-we-get-an-output-remuneration/",
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/02/gema-on-ai-the-most-important-thing-is-we-get-an-output-remuneration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Relic 0.4.5：免費經典 studio 合集加入 RF-224、RF-480R 兩款 reverb",
+      "summary": "Riverflux Audio 的 Relic 合集（Windows/macOS/Linux）共 15 個經典 studio 單元：五台 compressor、五台 EQ、兩台 tape、一條 channel strip 和兩台 reverb。0.4.5 新增早期數位 reverb RF-224，以及有 94 個 program 的 RF-480R，所有 plugin 也加入 mid/side 處理。VST3/AU/CLAP，pay what you download（可免費）。",
+      "tags": [
+        "free plugin",
+        "reverb",
+        "compressor",
+        "eq",
+        "linux"
+      ],
+      "url": "https://rekkerd.org/free-relic-studio-classics-collection-updated-with-rf-224-rf-480r-reverb-plugins/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/free-relic-studio-classics-collection-updated-with-rf-224-rf-480r-reverb-plugins/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "PSP ClassicQlite：免費 British-style EQ plugin",
+      "summary": "PSP Audioware 推出免費的 ClassicQlite，靈感來自早期 Neve 等經典英式 console EQ，有高低 shelving（可切 Q）、帶 Auto Q 的 midrange bell、可調 high-pass，再加 PSP 第二代 SAT 飽和演算法。支援 AU/AAX/VST/VST3，Windows 與 macOS（Intel / Apple Silicon）。",
+      "tags": [
+        "free plugin",
+        "eq",
+        "equalization",
+        "mixing"
+      ],
+      "url": "https://bedroomproducersblog.com/2026/11/02/psp-audioware-releases-classicqlite-a-free-british-style-eq-plugin/",
+      "source": "Bedroom Producers Blog / PSP Audioware",
+      "sourceUrl": "https://www.pspaudioware.com/products/psp-classicqlite",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-03T08:24:52+08:00",
-  "updatedAt": "2026-11-03T08:24:52+08:00"
+  "lastUpdated": "2026-11-03T09:20:00+08:00",
+  "updatedAt": "2026-11-03T09:20:00+08:00"
 }
