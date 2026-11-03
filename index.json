@@ -105211,8 +105211,239 @@
       "price": null,
       "vram": "實驗在 B200／Hopper 上，消費卡未驗證",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261103-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "Addy Osmani〈Cognitive Surrender〉：offloading 是交出 how、留住 what；surrender 是 AI 的輸出直接變成你的輸出",
+      "summary": "Addy 引用 Wharton 的 Shaw 與 Nave 研究（3 個實驗、1,372 人）：只要旁邊有 AI，AI 答錯時有 73% 的人照單全收，而且信心反而上升，等於借用了模型的自信。他列出工程師最常「投降」的地方：600 行 agent PR 掃一眼就 approve（沒 review，只是蓋章）、貼 stack trace 拿到 fix 卻沒搞懂 bug、讓 agent 替你做 queue 還是 direct call 的設計決定。建議先自己形成預期再看答案、像 review junior 的 code 一樣 review agent 的 diff。X 長文約 2.5k 收藏；同一週 knlb.dev 的〈Resisting Cognitive Surrender〉也上了 HN（176 分），談怎麼設定 vibe 上限、逼自己留在 loop 裡。",
+      "priority": "high",
+      "tags": [
+        "cognitive surrender",
+        "human-in-the-loop",
+        "code review",
+        "agentic engineering"
+      ],
+      "url": null,
+      "source": "AddyOsmani.com",
+      "sourceUrl": "https://addyosmani.com/blog/cognitive-surrender/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-013",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "Harrison Chase〈New context engineering challenges in late 2026〉：大家都收斂到同一種 agent 架構，下一關是 proactive、always-on 的 agent",
+      "summary": "Harrison 認為「LLM 在 loop 裡呼叫 tools、跑在 sandbox」已是共識，摘要長對話、offload 大型 tool 結果、用 skills 做 progressive disclosure、tool search、subagent 隔離 context、以 bash 為主要工具，這些都算標準解。但他說最近每個 agent builder 都在想背景常駐、目標導向的 agent，帶來三個還沒有通解的新難題：怎麼主動推播又不煩人、memory 該記什麼（太少沒用、太細也沒用）、以及 async：長時間任務丟到背景時，主 agent 仍要即時回應使用者。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "proactive agents",
+        "context engineering",
+        "agent memory",
+        "async subagents"
+      ],
+      "url": null,
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/context-engineering-challenges-late-2026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-014",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "Launch HN：Momentic 的 QA agent「Mo」，在 1,396 個人工標註 bug 上 recall 19.3%，Codex 6.2%、Claude Code 4.2%",
+      "summary": "Momentic（YC W24）認為 coding agent 讓寫 code 變快，瓶頸變成「確認它真的能用」，所以讓 agent 直接操作 app 來找 bug，而不是寫 Playwright script。Mo 會自動拆成平行 sub-agent，各自開 browser 或裝置，用「using / modifying」resource lease 協調。自家 QA Bench（Gitea、Metabase、Twenty、Saleor）跑 60 分鐘：Mo 找到 269 個 bug、precision 84%、每個 bug 2.67 美元；Codex 86 個、每個 0.80 美元，precision 略高（86%）。benchmark 由廠商自己做，資料集和 harness 都已公開。HN 144 分。",
+      "priority": "medium",
+      "tags": [
+        "agentic QA",
+        "verification loop",
+        "E2E testing",
+        "benchmark"
+      ],
+      "url": "https://momentic.ai/",
+      "source": "Hacker News（Launch HN）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50339913",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-015",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "Hugging Face 提出 Transformers Model Integration Contracts：用縮小版模型 fixture 在 CPU 上抓整合 bug",
+      "summary": "起因是 7 月 30 日 T5 改用 PyTorch SDPA 後，UMT5 decoder 在訓練時能偷看未來 token，沒有任何錯誤、在 main 待了快兩個月。Transformers 支援 750+ 種模型，不可能每個 PR 跑完 20 萬個 GPU 測試，所以改把真實 checkpoint 縮成保留所有 layer 種類的小 fixture（UMT5 從 1,227 MB 縮到 66 MB）。一份 MIC 包含三樣東西：fixture、可執行的 Markdown usage path、經人工審核的 baseline 輸出；replay 那批 commit 時，這個 fixture 每次都能抓到該 bug。",
+      "priority": "medium",
+      "tags": [
+        "model integration contracts",
+        "regression testing",
+        "fixtures",
+        "transformers"
+      ],
+      "url": null,
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/transformers-mic",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-016",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "Google A2UI × CopilotKit：agent 用宣告式 JSON 描述介面，由你自己的元件庫渲染 Generative UI",
+      "summary": "A2UI（Agent-to-UI）是 Google 的 framework-agnostic Generative UI 開放標準：agent 不吐 HTML/JS，而是輸出一串彼此用 ID 參照的小 JSON 訊息，client 只渲染信任 catalog 裡的元件，agent 自己發明的元件會被擋下，並可 streaming 邊收邊畫。同一份回應可在 React、Lit、Angular、SwiftUI、Jetpack Compose、Flutter 渲染。CopilotKit 負責接 LangChain、AWS Strands、Google ADK 等 agent framework，並提供 Vue 與 Slack 的 renderer。",
+      "priority": "medium",
+      "tags": [
+        "generative UI",
+        "A2UI",
+        "agent-to-UI protocol",
+        "CopilotKit"
+      ],
+      "url": null,
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-017",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "Vercel MCP 支援 Client ID Metadata Documents（CIMD）：任何 MCP client 不需事先審核就能申請連線",
+      "summary": "以前 Vercel 要人工審核、allowlist 每個 MCP client 和 redirect URI；現在 client 只要在自己網域放一份描述自己的 JSON，再用那個 HTTPS URL 當 OAuth client_id 即可。這是 MCP authorization spec 目前建議、用來取代 Dynamic Client Registration 的做法。使用者還是要登入並逐一同意，同意畫面會顯示 client 名稱、logo 和提供 metadata 的 hostname；CIMD client 不會有 Vercel verified badge，所以你信任的其實是那個 hostname。",
+      "priority": "medium",
+      "tags": [
+        "MCP",
+        "OAuth",
+        "CIMD",
+        "agent auth"
+      ],
+      "url": null,
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-018",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "NVIDIA 開源 Auto Ontology：從企業 metadata 自動建 ontology，透過 MCP 給 agent 可驗證的資料語意層",
+      "summary": "NVIDIA 的出發點是：做 agentic analytics 時，營收數字答得快但答錯就毫無價值。Auto Ontology 從企業 metadata 產生 ontology 和知識圖譜、整合不同系統間不一致的指標定義，再用認證過的定義和 lineage 檢查 agent 產生的 query，每個答案都附 provenance，並透過 MCP、CLI、API 提供給任何 agent harness；修正會回寫進 ontology。Apache-2.0，GitHub 約 1.4k stars，今天上了 HN。",
+      "priority": "low",
+      "tags": [
+        "semantic layer",
+        "ontology",
+        "text-to-SQL",
+        "MCP"
+      ],
+      "url": null,
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/NVIDIA/auto-ontology",
+      "price": null,
+      "vram": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261103-sw-019",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "後續：Debian 10/16 已修 Linux TCP RCE（CVE-2026-98432），Ubuntu 兩週多後所有版本仍標示 Vulnerable",
+      "summary": "上週提過的 kernel TCP use-after-free（CVSS 9.8，2016 年就存在、可遠端拿 root）有了後續：截至 11/2，Ubuntu 22.04、24.04、26.04 LTS 都還沒有修補後的 kernel，也沒公布時程，而 Debian、Arch、Alpine 等志工維護的發行版都已出修補。chalmovsky.com 的〈WTF Ubuntu?〉衝上 HN 1,526 分、633 則留言，作者已把自己的 Ubuntu 伺服器全部下線；另一篇報導也有 513 分。有在跑 Ubuntu 伺服器的話，值得檢查一下手邊的緩解方案。",
+      "priority": "medium",
+      "tags": [
+        "security",
+        "linux kernel",
+        "patch management",
+        "ubuntu"
+      ],
+      "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+      "source": "chalmovsky.com",
+      "sourceUrl": "https://chalmovsky.com/posts/wtf-ubuntu",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-020",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "Goldman Sachs 收回非工程師的 Claude Code、GitHub 使用權：vibe coding 實驗期結束",
+      "summary": "Bloomberg 報導、多家媒體轉述：Goldman 10 月更新內部規範，Claude Code 和 GitHub 等進階 AI coding 工具只限工程師使用，同時橫跨交易、量化研究和軟體工程的 strats 不受影響。交易員原本用它們監控客戶交易流、模擬部位，有人對此不滿。發言人說試用期後綜合評估了生產力與風險管理。這和 CIO Marco Argenti 7 月還在稱讚非技術人員 vibe coding、再交給 12,000 名工程師打磨的說法形成對比。",
+      "priority": "medium",
+      "tags": [
+        "enterprise AI governance",
+        "vibe coding",
+        "AI coding tools"
+      ],
+      "url": null,
+      "source": "Quartz（引述 Bloomberg）",
+      "sourceUrl": "https://qz.com/goldman-sachs-restricts-ai-coding-tools-traders-bankers-110226",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-021",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "TechPolicy.Press 評論：SEC 應擋下 Anthropic IPO，S-1 揭露約 5,820 億美元不可取消的算力承諾",
+      "summary": "Matt Scherer 指出：Anthropic 手上有 960 億美元現金，但修訂版 S-1 列出對 Amazon、AMD、Broadcom、Google、Microsoft 五家至少 5,820 億美元的 non-cancelable 承諾，附註提到的總支出承諾接近 9,000 億、多數延續到 2030 年代；2026 年財報尚未經正式審計，第三季營收成長明顯放緩。他主張這些承諾實質上就是債務，散戶和退休基金會承擔風險。這是立場鮮明的評論文，HN 356 分、260 則留言。",
+      "priority": "low",
+      "tags": [
+        "AI economics",
+        "IPO",
+        "anthropic",
+        "compute commitments"
+      ],
+      "url": null,
+      "source": "TechPolicy.Press",
+      "sourceUrl": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-022",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "title": "PlanetScale Neki 的 planned switchover 設計：不需要 failure detection，先鎖定最終 WAL 位置再升級 replica",
+      "summary": "Shlomi Noach 解釋 Neki（sharded Postgres）在換 pod、升 kernel 或搬 cell 時，怎麼把「寫入無法路由到任何 primary」的時間壓到最短。重點是計畫中的 switchover 不同於 unplanned failover，不必先判斷 primary 是不是死了，所以可以跳過偵測時間。流程分三段：preflight 檢查有沒有可升級的 replica、讓 replica 追上最終 WAL 位置後 promote（同時維持 synchronous replication）、再讓 client 把 query 導到新 primary；已確認的寫入一筆都不會丟。",
+      "priority": "low",
+      "tags": [
+        "postgres",
+        "high availability",
+        "switchover",
+        "distributed systems"
+      ],
+      "url": null,
+      "source": "PlanetScale Blog",
+      "sourceUrl": "https://planetscale.com/blog/designing-a-planned-switchover-for-minimum-disruption",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-03T10:20:56+08:00",
-  "updatedAt": "2026-11-03T10:20:56+08:00"
+  "lastUpdated": "2026-11-03T18:24:36+08:00",
+  "updatedAt": "2026-11-03T18:24:36+08:00"
 }
