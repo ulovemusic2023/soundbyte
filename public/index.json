@@ -105015,8 +105015,204 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261103-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "PiVo-1.4M：整套 TTS（含 vocoder）只有 140 萬參數，純 CPU + ONNX Runtime 就能跑",
+      "summary": "empero-ai 的研究型 TTS，想回答「一個聲音到底需要多少參數」：acoustic model 約 58.5 萬參數預測 vocoder features，再由約 81.7 萬參數、從 FARGAN 改來的 vocoder 輸出 16 kHz mono 音訊，總共 1,401,562 個參數。推論只用 NumPy 和 ONNX Runtime，不需要 PyTorch、teacher model、speaker encoder 或網路。目前只有 Pi、Vo 兩個英文聲音；作者自己說清晰度很好，但部分句子還有金屬感、機械感，HF 上附 technical report。適合當 edge／嵌入式語音的參考，不是拿來取代高品質 TTS。",
+      "tags": [
+        "tts_speech",
+        "tiny tts",
+        "vocoder",
+        "onnx runtime",
+        "cpu inference"
+      ],
+      "url": "https://huggingface.co/empero-ai/PiVo-1.4M",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xm0lmk/",
+      "price": null,
+      "vram": "不需要 GPU，CPU 即可",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261103-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RidgeFill：免訓練跳過上層計算加速 prefill，Qwen3.8-27B 長 prompt 首 token 快 1.25–1.31 倍（附 llama.cpp fork）",
+      "summary": "做法是 prompt 只跑到中間某一層，之後每層的輸入用一次性 closed-form 擬合的 ridge regression 預測，各層再用自己的 projection 寫 KV cache；最後幾千個 token 和 decode 階段仍跑完整模型，不丟 token、不需訓練。作者數據：Qwen3.8-Flash-Next 在 vLLM 9K–32K token 的 TTFT 快 1.50–1.60 倍，64K 請求從 82.6 秒降到 47.5 秒；Qwen3.8-27B 在 llama.cpp fork（單張 A100）16K–120K 快 1.25–1.31 倍，RULER 掉 1.2–1.4 分、LongBench v2 掉 1.4 分，作者也承認不排除損失幾分。關掉 RidgeFill 時 fork 跟 upstream bit-identical，HF 上有五個模型的 maps。",
+      "tags": [
+        "llm_inference",
+        "prefill",
+        "llama.cpp",
+        "long context",
+        "kv cache"
+      ],
+      "url": "https://github.com/Approximate-Science/llama.cpp-ridgefill",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmarrf/",
+      "price": null,
+      "vram": "方法本身不加 VRAM；27B 在 16GB 需 Q3/Q4 GGUF，maps 也可從 host 串流",
+      "license": "MIT（llama.cpp fork）"
+    },
+    {
+      "id": "20261103-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "colibri v2.1.0：純 C 的 MoE 引擎，experts 從硬碟串流，GGUF 直接跑、CUDA 加入 routed-expert tier",
+      "summary": "colibri 的思路是巨大 MoE 每個 token 只用一小部分，所以常駐那一部分在 RAM，其餘 experts 需要時才從硬碟讀，沒有 GPU 也能跑。10/31 的 v2.1.0 自 v2.0.0 起合了 387 個 PR：所有引擎都能直接讀已發布的 GGUF（IQ1_S 到 Q8_0、BF16、MXFP4，含 unsloth Dynamic UD quants，不用再轉檔）；新增 Mistral-Large-4（1T）、Muse Spark Open、Flint、LFM3-VL-2B；CUDA 每個引擎都有放在卡上的 routed-expert tier，Vulkan 則能把卡放不下的 experts 留在 RAM 由 CPU 同步算；另有新 chat UI，Qwen3.8-Flash-Next 支援 262K context。對 16GB 卡＋大 RAM 想摸更大 MoE 的人很實用，但速度受硬碟和 RAM 頻寬限制。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "expert streaming",
+        "gguf",
+        "cuda",
+        "vulkan"
+      ],
+      "url": "https://github.com/JustVugg/colibri/releases/tag/v2.1.0",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/JustVugg/colibri/releases/tag/v2.1.0",
+      "price": null,
+      "vram": "GPU 可選；最小模型需約 8GB RAM＋22GB 硬碟，16GB 卡可放部分 experts",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261103-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Unsloth 的 LiveCodeBench 分數被抓包：更新後連 Q8 baseline 一起漲 2–3 分，社群質疑統計上不太可能",
+      "summary": "r/LocalLLaMA 網友比對 Unsloth 前後兩版 DeepSeek-V4.1-Flash-1017 量化的 LiveCodeBench v6 圖表：四個 Unsloth quant（IQ1_S 到 Q2_K_XL）和 Q8 baseline 全部同時多了 2.05–3.11 分。第一版分數剛好對應 175 題 × 3 次＝525 個結果，新版改成每題 12 次；假設前 3 次有包含在內，後 9 次得比前面高出 2.7–4.2 分才湊得出來，作者用 hypergeometric test 認為機率很低。這串跟同時延燒的 ISTA（GSQ-RCO）vs Unsloth 量化比拼是同一場討論，提醒大家看 quant benchmark 要注意取樣次數和方法有沒有換。內容是網友分析，Unsloth 官方回應尚未讀到。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "benchmark",
+        "unsloth",
+        "livecodebench"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm9i4x/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xm9i4x/",
+      "price": null,
+      "vram": "不適用（benchmark 討論）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261103-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ISTA DeepSeek-V4.1-Flash GSQ-RCO Coder：砍掉一半 experts，763B 模型壓到「每參數 1 bit」",
+      "summary": "IST-DASLab 推出 DeepSeek-V4.1-Flash-1017 的 Coder build：每層 384 個 routed experts 只留 192 個，transformer 權重 72.1 GB（未剪版 IQ2_XXS 是 138.2 GB）。「1 bit」是拿 72.12 GB 除以原本 551.9B transformer 參數算出來的，被移除的 experts 算 0 bit，實際保留的 280.1B 參數平均 2.06 bits。GSQ 是聯合學習 grid 和 group scale 的後訓練 scalar quantization、可存成標準 GGUF；RCO 在每層固定預算下用 KL divergence 挑要留的 experts。共用的 Engram 檔（110.6 GB）和 vision projector 跟未剪版相同。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "expert pruning",
+        "gguf",
+        "deepseek-v4.1"
+      ],
+      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlys6k/",
+      "price": null,
+      "vram": "72.1 GB 權重＋110.6 GB Engram，16GB 卡加 64GB RAM 不夠",
+      "license": "未確認"
+    },
+    {
+      "id": "20261103-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "MIT CSAIL「Weight-Space Programming」：GPT-6 Astra 直接改 Qwen 權重，MATH-500 從 7.9% 拉到 48.1%（HN 近 2000 分）",
+      "summary": "MIT CSAIL（含 Omar Khattab）11/2 發的研究：frontier LLM 光看原始權重就能判斷小網路是被訓練來玩哪個遊戲，也能不靠環境回饋直接寫出比 PPO 訓練 1 億步還強的小型遊戲網路。最受關注的例子是請 GPT-6 Astra 不用 gradient 讓 Qwen3.5-0.8B 數學變好：它找到 model card 提過的 reasoning loop 問題，只改 0.016% 權重，同樣 sampling 設定下 MATH-500 從 7.9% 升到 48.1%，IFEval 也提升約 3 倍，過程不允許寫 training loop。HN 上 1979 分、629 則留言，是今天最熱的 AI 討論；另一篇熱門文章〈LLMs are not superhuman at reading and writing neural network weights〉則在質疑它。",
+      "tags": [
+        "llm_training",
+        "weight editing",
+        "interpretability",
+        "qwen3.5"
+      ],
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50341174",
+      "price": null,
+      "vram": "不適用（研究）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261103-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Agentic Backdoors via Pretraining Poisoning：只污染 0.1% 預訓練資料，就能讓 CLI agent 被觸發後執行任意指令",
+      "summary": "Carlini、Jagielski、Rando 等人的新 arXiv 論文：從零預訓練 0.6B、1.7B、4B 的 Qwen3 模型，再用乾淨流程後訓練成 CLI agent。只要 0.1% 的預訓練語料被下毒，部署後的 agent 碰到 trigger 就會執行攻擊者指定的指令，平常則表現正常。攻擊成功率隨模型變大而上升，4B 在 0.1% 下約 92%，降到 0.0005% 仍有效。對自己在本地跑 coding agent、給它 shell 權限的人，是要認真看待的供應鏈風險。",
+      "tags": [
+        "llm_training",
+        "security",
+        "data poisoning",
+        "coding agent"
+      ],
+      "url": "https://arxiv.org/abs/2610.37741",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50341334",
+      "price": null,
+      "vram": "不適用（研究）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261103-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LongCat-2.5：美團 1.6 兆參數模型，官方稱訓練全程用國產晶片完成",
+      "summary": "美團 LongCat 團隊發表 LongCat-2.5，主打 native multimodality 和 agentic tasks（HN 79 分）。官方頁面寫的是總參數 1.6 兆、訓練全程在國產晶片上完成。截至目前在 Hugging Face 的 meituan-longcat 帳號還沒看到 2.5 的權重（最新是 7 月的 LongCat-2.0），所以是否開源和授權都還不確定，先當產業動態看。",
+      "tags": [
+        "llm_inference",
+        "multimodal",
+        "domestic chips",
+        "longcat"
+      ],
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50337716",
+      "price": null,
+      "vram": "1.6T 參數，遠超本地",
+      "license": "未確認（尚未看到權重）"
+    },
+    {
+      "id": "20261103-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "OpenBMB ForgeKernel：AI agent 黑箱優化 22 小時，在 B200 上贏 NVIDIA FlashMLA 9.8%，kernels 全開源",
+      "summary": "ForgeKernel 是會「自我演化」的 GPU kernel agent：從 reference kernel 出發，靠實際執行、計時、profile 理解架構，每個被接受的 kernel 就變成下一輪要超越的 reference。這次直播實驗中 agent 看不到 FlashMLA 原始碼和文件，只能跑 benchmark，22 小時、32 個版本後做到 472 µs 對 518 µs（快 9.8%）。論文宣稱在 Hopper／Blackwell 的 27 個 operator 上，有 18／22 個追平或超過 FlashAttention-4、cuDNN、DeepGEMM 等專家函式庫；27 個 operator（attention、Gated DeltaNet、GEMM、conv 等）和 harness 已開源。目前主要針對資料中心卡。",
+      "tags": [
+        "infra_runtime",
+        "gpu kernel",
+        "cuda",
+        "ai agent",
+        "flashmla"
+      ],
+      "url": "https://github.com/OpenBMB/ForgeKernel",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xlzaq0/",
+      "price": null,
+      "vram": "實驗在 B200／Hopper 上，消費卡未驗證",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-11-03T09:12:15+08:00",
-  "updatedAt": "2026-11-03T09:12:15+08:00"
+  "lastUpdated": "2026-11-03T10:20:56+08:00",
+  "updatedAt": "2026-11-03T10:20:56+08:00"
 }
