@@ -104473,7 +104473,7 @@
       "date": "2026-11-03",
       "cycle": "morning",
       "title": "OpenAI 公開 Pando：為 Codex 時代重寫的 Git backend，push 中位延遲降近 5 倍、每天送出近 1 PB Git 資料",
-      "summary": "OpenAI monorepo 的季 commit 數相較 2024 Q1 到年底會成長超過 2,400%，舊 Git 服務可靠度一度低於 90%。Pando 保留 Git 協定和 client，但放棄兩件傳統 Git server 的要求：不再對整個 repo 做全域一致的 ref 更新（每個 branch 各自協調，無關 push 可並行），也不再為每個 client 產生專屬 packfile，改用 packfile-uri 重複發送已存好的 pack，由 Express 區域快取服務（命中率 99% 以上）。由一位工程師設計核心、Codex agents 實作，用 Rust 10 週做完，4 月上線；Pando 本身不開源，但 Git client 的修正會回饋 upstream。和上週 Anthropic Scion 打對台：一邊留 Git，一邊從頭重寫。",
+      "summary": "OpenAI monorepo 的季 commit 數相較 2024 Q1 到年底會成長超過 2,400%，舊 Git 服務可靠度一度低於 90%。Pando 保留 Git 協定和 client，但放棄兩件傳統 Git server 的要求：不再對整個 repo 做全域一致的 ref 更新（每個 branch 各自協調，無關 push 可並行），也不再為每個 client 產生專屬 packfile，改用 packfile-uri 重複發送已存好的 pack，由 Express 區域快取服務（命中率 99% 以上）。由一位工程師設計核心、Codex agents 實作，用 Rust 10 週做完，4 月上線；Pando 本身不開源，但 Git client 的修正會回饋 upstream。和 Anthropic 的 Scion 正好相反：OpenAI 留在 Git 上，Anthropic 則從頭重寫。",
       "priority": "high",
       "tags": [
         "paradigm-shift",
@@ -104600,7 +104600,7 @@
       "date": "2026-11-03",
       "cycle": "morning",
       "title": "Anthropic Residency 開放申請：給教授、技術創辦人、staff 級工程師的付費研究計畫，不需 ML 背景",
-      "summary": "為期 6 週到 6 個月的付費研究職位，年薪換算 35 萬到 50 萬美元，配 Anthropic 研究員一對一 mentor 和專屬 compute，研究方向含 scalable oversight、interpretability、AI security 紅隊和 RL 基礎設施。偏好在舊金山，短期可遠端；11 月 22 日截止。X 貼文約 9.9k 讚、9.4k 收藏，是昨天開發圈最多人收藏的一則。",
+      "summary": "為期 6 週到 6 個月的付費研究職位，年薪換算 35 萬到 50 萬美元，配 Anthropic 研究員一對一 mentor 和專屬 compute，研究方向含 scalable oversight、interpretability、AI security 紅隊和 RL 基礎設施。偏好在舊金山，短期可遠端；11 月 22 日截止。X 貼文約 9.9k 讚、9.4k 收藏，是這次掃到的貼文裡收藏數最高的一則。",
       "priority": "low",
       "tags": [
         "AI safety",
