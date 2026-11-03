@@ -105442,8 +105442,247 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261103-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp 合併 Nemotron 3.5 Transcribe 支援：40 語言離線轉錄＋講者標註，GGUF 就能跑",
+      "summary": "ggml-org/llama.cpp 的 PR #31471（mtmd）在台灣時間 11/3 晚上 9 點多 merge，讓 NVIDIA 的 Nemotron 3.5 Transcribe（30B-A4B hybrid MoE，每 token 約 4.3B active）可以用 llama-mtmd-cli 和 llama-server 跑：40 種語言離線轉錄、可給 prompt context、支援講者標註，最長一小時錄音（切成 40 秒窗口，前後各留 4 秒 context，並帶 speaker cache 讓講者編號不會每 40 秒重置）。PR 作者自測 LibriSpeech test-clean WER：Q8_0 1.03、IQ4_NL 1.02（model card BF16 是 1.09）；搭配 draft-mtp 在 47 分鐘會議錄音快 1.38 倍。注意 llama-server 要加 `--reasoning off`，否則只回 reasoning 沒有逐字稿；word timestamps 和 streaming 不在這次範圍。",
+      "tags": [
+        "asr_speech",
+        "llama.cpp",
+        "nemotron",
+        "speaker diarization",
+        "gguf"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31471",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmu0iz/",
+      "price": null,
+      "vram": "總參數約 33.7B，Q4 量化仍略超 16GB（估算），需把部分 experts 放 RAM；active 只有約 4.3B",
+      "license": "模型 NVIDIA 自訂授權（other）；llama.cpp MIT"
+    },
+    {
+      "id": "20261103-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "NVIDIA NemotronLabs RE-USE：960 萬參數的通用語音增強模型，降噪、去回音、修 codec 失真一次處理，可商用",
+      "summary": "RE-USE 是多語言的 universal speech enhancement 模型，只有約 960 萬參數，目標是在保留語音保真度的前提下修復各種真實世界的劣化：背景噪音、殘響、clipping、頻寬受限、codec artifacts、封包遺失和爛麥克風。支援 8／16／22.05／24／32／44.1／48 kHz 多種輸入取樣率，語言無關；重疊人聲時會保留主講者、壓掉其他人。另有保留笑聲的 -laughter 版本，HF 上有 Gradio demo 可以直接丟音訊或影片試。官方標示 ready for commercial use，很適合放在 TTS／ASR 前處理或 podcast 清音流程。",
+      "tags": [
+        "tts_speech",
+        "speech enhancement",
+        "denoising",
+        "nvidia",
+        "audio restoration"
+      ],
+      "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmorim/",
+      "price": null,
+      "vram": "約 9.6M 參數，幾乎不吃 VRAM，CPU 也可",
+      "license": "OpenMDW-1.1"
+    },
+    {
+      "id": "20261103-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "FreeToken：Stoica、Song Han、Zaharia 等人的 edge MoE serving 引擎，在遊戲 PC 上跑 290B+ MoE，今天 GitHub Trending 熱門",
+      "summary": "FreeToken 把 GPU、CPU、host memory 和互連當成一個彈性推理平台，主打在消費級硬體上跑前沿 MoE：bandwidth-adaptive 的 CPU–GPU co-execution、整層 double-buffered prefill streaming、全域 LRU expert cache、自家 FTW 權重格式，以及可在不重啟的情況下動態分配 VRAM 給 expert cache 和 KV。另一個特色是 semantic anchor checkpoints，agent 改動 tool call、thinking block 時不用重算整段 context。支援 DeepSeek-V4-Flash、Qwen3.6-35B-A3B、GLM-5.2 等，MXFP4／NVFP4／FP8／BF16，原生支援 RTX 30／40／50，提供 OpenAI／Anthropic 相容 API 和 Windows／Linux 桌面 app。10/26 的 v0.2.1 加了 GGUF 圖片輸入、DeepSeek-V4 GGUF 和 Flint 支援。今天單日約 689 顆星。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "expert offload",
+        "edge serving",
+        "rtx 50"
+      ],
+      "url": "https://github.com/FlashML-org/FreeToken",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/FlashML-org/FreeToken",
+      "price": null,
+      "vram": "為消費卡設計，RTX 50 原生支援；大模型需搭配大量系統 RAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261103-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "spaCy 作者 Honnibal 反駁 Astra 改 Qwen 權重研究：「只看原始權重」只在 17K–172K 小網路成立，Qwen 那個是寫 Python 跑出來的（HN 290 分）",
+      "summary": "早上大家在傳的 MIT CSAIL「Weight-Space Programming」，晚上出現有力反駁。Matthew Honnibal 把文中實驗逐一拆表：真的「把原始權重放進 context、不用工具、不跑網路」的只有三個實驗，規模 17K–172K 參數；所有牽涉真正語言模型的實驗都有寫 Python，最吸睛的 Qwen3.5-0.8B MATH-500 從 7.9% 到 48.1%，還能跑模型最多 50 批練習題。他的結論是 Astra 展現的是「能做人類 ML 工程師會做的事」，不簡單，但不該跟直接讀權重的實驗放在同一篇宣稱同一種能力。HN 290 分、65 則留言。",
+      "tags": [
+        "llm_training",
+        "weight editing",
+        "research critique",
+        "interpretability"
+      ],
+      "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50351111",
+      "price": null,
+      "vram": "不適用（研究討論）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261103-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "balbal-v2：純 CPU 的土耳其語 ASR，Mu-Bench 第二名僅次於 Google Chirp 3，45M 版本快到 236 倍即時",
+      "summary": "兩個 CTC＋KenLM 模型，都為 CPU 設計、訓練成本各不到 250 美元：balbal-v2-manas（313M，土耳其語＋英語，8 執行緒約 123 倍即時）和 balbal-v2（45M，只有土耳其語，約 236 倍即時，舊 Celeron 單核也能即時）。在 846 通真實客服電話的 Mu-Bench 上 manas WER 8.20，僅次 Chirp 3 的 8.03，贏過 Gemini 3.5 Transcribe、ElevenLabs Scribe v2 和 whisper-large-v3-turbo（24.65）。架構有受 engram 啟發的 product-key memory，以及跑 3 圈的 refiner。`pip install balbal` 就能用，有麥克風即時模式和 OpenAI 相容 server。土耳其語是小眾，但「小模型＋CPU＋特定語言打贏大模型」的做法值得參考。",
+      "tags": [
+        "asr_speech",
+        "cpu inference",
+        "ctc",
+        "kenlm",
+        "low-resource language"
+      ],
+      "url": "https://github.com/erayyap/balbal",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmtlm7/",
+      "price": null,
+      "vram": "不需要 GPU，CPU 即可",
+      "license": "程式碼 Apache-2.0；權重限研究、非商用與小型企業，不可轉售成 ASR 產品"
+    },
+    {
+      "id": "20261103-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Soup：一個 YAML 就能 fine-tune，layer streaming 讓 8B 模型在 4GB 筆電 GPU 上訓練",
+      "summary": "Soup 把 LLM fine-tuning／post-training 包成 `soup init`＋`soup train`，自動處理 batch size、GPU 偵測和量化，支援 QLoRA、DPO／ORPO／SimPO／KTO、GRPO，也有 Apple Silicon 的 MLX 後端。亮點是 opt-in 的 layer streaming（仍是 BETA）：凍結的 base model 不常駐 VRAM，一次只送一層 decoder 到 GPU。作者在 RTX 3050 Laptop 4GB 上用 Llama-3.1-8B＋NF4 LoRA 量到 3.32 GB peak，並宣稱和一般常駐跑法 bit-exact；README 也很誠實地說明後續數字受時脈影響、不能直接比。最新版是 10/28 的 v0.77.1，今天上 GitHub Trending。對 16GB 卡來說，代表可以 fine-tune 比原本更大的模型。",
+      "tags": [
+        "llm_training",
+        "fine-tuning",
+        "qlora",
+        "layer streaming",
+        "low vram"
+      ],
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/MakazhanAlpamys/Soup",
+      "price": null,
+      "vram": "8B 在 4GB 卡就能 LoRA 訓練，16GB 綽綽有餘",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261103-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "科創板日報：DeepSeek V5 計畫改用華為昇騰晶片做預訓練",
+      "summary": "r/LocalLLaMA 轉貼科創板日報的報導：記者從產業鏈多位人士得知，DeepSeek 下一代 V5 計畫用 Ascend 晶片預訓練；過去昇騰主要負責 DeepSeek 模型的推理。文中也回顧 2025 春節期間華為雲緊急部署 3,000 多顆昇騰晶片承接 V3／R1，以及 V4 在 2026 年 4 月發布後華為宣稱全系列超節點支援 V4。目前是單一媒體引述匿名消息，DeepSeek 官方沒有證實；跟早上美團說 LongCat-2.5 全程用國產晶片訓練是同一波趨勢。",
+      "tags": [
+        "infra_runtime",
+        "domestic chips",
+        "huawei ascend",
+        "deepseek",
+        "pretraining"
+      ],
+      "url": "https://mp.weixin.qq.com/s/R-1u2exLwZMOu7AITyU5kg",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmmadn/",
+      "price": null,
+      "vram": "不適用（產業動態）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261103-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "NorthCUA：基於 Qwen3.5 的開源 computer-use agent 家族，Pro 版 OSWorld-Verified 88.6%、ScreenSpot-Pro 93.3%",
+      "summary": "beipo-ai 發表 NorthCUA 技術報告，用 Experience Flywheel 產生可執行任務、篩選驗證過的軌迹，難題則靠可重用 skills 和驗證過的 milestones 逐步累積，再經 GUI mid-training、長程 SFT 和桌面＋網頁聯合 RL 訓練。提供 Nano（9B）、Mini（35B）、Pro（397B）三種規模，另有低延遲的 Ultrafast。官方數字 Pro 在 ScreenSpot-Pro 93.3、OSWorld-Verified 88.6、WebArena-Verified 73.9，都高於表中的 Qwen3.8-Max、Kimi-K3；但官方自己註明有些是三次取最佳或選定嘗試，跟其他模型的評測方式不完全一致。Harness 和權重都開源。",
+      "tags": [
+        "agent_infra",
+        "computer use",
+        "gui agent",
+        "qwen3.5",
+        "reinforcement learning"
+      ],
+      "url": "https://github.com/beipo-ai/NorthCUA",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmlwjv/",
+      "price": null,
+      "vram": "Nano 9B 量化後可進 16GB；Mini 35B 需重度量化或 offload；Pro 397B cloud-only",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261103-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "GPU-Tensor-Unlock-Universal：RTX 20／30／40 的 FMLA32 tensor core 解鎖整合成 GUI 工具（不支援 RTX 50）",
+      "summary": "GeForce 卡的 FP16／BF16／TF32 搭配 FP32 accumulate 速率被限制，社群已有各世代分散的解鎖專案。這個新工具把 Turing、Ampere、Ada 的做法整合成一個跨平台套件：Windows 用 UEFI USB 開機載入、Linux 用 gpu_unlock.ko 模組，會自動偵測 PCI ID、VRAM 大小和 EFI 分割區，宣稱不需要刷 VBIOS。作者在 RTX 4070 Ti 上測試。風險自負，這種底層改動可能影響穩定性；你的 RTX 5070 Ti（Blackwell）目前不在支援範圍。",
+      "tags": [
+        "infra_runtime",
+        "tensor core",
+        "gpu unlock",
+        "fp32 accumulate"
+      ],
+      "url": "https://github.com/MindAllik/GPU-Tensor-Unlock-Universal",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xms0pz/",
+      "price": null,
+      "vram": "不適用（GPU 工具，RTX 50 不支援）",
+      "license": "GPL-2.0"
+    },
+    {
+      "id": "20261103-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "傳聞：魔改 RTX 5090 64GB／96GB 版本存在，但沒有照片也沒有 benchmark",
+      "summary": "TweakTown 報導美國 GPU 維修技師 Greg Sky（GPU Lab，已在賣 48GB 4090 改裝）在 X 上說「64 和 96GB 5090 確認存在」，幾天前他還說沒有 96GB 5090。原理推測是 32 顆 GDDR7 雙面 clamshell 得到 64GB，再全換 3GB 顆粒到 96GB，跟 RTX PRO 6000 Blackwell 一樣；他說 3GB GDDR7 一顆大約 100 美元。目前沒有照片、跑分，也不清楚驅動能不能認，先當傳聞看。",
+      "tags": [
+        "hardware",
+        "rtx 5090",
+        "vram mod",
+        "gddr7"
+      ],
+      "url": "https://www.tweaktown.com/news/114444/rtx-5090-with-64gb-and-96gb-vram-confirmed-by-us-gpu-repair-tech/index.html",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmqq2a/",
+      "price": null,
+      "vram": "不適用（硬體傳聞）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261103-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-11-03",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "NVIDIA 開源 Auto Ontology：給 agent 用的語意／知識圖譜 context 層，讓 NL-to-SQL 答案可驗證（HN 188 分）",
+      "summary": "Auto Ontology 是 Python 框架，從資料庫 metadata 自動產生企業 ontology、接既有語意模型，建出 AI-ready 的知識圖譜，讓 agent 知道數據在哪、代表什麼、怎麼用。產生的 query 會對照認證過的定義和 lineage 檢查，每個答案附 provenance，並透過 MCP、CLI、API 提供給任何 agent harness。技術上是 Next.js＋FastAPI＋Postgres／pgvector，預設呼叫 NVIDIA NIM（nemotron-3-nano-30b-a3b 等），可用 Docker Compose 或 Helm 部署。偏企業數據分析，不是本地推理工具。",
+      "tags": [
+        "agent_infra",
+        "ontology",
+        "knowledge graph",
+        "text-to-sql",
+        "mcp"
+      ],
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50348962",
+      "price": null,
+      "vram": "不適用（預設用 NIM API，也可自架 NIM）",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-11-03T18:24:36+08:00",
-  "updatedAt": "2026-11-03T18:24:36+08:00"
+  "lastUpdated": "2026-11-03T22:24:45+08:00",
+  "updatedAt": "2026-11-03T22:24:45+08:00"
 }
