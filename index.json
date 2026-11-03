@@ -104444,8 +104444,238 @@
       "price": null,
       "vram": "手機端，跑小型 GGUF",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261103-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "MIT CSAIL〈Sparks of Weight-Space Programming〉：GPT-6 Astra 不用 gradient、直接讀寫神經網路權重，改 0.016% 權重讓 Qwen3.5-0.8B 的 MATH-500 從 7.9% 拉到 48.1%",
+      "summary": "Omar Khattab 團隊（MIT CSAIL）11/2 發表：把原始權重當文字丟給 GPT-6 Astra，它能只看權重就說出小型 policy 網路是玩哪個遊戲、DDPM 會畫什麼形狀、兩個 Gemma 3 270M 哪個被訓成 sycophant；還能不經訓練直接寫出 9×9 Go 網路，打贏用 2,000 萬局 PPO 訓練的同尺寸網路。最受注目的是 Qwen3.5-0.8B：Astra 追出第 15、19 層 MLP 造成 thinking loop 的方向並減掉，只動 131,072 個權重，MATH-500 7.9%→48.1%、GSM8K 13.8%→67.1%、IFEval 21.0%→62.3%。但作者也承認對不會 loop 的 Gemma 3 270M 就改不動，修 bug 不等於加能力；完整實驗 log 已公開。HN 1,766 分，今天最高。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "weight-space programming",
+        "reasoning-driven optimization",
+        "interpretability",
+        "LLM-as-optimizer"
+      ],
+      "url": "https://github.com/RikiyaT/lm_understand-logs",
+      "source": "rikiyat.github.io（MIT CSAIL）",
+      "sourceUrl": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "OpenAI 公開 Pando：為 Codex 時代重寫的 Git backend，push 中位延遲降近 5 倍、每天送出近 1 PB Git 資料",
+      "summary": "OpenAI monorepo 的季 commit 數相較 2024 Q1 到年底會成長超過 2,400%，舊 Git 服務可靠度一度低於 90%。Pando 保留 Git 協定和 client，但放棄兩件傳統 Git server 的要求：不再對整個 repo 做全域一致的 ref 更新（每個 branch 各自協調，無關 push 可並行），也不再為每個 client 產生專屬 packfile，改用 packfile-uri 重複發送已存好的 pack，由 Express 區域快取服務（命中率 99% 以上）。由一位工程師設計核心、Codex agents 實作，用 Rust 10 週做完，4 月上線；Pando 本身不開源，但 Git client 的修正會回饋 upstream。和上週 Anthropic Scion 打對台：一邊留 Git，一邊從頭重寫。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "agent-scale source control",
+        "git",
+        "monorepo",
+        "packfile-uri"
+      ],
+      "url": "https://openai.com/index/scaling-git-at-openai",
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/openai-pando-git-backend/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "Uber 打造 MCP Gateway：用一層 registry + proxy 管理 800+ 個 MCP server、5,000+ 個 agent tools",
+      "summary": "InfoQ 整理 Uber 的做法：把既有 API 直接包成 MCP tools，不用改底層服務。架構分成 control plane 的 MCP Registry（tool 定義、schema、owner、啟用設定）和負責執行的 Proxy Gateway（把 MCP 請求轉成 HTTP、gRPC、TChannel）。AutoCrawler 用 Cadence 掃內部 Protobuf / Thrift IDL，自動產生 MCP schema、再用 LLM 寫 tool description，但新 tool 預設停用，要 owner 審過才開；授權分 server 與 tool 兩層，還能遮蔽回應中的 PII。外界評論普遍說：這就是 API gateway 那套老招，但對 agent 時代很必要。",
+      "priority": "medium",
+      "tags": [
+        "MCP gateway",
+        "agent tooling",
+        "tool registry",
+        "governance"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "InfoQ〈Systemic Approach to Memory, Knowledge, and Context in Agentic AI Architectures〉：把 context、memory、knowledge 拆開管理",
+      "summary": "Adi Polak 在 InfoQ「Agentic AI Architecture」系列提出：做 agent 的難題已經不是檢索資料，而是決定它該知道什麼、什麼時候知道、記多久、何時忘掉。重點包括 context engineering 比 prompt engineering 重要、context／memory／knowledge 各自獨立管理、歷史經驗要配上即時訊號、很多 hallucination 其實是 context 失誤，以及「精簡相關的 context 勝過又大又雜的 prompt」，並把 context 當成系統的 control plane 來設計。",
+      "priority": "medium",
+      "tags": [
+        "context engineering",
+        "agent memory",
+        "context as control plane",
+        "agentic architecture"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/agentic-ai-context-memory-knowledge/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "Anthropic S-1 細節：內部 Claude 用量按零售價計，4 月起已超過員工薪資，9 月新增程式碼 90% 以上由 Claude 寫",
+      "summary": "Business Insider 從 Anthropic 修訂版 IPO 文件挖出：今年 4 月，內部使用 Claude 的價值（用對外售價換算）已超過每月員工薪酬（不含股票）；到 9 月，內部用量比 1 月成長超過 250 倍，當月新增程式碼有 90% 以上是 Claude 寫的。注意這不是真的現金支出，而是按零售價估值。HN 281 分、232 則留言，討論 token 是否正在變成薪資之外的「第四種報酬」。",
+      "priority": "medium",
+      "tags": [
+        "AI-native org",
+        "token budget",
+        "agentic engineering",
+        "anthropic"
+      ],
+      "url": null,
+      "source": "Business Insider",
+      "sourceUrl": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "PostHog 五個月後又把資料倉儲搬離 DuckDB：單機引擎在雲端難估資源，DuckLake 撐不住 1 兆列，改用 Trino + 自家 HogLake",
+      "summary": "PostHog 五個月前才從 ClickHouse 換到 DuckDB（每位客戶一個 instance、走 Postgres 協定接 dbt），現在說要換掉：單機引擎得在 query 進來前就決定機器大小，客戶 query 又比預期複雜；DuckLake 為了相容性設計，單表寫入最久超過 3 分鐘，catalog 裡 99% 以上的統計資料屬於早已刪除的表；自家 dogfood 規模約 2 PB、1 兆列、1,530 萬個 snapshot。另外 pgwire 連線比 HTTP 難 scale 太多。新架構是自家版 Trino 加自訂 open table format HogLake。他們強調仍然很愛 DuckDB，只是它最強的是單機。HN 154 分。",
+      "priority": "medium",
+      "tags": [
+        "data warehouse",
+        "DuckDB",
+        "lakehouse",
+        "Trino"
+      ],
+      "url": null,
+      "source": "PostHog Blog",
+      "sourceUrl": "https://posthog.com/blog/moving-off-duckdb",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "Cloudflare DNS Zone Builder 改用 targeted build：zone 設定變更不再整個重建，記憶體峰值降 85%、傳播延遲減半",
+      "summary": "Cloudflare 的 Zone Builder 現在每秒收約 700 筆 DNS record 變更（2022 年是 250），有些 zone 超過 2,000 萬筆記錄。過去 zone 設定一變就得 full build，讀、編碼、比對每一筆記錄。新的 targeted build planner 會挑「可證明安全的最小 build」，再用新 scheduler 合併同一 zone 的工作，記憶體峰值降 85%，DNS 變更寫進 Quicksilver 的時間砍半。最難的不是實作，而是證明什麼時候只重建一部分是安全的。HN 133 分。",
+      "priority": "low",
+      "tags": [
+        "incremental builds",
+        "DNS",
+        "distributed systems",
+        "cloudflare"
+      ],
+      "url": null,
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "Anthropic Residency 開放申請：給教授、技術創辦人、staff 級工程師的付費研究計畫，不需 ML 背景",
+      "summary": "為期 6 週到 6 個月的付費研究職位，年薪換算 35 萬到 50 萬美元，配 Anthropic 研究員一對一 mentor 和專屬 compute，研究方向含 scalable oversight、interpretability、AI security 紅隊和 RL 基礎設施。偏好在舊金山，短期可遠端；11 月 22 日截止。X 貼文約 9.9k 讚、9.4k 收藏，是昨天開發圈最多人收藏的一則。",
+      "priority": "low",
+      "tags": [
+        "AI safety",
+        "career transition",
+        "anthropic"
+      ],
+      "url": null,
+      "source": "Anthropic Alignment Blog",
+      "sourceUrl": "https://alignment.anthropic.com/2026/anthropic-residency/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "Simon Willison：美國 Census Bureau 的 AI 採用調查被行政命令改成「Super Intelligence」",
+      "summary": "Simon 用 GPT-6 Astra 重畫 Census Bureau BTOS 調查的企業 AI 採用圖：250 人以上大公司回答「有用 AI」的比例，在 2025 年 11 月題目改成「任何業務功能」之後，從約 30% 升到 2026 年 10 月約 40%。但他發現從 10/19 起，因 Executive Order 14434，題目裡的 AI 全被改叫「Super Intelligence（SI）」，第一批新措辭的結果本週四公布，前後數據恐怕更難比較。",
+      "priority": "low",
+      "tags": [
+        "AI adoption",
+        "survey methodology",
+        "simon willison"
+      ],
+      "url": null,
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "短篇〈Let Me Ch...〉：當「lead developer」變成替 agent 跑腿確認的人",
+      "summary": "一篇被 HN 推到 179 分的短篇小說：主角一年前還自己寫 code，後來改成跟 agent 說要什麼 code，最後變成 agent 問他、他回答。agent 半夜找到每天 8:14 消失訂單的原因（伺服器和倉庫時鐘差一分鐘），卻因為沒有倉庫權限，只能請他親自去看。作者寫道：大家以為機器會先拿走無聊的工作，結果先拿走的是有趣的，留給人的是等待、確認和帶著手機。",
+      "priority": "low",
+      "tags": [
+        "human-in-the-loop",
+        "engineering career",
+        "fiction"
+      ],
+      "url": null,
+      "source": "blog.alxgsv.com",
+      "sourceUrl": "https://blog.alxgsv.com/let-me-check/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261103-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-03",
+      "cycle": "morning",
+      "title": "Show HN：Subvocal —— 不出聲、只動嘴就能跟電腦說話的智慧眼鏡（YC F26）",
+      "summary": "兩位 Georgia Tech 學生受 MIT AlterEgo 啟發，在 TreeHacks 做出原型，現在進 YC F26：眼鏡用 RF 感測口腔內部動作，把無聲默念的字即時轉成文字，作者說練習後甚至不用張嘴。動機是 Wispr Flow 這類語音輸入在圖書館、辦公室沒法用。HN 509 分、272 則留言。",
+      "priority": "low",
+      "tags": [
+        "silent speech",
+        "voice input",
+        "wearables",
+        "show hn"
+      ],
+      "url": "https://subvocal.company/",
+      "source": "Hacker News（Show HN）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50340088",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-02T22:25:17+08:00",
-  "updatedAt": "2026-11-02T22:25:17+08:00"
+  "lastUpdated": "2026-11-03T08:24:52+08:00",
+  "updatedAt": "2026-11-03T08:24:52+08:00"
 }
