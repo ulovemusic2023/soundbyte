@@ -106140,8 +106140,305 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261104-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "storytold/craft-anything",
+      "priority": "rising-fast",
+      "stars": 8506,
+      "createdDate": "2026-10-31",
+      "license": "Apache-2.0",
+      "tags": [
+        "coding-agent",
+        "rust",
+        "reverse-engineering",
+        "creator-tool"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E50&type=repositories&s=stars",
+      "url": "https://github.com/storytold/craft-anything",
+      "summary": "純 Rust 寫的 clean-room 引擎：指定一個網站、app 或遊戲，它先用真正的 inspection tools 研究原版，再讓 coding agent 建一個新專案，逐項比對與原版的相似度並持續 refine，超出規則的地方會請你核准。出自 ArtCraft 創作者社群，4 天衝到 8.5k stars。"
+    },
+    {
+      "id": "20261104-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "ccch1mneyyy/dsh-Go",
+      "priority": "rising-fast",
+      "stars": 7579,
+      "createdDate": "2026-10-25",
+      "license": "AGPL-3.0",
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "android",
+        "deepseek"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E50&type=repositories&s=stars",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "summary": "DeepSeek Harness（DSH）的 Android 客戶端：可以直接在手機本機跑 agent，也能遙控你電腦上的 DSH。README 寫 10/30 拿下 Trendshift 全語言日榜 #1，目前只有 APK，iOS 版還沒出。"
+    },
+    {
+      "id": "20261104-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "patch-gg/pixelfx",
+      "priority": "rising-fast",
+      "stars": 4148,
+      "createdDate": "2026-10-30",
+      "license": "MIT",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "pixel-art",
+        "creator-tool"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E50&type=repositories&s=stars",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "summary": "244 個 pixel art 特效與動畫（火焰、爆炸、魔法、天氣、UI 等），每個都是一小段 code，可即時播放、改色、匯出 sprite sheet。另附一個 Claude Code skill，用「draft → render → 看 → refine」的流程讓 agent 做新特效，做遊戲化 UI 或短影音素材可以參考。"
+    },
+    {
+      "id": "20261104-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "modelflare-ai/AnyModelBot",
+      "priority": "rising-fast",
+      "stars": 2359,
+      "createdDate": "2026-10-27",
+      "license": "MIT",
+      "tags": [
+        "ai-agent",
+        "local-first",
+        "multi-model",
+        "computer-use"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E50&type=repositories&s=stars",
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "summary": "本機優先的 AI bot app（Windows / macOS / Linux），自稱 Grok Bot、OpenAI dots、Claude Duet 的開源替代品。每個 bot 有自己的人設、預設模型、workspace 與記憶，可在 app、微信、飛書、Telegram、Slack、Discord 裡找它；能讀寫檔案、跑指令、操作桌面，越出 workspace 前會先問。注意模型走 Modelflare key、按量付費。"
+    },
+    {
+      "id": "20261104-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "caru-ini/stack-diagram",
+      "priority": "rising-fast",
+      "stars": 1549,
+      "createdDate": "2026-11-01",
+      "license": "MIT",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "architecture-diagram",
+        "developer-tool"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars",
+      "url": "https://github.com/caru-ini/stack-diagram",
+      "summary": "一句話描述你的 tech stack，就產出帶官方 logo 的架構圖的 agent skill，`npx skills add caru-ini/stack-diagram` 安裝，支援 Claude Code、Codex、Cursor。幫 SoundByte 或 radar 系統畫架構圖剛好用得上。"
+    },
+    {
+      "id": "20261104-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "NiazMorshed2007/reanimate",
+      "priority": "rising-fast",
+      "stars": 1100,
+      "createdDate": "2026-10-29",
+      "license": "MIT",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "animation",
+        "frontend"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars",
+      "url": "https://github.com/NiazMorshed2007/reanimate",
+      "summary": "Claude Code skill：從網站、螢幕錄影、mp4、gif 或 Lottie 逐格逆向一段動畫，用你的 code 重建後再用同樣方式錄下來比對，一輪輪修到數字吻合為止。解決了 agent「看不到動態、做一次就說完成」的老問題。"
+    },
+    {
+      "id": "20261104-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "Balanov/uncut",
+      "priority": "rising-fast",
+      "stars": 593,
+      "createdDate": "2026-11-01",
+      "license": "MIT",
+      "tags": [
+        "coding-agent",
+        "agent-harness",
+        "headless-agent",
+        "cli-tool"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars",
+      "url": "https://github.com/Balanov/uncut",
+      "summary": "極簡 headless coding agent harness：一個 7 MB 的靜態 Go binary、四個工具、純 stdin/stdout，沒有 TUI、telemetry、context compaction。每次呼叫都送完整對話、檔案與輸出從不截斷，provider 截斷回應時直接報錯；支援 OpenAI-compatible endpoint（含本機 server），適合放進 shell pipeline 或 CI。"
+    },
+    {
+      "id": "20261104-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "KKKKhazix/agent-autoloop",
+      "priority": "rising-fast",
+      "stars": 363,
+      "createdDate": "2026-11-03",
+      "license": "MIT",
+      "tags": [
+        "coding-agent",
+        "automation",
+        "claude-code",
+        "codex"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E20+topic%3Amcp&type=repositories&s=stars",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "summary": "讓 Claude Code、Codex 這類命令列 agent 在背景自己接任務、跟進到底的輕量調度中台：零外部依賴的核心，事件來源、agent、通知通道都是可替換的 plugin；拿不準時才把卡片推到 Slack、Discord、飛書或桌面通知請你拍板。昨天才建立，需要 Node 24。"
+    },
+    {
+      "id": "20261104-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "Xpropel/Pi-Remote",
+      "priority": "worth-trying",
+      "stars": 291,
+      "createdDate": "2026-10-28",
+      "license": "MIT",
+      "tags": [
+        "coding-agent",
+        "remote-control",
+        "self-hosted"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars",
+      "url": "https://github.com/Xpropel/Pi-Remote",
+      "summary": "pi coding agent 的遠端遙控：透過 pi 官方 extension API 把本機 terminal session 即時鏡像到任何瀏覽器，手機上就能看進度、回答提示、切模型、compact context，經 self-hosted relay 端對端加密，可同時接多台機器。"
+    },
+    {
+      "id": "20261104-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "alexturkey/dubworld",
+      "priority": "worth-trying",
+      "stars": 54,
+      "createdDate": "2026-10-24",
+      "license": "Apache-2.0",
+      "tags": [
+        "audio",
+        "text-to-speech",
+        "video-dubbing",
+        "local-ai"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E20+topic%3Atext-to-speech&type=repositories&s=stars",
+      "url": "https://github.com/alexturkey/dubworld",
+      "summary": "本機跑的 AI 影片配音 pipeline：帶 word timestamp 的 STT → 翻譯 → TTS，語音最多加速 1.25×、其餘靠畫面 retime 對齊，最後輸出字幕和新影片。預設土耳其語，其他語言依 voice engine 支援，可直接請 Claude Code 等 agent 幫你安裝。"
+    },
+    {
+      "id": "20261104-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "ishangautam7/Talvio",
+      "priority": "worth-trying",
+      "stars": 53,
+      "createdDate": "2026-10-22",
+      "license": "MIT",
+      "tags": [
+        "voice",
+        "speech-to-text",
+        "voice-assistant",
+        "local-first"
+      ],
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-21+stars%3A%3E20+topic%3Atext-to-speech&type=repositories&s=stars",
+      "url": "https://github.com/ishangautam7/Talvio",
+      "summary": "local-first 語音工具：任何 app 裡都能 dictation、能出聲回答並操作電腦的 voice assistant、會議筆記，還有把手機變成無線麥克風與遙控器的 app。語音預設在本機轉錄，支援 Windows / macOS / Linux，README 有繁中版。"
+    },
+    {
+      "id": "20261104-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "leepokai/Codync",
+      "priority": "on-the-radar",
+      "stars": 1835,
+      "createdDate": "2026-03-18",
+      "license": "Apache-2.0",
+      "tags": [
+        "coding-agent",
+        "multi-agent",
+        "rust",
+        "remote-control"
+      ],
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "url": "https://github.com/leepokai/Codync",
+      "summary": "Rust 寫的開源 Grok Bot 替代品：把你電腦上的 Claude Code、Codex、Cursor、Gemini CLI 等 40+ agent 變成可從 iPhone、Mac、Windows、Linux 傳訊息委派的 bot，自帶 agent 和訂閱、免費。本週 Rust Trending 上 +865 stars。",
+      "extra": {
+        "starsThisWeek": 865
+      }
+    },
+    {
+      "id": "20261104-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "Clayzo",
+      "priority": "product-hunt",
+      "tags": [
+        "coding-agent",
+        "animation",
+        "motion-graphics",
+        "creator-tool"
+      ],
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/2",
+      "url": "https://clayzo.com",
+      "summary": "給 coding agent 用的動畫引擎：讓 Claude Code、Codex、Cursor 用 code 做 web 動畫與 motion graphics，agent 會逐格檢查，最後可匯出影片或直接在網站上播放，目前免費。11/2 Product Hunt 日榜第 6。",
+      "extra": {
+        "upvotes": 193,
+        "phStatus": "Product Hunt 頁面 curl 回 403，改用官網 URL 驗證"
+      }
+    },
+    {
+      "id": "20261104-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-04",
+      "cycle": "wednesday",
+      "title": "AgentKit by Scalekit",
+      "priority": "product-hunt",
+      "tags": [
+        "mcp",
+        "agent-auth",
+        "tool-calling"
+      ],
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/3",
+      "url": "https://www.scalekit.com/agentkit",
+      "summary": "給 production agent 用的 MCP gateway，處理 agent 代表使用者呼叫外部工具時的整合與授權。11/3 Product Hunt 日榜第 1。",
+      "extra": {
+        "upvotes": 346,
+        "phStatus": "Product Hunt 頁面 curl 回 403，改用官網 URL 驗證"
+      }
     }
   ],
-  "lastUpdated": "2026-11-04T09:07:41+08:00",
-  "updatedAt": "2026-11-04T09:07:41+08:00"
+  "lastUpdated": "2026-11-04T09:36:53+08:00",
+  "updatedAt": "2026-11-04T09:36:53+08:00"
 }
