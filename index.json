@@ -106437,8 +106437,228 @@
         "upvotes": 346,
         "phStatus": "Product Hunt 頁面 curl 回 403，改用官網 URL 驗證"
       }
+    },
+    {
+      "id": "20261104-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Hex 3.3.0：本地語音輸入法（按住快捷鍵說話就貼上），介面新增繁體中文，今天 GitHub Trending",
+      "summary": "anomalyco/hex 是跨 Mac／Windows／Linux 的 local voice dictation：按住快捷鍵說話、放開就把逐字稿貼到目前的 app，第一次跑會下載語音模型，之後完全不離開本機。11/3 凌晨（台灣時間）發布的 v3.3.0 介面支援繁體中文，模型挑選器可以把三個模型並排比較，每個模式也能有自己的詞彙表；前一版 v3.2.0 加了 Nemotron 3.5 ASR streaming 0.6B，並會自動找出你 Hugging Face cache 裡已經有的語音模型，免重新下載。今天 GitHub Trending 單日約 410 顆星。專案不收 PR，只收 issue，由他們的 agents 處理。",
+      "tags": [
+        "asr_speech",
+        "voice dictation",
+        "nemotron",
+        "on-device",
+        "desktop app"
+      ],
+      "url": "https://github.com/anomalyco/hex",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/anomalyco/hex",
+      "price": null,
+      "vram": "0.6B 級 ASR 模型，16GB 綽綽有餘",
+      "license": "MIT"
+    },
+    {
+      "id": "20261104-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 Gemma 4 E2B／E4B 圖優化：prompt processing 快 1.6–2.9 倍，文字、圖片、音訊輸出不變",
+      "summary": "ggml-org/llama.cpp PR #31356 在台灣時間 11/4 凌晨 2:30 merge。Gemma 4 E2B／E4B 上層的 KV-shared layers 只重用前面層的 KV cache、不寫入，這個 PR 在進入這些層之前就把不需要輸出的 prompt token 剪掉，prefill 時這些層幾乎變成 no-op；另外把 PLE（per-layer embedding）的縮放常數折進 RMSNorm，省掉一次 ggml_cont 複製。作者用官方 QAT Q4_0 實測 M4 Pro Metal：E2B pp512 從 1614 到 4603 tok/s、E4B 從 806 到 1319；Snapdragon HTP 上 E2B 也翻倍以上，生成速度（tg）不變。26B 因為每層都寫 KV 所以沒有加速；只支援 unified KV。作者說 text-to-text、image-to-text、audio-to-text 輸出都和 master 一致。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "gemma 4",
+        "prefill",
+        "on-device"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31356",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xn6mm0/",
+      "price": null,
+      "vram": "E2B Q4_0 約 3.1GB、E4B 約 4.8GB",
+      "license": "llama.cpp MIT；Gemma 4 依 Google 授權"
+    },
+    {
+      "id": "20261104-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Basalt 0.2.0：Blackwell 專用 Qwen3.8-Flash-Next 引擎，這次先講品質，新增 NVFP4-DQ8 量化",
+      "summary": "Basalt 是只支援 NVIDIA Blackwell（RTX 50 系列）的 Qwen3.8-Flash-Next 推理引擎。0.2.0 改用 Unsloth BF16 GGUF＋llama.cpp 當參考來量 KLD：Basalt Q8 是 0.0200（llama.cpp Q8 0.0325），預設 NVFP4-DQ6_K 0.0624，新出的 NVFP4-DQ8 降到 0.0561、prose 慢約 7%；作者也提醒各引擎是用自己的工具量的，不是完全公平的比較。速度在 RTX 5090＋RTX 5060 Ti 16GB＋128GB DDR5、262K context、不開任何 lossy flag 下約 struct 600、prose 300 tok/s，64K prefill 約 10K tok/s。會降精度的 hack 預設關閉，打開會跳警告。你的 5070 Ti 是 Blackwell，在支援範圍內，但作者測試機的 VRAM 比你多很多。",
+      "tags": [
+        "llm_inference",
+        "nvfp4",
+        "blackwell",
+        "moe",
+        "kld"
+      ],
+      "url": "https://github.com/jesdga95/basalt",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xn4qn1/",
+      "price": null,
+      "vram": "作者用 32GB＋16GB 雙卡＋128GB RAM；單張 16GB 要靠大量 expert offload，速度會差很多",
+      "license": "MIT"
+    },
+    {
+      "id": "20261104-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "webyIQ：瀏覽器裡跑 Qwen3.5-2B 到 620 tok/s，手寫 WGSL kernel，是 WebLLM 的 6.6 倍",
+      "summary": "作者用 Rust 編成 wasm，再針對 Qwen3.5-2B（Gated DeltaNet＋gated attention）和 MiniCPM5-2B 手寫 WebGPU kernel，不走通用引擎。Chrome 156、RTX 5080 上生成 620 tok/s（不開 speculative decoding 是 417），同條件 WebLLM 94、transformers.js 31；約 1K token 的 prompt 0.2 秒處理完。技巧包括 fused int4（GPTQ g32）× int8 GEMV、整個 decode loop 留在 GPU 上，以及用 Qwen3.5 自帶的 MTP head 做 speculative decoding（在 GPU 上驗證，輸出和 greedy 一致）。權重 1.1GB，WikiText perplexity 比 BF16 高 2.4%。還附 DOM 瀏覽器 agent demo 和 Chrome／Edge 側欄擴充。目前是 prototype，只在 Windows 測過，repo 剛建立。",
+      "tags": [
+        "llm_inference",
+        "webgpu",
+        "wgsl",
+        "speculative decoding",
+        "browser"
+      ],
+      "url": "https://github.com/rtx527896828/webyIQ",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmv3lc/",
+      "price": null,
+      "vram": "權重約 1.1GB，RTX 5080 16GB 實測",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261104-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison：筆電上的 Qwen 3.8 27B 也能「看權重猜遊戲」，Weight-Space Programming 復現潮（HN 492 分）",
+      "summary": "接續昨天的 MIT CSAIL Weight-Space Programming 和 Honnibal 的反駁，Simon Willison 專挑「不用工具、只看權重」那部分自己測：用論文公開的 prompt，在筆電 LM Studio 跑 17GB 的 Qwen 3.8 27B，猜中 Pac-Man（72% 信心，46 分鐘、4.3 萬 reasoning tokens）、Pong 和 Breakout，Freeway 猜錯；預設 8192 context 會失敗，要開長 context。他也說有經驗的人拿紙筆應該也做得到，不覺得「source code 時代結束」這種說法站得住。r/LocalLLaMA 同時有人用 DeepSeek V4.1 Flash 猜 4 個 51K 參數 RL checkpoint（中 3 個），另一位讓 Claude Opus 5.5 手改 Gemma 4 12B 的 8 個 MLP neurons 來調整英翻義的時態，對照 LoRA 誤傷更少；兩者 code 都已公開。HN 492 分、154 則留言。",
+      "tags": [
+        "llm_inference",
+        "weight-space programming",
+        "qwen 3.8",
+        "interpretability",
+        "gemma 4"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50355251",
+      "price": null,
+      "vram": "Qwen 3.8 27B 量化版約 17GB，16GB 卡要再小一點的量化或部分 offload",
+      "license": "不適用（研究討論）"
+    },
+    {
+      "id": "20261104-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VoxAffect：語音原生模型「聽得到」使用者的不耐煩語氣，但不會因此調整回應",
+      "summary": "這篇 arXiv 論文把「措辭不耐煩」和「語氣不耐煩」交叉成 2×2 設計，353 個任務、共 1,412 段音訊（資料集 VoxAffect 已公開），測 8 個 voice-native 模型。結果：措辭中性時，8 個模型最多只在 3.1% 的片段把不耐煩的語氣標成不耐煩，但其中 7 個能抓到 73–100% 的演出憤怒，人類聽者正確率 65.3%。用 linear probe 從兩個 open-weight 模型的 audio encoder 卻能解出不耐煩語氣（paired accuracy 0.67、0.69），代表資訊有進去，只是沒被用上。做語音 agent 或 TTS 互動的人可以拿這個資料集測自己的系統。",
+      "tags": [
+        "asr_speech",
+        "voice-native llm",
+        "paralinguistics",
+        "benchmark",
+        "emotion"
+      ],
+      "url": "https://github.com/Astarojth/hear-not-listen",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.02893",
+      "price": null,
+      "vram": "不適用（論文＋資料集）",
+      "license": "未標示（GitHub repo 沒有 LICENSE）"
+    },
+    {
+      "id": "20261104-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Local or Escalate：凍結的 full-duplex 語音模型加一個 logistic 讀出，就能決定「馬上答」還是「轉給強模型」",
+      "summary": "Full-duplex 語音模型簡單題要秒答、難題需要更強的推理。這篇不重訓 duplex 模型，直接凍結 MiniCPM-o 4.5，在它原本「聽轉說」的那一刻，對已有的 hidden states 擬合一個 logistic failure readout 當閘門，不需要額外生成、門檻也能隨時調。內部 benchmark 上選擇性 handoff 讓答對率提升 27.1 個百分點，比起每題都丟給 expert，平均首段回答音訊的時間少 31.5%；也贏過隨機路由和用 GPT-5.4 mini 看轉錄文字來判斷的 router，方法還能套到第二個 duplex 模型家族。對想做本地語音助理、難題再上雲的架構很實用。",
+      "tags": [
+        "tts_speech",
+        "full-duplex",
+        "routing",
+        "minicpm-o",
+        "latency"
+      ],
+      "url": "https://arxiv.org/abs/2611.01639",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.01639",
+      "price": null,
+      "vram": "MiniCPM-o 4.5 本體可本地跑（估算），閘門本身幾乎不佔資源",
+      "license": "不適用（論文）"
+    },
+    {
+      "id": "20261104-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Revolut 自架 GLM 取代 Claude：AI coding 推理成本砍 90%，「Long context is a scam，256K 就夠」",
+      "summary": "The Register 報導 Revolut ops／infra 負責人 David Abitbol 在 AI Engineer 大會的分享：約 2,000 名工程師的 AI coding 從 Claude Code 等商用服務改成以自架 GLM 為預設，先用 GLM-5.1、現在用 56 張 B200 跑 GLM-5.3，每百萬 token 約 0.3 美元，大概是 Codex／Claude Code 的十分之一。最大的效能提升不是加 GPU，而是調參數、改 NVFP4 量化、prefill／decode 分離和控制 context 長度；目標是 256K context 下 TTFT 低於 3 秒、約 200 tok/s，超過 5 秒他的 Slack 就會爆。token 便宜後，大家開始把 debug、Jira／Confluence 工單也丟給 AI。",
+      "tags": [
+        "llm_inference",
+        "self-hosted",
+        "glm",
+        "nvfp4",
+        "disaggregated serving"
+      ],
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xn568h/",
+      "price": null,
+      "vram": "GLM-5.x 約 754B 參數，光權重約 380GB",
+      "license": "不適用（產業案例）"
+    },
+    {
+      "id": "20261104-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Library of Layers（LoL）：推理時動態決定 transformer 層的執行順序，一個超參數涵蓋 dense、遞迴和 MoE",
+      "summary": "LoL 把模型做成一個全域的 transformer block「函式庫」，推理時由 router 依問題動態排列要跑哪些層、以什麼順序跑；唯一的超參數是函式庫大小，可以在參數重用（類似 depth-recurrent）和稀疏（類似 MoE）之間連續調整。文字預訓練上和 dense、depth-recurrent、MoE 三種 baseline 表現相當；在數獨和迷宮資料上，模型會用不同層序實作不同解法，而且可以干預路由強迫它用特定策略。多語言下會依語言和文字系統選不同層序；router 輸出上的 probe 也能高 AUROC 區分安全與不安全文字。目前是研究架構，沒有現成可下載模型。",
+      "tags": [
+        "llm_training",
+        "architecture",
+        "dynamic routing",
+        "moe",
+        "interpretability"
+      ],
+      "url": "https://arxiv.org/abs/2611.03526",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xmzo2s/",
+      "price": null,
+      "vram": "不適用（架構研究）",
+      "license": "不適用（論文）"
+    },
+    {
+      "id": "20261104-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "llminfra 預告：steffi.ai 團隊的 Rust 推理引擎，250K context 下 turn TTFT 比 SGLang 快 13 倍（repo 尚未公開）",
+      "summary": "為了在 IGX Thor（RTX PRO 6000）上跑多 agent 系統，steffi.ai 團隊自己寫了 Rust 推理引擎 llminfra，在相同硬體（300W）跑 Qwen 3.8 27B 對比 SGLang：250K context 下每輪 TTFT 108 ms 對 1,440 ms、冷啟動 6.1 秒對 211 秒、32 個 agent 各 32K context 時吞吐 209 對 95 tok/s，8×32K 工作負載峰值 VRAM 52.9 對 86.3 GiB。作者自己標題就寫「trust me bro」：目前只有圖表，code 還在整理、尚未公開，數字無法獨立驗證，先放觀察名單。",
+      "tags": [
+        "infra_runtime",
+        "inference engine",
+        "rust",
+        "agent serving",
+        "sglang"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn78cm/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xn78cm/",
+      "price": null,
+      "vram": "測試機 RTX PRO 6000（96GB），尚無消費卡數據",
+      "license": "尚未公開"
     }
   ],
-  "lastUpdated": "2026-11-04T09:36:53+08:00",
-  "updatedAt": "2026-11-04T09:36:53+08:00"
+  "lastUpdated": "2026-11-04T10:16:14+08:00",
+  "updatedAt": "2026-11-04T10:16:14+08:00"
 }
