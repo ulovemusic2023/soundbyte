@@ -106657,8 +106657,216 @@
       "price": null,
       "vram": "測試機 RTX PRO 6000（96GB），尚無消費卡數據",
       "license": "尚未公開"
+    },
+    {
+      "id": "20261104-sw-013",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "Docker 點名 AI agent 五大安全風險：別指望模型擋 prompt injection，要靠隔離和治理限制「被劫持後能碰到什麼」",
+      "summary": "InfoQ 整理 Docker 的指南：五大風險是 prompt injection、tool misuse 與 poisoning、過度自主、credential 外洩、資料外流。Docker 認為 agent 無法可靠分辨正常指令和注入指令，所以重點是縮小被劫持後的影響範圍：agent 不該繼承開發者本人的 token，改用 runtime 注入的短效 credential；網路 egress 走 allow-list；多 agent 之間的交接一律當成不可信輸入。文中舉例：agent 自動執行帶 `~/` 的 `rm -rf` 刪掉整個 home 目錄，以及 AWS 工程師的 agent 刪掉並重建 production 環境，造成 13 小時區域性中斷。社群留言補充：Docker 只擋約 40 個 syscall、留下約 500 個，替別人跑 code 時應改用 microVM 或 gVisor。",
+      "priority": "medium",
+      "tags": [
+        "agent security",
+        "prompt injection",
+        "sandboxing",
+        "least privilege",
+        "microVM"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/docker-ai-agent-security/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-014",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "Vercel CLI 新增 `vercel doctor`：不登入、不互動、`--json` 輸出，專門讓 coding agent 先自我診斷再動手修",
+      "summary": "`vercel doctor` 會檢查 CLI 版本與安裝方式、登入狀態與目前 team、project link、`vercel.json` 設定，以及 Vercel status page 上的進行中事故，每項回報 OK、Warning、Failed 或 Skipped，並附上修正指令。設計重點是對 agent 友善：不需要登入或 link project，也不會跳出提示或自動登入，加 `--json` 就能拿到結構化結果，讓 agent 不必用猜的。Guillermo Rauch 在 X 上建議大家的 CLI 都出一個 doctor 子指令。",
+      "priority": "medium",
+      "tags": [
+        "agent-friendly CLI",
+        "developer experience",
+        "doctor command",
+        "Vercel"
+      ],
+      "url": null,
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-015",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "Vercel CI 不再需要綁定 Vercel project：在 repo 裡跑 `vercel ci enable` 就能開",
+      "summary": "以前要建一個空的 Vercel project 才能把 repo 接上 Vercel CI，現在只要裝 Vercel GitHub App、把 GitHub 帳號連到 Vercel、在 repo 有 write 或 admin 權限，然後在 clone 裡執行 `vercel ci enable`，下一次 push 就會照 repo 裡的設定跑 task。目前只支援 private GitHub repo，public repo 和其他 Git 平台還不行。",
+      "priority": "low",
+      "tags": [
+        "CI/CD",
+        "Vercel",
+        "GitHub"
+      ],
+      "url": null,
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-016",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "Anthropic 文字浮水印擴大到 Mythos 5、Opus 4.7、Sonnet 4.6",
+      "summary": "Claude Platform release notes（11/3）：Claude Mythos 5、Opus 4.7、Sonnet 4.6 產生的文字現在也帶 Anthropic 的 text watermark，不必改 request。例外是 Sonnet 4.6 的 request 若把 `temperature`、`top_p` 或 `top_k` 設成非預設值，產出可能不帶浮水印。",
+      "priority": "low",
+      "tags": [
+        "AI watermark",
+        "content provenance",
+        "Claude API"
+      ],
+      "url": null,
+      "source": "Claude Platform Release Notes",
+      "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-017",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "LinkedIn 用 OpenTelemetry 把「使用者在 app 點一下」一路串到後端資料庫，靠 pageForestId 把同一頁的多條 trace 綁在一起",
+      "summary": "一個頁面會發出很多 request，傳統 distributed tracing 只追單一 request，所以 LinkedIn 在 traceId 之上加了 pageForestId，把同一頁面的相關 trace 歸成一組。資料走 Kafka 存進 ClickHouse；用假名化的 member id 做 coordinated head sampling，確保 client 和 server 端同時被抽樣或同時丟棄。LinkedIn 估計部分後端 trace 量中最多 90% 可視為 debug 等級；行動 app 進入背景時會先 flush，trace 屬性也有 allowlist、denylist 和遮蔽機制，避免變成敏感資料外洩管道。",
+      "priority": "low",
+      "tags": [
+        "observability",
+        "OpenTelemetry",
+        "distributed tracing",
+        "sampling"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-018",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "Matthew Honnibal：「Astra 能讀寫權重改善 Qwen」那篇有誤導，Qwen 結果其實靠寫 Python 加跑模型，不是直接看權重",
+      "summary": "spaCy 作者把原文 10 個實驗整理成表：真正「把原始權重放進 context、不用工具、不跑網路」的只有實驗 1、2、4，網路只有 17K 到 172K 個權重；所有和真正 language model 有關的實驗都用 Python，頭條的 Qwen 數學結果（MATH-500 從 7.9% 到 48.1%）還能跑模型最多 50 批練習題，同樣做法換到 Gemma 3 則失敗。他的看法是 Astra 能做到 ML 工程師做的事已經不簡單，但兩類實驗不該放在一起暗示同一種能力。HN 986 分，留言中做 mech interp 的人認為 Qwen 的修正本質上是 steering 減少 reasoning loop，也引用 Neel Nanda 的評論：這是 Astra 很會做傳統 mechanistic interpretability，而不是什麼神秘能力。",
+      "priority": "medium",
+      "tags": [
+        "weight-space programming",
+        "mechanistic interpretability",
+        "AI hype",
+        "research claims"
+      ],
+      "url": null,
+      "source": "honnibal.dev",
+      "sourceUrl": "https://honnibal.dev/blog/astra-read-write-misleading",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-019",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "C++26 的 ISO DIS 投票沒過，C++ 史上第一次；主因是 Contracts",
+      "summary": "WG21 委員 Andreas Fertig（代表德國）寫道：10/23 經過 12 週投票，C++26 DIS 沒拿到需要的三分之二多數，被 Disapproved。據他查到的資料，這是 C++ 第一次 DIS 沒過，上一個沒過的程式語言 DIS 是 2006 年的 C++/CLI，那個專案後來直接停掉。從各國標準組織的意見看，原因是不少國家認為 Contracts 還沒準備好。HN 307 分。",
+      "priority": "medium",
+      "tags": [
+        "C++26",
+        "Contracts",
+        "ISO standardization",
+        "language design"
+      ],
+      "url": null,
+      "source": "Andreas Fertig's Blog",
+      "sourceUrl": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-020",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "〈How I use AI (Oct 2026)〉：同時管 5–6 個 coding agent、每月約 3,000 美元 token，「寫 code 已解決，工程還沒」",
+      "summary": "Salesforce AI Research 的 Ben Stolovitz 年度回顧：每個 agent 各用一個 git worktree，他只審架構不再逐行 review，也替 AI code review 寫規則（例如偵測「很 Claude」的註解）。他也說 agent 自己跑會產出過度設計的爛 code，今年最成功的一件事是手寫幾百行取代約 4,000 行 vibe-code；同時管好幾個 agent 比寫 code 更累。他也認為 Sonnet 4.6、Opus 4.8 等級的模型就足以做 agentic coding。HN 175 分。",
+      "priority": "medium",
+      "tags": [
+        "agentic coding",
+        "parallel agents",
+        "git worktree",
+        "developer workflow"
+      ],
+      "url": null,
+      "source": "Ben Stolovitz",
+      "sourceUrl": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-021",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "Gergely Orosz 轉述創辦人：履歷上沒有 side project 現在是 red flag，因為做東西已經太容易",
+      "summary": "X 貼文引述一位新創創辦人的話：現在做任何東西都很簡單，所以履歷沒有 side project 反而代表缺乏自主性。這是單一創辦人的看法，不是調查結果，但貼文有約 1.2k 讚、348 收藏、236 則回覆，討論 AI 時代招募訊號怎麼變。",
+      "priority": "low",
+      "tags": [
+        "hiring",
+        "side projects",
+        "AI-era careers"
+      ],
+      "url": null,
+      "source": "X（@GergelyOrosz）",
+      "sourceUrl": "https://x.com/GergelyOrosz/status/2117755886105936144",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-022",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "title": "Safari 27.3 beta 推出 Adaptive Dark Mode：沒做 dark mode 的網站也會被自動轉暗",
+      "summary": "WebKit 指出約 40% 網頁載入來自 dark mode 使用者，但只有 10% 的頁面支援。使用者開啟後，有宣告 `color-scheme` 的網站不受影響，其他淺色頁面會被轉暗：用保留色相的 color matrix 反轉亮度、文字以 WCAG 4.5:1 對比為目標、會檢查 SVG，點陣圖只反轉簡單黑白 logo。為防 fingerprinting，網站偵測不到是否被轉換，JS 讀到的仍是原色。想退出可用 `color-scheme: light only`（beta 1 尚未支援 `only`）。HN 441 分。",
+      "priority": "low",
+      "tags": [
+        "web platform",
+        "dark mode",
+        "CSS color-scheme",
+        "Safari"
+      ],
+      "url": null,
+      "source": "WebKit Blog",
+      "sourceUrl": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-04T10:16:14+08:00",
-  "updatedAt": "2026-11-04T10:16:14+08:00"
+  "lastUpdated": "2026-11-04T18:33:05+08:00",
+  "updatedAt": "2026-11-04T18:33:05+08:00"
 }
