@@ -105681,8 +105681,260 @@
       "price": null,
       "vram": "不適用（預設用 NIM API，也可自架 NIM）",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261104-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Anthropic Messages API 推出 Message Threads（public beta）：長 session 只送新訊息，Claude Code 的 500K–1M token 請求 TTFT 中位數降約 35%",
+      "summary": "Messages API 一直是 stateless，每輪都要把整段對話重新上傳、重新驗證和 tokenize。現在加一個 `thread` 參數：第一次送完整對話（含 system、tools）建立 thread，之後只送新訊息加上前一個 response 的 id。thread 加密存在記憶體、不寫入磁碟，最後一次請求後 5 分鐘過期，過期回 404，需重送整段對話（SDK helper 會自動 replay）。Claude 每輪仍讀完整對話，所以 token 用量和價格不變，省的是延遲；已預設對多數 Claude Code 使用者開啟。不支援 ZDR，也不能 list/read/delete thread。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "message threads",
+        "stateful API",
+        "coding-agent",
+        "TTFT"
+      ],
+      "url": "https://platform.claude.com/docs/en/build-with-claude/message-threads",
+      "source": "Claude Blog",
+      "sourceUrl": "https://claude.com/resources/articles/message-threads",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "LangChain 實測 7 種 browser 工具組：Stagehand 的 code mode 通過率 90%、總成本 1.98 美元，Playwright MCP 78%、26.71 美元",
+      "summary": "LangChain 替 Managed Deep Agents 挑 browser 工具，用 WebVoyager（100 題，Claude Sonnet 5.5）比較 native tools、CLI、code mode 三類共 7 組工具。Stagehand 讓 agent 寫一段 Playwright 風格的 code 一次跑完多步，平均 10 步（Playwright MCP 26 步），一次 navigation 回傳中位數 117 字元（Browserbase hosted MCP 約 17,000 字元）。另一個收穫：從 trace 發現 agent 會寫死 sleep 8 秒，改成頁面安靜 500ms 就結束後，HardBench 的 agent 中位時間從 182 秒降到 124 秒，準確率沒變。",
+      "priority": "medium",
+      "tags": [
+        "browser agents",
+        "code mode",
+        "context engineering",
+        "tool design",
+        "evals"
+      ],
+      "url": null,
+      "source": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Simon Willison：筆電上的 Qwen 3.8 27B 也能只看原始權重，猜出 RL 網路在玩哪個遊戲",
+      "summary": "延續昨天的 Weight-Space Programming 爭議，Simon 只測「不用工具、直接讀權重」這一半：把論文 repo 裡的 prompt（一大串浮點數）丟給 LM Studio 跑的 Qwen 3.8 27B（約 17GB），各跑 46 分鐘到 1 小時多，答對 Pac-Man、Pong、Breakout，Freeway 答錯。他也用 `llm` 讓 Kimi K3.1 Pro 試，9 分 41 秒答對 Breakout。他的結論是論文很酷，但「source code 時代要結束」這類說法言過其實。X 貼文約 3.5k 讚。",
+      "priority": "medium",
+      "tags": [
+        "local LLM",
+        "weight-space programming",
+        "interpretability",
+        "Qwen"
+      ],
+      "url": null,
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Anthropic 開源 FlashProve：用 zkSNARK 證明「這個回答真的是那個模型產生的」，400B MoE 在單張 H100 上約 110 tok/s",
+      "summary": "Anthropic Frontier Red Team 與 EPFL 等合作的 provable inference 原型：provider 先對權重發布 commitment（權重保持隱藏），之後每個回應附一份 proof，任何人不需權重、在 CPU 上就能驗證（24 執行緒約 17 秒）。在 Llama 4 Maverick（4-bit）上，proof 約 19MB／1,024 token，GPU 時間約是 vLLM 跑同樣請求的 70–95 倍。用途包括偵測 router 偷換便宜模型、伺服器被入侵、監管單位查核。目前限 1,024 token context、greedy decoding，是研究原型，沒有部署計畫；Apache-2.0，附 Lean 形式化證明。",
+      "priority": "medium",
+      "tags": [
+        "provable inference",
+        "zkSNARK",
+        "model provenance",
+        "Lean"
+      ],
+      "url": "https://github.com/anthropics/FlashProve",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/provable-inference",
+      "price": null,
+      "vram": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261104-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Vercel Security Review public beta：每次 GitHub push 自動做 AI 漏洞審查，連 force push 到 production branch 也會掃",
+      "summary": "Pro 與 Enterprise 可用。因為以 push 事件觸發（不是 PR），直接推到 production 的 commit 也會審查；finding 會附 summary、建議修法和 AI 評的 severity，還會加 GitHub check，有 PR 時直接留 review comment。可以按「Fix with Vercel Agent」開 PR（不會自動 merge），或用 `vercel security vulnerabilities` 把 finding 交給自己的 coding agent。可寫自然語言的 security policy。只分析原始碼，不做 runtime 或滲透測試。計價為 inference 原價加每百萬 token 0.25 美元，11/10 前免費。",
+      "priority": "medium",
+      "tags": [
+        "AI code review",
+        "security agent",
+        "CI/CD",
+        "Vercel"
+      ],
+      "url": null,
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/vercel-security-review-public-beta",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Google DeepMind 為 Antigravity 推出 Cheminformatics Skills：LLM 管流程，計算交給 RDKit 這類確定性工具",
+      "summary": "示範用 Antigravity 加上新的 Cheminformatics Skills 做藥物設計：agent 從文獻撈出數千個化合物、做 matched molecular pair analysis、訓練 potency 模型，再提出剛性化 macrocycle 設計和合成路線，原本要好幾天的一輪約一小時完成。架構重點是分工：LLM 負責編排、查資料庫和推理，分子計算交給 RDKit、ChEMBL、PubChem 等確定性工具。DeepMind 也強調設計只是待驗證的假說。另提供 1 萬名科學家 6 個月最高用量方案免費（需申請審核）。",
+      "priority": "low",
+      "tags": [
+        "agent skills",
+        "Antigravity",
+        "deterministic tools",
+        "AI for science"
+      ],
+      "url": null,
+      "source": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Vitest 5 釋出：多數情境快 8–25%、VM pool 最多快 53%，`clearMocks` 改為預設 true",
+      "summary": "InfoQ 整理：inline projects 共用同一個 Vite server、`fsModuleCache` 穩定化、減少 main process 與 worker 的往返，換來整體加速；新的 `vitest doctor` 會用不同設定重跑並建議更快的組合；Browser Mode 加入 Trace View，可逐步重播。升級要注意：`clearMocks` 預設 true、沒 await 的 async assertion 會直接失敗、需要 Vite 6.4 與 Node.js 22.12 以上；Cloudflare vitest-pool-workers 的 peer range 還鎖在 v4。",
+      "priority": "low",
+      "tags": [
+        "testing",
+        "Vitest",
+        "frontend tooling"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/vite-5-release/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Postman 桌面版自動替 Codex、Claude Code 裝 plugin 和 SessionStart hook，installer 還試圖替自己的 hook 寫入 trusted 紀錄",
+      "summary": "GitHub issue #14370：使用者打開舊的 Postman 後，log 顯示 `auto-existing-upgrade` 自動安裝 Codex 與 Claude Code plugin、Postman CLI，加上遠端 MCP（mcp.postman.com）。hook 會在每次 session 開始時注入指示，要 agent 碰到任何 API 工程任務都先載入 Postman skill；installer 原始碼會呼叫 `config/batchWrite` 寫入 hook 的 `trusted_hash`。另一位使用者在 12.35.1 重現，Cursor 也被注入同樣的指示。Postman 回應會讓既有使用者的 opt-in 更清楚，並檢討 hook 核准行為。回報者表示沒有證據顯示資料被上傳。HN 976 分。",
+      "priority": "high",
+      "tags": [
+        "agent supply chain",
+        "hooks",
+        "consent",
+        "coding-agent security",
+        "MCP"
+      ],
+      "url": null,
+      "source": "GitHub（postmanlabs/postman-app-support）",
+      "sourceUrl": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "GitBook 遭「使用 AI agents」的針對性攻擊：Git Sync secrets、API tokens 可能外洩，所有客戶 API token 已作廢",
+      "summary": "GitBook 官方說明：11/2 19:00 CET 攻擊者取得部分基礎設施 credentials，GitBook 隨即把 app 和需驗證的 docs 下線，輪換所有 secrets 並作廢所有客戶 API token。可能被存取的包括 integration tokens、Git Sync secrets、API tokens，以及訪客問 GitBook Assistant 的問題，目前沒發現內容被竄改。建議：輪換 GitBook API token 和串接的第三方 token、有 secret 的 integration 也要換，用 GitBook MCP server 的話要重新驗證。完整 post-mortem 尚未公布。",
+      "priority": "medium",
+      "tags": [
+        "security incident",
+        "secrets rotation",
+        "MCP",
+        "AI-driven attack"
+      ],
+      "url": null,
+      "source": "GitBook",
+      "sourceUrl": "https://www.gitbook.com/status/security-incident-2026-11-03",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Revolut 把約 2,000 名工程師的 coding 換成自架 GLM，Claude Code、Codex 改列例外",
+      "summary": "來源是 AI Engineer 大會上 Revolut AI ops 負責人 David Abitbol 的演講（標題：自架 open model 讓 AI coding 成本降 90%），以及 X 上的轉述貼文（約 7k 讚、3.3k 收藏）。據轉述：56 張 B200、混合成本每百萬 token 0.30 美元，約是過去付給 Anthropic 和 OpenAI 的十分之一，工程 lead time 改善 70%；關鍵是 token 不再限量後，工程師不再只把 AI 留給難題。上列數字來自轉述貼文，演講影片內容未逐字核對。HN 184 分，討論集中在硬體投資多久能回本。",
+      "priority": "medium",
+      "tags": [
+        "self-hosted LLM",
+        "open weights",
+        "AI coding cost",
+        "GLM"
+      ],
+      "url": "https://www.youtube.com/watch?v=Ok6QdZHCcI8",
+      "source": "AI Engineer（YouTube）／X",
+      "sourceUrl": "https://x.com/guilleflorvs/status/2117379073785696395",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Ask HN：多人回報 Codex 的「Improve the model for everyone」被悄悄重新打開",
+      "summary": "一位因公司擔心 IP 外洩、全員關閉資料分享的工程師發現，Codex 的設定被重新開啟，同事也遇到，沒有人主動 opt in。原 PO 附上檢查位置：chatgpt.com/settings/data-controls，也可到 privacy.openai.com 申請關閉。留言提到：開啟 advanced account security（需要 hardware key）會鎖定關閉資料分享。這是使用者回報，OpenAI 尚未正式說明。HN 421 分。",
+      "priority": "medium",
+      "tags": [
+        "data privacy",
+        "Codex",
+        "enterprise AI governance"
+      ],
+      "url": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50352757",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "title": "Namespace〈Mac at any scale〉：把數百台 MacBook Pro 塞進機房，給 coding agent 跑 iOS CI",
+      "summary": "Namespace 解釋為何用筆電：Mac mini 一月訂、七月才到貨，而 iOS build 和 Simulator 一定要 Mac。踩到的坑包括 HDMI 線最常鬆脫、FileVault 解鎖提示 5 分鐘就消失。技術上用 Apple Virtualization framework，但 Apple 限制每台 Mac 最多 2 個 macOS VM；網路走 gVisor 的 userspace TCP/IP stack 當防火牆，可跑到約 4 Gbps；VM image 動輒 500GB，用保留 sparse 和分層的格式，加上類 BitTorrent 的 P2P 分發和 APFS clonefile 節省空間。HN 304 分。",
+      "priority": "low",
+      "tags": [
+        "CI infrastructure",
+        "macOS virtualization",
+        "P2P image distribution"
+      ],
+      "url": null,
+      "source": "Namespace Blog",
+      "sourceUrl": "https://namespace.so/blog/mac-at-any-scale",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-03T22:24:45+08:00",
-  "updatedAt": "2026-11-03T22:24:45+08:00"
+  "lastUpdated": "2026-11-04T08:26:34+08:00",
+  "updatedAt": "2026-11-04T08:26:34+08:00"
 }
