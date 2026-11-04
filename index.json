@@ -106865,8 +106865,228 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261104-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Shears：把 Gemma 4 26B-A4B 砍掉 85% 權重變成 3.81B dense 模型，單一分類任務和原模型 91.7% 一致",
+      "summary": "Tolby 作者 Everett Wilber 的工程實驗：Gemma 4 26B-A4B 每層 128 個 experts 只留 8 個，數量剛好等於每個 token 原本會選的 8 個，router 等於失效、模型變成 3.81B 的 dense 模型，Q4_K_M 只有 2.75GB。修復方式是 block-local training：每個 block 吃原模型的乾淨輸入，學著在每個 block 最後的 global attention 層對齊原模型輸出，只需要 prompt、不需要標籤。結果在他 app 的 906 筆分類上和 26B 一致 91.7%（同條件 12B 是 90%），M3 Max 上 79 tok/s、峰值記憶體 3.8GB。作者自己強調這不是通用模型：拿 MMLU 生物題測，正確率從 97% 掉到 68%，知識會跟著 experts 一起消失。工具 Shears 以 MIT 開源，附 Colab。",
+      "tags": [
+        "llm_inference",
+        "moe pruning",
+        "gemma 4",
+        "distillation",
+        "on-device"
+      ],
+      "url": "https://tolby.app/blog/frankensteining-gemmas-experts",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xnoqyy/",
+      "price": null,
+      "vram": "剪完 Q4_K_M 2.75GB；剪枝和修復過程作者在 48GB M3 Max 上跑，原始 26B 要先載得進來",
+      "license": "MIT（Shears）；Gemma 4 依 Google 授權"
+    },
+    {
+      "id": "20261104-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "SpecPilot：用 agent 迴圈幫 speculative decoding 找優化，Qwen3.8-27B 單請求從 AR 的 4.46 倍拉到 10.87 倍，無損",
+      "summary": "現成的 parallel drafter（DFlash2、DSpark）其實沒吃滿理論加速。SpecPilot 每輪先用 cost model 找出離上限最遠的地方，再派多個 agent 平行嘗試，並用 token forcing 逐 token 比對輸出，防止 agent 作弊改變結果。它找到的東西包括無損 12-bit 權重格式、給 hybrid recurrent 模型用的 tree verification、two-level verification 和三種 batching 機制。RTX PRO 6000 上 Qwen3.8-27B＋DFlash2 單請求從 4.46 倍到 10.87 倍，H100 batch 16–24 從約 2 倍到 3.9 倍，全部 greedy、不用訓練。repo 放了六種部署設定的引擎和驗證腳本，但測試卡都是 80–96GB 等級。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "dflash2",
+        "agentic optimization",
+        "qwen 3.8"
+      ],
+      "url": "https://github.com/StargazerX0/SpecPilot",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xnjrgj/",
+      "price": null,
+      "vram": "官方設定都在 H100 80GB 或 RTX PRO 6000 96GB；27B BF16 加 drafter 放不進 16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261104-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TTSonic：一個模型包辦 zero-shot TTS、voice cloning、prosody cloning、voice conversion 和文字描述音色",
+      "summary": "這篇 arXiv 論文想用單一 speech foundation model 取代一堆專用模型：同一個框架吃文字、自然語言指令、參考音檔和「用文字描述的音色」，支援 zero-shot TTS、voice cloning、prosody cloning、instruction following、voice conversion，還能從有噪音的參考音克隆。做法是先訓練語意和聲學分離的 speech tokenizer（用 ASR 監督學語意），再讓 text-to-semantic 的 autoregressive 模型負責語意與韻律規劃、flow-matching 模型負責聲學渲染，另外加了 CoT 式指令規劃和 Text2Timbre 音色設計。論文頁面目前沒有附 code 或權重，先當方向參考。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "voice conversion",
+        "flow matching",
+        "speech tokenizer"
+      ],
+      "url": "https://arxiv.org/abs/2611.04282",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.04282",
+      "price": null,
+      "vram": "不適用（論文，尚未釋出權重）",
+      "license": "不適用（論文）"
+    },
+    {
+      "id": "20261104-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "騰訊 Hy4 發表：官方稱進入最強 open-weight 模型之列，首次支援視覺和 computer use，權重「之後開源」",
+      "summary": "騰訊 11/4 發表 Hy4，比 Hy4 preview 大幅擴大 pre-training 和 post-training，第一次加入視覺理解和 computer use（CLI＋GUI，有針對 Blender、CAD 訓練）。官方數字：579 個金融實務任務在 open-weight 模型中排第一（Hy4 3.04、DeepSeek-V4.1-Flash-1017 2.97、Kimi K3.1 Pro 2.68），內部評測幻覺率從 15.76% 降到 5.45%。現在只能透過騰訊雲和 OpenRouter 用 API（每百萬 token 輸入 0.834、輸出 2.501 美元）；權重要「之後」才開源，已和 vLLM、SGLang 合作支援，到時會附 system card。參數量官方沒寫，目前的評比也都是騰訊自己和合作夥伴的內部 benchmark。騰訊官方頁 curl 會被擋（回 567），連結改用報導頁。",
+      "tags": [
+        "llm_inference",
+        "hy4",
+        "open weights",
+        "computer use",
+        "vision"
+      ],
+      "url": "https://maccus.fr/en/tencent-hy4-ai-model/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xnhzbz/",
+      "price": null,
+      "vram": "未公布參數量，權重尚未釋出",
+      "license": "尚未公布（權重未釋出）"
+    },
+    {
+      "id": "20261104-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "oMLX 0.7.4.dev1：第二台快的 Mac 可以當 prefill 加速器，DeepSeek V4.1 Flash 64K prompt prefill 快近 3 倍",
+      "summary": "Mac 上的推理伺服器 oMLX 新開發版：大模型放在 M3 Ultra 512GB 這種大記憶體 Mac，再配一台 GPU 比較快的 Mac（例如 M5 Max），快的那台負責每段 prompt 的前幾層，大的那台跑剩下的層、decode 和保存 KV cache，用 Thunderbolt 或 5GbE 就夠、不需要 RDMA。64K prompt 實測：DeepSeek V4.1 Flash prefill 1,060 到 3,123 tok/s，Qwen3.8 Flash-Next 1,309 到 3,666，decode 速度不變。另外 Ming-3.0-tts 改用編譯過的 decode loop，M5 Max 上 real-time factor 從 0.210 降到 0.101；Qwen3.8 Flash-Next FP16 decode 最多快 62%。這是 dev 版，穩定版仍是 0.7.3。",
+      "tags": [
+        "llm_inference",
+        "apple silicon",
+        "prefill",
+        "distributed inference",
+        "tts"
+      ],
+      "url": "https://github.com/jundot/omlx/releases/tag/v0.7.4.dev1",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xnnl57/",
+      "price": null,
+      "vram": "不適用（Apple Silicon 專用，非 NVIDIA）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261104-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ReListen：免訓練讓凍結的 audio LM 自己在一小時長錄音裡找證據，不用先轉逐字稿",
+      "summary": "一小時的錄音塞不進 audio language model 的 context，先轉逐字稿又會丟掉聲音和語氣資訊。ReListen 讓凍結的 audio LM 每 20 秒掃一個窗，用「這段對回答問題有幫助」的機率打分，再只拿分數最高的那一分鐘來回答。VoiceGiraffe 上這一分鐘有 88.5% 和人工標的證據重疊，答題比讀整份逐字稿高 9.2 分，比所有逐字稿方案都快，記憶體也不隨錄音長度增加。另一個發現：講話內容讀逐字稿和聽原音差不多，但問到聲音或說話者時，聽原音明顯更準。論文頁沒有附 code。",
+      "tags": [
+        "asr_speech",
+        "audio language model",
+        "long audio",
+        "retrieval",
+        "training-free"
+      ],
+      "url": "https://arxiv.org/abs/2611.04480",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.04480",
+      "price": null,
+      "vram": "不適用（方法論文；記憶體固定、不隨錄音長度增加）",
+      "license": "不適用（論文）"
+    },
+    {
+      "id": "20261104-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "InteractionBench：同一批錄音同時測即時語音系統的時機、任務正確率、悄悄話和 20 輪以上的事實一致性",
+      "summary": "這個 benchmark 用同樣的使用者錄音，一次測四件事：對話時機（turn-taking）、口說任務正確率、會不會配合降低音量講悄悄話、超過 20 輪的對話還記不記得事實。總共 13 種情境，每個系統 221 題，測了 GPT-Live、GPT-Realtime、Gemini Live、Moshi、PersonaPlex、Freeze-Omni 和一個傳統 ASR→LLM→TTS cascade，共 1,519 次評分。結果：傳統 cascade 任務正確率最高（38/50），但時機分數倒數第二；只有 Gemini Live 大多會真的講悄悄話（8/10）；事實一致性上雲端系統 67–88%，開源 full-duplex 模型只有 14–35%。想做本地語音助理的話，這是很實用的對照表。",
+      "tags": [
+        "tts_speech",
+        "full-duplex",
+        "benchmark",
+        "voice agent",
+        "moshi"
+      ],
+      "url": "https://arxiv.org/abs/2611.02430",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.02430",
+      "price": null,
+      "vram": "不適用（benchmark 論文）",
+      "license": "不適用（論文）"
+    },
+    {
+      "id": "20261104-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ByteDance Axion 1.0-35B：35B-A3B 的 agent 模型，只用兩段 SFT 加 RL，資料和訓練 code 全開",
+      "summary": "ByteDance 團隊的 Axion 1.0 主打「open 不只開權重」：整套資料建構、生成、篩選、驗證、prompt 和訓練 code 都公開。訓練只有三段：先用依 base model 自己的解題方式對抗強化過的難題做 SFT 學推理，再用可自動驗證、需要外部資訊的工具任務做第二段 SFT，最後用 RL 強化長程工具互動，總共約 18K 筆 SFT 樣本，沒有 mid-training、DPO 或 on-policy distillation。HF 上的是復現 checkpoint：HLE 52.8、SEAL-0 60.4、FrontierScience Olympiad 85.0，和論文數字接近。架構是 MoE，總參數約 35B、每 token 啟用 3B。",
+      "tags": [
+        "llm_training",
+        "agent model",
+        "moe",
+        "rl",
+        "open recipe"
+      ],
+      "url": "https://huggingface.co/Axion1-0/Axion-1.0-35B",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xnjiu4/",
+      "price": null,
+      "vram": "35B BF16 約 70GB；Q4 約 20GB，16GB 卡要搭配 expert offload 到系統 RAM（估算）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261104-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "ComfyUI v0.44.0：支援 MiniMax-H3 latent upscaler、Sol-H3-VAE 和 context windows，新增 VAE 運算精度節點",
+      "summary": "11/4 早上（台灣時間）發布。本地模型相關的重點：支援 MiniMax-H3 的 latent upscaler、MiniMax Sol-H3-VAE、MiniMax-H3 context windows 和 PH3Image；新增可以設定 VAE compute dtype 的節點（另外修了它在 LTX 2.5 VAE decoder 上的 crash）；修正 fp8_e4m3fn_fast 在 dynamic VRAM 模式下退回 bf16 運算的問題；影片輸出支援 ProRes 和不同的 chroma subsampling。其餘多是雲端 Partner Nodes（Sonilo Music 1.5、VEED Dubbing、GPT-6.1 Terra／Sol 等）。",
+      "tags": [
+        "image_gen",
+        "comfyui",
+        "minimax-h3",
+        "fp8",
+        "video"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xngb2i/",
+      "price": null,
+      "vram": "依工作流和模型而定；這版修正 fp8 在 dynamic VRAM 下的退化，對 16GB 卡有幫助",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261104-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-11-04",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "NVIDIA RTX Spark 筆電裝 Linux：插電時 GPU 被鎖在約 780 MHz，GPT-OSS-120B 從 65 掉到 14 tok/s（HN 261 分）",
+      "summary": "MindStudio 實測 MSI Prestige RTX Spark 筆電雙開機 Linux：用 NVIDIA open kernel driver 可以跑 CUDA，但插電時 GPU 時脈被鎖在約 780 MHz（Windows 約 2.2 GHz），GPT-OSS-120B 在 Windows 65.4、WSL 65.1、DGX Spark 61，原生 Linux 只有 13.9 tok/s；vLLM 8 個 client 時 WSL 127 對 Linux 39.5。原因是管理 CPU／GPU 共用功耗的 Nvidia Platform Controllers and Framework 只有 Windows 版，它讀的韌體功耗表是加密的；在 Windows 停用這個元件也能重現同樣的降速。拔掉電源反而接近 Windows 速度。目前建議用 WSL，真正的修正要等 NVIDIA 把這段功耗管理移植到 Linux driver。",
+      "tags": [
+        "infra_runtime",
+        "rtx spark",
+        "linux driver",
+        "wsl",
+        "firmware"
+      ],
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50362905",
+      "price": null,
+      "vram": "不適用（硬體／驅動議題；機器是 128GB unified memory）",
+      "license": "不適用"
     }
   ],
-  "lastUpdated": "2026-11-04T18:33:05+08:00",
-  "updatedAt": "2026-11-04T18:33:05+08:00"
+  "lastUpdated": "2026-11-04T22:22:26+08:00",
+  "updatedAt": "2026-11-04T22:22:26+08:00"
 }
