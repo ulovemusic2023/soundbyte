@@ -105933,8 +105933,215 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261104-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "iZotope Photon：GPU 本機跑的 AI stem separation 與降噪，有 standalone 和 ARA plugin",
+      "summary": "iZotope 推出 Photon，內建 12 個自家訓練的 machine-learning model，在本機 GPU 上做 stem separation 與語音清理，不用上傳。可以當 standalone app，也能當 ARA plugin 直接在 DAW 裡調 stereo stem 的平衡，是 iZotope 被 Boris FX 收購後第一款合作產品。早鳥價 US$259（原價 US$349），到 12/7，另有訂閱方案。",
+      "tags": [
+        "stems separation",
+        "audio ai",
+        "ARA",
+        "plugin"
+      ],
+      "url": "https://rekkerd.org/izotope-launches-photon-gpu-accelerated-stem-separation-and-denoising/",
+      "source": "Rekkerd.org",
+      "sourceUrl": "https://rekkerd.org/izotope-launches-photon-gpu-accelerated-stem-separation-and-denoising/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 聲請駁回 Jason Isbell 的 class action：主張用歌手名字描述曲風受 First Amendment 保護",
+      "summary": "Jason Isbell 與 David Lowery 以 NIL（姓名、肖像）權利對 Suno 提起集體訴訟，指控使用者能透過 prompt 複製歌手特徵。Suno 在駁回聲請中說用歌手名字當曲風的簡稱是普遍做法、受 First Amendment 保護，且著作權法不保護曲風。DMN 指出 Suno 平台其實會把歌手名轉成描述性 style tag（例如 Pantera 變成 aggressive metal）。",
+      "tags": [
+        "suno",
+        "music ai",
+        "music industry"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/11/03/suno-moves-to-dismiss-isbell-class-action-lawsuit/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/03/suno-moves-to-dismiss-isbell-class-action-lawsuit/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MLC 正式反對 Udio 的串流資料 subpoena：說配合要花兩到三週人力",
+      "summary": "Udio 與 Suno 要求 Mechanical Licensing Collective 交出 2021 年至今各唱片公司的每月串流量資料，作為 fair use 與 copyright misuse 抗辯依據。MLC 正式提出反對，稱光是整理就要約兩到三週的員工時間，時薪 US$150 到 US$315。這是唱片公司對 AI 音樂平台訴訟裡，雙方互發 subpoena 的最新一輪。",
+      "tags": [
+        "udio",
+        "suno",
+        "music ai",
+        "music industry"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/11/03/udio-mlc-subpoena-opposition/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/03/udio-mlc-subpoena-opposition/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Musio Studio：免費 DAW 內建 3,700+ 虛擬樂器，還有 MCP server 讓 agent 操控",
+      "summary": "Musio 推出免費寫曲軟體 Musio Studio（macOS / Windows / Linux），直接串接 Cinesamples、ProjectSAM、Soundiron 等 126 套、3,700 多種虛擬樂器，不需另外的 sampler。內建 MCP server，可以讓 Claude Code、Codex、Cursor 之類的 agent 載入音色、建 template、設定軌道與 articulation。官方強調 Musio 本身不生成音樂。",
+      "tags": [
+        "daw",
+        "free plugin",
+        "virtual instrument",
+        "mcp"
+      ],
+      "url": "https://rekkerd.org/free-musio-studio-daw-built-around-3700-legendary-virtual-instruments/",
+      "source": "Rekkerd.org",
+      "sourceUrl": "https://rekkerd.org/free-musio-studio-daw-built-around-3700-legendary-virtual-instruments/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "arXiv：用 structured captions（SCAPs）訓練 text-to-music，並提出比 CLAP 更貼近人類偏好的評估法",
+      "summary": "這篇論文用結構化描述（SCAPs）取代自由文字 caption 來 fine-tune flow-based diffusion transformer，並比較完整與部分資訊、全域與時間軸資訊的差異，搭配多階段 prompt rewriter。作者也提出受 Davidsonian Scene Graphs 啟發的 Music DSG 評估法。結果顯示 SCAPs 同時提升 text alignment 與音質，而 Music DSG 與人類偏好的相關性高於 CLAP。",
+      "tags": [
+        "music generation",
+        "text to music",
+        "CLAP",
+        "music model"
+      ],
+      "url": "https://arxiv.org/abs/2611.00685",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.00685",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "arXiv：MEX，評估「音樂預期」計算模型的 benchmark suite",
+      "summary": "MEX 收集並擴充 MIR 與認知科學裡的任務，檢驗模型從 symbolic music 或音訊估出的 surprisal、uncertainty 是否會隨重複而下降、峰值是否對齊段落邊界、音訊與符號估計是否一致，以及能否預測聆聽時的腦電反應。作者附上開源程式碼與 baseline model，可以拿自己的資料跑。",
+      "tags": [
+        "MIR",
+        "music understanding",
+        "music structure",
+        "benchmark"
+      ],
+      "url": "https://arxiv.org/abs/2611.01843",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.01843",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Session Loops DrumNet 2：AI 鼓機除了生成鼓聲，現在也會寫 pattern",
+      "summary": "DrumNet 2 延續初版用 AI 生成任意曲風鼓 sample，新增自動編寫鼓組 pattern，從空專案到完成 groove 只要幾秒。支援 VST3 / AU / AAX，Windows 與 macOS。首發價 US$79（原價 US$129，到 11/30），舊用戶升級 US$19，可免費試用 14 天。",
+      "tags": [
+        "music ai",
+        "drum machine",
+        "beat making",
+        "plugin"
+      ],
+      "url": "https://rekkerd.org/session-loops-releases-drumnet-2-ai-powered-drum-machine/",
+      "source": "Rekkerd.org",
+      "sourceUrl": "https://rekkerd.org/session-loops-releases-drumnet-2-ai-powered-drum-machine/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Mixxx 提議把開源 DJ 軟體帶到 open firmware 硬體上",
+      "summary": "Mixxx 開發者 Daniel Schürmann 在官方 blog 提出計畫，想讓 Mixxx 支援允許載入自訂韌體的「open」DJ 設備與 DIY 專案，統一力量，避免各自 fork。CDM 認為這可能讓免費、開源的 standalone DJ 硬體真正可用，Mixxx 也公開邀請廠商合作。",
+      "tags": [
+        "open source music",
+        "custom firmware",
+        "music software"
+      ],
+      "url": "https://cdm.link/mixxx-could-unlock-free-and-open-standalone-djing/",
+      "source": "CDM",
+      "sourceUrl": "https://cdm.link/mixxx-could-unlock-free-and-open-standalone-djing/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "XLN Audio RC-20 Retro Color v2：加入 Echo 模組與更多效果",
+      "summary": "經典 lo-fi 色彩 plugin RC-20 推出 v2，新增創意 Echo 與擴充的效果選擇，從細微的 vintage 溫暖到扭曲質感都能做。支援 VST3 / AU / AAX，intro 價 US$99，舊用戶升級 US$19，優惠到 2027/1/12。",
+      "tags": [
+        "plugin",
+        "audio effect",
+        "saturator",
+        "delay"
+      ],
+      "url": "https://rekkerd.org/xln-audio-updates-rc-20-retro-color-effect-plugin-to-v2/",
+      "source": "Rekkerd.org",
+      "sourceUrl": "https://rekkerd.org/xln-audio-updates-rc-20-retro-color-effect-plugin-to-v2/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261104-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-04",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NoiseWorks PloseAssist：免費自動去除人聲 plosive 的 plugin",
+      "summary": "PloseAssist 會自動找出錄音裡的爆破音，只把那一瞬間的低頻壓下來，其他部分維持原樣，不用設 threshold，插上就能用。適合人聲與對白錄音，支援 Windows / macOS 的 VST3、AU、AAX。",
+      "tags": [
+        "free plugin",
+        "mixing",
+        "plugin"
+      ],
+      "url": "https://rekkerd.org/free-ploseassist-automatic-plosive-removal-by-noiseworks-audio/",
+      "source": "Rekkerd.org",
+      "sourceUrl": "https://rekkerd.org/free-ploseassist-automatic-plosive-removal-by-noiseworks-audio/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-04T08:26:34+08:00",
-  "updatedAt": "2026-11-04T08:26:34+08:00"
+  "lastUpdated": "2026-11-04T09:07:41+08:00",
+  "updatedAt": "2026-11-04T09:07:41+08:00"
 }
