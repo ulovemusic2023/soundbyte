@@ -107502,8 +107502,170 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261105-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-05",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Jensen Huang：大部分價值在「specialized intelligence」，不在通用模型",
+      "summary": "Huang 在 Fireworks Forge 說，世界上多數價值會被特定領域的專用模型捕捉，而不是所有人都靠同一個通用智慧。框架：拿 open frontier model，加上你的 domain knowledge、專屬工具和正確的 evaluation，就能在自己的領域做出近似 superintelligence 的東西。對小團隊來說，護城河不在模型，在領域資料和評測。",
+      "tags": [
+        "specialized-intelligence",
+        "moat",
+        "open-models",
+        "ai-future"
+      ],
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/03/nvidia-is-happy-to-take-your-money-whether-youre-using-open-or-closed-models-says-jensen-huang/5307368",
+      "source": "The Register",
+      "sourceUrl": "https://www.theregister.com/ai-and-ml/2026/11/03/nvidia-is-happy-to-take-your-money-whether-youre-using-open-or-closed-models-says-jensen-huang/5307368",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-05",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Sam Altman：人必須一直掌控未來，這應該反過來約束 AI 進展",
+      "summary": "Altman 表態 OpenAI 反對「人被降格成只做 AI 系統認為值得獎勵的事」這種未來。他把 human control 從道德口號變成設計限制：人不該把未來的控制權讓給 superintelligence，而這個要求最終應該限制 AI 能推進多快。思考框架是把「人在迴路中」當成 constraint，而不是 feature。",
+      "tags": [
+        "human-in-the-loop",
+        "ai-safety",
+        "alignment"
+      ],
+      "url": "https://x.com/sama/status/2117794005165748448",
+      "source": "X (@sama)",
+      "sourceUrl": "https://x.com/sama/status/2117794005165748448",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-05",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Satya Nadella：過去一年我改變想法的事——alignment 不會自己「掉出來」",
+      "summary": "被問到「過去 12 個月改變了什麼想法」，Nadella 說 2018–2019 年他跟 Dario、Ilya、Sam 一樣相信 scaling laws，以為 alignment 會自然解決，現在不這麼認為了，覺得它可能是更難、不同類型的問題。值得學的不只是結論，而是定期問自己「我改變了什麼想法」這個習慣本身。",
+      "tags": [
+        "alignment",
+        "belief-updating",
+        "decision-making"
+      ],
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-ceo-satya-nadella-says-that-when-dario-amodei-ilya-sutskever-sam-altman-greg-brockman-and-elon-musk-were-all-i-guess-one-happy-family-they-were-really-/articleshow/135424109.cms",
+      "source": "The Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-ceo-satya-nadella-says-that-when-dario-amodei-ilya-sutskever-sam-altman-greg-brockman-and-elon-musk-were-all-i-guess-one-happy-family-they-were-really-/articleshow/135424109.cms",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-05",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Figma 的 PM OS：一個 31 個 skills 的 repo，讓 60+ 個 PM 一起用 AI",
+      "summary": "Figma growth PM Ezra Mechaber 把自己的 Claude Code 設定變成共用 repo「PM OS」，用 skills、hooks 和私人 sub-repo 讓 60–70 個 PM 保持同步；另做了 AutoXP，跑 growth 實驗只留一個 human checkpoint。洞見：組織導入 AI 的單位不是「買一個產品」，而是把個人工作流程打包成可共享、可被吐槽和修剪的 skills。",
+      "tags": [
+        "ai-adoption",
+        "skills",
+        "human-in-the-loop",
+        "product-management"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+      "source": "Lenny's Newsletter (How I AI)",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-05",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "levelsio：讓 Claude Code 幫忙稽核成本，月支出砍到約 $300",
+      "summary": "Pieter Levels 說他服務 2 萬付費客戶、年 2.52 億訪客的所有網站，月支出降到約 $300（不含 Photo AI 的 GPU 和儲存），每月省下近 $34,000。大頭來自換更便宜的影片模型，其他是伺服器整合到 Hetzner、備份加 lifecycle policy、砍掉沒用的網域。玩法：成本會隨年份悄悄長大，讓 AI 定期幫你找「肥肉」是 solo founder 最便宜的 CFO。",
+      "tags": [
+        "solo-founder",
+        "bootstrapping",
+        "unit-economics",
+        "ai-leverage"
+      ],
+      "url": "https://x.com/levelsio/status/2117694259558293692",
+      "source": "X (@levelsio)",
+      "sourceUrl": "https://x.com/levelsio/status/2117694259558293692",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-05",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Dan Koe：2027 最賺的 AI 一人事業是「one-person creative team」",
+      "summary": "Dan Koe 主張最值錢的技能一直是 capturing attention，AI 讓一個人能扛起 brand strategist、content strategist、writer 三個角色，可以做自己的品牌，也可以替忙碌的 founder 當 creative director。接第一個客戶的方法是「Permissionless Apprentice」：先免費幫目標客戶寫 10 篇貼文再私訊。注意文中多次推銷自家產品 Eden，數據部分宜保守看待。",
+      "tags": [
+        "creator-economy",
+        "personal-brand",
+        "one-person-company",
+        "gtm"
+      ],
+      "url": "https://x.com/thedankoe/status/2117664712532123680",
+      "source": "X Article (@thedankoe)",
+      "sourceUrl": "https://x.com/thedankoe/status/2117664712532123680",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-05",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Naval：Greed can be satisfied. Envy, cannot.",
+      "summary": "貪婪有終點，嫉妒沒有，因為它的標準永遠是別人。",
+      "tags": [
+        "mental-model",
+        "happiness"
+      ],
+      "url": "https://x.com/naval/status/2117848335264702710",
+      "source": "X (@naval)",
+      "sourceUrl": "https://x.com/naval/status/2117848335264702710",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-05",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Tobi Lütke 轉述 14 歲孩子：世界上的 why-the-hell-nots 不夠多",
+      "summary": "Shopify 帶孩子上班日，一位 14 歲孩子的話被 Tobi 轉發：比起「為什麼要做」，更缺的是「何不試試」的態度。",
+      "tags": [
+        "founder-mindset",
+        "bias-to-action"
+      ],
+      "url": "https://x.com/tobi/status/2118081569797931345",
+      "source": "X (@tobi)",
+      "sourceUrl": "https://x.com/tobi/status/2118081569797931345",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-05T09:20:00+08:00",
-  "updatedAt": "2026-11-05T09:20:00+08:00"
+  "lastUpdated": "2026-11-05T09:07:18+08:00",
+  "updatedAt": "2026-11-05T09:07:18+08:00"
 }
