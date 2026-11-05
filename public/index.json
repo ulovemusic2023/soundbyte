@@ -107294,8 +107294,216 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261105-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ableton Live 13 外流：rack 內建 browser、全新 drum synth 與 drum sequencer",
+      "summary": "一支 Ableton Live 13 的影片在 YouTube 外流（原片已下架但被轉傳）。畫面顯示 device rack 多了 (+) 按鈕，可直接在 rack 裡開小型 browser 加 device 和 preset；新的 drum synth device 涵蓋 kick、snare、hi-hat、clap、tom 等整組鼓聲，kick 有 TR-909、TR-808、CR-78 風格模式；另有整合進 Drum Rack 的 drum sequencer，每軌可設不同長度、速度、方向與 swing，每步可設 velocity、pitch、chance 等。還有 clipper 和獨立的 Transient Shaper。官方尚未公布上市時間與價格。",
+      "tags": [
+        "ableton",
+        "daw",
+        "drum machine",
+        "sequencer"
+      ],
+      "url": "https://synthanatomy.com/2026/11/ableton-live-13.html",
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/ableton-live-13.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Steinberg Cubase 16 上市：6 軌 stem separation、Omnivocal 人聲合成、Instrument Stacks",
+      "summary": "Cubase 16 即日推出（Pro、Artist、Elements 三版）。新功能包括把多個 VST instrument、Sampler Track、Drum Track 疊成一個樂器的 Instrument Stacks；Key Editor 新增 Strum 與 Stretch Selection；HALion 團隊做的 Spectral AudioWarp 演算法；升級後的 Stem Separation 可拆成 vocals、drums、bass、piano、guitar、other 六軌；改良的 Tempo Detection；以及採用 Yamaha NX 引擎的 Omnivocal Basic，附兩個 voicebank，可在 Key Editor 直接打歌詞。",
+      "tags": [
+        "cubase",
+        "daw",
+        "stems separation",
+        "voice synthesis",
+        "midi"
+      ],
+      "url": "https://rekkerd.org/cubase-16-new-creative-possibilities-faster-workflows/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/cubase-16-new-creative-possibilities-faster-workflows/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AI 偵測器誤判頻傳：80 年代風格的手工作品被判成 AI 生成",
+      "summary": "DMN 報導 SubmitHub、Let's Submit、TrackVerifier、ACRCloud 等 AI music detector，常把 darkwave、electro、post-punk 這類用 drum machine、精準 sequencer、合成音色的曲子標成「可能是 AI」。漢堡音樂人 André Grafert 全手工製作的 23 首翻唱專輯被 SubmitHub 全數判為可能 AI；連 Twice a Man 1982、1984 年的原版錄音也有 7 首被判為 AI/hybrid，甚至被說用了「ElevenLabs Music」。對獨立音樂人來說，一個百分比就可能毀掉聲譽與收入。",
+      "tags": [
+        "music ai",
+        "ai detection",
+        "music industry"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/11/04/ai-detector-false-positives/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/04/ai-detector-false-positives/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Apple 再次要求撤銷 Suno 的作證 subpoena：主張第三方 discovery 該設上限",
+      "summary": "在 UMG、Sony 告 Suno 的案子裡，Suno 想要 Apple 作證，題目包括 Apple Music 與 UMG、Sony 的授權談判，以及沒有這些主要唱片公司曲庫時 Apple Music 的長期商業可行性。Apple 10/13 已聲請撤銷，這週再遞出措辭強硬的答辯，說過去一年已回應六份 subpoena，認為是否談 anti-dilution 安排與案件無關，copyright misuse 也取決於原告的行為而非 Apple 的看法。",
+      "tags": [
+        "suno",
+        "music ai",
+        "copyright",
+        "music industry"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/11/04/suno-apple-subpoena-opposition/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/04/suno-apple-subpoena-opposition/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Synthesizer V Studio 2 Pro 2.3.0：新 phoneme 系統與法德葡義跨語言合成",
+      "summary": "Dreamtonics 更新 AI 歌聲合成軟體 Synthesizer V Studio 2 Pro 到 2.3.0，用每種語言各自簡化的 phoneme 取代原本混雜的音標與自訂 X-SAMPA，華語、粵語、韓語改用貼近拼寫或標準羅馬拼音的符號，舊專案自動轉換。新增法、德、葡、義的 cross-lingual synthesis、表現 vocal fry 的 /vf/ phoneme，渲染也更快、更可重現。售價 US$99。",
+      "tags": [
+        "voice synthesis",
+        "vocal",
+        "music software"
+      ],
+      "url": "https://rekkerd.org/dreamtonics-updates-synthesizer-v-studio-2-pro-to-v2-3-0/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/dreamtonics-updates-synthesizer-v-studio-2-pro-to-v2-3-0/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Hertz H-Tuner：可分開校準 attack 與 sustain 的吉他調音 plugin",
+      "summary": "Hertz Instruments 推出錄音用的吉他調音 plugin H-Tuner，可以分別針對撥弦的 attack 和 sustain 段調音，讓錄音時的音準更準、更實用。支援 Windows/macOS 的 VST3、AU、AAX，售價 €18.90。",
+      "tags": [
+        "guitar",
+        "guitar plugin",
+        "guitar recording",
+        "plugin"
+      ],
+      "url": "https://rekkerd.org/hertz-instruments-releases-h-tuner-guitar-tuner-plugin/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/hertz-instruments-releases-h-tuner-guitar-tuner-plugin/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "自己 vibe code M-Vave FM-1 合成器的韌體",
+      "summary": "Synthtopia 介紹 Floyd Steinberg 的新影片，談這台不到 US$100 的 M-Vave FM-1 為何靠社群的數十種 alternate firmware 成為 2026 年的話題合成器，並從影片約 16:39 開始示範他怎麼用 vibe coding 寫出自己的韌體。延續最近 Polyend、MONAD 這波 custom firmware 熱潮。",
+      "tags": [
+        "synthesizer",
+        "custom firmware",
+        "vibe coding"
+      ],
+      "url": "https://www.synthtopia.com/content/2026/11/03/how-to-vibe-code-your-own-firmware-for-the-m-vave-fm-1-synthesizer/",
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/03/how-to-vibe-code-your-own-firmware-for-the-m-vave-fm-1-synthesizer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "免費 MYR Zenith mastering 套件、Titan 24 段 dynamic EQ、Prism vocal harmonizer",
+      "summary": "Goeran Meyer 的 MYR 系列新推三款免費 plugin。Zenith 把 12 個 mastering 模組串在一個視窗，含 mid/side EQ、8 段 multiband、true-peak limiter，按 LEARN 就會依 Spotify、Apple、YouTube、Tidal 的 LUFS 目標設好 limiter；Titan 是每段都可變 dynamic 的 24 段 EQ，LINK 功能能在 kick 和 bass 間標出頻率衝突並 duck；Prism 是三聲部 vocal harmonizer。VST3/AU，Windows/macOS。",
+      "tags": [
+        "free plugin",
+        "mastering",
+        "eq",
+        "vocal"
+      ],
+      "url": "https://rekkerd.org/free-zenith-mastering-suite-titan-dynamic-eq-prism-vocal-harmonizer/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/free-zenith-mastering-suite-titan-dynamic-eq-prism-vocal-harmonizer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Universal Audio Capitol Studios：native 房間模擬與 reverb plugin",
+      "summary": "UA 推出 native 版 Capitol Studios plugin，把 Capitol Studios A、B 兩間錄音室的房間、麥克風、處理器、console 和著名的地下 echo chamber 帶進 DAW，可用在人聲、鼓、吉他等。Windows/Mac，VST3/AU/AAX，售價 US$249，也包含在 UAD Spark Studio 訂閱裡。",
+      "tags": [
+        "reverb",
+        "plugin",
+        "mixing",
+        "vst3",
+        "aax"
+      ],
+      "url": "https://rekkerd.org/universal-audio-releases-capitol-studios-native-plugin/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/universal-audio-releases-capitol-studios-native-plugin/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "CISAC 報告：2025 全球創作者版稅創新高 €15.5bn，強調人類創作",
+      "summary": "CISAC 年度 Global Collections Report 顯示 2025 年全球版稅收入 €15.5bn，年增 11.3%，但這是首度計入美國 MLC，扣掉後成長 5.3%。音樂占 €14.06bn，數位音樂 €6.41bn（+27.9%），live 與背景音樂 €3.62bn 已超過電視廣播。主席 Björn Ulvaeus 在序言強調每筆版稅都始於人類創意，報告也討論串流上的在地音樂曝光，反對直接套用電台式配額。",
+      "tags": [
+        "music industry",
+        "licensing",
+        "music ai"
+      ],
+      "url": "https://musically.com/2026/11/04/cisac-report-reveals-record-e15-5bn-creator-royalties-in-2025/",
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/04/cisac-report-reveals-record-e15-5bn-creator-royalties-in-2025/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-05T08:30:38+08:00",
-  "updatedAt": "2026-11-05T08:30:38+08:00"
+  "lastUpdated": "2026-11-05T09:20:00+08:00",
+  "updatedAt": "2026-11-05T09:20:00+08:00"
 }
