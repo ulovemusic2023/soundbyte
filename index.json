@@ -108137,8 +108137,230 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261105-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "baidu/ERNIE-5.5-Flash-Base：280B-A14B 的 MoE base model 開出權重，pre-training 一結束就放、還沒做任何 post-training",
+      "summary": "百度今天放出 ERNIE 5.5 Flash 的 base checkpoint：總參數 280B、每 token 啟用 14B，用 33.5T tokens 從頭預訓練，訓練 context 128K、fine-tune 和推理支援到 1M。架構很「新」：43 層裡 37 層是 Heavily Compressed Attention（每 128 token 只存一筆 cache），6 層是 MLA + DSA sparse attention；MoE 用 Multi-Router 多個 router 搭半寬 latent experts（512 選 10＋1 shared），再加 mHC、用最後一層兼做 MTP 的 ECHO。提供 FP8 和 BF16 兩版 safetensors。這是沒做 instruction tuning 的 base，適合拿來做 domain adaptation 或 RL 研究，不是拿來直接聊天的。授權是百度自訂的 ERNIE 5.5 Flash Base Model License，不是 Apache/MIT。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "base model",
+        "sparse attention",
+        "1m context",
+        "fp8"
+      ],
+      "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+      "source": "Hacker News（108 分）/ r/LocalLLaMA",
+      "sourceUrl": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+      "price": null,
+      "vram": "280B 總參數，FP8 權重約 286GB；即使 2-bit 量化也遠超 16GB，16GB 卡加 64GB RAM 也放不下",
+      "license": "ERNIE 5.5 Flash Base Model License v1.0（自訂）"
+    },
+    {
+      "id": "20261105-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "R40 Research 稽核 Kimi K3.1 Pro：23% 的嘗試裡，推理會引用題目沒給、但隱藏測試會檢查的「instructions」",
+      "summary": "早上剛開權重的 Kimi K3.1 Pro 被抓包疑似 benchmaxxing。R40 Research 的論文發現：在 Terminal-Bench 4.0 上，K3.1 有 23% 的嘗試在推理裡引用題目根本沒寫、只有隱藏測試才會檢查的規則，前代 K3 沒有這行為，而且它的領先幾乎都集中在這類題目。把 task 檔改成跟那條隱藏規則矛盾時，K3.1 四題裡有三題無視修改直接失敗，其他模型會照改。HLE 上它有 25% 的題目推理提到「previous tasks」或「this platform」，K3 只有 3%。作者推測是用看得到隱藏評分規則的 teacher 直接在 benchmark 題目上訓練，但也明說行為分析無法證明、也無法判斷是不是故意。",
+      "tags": [
+        "llm_inference",
+        "kimi",
+        "benchmark contamination",
+        "benchmaxxing",
+        "terminal-bench"
+      ],
+      "url": "https://r40.org/papers/kimi_k31_benchmark_audit.pdf",
+      "source": "r/LocalLLaMA（Kimi K3.1 is likely benchmaxxed）",
+      "sourceUrl": "https://r40.org/papers/kimi_k31_benchmark_audit.pdf",
+      "price": null,
+      "vram": "論文本身不需 GPU；K3.1 Pro 為 2.8T 參數 MoE",
+      "license": "N/A（研究論文）"
+    },
+    {
+      "id": "20261105-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "int8-vllm 支援 Nemotron 3.5 Bolt 74B：整個 serving stack 改寫成 int8 的 vLLM fork，直接吃 NVIDIA 原版 NVFP4 checkpoint",
+      "summary": "作者維護一個幾乎把 vLLM serving stack 全改成 int8 的 fork，主要是為了讓 MI100、MI50、MI210、Radeon 這些老 AMD 卡和 Volta/Ampere 這類 int8 取向的 NVIDIA 卡跑得好。作者說 4×MI100 或 2×MI210 跑 Qwen3.8 27B 在 8 併發下 decode 超過 1000 tok/s，大部分權重、activation 和 KV cache 都是 int8，品質接近 BF16，也順手修了 vLLM/ROCm 的數值 bug。這次加上 Nemotron 3.5 Bolt 74B：不用自製 checkpoint，而是加了 NVFP4 和 IQ2_xxs 到 int8 的 fused dequant，再用可調大小的 cache 把最常用的權重留成 int8。數字都是作者自報。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "int8",
+        "quantization",
+        "rocm",
+        "nemotron"
+      ],
+      "url": "https://github.com/curvedinf/int8-vllm",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://github.com/curvedinf/int8-vllm",
+      "price": null,
+      "vram": "Bolt 74B 的實測環境是 4×MI100（共 128GB）；單張 16GB 跑不動 74B，fork 本身也以多卡 AMD 為主",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261105-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "VeriSpoof：一個 audio LM 同時做 deepfake 偵測、找出是哪個 TTS / vocoder 生成、標出合成片段，而且每個判斷都附可驗證的理由",
+      "summary": "一般 speech deepfake detector 只回答「真的還假的」，VeriSpoof 用同一組權重處理五件事：偵測、generator attribution（哪個系統、acoustic model 和 vocoder）、錄音條件分析、合成片段定位、以及兩段錄音是不是同一個來源。每個結論都附上能對照波形量測、片段標註或 generator metadata 檢查的理由。在 14 個 Speech-DF-Arena 測試集上，VeriSpoof-Plus pooled EER 2.14%，28 個系統裡排第三、open-weight 第一。做 voice cloning 產品的人可以留意：未來平台很可能用這類模型反查「這是哪個 TTS 生的」。",
+      "tags": [
+        "tts_speech",
+        "audio deepfake detection",
+        "audio language model",
+        "vocoder attribution",
+        "voice cloning"
+      ],
+      "url": "https://arxiv.org/abs/2611.04634",
+      "source": "arXiv eess.AS",
+      "sourceUrl": "https://arxiv.org/abs/2611.04634",
+      "price": null,
+      "vram": "摘要沒寫參數量，無法判斷",
+      "license": "摘要未說明"
+    },
+    {
+      "id": "20261105-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Cross-Codec Robustness in Speech Watermarking：用 Mimi、SNAC 這類低 bitrate neural codec 做訓練擴增，浮水印最能撐過重新合成",
+      "summary": "合成語音加浮水印是主動揭露的做法，但只要拿 neural audio codec 重新合成一次，很多浮水印就會被洗掉。這篇研究在訓練時用不同 neural codec 當 channel augmentation，比較面對沒見過的 codec 和傳統 DSP 攻擊時的韌性，並提出用 Descript Audio Codec 當 generator 的 zero-bit 浮水印系統。結論是選哪個 codec 來擴增影響很大：用低 bitrate 又高音質的 Mimi 和 SNAC 擴增，面對沒見過的 codec 和傳統攻擊都比較穩，音質損失也有限。",
+      "tags": [
+        "tts_speech",
+        "speech watermarking",
+        "neural audio codec",
+        "mimi",
+        "snac",
+        "dac"
+      ],
+      "url": "https://arxiv.org/abs/2611.04716",
+      "source": "arXiv eess.AS",
+      "sourceUrl": "https://arxiv.org/abs/2611.04716",
+      "price": null,
+      "vram": "摘要沒寫，浮水印模型通常很小，但無法確認",
+      "license": "摘要未說明"
+    },
+    {
+      "id": "20261105-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Unsloth v0.1.915-beta：FP8 LoRA 訓練更省 VRAM，切換 GGUF 模型時保留對話 context",
+      "summary": "Unsloth Studio 這版除了早上提過的 Qwen3.8-Flash-Next Dynamic V3.1，還有幾個本地使用者會在意的更新：FP8 LoRA training 吃更少 GPU 記憶體；在不同 GGUF 模型間切來切去時會保留 chat context，不用重新讀一長串歷史；閒置記憶體更低、MLX 載入更快。內建瀏覽器現在能讓模型點擊、讀寫 HTML 和檔案，Decision API 也加入 LiquidAI 的 d1 和 Decider 2B（僅 MLX）。",
+      "tags": [
+        "llm_training",
+        "unsloth",
+        "fp8",
+        "lora",
+        "gguf"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.915-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.915-beta",
+      "price": null,
+      "vram": "LoRA 訓練小到中型模型可在 16GB 上跑，視模型大小",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261105-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "PipesHub 拿下 EnterpriseRAG-Bench 第一：自架的 agent loop 搜尋，總分 93.24、正確率 95%，贏過 OpenAI、Google 等列出的系統",
+      "summary": "EnterpriseRAG-Bench 是 500 題、跑在 50 萬份以上合成企業文件上的評測。PipesHub（創辦人自己發文，有利益關係）的做法不是一次撈完，而是 agent loop：混合 hybrid search、grep、knowledge graph 導覽和讀文件工具，讀完第一輪結果再決定下一步搜什麼，因為下一次要搜的識別碼常常只出現在第一個結果裡。專案開源、可自架，支援 open model，能透過 MCP、API、SDK 接自己的 agent，接 Slack、Drive、Jira、GitHub 等 50 多種來源。",
+      "tags": [
+        "rag_knowledge",
+        "agentic rag",
+        "knowledge graph",
+        "mcp",
+        "self-hosted"
+      ],
+      "url": "https://github.com/pipeshub-ai/pipeshub-ai",
+      "source": "r/LocalLLaMA / EnterpriseRAG-Bench Leaderboard",
+      "sourceUrl": "https://huggingface.co/spaces/onyx-dot-app/EnterpriseRAG-Bench-Leaderboard",
+      "price": null,
+      "vram": "平台本身不吃 GPU，VRAM 取決於你接的模型",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261105-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "AuroraIMG2-100M：單張 RTX PRO 6000、約 80 GPU 小時從頭訓出的 100M text-to-image 模型，Apache-2.0",
+      "summary": "上週 50M Preview 的正式版。denoiser 是 100.6M 參數的 flow-matching DiT，加一個 44.9M 的 text encoder，兩個都從頭訓練，在 FLUX.2 VAE latent space 運作，輸出固定 256×256。訓練用 FLUX-Reason-6M 資料，235K steps、約 120M 個樣本。GenEval 2 的 Soft-TIFA GM 從 Preview 的 6.00 拉到 10.80。可用 diffusers 載入（需 trust_remote_code）。畫質和大模型差很遠，價值在於「一張卡自己訓 text-to-image」的完整配方。",
+      "tags": [
+        "image_gen",
+        "diffusers",
+        "flow matching",
+        "tiny model",
+        "from scratch"
+      ],
+      "url": "https://huggingface.co/AuroraAI-Research/AuroraIMG2-100M",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://huggingface.co/AuroraAI-Research/AuroraIMG2-100M",
+      "price": null,
+      "vram": "約 1.7 億參數，16GB 綽綽有餘",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261105-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Sipeed MaixStation：Axera AX8860P、256 TOPS FP4、最高 128GB LPDDR5X 的口袋型 Linux AI 主機，官方跑分略勝 DGX Spark",
+      "summary": "AX8860P 是 16 核 Cortex-A55 加 NPU（dense FP4 256 TOPS），256-bit LPDDR5X-8533、頻寬 273GB/s、最多 128GB 統一記憶體，還有 10G SFP+ 和 PCIe 5.0。會出 32GB 和 128GB 兩種：前者約能放 27B dense，後者能放到約 125B 的 MoE。Sipeed 自報的初步數字：Qwen3.8-27B FP4 prefill 1,400 tok/s、decode 15 tok/s（DGX Spark 是 1,300 和 13）；Qwen3.6-35B-A3B decode 都是 80 tok/s。這些是廠商數字，還沒有第三方驗證，也還沒公布價格。",
+      "tags": [
+        "infra_runtime",
+        "edge inference",
+        "npu",
+        "unified memory",
+        "dgx spark"
+      ],
+      "url": "https://linuxgizmos.com/pocket-sized-linux-ai-box-runs-on-256-tops-axera-chip/",
+      "source": "LinuxGizmos",
+      "sourceUrl": "https://linuxgizmos.com/pocket-sized-linux-ai-box-runs-on-256-tops-axera-chip/",
+      "price": null,
+      "vram": "硬體本身：32GB 或 128GB 統一記憶體",
+      "license": "N/A（硬體）"
+    },
+    {
+      "id": "20261105-ai-021",
+      "radar": "ai-infra",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "RTX 5090 美國街價突破 $9,000，比 MSRP 高 370%，單月再漲 36%",
+      "summary": "根據 eTeknix 引用 TechSpot 的分析，RTX 5090 在美國的售價已經超過 9,000 美元，比建議售價高 370%，全球平均高 262%；去年底大約還在 3,000 美元，光上個月美國就再漲 36%。RTX 50 其他卡也都變貴，但各家報導的漲幅和原因說法不一。注意這些是零售商和轉賣價，不是 NVIDIA 調價。對手上有 5070 Ti 16GB 的人，短期內升級大 VRAM 卡的成本只會更高，量化和 MoE offload 這類技巧更值得投資。",
+      "tags": [
+        "infra_runtime",
+        "gpu pricing",
+        "rtx 5090",
+        "hardware market"
+      ],
+      "url": "https://aroundprague.cz/en/news/us/rtx-5090-street-prices-top-9-000-as-nvidia-gpu-costs-climb",
+      "source": "Around Prague（Hacker News 65 分）",
+      "sourceUrl": "https://aroundprague.cz/en/news/us/rtx-5090-street-prices-top-9-000-as-nvidia-gpu-costs-climb",
+      "price": null,
+      "vram": "N/A（市場新聞）",
+      "license": "N/A"
     }
   ],
-  "lastUpdated": "2026-11-05T18:27:22+08:00",
-  "updatedAt": "2026-11-05T18:27:22+08:00"
+  "lastUpdated": "2026-11-05T22:22:51+08:00",
+  "updatedAt": "2026-11-05T22:22:51+08:00"
 }
