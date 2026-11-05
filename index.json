@@ -107908,8 +107908,237 @@
       "price": null,
       "vram": "不適用（市場數據）",
       "license": "不適用"
+    },
+    {
+      "id": "20261105-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "OpenAI 用自主 pipeline 在 Linux kernel 找出、驗證並產生 patch 修掉 948 個 local privilege escalation 漏洞",
+      "summary": "OpenAI 官方 RSS 摘要：他們打造了一條從找漏洞、做 exploit 驗證到產生 patch 全自動的 pipeline，一次跑下來在 Linux kernel 驗證並修補了 948 個 local privilege escalation 漏洞。HN 留言引用原文：這次用的是他們的 cyber model，API 成本約 120 萬美元；原文也建議，短中期內「拿到一台沒更新 patch 系統的低權限帳號」應視同拿到 root。作者團隊成員在 HN 回應時說，第一次掃描只找到 166 個，現在也無法估計還剩多少沒被發現。也有留言質疑這更像行銷。官方頁擋 curl，內容以 RSS 與 HN 為準。",
+      "priority": "high",
+      "tags": [
+        "paradigm-shift",
+        "AI vulnerability discovery",
+        "autonomous patching",
+        "Linux kernel",
+        "privilege escalation"
+      ],
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "source": "OpenAI（官方頁擋 curl，附 HN 討論）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50372929",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Cloudflare 把 personal agent 流量拆成獨立類別：看得到是哪個 agent、代表哪個使用者，還能逐一設定放行或封鎖",
+      "summary": "Security Analytics 的 Bot Analysis 新增 Personal Assistants 類別，Top statistics 能看每個 agent 打了哪些 path、拿到哪些 status code。開了 Account Abuse Protection（early access）的站，還能看到每次登入或註冊是不是 agent 發的、代表哪個帳號，遇到可疑情況可以用 Hashed User ID 的 WAF rule 只擋那個帳號，不影響其他用同一 agent 的人。原本的 Agents policy 也細到每個支援的 personal agent，可選 Allow、Block on pages with ads 或 Block，設定區塊改名為 AI Crawler and Agent access policies。Cloudflare 說下一步是讓 user context 能穿過 agent 傳給網站。",
+      "priority": "medium",
+      "tags": [
+        "personal agents",
+        "agent identity",
+        "bot management",
+        "access policy"
+      ],
+      "url": null,
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-013",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Thoughtworks 的 Nimisha Asthagiri（QCon AI）：在 harness 之外給 agent 一塊有邊界的 canvas",
+      "summary": "這場演講主張用既有的產品工程與架構原則，替 AI agent 畫出有邊界的工作範圍：bounded autonomy、持續做 drift detection，以及留下 decision records，讓 agent 參與的軟體開發能穩定擴大規模。她以過去帶開源社群時遇過的 codebase 腐化、feature toggle 沒清、modular monolith 變成 big ball of mud 為例，說明 agent 時代需要同樣的 guardrail 與 context。",
+      "priority": "medium",
+      "tags": [
+        "agent architecture",
+        "bounded autonomy",
+        "architecture drift",
+        "decision records"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/presentations/canvas-ai-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-014",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Vercel Workflow SDK 的 `start()` 可以一步完成啟動和 claim hook，重複啟動會安全失敗",
+      "summary": "以前要先 `getHookByToken()` 再 `start()`，中間的空檔有官方文件記載過的 duplicate-start race。現在 `start()` 帶 `experimental_hook: { token }` 就能原子化地啟動 run 並占住 hook，重複的請求會丟 `HookConflictError`，可以改用 `resumeHook` 把 payload 送給已經在跑的那個 run。hook 從 run 被接受那一刻就存在，早到的 payload 會依序 buffer。token 直接用 order ID、invoice ID 這類業務 key 當 idempotency key。",
+      "priority": "low",
+      "tags": [
+        "durable-workflows",
+        "idempotency",
+        "Vercel Workflow SDK"
+      ],
+      "url": null,
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-015",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Vercel MCP 第一個 MCP App：在 ChatGPT 裡用互動卡片看 deployment 狀態和 build log",
+      "summary": "卡片會顯示即時 deployment 狀態、build log、source 與 commit 資訊，網址好了會出現 Visit 按鈕；可以把 log 丟進對話讓模型幫忙 debug，一個 repo 連多個 project 時可切換。卡片建在 MCP Apps extension 上，不支援 app 的 client 會改拿文字版的狀態、preview URL 和 commit。對應的 tool 是 `open_deployments`。",
+      "priority": "low",
+      "tags": [
+        "MCP Apps",
+        "MCP",
+        "Vercel",
+        "ChatGPT connectors"
+      ],
+      "url": null,
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-016",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Ask HN：你現在的 AI agentic setup 是什麼？（335 分、364 則留言）",
+      "summary": "發問者列了五個問題：付費訂閱哪些、有沒有用 OpenRouter 或本地模型、用哪種 coding harness（OpenCode、Pi、Aider 或自製）、有沒有用 agent orchestration 工具，以及有沒有用 OpenClaw、Hermes Agent、Grok bot 這類 agent 平台。留言等於一份 2026 年 11 月的開發者 AI 工具使用快照，例如有人完全不付訂閱，改在本地跑 Qwen3.8-Flash-Next，再用 RubyLLM 自建 agent、透過 email 溝通。",
+      "priority": "medium",
+      "tags": [
+        "agentic coding",
+        "coding harness",
+        "developer workflow",
+        "local LLM"
+      ],
+      "url": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50366117",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-017",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Tell HN：Gemini 個人帳號就算付費訂閱，聊天紀錄也會被拿去訓練（669 分）",
+      "summary": "發文者引用 Google 說明頁：只要 Keep Activity 開著，Gemini app activity 就會用來改善 Google 服務、包括訓練生成式 AI 模型；部分對話會給人工審查，被審查過的對話刪除活動後也不會刪，最多保留三年。要關掉訓練只能關 Keep Activity，代價是對話 72 小時後就消失。留言補充：其他前沿模型廠商也都會監看對話是否有問題行為。",
+      "priority": "medium",
+      "tags": [
+        "AI privacy",
+        "training data",
+        "Gemini",
+        "data retention"
+      ],
+      "url": null,
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50363461",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-018",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Zig 的 libc 重寫讓 SQLite 慢了 12,000 倍：經典的 Shlemiel the Painter 平方複雜度",
+      "summary": "作者的 Rust 服務用 `cargo-zigbuild`（`zig cc`）跨平台編譯 SQLite，結果在 Linux 上插入約 4 萬筆 JSON 要好幾分鐘、還吃滿一個 core，Mac 上則沒事。原因是 Zig 用純 Zig 的 libzigc 逐步取代 musl，新版 `strspn` 一開始就量整個字串長度，`strcspn`、`strpbrk`、`strstr` 也一樣；tokenizer 每跳一次空白就重算整串，處理 1.2MB 的檔案約慢 12,000 倍，檔案越大越慢。",
+      "priority": "medium",
+      "tags": [
+        "performance",
+        "Zig",
+        "SQLite",
+        "cross-compilation",
+        "libc"
+      ],
+      "url": null,
+      "source": "Dennis Forbes（Lobsters）",
+      "sourceUrl": "https://dennisforbes.ca/blog/microblog/2026/10/the_accidental_12000x_sqlite_slowdown/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-019",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Guillermo Rauch：大部分人寫的軟體又慢、漏洞又多、規格又不清楚，AI 會把它們全部重寫好幾次",
+      "summary": "Vercel CEO 在 X 上說，接下來幾週到幾個月大家會發現多數人寫的軟體很慢、有很多安全漏洞、規格不足也不正確，而 AI 會一再重寫它們，讓它們更快、更省、更安全。這是個人觀點，但約 3.8k 讚、827 收藏、301 則回覆，和今天 OpenAI 自動修 kernel 漏洞的消息放在一起看，很能代表現在的社群情緒。",
+      "priority": "low",
+      "tags": [
+        "AI rewrite",
+        "software quality",
+        "developer sentiment"
+      ],
+      "url": null,
+      "source": "X（@rauchg）",
+      "sourceUrl": "https://x.com/rauchg/status/2118166970273292299",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-020",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Nicholas Nethercote 的 Rust 編譯器加速月報：重做 span 壓縮，incremental build 只需 intern 約 1% 的 span",
+      "summary": "Rust compiler 每個 AST、HIR、MIR 節點都帶 span（16 bytes，通常壓成 8 bytes inline）。他在 #163857 換了更簡單有效的壓縮方式，incremental build 需要 intern 的 span 從 20–40% 降到約 1%，instruction count 最多降 3% 以上；Josh Triplett 接著在 #163971 再優化約 2%。他也記下沒成功的嘗試，例如讓 `Option<Span>` 和 `Span` 一樣大，結果沒幫上效能就放棄了。",
+      "priority": "low",
+      "tags": [
+        "Rust compiler",
+        "compile time",
+        "performance"
+      ],
+      "url": null,
+      "source": "Nicholas Nethercote's Blog",
+      "sourceUrl": "https://nnethercote.github.io/2026/11/04/how-to-speed-up-the-rust-compiler-in-november-2026.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-021",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "evening",
+      "title": "Simon Willison 收錄 Ben Hylak 的一句話：每個產品都該是 headless MCP，除了我們家的",
+      "summary": "Ben Hylak 的原話是：「我用的每個產品都應該只是一個 headless MCP，餵給 agent，我完全不用管底下是什麼。除了我們的產品，客戶很愛我們的 UI。」用自嘲點出 agent 時代每家公司的矛盾：希望別人的產品都變成 MCP，自己的產品卻捨不得放掉 UI。",
+      "priority": "low",
+      "tags": [
+        "MCP",
+        "headless products",
+        "agent UX"
+      ],
+      "url": null,
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-05T10:20:03+08:00",
-  "updatedAt": "2026-11-05T10:20:03+08:00"
+  "lastUpdated": "2026-11-05T18:27:22+08:00",
+  "updatedAt": "2026-11-05T18:27:22+08:00"
 }
