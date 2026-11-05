@@ -107085,8 +107085,217 @@
       "price": null,
       "vram": "不適用（硬體／驅動議題；機器是 128GB unified memory）",
       "license": "不適用"
+    },
+    {
+      "id": "20261105-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 宣布收購 Pierre：Codex 裡看檔案、看 diff 的 Trees / Diffs 就是他們做的",
+      "summary": "Pierre 是 Code Storage（用 Git 存程式碼與歷史的服務）以及 Trees、Diffs、Highlights 等開源工具的公司。OpenAI 說要和 Pierre 一起把 Git 工作流改造成適合 coding agent 平行開發的樣子，算是接續本週公開的 Pando。開源專案會維持開源，Code Storage 也可以繼續用，交易還在等監管核准。",
+      "tags": [
+        "paradigm-shift",
+        "coding-agent",
+        "Codex",
+        "source control",
+        "git-for-agents"
+      ],
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
+      "source": "OpenAI（官方頁擋 curl，附 HN 討論）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50366863",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude 自己當 identity issuer：Team / Enterprise 的 MCP plugin 自動連線，不用再一個個登入",
+      "summary": "這是建立在 6 月推出的 MCP Enterprise-Managed Authorization（EMA）擴充上。以前要 IdP 支援才行，但實際上幾乎只有 Okta 支援；現在 Claude 可以直接簽發 identity assertion，服務驗證後就發 access token，過期也會自動重連。首批 14 個服務包括 Atlassian、Datadog、Figma、Linear、Notion、Supabase，目前是 beta。Supabase 提醒：只從 IdP 移除離職員工，並不會撤銷 Claude 簽發的存取權。",
+      "tags": [
+        "paradigm-shift",
+        "mcp",
+        "enterprise-managed-authorization",
+        "identity"
+      ],
+      "url": null,
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/claude-plugin-identity-issuer/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pragmatic Engineer 徵文首獎：轉到 AI-native 新創後，每月 PR 多了 11 倍，而且幾乎沒有人工 code review",
+      "summary": "Neil Kakkar 拿自己的資料比較：在 PostHog 時每月 8–20 個 PR，到 Tano 之後變成 200 個以上。code review 交給 Claude Code GitHub Actions 的 review agent，出錯就 fix-forward（曾經因為 agent 以為所有幣別都是 100 個 minor units、遷移時又漏了 guardrail，結果重複付款給創作者）。代價是 thrashing、團隊共享的 context 流失，人也更累。他的做法是把筆電留在公司，讓 agent 過夜跑。",
+      "tags": [
+        "paradigm-shift",
+        "ai-assisted development",
+        "code review",
+        "fix-forward"
+      ],
+      "url": null,
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/how-software-engineering-is-changing",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Inkitt 的 One-Shot PR Creator：用 event-driven orchestrator 管理短命的 agent container，「model 是最簡單的部分」",
+      "summary": "可以從 Slack、Linear 或 API 觸發，流程分成 spec、實作、驗證、修 CI、解 merge conflict 幾個階段。每次 run 的狀態都寫進 DB，中斷後能接著跑；transition function 不碰 DB、網路或 LLM，agent container 只拿到短期的 repo token。刻意不接 migration、auth、付款、套件更新這類變更，驗證和修 CI 各最多重試兩次，而且只開 draft PR，不能自己 merge。",
+      "tags": [
+        "agent orchestration",
+        "idempotency",
+        "coding-agent",
+        "ci/cd"
+      ],
+      "url": null,
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/inkitt-one-shot-pr-creator-agent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "同一天兩家 coding agent 工具被收購：Conductor 加入 Meta、HumanLayer 加入 Factory",
+      "summary": "Conductor 是 2025 年 7 月推出、可以平行跑多個 coding agent 的 Mac app。11/4 起停止新註冊，Conductor Cloud 11/13 變唯讀、11/20 開始刪資料，本機版會維護到 2027 年初。HumanLayer 則併入 Factory，核心程式以 Apache 2.0 開源，託管服務至少保留 30 天過渡期。有在用的話記得先匯出資料。",
+      "tags": [
+        "coding-agent",
+        "multi-agent",
+        "consolidation"
+      ],
+      "url": "https://factory.com/news/humanlayer",
+      "source": "Conductor / Factory",
+      "sourceUrl": "https://www.conductor.build/announcement",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Render 拿掉 AI sandbox 的時間上限，同時推出 Durable Workflows 和共享檔案系統",
+      "summary": "sandbox 閒置時會 suspend，下一個指令進來就喚醒，檔案、記憶體和 process 都還在，agent 可以從中斷的地方繼續（Vercel 單次 session 上限是 24 小時）。Durable Workflows 會把每一步的結果存起來，crash 後在新機器上接著跑，單一 task 最長 24 小時。credential brokering 先開給少數客戶，多個 sandbox 同時寫同一個檔案的衝突問題還沒解決。",
+      "tags": [
+        "sandbox",
+        "durable-workflows",
+        "credential-brokering",
+        "serverless"
+      ],
+      "url": null,
+      "source": "The New Stack",
+      "sourceUrl": "https://thenewstack.io/render-vercel-ai-sandboxes/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Go 1.27 正式推出 encoding/json/v2 和 jsontext，前後花了 6 年",
+      "summary": "v2 預設會拒絕無效的 UTF-8 和重複的 key，nil slice / map 會輸出成 [] / {}，欄位比對改成區分大小寫。Unmarshal 最多快 10 倍，Marshal 大致持平。v1 改成用 v2 加上相容 options 來實作，所以兩版可以混用、慢慢遷移；新的 MarshalJSONTo / UnmarshalJSONFrom 支援真正的串流處理。HN 211 分。",
+      "tags": [
+        "golang",
+        "json",
+        "api design"
+      ],
+      "url": null,
+      "source": "The Go Blog",
+      "sourceUrl": "https://go.dev/blog/jsonv2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ripple-65B Preview：花 3,200 萬美元從零訓練的 dense 模型，TerminalBench 2.1 拿下美國 open-weight 第一（80.52）",
+      "summary": "做 AI 晶片設計的 Ricursive Intelligence 刻意不用 MoE，採用 thin-and-deep 的 80 層架構，支援 1M context，預訓練用了 12T tokens。RL 只跑了 1.4M 次 rollout，大約是 Reflection Beam 的 1/70。已經上架 Hugging Face、Together、OpenRouter；官方說能在 DGX Spark 上跑，但 65B dense 對 16GB 顯卡還是太大。HN 204 分。",
+      "tags": [
+        "agentic coding",
+        "open-weight",
+        "dense transformer",
+        "rl"
+      ],
+      "url": null,
+      "source": "Ricursive Intelligence",
+      "sourceUrl": "https://www.ricursive.com/ripple",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Kimi K3.1 Pro 開放權重：2.8T 參數的 MoE（啟用 104B），1M context",
+      "summary": "Moonshot 用 Claude Code harness 測出 Terminal-Bench 4.0 65.7、DeepSWE v1.1 75.5（官方表裡 Opus 5.5 分別是 66.4、74.2）。這版把 Kimi K3 的 full-attention 層換成 Gated DeepSeek Sparse Attention，權重用 MXFP4 做 quantization-aware training。多輪 tool call 時必須把 reasoning_content 原樣傳回去。16GB 本機跑不動，要用 API 或 vLLM / SGLang。HN 343 分。",
+      "tags": [
+        "moe",
+        "open-weight",
+        "quantization",
+        "agentic coding"
+      ],
+      "url": null,
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261105-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-05",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "IEEE Spectrum：PHP2Shell 是一個警訊，「AI 正逼我們償還 40 年的技術債」",
+      "summary": "PHP2Shell 的根源是一個 2024 年就有人回報、但被當成單純 crash 擱著的 out-of-memory bug。Calif 的研究員（OpenAI 贊助的 PHP 稽核）靠 AI 輔助，兩週內就做出 RCE，PHP Foundation 則由四名工程師花了兩個月修補。Columbia 的 Suman Jana 指出，找 bug 和修 bug 之間有根本上的不對稱，寄望用 LLM 產 patch 再加上形式化證明；Matthew Green 則認為要等到 2027 年出大事，才會有人願意出錢。HN 1,028 分、618 則留言。",
+      "tags": [
+        "security",
+        "formal verification",
+        "legacy software",
+        "technical debt"
+      ],
+      "url": null,
+      "source": "IEEE Spectrum",
+      "sourceUrl": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-04T22:22:26+08:00",
-  "updatedAt": "2026-11-04T22:22:26+08:00"
+  "lastUpdated": "2026-11-05T08:30:38+08:00",
+  "updatedAt": "2026-11-05T08:30:38+08:00"
 }
