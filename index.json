@@ -108619,8 +108619,207 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261106-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp v0.9.0：Chatterbox TTS、Pocket TTS 預設音色與 OCP FP8 E4M3",
+      "summary": "11/4 正式版一次把語音和量化補齊：mtmd 加入 Chatterbox TTS 與 Pocket TTS 預設音色 API（server 的 TTS endpoint 可直接點名 voice），並把 Nemotron 3.5 Transcribe 的離線轉錄／講者標註路徑收進發行說明。量化端新增 OCP FP8 E4M3 tensor type；架構支援 Clover、Limite、Metis-1.6、Mistral Large 4；另有 flash_attn_ext_rows 讓 unified KV 在多 sequence 更有效率。對 5070 Ti 來說，runtime 本身 local-ready，大模型仍依 GGUF 位寬決定。",
+      "tags": [
+        "llm_inference",
+        "tts_speech",
+        "quantization",
+        "gguf",
+        "chatterbox",
+        "pocket tts",
+        "fp8"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.9.0",
+      "price": null,
+      "vram": "runtime local-ready；模型依 GGUF 位寬",
+      "license": "MIT"
+    },
+    {
+      "id": "20261106-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp b12116：Drama-3 TTS 原生支援（搭配 Drama-3 GGUF）",
+      "summary": "Fish Audio 的 Drama-3（35B MoE、每 token 約 3B active、最多 16 個 <|speaker:N|>）在 b12116 併入 llama-tts：用 GGUF + mmproj 就能離線合成，目前走 speaker tag、不支援 voice cloning。社群 Jmica/Drama-3-GGUF 11/5 仍在更新，下載量已破 44 萬。完整 BF16 偏雲端；量化後 expert 串流才有機會塞進 16GB，先當 quantize-ok。授權是 Fish Audio Research License，商用前要讀條款。",
+      "tags": [
+        "tts_speech",
+        "llm_inference",
+        "drama-3",
+        "gguf",
+        "multi-speaker"
+      ],
+      "url": "https://huggingface.co/Jmica/Drama-3-GGUF",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b12116",
+      "price": null,
+      "vram": "35B-A3B；量化／offload 後估 quantize-ok",
+      "license": "Fish Audio Research License"
+    },
+    {
+      "id": "20261106-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ollama v0.40.15：MiMo V2.6（9B）與 AutoTrust decision models",
+      "summary": "11/3 釋出：一鍵 `ollama run mimo-v2.6` 跑小米面向 code／agent 的 9B；並加入 AutoTrust 決策模型家族（9b／35b／27b-vl），用 `--ask` 回 yes/no 機率與評分，35b 與 27b-vl 還能看圖（此版 Apple silicon 先支援 autotrust-jev）。同期修正 recurrent／vision GGUF 可併發、Qwen3／3.5 YaRN 長上下文，以及 Kimi Code CLI／Pi／Claude Desktop 的 launch 整合。9B 在 16GB 上 local-ready。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "mimo",
+        "autotrust",
+        "gguf"
+      ],
+      "url": "https://ollama.com/library/mimo-v2.6",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+      "price": null,
+      "vram": "MiMo 9B local-ready；AutoTrust 35b 視量化",
+      "license": "MIT"
+    },
+    {
+      "id": "20261106-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "YuE2 Studio v3.8.5：12–16GB Blackwell 生成完整歌曲不再 OOM",
+      "summary": "今天凌晨的修訂專挑 5070／5070 Ti 族群：3.8.4 在 Blackwell 自動關掉 flash attention 後，12GB 卡唱完整首歌會爆 VRAM；3.8.5 把原本保護 8GB 的 KV cache 上限擴到「強制關 FA、約 16GB 以下」也生效，Settings 裡手動 cache 仍優先。另外修了 Turing 卡 LoRA 訓練的 F32 fallback，以及長歌 chunk 接縫的 overlap crossfade；連不上 huggingface.co 時會自動改走 hf-mirror.com。原生 Windows、免 Python，MIT。",
+      "tags": [
+        "audio_music_ai",
+        "yue2",
+        "music generation",
+        "blackwell",
+        "local studio"
+      ],
+      "url": "https://github.com/timoncool/YuE2-Studio",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/timoncool/YuE2-Studio/releases/tag/v3.8.5",
+      "price": null,
+      "vram": "明確修到 12–16GB Blackwell",
+      "license": "MIT"
+    },
+    {
+      "id": "20261106-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Phonon TTS 登上 Open TTS Leaderboard：Transformers 整合與 ptts 多後端",
+      "summary": "Gradium 11/5 在 HF Blog 回顧開源兩週：Phonon 31m（Apache-2.0）／40m（CC BY-NC）約 65–75MB，英／法／德／西／葡，內建 100+ 音色並可 voice clone／design。新 Open TTS Leaderboard 上，可懂度德文與西班牙文第一、各語言前三，CPU streaming 的 time-to-first-audio 也居冠。Transformers ≥5.21 原生支援；ptts 推理框涵蓋 CUDA／Vulkan／Metal／WebGPU／Core ML 等十多個後端。兩週下載逾 20 萬，5070 Ti 完全 local-ready。",
+      "tags": [
+        "tts_speech",
+        "phonon",
+        "open tts leaderboard",
+        "transformers",
+        "on-device"
+      ],
+      "url": "https://huggingface.co/spaces/hf-audio/open_tts_leaderboard",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/phonon-tts",
+      "price": null,
+      "vram": "~65–75MB 權重，local-ready",
+      "license": "Apache-2.0 (31m) / CC BY-NC (40m)"
+    },
+    {
+      "id": "20261106-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "yovoice v0.5.0：一次收進 Drama 3、Phonon、Ming 3.0 TTS 與 Stable Audio 3",
+      "summary": "10/28 的本地音訊／音樂工作室大更新：語音側新接 Ming 3.0 TTS、Voxtral TTS、Plapre 3、XTTS v2、Gradium Phonon、Fish Audio Drama 3（含 speaker／event tag），引擎升到 audio.cpp v0.9.3；音樂側加入 Stable Audio 3（Small／Medium，Q8／F16）做最多約 6 分鐘器樂、局部重繪與 1–30 秒音效。桌面 App、100% 離線、Apache-2.0。Drama 3 與 Medium 音樂檔仍偏 quantize-ok，Phonon／小型 TTS 則 local-ready。",
+      "tags": [
+        "audio_music_ai",
+        "tts_speech",
+        "drama-3",
+        "phonon",
+        "stable audio",
+        "local studio"
+      ],
+      "url": "https://github.com/leemysw/yovoice",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/leemysw/yovoice/releases/tag/v0.5.0",
+      "price": null,
+      "vram": "小 TTS local-ready；Drama 3／SA3 Medium quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261106-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HoppouAI/Breeze-TTS-2.cpp：免 Python 的英中 TTS GGUF runtime",
+      "summary": "把 BreezeBlue 3B 的 voice clone／voice design／voice direction 搬進純 C++：Vulkan 跑 NVIDIA／AMD／Intel，也有 CPU fallback，附 streaming HTTP／WebSocket 與 Web UI。RTX 3060 上 Q8_0 約 1.2× realtime、24kHz 雙語；官方 PyTorch 路徑 eager 約 7.7GiB、建議至少 12GB。Runtime Apache-2.0，權重是 BreezeBlue research／non-commercial。HF 下載已近百萬，適合作為 5070 Ti 上的本機雙語 TTS 選項。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "gguf",
+        "vulkan",
+        "breeze-tts"
+      ],
+      "url": "https://huggingface.co/HoppouAI/Breeze-TTS-2.cpp",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/HoppouAI/Breeze-TTS-2.cpp",
+      "price": null,
+      "vram": "~7.7GiB eager；12GB+ 建議，local-ready",
+      "license": "Apache-2.0 (runtime) / BreezeBlue non-commercial (weights)"
+    },
+    {
+      "id": "20261106-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "blixt/phonon：WebGPU 上跑 Phonon 31M，附 live word timings",
+      "summary": "Show HN（11/4）小專案：把 Gradium Phonon 31M 丟進瀏覽器 WebGPU，約 44MB、作者宣稱可到 115× realtime，並輸出 live word timings。適合做網頁朗讀、字幕對齊原型，免安裝。Apache-2.0；星數還少，但是 Phonon 生態最短路徑之一。",
+      "tags": [
+        "tts_speech",
+        "phonon",
+        "webgpu",
+        "on-device"
+      ],
+      "url": "https://github.com/blixt/phonon",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/blixt/phonon",
+      "price": null,
+      "vram": "瀏覽器 WebGPU，local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261106-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ruby-OPD：用 on-policy distillation 強化 flow-matching 日文 TTS 發音可控性",
+      "summary": "arXiv 2611.06403（11/4）：針對日文 Kanji／Kana 多音字，在 flow-matching TTS 上做 on-policy distillation，同時拉高發音正確率與細粒度可控性。論文取向偏研究，但對要做日文配音／歌謠前端的人是值得追的訓練技巧訊號。",
+      "tags": [
+        "tts_speech",
+        "japanese tts",
+        "on-policy distillation",
+        "flow matching"
+      ],
+      "url": "https://arxiv.org/abs/2611.06403",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.06403",
+      "price": null,
+      "vram": "研究論文，無單一推理檔",
+      "license": "arXiv preprint"
     }
   ],
-  "lastUpdated": "2026-11-05T22:22:51+08:00",
-  "updatedAt": "2026-11-05T22:22:51+08:00"
+  "lastUpdated": "2026-11-06T10:30:00+08:00",
+  "updatedAt": "2026-11-06T10:30:00+08:00"
 }
