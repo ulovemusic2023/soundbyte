@@ -109000,8 +109000,187 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261106-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "audio.cpp v0.9.4：瀏覽器 WebGPU、Magenta RealTime 2 串流與 Music Flamingo",
+      "summary": "11/4–11/5 正式版把本地音訊 runtime 再往前推一大步：新增原生 WebGPU／WASM 後端（官方測 RTX 5090 Chrome 上 Supertonic 3 約 23× realtime、Kokoro 約 14×），WebUI 多了跨語言 dubbing recipe、voice library 匯入匯出，以及 LFM3-Audio＋SoulX-FlashHead 的串流頭像語音聊天。模型端一次收進 Magenta RealTime 2 Small／Base（48kHz 立體聲、可串流到 160ms block）、Music Flamingo、PocketTTS Small、Haas、Underdog Bark 3、Irodori-TTS v4 Large 等；Nemotron 3.5 Transcribe 還能 CPU expert offload，常駐 VRAM 壓到 7GB 以下。Apache-2.0；5070 Ti 上小 TTS／Magenta Small local-ready，Base／大型 ASR 偏 quantize-ok。",
+      "tags": [
+        "audio_music_ai",
+        "tts_speech",
+        "music generation",
+        "webgpu",
+        "magenta realtime 2",
+        "music flamingo",
+        "soulx"
+      ],
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/0xShug0/audio.cpp/releases/tag/v0.9.4",
+      "price": null,
+      "vram": "小 TTS／Magenta Small local-ready；Base／大 ASR quantize-ok",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261106-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "OmniSinger：OmniVoice 微調的音符可控唱歌 TTS（英／越，Apache-2.0）",
+      "summary": "mindvu/OmniSinger（11/5 上架 HF）是 k2-fsa/OmniVoice 的唱歌微調版：給短參考音色＋歌詞，每個字標 `{MIDI音高:時值百分秒}`，休止用 `<silence>{0:D}`，melisma 用逗號串多個 pitch:duration。權重約 2.45GB safetensors、Apache-2.0、支援 en／vi；`pip install omnivoice` 後 `OmniVoice.from_pretrained(\"mindvu/OmniSinger\")` 即可，CUDA／MPS／Intel XPU。沒有 reference transcript 時會自動走 Whisper ASR。對翻唱／歌謠原型來說，這是「可打譜的開源唱歌 TTS」而非再一個只會念詞的 checkpoint。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "audio_music_ai",
+        "omnisinger",
+        "omnivoice",
+        "singing-voice-synthesis"
+      ],
+      "url": "https://github.com/k2-fsa/OmniVoice",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/mindvu/OmniSinger",
+      "price": null,
+      "vram": "~2.45GB 權重，local-ready",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261106-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp b12170：MoE cache 改 LRFU／MQ 混合 ClassLRU",
+      "summary": "今晚（11/6 21:50 台北）釋出的 b12170 專攻 MoE expert cache：用 LRFU／MQ 啟發的 hybrid cache 與 ClassLRU（half-life 分 8 class），依真實 token 數推進時鐘、對 unused slot 與排序重寫計分。同日稍早的 b12144 也把 CUDA MoE MMQ／MMF 資料布局線性化。對 5070 Ti 上跑 Drama-3、Qwen MoE 這類「expert 塞不進 VRAM」的路徑，cache 命中率直接影響能不能穩定 quantize-ok。runtime 仍 MIT、local-ready。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "moe",
+        "gguf",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b12170",
+      "price": null,
+      "vram": "runtime local-ready；MoE 模型視 cache／量化",
+      "license": "MIT"
+    },
+    {
+      "id": "20261106-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "vc-rs v0.5.5：Rust 即時 RVC，內建 Applio MRF／RefineGAN 轉 ONNX",
+      "summary": "11/5 的 Windows 即時變聲器更新：GUI／CLI／VST3 可把 Applio MRF HiFi-GAN 與 RefineGAN 的 PTH 轉成 ONNX 並串流推理；embedder 改為驗證過的 profile 下載（hash pin、保留授權文件），standalone 轉換中途可切音訊裝置與輸入降噪。後端走原生 TensorRT（ContentVec／RMVPE／RVC generator），也有 DirectML／實驗性 MIGraphX／OpenVINO。免 Python；MIT。對 5070 Ti 的翻唱／直播變聲鏈是比 PyTorch RVC 更輕的本機選項。",
+      "tags": [
+        "svc_voice",
+        "voice conversion",
+        "rvc",
+        "tensorrt",
+        "vst3"
+      ],
+      "url": "https://github.com/shirohata/vc-rs",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/shirohata/vc-rs/releases/tag/v0.5.5",
+      "price": null,
+      "vram": "ONNX／TensorRT 路徑，local-ready（視 RVC 模型）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261106-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ggml-org/chatterbox-GGUF：官方 GGUF，接上 llama-tts／server /tts",
+      "summary": "11/5 傍晚官方轉換上架：ResembleAI Chatterbox Multilingual V3（23 語）與 Turbo 的 GGUF；8-bit 約 559MB。指令是 `llama-tts -hf ggml-org/chatterbox-GGUF -p \"...\" --tts-lang en`，或 `llama serve` 打 `/tts`；`--tts-speaker-file` 可吃 wav／mp3 做 voice clone。需含 PR #31698 的 llama.cpp（早上已報的 v0.9.0／後續 b-build）。MIT；完全塞進 5070 Ti。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "gguf",
+        "chatterbox",
+        "llama.cpp"
+      ],
+      "url": "https://huggingface.co/ggml-org/chatterbox-turbo-GGUF",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/ggml-org/chatterbox-GGUF",
+      "price": null,
+      "vram": "~0.5B／Q8 ~559MB，local-ready",
+      "license": "MIT"
+    },
+    {
+      "id": "20261106-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Open ASR Leaderboard 加入埃及／奈及利亞英語私有對話集（Liva AI）",
+      "summary": "HF Blog 11/6：與 Liva AI 合作，在 Open ASR Leaderboard 的 Private tab 新增 Egyptian（1.34h）與 Nigerian（1.55h）自發對話英語，標點／大小寫／disfluency 都保留，用於降低 benchmaxxing。榜上口音拆分改依 Kachru Three Circles：US vs non-US，以及 Inner Circle vs Outer／Expanding（含 India／Nigeria／Egypt）。對要驗多口音 ASR／字幕管線的本機部署是新的對照基準，不是新權重。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "whisper",
+        "open asr leaderboard",
+        "evaluation"
+      ],
+      "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "price": null,
+      "vram": "評測榜；無單一推理檔",
+      "license": "Leaderboard / dataset terms"
+    },
+    {
+      "id": "20261106-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "FUSEMOS：用 CLAP＋MERT 雙編碼器做 text-to-music 感知評測",
+      "summary": "arXiv 2611.07562（11/5）：既有自動 MOS 多半只靠 CLAP 對 overall impression／textual alignment 打分，難抓音色與表現力。FUSEMOS 把 CLAP 與在大規模音樂音訊上預訓練的 MERT 做 dual-encoder fusion，並用 ranking-aware composite loss 對齊人工 MOS。對 YuE2／Magenta／Stable Audio 這類本機音樂生成管線，是比單一 CLAP score 更貼聽感的自動評測訊號。",
+      "tags": [
+        "audio_music_ai",
+        "music generation",
+        "evaluation",
+        "clap",
+        "mert"
+      ],
+      "url": "https://arxiv.org/abs/2611.07562",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.07562",
+      "price": null,
+      "vram": "研究論文／評測框架",
+      "license": "arXiv preprint"
+    },
+    {
+      "id": "20261106-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-06",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "YuE2 Studio HOT-Step tools：music-train／MIDI／ace-caption 重建包（CUDA 13）",
+      "summary": "11/5 隨 YuE2 Studio 釋出的工具包（tag hotstep-tools-5ae17a66）：從 HOT-Step origin/master 重建 trainer（music-train）、audio-to-MIDI（music-midi）與 captioner（ace-caption），含 joint-training recipe #316 的 held-out planner gate、SA3 cover、HeartCodec Metal。ggml 採 CPU_ALL_VARIANTS＋BACKEND_DL，CUDA 13 涵蓋 sm 75–120a（含 Blackwell），無 NCCL／Vulkan；Windows x64 zip 由訓練包與 Audio to MIDI 下載。給要在 5070 Ti 上微調／標註 YuE2 素材的人。",
+      "tags": [
+        "audio_music_ai",
+        "yue2",
+        "hot-step",
+        "music generation",
+        "lora training"
+      ],
+      "url": "https://github.com/timoncool/YuE2-Studio",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/timoncool/YuE2-Studio/releases/tag/hotstep-tools-5ae17a66",
+      "price": null,
+      "vram": "訓練／標註工具；視批次與模型",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-11-06T10:30:00+08:00",
-  "updatedAt": "2026-11-06T10:30:00+08:00"
+  "lastUpdated": "2026-11-06T22:24:03.364405+08:00",
+  "updatedAt": "2026-11-06T22:24:03.364405+08:00"
 }
