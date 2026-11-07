@@ -109793,8 +109793,229 @@
       "vram": null,
       "license": null,
       "quote": "Not money, not time - but attention."
+    },
+    {
+      "id": "20261107-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "haydenschmitty/floorplan",
+      "summary": "零依賴 Claude Code／Codex plugin：讓 agent 讀 codebase，畫出可互動的「平面圖」——每個模組、檔案、web request 都有白話名稱與連線。適合 vibe coding 後快速理解自己做出來的 app 怎麼串起來。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "codebase-visualization",
+        "developer-tools"
+      ],
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-24+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars",
+      "stars": 3081,
+      "createdDate": "2026-10-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "JuneYaooo/rea-video",
+      "summary": "給 Claude Code／Codex 的影片逆向 skill：逐鏡拆實拍、AI 生成、3D、kinetic type、螢幕錄影與混剪，連字幕樣式、轉場與音訊做法都寫出，並給可複刻方案（含 Remotion 重建）。對做短影音／產品 promo 的創作者超實用。",
+      "tags": [
+        "video-analysis",
+        "remotion",
+        "claude-code",
+        "ffmpeg",
+        "creator-tool"
+      ],
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-24+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars",
+      "stars": 3041,
+      "createdDate": "2026-10-29",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261107-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "elvarofficial/teardown",
+      "summary": "Claude Code skill：問「這機器怎麼運作」，它就生出一頁離線 HTML 3D 模擬器，可拆開看零件、讀即時數值，閒置時還會自動導覽。適合解釋複雜系統或做教學 demo。",
+      "tags": [
+        "claude-code",
+        "agent-skills",
+        "3d",
+        "education"
+      ],
+      "url": "https://github.com/elvarofficial/teardown",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-24+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 2430,
+      "createdDate": "2026-10-30",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "mromidev/claude-animated-shorts",
+      "summary": "免費 Claude skill：用 three.js + Remotion 在本機做出 55–70 秒直式動畫故事短片（2D 角色＋3D 世界、鏡頭、配樂與 SFX），不靠 AI video generator。附完整 bridge 範例、style bible 與 QA 腳本。",
+      "tags": [
+        "remotion",
+        "three.js",
+        "claude-code",
+        "agent-skills",
+        "animation"
+      ],
+      "url": "https://github.com/mromidev/claude-animated-shorts",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-24+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 2034,
+      "createdDate": "2026-11-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "D3voz/openjutsu",
+      "summary": "開源、可本機跑的 Higgsfield Genjutsu 替代：丟影片＋角色照，用 MiniMax H3 + SAM + VLM 做角色／物件替換，鏡頭、剪接與配樂保留。Next.js UI 包 ComfyUI workflow，適合有 GPU 的創作者。",
+      "tags": [
+        "video-generation",
+        "comfyui",
+        "character-swap",
+        "local-ai"
+      ],
+      "url": "https://github.com/D3voz/openjutsu",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-24+stars%3A%3E50&type=repositories&s=stars",
+      "stars": 1858,
+      "createdDate": "2026-10-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "XiaoyeCodes/code-animation-prompts",
+      "summary": "341 種代碼動畫風格提示詞＋196 張參考靜幀，封成 Claude Code／Codex Skill，可一鍵匯入並用 HTML 渲染成片。粒子、霓虹、水墨到電影感都有，做 tech promo／教學動畫很省時間。",
+      "tags": [
+        "agent-skills",
+        "animation",
+        "claude-code",
+        "codex",
+        "video-generation"
+      ],
+      "url": "https://github.com/XiaoyeCodes/code-animation-prompts",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-24+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars",
+      "stars": 708,
+      "createdDate": "2026-10-29"
+    },
+    {
+      "id": "20261107-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "zeekk0/OpenAmika",
+      "summary": "開源 Live2D 語音伴聊：即時 voice／text、長期記憶，可用 OpenRouter 或本機 Ollama。對想玩 local TTS／ASR pipeline 與虛擬角色互動的人是現成參考實作。",
+      "tags": [
+        "text-to-speech",
+        "speech-recognition",
+        "live2d",
+        "ollama",
+        "ai-companion"
+      ],
+      "url": "https://github.com/zeekk0/OpenAmika",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-24+stars%3A%3E20+topic%3Atext-to-speech&type=repositories&s=stars",
+      "stars": 440,
+      "createdDate": "2026-11-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "JosssphZhou/poki",
+      "summary": "本機 MCP server＋agent：讓 AI 像真人一樣操作你的 iPhone（免越獄、免額外硬體）。對測 iOS app、做真實裝置 computer-use 工作流很有吸引力；AGPL，商用前先看授權。",
+      "tags": [
+        "mcp",
+        "iphone",
+        "computer-use",
+        "coding-agent"
+      ],
+      "url": "https://github.com/JosssphZhou/poki",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-10-24+stars%3A%3E20+topic%3Amcp&type=repositories&s=stars",
+      "stars": 420,
+      "createdDate": "2026-11-05",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261107-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "beacon.sh",
+      "summary": "跨 Claude Code／Cursor／Codex／OpenCode 等 20+ harness 的開源 self-improving memory：把每次 agent session 變成可累積的知識層與操作可見度。本週 Product Hunt 週榜約 473 upvotes；repo：Asymptote-Labs/agent-beacon。",
+      "tags": [
+        "ai-memory",
+        "claude-code",
+        "codex",
+        "cursor",
+        "observability"
+      ],
+      "url": "https://beacon.sh",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/45",
+      "stars": 3356,
+      "createdDate": "2026-05-12",
+      "license": "MIT",
+      "extra": {
+        "upvotes": 473,
+        "github": "https://github.com/Asymptote-Labs/agent-beacon",
+        "phStatus": "Product Hunt 頁面 curl 回 403，改用 beacon.sh + GitHub 驗證"
+      }
+    },
+    {
+      "id": "20261107-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Glasshand",
+      "summary": "把真機 iPhone／Mac 租給你的 agent 用：接 Claude Code、Codex 等，用一句 prompt 租裝置，測 iOS app、操作 App、跑真實 computer-use。本週日榜約 377 upvotes；用完會擦除重設。",
+      "tags": [
+        "computer-use",
+        "iphone",
+        "macos",
+        "coding-agent",
+        "cloud-device"
+      ],
+      "url": "https://glasshand.com",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/5",
+      "extra": {
+        "upvotes": 377,
+        "phStatus": "Product Hunt 頁面 curl 回 403，改用 glasshand.com 驗證"
+      }
     }
   ],
-  "lastUpdated": "2026-11-07T01:14:06Z",
-  "updatedAt": "2026-11-07T01:14:06Z"
+  "lastUpdated": "2026-11-07T09:39:57+08:00",
+  "updatedAt": "2026-11-07T09:39:57+08:00"
 }
