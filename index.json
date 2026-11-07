@@ -110512,6 +110512,258 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261107-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Underdog Woof：31.7–40.6MB 的英英 TTS，WebGPU／CPU 本機就能跑",
+      "summary": "Underdog 釋出 Woof：單聲版約 31.7MB、雙聲版（Juno／Mira）約 40.6MB；官方在 Gradium TTS Hard Cases 上報 Mira 1.42% WER，並附 numpy int8 runtime（woof_int8.npz）。瀏覽器 demo 走 WebGPU（underdog.ai/woof／Escape），權重在 Hugging Face ConwayResearch/Underdog-Woof。授權是 underdog-non-commercial-1.0（等同非商業／NC），商用需另談；英文固定音色、非 zero-shot cloning，但對 edge／離線朗讀是很具體的體積錨點。",
+      "tags": [
+        "tts_speech",
+        "text-to-speech",
+        "underdog-woof",
+        "webgpu",
+        "on-device"
+      ],
+      "url": "https://huggingface.co/ConwayResearch/Underdog-Woof",
+      "source": "Hugging Face + TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "vram": "~0.4–0.9GB peak (CPU/WebGPU)",
+      "license": "underdog-non-commercial-1.0"
+    },
+    {
+      "id": "20261107-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "MLX-Serve v26.11.2：DeepSeek GGUF 走 MLX 引擎，雙 Mac tensor split",
+      "summary": "11/6 的 v26.11.2 新增 --mlx-gguf：DeepSeek-V4.1 的 ISTA GSQ-RCO／Coder／DS4 等 GGUF 可直接跑在 MLX 引擎（含 DSpark drafting 與影像輸入），官方報 M5 Ultra 上約 3,300 tok/s prefill（約 2.5×）。另有 --dist tensor 把 DeepSeek-V4.1-Flash 拆到兩台 Thunderbolt 5 Mac 同算每一 token（雙 M3 Ultra + DSpark 寫出約 57% 更快）。長對話編輯舊訊息可從 checkpoint 續跑（60k token 8.7s→0.13s）。主打 Apple Silicon（MIT），也附 linux CUDA 13 打包；5070 Ti 上大 MoE 仍偏重，小／量化模型較務實。",
+      "tags": [
+        "llm_inference",
+        "mlx-serve",
+        "gguf",
+        "deepseek",
+        "speculative-decoding"
+      ],
+      "url": "https://github.com/ddalcu/mlx-serve",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ddalcu/mlx-serve/releases/tag/v26.11.2",
+      "vram": "Mac unified memory / CUDA builds vary by model",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "HeartMuse：CUDA graphs 加速 HeartMuLa 第一階段，3090 Ti 22.7→35.9 fps",
+      "summary": "今天 HeartMuse（HeartMuLa 本機 Gradio UI）合併 CUDA graphs：拿掉 torchtune KVCache 裡每層 attention 的 GPU→CPU sync（約 62→2／frame），並把單幀 generate_frame() 收成可重放的 CUDA graph（失敗則回 eager）。作者在 RTX 3090 Ti 測到 22.7→35.9 frames/s、GPU 吃滿，同 seed 輸出 bit-identical。HeartMuLa 官方建議 16GB+ VRAM，剛好卡在 5070 Ti 甜區；想本機把歌詞＋style tags 變成歌，這是直接可感知的吞吐提升。",
+      "tags": [
+        "audio_music_ai",
+        "music-generation",
+        "heartmula",
+        "cuda",
+        "heartmuse"
+      ],
+      "url": "https://github.com/HeartMuLa/heartlib",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/strnad/HeartMuse",
+      "vram": "16GB+ recommended (HeartMuLa)",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Route-DMD：把 AuK 語音基礎模型從 32 步蒸餾到 4 步（約 4.5×）",
+      "summary": "arXiv 2611.08011 針對統一語音 foundation model（生成／編輯／分離／增強）提出 task-routed DMD：分離類任務改走 regression，其餘用 Decoupled DMD，並用 consistency 初始化＋APG 取代 CFG。4 步學生在 SeedTTS／編輯／CHiME-4 等與 32 步老師接近，端到端 RTF 0.433→0.096（H20）。Demo 在 route-dmd.github.io；訓練碼標在 iHateTheWorld555/AuK-RouteDMD，老師本體仍是 Tencent-Hunyuan/AuK。對本機語音工作室「同一個模型做很多事又要低延遲」很有啟發。",
+      "tags": [
+        "tts_speech",
+        "speech-foundation",
+        "route-dmd",
+        "auk",
+        "distillation"
+      ],
+      "url": "https://github.com/Tencent-Hunyuan/AuK",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.08011",
+      "vram": "depends on AuK checkpoint; few-step student lighter at decode",
+      "license": "arXiv preprint + AuK repo terms"
+    },
+    {
+      "id": "20261107-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Rapid-MLX v1.0.2：Pika H3 Flex 影音同步、可中斷影片、閒置模型卸載",
+      "summary": "Apple Silicon 推理桌面／CLI 的 1.0.2（11/6）：Video 分頁加入 Pika H3 Flex 與 MiniMax H3，支援文字／首幀／首末幀／影音參考生成「帶同步音軌」的影片，並能取消進行中的 video job。閒置 chat 模型可卸載但本地 API 維持在線；新安裝預設改用較小模型加快首跑，CLI 也接受直接貼 Hugging Face 連結。Apache-2.0；主戰場是 Mac，跟 5070 Ti 路徑平行，但「本機影音一條龍＋可中斷」的產品形狀值得對照。",
+      "tags": [
+        "llm_inference",
+        "image_gen",
+        "video-generation",
+        "rapid-mlx",
+        "mlx"
+      ],
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/raullenchai/Rapid-MLX/releases/tag/v1.0.2",
+      "vram": "Apple Silicon unified memory",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261107-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Buoyant Kinference：Kubernetes 上給 vLLM 用的推理控制平面（alpha）",
+      "summary": "Linkerd 團隊 Buoyant 開源 Kinference（Apache-2.0，目前 v0.1.0-alpha.7）：當 vLLM 的 control plane，吃 KV-cache 事件與引擎指標做 cache-aware 路由，並用 InferenceWorkerSet／InferencePool／InferencePolicy 等 CRD 表達多租戶、fallback、本地與雲端 offload。可跟 Gateway API／Buoyant Gateway 串。官方強調仍是 alpha；若你自架多副本 vLLM，這層「誰該接到哪個 replica」比再加一層通用 API gateway 更對症。",
+      "tags": [
+        "infra_runtime",
+        "vllm",
+        "kubernetes",
+        "kinference",
+        "model-serving"
+      ],
+      "url": "https://kinference.ai/",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/Kinference-AI/kinference",
+      "vram": "n/a (control plane; workers need GPU)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261107-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "TensorRT-LLM v1.4.0rc3：Muse Spark Open、LTX-2.3、MiniMax-M3 NVFP4",
+      "summary": "NVIDIA 於 11/6 推 v1.4.0rc3：模型面加入 Muse Spark Open、LTX-2.3 text-to-video／retake、GLM-5.2 NVFP4（GB300／SM103）、MiniMax-M3 NVFP4 低延遲 decode 與 MiniMax-M3.1-Flash DSpark，並整合 Kimi K3 native modeling＋NVFP4 KV cache。Known issues 含 DSA／Kimi K3 DSpark／DeepSeek-V4-Pro 等邊界。對 5070 Ti 來說完整 MoE／視訊管線仍偏重，但 TRT-LLM 量化與 decode 路徑是本機／單機 serving 的對照組。",
+      "tags": [
+        "llm_inference",
+        "tensorrt-llm",
+        "nvfp4",
+        "video-generation",
+        "moe"
+      ],
+      "url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3",
+      "vram": "model-dependent; large MoE/video often >16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261107-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Google 捐 Agent Substrate／gVisor／OpenRL 進 CNCF；Substrate 達 1.0",
+      "summary": "11/5 Google Cloud 宣布把 Agent Substrate、gVisor、OpenRL 捐給 CNCF Sandbox；Agent Substrate 同步到 1.0 並在 GKE 上 GA。核心賣點：把 agent 的 Actor（狀態／身分）與 Worker（執行沙箱）拆開，閒置可 snapshot，恢復 <500ms，號稱比一般 container 密度高約 10×；底層可選 Cloud Hypervisor 或 gVisor。OpenRL 則用純 Python primitive 在 K8s 上跑自架 RL post-training（可接 vLLM sampling）。對要「安全跑 agent 生出的程式碼」的本機／叢集都很有信號。",
+      "tags": [
+        "ai_devtools",
+        "agent-substrate",
+        "gvisor",
+        "openrl",
+        "kubernetes"
+      ],
+      "url": "https://github.com/agent-substrate/substrate",
+      "source": "Google Cloud Blog",
+      "sourceUrl": "https://cloud.google.com/blog/products/containers-kubernetes/open-infrastructure-for-autonomous-agents-comes-to-cncf",
+      "vram": "n/a (runtime/orchestration)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261107-ai-021",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "billion-context：給 coding agent 的上下文壓縮外掛（號稱省約 5× token）",
+      "summary": "今日 GitHub Trending 熱門：ranxianglei/billion-context（~4.4k★）是給 Claude Code／OpenCode／Codex／Qwen Code 等的 context-compression plugin，主打小窗口（約 100K 也夠）撐月級長 session，並宣稱約 5× 少送 token；文件強調健康 session 應維持 95–97% prefix-cache hit。附 training-free hierarchical compression 說明稿。屬 agent 周邊 infra，不是新模型，但對本機長活 coding agent 的成本／窗口很實用。",
+      "tags": [
+        "ai_devtools",
+        "coding-agent",
+        "context-compression",
+        "billion-context",
+        "rag_knowledge"
+      ],
+      "url": "https://github.com/ranxianglei/billion-context",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/ranxianglei/billion-context",
+      "vram": "n/a (client-side plugin)",
+      "license": "see repo LICENSE"
+    },
+    {
+      "id": "20261107-ai-022",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Hyperkernel／Hyperserve：B300 megakernel 生成器＋OpenAI-compatible 伺服器（alpha）",
+      "summary": "Hyperstition 於 11/5 開源 Hyperkernel（MIT）：遞迴生成把整段 forward pass 融進單次 launch 的 megakernel；公開 Hyperserve 實作目前針對 NVIDIA B300（LLM 要 4 卡、約 203GB host RAM 放 Engram tables），可 serve DeepSeek-V4.1-Flash，並涵蓋 driving／DNA／world／robot／fold 等領域 kernel。需 Rust＋driver R580+，權重需自備。對 5070 Ti 是 cloud-only 參考架構，但「整模一顆 kernel」的方向值得盯。",
+      "tags": [
+        "infra_runtime",
+        "hyperkernel",
+        "hyperserve",
+        "megakernel",
+        "cuda"
+      ],
+      "url": "https://github.com/Hyperstitioncc/Hyperkernel",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/Hyperstitioncc/Hyperkernel",
+      "vram": "4× B300 class for LLM preset",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ai-023",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Tenaz 0.5.0：用本機模型長跑 coding agent（新接 OpenCode／Qwen Code）",
+      "summary": "aartiles/tenaz 今天發 0.5.0（Apache-2.0）：專門在「一次只塞得進一個模型」的筆電／單卡上，規劃目標、寫 verify script、開新 session 逐任務推進，通過才 commit。此版新增 --harness opencode／qwen（ACP），以及透過 mlx-serve 的 generate_3d（Idol／TRELLIS.2）工具，並修好推理代理只轉發最後一則 assistant reasoning、媒體模型用完 unload 等。星數還很少，但定位清楚：本機 agent 的「長跑 runner」而不是聊天 UI。",
+      "tags": [
+        "ai_devtools",
+        "coding-agent",
+        "tenaz",
+        "opencode",
+        "local-llm"
+      ],
+      "url": "https://github.com/aartiles/tenaz",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/aartiles/tenaz/releases/tag/v0.5.0",
+      "vram": "depends on chosen local model",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261107-ai-024",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "AXERA-TECH：Qwen3-VL 2B／4B／8B 的 GPTQ-Int4 邊緣打包",
+      "summary": "Axera 在 Hugging Face 上架 Qwen3-VL Instruct 的 GPTQ-Int4 重包（含 2B／4B／8B 與多組 AX630C context 變體）；社群整理約 2B 檔案落在 ~2GB 量級，主打端側／NPU 部署而非刷榜。對 5070 Ti 也可當現成 4-bit VL 權重來源試本地多模態，但授權與執行 runtime 需跟各 model card／Axera 工具鏈確認。屬「包裝與部署」新聞，不是新架構。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "qwen",
+        "vision",
+        "edge"
+      ],
+      "url": "https://huggingface.co/AXERA-TECH/Qwen3-VL-2B-Instruct-GPTQ-Int4",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/AXERA-TECH/Qwen3-VL-2B-Instruct-GPTQ-Int4",
+      "vram": "~2GB+ class for 2B-Int4; larger for 4B/8B",
+      "license": "see model cards"
     }
   ],
   "lastUpdated": "2026-11-07T18:28:06+08:00",
