@@ -110276,8 +110276,244 @@
       "price": null,
       "vram": "桌面 app local-ready；LTX-2.5 標 16–24GB",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261107-sw-013",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "libghostty-vt 1.0：Ghostty 核心抽出的終端模擬 C library 宣告 ABI 穩定，JetBrains IDE 已全面改用",
+      "summary": "Mitchell Hashimoto 11/6 發布 libghostty-vt 1.0，library 與 C ABI 正式穩定、照 semantic versioning 走，方便各 distro 打包與 dynamic linking。他列出現有採用者：JetBrains IDE 的 terminal 已換成 libghostty（官方數字逾 1,250 萬活躍使用者）、Neovim 有已核准的 PR 要用它取代 libvterm、Turborepo TUI、OrbStack，還有 herdr、cmux 等 agentic coding 工具直接建在它上面；用它的人已遠多於 Ghostty app 本身。HN 652 分。",
+      "tags": [
+        "paradigm-shift",
+        "libghostty",
+        "terminal emulation",
+        "C ABI",
+        "zig",
+        "agentic coding tools"
+      ],
+      "url": "https://mitchellh.com/writing/libghostty-1-0",
+      "source": "Mitchell Hashimoto",
+      "sourceUrl": "https://mitchellh.com/writing/libghostty-1-0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-014",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "GitLab 19.5：MCP server GA，Claude Code／Cursor／Codex 等外部 agent 納入 AI Governance 稽核",
+      "summary": "InfoQ 11/6 整理（版本 10/15 發布）：GitLab MCP server 正式 GA，管理者可挑選要暴露哪些 MCP toolsets 來做 least-privilege；GitLab.com 的 MCP rate limit 為 Free 每分鐘 60、Premium/Ultimate 600 次。外部 agent 透過 GitLab CLI 連上後，session 的使用者、agent、專案與時間會進 AI Governance Dashboard，可串到 SIEM。Duo CLI 新增預設關閉的 auto mode，`/goal` 也 GA。",
+      "tags": [
+        "paradigm-shift",
+        "mcp",
+        "agent governance",
+        "GitLab",
+        "least-privilege"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/gitlab-19-5-agentic-platform/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-015",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "ChatGPT Apps SDK 安全回報：follow-up tool call 被悄悄改走另一個 connector，帶著一次性確認碼",
+      "summary": "開發者在 OpenAI 社群回報：同一個對話開了兩個指向同一 MCP server、但各有自己 OAuth client 的 connector，使用者在 A 的 MCP Apps widget 確認後，模型卻用 B 送出帶確認碼的後續呼叫，使用者完全不知情；這次因為 server 把確認碼綁在 A 的 OAuth client 上才被擋下。作者主張 tool call 應以 OAuth client 而非 server URL 對應 connector。HN 標題提到回報 bounty 要求出示身分證件。",
+      "tags": [
+        "mcp",
+        "MCP Apps",
+        "OAuth",
+        "agent security",
+        "tool calling"
+      ],
+      "url": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053",
+      "source": "OpenAI Developer Community",
+      "sourceUrl": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-016",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "TypeScript 7.1 Beta：Go 版編譯器找回 Compiler API，content mappers 讓 Vue／Svelte 成為一等公民",
+      "summary": "InfoQ 11/6 報導（beta 10/20 宣布）：7.1 把 7.0 拿掉的 compiler API 拆成 `typescript/sync`、`typescript/async`、`typescript/fs`、`typescript/ast` 等入口，並承諾整個 7.x 向後相容。新的 content mappers 讓 `.vue`、`.svelte` 檔交給 `tsc` 直接檢查；Directus 581 個 Vue 元件的型別檢查從 14.19 秒降到 3.10 秒。RC 與正式版暫定 11 月底。",
+      "tags": [
+        "typescript",
+        "compiler API",
+        "Vue",
+        "Svelte",
+        "developer tooling"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/typescript-7-1-beta/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/typescript-7-1-beta/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-017",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "devvm：一個指令幫每個專案開一台 VM，讓 coding agent 在沙箱裡跑",
+      "summary": "開源工具 devvm（後端用 Lima）在專案資料夾執行就建一台 VM：專案目錄 read-write 掛入，agent 的 skills 與設定 read-only，`~/.ssh`、`~/.aws` 留在主機外；網路經主機上的 proxy 走 allowlist，token 由 proxy 代為加上。依專案檔案自動挑 toolchain，內建支援 Claude Code、Codex、opencode，目標是擋 prompt injection、supply chain attack 與失控 agent。HN 156 分。",
+      "tags": [
+        "agent sandbox",
+        "coding agent",
+        "supply chain security",
+        "Lima",
+        "developer experience"
+      ],
+      "url": "https://devvm.dev/",
+      "source": "devvm.dev",
+      "sourceUrl": "https://devvm.dev/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-018",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Vercel Tracing GA：dashboard 與 CLI 都能用 KQL 搜 trace，Next.js 16.5 新專案預設開啟",
+      "summary": "全方案可用、價格同 beta。新的 Traces 頁集中所有 trace 和 span，支援 KQL 查詢與 Live mode，`vercel traces search` 在 CLI 用同一套語法。Next.js 16.5 起的新專案（含 Node.js function）首次 build 後自動加一條 100% sampling rule 並在 build 時注入 instrumentation。保留期延長：Hobby 3 天、Pro 與 Enterprise 14 天。",
+      "tags": [
+        "observability",
+        "distributed tracing",
+        "next.js",
+        "Vercel"
+      ],
+      "url": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-019",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenAI：GPT-Live 的 outbound SIP calling 開放給所有組織",
+      "summary": "官方 Telephony and SIP 文件寫明 outbound SIP calling 已開放所有組織，但只透過 Live API（不是 Realtime API 的 call-creation endpoint）。用 Create session 經自己的 SIP provider 撥號，trunk 需支援 TLS signaling 與 SDES-SRTP；後端以 sideband WebSocket 接上 session 收事件、送 DTMF、轉接或掛斷，inbound 與 outbound 共用同一組 call controls。",
+      "tags": [
+        "voice agent",
+        "SIP",
+        "GPT-Live",
+        "OpenAI API"
+      ],
+      "url": "https://developers.openai.com/api/docs/guides/voice-sip",
+      "source": "OpenAI API Docs",
+      "sourceUrl": "https://developers.openai.com/api/docs/guides/voice-sip",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-020",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "@GitHub in Slack 和 Teams 正式 GA：在對話裡查 bug、開 issue、改 code、開 PR",
+      "summary": "GitHub 11/6 changelog：@GitHub 在 Slack、Teams GA，能從訊息自動判斷 repo 直接啟動 coding session；Teams 新增 Canvas，可在對話旁看實作計畫、code diff 與 preview 一起討論。由它建立的 issue 與 PR 會註明「Created from a Slack/Teams conversation with @username」。",
+      "tags": [
+        "coding agent",
+        "copilot",
+        "ChatOps",
+        "GitHub"
+      ],
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-021",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Forwarded header 被過度信任：Rails、Spring、Jetty 預設會讀，可偽造 client IP 和 host",
+      "summary": "作者發現 Rails、Spring、Jetty 等框架預設會讀 RFC 7239 的 `Forwarded` header，但多數 reverse proxy、CDN 不會處理請求裡的這個 header，結果使用者自帶的值一路傳進應用程式被當真，造成 client IP 與 host name spoofing。建議讓 proxy 與應用程式對要信任的 header 達成一致，並在 proxy 丟掉不受信任的 proxy headers。",
+      "tags": [
+        "web security",
+        "reverse proxy",
+        "Forwarded header",
+        "envoy"
+      ],
+      "url": "https://www.lkoskela.fi/blog/2026-11-05-forwarded-without-question/",
+      "source": "lkoskela.fi（Lobsters）",
+      "sourceUrl": "https://www.lkoskela.fi/blog/2026-11-05-forwarded-without-question/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-022",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Go 測試小技巧：用一個 generic `MustCreate` helper 取代一堆 `MustCreateX`",
+      "summary": "mtlynch.io 作者分享：測試時常要呼叫會回 error 的建構函式，過去他替每個型別寫 `MustCreateUsername` 這類 helper，repo 越來越亂；改用 Go 1.18 generics 寫一個通用 `MustCreate`，把建構函式和參數傳進去、出錯就 `t.Fatalf`，測試更短更好讀。",
+      "tags": [
+        "golang",
+        "generics",
+        "testing"
+      ],
+      "url": "https://mtlynch.io/notes/go-must-create-pattern/",
+      "source": "mtlynch.io（Lobsters）",
+      "sourceUrl": "https://mtlynch.io/notes/go-must-create-pattern/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-023",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Meridian：用 Servo 加 Zed 的 GPUI 打造的實驗性 macOS 瀏覽器",
+      "summary": "Meridian 以 Rust 寫成，網頁與瀏覽器狀態由 Servo 處理、外框由 Zed editor 背後的 GPUI 繪製；黏合層獨立成 `gpui-servo` library，把 Servo 包成一般的 GPUI component，任何人都能做 Servo 瀏覽器。目前適合 JavaScript 與排版較輕的網站，有分頁、書籤、reader mode 等功能，可用 nix 試跑。",
+      "tags": [
+        "rust",
+        "Servo",
+        "GPUI",
+        "browser engine"
+      ],
+      "url": "https://op.tngl.io/meridian/",
+      "source": "Tangled（Lobsters）",
+      "sourceUrl": "https://op.tngl.io/meridian/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-07T10:22:24+08:00",
-  "updatedAt": "2026-11-07T10:22:24+08:00"
+  "lastUpdated": "2026-11-07T18:28:06+08:00",
+  "updatedAt": "2026-11-07T18:28:06+08:00"
 }
