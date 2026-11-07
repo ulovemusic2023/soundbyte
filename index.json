@@ -109436,8 +109436,197 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261107-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pro Tools 2026.11：Extensions、本機 AI Stem Separator 與原生 MPE",
+      "summary": "Avid 於 11/5 推出 Pro Tools 2026.11：新格式 Extensions 可做跨軌／全 session 工具（Pro Sound Effects、Soundly、Forte、Pibox；Splice／SoundFlow 也改掛 Extensions）。內建 Stem Separator 本機拆最多 6 軌（vocals／drums／bass／guitar／keys／other），含 Intro 在內各階免額外付費；並加入 MIDI Polyphonic Expression，Windows 也補上 High DPI 與 playlist take 自動上色。",
+      "tags": [
+        "pro tools",
+        "daw",
+        "stems separation",
+        "midi",
+        "music production"
+      ],
+      "url": "https://www.production-expert.com/production-expert-1/pro-tools-2026-11-adds-extensions-built-in-stem-separation-and-mpe",
+      "source": "Avid / Production Expert",
+      "sourceUrl": "https://www.avid.com/pro-tools/whats-new"
+    },
+    {
+      "id": "20261107-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Stable Audio 11 月更新：新 workspace、Generate／Sampler 與 Labs",
+      "summary": "Stability AI 於 11/4 改版 Stable Audio：統一 workspace（Home／Library），新 Generate 以文字或「paint」混音提示做曲／音效並用 Lens 局部替換、延伸；Sampler 一次產出最多 8 個 sample／鼓組 one-shot 並含 step sequencer。實驗功能收進 Labs，多軌 Sessions 繼續 beta。商用安全模型，產出可自由分發。",
+      "tags": [
+        "stable audio",
+        "music generation",
+        "audio generation",
+        "music ai",
+        "text to audio"
+      ],
+      "url": "https://stableaudio.com/",
+      "source": "Stability AI",
+      "sourceUrl": "https://stability.ai/guides/whats-new-in-stable-audio-november-2026-release-notes"
+    },
+    {
+      "id": "20261107-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ElevenMusic 可直接把原創曲發到 SoundCloud",
+      "summary": "ElevenLabs 於 11/6 上線與 SoundCloud 的整合：在 ElevenMusic 連結 SoundCloud 帳號後，可為原創曲加上描述／曲風／標籤並「Save to SoundCloud」。SoundCloud Artist Pro 會員另有三個月 ElevenMusic 優惠（18+，至 2027-10-31）。曲目仍受 SoundCloud 內容政策與來源揭露規範。",
+      "tags": [
+        "music ai",
+        "music generation",
+        "music industry",
+        "music tech"
+      ],
+      "url": "https://musically.com/2026/11/06/soundcloud-will-soon-have-more-ai-music-from-elevenlabs/",
+      "source": "ElevenLabs / Music Ally",
+      "sourceUrl": "https://elevenlabs.io/blog/soundcloud"
+    },
+    {
+      "id": "20261107-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pitch Perfekt V2：即時 voice-to-MIDI，加 Vocal Transformer 與四部和聲",
+      "summary": "Algoriffix 更新 Pitch Perfekt：可把演唱即時（或檔案）轉成 MIDI；V2 強化 pitch tracking，並新增 Vocal Transformer（pitch correction、formant、harmony、growl）與 Functional Harmony 四部和聲。基礎版免費，兩項 premium 各有 7 天試用；支援 Win／Mac，VST3／AU／AAX 與 standalone。",
+      "tags": [
+        "midi",
+        "voice conversion",
+        "music production",
+        "plugin",
+        "vst3"
+      ],
+      "url": "https://www.algoriffix.com/",
+      "source": "Algoriffix",
+      "sourceUrl": "https://www.algoriffix.com/guide"
+    },
+    {
+      "id": "20261107-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Aurally Sound Prism: Drums：本機 ML 把鼓組錄音轉成可編輯 MIDI",
+      "summary": "Prism: Drums 可辨識 kick／snare／hi-hat／crash／ride／三組 tom 共九件，保留 timing 與 velocity，內建 MIDI 編輯與 drum sampler，支援 ARA 或一般 insert，處理全程本機。Win／Mac，VST3／AU／AAX，售價 US$79，含 14 天完整試用。",
+      "tags": [
+        "midi",
+        "music production",
+        "audio ai",
+        "plugin",
+        "vst3"
+      ],
+      "url": "https://aurallysound.com/products/prism-drums",
+      "source": "Aurally Sound",
+      "sourceUrl": "https://aurallysound.com/products/prism-drums"
+    },
+    {
+      "id": "20261107-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Dawbrain：本機 stem separation、和弦辨識與 clip 修剪指令",
+      "summary": "Ableton 導向助理 Dawbrain 於 11/4 更新：可把 clip 拆成 drums／bass／vocals／other（需 ≥8GB RAM，背景本機跑）；可逐小節讀和弦並依此寫 bassline；也支援用語音／文字 trim、split、loop Arrangement clip（4/4）。分離後的 stems 也會用來回答混音問題。",
+      "tags": [
+        "stems separation",
+        "chord recognition",
+        "music production",
+        "daw",
+        "audio ai"
+      ],
+      "url": "https://www.dawbrain.com/",
+      "source": "Dawbrain",
+      "sourceUrl": "https://www.dawbrain.com/changelog/stems-chords-clip-trimming"
+    },
+    {
+      "id": "20261107-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Acon Digital Restoration Suite 3：Analyze 一鍵組修補鏈，DeNoise／DeHum 加 ML Automatic",
+      "summary": "新的 Restoration Suite 3 整合插件可 Analyze 幾秒音訊後自動掛上並設定 DeNoise／DeHum／DeClick／DeClip；DeNoise 3 與 DeHum 3 新增免噪訊剖面的 ML Automatic。MSRP US$99，至 11/17 有 30% 新購／升級折扣；也納入 Acoustica 8 Premium／Ultimate。",
+      "tags": [
+        "plugin",
+        "mixing",
+        "audio effect",
+        "music software",
+        "audio plugin"
+      ],
+      "url": "https://acondigital.com/products/restoration-suite",
+      "source": "Acon Digital",
+      "sourceUrl": "https://acondigital.com/blog/introducing-restoration-suite-3-instant-results-no-guesswork-clean-audio"
+    },
+    {
+      "id": "20261107-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Nolvra GLOAM：免費自動 resonance suppressor（Win VST3／Mac VST3+AU）",
+      "summary": "GLOAM 會自己找刺耳共振並只在它響時壓低，預設保護人聲泛音與 250 Hz 以下穩態低音（如 808）。含 Depth／Sharpness／Selectivity、Soft／Hard、M/S、23 presets；免帳號、免序號、無限期。需 Apple Silicon 或 Win10+。",
+      "tags": [
+        "free plugin",
+        "plugin",
+        "vst3",
+        "audio effect",
+        "mixing"
+      ],
+      "url": "https://nolvra.com/products/gloam",
+      "source": "Nolvra",
+      "sourceUrl": "https://nolvra.com/products/gloam"
+    },
+    {
+      "id": "20261107-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FUN Dither：免費 Win VST3 mastering dither（16／24-bit + noise shaping）",
+      "summary": "FUNtasia Audio 於 11/6 釋出 FUN Dither v1.0.0：TPDF dither 可選 16／24-bit 與 noise shaping，noise-shaping 係數經盲聽選定；零 latency、通過 pluginval strictness 10。GitHub 免費下載。",
+      "tags": [
+        "free plugin",
+        "plugin",
+        "vst3",
+        "mastering",
+        "audio plugin"
+      ],
+      "url": "https://funtasiaaudio.github.io/catalog/en/",
+      "source": "FUNtasia Audio / GitHub",
+      "sourceUrl": "https://github.com/funtasiaaudio/FUN-Dither/releases/tag/v1.0.0"
+    },
+    {
+      "id": "20261107-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ProducerToy Width：免費 Mid/Side 立體聲寬度與 Bass Mono plugin",
+      "summary": "Width 提供 0%–200% 連續 width、4 階 Linkwitz-Riley Bass Mono（40–500 Hz）、60 FPS vectorscope，零 latency。Win／Mac，VST3／AU／AAX／Standalone，永久免費含商用授權。",
+      "tags": [
+        "free plugin",
+        "plugin",
+        "vst3",
+        "mixing",
+        "audio effect"
+      ],
+      "url": "https://producertoy.com/news/producer-toy-releases-width-free-stereo-imaging-plugin",
+      "source": "ProducerToy",
+      "sourceUrl": "https://producertoy.com/product/width"
     }
   ],
-  "lastUpdated": "2026-11-07T08:25:48.454695+08:00",
-  "updatedAt": "2026-11-07T08:25:48.454695+08:00"
+  "lastUpdated": "2026-11-07T09:08:39.729941+08:00",
+  "updatedAt": "2026-11-07T09:08:39.729941+08:00"
 }
