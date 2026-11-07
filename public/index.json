@@ -109625,8 +109625,176 @@
       "url": "https://producertoy.com/news/producer-toy-releases-width-free-stereo-imaging-plugin",
       "source": "ProducerToy",
       "sourceUrl": "https://producertoy.com/product/width"
+    },
+    {
+      "id": "20261107-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Patrick Collison：personal agents 是產品品質的「structural subsidy」",
+      "summary": "公司本來就像原始的超智慧：用累積的認知優勢對付有限理性的消費者。Collison 推論：當每個人都有站在自己這邊的 personal agent，價格歧視、忘記取消訂閱的交叉補貼、以及靠短注意力變現的需求路由都會變弱；邊際上，把產品做得更好會比砸分發更划算。框架：agents 改變市場的反向傳播——更好產品得到更高回報。前提是 agent 真的站在買家這邊。",
+      "tags": [
+        "structural-subsidy",
+        "agentic-economy",
+        "product-quality",
+        "bounded-rationality"
+      ],
+      "url": "https://patrickcollison.com/dispatches/agentic-economy",
+      "source": "Patrick Collison",
+      "sourceUrl": "https://patrickcollison.com/dispatches/agentic-economy",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Collison：78% 頂尖科學家若能自由花 grant，會大幅改研究方向",
+      "summary": "對頂尖生醫科學家的調查：在「錢不變、只改自由度」的條件下，78% 會大幅改變研究議程，其中約 83% 說會變得更有野心。洞見：低效率不只是錢不夠，而是制度把最能貢獻的人關進規定好的籠子。可遷移原則：資助年輕、curiosity-driven、更長週期——機構設計決定野心能否被放出來。",
+      "tags": [
+        "metascience",
+        "grant-flexibility",
+        "curiosity-driven",
+        "institutional-design"
+      ],
+      "url": "https://patrickcollison.com/dispatches/kratsios-interview",
+      "source": "Patrick Collison",
+      "sourceUrl": "https://patrickcollison.com/dispatches/kratsios-interview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Ajeya Cotra：AI 若已讓能力進步約 2 倍快，對研究勞動的 uplift 可能是 ~10x",
+      "summary": "讀 METR 對 Anthropic 的 deep-access 報告後，Cotra 推論：整體能力進度約翻倍，並非代表研究員只快 2 倍——考慮 compute multiplier 與實驗算力後，勞動 uplift 可能要到 ~4–9x，再扣掉「點子變難找」後約 ~10x，與內部自報 ~12x 吻合。框架：把 uplift 想成時間膨脹泡泡，而不是「十人團隊」；若加速會自我複合，naive 外推極短。",
+      "tags": [
+        "ai-rd-acceleration",
+        "compute-multiplier",
+        "recursive-acceleration",
+        "ai-future"
+      ],
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "source": "Ajeya Cotra / Planned Obsolescence",
+      "sourceUrl": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Paul Graham：先賣給同批次的 batchmates——真實測試，也最好的產品演化壓力",
+      "summary": "Office hours 建議一家 startup 先聚焦賣給同批 YC batchmates：既是產品是否真的好的實測，也是演化方向最好的影響。他們照做後，剛跨過 batch 10% 在用。可遷移 playbook：最早的顧客最好是「決定快、懂你、會給狠回饋」的同儕，而不是遙遠的大客戶。",
+      "tags": [
+        "batchmates",
+        "early-customers",
+        "product-evolution",
+        "yc"
+      ],
+      "url": "https://x.com/paulg/status/2118783984616591857",
+      "source": "Paul Graham",
+      "sourceUrl": "https://x.com/paulg/status/2118783984616591857",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Patrick Collison：A2A payments 會比 P2P 更重要",
+      "summary": "在 Stripe 推出面向企業的 instant B2B 轉帳之後，Collison 一句定調：agent-to-agent 支付會比 person-to-person 更重要。操作含義：若你的產品假設使用者是人在點擊結帳，下一波基礎設施可能是 agents 彼此付錢、下單、協調——支付與身份層要為 agents 重寫。",
+      "tags": [
+        "A2A",
+        "agent-payments",
+        "stripe",
+        "agentic-economy"
+      ],
+      "url": "https://x.com/patrickc/status/2115183046811156885",
+      "source": "Patrick Collison",
+      "sourceUrl": "https://x.com/patrickc/status/2115183046811156885",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Tobi Lütke：反 AI 寫 code 的情緒，嚴重高估了人類 code 的品質",
+      "summary": "Tobi 重貼並說「比以往更真」：大量 Anti-AI code 情緒，嚴重高估了「一小撮高品質開源與公司 codebase 之外」的人類程式碼品質——Human Slop 到處都是，任何 opus 級模型都能輕易改進。操作洞見：比較基準不該是理想人類，而該是真實世界平均交付物。",
+      "tags": [
+        "human-slop",
+        "ai-coding",
+        "quality-baseline",
+        "founder-mode"
+      ],
+      "url": "https://x.com/tobi/status/2118767359808946328",
+      "source": "Tobi Lütke",
+      "sourceUrl": "https://x.com/tobi/status/2118767359808946328",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Naval：You can be either loved and hated, or merely liked and tolerated.",
+      "summary": "兩極反應才是有鋒芒的代價；溫吞的被喜歡與被容忍，通常代表你還沒碰到真實立場。",
+      "tags": [
+        "conviction",
+        "taste",
+        "personal-brand"
+      ],
+      "url": "https://x.com/naval/status/2118669784535761032",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://x.com/naval/status/2118669784535761032",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "quote": "You can be either loved *and* hated, or merely liked and tolerated."
+    },
+    {
+      "id": "20261107-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-07",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Naval：真正的貨幣不是錢、不是時間——是注意力",
+      "summary": "你選擇注意什麼、以及對它做什麼，才是生命真正的稀缺資源。在 agent 與無限內容的時代，注意力分配本身就是策略。",
+      "tags": [
+        "attention",
+        "scarcity",
+        "leverage"
+      ],
+      "url": "https://x.com/naval/status/2118590165023338927",
+      "source": "Naval Ravikant",
+      "sourceUrl": "https://x.com/naval/status/2118590165023338927",
+      "price": null,
+      "vram": null,
+      "license": null,
+      "quote": "Not money, not time - but attention."
     }
   ],
-  "lastUpdated": "2026-11-07T09:08:39.729941+08:00",
-  "updatedAt": "2026-11-07T09:08:39.729941+08:00"
+  "lastUpdated": "2026-11-07T01:14:06Z",
+  "updatedAt": "2026-11-07T01:14:06Z"
 }
