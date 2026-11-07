@@ -110014,8 +110014,270 @@
         "upvotes": 377,
         "phStatus": "Product Hunt 頁面 curl 回 403，改用 glasshand.com 驗證"
       }
+    },
+    {
+      "id": "20261107-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp b12180：原生支援 Kimi-K3.1-Pro 文字模型（DSA indexer）",
+      "summary": "昨夜 b12180 把 Moonshot 的 Kimi-K3.1-Pro 文字路徑併進主線：把 K3 的 full-attention MLA 換成 DSA lightning indexer（24/93 層、top_k 2048），其餘 KDA／latent MoE／cross-layer residual 沿用 K3 graph。量化時 indexer 的 q_b／k／proj 刻意不進 quant overrides，避免 top-k 選錯；目前跳過 vision tower，只做 text。對 5070 Ti 來說 runtime 仍 local-ready，2.8T MoE 本體仍需重度量化或雲端。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "kimi",
+        "dsa",
+        "moe",
+        "quantization"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b12180",
+      "price": null,
+      "vram": "runtime local-ready；Kimi-K3.1-Pro 本體需重度量化／雲端",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ruach Studio 2.0.6：Tsunami Wave 成預設 YuE2 fine-tune（RS-TW 2.0 ×0.75）",
+      "summary": "11/6 深夜釋出的 Ruach Studio 2.0.6 把 Tsunami Wave（RS-TW 2.0 ×0.75）設成預設 backbone，並把 109,250 軌訓練詞彙公開到 Creator Style／Writer；掃描本機時依卡量自動給 BF16／Q8_0／Q6_K。更猛的 ×0.9 要手動抓。權重在 goldhub/YuE2-RS-Finetunes；Studio 建在 yue2.cpp 之上，適合想在本機把 YuE2 當「整間錄音室」而不是單一 CLI 的人。",
+      "tags": [
+        "audio_music_ai",
+        "music-generation",
+        "yue2",
+        "tsunami-wave",
+        "finetune"
+      ],
+      "url": "https://github.com/igrbible/Ruach_Studio",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/igrbible/Ruach_Studio/releases/tag/v2.0.6",
+      "price": null,
+      "vram": "YuE2 Q8 約 4.4GB+KV；16GB 可跑完整歌曲",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261107-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ServeurpersoCom/yue2.cpp：純 C++／GGML 的 YuE2 本機歌曲伺服器",
+      "summary": "不依賴 Python 的 YuE2 推理伺服器＋瀏覽器 UI：style tags／歌詞進、立體聲 48kHz 歌出，並附模型寫下的 symbolic score。支援 CPU／CUDA／Vulkan／macOS Metal；Q8_0 backbone+VAE 約 4.4GB，另可選 MERT 音訊編碼、SheetSage2 轉譜與 tokenizer。Ruach Studio 也以此為引擎底層，想自己組管線或 headless 部署可直接用這個 repo。",
+      "tags": [
+        "audio_music_ai",
+        "music-generation",
+        "gguf",
+        "ggml",
+        "yue2"
+      ],
+      "url": "https://github.com/ServeurpersoCom/yue2.cpp",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/ServeurpersoCom/yue2.cpp",
+      "price": null,
+      "vram": "Q8_0 約 4.4GB+KV；BF16 約 7.7GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SubRoformer：子帶時域音樂分軌（vocals／bass／drums／other）＋開源碼",
+      "summary": "arXiv 2611.08130 同期開源官方 repo（MIT）：用 subband time-domain representation 做四軌 stem separation，附 CLI／即時 app。公開 checkpoint 在 100 首 MUSDB18-HQ＋500 內部曲上訓練，測試集 mean SDR 約 11.6 dB；預設走感知微調權重，裝置自動選 CUDA→MPS→CPU，輸出 48kHz WAV。對翻唱／混音前置分軌是直接可用的本機工具。",
+      "tags": [
+        "audio_music_ai",
+        "stem-separation",
+        "demucs",
+        "subroformer",
+        "musdb"
+      ],
+      "url": "https://github.com/ArchiMickey/SubRoformer",
+      "source": "arXiv + GitHub",
+      "sourceUrl": "https://arxiv.org/abs/2611.08130",
+      "price": null,
+      "vram": "消費級 GPU／MPS／CPU 皆可；16GB 充裕",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "TensorFold 1.2.3：Zig 寫的 Metal／CUDA／Vulkan／HIP 原生 LLM 引擎",
+      "summary": "一人維護的原生推理引擎（Apache-2.0，1682★）發 1.2.3：HIP 原生端點支援 dots.mocr、Qwen3 Embedding／Reranker-8B；Metal 上 Qwen3.8-27B 引擎可吃 Qwen3.5-MoE（含 Ornith-1.5-122B on M5 Ultra）；新增 PDF vision 輸入、Iris Xe 跑 LFM3-1.7B，並修正 CUDA prompt-cache 實際大小。Flash Next 在雙 GB10 TP=2 上 decode 快 21–23%，KV 少 40%。給不想扛 Python serving stack、又要 OpenAI-compatible API 的本機路徑。",
+      "tags": [
+        "llm_inference",
+        "tensorfold",
+        "cuda",
+        "metal",
+        "vulkan",
+        "qwen"
+      ],
+      "url": "https://github.com/ashhart/TensorFold",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ashhart/TensorFold/releases/tag/v1.2.3",
+      "price": null,
+      "vram": "引擎 local-ready；大 MoE 依量化／統一記憶體",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261107-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "qwen-warp v0.8.0：單卡 RTX 3090 跑 Qwen3.8-27B，多用戶併發＋影像輸入",
+      "summary": "今天釋出的 0.8.0 把自製 CUDA decode 引擎加上真正的 concurrent requests（--max-num-seqs 2–8／--profile multiuser）：8 用戶總輸出 tok/s 從排隊的 ~152 拉到 ~441，中位 TTFT 從 22.3s 降到 3.6s；並接上 checkpoint 自帶的 bf16 vision tower（最多 4 張圖／prompt）。預設單流仍與 0.7.0 token-identical。對 16GB 5070 Ti 較吃緊，但同架構單卡高效路徑值得盯；API 走 OpenAI-compatible。",
+      "tags": [
+        "llm_inference",
+        "qwen",
+        "cuda",
+        "vision",
+        "multiuser"
+      ],
+      "url": "https://github.com/tuan3w/qwen-warp",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/tuan3w/qwen-warp/releases/tag/v0.8.0",
+      "price": null,
+      "vram": "作者基準為 RTX 3090 24GB；16GB 需更激進量化／縮 context",
+      "license": "MIT"
+    },
+    {
+      "id": "20261107-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Retrieval-Based Accent Conversion：高保真匹配演算法（arXiv 2611.07420）",
+      "summary": "口音轉換論文提出強化的 retrieval-based matching：在保留語言內容與講者身分的前提下，把來源口音特徵換成目標口音。相對生成式 AC，這類 kNN／檢索路徑通常更穩、也較容易接到現有 speaker embedding／voice conversion 管線，對 SVC／配音在地化有直接參考價值。目前以論文為主，尚未見官方訓練碼連結。",
+      "tags": [
+        "svc_voice",
+        "voice-conversion",
+        "accent-conversion",
+        "speaker-embedding"
+      ],
+      "url": "https://arxiv.org/abs/2611.07420",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.07420",
+      "price": null,
+      "vram": "研究論文；實作 VRAM 依 backbone",
+      "license": "arXiv preprint"
+    },
+    {
+      "id": "20261107-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Decode Before You Hear：Full-duplex 語音 LM 的 Speculative Listening",
+      "summary": "arXiv 2611.06982 針對 chunk-interleaved full-duplex speech LM：聽／說固定時槽造成算力不對稱（聽的時候 GPU 閒、說與 tool-call 又塞車）。作者提出 speculative listening，在聽取時段先解碼／預測，讓下一輪說話或工具呼叫更早就緒。對即時語音 agent、對講式 TTS+ASR 管線是重要的系統層想法；目前為論文。",
+      "tags": [
+        "tts_speech",
+        "full-duplex",
+        "speech-lm",
+        "speculative-decoding"
+      ],
+      "url": "https://arxiv.org/abs/2611.06982",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.06982",
+      "price": null,
+      "vram": "研究論文；實作依底模大小",
+      "license": "arXiv preprint"
+    },
+    {
+      "id": "20261107-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "StrataFlux：用主機 RAM／SSD 補精度的 Memory-Hierarchy Low-Bit LLM Inference",
+      "summary": "Cornell 等團隊的 arXiv 2611.08363：低 bit 權重／KV 量化後用 selective precision streaming 從主機記憶體與 SSD 取回關鍵高精度切片，重疊傳輸與計算。2-bit Llama-3.1-8B 困惑度 9.46→8.40 且保有量化基線 95.4% 吞吐（RTX 5090）；2-bit 權重+KV 下 Qwen3-8B AIME 從 11% 拉到 47%。概念上接近「Strata／offload 但要準」——對 16GB 卡跑更大模型很有啟發，尚無對應官方開源引擎同名 repo。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "kv-cache",
+        "offloading",
+        "strataflux"
+      ],
+      "url": "https://arxiv.org/abs/2611.08363",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.08363",
+      "price": null,
+      "vram": "論文在 8B／RTX 5090 驗證；方法目標是壓低 GPU 常駐精度",
+      "license": "arXiv preprint"
+    },
+    {
+      "id": "20261107-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ProCraft：用自由文字指令驅動的多步驟音樂製作",
+      "summary": "arXiv 2611.07423 指出既有 text-guided music editing 多半只能做短片段、單一操作；ProCraft 目標是吃 free-form 文字、串起真實製作裡的多步編輯（多樂器／多效果）。對「用自然語言當 DAW 製作助理」路線很關鍵；目前為論文發布，實作與權重需再追蹤作者後續開源。",
+      "tags": [
+        "audio_music_ai",
+        "music-generation",
+        "music-editing",
+        "procraft"
+      ],
+      "url": "https://arxiv.org/abs/2611.07423",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.07423",
+      "price": null,
+      "vram": "研究論文；未公布本地推理需求",
+      "license": "arXiv preprint"
+    },
+    {
+      "id": "20261107-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "VoxCanvas-41M：大規模雙語 instruction-based 語音編輯資料集",
+      "summary": "arXiv 2611.08251 發布 VoxCanvas-41M：針對 instruction-based speech editing 的大型雙語資料與學習框架，想補上「高品質語音編輯缺資料」的瓶頸。對要訓／評測語音修改、插入、刪除、風格改寫的 TTS／語音工作室管線是重要基礎設施；細節與下載連結以論文頁為準。",
+      "tags": [
+        "tts_speech",
+        "speech-editing",
+        "dataset",
+        "voxcanvas"
+      ],
+      "url": "https://arxiv.org/abs/2611.08251",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.08251",
+      "price": null,
+      "vram": "資料集本身不佔 GPU；下游模型依規模",
+      "license": "arXiv preprint"
+    },
+    {
+      "id": "20261107-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Unsloth v0.1.916-beta：大效能修復、雙 GPU 影像／影片、LTX-2.5 在 16–24GB 更快",
+      "summary": "11/6「Large Performance Fixes」：長對話打字／搜尋／刪除不再卡，Glass theme 去模糊；unified memory offloading 修好；每個 chat 可獨立瀏覽器＋可拖曳浮動窗。影像／影片方面，雙同款 NVIDIA 卡可把 SDXL／Qwen-Image／Wan2.2 5B 步內拆到第二張（約 1.5–1.8×）；16–24GB 上 LTX-2.5 新 prompt 改走 GPU encode，GGUF Q8_0 約再快 10%。對單張 5070 Ti 最實用的是聊天效能與 LTX-2.5 路徑。",
+      "tags": [
+        "llm_training",
+        "image_gen",
+        "unsloth",
+        "ltx-2.5",
+        "gguf"
+      ],
+      "url": "https://github.com/unslothai/unsloth",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.916-beta",
+      "price": null,
+      "vram": "桌面 app local-ready；LTX-2.5 標 16–24GB",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-11-07T09:39:57+08:00",
-  "updatedAt": "2026-11-07T09:39:57+08:00"
+  "lastUpdated": "2026-11-07T10:22:24+08:00",
+  "updatedAt": "2026-11-07T10:22:24+08:00"
 }
