@@ -109179,8 +109179,265 @@
       "price": null,
       "vram": "訓練／標註工具；視批次與模型",
       "license": "MIT"
+    },
+    {
+      "id": "20261107-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "GitHub 新一代 Git storage（Project Rubicon）：為「數千 agent 同時推同一 repo」重建儲存層",
+      "summary": "GitHub Universe 後續深文（11/5）：把物件寫入與 reference 共識拆開——pack 進 Azure Blob、Ref-CAS 只對 reference 做 quorum CAS；虛擬 replica 可水平擴、compaction 獨立節點。內部測到單 repo 5,000 concurrent agents、7,200 pushes/sec。有限 private preview，預計明年初更廣開。",
+      "tags": [
+        "paradigm-shift",
+        "distributed-systems",
+        "git",
+        "agentic-development",
+        "Ref-CAS"
+      ],
+      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "source": "GitHub Blog",
+      "sourceUrl": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 推出 Voice Chat with Agents：跟 coding agent 即時語音通話",
+      "summary": "11/6 changelog：Agents Window / IDE / web / iOS 都能「打電話」給 agent——邊講邊改、邊問進度；coding agent 會口頭回短進度。基於 Grok Voice，Privacy Mode 下 zero data retention；與舊的 dictation（語音轉文字）是兩套能力。",
+      "tags": [
+        "ai-coding",
+        "voice-agent",
+        "cursor",
+        "agentic"
+      ],
+      "url": "https://cursor.com/changelog/voice-chat",
+      "source": "Cursor Changelog",
+      "sourceUrl": "https://cursor.com/changelog/voice-chat",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Vercel：Chat SDK agent 可用 json-render 串流 Generative UI 到 Slack / Teams",
+      "summary": "11/6：agent 寫 typed JSON component catalog，json-render 轉成 Chat SDK card，再適配成 Slack Block Kit / Teams Adaptive Cards；streamCard 邊生成邊更新訊息。Rauch 稱為可能成為主流 Human-Agent Interaction（HAI）範式——LLM 直接產 UI，不再為每種訊息形狀維護工具。",
+      "tags": [
+        "paradigm-shift",
+        "generative-ui",
+        "json-render",
+        "ai-agent",
+        "MCP"
+      ],
+      "url": "https://json-render.dev/",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/json-render-and-chat-sdk-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Replit 重寫 Sandbox Engine：改用 microVM（Cloud Hypervisor）隔離 agent",
+      "summary": "11/4 技術文：從共享 kernel 的 Docker 換成 KVM microVM，guest 用 tinyconfig kernel，聲稱避開審計區間 96% Linux CVE；warm pool 接手約 500ms。為更自主 agent、BYOC、以及 kernel LPE 暴增而重建，已遷移數億專案。",
+      "tags": [
+        "ai-agent",
+        "sandbox",
+        "microVM",
+        "security",
+        "kubernetes"
+      ],
+      "url": "https://frontier.replit.com/sandbox-engine-microvms-part-1/",
+      "source": "Replit Frontier",
+      "sourceUrl": "https://frontier.replit.com/sandbox-engine-microvms-part-1/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Hightouch：能問 Opus 的 Jev，用 4× 低成本逼近 frontier 判分準度",
+      "summary": "11/4：用 decision model（Jev / GPT-6 Luna）做 identity resolution 稽核；Jev 校準較好，不確定案才 escalate 給 Claude Opus。Hybrid Jev 在較難集上 95.3% vs Opus 95.1%，成本約 $2.94 vs $5.39 / 1k。點出「校準 > 裸準度」的 hybrid-judge 模式。",
+      "tags": [
+        "llm-evaluation",
+        "decision-model",
+        "hybrid-judge",
+        "evals",
+        "ai-agent"
+      ],
+      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "source": "Hightouch Blog",
+      "sourceUrl": "https://hightouch.com/blog/llm-judges-identity-resolution",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Memorilla：用固定數量 latent memory tokens 給凍結 LLM 做語意記憶",
+      "summary": "Stanford 等：文件先 embed 一次，query-conditioned 讀出 K=16 soft tokens 注入凍結 LLM；平均勝過 Mem0 / MemoRAG，Token 用量遠低於 full context。TextWorld 上只訓 memory module，agent 成功率 18.6%→24.2%，較少在已探房間打轉。",
+      "tags": [
+        "memory-tokens",
+        "RAG",
+        "ai-agent",
+        "continual-learning",
+        "embedding"
+      ],
+      "url": "https://memory.stanford.edu/",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2610.21375",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Rune：原生 GPU 渲染的 Rust UI framework，為 agent headless 檢查而生",
+      "summary": "anomalyco/rune（~2.5k★）：自有 renderer / text / layout，跨 macOS/Windows/Linux/web；每個 app 可 headless 渲 PNG、dump element tree、接受腳本輸入，方便 coding agent 自驗 UI。pre-release，建議 pin rev。",
+      "tags": [
+        "rust",
+        "new_languages",
+        "ai-coding",
+        "ui-framework"
+      ],
+      "url": "https://github.com/anomalyco/rune",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/anomalyco/rune",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Datadog FETCh：把 TLA+ 規格編成 runtime monitor，在 production 持續驗證",
+      "summary": "11/5：為 Husky event DB 路由建 Formal Execution Trace Checker；用 refinement 分開「可觀察」與「可 model-check」規格。跑起來抓到約一年前為了 balancing 而允許、卻被持久化的衝突 placement——正常無害，但 placement 資料遺失時會讓 backfill 崩潰。",
+      "tags": [
+        "formal-verification",
+        "distributed-systems",
+        "observability",
+        "TLA+",
+        "sre"
+      ],
+      "url": "https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/",
+      "source": "Datadog Engineering",
+      "sourceUrl": "https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Gemini Omni 1.2 Flash：原生 15 秒影片、多輪對話式編輯，價降 30%",
+      "summary": "11/5 GA：clips 從 10s→15s、可多輪改同一段、reference adherence 加強；720p 約 $0.07/秒。已上 Gemini API 與 Google Cloud，輸出帶 SynthID。",
+      "tags": [
+        "multimodal",
+        "gemini",
+        "ai_models",
+        "video"
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Firecracker VM Escape（PwnEscape Part 2）：惡意 guest 跨 microVM 邊界控管 host",
+      "summary": "PWN.AI：把 Linux 網路漏洞串成 guest→host code execution，從 guest 解析 live VMM 並控制 root-run host process。對正在把 agent sandbox 遷到 Firecracker / microVM 的團隊是硬提醒：虛擬化邊界仍需追 kernel + VMM 修補。",
+      "tags": [
+        "security",
+        "microVM",
+        "firecracker",
+        "sandbox"
+      ],
+      "url": "https://pwn.ai/blog/firecracker-escape",
+      "source": "PWN.AI",
+      "sourceUrl": "https://pwn.ai/blog/firecracker-escape",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Show HN：Waymark — 把 workflow「編譯」成節點圖，而非逐步 replay",
+      "summary": "Postgres-backed durable workflow（Python first）：主張編譯 job graph 而不是每次重放腳本；含 retries、scheduling，另有 waymark-ai 包 pydantic-ai agent。Show HN 約 33 分。",
+      "tags": [
+        "durable-execution",
+        "workflow",
+        "postgres",
+        "ai-agent"
+      ],
+      "url": "https://waymark.sh",
+      "source": "GitHub / HN",
+      "sourceUrl": "https://github.com/piercefreeman/waymark",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261107-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-07",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈AI is dramatically accelerating AI research〉：研究節奏本身被 AI 改寫",
+      "summary": "11/6 長文（HN ~171）：論證 AI 工具正在壓縮文獻綜述、實驗迭代與寫作週期，改變「什麼算發表節奏」與審稿假設；對做 AI infra / agent 的人比較像產業節奏訊號，而非單一產品發布。",
+      "tags": [
+        "ai-research",
+        "productivity",
+        "ai-assisted-development"
+      ],
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "source": "Planned Obsolescence",
+      "sourceUrl": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-06T22:24:03.364405+08:00",
-  "updatedAt": "2026-11-06T22:24:03.364405+08:00"
+  "lastUpdated": "2026-11-07T08:25:48.454695+08:00",
+  "updatedAt": "2026-11-07T08:25:48.454695+08:00"
 }
