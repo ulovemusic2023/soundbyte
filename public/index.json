@@ -110986,7 +110986,7 @@
       "cycle": "morning",
       "priority": "low",
       "title": "Gergely Orosz：99% 的公司不需要「software factory」，需要的是想清楚要修什麼、做什麼",
-      "summary": "Gergely 抱怨 Substack 搜尋多年沒改善，自己花 3 小時把文章丟進 turbopuffer、加上搜尋和 Jev 分類，做出 Pragmatic Engineer 的搜尋頁。他借此主張多數公司缺的不是大規模 agent 產線，而是判斷要修什麼、做什麼；同串也提到 SDK 若不以「複製一段 prompt 給你的 agent 來設定」開場，很難被快速採用。",
+      "summary": "Gergely 抱怨 Substack 搜尋多年沒改善，自己花 3 小時把文章丟進 turbopuffer、加上搜尋和 Jev 分類，做出 Pragmatic Engineer 的搜尋頁。他借此主張多數公司缺的不是大規模 agent 產線，而是判斷要修什麼、做什麼；他同天另一則貼文也提到 SDK 若不以「複製一段 prompt 給你的 agent 來設定」開場，很難被快速採用。",
       "tags": [
         "software factory",
         "agentic engineering",
