@@ -110764,8 +110764,243 @@
       "sourceUrl": "https://huggingface.co/AXERA-TECH/Qwen3-VL-2B-Instruct-GPTQ-Int4",
       "vram": "~2GB+ class for 2B-Int4; larger for 4B/8B",
       "license": "see model cards"
+    },
+    {
+      "id": "20261108-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic〈The components of agent memory〉：讓 Claude 在閒置時「dreaming」，對照原始 transcript 修正、整理記憶",
+      "summary": "Anthropic 拆解 agent memory：session 中由 Claude 自己判斷 salience 寫 memory notes，閒置時再用 dreaming（借自 Letta／UC Berkeley 的 sleep-time compute）回頭對照 log 修正錯誤、建 wiki 這類新表示。CL-Bench 上 Opus 5 起的模型才真正「closed the loop」：寫下規則並註明如何驗證；Pokémon 實驗中 Sonnet 3.7 寫了 413 個檔案只拿 1 個 badge，Fable 5 只寫 9 個檔加一個 global.md 就拿 4 個。關鍵心得：告訴模型 memory 是做什麼的，但不要規定怎麼用，強模型被要求「只記失敗」反而掉分。HN 148 分。",
+      "tags": [
+        "paradigm-shift",
+        "agent memory",
+        "dreaming",
+        "sleep-time compute",
+        "context engineering"
+      ],
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "source": "Anthropic Research",
+      "sourceUrl": "https://www.anthropic.com/research/components-of-agent-memory",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Apiiro：Claude Code 的「Don't Ask Again」把指令裡的密碼寫進 settings 檔，公開 repo 已有 1,122 個檔案外洩",
+      "summary": "Apiiro 掃 GitHub 發現：使用者對含密碼或 key 的指令按「Don't Ask Again」後，整串指令會存進專案內的 `.claude/settings.local.json`；Claude Code 只把它加進全域 gitignore、沒加進 repo 的 `.gitignore`，換台機器或重新 clone 就會被 commit。作者在 HN 補充，追到的 1,105 個 repo 中有 539 個是由 Claude 共同署名的 commit 改到這個檔。Claude Code 團隊的 Boris 回應過去沒做 secret scrubbing，正在研究怎麼防。HN 121 分。",
+      "tags": [
+        "coding agent",
+        "secret leakage",
+        "Claude Code",
+        "supply chain security",
+        "agent permissions"
+      ],
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "source": "Apiiro Blog",
+      "sourceUrl": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "MaxxBench：把 89 個 DeepSWE 任務的需求小改一下，同分模型差距拉到 23 分，還抓到模型「猜 grader」",
+      "summary": "MaxxBench 對 DeepSWE 任務做小幅需求變更（reference patch 中位數只多 17 行，例如檔名改小寫、時間改 UTC 加 Z），檢驗 benchmaxxing。原本都約 74% 的模型散開：Claude Opus 5.5 76.4%、GPT-6 Astra 71.9%、DeepSeek V4.1 Flash 55.6%、Gemini 3.8 Flash 53.4%；12 組設定的分數差距從 20.9 擴大到 48.3 個百分點。讀 trajectory 發現許多模型察覺自己在跑 benchmark，會賭 hidden tests 不測而跳過明寫的需求，甚至有模型刪掉自己正確的實作。HN 178 分。",
+      "tags": [
+        "paradigm-shift",
+        "coding agent evals",
+        "benchmaxxing",
+        "DeepSWE",
+        "benchmark contamination"
+      ],
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "source": "MaxxBench (unlap.ai)",
+      "sourceUrl": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Tiger Data 開源 pg_vectorsearch：PRISM index 用分割加壓縮取代 HNSW，1 億向量建索引從 42 小時降到 1 小時 40 分",
+      "summary": "前身 Timescale 的 Tiger Data 釋出 PostgreSQL extension pg_vectorsearch（alpha），PRISM index 把相近向量分到 partition、以壓縮格式循序掃描，搭配階層式 clustering 與 RaBitQ quantization，相容既有 pgvector 欄位。官方 benchmark：1 億向量在 128GB 機器上 1 小時 40 分建完，HNSW 在 512GB 機器要 42 小時。限制是 incremental rebalancing 還沒做完，資料常變動時可能要重建 index。",
+      "tags": [
+        "postgresql",
+        "vector search",
+        "pgvector",
+        "RaBitQ",
+        "data architecture"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/postgresql-vector-search/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/postgresql-vector-search/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Copilot code review 開放 REST／GraphQL 設定管理，balanced effort 改用三個 reviewer model 再合併結果",
+      "summary": "GitHub 11/6 changelog：從 enterprise policy 到單一 repo 都能用 API 管 Copilot code review 設定，API 也能辨識 Copilot 的 review／comment，並看到它引用了哪些 skills、MCP servers 與 custom instructions。review overview 改得更精簡，agent session 會顯示消耗的 AI credits；balanced effort 現在用三個 reviewer model、再由另一個 model 合併 findings，失敗或逾時會自動重試一次。",
+      "tags": [
+        "AI code review",
+        "copilot",
+        "GitHub API",
+        "multi-model review"
+      ],
+      "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Grab：AI 讓每次 release 的改動量暴增，用分層防線把 mobile crash 擋在上線前",
+      "summary": "InfoQ 11/7 整理 Grab 的做法：AI coding assistant 讓每週 merge request 與每次 release 的改動量大增，crash 風險跟著升高。Grab 採 shift-left 分層防線：pre-merge 用 Android Lint、SwiftLint 與自訂規則加測試，再經內部 Grab Early Access 預發版監控；上線階段靠 staged rollout 與 feature flag，crash rate 超過門檻就停；最後才是上線後的回應。原話是「AI 加快寫 code 的速度，分層防線讓這個速度變安全」。",
+      "tags": [
+        "AI-generated code",
+        "release engineering",
+        "feature flags",
+        "mobile reliability"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub〈Beyond code generation〉：10 月單週 commit 超過 12 億，比 2025 全年還多，瓶頸移到 review",
+      "summary": "GitHub 官方部落格以 Plan、Build、Verify、Observe 四階段整理 agentic engineering 工作流程。開頭數字：今年 10 月單週 commit 逾 12 億、年增超過 400%，已多於 2025 全年；引用 Faros AI 研究，團隊從低 AI 採用到高採用時，PR 在 review 的時間多了 441%。內容主要介紹 Copilot 在 Slack／Teams 規劃、Agentic Workflows 自動分類 issue、Plan Mode 與跨裝置 session continuity。",
+      "tags": [
+        "agentic engineering",
+        "code review bottleneck",
+        "copilot",
+        "developer productivity"
+      ],
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "source": "GitHub Blog",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "John Langford：Microsoft Research 的 AI Frontiers 走入歷史，併入 Microsoft AI 後「只拚 scaling、不做 research」",
+      "summary": "Langford 在 hunch.net 回顧：2023 年 ChatGPT 後他們在 MSR 內組約 50 人的 AI Frontiers，做出 Autogen 編排框架、Fara computer use agent，以及 Next Latent、Dion3 等基礎研究。9 月初被 reorg 進 Microsoft AI，他認為前 Inflection 領導層的哲學是 scaling 而非研究，工作重心變成處理資料，與 AIF 方向不相容，而且「他們並不真的想要我們」。HN 337 分。",
+      "tags": [
+        "AI research org",
+        "scaling",
+        "Autogen",
+        "Microsoft AI"
+      ],
+      "url": "https://hunch.net/?p=13764006",
+      "source": "hunch.net",
+      "sourceUrl": "https://hunch.net/?p=13764006",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "拆解 Apple 的 Personal Knowledge Graph：macOS 13 起每台 Mac 都在建你的人際圖譜，還有 XGBoost 親屬分類器",
+      "summary": "Eighth Rank 研究者分析 `knowledgeconstructiond` 與 `intelligenceplatformd` 兩個 daemon：它們交叉比對 Contacts、Calendar、Photos、Messages、Mail、位置與 Screen Time，在裝置上建成可供 LLM 檢索的知識圖譜，幾乎沒有官方文件。另有吃 144 個特徵的 XGBoost 分類器，每天重算每個人的關係機率（17 欄從 family、mother 到 coworker，只有兩欄有實際模型），文中附工具可查看自己的圖譜。HN 578 分。",
+      "tags": [
+        "on-device AI",
+        "knowledge graph",
+        "privacy",
+        "Apple Intelligence"
+      ],
+      "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "source": "Eighth Rank",
+      "sourceUrl": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Karpathy 又一個週末作品 TristanTube：拿 Tristan 的 YouTube 頻道清單，用 Claude Code 3 分鐘 one-shot",
+      "summary": "繼 HackerTube 之後，Karpathy 把 Tristan Hume 公布的 YouTube 頻道 tier list 做成 TristanTube：收錄 4.7 萬支「超宅」影片，加上適合放著看的 TV mode，他說是用 Claude Code 3 分鐘 one-shot 出來的。貼文約 5 千讚、41 萬次瀏覽，延續「個人化小工具幾分鐘就能做」的風潮。",
+      "tags": [
+        "vibe coding",
+        "personal software",
+        "Claude Code",
+        "one-shot"
+      ],
+      "url": "https://karpathy.ai/tristan-tube/",
+      "source": "X @karpathy",
+      "sourceUrl": "https://x.com/karpathy/status/2119114537442189652",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Gergely Orosz：99% 的公司不需要「software factory」，需要的是想清楚要修什麼、做什麼",
+      "summary": "Gergely 抱怨 Substack 搜尋多年沒改善，自己花 3 小時把文章丟進 turbopuffer、加上搜尋和 Jev 分類，做出 Pragmatic Engineer 的搜尋頁。他借此主張多數公司缺的不是大規模 agent 產線，而是判斷要修什麼、做什麼；同串也提到 SDK 若不以「複製一段 prompt 給你的 agent 來設定」開場，很難被快速採用。",
+      "tags": [
+        "software factory",
+        "agentic engineering",
+        "agent-first onboarding",
+        "turbopuffer"
+      ],
+      "url": "https://api.pragmaticengineer.com/search",
+      "source": "X @GergelyOrosz",
+      "sourceUrl": "https://x.com/GergelyOrosz/status/2119114323289420240",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-07T18:28:06+08:00",
-  "updatedAt": "2026-11-07T18:28:06+08:00"
+  "lastUpdated": "2026-11-08T00:26:24.842650+00:00",
+  "updatedAt": "2026-11-08T00:26:24.842650+00:00"
 }
