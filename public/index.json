@@ -110999,8 +110999,249 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261108-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp PR #30966：MoE cache 把沒命中的 experts 丟給 CPU 跑＋自動調參腳本",
+      "summary": "已在 11/08 凌晨（台北時間）merge。新增 `--moe-cache-cpu-share`，cache miss 的 experts 直接在 CPU 上算，不必每次搬進 GPU；再附 `scripts/moe-cache-tune.py` 自動掃 `--moe-cache-mib`／cpu-share 找最佳組合，作者桌機範例從 24.2 t/s 拉到 47.6 t/s。對 16GB 卡跑大 MoE（offload 派）是直接可用的提速。",
+      "tags": [
+        "llm_inference",
+        "moe-offload",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/30966",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/30966",
+      "price": null,
+      "vram": "16GB 跑大 MoE 搭配 CPU offload",
+      "license": "MIT"
+    },
+    {
+      "id": "20261108-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "KV cache 量化實測：Qwen3.8-27B 跨 llama.cpp／ExLlamaV3／vLLM 35 種 quant 的 KLD",
+      "summary": "作者用 KL divergence 量化 KV cache 量化的影響，資料集含 agentic tool-use、最長 64k context。結論：8-bit KV 幾乎無損、cache 減半（vLLM 稍有落差）；4-bit KV 影響明顯且隨 context 變長放大（16–32k 比前 4k 多約 15–30% KL），只有權重已經 Q3 以下才可能值得。另外 vLLM checkpoint 都被更小的 GGUF／EXL3 打敗。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "kv-cache"
+      ],
+      "url": "https://erli.xyz/posts/qwen38-27b-quant-kv-comparison/",
+      "source": "r/LocalLLaMA • erli.xyz",
+      "sourceUrl": "https://erli.xyz/posts/qwen38-27b-quant-kv-comparison/",
+      "price": null,
+      "vram": "27B 需 Q4 左右＋8-bit KV 才塞得進 16GB",
+      "license": "不適用（評測文章）"
+    },
+    {
+      "id": "20261108-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "D3D：Decoupled Diffusion Drafting，非同步 speculative decoding（aggregate 3.7×）",
+      "summary": "復旦團隊的 diffusion drafter 不再依賴 target model 的 hidden states，drafting 和 verification 可以並行，打破每輪必須等待的瓶頸。README 數據：GSM8K 4.88×、HumanEval 3.55×、整體 3.72×；HF 上已放 Qwen3／Qwen3.8-27B／Gemma 4 對應的 drafter 權重與訓練資料。",
+      "tags": [
+        "llm_inference",
+        "speculative-decoding",
+        "diffusion-drafter"
+      ],
+      "url": "https://github.com/fudan-generative-vision/D3D",
+      "source": "r/LocalLLaMA • arXiv 2611.06425",
+      "sourceUrl": "https://arxiv.org/abs/2611.06425",
+      "price": null,
+      "vram": "1.7B drafter＋8B target 可本機；32B target 需量化",
+      "license": "MIT"
+    },
+    {
+      "id": "20261108-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "HyperFlow H3 Flash：MiniMax-H3 壓到 13.7B、6 步出影片＋32kHz 立體聲音軌",
+      "summary": "Video Rebirth 把 ~31B 的 MiniMax-H3 壓成 13.7B、4–8 步、免 CFG，影片和同步 stereo 音訊一起生成。GGUF Q4_K_M 9.1GB、Q8_0 14.9GB，有 ComfyUI nodes、Unsloth Studio、stable-diffusion.cpp 支援；RTX 5090 跑 5.2 秒片段約 92 秒。官方實測只到 24GB／32GB，16GB 卡「尚未量測」，text encoder 另需 15.7GB。HN Show HN 58 分。",
+      "tags": [
+        "audio_music_ai",
+        "image_gen",
+        "video-audio-gen",
+        "gguf"
+      ],
+      "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+      "source": "Hacker News (Show HN)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50405263",
+      "price": null,
+      "vram": "Q4_K_M 9.1GB，但 16GB 卡官方未量測、需 --fast-disk",
+      "license": "Apache-2.0（code）"
+    },
+    {
+      "id": "20261108-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "PLaMo 3 Translate：PFN 開權重翻譯 LLM（0.8B／2B／8B／31B）",
+      "summary": "Preferred Networks 放出翻譯專用 LLM 權重，四種尺寸，各自附 GGUF、FP8、NVFP4、W4A16、MLX 版本。官方說 0.8B 在日英、日↔他語翻譯就勝過參數多 30 倍以上的翻譯模型。授權是 PLaMo Community License（非 OSI）。",
+      "tags": [
+        "llm_inference",
+        "translation",
+        "gguf"
+      ],
+      "url": "https://huggingface.co/collections/pfnet/plamo-3-translate",
+      "source": "r/LocalLLaMA • PFN Blog",
+      "sourceUrl": "https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release",
+      "price": null,
+      "vram": "0.8B／2B／8B 直接本機；31B 需 4-bit",
+      "license": "PLaMo Community License"
+    },
+    {
+      "id": "20261108-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "E-Gaborformer：嚴格 causal 的 streaming ASR，每通電話狀態固定約 19MB",
+      "summary": "給即時 voice agent 用的語音辨識 encoder：Gated DeltaNet-2 recurrent 層和 sliding-window attention 以 3:1 混合，時間卷積用固定的 causal Gabor atoms 字典。streaming 狀態恆定約 19MB，同尺寸 causal-attention encoder 十分鐘後會累積超過 1GB；LibriSpeech 上追平或勝過 E-Branchformer。",
+      "tags": [
+        "tts_speech",
+        "streaming-asr",
+        "voice-agent"
+      ],
+      "url": "https://arxiv.org/abs/2611.08130",
+      "source": "arXiv eess.AS",
+      "sourceUrl": "https://arxiv.org/abs/2611.08130",
+      "price": null,
+      "vram": "論文架構，0.6B 規模可本機",
+      "license": "不適用（論文）"
+    },
+    {
+      "id": "20261108-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "LiveFoley：即時 streaming video-to-audio 生成",
+      "summary": "針對互動場景的 streaming V2A：用 Trailing Sliding Window 把非 causal 的視覺 encoder 免重訓改成串流模組，保住音畫對齊，look-ahead 壓到人耳察覺不到；後端是 causal autoregressive diffusion，改善逐 patch 去噪造成的音質問題。",
+      "tags": [
+        "audio_music_ai",
+        "video-to-audio",
+        "foley"
+      ],
+      "url": "https://arxiv.org/abs/2611.06043",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.06043",
+      "price": null,
+      "vram": "未公布（論文）",
+      "license": "不適用（論文）"
+    },
+    {
+      "id": "20261108-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "indic-turn-detector：英文＋印度語系的 EOU（說完沒）偵測模型",
+      "summary": "從 Qwen2.5-0.5B fine-tune 的 end-of-utterance 偵測器，看即時轉錄的語意判斷使用者是不是真的講完，補 VAD 只聽靜音的盲點（動詞在句尾的語言特別容易被插話）。支援英文、Hinglish 和七種印度語，附 ONNX、可 CPU 跑。",
+      "tags": [
+        "tts_speech",
+        "voice-agent",
+        "turn-detection"
+      ],
+      "url": "https://huggingface.co/tarun7r/indic-turn-detector",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/tarun7r/indic-turn-detector",
+      "price": null,
+      "vram": "0.5B，CPU 即可",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261108-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NousResearch Arete-27B：Qwen3.8-27B 的價值觀 SFT 版",
+      "summary": "Nous Research 對 Qwen3.8-27B 做 SFT，目標是修掉政治敏感題的拒答和官方說法框架。自家評測 fact score 2.32→2.98（滿分 5），含宣傳內容的回答從 22% 降到 0.9%，官方說通用與 agentic benchmark 沒有明顯退步。目前 HF trending。",
+      "tags": [
+        "llm_training",
+        "sft",
+        "value-alignment"
+      ],
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "source": "Hugging Face Trending",
+      "sourceUrl": "https://huggingface.co/NousResearch/Arete-27B",
+      "price": null,
+      "vram": "27B，16GB 需 Q4 GGUF",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261108-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "dsx-ai-factory/nvke：NVIDIA Kubernetes Engine，裸機 GPU K8s 管理平面",
+      "summary": "今天 GitHub Trending（Python）單日 +123 星。v0.23 加入憑證生命週期管理（cert 續期、etcd 加密金鑰輪替、到期監控）、API 授權基礎，`nvkectl` 可直接在 site cluster 裝整套 NVKE。偏資料中心，個人用不到但值得知道方向。",
+      "tags": [
+        "infra_runtime",
+        "kubernetes",
+        "gpu-cluster"
+      ],
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/dsx-ai-factory/nvke",
+      "price": null,
+      "vram": "資料中心叢集管理，不跑在單卡上",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261108-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Terrarium：給 AI agent 的本機 microVM 沙盒，YAML 明列可碰的資料夾與網域",
+      "summary": "用 `terra` 一個指令＋短 YAML recipe 開出有獨立 kernel／disk 的「box」，只看得到你允許的 host 資料夾和網路目的地，其他全擋（含 agent 呼叫的任何工具）。適合讓 Claude Code、Codex 或接本機模型的 agent 長駐又不碰整台機器。",
+      "tags": [
+        "ai_devtools",
+        "sandbox",
+        "agent-security"
+      ],
+      "url": "https://github.com/terrarium-sh/terrarium",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/terrarium-sh/terrarium",
+      "price": null,
+      "vram": "不適用",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261108-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Obsessive-1.7B：1.1GB 的 web-search subagent（LFM3-1.7B fine-tune）",
+      "summary": "專做一件事：收到事實問題就呼叫一次 web_search，回傳簡短答案＋逐字引文＋URL，找不到就明說。設計成掛在大模型底下當 subagent，不是聊天模型；GGUF 只有 1.1GB。",
+      "tags": [
+        "ai_devtools",
+        "llm_inference",
+        "subagent"
+      ],
+      "url": "https://huggingface.co/banyohavlusu23/Obsessive-1.7B-GGUF",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/banyohavlusu23/Obsessive-1.7B-GGUF",
+      "price": null,
+      "vram": "1.1GB GGUF",
+      "license": "other（見 model card）"
     }
   ],
-  "lastUpdated": "2026-11-08T00:26:24.842650+00:00",
-  "updatedAt": "2026-11-08T00:26:24.842650+00:00"
+  "lastUpdated": "2026-11-08T10:16:04+08:00",
+  "updatedAt": "2026-11-08T10:16:04+08:00"
 }
