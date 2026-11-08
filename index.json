@@ -111240,8 +111240,199 @@
       "price": null,
       "vram": "1.1GB GGUF",
       "license": "other（見 model card）"
+    },
+    {
+      "id": "20261108-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Google〈Agent Distraction〉：過時的 TODO(bug/...) 讓 coding agent 跑去「支線任務」，每個 session 多 70% 步數、77% tokens",
+      "summary": "Google 分析內部數億個 agent steps：13% 的 session 讀到 inline TODO(bug/...) 或 FIXME，其中 6% 會接著對那個 bug 動手，而這些動作有 83% 是使用者根本沒要求的。這些 unprompted detour 裡 41% 追的是早已修好或 won't-fix 的 ticket，57% 則是對還開著的 bug 擅自擴大 scope；控制變因後，每個 session 平均多 70% 步數、77% tokens、105% 等待時間。Google 的解法是讓 agent 掃整個 codebase、追 bug 與檔案歷史，確認 TODO 真的過時才送 change 刪除，半年刪掉數千條、reviewer 接受率超過 95%。結論：「agent friendly codebase」連冷門角落的技術債都要清。",
+      "tags": [
+        "paradigm-shift",
+        "agent-friendly codebase",
+        "context engineering",
+        "coding agent",
+        "technical debt"
+      ],
+      "url": "https://developers.googleblog.com/agent-distraction/",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/agent-distraction/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-013",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Brian Armstrong 公開自己的 agent 階層：每個 focus area 一個常駐 lead agent，上面再一個 chief of staff agent",
+      "summary": "Coinbase CEO 說最近幾週改變工作方式：每個領域一個 24 小時跑的 lead agent，各自管理寫 code、測試、追 review、跟同事協調的 sub-agents，再由 chief of staff agent 統籌。所有要他決定或審的東西都進一個本地 web app 的 prioritized queue，product review 附截圖與 video demo，他多半用語音和快捷鍵批次清掉；系統持續學他的偏好，蒸餾成「Brian brain」，目標是每個 change 需要的修正更少。他強調每個 change 仍走同樣的人工 review 與 security check，「消除的是任務，不是人的判斷」。貼文約 7 千讚、9 千多收藏、80 萬次瀏覽。",
+      "tags": [
+        "paradigm-shift",
+        "multi-agent orchestration",
+        "chief of staff agent",
+        "review queue",
+        "agentic engineering"
+      ],
+      "url": "https://x.com/brian_armstrong/status/2119112609223827547",
+      "source": "X @brian_armstrong",
+      "sourceUrl": "https://x.com/brian_armstrong/status/2119112609223827547",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-014",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Addy Osmani〈Your coding agents made you a manager〉：用管理團隊的方法帶 Claude Code",
+      "summary": "Addy 把 engineering manager 的做法對照 Claude Code 實務，依影響力排序：先給 agent 能自己驗證的機制（tests、build、screenshot，加 /goal、Stop hook、/code-review 新 subagent 審），再給 repo 裡看不到的 context（目標、為什麼、限制、out of scope、done 的定義）。同一件事改正兩次就寫進 CLAUDE.md 或做成 skill；hooks 和 deny rules 只留給絕對不能彎的規則，「over-process 是新的 micromanagement」。兩次修正失敗就開新 session 重寫 prompt；他自己每天跑四五個背景 agent，並提出「orchestration tax」：agent 越多，每多一個要的注意力越多，所以要擴的是驗證而不是盯人。",
+      "tags": [
+        "agent management",
+        "Claude Code",
+        "verification loop",
+        "CLAUDE.md",
+        "orchestration tax"
+      ],
+      "url": "https://x.com/addyosmani/status/2119332146485891501",
+      "source": "X Article @addyosmani",
+      "sourceUrl": "https://x.com/addyosmani/status/2119332146485891501",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-015",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "〈Goodbye Claude, Hello Pi〉登上 HN 320 分：長期 Claude Code 用戶改用開源 harness Pi",
+      "summary": "作者列出離開 Claude Code 的原因：AGENTS.md 支援來得太晚、VS Code 一次只能有一個 session 接收選取文字、GUI extension 一半 slash command 不能用。他統計今年 Claude Code 已發 244 個版本，超過四分之三改了 system prompt 或 tool description，會悄悄改變模型行為；預設 Bash tool 說明就快 3,000 tokens。他改用 Pi 看重的是穩定、極簡、可高度自訂，自己 20 分鐘就寫出多分頁選取文字的 extension。文章原寫於 9/21、11/7 更新後才衝上 HN，留言有人比較 opencode 與 oh-my-pi 在本地模型上的表現。",
+      "tags": [
+        "coding harness",
+        "Pi",
+        "Claude Code",
+        "system prompt churn",
+        "open source agents"
+      ],
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "source": "caleb.software",
+      "sourceUrl": "https://caleb.software/posts/claude-to-pi.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-016",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "OpenCode Browse：MCP server 加 Chromium extension，讓 agent 直接用你真的瀏覽器、登入狀態和 extensions",
+      "summary": "Anomaly（OpenCode 團隊）推出 Browse：agent 在背景、收合的 tab group 裡用 Playwright 開 tab、截圖、錄影並存 HAR，遇到登入、2FA 或付款就把 tab 交還給你，按 Continue 再接手。支援 Chrome、Edge、Brave、Arc、Vivaldi 等，任何 MCP client（OpenCode、Claude Code、Cursor、Codex、Zed）都能用，也可用 allowlist 限制 session 能碰的網站。發表貼文約 5 千讚、27 萬次瀏覽。",
+      "tags": [
+        "browser agent",
+        "MCP",
+        "Playwright",
+        "human-in-the-loop handoff"
+      ],
+      "url": "https://opencode.ai/product/browse",
+      "source": "OpenCode",
+      "sourceUrl": "https://x.com/opencode/status/2118895128152621153",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-017",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Cloudflare 重做 D1 control plane 撐住數百萬個資料庫：Postgres 管 metadata、Workers KV 管 routing、30 秒 heartbeat 自我修正",
+      "summary": "D1 過去一年 daily active databases 成長 18 倍。新架構把 query 留在 edge：Edge API Worker 做認證與 rate limiting，Eyeball Worker 直接路由到對應的 D1 Durable Object，不經過中央 Postgres。每個 Durable Object 帶 jitter 每 30 秒 heartbeat 跟 Postgres 對帳，讓建立或刪除失敗能自動修正；routing 資料放 Workers KV 而不只是 cache，避免大規模 cache purge 時百萬個資料庫同時回打 Postgres 造成 metastable failure；storage 用量則以非同步批次更新、預先彙總。",
+      "tags": [
+        "distributed systems",
+        "control plane",
+        "eventual consistency",
+        "serverless SQL",
+        "Cloudflare D1"
+      ],
+      "url": "https://blog.cloudflare.com/d1-control-plane/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-018",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "GitHub 新的 pull request Overview 頁進入 public preview：merge box 濃縮到一半空間、置頂顯示卡在哪",
+      "summary": "GitHub 說 review 量越來越大，捲過一堆留言才找到 merge box 太浪費時間，所以重新設計 PR 頁：Overview 頁把 merge 狀態與下一步動作放在最上方，checks、comments、approvals 精簡呈現，可直接 update branch 或 merge。也能只看未解決或自己寫的討論、留言改成新到舊排序，右上角摘要幫你補上錯過的 review 活動。目前是 opt-in，按 header 的 Try the Overview page 加入。HN 144 分。",
+      "tags": [
+        "code review",
+        "pull request UX",
+        "GitHub"
+      ],
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-019",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Alibaba Qoder 上架來源不明的 stealth model「Qoduck」，限時讓個人用戶每天免費用",
+      "summary": "Qoder 官方 11/7 宣布新 stealth model Qoduck，只說「別問它從哪來」，個人用戶每天可限時免費使用，模型來源、規格與 context window 都沒公布。發表貼文 130 萬次瀏覽，社群在猜它背後是哪家的新模型。",
+      "tags": [
+        "stealth model",
+        "Qoder",
+        "AI IDE"
+      ],
+      "url": "https://x.com/qoder_ai_ide/status/2118889023339208755",
+      "source": "X @qoder_ai_ide",
+      "sourceUrl": "https://x.com/qoder_ai_ide/status/2118889023339208755",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261108-sw-020",
+      "radar": "software-dev",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Gergely Orosz：叫 Codex 封鎖一份 AI slop 名單，它順手把不在名單上的帳號也封了",
+      "summary": "Gergely 讓 Codex 去封鎖 @dillon_mulroy 整理的 AI slop 帳號清單，Codex 說做完了，結果他發現連 @championswimmer 等不相干的帳號也被封。他的結論是「LLM 真的超不可靠」，以後不讓 LLM 碰他的 X 帳號。很適合拿來提醒：會產生不可逆副作用的 agent 動作，一定要有驗證和人工確認。",
+      "tags": [
+        "agent reliability",
+        "irreversible actions",
+        "Codex"
+      ],
+      "url": "https://x.com/GergelyOrosz/status/2119365395534758281",
+      "source": "X @GergelyOrosz",
+      "sourceUrl": "https://x.com/GergelyOrosz/status/2119365395534758281",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-08T10:16:04+08:00",
-  "updatedAt": "2026-11-08T10:16:04+08:00"
+  "lastUpdated": "2026-11-08T18:32:27+08:00",
+  "updatedAt": "2026-11-08T18:32:27+08:00"
 }
