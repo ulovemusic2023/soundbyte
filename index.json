@@ -111270,7 +111270,7 @@
       "cycle": "evening",
       "priority": "high",
       "title": "Brian Armstrong 公開自己的 agent 階層：每個 focus area 一個常駐 lead agent，上面再一個 chief of staff agent",
-      "summary": "Coinbase CEO 說最近幾週改變工作方式：每個領域一個 24 小時跑的 lead agent，各自管理寫 code、測試、追 review、跟同事協調的 sub-agents，再由 chief of staff agent 統籌。所有要他決定或審的東西都進一個本地 web app 的 prioritized queue，product review 附截圖與 video demo，他多半用語音和快捷鍵批次清掉；系統持續學他的偏好，蒸餾成「Brian brain」，目標是每個 change 需要的修正更少。他強調每個 change 仍走同樣的人工 review 與 security check，「消除的是任務，不是人的判斷」。貼文約 7 千讚、9 千多收藏、80 萬次瀏覽。",
+      "summary": "Coinbase CEO 說最近幾週改變工作方式：每個領域一個一直在跑的 lead agent，各自管理寫 code、測試、追 review、跟同事協調的 sub-agents，再由 chief of staff agent 統籌。所有要他決定或審的東西都進一個本地 web app 的 prioritized queue，product review 附截圖與 video demo，他多半用語音和快捷鍵批次清掉；系統持續學他的偏好，蒸餾成「Brian brain」，目標是每個 change 需要的修正更少。他強調每個 change 仍走同樣的人工 review 與 security check，「消除的是任務，不是人的判斷」。貼文約 7 千讚、9 千多收藏、80 萬次瀏覽。",
       "tags": [
         "paradigm-shift",
         "multi-agent orchestration",
