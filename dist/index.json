@@ -112101,8 +112101,194 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261109-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Intel Arc Pro B70 32GB（$1,299）跑 Qwen3.8-27B：調完約 RTX 5090 一半速度、五分之一價格",
+      "summary": "r/LocalLLaMA 實測 Qwen3.8-27B Q6、約 3K prompt、開 MTP：B70 prefill 約 960 tok/s、gen 約 52 tok/s，對照文中引用的 5090 數字約 2,830／98（5090 數據是作者引用別人的，不是同機實測）。關鍵調整：Mesa 升到 26.x（Vulkan gen 直接快約 3 倍）；Vulkan 下 KV 要留 f16，量化 KV 會大幅變慢；改用 llama.cpp SYCL 後可開 q8_0 KV＋`--spec-type draft-mtp --spec-draft-n-max 4`，215K prompt 的首 token 從 1.9 小時降到 8.6 分鐘。考慮 32GB 第二張卡時可參考。",
+      "tags": [
+        "llm_inference",
+        "gpu-hardware",
+        "intel-arc",
+        "sycl"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr78s5/intel_arc_pro_b70_32gb_1299_vs_nvidia_rtx_5090/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xr78s5/intel_arc_pro_b70_32gb_1299_vs_nvidia_rtx_5090/",
+      "price": null,
+      "vram": "32GB 卡；27B Q6 可全放",
+      "license": "不適用（硬體實測）"
+    },
+    {
+      "id": "20261109-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Kimi-K3.1-Pro-Coder：2.8T MoE 壓到 775GB，experts 分三層放 VRAM／RAM／NVMe",
+      "summary": "把 routed experts 依使用頻率分三級量化（2.81／2.56／1.44 bpw），shared experts、attention、embedding 保留 BF16，從約 1.77TB 降到 774.97GB（-56%）。作者另寫了 Strata fork（hot 放 VRAM、warm 放 pinned RAM、cold 走 NVMe mmap，靠 router lookahead 預取）和 dr-triton 融合反量化 kernel。在 RTX PRO 6000（約 102GB）上 AIME 2025、LiveCodeBench 各 30 題都和原模型一樣 29/30，batch 36.8 tok/s、單流約 10.8。光非 routed 部分就有約 115GB，16GB 卡跑不動，但「依熱度分層放 experts」的做法值得看。",
+      "tags": [
+        "llm_inference",
+        "moe-offload",
+        "quantization",
+        "strata"
+      ],
+      "url": "https://huggingface.co/Grawnch/Kimi-K3.1-Pro-Coder",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/grawnchtoader/strata",
+      "price": null,
+      "vram": "非 routed 權重約 115GB，需 ~96GB 卡＋大量 RAM／NVMe",
+      "license": "Apache-2.0（權重）／MIT（Strata fork）"
+    },
+    {
+      "id": "20261109-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "六張 GPU 塞一個 x16 slot：4× R9700＋2× RTX 3090 走 Broadcom PCIe switch",
+      "summary": "消費級 X570 主機板、Ryzen 9 3900X，靠 PEX88096 switch 卡讓每張卡各拿 gen4 x8，ROCm 和 CUDA 同機共存。四張 R9700 以 TP4 跑 Qwen3.8-27B MXFP4：32K prompt prefill 約 4,700 tok/s、233K 約 3,340，16 個 client 合計 601 tok/s 輸出；四卡同時 P2P 複製 54.7 GB/s，流量不必經過 CPU uplink。文中也記了 BIOS 要關 Resizable BAR、用自寫 kernel module 分配 BAR 等坑。想擴多卡又不想換工作站主機板的話很實用。",
+      "tags": [
+        "infra_runtime",
+        "multi-gpu",
+        "pcie-switch",
+        "rocm"
+      ],
+      "url": "https://doug.sh/posts/six-gpus-one-x16-slot/",
+      "source": "r/LocalLLaMA • doug.sh",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xr2a6y/4x_radeon_ai_pro_r9700_2x_rtx_3090_on_one_x16/",
+      "price": null,
+      "vram": "4×32GB＋2×24GB 多卡",
+      "license": "不適用（建置紀錄）"
+    },
+    {
+      "id": "20261109-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Flide：decision model 專用推理引擎，用 exact state forking 號稱比 vLLM／SGLang 快到 9.5 倍",
+      "summary": "同一段 context（state）只算一次，再 fork 給多個問題各用一次 forward 回答，作者稱答案和單獨問完全一樣。提供 Jev 的 `/v1/systemone` API，今天的 0.1.9／0.1.10 又加了 pplx-decider-v1.1-27b、JEV-35B、Darwin-27B-RSI-Decision 等模型，並支援一個 body 送多個 request。HN 76 分。9.5 倍是作者自己的數字。",
+      "tags": [
+        "llm_inference",
+        "decision-model",
+        "serving"
+      ],
+      "url": "https://github.com/OmniJev/Flide",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50421155",
+      "price": null,
+      "vram": "依模型；27B 級需量化",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261109-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "GTCRN-SS：不到 1M 參數的 causal 語音分離，noisy Libri2Mix SDRi 10.1 dB",
+      "summary": "把輕量的 GTCRN 降噪骨幹改成兩階段的雙人語音分離，完全不看未來 frame（只有 STFT 本身的固定 look-ahead），適合即時串流。殘差能量另外丟到一個不輸出的分支，第二階段再用重建結果細化；用 low-rank adapter 在遞迴執行間傳遞 recurrent state。noisy Libri2Mix 上 SDRi 10.1 dB、SI-SNRi 9.5 dB。voice agent 前處理想分開兩個講者時可參考。",
+      "tags": [
+        "tts_speech",
+        "speech-separation",
+        "streaming",
+        "edge"
+      ],
+      "url": "https://arxiv.org/abs/2611.09358",
+      "source": "arXiv eess.AS",
+      "sourceUrl": "https://arxiv.org/abs/2611.09358",
+      "price": null,
+      "vram": "<1M 參數，CPU 即可",
+      "license": "未標示（arXiv 論文）"
+    },
+    {
+      "id": "20261109-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Spoken dialogue 即時短回應選擇：主回應還在生成時，先播一句預先準備好的短回應",
+      "summary": "為了遮住 LLM 生成和 TTS 的延遲，偵測到 turn-taking 事件時，從預先生成的短回應候選裡用 contrastive learning 學到的模型挑一句先播（像「嗯，我想想」），主回應同時在後面生成。論文稱選擇效果勝過 random 和 LLM baseline，整合後不影響 turn-taking 預測、額外運算很少。做 voice agent 降低體感延遲的現成思路。",
+      "tags": [
+        "tts_speech",
+        "voice-agent",
+        "turn-taking",
+        "latency"
+      ],
+      "url": "https://arxiv.org/abs/2611.09057",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.09057",
+      "price": null,
+      "vram": "輕量模型，可與現有 pipeline 共用",
+      "license": "未標示（arXiv 論文）"
+    },
+    {
+      "id": "20261109-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "samir-vllm：從零寫一個小型 LLM 推理引擎，附 6 小時影片和 85 頁手寫筆記",
+      "summary": "C++17／CUDA 專案，以 Llama 3.2 1B 為對象，一步步寫 safetensors 載入、embedding gather、RMSNorm、RoPE、attention、SwiGLU kernel，再到 KV cache、continuous batching、paged KV cache 和 paged attention，每集都有 YouTube 和筆記（含完整 PDF）。想搞懂 vLLM 內部的話是很好的入門。HN 51 分。",
+      "tags": [
+        "llm_inference",
+        "cuda",
+        "learning",
+        "paged-attention"
+      ],
+      "url": "https://github.com/samir-sarwar/samir-vllm",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50424199",
+      "price": null,
+      "vram": "1B BF16，幾 GB 即可",
+      "license": "未標示（GitHub 顯示 NOASSERTION）"
+    },
+    {
+      "id": "20261109-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Qwen3.5-0.8B 純 x86-64 Assembly 推理：單執行緒 6.51 tok/s",
+      "summary": "tokenization、推理、sampling 全用 Assembly，runtime 不需要 libc 或 Python（Python 只在 build 時準備 tokenizer 表）。AMD EPYC 7B12 單執行緒 6.51 tok/s，對照 Transformers 參考實作 4.34，32 個 token 輸出完全一致；不過參考實作是用 FP32 和 PyTorch fallback kernel，比較基準偏弱。好玩大於實用。",
+      "tags": [
+        "llm_inference",
+        "cpu-inference",
+        "assembly"
+      ],
+      "url": "https://github.com/suayptalha/qwen3_5-assembly",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xr18t3/i_ran_qwen3508b_in_pure_assembly/",
+      "price": null,
+      "vram": "純 CPU",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261109-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "TorchLens：一行 `tl.trace` 抓任何模型每個 operation 的 activation、gradient 和計算圖",
+      "summary": "不用改模型 code、不用掛 hook，直接記錄每個中間 activation、gradient、完整 computational graph 和 800 多個 metadata 欄位，還能 fork 後做 ablation（例如關掉某個 attention head 看輸出怎麼變）。支援 PyTorch、JAX、TensorFlow、MLX、PaddlePaddle、tinygrad，作者稱驗證過 6,400 多個模型。debug 模型或做 interpretability 很方便。",
+      "tags": [
+        "ai_devtools",
+        "interpretability",
+        "pytorch"
+      ],
+      "url": "https://github.com/johnmarktaylor91/torchlens",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/johnmarktaylor91/torchlens",
+      "price": null,
+      "vram": "依被分析的模型",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-11-09T08:32:00+08:00",
-  "updatedAt": "2026-11-09T08:32:00+08:00"
+  "lastUpdated": "2026-11-09T22:20:54+08:00",
+  "updatedAt": "2026-11-09T22:20:54+08:00"
 }
