@@ -111870,6 +111870,237 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261109-sw-013",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Asahi Linux 全面從 MIT 改成 GPLv2+：開發中的 code 被人從個人 fork 拿走、用 LLM 改寫掩蓋出處",
+      "summary": "Asahi Linux 在 11/7 的 Linux 7.3 進度報告裡宣布，所有 repo 開始從 MIT 轉成 GPL v2 or later，往後只用 strong copyleft。原因是他們發現有人想利用寬鬆授權「取代這個專案、在 Apple Silicon Linux 上積極變現」，極端案例是把個人 fork 裡還在開發的 feature code 直接搬走、不標出處發布，或用 LLM 粗略改寫來掩蓋來源，而 MIT 對惡意使用者沒有任何保護。It's FOSS 補充：近幾個月至少有兩個公開 fork 與 AI 輔助開發有關（Asahi 本身禁止 AI 產生的 code 貢獻），GPL 的差別在於修改後散布就得公開原始碼，抄襲更容易被發現。專案沒點名是誰，也還沒說明既有 code 怎麼處理。",
+      "tags": [
+        "paradigm-shift",
+        "open source licensing",
+        "LLM code laundering",
+        "GPL",
+        "copyleft"
+      ],
+      "url": "https://lwn.net/Articles/1105936/",
+      "source": "LWN.net",
+      "sourceUrl": "https://lwn.net/Articles/1105936/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-014",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Pinky：讓 Claude Code、Codex、Cursor 透過 MCP 操作真的 iPhone／Android，付款、送出等危險動作由 gateway 擋下等你按 Allow",
+      "summary": "DIYgod 的新專案，11/6 建立已約 1.2k stars、Apache-2.0。桌面 app 支援 macOS／Windows／Linux，可驅動 Android 10–17 與 iOS 17.4 以上（iOS 27 起免裝東西），任何支援 MCP 的 agent 都能連上，人在電腦上看畫面、隨時接手、事後回顧。重點是安全模型：付款、交易、轉帳預設要你批准，也可設定送訊息、下單、刪除、撥號、安裝都要等；規則跑在 Pinky 的 gateway 裡，agent 無法自己核准，就算螢幕上的文字想說服它也一樣。銀行、錢包、密碼管理 app 預設對 agent 隱形，也不能輸入密碼或 OTP 欄位。介面用 MyGo 在 GPU 上繪製，不是 Electron，下載 16–22 MB。",
+      "tags": [
+        "computer use",
+        "MCP",
+        "human-in-the-loop",
+        "agent permissions",
+        "mobile automation"
+      ],
+      "url": "https://github.com/DIYgod/pinky",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/DIYgod/pinky",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-015",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Simon Willison：把 agent 寫的 PR 描述收進 <details><summary>，開頭只留一段人判斷過的重點",
+      "summary": "Simon 現在大部分改動都是 Claude Code 或 Codex 幫他開的 PR。他說 agent 寫的 PR 描述問題是「太好了」：準確又完整，但一看就是 AI 寫的，讀者第一反應是「我不要讀這麼多」。他的做法：PR 開頭由人挑一段最短、能讓人掌握大意的說明（有時加張截圖），完整的 agent 長文放進 GitHub Markdown 支援的 <details><summary> 摺疊起來，summary 直接寫模型名稱與 effort，例如「Claude Opus 5.5 Medium」，讓人一眼知道是什麼。開頭不一定自己寫，有時是從 agent 文字裡挑出來，但承諾是那段代表人的判斷。X 上這則約 870 讚、5.3 萬次瀏覽。",
+      "tags": [
+        "PR descriptions",
+        "AI slop",
+        "code review",
+        "agentic coding"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-016",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Herb Sutter 發表 P4454R0：C++26 DIS 沒過的關鍵是「語言之父跟委員會意見相左」，提出六條出路",
+      "summary": "接續 C++26 ISO DIS 投票史上首度沒過的新聞，Herb Sutter 在 10/31 的 WG21 文件 P4454R0 中分析：WG21 過去也多次在 10% 以上反對聲中「disagree and commit」通過（C++98 export、C++11 constexpr、C++20 coroutines 與 modules），這次的新狀況是 Bjarne Stroustrup 首度站在少數一方反對 Contracts，而各國標準機構（NB）選擇重視他的意見。他也逐一反駁「是投票規則或灌票造成共識」的說法。文中列出六條路，包括跳過 C++26、拿掉 Contracts 重投、附上理由重投、送新的 DIS 草案、各國自行發布，或把工作移到 ANSI／INCITS 或 Linux Foundation 等開放流程。HN 128 分、Lobsters 熱門。原文 PDF 從這裡 curl 會被擋，連結改用 Lobsters 討論串。",
+      "tags": [
+        "C++26",
+        "Contracts",
+        "WG21",
+        "language governance"
+      ],
+      "url": "https://isocpp.org/files/papers/P4454R0.pdf",
+      "source": "Lobsters（原文 isocpp.org P4454R0）",
+      "sourceUrl": "https://lobste.rs/s/vlagyq/herb_sutter_when_language_s_creator_its",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-017",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Tokio 團隊公開 Topcoat v0.9：全 server-render 的 Rust 全端框架，用 $(...) 把 Rust 表達式轉成 JS，不用 WASM",
+      "summary": "Topcoat 走出私下開發，公開 GitHub repo 與 v0.9。定位是 batteries-included、類似 Rails／Django 的 Rust 全端框架：view! macro 混寫 HTML 與 Rust 控制流程、依檔案樹推導 routing、內容 hash 的 asset pipeline、不用 Node.js 的 Tailwind 整合，並與 Toasty async ORM 整合 migration。核心設計是 $(...)：一般 type-checked 的 Rust 片段，server 端做第一次 render，同時被轉成 JavaScript 在瀏覽器裡即時重跑；需要 server 時把元件標成 #[shard]，參數變了就在 server 重 render 再換 HTML，比較接近 HTMX、Datastar、Phoenix LiveView。另有仿 shadcn/ui、vendored 進專案的 Topcoat UI。Carl Lerche 說它鎖定一般資料庫驅動的網頁 app；0.x 期間沒有長期穩定保證，MIT 授權。",
+      "tags": [
+        "Rust",
+        "full-stack framework",
+        "server-side rendering",
+        "Tokio"
+      ],
+      "url": "https://github.com/tokio-rs/topcoat",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/topcoat-rust-framework/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-018",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Pinterest 用 fine-tune 過的 4B Qwen3 取代多階段 clustering pipeline 推論使用者「journey」，email 點擊 +1.1%",
+      "summary": "Pinterest 把 user-journey 推論從「抽關鍵字、embedding、階層式 clustering、命名、再排序」的多階段系統，換成一個 fine-tune 的 4B 參數 LLM：讀使用者 360 天內最多 150 個行為的時間序列加精簡 profile，直接生成排序好的 journey 名稱（例如整修廚房），再餵進既有推薦系統。搜尋與收藏權重高於隨手點擊，原本的排序與過濾邏輯大多搬進 prompt，包括不要硬合併不相關興趣、壓掉一次性行為與自動 tag，證據不足時允許回傳空結果。成效是 email 點擊率 +1.1%、push 開啟率 +1.3%。是「用小 LLM 取代整條傳統 ML pipeline」的實際案例。",
+      "tags": [
+        "LLM in production",
+        "pipeline consolidation",
+        "recommendation systems",
+        "small language models"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/pinterest-journey/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/pinterest-journey/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-019",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "HN 討論：ChatGPT Desktop 的遠端 agent 可能拿你本機的 SSH agent 去認證，例如 push 到私有 repo",
+      "summary": "HN 使用者 DenGorbachev 指出，ChatGPT Desktop 在遠端機器上跑的 agent 會透過 forward 過去的 SSH agent 使用你本機的憑證，等於能 push 到你的 GitHub 私有 repo。他附的證據是 openai/codex 一個關於「app-server proxy 轉送 SSH agent」的 PR 討論，其中 OpenAI 工程師留言說 Codex app 會用 forwarded-ssh-agent.sock 啟動 app-server；不過該 PR 本身是 closed、沒有 merge，OpenAI 也還沒正式說明。留言區建議把 SSH key 放 macOS secure enclave、每次連線都要指紋確認。有在遠端機器跑 agent 的人值得檢查一下 SSH_AUTH_SOCK。",
+      "tags": [
+        "agent security",
+        "SSH agent forwarding",
+        "Codex",
+        "credential exposure"
+      ],
+      "url": "https://github.com/openai/codex/pull/28131",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50422628",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-020",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "〈Being a meat proxy for AI should be grounds for getting people fired〉：只把任務丟給 agent、原封不動貼回來的人該被懲處",
+      "summary": "SwiftRocks 作者用少見的強硬語氣寫：被指派 review PR、寫功能或回答問題時，只對 agent 說「do X」再把結果原樣貼回、沒有任何引導或驗證，有時還不揭露，這種「meat proxy」應該受懲處，嚴重時甚至開除。他明確區分這跟一般 AI-assisted workflow（人引導、修正、審過才開 PR）不同。理由：浪費同事時間（不如自己開 agent）、逼別人替他驗證 agent 產出、出事時還想用「是 AI 寫的」推卸責任，以及等於領薪水卻沒貢獻。HN 41 分、32 則留言。",
+      "tags": [
+        "AI accountability",
+        "code review",
+        "engineering culture"
+      ],
+      "url": "https://swiftrocks.com/being-a-meat-proxy-for-ai-should-be-grounds-for-getting-people-fired",
+      "source": "SwiftRocks",
+      "sourceUrl": "https://swiftrocks.com/being-a-meat-proxy-for-ai-should-be-grounds-for-getting-people-fired",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-021",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "〈A Critique of GPUI〉：Discord 改用 GPUI 重寫之際，作者主張 GPUI 與 egui 的 state model 撐不起複雜桌面 app",
+      "summary": "作者曾把 GPUI 的 Linux renderer 移植到 wgpu、自建 benchmark，也在做 signal-based 的 Rust 框架 zgui（文中有揭露）。他的論點：每種 UI 架構最後都得知道「什麼變了、誰依賴它」，否則效能無法 scale。他比較五種模型：immediate（egui）每幀重跑全部；Elm（Iced）重跑 view 再 diff；GPUI 要開發者自己呼叫 notify，他形容像 zone.js；signals 重跑元件（Freya、Compose）；以及只跑一次元件、讓 signal 驅動的 closure 更新（Floem、Solid、zgui）。結論是想要精準更新，「元件只跑一次加 signals」是最簡單的 API。背景是 Discord 宣布用 GPUI 重寫 app，而許多 LLM 產出的 clone 選用 egui。HN 107 分。",
+      "tags": [
+        "Rust GUI",
+        "GPUI",
+        "signals",
+        "reactivity"
+      ],
+      "url": "https://blog.zortax.de/posts/a-critique-of-gpui",
+      "source": "Hacker News",
+      "sourceUrl": "https://blog.zortax.de/posts/a-critique-of-gpui",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-022",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Next-Concept Modeling（Stanford，Christopher Ré 團隊）：先生成粗略 concept code 再逐層細化，比 diffusion LM 快 10–31 倍",
+      "summary": "論文提出 NCM：用多尺度 residual VQ-VAE 把文字編成階層式離散 code，transformer 一次生成一層、同一層內全部平行預測，作為 diffusion language model 之外的平行生成路線（DLM 減少 sampling 步數就掉品質，而且每步都處理整段序列）。結果：同參數規模下在 LM1B 的 generative perplexity 勝過最強 DLM 基線且快 21 倍；OpenWebText 與最強 DLM 相當但快 10 倍；XSum 的 ROUGE-L 持平但快 31 倍；Sudoku 推理在所有難度都贏過 autoregressive 與 diffusion 基線。HN 83 分。",
+      "tags": [
+        "non-autoregressive generation",
+        "diffusion language models",
+        "inference speed",
+        "VQ-VAE"
+      ],
+      "url": "https://arxiv.org/abs/2610.14162",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2610.14162",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-023",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "〈I'm not convinced the AI bubble exists〉引爆 HN 500+ 則留言：作者認為資料中心是一次性支出，AI 本身是賺錢的",
+      "summary": "作者反駁「AI 泡沫隨時會破」的普遍假設：AI 公司承諾支出至少 3 兆美元、已花約 1.9 兆，但他認為這主要是蓋資料中心的一次性採購，不是常態營運成本，蓋完支出就會大降；並引用 Anthropic S-1 指每 1 美元 compute 收入 2.08 美元，且已開始賺超過 compute 加基礎建設投資。他也指出 AI 公司必要時能立刻砍免費方案、暫停昂貴研究來降成本，真正的長期風險是為蓋資料中心借的大量債務。HN 294 分、505 則留言，是今天討論最熱的 AI 話題之一，意見兩極。",
+      "tags": [
+        "AI economics",
+        "AI bubble",
+        "compute spending"
+      ],
+      "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
+      "source": "Hacker News",
+      "sourceUrl": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-11-09T08:32:00+08:00",
