@@ -111114,9 +111114,9 @@
         "streaming-asr",
         "voice-agent"
       ],
-      "url": "https://arxiv.org/abs/2611.08130",
+      "url": "https://arxiv.org/abs/2611.08092",
       "source": "arXiv eess.AS",
-      "sourceUrl": "https://arxiv.org/abs/2611.08130",
+      "sourceUrl": "https://arxiv.org/abs/2611.08092",
       "price": null,
       "vram": "論文架構，0.6B 規模可本機",
       "license": "不適用（論文）"
@@ -111134,9 +111134,9 @@
         "video-to-audio",
         "foley"
       ],
-      "url": "https://arxiv.org/abs/2611.06043",
+      "url": "https://arxiv.org/abs/2611.05988",
       "source": "arXiv cs.SD",
-      "sourceUrl": "https://arxiv.org/abs/2611.06043",
+      "sourceUrl": "https://arxiv.org/abs/2611.05988",
       "price": null,
       "vram": "未公布（論文）",
       "license": "不適用（論文）"
@@ -111270,7 +111270,7 @@
       "cycle": "evening",
       "priority": "high",
       "title": "Brian Armstrong 公開自己的 agent 階層：每個 focus area 一個常駐 lead agent，上面再一個 chief of staff agent",
-      "summary": "Coinbase CEO 說最近幾週改變工作方式：每個領域一個 24 小時跑的 lead agent，各自管理寫 code、測試、追 review、跟同事協調的 sub-agents，再由 chief of staff agent 統籌。所有要他決定或審的東西都進一個本地 web app 的 prioritized queue，product review 附截圖與 video demo，他多半用語音和快捷鍵批次清掉；系統持續學他的偏好，蒸餾成「Brian brain」，目標是每個 change 需要的修正更少。他強調每個 change 仍走同樣的人工 review 與 security check，「消除的是任務，不是人的判斷」。貼文約 7 千讚、9 千多收藏、80 萬次瀏覽。",
+      "summary": "Coinbase CEO 說最近幾週改變工作方式：每個領域一個一直在跑的 lead agent，各自管理寫 code、測試、追 review、跟同事協調的 sub-agents，再由 chief of staff agent 統籌。所有要他決定或審的東西都進一個本地 web app 的 prioritized queue，product review 附截圖與 video demo，他多半用語音和快捷鍵批次清掉；系統持續學他的偏好，蒸餾成「Brian brain」，目標是每個 change 需要的修正更少。他強調每個 change 仍走同樣的人工 review 與 security check，「消除的是任務，不是人的判斷」。貼文約 7 千讚、9 千多收藏、80 萬次瀏覽。",
       "tags": [
         "paradigm-shift",
         "multi-agent orchestration",
@@ -111431,8 +111431,190 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261108-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama-modchip v2.4.0：純 CPU、64GB RAM 跑 284B DeepSeek-V4-Flash，256K context",
+      "summary": "llama.cpp 衍生專案，主打不用 GPU：README 稱 284B 的 DeepSeek-V4-Flash checkpoint 只有 56.56 GiB、256K context 下峰值 RSS 57.61 GiB，CPU prefill 44.4 tok/s、decode 9.1–14.7 tok/s；30B MoE 純 CPU decode 25–111 tok/s。也有「16GB GPU 放 attention、MoE experts 留在 DDR5」的混合模式（Nemotron／Qwen3-30B 約 80.8 tok/s）。數字都是作者自測，你的 64GB DDR5＋5070 Ti 剛好是它瞄準的配置。HN 62 分。",
+      "tags": [
+        "llm_inference",
+        "cpu-inference",
+        "moe-offload",
+        "deepseek"
+      ],
+      "url": "https://github.com/synchopate/llama-modchip",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50411961",
+      "price": null,
+      "vram": "0 GPU 可跑；需 64GB RAM，16GB GPU 可選配",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261108-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp b12201／b12206：MoE cache 兩個後續修正（Gemma 4 TG 再快 7–9%）",
+      "summary": "接續早上的 PR #30966。b12206（#31888）修掉 CPU 每層都在等 GPU 上 cached experts 的問題，作者說 Gemma 4 搭配 `-cmoe` 和最佳 `--moe-cache-cpu-share` 時 TG 快約 7–9%；b12201（#31497）讓 `llama-speculative` 的 dense draft model 不再套用 MoE cache，避免直接 segfault。用 MoE cache 的話值得更新。",
+      "tags": [
+        "llm_inference",
+        "moe-offload",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12206",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/31888",
+      "price": null,
+      "vram": "16GB 跑 MoE 搭配 CPU offload",
+      "license": "MIT"
+    },
+    {
+      "id": "20261108-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "DSpine：騰訊的並行 speculative drafter，已支援 Qwen3.8-27B",
+      "summary": "每一層都把前一個位置的預測特徵注入下一個位置，讓 parallel drafting 也有因果條件。論文在 Qwen3-8B、temperature 0 下，七項 benchmark 平均 acceptance length 從 DFlash 的 3.77 拉到 4.82（+27.8%），SGLang serving throughput 比 DFlash 高 23.3%。11 月新增 Qwen3.8-27B drafter 和 Apple Silicon（mlx-lm）推理，訓練 code 在 SpecForge。",
+      "tags": [
+        "llm_inference",
+        "speculative-decoding",
+        "sglang"
+      ],
+      "url": "https://github.com/Tencent/DSpine",
+      "source": "r/LocalLLaMA • arXiv 2609.36173",
+      "sourceUrl": "https://arxiv.org/abs/2609.36173",
+      "price": null,
+      "vram": "8B target＋drafter 可本機；27B target 需量化",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261108-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Confucius4-R2T2：網易有道的 stable-prefix streaming ASR，吐出的字不會再改",
+      "summary": "給 voice agent、即時翻譯用的串流辨識：從 Qwen3-ASR-1.7B 後訓練（1,500 小時中英語音，凍結 audio encoder），用作者提出的 Longest Stable Prefix 標註，讓已輸出的 token 永遠不被改寫，下游不用處理回改。論文稱品質接近原模型的 full-context 辨識，且延遲低；權重和 code 已開。",
+      "tags": [
+        "tts_speech",
+        "streaming-asr",
+        "voice-agent"
+      ],
+      "url": "https://huggingface.co/netease-youdao/Confucius4-R2T2",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.06043",
+      "price": null,
+      "vram": "1.7B，16GB 綽綽有餘",
+      "license": "other（見 model card）"
+    },
+    {
+      "id": "20261108-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "8GB AMD＋32GB RAM 的 Steam Machine 跑 Qwen3.8-Flash-Next：decode 約 18 t/s",
+      "summary": "r/LocalLLaMA 實測：stock SteamOS、Navi 33 8GB、Strata 0.2.9 跑 Gyro S TQ1_0（128K context、q4_0 KV），約 8K prompt 下 prefill 219–242 t/s、decode 15–20 t/s，58K／61K prompt 也沒 OOM。唯一有感的調整是 `--set resident-budget-gib=64`（experts 改放引擎自己的 RAM tier，不靠 OS page cache），decode 多約 20%。對 16GB 卡跑大 MoE 也是可參考的旋鈕。",
+      "tags": [
+        "llm_inference",
+        "moe-offload",
+        "strata"
+      ],
+      "url": "https://github.com/Niko1221/Strata",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/agrogov/Steam-Machine-Strata",
+      "price": null,
+      "vram": "8GB VRAM＋32GB RAM 即可",
+      "license": "MIT（Strata）"
+    },
+    {
+      "id": "20261108-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Mage-VL-Cowork：微軟 4B computer-use 模型，llama.cpp 已支援（官方 GGUF）",
+      "summary": "微軟的 4B 混合式 CUA，會自己判斷該點 GUI 還是直接下 terminal 指令，官方稱 OSWorld-Verified 66.0%。llama.cpp PR #31819 已 merge（mtmd 支援），ggml-org 放出 GGUF，可以本機接 agent 當小型電腦操作模型。",
+      "tags": [
+        "cv_ocr",
+        "computer-use",
+        "gguf",
+        "llama.cpp"
+      ],
+      "url": "https://huggingface.co/ggml-org/Mage-VL-Cowork-GGUF",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/31819",
+      "price": null,
+      "vram": "4B，GGUF 直接本機",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261108-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Hugging Face 免費帳號可自架 2 個 ZeroGPU Spaces（每天 5 分鐘 RTX Pro 6000 Blackwell）",
+      "summary": "HF 文件寫明：信箱已驗證、帳號滿 30 天的免費個人帳號可以 host 自己的 ZeroGPU Spaces，免費帳號每日 GPU 額度 5 分鐘、PRO 40 分鐘，底層是 RTX Pro 6000 Blackwell。只限 Gradio、只限個人帳號（org 要 Team／Enterprise）；Reddit 上也有人說新 Space 的 CPU Basic 不見了、有些免費帳號仍顯示 Paid，可能是分批開放。做 demo 很夠用。",
+      "tags": [
+        "infra_runtime",
+        "huggingface",
+        "zerogpu"
+      ],
+      "url": "https://huggingface.co/docs/hub/en/spaces-zerogpu",
+      "source": "r/LocalLLaMA • HF Docs",
+      "sourceUrl": "https://huggingface.co/docs/hub/en/spaces-zerogpu",
+      "price": null,
+      "vram": "雲端 GPU（不吃本機）",
+      "license": "不適用（服務方案）"
+    },
+    {
+      "id": "20261108-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "OpenMausBot：開源版「多 bot 聊天室」桌面 app，今天 GitHub Trending 單日 +1.4k 星",
+      "summary": "Electron 桌面 app，側邊欄每個 bot 都是一個在本機跑的 Claude 或 Codex agent，各自有個性、模型、雲端電腦和連接的 app，像聯絡人一樣聊天、看它做事、重要動作再核准。自稱 Grok Bot 的開源替代品（非官方、無關聯）。",
+      "tags": [
+        "ai_devtools",
+        "agent",
+        "desktop-app"
+      ],
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending",
+      "price": null,
+      "vram": "不適用",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261108-ai-021",
+      "radar": "ai-infra",
+      "date": "2026-11-08",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Observer：用手機＋本機小模型監看任何東西，條件成立就通知你",
+      "summary": "開源、全本機的監看 agent，iOS／Android 都有：預設用 OneJev-0.8b 當 decision model、qwen-0.8b 當 LLM watcher，老手機也跑得動。例子像有人靠近車子就拍照傳給你、洗衣機進入脫水就打電話。授權是 AGPL-3.0。",
+      "tags": [
+        "ai_devtools",
+        "on-device",
+        "agent"
+      ],
+      "url": "https://github.com/Roy3838/Observer",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/Roy3838/Observer",
+      "price": null,
+      "vram": "手機端 0.8B，不需 GPU",
+      "license": "AGPL-3.0"
     }
   ],
-  "lastUpdated": "2026-11-08T18:32:27+08:00",
-  "updatedAt": "2026-11-08T18:32:27+08:00"
+  "lastUpdated": "2026-11-08T22:18:51+08:00",
+  "updatedAt": "2026-11-08T22:18:51+08:00"
 }
