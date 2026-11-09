@@ -111613,8 +111613,265 @@
       "price": null,
       "vram": "手機端 0.8B，不需 GPU",
       "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261109-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Garry Tan 開源 harness eval：7 套 coding harness 跑同樣 20 題全落在 71–79%，真正拉開差距的是每題成本與速度",
+      "summary": "YC 總裁 Garry Tan 公布進行中的開源 eval：Opus 上的 Claude Code、OpenClaw、Hermes、QM，加上 Sol 上的 Codex、OpenClaw、Hermes，同一組 20 個 coding task 通過率全在 71–79%，其中 14 題在每個 setup 結果都一樣，他直說是「題目太簡單分不出來，是測試問題不是平手」，更難的 Terminal-Bench 重跑中。成本差很大：Opus 上每解一題 OpenClaw 約 $0.44、Claude Code $0.22、Hermes $0.24、QM $0.19，OpenClaw 每次嘗試約 99 秒、Claude Code 約 40 秒；Sol 上 Codex 最便宜也最快（$0.17）。目前建議依成本與速度選：Opus 配 Claude Code、Sol 配 Codex。前一天他也說每個新模型都該用 eval 回頭刪 skill，已因 Opus 5.5 做得更好而拿掉 /investigate。",
+      "tags": [
+        "agent harness",
+        "evals",
+        "cost per solved task",
+        "Terminal-Bench",
+        "eval-driven development"
+      ],
+      "url": "https://x.com/garrytan/status/2119492448200405110",
+      "source": "X @garrytan",
+      "sourceUrl": "https://x.com/garrytan/status/2119492448200405110",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "前 GitHub CEO 的 Entire 重新設計 Git forge：用「trails」取代 PR timeline，每次 push 都有 review agent 打分，分數穩定才 merge",
+      "summary": "InfoQ 介紹 Entire：Thomas Dohmke 認為 PR 模型是為人對人的非同步 review 設計，agent 高速產生與迭代 code 後，PR timeline 變成「只有 agent 會讀的 audit log」。Entire 的 trails 可從 bug report 或 feature request 開啟、可跨多個 repo，每次 push 由 cloud sandbox 裡的 review agent 依 code quality、security、slop、是否需要人工 review 給分與理由，並顯示最近 5 次加本次的分數，因為 one-shot loop 常漏掉關鍵問題；所有 finding 都要 resolve 或關掉、通過 repo 層級 Gates 才能 merge。另有 continuous memory，由開源的 entire-graph（預先算好的 repo 地圖：ranked code search、定義與呼叫者、types、routes）與 entire-brain（結合 codebase 地圖、過去 agent session 與 Git 歷史）組成，宣稱 push 比 GitHub 快最多 89 倍。",
+      "tags": [
+        "paradigm-shift",
+        "agent-native git forge",
+        "trails",
+        "continuous memory",
+        "code review"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/entire-git-forge-coding-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/entire-git-forge-coding-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "〈Agent memory needs its OpenTelemetry moment〉（HN 170 分）：agent 記憶格式各自為政，該像 OTel 一樣先談好 data model",
+      "summary": "LoreKit 作者（在 Dash0 做 OpenTelemetry）指出一台開發機上的 agent 記憶至少四種互不相通的形狀：AGENTS.md／CLAUDE.md／Cursor .mdc、Anthropic memory tool 的 /memories 檔案、GitHub 端的 Copilot Memory、memory MCP server 的 JSONL knowledge graph，CI agent 學到的教訓 editor agent 讀不到。他把 Letta、Mem0、LangGraph BaseStore、Graphiti／Zep 等並排比較 memory 單位、定址與遺忘方式，主張比照 2019 年 OpenTracing 與 OpenCensus 合併成 OTel 的路：先談好 data model、semantic conventions、protocol 和 reference implementation，各家再去比怎麼用資料；並點名 MCP 與 AGENTS.md 已在 Linux Foundation 的 Agentic AI Foundation，是現成的中立場所。",
+      "tags": [
+        "agent memory",
+        "interoperability",
+        "OpenTelemetry",
+        "AGENTS.md",
+        "MCP"
+      ],
+      "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+      "source": "LoreKit Blog / Hacker News",
+      "sourceUrl": "https://www.lorekit.io/blog/open-agent-memory-format",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "「Opus 5.5 被 nerf 了？」1,400 個 Claude Code session 顯示 11/3 起 thinking 風格驟變，Theo 認為是 reasoning summarizer 在改",
+      "summary": "@shanemelaugh 讓 Gemini 4 Argon 分析 1,400 個 Claude Code session，圖表顯示 11/3 約 18:00 UTC 起，同樣的 model ID 與 CLI 版本下，visible thinking 以「I'm…」開頭的比例從二成多跳到 61.3%，「I should / I need to」從約五成掉到 10.9%，em dash 使用率掉到 6.5%，且是在 7 個進行中的 session 裡途中發生；圖表本身註明這只代表行為改變，不證明權重被換。貼文近 40 萬次瀏覽。Theo 回應自己測下來能力沒退化，看起來是 Anthropic 按帳號逐步 rollout 新的 reasoning summarizer，想修好這幾週很糟的 reasoning trace。Anthropic 尚未說明。",
+      "tags": [
+        "Claude Opus 5.5",
+        "reasoning summarizer",
+        "model drift",
+        "Claude Code"
+      ],
+      "url": "https://x.com/shanemelaugh/status/2119192075505893695",
+      "source": "X @shanemelaugh",
+      "sourceUrl": "https://x.com/shanemelaugh/status/2119192075505893695",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈How I'm fighting the AI Brain Fry〉（HN 133 分）：把平行 agent 工作改成 git 裡的 priority queue，只把需要人判斷的事送進「owner inbox」",
+      "summary": "作者描述用 Claude Code／Codex 同時開 20 個 thread 後腦袋燒掉的狀況，認為問題是 sequencing 與 context。做法：每張 ticket 是 repo 裡的 markdown 檔、board 狀態是 commit 進 git 的 snapshot，session 掛了 queue 還在；agent 分輪處理 board，研究新 ticket、只實作人標記為安全的項目、跑 tests 與 browser check，敏感 code 走 branch 先問，永遠不碰 production deploy。需要他決定的事由 script 整理成優先排序的 owner inbox，用每輪從 git 重建的 Claude artifact 頁面閱讀，裁決再寫回 git。關鍵是一次只拿一件、做完就放回 queue，context 跟著關掉。同一天 Node.js／Deno 作者 Ryan Dahl 也說跟 coding agent 對話更像回 email 而不是 IRC，想知道 agent 能不能做成 email client 或 mailing list 介面。",
+      "tags": [
+        "AI brain fry",
+        "owner inbox",
+        "async agent workflow",
+        "human-in-the-loop",
+        "context switching"
+      ],
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "source": "sergeykuhne.com / Hacker News",
+      "sourceUrl": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Latent Space 訪 Stanford CS146S 講師 Mihail Eric：學生已能 one-shot 去年作業，新作業改成要給開源專案送 patch、由 maintainer review",
+      "summary": "AI Engineer YouTube 頻道破百萬訂閱的特別集。Mihail Eric 在 Stanford 教 The Modern Software Developer（CS146S），也在 Monaco 帶 AI。第一屆有九份作業加 capstone，但他發現學生已能 one-shot 很多練習，調查的大二大三生也全都在用 agent，所以新作業要貢獻開源專案：agent 一下午就能寫出 feature，但你還是得搞清楚 maintainer 要不要、code 為什麼這樣寫、patch 會弄壞什麼。也推薦 Geoffrey Litt 的 explain-diff skill，把 diff 轉成視覺化導覽再考你。Monaco 端：code review 產品評估後留用 Devin，但 agent workspace 因為跟自家 cloud 綁太深而自建，他的原則是「You buy to learn, and you build to keep」；自建的 Hal 能讓工程師叫它查 incident 並開 PR，業務也能問它產品怎麼運作。",
+      "tags": [
+        "AI-native engineering",
+        "CS education",
+        "background agents",
+        "agent workspace",
+        "buy vs build"
+      ],
+      "url": "https://latent.space/p/cs146s/",
+      "source": "Latent Space",
+      "sourceUrl": "https://latent.space/p/cs146s/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "systemd 正式合併 Rust 支援：新的 leaf binary 可用 Rust 寫，核心 shared library 等 Rust stable ABI 才考慮",
+      "summary": "Christian Brauner 與 Lennart Poettering 說明：systemd 現有超過 180 個 binary，Rust 只開放用在個別 binary（leaf），libsystemd-shared.so 等根元件仍是 C，因為 Rust 缺乏一等公民的 shared library 支援（stable ABI 問題），靜態連結會讓每個 binary 重複塞進 Rust code。原則包括：C 寫的核心 API（例如純 fd-based 的 chase*() 路徑查找）包成 crate 給 Rust 用；Rust binary 的參數解析、help、錯誤訊息要跟 C 版完全一致；不用 cargo，沿用 meson 建置，部分原因是 cargo 的 supply-chain 風險；嚴格控管相依套件。目前在 Lobsters 熱門。",
+      "tags": [
+        "Rust",
+        "systemd",
+        "stable ABI",
+        "meson",
+        "supply chain security"
+      ],
+      "url": "https://amutable.com/blog/systemd-loves-rust",
+      "source": "Amutable Blog / Lobsters",
+      "sourceUrl": "https://amutable.com/blog/systemd-loves-rust",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈Why I will not be using LLMs in my coding〉衝上 HN、217 則留言：做過 ML 的工程師列出不用 coding agent 的理由",
+      "summary": "芬蘭 PHP／JS 開發者 Kristian Polso 自述做過十年 production ML（Keras 影像辨識、TensorFlow 空品預測），但決定工作上不用 LLM 和 agent。理由包括：連續用幾小時後覺得混亂、迷失，並引用 Microsoft 等研究談認知負擔；Claude 產出的 code 註解、測試一大堆，看起來很厲害，但他 review 過一些本來幾行 schema 變更加 migration 就能解決的問題，Claude 卻整套重做；全由 agent 寫的 code 最後沒人看得懂；喜歡寫 code 本身；環境成本；以及身為 EU 公民對美國公司、GDPR 與 CLOUD Act 的疑慮。他也承認卡關時問 agent 有幫助，只是覺得不值得。",
+      "tags": [
+        "AI skepticism",
+        "cognitive debt",
+        "maintainability",
+        "developer experience"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50412591",
+      "source": "polso.info / Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50412591",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison 讓 Claude 比較 SQLite extension 用 C 與 Rust 寫：Rust 版一開始比較快，最後手寫 C parser 反超約 2 倍",
+      "summary": "Simon 遛狗時用 Claude chat（Opus 5.5）研究 parse_number() 這個 SQLite 函式（去掉 , $ £ %、處理負號、無法解析回 NULL）用 C 和 Rust 寫的差別。C extension 只有 14 KB，Rust 版 321 KB（rusqlite）與 298 KB（sqlite-loadable-rs），但 Rust 一開始比較快，因為 Rust 對應 strtod 的實作快一倍；再請 Claude 自寫 C 的十進位 parser 後，C 版每列 16–19 ns，約比 Rust 快 2 倍，四個版本經 800 萬次 fuzz check 結果一致，最後整理成 simonw/research 的研究報告。",
+      "tags": [
+        "SQLite extension",
+        "Rust vs C",
+        "AI-assisted research",
+        "performance"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Outlook.com 未公告就開始拒收沒有 DMARC 紀錄的網域來信（HN 212 分），小量寄件者也中招",
+      "summary": "MailRoute 觀察到自 11/5 起，outlook.com、hotmail.com、live.com、msn.com 會退回部分來自未發布 DMARC 紀錄網域的信，錯誤為 550 5.7.1 Message lacks SPF/DKIM/DMARC Auth Records，被退的網域多數 SPF、甚至 DKIM 都正常，缺的是 DMARC。不同於 2025 年 5 月起針對每天寄超過 5,000 封的大量寄件規則，這次連小辦公室的一封回信都可能被退，而且只退一部分、重寄可能又成功，很容易被當成偶發錯誤。截至 11/6 Microsoft 沒有任何公告；解法是加一筆 TXT：v=DMARC1; p=none。有寄系統通知信的服務值得檢查。",
+      "tags": [
+        "email deliverability",
+        "DMARC",
+        "Outlook.com",
+        "DNS"
+      ],
+      "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "source": "MailRoute Blog / Hacker News",
+      "sourceUrl": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "OpenAI Developers 只發一支 15 秒影片寫「Tomorrow.」，50 萬次瀏覽，開發者在等今天的發表",
+      "summary": "@OpenAIDevs 11/8 晚間（台北 11/9 04:04）發出只有「Tomorrow.」的影片預告，約 7.8 千讚、50 萬次瀏覽。官方沒說要發表什麼；社群連日來在等新模型與 Codex 更新，但都還是猜測，晚報再追。",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "teaser"
+      ],
+      "url": "https://x.com/OpenAIDevs/status/2119521359185478140",
+      "source": "X @OpenAIDevs",
+      "sourceUrl": "https://x.com/OpenAIDevs/status/2119521359185478140",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261109-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-09",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "BLA（Blind LLM Agents）：開源 Counter-REA 工具在 build 產物裡埋誘餌，讓 AI 逆向工程 agent 白燒 token，GitHub 3.8k stars",
+      "summary": "BLA 是 CLI 加 MCP server（README 說有 25 個 defense tools），針對 morluto/rea 這類 AI reverse-engineering agent，宣稱支援 19 種以上產物（Electron .asar、JS bundle、Python、WebAssembly、.dex、.ptx 等），流程是 Poison → Exhaust → Hallucinate：放可信的假 key 與誘餌邏輯、觸發分析器的資源上限、引導到假的 state machine，同時保持 100% runtime equivalence。README 列出 300×–2,800× token 放大，但明確標註多數數字是依 REA 限制推算的 internal estimates。repo 10/25 建立、已約 3.8k stars；X 上推廣時夾帶代幣募款話術，採用前請自己驗證。",
+      "tags": [
+        "AI reverse engineering",
+        "adversarial defense",
+        "MCP",
+        "software protection"
+      ],
+      "url": "https://github.com/qybaihe/bla",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/qybaihe/bla",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-08T22:18:51+08:00",
-  "updatedAt": "2026-11-08T22:18:51+08:00"
+  "lastUpdated": "2026-11-09T08:32:00+08:00",
+  "updatedAt": "2026-11-09T08:32:00+08:00"
 }
