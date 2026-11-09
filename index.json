@@ -112213,7 +112213,7 @@
       "cycle": "evening",
       "priority": "medium",
       "title": "Spoken dialogue 即時短回應選擇：主回應還在生成時，先播一句預先準備好的短回應",
-      "summary": "為了遮住 LLM 生成和 TTS 的延遲，偵測到 turn-taking 事件時，從預先生成的短回應候選裡用 contrastive learning 學到的模型挑一句先播（像「嗯，我想想」），主回應同時在後面生成。論文稱選擇效果勝過 random 和 LLM baseline，整合後不影響 turn-taking 預測、額外運算很少。做 voice agent 降低體感延遲的現成思路。",
+      "summary": "為了遮住 LLM 生成和 TTS 的延遲，偵測到 turn-taking 事件時，從預先生成的短回應候選裡用 contrastive learning 學到的模型挑一句先播，主回應同時在後面生成。論文稱選擇效果勝過 random 和 LLM baseline，整合後不影響 turn-taking 預測、額外運算很少。做 voice agent 降低體感延遲的現成思路。",
       "tags": [
         "tts_speech",
         "voice-agent",
