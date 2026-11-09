@@ -112067,7 +112067,7 @@
       "date": "2026-11-09",
       "cycle": "evening",
       "priority": "low",
-      "title": "Next-Concept Modeling（Stanford，Christopher Ré 團隊）：先生成粗略 concept code 再逐層細化，比 diffusion LM 快 10–31 倍",
+      "title": "Next-Concept Modeling（Christopher Ré、Azalia Mirhoseini 等）：先生成粗略 concept code 再逐層細化，比 diffusion LM 快 10–31 倍",
       "summary": "論文提出 NCM：用多尺度 residual VQ-VAE 把文字編成階層式離散 code，transformer 一次生成一層、同一層內全部平行預測，作為 diffusion language model 之外的平行生成路線（DLM 減少 sampling 步數就掉品質，而且每步都處理整段序列）。結果：同參數規模下在 LM1B 的 generative perplexity 勝過最強 DLM 基線且快 21 倍；OpenWebText 與最強 DLM 相當但快 10 倍；XSum 的 ROUGE-L 持平但快 31 倍；Sudoku 推理在所有難度都贏過 autoregressive 與 diffusion 基線。HN 83 分。",
       "tags": [
         "non-autoregressive generation",
@@ -112089,7 +112089,7 @@
       "cycle": "evening",
       "priority": "low",
       "title": "〈I'm not convinced the AI bubble exists〉引爆 HN 500+ 則留言：作者認為資料中心是一次性支出，AI 本身是賺錢的",
-      "summary": "作者反駁「AI 泡沫隨時會破」的普遍假設：AI 公司承諾支出至少 3 兆美元、已花約 1.9 兆，但他認為這主要是蓋資料中心的一次性採購，不是常態營運成本，蓋完支出就會大降；並引用 Anthropic S-1 指每 1 美元 compute 收入 2.08 美元，且已開始賺超過 compute 加基礎建設投資。他也指出 AI 公司必要時能立刻砍免費方案、暫停昂貴研究來降成本，真正的長期風險是為蓋資料中心借的大量債務。HN 294 分、505 則留言，是今天討論最熱的 AI 話題之一，意見兩極。",
+      "summary": "作者反駁「AI 泡沫隨時會破」的普遍假設：AI 公司承諾支出至少 3 兆美元、已花約 1.9 兆，但他認為這主要是蓋資料中心的一次性採購，不是常態營運成本，蓋完支出就會大降；並引用 Anthropic S-1 指每 1 美元 compute 收入 2.08 美元，且已開始賺超過 compute 加基礎建設投資。他也指出 AI 公司必要時能立刻砍免費方案、暫停昂貴研究來降成本，真正的長期風險是為蓋資料中心借的大量債務。HN 294 分、505 則留言，是今天留言最多的 AI 話題之一。",
       "tags": [
         "AI economics",
         "AI bubble",
