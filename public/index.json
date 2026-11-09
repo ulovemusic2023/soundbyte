@@ -111857,7 +111857,7 @@
       "cycle": "morning",
       "priority": "low",
       "title": "BLA（Blind LLM Agents）：開源 Counter-REA 工具在 build 產物裡埋誘餌，讓 AI 逆向工程 agent 白燒 token，GitHub 3.8k stars",
-      "summary": "BLA 是 CLI 加 MCP server（README 說有 25 個 defense tools），針對 morluto/rea 這類 AI reverse-engineering agent，宣稱支援 19 種以上產物（Electron .asar、JS bundle、Python、WebAssembly、.dex、.ptx 等），流程是 Poison → Exhaust → Hallucinate：放可信的假 key 與誘餌邏輯、觸發分析器的資源上限、引導到假的 state machine，同時保持 100% runtime equivalence。README 列出 300×–2,800× token 放大，但明確標註多數數字是依 REA 限制推算的 internal estimates。repo 10/25 建立、已約 3.8k stars；X 上推廣時夾帶代幣募款話術，採用前請自己驗證。",
+      "summary": "BLA 是 CLI 加 MCP server（README 說有 25 個 defense tools），針對 morluto/rea 這類 AI reverse-engineering agent，宣稱支援 19 種以上產物（Electron .asar、JS bundle、Python、WebAssembly、.dex、.ptx 等），流程是 Poison → Exhaust → Hallucinate：放可信的假 key 與誘餌邏輯、觸發分析器的資源上限、引導到假的 state machine，同時保持 100% runtime equivalence。README 列出 300×–2,800× token 放大，但明確標註多數數字是依 REA 限制推算的 internal estimates。repo 10/25 建立、已約 3.8k stars；X 上也有第三方推廣貼文提議發幣支持作者，採用前請自己驗證。",
       "tags": [
         "AI reverse engineering",
         "adversarial defense",
