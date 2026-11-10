@@ -112287,8 +112287,223 @@
       "price": null,
       "vram": "依被分析的模型",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261110-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Anthropic 發布 Claude Fable 5.2／Mythos 5.2：更便宜、快 30%，Fable 5.2 主導 1,000+ subagents 八天從空資料夾寫出能開機的 OS",
+      "summary": "Anthropic 11/9 更新最強的 Fable 與 Mythos（兩者是同一個底層模型，Fable 加了資安與生物防護、開放給所有人，Mythos 需申請）。輸出最多比 5.1 快 30%，價格降到每百萬 input／output token 8／40 美元，另有 fast mode（約 2.5 倍速，16／80 美元）。官方數據：FrontierCode 2.0 在 Xhigh effort 達 49.1%，是目前已發布模型最高；High effort 跟 Opus 5.5 最佳成績差不多但成本約一半。Anthropic 說核心 codebase 超過 90% 的合併改動已由 Claude 撰寫（有人引導），一個 agent 團隊用 Fable 把正式服務從 Python 遷到 Rust、啟動快約 26 倍；另一個實驗中 Fable 5.2 協調超過 1,000 個 subagents、連跑八天，從空資料夾做出能在筆電開機、有 driver、檔案系統、視窗與安裝程式的 OS。官方仍建議日常先用 Opus 5.5，Fable 可當 Advisor 或 Orchestrator 帶小模型。Artificial Analysis Intelligence Index 給 65 分排第一，但每題成本與速度在 73 個模型中幾乎墊底、非常 verbose。GitHub Copilot 同日 GA（Pro+、Max、Business、Enterprise），預設需要 data retention 以跑安全 classifier。HN 876 分。",
+      "tags": [
+        "paradigm-shift",
+        "Claude Fable 5.2",
+        "multi-agent orchestration",
+        "agentic coding",
+        "subagents",
+        "model pricing"
+      ],
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Meta 推出 Muse Ember：專做 agent 的 subagent 工作，每百萬 token 0.10／0.50 美元，智力對成本比贏 Haiku 5.5 與 GPT-6 Luna",
+      "summary": "Meta Superintelligence Labs 最小、最省的模型，定位就是 agent 一整天重複做的小步驟：tool call、coding subtask、routing、資料擷取、長文件解析。1M context、最多 512K output，今天起在 Meta Model API 提供，每百萬 input／output token 0.10／0.50 美元。Meta 公布的數字：用約三分之一成本追平 Haiku 5.5 的最佳分數，並在 Artificial Analysis 排行的 intelligence 對每題成本前緣上；max reasoning 下 Terminal-Bench 4.0 40.9%（Haiku 5.5 39.2%、Luna 16.4%）、AutomationBench-AA 37.8%（Haiku 13.9%）。Cline 創辦人說它就是為 harness 裡的 subagent 設計；You.com 測得 coding 任務 p95 延遲 2.2 秒。對多 agent 架構來說，「大模型 orchestrate、便宜小模型當工人」的分工又多了一個選項。",
+      "tags": [
+        "Muse Ember",
+        "subagents",
+        "small language models",
+        "cost per task",
+        "agent harness"
+      ],
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "source": "Meta AI",
+      "sourceUrl": "https://research.meta.ai/blog/muse-ember",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft 實驗：SemVer 標籤會改變 coding agent 的行為，同一份會壞的 code 標成 patch，小模型就比較不檢查直接 merge",
+      "summary": "Microsoft 用 Vally 評測工具搭 GitHub Copilot CLI 跑了近 1,000 次：做一個虛構 npm 套件 fluxkit，新版改了函式名稱、會讓 app 壞掉，code 完全相同，只差版本號標 patch 或 major。結果 Claude Sonnet 5.5 被要求升 patch 時 10 次只有 2 次跑測試或讀新 code，標 major 時 10 次全查；Opus 5.5、GPT-6.1 Sol、GPT-6.1 Terra 不管標什麼都會查。第二個實驗讓 agent review 並 merge 依賴更新分支：Claude Haiku 5.5 對 patch 標籤有 37% 沒檢查就 merge，major 只有 7%；全部六個模型合計 patch 13%、minor 9%、major 4%。有 4 次把 main 弄壞，全都是 patch 或 minor 標籤。作者結論：在同一代 Claude 裡模型越小越受標籤影響，讓小模型自動處理 dependency bump 時要特別小心。",
+      "tags": [
+        "agent behavior",
+        "semantic versioning",
+        "dependency upgrades",
+        "agent evaluation",
+        "code review"
+      ],
+      "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-care-about-semver/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-care-about-semver/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenAI 公開 Control Room：每個研究用 inference 都要掛 job_id 與核准的 safety case，決定喊停後 35 秒內切斷模型輸出",
+      "summary": "OpenAI 說模型越強，越需要能快速把它停下來，因此做了 Control Room 這個集中式服務，接上研究基礎設施裡所有 inference 工作（含訓練與評測用的 agentic sampling、資料處理）。做法：workload 啟動時向 Control Room 申請 job_id，並綁定一份核准過的 safety case；之後每次向 inference engine 要 token 都帶 job_id，engine 先問 Control Room 這個 job 有沒有被停，被停就拒絕。搭配 misalignment monitoring，決定介入後 35 秒內停止輸出，而且設計成 Control Room 自己掛掉時也會停止輸出（fail-closed）。官方說已部署在研究環境，對外的 serving stack 本來就比較集中、已能快速下架模型。對自己在跑長時間 agent 的團隊，這是個「用 job id 做 kill switch」的參考架構。openai.com 擋 curl，連結改用 Unite.AI 報導。",
+      "tags": [
+        "AI safety",
+        "kill switch",
+        "fail-closed",
+        "inference infrastructure",
+        "agent governance"
+      ],
+      "url": "https://openai.com/index/control-room",
+      "source": "Unite.AI",
+      "sourceUrl": "https://www.unite.ai/openai-deploys-control-room-to-cut-off-research-model-output/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub 上的整理：Gemini 連結 Gmail／Drive 後，個人檔案內容可能進到人工 reviewer 流程，而且不用 @ 也會被撈",
+      "summary": "一個 GitHub repo 整理指出，Google 2023 年推 Gemini Workspace extensions 時承諾 Gmail、Docs、Drive 內容「不會被人工 reviewer 看到」，但現在 Google Help 說明與 10/16 修改過的那篇 2023 部落格都改成：連結的 Drive／email 會進入人工審查流程，reviewer 看到的「可能就是那封信或檔案」，並警告有機密內容就不要連結。作者測試發現，在 consumer Gemini 開了 Connected Apps 後，隨口提到行程、帳單等話題就會在背景自動查 Workspace，結果是機率性的：有時沒撈、有時摘要、有時直接引用含帳號與個資的段落、有時整封信全文進 context。repo 本身只有約 11 stars，是作者自己的測試，但 HN 339 分。用 Gemini 連 Gmail／Drive 的人值得檢查一下設定。",
+      "tags": [
+        "privacy",
+        "Gemini",
+        "human review",
+        "connected apps",
+        "data retention"
+      ],
+      "url": "https://github.com/thisisme6598/gemini_files/",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/thisisme6598/gemini_files/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare 要做支援 Merkle Tree Certificates 的公開 CA，目標 2027 年初進 Chrome 的抗量子 Root Store",
+      "summary": "post-quantum 簽章大約是傳統簽章的 40 倍大，會讓 TLS 握手變肥。Cloudflare 測試 Merkle Tree Certificates（MTC）：CA 不再一張張簽憑證，而是把憑證資料寫進 append-only Merkle tree、只簽 checkpoint，client 用不到 1 KB 的 inclusion proof 驗證，搭配 landmark 機制後，常見情況下握手只需傳一把 public key、一個簽章和 proof。實驗對 Chrome Beta 146 一半使用者發了數十億張 MTC，中位數快 9%（主要來自省掉中繼憑證，且當時還是用傳統簽章）。實驗已在 8 月結束，Cloudflare 正在做支援 MTC 簽發的公開 CA，目標 2027 年初進 Chrome 抗量子 Root Store，仍需評估。",
+      "tags": [
+        "post-quantum cryptography",
+        "Merkle Tree Certificates",
+        "Web PKI",
+        "TLS"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/cloudflare-merkle-certificates/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/cloudflare-merkle-certificates/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "e-means：把深度學習的 mini-batch 與 EMA 技巧套到 k-means，免調參，GPU 上比 Flash-KMeans 快 10–45 倍且 loss 更低",
+      "summary": "作者指出 k-means 是少數還普遍用 full-batch 的 ML 問題，現有 mini-batch 方法大多還是 1967 年的 MacQueen 規則。e-means 改用 exponential moving average 做 mini-batch 更新，batch size 與 step size 由 scaling laws 自動決定、不用調參，並改進初始化、dead cluster 復活、cosine 排程的 decay，最後加一段降低 loss 的收尾。結果：在多種規模與資料集上 1.2 到 3 個 epoch 就達到 Lloyd 跑 25 個 epoch 的 test loss，端到端在 GPU 比 Flash-KMeans 快 10–45 倍、CPU 比 Faiss 快 8–15 倍。做 embedding clustering、向量索引的人可以留意。HN 252 分。",
+      "tags": [
+        "k-means",
+        "clustering",
+        "vector search",
+        "optimization"
+      ],
+      "url": "https://e-means.github.io/",
+      "source": "Hacker News",
+      "sourceUrl": "https://e-means.github.io/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Simon Willison 用 Claude Code 做 Beep Locator：幾台手機平板當麥克風陣列，把神秘嗶聲定位到 40 公分內",
+      "summary": "Simon 家的雜物間有東西間歇嗶嗶叫，他請 Claude Code 寫了 Beep Locator：一個 Python web server 當主介面，iPad、手機、MacBook 等裝置掃 QR code 連上當 listener，彼此互放聲音估位置（效果不好，後來加了手動拖曳的 Rough mode），接著一起聽嗶聲並三角定位。Claude 先挖出 2007 年的 BeepBeep 論文（two-way sensing、self-recording、sample counting）當基礎。最後定位誤差約 40 公分，找到一台要換電池的老一氧化碳偵測器。是「用 agent 幾小時做出一次性專用工具」的有趣例子。",
+      "tags": [
+        "Claude Code",
+        "disposable software",
+        "acoustic localization",
+        "vibe coding"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈I saw your HN comment〉：LLM 讓「看了你的留言、想請教一下」的推銷信大量出現，作者開始改變回信方式",
+      "summary": "Josh Strange 過去很喜歡收到讀者因部落格或 HN 留言來信，甚至因此雇過人，但他說近兩年變成大多是推銷。他請 Claude 回顧 2013 年以來的這類信件，印證直覺：LLM 能針對你寫過的真實留言產生很像真人的信，常見套路是先稱讚、再丟一個開放式問題，等你認真回了幾段，對方才轉成「我們正好在做……」「下週有 15 分鐘嗎？」。他形容這像被放大攻擊，開始改回簡短的信。HN 403 分、289 則留言。",
+      "tags": [
+        "AI-generated outreach",
+        "cold email",
+        "developer community"
+      ],
+      "url": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
+      "source": "Hacker News",
+      "sourceUrl": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "r/ClaudeCode 熱帖〈A year after the 100% AI mandate nobody understands our code〉上 HN，但原 PO 被懷疑本身是 AI 寫的",
+      "summary": "Reddit 貼文自稱公司強制 100% 用 AI 寫 code 一年後，團隊沒人看得懂自己的 code，有人說「我們一半的人一年沒寫過非 trivial 的東西」。HN 討論集中在：程式碼不是產品，真正的價值是對系統的理解與設計；AI 讓公司變快，但個人失去學習。也有留言指出 Pangram 判定原文 100% AI 生成、原 PO 不回應且隱藏個人頁，所以故事本身真假存疑，值得看的是討論而不是原文。Reddit 原文擋 curl，連結用 HN 討論串。HN 75 分、70 則留言。",
+      "tags": [
+        "AI mandate",
+        "code comprehension",
+        "engineering culture",
+        "skill atrophy"
+      ],
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50433079",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-09T22:20:54+08:00",
-  "updatedAt": "2026-11-09T22:20:54+08:00"
+  "lastUpdated": "2026-11-10T08:32:30+08:00",
+  "updatedAt": "2026-11-10T08:32:30+08:00"
 }
