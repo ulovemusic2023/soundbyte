@@ -112662,8 +112662,217 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261110-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RustingStrata 跑 DeepSeek-V4.1-Flash IQ2_XXS（249GB）：單張 RTX 3060 12GB＋30GB RAM，decode 2–3.6 tok/s",
+      "summary": "純 Rust 的 GGUF 推理引擎（CUDA／Vulkan）新增 DeepSeek-V4.1-Flash 支援：experts 透過 page cache 從 SSD 串流，VRAM 裡放 9GB 的 LRU cache 存常被重用的 experts，attention 和 shared matvec 都在 GPU 上跑。同一台機器對照 llama.cpp b12116 `--cpu-moe`：decode 2–3.6 vs 0.3–1.5 tok/s，teacher-forced top-1 和 llama.cpp 一致率 189/192。限制：只有 greedy decoding、context 上限 4096、還沒有 sampling 和 tool calls，速度隨 page cache 波動很大。16GB 卡＋64GB RAM 的環境會比作者的條件寬裕。",
+      "tags": [
+        "llm_inference",
+        "moe-offload",
+        "ssd-streaming",
+        "rust"
+      ],
+      "url": "https://github.com/RustingStudio/RustingStrata",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xrw6uv/rustingstrata_vs_llamacpp_deepseekv41flash_q2_249/",
+      "price": null,
+      "vram": "12GB 卡＋30GB RAM＋SSD 串流可跑（極慢）",
+      "license": "未標示（GitHub 顯示 NOASSERTION）"
+    },
+    {
+      "id": "20261110-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "VoiceStudio v0.5.8-beta.3：本地版 ElevenLabs，OmniVoice GGUF 走 Vulkan 支援 AMD／Intel／NVIDIA GPU",
+      "summary": "全本地的聲音工作站（voice cloning、voice design、影片配音、聽寫、轉錄、有聲書，號稱 646 種語言），今天在 GitHub trending Python 榜單日增約 1,262 star。昨天的 beta.3 讓 OmniVoice GGUF 在 Windows／Linux 透過 Vulkan 用 AMD、Intel、NVIDIA GPU 加速，Windows 上的 dots.tts 不用裝 Python；PyTorch 下載失敗或 GPU 壞掉也還能用。beta.2 升級到 PyTorch 2.10，修掉 checkpoint 載入的 CVE-2026-24747。授權是 AGPL-3.0，拿來做商用服務要注意。",
+      "tags": [
+        "tts_speech",
+        "voice-cloning",
+        "svc_voice",
+        "desktop-app"
+      ],
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.8-beta.3",
+      "price": null,
+      "vram": "依所選模型；OmniVoice GGUF 16GB 綽綽有餘",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261110-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "社群實測 voice clone TTS：只有 OmniVoice 每個口音都過關，Fish Audio S2 Pro 意外失手",
+      "summary": "r/LocalLLaMA 作者拿一組難模仿的口音（Rebecca Ferguson、Mariangela Melato 等，還有卡通角色的虛構口音）、只用 5 秒樣本，比較 Moss-TTS、Breeze-TTS、Chatterbox-TTS、VibeVoice、Fish Audio S2 Pro 和 OmniVoice。結論是只有 OmniVoice 全部通過，連樣本裡沒有的捲舌音都補出來，生成速度也最快、長段落一次就穩；Breeze-TTS 第二，但有時會飄到「相鄰」口音。這是單人主觀測試，不是正式 benchmark。OmniVoice 本身 Apache-2.0、支援 600+ 語言。",
+      "tags": [
+        "tts_speech",
+        "voice-cloning",
+        "benchmark",
+        "omnivoice"
+      ],
+      "url": "https://github.com/k2-fsa/OmniVoice",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xs46nh/omni_voice_is_the_fastest_and_best_voice_clone/",
+      "price": null,
+      "vram": "OmniVoice 消費級 GPU 即可",
+      "license": "Apache-2.0（OmniVoice）"
+    },
+    {
+      "id": "20261110-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "M5-TTS：50M 參數 LM 的多語＋中文方言 TTS，四顆 CPU 核心即可串流",
+      "summary": "語言模型只有 50M 參數（不含 speech codec），用 local multi-token prediction 一次預測 16 個 codebook，再用 GRPO 加 CER 的 token 級回饋做 post-training。Seed-ZH CER 1.37%、Seed-EN WER 2.91%，比 MOSS-TTS-Nano 錯誤率低 62.2%／35.3%，參數只有一半；四顆 Xeon Gold 6530 核心 RTF 0.653、首個 chunk 225ms。支援 zero-shot voice cloning，但 10 人聽測的自然度比 MOSS-TTS-Nano 低。作者說會釋出訓練與推理 code 和 checkpoints，目前還沒放出。",
+      "tags": [
+        "tts_speech",
+        "on-device",
+        "multi-token-prediction",
+        "chinese-dialect"
+      ],
+      "url": "https://arxiv.org/abs/2611.10162",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.10162",
+      "price": null,
+      "vram": "50M 參數，CPU 即可",
+      "license": "未標示（arXiv 論文，code 尚未釋出）"
+    },
+    {
+      "id": "20261110-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "llm-psicotest：38 輪固定 seed 對話，檢查換 quant 後模型行為有沒有變",
+      "summary": "對任何 OpenAI-compatible endpoint 跑一段 38 輪對話（29 個能力題＋協定回合），題目由 seed 產生、每台機器 byte-identical，全部用程式對答案評分，不用 LLM 當評審，還會檢查前面宣告的輸出規則 20 輪後是否還守得住。作者用 Qwen3.8-Flash-Next GGUF 校準：Strata 上 IQ3_S 四個 seed 拿 29／28／28／27，IQ2_XS 只有 25／26／26／25。Python stdlib only。在 16GB 卡上決定要用哪個 quant 時很實用。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "eval",
+        "gguf"
+      ],
+      "url": "https://github.com/msalsas/llm-psicotest",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xs1my0/llmpsicotest_a_seeded_38turn_conversation_to/",
+      "price": null,
+      "vram": "不吃 VRAM（打你自己的 server）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261110-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ThumbFree：手機上離線跑 Parakeet 0.6B 的語音輸入，Android／iPhone 都能用",
+      "summary": "把 NVIDIA Parakeet 0.6B 放在手機上做 speech-to-text，下載一次模型（約 0.5–0.7GB）後飛航模式也能用。Android 是任何輸入框旁邊冒出泡泡、保留原本鍵盤；iPhone 是帶麥克風鍵的鍵盤。作者在 Pixel 10 上停止說話後約 0.7–0.9 秒出字，iPhone 16 不到 1 秒。預設英文，另一個模型支援 25 種歐洲語言，沒有中文。無帳號、無廣告、無 analytics。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "on-device",
+        "parakeet"
+      ],
+      "url": "https://github.com/kabrapratik28/ThumbFree",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xs8hfw/free_opensource_voice_typing_for_any_app_on/",
+      "price": null,
+      "vram": "手機端，約 0.5–0.7GB 模型",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261110-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ollama v0.40.16：上架 Ripple Preview 65B，Qwen3.8 Flash Next 在 Apple silicon 省約 27GiB 記憶體",
+      "summary": "新增 Ricursive Intelligence 的 Ripple Preview（65B dense、主打 agentic coding，`ollama run ripple-preview`）。其他更新：Qwen3.8 Flash Next 在 Apple silicon 上少用約 27 GiB；`ollama launch claude` 一定把 Claude Code 導到選定的模型；`/v1/responses` 會遵守 `truncation`、預設不再偷偷截斷；Windows on ARM 支援 CUDA 13.5；llama.cpp 同步更新。65B dense 在 16GB 卡上得大量 offload。",
+      "tags": [
+        "llm_inference",
+        "ollama",
+        "release"
+      ],
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+      "price": null,
+      "vram": "Ripple 65B dense 需大量 offload",
+      "license": "MIT（Ollama）"
+    },
+    {
+      "id": "20261110-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "DeepX DX-M2 tape-out：5W 跑 20B–100B 參數 LLM，搭 Samsung LPDDR5x-PIM",
+      "summary": "韓國 edge AI 晶片新創 DeepX 第二代加速器完成 tape-out，2nm、80 TOPS，記憶體頻寬從 50 提升到 150 GB/s，目標在 5W 內以 10–30 tok/s 跑 20B–100B（約 3B–20B active）的 MoE 模型，支援 speculative decoding 和 TurboQuant。和 Samsung 合作把 GEMV 丟進 LPDDR5x-PIM，模擬顯示 Llama3.1-8B 快 6.7 倍，但功耗也變 2.7 倍。樣品預計 2027 年 3 月、量產 2027 秋天；正和台灣 OEM 談 AI PC。HN 137 分。",
+      "tags": [
+        "infra_runtime",
+        "edge-ai",
+        "pim",
+        "npu"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50429545",
+      "source": "EE Times（經 Hacker News）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50429545",
+      "price": null,
+      "vram": "不適用（edge 晶片）",
+      "license": "不適用（硬體）"
+    },
+    {
+      "id": "20261110-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Google 推出 TPU 8tx 和 TPU 8i Max：一個是 confidential inference，一個雙晶片封裝主攻超長 context",
+      "summary": "第八代 TPU 一年內出到第四款。TPU 8tx 和 8t 同一顆 silicon，搭 AMD EPYC 第五代主機，資料和權重在運算中也保持加密隔離，延遲比 8t 低最多 2 倍，也能做私有資料 fine-tune、distill 和 RL。TPU 8i Max 把兩顆 8i 封在一起，compute、SRAM、HBM 頻寬都翻倍，同一機櫃空間塞兩倍 silicon。Google 也提到上個月開源 TorchTPU，PyTorch 和 HF 模型可直接跑，vLLM、SGLang 有現成 TPU backend。HN 209 分。",
+      "tags": [
+        "infra_runtime",
+        "tpu",
+        "confidential-computing",
+        "long-context"
+      ],
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "price": null,
+      "vram": "不適用（雲端硬體）",
+      "license": "不適用（雲端服務）"
+    },
+    {
+      "id": "20261110-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "同一張 H100 每小時 $2.69 到 $12.29：各家 GPU 租用價差 4.57 倍",
+      "summary": "整理 AWS、Azure 和 neocloud 的 on-demand 牌價，只在同型號同記憶體之間比較。H100 SXM 80GB：RunPod Community $2.69、RunPod Secure $3.99、AWS p5.48xlarge $6.88、Azure ND96isr_H100_v5 $12.29（每 GPU 每小時），跑滿一個月是 $1,964 對 $8,972。作者也說明差價不全是利潤：Azure ND 有 400Gbps InfiniBand 和 SLA，單節點 fine-tune 用不到。只比 on-demand、單一區域，Lambda 因新價 11/16 才生效沒算進去。HN 167 分。",
+      "tags": [
+        "infra_runtime",
+        "gpu-cloud",
+        "pricing",
+        "h100"
+      ],
+      "url": "https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing",
+      "source": "Hacker News • GitHub",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50427085",
+      "price": null,
+      "vram": "不適用（雲端租用）",
+      "license": "未標示（GitHub repo）"
     }
   ],
-  "lastUpdated": "2026-11-10T09:04:02+08:00",
-  "updatedAt": "2026-11-10T09:04:02+08:00"
+  "lastUpdated": "2026-11-10T10:21:13+08:00",
+  "updatedAt": "2026-11-10T10:21:13+08:00"
 }
