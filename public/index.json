@@ -113093,8 +113093,240 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261110-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #31185：PLE（engram）檔可以分開放、另外載入，新增 `--shard`／`--ple`",
+      "summary": "pwilkin 的 PR 已在 11/9 合併：llama-server 可以從多個位置載入 model shard，最常見的用法是把 PLE（engram）表放在另一個 GGUF，用 `--ple /path/to/model-engrams.gguf` 載入。轉換腳本也能產生「不含 PLE」和「只有 PLE」兩種 GGUF，目前支援 Gemma4、Qwen3.8Next、GLM5.3Flash。好處是同一份 engram 可以給不同 quant 共用，也能把大檔分散到不同硬碟；之前 Unsloth 說 engram 表可單獨換精度，這下在 llama.cpp 裡直接可用。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "gguf",
+        "engram"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31185",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xsgpby/feat_external_ple_file_loading_by_pwilkin_pull/",
+      "price": null,
+      "vram": "不改變 VRAM 需求，視模型與 quant 而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20261110-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Comet 60B（A12B）GGUF 上架：Multiverse 壓縮版 Nemotron 3.5 Super，保留 MTP head 可直接 speculative decoding",
+      "summary": "社群把 Multiverse Computing 的 Comet_60B_A12B（Nemotron 3.5 Super 的壓縮版）轉成 GGUF，原版 llama.cpp 就能跑：Q4_K_M 42.6GB、Q8_0 64.2GB。MTP head 有保留，llama-server 加 `--spec-type draft-mtp` 就能開 speculative decoding。目前只有文字，vision tower 沒轉。16GB 卡要靠 MoE offload 到 RAM 才跑得動。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "moe",
+        "speculative-decoding",
+        "mtp"
+      ],
+      "url": "https://huggingface.co/Felladrin/gguf-Q4_K_M-Comet-60B-A12B",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbc2r/multiverse_computings_comet_60b_a12b_ggufs_with/",
+      "price": null,
+      "vram": "Q4_K_M 42.6GB，需 16GB VRAM＋RAM MoE offload",
+      "license": "openmdw-1.1"
+    },
+    {
+      "id": "20261110-ai-013",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "project-maya PR #879：CUDA＋ROCm 同一個 process 一起跑 MoE，RTX 5090＋Strix Halo iGPU 號稱快到 48%",
+      "summary": "作者在 project-maya（MIT，可在自家 GPU 跑 GLM-5.3-Flash、DeepSeek-V4.1-Flash 等大型 MoE 的推理引擎）提了 PR：CUDA backend（RTX 5090）負責 attention、dense／shared layers 和 expert cache，ROCm backend（Strix Halo iGPU）同時跑互補的 experts，prefill 和 decode 都一起分工。作者稱最多快 48%；PR 還在 open，maya 作者表示歡迎、會先測再決定是否合併。對單張 5070 Ti 的環境不直接適用，但混合 N 卡／A 卡的人值得關注。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "cuda",
+        "rocm",
+        "mixed-vendor-gpu"
+      ],
+      "url": "https://github.com/mw00/project-maya/pull/879",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xsaurn/cudarocm_dualbackends_llm_inference_for/",
+      "price": null,
+      "vram": "需要 NVIDIA＋AMD 兩張 GPU；大型 MoE 需大量 RAM",
+      "license": "MIT"
+    },
+    {
+      "id": "20261110-ai-014",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Nemotron 3 Diarization 論文：streaming 講者標註擴到 8 人，推理吞吐最高 6.4 倍",
+      "summary": "NVIDIA 公開 Nemotron 3 Diarization 的技術論文：沿用 Streaming Sortformer 的 arrival-order speaker cache，把上限從 4 位講者擴到 8 位，架構改成純 Transformer encoder，再用 learned upsampling 把 80ms 特徵拉到 10ms 解析度。論文稱訓練記憶體省 2.8 倍、訓練快 2.2 倍、推理吞吐最高 6.4 倍，DIHARD III 和 CALLHOME 的 DER 刷新 SOTA，training code 開源。模型權重 9 月已上 Hugging Face。",
+      "tags": [
+        "audio_music_ai",
+        "speaker-diarization",
+        "streaming-asr",
+        "nemotron"
+      ],
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "source": "arXiv eess.AS",
+      "sourceUrl": "https://arxiv.org/abs/2611.12246",
+      "price": null,
+      "vram": "小型 speech 模型，16GB 綽綽有餘（估計）",
+      "license": "openmdw-1.1（HF model card）"
+    },
+    {
+      "id": "20261110-ai-015",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "AudioCodex：完全 causal 的立體聲 streaming autoencoder，約 10Hz latent，給即時生成式音訊用",
+      "summary": "新論文提出 AudioCodex：把立體聲音訊壓成約 10Hz 的連續 latent，編碼和解碼都嚴格 causal，可以拿來做即時、互動式的生成音訊。方法結合 Mean Flow magnitude autoencoder、latent hypersphere projection、bounded-noise augmentation、representation alignment 和 adversarial phase recovery，作者稱在「好生成 vs 好重建」的取捨上贏過現有 SOTA。目前只有論文，沒看到 code 或權重。",
+      "tags": [
+        "audio_music_ai",
+        "audio-codec",
+        "streaming",
+        "latent-audio"
+      ],
+      "url": "https://arxiv.org/abs/2611.12375",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.12375",
+      "price": null,
+      "vram": "論文階段，未公開權重",
+      "license": "未公開（僅論文）"
+    },
+    {
+      "id": "20261110-ai-016",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "同一個 prompt 實測：DeepSeek V4.1 Flash IQ1_M 單 agent 94 tok/s vs Qwen 3.8 FN NVFP4 多 agent 350 tok/s",
+      "summary": "r/LocalLLaMA 今天熱門的對照：同一個「做互動式 V8 引擎」的 one-shot prompt。DeepSeek V4.1 Flash（UD IQ1_M）單 agent 約 60 分鐘、250K tokens、346K context 沒壓縮，第一次就跑起來、按鈕都能用；Qwen 3.8 FN（NVFP4）主 agent＋5 個 subagent 合計約 350 tok/s、70 分鐘，零件更多還有引擎聲，但有浮空零件，兩個 subagent 說要寫檔卻沒寫。作者自己強調只是一次性的趣味實驗，不是 benchmark。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "quantization",
+        "local-agents"
+      ],
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs7ffm/same_prompt_deepseek_v41_flash_vs_qwen_38_fn_94/",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xs7ffm/same_prompt_deepseek_v41_flash_vs_qwen_38_fn_94/",
+      "price": null,
+      "vram": "兩者都需大量 RAM／多卡，16GB 單卡不夠",
+      "license": "依各模型"
+    },
+    {
+      "id": "20261110-ai-017",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "〈Exploring Weight-Space Programming〉論文：只改 1,023 個參數，Qwen3.5-0.8B 的 MATH-500 提升 29.45 分",
+      "summary": "接續這兩週很紅的 Weight-Space Programming（讓 reasoning agent 直接讀寫模型權重），這篇系統性做了 16 條編輯軌跡、7 個 benchmark、Qwen3.5-0.8B／9B 兩種規模。最好的情況 MATH-500 +29.45、IFEval +36.72、SciBench +17.11；Math 編輯過的 checkpoint 不再額外編輯也能讓 GPQA Diamond、IFEval、SciBench 進步。但結果很不穩定，16 條裡有 6 條因為改善無法可靠驗證而保留原權重。code 有放 GitHub，但 repo 沒標授權。",
+      "tags": [
+        "llm_training",
+        "weight-space-programming",
+        "model-editing"
+      ],
+      "url": "https://arxiv.org/abs/2611.09382",
+      "source": "r/LocalLLaMA • arXiv",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xsl4qt/paper_exploring_weightspace_programming/",
+      "price": null,
+      "vram": "0.8B／9B 模型，16GB 可跑",
+      "license": "未標示（GitHub 無 license）"
+    },
+    {
+      "id": "20261110-ai-018",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "gamedecider：400M 的遊戲 NPC 判斷模型，3060 Ti 上每次約 0.1 秒（Apache-2.0）",
+      "summary": "用 Ettin-400M encoder fine-tune 的小模型：給它場景、問題和選項，它回每個選項的機率或「不確定」，例如玩家是不是在威脅守衛、道歉是否真誠、LLM 回覆有沒有洩密或亂編。附 42 個常見問題的 adapter，`pip install` 就能跑本機 server、不連網；同一場景最多 5 個問題成本跟 1 個一樣。限制：只支援英文、長場景在 CPU 上慢、還沒跑公開 benchmark。",
+      "tags": [
+        "ai_devtools",
+        "decision-model",
+        "small-model",
+        "game-ai"
+      ],
+      "url": "https://huggingface.co/holdoutlabs/gamedecider",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xs9nux/i_made_a_400m_model_for_npc_judgement_calls_in/",
+      "price": null,
+      "vram": "400M encoder，CPU 也能跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261110-ai-019",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "mlx-decision：Mac 上 43 分鐘 LoRA 微調 2B decision model 玩 Doom，平均 23.2 kills",
+      "summary": "mlx-decision（Apple Silicon 上跑和訓練 decision model 的開源工具）新增圖片 LoRA fine-tune。作者用約 3,000 張 ViZDoom 畫面訓練 d1-2B，每格回答三個問題（準心上有沒有怪、最近的怪在哪、是否太近），Python 小迴圈把答案轉成動作，每次決策約 0.1 秒。M5 Pro 上 LoRA 43 分鐘，「開槍會中」precision 0.79→0.92，20 局平均 23.2 kills，沒看過的 Freedoom 也有 19.7。",
+      "tags": [
+        "llm_training",
+        "decision-model",
+        "mlx",
+        "lora"
+      ],
+      "url": "https://github.com/armbues/mlx-decision",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xryvbg/i_finetuned_a_2b_decision_model_to_play_doom_on/",
+      "price": null,
+      "vram": "Apple Silicon（MLX）專用，不適用 RTX",
+      "license": "MIT"
+    },
+    {
+      "id": "20261110-ai-020",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Amazon 內部 ticket 分類把 Claude Sonnet 4.6 換成 Strands Decider E4B：成本省 98%、每次呼叫快 78%（HN 455 分）",
+      "summary": "Strands 官方部落格：Amazon 兩位工程師把內部大型 ticketing 系統的 20 類標籤工作，從 Sonnet 4.6 換成 Strands Decider 的 Gemma 4 E4B 版。跑在 SageMaker `ml.g5.xlarge`（A10G 24GB），模型約用 19GiB、單次約 640ms；每百萬張 ticket 從約 $22,200 降到約 $500。他們用 AppConfig 三段開關（BEDROCK／DUAL／DECIDER）在真實流量上並跑比對；意外發現 JSON key 順序會讓機率偏移到 0.19，所以一律排序 key。文章也說清楚：標籤要寫說明、類別常變或 context 塞不進 4K 的場景就不適合。",
+      "tags": [
+        "infra_runtime",
+        "decision-model",
+        "inference-cost",
+        "sagemaker"
+      ],
+      "url": "https://github.com/strands-labs/strands-decider",
+      "source": "Hacker News • Strands Agents Blog",
+      "sourceUrl": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+      "price": null,
+      "vram": "E4B 約 19GiB（官方部署數據），16GB 需量化",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261110-ai-021",
+      "radar": "ai-infra",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Fireworks AI 資安事件波及 Notion：不到 1% workspace 的 Notion AI 對話紀錄可能外洩（HN 93 分）",
+      "summary": "Notion 發公告：推理服務商 Fireworks AI 發生資安事件，Fireworks 在 11/6 通知可能有客戶資料被存取、11/8 確認新的資料集，其中包含 Notion Insights 功能用的 Notion AI 對話紀錄（沒有標註使用者或 workspace、也不含 tool call 結果）。Notion 表示 11/3 起已切斷與 Fireworks 的連線、刪除資料、停用 Insights，也不再透過 Fireworks 提供 open-weight 模型，並建議曾在 Notion AI 貼過密碼或 API key 的人立即更換。用第三方推理平台的人值得檢查一下資料流向。",
+      "tags": [
+        "infra_runtime",
+        "security-incident",
+        "inference-provider",
+        "fireworks-ai"
+      ],
+      "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+      "source": "Hacker News • Notion Help Center",
+      "sourceUrl": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "price": null,
+      "vram": "不適用（雲端服務事件）",
+      "license": "不適用"
     }
   ],
-  "lastUpdated": "2026-11-10T10:44:55.498845+00:00",
-  "updatedAt": "2026-11-10T10:44:55.498845+00:00"
+  "lastUpdated": "2026-11-10T14:26:46.789337+00:00",
+  "updatedAt": "2026-11-10T14:26:46.789337+00:00"
 }
