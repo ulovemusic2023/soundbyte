@@ -112502,8 +112502,168 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261110-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-10",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sahil Bloom：「Adjacent Possible」——下一步能做什麼，取決於現在已經存在什麼",
+      "summary": "來自理論生物學的概念：每個新發展都不是憑空出現，而是解鎖下一批可能性。對創業者來說，不用想一步登天，把「現在手上真實有的東西」往旁邊推一格，就是最務實的路徑。",
+      "tags": [
+        "adjacent-possible",
+        "compounding",
+        "decision-making"
+      ],
+      "url": "https://x.com/SahilBloom/status/2119865150467379497",
+      "source": "Sahil Bloom",
+      "sourceUrl": "https://x.com/SahilBloom/status/2119865150467379497",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-10",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Tulsee Doshi（Gemini 產品主管）：60-20-20 框架與「為什麼 PM 又變重要了」",
+      "summary": "她用 60-20-20 來分配資源：現在就有效的、快要有效的、以及更遠的賭注。在前沿模型實驗室，PM 的工作是定義 eval 與品質標準，而不只是排需求；節目也談到怎麼寫出第一個 eval。",
+      "tags": [
+        "product",
+        "evals",
+        "resource-allocation"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
+      "source": "Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-10",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "William Imoh：一個人用 agent「fellowship」帶約 25 人規模的團隊",
+      "summary": "他把 solo founder 的每個角色指派給一個 AI agent 角色，讓 agent 能看到大部分工作內容，但刻意保留某一件事不開放。他最擔心的不是被取代，而是對模型的依賴。重點：一人公司的槓桿來自「角色分工設計」，不是單一工具。",
+      "tags": [
+        "solo-founder",
+        "ai-leverage",
+        "agents"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo",
+      "source": "Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-10",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "levelsio：AI 讓他終於肯做網站 i18n——不再為了可讀性放棄多語系",
+      "summary": "他一直討厭 i18n，因為得把每個字包進翻譯函式、弄亂程式碼，所以乾脆從不做。有了 AI 之後，這個「因為麻煩而放棄」的成本消失了。啟示：先盤點你一直因為「太煩」而不做的事，現在可能便宜到值得做。",
+      "tags": [
+        "indie-hacker",
+        "ai-leverage",
+        "i18n"
+      ],
+      "url": "https://x.com/levelsio/status/2119516562147426782",
+      "source": "levelsio (X)",
+      "sourceUrl": "https://x.com/levelsio/status/2119516562147426782",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-10",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Sasan Goodarzi（Intuit CEO）：當個有效的 generalist，以及會計師這個通路",
+      "summary": "Stratechery 訪談談到 Intuit 如何靠 44 年撐過一次次平台轉移，以及會計師是最重要的客戶獲取管道，公司想把與會計師的關係從合作夥伴轉成客戶。（內文為訂閱制，此處僅依公開簡介整理。）",
+      "tags": [
+        "distribution",
+        "platform-shift",
+        "leadership"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-intuit-ceo-sasan-goodarzi-about-accounting-and-ai/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-intuit-ceo-sasan-goodarzi-about-accounting-and-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-10",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "levelsio：軟體從沒這麼好做，也從沒這麼難靠它賺錢",
+      "summary": "一句話點出 AI 時代的供需失衡：開發成本崩跌，代表競爭者暴增，護城河要從「能做出來」轉到分發與品牌。",
+      "tags": [
+        "ai-age",
+        "moat",
+        "distribution"
+      ],
+      "url": "https://x.com/levelsio/status/2119773878222549451",
+      "source": "levelsio (X)",
+      "sourceUrl": "https://x.com/levelsio/status/2119773878222549451",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-10",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Dan Koe：不要擔心要花多久，反正難都一樣難",
+      "summary": "與其計較改變人生要 12 個月還 12 年，不如直接投入有意義的事——時間成本不是決策重點。",
+      "tags": [
+        "long-term",
+        "focus",
+        "mindset"
+      ],
+      "url": "https://x.com/thedankoe/status/2119463899774767513",
+      "source": "Dan Koe (X)",
+      "sourceUrl": "https://x.com/thedankoe/status/2119463899774767513",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-10",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Lulu Cheng Meservey：Rule #1 是永遠不要對媒體說謊",
+      "summary": "在 Nvidia 風波的公關回應評論中，她強調真正專業的溝通人員不會說謊，危機時信任是唯一資產。",
+      "tags": [
+        "communications",
+        "trust",
+        "crisis"
+      ],
+      "url": "https://x.com/lulumeservey/status/2119854872019497174",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2119854872019497174",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-10T08:32:30+08:00",
-  "updatedAt": "2026-11-10T08:32:30+08:00"
+  "lastUpdated": "2026-11-10T09:04:02+08:00",
+  "updatedAt": "2026-11-10T09:04:02+08:00"
 }
