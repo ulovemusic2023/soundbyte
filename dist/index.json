@@ -112871,8 +112871,230 @@
       "price": null,
       "vram": "不適用（雲端租用）",
       "license": "未標示（GitHub repo）"
+    },
+    {
+      "id": "20261110-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Amazon 內部工單分類把 Claude Sonnet 4.6 換成 Strands Decider：效果相當、成本少 98%，一年省下數百萬美元 token 費",
+      "summary": "Amazon／AWS 一套超大型內部工單系統原本用 Sonnet 4.6 幫每張票（客戶升級、容量申請、告警、資安發現等）在 20 個類別裡貼標籤，每張都帶很長的 system prompt、輸出 JSON。兩位工程師改用一個月前推出的 Strands Decider：這是「decision model」，不生成文字，只吃 state 加一組選項，回傳每個選項的機率與 confidence。他們試了 Decider 2B 後改用效果更好的 Gemma 4 E4B 版，在 SageMaker ml.g5.xlarge（單張 A10G、24GB）上跑，約佔 19 GiB、每次約 640 ms，並調 confidence 門檻，結果在另一組票上贏過正式環境的 Sonnet。實測平均延遲 4,215 ms 降到 897 ms，每張票總 token 從 6,724 降到 2,010（輸出從 170 變 1）；成本從每百萬張約 22,200 美元降到約 500 美元，約便宜 44 倍。因為 Decider 只有 4,096-token window，他們把每個 label 改寫成一兩句準則當選項，再加一個「none」。兩個坑值得記：JSON key 順序不同會讓機率最多差 0.19，所以現在一律送排序過的 key；還有用 AppConfig 做 BEDROCK／DUAL／DECIDER 三段開關，先雙跑真實流量、逐一判讀分歧，回退只要 45 秒改設定。作者也說明限制：label 需要解釋文字、類別每週變、或 context 塞不進幾千 token 時就不適用。HN 301 分。",
+      "tags": [
+        "decision model",
+        "Strands Decider",
+        "LLM cost reduction",
+        "classification",
+        "shadow traffic"
+      ],
+      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+      "source": "Strands Agents Blog",
+      "sourceUrl": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "paradigm-shift",
+      "title": "Epic 推出 Unreal Engine 5.9 MegaJam Preview：第一個「主要靠 agentic workflow 做出來」的引擎版本，一週完成，還內建 coding agent 面板",
+      "summary": "Epic 在官方論壇說，這版原本沒有要出，一週前才決定趕在 11/12–15 的 Epic AI MegaJam 前推出。少數幾個人指揮成群的 agents，把 UE6 開發分支裡的 AI 工具移植回來，並把 Web 重新做成目標平台：web platform 的 code 由 agents 從 UE4 已退役的 HTML5 平台起步撰寫，工程師負責指揮、review 與測試。Epic 直說這是在學習「多人同時指揮平行 agent 群」怎麼開發引擎，QA 比平常短，部分 agent 寫的 code 還在清理、web renderer 有些是之後要重構的原型。新功能包括：Unreal MCP 隨編輯器自動啟動，工具擴到 rendering、source control、profiling、debugging、gameplay testing、level 建置，還能透過 Fab toolset 讓 agent 搜尋並安裝素材；Unreal Assistant 面板可直接在編輯器裡接 Claude Code、Codex、Cursor 或 OpenCode；Python API 擴充到 audio、MetaSounds、Niagara、PCG 等；用 WebAssembly＋WebGPU 讓專案在瀏覽器跑（目前需 source build 與 C++ 專案，Chrome 最佳）。大型 C++ codebase 開始用 agent 群做正式版本，值得追。",
+      "tags": [
+        "paradigm-shift",
+        "agentic workflows",
+        "Unreal Engine",
+        "MCP",
+        "agent swarms",
+        "WebGPU"
+      ],
+      "url": "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840",
+      "source": "Epic Developer Community Forums",
+      "sourceUrl": "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-013",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "high",
+      "title": "Formalizing CPython：AI agents 寫了 61 萬行 Lean 逐行複製 Python 內部實作並證明，順便挖出 418 個 bug 回報",
+      "summary": "David Andrews 與 Chao Zhang 讓 Opus 5.5 把 CPython 的函式一一改寫成 Lean（可機器檢查證明的語言），流程固定四步：逐行照抄原始 C code（連錯誤訊息和怪角落都保留）、跟真正的 Python 在至少 50,000 組刁鑽輸入上對拍、寫證明交給 Lean 檢查、最後由另一個沒參與的 agent review 並試著打破它，通過才算數。目前 4,071 個函式通過，共 613,318 行 Lean、1,539 個檔案、18,898 個 theorem 與 lemma；CPython 3.15.2 整體完成約 16%（grammar rules 100%、built-in types 35%、標準庫 9%）。過程中產出 418 個 bug 回報，大多很小，但約 55 個能從一般 Python code 讓直譯器 crash 或破壞記憶體。最有參考價值的教訓：第一輪要求 agent「每個函式至少證明一件事」，結果抽查不到一半站得住（某檔案只有 21%），證明都對但沒意義，像「如果有回傳，回傳值 ≥ 0」連永遠 crash 的版本也會通過。所以 reviewer 現在只問一個問題：壞掉的版本能不能也通過這個證明？HN 78 分。",
+      "tags": [
+        "formal verification",
+        "Lean",
+        "AI agents",
+        "CPython",
+        "agent review",
+        "proof quality"
+      ],
+      "url": "https://broyojo.com/python-formalization/",
+      "source": "broyojo.com",
+      "sourceUrl": "https://broyojo.com/python-formalization/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-014",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Expo 開源 Exact：寫一次就能原生跑在 web、macOS、iOS、Linux 的 UI runtime，從設計上就讓 AI agent 能自己 build、操作、測試",
+      "summary": "Exact 用一個小型宣告式語言 Contract 描述介面，資料邏輯用 TypeScript 或 Rust 寫。web 上編譯成一個 ES module，配約 20 KB 的 runtime 直接操作真實 DOM；在 macOS、iOS、Linux 則由 Rust runner 執行，Rust layout kernel 照 CSS 規則排版，再用 AppKit、UIKit 或 GPU painter 畫，沒有 webview、UI 也沒有 JavaScript bridge。「agent native」是第一原則：只有十個操作（tree、screenshot、tap、type、state、layout、logs、clock、prefer、perf）就能驅動所有平台，時鐘由 agent 控制，不用 sleep 等動畫，測試檔在每個平台不改就能跑；作者特別提到前一版的 agent API 長到八十個名稱，這次刻意壓到十個。README 的數字：RealWorld（Conduit）benchmark 上 runtime 26 KB 對 React 的 81 KB，存檔到畫面更新約 99 ms；一個全新 agent 照範例 prompt 做 todo app，約 57 分鐘完成並在三個平台通過測試。目前 pre-1.0、每天在變，沒有 API 穩定性保證。HN 122 分。",
+      "tags": [
+        "Exact",
+        "cross-platform UI",
+        "agent-native",
+        "Rust",
+        "Expo",
+        "Contract language"
+      ],
+      "url": "https://github.com/expo/exact",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/expo/exact",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-015",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Fable 5.2 上線第一天的實戰觀察：一句「這個 codebase 是你的」讓重構率大增，但每個任務反而更貴",
+      "summary": "三個來源一起看：一、Anthropic 官方〈Prompting Claude Fable 5.2〉文件（Simon Willison 摘錄）說，Fable 5.2 很在意 prompt 怎麼描述 code 的歸屬：沒提或說是別人的 code 時，它傾向沿用既有結構、甚至複製重複 code；加上「This codebase is yours: what it's for and how it's built are your call, and you'll keep building on it.」後，在小型 coding 任務中約一半會合併重複 code，沒這句不到十分之一。二、Latent Space AINews 指出每 token 價格降 20%，但 SemiAnalysis GDPx 每個任務成本從 67.16 美元升到 88.15 美元，log 顯示 5.2 有時會寫上百上千個 test case、開 subagents 獨立驗證，換來該榜第一。三、Lex Toumbourou 讓 Fable 5.2 一夜跑完姪子畫的 beat 'em up 遊戲：它丟掉大部分舊 code 重寫，產生約 175 張圖、140 段音效，還自己寫 bot 在 headless browser 跑完 12 關、檢查截圖。HN 406 分。",
+      "tags": [
+        "Claude Fable 5.2",
+        "prompt engineering",
+        "cost per task",
+        "agentic coding",
+        "self-verification"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-016",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "Fireworks AI 資安事件更新：LLMJacking 集團經第三方雲端進入，Notion 證實少於 1% 工作區的 AI 對話紀錄外洩",
+      "summary": "Fireworks 更新 10 月的資安公告：調查（找了 Palo Alto Networks Unit 42）顯示攻擊者與一個以 LLMJacking 為業的犯罪集團有關，也就是盜用 LLM 存取權再把 token 轉賣給非法 routing gateway。10/23 一家託管 Fireworks R&D 機器的第三方雲端出事，10/24 攻擊者藉此進入開發機並跑了未授權 workload，影響範圍除了先前已知的 stored secrets，還有帳務資訊，以及部分客戶的 secrets、datasets 與未完成的 model weights；官方說 Inference、Training SDK 與 Nexus 預設 zero data retention，未受影響。Notion 同步公告：它用 Fireworks 做 Insights 功能的分類工作、也拿來 serve open-weight 模型；這次外洩包含不到 1% 工作區的 Notion AI 對話紀錄，沒有標註使用者或工作區、也不含 tool call 結果。Notion 已關掉 Insights、停止透過 Fireworks serve 模型，受影響的 workspace owner 可在側欄的 Security incident review 查看資料。用第三方 inference provider 的團隊，值得重新檢查會送出去的資料。",
+      "tags": [
+        "security incident",
+        "LLMJacking",
+        "inference provider",
+        "supply chain",
+        "data retention"
+      ],
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "source": "Notion Help Center",
+      "sourceUrl": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-017",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "medium",
+      "title": "InfoQ 實測 LLM「可靠性層」：疊了六層檢查，答案被排好信任度，卻幾乎沒有被改對",
+      "summary": "InfoQ Certified Architect Program 學員的結業研究，用 CADEC 藥物副作用語料（1,250 篇論壇貼文）測試在 LLM 抽取結果外面疊六層檢查：deterministic 詞彙檢查、把可證明的錯丟回去讓模型自我修正、多次 sampling 投票、第二個模型當 judge、拒答無法佐證的、剩下交給人。原本假設每層都會多抓到錯、準確率逐層上升，結果不成立：這些層主要是把答案「依可信度排序」，幾乎沒修正任何答案；自我修正幾乎不觸發、投票沒幫助，judge 有用但結果沒人讀。其他發現：deterministic code 只能證明答案錯、無法證明對；讓模型憑記憶寫 SNOMED code 有 13–18% 根本不存在，改成從選單挑則好十倍；溫度 0 下五個模型家族有四個每次輸出完全相同，唯一的 MoE 模型 gpt-oss:20b 三次只有 70% 一致。作者建議看 yield（正確答案佔全部紀錄的比例），而不只看 accuracy。",
+      "tags": [
+        "LLM reliability",
+        "LLM-as-judge",
+        "verification",
+        "evaluation",
+        "structured extraction"
+      ],
+      "url": "https://www.infoq.com/articles/llm-reliability-layers-limits-accuracy/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/articles/llm-reliability-layers-limits-accuracy/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-018",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Xata 併入 ClickHouse：把「每個 PR、每次 agent run 一個資料庫分支」帶進 ClickHouse Managed Postgres",
+      "summary": "Xata 宣布加入 ClickHouse，要在 ClickHouse Managed Postgres 上做 agentic 能力。Xata 的論點是 agent 讓 coding 產出暴增後，資料庫工作流成了新瓶頸：每個 PR、每次 agent run 都需要一個隔離、有類 production 資料的資料庫，傳統複製太慢太貴。Xata 用 copy-on-write branching，數 TB 的資料庫開分支約 3 秒，子分支有自己的 compute、跑在不同實體節點，不影響母資料庫，另有即時 provisioning 與 scale-to-zero。短期內 Xata 客戶不受影響、仍接受註冊，之後會遷移到 ClickHouse Managed Postgres。",
+      "tags": [
+        "Postgres",
+        "database branching",
+        "copy-on-write",
+        "agent infrastructure",
+        "acquisition"
+      ],
+      "url": "https://xata.io/blog/xata-is-joining-clickhouse",
+      "source": "Xata Blog",
+      "sourceUrl": "https://xata.io/blog/xata-is-joining-clickhouse",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-019",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "Google Cloud spend caps GA：預算到了就擋掉 Gemini API、Cloud Run 的新請求，主要防 agent 迴圈燒錢",
+      "summary": "Cloud Billing Budgets 的 spend caps 正式 GA：某個 project 的某個服務月花費估計到上限時，新請求會被擋、進行中的會跑完並計費，常駐資源繼續跑、不刪任何東西。跟 7 月 preview 相比多了三件事：可用 Budgets API 建立與解除（Google 建議接在 project provisioning，新 sandbox 一建好就有上限）、AI 服務改用即時估算成本觸發（數分鐘內生效，不用等延遲數小時的帳單資料）、每月初自動重置。限制也很明確：只支援 Gemini API、Gemini Enterprise Agent Platform、Cloud Run 與 Cloud Run functions，一個 cap 只管一個 project 加一個服務，估算用牌價、超出的部分照常收費，建議設在略低於真正上限。換句話說它防的是失控的模型或 agent 迴圈，不是忘了關的 GPU 機器。",
+      "tags": [
+        "cloud cost",
+        "spend caps",
+        "Google Cloud",
+        "agent guardrails",
+        "FinOps"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/google-cloud-spend-caps/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/google-cloud-spend-caps/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261110-sw-020",
+      "radar": "software-dev",
+      "date": "2026-11-10",
+      "cycle": "evening",
+      "priority": "low",
+      "title": "〈Horrible public key tricks〉：作者把一段抗議文字直接塞進自己網站 TLS 憑證的 public key",
+      "summary": "作者不滿 TLS 憑證要跑 ACME、幾個月就過期，但又確實想加密流量防被動竊聽，所以做了一張「抗議憑證」：憑證裡他唯一能直接控制的是 public key，於是刻意構造出 base64 後會出現可讀句子的 key，用 openssl s_client 連他的網站就能看到「You don't actually have to pick random private keys / No one checks these things」等字樣，憑證本身仍由 Let's Encrypt 簽發。偏趣味的密碼學小品，HN 172 分。",
+      "tags": [
+        "TLS",
+        "public key cryptography",
+        "certificates",
+        "Let's Encrypt"
+      ],
+      "url": "https://maurycyz.com/projects/badcert/",
+      "source": "Hacker News",
+      "sourceUrl": "https://maurycyz.com/projects/badcert/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-10T10:21:13+08:00",
-  "updatedAt": "2026-11-10T10:21:13+08:00"
+  "lastUpdated": "2026-11-10T10:44:55.498845+00:00",
+  "updatedAt": "2026-11-10T10:44:55.498845+00:00"
 }
