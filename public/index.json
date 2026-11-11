@@ -113998,8 +113998,260 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261112-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ZONOS3-Mini：Zyphra 開源 800M MoE TTS（100M active），zero-shot voice cloning、手機和瀏覽器即時跑",
+      "summary": "Zyphra 新一代 TTS 是 sparse MoE，總參數 800M、active 只有 100M，自訓 ZAC-1 codec 取代 86Hz 的 DAC，sequence mixer 用 3:1 的 Gated DeltaNet＋global attention，post-training 走 DPO 再 GRPO。官方數據：Pixel 9 瀏覽器 TTFA 低於 570ms、M3 MacBook Air 低於 150ms；在自家 ZTTS2-Eval 能力指數排開源第一，其次是 Fish S2 Pro、MOSS TTS v1.5（這是官方自評 benchmark）。支援 43 種語言含中文，年齡、口音、情緒、語速可以控制到單字層級，另有編輯模型可改句子。Runtime 有 CUDA、MLX、C++/ggml（CPU/CUDA/Metal/Vulkan）、WebGPU，也有 SGLang 和 vLLM。",
+      "tags": [
+        "tts_speech",
+        "voice-cloning",
+        "moe",
+        "on-device"
+      ],
+      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+      "source": "r/LocalLLaMA • Zyphra Blog",
+      "sourceUrl": "https://www.zyphra.com/our-work/zonos3-mini",
+      "price": null,
+      "vram": "100M active／800M total，16GB 綽綽有餘",
+      "license": "Apache-2.0（權重）／MIT（runtime repo）"
+    },
+    {
+      "id": "20261112-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Unsloth Dynamic v3.1 擴到 Qwen3.8-27B：2–6 bit 全面更新，UD-IQ4_XS 14.35GB 剛好塞進 16GB",
+      "summary": "Unsloth 把 Dynamic v3.1 量化套到 Qwen3.8-27B，官方說在 DeepSWE、Terminal Bench 等比 UD3、GSQ-RCO、ExLlamaV3 準 5–10%；2-bit 到 6-bit 都重出，只有 3-bit 沒換（UD3 和 UD3.1 差不多）。貼文也正面回應 ISTA 的 GSQ-RCO 比較：Unsloth 跑 14 次 AIME25 算出平均 recovery 93–96%，認為對方只跑一次才得到 100%。HF 上 UD-IQ4_XS 是 14.35GB、UD-Q4_K_S 15.36GB，16GB 卡跑 IQ4_XS 還留一點 KV cache；同一天 Unsloth v0.1.917-beta 也讓 FLUX.2／FLUX.3 解碼少用 36–43% VRAM。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "qwen3.8"
+      ],
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "price": null,
+      "vram": "UD-IQ4_XS 14.35GB／UD-Q3_K_XL 13.15GB",
+      "license": "Apache-2.0（Qwen3.8）"
+    },
+    {
+      "id": "20261112-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Huawei 開源 MACaQ：GGUF 量化 KL divergence 比 Unsloth 低 23.5%，Qwen3.8-27B IQ4_XS 只要 14.96GB",
+      "summary": "Huawei CSL 釋出 model-agnostic 量化工具，輸出 llama.cpp 能直接吃的 IQ2_XXS 到 IQ4_XS GGUF。社群貼文的數字：Qwen3-4B IQ4_XS 的 mean KL 0.028，Unsloth 0.037、Bartowski 0.034，檔案大小幾乎一樣；Qwen3.8-27B IQ4_XS 14.96GB，KL 比 Bartowski 低約 65%。號稱 32.5GB GPU 記憶體 64 分鐘量化 122B 模型，也支援影像、影片、音訊模型（llama.cpp、vLLM、Diffusers）。官方沒放現成 GGUF，要自己量化或用 fork；注意這和上一則 Unsloth 的比較口徑不同（KL vs 任務分數）。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "kl-divergence"
+      ],
+      "url": "https://github.com/huawei-csl/MACaQ",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/huawei-csl/MACaQ",
+      "price": null,
+      "vram": "Qwen3.8-27B IQ4_XS 14.96GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261112-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 FP8 KV-cache：支援 OCP-FP8，可選 per-tensor static scale",
+      "summary": "PR #28392 已在 11/11 凌晨（台北時間）合併，讓 llama.cpp 的 KV cache 能存成 OCP-FP8，執行時支援（非必要的）static per-tensor scale，例子是 nvidia/Mistral-Medium-3.5-128B-NVFP4 這種 KV scale 不是 1 的模型。實作走 graph-level 的縮放，沒有改 `ggml_flash_attn_ext`，和現有 NVFP4／FP8 的做法一致，FA 和一般 attention 都能共用；附了轉檔、載入、context shift 和正確性的 E2E 測試。對 16GB 卡來說，長 context 時多一個省 KV 記憶體的選項。",
+      "tags": [
+        "llm_inference",
+        "kv-cache",
+        "fp8",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/28392",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/28392",
+      "price": null,
+      "vram": "降低 KV cache 用量，長 context 受益",
+      "license": "MIT"
+    },
+    {
+      "id": "20261112-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Apple 被爆在做 Harbor：把 Mac 變私有 AI inference server，Thunderbolt 5 串多台 Mac 合併 unified memory",
+      "summary": "爆料者 Aaron Perris 發現 Apple 旗下 Claris 品牌正在 private preview 一個叫 Harbor 的 Mac app：在 Apple silicon 上本地跑 open-weight 模型、資料不上雲；多台支援 Thunderbolt 5 的 Mac 插上就自動組 cluster、合併 unified memory，能跑單機放不下的模型或撐更高併發，app 內就能瀏覽、下載和載入模型，不用 command line。目前只是爆料，Apple 沒正式宣布，上市時間不明。HN 481 分，是今天最熱的 AI 討論之一。",
+      "tags": [
+        "llm_inference",
+        "apple-silicon",
+        "cluster",
+        "local-server"
+      ],
+      "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "source": "9to5Mac（經 Hacker News）",
+      "sourceUrl": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "price": null,
+      "vram": "不適用（Mac unified memory）",
+      "license": "不適用（Apple 閉源 app）"
+    },
+    {
+      "id": "20261112-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "TTF ternary 訓練：每個權重只要約 1 byte optimizer state，16GB 卡能訓 23B 模型",
+      "summary": "作者做了不需要 full-precision master weights 的 ternary（{-1,0,1}）訓練方法 Two-timescale Threshold Flips，把 AdamW 每個權重約 16 bytes 的 VRAM 壓到 1 byte 以下：單張 24GB 3090 可以訓 27B，16GB 卡可以訓 23B，成品約 1.6 bits/weight。也把 Qwen3.8-27B 轉成 ternary：GSM8K 0.895 和原版一樣，HumanEval 0.84 對 0.93，但會忘掉一些事實；目前檔案含 2GB adapter、約 8GB，在 12GB 筆電 4080 上只有 2–3 tok/s，需要 custom kernel 加速。從頭訓練要上千億 token 才會好用。",
+      "tags": [
+        "llm_training",
+        "ternary",
+        "low-memory-training",
+        "bitnet"
+      ],
+      "url": "https://github.com/oguzeldereli/ttf-ternary",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/oguzeldereli/ttf-ternary",
+      "price": null,
+      "vram": "23B 訓練可塞 16GB；27B 推理約 8GB",
+      "license": "未標示（GitHub 顯示 NOASSERTION）"
+    },
+    {
+      "id": "20261112-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Deletion Tuning：只把不到 0.05% 的權重歸零，就追平 full fine-tuning，而且比較不會忘",
+      "summary": "NeurIPS 2026 論文：在 transformer 的 gate projection 上學一個 binary mask，只把不到 0.05% 的權重設成 0、其他完全不動，在 RLVR、SFT、on-policy distillation 三種 post-training 都能大規模追平 full fine-tuning。訓出來的 mask 比 FFT checkpoint 小幾百到幾千倍；做 RL 時原任務準確率幾乎維持 base 水準，FFT、LoRA、random sparse fine-tuning 最多掉 5.4 分。程式碼和 HF 上的 mask 都已公開。",
+      "tags": [
+        "llm_training",
+        "fine-tuning",
+        "sparse-mask",
+        "continual-learning"
+      ],
+      "url": "https://github.com/agentic-learning-ai-lab/deleting-weights",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/agentic-learning-ai-lab/deleting-weights",
+      "price": null,
+      "vram": "依 base model 而定",
+      "license": "MIT"
+    },
+    {
+      "id": "20261112-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Earlybird：29M 參數 streaming ASR，字還沒講完就先猜出來，中位數提早 90ms",
+      "summary": "給 voice agent 用的 streaming 語音辨識，29M 參數、4-bit 只有 16.8MB。訓練時把音訊隨機截斷（包括字講到一半），要模型把到該時間點為止的字完整預測出來，再加猜接下來兩個字，token 機率就能當每個字的 confidence。LibriSpeech test-clean 上中位數的字在講完前 90ms 就猜對，其他 streaming 模型是講完後 90–400ms；69% 的字在講完前就對。8 個英文 Open ASR Leaderboard 資料集全勝 Moonshine Tiny，和同尺寸的 Whistle 打平。只有英文，論文沒寫 code 釋出狀態。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "streaming",
+        "voice-agent"
+      ],
+      "url": "https://arxiv.org/abs/2611.14421",
+      "source": "arXiv eess.AS",
+      "sourceUrl": "https://arxiv.org/abs/2611.14421",
+      "price": null,
+      "vram": "29M 參數，CPU／手機即可",
+      "license": "未標示（arXiv 論文）"
+    },
+    {
+      "id": "20261112-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "lucidml 開源本地 world model：一張圖變成可即時操控的互動影片，RTX 3060 起跳",
+      "summary": "r/LocalLLaMA 作者釋出第一個公開的 world model（HF 上叫 gta，作者說比通用版穩定），任何圖片都能變成可以即時控制的互動影片，號稱 RTX 3060、4060 以上就能跑。架構是用 learned summaries 的 transformer，技術報告放在 lucidml.ai/summaryformer；另有線上 demo 跑在 Vast.ai 租的 3070–50 系列 GPU。作者自己也說一致性和畫質還有很多限制。",
+      "tags": [
+        "image_gen",
+        "world-model",
+        "real-time",
+        "video"
+      ],
+      "url": "https://huggingface.co/lucidml/gta",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/lucidml/gta",
+      "price": null,
+      "vram": "RTX 3060 12GB 以上（作者自述）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261112-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "傳 NVIDIA 取消 RTX 5080 24GB：3GB GDDR7 顆粒太貴，繼續只賣 16GB 版",
+      "summary": "TechPowerUp 轉述 Board Channels：NVIDIA 已通知 AIC 夥伴取消原訂 2027 年 1 月的 RTX 5080 24GB，理由是記憶體嚴重缺貨、3GB GDDR7 模組太貴會讓 MSRP 大漲，所以繼續用 2GB 顆粒的 16GB 版；短期也沒有 SUPER 改款傳聞，要等 RTX 60「Rubin」。這是傳聞，NVIDIA 本來就沒正式宣布過 24GB 版。對本地 LLM 的意義是 16GB 仍是消費卡的主流上限，你的 5070 Ti 16GB 短期內不會被同價位卡甩開；TechPowerUp 同時另有一則報導說 RTX 50 系列本週最多漲 $500。",
+      "tags": [
+        "infra_runtime",
+        "gpu",
+        "vram",
+        "rumor"
+      ],
+      "url": "https://www.techpowerup.com/354686/nvidia-geforce-rtx-5080-24-gb-reportedly-cancelled-16-gb-model-remains",
+      "source": "TechPowerUp（經 r/LocalLLaMA）",
+      "sourceUrl": "https://www.techpowerup.com/354686/nvidia-geforce-rtx-5080-24-gb-reportedly-cancelled-16-gb-model-remains",
+      "price": null,
+      "vram": "不適用（硬體新聞）",
+      "license": "不適用（硬體）"
+    },
+    {
+      "id": "20261112-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "An Open Field Guide to Inference Engineering：給 platform engineer 的自架推理實戰手冊",
+      "summary": "Upbound（Crossplane／Modelplane 背後的公司）整理的長篇指南，數字以 2026 年 10 月為準。重點包括：KV cache 每 token 大小的算法（Llama 3 70B FP16 約 320KB／token，128K context 一個對話約 40GB）、MoE 模型所有權重都要常駐、要看實際 checkpoint 大小而不是 dtype 表；prefill 吃 compute、decode 吃頻寬；以及他們自架 coding agent 的實測：prompt 中位數 59K token、約三分之二命中 prefix cache，同硬體從 vLLM 換 SGLang 是最大的單一改善。HN 91 分。",
+      "tags": [
+        "infra_runtime",
+        "inference-engineering",
+        "vllm",
+        "sglang"
+      ],
+      "url": "https://docs.modelplane.ai/guides/inference-guide",
+      "source": "Modelplane Docs（經 Hacker News）",
+      "sourceUrl": "https://docs.modelplane.ai/guides/inference-guide",
+      "price": null,
+      "vram": "不適用（指南）",
+      "license": "不適用（文件）"
+    },
+    {
+      "id": "20261112-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "XeMaya：Intel Arc 原生推理引擎，跑 DeepSeek-V4.1-Flash 和 GLM-5.3-Flash",
+      "summary": "XeStrata 的 fork，用 SYCL 和 Level Zero（XMX）讓新的 MoE 模型直接在 Intel Arc 上跑。作者在 B70 32GB、B65 32GB、B60 24GB 上的數字（prefill／generation tok/s）：GLM-5.3-Flash 從 stock llama.cpp SYCL 的 68.3／13.6 提升到 152–161／17.4；DeepSeek-V4.1-Flash Coder 優化後 224.8／21.7；一般版 DeepSeek-V4.1-Flash prefill 還很慢。作者說不是嚴格控制的 benchmark，目前是 alpha。和 NVIDIA 卡無關，但可看出 Arc 大 VRAM 卡在本地 MoE 的潛力。",
+      "tags": [
+        "infra_runtime",
+        "intel-arc",
+        "sycl",
+        "moe"
+      ],
+      "url": "https://github.com/Jumbomuffin777/XeMaya",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/Jumbomuffin777/XeMaya",
+      "price": null,
+      "vram": "不適用（Intel Arc 24–32GB）",
+      "license": "LGPL-3.0"
     }
   ],
-  "lastUpdated": "2026-11-11T19:09:33.279882+00:00",
-  "updatedAt": "2026-11-11T19:09:33.279882+00:00"
+  "lastUpdated": "2026-11-12T03:26:00+08:00",
+  "updatedAt": "2026-11-12T03:26:00+08:00"
 }
