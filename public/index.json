@@ -113583,8 +113583,161 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261111-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ableton 正式公布 Live 13：Step Sequencer、ARA 2、Drum Synth，已開放 public beta",
+      "summary": "Ableton 官方宣布 Live 13，主要更新有 ARA 2 支援（Suite 附 Melodyne Essential）、新的 Step Sequencer、擴充 Racks 與新 devices，以及讓 Push 3 可為每個 Set 自訂介面的 Custom Layouts。正式版預計 2027 年初釋出，現在可先用 public beta；11 月 30 日前買新 Live 12 授權享 8 折，之後可免費升級 Live 13。",
+      "tags": [
+        "ableton",
+        "daw",
+        "midi",
+        "music production",
+        "daw update"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/ableton-announces-live-13/"
+    },
+    {
+      "id": "20261111-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Spotify 預告的 AI 混音工具遭強烈反彈：創作者擔心 consent、credit、compensation",
+      "summary": "Spotify 預計明年初推出的 AI remix 工具，可讓聽眾把慢板改成舞曲、甚至換成別位歌手的聲音，成品只能留在 Spotify 內、不能外發。目前 UMG、Merlin、Believe、Kobalt 已有合作，但是否參與由藝人個別決定；社群出現取消訂閱、改用 Qobuz／Bandcamp 的討論，業界關注點是訓練資料來源、是否 opt-in 與分潤方式。",
+      "tags": [
+        "music ai",
+        "music industry",
+        "voice conversion",
+        "music generation"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/09/spotify-remix-tool-backlash/"
+    },
+    {
+      "id": "20261111-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 再被告：Elvis Presley 權利人依 Tennessee ELVIS Act 提訴",
+      "summary": "Music Ally 轉述 Variety 報導：除了先前已報的 Eight Mile Style，一群 Elvis Presley 權利人也對 Suno 提告，主張違反 Tennessee 2024 年的 ELVIS Act（保護聲音與肖像）。針對 Suno 的侵權訴訟持續增加。",
+      "tags": [
+        "suno",
+        "music ai",
+        "music generation",
+        "music industry"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/09/suno-sued-by-elvis-presley-rights-owners-and-eight-mile-style/"
+    },
+    {
+      "id": "20261111-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "arXiv：SimDPS，用相似片段引導 latent diffusion 做音樂 inpainting",
+      "summary": "提出 Similarity-Guided Diffusion Posterior Sampling（SimDPS）：先在整段音訊中依上下文找出相似的候選片段，再用它們引導 diffusion 重建被替換的大段內容。與模型無關，可搭配 waveform 或 latent domain 的預訓練 diffusion model；客觀與主觀評估都優於 RePaint 與 DPS，可用於音樂修復與情境感知的音訊編輯。",
+      "tags": [
+        "music generation",
+        "audio model",
+        "neural audio",
+        "music ai"
+      ],
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.11522"
+    },
+    {
+      "id": "20261111-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RIAA 執行長 Glazier：AI 音樂標示「不能只靠平台」，關卡在 DistroKid、TuneCore 等發行商",
+      "summary": "Music Ally 整理 The Verge Decoder podcast 訪談：Glazier 表示唱片公司本身不會把生成式 AI 內容標註後上架 Spotify，AI 音樂多從 DIY 管道進來，所以閘門在 DistroKid、TuneCore 這類 distributor，需要它們願意做標示與偵測。",
+      "tags": [
+        "music ai",
+        "music industry",
+        "audio industry"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/10/ai-music-labelling-cant-be-just-the-platforms-says-riaa-boss/"
+    },
+    {
+      "id": "20261111-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Spotify AI DJ 升級：可選聲音與個性，也能關掉歌間講話",
+      "summary": "Premium 用戶現在可自訂 AI DJ 的聲音與個性：新增七種英文口音（英、美、愛爾蘭、澳、印度）與兩種西班牙文聲音，並可關閉歌曲之間的評論。Spotify 表示 AI DJ 是旗下最受歡迎的 AI 功能，使用者超過 9,400 萬 Premium 聽眾。",
+      "tags": [
+        "music ai",
+        "music app",
+        "voice synthesis"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/10/spotify-ai-dj-tweaks-more-voices/"
+    },
+    {
+      "id": "20261111-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Schmidt Vi 上市：Schmidt Eightvoice 8 聲部合成器的 plugin 版（與 UJAM 合作）",
+      "summary": "Schmidt Vi 是 Schmidt Eightvoice 的軟體版（macOS／Windows），與 UJAM 合作，重新建模原機的類比訊號路徑，保留四個 oscillator、五組 ring modulator 搭配六個 pulse wave 的獨特架構與整個大面板介面。同時硬體版也宣布最後一次回歸。",
+      "tags": [
+        "synthesizer",
+        "virtual instrument",
+        "plugin",
+        "music software"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/schmidt-vi-deck-the-flagship-schmidt-synthesizer-as-a-plugin-for-your-daw.html"
+    },
+    {
+      "id": "20261111-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Eventide Anthology '27：38 款 plugin 的旗艦合集，新增 7 款",
+      "summary": "Eventide 推出年度系列的第一版 Anthology '27，共 38 款 plugin，新增 SplitEQ 2、Temperance Pro／Lite、Blackhole Immersive、MicroPitch Immersive、DeBoom、Sheen Machine。至 2027/1/3 前導入價 $649（原價 $1,299），也提供 $29.99／月或 $299／年訂閱。",
+      "tags": [
+        "plugin",
+        "reverb",
+        "audio effect",
+        "mixing",
+        "mastering"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/eventide-launches-anthology-27-flagship-plugin-collection/"
+    },
+    {
+      "id": "20261111-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DW-303：免費開源的 TB-303 風格 bass synth 與 step sequencer（DJW Audio）",
+      "summary": "DW-303 依 Roland TB-303 的電路圖逐級建模 oscillator、filter、envelope 與 VCA，並用硬體量測校正 resonance、envelope mod、accent 與 slide 的交互作用。提供 saw／square、resonant ladder filter、Full circuit 與 Economy 兩種品質模式，16 步 sequencer 含 64 個 pattern，免費且開源。",
+      "tags": [
+        "free plugin",
+        "open source audio",
+        "synthesizer",
+        "soft synth"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/free-dw-303-open-source-303-style-bass-synthesizer-by-djw-audio/"
     }
   ],
-  "lastUpdated": "2026-11-11T00:23:06.340387+00:00",
-  "updatedAt": "2026-11-11T00:23:06.340387+00:00"
+  "lastUpdated": "2026-11-11T01:15:28.970586+00:00",
+  "updatedAt": "2026-11-11T01:15:28.970586+00:00"
 }

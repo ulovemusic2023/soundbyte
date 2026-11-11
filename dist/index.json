@@ -113325,8 +113325,419 @@
       "price": null,
       "vram": "不適用（雲端服務事件）",
       "license": "不適用"
+    },
+    {
+      "id": "20261111-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DeepMind 發表 AlphaProof Code：AI agents 用 Lean 形式化驗證 Signal 協定的實際程式碼，四週完成、產出逾 600 萬行證明",
+      "summary": "AlphaProof Code 是 multi-LLM agentic 框架：人類專家和模型一起把 Signal 的安全目標寫成形式化 specification（每條都經人審），再由 Gemini Carbon 驅動的 agents 自主寫證明，產生超過 600 萬行 Lean，最後 agents 自己稽核、只把約 1% 標給人看。重點是驗證到「編譯後實際跑在裝置上的 code」而不只是協定設計，DeepMind 說這是首次有任何方法對廣泛部署的協定實作做到這個深度；他們還把兩個已修復的真實 bug 放回隔離版本，系統都產出「此版本不安全」的機器檢查證明。形式化驗證成果會開源，Signal CTO Ehren Kret 也背書。HN 565 分。",
+      "tags": [
+        "paradigm-shift",
+        "formal verification",
+        "Lean",
+        "agentic workflow",
+        "AI security"
+      ],
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gemini 4 Carbon 全面開放：CursorBench 4.0 第一、單任務成本低一半以上，Antigravity 同步預覽 /swarm 多 agent 協作",
+      "summary": "Google 把原本只給資安防禦方（Fairwind Program）的 Gemini 4 Carbon 開放給所有付費開發者與企業，API 定價跟 Gemini 4 Argon 相同（每百萬 input $2、output $10）。官方定位：Argon 仍適合大多數 SWE 工作，Carbon 用更多 token 做深度推理與延長的 verification loop，主攻多步 coding／debugging、跨子系統 root-cause、大型 migration；宣稱在 CursorBench 4.0、Perplexity WANDR、Zapier AutomationBench 排第一，且每任務成本比次佳外部模型低 2 倍以上。Antigravity 新的 /swarm 讓一個 prompt 變成可即時追蹤的 agent 團隊，Carbon 負責架構、協調、稽核，搭配較輕的模型在平行隔離 workspace 工作，並有 adversarial verifier 測每個變更。GitHub Copilot 當天也上了 Carbon。HN 270 分。",
+      "tags": [
+        "Gemini 4 Carbon",
+        "multi-agent",
+        "/swarm",
+        "Google Antigravity",
+        "GitHub Copilot"
+      ],
+      "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Chrome、Edge、Firefox、MDN 聯手推 Modern Web Guidance：給 coding agent 的 skills，把它們從 2019 年的 JavaScript 拉到現代 web primitives",
+      "summary": "問題意識很實際：LLM 訓練資料裡舊寫法太多，agent 常用一大坨 JS 去做現在瀏覽器原生就能做的事（例如用 JS 事件做 hover 效果）。這套 skills 由 Google Chrome、Microsoft Edge、Mozilla Firefox 與 MDN 團隊共同維護，CLI 會把精選、省 token 的指引直接塞進 agent context，涵蓋 View Transitions、container queries、subgrid、oklch 等，並附 browser compatibility 資料與輕量 fallback 建議；他們用 evals 把模型本來就會的內容刪掉。可用 `npx modern-web-guidance@latest install` 安裝，也能 `legacy-scan` 掃 codebase 找可現代化的舊寫法，repo 內已附 Claude、Codex、Cursor、Gemini 等 plugin 設定。Show HN 232 分。",
+      "tags": [
+        "agent skills",
+        "coding agents",
+        "web platform",
+        "context engineering",
+        "legacy modernization"
+      ],
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/GoogleChrome/modern-web-guidance",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler 網站長文〈Long-horizon agents and durable execution〉：要跑好幾週的 agent，該用 durable execution 撐住",
+      "summary": "Thoughtworks 的 Kiran Prakash 指出，能跨天、跨週追一個結果（例如陪客戶 onboarding、推動卡在法務採購之間的訂單）的 long-horizon agent，會遇到 process crash、網路失敗、外部世界變化等問題。durable execution 的做法是 runtime 記錄每個對外互動步驟的結果，失敗後重跑時跳過已完成的步驟、從紀錄重建狀態。文章用採購範例拆解 agentic loop 怎麼改成 durable，並特別談到「durable 不等於 correct」、at-least-once 重試、等人或等系統時世界已改變、任務跑到一半 code 被改了、以及 memory 與模型實際看到的 context 要分開，也比較 Cloudflare 與 Temporal 兩種實作。",
+      "tags": [
+        "durable execution",
+        "long-horizon agents",
+        "agent architecture",
+        "Temporal",
+        "workflow"
+      ],
+      "url": "https://martinfowler.com/articles/durable-execution-agents.html",
+      "source": "martinfowler.com",
+      "sourceUrl": "https://martinfowler.com/articles/durable-execution-agents.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VulnCheck 追蹤 Anthropic Project Glasswing 七個月：37,966 筆 findings 只修了 217 個，重複回報比修好的多 7.5 倍",
+      "summary": "VulnCheck 的 Patrick Garrity 自 4 月起追蹤可歸因於 Anthropic 的 CVE，目前 442 個，約佔今年 CVE 的 0.5%，其中只有 2 個被列入 KEV（實際遭利用）。Anthropic 自家 ledger 到 11/2 列出 37,966 筆 findings，只有 19.4% 公開、217 筆標為已修；9 月以來新增近 12,000 筆卻只多修 15 筆，標為 duplicate 的有 1,670 筆、撤回 419 筆，但宣稱的 true positive rate 反而從 90.8% 升到 94.2%。文中也提到 curl 把 34 份公開報告中的 19 份判定不是漏洞，批評這等於把驗證成本轉嫁給 maintainers。HN 115 分。",
+      "tags": [
+        "AI vulnerability discovery",
+        "Project Glasswing",
+        "open source maintainers",
+        "CVE",
+        "AI security"
+      ],
+      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "source": "VulnCheck Blog",
+      "sourceUrl": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈AI usage generates a fragile codebase〉：前 Meta 工程師列出 AI 讓 codebase 變脆弱的四種方式，HN 近 400 則留言",
+      "summary": "作者 Evan X. Merz 說他在 Meta 最後幾個月至少 90% code 由 AI 產生（這是拿到不錯考績的門檻），現在換到另一家大公司已是 100%，但產出並沒有翻倍。他觀察到的問題：AI 寫的測試很淺（大量測 getter／setter、e2e 只測已覆蓋的情境，line coverage 看不出缺口）、code 過度複雜（為了 DRY 拆太多 helper）、人越來越不懂自己的 codebase，因此無法判斷 PR 在規模化下會不會出事。核心論點是 AI 很會解 context window 裡的問題，卻看不到長期的架構後果。HN 351 分、389 則留言，爭議很大。",
+      "tags": [
+        "AI-assisted coding",
+        "code quality",
+        "technical debt",
+        "testing"
+      ],
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "source": "Hacker News",
+      "sourceUrl": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude 推出 Whiteboards、Sheets（beta），Claude Dashboards 正式 GA 並改名 Claude Data",
+      "summary": "Anthropic 把協作產出留在 Claude 裡：Whiteboards 是團隊和 Claude 一起腦力激盪的共享白板，可框選區域提問，再轉成 doc／deck 或匯到 Lucid、Miro；Sheets 讓 Claude 從一句 prompt 生成含分頁、公式、格式與下拉選單的試算表，逐格標示修改，可匯出 .xlsx／CSV 或接 Airtable、Asana、monday.com、Smartsheet。Claude Data 可連 Redshift、BigQuery、ClickHouse，新增 certified queries（資料團隊認證的指標定義）、data stories 與 live sharing（beta）。所有付費方案都可用。HN 151 分。",
+      "tags": [
+        "Claude",
+        "Claude Sheets",
+        "Claude Data",
+        "AI workspace"
+      ],
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "source": "Claude Blog",
+      "sourceUrl": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": ".NET 11 正式發布：C# 15 union types 與 closed hierarchies、Native AOT CLI host，並內建 MCP／Agent Framework 等 agentic 工具",
+      "summary": ".NET 11 是 STS 版本（支援兩年），.NET 10 仍是 LTS。C# 15 加入 union types（值可以是一組指定型別之一，switch 有 exhaustiveness 檢查）和 closed hierarchies，另有 collection expression arguments、extension indexers、labeled break／continue。SDK 預設啟用 Native AOT CLI host 和常駐 MSBuild server 降低日常指令開銷；ASP.NET Core 支援 async validation、OpenAPI 3.2，實驗性的 Blazor AI components 整合 AG-UI；AI 方面推 Microsoft.Extensions.AI、MCP、Microsoft Agent Framework，以及給 agent 用的 .NET Skills。.NET MAUI 預設改用 CoreCLR，函式庫內建 Zstandard 壓縮。",
+      "tags": [
+        ".NET 11",
+        "C# 15",
+        "union types",
+        "MCP",
+        "Native AOT"
+      ],
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+      "source": "Microsoft .NET Blog",
+      "sourceUrl": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Val Town 宣布結束營運：12/10 轉唯讀、2027/1/10 全面關閉，2/1 開源",
+      "summary": "創辦人 Steve Krouse 坦言在雲端運算市場競爭不過，即日停止新註冊與升級、暫停收費，年繳用戶會部分退款。時程：12/10 進入唯讀（SQLite 和 blob storage 除外）、2027/1/10 停止所有服務、2027/2/1 開源 Val Town。官方提供遷移到 Cloudflare、Vercel、Netlify、Render 的指南，並說現在的 LLM 很適合做這類遷移。對用過 vals 跑小型 cron／API 的人，現在就該排遷移。HN 287 分。",
+      "tags": [
+        "Val Town",
+        "serverless",
+        "developer platform",
+        "migration"
+      ],
+      "url": "https://blog.val.town/winding-down",
+      "source": "Val Town Blog",
+      "sourceUrl": "https://blog.val.town/winding-down",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "【爆料】Apple 被發現在做 Harbor：把 Mac 變成私有 AI inference server，可用 Thunderbolt 5 串多台 Mac 合併記憶體",
+      "summary": "9to5Mac 引用爆料者 Aaron Perris 在 X 上的貼文：Harbor 能在 Apple silicon 上跑 open-weight models，資料不離開本機；接上兩台以上支援 Thunderbolt 5 的 Mac 會自動組成 cluster，把 unified memory 合成一個推論資源，跑單機放不下的大模型或撐更高併發，並可在 app 內瀏覽、下載、載入模型，不需要 command line。據報目前以 Apple 旗下 Claris 品牌私下預覽。這是爆料，Apple 尚未正式宣布。HN 89 分。",
+      "tags": [
+        "local LLM",
+        "Apple silicon",
+        "inference cluster",
+        "Harbor"
+      ],
+      "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "source": "9to5Mac",
+      "sourceUrl": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Latent Space 實測 NaiveAI 的 Naive-N0.5-Flash：主打每秒 2,100 tokens 的 open-weights coding 模型，品質能跟 DeepSeek 打",
+      "summary": "Latent Space 開了新的模型實測系列。Naive-N0.5-Flash 是中國公司 NaiveAI 以 Xiaomi MiMo-V2.5（310B 參數 sparse MoE、15B active）為底，額外訓練約 3.25T tokens 改用 DeepSeek Sparse Attention，其中約 3T 在固定 1M context 下訓練，並搭配自家 NaiveRT 推論引擎。作者拿它的 ultrafast 模式對比 DeepSeek V4.1 Flash 1017 和 GLM 5.3 Flash，給同樣的 app-building prompts：難題要推理較久，但整體仍較快出答案，代價是每題成本略高，適合速度優先的場景。",
+      "tags": [
+        "open-weights model",
+        "inference speed",
+        "coding model",
+        "sparse attention"
+      ],
+      "url": "https://latent.space/p/naiveai/",
+      "source": "Latent Space",
+      "sourceUrl": "https://latent.space/p/naiveai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare Basin 正式 GA：建在 Apache Iceberg＋R2 上的 serverless analytics，零 egress 費",
+      "summary": "前身是一年前預覽的「Cloudflare Data Platform」，現在整合成三個服務：Basin Pipelines（原 Cloudflare Pipelines，從 Workers、HTTP、Logpush 收事件並做 SQL 轉換）、Basin Catalog（管理 Iceberg metadata、自動做 table maintenance）、Basin SQL（serverless 分散式 SQL 引擎）。因為 egress 免費，任何 Iceberg 相容引擎如 PyIceberg、DuckDB、Snowflake、Spark 都能直接讀寫，主打讓小團隊不用管叢集就能做分析。",
+      "tags": [
+        "Apache Iceberg",
+        "serverless analytics",
+        "Cloudflare",
+        "data platform"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/cloudflare-basin-analytics/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/cloudflare-basin-analytics/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ableton 正式公布 Live 13：Step Sequencer、ARA 2、Drum Synth，已開放 public beta",
+      "summary": "Ableton 官方宣布 Live 13，主要更新有 ARA 2 支援（Suite 附 Melodyne Essential）、新的 Step Sequencer、擴充 Racks 與新 devices，以及讓 Push 3 可為每個 Set 自訂介面的 Custom Layouts。正式版預計 2027 年初釋出，現在可先用 public beta；11 月 30 日前買新 Live 12 授權享 8 折，之後可免費升級 Live 13。",
+      "tags": [
+        "ableton",
+        "daw",
+        "midi",
+        "music production",
+        "daw update"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/ableton-announces-live-13/"
+    },
+    {
+      "id": "20261111-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Spotify 預告的 AI 混音工具遭強烈反彈：創作者擔心 consent、credit、compensation",
+      "summary": "Spotify 預計明年初推出的 AI remix 工具，可讓聽眾把慢板改成舞曲、甚至換成別位歌手的聲音，成品只能留在 Spotify 內、不能外發。目前 UMG、Merlin、Believe、Kobalt 已有合作，但是否參與由藝人個別決定；社群出現取消訂閱、改用 Qobuz／Bandcamp 的討論，業界關注點是訓練資料來源、是否 opt-in 與分潤方式。",
+      "tags": [
+        "music ai",
+        "music industry",
+        "voice conversion",
+        "music generation"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/09/spotify-remix-tool-backlash/"
+    },
+    {
+      "id": "20261111-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 再被告：Elvis Presley 權利人依 Tennessee ELVIS Act 提訴",
+      "summary": "Music Ally 轉述 Variety 報導：除了先前已報的 Eight Mile Style，一群 Elvis Presley 權利人也對 Suno 提告，主張違反 Tennessee 2024 年的 ELVIS Act（保護聲音與肖像）。針對 Suno 的侵權訴訟持續增加。",
+      "tags": [
+        "suno",
+        "music ai",
+        "music generation",
+        "music industry"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/09/suno-sued-by-elvis-presley-rights-owners-and-eight-mile-style/"
+    },
+    {
+      "id": "20261111-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "arXiv：SimDPS，用相似片段引導 latent diffusion 做音樂 inpainting",
+      "summary": "提出 Similarity-Guided Diffusion Posterior Sampling（SimDPS）：先在整段音訊中依上下文找出相似的候選片段，再用它們引導 diffusion 重建被替換的大段內容。與模型無關，可搭配 waveform 或 latent domain 的預訓練 diffusion model；客觀與主觀評估都優於 RePaint 與 DPS，可用於音樂修復與情境感知的音訊編輯。",
+      "tags": [
+        "music generation",
+        "audio model",
+        "neural audio",
+        "music ai"
+      ],
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.11522"
+    },
+    {
+      "id": "20261111-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "RIAA 執行長 Glazier：AI 音樂標示「不能只靠平台」，關卡在 DistroKid、TuneCore 等發行商",
+      "summary": "Music Ally 整理 The Verge Decoder podcast 訪談：Glazier 表示唱片公司本身不會把生成式 AI 內容標註後上架 Spotify，AI 音樂多從 DIY 管道進來，所以閘門在 DistroKid、TuneCore 這類 distributor，需要它們願意做標示與偵測。",
+      "tags": [
+        "music ai",
+        "music industry",
+        "audio industry"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/10/ai-music-labelling-cant-be-just-the-platforms-says-riaa-boss/"
+    },
+    {
+      "id": "20261111-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Spotify AI DJ 升級：可選聲音與個性，也能關掉歌間講話",
+      "summary": "Premium 用戶現在可自訂 AI DJ 的聲音與個性：新增七種英文口音（英、美、愛爾蘭、澳、印度）與兩種西班牙文聲音，並可關閉歌曲之間的評論。Spotify 表示 AI DJ 是旗下最受歡迎的 AI 功能，使用者超過 9,400 萬 Premium 聽眾。",
+      "tags": [
+        "music ai",
+        "music app",
+        "voice synthesis"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/10/spotify-ai-dj-tweaks-more-voices/"
+    },
+    {
+      "id": "20261111-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Schmidt Vi 上市：Schmidt Eightvoice 8 聲部合成器的 plugin 版（與 UJAM 合作）",
+      "summary": "Schmidt Vi 是 Schmidt Eightvoice 的軟體版（macOS／Windows），與 UJAM 合作，重新建模原機的類比訊號路徑，保留四個 oscillator、五組 ring modulator 搭配六個 pulse wave 的獨特架構與整個大面板介面。同時硬體版也宣布最後一次回歸。",
+      "tags": [
+        "synthesizer",
+        "virtual instrument",
+        "plugin",
+        "music software"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/schmidt-vi-deck-the-flagship-schmidt-synthesizer-as-a-plugin-for-your-daw.html"
+    },
+    {
+      "id": "20261111-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Eventide Anthology '27：38 款 plugin 的旗艦合集，新增 7 款",
+      "summary": "Eventide 推出年度系列的第一版 Anthology '27，共 38 款 plugin，新增 SplitEQ 2、Temperance Pro／Lite、Blackhole Immersive、MicroPitch Immersive、DeBoom、Sheen Machine。至 2027/1/3 前導入價 $649（原價 $1,299），也提供 $29.99／月或 $299／年訂閱。",
+      "tags": [
+        "plugin",
+        "reverb",
+        "audio effect",
+        "mixing",
+        "mastering"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/eventide-launches-anthology-27-flagship-plugin-collection/"
+    },
+    {
+      "id": "20261111-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DW-303：免費開源的 TB-303 風格 bass synth 與 step sequencer（DJW Audio）",
+      "summary": "DW-303 依 Roland TB-303 的電路圖逐級建模 oscillator、filter、envelope 與 VCA，並用硬體量測校正 resonance、envelope mod、accent 與 slide 的交互作用。提供 saw／square、resonant ladder filter、Full circuit 與 Economy 兩種品質模式，16 步 sequencer 含 64 個 pattern，免費且開源。",
+      "tags": [
+        "free plugin",
+        "open source audio",
+        "synthesizer",
+        "soft synth"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/free-dw-303-open-source-303-style-bass-synthesizer-by-djw-audio/"
     }
   ],
-  "lastUpdated": "2026-11-10T14:26:46.789337+00:00",
-  "updatedAt": "2026-11-10T14:26:46.789337+00:00"
+  "lastUpdated": "2026-11-11T01:15:28.970586+00:00",
+  "updatedAt": "2026-11-11T01:15:28.970586+00:00"
 }
