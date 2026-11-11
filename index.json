@@ -114250,8 +114250,148 @@
       "price": null,
       "vram": "不適用（Intel Arc 24–32GB）",
       "license": "LGPL-3.0"
+    },
+    {
+      "id": "20261112-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Sahil Bloom：沒有人在想你——你怕的是一盞從沒打開的聚光燈",
+      "summary": "很多人以為自己怕失敗，其實怕的是失敗後別人怎麼看。但別人忙著想自己，根本沒在看你（spotlight effect）。把這個認知拿掉，很多「一直想做卻不敢做」的事就只剩執行問題。",
+      "tags": [
+        "spotlight-effect",
+        "fear-of-judgement",
+        "action"
+      ],
+      "url": "https://x.com/SahilBloom/status/2120511628546363535",
+      "source": "Sahil Bloom (X)",
+      "sourceUrl": "https://x.com/SahilBloom/status/2120511628546363535",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Jason Fried：最好的建議來自只領先你幾步的人",
+      "summary": "你可以崇拜遙遙領先的人，但他們離你的現實太遠；只領先幾步的人做得可能比較少，卻更懂你現在的處境和限制。找 mentor 時，距離比名氣更重要。",
+      "tags": [
+        "advice",
+        "mentorship",
+        "context"
+      ],
+      "url": "https://x.com/jasonfried/status/2120575609965511123",
+      "source": "Jason Fried (X)",
+      "sourceUrl": "https://x.com/jasonfried/status/2120575609965511123",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Lenny：2026 下半年科技職缺報告——PM 在 AI 時代反而贏了，工程需求停滯",
+      "summary": "Lenny 用 TrueUp 與 Live Data Technologies 兩組資料分析：PM 職缺是近四年最多，工程職缺年增率從 2024 的 +29% 掉到 +2.5%，設計職缺創新低，remote 也創新低；成長最多的反而是 FDE（forward deployed engineer）和非軟體職缺。對創業者的意涵是：AI 讓「決定做什麼」的人更值錢，純執行角色在被壓縮。",
+      "tags": [
+        "job-market",
+        "pm",
+        "forward-deployed-engineer",
+        "ai-age"
+      ],
+      "url": "https://x.com/lennysan/status/2120211695453028770",
+      "source": "Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "levelsio：訊息是 async，電話是 sync——電話會毀掉我的一天",
+      "summary": "Pieter Levels 說他除了家人之外不接電話，改用語音訊息和影片泡泡溝通，對方也接受了。一人公司最貴的資源是不被切碎的時間，把溝通預設成 async 就是在保護 maker's schedule。",
+      "tags": [
+        "async-communication",
+        "makers-schedule",
+        "solo-founder"
+      ],
+      "url": "https://x.com/levelsio/status/2120481942017855910",
+      "source": "Pieter Levels (X)",
+      "sourceUrl": "https://x.com/levelsio/status/2120481942017855910",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Jason Fried：公司還小的時候，不要模仿大組織",
+      "summary": "規模不對，教訓就不對，大公司的 insight 套不到小團隊身上。與其沿著巨頭留下的乾泥車轍走，不如找一條跟自己規模相近、新鮮的路。",
+      "tags": [
+        "small-company",
+        "calm-company",
+        "organizational-design"
+      ],
+      "url": "https://x.com/jasonfried/status/2120594474720178230",
+      "source": "Jason Fried (X)",
+      "sourceUrl": "https://x.com/jasonfried/status/2120594474720178230",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "DHH：不再在乎 weenies 怎麼想，進展快得驚人",
+      "summary": "DHH 一句話總結他的做事哲學：別人的雜音是最大的隱性成本。",
+      "tags": [
+        "focus",
+        "conviction"
+      ],
+      "url": "https://x.com/dhh/status/2120257909955158382",
+      "source": "DHH (X)",
+      "sourceUrl": "https://x.com/dhh/status/2120257909955158382",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Jason Fried：別問建議，問「你會怎麼做」——保護你的 agency",
+      "summary": "同樣的話，當成「建議」聽和當成「參考」聽，進到腦袋的方式不同；決策權要留在自己手上。",
+      "tags": [
+        "agency",
+        "decision-making",
+        "advice"
+      ],
+      "url": "https://x.com/jasonfried/status/2120583600823472165",
+      "source": "Jason Fried (X)",
+      "sourceUrl": "https://x.com/jasonfried/status/2120583600823472165",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-12T03:26:00+08:00",
-  "updatedAt": "2026-11-12T03:26:00+08:00"
+  "lastUpdated": "2026-11-11T19:35:02.541638+00:00",
+  "updatedAt": "2026-11-11T19:35:02.541638+00:00"
 }
