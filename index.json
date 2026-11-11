@@ -113736,8 +113736,270 @@
       ],
       "source": "Rekkerd",
       "sourceUrl": "https://rekkerd.org/free-dw-303-open-source-303-style-bass-synthesizer-by-djw-audio/"
+    },
+    {
+      "id": "20261112-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "GitHub Agentic Workflows 正式 GA：用 Markdown 描述任務、在 Actions 裡跑 coding agent，預設 read-only＋每次 $10 預算上限",
+      "summary": "這個開源專案讓你用自然語言 Markdown（加 YAML frontmatter）描述 issue triage、CI failure 分析等 repo 工作，再編譯成標準 GitHub Actions workflow，可用 Copilot 或自帶其他 coding agent。安全設計是 agent 只有 read-only 權限，提出的變更交給另外持有 write token 的 job 套用；agent 跑在 Agent Workflow Firewall 後的 sandbox container，變更套用前還有 threat-detection job 掃描。費用預設封頂：AI Credits 每點 $0.01，每次 run 上限 1,000 AIC（$10）、每日 5,000 AIC、agent step 20 分鐘 timeout，`gh aw forecast` 可估月花費；GA 也加了 ARC（Kubernetes 自架 runner）＋Docker-in-Docker 支援。InfoQ 提醒：FAQ 承認保護不會自動延伸到直接 write 權限或自訂 job，安全性取決於設定，而 ARC 的 DinD sidecar 預設是 privileged container。",
+      "tags": [
+        "paradigm-shift",
+        "agentic workflow",
+        "GitHub Actions",
+        "coding agents",
+        "CI/CD",
+        "AI security"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "AWS 推出官方 AWS Emulator：Rust 寫的本機 AWS API 模擬器，coding agent 不用部署就能反覆測",
+      "summary": "AWS 正式發布本機模擬器，AWS CLI、SDK 和 coding agent 透過本地 HTTPS endpoint（127.0.0.1:9297）呼叫跟雲端一樣的 AWS API，程式碼不用改，只要設幾個環境變數。它是從 AWS SDK 共用的 API models 產生的，所以 request 和錯誤格式都跟真的 AWS 一致；用 Rust 實作以壓低筆電 CPU／記憶體用量，啟動時自動產生以 EMULATOR 開頭的金鑰，拒絕其他簽章，避免誤打到正式環境。Linux 用 RPM／Debian 套件安裝，macOS／Windows 自己用 Dockerfile 跑；另有 embedded mode 和給 agent 的 aws-emulator skill。不收費、原始碼在 GitHub，但官方明說不適合 production 或安全測試。等於 AWS 自己做了 LocalStack 的角色。HN 140 分。",
+      "tags": [
+        "AWS Emulator",
+        "local development",
+        "coding agents",
+        "testing",
+        "Rust"
+      ],
+      "url": "https://github.com/aws/aws-emulator",
+      "source": "AWS News Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler 網站長文〈Tests as data〉：AI 同時寫 code 和測試時，把「customer tests」搬進資料檔當人機合約",
+      "summary": "Thoughtworks 的 Matteo Vaccari 訪談 26 位重度使用 coding agent 的開發者，大家都說「不太信任我們的測試」，因為 AI 加功能時會連既有 code 和測試一起重構。他提出三個主張：AI 寫 code 時，開發者就變成它的「客戶」；所以 customer tests（acceptance tests）而非 developer tests 才是人和 AI 之間的主要合約；把這份合約從 test code 搬到 test data（表格、文字 DSL、approval testing 的狀態快照），交給較小的 test runner 解讀，就比較容易防止 agent 偷改。過去寫 DSL parser 和自訂 runner 很貴，現在 AI 讓它變便宜。文中結合 XP、Fit／specification by example、Go 的 table-driven tests 和 approval testing，也談保護 test harness 和適用限制。",
+      "tags": [
+        "paradigm-shift",
+        "AI-assisted coding",
+        "testing",
+        "specification by example",
+        "approval testing"
+      ],
+      "url": "https://martinfowler.com/articles/tests-as-data.html",
+      "source": "martinfowler.com",
+      "sourceUrl": "https://martinfowler.com/articles/tests-as-data.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google 推 Gemini Decisions API 與 Gemini Decision 1：一次前向傳遞評估最多 1,000 個是非／選擇題，150–250 ms 回傳校準過的機率",
+      "summary": "新 endpoint 專做有限選項的決策，例如 tool selection、policy check、model routing、context grading：給一份多模態輸入（文字、圖片、音訊、影片、PDF，最多 256K tokens）加上最多 1,000 個獨立問題，模型不逐 token 生成答案，而是在單次 forward pass 給每個選項打分，回傳機率和 confidence score。官方數字：端到端延遲 150–250 ms、從 1 題到 100 題幾乎持平，每百萬 input tokens $0.10 且不收 output token；宣稱在 agent routing、推理、排序與多模態基準上領先且 calibration error 最低，整套基準比 Gemini 3.5 Flash-Lite 便宜近 5 倍。Vercel AI Gateway 當天就上架。對做 agent router、guardrail 的人很實用。",
+      "tags": [
+        "Gemini Decisions API",
+        "model routing",
+        "agent architecture",
+        "guardrails",
+        "calibration"
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 工程師讓 48 個 AI agents 看 NASA lidar 圖找到一座 Maya 遺址：72 小時從念頭到墨西哥政府回信（事後更正：其實已有文獻）",
+      "summary": "作者把約 1,200 km² 叢林的 lidar 資料轉成圖片，讓 48 個 agents 照一份精確的判讀指南逐張看，找金字塔、平台、廣場並排除自然山丘、天坑和道路，沒有用任何特製模型或 classifier。agents 再查文獻和檔案，挑出一處疑似未登錄的山頂聚落（廣場、8–12 m 的橢圓金字塔、可能是蓄水池的凹地），幫他寫西班牙文報告寄給 INAH，INAH 回覆該位置沒有登錄遺址。但作者 11/11 更新：這個地點其實已出現在 Estrada-Belli et al. 2025，agents 查文獻時漏掉了，所以是「重新發現」。仍是 multi-agent 用在非 coding 領域的好例子，也提醒文獻查核是弱點。HN 810 分。",
+      "tags": [
+        "multi-agent",
+        "agentic workflow",
+        "AI for science",
+        "vision agents"
+      ],
+      "url": "https://pietromiotti.com/latest/maya-site/",
+      "source": "pietromiotti.com",
+      "sourceUrl": "https://pietromiotti.com/latest/maya-site/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Alibaba 開放 Qwen4-Max Preview：1M context、多模態、相容 OpenAI 與 Anthropic API，只透過 Token Plan 試用到 11/25",
+      "summary": "Qwen 下一代旗艦 Qwen4-Max 以 `qwen4-max-preview` 開放預覽，主打 coding、前端設計和複雜 agentic 任務，支援文字、圖片、影片輸入，1M tokens context、最大輸出 393,216 tokens（thinking 與答案共用），預設開啟 thinking、可用 reasoning_effort 調整，並相容 OpenAI Chat Completions、Responses 與 Anthropic Messages API。限制很多：只能用 Token Plan 訂閱（不支援 pay-as-you-go），預覽期 11/11 10:00 到 11/25 24:00（UTC+8），結束即下線；Alibaba 沒公布 benchmark、參數量或正式 API 價格。也可在 Qwen app、Qoder、QwenWork、QwenStudio 試用。",
+      "tags": [
+        "Qwen4-Max",
+        "frontier model",
+        "1M context",
+        "coding model"
+      ],
+      "url": "https://technode.com/2026/11/11/alibaba-opens-qwen4-max-preview-with-a-million-token-context-window/",
+      "source": "Alibaba Cloud Model Studio",
+      "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AI Engineer Code Summit：OpenAI 示範 Codex 新工作方式，本機任務一句話丟到雲端、用語音當 control plane、讓 dots 當 delegation sink",
+      "summary": "Latent Space 現場報導 OpenAI DevEx 工程師 Dominik Kundel、Charlie Guo 的 workshop。Kundel 坦承 Codex Cloud 早期體驗很彆扭，9 月 DevDay 的 Codex Cloud v2 改成「發布一次 environment、在隔離實例跑多個任務」，現在雲端只是另一個 executor，可以叫本機 Codex 把工作 hand off 到雲端，連 Appshot（Mac app 視窗截圖）都會帶著走。Guo 把 voice 當成管理多條 thread 的 control plane 而非單純聽寫；Kundel 通勤時對自己的 dot（個人 agent）口述、先開 PR 回來再 review。Guo 也承認 dots 對 Codex 重度使用者有點彆扭，目前最有用的是當安全網、delegation sink 和無所不在的入口。",
+      "tags": [
+        "Codex",
+        "coding agents",
+        "voice interface",
+        "personal agents",
+        "cloud agents"
+      ],
+      "url": "https://latent.space/p/codex-work/",
+      "source": "Latent Space",
+      "sourceUrl": "https://latent.space/p/codex-work/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Atuin Threads：把 Claude Code、Codex 等 agent sessions 變成可搜尋、跨機器同步的歷史，還能換 harness 接著做",
+      "summary": "Atuin 作者觀察到他機器上超過一半的指令已不是自己打的，而 agent sessions 散落在不同工具和機器、很難搜尋。Atuin 18.24 起推出 Threads：搜尋所有機器上的 agent sessions，用 `atuin resume` 在任何地方接續，或把 session fork 到另一個 agent harness，例如在 dev server 用 Claude Code 開始、回筆電用 Codex 收尾。沿用 Atuin 為 shell history 做的 append-only log 同步引擎，同步時 end-to-end encrypted，可用官方 server、自架或只留本機，擷取 session 是 opt-in。HN 126 分。",
+      "tags": [
+        "agent sessions",
+        "Claude Code",
+        "Codex",
+        "developer tools",
+        "context portability"
+      ],
+      "url": "https://blog.atuin.sh/threads-agent-sessions",
+      "source": "Atuin Blog",
+      "sourceUrl": "https://blog.atuin.sh/threads-agent-sessions",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Open Source Says No：追蹤明文禁止 AI 生成貢獻的開源專案，yt-dlp、immich、meilisearch、servo 都在列",
+      "summary": "新網站整理目前 23 個明文拒絕 LLM／agent 生成貢獻的專案，標出政策範圍（code、docs、issues、翻譯等）並逐一驗證日期，例如 yt-dlp 禁止任何形式的 AI 輔助貢獻、immich 請大家別開 LLM 生成的 PR、meilisearch 連 PR 描述和 issue 留言都不收 AI 內容、stb 甚至不收經 AI 分析過的 bug report。任何人都可貼 GitHub repo 連結提交，會自動跑政策檢查。對常用 agent 送 PR 的人，送之前先看 CONTRIBUTING。HN 59 分、102 則留言，討論很熱。",
+      "tags": [
+        "open source",
+        "AI-generated contributions",
+        "contribution policy",
+        "coding agents"
+      ],
+      "url": "https://osssaysno.com/",
+      "source": "osssaysno.com",
+      "sourceUrl": "https://osssaysno.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "JioHotstar 實測六種給 coding agent 的 codebase 知識庫：結構化 code search 贏在明確任務，加 retrieval 層不一定省 token",
+      "summary": "JioHotstar 資深工程師 Abhishek Bansal 比較 filesystem 工具基準、Sourcebot、Graphify、CocoIndex Code、Repowise 和自家 RAG pipeline，用 SWE-bench、CodeScaleBench 子集加內部 codebase 問答 harness，以 Claude Sonnet 解題，量測正確率、token 用量、agent turns 和工具好不好用。結果：純 filesystem 在具體任務上仍很有競爭力；Sourcebot（索引文字搜尋、symbol 定義與 references）在較難的 SWE-bench Verified 任務上比基準好又更便宜；semantic retrieval 對模糊需求比較有幫助；但整體而言多加 retrieval 層並不會穩定提升完成率或降低 token。",
+      "tags": [
+        "coding agents",
+        "code retrieval",
+        "RAG",
+        "context engineering",
+        "benchmark"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/jiohotstar-codingagent-retrieval/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Angular 新編譯器 ngp 進入 beta：用 Rust（Oxc）重寫分析階段，為 TypeScript 7 鋪路",
+      "summary": "TypeScript 7.0 的 Go 版重寫拿掉了 Angular AOT 編譯器 ngc 依賴的 ts.Transformer API，Angular 團隊的解法是讓編譯脫離 TypeScript API，改建在 VoidZero 的 Rust 工具鏈 Oxc 上。新的 Angular Preprocessor（ngp）分三階段：Rust frontend 平行分析檔案找出 Angular 宣告，再由既有 template compiler 產出 runtime 檔和 type check block。社群做的 vite-plugin-ngp 原型在 252 個元件的專案上 dev server 首頁 10.5 秒（ng serve 17.4 秒）、template 修改 112 ms 生效。正式採用預計等 TypeScript 7.1 恢復 compiler API 後在 Angular 22 某個 minor 版落地，在那之前 production build 仍用 ngc。",
+      "tags": [
+        "Angular",
+        "TypeScript 7",
+        "Rust",
+        "Oxc",
+        "build tools"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/angular-compiler-rust-typescript/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/angular-compiler-rust-typescript/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261112-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare 解釋為何選 QuePaxa：全球控制平面 Meerkat 用沒有 leader 的共識演算法，扛住廣域網路延遲抖動",
+      "summary": "Cloudflare 的實驗性分散式共識服務 Meerkat 要管理內部全球 control plane，叢集橫跨各大洲、連線延遲高且多變。Raft、Multi-Paxos 等主流演算法依賴單一 leader，leader 一旦延遲升高或斷線，整個系統就變慢甚至無法寫入；Cloudflare 2020 年就因一台核心交換器部分故障，讓共識系統拖慢 dashboard 80 倍長達六小時。QuePaxa（Tennage、Băsescu 等人 2023 年論文）不靠 leader 也能推進，在網路劣化時更穩定。文章拆解 destructive interference 等問題和 QuePaxa 的運作方式，適合想了解跨區域共識設計的人。",
+      "tags": [
+        "distributed systems",
+        "consensus",
+        "QuePaxa",
+        "Cloudflare",
+        "architecture"
+      ],
+      "url": "https://blog.cloudflare.com/choosing-quepaxa/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/choosing-quepaxa/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-11T01:15:28.970586+00:00",
-  "updatedAt": "2026-11-11T01:15:28.970586+00:00"
+  "lastUpdated": "2026-11-11T19:09:33.279882+00:00",
+  "updatedAt": "2026-11-11T19:09:33.279882+00:00"
 }
