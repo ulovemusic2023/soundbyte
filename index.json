@@ -114390,8 +114390,302 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261112-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "jamesondh/chimera-vocal-synth",
+      "priority": "rising-fast",
+      "stars": 1936,
+      "createdDate": "2026-11-05",
+      "license": "MIT",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/jamesondh/chimera-vocal-synth",
+      "tags": [
+        "vocal-synth",
+        "physical-modeling",
+        "wasm",
+        "vst3",
+        "midi"
+      ],
+      "summary": "瀏覽器裡的 physical-modeling 人聲合成器：模擬肺、聲帶、聲道、嘴唇發聲，不用 samples、也不用 neural audio。Rust 引擎編成 WebAssembly 跑在 AudioWorklet，支援 Web MIDI、英文/IPA 文字轉唱，另有 CLAP/VST3/AU plugin 與 CLI。"
+    },
+    {
+      "id": "20261112-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "sarpstar/cinecode",
+      "priority": "rising-fast",
+      "stars": 2205,
+      "createdDate": "2026-11-03",
+      "license": "MIT",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/sarpstar/cinecode",
+      "tags": [
+        "claude-code",
+        "video-generation",
+        "music-video",
+        "creator-tools"
+      ],
+      "summary": "「用程式碼拍片」：在 Claude Code 或 Cursor 裡讓 coding agent 寫腳本、用 code 生成每一格畫面、設計聲音，最後吐出 MP4；可做短片、YouTube 長片、廣告和 music video。本地跑，旁白可選 Gemini key 或 ElevenLabs。"
+    },
+    {
+      "id": "20261112-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "wquguru/cicada",
+      "priority": "rising-fast",
+      "stars": 2170,
+      "createdDate": "2026-11-01",
+      "license": "Apache-2.0",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/wquguru/cicada",
+      "tags": [
+        "live-subtitles",
+        "speech-translation",
+        "meeting-notes",
+        "on-device"
+      ],
+      "summary": "知了 Cicada：直接聽系統音訊，替任何會議或直播（Zoom、Meet、YouTube、X Spaces⋯）做即時雙語字幕、同步口譯和 AI 會議紀要，不用把 bot 拉進會議。Apple silicon Mac 上語音辨識全部 on-device，支援 Mac/Windows/Linux/Android。"
+    },
+    {
+      "id": "20261112-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "shanselman/gputaskman",
+      "priority": "rising-fast",
+      "stars": 1904,
+      "createdDate": "2026-11-03",
+      "license": "MIT",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/shanselman/gputaskman",
+      "tags": [
+        "gpu",
+        "vram",
+        "tui",
+        "local-llm",
+        "kv-cache"
+      ],
+      "summary": "GPU 版 htop：TUI 顯示每個 process 吃多少 VRAM、GPU 引擎活動，還會拆解 LLM 的 weights / KV cache / compute buffer。Windows + NVIDIA/AMD，Linux、WSL 也支援，PyPI 可裝；跑 16GB 卡做 local inference 時很好用來抓誰在佔記憶體。"
+    },
+    {
+      "id": "20261112-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "Sandflow-ai/sand3d",
+      "priority": "rising-fast",
+      "stars": 1843,
+      "createdDate": "2026-11-03",
+      "license": "Apache-2.0",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/Sandflow-ai/sand3d",
+      "tags": [
+        "3d-modeling",
+        "blender",
+        "llm-codegen",
+        "python"
+      ],
+      "summary": "專為 LLM 設計的 Python 3D 建模 library，建在 Blender bpy 之上：零件、邊、面都用名字指定，官方說同一個零件比 Blender Python / CadQuery 少 2–6 倍 token，整份 API 約 3,600 tokens 塞得進 prompt，輸出 deterministic。"
+    },
+    {
+      "id": "20261112-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "janestreet/agent_skills",
+      "priority": "rising-fast",
+      "stars": 5535,
+      "createdDate": "2026-11-03",
+      "license": "MIT",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/janestreet/agent_skills",
+      "tags": [
+        "agent-skill",
+        "skill.md",
+        "learning"
+      ],
+      "summary": "Jane Street 官方開的 agent skills repo，目前只有一個 socratic-tutor：把 LLM 變成用蘇格拉底法教學的家教（診斷、0–5 級 skill map、一次一題、間隔複習、期末評量）。標準 SKILL.md 格式，丟進 coding agent 的 skills 資料夾就能用。"
+    },
+    {
+      "id": "20261112-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "devvmhq/devvm",
+      "priority": "rising-fast",
+      "stars": 556,
+      "createdDate": "2026-11-06",
+      "license": "MIT",
+      "source": "GitHub API (topic:coding-agent)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/devvmhq/devvm",
+      "tags": [
+        "agent-sandbox",
+        "vm",
+        "coding-agent",
+        "lima"
+      ],
+      "summary": "每個專案一台隔離 VM，預先裝好該專案的 toolchain，給你或 coding agent 直接開工，避免 agent 碰到 host。macOS 用 Homebrew 安裝（底層是 Lima），Linux 也支援。"
+    },
+    {
+      "id": "20261112-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "shanselman/sandbox-mcp",
+      "priority": "rising-fast",
+      "stars": 410,
+      "createdDate": "2026-11-06",
+      "license": "MIT",
+      "source": "GitHub API (topic:mcp)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/shanselman/sandbox-mcp",
+      "tags": [
+        "mcp",
+        "windows-sandbox",
+        "computer-use",
+        "testing"
+      ],
+      "summary": "給 AI agent 一台用完即丟的真 Windows 11（Windows Sandbox）：開機、部署 app、用 UI Automation 操作、抓 crash 證據，再整台刪掉。CLI `sbx` 可單獨用，另附 MCP adapter；官方實測一輪 GUI 測試約 40–50 秒。"
+    },
+    {
+      "id": "20261112-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "adventists-ai/sophon-realtime",
+      "priority": "rising-fast",
+      "stars": 260,
+      "createdDate": "2026-11-04",
+      "license": "Apache-2.0",
+      "source": "GitHub API (topic:voice-cloning)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/adventists-ai/sophon-realtime",
+      "tags": [
+        "full-duplex",
+        "voice-model",
+        "voice-cloning",
+        "vllm-omni"
+      ],
+      "summary": "開源 full-duplex 語音模型家族：邊聽邊講，能聽出語氣（笑、嘆氣、諷刺），回話也會笑、會呼吸；支援 zero-shot voice cloning，單 GPU 搭 vLLM-Omni 跑。官方數據 VoiceBench 82.8，宣稱是開源 full-duplex 模型第一。"
+    },
+    {
+      "id": "20261112-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "FrigadeHQ/yogurt",
+      "priority": "rising-fast",
+      "stars": 212,
+      "createdDate": "2026-11-10",
+      "license": "MIT",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50454625",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "tags": [
+        "meeting-notes",
+        "privacy",
+        "granola-alternative"
+      ],
+      "summary": "免費開源的 Granola 替代品：私有的 AI 會議筆記，不加 bot 進會議就能錄音整理。Mac（Apple Silicon）、Windows、Linux 都有安裝檔；Show HN 約 86 points。"
+    },
+    {
+      "id": "20261112-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "klad-app/klad",
+      "priority": "worth-trying",
+      "stars": 89,
+      "createdDate": "2026-11-04",
+      "license": "NOASSERTION",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50454951",
+      "url": "https://github.com/klad-app/klad",
+      "tags": [
+        "drawing-app",
+        "agent-human-collaboration",
+        "creator-tools"
+      ],
+      "summary": "給人跟 agent 一起畫圖的繪圖 app，coding agent 可以直接操控畫布（source-available，非標準 OSS license）。Show HN 約 55 points，適合當創作者工具 × agent 的參考設計。"
+    },
+    {
+      "id": "20261112-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "getpaseo/paseo",
+      "priority": "on-the-radar",
+      "stars": 23813,
+      "createdDate": "2025-10-13",
+      "license": "NOASSERTION",
+      "source": "GitHub Trending (TypeScript, weekly)",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "url": "https://github.com/getpaseo/paseo",
+      "tags": [
+        "agent-orchestration",
+        "claude-code",
+        "codex",
+        "mobile"
+      ],
+      "summary": "一個介面管 Claude Code、Codex、Copilot、OpenCode 等多個 coding agents，desktop、手機、web、CLI 都能用。本週登上 TypeScript weekly trending，適合想在手機上盯 agent 進度的人。"
+    },
+    {
+      "id": "20261112-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "ProtoMap (HoundDog.ai)",
+      "priority": "product-hunt",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/9",
+      "url": "https://hounddog.ai/",
+      "tags": [
+        "code-context",
+        "mcp",
+        "monorepo",
+        "token-saving"
+      ],
+      "extra": {
+        "upvotes": 166,
+        "phStatus": "Product Hunt 頁面 curl 回 403，改用 hounddog.ai 驗證"
+      },
+      "summary": "Deterministic code context engine：用 Rust scanner 在每次 commit 掃出 monorepo / microservices 的 gRPC、API 與欄位呼叫關係，透過 MCP 給 coding agent。官方 benchmark 宣稱 token 少 13 倍、回答快 7.7 倍。"
+    },
+    {
+      "id": "20261112-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-12",
+      "cycle": "thursday",
+      "title": "Co-Review",
+      "priority": "product-hunt",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/10",
+      "url": "https://github.com/sdsvn/co-review",
+      "tags": [
+        "code-review",
+        "agent-built-code",
+        "open-source"
+      ],
+      "extra": {
+        "upvotes": 103,
+        "phStatus": "Product Hunt 頁面 curl 回 403，改用 GitHub repo 驗證"
+      },
+      "summary": "把 agent 寫的整個 repo 當成 review 打開：對某行、檔案或資料夾留言問「為什麼」，由寫它的 agent 根據程式碼回答；也能 review diff、PR 和設計。免費開源、無 telemetry。"
     }
   ],
-  "lastUpdated": "2026-11-11T19:35:02.541638+00:00",
-  "updatedAt": "2026-11-11T19:35:02.541638+00:00"
+  "lastUpdated": "2026-11-11T19:56:07.463854+00:00",
+  "updatedAt": "2026-11-11T19:56:07.463854+00:00"
 }
