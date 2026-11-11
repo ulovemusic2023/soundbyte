@@ -114684,8 +114684,160 @@
         "phStatus": "Product Hunt 頁面 curl 回 403，改用 GitHub repo 驗證"
       },
       "summary": "把 agent 寫的整個 repo 當成 review 打開：對某行、檔案或資料夾留言問「為什麼」，由寫它的 agent 根據程式碼回答；也能 review diff、PR 和設計。免費開源、無 telemetry。"
+    },
+    {
+      "id": "20261112-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "MusicFlux：用 flow-matching 的文字引導音樂編輯器，兼顧品質與運算效率",
+      "summary": "arXiv 新論文 MusicFlux 以預訓練的 flow-matching text-to-audio 模型為底，做文字引導的音樂編輯（inpainting、事件插入、修復）。提出兩種 conditioning 方式：一種編輯品質較好，另一種保留原序列長度、運算效率大幅提升，兩者都與強基準相當。",
+      "priority": "high",
+      "tags": [
+        "music generation",
+        "audio model",
+        "text to music"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.13834"
+    },
+    {
+      "id": "20261112-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "BARS：用 Flow Matching 做 beat 自適應的 rap 人聲合成",
+      "summary": "BARS 是 non-autoregressive 的 rap 人聲生成模型，輸入 beat 軌、歌詞與一小段參考人聲即可 zero-shot 控制音色，並能獨立調整 rap 速度。歌詞用 ByT5 encoder 處理俚語與數字，並提出 Asymmetric Scaled RoPE 改善歌詞與音訊對齊。",
+      "priority": "high",
+      "tags": [
+        "voice synthesis",
+        "music generation",
+        "audio generation"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.12061"
+    },
+    {
+      "id": "20261112-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "arXiv：對 CLAP／MuQ／MERT 做 post-hoc disentanglement，提升音樂相似度檢索",
+      "summary": "研究把 Conditional Similarity Networks 套在凍結的預訓練 embedding（CLAP、MuQ、MERT）上，而不是從頭訓練 backbone。結果顯示只需極少的可訓練參數，就能同時改善屬性層級的解耦與整體檢索表現。",
+      "priority": "high",
+      "tags": [
+        "clap",
+        "mert",
+        "music embedding",
+        "music foundation model"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.14415"
+    },
+    {
+      "id": "20261112-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "Soniqo Music：免費的 iPhone 本機人聲分離 app",
+      "summary": "Soniqo Music: Vocal Remover 是 App Store 上的 iPhone app，在 Show HN 上以「免費、on-device 人聲分離」的定位被分享。目前我只確認到 App Store 頁面存在，細節（模型、輸出格式、是否有內購）尚未確認。",
+      "priority": "high",
+      "tags": [
+        "stems separation",
+        "voice",
+        "music app"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50424177",
+      "url": "https://apps.apple.com/us/app/soniqo-music-vocal-remover/id6828977669"
+    },
+    {
+      "id": "20261112-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "Universal Audio 推出 native 版 UAD Cooper Time Cube 延遲 plugin",
+      "summary": "UA 把 1971 年由 Bill Putnam 與 Duane Cooper 設計、用真實水管產生 slapback 的類比 delay 做成 native plugin，支援 Windows／macOS（VST3、AU、AAX）。原價 $99 USD，導入價 $49，優惠到 2026/11/30。",
+      "priority": "medium",
+      "tags": [
+        "plugin",
+        "delay",
+        "audio effect",
+        "vst3"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/universal-audio-launches-native-uad-cooper-time-cube-delay-plugin/"
+    },
+    {
+      "id": "20261112-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "DJ.Studio 5.0：DJ DAW 新增 Phrase Detection 與 Smart Beatgrid",
+      "summary": "DJ.Studio 5.0 加入 Phrase Detection，自動辨識 intro、verse、chorus 等段落，協助把 transition 與樂句起點對齊。另有適合人類演奏、tempo 會飄的 Smart Beatgrid，以及重寫的核心。",
+      "priority": "medium",
+      "tags": [
+        "music structure",
+        "beat tracking",
+        "daw",
+        "music software"
+      ],
+      "source": "Gearnews",
+      "sourceUrl": "https://www.gearnews.com/dj-studio/"
+    },
+    {
+      "id": "20261112-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "OpenRB-338：免費開源重現 ReBirth RB-338，可讀原始 ReBirth 歌曲檔",
+      "summary": "pingw33n 開發的 OpenRB-338 讓 1997 年的 Propellerhead ReBirth 能在現代桌面系統上執行，audio engine 以重現原版輸出為目標。目前是獨立 app，文件列出 MIDI 輸入、MIDI sync、VST／AU／ReWire 與部分 pattern 編輯功能尚未實作。",
+      "priority": "medium",
+      "tags": [
+        "open source audio",
+        "synthesizer",
+        "drum machine",
+        "music software"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/08/free-open-source-openrb-338-brings-rebirth-back-for-modern-computers/",
+      "url": "https://github.com/pingw33n/openrb-338"
+    },
+    {
+      "id": "20261112-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "LACIMA CS-01：重現 80 年代初電池供電 monosynth 的 plugin",
+      "summary": "LACIMA DSP 的 CS-01 模擬同一款小型 monosynth 的兩個版本：1982 原版（12 dB 濾波、雙段 resonance 開關）與 1984 後繼版（24 dB、resonance 可自振）。可熱切換 MODEL，另有 AGE 控制、MIDI CC 2 breath、23 個 preset，發售價 $9 USD。",
+      "priority": "medium",
+      "tags": [
+        "synthesizer",
+        "soft synth",
+        "vst3",
+        "plugin"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/lacima-dsp-releases-lacima-cs-01-early-80s-analog-monosynth-plugin/"
+    },
+    {
+      "id": "20261112-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "Sweet Audio Swell：拖放式 reverse reverb plugin",
+      "summary": "Swell 讓你把任何聲音拖進去，即時調整後直接拖到軌道上，不用 bounce 就能做 reverse reverb。支援 Windows／macOS（VST3、AU、CLAP），售價 €20，有功能完整的免費試用版。",
+      "priority": "medium",
+      "tags": [
+        "reverb",
+        "audio effect",
+        "plugin",
+        "vst3"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/sweet-audio-launches-swell-reverse-reverb-effect-plugin/"
     }
   ],
-  "lastUpdated": "2026-11-11T19:56:07.463854+00:00",
-  "updatedAt": "2026-11-11T19:56:07.463854+00:00"
+  "lastUpdated": "2026-11-12",
+  "updatedAt": "2026-11-11T20:04:24.320423Z"
 }
