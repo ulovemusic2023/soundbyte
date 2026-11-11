@@ -113325,8 +113325,266 @@
       "price": null,
       "vram": "不適用（雲端服務事件）",
       "license": "不適用"
+    },
+    {
+      "id": "20261111-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DeepMind 發表 AlphaProof Code：AI agents 用 Lean 形式化驗證 Signal 協定的實際程式碼，四週完成、產出逾 600 萬行證明",
+      "summary": "AlphaProof Code 是 multi-LLM agentic 框架：人類專家和模型一起把 Signal 的安全目標寫成形式化 specification（每條都經人審），再由 Gemini Carbon 驅動的 agents 自主寫證明，產生超過 600 萬行 Lean，最後 agents 自己稽核、只把約 1% 標給人看。重點是驗證到「編譯後實際跑在裝置上的 code」而不只是協定設計，DeepMind 說這是首次有任何方法對廣泛部署的協定實作做到這個深度；他們還把兩個已修復的真實 bug 放回隔離版本，系統都產出「此版本不安全」的機器檢查證明。形式化驗證成果會開源，Signal CTO Ehren Kret 也背書。HN 565 分。",
+      "tags": [
+        "paradigm-shift",
+        "formal verification",
+        "Lean",
+        "agentic workflow",
+        "AI security"
+      ],
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gemini 4 Carbon 全面開放：CursorBench 4.0 第一、單任務成本低一半以上，Antigravity 同步預覽 /swarm 多 agent 協作",
+      "summary": "Google 把原本只給資安防禦方（Fairwind Program）的 Gemini 4 Carbon 開放給所有付費開發者與企業，API 定價跟 Gemini 4 Argon 相同（每百萬 input $2、output $10）。官方定位：Argon 仍適合大多數 SWE 工作，Carbon 用更多 token 做深度推理與延長的 verification loop，主攻多步 coding／debugging、跨子系統 root-cause、大型 migration；宣稱在 CursorBench 4.0、Perplexity WANDR、Zapier AutomationBench 排第一，且每任務成本比次佳外部模型低 2 倍以上。Antigravity 新的 /swarm 讓一個 prompt 變成可即時追蹤的 agent 團隊，Carbon 負責架構、協調、稽核，搭配較輕的模型在平行隔離 workspace 工作，並有 adversarial verifier 測每個變更。GitHub Copilot 當天也上了 Carbon。HN 270 分。",
+      "tags": [
+        "Gemini 4 Carbon",
+        "multi-agent",
+        "/swarm",
+        "Google Antigravity",
+        "GitHub Copilot"
+      ],
+      "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Chrome、Edge、Firefox、MDN 聯手推 Modern Web Guidance：給 coding agent 的 skills，把它們從 2019 年的 JavaScript 拉到現代 web primitives",
+      "summary": "問題意識很實際：LLM 訓練資料裡舊寫法太多，agent 常用一大坨 JS 去做現在瀏覽器原生就能做的事（例如用 JS 事件做 hover 效果）。這套 skills 由 Google Chrome、Microsoft Edge、Mozilla Firefox 與 MDN 團隊共同維護，CLI 會把精選、省 token 的指引直接塞進 agent context，涵蓋 View Transitions、container queries、subgrid、oklch 等，並附 browser compatibility 資料與輕量 fallback 建議；他們用 evals 把模型本來就會的內容刪掉。可用 `npx modern-web-guidance@latest install` 安裝，也能 `legacy-scan` 掃 codebase 找可現代化的舊寫法，repo 內已附 Claude、Codex、Cursor、Gemini 等 plugin 設定。Show HN 232 分。",
+      "tags": [
+        "agent skills",
+        "coding agents",
+        "web platform",
+        "context engineering",
+        "legacy modernization"
+      ],
+      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/GoogleChrome/modern-web-guidance",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Martin Fowler 網站長文〈Long-horizon agents and durable execution〉：要跑好幾週的 agent，該用 durable execution 撐住",
+      "summary": "Thoughtworks 的 Kiran Prakash 指出，能跨天、跨週追一個結果（例如陪客戶 onboarding、推動卡在法務採購之間的訂單）的 long-horizon agent，會遇到 process crash、網路失敗、外部世界變化等問題。durable execution 的做法是 runtime 記錄每個對外互動步驟的結果，失敗後重跑時跳過已完成的步驟、從紀錄重建狀態。文章用採購範例拆解 agentic loop 怎麼改成 durable，並特別談到「durable 不等於 correct」、at-least-once 重試、等人或等系統時世界已改變、任務跑到一半 code 被改了、以及 memory 與模型實際看到的 context 要分開，也比較 Cloudflare 與 Temporal 兩種實作。",
+      "tags": [
+        "durable execution",
+        "long-horizon agents",
+        "agent architecture",
+        "Temporal",
+        "workflow"
+      ],
+      "url": "https://martinfowler.com/articles/durable-execution-agents.html",
+      "source": "martinfowler.com",
+      "sourceUrl": "https://martinfowler.com/articles/durable-execution-agents.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VulnCheck 追蹤 Anthropic Project Glasswing 七個月：37,966 筆 findings 只修了 217 個，重複回報比修好的多 7.5 倍",
+      "summary": "VulnCheck 的 Patrick Garrity 自 4 月起追蹤可歸因於 Anthropic 的 CVE，目前 442 個，約佔今年 CVE 的 0.5%，其中只有 2 個被列入 KEV（實際遭利用）。Anthropic 自家 ledger 到 11/2 列出 37,966 筆 findings，只有 19.4% 公開、217 筆標為已修；9 月以來新增近 12,000 筆卻只多修 15 筆，標為 duplicate 的有 1,670 筆、撤回 419 筆，但宣稱的 true positive rate 反而從 90.8% 升到 94.2%。文中也提到 curl 把 34 份公開報告中的 19 份判定不是漏洞，批評這等於把驗證成本轉嫁給 maintainers。HN 115 分。",
+      "tags": [
+        "AI vulnerability discovery",
+        "Project Glasswing",
+        "open source maintainers",
+        "CVE",
+        "AI security"
+      ],
+      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "source": "VulnCheck Blog",
+      "sourceUrl": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈AI usage generates a fragile codebase〉：前 Meta 工程師列出 AI 讓 codebase 變脆弱的四種方式，HN 近 400 則留言",
+      "summary": "作者 Evan X. Merz 說他在 Meta 最後幾個月至少 90% code 由 AI 產生（這是拿到不錯考績的門檻），現在換到另一家大公司已是 100%，但產出並沒有翻倍。他觀察到的問題：AI 寫的測試很淺（大量測 getter／setter、e2e 只測已覆蓋的情境，line coverage 看不出缺口）、code 過度複雜（為了 DRY 拆太多 helper）、人越來越不懂自己的 codebase，因此無法判斷 PR 在規模化下會不會出事。核心論點是 AI 很會解 context window 裡的問題，卻看不到長期的架構後果。HN 351 分、389 則留言，爭議很大。",
+      "tags": [
+        "AI-assisted coding",
+        "code quality",
+        "technical debt",
+        "testing"
+      ],
+      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "source": "Hacker News",
+      "sourceUrl": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude 推出 Whiteboards、Sheets（beta），Claude Dashboards 正式 GA 並改名 Claude Data",
+      "summary": "Anthropic 把協作產出留在 Claude 裡：Whiteboards 是團隊和 Claude 一起腦力激盪的共享白板，可框選區域提問，再轉成 doc／deck 或匯到 Lucid、Miro；Sheets 讓 Claude 從一句 prompt 生成含分頁、公式、格式與下拉選單的試算表，逐格標示修改，可匯出 .xlsx／CSV 或接 Airtable、Asana、monday.com、Smartsheet。Claude Data 可連 Redshift、BigQuery、ClickHouse，新增 certified queries（資料團隊認證的指標定義）、data stories 與 live sharing（beta）。所有付費方案都可用。HN 151 分。",
+      "tags": [
+        "Claude",
+        "Claude Sheets",
+        "Claude Data",
+        "AI workspace"
+      ],
+      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "source": "Claude Blog",
+      "sourceUrl": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": ".NET 11 正式發布：C# 15 union types 與 closed hierarchies、Native AOT CLI host，並內建 MCP／Agent Framework 等 agentic 工具",
+      "summary": ".NET 11 是 STS 版本（支援兩年），.NET 10 仍是 LTS。C# 15 加入 union types（值可以是一組指定型別之一，switch 有 exhaustiveness 檢查）和 closed hierarchies，另有 collection expression arguments、extension indexers、labeled break／continue。SDK 預設啟用 Native AOT CLI host 和常駐 MSBuild server 降低日常指令開銷；ASP.NET Core 支援 async validation、OpenAPI 3.2，實驗性的 Blazor AI components 整合 AG-UI；AI 方面推 Microsoft.Extensions.AI、MCP、Microsoft Agent Framework，以及給 agent 用的 .NET Skills。.NET MAUI 預設改用 CoreCLR，函式庫內建 Zstandard 壓縮。",
+      "tags": [
+        ".NET 11",
+        "C# 15",
+        "union types",
+        "MCP",
+        "Native AOT"
+      ],
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+      "source": "Microsoft .NET Blog",
+      "sourceUrl": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Val Town 宣布結束營運：12/10 轉唯讀、2027/1/10 全面關閉，2/1 開源",
+      "summary": "創辦人 Steve Krouse 坦言在雲端運算市場競爭不過，即日停止新註冊與升級、暫停收費，年繳用戶會部分退款。時程：12/10 進入唯讀（SQLite 和 blob storage 除外）、2027/1/10 停止所有服務、2027/2/1 開源 Val Town。官方提供遷移到 Cloudflare、Vercel、Netlify、Render 的指南，並說現在的 LLM 很適合做這類遷移。對用過 vals 跑小型 cron／API 的人，現在就該排遷移。HN 287 分。",
+      "tags": [
+        "Val Town",
+        "serverless",
+        "developer platform",
+        "migration"
+      ],
+      "url": "https://blog.val.town/winding-down",
+      "source": "Val Town Blog",
+      "sourceUrl": "https://blog.val.town/winding-down",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "【爆料】Apple 被發現在做 Harbor：把 Mac 變成私有 AI inference server，可用 Thunderbolt 5 串多台 Mac 合併記憶體",
+      "summary": "9to5Mac 引用爆料者 Aaron Perris 在 X 上的貼文：Harbor 能在 Apple silicon 上跑 open-weight models，資料不離開本機；接上兩台以上支援 Thunderbolt 5 的 Mac 會自動組成 cluster，把 unified memory 合成一個推論資源，跑單機放不下的大模型或撐更高併發，並可在 app 內瀏覽、下載、載入模型，不需要 command line。據報目前以 Apple 旗下 Claris 品牌私下預覽。這是爆料，Apple 尚未正式宣布。HN 89 分。",
+      "tags": [
+        "local LLM",
+        "Apple silicon",
+        "inference cluster",
+        "Harbor"
+      ],
+      "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "source": "9to5Mac",
+      "sourceUrl": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Latent Space 實測 NaiveAI 的 Naive-N0.5-Flash：主打每秒 2,100 tokens 的 open-weights coding 模型，品質能跟 DeepSeek 打",
+      "summary": "Latent Space 開了新的模型實測系列。Naive-N0.5-Flash 是中國公司 NaiveAI 以 Xiaomi MiMo-V2.5（310B 參數 sparse MoE、15B active）為底，額外訓練約 3.25T tokens 改用 DeepSeek Sparse Attention，其中約 3T 在固定 1M context 下訓練，並搭配自家 NaiveRT 推論引擎。作者拿它的 ultrafast 模式對比 DeepSeek V4.1 Flash 1017 和 GLM 5.3 Flash，給同樣的 app-building prompts：難題要推理較久，但整體仍較快出答案，代價是每題成本略高，適合速度優先的場景。",
+      "tags": [
+        "open-weights model",
+        "inference speed",
+        "coding model",
+        "sparse attention"
+      ],
+      "url": "https://latent.space/p/naiveai/",
+      "source": "Latent Space",
+      "sourceUrl": "https://latent.space/p/naiveai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261111-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-11",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare Basin 正式 GA：建在 Apache Iceberg＋R2 上的 serverless analytics，零 egress 費",
+      "summary": "前身是一年前預覽的「Cloudflare Data Platform」，現在整合成三個服務：Basin Pipelines（原 Cloudflare Pipelines，從 Workers、HTTP、Logpush 收事件並做 SQL 轉換）、Basin Catalog（管理 Iceberg metadata、自動做 table maintenance）、Basin SQL（serverless 分散式 SQL 引擎）。因為 egress 免費，任何 Iceberg 相容引擎如 PyIceberg、DuckDB、Snowflake、Spark 都能直接讀寫，主打讓小團隊不用管叢集就能做分析。",
+      "tags": [
+        "Apache Iceberg",
+        "serverless analytics",
+        "Cloudflare",
+        "data platform"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/cloudflare-basin-analytics/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/cloudflare-basin-analytics/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-10T14:26:46.789337+00:00",
-  "updatedAt": "2026-11-10T14:26:46.789337+00:00"
+  "lastUpdated": "2026-11-11T00:23:06.340387+00:00",
+  "updatedAt": "2026-11-11T00:23:06.340387+00:00"
 }
