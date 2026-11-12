@@ -115075,8 +115075,259 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261113-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Inflect v3：34M 參數的本地 TTS，六個英文聲音、reference-voice tuning、48kHz 增強（Apache-2.0）",
+      "summary": "個人開發者 owenawsong 釋出 Inflect v3，一個 compact 英文 TTS 家族，分 Mini（34.31M）、Micro（11.79M）、Atom（157K，波形用訊號處理產生、沒有獨立 neural vocoder）三個大小，原生 24kHz、CPU 和 CUDA 都能跑。Mini 多了 reference-voice tuning、8 種 vocal event tag 和可選的 48kHz enhancement。作者強調參數數字只算 learned synthesis core，不含發音資源和依賴；v3 要從 Hugging Face 下載整包，GitHub 上舊的 inflect/ 資料夾是 v1/v2 用的。目前只有英文。",
+      "tags": [
+        "tts_speech",
+        "on-device",
+        "small-model"
+      ],
+      "url": "https://github.com/owenawsong/Inflect",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://huggingface.co/spaces/owensong/Inflect-v3",
+      "price": null,
+      "vram": "34M 參數，CPU 就能跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261113-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Yogurt：開源 Granola 替代品，whisper.cpp 轉錄＋llama.cpp 本地摘要，會議資料不出電腦",
+      "summary": "Frigade 開源的會議筆記 app（MIT），錄麥克風和系統音訊，不會有 bot 加入會議。轉錄用 whisper.cpp（依電腦選 large-v3-turbo 或更小的模型），支援的 Mac 上另用 Apple SpeechAnalyzer 出即時字幕；摘要和問答用 llama.cpp 跑本地 open-weight 模型（Gemma 4、gpt-oss 等）。Mac、Windows、Linux 都有，最低 8GB 記憶體，首次會下載約 5GB 筆記模型，之後可能再下載 14GB 以上的較大模型。還內建唯讀的本地 MCP server，預設關閉。HN Show HN 282 分。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "whisper",
+        "llm_inference",
+        "mcp"
+      ],
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "source": "Hacker News • GitHub",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50454625",
+      "price": null,
+      "vram": "8GB 記憶體起跳，大模型約 14GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20261113-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #31915：Gemma 4 tool calling 改用 grammar 約束 schema，修好 agentic coding 亂吐參數",
+      "summary": "Gemma 4 不能用 json-schema-to-grammar，所以之前 llama.cpp 只要是合法的 Gemma 4 物件都收，導致模型常常不照使用者給的 tool schema。這個 PR（11/12 合併）幫 Gemma 4 加上 grammar 規則，強制屬性和整體結構（但不約束值本身），也順手清掉舊的 template workaround，作者說官方新 template 早已修好那些問題，還沒更新的要自己更新。r/LocalLLaMA 有人回報 Gemma 的 agentic coding tool-call 問題「完全修好」。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "tool-calling",
+        "gemma4"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31915",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/31915",
+      "price": null,
+      "vram": "視模型而定；Gemma 4 31B 需要 Q3/Q4 才塞得進 16GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20261113-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BotPsy-0.8B：Tether AI 的 0.8B on-device tool-calling 模型，BFCL v4 從 23.4 拉到 44.0",
+      "summary": "Tether AI Research（QVAC）以 Qwen3.5-0.8B 為底微調的 agent 模型，有 thinking mode。官方數據：BFCL v4 23.4→44.0、ACEBench 30.1→58.7、τ-bench 23.2→51.5，六項 tool-use benchmark 有五項贏過 2.5 倍大的 Qwen3.5-2B-Think；BFCL 的 hallucination 測試（沒有合適工具時要拒絕）86.1，IFEval 59.7→90.8。不過 GPQA Diamond 只有 38.1，知識面還是小模型水準。這些都是官方自評。另有 BF16、Q8_0、Q4_K_M 的 GGUF。",
+      "tags": [
+        "llm_inference",
+        "tool-calling",
+        "on-device",
+        "gguf"
+      ],
+      "url": "https://huggingface.co/qvac/BotPsy-0.8B",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/qvac/BotPsy-0.8B-GGUFs",
+      "price": null,
+      "vram": "0.8B，Q4_K_M 不到 1GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261113-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "KQuant（Kapitsa）：nace.ai 的 MLX 量化，同大小下 KL divergence 比 lmstudio 4-bit 低最多一半，GGUF 版說明天出",
+      "summary": "nace.ai 在自家 Apple Silicon 推理引擎 Kapitsa 推出 KQuant。README 的數字（KL 越低越接近 bf16）：9B 從 lmstudio-community 的 0.081 降到 0.037、GSM8K 0.927→0.944；27B 0.054→0.035；35B-A3B 對 MTPLX 0.096→0.059。Reddit 標題寫「3.7× better」，但 README 表格上的改善大約是 1.4–2.2 倍，以表格為準。目前只有 MLX（Mac 專用），作者說 GGUF 隔天出，到時 16GB NVIDIA 卡才用得上。Kapitsa 本身號稱 38 組 Mac × 模型裡 33 組 decode 最快，可直接開 Claude Code、Codex、opencode 接本地模型。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "mlx",
+        "apple-silicon"
+      ],
+      "url": "https://github.com/nace-ai/kapitsa",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/nace-ai/Qwen3.8-27B-MLX-KQuant",
+      "price": null,
+      "vram": "目前限 Apple Silicon；GGUF 版尚未釋出",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261113-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "smolmaxxing：把 LLM 塞進小米電視盒和 2013 年 iPad Air，1GB RAM 跑 16B MoE 5 tok/s",
+      "summary": "作者挑 1GB 可用 RAM 的小米 TV Box S（4× Cortex-A55）和越獄的初代 iPad Air，找出每台能跑的最大模型再優化。電視盒上 Qwen3.5-0.8B 從 7.5 提到 16.8 tok/s、Qwen3.5-2B 7.7 tok/s、Moon-Beam-8B-A1B（MoE，experts 從 flash 按需載入並預取下一層）7.2 tok/s、Ling-mini-2.0 16B MoE 5.1 tok/s；iPad Air 跑 1-bit Bonsai-1.7B 24–26 tok/s。手法包括 1-bit lookup-table kernel、ternary 塞 2-bit、O_DIRECT 權重串流、MTP speculation、cache-aware routing，全部實驗寫在 EXPERIMENT.md（E1–E160），GGUF 有放 HF。HN 151 分。",
+      "tags": [
+        "llm_inference",
+        "edge",
+        "moe",
+        "1-bit",
+        "gguf"
+      ],
+      "url": "https://github.com/hyperionaidev/smolmaxxing",
+      "source": "Hacker News • GitHub",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50468888",
+      "price": null,
+      "vram": "不需要 GPU（ARM CPU、1GB RAM）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261113-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ComfyUI v0.45.0：Qwen 3.x 加速第四波、SeedVR2 VAE 依剩餘 VRAM 調整、支援 RelayVSR",
+      "summary": "11/11 發布的版本，跟 16GB 卡比較相關的有：Qwen 3.x 合併平行 Linear 權重的效能改進（Part 4）和 video input 支援、修 Qwen fp8 生成文字時 crash、SeedVR2 VAE 的 slice 長度改成依可用記憶體自動調整、Get Video Components 解碼後的 frame 只留一份。新增 RelayVSR（影片超解析）、WeVisOne-VL、texture rebaking／UltraTex；partner nodes 加了 Kling 4.0 Flash、GPT Image V3、Breeze TTS 2、Pika 音樂和音效等（這些是雲端 API）。另外 local_web_sso 和 partner_node_token 改成預設開啟。",
+      "tags": [
+        "image_gen",
+        "comfyui",
+        "video",
+        "vram"
+      ],
+      "url": "https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.45.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.45.0",
+      "price": null,
+      "vram": "視 workflow；SeedVR2 VAE 會自動配合剩餘 VRAM",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261113-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Sebastian Raschka：開源 LLM 架構從 full attention 轉向 hybrid／local attention 的趨勢持續",
+      "summary": "Raschka 在 r/LocalLLaMA 預告他正在寫更大的開源 LLM 回顧，先分享一個觀察：2025 年還有很多 full attention 模型，之後轉向「保留部分 full attention」的 hybrid，2026 上半年這個趨勢延續，現在更往 local attention 傾斜。他的 LLM Architecture Gallery 可以並排比較各家架構圖、attention 機制和規格，也能下載 YAML 自己分析。對本地推理來說，hybrid／local attention 直接影響長 context 的 KV cache 大小。",
+      "tags": [
+        "llm_training",
+        "architecture",
+        "attention",
+        "kv-cache"
+      ],
+      "url": "https://sebastianraschka.com/llm-architecture-gallery/",
+      "source": "r/LocalLLaMA • Sebastian Raschka",
+      "sourceUrl": "https://sebastianraschka.com/llm-architecture-gallery/",
+      "price": null,
+      "vram": "不適用（文章）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261113-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Jensen Huang 辭去 NVIDIA CEO，CFO Colette Kress 暫代，股價一度跌超過 11%",
+      "summary": "NBC、BBC 報導：Jensen Huang 在被爆出多段婚外情（其中一位據報是疑似中國間諜、另一位是向他匯報的公司主管）後辭職，NVIDIA 董事會指派 CFO Colette Kress 為 interim CEO，公司發言人說 Huang 之後不會以任何身分參與 NVIDIA。董事會也首次設立董事長，由前 Synopsys CEO Harvey Jones 擔任。消息公布後股價跌超過 11%（BBC 說開盤一度跌超過 13% 後回升一些）；北京則警告美方不要藉此再限制對中國的晶片銷售。HN 相關討論 1,208 分，r/LocalLLaMA 也在討論之後會不會更偏向資料中心、冷落消費卡。",
+      "tags": [
+        "infra_runtime",
+        "nvidia",
+        "industry"
+      ],
+      "url": "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402",
+      "source": "NBC News • BBC • Hacker News",
+      "sourceUrl": "https://www.bbc.co.uk/news/live/c6zjry11v8w1t",
+      "price": null,
+      "vram": "不適用（產業新聞）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261113-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "用 voltage glitching 把 8GB 的 CMP 170HX 礦卡解鎖成 A100-80G，FP16 比零售 A100 快 1.18 倍",
+      "summary": "Kate 在 GA100 晶片上找到 voltage fault injection 漏洞，可以燒任意 fuse，把 CMP 170HX 8GB 礦卡變成等同 A100-80G 的卡：80GB HBM 全開，SM 開到 120–126 個（零售 A100 為求良率只開 108 個），實測 FP16 85.9 TFLOP/s，零售 A100 是 72.5；NVLink、PCIe Gen4 也能解鎖，NVJPG／NVDEC／MIG 理論上可以但她沒測。Tom's Hardware 也報導了，說是把 $2,500 的礦卡變成 $20,000 的 A100。屬於硬體駭客，需要動手改卡，風險自負。",
+      "tags": [
+        "infra_runtime",
+        "gpu",
+        "hbm",
+        "hardware-hack"
+      ],
+      "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+      "source": "Tom's Hardware • r/LocalLLaMA",
+      "sourceUrl": "https://www.tomshardware.com/pc-components/gpus/techie-turns-usd2-500-cmp-170hx-8gb-mining-card-into-a-full-fat-a100-80gb-with-voltage-glitching-carefully-blowing-onboard-fuses-to-unlock-entire-vram-and-shader-modules",
+      "price": null,
+      "vram": "不適用（解鎖後 80GB HBM）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261113-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "中國閒魚出現疑似 RTX 5090 96GB 改卡，只賣企業客戶、要簽保密協議",
+      "summary": "VideoCardz 報導：閒魚上有人以整機形式販售 RTX 5090 96GB 改裝版。照片上是 GB202-300-A1 晶片，正面 16 顆 Samsung 3GB GDDR7（48GB），要到 96GB 背面還得再 16 顆，但照片沒拍到。VIK-on 認為技術上可行，可能是參考 RTX PRO 6000 Blackwell Max-Q 的板子，難點在 VBIOS，但也可能是詐騙；晶片日期碼是 2025 年第 32 週，可能是從零售卡拆下來的。VideoCardz 自己說還沒驗證有能動的卡，價格也只是佔位。",
+      "tags": [
+        "infra_runtime",
+        "gpu",
+        "vram",
+        "rumor"
+      ],
+      "url": "https://videocardz.com/newz/alleged-geforce-rtx-5090-with-96gb-listed-for-sale-in-china",
+      "source": "VideoCardz（經 r/LocalLLaMA）",
+      "sourceUrl": "https://videocardz.com/newz/alleged-geforce-rtx-5090-with-96gb-listed-for-sale-in-china",
+      "price": null,
+      "vram": "不適用（未經證實的改卡）",
+      "license": "不適用"
+    },
+    {
+      "id": "20261113-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "LibreAGI：用私有 BitTorrent tracker 保存開源模型，怕模型從 HF 等平台消失",
+      "summary": "LibreAGI 是私有 BitTorrent tracker，會員幫忙保存「最可能消失」的模型；分享積分隨檔案大小和做種時間增加，只有一份備份的模型給四倍積分。收 safetensors、GGUF、ONNX 等格式，但限 Apache-2.0、MIT 和 Qwen Community License，每個檔案會對照來源 commit 檢查、staff 人工審核，另有簽章的公開目錄，網站倒了也能重建 swarm。HN 87 分；同一天 HN 另有文章〈Torrents are perfect for model distribution〉，以 DeepSeek-V4.1-Flash-1017 的 510GB、48 個 shard 為例，說明 BitTorrent v2 的逐檔 Merkle tree 很適合模型分發。",
+      "tags": [
+        "infra_runtime",
+        "model-distribution",
+        "bittorrent"
+      ],
+      "url": "https://libreagi.com/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50467439",
+      "price": null,
+      "vram": "不適用（服務）",
+      "license": "不適用"
     }
   ],
-  "lastUpdated": "2026-11-12T19:13:29.055002+00:00",
-  "updatedAt": "2026-11-12T19:13:29.055002+00:00"
+  "lastUpdated": "2026-11-13T03:24:34+08:00",
+  "updatedAt": "2026-11-13T03:24:34+08:00"
 }
