@@ -115326,8 +115326,486 @@
       "price": null,
       "vram": "不適用（服務）",
       "license": "不適用"
+    },
+    {
+      "id": "20261113-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Daniel Vassallo：Apple 兩度失去 Jobs，只有一次撐過去——NVIDIA 比較像 1985",
+      "summary": "Apple 被測試過兩次沒有 Jobs 的情況：1985 年他被開除、2011 年他過世，結果只有第二次過得好。Vassallo 認為 Jensen 這次更像 1985：差別在公司有沒有已經能自己運轉的品牌和接班體系；在 AI 競賽正激烈的時候，NVIDIA 還不能只靠品牌吃老本。",
+      "tags": [
+        "founder-dependency",
+        "succession",
+        "historical-analogy"
+      ],
+      "url": "https://x.com/dvassallo/status/2120928478019416397",
+      "source": "Daniel Vassallo (X)",
+      "sourceUrl": "https://x.com/dvassallo/status/2120928478019416397",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Patrick Collison：朋友直接 prompt 出一個 Linux ABI 相容的 OS——PromptOS",
+      "summary": "Collison 分享一個朋友替自己的雲端應用 prompt 出 Linux ABI 相容的作業系統：何必用現成的 libc、device drivers、TCP stack，連帶它們的肥大和攻擊面？他說 PromptOS 在 production 上還比 stock Linux 快。背後的框架：當寫軟體的成本趨近零，「用通用元件」的預設值會被「為自己量身打造」挑戰。",
+      "tags": [
+        "bespoke-software",
+        "build-vs-buy",
+        "ai-coding"
+      ],
+      "url": "https://x.com/patrickc/status/2120907937627684940",
+      "source": "Patrick Collison (X)",
+      "sourceUrl": "https://x.com/patrickc/status/2120907937627684940",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Elad Gil：趁順的時候重整 board，別等出事才被突襲",
+      "summary": "看 NVIDIA 這次（以及 OpenAI 政變、Uber）的教訓，Elad Gil 提醒 founder 重新檢視 board 成員：要在好時機重整，避免壞時機時被突然行動。另一則他補充，小而高信任的 board 最好（Berkshire、SpaceX 為例），上市時別照「governance experts」推薦塞進大學教授或不相關公司的專業經理人 CEO。",
+      "tags": [
+        "board-governance",
+        "founder-control",
+        "high-trust"
+      ],
+      "url": "https://x.com/eladgil/status/2120892257201181160",
+      "source": "Elad Gil (X)",
+      "sourceUrl": "https://x.com/eladgil/status/2120892257201181160",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Lulu Cheng Meservey：CEO 離開時讓公司最痛的結構清單",
+      "summary": "Meservey 反過來列出「如果 CEO 想讓自己的離開對公司最痛苦」會怎麼做：沒有接班人、沒有 COO 或 president、幾十個 direct reports、沒有人得到 1:1 coaching、個人崇拜，以及關鍵對外關係全綁在自己身上。用 inversion 檢查自己的公司：這些就是 single point of failure 的清單。",
+      "tags": [
+        "inversion",
+        "succession",
+        "single-point-of-failure"
+      ],
+      "url": "https://x.com/lulumeservey/status/2120940532700414157",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2120940532700414157",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "levelsio：3 小時把 video-to-3D 做成 Interior AI 的正式功能",
+      "summary": "levelsio 用自己架在 VPS 上的 headless Blender，3 小時內把 video-to-3D 做成功能：上傳客廳或整層樓的走動影片，Interior AI 就轉成可走動的 3D 空間，能改牆色、移動家具；之後陸續加上風格切換和一鍵 photorealistic render。一人公司的打法：先在 X 上公開做、當天就上線，再看反應迭代。",
+      "tags": [
+        "build-in-public",
+        "one-person-company",
+        "ship-fast"
+      ],
+      "url": "https://x.com/levelsio/status/2120691736657735765",
+      "source": "Pieter Levels (X)",
+      "sourceUrl": "https://x.com/levelsio/status/2120691736657735765",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Naval：一個人不能就這樣把 founder 換掉",
+      "summary": "\"You'd think we'd have learned from Steve Jobs and Travis Kalanick that one does not just simply replace the founder…\" ——NVIDIA 董事會處理 Jensen Huang 的當下，Naval 用 Jobs 和 Kalanick 提醒 founder 對公司的不可替代性。",
+      "tags": [
+        "founder-mode",
+        "succession"
+      ],
+      "url": "https://x.com/naval/status/2120752211588452715",
+      "source": "Naval (X)",
+      "sourceUrl": "https://x.com/naval/status/2120752211588452715",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Lulu Cheng Meservey：Sooner and imperfect is better than perfect but too late",
+      "summary": "\"Sooner and imperfect is better than perfect but too late\" ——她指出 NVIDIA 的 all hands 還要一週，而這段期間每個員工都在收 job offer、評估去留；危機溝通慢一步，就是把人才讓給別人。",
+      "tags": [
+        "crisis-comms",
+        "speed"
+      ],
+      "url": "https://x.com/lulumeservey/status/2120910143781019998",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2120910143781019998",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Sahil Bloom：脫穎而出最快的方法，是給人完整的注意力",
+      "summary": "\"I think the fastest way to stand out is to just give people your undivided attention. It's shockingly rare.\" ——把手機收起來、別四處張望、別在對方說話時準備回應，好好聽就好。",
+      "tags": [
+        "attention",
+        "listening"
+      ],
+      "url": "https://x.com/SahilBloom/status/2120884121748623643",
+      "source": "Sahil Bloom (X)",
+      "sourceUrl": "https://x.com/SahilBloom/status/2120884121748623643",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "libracoder/kiri",
+      "priority": "rising-fast",
+      "stars": 1701,
+      "createdDate": "2026-11-02",
+      "license": "Apache-2.0",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/libracoder/kiri",
+      "tags": [
+        "container-runtime",
+        "docker",
+        "rust",
+        "devtools"
+      ],
+      "summary": "用 Rust 寫的輕量 container runtime，定位是 Docker Desktop / OrbStack 的替代品，macOS、Windows、Linux 都能跑。直接相容既有的 docker CLI、Compose 和 buildx，現有 Docker image 不用改。"
+    },
+    {
+      "id": "20261113-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "livliv-dev/player",
+      "priority": "rising-fast",
+      "stars": 1506,
+      "createdDate": "2026-11-04",
+      "license": "Apache-2.0",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/livliv-dev/player",
+      "tags": [
+        "lip-sync",
+        "vtuber",
+        "webgl",
+        "creator-tools"
+      ],
+      "summary": "網頁用的輕量 2.5D 角色播放器，核心約 30KB gzipped、WebGL2 零依賴。支援麥克風／音訊／影片 lip sync 和 webcam face tracking（MediaPipe），可播 LivLiv、VRM、PNGTuber 角色，附 25 個現成角色，適合直播 overlay 或創作者工具。"
+    },
+    {
+      "id": "20261113-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "voyager-so/vork",
+      "priority": "rising-fast",
+      "stars": 1492,
+      "createdDate": "2026-11-05",
+      "license": "NOASSERTION",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/voyager-so/vork",
+      "tags": [
+        "3d",
+        "vfx",
+        "agent-tools",
+        "gpu-rendering"
+      ],
+      "summary": "專為 AI agent 設計的 headless 3D / VFX engine：agent 用程式碼寫整個場景（含 shader、材質、相機、物理），由 vork 在 GPU 上算圖，核心 API 約 2,500 tokens。官方示範 100 萬隻鳥、192 幀 1080p 在單張 NVIDIA L4 上 97 秒算完。目前是 research preview。"
+    },
+    {
+      "id": "20261113-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "egoist/mygo-music",
+      "priority": "rising-fast",
+      "stars": 1275,
+      "createdDate": "2026-11-04",
+      "license": "AGPL-3.0",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/egoist/mygo-music",
+      "tags": [
+        "music-player",
+        "go",
+        "plugins",
+        "asr"
+      ],
+      "summary": "用 Go 寫的原生桌面音樂播放器（沒有 WebView），內建播放 MP3/FLAC/WAV/ALAC 等本地檔與 .lrc 歌詞，其餘來源全靠 plugin 擴充（帳號、曲庫、電台、留言）。Podcast 可用 sherpa-onnx + Qwen3-ASR 在本機即時產生字幕。"
+    },
+    {
+      "id": "20261113-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "agentes-chat/agentes-chat",
+      "priority": "rising-fast",
+      "stars": 1070,
+      "createdDate": "2026-11-09",
+      "license": "AGPL-3.0",
+      "source": "GitHub API (topic:claude-code)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "tags": [
+        "team-chat",
+        "ai-agents",
+        "self-hosted",
+        "mcp"
+      ],
+      "summary": "開源、可 self-host 的 Slack 替代品，讓團隊和 AI agent 在同一個 channel / DM 裡協作。每個 agent 有角色、owner 和預算，敏感操作前會先問；可接 Claude、ChatGPT/Codex、Gemini、Grok 或任何 OpenRouter model，支援 MCP tools。"
+    },
+    {
+      "id": "20261113-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "kubai087/kubai-icons",
+      "priority": "rising-fast",
+      "stars": 783,
+      "createdDate": "2026-11-03",
+      "license": "NOASSERTION",
+      "source": "GitHub API (topic:agent-skills)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/kubai087/kubai-icons",
+      "tags": [
+        "agent-skills",
+        "icons",
+        "design",
+        "claude-code"
+      ],
+      "summary": "一個讓 Claude Code、Codex 等 coding agent 用一致風格畫 animated icons 的 agent skill，附 2,800+ 個用它畫好的開源 icon，可直接用在 React、Vue 和網頁。"
+    },
+    {
+      "id": "20261113-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "alexeyw/lot-map",
+      "priority": "rising-fast",
+      "stars": 575,
+      "createdDate": "2026-11-09",
+      "license": "MIT",
+      "source": "GitHub API (topic:claude-code)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/alexeyw/lot-map",
+      "tags": [
+        "claude-code",
+        "plugin",
+        "observability"
+      ],
+      "summary": "Claude Code 的 plugin：在聊天旁開一個即時地圖 pane，每次 tool call、model step、hook、skill、subagent 都會亮起對應站點，讓你「看到」agent 在動哪裡，而不是讀一長串指令。用 /plugin install 就能裝。"
+    },
+    {
+      "id": "20261113-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "bytesbay/pi-gpui",
+      "priority": "worth-trying",
+      "stars": 108,
+      "createdDate": "2026-11-04",
+      "license": "MIT",
+      "source": "GitHub API (topic:coding-agent)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/bytesbay/pi-gpui",
+      "tags": [
+        "coding-agent",
+        "gpui",
+        "rust",
+        "desktop"
+      ],
+      "summary": "pi coding agent 的原生 GUI，用 Rust + GPUI（Zed 的 UI framework）寫，沒有 Electron。透過 RPC 跑你原本的 pi，models、extensions、skills、sessions 全部共用；官方量測 app 16MB、idle 約 75MB 記憶體。支援 macOS 與 Linux。"
+    },
+    {
+      "id": "20261113-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "Bil0000/Hill-Climb",
+      "priority": "worth-trying",
+      "stars": 103,
+      "createdDate": "2026-11-02",
+      "license": "MIT",
+      "source": "GitHub API (topic:coding-agent)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/Bil0000/Hill-Climb",
+      "tags": [
+        "coding-agent",
+        "claude-code",
+        "codex",
+        "agent-skills",
+        "testing"
+      ],
+      "summary": "讓 coding agent 證明自己真的「做完了」的 skill：給目標和一個打分指令，agent 小步修改，分數變好才 commit、否則 undo，而且拒絕任何修改檢查本身的步驟，避免 agent 偷改 test 來過關。支援 Claude Code 和 Codex。"
+    },
+    {
+      "id": "20261113-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "sshah03/recalc",
+      "priority": "worth-trying",
+      "stars": 73,
+      "createdDate": "2026-11-03",
+      "license": "Apache-2.0",
+      "source": "GitHub API (topic:coding-agent)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/sshah03/recalc",
+      "tags": [
+        "coding-agent",
+        "spreadsheet",
+        "multi-agent",
+        "claude-code"
+      ],
+      "summary": "把試算表當成 agent 的總控台：每個 cell 可以是值、公式、terminal 指令，或一個 Claude Code / Codex agent，能即時看 agent 填格子、點開任一格的 terminal 直接下指令。目前 early beta，macOS 為主。"
+    },
+    {
+      "id": "20261113-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "HolyArrs/HolyArrs",
+      "priority": "on-the-radar",
+      "stars": 940,
+      "createdDate": "2026-11-09",
+      "license": "AGPL-3.0",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50439000",
+      "url": "https://github.com/HolyArrs/HolyArrs",
+      "tags": [
+        "self-hosted",
+        "media-server",
+        "music"
+      ],
+      "summary": "Show HN 167 分：一個 15MB、self-hosted 的影音一體 app，把影集、電影、音樂和下載整合在同一個服務裡，號稱「自家 media server 上的 Netflix + Spotify」。",
+      "extra": {
+        "hnPoints": 167
+      }
+    },
+    {
+      "id": "20261113-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "0xdeadf1sh/AssemblyForNeovim",
+      "priority": "on-the-radar",
+      "stars": 210,
+      "createdDate": "2026-10-09",
+      "license": "Unlicense",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50453229",
+      "url": "https://github.com/0xdeadf1sh/AssemblyForNeovim",
+      "tags": [
+        "neovim",
+        "c++",
+        "rust",
+        "compiler-explorer"
+      ],
+      "summary": "Show HN 103 分：Neovim 裡的迷你 Godbolt，在 floating window 顯示游標所在函式或選取範圍的 C/C++/Rust 組合語言，可用 +/- 切換 -O 等級，會讀 compile_commands.json。寫 DSP / 音訊效能熱點時很好用。",
+      "extra": {
+        "hnPoints": 103
+      }
+    },
+    {
+      "id": "20261113-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "VoxRT/LinnetTTS",
+      "priority": "on-the-radar",
+      "stars": 32,
+      "createdDate": "2026-11-03",
+      "license": "Apache-2.0",
+      "source": "GitHub API (topic:text-to-speech)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "url": "https://github.com/VoxRT/LinnetTTS",
+      "tags": [
+        "tts",
+        "on-device",
+        "voice-cloning",
+        "rust"
+      ],
+      "summary": "約 41M 參數的 on-device TTS（autoregressive flow LM + 25Hz continuous-latent codec），首個 80ms 就開始串流，單顆手機 CPU core 即可即時合成，Rust runtime 支援 Android/iOS/Linux/Python。注意：開源版只附兩個內建聲音，voice cloning 需要的 encoder 沒公開、另有授權。"
+    },
+    {
+      "id": "20261113-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "Omnigraph",
+      "priority": "product-hunt",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/12",
+      "url": "https://omnigraph.dev/",
+      "tags": [
+        "graph-database",
+        "agent-memory",
+        "open-source"
+      ],
+      "summary": "開源、object-storage native 的 graph database，給 AI agent 共用知識用：typed ontology 加上 Git 式 branching / review / merge，每次寫入都能先驗證再併入共享 context。可跑在自己的 S3 相容儲存上，semantic、keyword、hybrid search 和 graph traversal 一個 query 搞定。",
+      "extra": {
+        "upvotes": 207,
+        "phStatus": "Product Hunt 頁面 curl 回 403，改用產品官網驗證"
+      }
+    },
+    {
+      "id": "20261113-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-13",
+      "cycle": "friday",
+      "title": "⌘+L (Command L)",
+      "priority": "product-hunt",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/12",
+      "url": "https://letter.dev/commandl",
+      "tags": [
+        "design-to-code",
+        "claude-code",
+        "codex",
+        "web-editing"
+      ],
+      "summary": "一個 script tag，讓你像改 Figma 一樣直接在網站上動手改，背景由 Claude Code、Codex 或 Letterpress-1 自動把改動轉成 pull request。",
+      "extra": {
+        "upvotes": 200,
+        "phStatus": "Product Hunt 頁面 curl 回 403，改用產品官網驗證"
+      }
     }
   ],
-  "lastUpdated": "2026-11-13T03:24:34+08:00",
-  "updatedAt": "2026-11-13T03:24:34+08:00"
+  "lastUpdated": "2026-11-13T03:53:06+08:00",
+  "updatedAt": "2026-11-13T03:53:06+08:00"
 }
