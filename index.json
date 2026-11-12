@@ -114997,7 +114997,7 @@
       "cycle": "morning",
       "priority": "medium",
       "title": "Humble Bundle 改版後被指「vibecoding 弄壞安全性」：使用者回報 2FA 消失、登入不用 token",
-      "summary": "SpaceBattles 論壇一篇貼文指控 Humble Bundle 新版網站是 vibecoding 做出來的，安全機制大量失效，登上 HN 332 分、Lobsters 也有討論。HN 留言裡有人說自己真的不用 2FA 就登入了、email 驗證碼晚了一小時才到，原貼文還提到 2FA 不再要求 token、一鍵付款被打開；也有人反駁問題在人不在 AI。這些都是使用者回報，Humble Bundle 官方尚未回應、「用 vibecoding 重寫」也沒有官方證實；當作「AI 加速改版但缺審查」的警訊看就好。",
+      "summary": "SpaceBattles 論壇一篇貼文指控 Humble Bundle 新版網站是 vibecoding 做出來的，安全機制大量失效，登上 HN 332 分、Lobsters 也有討論。HN 留言裡有人說自己真的不用 2FA 就登入了、email 驗證碼晚了一小時才到，原貼文還提到 2FA 不再要求 token、一鍵付款被打開；也有人反駁問題在人不在 AI。這些都是使用者回報，目前沒找到 Humble Bundle 官方回應、「用 vibecoding 重寫」也沒有官方證實；當作「AI 加速改版但缺審查」的警訊看就好。",
       "tags": [
         "vibe coding",
         "security",
