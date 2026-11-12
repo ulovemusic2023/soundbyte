@@ -114684,8 +114684,399 @@
         "phStatus": "Product Hunt 頁面 curl 回 403，改用 GitHub repo 驗證"
       },
       "summary": "把 agent 寫的整個 repo 當成 review 打開：對某行、檔案或資料夾留言問「為什麼」，由寫它的 agent 根據程式碼回答；也能 review diff、PR 和設計。免費開源、無 telemetry。"
+    },
+    {
+      "id": "20261112-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "MusicFlux：用 flow-matching 的文字引導音樂編輯器，兼顧品質與運算效率",
+      "summary": "arXiv 新論文 MusicFlux 以預訓練的 flow-matching text-to-audio 模型為底，做文字引導的音樂編輯（inpainting、事件插入、修復）。提出兩種 conditioning 方式：一種編輯品質較好，另一種保留原序列長度、運算效率大幅提升，兩者都與強基準相當。",
+      "priority": "high",
+      "tags": [
+        "music generation",
+        "audio model",
+        "text to music"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.13834"
+    },
+    {
+      "id": "20261112-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "BARS：用 Flow Matching 做 beat 自適應的 rap 人聲合成",
+      "summary": "BARS 是 non-autoregressive 的 rap 人聲生成模型，輸入 beat 軌、歌詞與一小段參考人聲即可 zero-shot 控制音色，並能獨立調整 rap 速度。歌詞用 ByT5 encoder 處理俚語與數字，並提出 Asymmetric Scaled RoPE 改善歌詞與音訊對齊。",
+      "priority": "high",
+      "tags": [
+        "voice synthesis",
+        "music generation",
+        "audio generation"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.12061"
+    },
+    {
+      "id": "20261112-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "arXiv：對 CLAP／MuQ／MERT 做 post-hoc disentanglement，提升音樂相似度檢索",
+      "summary": "研究把 Conditional Similarity Networks 套在凍結的預訓練 embedding（CLAP、MuQ、MERT）上，而不是從頭訓練 backbone。結果顯示只需極少的可訓練參數，就能同時改善屬性層級的解耦與整體檢索表現。",
+      "priority": "high",
+      "tags": [
+        "clap",
+        "mert",
+        "music embedding",
+        "music foundation model"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.14415"
+    },
+    {
+      "id": "20261112-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "Soniqo Music：免費的 iPhone 本機人聲分離 app",
+      "summary": "Soniqo Music: Vocal Remover 是 App Store 上的 iPhone app，在 Show HN 上以「免費、on-device 人聲分離」的定位被分享。目前我只確認到 App Store 頁面存在，細節（模型、輸出格式、是否有內購）尚未確認。",
+      "priority": "high",
+      "tags": [
+        "stems separation",
+        "voice",
+        "music app"
+      ],
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50424177",
+      "url": "https://apps.apple.com/us/app/soniqo-music-vocal-remover/id6828977669"
+    },
+    {
+      "id": "20261112-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "Universal Audio 推出 native 版 UAD Cooper Time Cube 延遲 plugin",
+      "summary": "UA 把 1971 年由 Bill Putnam 與 Duane Cooper 設計、用真實水管產生 slapback 的類比 delay 做成 native plugin，支援 Windows／macOS（VST3、AU、AAX）。原價 $99 USD，導入價 $49，優惠到 2026/11/30。",
+      "priority": "medium",
+      "tags": [
+        "plugin",
+        "delay",
+        "audio effect",
+        "vst3"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/universal-audio-launches-native-uad-cooper-time-cube-delay-plugin/"
+    },
+    {
+      "id": "20261112-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "DJ.Studio 5.0：DJ DAW 新增 Phrase Detection 與 Smart Beatgrid",
+      "summary": "DJ.Studio 5.0 加入 Phrase Detection，自動辨識 intro、verse、chorus 等段落，協助把 transition 與樂句起點對齊。另有適合人類演奏、tempo 會飄的 Smart Beatgrid，以及重寫的核心。",
+      "priority": "medium",
+      "tags": [
+        "music structure",
+        "beat tracking",
+        "daw",
+        "music software"
+      ],
+      "source": "Gearnews",
+      "sourceUrl": "https://www.gearnews.com/dj-studio/"
+    },
+    {
+      "id": "20261112-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "OpenRB-338：免費開源重現 ReBirth RB-338，可讀原始 ReBirth 歌曲檔",
+      "summary": "pingw33n 開發的 OpenRB-338 讓 1997 年的 Propellerhead ReBirth 能在現代桌面系統上執行，audio engine 以重現原版輸出為目標。目前是獨立 app，文件列出 MIDI 輸入、MIDI sync、VST／AU／ReWire 與部分 pattern 編輯功能尚未實作。",
+      "priority": "medium",
+      "tags": [
+        "open source audio",
+        "synthesizer",
+        "drum machine",
+        "music software"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/08/free-open-source-openrb-338-brings-rebirth-back-for-modern-computers/",
+      "url": "https://github.com/pingw33n/openrb-338"
+    },
+    {
+      "id": "20261112-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "LACIMA CS-01：重現 80 年代初電池供電 monosynth 的 plugin",
+      "summary": "LACIMA DSP 的 CS-01 模擬同一款小型 monosynth 的兩個版本：1982 原版（12 dB 濾波、雙段 resonance 開關）與 1984 後繼版（24 dB、resonance 可自振）。可熱切換 MODEL，另有 AGE 控制、MIDI CC 2 breath、23 個 preset，發售價 $9 USD。",
+      "priority": "medium",
+      "tags": [
+        "synthesizer",
+        "soft synth",
+        "vst3",
+        "plugin"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/lacima-dsp-releases-lacima-cs-01-early-80s-analog-monosynth-plugin/"
+    },
+    {
+      "id": "20261112-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-12",
+      "cycle": "morning",
+      "title": "Sweet Audio Swell：拖放式 reverse reverb plugin",
+      "summary": "Swell 讓你把任何聲音拖進去，即時調整後直接拖到軌道上，不用 bounce 就能做 reverse reverb。支援 Windows／macOS（VST3、AU、CLAP），售價 €20，有功能完整的免費試用版。",
+      "priority": "medium",
+      "tags": [
+        "reverb",
+        "audio effect",
+        "plugin",
+        "vst3"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/sweet-audio-launches-swell-reverse-reverb-effect-plugin/"
+    },
+    {
+      "id": "20261113-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google 發布 Gemini 4 Hydrogen：主打快速 agentic 執行，搭配 Antigravity 新的 Orchestrator 在同一 session 動態切換 Carbon／Hydrogen",
+      "summary": "Hydrogen 是 Gemini 4 家族裡負責「快速執行」的模型，給 everyday coding、修 bug、web dev 和多模態工作，不跟 Carbon、Argon 拼長程深度推理。官方數字：Artificial Analysis Intelligence Index 預設 high thinking 拿 51（略高於 Argon 的 50，xhigh 到 54）；比 Gemini 3.8 Flash 快 2.5 倍、Terminal-Bench 4.1 從 18.2% 升到 57%、fabricated claims 減少 5 倍以上；會平行批次 file-read／search 呼叫。定價在整個 1M context 一律 $1.50／$7.50 per M tokens，四段 thinking level 可調，今天起 Gemini API、AI Studio、Gemini app、Search 都能用。重點是 Antigravity 的 Orchestrator：不是用第一個 prompt 猜難度的靜態 router，而是讓 Carbon 先 read-only 探索、規劃，Hydrogen 接手改 code 跑測試，卡住再交回 Carbon；官方說達到接近 Carbon 的成功率，同時省 24% quota、快 19%。Vercel AI Gateway 當天上架，HN 216 分。",
+      "tags": [
+        "paradigm-shift",
+        "Gemini 4 Hydrogen",
+        "multi-model orchestration",
+        "coding agents",
+        "model routing"
+      ],
+      "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Apache HTTP Server 爆 Critical RCE（CVE-2026-119618）：mod_http2 race condition 可遠端未驗證執行程式碼，Anthropic 與 Google 各自獨立發現",
+      "summary": "漏洞在 HTTP/2 模組 mod_http2 的 assign_headers()：多執行緒共用資源時同步不當，攻擊者可造成 heap corruption，進而以 web server 權限執行任意指令，不需驗證。影響 2.4.55 到 2.4.70，修在 2.4.71；獨立的 mod_h2 模組 2.0.8–2.0.42 也受影響。Wiz 說截至發文沒有公開 exploit、也沒有在野利用，但依它的資料 64% 的雲端環境有受影響資源、51% 有對外暴露的 instance（未考慮設定）。沒辦法馬上升級的話，暫時把 Protocols 限成 http/1.1、拿掉 h2／h2c。值得注意的是發現者是 Anthropic 和 Google Cloud 的漏洞研究團隊，AI 輔助找洞的趨勢又一例。HN 345 分。",
+      "tags": [
+        "security",
+        "CVE",
+        "Apache httpd",
+        "HTTP/2",
+        "AI vulnerability research"
+      ],
+      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+      "source": "Wiz Blog",
+      "sourceUrl": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "〈Bad ideas that aren't bad anymore〉：團隊不再互相 review PR、一人一條工作線，15 年經驗的直覺在 AI 時代反而失準",
+      "summary": "Devon Estes 寫他團隊現在做的兩件「以前覺得是壞主意」的事。第一，沒人 review 別人的 PR：工程師跟 Claude 做 ticket、由 Claude 開 PR，負責 ticket 的人自己 review，CI 綠燈加上 Greptile review 乾淨、本人有把握就直接 merge；他的理由是第二雙眼睛還在（作者是 Claude，reviewer 是最懂問題的人），而 code review 抓的多半是小 bug，本來就很少抓到架構問題。第二，把團隊拆成各自負責一條工作線：以前怕知識孤島，但現在請 Claude「帶我進度」幾分鐘就能接手，context switch 的成本從理解 code 變成只要理解問題。他也坦承才實行一個月，長期後果還不知道。HN 82 分，討論很多。",
+      "tags": [
+        "paradigm-shift",
+        "code review",
+        "AI-assisted coding",
+        "team practices",
+        "engineering management"
+      ],
+      "url": "https://devonestes.com/bad-ideas-that-arent-bad-anymore",
+      "source": "Devon C. Estes",
+      "sourceUrl": "https://devonestes.com/bad-ideas-that-arent-bad-anymore",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Jane Street 調整軟體工程面試：新增少寫 code、重設計與驗證、會用 LLM 產 code 的關卡",
+      "summary": "Jane Street 說多數工程師現在每天用 LLM 寫、讀、debug 和 review code，產 code 變便宜，「決定做什麼的品味、選得久的抽象、確認做出來的東西真的正確」就更重要。所以今年夏天開始在 campus 候選人的 onsite 試新關卡：寫 code 比較少，偏重 software design、驗證程式的品質／結構／意圖，以及用 LLM 產 code。多數關卡仍是不能用 LLM 的傳統 coding 面試，格式刻意不細講，因為半年後可能就變了；也強調不需要有一套精心設計的 agent 工作法，重點是清楚知道工具擅長和不擅長什麼。HN 102 分。",
+      "tags": [
+        "hiring",
+        "engineering culture",
+        "AI-assisted coding",
+        "Jane Street"
+      ],
+      "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+      "source": "Jane Street Blog",
+      "sourceUrl": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Rust 1.100.0：never type `!` 歷經 10 年、5 次失敗終於穩定，Allocator API 也一起 stabilize",
+      "summary": "這版最大的事是 never type：現在任何地方都能寫 `!`（例如 `Result<T, !>`），`Infallible` 改成 `!` 的 alias，舊 API 自動相容；代價是 2015／2018／2021 edition 的 never type fallback 從 `()` 改成 `!`，少數情況（例如忽略回傳 generic 參數的函式結果）會有行為差異，編譯器也可能多判出 unreachable code。另外 stabilize custom allocators（`std::alloc::Allocator`、`Global`、`System`）、DropGuard API；Cargo 能回報沒用到的 dependencies、新增 min-publish-age，`wasm32-wasip3` 升為 Tier 2。升級前建議先更新依賴，很多受影響的 crate 已出修正版。HN 137 分。",
+      "tags": [
+        "Rust",
+        "never type",
+        "allocator API",
+        "Cargo",
+        "language release"
+      ],
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.100.0",
+      "source": "Rust Blog",
+      "sourceUrl": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LinkedIn 用自製 GitOps engine 取代 Argo CD：250+ 叢集、每週 10 萬次部署，基礎設施失敗從 925 降到 63",
+      "summary": "LinkedIn 原本每個 cluster 一個 Argo CD instance，由中央 orchestrator 為每次部署開臨時 pod。規模放大後列出七個問題，例如 Argo CD 沒有 observedGeneration，無法把 sync／health 狀態對應到特定部署；repo-server 快取過期時，Synced 且 Healthy 的 app 可能其實是錯的 revision；它對每個 group-version-resource 只開一個 watch，LinkedIn 叢集資源類型少，一個 app 的 etcd churn 就拖慢所有 sync（6 萬 pod 時 sync 不到 3 分鐘，8 萬以上超過 10 分鐘）。換成自製 engine 後，部署量變 3.7 倍，部署基礎設施失敗反而從 925 降到 63，偵測並結束失敗部署的中位時間從 16.1 分鐘降到 2.45 分鐘。",
+      "tags": [
+        "GitOps",
+        "Kubernetes",
+        "Argo CD",
+        "platform engineering",
+        "deployment"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/kubernetes-argocd-linkedin/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "IBM 推 LLMON（LLM Object Notation）：用 special-token 標記把指令與資料分開，Granite 4.1 3B／8B preview 先支援",
+      "summary": "IBM Granite 團隊認為 context 裡的 system prompt、對話、tool 回應、文件、輸出限制混在一起，多半用 JSON 這種不是給 LLM 設計的格式表達，是小模型容易出錯、也容易被 prompt injection 的原因。LLMON 把語意上一致的區塊用有意義的 tag 包在保留的 special-token 分隔符裡，schema 和巢狀結構用 causal LLM 不會誤解的方式寫出來，每段指令有 unique ID，可以像函式呼叫一樣綁定到要處理的資料。今天釋出 granite-4.1-3b-LLMON-preview、granite-4.1-8b-LLMON-preview 兩個實驗模型和 GitHub toolkit；官方說因為指令與資料明確分離，藏在使用者資料裡的間接 prompt injection 大多會被忽略。",
+      "tags": [
+        "LLMON",
+        "prompt injection",
+        "context engineering",
+        "IBM Granite",
+        "structured prompting"
+      ],
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Humble Bundle 改版後被指「vibecoding 弄壞安全性」：使用者回報 2FA 消失、登入不用 token",
+      "summary": "SpaceBattles 論壇一篇貼文指控 Humble Bundle 新版網站是 vibecoding 做出來的，安全機制大量失效，登上 HN 332 分、Lobsters 也有討論。HN 留言裡有人說自己真的不用 2FA 就登入了、email 驗證碼晚了一小時才到，原貼文還提到 2FA 不再要求 token、一鍵付款被打開；也有人反駁問題在人不在 AI。這些都是使用者回報，目前沒找到 Humble Bundle 官方回應、「用 vibecoding 重寫」也沒有官方證實；當作「AI 加速改版但缺審查」的警訊看就好。",
+      "tags": [
+        "vibe coding",
+        "security",
+        "authentication",
+        "2FA",
+        "AI-generated code risk"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50463899",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50463899",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "n8n 開源 Nod：在你自己電腦上跑的 personal agent，在真實網站上追發票、取消試用，動手前先問你",
+      "summary": "n8n Labs 的 Nod 是 Apache-2.0 開源的個人 agent，有自己的瀏覽器「電腦」，能處理追發票、準備會議、取消試用這類行政雜事，執行像寄信或付款這種動作前會先徵求同意。它跑在你本機（macOS 14+ 正式，Windows 11 與 Linux x64 為 preview），模型自選：ChatGPT Plus／Pro 或自己的 API key，不需要 n8n 帳號。GitHub 約 780 stars。對做 computer-use agent 或想參考「approval-before-action」設計的人值得看。",
+      "tags": [
+        "personal agent",
+        "computer use",
+        "human-in-the-loop",
+        "open source",
+        "n8n"
+      ],
+      "url": "https://github.com/n8n-io/nod",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/n8n-io/nod",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Martin Fowler Bliki〈Generated Glossary〉：讓 LLM 從組織文件生成領域詞彙表，再給其他 LLM 查",
+      "summary": "Fowler 建議用 LLM 掃組織內的文件、email、chat log，找出常一起出現的詞組，以及「已知詞但被用在不熟悉意思」的情況（後者最容易造成混淆），產生字典格式、精簡的 glossary；同一詞有不同用法時列出替代定義並註明情境。草稿要由領域專家審，放在其他 LLM 好查、省 token 的地方，進版控、定期由 agent 和人一起更新。他也連到 DDD 的 Bounded Context：大組織不同部門的定義本來就不一樣，source code 也是一個有趣的 bounded context。",
+      "tags": [
+        "context engineering",
+        "domain-driven design",
+        "glossary",
+        "knowledge management"
+      ],
+      "url": "https://martinfowler.com/bliki/GeneratedGlossary.html",
+      "source": "Martin Fowler",
+      "sourceUrl": "https://martinfowler.com/bliki/GeneratedGlossary.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261113-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-13",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "smolmaxxing：在約 1 GB 可用 RAM 的小米電視盒上跑 0.8B 到 16B 的 LLM，每個數字都實機量測",
+      "summary": "這個 repo 想把電視盒、舊手機、單板電腦、路由器這類閒置裝置能跑的最大模型找出來，再用 custom kernel、更聰明的記憶體用法和 weight streaming 推得更遠。第一台是 Xiaomi TV Box S 第三代（Amlogic S7D、4 顆 Cortex-A55、1.9 GB RAM 約 1 GB 可用、Android 14 未 root）：Qwen3.5-0.8B 跑到 16.8 tok/s（原本 7.5 的 2.2 倍），Qwen3.5-2B 實際聊天 7.7 tok/s，8B MoE（Moon-Beam-8B-A1B）約 7.2 tok/s。作者還註明盒子一天內速度會漂 10%，所以每步都背靠背量。HN 144 分。",
+      "tags": [
+        "edge LLM",
+        "on-device inference",
+        "MoE",
+        "weight streaming"
+      ],
+      "url": "https://github.com/hyperionaidev/smolmaxxing/",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/hyperionaidev/smolmaxxing/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-11T19:56:07.463854+00:00",
-  "updatedAt": "2026-11-11T19:56:07.463854+00:00"
+  "lastUpdated": "2026-11-12T19:13:29.055002+00:00",
+  "updatedAt": "2026-11-12T19:13:29.055002+00:00"
 }
