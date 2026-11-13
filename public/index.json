@@ -116472,8 +116472,319 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261114-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "s1dashu/quiet-md",
+      "summary": "用 Rust + GPUI 直接在 GPU 上畫介面的本機筆記 app，沒有 WebView／Electron，作者實測百萬字文件打字捲動 P95 仍在 6 ms 內。筆記就是資料夾裡的普通檔案（Feishu DocxXML 或 .md），可用 Git／iCloud 同步，目前 beta。",
+      "tags": [
+        "notes-app",
+        "rust",
+        "gpui",
+        "local-first"
+      ],
+      "url": "https://github.com/s1dashu/quiet-md",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 1781,
+      "createdDate": "2026-11-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20261114-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "artemnovitckii/claude-animation-skills",
+      "summary": "六個做短影音動畫的 Claude Code skills：3D 卡通解說、火柴人、極簡線條、3D 地圖路線、爆炸圖、圖表，不需要素材。輸入像 `/map-route 回家到健身房 2.8 km`，Claude 寫 spec、在本機 render，還會檢查 Instagram safe area。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "motion-graphics",
+        "reels"
+      ],
+      "url": "https://github.com/artemnovitckii/claude-animation-skills",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 726,
+      "createdDate": "2026-11-01"
+    },
+    {
+      "id": "20261114-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "gogoymh/auto-ontology-mcp",
+      "summary": "把 NVIDIA Auto Ontology 的 semantic layer 包成 MCP server：可以讓 Claude Code／Codex／Cursor 用經過 ontology 驗證的 SQL 問資料庫，也能當個人知識庫，把收據、論文、筆記拆成可查詢的紀錄和概念連結，原檔留在 Obsidian。定位是 Karpathy「LLM Wiki」的結構化版，不需要 LLM API key。",
+      "tags": [
+        "mcp",
+        "knowledge-base",
+        "ontology",
+        "obsidian"
+      ],
+      "url": "https://github.com/gogoymh/auto-ontology-mcp",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 388,
+      "createdDate": "2026-11-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "MiniMax-AI/MiniMax-H3-Image",
+      "summary": "MiniMax 釋出 open-weight 的 16MP 圖像生成／編輯模型，repo 附 `h3-image-prompt-writing` skill，Claude Code／Codex／Cursor 都能用它把短想法擴寫成完整 prompt 再透過 MiniMax API render。也有本機執行說明；license 非標準開源授權，商用前先看條款。",
+      "tags": [
+        "open-weights",
+        "image-generation",
+        "agent-skill"
+      ],
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3-Image",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 339,
+      "createdDate": "2026-11-09"
+    },
+    {
+      "id": "20261114-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "op7418/guizang-game-skill",
+      "summary": "歸藏把自己用 AI 一個下午做出瀏覽器 3D 仙俠動作遊戲《雾锁山门》的流程整理成 skill：先釐清需求、串素材生成工具、自己截圖核對畫面，最後打包成單一網頁檔。demo 可直接在網頁玩，作者說那次燒了約 4.5 億 tokens，skill 目的是幫你少走彎路。",
+      "tags": [
+        "agent-skill",
+        "three.js",
+        "game-dev",
+        "claude-code"
+      ],
+      "url": "https://github.com/op7418/guizang-game-skill",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 309,
+      "createdDate": "2026-11-11",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261114-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "threerocks/article2media",
+      "summary": "一組 Claude Code／Codex skills（也是 plugin），把一篇文章或一支影片（抖音／B 站／YouTube 先轉逐字稿）做成小紅書圖文卡、長圖、公眾號排版，以及帶本地 AI 配音和逐字字幕的直式口播影片。10 個能力可單獨用或組合，對創作者工具線很有參考價值。",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "content-repurposing",
+        "tts"
+      ],
+      "url": "https://github.com/threerocks/article2media",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 304,
+      "createdDate": "2026-11-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20261114-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "owoevan-dev/music-skill",
+      "summary": "「Don't generate it. Compose it.」不靠音訊生成模型，讓 agent 自己寫每個音符，skill 負責檢查譜面、用免費取樣音色演奏、混音和 mastering。除了 MP3／WAV 還會給 MIDI、分軌 stem 和可再編輯的專案檔，README 附 7 首一次生成的範例。跟 Gary 的音樂線最直接相關。",
+      "tags": [
+        "agent-skill",
+        "music-composition",
+        "midi",
+        "mixing"
+      ],
+      "url": "https://github.com/owoevan-dev/music-skill",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 199,
+      "createdDate": "2026-11-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20261114-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "sunososobro-hub/tinglongwu",
+      "summary": "聽龍：完全離線的即時語音翻譯，開會或通話時把對方的話轉成字幕，也能把你說的話翻譯後透過虛擬麥克風念進通話。支援中英日韓俄，普通 CPU 就能跑，不留錄音，Windows／macOS／Linux 都有安裝包。",
+      "tags": [
+        "speech-translation",
+        "offline",
+        "stt",
+        "virtual-mic"
+      ],
+      "url": "https://github.com/sunososobro-hub/tinglongwu",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 97,
+      "createdDate": "2026-11-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20261114-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "aligh98/tts-director",
+      "summary": "幫 TTS 腳本「導戲」的 agent skill：先標出每句的角色（hook、清單、笑點、CTA），把書面語改寫成口語，再控制 ElevenLabs v3/v4 audio tags 的用量避免聽起來像廣告，附免費 linter 和 A/B tester。以波斯語為主、也支援英文。",
+      "tags": [
+        "agent-skill",
+        "tts",
+        "elevenlabs",
+        "voice"
+      ],
+      "url": "https://github.com/aligh98/tts-director",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 85,
+      "createdDate": "2026-11-03",
+      "license": "MIT"
+    },
+    {
+      "id": "20261114-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "tarpetos/mimvox",
+      "summary": "在自己電腦上複製自己聲音的桌面 app：照引導念一段文字訓練模型，之後輸入英文、烏克蘭文等約 60 種語言就能用你的聲音念出來，也能把影片配音成其他語言，全程本機不上傳。作者標明是早期版本、bug 多，且只能複製自己或已授權的聲音。",
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "local",
+        "desktop-app"
+      ],
+      "url": "https://github.com/tarpetos/mimvox",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 46,
+      "createdDate": "2026-11-12"
+    },
+    {
+      "id": "20261114-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "google/elephant-goldfish-model",
+      "summary": "Google 開源的 AI 助手 plugin，本週上 GitHub Trending：「Elephant」記住專案脈絡、起草 spec，「Goldfish」reviewer 不看先前對話、只看草稿和原始資料來抓隱藏假設，最後由你拍板架構取捨再開工。支援 ChatGPT／Codex desktop、Codex CLI、Antigravity 等。",
+      "tags": [
+        "agent-plugin",
+        "spec-driven",
+        "design-review",
+        "codex"
+      ],
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "source": "GitHub Trending (weekly)",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 18540,
+      "createdDate": "2026-09-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "openai/codex-security",
+      "summary": "OpenAI 的 Codex Security CLI + TypeScript SDK，本週上 Trending。可掃整個 repo、指定路徑或 Git 變更，驗證候選漏洞、產生 patch、草擬 SECURITY.md 和 threat model，結果可匯出 SARIF／JSON／CSV 或開到 Linear、Jira、GitHub，也有 GitHub Action。",
+      "tags": [
+        "security",
+        "codex",
+        "cli",
+        "sast"
+      ],
+      "url": "https://github.com/openai/codex-security",
+      "source": "GitHub Trending (weekly)",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 13026,
+      "createdDate": "2026-07-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "GoogleChrome/modern-web-guidance-src",
+      "summary": "Modern Web Guidance 的原始碼 repo：一組把 web platform 最佳實踐與瀏覽器相容性資料塞進 coding agent 的 skills，讓 agent 少寫過時寫法。由 Chrome、Edge、Firefox 和 MDN 團隊共同維護，`npx modern-web-guidance@latest install` 安裝，本週上 Trending。",
+      "tags": [
+        "agent-skill",
+        "web-platform",
+        "coding-agent",
+        "best-practices"
+      ],
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "source": "GitHub Trending (weekly)",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 4625,
+      "createdDate": "2026-01-27",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "Parcha-ai/agentrun",
+      "summary": "Show HN 133 分：在既有 agent harness 上加 self-improvement、durable execution 和 control plane 的開源平台，概念是先讓強模型摸清任務，再把學到的交給便宜模型。他們的案例：自建 code reviewer 每次 review 約 18 美分，在 30 個沒看過的 PR 上抓到的真 bug 是 Greptile 的 1.6 倍（自家數據）。",
+      "tags": [
+        "agent-platform",
+        "self-improving",
+        "durable-execution",
+        "code-review"
+      ],
+      "url": "https://github.com/Parcha-ai/agentrun",
+      "source": "Show HN (HN Algolia)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50471650",
+      "stars": 828,
+      "createdDate": "2026-09-23",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Filament by Galaxy",
+      "summary": "11/13 Product Hunt 第 2 名（hunted.space 顯示約 222 upvotes）：用 Go 寫的開源資料搬移引擎，支援 full／incremental／CDC 複製，寫入前後都驗證 Arrow batch，可從 checkpoint 暫停續跑，能當 binary、上 K8s 或嵌進 Go app。目前 pre-1.0。",
+      "tags": [
+        "data-pipeline",
+        "cdc",
+        "go",
+        "open-source"
+      ],
+      "url": "https://github.com/galaxy-io/filament",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.hunted.space/overview/2026/November/13",
+      "stars": 302,
+      "createdDate": "2026-06-30",
+      "license": "Apache-2.0"
     }
   ],
-  "lastUpdated": "2026-11-14T03:09:07+08:00",
-  "updatedAt": "2026-11-14T03:09:07+08:00"
+  "lastUpdated": "2026-11-14T03:56:06+08:00",
+  "updatedAt": "2026-11-14T03:56:06+08:00"
 }
