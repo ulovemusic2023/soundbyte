@@ -116315,6 +116315,163 @@
       "price": null,
       "vram": "不適用（報告）",
       "license": "不適用"
+    },
+    {
+      "id": "20261114-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Sahil Bloom：克服任何事的關鍵，是把 time horizon 縮短",
+      "summary": "他 20 多歲收到最好的建議：卡住時別看整座山，只專注接下來一小時，做一件能往前推的事——一個 closed loop、一次訓練、一場難談的對話，做完再做下一件。重點是 Momentum 不是先有的，它是持續移動的副產品。",
+      "tags": [
+        "time-horizon",
+        "momentum",
+        "execution"
+      ],
+      "url": "https://x.com/SahilBloom/status/2121233173736567236",
+      "source": "Sahil Bloom (X)",
+      "sourceUrl": "https://x.com/SahilBloom/status/2121233173736567236",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Lulu Cheng Meservey：偉大要靠 hyperstition——在別人看出來之前，先相信你就是那個人",
+      "summary": "從「Victor Hugo 是個以為自己是 Victor Hugo 的瘋子」這句話出發，她認為偉大就是這樣運作的：你得在任何人察覺之前就知道自己是誰。野心配上自信，外人會覺得是 hubris，你得接受這件事；hyperstition（相信的事會自我實現）也許是通往偉大唯一的路。",
+      "tags": [
+        "hyperstition",
+        "ambition",
+        "self-belief"
+      ],
+      "url": "https://x.com/lulumeservey/status/2121274419733500390",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2121274419733500390",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Roblox CEO David Baszucki：當「真的人人都能做遊戲」，價值會流向 Aggregator",
+      "summary": "Ben Thompson 指出，Roblox 本來的前提是「誰都能做遊戲」，AI 讓這件事第一次真正成立；供給爆量的世界裡，機會在當 Aggregator，靠推薦和廣告吃下需求端。Baszucki 也提到 AI 加速工程後，各公司開始把原本九個月的專案當兩個月來想，並回頭重新設計架構、擴大 product spec。",
+      "tags": [
+        "aggregation-theory",
+        "abundance",
+        "ai-acceleration"
+      ],
+      "url": "https://stratechery.com/2026/an-interview-with-roblox-ceo-david-baszucki-about-aggregating-play/",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/an-interview-with-roblox-ceo-david-baszucki-about-aggregating-play/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Lulu Cheng Meservey：Nvidia 董事會最大的錯，是讓別人替它說決策的故事",
+      "summary": "Jensen Huang 被撤換這週，外部報導又快又多；她認為董事會犯了大錯——沒有主動掌握 narrative、透明交代決策過程，反而讓別人替他們講故事。可轉移的教訓：危機時資訊真空一定會被別人填滿，決策者要搶先說清楚自己的版本。",
+      "tags": [
+        "crisis-comms",
+        "narrative-control",
+        "board-governance"
+      ],
+      "url": "https://x.com/lulumeservey/status/2121294894937649355",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2121294894937649355",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Dan Koe：你本來就該覺得 overwhelmed",
+      "summary": "\"Subtle reminder that you're supposed to feel overwhelmed.\" ——感到不知所措代表你在做新的事、走新的路、正在學習與成長；會挫折、會迷路、會痛，但維持原樣更糟。",
+      "tags": [
+        "growth",
+        "discomfort"
+      ],
+      "url": "https://x.com/thedankoe/status/2120979340775117026",
+      "source": "Dan Koe (X)",
+      "sourceUrl": "https://x.com/thedankoe/status/2120979340775117026",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Paul Graham 引 Joshua Reynolds：真正學會的人，都是自己的老師",
+      "summary": "\"Few have been taught to any purpose who have not been their own teachers.\" ——被別人硬塞的教導，接收得懶散也沒效果；真正學有所成的人，幾乎都是自己教會自己的。",
+      "tags": [
+        "self-directed-learning",
+        "education"
+      ],
+      "url": "https://x.com/paulg/status/2121149329327210809",
+      "source": "Paul Graham (X)",
+      "sourceUrl": "https://x.com/paulg/status/2121149329327210809",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Lulu Cheng Meservey：人們討厭 weasel 勝過 villain",
+      "summary": "\"People don't loathe a villain as much as a weasel.\" ——大家恨 Wormtongue 多過 Sauron、恨 Umbridge 多過 Voldemort——公開形象上，鬼祟比壞更讓人反感。",
+      "tags": [
+        "reputation",
+        "comms"
+      ],
+      "url": "https://x.com/lulumeservey/status/2121305167085613332",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2121305167085613332",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "DHH：Local AI. Local compute. Open weights. Open source.",
+      "summary": "\"Local AI. Local compute. Open weights. Open source. Global collaboration.\" ——DHH 這週的極簡宣言，1.1 萬多讚；他同時在幫 Omarchy 做 RTX 機器上開箱即用的 local AI 體驗，押注 open-weight 模型的大跳躍。",
+      "tags": [
+        "local-ai",
+        "open-weights",
+        "open-source"
+      ],
+      "url": "https://x.com/dhh/status/2121183120477073821",
+      "source": "DHH (X)",
+      "sourceUrl": "https://x.com/dhh/status/2121183120477073821",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-11-14T03:09:07+08:00",
