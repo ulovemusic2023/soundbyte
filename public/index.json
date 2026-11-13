@@ -115804,8 +115804,268 @@
         "upvotes": 200,
         "phStatus": "Product Hunt 頁面 curl 回 403，改用產品官網驗證"
       }
+    },
+    {
+      "id": "20261114-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 與 ggml 正式發布 v1.0.0：公開 C API 改走 semantic versioning，破壞性變更一律 bump major",
+      "summary": "ggml-org 在 HF Blog 宣布 libllama（llama.cpp/include/）和 libggml（ggml/include/）同步進入 v1.0.0。專案 3.5 年來已有大量下游應用依賴，所以從現在起：公開 C API 的 breaking change → MAJOR、向下相容的功能／backend 更新／新模型支援 → MINOR、不動 API 的 bug fix → PATCH，API／ABI 不相容會用 major 版號明確標出。發行管道也一次列齊：pre-release artifacts（Linux／macOS／Windows／Android／iOS）、Docker、Debian、Homebrew、conda-forge、MacPorts、Winget、XCFramework。開發面，團隊說會「審慎地」把 LLM 整合進開發流程，但維持架構掌控與理解實作細節是第一優先；CI 用 HF Buckets／HF Jobs 擴容，並有 NVIDIA、AMD、Qualcomm、Arm、IBM、Intel 提供 self-hosted runner。對把 llama.cpp 包進產品的人，這代表升級終於有版號可依循。",
+      "tags": [
+        "llama.cpp",
+        "ggml",
+        "semantic versioning",
+        "local inference",
+        "API stability"
+      ],
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Apple Foundation Models framework 擴到第三方模型：同一套 Swift API 接 on-device、Private Cloud Compute、Claude、Gemini、MLX，加上 Dynamic Profiles",
+      "summary": "Apple 開發者頁面（HN 259 分）列出 Foundation Models framework 現在不只給 Apple Intelligence 的 on-device 模型用：任何 model provider 只要做一個符合 Language Model protocol 的 Swift package 就能接進來，目前列出的有 Core AI Language Models、MLX Language Models、Claude、Gemini 和 Private Cloud Compute，guided generation、tool calling 都照樣支援。新的 Dynamic Profiles 是宣告式 API，可以在同一個連續 session 裡即時切換 model、tools、instructions，transcript 跨切換共用，Apple 直接說可以拿來做 agents、skills。另外還有 multimodal 圖片理解（整合 Vision 的 OCR、barcode）、Evaluations framework，以及 macOS 27 的 fm CLI。App Store Small Business Program 且首次下載少於 200 萬的開發者，用 PCC 上的 Apple Foundation Models 不收 cloud API 費用。",
+      "tags": [
+        "paradigm-shift",
+        "Apple Foundation Models",
+        "Dynamic Profiles",
+        "Swift",
+        "on-device AI",
+        "model-agnostic API"
+      ],
+      "url": "https://developer.apple.com/foundation-models-framework/",
+      "source": "Apple Developer",
+      "sourceUrl": "https://developer.apple.com/foundation-models-framework/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Edge0-145B 開源：145B MoE 號稱筆電可跑，peak memory 29GB、decode 80+ tok/s，GPU／RAM／SSD 三層分流載入",
+      "summary": "Edge0 開源 Edge0-145B 和 Edge0-120B（NVFP4 權重放 HF）以及統一推論框架（GitHub Edge0-AI/Edge0，Apache-2.0）。官方數字：peak memory 29GB、prefill 1,100+ tok/s、decode 80+ tok/s、典型功耗約 120W、128K–256K context；六項 benchmark 平均 72.8，對比 Qwen3.8-Flash-Next 的 71.7（4-bit 估計要 70GB）。做法是每 64 個 experts 共用兩個大矩陣、每步只有約 10B 參數參與計算；hot experts 留在 GPU，約 40GB expert library 放系統記憶體，約 48GB vocabulary data 放 SSD 按需讀，CPU／GPU 並行加 speculative decoding。Day-one 支援 macOS、Windows、Linux，含 Apple M 系列、RTX 4090／5090、RTX Spark。注意這些都是廠商自報數字，HN 327 分。",
+      "tags": [
+        "Edge0",
+        "on-device LLM",
+        "MoE",
+        "expert offloading",
+        "open weights"
+      ],
+      "url": "https://github.com/Edge0-AI/Edge0",
+      "source": "Edge0 Blog",
+      "sourceUrl": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude 驗證問題導致 claude.ai、Claude Code、Console 錯誤率升高約兩小時；同一天 Microsoft 全球大當機近 24 小時",
+      "summary": "Claude Status 記錄：11/13 09:58 UTC（台北 17:58）開始調查使用者登入 Claude.ai 和 Claude Code 的問題，11:05 UTC 部署修正，11:58 UTC（台北 19:58）宣告解決，影響 claude.ai、Claude Console（platform.claude.com）、Claude Code、Claude Cowork，HN 兩串合計 600+ 分。另一邊 Microsoft 的全球中斷讓 Teams、Outlook、Copilot 在至少 70 國無法使用，BBC 報導 Microsoft 為近 24 小時的中斷道歉，說原因是先前一次 network capacity upgrade 引入的問題、「與 cyber 或 AI/agents 無關」。兩件事一起提醒：重度依賴單一 AI coding 工具或 SaaS 的團隊，fallback 方案值得先備好。",
+      "tags": [
+        "incident",
+        "Claude Code",
+        "Microsoft 365 outage",
+        "reliability",
+        "vendor lock-in"
+      ],
+      "url": "https://www.bbc.com/news/live/cq5y10ge3dp3t",
+      "source": "Claude Status",
+      "sourceUrl": "https://status.claude.com/incidents/nn11wk485zfn",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Brave Search API 支援 x402 agentic payments：agent 不用 API key，收到 HTTP 402 後用 USDC 逐次付款",
+      "summary": "Brave Search API 的端點現在可以走開放的 x402 付款協定：沒附付款的請求會收到 HTTP 402 Payment Required，裡面寫明這次搜尋的價格與付款資訊；agent 簽一筆 USDC 付款、附在請求上重送，驗證通過就回傳結果和 Base 鏈上的交易收據。Brave 自己跑 facilitator，目前收 Base 上的 USDC，其他鏈和 stablecoin 之後加入；定價照公開 API 費率，LLM Context（agentic grounding）和一般 web search 都能用。重點是不必先開帳號、選方案、管 key，agent harness 配個 CLI wallet 就能用。HN 241 分，討論不少集中在 crypto 付款是否實用。",
+      "tags": [
+        "paradigm-shift",
+        "x402",
+        "agentic payments",
+        "Brave Search API",
+        "HTTP 402"
+      ],
+      "url": "https://brave.com/blog/search-api-agentic-payments/",
+      "source": "Brave Blog",
+      "sourceUrl": "https://brave.com/blog/search-api-agentic-payments/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Checkpoint forensics：從公開權重的初始化痕跡，判定 DeepSeek、Kimi、MiniMax、Ant 六個新模型是在 Blackwell 上建出來的",
+      "summary": "Unemployment Labs 的 Will DePue 發表報告（HN 349 分）：從模型公開權重裡還原初始值的痕跡，再搜尋能重現這些數值的硬體與初始化設定。結果 DeepSeek-V4-Flash、MiniMax-M3 對得上 B200／B300（148 SMs），DeepSeek-V4-Pro、Kimi K3、Kimi K3.1-Pro、Ling-3.1-flash 對得上 GB200／GB300（152 SMs），而同家更早的模型都是 Hopper 指紋；DeepSeek-V4-Flash 和 Kimi K3 還在實體 Blackwell 上確認過。作者也講清楚限制：指紋說明權重怎麼產生，支持但不證明訓練也在 Blackwell 上；不能證明晶片在哪、怎麼取得、是否違反出口管制，特殊設定的 AMD 硬體是唯一替代解釋。對做 model provenance 的人是很有意思的新方法。",
+      "tags": [
+        "model forensics",
+        "weight initialization",
+        "export controls",
+        "Blackwell",
+        "model provenance"
+      ],
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "source": "Unemployment Labs",
+      "sourceUrl": "https://unemploymentlabs.com/checkpoint-forensics",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 開源 AQuA（Ambient Quality Agent）：在 agent 旁邊跑，抓「回應成功但品質默默退化」的 production 失敗",
+      "summary": "AQuA 是 reference implementation，放在 google/adk-recipes。它不在 request path 上，而是讀 Cloud Trace、Cloud Logging 或 BigQuery 的 telemetry，每次抽樣最多 1,000 個近期 session，跑 sampling → reviewing → clustering findings → verifying candidate clusters → tracking issues 五階段；品質標準寫在 goal.md。Finding 一定要附支援的 trace，推論的 root cause 必須指向已部署版本的有效程式碼行，不靠模型自報 confidence；狀態分 NEW、RECURRING，14 天沒再出現自動 RESOLVED。它不會自動修或開 PR。Google 拿多 agent 訂票 app 的 32 個 session 測：42 個 findings、9 個候選 cluster，驗證後剩 6 個真問題；改 prompt 後 replay，座位檢查被跳過從 15 降到 2 個 session（controlled replay，非 production 數據）。",
+      "tags": [
+        "agent observability",
+        "AQuA",
+        "ADK",
+        "agent evaluation",
+        "production quality"
+      ],
+      "url": "https://github.com/google/adk-recipes/tree/main/core/python/ambient-quality-agent",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/google-ambient-agent-prod/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "A2UI 1.0 穩定版：Google 的 generative UI 開放協定，讓 agent 用 app 自己的原生元件回互動畫面",
+      "summary": "Google 釋出 A2UI 1.0，第一個穩定版的 generative UI 協定：agent 描述「要顯示什麼」（表單、圖表等），各 app 用自己註冊的原生元件和 design system 去渲染，agent 只能放置、設定你註冊過的元件。提供 web、Android、iOS 的開源 renderer SDK，以及 Python、TypeScript、Dart 的 agent SDK；不論使用者在公司自己的 app，還是在支援 MCP apps 的第三方助理（官方舉 Gemini、Claude）裡碰到這個 agent，都是原生速度與外觀。生產面可以用 A2UI Express 或「system one」decision model 直接挑元件、而不是生文字。官方說 Atlassian、Alation、Bloomberg、ByteDance 已在用。",
+      "tags": [
+        "A2UI",
+        "generative UI",
+        "agent protocol",
+        "MCP apps"
+      ],
+      "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Apple 推 Siri AI Developer Preview：App 透過 App Intents 把內容與動作交給新版 Siri",
+      "summary": "InfoQ 報導 Apple 在 27.3 beta 推出 Siri AI Developer Preview，任何 app 都能用 App Intents 把內容和動作帶進 Siri AI，用上 personal context understanding、onscreen awareness、自然語言等新能力，使用者用一句話就能讓 Siri 執行 app 支援的自訂動作。Preview 期間 Siri AI 只開放給 developer build 和內部 TestFlight 測試者。跟上面 Foundation Models framework 一起看，Apple 的 agent 生態正在從「app 內的模型」走向「系統層的助理呼叫 app」。",
+      "tags": [
+        "Siri AI",
+        "App Intents",
+        "iOS 27",
+        "agentic OS"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/apple-siri-ai-integration/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/apple-siri-ai-integration/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Cloudflare Spend Management beta：Workers、Durable Objects 可設花費上限，到了直接暫停",
+      "summary": "Cloudflare 說 spend controls 一直是開發者平台上最多人要的功能之一，現有的 usage notification 和 budget alert「告知不等於控制」。現在 PayGo 客戶可用 Spend Management（beta），先支援 Workers 和 Durable Objects：設定 spending limit、多個 alert threshold 和通知 email，達到上限就套用 blocking policy、自動暫停該產品；dashboard、cf CLI、REST API 都能設。可以搭配 AI Gateway 既有的 per-user／per-model 預算一起控制 compute 和 inference 成本。跟前幾天 Google Cloud spend caps 同方向，防 agent 迴圈燒錢變成雲平台標配。",
+      "tags": [
+        "Cloudflare Workers",
+        "spend limits",
+        "cost control",
+        "Durable Objects"
+      ],
+      "url": "https://blog.cloudflare.com/spend-management/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/spend-management/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GitHub AI Scan for repositories 可用 REST API 開關：新增 repository_scan 設定，方便用 IaC 大量 rollout",
+      "summary": "GitHub code scanning 的 AI Scan for repositories 進入 public preview 的 API 管理：在既有 AI Scan enablement endpoints（GET／PATCH /orgs/{org}/code-scanning/ai-scan 與 /repos/{owner}/{repo}/code-scanning/ai-scan）加上 repository_scan，行為跟 pr_scan 一樣：org 關掉 repo 就不能開；org 開了 repo 繼承、可個別 opt out；enterprise 政策不允許就回 422，兩個設定一起改時任一被擋就都不變。打開不會自動開始掃，要有 write 權限的人手動觸發，每次掃描消耗 GitHub Code Security AI credits。",
+      "tags": [
+        "GitHub code scanning",
+        "AI Scan",
+        "REST API",
+        "DevSecOps"
+      ],
+      "url": "https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261114-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Netflix 把維運資料做成 ontology-driven knowledge graph，給工程師和 AI agent 共用的環境理解",
+      "summary": "InfoQ 報導 Netflix 正在做一個以 ontology 為核心的 knowledge graph，把 applications、incidents、deployments、alerts、基礎設施相依性串在一起，讓 production 調查更快，也讓 AI agents 對營運環境有共同理解。Netflix 的規模是每天 20 億以上請求、每秒 3,800 萬以上即時 logging 事件；但一般的 application regression 調查要約四小時，大部分花在重建系統之間的關係，而不是分析資料本身。跟 AQuA、Fowler 的 generated glossary 是同一條線：agent 要可靠，先把組織知識結構化。",
+      "tags": [
+        "knowledge graph",
+        "observability",
+        "AI SRE",
+        "ontology"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/netflix-ai-driven-observability/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/netflix-ai-driven-observability/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-13T03:53:06+08:00",
-  "updatedAt": "2026-11-13T03:53:06+08:00"
+  "lastUpdated": "2026-11-14T03:09:07+08:00",
+  "updatedAt": "2026-11-14T03:09:07+08:00"
 }
