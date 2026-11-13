@@ -116783,8 +116783,171 @@
       "stars": 302,
       "createdDate": "2026-06-30",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Reservoir 擴大對 Suno 與 Anthropic 的侵權訴訟，求償合計近 US$4.5 億",
+      "summary": "Reservoir Media 在原始訴狀提出數週後，提交擴大版起訴書，對 Suno 與 Anthropic 求償的法定賠償金合計接近 US$4.5 億。這是 AI 音樂版權戰的最新升級。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "copyright"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/12/reservoir-suno-lawsuit-anthropic-amended/"
+    },
+    {
+      "id": "20261114-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Nvidia 動議撤銷 UMG v. Suno 的證詞傳票，稱已提供逾 6,300 份文件",
+      "summary": "非 Warner 的大廠要求 Nvidia 就其對 Suno 的投資與對產業影響提供資訊，Nvidia 旗下 NVentures 以措辭強硬的動議回擊，主張傳票過於繁重、已交出超過 6,300 份文件。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "nvidia"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/11/nvidia-suno-umg-subpoena-quash-motion/"
+    },
+    {
+      "id": "20261114-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Suno CEO：把 streaming fraud 與 AI 音樂畫上等號是「sleight of hand」",
+      "summary": "Suno CEO Mikey Shulman 批評外界把串流詐欺等同於 AI 音樂，強調 AI 音樂本身不是犯罪，並表示公司在幕後投入的反詐欺工作比外界所知更多。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "streaming fraud"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/13/suno-boss-talks-streaming-fraud-ai-music-is-not-a-crime/"
+    },
+    {
+      "id": "20261114-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Can Music Generation Models Tap Along？用 MusicGen 做生成式 beat tracking",
+      "summary": "論文替預訓練 MusicGen 加上 audio-conditioning adapter，生成與輸入音樂同步的打擊軌，再從中抽取 beat 位置。在 GTZAN 上接近 SOTA beat tracker，且移除鼓聲時 F-measure 下降最小，metal 與 disco 等類型表現特別好。",
+      "priority": "high",
+      "tags": [
+        "musicgen",
+        "music generation",
+        "beat tracking"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.14971"
+    },
+    {
+      "id": "20261114-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "MusicRWKV：以 RWKV 架構做多模態音樂表徵學習，降低長音訊的運算成本",
+      "summary": "MusicRWKV 以 RWKV 取代 Transformer 的二次方 attention，在同一個自監督框架中同時建模 waveform、spectrogram 與 metadata，並用 invertible compression 縮短序列、FiLM 做 modality 條件化，目標是更有效率地處理長篇音樂。",
+      "priority": "medium",
+      "tags": [
+        "music model",
+        "music representation",
+        "audio model"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.16718"
+    },
+    {
+      "id": "20261114-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Akai MPC OS 3.10.1 推出 MPC Plugin SDK，可自製 instrument 與 FX plugin",
+      "summary": "MPC OS 3.10.1 帶來新的 MPC Plugin SDK，讓使用者為 MPC Sample 等硬體開發自訂的樂器與效果 plugin，硬體取樣機開始有第三方擴充生態。",
+      "priority": "high",
+      "tags": [
+        "mpc",
+        "plugin",
+        "daw",
+        "sound design"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/akai-mpc-os-3-10-1-brings-mpc-plugin-sdk-for-custom-instrument-and-fx-plugins.html"
+    },
+    {
+      "id": "20261114-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Xfer Records Shrub：給 M-VAVE FM-1 的精簡版 Serum 開放 beta",
+      "summary": "Serum 開發者 Steve Duda 十月底預告的 Shrub，是專為 M-VAVE FM-1 打造的精簡版 Serum，現已開放 beta 下載。",
+      "priority": "medium",
+      "tags": [
+        "serum",
+        "synth",
+        "plugin"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/xfer-records-shrub-serum-for-m-vave-fm-1-before-gta-6.html"
+    },
+    {
+      "id": "20261114-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "AudioThing Seconds：Hainbach 設計的 filter bank plugin",
+      "summary": "由 Berlin 音樂人 Hainbach 與 AudioThing 合作，以 per-band filtering 加 ring modulation 做聲音探索的 filter bank plugin。",
+      "priority": "medium",
+      "tags": [
+        "plugin",
+        "filter",
+        "ring modulation",
+        "sound design"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/audiothing-seconds-hainbachs-new-filter-bank-plugin-lets-you-dig-into-the-sonic-unknown.html"
+    },
+    {
+      "id": "20261114-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Modartt Pianoteq 9.3：新增 YFX Japanese Grand Piano 擴充包",
+      "summary": "Pianoteq 9.3 加入受日本鋼琴工藝啟發的 physically modeled YFX Japanese Grand Piano，採用 Pianoteq 9 最新的 soundboard model，並含多項改進與修正。",
+      "priority": "medium",
+      "tags": [
+        "pianoteq",
+        "physical modeling",
+        "plugin"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/modartt-updates-pianoteq-to-v9-3-incl-yfx-japanese-grand-piano-expansion/"
+    },
+    {
+      "id": "20261114-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "StereoGhost PhaseKicker：每次 kick 自動校正 kick 與 bass 相位的 plugin",
+      "summary": "瑞士開發商 StereoGhost 推出 PhaseKicker，會在每次 kick 觸發時自動調整 kick 與 bass 的相位關係；上市優惠價 US$35／€39。",
+      "priority": "medium",
+      "tags": [
+        "plugin",
+        "mixing",
+        "phase",
+        "bass"
+      ],
+      "source": "DAWCrash",
+      "sourceUrl": "https://www.dawcrash.com/2026/11/13/stereoghost-releases-phasekicker-an-automatic-kick-bass-phase-alignment-plugin/"
     }
   ],
-  "lastUpdated": "2026-11-14T03:56:06+08:00",
-  "updatedAt": "2026-11-14T03:56:06+08:00"
+  "lastUpdated": "2026-11-14T04:20:00+08:00",
+  "updatedAt": "2026-11-14T04:20:00+08:00"
 }
