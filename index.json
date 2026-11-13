@@ -116064,6 +116064,257 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261114-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Haru-4B：Higurashi 的多語 full-duplex 語音對話基礎模型（邊聽邊講，133ms 一幀）",
+      "summary": "higurashi-ai 釋出 Haru-4B，一個低延遲、多語的 full-duplex spoken dialogue foundation model：每 133ms（7.5Hz）同時吃一幀使用者音訊、吐一幀自己的音訊和文字，不用 discrete audio token，而是 64 維連續 latent 加 MeanFlow 一步取樣。用 text card 設定角色、短參考音檔設定聲音，支援英、西、葡、德、法、中、日、俄、韓。官方說 NVIDIA GPU 約 12GB 記憶體可跑，有 PyTorch web demo、MLX 版 macOS app 和 vLLM-Omni plugin；目前是給研究用的 pretrained base model。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "full-duplex",
+        "speech-to-speech"
+      ],
+      "url": "https://github.com/higurashi-ai/Haru",
+      "source": "Hugging Face Trending • GitHub",
+      "sourceUrl": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "price": null,
+      "vram": "官方約 12GB（4B）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tontaube V1.1：2.9B 長篇 TTS＋zero-shot voice cloning，4-bit 版約 4GB VRAM",
+      "summary": "craitech 推出 Tontaube V1.1，主打有聲書、文章、voice agent 的長篇 TTS，5–60 秒參考音就能 zero-shot 複製聲音，內附 46 個聲音，英文和德文最好。V1 靠 vLLM 很吃 VRAM，V1.1 預設改成 GPTQ 4-bit：下載 1.8GB、載入約 4GB、長文峰值約 6.5GB；作者實測 RTX 5090 約 13× real time、首段音訊約 190ms，12 核桌機 CPU 也能接近即時。程式碼 Apache-2.0，但模型權重是自訂的 community license，商用前要看條款。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "gptq",
+        "long-form"
+      ],
+      "url": "https://github.com/craitech/tontaube",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/TontaubeAI/TontaubeV1.1-int4",
+      "price": null,
+      "vram": "4-bit 約 4GB，長文峰值約 6.5GB",
+      "license": "程式碼 Apache-2.0；權重 Tontaube Community Model License 1.0"
+    },
+    {
+      "id": "20261114-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RealtimeVAD：比 Silero 早約 100ms 抓到「講完了」的 VAD（KoljaB）",
+      "summary": "RealtimeSTT／RealtimeTTS 作者 KoljaB 的新專案：保留 Silero VAD 判斷是否為語音，再加一個每 10ms 比對環境噪音和講者音量的快速檢查，一安靜就發事件。README 說在 3,279 個真實 turn 上，speech-off 中位數比 Silero 機率下降早 100ms、比 VADIterator 報 end 早 206ms；代價是短暫停頓也可能觸發，適合搭 speculative generation 的語音 pipeline，有 LiveKit plugin。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "vad",
+        "voice agent"
+      ],
+      "url": "https://github.com/KoljaB/RealtimeVAD",
+      "source": "Show HN • GitHub",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50474586",
+      "price": null,
+      "vram": "CPU 即可",
+      "license": "MIT"
+    },
+    {
+      "id": "20261114-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Kezek：把單聲道雙人對話拆成每人一軌，給 full-duplex 對話模型做訓練資料（arXiv 2611.16933）",
+      "summary": "Full-duplex 語音模型需要每個講者一軌的對話錄音，但現有資料多是 mono 混音。Kezek 先用兩人 voice activity 模型＋對相位不敏感的 speaker fingerprint 決定誰在何時講話，再用條件式 time-domain separator 拆軌，overlap 和「嗯、對」這類短回應會留在對的人那軌。比 pyannote→DialogueSidon 保留更多短回應（Open Yap 0.83 vs 0.69）、channel swap 更少，速度快 4–5 倍（約每 GPU-hour 230 小時音訊）；論文說 code 和 weights 用寬鬆授權釋出。",
+      "tags": [
+        "svc_voice",
+        "speech separation",
+        "full-duplex",
+        "dataset"
+      ],
+      "url": "https://arxiv.org/abs/2611.16933",
+      "source": "arXiv eess.AS",
+      "sourceUrl": "https://arxiv.org/abs/2611.16933",
+      "price": null,
+      "vram": "論文未列；separator 類模型應不大（估計）",
+      "license": "論文稱 permissive（未確認具體授權）"
+    },
+    {
+      "id": "20261114-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Boole-32B-A2.5B-Preview：1.8-bit MoE 只有 9GB，作者稱單張 RTX 5090 565 tok/s",
+      "summary": "Precision Numerics 把 Recursive 的 flint（32B 總參數、2.5B active MoE）做成 1.8-bit 早期版：mixed-precision quantization＋expert pruning＋自訂 kernel，比 BF16 小 9 倍、比 INT4 快 2 倍。權重是 GGUF，但要用他們的 llama.cpp fork 跑。9GB 剛好放得進 16GB 卡，不過 preview 品質要自己測。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization",
+        "moe"
+      ],
+      "url": "https://github.com/PrecisionNumerics/llama.cpp",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/precision-numerics/Boole-32B-A2.5B-Preview-GGUF",
+      "price": null,
+      "vram": "約 9GB（1.8-bit GGUF）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "garlic-llm：在原廠 PS4 GPU 上離線跑 Qwen3.5-9B，靠 MTP head 做 speculative decoding",
+      "summary": "個人開發者把 Qwen3.5-9B 重新打包成自訂 3／4-bit 格式（約 4.5GiB），塞進 PS4 GPU 離線跑。關鍵是 Qwen3.5 自帶的 MTP head：一次 draft 最多兩個 token 再由主模型一次驗證，速度從 22 拉到 31–39 tok/s。對你來說重點不是 PS4，而是「舊 GPU＋MTP speculative decoding」的實測數據。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "quantization",
+        "qwen"
+      ],
+      "url": "https://github.com/leonardo-alegria/garlic-llm",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/leonardo-alegria/garlic-llm",
+      "price": null,
+      "vram": "約 4.5GiB",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261114-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Perplexity Decider v1.3：26B／5B 開源「決策模型」，新增 locate 抽取（Apache-2.0）",
+      "summary": "Perplexity 釋出兩個 decision model：不逐字生成，而是給 state＋問題，直接回答案選項的機率分佈（是非、最多 255 選項的多選、排序分數）。v1.3 新增 locate，可抽出原文片段和字元位置，做 NER、PII、extractive QA。大版從 Qwen3.8-27B fine-tune（BF16 約 49GiB），Flash 版是 Qwen3.5-4B 蒸餾（BF16 約 8.5GiB）；full-attention 層改成雙向，必須用他們的 pplx_decider 套件。",
+      "tags": [
+        "llm_training",
+        "fine-tuning",
+        "classification",
+        "decision-model"
+      ],
+      "url": "https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.3",
+      "source": "r/LocalLLaMA • Hugging Face",
+      "sourceUrl": "https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.3",
+      "price": null,
+      "vram": "Flash 約 8.5GiB（BF16）；26B 版約 49GiB 需量化",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "inferencekit：讓 coding agent 幫你針對自己的硬體調推理引擎（KittenML）",
+      "summary": "KittenML 開源的 plugin，讓 Claude Code、Codex、OpenCode 變成「inference engineer」，針對你手上的 GPU／Mac／Radeon 找最快的推理路徑，調好的結果可以 PR 到 inferencekit-engines 共享。官方用它把 Kitten-TTS-2 在 RTX Pro 6000 的 streaming TTFB 壓到約 10ms。",
+      "tags": [
+        "ai_devtools",
+        "infra_runtime",
+        "coding agent",
+        "inference optimization"
+      ],
+      "url": "https://github.com/KittenML/inferencekit",
+      "source": "r/LocalLLaMA • GitHub",
+      "sourceUrl": "https://github.com/KittenML/inferencekit",
+      "price": null,
+      "vram": "視目標模型而定",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp／ggml 正式 v1.0.0：semver＋穩定 API／ABI，另推 Llama 桌面 app",
+      "summary": "ggml-org 和 Hugging Face 宣布 llama.cpp 與 ggml 同步 v1.0.0，之後 public C API 有 breaking change 才升 major。這版移除 35 個 deprecated 函式、把 NextN／speculative API 升進 llama.h，加入 OCP FP8 KV cache、可設定 CPU 比例的 host-memory MoE expert cache、llama-server 的 /v1/audio/speech 和 SSRF／CORS 強化，以及新 web UI。同時推出 llama.app（Mac／Windows 小型 app，Linux 有 CLI 版）。下游有綁 llama.h 的專案升級前要檢查 API 變動。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "gguf",
+        "kv-cache"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+      "source": "GitHub Releases • HF Blog • r/LocalLLaMA",
+      "sourceUrl": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "price": null,
+      "vram": "依模型；MoE expert cache 有助 16GB 卡",
+      "license": "MIT"
+    },
+    {
+      "id": "20261114-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Edge0-145B：號稱筆電可跑的 145B 開源 MoE，峰值 29GB、decode 80+ tok/s",
+      "summary": "Edge0 開源 Edge0-145B 和 Edge0-120B，加上自家推理框架和 app。官方說 145B 在相容筆電（例如 MacBook Pro）峰值記憶體 29GB、prefill 1,100+ tok/s、decode 80+ tok/s、128K–256K context，coding／agent 能力對標特定雲端模型（以上都是官方自報數據）。HF model card 標 base model 為 Qwen3.8-Flash-Next、4-bit NVFP4，授權是自訂 edge0-community-model-1.0。HN 328 分；29GB 超過 16GB VRAM，你這台要靠 RAM offload，實際速度未確認。",
+      "tags": [
+        "llm_inference",
+        "on-device",
+        "moe",
+        "nvfp4"
+      ],
+      "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+      "source": "Hacker News • r/LocalLLaMA",
+      "sourceUrl": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "price": null,
+      "vram": "官方峰值 29GB（已 4-bit）",
+      "license": "edge0-community-model-1.0（自訂）"
+    },
+    {
+      "id": "20261114-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Thinking Machines Inkling 2 Small 開放權重（594B／17B active），transformers v5.23.0 同步支援",
+      "summary": "Thinking Machines Lab 的 Inkling 2 Small 是 text＋image 輸入的多模態 MoE：48 層、每層 384 experts 選 8，總參數 594B、active 17B，有 NVFP4 和 MXFP8 兩種權重，Apache-2.0。transformers v5.23.0 已加入 inkling2 架構。名字叫 Small，但對 16GB 卡完全是雲端等級。",
+      "tags": [
+        "llm_inference",
+        "moe",
+        "multimodal",
+        "transformers"
+      ],
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.23.0",
+      "source": "Hugging Face • GitHub Releases",
+      "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "price": null,
+      "vram": "594B MoE，NVFP4 仍遠超 24GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-14",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "權重鑑識報告：DeepSeek／Moonshot／MiniMax／Ant 新模型帶有 Blackwell GPU 數值指紋",
+      "summary": "Unemployment Labs（Will DePue）從公開權重回推初始化數值，報告說 DeepSeek、Moonshot AI、MiniMax、Ant Group 自 2026 年 4 月後的 6 個模型符合 NVIDIA Blackwell 的數值模式，更早的模型則符合 Hopper；DeepSeek-V4-Flash 和 Kimi K3 還在實體 Blackwell 上重現確認。報告自己也強調：這證明用過該硬體產生權重，但不能證明晶片在哪、怎麼取得、是否違反出口管制。HN 349 分、144 則留言。",
+      "tags": [
+        "infra_runtime",
+        "nvidia",
+        "gpu-fingerprint-forensics"
+      ],
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "source": "Hacker News",
+      "sourceUrl": "https://unemploymentlabs.com/checkpoint-forensics",
+      "price": null,
+      "vram": "不適用（報告）",
+      "license": "不適用"
     }
   ],
   "lastUpdated": "2026-11-14T03:09:07+08:00",
