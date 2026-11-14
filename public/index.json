@@ -117201,7 +117201,7 @@
       "cycle": "morning",
       "priority": "low",
       "title": "Claude Code desktop 開放用 mods 做自訂 themes：直接叫 Claude 生成配色和動態背景，官方貼文 1.9 萬讚",
-      "summary": "@ClaudeDevs 宣布 Claude Code desktop 可以透過 mods 建立自訂 theme——改顏色、加 animated background，可以直接用自然語言叫 Claude 生成，或從 theme-examples plugin 開始。Addy Osmani 補充 themes 其實就是 mods 加上一層乾淨的 UI，支援 reactive 動態背景。功能本身偏好玩，但貼文 19,100 讚、8,363 個 bookmark、約 129 萬次曝光，是本週期 X 上互動最高的開發工具貼文，也顯示 Claude Code desktop 的 mods／plugin 擴充面正在成形。",
+      "summary": "@ClaudeDevs 宣布 Claude Code desktop 可以透過 mods 建立自訂 theme——改顏色、加 animated background，可以直接用自然語言叫 Claude 生成，或從 theme-examples plugin 開始。Addy Osmani 補充 themes 其實就是 mods 加上一層乾淨的 UI，支援 reactive 動態背景。功能本身偏好玩，但貼文 19,100 讚、8,363 個 bookmark、約 129 萬次曝光，是這次掃到的開發工具貼文裡互動最高的，也顯示 Claude Code desktop 的 mods／plugin 擴充面正在成形。",
       "tags": [
         "Claude Code",
         "developer experience",
