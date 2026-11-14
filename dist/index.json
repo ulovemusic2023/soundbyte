@@ -117214,8 +117214,233 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261115-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "KittenML/kitten-tts-2-mini",
+      "summary": "Kitten TTS 2 Mini：82M 參數、16 種語言、118 個聲音、24kHz；int8 ONNX 只有 82.7MB，純 CPU 跑、不需要 PyTorch，也附 float32 PyTorch 權重可上 GPU。同系列還有 Nano（每個語言模型 17M、8 語言）和 Pico（7.2M、8.0MB）。",
+      "tags": [
+        "tts_speech",
+        "text-to-speech",
+        "multilingual tts"
+      ],
+      "url": "https://huggingface.co/KittenML/kitten-tts-2-mini",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xvw34k/kittenmlkittentts2mini_hugging_face_texttospeech/",
+      "price": null,
+      "vram": "82M 參數；int8 ONNX 82.7MB，CPU 可跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "n4ze3m/tiny-voca",
+      "summary": "4,537,291 參數、18MB 的英文 TTS，一男一女兩個聲音、24kHz，4 個 CPU thread 約 70× real-time，瀏覽器內就能跑。不用 neural vocoder，改用小型 source-filter synth 出聲；code、weights、訓練 recipe 和 dataset 全開，單張 RTX 4090 訓練 7.7 小時。限制：只有英文、不支援 voice cloning，訓練音檔是用 Qwen3-TTS 合成的。",
+      "tags": [
+        "tts_speech",
+        "text-to-speech",
+        "tiny-tts"
+      ],
+      "url": "https://github.com/n4ze3m/tiny-voca",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xw7zrg/tinyvoca_a_fully_open_45mparameter_tts_code/",
+      "price": null,
+      "vram": "4.5M 參數、18MB，CPU／瀏覽器可跑",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RSE-TTS（VoxNexus, arXiv 2611.15464）",
+      "summary": "把預訓練的 autoregressive TTS backbone 直接拿來當 speaker encoder：參考語音＋對應文字壓成 8 個連續向量，encoder-generator 參數比獨立預訓練 encoder 少 48%。118M generator 在三個英文 benchmark 的 WER 和 speaker similarity 都贏過 MOSS-TTS-Nano 官方 cloning 模式，WER 也低於受測的 CosyVoice 3、MOSS-TTS-Local。目前只有論文和試聽頁，沒看到 code／weights。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "zero-shot voice",
+        "speaker encoder"
+      ],
+      "url": "https://arxiv.org/abs/2611.15464",
+      "source": "arXiv eess.AS",
+      "sourceUrl": "https://arxiv.org/abs/2611.15464",
+      "price": null,
+      "vram": "118M generator（權重未釋出）",
+      "license": "未公開（未釋出權重）"
+    },
+    {
+      "id": "20261115-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "salesforce-sovereign-intelligence/SOV-Transcribe-1",
+      "summary": "Salesforce 開權重 ASR：Whisper large-v3 audio encoder＋Gemma 4 26B A4B MoE，26.6B total／4.6B active；支援英法德西義葡荷 7 語，可用自然語言指定逐字稿或整理稿格式，也能塞人名、術語做 context biasing，官方測到 30 分鐘音檔。官方稱它是 Artificial Analysis 非串流 STT 開權重第 1（總榜第 7）。目前走 vLLM 0.32.0 plugin／Transformers，另附 DFlash draft model；BF16 權重約 53GB（估算），官方還沒有量化版。",
+      "tags": [
+        "tts_speech",
+        "asr",
+        "whisper",
+        "speech recognition"
+      ],
+      "url": "https://huggingface.co/salesforce-sovereign-intelligence/SOV-Transcribe-1",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xvst4u/salesforcesovereignintelligencesovtranscribe1/",
+      "price": null,
+      "vram": "26.6B total／4.6B active，BF16 約 53GB（估算），需 4-bit 量化才可能塞進 16GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "sensenova/SenseNova-Loop-9B-Preview",
+      "summary": "商湯的 looped decoder：中間 24 層用同一組權重跑兩次（32 層權重、56 次 layer 計算），加上 two-stream mHC 和 3:1 linear／full hybrid attention，訓練 context 到 262K、支援 MTP。約 9B 參數，但推理計算量約等於 14.6B。r/LocalLLaMA 發文者說整體接近 Qwen 3.5 27B（未經獨立驗證）。vLLM／SGLang 要用 PR 分支，官方範例 TP=4，尚無 GGUF。",
+      "tags": [
+        "llm_inference",
+        "looped-decoder",
+        "multimodal"
+      ],
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xvysss/sensenovasensenovaloop9bpreview_hugging_face/",
+      "price": null,
+      "vram": "約 9.7B 參數 BF16 約 19GB（估算），需量化；尚無 GGUF",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ashhart/TensorFold v1.2.8",
+      "summary": "Metal／CUDA／Vulkan 的 LLM 推理引擎，今天上 GitHub Trending。1.2.8（11/13）：Qwen3.8-Flash-Next 在 CUDA `--tp 2` 下 prompt fill 快 26.5–33.9%，M5 Ultra 上 Qwen3.8-27B MLX 8-bit prompt 快約 33%；CUDA 加入 Qwen3 embedding／reranker，server 可以依 id 取消 request。上一版已加入 Qwen3.8-27B 用 DSpine-b16 做 drafting（CUDA, opt-in）。",
+      "tags": [
+        "llm_inference",
+        "inference engine",
+        "speculative decoding"
+      ],
+      "url": "https://github.com/ashhart/TensorFold",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "price": null,
+      "vram": "推理引擎，視模型而定",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "IBM Granite 4.1 LLMON preview（3B／8B）",
+      "summary": "IBM 11/12 推出 granite-4.1-3b／8b-llmon-preview（實際 3.7B／8.8B），用保留 special token 的 LLMON 標記把指令和文件／tool 輸出分開，專防 indirect prompt injection。IBM 數據：OPI 攻擊成功率 8B 從 96.3% 降到 0.02%、ASB 從 52.8% 降到 3.1%，一般能力 8B 平均只掉 1.4 分；但直接攻擊和多輪攻擊只擋 28–37%，IBM 也說 preview 只供評估。社群已轉出 8B 的 GGUF。",
+      "tags": [
+        "rag_knowledge",
+        "llm_inference",
+        "prompt-injection",
+        "llmon"
+      ],
+      "url": "https://huggingface.co/ibm-granite/granite-4.1-8b-llmon-preview",
+      "source": "MACCUS／r/LocalLLaMA",
+      "sourceUrl": "https://maccus.fr/en/ibm-granite-prompt-injection/",
+      "price": null,
+      "vram": "3B 可直接跑；8B BF16 約 17.6GB（估算）需量化（社群已有 GGUF）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Thinking Machines〈End-to-End 4-Bit Training〉",
+      "summary": "公開 Inkling 2 Small 的 numerics recipe：expert 層 forward 用 NVFP4（搭專屬 kernel），backward 用 MXFP8＋re-quantization 和 stochastic rounding 壓低 gradient bias。GB300 上 NVFP4 是 15 PFLOPS、BF16 只有 2.5。Inkling 2 Small 在 GB300 NVL72 上 pretrain 只花 68 小時；下一步在研究 FP4 backward。",
+      "tags": [
+        "llm_training",
+        "nvfp4",
+        "mxfp8",
+        "end-to-end-fp4-training"
+      ],
+      "url": "https://thinkingmachines.ai/blog/end-to-end-4-bit-training/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50490618",
+      "price": null,
+      "vram": "GB300 NVL72 訓練",
+      "license": "不適用（技術文章）"
+    },
+    {
+      "id": "20261115-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NVIDIA：GLM-5.3 跨兩台 DGX Station 用 vLLM 服務，峰值 607.8 tok/s",
+      "summary": "GLM-5.3 NVFP4（753B total／40B active，checkpoint 約 464GB）塞不進單張 GB300 的 252GB HBM3e，NVIDIA 用兩台 DGX Station 走 ConnectX-8 RDMA、vLLM TP=2 合成一個 OpenAI-compatible endpoint，開 MTP、FP8 KV cache、prefix caching。AIPerf 結果：C16 峰值 607.8 tok/s，C32 掉到 385.0 tok/s、平均延遲 453.5 秒；單一使用者（C1）115.3 tok/s。HN 96 分。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "nvfp4",
+        "tensor parallel"
+      ],
+      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50497155",
+      "price": null,
+      "vram": "checkpoint 約 464GB，需兩張 GB300",
+      "license": "GLM-5.3 原授權＋NVIDIA Open Model Agreement"
+    },
+    {
+      "id": "20261115-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "律師的 8× V100 家用伺服器：DeepSeek V4.1 Flash experts 混 2-bit／NVFP4",
+      "summary": "Tom's Hardware 追蹤 r/LocalLLaMA 常客：律師用 8 張二手 V100 跑 DeepSeek V4.1 Flash＋自建 legal harness。新做法是 experts 全部先放 2-bit，再把最常用的換成 NVFP4 直到卡滿（約 38.7%、5,949 個 experts），context 524K；代價是 code 輸出從 160–215 降到 150–180 tok/s。RAM 加到 1TB、塞進一張 RTX 3090，之前的當機最後判定多半是一顆壞 PSU；kernel 和 re-quant 都是 Claude Code 寫的。",
+      "tags": [
+        "llm_inference",
+        "deepseek",
+        "expert-precision-tiering"
+      ],
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/lawyer-upgrades-eight-v100-private-ai-server-to-run-80-percent-of-deepseek-v4-1-flash-at-4-bit-nvfp4-precision-adds-1tb-of-ram-an-nvidia-rtx-3090-and-fixes-crashes-caused-by-a-bad-psu",
+      "source": "r/LocalLLaMA／Tom's Hardware",
+      "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/lawyer-upgrades-eight-v100-private-ai-server-to-run-80-percent-of-deepseek-v4-1-flash-at-4-bit-nvfp4-precision-adds-1tb-of-ram-an-nvidia-rtx-3090-and-fixes-crashes-caused-by-a-bad-psu",
+      "price": null,
+      "vram": "8× V100＋RTX 3090＋1TB RAM",
+      "license": "不適用（實測報導）"
+    },
+    {
+      "id": "20261115-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "WSJ：NVIDIA 被指投資 AI 新創、讓他們回頭買 GPU 製造「缺貨感」",
+      "summary": "WSJ 報導（經 Wccftech、TechPowerUp 轉述）：前 CEO Jensen Huang 被指透過投資小型雲端業者／AI 新創，讓他們買 NVIDIA GPU，以維持需求熱度並消化 TSMC 過量供貨；報導提到 8 月一場會議上，CFO（現任代理 CEO）Colette Kress 主張縮減 circular financing，包括和 OpenAI 的 $250B 交易。目前是報導指控。HN 982 分、590 則留言，r/LocalLLaMA 當日熱門第一。",
+      "tags": [
+        "infra_runtime",
+        "nvidia",
+        "gpu supply"
+      ],
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "source": "Hacker News／r/LocalLLaMA",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50493251",
+      "price": null,
+      "vram": "不適用",
+      "license": "不適用"
     }
   ],
-  "lastUpdated": "2026-11-15T03:30:00+08:00",
-  "updatedAt": "2026-11-15T03:30:00+08:00"
+  "lastUpdated": "2026-11-15T03:30:51+08:00",
+  "updatedAt": "2026-11-15T03:30:51+08:00"
 }
