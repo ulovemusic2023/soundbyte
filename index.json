@@ -116783,8 +116783,439 @@
       "stars": 302,
       "createdDate": "2026-06-30",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "20261114-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Reservoir 擴大對 Suno 與 Anthropic 的侵權訴訟，求償合計近 US$4.5 億",
+      "summary": "Reservoir Media 在原始訴狀提出數週後，提交擴大版起訴書，對 Suno 與 Anthropic 求償的法定賠償金合計接近 US$4.5 億。這是 AI 音樂版權戰的最新升級。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "copyright"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/12/reservoir-suno-lawsuit-anthropic-amended/"
+    },
+    {
+      "id": "20261114-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Nvidia 動議撤銷 UMG v. Suno 的證詞傳票，稱已提供逾 6,300 份文件",
+      "summary": "非 Warner 的大廠要求 Nvidia 就其對 Suno 的投資與對產業影響提供資訊，Nvidia 旗下 NVentures 以措辭強硬的動議回擊，主張傳票過於繁重、已交出超過 6,300 份文件。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "nvidia"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/11/nvidia-suno-umg-subpoena-quash-motion/"
+    },
+    {
+      "id": "20261114-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Suno CEO：把 streaming fraud 與 AI 音樂畫上等號是「sleight of hand」",
+      "summary": "Suno CEO Mikey Shulman 批評外界把串流詐欺等同於 AI 音樂，強調 AI 音樂本身不是犯罪，並表示公司在幕後投入的反詐欺工作比外界所知更多。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "streaming fraud"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/13/suno-boss-talks-streaming-fraud-ai-music-is-not-a-crime/"
+    },
+    {
+      "id": "20261114-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Can Music Generation Models Tap Along？用 MusicGen 做生成式 beat tracking",
+      "summary": "論文替預訓練 MusicGen 加上 audio-conditioning adapter，生成與輸入音樂同步的打擊軌，再從中抽取 beat 位置。在 GTZAN 上接近 SOTA beat tracker，且移除鼓聲時 F-measure 下降最小，metal 與 disco 等類型表現特別好。",
+      "priority": "high",
+      "tags": [
+        "musicgen",
+        "music generation",
+        "beat tracking"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.14971"
+    },
+    {
+      "id": "20261114-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "MusicRWKV：以 RWKV 架構做多模態音樂表徵學習，降低長音訊的運算成本",
+      "summary": "MusicRWKV 以 RWKV 取代 Transformer 的二次方 attention，在同一個自監督框架中同時建模 waveform、spectrogram 與 metadata，並用 invertible compression 縮短序列、FiLM 做 modality 條件化，目標是更有效率地處理長篇音樂。",
+      "priority": "medium",
+      "tags": [
+        "music model",
+        "music representation",
+        "audio model"
+      ],
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.16718"
+    },
+    {
+      "id": "20261114-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Akai MPC OS 3.10.1 推出 MPC Plugin SDK，可自製 instrument 與 FX plugin",
+      "summary": "MPC OS 3.10.1 帶來新的 MPC Plugin SDK，讓使用者為 MPC Sample 等硬體開發自訂的樂器與效果 plugin，硬體取樣機開始有第三方擴充生態。",
+      "priority": "high",
+      "tags": [
+        "mpc",
+        "plugin",
+        "daw",
+        "sound design"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/akai-mpc-os-3-10-1-brings-mpc-plugin-sdk-for-custom-instrument-and-fx-plugins.html"
+    },
+    {
+      "id": "20261114-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Xfer Records Shrub：給 M-VAVE FM-1 的精簡版 Serum 開放 beta",
+      "summary": "Serum 開發者 Steve Duda 十月底預告的 Shrub，是專為 M-VAVE FM-1 打造的精簡版 Serum，現已開放 beta 下載。",
+      "priority": "medium",
+      "tags": [
+        "serum",
+        "synth",
+        "plugin"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/xfer-records-shrub-serum-for-m-vave-fm-1-before-gta-6.html"
+    },
+    {
+      "id": "20261114-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "AudioThing Seconds：Hainbach 設計的 filter bank plugin",
+      "summary": "由 Berlin 音樂人 Hainbach 與 AudioThing 合作，以 per-band filtering 加 ring modulation 做聲音探索的 filter bank plugin。",
+      "priority": "medium",
+      "tags": [
+        "plugin",
+        "filter",
+        "ring modulation",
+        "sound design"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/audiothing-seconds-hainbachs-new-filter-bank-plugin-lets-you-dig-into-the-sonic-unknown.html"
+    },
+    {
+      "id": "20261114-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "Modartt Pianoteq 9.3：新增 YFX Japanese Grand Piano 擴充包",
+      "summary": "Pianoteq 9.3 加入受日本鋼琴工藝啟發的 physically modeled YFX Japanese Grand Piano，採用 Pianoteq 9 最新的 soundboard model，並含多項改進與修正。",
+      "priority": "medium",
+      "tags": [
+        "pianoteq",
+        "physical modeling",
+        "plugin"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/modartt-updates-pianoteq-to-v9-3-incl-yfx-japanese-grand-piano-expansion/"
+    },
+    {
+      "id": "20261114-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-14",
+      "cycle": "saturday",
+      "title": "StereoGhost PhaseKicker：每次 kick 自動校正 kick 與 bass 相位的 plugin",
+      "summary": "瑞士開發商 StereoGhost 推出 PhaseKicker，會在每次 kick 觸發時自動調整 kick 與 bass 的相位關係；上市優惠價 US$35／€39。",
+      "priority": "medium",
+      "tags": [
+        "plugin",
+        "mixing",
+        "phase",
+        "bass"
+      ],
+      "source": "DAWCrash",
+      "sourceUrl": "https://www.dawcrash.com/2026/11/13/stereoghost-releases-phasekicker-an-automatic-kick-bass-phase-alignment-plugin/"
+    },
+    {
+      "id": "20261115-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Code Projects 改版：一個 coordinator 拆工作、派給多條平行 thread，各自開 branch、跑測試、開 PR",
+      "summary": "Anthropic 把 Claude Code 的 Projects 從「資料夾」改成「對話」：你設定 goal 和 repo，Claude 先 scope 需求，再把工作派到多條平行 thread，最後 review 並組裝結果；每條 thread 底層都是一個 Claude Code cloud session，在自己的 branch 和 repo 副本上工作。官方例子是「降低 checkout p75 latency」——profile 每個 endpoint、平行測優化、各自開 PR；或連 API／web／mobile 三個 repo 退役 v1 endpoint，最後告訴你哪個 PR 要先 merge。Projects 會累積 memory、decisions 和 artifact library，可從手機 steer，離開電腦也會繼續跑。目前先以 beta 開給部分 Pro／Max 的 cloud session 使用者；官方提醒平行 thread 會更快吃完 usage limit，可分別設定 coordinator 與 worker 的 model／effort；在本機跑 thread「very soon」。HN 97 分／89 則留言。",
+      "tags": [
+        "paradigm-shift",
+        "Claude Code",
+        "multi-agent",
+        "coordinator/worker",
+        "parallel agents",
+        "agentic coding"
+      ],
+      "url": "https://claude.com/resources/articles/projects-redesigned",
+      "source": "Claude Blog (Anthropic)",
+      "sourceUrl": "https://claude.com/resources/articles/projects-redesigned",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Self-hosted Claude Managed Agents 進入 private beta：harness、sandbox、credentials、session history 全搬進自家環境",
+      "summary": "Managed Agents 原本是 Anthropic 代管的 agent harness＋sandbox＋credential 處理＋session history，之前只開放自架 sandbox；現在整套 service 都能跑在自己的 cloud 或 on-prem——你營運 Managed Agents server、它的 database 和 workers，model request 可以直連 Anthropic、走 Bedrock／Google Agent Platform／Microsoft Foundry，或你自己的 gateway。官方列出四個安全設計原則：brain（harness）與 hands（sandbox）分離、credentials 不進 sandbox（MCP／API 呼叫由外部 proxy 注入，可接自家 secrets manager）、每個 environment 可限 allowed hosts、每一步 tool call 都留紀錄並以 OpenTelemetry 匯出。適合「無人看管修 build、triage alert」這類要碰內部系統的 agent。",
+      "tags": [
+        "AI agent",
+        "Claude Managed Agents",
+        "self-hosted",
+        "MCP",
+        "OpenTelemetry",
+        "agent security"
+      ],
+      "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+      "source": "Claude Blog (Anthropic)",
+      "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google Research 公布 Antigravity /teamwork 成果：平行探索＋專職 falsifier，multi-agent 解掉多個懸置多年的開放問題",
+      "summary": "Google Research（Vahab Mirrokni）說明 /teamwork 的兩個設計重點：一是用平行探索搭配專門的 falsifier（Lean 4 proof checker、原封不動的 test suite、execution simulator、hardware counters 等）自動驗證哪個候選解成立；二是「context by construction」——每個專職 agent 只拿到該步驟需要的檔案和工具，coordinator 交棒給全新的 successor，critic／auditor 在乾淨 context 下複核，避免多日任務注意力發散。成果之一：與 CUHK、USC、CMU 研究者合作證明 2013 年的 Courtade–Kumar conjecture，整份證明以 Lean 4 形式化、達 5,000 萬行；另有多個演算法與 kernel 優化結果。/teamwork、/boost 已可在 Antigravity 使用，Google 表示未來幾週會把完整功能開放給外部使用者。",
+      "tags": [
+        "multi-agent",
+        "Antigravity",
+        "verifier-in-the-loop",
+        "Lean 4",
+        "context engineering",
+        "Gemini 4"
+      ],
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "source": "Google Research Blog",
+      "sourceUrl": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare 開源 Kitesurf：跑在 Workers 上、給 AI agent 用的 stateless browser，Rust 編成 WebAssembly、支援 CDP",
+      "summary": "Kitesurf 是 Cloudflare 8 月推出的 agent 專用瀏覽器，現在以 Apache 2.0 開源，可本地跑或部署到自己的 Cloudflare Workers。它不靠 browser container 就能 parse HTML、套 CSS、執行頁面 JavaScript、render screenshot，並支援 Chrome DevTools Protocol（可接 Puppeteer）；目標是比 Chromium 更省 CPU／記憶體、在 Workers 網路上隨需擴展。內部由 Rust 套件編成 WASM 組成：Blitz（HTML／DOM／layout）、Stylo（CSS）、Boa（只在 Dynamic Workers 跑不了 JS 時才用）、Linebender（文字排版／2D）、Krilla（PDF），架構分 Engine／PageScript／PageRenderer 三塊。",
+      "tags": [
+        "AI agent",
+        "browser for agents",
+        "WebAssembly",
+        "Rust",
+        "Cloudflare Workers",
+        "CDP"
+      ],
+      "url": "https://github.com/cloudflare/kitesurf",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cursor 公布資安事件完整調查：從 Fireworks 外洩的 key 一路打進 SaaS 工具，最後在 extension cache 上架惡意 Claude Code 擴充",
+      "summary": "Cursor 調查兩週後的說明：攻擊者先拿到 Cursor 發給推論供應商 Fireworks 的 access key（由 Fireworks 端外洩），從共享的唯讀 bucket 複製了主要是 2025 年、非 Privacy Mode 的 coding agent traces；少數 traces 裡有沒被遮蔽的 credentials（不到 0.01% 客戶的 API credentials 外洩），攻擊者再用它們進入部分 SaaS 工具，碰到封存的非 production repos、客服資料等。10/29 攻擊者用竊得的 credential 把惡意版 Anthropic.claude-code 2.1.312／2.1.313 放上 Cursor VS Code extension marketplace 的 cache 約 11 小時，最多約 5,000 名使用者可能拿到（Open VSX 本身沒有被汙染）。Cursor 說 release signing keys 沒外洩，已把推論全移出 Fireworks、輪換所有內部 credentials、重建 marketplace、加上 secret scanning。官方 X 貼文 1,861 讚、43 萬次曝光。",
+      "tags": [
+        "coding agent",
+        "supply chain security",
+        "Cursor",
+        "incident postmortem",
+        "credential leak"
+      ],
+      "url": "https://cursor.com/blog/security-incident-update",
+      "source": "Cursor Blog",
+      "sourceUrl": "https://cursor.com/blog/security-incident-update",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cloudflare：AI pentest orchestrator 一個月爆量，3 天內 50+ 個 framework 家族掃過客戶，請求量自 10/1 起成長 30 倍",
+      "summary": "Cloudflare 指出，幾週前開源的 agentic 滲透測試系統 ARTEX 還是唯一一個，作者 10/8 下架後，生態系反而分裂出 12,000+ 個 repo、數百個有血緣的 fork；最近 3 天就看到 50+ 個 framework 家族在掃 Cloudflare 客戶，執行它們的 IP 已達數千個，AI pentest／exploitation 工具的每日請求自 10/1 起成長 30 倍，部分攻擊已開始串接竊得的 credentials 做 lateral movement。這類工具把 MCP 和傳統 pentest 工具接起來，用 planner＋平行 agents 在 asset graph 上自動跑完 OODA loop——Cloudflare 稱之為攻擊能力的「doctrinal shift」，並提出六支柱的 Modern Security Model（WAF＋rate limit、anomaly detection、bot defense、identity-gated access、schema 驗證、threat intel）。",
+      "tags": [
+        "paradigm-shift",
+        "agentic security",
+        "AI pentest orchestrator",
+        "MCP",
+        "rate limiting",
+        "multi-agent"
+      ],
+      "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Revolut 公布 10/20 大當機 postmortem：5 台 coordination server 早就少 1 台卻沒告警，Zone B 斷電後 quorum 湊不齊",
+      "summary": "Revolut 11/13 的技術說明：受影響的 database 跨 Google Cloud London 三個 zone，由 distributed configuration store（DCS）以 5 台一組、3 台成 quorum 的多數決決定誰是 primary。部分組別在斷電前就因例行替換失敗只剩 4 台、且沒有告警；Zone B 斷電再掉 2 台後只剩 2 台，failover manager 無法 promote 新 primary。雪上加霜的是主要的 database metrics 視覺化工具也部署在 Zone B，quorum 恢復後部分 PostgreSQL cluster 又因 replication lag 卡在 read-only。卡片授權 12:40 UTC 恢復、全部服務 17:15 UTC 恢復。改善包括監控 DCS membership／voter health／failure tolerance、監控 alerting pipeline 本身、調整「第一台總放同一個 zone」的 placement 規則。Gergely Orosz 的整理貼文 550 讚。",
+      "tags": [
+        "quorum",
+        "consensus",
+        "replication",
+        "zonal failover",
+        "postmortem",
+        "PostgreSQL"
+      ],
+      "url": "https://www.revolut.com/blog/post/20octoutagetechnicaloverview/",
+      "source": "Revolut（via Gergely Orosz）",
+      "sourceUrl": "https://x.com/GergelyOrosz/status/2121637812613333292",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "〈No AI Slop: A Manifesto〉：AIE Code Summit 講者仿 Agile Manifesto 寫的五條價值，HN 215 分",
+      "summary": "由 AIE Code Summit 2026 的講者與與會者共同撰寫，五條價值是：Outcomes over output、Understanding over speed、Our own thinking over a model's first draft、Better work over easier work、Improving the system over patching the output。對 slop 的定義很精準：「產出時花的力氣比要求讀者理解它的力氣還少」；並指出 slop 是不對稱的——千行 PR 的產生成本趨近於零，review 成本卻不變——而且會複利，因為下一個 agent 會讀進並複製。主張至少 review 部分輸出、同一個錯出現兩次就改系統和 guardrails、能交給 linter／type checker 的就交給它們。貢獻者包含 swyx、Kent C. Dodds、Dex Horthy 等，頁面列出 352 個簽署；Latent Space AINews 也以此為當期主題。",
+      "tags": [
+        "AI coding",
+        "vibe coding",
+        "code review",
+        "AI slop",
+        "engineering culture"
+      ],
+      "url": "https://www.slopmanifesto.com/",
+      "source": "slopmanifesto.com（AIE Code Summit）",
+      "sourceUrl": "https://www.slopmanifesto.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Crissy Field 掃 159,041 個 Lovable 專案：7,403 個網站不用登入就撈得到含 email 的資料表，含護照資料、20 萬則私訊",
+      "summary": "德國資安公司 Crissy Field 與 Handelsblatt 合作，從 Common Crawl 找出 2025/12–2026/09 的 159,041 個 Lovable 專案，其中 34,545 個用 Supabase；24,664 個網站一載入就送出 Supabase 資料，再做唯讀請求後，在其中 7,403 個（30%）網站的 10,560 張表找到 email 欄位。實例包括 8 萬多筆論壇個資與 20 萬則聊天訊息、上千筆含護照號碼的身分資料、28 萬封寄給客戶的 email。作者強調 30% 不能直接當外洩率、樣本也不具代表性；重點是 vibe-coded app 的資料庫整合模式高度重複，一招可以打很多家。HN 169 分。",
+      "tags": [
+        "vibe coding",
+        "Supabase",
+        "access control",
+        "AI app builder",
+        "data exposure"
+      ],
+      "url": "https://www.crissyfield.de/research/lovable-en/",
+      "source": "Crissy Field GmbH",
+      "sourceUrl": "https://www.crissyfield.de/research/lovable-en/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Jonathan Blow：如果 AI 已經解決 coding，為什麼我的軟體還是一樣？HN 443 分、628 則留言",
+      "summary": "The Students 節目裡，Jonathan Blow 與 Wolf Tivy 談軟體複雜度爆炸、為什麼現在的 AI 寫不出比人更好的 code，以及如果它真的做得到世界會長怎樣。這是本週期 HN 上留言最多的軟體開發話題；高讚留言的觀點是影片確實回答了標題——組織和人優化的目標沒變，AI 只是更快給你更多原本就想要的東西；也有人反駁，個人自製軟體取代訂閱服務這塊已經明顯改變。（影片本身未逐字審閱，以上依官方描述與 HN 討論整理。）",
+      "tags": [
+        "AI coding",
+        "software complexity",
+        "productivity debate",
+        "Jonathan Blow"
+      ],
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "source": "YouTube（The Students）／Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50484658",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google Cloud Compute Engine API 改走不可變的 date-based versions：用 X-Goog-Api-Version header 鎖版本，/v1 照舊",
+      "summary": "Compute Engine API multi-versioning GA：在長期存在的 /v1 旁邊新增日期命名的不可變版本（stable 每季一版，第一版 2026-09-01；preview 帶 -preview 後綴、壽命一年），用 X-Goog-Api-Version header 或 $apiVersion 參數選版本，不指定就照舊走 /v1（無 EOL 日期）。新版本會預設開啟 AggregatedList 的 partial success（單一 zone 失敗不再拖垮整個查詢）、改成結構化 google.rpc.ErrorInfo 錯誤、收緊舊的 IAM 檢查。各語言 client library、gcloud、Terraform provider 都綁定特定版本。InfoQ 指出 Google 是三大雲最後一個讓呼叫端逐 request 鎖版本的，header 做法類似 Stripe-Version。",
+      "tags": [
+        "REST API",
+        "API versioning",
+        "Google Cloud",
+        "AIP-185",
+        "backward compatibility"
+      ],
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/introducing-compute-engine-api-multi-versioning-predictable-evolution-without-breaking-production/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/compute-engine-api-versioning/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-15",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Claude Code desktop 開放用 mods 做自訂 themes：直接叫 Claude 生成配色和動態背景，官方貼文 1.9 萬讚",
+      "summary": "@ClaudeDevs 宣布 Claude Code desktop 可以透過 mods 建立自訂 theme——改顏色、加 animated background，可以直接用自然語言叫 Claude 生成，或從 theme-examples plugin 開始。Addy Osmani 補充 themes 其實就是 mods 加上一層乾淨的 UI，支援 reactive 動態背景。功能本身偏好玩，但貼文 19,100 讚、8,363 個 bookmark、約 129 萬次曝光，是本週期 X 上互動最高的開發工具貼文，也顯示 Claude Code desktop 的 mods／plugin 擴充面正在成形。",
+      "tags": [
+        "Claude Code",
+        "developer experience",
+        "mods",
+        "plugins"
+      ],
+      "url": "https://x.com/ClaudeDevs/status/2121392666244186327",
+      "source": "X @ClaudeDevs",
+      "sourceUrl": "https://x.com/ClaudeDevs/status/2121392666244186327",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-14T03:56:06+08:00",
-  "updatedAt": "2026-11-14T03:56:06+08:00"
+  "lastUpdated": "2026-11-15T03:30:00+08:00",
+  "updatedAt": "2026-11-15T03:30:00+08:00"
 }
