@@ -117579,8 +117579,296 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261115-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "WoYun520/gif-factory",
+      "summary": "給 Codex 用的「GIF 工廠」skill 套組：丟一張圖或一句話，就能做表情包、光柵變畫卡、動態海報、動態簽名、電影片頭（中英各 50 種字體寫法）、動態繪本和品牌短片。總入口 skill 會依需求挑做法，角色圖、字稿、配樂都可以自己帶。",
+      "tags": [
+        "agent-skill",
+        "codex",
+        "creator-tools",
+        "gif",
+        "motion-graphics"
+      ],
+      "url": "https://github.com/WoYun520/gif-factory",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 1847,
+      "createdDate": "2026-11-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20261115-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "lxe/phoneuse",
+      "summary": "在電腦上看見並操作一支沒越獄的 iPhone：AirPlay 鏡像進來、Bluetooth HID 滑鼠鍵盤送出去，附 CLI 和給 agent 的 skill。App 裡按「Connect Claude Code」就能讓 agent 點按打字，接管前可先在 iPhone 上問你，你也能隨時搶回控制。Linux 有 flatpak，Mac 版要搭一塊 LilyGO T-Display 當 bridge；目前 alpha。",
+      "tags": [
+        "computer-use",
+        "claude-code",
+        "ios",
+        "agent-skill"
+      ],
+      "url": "https://github.com/lxe/phoneuse",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 659,
+      "createdDate": "2026-11-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20261115-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "Dodaios/ste80-humanizer",
+      "summary": "把 AI 寫的文字改成像細心的人寫的：先移除 Wikipedia「Signs of AI writing」列的 26 種 AI 痕跡，再照 Karpathy 的 STE80 方法把句子改寫到「80% 接近 ASD-STE100」（航空維修手冊用的受控英文）。作者明說目標是好讀，不是騙過 AI detector。Show HN 114 分。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "codex",
+        "writing"
+      ],
+      "url": "https://github.com/Dodaios/ste80-humanizer",
+      "source": "GitHub API (topic:claude-code) + Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50429144",
+      "stars": 571,
+      "createdDate": "2026-11-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20261115-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "paulirish/chrome-capture",
+      "summary": "Paul Irish 做的 Chrome 分頁錄影工具：用 Chrome 153+ 新的 CDP `Page.startScreenRecording`，畫面直接從 compositor 送到獨立 encoder，60–120fps、最高 2160p 寫成 AV1 `.mp4`，也能錄 48kHz stereo Opus 分頁音訊，不需要 ffmpeg。`npx chrome-capture <url> demo.mp4 4s` 即可，也能吃 Playwright / Puppeteer Page 或 CDP session。",
+      "tags": [
+        "cli-tool",
+        "audio",
+        "browser-automation",
+        "playwright"
+      ],
+      "url": "https://github.com/paulirish/chrome-capture",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 449,
+      "createdDate": "2026-11-08",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "Moh4696/cinematic-skill",
+      "summary": "讓 coding agent 用程式「拍」有旁白的紀錄短片：寫腳本、錄旁白、找附授權的 public-domain 照片，再在單一設計好的世界裡做一鏡到底的鏡頭運動。每格都是 Python + Skia 畫的，不是生成影片，所以每次 render 結果一致，換旁白會自動重新對時。`npx skills add` 安裝，支援 Claude Code / Codex / Cursor 等。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "video",
+        "motion-graphics"
+      ],
+      "url": "https://github.com/Moh4696/cinematic-skill",
+      "source": "GitHub API (topic:claude-code)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 379,
+      "createdDate": "2026-11-09",
+      "license": "MIT"
+    },
+    {
+      "id": "20261115-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "drost-ai/tinker-ai-skill",
+      "summary": "把自己的 Claude Code sessions 變成 fine-tune 資料集：收集 transcript → 清洗並匿名化 → 依 context 長度切片 → 在 Tinker 上訓練 LoRA → merge 後輸出能在 llama.cpp 跑的 GGUF。作者說他們的 Tess-4 / Tess-4.5 開源模型就是這樣做的；附合成 transcript 產生器可先 dry-run，要花錢的步驟前 agent 會停下來。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "fine-tuning",
+        "local-llm",
+        "gguf"
+      ],
+      "url": "https://github.com/drost-ai/tinker-ai-skill",
+      "source": "GitHub API (rising stars)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 323,
+      "createdDate": "2026-11-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20261115-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "worth-trying",
+      "title": "OpenMOSS/MOSS-Live",
+      "summary": "OpenMOSS 的 full-duplex 即時互動系統：邊聽邊說、分得出「嗯嗯」附和和真的要插話，能同時看鏡頭或螢幕分享；前景模型負責對話，背景模型去跑 research 和 tool call，聊天不中斷。repo 目前是介紹和 benchmark（自家比較表中 FDB v3 tool-use 51.00%），試用走 playground / API，README 沒看到可下載的權重。",
+      "tags": [
+        "voice",
+        "full-duplex",
+        "speech",
+        "tool-use"
+      ],
+      "url": "https://github.com/OpenMOSS/MOSS-Live",
+      "source": "GitHub API (rising stars, audio)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 125,
+      "createdDate": "2026-11-07"
+    },
+    {
+      "id": "20261115-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "worth-trying",
+      "title": "AmSach/maple",
+      "summary": "MoE 模型的 sub-2-bpw 結構壓縮：剪掉 latent experts，把 Gemma 4 26B-A4B 和 DeepSeek-Coder-V2-Lite 壓成 5GB 以下的 GGUF（Gemma 版 IQ2_XXS 約 4.75GB），目標是 6GB 筆電 GPU 全部放進 VRAM。Show HN 標題宣稱 45 TPS；你的 16GB 5070 Ti 可以直接試，品質損失要自己驗。",
+      "tags": [
+        "local-llm",
+        "quantization",
+        "gguf",
+        "llama.cpp",
+        "moe"
+      ],
+      "url": "https://github.com/AmSach/maple",
+      "source": "Show HN (HN Algolia)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50410253",
+      "stars": 51,
+      "createdDate": "2026-11-07"
+    },
+    {
+      "id": "20261115-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "vercel-labs/agent-browser",
+      "summary": "本週 GitHub Trending 漲 4,360 星。Rust 寫的瀏覽器自動化 CLI：`snapshot` 把頁面變成帶 `@e1` ref 的 accessibility tree，agent 一次一個指令點、填、讀；點不到（例如被 consent banner 擋住）會直接報錯，不會假裝成功。CLI 自帶跟版本對齊的 skills，可用 `npx skills add` 裝進 harness。",
+      "tags": [
+        "browser-agent",
+        "cli-tool",
+        "agent-skill",
+        "rust"
+      ],
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "source": "GitHub Trending (weekly, all + rust)",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 51131,
+      "createdDate": "2026-01-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "codewhale-hq/Codewhale",
+      "summary": "Rust 寫的開源 terminal coding agent，模型隨你選（預設 DeepSeek，偵測到本機 Ollama 會提供 local model），可以把一個任務拆給多個 agent。預設直接改檔、非唯讀 shell 指令先問；安裝不需帳號，Linux / macOS / Windows 的 x64 與 arm64 都有 binary。這週在 star-surge 查詢中冒出。",
+      "tags": [
+        "coding-agent",
+        "multi-agent",
+        "local-llm",
+        "ollama",
+        "mcp"
+      ],
+      "url": "https://github.com/codewhale-hq/Codewhale",
+      "source": "GitHub API (star-surge: coding-agent / ai-agent / local-llm)",
+      "sourceUrl": "https://api.github.com/search/repositories",
+      "stars": 41173,
+      "createdDate": "2026-01-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20261115-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "opensandbox-group/OpenSandbox",
+      "summary": "本週 Go trending 漲 804 星，Agentic AI Foundation (AAIF) 專案。給 AI agent 用的自架 sandbox runtime：本機用 Docker 起，上 Kubernetes 用同一套 API；Firecracker sandbox 建立 P50 64 ms、可 pause/resume，有 egress policy 和 Credential Vault（agent 呼叫外部服務時看不到真的金鑰）。有 Python / TS / Go 等 SDK、`osb` CLI 和 MCP。",
+      "tags": [
+        "agent-sandbox",
+        "self-hosted",
+        "mcp",
+        "kubernetes"
+      ],
+      "url": "https://github.com/opensandbox-group/OpenSandbox",
+      "source": "GitHub Trending (weekly, go)",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 17297,
+      "createdDate": "2025-12-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "simpsoka/zigzag",
+      "summary": "本週 Show HN 最高分（734 分、253 則留言）：作者的 $300 刺繡機要訂閱，乾脆自己寫 app。Rust 刺繡編輯器，內建 MCP 讓 agent 跟你一起畫：SVG 轉針跡、匯出 PES / DST / EXP / JEF / VP3，或透過 Bluetooth 直接送到 Brother Skitch。「創作工具 + MCP」的好範例。",
+      "tags": [
+        "mcp",
+        "creator-tools",
+        "rust",
+        "maker"
+      ],
+      "url": "https://github.com/simpsoka/zigzag",
+      "source": "Show HN (HN Algolia)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50470488",
+      "stars": 708,
+      "createdDate": "2026-10-30",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261115-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "product-hunt",
+      "title": "Product Hunt MCP",
+      "summary": "本週 PH 週榜第 2（11/9 當日第 1）。讓 AI assistant 直接查 Product Hunt：找新產品、比較替代品、看社群評價；自己要上架的話，能把 README 和官網轉成 launch 草稿並檢查缺什麼。用 Product Hunt 帳號登入，不需要 API key。",
+      "tags": [
+        "mcp",
+        "product-discovery",
+        "launch"
+      ],
+      "url": "https://www.producthunt.com/mcp/install?ref=producthunt",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/top-products/weekly/latest"
+    },
+    {
+      "id": "20261115-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "product-hunt",
+      "title": "YouArt Desktop App",
+      "summary": "「Codex for creative team」：裝在你電腦上的 AI 影片製作 agent，把本機檔案和 Slack、Gmail、GitHub 的 context 拉到同一張 canvas，用 computer use 直接操作 After Effects、CapCut 和 Blender。可 BYO API key，smart routing 會把每個 shot 丟給最便宜的 provider。11/12 當日第 2，Garry Tan hunt。",
+      "tags": [
+        "video-production",
+        "computer-use",
+        "creator-tools"
+      ],
+      "url": "https://youart.ai/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/youart"
     }
   ],
-  "lastUpdated": "2026-11-15T03:43:03+08:00",
-  "updatedAt": "2026-11-15T03:43:03+08:00"
+  "lastUpdated": "2026-11-15T04:03:07+08:00",
+  "updatedAt": "2026-11-15T04:03:07+08:00"
 }
