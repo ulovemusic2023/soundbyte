@@ -117439,8 +117439,148 @@
       "price": null,
       "vram": "不適用",
       "license": "不適用"
+    },
+    {
+      "id": "20261115-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly：當 AI 讓創作變得充裕，「差異」才是稀缺",
+      "summary": "KK 把 AI 比喻成人人都有的 magic genie：天上的 giant brain 會產出大量內容，也產出大量的 sameness。廉價的 personalization 不等於有價值的 difference；真正稀缺的是值得被注意的獨特性。他也延伸 Tim O'Reilly 的問題：AI 時代可分享的知識單位會從 app 轉向 spec（目標／問題），值錢的是把問題問對。",
+      "tags": [
+        "difference-as-scarcity",
+        "knowledge-artifacts",
+        "creator-leverage"
+      ],
+      "url": "https://kk.org/thetechnium/new-units-of-knowledge/",
+      "source": "The Technium (kk.org)",
+      "sourceUrl": "https://kk.org/thetechnium/new-units-of-knowledge/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "playbook",
+      "title": "levelsio：solo founder 的 uptime 不會輸大公司",
+      "summary": "多年來一直有人說一個人 ship 不可能做到大公司的高可用性；他舉 Revolut 主要 production DB 沒接好 monitoring、以及本週 Microsoft 大當機為例：誰都會掛，一個管理得當的 solo founder 和大公司其實差不多。可遷移的點：可靠度來自紀律與監控，不是團隊人數。",
+      "tags": [
+        "solo-founder",
+        "reliability",
+        "one-person-company"
+      ],
+      "url": "https://x.com/levelsio/status/2121658404850872676",
+      "source": "@levelsio (X)",
+      "sourceUrl": "https://x.com/levelsio/status/2121658404850872676",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "quotable",
+      "title": "Alex Hormozi：擋住你的不是資訊不足，是怯懦",
+      "summary": "別等資訊齊全才決定；創業 99% 的工作就是把事情搞清楚，而如果你早就知道答案，就沒有什麼可以搞清楚的。",
+      "tags": [
+        "decision-making",
+        "courage",
+        "entrepreneurship"
+      ],
+      "url": "https://x.com/AlexHormozi/status/2121664726040269022",
+      "source": "Alex Hormozi (X)",
+      "sourceUrl": "https://x.com/AlexHormozi/status/2121664726040269022",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Sahil Bloom：active optimism——先假設會成功，再去把它做成真的",
+      "summary": "他的「被低估的人生建議」：永遠假設事情會順利，然後去做讓它成真的工作。他稱之為 active optimism、earned faith——不是被動樂觀，而是用行動換來的信心，讓你比任何方法都更能承受不確定性。3,500+ 讚。",
+      "tags": [
+        "active-optimism",
+        "uncertainty",
+        "mindset"
+      ],
+      "url": "https://x.com/SahilBloom/status/2121628437731291315",
+      "source": "Sahil Bloom (X)",
+      "sourceUrl": "https://x.com/SahilBloom/status/2121628437731291315",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Jonathan Blow：如果 AI 解決了 coding，為什麼我的軟體還是一樣？",
+      "summary": "Jonathan Blow 與 Wolf Tivy 對談軟體複雜度爆炸、為什麼現在的 AI 寫不出比人更好的 code，以及若真的做得到世界會長怎樣；HN 400+ 分熱議。討論區的共識框架：AI 只是讓你更快拿到你本來就想要的東西，組織在 optimize 什麼、怎麼工作沒變，產出就不會變；反例是個人化 software 取代訂閱、以及小團隊做出過去大團隊才做得到的東西。",
+      "tags": [
+        "ai-coding",
+        "incentives",
+        "software-complexity"
+      ],
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "source": "The Students (YouTube) / Hacker News",
+      "sourceUrl": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "Lulu Cheng Meservey：危機溝通要 frontrun 後面的壞消息",
+      "summary": "Jensen Huang 事件是本週最熱話題。她寫出一段假想的第一則聲明：一次說完所有會被挖出來的事、支持董事會的獨立調查、主動請假，提前讓大家想像沒有他的 Nvidia。框架：壞消息會分批爆出時，第一則訊息就要把後面的 shoe-drops 先講掉，否則決策會被一連串報導推著走、且難以逆轉。",
+      "tags": [
+        "crisis-comms",
+        "frontrunning",
+        "narrative-control"
+      ],
+      "url": "https://x.com/lulumeservey/status/2121458732206833891",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2121458732206833891",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261115-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "quotable",
+      "title": "Dan Koe：不需要經驗才開始，經驗是開始之後才有的",
+      "summary": "一句話破解「我還沒準備好」的迴圈；本週 4,300+ 讚、600+ 收藏。",
+      "tags": [
+        "start-before-ready",
+        "action",
+        "creator"
+      ],
+      "url": "https://x.com/thedankoe/status/2121636177702727868",
+      "source": "Dan Koe (X)",
+      "sourceUrl": "https://x.com/thedankoe/status/2121636177702727868",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-15T03:30:51+08:00",
-  "updatedAt": "2026-11-15T03:30:51+08:00"
+  "lastUpdated": "2026-11-15T03:43:03+08:00",
+  "updatedAt": "2026-11-15T03:43:03+08:00"
 }
