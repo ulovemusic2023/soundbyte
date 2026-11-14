@@ -117867,8 +117867,27 @@
       "url": "https://youart.ai/",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/youart"
+    },
+    {
+      "id": "20261115-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-15",
+      "cycle": "sunday",
+      "priority": "product-hunt",
+      "title": "Skillbox",
+      "summary": "把散落各處的 AI skills 收進一個 library，同步到 Claude Code、Cursor 和 Codex，每個工具／專案只裝需要的那幾個，省 context。從 GitHub / GitLab 加的 skill 會持續追蹤來源、改版時先給你看 diff；每個版本都掃 prompt injection、資料外洩、hardcoded secrets 等（含 Cisco Skill Scanner）。另有 Trim 把冗長的 test / git / build 輸出先縮短再給 agent。library、同步和 Trust 永久免費，Trim 與 AI 功能要付費方案。11/11 當日第 5。",
+      "tags": [
+        "agent-skill",
+        "claude-code",
+        "cursor",
+        "codex",
+        "security"
+      ],
+      "url": "https://skillbox.so/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/skillbox-5"
     }
   ],
-  "lastUpdated": "2026-11-15T04:03:07+08:00",
-  "updatedAt": "2026-11-15T04:03:07+08:00"
+  "lastUpdated": "2026-11-15T04:04:19+08:00",
+  "updatedAt": "2026-11-15T04:04:19+08:00"
 }
