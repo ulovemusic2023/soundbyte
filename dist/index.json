@@ -118478,8 +118478,302 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261116-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "deepseek-ai/chat-demo",
+      "summary": "DeepSeek 官方釋出的純靜態 chat demo：沒有 backend，瀏覽器直接連 DeepSeek API，下載解壓點 index.html 就能用。支援 streaming、deep thinking、smart search、讀連結附 citation、語音輸入與朗讀（走 ASR / TTS endpoint）；預設模型 `deepseek-flash`，走 Anthropic-compatible Messages / Files API。API key 只存在瀏覽器 localStorage，對話存 IndexedDB——想自己做輕量前端可直接拿來參考。",
+      "tags": [
+        "deepseek",
+        "chat-ui",
+        "anthropic-compatible-api",
+        "static-site",
+        "voice"
+      ],
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/deepseek-ai/chat-demo",
+      "stars": 2781,
+      "createdDate": "2026-11-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261116-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "ersinkoc/phonebox",
+      "summary": "把舊 Android 手機變成桌上面板＋觸控鍵盤（Windows / Linux / macOS，USB 或配對後走 Wi-Fi / Tailscale，不上雲）。115 個 widget 裡有 AI coding 專區：Claude / Codex 額度與 burn-rate 預估、點 session 看 model / tokens / context window，session 完成或需要你時手機會震動，Claude Code 的 permission prompt 直接在手機按 Allow / Deny。也有 now playing 控制、Stream Deck 式快捷鍵和 webhook。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "desk-panel",
+        "stream-deck",
+        "old-phone"
+      ],
+      "url": "https://github.com/ersinkoc/phonebox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ersinkoc/phonebox",
+      "stars": 1058,
+      "createdDate": "2026-11-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20261116-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "ZSeven-W/dsh-game-studio",
+      "summary": "DeepSeek Harness (DSH) 外掛：一句話描述小遊戲，agent 從 2D top-down 或 3D voxel（three.js）模板改出來、自己 playtest，再在側欄直接玩；美術可用 OpenAI image API 或本機 Codex CLI 生成，花錢前先給你看成本，一鍵發布到 GitHub Pages / Cloudflare。目前 0.1.0-rc.5。DSH 生態這週很熱（dsh-Go、ds-harness-remote 也在榜上）。",
+      "tags": [
+        "deepseek-harness",
+        "dsh-plugin",
+        "game-generator",
+        "threejs",
+        "agent-tools"
+      ],
+      "url": "https://github.com/ZSeven-W/dsh-game-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/ZSeven-W/dsh-game-studio",
+      "stars": 561,
+      "createdDate": "2026-11-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20261116-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "simplexai-labs/linger",
+      "summary": "完全跑在自己電腦上的 personal agent。自家 MoE 推論引擎 PolyStrata 把最常用的 experts 放 GPU、其餘放 RAM / SSD，README 宣稱 12GB GPU 能跑 125B 模型；Model Autopilot 一個指令偵測硬體、推薦並安裝模型（自家表：RTX 12GB + 32GB RAM 推 Qwen3.8-Flash-Next，約 120 tok/s）。另有每晚整理信件/會議成 wiki 的記憶、會主動提醒的 Another Me。你的 5070 Ti 16GB 正好在它的目標區間，數字都是官方自測。",
+      "tags": [
+        "local-llm",
+        "personal-agent",
+        "moe-offloading",
+        "memory",
+        "proactive-agent"
+      ],
+      "url": "https://github.com/simplexai-labs/linger",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/simplexai-labs/linger",
+      "stars": 340,
+      "createdDate": "2026-11-10",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261116-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "nengong/download-anything",
+      "summary": "給人和 AI agent 用的全能下載＋歸檔工具，CLI 與 Agent Skill 雙入口：丟 App 分享口令或連結，自動剝掉推廣文字、認出 URL / 提取碼 / DOI / ISBN，下載影片、podcast、論文、電子書、網盤檔。主檔之外還會落地 `.srt` 字幕、封面、獨立 `audio.mp3` 音軌、`citation.bib` 和 Markdown metadata，並用 ffprobe 檢查音視訊雙軌與長度。repo 未標 license。",
+      "tags": [
+        "agent-skill",
+        "cli-tool",
+        "downloader",
+        "audio",
+        "obsidian"
+      ],
+      "url": "https://github.com/nengong/download-anything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/nengong/download-anything",
+      "stars": 241,
+      "createdDate": "2026-11-04"
+    },
+    {
+      "id": "20261116-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "paul-nameless/agweb",
+      "summary": "給 coding agent 用的 macOS 瀏覽器（WebKit）：永遠不搶焦點、多個 agent 各有 workspace，⌘D dashboard 同時看所有 agent 的分頁和最後指令。作者 Mac 上 5 個閒置頁 590MB，對比 Playwright Chrome 1.6GB；`fill --secret-cmd` 讓密碼不進 transcript，`video-start` 可錄 MP4 demo。需 macOS 26+，附 Claude Code / Codex skill。Show HN 107 分。",
+      "tags": [
+        "browser-agent",
+        "coding-agent",
+        "macos",
+        "webkit",
+        "agent-skill"
+      ],
+      "url": "https://github.com/paul-nameless/agweb",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50497147",
+      "stars": 220,
+      "createdDate": "2026-11-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20261116-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "fendouai/ViralForge",
+      "summary": "agent-native 爆款短影音工作室：貼連結或本機檔，產出 Viral DNA 報告——拆 hook、逐鏡結構、word anchors、beat grid、字幕風格、情緒曲線；換上自己的產品和腳本，一鍵照同結構重建成可編輯的 VFML 專案，再生 10 個附成本的 A/B 變體。Skill + MCP + CLI 三種入口，v0.1 demo 素材是中文。",
+      "tags": [
+        "agent-skill",
+        "mcp",
+        "short-video",
+        "ffmpeg",
+        "creator-tools"
+      ],
+      "url": "https://github.com/fendouai/ViralForge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/fendouai/ViralForge",
+      "stars": 205,
+      "createdDate": "2026-11-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261116-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "worth-trying",
+      "title": "CrommaAI/crommacode",
+      "summary": "「遊戲化」的 coding agent 桌面 app：在它的 terminal 裡跑你自己的 Claude Code / Codex / Gemini CLI / Cursor CLI / OpenCode，它監看每個 tool call、在旁邊把 session 演成遊戲，一隻不夠還能派一群 worker agents。免費、macOS / Windows / Linux。注意：GitHub repo 只是介紹頁，原始碼在私有 monorepo。",
+      "tags": [
+        "coding-agent",
+        "claude-code",
+        "codex",
+        "gamified-ide",
+        "multi-agent"
+      ],
+      "url": "https://github.com/CrommaAI/crommacode",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/CrommaAI/crommacode",
+      "stars": 53,
+      "createdDate": "2026-11-12",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261116-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "tonhowtf/omniget",
+      "summary": "star-surge 查詢新冒出的老 repo。本機 MCP server，給 coding agent 一整套桌面工具：yt-dlp 支援的網站下載、torrent、媒體轉檔、檔案、聊天記錄與系統清理。一行指令接上 Claude Code / Codex / Cursor / Gemini CLI，敏感動作要你按 Allow。README 範例就是「把這個 playlist 下載成音訊、全部完成再告訴我」。Windows / macOS / Linux。",
+      "tags": [
+        "mcp",
+        "coding-agent",
+        "yt-dlp",
+        "media-conversion",
+        "local"
+      ],
+      "url": "https://github.com/tonhowtf/omniget",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/tonhowtf/omniget",
+      "stars": 14454,
+      "createdDate": "2026-02-11",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261116-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "superplanehq/superplane",
+      "summary": "本週 Go trending +997 星。「one-shot engineering 工廠」：先評估哪些 backlog issue agent 有把握做，再串 coding agent、source control、CI、review 和 approvals，把結果驗過才變成待審 PR，失敗就帶 context 退回給 agent；需要判斷的事留給人。engine 是 Apache 2.0，模型自選，可上雲或 on-prem。",
+      "tags": [
+        "agent-orchestration",
+        "coding-agent",
+        "ci",
+        "pull-request",
+        "self-hosted"
+      ],
+      "url": "https://github.com/superplanehq/superplane",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 10057,
+      "createdDate": "2025-05-07",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261116-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "syydaniel/kaikou",
+      "summary": "「開口」：給 Claude Code / Codex 的聲音克隆配音 skill，管的是錄音到成片整條鏈——先錄 5 秒量底噪、按場景錄參考、用 Qwen3-TTS / VoxCPM1.5 / LongCat-AudioDiT 本機每句生 4 遍，再讓另一個 AI 回聽挑句、改掉一聽就是 AI 的文案，最後變速不變調、逐句響度拉平。目前針對 Apple Silicon（mlx-audio），其他平台看 `doctor.py` 的替代方案。",
+      "tags": [
+        "voice-cloning",
+        "tts",
+        "agent-skill",
+        "claude-code",
+        "audio-post"
+      ],
+      "url": "https://github.com/syydaniel/kaikou",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/syydaniel/kaikou",
+      "stars": 29,
+      "createdDate": "2026-11-11",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261116-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "product-hunt",
+      "title": "Nod by n8n",
+      "summary": "11/11 PH 當日第 2。n8n 的開源 personal agent：在你 Mac / Windows 上開一台私有 VM 和自己的瀏覽器，接 Gmail、Slack、Notion、Drive、Calendar（200+ 連線），沒 API 的網站也能操作。只聽你的指令，另有一道檢查把每個動作和你的原話比對；自家模擬測試 226 種差事、678 次跑完 98%，且從未在未經同意下寄出、付款、預訂、發文或刪除。Apache 2.0、BYO 模型，research preview（電腦睡著時不會跑）。GitHub：n8n-io/nod ⭐1647。",
+      "tags": [
+        "personal-agent",
+        "computer-use",
+        "open-source",
+        "n8n"
+      ],
+      "url": "https://nod.n8n.io/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/n8n-io"
+    },
+    {
+      "id": "20261116-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "product-hunt",
+      "title": "Claude Meetings",
+      "summary": "11/13 PH 當日第 3（Anthropic 11/12 發布）。把 Claude 加進 Google Meet 當看得見的與會者：大家可以出聲或在 chat 問它，它寫筆記和 action items，會中就能做 doc、whiteboard 等 artifacts，受邀的人可以一起即時編輯；會後筆記、逐字稿和產出都在 Claude 的會議頁。beta，限 Team / Enterprise，先支援 Google Meet。",
+      "tags": [
+        "claude",
+        "meetings",
+        "artifacts"
+      ],
+      "url": "https://claude.com/blog/claude-meetings",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/claude"
+    },
+    {
+      "id": "20261116-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "product-hunt",
+      "title": "Scribe v3 by ElevenLabs",
+      "summary": "11/11 PH 當日第 4。ElevenLabs 最新 speech-to-text：官方說 90+ 語言比 Scribe v2 少 27% word errors，最多分 32 位講者，會標笑聲、音樂、情緒，可加最多 1,000 個自訂詞，單檔最長 15 小時；即時版 Scribe v3 Live 延遲 < 150ms。hunter 引用的官方 benchmark：WER 5.5% vs GPT-Transcribe 9.7%。",
+      "tags": [
+        "speech-to-text",
+        "stt",
+        "voice",
+        "diarization"
+      ],
+      "url": "https://elevenlabs.io/blog/scribe-v3",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/elevenlabs"
     }
   ],
-  "lastUpdated": "2026-11-16T03:43:24+08:00",
-  "updatedAt": "2026-11-16T03:43:24+08:00"
+  "lastUpdated": "2026-11-16T04:05:00+08:00",
+  "updatedAt": "2026-11-16T04:05:00+08:00"
 }
