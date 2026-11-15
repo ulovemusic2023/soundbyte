@@ -117886,8 +117886,225 @@
       "url": "https://skillbox.so/",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/skillbox-5"
+    },
+    {
+      "id": "20261116-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Claude Code 推出實驗性 Code Mode：Claude 改寫 JavaScript 一次呼叫多個 tools，平行跑、只回傳需要的輸出",
+      "summary": "11/13 發布的 v2.1.323 加入 Code Mode（預設關閉）：Claude 不再一次要一個 Bash／Read／Edit、讀完結果再決定下一步，而是寫一段 JavaScript 去呼叫 tools，可平行執行、把上一步結果直接餵給下一步，只把需要的部分回給模型讀；官方建議用在跨多檔的重複修改、需要先過濾的搜尋。用 CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 開啟，寫在專案 settings 會被忽略（clone 來的 repo 不能替你打開），組織可用 managed settings 設 0 封鎖。限制不少：只支援終端機互動 session 與 Opus／Sonnet／Haiku 5.5、Fable 5.2，不能走 Bedrock／Foundry／gateway，不支援 -p、Agent SDK、Desktop、cloud sessions，也不能和 agent teams、OpenTelemetry export 同時開。安全面要注意：每個 tool call 仍會經過 deny／ask rules 與 PreToolUse hooks，但 auto mode 的 classifier 只審整段 code，看不到執行時才算出的值（例如從搜尋結果取出的路徑）；v2.1.325 已修掉 worktree 被忽略、resume 後自己開工等早期 bug。",
+      "tags": [
+        "paradigm-shift",
+        "Claude Code",
+        "tool calling",
+        "Code Mode",
+        "agent permissions"
+      ],
+      "url": "https://code.claude.com/docs/en/code-mode",
+      "source": "Claude Code Docs",
+      "sourceUrl": "https://code.claude.com/docs/en/code-mode",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google Antigravity 推出 Dynamic Workflows：agent 先寫一支 Python script 編排一群 subagents，審過才跑",
+      "summary": "Antigravity App v2.32.0（11/13）加入 /run-workflow：主 agent 依內建的 run-workflow skill 寫出 Python script，用 agent(prompt, schema)、parallel()、pipeline() 把工作拆成具名 phases；每個 subagent 在自己的 conversation 裡工作、回傳符合 JSON Schema 的結果，file reads 和 test logs 不會塞進主對話的 context。script 執行前要你核准（核准只涵蓋那一份 script），在背景跑、可存成檔案重複使用；限 Google AI Pro／Ultra，App 與 CLI 都能用。官方文件把它跟 Orchestrator、subagents、/swarm、/boost、/teamwork 並列：要可預期的控制流程（每個檔案一個 reviewer、先寫 failing test 再修）就用 workflow，agent 之間要互相協調才用 /swarm。和上一則 Code Mode 是同一個方向：編排邏輯從 prompt 變成可以 review 的 code。",
+      "tags": [
+        "paradigm-shift",
+        "multi-agent",
+        "agent orchestration",
+        "workflow-as-code",
+        "Antigravity"
+      ],
+      "url": "https://antigravity.google/docs/changelog/",
+      "source": "Google Antigravity Docs",
+      "sourceUrl": "https://antigravity.google/docs/dynamic-workflows/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Guillermo Rauch：agent 以後都這樣 ship code——先寫 feature-gated code，push 時過 verification gates，再由 agent 自己盯 metrics",
+      "summary": "起點是 Marc Lou 的貼文（1,899 讚、約 43 萬次曝光）：他說已經幾個月沒碰 localhost，叫 AI 把新功能做成只有自己在 production 看得到，滿意了再開給使用者，並要 agent 設每小時／每天的提醒去查 logs 和 database 修問題，AGENTS.md 也規定什麼都要測。Rauch 引用後整理成三步（feature-gated code → push 時跑 proof checking、security audit 等 verification gates → agent 監看 metrics），並說用 Vercel CLI 的 vercel flags、vercel metrics、vercel deploy 今天就做得到（1,159 讚、186 則回覆）。同一天他也說自己所有專案都是「最聰明的 model 做 planning＋fast model subagents 執行」；Vercel 的 fx v0.0.17 剛把 subagents 做成一等公民（執行中可以 steer、tool definitions 小了 48%）。",
+      "tags": [
+        "AI agent",
+        "feature flag",
+        "verification gates",
+        "subagents",
+        "prompt-to-prod"
+      ],
+      "url": "https://x.com/marclou/status/2121571094411067537",
+      "source": "X @rauchg",
+      "sourceUrl": "https://x.com/rauchg/status/2121711321347715093",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Private Origins 正式 GA：內部 API、AI agent backend、MCP server 不必開 inbound port，也能套 WAF 和 rate limiting",
+      "summary": "6 月 closed beta 的 Application Services for Private Origins 正式 GA：公開流量可以打到私有網路上的服務，不暴露 IP、不開防火牆 inbound port；proxied DNS record 指向 private IP 會自動偵測，也能用 DNS API 設定 private routing。既有的 WAF、bot management、rate limiting、caching、Workers 都能套上去，TCP／UDP 服務走 Spectrum。需要 Private Origins entitlement、Cloudflare One connectivity 和 Unified Routing（用 Cloudflare Tunnel 則不需要 Unified Routing）。Cloudflare 點名的使用情境就是「本來沒打算面向 Internet 的 internal APIs、AI agent backends、MCP servers」；private-to-private（讓一個私網裡的 agent 存取另一個私網的服務）目標 2027 年初 closed beta，是否另外收費尚未說明。",
+      "tags": [
+        "MCP",
+        "rate limiting",
+        "zero trust",
+        "private networking",
+        "Cloudflare"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/cloudflare-private-origins/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/cloudflare-private-origins/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Kiri：用一個 daemon 取代 Docker Desktop 的 container runtime，官方實測 docker run 22 ms（Docker Desktop 178 ms）",
+      "summary": "Kiri 相容 docker CLI、Compose、buildx 和 Docker Engine API。macOS 上用 Apple Virtualization.framework 開一個 Linux VM（自訂 kernel＋Rust 寫的 init 當 PID 1），host 和 guest 走 vsock，VM 裡由單一 daemon 用 clone3 直接建 namespaces／cgroups，不留 per-container shim；Linux 上直接跑在本機 kernel，Windows 跑在 WSL2。官方數字（同一台 Apple Silicon Mac、限 2 CPU／8 GB）：docker run 22 ms，Docker Desktop 178、Colima 152、OrbStack 279；VM cold boot 112 ms，daemon 約 15 MB。另外有 kiri k8s start（約 20 秒起 k3s）、kiri machine create 開 Linux 機器、kiri share 一鍵給 container 公開網址。目前免費 beta（Mac 版 0.2.1），數字都是官方自測，部分 CPU／記憶體圖表還標著 sample。HN 83 分。",
+      "tags": [
+        "docker",
+        "container runtime",
+        "Rust",
+        "kubernetes",
+        "developer experience"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50504077",
+      "source": "Kiri",
+      "sourceUrl": "https://runkiri.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "〈All AI-generated code should be Open Source〉：HN 725 分、387 則留言，主張 AI 產出的 code 應一律開源或用 CC0 釋出",
+      "summary": "Jakub T. Jankiewicz 提出兩個理由：一、模型拿 GNU 計畫以來的開源 code 和 Stack Overflow（CC 授權、要求 attribution）訓練，再把產出變成閉源，等於 license laundering；二、純 AI 產生的 code 不是人寫的，依 Monkey Selfie 案和美國著作權局的立場不該受著作權保護（英國等地則對 computer-generated works 有有限保護）。所以他主張開發者應主動以開源授權或 CC0 釋出，尤其是那種只寫 prompt、連 review 都沒做的 code。文章很短，熱度主要在留言區的授權與著作權辯論，Lobsters 也有討論串。",
+      "tags": [
+        "vibe coding",
+        "ai coding",
+        "open source licensing",
+        "copyright"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50507303",
+      "source": "Jakub T. Jankiewicz",
+      "sourceUrl": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google Project Zero 改用「Full 90」揭露政策：LLM 讓找漏洞、從 patch 反推 exploit 都變快，2028 年縮到 30 天",
+      "summary": "2021 年起的「90+30」（90 天修＋30 天 patch soak time）作廢，改成通報後固定 X 天就公開：即日起 Full 90，2027/2/2 改 Full 60，2028/1/3 改 Full 30，並取消 grace period、variant policy 等特例（只剩已被在野利用、已被他人公開、廠商要求公開三種例外），「是否修好」也不再是揭露的判斷點。理由是 LLM 讓攻擊者更快找到並利用漏洞，多方撞到同一個 bug 的機率變高，從 patch 反推 exploit 幾乎零時差，soak time 失去意義；Project Zero 在一些過去一年只找到幾個漏洞的目標上，現在一週就找到好幾個。對有自己 patch pipeline 的團隊，重點變成縮短 patch gap。HN 300 分、177 則留言。",
+      "tags": [
+        "security",
+        "vulnerability disclosure",
+        "patch gap",
+        "AI-assisted exploitation"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50496051",
+      "source": "Google Project Zero",
+      "sourceUrl": "https://projectzero.google/2026/11/disclosure-policy.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FAA 全美 ground stop 起因：新裝的 router 每 4–5 秒灌進 1,000 次連線；Gergely：關鍵航空系統竟扛不住 200 QPS",
+      "summary": "FAA 的 Q&A 說明：11/13 約 15:30 ET，FAA FTI 網路每 4–5 秒湧入 1,000 次 connection attempts，legacy TDM 設備因此不穩，飛航通訊和雷達 feed 都受影響；源頭鎖定在 Arkansas El Dorado 的無線電站（L3Harris 正在把銅線換成光纖、剛裝上新 router）和 Texas Amarillo 的雷達站。封鎖這兩處後網路就穩定了，同型 router 約 60 台的 broadcasting 功能全部先關掉；WSJ 報導 router 是 HPE Juniper，22 個高空管制中心有 17 個受影響。根因仍在調查（安裝錯誤或設備瑕疵未定），官方說沒有入侵跡象。Gergely Orosz 評論（537 讚）指出這流量換算只有約 200 QPS；一台邊緣設備就能把事故放大到全國，是 rate limiting 與隔離設計的反面教材。HN 相關討論 94＋81 分。",
+      "tags": [
+        "postmortem",
+        "rate limiting",
+        "backpressure",
+        "SRE",
+        "incident management"
+      ],
+      "url": "https://x.com/GergelyOrosz/status/2121919605191119036",
+      "source": "FAA",
+      "sourceUrl": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Sebastian Raschka〈Understanding Positional Embeddings in Modern LLMs〉：從 absolute embedding 講到 RoPE、partial RoPE、NoPE，附 PyTorch 實作",
+      "summary": "這是為下一篇「2026 LLM 架構趨勢」先寫的基礎篇：用圖解、少量數學和小型 PyTorch 實作把 RoPE 講清楚，再盤點 2026 年 open-weight 模型的選擇。重點：RoPE 仍是主流，他認為會延續到 2027；partial RoPE（例如 MiniMax-M3 只旋轉一半維度）只省 cos／sin table，KV cache 大小不變，他覺得「hardly worth it」；越來越多模型在部分層用 NoPE、跟 RoPE 混搭；Thinky 的 Inkling 則借用 T5 的 learned relative position bias。HN 140 分。",
+      "tags": [
+        "transformer",
+        "attention mechanism",
+        "RoPE",
+        "NoPE",
+        "LLM architecture"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50506376",
+      "source": "Sebastian Raschka (Ahead of AI)",
+      "sourceUrl": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈A Family Tree of Software Job Titles〉：從 1940 年代的「Computer」到 2025 年的「AI Agent / Context Engineer」，104 個職稱的族譜",
+      "summary": "Ian Miell（做過 Head of DevOps）和 Claude 一起用一個 Graphviz .dot 檔加一份 JSON，畫出 7 個家族、104 個職稱的演化圖，可以點選互動。幾個觀察：1947 年 coding 被當成文書工作，後來才變成最難的那部分；prompt engineer 幾乎一出現就被 AI engineer 吸收；當紅的 FDE 其實是 Palantir、甚至 1960 年代 IBM systems engineer 的翻版；SRE／DevOps／platform engineering 的爭論只是一直換名字。結尾拿 1947 年和現在「coding 不重要了」的說法對照。HN 412 分、195 則留言。",
+      "tags": [
+        "platform engineering",
+        "SRE",
+        "career",
+        "AI engineer"
+      ],
+      "url": "https://ianmiell.github.io/sw-job-title-family-tree",
+      "source": "zwischenzugs (Ian Miell)",
+      "sourceUrl": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-15T04:04:19+08:00",
-  "updatedAt": "2026-11-15T04:04:19+08:00"
+  "lastUpdated": "2026-11-16T03:11:56+08:00",
+  "updatedAt": "2026-11-16T03:11:56+08:00"
 }
