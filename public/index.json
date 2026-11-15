@@ -118356,8 +118356,130 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261116-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Patrick Collison：AI 讓人類勞動變多餘之後，還會有下一個 Mozart 和 Dickens 嗎？",
+      "summary": "Collison 引 Adam Smith 與 Montesquieu：市場和商業讓人變好，是因為它給了「自我精進、替別人創造價值」的 incentive gradient。Mozart 和 Dickens 本身都有很強的商業動機，所以真正該問的不是單一個人能不能過「有教養的閒暇生活」（partial equilibrium），而是整個社會的 general equilibrium 會長成什麼樣。他也懷疑「人類偏好人做的作品」能撐住多少領域，並邀請 AI 樂觀派把社會層級的美好版本講清楚。",
+      "tags": [
+        "incentive-gradients",
+        "general-equilibrium",
+        "ai-future",
+        "creator-economy"
+      ],
+      "url": "https://x.com/patrickc/status/2121771165912064379",
+      "source": "Patrick Collison (X)",
+      "sourceUrl": "https://x.com/patrickc/status/2121771165912064379",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Meta Muse 產品負責人 Mona Sarantakos：起步比對手早，卻刻意等了七個月才上線",
+      "summary": "Lenny 新一集：Nat Friedman 一月底先用 OpenClaw，Mona 週末把它裝在 Raspberry Pi、接上 email 和行事曆，週一就整理好孩子整週的學校行程，當下決定投入。團隊再花七個月把它做到「對所有人都安全又簡單」才推出，Lenny 稱它是史上成長最快的 AI 消費產品。這集重點包括推動 AI agent activation 的兩個槓桿、用「agent swarms」取代 dashboard 看大量用戶 insight，以及「taste 現在是 PM 最重要的技能」。（全文需付費，內容取自公開的節目介紹）",
+      "tags": [
+        "ai-agent-activation",
+        "taste",
+        "agent-swarms",
+        "launch-timing"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+      "source": "Lenny's Podcast",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "Lulu Cheng Meservey：只要在 X 打得好，其他溝通能力都在它的下游",
+      "summary": "LinkedIn、媒體關係、產品發表做得好，都不代表你在 X 也行；反過來，在 X 做得好的人通常其他幾項都不差，因為那些全都在 X 的下游。她把 X 稱為 sui generis gladiatorial circus，是溝通能力真正的 proving ground。對經營個人品牌的 solo founder 來說，就是把最難的戰場當作主要訓練場。",
+      "tags": [
+        "distribution",
+        "personal-brand",
+        "downstream-channel"
+      ],
+      "url": "https://x.com/lulumeservey/status/2121959406791270715",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2121959406791270715",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "Paul Graham：年輕創辦人最常犯的錯，是太在意 investor、不夠在意 user",
+      "summary": "PG 說他最常看到的錯誤，是準創辦人太在乎投資人的看法、太不在乎使用者的看法。這些人一輩子被訓練去討好 gatekeeper，但創業正是 gatekeeper 不再重要的地方。框架：把注意力從「誰能批准我」轉到「誰在用我的東西」。",
+      "tags": [
+        "users-over-investors",
+        "gatekeepers",
+        "pmf"
+      ],
+      "url": "https://x.com/paulg/status/2121974695801319443",
+      "source": "Paul Graham (X)",
+      "sourceUrl": "https://x.com/paulg/status/2121974695801319443",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Paul Graham：限制因素不是資金，是 founder ability",
+      "summary": "Starship Flight 15 回收成功後，Matt Stoller 說 Musk 不是天才、只是很會從 Wall Street 拿到資本；PG 回應：限制因素不是投資，而是創辦人的能力（5.8K+ 讚）。",
+      "tags": [
+        "founder-ability",
+        "capital",
+        "spacex"
+      ],
+      "url": "https://x.com/paulg/status/2122033524857589799",
+      "source": "Paul Graham (X)",
+      "sourceUrl": "https://x.com/paulg/status/2122033524857589799",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-16",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Sahil Bloom：tolerance for boredom 才是人生關鍵",
+      "summary": "成功不華麗，而是靠長時間、有紀律的無聊例行公事累積出來的；如果需要不斷的新鮮感，就走不遠。",
+      "tags": [
+        "boredom-tolerance",
+        "discipline",
+        "consistency"
+      ],
+      "url": "https://x.com/SahilBloom/status/2121956257519096260",
+      "source": "Sahil Bloom (X)",
+      "sourceUrl": "https://x.com/SahilBloom/status/2121956257519096260",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-16T03:27:41+08:00",
-  "updatedAt": "2026-11-16T03:27:41+08:00"
+  "lastUpdated": "2026-11-16T03:43:24+08:00",
+  "updatedAt": "2026-11-16T03:43:24+08:00"
 }
