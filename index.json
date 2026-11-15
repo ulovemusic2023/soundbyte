@@ -118103,8 +118103,261 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261116-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "audio.cpp v0.9.5：加入 MuLaCover 翻唱生成、MOSS-SoundEffect v2、ZONOS3-Mini，新增 SYCL 後端",
+      "summary": "純 C++／ggml 的本地音訊推理引擎 11/15 發 v0.9.5：新增 MuLaCover cover-song 生成、MOSS-SoundEffect v2 音效、ZONOS3-Mini TTS、MossFormer2 語音增強／超解析、Kroko XL ASR；Chatterbox voice conversion 會快取 target，OmniVoice 支援原生 batching，另有實驗性 MoE CPU＋GPU hybrid expert 執行與 Intel SYCL 後端（YuE2 也能跑）。r/LocalLLaMA 同時有人示範 WebUI 的即時 avatar 語音對話（SoulX-FlashHead＋LFM3-Audio＋OWSM v4），RTX 5090 上提問到開口約 850ms，影像端作者建議 4090 以上。",
+      "tags": [
+        "audio_music_ai",
+        "tts_speech",
+        "svc_voice",
+        "cover-song",
+        "voice conversion"
+      ],
+      "url": "https://github.com/0xShug0/audio.cpp/releases/tag/v0.9.5",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/0xShug0/audio.cpp/releases/tag/v0.9.5",
+      "price": null,
+      "vram": "TTS／VC／音效模型多可在 16GB 跑；avatar 影像那段作者建議 RTX 4090 以上",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261116-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32020：mtmd 支援 ZONOS3-Mini TTS（預設聲音、預設角色、reference clip voice cloning）",
+      "summary": "ngxson 的 PR 於 11/16 凌晨（台北時間）合併，讓 llama.cpp 的 mtmd 直接跑 Zyphra ZONOS3-Mini（800M MoE、約 100M active 的 TTS）。PR 示範英／法預設聲音、長段落，以及用參考音檔做 voice cloning。PR 特別註明：原廠模型附的是客製 GGML runtime，跟 llama.cpp 不相容，這次是獨立實作。之後不用另外裝 runtime，llama.cpp 本身就能做 TTS。",
+      "tags": [
+        "tts_speech",
+        "voice-cloning",
+        "llm_inference",
+        "mtmd"
+      ],
+      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+      "source": "GitHub (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32020",
+      "price": null,
+      "vram": "800M MoE(約 100M active)，CPU／小顯卡即可",
+      "license": "MIT（llama.cpp）／Apache-2.0（ZONOS3-Mini 權重）"
+    },
+    {
+      "id": "20261116-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Qwen3.8-27B UD-Q3_K_XL「ASCII-Condensed」GGUF：12.5GB，5060 Ti 16GB 跑 75K context 約 60 tok/s",
+      "summary": "把 Unsloth Q3_K_XL 的詞表從 248,320 砍到 141,141（只留 ASCII＋Latin-1／Latin-Extended-A），GGUF 12.5GB，附 ninfer 版與轉換腳本。作者在 5060 Ti 16GB 用 rk8v4 KV 開到 75K context，IFEval 平均約 60 tok/s，分數 84.4% vs 原版 83.9%。注意：中文等詞表外字元會退化成每個 UTF-8 byte 一個 token，用中文會變慢、吃更多 context，對你的中文工作流不一定划算。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "vocab pruning",
+        "16GB"
+      ],
+      "url": "https://huggingface.co/fakezeta/Qwen3.8-27B-UD-Q3_K_XL-Condensed-P2",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xwx74l/ninfer_and_gguf_of_qwen3827budq3_k_xl/",
+      "price": null,
+      "vram": "GGUF 12.5GB＋mmproj 0.9GB，16GB 卡可跑 75K context(作者實測 5060 Ti 16GB)",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261116-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "cudamemcpy-tuner：調 pageable cudaMemcpy，3090 MoE CPU offload 的 prefill 從 345 拉到 466 tok/s",
+      "summary": "Henry Zhu 的新工具：不改程式，`cmt tune -- <你的指令>` 就會幫 pageable 的 CPU→GPU 複製調 buffer 數和 thread 數。作者在 RTX 3090＋7800X3D 用 llama-bench 跑 Qwen3.6-35B-A3B Q8_0（experts 放 CPU），prefill 從 345 提升到 466 tok/s；B300 上 pageable 複製最高約 5 倍。對 16GB 卡把 MoE experts 丟 RAM 的跑法最有感。",
+      "tags": [
+        "llm_inference",
+        "infra_runtime",
+        "moe offload",
+        "cuda"
+      ],
+      "url": "https://github.com/Maknee/cudamemcpy-tuner",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1owx/moe_offload_on_a_3090_prefill_345_466_ts_by/",
+      "price": null,
+      "vram": "工具本身不吃 VRAM；主要幫 MoE offload／載入模型",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261116-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #26348：x86 AVX-VNNI／AVX-512 VNNI 的 Q2_0 dot product，CPU 跑 MoE experts 更快",
+      "summary": "PR 11/15 合併（b12418），新增 VNNI 版 Q2_0×Q8_0 kernel。作者在 EPYC 9645 八核實測，對 master 的 prefill 約 1.3 倍、decode 1.09–1.22 倍（標題寫的 3x 是對舊的通用路徑）。社群用 66GB 的 Qwen3.8-Flash-Next Q2_0 搭 `--cpu-moe` 測，decode 從 AVX2 的 14.0–18.7 提升到 15.5–21.4 tok/s。你的 Ryzen 9 9900X（Zen 5）支援 AVX-512 VNNI，16GB 卡把 experts 丟 CPU 時可以直接受惠。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "cpu offload",
+        "Q2_0"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/26348",
+      "source": "GitHub (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/26348",
+      "price": null,
+      "vram": "Q2_0 MoE 搭 --cpu-moe：routed experts 放 64GB RAM，其餘放 GPU",
+      "license": "MIT"
+    },
+    {
+      "id": "20261116-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Basalt v0.4.0：Blackwell 專用推理引擎加入第一個 dense 模型 Qwen3.8-27B，RTX 5090 結構化輸出 776 tok/s",
+      "summary": "專為 NVIDIA Blackwell 寫的本地推理引擎，11/15（台北時間）發 v0.4.0：Qwen3.8-27B 用 QUASAR 的 NVFP4 checkpoint＋DFlash 2 block drafter，最長 262K context、支援 tools／thinking／圖片／影片。RTX 5090（400W）實測：4k prefill 12,735 tok/s，decode 一般 90、drafted 對話 262、structured output 776 tok/s；top-1 跟 BF16 一致率 92.8%。不過 27B 權重放上卡就要 16.0 GiB，5070 Ti 16GB 放不下。",
+      "tags": [
+        "llm_inference",
+        "NVFP4",
+        "speculative decoding",
+        "Blackwell"
+      ],
+      "url": "https://github.com/jesdga95/basalt/releases/tag/v0.4.0",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1cu9/basalt_040_more_models_still_as_fast_qwen_27b_up/",
+      "price": null,
+      "vram": "權重放卡上 16.0 GiB＋KV cache，要 24GB 以上的卡(作者用 32GB 的 5090)；16GB 卡放不下",
+      "license": "MIT（引擎）／Apache-2.0（權重）"
+    },
+    {
+      "id": "20261116-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LongCat-Video-Avatar 1.6：美團開源 audio-driven 數位人影片，10 分鐘以上長片仍穩定",
+      "summary": "接續 1.5 的 audio-driven 人像影片模型：嘴型更自然、口型對音更準、臉部和身體動作更協調，長片自回歸續寫的誤差累積變小，可以生成超過 10 分鐘的影片，整條推理流程也做了加速。HF 同時放 BF16 和 int8 權重，repo 內附 whisper-large-v3 做音訊編碼。適合拿來做歌曲／配音的 talking-head 影片。",
+      "tags": [
+        "image_gen",
+        "audio-driven video",
+        "avatar",
+        "lip sync"
+      ],
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xwvrri/meituanlongcatlongcatvideoavatar16_hugging_face/",
+      "price": null,
+      "vram": "BF16 主模型約 31.7GB；int8 版約 15.9GB，16GB 卡還要搭 offload",
+      "license": "MIT"
+    },
+    {
+      "id": "20261116-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Show HN：DeepSeek V3 架構只用 190 行純 JAX 寫完，MacBook Air 2.6 小時訓完（HN 265 分）",
+      "summary": "把 DeepSeek-V3 論文裡的 MLA（快取從每 token 480 個數字降到 144）、decoupled RoPE、DeepSeekMoE（1 shared＋16 routed、top-4）、aux-loss-free balancing、MTP 全部用 190 行純 JAX 實作，不用 Flax／PyTorch。36.2M 參數（每 token 用 13.6M），在 MacBook Air M5 24GB 上約 2.6 小時訓練約 98M tokens。作者說明這只是架構示範，不是好用的模型，但很適合拿來讀懂 V3／V4 系列的設計。",
+      "tags": [
+        "llm_training",
+        "MLA",
+        "MoE",
+        "JAX"
+      ],
+      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50497589",
+      "price": null,
+      "vram": "36.2M 參數，筆電即可訓練",
+      "license": "MIT"
+    },
+    {
+      "id": "20261116-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈No Second Run〉：SII／GAIR 把 recursive self-improvement 用到整個 pre-training，新團隊三個月從零訓出 801-30B-A3B-Base",
+      "summary": "論文（arXiv 2611.10719）宣稱是第一個把 RSI 用在完整 frontier pre-training 的公開紀錄：一次跑不起第二遍，所以拆成 infra debugging、data debugging 等可以閉環的小迴圈。成果是 30B-A3B MoE、11.8T tokens，宣稱贏 Qwen3-30B-A3B 和 Nemotron-3.5-Lightning-30B-A3B，只輸更大的 Qwen3.5-35B-A3B；只做 6.33B tokens SFT（沒 RL）的 agentic 平均就最高。目前公開了報告、repo 和 tiny SFT dataset，base 權重社群貼文寫 coming soon。",
+      "tags": [
+        "llm_training",
+        "MoE",
+        "pre-training",
+        "RSI"
+      ],
+      "url": "https://github.com/GAIR-NLP/801-30B",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xwt3ri/paper_no_second_run_does_rsi_stop_at_frontier/",
+      "price": null,
+      "vram": "30B-A3B MoE：Q4 約 17–18GB 級，16GB 卡要 experts offload(權重尚未釋出)",
+      "license": "Apache-2.0（repo）"
+    },
+    {
+      "id": "20261116-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "EUROPA：歐盟開源 frontier 模型在 JUPITER 驗證 951.9B MoE 設定，每張 GPU 吞吐從 90 拉到約 1,300 tok/s",
+      "summary": "歐盟委員會支持的開源 frontier 模型 EUROPA（Domyn 領軍，Fraunhofer IAIS／IIS 參與）在 PyTorch 官方 blog 公開訓練設定：951.9B 總參數、32.8B active、384 experts top-8，每個 DP replica 用 96 節點 384 張 GH200。靠 TorchTitan 調整（activation checkpoint 放到 Grace CPU 記憶體、Muon 等）把吞吐從 90 拉到約 1,300 tok/s/GPU，估計完整 pre-train 約四個月。目前只是測試設定，還沒正式訓練，承諾會開放權重和訓練配方、支援 24 種歐盟語言。",
+      "tags": [
+        "llm_training",
+        "MoE",
+        "TorchTitan",
+        "sovereign AI"
+      ],
+      "url": "https://pytorch.org/blog/training-a-1t-parameter-moe-on-eu-public-infrastructure-with-pytorch-and-torchtitan/",
+      "source": "PyTorch Blog",
+      "sourceUrl": "https://pytorch.org/blog/training-a-1t-parameter-moe-on-eu-public-infrastructure-with-pytorch-and-torchtitan/",
+      "price": null,
+      "vram": "約 1T MoE，遠超本地硬體",
+      "license": "規劃開放權重（授權未公布）"
+    },
+    {
+      "id": "20261116-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "DRAM 減產共謀集體訴訟駁回不成：法官認定 Samsung／SK Hynix／Micron 涉嫌壓 DDR5 產能轉 HBM（HN 427 分）",
+      "summary": "美國加州北區聯邦法官 Noël Wise 11/14 全數駁回三大廠的聯合 motion to dismiss，認為原告已「合理主張」三家共謀砍 DDR5 等一般 DRAM 供給、把產能轉去 HBM。採信的跡象包括長期鎖定 HBM、拒簽一般 DRAM 長約、Micron 收掉 Crucial、延後擴廠等，也特別說明這案跟 2022 年被駁回的 DRAM II 不同。指控還沒被證實，被告要在 12/7 前答辯。記憶體價格直接影響本地 AI 主機的組裝成本。",
+      "tags": [
+        "infra_runtime",
+        "DRAM",
+        "HBM",
+        "memory pricing"
+      ],
+      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "source": "LitNews (via Hacker News)",
+      "sourceUrl": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261116-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-16",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "傳美國商務部即將定案：限制中國 AI 公司在海外租用 Blackwell 級 GPU，中國業者搶先預訂海外算力",
+      "summary": "根據 The Information 等報導（商務部尚未公告），新規則要求新加坡、馬來西亞、泰國、印尼、巴西、挪威、南非七國的雲端業者，收 Blackwell 級以上晶片前先取得美國許可並申報使用者；美國業者營運、而且擋掉中國遠端存取的機房可以豁免。Reuters 報導中國 AI 公司已在搶訂海外 NVIDIA 算力。眾議院 1 月以 369–22 通過 Remote Access Security Act，參議院還沒表決。r/LocalLLaMA 擔心這會影響中國開源模型的後續供給。",
+      "tags": [
+        "infra_runtime",
+        "export control",
+        "GPU cloud",
+        "RASA"
+      ],
+      "url": "https://qz.com/chinese-ai-firms-overseas-nvidia-capacity-crackdown-111226",
+      "source": "Tech Times",
+      "sourceUrl": "https://www.techtimes.com/articles/330620/20261113/chinese-firms-rush-reserve-nvidia-chip-capacity-reported-us-rule-requires-local-host-licenses.htm",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-16T03:11:56+08:00",
-  "updatedAt": "2026-11-16T03:11:56+08:00"
+  "lastUpdated": "2026-11-16T03:27:41+08:00",
+  "updatedAt": "2026-11-16T03:27:41+08:00"
 }
