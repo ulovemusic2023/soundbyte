@@ -119256,8 +119256,175 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261117-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Claire Vo：solo founder 對抗 token fraud——「If you sell AI, you sell compute」",
+      "summary": "ChatPRD 的 bootstrapped solo founder Claire Vo 一年內被 token fraud 吃掉數萬美元、也吃掉幾乎全部工程精力：有人刷 free trial、轉賣 promo code、用 relay 包裝她的產品，甚至裝 custom MCP 把它當 24/7 compute worker。她整理出六種攻擊模式、四類 abuser，以及業務端與技術端的防線（含用 AI 即時分類詐欺），最後決定永久關掉 free trial。核心框架：賣 AI 產品等於在賣算力，freemium 的「邊際成本≈0」假設已經不成立。",
+      "tags": [
+        "token-fraud",
+        "pricing",
+        "freemium",
+        "solo-founder",
+        "ai-saas"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo",
+      "source": "Lenny's Newsletter / How I AI (Claire Vo)",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "James Currier（NFX）：唯一重要的指標是 SPEED——先重設你的 speed bar",
+      "summary": "Shaan Puri 整理 NFX 的 James Currier 在 Stanford 的創業課：NFX 投了 $1.5B，最好的成功 proxy 是 founder 做決策、從決策學習、再迭代的速度。在學校和大公司被訓練出來的「快」其實很慢，所以要靠身邊更快的人重設標準（例：3 天募完一輪、面試就帶 offer；Hot or Not 創辦人把公司取名 8 Days, Inc.）。拖慢你的通常是 ego 與怕犯錯——先「被市場打破」，才真正開始移動。",
+      "tags": [
+        "speed",
+        "decision-making",
+        "startup-early-stage",
+        "ego"
+      ],
+      "url": "https://x.com/ShaanVP/status/2122377704683311195",
+      "source": "Shaan Puri (X) / My First Million",
+      "sourceUrl": "https://x.com/ShaanVP/status/2122377704683311195",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Dharmesh Shah：HubSpot Refounding——mission 刪掉兩個字，因為 words matter",
+      "summary": "HubSpot 共同創辦人 Dharmesh Shah 公開記錄「HubSpot Refounding」：週末和共同創辦人 Brian Halligan 等人 email 往來不斷，讓 vision 更清楚更簡單。mission 保留但從「Help millions of organizations grow better」改成「Help millions grow better」——因為要服務的很多人根本不是完整組織，而「better」在 v1 指 inbound marketing，現在指 AI。他的結論：30 年創業學到 words matter，刪字也很重要——每個字都要 load-bearing。",
+      "tags": [
+        "refounding",
+        "founder-mode",
+        "mission",
+        "ai-first",
+        "clarity"
+      ],
+      "url": "https://x.com/dharmesh/status/2122124802907357580",
+      "source": "Dharmesh Shah (X)",
+      "sourceUrl": "https://x.com/dharmesh/status/2122124802907357580",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Dan Koe：不知道該學什麼，就學怎麼學、怎麼寫、怎麼說",
+      "summary": "Dan Koe 的 meta-skill 觀點：學習、寫作、表達會外溢到你之後學的每一項技能，是一人事業最高槓桿的底層能力。",
+      "tags": [
+        "meta-skills",
+        "writing",
+        "creator-leverage"
+      ],
+      "url": "https://x.com/thedankoe/status/2122374187935523045",
+      "source": "Dan Koe (X)",
+      "sourceUrl": "https://x.com/thedankoe/status/2122374187935523045",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Steve Blank：visionary CEO 離開後，execution CEO 常會啟動「creative death spiral」",
+      "summary": "Jensen Huang 辭任後，Steve Blank 指出 Jensen 把 Nvidia 重新發明了三次（CUDA、deep learning、Mellanox 走向整櫃系統），每次都是 business model 轉換，不只是產品轉換。visionary CEO 會雇用 execution VP；接班的 execution CEO 追求穩定與流程，創意人才開始流失、更多流程型主管被拉上來，公司從「改變世界的使命」變成「另一份工作」（Ballmer、Tim Cook 為例，Nadella 和 Andy Jassy 是反例）。Jensen 有約 60 個直屬、不相信 succession planning，下一任第一步勢必加管理層——而在快速變動的市場，越緊抓現有產品／市場越容易被顛覆。",
+      "tags": [
+        "visionary-vs-execution-ceo",
+        "succession",
+        "innovation",
+        "business-model"
+      ],
+      "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+      "source": "Steve Blank",
+      "sourceUrl": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Ben Thompson：Nvidia 的三條 moat，哪一條綁在 Jensen 這個人身上？",
+      "summary": "Stratechery〈Obituaries〉把 Jensen 下台寫成一則「被自己成功反噬」的故事：Nvidia 被視為國防承包商，Jensen 卻沒調整。他拆解三條 moat：CUDA 的軟體 moat 會被「LLM 很會寫軟體」侵蝕；networking/systems moat 較耐久；最脆弱的是 supply chain——Jensen 自稱和 TSMC 合作三十年沒簽過合約，靠的是個人 handshake 與信任，人走了這份信任未必延續。可遷移的 framework：盤點你的護城河中，有多少其實是 key-person dependency。",
+      "tags": [
+        "moat",
+        "key-person-risk",
+        "platform",
+        "supply-chain"
+      ],
+      "url": "https://stratechery.com/2026/obituaries/",
+      "source": "Stratechery (Ben Thompson)",
+      "sourceUrl": "https://stratechery.com/2026/obituaries/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Lulu Cheng Meservey：想讓 Nvidia 董事會請回 Jensen？先搞懂對方的 incentives",
+      "summary": "面對「請回 Jensen」的連署（Tobi Lütke 也公開轉發表示「Signed」），Lulu 提醒談判第一步是理解對方的誘因與損失：董事持有大量 NVDA 股票、怕股價下跌；若重新聘回 Jensen 後又爆出新問題，可能被告 breach of duty；許多董事把董事席位當退休後的收入與名望，不想冒險。她也指出上次選舉 Jensen 得票 99%、新任董事長 Harvey Jones 91%——想推動決策，先從對方的 downside 開始想。",
+      "tags": [
+        "negotiation",
+        "incentives",
+        "board-governance"
+      ],
+      "url": "https://x.com/lulumeservey/status/2122395810813894730",
+      "source": "Lulu Cheng Meservey (X)",
+      "sourceUrl": "https://x.com/lulumeservey/status/2122395810813894730",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "levelsio：post-AGI 世界裡一切都變成 play，最擅長的可能是歐洲人",
+      "summary": "levelsio 半開玩笑：美國人因為執著工作而富有，但若 AGI 讓工作消失，懂得閒逛、泡咖啡館、慢慢吃午餐的歐洲人反而最有準備（16 萬+ 曝光、2.4K likes）。",
+      "tags": [
+        "post-agi",
+        "future-of-work",
+        "leisure"
+      ],
+      "url": "https://x.com/levelsio/status/2122301324129661310",
+      "source": "Pieter Levels (X)",
+      "sourceUrl": "https://x.com/levelsio/status/2122301324129661310",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-16T04:05:00+08:00",
-  "updatedAt": "2026-11-16T04:05:00+08:00"
+  "lastUpdated": "2026-11-17T03:45:00+08:00",
+  "updatedAt": "2026-11-17T03:45:00+08:00"
 }
