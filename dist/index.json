@@ -119423,8 +119423,176 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261117-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "Suno Bridge 登場：把 Suno 帶進 DAW，首發支援 Ableton Live 12（Mac）",
+      "summary": "Suno 週五發表獨立 app「Suno Bridge」，要把 Suno 的生成能力帶進音樂製作軟體。目前僅支援 Mac 版 Ableton Live 12，且需訂閱 US$30／月的 Premier 方案。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "ableton",
+        "daw"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/16/suno-bridge-takes-ai-music-to-daws-starting-with-ableton-live/"
+    },
+    {
+      "id": "20261117-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "Yamaha VOCALOID7 發表：第二代 VOCALOID:AI 引擎、與 Cubase 整合更深",
+      "summary": "VOCALOID7 採用第二代 AI 合成引擎，新增 ATTACK（咬字／發音）與 VOICE TYPE（單一 voicebank 內切換音色）控制，並可在 Cubase Key Editor 直接輸入音符與歌詞。Editor 售價 US$129，同時推出 5 款新 voicebank。",
+      "priority": "high",
+      "tags": [
+        "voice synthesis",
+        "music ai",
+        "cubase",
+        "daw"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/14/yamaha-updates-vocaloid-with-more-expressive-ai-singing-five-new-voicebanks/"
+    },
+    {
+      "id": "20261117-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "Difro 2.5：AI MIDI／旋律產生器新增 VST3／AU，可把音訊 loop 轉成 MIDI",
+      "summary": "Initial Audio 更新 AI 驅動的 Difro 旋律產生器：拖入音訊 loop 即可轉成 piano roll 的 MIDI，並首度提供 VST3 與 AU plugin 格式，可直接在 DAW 內執行。",
+      "priority": "medium",
+      "tags": [
+        "midi",
+        "music ai",
+        "vst3",
+        "plugin"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/initial-audio-updates-difro-melody-generator-to-v2-5-incl-vst3-au/"
+    },
+    {
+      "id": "20261117-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "VIPA：用圖片（Moodscapes）建議和弦的 MIDI chord generator",
+      "summary": "Vocal Pockets 推出 macOS／Windows 的 VIPA：選一張 Moodscape 圖片按 Generate，plugin 會依照圖片內容在 16 個 pad 上填入和弦，作為下一首曲子的起點。",
+      "priority": "medium",
+      "tags": [
+        "midi",
+        "chord generator",
+        "plugin"
+      ],
+      "source": "DAWCrash",
+      "sourceUrl": "https://www.dawcrash.com/2026/11/16/vocal-pockets-releases-vipa-a-midi-chord-generator-that-uses-images/"
+    },
+    {
+      "id": "20261117-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "RHETON Free 與 DBot：兩款免費 MIDI plugin，把和弦變成演奏、替 MIDI 加入變化",
+      "summary": "Dystopian Waves 釋出免費的 RHETON Free（Generative Performance Engine 的免費版，可把持續和弦轉成吉他 strum、fingerpicking 等演奏）與 DBot MIDI Humanizer（為程式化音軌加入變化）。",
+      "priority": "medium",
+      "tags": [
+        "midi",
+        "free plugin",
+        "humanizer",
+        "plugin"
+      ],
+      "source": "DAWCrash",
+      "sourceUrl": "https://www.dawcrash.com/2026/11/16/dystopian-waves-releases-rheton-free-and-dbot-two-free-midi-plugins/"
+    },
+    {
+      "id": "20261117-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "Vitaleon：免費 Vital wavetable synth 的 fork，登上 Akai MPC",
+      "summary": "Drey Andersson 釋出 Vitaleon，是免費 wavetable synth Vital 的 fork，可在 Akai MPC 上使用，為 MPC 帶來 Serum 之外的免費替代選擇。",
+      "priority": "medium",
+      "tags": [
+        "mpc plugin",
+        "wavetable",
+        "synth",
+        "free plugin"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/drey-andersson-vitaleon-brings-the-free-vital-wavetable-synth-to-the-akai-mpc.html"
+    },
+    {
+      "id": "20261117-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "arXiv：CoTTAGE，可解釋的 text-to-audio 生成評審模型",
+      "summary": "CoTTAGE 採「先推理再給分」流程，針對文字相關度（REL）與音質（OVL）評分，並先產生以音訊為依據的理由。以逾 10K 筆人類 OVL 標註做 SFT 再用 RL 精修，在六個 benchmark 上與人類判斷相關性達 SOTA。",
+      "priority": "medium",
+      "tags": [
+        "text to audio",
+        "audio generation",
+        "evaluation",
+        "arxiv"
+      ],
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.17644"
+    },
+    {
+      "id": "20261117-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "UMG v. Suno II：UMG 與 Sony 反對 Suno 全面暫停，主張「部分暫停」",
+      "summary": "Suno 要求在 UMG I 的 fair use 問題判決前凍結第二案；UMG 與 Sony 回應可暫停針對逾 60,000 首錄音的逐作品 discovery，但不同意整案凍結（可能拖到 2028），並希望 Suno I 的 discovery 可用於本案。Warner 已與 Suno 和解授權。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "copyright",
+        "lawsuit"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/16/universal-music-suno-lawsuit-ii-discovery-dispute/"
+    },
+    {
+      "id": "20261117-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "Elvis Presley Enterprises 修正對 Suno 的起訴書：ELVIS Act 與近 900 件作品",
+      "summary": "原告（含 Authentic Brands Group、Raleigh Music Publishing）於 11/6 原訴後提交修正版，仍主張 Suno 違反田納西 ELVIS Act 與 NIL 權利，並指控侵權近 900 件作品，另列出 76 筆與未列入作品相關的輸出作為佐證。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "music ai",
+        "copyright",
+        "elvis act"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/16/elvis-presley-enterprises-amended-suno-lawsuit/"
+    },
+    {
+      "id": "20261117-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "title": "Variety 直擊首屆 AI Music Awards：AI 藝人試圖擺脫法律陰影、爭取類型內的話語權",
+      "summary": "Variety 報導 11/14 在洛杉磯 Mayan Theater 舉行、由 Sonic Intelligence Academy（SIQA）主辦的首屆 AI Music Awards，形容現場混亂，反映 AI 藝人想走出法律威脅、在各類型中建立相關性。",
+      "priority": "medium",
+      "tags": [
+        "music ai",
+        "ai artists",
+        "industry trends"
+      ],
+      "source": "Variety（Hacker News）",
+      "sourceUrl": "https://variety.com/2026/music/features/inside-first-ai-music-awards-sonic-intelligence-academy-1236947847/"
     }
   ],
-  "lastUpdated": "2026-11-17T03:45:00+08:00",
-  "updatedAt": "2026-11-17T03:45:00+08:00"
+  "lastUpdated": "2026-11-17T04:10:00+08:00",
+  "updatedAt": "2026-11-17T04:10:00+08:00"
 }
