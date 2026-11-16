@@ -119024,6 +119024,238 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261117-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32369：mtmd 支援 YuE2-3B，llama-tts／llama-server 直接從歌詞生成整首歌",
+      "summary": "ngxson 的 PR 在 11/17 凌晨 03:22（台北時間）合併：m-a-p 的 YuE2-3B 歌曲生成（人聲＋伴奏，48kHz 立體聲）現在可以直接用 llama-tts 和 llama-server 跑。輸入是 [Tags] 風格＋[Lyrics] 歌詞，`--tts-voice` 選 full（含和弦的 ABC 譜）／melody／off；把 ABC 譜接在 prompt 後面就是 cover 模式，伺服器端也能用 `cfg_scale`、`flow_steps` 調整（16 步 NAR＋VAE 約快 35%），streaming 時每 30 秒吐一段音訊。合併前社群修了 `-np 2` 多首同時生成會互相污染的 bug，VAE 也快了 25%。",
+      "tags": [
+        "audio_music_ai",
+        "music generation",
+        "llama-tts",
+        "cover-song",
+        "YuE2"
+      ],
+      "url": "https://huggingface.co/m-a-p/YuE2-3B",
+      "source": "GitHub (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32369",
+      "price": null,
+      "vram": "官方 PyTorch 版在 4090 峰值約 11.2 GiB（最大 context 14.1 GiB），官方仍建議 24GB 卡＋24GB RAM；llama.cpp 版用量尚未公布",
+      "license": "MIT（llama.cpp）／CC-BY-NC-4.0（YuE2 權重，非商用）"
+    },
+    {
+      "id": "20261117-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "tandem.cpp v0.3.0：RTX 5070 Ti 16GB＋64GB RAM 實測，prompt 處理比 llama.cpp 快 2–6 倍",
+      "summary": "專門加速「模型比 VRAM＋RAM 還大」的 llama.cpp patch，11/16 打了第一個正式 tag v0.3.0。開 expert cache 時 prompt 改用 4096-token batch，只在長 prompt 期間暫借 VRAM。作者的測試機剛好是 RTX 5070 Ti 16GB＋64GB RAM：Qwen3.8 IQ3_S 5.5k tokens 的首字時間從 llama.cpp 28.9 秒降到 4.1–7.0 秒，decode 27 → 110 tok/s；DeepSeek-V4.1 IQ2_XS（約 RAM 的兩倍大，要讀 SSD）decode 4.8 → 16 tok/s。README 另列 5070 Ti＋32GB RAM 跑 Qwen3.8-Flash-Next 從 14.9 提升到 34.3 tok/s。",
+      "tags": [
+        "llm_inference",
+        "moe offload",
+        "expert cache",
+        "16GB"
+      ],
+      "url": "https://github.com/ewhacc/tandem.cpp",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xxo0f5/tandemcpp_v030_prefill_speed_improved_project/",
+      "price": null,
+      "vram": "就是你的配置：5070 Ti 16GB＋64GB RAM，IQ2／IQ3 MoE 的 experts 放 RAM／SSD",
+      "license": "MIT"
+    },
+    {
+      "id": "20261117-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32330／#32329：Fish Audio S2 Pro TTS（含 voice cloning）與 Higgs v3 STT、VibeVoice-ASR",
+      "summary": "ngxson 連兩個音訊 PR：#32330（11/17 00:32 台北時間合併）讓 Fish Audio S2 Pro 進 llama-tts 和 server（`/tts`、`/v1/audio/speech`、streaming、`-np 2`），架構是 4B Qwen3 backbone＋4 層 fast AR＋44.1kHz codec，可以拿參考音檔做 voice cloning；#32329（11/16 04:25 合併）加入 Boson Higgs Audio v3 STT 和 Microsoft VibeVoice-ASR。llama.cpp 這週已經把 TTS、ASR、歌曲生成都收進同一套 runtime。",
+      "tags": [
+        "tts_speech",
+        "voice-cloning",
+        "asr",
+        "llama-tts"
+      ],
+      "url": "https://huggingface.co/fishaudio/s2-pro",
+      "source": "GitHub (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32330",
+      "price": null,
+      "vram": "S2 Pro 約 4.6B 參數，官方文件示範 q8_0 GGUF；Higgs v3 STT 2.7B；VibeVoice-ASR 8.3B（BF16 約 17GB，16GB 卡要量化）",
+      "license": "MIT（llama.cpp）／Fish Audio Research License（S2 Pro，商用另談）／Apache-2.0（Higgs v3 STT）／MIT（VibeVoice-ASR）"
+    },
+    {
+      "id": "20261117-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ignis 0.10.0：Qwen3.8-27B coding agent 推理伺服器支援 16GB 卡，262K context＋DFlash2",
+      "summary": "給 coding agent 用的單卡 Qwen3.8 推理伺服器，設計成跟桌面共用同一張卡：啟動時看剩多少 VRAM 決定 context，閒置 5 分鐘自動卸載，vision tower 放系統 RAM，主 agent 和 subagent 同卡並行，重複的 system prompt／repo context 直接接續快取。0.10.0 起支援 RTX 30／40，16GB profile（`rtx-16gb`，舊名 `rtx50-16gb`）跑 27B 的 3-bit trellis quant（下載 13.4GB）＋DFlash2，2 條 lane、262,144 context。作者在 5090 上 NVFP4 單流約 370 tok/s；30／40 系列速度還沒公布。",
+      "tags": [
+        "llm_inference",
+        "coding agent",
+        "speculative decoding",
+        "16GB"
+      ],
+      "url": "https://github.com/gpillon/ignis/releases/tag/v0.10.0",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xxdn31/my_ignis_server_qwen3827b_262k_context_now_runs/",
+      "price": null,
+      "vram": "16GB profile：27B 3-bit trellis（13.4GB）＋262K context；NVFP4 版要 Blackwell（5070 Ti 是 Blackwell，但 16GB 是否放得下 NVFP4 27B 未說明）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261117-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BigMoeOnEdge：任何 MoE GGUF 不必重新打包，8–16GB 卡自動調配，作者稱勝過 Strata 和 colibri",
+      "summary": "直接吃 llama.cpp 能載入的任何 MoE GGUF（不分 quant、不用轉格式），`--auto` 自己量測機器決定 experts 放哪，輸出跟 llama.cpp 一致。作者實測 Qwen3.6-35B：8GB 卡約 35 tok/s（colibri 約 23），12GB 卡約 45（Strata 約 30）；但在兩張 5060 Ti 跑 Qwen3.8-Flash-Next 時 Strata 仍快 1.3 倍。README 表格：16GB NVIDIA＋32GB RAM 跑 66GB 的 Qwen3.8-Flash-Next 約 19–21 tok/s。11/16 剛發 v0.43.2。",
+      "tags": [
+        "llm_inference",
+        "moe offload",
+        "gguf",
+        "16GB"
+      ],
+      "url": "https://github.com/Helldez/BigMoeOnEdge",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xx5fng/bigmoeonedge_outperforms_strata_and_colibri_on/",
+      "price": null,
+      "vram": "16GB 卡＋32GB RAM 可跑 66GB 的 125B MoE（experts 從 flash 串流＋GPU cache）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261117-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp page-sparse decode fork：128K context 每步只讀約 21% KV cache，Qwen3-30B-A3B 在 5090 快 1.72 倍",
+      "summary": "不用重新訓練，把 KV cache 切成 64-token page，每個 KV head 只讀第一頁、最新的 tokens 和最可能有用的 pages（選頁依 Quest）。128K 時：RTX 5090 跑 Qwen3-30B-A3B Q4_K_M 從 46.1 → 79.2 tok/s，RULER 只掉 1.0 分；3090 跑 Llama-3.1-8B 1.64 倍。限制也寫得很清楚：prefill 不變，3B 模型在 multi-needle 任務不及格，只適合長 context 的 decode。目前是 fork，還沒進主線。",
+      "tags": [
+        "llm_inference",
+        "kv cache",
+        "sparse attention",
+        "long context"
+      ],
+      "url": "https://github.com/topppg/sparse-decode-bench",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xxqdil/trainingfree_pagesparse_decode_in_llamacpp/",
+      "price": null,
+      "vram": "作者在 3090 24GB 跑 8B 模型 128K context；16GB 卡跑 8B Q8 長 context 要看 KV 用量",
+      "license": "MIT（llama.cpp fork）／CC-BY-4.0（benchmark repo）"
+    },
+    {
+      "id": "20261117-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "inside-llm：瀏覽器裡逐 token 比較兩個 GGUF quant，看它們從哪裡開始分歧",
+      "summary": "用 llama.cpp 同時載入兩個 GGUF（例如同模型的 Q4 和 Q8），逐 token 顯示機率、標出兩邊選得不一樣的地方，列出 JS divergence、雙向 KL、entropy；還能一步步看 sampler chain（top-k／top-p／min-p／grammar）砍掉了哪些候選，點任一候選就從那裡分支繼續生成。附 logit lens，模型挑選時會估算兩個一起放不放得進 VRAM。Linux／Windows 打包好，支援 CUDA 和 Vulkan，只聽 127.0.0.1。選 16GB 卡要用哪個 quant 時很好用。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "interpretability"
+      ],
+      "url": "https://github.com/manuelgscom/inside-llm",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xx7qbf/i_have_created_a_tool_to_observe_what_happens/",
+      "price": null,
+      "vram": "同時載入兩個 quant，會自動估算是否放得進 VRAM",
+      "license": "MIT"
+    },
+    {
+      "id": "20261117-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Qwen4-Max 發表但不開權重；官方說較小的 Qwen4 模型會開放權重（HN 830 分）",
+      "summary": "Alibaba 11/16 發表 Qwen4-Max：2.4T 總參數、71B active 的新 MoE 架構，原生 vision、1M context，API 每百萬 input／output tokens $1.5／$4.5，只走 QwenCloud API。The New Stack 指出這跟 Qwen3.8-Max 有釋出權重不同，這次是收回去了。對本地玩家的重點在官方那句「較小的 Qwen4 模型會開放權重」，但尺寸、授權和日期都還沒公布。",
+      "tags": [
+        "llm_inference",
+        "Qwen4",
+        "open weights",
+        "MoE"
+      ],
+      "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+      "source": "Alibaba Cloud",
+      "sourceUrl": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+      "price": null,
+      "vram": "Qwen4-Max 只有 API；小型 Qwen4 open weights 尺寸未公布",
+      "license": "Proprietary（Qwen4-Max）"
+    },
+    {
+      "id": "20261117-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "騰訊 Hy4 flash：224B 總參數（含 64B Engram）、12B active、1M context，宣布之後會開放權重",
+      "summary": "騰訊 11/16 推出 Hy4 flash：架構結合 hybrid attention、LatentMoE 和 Engram，官方說 KV cache 只有 Hy4 的 1/6，靠 megakernel、4-bit 量化和 DFly 把 decode 推過 150 tok/s；API 價格約 Hy4 的 1/12。官方建議日常搜尋、文件、computer use 用 flash，長時間 coding 還是用 Hy4。目前只有 API，騰訊說會開放權重但沒有日期和授權；r/LocalLLaMA 認為規模跟 Qwen3.8-Flash-Next 差不多，釋出後中階機器有機會跑。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "Engram",
+        "open weights"
+      ],
+      "url": "https://www.orcarouter.ai/blog/tencent-hy4-flash-vs-tencent-hy4",
+      "source": "r/LocalLLaMA",
+      "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1xxlgpb/introducing_hy4_flash/",
+      "price": null,
+      "vram": "權重未釋出；12B active 的 224B MoE，若釋出需 experts offload 到 RAM",
+      "license": "未公布（目前只有 API）"
+    },
+    {
+      "id": "20261117-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Jensen Huang 回任風波：FT 報導他和盟友討論回鍋，董事會消息人士說不考慮；Steve Blank 長文 HN 435 分",
+      "summary": "FT 週日報導 Huang 和親近人士討論回任，盟友要組「war room」遊說董事會並爭取白宮支持；「Bring Jensen Back」連署已有十幾萬人簽名，Trump 也說不介意他回來。但 CNBC 引述消息人士，董事會正專注於 Wachtell Lipton 主導的調查（是否危及國安或公司機密），不考慮讓他回任，目前由 CFO Colette Kress 暫代、正在找獵頭。Steve Blank〈What's Next for Nvidia?〉認為 CUDA 和訂單能撐兩三年，真正風險是董事會選一位只會執行的 CEO。",
+      "tags": [
+        "infra_runtime",
+        "NVIDIA",
+        "CUDA",
+        "leadership"
+      ],
+      "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+      "source": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Databricks 共同創辦人：企業的 open-weight 模型 token 占比五個月內從接近 0 漲到 30%",
+      "summary": "Databricks 共同創辦人 Patrick Wendell 在 X 分享平台數據：五個月內，open-source 模型在企業的 token 占比從接近 0 成長到 30%，主要拿來壓低大量批次、coding 這類高用量工作的成本；同串也說年中多數公司只用一家模型供應商，現在 75% 用兩家以上、將近一半用三家以上。r/LocalLLaMA 也在討論這組數字。",
+      "tags": [
+        "infra_runtime",
+        "open weights",
+        "enterprise",
+        "cost"
+      ],
+      "url": "https://x.com/pwendell/status/2122377964784611636",
+      "source": "X (@pwendell)",
+      "sourceUrl": "https://x.com/pwendell/status/2122377964784611636",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-11-16T04:05:00+08:00",
