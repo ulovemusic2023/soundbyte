@@ -118772,6 +118772,258 @@
       "url": "https://elevenlabs.io/blog/scribe-v3",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/elevenlabs"
+    },
+    {
+      "id": "20261117-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Coral 開源：agent 寫 TypeScript 呼叫 tools，跑通的存成 custom tool，每次呼叫都先過 policy 才補 credentials",
+      "summary": "Coral 是自架的 agent gateway，夾在 agent 和 GitHub、Slack、Linear 這些系統中間。agent 不再一個一個叫 tool，而是寫短短的 TypeScript 程式去呼叫，成功的那段存成 custom tool，下次一步就能重用，也能分享給整個 team。差別在權限：一般 MCP gateway 只能決定 agent 看不看得到某個 tool，Coral 的 custom tool 本身就是 code，能寫死「只改一個欄位、只動 30 天沒動靜的 ticket」這種規則，再設 Allow/Ask/Block，裡面每個 provider call 也照樣檢查 policy。官方說已有 450+ 家公司、數千名開發者在用。Show HN 50 分。",
+      "tags": [
+        "paradigm-shift",
+        "agent gateway",
+        "custom tools",
+        "MCP",
+        "agent permissions"
+      ],
+      "url": "https://github.com/withcoral/coral",
+      "source": "GitHub (withcoral/coral)",
+      "sourceUrl": "https://github.com/withcoral/coral",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Vercel〈Agents are users, so your software needs evals〉：把 testing pyramid 延伸到 agent，用 LLM 呼叫次數分層",
+      "summary": "Vercel 的看法：agent 已經是你 API、CLI、MCP server、SDK 的使用者，跟人一樣要經過 Discovery、Selection、Access、Success 四關。文章聚焦最後一關 Success，提出 agentic testing pyramid：deterministic tests（0 次 LLM call）、one-turn evals（1 次）、E2E evals（整個任務 2 次以上），越上層越貴越慢，所以先挑最低一層能抓到問題的。範例是幫使用者用 sfbeans CLI 點冰拿鐵——request 成功、logs 正常，但點成熱的就是失敗，只有反覆跑、打分數的 eval 才抓得到。",
+      "tags": [
+        "agent evals",
+        "agentic testing pyramid",
+        "CLI for agents",
+        "MCP"
+      ],
+      "url": "https://vercel.com/blog/agent-evals",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/agent-evals",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Traces 併入 Vercel；Guillermo Rauch：Traces 是軟體開發的新 primitive，比 Git 的 diff 還重要",
+      "summary": "Traces 把 Claude Code、Codex 等 coding agent 的 session 收起來分享、接到 commit 與 PR。官方部落格說九個月內做了 16 種 coding agent 的 adapter、Handoffs、Traces MCP，數千個團隊分享了近 50 萬個 sessions；併入 Vercel 後舊用戶照常使用，但暫停開新 org。Rauch 的說法：Git 讓大家圍著 code 的 delta 協作，traces 還多記了上游的 intent、prompts、reasoning、skills 和 tool use，應該先安全地保存，再拿來做會自我改進的系統。",
+      "tags": [
+        "paradigm-shift",
+        "agent traces",
+        "coding agent",
+        "team memory"
+      ],
+      "url": "https://traces.com/blog/traces-vercel",
+      "source": "Traces Blog",
+      "sourceUrl": "https://traces.com/blog/traces-vercel",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AWS Nitro Sandboxes：EKS pod 加一個 runtimeClassName 就跑進自己的 Firecracker microVM，第一個點名的用途就是 coding agent",
+      "summary": "InfoQ 整理：opt-in 的 pod、ECS task 或 EC2 workload 會在自己的輕量 VM 裡跑，有獨立 guest kernel，在所有商用 region 都可用、不另外收費。isolated-sandbox 模式信任 host，kubectl exec、logs 照常能用；confidential-sandbox 模式不信任 host，用依 pod spec 產生的 Cedar policy 鎖住 image digest、參數與 mounts，禁止 exec，再靠 Nitro Secure Module 量測搭配 KMS 才釋出 secrets。限制：上線時不支援 GPU passthrough；開 SMT 的機器大約只剩一半 vCPU 能用，Graviton 不受影響。",
+      "tags": [
+        "microVM sandbox",
+        "Firecracker",
+        "EKS",
+        "agent sandbox"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/aws-nitro-sandboxes-eks/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/aws-nitro-sandboxes-eks/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hugging Face Inference Providers 改用 OpenRouter 的 router：一個 HF token 叫 Hub 上所有有人 serve 的 open-weight 模型",
+      "summary": "HF 把自家 router 換成 OpenRouter 的：每個 request 依即時價格、速度、可靠度挑 provider，失敗會自動換一家重試，程式碼不用改。支援 OpenAI 的 Chat Completions、Responses API 和 Anthropic Messages API，有 Claude Code、Codex、OpenCode 的設定教學。文中引用 OpenRouter 數據：open-weight 模型占 token 量從 2025 年 10 月的 26.8% 升到 2026 年 9 月底的 71.7%，平均價格約是 closed 模型的四分之一。",
+      "tags": [
+        "open-weight",
+        "model router",
+        "OpenRouter",
+        "Anthropic Messages API"
+      ],
+      "url": "https://huggingface.co/blog/openrouter",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/openrouter",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Rauch 發布 xeet：safe Rust/wasm 的 X 貼文 renderer，約 1ms 一張 PNG，整個 repo 照「verification engineering」設計",
+      "summary": "xeet 不開瀏覽器、不連網、不用系統字型，就能把 X 貼文渲染成跟原生一樣的 PNG，比開瀏覽器截圖快 100–1000 倍，方便人和 agent 在發文前預覽。重點是開發方式：Rauch 稱它是「autorepo」——由一個 oracle 開 Chrome 驗證數萬條文字排版規則，CI canary 盯著原版的變化，再開簽名 PR 給 agent 處理。他說這種東西靠人類工程師幾乎做不出來。X 上約 1.9k 讚。",
+      "tags": [
+        "verification engineering",
+        "autorepo",
+        "Rust",
+        "wasm"
+      ],
+      "url": "https://xeet-rs.vercel.app",
+      "source": "X (@rauchg)",
+      "sourceUrl": "https://x.com/rauchg/status/2122184794209714368",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Gergely Orosz × Satya Nadella：code 變便宜、驗證變難之後，軟體工程會變成什麼樣",
+      "summary": "Pragmatic Engineer 新一集 podcast。聊 Microsoft 怎麼從 GitHub Copilot 領先變成追 Cursor 和 Claude Code、Satya 心中的「software factory」、為什麼 specification 和 verification 越來越重要、Windows 這種團隊怎麼調整；也談到 Microsoft 的自願離職方案、工程師對 AI 的焦慮，以及他提醒別從 junior 招募變慢就下長期結論。還有 open 與 local 模型、為什麼公司要掌握自己的 AI infrastructure，以及怎麼替越來越強的 agents 加上安全機制。",
+      "tags": [
+        "software factory",
+        "verification",
+        "dev model",
+        "career"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Qwen4-Max 正式上線：新 MoE 架構、原生 vision、1M context，官方說 token 用量最多少一半，HN 816 分",
+      "summary": "11/11 的 preview 之後正式推出。Alibaba 官方貼文：比 Qwen3.8-Max 用最多約少 50% 的 tokens，內部評測每個任務平均成本降超過 60%；價格每百萬 token input 1.5 美元、output 4.5 美元、implicit caching 0.075 美元。QwenCloud 頁面寫相容 OpenAI 與 Anthropic API；Vercel AI Gateway、OpenRouter、OpenCode Go 第一天就上架。官方說較小的 Qwen4 模型之後會放 open weights。HN 816 分、436 則留言；X 原文 1.35 萬讚。",
+      "tags": [
+        "Qwen4-Max",
+        "MoE",
+        "1M context",
+        "coding model"
+      ],
+      "url": "https://www.qwencloud.com/models/qwen4-max",
+      "source": "X (@Alibaba_Qwen)",
+      "sourceUrl": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HN Hiring Trends 11 月：〈Who is Hiring?〉職缺接近 12 年新低，但 51.6% 的職缺提到 AI、MCP 一年從 0.3% 漲到 4.5%",
+      "summary": "到 11/14 為止，11 月串有 244 則職缺，比去年同期的 387 少 37%；2026 年平均每月 287 則，是 2013 年以來最低。AI 出現在 51.6% 的職缺（兩年前 30%），AI agents／agentic 占 14.8%，已超過 LLM 的 10.7%。語言方面 Python 22.1%、TypeScript 17.6% 領先，Rust 升到第三（8.2%）。Front End 職缺占比從 2022 年初的 27% 掉到 6.6%。",
+      "tags": [
+        "hiring trends",
+        "MCP",
+        "Rust",
+        "AI agents"
+      ],
+      "url": "https://www.hntrends.com/2026/november.html",
+      "source": "HN Hiring Trends",
+      "sourceUrl": "https://www.hntrends.com/2026/november.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈…and the proof is checked in Lean〉：AI 生成的 Lean 證明要先過四個問題，才能說「定理是對的」",
+      "summary": "Xena Project 回應 OpenAI 上個月的 theorem dump：722 篇數學論文、約 45% 附 Lean code，其中三篇沒附 Lean 的已因符號錯誤撤稿。作者認為 Lean 有很重要的訊號，但如果 code 是 AI 生成的，要先檢查，第一個問題就是 Lean 的 headline statement 是否真的對應原本的數學敘述，因為 AI 可能 reward hack。他也說 theorem dump 很多篇還沒人做完這些檢查。HN 235 分。對拿 Lean 驗證 AI 寫的 code 的團隊也很適用。",
+      "tags": [
+        "formal verification",
+        "Lean",
+        "reward hacking",
+        "AI-generated proofs"
+      ],
+      "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
+      "source": "Xena Project",
+      "sourceUrl": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "uBlock Origin 一鍵 universal XSS：惡意網站可以誘騙 element picker 加入 trusted filter，在任何網站跑 JS；洞是 GPT-5.6 Sol 找到的",
+      "summary": "影響 Firefox 上的 MV2 版本（MV3 的 uBO Lite 有類似但較輕的問題），已修復，GitHub advisory 有細節。手法：先透過預設 filter rule 觸發的 XHR 偷出 extension UUID，用隱形 iframe 嵌入 element picker，再騙使用者點到看不見的「Create」按鈕。作者說找洞主要靠 GPT-5.6 Sol，PoC code 大多是 Claude 寫的，文章是他自己寫的。HN 572 分。記得更新 uBO。",
+      "tags": [
+        "XSS",
+        "browser extension",
+        "AI vuln discovery"
+      ],
+      "url": "https://iter.ca/post/ubo-uxss/",
+      "source": "iter.ca",
+      "sourceUrl": "https://iter.ca/post/ubo-uxss/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261117-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-17",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Bitrise 資安事件：服務整個下線、建議輪換所有 secrets；Gergely 說這波搶 AI keys 的攻擊也打了 OpenCode、Railway、Northflank、Fireworks",
+      "summary": "Bitrise 說 11/14 00:32（台北時間）偵測到內部 cloud 環境遭未授權存取，立即把全部服務下線。目前說還沒發現客戶資料、secrets 或 source code 外洩，但建議輪換存在 Bitrise 的所有 secrets、tokens 和憑證；CI builds 等功能正逐步恢復。Gergely 認為這是同一波專搶 AI keys 的攻擊（攻擊者來源是他的推測）。Railway 10 月事件報告則寫到約 1,852 名使用者的 BYOK agent keys 等 tokens 外洩。CI 裡放 AI keys 的人可以順手檢查一下。",
+      "tags": [
+        "LLMjacking",
+        "CI/CD security",
+        "secret rotation",
+        "supply chain"
+      ],
+      "url": "https://status.bitrise.io",
+      "source": "Bitrise Status",
+      "sourceUrl": "https://status.bitrise.io",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
   "lastUpdated": "2026-11-16T04:05:00+08:00",
