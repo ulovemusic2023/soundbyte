@@ -119591,8 +119591,307 @@
       ],
       "source": "Variety（Hacker News）",
       "sourceUrl": "https://variety.com/2026/music/features/inside-first-ai-music-awards-sonic-intelligence-academy-1236947847/"
+    },
+    {
+      "id": "20261117-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "lizTheDeveloper/flyover-scrub",
+      "summary": "把錄音／影片裡飛機的 Doppler 音調訊號洗掉，避免被拿去比對 ADS-B 航班資料反推拍攝地點。作者用自己的 iPhone 影片實測：一台聽不到的 Cessna 就能把室內自拍定位到 61–134 m，34 種 codec／filter 鏈裡有 32 種洗不掉；工具預設也會移除可推算錄音時間與電網的 grid hum（ENF）。`flyover-scrub input.mov -o output.mov` 一行處理，`--check` 只檢查不寫檔——發 vlog、Shorts 前可以先過一遍。",
+      "tags": [
+        "audio",
+        "privacy",
+        "doppler",
+        "ENF",
+        "cli tool"
+      ],
+      "url": "https://github.com/lizTheDeveloper/flyover-scrub",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/lizTheDeveloper/flyover-scrub",
+      "stars": 391,
+      "createdDate": "2026-11-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20261117-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "jammaru/sakutto",
+      "summary": "Chrome／Firefox 擴充功能，用本機的 PLaMo 3 Translate（0.8B）翻譯網頁、PDF（保留欄位與表格版面）、影片字幕、選取文字和輸入框，PLaMo 支援 53 種語言。不用帳號、沒有廣告和 telemetry，內容不出本機；已上架 Chrome Web Store 與 Firefox Add-ons（v1.5.1）。",
+      "tags": [
+        "local llm",
+        "on-device",
+        "translation",
+        "browser extension"
+      ],
+      "url": "https://github.com/jammaru/sakutto",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/jammaru/sakutto",
+      "stars": 258,
+      "createdDate": "2026-11-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20261117-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "Tthanh2k6/turbo-browser-mcp",
+      "summary": "以 Playwright 為底的 browser MCP server，11 個 tool 都是「一次 call 做更多事」：`smart_fill_form` 一次填完整張表單（含 React input、combobox、檔案上傳），`inspect_compact` 只回傳變動的元素，`batch_actions` 批次執行點擊與讀取，目的是少回合、少 token。預設擋下 Submit／Send／Pay 這類最後一步留給人按，不做 stealth；遇到 bot check 可用 `wait_for_human` 交給人。`claude mcp add turbo-browser -- npx -y turbo-browser-mcp` 即可裝。Show HN 48 points。",
+      "tags": [
+        "mcp",
+        "browser agent",
+        "claude code",
+        "token efficiency"
+      ],
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "source": "GitHub API / Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50503930",
+      "stars": 125,
+      "createdDate": "2026-11-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261117-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "kilolonion/agent-vscreen",
+      "summary": "給手機 agent 用的「背景副螢幕」：在看不見的 virtual display 上開 app、點擊、滑動、打字，你自己的螢幕照常使用，只會看到一個可隨時接管或停止的小浮窗。有 terminal 的 agent 用 `vscreen` CLI，會 MCP 的用 MCP，自己的程式走 HTTP；Android 11+、只需 Shizuku 不用 root（v1.3.0）。",
+      "tags": [
+        "mcp",
+        "android",
+        "computer use",
+        "phone agent"
+      ],
+      "url": "https://github.com/kilolonion/agent-vscreen",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/kilolonion/agent-vscreen",
+      "stars": 107,
+      "createdDate": "2026-11-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20261117-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "Suraj64x/VoiceBird",
+      "summary": "本機跑的 voice clone 配音工作室：上傳或錄 10 秒～5 分鐘乾淨人聲，貼上腳本（空行＝停頓）就能逐句生成、挑 take、重做單句，匯出 WAV／MP3 時直接做成 YouTube loudness 並附字幕。可選引擎：Qwen3-TTS 0.6B（預設，最像本人）、Chatterbox Nano／0.5B、VoxCPM 0.5B、純 CPU 的 Sopro；建議 4 GB NVIDIA GPU。目前只有 Windows 10／11 安裝檔，repo 沒有標授權。",
+      "tags": [
+        "voice cloning",
+        "text-to-speech",
+        "voice-over",
+        "creator tool"
+      ],
+      "url": "https://github.com/Suraj64x/VoiceBird",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/Suraj64x/VoiceBird",
+      "stars": 75,
+      "createdDate": "2026-11-13"
+    },
+    {
+      "id": "20261117-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "VoxDance-Lab/VoxMel",
+      "summary": "新的 zero-shot TTS：不用 acoustic tokenizer，直接對 mel-spectrogram 做 Haar wavelet 分解，只有 coarse mel 走 autoregressive，細節殘差另外生成；11/12 釋出 0.6B／0.3B 權重（Hugging Face）。用 10 萬小時 Emilia 訓練、支援中英文 voice cloning，0.6B 在 Seed-TTS-eval test-en 是 1.51% WER／0.738 SIM，加 GRPO 後 1.15%／0.753，輸出 24 kHz。",
+      "tags": [
+        "text-to-speech",
+        "voice cloning",
+        "zero-shot",
+        "mel-spectrogram"
+      ],
+      "url": "https://github.com/VoxDance-Lab/VoxMel",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/VoxDance-Lab/VoxMel",
+      "stars": 63,
+      "createdDate": "2026-11-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261117-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "db-branch/db-branch",
+      "summary": "在自己的伺服器上，用 ZFS clone 幫 MySQL／PostgreSQL 秒開 copy-on-write 分支，不用整份複製。內建 MCP server，讓 agent 先開分支跑危險 query 或 migration，再丟掉，正式資料完全不碰；也能每個 PR 一份 DB，用 `--ttl` 自動回收。目前 Beta，部分模組要付費（沒 key 可試 30 天）。Show HN 45 points。",
+      "tags": [
+        "mcp",
+        "agent sandbox",
+        "database",
+        "devops"
+      ],
+      "url": "https://github.com/db-branch/db-branch",
+      "source": "GitHub API / Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50506940",
+      "stars": 54,
+      "createdDate": "2026-11-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261117-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "homeassistant-ai/ha-mcp",
+      "summary": "本週 Python trending 新增 +2,385 stars：讓 Claude、ChatGPT 等 AI 助手透過 MCP 直接設定和自動化 Home Assistant，共 86 個 tool。建議裝法是走 HACS（Home Assistant 2026.11+ 內建的 Marketplace）裝成 integration，server 直接跑在 HA 裡面；v7.3.0 起 `ha_config_set_yaml` 移到 beta。",
+      "tags": [
+        "mcp",
+        "home automation",
+        "claude"
+      ],
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 7902,
+      "createdDate": "2025-09-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261117-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "vercel-labs/ui",
+      "summary": "Vercel 的 UI SDK（beta）：把鍵盤導覽、focus、selection、popup、drag and drop 和對應的 ARIA 做成可組合的 behavior，放在 `@ui-sdk/core`，有 React／Vue／Svelte／Solid／Web Components adapter。設計上是讓 coding agent 自己用 behavior 組出 accessible component，裝 skill：`npx skills@latest add vercel-labs/ui --skill ui-sdk`。11/16 上 Product Hunt，當日第 17（74 upvotes）。",
+      "tags": [
+        "agent skill",
+        "ui components",
+        "accessibility",
+        "vercel"
+      ],
+      "url": "https://github.com/vercel-labs/ui",
+      "source": "Product Hunt / GitHub",
+      "sourceUrl": "https://hunted.space/dashboard/ui-sdk",
+      "stars": 5251,
+      "createdDate": "2026-10-26",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261117-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "runkids/skillshare",
+      "summary": "本週 Go trending +182 stars：在同一個地方管理 skills、agents、rules、MCP 連線和 hooks，一次 sync 到 Claude Code、Codex、Pi、OpenCode 等工具。來源放在 Git 裡做版本控制、換機直接 pull，裝 skill 前可先 audit，也有 desktop app（v0.30.9）——同時用多個 AI CLI 時不用每邊各設一次。",
+      "tags": [
+        "agent skill",
+        "mcp",
+        "claude code",
+        "codex",
+        "cli tool"
+      ],
+      "url": "https://github.com/runkids/skillshare",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/go?since=weekly",
+      "stars": 3180,
+      "createdDate": "2026-01-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261117-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "product-hunt",
+      "title": "Talyn",
+      "summary": "11/15 PH 當日第 5（155 upvotes、26 comments）。用你原本的 Claude 或 ChatGPT 訂閱，在 cloud sandbox（Firecracker microVM）平行跑 Claude Code／Codex，每個 session 一個 branch，會開 PR，並自動修 failing check、conflict、review comment，再走 merge queue。免費方案每月 10 box-hours，Pro 每月 $40／200 小時；只支援 GitHub，原始碼公開在 Gilbert09/talyn。",
+      "tags": [
+        "coding agent",
+        "claude code",
+        "codex",
+        "cloud sandbox"
+      ],
+      "url": "https://www.talyn.dev/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/talyn"
+    },
+    {
+      "id": "20261117-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "product-hunt",
+      "title": "StateWeave",
+      "summary": "11/16 PH 當日第 10（87 upvotes）。拿 Slack、Gmail、Google Calendar／Sheets／Drive、Salesforce、Shopify、Zendesk、WhatsApp、Teams 共 10 個 app 的 stateful twin 來測 agent：API、MCP server、UI 和真的一樣，可以注入 outage、401 等故障，跑完用 checks 打分。agent 照樣跑在你自己的機器上；`sw setup` 會幫 Claude Code／Codex／Cursor 裝好 skill。",
+      "tags": [
+        "agent testing",
+        "mcp",
+        "sandbox"
+      ],
+      "url": "https://stateweave.net/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/stateweave"
+    },
+    {
+      "id": "20261117-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "product-hunt",
+      "title": "ByteVoice",
+      "summary": "11/16 PH 當日第 14（81 upvotes）。macOS 上給 coding agent 用的雙向語音層：按住 fn 對 Claude Code／Codex／Cursor 口述 prompt，它會清掉口頭禪並校正技術詞（「post gress」→ Postgres）；agent 做完、卡住或需要決定時會念給你聽，可直接用語音回覆，也支援 Slack。免費起步，Plus／Pro 付費。",
+      "tags": [
+        "voice",
+        "speech-to-text",
+        "coding agent",
+        "claude code"
+      ],
+      "url": "https://bytevoice.app/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/bytevoice"
+    },
+    {
+      "id": "20261117-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "product-hunt",
+      "title": "Punchcutter",
+      "summary": "11/16 PH 當日第 19（73 upvotes）。MIT 開源的 Agent Skill＋MCP server（byrishi/punchcutter）：描述一種字體風格或拍手寫字，就產出可直接用的 font family，包括 variable font、TTF／OTF、WOFF2＋`@font-face` CSS，自動 spacing 和 kerning，跑 155 條 QA 規則，另附 Studio HTML。字元集是涵蓋 43 種語言的 362 個 Latin glyph，不含中文。",
+      "tags": [
+        "agent skill",
+        "mcp",
+        "typography",
+        "creator tool"
+      ],
+      "url": "https://github.com/byrishi/punchcutter",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/punchcutter"
+    },
+    {
+      "id": "20261117-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-17",
+      "cycle": "tuesday",
+      "priority": "product-hunt",
+      "title": "Pine Drama Studio",
+      "summary": "11/16 PH 當日第 25（69 upvotes），號稱「AI filmmaking 版的 Cursor」。以 Code-OSS 為底的 Apache-2.0 桌面 app：丟進 Fountain 劇本，跟 agent 一起做角色、場景、道具、storyboard、takes 到成片；每一步付費生成都要你按 go，結果也在 canvas 上審核。Studio 本身免費，但生成跑在要付費的 Pine Computer 雲端（需要 project key），目前提供 macOS 版。",
+      "tags": [
+        "ai filmmaking",
+        "creator tool",
+        "agent",
+        "code-oss"
+      ],
+      "url": "https://github.com/PineComputer/pine-drama-studio",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/pine-drama-studio"
     }
   ],
-  "lastUpdated": "2026-11-17T04:10:00+08:00",
-  "updatedAt": "2026-11-17T04:10:00+08:00"
+  "lastUpdated": "2026-11-17T04:04:50+08:00",
+  "updatedAt": "2026-11-17T04:04:50+08:00"
 }
