@@ -120543,8 +120543,310 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261118-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "rising-fast",
+      "title": "erkamyaman/rust-anything",
+      "summary": "先錄下你現有 TypeScript／Python／C／Go／Ruby／Java app 的實際行為，再讓 coding agent（或你）一塊一塊改寫成 Rust，每一步都拿錄製結果比對、通過才往下。README 實測：50,000 keys 的 sidebar search 從 10 ms 降到 0.5 ms（20x），也可以只搬最慢的 hot path。作者也寫明只能抓到錄製有覆蓋的行為。",
+      "tags": [
+        "claude code",
+        "coding agent",
+        "rust",
+        "record-replay"
+      ],
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 888,
+      "createdDate": "2026-11-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261118-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "rising-fast",
+      "title": "boringmarketer/boring-marketing-skills",
+      "summary": "README 列出 32 個免費 marketing Agent Skills（research、positioning、copy、landing page、SEO、AI search、ads、email、content，外加 local business 包），支援 Claude Code／Codex／Cursor。`npx skills add` 或 Claude Code plugin 安裝，先跑 `/start-here` 讀網站與評論、產出 brand files，其他 skill 共用。作者說每個 skill 都不需付費工具。",
+      "tags": [
+        "agent skill",
+        "claude code",
+        "marketing",
+        "creator"
+      ],
+      "url": "https://github.com/boringmarketer/boring-marketing-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 483,
+      "createdDate": "2026-11-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261118-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "rising-fast",
+      "title": "JuneYaooo/rea-toon",
+      "summary": "在 Claude Code／Codex 裡拆解短劇（真人、AI 生成、漫劇）：為什麼爆、劇本怎麼寫、每一鏡怎麼拍，輸出一頁 `index.html`（學習分析／劇本／分鏡），外加給 agent 讀的 VIDEO.md 拆片包；分鏡還會從原片人聲軌切出配音樣本、標出音效。需要 ffmpeg 與能看圖的模型，作者提醒很耗 token（每集約 30 次看圖）。License 為非商用。",
+      "tags": [
+        "creator tool",
+        "video analysis",
+        "agent skill",
+        "VIDEO.md"
+      ],
+      "url": "https://github.com/JuneYaooo/rea-toon",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 251,
+      "createdDate": "2026-11-14",
+      "license": "Noncommercial"
+    },
+    {
+      "id": "20261118-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "rising-fast",
+      "title": "krisgfx9/Wireless-Device-Battery-Monitor",
+      "summary": "這兩天 GitHub 新 repo 星數衝最快的實用工具之一：Windows 10/11 taskbar 直接顯示無線滑鼠、耳機、鍵盤、手把電量，不用裝原廠軟體。支援 Logitech、Razer、SteelSeries、Corsair、HyperX、Glorious、PS4/PS5 DualSense、Xbox 與 Bluetooth 裝置，release 有現成安裝檔。",
+      "tags": [
+        "windows",
+        "tray app",
+        "headset",
+        "productivity"
+      ],
+      "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-04+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 2325,
+      "createdDate": "2026-11-16",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261118-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "rising-fast",
+      "title": "yappologistic/CUI",
+      "summary": "C99 寫的 immediate-mode UI library，自己畫所有元件（README 說約 210 個：按鈕、data grid、chart、code editor、docking panels），用 OpenGL 或內建 software renderer，跑在 Windows／macOS／Linux，也能編成 WebAssembly 在瀏覽器跑。零依賴，丟 `cui.h`＋`cui.c` 就能用，完整 app 約 250 KB——做輕量原生工具或音訊小工具 UI 可以參考。",
+      "tags": [
+        "ui library",
+        "c99",
+        "immediate mode",
+        "wasm"
+      ],
+      "url": "https://github.com/yappologistic/CUI",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-04+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1126,
+      "createdDate": "2026-11-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20261118-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "worth-trying",
+      "title": "nickvasilescu/parallax",
+      "summary": "開源的 AI 圖片／影片／語音／音樂 studio，一個 web app 裡有各種 studio、社群 feed、library、credits、開發者 API，還有可以跑在自己 Hermes agent 上的 agent chat。`npm run dev` 就能起，資料庫是單一 SQLite；沒 key 時每個模型回內建 sample，設 `TREG_TOKEN` 後接 39 個模型，生成前顯示價格，可設每日預算上限。",
+      "tags": [
+        "creator tool",
+        "music generation",
+        "voice",
+        "ai studio"
+      ],
+      "url": "https://github.com/nickvasilescu/parallax",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=audio+created%3A%3E2026-11-04+stars%3A%3E20&type=repositories&s=stars&o=desc",
+      "stars": 194,
+      "createdDate": "2026-11-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261118-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "worth-trying",
+      "title": "lishuangqiang/mixbar",
+      "summary": "macOS menu bar 的 per-app 音量 mixer，建在 Core Audio Process Tap 上：不裝虛擬 driver、不用帳號、無 telemetry，關掉就恢復原狀。每個 app 0–200%（超過 100% 走 peak limiter 不爆音）、耳機／喇叭各記一組平衡、preset 場景、全域熱鍵，還把所有系統通知音收成一條 slider。",
+      "tags": [
+        "audio",
+        "macOS",
+        "Core Audio Process Tap",
+        "mixer"
+      ],
+      "url": "https://github.com/lishuangqiang/mixbar",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=audio+created%3A%3E2026-11-04+stars%3A%3E20&type=repositories&s=stars&o=desc",
+      "stars": 160,
+      "createdDate": "2026-11-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261118-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "worth-trying",
+      "title": "spacesky-cell/TwinFix",
+      "summary": "處理線上故障的 AI Agent：從告警、log、Issue 進來，自動分診→診斷→複現→修復→驗證，修復在從目標分支建出的一次性 twin 環境裡跑。規則是先有穩定失敗測試才改 code、修復要過 agent 看不到的隱藏測試、驗證結果綁 commit SHA、合併一定要人批准。支援 Java、Python、Go、TS/JS、C#。",
+      "tags": [
+        "coding agent",
+        "auto-fix",
+        "sandbox",
+        "CI"
+      ],
+      "url": "https://github.com/spacesky-cell/TwinFix",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 131,
+      "createdDate": "2026-11-13",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261118-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "on-the-radar",
+      "title": "FujiwaraChoki/supoclip",
+      "summary": "本週 Python trending（+573 stars/週）的開源 OpusClip 替代品：丟長影片（podcast、talk、直播 VOD），自動挑最有爆點的片段、打分，輸出 9:16 直式短片，含臉部置中裁切、逐字同步字幕、hook 標題和可選 B-roll。可 Docker 自架（AGPL-3.0）、用 hosted 版或 iOS app，也有 MCP server 與 REST API。",
+      "tags": [
+        "creator tool",
+        "short video",
+        "MCP",
+        "self-hosted"
+      ],
+      "url": "https://github.com/FujiwaraChoki/supoclip",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 3420,
+      "createdDate": "2025-07-28",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261118-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "on-the-radar",
+      "title": "Alloy CSS",
+      "summary": "11/15 以來 Show HN 分數最高（139 points、23 comments）：一份給 server-rendered HTML 用的 stylesheet，dialog、menu、tabs 在關掉 JavaScript 時也能用。官網附 ecommerce、admin 等多套 template 與 themes。",
+      "tags": [
+        "css",
+        "no-js",
+        "server-rendered",
+        "frontend"
+      ],
+      "url": "https://alloyhtml.com/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50532385"
+    },
+    {
+      "id": "20261118-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "on-the-radar",
+      "title": "0nelight/sutra-os",
+      "summary": "Show HN 66 points、35 comments：開源自架的 ontology 平台，作者說是 Palantir〈Ontology-Oriented Software Development〉的免費版思想實驗。所有寫入都走 server 端規則、改動先是 proposal 待批准、AI agent 只能提案、每個數字可追 lineage，model 和資料都能開 branch。Beta，目前一人維護。",
+      "tags": [
+        "ontology",
+        "self-hosted",
+        "agent guardrails",
+        "data lineage"
+      ],
+      "url": "https://github.com/0nelight/sutra-os",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50525052",
+      "stars": 118,
+      "createdDate": "2026-10-12"
+    },
+    {
+      "id": "20261118-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "on-the-radar",
+      "title": "matheuzgomes/gawain",
+      "summary": "Show HN 67 points、62 則留言（11/15 以來留言最多的 Show HN）：Python type annotation 檢查器，強制變數、參數、回傳值、class attribute 全部要寫型別，再交給 ty 或 pyrefly 驗型別正確。`uv tool install \"gawain[ty]\"` 後 `gawain check src/`。作者自言就是討厭 `dict[str, Any]`。",
+      "tags": [
+        "python",
+        "linter",
+        "type hints",
+        "cli tool"
+      ],
+      "url": "https://github.com/matheuzgomes/gawain",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50504072",
+      "stars": 44,
+      "createdDate": "2026-11-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261118-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "product-hunt",
+      "title": "VINC",
+      "summary": "11/17 PH 當日第 8（136 upvotes）。瀏覽器裡的 AI 拍片 studio：貼劇本或描述故事→Director agent 寫劇本→鎖角色／場景 reference sheet→在 3D set 裡擺演員、選鏡頭與焦段再生成→內建 timeline 剪輯、配 SFX／BGM、字幕、匯出。官網列出 image／video／voice／music 等多家模型。目前 early access。",
+      "tags": [
+        "AI filmmaking",
+        "creator tool",
+        "music video",
+        "video editor"
+      ],
+      "url": "https://app.vinc.ai/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/vinc"
+    },
+    {
+      "id": "20261118-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "product-hunt",
+      "title": "Pinecall",
+      "summary": "11/17 PH 當日第 15（84 upvotes）。開源的 voice AI agent 平台（Apache-2.0、建在 LiveKit 上）：用表單、TypeScript／Python／Ruby code，或從 Claude Code／Codex／Cursor 透過 MCP 建 voice agent，放上電話、網頁或 WhatsApp；可用模擬來電測試，每通電話都留紀錄並被評分。可用 Pinecall Cloud 或自己的 Kubernetes。",
+      "tags": [
+        "voice agent",
+        "MCP",
+        "open source",
+        "LiveKit"
+      ],
+      "url": "https://github.com/pinecall/pinecall",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/pinecall"
+    },
+    {
+      "id": "20261118-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "product-hunt",
+      "title": "pushr",
+      "summary": "11/17 PH 當日第 19（80 upvotes）。一個 HTTP request 就把推播送到你的 iPhone，不用 SDK——適合讓 script、cron、server 或 coding agent 跑完時通知你。支援 Live Activities 追長任務、鎖定畫面直接回覆、響到你確認才停的 alarm，以及 uptime／heartbeat 監控。有免費方案，backend 以 MIT 開源。",
+      "tags": [
+        "notifications",
+        "iOS",
+        "AI agent",
+        "webhook"
+      ],
+      "url": "https://pushr.sh",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/pushr"
     }
   ],
-  "lastUpdated": "2026-11-18T03:37:59+08:00",
-  "updatedAt": "2026-11-18T03:37:59+08:00"
+  "lastUpdated": "2026-11-18T04:03:37+08:00",
+  "updatedAt": "2026-11-18T04:03:37+08:00"
 }
