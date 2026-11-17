@@ -120146,8 +120146,241 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261118-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32435：mtmd 支援 MiniMax-Music3，llama-tts／llama-server 從歌詞生成整首歌（44.1kHz 立體聲）",
+      "summary": "繼昨天的 YuE2 之後，ngxson 的 PR 在 11/17 19:53（台北時間）合併，已進 b12479。MiniMax-Music3 從 [Tags] 音樂描述＋[Lyrics] 歌詞生成人聲加伴奏：Qwen3 backbone 每 40ms frame 取 semantic code、RVQ depth decoder 補其餘 7 個 code，再經 flow-matching DiT 和 DAC decoder 出音訊。上限 9000 frames（6 分鐘），預設 context 10240 約可做 3 分鐘，更長要加大 `-c`；`llama-server` 可調 `cfg_scale`、`flow_steps`，streaming 約每 4 秒吐一段。協作者在 RTX PRO 6000 上對照 diffusers F32 reference，端到端 STFT cos 0.9999976。",
+      "tags": [
+        "audio_music_ai",
+        "music generation",
+        "llama-tts",
+        "MiniMax-Music3"
+      ],
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "source": "GitHub (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32435",
+      "price": null,
+      "vram": "官方 diffusers 全精度不到 24GB，CPU offload 約 22GB，逐層 streaming 可降到 8GB；backbone 由 Qwen3-8B fine-tune＋DiT-2B，llama.cpp GGUF 的用量尚未公布",
+      "license": "MIT（llama.cpp）／MiniMax-Music3 Community License（可商用，年營收超過 US$2,000 萬需另行授權）"
+    },
+    {
+      "id": "20261118-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32438：Qwen3-TTS 支援 ICL／reference mode，voice cloning 更貼近參考聲音",
+      "summary": "11/18 01:59（台北時間）合併。之前 llama.cpp 跑 Qwen3-TTS 只吃參考音檔的 speaker embedding（xvector），現在加上 `--tts-speaker-text` 傳入參考音檔的逐字稿，模型就直接接著 reference codes 往下講，也就是官方的「ICL」模式。作者說在自己的專案裡 ICL 比 xvector 準很多。限制：參考音檔要 30 秒以內，mmproj 要用含 speech tokenizer encoder 的版本轉，不然會退回只用 embedding。作者有揭露初版由 Claude 實作、他逐行 review。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "voice cloning",
+        "Qwen3-TTS",
+        "llama-tts"
+      ],
+      "url": "https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF",
+      "source": "GitHub (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32438",
+      "price": null,
+      "vram": "1.7B 參數模型，16GB 綽綽有餘（llama.cpp 實際用量 PR 未列）",
+      "license": "MIT（llama.cpp）／Apache-2.0（Qwen3-TTS-12Hz-1.7B-Base）"
+    },
+    {
+      "id": "20261118-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Maxwell-V1-Flash 第一個 GGUF：35B-A3B、Apache-2.0、256K context，但 4.6 bpw 的 top token 吻合率只剩 85.7%",
+      "summary": "Maxwell team 的 35B 總參數／3B active MoE（256 個 routed experts 取 12、block sparse attention、mHC），10 月就上架，這兩天上了 r/LocalLLaMA 當日熱門。AtomicChat 11/17 發了第一批 GGUF，自己寫了 llama.cpp port（`maxwell-moe-port.patch`，要套在指定 commit 上），stock llama.cpp、LM Studio、Ollama 目前都載不進來。最小檔 AD-Q4_K-IQ4_XS 是 20.8GB，他們量到這個模型對量化特別敏感：4.6 bpw 時跟 BF16 選到同一個 top token 只有 85.7%（同級模型通常 >95%），所以不發 20GB 以下的版本。",
+      "tags": [
+        "llm_inference",
+        "GGUF",
+        "MoE",
+        "quantization"
+      ],
+      "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
+      "source": "Hugging Face (AtomicChat) • r/LocalLLaMA",
+      "sourceUrl": "https://huggingface.co/AtomicChat/Maxwell-V1-Flash-GGUF",
+      "price": null,
+      "vram": "最小 GGUF 20.8GB，16GB 卡要把部分 experts offload 到 RAM（64GB 夠）；需套 AtomicChat patch 自行編譯",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261118-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32407：FP16 MMA flash attention 輪轉 K/V 讀取順序，128K context prefill 快 1.41 倍",
+      "summary": "gaugarg-nv 的 PR，11/17 19:19（台北時間）合併、進 b12477。stream-K 下不同 CUDA block 會同時讀不同的 K/V tile，L2 cache 命中率低；改成輪轉讀取順序後，PR 附的 RTX 5090＋Qwen3.8-27B UD-Q4_K_M 數據：depth 131072 prefill 1290→1822 t/s（1.41×）、65536 時 1.25×、32768 時 1.07×，16K 以下沒差。目前只套用在 multi-stage kernel（single-stage 有退步）。r/LocalLLaMA 也有人轉貼。",
+      "tags": [
+        "llm_inference",
+        "flash attention",
+        "CUDA",
+        "long context"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/32407",
+      "source": "GitHub (ggml-org/llama.cpp) • r/LocalLLaMA",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32407",
+      "price": null,
+      "vram": "不額外吃 VRAM；長 context prefill 受益最大（PR 只有 5090 數據，5070 Ti 未測）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261118-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SenseNova-Loop-9B 正式版：looped decoder 9B 多模態，官方稱 4-bit 權重＋8-bit KV 跑 256K context 約 15GiB",
+      "summary": "商湯 11/17 發布正式版（10/31 Preview 已報過）。架構不變：中間 24 層共享權重跑兩次（32 層權重、56 次 layer 計算）＋two-stream mHC＋3:1 linear／full hybrid attention，context 拉到 512K。官方數據：GAIA 從 Preview 的 37.86 升到 69.90、Terminal-Bench 2.1 從 40.45 到 59.55，AIDABench 65.31 對 Qwen3.8-27B 的 65.01，NL2Repo 41.36 對 44.60。首日就有官方 AWQ 4-bit；vLLM／SGLang 仍要用 PR 分支，官方範例 TP=4。模型是 gated，下載前要先在 HF 同意條款。",
+      "tags": [
+        "llm_inference",
+        "looped-transformer",
+        "multimodal",
+        "long context",
+        "AWQ"
+      ],
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+      "source": "Hugging Face (sensenova)",
+      "sourceUrl": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+      "price": null,
+      "vram": "官方估計 4-bit 權重約 4.9GB；64K/128K/256K context 搭 8-bit KV 約 10/12/15GiB（4-bit KV 約 9/10/12GiB）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261118-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vLLM v0.34.0：extensible KV cache 預設開啟、gpu_memory_utilization 預設改 1.0，Model Runner V1 移除",
+      "summary": "11/17 07:22（台北時間）發布，412 位貢獻者、1,061 個 commits。KV cache 改成 warmup 後依實際剩餘記憶體配置（官方例：MiniMax-M3 在 H200 從 433k 增到 672k tokens），代價是部分 H200 模型在 128 併發下 TPOT 變慢 6–18%；要回到舊行為用 `--gpu-memory-utilization 0.9` 或 `--no-enable-extensible-kv-cache`。其他 breaking：預設 `--block-size` 從 16 改 64、需 `huggingface_hub >= 2.0.0`、`fp_quant` 和 Marlin W4A8 移除。新支援的語音模型有 Nemotron-3.5-Transcribe、Canary-1B-v2、Ming3-ASR、LFM3-Audio，Parakeet TDT 走 plugin。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "KV cache",
+        "asr"
+      ],
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
+      "source": "GitHub Releases (vllm-project/vllm)",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
+      "price": null,
+      "vram": "引擎本身；新預設會吃滿 VRAM，16GB 桌機同時接螢幕的話建議手動設 0.9",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261118-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "inference-optimisation：讓 agent 幫你 hill-climb 本地 LLM serving 速度的 skill，含 RTX 3090／Intel Arc 實測紀錄",
+      "summary": "sybil-solutions 11/17 開源，一天約 800 星。不是 flag 清單，而是一套流程：先算理論上限（bytes/token ÷ 頻寬），一次只改一個變數、跟前後 control 交錯量測、每次結果寫進 ledger，最後要過 long-context needle 和滿 KV 併發 soak 才算數。附 vLLM／SGLang／llama.cpp／ExLlama 的 gotchas 和引擎無關的 bench.py。README 列的成績包含 RTX 3090 跑 Qwen3.8-27B EXL3 3 bpw＋MTP 單人 96.2 tok/s（code 141.1）、Intel Arc B390 iGPU 256K prefill 297→628 tok/s。支援 Claude Code 等吃 SKILL.md 的 agent。",
+      "tags": [
+        "llm_inference",
+        "ai_devtools",
+        "speculative decoding",
+        "benchmark"
+      ],
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "price": null,
+      "vram": "工具本身不吃 VRAM，可直接拿來調你 5070 Ti 上的 server",
+      "license": "MIT"
+    },
+    {
+      "id": "20261118-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ProSing（arXiv）：zero-shot 細粒度歌唱技巧轉換，在既有錄音指定段落加技巧、保留歌詞旋律和歌手音色",
+      "summary": "Xinhao Guan、Julian McAuley 等人 11/14 的論文。任務是 singing technique conversion：對一段現成的歌唱錄音，只在選定區段套上指定技巧，歌詞、旋律、節奏和歌手身分都不變。做法是在預訓練的 flow-matching acoustic model 上加 frame-level 技巧條件，用 paired training 避免條件捷徑，並加入連續 pitch 軌跡控制跟音高有關的技巧。作者說在沒見過的歌手和錄音上技巧控制準確、自然度和音色相似度都保得住。目前沒看到程式碼或權重。",
+      "tags": [
+        "svc_voice",
+        "singing voice conversion",
+        "flow matching"
+      ],
+      "url": "https://arxiv.org/abs/2611.19223",
+      "source": "arXiv (eess.AS)",
+      "sourceUrl": "https://arxiv.org/abs/2611.19223",
+      "price": null,
+      "vram": null,
+      "license": "未公布（論文，尚無程式碼）"
+    },
+    {
+      "id": "20261118-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Anthropic 向 IPO 投資人表示：Claude Mythos 約 3 天就把 Claude 搬上 AMD MI355X，幾乎所有 kernel 由 AI 寫（HN 51 分）",
+      "summary": "Tom's Hardware 整理 Anthropic IPO roadshow 內容：共同創辦人 Tom Brown 說 Mythos Preview「幾乎不需人介入」三天就讓 Claude 在 AMD 跑起來，以往要數十名工程師 6–12 個月；但投影片註腳把這三天限定在一個模型的 prompt processing（prefill），沒說 decode 有沒有包含，也沒公布 AMD 跟 NVIDIA 的速度比較。文章認為 CUDA 護城河在變窄但沒消失，因為 agent 寫 kernel 仍要有實體 GPU 測試。",
+      "tags": [
+        "infra_runtime",
+        "AMD",
+        "ROCm",
+        "CUDA",
+        "kernel"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50526264",
+      "source": "Tom's Hardware • Hacker News",
+      "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "美國 BIS 新規封堵海外資料中心 remote access AI 晶片的漏洞；Jensen Huang 首度發聲，表示董事會要他回任就回來（Jensen 聲明 HN 90 分、157 則留言）",
+      "summary": "NPR：美國商務部 BIS 11/16 宣布新規則，限制透過海外資料中心遠端存取先進 AI 晶片和伺服器，起因是 Nvidia 風波中被點名的新加坡 Megaspeed（涉嫌把美國 AI 晶片算力賣給中國公司），商務部和司法部說 2025 年就對它展開刑事調查。11/17 CNBC 取得 Jensen Huang 辭職後第一份聲明：他承認犯下嚴重錯誤、會配合董事會獨立調查，「如果董事會認為我回任符合最大利益，我會很榮幸回來」；CNBC 消息來源則說董事會不考慮讓他回任。",
+      "tags": [
+        "infra_runtime",
+        "export control",
+        "GPU cloud",
+        "Nvidia"
+      ],
+      "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
+      "source": "NPR • CNBC • Hacker News",
+      "sourceUrl": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Intel 公布 D270（Crescent Island）首批數據：FP64 金融運算最高 5.9× RTX PRO 6000，AI 推理則只多 1.12×",
+      "summary": "Intel 在 SC26 發表，r/LocalLLaMA 當日熱門。D270 是 Xe3P、32 個 Xe core、160GB LPDDR5X（1.5 TB/s，可擴到 480GB）、350W 氣冷 PCIe 卡。FP64 選擇權定價最高 5.9×（European Monte Carlo），但 AI 部分 Qwen3-30B-A3B 吞吐只有 1.12×、Drex 2.0 延遲低 29%。全部是 Intel 自家測試、用 pre-production silicon，TechPowerUp 指出金融測試的 NVIDIA 系統有 8 張卡，每次跑用幾張沒講清楚；Intel 11/17 也更正一項測試名稱。價格和上市日都還沒公布。",
+      "tags": [
+        "infra_runtime",
+        "Intel",
+        "GPU",
+        "LPDDR5X"
+      ],
+      "url": "https://www.techpowerup.com/354944/intel-publishes-benchmarks-for-d270-crescent-island-gpu-claims-wins-over-rtx-pro-6000",
+      "source": "Intel Newsroom • r/LocalLLaMA",
+      "sourceUrl": "https://www.intel.com/content/www/us/en/newsroom/news/data-center/why-intel-gpu-d270-belongs-in-the-hpc-conversation.html",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-18T03:06:39+08:00",
-  "updatedAt": "2026-11-18T03:06:39+08:00"
+  "lastUpdated": "2026-11-18T03:30:12+08:00",
+  "updatedAt": "2026-11-18T03:30:12+08:00"
 }
