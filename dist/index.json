@@ -119890,8 +119890,264 @@
       "url": "https://github.com/PineComputer/pine-drama-studio",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/pine-drama-studio"
+    },
+    {
+      "id": "20261118-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Code 團隊公開怎麼做 verification：約 90% 的 code 由 Claude 寫和 review，靠 verify skill、diff 觸發的檢查清單和「改動不能改自己的檢查」撐起來",
+      "summary": "Addy Osmani 在 claude.dev 寫的長文：最值得投資的三種測試是 E2E、property tests、differential tests；repo 裡放 .claude/skills/verify，讓 Claude commit 前先把 app 真的跑起來。同一個檢查連續三輪失敗就停下來找人；39 條 reliability checklist 只挑和 diff 相關的 3–10 條跑；REVIEW.md 一律從 base branch 讀，改動沒辦法改到審它的規則；新 commit gate 先開 observe mode 再 enforce。ClaudeDevs 貼文 1.3 萬讚，HN 188 分。",
+      "tags": [
+        "paradigm-shift",
+        "verification engineering",
+        "coding agent",
+        "verify skill",
+        "property testing",
+        "code review"
+      ],
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "source": "claude.dev Blog",
+      "sourceUrl": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cognition 推出 Devin Bots：交給它的是「要負責的結果」不是單一任務，常駐 agent 自己拆工作、同時帶好幾個 Devin 平行做",
+      "summary": "Devin Bot 是有自己記憶和工具的常駐 agent，給它像「Android 版要跟上 iOS」這種長期目標，它會自己調查、派工給多個 Devin session、評估結果，只把需要人判斷的決定丟回來，可以在 Slack、iMessage 裡用。Cognition 自己公布的數字：Android Bot 44 天 merge 了 1,134 個 PR、寫了 344,651 行 Kotlin，過程中人只發了 183 則訊息。Fortune 把它定位成跟 OpenAI Dots、Anthropic Duet 正面競爭；swyx 試用一週後說，大家要的不是「AI 員工」，是會對結果負責的 agent manager。",
+      "tags": [
+        "paradigm-shift",
+        "agent orchestration",
+        "multi-agent",
+        "outcome-owning agents",
+        "Devin"
+      ],
+      "url": "https://devin.ai/blog/introducing-devin-bots",
+      "source": "Cognition Blog",
+      "sourceUrl": "https://devin.ai/blog/introducing-devin-bots",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Simon Willison 提出 external sandbox 模式：agent 照常跑在 Mac 上，但每個指令都送進只看得到指定資料夾的 Linux sandbox",
+      "summary": "釋出三個實作同一套協定的原型 sandbox：Node.js + WebAssembly（v86）、Apple Containers、Microsoft Quicksand + QEMU，Claude Code、Codex、Pi 都能接上，兩個 npx 指令就能試。預設沒有網路，要開就走 proxy 白名單；proxy 會在送往特定 host 時才補上 API key，agent 自己看不到 key。Simon 也提醒還是實驗原型、沒經過稽核；X 貼文 1,000+ 讚、300+ 則回覆。",
+      "tags": [
+        "external sandbox",
+        "agent sandboxing",
+        "credential replacement",
+        "WebAssembly",
+        "coding agent"
+      ],
+      "url": "https://blog.primeradiant.com/external-sandboxes-for-coding-agents/",
+      "source": "Prime Radiant Blog",
+      "sourceUrl": "https://blog.primeradiant.com/external-sandboxes-for-coding-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "VS Code 2027 年 2 月移除 Local harness，Copilot agent 全面改用 Copilot harness；Gergely：Claude Code 不到半年就打穿 VS Code 十年的護城河",
+      "summary": "VS Code 1.146 起 Local harness 標為 deprecated，2027 年 2 月移除；接手的 Copilot harness 建在 Copilot SDK 上，和 Copilot CLI、GitHub Copilot app 共用 agent runtime，同一個 session 能在 editor 和 Agents 視窗之間接著做，管理員也能強制 runtime 權限和 sandbox 限制。Gergely Orosz 隔天發文說 Claude Code 不到 6 個月就毀了 Microsoft 靠 VS Code 經營十年的策略（1,700 讚），還說現在好像每家廠商都在賣自己的 coding harness。",
+      "tags": [
+        "agent harness",
+        "GitHub Copilot",
+        "VS Code",
+        "Copilot SDK"
+      ],
+      "url": "https://github.blog/changelog/2026-11-16-vs-code-retires-the-local-harness-in-february-2027",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-16-vs-code-retires-the-local-harness-in-february-2027",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Vercel eve 1.0 GA：開源的 production agent 框架，harness 握在自己手上，內建 durable execution、多人 session 和 Slack ambient mode",
+      "summary": "eve 把呼叫模型、跑 tools、派 subagent 的 loop 交給你自己控制：模型自選、tools 可換、決定哪些動作要 approval；Workflow SDK 會存進度，crash 後從最後完成的步驟接著跑。多人可以共用同一個 agent session，approval 會分給對的人；Slack 的 ambient mode 先用小的 decision model 篩訊息，再決定要不要開一輪。6 月 preview 到現在出了 230+ 個版本，`npx eve@latest init` 就能開始。",
+      "tags": [
+        "agent framework",
+        "durable execution",
+        "open-source",
+        "multiplayer agents",
+        "Vercel"
+      ],
+      "url": "https://vercel.com/blog/eve-is-now-generally-available",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/eve-is-now-generally-available",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FrontierHarness Eval v1.1：22 個 harness × 5 個模型、27,280 次 agent run，結論是換模型時也該跟著換 harness",
+      "summary": "Runta 與 Baseten 合作，燒了 83B tokens 測 62 個 terminal tasks。同一個 harness 換模型後成本排名可以差很多，像 Codex CLI 搭 GLM-5.3 成本排第 1、搭 Kimi-K3 掉到第 16；整體成本 92.8% 由模型決定，固定模型時最貴和最便宜的 harness 每次 pass 的成本差 1.9–4.9 倍。64.5% 的花費落在沒通過的 run 上；給 harness 開發者的建議是減少步數，不只是砍 prompt。HN 231 分。",
+      "tags": [
+        "agent harness",
+        "evals",
+        "cost per task",
+        "open-weights models"
+      ],
+      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "source": "Runta Blog",
+      "sourceUrl": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "lend：agent 跑在遠端 VM，要用 gh、1Password 時改在你筆電上執行，token 從頭到尾不離開筆電",
+      "summary": "作者把 lend 做成 SSH agent 前面的一層 proxy：VM 上的 agent 透過轉發的 socket 請求執行指令，筆電先照 policy 比對（預設 deny），再用 Touch ID 核准，輸出才傳回 agent；Claude Code 可以透過 `lend mcp` 的 run_local_command 工具用。作者也講明 lend 不會 sandbox 已核准的指令，核准 shell 等於什麼都能跑。HN 126 分。",
+      "tags": [
+        "agent credentials",
+        "remote agents",
+        "SSH agent",
+        "MCP"
+      ],
+      "url": "https://blog.antonio.cx/running-agents-with-lend",
+      "source": "antonio's blog",
+      "sourceUrl": "https://blog.antonio.cx/running-agents-with-lend",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 發布 GPT-6.2 Astra 與 Sol：輸出 token 更少、Astra API 降價 20%，已上 Codex 和 API",
+      "summary": "Astra 是新的 frontier 模型，定價每百萬 tokens 輸入 $8、cached $0.40、輸出 $40；OpenAI 說它在 Agents' Last Exam 比 GPT-6 Astra 高 5.2 分、成本不到三分之一，也比 Claude Fable 5.2 高 5.5 分。Sol 價格不變，在 Cognition 的 FrontierCode 2.0 和 Astra 只差 0.5 分、成本約五分之一。數字都是 OpenAI 自己公布的；HN 484 分，Vercel AI Gateway 同步上架。",
+      "tags": [
+        "frontier model",
+        "GPT-6.2",
+        "Codex",
+        "pricing"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "source": "OpenAI",
+      "sourceUrl": "https://x.com/OpenAIDevs/status/2122752256923873753",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Windows 11 被逆向發現會記錄你用了哪些 coding agent 和開發工具，預設開著的選用診斷資料就會上傳",
+      "summary": "作者逆向 MissionControlAggregator.dll，找到 CLICodingAgentUsage 功能：比對 codex.exe、claude.exe、copilot.exe、agy.exe 等 CLI agent、5 種桌面 agent，以及 node、python、gcc、code.exe 等工具。實測把 cmd.exe 改名成 codex.exe 就會被記到；記下的只有「用過哪些」的 bitmap，沒有 prompt 或程式碼。在美國區的預設安裝中「選用診斷資料」是開著的，報告會排進上傳佇列。HN 695 分、571 則留言。",
+      "tags": [
+        "telemetry",
+        "privacy",
+        "Windows",
+        "coding agent"
+      ],
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "source": "Xusheng Li",
+      "sourceUrl": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Optimizely 供應鏈攻擊：178 個組織的網站被植入惡意 JavaScript，Zoom、BBC、CNN、Salesforce、GitLab 都中",
+      "summary": "11/16 攻擊者把程式碼寫進客戶 Optimizely 專案的 Project JavaScript，檔案照樣從官方 cdn.optimizely.com 送出；內容包括換掉加密貨幣錢包地址、側錄信用卡、偷 cookie，iPhone/iPad 上還會投遞 iOS exploit kit。Report URI 觀察到 16 日 23:11 UTC 之後檔案都已清乾淨，但攻擊者怎麼拿到這麼多客戶專案的寫入權限還不清楚。HN 620 分；提醒「信任的第三方 script」也要靠 CSP 和監控來把關。",
+      "tags": [
+        "supply chain security",
+        "JavaScript",
+        "CSP",
+        "incident"
+      ],
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "source": "Report URI",
+      "sourceUrl": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenCode Browse：讓 agent 直接用你真正的瀏覽器、分頁和登入狀態，遇到登入、2FA、付款再交還給你",
+      "summary": "Anomaly（OpenCode 團隊）推出的 MCP server + Chromium 擴充：agent 在背景收合的分頁群組裡讀頁面、點擊、打字、截圖、錄影；輪到人的步驟就把分頁交回，你按 Continue 後它再接著做；也能限制 agent 只能逛你指定的網站。OpenCode、Claude Code、Cursor、Codex、Zed 等 MCP client 都能接。HN 317 分、204 則留言。",
+      "tags": [
+        "browser agent",
+        "MCP",
+        "OpenCode"
+      ],
+      "url": "https://opencode.ai/product/browse",
+      "source": "OpenCode",
+      "sourceUrl": "https://opencode.ai/product/browse",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-18",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈Software is breaking down at a systemic level〉：Microsoft 兩天全球大當機、FAA 停飛、PHP2Shell 接連出事，作者認為問題出在整個產業做軟體的方式",
+      "summary": "作者把今年接連的當機和漏洞串起來看：這些事故的直接原因不同，卻長得很像，都是由太多必須完美運作的零件堆成的超複雜系統，零件又一個個被偷工減料、過度複雜化和沒人付錢的開源維護拖垮。AI 既是成因也是症狀，產生複雜度的速度比馴服它還快，公司可能失去「organisational cognition」。HN 382 分、244 則留言。",
+      "tags": [
+        "reliability",
+        "software complexity",
+        "AI-generated code",
+        "open source"
+      ],
+      "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+      "source": "Jimmy Breck-McKye",
+      "sourceUrl": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-17T04:04:50+08:00",
-  "updatedAt": "2026-11-17T04:04:50+08:00"
+  "lastUpdated": "2026-11-18T03:06:39+08:00",
+  "updatedAt": "2026-11-18T03:06:39+08:00"
 }
