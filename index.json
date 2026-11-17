@@ -120379,8 +120379,172 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261118-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "levelsio：那些看起來「浪費時間」的玩具專案，常常才是最大 payout 的來源",
+      "summary": "levelsio 說常被 normies 認為在做沒功能、沒收入、沒成果的玩具，但這些專案一次次演變成大回報。他舉例：2025 年 2 月用 Claude 做 Mario Kart 失敗，轉做飛行模擬器，兩天後 Claude 3.7 Sonnet 推出才真正做得動，最後多人同時在線、靠遊戲內贊助一個月賺 $85K、總計約 $200K。框架：play 是 optionality 的低成本買法——在新能力出現『之前』就已經在場上的人，才接得住那一波（2.2K likes）。",
+      "tags": [
+        "optionality",
+        "play",
+        "ai-native-building",
+        "solo-founder"
+      ],
+      "url": "https://x.com/levelsio/status/2122724654989332634",
+      "source": "Pieter Levels (X)",
+      "sourceUrl": "https://x.com/levelsio/status/2122656870993129851",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Dharmesh Shah：agentic coding 移動了「值不值得做」那條線——HubSpot Refounding Day 4",
+      "summary": "HubSpot 有 300,000+ 客戶，過去有一大堆『幾乎確定對客戶有用』的事，因為一段時間內能做的有限而從沒『made the cut』。Dharmesh 認為 agentic coding 對規模化公司的好處和對新創不同：不只能同時做更多 initiative，還能做更大的事，因為計算方式變了。他把產品方向濃縮成三個 H：Headless（程式化介面）、Harness（對話式 AI 介面）、Human（經典介面）。",
+      "tags": [
+        "agentic-coding",
+        "prioritization",
+        "refounding",
+        "headless"
+      ],
+      "url": "https://x.com/dharmesh/status/2122723651795468300",
+      "source": "Dharmesh Shah (X)",
+      "sourceUrl": "https://x.com/dharmesh/status/2122723651795468300",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Garry Tan：每份報告都附 Replication Appendix，讓同事的 agent 能重現你的 agent 找到的東西",
+      "summary": "Garry Tan 分享他的 methodology-appendix skill：凡是靠資料查詢得出結論的 memo/PDF，結尾自動附上 signal 選擇、原封不動的 queries、推導 pseudocode、重建指令與限制。檢驗標準是『拿著 agent 和同等資料權限的讀者，不用問作者就能從頭重建整份文件』；正文則只寫結論，第一句就要有 finding。當大家都用 agent 讀文件，文件的讀者其實是對方的 agent。",
+      "tags": [
+        "agent-workflow",
+        "documentation",
+        "reproducibility",
+        "skills"
+      ],
+      "url": "https://x.com/garrytan/status/2122586989082059129",
+      "source": "Garry Tan (X)",
+      "sourceUrl": "https://x.com/garrytan/status/2122586989082059129",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Dan Koe：You can't improve what doesn't exist",
+      "summary": "「You can't improve what doesn't exist, and your first version will suck. Be okay with that.」— Dan Koe。Dan Koe：先把會讓你尷尬的第一版做出來——書、貼文、產品都一樣——它必須是具體的、不是在腦中，之後才能把它變好（2.2K likes）。",
+      "tags": [
+        "shipping",
+        "perfectionism",
+        "creator"
+      ],
+      "url": "https://x.com/thedankoe/status/2122717500014022904",
+      "source": "Dan Koe (X)",
+      "sourceUrl": "https://x.com/thedankoe/status/2122717500014022904",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Jordan Krueger：我們不需要更多 app，需要更好的 open source（HN 323 分）",
+      "summary": "每天都有人貼週末用 AI 做的 habit tracker、to-do app，但幫助的只是少數找到它的人。Krueger 主張把 AI-assisted coding 的力氣導向已有數百萬人在用的 open source：做得更快、一行指令安裝、好維運、更輕量（能跑在 $5 server）。框架：把一個百萬人在用的工具變輕 20%，每天幫到所有人——leverage 在既有使用基數，不在新 app 數量；這種需要耐心多於天才的維護工作，正好適合 AI。",
+      "tags": [
+        "leverage",
+        "open-source",
+        "ai-assisted-coding",
+        "what-to-build"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50532086",
+      "source": "Jordan Krueger 部落格 • Hacker News",
+      "sourceUrl": "https://jordankrueger.com/blog/better-open-source-not-more-apps/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "Robin Li 與雷軍在 APEC CEO Summit：AI 的價值在應用層，多數公司導入 AI 後並沒有多賺",
+      "summary": "百度 Robin Li 把 AI 分成晶片、雲、模型、應用四層，競爭最激烈在底層，但價值最終要在應用層兌現；他問『企業導入 AI 後營收或利潤有變高嗎？For most, the answer is no』，若不解決，AI 泡沫的擔憂就可能成真。小米雷軍也說投入巨大、適用場景仍有限，真正形成商業閉環並獲利的公司很少。對 builder 的意思：別拼模型多強，要找『AI 真的適合』的高價值場景。",
+      "tags": [
+        "ai-roi",
+        "application-layer",
+        "ai-bubble",
+        "leadership"
+      ],
+      "url": "https://www.channelnewsasia.com/asia/baidu-china-ai-adoption-apec-summit-6558021",
+      "source": "CNA • APEC CEO Summit 2026",
+      "sourceUrl": "https://www.channelnewsasia.com/asia/baidu-china-ai-adoption-apec-summit-6558021",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Paul Graham：想像你是 Nvidia 董事，還能面不改色說別人會比 Jensen 做得更好？",
+      "summary": "「Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim with a straight face that one of the others would do a better job.」— Paul Graham。Jensen Huang 辭職風波後表態願意回任，Garry Tan（Bring Jensen back）、DHH、Balaji 等一面倒要董事會請他回來；PG 這則是當天社群最熱的一句（5.1K likes），點出 founder 在某些公司裡根本不可替代。",
+      "tags": [
+        "founder-irreplaceability",
+        "nvidia",
+        "board-governance"
+      ],
+      "url": "https://x.com/paulg/status/2122745936279462274",
+      "source": "Paul Graham (X)",
+      "sourceUrl": "https://x.com/paulg/status/2122745936279462274",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261118-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-18",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Taleb：你在學校學的一切，會在第一次交易虧損那天崩塌",
+      "summary": "「Your entire academic education falls apart on the day you take the first trading hit.」— Nassim Nicholas Taleb。Taleb 一貫的 skin in the game：理論在真正承擔後果之前都不算數（5.9K likes）。",
+      "tags": [
+        "skin-in-the-game",
+        "learning-by-doing"
+      ],
+      "url": "https://x.com/nntaleb/status/2122697144666882558",
+      "source": "Nassim Nicholas Taleb (X)",
+      "sourceUrl": "https://x.com/nntaleb/status/2122697144666882558",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-18T03:30:12+08:00",
-  "updatedAt": "2026-11-18T03:30:12+08:00"
+  "lastUpdated": "2026-11-18T03:37:59+08:00",
+  "updatedAt": "2026-11-18T03:37:59+08:00"
 }
