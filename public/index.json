@@ -121102,8 +121102,157 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261119-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32071：支援 Zyphra ZAYA1-8B（MoE、active 不到 1B），CUDA 的 SSM_CONV 也一起修好",
+      "summary": "PR 在 11/18 22:46（台北時間）合併，加入 ZAYA1 架構：Compressed Convolutional Attention（CCA）、MLP router 和 learned residual scaling，並修好 SSM_CONV kernel size 2 在 CUDA 上會 abort 的問題。ZAYA1-8B 是 Zyphra 在 AMD MI300 上訓練的 MoE，官方說在數學、coding 上能對打大好幾倍的模型。Zyphra 說這是先讓 base model 進來，之後再補 GPU 和 speculator 支援，給即將發布的新模型 day-0 用；review 也提醒 quantized KV（`-ctk q8_0`）還沒有測試覆蓋。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "MoE",
+        "ZAYA1",
+        "CCA"
+      ],
+      "url": "https://www.zyphra.com/our-work/zaya1-8b",
+      "source": "GitHub (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32071",
+      "price": null,
+      "vram": "8B 總參數、active 不到 1B；依參數量估 Q8_0 約 9GB，16GB 綽綽有餘（官方未公布 GGUF 用量）",
+      "license": "MIT（llama.cpp）／Apache-2.0（ZAYA1-8B）"
+    },
+    {
+      "id": "20261119-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "BiVoC（arXiv）：1-bit 二值化 neural vocoder，品質接近全精度 vocoder、運算量大幅下降，code 和權重已開源",
+      "summary": "論文 11/17 上 arXiv：在作者先前的 RNDVoC 基礎上，把 time-frequency vocoder 改成 binary neural network，權重和 activation 壓到 1 bit；對品質敏感的模組保留全精度、計算量大的部分二值化（mixed-precision）。在 LibriTTS 和多個 out-of-distribution 測試上，明顯贏過直接二值化現有 vocoder 的做法，主客觀分數跟主流全精度 vocoder 有得比，理論運算成本低很多。對 TTS／SVC 管線的 vocoder 端在邊緣裝置上跑很有參考價值。",
+      "tags": [
+        "tts_speech",
+        "neural vocoder",
+        "binarization",
+        "BNN"
+      ],
+      "url": "https://github.com/Andong-Li-speech/BiVoC",
+      "source": "arXiv (eess.AS)",
+      "sourceUrl": "https://arxiv.org/abs/2611.22593",
+      "price": null,
+      "vram": "vocoder 等級的小模型，1-bit 設計本來就瞄準低運算資源，本地跑沒問題",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Hugging Face 釋出 Qwen3.8-27B-pi-adapted：為 pi coding agent 用 RL 練的 LoRA，不開 thinking 就追平 xhigh thinking",
+      "summary": "harness-hub 團隊用 async GRPO 練的 LoRA（rank 32），專門讓 Qwen3.8-27B 在 pi 這個 coding agent harness 裡工作。在 pi 裡 thinking 關閉：SWE-bench Pro（hard 51）39.2% → 64.7%、Terminal-Bench 2.1 39.5% → 55.8%，等於追平 base model 開最高 reasoning effort，但生成 token 少約 4.5 倍。官方提醒結果只在 pi harness 下成立、評測集偏小；有 vLLM、llama.cpp GGUF adapter（只有 0.32GB）和 macOS Llama.app 的用法，完整 recipe 會放在 HF blog。",
+      "tags": [
+        "llm_training",
+        "LoRA",
+        "GRPO",
+        "coding agent",
+        "Qwen3.8-27B"
+      ],
+      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted-GGUF",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+      "price": null,
+      "vram": "官方 llama.cpp 範例掛在 Q8_0 base 上（27B Q8_0 塞不進 16GB）；16GB 要改用更低 bit 的 base GGUF，這個組合官方沒有測過",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261119-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "llama.cpp 合併 PR #30672：cuBLAS 依 NVIDIA GPU 型號自動選精度，GeForce 繼續用 FP16 accumulation",
+      "summary": "NVIDIA 工程師提的 PR，11/19 01:29（台北時間）合併。透過 NVML 判斷 GPU 品牌：GeForce 上 quantized matmul 維持 FP16 輸入和 FP16 accumulation，避免 FP32 accumulation 的速度懲罰；專業卡和 DGX Spark（GB10）則改用 BF16 輸入、FP32 accumulation。DGX Spark 跑 Qwen3.8-27B Q4_K_M，prompt processing 快 7.26%、token generation 不變；手動 override 照舊有效。",
+      "tags": [
+        "infra_runtime",
+        "CUDA",
+        "cuBLAS",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/30672",
+      "source": "GitHub (ggml-org/llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/30672",
+      "price": null,
+      "vram": "不影響 VRAM；RTX 5070 Ti 屬於 GeForce，行為維持 FP16 路徑",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "騰訊 Hy4 flash 正式開放權重：220B（含 63.5B Engram）、active 約 12B、1M context，vLLM／SGLang day-0，社群 quant 一天內湧現",
+      "summary": "接續 11/17 的「宣布會開放」，tencent/Hy4-flash 已上 Hugging Face，Instruct、FP8 和 base model 同時放出。官方附 AngelSlim 的 GGUF（標明是 end-to-end 測試用，llama.cpp 支援還在 PR #32517 未合併），另有 vLLM、SGLang 官方 image，以及內建的 DFly2 speculative drafter（共用 sparse KV，不多佔 KV 記憶體）。HF 上一天內已有 NVFP4、EXL3、AWQ、MLX 等社群量化；HN 159 分。授權是改自 Apache-2.0 的 Tencent Hy License，做 MaaS 且年營收超過 US$5,000 萬要另外授權。",
+      "tags": [
+        "llm_inference",
+        "open weights",
+        "MoE",
+        "Engram",
+        "GGUF"
+      ],
+      "url": "https://huggingface.co/AngelSlim/Hy4-flash-GGUF",
+      "source": "Hugging Face (tencent)",
+      "sourceUrl": "https://huggingface.co/tencent/Hy4-flash",
+      "price": null,
+      "vram": "官方最小的 IQ2 GGUF 約 135GB、Q4_K_M 約 168GB，16GB VRAM＋64GB RAM 放不下；官方實測機器是 128GB 的 Mac M5 Max／RTX Spark",
+      "license": "Tencent Hy License 1.0（改自 Apache-2.0；MaaS 年營收超過 US$5,000 萬需另行授權）"
+    },
+    {
+      "id": "20261119-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Cerebras 上線 disaggregated inference：GPU 做 prefill、Cerebras 做 decode，每 MW 吞吐量變 5 倍",
+      "summary": "Cerebras 11/17 宣布已在自家 Inference Cloud 正式上線：AMD Instinct GPU 處理 prefill，CS-3 專心做 decode，KV cache 透過 KV Portal 走 RDMA 傳遞。官方以 GPT-OSS-120B 共用 endpoint 量測，throughput per megawatt 是只用 CS-3 的 5 倍，生成速度不變；prefill 端用 vLLM 或 SGLang。AWS、Fireworks AI 等 early-access 夥伴已在用，也提供 decode-only SDK 給想自帶 framework 的夥伴。HN 101 分。",
+      "tags": [
+        "llm_inference",
+        "disaggregated inference",
+        "prefill/decode",
+        "Cerebras"
+      ],
+      "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "source": "Cerebras Blog",
+      "sourceUrl": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "price": null,
+      "vram": "資料中心架構，跟本地 GPU 無關",
+      "license": "商業服務"
+    },
+    {
+      "id": "20261119-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Microsoft 把 ONNX Runtime 的 GitHub repo 設成私有：同一時間 agent-framework 的 PyPI 套件被植入竊密程式（HN 437 分）",
+      "summary": "microsoft/onnxruntime 從 11/18 早上（台北時間）開始變成 404，onnxruntime-genai、-extensions 等相關 repo 和 GitHub Actions 也一起消失。Microsoft 對 The Register 表示「為了調查惡意內容，已把部分 repo 設成私有」；同時 agent-framework 的 PyPI 版本 1.26.1、1.26.2 被發現會偷 Azure、GitHub、Hugging Face 等憑證，但官方和研究人員都還沒把兩件事連起來。HN 留言指出 onnxruntime.ai、PyPI、Maven 上的套件目前還在，但從原始碼建置的下游 build 會壞；有在用 ONNX Runtime 的 TTS／ASR 管線先別急著更新。",
+      "tags": [
+        "infra_runtime",
+        "onnx runtime",
+        "supply chain security"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50539610",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50539610",
+      "price": null,
+      "vram": "N/A",
+      "license": "MIT（ONNX Runtime）"
     }
   ],
-  "lastUpdated": "2026-11-19T03:15:32+08:00",
-  "updatedAt": "2026-11-19T03:15:32+08:00"
+  "lastUpdated": "2026-11-19T03:23:26+08:00",
+  "updatedAt": "2026-11-19T03:23:26+08:00"
 }
