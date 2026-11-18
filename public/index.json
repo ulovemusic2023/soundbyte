@@ -120845,8 +120845,265 @@
       "url": "https://pushr.sh",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/pushr"
+    },
+    {
+      "id": "20261119-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 公開 Codex sandbox 的設計：不用 VM 或 container，直接用各 OS 的 sandbox 在你自己的環境跑指令，`codex sandbox` 也能拿去包你自己的工具",
+      "summary": "Michael Bolin 的長文。預設 `:workspace` permission profile：workspace 內可寫但 `.git`、`.codex` 唯讀（防改 git hooks 和設定）、讀取範圍寬、網路預設關；要上網就經 codex-network-proxy 依 domain allow／deny 規則放行，沒命中的請求會暫停交給使用者或 auto-review 決定，而且先判斷允許才做 DNS 解析。macOS 用 Seatbelt（sandbox-exec），Linux 用 bubblewrap＋seccomp-bpf，Windows 用 MXC。企業可用 requirements.toml 限制能選的 profile。文章也坦白：agent 仍可能改 node_modules 裡的套件、等你存檔時在 sandbox 外被執行，所以 sandbox 只是 defense in depth 的一層。",
+      "tags": [
+        "agent sandbox",
+        "coding agent",
+        "permission profile",
+        "network proxy",
+        "bubblewrap",
+        "seccomp"
+      ],
+      "url": "https://openai.com/index/inside-the-codex-sandbox",
+      "source": "OpenAI",
+      "sourceUrl": "https://x.com/OpenAIDevs/status/2123129469447880885",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Harvard 研究：導入 AI coding agents 的公司 code 多寫約 30%，完成的工作卻沒增加，PR 到 merge 反而慢了 49%——瓶頸移到 code review",
+      "summary": "Fiona Chen 和 James Stratton 的 working paper（尚未同儕審查），用 Jellyfish 資料涵蓋 718 家公司、72.6 萬名員工、4,910 萬個 PR。PR 送出到 merge 從 7.03 天多了 3.45 天，被要求修改的 PR 比例從 13% 增加約 12 個百分點、每個 PR 的 review 留言多 35%；到 2026 年 3 月近八成公司用過 AI review 工具，但 AI 只產生 23.3% 的 review 留言。文章是 10/13 的，這兩天在 HN 衝到 304 分、410 則留言；Gergely Orosz 補一句：再過 12–18 個月，瓶頸會先移到 CI/CD，再到 verification＋o11y。",
+      "tags": [
+        "paradigm-shift",
+        "code review",
+        "coding agent",
+        "developer productivity",
+        "verification"
+      ],
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "source": "ComplexDiscovery",
+      "sourceUrl": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Copilot code review 加入 Adaptive effort：依 PR 的複雜度與風險自動選 Lite／Balanced／Max，還能跨 repo 找相依程式碼、抓外洩的 secrets",
+      "summary": "GitHub 11/17 的 Ignite 更新。Adaptive（public preview）不會超過 org／repo 設的最高 effort 上限；cross-repository context 讓 review 時讀相關 public repo、文件、custom instructions 和 skills；secret detection 結合 deterministic 和非 deterministic 方法。另外 Repository insights 新增 Copilot review 成效頁：留言被採納比例、高嚴重度留言採納數、之後沒有人類再要求修改的 PR 數，以及沒被 Copilot review 就 merge 的 PR 數——正好可以拿來量 review 這一關。",
+      "tags": [
+        "code review",
+        "GitHub Copilot",
+        "adaptive effort",
+        "secret detection",
+        "verification"
+      ],
+      "url": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft 發布 MAI Code 2 與 Code 2 Flash：官方說有 GPT-6.1 Sol 98% 的表現、只要 40% 成本，已進 GitHub Copilot 和 Copilot Fusion",
+      "summary": "Microsoft AI 自家 coding model，主打日常企業開發（多檔實作、debug、UI），並明說還沒針對很長的 agentic 任務調整。官方四項 benchmark 平均（DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas、FrontierCode v1.1）：Code 2 是 GPT-6.1 Sol 的 98%、成本 40%，是 Claude Opus 5.5 的 96%、成本 5%；Flash 對標 GPT-6 Luna、Claude Haiku 5.5。數字都是微軟自測。同天 Copilot Fusion（自動挑選與協調模型）把 MAI-Code-2 加進 Standard，並宣稱 Fusion Max 在 Terminal-Bench 4.1 公開榜拿 71.2%。之後也會上 OpenRouter、Vercel、OpenCode、Kilo。HN 414 分。",
+      "tags": [
+        "MAI Code 2",
+        "coding model",
+        "GitHub Copilot",
+        "model routing",
+        "Copilot Fusion"
+      ],
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "source": "Microsoft AI",
+      "sourceUrl": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Shopify Remote Dev：三、四個 agent workflow 就能把筆電操爆，於是改用遠端 Mac 機隊＋Linux VM，讓 agent 平行 build、測 iOS／Android",
+      "summary": "InfoQ 整理 Shopify 工程團隊的做法。原本給 web／backend 用的 River 是 Linux 方案、不能 build iOS，Remote Dev 補上這塊：遠端 Mac 跑 iOS simulator、Android emulator 放在另外的 Linux VM，同一個 SSH session 兩邊都能用，每個 agent session 有自己的環境，也能從 Slack 頻道叫用。agent 可以改 code、build、跑測試、操作 simulator 截圖、開 PR，失敗就看 log 修了再試；也跑夜間自動找 bug、修好送 PR 的流程。另一個實際理由：筆電蓋上，工作就停了。",
+      "tags": [
+        "coding agent",
+        "remote dev environment",
+        "parallel agents",
+        "mobile CI"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "GitHub Copilot app 支援 Azure DevOps repo 與 browser use：agent 在你已登入的 Chrome／Edge 隔離分頁裡填表、測自己的 web app",
+      "summary": "Ignite 更新：Azure DevOps 整合（public preview）能 clone、開 branch、開 PR，點 Fix 讓 agent 處理 review 留言，開 agent merge 讓它修 CI 失敗、等 checks 過了自動完成 PR（但 Azure DevOps 沒有 cloud sessions）。Browser use 預設關閉，裝 Chrome 擴充並同時開啟 Computer Use、Browser Use 才能用，在 isolated tab group 裡跑，Copilot CLI、VS Code、JetBrains 也有。GHES 支援轉 GA（需 app 1.2.0+）。",
+      "tags": [
+        "GitHub Copilot app",
+        "browser use",
+        "agent merge",
+        "Azure DevOps"
+      ],
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Launch HN：StarSling（YC P25）——給 agent 產量級 repo 用的 CI runner，附帶會自己開 PR 優化 workflow 的 agent loop",
+      "summary": "創辦人說自家 agents 開的 PR 多到 job queue 塞好幾小時、CI 帳單快追上推論帳單。每個 job 一個 ephemeral sandbox（Zen 5、NVMe、不限 concurrency）；CI harness 的 agent 會分析 workflow、log 和機器 telemetry，提出優化後跟原 workflow 並排跑，用統計檢定判斷差異顯著才開 PR。案例：Mastra 每月 merge 1,800+ PR，最慢的 workflow 從 29m56s 降到 5m06s；也幫 better-auth 找到一個 11 個月的效能瓶頸。HN 87 分。",
+      "tags": [
+        "CI",
+        "coding agent",
+        "agent-volume repos",
+        "GitHub Actions"
+      ],
+      "url": "https://starsling.dev",
+      "source": "Hacker News (Launch HN)",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50536468",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Pragmatic Engineer 訪 CodeRabbit CEO Harjot Gill：一個月用 AI 開 5,000+ 個 PR、每月花 25 萬美元在 AI 上，認為人類 code review 已死",
+      "summary": "Gergely Orosz 的 podcast，看一家「AI-pilled」新創怎麼運作：Harjot 說明為什麼這樣燒錢對 CodeRabbit 有道理，以及他心中的 software factory。跟今天 Harvard 那篇 review 瓶頸研究剛好是兩個極端的對照，可以一起看。",
+      "tags": [
+        "software factory",
+        "code review",
+        "AI spend"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Java4Shell（CVE-2026-114938）：OpenJDK Base64 decoder 的 AVX-512 組語 bug，64 個 A 加一個 = 就能觸發記憶體破壞，Jenkins、Jira、Keycloak 預設設定都被打成 pre-auth RCE",
+      "summary": "Calif.io 揭露，CVSS 4.0 9.2。bug 在 x86-64 AVX-512 VBMI 加速路徑處理尾端字元時算出負長度，寫出陣列外 62 bytes。他們示範 pre-auth RCE：Keycloak、Jira、Confluence、Artifactory、Jenkins、PingFederate；post-auth：Kafka、Solr、Elasticsearch 等，惡意 TLS server 也能反打 client。用 AI 找＋寫 exploit，一小時找到、兩小時出 exploit，token 成本不到 200 美元。Oracle 11/17 已出 patch；暫時可用 `-XX:-UseBASE64Intrinsics` 或 `-XX:UseAVX=2`（只限 x86-64，ARM 上會起不來）。HN 1,133 分，今天最熱。",
+      "tags": [
+        "Java4Shell",
+        "OpenJDK",
+        "RCE",
+        "AI-assisted exploit",
+        "vibe-uncoding"
+      ],
+      "url": "https://calif.io/java4shell/",
+      "source": "Calif.io",
+      "sourceUrl": "https://calif.io/java4shell/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Microsoft 官方 agent-framework PyPI 套件被植入竊密程式（1.26.1、1.26.2），ONNX Runtime 等 repo 也突然轉 private",
+      "summary": "Socket 和 The Register：攻擊者透過 Microsoft 官方 PyPI publisher 帳號上傳，用 `.pth` startup hook，裝了不用 import、Python 一啟動就偷環境變數、憑證檔和 Azure／GitHub Actions OIDC token，送到 webhook.site。這個套件每月近 20 萬次下載。同時 microsoft/onnxruntime 從 GitHub 消失（HN 437 分），微軟發言人說「在調查惡意內容期間先把部分 repo 設為 private」，下游 build 跟著壞。有裝到的話：移除並輪換所有可能外洩的憑證。",
+      "tags": [
+        "supply chain security",
+        "PyPI",
+        "agent framework",
+        "credential stealer"
+      ],
+      "url": "https://socket.dev/blog/agent-framework-pypi-package-compromised-with-credential-stealer",
+      "source": "Socket",
+      "sourceUrl": "https://socket.dev/blog/agent-framework-pypi-package-compromised-with-credential-stealer",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "NGINX 兩個 HTTP/2 未驗證 RCE（CVE-2026-123633、CVE-2026-123007），其中一個從 2015 年的 1.9.5 就存在",
+      "summary": "Wiz、Ikotas Labs、Metnir、Rapid7、Xint 各自獨立發現，兩個都是 CVSS 4.0 9.2，前提是有開 HTTP/2。Wiz 10/21 回報 use-after-free（含繞過 ASLR 的 RCE），F5 11/18 發布安全更新並協同揭露，建議直接升到最新版。繼 Apache httpd、PHP2Shell、Java4Shell 之後又一個基礎建設級漏洞。HN 524 分。",
+      "tags": [
+        "NGINX",
+        "HTTP/2",
+        "RCE",
+        "security"
+      ],
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "source": "Wiz Research",
+      "sourceUrl": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Solid 2.0 穩定版：async 直接進 reactive graph、內建 server functions，還有「為 agent 設計的 diagnostics」和更小的 API",
+      "summary": "Ryan Carniato 寫的發布文，距 1.0 又是五年。computation 可以直接回傳 Promise 或 async iterator，下游自動處理 loading、race condition，推測性狀態會自動 rollback；官方說 signals 現在已在 Angular、Svelte runes、Vue Vapor 和 TC39 提案裡普及，而 AI 是更大的改變。HN 367 分。",
+      "tags": [
+        "Solid 2.0",
+        "signals",
+        "frontend",
+        "agent diagnostics"
+      ],
+      "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
+      "source": "Solid Blog",
+      "sourceUrl": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-18T04:03:37+08:00",
-  "updatedAt": "2026-11-18T04:03:37+08:00"
+  "lastUpdated": "2026-11-19T03:15:32+08:00",
+  "updatedAt": "2026-11-19T03:15:32+08:00"
 }
