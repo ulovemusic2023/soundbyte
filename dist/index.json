@@ -121251,8 +121251,153 @@
       "price": null,
       "vram": "N/A",
       "license": "MIT（ONNX Runtime）"
+    },
+    {
+      "id": "20261119-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Daniel Stenberg：寫一次 code 從來不是難題——curl 是「時間」的產物",
+      "summary": "有人花 8,600 USD 讓 agents 把 curl 18.5 萬行 C 轉成 34 萬行 Rust；同一段約三週，真正的 curl 合併了 300+ commits、修了 200 多個 bug 和數個漏洞，而這些 clone 一個都沒有。Stenberg 的框架：AI 能複製某一刻的快照，但複製不了持續的修補、迭代與使用者／維護者社群——那才是 moat；他不相信 rewrite，只相信永不停止的 polishing。",
+      "tags": [
+        "moat",
+        "time-as-moat",
+        "ai-rewrite",
+        "open-source"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
+      "source": "Daniel Stenberg (blog)",
+      "sourceUrl": "https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "levelsio：「Riches in the niches」失效——多數 SaaS 在 AI 時代沒有活路",
+      "summary": "過去的打法是挑一個 big tech 不屑做的 $300M 小市場、拿 1% 就有 $3M/年；但大廠現在賣的不是某個 SaaS，而是什麼都能做的 AGI，可以同時填滿所有 niche。SaaS 只剩兩條路：守在 niche（已經不管用），或走向什麼都做，直到客戶發現不如直接用底層模型供應商。他自己都承認「會有倖存者」只是 optimist 的 wishful thinking（1.6K likes）。",
+      "tags": [
+        "saas",
+        "niche-collapse",
+        "solo-founder",
+        "ai-disruption"
+      ],
+      "url": "https://x.com/levelsio/status/2122807280198463986",
+      "source": "Pieter Levels (blog / X)",
+      "sourceUrl": "https://levels.io/saas-companies-cannot-survive-ai",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "Claude Code 團隊：verification loop 決定你能同時跑幾個 agent",
+      "summary": "Claude Code 團隊約 90% 的 code 由 Claude 撰寫與 review；沒有驗證機制只能同時盯一兩個 Claude，有了才能平行跑幾十上百個。優先投資 E2E test（很難騙過）、property test（用非 agent 偏誤產生的 edge case）與 differential test（新舊系統比對）；並提醒 flaky test 會訓練 agent「重跑」而不是修 code。同日 Naval 一句「From vibe code to verified code…」也有 1.7K likes（HN 290 分）。",
+      "tags": [
+        "verification-loops",
+        "agentic-coding",
+        "testing",
+        "ai-native-building"
+      ],
+      "url": "https://x.com/naval/status/2123082164426420367",
+      "source": "Claude Code team (claude.dev)",
+      "sourceUrl": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "operational",
+      "title": "PostHog：Not Everything Needs an LLM——先用 decision model 擋掉昂貴的 LLM call",
+      "summary": "PostHog 用回傳「答案＋機率」的 decision model 當 gate 和 model router：PII 清洗流程中 98.7% 的 summary 完全不需要呼叫 LLM。關鍵框架是依「哪種錯誤比較貴」設 threshold——false negative 代價高就設低（0.4），怕打擾使用者就設高（0.85+）；且 threshold 換模型版本就要重新校準（HN 174 分）。",
+      "tags": [
+        "decision-model-gating",
+        "unit-economics",
+        "llm-cost",
+        "ai-product"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50535740",
+      "source": "PostHog newsletter",
+      "sourceUrl": "https://newsletter.posthog.com/p/decision-models",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Balaji：好的公司治理應該是 founder control，不是 board control",
+      "summary": "Balaji 主張商學院教材要重寫：董事會只是 advisory board，shareholder vote 是備援，賣股是最後手段。20 世紀 MBA 式治理適合 GM、GE 那種「個人不重要」的年代；但電腦給了個人 leverage，founder-led 科技公司的績效已證明舊預設過時，而董事會常常消耗價值多於創造（1.5K likes）。",
+      "tags": [
+        "founder-control-governance",
+        "leverage",
+        "board",
+        "founder-mode"
+      ],
+      "url": "https://x.com/balajis/status/2123002639168491711",
+      "source": "Balaji Srinivasan (X)",
+      "sourceUrl": "https://x.com/balajis/status/2123002639168491711",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Tobi Lütke：founder 沒有真正的接班——Nvidia 會變成「cosplay Nvidia」",
+      "summary": "「There is no replacing a founder like Jensen. There never has been, and there can never be, a true succession for a founder like him. Nvidia ends today, and is replaced with a thing cosplaying Nvidia. It will be run by custodians trying and failing to preserve the flame he ignited.」— Tobi Lütke。David Senra 引述的這段（2.3K likes）加上 Tobi 自己轉發「His return to NVIDIA is in all of our best interest」（3.8K likes），是 Jensen 去留風波中 founder 陣營最強的一句。",
+      "tags": [
+        "founder-irreplaceability",
+        "succession",
+        "nvidia"
+      ],
+      "url": "https://x.com/tobi/status/2122811342423826728",
+      "source": "David Senra (X)",
+      "sourceUrl": "https://x.com/davidsenra/status/2122786298004230233",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261119-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Paul Graham：只要發現自己身處人群，就知道哪裡不對了",
+      "summary": "「A huge percentage of my life is spent avoiding crowds. Avoiding fashionable ideas, investing in underpriced assets, finding cool places that aren't deluged with tourists — they're all variants of the same thing.」— Paul Graham。contrarian thinking 的生活版：流行想法、熱門資產、觀光景點都是同一種「擁擠」（3.3K likes）。",
+      "tags": [
+        "contrarian",
+        "avoid-crowds",
+        "asymmetric-upside"
+      ],
+      "url": "https://x.com/paulg/status/2123122026932007233",
+      "source": "Paul Graham (X)",
+      "sourceUrl": "https://x.com/paulg/status/2123122026932007233",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-19T03:23:26+08:00",
-  "updatedAt": "2026-11-19T03:23:26+08:00"
+  "lastUpdated": "2026-11-19T03:39:29+08:00",
+  "updatedAt": "2026-11-19T03:39:29+08:00"
 }
