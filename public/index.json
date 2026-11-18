@@ -121396,8 +121396,320 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261119-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "ZiChuanLan/freebie-radar",
+      "summary": "自架的「資源雷達」：從開發者社群、GitHub、Reddit、Bluesky、Telegram 頻道和自訂 RSS 採集，流程是規則初篩＋統一屏蔽詞 → AI 語義定級分流（27 類）→ 分頻道呈現 → 多路由 Telegram 推送（可即時或攢批）。跟你現在 radar 系統「filter 到只剩重要的」需求幾乎同一個問題，值得偷看它的定級與路由設計。",
+      "tags": [
+        "rss",
+        "news aggregator",
+        "digest",
+        "self-hosted",
+        "telegram"
+      ],
+      "url": "https://github.com/ZiChuanLan/freebie-radar",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-05+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1610,
+      "createdDate": "2026-11-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "CzzzzzzJ/mdldm-maitian",
+      "summary": "「麥田」：一人做內容、要發六七個平台的發佈中控。發佈 skill 讓 Claude Code / Codex 看片、寫各平台文案並生成發佈工程，Chrome 外掛負責上傳與排程（B站、抖音、小紅書、視頻號、YouTube、X、Instagram），再自動採集每期播放、互動、粉絲與轉化。跑在常開的 Mac、用你登入好的瀏覽器，不存平台密碼；國內四家只填寫不發佈，最後一下由你按。",
+      "tags": [
+        "creator tools",
+        "claude code",
+        "codex",
+        "automation",
+        "chrome extension"
+      ],
+      "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-05+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1292,
+      "createdDate": "2026-11-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "serveroshq/panel",
+      "summary": "ServerOS 的開源 panel：一行指令接上任何供應商的 VPS，從 Git 或 template 部署 app／網站／資料庫，含網域＋HTTPS、排程備份、uptime 監控、log、workflow（deploy → check → promote）。內建 MCP server 和 API，讓你的 coding agent 直接操作伺服器；可用 Docker 自架。",
+      "tags": [
+        "devops",
+        "self-hosted",
+        "mcp",
+        "docker"
+      ],
+      "url": "https://github.com/serveroshq/panel",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-05+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1156,
+      "createdDate": "2026-11-09",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261119-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "ysunyang4/Nexus",
+      "summary": "本地 MCP control plane（Tauri 2 桌面 app）：用 MCP Streamable HTTP＋bearer token 把你授權的本地工具（檔案、terminal、Git、build/debug）開給 ChatGPT、DeepSeek 等網頁版 AI，搭配同作者的 WebAgent 瀏覽器外掛；有 workspace 權限與操作紀錄。README 自己提醒：回傳給網頁 AI 的工具結果會離開你的機器。",
+      "tags": [
+        "mcp",
+        "local tools",
+        "tauri",
+        "ai agent"
+      ],
+      "url": "https://github.com/ysunyang4/Nexus",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 405,
+      "createdDate": "2026-11-13",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261119-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "codepawl/creator-generalist",
+      "summary": "一包 agent skills，讓 coding agent 變成 2D／3D generalist 加小型遊戲工作室：/3dg、/2dg、/gameg 三個主 skill，用 Blender、Three.js 等做 3D Short、cutaway、Vox 風格 explainer，目標是 YouTube、TikTok、IG、X 的 Shorts 內容。開工前先問幾個問題、先給便宜的 preview，再有 QA gate。",
+      "tags": [
+        "agent skill",
+        "claude code",
+        "creator tools",
+        "blender",
+        "video"
+      ],
+      "url": "https://github.com/codepawl/creator-generalist",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 301,
+      "createdDate": "2026-11-06",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "shurshun/count-in",
+      "summary": "找出歌曲 tempo 和第一個 downbeat，在前面加 1–2 小節鼓棒 count-in（最後一下剛好落在「one」前一拍），pattern 可用自己的 MIDI。神經網路一次分離 guitar／vocals／bass／drums／piano 做 backing track，可降速到 80% 不變調；分離在 GPU 跑（Mac Core ML、Windows DirectML），離線可用。",
+      "tags": [
+        "audio",
+        "music",
+        "stem separation",
+        "midi",
+        "backing track"
+      ],
+      "url": "https://github.com/shurshun/count-in",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/audio",
+      "stars": 114,
+      "createdDate": "2026-11-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "HyunSeob/iphone-cli",
+      "summary": "讓 AI agent 從 terminal 讀取並操作真實 iPhone 上任何 app：讀 accessibility tree 而不是截圖，不用 Xcode、WebDriverAgent，也不用在手機裝 app；單一 Rust binary，附 CLI＋MCP server（iph mcp）。限制：只支援 iOS 27+，作者只在一台 iPhone 15 Pro Max 上驗證過。",
+      "tags": [
+        "cli tool",
+        "mcp",
+        "ios",
+        "computer use",
+        "rust"
+      ],
+      "url": "https://github.com/HyunSeob/iphone-cli",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 104,
+      "createdDate": "2026-11-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "Apakottur/unref",
+      "summary": "用 Ruff parser、以 Rust 寫的 Python dead code finder：README 稱比 vulture 快 20x，整個 CPython 不到一秒掃完；內建 pytest、Django、Flask、Pydantic 等框架規則，uvx unref 就能跑，也能掛 pre-commit 或 GitHub Actions。很適合清 agent 寫完留下的死碼。Show HN 57 points。",
+      "tags": [
+        "linter",
+        "python",
+        "rust",
+        "dead code"
+      ],
+      "url": "https://github.com/Apakottur/unref",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50517410",
+      "stars": 77,
+      "createdDate": "2026-11-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "baney75/smoothstone",
+      "summary": "讓 LFM3-1.7B 這種小型本地模型做出可 3D 列印零件的 skill＋CLI：模型不寫幾何，只挑測過的 recipe、填尺寸，由 stone 工具建模、檢查可列印性並把每步寫到磁碟。作者盲測 39/40 成功（中途清空記憶 38/40），讓模型直接寫 3D code 是 0/15。思路可套用到「小模型＋工具」的任何 workflow。",
+      "tags": [
+        "local llm",
+        "agent skill",
+        "cli tool",
+        "3d printing"
+      ],
+      "url": "https://github.com/baney75/smoothstone",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/local-llm",
+      "stars": 73,
+      "createdDate": "2026-11-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "on-the-radar",
+      "title": "mvanhorn/last30days-skill",
+      "summary": "本週 +1,548 stars。/last30days 研究 skill：把 Reddit、X、YouTube、HN、Polymarket、GitHub 等過去 30 天的討論撈回來，用 upvotes、likes、真金白銀的賭盤權重排序再整理成摘要。Claude Code 可用 plugin marketplace 安裝，其他 Agent Skills host 用 npx skills add；跟 radar「most discussed」那一半的需求很接近。",
+      "tags": [
+        "agent skill",
+        "claude code",
+        "research",
+        "digest"
+      ],
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 69859,
+      "createdDate": "2026-01-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "on-the-radar",
+      "title": "elementalsouls/Claude-BugHunter",
+      "summary": "本週 +2,508 stars。給 Claude Code 的 bug hunting／red team skill bundle：83 個 skills、15 個 slash commands、整理自 681 份公開揭露報告的 pattern，含 Burp MCP 整合。上線前拿來替自家服務做授權範圍內的安全自查很實用。",
+      "tags": [
+        "claude code",
+        "agent skill",
+        "security",
+        "red team"
+      ],
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 11100,
+      "createdDate": "2026-05-05",
+      "license": "MIT"
+    },
+    {
+      "id": "20261119-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "on-the-radar",
+      "title": "google-labs-code/stitch-skills",
+      "summary": "本週 +1,197 stars。Google Stitch 官方 agent skills＋plugins（stitch-design／stitch-build／stitch-utilities），照 Agent Skills 開放標準，可裝進 Codex、Claude Code、Cursor、Gemini CLI、Antigravity，搭配 Stitch MCP server 讓 agent 做 UI 設計與元件。",
+      "tags": [
+        "agent skill",
+        "mcp",
+        "ui design",
+        "codex",
+        "claude code"
+      ],
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 10361,
+      "createdDate": "2026-01-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261119-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "product-hunt",
+      "title": "S.Space",
+      "summary": "11/18 PH 當日暫列第 1（抓取時 280 upvotes、80 comments）。AutoGen 團隊做的團隊＋agent 共用 workspace：把 Claude Code、Codex 等不同廠商的 agent 拉進同一個 room，agent 之間互相交辦、共享記憶，重要動作由人核准；自家 agent Sutando 跑在你的 Mac 上，用你的 Claude Code 或 Codex 訂閱。免費開始。",
+      "tags": [
+        "multi-agent",
+        "claude code",
+        "codex",
+        "team workspace"
+      ],
+      "url": "https://s.space",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/s-space"
+    },
+    {
+      "id": "20261119-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "product-hunt",
+      "title": "Toone",
+      "summary": "11/18 PH 當日暫列第 3（抓取時 202 upvotes）。「Grokbot meets n8n/zapier」的 macOS app：用自然語言描述重複工作，生成可檢視的 step graph，每個節點是一個 agent thread（ChatGPT 或 Claude）或不花 token 的固定自動化步驟；可暫停、編輯、從中斷處續跑。需 macOS 14+ 與你自己的 OpenAI／Anthropic 訂閱，GitHub README 寫目前採邀請制。",
+      "tags": [
+        "agent workflow",
+        "macOS",
+        "automation",
+        "mcp"
+      ],
+      "url": "https://trytoone.com/en",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/toone"
+    },
+    {
+      "id": "20261119-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-19",
+      "cycle": "thursday",
+      "priority": "product-hunt",
+      "title": "Review Box",
+      "summary": "11/18 PH 當日暫列第 9（抓取時 119 upvotes）。PH 前 CTO Radoslav Stankov 做的 GitHub PR review 桌面 app：追蹤已看過的檔案、跳到 symbol 定義與引用、全 PR 搜尋，也能就變更問 AI。作者的出發點是 agent 寫的 code 越來越多，人要專心看需求與架構；有 macOS、Linux、Windows 版。",
+      "tags": [
+        "code review",
+        "github",
+        "desktop app",
+        "ai coding"
+      ],
+      "url": "https://review-box.rstankov.com/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/review-box"
     }
   ],
-  "lastUpdated": "2026-11-19T03:39:29+08:00",
-  "updatedAt": "2026-11-19T03:39:29+08:00"
+  "lastUpdated": "2026-11-19T03:56:10+08:00",
+  "updatedAt": "2026-11-19T03:56:10+08:00"
 }
