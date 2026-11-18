@@ -1,6 +1,183 @@
 {
   "entries": [
     {
+      "id": "20261119-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Suno 推出 Visuals：替歌曲生成歌詞影片、專輯封面與最長 15 秒短片",
+      "summary": "Suno 週二發表 Visuals，可用網頁介面做 lyric video、album art 與最長 15 秒的 clip，影片會跟著歌曲結構與歌詞，甚至對嘴；iOS／Android app 預計數週內推出。Suno 也加了過濾器，擋掉特定藝人、公眾人物與受版權保護 IP 的提示詞。",
+      "tags": [
+        "suno",
+        "music ai",
+        "ai video"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/11/17/suno-visuals-launch/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/17/suno-visuals-launch/"
+    },
+    {
+      "id": "20261119-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Spotify 讓藝人可完整封鎖以自己名義發行的新作，對抗 deepfake 與 AI 詐騙",
+      "summary": "Spotify 悄悄上線新工具，讓藝人在未經本人核准下，封鎖所有掛在自己名下的發行；目前並非人人可用。背景是有報導指 Sony Music 已要求下架逾 26 萬首 deepfake 曲目。",
+      "tags": [
+        "spotify",
+        "ai fraud",
+        "deepfake",
+        "streaming"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/11/17/spotify-allows-artists-to-block-new-releases/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/17/spotify-allows-artists-to-block-new-releases/"
+    },
+    {
+      "id": "20261119-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SoundCloud 更新社群規範與服務條款打擊 AI slop，Spotify 擴大 Artist Profile Protection",
+      "summary": "Music Ally 報導 SoundCloud 已更新 community guidelines 與 terms of use 以打擊濫用，Spotify 同日擴大 Artist Profile Protection。全文需註冊，這裡只引用公開段落。",
+      "tags": [
+        "soundcloud",
+        "spotify",
+        "ai slop",
+        "streaming fraud"
+      ],
+      "url": "https://musically.com/2026/11/18/soundcloud-cracks-down-on-ai-slop-as-spotify-expands-artist-profile-protection/",
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/18/soundcloud-cracks-down-on-ai-slop-as-spotify-expands-artist-profile-protection/"
+    },
+    {
+      "id": "20261119-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ElevenLabs 完成逾 US$1 億收購日本語音 AI 新創 Kotoba",
+      "summary": "ElevenLabs 宣布收購日本的 Kotoba Technologies，交易金額超過 US$1 億，是 ElevenLabs 在日本的首次收購，預期能擴大日本內容的海外觸及。",
+      "tags": [
+        "elevenlabs",
+        "voice ai",
+        "acquisition"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/11/17/elevenlabs-acquisition-kotoba-voice-ai/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/17/elevenlabs-acquisition-kotoba-voice-ai/"
+    },
+    {
+      "id": "20261119-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "UMG／Sony 撤回對 DistroKid 的 motion to compel，UMG v. Suno 的傳票戰仍在持續",
+      "summary": "Universal 與 Sony 在 DistroKid 提供文件後，撤回要求其交出 AI 音訊發行量資料的 motion to compel，雙方仍在協商；DMN 指 UMG v. Suno 還有許多傳票糾紛待解。",
+      "tags": [
+        "suno",
+        "umg",
+        "lawsuit",
+        "distrokid"
+      ],
+      "url": "https://www.digitalmusicnews.com/2026/11/17/umg-v-suno-subpoena/",
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/17/umg-v-suno-subpoena/"
+    },
+    {
+      "id": "20261119-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Sonible 推出 pure:smooth：content-aware 的智慧共振抑制 plugin",
+      "summary": "sonible 發表 pure:smooth，以內容感知處理自動辨識並降低過於突出的頻率成分，讓錄音聽起來更平滑自然，操作介面主打簡單。",
+      "tags": [
+        "sonible",
+        "resonance reduction",
+        "audio effects",
+        "intelligent plugin"
+      ],
+      "url": "https://rekkerd.org/sonible-launches-puresmooth-intelligent-resonance-reduction-plugin/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/sonible-launches-puresmooth-intelligent-resonance-reduction-plugin/"
+    },
+    {
+      "id": "20261119-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Imaginando FRMS 2：granular synth 新增兩組 wavetable 引擎與拖放式 modulation",
+      "summary": "FRMS 2（Windows／macOS）讓四個 layer 各自選用 Granular、oscillator 或新增的 wavetable 引擎，modulation 改為 drag-and-drop。",
+      "tags": [
+        "imaginando",
+        "synth",
+        "wavetable",
+        "granular"
+      ],
+      "url": "https://rekkerd.org/imaginando-releases-frms-2-with-new-wavetable-engines-drag-and-drop-modulation/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/imaginando-releases-frms-2-with-new-wavetable-engines-drag-and-drop-modulation/"
+    },
+    {
+      "id": "20261119-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Eventide SplitEQ 2：以 Structural Split 分別塑形 transient 與 tonal 的動態 EQ",
+      "summary": "SplitEQ 2 提供 6 個 dynamic band、即時 masking 視覺化與 Global Dynamics，可獨立調整 transient 與 tonal 訊號。",
+      "tags": [
+        "eventide",
+        "eq",
+        "dynamic eq",
+        "mixing"
+      ],
+      "url": "https://rekkerd.org/eventide-launches-spliteq-2-dynamic-equalizer-effect-plugin/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/eventide-launches-spliteq-2-dynamic-equalizer-effect-plugin/"
+    },
+    {
+      "id": "20261119-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "UJAM 發表 Beatmaker SUAVE 與 Usynth SUAVE：funk／soul／hip-hop 風格的節奏與合成器搭檔",
+      "summary": "兩款 plugin 互補：Beatmaker SUAVE 提供 swing 鼓組與節奏 pattern，Usynth SUAVE 提供 bass、chord、lead 與 synth texture。",
+      "tags": [
+        "ujam",
+        "virtual instrument",
+        "drums",
+        "plugin"
+      ],
+      "url": "https://rekkerd.org/ujam-launches-beatmaker-suave-and-usynth-suave-virtual-instruments/",
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/ujam-launches-beatmaker-suave-and-usynth-suave-virtual-instruments/"
+    },
+    {
+      "id": "20261119-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-19",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Phil Speiser 釋出免費人聲修音 plugin THE_PITCH 2 MINI",
+      "summary": "THE_PITCH 2 MINI 是免費的 pitch correction plugin，適用人聲與其他單音來源，支援 macOS 與 Windows。",
+      "tags": [
+        "pitch correction",
+        "free plugin",
+        "vocal"
+      ],
+      "url": "https://www.dawcrash.com/2026/11/18/phil-speiser-releases-the_pitch-2-mini-a-free-vocal-pitch-correction-plugin/",
+      "source": "DAWCrash",
+      "sourceUrl": "https://www.dawcrash.com/2026/11/18/phil-speiser-releases-the_pitch-2-mini-a-free-vocal-pitch-correction-plugin/"
+    },
+    {
       "id": "20261024-ts-007",
       "radar": "tool-scout",
       "date": "2026-10-24",
@@ -121710,6 +121887,6 @@
       "sourceUrl": "https://hunted.space/dashboard/review-box"
     }
   ],
-  "lastUpdated": "2026-11-19T03:56:10+08:00",
-  "updatedAt": "2026-11-19T03:56:10+08:00"
+  "lastUpdated": "2026-11-19T04:06:23+08:00",
+  "updatedAt": "2026-11-19T04:06:23+08:00"
 }
