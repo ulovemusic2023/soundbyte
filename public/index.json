@@ -122357,8 +122357,171 @@
       "price": null,
       "vram": null,
       "license": "N/A"
+    },
+    {
+      "id": "20261120-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Seth Godin：越容易衡量的東西，越可能不是你該衡量的",
+      "summary": "Seth Godin 認為，追 trophy 很容易讓人上癮，因為它好量化、目標又明顯，卻跳過了最關鍵的問題：這到底是為了什麼？Savannah Bananas 從沒拿過聯盟冠軍，賺的錢和帶給球迷的樂趣卻比任何一隊都多；YouTube 上最好的影片，也很少是最爆的那支。對創作者來說，views 和 likes 只是「最容易量的東西」，不等於你真正想做到的事。",
+      "tags": [
+        "vanity-metrics",
+        "measure-what-matters",
+        "creator-economy"
+      ],
+      "url": "https://seths.blog/2026/11/dancing-with-the-trophy-shortage/",
+      "source": "Seth's Blog",
+      "sourceUrl": "https://seths.blog/2026/11/dancing-with-the-trophy-shortage/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Dharmesh Shah：shed your priors——假裝沒有過去的限制，你現在會做什麼？（HubSpot Refounding Day 6）",
+      "summary": "Refounding 最難的地方，是搞不清楚過去哪些東西該保留、哪些地方要另闢新路。Dharmesh 這天的心得是先把 priors 拿掉、回到原點，問自己：在不受過去做法限制的情況下，現在會怎麼做？想出來的點子不一定都可行，但要讓團隊敢問「what if」：如果沒有這些舊限制呢？如果只為 customer 解題呢？如果這個點子真的行得通呢？他也說，想要意外的成功，就得忍受不舒服的取捨。",
+      "tags": [
+        "refounding",
+        "first-principles",
+        "shed-priors"
+      ],
+      "url": "https://x.com/dharmesh/status/2123290840722194783",
+      "source": "Dharmesh Shah (X)",
+      "sourceUrl": "https://x.com/dharmesh/status/2123290840722194783",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Lenny × Juicebox 招募數據：軟體工程師需求下滑、PM 上升、AI engineering 漲更快、設計招募年減 20%",
+      "summary": "Juicebox 分析 recruiter 的 outbound 搜尋趨勢，結果跟 Lenny 先前觀察到的一樣：軟體工程師需求在下降，PM 需求在成長，AI engineering 成長得更快，設計職缺招募則比去年少了 20%。可以這樣解讀：AI 讓「寫 code」變便宜之後，市場開始把預算挪給「決定要做什麼」（PM）以及「把 AI 接進產品」（AI engineering）的人。",
+      "tags": [
+        "hiring-trends",
+        "ai-engineering",
+        "pm-demand"
+      ],
+      "url": "https://x.com/lennysan/status/2123210143491867010",
+      "source": "Lenny Rachitsky (X)",
+      "sourceUrl": "https://x.com/lennysan/status/2123210143491867010",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "Meta Muse 的兩個 activation 槓桿：口碑，以及「解決第一個 prompt」",
+      "summary": "Lenny 整理 Muse 團隊找到的兩個 activation 槓桿。第一是口碑：「看到跟自己相似的人在用之前，廣告都打不動人。」第二是解決第一個 prompt：「用戶面對第一個 prompt 會卡住」，所以團隊加了 idea starter packs，用戶只要說一句「Let's do it」就能開始。對 AI 產品來說，空白輸入框就是最大的流失點，與其教用戶寫 prompt，不如直接給他們可以一鍵開始的起點。",
+      "tags": [
+        "activation",
+        "first-prompt",
+        "word-of-mouth",
+        "ai-product"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+      "source": "Lenny Rachitsky (X)",
+      "sourceUrl": "https://x.com/lennysan/status/2123157466519314830",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Dario Amodei 上市日談 pacing：能開 200 英里，就先開 90 英里",
+      "summary": "Anthropic 以史上最大 IPO 在 Nasdaq 掛牌當天，Dario 在 CNBC 用開車比喻 pacing：原本時速 60 英里，現在發現能開到 200 英里（指模型自我改進、recursive self-improvement），Anthropic 選擇先開 90，把多出來的餘裕拿去研究怎麼安全地做。他的賭注是長期來看，最安全、最能贏得企業信任的公司，也會是表現最好的公司，所以要找讓社會利益與公司績效長期一致的 synergies。他也坦言，scaling laws 只是紙上的一條線，「直到真的發生，我們才真正相信它」。",
+      "tags": [
+        "pacing",
+        "trust-as-moat",
+        "long-term-alignment",
+        "scaling-laws"
+      ],
+      "url": "https://www.cnbc.com/2026/11/19/cnbc-exclusive-transcript-anthropic-co-founders-dario-and-daniela-amodei-speak-with-andrew-ross-sorkin-on-cnbc-today.html",
+      "source": "CNBC (Andrew Ross Sorkin 專訪)",
+      "sourceUrl": "https://www.cnbc.com/2026/11/19/cnbc-exclusive-transcript-anthropic-co-founders-dario-and-daniela-amodei-speak-with-andrew-ross-sorkin-on-cnbc-today.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Derek Sivers：想成為獨立思考者，就要持有一組「彼此不相關」的觀點組合",
+      "summary": "Sivers 把投資的分散原則套用到世界觀上：不要把所有資產押在單一市場，觀點也一樣。我們都從父母和文化繼承觀點，所以往往重押在一兩種世界觀上。當政府或媒體說某國是敵人、某個文化讓你覺得怪又錯、另一邊的人看起來很瘋，通常代表你在那個觀點上配置不足。他給的檢驗方式是：如果別人能從你對 A 的看法猜到你對 B 的看法，你的世界觀就太相關了。",
+      "tags": [
+        "independent-thinking",
+        "uncorrelated-perspectives",
+        "worldview-portfolio"
+      ],
+      "url": "https://sive.rs/portfolio",
+      "source": "Derek Sivers (sive.rs)",
+      "sourceUrl": "https://sive.rs/portfolio",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Bing Gordon：用五個點子換到 Amazon 董事席位，第一個就是 Prime",
+      "summary": "前 EA 創意長、Kleiner Perkins 合夥人 Bing Gordon 在 Amazon 董事會待了十多年，這個席位是他給 Bezos 五個點子換來的，第一個就是 Amazon Prime。在 The Knowledge Project 中，他談到兩位董事想辭職的那一週，他提出的解法是：每次開會由 Bezos 先講他在想什麼，並用六頁 memo 取代簡報。他也談 Bezos 給董事會的第一條規則「first, do no harm」、希望董事會幫 Amazon 避開的「institutional no」，以及 Bezos 看「right a lot」的人時重視的三種行為。遊戲經驗方面，他說遊戲從 80 分做到 90 分，銷量會翻倍；Spielberg 會一直重剪，直到沒有觀眾離座。（完整節目 11/24 公開，以上取自節目介紹）",
+      "tags": [
+        "board-governance",
+        "six-page-memo",
+        "quality-bar",
+        "amazon-prime"
+      ],
+      "url": "https://fs.blog/knowledge-project-podcast/bing-gordon/",
+      "source": "The Knowledge Project (Farnam Street)",
+      "sourceUrl": "https://fs.blog/knowledge-project-podcast/bing-gordon/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Sahil Bloom：不舒服的事，要早點做",
+      "summary": "延後的對話只會更難開口，被忽略的問題會越滾越大，小修補最後變成大工程；平靜不是靠逃避得來的，而是靠及早行動換來的（2.1K+ 讚、600+ 收藏）。",
+      "tags": [
+        "early-action",
+        "avoidance",
+        "discomfort"
+      ],
+      "url": "https://x.com/SahilBloom/status/2123445057051099457",
+      "source": "Sahil Bloom (X)",
+      "sourceUrl": "https://x.com/SahilBloom/status/2123445057051099457",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-20T03:30:06+08:00",
-  "updatedAt": "2026-11-20T03:30:06+08:00"
+  "lastUpdated": "2026-11-19T19:39:22Z",
+  "updatedAt": "2026-11-19T19:39:22Z"
 }
