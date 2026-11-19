@@ -122141,8 +122141,224 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261120-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32443：mtmd 支援 VoxCPM2，llama-tts／llama-server 可做 voice design 和免逐字稿的 voice cloning（48kHz）",
+      "summary": "11/19 合併（台北時間 09:39）。VoxCPM2 是 OpenBMB 的 TTS（MiniCPM4 2B backbone、Apache-2.0），llama.cpp 用 mtmd 串起 residual LM、LocDiT flow matching 和 causal AudioVAE，輸出 48kHz。文字開頭用括號寫聲音描述就能設計聲音，例如 `(A young woman, gentle and warm)Hello!`；voice cloning 只要 `--tts-speaker-file` 給參考音檔（取前 30 秒），不需要逐字稿；llama-server 可調 `flow_steps`（2–32）和 `cfg_scale`。目前還不支援 reference 的 continuation mode 和 bad-case retry，短句可能會拖長、重複字，換 seed 再試。這次合併也替 kyutai/hibiki realtime full-duplex 的 PR #32491 解除阻擋。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "llama.cpp",
+        "VoxCPM2",
+        "flow matching"
+      ],
+      "url": "https://huggingface.co/openbmb/VoxCPM2",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32443",
+      "price": null,
+      "vram": "2.29B 參數，BF16 權重約 4.6GB",
+      "license": "MIT（llama.cpp）／Apache-2.0（VoxCPM2）"
+    },
+    {
+      "id": "20261120-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Rumble-2-Flash：Reson8 開源 0.5B 多語 ASR（40+ 語言、Apache-2.0），電話客服 benchmark 追平 30B 的 Nemotron 3.5 Transcribe",
+      "summary": "11/18 在 Hugging Face blog 公開。採用 Qwen3-ASR 架構，所以 Transformers、vLLM 原生支援，不用 `trust_remote_code`；用 on-policy distillation（GOLD，處理 teacher／student tokenizer 不同的問題）從自家較大的 Rumble-2 蒸餾而來。官方數據：Open ASR Leaderboard 多語平均錯誤率 6.96%、英文 6.6% WER，batch 滿載時超過 7,000 RTFx；AppTek 302 小時客服電話 benchmark 7.86% WER，NVIDIA Nemotron 3.5 Transcribe（30B）是 7.78%。社群一天內已出現 GGUF、sherpa-onnx int8、LiteRT 和 WASM 版本，適合做歌詞／訪談的本地轉錄。",
+      "tags": [
+        "tts_speech",
+        "ASR",
+        "speech recognition",
+        "distillation",
+        "vLLM"
+      ],
+      "url": "https://huggingface.co/Reson8/Rumble-2-Flash",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/rumble-2-flash",
+      "price": null,
+      "vram": "0.5B 參數，BF16 約 1GB",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261120-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Inworld Voice Isolator v1：Apache-2.0 的 48kHz 人聲分離（64M 離線版／58M realtime 版），可順便抽出伴奏殘差",
+      "summary": "HF 模型 11/14 上架、GitHub repo 11/16 建立，這幾天在 HF trending 上（之前沒收錄過）。兩個模型共用架構：`voice-isolator-v1` 每個 frame 看整個 8 秒 chunk、品質優先；`voice-isolator-v1-realtime` 是 causal stream、只有 20ms look-ahead，可接直播／通話。官方建議把分離出的人聲從原音減掉，就能拿到背景噪音或 backing-track 殘差，用在 vocals／music separation。`pip install inworld-voice-isolation`，CUDA／MPS／CPU 都能跑；官方只在 A100、H100、B200、B300 和 CPU 測過，較小的 GPU 還沒測。",
+      "tags": [
+        "audio_music_ai",
+        "voice isolation",
+        "speech enhancement",
+        "48kHz",
+        "streaming"
+      ],
+      "url": "https://github.com/inworld-ai/voice-isolator",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/inworld/voice-isolator",
+      "price": null,
+      "vram": "64M／58M 參數",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261120-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "RadixArk DaisyRose-27B：只用 RL（無 SFT／蒸餾）練 Qwen3.8-27B，Terminal-Bench 4.1 從 5.6% 拉到 12.0%，Apache-2.0",
+      "summary": "RadixArk 11/18 發布的第一個模型，用自家開源 RL framework Miles 在 144 張 H200 上跑 18 天、約 1,200 個長流程 agent 任務（單一 session 最長 1M tokens）。架構、tokenizer、chat template、圖像理解和 256K context 都和 Qwen3.8-27B 一樣，可以直接替換。官方釋出 BF16、FP8、NVFP4 和 DSpark speculative decoding draft，推薦用 SGLang serving；社群 GGUF（bartowski 等）、EXL3、AWQ、MLX 版本一天內都出來了。部落格也提到自家訓練後端 MFU 37%，對比開源 Megatron trainer 的 16%。",
+      "tags": [
+        "llm_inference",
+        "reinforcement learning",
+        "Qwen3.8",
+        "SGLang",
+        "speculative decoding"
+      ],
+      "url": "https://huggingface.co/RadixArk/DaisyRose-27B",
+      "source": "RadixArk Blog",
+      "sourceUrl": "https://www.radixark.com/blog/daisyrose-27b",
+      "price": null,
+      "vram": "27.8B 參數；BF16 約 56GB，16GB 卡需 Q3/Q4 級 GGUF",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261120-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Unsloth v0.1.920-beta：AMD Ryzen AI NPU 可載入自轉的 Q4NX 模型，Diffusion LoRA 訓練每步快 20–42%，新增 LTX-2.5／MOSS-Image LoRA",
+      "summary": "11/19 晚間發布。NPU 部分：Export 頁新增 Convert to Q4NX 分頁，轉好的模型能直接在 NPU 上跑（目前只有文字），每個 NPU 模型都標示能不能跑，還會擋掉會產生亂碼的 GGUF quant。影像／影片部分：可以訓練 LTX-2.5 和 MOSS-Image 的 LoRA，GPU 有空間放 activations 時 Diffusion LoRA 訓練每步快 20–42%；FLUX.2-klein、Z-Image、Wan 2.2 5B LoRA 在 T4 這類不支援 bf16 的卡也能訓練；MiniMax-H3-Image 8GB GPU 就能出圖，LTX-2 video decoder 快約 1.7–1.8 倍。",
+      "tags": [
+        "llm_training",
+        "LoRA",
+        "AMD NPU",
+        "LTX-2.5",
+        "image_gen"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.920-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.920-beta",
+      "price": null,
+      "vram": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261120-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "ComfyUI v0.46.0：移除 DirectML、GPU 支援 CUDA 13 卻沒用時會跳警告，支援 PAN2 和 SenseNova，修 dynamic VRAM 洩漏",
+      "summary": "11/19 清晨發布。和本地跑圖最相關的幾點：正式移除 DirectML 支援；GPU 支援 CUDA 13 卻沒用時會跳出黃色警告（RTX 50 系列值得檢查一下 PyTorch 的 CUDA 版本）；修正 dynamic VRAM buffer 還原時把 sampling schedule 帶到下一個模型的問題；支援 vocabulary 被裁剪過的 Qwen checkpoint 內嵌 tokenizer。新功能包括 PAN2、SenseNova thinking／interleaved generation／self-correction、Video Deflicker 節點加更快的 RAFT optical flow，partner nodes 新增 MiniMax H3 Image、RMBG 3.0 等。",
+      "tags": [
+        "image_gen",
+        "ComfyUI",
+        "CUDA 13",
+        "video",
+        "workflow"
+      ],
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.46.0",
+      "price": null,
+      "vram": null,
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "20261120-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google 發布 Gemini 4 Neon：$3／$15 每百萬 tokens、1M context，Artificial Analysis Intelligence Index 排第 3（HN 986 分）",
+      "summary": "11/18 發布，定位在 Carbon（最強）和 Hydrogen（快）之間。官方數據：xhigh thinking 在 Artificial Analysis Intelligence Index 拿 61 分、總排名第 3；Coding Agent Index 58.6 排第 1；Terminal-Bench 4.1 65.2%；預設 high thinking 每個任務的成本比 Carbon 低 32%。價格是 input $3、output $15 每百萬 tokens，cached input 便宜 95%、只要 $0.15。已上線 Gemini API、AI Studio、Antigravity 和 Gemini app（Pro／Ultra）。HN 986 分、747 則留言，是這期討論度最高的一則。",
+      "tags": [
+        "llm_inference",
+        "Gemini",
+        "frontier model",
+        "pricing"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50552424",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "price": null,
+      "vram": null,
+      "license": "商業 API"
+    },
+    {
+      "id": "20261120-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Microsoft Ignite：MAI 一次發七款模型，Maia 200 加速器已在產線跑最大模型、每瓦 tokens 多 1.7 倍（HN 590 分）",
+      "summary": "11/17 Ignite 發布。陣容包括 MAI Code 2／Code 2 Flash、MAI Cyber 2 Flash、MAI Image 2.7、第一款 speech-to-speech 模型 MAI Realtime 1（每分鐘 $0.01 起）、建在 MAI Transcribe 2 上的 Dragon Copilot Transcribe，以及做 model routing 的 Decision 1.1。和 infra 比較相關的是：第二代自研加速器 Maia 200 已投入產線、跑自家最大的模型，官方稱每瓦 tokens 多 1.7 倍；另外推出 MAI Licensed Weights，讓企業把 MAI 模型客製後放在自己的 Azure 環境跑（不是公開 open weights）。",
+      "tags": [
+        "infra_runtime",
+        "Maia 200",
+        "AI accelerator",
+        "Microsoft MAI"
+      ],
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "source": "Hacker News（原文：Microsoft AI）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50548021",
+      "price": null,
+      "vram": null,
+      "license": "商業服務"
+    },
+    {
+      "id": "20261120-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "OpenAI 用自家模型改 RTL：AMD 旗艦 GPU IP 的 PPA 最多改善 14%，部分改動已進 AMD 送廠設計（HN 219 分）",
+      "summary": "OpenAI 11/18 發文：自研推理晶片 Jalapeño 用模型提出的改動，vector unit 和 matrix unit 的 standard-cell 面積分別減少約 13% 和 10%，已在 silicon bring-up 驗證過。和 AMD 合作改 SystemVerilog RTL，在旗艦 GPU IP 上相對高度優化的 baseline 最多改善 14%，部分改動已進入 AMD 最近送去製造的設計；下一代旗艦 CPU 的關鍵區塊也有個位數百分比的 PPA 提升。接下來會和 Synopsys 合作訓練 GPT-Synopsys，讓模型直接操作 EDA 工具。",
+      "tags": [
+        "infra_runtime",
+        "chip design",
+        "AMD",
+        "RTL"
+      ],
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "source": "Hacker News（原文：OpenAI）",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50549493",
+      "price": null,
+      "vram": null,
+      "license": "N/A"
+    },
+    {
+      "id": "20261120-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Pete Warden（Moonshine）訪談〈Why AI Wants to Be Local〉：GPU 做推理像開油輪去買菜，推理瓶頸是記憶體頻寬（HN 153 分）",
+      "summary": "O'Reilly 系列 podcast 的文字稿，11/19 刊出。Moonshine Voice 共同創作者 Pete Warden 談本地 AI 為什麼被低估：大公司比較難從本地模型賺錢，所以不會主力推；語音介面的關鍵在低延遲，以及 compound pipeline 和 end-to-end speech model 之間的取捨。硬體方面，他認為 GPU 是為大 batch 訓練設計的，推理 workload 主要卡在記憶體頻寬（每個 token 都要讀完全部權重），所以看好 high-bandwidth flash 和提高一般 RAM 頻寬的做法。HN 153 分、142 則留言。",
+      "tags": [
+        "llm_inference",
+        "local AI",
+        "voice interface",
+        "memory bandwidth"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50561508",
+      "source": "The Data Exchange",
+      "sourceUrl": "https://thedataexchange.media/pete-warden-moonshine/",
+      "price": null,
+      "vram": null,
+      "license": "N/A"
     }
   ],
-  "lastUpdated": "2026-11-20T03:13:02+08:00",
-  "updatedAt": "2026-11-20T03:13:02+08:00"
+  "lastUpdated": "2026-11-20T03:30:06+08:00",
+  "updatedAt": "2026-11-20T03:30:06+08:00"
 }
