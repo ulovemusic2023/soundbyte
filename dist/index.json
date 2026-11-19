@@ -121885,8 +121885,264 @@
       "url": "https://review-box.rstankov.com/",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/review-box"
+    },
+    {
+      "id": "20261120-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 公開 Performance Factory：Codex agents 接手 ChatGPT 效能 regression，從查根因、提修正到上線後驗證恢復一條龍",
+      "summary": "效能告警一觸發，Regression Workflow 就開一個 task，agent 用 `perf-forensics` skill 回頭找指標從何時開始變差、比對 deployment 和 feature flag 變更，再把發現寫進 task（狀態存在任何單一 agent 的 context 之外，別的 agent 或工程師都能接手），提出 fix 交給工程師 review；部署後另一個 agent 檢查是否回到 baseline，沒回就退回調查。為了避免 agent 停在「看似合理但錯的」解釋，另開一個 fresh context 的 Codex session 做 adversarial review。三個多月追了 1,700+ 次調查、600+ 件找到根因（約每天 17 件）。",
+      "tags": [
+        "paradigm-shift",
+        "coding agent 編排",
+        "verification",
+        "adversarial review",
+        "software factory"
+      ],
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/",
+      "source": "OpenAI",
+      "sourceUrl": "https://x.com/OpenAIDevs/status/2123471880292299171",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Vercel Board：給 agent 群用的「headless Slack」，task 認領、lease、排程回訪和 Slack／GitHub 雙向同步都是內建 primitive",
+      "summary": "實驗性的 agent 協作 primitive：channel＋thread 存 task、狀態和結果，agent 用 CLI 或 JS SDK `vercel board tasks claim --ready dev --label kind=bug --wait 10m` 認領工作、`renew --lease 1h` 續租、`complete` 附 PR 交回。watcher 在有新回覆或 label 變動時喚醒 deployment，`vercel board schedule <id> ... --in 5m` 讓 agent 自己排「5 分鐘後回來看 CI」；訊息可帶 schema 驗證的結構化資料（例如 security-finding@1）。Vercel 內部的 security agent 群和 v0 software factory 都已改跑在 Board 上，後者現在 merge 超過 50% 的 PR；官方強調 harness 無關，Claude Code、Codex、Pi、OpenCode、eve、Mastra、LangChain 都能接。",
+      "tags": [
+        "paradigm-shift",
+        "multi-agent 編排",
+        "agent message board",
+        "software factory",
+        "Vercel"
+      ],
+      "url": "https://vercel.com/blog/introducing-vercel-board",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/introducing-vercel-board",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GitHub CLI v2.105.0 新增 `gh event listen`：agent 等 PR review、check suite 結果改用 event stream，不再 polling",
+      "summary": "`gh event listen <PR URL>` 會建立訂閱、開 stream，把每個事件印成一行 JSON；預設收到第一個事件就退出，方便塞進 script 和 agent loop，也有 `--count`、`--follow`、`--timeout`、`--jq`。可等的事件包括 submitted review、PR state／head 變更、merge conflict、check suite 完成。`gh pr create`、`gh run watch`、`gh api` 等指令現在會主動建議 agent 改用 `gh event listen`。目前是 preview，需要先加入 GitHub Event Streams 的 waitlist。",
+      "tags": [
+        "coding agent",
+        "agent harness",
+        "GitHub CLI",
+        "Event Streams"
+      ],
+      "url": "https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli",
+      "source": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ollama × Together AI：open model 跑長時間 coding agent，最大的成本是 prefix cache 被 harness 不小心打掉",
+      "summary": "agent 每一步都把整段對話重送、只拿回幾十 token 的 tool call，所以幾乎全是 prefill；理想化算法下 100 輪沒有 cache 要處理 5,050 單位 prompt，有 cache 只要 100。常見踩雷：system prompt 每輪塞 timestamp、git status、工作目錄；GLM-5.3-Flash 的 chat template 把 reasoning effort 寫在第一個 system block，中途調 effort 等於整段 session 重算，建議一開始就定好；tool search 晚載入的定義要放在尾端而非 tool list，但有些 chat template 不吃；截斷 tool output 時要明講「只給了第 1–100 行」。文中也提到 `ollama launch` 可把 Claude Code、Codex、Pi 接到 DeepSeek-V4.1-Flash、GLM-5.3 等 open model。",
+      "tags": [
+        "self-hosted infra",
+        "agent harness",
+        "prefix caching",
+        "local LLM",
+        "Ollama"
+      ],
+      "url": "https://ollama.com/blog/open-models-long-horizon-agents",
+      "source": "Ollama Blog",
+      "sourceUrl": "https://ollama.com/blog/open-models-long-horizon-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Gemini API 推出 Tool Retrieval：上百個 tools 只先給名稱與描述，需要時才在同一個 request 裡載入完整 schema",
+      "summary": "在 request 裡加一個 `tool_search` tool，並對要延後的 tools 設 `defer_loading: true`；模型仍看得到所有 deferred tools 的名稱和描述，要用時按名稱要求，API 載入 schema 後模型直接發出 function call，三步都在同一次呼叫裡完成，並列在 `interaction.steps`（tool_search_call → tool_search_result → function_call）方便 debug。Google 說這能省 input token、提升 tool 選擇準確率，也不會破壞 prefix cache。目前在 Interactions API 以 preview 提供，常用 tools 建議不要 defer。",
+      "tags": [
+        "agent harness",
+        "tool search",
+        "deferred tool loading",
+        "context engineering",
+        "Gemini API"
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Google：agent 是 session 不是 request——Agent Substrate 1.0 在 GKE GA，閒置的 coding agent sandbox 可以 snapshot 停車、把機器還回去",
+      "summary": "文章引用 2026 年 7 月的 agent trace 研究：多輪 session 裡 agent 約 80% 時間在等使用者；以每小時 2 個 prompt 估算，agent 一天只工作 22%。每個 session 一個 Pod 的話，100 個 coding agent 要 34 台 c3-standard-4、約 USD 1,288／月。Agent Substrate（11 月與 gVisor、OpenRL 一起捐給 CNCF）把 agent 拆成 actor（單一 agent 的 sandbox）和 warm pool 裡的 worker，gateway 在出站時才依身分補上 credentials，`SuspendActor` 把閒置 actor snapshot 到 object storage，同樣 100 個 agent 只要 16 台。注意：它不會自動 suspend（issue #424），要由 harness 在 idle timeout 後呼叫，worker 用完時新請求等 5 秒就回 HTTP 503。",
+      "tags": [
+        "agent sandbox",
+        "self-hosted infra",
+        "Kubernetes",
+        "session parking",
+        "GKE"
+      ],
+      "url": "https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/",
+      "source": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Martin Fowler 網站〈Deterministic Simulation Testing〉：把時鐘、網路、儲存都換成模擬元件，讓分散式系統的每次失敗都能重現",
+      "summary": "Thoughtworks 的 Unmesh Joshi 撰文。unit／integration test 抓不到「部分元件故障同時還有流量在跑」的 gray failure，DST 用單執行緒 event loop 驅動模擬的 clock、network、storage，既能注入硬故障，也能模擬網路／磁碟延遲突增，而且每次執行都可重現。全文用一個 quorum key-value store 當範例，程式碼來自 Java 實作 Tickloom。在 agent 大量產 code 的時代，這類可重現的 verification 手段愈來愈重要。",
+      "tags": [
+        "verification",
+        "deterministic simulation testing",
+        "distributed systems",
+        "testing"
+      ],
+      "url": "https://martinfowler.com/articles/deterministic-simulation-testing.html",
+      "source": "martinfowler.com",
+      "sourceUrl": "https://martinfowler.com/articles/deterministic-simulation-testing.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Google 發布 Gemini 4 Neon：$3／$15 per M tokens、1M context，Artificial Analysis Coding Agent Index 第一，HN 985 分",
+      "summary": "主打 agentic coding 和長時間 tool-heavy 任務（GitHub 形容品質接近 Gemini 4 Carbon、每個任務 token 成本更低）：Artificial Analysis Intelligence Index（xhigh）61 分排第 3、Coding Agent Index 58.6 排第 1，Terminal-Bench 4.1 65.2%；cached input $0.15／M（95% 折扣）。Google 說它在 Antigravity 裡可以當 Orchestrator 指揮平行的 Hydrogen subagents，減少重複讀檔、能穩定處理 context compaction。Cursor 實測 CursorBench 4.1 預設 effort 63.7%（Hydrogen 57.3%），GitHub Copilot、Vercel AI Gateway 當天就上架；HN 985 分、748 則留言。",
+      "tags": [
+        "Gemini 4 Neon",
+        "coding model",
+        "coding agent",
+        "Antigravity"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "source": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ruby2ßhell：Ruby 字串轉大寫時處理「ß」的 1-byte heap overflow，預設設定的 Rails、Sinatra 都能被未驗證 RCE；Ruby 官方一次修 7 個洞",
+      "summary": "大多數 single-byte encoding（ISO-8859、Windows-125x）沒有大寫 ß，upcase 會寫出兩個 byte「SS」，迴圈卻只檢查一個；buffer 是輸入長度＋20，所以 21 個 ß 就溢出 1 byte，這段程式從 Ruby 2.4.0 就在了，UTF-8 不受影響。Verialabs 列出受影響的自架軟體：GitLab 19.6.0、GitHub Enterprise Server 3.22.5、Chatwoot 4.20.0；Mastodon、OpenProject、Discourse 已修，PoC 一週後公開。Ruby 官方同時公布 Regexp 與 case conversion 共 7 個漏洞（部分由 Anthropic 與 Ada Logics 回報），請升到 4.0.10／3.4.13／3.3.14，3.2 以下已 EOL 不會修。兩篇 HN 合計 650+ 分。",
+      "tags": [
+        "Ruby",
+        "Rails",
+        "RCE",
+        "self-hosted infra",
+        "security"
+      ],
+      "url": "https://verialabs.com/ruby2shell/",
+      "source": "Verialabs",
+      "sourceUrl": "https://verialabs.com/ruby2shell/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Anthropic 在 Nasdaq 掛牌（ANT）：IPO 定價 $83、募 $81.3B 創史上最大，開盤 $111.50 漲 34%、市值一度約 $2T",
+      "summary": "Anthropic 以高於 $70–78 區間的 $83 定價，發行 9.8 億股、募得 $81.3B，超過 SpaceX 6 月約 $75B 的紀錄。11/19（美東）開盤 $111.50，Reuters 報導開盤市值約 $2 兆，高於 SpaceX 開盤時的 $1.96 兆；之後回落，美東下午約 $95–100，仍比發行價高 15–21%。CNBC 報導第一天成交量已超過 SpaceX 首日；交割預計 11/20 完成。HN 兩篇合計 700+ 分、近 1,200 則留言。",
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "AI 產業"
+      ],
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "source": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Java4Shell 後續：同一個 AVX-512 Base64 bug 早在 9 月就有人在 OpenJDK 開 PR 回報，連 \"A\"×64+\"=\" 的觸發方式都寫了，最後沒 merge 就被關掉",
+      "summary": "openjdk/jdk PR #32781（8392044: AVX-512 Base64 decoder overwrites output buffer on short padded tail）由 albertnetymk 在 2026-09-09 開出，內文直接寫明 `\"A\".repeat(64)+\"=\"` 這種非法輸入會讓 stub 寫出邏輯長度之外、破壞 heap，建議 length < 4 時提早返回 Java。PR 之後被 bot 標成超過 8 週沒動靜，11/5（台北時間）未 merge 就關閉，留言區有人問「為什麼關了？」。HN 224 分，討論焦點是漏洞在公開揭露前兩個月就已經擺在公開 PR 裡。",
+      "tags": [
+        "Java4Shell",
+        "OpenJDK",
+        "security",
+        "vulnerability disclosure"
+      ],
+      "url": "https://github.com/openjdk/jdk/pull/32781",
+      "source": "GitHub (openjdk/jdk)",
+      "sourceUrl": "https://github.com/openjdk/jdk/pull/32781",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261120-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-20",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈We Need Smart People Who Give a Shit〉：系統一個接一個倒，作者認為是因為「真正在乎又懂系統的人」被擠走了，HN 748 分",
+      "summary": "作者以在 Stripe 的經驗舉 ACH 為例：這套老舊、滿是缺陷的系統之所以大致可靠，是因為有一群熟悉內部又肯硬把它撐住的人。文中點名最近一週左右的事故——Microsoft 365、航管、United Airlines、NSA 網路、多家大銀行、Apple——認為共同點是這類人不夠了，並把原因指向資本主義的激勵結構。HN 748 分、371 則留言，接續前幾天「software is breaking down」的討論。",
+      "tags": [
+        "engineering culture",
+        "reliability",
+        "software quality"
+      ],
+      "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+      "source": "violetpixel.com",
+      "sourceUrl": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-19T04:06:23+08:00",
-  "updatedAt": "2026-11-19T04:06:23+08:00"
+  "lastUpdated": "2026-11-20T03:13:02+08:00",
+  "updatedAt": "2026-11-20T03:13:02+08:00"
 }
