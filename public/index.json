@@ -122520,8 +122520,310 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261120-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "rising-fast",
+      "title": "haziqahmedqasmi/PeakCut",
+      "summary": "自架的 AI 長片／直播剪輯：貼 YouTube、Twitch、Kick 連結或上傳檔案，它轉錄後讓 AI 挑出值得剪的片段，切成 9:16、加逐字字幕和 hook，還能直播進行中邊錄邊剪。可接 Gemini、OpenAI、Claude 或本地 Ollama，沒 key 就改用音量挑片段；需要 Python 3.10+ 和 ffmpeg。",
+      "tags": [
+        "creator tools",
+        "video clipping",
+        "self-hosted",
+        "ollama"
+      ],
+      "url": "https://github.com/haziqahmedqasmi/PeakCut",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-06+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1313,
+      "createdDate": "2026-11-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261120-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "rising-fast",
+      "title": "dabingfy-dot/solo-to-team-skills",
+      "summary": "「一人成隊」：一個人統籌多 agent 協作的 skill 工具包，有 16 個角色、6 種群組模板，流程是「你定目標 → 首席指派執行者 → 執行者產出 → 獨立審核 → 退修或交回」。目前提供 Grok Bot、WorkBuddy、DeepSeek Harness、Open Master Bot 四個平台包，每包 1 個平台 skill＋4 個基礎 skills。",
+      "tags": [
+        "multi-agent",
+        "agent skill",
+        "agent orchestration",
+        "review"
+      ],
+      "url": "https://github.com/dabingfy-dot/solo-to-team-skills",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-06+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1066,
+      "createdDate": "2026-11-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20261120-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "rising-fast",
+      "title": "JDhruv14/line-art-animation",
+      "summary": "一個 Claude skill＋TypeScript library，做會走路、會反應的線稿墨水小人 SVG 元件，場景還有日夜循環。適合拿來幫網站或內容做手繪風動畫插圖。",
+      "tags": [
+        "claude skill",
+        "svg animation",
+        "typescript",
+        "creator tools"
+      ],
+      "url": "https://github.com/JDhruv14/line-art-animation",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-06+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1063,
+      "createdDate": "2026-11-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20261120-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "rising-fast",
+      "title": "huggingface/pybot",
+      "summary": "Hugging Face 的實驗：讓 1,000 多個 agents 用純 Python（if-else、regex、lookup table）寫聊天機器人，不用權重、不用訓練。agents 寫並評估了 5,000 多個版本，成品約 64 萬行 code、55 萬行自寫測試；只要 Python 3.8+，`python -m pybot` 就能聊，HF Space 也有 demo。",
+      "tags": [
+        "multi-agent",
+        "agent swarm",
+        "chatbot",
+        "python"
+      ],
+      "url": "https://github.com/huggingface/pybot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-06+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 932,
+      "createdDate": "2026-11-12",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261120-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "rising-fast",
+      "title": "chuanqisun/spaceship",
+      "summary": "MIT Media Lab 作者的「Spaceship IDE」概念 demo：假設 LLM 快到 60 FPS，用旋鈕即時「駕駛」文字生成，包括看 LLM 注意力在哪、鎖定片語、拆解方向分別調整、拉時間軸重生成。作者說大部分用 Claude Code 實作，靠 speculative generation 做到即時；有線上 simulator。",
+      "tags": [
+        "realtime llm",
+        "interaction design",
+        "speculative generation",
+        "claude code"
+      ],
+      "url": "https://github.com/chuanqisun/spaceship",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-06+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 932,
+      "createdDate": "2026-11-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261120-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "rising-fast",
+      "title": "kociden/sakurai-skill",
+      "summary": "用櫻井政博「桜井政博のゲーム作るには」全部 257 集字幕整理成的遊戲製作 Agent Skill（非官方、日文）。「把一位專家的影片全集蒸餾成 skill」這個做法，也可以套在音樂製作教學上。",
+      "tags": [
+        "agent skill",
+        "game design",
+        "knowledge distillation"
+      ],
+      "url": "https://github.com/kociden/sakurai-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/agent-skills",
+      "stars": 480,
+      "createdDate": "2026-11-12"
+    },
+    {
+      "id": "20261120-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "worth-trying",
+      "title": "oriliz/agent-crop",
+      "summary": "給 coding agent 的「馬鞭」：本機記錄 agent 時間花在哪（JSONL、不上傳），超時就提醒，再把復盤寫回 agent 的指令／skills／工具，用數據驗證有沒有改善。支援 DeepSeek Harness 與 Claude Code，npm 套件 agent-crop-dsh。",
+      "tags": [
+        "coding agent",
+        "claude code",
+        "observability",
+        "self-improvement"
+      ],
+      "url": "https://github.com/oriliz/agent-crop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 93,
+      "createdDate": "2026-11-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261120-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "worth-trying",
+      "title": "hiruhiru2005/sync-strata",
+      "summary": "一鍵在家用 PC 跑 Qwen3.8-Flash-Next（125B MoE）的 Windows／Linux app，engine fork 自 Strata，重新量化成 Sync-XS/S/M（模型 24–35 GB，另需約 35 GB 共用檔），有桌面、手機、CLI 和 OpenAI-compatible API。注意：README 寫 RTX 30/40 已支援，RTX 50「預期可用但未實測」，還在 experimental。",
+      "tags": [
+        "local llm",
+        "moe",
+        "quantization",
+        "windows"
+      ],
+      "url": "https://github.com/hiruhiru2005/sync-strata",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/local-llm",
+      "stars": 59,
+      "createdDate": "2026-11-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261120-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "tradermonty/claude-trading-skills",
+      "summary": "本週 +3,242 stars。給股票投資人的 Claude Code skills：市場分析、技術線圖、經濟日曆、screener、交易策略開發。可以參考它的 skill 拆法，接到你的甜甜價／sinotrade 查詢流程。",
+      "tags": [
+        "claude code",
+        "agent skill",
+        "investing",
+        "stock screener"
+      ],
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 7217,
+      "createdDate": "2025-10-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20261120-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "Tencent/LoopForge",
+      "summary": "本週 +3,568 stars。騰訊的自架 coding-agent 交付平台：在 chat 跟 Main Bot 描述需求，它開 Docker sandbox、checkout repo、分派給專案角色，跑可重複的 SOP，最後由人核准才 merge；可協調 CodeBuddy、Codex、Claude Code。",
+      "tags": [
+        "coding agent",
+        "agent orchestration",
+        "self-hosted",
+        "sandbox"
+      ],
+      "url": "https://github.com/Tencent/LoopForge",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 4043,
+      "createdDate": "2026-07-28"
+    },
+    {
+      "id": "20261120-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "zhouxiaoka/autoclip",
+      "summary": "本週 +524 stars。開源 AI 影片剪輯桌面工具「一個連結一鍵出片」：把 podcast、訪談、課程長片自動剪成短影音，生成字幕、封面和發佈文案，對應抖音、小紅書、TikTok、Reels、YouTube Shorts。跟上面的 PeakCut 可以一起比較。",
+      "tags": [
+        "creator tools",
+        "video clipping",
+        "desktop app",
+        "shorts"
+      ],
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 11130,
+      "createdDate": "2025-07-08",
+      "license": "MIT"
+    },
+    {
+      "id": "20261120-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "block/buzz",
+      "summary": "本週 +658 stars。Block 的自架 workspace，人和 AI agents 在同一個頻道合作；底層是 Nostr relay，每則訊息、review 核准、git event 都是簽章過的 event，人和 agent 共用同一套身分與稽核紀錄。agent 進來後能開 repo、送 patch、review code、跑 workflow。",
+      "tags": [
+        "multi-agent",
+        "workspace",
+        "nostr",
+        "rust"
+      ],
+      "url": "https://github.com/block/buzz",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/rust?since=weekly",
+      "stars": 37604,
+      "createdDate": "2026-03-06",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261120-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "ExitPath",
+      "summary": "Show HN 245 points、91 則留言（11/18）。整理要離開 Slack、Notion、Microsoft 365 時有哪些開源替代品，以及轉換實際要花多少功夫。",
+      "tags": [
+        "open source alternatives",
+        "self-hosted",
+        "migration"
+      ],
+      "url": "https://exitpath-ruddy.vercel.app/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50547980"
+    },
+    {
+      "id": "20261120-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "product-hunt",
+      "title": "Verse Engine by Ctruh",
+      "summary": "11/19 PH 第 2 名。瀏覽器原生的 3D／XR engine：檔案、掃描、平面圖都能變成一個連結，也能從 Blender、Unity、Unreal 直接發佈，開啟不用裝 app。",
+      "tags": [
+        "3d",
+        "xr",
+        "web",
+        "developer tools"
+      ],
+      "url": "https://verse.ctruh.com",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/verse-engine-by-ctruh"
+    },
+    {
+      "id": "20261120-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-20",
+      "cycle": "friday",
+      "priority": "product-hunt",
+      "title": "Tabstack by Mozilla",
+      "summary": "11/19 PH 第 7 名。Mozilla 做的 managed API，讓 agent 一次呼叫就能拿到附引用的答案、乾淨文字、對應 JSON，或完成一個瀏覽器任務；瀏覽器和 web loop 由他們跑，強調資料不拿去訓練、預設私密。免費起步送 10,000 credits。",
+      "tags": [
+        "ai agent",
+        "web api",
+        "browser automation",
+        "privacy"
+      ],
+      "url": "https://tabstack.ai",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/tabstack"
     }
   ],
-  "lastUpdated": "2026-11-19T19:39:22Z",
-  "updatedAt": "2026-11-19T19:39:22Z"
+  "lastUpdated": "2026-11-19T19:54:21Z",
+  "updatedAt": "2026-11-19T19:54:21Z"
 }
