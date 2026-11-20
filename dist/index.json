@@ -123736,8 +123736,179 @@
       "url": "https://tensorviz.dev",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/tensorviz"
+    },
+    {
+      "id": "20261121-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ex-Menlo 員工 C.C. Gong 聲請撤銷 UMG／Sony 在 UMG v. Suno 的傳票",
+      "summary": "UMG 與 Sony 向 Suno 投資人 Menlo Ventures 的前 principal C.C. Gong 發出傳票，她已提出 motion to quash，稱其「burdensome」。爭點是她 2026 年 2 月那則已刪除的推文（「我已把大部分聽歌時間轉到 Suno」），這對 Suno 的 fair-use 抗辯與大廠的 market dilution 主張都可能有分量。",
+      "tags": [
+        "suno",
+        "umg v. suno",
+        "subpoena",
+        "fair use"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/19/suno-subpoena-menlo-gong-quash-motion/"
+    },
+    {
+      "id": "20261121-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "UMG：美國有逾 80% 消費者想要 AI 音樂「kill switch」；Deezer 調查顯示美國受訪者對 AI 更負面",
+      "summary": "UMG 的 Michael Nash 表示，今年稍早調查是美國 74%、全球 68% 想要能一鍵過濾掉 100% AI 內容，最新一輪美國已超過 80%。Deezer 同週調查則顯示 41% 聽眾想完全過濾 AI 音樂，美國受訪者認為 AI 會導致創意流失的比例由 65% 升至 69%。",
+      "tags": [
+        "ai music",
+        "kill switch",
+        "labeling",
+        "deezer",
+        "umg"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/19/ai-music-kill-switch-survey/"
+    },
+    {
+      "id": "20261121-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "DMN 數據：串流平台上約 87% 曲目從未被播放過，AI 曲目聽眾遠少於想像",
+      "summary": "DMN 取得新資料指出，機器生成曲目的串流與聽眾遠低於外界想像。Tencent Music 才剛稱旗下 AI 音樂消費「negligible」且占比下降；Deezer 先前也指 AI 曲目約占 1–3% 串流，其中 85% 被標記為詐欺並取消分潤。",
+      "tags": [
+        "ai music",
+        "streaming",
+        "ai slop",
+        "deezer"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/19/ai-music-streams-analysis/"
+    },
+    {
+      "id": "20261121-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "WMG 與 Spotify 在 Morgan Stanley 大會談 AI remix 與藝人同意",
+      "summary": "Music Ally 整理本週 Morgan Stanley TMT 大會的重點：WMG 與 Spotify 討論 AI remix 產品，以及必須取得藝人同意（artist consent）；同場 UMG 也談到 AI 音樂的 kill switch。",
+      "tags": [
+        "ai remix",
+        "artist consent",
+        "spotify",
+        "wmg"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/20/wmg-and-spotify-talk-ai-remixes-and-the-need-for-artist-consent/"
+    },
+    {
+      "id": "20261121-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Instagram 推出 content protection：偵測未授權轉貼，並延伸到 AI 修改內容",
+      "summary": "Meta 去年在 Facebook 推出的 content protection 現在上 Instagram，可偵測帳號的原創 Reels 被他人未經許可轉貼，也擴及 AI 生成／修改的內容。對靠 Reels 推廣音樂的創作者是實用的防護。",
+      "tags": [
+        "content protection",
+        "ai-generated",
+        "instagram",
+        "creator tools"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/20/instagram-launches-content-protection-tool-for-unauthorised-reposts-and-ai-modification/"
+    },
+    {
+      "id": "20261121-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Songcode：用「程式碼」而非生成式音訊模型做 AI 音樂，stems 完全可編輯",
+      "summary": "Songcode 把簡單 prompt 轉成一首由 code 組成的歌，提供可完整編輯的 stems，官方強調沒有 generative audio model。HN 上目前互動還很少（2 分、1 則留言），先列為觀察。",
+      "tags": [
+        "music generation",
+        "stems",
+        "code-based music",
+        "hacker news"
+      ],
+      "url": "https://songco.de/",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50551172"
+    },
+    {
+      "id": "20261121-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AudioKit Super 909：免費的 TR-909 風格鼓機，支援 iOS／macOS 與 AUv3",
+      "summary": "AudioKit Pro 釋出 Super 909，受 Roland TR-909 啟發，有 step sequencer、可演奏 pad 與調整工具，iPhone、iPad、Mac 皆可用，提供 standalone 與 AUv3 plugin 兩種形式，免費。",
+      "tags": [
+        "drum machine",
+        "free plugin",
+        "auv3",
+        "tr-909"
+      ],
+      "source": "DAWCrash",
+      "sourceUrl": "https://www.dawcrash.com/2026/11/20/audiokit-releases-super-909-a-free-drum-machine-for-ios-and-macos/"
+    },
+    {
+      "id": "20261121-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Korg Phase8 Companion：免費網頁版編輯器，支援 32 步 sequencing、Euclidean 節奏與視覺化 automation",
+      "summary": "Phase8 本身沒有螢幕，Companion 讓你在瀏覽器編 pattern 再送進機器；pattern 長度由 8 步擴充到 16／32 步，並加入 pattern 管理與 automation，同時更新韌體。",
+      "tags": [
+        "korg",
+        "web editor",
+        "euclidean",
+        "sequencer"
+      ],
+      "source": "MusicRadar",
+      "sourceUrl": "https://www.musicradar.com/music-tech/korgs-phase8-gets-a-free-web-based-editor-with-32-step-sequencing-euclidean-rhythms-and-visual-automation"
+    },
+    {
+      "id": "20261121-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Phase Fiasco Kazu：可 sequence 的 multi-FX plugin，現在支援 iPadOS",
+      "summary": "出自 Tape Fiasco 2 作者之手的 Kazu 是可排序（sequenceable）的 multi-FX plugin，原本支援 macOS、Linux、Windows，現在 iPadOS 版已在 App Store 上架。",
+      "tags": [
+        "multi-fx",
+        "plugin",
+        "ipados"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/phase-fiasco-kazu-a-sequenceable-multi-fx-plugin-from-the-tape-fiasco-2-creator.html"
+    },
+    {
+      "id": "20261121-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "澳洲創意產業反對政府「許可」AI 訓練的規劃，擔心影響全球權利人",
+      "summary": "Music Ally 指出，澳洲音樂產業認為若 AI 公司說服政府放寬 AI 訓練的著作權保護，波及的將是全球權利人。這是近期澳洲 AI 政策爭論的延續。",
+      "tags": [
+        "ai training",
+        "copyright",
+        "policy",
+        "australia"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/20/australian-creative-sector-bristles-at-permit-ai-training-plans/"
     }
   ],
-  "lastUpdated": "2026-11-21T03:58:00+08:00",
-  "updatedAt": "2026-11-21T03:58:00+08:00"
+  "lastUpdated": "2026-11-21T04:20:00+08:00",
+  "updatedAt": "2026-11-21T04:20:00+08:00"
 }
