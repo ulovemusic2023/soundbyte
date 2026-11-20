@@ -123077,8 +123077,198 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261121-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32586：Drama 3 TTS 支援 voice cloning",
+      "summary": "11/21 01:34（台北）合併。Fish Audio 的 Drama 3（35B MoE、每 token 3B active、可多角色）之前在 llama.cpp 會忽略 `--tts-speaker-file`，現在重用 Fish S2 的 codec encoder，給一段參考音檔＋逐字稿就能 clone（取前 30 秒、一次一個 reference）。作者用 2 bpw backbone＋Q8_0 mmproj 在 CUDA 實測：WavLM speaker similarity 有 reference 0.883、沒有 0.563；注意 mmproj 要重新轉檔。",
+      "tags": [
+        "tts_speech",
+        "voice cloning",
+        "llama.cpp",
+        "Drama 3"
+      ],
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32586",
+      "price": null,
+      "vram": "quantize-ok（35B 參數，2 bpw 約 9GB，估算）",
+      "license": "MIT（llama.cpp）／Fish Audio 自訂授權（Drama 3）"
+    },
+    {
+      "id": "20261121-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32531：Llama Chat 加入語音訊息與即時聽寫",
+      "summary": "11/20 23:34（台北）合併。llama-server 內建 web UI 可以直接用麥克風：模型能聽（omni）就把錄音當 voice message 送 `input_audio` 並附逐字稿；模型不能聽就交給另一個有 audio input 的模型即時聽寫成文字，router mode 可在 Settings > Voice 指定 transcription model，走 `/v1/realtime?intent=transcription` WebSocket。PR 說完整語音對話的 voice mode 會另開 PR 跟上。",
+      "tags": [
+        "llm_inference",
+        "speech-to-text",
+        "llama-server",
+        "realtime"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/32531",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32531",
+      "price": null,
+      "vram": "local-ready（UI 功能，實際吃多少看載入的 ASR／omni 模型）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OVHcloud Olala mini 7A1B：6.8B MoE（約 1B active）、Apache-2.0，GGUF 不到 6GB",
+      "summary": "權重 11/19 上 Hugging Face。29 層 Mamba-3＋7 層 attention 的 hybrid MoE，32K context（官方說 128K 版快出），支援四段 reasoning effort 和 tool calling。GGUF Q5_K_M 5.58 GiB、Q6_K 5.87 GiB，官方稱 6-bit 在 16GB MacBook Air M5 約 70 tok/s；但目前要用 OVHai 的 llama.cpp fork，upstream llama.cpp／Ollama／LM Studio 還載不了，也警告通用量化 recipe 會出 NaN、沒有 4-bit 檔。",
+      "tags": [
+        "llm_inference",
+        "GGUF",
+        "hybrid Mamba",
+        "MoE"
+      ],
+      "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-GGUF",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-GGUF",
+      "price": null,
+      "vram": "local-ready（Q6_K 5.87 GiB）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261121-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Platypush 自架語音助理 pipeline 重寫：microWakeWord＋Silero VAD（HN 120 分）",
+      "summary": "11/19 文章。作者把 openWakeWord 換成 Home Assistant Voice 在用的 microWakeWord（新 `assistant.microwakeword` plugin），STT 端改用 Silero VAD（onnxruntime、免 PyTorch）加 hysteresis、0.5 秒滑動視窗多數決和自適應 noise floor；合成噪音測試中，講完後對話結束時間從 6–10 秒縮到 1.0–1.6 秒。LLM 可指向本機 Ollama 等 OpenAI 相容 endpoint，TTS 可換全本地的 Piper（RPi 5 上多約 3–4 秒延遲）。",
+      "tags": [
+        "tts_speech",
+        "VAD",
+        "wake word",
+        "whisper",
+        "self-hosted"
+      ],
+      "url": "https://github.com/BlackLight/platypush",
+      "source": "Hacker News",
+      "sourceUrl": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+      "price": null,
+      "vram": "local-ready（RPi 5 等級即可）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NVIDIA TensorRT-LLM v1.3.0：Anthropic Messages API、NVFP4 權重可在 Ada／Hopper 跑",
+      "summary": "11/20 10:45（台北）發布。跟自架 coding agent 最相關的是新增 Anthropic Messages API（`/v1/messages`）、`auto` tool／reasoning parser 和 named-function `tool_choice`；W4A16 NVFP4 weight-only（Marlin）讓 NVFP4 checkpoint 也能在 Hopper 和 Ada 跑。其他：Rubin（SM107）preview、DeepSeek-V4／Kimi K3 支援、DFlash／PARD 等 speculative decoding drafter、KV Cache Manager V2 多數模型預設開、NVFP4 KV cache 和 disk cache。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "NVFP4",
+        "Anthropic Messages API"
+      ],
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0",
+      "price": null,
+      "vram": "quantize-ok（看模型；這版主打的大型 MoE 多需資料中心卡）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261121-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Eclipse Enclave 1.0：Eclipse 基金會推出的 coding agent sandbox（MIT）",
+      "summary": "11/19 由 Eclipse Foundation 正式發布（源自 EclipseSource）。每個 session 跑在 Docker／Podman container，讓 Claude Code、Codex、Copilot、OpenCode、Pi 開 YOLO mode；agent 只看得到 project worktree 和你指定的 mount，所有流量走 gateway、只放行 allowlist 網域並記錄放行／阻擋，secret 只以 placeholder 進 sandbox、由 gateway 在請求裡替換；登入、設定、agent memory 跨 session 保留，可平行跑多個 agent。支援 Linux、macOS、WSL2。",
+      "tags": [
+        "ai_devtools",
+        "agent sandbox",
+        "coding agent",
+        "egress allowlist"
+      ],
+      "url": "https://github.com/eclipse-enclave/enclave",
+      "source": "Eclipse Newsroom",
+      "sourceUrl": "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-launches-eclipse-enclave-10-bringing-security-and-choice",
+      "price": null,
+      "vram": "local-ready（不吃 GPU）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "LocalAI v5.0（v5.0.0 → v5.0.1）：desktop app、server 端 chat、Python sandbox、native Windows",
+      "summary": "v5.0.0 11/19 01:00、v5.0.1 11/21 01:03（台北）。自架 OpenAI／Anthropic 相容 API 的大改版：新 desktop app（macOS Apple silicon、Linux）、chat 改在 server 端跑（可中途 steer、sub-agents、`/goal`）、Projects 與 Files（History 可復原模型做的改動）、預設無網路的 Python／shell sandbox（5.0.0 只支援 Linux，5.0.1 加 darwin/arm64 套件）、Remotes 可接其他 OpenAI／Anthropic 相容 endpoint。5.0.1 另加 native Windows（server＋windows/amd64 llama-cpp backend）。",
+      "tags": [
+        "infra_runtime",
+        "self-hosted llm",
+        "sandbox",
+        "OpenAI-compatible"
+      ],
+      "url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.1",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/mudler/LocalAI/releases/tag/v5.0.1",
+      "price": null,
+      "vram": "local-ready（看載入的模型；Home 會依硬體推薦模型）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tencent Hy4 開放權重：770B MoE（49B active）、1M context",
+      "summary": "11/20 騰訊混元開放 Hy4、Hy4-FP8、Hy4 base 權重（Hy4 flash 前幾天已開），同步發 System Card，並在 r/LocalLLaMA 辦 AMA（太平洋時間 11/20 8–10 點）。78 層（1 dense＋77 MoE）、Gated DeepSeek Sparse Attention＋IndexCache、iHC residual，原生支援圖片和影片理解，附 3.3B 的 DFly2 speculative decoding draft。官方建議 vLLM／SGLang；AngelSlim 的 GGUF 最小 STQ1_0 也有 214.65 GiB（Q4_K_M 437.93 GiB），還要用 PR #32517 分支的 llama.cpp。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "open weights",
+        "sparse attention"
+      ],
+      "url": "https://huggingface.co/tencent/Hy4",
+      "source": "Hugging Face",
+      "sourceUrl": "https://www.chaincatcher.com/article/2306621",
+      "price": null,
+      "vram": "cloud-only（GGUF 最小 214.65 GiB）",
+      "license": "Tencent Hy License 1.0（Apache-2.0 衍生，大型 MaaS 商用另有條款）"
+    },
+    {
+      "id": "20261121-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈Language Models Can Rewrite Their Own Weights〉：27B 模型不靠 gradient 改寫自身權重（HN 212 分）",
+      "summary": "arXiv 2611.21885（11/16 投稿），11/20 衝上 HN。作者稱一個開源 27B 模型拿到自己的權重、被評分的答案和執行自己的能力後，只用 forward pass 推理去診斷並改寫自身權重，沒看過的題目準確率 +6.6 分、連續 8 個 session 持續上升；還能把受損副本修回原本八成以上的圖像任務準確率，而且這能力只在同家族最大的模型出現。HN 留言多半存疑，有人認為只是 overfitting，也有人說像之前只修到單一 bug 的研究。",
+      "tags": [
+        "llm_training",
+        "self-rewriting",
+        "weight editing",
+        "recursive self-improvement"
+      ],
+      "url": "https://arxiv.org/abs/2611.21885",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50577265",
+      "price": null,
+      "vram": "cloud-only（估：27B 全精度權重約 54GB，論文未給硬體）",
+      "license": "arXiv 論文（未見公開程式碼）"
     }
   ],
-  "lastUpdated": "2026-11-21T03:10:17+08:00",
-  "updatedAt": "2026-11-21T03:10:17+08:00"
+  "lastUpdated": "2026-11-21T03:30:10+08:00",
+  "updatedAt": "2026-11-21T03:30:10+08:00"
 }
