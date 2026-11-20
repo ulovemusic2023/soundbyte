@@ -123427,8 +123427,317 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261121-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "iamajmeena/neonclipping",
+      "summary": "貼 YouTube／Twitch／Kick 連結（或自己的 MP4），約兩分鐘吐出帶字幕的 9:16 直式短片，每段附標題和 hook，全程在本機跑、不用帳號。Fast mode 只下載音訊，用 YouTube 字幕或本地 Whisper 轉錄，再用音量暴衝、2–4 kHz 人聲能量挑片段，交給 Ollama 本地 LLM 評分；你給的星等評分還會回頭重調權重。",
+      "tags": [
+        "creator tools",
+        "video clipping",
+        "whisper",
+        "ollama",
+        "ffmpeg"
+      ],
+      "url": "https://github.com/iamajmeena/neonclipping",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-07+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1192,
+      "createdDate": "2026-11-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "mankidev/antialgorithm",
+      "summary": "給創作類任務用的 agent skill：命名、故事、遊戲點子、海報、UI。它讓模型先說出自己「最平均」的第一個選擇，再根據專案理由刻意偏離；附 seed.py 隨機起點、moves.py 記錄用過的招避免重複、check.py 檢查 SVG 文字溢出與對比。`npx skills add` 可裝進 Claude Code、Codex、Cursor、OpenCode。",
+      "tags": [
+        "agent skill",
+        "claude-code",
+        "codex",
+        "creative",
+        "design"
+      ],
+      "url": "https://github.com/mankidev/antialgorithm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 557,
+      "createdDate": "2026-11-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "hridaya423/phonedriver",
+      "summary": "讓 AI agent 操作 Android／iPhone（實機或模擬器）的 MCP server + CLI：把畫面讀成文字、點按、回報變化，遇到付款會先停下來問你。`npx -y phonedriver init` 自動裝進 Claude Code、Codex、Cursor、VS Code、Gemini CLI；作者自稱 token 用量比 mobile-mcp 少 6.9x，適合拿來讓 agent 跑 App 註冊流程測試。",
+      "tags": [
+        "mcp",
+        "computer use",
+        "mobile testing",
+        "claude-code",
+        "codex"
+      ],
+      "url": "https://github.com/hridaya423/phonedriver",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 304,
+      "createdDate": "2026-11-08",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261121-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "diego3g/craft",
+      "summary": "給 AI agent 用的 UI 設計 skill 組：叫 agent 做「pricing page」時，它會先寫 design brief、列出畫面所有 state、沿用你的 design system，交件前自我檢查，並在關鍵處停下等你點頭。支援 Paper、pen.dev、Figma 或純 HTML，Claude Code 可用 plugin 裝，其他 agent 用 `npx skills add diego3g/craft`。",
+      "tags": [
+        "agent skill",
+        "ui design",
+        "design system",
+        "claude-code"
+      ],
+      "url": "https://github.com/diego3g/craft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 291,
+      "createdDate": "2026-11-15",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "20261121-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "Renakoni/Voicebox",
+      "summary": "Android 上完全離線的 voice cloning＋中日英 TTS，基於 GPT-SoVITS，約 5 秒參考音＋逐字稿就能複製聲音，還能跨語言（日文參考音講中文）。走 WebGPU，Snapdragon 可加 NPU；能直接匯入 GPT-SoVITS 的 .ckpt/.pth，內建 HTTP API 給 Tasker 或有聲書 App 呼叫。需 ARM64、Android 11+。",
+      "tags": [
+        "voice cloning",
+        "tts",
+        "gpt-sovits",
+        "on-device ai"
+      ],
+      "url": "https://github.com/Renakoni/Voicebox",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/voice-cloning",
+      "stars": 203,
+      "createdDate": "2026-11-14",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261121-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "kobimusic/dettato",
+      "summary": "Show HN 181 分的 audio-to-MIDI 模型：只有 20M 參數（作者說比 MuScriptor 1.3B 小約 65x），在作者公布的 benchmark composite 60.8，高於 MuScriptor 的 47.4 和閉源 Mirelo A2M v1.1 Pro 的 56.1。輸出多樂器 track＋鼓、可商用，訓練資料不含版權錄音；作者自己承認樂器分離還不準，出來的是 performance MIDI，不是樂譜。",
+      "tags": [
+        "audio-to-midi",
+        "music transcription",
+        "music tech",
+        "open model"
+      ],
+      "url": "https://github.com/kobimusic/dettato",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50526023",
+      "stars": 119,
+      "createdDate": "2026-11-16",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261121-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "replit/amuse",
+      "summary": "Replit 官方開源的自架個人 AI agent：網路研究附來源、聊天裡開一個可看可接手的 live browser、提醒與背景監測、把目標拆成計畫持續推進，還能做小 App。寄信／送表單／付款前會跳 approval card，登入資訊放加密 vault、模型只看到替代 token。需要 OpenAI API key＋PostgreSQL，Docker Compose 一鍵起。",
+      "tags": [
+        "ai agent",
+        "self-hosted",
+        "browser agent",
+        "personal assistant"
+      ],
+      "url": "https://github.com/replit/amuse",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 95,
+      "createdDate": "2026-11-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261121-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "ZhuLinsen/daily_stock_analysis",
+      "summary": "GitHub Trending Python 週榜，本週 +2,595 stars。LLM 驅動的自選股分析系統，涵蓋 A股、港股、美股、日股、韓股、台股和 ETF，每天自動產出「決策儀表板」（結論、評分、買賣點、風險提示）推到 Telegram／Discord／Slack／Email。可用 GitHub Actions 零成本定時跑，也支援 Ollama 等本地模型；README 首頁有不少贊助商推廣連結，接 API 前留意。",
+      "tags": [
+        "investing",
+        "台股",
+        "ai agent",
+        "github actions"
+      ],
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/python?since=weekly",
+      "stars": 73561,
+      "createdDate": "2026-01-10",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "career-ops-hq/career-ops",
+      "summary": "topic:ai-agent star-surge 查詢（11/14 後仍在更新、>800 stars）排第一的開源 AI 求職 agent：掃職缺、依你的條件給 1–5 分、產出客製履歷與 cover letter，可當 Claude Code plugin／agent skill 用。作者 @santifer 自述用它評估 740 個職缺、投 68 個、拿到 12 個面試、1 個 offer；目前有 800+ contributors。",
+      "tags": [
+        "ai agent",
+        "job search",
+        "claude-code",
+        "agent skill"
+      ],
+      "url": "https://github.com/career-ops-hq/career-ops",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 83939,
+      "createdDate": "2026-04-04",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "apex-compute/ANR",
+      "summary": "Apex Compute 的 neural rendering 套件，11/11 建立、10 天衝到 2.7k stars。目前只有 ANR FG（frame generation）開 beta，可裝進遊戲取代原本的 frame gen；SR 超解析和 RR 光追降噪寫「beta soon」。支援 RTX 20–50、GTX 16、Radeon RX 5000–9000、Intel Arc 和 Steam Deck；核心原始碼標示 coming soon，repo 目前沒有 license。",
+      "tags": [
+        "neural rendering",
+        "frame generation",
+        "gpu",
+        "local inference"
+      ],
+      "url": "https://github.com/apex-compute/ANR",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-07+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 2730,
+      "createdDate": "2026-11-11"
+    },
+    {
+      "id": "20261121-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "Immortal-Protocols/lastbook",
+      "summary": "離線求生圖書館：手冊、影片、百科、離線地圖和實用指南全放在一台電腦，裝完就能斷網用。內建 Chat 會根據館藏（含離線百科）回答並附來源，可選裝本地 AI。macOS／Windows 版 1.1.13 已簽章上線，Linux 支援 Ubuntu 24.04／26.04，iPad 版只有原始碼預覽。",
+      "tags": [
+        "offline ai",
+        "local llm",
+        "rag",
+        "self-hosted"
+      ],
+      "url": "https://github.com/Immortal-Protocols/lastbook",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-07+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 2717,
+      "createdDate": "2026-11-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261121-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "rivet-dev/open-orange",
+      "summary": "Rivet 出的 OpenOrange：既有 Cloudflare Workers＋Durable Objects 專案不改 code，就能搬到 AWS、GCP、Azure 或自己的機器跑，`wrangler dev` 換成 `orange dev`。每個 Durable Object 變成一個有自己 SQLite 的 Rivet Actor，storage 由 S3 撐；官方宣稱 compute 便宜 4.8x、storage 便宜 8.7x（自家數字）。",
+      "tags": [
+        "cloudflare workers",
+        "self-hosted",
+        "serverless",
+        "devops"
+      ],
+      "url": "https://github.com/rivet-dev/open-orange",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-07+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 694,
+      "createdDate": "2026-11-12",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261121-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Docker",
+      "summary": "11/20 PH 第 3 名（Chris Messina hunt）。Docker 品牌重塑、轉向 agent 時代：主張 agent 不是 workload 而是 actor，推出給 agent 用的可信 supply chain、隔離 runtime（Docker Sandboxes）和跨團隊治理（Docker AI Governance），還換了新 Moby 鯨魚 logo。",
+      "tags": [
+        "agent sandbox",
+        "docker",
+        "ai governance",
+        "devops"
+      ],
+      "url": "https://www.docker.com/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/docker"
+    },
+    {
+      "id": "20261121-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Currents",
+      "summary": "11/20 PH 第 5 名。Currents 本來就記錄 CI 裡每次 Playwright 測試，現在可從 Claude 或 ChatGPT／Codex 的 plugin directory 接上，直接問「CI 為什麼掛」，agent 會拿到失敗內容、歷史和 trace。",
+      "tags": [
+        "playwright",
+        "ci",
+        "claude",
+        "codex",
+        "testing"
+      ],
+      "url": "https://currents.dev",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/currents-4"
+    },
+    {
+      "id": "20261121-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "tensorViz",
+      "summary": "11/20 PH 第 10 名，MIT 開源。跑一次真的 PyTorch forward pass，轉成每個 module、tensor shape 都看得到的互動圖，Claude Code、Codex、Cursor 可以搜尋這張圖、讀實測 shape，改模型 code 有憑據不靠猜；Model Explorer 也收錄了 560+ 篇近期論文模型的圖。",
+      "tags": [
+        "pytorch",
+        "coding agent",
+        "visualization",
+        "open source"
+      ],
+      "url": "https://tensorviz.dev",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/tensorviz"
     }
   ],
-  "lastUpdated": "2026-11-21T03:36:39+08:00",
-  "updatedAt": "2026-11-21T03:36:39+08:00"
+  "lastUpdated": "2026-11-21T03:58:00+08:00",
+  "updatedAt": "2026-11-21T03:58:00+08:00"
 }
