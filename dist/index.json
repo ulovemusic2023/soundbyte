@@ -123267,8 +123267,168 @@
       "price": null,
       "vram": "cloud-only（估：27B 全精度權重約 54GB，論文未給硬體）",
       "license": "arXiv 論文（未見公開程式碼）"
+    },
+    {
+      "id": "20261121-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Levent Alpöge 宣稱與 Claude 證出 Generalized Riemann Hypothesis：「Claude far outpaced me near the finish line」",
+      "summary": "數學家 Levent Alpöge 發文宣稱與 Claude 合作證明了 Riemann Hypothesis，並延伸到 Generalized RH，論證也已用 Lean 形式化（目前仍待數學界檢驗）。這篇在 HN 拿到 1,864 分、1,200+ 則留言，是本週最多人討論的話題。值得看的是兩人怎麼分工：他把問題「引導到跟 toy setting 類比的正確情境」，最後一哩則是 Claude 跑在前面。人的價值正在移往選問題、建類比、判斷方向；對一輩子追這個題目的人，他沒把這件事看成終點，而說這是「one dawn across science」。",
+      "tags": [
+        "ai-collaboration",
+        "human-in-the-loop",
+        "frontier-research"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50574968",
+      "source": "alpo.ge（HN 1,864 分）",
+      "sourceUrl": "https://alpo.ge/remark.pdf",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Seth Godin：恆溫器調再高，房子也不會比較快變暖",
+      "summary": "Seth Godin 用四個比喻講「速度的極限」：恆溫器調再高，房子到 72 度的時間都一樣；2,000 度的烤箱烤不熟 pizza，只會燒焦；兩個人只有一段對話，11 個人卻有 55 段；菜太淡可以上桌再加鹽，太鹹就救不回來。可以帶走的框架是：有些系統有自己的速度，硬加油門只會燒壞東西；團隊人數變多，溝通成本是平方級成長；不確定時寧可先保守，之後再加。",
+      "tags": [
+        "systems-thinking",
+        "pacing",
+        "team-scaling"
+      ],
+      "url": "https://seths.blog/2026/11/messing-with-the-thermostat/",
+      "source": "Seth's Blog",
+      "sourceUrl": "https://seths.blog/2026/11/messing-with-the-thermostat/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Vint Cerf：TCP/IP 從沒申請專利，因為沒人知道 25 年後盟友是誰",
+      "summary": "João Tomé 新 podcast《Future Stories》第一集請到 TCP/IP 共同設計者 Vint Cerf。被問到 TCP/IP 為什麼沒申請專利，他說當年沒人知道 25 年後的盟友會是誰，要確保盟友一定用得到，唯一的辦法就是直接開放。這裡的框架是：未來看不清時，open by default 本身就是對沖。另一段故事：他花兩週查一個隨機出錯、無法重現的 bug，找好友 Steve Crocker 一起逐步追，30 秒就找到問題。他從中得到的教訓是：collaboration 才是關鍵。",
+      "tags": [
+        "open-by-default",
+        "uncertainty",
+        "collaboration"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50568861",
+      "source": "emot | Random Stories（HN 151 分）",
+      "sourceUrl": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "停止寫 code，你 review code 的能力也會跟著退化（HN 262 分）",
+      "summary": "cekrem 打了個比方：沒有吉他手會因為「我已經夠好了」就不再練琴，只靠指揮別人彈、聽成果來維持水準，但軟體業現在卻默認這行得通。他認為，光是「review 完 Claude 產出的所有 code」並不夠，何況很多人其實連一半都沒細看。AI-native 團隊要記住，判斷 code 好壞的能力來自親手解題，所以要刻意保留練習。他也用 Doom 作比：目標只是破關就儘管開金手指，想變強就別開。",
+      "tags": [
+        "deliberate-practice",
+        "skill-atrophy",
+        "ai-native-team"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50573886",
+      "source": "cekrem.github.io（HN 262 分）",
+      "sourceUrl": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "「NVIDIA has to become a frontier lab faster than frontier labs are becoming chip companies」：最大的威脅是自己的客戶（Naval 轉引）",
+      "summary": "@PersianMacroGuy 的長文認為，NVIDIA 最大的威脅是自己的大客戶：各家 frontier lab 都在做自研晶片（Google TPU、OpenAI 與 Meta 找 Broadcom 做 ASIC、Anthropic 成立 in-house silicon 團隊），想把 model 和 chip 一起設計成 feedback loop。NVIDIA 只能比客戶更快往上游走，靠免費的 open-weight 模型逼企業自己買 GPU。他還說，非創辦人的 CEO 不太可能扛這種得跟大客戶正面競爭的風險。Naval 只轉引了這句，拿到 5.4K+ 讚。可以帶走的 playbook：大客戶一旦有理由垂直整合，你往上走的速度就得比他們往下走更快。（以上是作者的推論，不是既定事實。）",
+      "tags": [
+        "customer-becomes-competitor",
+        "vertical-integration",
+        "moat"
+      ],
+      "url": "https://x.com/PersianMacroGuy/status/2122570150075359514",
+      "source": "Naval (X) 轉引 @PersianMacroGuy",
+      "sourceUrl": "https://x.com/naval/status/2123768555317723476",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "a16z：There is No Gen Z，受眾已經不能用世代來切",
+      "summary": "a16z 的 Moses Sternstein 引用 Electric Twin 的報告〈The Great Unbundling〉：Gen Z 會在不同頻道、論壇和 influencer 之間自己混搭資訊來源，所以分群看的是「information mix」，國籍或政治立場反而沒那麼重要。用政治立場就能大致預測 Boomer 住哪；換成 Zoomer，模型只比亂猜好一點。Pew 的數據也顯示，TikTok 使用者中把它當新聞來源的比例，從 2020 年的約 20% 增加到 2026 年的一半以上。對創作者和 podcast 來說，定位受眾要看他們的內容飲食和所屬部落，人口統計不再好用。",
+      "tags": [
+        "audience-fragmentation",
+        "creator-economy",
+        "distribution"
+      ],
+      "url": "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen",
+      "source": "a16z news",
+      "sourceUrl": "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Paul Graham：好東西受損最多的，是被冷落的那段時期",
+      "summary": "\"Well-made old things often go through a phase of neglect before people start caring about them again. Much if not most of the damage they accumulate happens during this phase.\" — Paul Graham。經典的東西最危險的時候，往往不是被淘汰，而是「還沒人重新在乎」的那段空窗。老品牌、舊 codebase、過去的作品都一樣，要在這段時間守住它。",
+      "tags": [
+        "neglect-phase",
+        "durability",
+        "taste"
+      ],
+      "url": "https://x.com/paulg/status/2123538835598381150",
+      "source": "Paul Graham (X)",
+      "sourceUrl": "https://x.com/paulg/status/2123538835598381150",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-21",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Em：拜託，別把你的思考也自動化了（HN 381 分）",
+      "summary": "\"I'm practically begging you to please not automate your thinking.\" — Em。一位工程系學生的指導教授對她說「看得出這是你自己寫的」，因為他收過太多 AI 寫的報告。這篇在 HN 引起 378 則留言的討論。",
+      "tags": [
+        "think-for-yourself",
+        "ai-dependence",
+        "writing"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50571189",
+      "source": "Em's blog（HN 381 分）",
+      "sourceUrl": "https://em-online.bearblog.dev/i-can-tell-you-wrote-this-yourself/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-21T03:30:10+08:00",
-  "updatedAt": "2026-11-21T03:30:10+08:00"
+  "lastUpdated": "2026-11-21T03:36:39+08:00",
+  "updatedAt": "2026-11-21T03:36:39+08:00"
 }
