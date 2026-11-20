@@ -122822,8 +122822,263 @@
       "url": "https://tabstack.ai",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/tabstack"
+    },
+    {
+      "id": "20261121-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "AWS Emulator 幕後：上百個 agent 同時改 code、團隊沒寫也沒 review 任何一行，靠「merge gate」決定能不能進 mainline",
+      "summary": "InfoQ 整理上市一週後的後續：AWS Emulator（CC0、單一 Rust binary、從 438 個公開 API model 生成、涵蓋 200+ 服務）由三組 agent 團隊維護——一組管 test suite、一組找 emulator 的問題、一組修；每個修正都要過 merge gate（編譯＋coding standards、security、fidelity regression 的 agent review），不過就退回重做。Matthew Goldberg 說起點只是給 Kiro 的三行 prompt（先寫對真 AWS 能過的 CLI 測試，再做讓同一批測試通過的 in-memory 實作），現在每天修掉上千個 issue。外部實測：DynamoDB／S3／SQS 服務層 fidelity 約 60–70%，CloudFormation 約 20%；官方明講不評估 IAM policy，別拿它測安全性。Matt Wood 也提醒：emulator 接受了真 AWS 會拒絕的行為，agent 反而會學到錯的捷徑。",
+      "tags": [
+        "paradigm-shift",
+        "software factory",
+        "merge gate",
+        "verification",
+        "coding agent 編排",
+        "AWS"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/aws-emulator-local-testing/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/aws-emulator-local-testing/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Hugging Face「harness adapters」：在你自己的 harness 裡做 RL 訓一個 LoRA，Qwen3.8-27B 在 pi 下 SWE-bench Pro 困難題從 39% 拉到 65%，tool calls 少一半以上",
+      "summary": "Lewis Tunstall 等人的論點：模型是為通用表現調的，配上特定 harness 和你的任務分布就會浪費效能。做法是讓 harness（pi、OpenCode、Hermes Agent）照原樣跑，proxy 錄下它對 vLLM 產生的 token，用 TRL 的 `AsyncGRPOTrainer`＋OpenEnv＋harbor 在 Hub Jobs 上訓 LoRA。結果：pi 在 SWE-bench Pro hard 51 題 39.2%→64.7%、hermes 29.4%→43.1%、opencode 35.3%→51.0%，同樣解出的題目 tool calls 少 56–72%；三個 LoRA 以 ½ 權重合成一個 super-adapter，三種 harness 都能直接用。adapters、GGUF、RL tasks 全部開源。",
+      "tags": [
+        "paradigm-shift",
+        "agent harness",
+        "harness adapter",
+        "RL",
+        "LoRA",
+        "local LLM"
+      ],
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "HubSpot 公開自家 agent harness Aviator：20 行 Java 起一個 agent，transcript 跨 provider 可中途換模型，Sidekick Code 每週 merge 2,500+ PR",
+      "summary": "HubSpot 後端多是 Java，找不到合用框架就自己做 Aviator：現有 RPC 加 annotation 就變 tool（`addChirpTool`）；自訂 provider-agnostic transcript，換 provider 時重寫 tool-call ID、移除不相容的 reasoning block，所以能在對話中途切模型、從便宜的 triage agent「升級」成 coding agent，transcript 本身也是可 checkpoint 的 durable log。Sidekick 需要 3,000+ 個 tools，於是支援 deferred tools＋tool search（自架模型用內部索引），`SKILL.md` 另加 `load-tools`／`suggested-tools`；code execution 則是 WASM 裡的 Python 與 Bash sandbox，加上虛擬 filesystem，可以同時跑上萬個短命環境。",
+      "tags": [
+        "agent harness",
+        "tool search",
+        "agent sandbox",
+        "skills",
+        "multi-model"
+      ],
+      "url": "https://hubspot.engineering/blog/aviator-hubspots-agent-harness/",
+      "source": "HubSpot Engineering",
+      "sourceUrl": "https://hubspot.engineering/blog/aviator-hubspots-agent-harness/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Codex CLI 0.171.0：GPT-6.2 Sol 成預設，TUI workspace 預設開啟（可看 subagent transcript），新增 `codex exec --remote` 接到既有 app server",
+      "summary": "11/20 發布。TUI workspace 預設開啟，在主對話旁邊提供可搜尋的文件預覽、圖片預覽和 subagent transcripts；`codex exec --remote <ADDR>` 可以在既有的 app server 上啟動或續跑非互動 session，`/rc`、`/remote` 管理本機 remote control 並顯示裝置配對碼；也加入 undo／redo 快捷鍵和自訂 MCP status line。修正包括切換 session 時保留草稿與排隊中的 follow-up、換工作目錄時保留 permission profile、避免晚到的完成事件取消新一輪的 approval。",
+      "tags": [
+        "coding agent",
+        "Codex",
+        "remote session",
+        "subagent"
+      ],
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+      "source": "GitHub (openai/codex)",
+      "sourceUrl": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Martin Fowler〈Fragments: November 20〉：健康的 code 讓 agent review 便宜 22–35%；Yegge 呼籲 software factory 放慢到人能治理的速度",
+      "summary": "Fowler 收錄 Marcus Borg 的實驗：三個 LLM、246 個開源 repo 的 465 個 PR，各跑一條五個 agent 的 review＋fix pipeline，CodeHealth 2.8 的 PR 和 9.7 的相比成本高 22–35%，主因是 Complex Method 和 Complex Conditional。另引 Steve Yegge：不把 AI 放慢到人的速度，連小團隊都會處處出事；Fowler 認為 agent 速度應受限於能治理它的人。Chad Fowler 談 SaaS 未來：一個核心服務底下長出上萬個客製 app，供應商該提供驗證工具，因為「code generation 不再是瓶頸，verification 才是」。",
+      "tags": [
+        "verification",
+        "code health",
+        "software factory",
+        "agentic engineering"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-11-20.html",
+      "source": "martinfowler.com",
+      "sourceUrl": "https://martinfowler.com/fragments/2026-11-20.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Mistral Vibe Desktop GA：Work 與 Code 合成一個 app，本機 repo 或 managed cloud sandbox 都能跑，平行 sub-sessions 用 Git worktree 隔離",
+      "summary": "11/17 在 macOS、Windows 正式提供（Linux 之後）。本機 session 和 Vibe CLI 共用 core agent engine 與 session logs，但不必另裝 CLI，tools 和 prompts 可能不同；可在本機 repo 或 Mistral 託管的 cloud sandbox 跑 coding 任務，內建 terminal、背景指令（build、dev server、watcher）、Unified／Split diff 與 PR 狀態檢視、內嵌瀏覽器，sub-sessions 可以追蹤和檢視委派出去的 subagent 對話。",
+      "tags": [
+        "coding agent",
+        "agent sandbox",
+        "Git worktree",
+        "Mistral"
+      ],
+      "url": "https://docs.mistral.ai/resources/release-notes",
+      "source": "Mistral Docs",
+      "sourceUrl": "https://docs.mistral.ai/vibe/code/desktop/overview",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "PostgreSQL 19 正式發布：`REPACK (CONCURRENTLY)` 不鎖表清 bloat、`pg_plan_advice` 固定查詢計畫、standby 支援 read-your-writes",
+      "summary": "`REPACK` 取代 `VACUUM FULL` 與 `CLUSTER`，加 `CONCURRENTLY` 時清理期間讀寫照常；`pg_plan_advice`／`pg_stash_advice` 可以鎖定 plan，不改 app 就修好變慢的 query。其他重點：`WAIT FOR LSN` 讓 standby 讀到剛在 primary 寫入的資料、`INSERT ... ON CONFLICT DO SELECT` 一次完成 get-or-create、`COPY` 可輸出 JSON、建第一個 logical replication slot 時自動把 WAL level 升到 logical（不用重啟）、foreign key 檢查變快（bulk insert 約 2 倍）。注意：JIT 改為預設關閉，md5 認證登入成功會出警告，RADIUS 支援移除。HN 358 分。",
+      "tags": [
+        "PostgreSQL",
+        "database",
+        "self-hosted infra"
+      ],
+      "url": "https://www.postgresql.org/about/news/postgresql-19-released-3449/",
+      "source": "PostgreSQL",
+      "sourceUrl": "https://www.postgresql.org/about/news/postgresql-19-released-3449/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Frostbite：AI 從 compiler、ISA 一路做到 RTL、驗證和 GDS，設計出以 interaction nets 為基礎的新 CPU，perf/W 是現役 CPU core 的 4.59 倍",
+      "summary": "Architect Labs 表示自家 AI 系統自主迭代了 compiler、ISA、architecture、microarchitecture、RTL、verification 到最終 GDS。Frostbite 利用 interaction nets 的特性：每步都是局部改寫、依賴明確、每個值只有一個 owner，硬體不必在 runtime 重新推斷指令相依性，也不需要 cache coherence。在 25 個 workload（其中 15 個留到最後才評測）上，與一顆已流片的 dual-issue in-order 超純量 core 相比，perf/W 達 4.59 倍（因法律原因不公開對照 CPU）。接下來會推 FPGA playground，並計畫釋出 RTL 與 ISA。HN 520 分。",
+      "tags": [
+        "AI 設計晶片",
+        "interaction nets",
+        "verification",
+        "CPU architecture"
+      ],
+      "url": "https://architectlabs.com/blog/frostbite",
+      "source": "Architect Labs Blog",
+      "sourceUrl": "https://architectlabs.com/blog/frostbite",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈Fuck your AI safeguards〉：Claude Code 幫忙修自家服務的資安漏洞卻被 safeguards 擋下，申請豁免要等幾天、交 ID，作者最後改用 GLM 5.3，HN 585 分",
+      "summary": "作者請 Claude Code 找專案裡的 low-hanging 資安問題，修一個一行的疏漏時被 AI safeguards 擋下。豁免申請要等好幾個工作天、放棄 data retention 豁免，還得交身分證或護照，而且不保證通過；他說攻擊者用 abliterated open weights 模型根本不受限制，最後改用 EU 託管的 GLM 5.3 重現、修好並驗證漏洞。HN 585 分、241 則留言，焦點在 frontier model 的資安防護如何影響防守方。",
+      "tags": [
+        "AI safeguards",
+        "security",
+        "Claude Code",
+        "open weights"
+      ],
+      "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
+      "source": "ounapuu.ee",
+      "sourceUrl": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈If you stop writing code, you also get worse at reviewing it〉：只 review AI 寫的 code，不練手，review 能力也會退化，HN 244 分",
+      "summary": "作者用吉他手和作家比喻：任何技藝停止練習都會退步，軟體工程也一樣。只「review Claude 產出的所有 code」不夠——而且說實話，多半已經沒在讀了。他主張繼續親手寫、親手解題，否則反覆依賴 LLM 會讓大腦學到「難的事就不要試」。HN 244 分、126 則留言；同時段〈I can tell you wrote this yourself〉也有 379 分。",
+      "tags": [
+        "code review",
+        "engineering craft",
+        "AI-assisted coding"
+      ],
+      "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+      "source": "cekrem.github.io",
+      "sourceUrl": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "OpenSSL `EVP_EncodeBlock()` 溢位（CVE-2026-121481）標 CVSS 9.8 上 HN 353 分，但維護者引 NVD：沒有已知可由攻擊者觸發的路徑",
+      "summary": "PR #33652 修正 `EVP_EncodeBlock()` 對 NULL buffer、負長度、編碼後超過 `int` 的長度未檢查，改用 `OPENSSL_assert()`，避免第三方 caller 要處理新的錯誤回傳；作者指出可透過 `openssl s_client` 的超大 `-proxy_pass` 觸發。不過 11/20 維護者 kroeckx 引用 NVD 的說明：caller 必須先持有約 2GB 的 buffer，嚴重度應為 Low；也有人開 issue 質疑 CVSS 過高。PR 仍在 review，backport 要另開 PR。",
+      "tags": [
+        "OpenSSL",
+        "CVE",
+        "security",
+        "vulnerability scoring"
+      ],
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "source": "GitHub (openssl/openssl)",
+      "sourceUrl": "https://github.com/openssl/openssl/pull/33652",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261121-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-21",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Epic Games：Unreal Engine 6 會拿掉 Blueprints，全面改用文字語言 Verse，並開 API、資產改存文字，讓 AI agent 能直接操作",
+      "summary": "IEEE Spectrum 報導：LLM 不擅長處理以二進位儲存的 Blueprints，UE6 將以 Verse 取代 Blueprints 和 C++ gameplay framework、以 Scene Graph（類 ECS）取代 actor 框架，並透過 API 開放引擎系統，讓 AI 工具不必退回慢速的 computer use；內部「Python All The Things」要讓 editor 全部可腳本化，剩下的二進位資產則做 CLI 工具給 agent 用。Epic COO Daniel Vogel：「在 editor 裡用視覺方式搬東西的時代過去了。」",
+      "tags": [
+        "agent-friendly software",
+        "Unreal Engine",
+        "MCP",
+        "developer tools"
+      ],
+      "url": "https://spectrum.ieee.org/epic-games-unreal-engine-ai",
+      "source": "IEEE Spectrum",
+      "sourceUrl": "https://spectrum.ieee.org/epic-games-unreal-engine-ai",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-19T19:54:21Z",
-  "updatedAt": "2026-11-19T19:54:21Z"
+  "lastUpdated": "2026-11-21T03:10:17+08:00",
+  "updatedAt": "2026-11-21T03:10:17+08:00"
 }
