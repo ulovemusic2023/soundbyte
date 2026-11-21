@@ -124168,8 +124168,217 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261122-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Thinking Machines 開放 Inkling 2 Mini：26.4B looped MoE（3.4B active），llama.cpp／transformers／Unsloth day-0",
+      "summary": "Thinking Machines 11/20 釋出開放權重（Apache-2.0）：26.4B MoE、3.4B active，中段 layer（6–17）每個 token 跑三次的 looped transformer，1M context，吃圖片和文字。官方稱 DeepSWE v1.1 48.2%，在 100B 以下的開源模型裡領先；權重原生 NVFP4＋MXFP8，總共約 20GB。llama.cpp PR #32694（11/21 06:01 台北合併）、transformers v5.24.0、Unsloth GGUF 都在第一時間支援；Unsloth 的表格寫 3-bit 約 13–15GB，建議的 UD-Q4_K_XL 是 17.6GB。",
+      "tags": [
+        "llm_inference",
+        "looped transformer",
+        "MoE",
+        "NVFP4"
+      ],
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+      "source": "Thinking Machines／Hacker News（1,270 分）",
+      "sourceUrl": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "price": null,
+      "vram": "quantize-ok（3-bit 13–15GB 可塞進 16GB；UD-Q4_K_XL 17.6GB 要部分 offload 到 RAM（Unsloth 表格））",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261122-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Inkling 2 Mini 引擎賽：NInfer-all 16GB 卡把 experts 放 RAM 仍快過 llama.cpp；Basalt v0.5.5 單卡 5090 struct 613 tok/s",
+      "summary": "NInfer-all 直接吃 Unsloth UD-IQ4_XS GGUF、不重新量化；16GB 卡把 routed experts 放 host memory（`--expert-residency host`），RTX 5080 實測 prefill 10K 3,238 vs llama.cpp 1,377 tok/s、decode 116.5 vs 41.3，RTX 5060 Ti 16GB decode 72.1 vs 45.6（表上沒有 5070 Ti）。Basalt v0.5.5（11/21 21:34 台北）在單張 RTX 5090 開 drafting，struct 613 tok/s，llama.cpp IQ4_NL 是 92–95。LookAtMyQuant 把 text weights 壓到 5.38GB／8.87GB，不過 runtime 目前只支援 Apple Silicon。",
+      "tags": [
+        "llm_inference",
+        "MoE offload",
+        "quantization",
+        "Inkling 2 Mini"
+      ],
+      "url": "https://github.com/jesdga95/basalt/releases/tag/v0.5.5",
+      "source": "GitHub（NInfer-all docs）",
+      "sourceUrl": "https://github.com/iamwavecut/ninfer-all/blob/master/docs/inkling2.md",
+      "price": null,
+      "vram": "quantize-ok（NInfer-all 在 16GB 卡把部分 experts 放 RAM（device cache 約 9.8–10.3GiB）；Basalt 目前只測 RTX 5090）",
+      "license": "Apache-2.0（NInfer-all）／MIT（Basalt、LookAtMyQuant）"
+    },
+    {
+      "id": "20261122-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32491：mtmd 支援 Kyutai Hibiki 即時 full-duplex 語音翻譯，llama-server realtime 加入 full-duplex",
+      "summary": "11/21 21:25（台北）合併。Hibiki 1B／2B 是 moshi 架構的同步語音翻譯（法→英），voice-in voice-out，邊聽邊講，延遲由模型自己決定；llama-server 的 realtime endpoint 也順便加上 full-duplex（目前只有 server 端），之後的語音模型可以直接沿用。PR 討論裡的說法是：80 ms 進、80 ms 出，client 完全不需要 turn logic。",
+      "tags": [
+        "tts_speech",
+        "full-duplex",
+        "speech-to-speech",
+        "llama-server"
+      ],
+      "url": "https://huggingface.co/kyutai/hibiki-2b-pytorch-bf16",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32491",
+      "price": null,
+      "vram": "local-ready（1B／2B 模型）",
+      "license": "MIT（llama.cpp）／CC-BY-4.0（Hibiki 權重）"
+    },
+    {
+      "id": "20261122-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "audio.cpp v0.9.6：SoulX-Singer 歌聲合成／VC、ROSVOT 歌唱音符轉錄、ACE-Step reference audio、VoxMel TTS",
+      "summary": "11/22 02:12（台北）發佈。音樂相關的新增：SoulX-Singer 歌聲合成＋voice conversion、ROSVOT 歌唱音符轉錄、ACE-Step 支援 reference audio conditioning。語音方面加了 VoxMel TTS 和 M5-TTS voice cloning、IBM Granite Speech 5.0 2B、Inworld Voice Isolator（含 WebGPU）。底層多了一個獨立的 MoE engine（placement 和 cache policy 可以分開設），CosyVoice3 的記憶體預留也變小。",
+      "tags": [
+        "audio_music_ai",
+        "svc_voice",
+        "tts_speech",
+        "singing voice"
+      ],
+      "url": "https://github.com/0xShug0/audio.cpp/releases/tag/v0.9.6",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/0xShug0/audio.cpp/releases/tag/v0.9.6",
+      "price": null,
+      "vram": "local-ready（多為小型語音模型）",
+      "license": "Apache-2.0（各模型權重授權另計）"
+    },
+    {
+      "id": "20261122-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Mimvox v0.5.0：本地 voice cloning 桌面 app 加入 OpenAI 相容 TTS API 和 MCP server",
+      "summary": "全本地的 voice cloning app：OmniVoice zero-shot TTS，加上用自己的錄音訓練 RVC（Standard 方案約唸 6–7 分鐘），Redub 會把影片翻譯後用你的聲音重配、保留原本的音樂，另有有聲書模式。v0.5.0（11/21 03:28 台北）加了本地 `/v1/audio/speech`（OpenAI 相容）、無視窗的 `mimvox-server` 和 `mimvox-mcp`，Claude Code 這類 MCP client 可以直接用你的聲音講話。注意：程式碼是 PolyForm Noncommercial，OmniVoice 權重是 CC BY-NC 4.0，只能非商用。",
+      "tags": [
+        "svc_voice",
+        "tts_speech",
+        "RVC",
+        "MCP"
+      ],
+      "url": "https://github.com/tarpetos/mimvox",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/tarpetos/mimvox/releases/tag/v0.5.0",
+      "price": null,
+      "vram": "local-ready（建議 8GB+，語音模型約 4–5GB（訓練吃更多））",
+      "license": "PolyForm Noncommercial 1.0.0（OmniVoice 權重 CC BY-NC 4.0）"
+    },
+    {
+      "id": "20261122-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #32669：MoE 的 `.scale` tensor 自動套用，修正 NVFP4 等量化 scale 漏接",
+      "summary": "11/21 23:30（台北）合併。以前每個模型都要手動接 NVFP4 等量化的 weight scale（PR 列了 15 個逐一修補的前例），現在 `build_moe_ffn` 會自動套用。作者用 dummy GGUF 測：scale 全為 1 時輸出 bitwise 相同；master 算錯、分支算對的有 558 個 case。PR 也點名 kimi-k3、glm5-next 等直接呼叫 `ggml_mul_mat` 的模型還沒涵蓋。有在跑 NVFP4 GGUF（Blackwell 原生格式）的話值得更新。",
+      "tags": [
+        "llm_inference",
+        "NVFP4",
+        "MoE",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/32669",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32669",
+      "price": null,
+      "vram": "local-ready（程式修正，不改變記憶體需求）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261122-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "transformers v5.24.0：Inkling 2 Mini、Apertus 1.5、WavTokenizer、NVIDIA Dory；`past_key_values` 改名為 `cache`",
+      "summary": "11/21 20:28（台北）發佈。新增 Inkling 2 Mini、Apertus 1.5（文字＋圖片＋音訊輸入）、WavTokenizer（24kHz 單 codebook，每秒 40／75 tokens）、NVIDIA 的 looped 模型 Dory（推理時可調 loop 數，用速度換品質），以及 Meta Omnilingual ASR（1,600+ 語言）。Breaking change：`past_key_values`／`cache_params` 改名為 `cache`，自己寫 generate loop 的要注意。",
+      "tags": [
+        "llm_inference",
+        "audio_music_ai",
+        "tts_speech",
+        "breaking change"
+      ],
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+      "price": null,
+      "vram": "local-ready（看載入的模型）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261122-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Unsloth v0.1.921／922-beta：Inkling 2 Mini 更省記憶體，MiniMax-H3-Image 在 8GB GPU 出圖 82.7→36.7 秒，MCP 對話 prompt tokens 少 83–87%",
+      "summary": "11/21 03:56 和 07:53（台北）連發兩版，922 讓 Inkling 2 Mini 更省記憶體也更快。其他更新：MiniMax-H3-Image 在 8GB GPU 出一張新 prompt 從 82.7 秒降到 36.7 秒；GGUF 圖像模型在 Linux／macOS 載入少用 52–66% RAM；FLUX.1 權重從系統 RAM streaming 時每步快 16–28%；MCP 對話把 tool list 固定下來，官方測試 prompt tokens 少 83–87%。",
+      "tags": [
+        "image_gen",
+        "llm_inference",
+        "MCP",
+        "Unsloth"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.922-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.922-beta",
+      "price": null,
+      "vram": "local-ready（主打小 GPU（8GB 起））",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261122-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "NVIDIA 驅動 621.14／621.24：NVDisplay.Container.exe 閒置時狂寫 SSD",
+      "summary": "Windows 上的「NVIDIA Display Container LS」服務會一直整份重寫 `C:\\ProgramData\\NVIDIA Corporation\\nvtopps\\nct\\nvlog.nvlgstg`。有人實測 621.14 閒置時每 5 分鐘寫入 515MB，621.01 乾淨安裝不到 2MB；另一份回報說 621.24 每小時約 30GB。關掉 telemetry 不一定有用。暫時的解法是停服務、刪檔、再重啟（檔案會再長回來），長期可以退回 621.01。NVIDIA 還沒承認，621.24 的 release notes 沒列這個問題。",
+      "tags": [
+        "infra_runtime",
+        "NVIDIA driver",
+        "SSD",
+        "Windows"
+      ],
+      "url": "https://troublegrid.com/fix/nvidia-driver-constant-ssd-writes-nvdisplay-container",
+      "source": "TroubleGrid（彙整 r/LocalLLaMA、GeForce 論壇回報）",
+      "sourceUrl": "https://troublegrid.com/fix/nvidia-driver-constant-ssd-writes-nvdisplay-container",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a（驅動問題）"
+    },
+    {
+      "id": "20261122-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "AI 股大跌：Nasdaq 抹平 2026 漲幅、NVIDIA 單日 −14%；Reuters：SEC 在查 NVIDIA 會計（HN 470／297 分）",
+      "summary": "11/20（美東）Anthropic 上市第二天跌 9%，Nasdaq 收盤抹平今年全部漲幅，NVIDIA 跌 14%、Micron 跌 12%；台股跌 6.7%，來到四月中以來最低，TSMC 約跌 6%。Reuters 同天引述兩位知情人士：SEC 執法人員正在審視 NVIDIA 可能的會計問題（SEC 不評論，調查不代表違法）。HN 討論集中在 NVIDIA 對 neocloud 的融資算不算「circular financing」。",
+      "tags": [
+        "infra_runtime",
+        "GPU market",
+        "NVIDIA"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50581438",
+      "source": "The Guardian／Reuters（via MarketScreener）／Hacker News",
+      "sourceUrl": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
     }
   ],
-  "lastUpdated": "2026-11-22T03:07:30+08:00",
-  "updatedAt": "2026-11-22T03:07:30+08:00"
+  "lastUpdated": "2026-11-22T03:24:53+08:00",
+  "updatedAt": "2026-11-22T03:24:53+08:00"
 }
