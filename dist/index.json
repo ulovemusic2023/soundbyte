@@ -124541,8 +124541,287 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261122-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "staryone/motlab",
+      "summary": "「Video as code」引擎：每個 scene 是一個 canvas 頁面、只有一個 renderAt(t) 函式，丟一包素材（logo、截圖、影片、字型）加簡短 brief 給 agent，它用 skill 寫出 scenes；viewer 可逐格播放、在畫面上框選或標時間段留 note 讓 agent 照著改，再用 headless Chrome + WebCodecs 輸出到 4K MP4。README 說在 GPU 上比 Remotion、HyperFrames 快 2–4 倍，一行 setup 就能裝進 Claude Code、Codex、Cursor、Antigravity。",
+      "tags": [
+        "video as code",
+        "agent skill",
+        "creator tools",
+        "claude code",
+        "webcodecs"
+      ],
+      "url": "https://github.com/staryone/motlab",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-08+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars&o=desc",
+      "stars": 342,
+      "createdDate": "2026-11-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261122-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "vaibhav-space/my-ai-coding-workflow",
+      "summary": "作者用 AI 寫 code 4,500+ 小時後整理出的 Claude Code 設定：一份全域 CLAUDE.md 加三個 slash command——/plan、/review-plan（批判計畫）、/review-prod（diff audit），另收錄 Superpowers 等精選 skills。不是框架，就是幾個文字檔；作者也老實寫了目前還沒有用它做出的公開範例專案。",
+      "tags": [
+        "claude code",
+        "ai coding",
+        "code review",
+        "workflow",
+        "agent skill"
+      ],
+      "url": "https://github.com/vaibhav-space/my-ai-coding-workflow",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-08+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars&o=desc",
+      "stars": 333,
+      "createdDate": "2026-11-14"
+    },
+    {
+      "id": "20261122-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "rising-fast",
+      "title": "INK-Q/agy-fast",
+      "summary": "給 Google Antigravity（agy CLI、Desktop 2.0、IDE）用的本地 MCP 加速 plugin，把高頻的搜尋、讀檔等動作合併成 4 個 MCP tools。README 自測：每 10 個動作的 LLM turns 少 33.7%、估計計費 quota 少 31.5%、上傳流量少 39.7%，不動原生 diff 和 UI，零依賴、Node 20 就能跑。",
+      "tags": [
+        "antigravity",
+        "mcp",
+        "coding agent",
+        "token optimization"
+      ],
+      "url": "https://github.com/INK-Q/agy-fast",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-08+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars&o=desc",
+      "stars": 245,
+      "createdDate": "2026-11-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20261122-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "worth-trying",
+      "title": "JimLiu/open-artifact",
+      "summary": "JimLiu 把自己的 baoyu-design 重做成 agent／model 無關的 Artifact 格式：叫任何 coding agent 做投影片、UI 設計、design system、白板、試算表、dashboard、文件或短動畫，產出全是本機的純檔案，用本地編輯器打開就能改、留言、匯出（slides 可出 PDF／PPTX），再按「Send to agent」把留言丟回 agent session。不用帳號、不上傳。",
+      "tags": [
+        "artifacts",
+        "agent skill",
+        "slides",
+        "claude code",
+        "local-first"
+      ],
+      "url": "https://github.com/JimLiu/open-artifact",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-08+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars&o=desc",
+      "stars": 130,
+      "createdDate": "2026-11-17",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261122-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "worth-trying",
+      "title": "earayu/Mingle",
+      "summary": "把你已經在用的 coding agent（Claude Code、Codex、Cursor、OpenCode…）包成一個有名字、角色、記憶的 bot，同時進駐 Telegram、Slack、Discord、WeChat、飛書等聊天 app，同一份記憶跨 app 共用。跑在自己電腦上、沒有 server 和帳號，用你現有的訂閱；README 註明仍在早期開發。",
+      "tags": [
+        "agent companion",
+        "chat bot",
+        "claude code",
+        "telegram",
+        "local-first"
+      ],
+      "url": "https://github.com/earayu/Mingle",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-08+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars&o=desc",
+      "stars": 74,
+      "createdDate": "2026-11-11",
+      "license": "MIT"
+    },
+    {
+      "id": "20261122-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "HKUDS/Vibe-Trading",
+      "summary": "HKUDS 的個人交易 agent，這週 star-surge 名單上的老 repo（38.6k⭐），幾乎每天都有更新。跟你最相關的是 11/18：TWSE（.TW）和 TPEx（.TWO）股票支援用 Yahoo Finance 日線做 backtest；另有 paper trading、Options Lab、portfolio 風險分析，11/19 也發了技術報告。",
+      "tags": [
+        "trading agent",
+        "backtest",
+        "台股",
+        "investing"
+      ],
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=pushed%3A%3E2026-11-15+stars%3A%3E800+topic%3Aai-agent&type=repositories&s=stars&o=desc",
+      "stars": 38646,
+      "createdDate": "2026-04-01",
+      "license": "MIT"
+    },
+    {
+      "id": "20261122-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "AienTech/dossier",
+      "summary": "自架的求職工具：一份 profile 對每個職缺產出客製 resume 與 cover letter，只用 profile 裡的事實、缺的條件標成 gap 不亂編；可搜職缺、每天跑 job agent 幫你打分、追蹤每份申請從草稿到 offer。可接 Ollama／LM Studio 本地模型，也有 MCP connector 能從 Claude 操作。11/18–19 連發 v1.15.0／1.15.1。",
+      "tags": [
+        "job search",
+        "resume",
+        "self-hosted",
+        "mcp",
+        "local llm"
+      ],
+      "url": "https://github.com/AienTech/dossier",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=pushed%3A%3E2026-11-15+stars%3A%3E500+topic%3Alocal-llm&type=repositories&s=stars&o=desc",
+      "stars": 5351,
+      "createdDate": "2026-10-03",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261122-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "Quebec by Yarn（word timestamps API）",
+      "summary": "Show HN（78 分）：YC W24 的 Yarn 做的語音逐字時間戳 API，標題宣稱 75% 的字落在 20ms 內。做法是繞著 Montreal Forced Aligner 的 acoustic model 自寫 decoder，再加一個基於 Whisper Tiny 前兩層的小 CNN 微調字界；起因是剪 talking-head 時差 50ms 就會剪壞。做 podcast／短影音字幕和剪輯可以參考。",
+      "tags": [
+        "forced alignment",
+        "word timestamps",
+        "speech",
+        "video editing"
+      ],
+      "url": "https://quebec.yarn.so",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50532515"
+    },
+    {
+      "id": "20261122-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "Notched（tinnitus frequency finder）",
+      "summary": "Show HN（209 分、131 則留言）：作者自己有耳鳴，做了耳鳴頻率 pitch-matching 工具，找到頻率後用免費 web app 播放在該頻率挖了 notch 的背景聲（溪流、雨、風）。PWA、可離線、不用帳號；notched sound therapy 目前仍屬研究中的做法。",
+      "tags": [
+        "audio",
+        "notch filter",
+        "pwa",
+        "hearing"
+      ],
+      "url": "https://trynotched.com/find",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50541568"
+    },
+    {
+      "id": "20261122-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "Mastra Factory",
+      "summary": "Show HN（156 分）：Mastra 團隊開源自己用來維護 Mastra 的 software factory——一個可在 Slack @ 的 agentic kanban，issue → plan → 實作 → PR review；上週由它開出並 merge 了 238 個 PR（人類 630 個）。npm create factory 就能起，可全部跑在自己的 infra。",
+      "tags": [
+        "software factory",
+        "coding agent",
+        "slack",
+        "agentic kanban"
+      ],
+      "url": "https://github.com/mastra-ai/template-factory",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50548660",
+      "stars": 73,
+      "createdDate": "2026-10-27"
+    },
+    {
+      "id": "20261122-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "on-the-radar",
+      "title": "diggerhq/opencomputer",
+      "summary": "Show HN（112 分）：開源、可自架的 Devin 替代品。在 Slack 串裡 @Computer 交代任務，它在自己的 VM 上用 Claude Code、Codex 或 OpenCode 做事，團隊可以邊看邊插手，結果以 PR 送回；session 用 rootless Podman 隔離。官方 benchmark 說開 PR 比 Devin 快 3.3 倍（56s vs 185s）。",
+      "tags": [
+        "coding agent",
+        "devin alternative",
+        "self-hosted",
+        "slack"
+      ],
+      "url": "https://github.com/diggerhq/opencomputer",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50581403",
+      "stars": 1066,
+      "createdDate": "2025-12-09",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261122-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "product-hunt",
+      "title": "TestSprite 4.0",
+      "summary": "11/19 PH 第 1 名（366 upvotes）。全新的 testing agent，專治「coding agent 修一個壞一個」：用白話說要測什麼，它探索你正在跑的 app、寫並執行 E2E 測試、判斷哪些失敗是真 bug，之後每次改動（web、terminal 或 PR）都持續檢查。",
+      "tags": [
+        "testing agent",
+        "e2e testing",
+        "coding agent"
+      ],
+      "url": "https://hunted.space/dashboard/testsprite",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/testsprite"
+    },
+    {
+      "id": "20261122-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "product-hunt",
+      "title": "AI Context Flow MCP",
+      "summary": "11/21 PH 第 2 名（PT 當日進行中，183 upvotes）。用 MCP 讓 Claude、ChatGPT、Cursor 等所有 agent 和隊友共用同一份記憶，可依專案／客戶分 bucket、設存取權限，每次修改都有版本紀錄，agent 改壞了能 rollback。",
+      "tags": [
+        "mcp",
+        "shared memory",
+        "multi-agent"
+      ],
+      "url": "https://hunted.space/dashboard/ai-context-flow",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/ai-context-flow"
+    },
+    {
+      "id": "20261122-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "product-hunt",
+      "title": "Codemany",
+      "summary": "11/21 PH 第 3 名（PT 當日進行中，156 upvotes）。把 GitHub Actions 跑在自己的 Mac 或 Linux 機器上，每個 job 開一台全新 VM、自動更新和清理，改一行 runs-on: [self-hosted, codemany] 就能用；作者說 CI 帳單從 10 月 $215 降到 11 月目前 $4，免費試用 14 天。",
+      "tags": [
+        "github actions",
+        "ci",
+        "self-hosted runner"
+      ],
+      "url": "https://hunted.space/dashboard/codemany",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/codemany"
     }
   ],
-  "lastUpdated": "2026-11-22T03:40:11+08:00",
-  "updatedAt": "2026-11-22T03:40:11+08:00"
+  "lastUpdated": "2026-11-22T04:07:47+08:00",
+  "updatedAt": "2026-11-22T04:07:47+08:00"
 }
