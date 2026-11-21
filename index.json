@@ -124026,7 +124026,7 @@
       "cycle": "morning",
       "priority": "paradigm-shift",
       "title": "Lean／Mathlib 社群聯合聲明：Alpöge 1,700 萬行的 Riemann Hypothesis Lean 證明正確，四道驗證關卡全過（HN 499 分）",
-      "summary": "Alpöge 在 11/20 發布證明（前一天 Founder's Mind 已收「宣稱」）；11/21 Lean FRO 與 Mathlib Initiative 背書確認。值得學的是驗證流程：定理陳述用的是 Mathlib 裡專家審過的 RiemannHypothesis；數十人重編譯得到相同的 proof export；用 `comparator` 和 `con-leche --compare` 兩個獨立工具確認證的就是那個陳述；再交給 Lean 官方 kernel、`con-leche`、`con-ron`（附形式化證明保證不會接受錯的證明）和第三方用其他語言寫的 checker 檢查，而且是在與原始碼隔離的 inert export 上跑，避免證明裡藏惡意程式碼。同一天另一位作者也宣稱證出 GRH（HN 2,325 分），Scott Aaronson 等人都在討論。",
+      "summary": "Alpöge 在 11/20 發布證明（前一天 Founder's Mind 已收「宣稱」）；11/21 Lean FRO 與 Mathlib Initiative 背書確認。值得學的是驗證流程：定理陳述用的是 Mathlib 裡專家審過的 RiemannHypothesis；數十人重編譯得到相同的 proof export；用 `comparator` 和 `con-leche --compare` 兩個獨立工具確認證的就是那個陳述；再交給 Lean 官方 kernel、`con-leche`、`con-ron`（附形式化證明保證不會接受錯的證明）和第三方用其他語言寫的 checker 檢查，而且是在與原始碼隔離的 inert export 上跑，避免證明裡藏惡意程式碼。Latent Space 形容 RH「被獨立證明了兩次」；Ravi Vakil 部落格上關於 Alessandro Masullo 與 GRH 的公告是 HN 本日最高分（2,325 分），Scott Aaronson 等人也都在討論。",
       "tags": [
         "paradigm-shift",
         "verification",
