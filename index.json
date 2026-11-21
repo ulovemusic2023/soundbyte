@@ -123907,8 +123907,269 @@
       ],
       "source": "Music Ally",
       "sourceUrl": "https://musically.com/2026/11/20/australian-creative-sector-bristles-at-permit-ai-training-plans/"
+    },
+    {
+      "id": "20261122-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Dragos 在兩百萬個 prompt 裡埋 canary：三家 AI inference provider 被入侵、marketplace 轉售商直接開 log 偷看 prompt；OpenRouter 隨後通知 MiniMax 請求可能被讀",
+      "summary": "HD Moore 帶的 Dragos 團隊從 7 月到 11 月送出約兩百萬個 prompt，每個都塞了獨一無二的 URL、hostname 和假 AWS key，再看誰去碰。結果：至少三家 provider 被入侵（攻擊者在入口就把 request 整包複製，其中兩起被偷的 request 有些還標了 ZDR；攻擊者有時幾小時內就測 key，接著列 S3、翻 Secrets Manager、試著開 Bedrock）；inference marketplace 上的轉售商只要開 request logging 就能看到並保留客戶 prompt；也有送往美國 provider 的 prompt 被轉到中國 AI 組織。11/21 OpenRouter 寄信通知：AtlasCloud、Novita、StreamLake 把 MiniMax 模型的請求轉給 MiniMax，研究員埋的 URL 在 40–130 小時後被打開，已先拿掉這些 endpoint 的 Zero Data Retention 標籤；Novita 也發公告承認 5/28–11/11 的請求受影響。重點：別把 secrets 放進送給 agent 或模型的 prompt，有放過就 rotate。",
+      "tags": [
+        "paradigm-shift",
+        "AI supply chain",
+        "canary token",
+        "prompt leakage",
+        "Zero Data Retention",
+        "agent security"
+      ],
+      "url": "https://novita.ai/blog/minimax-requests-privacy-notice/",
+      "source": "Dragos Blog",
+      "sourceUrl": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Latent Space〈The War Against Slop〉：formal verification 正在變成 AI 寫 code 的驗證層，&Truth 喊出從 vibe-coding 走向「veri-coding」",
+      "summary": "Richard MacManus 整理 Harmonic、Theorem、Axiom Math 和新創 &Truth 的路線。&Truth 共同創辦人、cvc5 作者 Clark Barrett 說測試、掃描、agent 互評的問題是「永遠不知道什麼時候算完」，formal verification 才能證明 code 滿足精確寫下的規格；他的 cvc5 已在 Amazon Kiro 裡做 spec 分析與測試生成，每天被呼叫數十億次。文中引 Anthropic × Theorem：36 個小型驗證任務上，Opus 5.5 達 50% 解題率用的 token 比 Opus 5 少約 40%。開發者的時間會更多花在寫 spec 和審 spec，而不是寫或審 code。",
+      "tags": [
+        "verification",
+        "formal verification",
+        "Lean",
+        "veri-coding",
+        "spec-driven development"
+      ],
+      "url": "https://latent.space/p/formal-verification/",
+      "source": "Latent Space",
+      "sourceUrl": "https://latent.space/p/formal-verification/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Mastering Emacs 作者發布 DreamCoder：跑在瀏覽器裡、內建 tiling window manager 的 coding harness，minimap 一眼看出哪個 agent 卡住",
+      "summary": "Mickey Petersen 花 15 個月做的 frontier coding harness（HN 265 分）。他的出發點：大家用 tmux 開十個 Claude Code 輪流切，看誰做完、誰在等授權，缺的是 observability。DreamCoder 的面板有最小／舒適／最大尺寸，會自動排版；每個 workspace 有 minimap，工作中的面板會閃，卡住一看就知道。也有 sub-agents、MCP、skills、hooks、背景 shell，可匯入 pi／OpenCode／Codex 設定，強調支援 Qwen 3.8 27B 這類本地模型。作者說 cache hit 99%、能連跑好幾天。DreamCoder 本身有系統權限，作者建議用官方 Docker image 跑。",
+      "tags": [
+        "agent harness",
+        "coding agent 編排",
+        "observability",
+        "local LLM",
+        "developer experience"
+      ],
+      "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "source": "Mastering Emacs",
+      "sourceUrl": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "〈Vibecoding an inference chip〉：cloud agent 在 Conductor 連跑好幾天，把三值權重 LLM 做上 AWS F2 FPGA，從 6.4 優化到 213 tokens/s",
+      "summary": "Ankit G. 沒做過 FPGA，叫 Codex 開 AWS F2 instance，再讓 Conductor 裡的 cloud agent 跑 autoresearch loop：先做出 bit-exact 的完整模型，再一輪輪優化，33 倍加速是十幾個約 1.5 倍的小改進疊起來的（HN 169 分）。整個過程寫了大約 3M 行。DeepGrove 創辦人中途貼了一份設計經驗給它，agent 事後回顧 log：設計點子多半本來就在計畫裡；真正有用的是「別跑要好幾小時的 simulation」這條流程建議，讓硬體結果更快出來，代價是兩個只有 RTL simulation 才看得到的 hang 晚了一天才發現。",
+      "tags": [
+        "paradigm-shift",
+        "autoresearch loop",
+        "coding agent 編排",
+        "long-running agent",
+        "verification",
+        "FPGA"
+      ],
+      "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+      "source": "ankitg.me",
+      "sourceUrl": "https://ankitg.me/blog/vibecoding-inference-chip/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Claude Code v2.1.330：self-hosted runner 新增 `--start-dir` 和兩個啟動延遲 metrics，修掉 ExitWorktree 刪到別的 session 正在用的 worktree",
+      "summary": "11/21 發布。self-hosted runner 可用 `--start-dir`／`SELF_HOSTED_RUNNER_START_DIR` 指定從 repo 的哪個資料夾開工，`/metrics` 多了 work order 到註冊、到第一個 session 的秒數；`claude auth login` 後可登入 Enterprise Admin Console 管理的組織，自動套用組織設定和 cloud provider／gateway。新增內建 mod easel（要求時或 MCP metrics 結果下畫圖表）。修正多項平行 session 問題：worktree 誤刪、多個 process 同時存設定時遺失、subagent 結束時把別人還在用的 MCP server 關掉，以及長對話 compact 後凍結數分鐘。",
+      "tags": [
+        "coding agent",
+        "self-hosted runner",
+        "Git worktree",
+        "Claude Code"
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "source": "GitHub (anthropics/claude-code)",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Lean／Mathlib 社群聯合聲明：Alpöge 1,700 萬行的 Riemann Hypothesis Lean 證明正確，四道驗證關卡全過（HN 499 分）",
+      "summary": "Alpöge 在 11/20 發布證明（前一天 Founder's Mind 已收「宣稱」）；11/21 Lean FRO 與 Mathlib Initiative 背書確認。值得學的是驗證流程：定理陳述用的是 Mathlib 裡專家審過的 RiemannHypothesis；數十人重編譯得到相同的 proof export；用 `comparator` 和 `con-leche --compare` 兩個獨立工具確認證的就是那個陳述；再交給 Lean 官方 kernel、`con-leche`、`con-ron`（附形式化證明保證不會接受錯的證明）和第三方用其他語言寫的 checker 檢查，而且是在與原始碼隔離的 inert export 上跑，避免證明裡藏惡意程式碼。同一天另一位作者也宣稱證出 GRH（HN 2,325 分），Scott Aaronson 等人都在討論。",
+      "tags": [
+        "paradigm-shift",
+        "verification",
+        "Lean",
+        "formal verification",
+        "AI for math"
+      ],
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "source": "Lean community blog",
+      "sourceUrl": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "〈We promoted developers into architects without informing them〉：AI 只照需求寫 code、不會反駁，架構決策落到每個開發者身上（HN 543 分、296 則留言）",
+      "summary": "Mani Doraisamy 的例子：同事 vibe code 了 Google Forms add-on 的安裝紀錄，AI 寫了一串 try/catch 依序抓 email、user ID，每一行背後都是多次 Google API 呼叫，歡迎畫面因此要 15 秒才出來。懂架構的人會只記時間戳、或先顯示畫面再非同步記錄，並回頭告訴行銷做不到什麼。他的論點：AI 調教成實作功能需求，外加 security 和向下相容，結果常拿效能換安全、留下多個版本的 data model；開發者的新工作是反駁需求、先設計 data model、把 AI 限制在架構內、像 architect 一樣 review。作者也補充：別完全停止寫 code，否則會變成 ivory tower architecture。",
+      "tags": [
+        "software architecture",
+        "AI coding",
+        "data model",
+        "technical leadership"
+      ],
+      "url": "https://manidoraisamy.com/developer-to-architect.html",
+      "source": "manidoraisamy.com",
+      "sourceUrl": "https://manidoraisamy.com/developer-to-architect.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Thinking Machines 開源 Inkling 2 Mini：looped transformer，中段 layer 每個 token 跑三次，26.4B MoE、約 20GB，筆電離線就能跑 agentic coding（HN 1,266 分）",
+      "summary": "MoE 總參數 26.4B、active 3.4B，因為 loop 每個 token 實際動用 5.4B；大部分權重原生 NVFP4、最後四層 MXFP8，整體記憶體約 20GB。官方說在 100B 以下 open-weight 模型中，DeepSWE v1.1（48.2%）和 Vals Index v2.2（46.5%）都是第一，部分 benchmark 只輸 Qwen3.8-27B；loop 讓模型不必把推理全寫出來就能想更久，官方同時測了對 CoT monitorability 的影響。weights 在 Hugging Face，SGLang、vLLM、Ollama、Unsloth 已支援。注意：約 20GB 的 footprint 超過 16GB VRAM，單卡要等更小的量化版或 offload。",
+      "tags": [
+        "looped transformer",
+        "open-weight model",
+        "local LLM",
+        "agentic coding",
+        "MoE"
+      ],
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "source": "Thinking Machines",
+      "sourceUrl": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft 365 11/12 全球大當機 PIR：只在高核心數新硬體上觸發的 Windows lock contention，加上維護降容量、Teams 流量轉移、北美尖峰，retry 把故障擴散到全球",
+      "summary": "Microsoft 11/20 的 Post Incident Report（Lobsters 上有轉載）：Exchange Online 網路 gateway 上啟用的一個更新埋了 latent defect，核心數越多並發越高、lock contention 越嚴重，CPU 和記憶體被吃光；舊世代 SKU 沒事。三個本來都在正常範圍的條件疊在一起才觸發，健康伺服器接手流量後也接連倒下，恢復時伺服器重新上線又再被打爆。改善項目很典型：gateway 重新上線要逐步 ramp-up 加 admission control、調整跨服務 retry／back-off、在最新硬體上用接近 production 的流量做 peak load test。報告也明說不是攻擊、也不是 AI tooling 造成的。",
+      "tags": [
+        "postmortem",
+        "admission control",
+        "retry/back-off",
+        "capacity planning",
+        "distributed systems"
+      ],
+      "url": "https://tianyin.github.io/misc/pir_microsoft_365_11-12-2026.pdf",
+      "source": "Microsoft PIR（tianyin.github.io 轉載）",
+      "sourceUrl": "https://tianyin.github.io/misc/pir_microsoft_365_11-12-2026.pdf",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈AI is giving everyone the same advice〉：65 個模型、127,918 次回答，推薦書 73% 是同一本、投資 98% 說 index fund、隨機捏造的人 69% 是 34 歲",
+      "summary": "Cody Collier 透過 OpenRouter 問 30 家公司的 65 個模型日常問題（HN 109 分）：推薦人生之書 73% 是《Man's Search for Meaning》，商業點子 76% 是訂閱制禮盒，問讀什麼 90% 說 computer science。同一個對話裡要求「再給一個」會換，但開新對話又是同一本。只用無害問題就能猜出模型出自哪家；在可逐階段量測的 open model 上，偏好答案是在 assistant 訓練那一步出現的。對開發者的提醒：Gemini 愛用的假名「Elena Vance」今年出現在 684 個新 GitHub 專案裡；要多樣性得給具體 context 或叫它列十個自己挑，叫它「原創一點」沒用。",
+      "tags": [
+        "LLM behavior",
+        "mode collapse",
+        "model fingerprinting",
+        "evals"
+      ],
+      "url": "https://a90.com/experiments/same-advice/",
+      "source": "a90.com",
+      "sourceUrl": "https://a90.com/experiments/same-advice/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "GPGME 嚴重漏洞（CVE-2026-129975）：超長 user id 的 OpenPGP key 觸發 double free，可外洩資料、不排除 RCE，影響多數 mail client、Samba、Flatpak",
+      "summary": "Werner Koch 11/20 公告 GPGME 2.3.1（HN 180 分）。讀 gpg status line 和 key listing 的兩個內部函式在 realloc 後提早 return 時沒把新指標寫回 context，之後同一塊記憶體被釋放兩次，常見 allocator 的 double free 檢查不一定擋得到。所有 2.3.0 以前版本都受影響（shared library、DLL、static link 都算），static link 的要重新 build；也提供可套到很舊版本的 patch。原定 11/25 協同揭露，因為 Ruby2Shell 讓 GitLab 得提前更新而提早公開。",
+      "tags": [
+        "security",
+        "CVE",
+        "GnuPG",
+        "supply chain"
+      ],
+      "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+      "source": "gnupg-announce",
+      "sourceUrl": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-22",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "ClawDOS：跑在 IBM PC XT（8088、4.77 MHz、640K）上的 coding agent，176 KB 的 DOS 程式自己講 Claude Messages API，repo 100% 由 Claude 寫",
+      "summary": "HN 138 分的趣味專案。`HARNESS.EXE` 在 8088 上自己組 request、parse SSE 串流、跑 18 個 tools（讀寫檔、跑 Turbo C 編譯、截 CGA 畫面編成 PNG 回傳、記憶存在 `C:\\MEMORY`），只有 TLS 交給另一台機器的 tunnel，API key 也可以放在 tunnel 端不落地。預設 safe mode 每個寫入都要 y/n，靠 prompt caching 讓之後每個 tool result 只上傳約 500 bytes；`/model` 可在對話中途切換 provider。GPLv3。",
+      "tags": [
+        "agent harness",
+        "prompt caching",
+        "retro computing",
+        "coding agent"
+      ],
+      "url": "https://ricapar.net/ClawDOS/",
+      "source": "ricapar.net",
+      "sourceUrl": "https://ricapar.net/ClawDOS/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-21T04:20:00+08:00",
-  "updatedAt": "2026-11-21T04:20:00+08:00"
+  "lastUpdated": "2026-11-22T03:07:30+08:00",
+  "updatedAt": "2026-11-22T03:07:30+08:00"
 }
