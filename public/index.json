@@ -124377,8 +124377,172 @@
       "price": null,
       "vram": "n/a",
       "license": "n/a"
+    },
+    {
+      "id": "20261122-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Mani Doraisamy：我們把 developer 升成 architect，卻沒人通知他們（HN 547 分）",
+      "summary": "他同事用 vibe coding 寫了安裝紀錄：AI 為了拿使用者 email 疊了好幾層 try/catch，每層背後都打 Google API，結果歡迎畫面要等 15 秒才出來。AI 會照需求寫 code，但它不知道你有多少使用者，也不會反駁需求；你只給 requirements 不給 architecture，architecture 就等於交給 AI 決定。這篇在 HN 有約 300 則留言。可以帶走的框架：coding 這份工作在消失，新的工作是反駁需求、先設計 datamodel、把 AI 限制在你的架構內，再像 architect 一樣 review。",
+      "tags": [
+        "ai-architect",
+        "vibe-coding",
+        "role-of-humans",
+        "architect-promotion"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50579331",
+      "source": "manidoraisamy.com（HN 547 分）",
+      "sourceUrl": "https://manidoraisamy.com/developer-to-architect.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "mental-model",
+      "title": "Seth Godin：所有複雜系統都會長出你沒料到的特性",
+      "summary": "Seth Godin 舉三個例子：汽車帶來道路和加油站，也帶來停車場、得來速和酒駕；電視廣告最賺的是飲料和零食，結果食品業越來越有效率，也帶來肥胖；工廠化農業餵飽數十億人，競爭壓力卻讓肥料用量上升、表土被破壞。放到 AI 導入上也成立：除了規劃好的效益，也要預留觀察第二層、第三層效應的空間。",
+      "tags": [
+        "systems-thinking",
+        "second-order-thinking",
+        "emergent-properties"
+      ],
+      "url": "https://seths.blog/2026/11/emergent-properties/",
+      "source": "Seth's Blog",
+      "sourceUrl": "https://seths.blog/2026/11/emergent-properties/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "Dharmesh Shah：「Customer Relationship Harness」定位失敗，隔週就撤回（HubSpot Refounding Day 7）",
+      "summary": "HubSpot 在 Refounding 第一天把首頁定位改成「Customer Relationship Harness」，大部分人看了不是困惑就是不爽，有些人甚至很生氣，喜歡的人極少，所以 Day 7 直接撤回、首頁改回原樣。Dharmesh 承認這可能不是測試公司定位最好的方法，但認為整體是加分：build in public 換來幾百則真實回饋。框架：被討厭還好，沒人在乎才是最糟的訊號；公開實驗加上快速撤回，比關起門來想到完美更便宜。",
+      "tags": [
+        "positioning",
+        "build-in-public",
+        "positioning-retraction",
+        "founder-mode"
+      ],
+      "url": "https://x.com/dharmesh/status/2124013562880225328",
+      "source": "X (@dharmesh)",
+      "sourceUrl": "https://x.com/dharmesh/status/2124013562880225328",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "playbook",
+      "title": "SaaStr：3 個人加約 20 個 AI agent 做到年營收約 $20M——AI 時代 GTM 變了什麼、沒變什麼",
+      "summary": "Jason Lemkin 公開 SaaStr 數據：業務團隊靠自然流失、不再補人，降到 1.5 人，SDR 和 outbound 全交給 agent，inbound agent 一年跟潛在客戶對話 17,000 次。整理各家公司分享後的結論是：最先被砍的是 SDR（Emergence 調查：36% 的公司砍了 SDR，28% 反而擴編 AE）；還沒有 AI 能自己談成複雜的大單，效益反映在團隊變小（ICONIQ：$10M–$25M ARR 的 AI-forward 公司，GTM 人力少 43%）。最值得帶走的一點：agent 已經是買家了，它會讀你的 API docs、pricing page 和 rate limits，而且從不預約 demo。",
+      "tags": [
+        "gtm",
+        "agentic",
+        "ai-native",
+        "agent-run-gtm",
+        "pricing"
+      ],
+      "url": "https://www.saastr.com/the-top-10-things-that-have-changed-in-sales-gtm-in-the-age-of-ai-and-10-things-that-really-havent/",
+      "source": "SaaStr",
+      "sourceUrl": "https://www.saastr.com/the-top-10-things-that-have-changed-in-sales-gtm-in-the-age-of-ai-and-10-things-that-really-havent/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "quotable",
+      "title": "DHH：AI 的超能力是把有衝勁的個人放到舞台中央",
+      "summary": "\"The super powers of AI is putting the spirited individual in the center. The Idea Guy suddenly has an avenue to push their dreams that doesn't rely on raising big money or being a master programmer.\" — DHH。DHH 在 a16z 訪談後發文：Idea Guy 第一次不用募大錢、也不用是頂尖工程師，就能推動自己的夢想。",
+      "tags": [
+        "solo-founder",
+        "ai-leverage",
+        "idea-guy-leverage"
+      ],
+      "url": "https://x.com/dhh/status/2124042166506787113",
+      "source": "X (@dhh)",
+      "sourceUrl": "https://x.com/dhh/status/2124042166506787113",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "operational",
+      "title": "Ask HN：15 年資歷的資深工程師失業 2 年，該怎麼辦？（HN 495 分、500+ 則留言）",
+      "summary": "美國 DMV 地區的資深 .NET 工程師 2025 年 1 月預期公司要裁員而離職，之後兩年都找不到 SWE 工作，存款只剩 4–5 個月，正準備去 pizza 店當經理。留言區的共識很殘酷：招募的正門已經壞了，投幾百份履歷幾乎沒回音，最後拿到 offer 靠的都是人脈；也有人直接說，光會寫 C#/.NET 已經不是賣點，應該轉去做 business domain、security 和 architecture。對正在看機會的人來說，人脈和可以證明的 AI 時代作品，比履歷上的年資更重要。",
+      "tags": [
+        "future-of-work",
+        "hiring",
+        "ai-displacement",
+        "hiring-front-door"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50583761",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50583761",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "quotable",
+      "title": "Paul Graham：全科技圈都認為 Nvidia 董事會犯了大錯，只有董事會不這麼想",
+      "summary": "\"Everyone in tech thinks the board made a huge mistake. Except the board. But they are not in tech.\" — Paul Graham。這次掃描到按讚最多的 founder 貼文（1.7 萬讚、近 90 萬次曝光）。PG 認為問題在於董事會不是科技圈的人。",
+      "tags": [
+        "founder-control",
+        "governance",
+        "board"
+      ],
+      "url": "https://x.com/paulg/status/2124041291046785484",
+      "source": "X (@paulg)",
+      "sourceUrl": "https://x.com/paulg/status/2124041291046785484",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261122-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-22",
+      "cycle": "sunday",
+      "priority": "quotable",
+      "title": "Alex Hormozi：看起來簡單，只是因為你還沒做過",
+      "summary": "\"Anything that looks easy only looks easy because you haven't done it yet.\" — Alex Hormozi。7,600+ 讚的短文，後半句是「No one is more confident than the ignorant.」，可以拿來對照 Dunning-Kruger：越不懂的人越有自信。",
+      "tags": [
+        "execution",
+        "dunning-kruger"
+      ],
+      "url": "https://x.com/AlexHormozi/status/2123928581177069935",
+      "source": "X (@AlexHormozi)",
+      "sourceUrl": "https://x.com/AlexHormozi/status/2123928581177069935",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-22T03:24:53+08:00",
-  "updatedAt": "2026-11-22T03:24:53+08:00"
+  "lastUpdated": "2026-11-22T03:40:11+08:00",
+  "updatedAt": "2026-11-22T03:40:11+08:00"
 }
