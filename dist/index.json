@@ -125471,8 +125471,270 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261123-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "w01fb0ss/PiBot",
+      "summary": "開源、local-first 的桌面 AI agent 團隊：建立有名字、角色、各自模型／skills／記憶的 Bots，可單聊或拉群組，由 coordinator 規劃後分派，你確認計畫才執行；能跑指令、改檔、上網、computer use，有風險的步驟一律等你批准，指令跑在 sandbox 並寫 audit log。支援 routines、MCP、skills，模型可接 Ollama、OpenRouter 或自己的 API key；macOS／Windows／Linux 加 Android app，建在 pi agent kernel 上。",
+      "tags": [
+        "multi-agent",
+        "computer use",
+        "mcp",
+        "local-first",
+        "desktop agent"
+      ],
+      "url": "https://github.com/w01fb0ss/PiBot",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-09+stars%3A%3E20+topic%3Aai-agent&type=repositories&s=stars&o=desc",
+      "stars": 352,
+      "createdDate": "2026-11-21",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261123-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "pierridotite/mobile-agent-testers",
+      "summary": "不用寫 test script：每個 tester 是一個 Claude Code agent，在 GitHub Actions 免費 runner 上各開一台 iOS Simulator 或 Android emulator，扮演不同 persona（iPhone SE 瑞典文最大字級、Pixel 7 200%、iPad 德文、阿拉伯文 RTL…）像新用戶一樣操作你的 app，回報附截圖的 bug；也能指定跑某個功能、重現 issue、比較兩個版本。README 的 LocalSend 實測：20 台裝置、14 種語言，找到 46 個不同 bug，69 分鐘花 $4.62。支援 Flutter、React Native、Expo、原生 Kotlin／Swift 等。",
+      "tags": [
+        "claude code",
+        "mobile testing",
+        "github actions",
+        "qa agent",
+        "accessibility"
+      ],
+      "url": "https://github.com/pierridotite/mobile-agent-testers",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-09+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars&o=desc",
+      "stars": 330,
+      "createdDate": "2026-11-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261123-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "rising-fast",
+      "title": "sous-labs/songe",
+      "summary": "讓本地模型從你的日常使用中學習的訓練引擎：照常透過 opencode、pi 或任何 OpenAI-compatible 工具用本地模型，Songe 記下每個動作之後發生的事（tool 結果、錯誤、你的下一句），等 agent 閒置時才訓練。Quick Dream 幾分鐘內把偏好寫進 instructions，Deep Dream 趁你不在時訓練模型本身；新版本要在你自己的對話上表現更好才換上，可一鍵回滾，無帳號、無 telemetry。支援 LM Studio、vLLM、Ollama、llama.cpp、mlx-lm；README 列 NVIDIA（PyTorch）訓練已端到端測過。",
+      "tags": [
+        "local llm",
+        "fine-tuning",
+        "self-improving model",
+        "opencode",
+        "privacy"
+      ],
+      "url": "https://github.com/sous-labs/songe",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-09+stars%3A%3E20+topic%3Alocal-llm&type=repositories&s=stars&o=desc",
+      "stars": 214,
+      "createdDate": "2026-11-20",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261123-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "worth-trying",
+      "title": "keli-wen/cospan",
+      "summary": "把 Antigravity、Codex、Claude Code、DeepSeek Harness 串成同一套 async 委派協定：在 host agent 裡下 /cospan-codex 這類指令並指定模型、reasoning effort、timeout，任務就丟到背景 session 跑，host 不被卡住、context 保持乾淨，需要時才拉狀態或完整 trace，也能 continue 同一 session。作者主張真正的調度單位是「Model × Harness」；裝在 agy／dsh 上還有統一 sidebar，追蹤四個 harness 的背景任務和 git worktree。",
+      "tags": [
+        "agent orchestration",
+        "claude code",
+        "codex",
+        "antigravity",
+        "subagent"
+      ],
+      "url": "https://github.com/keli-wen/cospan",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-09+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars&o=desc",
+      "stars": 51,
+      "createdDate": "2026-11-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261123-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "AbdulSamad94/clipsmith",
+      "summary": "開源、離線版的 OpusClip：貼 YouTube 連結，它用本地 Qwen（經 Ollama）挑出 30–60 秒的精華、打 viral score、生標題和 hook，依講者臉部裁成 9:16、燒進逐字動畫字幕；有 Podcast 模式，把左右並排的兩位講者改成上下堆疊、各自追臉。README 說不需 GPU（在 4 核 Intel 筆電 CPU 上開發測試）、無浮水印、無額度限制，還能直接排程發到 YouTube。repo 才 25⭐，但跟《還沒被取代》剪 Shorts 的需求很對口。",
+      "tags": [
+        "podcast",
+        "shorts",
+        "video editing",
+        "ollama",
+        "creator tools"
+      ],
+      "url": "https://github.com/AbdulSamad94/clipsmith",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-09+stars%3A%3E20+topic%3Alocal-llm&type=repositories&s=stars&o=desc",
+      "stars": 25,
+      "createdDate": "2026-11-14",
+      "license": "MIT"
+    },
+    {
+      "id": "20261123-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "Noniv/abyssal-garden",
+      "summary": "過去 14 天新建 repo 的 star 數第 3 名。一個能在瀏覽器裡游的海底世界：海帶森林、穿透水面的光束、沉船、魟魚，全部由 WebGPU 程式碼即時生成，沒有圖片、3D 模型或音檔，整個世界就是一個約 96 KB 的 HTML；連背景聲（低鳴、遠處鯨歌、風鈴、氣泡）也是程式即時合成。想看 procedural audio 怎麼寫可以翻原始碼。",
+      "tags": [
+        "webgpu",
+        "procedural generation",
+        "generative audio",
+        "single html"
+      ],
+      "url": "https://github.com/Noniv/abyssal-garden",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-09+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 2777,
+      "createdDate": "2026-11-12",
+      "license": "MIT"
+    },
+    {
+      "id": "20261123-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "pithings/unkernel",
+      "summary": "把真正的 Linux 7.x kernel 編成單一 wasm module（有真 MMU，不是 NOMMU port），開網頁不到一秒就進 shell，有套件管理、持久化磁碟、網路、畫面與聲音，全在你的裝置上跑、不需 server。kernel 是編譯碼而非模擬，只模擬 user space 的 aarch64 binary，所以 Alpine、Debian 套件能原樣執行；README 實測 fork+exit+wait 約 60µs（原生約 70µs），但 CPU 密集程式明顯慢於原生。對 agent sandbox、瀏覽器內 dev 環境是新的選項。",
+      "tags": [
+        "webassembly",
+        "linux kernel",
+        "sandbox",
+        "browser"
+      ],
+      "url": "https://github.com/pithings/unkernel",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-09+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1082,
+      "createdDate": "2026-11-12",
+      "license": "GPL-2.0"
+    },
+    {
+      "id": "20261123-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "aryamandarda/tamserve",
+      "summary": "Show HN（123 分）：給 SAM 2、SAM3、EdgeTAM 用的即時多鏡頭物件追蹤 serving engine，概念類似 vLLM——所有鏡頭共用一份模型、需要 GPU 的工作一起批次處理。README 說比模型原始碼更快、GPU 記憶體約少 4 倍、準確度相同，demo 是一張 GPU 同時跑 6 路 30 fps；也能直接用名字（\"dog\"、\"the red mug\"）指定要追的東西。",
+      "tags": [
+        "sam 2",
+        "object tracking",
+        "model serving",
+        "computer vision"
+      ],
+      "url": "https://github.com/aryamandarda/tamserve",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50523377",
+      "stars": 272,
+      "createdDate": "2026-11-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261123-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "Zero C#",
+      "summary": "Show HN（171 分、120 則留言）：bflat 的 fork，把 C# 直接編成小型原生程式——沒有 .NET runtime、沒有 GC，記憶體來自可一次整批釋放的 arena，搭配一個小型標準庫處理字串、集合與 I/O。保留 C# 語法、型別檢查和 generics（含 C# 15 unions），同一份 source 可跑在 Linux、macOS、Windows、WebAssembly，甚至 386 上的 DOS。",
+      "tags": [
+        "c#",
+        "native compilation",
+        "no gc",
+        "webassembly"
+      ],
+      "url": "https://onurgumus.github.io/zero-csharp/index.html",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50590279"
+    },
+    {
+      "id": "20261123-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "on-the-radar",
+      "title": "Foolscap",
+      "summary": "Show HN（129 分、95 則留言）：「只讀不寫」的 AI 寫作 app。邊寫邊整理出書裡的角色、想法、線索和還沒收尾的地方，你可以回應它挑出的內容；側邊有個 agent 能問整本書的問題、下指令，但永遠不會寫進你的稿子。官網說寫作不會拿去訓練 AI，標成 private 的書完全不送 AI；有免費方案。",
+      "tags": [
+        "writing tool",
+        "ai-assisted creativity",
+        "creator tools"
+      ],
+      "url": "https://foolscap.works/",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50559749"
+    },
+    {
+      "id": "20261123-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "product-hunt",
+      "title": "Omi CLI",
+      "summary": "11/22 PH 第 8 名（PT 當日進行中，90 upvotes）。terminal 裡的 coding agent：讀 repo、修 bug、跑測試，並用真的瀏覽器檢查 app；平行 subagents 各自在獨立 worktree 作業，background agent 在你關掉 terminal 後繼續跑，cloud agent 能開 PR。用 diff 審查、可 undo，13 個模型可選或自帶，免費起步（npm i -g @builditomi/cli）。",
+      "tags": [
+        "coding agent",
+        "cli",
+        "background agent",
+        "worktree"
+      ],
+      "url": "https://hunted.space/dashboard/omi-cli",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/omi-cli"
+    },
+    {
+      "id": "20261123-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "product-hunt",
+      "title": "Creavit Studio 4.0",
+      "summary": "11/22 PH 第 7 名（PT 當日進行中，93 upvotes）。Mac 的螢幕錄影＋產品 demo 工具：QR 配對用 iPhone 拍直式鏡頭、錄完再補拍鏡頭、Content Planner、MultiFocus、電影感 3D MacBook／iPhone 場景、Smooth Scroll／Smooth Typing，還能把你的聲音轉成另一種語言，Auto FX 每一步都等你批准；另有 iPhone 版。",
+      "tags": [
+        "screen recording",
+        "demo video",
+        "creator tools",
+        "mac"
+      ],
+      "url": "https://hunted.space/dashboard/creavit-studio",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/creavit-studio"
+    },
+    {
+      "id": "20261123-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "product-hunt",
+      "title": "Yoroll",
+      "summary": "11/22 PH 第 2 名（PT 當日進行中，223 upvotes）。不寫 code、不用遊戲引擎，把故事做成可玩的電影感互動遊戲：從劇本、圖片或影片片段開始，導演場景、加玩家選擇和分支劇情，AI 幫你組成可分享的互動作品——官方形容比較像導演自己的互動電影。",
+      "tags": [
+        "interactive story",
+        "no-code",
+        "ai video",
+        "game creation"
+      ],
+      "url": "https://hunted.space/dashboard/yoroll",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/yoroll"
     }
   ],
-  "lastUpdated": "2026-11-23T03:44:23+08:00",
-  "updatedAt": "2026-11-23T03:44:23+08:00"
+  "lastUpdated": "2026-11-23T04:00:31+08:00",
+  "updatedAt": "2026-11-23T04:00:31+08:00"
 }
