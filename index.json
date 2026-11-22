@@ -125055,8 +125055,258 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261123-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "SGLang Paged Experts 加入「下一層 experts 預先搬」：RTX 5070 Ti 跑 Qwen3-Next-80B NVFP4 單請求 decode +12%",
+      "summary": "PR #51279（11/21 22:55 台北合併）。Paged Experts 讓 MoE 模型大於 VRAM 時把 experts 放 pinned RAM、用到才搬進 GPU slot；這次用下一層的 router 先猜要哪些 experts，趁目前這層在算時搬過去（每層最多 3 個），猜對就不卡 critical path。作者就在 RTX 5070 Ti 上調參：Qwen3-Next-80B-A3B-Instruct-NVFP4（每層 512 個 experts 只放約 100 個在 VRAM）單請求 103.1→116.2 tok/s（+12%），Qwen3-30B-A3B-GPTQ-Int4 +2.8%；RTX 4070 Laptop 8GB +7 到 +13%，GSM8K 不變。不需要 flag，符合條件的 layer 自動開。",
+      "tags": [
+        "llm_inference",
+        "MoE offload",
+        "Paged Experts",
+        "RTX 5070 Ti"
+      ],
+      "url": "https://github.com/sgl-project/sglang/pull/51279",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/sgl-project/sglang/pull/51279",
+      "price": null,
+      "vram": "PR 直接在 RTX 5070 Ti（16GB）實測，80B MoE 靠 RAM 放 experts",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261123-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 修 Inkling 2 Mini 兩個坑：`--n-cpu-moe` 部分 offload 輸出「!!!!」（#32807）、tokenizer 少開 ignore_merges（#32799）",
+      "summary": "11/23 凌晨（台北）連續合併。#32807：experts 放 CPU（`--n-cpu-moe`）時，被多個 node 共用的 host weight 沒有把所有 experts 都複製，batch 一到 32+ tokens（例如 n-gram drafting）就開始無限輸出 token 0「!」，這次改成整份複製。#32799：官方 tokenizer 設 `ignore_merges: true`，llama.cpp 沒開，有 337 個 vocab 組不出來，例如 `kwargs` 會被切成 `kwar·g·s`，token 數跟 HF 對不上。注意：另外兩個 CUDA partial offload 長 prompt 亂碼的 issue（#32710、#32778）還沒關，koboldcpp 建議先加 `--no-op-offload`，並說 Unsloth 的 Inkling quant 目前不正常、改用 ggml-org 的。",
+      "tags": [
+        "llm_inference",
+        "Inkling 2 Mini",
+        "MoE offload",
+        "tokenizer"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/32799",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32807",
+      "price": null,
+      "vram": "16GB 卡跑 Inkling 2 Mini 通常要 `--n-cpu-moe` 部分 offload，正好是這次修的路徑",
+      "license": "MIT（llama.cpp）／Apache-2.0（Inkling 2 Mini 權重）"
+    },
+    {
+      "id": "20261123-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "koboldcpp v1.125.1：接上 llama.cpp 官方 TTS 模型、Qwen3ASR／SenseVoice 轉錄、forced aligner 逐字時間戳，voice clone 自動轉錄 reference",
+      "summary": "11/22 15:54（台北）發佈。語音方面：可載入 llama.cpp 上游的 TTS 模型（例如 Kokoro）；新增 Qwen3ASR、SenseVoice 轉錄，以及 MMS／Qwen3 forced aligner，跟轉錄模型一起用可以拿到每個字的時間戳；需要 reference_text 的 voice clone 模型，有載轉錄模型時會自動幫你轉 reference。另外 YuE2 更省 VRAM、支援 MiniMax H3 Image、加入 Inkling 2 Mini。Breaking：設了 `--password` 後所有生成 endpoint 都要 API key；LTX 影片的音訊支援拿掉了。",
+      "tags": [
+        "tts_speech",
+        "audio_music_ai",
+        "forced alignment",
+        "koboldcpp"
+      ],
+      "url": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/LostRuins/koboldcpp/releases/tag/v1.125.1",
+      "price": null,
+      "vram": "語音模型多為小模型；YuE2 VRAM 用量下降",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261123-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "inference-optimization-playbook：115 個消費級 GPU 跑大 MoE 的優化實驗（有效／無效都記），Inkling 2 Mini 單張 3090 從 57 拉到 128.7 tok/s",
+      "summary": "作者在 4×RTX 3090＋experts 放 RAM 的環境跑 DeepSeek V4.1 Flash、Hy4 Flash、GLM-5.3-Flash 等，每個想法都附結論、數字和適用條件，repo 根目錄就是給 coding agent 用的 skill。例子：DeepSeek V4.1 Flash 32K prefill 430→2,199 tok/s；Hy4 Flash 兩張卡把 cold experts 丟 CPU 平行算，decode 24.6→70.4。最有價值的是失敗紀錄：「hot experts 放 VRAM」只在 4 個模型中的 2 個有效；短 benchmark 說 decode +27%，真實生成只有 +2%。README 也提醒數字來自單一機器。",
+      "tags": [
+        "llm_inference",
+        "MoE offload",
+        "speculative decoding",
+        "agent skill"
+      ],
+      "url": "https://github.com/alesha-pro/inference-optimization-playbook",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/alesha-pro/inference-optimization-playbook",
+      "price": null,
+      "vram": "實驗機是 24GB 卡；方法（experts 放 RAM、drafter、chunked prefill）可套用到 16GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20261123-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #29307：chat parser 改成看 token，不再把模型「寫出來」的 `</think>` 文字當成 reasoning 結束",
+      "summary": "11/23 01:36（台北）合併。以前 chat parsing 只看文字，Qwen3 之類的模型如果把 `</`、`think`、`>` 拆成普通 token 寫出來（例如在解釋格式），會被誤判成 reasoning 結束。現在 parser 可以用 `p.token()` 指定只認真正的 special token，沒有註冊成 special token 的會退回文字比對，舊模板照常可用。有在 llama-server 跑 reasoning／tool call 模型的，遇過 reasoning 被截斷或 tool call 解析錯的可以更新試試。",
+      "tags": [
+        "llm_inference",
+        "llama-server",
+        "reasoning parser",
+        "tool calling"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/29307",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/29307",
+      "price": null,
+      "vram": "程式修正，不改變記憶體需求",
+      "license": "MIT"
+    },
+    {
+      "id": "20261123-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "sherpa-onnx v2.0.3：PocketTTS 授權更正為 CC-BY-4.0（可商用），新增 w2v-BERT 2.0 CTC 匯出、speaker diarization 改進",
+      "summary": "11/22 18:53（台北）發佈。PR #4250 更正 PocketTTS 模型包裡的 README：原本寫「non-commercial」，但上游權重已改成 CC-BY-4.0、程式碼 Apache-2.0（PR 注意：已發佈的 tarball 裡的 README 要重跑 workflow 才會更新）。其他更新：w2v-BERT 2.0 CTC 模型可匯出 ONNX；speaker diarization 只拿乾淨語音夠長的 embedding 來分群，並新增 `CreateStream()`／`Process(stream)` API；Pali TTS engine 可以當系統 TTS 用。",
+      "tags": [
+        "tts_speech",
+        "PocketTTS",
+        "speaker diarization",
+        "ONNX"
+      ],
+      "url": "https://github.com/k2-fsa/sherpa-onnx/pull/4250",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v2.0.3",
+      "price": null,
+      "vram": "CPU 即可跑",
+      "license": "Apache-2.0（PocketTTS 權重 CC-BY-4.0）"
+    },
+    {
+      "id": "20261123-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "stable-diffusion.cpp：MiniMax H3 VAE 編碼快 6.3 倍（RTX 5070 Ti Laptop 實測）、支援 MOSS-Image edit LoRA、加入 Diffusion Graph Language",
+      "summary": "11/22 晚間到 11/23 凌晨（台北）合併。#2369：H3 VAE 編碼原本每個 channel 各 launch 一次 kernel，改成一次處理；在 RTX 5070 Ti Laptop 12GB 做 MiniMax-H3-Image 參考圖編輯，reference 編碼 19.15→3.04 秒，整體 80.17→62.44 秒（−22%），輸出像素完全相同。#2203：MOSS-Image 支援參考圖輸入和 edit LoRA。#2396：新增 DGL，用腳本組 image／video workflow，會在 RAM／VRAM 預算內規劃權重放哪裡。",
+      "tags": [
+        "image_gen",
+        "MiniMax H3",
+        "MOSS-Image",
+        "VAE"
+      ],
+      "url": "https://github.com/leejet/stable-diffusion.cpp/pull/2396",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/leejet/stable-diffusion.cpp/pull/2369",
+      "price": null,
+      "vram": "PR 在 12GB 筆電卡＋CPU offload 實測",
+      "license": "MIT"
+    },
+    {
+      "id": "20261123-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SGLang diffusion：對不上任何 layer 的 LoRA 改成直接報錯——抽查 826 個熱門 LoRA，116 個其實一層都沒載入",
+      "summary": "PR #51783（11/22 03:02 台北合併）。以前 key 名稱對不上的 LoRA 只會印 warning、回 OK，之後每個請求都在跑 base model，使用者完全不知道。作者抽查 826 個 Wan、Qwen-Image、FLUX.1/2、Z-Image、LTX-2 的熱門 Hub LoRA，116 個在 main 上載入 0 層，例如 musubi-tuner 的 Wan LoRA、Kohya 的 Qwen-Image／Z-Image LoRA。現在會直接丟 ValueError；用 `--lora-path` 指到這種檔案，server 啟動就會失敗。",
+      "tags": [
+        "image_gen",
+        "LoRA",
+        "SGLang",
+        "diffusion"
+      ],
+      "url": "https://github.com/sgl-project/sglang/pull/51783",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/sgl-project/sglang/pull/51783",
+      "price": null,
+      "vram": "不影響記憶體需求",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261123-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Sarvam-105B-1711：105B MoE（10.3B active）開放權重新 checkpoint，NVFP4 65GB 單張 RTX PRO 6000 跑，BF16 可接 NeMo RL",
+      "summary": "Sarvam AI 11/22 發佈，Apache-2.0。同一個 105B base 再做 post-training，加強 tool calling、instruction following 和印度語言；官方稱 8 個對話 agent benchmark 平均從 42.6 升到 73.9（都是自家跑的數字）。NVFP4 版就是他們線上服務用的那份，約 65GB，單張 RTX PRO 6000 Blackwell 96GB 每位使用者約 99 tok/s；vLLM 已合併 DSpark speculative decoding 支援，BF16 版給 fine-tune。16GB 卡跑不動，主要參考它的 NVFP4 訓練／serving 數字。",
+      "tags": [
+        "llm_training",
+        "llm_inference",
+        "NVFP4",
+        "MoE"
+      ],
+      "url": "https://huggingface.co/sarvamai/sarvam-105b-1711",
+      "source": "Sarvam AI Blog",
+      "sourceUrl": "https://www.sarvam.ai/blogs/sarvam-105b-1711",
+      "price": null,
+      "vram": "NVFP4 約 65GB，官方單卡實測用 96GB RTX PRO 6000",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261123-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "vLLM main 一次合併 5 個 security fix：CUDA kernel int32 位址溢位可能洩漏別人的資料、`--root-path` 認證繞過",
+      "summary": "11/21 15:52–20:18（台北）合併，目前只在 main，還沒進正式 release（最新仍是 v0.34.0）。#53131：`num_tokens * stride` 超過 2^32 時，RMSNorm／FP8 quant／MoE routing 等 kernel 的 int32 位址會溢位，PR 說 rms_norm 已有 PoC 可造成跨使用者資料外洩。#52794：設了 `--root-path`（例如 `/v`）時，auth middleware 用字串前綴去掉 root path，`/v1/models` 等路徑可繞過認證。另外三個是多模態 batch 的 media 位元組上限、pooling／scoring 的 prompt 數上限。把 vLLM 開給別人用、或放在 reverse proxy 後面的要留意。",
+      "tags": [
+        "infra_runtime",
+        "vLLM",
+        "security"
+      ],
+      "url": "https://github.com/vllm-project/vllm/pull/52794",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/vllm-project/vllm/pull/53131",
+      "price": null,
+      "vram": "n/a",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261123-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Better Data Center Project 估算：Anthropic 2028 年用電約 87% 來自天然氣、11% 來自燃煤（HN 645 分、約 700 則留言）",
+      "summary": "以 Anthropic 已簽約的資料中心為案例：截至 10 月共約 15 GW compute，其中 5.9–9.6 GW 對應到特定場址；用場內燃氣機組加上當地電網的邊際電廠推算，2028 年約 87% 用電來自天然氣、11% 來自燃煤，年排碳 17–38 百萬噸（中位 32 百萬噸），可能超過加州整個電力部門。報告也說 Anthropic 在美國沒有公開的再生能源承諾，場內燃氣有 80% 是效率較差的 simple cycle 機組。這是倡議團體的估算，HN 討論集中在方法和「邊際電廠」的算法。",
+      "tags": [
+        "infra_runtime",
+        "data center power",
+        "Anthropic"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50597612",
+      "source": "Better Data Center Project／Hacker News",
+      "sourceUrl": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
+    },
+    {
+      "id": "20261123-ai-012",
+      "radar": "ai-infra",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Dragos：5 個月送出約 200 萬個帶 canary 的 prompt，抓到 3 家 inference provider 被入侵、marketplace 賣家偷看 prompt、ZDR 被無視（HN 94 分）",
+      "summary": "HD Moore 團隊 7–11 月在 prompt 裡埋獨一無二的 URL 和 AWS canary key，再看誰去用。結果：3 家 hosting provider 被入侵，連被拒絕的請求都被複製，偷到的 key 被拿去打 S3、Bedrock，後期還出現 LLM 驅動的滲透工具 ARTEX；marketplace 賣家只要開 request logging 就能看到客戶 prompt；送到某中國實驗室模型的 prompt，過半裡面的 URL 被它的 scraper 抓走（包含標了 ZDR 的）。建議：直接用第一手 provider、自己挑 router 的上游、在 context 裡放自己的 canary。OpenRouter 下架 provider 的公告（今天 Software Dev 雷達已收）也點名感謝這份報告。",
+      "tags": [
+        "infra_runtime",
+        "inference provider",
+        "security",
+        "canary token"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50596511",
+      "source": "Dragos Blog／Hacker News",
+      "sourceUrl": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
     }
   ],
-  "lastUpdated": "2026-11-23T03:18:53+08:00",
-  "updatedAt": "2026-11-23T03:18:53+08:00"
+  "lastUpdated": "2026-11-23T03:35:07+08:00",
+  "updatedAt": "2026-11-23T03:35:07+08:00"
 }
