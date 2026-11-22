@@ -125000,7 +125000,7 @@
       "cycle": "morning",
       "priority": "high",
       "title": "Raph Levien〈Advice for the next 100 Rust GUIs〉：AI 讓 Rust 成為改寫既有 codebase 的首選，UI 層卻還沒有共識",
-      "summary": "這是 2022 年〈next dozen Rust GUIs〉的續篇；4.5 年來冒出約 20 個 Rust GUI toolkit，最近 AI 又帶動一波興趣。他的看法：LLM 寫 Rust 的成本沒比其他語言高多少，在大型 codebase 裡型別系統還能幫忙守住 invariant，所以 Rust 正快速變成 AI rewrite 的首選語言。Zed 的 GPUI 成為 AI 驅動改寫的主要選擇（他點名 Discord），但他認為 GPUI 的 2D renderer 只適合 editor 這類用途，不適合通用 app。給的建議：要大膽、站在穩固的基礎上、能用現成 spec 就用，也別拿 slop PR 洗 upstream。HN 244 分。",
+      "summary": "這是 2022 年〈next dozen Rust GUIs〉的續篇；4.5 年來冒出約 20 個 Rust GUI toolkit，最近 AI 又帶動一波興趣。他的看法：LLM 寫 Rust 的成本沒比其他語言高多少，在大型 codebase 裡型別系統還能幫忙守住 invariant，所以 Rust 正快速變成 AI rewrite 的首選語言。Zed 的 GPUI 成為 AI 驅動改寫的主要選擇（他點名 Discord），但他認為 GPUI 很適合 Zed 這種 editor，卻不一定是通用 app 的理想選擇（2D renderer 缺完整 gradient、blending、filter 等功能）。給的建議：要大膽、站在穩固的基礎上、能用現成 spec 就用，也別拿 slop PR 洗 upstream。HN 244 分。",
       "tags": [
         "rust",
         "GUI",
