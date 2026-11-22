@@ -124820,8 +124820,243 @@
       "url": "https://hunted.space/dashboard/codemany",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/codemany"
+    },
+    {
+      "id": "20261123-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenRouter 下架三家 inference provider、125 個 endpoint 拿掉 ZDR；Together AI 承認：AI coding agent 把憑證 commit 進公開 repo，prompt 樣本被偷",
+      "summary": "11/22 收過 Dragos 的 canary 研究，這是後續。OpenRouter 11/22 公告：依調查結果下架三家 provider，125 個 endpoint 移出 Zero Data Retention（ZDR）資格（部分是預防性移除），並已通知可能受影響的客戶；之後要把研究員的測試手法變成常態檢查，也會查 request 有沒有被轉給第三方。Together AI CEO Vipul Ved Prakash 說明：內部測試用的 prompt 樣本（6–7 月 MiniMax M3、GLM-5.2、Kimi K2.6 的請求）放在 private Hugging Face repo，開發公開 repo xorl 時，一個 AI coding agent 把能讀這個 repo 的 credential commit 了出去；有人趁曝光期間下載樣本、再從裡面撈 credential 去測，其中 5 個正是 Dragos 的 canary。Together 已改用 scoped／短效 credential、每個 PR 掃 credential、新帳號預設 ZDR。",
+      "tags": [
+        "AI supply chain",
+        "Zero Data Retention",
+        "agent security",
+        "secret leakage",
+        "ai coding"
+      ],
+      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+      "source": "OpenRouter Blog",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Claude Code「Yes, and don't ask again」洩密後續：GitGuardian 在公開 GitHub 找到 31,088 個 secret、5,343 個偵測時仍有效，Docker Hub image 也有",
+      "summary": "11/08 收過 Apiiro 的原始報告，InfoQ 11/22 整理了後續。GitGuardian 持續監控公開 commit（2025/1 到 2026/11/7）：`.claude/settings.local.json` 裡有 31,088 個不同的 secret，分布在 23,276 個 repo，其中 5,343 個在偵測當下有效；`COPY . .` 會把 git 忽略的檔案一起打包，所以 Docker Hub 公開 image 裡還有 613 個（99 個有效）。根因是 approve 的整串指令會原封不動存成 allow rule，密碼和 token 也一起存進去；Claude Code 只把這個檔案寫進本機的 global git excludes，不會寫進 repo 自己的 `.gitignore`。處理順序：先 rotate，再 `git rm --cached`，然後加進 `.gitignore` 和 `.dockerignore`，secret 改用環境變數傳。",
+      "tags": [
+        "ai coding",
+        "secret leakage",
+        "saved-approval leakage",
+        "Claude Code",
+        "supply chain"
+      ],
+      "url": "https://blog.gitguardian.com/claude-code-settings-local-json-secrets-docker-hub/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google Agent Compute Engine：每個 agent 一台 microVM，sandbox 裡完全沒有 credential，harness（大腦）和 sandbox（手）徹底分開",
+      "summary": "InfoQ 11/22 整理 Google 10/23 發的 deep dive。這是 managed service，用 microVM 跑 agent；閒置的 agent 可以 checkpoint 暫停、需要時再恢復，並用 copy-on-write 記憶體共用，讓多個 agent 共用同一個 OS template。API key、OAuth refresh token 都不放進 sandbox，改由外部的 Agent Gateway 驗證身分、注入 secret。orchestration harness 完全跑在 sandbox 外，sandbox 只執行 harness 下的明確指令，所以每個 tool call 都能對上 sandbox 裡的實際活動，留下 audit trail。Google 內部已經用在 Gemini、Antigravity 和模型評測；對外還沒開放，價格未公布，預計未來幾個月 preview。",
+      "tags": [
+        "paradigm-shift",
+        "ai agent",
+        "microVM sandbox",
+        "credential injection",
+        "agent harness"
+      ],
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "fast-anything：不用整個 rewrite 成 Rust，coding agent 只改寫最慢的 5%，再用 500 個真實呼叫 replay 證明行為一致",
+      "summary": "先 profile Python、Node／TypeScript、Ruby、Java、Go、PHP、C# 等 app，依「耗時 × 可移植性」把函式排序。`port` 會錄下最多 500 個真實呼叫，產生只含一個函式的 Rust crate 和 TASK.md，交給 Claude Code 或 Codex 去寫。`verify` 會 replay 全部呼叫，再加上 NaN、±infinity、非 ASCII、空輸入等 edge case；全部結果一致（float 誤差 1e-9 以內）而且真的變快才會 enable，隨時可以 disable。官方數據：Python fuzzy dedupe 從 4.91s 降到 42ms（116×）。內建 MCP server（8 個 tools）和 Claude Code plugin，MIT 授權；GitHub 約 1.6k stars，HN 153 分。",
+      "tags": [
+        "rust",
+        "ai coding",
+        "mcp",
+        "hot-path porting",
+        "verification"
+      ],
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/EL4CTEO/fast-anything",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "mod_wsgi 作者 Graham Dumpleton 用 AI 寫 Muru：Rust 寫的 Python WSGI／ASGI server，三週公開 19 篇開發日誌",
+      "summary": "Simon Willison 整理：Graham 做了 20 年 mod_wsgi，Muru 是他用 AI 輔助寫的新 server，repo 自述是 WSGI／ASGI app 的 routing edge、control plane 和 Python runtime，從開發環境一路用到 production。開發日誌寫到 import once／fork many、不靠 service mesh 的 canary、配合 Kubernetes、scale to zero，還有每頁都有的 tracing toolbar。他在〈AI as a lifestyle choice〉裡寫：表面上 AI 做了很多事，但判斷什麼還不夠好，還是得靠他自己，20 年踩 mod_wsgi 坑的經驗剛好用在這裡。",
+      "tags": [
+        "rust",
+        "ai-assisted development",
+        "python",
+        "asgi"
+      ],
+      "url": "https://github.com/muruhq/muru",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/21/muru/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "AWS Lambda 可以跑 GPU 推論了：Managed Instances 上的 G 系列機器，同一個環境最多 48 個並發 invocation 共用一份模型",
+      "summary": "Lambda Managed Instances 上的 Event Functions 現在能跑 G4dn、G5、G6、G6e 等機型，用 container image 部署，event source 觸發方式跟一般 function 一樣。計價是 EC2 On-Demand 加 9.75% 管理費，再加每百萬 requests $0.20。官方提供 CUDA、CuPy、PyTorch、vLLM、SGLang 五種 base image，用 vLLM／SGLang 的話設好 MODEL_ID 就行，不必寫 handler。限制：image 最大 32GB、accelerator memory 3–48GB。Classmethod 實測 us-east-1 的 81 種加速機型只收 37 種（全是 G 系列）；新帳號的 GPU vCPU quota 是 0，Terraform 也還不認得 AcceleratorConfig；擴容要等幾十秒，不適合突然暴增的流量。",
+      "tags": [
+        "serverless",
+        "GPU inference",
+        "vLLM",
+        "AWS Lambda"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "progrium 發布 miniPG：把真正的 Postgres 包成單一 binary，像 sqlite3 一樣指向資料夾就能查",
+      "summary": "`minipg ./mydb \"select ...\"` 直接跑 query，`minipg serve` 可以當 server，`minipg run ./mydb -- tool` 會帶好環境變數啟動要用 Postgres 的程式，結束後不會留下 daemon。作者先試過 PGlite，但它只支援單一連線，會 deadlock；後來改用自己做的 Hyper9（透過 hypervisor 以接近原生的速度跑 Plan 9 執行檔），同一份 Postgres 就能跑在 Mac、Windows、Linux 上，啟動時間從 7 秒降到 800ms。適合測試、本地開發、讓 agent 臨時開一個真的 Postgres 用完就丟；不打算取代 production 部署。",
+      "tags": [
+        "embedded Postgres",
+        "developer experience",
+        "self-hosted",
+        "local dev"
+      ],
+      "url": "https://progrium.xyz/articles/2026/single-binary-postgres",
+      "source": "progrium",
+      "sourceUrl": "https://progrium.xyz/articles/2026/single-binary-postgres",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "OpenAI 首席科學家 Jakub Pachocki〈Perplexity and Intelligence〉：首度公開內部 pretraining perplexity，提議各 lab 用它設共同上限",
+      "summary": "Pachocki 認為新能力主要來自 pretraining 這個「compressor」的進步，並公開 OpenAI 在內部 codebase 資料集上的 log-perplexity：GPT‑3.5 約 0.99，GPT‑4 約 0.91；降到 0.8 以下後，cybersecurity 和數學開始出現 transformative 能力，約 0.76 的模型開始產出數學突破。他預期進入 0.68–0.7 區間還會冒出新能力。他提議各 lab 以 perplexity 等指標約定共同上限，在監控能力（例如 CoT monitor 的後繼者）到位前不跨越；也提醒 AI 一旦參與 pretraining 演算法研究，最快 2027 年就可能出現一波突破。HN 191 分。",
+      "tags": [
+        "llm evaluation",
+        "benchmark",
+        "AI safety",
+        "perplexity pacing"
+      ],
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/perplexity-and-intelligence/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Raph Levien〈Advice for the next 100 Rust GUIs〉：AI 讓 Rust 成為改寫既有 codebase 的首選，UI 層卻還沒有共識",
+      "summary": "這是 2022 年〈next dozen Rust GUIs〉的續篇；4.5 年來冒出約 20 個 Rust GUI toolkit，最近 AI 又帶動一波興趣。他的看法：LLM 寫 Rust 的成本沒比其他語言高多少，在大型 codebase 裡型別系統還能幫忙守住 invariant，所以 Rust 正快速變成 AI rewrite 的首選語言。Zed 的 GPUI 成為 AI 驅動改寫的主要選擇（他點名 Discord），但他認為 GPUI 的 2D renderer 只適合 editor 這類用途，不適合通用 app。給的建議：要大膽、站在穩固的基礎上、能用現成 spec 就用，也別拿 slop PR 洗 upstream。HN 244 分。",
+      "tags": [
+        "rust",
+        "GUI",
+        "ai rewrite",
+        "GPUI"
+      ],
+      "url": "https://linebender.org/blog/next-100-guis/",
+      "source": "Linebender Blog",
+      "sourceUrl": "https://linebender.org/blog/next-100-guis/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Upload2Shell（CVE-2026-125396）：上傳一張「.png」就可能 RCE——Ghostscript Type 1 字型 loader 的 use-after-free 繞過 -dSAFER",
+      "summary": "pwn.ai 公開細節：ImageMagick／Imagick、PIL 處理 EPS／PostScript 內容時會把檔案交給 Ghostscript，就算副檔名是 .jpg、.png 也一樣。這個 use-after-free 可以任意寫記憶體，關掉 -dSAFER 的路徑檢查之後就能執行指令。實測打通的路徑有：WordPress（Author 權限上傳即可，CVE-2026-65640，7.0.4／6.9.7 已修）、Forminator 等外掛的公開上傳表單（未登入訪客也能觸發），以及 Debian 13 CUPS 的匿名列印。Ghostscript 10.08.0（9/8）已修，但截至 11/12，Debian Bookworm、Amazon Linux 和部分 SUSE 仍列為未修。有做縮圖、預覽、文件匯入的服務，要查實際裝的是哪一版 Ghostscript。HN 147 分。",
+      "tags": [
+        "security",
+        "RCE",
+        "Ghostscript",
+        "ImageMagick",
+        "file upload"
+      ],
+      "url": "https://pwn.ai/upload2shell/research.html",
+      "source": "pwn.ai",
+      "sourceUrl": "https://pwn.ai/upload2shell/research.html",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-23",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Show HN：Worker 755——換你當 LLM 的 subagent，被 AI manager 派工、驗收、寫考績",
+      "summary": "manager 是真的 LLM（可選 Claude、GPT、Gemini、DeepSeek、GLM、Kimi），有 task queue、唯讀權限和一個「spawn subagent」工具，而被 spawn 的 subagent 就是你：指令出現在你的終端機，90 秒內要做完，回傳報告和指令 transcript；它會檢查成果、要求修正、開 incident report，最後幫你寫 performance review。旁邊還有使用者 Dan 的家庭照片和 NDA，一個 `rm` 就沒了。換個角度體驗當 subagent 是什麼感覺。HN 172 分。",
+      "tags": [
+        "multi-agent",
+        "subagent",
+        "game"
+      ],
+      "url": "https://worker755.com",
+      "source": "Show HN",
+      "sourceUrl": "https://github.com/gulivan/worker755",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-22T04:07:47+08:00",
-  "updatedAt": "2026-11-22T04:07:47+08:00"
+  "lastUpdated": "2026-11-23T03:18:53+08:00",
+  "updatedAt": "2026-11-23T03:18:53+08:00"
 }
