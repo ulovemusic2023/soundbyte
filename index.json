@@ -125305,8 +125305,174 @@
       "price": null,
       "vram": "n/a",
       "license": "n/a"
+    },
+    {
+      "id": "20261123-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Tobi Lütke × David Senra：只有 founder 能重新發明公司——成功很簡單，「be too good to ignore」",
+      "summary": "David Senra 說這集是他 podcast 目前最好的對談之一，章節包括「Only founders can reinvent their companies」「Markets are the original superintelligence」「The computer programmer job is over」「Insufficiently ambitious prompting」「A weekend rewrite that used to take years」。Tobi 說今年沒有一個週末不是整個週末都在工作，也說「I’m made for this moment」；他給所有人的成功建議只有一句：be too good to ignore——有趣的事發生時，你要是第一批被找的人；有升遷機會時，你要是理所當然的人選。對照 Nadella 在 DealBook 說 founder「They’re singular, but they’re not gods」，founder 到底能不能被取代，是這週科技圈最大的爭論。可以帶走的框架：AI 時代只是「夠好」不夠，要好到別人沒辦法忽視你。",
+      "tags": [
+        "founder-mode",
+        "founder-reinvention",
+        "career",
+        "ambitious-prompting"
+      ],
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
+      "source": "Founders Podcast（X @davidsenra）",
+      "sourceUrl": "https://x.com/davidsenra/status/2124518974197321782",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "mental-model",
+      "title": "Seth Godin：真正的工作，是創造讓人「選擇主動參與」的條件",
+      "summary": "Seth 認為學習成效最重要的因素，是學生有沒有主動投入；從醫生到收銀員，專業工作也是如此。偷懶的做法是等自我驅動的人自己出現，再把成果算在自己頭上；困難的是建立系統和文化，提高你吸引、激勵並改變那些想跟你走的人的機率。對做講座、顧問，或帶團隊導入 AI 的人來說，先贏得對方的 enrollment，比內容本身更重要。",
+      "tags": [
+        "enrollment",
+        "teaching",
+        "leadership",
+        "culture"
+      ],
+      "url": "https://seths.blog/2026/11/earning-enrollment/",
+      "source": "Seth's Blog",
+      "sourceUrl": "https://seths.blog/2026/11/earning-enrollment/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "operational",
+      "title": "mod_wsgi 作者 Graham Dumpleton：AI 寫的 code 都從一團泥開始，判斷「哪裡還不夠好」仍是人的工作",
+      "summary": "做了 20 年 mod_wsgi 的 Graham Dumpleton，一個月前開始用 AI 開發新的 Python app server Muru，每週七天、白天晚上都在做，還說很久沒有一件事同時這麼投入、充實又好玩。他用日本的泥丸工藝 dorodango 比喻：AI 的初稿就是一團泥，但大家一看到 AI 參與就期待一次完美，那是他們自己也做不到的標準；AI 做掉表面上大量的工作，決定哪裡還不夠好仍然要靠他，而 20 年踩過的坑正好派上用場。另一個很實際的觀察：月費 $20 時怕額度用完而不敢依賴，升到 $200 又覺得非用到回本不可，工具定價會直接改變你使用它的方式。",
+      "tags": [
+        "ai-architect",
+        "craftsmanship",
+        "judgment",
+        "ai-lifestyle"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "source": "grahamdumpleton.me（Simon Willison 推薦）",
+      "sourceUrl": "https://grahamdumpleton.me/posts/2026/11/ai-as-a-lifestyle-choice/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "Sam Blond：在 Founders Fund 看過 200+ 家 AI 銷售新創，多數不是「該是 feature」就是「找問題的解法」",
+      "summary": "Sam Blond 在 Brex 帶過業務，後來到 Founders Fund 當 partner，再共同創辦 AI-native 營收平台 Monaco。他說看過的 AI GTM 新創大多落入兩類：一是應該只是 feature 的公司（例如把通話內容寫進 CRM 欄位），二是 solution in search of a problem（例如每週給業務一支 AI 回顧影片，但沒人要）。他的三條創業規則：在你比任何人都懂的領域創業、用數百次客戶訪談找問題、對準平台轉移。他也認為 AI 降低了開發成本，讓 all-in-one 平台重新可行；建立與評分 TAM、enrichment、signals、多通路 outbound、pipeline 維護已經是 AI 做得比人好，經營客戶關係與有創意的活動則仍是人比較強。",
+      "tags": [
+        "gtm",
+        "ai-native",
+        "feature-vs-company",
+        "founder-market-fit",
+        "platform-shift"
+      ],
+      "url": "https://www.saastr.com/sam-blond-met-200-ai-sales-startups-at-founders-fund-then-built-monaco-why-most-get-it-wrong-where-ai-beats-your-reps-and-the-15000-plane/",
+      "source": "SaaStr",
+      "sourceUrl": "https://www.saastr.com/sam-blond-met-200-ai-sales-startups-at-founders-fund-then-built-monaco-why-most-get-it-wrong-where-ai-beats-your-reps-and-the-15000-plane/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "playbook",
+      "title": "Stripe 數據：agent 代購的日消費兩個多月成長近 80 倍，超過一半的人會回購",
+      "summary": "Patrick Collison 轉發並說「Agentic commerce is growing extremely quickly」（1,400+ 讚）。數據來自 Stripe 的 Link Agent Wallet（支援 Muse、Instinct、Grok 等個人 agent 付款）：11 月中的日消費（7 日移動平均）是 9 月初的近 80 倍，光最近一個月就翻倍；上週超過 40% 花在機票、旅遊與住宿，約三分之一在零售。最重要的訊號是「Agentic is sticky」：做過一次 agent 購物的消費者，超過一半會再買第二次，通常在同一個類別。對做產品的人來說，下一個客戶可能是 agent，結帳流程要讓 agent 能自己完成。",
+      "tags": [
+        "agentic-commerce",
+        "ai-agents",
+        "payments",
+        "retention"
+      ],
+      "url": "https://x.com/patrickc/status/2124471707738231047",
+      "source": "X (@ernietedeschi，Stripe 數據)",
+      "sourceUrl": "https://x.com/ernietedeschi/status/2123852064027471901",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Paul Graham：AI will Wallace every Darwin",
+      "summary": "\"AI will Wallace every Darwin.\" — Paul Graham。典故是 Wallace 與 Darwin 各自獨立想出天擇論，Wallace 的論文逼得 Darwin 趕緊發表。PG 這篇 6 個字的貼文有 15 萬次曝光、100+ 則回覆；一種解讀是：你正在醞釀的想法，AI 很可能也會幫別人同時想出來，所以速度和發表時機變得更重要。",
+      "tags": [
+        "ai",
+        "originality",
+        "speed"
+      ],
+      "url": "https://x.com/paulg/status/2124290986209611989",
+      "source": "X (@paulg)",
+      "sourceUrl": "https://x.com/paulg/status/2124290986209611989",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "Alex Hormozi：學會愛上你做的每件事，比只做你愛的事更重要",
+      "summary": "\"It’s more important to learn to love anything you do than it is to only do what you love.\" — Alex Hormozi。近 1,500 讚的短文，後半段是：只做你現在愛的事，世界會越來越窄；學會愛你做的每件事，世界會越來越寬。",
+      "tags": [
+        "mindset",
+        "career",
+        "craft"
+      ],
+      "url": "https://x.com/AlexHormozi/status/2124542701848998228",
+      "source": "X (@AlexHormozi)",
+      "sourceUrl": "https://x.com/AlexHormozi/status/2124542701848998228",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261123-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-23",
+      "cycle": "monday",
+      "priority": "quotable",
+      "title": "George Mack：別當濫好人，也別當混蛋——你需要的是「disagree-ability」",
+      "summary": "\"The person with disagree-ability isn't afraid of conflict, is good at conflict, but isn't addicted to conflict.\" — George Mack。他認為心理學把人分成 agreeable 和 disagreeable 是一個語言陷阱，主張新詞 disagree-ability：像武術家，不霸凌別人，也不會被霸凌；例子是有人對查票員大吼結果罰款加重，有 disagree-ability 的人則讓罰款取消，還跟查票員變成朋友。",
+      "tags": [
+        "disagree-ability",
+        "conflict",
+        "communication"
+      ],
+      "url": "https://x.com/george__mack/status/2124360725963673895",
+      "source": "X (@george__mack)",
+      "sourceUrl": "https://x.com/george__mack/status/2124360725963673895",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-23T03:35:07+08:00",
-  "updatedAt": "2026-11-23T03:35:07+08:00"
+  "lastUpdated": "2026-11-23T03:44:23+08:00",
+  "updatedAt": "2026-11-23T03:44:23+08:00"
 }
