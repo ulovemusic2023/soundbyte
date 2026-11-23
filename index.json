@@ -126308,8 +126308,317 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261124-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "Forward-Future/scarlet",
+      "summary": "開源 AI 影片剪輯器（macOS／Windows，Linux 有 Ubuntu preview）：agent 改 cut list、Scarlet 負責 render、你做創作決定。接你現有訂閱的 Claude Code 或 Codex（透過本機 MCP，不另收 AI 費用），可以打字、按住 V 用講的，或直接在畫面上圈選要改的地方；只重新 render 改動附近那幾秒，每次修改都存成新版本、可 Before/After 對照。README 說最適合訪談、talking-head、podcast 這類對話素材，還有 /punch-in 用本地臉部追蹤做 jump cut 推近——很適合《還沒被取代》剪輯。目前是 Early Access。",
+      "tags": [
+        "video editing",
+        "podcast",
+        "claude code",
+        "mcp",
+        "creator tools"
+      ],
+      "url": "https://github.com/Forward-Future/scarlet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 652,
+      "createdDate": "2026-11-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "nilbuild/stick-scene",
+      "summary": "agent skill：讓 coding agent 幫你的產品畫會動的火柴人小場景（例如「留言→agent 修→你 approve」、「YAML 丟進去、轉一轉跑出 JSON」）。`npx skills add nilbuild/stick-scene` 後下 /stick-scene，它會讀你的專案、先提 2–3 個點子讓你挑，寫好場景後逐格 render 檢查有沒有重疊或被切掉，再放進頁面；每個場景零依賴，可設捲到時播放、點擊、hover 或 loop。做 landing page、簡報素材很好用。",
+      "tags": [
+        "agent skill",
+        "landing page",
+        "animation",
+        "claude code"
+      ],
+      "url": "https://github.com/nilbuild/stick-scene",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 652,
+      "createdDate": "2026-11-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "danielwh2/sprite-stacking",
+      "summary": "agent skill：把四個 pixel art 視角（上、側、前、後）變成可旋轉的假 3D sprite。原理是只保留四個視角都覆蓋到的 voxel，再切成一層層平面疊起來 render；沒有生圖模型的話，agent 會自己用一小段 Python 把視角畫出來。支援 Claude Code、Codex、Cursor、OpenCode、Gemini CLI、Pi，附 slicer CLI，可輸出 normal map、HTML viewer，也能直接丟進 Godot 遊戲。",
+      "tags": [
+        "agent skill",
+        "pixel art",
+        "game dev",
+        "claude code"
+      ],
+      "url": "https://github.com/danielwh2/sprite-stacking",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars&o=desc",
+      "stars": 631,
+      "createdDate": "2026-11-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "erkamyaman/safe-anything",
+      "summary": "rust-anything 作者的新作，11/22 建立、兩天 432⭐：100% Rust 的漏洞掃描器，`npx safe-anything .` 一行跑完、不用設定或帳號、不上傳。74 條規則涵蓋 SQL injection、XSS、SSRF 等程式碼問題、外洩的 cloud／AI key（含 NEXT_PUBLIC_、VITE_ 誤放的 secret）、Docker／GitHub Actions／Terraform 設定、依賴套件 CVE（查 OSV.dev），還會掃 MCP server、Claude Code、Codex、Cursor 的 settings、hooks 和 skills。有 Claude Code plugin 和 GitHub Action，可輸出 SARIF，適合拿來掃你那幾個 Vercel 專案。",
+      "tags": [
+        "security",
+        "claude code",
+        "mcp",
+        "ci",
+        "rust"
+      ],
+      "url": "https://github.com/erkamyaman/safe-anything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars&o=desc",
+      "stars": 432,
+      "createdDate": "2026-11-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "jackson-cmd/claude-multi-desktop",
+      "summary": "一支 bash script，在同一台 Mac 同時開多個 Claude Desktop 帳號：每個視窗各自登入、各有自己的對話和方案，但 Claude Code 共用同一個 ~/.claude（skills、CLAUDE.md、memory、MCP servers、hooks），一個帳號的 session 還能把工作丟給另一個帳號的 session。不修改 Claude.app。作者明講是給「個人帳號＋工作帳號」用的，不支援拿來繞過用量限制或共用帳號。",
+      "tags": [
+        "claude desktop",
+        "claude code",
+        "macos",
+        "multi-account"
+      ],
+      "url": "https://github.com/jackson-cmd/claude-multi-desktop",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars&o=desc",
+      "stars": 354,
+      "createdDate": "2026-11-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "rising-fast",
+      "title": "pritamux/gridlines",
+      "summary": "給 UI 做「對齊檢查」的 agent skill：在介面上畫垂直參考線，找出每個沒對齊的元素（sidebar、toolbar、選單、表格），再修 padding 讓它們共用少數幾條邊。附在頁面裡量文字／icon 實際邊界的 probe.js，和用 headless Chromium 截 2x 圖＋輸出 JSON 報告的 audit script；`/gridlines line up the settings sidebar` 這樣叫就行。",
+      "tags": [
+        "agent skill",
+        "ui polish",
+        "playwright",
+        "frontend"
+      ],
+      "url": "https://github.com/pritamux/gridlines",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars&o=desc",
+      "stars": 214,
+      "createdDate": "2026-11-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "worth-trying",
+      "title": "Echoxiawan/Astra",
+      "summary": "開源的 AI 手機 UI 自動化測試平台：用自然語言寫前置條件、操作和斷言，多模態 AI 搭配 Appium 在真的 Android／iOS 裝置上看畫面、找元素、執行。AI 跑成功一次後會匯出獨立的 pytest + Appium 腳本，之後每天回歸測試就不用再呼叫 AI；裝置、模型 endpoint、儲存都可自架。跟昨天 digest 的 mobile-agent-testers 是互補路線（一個探索、一個固化成腳本）。",
+      "tags": [
+        "mobile testing",
+        "appium",
+        "qa agent",
+        "pytest"
+      ],
+      "url": "https://github.com/Echoxiawan/Astra",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E20+topic%3Aai-agent&type=repositories&s=stars&o=desc",
+      "stars": 68,
+      "createdDate": "2026-11-18",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261124-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "OrrrGE/autoRecording",
+      "summary": "Claude Code／Codex skill（也能單獨當 Python pipeline 用）：寫一個 Python 分鏡檔說要展示什麼、講什麼，它用 Playwright 開 headless Chromium 操作你的 web app，render 成 1080p60、帶運鏡、聚光、字幕的 demo 影片。旁白可選本地 Qwen3-TTS（NVIDIA GPU，你的 5070 Ti 就能跑）、CPU 上的 Kokoro 或 ElevenLabs 等 API，支援十種語言，最後還用 whisper 轉錄回頭驗證字幕。才 23⭐，但做產品 demo 很對口。",
+      "tags": [
+        "claude code",
+        "demo video",
+        "tts",
+        "playwright",
+        "creator tools"
+      ],
+      "url": "https://github.com/OrrrGE/autoRecording",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E20+topic%3Atext-to-speech&type=repositories&s=stars&o=desc",
+      "stars": 23,
+      "createdDate": "2026-11-19",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "tuanpmt/vtts",
+      "summary": "跑在 ESP32 微控制器上的超小型 TTS：文字正規化、發音、int8 neural voice 和 vocoder 全在晶片上，不用雲、不用網路、不用 Linux，模型只佔 1.2–2.6 MB flash，在 ESP32-P4／S3 上比即時還快。每個 voice 是英文或「一種主要語言＋英文」，能唸中英混雜的句子；中文、日文、韓文等都有。程式碼和模型都是 Apache-2.0，網站有試聽。",
+      "tags": [
+        "tts",
+        "esp32",
+        "embedded audio",
+        "on-device"
+      ],
+      "url": "https://github.com/tuanpmt/vtts",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E20+topic%3Atext-to-speech&type=repositories&s=stars&o=desc",
+      "stars": 27,
+      "createdDate": "2026-11-15",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261124-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "AFK-surf/xnulinux",
+      "summary": "過去 14 天新 repo star 數前段班（4 天 1.7k⭐）。把 macOS 的開源 kernel XNU 從 Apple 公開原始碼編起來，當成 loadable kernel module（xnu.ko）塞進沒改過的 arm64 Linux kernel——沒有 hypervisor，macOS 和 Linux process 直接跑在同一組 CPU 上。README 展示在 stock Ubuntu 上 insmod 後開到 macOS 27 桌面（Finder、Safari、Chrome），也在 NVIDIA DGX Spark 上跑過。",
+      "tags": [
+        "xnu",
+        "linux kernel",
+        "macos",
+        "systems"
+      ],
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1709,
+      "createdDate": "2026-11-20"
+    },
+    {
+      "id": "20261124-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "os6/nospeaker",
+      "summary": "11/22 建立、兩天 1.3k⭐：MacBook 觸控板裡沒有喇叭，只有一顆讓你感覺「點擊」的 haptic 馬達；NO SPEAKER 以每秒最多 4,000 次驅動它，讓它發出聽得到的聲音——會講話、唱歌、rap，還能變成手指下的樂器（可用 --sweep 掃 100 Hz–4 kHz）。需要 Force Touch 觸控板、macOS 12+；有 Apple 公證的 release，也能自己 build。做音訊的人會覺得好玩。",
+      "tags": [
+        "haptics",
+        "audio synthesis",
+        "macos",
+        "creative coding"
+      ],
+      "url": "https://github.com/os6/nospeaker",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-10+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1290,
+      "createdDate": "2026-11-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "dream-num/univer",
+      "summary": "本週 GitHub Trending（全語言）漲最多：+6,436⭐／週，總計 31.4k⭐，11/21、11/23 連發 v1.6.0／v1.6.1。定位改成「在自己產品裡做 AI office」的 Office SDK：Apache-2.0 的 Web SDK 提供 Sheets、Docs 編輯、公式與 render 引擎和 Facade API，agent 跟人走同一套 API；Server SDK（協作、匯入匯出）和 AI SDK 是商業授權。生態裡有 Univer CLI，以及給 DeepSeek Harness、WorkBuddy、OpenClaw 的整合和 SDK skills。",
+      "tags": [
+        "office sdk",
+        "spreadsheet",
+        "agent integration",
+        "typescript"
+      ],
+      "url": "https://github.com/dream-num/univer",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 31430,
+      "createdDate": "2022-09-29",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261124-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "on-the-radar",
+      "title": "ag-ui-protocol/ag-ui",
+      "summary": "AG-UI 1.0 正式版：規格凍結、有 JSON Schema，TypeScript／Python／.NET SDK 都從 schema 產生，且與 0.x 雙向相容。它是把 agent 接到前端的開放事件協定——串流 token、中途呼叫 tool、共享 state、暫停等人、spawn subagent，都變成一條雙向 typed event stream，同一個 agent 可以接 web、手機、terminal 或 Slack。本週 Trending +3,620⭐，總計 21.4k⭐；`npx create-ag-ui-app@latest` 可直接起專案（CopilotKit 團隊維護）。",
+      "tags": [
+        "ag-ui",
+        "agent protocol",
+        "generative ui",
+        "copilotkit"
+      ],
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending/typescript?since=weekly",
+      "stars": 21357,
+      "createdDate": "2025-05-07",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "product-hunt",
+      "title": "Motionflare",
+      "summary": "11/23 PH 第 3 名（PT 當日進行中，208 upvotes）。貼上網址，它用你網站上真的產品截圖、logo、配色和文案，做成帶音樂、可加旁白的品牌 motion graphics 宣傳片；也可切到 Film mode 生成真人風格廣告。結果可用聊天微調，最高輸出 4K。",
+      "tags": [
+        "launch video",
+        "marketing",
+        "ai video"
+      ],
+      "url": "https://hunted.space/dashboard/motionflare",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/motionflare"
+    },
+    {
+      "id": "20261124-ts-015",
+      "radar": "tool-scout",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "product-hunt",
+      "title": "Polylane Swarms",
+      "summary": "11/23 PH 第 6 名（PT 當日進行中，117 upvotes）。把一群 agent 丟到大型 production incident 上：平行調查不同可能原因、彼此分享證據並互相查核，最後給你一個答案——root cause、證據和建議修法。官網說它串接你的 cloud、程式碼和 observability 工具，調查完會直接開 PR。",
+      "tags": [
+        "incident response",
+        "multi-agent",
+        "devops"
+      ],
+      "url": "https://hunted.space/dashboard/polylane",
+      "source": "Product Hunt",
+      "sourceUrl": "https://hunted.space/dashboard/polylane"
     }
   ],
-  "lastUpdated": "2026-11-24T03:39:12+08:00",
-  "updatedAt": "2026-11-24T03:39:12+08:00"
+  "lastUpdated": "2026-11-24T03:56:00+08:00",
+  "updatedAt": "2026-11-24T03:56:00+08:00"
 }
