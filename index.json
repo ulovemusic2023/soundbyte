@@ -126617,8 +126617,157 @@
       "url": "https://hunted.space/dashboard/polylane",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/polylane"
+    },
+    {
+      "id": "20261124-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "TikTok 正式推出 Likeness Detection 與手動 AI 偵測工具",
+      "summary": "TikTok 正式上線兩項 AI 偵測功能：其一讓創作者找出並申請移除「未經同意使用其肖像」的 AI 影片，另一項是給使用者的手動 AI 內容辨識工具。背景是業界對 AI slop 的反彈持續升溫，音樂圈也特別關注。",
+      "priority": "high",
+      "tags": [
+        "ai detection",
+        "likeness",
+        "deepfake",
+        "tiktok"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/23/tiktok-likeness-detection-release/"
+    },
+    {
+      "id": "20261124-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "Neutone Terra 搶先看：以地圖介面探索的 neural drum synthesis",
+      "summary": "Neutone 預告 Terra：用地圖式介面在連續的聲音空間中探索，涵蓋類比／數位鼓機、FM 音色、Foley、音效與其他打擊類質地，走 neural drum synthesis 路線。目前是 sneak preview。",
+      "priority": "high",
+      "tags": [
+        "neural audio",
+        "drum synthesis",
+        "neutone",
+        "ai audio"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/23/neutone-terra-explores-new-territory-in-neural-drum-synthesis-sneak-preview/"
+    },
+    {
+      "id": "20261124-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "sonicLAB 更新 SSNN：新增 Neural Buffer FM 與更多 network 控制",
+      "summary": "sonicLAB 的 SSNN 神經網路合成器更新，加入 Neural Buffer FM、額外 network 控制、四個獨立 voice 輸出，並改善合成處理與專案 recall。",
+      "priority": "medium",
+      "tags": [
+        "neural synth",
+        "fm synthesis",
+        "sonicLAB"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/23/soniclab-updates-ssnn-with-neural-buffer-fm-expanded-network-controls/"
+    },
+    {
+      "id": "20261124-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "《以撒的結合》開發者從 Repentance Plus 移除 AI 音樂",
+      "summary": "The Verge 報導：Binding of Isaac 的開發者已把 AI 生成音樂從 Repentance Plus 中移除。這也是遊戲音樂領域對 AI 音樂反彈的又一個案例（細節請見原文）。",
+      "priority": "medium",
+      "tags": [
+        "ai music",
+        "game audio",
+        "backlash"
+      ],
+      "source": "The Verge（經 Hacker News）",
+      "sourceUrl": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music"
+    },
+    {
+      "id": "20261124-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "Vengeance Sound Avenger 2 推出免費 2.5 更新：內建 TB-303 emulation 與 MIDI sequencer",
+      "summary": "Avenger 2 的 2.5 版是免費大更新，內建 TB-303 emulation、MIDI sequencer、新的效果器等。",
+      "priority": "medium",
+      "tags": [
+        "avenger",
+        "synth plugin",
+        "tb-303",
+        "sequencer"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/vengeance-sound-avenger-2-flagship-synthesizer-plugin-with-a-massive-feature-upgrade.html"
+    },
+    {
+      "id": "20261124-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "All The Machines 發表 UN/T-02：semi-modular FM drum machine plugin",
+      "summary": "UN/T-02 是 Windows／Mac 的 semi-modular FM 鼓機，6 個 FM 鼓聲、各有 4 種音色方向，幾乎任何東西都能 patch 到任何東西（甚至一個鼓 patch 到另一個鼓），並有 probability、ratchets 與 polymeter。承接近期的免費 UN/T-01。",
+      "priority": "medium",
+      "tags": [
+        "drum machine",
+        "fm synthesis",
+        "vst",
+        "polymeter"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/all-the-machines-releases-un-t-02-fm-drum-machine-plugin/"
+    },
+    {
+      "id": "20261124-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "Pine DSP 推出 Blox Grain granular 效果器，發表價 US$3",
+      "summary": "Blox Grain 把輸入音訊切成小 grains 再打散成雲狀。支援 macOS／Windows，VST3／AU／AAX，發表價 $3 USD 到 2026/12/07，之後恢復 $19。",
+      "priority": "low",
+      "tags": [
+        "granular",
+        "audio effects",
+        "vst3"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/pine-dsp-releases-blox-grain-granular-effect-plugin/"
+    },
+    {
+      "id": "20261124-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "sndstation：把便宜的遊戲掌機變成音樂掌機的 Linux distro",
+      "summary": "CDM 介紹 sndstation，一個讓廉價 gaming handheld 變身音樂掌機的 Linux 發行版，該文也上了 Hacker News。",
+      "priority": "low",
+      "tags": [
+        "open source",
+        "linux",
+        "handheld",
+        "music hardware"
+      ],
+      "source": "CDM（經 Hacker News）",
+      "sourceUrl": "https://cdm.link/sndstation-linux-distro-for-game-handhelds/"
+    },
+    {
+      "id": "20261124-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "title": "Impala 提出對抗串流詐騙的建議行動",
+      "summary": "獨立音樂組織 Impala 趁 International Fraud Awareness Week 發表看法，列出打擊音樂串流詐騙所需的行動。",
+      "priority": "low",
+      "tags": [
+        "streaming fraud",
+        "impala",
+        "industry"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/23/impala-outlines-action-it-would-like-to-see-on-streaming-fraud/"
     }
   ],
-  "lastUpdated": "2026-11-24T03:56:00+08:00",
-  "updatedAt": "2026-11-24T03:56:00+08:00"
+  "lastUpdated": "2026-11-24T04:10:00+08:00",
+  "updatedAt": "2026-11-24T04:10:00+08:00"
 }
