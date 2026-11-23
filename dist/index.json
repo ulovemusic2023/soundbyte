@@ -125733,8 +125733,222 @@
       "url": "https://hunted.space/dashboard/yoroll",
       "source": "Product Hunt",
       "sourceUrl": "https://hunted.space/dashboard/yoroll"
+    },
+    {
+      "id": "20261124-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Netflix QConSF：讓 AI coding agent 能安全出貨，真正的工作是文件——45 份「寫給人也寫給 agent」的 ADR、AGENTS.md 當 robots.txt、每個 domain 一張 GraphRAG",
+      "summary": "Netflix Commerce 團隊的 Mark Khuzam 分享：全員拿到 Claude Code 後，光叫 agent 搬測試就試了四次，因為文件找不到、寫法不一致（內部框架 NPS 只有 -3）。他們的解法是 context engineering：寫了 45 份 ADR，每份都有 context、決策、pattern／anti-pattern 和給 agent 的使用說明；AGENTS.md 扮演 robots.txt，引導 agent 找到 300 多份文件。跨服務的 context 試過載入所有 repo、git submodule、Git MCP 都不行，最後改成每個 domain 一張 GraphRAG，pin 在特定 commit、透過單一 MCP tool 提供給 Claude Code、Cursor、Codex、Slack bot 和 CI review 共用，每個答案都附檔案和行號。review agent 第一版在一個 PR 留了 23 則留言，現在只貼有證據、附修法和違反哪條 ADR 的 blocker；加上 revise label 就會讓 agent 推修正，但仍不 auto-merge。成果：某核心服務 2026 年零 Sev 1、PR 數年增 32%、開發者 NPS 從 -3 升到 +25。",
+      "tags": [
+        "paradigm-shift",
+        "context engineering",
+        "agent-readable ADR",
+        "AGENTS.md",
+        "GraphRAG",
+        "ai code review"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "QConSF keynote〈The Harness Is the New Operating System〉：model + harness = agent，context 像 virtual memory、tool interface 像 system call",
+      "summary": "Mad Labs 創辦人 Manju Rajashekhar 把 harness 的每一塊對應到 OS：context 是 virtual memory（「給 model 指標，不要整包」）、interface 是 system call（SWE-agent 論文裡 GPT-4 Turbo 用一般 shell 解 11.0%、用 agent 專用介面 18.0%）、execution 是 process 與權限（scoped credential，「instructions guide, boundaries enforce」）、feedback 是 return code（要分清「測試失敗」「跑不起來」「結果未知」）。他舉的數字：20 步、每步 95% 正確的任務整體只有 36% 成功，抓到 80% 錯誤就能拉到 82%；DeepSeek‑V4.1‑Flash 在八種 harness 下 DeepSWE 從 65.5% 到 74.2%，最精簡的 harness 反而最高。結論：agent 打轉時先換 harness、別急著換 model；人工 approve 是弱閘門，「累了的守門員就是橡皮圖章」。",
+      "tags": [
+        "paradigm-shift",
+        "agent harness",
+        "harness-as-OS",
+        "agent security",
+        "context engineering"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/harness-new-operating-system/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/harness-new-operating-system/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ZDR 從「相信合約」走向「可驗證」：Vercel AI Gateway 推 Audited ZDR，Anthropic 的 ZDR + Enterprise Frontier Safeguards 進入 public beta",
+      "summary": "接續 11/22–23 的 canary／OpenRouter 事件。Vercel 11/23 推出 Audited ZDR：provider 要找獨立資安公司審 serving path 的程式碼、基礎設施和實際流量（含 log、trace、crash dump、prompt cache、備份、support 工具），並公開報告才會被標記；KV cache 只能留在 volatile storage、標 ZDR 的請求不能 failover 到非 ZDR endpoint。首批 Baseten、Modal、Wafer 已開始受審，報告預計 12/8 前公開；AI Gateway 也開始定期跑 canary audit（在 prompt 塞專屬 URL，被存取就啟動調查）。同日 Anthropic 的 EFS 進 public beta：輸入輸出存進客戶自己的 S3／GCS、用自己的 key 加密，Anthropic 只跑自動化跨請求濫用偵測、產生不含內容的 Safety Case，沒有人工審閱、不拿來訓練；支援 Claude Platform、Bedrock、Google Cloud。",
+      "tags": [
+        "Audited ZDR",
+        "Zero Data Retention",
+        "AI supply chain",
+        "AI Gateway",
+        "Claude Platform"
+      ],
+      "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards",
+      "source": "Vercel Blog",
+      "sourceUrl": "https://vercel.com/blog/introducing-audited-zdr-on-ai-gateway",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Microsoft 實測 1,356 次：有文件的話，coding agent 用 RPC／POST-only API 跟 REST 一樣好；沒文件時 RPC 成功率 0%",
+      "summary": "Waldek Mastykarz 做了一個虛構的庫存 API（Binstock），用 REST、POST-only、RPC 三種風格提供，透過 GitHub Copilot SDK 讓 Claude Opus／Sonnet 5.5、GPT-6.1 Sol／Terra 等模型跑任務。給 OpenAPI 描述時三種風格成功率 100%／100%／99.7%、token 都約 70k，Haiku 5.5、MAI Code 2 Flash 也全過。只給 base URL 時差很大：Sonnet 5.5 在 REST／POST-only／RPC 分別 93%／40%／0%，GPT-6.1 Terra 97%／60%／0%；沒有模型猜得到 `/updateBin`，RPC 平均失敗 28 次後放棄。換算每個正確結果，REST 約 80k tokens、POST-only 約 230k。建議：README 連到 OpenAPI，考慮在根目錄或 404 body 列出可用操作。",
+      "tags": [
+        "agent-friendly API",
+        "ai coding",
+        "OpenAPI",
+        "api design"
+      ],
+      "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/",
+      "source": "Microsoft DevBlogs",
+      "sourceUrl": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenCode 2.4：agent 可以排程跑了——cron、計時器或 MCP 事件觸發 automations，加上內建桌面瀏覽器、可匯入 Chrome／Safari 登入",
+      "summary": "v2.4.0（11/23）重點：Automations 讓 agent 依計時器、cron 或 MCP server 送來的事件執行 prompt、script 或 shell 指令，用 `/automation` 管理，不要可設 `\"automations\": false`；桌面版內建瀏覽器，可匯入 Chrome、Edge、Firefox、Safari 的登入和歷史、裝 Chromium extension，agent 和你共用同一個 profile。也新增 `generate_video`、新 TUI 外觀。升級注意：image tool 改名後既有的「always allow」不會沿用、要再問一次；跟版本範圍的 plugin 會每 24 小時自動更新；Copilot 不再讀 `GITHUB_TOKEN`，要改用 `COPILOT_GITHUB_TOKEN`；MCP server 會先用新版 protocol 握手。",
+      "tags": [
+        "coding agent",
+        "automation",
+        "MCP",
+        "agent browser",
+        "opencode"
+      ],
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v2.4.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/anomalyco/opencode/releases/tag/v2.4.0",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "智譜 GLM-5.4：第一個 Loop Transformer 旗艦，750B 模型把 28 層跑兩次，主打「Generalized Coding」（HN 862 分）",
+      "summary": "Z.ai 沒從頭訓 looped model，而是把 GLM-5 base 的 28 層改成 weight-shared、跑兩輪，再接續訓練；官方說智力相當於 2T–3T 參數模型。工程上三個改動：每輪有 per-token gate 控制寫回 residual stream 的比例，避免 activation 爆掉；第二輪重用第一輪的 sparse KV，只另外留一個 sliding window，所以 1M context 下多一輪只多一個 window 的 KV；第二輪直接沿用第一輪的 sparse attention index。30B 對照實驗中，相同參數、約多 10% 訓練算力，數學、科學推理、長 context 進步最多，輸出長度少 10–14%。限制是容易陷入過長的「marathon thinking」。目前可在 GLM Coding Plan、ZCode、Z.ai Chat 用，API 即將推出，權重說完成安全強化後才開源；HN 有人抱怨沒附 benchmark 數字。",
+      "tags": [
+        "paradigm-shift",
+        "loop transformer",
+        "generalized coding",
+        "open model",
+        "GLM"
+      ],
+      "url": "https://z.ai/blog/glm-5.4",
+      "source": "Z.ai Blog",
+      "sourceUrl": "https://z.ai/blog/glm-5.4",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "DeepMind 用 Gemini 4 agent 團隊 + Lean 證明改良量子演算法：fusion 模擬成本降 11.8×、arcsin routine 快 290×",
+      "summary": "每個問題派好幾個獨立的 agent team 找改良，想法要先通過 Lean 驗證才能寫進共享筆記本，各隊每四小時開一次「虛擬研討會」交換想法。結果：慣性約束核融合的一個關鍵量子電路計算成本降 11.8×、error-corrected qubit 從 5,650 降到 4,338；某光敏分子模擬便宜 8×、Cytochrome P450 改良 2.5×；Grover 某實作快 2.57×、arcsin 快 290×。官方也說這些演算法目前仍超出第一代 error-corrected 量子電腦的資源。Lean library、問題規格和驗證過的解都開源。跟 11/22 的 Riemann Lean 證明同一條線：agent 搜尋 + 形式化驗證，人負責選題和詮釋。",
+      "tags": [
+        "formal verification",
+        "multi-agent",
+        "Lean",
+        "proof-checked agent search"
+      ],
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "source": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ladybird 進入 alpha：從零自寫引擎、不是 fork 的瀏覽器，macOS／Linux 可下載（HN 695 分）",
+      "summary": "Andreas Kling 宣布 Ladybird alpha 開放下載（macOS、Linux），是 rolling channel、會自動更新；目前會有網站壞、偶爾 crash，可在瀏覽器裡回報，安全性「今天不做任何保證」、歡迎資安研究者來打。對 web 開發者：支援 WebDriver 自動化測試和 Firefox DevTools protocol，官方請大家用它測自己的網站、回報壞掉的地方。",
+      "tags": [
+        "browser engine",
+        "web platform",
+        "open source"
+      ],
+      "url": "https://ladybird.org/posts/alpha/",
+      "source": "Ladybird",
+      "sourceUrl": "https://ladybird.org/posts/alpha/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Gentoo 開發者〈The next circle of security hell〉：人人和他的 chatbot 都成了資安研究員，維護者被漏洞回報淹沒",
+      "summary": "Michał Górny 寫：漏洞回報量前所未見，bug bounty 幾乎都因 slop 停掉了，但回報沒停；就算排除純垃圾，剩下的 ReDoS 之類「效能 bug」算不算漏洞要看使用情境，可是 CVE 和高分數往往已經先掛上，scanner 照樣報警，他甚至得為不影響 Gentoo 的漏洞做無意義的版本升級。多數專案沒有 LTS 或 security branch，安全修補常和新功能、API 變更綁在一起，下游被迫跟著大改。他擔心最後變成「every chatbot for itself」。文章 10/27 發的，11/23 才上 HN（181 分）。",
+      "tags": [
+        "open source maintenance",
+        "AI slop",
+        "vulnerability triage",
+        "supply chain"
+      ],
+      "url": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/",
+      "source": "Michał Górny（Gentoo）",
+      "sourceUrl": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Docker 換品牌「Built to Run on Trust」：「agent 不是 workload，是 actor」，重心從 container 轉向 agent 隔離與治理（HN 192 則留言）",
+      "summary": "Docker CMO Terri Avnaim 的新品牌文：container 不會消失，但「containers weren't designed for agents」——agent 會自己決定跑什麼、碰什麼、改什麼，需要專門的隔離和治理；新 Docker 主打三層 trust：讓 agent 拿來 build 的可信 supply chain、隔離 agent 的 runtime、涵蓋各層的治理生態系，實際產品指向 Docker Sandboxes 和 Docker AI Governance；Moby 鯨魚也重新設計。文章是 11/19 發的，11/23 在 HN 引發 192 則留言的討論。",
+      "tags": [
+        "agent sandbox",
+        "Docker",
+        "agent governance"
+      ],
+      "url": "https://www.docker.com/blog/meet-the-new-docker-built-to-run-on-trust/",
+      "source": "Docker Blog",
+      "sourceUrl": "https://www.docker.com/blog/meet-the-new-docker-built-to-run-on-trust/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-23T04:00:31+08:00",
-  "updatedAt": "2026-11-23T04:00:31+08:00"
+  "lastUpdated": "2026-11-24T03:07:30+08:00",
+  "updatedAt": "2026-11-24T03:07:30+08:00"
 }

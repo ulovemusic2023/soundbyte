@@ -125935,7 +125935,7 @@
       "cycle": "morning",
       "priority": "low",
       "title": "Docker 換品牌「Built to Run on Trust」：「agent 不是 workload，是 actor」，重心從 container 轉向 agent 隔離與治理（HN 192 則留言）",
-      "summary": "Docker CMO Terri Avnaim 的新品牌文：container 不會消失，但「containers weren't designed for agents」——agent 會自己決定跑什麼、碰什麼、改什麼，需要專門的隔離和治理；新 Docker 主打三層 trust：supply chain（Hardened Images）、runtime（Docker Sandboxes）、生態系治理（Docker AI Governance），Moby 鯨魚也重新設計。文章是 11/19 發的，11/23 在 HN 引發 192 則留言的討論。",
+      "summary": "Docker CMO Terri Avnaim 的新品牌文：container 不會消失，但「containers weren't designed for agents」——agent 會自己決定跑什麼、碰什麼、改什麼，需要專門的隔離和治理；新 Docker 主打三層 trust：讓 agent 拿來 build 的可信 supply chain、隔離 agent 的 runtime、涵蓋各層的治理生態系，實際產品指向 Docker Sandboxes 和 Docker AI Governance；Moby 鯨魚也重新設計。文章是 11/19 發的，11/23 在 HN 引發 192 則留言的討論。",
       "tags": [
         "agent sandbox",
         "Docker",
