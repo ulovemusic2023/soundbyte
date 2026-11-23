@@ -126141,8 +126141,175 @@
       "price": null,
       "vram": "n/a",
       "license": "n/a"
+    },
+    {
+      "id": "20261124-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "operational",
+      "title": "Atlassian 把團隊全改成「AI builder」，一個月後所有人回到原本角色——「Throughput’s not our problem. Direction’s our problem.」",
+      "summary": "Lenny 訪談 Atlassian Head of AI + Product Craft Sherif Mansour：Atlassian 試過取消 PM 和設計師角色、讓每個人都當「AI builder」，頭幾週大家說「We’ve moved faster than ever before.」，一個月後所有人都回到原本的工作。一位 PM 的解釋是：「Throughput’s not our problem. Direction’s our problem.」Sherif 的觀點是 product 角色不會合併，而是每個角色的範圍都在變大；Atlassian 也正在招比以往更多的 junior。給做 AI 導入顧問的人一個框架：AI 解決的是產能，組織真正缺的通常是方向——這段話很適合直接拿去跟客戶溝通。",
+      "tags": [
+        "ai-adoption",
+        "product-management",
+        "org-design",
+        "direction-over-throughput"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to",
+      "source": "Lenny's Podcast（X @lennysan）",
+      "sourceUrl": "https://x.com/lennysan/status/2124880663149002996",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Kevin Kelly：Slop 會變成一種「風格」，就像動畫從廉價替代品變成酷的表現形式",
+      "summary": "KK 把 slop 定義為「anything inferior produced by AI」，但他認為 slop 正在擺脫貶義：把一篇科學論文丟給 agent 做成音樂 MV，需要科學、作曲、作詞、編舞、攝影五種專業，很少有人類做得到，也沒人願意為這麼無聊的理由去做。他用動畫的歷史類比：動畫一開始是真人電影的廉價模仿，後來發展出自己的「accent」，反而成了酷的象徵；slop 也會變成一種被接受的風格，甚至可能變好看（他取名叫「sloporific」）。對做音樂和內容的人：與其糾結「看起來像不像 AI」，不如思考一個人加上 AI 能做出什麼以前沒人做得出來的作品。",
+      "tags": [
+        "ai-content",
+        "creativity",
+        "slop-style",
+        "music-video"
+      ],
+      "url": "https://kk.org/thetechnium/slop-style/",
+      "source": "The Technium",
+      "sourceUrl": "https://kk.org/thetechnium/slop-style/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Sahil Bloom 選擇新機會的兩個問題：你喜歡「贏的版本」嗎？你願意長期做「輸的版本」嗎？",
+      "summary": "第一個問題：如果爬到山頂，你會喜歡那裡的風景嗎？如果你不喜歡坐在角落辦公室那個人的生活，就該在花 20 年拼命爭取它之前先想清楚。第二個問題：任何有意義的事都比你想的花更久，你有沒有足夠的熱情，把輸的版本撐到贏的版本出現？他說登頂的人都有一個共同點：「They loved the mud.」兩題都回答 Yes 才值得投入，否則就該 pass。很適合拿來評估要接哪個顧問案、開哪條新產品線、還是把 podcast 持續做下去。",
+      "tags": [
+        "decision-making",
+        "career",
+        "love-the-mud",
+        "opportunity-cost"
+      ],
+      "url": "https://x.com/SahilBloom/status/2124650045328732332",
+      "source": "X @SahilBloom",
+      "sourceUrl": "https://x.com/SahilBloom/status/2124650045328732332",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "PostHog：別再問使用者想要什麼——從上千小時真實訪談整理出真正有用的訪談問題",
+      "summary": "開頭就講結論：「If you ask users what they want, they will tell you what they think they want.」使用者花在思考這件事的時間不如你多，所以不知道自己真正需要什麼，搞清楚這件事是你的工作。PostHog 認為在 AI 寫掉大部分 code 的時代，product engineer 更應該花時間跟使用者聊。實用的問法：「Can you tell me about the last time you used this?」（問具體的上一次，不問籠統看法）、問使用前後在做什麼、聽到「some/most」就請對方估個百分比、遇到 hate/love 這類強烈字眼一定追問。避免問「What do you think about this product?」，只會得到空泛的稱讚。",
+      "tags": [
+        "customer-discovery",
+        "user-interviews",
+        "pmf",
+        "product-engineer"
+      ],
+      "url": "https://newsletter.posthog.com/p/user-interviews",
+      "source": "PostHog Newsletter",
+      "sourceUrl": "https://newsletter.posthog.com/p/user-interviews",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Jensen Huang 復職 Nvidia CEO，Brian Chesky 解釋 founder 為何難以取代：他們同時也是 CPO",
+      "summary": "Nvidia 董事會一致投票恢復 Jensen Huang 的 President、CEO 及董事職務，董事長 Harvey C. Jones 說「Jensen is the right person to lead NVIDIA」，針對外國情報事件的獨立調查會繼續進行；HN 上兩則相關討論分別拿到 1,692 和 1,287 分，後者有 2,400+ 則留言。上週 Tobi、PG 和 Nadella 都在爭論 founder 到底能不能被取代，這個結果之前 Chesky 發文（9k+ likes）給了一個具體框架：founder CEO 實際上也是 chief product officer，熟悉產品怎麼做出來、能把整個產品裝在腦子裡，也有願景和權力去重新發明它；「When they leave, the CEO role gets filled, but the product role they played rarely does.」帶走的觀點：評估接班或交接時，要看隱形的產品角色有沒有人接手，而不只是 CEO 這個職位。",
+      "tags": [
+        "founder-mode",
+        "founder-as-cpo",
+        "succession",
+        "governance"
+      ],
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "source": "NVIDIA Newsroom + X @bchesky",
+      "sourceUrl": "https://x.com/bchesky/status/2124660300075225464",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "mental-model",
+      "title": "Tim O'Reilly〈What Happened to Silicon Valley?〉：從「rising tide rents」走向「robber baron rents」幾乎是科技業的定律",
+      "summary": "O'Reilly 用 $500 創業、不拿 VC，靠客戶付費做到每年數億美元的獲利營收，公司原則是「Create more value than you capture.」他用經濟租金解釋矽谷為什麼從被愛變成被恨：創新期的 rising tide rents 帶動整個生態成長；市場成長放緩後，巨頭會轉向靠權力不對等收取的 robber baron rents。他說這種轉變「close to a law of the technology business cycle」，問題出在 incentives，不在人變壞。他看好 MCP 這類開放協定讓 agentic web 走向參與式經濟，AI 應該是像繪畫、寫作那樣的媒介，而不是取代人。HN 787 分、433 則留言。",
+      "tags": [
+        "value-creation",
+        "rising-tide-rents",
+        "open-protocols",
+        "incentives"
+      ],
+      "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
+      "source": "O'Reilly Radar",
+      "sourceUrl": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "playbook",
+      "title": "Daniel Sada：假設讀者對你的文章沒興趣——第一句就告訴他們這篇是寫給誰的",
+      "summary": "他在 Snowflake 學到一個習慣：email 第一句寫「If you’re not part of the finance org, you can stop reading.」，讓不相關的人直接跳過；Slack 討論串也先寫 3–5 行的介紹，細節放進 thread。他的核心主張是「You need to be subservient to your audience.」，寫 2,000 字卻跟多數人無關，是在浪費讀者的眼睛。HN 307 分、149 則留言。用在 Threads、電子報或給客戶的提案：開頭先篩選讀者，反而更能留住真正的受眾。",
+      "tags": [
+        "writing",
+        "content-strategy",
+        "audience-first",
+        "communication"
+      ],
+      "url": "https://danielsada.tech/blog/assume-people-are-not-interested-in-your-blog-post/",
+      "source": "danielsada.tech",
+      "sourceUrl": "https://danielsada.tech/blog/assume-people-are-not-interested-in-your-blog-post/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261124-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-24",
+      "cycle": "tuesday",
+      "priority": "quotable",
+      "title": "Paul Graham：令人不舒服的真話特別有價值，因為還沒被探索過",
+      "summary": "\"Unpalatable truths tend to be especially valuable, because they're comparatively unexplored.\" — Paul Graham。大多數人遇到可能是真的但很難接受的說法，第一反應是排斥甚至攻擊；PG 認為這時應該更好奇（1.5k+ likes）。",
+      "tags": [
+        "contrarian",
+        "curiosity",
+        "truth-seeking"
+      ],
+      "url": "https://x.com/paulg/status/2124834732303327654",
+      "source": "X @paulg",
+      "sourceUrl": "https://x.com/paulg/status/2124834732303327654",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-24T03:32:45+08:00",
-  "updatedAt": "2026-11-24T03:32:45+08:00"
+  "lastUpdated": "2026-11-24T03:39:12+08:00",
+  "updatedAt": "2026-11-24T03:39:12+08:00"
 }
