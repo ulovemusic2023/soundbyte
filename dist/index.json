@@ -125947,8 +125947,202 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261124-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Strata v0.2.19 → v0.2.20：原生支援 Inkling 2 Mini，SQ-15 量化包 14.35GB 整顆放進 16GB 卡，0.2.20 再加 GPU＋RAM＋CPU＋SSD 四層 MoE 執行",
+      "summary": "0.2.19（11/22）加入 strata-inkling 引擎和三種 Strata Quantization 包：SQ-10（10.47GB，12GiB 卡全進 VRAM）、SQ-15（14.35GB，16GiB 卡全進 VRAM，官方稱 top-1 吻合 96.68%、KL 0.00889）、SQ-20（19.35GB，bit-exact 無損，給 24GiB+）；內建 DSpark speculative decoding。0.2.20（11/23）把 Qwen3.8-Flash-Next、HY-4 Flash、Inkling 2 Mini 統一成 GPU＋RAM＋CPU＋SSD 四層 MoE 規劃（4GiB 卡也能跑），可直接吃 Unsloth GGUF，並修 NVFP4 亂碼和 24K–45K 長 prompt 出 NaN。X 上有日本使用者用 SQ-15 實測生成中位數 53.3 tok/s（約 llama.cpp Vulkan 的兩倍），但評測有 4 成以錯誤中斷——上工前先自己跑一輪。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "speculative decoding",
+        "MoE offload",
+        "Inkling 2 Mini"
+      ],
+      "url": "https://github.com/Niko1221/Strata/releases/tag/v0.2.20",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/Niko1221/Strata/releases/tag/v0.2.20",
+      "price": null,
+      "vram": "SQ-15 14.35GB 官方標示 16GiB 卡可全進 VRAM",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #15550：llama-quantize 新增 --target-size／--target-bpw，自動配出剛好塞滿 VRAM 的 per-tensor 量化組合",
+      "summary": "開了 15 個月的 PR，11/24 凌晨（Taipei）合併（作者 EAddario）。用 imatrix 抽樣估每個 tensor 在各種量化格式下的誤差，取 Pareto frontier 後用 Lagrangian 最佳化在總大小預算內分配 bit，產出幾乎剛好等於指定大小的 GGUF（例如 --target-size 15g）。作者在 34 個模型、238 組測試中 93% 的 KLD 打平或優於標準量化；代價是量化慢 5–10 倍（--state-file 可中斷續跑、之後重用），而且需要含 activation 資料的新版 imatrix。對 16GB 卡來說，不必再只能在 Q3 和 Q4 之間二選一。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "imatrix",
+        "target-bpw"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/15550",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/15550",
+      "price": null,
+      "vram": "量化工具本身；可直接指定剛好塞進 16GB 的檔案大小",
+      "license": "MIT"
+    },
+    {
+      "id": "20261124-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "NariQ：Qwen3.8-27B 3-bit GGUF 只有 10.1GB，官方稱 long-horizon agent 任務追平 BF16（需自家 llama.cpp fork）",
+      "summary": "Nari Labs 的 trellis-coded PTQ（建立在 QTIP 上），用真實 coding-agent trace 校準，出 3／2.5／2 bpw 三版。官方表格：3-bit（10.1GB）DeepSWE 41.0 對 BF16 39.8、Terminal-Bench 2.1 63.8 對 62.6；2-bit（6.8GB）明顯掉分。限制寫得很清楚：只能用他們的 llama.cpp fork（stock llama.cpp／Ollama／LM Studio 讀不了），fork 目前針對 SM120（RTX PRO 6000）調校，GeForce 尚未測試，KV cache 仍是 BF16——官方說要等下一步 KV 量化，16GB 卡才塞得下長 context。HN 30 分。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "Qwen3.8-27B",
+        "coding agent"
+      ],
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "source": "Hugging Face／Hacker News",
+      "sourceUrl": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "price": null,
+      "vram": "權重 10.1GB（+0.93GB mmproj）放得進 16GB；KV 仍 BF16，context 受限，GeForce 未測",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261124-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Kolibri 1.1（Aleph Alpha）：75B MoE、每 token 只開 3.44B，Apache-2.0，官方 GGUF＋vLLM，262K context",
+      "summary": "11/23 發布，從 Kolibri 1 續訓，加入 sparse attention（sliding-window 和 sparse attention 4:1），native 262K context（最長 1M），德英雙語，有 reasoning mode 和 tool calling。官方 GGUF 從 IQ1_M（16GB）、IQ2_XXS（18GB）、Q3_K_M（35GB）到 Q4_K_M（45GB）。官方硬體建議 2×H100 起跳；在 16GB＋64GB RAM 上只能靠 MoE expert offload 到系統 RAM（我們沒有實測）。Aleph Alpha 是 EU GPAI Code of Practice 簽署方，模型卡附完整訓練資料摘要，顧問案談歐洲合規時可當案例。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "vllm",
+        "MoE",
+        "sparse attention"
+      ],
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1-GGUF",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+      "price": null,
+      "vram": "官方 GGUF 最小 16GB（IQ1_M），Q3_K_M 35GB；需 expert offload 到 RAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261124-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Unsloth v0.1.923-beta：Inkling 2 Mini 在 8–12GB 卡放更多層上 GPU、speculative decoding 預設開，AsyncGRPO 每步省 29–40%",
+      "summary": "Inkling 2 Mini：8／12GB 卡的 Auto 會把更多權重放上 GPU（回覆最多快 1.19 倍）；experts 全放得進 GPU 時 prompt 處理最多快 1.9 倍；speculative decoding 預設 draft 2 tokens（快 1.15–1.19 倍）；修好「載入正常、跑到一半 OOM」。訓練：AsyncGRPO 開 fast_inference 時改成在記憶體裡把 adapter 交給 vLLM，每步省 29–40%；MoE 訓練開 gradient checkpointing 最多漏 14GiB 的問題修掉。另外支援 NVIDIA 的 4-step Qwen-Image-Flash（比 Qwen-Image 預設快約 14 倍），每個 project 可以掛自己的一組 MCP servers。",
+      "tags": [
+        "llm_inference",
+        "llm_training",
+        "speculative decoding",
+        "GRPO",
+        "MCP"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.923-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.923-beta",
+      "price": null,
+      "vram": "Inkling 2 Mini 針對 8–12GB 卡優化，16GB 更寬裕",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261124-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vLLM 宣布棄用 TorchAO 量化 backend：v0.36 起警告、v0.37 移除",
+      "summary": "PR #69066 11/24 凌晨（Taipei）合併：quantization=\"torchao\" 會印 deprecation warning，文件改指向 online quantization 或 compressed-tensors、GPTQ、AWQ、FP8 checkpoint，其他行為不變（追蹤 issue #69030）。如果你或客戶的 vLLM 部署用 torchao 的 int4／int8，現在就該排遷移，別等 v0.37 升級時才炸。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "quantization",
+        "awq",
+        "gptq"
+      ],
+      "url": "https://github.com/vllm-project/vllm/pull/69066",
+      "source": "GitHub PR",
+      "sourceUrl": "https://github.com/vllm-project/vllm/pull/69066",
+      "price": null,
+      "vram": "n/a",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261124-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "〈A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth〉：16GB 那一列直接點名 RTX 5070 Ti（HN 706 分、282 則留言）",
+      "summary": "GPU Partner 的入門文：Windows＋Unsloth Desktop、選一個放得進 VRAM 的量化模型、設 context、開 LAN 讓全家共用；作者用 RTX 5090 跑 Qwen3.8-27B 4-bit。16GB 那一列（明列 RTX 5070 Ti）建議 Qwen3-14B、gpt-oss-20b、Gemma 4 26B、Qwen3-Coder-30B、Qwen3.6-35B、Inkling 2 Mini，用 Q4_K_M／Q5_K_M、16K–32K context；Inkling 2 Mini 3-bit 約 13–15GB，可整顆放進 16GB。可以拿來當客戶「本地 AI 入門」教材的參考。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "gguf",
+        "Unsloth Desktop",
+        "local AI"
+      ],
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "source": "Hacker News",
+      "sourceUrl": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "price": null,
+      "vram": "文中 16GB 列明列 RTX 5070 Ti",
+      "license": "n/a"
+    },
+    {
+      "id": "20261124-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "NVIDIA 董事會讓 Jensen Huang 回任 CEO：稱已聽取美國政府高層意見、無國安風險（HN 1,691 分；CNBC 討論串 2,395 則留言）",
+      "summary": "NVIDIA 11/23 新聞稿：董事會一致通過，Jensen 即刻回任 President／CEO 和董事；董事會說決定過程有聽取美國政府高層意見，認為回任沒有國安風險。針對他是外國情報行動目標的報導，獨立董事委員會的調查會繼續進行；另成立只由獨立董事組成的 National Security and Export Control Committee，並開始找新設的 Chief Compliance Officer。代理 CEO 期間由 CFO Colette Kress 兼任，Harvey Jones 續任董事長。",
+      "tags": [
+        "infra_runtime",
+        "NVIDIA",
+        "export control"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50611588",
+      "source": "NVIDIA Newsroom／Hacker News",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
+    },
+    {
+      "id": "20261124-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-24",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Yann LeCun 槓上 Dario Amodei：「誇大危險，是為了讓 open models 變違法、由他掌控」（X 約 2.08 萬讚、HN 130 分）",
+      "summary": "LeCun 11/23 凌晨（Taipei）在 X 回覆一則談 Amodei 對開源 AI 風險說法的貼文：Dario 從 GPT-2 起就在炒作危險，目的是讓 open models 被禁、自己保有控制權，還把它比喻成鄂圖曼帝國禁止阿拉伯文印刷術、稱之為「新形式的中世紀蒙昧主義」。貼文約 2.08 萬讚、128 萬次曝光；HN 130 分、57 則留言。open-weight 監管風向會直接影響本地部署方案的長期可行性，顧問對話裡值得追。",
+      "tags": [
+        "open-weight policy",
+        "Anthropic",
+        "LeCun"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50615308",
+      "source": "X／Hacker News",
+      "sourceUrl": "https://x.com/ylecun/status/2124550037912920090",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
     }
   ],
-  "lastUpdated": "2026-11-24T03:07:30+08:00",
-  "updatedAt": "2026-11-24T03:07:30+08:00"
+  "lastUpdated": "2026-11-24T03:32:45+08:00",
+  "updatedAt": "2026-11-24T03:32:45+08:00"
 }
