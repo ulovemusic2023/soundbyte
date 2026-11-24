@@ -127021,8 +127021,225 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261125-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #31669：GDN 改用 replay 取代 rollback，speculative decoding 的 recurrent state 記憶體省 73–91%",
+      "summary": "11/24 07:06（台北時間）合併進 master。Qwen3.5／3.8 這類 Gated DeltaNet（GDN）混合架構做 speculative decoding 時，以前要替每個 draft 位置存一份 recurrent state snapshot，現在改成驗證後再 replay。作者在 RTX PRO 6000 用 Qwen3.8-27B Q8_0 實測：n_rs_seq 3 時每個 sequence 從 598.5 MiB 降到 163.2 MiB（−73%），n_rs_seq 15 時從 2,394 MiB 降到 203.9 MiB（−91%）。單一 sequence 速度持平；多 slot 的 llama-server 快 2–8%，batched verify 在 32 個 sequence 時最多快 34.5%。CUDA、Vulkan、Metal、OpenCL、WebGPU 都已實作，SYCL 還沒有。16GB 卡跑 27B＋DFlash2 時，省下的 VRAM 可以拿去放 context。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "Gated DeltaNet",
+        "Qwen3.8-27B",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31669",
+      "source": "GitHub PRs (llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/31669",
+      "price": null,
+      "vram": "runtime 本身不吃額外 VRAM；27B 量化版 16GB 可跑，省下 recurrent state 記憶體",
+      "license": "MIT"
+    },
+    {
+      "id": "20261125-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Strata v0.2.21：Inkling 2 Mini 在小卡大提速，RTX 5070 12GB 跑 SQ-10 從 12.5 拉到 68 tok/s",
+      "summary": "11/24 18:10（台北時間）釋出，三個引擎家族都更新到 0.1.67。官方對比 0.2.20：RTX 5070 12GB 跑 SQ-10 從 12.5 變 68 tok/s，RTX 3060 Ti 8GB 從 11 變 43 tok/s，RTX 4090 在 32K prompt 後從 29 變 92 tok/s；agent 對話會重用 prompt，不再每輪重讀。DSpark drafter 可以搭 Unsloth 重新上傳的 GGUF；單一請求會被送到有 drafter 的 slot，code 約快 2 倍。另外修了長對話 crash，引擎連續 crash 三次就停下並說明原因。官方沒有列 5070 Ti 的數字，昨天報過的 SQ-15（14.35GB）建議自己跑一輪 benchmark 再用。注意：新設定第一次啟動會多花約 3 分鐘測 drafter。",
+      "tags": [
+        "llm_inference",
+        "MoE offload",
+        "speculative decoding",
+        "Inkling 2 Mini",
+        "DSpark"
+      ],
+      "url": "https://github.com/Niko1221/Strata/releases/tag/v0.2.21",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/Niko1221/Strata/releases/tag/v0.2.21",
+      "price": null,
+      "vram": "SQ-10 給 12GB 卡、SQ-15 給 16GB 卡",
+      "license": "MIT"
+    },
+    {
+      "id": "20261125-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Drama-3-Japanese GGUF（speech.cpp／audio.cpp）：日文 zero-shot voice cloning，small IQ3_XXS 約 9.3GB，16GB 卡可全放 GPU",
+      "summary": "社群把 Aratako/Drama-3-Japanese 做成 imatrix 校準的 GGUF，給 speech.cpp（v0.11.2+）和 audio.cpp 跑本地日文 TTS 和 zero-shot voice cloning，輸出 44.1kHz。完整的 35B-A3B Q4_K 是 20.82 GiB，要大約 23GB 空 VRAM；small IQ3_XXS 是 9.09–9.28 GiB，卡片標示需要約 11.5 GiB 空 VRAM、適合 16–24GB GPU（speech.cpp 走 CUDA 要加 fast patch）。11/23 上架，兩天下載 4,458 次。授權是 Fish Audio Community License，商用前要先讀條款。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "voice cloning",
+        "gguf",
+        "speech.cpp",
+        "audio.cpp"
+      ],
+      "url": "https://huggingface.co/StudioYebisu-ship-it/Drama-3-Japanese-speech-cpp-gguf",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/StudioYebisu-ship-it/Drama-3-Japanese-speech-cpp-gguf",
+      "price": null,
+      "vram": "small IQ3_XXS 約 11.5GiB 空 VRAM；Q4_K 約 23GiB",
+      "license": "Fish Audio Community License 1.0"
+    },
+    {
+      "id": "20261125-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Reverb-TTS 登上 Open TTS Leaderboard：297M 參數，英文 voice cloning 排第 1，14 個排名中 13 個最快（但 CC-BY-NC）",
+      "summary": "Software Mansion 把 OmniVoice（613M）剪枝並蒸餾成 297M，再用 7 種語言重訓、跑多輪 DPO。3–20 秒參考音加逐字稿就能 zero-shot 複製音色。11/24 官方 X 帖說它在 Open TTS Leaderboard 拿下英文 voice cloning、德文、義大利文第 1，14 個速度排名有 13 個最快。官方數字：RTX 5090 batch 32 跑 164.9 倍即時速度，iPhone 17 也有 20.6 倍；提供 int8／int4 和 ExecuTorch。沒有中文。權重是 CC-BY-NC-4.0，不能商用。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "voice cloning",
+        "zero-shot tts",
+        "OmniVoice"
+      ],
+      "url": "https://huggingface.co/software-mansion/Reverb-TTS",
+      "source": "X @swmansion_ai",
+      "sourceUrl": "https://x.com/swmansion_ai/status/2125194318080286870",
+      "price": null,
+      "vram": "297M 參數，手機都能跑",
+      "license": "CC-BY-NC-4.0（權重）／Apache-2.0（程式碼）"
+    },
+    {
+      "id": "20261125-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ARRANGE（arXiv）：用 agent skills 在自己的鋼琴錄音上疊歌聲，背後是 SoulX-Singer＋Seed-VC",
+      "summary": "作者不讓模型一次生出整首歌，而是保留作曲者自己的鋼琴錄音，把「加一軌人聲」拆成 Listen → Play the Line → Fit → Sing → Mix 幾個 Agent Skills。每一步都會輸出看得懂的譜（音符、歌詞、發音），並停在作曲者批准的 checkpoint。改稿要求會被轉成有型別檢查的 typed edits，例如 `shift_entry(layer=\"strings\", by_bars=2)`。在 16 個改稿要求、5 個 LLM 的測試中，typed edits 的正確率是 0.83–0.98，整份計畫重寫只有 0.33–0.69。底層用的是 SoulX-Singer（歌聲合成）、Seed-VC（voice conversion）和鋼琴轉譜，skills 已用 Agent Skills 格式開源。作者自己說明：這是互動架構，不是新的歌聲模型。",
+      "tags": [
+        "audio_music_ai",
+        "svc_voice",
+        "seed-vc",
+        "singing voice synthesis",
+        "agent skills"
+      ],
+      "url": "https://github.com/htansetiawan/ARRANGE",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.29283",
+      "price": null,
+      "vram": "音訊模型（SoulX-Singer／Seed-VC）估計 16GB 內可跑；LLM 可走 Claude 或自架 vLLM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261125-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Unsloth v0.1.924-beta：Inkling 2 Mini 可以 LoRA／QLoRA fine-tune，快 1.8–3.1 倍、省 50% VRAM，還能匯出 GGUF",
+      "summary": "11/24 22:38（台北時間）釋出。Inkling 2 Mini 支援 LoRA／QLoRA（含 vision layers），可以匯出 merged 16-bit 或 GGUF。官方說 Kaggle 免費的 2×T4 能練，每步約 26 秒，但單張 15GB T4 放不下，所以單張 16GB 卡大概也不夠。練好的模型匯出 q4_k_m GGUF 是 17.5GB，匯出過程要約 150GB 磁碟空間。其他更新：修正 Inkling 2 Mini max context 設錯（推理快 2–3 倍）、8GB VRAM＋16GB RAM 的筆電聊幾輪就卡死的問題，以及 `adamw_8bit` 每步最多快 12%。",
+      "tags": [
+        "llm_training",
+        "LoRA",
+        "QLoRA",
+        "Inkling 2 Mini",
+        "gguf"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.924-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.924-beta",
+      "price": null,
+      "vram": "訓練要 2×T4（約 30GB）；匯出的 q4_k_m 推理 17.5GB 需要 offload",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261125-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SenseNova-U1.6-8B-MoT：8B 圖像理解＋生成模型，會先檢查自己畫錯的字再重畫，ComfyUI 原生支援",
+      "summary": "商湯 11/24 正式發布 U1.6，主打人像、海報、插畫的美感，以及 native self-correction：先畫一版 infographic，對照 prompt 列出要修的地方（含 box 座標），再重畫打錯的字。另外有 4-step／8-step 蒸餾 LoRA，ComfyUI 原生節點可以直接用。官方 balanced 設定建議 24GB VRAM＋64GB RAM，但也提供 FP8／INT8 W8A8 和 GGUF（Q4_0／Q6_K／Q8_0），5070 Ti 用量化版應該跑得動。",
+      "tags": [
+        "image_gen",
+        "ComfyUI",
+        "gguf",
+        "self-correction"
+      ],
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-GGUF",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "price": null,
+      "vram": "BF16 balanced 建議 24GB；FP8／GGUF 量化後 16GB 可行",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261125-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tidal 宣布 12/9 起下架所有完全由 AI 生成的音樂，成為第一個全面禁 AI 歌的串流平台（HN 287 分、257 則留言）",
+      "summary": "Variety 報導（11/24）：Block 旗下的 Tidal 從 12/9 開始移除被判定為「完全 AI 生成」的歌，年初前清完。Tidal 負責人 Robert Andersen 說，過去 90 天送來的歌有 43% 被偵測為 AI 生成，96% 的 AI 歌零播放。這次會清掉約 2,900 萬首，之後每天拒收 8–8.5 萬首。五個月前 Tidal 只是停止 AI 歌的分潤並要求標示。Spotify 和 Apple Music 目前還是以標示為主。對做 AI 輔助創作的人來說，「AI-assisted」和「wholly AI-generated」的界線會越來越重要。",
+      "tags": [
+        "audio_music_ai",
+        "AI music policy",
+        "streaming"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50630309",
+      "source": "Variety／Hacker News",
+      "sourceUrl": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
+    },
+    {
+      "id": "20261125-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "百度開源 ERNIE 5.5 Flash Preview：280B MoE（14B active）、1M context、Apache-2.0，vLLM／SGLang 可部署",
+      "summary": "這是 ERNIE 5.5 Flash Base 的第一個 post-trained checkpoint：280B 總參數、每 token 用 14B，512 個 routed experts 取 top-10，1,048,576 context，預設開 thinking。權重是 blockwise FP8，routed experts 用 MXFP4（W4A8 QAT），內建 DSpark draft head 做 speculative decoding。官方主打 coding、3D modeling（寫 Blender／CAD 腳本）、知識工作和影片製作，DeepSWE v1.1 拿 71.2。Preview 權重是 Apache-2.0，但 Base 仍是百度自家授權。部署走 SGLang 或 vLLM＋vLLM-ERNIE plugin。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "MXFP4",
+        "DSpark",
+        "1M context"
+      ],
+      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+      "price": null,
+      "vram": "280B MoE，FP8＋MXFP4 權重遠超消費級 GPU",
+      "license": "Apache-2.0（Preview 權重）"
+    },
+    {
+      "id": "20261125-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Jensen Huang 回任後續：國會兩黨砲轟、Trump 說「I made the deal」、Polymarket 疑似內線交易（HN 457／331 分）",
+      "summary": "CNBC（11/23）：Huang 辭職 11 天後被 NVIDIA 董事會請回，國會兩黨議員要求調查；Trump 受訪時說是他親自說服董事會，「I made the deal」。Huang 12/1 起要到眾議院三個委員會閉門作證，參議院銀行委員會 12/3 開公開聽證。HN 另有兩串熱議：一個法文部落格逐筆追蹤 on-chain 交易，指某帳號在 Trump 發文前幾小時大量買進「Huang 年底前回任」（當時賠率 6.5%）（457 分、266 則留言）；Foreign Policy 評論稱這是「美國史上最大國安醜聞」（331 分）。Polymarket 的部分目前是個人分析，還沒有官方認定。",
+      "tags": [
+        "infra_runtime",
+        "NVIDIA",
+        "policy",
+        "export control"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50626578",
+      "source": "CNBC／Hacker News",
+      "sourceUrl": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
     }
   ],
-  "lastUpdated": "2026-11-25T03:11:41+08:00",
-  "updatedAt": "2026-11-25T03:11:41+08:00"
+  "lastUpdated": "2026-11-25T03:35:31+08:00",
+  "updatedAt": "2026-11-25T03:35:31+08:00"
 }
