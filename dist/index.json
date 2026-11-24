@@ -126924,7 +126924,7 @@
       "cycle": "morning",
       "priority": "high",
       "title": "〈LLM agents work for their parent companies, not for you〉：Claude 拒絕繞過 Bandcamp 的 challenge、卻肯下載 YouTube 歌——作者決定改用 homelab 本地模型（HN 722 分、308 則留言）",
-      "summary": "Michael Harley 用 Claude Code 寫了一個 skill：從 Instagram reel 認出歌和藝人、找 Bandcamp 頁面好直接付錢買歌。Bandcamp 在 search API 加了 challenge 後，Claude 主動表示不會幫他繞過；但同一個 skill 的另一條路——從 YouTube 下載那首歌、藝人一毛錢都拿不到——它照做。他的論點：frontier 模型「只在母公司允許的範圍內」替你工作，未來可能出現付費置入式的答案、或照政府要求行事，這是他想在 homelab 跑本地模型的理由；他也承認還要搞清楚 open model 到底「open」在哪。HN 在 11/24 熱烈討論 agent 的忠誠對象與本地模型。",
+      "summary": "Michael Harley 用 Claude Code 寫了一個 skill：從 Instagram reel 認出歌和藝人、找 Bandcamp 頁面好直接付錢買歌。Bandcamp 在 search API 加了 challenge 後，Claude 主動表示不會幫他繞過；但同一個 skill 的另一條路——從 YouTube 下載那首歌、藝人一毛錢都拿不到——它照做。他的論點：frontier 模型「只在母公司允許的範圍內」替你工作，未來可能出現付費置入式的答案、或照政府要求行事，這是他想在 homelab 跑本地模型的理由；他也承認還要搞清楚 open model 到底「open」在哪。文章 11/1 發布，11/24 才衝上 HN。",
       "tags": [
         "agent alignment",
         "local LLM",
@@ -126966,7 +126966,7 @@
       "cycle": "morning",
       "priority": "medium",
       "title": "Anthropic 公開 Claude 自己發現的 VP ≠ VNP 證明＋Lean 4 形式化——但還沒有人類數學家檢查過（HN 351 分、319 則留言）",
-      "summary": "anthropics/formal-math repo 的 vp-vnp 資料夾說明：對任何 field，Hamiltonian cycle polynomial（以及 characteristic 2 以外的 permanent）的 circuit 都需要超過 m^(c (log m)^(1/3)) 個 gate，因此 VP 是 VNP 的真子集；README 也明講這不解決 P vs NP。結果由內部研究用 Claude 模型發現，論文和 Lean 4 證明都是 AI 寫的，「no human mathematician has checked the proof」。Lean 會檢查證明，但 README 提醒沒有機器能檢查這份檔案說的是否就是宣稱的內容；CI 另用獨立寫的第二個 kernel（nanoda）重驗。這是 AI＋形式化驗證這條線的最新案例，HN 討論集中在「誰來驗證 statement 本身」。",
+      "summary": "anthropics/formal-math repo 的 vp-vnp 資料夾說明：對任何 field，Hamiltonian cycle polynomial（以及 characteristic 2 以外的 permanent）的 circuit 都需要超過 m^(c (log m)^(1/3)) 個 gate，因此 VP 是 VNP 的真子集；README 也明講這不解決 P vs NP。結果由內部研究用 Claude 模型發現，論文和 Lean 4 證明都是 AI 寫的，「no human mathematician has checked the proof」。Lean 會檢查證明，但 README 提醒沒有機器能檢查這份檔案說的是否就是宣稱的內容；CI 另用獨立寫的第二個 kernel（nanoda）重驗。這是 AI＋形式化驗證這條線的最新案例。",
       "tags": [
         "formal verification",
         "Lean",
@@ -127021,8 +127021,391 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261125-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 合併 PR #31669：GDN 改用 replay 取代 rollback，speculative decoding 的 recurrent state 記憶體省 73–91%",
+      "summary": "11/24 07:06（台北時間）合併進 master。Qwen3.5／3.8 這類 Gated DeltaNet（GDN）混合架構做 speculative decoding 時，以前要替每個 draft 位置存一份 recurrent state snapshot，現在改成驗證後再 replay。作者在 RTX PRO 6000 用 Qwen3.8-27B Q8_0 實測：n_rs_seq 3 時每個 sequence 從 598.5 MiB 降到 163.2 MiB（−73%），n_rs_seq 15 時從 2,394 MiB 降到 203.9 MiB（−91%）。單一 sequence 速度持平；多 slot 的 llama-server 快 2–8%，batched verify 在 32 個 sequence 時最多快 34.5%。CUDA、Vulkan、Metal、OpenCL、WebGPU 都已實作，SYCL 還沒有。16GB 卡跑 27B＋DFlash2 時，省下的 VRAM 可以拿去放 context。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "Gated DeltaNet",
+        "Qwen3.8-27B",
+        "llama.cpp"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/31669",
+      "source": "GitHub PRs (llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/31669",
+      "price": null,
+      "vram": "runtime 本身不吃額外 VRAM；27B 量化版 16GB 可跑，省下 recurrent state 記憶體",
+      "license": "MIT"
+    },
+    {
+      "id": "20261125-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Strata v0.2.21：Inkling 2 Mini 在小卡大提速，RTX 5070 12GB 跑 SQ-10 從 12.5 拉到 68 tok/s",
+      "summary": "11/24 18:10（台北時間）釋出，三個引擎家族都更新到 0.1.67。官方對比 0.2.20：RTX 5070 12GB 跑 SQ-10 從 12.5 變 68 tok/s，RTX 3060 Ti 8GB 從 11 變 43 tok/s，RTX 4090 在 32K prompt 後從 29 變 92 tok/s；agent 對話會重用 prompt，不再每輪重讀。DSpark drafter 可以搭 Unsloth 重新上傳的 GGUF；單一請求會被送到有 drafter 的 slot，code 約快 2 倍。另外修了長對話 crash，引擎連續 crash 三次就停下並說明原因。官方沒有列 5070 Ti 的數字，昨天報過的 SQ-15（14.35GB）建議自己跑一輪 benchmark 再用。注意：新設定第一次啟動會多花約 3 分鐘測 drafter。",
+      "tags": [
+        "llm_inference",
+        "MoE offload",
+        "speculative decoding",
+        "Inkling 2 Mini",
+        "DSpark"
+      ],
+      "url": "https://github.com/Niko1221/Strata/releases/tag/v0.2.21",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/Niko1221/Strata/releases/tag/v0.2.21",
+      "price": null,
+      "vram": "SQ-10 給 12GB 卡、SQ-15 給 16GB 卡",
+      "license": "MIT"
+    },
+    {
+      "id": "20261125-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Drama-3-Japanese GGUF（speech.cpp／audio.cpp）：日文 zero-shot voice cloning，small IQ3_XXS 約 9.3GB，16GB 卡可全放 GPU",
+      "summary": "社群把 Aratako/Drama-3-Japanese 做成 imatrix 校準的 GGUF，給 speech.cpp（v0.11.2+）和 audio.cpp 跑本地日文 TTS 和 zero-shot voice cloning，輸出 44.1kHz。完整的 35B-A3B Q4_K 是 20.82 GiB，要大約 23GB 空 VRAM；small IQ3_XXS 是 9.09–9.28 GiB，卡片標示需要約 11.5 GiB 空 VRAM、適合 16–24GB GPU（speech.cpp 走 CUDA 要加 fast patch）。11/23 上架，兩天下載 4,458 次。授權是 Fish Audio Community License，商用前要先讀條款。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "voice cloning",
+        "gguf",
+        "speech.cpp",
+        "audio.cpp"
+      ],
+      "url": "https://huggingface.co/StudioYebisu-ship-it/Drama-3-Japanese-speech-cpp-gguf",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/StudioYebisu-ship-it/Drama-3-Japanese-speech-cpp-gguf",
+      "price": null,
+      "vram": "small IQ3_XXS 約 11.5GiB 空 VRAM；Q4_K 約 23GiB",
+      "license": "Fish Audio Community License 1.0"
+    },
+    {
+      "id": "20261125-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Reverb-TTS 登上 Open TTS Leaderboard：297M 參數，英文 voice cloning 排第 1，14 個排名中 13 個最快（但 CC-BY-NC）",
+      "summary": "Software Mansion 把 OmniVoice（613M）剪枝並蒸餾成 297M，再用 7 種語言重訓、跑多輪 DPO。3–20 秒參考音加逐字稿就能 zero-shot 複製音色。11/24 官方 X 帖說它在 Open TTS Leaderboard 拿下英文 voice cloning、德文、義大利文第 1，14 個速度排名有 13 個最快。官方數字：RTX 5090 batch 32 跑 164.9 倍即時速度，iPhone 17 也有 20.6 倍；提供 int8／int4 和 ExecuTorch。沒有中文。權重是 CC-BY-NC-4.0，不能商用。",
+      "tags": [
+        "tts_speech",
+        "svc_voice",
+        "voice cloning",
+        "zero-shot tts",
+        "OmniVoice"
+      ],
+      "url": "https://huggingface.co/software-mansion/Reverb-TTS",
+      "source": "X @swmansion_ai",
+      "sourceUrl": "https://x.com/swmansion_ai/status/2125194318080286870",
+      "price": null,
+      "vram": "297M 參數，手機都能跑",
+      "license": "CC-BY-NC-4.0（權重）／Apache-2.0（程式碼）"
+    },
+    {
+      "id": "20261125-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "ARRANGE（arXiv）：用 agent skills 在自己的鋼琴錄音上疊歌聲，背後是 SoulX-Singer＋Seed-VC",
+      "summary": "作者不讓模型一次生出整首歌，而是保留作曲者自己的鋼琴錄音，把「加一軌人聲」拆成 Listen → Play the Line → Fit → Sing → Mix 幾個 Agent Skills。每一步都會輸出看得懂的譜（音符、歌詞、發音），並停在作曲者批准的 checkpoint。改稿要求會被轉成有型別檢查的 typed edits，例如 `shift_entry(layer=\"strings\", by_bars=2)`。在 16 個改稿要求、5 個 LLM 的測試中，typed edits 的正確率是 0.83–0.98，整份計畫重寫只有 0.33–0.69。底層用的是 SoulX-Singer（歌聲合成）、Seed-VC（voice conversion）和鋼琴轉譜，skills 已用 Agent Skills 格式開源。作者自己說明：這是互動架構，不是新的歌聲模型。",
+      "tags": [
+        "audio_music_ai",
+        "svc_voice",
+        "seed-vc",
+        "singing voice synthesis",
+        "agent skills"
+      ],
+      "url": "https://github.com/htansetiawan/ARRANGE",
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.29283",
+      "price": null,
+      "vram": "音訊模型（SoulX-Singer／Seed-VC）估計 16GB 內可跑；LLM 可走 Claude 或自架 vLLM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261125-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Unsloth v0.1.924-beta：Inkling 2 Mini 可以 LoRA／QLoRA fine-tune，快 1.8–3.1 倍、省 50% VRAM，還能匯出 GGUF",
+      "summary": "11/24 22:38（台北時間）釋出。Inkling 2 Mini 支援 LoRA／QLoRA（含 vision layers），可以匯出 merged 16-bit 或 GGUF。官方說 Kaggle 免費的 2×T4 能練，每步約 26 秒，但單張 15GB T4 放不下，所以單張 16GB 卡大概也不夠。練好的模型匯出 q4_k_m GGUF 是 17.5GB，匯出過程要約 150GB 磁碟空間。其他更新：修正 Inkling 2 Mini max context 設錯（推理快 2–3 倍）、8GB VRAM＋16GB RAM 的筆電聊幾輪就卡死的問題，以及 `adamw_8bit` 每步最多快 12%。",
+      "tags": [
+        "llm_training",
+        "LoRA",
+        "QLoRA",
+        "Inkling 2 Mini",
+        "gguf"
+      ],
+      "url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.924-beta",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.924-beta",
+      "price": null,
+      "vram": "訓練要 2×T4（約 30GB）；匯出的 q4_k_m 推理 17.5GB 需要 offload",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261125-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "SenseNova-U1.6-8B-MoT：8B 圖像理解＋生成模型，會先檢查自己畫錯的字再重畫，ComfyUI 原生支援",
+      "summary": "商湯 11/24 正式發布 U1.6，主打人像、海報、插畫的美感，以及 native self-correction：先畫一版 infographic，對照 prompt 列出要修的地方（含 box 座標），再重畫打錯的字。另外有 4-step／8-step 蒸餾 LoRA，ComfyUI 原生節點可以直接用。官方 balanced 設定建議 24GB VRAM＋64GB RAM，但也提供 FP8／INT8 W8A8 和 GGUF（Q4_0／Q6_K／Q8_0），5070 Ti 用量化版應該跑得動。",
+      "tags": [
+        "image_gen",
+        "ComfyUI",
+        "gguf",
+        "self-correction"
+      ],
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-GGUF",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "price": null,
+      "vram": "BF16 balanced 建議 24GB；FP8／GGUF 量化後 16GB 可行",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261125-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tidal 宣布 12/9 起下架所有完全由 AI 生成的音樂，成為第一個全面禁 AI 歌的串流平台（HN 287 分、257 則留言）",
+      "summary": "Variety 報導（11/24）：Block 旗下的 Tidal 從 12/9 開始移除被判定為「完全 AI 生成」的歌，年初前清完。Tidal 負責人 Robert Andersen 說，過去 90 天送來的歌有 43% 被偵測為 AI 生成，96% 的 AI 歌零播放。這次會清掉約 2,900 萬首，之後每天拒收 8–8.5 萬首。五個月前 Tidal 只是停止 AI 歌的分潤並要求標示。Spotify 和 Apple Music 目前還是以標示為主。對做 AI 輔助創作的人來說，「AI-assisted」和「wholly AI-generated」的界線會越來越重要。",
+      "tags": [
+        "audio_music_ai",
+        "AI music policy",
+        "streaming"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50630309",
+      "source": "Variety／Hacker News",
+      "sourceUrl": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
+    },
+    {
+      "id": "20261125-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "百度開源 ERNIE 5.5 Flash Preview：280B MoE（14B active）、1M context、Apache-2.0，vLLM／SGLang 可部署",
+      "summary": "這是 ERNIE 5.5 Flash Base 的第一個 post-trained checkpoint：280B 總參數、每 token 用 14B，512 個 routed experts 取 top-10，1,048,576 context，預設開 thinking。權重是 blockwise FP8，routed experts 用 MXFP4（W4A8 QAT），內建 DSpark draft head 做 speculative decoding。官方主打 coding、3D modeling（寫 Blender／CAD 腳本）、知識工作和影片製作，DeepSWE v1.1 拿 71.2。Preview 權重是 Apache-2.0，但 Base 仍是百度自家授權。部署走 SGLang 或 vLLM＋vLLM-ERNIE plugin。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "MXFP4",
+        "DSpark",
+        "1M context"
+      ],
+      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+      "price": null,
+      "vram": "280B MoE，FP8＋MXFP4 權重遠超消費級 GPU",
+      "license": "Apache-2.0（Preview 權重）"
+    },
+    {
+      "id": "20261125-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-25",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Jensen Huang 回任後續：國會兩黨砲轟、Trump 說「I made the deal」、Polymarket 疑似內線交易（HN 457／331 分）",
+      "summary": "CNBC（11/23）：Huang 辭職 11 天後被 NVIDIA 董事會請回，國會兩黨議員要求調查；Trump 受訪時說是他親自說服董事會，「I made the deal」。Huang 12/1 起要到眾議院三個委員會閉門作證，參議院銀行委員會 12/3 開公開聽證。HN 另有兩串熱議：一個法文部落格逐筆追蹤 on-chain 交易，指某帳號在 Trump 發文前幾小時大量買進「Huang 年底前回任」（當時賠率 6.5%）（457 分、266 則留言）；Foreign Policy 評論稱這是「美國史上最大國安醜聞」（331 分）。Polymarket 的部分目前是個人分析，還沒有官方認定。",
+      "tags": [
+        "infra_runtime",
+        "NVIDIA",
+        "policy",
+        "export control"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50626578",
+      "source": "CNBC／Hacker News",
+      "sourceUrl": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
+      "price": null,
+      "vram": "n/a",
+      "license": "n/a"
+    },
+    {
+      "id": "20261125-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "How I AI：Innovaccer CTO 用 OpenClaw 打造自己的 Jarvis——「1% annoyance rule」和分工明確的 subagents",
+      "summary": "Claire Vo 訪談 Innovaccer CTO Ankit Maheshwari：他從「卡在自己身上的審批流程」開始自動化（例如 Navan 的差旅審批），之後一路延伸到訂午餐、打電話追 Slack 上不回訊息的同事、訂餐廳、回家前先開冷氣。架構重點是 soul files + subagents：一開始用一個 global agent 處理所有角色時會在 persona 上產生幻覺，後來拆成健康教練、email triage 等各自範圍明確的 subagent，再由 master soul 統籌；語音通話也獨立成一個 subagent。他每月 Anthropic 帳單約 $500–600，正在測試 GLM Flash 這類本地/便宜模型能不能接手。可以直接帶進 AI 顧問提案的框架：從主管每天最常卡住的那 1% 小麻煩下手，一個 agent 只負責一件事。",
+      "tags": [
+        "ai-agents",
+        "executive-automation",
+        "subagents",
+        "1-percent-annoyance"
+      ],
+      "url": "https://www.lennysnewsletter.com/p/openclaw-for-executives-automate",
+      "source": "Lenny's Newsletter（How I AI）",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/openclaw-for-executives-automate",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261125-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "a16z × The Prompting Company：1.1 萬次 agent 購物測試，「B2A 經濟」裡怎麼讓 agent 選中你",
+      "summary": "a16z 跟 The Prompting Company 用 1,270 個 prompt、11,307 次 agent 執行測試 Grok Bot、Muse、Instinct、Dots（另外對照 ChatGPT、Gemini、Perplexity），再搭配 YipitData 的消費數據。發現 agent 的預設選擇高度重疊：一個 agent 選中的商品，有 73% 機率至少被另一個 agent 選中，將近四分之一的情況四個 agent 選的第一名都一樣；Muse 最多只撈 50 個選項，用瀏覽器時平均只看 3 個產品頁，主要依據價格和評論。五個建議：在你特別強的 use case / persona 上做出明顯優勢、為 agent crawler 而不只是人眼優化、讓 agent 算得出你的價值、把每個 agent 當成不同的客戶、出現在 agent 已經在搜尋和交易的地方。對顧問客戶來說，這是「GEO / 被 agent 推薦」最具體的一份數據。",
+      "tags": [
+        "b2a",
+        "agent-commerce",
+        "distribution",
+        "geo"
+      ],
+      "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents",
+      "source": "a16z News",
+      "sourceUrl": "https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261125-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "playbook",
+      "title": "Jason Lemkin：別對老客戶直接漲價——改推「可選的高價版本」，或提早預告、一體適用並同步加值",
+      "summary": "Lemkin 分享早期把 Qualcomm 從 $10K 直接開 $60K 發票，champion 當場暴怒的經驗。他的理由包括：老客戶當初是冒險押你、一次性漲價「像餅乾一樣，吃一次就沒了」，無法解決真正的問題；而且現在客戶的 agent 會立刻審查重大漲價，拿去跟替代方案比較，當天就丟出一份候選廠商清單。比較好的做法：推出一個更貴但 100% 可選的新版本（他們把早期 enterprise 客戶遷到 global edition，消除了 90% 的摩擦）；或小幅漲價、提前 3–4 個月預告、對所有人一致（成長低於約 30% 再考慮）；漲價一定搭配加值，至少給出價格增幅 2 倍以上的價值。適用在顧問方案或課程的續約定價。",
+      "tags": [
+        "pricing",
+        "retention",
+        "saas",
+        "customer-trust"
+      ],
+      "url": "https://www.saastr.com/5-reasons-not-to-raise-prices-on-existing-customers-and-2-better-ways-to-do-it-anyway/",
+      "source": "SaaStr",
+      "sourceUrl": "https://www.saastr.com/5-reasons-not-to-raise-prices-on-existing-customers-and-2-better-ways-to-do-it-anyway/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261125-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Dan Koe：下一個大趨勢是「心智飲食」——太多人正快速變成 mentally obese",
+      "summary": "\"An absurd amount of people are quickly becoming mentally obese.\" — Dan Koe。現代食物的脂肪、糖、鹽超出大腦能處理的量，所以人需要節食；資訊也是一樣。他預測 dopamine detox、analog living、journaling 和大腦訓練會比現在更普及（2.4k+ likes）。對做 podcast 和內容的人：在資訊過載的年代，幫受眾「減量」本身就是價值。",
+      "tags": [
+        "attention",
+        "information-diet",
+        "content-strategy"
+      ],
+      "url": "https://x.com/thedankoe/status/2125216627029373342",
+      "source": "X @thedankoe",
+      "sourceUrl": "https://x.com/thedankoe/status/2125216627029373342",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261125-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "Ben Thompson〈The Individual Exception〉：AI 讓「只需要一個人」成真，Jensen 復職是 managerialism 終結的頂點",
+      "summary": "Thompson 開頭先列出自己幾天內用 AI 做出的東西：整套 Sharp Tech 錄音室遠端控制服務、多個 iOS app、一個把工作分派到 Mac／遊戲 PC／Linux server 的 agent harness，「All of this would have taken teams of people weeks of work, if not months... It only takes an individual.」接著用「The Deflationary Employee」對照：1959 年最大公司 AT&T 有 72.9 萬名員工，今天最有價值的公司營收和市值暴增、員工數卻反而縮水。最後回到 Jensen Huang 復職：他引用 Burnham 1941 年的《The Managerial Revolution》，認為 Nvidia 本來就是 Jensen 實現個人願景的載具（「an exoskeleton for him」），復職代表科技正在推翻「管理階層取代創辦人」這條路線。他也明說這篇不做道德評判，Jensen 的爭議仍會被國會調查。HN 上 Jensen 復職討論 2,774 分、3,600+ 則留言。",
+      "tags": [
+        "individual-leverage",
+        "deflationary-employee",
+        "founder-mode",
+        "managerialism"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50611576",
+      "source": "Stratechery",
+      "sourceUrl": "https://stratechery.com/2026/the-individual-exception/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261125-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "mental-model",
+      "title": "〈LLM agents work for their parent companies, not for you〉：你付錢的 agent，聽的其實是模型公司的規則（HN 748 分）",
+      "summary": "作者用 Claude Code 做了一個 skill：從 Instagram reel 辨識歌曲，找到樂團的 Bandcamp 讓他直接付錢買音樂。Bandcamp 在搜尋加了 challenge 之後，Claude 主動表示不會幫他繞過；但同一個 skill 的另一個分支卻願意從 YouTube 下載歌曲——而這樣樂團一毛錢都拿不到。他的論點：模型只在 Anthropic、OpenAI 允許的範圍內為你工作，未來答案也可能被廣告或監管加權，所以他想在 homelab 跑本地模型。HN 748 分、313 則留言。給 AI 顧問的提醒：幫客戶設計 agent 時，要把「agent 到底替誰的利益做事」講清楚，這也是本地模型的一個重要賣點。",
+      "tags": [
+        "agent-alignment",
+        "local-llm",
+        "platform-risk",
+        "trust"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50627340",
+      "source": "michaelharley.net（Hacker News）",
+      "sourceUrl": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261125-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "operational",
+      "title": "SaaStr 解讀 ICONIQ Pacesetter Index：$10M ARR 以下的 AI 公司中位數成長 900%，T2D3 已經不夠拿到頂級基金",
+      "summary": "Lemkin 說他每週都遇到 $4M ARR、去年成長三倍、留存不錯的 founder，卻被頂級基金拒絕。根據 ICONIQ 的 Pacesetter Index（ICONIQ 投資組合加上部分上市軟體公司中，三年營收成長前四分之一、AI-native 或 AI-driven 的公司）：$10M 以下中位數成長 900%，比 T2D3 快 4.5 倍；$100M 以上差距就小了（115% vs 100%），人均營收約 $655K。差距最大的是 $25M 以下，也就是多數人在募資的區間。他也提醒這是「贏家的中位數」，而且沒有公布樣本數。帶走的觀點：如果不是要拿頂級 VC，就別拿這把尺量自己；但要募資，得先知道對面的 partner 剛看過什麼。",
+      "tags": [
+        "fundraising",
+        "growth-benchmarks",
+        "t2d3",
+        "ai-native"
+      ],
+      "url": "https://www.saastr.com/the-bar-to-get-funded-is-far-higher-than-most-founders-realize-900-median-growth-under-10m-115-at-100m-and-655k-in-revenue-per-employee/",
+      "source": "SaaStr",
+      "sourceUrl": "https://www.saastr.com/the-bar-to-get-funded-is-far-higher-than-most-founders-realize-900-median-growth-under-10m-115-at-100m-and-655k-in-revenue-per-employee/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261125-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "quotable",
+      "title": "Paul Graham：只在乎品質的話，稀有的東西永遠會顯得太貴",
+      "summary": "\"If you care only about quality, rare things will always be overpriced, because they have an extra feature that other people will pay a lot for.\" — Paul Graham。因為「稀有」本身就是一個別人願意多付錢的額外特徵——想清楚你付的錢是買品質還是買稀有。",
+      "tags": [
+        "pricing",
+        "scarcity",
+        "value"
+      ],
+      "url": "https://x.com/paulg/status/2125300446978101642",
+      "source": "X @paulg",
+      "sourceUrl": "https://x.com/paulg/status/2125300446978101642",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-25T03:11:41+08:00",
-  "updatedAt": "2026-11-25T03:11:41+08:00"
+  "lastUpdated": "2026-11-25T03:43:13+08:00",
+  "updatedAt": "2026-11-25T03:43:13+08:00"
 }
