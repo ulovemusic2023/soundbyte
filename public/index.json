@@ -128483,8 +128483,179 @@
       "url": "https://www.producthunt.com/products/koed",
       "source": "Product Hunt",
       "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/25"
+    },
+    {
+      "id": "20261126-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "TIDAL 全面禁止 AI 生成音樂：將刪除約 2,700 萬首 AI 曲目",
+      "summary": "TIDAL 宣布升級夏季的 demonetization 政策，將刪除、拒收並禁止完全由 AI 生成的音訊，據 DMN 報導約涉及 2,700 萬首曲目，並阻擋發行商上傳純 AI 作品。背景是 AI slop 上傳量暴增。",
+      "priority": "high",
+      "tags": [
+        "ai music",
+        "streaming",
+        "ai slop",
+        "tidal"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/24/tidal-bans-ai-generated-music/"
+    },
+    {
+      "id": "20261126-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Jason Isbell 擴大 Suno 集體訴訟至 20 位原告",
+      "summary": "Jason Isbell 與 David Lowery 的 Suno 集體訴訟擴大到 20 位原告，幾乎每個 subclass 都有代表人，同時收緊 class 定義並重新設定責任理論。此案是 AI 音樂訓練資料爭議的重要走向。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "lawsuit",
+        "ai music",
+        "copyright"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/24/jason-isbell-expands-suno-lawsuit/"
+    },
+    {
+      "id": "20261126-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "iZotope 推出 Nectar 5：新增 lyrics-based editing 人聲編輯",
+      "summary": "iZotope 發表 Nectar 5 人聲 plugin 套裝，新增兩個模組、改版 Vocal Assistant，並推出 ARA 創意效果 plugin「Moments」。標題強調可依歌詞進行人聲編輯。",
+      "priority": "high",
+      "tags": [
+        "ai audio",
+        "vocal",
+        "izotope",
+        "plugin",
+        "ara"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/izotope-launches-nectar-5-with-lyrics-based-editing-for-vocals/"
+    },
+    {
+      "id": "20261126-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "IncrementDET：以 enrollment 方式持續偵測 AI 生成音樂（arXiv）",
+      "summary": "新論文提出 IncrementDET：每個新的音樂 generator 只加一個線性分類器（needle），舊的不動，並以 Sidak correction 控制整體誤報率。作者另建 EvoMusicFake-17K 資料集，稱比 SpecTTTra 更能學新 generator、更新成本更低。",
+      "priority": "high",
+      "tags": [
+        "ai music detection",
+        "arxiv",
+        "music understanding",
+        "benchmark"
+      ],
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.32023"
+    },
+    {
+      "id": "20261126-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Tootable Instruments eureka!：Mutable Instruments Ambika 化身免費虛擬樂器",
+      "summary": "eureka! 以軟體方式執行 Mutable Instruments Ambika firmware，提供六個 part、modeled filters、立體聲 panning 與更多 modulation，並支援 Ambika presets，支援 macOS 與 Windows。",
+      "priority": "medium",
+      "tags": [
+        "virtual instrument",
+        "free plugin",
+        "synth",
+        "mutable instruments"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/25/tootable-instruments-eureka-brings-mutable-instruments-ambika-back-as-free-virtual-instrument/"
+    },
+    {
+      "id": "20261126-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "FieldSynth：把粒子與游標移動變成旋律的 generative synth",
+      "summary": "FieldSynth 將粒子與游標的運動轉成持續演變的旋律與節奏，結合 FM 與 subtractive synthesis、modulation、效果與 MIDI，提供桌面、iOS 與瀏覽器版本。",
+      "priority": "medium",
+      "tags": [
+        "generative music",
+        "synth",
+        "ios",
+        "midi"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/25/fieldsynth-brings-generative-particle-synthesis-to-iphone-ipad-desktop/"
+    },
+    {
+      "id": "20261126-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Cherry Audio DW-8K：重現 Korg DW-8000 並擴充複音與調變",
+      "summary": "Cherry Audio DW-8K 重現 Korg DW-8000，提供 dual-layer、16-voice 複音、擴充 modulation、每層 sequencing、MPE 支援與 25 種效果。",
+      "priority": "medium",
+      "tags": [
+        "virtual instrument",
+        "synth",
+        "mpe",
+        "cherry audio"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/24/cherry-audio-dw-8k-korg-dw-8000-synthesizer/"
+    },
+    {
+      "id": "20261126-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Elektron Tonverk OS v1.5.0：新增 2 個 Machine、4 個 FX",
+      "summary": "Elektron 為 Tonverk 多聲部 multisampler 發布 OS v1.5.0，新增兩個 Machines、四個 FX、更深入的編輯與 routing，並擴充 MIDI 功能。",
+      "priority": "medium",
+      "tags": [
+        "hardware",
+        "sampler",
+        "elektron",
+        "firmware"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/elektron-releases-tonverk-os-v1-5-0-upgrade/"
+    },
+    {
+      "id": "20261126-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "BumaStemra 威脅對 AI 背景音樂供應商 YourNeuroTune 採取法律行動",
+      "summary": "荷蘭著作權集管組織 BumaStemra 表示，將對主打「高端、免版稅」商用背景音樂的新創 YourNeuroTune 採取法律行動，稱其做法不合法，對象包含零售、健身與餐旅客戶。",
+      "priority": "medium",
+      "tags": [
+        "ai music",
+        "licensing",
+        "copyright",
+        "collecting society"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/24/bumastemra-yourneurotune-action/"
+    },
+    {
+      "id": "20261126-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Synth Explorer：瀏覽器版 Sequential／Oberheim preset 轉換與 librarian",
+      "summary": "Synth Explorer 是瀏覽器端編輯器與 librarian，可在 Prophet-5/10 Rev4、Prophet-6、OB-6 與 TEO-5 之間轉換 presets，支援 SysEx、即時編輯與共享音色庫。",
+      "priority": "low",
+      "tags": [
+        "librarian",
+        "sysex",
+        "synth",
+        "web tool"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/25/synth-explorer-converts-presets-between-sequential-oberheim-synths/"
     }
   ],
-  "lastUpdated": "2026-11-26T03:59:45+08:00",
-  "updatedAt": "2026-11-26T03:59:45+08:00"
+  "lastUpdated": "2026-11-26T04:20:00+08:00",
+  "updatedAt": "2026-11-26T04:20:00+08:00"
 }
