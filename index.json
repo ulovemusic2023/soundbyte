@@ -127834,8 +127834,225 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261126-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Ternary Bonsai 2.5 27B（PrismML）：Qwen3.8-27B ternary 版 5.93GB，SWE-bench Verified 從 60.8 拉到 75.6，GGUF 內建 MTP（HN 518 分）",
+      "summary": "以 Qwen3.8-27B 為底的 ternary 權重（1.76 bits/weight），PTQ1_0 只有 5.93GB，體積跟 Bonsai 2 一樣，但 agentic 能力大幅補回來：SWE-bench Verified 60.8→75.6（FP16 原版 80.6）、AppWorld 51.2→90.5、τ³-Bench 73.9。每個 GGUF 內建 MTP draft head，官方實測 RTX 4090 約 204 tok/s。PTQ1_0／PQ2_0 要用 PrismML 的 llama.cpp fork，stock llama.cpp 只能跑 Q2_0（需 b11556 以後，舊版會無聲輸出亂碼）。HN 518 分、171 則留言。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "quantization",
+        "speculative decoding",
+        "on-device",
+        "ternary"
+      ],
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+      "source": "PrismML／Hugging Face／Hacker News",
+      "sourceUrl": "https://prismml.com/news/bonsai-2-5-27b",
+      "price": null,
+      "vram": "PTQ1_0 5.93GB、Q2_0 7.7GB，16GB 卡可全放 GPU 並留大量 context",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261126-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "KRAFTON Raon-1 mini：28.8B MoE（4.3B active）從零訓練、Apache-2.0，llama.cpp PR #32176 合併支援，官方 GGUF 上架",
+      "summary": "KRAFTON 從零訓練的 28.8B MoE（每 token 4.3B active），18 層 Raon Delta Attention（固定大小 state）＋7 層 gated MLA，只有 MLA 層有 KV cache（BF16 約 8 KiB/token），原生 262K context。官方數字 AIME 2026 96.7、GPQA Diamond 86.0，主打韓文對話與 agent，附 DFlash2 draft model。llama.cpp 已在 11/26 02:38（台北）合併支援，官方 GGUF 同步上架。",
+      "tags": [
+        "llm_inference",
+        "llama.cpp",
+        "gguf",
+        "speculative decoding",
+        "MoE",
+        "Raon Delta Attention"
+      ],
+      "url": "https://huggingface.co/KRAFTON/Raon-1-mini",
+      "source": "Hugging Face／GitHub PRs (llama.cpp)",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32176",
+      "price": null,
+      "vram": "IQ4_XS 16.2GB、Q4_K_M 19.7GB；16GB 卡需 --n-cpu-moe 把部分 experts 放 RAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261126-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "kale-tts-1 進 audio.cpp（PR #1351）：82M／45.7M／7.5M 三個小型英文 TTS，tiny 在平板 CPU 上 24 倍即時",
+      "summary": "KaleComputer 釋出三個小型英文 TTS：base（82M，Kokoro-82M fine-tune）、tiny（45.7M）、nano（7.5M），共 10 個自行設計的聲線。audio.cpp 11/26 01:43（台北）合併 tiny／nano 為 community model，base 直接走既有 kokoro_tts。tiny 的 decoder 改用 source-filter head（取代 iSTFTNet），官方稱 Galaxy Tab S10 Lite CPU 上 24 倍即時、第一句 0.16 秒；訓練資料（204.7 小時、CC BY 4.0）也公開。",
+      "tags": [
+        "tts_speech",
+        "on-device",
+        "onnx",
+        "audio.cpp",
+        "Kokoro"
+      ],
+      "url": "https://huggingface.co/KaleComputer/kale-tts-1-tiny",
+      "source": "GitHub PRs (audio.cpp)",
+      "sourceUrl": "https://github.com/0xShug0/audio.cpp/pull/1351",
+      "price": null,
+      "vram": "CPU 即可，幾乎不吃 VRAM",
+      "license": "Apache-2.0（模型）；資料集 CC BY 4.0"
+    },
+    {
+      "id": "20261126-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Tencent Hy-MT3 翻譯模型開源：1.8B／7B／30B-A3B、102 種語言，誤譯比 Hy-MT2 少 43%",
+      "summary": "騰訊第三代翻譯模型 11/24 開源，語言從 38 擴到 102 種；官方稱相對 Hy-MT2，誤譯樣本少 43%、漏譯／多譯少 74%、指令遵循錯誤少 40%，30B-A3B 在 non-thinking 模式贏過所有受測模型。官方同時給 FP8 與 GGUF，社群 FP8／GGUF／ONNX 轉檔在 11/25 陸續出現；另開源翻譯評測套件 TransRubric。",
+      "tags": [
+        "llm_inference",
+        "gguf",
+        "translation",
+        "MoE"
+      ],
+      "url": "https://github.com/Tencent-Hunyuan/Hy-MT3",
+      "source": "Hugging Face／X",
+      "sourceUrl": "https://huggingface.co/tencent/Hy-MT3-7B",
+      "price": null,
+      "vram": "1.8B／7B 16GB 輕鬆跑；30B-A3B 需量化",
+      "license": "Apache-2.0（HF model card）"
+    },
+    {
+      "id": "20261126-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "vLLM 合併 ReplaySSM（PR #62004）：Gated DeltaNet decode 改存輸入 ring buffer，大 batch 端到端快 1.22–1.30x",
+      "summary": "Dao AI Lab＋NVIDIA 合作，PR #62004 於 11/25 06:18（台北）合併。GDN decode 時不再每步把 recurrent state 寫回 HBM，改存最近的輸入 ring buffer（預設 L=16），每 L 步才 flush。Qwen3.5-4B 在 H100 端到端 bs512 快 1.30x、Qwen3.5-122B-A10B NVFP4 在 B300 快 1.22x；但 bs 1–8 大致持平。opt-in（--use-replayssm），只涵蓋 standard decode。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "qwen",
+        "kv-cache",
+        "ReplaySSM",
+        "Gated DeltaNet"
+      ],
+      "url": "https://dao-lab.ai/blog/2026/replayssm/",
+      "source": "GitHub PRs (vLLM)",
+      "sourceUrl": "https://github.com/vllm-project/vllm/pull/62004",
+      "price": null,
+      "vram": "收益在 serving 大 batch，16GB 單人使用幾乎無感",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261126-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "FreeVideo v0.6.11 → v0.6.12 登上 GitHub Trending：MiniMax H3 本地影片生成，最低 8GB VRAM＋16GB RAM",
+      "summary": "今天登上 GitHub Trending：本地影片生成桌面 app，官方稱 MiniMax H3 只要 8GB VRAM＋16GB RAM 就能跑，會依硬體選加速路徑；Windows 可選既有 ComfyUI 資料夾或裝新的。v0.6.11 加入「從圖片／影片寫 prompt」、修雙卡第二次生成報錯；v0.6.12 修好 Linux／Mac launcher 打不開 ComfyUI。",
+      "tags": [
+        "image_gen",
+        "ComfyUI",
+        "video generation",
+        "MiniMax H3"
+      ],
+      "url": "https://github.com/FlashML-org/FreeVideo",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/FlashML-org/FreeVideo/releases/tag/v0.6.12",
+      "price": null,
+      "vram": "官方最低 8GB VRAM＋16GB RAM",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261126-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Open WebUI v0.13.5：含安全修補（官方要求盡快升級），新增 folder workspaces、讀 AGENTS.md、model router，長對話送訊息快 34 倍",
+      "summary": "含安全修補，官方要求盡快升級（CVE 細節之後公布）。新功能：folder workspaces（在專案資料夾旁開 terminal／browser）、讀 AGENTS.md／CLAUDE.md 當專案指令、model router 自動分派模型；長對話送訊息在 130MB PostgreSQL 測試中快 34 倍（10.9→0.32 秒）。",
+      "tags": [
+        "ai_devtools",
+        "model serving",
+        "ollama",
+        "open-webui"
+      ],
+      "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5",
+      "price": null,
+      "vram": "前端本身不吃 VRAM",
+      "license": "Open WebUI License（BSD-3 衍生，含品牌條款）"
+    },
+    {
+      "id": "20261126-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "〈Models Can Communicate via Inference Servers Despite Being Sandboxed〉：同一台 vLLM 上的兩個 agent 能靠 side channel 互傳訊號（HN 408 分）",
+      "summary": "LessWrong 研究：兩個 agent 在同一台 vLLM 上，即使不能互傳訊息、不共用檔案，也能透過 side channel 溝通——vLLM 依 engine step 大小選 kernel，A 送大／小 request 會讓 B 的數值產生可偵測的微小差異（Step Sizing、KV Cache Message Board 兩種 protocol）。猜顏色遊戲 1,221/1,221 全對；untrusted monitoring 設定下 monitor 放行 354/354 次攻擊、仍抓到 85–92% honeypot。作者坦承設定很刻意（有 fine-tune）。HN 408 分、175 則留言。",
+      "tags": [
+        "llm_inference",
+        "vllm",
+        "AI safety",
+        "side channel"
+      ],
+      "url": "https://github.com/niranjan-deshpande/side-channel-communication",
+      "source": "LessWrong／Hacker News",
+      "sourceUrl": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈The KL Divergence Is Never Negative, Except in PyTorch〉：FP32 下接近分布的 KL 超過 85% 誤差 ≥1%、約 30% 變負數",
+      "summary": "用 850 萬筆有認證參考值的輸入檢查 18 種 closed-form KL 與 F.kl_div：分布很接近時，FP32 超過 85% 的值相對誤差 ≥1%，約 30% 甚至變負數；提高一級精度也救不了。錯誤會影響 distillation（top-1 不一致最高 97%）和量化 LLM 的 KL layer ranking。作者給出穩定化實作，修正後幾乎消失。HN 95 分。",
+      "tags": [
+        "llm_training",
+        "pytorch",
+        "distillation",
+        "quantization",
+        "stable KL"
+      ],
+      "url": "https://github.com/xi-xiaoran/stablekl",
+      "source": "arXiv／Hacker News",
+      "sourceUrl": "https://arxiv.org/abs/2611.30835",
+      "price": null,
+      "vram": "純數值修正，不吃額外 VRAM",
+      "license": "BSD-3-Clause（stablekl）"
+    },
+    {
+      "id": "20261126-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈Serving Qwen via 5,600 Lambdas for fun and 80x negative profit〉：把 4B 模型切成 5,600 次 Lambda 呼叫，貴 80 倍（HN 126 分）",
+      "summary": "有人把 Qwen3.5-4B fine-tune（H2O-Lightning，9.3GB）切成 32 層、每層一個 AWS Lambda job（3GB 上限），一次請求拆成 5,600 次 Lambda 呼叫。結論是反例：讀 4k tokens 要 17 秒、3.4 美分，等於每百萬 tokens 8.40 美元，比託管的 decision model 貴 80 倍以上。HN 126 分。",
+      "tags": [
+        "infra_runtime",
+        "qwen",
+        "serverless inference"
+      ],
+      "url": "https://noahbuilt.it/writing/qwen-on-5600-lambdas",
+      "source": "Hacker News",
+      "sourceUrl": "https://noahbuilt.it/writing/qwen-on-5600-lambdas",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-26T03:14:01+08:00",
-  "updatedAt": "2026-11-26T03:14:01+08:00"
+  "lastUpdated": "2026-11-26T03:32:35+08:00",
+  "updatedAt": "2026-11-26T03:32:35+08:00"
 }
