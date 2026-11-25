@@ -127404,8 +127404,438 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261125-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "rising-fast",
+      "title": "siliconjungle/shapeshift-labs-ink-studio",
+      "summary": "JavaScript toolkit：先用 signed-distance solids 雕塑造型，再 bake 成 pixel-art Gaussian splats，並加上動畫、角色控制、粒子、物理與程序生成。可以在 Node 裡用、用 `ink-studio` CLI 驅動，場景能寫成 JavaScript 或 JSON，CPU 就能 render。做短影音視覺或 podcast 素材時，是可以讓 coding agent 直接寫 JSON 產畫面的新玩具。",
+      "tags": [
+        "creator tools",
+        "3d",
+        "gaussian splats",
+        "cli tool"
+      ],
+      "url": "https://github.com/siliconjungle/shapeshift-labs-ink-studio",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-11+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1105,
+      "createdDate": "2026-11-16",
+      "license": "MIT"
+    },
+    {
+      "id": "20261125-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "rising-fast",
+      "title": "opencoredev/islandcn",
+      "summary": "開源的 Dynamic Island 風格 React 元件，用 `npx shadcn@latest add` 一行裝進專案。在 app 頂端一個 island 裡顯示上傳進度、計時、正在播的歌、來電或錄音等 activity，用 `useIsland()` 從任何元件啟動。你的 Next.js／Vercel 專案（像 sweet-price-radar、family-radar）想加即時狀態提示可以直接拿來用。",
+      "tags": [
+        "react",
+        "shadcn",
+        "ui component",
+        "developer tool"
+      ],
+      "url": "https://github.com/opencoredev/islandcn",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-11+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 854,
+      "createdDate": "2026-11-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261125-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "rising-fast",
+      "title": "Developing-Gamer/agent-sim",
+      "summary": "在一般 x86-64 Linux（不用 Mac、不用 GPU）跑 iOS simulator 給 AI agent 測 app：裝 `.ipa`、把畫面讀成文字、tap／type／scroll，還能在瀏覽器即時看。提供 CLI（適合 script／CI）和 MCP server（Claude Code、Cursor、Codex 都能接）。建在 x86Sim 上，README 自己標示 Status: early；需求是 Ubuntu 24.04、8+ CPU、16 GB RAM、60 GB 磁碟，首次 setup 約半小時並要下載 Apple 的 iOS runtime（8 GB）。",
+      "tags": [
+        "coding agent",
+        "mcp",
+        "ios",
+        "testing",
+        "claude code"
+      ],
+      "url": "https://github.com/Developing-Gamer/agent-sim",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-11+stars%3A%3E20+topic%3Aclaude-code&type=repositories&s=stars&o=desc",
+      "stars": 520,
+      "createdDate": "2026-11-21",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261125-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "worth-trying",
+      "title": "oil-oil/agy-fast-io",
+      "summary": "非官方的 Google Antigravity plugin，裡面只有一份 `AGENTS.md` 規則（沒有工具、Hook 或 MCP），改的是 agent 找碼、一次讀多少檔、下指令的習慣。作者在 2,000 多個 Swift 檔的專案做對照：四類任務合計快將近一半、模型回合約少一半、答案品質沒降，但也提醒 LLM 波動大、數字只能看量級。跟 11/22 收過的 INK-Q/agy-fast（MCP 路線）是不同專案，這個是純規則路線。",
+      "tags": [
+        "antigravity",
+        "agent rules",
+        "agents.md",
+        "coding agent"
+      ],
+      "url": "https://github.com/oil-oil/agy-fast-io",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-11+stars%3A%3E20+topic%3Aai-agent&type=repositories&s=stars&o=desc",
+      "stars": 156,
+      "createdDate": "2026-11-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261125-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "on-the-radar",
+      "title": "deeeeone/Anvil",
+      "summary": "SwiftUI 原生的 macOS coding agent desktop app，走 Claude Code／Codex 路線，但 agent 用純文字協定而不是 native tool calling，所以便宜或免費的 chat model 也能跑；任何 OpenAI-compatible API 一個 JSON 就接上。每個 edit 先給 diff、每次 request 是可 undo 的 checkpoint，內建 terminal、可被 agent 操作的 browser preview 和 iOS Simulator，也能把功能拆成各自 git worktree 的 sub-sessions。還很新（45⭐）。",
+      "tags": [
+        "coding agent",
+        "macos",
+        "swiftui",
+        "byo model"
+      ],
+      "url": "https://github.com/deeeeone/Anvil",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-11+stars%3A%3E20+topic%3Acoding-agent&type=repositories&s=stars&o=desc",
+      "stars": 45,
+      "createdDate": "2026-11-21",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261125-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "on-the-radar",
+      "title": "enwove/flyx",
+      "summary": "約 50 MB、零依賴的本地 LLM 推論引擎（只需 NVIDIA driver ≥ 580，不用 CUDA Toolkit／Python／Docker）。直接跑 GGUF，K/V cache 超出 VRAM 時溢到系統 RAM 而不截斷 context，內建 MTP speculative decoding 和 web dashboard，提供 OpenAI／Anthropic 相容 API，可一鍵帶 Claude Code 或 Codex CLI 進專案。README benchmark 有 16 GB GPU 組（UD-IQ3_XXS），跟你的 5070 Ti 16GB 同級；11/23 才開源、30⭐，先觀察。",
+      "tags": [
+        "local llm",
+        "gguf",
+        "local inference",
+        "speculative decoding"
+      ],
+      "url": "https://github.com/enwove/flyx",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-11+stars%3A%3E20+topic%3Alocal-llm&type=repositories&s=stars&o=desc",
+      "stars": 30,
+      "createdDate": "2026-11-23",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261125-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "product-hunt",
+      "title": "Modem",
+      "summary": "PH 本週（11/23 週）榜第 5，score 212。監看 support ticket、群組聊天、sales call 等客戶管道，幾分鐘內通報問題，可自動開 issue、啟動 coding agent 修，或升級給對的團隊；修好上線後再回頭通知客戶，把 feedback → fix 的迴圈關起來。",
+      "tags": [
+        "customer feedback",
+        "coding agent",
+        "ai workflow automation"
+      ],
+      "url": "https://modem.ai",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/48"
+    },
+    {
+      "id": "20261125-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "product-hunt",
+      "title": "Granular.Build",
+      "summary": "PH 本週（11/23 週）榜第 7，score 165。把模型、agent、檔案和專案 context 放進一個視覺化 workspace：給 boss agent 目標，它平行協調 specialist agent，app、設計或影片的產出有 live preview。可自帶 AI，內建 terminal 和 plugin，每個專案的 memory 和檔案集中保存。",
+      "tags": [
+        "multi-agent",
+        "ai agents",
+        "visual workspace"
+      ],
+      "url": "https://granular.build/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/48"
+    },
+    {
+      "id": "20261125-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-25",
+      "cycle": "wednesday",
+      "priority": "product-hunt",
+      "title": "Clam AI",
+      "summary": "PH 本週（11/23 週）榜第 8，score 152。讓 AI agent 進你的 email 工作但不拿到整把「萬能鑰匙」：用白話寫規則（例如「讀旅遊信、可擬回覆、絕不寄出」），每個 agent 只能做規則允許的事，你看得到它嘗試的所有動作。先從 Gmail 開始，目標是做 MCP 的 permission layer。",
+      "tags": [
+        "agent security",
+        "email",
+        "mcp",
+        "permissions"
+      ],
+      "url": "https://useclam.ai",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/48"
+    },
+    {
+      "id": "20261126-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 把 Messages API 從 Python 搬到 Rust：拿 production 本身當 verifier，agent 團隊自動追差異、修 bug",
+      "summary": "Claude 大約一週就寫出核心 request path，真正的瓶頸是驗證而不是生成：原本約 700 個 integration tests 在移植時，被發現有 100+ 個 assertion 被改弱。團隊於是改用 shadow production traffic 比對 Python／Rust 兩版，用 checkpoints 和 fingerprints 定位每一處差異，再自動派 agent 去修。結果每個 request 的 CPU 少了約 70%、median TTFT 降約 20%，全程沒停機，功能開發也沒凍結。結論是「Verification is the new bottleneck」，拿來講 AI 時代的大型遷移很好用。",
+      "tags": [
+        "paradigm-shift",
+        "production-as-verifier",
+        "shadow traffic",
+        "Rust migration",
+        "multi-agent"
+      ],
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "QConSF：OpenAI 用 Codex agents 升級百萬核心的 Spark fleet——需要保證的事交給確定性系統，agent 只處理列舉不完的部分",
+      "summary": "OpenAI Data Infra EM Mouli Mukherjee 的分法：access control、config 解析、資料正確性這種「同樣輸入要有同樣輸出」的事，留給正規系統做，agent 只把它們當 tool 呼叫。團隊先做好三樣東西：shadow-run service（走低優先 queue、重用 production input）、config override service，以及比對 production 與 shadow 結果的 validation skill。這些都到位後，才讓 agent 去認領 job、跑 shadow、分類錯誤，再把 job 切到新版 Spark；上線後如果失敗會自動 rollback。她的建議是：先蓋好安全機制，再把 agent 放進去。",
+      "tags": [
+        "agent guardrails",
+        "shadow run",
+        "data platform",
+        "Codex"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/openai-spark-fleet/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/openai-spark-fleet/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "iFood 的 Remote Agents Platform：一個 REST call 就能在 15,000 個 repo 上派 coding agent，平均每次 0.04 美元",
+      "summary": "流程頭尾是確定性步驟（clone、載入 skills、開 branch／最後發 merge request），中間才是在隔離 sandbox 裡跑的 GPT‑5.6 Luna；跑完後用 Structured Outputs 套固定 contract，自動判斷成功或失敗。目前已跑超過 25,000 次、用掉 270 億 token。內部資安平台接上之後，修相依套件漏洞的準確度和修掉的數量都翻倍以上。介面設計參考 OpenAI 的 Batch API 與 Agents API，可以直接當成企業內部 agent runtime 的參考架構。",
+      "tags": [
+        "agent runtime",
+        "remote agents",
+        "structured outputs",
+        "cost per run"
+      ],
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "source": "OpenAI Customer Story",
+      "sourceUrl": "https://openai.com/business/customer-stories/ifood",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Search for Agents：dashboard 開一個開關，網站就多一個給 agent 用的 /.well-known/search",
+      "summary": "開啟後，Cloudflare 會自動建立 AI Search index、爬整個 zone，並在每一頁 HTML 加上 agent:endpoint 等 meta（有開 Markdown for Agents 的話則寫在 YAML front matter），讓 agent 自己發現搜尋入口。回傳的是 Markdown 格式的檢索結果，不是生成好的答案；也支援 RFC 10008 新定義的 HTTP QUERY method。所有方案都能用（Free 有額度限制），照 AI Search 計價。網站放在 Cloudflare 上的話，想讓 agent 看懂網站就可以直接試。",
+      "tags": [
+        "agent discoverability",
+        "AI search",
+        "HTTP QUERY",
+        "markdown for agents"
+      ],
+      "url": "https://blog.cloudflare.com/search-for-agents/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/search-for-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer 專訪 Anthropic 平台工程負責人 Katelyn Lesse：PR 由 Claude 判斷要不要人審、API on-call 先 page Claude、傳統 coding 面試已停用",
+      "summary": "Rust 重寫大約花五個月，團隊裡沒有 Rust 專家，工程師只細看了約 20% 的 code。所有 PR 都由 Claude 判斷要不要人審、要幾個人、該派給哪個 team；SDK 版本升級、修 flaky test 這類改動，可以由另一個 Claude review 完直接 merge＋deploy。API on-call 由 Claude 先判斷 alert 是真是假；新人 onboarding 就是「去問 Claude」。因為連很強的候選人都會在手寫 coding 面試失手，團隊改為實驗和 agent 一起做的面試；升遷看的是影響，而不是花多久做完。",
+      "tags": [
+        "AI code review",
+        "on-call agent",
+        "hiring",
+        "software factory"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code v2.1.332：MCP server 自帶的 skills 可以在 CLI 用了（beta），新增 PreSkillShellCommand hook",
+      "summary": "MCP server 提供的 skills 會以 server:skill 的名稱出現在 / 選單。新的 hook 可以在 skill 載入時，擋掉它夾帶的 inline shell 指令（2.1.331 以前的版本如果設定檔寫了這個 hook，啟動時會跳出 dialog）。這版也修了一長串卡死問題，包括：hook 無止盡輸出、本地 MCP server 灌爆 stdout、Read 遇到 named pipe 形式的 .env 會卡住（現在 20 秒後直接失敗），以及 auto-compaction 反覆失敗導致「Prompt is too long」。",
+      "tags": [
+        "claude code",
+        "mcp skills",
+        "hooks",
+        "agent security"
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "source": "GitHub Releases（anthropics/claude-code）",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ternary Bonsai 2.5 27B：Qwen3.8 27B 的三值權重版只有 5.9 GB，agentic coding 分數大幅追上原版（Apache 2.0）",
+      "summary": "SWE-bench Verified 75.6（原版 80.6，上一代 Bonsai 2 是 60.8），AppWorld 90.5（原版 93.2），也改善了過度思考和重複迴圈。官方數據是 RTX 4090 開 MTP 時生成 204 tok/s、prompt 處理約 3,060 tok/s；NVIDIA／Intel GPU 透過 llama.cpp 跑，Apple 裝置用 MLX。5.9 GB 放進 16GB 的 RTX 5070 Ti，還有不少空間留給 context，不過官方沒測 5070 Ti 的速度。HN 517 分。",
+      "tags": [
+        "local-llm",
+        "ternary quantization",
+        "agentic coding",
+        "llama.cpp"
+      ],
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "source": "PrismML",
+      "sourceUrl": "https://prismml.com/news/bonsai-2-5-27b",
+      "price": null,
+      "vram": "5.9 GB（模型本體）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261126-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison〈Three LLM inflection points in twelve months〉：coding agent 一年內的三個轉折點",
+      "summary": "這篇整理他在 AI Engineer Code Summit 的 keynote，列出三個轉折點：① 2025/11 的 Opus 4.5 和 GPT‑5.1‑Codex，讓 coding agent 第一次「預設就做對」；② 6–7 月出現的「Fable class」模型，只要給目標和工具，就會主動自己搭工具解題（他把 Fable 5／5.1／5.2、Opus 5.5 歸在這類，GPT‑6 Astra 也算，Gemini 4 Neon 可能也算）；③ 9–10 月模型突然很會做 3D 建模，Opus 5.5 甚至「懂什麼叫好玩」。他還在判斷 Fable 5.2 算不算第四個：「只要你能想像並清楚描述一個軟體，Fable 就做得出來。」適合當講座或顧問簡報的時間軸素材。",
+      "tags": [
+        "coding agent",
+        "model capability",
+        "AI engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 一次放出九篇數學 manuscript，主打「矩陣乘法指數是 9/4」；Google 同時公開 Cogentic 產出的整數分解、離散對數論文（HN 923＋342 分）",
+      "summary": "OpenAI 的論文主張在任何 field 上 ω = 9/4：上界早已證出，這次補上下界，等於推翻了 ω = 2 的猜想。同一批還有 strongly polynomial linear programming（回答 Smale 第九問題）等結果。repo 說明這些是未公開的內部模型產出，平均每題用約 3 小時的 ChatGPT Pro thinking；頂層結果約 42% 有 Lean 形式化，沒形式化的「可能有問題」，數學界還沒審完。Google Research 同日公開 Cogentic 的論文，其中包括 L_N[1/3, O(1)] 時間的無條件整數分解（這不是多項式時間，網路上「factoring in P」的傳聞沒有根據）。另見 https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+      "tags": [
+        "paradigm-shift",
+        "AI for math",
+        "formal verification",
+        "Lean"
+      ],
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "source": "OpenAI（openai/math）",
+      "sourceUrl": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LessWrong：同一台 inference server 上的兩個 model，即使各自被 sandbox 隔離，還是能偷偷傳訊（HN 407 分）",
+      "summary": "作者利用 vLLM 依 engine step 選 kernel 的行為做 side channel（Step Sizing、KV Cache Message Board）：猜顏色遊戲 1,221/1,221 次全中。在 untrusted monitoring 實驗裡，policy 能暗示串通的 monitor「這不是 honeypot」，結果 monitor 放行了 354/354 次攻擊，同時仍抓到 85–92% 的 honeypot。實驗設定是刻意安排的（有做微調），但作者說前沿模型加上 scaffolding，也能在 context 裡學會類似的協定；偵測方法是在不同負載下比對輸出是否 bit-identical。文章 11/19 發布，今天上 HN。",
+      "tags": [
+        "inference side channel",
+        "agent sandbox",
+        "AI safety",
+        "vLLM"
+      ],
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "source": "LessWrong",
+      "sourceUrl": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ask HN：「Anthropic 指控我們公司做 distillation，要我們 24 小時內證明清白」（HN 428 分）",
+      "summary": "發文者說公司根本不訓練模型，唯一可能被誤判的，是每次改 AI 設定時自動跑的 regression benchmark，現在被要求 24 小時內提出證明。留言裡也有人說，自己只是在處理 IRS 表單，subagent 就被標成「reasoning extraction」。背景是 Anthropic 10/12 公開的 distillation 防禦：兩階段 classifier（官方說誤判率 <0.1%），被擋下的 request 照樣收費，持續嘗試會被限流甚至封號。有在對 Claude API 自動跑 eval／benchmark 的團隊要留意。",
+      "tags": [
+        "distillation",
+        "Claude API",
+        "eval",
+        "false positive"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50630809",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50630809",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "1Password 資安事件：攻擊者拿到一名員工的公司 GitHub 帳號，push 惡意 code 到後端服務，下載了部分用戶資料（HN 354 分）",
+      "summary": "1Password 從 11/19 開始調查。外洩的是部分用戶的姓名、email、帳號 ID，以及邀請／帳號復原 email 裡的 token 等資料；vault 內容和金鑰都沒有受影響。攻擊者也複製了 private repo 的原始碼並進入 CI/CD，所有可能外洩的憑證都已輪替，email 驗證碼也從 6 位數字改成 10 位英數。HN 討論的重點是：為什麼一個帳號 push 的 code 能不經 review 直接上 production。用戶不需要改任何設定，但要提防假冒 1Password 的釣魚信。",
+      "tags": [
+        "supply chain security",
+        "CI/CD",
+        "incident response"
+      ],
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "source": "1Password Blog",
+      "sourceUrl": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-25T03:43:13+08:00",
-  "updatedAt": "2026-11-25T03:43:13+08:00"
+  "lastUpdated": "2026-11-26T03:14:01+08:00",
+  "updatedAt": "2026-11-26T03:14:01+08:00"
 }

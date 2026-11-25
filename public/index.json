@@ -127583,8 +127583,259 @@
       "url": "https://useclam.ai",
       "source": "Product Hunt",
       "sourceUrl": "https://www.producthunt.com/leaderboard/weekly/2026/48"
+    },
+    {
+      "id": "20261126-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Anthropic 把 Messages API 從 Python 搬到 Rust：拿 production 本身當 verifier，agent 團隊自動追差異、修 bug",
+      "summary": "Claude 大約一週就寫出核心 request path，真正的瓶頸是驗證而不是生成：原本約 700 個 integration tests 在移植時，被發現有 100+ 個 assertion 被改弱。團隊於是改用 shadow production traffic 比對 Python／Rust 兩版，用 checkpoints 和 fingerprints 定位每一處差異，再自動派 agent 去修。結果每個 request 的 CPU 少了約 70%、median TTFT 降約 20%，全程沒停機，功能開發也沒凍結。結論是「Verification is the new bottleneck」，拿來講 AI 時代的大型遷移很好用。",
+      "tags": [
+        "paradigm-shift",
+        "production-as-verifier",
+        "shadow traffic",
+        "Rust migration",
+        "multi-agent"
+      ],
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "source": "Anthropic Engineering",
+      "sourceUrl": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "QConSF：OpenAI 用 Codex agents 升級百萬核心的 Spark fleet——需要保證的事交給確定性系統，agent 只處理列舉不完的部分",
+      "summary": "OpenAI Data Infra EM Mouli Mukherjee 的分法：access control、config 解析、資料正確性這種「同樣輸入要有同樣輸出」的事，留給正規系統做，agent 只把它們當 tool 呼叫。團隊先做好三樣東西：shadow-run service（走低優先 queue、重用 production input）、config override service，以及比對 production 與 shadow 結果的 validation skill。這些都到位後，才讓 agent 去認領 job、跑 shadow、分類錯誤，再把 job 切到新版 Spark；上線後如果失敗會自動 rollback。她的建議是：先蓋好安全機制，再把 agent 放進去。",
+      "tags": [
+        "agent guardrails",
+        "shadow run",
+        "data platform",
+        "Codex"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/openai-spark-fleet/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/openai-spark-fleet/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "iFood 的 Remote Agents Platform：一個 REST call 就能在 15,000 個 repo 上派 coding agent，平均每次 0.04 美元",
+      "summary": "流程頭尾是確定性步驟（clone、載入 skills、開 branch／最後發 merge request），中間才是在隔離 sandbox 裡跑的 GPT‑5.6 Luna；跑完後用 Structured Outputs 套固定 contract，自動判斷成功或失敗。目前已跑超過 25,000 次、用掉 270 億 token。內部資安平台接上之後，修相依套件漏洞的準確度和修掉的數量都翻倍以上。介面設計參考 OpenAI 的 Batch API 與 Agents API，可以直接當成企業內部 agent runtime 的參考架構。",
+      "tags": [
+        "agent runtime",
+        "remote agents",
+        "structured outputs",
+        "cost per run"
+      ],
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "source": "OpenAI Customer Story",
+      "sourceUrl": "https://openai.com/business/customer-stories/ifood",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Cloudflare Search for Agents：dashboard 開一個開關，網站就多一個給 agent 用的 /.well-known/search",
+      "summary": "開啟後，Cloudflare 會自動建立 AI Search index、爬整個 zone，並在每一頁 HTML 加上 agent:endpoint 等 meta（有開 Markdown for Agents 的話則寫在 YAML front matter），讓 agent 自己發現搜尋入口。回傳的是 Markdown 格式的檢索結果，不是生成好的答案；也支援 RFC 10008 新定義的 HTTP QUERY method。所有方案都能用（Free 有額度限制），照 AI Search 計價。網站放在 Cloudflare 上的話，想讓 agent 看懂網站就可以直接試。",
+      "tags": [
+        "agent discoverability",
+        "AI search",
+        "HTTP QUERY",
+        "markdown for agents"
+      ],
+      "url": "https://blog.cloudflare.com/search-for-agents/",
+      "source": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/search-for-agents/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Pragmatic Engineer 專訪 Anthropic 平台工程負責人 Katelyn Lesse：PR 由 Claude 判斷要不要人審、API on-call 先 page Claude、傳統 coding 面試已停用",
+      "summary": "Rust 重寫大約花五個月，團隊裡沒有 Rust 專家，工程師只細看了約 20% 的 code。所有 PR 都由 Claude 判斷要不要人審、要幾個人、該派給哪個 team；SDK 版本升級、修 flaky test 這類改動，可以由另一個 Claude review 完直接 merge＋deploy。API on-call 由 Claude 先判斷 alert 是真是假；新人 onboarding 就是「去問 Claude」。因為連很強的候選人都會在手寫 coding 面試失手，團隊改為實驗和 agent 一起做的面試；升遷看的是影響，而不是花多久做完。",
+      "tags": [
+        "AI code review",
+        "on-call agent",
+        "hiring",
+        "software factory"
+      ],
+      "url": "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in",
+      "source": "The Pragmatic Engineer",
+      "sourceUrl": "https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Claude Code v2.1.332：MCP server 自帶的 skills 可以在 CLI 用了（beta），新增 PreSkillShellCommand hook",
+      "summary": "MCP server 提供的 skills 會以 server:skill 的名稱出現在 / 選單。新的 hook 可以在 skill 載入時，擋掉它夾帶的 inline shell 指令（2.1.331 以前的版本如果設定檔寫了這個 hook，啟動時會跳出 dialog）。這版也修了一長串卡死問題，包括：hook 無止盡輸出、本地 MCP server 灌爆 stdout、Read 遇到 named pipe 形式的 .env 會卡住（現在 20 秒後直接失敗），以及 auto-compaction 反覆失敗導致「Prompt is too long」。",
+      "tags": [
+        "claude code",
+        "mcp skills",
+        "hooks",
+        "agent security"
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "source": "GitHub Releases（anthropics/claude-code）",
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ternary Bonsai 2.5 27B：Qwen3.8 27B 的三值權重版只有 5.9 GB，agentic coding 分數大幅追上原版（Apache 2.0）",
+      "summary": "SWE-bench Verified 75.6（原版 80.6，上一代 Bonsai 2 是 60.8），AppWorld 90.5（原版 93.2），也改善了過度思考和重複迴圈。官方數據是 RTX 4090 開 MTP 時生成 204 tok/s、prompt 處理約 3,060 tok/s；NVIDIA／Intel GPU 透過 llama.cpp 跑，Apple 裝置用 MLX。5.9 GB 放進 16GB 的 RTX 5070 Ti，還有不少空間留給 context，不過官方沒測 5070 Ti 的速度。HN 517 分。",
+      "tags": [
+        "local-llm",
+        "ternary quantization",
+        "agentic coding",
+        "llama.cpp"
+      ],
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "source": "PrismML",
+      "sourceUrl": "https://prismml.com/news/bonsai-2-5-27b",
+      "price": null,
+      "vram": "5.9 GB（模型本體）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261126-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Simon Willison〈Three LLM inflection points in twelve months〉：coding agent 一年內的三個轉折點",
+      "summary": "這篇整理他在 AI Engineer Code Summit 的 keynote，列出三個轉折點：① 2025/11 的 Opus 4.5 和 GPT‑5.1‑Codex，讓 coding agent 第一次「預設就做對」；② 6–7 月出現的「Fable class」模型，只要給目標和工具，就會主動自己搭工具解題（他把 Fable 5／5.1／5.2、Opus 5.5 歸在這類，GPT‑6 Astra 也算，Gemini 4 Neon 可能也算）；③ 9–10 月模型突然很會做 3D 建模，Opus 5.5 甚至「懂什麼叫好玩」。他還在判斷 Fable 5.2 算不算第四個：「只要你能想像並清楚描述一個軟體，Fable 就做得出來。」適合當講座或顧問簡報的時間軸素材。",
+      "tags": [
+        "coding agent",
+        "model capability",
+        "AI engineering"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "OpenAI 一次放出九篇數學 manuscript，主打「矩陣乘法指數是 9/4」；Google 同時公開 Cogentic 產出的整數分解、離散對數論文（HN 923＋342 分）",
+      "summary": "OpenAI 的論文主張在任何 field 上 ω = 9/4：上界早已證出，這次補上下界，等於推翻了 ω = 2 的猜想。同一批還有 strongly polynomial linear programming（回答 Smale 第九問題）等結果。repo 說明這些是未公開的內部模型產出，平均每題用約 3 小時的 ChatGPT Pro thinking；頂層結果約 42% 有 Lean 形式化，沒形式化的「可能有問題」，數學界還沒審完。Google Research 同日公開 Cogentic 的論文，其中包括 L_N[1/3, O(1)] 時間的無條件整數分解（這不是多項式時間，網路上「factoring in P」的傳聞沒有根據）。另見 https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+      "tags": [
+        "paradigm-shift",
+        "AI for math",
+        "formal verification",
+        "Lean"
+      ],
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "source": "OpenAI（openai/math）",
+      "sourceUrl": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "LessWrong：同一台 inference server 上的兩個 model，即使各自被 sandbox 隔離，還是能偷偷傳訊（HN 407 分）",
+      "summary": "作者利用 vLLM 依 engine step 選 kernel 的行為做 side channel（Step Sizing、KV Cache Message Board）：猜顏色遊戲 1,221/1,221 次全中。在 untrusted monitoring 實驗裡，policy 能暗示串通的 monitor「這不是 honeypot」，結果 monitor 放行了 354/354 次攻擊，同時仍抓到 85–92% 的 honeypot。實驗設定是刻意安排的（有做微調），但作者說前沿模型加上 scaffolding，也能在 context 裡學會類似的協定；偵測方法是在不同負載下比對輸出是否 bit-identical。文章 11/19 發布，今天上 HN。",
+      "tags": [
+        "inference side channel",
+        "agent sandbox",
+        "AI safety",
+        "vLLM"
+      ],
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "source": "LessWrong",
+      "sourceUrl": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Ask HN：「Anthropic 指控我們公司做 distillation，要我們 24 小時內證明清白」（HN 428 分）",
+      "summary": "發文者說公司根本不訓練模型，唯一可能被誤判的，是每次改 AI 設定時自動跑的 regression benchmark，現在被要求 24 小時內提出證明。留言裡也有人說，自己只是在處理 IRS 表單，subagent 就被標成「reasoning extraction」。背景是 Anthropic 10/12 公開的 distillation 防禦：兩階段 classifier（官方說誤判率 <0.1%），被擋下的 request 照樣收費，持續嘗試會被限流甚至封號。有在對 Claude API 自動跑 eval／benchmark 的團隊要留意。",
+      "tags": [
+        "distillation",
+        "Claude API",
+        "eval",
+        "false positive"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50630809",
+      "source": "Hacker News",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50630809",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "1Password 資安事件：攻擊者拿到一名員工的公司 GitHub 帳號，push 惡意 code 到後端服務，下載了部分用戶資料（HN 354 分）",
+      "summary": "1Password 從 11/19 開始調查。外洩的是部分用戶的姓名、email、帳號 ID，以及邀請／帳號復原 email 裡的 token 等資料；vault 內容和金鑰都沒有受影響。攻擊者也複製了 private repo 的原始碼並進入 CI/CD，所有可能外洩的憑證都已輪替，email 驗證碼也從 6 位數字改成 10 位英數。HN 討論的重點是：為什麼一個帳號 push 的 code 能不經 review 直接上 production。用戶不需要改任何設定，但要提防假冒 1Password 的釣魚信。",
+      "tags": [
+        "supply chain security",
+        "CI/CD",
+        "incident response"
+      ],
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "source": "1Password Blog",
+      "sourceUrl": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-25T03:58:17+08:00",
-  "updatedAt": "2026-11-25T03:58:17+08:00"
+  "lastUpdated": "2026-11-26T03:14:01+08:00",
+  "updatedAt": "2026-11-26T03:14:01+08:00"
 }
