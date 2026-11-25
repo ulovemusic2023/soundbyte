@@ -128051,8 +128051,175 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261126-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Simon Willison：過去 12 個月 LLM 的三個 inflection points——「能清楚描述的軟體，Fable 就做得出來」",
+      "summary": "Simon 在 AI Engineer Code Summit 的 keynote 延伸文。第一個轉折點是一年前（2025/11/24）的 Claude Opus 4.5 和 GPT-5.1-Codex：coding agent 的預設輸出「通常就是對的」，他才把 Claude Code 當主力工具。第二個是 6–7 月的「Fable class」模型：給目標、給工具，它會主動自己搭工具解題（例如用五支 WebAudio 麥克風把神秘嗶聲定位到 40cm 內）。第三個是 9–10 月：模型突然很會 3D 建模，Opus 5.5 甚至「懂得什麼叫好玩」——他叫它「make it a LOT more fun」，模型 playtest 12 小時後，RTS 遊戲從無聊變成很好玩。他還在判斷 Fable 5.2 算不算第四個轉折點：「if you can imagine and then clearly describe a piece of software, Fable can build it.」可以直接拿來當顧問簡報和 podcast 的時間軸：瓶頸已經從「寫得出來」變成「描述得清楚」。",
+      "tags": [
+        "inflection-points",
+        "coding-agents",
+        "ai-consulting",
+        "specification"
+      ],
+      "url": "https://x.com/simonw/status/2125369126877286662",
+      "source": "Simon Willison's Weblog",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Codie Sanchez：花在老客戶身上的時間，應該是開發新客戶的 10 倍",
+      "summary": "她的團隊 10 月和年營收 $500K–$25M 的企業做了 135 通顧問電話，很驚訝有多少老闆從來沒回頭打給舊客戶——有些人手上有 600、1,000 甚至 3,000 人的名單，好幾個月、甚至一年以上沒聯絡。邏輯很簡單：每個舊客戶你都已經付過獲客成本，他們也已經信任你；買新 lead 之前，先拿起電話打給他們。對 AI 顧問接案：上過課、聽過講座、做過專案的人，就是最便宜的下一筆案子。",
+      "tags": [
+        "retention",
+        "existing-customers",
+        "sales",
+        "consulting"
+      ],
+      "url": "https://x.com/Codie_Sanchez/status/2125636442508427497",
+      "source": "X @Codie_Sanchez",
+      "sourceUrl": "https://x.com/Codie_Sanchez/status/2125636442508427497",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Alex Lieberman 的 AEO 課程筆記：「SEO 讓你進清單，AEO 讓你進答案」",
+      "summary": "Morning Brew 共同創辦人上完 Profound 的 11 單元 AEO 課後整理的筆記（貼文標註 #Sponsored，數據多來自 Profound 自家研究，要打點折扣）。重點：2026 年初美國 68% 的 Google 搜尋沒有點擊；Profound 測的 221 個 ChatGPT 購物任務裡，92.8% 沒有實質點進任何網站。站內要把直接答案放最前面、每段能獨立成立、加 schema；站外的評論網站、比較文、Reddit 和產業媒體，對 AI 能見度的影響比你的官網還大。AI 主動提到某個品牌後，7 天內該品牌網站造訪量可達 1.5–2.5 倍，而且 97% 以上沒有 referral 標記——「The click is not the goal, the mention is.」接續昨天 a16z 的 B2A 報告，這份是更可操作的檢查清單（也記得檢查 robots.txt 有沒有在 2023 年擋掉 AI crawler）。",
+      "tags": [
+        "aeo",
+        "geo",
+        "distribution",
+        "b2a"
+      ],
+      "url": "https://x.com/businessbarista/status/2125388372415742024",
+      "source": "X @businessbarista",
+      "sourceUrl": "https://x.com/businessbarista/status/2125388372415742024",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "Greg Isenberg：現在最「AI-proof」的東西，大概是一群受眾",
+      "summary": "\"The most AI proof thing you can build right now is probably an audience.\" — Greg Isenberg。他認識產品很好但沒有受眾的 founder，也認識受眾很投入、產品普通的 founder——後者壓力小很多（341 likes、190+ 則回覆）。對經營 podcast 和 Threads 的人：當產品越來越容易被 AI 複製，受眾的信任才是複製不了的資產。",
+      "tags": [
+        "audience",
+        "distribution",
+        "ai-proof",
+        "creator"
+      ],
+      "url": "https://x.com/gregisenberg/status/2125589710860882313",
+      "source": "X @gregisenberg",
+      "sourceUrl": "https://x.com/gregisenberg/status/2125589710860882313",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "Ian Duncan〈Smart people who give a shit use tools〉：LLM 只是放大你原本是怎樣的人",
+      "summary": "回應 Justin Michael 那篇「把在乎系統的人換成 AI 才導致大當機」的文章。Duncan 同意糟糕的管理是問題，但不同意「用 AI = 不再在乎」：以前的「在乎」其實是被時間配給的——知道該寫 TLA+ spec、property test、讀完下游四萬行的服務，卻因為要花兩天只好看一眼 diff 就祈禱。現在真正在乎的工程師終於做得起這些：寫 spec、做模擬器、追蹤每個 caller、跑 mutation testing，「以前只有航電軟體或 Bell Labs 才有的嚴謹，現在一個普通的週四就做得到」。另一面是「meat proxy」——按 accept all、說不出第 400 行在幹嘛的人；但他們在 ChatGPT 之前就是複製 Stack Overflow、30 秒 LGTM 的同一群人。HN 145 分、141 則留言。很適合《還沒被取代》的一集：被取代的不是會用工具的人，而是本來就不在乎的人。",
+      "tags": [
+        "ai-amplifier",
+        "engineering-culture",
+        "ownership",
+        "craft"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50639698",
+      "source": "iankduncan.com",
+      "sourceUrl": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "mental-model",
+      "title": "levelsio：AI labs 會用「個人化 app」接管作業系統——所以他在買 Big Tech / Big AI 股票",
+      "summary": "他說一個月前講這個還很有爭議，現在 Claude 已經會自己生出個人化的 macOS app，下一步可能是 iOS（如果 Apple 允許）和 Windows。他的框架：整個 app layer 會變成個人化（只做你需要的）、動態（一直在變）、某種程度上是臨時的（用完即丟），而且由 AI labs 即時生成。他的應對不是跟它競爭，而是「成為共同擁有者」——買 Big Tech / Big AI 股票（X 上 1.7k+ likes）。給做 app 的獨立開發者一個問題：你的產品，是不是使用者以後一句 prompt 就能生出來的那種？",
+      "tags": [
+        "personalized-apps",
+        "platform-shift",
+        "indie-hacker",
+        "ownership"
+      ],
+      "url": "https://x.com/levelsio/status/2125515439770104282",
+      "source": "levels.io",
+      "sourceUrl": "https://levels.io/ai-labs-take-over-the-os",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "playbook",
+      "title": "Zscaler 的 Jay Chaudhry：自掏 $50M、五年不拿 VC，CrowdStrike 以 $43.9B 收購時家族還持有約三分之一",
+      "summary": "SaaStr 拆解 CrowdStrike 以約 $43.9B 企業價值全股票收購 Zscaler：Chaudhry 家族持股約三分之一到 40%，一般創投路線的 founder 在 $40B 出場時通常只剩個位數百分比。關鍵決策：2007 年自己投入約 $50M、2012 年才第一次對外募資；那時已經現金流為正、有 2,500 個客戶，所以那一輪是「可選的」，條件好很多；IPO 時外部投資人只持有約 16%，所以他才能拒絕 Cisco 約 $2B 的收購（現在的價格大約是 20 倍）。他自己說：「如果 Zscaler 大部分被 VC 持有，他們大概會把它收掉。」可以帶走的四點：資助你慢熟期的人要等得起你的市場；能等 PMF 之後再募就等；每少募一輪，出場時就多留一份；先想清楚大 offer 來的那天，cap table 上誰會逼你賣。",
+      "tags": [
+        "bootstrapping",
+        "cap-table",
+        "fundraising",
+        "founder-control"
+      ],
+      "url": "https://www.saastr.com/jay-chaudhry-put-50m-of-his-own-money-into-zscaler-and-took-no-vc-for-five-years-crowdstrike-just-paid-43-9b/",
+      "source": "SaaStr",
+      "sourceUrl": "https://www.saastr.com/jay-chaudhry-put-50m-of-his-own-money-into-zscaler-and-took-no-vc-for-five-years-crowdstrike-just-paid-43-9b/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261126-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "quotable",
+      "title": "James Clear：學更多只會增加知識，只有多去嘗試才會減少恐懼",
+      "summary": "\"Learning more will increase knowledge, but only attempting more will reduce fear. The more you try it, the less you will fear it.\" — James Clear。4.7k+ likes。準備和研究讓你知道更多，但不會讓你比較不怕；能降低恐懼的只有一次次實際去做。",
+      "tags": [
+        "fear",
+        "action",
+        "learning"
+      ],
+      "url": "https://x.com/JamesClear/status/2125304129463705744",
+      "source": "X @JamesClear",
+      "sourceUrl": "https://x.com/JamesClear/status/2125304129463705744",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-26T03:32:35+08:00",
-  "updatedAt": "2026-11-26T03:32:35+08:00"
+  "lastUpdated": "2026-11-26T03:35:57+08:00",
+  "updatedAt": "2026-11-26T03:35:57+08:00"
 }
