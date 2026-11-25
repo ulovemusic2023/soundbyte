@@ -128218,8 +128218,444 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261126-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "deterministic-machines/deslop-please",
+      "summary": "照《A Philosophy of Software Design》「deep modules、narrow interfaces」原則寫的 opinionated linter，`cargo install` 即用，會抓出像 field-leak（某 struct 欄位被 2 個 module、4 處直接碰）、module-cycle 這類結構性 slop，並建議加進 `AGENTS.md` 讓 coding agent 一起守規則。README 範例是 Rust 專案。",
+      "tags": [
+        "linter",
+        "code quality",
+        "coding agent",
+        "AGENTS.md",
+        "rust"
+      ],
+      "url": "https://github.com/deterministic-machines/deslop-please",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-12+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 1041,
+      "createdDate": "2026-11-22",
+      "license": "MIT"
+    },
+    {
+      "id": "20261126-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "sybil-solutions/skill-distill",
+      "summary": "Claude Code / Codex 的 skill：一個 session 做得好之後叫它當 teacher，把過程蒸餾成給 open-weight 模型（例如 omp + DeepSeek-V4.1-Flash）用的 skill，在 tmux 裡讓 student 重跑、比對、修 skill，每版跑 3 次直到結果對齊，最後由你人工驗收。想把 Claude 做得好的流程轉給本機小模型跑時很實用。",
+      "tags": [
+        "claude-code",
+        "codex",
+        "agent skills",
+        "open-weight model",
+        "distillation"
+      ],
+      "url": "https://github.com/sybil-solutions/skill-distill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-12+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 801,
+      "createdDate": "2026-11-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261126-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "xikhar/papercraft",
+      "summary": "Agent skill：讓 Claude Code、Codex、Cursor 等用程式做出「手工立體紙雕」風格的遊戲、three.js 場景、網頁和動畫，`npx skills add xikhar/papercraft` 安裝；附 `capture.py` 可輸出 16:9、9:16 Reel、方形、4K 等尺寸的靜態圖與 MP4。做創作者內容／短影音素材可以玩。",
+      "tags": [
+        "agent skills",
+        "three.js",
+        "animation",
+        "creator tools",
+        "claude-code"
+      ],
+      "url": "https://github.com/xikhar/papercraft",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E2026-11-12+stars%3A%3E50&type=repositories&s=stars&o=desc",
+      "stars": 693,
+      "createdDate": "2026-11-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261126-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "opensetlabs/openset-llm",
+      "summary": "純 CPU 的本機 LLM 推論引擎＋OpenAI-compatible server：README 宣稱 27B 模型（PrismML 的 ternary 模型）在 8 vCPU／8 GB RAM 的 AVX-512 機器跑到 17–20 tok/s，約為同機 ik_llama.cpp 的 4 倍以上；需 Linux 或 WSL2、CPU 要支援 AVX-512。",
+      "tags": [
+        "local-llm",
+        "cpu inference",
+        "openai-compatible",
+        "ternary"
+      ],
+      "url": "https://github.com/opensetlabs/openset-llm",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Alocal-llm+created%3A%3E2026-11-12+stars%3A%3E20&type=repositories&s=stars&o=desc",
+      "stars": 560,
+      "createdDate": "2026-11-13",
+      "license": "MIT"
+    },
+    {
+      "id": "20261126-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "rising-fast",
+      "title": "EL4CTEO/shrink-anything",
+      "summary": "fast-anything 同作者的新工具：找出 dead code、沒人 import 的檔案、沒用到的 dependency 和 assets，刪一刀就跑一次你自己的測試，過了才留、壞了就放回去；`shrink-anything go --agent claude -- npm test` 一行跑完，判斷題交給 Claude。README 稱 demo app 讓 agent 要讀的 tokens 少 46%，支援 19 種語言。",
+      "tags": [
+        "claude-code",
+        "dead code",
+        "token efficiency",
+        "refactoring"
+      ],
+      "url": "https://github.com/EL4CTEO/shrink-anything",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-11-12+stars%3A%3E20&type=repositories&s=stars&o=desc",
+      "stars": 271,
+      "createdDate": "2026-11-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20261126-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "qianyiai/kurocat",
+      "summary": "Tauri v2 + Rust 做的透明置頂桌面「打字小黑貓」（Bongo Cat 替代品），可當 OBS 透明直播源，支援 Win／Mac／Linux／Android，還有 MCP 與 AI coding 工具（Codex、DeepSeek Harness 等）狀態聯動。直播或錄教學影片時的小彩蛋。",
+      "tags": [
+        "obs overlay",
+        "tauri",
+        "mcp",
+        "creator tools"
+      ],
+      "url": "https://github.com/qianyiai/kurocat",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-11-12+stars%3A%3E20&type=repositories&s=stars&o=desc",
+      "stars": 945,
+      "createdDate": "2026-11-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261126-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "worth-trying",
+      "title": "Students-of-Local/smoothstone",
+      "summary": "Skill + CLI，讓 LFM3-1.7B 這種本機小模型也能用文字或圖片產生可 3D 列印的 OpenSCAD 零件；每個指令結尾都印出「NEXT」下一步，模型就算經過 context compaction 忘光也能用 `stone status` 接續。值得參考它對付小模型失憶的設計。",
+      "tags": [
+        "local-llm",
+        "agent skills",
+        "context compaction",
+        "3d printing"
+      ],
+      "url": "https://github.com/Students-of-Local/smoothstone",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Alocal-llm+created%3A%3E2026-11-12+stars%3A%3E20&type=repositories&s=stars&o=desc",
+      "stars": 82,
+      "createdDate": "2026-11-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261126-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "on-the-radar",
+      "title": "milind-soni/OpenMausBot",
+      "summary": "開源的「多 bot 聊天室」桌面 app：側欄每個 bot 都是本機跑的 Claude 或 Codex agent，有各自的個性、模型、雲端電腦和連接的 apps，可以看它們工作、重要動作由你批准。本週 trending +2,840 stars。",
+      "tags": [
+        "multi-agent",
+        "personal agent",
+        "claude",
+        "codex"
+      ],
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 27808,
+      "createdDate": "2026-08-11",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261126-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "on-the-radar",
+      "title": "we-promise/sure",
+      "summary": "已停止開發的 Maybe Finance 的社群 fork，可用 Docker 自架的個人理財／資產管理 app。本週 GitHub trending +1,567 stars，想自架記帳、追蹤資產時可以看看。",
+      "tags": [
+        "personal finance",
+        "self-hosted",
+        "docker"
+      ],
+      "url": "https://github.com/we-promise/sure",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 17902,
+      "createdDate": "2025-07-23",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "20261126-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "on-the-radar",
+      "title": "therandomsecurityguy/signet",
+      "summary": "Agent 和 skill 的治理 registry：把身分和不可變的版本 snapshot 分開，每個版本要過 SHACL policy、ontology、LLM 語意分析和人工 review 五層驗證才能 certified，發布內容做 canonicalize 後簽章並記到 transparency log。跟你研究的 agent 權限邊界／供應鏈信任有關。",
+      "tags": [
+        "agent skills",
+        "governance",
+        "supply chain",
+        "mcp"
+      ],
+      "url": "https://github.com/therandomsecurityguy/signet",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-11-12+stars%3A%3E20&type=repositories&s=stars&o=desc",
+      "stars": 225,
+      "createdDate": "2026-11-14",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "20261126-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "product-hunt",
+      "title": "MyClaw 3.0",
+      "summary": "把 OpenClaw、Claude Code、Codex、Hermes Agent、Pi 等組成一支 AI 團隊，每個成員有自己的角色、工具、skills 和模型（50+ 可選），團隊共用記憶；agents 跑在 always-on 雲端電腦上，可從 web、Slack、Telegram、WhatsApp 派工。11/25 PH 日榜 #1。",
+      "tags": [
+        "multi-agent",
+        "shared memory",
+        "openclaw",
+        "claude-code"
+      ],
+      "url": "https://www.producthunt.com/products/myclaw-3-0",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/25"
+    },
+    {
+      "id": "20261126-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "product-hunt",
+      "title": "Canva MCP",
+      "summary": "Canva 推出 MCP，標語是讓任何 AI agent 都能接上 Canva 做設計。PH 頁面描述只有 Canva 本身的介紹，具體開放哪些 tools 需再看官方文件。11/25 PH 日榜 #3。",
+      "tags": [
+        "mcp",
+        "design",
+        "creator tools"
+      ],
+      "url": "https://www.producthunt.com/products/canva",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/25"
+    },
+    {
+      "id": "20261126-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-26",
+      "cycle": "thursday",
+      "priority": "product-hunt",
+      "title": "Koed",
+      "summary": "替每個 coding project 配一個「Kin」：記住你的工作習慣、做過的決定和試過的東西，再據此給 Claude Code、Codex、Pi 指引，目標是更快、更省 tokens；on-device 執行、免費開源。11/25 PH 日榜 #7，跟你研究的 agent memory 主題直接相關。",
+      "tags": [
+        "agent memory",
+        "claude-code",
+        "codex",
+        "open source"
+      ],
+      "url": "https://www.producthunt.com/products/koed",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/25"
+    },
+    {
+      "id": "20261126-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "TIDAL 全面禁止 AI 生成音樂：將刪除約 2,700 萬首 AI 曲目",
+      "summary": "TIDAL 宣布升級夏季的 demonetization 政策，將刪除、拒收並禁止完全由 AI 生成的音訊，據 DMN 報導約涉及 2,700 萬首曲目，並阻擋發行商上傳純 AI 作品。背景是 AI slop 上傳量暴增。",
+      "priority": "high",
+      "tags": [
+        "ai music",
+        "streaming",
+        "ai slop",
+        "tidal"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/24/tidal-bans-ai-generated-music/"
+    },
+    {
+      "id": "20261126-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Jason Isbell 擴大 Suno 集體訴訟至 20 位原告",
+      "summary": "Jason Isbell 與 David Lowery 的 Suno 集體訴訟擴大到 20 位原告，幾乎每個 subclass 都有代表人，同時收緊 class 定義並重新設定責任理論。此案是 AI 音樂訓練資料爭議的重要走向。",
+      "priority": "high",
+      "tags": [
+        "suno",
+        "lawsuit",
+        "ai music",
+        "copyright"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/24/jason-isbell-expands-suno-lawsuit/"
+    },
+    {
+      "id": "20261126-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "iZotope 推出 Nectar 5：新增 lyrics-based editing 人聲編輯",
+      "summary": "iZotope 發表 Nectar 5 人聲 plugin 套裝，新增兩個模組、改版 Vocal Assistant，並推出 ARA 創意效果 plugin「Moments」。標題強調可依歌詞進行人聲編輯。",
+      "priority": "high",
+      "tags": [
+        "ai audio",
+        "vocal",
+        "izotope",
+        "plugin",
+        "ara"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/izotope-launches-nectar-5-with-lyrics-based-editing-for-vocals/"
+    },
+    {
+      "id": "20261126-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "IncrementDET：以 enrollment 方式持續偵測 AI 生成音樂（arXiv）",
+      "summary": "新論文提出 IncrementDET：每個新的音樂 generator 只加一個線性分類器（needle），舊的不動，並以 Sidak correction 控制整體誤報率。作者另建 EvoMusicFake-17K 資料集，稱比 SpecTTTra 更能學新 generator、更新成本更低。",
+      "priority": "high",
+      "tags": [
+        "ai music detection",
+        "arxiv",
+        "music understanding",
+        "benchmark"
+      ],
+      "source": "arXiv cs.SD",
+      "sourceUrl": "https://arxiv.org/abs/2611.32023"
+    },
+    {
+      "id": "20261126-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Tootable Instruments eureka!：Mutable Instruments Ambika 化身免費虛擬樂器",
+      "summary": "eureka! 以軟體方式執行 Mutable Instruments Ambika firmware，提供六個 part、modeled filters、立體聲 panning 與更多 modulation，並支援 Ambika presets，支援 macOS 與 Windows。",
+      "priority": "medium",
+      "tags": [
+        "virtual instrument",
+        "free plugin",
+        "synth",
+        "mutable instruments"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/25/tootable-instruments-eureka-brings-mutable-instruments-ambika-back-as-free-virtual-instrument/"
+    },
+    {
+      "id": "20261126-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "FieldSynth：把粒子與游標移動變成旋律的 generative synth",
+      "summary": "FieldSynth 將粒子與游標的運動轉成持續演變的旋律與節奏，結合 FM 與 subtractive synthesis、modulation、效果與 MIDI，提供桌面、iOS 與瀏覽器版本。",
+      "priority": "medium",
+      "tags": [
+        "generative music",
+        "synth",
+        "ios",
+        "midi"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/25/fieldsynth-brings-generative-particle-synthesis-to-iphone-ipad-desktop/"
+    },
+    {
+      "id": "20261126-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Cherry Audio DW-8K：重現 Korg DW-8000 並擴充複音與調變",
+      "summary": "Cherry Audio DW-8K 重現 Korg DW-8000，提供 dual-layer、16-voice 複音、擴充 modulation、每層 sequencing、MPE 支援與 25 種效果。",
+      "priority": "medium",
+      "tags": [
+        "virtual instrument",
+        "synth",
+        "mpe",
+        "cherry audio"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/24/cherry-audio-dw-8k-korg-dw-8000-synthesizer/"
+    },
+    {
+      "id": "20261126-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Elektron Tonverk OS v1.5.0：新增 2 個 Machine、4 個 FX",
+      "summary": "Elektron 為 Tonverk 多聲部 multisampler 發布 OS v1.5.0，新增兩個 Machines、四個 FX、更深入的編輯與 routing，並擴充 MIDI 功能。",
+      "priority": "medium",
+      "tags": [
+        "hardware",
+        "sampler",
+        "elektron",
+        "firmware"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/elektron-releases-tonverk-os-v1-5-0-upgrade/"
+    },
+    {
+      "id": "20261126-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "BumaStemra 威脅對 AI 背景音樂供應商 YourNeuroTune 採取法律行動",
+      "summary": "荷蘭著作權集管組織 BumaStemra 表示，將對主打「高端、免版稅」商用背景音樂的新創 YourNeuroTune 採取法律行動，稱其做法不合法，對象包含零售、健身與餐旅客戶。",
+      "priority": "medium",
+      "tags": [
+        "ai music",
+        "licensing",
+        "copyright",
+        "collecting society"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/24/bumastemra-yourneurotune-action/"
+    },
+    {
+      "id": "20261126-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-26",
+      "cycle": "morning",
+      "title": "Synth Explorer：瀏覽器版 Sequential／Oberheim preset 轉換與 librarian",
+      "summary": "Synth Explorer 是瀏覽器端編輯器與 librarian，可在 Prophet-5/10 Rev4、Prophet-6、OB-6 與 TEO-5 之間轉換 presets，支援 SysEx、即時編輯與共享音色庫。",
+      "priority": "low",
+      "tags": [
+        "librarian",
+        "sysex",
+        "synth",
+        "web tool"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/25/synth-explorer-converts-presets-between-sequential-oberheim-synths/"
     }
   ],
-  "lastUpdated": "2026-11-26T03:35:57+08:00",
-  "updatedAt": "2026-11-26T03:35:57+08:00"
+  "lastUpdated": "2026-11-26T04:20:00+08:00",
+  "updatedAt": "2026-11-26T04:20:00+08:00"
 }
