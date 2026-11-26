@@ -129134,8 +129134,174 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261127-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "patio11〈Multiagent coding is the future〉：先把自己從「寫 code、操作 terminal」開除，才真的懂 multiagent",
+      "summary": "Patrick McKenzie 在避險基金 Situational Awareness 用內部 orchestrator「Grimm」（一個 devbox 裡跑 2–100+ 個 Claude，彼此能對話，透過 web UI over tmux 操控）後，認為 multiagent coding 是跟「LLM 會寫 code」同等級的典範轉移。他的框架：單一 agent 是 hurry-up-and-wait，真正的轉變是你不再寫 code，把腦力拿去「管理一群人」——「I don’t think you can truly grok multiagent development until you fire yourself from writing code or operating terminals.」實例：在第一天才接觸的複雜系統上，一天內出了 42 個 PR、8,600 行改動、$823 inference，把 deploy latency 砍 80%。他也承認「A year ago I thought taste was a compelling moat」，現在不確定了；Agent 可以讀整個網路，很快就變成各領域夠用的 SME。信任的部分，他借用金融業的做法：不是假設 agent 可信，而是 double-entry、audit、separation of duties、red teaming 層層把關——「The optimal level of being negatively surprised is non-zero.」對 agent 系統設計和 AI 顧問都很好用：Ops 一個「?」就是可執行的 ticket，multiagent 可能變成「Excel for Everything」。HN 76 分、79 則留言；X 上 787 likes、695 bookmarks。",
+      "tags": [
+        "multiagent-coding",
+        "agent-orchestration",
+        "trust-controls",
+        "ai-consulting"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50645541",
+      "source": "Kalzumeus (Bits about Money)",
+      "sourceUrl": "https://www.kalzumeus.com/2026/11/25/multiagent-coding-is-the-future/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "operational",
+      "title": "Dharmesh Shah：agentic coding 的公式套到 growth——harness + LLM + context + system of record（HubSpot Refounding Day 14）",
+      "summary": "他的邏輯跳躍：agentic coding 之所以創造大量經濟價值，是因為產出（code）本身就能拿來賺錢，而寫軟體以前又難又貴。另一個同樣有價值、也很難做出來的東西是「growth」。他把兩者對齊：agentic coding 需要 purpose-built harness + 好的 LLM + context（code、skills、design guides）+ system of record（code repo）；agentic growth 需要的是同一套 harness + LLM，加上 context（system of record + 組織的 second brain）。所以 HubSpot refounding 要做「world's best purpose-built GTM harness」，CRM 資料庫加 second brain 當 AI-native context store。他也強調，agentic coding 沒有讓寫軟體的人消失，agentic growth 也不會讓高 agency 的行銷和業務消失。對 AI 顧問：這是把任何職能拆成「harness / model / context / system of record」四層來診斷的好模板。",
+      "tags": [
+        "agentic-growth",
+        "harness",
+        "context-store",
+        "gtm"
+      ],
+      "url": "https://x.com/dharmesh/status/2125751491634008548",
+      "source": "X @dharmesh",
+      "sourceUrl": "https://x.com/dharmesh/status/2125751491634008548",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "Jason Lemkin：每個 founder 都要有三份計畫——C10、C60、C90",
+      "summary": "出自他在 SaaStr Annual 的 AMA：C10 是只有 10% 機率的計畫，跟共同創辦人喝啤酒時聊就好；C60 是核心計畫，「more likely than not, but barely」；C90 則是就算業績放緩、你也有 90% 把握達成的那份。重點是把「夢想、主線、保底」分開管理，不要拿 C10 去排人力和花錢，也不要只有 C90 而失去野心。同一天他也說「The new moat is speed」——比對手更快適應新模型、新能力、新定價。對 solo builder 和顧問接案一樣適用：用 C90 決定固定支出，用 C60 排優先順序，C10 留給下班後的實驗。",
+      "tags": [
+        "planning",
+        "forecasting",
+        "founder-ops",
+        "scenario-planning"
+      ],
+      "url": "https://x.com/jasonlk/status/2125891182039322804",
+      "source": "X @jasonlk",
+      "sourceUrl": "https://x.com/jasonlk/status/2125891182039322804",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "levelsio：很多老闆現在得誠實問自己——這門生意在新時代還有存在的理由嗎？",
+      "summary": "他認為 post-AGI 時代能活下來的生意（和人）可能完全不同，這也解釋了為什麼幾年前很多公司激進地 all-in AI、整個砍掉重練。他舉 Replit：原本是給 coder 一起用的線上 IDE，在教程式的老師之間紅起來，2024 年 Amjad Masad 硬轉成 AI app 和網站生成器，目標族群換成完全相反的非 coder，當時被罵翻，現在預估年底 ARR 會到 $1B。他的結論：「what worked last year might not work this year anymore」，因為模型每年都指數級變好。X 上 1.4k likes、930 bookmarks、200+ 則回覆。可以拿來每年做一次「存在理由審查」：如果今天才開始，你還會做這個嗎？",
+      "tags": [
+        "pivot",
+        "reason-to-exist",
+        "post-agi",
+        "replit"
+      ],
+      "url": "https://x.com/levelsio/status/2125899647336272276",
+      "source": "X @levelsio",
+      "sourceUrl": "https://x.com/levelsio/status/2125899647336272276",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "mental-model",
+      "title": "Scott Aaronson〈Holy shit…: The magnitude of what’s now happening〉：可以討厭 AI 公司，但「please don’t deny what’s happening」",
+      "summary": "HN 本週最熱（1,908 分、1,700+ 則留言）。這位理論計算機科學家說，他和朋友在晚餐桌上滑手機，看 OpenAI 和 Anthropic 一個接一個把論文丟上 GitHub：矩陣乘法指數 ω 恰好是 9/4（有對應的 lower bound）、Fourier Transform 的線性閘數量也有上下界相符的結果——「they don’t even bother to issue press releases anymore, they just upload papers」。他第一次「in my bones」覺得 P ≠ NP 的證明不遠了，而且現在的預設是「any proof that comes directly from OpenAI or Anthropic is correct barring information to the contrary」，因為有 Lean 證明背書。值得帶走的思考方式：「For all I care, despise the AI companies for bulldozing our garden… Just please don’t deny what’s happening.」——態度可以有立場，但判斷要跟著證據走；對《還沒被取代》來說，連最頂尖的數學家都在重新調整「什麼還是人的工作」。",
+      "tags": [
+        "ai-progress",
+        "epistemics",
+        "denial",
+        "math-ai"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50646108",
+      "source": "Shtetl-Optimized",
+      "sourceUrl": "https://scottaaronson.blog/?p=10379",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "playbook",
+      "title": "SaaStr 拆解 HubSpot 換回創辦人當 CEO：營收、EPS 都還超標，但新客數先崩——outcome pricing 的 P&L 長這樣",
+      "summary": "Brian Halligan 11/12 回任 CEO，前任 Yamini Rangan 任內營收從 $1.3B 做到預估 $3.7B，但董事會認為舊記分板已經預測不了未來。訊號：每季淨新增客戶從約 10,800 掉到 Q3 的 5,258、Q4 預估不到 5,000；成長率 23%→17%、Q4 預估 12%；NRR 跌到 101%；客戶的 organic traffic 年減 27%（發明 inbound marketing 的公司，客戶的 inbound 變少了）。outcome pricing（Breeze Customer Agent 每次解決 $0.50）在 10-Q 被寫進風險：銷售週期變長、首年合約金額變低、credit 可能取代 seat 支出。Lemkin 的判斷：董事會押的是：只有 co-founder 有資格撕掉當初建立公司的那套 operating model——砍產品線、重定價、扛幾季難看的財報。給 B2B / freemium 創業者的提醒：「HubSpot is showing you your next 18 months a year or two early」——最先壞的是 net new customers，營收和利潤都還在超標的時候。",
+      "tags": [
+        "outcome-pricing",
+        "refounding",
+        "saas-metrics",
+        "founder-ceo"
+      ],
+      "url": "https://www.saastr.com/5-interesting-learnings-from-hubspot-as-brian-halligan-returns-as-ceo-net-new-customers-cut-in-half-nrr-down-to-101-and-a-guide-to-12-growth/",
+      "source": "SaaStr",
+      "sourceUrl": "https://www.saastr.com/5-interesting-learnings-from-hubspot-as-brian-halligan-returns-as-ceo-net-new-customers-cut-in-half-nrr-down-to-101-and-a-guide-to-12-growth/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Alex Hormozi：成功很大一部分，來自能說出「我不是適合每個人」",
+      "summary": "\"I think a lot of success in life comes down to being able to say “I’m not for everyone.” And meaning it.\" — Alex Hormozi。6.4k+ likes、近 1k bookmarks。定位、定價、內容都一樣：想討好所有人，最後就沒有人特別需要你；而且重點是「真心這麼想」，不是嘴上說說。",
+      "tags": [
+        "positioning",
+        "niche",
+        "self-trust"
+      ],
+      "url": "https://x.com/AlexHormozi/status/2125722452491907388",
+      "source": "X @AlexHormozi",
+      "sourceUrl": "https://x.com/AlexHormozi/status/2125722452491907388",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "quotable",
+      "title": "Jeff Bezos（Alexandr Wang 轉述）：客戶永遠美好地不滿足——昨天的 wow 很快變成今天的 ordinary",
+      "summary": "\"Customers are always beautifully, wonderfully dissatisfied, even when they report being happy and business is great. . . People have a voracious appetite for a better way, and yesterday's 'wow' quickly becomes today's 'ordinary.\" — Jeff Bezos（via Alexandr Wang）。Alexandr Wang 說這是他從 Bezos 身上學到最重要的觀念之一（David Senra 分享，600+ likes）。客戶說滿意、生意很好的時候，也不代表可以停；期待值會一直往上墊高。",
+      "tags": [
+        "customer-obsession",
+        "hedonic-adaptation",
+        "product"
+      ],
+      "url": "https://x.com/davidsenra/status/2125961544949231722",
+      "source": "X @davidsenra",
+      "sourceUrl": "https://x.com/davidsenra/status/2125961544949231722",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-27T03:33:13+08:00",
-  "updatedAt": "2026-11-27T03:33:13+08:00"
+  "lastUpdated": "2026-11-27T03:38:52+08:00",
+  "updatedAt": "2026-11-27T03:38:52+08:00"
 }
