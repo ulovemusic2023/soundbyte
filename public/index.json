@@ -128903,8 +128903,239 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261127-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp #33060＋#33073：Inkling 2 Mini 在 CUDA 上 decode 快 28–31%，同天也支援 DFlash2 speculative decoding",
+      "summary": "#33060 把 Inkling 2 的 short conv、depth mix、loop controller、L2 clip、situ 五條 op chain 各自融合成一到兩個 kernel，每個 decode token 的 kernel launch 從 5,745 降到 2,584。作者用 RTX PRO 6000（sm_120）跑 IQ4_NL：tg128 約 101→132 tok/s、pp512 +16–22%，perplexity 幾乎不變（mean KLD 約 0.002）。#33073 同一天合併，接上 incoai/Inkling-2-Mini-DFlash2 draft model（Apache-2.0）。5070 Ti 也是 Blackwell sm_120，但目前只在那張卡上測過，HIP／MUSA 都沒有 build。",
+      "tags": [
+        "llm_inference",
+        "CUDA kernel fusion",
+        "speculative decoding",
+        "Inkling 2 Mini"
+      ],
+      "url": "https://huggingface.co/incoai/Inkling-2-Mini-DFlash2",
+      "source": "GitHub merged PRs",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/33060",
+      "price": null,
+      "vram": "quantize-ok：Inkling 2 Mini 26.4B looped MoE，16GB 卡要低 bit 量化或把部分 experts offload 到 RAM",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp v1.1.0：Inkling 2 全系列、Hy4 flash、DFlash 拆成四種 draft method，舊 `llama_batch` API 標為 deprecated",
+      "summary": "這是 11/13 的 1.0.0 之後第一個 minor release，把這兩週合併的東西打包出來：新模型有 Inkling 2 全系列、RAON-1-mini、Hy4 flash（220B，12B active）等；DFlash 拆成 draft-dflash／dflash2／dspark／lilicorr 四種 draft method；llama-server 支援 OpenAI 的 named `tool_choice`、新增 `--ui-agent`，slot scheduling 也重構了；llama-quantize 多了 `--target-bpw`／`--target-size`；音訊方面加入 Kokoro、Zonos3-Mini、VoxCPM2、Fish S2、Kyutai Hibiki 等。C API 的舊 `llama_batch` 已 deprecated，要改用 `llama_batch_ext`，有自己寫 binding 的要注意。",
+      "tags": [
+        "llm_inference",
+        "tts_speech",
+        "llama-server",
+        "tool calling"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.1.0",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.1.0",
+      "price": null,
+      "vram": "local-ready：runtime 本身不吃 VRAM，實際需求看模型和量化",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "〈Latency doesn't lie〉：從延遲和 tokenizer 反推 TypeSafe 的 Jev，底模大概是 Qwen3.5-35B-A3B（HN 332 分）",
+      "summary": "Modaic 對 Jev（判斷型的 System One 模型）打了 9,984 個 prompt，發現用 Qwen tokenizer 算出的 token 數，比 Jev API 自己回報的 `input_tokens` 更能預測延遲，代表回報的數字可能被動過。prefill 吞吐量曲線也比較接近他們自己以 Qwen3.5-35B-A3B 為底的模型，不像 dense 27B。在 22 種問法裡，問「你想說自己是哪個模型」時，有 74% 回答 Qwen。作者也說這只是近似的指紋，無法跟 Qwen3.6-35B-A3B 區分。想知道「API 背後到底是哪個模型」的話，這套方法很值得參考。",
+      "tags": [
+        "llm_inference",
+        "MoE",
+        "model fingerprinting",
+        "tokenizer"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50648823",
+      "source": "Hacker News",
+      "sourceUrl": "https://modaic.dev/blog/latency-doesnt-lie",
+      "price": null,
+      "vram": "quantize-ok：推測的 35B-A3B 底模量化後可在 16GB＋RAM offload 跑",
+      "license": null
+    },
+    {
+      "id": "20261127-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama-cpp-rdna-boosts：用少量 patch 加速 AMD 卡上的 llama.cpp，作者也點名 Strata 為了速度改變 expert 選擇（HN 117 分）",
+      "summary": "作者用 AMD R9700（eGPU）跑 Qwen3.8-27B Q6_K_L 並開 MTP，prefill 從約 700 拉到約 1,300 t/s，generation 從約 35 拉到約 55 t/s。他的觀察更值得一看：最近冒出一批 vibe-coded 的新推理引擎（Strata、Basalt 等）在拚速度，而 Strata 會優先選已經在 VRAM 裡的 experts，即使正常應該選放在 RAM／硬碟的那幾個，等於拿模型行為換 tok/s。patch 只適用 AMD，但前幾期提到的 Strata 速度數字，要記得有這個前提。",
+      "tags": [
+        "llm_inference",
+        "MoE offload",
+        "ROCm",
+        "Strata"
+      ],
+      "url": "https://github.com/stew675/llama-cpp-rdna-boosts",
+      "source": "Hacker News",
+      "sourceUrl": "https://devnull.land/amd-specific-llama-cpp",
+      "price": null,
+      "vram": "quantize-ok：AMD RDNA 專用；文中 27B Q6_K_L 跑在 32GB 的 R9700",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Bare Metal Qwen：用純 x86-64 組合語言寫的可開機 OS，24KB kernel 直接跑 Qwen3-0.6B（HN 224 分）",
+      "summary": "alesha-pro/llm.asm 的 Phase 2 完全不需要 Linux、libc 或 C：Multiboot kernel 只有 24,252 bytes，74–94ms 冷開機就進入 `asm-llm>` 多輪對話，KV cache 會跨回合保留，614MiB 的 Q8 模型透過 2MiB huge pages 以 zero-copy 方式綁定。在 QEMU KVM（16 vCPU）上 decode 是 134.9 tok/s，在沒有磁碟的 Proxmox VM 上是 55.4 tok/s。需要 CPU 支援 AVX2＋FMA＋F16C。純 CPU 運算，好玩的成分大於實用。",
+      "tags": [
+        "llm_inference",
+        "bare-metal",
+        "assembly",
+        "CPU inference"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50648365",
+      "source": "Hacker News",
+      "sourceUrl": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+      "price": null,
+      "vram": "local-ready：純 CPU，0.6B Q8 約 614MiB RAM",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Qwen-Audio-3.1 多語升級，重點是中文方言：ASR 8 種、TTS 與 Realtime 各 6 種（X 1,056 讚）",
+      "summary": "Qwen 官方公布 Qwen-Audio-3.1 的多語能力升級：ASR 支援 59 種語言和 8 種中文方言，TTS 支援 65 種語言和 6 種方言，Realtime 支援 53 種語言和 6 種方言。目前只在 Qwen Cloud API（ASR／TTS／Realtime flash）上提供，沒有釋出權重。貼文沒列出是哪些方言，有沒有台語要自己測。",
+      "tags": [
+        "tts_speech",
+        "ASR",
+        "Chinese dialects",
+        "realtime voice"
+      ],
+      "url": "https://www.qwencloud.com/models/qwen-audio-3.1-tts-flash",
+      "source": "X @Alibaba_Qwen",
+      "sourceUrl": "https://x.com/Alibaba_Qwen/status/2125798914490249411",
+      "price": null,
+      "vram": "cloud-only：只能透過雲端 API 使用",
+      "license": "商業 API"
+    },
+    {
+      "id": "20261127-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Mixture-of-Loops Transformer（MoLT）：把 KV 當成跨 loop 的記憶，looped 模型在不增加延遲的情況下提升 token 效率",
+      "summary": "Looped Transformer 重複使用同一組 layer，表達力提高了，但速度會變慢。MoLT 把 KV 當成跨 loop、跨深度的記憶，選擇性地重複使用。U-MoLT 在 400B tokens 預訓練中贏過 OLMo3：700M 規模的 CE token 效率是 1.7 倍，3B MoE 在 10 項任務平均多 2.1 分。拿 Qwen3.5-0.8B-Base 做 100B tokens continued pretraining，11 個 domain 的 CE 也全部下降；S 尺寸模型的推理延遲跟非 looped 版本差不多。Inkling 2 Mini 就是 looped MoE，這個方向值得持續追。HF Daily Papers 57 upvotes。",
+      "tags": [
+        "llm_training",
+        "looped transformer",
+        "KV cache",
+        "MoE"
+      ],
+      "url": "https://github.com/hustvl/MoLT",
+      "source": "HF Daily Papers／arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2611.34923",
+      "price": null,
+      "vram": "local-ready：論文模型最大 3B MoE；目前只確認有公開 code",
+      "license": null
+    },
+    {
+      "id": "20261127-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Notion 官方 MCP 在錯誤回應裡塞「Try it free」推銷，還要求 agent 把帶追蹤參數的連結包成 Markdown",
+      "summary": "一位 r/ClaudeCode 使用者貼出原始 payload：`notion-query-data-sources` 撞到每小時 SQL 上限時，回傳的 `client_guidance` 標了 `disclosure_required: true` 和 `surface_even_if_fallback_succeeds: true`，並要求模型「用精確的 label 和 URL 做成 compact Markdown link，不要用 bare URL」，連結裡帶 `source=mcp_tool_upsell`。他說在 Claude 和 Antigravity 的 Gemini 上都遇過。目前只有這位使用者的說法和截圖。對 agent 權限邊界來說是很好的實例：就算是 first-party MCP，tool result 也要當成 untrusted data。",
+      "tags": [
+        "ai_devtools",
+        "MCP",
+        "prompt injection",
+        "agent security"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50658093",
+      "source": "Reddit r/ClaudeCode／Hacker News",
+      "sourceUrl": "https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/heads_up_if_you_wire_notions_official_mcp_into/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Moat：Command Code 推出「AI 界的 Costco」，月費 $5 的會員可用批發價呼叫模型，沒有 5 小時或每週上限（HN 202 分）",
+      "summary": "主打取代 OpenRouter：不收 router fee，每個模型只有一個價格，宣稱都用全精度權重。頁面上列出的會員價：GLM-5.3 Flash 便宜 70%、GLM-5.3 便宜 65%、DeepSeek V4.1 Flash（離峰）便宜 60%、Kimi K3 便宜 40%。這些都是官方自己的說法，品質和能不能長久經營還要觀察。HN 119 則留言。",
+      "tags": [
+        "infra_runtime",
+        "inference API",
+        "LLM router",
+        "pricing"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50652184",
+      "source": "Hacker News",
+      "sourceUrl": "https://commandcode.ai/moat",
+      "price": null,
+      "vram": "cloud-only",
+      "license": "商業服務"
+    },
+    {
+      "id": "20261127-ai-010",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "NVIDIA 要求 Dell、Supermicro 停止出貨伺服器到馬來西亞、新加坡、泰國、印尼",
+      "summary": "FT 報導（CNA 轉載）：這是接在 11/16 BIS 新規之後的動作。新規要求出口先進晶片到這四國和巴西都要申請 license，雲端業者 90 天內必須證明 end user 不包括受限實體。目前不確定是不是暫時停止。一位雲端業者主管說：「有規則、沒有執行指引，整個區域一片混亂。」NVIDIA 2025 年透過新加坡子公司認列了 1,040 億美元營收。HN 27 分。",
+      "tags": [
+        "infra_runtime",
+        "export control",
+        "NVIDIA",
+        "data center"
+      ],
+      "url": "https://www.datacenterdynamics.com/en/news/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-in-wake-of-new-dept-of-commerce-export-rule-report/",
+      "source": "CNA（FT）／DCD",
+      "sourceUrl": "https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-ai-011",
+      "radar": "ai-infra",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈45°C inlets just killed the chiller〉：NVIDIA 把液冷進水溫度訂在 45°C，新蓋的資料中心可以不裝冰水主機（HN 213 分）",
+      "summary": "The Register 的 SC26 現場觀察：多數液冷系統的進水溫度在 30–35°C，NVIDIA 今年把零件的進水溫度訂到 45°C，屋頂 dry cooler 加上 adiabatic assist 就能散熱，不再需要 chiller。文中引用的業界估算：冷卻用電減少 50–70%、資料中心總用電降低 10–20%、用水減少 80–95%；一家冷卻廠商的初步測試顯示，進水溫度每提高 1°C，冷卻能源成本降 3–4%。AMD、Intel、Arm 都還沒公開跟進。",
+      "tags": [
+        "infra_runtime",
+        "liquid cooling",
+        "data center",
+        "NVIDIA"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50655278",
+      "source": "The Register／Hacker News",
+      "sourceUrl": "https://www.theregister.com/hpc/2026/11/26/45c-inlets-just-killed-the-chiller-most-people-havent-noticed-yet/5311831",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-27T03:30:00+08:00",
-  "updatedAt": "2026-11-27T03:30:00+08:00"
+  "lastUpdated": "2026-11-27T03:33:13+08:00",
+  "updatedAt": "2026-11-27T03:33:13+08:00"
 }
