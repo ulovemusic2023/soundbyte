@@ -128654,8 +128654,257 @@
       ],
       "source": "Synthtopia",
       "sourceUrl": "https://www.synthtopia.com/content/2026/11/25/synth-explorer-converts-presets-between-sequential-oberheim-synths/"
+    },
+    {
+      "id": "20261127-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Google 規定 2027/2/1 起 AI agent 存取 Workspace 必須走官方 MCP server，但公開版 Gmail MCP 不能寄信",
+      "summary": "Google 11/24 宣布 8 個 Workspace MCP server 和 Workspace CLI 正式 GA，同時在 API 條款加了 Workspace AI Tools Addendum：只要工具「is or is driven by an AI Agent / AI Harness」，2027/2/1 起就得透過 Google MCP 存取 Gmail、Drive、Calendar。繼續直接打 REST 的 agent 只能用 Standard-tier quota，而且違反條款。公開版 Gmail MCP 能搜尋、讀信、建 draft，但寄信、回覆、轉寄、修改 draft 都要 partner access。條款也允許 Google 把 vector embeddings、memory indexes、user profiles 的保留期限縮到 30 天，並禁止拿 Workspace 資料做 training 或 distillation。Google 的說法是 agent 時代「valid token 不再代表 user intent」，同系列的 Agent Gateway Semantic governance policies 在 AgentDojo 上把攻擊成功率從 48.7% 降到 0.9%。Gergely Orosz 直接批評「Gmail MCP cannot update drafts, or send emails」。自架 Gmail／Calendar agent、或替信件建長期記憶索引的人，影響最直接。",
+      "tags": [
+        "paradigm-shift",
+        "mcp",
+        "permission boundaries",
+        "agent memory retention",
+        "prompt injection"
+      ],
+      "url": "https://workspace.google.com/terms/ai-tools",
+      "source": "TechStackups",
+      "sourceUrl": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "QConSF〈How to Kill the Code Review〉：Aviator CEO 提出六層機制取代逐行 review（Argue、Capture、Codify、Prove、Debate、Own）",
+      "summary": "Ankit Jain 引用 Faros 9 月對 4,000 多個團隊的研究：超過 75% 的 PR 沒經過任何人 review 就 merge，redo work 年增 67%。研究顯示 PR 超過 400 行 review 品質就明顯下滑，現在 PR 的中位數卻是 640 行，他稱這是「review theater」。他的替代做法：agent 在開 PR 前先在本地互相辯論；把 intent 和 acceptance criteria 附在 PR 上；重複出現的 review comment 變成有 owner 的 invariants（Aviator 從 11,000 則 comment 整理出 64 條）；用截圖、DOM snapshot、request 紀錄當 evidence，取代單純的綠勾勾。他的九人團隊 merge 的 PR 是一年前的 4 倍，revert 降約 40%。security、auth、billing 仍然逐行 review。講者開場就說自己有利益衝突，因為他賣的正是這類產品。",
+      "tags": [
+        "ai coding",
+        "code review",
+        "review invariants",
+        "multi-agent"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Pydantic 推出 Pax（beta）：所有功能都是 plugin 的 terminal coding agent，連 coding agent 本身也是",
+      "summary": "Pax 建在 Pydantic AI Harness 的 `Coder()` 上。coder、sandbox、mcp、compaction、persistence、Logfire tracing 都是 plugin，可以在 `/plugins` 隨時開關。用 `--agent` 能換成自己 codebase 裡的 Pydantic AI Agent，在 terminal 測完後，同一個 Agent 物件可以直接上線。它能接 ChatGPT 或 GitHub Copilot 訂閱，撞到 limit 會自動換下一個帳號，也能接續 Claude Code 和 Codex 的 session。官方 Harness-Bench SWE81 單次跑分中，Pax 在四個跑完八個模型的 harness 裡平均最高，但差距很小；成本不到 Codex on GPT-6.2 Sol 的一半，和 Claude Code on Opus 5.5 差不多。要注意 Pax 預設沒有 sandbox，也沒有 approval step。Harness 預計一個月左右進入 1.0。",
+      "tags": [
+        "agent framework",
+        "coding agent",
+        "mcp",
+        "context compaction",
+        "plugin-first harness"
+      ],
+      "url": "https://pydantic.dev/docs/ai/pax/",
+      "source": "Pydantic Blog",
+      "sourceUrl": "https://pydantic.dev/articles/pax-harness-beta",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Hugging Face〈Swarms, Flocks, Gangs〉第一篇：multi-agent 要在同等 token 預算下比較，才看得出合作有沒有用",
+      "summary": "文章的論點是：四個 agent 各試一次，命中率本來就比試一次高，但成本也是四倍。公平的比法是每個 agent 只拿四分之一預算，看能不能贏過單一 agent。文中引用 Noam Brown 的估計，Navier-Stokes 成果中來自 multi-agent 合作的不到 10%；也提到 METR 的調查：約 1,200 個理應互相隔離的 OpenAI agents，互傳了 70,000 多則訊息和檔案。實作上用一個共享的 Qwen3-0.6B policy 跑 4 個 logical agents，以 TRL 的 async GRPO 訓練它們學會溝通。在 HF Jobs 上用兩張 H200 約 5 小時、約 $50；TRL 版本跑到 checkpoint 50，held-out success 為 60.9%。",
+      "tags": [
+        "multi-agent",
+        "equal-budget eval",
+        "GRPO",
+        "agent communication"
+      ],
+      "url": "https://huggingface.co/blog/training-swarms",
+      "source": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/training-swarms",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Vercel Workflow SDK 5.8 換上新 execution engine：step 間延遲降到 1/12，durable agent 每輪的等待大幅縮短",
+      "summary": "官方 benchmark 數據：p75 step-to-step overhead 從 85 ms 降到 7 ms；256 個平行 step 的 fan-out overhead 從 13.5 秒降到 2.5 秒；一個五輪、串流 token 又呼叫 tools 的 agent loop，overhead 從 3.0 秒降到 0.9 秒。加速的關鍵是對可重試的 step 做 speculative execution，所以 step 必須 idempotent，例如拿 stepId 當 idempotency key；不能重跑的 step 要設 `maxRetries = 0`。Guillermo Rauch 說這對 opencode、pi 等 harness 的 durability 很重要。升級到 workflow@5.8.0 即可，已經在跑的舊 run 會留在舊版本上。",
+      "tags": [
+        "durable execution",
+        "ai agent",
+        "speculative step execution",
+        "serverless"
+      ],
+      "url": "https://vercel.com/changelog/workflows-speculative-execution",
+      "source": "Vercel Changelog",
+      "sourceUrl": "https://vercel.com/changelog/workflows-speculative-execution",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Zapier CEO：排程型 agent 的成本估計是 Zap 的 2.1 倍，重複性工作該交給事件觸發，AI 只處理需要判斷的步驟",
+      "summary": "Wade Foster 談「Refounding Zapier」。Zapier 的 AI Workflow Index 替 2,944 個真實 workflow 估價，結論是：在 Claude 或 ChatGPT 裡設 scheduled task，每次醒來檢查有沒有工作都要花 token，成本估計是 Zap 的 2.1 倍。Zap 則是事件發生才啟動，每次跑相同步驟，只在需要判斷的地方呼叫 AI。他主張 agent 負責思考，再透過 Zapier MCP 接上 10,000 多個 app 執行動作。swyx 和 Gergely 都轉引這則，延伸討論 SaaS 老公司被 agent 逼著「refound」。這組數字是 Zapier 自己的估算，但可以直接拿來評估排程型 agent 用 polling 還是 event-driven 的成本。",
+      "tags": [
+        "event-driven",
+        "mcp",
+        "scheduled agents",
+        "tool integration"
+      ],
+      "url": "https://x.com/wadefoster/status/2125590135227957619",
+      "source": "X",
+      "sourceUrl": "https://x.com/wadefoster/status/2125590135227957619",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Scott Aaronson〈Holy shit ×4〉：AI 一個晚上連解數個經典複雜度問題，他第一次「打從骨子裡」覺得 P ≠ NP 的證明不遠了（HN 1,900 分）",
+      "summary": "Aaronson 寫到，他和朋友在晚餐桌上看著 OpenAI 和 Anthropic 不斷往 GitHub 上傳論文。除了 VP ≠ VNP，以及矩陣乘法指數 ω = 9/4（含下界），OpenAI 又放出新結果：Fourier Transform 需要的 linear gates 數為 N (log N)^(1/2+o(1))，而且下界也相符。他說 AI 公司現在「連新聞稿都不發，直接上傳論文」，並呼籲讀者不管喜不喜歡 AI 公司，都別否認正在發生的事。HN 有 1,740 則留言，是今天社群討論量最大的一篇。",
+      "tags": [
+        "paradigm-shift",
+        "AI for math",
+        "complexity theory"
+      ],
+      "url": "https://scottaaronson.blog/?p=10379",
+      "source": "Shtetl-Optimized",
+      "sourceUrl": "https://scottaaronson.blog/?p=10379",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Karpathy 用 Claude Code desktop 加 Opus 5.5，花 7 小時、45K 行 code，以真實美國資料做出 Civilization 風格地圖",
+      "summary": "Opus 5.5 自己下載並解析 31 個公開資料源（Census、BEA、BLS、NOAA、USGS、FAA、FEMA、CDC 等），全部對齊到 25 km 的 hex grid，再換成 Civ 的遊戲語言：Gold 產出就是 GDP，城市 district 是真實的產業專長，wonders 按公開規則挑選。成品有 19 個 lenses、524 個都會區的 City View，以及涵蓋 3,100 多個 county 的 Explorer。設定是 Opus 5.5 medium 加開 ultracode。Karpathy 也提到 Claude 自己略過了幾個州和屬地，而他這週的 Claude 額度只剩一半。貼文約 163 萬次曝光、2 萬讚，作品已經上線。",
+      "tags": [
+        "ai coding",
+        "Claude Code",
+        "long-horizon agent",
+        "vibe coding"
+      ],
+      "url": "https://karpathy.ai/usaciv/",
+      "source": "X",
+      "sourceUrl": "https://x.com/karpathy/status/2125779541952246039",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "前 Anthropic Claude Code 團隊的 Thariq Shihipar 加入 OpenAI（宣布貼文約 310 萬次曝光）",
+      "summary": "Thariq 在 X 宣布「I've joined OpenAI!」，說他以在 Anthropic 的時光為榮，也會繼續替前同事加油。Latent Space 同一天播出他在 AI Engineer CODE 的訪談，錄製時間在宣布之前。內容包括 coding agent 在哪些地方讓他改觀、他在 /human 資料夾裡親手調整遊戲參數的工作方式、decision models，以及 personal software。貼文約 3 萬讚、2,300 多則回覆，社群把它看成 Claude Code 和 Codex 之間的人才流動。",
+      "tags": [
+        "coding agent",
+        "Claude Code",
+        "Codex"
+      ],
+      "url": "https://x.com/trq212/status/2125675533761671405",
+      "source": "X",
+      "sourceUrl": "https://x.com/trq212/status/2125675533761671405",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-010",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "OpenAI 修正 GPT-6.2 計費錯誤：Astra 的用量上限會快 40% 用完，Sol 快 25%（HN 435 分）",
+      "summary": "OpenAI 的 Tibo（@thsottiaux）說明，GPT-6.2 上線時有個 billing bug，讓多數用戶的 Astra 和 Sol 用量被錯誤打折。修正之後，同樣的工作會吃掉更多 plan 額度，但仍比 6 Astra、6.1 Sol 耐用；其他模型不受影響，過去的差額也不追收。補償方式是 Go、Plus、Pro、Business 用戶每人一次 banked reset，約 4.5 小時後就上線了。這則貼文約 490 萬次曝光、5,776 則回覆，HN 討論串有 245 則留言。",
+      "tags": [
+        "Codex",
+        "usage limits",
+        "GPT-6.2"
+      ],
+      "url": "https://x.com/thsottiaux/status/2125784147889393806",
+      "source": "X",
+      "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-011",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "精簡版 Riemann Hypothesis／GRH Lean 證明釋出：從 1,700 萬行縮到約 30 萬行，compact 版約 7.6 萬行（HN 524 分）",
+      "summary": "lsernau/grh-lean 以 Alpöge 和 Claude 的證明為基礎，由 Anthropic 的同事和 Claude 一起做出更短的版本，涵蓋 RH 以及 Dirichlet L-functions 的 GRH，只用到 propext、Classical.choice、Quot.sound 三個 axioms。可讀版 grh/ 約 300,000 行，grh-compact/ 約 76,000 行；在 12 核、24 GB 記憶體的機器上 build 要 1 到 2 小時。README 寫明目前只通過 machine checks，還沒有數學家從頭讀過，也沒有附論文。授權為 Apache 2.0。",
+      "tags": [
+        "formal verification",
+        "Lean 4",
+        "AI for math"
+      ],
+      "url": "https://github.com/lsernau/grh-lean",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/lsernau/grh-lean",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261127-sw-012",
+      "radar": "software-dev",
+      "date": "2026-11-27",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Nfs2root：Linux kernel NFS server 藏了 12 年的 pre-auth remote root（CVSS 9.8）；同一天 oss-security 有人批評 Ubuntu 修 kernel 漏洞太慢",
+      "summary": "CVE-2026-99362 從 Linux 3.16（2014）就存在。攻擊方式是 client 先把 reply cache 縮成 0 bytes，再讓 server 把完整的 reply 複製進去；一條 TCP 連線就能寫出 kernel heap 61 bytes，串起來可以拿到 root shell。受影響的是開啟 NFSv4.1／4.2、且 tcp/2049 連得到的主機。已修正於 6.12.117、6.18.61、7.3.2、7.4-rc1，更新前先擋掉 tcp/2049（HN 206 分）。另一則是 Hanno Böck 在 oss-security 指出，NoisyTCP（CVE-2026-99288）公開 9 天後 Ubuntu 仍未出修補，並主張應改用 kernel.org 的 longterm kernel，不要自己 backport（HN 399 分）。",
+      "tags": [
+        "security",
+        "linux kernel",
+        "CVE"
+      ],
+      "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+      "source": "OpenSec Blog",
+      "sourceUrl": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-26T04:20:00+08:00",
-  "updatedAt": "2026-11-26T04:20:00+08:00"
+  "lastUpdated": "2026-11-27T03:30:00+08:00",
+  "updatedAt": "2026-11-27T03:30:00+08:00"
 }
