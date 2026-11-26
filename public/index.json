@@ -129300,8 +129300,297 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261127-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "rising-fast",
+      "title": "nexu-io/opengame",
+      "summary": "號稱第一個開源「Super Game Agent」：把 Claude Code、Codex、DeepSeek、Gemini CLI 等 22 種本機 coding agent 變成全端遊戲工作室，從一個 prompt 生出 3D／mini-game，美術、音樂、配音、SFX 也一起做；內建 25 個可 remix 的模板，用 `npx skills add` 裝 skill、再接本機 Studio + MCP。11/25 才建、兩天 ~690 stars。",
+      "tags": [
+        "claude-code",
+        "coding agent",
+        "mcp",
+        "agent skills",
+        "game dev",
+        "creator tools"
+      ],
+      "url": "https://github.com/nexu-io/opengame",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aclaude-code+created%3A%3E2026-11-13&type=repositories",
+      "stars": 688,
+      "createdDate": "2026-11-25",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261127-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "rising-fast",
+      "title": "zou172866/Antigravity-agy-dart",
+      "summary": "原本給 Google Antigravity 的省 token 外掛，也能用 `--target` 掛到 Claude Code、Codex、DeepSeek Harness：把多次搜尋／編輯合併成一步、幾千行 test log 只回傳關鍵行，還會監控 KV-cache 到期、在 `/compact` 後補回改過的檔案與測試狀態。README 自己也說實際 cache 命中率還是要看 host 怎麼組 request。",
+      "tags": [
+        "context compression",
+        "kv-cache",
+        "claude-code",
+        "token saving",
+        "agent plugin"
+      ],
+      "url": "https://github.com/zou172866/Antigravity-agy-dart",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Amcp+created%3A%3E2026-11-13&type=repositories",
+      "stars": 204,
+      "createdDate": "2026-11-20",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "worth-trying",
+      "title": "daoif/tokless",
+      "summary": "`npx tokless install` 一鍵掛到 Antigravity、Claude Code、Codex CLI 的純 Node.js 工具：`skeleton`／`slice` 用 AST 骨架避免 agent 整份盲讀大檔、`tokless-coder` 拿掉用不到的 MCP tool schema，`tokless audit` 離線分析 session 帳單，抓出最燒錢的步驟和 prefix cache 斷掉的地方。README 宣稱 token 能省一半以上（作者自己做的 A/B）。",
+      "tags": [
+        "token saving",
+        "context compression",
+        "claude-code",
+        "codex",
+        "AST"
+      ],
+      "url": "https://github.com/daoif/tokless",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Aai-agent+created%3A%3E2026-11-13&type=repositories",
+      "stars": 67,
+      "createdDate": "2026-11-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "obsidianmd/obsidian-skills",
+      "summary": "Obsidian 官方的 agent skills，教 agent 正確使用 Markdown、Bases、JSON Canvas 這些開放格式；Claude Code 用 `/plugin marketplace add obsidianmd/obsidian-skills` 安裝，Codex／ChatGPT 也有 plugin。本週 GitHub Trending +704，把筆記庫當 agent 記憶的人可以直接裝。",
+      "tags": [
+        "agent skills",
+        "claude-code",
+        "obsidian",
+        "agent memory"
+      ],
+      "url": "https://github.com/obsidianmd/obsidian-skills",
+      "source": "GitHub Trending",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "stars": 53939,
+      "createdDate": "2026-01-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "google-gemini/gemini-api-cli",
+      "summary": "Google 官方（experimental）的 `gemini-api` CLI：不是另一個 coding agent，而是讓 Claude Code、Codex、OpenClaw、Hermes 這些有 shell 的 agent 直接呼叫 Gemini，一條指令生圖、配音、音樂、影片、轉逐字稿，也能在背景跑 Gemini managed agent；內建 `--schema`／`--usage`，agent 自己就能查用法。11/20 出 v0.5.0，這兩天在 X 被大量轉傳。",
+      "tags": [
+        "cli tool",
+        "claude-code",
+        "codex",
+        "music generation",
+        "tts",
+        "managed agents"
+      ],
+      "url": "https://github.com/google-gemini/gemini-api-cli",
+      "source": "X search",
+      "sourceUrl": "https://github.com/google-gemini/gemini-api-cli/releases",
+      "stars": 3680,
+      "createdDate": "2026-04-29",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261127-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "click6067-ship-it/token-tv",
+      "summary": "把一個約 5 美元的 AliExpress 小時鐘（GeekMagic SmallTV）變成 Claude Code／Codex 的像素寵物：Claude 需要你時 Clawd 會舉手，同時顯示用量額度；`npx token-tv start` 會自動在 Wi-Fi 上找到時鐘，不用刷韌體，也有 `npx token-tv demo` 可以先看。Show HN 54 points。",
+      "tags": [
+        "claude-code",
+        "usage limits",
+        "hardware",
+        "fun"
+      ],
+      "url": "https://github.com/click6067-ship-it/token-tv",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50642300",
+      "stars": 151,
+      "createdDate": "2026-10-02",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "CHSZLab/AgenticAlgorithmEngineering",
+      "summary": "把 agent 變成演算法效能工程師的 skill／方法論（AAE）：每次改動都要先提可證偽的假設、跑 benchmark、確認輸出不變才保留，最後產出逐筆 patch 和 PDF 報告。README 列的案例包括 VieCut exact min-cut 單執行緒快 8.9x、KaHIP 分割快 3.9x。Show HN 128 points。",
+      "tags": [
+        "agent skill",
+        "performance",
+        "benchmark",
+        "code optimization"
+      ],
+      "url": "https://github.com/CHSZLab/AgenticAlgorithmEngineering",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50611593",
+      "stars": 142,
+      "createdDate": "2026-03-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "hatchet-dev/brickie",
+      "summary": "Hatchet 出的 durable sandbox：在你自己的雲或 k8s cluster 裡跑 agent sandbox（container + shell + workspace），建在 agent-sandbox 上，snapshot/restore 存到 object storage，可選 Kata、gVisor 等 runtime，靠 Hatchet 的 durable execution 安全重試。目前 beta。Show HN。",
+      "tags": [
+        "agent sandbox",
+        "kubernetes",
+        "durable execution",
+        "self-hosted"
+      ],
+      "url": "https://github.com/hatchet-dev/brickie",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50629936",
+      "stars": 133,
+      "createdDate": "2026-08-28",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "lucas9801/solo",
+      "summary": "以 Zed 為底的「terminal-first」編輯器：整個視窗是終端機，Claude Code、Codex 跑在真的 terminal 裡，開檔才在右邊出現 editor；分頁上用紅黃藍綠燈顯示 agent 狀態（透過 hooks 回報，不改你的設定），一個專案一個 workspace。目前只有 Windows x64 安裝檔（未簽章）。",
+      "tags": [
+        "coding agent",
+        "terminal",
+        "editor",
+        "claude-code",
+        "codex"
+      ],
+      "url": "https://github.com/lucas9801/solo",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/search?q=topic%3Acoding-agent+created%3A%3E2026-11-13&type=repositories",
+      "stars": 40,
+      "createdDate": "2026-11-15"
+    },
+    {
+      "id": "20261127-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "on-the-radar",
+      "title": "swarkentin/synth-patch-hero",
+      "summary": "瀏覽器裡的合成器 patch 解謎遊戲：你扮演接案的窮音樂人，照客戶給的參考音色接 oscillator、filter、ADSR、LFO，用示波器／頻譜比對，相似度到 90% 才能交件。純 HTML/CSS/JS + Web Audio API、零依賴，教學或自己練 sound design 都好玩。Show HN 124 points。",
+      "tags": [
+        "synthesizer",
+        "sound design",
+        "web audio",
+        "music"
+      ],
+      "url": "https://github.com/swarkentin/synth-patch-hero",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50623232",
+      "stars": 6,
+      "createdDate": "2026-11-21",
+      "license": "MIT"
+    },
+    {
+      "id": "20261127-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "product-hunt",
+      "title": "Hub",
+      "summary": "開源（Apache-2.0）、self-hosted 的 Claude Code／Codex session 調度器：在瀏覽器或 Telegram 寫目標，coordinator 分派給 agents，只把需要你決定的事丟回來；用你自己的 Claude 或 ChatGPT 訂閱，一行安裝。注意：實驗功能會讓 agents 跳過 permission prompt。11/26 PH 日榜 #1。",
+      "tags": [
+        "multi-agent",
+        "claude-code",
+        "codex",
+        "telegram",
+        "open source"
+      ],
+      "url": "https://usehub.dev/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/26"
+    },
+    {
+      "id": "20261127-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "product-hunt",
+      "title": "ExtraOrbital",
+      "summary": "讀你的 `.env.example`，自動幫 app 開好資料庫、storage bucket、cache、AI keys 等資源；是 CLI，所以 agent 可以直接用、不用自己註冊帳號，資源集中在一個 dashboard 管。11/26 PH 日榜 #3。",
+      "tags": [
+        "cli tool",
+        "vibe coding",
+        "devops",
+        "agent infra"
+      ],
+      "url": "https://extraorbital.dev",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/26"
+    },
+    {
+      "id": "20261127-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "product-hunt",
+      "title": "Clary",
+      "summary": "用寄件人自己的聲音念 iPhone 通知（WhatsApp、iMessage 等）：對方先同意、錄 20 秒，Clary 就在你手機上 clone 出他的聲音；也會把通知像 Gmail 一樣分成 Messages／Updates／Promotions。需要 iPhone 15 Pro 以上、iOS 27。11/26 PH 日榜 #8。",
+      "tags": [
+        "voice cloning",
+        "tts",
+        "on-device",
+        "ios"
+      ],
+      "url": "https://hiclary.com",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/26"
+    },
+    {
+      "id": "20261127-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-27",
+      "cycle": "friday",
+      "priority": "product-hunt",
+      "title": "DeskFleet",
+      "summary": "讓團隊共用一個 coding agent session：Claude Code、Codex、Cursor 跑在放 code 的那台機器上，隊友從自己筆電加入、看 diff、核准下一個指令，或直接接管遠端桌面；工具和 agent credentials 都留在那台機器。標示 Open Source。11/26 PH 日榜 #10。",
+      "tags": [
+        "coding agent",
+        "collaboration",
+        "remote",
+        "claude-code"
+      ],
+      "url": "https://www.deskfleet.org/",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/26"
     }
   ],
-  "lastUpdated": "2026-11-27T03:38:52+08:00",
-  "updatedAt": "2026-11-27T03:38:52+08:00"
+  "lastUpdated": "2026-11-27T03:52:17+08:00",
+  "updatedAt": "2026-11-27T03:52:17+08:00"
 }
