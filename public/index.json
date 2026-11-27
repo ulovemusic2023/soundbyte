@@ -130420,8 +130420,170 @@
       "stars": 409,
       "createdDate": "2026-11-25",
       "license": "MIT"
+    },
+    {
+      "id": "20261128-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "BumaStemra 正式對 AI 背景音樂業者 YourNeuroTune 提告",
+      "summary": "荷蘭集體管理組織 BumaStemra 向 DMN 證實訴訟已在荷蘭進行，由 IP 律師 Dirk Visser 主導。YourNeuroTune 提供按週更新的免版稅「premium」音樂，供健身房、商店等場所使用，先前拒絕了停止營運的最後通牒。",
+      "priority": "high",
+      "tags": [
+        "ai music",
+        "licensing",
+        "lawsuit"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/27/bumastemra-yourneurotune-lawsuit/"
+    },
+    {
+      "id": "20261128-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "n-Track Studio 11 登場：內建可在歌曲內操作的 AI Assistant",
+      "summary": "n-Track Studio 11 新增 AI Assistant、VocalTune 2.0（逐音 pitch 編輯）、Spectral Edit、Drawbar organ 與 ARA plugin 支援，跨 Windows／macOS／Linux／iOS／Android。Standard 版 €69，Black Friday 優惠到 12/5。",
+      "priority": "high",
+      "tags": [
+        "daw",
+        "ai assistant",
+        "pitch correction",
+        "ara"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/n-track-studio-11-brings-new-effects-instruments-tools-ai-assistant/"
+    },
+    {
+      "id": "20261128-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "Cyanite 推出對話式 Concierge，用對話搜尋音樂",
+      "summary": "Music Ally 報導 Cyanite 推出 conversational AI 的音樂搜尋 Concierge，屬於 B2B 場景的對話式 AI 應用（細節以原文為準）。",
+      "priority": "medium",
+      "tags": [
+        "music search",
+        "conversational ai",
+        "music ai"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/26/cyanite-launches-its-conversational-concierge-for-music-search/"
+    },
+    {
+      "id": "20261128-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "Winamp Player 將於 12/15 開放 private beta 重新上線",
+      "summary": "Music Ally 追蹤 Winamp 自 2022 年起的復出計畫，報導新版 Winamp Player 將在 12 月 15 日進入 private beta。",
+      "priority": "medium",
+      "tags": [
+        "music software",
+        "winamp",
+        "music app"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/27/winamp-player-set-to-relaunch-in-private-beta-on-15-december/"
+    },
+    {
+      "id": "20261128-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "ElevenLabs 下一輪募資估值可能追上 UMG 等級",
+      "summary": "Music Ally 指出 ElevenLabs 下一輪募資的估值可能達到 UMG 等級，背景是市場對 AI 泡沫的疑慮仍在（細節以原文為準）。",
+      "priority": "medium",
+      "tags": [
+        "voice synthesis",
+        "elevenlabs",
+        "funding"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/26/elevenlabs-next-funding-round-could-see-a-umg-sized-valuation/"
+    },
+    {
+      "id": "20261128-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "吉他手 George Lynch 談參與 AI 曲目錄音的「很奇怪」經驗",
+      "summary": "前 Dokken 吉他手 George Lynch 接受 MusicRadar 訪談，談他為一首 AI 曲目錄音的經歷，直言過程「很有挑戰」。",
+      "priority": "medium",
+      "tags": [
+        "guitar",
+        "guitarist",
+        "ai music"
+      ],
+      "source": "MusicRadar",
+      "sourceUrl": "https://www.musicradar.com/artists/guitarists/guitarist-george-lynch-on-his-very-strange-session-for-an-ai-track-i-was-like-why-do-they-want-me-i-mean-im-just-a-human-being-machines-do-it-way-better"
+    },
+    {
+      "id": "20261128-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "Kodamo Essence FM 8.0：免費大更新，強化 feedback FM 與 filter",
+      "summary": "Essence FM 是 16-part multi-timbral、300 voice、6-operator FM synth。8.0 免費更新帶來改進的 feedback FM 與 filter、新 FX 等。",
+      "priority": "medium",
+      "tags": [
+        "synthesizer",
+        "fm synth",
+        "free update"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/kodamo-essence-fm-8-0-major-free-characterful-update-for-the-flagship-fm-synth.html"
+    },
+    {
+      "id": "20261128-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "Newfangled Audio Obliterate 2：免費破壞系失真 plugin",
+      "summary": "Obliterate 2 新增 6 種 Obliteration 失真、含 5 種 noise generator 的 Desecration 控制、可調音高的 Divination reverb 與 modulation；支援 Windows／macOS（VST／VST3／AU／AAX），免費下載。",
+      "priority": "medium",
+      "tags": [
+        "distortion",
+        "free plugin",
+        "vst3",
+        "aax"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/free-obliterate-2-ott-distortion-effect-plugin-by-newfangled-audio/"
+    },
+    {
+      "id": "20261128-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "touski ChanceBloom：generative slice sampler",
+      "summary": "macOS／Windows 的 instrument 與 audio effect plugin，可依 transient 或 1/2–1/32 note grid 切 loop，Mood pad、Density、Chaos、Swing 控制，seed 可記錄 pattern，Drag 可輸出 WAV 到 DAW。",
+      "priority": "medium",
+      "tags": [
+        "sampler",
+        "generative",
+        "plugin"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/26/touski-chancebloom-generative-slice-sampler/"
+    },
+    {
+      "id": "20261128-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "open-field：OP-1 Field 的非官方 custom firmware",
+      "summary": "Parisian 音樂人 LaP0573（Maxime B）主導的 open-field 專案，為 Teenage Engineering OP-1 Field 帶來大量非官方功能擴充。",
+      "priority": "low",
+      "tags": [
+        "midi controller",
+        "custom firmware",
+        "synthesizer"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/open-field-cf-teenage-engineering-op-1-field-gets-a-massive-unofficial-feature-boost.html"
     }
   ],
-  "lastUpdated": "2026-11-28T03:53:43+08:00",
-  "updatedAt": "2026-11-28T03:53:43+08:00"
+  "lastUpdated": "2026-11-28T04:10:10+08:00",
+  "updatedAt": "2026-11-28T04:10:10+08:00"
 }
