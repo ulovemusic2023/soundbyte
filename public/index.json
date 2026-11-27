@@ -129773,8 +129773,208 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261128-ai-001",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "FLYX v0.2.1：57MB 單檔本地推論引擎，官方在 RTX 5070 Ti 16GB 實測 Qwen3.8-27B 寫 code 332.8 tok/s",
+      "summary": "從零用 C++/CUDA 寫的新引擎（不是 llama.cpp 衍生），只要 NVIDIA driver ≥580，直接吃 GGUF，提供 OpenAI／Anthropic 相容 API，dashboard 可一鍵把 Claude Code、Codex CLI 接上本地模型。v0.2.1（11/27 凌晨 Taipei）README 列出 5070 Ti（UD-IQ3_XXS，原生 Windows 11）：Qwen3.8-27B＋DFlash2 plain 68.8 → chat 154.4／code 332.8 tok/s；Inkling-2-Mini＋DSpark plain 150.9 → code 276.2 tok/s，並宣稱 speculative 輸出與 plain 逐 token 一致。才 105⭐、開源一週，數字都是作者自測，值得週末在你那張卡上跑一輪對照。",
+      "tags": [
+        "llm_inference",
+        "speculative decoding",
+        "DFlash2",
+        "GGUF",
+        "Anthropic-compatible API"
+      ],
+      "url": "https://github.com/enwove/flyx",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/enwove/flyx/releases/tag/v0.2.1",
+      "price": null,
+      "vram": "16GB（UD-IQ3_XXS，官方 5070 Ti 實測）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261128-ai-002",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Strata v0.2.23：Inkling 2 Mini 改 v2 量化檔、DFlash 2 取代 DSpark，16GB 卡多了 GSQ-RCO IQ3_S 可選",
+      "summary": "11/28 凌晨（Taipei）釋出。新的 SQ-15 v2（14.35GB）、SQ-10 v2（10.47GB），加上 GSQ-RCO IQ3_S（11.43GB，自帶 GPU kernel）；舊引擎不吃新檔，要模型和引擎一起更新。DFlash 2 drafter（多 0.55GB）在 NVIDIA 依卡的大小決定預設開關；官方表格 RTX 5060 Ti 16GB code 80.4 → 260.7 tok/s。要注意：5070 Ti 和 5080 的 fast mode 沒有預設開（32K 長 prompt 讀取會變慢），另外 --turbo／--turbo-max 會跳過後段層的弱 expert，屬於改答案換速度。",
+      "tags": [
+        "llm_inference",
+        "quantization",
+        "speculative decoding",
+        "DFlash 2",
+        "Inkling 2 Mini"
+      ],
+      "url": "https://github.com/Niko1221/Strata/releases/tag/v0.2.23",
+      "source": "GitHub Releases",
+      "sourceUrl": "https://github.com/Niko1221/Strata/releases/tag/v0.2.23",
+      "price": null,
+      "vram": "SQ-15 v2 14.35GB／GSQ-RCO IQ3_S 11.43GB",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ai-003",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "IST Austria DASLab 的 Inkling-2-Mini GSQ-RCO GGUF：per-tensor 混合精度，IQ3_S 11.43GB 保留基底模型 99.2% 分數",
+      "summary": "用 GSQ（Gumbel-Softmax 量化）加 RCO（在總大小預算下用梯度分配每個 tensor 的量化型別）做出四個標準 GGUF：IQ2_S 8.98GB、Q2_K_XL 9.79GB、IQ3_XXS 10.61GB、IQ3_S 11.43GB。官方說 IQ3_S 在 AIME25、GPQA-Diamond、LiveCodeBench v6 都在基底 1 分以內，平均達 99.2%；token embedding 保留 BF16，llama.cpp 會放在系統 RAM，不吃 VRAM。都是標準 GGUF，llama.cpp 直接能跑；Strata 0.2.23 也收了 11.43GB 的 GSQ-RCO IQ3_S。",
+      "tags": [
+        "quantization",
+        "GGUF",
+        "mixed-precision",
+        "GSQ",
+        "RCO",
+        "Inkling 2 Mini"
+      ],
+      "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "price": null,
+      "vram": "GPU 上 8.05–10.50GB（依版本）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261128-ai-004",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "llama.cpp 11/27 三個合併：fp8／NVFP4 quant scale 進 GGML、Inkling 2 NVFP4 pass-through、hybrid 模型 recurrent state 改原地讀",
+      "summary": "#28898 把 FP8／NVFP4 的 quant scale 收進 GGML，CUDA 把 scale 融進既有 epilogue，不掉效能；#33062 讓 Inkling 2 Mini 原始 checkpoint 的 NVFP4 experts 保持 NVFP4、其餘轉 Q8_0，做出 NVFP4＋Q8_0 的 GGUF。#30139 讓 Qwen3.5／3.6、LFM2.5、Falcon-H1 等 recurrent／hybrid 模型直接讀 cache，不再先複製 state：RTX 5090 上 tg128 約快 1–3%（例如 Qwen3.6-35B-A3B 270.4 → 278.3 tok/s），多序列並行時差距更大。",
+      "tags": [
+        "llm_inference",
+        "NVFP4",
+        "FP8",
+        "quantization",
+        "Gated DeltaNet"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/28898",
+      "source": "GitHub PRs",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/28898",
+      "price": null,
+      "vram": "依模型；不改變記憶體需求",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ai-005",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Inkling 2 下放到更多卡：vLLM 支援 Ampere／Ada，SGLang 合併 SM120 低 batch NVFP4 MoE kernel",
+      "summary": "vLLM #69165 解除 Inkling 2 原本「至少 SM90」的限制：作者用 2 張 RTX 3090（TP=2）跑 Inkling 2 Mini，單串流約 100 tok/s，開 DSpark 到 177 tok/s，PPL 跟 HF BF16 一致；其他人也在 A100、RTX 4090、RTX 6000 Ada 跑過。SGLang #53370 是 SM120／SM121 低 token 數（≤64）NVFP4 MoE 三件套的最後一塊，RTX PRO 6000 上結果 bitwise 一致，每輪省約 0.5–0.8 ms；SM120 就是 RTX 50 系列這一代。",
+      "tags": [
+        "llm_inference",
+        "vLLM",
+        "SGLang",
+        "NVFP4",
+        "SM120",
+        "Inkling 2"
+      ],
+      "url": "https://github.com/sgl-project/sglang/pull/53370",
+      "source": "GitHub PRs",
+      "sourceUrl": "https://github.com/sgl-project/sglang/pull/53370",
+      "price": null,
+      "vram": "vLLM 實測需 2×24GB（TP=2）；單張 16GB 仍建議用 GGUF 路線",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261128-ai-006",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Unsloth Studio 接上 Blender、Unity、Unreal、Godot 的 MCP：本地模型自己操作 3D 工具做素材（X 1,222 讚）",
+      "summary": "Unsloth 官方指南：Blender 5.1+、Unity 2021.3+、Unreal Engine 5.8+（Epic 內建 Unreal MCP plugin）、Godot 4、Figma（唯讀）、Roblox Studio 都能從 Unsloth chat 的 MCP 選單接上，範例用 Qwen3.8-27B（UD-Q4_K_XL）或 Qwen3.8-Flash-Next，宣傳影片則是 Inkling 2 Mini GGUF。權限設計值得參考：這些工具會在 app 裡執行 code，所以只有 owner 帳號能用，開 Remote／LAN access 時會自動關掉。",
+      "tags": [
+        "ai_devtools",
+        "MCP",
+        "tool calling",
+        "local agent",
+        "Unsloth Studio"
+      ],
+      "url": "https://unsloth.ai/docs/basics/mcp/mcp-engines",
+      "source": "X（@UnslothAI）",
+      "sourceUrl": "https://x.com/UnslothAI/status/2126322382239649959",
+      "price": null,
+      "vram": "依所選模型（Qwen3.8-27B UD-Q4_K_XL 需部分 offload）",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261128-ai-007",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "llama.cpp 合併 PR #32608：Llama Chat 可把對話分享成 Hugging Face dataset 上的 agent trace",
+      "summary": "llama-server 內建的 Llama Chat 在每個對話選單和訊息下面多了 Share，登入 Hugging Face 後把對話存成 dataset，Hub 會用 trace viewer 打開。官方 release、Docker image、npx @ggml-org/llama-chat 都內建；自己從原始碼 build 預設不含，要用 -DLLAMA_UI_HUGGING_FACE=ON 或 VITE_PUBLIC_HUGGING_FACE=true 打開。拿來收集本地 agent 的失敗案例、做 eval 資料滿順手。",
+      "tags": [
+        "ai_devtools",
+        "agent traces",
+        "llama-server",
+        "Hugging Face datasets"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/pull/32608",
+      "source": "GitHub PRs",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/pull/32608",
+      "price": null,
+      "vram": "N/A（UI 功能）",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ai-008",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "Sber 開放 GigaChat 4：708B MoE（41B active）MIT 授權、1M context，另有 37B-A4B 小版（非商用）",
+      "summary": "架構是 MoE 加 Gated DeltaNet 與 DeepSeek Sparse Attention（3:1 交錯），instant／reasoning 合在同一個 checkpoint，內建 recurrent MTP，也可外掛 DFlash2 drafter；FP8、BF16、base、中間 checkpoint、GGUF 都放上 Hugging Face，SGLang 有官方 cookbook。37B-A4B 是 Noncommercial License for individuals，Q4_K_M 單檔 23.3GB，16GB 卡要把 experts 放 RAM 才跑得動。",
+      "tags": [
+        "llm_inference",
+        "open weights",
+        "MoE",
+        "Gated DeltaNet",
+        "DSA",
+        "MTP"
+      ],
+      "url": "https://github.com/salute-developers/gigachat4",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/ai-sage/GigaChat4-708B-A41B",
+      "price": null,
+      "vram": "708B：FP8 數百 GB；37B-A4B Q4_K_M 23.3GB",
+      "license": "MIT（708B）／Noncommercial for individuals（37B-A4B）"
+    },
+    {
+      "id": "20261128-ai-009",
+      "radar": "ai-infra",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "螞蟻 inclusionAI 開源 Ming-Image-0.2-Design：6B DiT 設計圖模型，Artificial Analysis 開放權重文生圖總榜第 1",
+      "summary": "主打電商主視覺、UI 設計稿、空間渲染和文字排版，同系列的 layer 拆解這次細到角色部件，方便後續編輯、做動畫；也能搭配 Ling-3.2-flash 把設計稿轉成互動網頁。官方 model card 寫「截至 11/25 在 AA-Image-T2I v2.1 開放權重總榜第 1」，MIT 授權。",
+      "tags": [
+        "image_gen",
+        "text-to-image",
+        "DiT",
+        "text rendering",
+        "graphic design"
+      ],
+      "url": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design",
+      "price": null,
+      "vram": "6B DiT（官方未列 VRAM，估計 16GB 需量化或 offload）",
+      "license": "MIT"
     }
   ],
-  "lastUpdated": "2026-11-28T03:16:24+08:00",
-  "updatedAt": "2026-11-28T03:16:24+08:00"
+  "lastUpdated": "2026-11-28T03:23:20+08:00",
+  "updatedAt": "2026-11-28T03:23:20+08:00"
 }
