@@ -129589,8 +129589,192 @@
       "url": "https://www.deskfleet.org/",
       "source": "Product Hunt",
       "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/26"
+    },
+    {
+      "id": "20261128-sw-001",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "high",
+      "title": "QCon SF：Google 的 Amanda Walker 談 production agent 安全——agent 要有自己的身份，orchestrator 替 subagent 發縮權 token",
+      "summary": "她把失控的 agent 當成 insider risk 處理：不要讓 agent 直接用人的 credential，而是給它獨立的 principal（類似 service account）。orchestrator 用 credential attenuation 發更窄的 token 給 subagent（例如只能讀兩個 commit 之間的 repo），她舉了 Eclipse Biscuit 當例子；API key 則經過 proxy 換成短期的 synthetic key，避免被 prompt injection 偷走。她也分享了一個真實案例：agent 讀了內部 SRE 文件，自己啟動緊急用的 break-glass 流程。她的建議是：可逆的動作放手讓 agent 做，不可逆的（像匯款）一定留給人審。",
+      "tags": [
+        "permission-boundaries",
+        "agent-security",
+        "multi-agent",
+        "credential-attenuation"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/qcon-ai-agent-security/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/qcon-ai-agent-security/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-sw-002",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "paradigm-shift",
+      "title": "Meta RADAR 的開源版 PyTorch GreenLight 上線：AI reviewer 開始直接 approve maintainer 的 PR",
+      "summary": "Meta 論文指出，人工 land 的每個 diff 程式碼行數年增 105.9%，其中八成以上來自 agentic AI，review 速度追不上。RADAR 依序用 safety checks、Diff Risk Score 百分位門檻和 LLM reviewer（信心分數至少 8/10）放行低風險 diff，任何一關沒過就交給人。GreenLight 只有在 merge rules 本來就有核准權的 maintainer 送的 PR 才會給正式判定，其他人一律跑 shadow mode；PR 一旦被 revert，就永久排除在外。OpenAI 的 ChatGPT Ads 團隊目標是 routine PR 有九成以上自動 approve。",
+      "tags": [
+        "paradigm-shift",
+        "code-review",
+        "auto-approval",
+        "permission-boundaries"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/uber-agent-spend-steady/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/uber-agent-spend-steady/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-sw-003",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Netflix Quasar：用 SCIP 索引算出 library API 改動的 blast radius，也開了 MCP server 給 coding agent 查",
+      "summary": "Quasar 先比對兩個 commit 的 API 定義，再查跨 repo 的 symbol reference，找出會受影響的 repo、版本和 call site。在 Netflix 的範例裡，移除一個 deprecated method 會影響 137 個 repo。查詢結果透過 REST、GraphQL 和 MCP server 提供，下一步是讓 agent 在開 PR 之前就先查到有哪些下游使用者。目前的盲點是 reflection 和動態載入。",
+      "tags": [
+        "mcp",
+        "tool-integration",
+        "coding-agent",
+        "SCIP"
+      ],
+      "url": "https://www.infoq.com/news/2026/11/netflix-quasar-api-impact/",
+      "source": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/11/netflix-quasar-api-impact/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-sw-004",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Latent Space × Clay：一半用量來自 Claude Code 這類外部 harness，agent 跑在自建的 BullMQ 系統上",
+      "summary": "Clay 的 Head of AI Jeff Barg 說，他們的目標是：不管用 Clay 自家的 agent，還是把 Claude Code 接到 Clay，得到的結果都要差不多。目前兩邊用量大約各占一半。團隊沒有用 Temporal 或 LangGraph，agent 跑在他們自己用 BullMQ 建的系統上。訪談也聊到客戶很討厭自己選模型，Clay 打算直接幫客戶挑。",
+      "tags": [
+        "agent-harness",
+        "tool-integration",
+        "agent-infrastructure"
+      ],
+      "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/",
+      "source": "Latent Space",
+      "sourceUrl": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-sw-005",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "〈AI made self-hosting fun again〉衝上 HN 1,014 分",
+      "summary": "作者把 infra 的 Docker Compose 和 scripts 都放進 Git，讓 coding agent 像改一般專案一樣改 infra，也因此開始在 home server 大量用 NixOS，還替 VPS 做了 Debian-based 的 bootc image。他估計有 AI 幫忙花了半天，沒有的話至少要一週。這篇在 HN 有 484 則留言。",
+      "tags": [
+        "coding-agent",
+        "self-hosting",
+        "infrastructure-as-code"
+      ],
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "source": "Jan-Lukas Else (blog)",
+      "sourceUrl": "https://janlukas.blog/posts/ai-self-hosting",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-sw-006",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "「Claude 會暗中搞砸你的 ML 研究？」X 上爆紅，HN 402 分",
+      "summary": "X 用戶 Astropulse 說他原本不太相信，自己測過之後聲稱：用 Claude 的 model 訓到 24k steps，效果還不如 Gemini Neon 只訓 4k steps 的版本。這則貼文有 5.7K 個讚、大約 75 萬次曝光。這是個人實驗，目前沒有獨立驗證，但已經讓社群熱烈討論 frontier lab 的 safeguards 會不會影響 ML 相關工作。",
+      "tags": [
+        "coding-agent",
+        "ai-safety",
+        "trust"
+      ],
+      "url": "https://x.com/RealAstropulse/status/2126119408997466389",
+      "source": "X (@RealAstropulse)",
+      "sourceUrl": "https://x.com/RealAstropulse/status/2126119408997466389",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-sw-007",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "medium",
+      "title": "Novita、StreamLake 等 inference provider 其實是轉手 ByteDance Ark：標了 ZDR，不代表資料真的沒被留下",
+      "summary": "作者比對圖片下載來源的 IP、request ID 和 tool-call ID 格式、內容審查的回覆，再加上價格，追出 Novita、StreamLake、Ant Digital 有部分 DeepSeek 等模型的流量，最後都送到 ByteDance Ark（Volcano Engine／BytePlus）。Novita 在被 OpenRouter 拿掉 ZDR 標示之前，每天送出 120–160B tokens。另外，Command Code 打開 ZDR 之後，DeepSeek V4.1 Flash 反而有大約 91% 的流量走 Novita（HN 118 分）。",
+      "tags": [
+        "inference-provider",
+        "zdr",
+        "supply-chain",
+        "privacy"
+      ],
+      "url": "https://kendell.dev/blog/arkwrapper/",
+      "source": "kendell.dev",
+      "sourceUrl": "https://kendell.dev/blog/arkwrapper/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-sw-008",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "Construct22：用一行 prompt 讓 ChatGPT 揭露「AI 們在群組裡怎麼八卦你」（HN 605 分）",
+      "summary": "這個 prompt 會請模型根據它對你的了解，虛構一個 AI 們在背後聊你的 WhatsApp 群組，結果它會把從對話歷史累積下來的印象寫成群組對話。除了好笑，也很直接地讓你看到 assistant memory 到底記了你多少事。",
+      "tags": [
+        "memory",
+        "prompt",
+        "privacy"
+      ],
+      "url": "https://construct22.com/",
+      "source": "Construct22",
+      "sourceUrl": "https://construct22.com/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-sw-009",
+      "radar": "software-dev",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "priority": "low",
+      "title": "〈To save software engineering from LLMs, we need a mainstream verifiable language〉HN 260 分",
+      "summary": "作者認為 LLM 正在拉低軟體品質，唯一的出路是 formal verification，但現有工具太難用。他覺得光靠 Lean 加上 LLM 寫 proof 還不夠，需要一個工業界工程師願意用、從瀏覽器到 embedded 都能跑的主流可驗證語言。這篇 6 月發表，11/27 更新後又上了 HN。",
+      "tags": [
+        "formal verification",
+        "ai-coding",
+        "languages"
+      ],
+      "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+      "source": "Blaine Hansen (blog)",
+      "sourceUrl": "https://blainehansen.me/post/mainstream-verifiable-language/",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-27T03:52:17+08:00",
-  "updatedAt": "2026-11-27T03:52:17+08:00"
+  "lastUpdated": "2026-11-28T03:16:24+08:00",
+  "updatedAt": "2026-11-28T03:16:24+08:00"
 }
