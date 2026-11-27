@@ -130138,8 +130138,452 @@
       "price": null,
       "vram": null,
       "license": null
+    },
+    {
+      "id": "20261128-ts-001",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "DeadInternetStudios/100x-engineer-skill",
+      "summary": "前 Cursor 工程師做的 agent skill（Claude Code／Cursor／Codex 通用），主打解決 coding agent「差最後 10%」：把任務切成小 block，每塊用 State／Transitions／Pre-／Postconditions／Invariants／Liveness 六題寫成規格，再用 model checker 窮舉可達狀態做 formal verification，最後檢查 block 之間的接縫；驗證紀錄存在 repo 的 `verify/ledger.tsv`，程式一改該列就失效，另由第二個模型做 review。",
+      "tags": [
+        "claude-code",
+        "agent skills",
+        "formal verification",
+        "coding agent"
+      ],
+      "url": "https://github.com/DeadInternetStudios/100x-engineer-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 670,
+      "createdDate": "2026-11-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ts-002",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "duzhenxun/pop-agent",
+      "summary": "給既有 coding agent（pi、Codex、Claude Code、OpenCode、DSH）用的本機 Web UI：把 thinking、tool call、改動檔案、token 與成本攤在對話裡，可以在 turn 進行中插話修正。三條硬規則：不建資料庫（session 就是各引擎自己的 JSONL）、引擎沒有的能力就隱藏、預設只綁 127.0.0.1，對外開放要明確加 `-H 0.0.0.0` 並先設密碼。",
+      "tags": [
+        "coding agent",
+        "agent UI",
+        "local-first",
+        "permissions"
+      ],
+      "url": "https://github.com/duzhenxun/pop-agent",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/coding-agent",
+      "stars": 151,
+      "createdDate": "2026-11-23",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ts-003",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "Emirborovac/phone-connector-for-claude",
+      "summary": "一句「set up my Claude phone」就在本機建一支含 Play Store 的 Android emulator（也可接真機 USB／Wi‑Fi），再用 Claude Code skill 操作任何 app：讀信、回訊息、發文。以你的名義送出前一定先問你，第一次用某個 app 會記下畫面筆記、之後越用越快。昨天才建。",
+      "tags": [
+        "claude-code",
+        "computer use",
+        "android",
+        "human-in-the-loop"
+      ],
+      "url": "https://github.com/Emirborovac/phone-connector-for-claude",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/ai-agent",
+      "stars": 94,
+      "createdDate": "2026-11-27",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ts-004",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "worth-trying",
+      "title": "BoneD-Q/contextbridge",
+      "summary": "Skills-first 的 AI-to-AI context handoff：定義 CBHF 0.1.0 資料夾格式（manifest、sources、evidence、uncertainty、handoff），讓一個 agent 把工作交給另一個 agent 或之後的 session 時，不會把 fact／inference、已確認決策、unknowns、conflicts 混成一團摘要；KnowledgeStatus（verified／inferred／disputed…）匯入時不得被升級，Unknowns 不自動上網補、Conflicts 不自動裁決。",
+      "tags": [
+        "context engineering",
+        "multi-agent",
+        "agent skills",
+        "context handoff"
+      ],
+      "url": "https://github.com/BoneD-Q/contextbridge",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/context-engineering",
+      "stars": 70,
+      "createdDate": "2026-11-19",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261128-ts-005",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "XiaoMi/os-memory",
+      "summary": "小米官方開源的 on-device agent 個人記憶系統：把螢幕內容、簡訊、通知、行事曆、位置、錄音、助理對話等跨 app 碎片轉成可追溯的 event graph（DRED fast path + SAGE slow path），每位使用者一個 SQLite 檔；提供 Python library（`hyperos-mem`）與 MCP server，附 PMM-Bench 評測。星數還低，但是大廠在 agent memory 架構上的實作參考。",
+      "tags": [
+        "agent memory",
+        "long-term memory",
+        "mcp",
+        "on-device"
+      ],
+      "url": "https://github.com/XiaoMi/os-memory",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/agent-memory",
+      "stars": 25,
+      "createdDate": "2026-11-25",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261128-ts-006",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "on-the-radar",
+      "title": "0xTaoZ/onebrain",
+      "summary": "Mac 上的 multi-agent 群組聊天（Tauri + Rust）：Claude Code、Codex、Gemini 等 CLI 在同一個 thread 互相派工、review，只有被 @ 的 agent 會跑，且只讀它沒看過的新內容，README 自測長 thread 省 31–81% tokens；共用記憶是 git 裡的 Markdown，每次修改由該 agent 署名，每次 run 都可 undo。",
+      "tags": [
+        "multi-agent",
+        "context compression",
+        "agent memory",
+        "token optimization"
+      ],
+      "url": "https://github.com/0xTaoZ/onebrain",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/agent-memory",
+      "stars": 21,
+      "createdDate": "2026-11-25",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "20261128-ts-007",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Periscope",
+      "summary": "「Turn any work into an API」：Periscope 的 agent 透過螢幕操作軟體，每個 agent 有自己的一台電腦，把沒有 API 的工作流程包成 API。（PH 11/27 日榜 #4，score 142）",
+      "tags": [
+        "computer use",
+        "agent sandbox",
+        "automation"
+      ],
+      "url": "https://www.getperiscope.ai",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/27"
+    },
+    {
+      "id": "20261128-ts-008",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Pushary Calls",
+      "summary": "把 AI agent 的 permission prompt 和提問推到對的人的手機或 Mac，漏看就直接打電話給你，並留下「誰按了同意」的紀錄；支援 Claude Code、Codex、Cursor、Gemini CLI、Hermes，個人或整個團隊都能用。（PH 11/27 日榜 #5，score 127）",
+      "tags": [
+        "agent permissions",
+        "human-in-the-loop",
+        "claude-code"
+      ],
+      "url": "https://pushary.com",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/27"
+    },
+    {
+      "id": "20261128-ts-009",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "product-hunt",
+      "title": "Remove Silence",
+      "summary": "瀏覽器裡免費剪掉音訊靜音段：丟進 audio／video 檔，在 waveform 上看到每個停頓、調 threshold 後下載較緊湊的 WAV；全程在本機跑，不上傳、不用帳號、無浮水印。做 podcast／人聲素材前處理很順手。（PH 11/27 日榜 #8，score 102）",
+      "tags": [
+        "audio",
+        "podcast",
+        "browser tool"
+      ],
+      "url": "https://removesilence.app",
+      "source": "Product Hunt",
+      "sourceUrl": "https://www.producthunt.com/leaderboard/daily/2026/11/27"
+    },
+    {
+      "id": "20261128-ts-010",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "petergyang/video-explainer",
+      "summary": "Peter Yang 的 agent skill：`/video-explainer <主題>` 把任何主題、文件、codebase 或 URL 變成約 1 分鐘的 explainer video，有 Motion／Illustrated／3D（Three.js 一鏡到底）三種風格；可自動加逐字對齊字幕、附出處的網路素材、本機 voice model 或 Gemini TTS 旁白，以及本機合成或 Gemini Lyria 生成的配樂與音效。",
+      "tags": [
+        "agent skills",
+        "ai-video",
+        "creator tools",
+        "claude-code"
+      ],
+      "url": "https://github.com/petergyang/video-explainer",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/agent-skills",
+      "stars": 580,
+      "createdDate": "2026-11-15",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ts-011",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "gary23w/f-ck_data_brokers",
+      "summary": "單一 Python 檔、零依賴，在你自己電腦上代你向 data broker 寄 opt-out／刪除請求（CCPA、GDPR、LGPD、PIPEDA），個資不離開本機，也有 MCP server 模式。作者以幫人刪 data broker 資料為副業；Show HN 244 points、53 則留言，建立兩天 548 stars。",
+      "tags": [
+        "privacy",
+        "mcp-server",
+        "cli",
+        "show hn"
+      ],
+      "url": "https://github.com/gary23w/f-ck_data_brokers",
+      "source": "Show HN",
+      "sourceUrl": "https://news.ycombinator.com/item?id=50658191",
+      "stars": 548,
+      "createdDate": "2026-11-26",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ts-012",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "Moh4696/inkworks-skill",
+      "summary": "讓 coding agent 產出「工程圖風格」的互動 3D how-it-works 頁面：例如請它做汽車引擎原理，就生出白底墨線、帶編號標註的 three.js 動畫，可暫停、逐 phase 步進、拖 cycle chart、轉鏡頭。全部是程式（primitives + closed-form kinematics），沒有模型檔或生成影片；`npx skills add` 或 Claude Code／Codex plugin 安裝。",
+      "tags": [
+        "agent skills",
+        "threejs",
+        "explainer",
+        "claude-code"
+      ],
+      "url": "https://github.com/Moh4696/inkworks-skill",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/claude-code",
+      "stars": 531,
+      "createdDate": "2026-11-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ts-013",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "lukendeasy/open-diagram",
+      "summary": "會自己檢查版面的 diagrams-as-code：用短 Python script 描述 panels、tiles、lines、groups，它依字型量測每個 label、排版，若 panel 互撞或連線穿過 panel 會點名報錯，輸出 SVG + PNG。專為 Claude Code／Cursor 等 agent 撰寫設計，`claude mcp add open-diagram -- uvx open-diagram mcp` 即可接上；官網有與 Mermaid、D2、draw.io、Excalidraw 的比較。",
+      "tags": [
+        "diagrams-as-code",
+        "mcp",
+        "architecture diagrams",
+        "agent skills"
+      ],
+      "url": "https://github.com/lukendeasy/open-diagram",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/agent-skills",
+      "stars": 426,
+      "createdDate": "2026-11-18",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-ts-014",
+      "radar": "tool-scout",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "rising-fast",
+      "title": "erkamyaman/rea-games",
+      "summary": "rust-anything 作者的新作，rea 家族一員：逆向任何遊戲、寫成開放的 `GAME.md` behavior spec，再在 web／Rust（Bevy）／Godot 重建，並用錄製的輸入逐 frame 證明行為一致（如 2048 用 19 個 case、24,044 個輸入驗證三個 port，Chrome Dino 1,800 步全對）。重建版可直接在瀏覽器玩。",
+      "tags": [
+        "agent skills",
+        "reverse engineering",
+        "clean-room",
+        "verification"
+      ],
+      "url": "https://github.com/erkamyaman/rea-games",
+      "source": "GitHub API",
+      "sourceUrl": "https://github.com/topics/agent-skills",
+      "stars": 409,
+      "createdDate": "2026-11-25",
+      "license": "MIT"
+    },
+    {
+      "id": "20261128-mt-001",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "BumaStemra 正式對 AI 背景音樂業者 YourNeuroTune 提告",
+      "summary": "荷蘭集體管理組織 BumaStemra 向 DMN 證實訴訟已在荷蘭進行，由 IP 律師 Dirk Visser 主導。YourNeuroTune 提供按週更新的免版稅「premium」音樂，供健身房、商店等場所使用，先前拒絕了停止營運的最後通牒。",
+      "priority": "high",
+      "tags": [
+        "ai music",
+        "licensing",
+        "lawsuit"
+      ],
+      "source": "Digital Music News",
+      "sourceUrl": "https://www.digitalmusicnews.com/2026/11/27/bumastemra-yourneurotune-lawsuit/"
+    },
+    {
+      "id": "20261128-mt-002",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "n-Track Studio 11 登場：內建可在歌曲內操作的 AI Assistant",
+      "summary": "n-Track Studio 11 新增 AI Assistant、VocalTune 2.0（逐音 pitch 編輯）、Spectral Edit、Drawbar organ 與 ARA plugin 支援，跨 Windows／macOS／Linux／iOS／Android。Standard 版 €69，Black Friday 優惠到 12/5。",
+      "priority": "high",
+      "tags": [
+        "daw",
+        "ai assistant",
+        "pitch correction",
+        "ara"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/n-track-studio-11-brings-new-effects-instruments-tools-ai-assistant/"
+    },
+    {
+      "id": "20261128-mt-003",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "Cyanite 推出對話式 Concierge，用對話搜尋音樂",
+      "summary": "Music Ally 報導 Cyanite 推出 conversational AI 的音樂搜尋 Concierge，屬於 B2B 場景的對話式 AI 應用（細節以原文為準）。",
+      "priority": "medium",
+      "tags": [
+        "music search",
+        "conversational ai",
+        "music ai"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/26/cyanite-launches-its-conversational-concierge-for-music-search/"
+    },
+    {
+      "id": "20261128-mt-004",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "Winamp Player 將於 12/15 開放 private beta 重新上線",
+      "summary": "Music Ally 追蹤 Winamp 自 2022 年起的復出計畫，報導新版 Winamp Player 將在 12 月 15 日進入 private beta。",
+      "priority": "medium",
+      "tags": [
+        "music software",
+        "winamp",
+        "music app"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/27/winamp-player-set-to-relaunch-in-private-beta-on-15-december/"
+    },
+    {
+      "id": "20261128-mt-005",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "ElevenLabs 下一輪募資估值可能追上 UMG 等級",
+      "summary": "Music Ally 指出 ElevenLabs 下一輪募資的估值可能達到 UMG 等級，背景是市場對 AI 泡沫的疑慮仍在（細節以原文為準）。",
+      "priority": "medium",
+      "tags": [
+        "voice synthesis",
+        "elevenlabs",
+        "funding"
+      ],
+      "source": "Music Ally",
+      "sourceUrl": "https://musically.com/2026/11/26/elevenlabs-next-funding-round-could-see-a-umg-sized-valuation/"
+    },
+    {
+      "id": "20261128-mt-006",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "吉他手 George Lynch 談參與 AI 曲目錄音的「很奇怪」經驗",
+      "summary": "前 Dokken 吉他手 George Lynch 接受 MusicRadar 訪談，談他為一首 AI 曲目錄音的經歷，直言過程「很有挑戰」。",
+      "priority": "medium",
+      "tags": [
+        "guitar",
+        "guitarist",
+        "ai music"
+      ],
+      "source": "MusicRadar",
+      "sourceUrl": "https://www.musicradar.com/artists/guitarists/guitarist-george-lynch-on-his-very-strange-session-for-an-ai-track-i-was-like-why-do-they-want-me-i-mean-im-just-a-human-being-machines-do-it-way-better"
+    },
+    {
+      "id": "20261128-mt-007",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "Kodamo Essence FM 8.0：免費大更新，強化 feedback FM 與 filter",
+      "summary": "Essence FM 是 16-part multi-timbral、300 voice、6-operator FM synth。8.0 免費更新帶來改進的 feedback FM 與 filter、新 FX 等。",
+      "priority": "medium",
+      "tags": [
+        "synthesizer",
+        "fm synth",
+        "free update"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/kodamo-essence-fm-8-0-major-free-characterful-update-for-the-flagship-fm-synth.html"
+    },
+    {
+      "id": "20261128-mt-008",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "Newfangled Audio Obliterate 2：免費破壞系失真 plugin",
+      "summary": "Obliterate 2 新增 6 種 Obliteration 失真、含 5 種 noise generator 的 Desecration 控制、可調音高的 Divination reverb 與 modulation；支援 Windows／macOS（VST／VST3／AU／AAX），免費下載。",
+      "priority": "medium",
+      "tags": [
+        "distortion",
+        "free plugin",
+        "vst3",
+        "aax"
+      ],
+      "source": "Rekkerd",
+      "sourceUrl": "https://rekkerd.org/free-obliterate-2-ott-distortion-effect-plugin-by-newfangled-audio/"
+    },
+    {
+      "id": "20261128-mt-009",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "touski ChanceBloom：generative slice sampler",
+      "summary": "macOS／Windows 的 instrument 與 audio effect plugin，可依 transient 或 1/2–1/32 note grid 切 loop，Mood pad、Density、Chaos、Swing 控制，seed 可記錄 pattern，Drag 可輸出 WAV 到 DAW。",
+      "priority": "medium",
+      "tags": [
+        "sampler",
+        "generative",
+        "plugin"
+      ],
+      "source": "Synthtopia",
+      "sourceUrl": "https://www.synthtopia.com/content/2026/11/26/touski-chancebloom-generative-slice-sampler/"
+    },
+    {
+      "id": "20261128-mt-010",
+      "radar": "music-tech",
+      "date": "2026-11-28",
+      "cycle": "morning",
+      "title": "open-field：OP-1 Field 的非官方 custom firmware",
+      "summary": "Parisian 音樂人 LaP0573（Maxime B）主導的 open-field 專案，為 Teenage Engineering OP-1 Field 帶來大量非官方功能擴充。",
+      "priority": "low",
+      "tags": [
+        "midi controller",
+        "custom firmware",
+        "synthesizer"
+      ],
+      "source": "Synth Anatomy",
+      "sourceUrl": "https://synthanatomy.com/2026/11/open-field-cf-teenage-engineering-op-1-field-gets-a-massive-unofficial-feature-boost.html"
     }
   ],
-  "lastUpdated": "2026-11-28T03:45:12+08:00",
-  "updatedAt": "2026-11-28T03:45:12+08:00"
+  "lastUpdated": "2026-11-28T04:10:10+08:00",
+  "updatedAt": "2026-11-28T04:10:10+08:00"
 }
