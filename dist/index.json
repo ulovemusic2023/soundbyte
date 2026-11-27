@@ -129973,8 +129973,173 @@
       "price": null,
       "vram": "6B DiT（官方未列 VRAM，估計 16GB 需量化或 offload）",
       "license": "MIT"
+    },
+    {
+      "id": "20261128-fm-001",
+      "radar": "founder-mind",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Tobi Lütke 的三個 AI 心智模型：prompt 野心不足、verification 成為工程核心、把 agent 當樂器",
+      "summary": "Tobi 第二次上 David Senra podcast（11/23 收錄過同一集「founder 重新發明公司」那段，這次是 AI 工作法）。第一，多數人拿不到 AI 的價值，通常是因為「insufficiently ambitious prompting」：要交代要解決的問題，不要交代步驟。第二，寫 code 變便宜以後，真正稀缺的是驗證，他說 formal verification「is now by far the most important field in engineering」，也分享了一個 prompt：「Find me all the implicit, ad hoc state machines in my app.」第三，把 agent 當吉他：同一把樂器，在 Hendrix 手上就是不一樣，真正懂工具的人能「play AI」。",
+      "tags": [
+        "ai-agents",
+        "verification-engineering",
+        "ambitious-prompting",
+        "agent-as-instrument"
+      ],
+      "url": "https://www.attentionheads.blog/p/tobi-lutkes-three-mental-models-to",
+      "source": "Attention Heads（Dan McAteer 整理 David Senra podcast）",
+      "sourceUrl": "https://www.attentionheads.blog/p/tobi-lutkes-three-mental-models-to",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-fm-002",
+      "radar": "founder-mind",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Jason Lemkin：Agents are the new buyer——五個 agent 加兩個很強的人，勝過八個你請不起的人",
+      "summary": "Lemkin 對本週 20VC 的幾個看法：SaaStr 自己的 agent 已經是「買家」，只會因為漲價、服務中斷或資安事件換掉供應商，否則永遠不走（Bill 每月 $20，「our agents won't let us move」）；Marketo 這類 marketing automation 已是 walking dead，現在由 agent 直接寄 email；水平型 agent 會贏過自己 vibe coding 出來的內部 app。Seed 新創付不起 $600K 的工程師：「Five agents plus two great humans beats eight you can't afford.」",
+      "tags": [
+        "agents-as-buyers",
+        "ai-native-team",
+        "b2b-saas",
+        "switching-cost"
+      ],
+      "url": "https://youtu.be/UGSSg8vv8vg",
+      "source": "X @jasonlk（20VC x SaaStr）",
+      "sourceUrl": "https://x.com/jasonlk/status/2126071366667366517",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-fm-003",
+      "radar": "founder-mind",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "SaaStr：B2B 現在最熱的是 Adtech——從「客戶因為你有效而變大的預算」裡收錢",
+      "summary": "AppLovin Q3 營收 $2.2B、成長 55%，但安裝數只 +2%，每次安裝的營收 +55%：模型變好，直接反映在單價上。同一季 HubSpot 的 AI 先變成 COGS（訂閱成本 +28% vs 訂閱營收 +18%）。Lemkin 給 founder 的三條：一、從「產品有效時會變大的預算」收錢，幫客戶賺錢而不是幫他省錢；二、為「模型會改進的那個單位」定價，用 outcome 而不是 seat；三、掌握結果的 feedback loop，否則看得到結果的人會訓練出更好的模型。AppLovin 員工不到 900 人，S&M 只占營收約 3%。",
+      "tags": [
+        "outcome-pricing",
+        "ai-monetization",
+        "feedback-loop",
+        "ai-consulting"
+      ],
+      "url": "https://www.saastr.com/whats-hot-in-b2b-adtech-yes-adtech/",
+      "source": "SaaStr",
+      "sourceUrl": "https://www.saastr.com/whats-hot-in-b2b-adtech-yes-adtech/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-fm-004",
+      "radar": "founder-mind",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Jack Despain Zhou：AI 最已經發生的影響，是一場「great de-individualization」",
+      "summary": "〈Spitting in the Face of Glaude〉長文：他打開 YouTube、坐在研討會、打開信箱，聽到看到的都是 Claude。他認為照預設路徑走，LLM 在每一種人類技能上的主要影響，會是讓人交出「明顯更好」的東西，卻不再注意到作品裡剩下多少自己；在 AI 身邊長大的孩子可能永遠發展不出自己的聲音。他的回應是重新拿起鉛筆畫畫：「My art is terrible as it stands, but it is mine.」Simon Willison 也轉引了這段。",
+      "tags": [
+        "de-individualization",
+        "personal-voice",
+        "ai-and-craft",
+        "podcast-topic"
+      ],
+      "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+      "source": "Tracing Woods",
+      "sourceUrl": "https://www.tracingwoodgrains.com/p/spitting-in-the-face-of-glaude",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-fm-005",
+      "radar": "founder-mind",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "mental-model",
+      "title": "Paul Graham：不管 AI 是不是「真的」在思考，預測未來時都當它在思考",
+      "summary": "「Whether AIs \"really\" think or not, assume when making predictions about future that they do, because they'll have all the effects they'd have if they really did.」PG 的框架是把哲學問題和預測問題拆開：AI 會不會思考可以繼續爭，但它對工作、市場、組織的影響，會跟真的會思考時一樣，所以規劃時就照這個前提走。發文約 1 天內 864 likes、215 則回覆、15 萬次曝光。",
+      "tags": [
+        "ai-forecasting",
+        "decision-making",
+        "consequences-over-definitions"
+      ],
+      "url": "https://x.com/paulg/status/2126066121333715109",
+      "source": "X @paulg",
+      "sourceUrl": "https://x.com/paulg/status/2126066121333715109",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-fm-006",
+      "radar": "founder-mind",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "operational",
+      "title": "Company Culture = Slack Emoji ÷ √Headcount（HN 537 分）",
+      "summary": "Liam Galvin 半開玩笑的公式：自訂 emoji 數 ÷ 員工數的平方根 = Emoji Coefficient。另外要看 Participation Rate：上傳過 emoji 的人如果低於 20%，代表文化只靠少數人撐著，他們一走就跟著帶走。結論是文化沒辦法靠 values poster 或強制歡樂製造，只會在團隊裡自然長出來。玩笑背後的觀察：文化要看「多少人自發參與」，不是看 HR 問卷。HN 537 分、280 則留言。",
+      "tags": [
+        "company-culture",
+        "culture-metrics",
+        "participation-rate"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50659640",
+      "source": "lia.mg",
+      "sourceUrl": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-fm-007",
+      "radar": "founder-mind",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "playbook",
+      "title": "Greg Isenberg 觀察的新路徑：募資 → 變成 creator → 新創失敗 → 全職 creator 年收 $500K–$5M → 再也不募資",
+      "summary": "Greg Isenberg 說他看到一個新趨勢：新創拿了 VC 的錢，用這筆錢把自己經營成 creator；新創失敗後，退回去當全職 creator，年收 $500K–$5M，再用 bootstrap 孵化其他產品，從此不再募資。這呼應他前幾天說的「最 AI-proof 的資產是受眾」：公司可能失敗，但受眾會留下來，變成之後所有產品的 distribution。約 1.2K likes、550 bookmarks、168 則回覆。",
+      "tags": [
+        "creator-fallback",
+        "audience-as-asset",
+        "bootstrapping",
+        "distribution"
+      ],
+      "url": "https://x.com/gregisenberg/status/2126356350875709581",
+      "source": "X @gregisenberg",
+      "sourceUrl": "https://x.com/gregisenberg/status/2126356350875709581",
+      "price": null,
+      "vram": null,
+      "license": null
+    },
+    {
+      "id": "20261128-fm-008",
+      "radar": "founder-mind",
+      "date": "2026-11-28",
+      "cycle": "saturday",
+      "priority": "quotable",
+      "title": "Sam Altman：聰明的人很多，但聰明再加上「放對地方的自信和勇氣」很稀有",
+      "summary": "Sam Altman 引用一則介紹 Ven Chandrasekaran「quantum theory of vacuum gravity」提案的貼文，說Ven 是最早相信「用當時的模型就能解 millennium prize 等級問題」的人之一。「There are a lot of brilliant people in the world, but being brilliant and also having correctly-placed confidence and courage to keep pushing on something that others don't think is possible is a very valuable thing and fairly rare.」7.6K likes、1,098 bookmarks。",
+      "tags": [
+        "conviction",
+        "courage",
+        "talent"
+      ],
+      "url": "https://x.com/sama/status/2125990371897557278",
+      "source": "X @sama",
+      "sourceUrl": "https://x.com/sama/status/2125990371897557278",
+      "price": null,
+      "vram": null,
+      "license": null
     }
   ],
-  "lastUpdated": "2026-11-28T03:23:20+08:00",
-  "updatedAt": "2026-11-28T03:23:20+08:00"
+  "lastUpdated": "2026-11-28T03:45:12+08:00",
+  "updatedAt": "2026-11-28T03:45:12+08:00"
 }
